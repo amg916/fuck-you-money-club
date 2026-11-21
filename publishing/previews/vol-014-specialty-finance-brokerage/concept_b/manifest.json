@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-014-specialty-finance-brokerage",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1844591,
+      "sha256": "7d82e657ec3cc8b5d96c77b825e5c19af6ea085d45bc085e899dab08630982bf"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2390267,
+      "sha256": "75a5411f734891b8a5c71c286da583aa3a8dcaf6896f195a87599f0c26231d44"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 540690,
+      "sha256": "371d0134622a382fb351af615b4968580e6044d458a5129f7f88d47670500b1d"
+    },
+    "book.epub": {
+      "bytes": 299865,
+      "sha256": "f7d8e275f2317c521689c357b115cc1aabf61af185a579257c30732a8a081725"
+    },
+    "art/cover.svg": {
+      "bytes": 3664,
+      "sha256": "d9b7ae0142e2c579280034aedc5c8fa842d15ebfdb96c9abc79d832ec486bb53"
+    },
+    "art/scorecard.svg": {
+      "bytes": 129468,
+      "sha256": "a0059c4bdc1ecd299bab319d9c5a22d86250e04043ce2f4a3d5b4318d22d2158"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11110,
+      "sha256": "d7675ef92bd0ee00d7a4bd8cba439b74c323c57c44fe546e7449e6ac9e908e0e"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7765,
+      "sha256": "1b235434d21c17766688dc1fd9bf084360e0d8582d8ffea31f20029d88df0a42"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12243,
+      "sha256": "c4a51d9bf5a3568f68c018ccde0419b494d2d9aabd6b08265b97f9cb212e1c4f"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9548,
+      "sha256": "def35fa402ae138c442b9c8be4ca420b86756275b938625c0ed1aacf7871ea6c"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10657,
+      "sha256": "63f91caf72cc6204b007bb9c53f802b94ab3f11035e4d78de89f6f387458f37c"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12166,
+      "sha256": "4ffe831ec8a81942a395062d5cf370c4f00c54c0fce8daf244aacc9f30c6cd11"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8883,
+      "sha256": "b1abf93a4404258daa0e414d4a2d98fa3d12762b751259c1f3017dcd0c0a7560"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8963,
+      "sha256": "638c3171f0a95961d48a0ac9e2b63e6dc213f0a878571164487391159e31ec3f"
+    }
+  }
+}

@@ -1,0 +1,1289 @@
+{
+  "candidate_number": 20,
+  "slug": "specialty-finance-brokerage",
+  "title": "Specialty Finance Brokerage",
+  "category": "Finance intermediary services",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 23,
+    "profit_margin_potential": 21,
+    "team_efficiency": 17,
+    "startup_accessibility": 8,
+    "automation_potential": 10
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 79,
+  "tier_label": "High-Leverage Operator Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 76,
+    "high": 82
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 23/25. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+    "team_efficiency": "Team Efficiency: 17/20. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+    "startup_accessibility": "Startup Accessibility: 8/15. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
+    "automation_potential": "Automation Potential: 10/15. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale."
+  },
+  "economics": {
+    "gross_revenue_range": "$120,000–$1,000,000 USD annually",
+    "net_profit_margin_range": "25–45%",
+    "owner_net_profit_potential": "$30,000–$450,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$20,000–$100,000 USD",
+    "monthly_opex_range": "$4,000–$18,000 USD",
+    "time_to_first_deal": "3–9 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Retained origination or referral fees only; excludes loan principal",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 120000,
+      "net_profit_margin_pct": 25,
+      "annual_owner_net_profit_usd": 30000,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 560000.0,
+      "net_profit_margin_pct": 35.0,
+      "annual_owner_net_profit_usd": 196000,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1000000,
+      "net_profit_margin_pct": 45,
+      "annual_owner_net_profit_usd": 450000,
+      "full_time_including_owner": 3,
+      "contractors": 3,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Application checklists",
+    "Lender matching",
+    "Renewal tracking"
+  ],
+  "key_risks": [
+    "Failed closings",
+    "Lender concentration",
+    "Commission clawbacks"
+  ],
+  "regulatory_notes": [
+    "Check loan-broker licensing, fee disclosures, fair-lending and data-security duties.",
+    "Securities placements may require separate broker-dealer registration."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "public_filing_trigger_mail_arbitrage",
+      "track_id": "track_1",
+      "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+      "inputs": [
+        "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+        "County Recorder grant/warranty deed & mortgage recording dockets",
+        "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+      ],
+      "workflow": [
+        "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+        "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+        "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+      ],
+      "metrics": [
+        "Filing-to-mailbox latency (hours)",
+        "QR scan & intake conversion % per 1,000 mailers",
+        "Annualized LTV / net revenue per mailed piece"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+        }
+      ]
+    },
+    {
+      "id": "b2b_class_action_contingency_recovery",
+      "track_id": "track_1",
+      "name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+      "mechanism": "Monitor multibillion-dollar corporate antitrust and commercial class-action settlement funds (payment-card interchange, freight, auto parts, commercial insurance, SaaS) where 85–90% of eligible small businesses never file, and recover verified payouts on a 25–33% contingency fee.",
+      "inputs": [
+        "Active federal B2B class-action settlement docket calendar & claims-administrator portals",
+        "B2B merchant-processing, fleet, & vendor spend intake pipeline",
+        "Contingency claim-preparation & court-authorized third-party filing agreements"
+      ],
+      "workflow": [
+        "Track open and upcoming commercial class-action settlements with verified court-appointed claims administrators and $50M–$5B+ settlement pools",
+        "Sign zero-upfront-cost (25–33% contingency) authorization agreements with operating restaurants, medical practices, retailers, and fleets",
+        "Extract historical merchant statements or vendor invoices, submit audited claim packages to the settlement administrator, and reconcile fee splits upon disbursement"
+      ],
+      "metrics": [
+        "Average gross settlement recovery per enrolled business ($5,000–$150,000+)",
+        "Claim acceptance rate by court-appointed administrator (%)",
+        "Net contingency fee per operator hour invested"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim rejection, administrator audit hold, or court cap on third-party filer fees",
+          "trigger": "Submitting unsubstantiated spend estimates, missing court bar dates, or failing to include required third-party filer disclosures",
+          "impact": "Delayed payout disbursement or court-mandated fee reduction",
+          "detection_metric": "Deficiency-notice rate (<2% target) and 100% court-approved disclosure compliance",
+          "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders"
+        }
+      ]
+    },
+    {
+      "id": "arizona_abs_mass_tort_cocounsel",
+      "track_id": "track_1",
+      "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+      "inputs": [
+        "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+        "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+        "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+      ],
+      "workflow": [
+        "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+        "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+        "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+      ],
+      "metrics": [
+        "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+        "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+        "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+        }
+      ]
+    },
+    {
+      "id": "identity_graph_pixel_arbitrage",
+      "track_id": "track_2",
+      "name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "mechanism": "Deploy first-party CNAME identity-resolution pixels and pre-click search/bidstream intent feeds (syncing visitor IP/device hashes against publisher co-op SHA-256 rainbow tables and property/B2B graphs) to resolve 35–55% of anonymous bouncing search visitors into verified names, emails, LinkedIn profiles, and physical home addresses.",
+      "inputs": [
+        "First-party CNAME identity-resolution pixel & Google Ads ValueTrack ({keyword}) URL tags",
+        "Publisher co-op SHA-256 HEM spine + County Assessor / B2B LinkedIn enrichment graph",
+        "Automated physical postcard API (Lob / PostGrid), B2B Slack routing, & Custom Audience sync"
+      ],
+      "workflow": [
+        "Geo-fence pixel execution at the CDN edge (US-only, excluding EU/UK GDPR traffic) and capture exact referring search keywords via ValueTrack parameters",
+        "Resolve anonymous bouncing visitors against the identity spine within 200ms to append homeowner address, work email, and LinkedIn URL",
+        "Route resolved B2B executives to instant Slack/LinkedIn warm outreach, trigger physical next-day postcards to resolved homeowner addresses, and sync SHA-256 hashes into Meta/Google Custom Audiences"
+      ],
+      "metrics": [
+        "Anonymous visitor-to-identity match rate (35–55% target)",
+        "Cost per resolved identity ($0.10–$0.25) vs. net recovered revenue per 1,000 bounces",
+        "Postcard & B2B LinkedIn intercept conversion rate (%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+          "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+          "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+          "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+          "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating"
+        }
+      ]
+    },
+    {
+      "id": "freight_detention_audit_contingency",
+      "track_id": "track_1",
+      "name": "Automated Parcel, LTL Freight & Tariff Overcharge Contingency Auditing",
+      "mechanism": "Ingest mid-market shippers' UPS/FedEx/LTL EDI billing feeds and CBP Form 7501 customs entry summaries via read-only API to programmatically flag late-delivery SLA refunds, dimensional-weight billing errors, and duty-drawback refunds on a 35–50% contingency split.",
+      "inputs": [
+        "Read-only UPS/FedEx/LTL carrier billing API & EDI 210 feeds",
+        "CBP ACE Form 7501 customs entry & HTS tariff schedules",
+        "Automated carrier dispute & duty-drawback claim submission engine"
+      ],
+      "workflow": [
+        "Connect read-only to shipper parcel/freight portals and ingest historical and daily invoice line items",
+        "Flag guaranteed-service late deliveries, duplicate accessorial fees, residential surcharges, and eligible export duty drawbacks",
+        "Auto-file carrier credit disputes and customs drawback claims, billing the client strictly 35–50% of verified credits posted to their statement"
+      ],
+      "metrics": [
+        "Recovered credits as % of total annual parcel/freight spend (2–8% target)",
+        "Dispute acceptance rate by carrier/customs (%)",
+        "Monthly recurring contingency revenue per shipper account"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Carrier anti-automation lockouts or GSR (Guaranteed Service Refund) waiver clauses",
+          "trigger": "Carriers inserting GSR waiver riders into custom shipper pricing agreements or throttling automated dispute bots",
+          "impact": "Reduction in late-delivery refund volume on waived accounts",
+          "detection_metric": "Claim approval ratio per carrier and % of audit recovery derived from billing/dim-weight errors vs. GSR",
+          "fallback": "Pivot audit rules toward non-waivable dimensional-weight, duplicate-charge, LTL freight class, and contract-rate benchmarking recoveries"
+        }
+      ]
+    },
+    {
+      "id": "ucc1_expiration_refi_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "mechanism": "Monitor state Secretary of State UCC-1 financing statements and continuation filings to identify operating businesses 4–9 months into high-cost Merchant Cash Advances (MCAs) or equipment notes, triggering refinance and debt-consolidation live transfers.",
+      "inputs": [
+        "Daily state SOS UCC-1 initial, amendment, & termination bulk feeds",
+        "Secured-party lender dictionary (identifying MCA vs. bank/SBA filings)",
+        "Live-transfer commercial refinance & SBA consolidation desk"
+      ],
+      "workflow": [
+        "Classify daily UCC-1 filings by secured party to isolate businesses that took high-cost short-term working capital 120–240 days ago",
+        "Enrich business owner direct phone and email and score by industry revenue stability",
+        "Contact merchants during peak renewal/payoff windows to offer lower-rate term consolidation or equipment refinancing, monetizing via broker points or live-transfer fees"
+      ],
+      "metrics": [
+        "UCC-to-verified-decision-maker match rate (%)",
+        "Live-transfer qualification rate (%)",
+        "Origination commission / referral fee per funded refi"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+          "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+          "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+          "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+          "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures"
+        }
+      ]
+    },
+    {
+      "id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "mechanism": "Ingest daily federal FMCSA Census, Licensing & Insurance (L&I), and SMS roadside-inspection violation feeds to intercept newly granted MC/DOT authorities (during the mandatory 21-day insurance-filing window) and fleets with fresh HOS/maintenance citations.",
+      "inputs": [
+        "FMCSA daily Licensing & Insurance (L&I) pending-authority feed",
+        "FMCSA Safety Measurement System (SMS) roadside violation & BASIC score logs",
+        "Commercial trucking insurance, factoring, & ELD compliance partner network"
+      ],
+      "workflow": [
+        "Poll daily FMCSA pending-application feeds to identify carriers that received a docket number but still need BOC-3 and BIPD insurance filings to go active",
+        "Monitor SMS inspection logs for fleets cited for ELD, hours-of-service, or maintenance violations requiring corrective action plans",
+        "Route carriers in real time to commercial truck insurance brokers ($500–$1,500 CPA/split), freight factoring desks, and compliance consultants"
+      ],
+      "metrics": [
+        "FMCSA filing-to-contact latency (minutes)",
+        "Pending-authority to bound-policy conversion %",
+        "Combined CPA from insurance, BOC-3, ELD, and factoring referrals"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+          "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+          "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+          "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+          "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels"
+        }
+      ]
+    },
+    {
+      "id": "sec_edgar_8k_vendor_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "SEC Form 8-K, Form D & C-Suite Turnover Trigger Arbitrage",
+      "mechanism": "Parse SEC EDGAR real-time RSS/JSON feeds for Form D (private Reg D capital raises) and Form 8-K (Item 5.02 C-suite departures, Item 1.01 material agreements, Item 2.01 M&A closings) to trigger sub-hour executive outreach before commercial databases update.",
+      "inputs": [
+        "SEC EDGAR real-time Submissions API & Form D / Form 8-K XML feeds",
+        "Automated filing parser extracting raise amounts, executive names, & signatory contacts",
+        "Enterprise recruiting, specialty finance, & B2B agency deal-routing desk"
+      ],
+      "workflow": [
+        "Ingest SEC EDGAR filings within seconds of publication using a compliant User-Agent header (<=10 requests/second)",
+        "Extract Form D issuers raising $2M–$50M (who immediately deploy capital on hiring, growth agencies, and software) and Form 8-K executive transitions",
+        "Deliver tailored briefings to the filing officers and route warm introductions to executive search firms, enterprise software resellers, and B2B agencies"
+      ],
+      "metrics": [
+        "EDGAR publication-to-enrichment latency (seconds)",
+        "Form D / 8-K executive response rate vs. cold baseline (3–5x lift)",
+        "Retainer and placement referral fees generated per 100 filings"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "SEC EDGAR automated-access block or Reg D general-solicitation confusion",
+          "trigger": "Exceeding SEC EDGAR's 10-requests-per-second fair-access limit or omitting the mandatory contact User-Agent header",
+          "impact": "Temporary IP block by Akamai/SEC infrastructure",
+          "detection_metric": "Request rate strictly <=5 req/sec with compliant User-Agent and zero HTTP 403 responses",
+          "fallback": "Enforce token-bucket rate limiting at 5 req/sec and mirror SEC nightly bulk zip archives for historical lookbacks"
+        }
+      ]
+    },
+    {
+      "id": "hospital_lien_medical_receivables_arbitrage",
+      "track_id": "track_1",
+      "name": "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery",
+      "mechanism": "Partner with surgical centers, air/ground ambulance operators, and specialty clinics to ingest underpaid or denied commercial insurance claims, automating federal No Surprises Act IDR (Independent Dispute Resolution) and ERISA administrative appeals on a 20–35% contingency fee.",
+      "inputs": [
+        "Provider 835/837 EDI remittance & denial feeds (CO-45, CO-50, PR-96 codes)",
+        "Qualified Payment Amount (QPA) & regional FAIR Health benchmark database",
+        "Automated ERISA plan-document demand & Federal IDR portal filing workflow"
+      ],
+      "workflow": [
+        "Ingest denied and severely underpaid out-of-network commercial claims from specialty medical practices",
+        "Cross-reference payer remittances against statutory Open Negotiation windows (30 business days) under the No Surprises Act and ERISA SPD timelines",
+        "Generate evidence-backed arbitration briefs and ERISA appeals, collecting 20–35% of the incremental insurer payout above the initial remittance"
+      ],
+      "metrics": [
+        "Average incremental recovery per arbitrated claim ($1,500–$25,000+)",
+        "IDR / ERISA appeal win rate vs. initial payer offer (%)",
+        "Contingency revenue per practice partner per month"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Missed 30-day Open Negotiation / 4-day IDR initiation statutory deadlines or HIPAA breach",
+          "trigger": "Failing to file within strict federal No Surprises Act business-day windows or handling PHI without a signed Business Associate Agreement (BAA)",
+          "impact": "Permanent forfeiture of IDR arbitration eligibility on expired claims or HIPAA compliance penalties",
+          "detection_metric": "100% BAA execution before EDI ingestion and automated T-minus-5-day statutory deadline alerts",
+          "fallback": "Enforce HIPAA-compliant encrypted EDI pipelines with signed BAAs and fall back to longer-window ERISA administrative appeals when IDR windows have lapsed"
+        }
+      ]
+    },
+    {
+      "id": "free_llc_fintech_bounty_stacking",
+      "track_id": "track_1",
+      "name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "mechanism": "Offering a $0-service-fee LLC formation and business-launch concierge (borrower pays only mandatory state filing fees) that embeds a sequential post-formation 'Required Business Infrastructure Checklist' where every newly formed entity opens free business banking, corporate card, payroll, bookkeeping, and merchant accounts—yielding $600–$1,800+ in stacked B2B fintech CPA bounties per free formation.",
+      "inputs": [
+        "High-intent 'free LLC formation' and 'start a business in [State]' search, social, and creator traffic",
+        "Automated state SOS filing workflow, EIN retrieval assistant, and operating-agreement generator",
+        "Direct B2B partner/CPA agreements with neobank, corporate card, payroll, and registered-agent providers"
+      ],
+      "workflow": [
+        "Acquire first-time founders via a genuine $0-markup LLC formation funnel where the user pays only state statutory fees",
+        "Guide the founder through an automated EIN and corporate-resolution wizard immediately upon state filing submission",
+        "Present an integrated 1-click onboarding sequence for a free business checking account ($150–$400 CPA), corporate charge card ($200–$500 CPA), payroll/bookkeeping trial ($100–$300 CPA), and web/domain host ($100–$200 CPA)",
+        "Provide automated compliance reminders and annual report tracking to capture recurring Year-2 registered-agent renewals"
+      ],
+      "metrics": [
+        "Stacked fintech CPA bounty revenue ($) realized per 100 free LLC formations",
+        "Post-EIN bank-account funding conversion rate (%) within 14 days of formation",
+        "Net customer acquisition margin after paid search/creator traffic spend"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+          "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+          "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+          "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+          "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent"
+        }
+      ]
+    },
+    {
+      "id": "erisa_self_funded_specialty_drug_importation_arbitrage",
+      "track_id": "track_1",
+      "name": "Employer Self-Funded ERISA Plan International Specialty-Drug Importation Arbitrage",
+      "mechanism": "Contracting with mid-market US employers (100–5,000 employees) operating self-funded ERISA health plans to carve out high-cost specialty biologics and GLP-1s ($6,000–$15,000/mo US PBM list price) and source the identical manufacturer-sealed drugs from licensed Tier-1 pharmacies in Canada, the UK, Australia, and New Zealand at $800–$2,200/mo—waiving the employee's copay to $0 while taking 25–35% of the employer's $50,000–$100,000/yr per-patient savings.",
+      "inputs": [
+        "Department of Labor (DOL) Form 5500 Schedule A/C database identifying self-funded ERISA employers by broker, TPA, and stop-loss carrier",
+        "Licensed international pharmacy dispensation network across Tier-1 jurisdictions (Canada, UK, Australia, New Zealand) with cold-chain courier logistics",
+        "Turnkey ERISA Summary Plan Description (SPD) 'Specialty Drug Carve-Out Amendment' and $0-copay patient concierge portal"
+      ],
+      "workflow": [
+        "Mine DOL Form 5500 filings to target CFOs and benefits directors of self-funded companies with 150–3,000 covered lives",
+        "Audit the employer's anonymized pharmacy claims file to flag the 1–3% of members driving 45–60% of total drug spend (Humira, Stelara, Skyrizi, Dupixent, Enbrel, Ozempic)",
+        "Plug in a voluntary $0-copay international personal-importation program alongside the existing TPA, fulfilling 90-day cold-chain prescriptions at 60–80% below US PBM prices",
+        "Bill the self-funded employer plan a shared-savings contingency fee equal to 25–35% of verified net claim reduction ($15,000–$30,000/yr per enrolled specialty patient)"
+      ],
+      "metrics": [
+        "Verified annual specialty-claim savings ($) per self-funded employer group",
+        "Net shared-savings fee revenue ($15k–$30k/yr) per enrolled specialty patient",
+        "Employee $0-copay opt-in conversion rate (target: >85%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Incumbent PBM rebate-contract retaliation or cold-chain customs shipment delay",
+          "trigger": "Legacy PBM threatening to withhold formulary rebates if specialty scripts are carved out, or border clearance delays on temperature-sensitive biologics",
+          "impact": "Delayed employer onboarding or need for local emergency bridge fills",
+          "detection_metric": "Cold-chain transit temperature telemetry and net employer savings after accounting for any forfeited PBM rebates",
+          "fallback": "Target independent TPAs and transparent pass-through PBMs first, combine international sourcing with US Manufacturer Patient Assistance Program (PAP) optimization, and maintain domestic bridge-fill coverage"
+        }
+      ]
+    },
+    {
+      "id": "section_340b_contract_pharmacy_spread_arbitrage",
+      "track_id": "track_1",
+      "name": "340B Contract-Pharmacy & Covered-Entity Drug Price Spread Arbitrage",
+      "mechanism": "Partnering with HRSA-qualified 340B Covered Entities (Federally Qualified Health Centers, Ryan White clinics, disproportionate-share rural hospitals) to provide turnkey Third-Party Administrator (TPA) split-billing software, specialty contract-pharmacy fulfillment, and tele-referral capture—buying outpatient specialty medications at 25–50%+ statutory 340B discounts while collecting 100% full commercial insurance reimbursement and splitting the multi-thousand-dollar per-script margin via compliant flat administrative/dispensing fees.",
+      "inputs": [
+        "HRSA OPAIS (Office of Pharmacy Affairs Information System) database of Covered Entities and registered contract pharmacies",
+        "340B split-billing / virtual-inventory accumulator software tracking 11-digit NDCs, prescriber NPIs, and patient-eligibility encounters",
+        "Licensed specialty/mail-order contract pharmacy network and commercial payer PBMs"
+      ],
+      "workflow": [
+        "Identify under-monetized 340B Covered Entities (FQHCs, grantees, rural hospitals) with low specialty capture rates in the HRSA OPAIS registry",
+        "Deploy split-billing TPA software and mail-order specialty contract-pharmacy infrastructure that captures commercially insured prescriptions written or co-managed by clinic providers",
+        "Reimburse the pharmacy at full commercial payer rates ($3,000–$12,000/script) while replenishing drug inventory via the clinic's 340B wholesaler account at $800–$4,000/script",
+        "Charge fixed fair-market-value per-dispense administrative, software, and clinical-management fees that capture a major share of the net spread while funding the clinic's safety-net mission"
+      ],
+      "metrics": [
+        "Captured commercially insured 340B scripts per month per Covered Entity",
+        "Gross commercial-to-340B acquisition spread ($1,500–$6,000+) per specialty fill",
+        "HRSA audit pass rate (zero duplicate Medicaid discount or diversion findings)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Manufacturer contract-pharmacy restriction policies or HRSA 'patient definition' audit findings",
+          "trigger": "Drug manufacturers restricting 340B replenishment to a single contract pharmacy unless claims data is submitted, or filling scripts for patients without a documented clinic encounter",
+          "impact": "Loss of 340B ceiling price on specific NDCs or HRSA repayment liability",
+          "detection_metric": "100% EHR encounter-to-NPI match verification prior to 340B replenishment accumulation and automated ESP (340B ESP) data submission",
+          "fallback": "Operate an in-house entity-owned specialty pharmacy location alongside contract pharmacies, automate 340B ESP claims-data uploads to unlock restricted NDCs, and enforce strict EHR encounter gates"
+        }
+      ]
+    },
+    {
+      "id": "out_of_network_dme_telehealth_billing_arbitrage",
+      "track_id": "track_1",
+      "name": "Out-of-Network DME, CGM & Diagnostic Reference Lab Billing Arbitrage",
+      "mechanism": "Operating a healthcare Management Services Organization (MSO) and performance patient-acquisition engine that pairs targeted paid-social symptom funnels with independent telehealth physician groups and licensed Durable Medical Equipment (DME) / reference lab suppliers—acquiring insured patients at $85–$220 CAC for high-margin HCPCS/CPT codes (Continuous Glucose Monitors, pneumatic compression devices, home sleep testing, custom orthotics) that reimburse $900–$3,500+ against $70–$220 hardware COGS.",
+      "inputs": [
+        "CMS DMEPOS Fee Schedule and commercial payer allowables matrix by HCPCS code and state MAC jurisdiction",
+        "Real-time insurance-eligibility and deductible verification API (Availity / Waystar / Stedi)",
+        "Compliant Management Services Organization (MSO) software + flat-fee marketing contracts with PECOS-enrolled DME suppliers and telehealth PCs"
+      ],
+      "workflow": [
+        "Run high-converting paid social and search funnels educating commercially insured and Medicare-eligible patients on covered at-home medical devices (CGMs, lymphedema pumps, sleep apnea monitors)",
+        "Perform instant real-time eligibility and remaining-deductible checks via EDI 270/271 before scheduling any clinical intake",
+        "Route qualified patients to an independent physician practice for a legitimate synchronous/asynchronous telehealth evaluation and medical-necessity chart documentation",
+        "Fulfill the prescribed hardware and recurring monthly supply refills through a licensed DME entity, collecting Recurring Rental / Resupply reimbursements every 30–90 days"
+      ],
+      "metrics": [
+        "Verified insurance-eligible patient CAC ($85–$220) vs. 12-month LTV including recurring resupply fills ($1,800–$4,500)",
+        "First-pass clean claim acceptance rate (%) and days sales outstanding (DSO)",
+        "Physician medical-necessity chart audit pass rate (100% LCD/NCD criteria match)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Payer post-payment audit recoupment or Anti-Kickback Statute (AKS) per-referral fee scrutiny",
+          "trigger": "Paying per-lead commissions tied to federal healthcare volume or submitting claims without complete Local Coverage Determination (LCD) chart notes",
+          "impact": "MAC prepayment review hold or clawback of reimbursed claims",
+          "detection_metric": "100% automated LCD clinical-criteria checklist validation before claim EDI 837P submission and strict flat-fee MSO billing",
+          "fallback": "Structure all marketing and software agreements strictly under Safe-Harbor Personal Services / MSO flat fair-market-value retainers, prioritize commercial payers and recurring CGM resupply, and enforce third-party clinical chart review"
+        }
+      ]
+    },
+    {
+      "id": "customs_first_sale_rule_valuation_arbitrage",
+      "track_id": "track_1",
+      "name": "CBP \"First-Sale Rule\" (19 CFR § 152.103) Multi-Tier Customs Valuation Arbitrage",
+      "mechanism": "Restructuring multi-tiered import supply chains under the US Court of Appeals *Nissho Iwai* 'First Sale Rule' so US importers legally declare the lower factory-to-middleman transaction price ($8) for US Customs duty and tariff calculation rather than the middleman-to-US-importer invoice price ($18)—slashing annual tariff cash outflows by 35–55% across $10M–$250M+ in imported merchandise.",
+      "inputs": [
+        "US Customs bill-of-lading and HTS duty-spend intelligence identifying mid-market importers paying $1M–$20M/yr in duties via trading companies",
+        "Three-party contract, factory cost-sheet, and arm's-length transfer-pricing documentation templates satisfying CBP *Nissho Iwai* criteria",
+        "Licensed customs brokerage and trade-attorney opinion pipeline"
+      ],
+      "workflow": [
+        "Identify US importers purchasing finished goods through Hong Kong, Singapore, Taiwanese, or European trading intermediaries or sourcing agents",
+        "Audit the two-tier transaction chain to confirm (1) bona fide sale from factory to middleman, (2) clear designation for US export at factory order, and (3) arm's-length pricing",
+        "Implement compliant multi-tier invoicing and ERP documentary trails so the customs broker declares the factory's First-Sale price on CBP Form 7501 instead of the middleman's marked-up invoice",
+        "Collect a 25–35% contingency fee on all prospective and retroactive (Post-Summary Correction / Protest) duty reductions realized by the importer"
+      ],
+      "metrics": [
+        "Percentage reduction in declared customs dutiable value (typically 30–50%)",
+        "Annualized cash tariff savings ($300k–$5M+/yr per importer) and retroactive PSC refund recovery ($)",
+        "CBP CF-28/CF-29 Request for Information audit survival rate (100% documentary compliance)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "CBP disallowance of First-Sale valuation during a CF-28 Request for Information audit",
+          "trigger": "Related-party factory/middleman entities failing to prove arm's-length profit margins or refusing to disclose factory commercial invoices",
+          "impact": "Re-assessment of duties on the second-sale price plus interest",
+          "detection_metric": "Annual pre-audit verification of factory commercial invoices, bank wire proofs, and OECD transfer-pricing benchmark studies",
+          "fallback": "Store encrypted factory invoices in a confidential customs-broker escrow vault (so the US buyer never sees the middleman's margin, while CBP auditors have full access) and back every program with a formal customs-counsel opinion letter"
+        }
+      ]
+    },
+    {
+      "id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "track_id": "track_1",
+      "name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "mechanism": "Embedding a 'Free Automated Accounts Payable (AP) / Instant Vendor Settlement' platform inside high-volume B2B verticals (freight brokerage, construction general contracting, medical supply, property management, media agencies) that converts checks and ACH payables into single-use Visa/Mastercard Commercial Virtual Credit Cards (VCCs)—capturing 140–195 basis points (1.40%–1.95%) in uncapped commercial interchange rebates on hundreds of millions in third-party invoice volume.",
+      "inputs": [
+        "BaaS / Commercial Card Issuing bank partnership (Marqeta, Lithic, Stripe Issuing, Highnote, Cross River) on uncapped Visa/Mastercard Large-Ticket & Purchasing interchange tiers",
+        "ERP/accounting connector (QuickBooks, NetSuite, Sage, McLeod/TMW freight TMS) ingesting open vendor AP ledgers",
+        "Automated vendor-enablement call/email engine pitching 'Day-1 Instant Payment via Virtual Card vs. Net-45 Check/ACH'"
+      ],
+      "workflow": [
+        "Onboard mid-market companies with $20M–$250M/yr in fragmented vendor payables onto a $0-cost AP automation and working-capital portal",
+        "Cross-reference their vendor master list against Visa/Mastercard supplier-acceptance networks to flag vendors that already accept card payments",
+        "Offer remaining vendors immediate Day-1 invoice settlement via single-use emailed/API virtual card in exchange for waiving Net-30/Net-60 wait times",
+        "Earn 1.50%–1.95% gross interchange rebate from the issuing bank on every settled dollar, sharing 0.25%–0.50% with the corporate client while retaining 1.10%–1.45% net platform margin"
+      ],
+      "metrics": [
+        "Total annualized Gross Payment Volume (GPV $) converted from ACH/check to Virtual Card (target: 25–45% of total AP)",
+        "Net retained interchange spread in basis points (110–145 bps) after bank processor fees and client revenue share",
+        "Vendor card-acceptance retention rate (%) across repeat monthly invoices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+          "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+          "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+          "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+          "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases"
+        }
+      ]
+    },
+    {
+      "id": "high_risk_payfac_iso_mid_cascading_arbitrage",
+      "track_id": "track_2",
+      "name": "High-Risk Payment Orchestration, MID Cascading & Payfac ISO Spread Arbitrage",
+      "mechanism": "Operating a wholesale high-risk Independent Sales Organization (ISO) and smart payment-orchestration gateway across 25–60 domestic and offshore acquiring banks for verticals banned by Stripe/PayPal (telehealth GLP-1s/peptides, nutra subscriptions, sweepstakes gaming, high-ticket coaching, AI companions)—buying wholesale processing at ~2.10% and charging merchants 5.50%–8.90% + rolling reserves while automatically cascading declines and deflecting pre-dispute chargebacks.",
+      "inputs": [
+        "Wholesale ISO / Payfac sponsorship agreements across 20+ high-risk domestic and international acquiring banks and EMIs",
+        "Smart payment-orchestration router (NMI / Spreedly / proprietary vault) supporting multi-MID load balancing, BIN-based routing, and automatic decline cascading",
+        "Integrated Verifi CDRN / Ethoca / RDR (Rapid Dispute Resolution) pre-chargeback interception pipeline"
+      ],
+      "workflow": [
+        "Onboard high-volume DTC, subscription, telehealth, and gaming merchants rejected or frozen by mainstream aggregators",
+        "Underwrite and provision each merchant with a diversified cluster of 3–8 dedicated Merchant IDs (MIDs) across distinct acquiring banks",
+        "Route live checkout transactions through the orchestration vault—matching card BINs to the highest-approval acquirer and automatically re-trying soft declines on secondary MIDs",
+        "Auto-refund disputed transactions via Ethoca/Verifi RDR alerts before they register as formal Visa/Mastercard chargebacks, keeping every MID below the 0.90% VAMP threshold while collecting 300–550 bps in recurring net processing residuals"
+      ],
+      "metrics": [
+        "Monthly Gross Processing Volume (GPV $) and net retained residual spread (300–550 bps)",
+        "Post-RDR net chargeback ratio (<0.65% across all active MIDs)",
+        "Cross-MID authorization approval lift (+8–18% over single-processor setups)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Acquiring bank MID termination or Visa VAMP / Mastercard ECM excessive-chargeback fine",
+          "trigger": "Merchant fulfillment failure or deceptive continuity billing spiking raw disputes above 0.90%–1.50%",
+          "impact": "Frozen merchant rolling reserve or MATCH-list placement of the offending merchant entity",
+          "detection_metric": "Real-time Early Fraud Warning (EFW / TC40 / SAFE) ratio and mandatory RDR auto-refund activation at 0.50% dispute velocity",
+          "fallback": "Enforce mandatory 10% rolling reserves, automated Verifi RDR pre-dispute refunds, 3DS2 step-up authentication on high-risk BINs, and strict merchant descriptor transparency"
+        }
+      ]
+    },
+    {
+      "id": "transferable_tax_credit_brokerage_syndication",
+      "track_id": "track_1",
+      "name": "Transferable Federal & State Tax Credit Brokerage & Syndication (IRA § 6418 / Film / Historic)",
+      "mechanism": "Scraping federal DOE/EPA interconnection queues, state film offices, and historic-preservation registries to originate transferable tax credits (IRC § 6418 Clean Energy Investment/Production Credits, Georgia/Louisiana Film Credits, State Historic Rehab & Brownfield Credits) from cash-strapped project developers at $0.82–$0.88 on the dollar and flipping them in simultaneous escrow closings to corporate and HNW taxpayers at $0.92–$0.96 on the dollar.",
+      "inputs": [
+        "State film-office production certifications, National Park Service Part 2/3 Historic Preservation filings, and utility solar/biogas/storage interconnection queues",
+        "IRS Energy Credits Online pre-filing registration verification and tax-credit recapture insurance underwriting partners",
+        "Outbound network of CPA managing partners, corporate tax directors, and family-office CIOs with $1M–$50M+ in quarterly federal/state tax liabilities"
+      ],
+      "workflow": [
+        "Monitor public project registries to identify middle-market solar, RNG, battery storage, independent film, and historic-rehab developers holding $1M–$25M in newly generated transferable credits",
+        "Lock up exclusive purchase or placement options at $0.83–$0.89 per $1.00 of credit prior to quarterly corporate estimated tax deadlines (April 15, June 15, Sept 15, Dec 15)",
+        "Package the credits with a third-party CPA cost-segregation/eligibility opinion and tax-credit recapture insurance policy",
+        "Execute a simultaneous bilateral escrow closing with a corporate taxpayer at $0.92–$0.95 on the dollar—saving the buyer 5–8% guaranteed on their tax bill while capturing a 400–800 bps riskless spread ($40k–$80k per $1M block)"
+      ],
+      "metrics": [
+        "Face value of tax credits placed per quarter ($5M–$100M+)",
+        "Net retained principal/brokerage spread (400–800 bps) per closed tranche",
+        "Days in escrow from developer IRS registration number issuance to wire settlement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "IRS § 6418 recapture event or state department-of-revenue basis challenge",
+          "trigger": "Project developer inflating eligible cost basis or taking a clean-energy asset out of service during the 5-year recapture window",
+          "impact": "Taxpayer recapture assessment plus penalties if uninsured",
+          "detection_metric": "100% independent Big-4/national CPA cost-basis audit and mandatory A-rated tax-credit recapture insurance binder on every tranche",
+          "fallback": "Never take unhedged balance-sheet inventory risk; close strictly via simultaneous back-to-back escrow funded by the buyer's wire and backed by non-cancelable tax-credit insurance"
+        }
+      ]
+    },
+    {
+      "id": "litigation_finance_mass_tort_docket_securitization",
+      "track_id": "track_1",
+      "name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "mechanism": "Pairing an Arizona Alternative Business Structure (ABS) or co-counsel law firm with an institutional litigation-finance credit facility to acquire, medically verify (via $6.50 HITECH patient-directed record requests), and package 1,000–25,000 retained mass-tort plaintiffs (PFAS, AFFF, Paraquat, NEC, rideshare assault, defective medical devices) at $1,200–$2,500 CAC—either flipping vetted case tranches to litigation-finance hedge funds at 2.5x–4x cost or holding for 35–40% global MDL settlement fee splits.",
+      "inputs": [
+        "Judicial Panel on Multidistrict Litigation (JPML) docket analytics, FDA FAERS adverse-event spikes, and EPA contaminant zip-code maps",
+        "Arizona ABS / co-counsel retainer infrastructure with e-sign intake and automated HITECH Act (45 CFR § 164.524) medical-record retrieval engine",
+        "Non-recourse litigation-finance warehouse credit facility and MDL leadership co-counsel placement contracts"
+      ],
+      "workflow": [
+        "Identify emerging MDL mass torts with clear causation biomarkers (specific ICD-10 diagnosis codes + geographic/product exposure proof) and deep-pocket corporate defendants",
+        "Run hyper-targeted CTV, paid social, and public-record outbound campaigns to sign injured claimants directly onto joint co-counsel retainer agreements",
+        "Execute automated HITECH patient-directed electronic medical record (EMR) pulls at the federal statutory cap (~$6.50/record) and use LLM clinical parsers to verify qualifying diagnosis and exposure dates within 72 hours",
+        "Securitize verified, deficiency-free case tranches into litigation-finance buyout facilities at $4,500–$9,000 per vetted retainer or hold on the balance sheet for $25,000–$80,000+ gross contingency fees at MDL settlement"
+      ],
+      "metrics": [
+        "All-in cost per medically verified, deficiency-free retained plaintiff ($1,200–$2,500)",
+        "HITECH medical-record retrieval turnaround time (hours) and clinical qualification pass rate (%)",
+        "Secondary docket tranche sale multiple (2.5x–4.0x CAC) or net MDL settlement IRR"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+          "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+          "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+          "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+          "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders"
+        }
+      ]
+    },
+    {
+      "id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "track_id": "track_1",
+      "name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "mechanism": "Support counsel-led evaluation of genuine tracking-related privacy claims using preserved consent and disclosure evidence; applicability, standing, and recoverable damages require individual legal review.",
+      "inputs": [
+        "Client-authorized browser network captures",
+        "Timestamped consent flows and privacy notices",
+        "Counsel-reviewed standing and statutory applicability checklist"
+      ],
+      "workflow": [
+        "1. Obtain client authorization and preserve ordinary-session tracking and consent evidence",
+        "2. Have counsel assess actual disclosures, statutory coverage, standing, and limitation periods",
+        "3. Route substantiated matters to retained counsel for proportionate notice and resolution",
+        "4. Record outcomes, client distributions, and remediation without duplicate or fabricated claims"
+      ],
+      "metrics": [
+        "Counsel-validated matters per reviewed session",
+        "Net client recovery after disclosed costs",
+        "Evidence completeness and duplicate-claim rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Unsupported statutory demand or evidence rejection",
+          "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+          "impact": "Dismissal, sanctions exposure, and wasted case costs",
+          "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+          "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead"
+        }
+      ]
+    },
+    {
+      "id": "chapter11_trade_claim_convenience_class_rollup",
+      "track_id": "track_1",
+      "name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "mechanism": "Purchase documented small trade claims below risk-adjusted expected plan distributions, accounting for objections, assignment procedures, and plan rules that may prohibit claim splitting or aggregation benefits.",
+      "inputs": [
+        "Bankruptcy schedules E/F and claims register",
+        "Invoices, payment history, and assignment documents",
+        "Proposed plan classification and distribution waterfall"
+      ],
+      "workflow": [
+        "1. Reconcile scheduled trade creditors with filed claims and supporting invoices",
+        "2. Model recoveries under plan amendments, objections, setoffs, and convenience-class eligibility",
+        "3. Buy eligible claims through documented assignments and complete required transfer notices",
+        "4. Monitor objections and confirmation, then reconcile distributions to each acquired claim"
+      ],
+      "metrics": [
+        "Purchase discount to risk-adjusted recovery",
+        "Allowed claim value versus purchased face value",
+        "Realized return and days to distribution"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim disallowance or convenience-class exclusion",
+          "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+          "impact": "Reduced distribution or complete capital loss",
+          "detection_metric": "Objection rate and eligible allowed value per portfolio",
+          "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries"
+        }
+      ]
+    },
+    {
+      "id": "out_of_statute_zombie_debt_portfolio_settlement",
+      "track_id": "track_1",
+      "name": "Out-of-Statute Charged-Off Debt Portfolio & Self-Serve Tradeline Settlement Funnels",
+      "mechanism": "Evaluate heavily discounted time-barred receivables for lawful voluntary resolution, separating collection limitation periods from credit-reporting limits and excluding extinguished or otherwise uncollectible obligations.",
+      "inputs": [
+        "Account-level ownership and payment history",
+        "State limitation, revival, and collection-disclosure matrix",
+        "Dispute records and credit-reporting eligibility dates"
+      ],
+      "workflow": [
+        "1. Validate account ownership, balances, bankruptcy status, and applicable limitation periods",
+        "2. Obtain licensed legal review of collectibility, required notices, and payment-revival consequences",
+        "3. Offer permitted voluntary self-service resolutions without lawsuit threats or credit-deletion promises",
+        "4. Honor disputes and opt-outs, issue satisfaction records, and update only accurate eligible reporting"
+      ],
+      "metrics": [
+        "Validated legally collectible balance share",
+        "Net voluntary receipts after servicing costs",
+        "Dispute and disclosure-defect rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Time-barred collection or reporting violation",
+          "trigger": "Threatened litigation, unlawful revival solicitation, or re-aging of obsolete debt",
+          "impact": "Enforcement, restitution, and servicing suspension",
+          "detection_metric": "Accounts failing legal-age checks and substantiated complaints",
+          "fallback": "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation"
+        }
+      ]
+    },
+    {
+      "id": "aged_shelf_corp_tradeline_credit_stacking",
+      "track_id": "track_1",
+      "name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "mechanism": "Compare reinstated entities and genuine business credit facilities for working-capital financing; entity age is not operating history, and promotional APR economics require accurate underwriting and repayment capacity.",
+      "inputs": [
+        "Entity filings, beneficial ownership, and liability searches",
+        "Verified operating financials and genuine supplier tradelines",
+        "Lender eligibility, promotional APR, fee, and guarantee terms"
+      ],
+      "workflow": [
+        "1. Audit the entity's ownership, tax liabilities, and reinstatement requirements",
+        "2. Disclose acquisition and actual operating history; establish only genuine paid supplier accounts",
+        "3. Compare lender-approved applications with full debt disclosure and consolidated exposure limits",
+        "4. Fund documented business expenses and repay before promotional expiry using cash-flow reserves"
+      ],
+      "metrics": [
+        "Effective borrowing cost including fees",
+        "Debt service coverage under post-promotion APR",
+        "Utilization and days to promotional expiry"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit withdrawal or unaffordable repricing",
+          "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+          "impact": "Account closure, accelerated repayment, and guarantee exposure",
+          "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+          "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending"
+        }
+      ]
+    },
+    {
+      "id": "cell_tower_billboard_easement_strip_out",
+      "track_id": "track_1",
+      "name": "Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage",
+      "mechanism": "Separate assignable site-access and rent rights from underlying real estate for specialist buyers, pricing tenant termination rights and the permanent burden left on the residual property.",
+      "inputs": [
+        "Tower, rooftop, and billboard leases and amendments",
+        "Title, lender consent, and zoning documents",
+        "Specialist easement-buyer bids and residual property appraisals"
+      ],
+      "workflow": [
+        "1. Identify leased sites and reconcile actual rent receipts with termination and renewal terms",
+        "2. Verify assignment rights, mortgage restrictions, maintenance duties, and required consents",
+        "3. Compare easement sale proceeds against lost rent and residual property impairment",
+        "4. Close approved conveyances through escrow and record access, utilities, and rent-allocation rights"
+      ],
+      "metrics": [
+        "Net easement proceeds versus retained rent value",
+        "Residual property value impairment",
+        "Consent-to-close cycle days"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Nonassignable lease or excessive permanent property burden",
+          "trigger": "Missing tenant or lender consent or easement scope exceeding valued rights",
+          "impact": "Failed closing or reduced refinancing and resale value",
+          "detection_metric": "Unresolved consent conditions and residual appraisal discount",
+          "fallback": "Retain the lease or negotiate a narrower term-limited assignment with all required approvals"
+        }
+      ]
+    },
+    {
+      "id": "mca_ucc_stacking_default_restructure_brokerage",
+      "track_id": "track_2",
+      "name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "mechanism": "Use UCC filing changes to identify businesses that may need cash-flow review and consensual MCA restructuring, with verified obligations and disclosed compensation rather than encouraging undisclosed stacking.",
+      "inputs": [
+        "Public UCC filings and termination records",
+        "Merchant-authorized contracts and cash-flow statements",
+        "Broker licensing rules and disclosed creditor compensation terms"
+      ],
+      "workflow": [
+        "1. Treat UCC changes as outreach signals, not proof of default, and obtain merchant authorization",
+        "2. Reconcile advances, liens, repayment pulls, covenants, and sustainable payment capacity",
+        "3. Disclose dual-sided fees and conflicts; use independent counsel where representation would conflict",
+        "4. Coordinate documented creditor-approved modifications and monitor actual payment relief"
+      ],
+      "metrics": [
+        "Net merchant payment relief after fees",
+        "Creditor-approved modification rate",
+        "Post-restructure missed-payment rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+          "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+          "impact": "Accelerated collections and broker liability",
+          "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+          "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "section_179d_municipal_deduction_allocation_arbitrage",
+      "track_id": "track_1",
+      "name": "IRC Section 179D Government & Nonprofit Energy-Deduction Allocation Brokering",
+      "mechanism": "Coordinate eligible government and tax-exempt building owners, qualifying designers, and independent energy certifiers to document Section 179D deduction allocations; compensation is for permitted services, not resale of a freely transferable deduction.",
+      "inputs": [
+        "Public and nonprofit building project records and construction dates",
+        "Designer contracts and owner allocation authority",
+        "Independent energy certification and applicable tax-year eligibility rules"
+      ],
+      "workflow": [
+        "1. Screen building projects for eligible ownership, construction timing, and current Section 179D availability",
+        "2. Verify qualifying designer work, energy certification, deduction limits, and applicable wage and apprenticeship requirements",
+        "3. Obtain authorized owner allocation letters and reconcile prior allocations to prevent duplicate deductions",
+        "4. Deliver the substantiated file to the designer's tax adviser and collect disclosed legally permitted coordination fees"
+      ],
+      "metrics": [
+        "Certified eligible deduction value allocated",
+        "Owner-approved allocation conversion rate",
+        "Net coordination fees after certification and review costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Deduction allocation rejected or reduced",
+          "trigger": "Ineligible project dates, unsupported designer status, deficient certification, or duplicate allocation",
+          "impact": "Lost tax benefit, assessment exposure, and disputed service fees",
+          "detection_metric": "Unresolved eligibility and allocation exceptions per project",
+          "fallback": "Pause allocation, obtain independent tax review, and offer fixed-fee documentation support only for eligible projects"
+        }
+      ]
+    },
+    {
+      "id": "wotc_hourly_payroll_tax_credit_contingency_engine",
+      "track_id": "track_1",
+      "name": "Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine",
+      "mechanism": "Automate employer-authorized WOTC screening and separately substantiate Section 41 research credits, earning outcome-linked service fees only where permitted; program authorization, qualifying activities, wage coordination, and professional fee restrictions govern each claim.",
+      "inputs": [
+        "Consented hiring records, Form 8850 responses, and payroll hours",
+        "Research project evidence and qualified expense ledgers",
+        "State workforce certification procedures and tax-year credit and fee rules"
+      ],
+      "workflow": [
+        "1. Confirm WOTC authorization for each hire date and complete required prescreening by the job-offer date",
+        "2. Submit Form 8850 and required supporting forms within the applicable 28-day deadline and track state certification and qualifying hours",
+        "3. Separately document Section 41 qualifying research and expenses, reconciling wage overlap and applicable deduction adjustments with a tax professional",
+        "4. Obtain employer and preparer approval before filing, retain audit support, and collect permitted fees without guaranteeing credits"
+      ],
+      "metrics": [
+        "Timely WOTC certification submission rate",
+        "Substantiated credits realized by the employer",
+        "Net permitted service fees after review and filing costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit denial or impermissible contingent-fee arrangement",
+          "trigger": "Expired program authority, late certification, unsupported research expenses, or restricted practitioner compensation",
+          "impact": "Reduced credits, amended returns, penalties, and fee repayment exposure",
+          "detection_metric": "Deadline exceptions, certification denials, and unsupported expense share",
+          "fallback": "Exclude unsupported claims and use compliant fixed-fee payroll and research-documentation services under independent tax review"
+        }
+      ]
+    },
+    {
+      "id": "state_film_historic_brownfield_tax_credit_brokerage",
+      "track_id": "track_1",
+      "name": "State Film, Historic Rehabilitation (HTC) & Brownfield Transferable Tax Credit Placement",
+      "mechanism": "Match certified state film, historic rehabilitation, and brownfield credits with eligible taxpayers at negotiated discounts, retaining disclosed placement fees; transferability and buyer usability are state-specific and do not imply federal historic credits can be sold outright.",
+      "inputs": [
+        "State agency project approvals and issued credit certificates",
+        "Transfer rules, recapture terms, and seller ownership records",
+        "Buyer state tax liabilities and escrow placement agreements"
+      ],
+      "workflow": [
+        "1. Identify certified credits and verify state-specific transferability, issuance status, and remaining carryforward life",
+        "2. Have independent advisers validate eligible costs, ownership, liens, recapture exposure, and buyer utilization limits",
+        "3. Match approved buyers and sellers with disclosed pricing, fees, indemnities, and any available insurance exclusions",
+        "4. Complete required agency transfer approvals and escrow settlement, then retain filing and post-close monitoring records"
+      ],
+      "metrics": [
+        "Certified transferable credit face value placed",
+        "Net placement fee per settled transaction",
+        "Transfer approval and escrow cycle days"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Transfer rejected or purchased credit unusable",
+          "trigger": "State rule change, certificate defect, recapture event, or buyer liability mismatch",
+          "impact": "Failed closing or buyer tax shortfall and indemnity dispute",
+          "detection_metric": "Unresolved certificate exceptions and buyer utilization coverage",
+          "fallback": "Suspend settlement under diligence contingencies and rematch only verified eligible credits without guaranteeing tax savings"
+        }
+      ]
+    },
+    {
+      "id": "solar_tax_equity_depreciation_strip_syndication",
+      "track_id": "track_1",
+      "name": "Commercial Solar Tax-Equity Flip & Bonus-Depreciation Strip Syndication",
+      "mechanism": "Arrange commercial solar partnership-flip investments that allocate supported tax benefits and cash flows to genuine equity owners; depreciation cannot be sold as a standalone credit, and allocations require economic substance, tax compliance, and securities-law review.",
+      "inputs": [
+        "Solar project costs, ownership records, and operating contracts",
+        "Investor tax capacity and dated depreciation eligibility analysis",
+        "Counsel-reviewed partnership waterfall and securities offering documents"
+      ],
+      "workflow": [
+        "1. Underwrite project cash flows, eligible basis, construction and service dates, and current credit and depreciation availability",
+        "2. Verify investor suitability, tax capacity, at-risk and passive-loss limits, and applicable securities and intermediary requirements",
+        "3. Structure counsel-approved partnership allocations and flip terms with genuine equity risk, basis adjustments, and recapture protections",
+        "4. Close through authorized intermediaries and monitor operations, tax reporting, and flip conditions before distributing permitted fees"
+      ],
+      "metrics": [
+        "Qualified tax-equity capital closed",
+        "Realized investor distributions versus underwritten waterfall",
+        "Net permitted placement fees after legal and diligence costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tax allocations disallowed or unlicensed securities placement",
+          "trigger": "Unsupported depreciation stripping, inadequate economic substance, ineligible project timing, or unauthorized transaction-based compensation",
+          "impact": "Tax assessments, recapture, investor losses, and fee disgorgement exposure",
+          "detection_metric": "Unresolved tax opinion conditions and securities compliance exceptions",
+          "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+      "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+      "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+      "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+      "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+      "play_id": "public_filing_trigger_mail_arbitrage",
+      "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Claim rejection, administrator audit hold, or court cap on third-party filer fees",
+      "trigger": "Submitting unsubstantiated spend estimates, missing court bar dates, or failing to include required third-party filer disclosures",
+      "impact": "Delayed payout disbursement or court-mandated fee reduction",
+      "detection_metric": "Deficiency-notice rate (<2% target) and 100% court-approved disclosure compliance",
+      "fallback": "File strictly for verified operating businesses with primary processor/vendor statements and use court-approved third-party claim-filing riders",
+      "play_id": "b2b_class_action_contingency_recovery",
+      "play_name": "B2B Class-Action & Antitrust Settlement Contingency Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+      "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+      "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+      "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+      "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+      "play_id": "arizona_abs_mass_tort_cocounsel",
+      "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+      "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+      "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+      "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+      "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating",
+      "play_id": "identity_graph_pixel_arbitrage",
+      "play_name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Carrier anti-automation lockouts or GSR (Guaranteed Service Refund) waiver clauses",
+      "trigger": "Carriers inserting GSR waiver riders into custom shipper pricing agreements or throttling automated dispute bots",
+      "impact": "Reduction in late-delivery refund volume on waived accounts",
+      "detection_metric": "Claim approval ratio per carrier and % of audit recovery derived from billing/dim-weight errors vs. GSR",
+      "fallback": "Pivot audit rules toward non-waivable dimensional-weight, duplicate-charge, LTL freight class, and contract-rate benchmarking recoveries",
+      "play_id": "freight_detention_audit_contingency",
+      "play_name": "Automated Parcel, LTL Freight & Tariff Overcharge Contingency Auditing",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+      "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+      "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+      "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+      "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures",
+      "play_id": "ucc1_expiration_refi_trigger_arbitrage",
+      "play_name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+      "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+      "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+      "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+      "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels",
+      "play_id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "play_name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "SEC EDGAR automated-access block or Reg D general-solicitation confusion",
+      "trigger": "Exceeding SEC EDGAR's 10-requests-per-second fair-access limit or omitting the mandatory contact User-Agent header",
+      "impact": "Temporary IP block by Akamai/SEC infrastructure",
+      "detection_metric": "Request rate strictly <=5 req/sec with compliant User-Agent and zero HTTP 403 responses",
+      "fallback": "Enforce token-bucket rate limiting at 5 req/sec and mirror SEC nightly bulk zip archives for historical lookbacks",
+      "play_id": "sec_edgar_8k_vendor_trigger_arbitrage",
+      "play_name": "SEC Form 8-K, Form D & C-Suite Turnover Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Missed 30-day Open Negotiation / 4-day IDR initiation statutory deadlines or HIPAA breach",
+      "trigger": "Failing to file within strict federal No Surprises Act business-day windows or handling PHI without a signed Business Associate Agreement (BAA)",
+      "impact": "Permanent forfeiture of IDR arbitration eligibility on expired claims or HIPAA compliance penalties",
+      "detection_metric": "100% BAA execution before EDI ingestion and automated T-minus-5-day statutory deadline alerts",
+      "fallback": "Enforce HIPAA-compliant encrypted EDI pipelines with signed BAAs and fall back to longer-window ERISA administrative appeals when IDR windows have lapsed",
+      "play_id": "hospital_lien_medical_receivables_arbitrage",
+      "play_name": "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+      "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+      "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+      "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+      "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent",
+      "play_id": "free_llc_fintech_bounty_stacking",
+      "play_name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Incumbent PBM rebate-contract retaliation or cold-chain customs shipment delay",
+      "trigger": "Legacy PBM threatening to withhold formulary rebates if specialty scripts are carved out, or border clearance delays on temperature-sensitive biologics",
+      "impact": "Delayed employer onboarding or need for local emergency bridge fills",
+      "detection_metric": "Cold-chain transit temperature telemetry and net employer savings after accounting for any forfeited PBM rebates",
+      "fallback": "Target independent TPAs and transparent pass-through PBMs first, combine international sourcing with US Manufacturer Patient Assistance Program (PAP) optimization, and maintain domestic bridge-fill coverage",
+      "play_id": "erisa_self_funded_specialty_drug_importation_arbitrage",
+      "play_name": "Employer Self-Funded ERISA Plan International Specialty-Drug Importation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Manufacturer contract-pharmacy restriction policies or HRSA 'patient definition' audit findings",
+      "trigger": "Drug manufacturers restricting 340B replenishment to a single contract pharmacy unless claims data is submitted, or filling scripts for patients without a documented clinic encounter",
+      "impact": "Loss of 340B ceiling price on specific NDCs or HRSA repayment liability",
+      "detection_metric": "100% EHR encounter-to-NPI match verification prior to 340B replenishment accumulation and automated ESP (340B ESP) data submission",
+      "fallback": "Operate an in-house entity-owned specialty pharmacy location alongside contract pharmacies, automate 340B ESP claims-data uploads to unlock restricted NDCs, and enforce strict EHR encounter gates",
+      "play_id": "section_340b_contract_pharmacy_spread_arbitrage",
+      "play_name": "340B Contract-Pharmacy & Covered-Entity Drug Price Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Payer post-payment audit recoupment or Anti-Kickback Statute (AKS) per-referral fee scrutiny",
+      "trigger": "Paying per-lead commissions tied to federal healthcare volume or submitting claims without complete Local Coverage Determination (LCD) chart notes",
+      "impact": "MAC prepayment review hold or clawback of reimbursed claims",
+      "detection_metric": "100% automated LCD clinical-criteria checklist validation before claim EDI 837P submission and strict flat-fee MSO billing",
+      "fallback": "Structure all marketing and software agreements strictly under Safe-Harbor Personal Services / MSO flat fair-market-value retainers, prioritize commercial payers and recurring CGM resupply, and enforce third-party clinical chart review",
+      "play_id": "out_of_network_dme_telehealth_billing_arbitrage",
+      "play_name": "Out-of-Network DME, CGM & Diagnostic Reference Lab Billing Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "CBP disallowance of First-Sale valuation during a CF-28 Request for Information audit",
+      "trigger": "Related-party factory/middleman entities failing to prove arm's-length profit margins or refusing to disclose factory commercial invoices",
+      "impact": "Re-assessment of duties on the second-sale price plus interest",
+      "detection_metric": "Annual pre-audit verification of factory commercial invoices, bank wire proofs, and OECD transfer-pricing benchmark studies",
+      "fallback": "Store encrypted factory invoices in a confidential customs-broker escrow vault (so the US buyer never sees the middleman's margin, while CBP auditors have full access) and back every program with a formal customs-counsel opinion letter",
+      "play_id": "customs_first_sale_rule_valuation_arbitrage",
+      "play_name": "CBP \"First-Sale Rule\" (19 CFR § 152.103) Multi-Tier Customs Valuation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+      "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+      "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+      "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+      "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases",
+      "play_id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "play_name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Acquiring bank MID termination or Visa VAMP / Mastercard ECM excessive-chargeback fine",
+      "trigger": "Merchant fulfillment failure or deceptive continuity billing spiking raw disputes above 0.90%–1.50%",
+      "impact": "Frozen merchant rolling reserve or MATCH-list placement of the offending merchant entity",
+      "detection_metric": "Real-time Early Fraud Warning (EFW / TC40 / SAFE) ratio and mandatory RDR auto-refund activation at 0.50% dispute velocity",
+      "fallback": "Enforce mandatory 10% rolling reserves, automated Verifi RDR pre-dispute refunds, 3DS2 step-up authentication on high-risk BINs, and strict merchant descriptor transparency",
+      "play_id": "high_risk_payfac_iso_mid_cascading_arbitrage",
+      "play_name": "High-Risk Payment Orchestration, MID Cascading & Payfac ISO Spread Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "IRS § 6418 recapture event or state department-of-revenue basis challenge",
+      "trigger": "Project developer inflating eligible cost basis or taking a clean-energy asset out of service during the 5-year recapture window",
+      "impact": "Taxpayer recapture assessment plus penalties if uninsured",
+      "detection_metric": "100% independent Big-4/national CPA cost-basis audit and mandatory A-rated tax-credit recapture insurance binder on every tranche",
+      "fallback": "Never take unhedged balance-sheet inventory risk; close strictly via simultaneous back-to-back escrow funded by the buyer's wire and backed by non-cancelable tax-credit insurance",
+      "play_id": "transferable_tax_credit_brokerage_syndication",
+      "play_name": "Transferable Federal & State Tax Credit Brokerage & Syndication (IRA § 6418 / Film / Historic)",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+      "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+      "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+      "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+      "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders",
+      "play_id": "litigation_finance_mass_tort_docket_securitization",
+      "play_name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Unsupported statutory demand or evidence rejection",
+      "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+      "impact": "Dismissal, sanctions exposure, and wasted case costs",
+      "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+      "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead",
+      "play_id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "play_name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Claim disallowance or convenience-class exclusion",
+      "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+      "impact": "Reduced distribution or complete capital loss",
+      "detection_metric": "Objection rate and eligible allowed value per portfolio",
+      "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries",
+      "play_id": "chapter11_trade_claim_convenience_class_rollup",
+      "play_name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Time-barred collection or reporting violation",
+      "trigger": "Threatened litigation, unlawful revival solicitation, or re-aging of obsolete debt",
+      "impact": "Enforcement, restitution, and servicing suspension",
+      "detection_metric": "Accounts failing legal-age checks and substantiated complaints",
+      "fallback": "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation",
+      "play_id": "out_of_statute_zombie_debt_portfolio_settlement",
+      "play_name": "Out-of-Statute Charged-Off Debt Portfolio & Self-Serve Tradeline Settlement Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Credit withdrawal or unaffordable repricing",
+      "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+      "impact": "Account closure, accelerated repayment, and guarantee exposure",
+      "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+      "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending",
+      "play_id": "aged_shelf_corp_tradeline_credit_stacking",
+      "play_name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Nonassignable lease or excessive permanent property burden",
+      "trigger": "Missing tenant or lender consent or easement scope exceeding valued rights",
+      "impact": "Failed closing or reduced refinancing and resale value",
+      "detection_metric": "Unresolved consent conditions and residual appraisal discount",
+      "fallback": "Retain the lease or negotiate a narrower term-limited assignment with all required approvals",
+      "play_id": "cell_tower_billboard_easement_strip_out",
+      "play_name": "Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+      "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+      "impact": "Accelerated collections and broker liability",
+      "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+      "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel",
+      "play_id": "mca_ucc_stacking_default_restructure_brokerage",
+      "play_name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Deduction allocation rejected or reduced",
+      "trigger": "Ineligible project dates, unsupported designer status, deficient certification, or duplicate allocation",
+      "impact": "Lost tax benefit, assessment exposure, and disputed service fees",
+      "detection_metric": "Unresolved eligibility and allocation exceptions per project",
+      "fallback": "Pause allocation, obtain independent tax review, and offer fixed-fee documentation support only for eligible projects",
+      "play_id": "section_179d_municipal_deduction_allocation_arbitrage",
+      "play_name": "IRC Section 179D Government & Nonprofit Energy-Deduction Allocation Brokering",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Credit denial or impermissible contingent-fee arrangement",
+      "trigger": "Expired program authority, late certification, unsupported research expenses, or restricted practitioner compensation",
+      "impact": "Reduced credits, amended returns, penalties, and fee repayment exposure",
+      "detection_metric": "Deadline exceptions, certification denials, and unsupported expense share",
+      "fallback": "Exclude unsupported claims and use compliant fixed-fee payroll and research-documentation services under independent tax review",
+      "play_id": "wotc_hourly_payroll_tax_credit_contingency_engine",
+      "play_name": "Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Transfer rejected or purchased credit unusable",
+      "trigger": "State rule change, certificate defect, recapture event, or buyer liability mismatch",
+      "impact": "Failed closing or buyer tax shortfall and indemnity dispute",
+      "detection_metric": "Unresolved certificate exceptions and buyer utilization coverage",
+      "fallback": "Suspend settlement under diligence contingencies and rematch only verified eligible credits without guaranteeing tax savings",
+      "play_id": "state_film_historic_brownfield_tax_credit_brokerage",
+      "play_name": "State Film, Historic Rehabilitation (HTC) & Brownfield Transferable Tax Credit Placement",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Tax allocations disallowed or unlicensed securities placement",
+      "trigger": "Unsupported depreciation stripping, inadequate economic substance, ineligible project timing, or unauthorized transaction-based compensation",
+      "impact": "Tax assessments, recapture, investor losses, and fee disgorgement exposure",
+      "detection_metric": "Unresolved tax opinion conditions and securities compliance exceptions",
+      "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership",
+      "play_id": "solar_tax_equity_depreciation_strip_syndication",
+      "play_name": "Commercial Solar Tax-Equity Flip & Bonus-Depreciation Strip Syndication",
+      "track_id": "track_1"
+    }
+  ]
+}

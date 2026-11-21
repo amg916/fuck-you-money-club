@@ -1,0 +1,981 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "specialty-finance-operating-process-production-blueprint-90-day-cohort",
+    "question_prompt": "How does an operator execute specialty finance brokerage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "Equipment, AR, SBA and Bridge Placement: Lender-Matrix Routing, SQLite Fee Ledgers, Controlled Escrow and Cohort Cash Reconciliation",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped plays "
+        "with a Money-to-Manpower Score of 79/100. Execution means converting verified "
+        "borrower evidence into lender acceptance, documented funding, earned fees and "
+        "reconciled bank cash without treating loan principal as operator revenue. "
+        "This chapter supplies a six-module SQLite reference, lender-routing controls "
+        "and a worked quarter producing $140,000 retained fees, $91,000 expenses and "
+        "$49,000 owner profit, matching the Base annual run rate. The annual owner "
+        "profit cases remain $30,000 Conservative, $196,000 Base and $450,000 Scaled. "
+        "FMCSA-trigger sourcing, transferable-credit referrals and employer-authorized "
+        "tax-credit services receive separate eligibility, fee and evidence paths. "
+        "The operating objective is reliable fee conversion, not inflated application "
+        "volume or premature revenue recognition."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual retained origination or referral fees; excludes loan principal",
+            "note": "25% net margin; $30,000 annual owner net profit; 2 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$560,000",
+            "context": "Annual retained origination or referral fees; excludes loan principal",
+            "note": "35.0% net margin; $196,000 annual owner net profit; 2 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,000,000",
+            "context": "Annual retained origination or referral fees; excludes loan principal",
+            "note": "45% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Qualify the borrower, classify the product and route an evidence-backed package",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Begin with an engagement record, not a lender blast. Assign a durable deal identifier "
+                    "and record the borrowing entity, beneficial ownership evidence, operating states, requested "
+                    "product, use of proceeds, requested principal, existing liens and authorized contact. Obtain "
+                    "permission for each intended document collection and lender submission; a general website "
+                    "inquiry does not authorize unrestricted distribution of bank statements. In HubSpot or "
+                    "Salesforce, keep workflow metadata separate from encrypted source documents in an access-controlled "
+                    "repository. Store document hashes and repository references rather than tax returns in CRM "
+                    "notes. One full-time originator owns borrower communication; the second owns packaging, lender "
+                    "responses and closing evidence. Two contractors provide bounded underwriting and accounting "
+                    "support without unrestricted export privileges. Before quoting compensation, determine which "
+                    "state licensing and commercial-financing disclosure rules attach to the activity, product and "
+                    "borrower location. California Financial Code section 22100 is a concrete licensing starting "
+                    "point, while sections 22800 through 22805 require a separate disclosure analysis for covered "
+                    "transactions. Establish whether the broker acts for the borrower, lender or a disclosed "
+                    "referral partner. Record the actual fee payer and payment trigger before spending underwriting "
+                    "time; an unsigned percentage assumption is neither a receivable nor a dependable acquisition budget."
+                ),
+                (
+                    "Build the lender matrix around rejection reasons that an underwriter can verify. Equipment "
+                    "placements need vendor identity, asset description, invoice, age, residual-value assumptions and "
+                    "the proposed lien position. Receivables facilities need invoice-level aging, dilution, customer "
+                    "concentration, disputes, contra accounts and assignment restrictions; aggregate revenue alone "
+                    "cannot establish eligible collateral. SBA candidates need program-specific eligibility, ownership "
+                    "information, use-of-proceeds support and compensation documentation under 13 CFR 103.5 where "
+                    "applicable. Bridge requests need an independently supportable repayment event, current debt, "
+                    "maturity dates and downside collateral analysis. Store each lender's current written criteria, "
+                    "effective date, geographic coverage, maximum exposure and response service level. Rank only "
+                    "eligible destinations, then obtain borrower authorization for the selected submission sequence. "
+                    "A numerical score prioritizes analyst work; it does not approve credit or replace the "
+                    "lender's decision. Preserve business-credit application and disposition records consistent with "
+                    "the applicable provisions of Regulation B, including 12 CFR 1002.9 and 1002.12. Do not "
+                    "silently label a lender decline as a borrower withdrawal. Track the deciding institution, "
+                    "reason received, notice responsibility and next permitted action. Keep a second qualified "
+                    "lender available for every important product so concentration cannot turn one policy change "
+                    "into a stalled production month."
+                ),
+                (
+                    "The mapped play fmcsa_dot_inspection_trigger_arbitrage belongs in sourcing, not automated credit "
+                    "judgment. Ingest permitted public FMCSA Census, Licensing & Insurance and publicly available "
+                    "inspection data through documented downloads or interfaces, observing publication delays and "
+                    "access restrictions. Do not assume every SMS field or carrier-level result is publicly "
+                    "available. Reconcile USDOT identifiers, authority status, insurance filings and event dates before "
+                    "contacting a fleet. The proposed mandatory 21-day insurance-filing window must not become a "
+                    "hard-coded eligibility rule: verify the actual authority-processing timetable and insurance requirements "
+                    "for the carrier and activity. A new authority or maintenance citation is a conversation "
+                    "trigger, not proof of financing demand or financial distress. Illustratively, 200 verified "
+                    "records producing 20 authorized conversations, four packages and one paid placement yield "
+                    "$10,000 retained fees at the chapter's reference ticket. Spending $1,000 on that sourcing "
+                    "batch consumes ten percent of its collected fee before labor and other costs. Use "
+                    "transparent private compliance-agency branding, free BOC-3 and MCS-150 status checks and inbound "
+                    "hand-raiser forms when outbound response deteriorates. Never imply FMCSA affiliation or promise "
+                    "to remove citations. Route equipment replacement and working-capital inquiries through the same "
+                    "licensed, documented brokerage workflow as every other applicant."
+                ),
+            ],
+            "table": {
+                "caption": "Borrower-to-Lender Evidence and Failure-Containment Matrix",
+                "headers": [
+                    "Operating lane and accountable owner",
+                    "Evidence required before lender submission",
+                    "Decision rule and concrete unit economics",
+                    "Failure response preserving borrower and operator cash",
+                ],
+                "rows": [
+                    [
+                        "Equipment placement owned by the packaging analyst",
+                        "Verified vendor invoice, asset serials, valuation and proposed lien position",
+                        "One $500,000 funded placement at two percent retains $10,000",
+                        "Pause submission when title, valuation or vendor identity remains disputed",
+                    ],
+                    [
+                        "Receivables facility owned by the collateral specialist",
+                        "Invoice aging, dilution history, customer concentration and assignment terms",
+                        "Exclude disputed invoices before calculating lender-specific eligible borrowing capacity",
+                        "Recalculate availability after concentration limits rather than inflate collateral",
+                    ],
+                    [
+                        "SBA placement owned by the program-trained originator",
+                        "Ownership records, eligible proceeds, lender checklist and applicable compensation agreement",
+                        "Apply program compensation restrictions before presenting any borrower fee estimate",
+                        "Move unsuitable requests to another eligible product without disguising proceeds",
+                    ],
+                    [
+                        "Bridge placement owned by the senior credit reviewer",
+                        "Debt schedule, maturity calendar, collateral support and documented repayment event",
+                        "Reject exits dependent solely on an unsupported future valuation increase",
+                        "Seek lower leverage or decline rather than conceal refinancing dependence",
+                    ],
+                    [
+                        "FMCSA-trigger sourcing owned by the authorized marketing operator",
+                        "Public source date, USDOT match, authority status and contact permissions",
+                        "Two hundred verified records illustrate one $10,000 collected placement fee",
+                        "Use private branding and inbound status-check tools when outbound weakens",
+                    ],
+                    [
+                        "Borrower disclosures owned by the engagement-record custodian",
+                        "Applicable state analysis, signed engagement and disclosed compensation arrangements",
+                        "Submit only after documenting fee payer and actual earning trigger",
+                        "Stop fee quotations where required licensing or disclosures are incomplete",
+                    ],
+                    [
+                        "Lender allocation owned by the production desk",
+                        "Dated eligibility matrix, geographic coverage and current exposure by institution",
+                        "Review concentration weekly using both funded principal and retained fees",
+                        "Maintain a qualified alternative without duplicating unauthorized borrower submissions",
+                    ],
+                    [
+                        "Credit disposition owned by the designated notice coordinator",
+                        "Lender decision, application status, received reasons and assigned notice responsibility",
+                        "Preserve applicable Regulation B records using the correct business-credit category",
+                        "Escalate missing notices instead of relabeling declines as voluntary withdrawals",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect conversion before increasing lead volume",
+                "body": "Veteran desks optimize document quality, lender fit and payment certainty before buying another lead source.",
+                "items": [
+                    "Ask each lender for its last five relevant rejection categories, then translate those categories into intake checks with dated source references.",
+                    "For AR deals, reconcile the ten largest invoices to aging and dispute records before purchasing expensive third-party diligence.",
+                    "Require a lender fee acknowledgment identifying the paying entity, earned-fee event, payment timing and clawback conditions before closing work accelerates.",
+                    "Separate USDOT event dates from dataset refresh dates so stale public records cannot masquerade as fresh borrower triggers.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Install six executable modules that serialize transitions and isolate fee accounting",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use the six reference modules below as a deliberately bounded SQLite implementation for "
+                    "whole-fee invoices and whole-invoice receipts. Save each named artifact in one directory, "
+                    "initialize a fresh local database with schema.sql, and run qa.py against its temporary "
+                    "database before adapting integrations. This reference has not been executed here. The design "
+                    "uses integer cents, immutable intake payloads, unique command identifiers, explicit state transitions "
+                    "and BEGIN IMMEDIATE transactions. SQLite serializes writers; uniqueness constraints reject duplicate "
+                    "business events even when separate workers submit different command keys. Every journal row "
+                    "contains equal debit and credit amounts by construction. Borrower principal is informational "
+                    "metadata outside this fee ledger and never enters fee income. Database files belong on "
+                    "local storage supported by SQLite locking, not a shared network filesystem with uncertain "
+                    "lock behavior. Restrict direct database writes to the application identity and keep encrypted, "
+                    "tested backups. These conditions remove the identified local read-check-write races; they do "
+                    "not make an arbitrary external service transactional. Partial receipts, fee amendments, refunds, "
+                    "taxes and multi-currency postings require additional schemas and tests before use. Do not "
+                    "force those cases through the whole-invoice demonstration by editing historical rows or "
+                    "changing a previously accepted fee."
+                ),
+                (
+                    "The workflow separates commercial progress from accounting evidence. RECEIVED means the authorized "
+                    "intake exists; VERIFIED means an accountable reviewer accepted its evidence; ESCROW means "
+                    "a documented third-party escrow arrangement applies, not that the broker holds client money. "
+                    "Ordinary loan placements may move directly from VERIFIED to FUNDED when lender funding "
+                    "evidence supports that transition. INVOICED requires a contractually earned fee and creates "
+                    "accounts receivable against fee income. PAID requires a matched bank receipt and clears "
+                    "that receivable. Evidence references must resolve to retained artifacts, while reviewer identities "
+                    "must come from authenticated application sessions rather than borrower-supplied fields. The sample "
+                    "function checks their presence; the surrounding service must enforce their authenticity and "
+                    "access permissions. A cancellation is available before invoicing, while post-invoice disputes "
+                    "belong in an adjustment workflow not implemented here. Enqueue a nonfinancial notification "
+                    "inside the same transaction as each transition. Dispatch outside the database transaction "
+                    "so a slow email or CRM endpoint cannot hold the writer lock. The adapter must "
+                    "use a provider-supported idempotency key and stable payload. Without that capability, concurrent "
+                    "delivery and crash recovery cannot promise single external delivery, even though ledger "
+                    "postings remain singular."
+                ),
+                (
+                    "Treat the reconciliation view as an exception detector rather than a substitute for the "
+                    "bank statement. It shows each deal's earned fees, receipts and residual receivable, while "
+                    "the operational ledger preserves the command, reviewer and evidence supporting each movement. "
+                    "For every cash posting, match the bank's immutable transaction reference, amount, date and "
+                    "paying entity to the engagement record. The reference requires one unique evidence reference "
+                    "per journal entry, preventing reuse of the same receipt identifier for another whole-fee "
+                    "payment. Accountants must still verify that the identifier corresponds to genuine settled cash. "
+                    "Do not mark a deal paid from a remittance email or a pending transfer screenshot. "
+                    "Run the QA module after schema changes; it exercises concurrent duplicate intake, concurrent "
+                    "transition retries, conflicting command payloads, invalid state order and receivable clearance. Add "
+                    "integration tests for provider timeouts and restored backups before enabling notifications. Read "
+                    "daily exception queues for funded but uninvoiced deals, aging receivables, delivery retries and "
+                    "unmatched bank activity. A reviewer signs the weekly reconciliation using a separate identity "
+                    "from the originator whenever staffing permits. Export the resulting accounting evidence to the "
+                    "general ledger; retain the brokerage database as the deal-level operational subledger, not "
+                    "an undocumented replacement for the complete company books."
+                ),
+            ],
+            "table": {
+                "caption": "Six-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
+                "headers": [
+                    "Module artifact and exact operating purpose",
+                    "Copy-pasteable implementation for the bounded reference",
+                    "Invariant and deployment boundary that must remain true",
+                ],
+                "rows": [
+                    [
+                        "Module one: schema.sql initializes the local fee subledger",
+                        """PRAGMA foreign_keys = ON;
+PRAGMA journal_mode = WAL;
+
+CREATE TABLE deals (
+    deal_id TEXT PRIMARY KEY,
+    source_key TEXT NOT NULL UNIQUE,
+    intake_json TEXT NOT NULL,
+    fee_cents INTEGER NOT NULL CHECK (
+        typeof(fee_cents) = 'integer' AND fee_cents > 0
+    ),
+    score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
+    state TEXT NOT NULL DEFAULT 'RECEIVED' CHECK (
+        state IN ('RECEIVED', 'VERIFIED', 'ESCROW', 'FUNDED',
+                  'INVOICED', 'PAID', 'LOST')
+    )
+);
+
+CREATE TABLE commands (
+    command_key TEXT PRIMARY KEY,
+    payload TEXT NOT NULL,
+    deal_id TEXT NOT NULL REFERENCES deals(deal_id),
+    target TEXT NOT NULL,
+    UNIQUE (deal_id, target)
+);
+
+CREATE TABLE journal (
+    entry_id INTEGER PRIMARY KEY,
+    command_key TEXT NOT NULL UNIQUE REFERENCES commands(command_key),
+    deal_id TEXT NOT NULL REFERENCES deals(deal_id),
+    kind TEXT NOT NULL CHECK (kind IN ('INVOICE', 'RECEIPT')),
+    debit_account TEXT NOT NULL,
+    credit_account TEXT NOT NULL,
+    amount_cents INTEGER NOT NULL CHECK (
+        typeof(amount_cents) = 'integer' AND amount_cents > 0
+    ),
+    evidence_ref TEXT NOT NULL UNIQUE,
+    UNIQUE (deal_id, kind),
+    CHECK (
+        (kind = 'INVOICE'
+         AND debit_account = 'AR'
+         AND credit_account = 'FEE_INCOME')
+        OR
+        (kind = 'RECEIPT'
+         AND debit_account = 'CASH'
+         AND credit_account = 'AR')
+    )
+);
+
+CREATE TRIGGER journal_validate BEFORE INSERT ON journal
+BEGIN
+    SELECT CASE WHEN NEW.amount_cents != (
+        SELECT fee_cents FROM deals WHERE deal_id = NEW.deal_id
+    ) THEN RAISE(ABORT, 'whole-fee amount mismatch') END;
+    SELECT CASE WHEN NOT EXISTS (
+        SELECT 1 FROM commands c JOIN deals d ON d.deal_id = c.deal_id
+        WHERE c.command_key = NEW.command_key
+          AND c.deal_id = NEW.deal_id
+          AND c.target = CASE NEW.kind
+              WHEN 'INVOICE' THEN 'INVOICED' ELSE 'PAID' END
+          AND d.state = c.target
+    ) THEN RAISE(ABORT, 'posting lacks matching transition') END;
+END;
+
+CREATE TRIGGER journal_no_update BEFORE UPDATE ON journal
+BEGIN
+    SELECT RAISE(ABORT, 'journal entries are immutable');
+END;
+
+CREATE TRIGGER journal_no_delete BEFORE DELETE ON journal
+BEGIN
+    SELECT RAISE(ABORT, 'journal entries are immutable');
+END;
+
+CREATE TRIGGER commands_no_update BEFORE UPDATE ON commands
+BEGIN
+    SELECT RAISE(ABORT, 'command evidence is immutable');
+END;
+
+CREATE TRIGGER commands_no_delete BEFORE DELETE ON commands
+BEGIN
+    SELECT RAISE(ABORT, 'command evidence is immutable');
+END;
+
+CREATE TABLE outbox (
+    event_key TEXT PRIMARY KEY REFERENCES commands(command_key),
+    payload TEXT NOT NULL,
+    delivered_receipt TEXT
+);
+""",
+                        "Run once on a fresh database; equal journal sides and uniqueness prevent duplicate fee postings.",
+                    ],
+                    [
+                        "Module two: intake.py validates facts and creates deterministic intake",
+                        """from __future__ import annotations
+import json
+import sqlite3
+import uuid
+from contextlib import contextmanager
+
+@contextmanager
+def db(path):
+    connection = sqlite3.connect(path, timeout=30, isolation_level=None)
+    connection.execute('PRAGMA foreign_keys = ON')
+    connection.execute('PRAGMA busy_timeout = 30000')
+    try:
+        yield connection
+    except BaseException:
+        if connection.in_transaction:
+            connection.rollback()
+        raise
+    finally:
+        connection.close()
+
+def intake(path, source_key, facts):
+    required = {'authorized', 'documents_complete', 'lender_fit', 'fee_cents'}
+    if not required.issubset(facts):
+        raise ValueError('required intake facts are missing')
+    for field in ('authorized', 'documents_complete', 'lender_fit'):
+        if type(facts[field]) is not bool:
+            raise ValueError('checklist values must be explicit booleans')
+    if facts['authorized'] is not True:
+        raise ValueError('authorized intake is required')
+    if type(facts['fee_cents']) is not int or facts['fee_cents'] <= 0:
+        raise ValueError('fee must be positive integer cents')
+    if not isinstance(source_key, str) or not source_key.strip():
+        raise ValueError('stable source key is required')
+    payload = json.dumps(facts, sort_keys=True, separators=(',', ':'),
+                         allow_nan=False)
+    score = (40 + 30 * int(facts['documents_complete'])
+             + 30 * int(facts['lender_fit']))
+    deal_id = uuid.uuid5(uuid.NAMESPACE_URL, source_key).hex
+    with db(path) as connection:
+        connection.execute('BEGIN IMMEDIATE')
+        old = connection.execute(
+            'SELECT deal_id, intake_json FROM deals WHERE source_key = ?',
+            (source_key,)
+        ).fetchone()
+        if old:
+            if old[1] != payload:
+                raise ValueError('source key reused with changed intake')
+            connection.commit()
+            return old[0]
+        connection.execute(
+            'INSERT INTO deals '
+            '(deal_id, source_key, intake_json, fee_cents, score) '
+            'VALUES (?, ?, ?, ?, ?)',
+            (deal_id, source_key, payload, facts['fee_cents'], score)
+        )
+        connection.commit()
+    return deal_id
+""",
+                        "Checklist score prioritizes review only; authorization and lender fit are attested inputs, not automated credit decisions.",
+                    ],
+                    [
+                        "Module three: workflow.py atomically transitions evidence and fee postings",
+                        """from __future__ import annotations
+import json
+from intake import db
+
+ALLOWED = {
+    'RECEIVED': {'VERIFIED', 'LOST'},
+    'VERIFIED': {'ESCROW', 'FUNDED', 'LOST'},
+    'ESCROW': {'FUNDED', 'LOST'},
+    'FUNDED': {'INVOICED', 'LOST'},
+    'INVOICED': {'PAID'},
+    'PAID': set(),
+    'LOST': set(),
+}
+
+def advance(path, command_key, deal_id, target, evidence_ref, reviewer):
+    for value in (command_key, deal_id, target, evidence_ref, reviewer):
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError('nonempty command and evidence fields required')
+    payload = json.dumps(
+        {'deal_id': deal_id, 'target': target,
+         'evidence_ref': evidence_ref, 'reviewer': reviewer},
+        sort_keys=True, separators=(',', ':')
+    )
+    with db(path) as connection:
+        connection.execute('BEGIN IMMEDIATE')
+        previous = connection.execute(
+            'SELECT payload FROM commands WHERE command_key = ?',
+            (command_key,)
+        ).fetchone()
+        if previous:
+            if previous[0] != payload:
+                raise ValueError('command key reused with changed payload')
+            connection.commit()
+            return command_key
+        deal = connection.execute(
+            'SELECT state, fee_cents FROM deals WHERE deal_id = ?',
+            (deal_id,)
+        ).fetchone()
+        if deal is None or target not in ALLOWED[deal[0]]:
+            raise ValueError('invalid state transition')
+        connection.execute(
+            'INSERT INTO commands VALUES (?, ?, ?, ?)',
+            (command_key, payload, deal_id, target)
+        )
+        connection.execute(
+            'UPDATE deals SET state = ? WHERE deal_id = ?',
+            (target, deal_id)
+        )
+        if target in ('INVOICED', 'PAID'):
+            kind, debit, credit = (
+                ('INVOICE', 'AR', 'FEE_INCOME') if target == 'INVOICED'
+                else ('RECEIPT', 'CASH', 'AR')
+            )
+            connection.execute(
+                'INSERT INTO journal '
+                '(command_key, deal_id, kind, debit_account, credit_account, '
+                'amount_cents, evidence_ref) VALUES (?, ?, ?, ?, ?, ?, ?)',
+                (command_key, deal_id, kind, debit, credit, deal[1], evidence_ref)
+            )
+        connection.execute(
+            'INSERT INTO outbox (event_key, payload) VALUES (?, ?)',
+            (command_key, payload)
+        )
+        connection.commit()
+    return command_key
+""",
+                        "Authenticated reviewers validate external facts; one serialized transaction commits state, command, journal and notification together.",
+                    ],
+                    [
+                        "Module four: dispatch.py retries notifications using provider idempotency",
+                        """from __future__ import annotations
+from intake import db
+
+def deliver_one(path, send):
+    # Adapter contract: same key and payload produce one durable effect.
+    # Adapter retention must cover the full configured retry horizon.
+    with db(path) as connection:
+        row = connection.execute(
+            'SELECT event_key, payload FROM outbox '
+            'WHERE delivered_receipt IS NULL ORDER BY event_key LIMIT 1'
+        ).fetchone()
+    if row is None:
+        return False
+    event_key, payload = row
+    receipt = send(idempotency_key=event_key, payload=payload)
+    if not isinstance(receipt, str) or not receipt.strip():
+        raise ValueError('provider must return a durable receipt')
+    with db(path) as connection:
+        connection.execute('BEGIN IMMEDIATE')
+        connection.execute(
+            'UPDATE outbox SET delivered_receipt = ? '
+            'WHERE event_key = ? AND delivered_receipt IS NULL',
+            (receipt, event_key)
+        )
+        connection.commit()
+    return True
+""",
+                        "Concurrent retries are safe only with atomic provider deduplication; this adapter sends notifications and never initiates wires.",
+                    ],
+                    [
+                        "Module five: reconciliation.sql exposes earned fees and open receivables",
+                        """CREATE VIEW fee_reconciliation AS
+SELECT
+    d.deal_id,
+    d.state,
+    COALESCE(SUM(CASE WHEN j.kind = 'INVOICE'
+        THEN j.amount_cents ELSE 0 END), 0) AS earned_cents,
+    COALESCE(SUM(CASE WHEN j.kind = 'RECEIPT'
+        THEN j.amount_cents ELSE 0 END), 0) AS received_cents,
+    COALESCE(SUM(CASE WHEN j.kind = 'INVOICE'
+        THEN j.amount_cents ELSE -j.amount_cents END), 0) AS ar_cents
+FROM deals d
+LEFT JOIN journal j ON j.deal_id = d.deal_id
+GROUP BY d.deal_id, d.state;
+
+SELECT
+    SUM(earned_cents) AS earned_cents,
+    SUM(received_cents) AS received_cents,
+    SUM(ar_cents) AS ar_cents
+FROM fee_reconciliation;
+
+SELECT deal_id, state, earned_cents, received_cents, ar_cents
+FROM fee_reconciliation
+WHERE ar_cents < 0
+   OR (state = 'PAID' AND ar_cents != 0)
+   OR (state = 'INVOICED' AND ar_cents <= 0);
+""",
+                        "Receipt evidence must reconcile to settled bank transactions; the view cannot independently authenticate external cash.",
+                    ],
+                    [
+                        "Module six: qa.py exercises retries, state order and ledger clearance",
+                        """from __future__ import annotations
+import sqlite3
+import tempfile
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+from intake import intake
+from workflow import advance
+
+def expect_value_error(action):
+    try:
+        action()
+    except ValueError:
+        return
+    raise AssertionError('expected rejection did not occur')
+
+def main():
+    root = Path(__file__).resolve().parent
+    with tempfile.TemporaryDirectory() as directory:
+        path = str(Path(directory) / 'fees.sqlite')
+        connection = sqlite3.connect(path)
+        try:
+            connection.executescript(
+                (root / 'schema.sql').read_text(encoding='utf-8')
+            )
+            connection.executescript(
+                (root / 'reconciliation.sql').read_text(encoding='utf-8')
+            )
+        finally:
+            connection.close()
+        facts = {
+            'authorized': True, 'documents_complete': True,
+            'lender_fit': True, 'fee_cents': 1000000
+        }
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            ids = list(pool.map(
+                lambda _: intake(path, 'crm:reference:001', facts), range(16)
+            ))
+        assert len(set(ids)) == 1
+        deal_id = ids[0]
+        changed = dict(facts, fee_cents=2000000)
+        expect_value_error(
+            lambda: intake(path, 'crm:reference:001', changed)
+        )
+        expect_value_error(lambda: advance(
+            path, 'too-early', deal_id, 'PAID', 'bank:early', 'reviewer:qa'
+        ))
+        for target in ('VERIFIED', 'ESCROW', 'FUNDED', 'INVOICED', 'PAID'):
+            key = 'command:' + target
+            evidence = 'evidence:' + target
+            def retry(_):
+                return advance(
+                    path, key, deal_id, target, evidence, 'reviewer:qa'
+                )
+            with ThreadPoolExecutor(max_workers=8) as pool:
+                results = list(pool.map(retry, range(16)))
+            assert set(results) == {key}
+        expect_value_error(lambda: advance(
+            path, 'command:PAID', deal_id, 'PAID',
+            'evidence:changed', 'reviewer:qa'
+        ))
+        expect_value_error(lambda: advance(
+            path, 'second-payment-command', deal_id, 'PAID',
+            'bank:another', 'reviewer:qa'
+        ))
+        connection = sqlite3.connect(path)
+        try:
+            assert connection.execute(
+                'SELECT COUNT(*) FROM deals'
+            ).fetchone()[0] == 1
+            assert connection.execute(
+                'SELECT COUNT(*) FROM commands'
+            ).fetchone()[0] == 5
+            assert connection.execute(
+                'SELECT COUNT(*) FROM journal'
+            ).fetchone()[0] == 2
+            assert connection.execute(
+                'SELECT COUNT(*) FROM outbox'
+            ).fetchone()[0] == 5
+            totals = connection.execute(
+                'SELECT earned_cents, received_cents, ar_cents '
+                'FROM fee_reconciliation'
+            ).fetchone()
+            assert totals == (1000000, 1000000, 0)
+            assert connection.execute(
+                'PRAGMA integrity_check'
+            ).fetchone()[0] == 'ok'
+            assert not connection.execute(
+                'PRAGMA foreign_key_check'
+            ).fetchall()
+        finally:
+            connection.close()
+    print('Reference concurrency and ledger assertions passed.')
+
+if __name__ == '__main__':
+    main()
+""",
+                        "Run with python qa.py; assertions cover the local reference, while provider and bank integrations need separate tests.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Initialize and test the bounded reference",
+                    "action": "Save the six artifacts using their named filenames and run python qa.py.",
+                    "detail": "The test uses an isolated temporary database; initialize production separately and do not treat unexecuted sample code as verified deployment.",
+                },
+                {
+                    "step": 2,
+                    "title": "Attach authenticated evidence review",
+                    "action": "Resolve evidence references through an access-controlled document service before invoking advance.",
+                    "detail": "Derive reviewer identity from the signed-in session, enforce product-specific permissions and preserve the reviewed artifact version.",
+                },
+                {
+                    "step": 3,
+                    "title": "Prove external retry behavior",
+                    "action": "Test notification timeout, concurrent retry and crash-after-send behavior against the selected provider.",
+                    "detail": "Require atomic idempotency across the complete retry horizon; otherwise leave automated delivery disabled and preserve the pending outbox.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile before releasing operating reports",
+                    "action": "Match settled fee receipts to bank evidence and compare the subledger with the general ledger.",
+                    "detail": "Investigate unmatched cash, fee disputes and aging receivables; never repair discrepancies by deleting immutable journal evidence.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Execute and reconcile the worked 90-day lead cohort",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "This is an established-production quarter, not a promise that a new brokerage closes "
+                    "inside ninety days. The canonical time to first deal remains three to nine months. "
+                    "Assume the desk enters day one with functioning lender relationships, signed fee agreements, "
+                    "trained staff and $50,000 operating cash, but no opening receivables. Each of three "
+                    "monthly cohorts contains thirty authorized leads. By day ninety, the first cohort has "
+                    "eighteen scrubs, seven subsequent losses and five funded placements; the second has "
+                    "seventeen scrubs, eight losses and five placements; the third has eighteen scrubs, "
+                    "eight losses and four placements. Thus ninety leads resolve into fifty-three scrubs, "
+                    "twenty-three losses and fourteen funded deals, without counting a rejected application twice. "
+                    "A scrub means insufficient eligibility or documentation before lender submission. A loss "
+                    "means an otherwise packaged opportunity failed to close, including lender decline or "
+                    "borrower withdrawal recorded under the correct disposition. Each funded deal earns a "
+                    "fully retained $10,000 fee, illustratively two percent of $500,000 principal. Fourteen "
+                    "placements therefore represent $7,000,000 borrower principal and $140,000 operator revenue. "
+                    "Only the latter belongs in the scorecard. These ticket and conversion assumptions "
+                    "explain the scenario; they are not additional canonical forecasts."
+                ),
+                (
+                    "Timing makes the quarter operationally useful. Month one invoices three first-cohort placements "
+                    "for $30,000 and collects two fees, or $20,000. Month two invoices the remaining "
+                    "two first-cohort placements and three second-cohort placements, producing $50,000 revenue. "
+                    "Its $40,000 receipts comprise three first-cohort fees and one second-cohort fee. Month "
+                    "three invoices two remaining second-cohort placements and four third-cohort placements, producing "
+                    "$60,000 revenue. Its $60,000 receipts comprise four second-cohort fees and two third-cohort "
+                    "fees. Ending receivables are therefore $10,000, $20,000 and $20,000 respectively, and "
+                    "all day-ninety receivables belong to the third cohort. The cohort table separates intake "
+                    "origin from closing month so the desk cannot attribute every late receipt to current "
+                    "marketing. Cash expenses are $30,000, $30,000 and $31,000, paid in their respective "
+                    "months with no closing payable balance in this illustration. Operating cash changes are "
+                    "negative $10,000, positive $10,000 and positive $29,000. The initial $50,000 becomes "
+                    "$40,000, $50,000 and $79,000. No principal passes through the broker's operating "
+                    "account, and no escrow balance funds payroll. If a receipt moves beyond day ninety, "
+                    "reduce cash rather than rewriting the earned-fee date."
+                ),
+                (
+                    "The financial bridge is exact: quarterly retained fees of $140,000 less $91,000 "
+                    "total expenses produce $49,000 owner net profit, a 35.0 percent margin. Annualizing "
+                    "that quarterly production yields $560,000 revenue, $364,000 expenses and $196,000 "
+                    "owner profit, matching Base with two full-time staff and two contractors. Ending "
+                    "receivables explain why quarterly operating cash generation is $29,000 rather than "
+                    "$49,000. Do not multiply the first quarter's collection shortfall indefinitely: repeat "
+                    "production includes collection of prior cohorts, and steady receivables change the cash "
+                    "bridge. The supplied $4,000 to $18,000 monthly opex range cannot represent the "
+                    "Base case's complete expense load, which averages about $30,333 monthly. This example "
+                    "explicitly budgets $12,000 monthly core overhead plus $18,000, $18,000 and $19,000 "
+                    "of other production, staffing and acquisition costs; validate those categories without "
+                    "double counting. Conservative remains $120,000 revenue less $90,000 expenses, producing "
+                    "$30,000 profit at 25 percent. Scaled remains $1,000,000 revenue less $550,000 "
+                    "expenses, producing $450,000 profit at 45 percent with three full-time staff and "
+                    "three contractors. Model commission clawbacks separately from prospect losses: this worked "
+                    "quarter assumes no earned-fee reversals, while actual disputes require documented adjustments "
+                    "and a revised cash forecast."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Cohort or reporting period being reconciled",
+                    "Lead outcomes and earned-fee production",
+                    "Fee cash timing and closing receivables",
+                    "Expenses and cumulative operating cash movement",
+                ],
+                "rows": [
+                    [
+                        "Month 1 intake cohort tracked through day ninety",
+                        "Thirty leads resolve into eighteen scrubs, seven losses and five funded placements",
+                        "Collect $20,000 during Month 1 and $30,000 during Month 2",
+                        "Five $10,000 fees earn $50,000; expenses remain allocated by reporting month",
+                    ],
+                    [
+                        "Month 2 intake cohort tracked through day ninety",
+                        "Thirty leads resolve into seventeen scrubs, eight losses and five funded placements",
+                        "Collect $10,000 during Month 2 and $40,000 during Month 3",
+                        "Five $10,000 fees earn $50,000; no cohort receivable remains at quarter-end",
+                    ],
+                    [
+                        "Month 3 intake cohort tracked through day ninety",
+                        "Thirty leads resolve into eighteen scrubs, eight losses and four funded placements",
+                        "Collect $20,000 during Month 3; another $20,000 remains in receivables",
+                        "Four $10,000 fees earn $40,000; later receipts belong to this cohort",
+                    ],
+                    [
+                        "Month 1 calendar production and cash close",
+                        "Three first-cohort invoices produce $30,000 retained revenue and zero operating profit",
+                        "Receive $20,000 fee cash; ending receivables equal $10,000",
+                        "Pay $30,000 expenses; cumulative cash movement is negative $10,000; balance $40,000",
+                    ],
+                    [
+                        "Month 2 calendar production and cash close",
+                        "Two first-cohort plus three second-cohort invoices produce $50,000 revenue and $20,000 profit",
+                        "Receive $40,000 fee cash; ending receivables equal $20,000",
+                        "Pay $30,000 expenses; cumulative cash movement returns to zero; balance $50,000",
+                    ],
+                    [
+                        "Month 3 calendar production and cash close",
+                        "Two second-cohort plus four third-cohort invoices produce $60,000 revenue and $29,000 profit",
+                        "Receive $60,000 fee cash; ending receivables remain $20,000",
+                        "Pay $31,000 expenses; cumulative cash movement reaches positive $29,000; balance $79,000",
+                    ],
+                    [
+                        "Full quarter reconciled to the annual Base scenario",
+                        "Fourteen invoices earn $140,000 revenue; ninety leads reconcile to fourteen closings",
+                        "Collect $120,000 and retain $20,000 receivables; recognize no borrower principal",
+                        "Expenses total $91,000; profit totals $49,000; annualized profit equals $196,000",
+                    ],
+                    [
+                        "Base annual run rate with unchanged scorecard staffing",
+                        "$560,000 revenue less $364,000 expenses produces the exact 35.0 percent margin",
+                        "Annual cash depends on opening and closing receivables, not revenue alone",
+                        "Two full-time staff plus two contractors support $196,000 annual owner profit",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before counting a cohort closing",
+                "body": "A funded transaction enters the reported fee cohort only after commercial, evidence and accounting checks agree.",
+                "items": [
+                    "Verify applicable licensing, disclosures, engagement authority and any SBA compensation documentation against the actual product and borrower location.",
+                    "Match lender funding evidence to the deal identifier and confirm the fee's contractual earning trigger, retained amount and clawback terms.",
+                    "Confirm the invoice posts once, borrower principal remains excluded and bank receipt identifiers cannot be reused across whole-fee payments.",
+                    "Reconcile the monthly cash bridge, remaining receivables and full expense load; show collection delays separately from underwriting losses.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Contain adjacent-play risk and operate a disciplined weekly production loop",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mapped play transferable_tax_credit_brokerage_syndication requires its own engagement and closing "
+                    "lane; it is not ordinary loan placement. Originate through permitted federal DOE or EPA "
+                    "project datasets, actual utility and grid-operator interconnection queues, state film offices and "
+                    "historic-preservation registries. Those sources identify projects, not verified transferable credits. For "
+                    "a $1,000,000 face-value credit, an illustrative seller price of $0.85 and buyer price "
+                    "of $0.94 imply $850,000 seller proceeds, $940,000 buyer consideration and a $90,000 "
+                    "gross economic difference before insurance, escrow, diligence and contractual allocations. Across "
+                    "the proposed $0.82–$0.88 seller and $0.92–$0.96 buyer ranges, that difference spans "
+                    "$40,000–$140,000 per million, but it is not automatically recognized brokerage revenue. "
+                    "Under this volume's fee basis, recognize only the operator's retained contractual fee. "
+                    "Section 6418 generally permits a qualifying direct transfer to an unrelated taxpayer "
+                    "for cash; the transferee cannot transfer that purchased credit again. Therefore structure "
+                    "an eligible seller-to-buyer transaction, not broker inventory resale. State film and historic "
+                    "credits follow their own transfer statutes and verification procedures. Use independent escrow "
+                    "and buyer-funded simultaneous settlement, verify registration and eligibility, and require effective "
+                    "insurance meeting negotiated cancellation and coverage requirements. If acceptable coverage is "
+                    "unavailable, decline rather than warehouse unhedged credits."
+                ),
+                (
+                    "The mapped play wotc_hourly_payroll_tax_credit_contingency_engine is a separate employer-authorized "
+                    "service workflow, not a shortcut for financing brokerage revenue. Verify WOTC statutory "
+                    "authorization for the employee's hire date before offering a claim service; do not "
+                    "assume an expired authorization has been extended. Build Form 8850 timing checks "
+                    "around the statutory pre-screening and twenty-eight-day submission requirements in 26 U.S.C. "
+                    "51(d)(13), with state workforce-agency submission receipts retained as evidence. Illustratively, "
+                    "fifty screened hires with ten independently certified employees each producing a valid "
+                    "$2,400 credit yield $24,000 employer credits. A permitted fifteen-percent service fee "
+                    "would produce $3,600 operator revenue, not $24,000. Actual eligibility, hours, wages "
+                    "and target-group limits govern the calculation. Section 41 research-credit work requires "
+                    "separate evidence of qualifying activities and expenses; a payroll export does not "
+                    "establish the four-part research test. Coordinate wage-based benefits and applicable deductions "
+                    "rather than charging twice against overlapping amounts. Assess contingent-fee restrictions, "
+                    "including 31 CFR 10.27 where applicable, before contracting. When authorization, substantiation "
+                    "or fee eligibility fails, exclude unsupported claims and offer clearly scoped fixed-fee "
+                    "payroll or research-documentation support under independent tax review. Keep these illustrative "
+                    "service economics outside the fourteen-deal Base cohort."
+                ),
+                (
+                    "Close the weekly operating loop with evidence-based decisions rather than activity theater. "
+                    "On Monday, review authorized leads, eligibility scrubs and lender-ready packages by source "
+                    "cohort. On Wednesday, review stalled underwriting, lender concentration and expected funding "
+                    "dates with named owners and next actions. On Friday, reconcile earned fees, settled "
+                    "receipts, open receivables, contractual clawback exposure and the thirteen-week cash forecast. "
+                    "Compare each source's collected retained fees with its acquisition spending; a source "
+                    "that creates impressive principal volume but no paid commissions loses budget. For "
+                    "tax-credit transactions, track insurance exclusions, recapture exposure and escrow conditions "
+                    "outside ordinary loan fields. For employer services, track certification deadlines and "
+                    "claim-support completeness rather than counting every screened hire as revenue. Apply "
+                    "the FTC Safeguards Rule where the business falls within its covered financial-institution "
+                    "scope, including an accountable security program and service-provider oversight. Separate "
+                    "credit-placement engagements from any securities activity requiring Exchange Act broker-dealer "
+                    "analysis under 15 U.S.C. 78o. Maintain capital against the longest credible collection "
+                    "delay and clawback schedule, not just average monthly overhead. Expand only after "
+                    "the existing team can reproduce accurate cohort attribution, documented lender decisions "
+                    "and reconciled fee cash without emergency spreadsheet repairs or undocumented journal edits."
+                ),
+            ],
+            "table": {
+                "caption": "Mapped-Play Economics, Statutory Boundaries and Weekly Control Decisions",
+                "headers": [
+                    "Mapped play or recurring operating control",
+                    "Concrete economics and revenue recognition boundary",
+                    "Evidence or statutory requirement driving execution",
+                    "Fallback when the intended route fails",
+                ],
+                "rows": [
+                    [
+                        "fmcsa_dot_inspection_trigger_arbitrage serves authorized equipment and working-capital lead generation",
+                        "Two hundred verified records illustrate one $10,000 retained placement against $1,000 sourcing spend",
+                        "Check current authority and insurance status without inventing a universal filing deadline",
+                        "Use transparent private branding, free status checks and inbound hand-raiser funnels",
+                    ],
+                    [
+                        "transferable_tax_credit_brokerage_syndication uses independent buyer-funded simultaneous escrow settlement",
+                        "$1,000,000 face value at $0.85 versus $0.94 creates $90,000 pre-cost economic difference",
+                        "Verify section 6418 eligibility, unrelated buyer, cash consideration and prohibited subsequent transfer",
+                        "Never warehouse credits; decline when escrow, diligence or acceptable insurance cannot close",
+                    ],
+                    [
+                        "wotc_hourly_payroll_tax_credit_contingency_engine separates WOTC certification from research-credit substantiation",
+                        "Ten valid $2,400 credits produce $24,000 employer benefit and potentially $3,600 permitted fees",
+                        "Verify hire-date authorization, Form 8850 deadlines and applicable professional fee restrictions",
+                        "Exclude unsupported claims and offer fixed-fee documentation under independent tax review",
+                    ],
+                    [
+                        "Weekly lender concentration review protects brokerage production continuity",
+                        "Track lender shares of funded principal and retained fees as separate measures",
+                        "Refresh written lender criteria and preserve authorized submission decisions by deal",
+                        "Shift eligible new submissions to a qualified alternative without redistributing confidential packages indiscriminately",
+                    ],
+                    [
+                        "Weekly commission exposure review protects cash after apparent closing",
+                        "Separate failed prospects from earned-fee reversals and forecast each contractual repayment exposure",
+                        "Retain clawback clauses, lender notices and accounting support for every adjustment",
+                        "Reserve liquidity and use reviewed reversing entries rather than deleting original invoices",
+                    ],
+                    [
+                        "Weekly security and scope review protects the operating perimeter",
+                        "Keep client principal and escrow balances outside recognized operator fee revenue",
+                        "Assess 16 CFR Part 314 coverage and separate securities broker-dealer registration questions",
+                        "Restrict access, suspend unsupported activity and route specialized engagements to qualified providers",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A closing is a production event; a retained fee matched to settled cash is an operating result.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Configure an authorized intake record with immutable source identifiers, borrower permissions, product classification and jurisdiction-specific licensing checks.",
+        "Publish a dated lender matrix covering equipment, receivables, SBA and bridge eligibility, including a qualified alternative for each critical lane.",
+        "Save the six reference artifacts, run the supplied local QA assertions and independently test bank evidence and provider-idempotency integrations.",
+        "Implement reviewer-authenticated state transitions that post earned fees and settled receipts without recognizing borrower principal or holding escrow money.",
+        "Reproduce the ninety-lead cohort bridge to $140,000 quarterly revenue, $91,000 expenses, $49,000 profit and $29,000 operating cash generation.",
+        "Separate FMCSA sourcing, transferable-credit settlement and employer tax-credit services into documented workflows with explicit eligibility and fee boundaries.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "California Financial Code section 22100 — Finance lender and broker licensing",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
+            "relevance": "Evaluate whether the proposed lending or brokerage activity requires a California license, considering applicable definitions and exemptions.",
+        },
+        {
+            "title": "California Financial Code section 22802 — Commercial financing disclosures",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22802.",
+            "relevance": "Determine required disclosures for covered commercial financing offers and coordinate responsibilities with the financing provider.",
+        },
+        {
+            "title": "12 CFR 1002.9 — Notifications under Regulation B",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.9",
+            "relevance": "Assign application and adverse-action notification responsibilities using the provisions applicable to the business-credit transaction.",
+        },
+        {
+            "title": "12 CFR 1002.12 — Record retention under Regulation B",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.12",
+            "relevance": "Preserve application and disposition evidence for the applicable retention period rather than overwriting declined-deal history.",
+        },
+        {
+            "title": "13 CFR 103.5 — SBA compensation agreements",
+            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-103/section-103.5",
+            "relevance": "Document compensation arrangements and required disclosures for agents involved in covered SBA assistance.",
+        },
+        {
+            "title": "49 CFR 387.7 — Financial responsibility required",
+            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-A/section-387.7",
+            "relevance": "Verify applicable motor-carrier financial-responsibility requirements instead of treating a marketing timetable as an insurance-filing rule.",
+        },
+        {
+            "title": "49 CFR 390.19 — Motor carrier identification reports",
+            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-390/subpart-B/section-390.19",
+            "relevance": "Support accurate MCS-150 status-check workflows and distinguish carrier reporting duties from private brokerage marketing.",
+        },
+        {
+            "title": "26 U.S.C. 6418 — Transfer of certain credits",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6418",
+            "relevance": "Check eligible credits, unrelated-party transfer, cash consideration, transfer elections and the restriction on subsequent transfers.",
+        },
+        {
+            "title": "26 U.S.C. 51 — Work opportunity credit",
+            "url": "https://www.law.cornell.edu/uscode/text/26/51",
+            "relevance": "Verify hire-date authorization, target-group eligibility, wage limitations and subsection (d)(13) certification timing before modeling service fees.",
+        },
+        {
+            "title": "26 U.S.C. 41 — Credit for increasing research activities",
+            "url": "https://www.law.cornell.edu/uscode/text/26/41",
+            "relevance": "Substantiate qualifying research and eligible expenses separately from WOTC screening or ordinary payroll processing.",
+        },
+        {
+            "title": "31 CFR 10.27 — Fees for practice before the Internal Revenue Service",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
+            "relevance": "Assess applicable restrictions on contingent professional fees before entering outcome-linked tax-service engagements.",
+        },
+        {
+            "title": "16 CFR 314.4 — Elements of an information security program",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
+            "relevance": "For covered financial institutions, implement the required security-program elements and service-provider oversight around borrower information.",
+        },
+        {
+            "title": "15 U.S.C. 78o — Registration and regulation of brokers and dealers",
+            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
+            "relevance": "Evaluate securities-related placement activity separately rather than assuming a commercial loan-broker engagement authorizes securities brokerage.",
+        },
+    ],
+}

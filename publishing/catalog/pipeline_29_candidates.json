@@ -17,7 +17,8 @@
     "vol-010-building-an-seo-empire",
     "vol-011-high-ticket-brokerage",
     "vol-012-equipment-brokerage",
-    "vol-013-intellectual-property-licensing"
+    "vol-013-intellectual-property-licensing",
+    "vol-014-specialty-finance-brokerage"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -15905,7 +15906,7 @@
       "slug": "specialty-finance-brokerage",
       "title": "Specialty Finance Brokerage",
       "category": "Finance intermediary services",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 23,
         "profit_margin_potential": 21,
@@ -15922,11 +15923,11 @@
       },
       "total_score": 79,
       "tier_label": "High-Leverage Operator Play",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 73,
-        "high": 85
+        "low": 76,
+        "high": 82
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23580,5 +23581,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T21:37:21Z"
+  "generated_at": "2026-11-21T21:41:10Z"
 }

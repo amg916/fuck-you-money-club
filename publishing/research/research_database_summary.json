@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 2060,
-  "raw_video_count": 2060,
+  "abridged_video_count": 2238,
+  "raw_video_count": 2238,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T21:38:41+00:00",
+      "generated_at": "2026-11-21T21:42:37+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T21:38:41Z",
+  "generated_at": "2026-11-21T21:42:37Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 1575,
-      "tip_count": 3469,
-      "channel_count": 1113,
+      "video_count": 1744,
+      "tip_count": 3871,
+      "channel_count": 1223,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -81,18 +81,18 @@
           "duration": "00:09:34"
         },
         {
+          "video_id": "MNdDLiTLoNY",
+          "title": "Working Capital Loan vs Revenue-Based Financing: Which One Should I Choose for My Business?",
+          "author": "Unbankable with Alex Shvarts",
+          "url": "https://www.youtube.com/watch?v=MNdDLiTLoNY",
+          "duration": "00:10:12"
+        },
+        {
           "video_id": "SWQet1wMMyA",
           "title": "FirstPromoter Review - 2026 | The Easiest Way to Run a SaaS Affiliate Program?",
           "author": "Daniel | Tech & Data",
           "url": "https://www.youtube.com/watch?v=SWQet1wMMyA",
           "duration": "00:08:55"
-        },
-        {
-          "video_id": "lh5ulbIfANU",
-          "title": "The Smartest Affiliate Business Model: Recurring SaaS Commissions",
-          "author": "Michael Bashi",
-          "url": "https://www.youtube.com/watch?v=lh5ulbIfANU",
-          "duration": "00:17:50"
         }
       ],
       "top_timestamped_insights": [
@@ -130,6 +130,15 @@
           "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s",
           "video_title": "How To Estimate Equipment Cost In Construction",
           "author": "George Hedley | HardHat BIZCOACH",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Entire period is your cash conversion cycle. And you can probably guess the longer that cycle is, the more of your own cash is…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:02:36",
+          "link": "https://www.youtube.com/watch?v=kMiyyMuSUDU&t=156s",
+          "video_title": "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution",
+          "author": "Vanijja | Trade Insights",
           "verbatim_research_only": true
         },
         {
@@ -176,15 +185,6 @@
           "video_title": "How To Find Tax Sale Overages",
           "author": "Bob Diamond - America's Tax Sale Attorney",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Well, now the state has a 10% commission cap, the commission cap, at least for me, isn't nearly as important as this bottom part…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:05:20",
-          "link": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=320s",
-          "video_title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -197,42 +197,42 @@
         "form or",
         "form you",
         "form the",
-        "form where",
         "form with",
-        "form on",
-        "form like",
+        "form where",
         "form your",
         "form in",
+        "form on",
+        "form like",
         "form so",
         "form a",
         "form content",
-        "form it",
         "form if",
+        "form it",
         "form as",
         "form called",
         "form I",
+        "form which",
         "form at",
         "form below",
-        "form which",
         "form right",
         "form uh",
+        "form um",
         "form because",
         "form builder",
         "form here",
         "form submissions",
         "form videos",
         "property Act",
-        "form them",
-        "form um",
-        "letters of administration",
         "Exchange Act",
         "form but",
+        "form them",
+        "letters of administration",
         "form we"
       ],
       "tools_and_portals": [
         "Google",
-        "Facebook",
         "LinkedIn",
+        "Facebook",
         "Excel",
         "Ancestry",
         "CSV",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 1449,
-      "tip_count": 1998,
-      "channel_count": 950,
+      "video_count": 1603,
+      "tip_count": 2504,
+      "channel_count": 1051,
       "top_sources": [
         {
           "video_id": "oZiYbKNvxJY",
@@ -365,6 +365,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Planning ahead is important now i want to talk about the commercial loan loan to value ratios unfortunately with commercial financing it takes a…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:03:19",
+          "link": "https://www.youtube.com/watch?v=SulpxqBYams&t=199s",
+          "video_title": "How A Commercial Loan Works? | Co/LAB Lending",
+          "author": "The Lab: Mortgage & Real Estate Business Academy",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You don't really own any of that. It's not an asset. Now think about it like an entrepreneur, as you probably are. Your time…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:05:03",
@@ -417,15 +426,6 @@
           "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
           "author": "My Lawyer In Spain",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Providing whatever leg work you can on your part, to ensure that you start like connecting some of the dots of who is who…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:22:47",
-          "link": "https://www.youtube.com/watch?v=whDzDrFNADQ&t=1367s",
-          "video_title": "USDA FSA Resources for Heirs: Join FSA as we talk with the Experts (Episode 1-Full Version)",
-          "author": "FarmersGov",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -435,47 +435,47 @@
         "form to",
         "form is",
         "form for",
-        "form or",
         "form the",
+        "form or",
         "form you",
         "form a",
         "form below",
         "form your",
         "form in",
         "form on",
+        "form with",
         "form so",
         "form where",
-        "form with",
-        "form it",
         "form like",
+        "form it",
         "form Commercial",
+        "form if",
         "property Act",
         "letters of administration",
-        "form if",
-        "form which",
         "Form uh",
+        "form which",
         "form we",
+        "form but",
         "form I",
         "form our",
         "form as",
-        "form but",
         "form here",
         "form now",
         "form them",
-        "form content",
-        "form because",
         "form um",
-        "letters testamentary",
-        "affidavit of heirship",
-        "court order",
-        "Exchange Act"
+        "form content",
+        "Exchange Act",
+        "form an",
+        "form because",
+        "form will",
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Google",
         "Facebook",
         "LinkedIn",
-        "Ancestry",
         "Excel",
+        "Ancestry",
         "CSV",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 592,
-      "tip_count": 1772,
-      "channel_count": 366,
+      "video_count": 604,
+      "tip_count": 1783,
+      "channel_count": 378,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 1741,
-      "tip_count": 2120,
-      "channel_count": 1167,
+      "video_count": 1908,
+      "tip_count": 2396,
+      "channel_count": 1275,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -912,45 +912,45 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form to",
         "form for",
         "form is",
         "form or",
         "form you",
         "form the",
-        "form a",
         "form with",
-        "form so",
-        "form where",
-        "form on",
+        "form a",
         "form in",
-        "form below",
-        "form like",
+        "form on",
+        "form so",
         "form your",
+        "form where",
+        "form like",
+        "form below",
         "form content",
         "form as",
+        "form if",
         "form it",
         "form at",
-        "form if",
-        "form I",
         "form which",
+        "form I",
         "form called",
+        "Form uh",
         "property Act",
         "form Commercial",
         "form here",
-        "Form uh",
         "form right",
         "letters of administration",
         "form builder",
         "form submissions",
+        "form um",
         "form videos",
+        "Exchange Act",
         "form because",
         "form we",
-        "Exchange Act",
-        "form them",
-        "form they"
+        "form from"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1137,
-      "tip_count": 884,
-      "channel_count": 804,
+      "video_count": 1252,
+      "tip_count": 897,
+      "channel_count": 878,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1158,44 +1158,44 @@
         "form to",
         "form for",
         "form or",
-        "form you",
         "form is",
+        "form you",
         "form your",
         "form the",
         "form a",
         "form where",
         "form like",
-        "form on",
         "form with",
         "form in",
+        "form on",
         "form so",
         "form below",
         "form content",
         "Form uh",
         "form which",
         "form as",
+        "form if",
+        "form um",
         "form called",
         "form Commercial",
         "form I",
-        "form if",
         "form it",
         "form here",
-        "form um",
+        "form right",
         "form at",
         "form but",
-        "form right",
         "form because",
         "form builder",
         "form our",
         "form them",
         "form now",
         "Protection Act",
-        "form fill",
-        "form they"
+        "form all",
+        "form better"
       ],
       "tools_and_portals": [
-        "Google",
         "LinkedIn",
+        "Google",
         "Facebook",
         "Excel",
         "CSV",
@@ -1233,15 +1233,15 @@
         "https://tinyurl.com/unclaimedmentor",
         "https://www.smartlead.ai",
         "https://www.smartlead.ai/ebook-and-guide",
-        "https://probatemastery.com"
+        "http://bookwithbeau.com/"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 1594,
-      "tip_count": 2118,
-      "channel_count": 1088,
+      "video_count": 1734,
+      "tip_count": 2253,
+      "channel_count": 1181,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1286,18 +1286,18 @@
           "duration": "00:02:43"
         },
         {
+          "video_id": "PH6WLL7kMUM",
+          "title": "Invoice Factoring vs AR Financing Explained (2026)",
+          "author": "75BizLoans and Commercial Real Estate Loans",
+          "url": "https://www.youtube.com/watch?v=PH6WLL7kMUM",
+          "duration": "00:11:07"
+        },
+        {
           "video_id": "KhY7TkJppys",
           "title": "Everything You Need to Know About Retainer Agreements",
           "author": "eForms",
           "url": "https://www.youtube.com/watch?v=KhY7TkJppys",
           "duration": "00:03:43"
-        },
-        {
-          "video_id": "LdemHPCk0dk",
-          "title": "How to Check for Liens Before You Call About Surplus Funds",
-          "author": "Alfred Taren",
-          "url": "https://www.youtube.com/watch?v=LdemHPCk0dk",
-          "duration": "00:07:47"
         }
       ],
       "top_timestamped_insights": [
@@ -1394,41 +1394,41 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form to",
-        "Form is",
         "form for",
+        "Form is",
         "form or",
         "form you",
         "form the",
         "form with",
         "form a",
+        "form in",
+        "form like",
         "form on",
         "form below",
-        "form like",
-        "form in",
+        "form your",
         "form where",
         "form so",
-        "form your",
         "form content",
-        "form as",
         "form it",
+        "form as",
         "form at",
         "form I",
-        "form called",
         "form if",
         "Form uh",
+        "form called",
+        "form which",
         "property Act",
         "form Commercial",
         "form here",
-        "form which",
+        "form um",
         "letters of administration",
         "form we",
         "form builder",
         "form right",
         "form submissions",
-        "form um",
         "form because",
         "form our",
         "form them",
@@ -1480,10 +1480,17 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 1634,
-      "tip_count": 1795,
-      "channel_count": 1073,
+      "video_count": 1797,
+      "tip_count": 1900,
+      "channel_count": 1181,
       "top_sources": [
+        {
+          "video_id": "ttoT3V6duzU",
+          "title": "How Much Do Contractor License and Construction Surety Bonds Cost?",
+          "author": "Surety Bonds Direct",
+          "url": "https://www.youtube.com/watch?v=ttoT3V6duzU",
+          "duration": "00:05:10"
+        },
         {
           "video_id": "9Fku-QlhyHc",
           "title": "Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on Their Side | Uncover Fraud",
@@ -1532,13 +1539,6 @@
           "author": "inventRightTV",
           "url": "https://www.youtube.com/watch?v=WMcwXYcUD5c",
           "duration": "00:05:53"
-        },
-        {
-          "video_id": "zrj6RA8N9HA",
-          "title": "3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)",
-          "author": "Money Making Juggernaut",
-          "url": "https://www.youtube.com/watch?v=zrj6RA8N9HA",
-          "duration": "00:06:11"
         }
       ],
       "top_timestamped_insights": [
@@ -1635,45 +1635,45 @@
       ],
       "statutes_and_forms": [
         "form and",
-        "form that",
         "form of",
+        "form that",
         "form to",
         "form for",
         "form is",
         "form or",
-        "form you",
         "form the",
+        "form you",
         "form a",
         "form below",
         "form your",
-        "form on",
         "form in",
+        "form on",
+        "form with",
         "form so",
         "form where",
-        "form with",
         "form like",
         "form it",
         "Form uh",
+        "form if",
         "form Commercial",
         "property Act",
         "form I",
-        "form if",
         "letters of administration",
         "form we",
+        "form but",
         "form content",
         "form our",
+        "form um",
         "form which",
-        "form but",
+        "Exchange Act",
         "form here",
         "form now",
         "form them",
-        "Exchange Act",
         "form as",
         "form because",
-        "form um",
-        "form called",
         "form right",
-        "form at"
+        "form called",
+        "form an"
       ],
       "tools_and_portals": [
         "Google",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 1616,
-      "tip_count": 4867,
-      "channel_count": 1102,
+      "video_count": 1692,
+      "tip_count": 4989,
+      "channel_count": 1159,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1888,23 +1888,23 @@
         "form a",
         "form so",
         "form where",
-        "form on",
         "form your",
+        "form on",
         "form below",
         "form like",
         "form in",
-        "form content",
         "form it",
+        "form content",
         "form if",
         "form as",
-        "form at",
         "form which",
+        "form at",
         "form I",
         "form we",
+        "form um",
         "form because",
         "form but",
         "Form uh",
-        "form um",
         "form called",
         "form here",
         "form builder",
@@ -1912,9 +1912,9 @@
         "letters of administration",
         "form built",
         "form this",
-        "form them",
-        "form videos",
-        "property Act"
+        "form better",
+        "form right",
+        "form them"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1113,
-      "video_count": 1575,
-      "corroborating_tip_count": 3469,
+      "channel_count": 1223,
+      "video_count": 1744,
+      "corroborating_tip_count": 3871,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -1997,16 +1997,16 @@
           "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
         },
         {
+          "video_title": "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution",
+          "author": "Vanijja | Trade Insights",
+          "timestamp": "00:02:36",
+          "link": "https://www.youtube.com/watch?v=kMiyyMuSUDU&t=156s"
+        },
+        {
           "video_title": "Don't be a Victim of Broker NDA Agreements",
           "author": "David C Barnett Small Business and Deal Making SMB",
           "timestamp": "00:06:19",
           "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s"
-        },
-        {
-          "video_title": "How To Claim Surplus Funds From Foreclosure",
-          "author": "Bob Diamond - America's Tax Sale Attorney",
-          "timestamp": "00:05:14",
-          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 950,
-      "video_count": 1449,
-      "corroborating_tip_count": 1998,
+      "channel_count": 1051,
+      "video_count": 1603,
+      "corroborating_tip_count": 2504,
       "supporting_links": [
         {
           "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
@@ -2041,6 +2041,12 @@
           "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=122s"
         },
         {
+          "video_title": "How A Commercial Loan Works? | Co/LAB Lending",
+          "author": "The Lab: Mortgage & Real Estate Business Academy",
+          "timestamp": "00:03:19",
+          "link": "https://www.youtube.com/watch?v=SulpxqBYams&t=199s"
+        },
+        {
           "video_title": "The New Parasite SEO Loophole Hiding Inside Google",
           "author": "Alek Borisov",
           "timestamp": "00:05:03",
@@ -2051,12 +2057,6 @@
           "author": "Current Yachts",
           "timestamp": "00:13:41",
           "link": "https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=821s"
-        },
-        {
-          "video_title": "Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide",
-          "author": "My Lawyer In Spain",
-          "timestamp": "00:32:03",
-          "link": "https://www.youtube.com/watch?v=ywaYY4cPtAY&t=1923s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 366,
-      "video_count": 592,
-      "corroborating_tip_count": 1772,
+      "channel_count": 378,
+      "video_count": 604,
+      "corroborating_tip_count": 1783,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1167,
-      "video_count": 1741,
-      "corroborating_tip_count": 2120,
+      "channel_count": 1275,
+      "video_count": 1908,
+      "corroborating_tip_count": 2396,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 804,
-      "video_count": 1137,
-      "corroborating_tip_count": 884,
+      "channel_count": 878,
+      "video_count": 1252,
+      "corroborating_tip_count": 897,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1088,
-      "video_count": 1594,
-      "corroborating_tip_count": 2118,
+      "channel_count": 1181,
+      "video_count": 1734,
+      "corroborating_tip_count": 2253,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1073,
-      "video_count": 1634,
-      "corroborating_tip_count": 1795,
+      "channel_count": 1181,
+      "video_count": 1797,
+      "corroborating_tip_count": 1900,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1102,
-      "video_count": 1616,
-      "corroborating_tip_count": 4867,
+      "channel_count": 1159,
+      "video_count": 1692,
+      "corroborating_tip_count": 4989,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 2060 corpus videos",
-        "instance_count": 2060,
+        "source": "YouTube CDN thumbnails for the 2238 corpus videos",
+        "instance_count": 2238,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -17168,6 +17168,1252 @@
             "author": "inventRightTV",
             "thumbnail_url": "https://i.ytimg.com/vi/KOR6yXD1nTQ/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=KOR6yXD1nTQ"
+          },
+          {
+            "video_id": "3V8HTzwHS90",
+            "title": "How Loan Brokers Can Earn $200K+ From Just 2 Deals",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/3V8HTzwHS90/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3V8HTzwHS90"
+          },
+          {
+            "video_id": "-HZRdtDpSRo",
+            "title": "What is a Commercial Loan Broker? What do they do?",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/-HZRdtDpSRo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-HZRdtDpSRo"
+          },
+          {
+            "video_id": "dIwbKzTxcQk",
+            "title": "How to Become a Business Loan Broker in 2026",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/dIwbKzTxcQk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dIwbKzTxcQk"
+          },
+          {
+            "video_id": "M48iXqAIzwE",
+            "title": "How to Become a Commercial Loan Broker",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/M48iXqAIzwE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M48iXqAIzwE"
+          },
+          {
+            "video_id": "ctWaQk2YDgE",
+            "title": "Wondering if you’re built for commercial finance?",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/ctWaQk2YDgE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ctWaQk2YDgE"
+          },
+          {
+            "video_id": "v3GnrXphwvM",
+            "title": "What Does a Commercial Loan Broker REALLY Do?",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/v3GnrXphwvM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v3GnrXphwvM"
+          },
+          {
+            "video_id": "FnBYMtrQW9M",
+            "title": "The Broker Business Explained: Low Risk, Big Commissions",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/FnBYMtrQW9M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FnBYMtrQW9M"
+          },
+          {
+            "video_id": "vakBYx8RoD0",
+            "title": "Made $49k Commission as a Business Loan Broker",
+            "author": "Commercial Capital Training Group, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/vakBYx8RoD0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vakBYx8RoD0"
+          },
+          {
+            "video_id": "svRIdayYOLo",
+            "title": "11 Things to Know Before Becoming a Commercial Loan Broker",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/svRIdayYOLo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=svRIdayYOLo"
+          },
+          {
+            "video_id": "WUTiN5zYjnU",
+            "title": "A Day in the Life of a Commercial Loan Broker (The Real Version)",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/WUTiN5zYjnU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WUTiN5zYjnU"
+          },
+          {
+            "video_id": "SPUcp-lnZ4w",
+            "title": "4 Foundations for New Commercial Loan Officers",
+            "author": "Loan Officer Training | Zevi Shafran",
+            "thumbnail_url": "https://i.ytimg.com/vi/SPUcp-lnZ4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SPUcp-lnZ4w"
+          },
+          {
+            "video_id": "SrGiDqgbdf8",
+            "title": "How to Start Your Own Finance Company - Guide To Becoming A Commercial Loan Broker",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/SrGiDqgbdf8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SrGiDqgbdf8"
+          },
+          {
+            "video_id": "SulpxqBYams",
+            "title": "How A Commercial Loan Works? | Co/LAB Lending",
+            "author": "The Lab: Mortgage & Real Estate Business Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/SulpxqBYams/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SulpxqBYams"
+          },
+          {
+            "video_id": "408PWyXwwrI",
+            "title": "Why 1 Loan Deal Pays More than 100 B2B Sales",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/408PWyXwwrI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=408PWyXwwrI"
+          },
+          {
+            "video_id": "4TvufjZUMp8",
+            "title": "How To Be A Business Loan Broker | Equipment Finance Basics",
+            "author": "ION Capital - Loan Broker University",
+            "thumbnail_url": "https://i.ytimg.com/vi/4TvufjZUMp8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4TvufjZUMp8"
+          },
+          {
+            "video_id": "nN3wD1zIjqM",
+            "title": "Equipment Finance Brokerage: The Beginner's Roadmap",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/nN3wD1zIjqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nN3wD1zIjqM"
+          },
+          {
+            "video_id": "WfAvAf4wk0k",
+            "title": "How To Be A Business Loan Broker | The Basics of Equipment Finance",
+            "author": "ION Capital - Loan Broker University",
+            "thumbnail_url": "https://i.ytimg.com/vi/WfAvAf4wk0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WfAvAf4wk0k"
+          },
+          {
+            "video_id": "2BqGahVBgUs",
+            "title": "How To Be A Business Loan Broker | Equipment Financing Loans",
+            "author": "ION Capital - Loan Broker University",
+            "thumbnail_url": "https://i.ytimg.com/vi/2BqGahVBgUs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2BqGahVBgUs"
+          },
+          {
+            "video_id": "wt92Utt7o6I",
+            "title": "How To Be A Business Loan Broker | Equipment Finance Tips",
+            "author": "ION Capital - Loan Broker University",
+            "thumbnail_url": "https://i.ytimg.com/vi/wt92Utt7o6I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wt92Utt7o6I"
+          },
+          {
+            "video_id": "Q4yDbzFte3g",
+            "title": "Business Finance Equipment Financing Masterclass (Complete Guide)",
+            "author": "BizMoney Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q4yDbzFte3g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q4yDbzFte3g"
+          },
+          {
+            "video_id": "YLIvGloANJM",
+            "title": "Why Equipment Finance Brokering Exists (And Why Most People Miss the Opportunity)",
+            "author": "Neil.Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/YLIvGloANJM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YLIvGloANJM"
+          },
+          {
+            "video_id": "L2-ax8GoKVw",
+            "title": "How to Create Income Stream with Equipment Financing | Jermane Cheathem",
+            "author": "Credit Suite",
+            "thumbnail_url": "https://i.ytimg.com/vi/L2-ax8GoKVw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L2-ax8GoKVw"
+          },
+          {
+            "video_id": "7OHPVFeEmD4",
+            "title": "How Brokers Get Paid Points, Fees & Splits",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/7OHPVFeEmD4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7OHPVFeEmD4"
+          },
+          {
+            "video_id": "dc0_7D431kI",
+            "title": "Equipment Finance Leads: Turnkey System That Actually Works",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/dc0_7D431kI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dc0_7D431kI"
+          },
+          {
+            "video_id": "DSEdy5KFvBs",
+            "title": "How To Be A Business Loan Broker | Equipment Finance Basics",
+            "author": "ION Capital - Loan Broker University",
+            "thumbnail_url": "https://i.ytimg.com/vi/DSEdy5KFvBs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DSEdy5KFvBs"
+          },
+          {
+            "video_id": "EelcRfosnt8",
+            "title": "Equipment Financing Secrets EXPOSED: What Banks Don't Want You to Know",
+            "author": "ROK Financial",
+            "thumbnail_url": "https://i.ytimg.com/vi/EelcRfosnt8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EelcRfosnt8"
+          },
+          {
+            "video_id": "ks8OR72QJF0",
+            "title": "What Lenders Actually Look For Before Approving an Equipment Finance Deal",
+            "author": "Neil.Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/ks8OR72QJF0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ks8OR72QJF0"
+          },
+          {
+            "video_id": "PoHdu7KQ0zI",
+            "title": "Accounts Receivable Factoring - What is It?",
+            "author": "Commercial Capital LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/PoHdu7KQ0zI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PoHdu7KQ0zI"
+          },
+          {
+            "video_id": "qWXtw52gtTw",
+            "title": "Accounts Receivable Financing: What You Need to Know",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/qWXtw52gtTw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qWXtw52gtTw"
+          },
+          {
+            "video_id": "RyM3eO5GN5I",
+            "title": "Asset Based Lending",
+            "author": "Invoice Finance News",
+            "thumbnail_url": "https://i.ytimg.com/vi/RyM3eO5GN5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RyM3eO5GN5I"
+          },
+          {
+            "video_id": "MUaOFobVexQ",
+            "title": "Asset Based Lenders",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/MUaOFobVexQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MUaOFobVexQ"
+          },
+          {
+            "video_id": "PH6WLL7kMUM",
+            "title": "Invoice Factoring vs AR Financing Explained (2026)",
+            "author": "75BizLoans and Commercial Real Estate Loans",
+            "thumbnail_url": "https://i.ytimg.com/vi/PH6WLL7kMUM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PH6WLL7kMUM"
+          },
+          {
+            "video_id": "xY3rD_awSEg",
+            "title": "Asset-Based Lending and Borrowing Base Facilities",
+            "author": "Financely Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/xY3rD_awSEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xY3rD_awSEg"
+          },
+          {
+            "video_id": "Lu16E6BvvDE",
+            "title": "Bank Financing vs. Receivables Factoring",
+            "author": "Ian Johnson",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lu16E6BvvDE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lu16E6BvvDE"
+          },
+          {
+            "video_id": "8C1D2A4YVvQ",
+            "title": "Factoring Broker Program",
+            "author": "Factor Finders",
+            "thumbnail_url": "https://i.ytimg.com/vi/8C1D2A4YVvQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8C1D2A4YVvQ"
+          },
+          {
+            "video_id": "_VD-lBSeoEw",
+            "title": "How Invoice & Accounts Receivable Financing Works",
+            "author": "SouthStar Capital, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/_VD-lBSeoEw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_VD-lBSeoEw"
+          },
+          {
+            "video_id": "C4UI_wc_sUU",
+            "title": "Asset-Based Finance Explained",
+            "author": "PIMCO U.S.",
+            "thumbnail_url": "https://i.ytimg.com/vi/C4UI_wc_sUU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C4UI_wc_sUU"
+          },
+          {
+            "video_id": "3PlJmybrzHs",
+            "title": "Factoring Receivables Broker - Earn The Highest Commission",
+            "author": "Universal Funding Corporation",
+            "thumbnail_url": "https://i.ytimg.com/vi/3PlJmybrzHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3PlJmybrzHs"
+          },
+          {
+            "video_id": "bN1tDQE59LE",
+            "title": "accounts receivable financing vs factoring",
+            "author": "Darrell Cockrum",
+            "thumbnail_url": "https://i.ytimg.com/vi/bN1tDQE59LE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bN1tDQE59LE"
+          },
+          {
+            "video_id": "EcXwTRCJH-8",
+            "title": "How Accounts Receivable Financing Works",
+            "author": "Ben Van Zee",
+            "thumbnail_url": "https://i.ytimg.com/vi/EcXwTRCJH-8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EcXwTRCJH-8"
+          },
+          {
+            "video_id": "LWEWnYj0IZ4",
+            "title": "Accounts Receivable Financing - Factoring",
+            "author": "CPA Financial Exchange Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/LWEWnYj0IZ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LWEWnYj0IZ4"
+          },
+          {
+            "video_id": "jaczYsctbgs",
+            "title": "How to Get an SBA Loan For Your Small Business (Tips & Advice)",
+            "author": "ClearValue Tax",
+            "thumbnail_url": "https://i.ytimg.com/vi/jaczYsctbgs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jaczYsctbgs"
+          },
+          {
+            "video_id": "C-omBBP27hg",
+            "title": "Who Is the SBA 504 Loan For?",
+            "author": "CDC Small Business Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/C-omBBP27hg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C-omBBP27hg"
+          },
+          {
+            "video_id": "hK_Qb2vkxp8",
+            "title": "What Can I Use an SBA 504 Loan For?",
+            "author": "CDC Small Business Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/hK_Qb2vkxp8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hK_Qb2vkxp8"
+          },
+          {
+            "video_id": "5_3hvZIlwhQ",
+            "title": "How Does an SBA 504 Loan Work?",
+            "author": "CDC Small Business Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/5_3hvZIlwhQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5_3hvZIlwhQ"
+          },
+          {
+            "video_id": "9w4kgjirJ7g",
+            "title": "SBA 504 vs. SBA 7(a) Loans for Commercial Real Estate: How to Choose the Best Loan for Your Project!",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/9w4kgjirJ7g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9w4kgjirJ7g"
+          },
+          {
+            "video_id": "aBEJBn_bUA0",
+            "title": "Comparing SBA 504 vs. 7A Loans for Commercial Real Estate",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/aBEJBn_bUA0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aBEJBn_bUA0"
+          },
+          {
+            "video_id": "8-4I4VOIIqg",
+            "title": "SBA 7(a) Loans for Business Acquisitions: How a Top Lender Underwrites Deals",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/8-4I4VOIIqg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8-4I4VOIIqg"
+          },
+          {
+            "video_id": "nAoSGYTENek",
+            "title": "Comparing SBA 7A vs 504 Loans for Business Acquisitions w/ Real Estate",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/nAoSGYTENek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nAoSGYTENek"
+          },
+          {
+            "video_id": "py_IPiHezcw",
+            "title": "How to Buy Commercial Real Estate (100% Financing Explained!) | SBA Loans",
+            "author": "SBA University",
+            "thumbnail_url": "https://i.ytimg.com/vi/py_IPiHezcw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=py_IPiHezcw"
+          },
+          {
+            "video_id": "jzEfnFdiiZU",
+            "title": "Comparing SBA 7a vs SBA 504: Which is Better for an Office Building Purchase?",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/jzEfnFdiiZU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jzEfnFdiiZU"
+          },
+          {
+            "video_id": "lNnoO9VriRM",
+            "title": "SBA Loans Explained: Types of Loans, Interest Rates, and What to Expect From the Process",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/lNnoO9VriRM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lNnoO9VriRM"
+          },
+          {
+            "video_id": "NmbLxyMZBmQ",
+            "title": "Comparing SBA 7(a) vs 504 Loans for Business Acquisitions with Real Estate",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/NmbLxyMZBmQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NmbLxyMZBmQ"
+          },
+          {
+            "video_id": "CvS7BttXuu0",
+            "title": "New SBA Rule Unlocks $10M: Who Actually Benefits | Shane Walton ft. Jeff Hildebrandt",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/CvS7BttXuu0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CvS7BttXuu0"
+          },
+          {
+            "video_id": "pAuU5b_a7AY",
+            "title": "SBA 504 vs. 7(a) Loans for Commercial Real Estate",
+            "author": "Community Business Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/pAuU5b_a7AY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pAuU5b_a7AY"
+          },
+          {
+            "video_id": "XKIBsDDkBUI",
+            "title": "SBA 504 Loans To Buy Owner User Real Estate with Ken Rosenthal | Ep. 15 | My SBA Loan Pro Podcast",
+            "author": "My SBA Loan Pro Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/XKIBsDDkBUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XKIBsDDkBUI"
+          },
+          {
+            "video_id": "WAbZuTa6KEg",
+            "title": "Small Business Administration SBA 7(a) and 504 Loan Programs For Business Owners and Entrepreneurs.",
+            "author": "ThinkSBA - SBA 504 and 7a Loan Brokerage",
+            "thumbnail_url": "https://i.ytimg.com/vi/WAbZuTa6KEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WAbZuTa6KEg"
+          },
+          {
+            "video_id": "dDwHOnFlzaA",
+            "title": "MCA DEBT RESTRUCTURE OR REFINANCE",
+            "author": "The Approved Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/dDwHOnFlzaA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dDwHOnFlzaA"
+          },
+          {
+            "video_id": "V8S0sywozwU",
+            "title": "“UCC Liens & MCA Debt What Borrowers MUST Know (2 Minute Breakdown)\"",
+            "author": "Berkshire Financial Services LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/V8S0sywozwU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V8S0sywozwU"
+          },
+          {
+            "video_id": "lBvWGt7bnCw",
+            "title": "Fastest Way To Get Out Of Merchant Cash Advance Debt (MCA Debt Relief)",
+            "author": "Michael Granados",
+            "thumbnail_url": "https://i.ytimg.com/vi/lBvWGt7bnCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lBvWGt7bnCw"
+          },
+          {
+            "video_id": "OWlnOeMGBkg",
+            "title": "MCA Debt Consolidation & Settlement Everything You Need to Know",
+            "author": "Gap Funding | 100% Real Estate Financing",
+            "thumbnail_url": "https://i.ytimg.com/vi/OWlnOeMGBkg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OWlnOeMGBkg"
+          },
+          {
+            "video_id": "8x-cfQhQpPU",
+            "title": "STUCK IN MCA DEBT? THERE'S A WAY OUT!",
+            "author": "The Approved Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/8x-cfQhQpPU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8x-cfQhQpPU"
+          },
+          {
+            "video_id": "w-ETPb-Trek",
+            "title": "4 Ways to Get Out of Merchant Cash Advance Debt",
+            "author": "Zach Siegel",
+            "thumbnail_url": "https://i.ytimg.com/vi/w-ETPb-Trek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w-ETPb-Trek"
+          },
+          {
+            "video_id": "spCn3Rbs4XY",
+            "title": "SBA 7(A) NEW RULES BOMBSHELL FOR MCA DEBT CONSOLIDATION",
+            "author": "The Approved Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/spCn3Rbs4XY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=spCn3Rbs4XY"
+          },
+          {
+            "video_id": "BcdnIkuJ7Fc",
+            "title": "What Really Happens When You Default on an MCA? (Warning)",
+            "author": "Rise Alliance",
+            "thumbnail_url": "https://i.ytimg.com/vi/BcdnIkuJ7Fc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BcdnIkuJ7Fc"
+          },
+          {
+            "video_id": "WX8DT-NQK5w",
+            "title": "MCA Debt Relief (Best Merchant Cash Advance Help)",
+            "author": "Michael Granados",
+            "thumbnail_url": "https://i.ytimg.com/vi/WX8DT-NQK5w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WX8DT-NQK5w"
+          },
+          {
+            "video_id": "A8iNT8Ctrhk",
+            "title": "Merchant Cash Advances and Bankruptcy: What Business Owners Need to Know",
+            "author": "Parkins & Rubio LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/A8iNT8Ctrhk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A8iNT8Ctrhk"
+          },
+          {
+            "video_id": "_V39MGbzjw0",
+            "title": "Can I Refinance an MCA Loan with an SBA Loan?",
+            "author": "ProjectionHub",
+            "thumbnail_url": "https://i.ytimg.com/vi/_V39MGbzjw0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_V39MGbzjw0"
+          },
+          {
+            "video_id": "50wAPhzWGmY",
+            "title": "MCA reclassified as Loans? | Breaking news on MCAs (Merchant Cash Advances)",
+            "author": "Corporate Bankruptcy A to Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/50wAPhzWGmY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=50wAPhzWGmY"
+          },
+          {
+            "video_id": "OccRWwWbI2M",
+            "title": "MCA Debt Restructuring- Debt Relief, Debt Consolidation, and MCA Debt Settlement",
+            "author": "Zeus Commercial Capital | Business & RE Loans",
+            "thumbnail_url": "https://i.ytimg.com/vi/OccRWwWbI2M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OccRWwWbI2M"
+          },
+          {
+            "video_id": "jCWdtQmKTiU",
+            "title": "Will commercial loan brokers and funding providers need a license in California?",
+            "author": "Funder Intel",
+            "thumbnail_url": "https://i.ytimg.com/vi/jCWdtQmKTiU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jCWdtQmKTiU"
+          },
+          {
+            "video_id": "nxxklr3VSSo",
+            "title": "Commercial Loan Broker Successes and Advice After Training",
+            "author": "Commercial Capital Training Group, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/nxxklr3VSSo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nxxklr3VSSo"
+          },
+          {
+            "video_id": "gfK-oOi-TuI",
+            "title": "Does a commercial loan broker need a license?",
+            "author": "Jonathan Mills Patrick",
+            "thumbnail_url": "https://i.ytimg.com/vi/gfK-oOi-TuI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gfK-oOi-TuI"
+          },
+          {
+            "video_id": "UBxQzlMJT7k",
+            "title": "Live Business Loan Broker Training | Become a Commercial Loan Broker",
+            "author": "Commercial Capital Training Group, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/UBxQzlMJT7k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UBxQzlMJT7k"
+          },
+          {
+            "video_id": "lg-SI4-0oEg",
+            "title": "How to Become a Commercial Loan Broker (No Experience Needed)",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/lg-SI4-0oEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lg-SI4-0oEg"
+          },
+          {
+            "video_id": "MsdnoNJpPrg",
+            "title": "3 Shifts Reshaping Commercial Lending That Most Brokers Are Missing",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/MsdnoNJpPrg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MsdnoNJpPrg"
+          },
+          {
+            "video_id": "qkeq6lhotvM",
+            "title": "How do Commercial Loan Brokers get Paid?",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/qkeq6lhotvM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qkeq6lhotvM"
+          },
+          {
+            "video_id": "tgEHrpyZE9U",
+            "title": "How to Build a Lender Network as a New Commercial Loan Broker",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/tgEHrpyZE9U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tgEHrpyZE9U"
+          },
+          {
+            "video_id": "4AAOQcVDMIo",
+            "title": "Commercial Loan Broker Training | Do NOT Believe The Hype On YouTube!!",
+            "author": "The Loan Broker Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/4AAOQcVDMIo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4AAOQcVDMIo"
+          },
+          {
+            "video_id": "8bJtTzzuQ-Y",
+            "title": "Mortgage Concepts California MLO licensing laws",
+            "author": "firsttuesday – California real estate educators",
+            "thumbnail_url": "https://i.ytimg.com/vi/8bJtTzzuQ-Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8bJtTzzuQ-Y"
+          },
+          {
+            "video_id": "QPWj0c48x1o",
+            "title": "Commercial Loan Broker Institute Overview",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/QPWj0c48x1o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QPWj0c48x1o"
+          },
+          {
+            "video_id": "gnx32nNbVfU",
+            "title": "Compliance Outlook - FinCEN Customer Due Diligence",
+            "author": "Compliance Connection",
+            "thumbnail_url": "https://i.ytimg.com/vi/gnx32nNbVfU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gnx32nNbVfU"
+          },
+          {
+            "video_id": "QmriETtG_oE",
+            "title": "What Brokers Get Wrong About Commercial Financing | Sua Truong",
+            "author": "CFM™ (Commercial Financing Mastery™)",
+            "thumbnail_url": "https://i.ytimg.com/vi/QmriETtG_oE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QmriETtG_oE"
+          },
+          {
+            "video_id": "rhDEWGC8KqM",
+            "title": "Commercial Sales-Based Financing Rules: Precomment Draft – January 28, 2026",
+            "author": "Texas Office of Consumer Credit Commissioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/rhDEWGC8KqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rhDEWGC8KqM"
+          },
+          {
+            "video_id": "cqOh0arlXGU",
+            "title": "Why the Bank Declined His 8th Subway Loan: Lender Capacity Explained | Sua Truong",
+            "author": "CFM™ (Commercial Financing Mastery™)",
+            "thumbnail_url": "https://i.ytimg.com/vi/cqOh0arlXGU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cqOh0arlXGU"
+          },
+          {
+            "video_id": "ByTHmfsxaNQ",
+            "title": "TIL/RESPA Final Rule on Integrated Mortgage Disclosures",
+            "author": "CLA (CliftonLarsonAllen LLP)",
+            "thumbnail_url": "https://i.ytimg.com/vi/ByTHmfsxaNQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ByTHmfsxaNQ"
+          },
+          {
+            "video_id": "xgYLNDnEqKg",
+            "title": "Series 24: Supervising Reg BI, Form CRS, Institutional Suitability and Concentration Reviews",
+            "author": "The Finance Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/xgYLNDnEqKg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xgYLNDnEqKg"
+          },
+          {
+            "video_id": "PB-h1pXLzhg",
+            "title": "Purchase Order Financing: Everything You Need to Know (2024)",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/PB-h1pXLzhg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PB-h1pXLzhg"
+          },
+          {
+            "video_id": "Db19fMNKoJY",
+            "title": "Mastering Supply Chain Finance: Technique, Risk & Innovation - Introduction to Supply Chain Finance",
+            "author": "Supply Chain Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Db19fMNKoJY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Db19fMNKoJY"
+          },
+          {
+            "video_id": "RcVypdN4SHs",
+            "title": "Trade Finance vs. Supply Chain Finance: Key Differences Explained (With Real Examples)",
+            "author": "Vanijja | Trade Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/RcVypdN4SHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RcVypdN4SHs"
+          },
+          {
+            "video_id": "kMiyyMuSUDU",
+            "title": "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution",
+            "author": "Vanijja | Trade Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/kMiyyMuSUDU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kMiyyMuSUDU"
+          },
+          {
+            "video_id": "LlAxD5FEW5Q",
+            "title": "4 - The evolution of Supply Chain Finance",
+            "author": "Trade Finance Global",
+            "thumbnail_url": "https://i.ytimg.com/vi/LlAxD5FEW5Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LlAxD5FEW5Q"
+          },
+          {
+            "video_id": "hKDkKk_Guv4",
+            "title": "PO Financing for Manufacturers and Fabricators",
+            "author": "Mobilization Funding",
+            "thumbnail_url": "https://i.ytimg.com/vi/hKDkKk_Guv4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hKDkKk_Guv4"
+          },
+          {
+            "video_id": "3Y7TjakDREI",
+            "title": "Supply Chain Finance",
+            "author": "Eslatainment",
+            "thumbnail_url": "https://i.ytimg.com/vi/3Y7TjakDREI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3Y7TjakDREI"
+          },
+          {
+            "video_id": "ltw4tGEw31o",
+            "title": "25 years of supply chain finance A journey to unlock liquidity",
+            "author": "Trade Finance Global",
+            "thumbnail_url": "https://i.ytimg.com/vi/ltw4tGEw31o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ltw4tGEw31o"
+          },
+          {
+            "video_id": "4fxpQTB_spA",
+            "title": "Unlock the Lucrative World of Supply Chain Financing",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/4fxpQTB_spA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4fxpQTB_spA"
+          },
+          {
+            "video_id": "J-guTckEVMA",
+            "title": "What is Trade Finance?",
+            "author": "Peak Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/J-guTckEVMA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J-guTckEVMA"
+          },
+          {
+            "video_id": "OOFsomPO_Mc",
+            "title": "6 Unit DSCR Loans for Commercial Property: THIS Catches Investors Off Guard",
+            "author": "SEI Mortgage - Ryan Marks",
+            "thumbnail_url": "https://i.ytimg.com/vi/OOFsomPO_Mc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OOFsomPO_Mc"
+          },
+          {
+            "video_id": "6P1p0e_NBxs",
+            "title": "DSCR Loan For Commercial Property",
+            "author": "Eli the DSCR Pro",
+            "thumbnail_url": "https://i.ytimg.com/vi/6P1p0e_NBxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6P1p0e_NBxs"
+          },
+          {
+            "video_id": "rzgxx8EB7NI",
+            "title": "What is a good DSCR for commercial real estate?",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/rzgxx8EB7NI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rzgxx8EB7NI"
+          },
+          {
+            "video_id": "KFtBrowO6pc",
+            "title": "What Is A Bridge Loan In Commercial Real Estate",
+            "author": "Jeremiah Boucher",
+            "thumbnail_url": "https://i.ytimg.com/vi/KFtBrowO6pc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KFtBrowO6pc"
+          },
+          {
+            "video_id": "NHfs2vBPCys",
+            "title": "Debt Yield vs. DSCR: The Metric Every Commercial Mortgage Broker Needs to Understand",
+            "author": "Academy For Commercial Lending",
+            "thumbnail_url": "https://i.ytimg.com/vi/NHfs2vBPCys/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NHfs2vBPCys"
+          },
+          {
+            "video_id": "SExreBEJY5Q",
+            "title": "This is Why 99% of Investors Don’t Use DSCR Loans!",
+            "author": "I Am Andrew Russell",
+            "thumbnail_url": "https://i.ytimg.com/vi/SExreBEJY5Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SExreBEJY5Q"
+          },
+          {
+            "video_id": "O49frBQ6oe0",
+            "title": "DSCR Loans Explained for 2023 -- Mortgages for Investors.",
+            "author": "Jeff Trevarthen",
+            "thumbnail_url": "https://i.ytimg.com/vi/O49frBQ6oe0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O49frBQ6oe0"
+          },
+          {
+            "video_id": "HYtATwfeE50",
+            "title": "BRRRR: How to Succeed Using DSCR and Hard Money Loans",
+            "author": "Hard Money Mike",
+            "thumbnail_url": "https://i.ytimg.com/vi/HYtATwfeE50/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HYtATwfeE50"
+          },
+          {
+            "video_id": "2cFIwSgUOQM",
+            "title": "DSCR Demystified: How Lenders Really Use It to Size Your Loan | Debt Service Coverage Ratio",
+            "author": "Real Estate Finance Academy with Trevor Calton",
+            "thumbnail_url": "https://i.ytimg.com/vi/2cFIwSgUOQM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2cFIwSgUOQM"
+          },
+          {
+            "video_id": "-j6-Ev4L24c",
+            "title": "What is a DSCR Loan? Mortgage Broker Guide to Win More Deals and Get Them Approved!",
+            "author": "AD Mortgage",
+            "thumbnail_url": "https://i.ytimg.com/vi/-j6-Ev4L24c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-j6-Ev4L24c"
+          },
+          {
+            "video_id": "-W2ThDxeu-o",
+            "title": "DSCR Loans Explained for 2026: Mortgages for Rental Investors",
+            "author": "Brandon Turner | Real Estate Investor",
+            "thumbnail_url": "https://i.ytimg.com/vi/-W2ThDxeu-o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-W2ThDxeu-o"
+          },
+          {
+            "video_id": "L9TrjfKxYdY",
+            "title": "DSCR Loans Explained in 2 Minutes",
+            "author": "ProAlpha Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/L9TrjfKxYdY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L9TrjfKxYdY"
+          },
+          {
+            "video_id": "52mBD7-QKAw",
+            "title": "Debt Service Coverage Ratio (DSCR) | Lender Preferred Metric (w J Scott)",
+            "author": "Mauricio Rauld",
+            "thumbnail_url": "https://i.ytimg.com/vi/52mBD7-QKAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=52mBD7-QKAw"
+          },
+          {
+            "video_id": "HE_kRmkKu5c",
+            "title": "What Is DSCR? Debt Service Coverage Ratio Loan, Real Estate Investing 2025, Calculation Explained",
+            "author": "AD Mortgage",
+            "thumbnail_url": "https://i.ytimg.com/vi/HE_kRmkKu5c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HE_kRmkKu5c"
+          },
+          {
+            "video_id": "3AB1K3GHp4w",
+            "title": "What is Debt Service Coverage Ratio (DSCR) and How to Use It",
+            "author": "Succeed REI",
+            "thumbnail_url": "https://i.ytimg.com/vi/3AB1K3GHp4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3AB1K3GHp4w"
+          },
+          {
+            "video_id": "ZgYmvPS5gJY",
+            "title": "The Relationship Between LTV, DSCR, Debt Yield & the Loan Constant",
+            "author": "Tactica RES",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZgYmvPS5gJY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZgYmvPS5gJY"
+          },
+          {
+            "video_id": "F8RMxGMNHtM",
+            "title": "How to CORRECTLY Calculate the Debt Service Coverage Ratio (DSCR)",
+            "author": "Chalkboard Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/F8RMxGMNHtM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F8RMxGMNHtM"
+          },
+          {
+            "video_id": "tlI9IYK5Dxg",
+            "title": "You Must Understand LTV and DSCR",
+            "author": "Beyond Lenders",
+            "thumbnail_url": "https://i.ytimg.com/vi/tlI9IYK5Dxg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tlI9IYK5Dxg"
+          },
+          {
+            "video_id": "7sx67OQUmsM",
+            "title": "Debt Service Coverage Ratio (DSCR) Explained",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/7sx67OQUmsM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7sx67OQUmsM"
+          },
+          {
+            "video_id": "U8Ynw0oqocY",
+            "title": "The Solar Tax Credit Explained",
+            "author": "Transform Solar",
+            "thumbnail_url": "https://i.ytimg.com/vi/U8Ynw0oqocY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U8Ynw0oqocY"
+          },
+          {
+            "video_id": "Xf8npq5DK2w",
+            "title": "Tax Equity Flip and Back Leverage Debt in US Renewable Energy Sector",
+            "author": "Financial modeling",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xf8npq5DK2w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xf8npq5DK2w"
+          },
+          {
+            "video_id": "fqMHsHUSOU8",
+            "title": "What is Solar Tax Equity Financing?",
+            "author": "Rob Freeman | Insuring The Built Environment",
+            "thumbnail_url": "https://i.ytimg.com/vi/fqMHsHUSOU8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fqMHsHUSOU8"
+          },
+          {
+            "video_id": "WiG6N_co0Eo",
+            "title": "Investment Tax Credit (ITC) webinar by Lumen Energy",
+            "author": "Katya Mizin",
+            "thumbnail_url": "https://i.ytimg.com/vi/WiG6N_co0Eo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WiG6N_co0Eo"
+          },
+          {
+            "video_id": "1_YV2DUgR-g",
+            "title": "The 30% Solar Tax Credit Didn't Disappear. It Moved.",
+            "author": "The Money Side",
+            "thumbnail_url": "https://i.ytimg.com/vi/1_YV2DUgR-g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1_YV2DUgR-g"
+          },
+          {
+            "video_id": "TQ86awlkdKw",
+            "title": "Transferrable tax credits can offset passive income tax liability with Jason Prince",
+            "author": "Tax Alpha Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/TQ86awlkdKw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TQ86awlkdKw"
+          },
+          {
+            "video_id": "LltieIq1Eq0",
+            "title": "Unlocking the Solar Tax Credit: 10% adders, transferability rules, and more",
+            "author": "Solar Energy Channel by Paradise Energy Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/LltieIq1Eq0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LltieIq1Eq0"
+          },
+          {
+            "video_id": "2KSxwXfP_QQ",
+            "title": "Are You Eligible for a Home Energy Tax Credit? - TurboTax Tax Tip Video",
+            "author": "Intuit TurboTax",
+            "thumbnail_url": "https://i.ytimg.com/vi/2KSxwXfP_QQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2KSxwXfP_QQ"
+          },
+          {
+            "video_id": "AVBbpi6lPFY",
+            "title": "Litigation Finance Explained: Complete Litigation Funding Guide",
+            "author": "Express Legal Funding",
+            "thumbnail_url": "https://i.ytimg.com/vi/AVBbpi6lPFY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AVBbpi6lPFY"
+          },
+          {
+            "video_id": "63RLcNbs9SU",
+            "title": "2020 Commercial Litigation Finance Association in the US Market",
+            "author": "Slingshot Capital Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/63RLcNbs9SU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=63RLcNbs9SU"
+          },
+          {
+            "video_id": "ISIQRUkBnEc",
+            "title": "Litigation Funding for Commercial Claims in Canada",
+            "author": "CPDonline",
+            "thumbnail_url": "https://i.ytimg.com/vi/ISIQRUkBnEc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ISIQRUkBnEc"
+          },
+          {
+            "video_id": "cBxujqoCcbY",
+            "title": "Introduction to Commercial Litigation Finance",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/cBxujqoCcbY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cBxujqoCcbY"
+          },
+          {
+            "video_id": "5d2yaSz0ius",
+            "title": "Litigation Finance Explained | How It Works, Potential Returns & Risks | Full Webinar",
+            "author": "Turn-Keyinvestments by Richard Lowe",
+            "thumbnail_url": "https://i.ytimg.com/vi/5d2yaSz0ius/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5d2yaSz0ius"
+          },
+          {
+            "video_id": "qdVNgYCTgzU",
+            "title": "Introduction to Commercial Litigation Finance",
+            "author": "The National Law Review",
+            "thumbnail_url": "https://i.ytimg.com/vi/qdVNgYCTgzU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qdVNgYCTgzU"
+          },
+          {
+            "video_id": "Wd7RTVzg5yU",
+            "title": "Litigation Finance & Funding: William C. Marra - Litigator's Corner Interview",
+            "author": "Beverly Hills Bar Association",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wd7RTVzg5yU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wd7RTVzg5yU"
+          },
+          {
+            "video_id": "TEwsEYj6XTI",
+            "title": "How to Reduce B2B Credit Card Processing Fees | Future Forward November 2026",
+            "author": "Insightful Accountant",
+            "thumbnail_url": "https://i.ytimg.com/vi/TEwsEYj6XTI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TEwsEYj6XTI"
+          },
+          {
+            "video_id": "wSWcWyCHkxM",
+            "title": "Virtual Cards: Transforming B2B Payment Processes in 2025",
+            "author": "Facilero",
+            "thumbnail_url": "https://i.ytimg.com/vi/wSWcWyCHkxM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wSWcWyCHkxM"
+          },
+          {
+            "video_id": "EtzXCqqxIWI",
+            "title": "Fintech Referral Program: How to Build an AI Growth Automation Step-by-Step",
+            "author": "Lamar Duffy",
+            "thumbnail_url": "https://i.ytimg.com/vi/EtzXCqqxIWI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EtzXCqqxIWI"
+          },
+          {
+            "video_id": "vPF9bO_izWU",
+            "title": "How B2B Businesses Lower Credit Card Fees (Visa Product 3 Explained)",
+            "author": "Matt Dubois",
+            "thumbnail_url": "https://i.ytimg.com/vi/vPF9bO_izWU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vPF9bO_izWU"
+          },
+          {
+            "video_id": "KJF9HKiAu0Y",
+            "title": "Referrals Aren’t Enough: Ranking The Top 5 Client Channels for Fractional Firms",
+            "author": "Fractional Firm Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/KJF9HKiAu0Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KJF9HKiAu0Y"
+          },
+          {
+            "video_id": "Ja8jXRIkOK4",
+            "title": "How a Fractional CFO Helps Canadian Businesses Scale and Prepare for Sale with Robert Cinapri",
+            "author": "Selling Your Canadian Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ja8jXRIkOK4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ja8jXRIkOK4"
+          },
+          {
+            "video_id": "8p8VFFvdliQ",
+            "title": "Don't Act as a Broker-Dealer",
+            "author": "Trowbridge Law Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/8p8VFFvdliQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8p8VFFvdliQ"
+          },
+          {
+            "video_id": "j_Gp2v7DBzo",
+            "title": "Broker dealer exclusions (NASAA Series 63, 65, 66)",
+            "author": "Achievable",
+            "thumbnail_url": "https://i.ytimg.com/vi/j_Gp2v7DBzo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j_Gp2v7DBzo"
+          },
+          {
+            "video_id": "qptR4ByTPDw",
+            "title": "Form U4 Compliance Obligations Explained | Series 7, SIE & Broker-Dealer Careers",
+            "author": "Financial Regulation Courses",
+            "thumbnail_url": "https://i.ytimg.com/vi/qptR4ByTPDw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qptR4ByTPDw"
+          },
+          {
+            "video_id": "N0Pz-cRD6A4",
+            "title": "[Series 63] S632: Broker-Dealer Exclusions: Agents, Issuers, and Banks Under the Uniform Securiti...",
+            "author": "VoraPrep",
+            "thumbnail_url": "https://i.ytimg.com/vi/N0Pz-cRD6A4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N0Pz-cRD6A4"
+          },
+          {
+            "video_id": "JR8TOdAxFa4",
+            "title": "Projected Investment Returns: 4 Compliance Priorities for Broker-Dealers",
+            "author": "LeGaye Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/JR8TOdAxFa4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JR8TOdAxFa4"
+          },
+          {
+            "video_id": "skWLJwzq_fc",
+            "title": "How To Start a Financial Advisory Business",
+            "author": "Josh Olfert, CFP",
+            "thumbnail_url": "https://i.ytimg.com/vi/skWLJwzq_fc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=skWLJwzq_fc"
+          },
+          {
+            "video_id": "2_gq6XRm47I",
+            "title": "$100M Is Easier to Get Than $10M — Here’s Why | Taber Small",
+            "author": "The Capital Alliance TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/2_gq6XRm47I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2_gq6XRm47I"
+          },
+          {
+            "video_id": "b-6L1d2Ozk4",
+            "title": "How Commercial Real Estate Deals are Funded [The Capital Stack]",
+            "author": "Break Into CRE",
+            "thumbnail_url": "https://i.ytimg.com/vi/b-6L1d2Ozk4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b-6L1d2Ozk4"
+          },
+          {
+            "video_id": "HKB_cwWcRaE",
+            "title": "How to Raise Capital For Your Business | Shark Tank's Kevin O'Leary and Mark Cuban",
+            "author": "Kevin O'Leary",
+            "thumbnail_url": "https://i.ytimg.com/vi/HKB_cwWcRaE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HKB_cwWcRaE"
+          },
+          {
+            "video_id": "MNdDLiTLoNY",
+            "title": "Working Capital Loan vs Revenue-Based Financing: Which One Should I Choose for My Business?",
+            "author": "Unbankable with Alex Shvarts",
+            "thumbnail_url": "https://i.ytimg.com/vi/MNdDLiTLoNY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MNdDLiTLoNY"
+          },
+          {
+            "video_id": "U1zLsMRu1ig",
+            "title": "Revenue-Based Financing: What Is It, and How Does It Work?",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/U1zLsMRu1ig/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U1zLsMRu1ig"
+          },
+          {
+            "video_id": "6tGMlJx13g8",
+            "title": "Revenue-Based Financing Explained (RBF vs Loans vs VC + Red Flags to Avoid)",
+            "author": "Today Capital Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/6tGMlJx13g8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6tGMlJx13g8"
+          },
+          {
+            "video_id": "L3n2zgxag4E",
+            "title": "Revenue Based Financing | Soft Pull | Line of Credit | Up to $100k | Fast Funding",
+            "author": "Business Credit",
+            "thumbnail_url": "https://i.ytimg.com/vi/L3n2zgxag4E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L3n2zgxag4E"
+          },
+          {
+            "video_id": "U0fB6ZY7Cpo",
+            "title": "How Does Revenue Based Financing Work? -- A 6 minute overview of everything you need to know.",
+            "author": "Bootstrapp",
+            "thumbnail_url": "https://i.ytimg.com/vi/U0fB6ZY7Cpo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U0fB6ZY7Cpo"
+          },
+          {
+            "video_id": "GwPGzetluZM",
+            "title": "What Is Working Capital, and How Do I Get a Working Capital Loan?",
+            "author": "Joe Camberato",
+            "thumbnail_url": "https://i.ytimg.com/vi/GwPGzetluZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GwPGzetluZM"
+          },
+          {
+            "video_id": "mXnUmcIc8Ek",
+            "title": "Debt vs Equity vs Revenue-Based Funding: Which Fits Your Business? | EIN Business Funding | EINBF",
+            "author": "Enterprise Industry Network",
+            "thumbnail_url": "https://i.ytimg.com/vi/mXnUmcIc8Ek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mXnUmcIc8Ek"
+          },
+          {
+            "video_id": "e3NbWehFdJs",
+            "title": "How to Get Business Funding & Working Capital - BusinessLoansConnect.com",
+            "author": "Brian M. Hazel Quotes",
+            "thumbnail_url": "https://i.ytimg.com/vi/e3NbWehFdJs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e3NbWehFdJs"
+          },
+          {
+            "video_id": "Yq5OojmQIac",
+            "title": "Revenue-Based Financing: What Lenders Won’t Tell You (Red & Green Flags)",
+            "author": "Zach Siegel",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yq5OojmQIac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yq5OojmQIac"
+          },
+          {
+            "video_id": "ORF9Ue9ge8A",
+            "title": "WARNING Before Taking a Merchant Cash Advance MCA? (Revenue Based Loan or Working Capital Loan)",
+            "author": "Zoryn Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/ORF9Ue9ge8A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ORF9Ue9ge8A"
+          },
+          {
+            "video_id": "C-ZTs-2s2ZQ",
+            "title": "Equipment Sale Lease Back | Working Capital Loan via Equipment Financing Sale LeaseBack",
+            "author": "TheShawnShow50",
+            "thumbnail_url": "https://i.ytimg.com/vi/C-ZTs-2s2ZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C-ZTs-2s2ZQ"
+          },
+          {
+            "video_id": "i0yXJe_x34I",
+            "title": "Business Funding Broker Training Nov 2026: David Allen Capital ISO Updates, Working Capital & Small",
+            "author": "MM BUSINESS SOLUTIONS",
+            "thumbnail_url": "https://i.ytimg.com/vi/i0yXJe_x34I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i0yXJe_x34I"
+          },
+          {
+            "video_id": "PaYgE9PgaO4",
+            "title": "Everything You NEED to Know about Surety Bonds & Subcontractor Default",
+            "author": "Construction Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/PaYgE9PgaO4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PaYgE9PgaO4"
+          },
+          {
+            "video_id": "n___30FL0_I",
+            "title": "Construction Maintenance Surety Bond",
+            "author": "Surety Bonds Direct",
+            "thumbnail_url": "https://i.ytimg.com/vi/n___30FL0_I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=n___30FL0_I"
+          },
+          {
+            "video_id": "ttoT3V6duzU",
+            "title": "How Much Do Contractor License and Construction Surety Bonds Cost?",
+            "author": "Surety Bonds Direct",
+            "thumbnail_url": "https://i.ytimg.com/vi/ttoT3V6duzU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ttoT3V6duzU"
+          },
+          {
+            "video_id": "hk2Jnd50USw",
+            "title": "Commercial Loan Broker Business Plan",
+            "author": "BizPlanComplete",
+            "thumbnail_url": "https://i.ytimg.com/vi/hk2Jnd50USw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hk2Jnd50USw"
+          },
+          {
+            "video_id": "uqs40-CCDSc",
+            "title": "How Much Origination to Charge | CRE Loan Brokering",
+            "author": "John Neufer",
+            "thumbnail_url": "https://i.ytimg.com/vi/uqs40-CCDSc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uqs40-CCDSc"
+          },
+          {
+            "video_id": "4ELMBLT7mvs",
+            "title": "Business Loan Broker Training: Why Lenders Ignore You",
+            "author": "Commercial Loan Broker Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/4ELMBLT7mvs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4ELMBLT7mvs"
+          },
+          {
+            "video_id": "jq-MYGn7i3I",
+            "title": "How To Be A Business Loan Broker | The Basics of Equipment Finance",
+            "author": "ION Capital - Loan Broker University",
+            "thumbnail_url": "https://i.ytimg.com/vi/jq-MYGn7i3I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jq-MYGn7i3I"
+          },
+          {
+            "video_id": "Oq4y-D6sylo",
+            "title": "☑️EliteBroker Training☑️ Equipment Financing Leads Program Breakdown",
+            "author": "Leads For Locals",
+            "thumbnail_url": "https://i.ytimg.com/vi/Oq4y-D6sylo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Oq4y-D6sylo"
+          },
+          {
+            "video_id": "zolXG9LvowA",
+            "title": "Mortgage Loan Officers: The Second Commission Stream Hiding in Your Client List",
+            "author": "Equipment Finance Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/zolXG9LvowA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zolXG9LvowA"
+          },
+          {
+            "video_id": "vIqzq5xwqtA",
+            "title": "Equipment Financing | Learning with Business Finance Glossary",
+            "author": "Biz2Credit",
+            "thumbnail_url": "https://i.ytimg.com/vi/vIqzq5xwqtA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vIqzq5xwqtA"
+          },
+          {
+            "video_id": "CKRM0VWsZBY",
+            "title": "Launch A 6 Figure Equipment Finance Broker Empire",
+            "author": "Cheryl \"The AI Sniper\" Tibbs",
+            "thumbnail_url": "https://i.ytimg.com/vi/CKRM0VWsZBY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CKRM0VWsZBY"
+          },
+          {
+            "video_id": "PPTyFBcPTUw",
+            "title": "F3 M2 5 Pledging & Factoring of Accounts Receivables",
+            "author": "Mar T",
+            "thumbnail_url": "https://i.ytimg.com/vi/PPTyFBcPTUw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PPTyFBcPTUw"
+          },
+          {
+            "video_id": "oobK7A-p9-U",
+            "title": "A Primer on Asset Based Lending (ABL) presented by SG Credit Partners",
+            "author": "Naturally New York",
+            "thumbnail_url": "https://i.ytimg.com/vi/oobK7A-p9-U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oobK7A-p9-U"
+          },
+          {
+            "video_id": "-sIN2gar6BU",
+            "title": "Factoring vs. Secured Borrowing Part 1",
+            "author": "Accounting Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/-sIN2gar6BU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-sIN2gar6BU"
+          },
+          {
+            "video_id": "vtCDACsG2Bs",
+            "title": "Accounts Receivable Factoring Vs Assignment (Transferring Receivables For Cash)",
+            "author": "Allen Mursau",
+            "thumbnail_url": "https://i.ytimg.com/vi/vtCDACsG2Bs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vtCDACsG2Bs"
+          },
+          {
+            "video_id": "u5hujmtiiaY",
+            "title": "Asset Based Lending (ABL) - Business Financing Explained",
+            "author": "FinanceKid",
+            "thumbnail_url": "https://i.ytimg.com/vi/u5hujmtiiaY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u5hujmtiiaY"
+          },
+          {
+            "video_id": "qEKcL_abQ9c",
+            "title": "CMA| Part 1 | Section A | Accounts Receivable Factoring | Letslearn Global",
+            "author": "LetsLearn Global",
+            "thumbnail_url": "https://i.ytimg.com/vi/qEKcL_abQ9c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qEKcL_abQ9c"
+          },
+          {
+            "video_id": "G9RrpSanefM",
+            "title": "Invoice Factoring & Asset Based Lending",
+            "author": "Simon White (SEO, AEO & Digital & Marketing)",
+            "thumbnail_url": "https://i.ytimg.com/vi/G9RrpSanefM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G9RrpSanefM"
+          },
+          {
+            "video_id": "_loCXf6bnl4",
+            "title": "Factoring Receivables with & without recourse",
+            "author": "Katheryn Reynolds",
+            "thumbnail_url": "https://i.ytimg.com/vi/_loCXf6bnl4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_loCXf6bnl4"
+          },
+          {
+            "video_id": "j1xpasTho-0",
+            "title": "Factoring Receivable and Pledging of Receivable",
+            "author": "Farhat Lectures | CPA, CMA, EA & Accounting",
+            "thumbnail_url": "https://i.ytimg.com/vi/j1xpasTho-0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j1xpasTho-0"
           }
         ],
         "research_reference_only": true,
@@ -17180,7 +18426,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 2060 third-party videos (19023 captured tips)",
+        "source": "Spoken content of 2238 third-party videos (20593 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -17196,38 +18442,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 2060,
-    "channel_count": 1362,
-    "total_words": 2912349,
-    "total_hours": 573.66,
-    "total_pro_tips": 19023,
-    "unique_statutes_and_forms": 976,
-    "unique_tools_and_portals": 6031
+    "video_count": 2238,
+    "channel_count": 1478,
+    "total_words": 3111142,
+    "total_hours": 613.47,
+    "total_pro_tips": 20593,
+    "unique_statutes_and_forms": 1032,
+    "unique_tools_and_portals": 6432
   },
   "coverage": {
-    "videos_classified": 2060,
-    "videos_with_multiple_topics": 2058,
-    "tips_classified": 19023,
-    "raw_transcripts_joined": 2060,
+    "videos_classified": 2238,
+    "videos_with_multiple_topics": 2236,
+    "tips_classified": 20593,
+    "raw_transcripts_joined": 2238,
     "topic_video_counts": {
-      "business_model_and_economics": 1575,
-      "probate_and_docket_sourcing": 1449,
-      "unclaimed_property_and_escheat": 592,
-      "genealogy_and_heirship_proof": 1741,
-      "skip_tracing_and_outreach": 1137,
-      "contracts_and_compensation": 1594,
-      "statutory_caps_and_licensing": 1634,
-      "automation_and_small_team_ops": 1616
+      "business_model_and_economics": 1744,
+      "probate_and_docket_sourcing": 1603,
+      "unclaimed_property_and_escheat": 604,
+      "genealogy_and_heirship_proof": 1908,
+      "skip_tracing_and_outreach": 1252,
+      "contracts_and_compensation": 1734,
+      "statutory_caps_and_licensing": 1797,
+      "automation_and_small_team_ops": 1692
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 3469,
-      "probate_and_docket_sourcing": 1998,
-      "unclaimed_property_and_escheat": 1772,
-      "genealogy_and_heirship_proof": 2120,
-      "skip_tracing_and_outreach": 884,
-      "contracts_and_compensation": 2118,
-      "statutory_caps_and_licensing": 1795,
-      "automation_and_small_team_ops": 4867
+      "business_model_and_economics": 3871,
+      "probate_and_docket_sourcing": 2504,
+      "unclaimed_property_and_escheat": 1783,
+      "genealogy_and_heirship_proof": 2396,
+      "skip_tracing_and_outreach": 897,
+      "contracts_and_compensation": 2253,
+      "statutory_caps_and_licensing": 1900,
+      "automation_and_small_team_ops": 4989
     }
   },
   "schema_version": "1.0",
