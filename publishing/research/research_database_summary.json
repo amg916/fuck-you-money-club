@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 3306,
-  "raw_video_count": 3306,
+  "abridged_video_count": 3484,
+  "raw_video_count": 3484,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T22:40:38+00:00",
+      "generated_at": "2026-11-21T22:49:20+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T22:40:38Z",
+  "generated_at": "2026-11-21T22:49:20Z",
   "counts": {
     "topics": 8
   },
@@ -34,10 +34,31 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 2615,
-      "tip_count": 5259,
-      "channel_count": 1755,
+      "video_count": 2775,
+      "tip_count": 5743,
+      "channel_count": 1871,
       "top_sources": [
+        {
+          "video_id": "LKEn47f67vQ",
+          "title": "Contribution Margin: CAC Ratio for eCommerce | Unit Economics",
+          "author": "Eric Andrews Clips",
+          "url": "https://www.youtube.com/watch?v=LKEn47f67vQ",
+          "duration": "00:02:00"
+        },
+        {
+          "video_id": "gG33a-ErNRQ",
+          "title": "Unit Economics Benchmarks for eCommerce | From Idea to Exit",
+          "author": "Eric Andrews",
+          "url": "https://www.youtube.com/watch?v=gG33a-ErNRQ",
+          "duration": "00:18:03"
+        },
+        {
+          "video_id": "8xfPvprL5qE",
+          "title": "How to Calculate eCommerce Contribution Margins",
+          "author": "Eric Andrews",
+          "url": "https://www.youtube.com/watch?v=8xfPvprL5qE",
+          "duration": "00:13:40"
+        },
         {
           "video_id": "p4KgISWaH6s",
           "title": "What is SaaS Revenue Recognition?",
@@ -60,39 +81,18 @@
           "duration": "00:19:07"
         },
         {
+          "video_id": "e5r7-KT6mQ0",
+          "title": "Ecommerce Contribution Margin Explained",
+          "author": "LedgerGurus: Ecommerce Accounting Experts",
+          "url": "https://www.youtube.com/watch?v=e5r7-KT6mQ0",
+          "duration": "00:03:42"
+        },
+        {
           "video_id": "7IqQXBLa14Y",
           "title": "Revenue Recognition ASC 606 & IFRS 15 — 5-Step Quality Test with AI ⭐ mnainstitute.com",
           "author": "[mnainstitute.com] M&A Certification & Courses",
           "url": "https://www.youtube.com/watch?v=7IqQXBLa14Y",
           "duration": "00:06:49"
-        },
-        {
-          "video_id": "YOYPAYz4iOc",
-          "title": "The Best B2B SaaS Demand Gen Agencies for Pipeline (Not Leads) (2026)",
-          "author": "GrowthSpree - AI Native B2B Marketing Agency",
-          "url": "https://www.youtube.com/watch?v=YOYPAYz4iOc",
-          "duration": "00:04:27"
-        },
-        {
-          "video_id": "Qxj-ooX7WrE",
-          "title": "NetSuite Advanced Revenue Management (ARM) demo | ASC 606 overview for NetSuite users",
-          "author": "RSM US LLP",
-          "url": "https://www.youtube.com/watch?v=Qxj-ooX7WrE",
-          "duration": "00:17:18"
-        },
-        {
-          "video_id": "Ju9H1oq7CM8",
-          "title": "The Economics of Owning a SaaS Company",
-          "author": "Business Mechanics",
-          "url": "https://www.youtube.com/watch?v=Ju9H1oq7CM8",
-          "duration": "00:17:13"
-        },
-        {
-          "video_id": "Va5USDqv3-A",
-          "title": "What Number Do I Multiply? SDE, EBIT, EBITDA?",
-          "author": "David C Barnett Small Business and Deal Making SMB",
-          "url": "https://www.youtube.com/watch?v=Va5USDqv3-A",
-          "duration": "00:16:44"
         }
       ],
       "top_timestamped_insights": [
@@ -194,40 +194,40 @@
         "form for",
         "form to",
         "form is",
-        "form or",
         "form the",
+        "form or",
         "form you",
         "form a",
-        "form so",
-        "form in",
-        "form like",
         "form on",
-        "form where",
+        "form in",
+        "form so",
         "form with",
         "form your",
+        "form like",
+        "form where",
         "court order",
         "form as",
         "form if",
+        "form at",
         "form it",
         "letters of administration",
-        "form at",
         "form content",
         "form I",
-        "form uh",
         "form their",
+        "form uh",
         "form um",
         "form which",
         "form called",
         "form below",
         "Chapter 7",
+        "form an",
         "form here",
-        "Protection Act",
         "form right",
-        "form they",
-        "form because",
-        "form builder",
+        "Protection Act",
         "form but",
-        "form we"
+        "form they",
+        "form we",
+        "form because"
       ],
       "tools_and_portals": [
         "Google",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 2492,
-      "tip_count": 5459,
-      "channel_count": 1581,
+      "video_count": 2614,
+      "tip_count": 5619,
+      "channel_count": 1670,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -392,6 +392,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Say you order $10,000 of plastic storage bins from a factory in China. To bring them into the country, you'll pay U.S. Customs about…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=-WXoF_u08g0&t=0s",
+          "video_title": "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's Guide for Beginner",
+          "author": "Trade Counsel",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Know exactly what to do. If your land fails a percolation test, which it hopefully won't. Okay, let's go into it. So the first…",
           "category": "Insider Tactic",
           "timestamp": "00:00:57",
@@ -417,15 +426,6 @@
           "video_title": "AskAVC #2 - SaaS Churn: what is it?",
           "author": "Ask a VC",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It's a list that every county has where they keep track of who is delinquent on their taxes. And this is different from the…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:17:10",
-          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=1030s",
-          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
-          "author": "REtipster",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -442,33 +442,33 @@
         "court order",
         "form on",
         "form your",
-        "form below",
         "form in",
+        "form below",
         "form with",
+        "form where",
+        "form like",
         "form so",
         "letters of administration",
-        "form like",
-        "form where",
+        "form their",
         "Chapter 7",
         "form it",
-        "form their",
         "form Commercial",
+        "form if",
         "Form uh",
         "protection act",
         "Chapter 13",
         "form as",
-        "form if",
+        "form at",
         "form I",
         "form we",
         "letters testamentary",
         "property Act",
-        "form at",
         "form um",
         "form which",
         "form but",
         "form here",
         "form an",
-        "form our"
+        "form will"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 741,
+      "video_count": 762,
       "tip_count": 1821,
-      "channel_count": 479,
+      "channel_count": 499,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,40 +676,40 @@
         "form below",
         "form to",
         "Form is",
-        "form you",
         "form for",
+        "form you",
         "form or",
         "form the",
         "form a",
-        "form on",
         "form with",
+        "form on",
         "Form uh",
         "form we",
         "form your",
         "form but",
+        "form in",
         "form so",
         "Property Act",
         "form if",
-        "form in",
         "form it",
         "form our",
+        "form where",
         "form them",
         "form this",
         "form um",
-        "form where",
         "court order",
+        "form like",
         "form today",
         "form which",
         "affidavit of heirship",
         "form as",
+        "form at",
         "form because",
         "form due",
         "form from",
         "form I",
-        "form like",
         "letters of administration",
-        "Chapter 7",
-        "form acts"
+        "Chapter 7"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 2670,
-      "tip_count": 3112,
-      "channel_count": 1774,
+      "video_count": 2823,
+      "tip_count": 3379,
+      "channel_count": 1879,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -914,43 +914,43 @@
         "form and",
         "form of",
         "form that",
-        "form to",
         "form for",
+        "form to",
         "form is",
         "form the",
         "form or",
         "form you",
         "form a",
-        "form so",
         "form your",
-        "form with",
         "form on",
-        "form like",
+        "form so",
+        "form with",
         "form in",
+        "form like",
         "form where",
         "form below",
         "form as",
         "form at",
+        "form if",
         "form it",
         "form I",
-        "form if",
         "form content",
-        "form which",
         "form their",
-        "court order",
+        "form which",
         "form called",
-        "form Commercial",
         "Form uh",
+        "court order",
+        "form Commercial",
         "form um",
         "form here",
         "form they",
+        "form we",
         "letters of administration",
         "property Act",
         "Protection Act",
-        "form we",
-        "form builder",
         "form right",
-        "Chapter 13"
+        "form will",
+        "form an"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1875,
-      "tip_count": 1114,
-      "channel_count": 1250,
+      "video_count": 1965,
+      "tip_count": 1129,
+      "channel_count": 1314,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1155,43 +1155,43 @@
         "form and",
         "form of",
         "form that",
-        "form to",
         "form for",
+        "form to",
         "form or",
-        "form you",
         "form is",
         "form the",
+        "form you",
         "form a",
         "form your",
         "form like",
         "form on",
         "form where",
         "form with",
-        "form so",
         "form in",
+        "form so",
         "court order",
         "form as",
         "Protection Act",
+        "form at",
         "form below",
+        "form their",
         "Form uh",
         "form um",
-        "form at",
         "form content",
-        "form which",
         "form if",
-        "form their",
+        "form which",
+        "form called",
         "form Commercial",
         "form I",
         "form it",
-        "form called",
+        "form but",
         "form here",
         "Chapter 7",
-        "form but",
-        "Chapter 13",
         "form right",
+        "Chapter 13",
         "form they",
         "form because",
-        "Copyright Act"
+        "form can"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 2654,
-      "tip_count": 4182,
-      "channel_count": 1727,
+      "video_count": 2776,
+      "tip_count": 4389,
+      "channel_count": 1816,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1403,8 +1403,8 @@
         "form or",
         "form you",
         "form a",
-        "form with",
         "form on",
+        "form with",
         "form like",
         "form your",
         "form so",
@@ -1416,8 +1416,8 @@
         "form at",
         "letters of administration",
         "form it",
-        "form I",
         "form their",
+        "form I",
         "Form uh",
         "Chapter 7",
         "form content",
@@ -1428,8 +1428,8 @@
         "Protection Act",
         "form Commercial",
         "form here",
-        "Chapter 13",
         "form we",
+        "Chapter 13",
         "letters testamentary",
         "property Act",
         "form they"
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 2770,
-      "tip_count": 2990,
-      "channel_count": 1761,
+      "video_count": 2909,
+      "tip_count": 3063,
+      "channel_count": 1861,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1634,11 +1634,11 @@
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form of",
         "form that",
-        "form to",
         "form for",
+        "form to",
         "form is",
         "form the",
         "form or",
@@ -1646,34 +1646,34 @@
         "form a",
         "form on",
         "form your",
-        "court order",
         "form in",
-        "form so",
         "form with",
-        "form below",
+        "court order",
+        "form so",
         "form where",
+        "form below",
         "form like",
         "letters of administration",
+        "form their",
         "Form uh",
         "form it",
-        "form their",
         "Chapter 7",
         "form as",
+        "form at",
         "form I",
         "Protection Act",
         "form Commercial",
-        "form at",
         "form if",
         "form um",
         "Chapter 13",
         "form we",
+        "form which",
         "letters testamentary",
         "property Act",
-        "form which",
+        "form an",
         "form but",
         "form here",
-        "form an",
-        "form because"
+        "form called"
       ],
       "tools_and_portals": [
         "Google",
@@ -1685,8 +1685,8 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "FamilySearch",
         "Bing",
+        "FamilySearch",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "https://www.govconwinners.com/",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2440,
-      "tip_count": 6429,
-      "channel_count": 1637,
+      "video_count": 2570,
+      "tip_count": 6840,
+      "channel_count": 1734,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1856,21 +1856,21 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "This two will come out to be fifteen thousand so this is your accounts receivables turnover and the receivables days outstanding will be 365…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:09:53",
+          "link": "https://www.youtube.com/watch?v=Sw24t4Xzk0I&t=593s",
+          "video_title": "Cash Conversion Cycle - Meaning, Formula, Calculation & Interpretations",
+          "author": "WallStreetMojo",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "For if they're on thumbtack and I know they're not exclusive leads so you know ours are gonna be exclusive they're better I want…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:14:26",
           "link": "https://www.youtube.com/watch?v=cSXYPhrwhwo&t=866s",
           "video_title": "How To Sell leads To Local Businesses (Rank And Rent Method)",
           "author": "Digital Real Estate Secrets",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It understands how to get to that next page. So what we would do is click this locate next button. We're going to scroll…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:08:34",
-          "link": "https://www.youtube.com/watch?v=rYCHQ59jzhY&t=514s",
-          "video_title": "How to Use Redfin and LandWatch to Determine Land Values",
-          "author": "REtipster",
           "verbatim_research_only": true
         }
       ],
@@ -1885,8 +1885,8 @@
         "form or",
         "form you",
         "form a",
-        "form so",
         "form with",
+        "form so",
         "form on",
         "form where",
         "form your",
@@ -1903,18 +1903,18 @@
         "Form uh",
         "form at",
         "form I",
-        "form um",
         "form we",
-        "Chapter 7",
-        "form because",
+        "form um",
         "form but",
+        "Chapter 7",
         "form called",
+        "form because",
         "form here",
         "form their",
         "form this",
         "letters testamentary",
-        "form builder",
-        "Protection Act"
+        "form better",
+        "form builder"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1755,
-      "video_count": 2615,
-      "corroborating_tip_count": 5259,
+      "channel_count": 1871,
+      "video_count": 2775,
+      "corroborating_tip_count": 5743,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1581,
-      "video_count": 2492,
-      "corroborating_tip_count": 5459,
+      "channel_count": 1670,
+      "video_count": 2614,
+      "corroborating_tip_count": 5619,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 479,
-      "video_count": 741,
+      "channel_count": 499,
+      "video_count": 762,
       "corroborating_tip_count": 1821,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1774,
-      "video_count": 2670,
-      "corroborating_tip_count": 3112,
+      "channel_count": 1879,
+      "video_count": 2823,
+      "corroborating_tip_count": 3379,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1250,
-      "video_count": 1875,
-      "corroborating_tip_count": 1114,
+      "channel_count": 1314,
+      "video_count": 1965,
+      "corroborating_tip_count": 1129,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1727,
-      "video_count": 2654,
-      "corroborating_tip_count": 4182,
+      "channel_count": 1816,
+      "video_count": 2776,
+      "corroborating_tip_count": 4389,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1761,
-      "video_count": 2770,
-      "corroborating_tip_count": 2990,
+      "channel_count": 1861,
+      "video_count": 2909,
+      "corroborating_tip_count": 3063,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1637,
-      "video_count": 2440,
-      "corroborating_tip_count": 6429,
+      "channel_count": 1734,
+      "video_count": 2570,
+      "corroborating_tip_count": 6840,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 3306 corpus videos",
-        "instance_count": 3306,
+        "source": "YouTube CDN thumbnails for the 3484 corpus videos",
+        "instance_count": 3484,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -25890,6 +25890,1252 @@
             "author": "GovKidMethod",
             "thumbnail_url": "https://i.ytimg.com/vi/wot0JsK9qCc/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=wot0JsK9qCc"
+          },
+          {
+            "video_id": "etEhM2kyodk",
+            "title": "What Happens After You Click Buy? | Inside 3PL with Radial",
+            "author": "WorkflowLife",
+            "thumbnail_url": "https://i.ytimg.com/vi/etEhM2kyodk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=etEhM2kyodk"
+          },
+          {
+            "video_id": "eRxb-KV0R4E",
+            "title": "How Shopify & TikTok Shop Clothing Brands Ship Thousands of Orders Daily | Inside an Apparel 3PL",
+            "author": "ShipSage",
+            "thumbnail_url": "https://i.ytimg.com/vi/eRxb-KV0R4E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eRxb-KV0R4E"
+          },
+          {
+            "video_id": "8R8um_CLrWI",
+            "title": "How to Automate E-Commerce Fulfillment: Best US 3PL Partners for 2-Day Shipping 2026",
+            "author": "Smart Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/8R8um_CLrWI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8R8um_CLrWI"
+          },
+          {
+            "video_id": "7Xr-2wI5LJo",
+            "title": "How a 3PL Onboards New Clients",
+            "author": "Einstein Fulfillment",
+            "thumbnail_url": "https://i.ytimg.com/vi/7Xr-2wI5LJo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7Xr-2wI5LJo"
+          },
+          {
+            "video_id": "i9PB8pM9lZ4",
+            "title": "3PL Fulfillment Built for Scaling Brands | CTL",
+            "author": "CTLGlobalSolutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/i9PB8pM9lZ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i9PB8pM9lZ4"
+          },
+          {
+            "video_id": "SeloMfYsYk0",
+            "title": "What Is 3PL Logistics? The Hidden System Powering E-Commerce #3plservices #fulfillment",
+            "author": "Monopoly",
+            "thumbnail_url": "https://i.ytimg.com/vi/SeloMfYsYk0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SeloMfYsYk0"
+          },
+          {
+            "video_id": "088tKYu7kKY",
+            "title": "Ecommerce Shipping and Fulfillment: A Complete Guide",
+            "author": "Learn With Shopify",
+            "thumbnail_url": "https://i.ytimg.com/vi/088tKYu7kKY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=088tKYu7kKY"
+          },
+          {
+            "video_id": "VD9O6JRw54A",
+            "title": "3PL Explained: Real Warehouse Walkthrough (For Shopify Brands)",
+            "author": "Perseuss LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/VD9O6JRw54A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VD9O6JRw54A"
+          },
+          {
+            "video_id": "CVklpdSeqOA",
+            "title": "E-Commerce Fulfillment | When You Outgrow Your Warehouse | 3PL Updates in US | ShipSage",
+            "author": "ShipSage",
+            "thumbnail_url": "https://i.ytimg.com/vi/CVklpdSeqOA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CVklpdSeqOA"
+          },
+          {
+            "video_id": "zldfAGyfsfA",
+            "title": "How Ecommerce Fulfillment Works | Behind-The-Scenes of Order Fulfillment",
+            "author": "ShipBob",
+            "thumbnail_url": "https://i.ytimg.com/vi/zldfAGyfsfA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zldfAGyfsfA"
+          },
+          {
+            "video_id": "kjk-aLs-t1g",
+            "title": "Shopify orders in NetSuite with 3PL fulfillment",
+            "author": "Novutech",
+            "thumbnail_url": "https://i.ytimg.com/vi/kjk-aLs-t1g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kjk-aLs-t1g"
+          },
+          {
+            "video_id": "5jY7d_1m1t0",
+            "title": "How Much Money Can You Actually Make High Ticket Dropshipping? [2027]",
+            "author": "Joe Verschoor",
+            "thumbnail_url": "https://i.ytimg.com/vi/5jY7d_1m1t0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5jY7d_1m1t0"
+          },
+          {
+            "video_id": "ic0HLQbBhQA",
+            "title": "What is an Authorized Dealer? High Ticket Dropshipping",
+            "author": "Marcus Lam | High Ticket Dropshipping (AI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/ic0HLQbBhQA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ic0HLQbBhQA"
+          },
+          {
+            "video_id": "D6kFUv6fy_4",
+            "title": "What Is High-Ticket Dropshipping?",
+            "author": "Anton Kraly - Drop Ship Lifestyle",
+            "thumbnail_url": "https://i.ytimg.com/vi/D6kFUv6fy_4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D6kFUv6fy_4"
+          },
+          {
+            "video_id": "Mf4bZiQ2-Fc",
+            "title": "how i find dropshipping products that sell for $6,135.12 each (the opposite of what gurus tell you)",
+            "author": "built with ali",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mf4bZiQ2-Fc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mf4bZiQ2-Fc"
+          },
+          {
+            "video_id": "YHmvKbjg81E",
+            "title": "how i did $8.3m in sales with high ticket dropshipping",
+            "author": "Natan",
+            "thumbnail_url": "https://i.ytimg.com/vi/YHmvKbjg81E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YHmvKbjg81E"
+          },
+          {
+            "video_id": "wy_uAK2tMS0",
+            "title": "High-Ticket Dropshipping Explained",
+            "author": "Peak Flow Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/wy_uAK2tMS0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wy_uAK2tMS0"
+          },
+          {
+            "video_id": "hHXf1_WdANY",
+            "title": "How to Find USA High-Ticket Dropshipping Suppliers in 2026",
+            "author": "Ecommerce Paradise | High Ticket Dropshipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/hHXf1_WdANY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hHXf1_WdANY"
+          },
+          {
+            "video_id": "g_OL9gG7q_I",
+            "title": "How to Find USA Suppliers for High Ticket Dropshipping",
+            "author": "Marcus Lam | High Ticket Dropshipping (AI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/g_OL9gG7q_I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g_OL9gG7q_I"
+          },
+          {
+            "video_id": "uxvzRhKmdXU",
+            "title": "How to Choose a High Ticket Dropshipping Niche in 2026",
+            "author": "Joe Verschoor",
+            "thumbnail_url": "https://i.ytimg.com/vi/uxvzRhKmdXU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uxvzRhKmdXU"
+          },
+          {
+            "video_id": "xJp0s6G8Hew",
+            "title": "High Ticket Product Research & USA Based Wholesale Dropshipping Suppliers",
+            "author": "WatchMeDropship",
+            "thumbnail_url": "https://i.ytimg.com/vi/xJp0s6G8Hew/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xJp0s6G8Hew"
+          },
+          {
+            "video_id": "ocjVuvj0QJg",
+            "title": "High Ticket Dropshipping Suppliers with No Price Lists - What to Do",
+            "author": "Build Assets Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/ocjVuvj0QJg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ocjVuvj0QJg"
+          },
+          {
+            "video_id": "EaAeDMJIPLQ",
+            "title": "What Is High Ticket Dropshipping? Complete Beginner Guide (2026)",
+            "author": "Ecommerce Paradise | High Ticket Dropshipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/EaAeDMJIPLQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EaAeDMJIPLQ"
+          },
+          {
+            "video_id": "r2ydHddjtIw",
+            "title": "How to Dropship as an Authorized Dealer in 2026 | High Ticket Dropshipping",
+            "author": "Marcus Lam | High Ticket Dropshipping (AI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/r2ydHddjtIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r2ydHddjtIw"
+          },
+          {
+            "video_id": "cBdVAQxml6U",
+            "title": "B2B High Ticket Dropshipping Explained",
+            "author": "Brook Hiddink",
+            "thumbnail_url": "https://i.ytimg.com/vi/cBdVAQxml6U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cBdVAQxml6U"
+          },
+          {
+            "video_id": "v64Z-O_YyTY",
+            "title": "How To ACTUALLY Find Shopify Dropshipping Suppliers (USA High Ticket Suppliers)",
+            "author": "Trevor Zheng | High Ticket Dropshipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/v64Z-O_YyTY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v64Z-O_YyTY"
+          },
+          {
+            "video_id": "e5r7-KT6mQ0",
+            "title": "Ecommerce Contribution Margin Explained",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/e5r7-KT6mQ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e5r7-KT6mQ0"
+          },
+          {
+            "video_id": "LKEn47f67vQ",
+            "title": "Contribution Margin: CAC Ratio for eCommerce | Unit Economics",
+            "author": "Eric Andrews Clips",
+            "thumbnail_url": "https://i.ytimg.com/vi/LKEn47f67vQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LKEn47f67vQ"
+          },
+          {
+            "video_id": "8xfPvprL5qE",
+            "title": "How to Calculate eCommerce Contribution Margins",
+            "author": "Eric Andrews",
+            "thumbnail_url": "https://i.ytimg.com/vi/8xfPvprL5qE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8xfPvprL5qE"
+          },
+          {
+            "video_id": "tj2W9oEqeQo",
+            "title": "Master Contribution Margins for eCommerce",
+            "author": "Eric Andrews Clips",
+            "thumbnail_url": "https://i.ytimg.com/vi/tj2W9oEqeQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tj2W9oEqeQo"
+          },
+          {
+            "video_id": "eTADhJ3N_oo",
+            "title": "unit economics for ecom explained (boring as hell, but prints $$$)",
+            "author": "Mark Builds Brands Highlights",
+            "thumbnail_url": "https://i.ytimg.com/vi/eTADhJ3N_oo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eTADhJ3N_oo"
+          },
+          {
+            "video_id": "NXZLkZ_Gfuk",
+            "title": "Dimensional Weight: How You Are Overpaying For Shipping Selling On Amazon & Shopify",
+            "author": "Racklify",
+            "thumbnail_url": "https://i.ytimg.com/vi/NXZLkZ_Gfuk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NXZLkZ_Gfuk"
+          },
+          {
+            "video_id": "8I51jDAoe-E",
+            "title": "How to Work Out Landed Cost for a Shipment Into Dubai",
+            "author": "Witners Shipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/8I51jDAoe-E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8I51jDAoe-E"
+          },
+          {
+            "video_id": "eZY2MYqExrQ",
+            "title": "A Message On New Tariffs And De Minimis (Section 321)",
+            "author": "Stord",
+            "thumbnail_url": "https://i.ytimg.com/vi/eZY2MYqExrQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eZY2MYqExrQ"
+          },
+          {
+            "video_id": "DLfvskykJiY",
+            "title": "How Do I Calculate The Landed Cost Of Imported Goods Into The USA?",
+            "author": "US Customs Clearing",
+            "thumbnail_url": "https://i.ytimg.com/vi/DLfvskykJiY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DLfvskykJiY"
+          },
+          {
+            "video_id": "IrCCfr1mSvg",
+            "title": "Duties, Tariffs and Taxes: Understanding the Costs of International Trade",
+            "author": "Shipping Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/IrCCfr1mSvg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IrCCfr1mSvg"
+          },
+          {
+            "video_id": "CvHvBnjwlJg",
+            "title": "Landed Cost Calculation Explained",
+            "author": "Intel by CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/CvHvBnjwlJg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CvHvBnjwlJg"
+          },
+          {
+            "video_id": "ebKN15qGOxo",
+            "title": "World Class Free Landed Cost Program that auto-updates currencies, duties, tariffs, etc.",
+            "author": "ICandT",
+            "thumbnail_url": "https://i.ytimg.com/vi/ebKN15qGOxo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ebKN15qGOxo"
+          },
+          {
+            "video_id": "3iYfv5mrDBE",
+            "title": "Calculating Landed Costs for Imported Goods",
+            "author": "ISF Expedite",
+            "thumbnail_url": "https://i.ytimg.com/vi/3iYfv5mrDBE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3iYfv5mrDBE"
+          },
+          {
+            "video_id": "DFZ8XDRkuCE",
+            "title": "Jewelry Landed Cost: Duty, Sets and True Margin, from PO to Sale",
+            "author": "SKUio",
+            "thumbnail_url": "https://i.ytimg.com/vi/DFZ8XDRkuCE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DFZ8XDRkuCE"
+          },
+          {
+            "video_id": "LBisYGOUrx0",
+            "title": "Calculating Landed Cost for Exported and Imported Goods",
+            "author": "New York SBDC",
+            "thumbnail_url": "https://i.ytimg.com/vi/LBisYGOUrx0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LBisYGOUrx0"
+          },
+          {
+            "video_id": "007vdtJ5XrY",
+            "title": "Build a Landed-Cost Estimate: A Canadian Import Example",
+            "author": "RRA Group | Freight Forwarding & Logistics",
+            "thumbnail_url": "https://i.ytimg.com/vi/007vdtJ5XrY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=007vdtJ5XrY"
+          },
+          {
+            "video_id": "nm9aWWMYnEg",
+            "title": "How to Find Amazon Wholesale and Brand Suppliers That Actually Make You Money Faster",
+            "author": "Pedro Bermudez",
+            "thumbnail_url": "https://i.ytimg.com/vi/nm9aWWMYnEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nm9aWWMYnEg"
+          },
+          {
+            "video_id": "jYFh4ucNZuw",
+            "title": "The Truth About Distributors vs Brand Direct (Amazon Wholesale)",
+            "author": "Daniel Boufford",
+            "thumbnail_url": "https://i.ytimg.com/vi/jYFh4ucNZuw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jYFh4ucNZuw"
+          },
+          {
+            "video_id": "HqGwAnGaUf8",
+            "title": "How to contact brands and distributors for your Amazon wholesale business!",
+            "author": "I Am David Scheuer",
+            "thumbnail_url": "https://i.ytimg.com/vi/HqGwAnGaUf8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HqGwAnGaUf8"
+          },
+          {
+            "video_id": "KImeudrcJTU",
+            "title": "How To Find Amazon Wholesale Suppliers In 5 Minutes",
+            "author": "William Rivera",
+            "thumbnail_url": "https://i.ytimg.com/vi/KImeudrcJTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KImeudrcJTU"
+          },
+          {
+            "video_id": "fOjBryou0Do",
+            "title": "Talking to Wholesale Distributors for Amazon FBA (LIVE Call) | Road to $1M",
+            "author": "Strictly Commerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/fOjBryou0Do/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fOjBryou0Do"
+          },
+          {
+            "video_id": "fHLUiiiopmw",
+            "title": "Amazon Wholesale || How To Find Wholesale Suppliers For Amazon FBA",
+            "author": "Marvin",
+            "thumbnail_url": "https://i.ytimg.com/vi/fHLUiiiopmw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fHLUiiiopmw"
+          },
+          {
+            "video_id": "1lcG6ji-5ls",
+            "title": "How to Find Amazon Wholesale Suppliers That Actually Make You Money | Third-Party Profits Tutorial",
+            "author": "Third-Party Profits",
+            "thumbnail_url": "https://i.ytimg.com/vi/1lcG6ji-5ls/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1lcG6ji-5ls"
+          },
+          {
+            "video_id": "G9hSjTySxP0",
+            "title": "How to Contact Amazon FBA Wholesale Suppliers in 30 minutes",
+            "author": "Brad Sherman | OperationAMZ",
+            "thumbnail_url": "https://i.ytimg.com/vi/G9hSjTySxP0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G9hSjTySxP0"
+          },
+          {
+            "video_id": "3VDc8PoFZa8",
+            "title": "How to update Shopify returns with Loop Returns - Step By Step",
+            "author": "GuidePixel",
+            "thumbnail_url": "https://i.ytimg.com/vi/3VDc8PoFZa8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3VDc8PoFZa8"
+          },
+          {
+            "video_id": "JzyBmddGOms",
+            "title": "Shopify Returns Management App Demo | Automate Returns & Exchanges in 2 Minutes",
+            "author": "Returndotai",
+            "thumbnail_url": "https://i.ytimg.com/vi/JzyBmddGOms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JzyBmddGOms"
+          },
+          {
+            "video_id": "X3G7DDq6KD8",
+            "title": "Loop Returns Dropshipping Honest Review - Watch Before Using",
+            "author": "Wise Explainer",
+            "thumbnail_url": "https://i.ytimg.com/vi/X3G7DDq6KD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=X3G7DDq6KD8"
+          },
+          {
+            "video_id": "7GY4PPBU0GY",
+            "title": "How To Handle Returns & Refunds on Shopify | 2026 Shipping Tutorial",
+            "author": "ZIK Analytics",
+            "thumbnail_url": "https://i.ytimg.com/vi/7GY4PPBU0GY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7GY4PPBU0GY"
+          },
+          {
+            "video_id": "GYROU1C9Mks",
+            "title": "How to Deal With Refunds & Returns (Shopify Dropshipping)",
+            "author": "Dean Alma",
+            "thumbnail_url": "https://i.ytimg.com/vi/GYROU1C9Mks/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GYROU1C9Mks"
+          },
+          {
+            "video_id": "B2xFNVqbu7c",
+            "title": "How To Handle Shopify Refunds And Returns 2026 (For Beginners)",
+            "author": "Tutorials by Manizha & Ryan",
+            "thumbnail_url": "https://i.ytimg.com/vi/B2xFNVqbu7c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B2xFNVqbu7c"
+          },
+          {
+            "video_id": "YnEcCYA-UDs",
+            "title": "How to Handle Shopify Refunds and Returns (Step-by-Step)",
+            "author": "Tutorial Stack",
+            "thumbnail_url": "https://i.ytimg.com/vi/YnEcCYA-UDs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YnEcCYA-UDs"
+          },
+          {
+            "video_id": "daoVeRnScfo",
+            "title": "How To Use Shopify Self-Serve Returns - Shopify Tutorial",
+            "author": "Sunrise Integration",
+            "thumbnail_url": "https://i.ytimg.com/vi/daoVeRnScfo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=daoVeRnScfo"
+          },
+          {
+            "video_id": "EjZsqaOIDsc",
+            "title": "How to Handle Shopify Dropshipping Returns, Refunds, and Return Policies.",
+            "author": "Shopify Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/EjZsqaOIDsc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EjZsqaOIDsc"
+          },
+          {
+            "video_id": "ZXDpWj-RfOQ",
+            "title": "Loop Returns Pre-order Integration for Shopify",
+            "author": "PreProduct",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZXDpWj-RfOQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZXDpWj-RfOQ"
+          },
+          {
+            "video_id": "rhATJAycfEU",
+            "title": "DEALING WITH SHOPIFY REFUNDS & CHARGEBACKS (Day 27/30) #Bizathon3",
+            "author": "Flying Start Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/rhATJAycfEU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rhATJAycfEU"
+          },
+          {
+            "video_id": "XED26wvEepA",
+            "title": "How to Deal with Shopify Chargebacks, Refunds, and Returns | Dropshipping Beginner Mistakes in Ecom",
+            "author": "Anatoliy Labinskiy | E-com business encyclopedia",
+            "thumbnail_url": "https://i.ytimg.com/vi/XED26wvEepA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XED26wvEepA"
+          },
+          {
+            "video_id": "EtT3YoVfP0c",
+            "title": "Webinar: Ecommerce Sales Tax Basics for Growing Sellers",
+            "author": "Avalara",
+            "thumbnail_url": "https://i.ytimg.com/vi/EtT3YoVfP0c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EtT3YoVfP0c"
+          },
+          {
+            "video_id": "5Dtw2cworM0",
+            "title": "Avalara? TaxJar? TaxCloud? The Honest Comparison for Ecommerce",
+            "author": "Sales Tax at Scale",
+            "thumbnail_url": "https://i.ytimg.com/vi/5Dtw2cworM0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5Dtw2cworM0"
+          },
+          {
+            "video_id": "HbiniE5ODzI",
+            "title": "Numeral vs TaxJar vs Avalara - Best US Sales Tax Platform for Canadians",
+            "author": "SAL Accounting CPA",
+            "thumbnail_url": "https://i.ytimg.com/vi/HbiniE5ODzI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HbiniE5ODzI"
+          },
+          {
+            "video_id": "-DhtTN5_Rh4",
+            "title": "Avalara? TaxJar? Taxify? BEST SALES TAX APP for Ecommerce",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/-DhtTN5_Rh4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-DhtTN5_Rh4"
+          },
+          {
+            "video_id": "rUvJ4UwGqiA",
+            "title": "Sales & Use Tax: eCommerce Nexus",
+            "author": "Cherry Bekaert",
+            "thumbnail_url": "https://i.ytimg.com/vi/rUvJ4UwGqiA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rUvJ4UwGqiA"
+          },
+          {
+            "video_id": "QiT660QtcXA",
+            "title": "Tax 101: Does my online marketplace collect sales tax for me?",
+            "author": "Avalara",
+            "thumbnail_url": "https://i.ytimg.com/vi/QiT660QtcXA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QiT660QtcXA"
+          },
+          {
+            "video_id": "RRnAKNi_DBU",
+            "title": "Avalara AvaTax Demo",
+            "author": "Avalara",
+            "thumbnail_url": "https://i.ytimg.com/vi/RRnAKNi_DBU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RRnAKNi_DBU"
+          },
+          {
+            "video_id": "8zfPSv7hAWM",
+            "title": "Avalara TaxJar Taxify | Sales Tax Solutions for Ecommerce Sellers",
+            "author": "Acuity Ecommerce Accounting",
+            "thumbnail_url": "https://i.ytimg.com/vi/8zfPSv7hAWM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8zfPSv7hAWM"
+          },
+          {
+            "video_id": "1Cr_iHc8p4s",
+            "title": "Ecommerce Sales Tax MADE EASY (TaxJar Setup)",
+            "author": "Arthur Glinkin",
+            "thumbnail_url": "https://i.ytimg.com/vi/1Cr_iHc8p4s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1Cr_iHc8p4s"
+          },
+          {
+            "video_id": "SgxDnkPR36U",
+            "title": "Online Sales Tax: A Guide to Economic Nexus & Ecommerce",
+            "author": "Tyler",
+            "thumbnail_url": "https://i.ytimg.com/vi/SgxDnkPR36U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SgxDnkPR36U"
+          },
+          {
+            "video_id": "jmsERJHMp_0",
+            "title": "Don't Get Crushed by Ecom Sales Tax! Learn the Wayfair Secret to Survival",
+            "author": "Ryan McKenzie",
+            "thumbnail_url": "https://i.ytimg.com/vi/jmsERJHMp_0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jmsERJHMp_0"
+          },
+          {
+            "video_id": "1L7s6llWlRo",
+            "title": "2020 Sales Tax Apps for Online Sellers | Avalara, Taxjar, and Taxify",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/1L7s6llWlRo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1L7s6llWlRo"
+          },
+          {
+            "video_id": "6joO-M0xN0k",
+            "title": "🚀 Optimiza Tu Feed en Google Merchant Center | Guía Completa para Más Ventas 💰",
+            "author": "Carles Fos",
+            "thumbnail_url": "https://i.ytimg.com/vi/6joO-M0xN0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6joO-M0xN0k"
+          },
+          {
+            "video_id": "hY8ZBC3A4uQ",
+            "title": "Google Shopping Feed Optimizations for 10X Growth (2026 Updated)",
+            "author": "Grow My Ads",
+            "thumbnail_url": "https://i.ytimg.com/vi/hY8ZBC3A4uQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hY8ZBC3A4uQ"
+          },
+          {
+            "video_id": "jmjy6G9akyM",
+            "title": "How to Run Promotions in Merchant Center for Google Shopping",
+            "author": "KeyCommerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/jmjy6G9akyM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jmjy6G9akyM"
+          },
+          {
+            "video_id": "S1NhYxaPnic",
+            "title": "How To Optimize Your Product Feed & Data In Google Merchant Center",
+            "author": "KeyCommerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/S1NhYxaPnic/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S1NhYxaPnic"
+          },
+          {
+            "video_id": "W6w0BjjlBs4",
+            "title": "How to Increase Organic Revenue with Google Merchant Center Optimization (Full Guide)",
+            "author": "Kai Cromwell - eCommerce SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/W6w0BjjlBs4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W6w0BjjlBs4"
+          },
+          {
+            "video_id": "H4yH9xs030Q",
+            "title": "Live Optimizing A Product In Google Merchant Center (A - Z Guide)",
+            "author": "Max Crakanthorp",
+            "thumbnail_url": "https://i.ytimg.com/vi/H4yH9xs030Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H4yH9xs030Q"
+          },
+          {
+            "video_id": "Q-KrwvAVhR4",
+            "title": "How to Optimize Product Category in Google Merchant Center | Inside Google Ads course | Casey Gill",
+            "author": "Jyll Saskin Gales | Google Ads Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q-KrwvAVhR4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q-KrwvAVhR4"
+          },
+          {
+            "video_id": "APb0cOGKROE",
+            "title": "How to Master Google Merchant Center Custom Labels in 5 Minutes!",
+            "author": "Tim Sutton | Google Ads | Launchpresso",
+            "thumbnail_url": "https://i.ytimg.com/vi/APb0cOGKROE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=APb0cOGKROE"
+          },
+          {
+            "video_id": "FZOo2bNTrzo",
+            "title": "Set Up Google Merchant Center The Right Way (Full Course)",
+            "author": "Max Crakanthorp",
+            "thumbnail_url": "https://i.ytimg.com/vi/FZOo2bNTrzo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FZOo2bNTrzo"
+          },
+          {
+            "video_id": "XQTEnn-3t0E",
+            "title": "Your Google Merchant Center Feed Is Losing You Sales!",
+            "author": "Ecom Chris",
+            "thumbnail_url": "https://i.ytimg.com/vi/XQTEnn-3t0E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XQTEnn-3t0E"
+          },
+          {
+            "video_id": "UcU7Ishu1lY",
+            "title": "How To Optimize Your Product Feed & Data In Google Merchant Center",
+            "author": "KeyCommerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/UcU7Ishu1lY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UcU7Ishu1lY"
+          },
+          {
+            "video_id": "-w0GraOv2B0",
+            "title": "How to Optimize Google Ads Shopping Feeds with Feed Attribute Rules [Step-by-Step Tutorial]",
+            "author": "Grow My Ads",
+            "thumbnail_url": "https://i.ytimg.com/vi/-w0GraOv2B0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-w0GraOv2B0"
+          },
+          {
+            "video_id": "RHJvGN_6sf0",
+            "title": "Shopify Google Merchant Center Product Feed Setup (2026) | Complete Beginner Guide #shopify #google",
+            "author": "Wixpa Google Shopping Feed",
+            "thumbnail_url": "https://i.ytimg.com/vi/RHJvGN_6sf0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RHJvGN_6sf0"
+          },
+          {
+            "video_id": "d9kULGtUBD4",
+            "title": "Ultimate Guide to Google Shopping Feed Optimization: Increase CTR, Conversions & ROAS",
+            "author": "Ecom Chris",
+            "thumbnail_url": "https://i.ytimg.com/vi/d9kULGtUBD4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d9kULGtUBD4"
+          },
+          {
+            "video_id": "fPLMdewUMQw",
+            "title": "Exposing the Walmart \"Automation\" SCAM",
+            "author": "Coffeezilla",
+            "thumbnail_url": "https://i.ytimg.com/vi/fPLMdewUMQw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fPLMdewUMQw"
+          },
+          {
+            "video_id": "x2RzKux5lK0",
+            "title": "FTC Sues Amazon Automation Company for Passive Income Scams & Death Threats",
+            "author": "Amazon Seller School",
+            "thumbnail_url": "https://i.ytimg.com/vi/x2RzKux5lK0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x2RzKux5lK0"
+          },
+          {
+            "video_id": "El3a3K2N_sY",
+            "title": "Done-For-You AI Store: We Read the FTC Files",
+            "author": "NET not GROSS",
+            "thumbnail_url": "https://i.ytimg.com/vi/El3a3K2N_sY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=El3a3K2N_sY"
+          },
+          {
+            "video_id": "qeqvFEGP-7g",
+            "title": "Amazon FBA Product Liability Insurance for Beginners Explained 2024 UPDATE!",
+            "author": "Crescent Kao",
+            "thumbnail_url": "https://i.ytimg.com/vi/qeqvFEGP-7g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qeqvFEGP-7g"
+          },
+          {
+            "video_id": "A0rgATB8PiM",
+            "title": "What is Product Liability Insurance?",
+            "author": "BIS Benefits - Best In Serving",
+            "thumbnail_url": "https://i.ytimg.com/vi/A0rgATB8PiM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A0rgATB8PiM"
+          },
+          {
+            "video_id": "XxorvB6ExNs",
+            "title": "Product Liability Insurance Coverage and Cost | What is Product Liability? Small Business Insurance",
+            "author": "Insurance Assurance",
+            "thumbnail_url": "https://i.ytimg.com/vi/XxorvB6ExNs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XxorvB6ExNs"
+          },
+          {
+            "video_id": "Ooq0PnAEf5s",
+            "title": "What is the Cash Conversion Cycle?",
+            "author": "Invoice Finance News",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ooq0PnAEf5s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ooq0PnAEf5s"
+          },
+          {
+            "video_id": "Ju1MGgf9RUw",
+            "title": "Video Cash Conversion Cycle",
+            "author": "InstructorTom",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ju1MGgf9RUw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ju1MGgf9RUw"
+          },
+          {
+            "video_id": "OoegPOU-YCE",
+            "title": "Inventory Estimates and the Cash Conversion Cycle | ACC 300 Lecture 20",
+            "author": "Understanding Accounting",
+            "thumbnail_url": "https://i.ytimg.com/vi/OoegPOU-YCE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OoegPOU-YCE"
+          },
+          {
+            "video_id": "z3z_GomovEI",
+            "title": "The Cash Conversion Cycle formula and how to use it",
+            "author": "Laurence Gartside",
+            "thumbnail_url": "https://i.ytimg.com/vi/z3z_GomovEI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z3z_GomovEI"
+          },
+          {
+            "video_id": "GtIbksKcl3Q",
+            "title": "Inventory Estimates and the Cash Conversion Cycle | ACC 300 Chapter 18 Reading",
+            "author": "Understanding Accounting",
+            "thumbnail_url": "https://i.ytimg.com/vi/GtIbksKcl3Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GtIbksKcl3Q"
+          },
+          {
+            "video_id": "7yuWFm95LDw",
+            "title": "The Cash Conversion Cycle (CCC) Explained | Formula, Working Capital & Cash Flow Mastery",
+            "author": "One Minute Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/7yuWFm95LDw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7yuWFm95LDw"
+          },
+          {
+            "video_id": "F-Y1cubdesE",
+            "title": "Cash Conversion Cycle: The Metric EVERY Ecommerce Owner Should Understand",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/F-Y1cubdesE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F-Y1cubdesE"
+          },
+          {
+            "video_id": "Sw24t4Xzk0I",
+            "title": "Cash Conversion Cycle - Meaning, Formula, Calculation & Interpretations",
+            "author": "WallStreetMojo",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sw24t4Xzk0I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sw24t4Xzk0I"
+          },
+          {
+            "video_id": "C5Ut79jWwHA",
+            "title": "What is the Cash Conversion Cycle?",
+            "author": "Marketing Business Network",
+            "thumbnail_url": "https://i.ytimg.com/vi/C5Ut79jWwHA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C5Ut79jWwHA"
+          },
+          {
+            "video_id": "0WBeNhRVKHY",
+            "title": "You’re Not Broke, Your Cash Is Just Stuck (Cash Conversion Cycle Explained)",
+            "author": "Kurtis Hanni",
+            "thumbnail_url": "https://i.ytimg.com/vi/0WBeNhRVKHY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0WBeNhRVKHY"
+          },
+          {
+            "video_id": "1gBvyu9ADGo",
+            "title": "Cash Conversion Cycle Explained | CFA Level 1 Corporate Issuers",
+            "author": "Luke Kermode, CFA",
+            "thumbnail_url": "https://i.ytimg.com/vi/1gBvyu9ADGo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1gBvyu9ADGo"
+          },
+          {
+            "video_id": "rNjMWAOJHwM",
+            "title": "The Cash Conversion Cycle (CCC): The King of the Cash Flow Statement?",
+            "author": "Mergers & Inquisitions / Breaking Into Wall Street",
+            "thumbnail_url": "https://i.ytimg.com/vi/rNjMWAOJHwM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rNjMWAOJHwM"
+          },
+          {
+            "video_id": "A-7pTamjBIw",
+            "title": "How To 4X Your Shopify Conversion Rate (Complete CRO Guide)",
+            "author": "Davie Fogarty Mentors",
+            "thumbnail_url": "https://i.ytimg.com/vi/A-7pTamjBIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A-7pTamjBIw"
+          },
+          {
+            "video_id": "daDsoHXE52A",
+            "title": "How To Increase Conversion Rates on Shopify (2026 Guide)",
+            "author": "Chase Chappell",
+            "thumbnail_url": "https://i.ytimg.com/vi/daDsoHXE52A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=daDsoHXE52A"
+          },
+          {
+            "video_id": "VsY0GsB1UI0",
+            "title": "AI for \"where is my order\" tickets in Gorgias",
+            "author": "Macha",
+            "thumbnail_url": "https://i.ytimg.com/vi/VsY0GsB1UI0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VsY0GsB1UI0"
+          },
+          {
+            "video_id": "QZz9_VSA1lA",
+            "title": "How to Automate Gorgias Customer Support with Cevanos AI | Live Demo",
+            "author": "Amol Walunj",
+            "thumbnail_url": "https://i.ytimg.com/vi/QZz9_VSA1lA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QZz9_VSA1lA"
+          },
+          {
+            "video_id": "eusN-cV9bSQ",
+            "title": "Gorgias AI Agent review (2026): AI Agent 3.0, price and setup, scored",
+            "author": "Macha",
+            "thumbnail_url": "https://i.ytimg.com/vi/eusN-cV9bSQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eusN-cV9bSQ"
+          },
+          {
+            "video_id": "iqOjQraqwcM",
+            "title": "Best AI agent for Gorgias and Shopify support (2026)",
+            "author": "Macha",
+            "thumbnail_url": "https://i.ytimg.com/vi/iqOjQraqwcM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iqOjQraqwcM"
+          },
+          {
+            "video_id": "7Ac3MIM55Yc",
+            "title": "Gorgias AI explained (2026): AI Agent, automation and cost",
+            "author": "Macha",
+            "thumbnail_url": "https://i.ytimg.com/vi/7Ac3MIM55Yc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7Ac3MIM55Yc"
+          },
+          {
+            "video_id": "Pwv-LlhTPwo",
+            "title": "Gorgias Overview & Demo | Shopify's #1 Customer Service App",
+            "author": "Brandon Amoroso",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pwv-LlhTPwo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Pwv-LlhTPwo"
+          },
+          {
+            "video_id": "la7VuqSuHHE",
+            "title": "How I Would Scale A Fashion Ecom Brand!",
+            "author": "Justin Lalonde",
+            "thumbnail_url": "https://i.ytimg.com/vi/la7VuqSuHHE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=la7VuqSuHHE"
+          },
+          {
+            "video_id": "7v_KO8bj_G0",
+            "title": "How to scale an eCommerce brand to $1M/mo | Paul Waddy",
+            "author": "Growth Manifesto Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/7v_KO8bj_G0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7v_KO8bj_G0"
+          },
+          {
+            "video_id": "VCXWZQgbKXw",
+            "title": "The Only Video You Need to Scale Your Ecommerce Brand to 8 Figures",
+            "author": "Adam Callinan",
+            "thumbnail_url": "https://i.ytimg.com/vi/VCXWZQgbKXw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VCXWZQgbKXw"
+          },
+          {
+            "video_id": "rBcV_0ROMHM",
+            "title": "The BITTER Truth About Scaling An Ecommerce Business! - DO THIS INSTEAD!",
+            "author": "Justin Lalonde",
+            "thumbnail_url": "https://i.ytimg.com/vi/rBcV_0ROMHM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rBcV_0ROMHM"
+          },
+          {
+            "video_id": "raqfsvgSW0o",
+            "title": "Helping an E-Commerce Brand Doing $5M/Year Scale",
+            "author": "MoreMozi",
+            "thumbnail_url": "https://i.ytimg.com/vi/raqfsvgSW0o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=raqfsvgSW0o"
+          },
+          {
+            "video_id": "xEx0Lhv0wec",
+            "title": "Scaling Own.Com in Europe | Business Casual with Luis Ribeiro",
+            "author": "ZEOS",
+            "thumbnail_url": "https://i.ytimg.com/vi/xEx0Lhv0wec/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xEx0Lhv0wec"
+          },
+          {
+            "video_id": "bufdu58UUfo",
+            "title": "Alex Hormozi's Guide to Scaling an E-Commerce Brand",
+            "author": "Vexrulon",
+            "thumbnail_url": "https://i.ytimg.com/vi/bufdu58UUfo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bufdu58UUfo"
+          },
+          {
+            "video_id": "iacAWRoEwXI",
+            "title": "Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m)",
+            "author": "Nick Theriot",
+            "thumbnail_url": "https://i.ytimg.com/vi/iacAWRoEwXI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iacAWRoEwXI"
+          },
+          {
+            "video_id": "KpmUvCBEKK4",
+            "title": "5 Financial Metrics You Must Know Before Scaling an Ecommerce Brand (Beyond ROAS)",
+            "author": "Leading Social",
+            "thumbnail_url": "https://i.ytimg.com/vi/KpmUvCBEKK4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KpmUvCBEKK4"
+          },
+          {
+            "video_id": "CCtunt0iWMU",
+            "title": "Scaling Creative Brands Through Operations",
+            "author": "Frankly eCommerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/CCtunt0iWMU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CCtunt0iWMU"
+          },
+          {
+            "video_id": "SjGeVqhkKPw",
+            "title": "Scaling an Ecommerce Brand Is Hard Until You Understand These 3 Systems",
+            "author": "Noah Haynes",
+            "thumbnail_url": "https://i.ytimg.com/vi/SjGeVqhkKPw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SjGeVqhkKPw"
+          },
+          {
+            "video_id": "u0WQ5ZC6KME",
+            "title": "E-commerce Marketing: Evaluating what omnichannel really means",
+            "author": "MarketingSherpa",
+            "thumbnail_url": "https://i.ytimg.com/vi/u0WQ5ZC6KME/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u0WQ5ZC6KME"
+          },
+          {
+            "video_id": "TZ1BQdO4bl4",
+            "title": "Scaling Omnichannel Personalization | Commerce Chats",
+            "author": "EICOM Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/TZ1BQdO4bl4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TZ1BQdO4bl4"
+          },
+          {
+            "video_id": "6xiaPZPDBCQ",
+            "title": "Recharge Subscription Flows Tutorial For 2026 (Full Strategy)",
+            "author": "Milan Raviji│Klaviyo & Email Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/6xiaPZPDBCQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6xiaPZPDBCQ"
+          },
+          {
+            "video_id": "DbHq5BHo_XA",
+            "title": "The Definition of Working Capital in the Working Capital Peg",
+            "author": "A Simple Model",
+            "thumbnail_url": "https://i.ytimg.com/vi/DbHq5BHo_XA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DbHq5BHo_XA"
+          },
+          {
+            "video_id": "axmEedpIF1E",
+            "title": "Working Capital Adjustments in a Business Sale | EIN Business Brokers | Enterprise Industry Network",
+            "author": "Enterprise Industry Network",
+            "thumbnail_url": "https://i.ytimg.com/vi/axmEedpIF1E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=axmEedpIF1E"
+          },
+          {
+            "video_id": "8qsUvwoLJHw",
+            "title": "The Working Capital Peg for a Seasonal Business",
+            "author": "A Simple Model",
+            "thumbnail_url": "https://i.ytimg.com/vi/8qsUvwoLJHw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8qsUvwoLJHw"
+          },
+          {
+            "video_id": "KSfESWIcDGI",
+            "title": "Working Capital Adjustment in a Business Sale. How it Can Change the Final Purchase Price!",
+            "author": "Brent Freeman - The CBB Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/KSfESWIcDGI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KSfESWIcDGI"
+          },
+          {
+            "video_id": "313GvO3pScc",
+            "title": "Complete E-commerce Operations Guide (Advanced Tutorial)",
+            "author": "Davie Fogarty",
+            "thumbnail_url": "https://i.ytimg.com/vi/313GvO3pScc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=313GvO3pScc"
+          },
+          {
+            "video_id": "4OmfNbuCmDQ",
+            "title": "I Automated My Entire Shopify Store With Claude (No Code)",
+            "author": "Fazil Automates",
+            "thumbnail_url": "https://i.ytimg.com/vi/4OmfNbuCmDQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4OmfNbuCmDQ"
+          },
+          {
+            "video_id": "wFXlLgdV31A",
+            "title": "How to 3x Your Email Revenue (Shopify Brand Case Study) | Lifecycle Talks",
+            "author": "Carbon Box Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/wFXlLgdV31A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wFXlLgdV31A"
+          },
+          {
+            "video_id": "7B1m62WaDkw",
+            "title": "Niching Down and Finding Better Suppliers | High Ticket Dropshipping (Case Study)",
+            "author": "Marcus Lam | High Ticket Dropshipping (AI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/7B1m62WaDkw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7B1m62WaDkw"
+          },
+          {
+            "video_id": "b7IMdD7nvhg",
+            "title": "9 to 5 Employee Learns Margins After Shipping | High Ticket Dropshipping (Case Study)",
+            "author": "Marcus Lam | High Ticket Dropshipping (AI)",
+            "thumbnail_url": "https://i.ytimg.com/vi/b7IMdD7nvhg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b7IMdD7nvhg"
+          },
+          {
+            "video_id": "61mBGqDsSo4",
+            "title": "5 Best High Ticket SEO Dropshipping Niches for 2025",
+            "author": "Kai Cromwell - eCommerce SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/61mBGqDsSo4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=61mBGqDsSo4"
+          },
+          {
+            "video_id": "WAF10Ijm6RE",
+            "title": "The Top 5 High-Ticket Dropshipping Products to Sell in 2025 for Maximum Profit",
+            "author": "Dropship Circle - High Ticket Dropshipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/WAF10Ijm6RE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WAF10Ijm6RE"
+          },
+          {
+            "video_id": "91zki-xXArY",
+            "title": "$200,000 A Month Dropshipping High Ticket Products - Case Study",
+            "author": "Asonjf",
+            "thumbnail_url": "https://i.ytimg.com/vi/91zki-xXArY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=91zki-xXArY"
+          },
+          {
+            "video_id": "8V2vAoy6GNA",
+            "title": "How To Dropship High-Ticket Products Using US Suppliers | Brook Hiddink | Ep.19",
+            "author": "Theo Clarke Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/8V2vAoy6GNA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8V2vAoy6GNA"
+          },
+          {
+            "video_id": "r79NEO4JF2M",
+            "title": "How To Find Winning High Ticket Products",
+            "author": "Asonjf",
+            "thumbnail_url": "https://i.ytimg.com/vi/r79NEO4JF2M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r79NEO4JF2M"
+          },
+          {
+            "video_id": "YmrOjrklnxM",
+            "title": "What is High Ticket Dropshipping and Common FAQs",
+            "author": "Peak Flow Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/YmrOjrklnxM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YmrOjrklnxM"
+          },
+          {
+            "video_id": "gG33a-ErNRQ",
+            "title": "Unit Economics Benchmarks for eCommerce | From Idea to Exit",
+            "author": "Eric Andrews",
+            "thumbnail_url": "https://i.ytimg.com/vi/gG33a-ErNRQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gG33a-ErNRQ"
+          },
+          {
+            "video_id": "t2H3gJHuw6k",
+            "title": "50% Off vs. BOGO: Unit Economics Case Study (How We Lost $500K)",
+            "author": "Eric Andrews",
+            "thumbnail_url": "https://i.ytimg.com/vi/t2H3gJHuw6k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t2H3gJHuw6k"
+          },
+          {
+            "video_id": "El6hMZ1_77w",
+            "title": "Shopify Inventory Management Complete Setup Guide",
+            "author": "GroPulse",
+            "thumbnail_url": "https://i.ytimg.com/vi/El6hMZ1_77w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=El6hMZ1_77w"
+          },
+          {
+            "video_id": "I8fM406sSsA",
+            "title": "Shopify Inventory Management Tutorial for Beginners (2026 Step-by-Step Guide to Managing Stock)",
+            "author": "Tech Help Daily",
+            "thumbnail_url": "https://i.ytimg.com/vi/I8fM406sSsA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I8fM406sSsA"
+          },
+          {
+            "video_id": "bX6lGJtCxao",
+            "title": "Shopify Inventory Tracking Guide: ABC Analysis, Bundles & Stock Alerts",
+            "author": "Report Pundit",
+            "thumbnail_url": "https://i.ytimg.com/vi/bX6lGJtCxao/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bX6lGJtCxao"
+          },
+          {
+            "video_id": "IWUFOfiPmUI",
+            "title": "How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & AI Planning (Onboarding)",
+            "author": "Prediko AI Inventory Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/IWUFOfiPmUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IWUFOfiPmUI"
+          },
+          {
+            "video_id": "9Gx9hcJhdbo",
+            "title": "How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & AI Planning (Onboarding)",
+            "author": "Prediko AI Inventory Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Gx9hcJhdbo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Gx9hcJhdbo"
+          },
+          {
+            "video_id": "oYy3k8xOKpA",
+            "title": "The Ultimate Shopify Inventory Management Guide | Stop Losing Sales!",
+            "author": "FlexSync: Shopify Stock & Order Sync",
+            "thumbnail_url": "https://i.ytimg.com/vi/oYy3k8xOKpA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oYy3k8xOKpA"
+          },
+          {
+            "video_id": "P-gBTGovRRs",
+            "title": "How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & Raw Materials (Onboarding)",
+            "author": "Prediko AI Inventory Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/P-gBTGovRRs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=P-gBTGovRRs"
+          },
+          {
+            "video_id": "JT1uQ-EOyhM",
+            "title": "Klaviyo SMS Marketing Tutorial: Step-by-Step for Beginners",
+            "author": "Tarun Brar - eCom Email Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/JT1uQ-EOyhM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JT1uQ-EOyhM"
+          },
+          {
+            "video_id": "AZHCdf0AuwM",
+            "title": "Klaviyo Email Marketing For Beginners In (2026 Q4 Tutorial)",
+            "author": "Theo Clough | Email Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/AZHCdf0AuwM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AZHCdf0AuwM"
+          },
+          {
+            "video_id": "cerX0RFHJ0c",
+            "title": "Klaviyo Post Purchase Thank You Flow Strategies",
+            "author": "Derek Stroh",
+            "thumbnail_url": "https://i.ytimg.com/vi/cerX0RFHJ0c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cerX0RFHJ0c"
+          },
+          {
+            "video_id": "coevagBV6wU",
+            "title": "Klaviyo Tutorial: How to Setup the Post-Purchase Flow 2025 (Step by Step)",
+            "author": "Tarun Brar - eCom Email Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/coevagBV6wU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=coevagBV6wU"
+          },
+          {
+            "video_id": "zfCLuKMRGEE",
+            "title": "Klaviyo SMS & Email Integration: Boost Conversions & Engagement | Klaviyo Academy",
+            "author": "Klaviyo",
+            "thumbnail_url": "https://i.ytimg.com/vi/zfCLuKMRGEE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zfCLuKMRGEE"
+          },
+          {
+            "video_id": "qaQ0aFPTDKA",
+            "title": "How to Set Up Post Purchase Flow in Klaviyo 2026 (Quick Guide)",
+            "author": "TUTOR BASE",
+            "thumbnail_url": "https://i.ytimg.com/vi/qaQ0aFPTDKA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qaQ0aFPTDKA"
+          },
+          {
+            "video_id": "Cu4iN3jgMwI",
+            "title": "Klaviyo Post Purchase Flow Tutorial | Shopify Thank You Flow Setup",
+            "author": "Gavin Hewitson",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cu4iN3jgMwI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cu4iN3jgMwI"
+          },
+          {
+            "video_id": "6OklvvWTGmw",
+            "title": "Klaviyo Flows Tutorial For Beginners (2025 Full Course for Shopify)",
+            "author": "Emiel Dingemans | eCommerce Retention Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/6OklvvWTGmw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6OklvvWTGmw"
+          },
+          {
+            "video_id": "PTU-PzhQg_4",
+            "title": "How this 3PL doubled their daily throughput | SKU Distribution | Case Study",
+            "author": "ShipWise",
+            "thumbnail_url": "https://i.ytimg.com/vi/PTU-PzhQg_4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PTU-PzhQg_4"
+          },
+          {
+            "video_id": "EYQU96qv5rk",
+            "title": "3PL warehouse B2C x CartonCloud case study",
+            "author": "CartonCloud",
+            "thumbnail_url": "https://i.ytimg.com/vi/EYQU96qv5rk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EYQU96qv5rk"
+          },
+          {
+            "video_id": "-WXoF_u08g0",
+            "title": "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's Guide for Beginner",
+            "author": "Trade Counsel",
+            "thumbnail_url": "https://i.ytimg.com/vi/-WXoF_u08g0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-WXoF_u08g0"
+          },
+          {
+            "video_id": "BAGqaHYyMlA",
+            "title": "How to Capitalize Estimated Import Duty Into Landed Cost and Reconcile Broker Bills | SKU.io",
+            "author": "SKUio",
+            "thumbnail_url": "https://i.ytimg.com/vi/BAGqaHYyMlA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BAGqaHYyMlA"
+          },
+          {
+            "video_id": "nUu4s78pX8E",
+            "title": "Tariff news and your landed cost",
+            "author": "CFOmarketIQ",
+            "thumbnail_url": "https://i.ytimg.com/vi/nUu4s78pX8E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nUu4s78pX8E"
+          },
+          {
+            "video_id": "4868R7AGDp0",
+            "title": "Landed Cost Calculator: Compare Tariffs, Duties & Fees from Multiple Countries",
+            "author": "Shipping Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/4868R7AGDp0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4868R7AGDp0"
+          },
+          {
+            "video_id": "B-HQodfgIG4",
+            "title": "Amazon FBA Wholesale Brand direct for Beginners: The Easiest Way to Start in 2027",
+            "author": "Sertac Altun",
+            "thumbnail_url": "https://i.ytimg.com/vi/B-HQodfgIG4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B-HQodfgIG4"
+          },
+          {
+            "video_id": "48JkrcvKaVs",
+            "title": "This is how you find brands authorized distributors to buy and sell their products on Amazon",
+            "author": "Thomas | Amazon Wholesale",
+            "thumbnail_url": "https://i.ytimg.com/vi/48JkrcvKaVs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=48JkrcvKaVs"
+          },
+          {
+            "video_id": "Cy4Xvc1vYac",
+            "title": "Amazon Wholesale FBA invoice requirements explained",
+            "author": "Zero To Sale",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cy4Xvc1vYac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cy4Xvc1vYac"
+          },
+          {
+            "video_id": "HPTGnp51Iks",
+            "title": "How To Process Shopify Returns And Exchanges (Easy Guide)",
+            "author": "Jim's Ecommerce Tutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPTGnp51Iks/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPTGnp51Iks"
+          },
+          {
+            "video_id": "wy6f7PCtG90",
+            "title": "Professional Refund Protocols & Chargebacks Protection | Shopify | Lec 112 | DigiSkills 3.0",
+            "author": "DigiSkills 3.0",
+            "thumbnail_url": "https://i.ytimg.com/vi/wy6f7PCtG90/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wy6f7PCtG90"
+          },
+          {
+            "video_id": "V0kR_J_Vdkw",
+            "title": "How To Handle Shopify Refunds And Returns 2025 For Beginners",
+            "author": "Guides by Dan",
+            "thumbnail_url": "https://i.ytimg.com/vi/V0kR_J_Vdkw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V0kR_J_Vdkw"
+          },
+          {
+            "video_id": "1L4TNDjsICQ",
+            "title": "Returns Without the Bleed: Refunds, Exchanges, and the Supplier Reality",
+            "author": "Dropshipping Deep Dive",
+            "thumbnail_url": "https://i.ytimg.com/vi/1L4TNDjsICQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1L4TNDjsICQ"
+          },
+          {
+            "video_id": "A7FAFArV6JM",
+            "title": "SAP Commerce Cloud + Avalara",
+            "author": "Avalara",
+            "thumbnail_url": "https://i.ytimg.com/vi/A7FAFArV6JM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A7FAFArV6JM"
+          },
+          {
+            "video_id": "M_AJmScLLXE",
+            "title": "TaxJar demo: How to automate sales tax compliance in 2026",
+            "author": "TaxJar",
+            "thumbnail_url": "https://i.ytimg.com/vi/M_AJmScLLXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M_AJmScLLXE"
+          },
+          {
+            "video_id": "pqXEldKeguY",
+            "title": "Sales Tax 101 with Avalara",
+            "author": "LedgerGurus: Ecommerce Accounting Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/pqXEldKeguY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pqXEldKeguY"
+          },
+          {
+            "video_id": "V0LAr3jchLs",
+            "title": "Google Shopping Feed Optimization for Performance Max, 3 Fixes to improve ROAS & Merchant centre",
+            "author": "Abdul Rauf Ali",
+            "thumbnail_url": "https://i.ytimg.com/vi/V0LAr3jchLs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V0LAr3jchLs"
+          },
+          {
+            "video_id": "79VrN9FhpT8",
+            "title": "Google Merchant Center - Optimizing Your Feed: Custom Labels with Google Sheets & Attribute Rules",
+            "author": "PPC Incubator",
+            "thumbnail_url": "https://i.ytimg.com/vi/79VrN9FhpT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=79VrN9FhpT8"
           }
         ],
         "research_reference_only": true,
@@ -25902,7 +27148,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 3306 third-party videos (30366 captured tips)",
+        "source": "Spoken content of 3484 third-party videos (31983 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -25918,38 +27164,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 3306,
-    "channel_count": 2114,
-    "total_words": 4828786,
-    "total_hours": 961.03,
-    "total_pro_tips": 30366,
-    "unique_statutes_and_forms": 1428,
-    "unique_tools_and_portals": 9025
+    "video_count": 3484,
+    "channel_count": 2238,
+    "total_words": 5069308,
+    "total_hours": 1005.91,
+    "total_pro_tips": 31983,
+    "unique_statutes_and_forms": 1464,
+    "unique_tools_and_portals": 9687
   },
   "coverage": {
-    "videos_classified": 3306,
-    "videos_with_multiple_topics": 3303,
-    "tips_classified": 30366,
-    "raw_transcripts_joined": 3306,
+    "videos_classified": 3484,
+    "videos_with_multiple_topics": 3481,
+    "tips_classified": 31983,
+    "raw_transcripts_joined": 3484,
     "topic_video_counts": {
-      "business_model_and_economics": 2615,
-      "probate_and_docket_sourcing": 2492,
-      "unclaimed_property_and_escheat": 741,
-      "genealogy_and_heirship_proof": 2670,
-      "skip_tracing_and_outreach": 1875,
-      "contracts_and_compensation": 2654,
-      "statutory_caps_and_licensing": 2770,
-      "automation_and_small_team_ops": 2440
+      "business_model_and_economics": 2775,
+      "probate_and_docket_sourcing": 2614,
+      "unclaimed_property_and_escheat": 762,
+      "genealogy_and_heirship_proof": 2823,
+      "skip_tracing_and_outreach": 1965,
+      "contracts_and_compensation": 2776,
+      "statutory_caps_and_licensing": 2909,
+      "automation_and_small_team_ops": 2570
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 5259,
-      "probate_and_docket_sourcing": 5459,
+      "business_model_and_economics": 5743,
+      "probate_and_docket_sourcing": 5619,
       "unclaimed_property_and_escheat": 1821,
-      "genealogy_and_heirship_proof": 3112,
-      "skip_tracing_and_outreach": 1114,
-      "contracts_and_compensation": 4182,
-      "statutory_caps_and_licensing": 2990,
-      "automation_and_small_team_ops": 6429
+      "genealogy_and_heirship_proof": 3379,
+      "skip_tracing_and_outreach": 1129,
+      "contracts_and_compensation": 4389,
+      "statutory_caps_and_licensing": 3063,
+      "automation_and_small_team_ops": 6840
     }
   },
   "schema_version": "1.0",

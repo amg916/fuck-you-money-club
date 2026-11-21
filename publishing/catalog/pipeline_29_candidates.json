@@ -24,7 +24,8 @@
     "vol-017-domain-investing",
     "vol-018-land-flipping",
     "vol-019-enterprise-software-reselling",
-    "vol-020-government-contract-brokering"
+    "vol-020-government-contract-brokering",
+    "vol-021-automated-e-commerce"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -20147,7 +20148,7 @@
       "slug": "automated-e-commerce",
       "title": "Automated E-Commerce",
       "category": "Online retail",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 23,
         "profit_margin_potential": 13,
@@ -20164,11 +20165,11 @@
       },
       "total_score": 70,
       "tier_label": "Disciplined Specialist Play",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 64,
-        "high": 76
+        "low": 67,
+        "high": 73
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23587,5 +23588,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T22:37:33Z"
+  "generated_at": "2026-11-21T22:46:04Z"
 }

@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "1de66b9cc6502c9cadfc5518f03685a0f63ccd382f17dfffe699f6ec4a52fac7",
-    "brand/brand_system.json": "fe502a6b38796e4c3a1fcf85462bf28498489ebd78c506af0ee80900ad82f704",
-    "catalog/pipeline_29_candidates.json": "65fa408f675d5545671b3d360614038f2b8bb632d55dbca3a73b53308aaa6f3f",
-    "research/research_database_summary.json": "d85d20bece7c91ef56c9389b9ad208d4cdd45fe2a61d71084108a67f51d1fefe",
+    "audit/existing_work_audit.json": "afb02cb2c6076084fc469ff9ded37a8e3c0503b07fe289fd0a0ce88905deb92d",
+    "brand/brand_system.json": "0bb6e2d3eae435b6a83287b741ab5a167eed6d8297645e50928063ebc062d9fa",
+    "catalog/pipeline_29_candidates.json": "339bd8f609dc2a9087b776867a84468b7fa6db34ae4eaf2d5ef72d5959ef35ba",
+    "research/research_database_summary.json": "417c73490752000cc8e40e14b70c5443567b57c786ff223264caa304eb8dbd49",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -365,6 +365,24 @@
     "volumes/vol-020-government-contract-brokering/manuscript.json": "0d4146ebdb822997a402b68d2d4819f9ad881c99b559f7541b21a98a3cb7ae10",
     "volumes/vol-020-government-contract-brokering/metadata.json": "da5267e696ab0a9e8c4903492ca827c3c3c1e2b02473429b78240c5fe5fcff55",
     "volumes/vol-020-government-contract-brokering/scorecard.json": "d1973d7d1062f19c323f7bb5b2fba7d035b26a174a29557210ea8d06b0b729b7",
-    "volumes/vol-020-government-contract-brokering/workbook.json": "39d06a3da4ac0ce9218a0434c5090a2b1123202e7850fdedcbf3e205c9e1beb5"
+    "volumes/vol-020-government-contract-brokering/workbook.json": "39d06a3da4ac0ce9218a0434c5090a2b1123202e7850fdedcbf3e205c9e1beb5",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-01.md": "14af29f3a4b326d151e47fbeab2c0c17f26a8884cf72658464b5ad9111d1e74b",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-02.md": "697cd1f24c659a5870788a9344fcede6771b6d2f6ca4b214cf03eefa0a8a20ba",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-03.md": "631e55b4422cec72ad15026ba60992af78d68603ac559f70d87f100a59a6922d",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-04.md": "277fe91d664a76fb09220326bd901f0cd8b4254bd873b1aaa6a361f975d4ea8b",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-05.md": "5cf2ec4e5c5551dd009c0cba8ffe02a6fbedd92b809409c0183cd10ddd226648",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-06.md": "a8b15b5aa3cf77206eda73a85bfaf682c3d44e390a4200e9e16a85392d538e65",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-07.md": "a62270c617a158be5ec830ffd450832b07de6ff605812877c05d24fcecee7bf9",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-08.md": "1ee4fbfeadd33e796803742ce3e6a09fd0fd44329160163d7b4ce73216fb8f95",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-09.md": "c14300ceb89638fdca8ab0cc3d583afbc432ec2939889823a89ac1af522ef5c0",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-10.md": "84af5fdf95733f569781932514b59dd0139b3215a756d1e15211df7f63240fc2",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-11.md": "7e31b73a3a77076e7c32f159ade9fa08226577ac815921ecbfc7458487d03f3e",
+    "volumes/vol-021-automated-e-commerce/chapters/chapter-12.md": "47fd57d2e8ada3412b307536d9d4567b2dee4fa8449d9fd2a9b32c569b0debc4",
+    "volumes/vol-021-automated-e-commerce/diagrams_data.json": "c0fce856fd69f7d89c1fa4a06d41645e07f1e8cb77e7250a259c0624eac8e86c",
+    "volumes/vol-021-automated-e-commerce/graphics_reviews.json": "ab50f4a23b8ac2232219b50c22530ca1664dcb5e8f9f0da77797112532760a11",
+    "volumes/vol-021-automated-e-commerce/manuscript.json": "425306f04d8ddc10d151c5c9cdcaaf62cc6e8a9abc92481e36f9af9c81a91dd5",
+    "volumes/vol-021-automated-e-commerce/metadata.json": "9961022ed98fe542b5c9d2184ac22677c708903b9e1ce99c6701f8bbeb164a47",
+    "volumes/vol-021-automated-e-commerce/scorecard.json": "13ef59b84972c3f10501af266ca90d70e4d03a0cedf2bcc2b93bf2e0096116a4",
+    "volumes/vol-021-automated-e-commerce/workbook.json": "39fa84d98cc147f65814081a07ef338c62ac57d0e858285a4dd9015b0c21f12f"
   }
 }

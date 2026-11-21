@@ -1,0 +1,80 @@
+{
+  "volume_id": "vol-021-automated-e-commerce",
+  "volume_slug": "vol-021-automated-e-commerce",
+  "volume_number": 21,
+  "site_ui": {
+    "cover": [
+      "AUTOMATED",
+      "E-COMMERCE"
+    ],
+    "deck": [
+      "TRACK CONTRIBUTION MARGIN. AUTOMATE 3PL.",
+      "PROTECT CASH CYCLE."
+    ],
+    "lead": "Lean 5-Person E-Commerce Operations Built on Profit-on-Ad-Spend (POAS), 3PL SLAs, Landed-Cost Discipline & Automated LTV",
+    "summary": "Avoid deceptive 'passive store' scams and run real 3PL and authorized-dealer retail with strict inventory, tariff, and return controls.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "AUTOMATED E-COMMERCE",
+  "subtitle": "The Complete Playbook for Automated E-Commerce: $250,000–$2,000,000 USD Annually with a 2 FT + 3 C (5 People) Core Pod, Expanding to Seven at Scale",
+  "chapter_count": 12,
+  "total_word_count": 75909,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 70,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-21T22:49:20Z"
+}

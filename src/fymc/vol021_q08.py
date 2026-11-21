@@ -1,0 +1,748 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small automated e-commerce desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "CPSC Recall Joins, CBP Classification Evidence, Shopify GraphQL, 3PL Event Ledgers, and Permission-Safe Acquisition Diligence",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 "
+        "Money-to-Manpower Score. Across the volume's 18 mapped plays, the information "
+        "edge comes from joining product identity, supplier authority, inventory truth, "
+        "and contribution margin before committing cash. This chapter specifies an "
+        "18-source directory, evidence-preserving enrichment waterfalls, diagnostic routines, "
+        "and two adjacent monetization plays that require separate ledgers. The canonical "
+        "annual owner profits remain $12,500 Conservative, $129,375 Base, and $360,000 "
+        "Scaled; retail revenue means sales net of refunds, never client advertising "
+        "spend or payment throughput. Use official safety and import records to reject "
+        "bad inventory, commercial APIs to reconcile operations, and narrowly permissioned "
+        "automation to preserve a lean, authorized-dealer, 3PL-backed operation."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
+            "note": "5% net margin; $12,500 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,125,000",
+            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
+            "note": "11.5% net margin; $129,375 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$2,000,000",
+            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
+            "note": "18% net margin; $360,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build an evidence directory that can reject inventory",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with a product identity spine, not a purchased prospect list. "
+                    "For every proposed SKU, record the manufacturer part number, GTIN "
+                    "where assigned, brand, variant, country of origin, importer, supplier "
+                    "legal entity, and the supplier's written authorization covering your "
+                    "sales channels. Query CPSC recalls and SaferProducts.gov against "
+                    "manufacturer names, model aliases, and product descriptions; exact "
+                    "barcode matching alone misses renamed bundles and older recall "
+                    "notices. A consumer incident report is a risk signal, not an "
+                    "agency finding, while a matched recall requires an immediate "
+                    "inventory hold and review of the applicable remedy. Keep the "
+                    "source URL, retrieved timestamp, query terms, and reviewed evidence "
+                    "with the SKU. Under 15 U.S.C. 2068, prohibited sales include "
+                    "certain recalled or nonconforming consumer products; under 15 U.S.C. "
+                    "2064(b), covered businesses have reporting duties when qualifying "
+                    "information reasonably supports a substantial product hazard or "
+                    "specified serious risk. Escalate safety information immediately "
+                    "rather than waiting for the next batch refresh. A clean search "
+                    "does not establish safety, authenticity, or permission to resell. "
+                    "Require applicable certificates, test evidence, traceable invoices, "
+                    "and lot identifiers before accepting stock into the sellable pool."
+                ),
+                (
+                    "Separate identity verification from commercial permission and import "
+                    "classification. A state business registry can corroborate an entity's "
+                    "existence, but cannot establish that its salesperson controls a "
+                    "brand's authorized-dealer program. Verify that claim through a "
+                    "manufacturer contact obtained independently of the supplier's email. "
+                    "USPTO trademark records help resolve brand ownership questions; "
+                    "they do not grant distribution rights. Verified by GS1 can "
+                    "corroborate the company associated with an identifier, but does "
+                    "not authenticate the physical goods in a carton. For imports, "
+                    "use the current USITC Harmonized Tariff Schedule, CBP CROSS "
+                    "rulings, and CBP Cargo Systems Messaging Service notices together. "
+                    "A superficially similar CROSS ruling is research evidence, not "
+                    "a binding classification for a different product or importer. "
+                    "Have the broker validate material composition, principal use, "
+                    "origin, valuation, and additional duty exposure before issuing "
+                    "the purchase order. If a $20 landed-cost assumption omits $3 "
+                    "of applicable duty and handling, 2,000 units consume another "
+                    "$6,000 of cash. When classification remains disputed, price "
+                    "the higher supported cost or pause replenishment; do not "
+                    "force the optimistic tariff code into the margin model merely "
+                    "to make a supplier quote appear viable."
+                ),
+                (
+                    "Treat the directory below as an access plan, not a promise "
+                    "of permanent pricing or universal quotas. Public portals often "
+                    "publish without a latency commitment; an event date, publication "
+                    "date, and retrieval date answer different questions. Commercial "
+                    "quotas depend on application review, account tier, endpoint, "
+                    "and current contracts. At onboarding, record the actual permitted "
+                    "access method, measured response time, pagination behavior, and "
+                    "retry instructions in a source register. Do not invent an "
+                    "API for a marketplace that exposes only public listing pages. "
+                    "Use manual research or expressly permitted collection, then "
+                    "request seller-authorized exports during diligence. The target "
+                    "cadence is daily safety monitoring, transaction-level commerce "
+                    "events, hourly stock reconciliation where supported, and a "
+                    "fresh tariff review before each materially changed import "
+                    "order. These are desk operating targets, not provider service "
+                    "commitments. Budget each connector against the $4,000–$25,000 "
+                    "monthly operating range and the $30,000–$250,000 startup "
+                    "capital envelope without assuming every subscription is "
+                    "incremental to the scorecard. Preserve a manual fallback "
+                    "that can stop sales or release verified orders during an "
+                    "outage. A dashboard that becomes blind when one vendor "
+                    "fails is decoration rather than an operating control."
+                ),
+            ],
+            "table": {
+                "caption": "Eighteen-source directory: access routes, cost basis, freshness, and failure handling",
+                "headers": [
+                    "Named source and exact access method",
+                    "Cost basis and practical refresh expectation",
+                    "Rate-limit hygiene and fallback evidence",
+                    "Specific operator decision supported by evidence",
+                ],
+                "rows": [
+                    [
+                        "CPSC recalls: search cpsc.gov/Recalls; use the documented Recall API linked by CPSC.",
+                        "Public access is free; publication timing varies, so poll daily and escalate new matches.",
+                        "Cache queries and retry conservatively; fall back to dated official recall notices.",
+                        "Hold matching models and lots until the recall remedy and disposition are established.",
+                    ],
+                    [
+                        "SaferProducts.gov: use the public consumer product safety report search interface.",
+                        "Public searches are free; publication follows review, so incident timing precedes availability.",
+                        "Prefer manual targeted searches; fall back to manufacturer notices and CPSC recall records.",
+                        "Investigate repeated defect patterns without presenting consumer allegations as confirmed agency findings.",
+                    ],
+                    [
+                        "USITC HTS: search hts.usitc.gov and download the current published schedule files.",
+                        "Public schedule access is free; check release dates before every changed import order.",
+                        "Cache versioned downloads; fall back to the official schedule and broker classification worksheet.",
+                        "Model ordinary and applicable additional duties using supported classification, origin, and valuation.",
+                    ],
+                    [
+                        "CBP CROSS: search rulings.cbp.gov by product description, material, and tariff heading.",
+                        "Public ruling research is free; newly published decisions do not imply immediate coverage.",
+                        "Use targeted manual queries; fall back to broker research and a binding-ruling request.",
+                        "Compare ruling facts carefully before relying on another product's classification analysis.",
+                    ],
+                    [
+                        "CBP CSMS: search cbp.gov trade messaging pages and subscribe to official message distribution.",
+                        "Public notices are free; delivery follows agency publication rather than a fixed polling interval.",
+                        "Archive message identifiers; fall back to official CBP notice pages and broker alerts.",
+                        "Revisit entry assumptions when operational instructions or duty implementation dates change.",
+                    ],
+                    [
+                        "California bizfile: search bizfileonline.sos.ca.gov for supplier entity names and filed records.",
+                        "Basic public searches are free; filings update after processing, while document services may cost.",
+                        "Avoid bulk scraping; fall back to certified state records and independently verified contacts.",
+                        "Match supplier invoices to a legal entity without confusing registration with dealer authorization.",
+                    ],
+                    [
+                        "California CDTFA: use onlineservices.cdtfa.ca.gov account verification and official tax-rate lookup services.",
+                        "Public verification tools are free; check published effective dates and current permit results.",
+                        "Use documented interfaces only; fall back to official district schedules and account support.",
+                        "Verify relevant permit details and destination rates without assuming every state shares California rules.",
+                    ],
+                    [
+                        "USPTO trademark search: query tmsearch.uspto.gov and inspect associated records through tsdr.uspto.gov.",
+                        "Public searching is free; status and ownership records reflect filing and processing activity.",
+                        "Use targeted searches; fall back to official TSDR documents and direct brand confirmation.",
+                        "Resolve brand identity and assignments while separately obtaining written channel-specific resale permission.",
+                    ],
+                    [
+                        "Verified by GS1: submit product identifiers through gs1.org/services/verified-by-gs1 or contracted member services.",
+                        "Public lookup allowances and paid access vary; refresh when identifiers or suppliers change.",
+                        "Respect current lookup allowances; fall back to manufacturer confirmation and GS1 member-organization support.",
+                        "Corroborate identifier ownership while retaining physical authenticity and lot-traceability checks.",
+                    ],
+                    [
+                        "Chrome Web Store: inspect public listings at chromewebstore.google.com and request owner-authorized dashboard exports.",
+                        "Public listing review is free; displayed users and ratings are snapshots with reporting lag.",
+                        "Avoid unsupported collection endpoints; fall back to dated listing captures and seller-provided cohort evidence.",
+                        "Find neglected utilities while verifying actual activity, permissions, transfer eligibility, and support liabilities.",
+                    ],
+                    [
+                        "WordPress Plugin Directory: search wordpress.org/plugins and query documented api.wordpress.org/plugins/info/1.2/ endpoints.",
+                        "Directory access is free; active-install figures are bucketed indicators rather than exact user counts.",
+                        "Cache metadata and back off on throttling; fall back to listings and public repository history.",
+                        "Compare update history, compatibility, unresolved support issues, and independently verified adoption evidence.",
+                    ],
+                    [
+                        "Shopify App Store: inspect apps.shopify.com listings and obtain seller-authorized partner and billing exports.",
+                        "Public listings are free; reliable installation and cohort information requires owner-authorized evidence.",
+                        "Use permitted listing review; fall back to approved exports rather than fabricated public installation estimates.",
+                        "Verify retention, billing rights, reviews, platform obligations, and transfer requirements before acquisition.",
+                    ],
+                    [
+                        "Shopify Admin GraphQL API: connect through the shop's versioned /admin/api/{version}/graphql.json endpoint.",
+                        "Requires an authorized shop and applicable plan; webhooks are event-driven and delivery can lag.",
+                        "Read query-cost throttle status; use bounded retries and authorized bulk operations for reconciliation.",
+                        "Join orders, refunds, inventory, and fulfillment records without treating webhook arrival as final truth.",
+                    ],
+                    [
+                        "Amazon Selling Partner API: register an approved application and use documented regional seller endpoints.",
+                        "Selling-account costs apply; reports and settlement information follow endpoint-specific processing schedules.",
+                        "Honor usage plans and retry headers; fall back to authorized Seller Central report exports.",
+                        "Reconcile marketplace orders, fees, refunds, and settlements without counting deposits as additional sales.",
+                    ],
+                    [
+                        "Google Ads API: use developers.google.com/google-ads/api with OAuth and the required developer access.",
+                        "Advertising spend is separate; API access levels and reporting freshness vary by metric.",
+                        "Honor account and developer quotas; fall back to authorized reports with explicit attribution windows.",
+                        "Measure channel acquisition cost and adjustments without equating attributed conversion value with booked revenue.",
+                    ],
+                    [
+                        "Meta Marketing API: use developers.facebook.com/docs/marketing-apis with approved permissions and business-owned assets.",
+                        "Advertising charges are separate; asynchronous insights and modeled results can revise after initial reporting.",
+                        "Inspect usage headers and stagger insights jobs; fall back to authorized Ads Manager exports.",
+                        "Reconcile delivered spend and delayed adjustments before crediting a campaign with profitable sales.",
+                    ],
+                    [
+                        "Stripe API: query api.stripe.com/v1 with restricted keys and verify signed webhook deliveries.",
+                        "Payment processing follows the merchant contract; events arrive promptly but settlements take longer.",
+                        "Honor throttling and retry guidance; fall back to balance-transaction exports and processor statements.",
+                        "Separate captured charges, refunds, disputes, fees, and payouts in the cash reconciliation.",
+                    ],
+                    [
+                        "ShipBob Developer API: use developer.shipbob.com documentation and account-authorized inventory, order, and shipment endpoints.",
+                        "Warehouse services and integrations follow contract pricing; event and inventory latency require account testing.",
+                        "Honor published limits and batch reads; fall back to dated portal exports and warehouse confirmation.",
+                        "Reconcile physical availability, reservations, shipped quantities, and billable exceptions before routing new orders.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Research shortcuts that preserve evidence quality",
+                "body": "Spend diligence time where a false match can create inventory losses, channel suspension, or an unsafe sale.",
+                "items": [
+                    "Search recalled products by manufacturer aliases and model fragments; preserve the matching passage and affected production dates.",
+                    "Verify dealer authority through an independently located brand contact, then attach the response to the supplier record.",
+                    "Compare a plugin's changelog with unresolved support threads; a recent version number can conceal abandoned customer support.",
+                    "Ask the 3PL to demonstrate one missing-carton and one partial-shipment case before trusting its normal-order dashboard.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Turn heterogeneous records into a margin-aware enrichment waterfall",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use an enrichment waterfall that stops when evidence becomes "
+                    "sufficient, not when every paid endpoint has been called. "
+                    "First resolve product identity from the supplier's structured "
+                    "catalog and manufacturer documentation. Next corroborate identifiers "
+                    "through GS1 and official brand records. Then attach recall, "
+                    "import, and applicable tax evidence. Only after those joins "
+                    "should commercial services enrich demand, shipment estimates, "
+                    "or customer retention attributes. Keep product, supplier, "
+                    "order, shipment, and customer entities separate; matching two "
+                    "orders to the same shipping address does not prove that "
+                    "two people are the same customer. Every enrichment result "
+                    "needs a source, retrieval timestamp, permitted purpose, "
+                    "confidence rationale, and expiration rule. A hypothetical "
+                    "paid lookup costing $0.04 across 5,000 SKUs costs $200; "
+                    "resolving 80% through authoritative free records reduces "
+                    "that paid step to 1,000 lookups and $40. The $160 "
+                    "difference is a sensitivity example, not additional "
+                    "scorecard profit. If identity remains ambiguous, quarantine "
+                    "the record for review rather than attaching the closest "
+                    "brand or tax category automatically. Minimize customer "
+                    "fields in this process: product diligence rarely needs "
+                    "a buyer's name, email address, or complete street address."
+                ),
+                (
+                    "Implement ingestion as an append-only evidence layer followed "
+                    "by normalized operational tables and explicit decision views. "
+                    "A small desk can begin with encrypted object storage for "
+                    "source payloads, PostgreSQL for transactional joins, and "
+                    "DuckDB for analyst-side checks; these are deployment choices, "
+                    "not dependencies of this chapter module. Store UTC timestamps, "
+                    "source time zones where supplied, currency codes, and integer "
+                    "minor units for money. Deduplicate delivery events using "
+                    "provider event identifiers, while handling updates through "
+                    "resource versions or retrieval timestamps. An order can "
+                    "have several fulfillments, refunds, and settlement adjustments, "
+                    "so flattening everything into one mutable spreadsheet row "
+                    "destroys the audit trail. Shopify webhooks should trigger "
+                    "work, while scheduled API reconciliation establishes "
+                    "completeness. Persist a cursor only after the corresponding "
+                    "page commits successfully. Use overlap windows to catch "
+                    "late updates, then deduplicate deterministically. Keep "
+                    "personally identifying fields out of ordinary job logs "
+                    "and use narrowly scoped service accounts. If a source "
+                    "withdraws access, stop collection and follow retention "
+                    "obligations rather than replacing authorized access with "
+                    "an undocumented endpoint. A reproducible pipeline must "
+                    "explain both what it knows and which source has stopped "
+                    "contributing fresh evidence."
+                ),
+                (
+                    "Build the contribution view from retail economics rather "
+                    "than advertising-platform conversion values. An illustrative "
+                    "$80 merchandise order with a $4 refund allowance produces "
+                    "$76 of expected net retail sales. Subtract $28 of goods, "
+                    "$10 of fulfillment and shipping, $2.40 of processing, "
+                    "$18 of acquisition spend, and $3 of expected returns "
+                    "handling to obtain $14.60 contribution before fixed "
+                    "overhead. The refund allowance reduces revenue; returns "
+                    "handling covers a different cost and must not duplicate "
+                    "the refunded merchandise amount. Sales taxes collected "
+                    "for remittance do not become retail revenue. Reconcile "
+                    "actual refunds and handling costs against those estimates "
+                    "as cohorts mature. The canonical annual cases stay "
+                    "$250,000 multiplied by 5% equals $12,500; $1,125,000 "
+                    "multiplied by 11.5% equals $129,375; and $2,000,000 "
+                    "multiplied by 18% equals $360,000. These margins already "
+                    "include goods, fulfillment, advertising, and operating "
+                    "costs. Do not subtract them again or add hypothetical "
+                    "connector savings without rebuilding the scenario. Keep "
+                    "the Conservative and Base teams at two full-time staff "
+                    "plus three contractors, and the Scaled team at three "
+                    "full-time staff plus four contractors. Automation protects "
+                    "those staffing assumptions only when exception volume "
+                    "remains manageable."
+                ),
+            ],
+            "table": {
+                "caption": "Six-stage waterfall from product evidence to contribution-margin decisions",
+                "headers": [
+                    "Stage and authoritative starting evidence",
+                    "Normalization and join rule to implement",
+                    "Acceptance test with concrete operator detail",
+                    "Fallback when the evidence remains insufficient",
+                ],
+                "rows": [
+                    [
+                        "Resolve product identity from manufacturer catalogs and supplier invoices.",
+                        "Join exact GTIN and manufacturer part number; retain variant attributes.",
+                        "Require agreement on pack size, material, model, and intended use.",
+                        "Hold the SKU for manufacturer confirmation before buying or publishing.",
+                    ],
+                    [
+                        "Verify supplier authority using registry records and brand confirmation.",
+                        "Keep legal entity identity separate from channel-specific authorization documents.",
+                        "Match invoice issuer, remittance beneficiary, and independently confirmed supplier contact.",
+                        "Use an already authorized distributor while disputed credentials receive review.",
+                    ],
+                    [
+                        "Attach official safety records and applicable product certification evidence.",
+                        "Match model aliases and affected lots rather than keywords alone.",
+                        "Require reviewed recall disposition and applicable documentation before releasing stock.",
+                        "Suspend affected listings and coordinate verified stock isolation with the warehouse.",
+                    ],
+                    [
+                        "Calculate landed cost from broker-supported classification and current schedules.",
+                        "Version tariff assumptions by effective date, origin, and shipment characteristics.",
+                        "Reconcile entry estimates against broker invoices and actual received quantities.",
+                        "Price the higher supported cost or defer the replenishment commitment.",
+                    ],
+                    [
+                        "Join commerce events with processor and warehouse operational records.",
+                        "Preserve one-to-many shipments, refunds, disputes, and balance transactions explicitly.",
+                        "Explain every order-total difference using dated source-backed reconciliation entries.",
+                        "Use authorized exports and a manual exception queue during connector outages.",
+                    ],
+                    [
+                        "Calculate contribution using matured cohorts and attributed acquisition costs.",
+                        "Separate net sales, variable costs, fixed overhead, and cash timing.",
+                        "Compare expected returns costs with realized refunds and warehouse handling.",
+                        "Pause unprofitable acquisition cells while preserving profitable organic fulfillment.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Register the source and permission boundary",
+                    "action": "Record owner, endpoint, scopes, contract, refresh target, and manual fallback.",
+                    "detail": "Test read-only access first and save the current documentation date beside the connector configuration.",
+                },
+                {
+                    "step": 2,
+                    "title": "Capture replayable evidence",
+                    "action": "Store source payloads with timestamps, checksums, currency fields, and stable identifiers.",
+                    "detail": "Redact secrets from logs, restrict customer data, and commit pagination cursors only after successful writes.",
+                },
+                {
+                    "step": 3,
+                    "title": "Reconcile representative exceptions",
+                    "action": "Replay a partial shipment, duplicate event, delayed refund, and changed inventory count.",
+                    "detail": "Confirm that each replay changes the intended state once and leaves a traceable explanation.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release narrow automation with recovery",
+                    "action": "Enable alerts before write actions, then authorize specific routing and inventory operations.",
+                    "detail": "Assign an exception owner, a stale-data cutoff, and a tested manual procedure for each automated action.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Underwrite the two adjacent plays without contaminating retail revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "For expired_chrome_extension_acquisitions, treat dormant as a "
+                    "maintenance condition, not an expired domain that anyone "
+                    "can claim. Screen Chrome Web Store, WordPress Plugin "
+                    "Directory, and Shopify App Store utilities against the "
+                    "mapped target of 10,000–250,000 active users and ratings "
+                    "of at least 4.5 stars. Public metrics are not comparable "
+                    "across those venues: WordPress uses install buckets, "
+                    "Chrome displays user indicators, and Shopify listings "
+                    "do not establish an app's active-user count. Require "
+                    "owner-authorized exports to prove the actual cohort. "
+                    "Investigate the last substantive release, open support "
+                    "load, permission footprint, dependency vulnerabilities, "
+                    "repository ownership, billing rights, and platform "
+                    "transfer conditions. Acquisition requires the owner's "
+                    "agreement and a supported transfer process. As a "
+                    "sensitivity case, 20,000 verified active users multiplied "
+                    "by 2% paying conversion and $5 monthly pricing yields "
+                    "$2,000 monthly subscription revenue, or $24,000 annually "
+                    "before churn and refunds. If explicit annual operating "
+                    "costs are $12,000, potential annual cashflow is $12,000, "
+                    "making the mapped 1–2 times range $12,000–$24,000. "
+                    "That valuation is a hypothesis requiring cohort tests, "
+                    "not an observed market price or a reason to overlook "
+                    "transfer restrictions and support debt."
+                ),
+                (
+                    "Monetize acquired utilities through additive Pro workflows "
+                    "that solve a measurable task, such as bulk catalog "
+                    "validation, authorized inventory exports, or merchant-controlled "
+                    "exception notifications. Grandfather every legacy free "
+                    "feature and preserve the existing narrow permission "
+                    "boundary. Do not insert hidden tracking or background "
+                    "advertising scripts; any contextual partner offer must "
+                    "be genuinely opt-in, clearly explained, and consistent "
+                    "with the marketplace's current rules. Validate paid "
+                    "demand with a limited voluntary cohort before converting "
+                    "the acquisition model into a budget. If only 1% "
+                    "of the same 20,000 active users buys at $5 monthly, "
+                    "annual revenue falls to $12,000 and the assumed "
+                    "$12,000 operating cost consumes all projected cashflow. "
+                    "That downside supports a lower fixed price, a "
+                    "carefully specified earnout, or walking away. Keep "
+                    "subscription receipts and acquisition expenses in a "
+                    "separate business ledger; they are not retail sales "
+                    "inside the volume's canonical scenarios. Before closing, "
+                    "verify intellectual-property assignments, dependency "
+                    "licenses, account transfer steps, customer-data handling, "
+                    "and release-signing access. The operational fallback "
+                    "is to maintain the existing free utility while "
+                    "testing optional additions, or decline the acquisition "
+                    "if safe maintenance cannot be funded without invasive "
+                    "monetization."
+                ),
+                (
+                    "For agency_ad_spend_card_multiplier_rebate_cycling, the information "
+                    "edge is contract reconciliation, not artificial transaction "
+                    "volume. Obtain written client authorization, platform "
+                    "billing eligibility, issuer reward terms, rebate schedules, "
+                    "credit limits, payment dates, and client pass-through "
+                    "obligations before routing genuine advertising spend. "
+                    "Illustratively, $100,000 of monthly client media spend "
+                    "at an eligible 2% reward produces $2,000 of gross "
+                    "reward value. Deduct $500 of funding cost, $300 "
+                    "of incremental processing charges, and $800 contractually "
+                    "owed to clients; only $400 remains before desk "
+                    "overhead and taxes. The $100,000 is client media "
+                    "spend, not operator retail revenue, and the $400 "
+                    "is a separate illustrative contribution rather than "
+                    "an addition to canonical owner profit. Value points "
+                    "at an evidenced usable redemption rate, apply "
+                    "eligibility exclusions, and recognize reversals when "
+                    "spend is refunded or rewards are clawed back. "
+                    "If the reward rate falls to 1%, the same "
+                    "cost structure loses $600 monthly. Stop rewards-dependent "
+                    "spending immediately and move to client-direct billing "
+                    "or prefunded approved agency terms. Never manufacture "
+                    "purchases, rotate identities to evade limits, or "
+                    "increase client budgets merely to chase a multiplier. "
+                    "Reconcile platform invoices, issuer statements, and "
+                    "client balances before recognizing the residual economics."
+                ),
+            ],
+            "table": {
+                "caption": "Adjacent-play diligence: reproducible math and loss-limiting alternatives",
+                "headers": [
+                    "Mapped play and evidence checkpoint",
+                    "Illustrative unit math or verification calculation",
+                    "Failure mode that invalidates the thesis",
+                    "Required fallback preserving customer and client interests",
+                ],
+                "rows": [
+                    [
+                        "expired_chrome_extension_acquisitions: substantiate active adoption through seller-authorized cohort exports.",
+                        "20,000 active users times 2% conversion yields 400 paying accounts.",
+                        "Public install indicators conceal churn, inactivity, or unsupported installation claims.",
+                        "Reprice from verified cohorts or decline the transfer before funding.",
+                    ],
+                    [
+                        "expired_chrome_extension_acquisitions: separate additive subscription revenue from maintenance costs.",
+                        "400 accounts times $5 monthly produces $24,000 annual subscription revenue.",
+                        "Support obligations and refunds exceed the assumed $12,000 annual costs.",
+                        "Preserve legacy features and test optional paid workflows with volunteers.",
+                    ],
+                    [
+                        "expired_chrome_extension_acquisitions: anchor acquisition price to tested potential annual cashflow.",
+                        "$12,000 cashflow times one to two supports $12,000–$24,000 indicative pricing.",
+                        "A 1% conversion rate leaves zero cashflow under identical costs.",
+                        "Reduce fixed consideration, specify measurable earnout terms, or walk away.",
+                    ],
+                    [
+                        "agency_ad_spend_card_multiplier_rebate_cycling: verify eligible spend and contractual reward ownership.",
+                        "$100,000 genuine monthly spend times 2% yields $2,000 gross rewards.",
+                        "Issuer exclusions or client contracts eliminate the desk's reward entitlement.",
+                        "Use client-direct billing when agency reward retention lacks explicit support.",
+                    ],
+                    [
+                        "agency_ad_spend_card_multiplier_rebate_cycling: deduct every incremental cost and client obligation.",
+                        "$2,000 less $500, $300, and $800 leaves $400 monthly contribution.",
+                        "Funding delays and processing charges erase the remaining unit economics.",
+                        "Require approved prefunding terms and stop any rewards-dependent budget expansion.",
+                    ],
+                    [
+                        "Both adjacent plays require distinct ledgers and attributable source evidence.",
+                        "Exclude client media principal and subscription receipts from canonical retail scenarios.",
+                        "Blended reporting falsely inflates retail revenue and masks capital requirements.",
+                        "Report standalone economics and rebuild underwriting before changing the core forecast.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Diagnose stale data before automation spends money",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Instrument the pipeline around freshness, completeness, "
+                    "duplication, and business reconciliation rather than "
+                    "HTTP success alone. A connector returning status "
+                    "200 with yesterday's inventory can create expensive "
+                    "overselling. Track source-event time, ingestion time, "
+                    "last successful reconciliation, records processed, "
+                    "and the oldest unresolved exception. Use curl "
+                    "or HTTPie against authorized test endpoints, jq "
+                    "to inspect payload shape, and a restricted API "
+                    "client such as Postman for repeatable requests. "
+                    "Strip customer information and bearer tokens from "
+                    "saved examples. SQL assertions should test duplicate "
+                    "order identifiers, negative sellable quantities, "
+                    "missing currency, and refunds exceeding eligible "
+                    "captured amounts after documented adjustments. SQLite "
+                    "or DuckDB can reproduce a suspicious calculation "
+                    "from exported evidence without granting another "
+                    "analyst production write access. Simulate duplicate "
+                    "webhooks, out-of-order refunds, truncated pagination, "
+                    "and a warehouse outage in a sandbox. A routing "
+                    "worker must not create a second shipment when "
+                    "the first response times out. Use supported "
+                    "idempotency keys or an internal shipment-intent "
+                    "ledger plus provider lookup before retrying. "
+                    "Set thresholds from observed operating latency "
+                    "and warehouse cutoffs, then document the exact "
+                    "manual action triggered when those thresholds "
+                    "are exceeded."
+                ),
+                (
+                    "Connect failures to customer promises and statutory "
+                    "duties. Under the FTC Mail, Internet, or Telephone "
+                    "Order Merchandise Rule, 16 CFR Part 435, sellers "
+                    "need a reasonable basis for advertised shipping "
+                    "times; when no time is stated, the rule generally "
+                    "uses thirty days. Delays require the prescribed "
+                    "notice, consent, or refund handling for the "
+                    "circumstances, so an inventory alert must reach "
+                    "the customer-service queue before the promise "
+                    "expires. A warehouse stockout should suppress "
+                    "new sales where fulfillment cannot be supported, "
+                    "not merely turn a dashboard cell red. Safety "
+                    "matches should isolate affected inventory and "
+                    "preserve lot traceability. Privacy controls should "
+                    "follow actual statutory applicability: California "
+                    "Civil Code section 1798.100 includes notice "
+                    "and collection, use, retention, and sharing "
+                    "requirements for covered businesses. Keep "
+                    "customer enrichment limited to specified "
+                    "operational purposes and implement applicable "
+                    "deletion and retention rules across replicas, "
+                    "exports, and downstream processors. Retention "
+                    "campaigns should use documented contact "
+                    "preferences and suppression records rather "
+                    "than reconstructing audiences from deleted "
+                    "identifiers. During an outage, protect "
+                    "existing customers first: verify outstanding "
+                    "orders, communicate supported shipping dates, "
+                    "and stop discretionary acquisition spend "
+                    "when the order desk cannot fulfill the "
+                    "demand it is buying."
+                ),
+                (
+                    "Run a weekly operator review that fits the "
+                    "small-team model. Assign one owner to inventory "
+                    "and supplier exceptions, one to contribution "
+                    "and cash reconciliation, and contracted specialists "
+                    "to tightly scoped broker, security, and integration "
+                    "work. The two full-time staff and three contractors "
+                    "in the Conservative and Base cases cannot "
+                    "manually inspect every routine event, but "
+                    "they can clear a ranked queue of material "
+                    "exceptions. Rank by safety impact first, "
+                    "customer-promise exposure second, and dollars "
+                    "at risk third. An illustrative queue of "
+                    "200 exceptions per week at six minutes "
+                    "each consumes twenty hours; reducing "
+                    "avoidable duplicates to fifty saves fifteen "
+                    "hours of workload, not automatically fifteen "
+                    "hours of cash expense. Track whether "
+                    "recovered capacity actually prevents hiring "
+                    "or improves service. Review acquisition "
+                    "cost by matured cohort so ad-cost "
+                    "inflation cannot hide behind platform "
+                    "attribution changes. Test one source "
+                    "outage and one recovery replay monthly, "
+                    "rotate exposed credentials immediately, "
+                    "and verify backup restoration before "
+                    "expanding write permissions. The "
+                    "two-to-six-month first-deal window "
+                    "favors a narrow initial catalog "
+                    "with reliable evidence over a "
+                    "large catalog whose inventory, "
+                    "returns, and authorization records "
+                    "cannot be reconciled."
+                ),
+            ],
+            "table": {
+                "caption": "Six diagnostic checks linking observable failures to safe operating actions",
+                "headers": [
+                    "Diagnostic tool and reproducible test",
+                    "Evidence indicating a concrete operating failure",
+                    "Immediate action within authorized project resources",
+                    "Recovery proof before normal automation resumes",
+                ],
+                "rows": [
+                    [
+                        "Use curl and jq to inspect an authorized inventory response.",
+                        "Successful response contains source timestamps older than the warehouse cutoff.",
+                        "Disable affected automatic routing and obtain a dated warehouse stock export.",
+                        "Reconcile physical availability and reservations before publishing refreshed sellable quantities.",
+                    ],
+                    [
+                        "Replay duplicate webhook fixtures through the isolated staging event consumer.",
+                        "One source event produces multiple shipment requests or accounting entries.",
+                        "Suspend the affected worker and enforce stable event deduplication identifiers.",
+                        "Repeat the replay and confirm exactly one intended business-state transition.",
+                    ],
+                    [
+                        "Use SQL joins to compare refunds with processor balance transactions.",
+                        "Store refunds and processor adjustments fail to reconcile by currency.",
+                        "Queue order-level exceptions and preserve both original source records.",
+                        "Resolve differences with dated adjustments rather than silently overwriting transaction history.",
+                    ],
+                    [
+                        "Inspect Google Ads and Meta reports alongside booked retail cohorts.",
+                        "Attributed sales rise while matured contribution and cash collections deteriorate.",
+                        "Reduce failing acquisition cells and investigate attribution windows and returned orders.",
+                        "Confirm positive supported contribution using refunds, fulfillment, and actual advertising charges.",
+                    ],
+                    [
+                        "Search CPSC evidence against manufacturer aliases and received lot records.",
+                        "A newly published notice matches sellable inventory or recently shipped units.",
+                        "Isolate stock and escalate customer remedy and applicable reporting duties immediately.",
+                        "Document reviewed disposition and approved corrective actions before releasing affected inventory.",
+                    ],
+                    [
+                        "Restore a backup into an isolated database and replay saved events.",
+                        "Recovery omits deletion markers, shipment intents, or committed ingestion cursors.",
+                        "Keep production recovery writes disabled while repairing the restoration procedure.",
+                        "Verify reconciliation totals, access restrictions, suppression records, and replay idempotency.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before expanding automation",
+                "body": "Authorize each narrow write capability only after its evidence, economics, and recovery path have been demonstrated.",
+                "items": [
+                    "Verify supplier authority, product identity, applicable safety documents, and reviewed recall evidence for every launched SKU.",
+                    "Reconcile representative orders through refund, warehouse shipment, processor fee, and settlement without counting client principal as sales.",
+                    "Confirm connector scopes, actual account quotas, stale-data thresholds, signed webhook checks, and a named manual fallback owner.",
+                    "Demonstrate duplicate-safe replay and outage recovery; separately validate app-transfer rights or agency reward terms before funding either adjacent play.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Automate the decision only after you can reproduce the evidence, reconcile the dollars, and stop the downside.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create the eighteen-source register with authorized access methods, current contract costs, freshness targets, and fallback owners.",
+        "Build a SKU evidence packet joining manufacturer identity, dealer authority, recall research, lot traceability, and broker-supported landed cost.",
+        "Implement append-only ingestion, cursor-safe pagination, deterministic event deduplication, and nightly order-to-cash reconciliation.",
+        "Reproduce the three canonical owner-profit cases and keep subscription income, client media spend, and reward economics in separate ledgers.",
+        "Test the acquisition conversion downside and the agency reward-rate downside before committing purchase capital or extending client credit.",
+        "Run stale-inventory, duplicate-shipment, delayed-refund, and backup-restoration drills, then authorize only the write operations that pass.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 2064(b) — Reporting of substantial product hazards",
+            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
+            "relevance": "Covered manufacturers, importers, distributors, and retailers must evaluate qualifying safety information promptly and satisfy applicable reporting duties.",
+        },
+        {
+            "title": "15 U.S.C. 2068 — Prohibited acts involving consumer products",
+            "url": "https://www.law.cornell.edu/uscode/text/15/2068",
+            "relevance": "Supports controls preventing prohibited sales or distribution of covered recalled and nonconforming consumer products.",
+        },
+        {
+            "title": "16 CFR Part 435 — Mail, Internet, or Telephone Order Merchandise Rule",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435",
+            "relevance": "Connects inventory accuracy and shipping promises to reasonable-basis, delay-notice, consent, and refund requirements.",
+        },
+        {
+            "title": "19 U.S.C. 1484 — Entry of merchandise",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1484",
+            "relevance": "Establishes importer entry responsibilities and reasonable-care requirements relevant to classification, valuation, and supporting records.",
+        },
+        {
+            "title": "19 CFR Part 177 — Administrative rulings",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-177",
+            "relevance": "Provides the framework for CBP ruling requests and explains why another importer's published ruling requires careful factual comparison.",
+        },
+        {
+            "title": "California Civil Code section 1798.100 — General duties of businesses collecting personal information",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
+            "relevance": "For covered businesses, informs collection notices, purpose limits, proportionate data use, retention practices, and relevant contractual controls.",
+        },
+    ],
+}

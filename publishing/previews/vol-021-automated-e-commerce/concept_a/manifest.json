@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-021-automated-e-commerce",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1852539,
+      "sha256": "8ba08948b4372d474ddbbd87b773d86f2660b6257e144fe5a25bb92abc1a034b"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2383568,
+      "sha256": "0a2d213b3e86fc92df5c108b8ed4f510d046a946eb9cb748dcdee40ba5b20925"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 538415,
+      "sha256": "18fdf860f5221eb451808f3191ef4226183b8566a057368e784e2d443e7ad28a"
+    },
+    "book.epub": {
+      "bytes": 277486,
+      "sha256": "a19e0cf1f32baa95323b73a8d4c2b2e03204aa3e3f07607b0b54b92faab37aa0"
+    },
+    "art/cover.svg": {
+      "bytes": 4012,
+      "sha256": "fd93e9f3e397a67278a8e95808e6ed06470071f0295b9cedd0cbfa89ee31cc9f"
+    },
+    "art/scorecard.svg": {
+      "bytes": 76153,
+      "sha256": "a254abeeb7633335b38cf10e49d6b7bd53b28eac9b78fc5fbc31cb9cafc5a2a6"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11737,
+      "sha256": "c98fb993de731c02f4951f47eb35335ad15f255d0d5f4d763eb00ec9cab15e9b"
+    },
+    "art/diag_02.svg": {
+      "bytes": 9108,
+      "sha256": "35d48ebac2509ae0e0991cdabb148554c96fbb0fd615745074fcc2802b6a455a"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12412,
+      "sha256": "cdf37244b4d7f72e4f96c098dbed943bc672631abdd2eba26ba635e1634254ae"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10151,
+      "sha256": "3c64202fd51b9a47b36653b856a4fb8833b521a62b149fa4b7c95960c462954a"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10748,
+      "sha256": "6626ab97302457352077588e2e7bbdd90546d7fac645048b507f16a3da35f6a6"
+    },
+    "art/diag_06.svg": {
+      "bytes": 14988,
+      "sha256": "4bf0643fa25440fcd7b73052c570f9ae9e742e3a49276c2665a32e3fe4a7595d"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9444,
+      "sha256": "24586de211dd78c9c17ff57472f0310acf6f5ea6ec82c538763703a1aa1e370f"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8952,
+      "sha256": "b2f7cbdc08000feef6d7503667fae905eedece6921ce231630182cea78ef85cc"
+    }
+  }
+}

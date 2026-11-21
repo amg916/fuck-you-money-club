@@ -1,0 +1,666 @@
+from __future__ import annotations
+
+CHAPTER_11 = {
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "pod-architecture-contractor-kpis-exit-valuation",
+    "question_prompt": "How do you structure a lean 2 FT + 3 C (5 people) -> 3 FT + 4 C (7 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
+    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
+    "subtitle": "Shopify-to-3PL Seat Ownership, Contribution-Cohort Scorecards, Copyright Assignments & Buyer-Ready Accrual Books",
+    "layout_template": "action_checklist",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #28, Automated E-Commerce, holds Rank #21 with a 70/100 "
+        "Money-to-Manpower Score: a Disciplined Specialist Play, not unattended retail. "
+        "Organize its 18 mapped plays around two accountable employees and three "
+        "specialist contractors, expanding to three employees and four contractors "
+        "only when contribution dollars support the added capacity. Canonical annual "
+        "owner profits are $12,500 Conservative, $129,375 Base, and $360,000 Scaled. "
+        "This chapter turns order routing, inventory alerts, returns tracking, and "
+        "retention into named responsibilities with measurable acceptance tests. "
+        "Weekly scorecards connect warehouse exceptions to accrual earnings; signed "
+        "IP assignments, transferable dealer rights, and concentration controls "
+        "reduce buyer objections. Treat exit multiples as underwriting assumptions "
+        "and preserve a credible alternative: operating the same clean books for "
+        "durable, distributable cash."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual recognized retail sales net of refunds",
+            "note": "5% margin; $12,500 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,125,000",
+            "context": "Annual recognized retail sales net of refunds",
+            "note": "11.5% margin; $129,375 annual owner net profit; 2 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$2,000,000",
+            "context": "Annual recognized retail sales net of refunds",
+            "note": "18% margin; $360,000 annual owner net profit; 3 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Assign eighteen plays to five seats before adding capacity",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build one operating pod, not five loosely coordinated freelancers. "
+                    "For Candidate #28, the Conservative and Base configurations both "
+                    "contain two full-time seats and three contractor seats; an owner "
+                    "working daily must occupy a counted seat rather than become invisible "
+                    "labor. FT1 owns commercial performance, authorized-dealer relationships, "
+                    "purchasing economics, and the weekly close. FT2 owns order execution, "
+                    "inventory integrity, customer recovery, and the 3PL relationship. "
+                    "Contractor C1 delivers acquisition and creative production; C2 delivers "
+                    "retention and integration maintenance; C3 delivers bookkeeping and "
+                    "reconciliation. Contractors are bounded specialist capacity, not three "
+                    "additional full-time employees disguised by invoices. Record hours or "
+                    "deliverable capacity, replacement coverage, access scope, and acceptance "
+                    "criteria in each statement of work. At Scaled, add FT3 for customer "
+                    "experience and exception management, plus C4 for catalog and product-data "
+                    "quality. Transfer tasks explicitly instead of leaving the original "
+                    "employee accountable for everything. Shopify, Gorgias, Klaviyo, and the "
+                    "warehouse portal should each have a named internal owner and a "
+                    "documented recovery path. The outsourced warehouse remains a vendor "
+                    "organization outside the seven-person pod, but its fees and failures "
+                    "remain inside the economics. Use a shared exception queue so delegation "
+                    "changes visibility rather than concealing unfinished work."
+                ),
+                (
+                    "Use the following eighteen-play operating map to make the assigned "
+                    "portfolio executable: P01 dealer authorization, P02 assortment underwriting, "
+                    "P03 landed-cost purchasing, P04 catalog publishing, P05 demand forecasting, "
+                    "P06 replenishment alerts, P07 order routing, P08 warehouse reconciliation, "
+                    "P09 delivery exceptions, P10 returns tracking, P11 refund control, P12 "
+                    "paid acquisition, P13 creative testing, P14 lifecycle retention, P15 "
+                    "cohort analysis, P16 accrual close, P17 product-safety evidence, and P18 "
+                    "transferability documentation. These labels are this chapter's working "
+                    "allocation of the eighteen mapped plays, not additional revenue streams. "
+                    "FT1 remains accountable for P01 through P03 and P12 through P18; "
+                    "FT2 remains accountable for P04 through P11, with specialist execution "
+                    "assigned in the seat matrix. C3 prepares accounting evidence but never "
+                    "releases its own vendor payments. C2 can repair a routing integration "
+                    "but cannot independently change payout destinations. Every play needs "
+                    "one primary owner, one trained backup, one measurable output, and one "
+                    "linked procedure. Rehearse absence coverage monthly by having the "
+                    "backup resolve a real exception from the documented queue. If the "
+                    "founder must interpret undocumented supplier promises or rescue every "
+                    "inventory mismatch, the pod has automated clicks rather than transferred "
+                    "operating knowledge. Correct that dependency before hiring another "
+                    "specialist to absorb its symptoms."
+                ),
+                (
+                    "Buy contractor outcomes with retainers plus capped, auditable variable "
+                    "fees. An illustrative C1 agreement pays $1,200 monthly for eight "
+                    "accepted creative variants, campaign maintenance, and one contribution "
+                    "review; reserve any incentive for incremental contribution after media, "
+                    "refunds, and fulfillment, using a fixed baseline and attribution window. "
+                    "C2 might receive $900 monthly for monitored lifecycle flows and a "
+                    "bounded integration backlog; C3 might receive $600 for reconciliations "
+                    "and a documented monthly close. These example retainers total $32,400 "
+                    "annually before variable fees and are planning inputs, not additions "
+                    "to canonical profit. A critical routing incident requires acknowledgment "
+                    "within one covered business hour, a documented containment plan within "
+                    "four, and a next-business-day root-cause note. State coverage windows "
+                    "and emergency escalation separately; a small retainer does not purchase "
+                    "continuous staffing. Require written acceptance of creative rights, "
+                    "test orders, reconciliations, and change logs before paying disputed "
+                    "deliverables. Contracts do not determine worker classification by "
+                    "themselves: evaluate actual behavioral control, financial control, and "
+                    "the working relationship, plus applicable state tests. Preserve contractor "
+                    "discretion over methods where appropriate while retaining strict "
+                    "requirements for security and results. Budget employee payroll, taxes, "
+                    "benefits, and supervision explicitly before accepting the five-seat model "
+                    "as economically feasible."
+                ),
+            ],
+            "table": {
+                "caption": "Five-Seat Core and Seven-Seat Expansion: Accountable Owners, Accepted Outputs, and Coverage",
+                "headers": [
+                    "Seat and accountable operating boundary",
+                    "Mapped play execution and handoffs",
+                    "Compensation basis and acceptance evidence",
+                    "Coverage rule and capacity trigger",
+                ],
+                "rows": [
+                    [
+                        "FT1 commercial lead occupies one counted full-time seat",
+                        "Owns P01 through P03 and P12 through P18",
+                        "Budget loaded payroll against documented contribution and close ownership",
+                        "FT2 covers urgent supplier decisions within written spending limits",
+                    ],
+                    [
+                        "FT2 operations lead owns customer promises and warehouse execution",
+                        "Owns P04 through P11 and supervises warehouse exception resolution",
+                        "Budget loaded payroll against aged exceptions and inventory accuracy",
+                        "FT1 handles critical escalations through documented warehouse contact routes",
+                    ],
+                    [
+                        "C1 acquisition specialist controls bounded creative and media deliverables",
+                        "Executes P12 and P13 under commercial lead budget authority",
+                        "Illustrative monthly retainer buys eight accepted variants and reviews",
+                        "Pause launches when approved creative or contribution evidence fails",
+                    ],
+                    [
+                        "C2 lifecycle specialist maintains retention flows and approved integrations",
+                        "Executes P14 and supports P06 P07 P10 automation",
+                        "Illustrative monthly retainer buys monitored flows and tested changes",
+                        "FT2 switches routing to documented manual fallback during incidents",
+                    ],
+                    [
+                        "C3 bookkeeping specialist prepares independently reviewed accounting evidence",
+                        "Executes P15 P16 and financial documentation within P18",
+                        "Illustrative monthly retainer buys reconciliations and supported accrual schedules",
+                        "FT1 reviews journal entries and independently releases vendor payments",
+                    ],
+                    [
+                        "FT3 scaled customer-experience lead becomes the third employee",
+                        "Takes P09 through P11 accountability through signed responsibility transfer",
+                        "Loaded payroll requires demonstrated service backlog and contribution coverage",
+                        "FT2 remains backup for recalls and warehouse recovery incidents",
+                    ],
+                    [
+                        "C4 scaled catalog specialist becomes the fourth contractor",
+                        "Executes P04 and assembles P17 evidence for internal review",
+                        "Per accepted batch pricing requires accurate variants and rights",
+                        "FT2 validates samples before catalog changes reach selling channels",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make specialist leverage survive the founder's absence",
+                "body": (
+                    "Use small, repeatable evidence packages rather than broad promises "
+                    "of automation or unrestricted contractor availability."
+                ),
+                "items": [
+                    "Run a low-value test order after every routing change; verify the warehouse acknowledgment, shipping service, tracking event, and accounting treatment.",
+                    "Give the acquisition contractor contribution by SKU and refund cohort, not unrestricted access to customer exports or payout settings.",
+                    "Keep dealer permissions beside the corresponding Shopify collections so revoked territory or channel rights can be acted on immediately.",
+                    "Record a backup resolving one real return and one stock discrepancy each month; screen recordings alone do not demonstrate independent execution.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Run a weekly scorecard that exposes contribution and concentration",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Hold a forty-five-minute weekly operating review using one frozen "
+                    "reporting cutoff, one metric dictionary, and links to underlying "
+                    "transactions. FT1 publishes net sales, contribution dollars, acquisition "
+                    "spend, cash availability, and supplier concentration; FT2 publishes "
+                    "routing success, overdue orders, available-to-promise accuracy, returns "
+                    "aging, and customer-contact backlog. C1 explains campaign economics, "
+                    "C2 explains lifecycle exceptions, and C3 reconciles material differences "
+                    "between commerce reports and the ledger. Define contribution consistently "
+                    "as recognized sales after refunds less product cost, outbound fulfillment, "
+                    "payment fees, variable return costs, and attributable advertising. Do "
+                    "not subtract a refund twice when the revenue number already excludes "
+                    "it. Separate contribution before advertising when diagnosing product "
+                    "economics, but label it explicitly. Revenue per person is secondary "
+                    "because warehouse labor is purchased externally and contractor capacity "
+                    "varies. Report contribution per internal operating hour alongside total "
+                    "outsourced spend. Each red metric must produce a named action, a "
+                    "deadline, and a quantified exposure, such as orders awaiting a carrier "
+                    "scan or dollars trapped in unreconciled returns. Close prior actions "
+                    "before discussing new experiments. The meeting succeeds when it changes "
+                    "an operating decision, not when every chart has an attractive trend. "
+                    "Archive the packet so a buyer can trace historical decisions."
+                ),
+                (
+                    "Set initial service thresholds from the actual selling promise, then "
+                    "tighten them with evidence. A useful starting design targets at least "
+                    "99.5% successful automated routing, at least 98% shipment within the "
+                    "promised window, and at least 99% agreement between sampled physical "
+                    "units and the inventory ledger. These are internal operating targets, "
+                    "not claims about existing performance. Define routing success as an "
+                    "eligible paid order acknowledged by the correct warehouse without "
+                    "manual repair; exclude documented fraud holds from both numerator and "
+                    "denominator. Track stockout exposure as forecast contribution lost, "
+                    "not merely the number of empty SKUs. For returns, report requests "
+                    "awaiting labels, parcels received but uninspected, refunds due, and "
+                    "resalable units awaiting restock separately. A warehouse receipt does "
+                    "not prove a refund was issued. Under 16 CFR 435.2, shipping promises "
+                    "need a reasonable basis, and qualifying delays require the prescribed "
+                    "customer options and refund handling. Configure alerts around those "
+                    "obligations rather than an arbitrary warehouse dashboard color. Test "
+                    "whether Shopify Flow or middleware retries create duplicate fulfillments "
+                    "and whether failed webhooks enter a visible dead-letter queue. Resolve "
+                    "root causes before rewarding contractors for increasing order volume "
+                    "through a visibly unstable fulfillment process."
+                ),
+                (
+                    "Adopt a maximum 25% exposure policy for any single customer and "
+                    "each material commercial counterparty, with separate denominators rather "
+                    "than one misleading blended percentage. Measure customers by trailing "
+                    "twelve-month net sales, suppliers by trailing purchases, and warehouses "
+                    "by shipped orders; also track concentrated contribution and inventory "
+                    "replacement lead times. A consumer retailer may have negligible customer "
+                    "concentration while one distributor supplies most profitable products. "
+                    "Show both trailing twelve-month and latest-quarter views to catch "
+                    "rapid deterioration. One primary 3PL, processor, or storefront platform "
+                    "will often exceed the cap in a lean operation. Report that breach "
+                    "plainly; a backup account does not reduce actual concentration until "
+                    "volume moves. Maintain a dated remediation plan with tested export "
+                    "procedures, alternate receiving capacity, inventory ownership records, "
+                    "and estimated switching cash. Do not create four nominal suppliers "
+                    "controlled by the same parent and call the risk diversified. Aggregate "
+                    "related counterparties and shared failure points. Expansion from five "
+                    "to seven people requires both service pressure and durable contribution "
+                    "coverage after additional loaded cost. Adding seats because gross sales "
+                    "rose can lock the business into a larger payroll just as advertising "
+                    "inflation or supplier withdrawal erases the margin supporting it."
+                ),
+            ],
+            "table": {
+                "caption": "Weekly Operator Scorecard: Definitions, Intervention Thresholds, and Evidence Owners",
+                "headers": [
+                    "Metric and exact measurement boundary",
+                    "Initial threshold or decision rule",
+                    "Required evidence and accountable seat",
+                    "Corrective action when performance deteriorates",
+                ],
+                "rows": [
+                    [
+                        "Contribution dollars deduct product fulfillment fees returns and advertising",
+                        "Reduce acquisition when marginal contribution turns negative after cohort adjustment",
+                        "FT1 signs weekly SKU bridge with C3 ledger reconciliation",
+                        "C1 pauses losing segments and records retest conditions explicitly",
+                    ],
+                    [
+                        "Routing success measures correct warehouse acknowledgment without manual repair",
+                        "Target at least 99.5% across eligible paid order population",
+                        "FT2 retains order identifiers timestamps and middleware exception logs",
+                        "C2 contains failures and tests duplicate prevention before restoration",
+                    ],
+                    [
+                        "Shipment timeliness measures dispatch against the customer-facing promised window",
+                        "Target at least 98% while addressing every overdue promise",
+                        "FT2 compares order promises against carrier acceptance event records",
+                        "Notify affected customers and apply required delay or refund procedures",
+                    ],
+                    [
+                        "Inventory accuracy compares sampled physical quantities with recorded sellable units",
+                        "Target at least 99% with separately reported high-value discrepancies",
+                        "FT2 retains cycle counts adjustments and warehouse dispute documentation",
+                        "Suppress unsupported availability and investigate repeated location-level count variances",
+                    ],
+                    [
+                        "Return aging separates label inspection refund and restocking stages",
+                        "Escalate every missed contractual deadline and applicable refund requirement",
+                        "FT2 links return identifiers to refund and restocking evidence",
+                        "Assign aged cases individually rather than clearing aggregate dashboard totals",
+                    ],
+                    [
+                        "Concentration tracks customers suppliers warehouses and critical platform counterparties",
+                        "Cap each measured exposure at 25% and disclose actual breaches",
+                        "FT1 reports denominators related-party aggregation and tested continuity evidence",
+                        "Reallocate real volume or document unresolved exposure and remediation dates",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze and reconcile the reporting population",
+                    "action": "C3 snapshots the prior week's orders, refunds, ad spend, and warehouse charges.",
+                    "detail": "Use one timezone and cutoff; reconcile missing events and preserve the exported source files.",
+                },
+                {
+                    "step": 2,
+                    "title": "Assign exceptions before the operating review",
+                    "action": "FT2 attaches an owner, customer exposure, and next action to every material service exception.",
+                    "detail": "Separate broken integrations from warehouse delays and customer-requested holds so fixes address the actual cause.",
+                },
+                {
+                    "step": 3,
+                    "title": "Approve bounded commercial changes",
+                    "action": "FT1 sets campaign limits, purchase commitments, and contractor priorities from reconciled contribution.",
+                    "detail": "Record the expected dollar effect and prohibit the preparer from independently releasing related payments.",
+                },
+                {
+                    "step": 4,
+                    "title": "Verify closure and preserve the decision trail",
+                    "action": "The responsible backup checks completed actions against transaction-level evidence.",
+                    "detail": "Carry unresolved actions into the next packet with original dates, updated exposure, and explicit escalation.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Reconcile canonical earnings to accrual books and transferable rights",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Anchor every plan to the canonical scorecard before discussing "
+                    "optimization. Conservative recognized retail revenue is $250,000 at "
+                    "5%, producing $12,500 annual owner net profit and $237,500 total "
+                    "modeled costs. Base is $1,125,000 at 11.5%, producing $129,375 "
+                    "profit and $995,625 costs. Scaled is $2,000,000 at 18%, producing "
+                    "$360,000 profit and $1,640,000 costs. All three revenue figures "
+                    "represent retail sales net of refunds, despite the scorecard's gross "
+                    "revenue label; they are not marketplace GMV, advertising budgets, or "
+                    "payment-processor deposits. Goods, fulfillment, and advertising already "
+                    "sit inside the margin calculation. The stated $4,000 to $25,000 "
+                    "monthly opex range cannot substitute for the complete cost envelope, "
+                    "which also includes inventory economics and other costs represented "
+                    "in those margins. Build a detailed bridge rather than assuming that "
+                    "range funds every operating requirement. Annual profit divided by "
+                    "twelve gives average monthly earnings of $1,041.67, $10,781.25, "
+                    "and $30,000 respectively, not a promise of monthly distributable cash. "
+                    "Seasonal buying, processor reserves, taxes, and debt service can absorb "
+                    "cash before distributions. The Conservative case is especially fragile "
+                    "for five seats; identify founder labor and fractional contractor capacity "
+                    "explicitly instead of implying that $12,500 comfortably supports "
+                    "additional unbudgeted compensation."
+                ),
+                (
+                    "Close monthly on an accrual basis with transaction-level links among "
+                    "Shopify, processor settlements, warehouse movements, purchasing records, "
+                    "and QuickBooks Online or Xero. Establish the revenue-recognition point "
+                    "from the actual customer contract and shipping terms, then apply it "
+                    "consistently. Record inventory purchases as inventory until sold or "
+                    "otherwise expensed; processor payout timing does not determine revenue. "
+                    "Capitalize appropriate freight and duties into landed inventory cost, "
+                    "then release cost through a consistent costing method. Record collected "
+                    "sales tax as a liability where the seller is responsible, and reconcile "
+                    "marketplace-facilitator collections separately. Maintain reserves or estimates "
+                    "for expected returns, damaged goods, chargebacks, and obsolete inventory "
+                    "under the chosen accounting policy, with supporting history and subsequent "
+                    "true-ups. Cohort reports should group customers by first purchase month "
+                    "and channel, then measure realized contribution through a defined "
+                    "observation window. Do not compare a mature twelve-month cohort with "
+                    "a newly acquired thirty-day cohort and call the difference deteriorating "
+                    "retention. Klaviyo attribution is a marketing view, not independent "
+                    "evidence of incremental earnings. Reconcile its claimed sales to actual "
+                    "orders and use holdouts where feasible. Preserve source exports and "
+                    "versioned calculation logic so another operator can reproduce the "
+                    "reported margins without the founder's spreadsheet memory."
+                ),
+                (
+                    "Build the transferability file while relationships are healthy. Obtain "
+                    "signed copyright assignments from creative and integration contractors "
+                    "covering the identified deliverables; 17 U.S.C. section 204(a) generally "
+                    "requires a signed writing for copyright ownership transfers. Payment "
+                    "alone does not establish ownership, and a broad work-for-hire label "
+                    "does not solve every contractor arrangement. Separate newly assigned "
+                    "work from licensed fonts, stock photography, open-source components, "
+                    "and preexisting contractor tools, documenting the buyer's continuing "
+                    "usage rights. Store dealer authorizations, territory restrictions, channel "
+                    "permissions, assignment provisions, and change-of-control terms alongside "
+                    "each supplier account. A profitable listing loses value if the buyer "
+                    "cannot continue selling it. Maintain product traceability, supplier "
+                    "certificates where applicable, insurance schedules, incident logs, and "
+                    "recall procedures. Evaluate reporting duties under 15 U.S.C. section "
+                    "2064(b) when information reasonably supports a reportable product hazard; "
+                    "do not wait for ordinary customer-support thresholds. For imported "
+                    "goods, document who is importer of record and preserve classification, "
+                    "valuation, and duty evidence supporting reasonable care under 19 U.S.C. "
+                    "section 1484. Inventory every privileged account and service credential "
+                    "by business owner, renewal date, and transfer procedure. Transferable "
+                    "books combine reproducible earnings with enforceable operating rights, "
+                    "not merely a tidy income statement."
+                ),
+            ],
+            "table": {
+                "caption": "Accrual and Rights Evidence: Forensic Checks That Protect Reported Owner Earnings",
+                "headers": [
+                    "Evidence package and accounting assertion",
+                    "Required reconciliation or ownership test",
+                    "Frequent distortion or transfer failure",
+                    "Named reviewer and acceptance evidence",
+                ],
+                "rows": [
+                    [
+                        "Canonical scenario bridge anchors sales costs and annual owner profit",
+                        "Reconcile $250,000 $1,125,000 and $2,000,000 against stated net margins",
+                        "Treating processor deposits as revenue conceals fees and settlement timing",
+                        "FT1 signs bridge showing $12,500 $129,375 and $360,000 profits",
+                    ],
+                    [
+                        "Inventory rollforward establishes owned quantities landed cost and write-downs",
+                        "Reconcile opening inventory purchases sales returns adjustments and closing inventory",
+                        "Expensing purchases immediately distorts seasonal earnings and working-capital requirements",
+                        "C3 prepares schedule and FT2 verifies warehouse count evidence",
+                    ],
+                    [
+                        "Refund and chargeback schedules distinguish revenue reversals from processing costs",
+                        "Tie commerce events processor adjustments reserves and subsequent settlements",
+                        "Subtracting refunded sales twice understates contribution and confuses cohort comparisons",
+                        "C3 documents estimates and FT1 reviews material subsequent true-ups",
+                    ],
+                    [
+                        "Customer cohort workbook measures realized contribution across equal observation windows",
+                        "Match acquisition spend and subsequent orders using reproducible customer identifiers",
+                        "Mixing mature and immature cohorts creates false retention deterioration",
+                        "C2 supplies lifecycle exports and C3 reconciles order totals",
+                    ],
+                    [
+                        "Creative and software rights register identifies transferable contractor deliverables",
+                        "Match signed assignments with files repositories and third-party license terms",
+                        "Paid invoices alone leave copyright ownership and resale rights unresolved",
+                        "FT1 verifies executed assignments and records every licensed dependency",
+                    ],
+                    [
+                        "Dealer safety and import files preserve continuing operating authority",
+                        "Review assignment terms traceability incident handling and importer responsibilities",
+                        "Unassignable dealer rights or missing safety evidence impair transaction continuity",
+                        "FT1 owns relationship evidence while FT2 validates product-level records",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four evidence packages before scaling or circulating buyer numbers",
+                "body": (
+                    "Stop the affected expansion or valuation claim when its supporting "
+                    "evidence fails; continue unrelated operating work with a named owner."
+                ),
+                "items": [
+                    "Reconcile all three canonical scenarios and identify every payroll, contractor, warehouse, advertising, and inventory cost category inside the modeled margin.",
+                    "Demonstrate the latest monthly close from source orders through settlements, inventory movements, return estimates, and the general ledger.",
+                    "Verify signed contractor IP assignments and supplier transfer provisions; list third-party rights that require separate permission or replacement.",
+                    "Measure customer and counterparty exposures against the 25% cap, disclose every breach, and test the recovery procedure for each critical dependency.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Underwrite an exit multiple against transferable earnings and cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Value the business from a defined earnings base, not from the "
+                    "largest revenue number on a broker slide. For a small owner-operated "
+                    "retailer, an illustrative screening range of two to four times "
+                    "normalized annual seller's discretionary earnings can frame discussion; "
+                    "it is a modeling assumption, not a verified transaction-comparable "
+                    "range. Establish current comparables and buyer financing constraints "
+                    "before quoting an asking price. SDE commonly adds back one working "
+                    "owner's compensation and documented discretionary or nonrecurring items, "
+                    "while an absentee buyer must price the replacement labor required "
+                    "to operate the business. Canonical owner net profit is neither "
+                    "automatically SDE nor EBITDA. Reconcile interest, taxes, depreciation, "
+                    "owner compensation, and recurring operating costs before selecting "
+                    "the metric. Advertising required to sustain sales, recurring integration "
+                    "repairs, and ordinary product testing are not discretionary merely "
+                    "because the seller dislikes paying for them. A premium requires "
+                    "repeatable contribution, low unresolved concentration, transferable dealer "
+                    "rights, clean inventory, and evidence that the pod operates without "
+                    "founder rescue. Buyers may discount businesses with heavy marketplace "
+                    "dependence even when revenue is growing. Present trailing monthly "
+                    "earnings and cohort evidence alongside the latest annual total so "
+                    "seasonality and recent margin erosion remain visible throughout underwriting."
+                ),
+                (
+                    "Keep illustrative arithmetic separate from the canonical operating "
+                    "cases. Multiplying Base owner profit of $129,375 by two and four "
+                    "produces $258,750 and $517,500; multiplying Scaled profit of $360,000 "
+                    "produces $720,000 and $1,440,000. Those are mechanical earnings-proxy "
+                    "values, not concluded enterprise values, because normalization and "
+                    "deal terms remain unresolved. The same exercise produces only $25,000 "
+                    "to $50,000 for Conservative profit of $12,500, which can be "
+                    "overwhelmed by transaction costs or replacement labor. Suppose a "
+                    "buyer identifies $60,000 of recurring replacement labor absent from "
+                    "Base expenses. Transferable annual earnings would fall to $69,375, "
+                    "and a three-times illustration becomes $208,125. A separate Scaled "
+                    "example with $90,000 of missing recurring replacement cost yields "
+                    "$270,000 and $810,000 at three times. Apply those deductions only "
+                    "when the costs are actually absent; subtracting already included "
+                    "payroll would distort valuation. Neither sensitivity changes the "
+                    "published scorecard. Bridge enterprise value to seller proceeds "
+                    "through debt, cash treatment, transaction expenses, working-capital "
+                    "adjustments, holdbacks, and contingent consideration. Define whether "
+                    "saleable inventory is included in normalized working capital or "
+                    "purchased separately. Counting inventory in both places manufactures "
+                    "proceeds that the purchase agreement will not deliver."
+                ),
+                (
+                    "Run a ninety-day transferability rehearsal before seeking offers. "
+                    "During the first month, complete the rights register, reconcile "
+                    "inventory, document contractor capacity, and close unresolved supplier "
+                    "permissions. During the second, have backups perform the weekly "
+                    "review and monthly close while the founder handles only documented "
+                    "escalations. During the third, operate a planned absence period and "
+                    "measure service, contribution, and exception aging against the prior "
+                    "baseline. Record failures honestly and repair the procedures rather "
+                    "than editing the evidence pack. Give prospective buyers staged, "
+                    "access-controlled financial and operational evidence; minimize customer "
+                    "data and follow applicable privacy obligations when preparing diligence "
+                    "exports. Provide aggregate cohort reporting before identifiable records "
+                    "are genuinely required. Keep the cash-cow alternative equally rigorous: "
+                    "fund replenishment, tax liabilities, expected returns, debt commitments, "
+                    "and a measured operating reserve before owner distributions. A reserve "
+                    "based on supplier lead times and downside contribution is more useful "
+                    "than an arbitrary percentage of revenue. Revisit whether the additional "
+                    "scaled seats still protect enough contribution to justify their loaded "
+                    "cost. The best exit preparation also improves continued ownership "
+                    "because each documented right, reconciled balance, and independently "
+                    "executed play reduces the founder's dependence on constant intervention "
+                    "without pretending retail risk has disappeared."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Valuation Bridge: Earnings Definitions, Multiple Arithmetic, and Seller-Proceeds Adjustments",
+                "headers": [
+                    "Scenario or underwriting adjustment",
+                    "Earnings basis and explicit arithmetic",
+                    "Illustrative result and interpretation",
+                    "Evidence required before buyer reliance",
+                ],
+                "rows": [
+                    [
+                        "Conservative canonical profit used solely as an earnings proxy",
+                        "$12,500 annual owner profit multiplied by two through four",
+                        "$25,000 to $50,000 before normalization and transaction structure adjustments",
+                        "Verify replacement labor and transaction costs before assuming saleability",
+                    ],
+                    [
+                        "Base canonical profit used solely as an earnings proxy",
+                        "$129,375 annual owner profit multiplied by two through four",
+                        "$258,750 to $517,500 before normalization and transaction structure adjustments",
+                        "Reconcile owner compensation recurring costs and latest monthly earnings",
+                    ],
+                    [
+                        "Scaled canonical profit used solely as an earnings proxy",
+                        "$360,000 annual owner profit multiplied by two through four",
+                        "$720,000 to $1,440,000 before normalization and transaction structure adjustments",
+                        "Verify seven-seat capacity and margins across seasonal trading cycles",
+                    ],
+                    [
+                        "Base sensitivity assumes omitted recurring replacement labor actually exists",
+                        "$129,375 less $60,000 equals $69,375 transferable annual earnings",
+                        "$208,125 at three times adjusted earnings in this illustration",
+                        "Prove omitted work and replacement cost without double-counting payroll",
+                    ],
+                    [
+                        "Scaled sensitivity assumes omitted recurring replacement labor actually exists",
+                        "$360,000 less $90,000 equals $270,000 transferable annual earnings",
+                        "$810,000 at three times adjusted earnings in this illustration",
+                        "Document replacement responsibilities and confirm expenses exclude that labor",
+                    ],
+                    [
+                        "Seller proceeds require a separate negotiated transaction consideration bridge",
+                        "Adjust agreed enterprise value for debt cash and working capital",
+                        "Separate closing cash from holdbacks earnouts and later payments",
+                        "Specify inventory treatment and exclude obsolete or unsaleable units",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "A buyer pays for earnings that survive the handoff, not automation that still needs the founder."
+    ),
+    "diagram_id": "diag-06",
+    "action_checklist": [
+        "Assign P01 through P18 to the five-seat core, name a trained backup for every play, and document the exact FT3 and C4 transfers before expanding.",
+        "Execute bounded contractor statements of work with acceptance evidence, coverage windows, capped incentives, restricted access, and signed deliverable-specific IP assignments.",
+        "Publish a weekly contribution and exception packet with stable denominators, transaction links, named corrective actions, and customer and counterparty concentration measured against 25%.",
+        "Close monthly accrual books that reconcile recognized sales, landed inventory, refunds, taxes, advertising, and all three canonical owner-profit cases without counting costs twice.",
+        "Build a transferability register covering dealer rights, product traceability, importer responsibilities, software licenses, privileged accounts, and tested continuity procedures.",
+        "Complete a ninety-day handoff rehearsal and compare normalized sale proceeds with retained operating cash after replacement labor, replenishment, liabilities, and reserves.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 U.S.C. section 204(a): Execution of transfers of copyright ownership",
+            "url": "https://www.law.cornell.edu/uscode/text/17/204",
+            "relevance": (
+                "Obtain a signed writing transferring identified contractor copyrights; "
+                "distinguish assigned deliverables from licensed third-party assets."
+            ),
+        },
+        {
+            "title": "26 U.S.C. section 3121(d): Employee definition for federal employment taxes",
+            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
+            "relevance": (
+                "Evaluate actual worker relationships under the applicable employee "
+                "definition rather than relying solely on contractor labels; review "
+                "additional state classification requirements separately."
+            ),
+        },
+        {
+            "title": "16 CFR section 435.2: Mail, Internet, or Telephone Order Merchandise Rule",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435/section-435.2",
+            "relevance": (
+                "Support shipment representations with a reasonable basis and implement "
+                "the required delay, cancellation, and refund procedures when applicable."
+            ),
+        },
+        {
+            "title": "15 U.S.C. section 2064(b): Reporting potentially hazardous consumer products",
+            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
+            "relevance": (
+                "Maintain escalation and reporting procedures for information that "
+                "reasonably supports a reportable defect, substantial product hazard, "
+                "or other covered safety condition."
+            ),
+        },
+        {
+            "title": "19 U.S.C. section 1484: Entry of merchandise and importer reasonable care",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1484",
+            "relevance": (
+                "Identify importer-of-record responsibilities and preserve classification, "
+                "valuation, and entry evidence supporting imported inventory costs."
+            ),
+        },
+        {
+            "title": "15 U.S.C. section 45: Unfair or deceptive acts or practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Review product claims, fulfillment representations, and customer-data "
+                "practices for consistency between actual operations and statements "
+                "made to consumers."
+            ),
+        },
+    ],
+}

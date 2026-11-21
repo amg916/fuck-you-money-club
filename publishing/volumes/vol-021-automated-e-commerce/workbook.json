@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-021-automated-e-commerce",
+  "volume_id": "vol-021-automated-e-commerce",
+  "title": "Automated E-Commerce — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for Authorized-Dealer Underwriting, 3PL Execution, Contribution Margins, Working Capital, Product Safety, Automated Retention, and Small-Team Launch Control",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Opportunity Underwriting and Counterparty Qualification",
+      "purpose": "Select an authorized-dealer retail opportunity whose assortment, supplier permissions, fulfillment requirements, and acquisition economics support a lean operating team. Establish evidence for every material assumption before inventory commitments, separating supplier claims from independently verified demand and executable terms.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Define one customer problem and one tightly bounded assortment. Collect current supplier price sheets, channel permissions, competitor delivered prices, and product specifications. Record document dates so an attractive historical margin cannot silently become the purchasing assumption.",
+        "Interview the supplier and proposed 3PL separately. Compare their inventory identifiers, packaging requirements, return procedures, and shipping commitments. Require written answers where a mismatch could create stranded inventory, customer refunds, or manual intervention during the first month.",
+        "Calculate a delivered-order contribution using actual product, freight, fulfillment, processing, and advertising quotes. Keep sales taxes outside revenue. Identify whether every quotation includes surcharges, minimum charges, storage, receiving, and peak-period changes before treating the model as executable.",
+        "Test demand with authorized creative and a bounded acquisition budget rather than buying the entire supplier catalog. Separate paid customer acquisition from repeat purchasing, and document the evidence needed before replenishment or an expanded assortment becomes justified.",
+        "Assign one owner to each unresolved counterparty issue and give that issue a dated resolution requirement. Reject opportunities where distribution rights, safety records, inventory availability, or positive contribution depend on verbal assurances that purchasing cannot enforce."
+      ],
+      "fields": [
+        {
+          "name": "Customer problem and initial assortment boundary",
+          "type": "textarea",
+          "prompt": "Describe the buyer, purchase occasion, product exclusions, and initial assortment size. Explain why these boundaries reduce fulfillment complexity while preserving enough delivered-order contribution to support acquisition and customer service without speculative repeat purchases.",
+          "example": "Launch eight authorized home-organization accessories for apartment residents buying coordinated storage sets. Exclude electrical items, children's products, food-contact products, and oversized cartons during the pilot. Target an $80 billed order with one standardized packing configuration; validate demand using 200 shipped orders before expanding the catalog."
+        },
+        {
+          "name": "Canonical opportunity classification and operating constraints",
+          "type": "textarea",
+          "prompt": "Record the candidate identity, ranking, score breakdown, capital boundaries, staffing expectations, and expected time to initial sales. Explain which constraints the proposed assortment satisfies and which require direct supplier or labor-market validation.",
+          "example": "Candidate #28, Automated E-Commerce, ranks #21 of 29 and scores 70/100: revenue 23, margin 13, team efficiency 14, accessibility 8, automation 12. This Disciplined Specialist Play permits $30,000–$250,000 startup capital, $4,000–$25,000 monthly opex, and 2–6 months to the first deal; validate the proposed $145,000 funding plan."
+        },
+        {
+          "name": "Supplier identity and authorized-dealer evidence",
+          "type": "textarea",
+          "prompt": "Identify the contracting entity, payment beneficiary, brand authorization, permitted territories, and approved sales channels. Specify how purchasing verifies documents independently and blocks payments when bank details or distribution permissions change unexpectedly.",
+          "example": "Obtain the manufacturer's signed dealer agreement naming the operating entity and its Shopify storefront. Confirm authorization through a published manufacturer telephone number, not the salesperson's email signature. Permit domestic direct-to-consumer sales only; prohibit marketplace listings until written channel permission and warranty coverage are documented."
+        },
+        {
+          "name": "Demand evidence and competitive delivered-price comparison",
+          "type": "textarea",
+          "prompt": "Record comparable delivered prices, availability, review patterns, and customer objections using dated observations. Distinguish actual purchase evidence from search interest or supplier projections, and specify the minimum pilot sample needed before increasing inventory exposure.",
+          "example": "Capture ten competing bundles priced from $76 to $89 including standard delivery. Interview twelve target buyers and classify objections by dimensions, durability, and delivery timing. Release a $2,400 advertising pilot targeting 200 shipped orders; favorable click-through rates alone do not authorize the next purchase order."
+        },
+        {
+          "name": "Landed product cost and supplier commercial terms",
+          "type": "textarea",
+          "prompt": "Break the landed cost into supplier price, inbound freight, duties where applicable, inspection, and receiving. Record minimum quantities, deposit requirements, ownership transfer, and the exact evidence supporting any assumed duty rate or payment extension.",
+          "example": "Underwrite $28 landed cost per shipped-order equivalent: $24 merchandise, $2 inbound freight, $1 duty provision, and $1 inspection plus receiving. The duty provision remains provisional until classification review. A 2,400-equivalent purchase requires $67,200; do not assume supplier credit before a signed payment schedule exists."
+        },
+        {
+          "name": "3PL capacity and service-level qualification",
+          "type": "textarea",
+          "prompt": "Specify fulfillment capacity, receiving turnaround, cutoff times, carton limits, inventory accuracy, and exception ownership. Require a quotation showing which activities are included in fulfillment and which remain separately billable during normal and peak operations.",
+          "example": "The pilot requires weekday dispatch within one business day, receiving within two business days, and photographed damage exceptions. Model $9 fulfillment and $7 outbound shipping per order. Obtain separate storage and peak schedules; require capacity for 100 daily orders before expanding beyond the initial assortment."
+        },
+        {
+          "name": "Channel restrictions and advertising asset permissions",
+          "type": "textarea",
+          "prompt": "List permitted domains, marketplaces, geographic audiences, creative assets, and promotional restrictions. Connect each restriction to a storefront or advertising control so merchandising cannot publish an offer that exceeds the signed distribution and intellectual-property permissions.",
+          "example": "The agreement permits the retailer's own domain and manufacturer-supplied lifestyle images, but excludes third-party marketplaces and international shipping. Shopify Markets remains domestic-only. Store the current advertised-price policy with the agreement, and review its scope before coupons or promotional creative are scheduled for publication."
+        },
+        {
+          "name": "Product safety and traceability qualification",
+          "type": "textarea",
+          "prompt": "Identify applicable product rules, test documents, certification duties, lot identifiers, and recall contacts. Determine whether the business acts as importer or domestic reseller, because responsibility cannot be assigned solely from the supplier's marketing description.",
+          "example": "Require material specifications, lot codes, and a named manufacturer safety contact for all eight SKUs. Assess whether any applicable consumer-product rule triggers certification under 15 U.S.C. 2063. Warehouse receiving must preserve lot identity; missing required certificates or unreadable lot codes place the affected stock in quarantine."
+        },
+        {
+          "name": "Concentration exposure and substitute supply",
+          "type": "textarea",
+          "prompt": "Measure dependence on individual suppliers, products, advertising platforms, and fulfillment locations. Describe a substitute that preserves authorization and customer expectations, including the transition cost and maximum time the business can tolerate interrupted supply.",
+          "example": "The largest supplier represents 70% of planned sales, so maintain a second authorized assortment rather than silently substituting look-alike products. Allow ten business days for new listing and warehouse checks. If available coverage falls below fourteen days, reduce promotion before promising delivery against unconfirmed inbound inventory."
+        },
+        {
+          "name": "Underwriting decision and evidence expiration",
+          "type": "textarea",
+          "prompt": "State the decision, maximum initial exposure, evidence still required, and conditions that invalidate the decision. Give each condition a named operating role and review date rather than relying on a general statement of acceptable risk.",
+          "example": "Authorize a 200-order pilot only after dealer rights, product-rule assessment, and 3PL test shipments pass. Cap advertising at $2,400 and inventory commitments at the signed purchase authorization. The merchandising lead rechecks quotes after thirty days; a landed cost above $28 requires a revised contribution calculation."
+        }
+      ],
+      "completion_gate": "The operating lead signs a dated evidence register covering dealer rights, product traceability, executable fulfillment quotes, pilot economics, and funding capacity; unresolved safety or authorization issues prevent inventory release."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
+      "purpose": "Translate the canonical revenue scenarios into order-level economics, explicit refund treatment, incremental defect costs, and a funded cash cycle. Separate recognized retail revenue from customer collections, tax liabilities, inventory purchases, and processor balances so apparent growth cannot conceal cash exhaustion.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Enter the three canonical scenarios before constructing a bottom-up model. Preserve their revenue, margin, profit, and staffing totals exactly. Treat the scenario revenue figures as retail sales after refunds, regardless of a source heading describing gross revenue.",
+        "Reconcile billed merchandise sales to refunds and recognized revenue, then divide by shipped orders using one consistent denominator. Exclude sales taxes from revenue and record whether shipping charges, discounts, and recovered returned inventory are included in each calculation.",
+        "Calculate pre-advertising and post-advertising contribution separately. Keep original product costs, customer refunds, incremental defect handling, and replacement shipments distinct. Explain every reserve assumption using observed cohorts or a clearly bounded pilot estimate that can later be replaced.",
+        "Build a dated cash schedule for deposits, balances, advertising invoices, settlement delays, refunds, and payroll. Do not count a supplier deposit and the full invoice as separate inventory costs, or treat an unsettled processor balance as available bank cash.",
+        "Stress advertising costs, return rates, and supplier lead times independently before combining them. Label these as operating sensitivities rather than replacing canonical scenarios. Assign specific spending or replenishment actions to each cash and contribution threshold that the stress test breaches."
+      ],
+      "fields": [
+        {
+          "name": "Canonical scenario reconciliation",
+          "type": "textarea",
+          "prompt": "Record annual revenue, net margin, annual owner net profit, total modeled expense, and team size for each canonical scenario. Explain the revenue basis so underlying customer collections cannot be mistaken for recognized operator revenue.",
+          "example": "Conservative: $250,000 revenue, 5%, $12,500 profit, $237,500 expenses, 2 FT + 3 C. Base: $1,125,000, 11.5%, $129,375, $995,625, 2 FT + 3 C. Scaled: $2,000,000, 18%, $360,000, $1,640,000, 3 FT + 4 C. Revenue means retail sales net of refunds; goods, fulfillment, and advertising remain expenses."
+        },
+        {
+          "name": "Billed sales to recognized retail revenue bridge",
+          "type": "textarea",
+          "prompt": "Specify shipped orders, billed merchandise value, discount treatment, refund dollars, and resulting recognized sales. Distinguish refund dollars from returned-order counts, since partial refunds make those percentages different and require separate operating evidence.",
+          "example": "Base uses 15,000 shipped orders at $80 billed merchandise value after discounts: $1,200,000. Deduct $75,000 refunds to recognize $1,125,000, or $75 per shipped order. The refund-dollar ratio is 6.25%; it does not establish a 6.25% physical return rate. Sales taxes are excluded throughout."
+        },
+        {
+          "name": "Delivered-order cost stack",
+          "type": "textarea",
+          "prompt": "Enter per-order landed goods, fulfillment, shipping, processing, and incremental support or defect costs. Multiply each by the same shipped-order count and explain how recoverable returns and original payment fees are treated without double counting.",
+          "example": "Per shipped order, use $28 goods, $9 fulfillment, $7 shipping, $2.50 processing, and $1.50 incremental defect/support allowance: $48 total. Annual costs are $420,000, $135,000, $105,000, $37,500, and $22,500. Assume no returned-inventory recovery credit; processing includes retained fees on refunded orders."
+        },
+        {
+          "name": "Contribution, acquisition cost, and revenue attribution",
+          "type": "textarea",
+          "prompt": "Calculate contribution before advertising, advertising per shipped order, customer acquisition cost, and contribution after advertising. Use customer-level deduplication so repeat orders do not artificially lower the reported acquisition cost for genuinely new purchasers.",
+          "example": "Recognized revenue of $75 less $48 variable cost produces $27 pre-ad contribution. Annual advertising of $180,000 equals $12 per shipped order, leaving $15 contribution. With 12,000 new customers and 3,000 repeat orders, acquisition cost is $15 per new customer, not $12."
+        },
+        {
+          "name": "Refund scrub and incremental defect allowance",
+          "type": "textarea",
+          "prompt": "Define the data scrub for refunds, duplicate credits, chargebacks, and defect cases. Allocate the incremental allowance only to expenses not already recognized in refunds or original product cost, and establish a monthly true-up method.",
+          "example": "Split $22,500 into $13,500 incremental defect handling and $9,000 variable support. The defect estimate represents 450 incidents at $30 incremental cost, separate from $75,000 customer refunds. Deduplicate by order, refund identifier, and claim identifier; compare the allowance with actual replacement and handling costs monthly."
+        },
+        {
+          "name": "Fixed operating expense and owner-profit bridge",
+          "type": "textarea",
+          "prompt": "List annual fixed expenses and identify compensation assumptions that require local wage and contractor quotes. Reconcile contribution to owner profit without treating inventory purchases, owner drawings, or processor transfers as additional operating expenses.",
+          "example": "Annual post-ad contribution is $225,000. Deduct $95,625 fixed opex, or $7,968.75 monthly, to reach $129,375. Illustrative allocation: $72,000 loaded compensation for two full-time roles, $12,000 across three specialist contractors, and $11,625 software/insurance. Validate these quotes; variable support costs remain separate."
+        },
+        {
+          "name": "Inventory coverage and reorder calculation",
+          "type": "textarea",
+          "prompt": "Calculate daily demand, supplier lead time, safety coverage, reorder point, and inventory position. Distinguish units physically available from inbound stock, and inspect arrival dates before assuming the reorder calculation prevents a near-term stockout.",
+          "example": "At 15,000 order-equivalents annually, demand averages 41.0959 daily. A 35-day lead time plus 14 safety days requires a 2,014-equivalent reorder point after rounding up. With 1,700 on hand, 400 inbound, and 100 allocated, position is 2,000; inspect inbound dates and replenish in permitted case multiples."
+        },
+        {
+          "name": "Startup cash sources and uses",
+          "type": "textarea",
+          "prompt": "Build a fully reconciled opening cash allocation including inventory, acquisition spend, fixed overhead, settlement exposure, refund liquidity, and an uncommitted buffer. Explain which amounts are liquidity allocations rather than additional expenses in the annual profit model.",
+          "example": "Fund $145,000: $67,200 inventory, $30,000 advertising runway, $15,937.50 fixed overhead runway, $18,750 processor-delay cushion, $6,250 refund liquidity, and $6,862.50 unrestricted buffer. These allocations sum exactly to $145,000. The processor cushion is a stress assumption, while refund liquidity funds refunds already included in the revenue bridge."
+        },
+        {
+          "name": "Advertising inflation and profitability sensitivity",
+          "type": "textarea",
+          "prompt": "Stress acquisition spending while holding recognized sales and other costs constant to isolate exposure. Calculate the revised profit, margin, and spending threshold, then specify the intervention rather than presenting the stressed outcome as a canonical scenario.",
+          "example": "A 25% advertising increase raises spend from $180,000 to $225,000 and reduces Base profit to $84,375, or 7.5% of $1,125,000 revenue. Break-even advertising is $405,000 pre-ad contribution less $95,625 fixed opex, equaling $309,375. Begin corrective action well before that ceiling."
+        },
+        {
+          "name": "Cash review cadence and funding intervention",
+          "type": "textarea",
+          "prompt": "Define the cash forecast horizon, minimum available balance, processor-delay trigger, and purchasing intervention. Separate recognized profit from cash available for commitments, and state who can reduce discretionary spending when expected settlement dates move.",
+          "example": "Refresh a thirteen-week forecast every Monday using bank cash and dated settlements. Treat $18,750 as the modeled processor-delay exposure, not spendable cash. If projected unrestricted liquidity drops below $6,862.50, the operating lead freezes assortment expansion and reduces advertising before issuing another noncancelable purchase commitment."
+        }
+      ],
+      "completion_gate": "All three canonical scenarios reconcile exactly, the Base order model reaches $129,375, and the cash schedule separates expense recognition from settlement timing with funded inventory, refund, and interruption exposure."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Execution, Ledger, and Technical QA Pre-Flight",
+      "purpose": "Prove that storefront, payment processor, warehouse, carrier, returns workflow, and accounting ledger exchange complete and deduplicated records. Use controlled test orders and reconciliation evidence to prevent overselling, duplicate fulfillment, unsupported refunds, incorrect tax treatment, and silent integration failures.",
+      "chapter_ref": "Q7, Q8",
+      "instructions": [
+        "Map each event from checkout through settlement and returns to its authoritative system. Assign stable identifiers before building integrations, and document which system may change order, inventory, payment, and refund states when records arrive late or out of sequence.",
+        "Run controlled orders covering payment capture, warehouse rejection, partial shipment, cancellation, return, and refund. Record expected results before execution. Use sandbox transactions where supported and explicitly identify the small live transactions needed to validate physical warehouse and carrier behavior.",
+        "Reconcile orders to processor transactions and processor transactions to bank deposits separately. Account for settlement timing, refunds, fees, and withheld balances. A matching deposit total does not prove every underlying order was captured or refunded correctly.",
+        "Test duplicate events, delayed events, expired credentials, and temporary downstream outages. Require bounded retries and a visible exception queue. Demonstrate that replay restores missing work without issuing a second shipment, a second refund, or a duplicate ledger entry.",
+        "Retain an evidence packet containing test identifiers, screenshots, payload summaries, ledger results, and exception resolutions. Restrict access to customer information and credentials, and have someone other than the integration builder verify the final reconciliation before pilot traffic begins."
+      ],
+      "fields": [
+        {
+          "name": "Authoritative systems and event ownership",
+          "type": "textarea",
+          "prompt": "Map order creation, payment capture, allocation, shipment, return receipt, refund, and accounting posting to their authoritative systems. Specify how conflicting updates are resolved and which identifiers connect the complete transaction across systems.",
+          "example": "Shopify owns the commercial order; the processor owns capture and settlement; the 3PL owns physical receipt and shipment; QuickBooks Online holds accounting entries. Persist order ID, payment ID, fulfillment ID, return ID, and ledger batch ID. A carrier scan cannot independently mark an uncaptured order as paid."
+        },
+        {
+          "name": "SKU, bundle, and lot master validation",
+          "type": "textarea",
+          "prompt": "Define identifiers, units of measure, bundle components, carton dimensions, and lot capture requirements. Explain how the system prevents a sellable bundle from consuming the wrong component quantities or losing the traceability needed for a targeted recall.",
+          "example": "Bundle SET-04 consumes two BIN-02 units and one DIV-01 unit. Store component barcodes and actual packed dimensions in the warehouse master. A ten-bundle test must decrement twenty bins and ten dividers, preserve component lot records, and produce a carrier label consistent with the measured carton."
+        },
+        {
+          "name": "Payment capture and fulfillment release controls",
+          "type": "textarea",
+          "prompt": "Specify the payment state required before warehouse release, treatment of manual payment review, and cancellation timing. Identify how release decisions are recorded so customer support can distinguish pending payment from a genuine warehouse delay.",
+          "example": "Release prepaid orders only after confirmed capture and completed payment review. Keep authorized-but-uncaptured orders outside the 3PL dispatch queue. A cancellation received after pick confirmation creates a warehouse intercept request; support promises cancellation only after the warehouse confirms the parcel has not left its control."
+        },
+        {
+          "name": "Routing idempotency and retry behavior",
+          "type": "textarea",
+          "prompt": "Define the idempotency key, durable state record, retry schedule, and exception destination for order routing. Address the ambiguous case where a warehouse accepts an order but the integration times out before receiving confirmation.",
+          "example": "Use order ID plus fulfillment version as the routing key and enforce a unique durable record. Retry transient failures after one, five, and fifteen minutes. After a timeout, query the 3PL using the merchant reference before resubmission; unresolved results enter a staffed exception queue."
+        },
+        {
+          "name": "Inventory synchronization and oversell prevention",
+          "type": "textarea",
+          "prompt": "Specify available-to-promise logic, reservation timing, warehouse synchronization frequency, and stale-feed behavior. Separate quarantined, allocated, inbound, and physically available inventory so a delayed update cannot create unsupported customer delivery promises.",
+          "example": "Available-to-promise equals sellable on-hand stock less open reservations and the configured channel buffer. Exclude inbound and quarantined units. Refresh every fifteen minutes and alert after thirty minutes without a successful update. Disable affected product promotion when stock confidence falls below the documented operating threshold."
+        },
+        {
+          "name": "Shipment promises and carrier evidence",
+          "type": "textarea",
+          "prompt": "Record the promised shipping window, warehouse cutoff, label-generation state, carrier acceptance evidence, and delay notification procedure. Explain how customer-facing status avoids treating a printed shipping label as proof that physical dispatch occurred.",
+          "example": "A weekday order captured before 1 p.m. local warehouse time targets next-business-day dispatch. Label creation updates the order to packed, while carrier acceptance marks it shipped. If the promised shipping window cannot be met, trigger the delay process required by 16 CFR Part 435."
+        },
+        {
+          "name": "Returns inspection and refund authorization",
+          "type": "textarea",
+          "prompt": "Define return authorization, inspection grades, inventory disposition, refund limits, and evidence requirements. Describe how partial refunds and replacement shipments connect to the original order without issuing duplicate customer credits or restoring unsafe goods to stock.",
+          "example": "Return R-104 references order O-104 and the original capture. The 3PL records unopened, opened-resellable, damaged, or quarantine disposition with photographs. Support checks previous refunds before issuing a $40 partial credit against an $80 merchandise charge. Safety complaints bypass normal restocking and enter product review."
+        },
+        {
+          "name": "Order-to-ledger accounting test",
+          "type": "textarea",
+          "prompt": "Describe a complete accounting test covering merchandise sales, sales tax liability, processor clearing, fees, inventory relief, and refunds. State recognition timing and keep supporting operating allocations separate from entries justified by actual transactions.",
+          "example": "For an $80 order plus $6 tax, record $86 processor receivable, $80 sales, and $6 tax payable at the documented recognition point. A $2.50 fee leaves $83.50 settlement. Record $28 goods expense and inventory relief separately; refunds reverse the applicable sales and tax amounts."
+        },
+        {
+          "name": "Processor settlement and refund reconciliation",
+          "type": "textarea",
+          "prompt": "Specify reconciliation frequency, matching keys, acceptable timing differences, and escalation thresholds. Include captured transactions, processor fees, refunds, disputes, withheld balances, and bank receipts so an apparently balanced summary cannot conceal unmatched customer activity.",
+          "example": "Daily, match capture and refund IDs to processor activity, then match settlement IDs to bank deposits. For ten $86 captures, $25 fees, and one $86 full refund, expected settlement is $749 if no other adjustments apply. Escalate unexplained differences above $10 or older than two business days."
+        },
+        {
+          "name": "Access, backup, and release evidence",
+          "type": "textarea",
+          "prompt": "Record role permissions, authentication requirements, credential storage, backup scope, and evidence from recovery testing. Identify independent review of refunds and payout changes without giving every contractor administrative access to customer and settlement data.",
+          "example": "Require multifactor authentication for storefront, processor, warehouse, and ledger administrators. Support receives limited refund permissions; payout changes require independent confirmation using a previously verified contact. Export configuration and reconciliation records weekly, then restore a test mapping before release. Store secrets outside source files and shared spreadsheets."
+        }
+      ],
+      "completion_gate": "Controlled tests pass for routing, payment, inventory, shipment, return, and reconciliation; replay creates no duplicate effects, and an independent reviewer signs the evidence packet with every critical exception resolved."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Statutory, Contract, and Outreach Requirements Audit",
+      "purpose": "Convert product, import, tax, privacy, advertising, and consumer-protection requirements into evidence-backed operating tasks. Assign responsibility by actual business role and jurisdiction, preserve contractual remedies, and ensure promotional promises match the inventory, shipping, warranty, and refund processes the team can execute.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Identify selling jurisdictions, inventory locations, product categories, importer responsibilities, and customer-data flows before selecting requirements. Record the applicable authority and operational consequence for each finding rather than copying a general checklist that ignores the actual business model.",
+        "Obtain signed supplier and warehouse agreements, then extract clauses governing authorization, inspection, loss, recalls, insurance, data access, and termination. Flag gaps with the responsible contract owner and document the replacement language or commercial concession needed before commitments.",
+        "Verify that product pages, advertisements, checkout disclosures, shipping promises, return instructions, and customer messages describe the same offer. Require substantiation for measurable claims and preserve the evidence version used when each material promotion was published.",
+        "Separate transactional service messages from marketing email and text campaigns. Check recipient records, suppression behavior, vendor permissions, and applicable channel rules before sending. A completed purchase does not automatically establish every permission needed for unrelated promotional outreach.",
+        "Schedule recurring reviews for tax thresholds, safety incidents, advertising claims, contract renewals, and privacy requests. Retain enough evidence to reconstruct decisions without keeping customer data indefinitely, and assign a backup owner for time-sensitive reporting and response duties."
+      ],
+      "fields": [
+        {
+          "name": "Business registrations and jurisdiction map",
+          "type": "textarea",
+          "prompt": "List the operating entity, storefront markets, warehouse locations, product-specific licenses, and local registration requirements. Distinguish entity formation from permission to collect sales tax or conduct regulated product sales in each relevant jurisdiction.",
+          "example": "The retailer forms its operating entity, obtains an EIN, and checks city business-license requirements before opening accounts. A Nevada 3PL creates a separate physical-presence tax review. Initial products exclude regulated food, cosmetics, and medical claims; adding those categories requires a fresh product-specific requirements assessment."
+        },
+        {
+          "name": "Consumer-product rules and incident escalation",
+          "type": "textarea",
+          "prompt": "Identify applicable safety standards, certification duties, incident reporting, and recall execution responsibilities. Record the factual trigger for escalation and the evidence required to determine whether a reported defect presents a substantial product hazard.",
+          "example": "Maintain the rule assessment and required certificates under 15 U.S.C. 2063 for applicable products. Route injury, breakage, and hazard allegations immediately to the safety owner for assessment under 15 U.S.C. 2064(b) and 16 CFR Part 1115. Preserve complaints, lot records, photographs, and shipment history while affected goods remain quarantined."
+        },
+        {
+          "name": "Import classification and entry records",
+          "type": "textarea",
+          "prompt": "Determine the importer of record, tariff classification, customs value, origin marking, additional duties, and entry-document owner. State how a customs broker's work is checked and how corrected duty assumptions reach the landed-cost model.",
+          "example": "Before a direct import, obtain a broker-reviewed classification and origin analysis rather than accepting the supplier's invoice description. Apply reasonable-care duties under 19 U.S.C. 1484. Retain covered entry records under 19 U.S.C. 1508 and 19 CFR 163.4, generally five years subject to record-specific rules."
+        },
+        {
+          "name": "Sales-tax nexus, registration, and reconciliation",
+          "type": "textarea",
+          "prompt": "Document physical-presence exposure, economic-nexus monitoring, marketplace collection treatment, resale documentation, and filing ownership. Connect the jurisdiction register to actual sales and inventory records rather than assuming storefront tax settings establish registration status.",
+          "example": "Review warehouse inventory for physical nexus before launch. Track California delivered tangible personal-property sales against the $500,000 economic-nexus test in Revenue and Taxation Code 6203(c)(4), including applicable related-person sales and current or preceding calendar-year measures. Reconcile collected tax to returns and remittances monthly."
+        },
+        {
+          "name": "Shipping, refunds, warranties, and customer promises",
+          "type": "textarea",
+          "prompt": "Audit advertised shipment timing, delay notices, cancellation options, refund procedures, and warranty availability. Specify the actual workflow supporting each promise and identify product claims that require additional evidence before publication.",
+          "example": "Apply 16 CFR Part 435 to shipment representations, delay handling, and required refunds. Publish the actual return window and exclusions before purchase. Where covered written consumer warranties apply, assess 15 U.S.C. 2301–2312 and 16 CFR Part 702 pre-sale availability requirements rather than promising an unsupported lifetime remedy."
+        },
+        {
+          "name": "Supplier remedies and warehouse loss allocation",
+          "type": "textarea",
+          "prompt": "Extract terms for title, risk of loss, inspection, defect notice, indemnity, insurance, warehouse claims, and termination. Explain how state enactments and signed contractual changes affect the default rules used in procurement and receiving procedures.",
+          "example": "Review the governing state's UCC 2-509 risk-of-loss rules and UCC 2-607 notice obligations alongside the signed contract. Require a documented receiving inspection and prompt defect notice. Reject a warehouse liability cap tied only to storage fees unless insurance and pricing adequately address the resulting inventory exposure."
+        },
+        {
+          "name": "Privacy inventory and customer-rights workflow",
+          "type": "textarea",
+          "prompt": "Map customer identifiers, order history, advertising audiences, support records, processors, retention periods, and access permissions. Determine which privacy statutes apply and document request verification, deletion exceptions, and vendor coordination for the actual data flows.",
+          "example": "Inventory Shopify, the processor, Klaviyo, the 3PL, and support exports. Assess applicability under California Civil Code 1798.100 et seq. and other relevant state laws. Test a verified deletion request across vendors while preserving transaction records required for tax obligations, fraud resolution, and outstanding customer remedies."
+        },
+        {
+          "name": "Commercial email and marketing text controls",
+          "type": "textarea",
+          "prompt": "Separate email and text requirements, permission evidence, sender identification, suppression, and vendor responsibility. Describe how opt-outs propagate across tools and how the team prevents purchased or scraped contact lists from entering automated promotional sequences.",
+          "example": "Commercial email follows 15 U.S.C. 7704, including accurate headers, a postal address, and opt-out processing within ten business days. Marketing texts receive a separate review under 47 U.S.C. 227 and 47 CFR 64.1200. Do not infer text permission from a shipping telephone number."
+        },
+        {
+          "name": "Advertising substantiation, reviews, and endorsements",
+          "type": "textarea",
+          "prompt": "List measurable claims, comparison claims, review incentives, affiliate relationships, and creative evidence. Explain how the retailer detects fabricated testimonials, discloses material connections, and prevents contractors from publishing unsupported performance or safety representations.",
+          "example": "A claim that a divider supports twenty pounds requires suitable test evidence before publication. Review claims under 15 U.S.C. 45, endorsements under 16 CFR Part 255, and review practices under 16 CFR Part 465. Never condition a review reward on positive sentiment."
+        },
+        {
+          "name": "Requirements register and recurring evidence review",
+          "type": "textarea",
+          "prompt": "Assign an owner, backup, review frequency, evidence location, and escalation trigger for every material requirement. Distinguish routine monthly monitoring from incident-driven duties that cannot wait for the next scheduled management meeting.",
+          "example": "The operating lead reviews tax exposure monthly; the merchandising lead reviews supplier permissions quarterly; the safety owner reviews incidents immediately. Store signed agreements, current insurance evidence, product assessments, and campaign substantiation in a versioned register. Any new warehouse, jurisdiction, or product category triggers reassessment."
+        }
+      ],
+      "completion_gate": "Every applicable requirement has an accountable owner, supporting evidence, and an executable operating control; product claims, distribution permissions, shipping promises, tax settings, and outreach practices match the documented business scope."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
+      "purpose": "Automate repeatable order routing, inventory alerts, returns tracking, and permission-based retention while preserving human control over material exceptions. Tie growth decisions to realized contribution and available stock, then rehearse fallbacks for advertising inflation, integration outages, product incidents, and supplier interruptions.",
+      "chapter_ref": "Q6, Q10",
+      "instructions": [
+        "Select automations by transaction volume, error cost, and reversibility rather than novelty. Document the trigger, required evidence, action, owner, and fallback for each workflow. Begin with order routing, inventory alerts, and returns tracking before expanding into promotional optimization.",
+        "Make contribution and stock availability prerequisites for growth recommendations. Keep platform-attributed revenue separate from ledger-recognized sales, and use customer-level cohorts to distinguish new acquisition from repeat purchasing that would have occurred without additional promotional spend.",
+        "Build retention sequences around useful post-purchase information, compatible accessories, and genuine replacement needs. Apply marketing eligibility and suppression before sending. Test incremental contribution using a holdout rather than crediting every subsequent purchase to the latest message.",
+        "Set bounded automation permissions and create visible exception queues for safety complaints, large refunds, low stock, failed settlements, and unusual spend. Require independent verification before changes that move payouts or materially increase purchasing and advertising commitments.",
+        "Rehearse each fallback using realistic outage and demand conditions. Record the recovery time, maximum transaction backlog, customer communication method, and reconciliation steps. Resume automation only after duplicate prevention and inventory accuracy have been verified against authoritative records."
+      ],
+      "fields": [
+        {
+          "name": "Automation inventory and operating ownership",
+          "type": "textarea",
+          "prompt": "List the initial automated workflows with their triggers, authoritative inputs, actions, business owners, and measurable success criteria. Explain which decisions remain manual because a mistaken action would create material cash, customer, or product exposure.",
+          "example": "Shopify Flow tags captured orders for routing; the warehouse connector submits approved fulfillments; an inventory job flags coverage below fourteen days; returns tracking links receipt and refund events. The operating lead owns exceptions. Automation may recommend reorders but cannot issue noncancelable supplier commitments independently."
+        },
+        {
+          "name": "Permission boundaries and operational observability",
+          "type": "textarea",
+          "prompt": "Specify service-account permissions, event logging, alert delivery, error classification, and exception ownership. Describe what evidence an operator sees before deciding whether an automated action succeeded, failed safely, or requires a controlled replay.",
+          "example": "The routing credential can create fulfillments but cannot change payout details or issue refunds. Log event ID, order ID, attempted action, response category, and retry count. Send persistent failures to the staffed support queue after fifteen minutes, excluding payment credentials and unnecessary customer details."
+        },
+        {
+          "name": "Paid acquisition contribution controls",
+          "type": "textarea",
+          "prompt": "Define spend pacing, new-customer acquisition cost, blended advertising per order, refund-adjusted revenue, and the minimum sample for intervention. Ensure campaign decisions consider inventory coverage and the lag between purchase, refund, and settlement.",
+          "example": "Base targets $15 new-customer acquisition cost and $12 advertising per shipped order across the annual mix. Flag a seven-day blended cost above $15 after at least 100 shipped orders. The growth owner checks refund-adjusted contribution and available inventory before reducing or reallocating spend."
+        },
+        {
+          "name": "Post-purchase education and retention sequence",
+          "type": "textarea",
+          "prompt": "Design a retention sequence with audience eligibility, timing, useful content, compatible offers, and suppression conditions. Separate essential service communications from marketing and explain how open support issues or unresolved returns change the sequence.",
+          "example": "Send delivery and care information through the service workflow. For marketing-eligible customers, Klaviyo offers a compatible divider on day twenty-one, with a randomized holdout. Suppress promotional messages during open defect cases and after opt-out. Never describe a durable organizer as requiring artificial monthly replacement."
+        },
+        {
+          "name": "Retention incrementality and contribution measurement",
+          "type": "textarea",
+          "prompt": "Define the eligible cohort, randomized holdout, measurement window, contribution basis, and campaign costs. Calculate incremental orders rather than attributed orders, and identify when the sample is too small to justify a confident expansion.",
+          "example": "Split 1,000 eligible customers into 500 messaged and 500 holdout customers. Over thirty days, observe 35 versus 25 orders: ten incremental orders. At $27 pre-ad contribution, incremental contribution is $270 before messaging costs and offer-specific discounts. Repeat the test before assuming statistical reliability."
+        },
+        {
+          "name": "Inventory alerts and replenishment fallback",
+          "type": "textarea",
+          "prompt": "Specify coverage thresholds, demand windows, inbound confidence, promotional suppression, and purchase-review ownership. Explain how the workflow responds to a delayed supplier shipment without replacing confirmed stock with an optimistic arrival estimate.",
+          "example": "Alert at twenty-one days of available coverage and escalate below fourteen. Use confirmed inbound dates separately from physical stock. If a 35-day supplier lead time extends to fifty days, reduce affected advertising, update delivery promises, and review authorized substitute products before issuing another purchase order."
+        },
+        {
+          "name": "Returns intelligence and defect escalation",
+          "type": "textarea",
+          "prompt": "Define structured return reasons, lot-level aggregation, incremental-cost tracking, and escalation criteria. Separate routine preference returns from potential safety issues, and ensure urgent incident assessment does not depend on reaching a numerical complaint threshold.",
+          "example": "Classify fit, expectation, transit damage, breakage, and alleged injury separately. Three similar breakage reports from one lot within seven days trigger a quality investigation. Any injury or credible hazard allegation triggers immediate safety review regardless of count. Compare incremental handling costs with the $13,500 annual defect allowance."
+        },
+        {
+          "name": "Warehouse integration outage recovery",
+          "type": "textarea",
+          "prompt": "Document outage detection, manual processing limits, customer communication, secure data transfer, and post-recovery reconciliation. Explain how operators avoid processing an order both manually and automatically when the integration resumes after a prolonged interruption.",
+          "example": "After thirty minutes without successful routing, freeze automatic replay and inspect warehouse merchant references. Process at most fifty urgent orders through the authorized 3PL portal, recording manual fulfillment IDs. Before restart, reconcile every manual order and mark completed actions so queued events cannot create duplicate shipments."
+        },
+        {
+          "name": "Product incident and recall operating fallback",
+          "type": "textarea",
+          "prompt": "Describe the immediate response to a credible product hazard, including inventory isolation, sales suspension, lot tracing, evidence preservation, reporting assessment, and customer communication. Identify who coordinates suppliers, warehouse personnel, insurers, and regulatory response duties.",
+          "example": "The safety owner isolates affected lots in the 3PL, suspends related listings and promotions, and exports order-to-lot traceability. Preserve the original complaint and photographs. Assess reporting under 15 U.S.C. 2064(b) promptly; coordinate remedy instructions with the responsible manufacturer and applicable authorities rather than deleting adverse reviews."
+        },
+        {
+          "name": "Weekly automation value and risk review",
+          "type": "textarea",
+          "prompt": "Measure transaction coverage, manual touch time, exception age, duplicate effects, prevented errors, and maintenance effort. State the conditions under which a workflow is simplified, disabled, or reassigned because its operational risk exceeds its labor savings.",
+          "example": "Across 300 weekly orders, routing handles 285 without intervention and fifteen require six minutes each. Manual routing time is ninety minutes; compare it with the measured prior baseline. Any duplicate shipment disables the faulty workflow until its idempotency defect is corrected and replay tests pass."
+        }
+      ],
+      "completion_gate": "The three core automations demonstrate measurable labor savings, bounded permissions, visible exceptions, and rehearsed recovery; growth and retention decisions use recognized contribution, valid recipient eligibility, and confirmed inventory."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch Sprint, Pod Scorecard, and Exit Ledger",
+      "purpose": "Execute a bounded thirty-day validation sprint with named owners, measurable evidence, cash limits, and explicit continuation criteria. Connect daily service performance to canonical annual economics while building transferable records, assignable commercial relationships, and a documented decision to scale, repair, or exit.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Treat the thirty-day sprint as a controlled validation period after necessary setup, not a promise that a new business reaches revenue within thirty days. Preserve the canonical two-to-six-month first-deal expectation when scheduling supplier, storefront, and warehouse preparation.",
+        "Assign every milestone to one accountable role, a concrete deliverable, and a dated review. Reserve capacity for exceptions and customer support rather than treating all available hours as growth work. Track contractor scope and operating access alongside deliverables.",
+        "Use one weekly scorecard combining contribution, cash, acquisition, inventory, shipping, defects, and manual workload. Define each denominator and data source before launch so marketing, operations, and bookkeeping cannot present conflicting versions of the same business performance.",
+        "Compare pilot results with the order-level Base assumptions without annualizing immature refund cohorts or a short advertising promotion. Show actual fixed expense absorption and the cash required for the next inventory cycle before authorizing a larger operating commitment.",
+        "Prepare an exit-ready record set from the first month: contracts, inventory aging, reconciled books, customer obligations, access records, and operating procedures. Document transfer restrictions and retained liabilities so a future buyer or successor can assess continuity without unsupported valuation claims."
+      ],
+      "fields": [
+        {
+          "name": "Sprint scope, prerequisites, and capital boundary",
+          "type": "textarea",
+          "prompt": "Define the sprint start condition, customer scope, order target, spending limits, and excluded activities. Distinguish the validation window from the full startup timeline and identify prerequisites that must already be complete.",
+          "example": "Start the thirty-day pilot after dealer authorization, product review, warehouse receipt, and technical testing. Target 200 shipped orders across eight SKUs with $2,400 advertising. The broader startup plan allows 2–6 months to the first deal and $145,000 funding; the sprint excludes international expansion and new product categories."
+        },
+        {
+          "name": "Days one through seven execution evidence",
+          "type": "textarea",
+          "prompt": "List first-week activities that establish reliable order processing, customer communication, and accounting visibility. Specify deliverables, responsible roles, and stopping conditions before acquisition volume increases beyond the team's demonstrated support and fulfillment capacity.",
+          "example": "The operating lead completes six controlled order paths, verifies lot capture, and reconciles processor activity. The merchandising lead checks all eight listings against supplier permissions. Release limited traffic only after duplicate-event tests pass. Any unresolved payment, safety, or inventory mapping defect stops further traffic expansion."
+        },
+        {
+          "name": "Days eight through fourteen acquisition validation",
+          "type": "textarea",
+          "prompt": "Define the first paid acquisition review, minimum evidence sample, creative comparison, and budget boundaries. Explain how observed conversion, new-customer cost, refund exposure, and available stock determine whether the next test proceeds.",
+          "example": "Allocate up to $800 of the $2,400 pilot budget to two authorized creative variants. Compare shipped-order contribution and distinct new customers, not clicks alone. Do not declare a winning variant from five purchases. Pause any promotion whose delivery promise exceeds confirmed stock or warehouse capacity."
+        },
+        {
+          "name": "Days fifteen through twenty-one retention and returns",
+          "type": "textarea",
+          "prompt": "Specify the mid-sprint review of delivery evidence, support reasons, returns, retention eligibility, and supplier performance. Identify which observations are mature enough for decisions and which require continued cohort tracking beyond the sprint.",
+          "example": "Review carrier acceptance and customer contacts for the first 100 shipped orders. Inspect every defect case and correct packaging issues before replenishment. Launch eligible post-purchase education, but keep retention uplift provisional: a twenty-one-day window cannot establish a durable annual repeat-order share or fully matured refund rate."
+        },
+        {
+          "name": "Days twenty-two through thirty close and decision",
+          "type": "textarea",
+          "prompt": "Define the month-end close package, pilot profit calculation, unresolved cohort estimates, and decision meeting. Reconcile actual activity before comparing it with the model, and identify the specific evidence needed for continuation or corrective work.",
+          "example": "At 200 orders, the modeled bridge is $16,000 billings less $1,000 refunds, yielding $15,000 sales. Deduct $9,600 variable costs and $2,400 advertising for $3,000 contribution. With $7,968.75 monthly fixed opex, pilot operating loss is $4,968.75. Replace estimates with actuals as refund cohorts mature."
+        },
+        {
+          "name": "Pod staffing, capacity, and contractor responsibilities",
+          "type": "textarea",
+          "prompt": "Allocate full-time and contractor responsibilities, escalation coverage, workload limits, and compensation assumptions. Explain which functions are provided through variable fulfillment or support expense so the staffing model does not omit essential operating labor.",
+          "example": "Base uses two full-time roles covering operations and merchandising, plus three contractors covering growth, integrations, and bookkeeping. The 3PL provides variable fulfillment; the $9,000 variable support allowance remains separate. Verify the $72,000 loaded salary and $12,000 contractor assumptions against actual quotes. Scaled staffing is 3 FT + 4 C."
+        },
+        {
+          "name": "Weekly KPI definitions and intervention thresholds",
+          "type": "textarea",
+          "prompt": "Define the scorecard's numerators, denominators, reporting windows, and authoritative sources. Include contribution, cash, dispatch reliability, inventory coverage, defects, and manual touches; assign an intervention to each threshold rather than merely coloring weak metrics.",
+          "example": "Track recognized sales per shipped order against $75 and post-ad contribution against $15. Calculate on-time dispatch as qualifying orders accepted by the carrier within the promised window divided by qualifying orders. Escalate coverage below fourteen days, any safety incident, and unreconciled settlements older than two business days."
+        },
+        {
+          "name": "Annual scenario bridge and scale prerequisites",
+          "type": "textarea",
+          "prompt": "Connect observed order economics to the canonical annual outcomes without implying the pilot proves annual demand. State the additional evidence needed for higher margins, supplier capacity, repeat sales, cash availability, and the larger staffing configuration.",
+          "example": "Base requires 15,000 annual shipped orders at $75 recognized sales, $15 post-ad contribution, and $95,625 fixed opex to produce $129,375. Scaled remains $2,000,000 revenue and $360,000 profit at 18%, with 3 FT + 4 C; prove the required cost improvements rather than applying Base unit costs unchanged."
+        },
+        {
+          "name": "Exit-readiness records and transfer restrictions",
+          "type": "textarea",
+          "prompt": "List the records a successor needs to verify earnings, inventory quality, customer obligations, operating access, and commercial continuity. Identify agreements requiring assignment consent and data-transfer restrictions before describing the business as independently transferable.",
+          "example": "Maintain monthly reconciled books, SKU-level inventory aging, supplier authorizations, warehouse agreements, incident records, and documented workflows. Flag dealer-contract assignment clauses and processor underwriting requirements. Transfer administrative access through authorized account procedures, not shared passwords. Exclude customer data from buyer previews unless the proposed disclosure is authorized."
+        },
+        {
+          "name": "Continue, repair, or exit decision ledger",
+          "type": "textarea",
+          "prompt": "Record the final decision, supporting evidence, remaining uncertainties, maximum next-period commitment, and responsible owners. Define how customer orders, refunds, inventory, and supplier obligations will be handled if the business pauses or winds down.",
+          "example": "Continue only with positive measured order contribution, reliable dispatch, funded replenishment, and resolved material incidents. Repair weak creative or packaging through bounded tests before adding SKUs. If exiting, stop new promotions, fulfill or properly cancel open orders, reserve refund liquidity, and liquidate inventory only through permitted channels."
+        }
+      ],
+      "completion_gate": "The thirty-day close reconciles cash and operating results, the pod owns every continuing obligation, and a signed decision ledger authorizes only the next funded commitment while preserving customer remedies and transferable operating evidence."
+    }
+  ]
+}
