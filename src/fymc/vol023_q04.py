@@ -1,0 +1,663 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
+    "question_prompt": "How do you allocate startup capital ($150,000–$2,000,000 USD) and configure a lean, low-opex ($1,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
+    "subtitle": "Reserve-First NMA and NPRI Underwriting, County Title Evidence, Royalty Reconciliation, and FERC Queue-Signal Discipline",
+    "layout_template": "comparison_table",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #7, Mineral Rights, ranks #23 with a Money-to-Manpower Score of 63/100: "
+        "capital discipline matters more than subscription count. This chapter maps five operating "
+        "plays: producing-mineral purchases, NPRI purchases, pooling-docket curve-jumping, "
+        "institutional rights flips, and FERC queue-informed land options. Keep at least half "
+        "of startup capital untouched as liquidity, buy evidence before acreage, and separate "
+        "mineral ownership from surface access and electricity service. A twelve-layer stack "
+        "supports title packets, production monitoring, and royalty reconciliation without "
+        "enterprise overhead. Canonical annual owner profits remain $6,000 Conservative, "
+        "$69,875 Base, and $180,000 Scaled. The operating test is executable title, traceable "
+        "receipts, controlled downside, and enough cash to survive the full 6–24-month first-deal window."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$30,000",
+            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
+            "note": "20% net margin; $6,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$215,000",
+            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
+            "note": "32.5% net margin; $69,875 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$400,000",
+            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
+            "note": "45% net margin; $180,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Ring-fence liquidity before pricing the first mineral deed",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Start with a capital ledger, not an acreage target. At $150,000, place $90,000 "
+                    "in a separately tracked working-capital reserve, allocate $30,000 to rights "
+                    "purchases, $7,500 to title and technical diligence, $5,000 to contingent "
+                    "options, $4,000 to entity and insurance setup, $3,500 to data and systems, "
+                    "and $10,000 to transaction contingencies. These amounts total $150,000; "
+                    "the reserve is 60% of opening capital. At $2,000,000, allocate $1,100,000 "
+                    "to reserve, $650,000 to rights, $80,000 to diligence, $40,000 to options, "
+                    "$30,000 to setup, $20,000 to systems, and $80,000 to contingencies. "
+                    "That reserve is 55%. Neither reserve is acquisition capacity, collateral "
+                    "for an option, or a second name for committed purchase money. Release "
+                    "acquisition funds only after recording all outstanding exercises, title "
+                    "invoices, and closing costs. At the stated overhead endpoints, twenty-four "
+                    "months consumes $24,000 or $288,000, leaving $66,000 or $812,000 of "
+                    "the original reserve before receipts. Those runway calculations exclude "
+                    "deal-specific expenses, which belong in their own allocations. If overhead "
+                    "rises, reduce the acquisition envelope before signing another commitment. "
+                    "The 6–24-month first-deal window makes liquidity an operating input, not "
+                    "idle money awaiting a persuasive seller."
+                ),
+                (
+                    "Reconcile the scorecard before evaluating any software proposal. Conservative "
+                    "revenue of $30,000 less $24,000 of total expenses produces $6,000 of owner "
+                    "profit, exactly 20%. Base revenue of $215,000 less $145,125 produces "
+                    "$69,875, exactly 32.5%. Scaled revenue of $400,000 less $220,000 produces "
+                    "$180,000, exactly 45%. One illustrative expense bridge assigns monthly "
+                    "fixed overhead of $1,000, $4,000, and $12,000 respectively; annual fixed "
+                    "costs are $12,000, $48,000, and $144,000, leaving $12,000, $97,125, "
+                    "and $76,000 for all remaining recognized expenses. These are allocation "
+                    "constraints, not estimates of what every county or contractor will charge. "
+                    "Do not add acquisition principal to operating expense and then also deduct "
+                    "it from trading proceeds. Track asset basis, capitalized acquisition costs, "
+                    "depletion, disposition proceeds, and recurring expenses separately under "
+                    "the adopted accounting method. The teams remain 1 FT plus 3 contractors "
+                    "in Conservative and Base, and 2 FT plus 4 contractors in Scaled. Contractor "
+                    "counts describe scoped specialists, not four continuous salaries. Treat "
+                    "the owner as one full-time operator; any additional salary or benefit "
+                    "expense must fit the existing expense envelope. Personal income taxes "
+                    "and owner distributions require separate cash planning."
+                ),
+                (
+                    "Build the ownership and payment structure before circulating offers. Use "
+                    "the entity's exact legal name consistently on purchase agreements, deeds, "
+                    "tax forms, bank instructions, and operator ownership-transfer packets. "
+                    "A state-filed limited liability company can simplify administration, but "
+                    "it does not repair a broken mineral chain or change an NPRI into executive "
+                    "rights. Obtain an EIN, adopt signing authority, maintain a distinct ledger, "
+                    "and reconcile the operating account monthly. Mercury's Standard account "
+                    "can serve as a low-fee interface; examine the actual partner-bank and "
+                    "sweep arrangements rather than treating the interface as the insured "
+                    "bank. Aggregate deposits by ownership category and underlying bank when "
+                    "reviewing FDIC coverage. Bind coverage for actual activities: general "
+                    "liability for field visits, cyber and social-engineering exposures where "
+                    "available, and professional coverage only where the business performs "
+                    "services that require it. Ask specifically whether mineral title, contract "
+                    "disputes, pollution, and wire fraud are excluded. Do not assume a surface "
+                    "title policy insures severed minerals. Obtain closing instructions through "
+                    "an independently verified telephone number, use transaction counsel or "
+                    "an appropriate escrow provider, and prohibit emailed bank-detail changes "
+                    "from becoming payment authority without a callback."
+                ),
+            ],
+            "table": {
+                "caption": "Reserve-First Capital Envelopes and Canonical Expense Reconciliation",
+                "headers": [
+                    "Capital or expense decision",
+                    "Lean launch allocation and control",
+                    "Larger launch allocation and control",
+                    "Release evidence and downside response",
+                ],
+                "rows": [
+                    [
+                        "Protect working capital before accepting acquisition commitments",
+                        "$90,000 reserve equals 60% of $150,000 opening capital",
+                        "$1,100,000 reserve equals 55% of $2,000,000 opening capital",
+                        "Refresh runway monthly and cut commitments before exhausting liquidity",
+                    ],
+                    [
+                        "Limit rights purchases to separately authorized acquisition envelopes",
+                        "$30,000 buys rights without borrowing against protected reserves",
+                        "$650,000 buys rights without reclassifying reserve cash as available",
+                        "Require executed instruments and complete closing statements before funding",
+                    ],
+                    [
+                        "Fund title investigations and contingent options independently",
+                        "$7,500 diligence plus $5,000 options limits speculative cash exposure",
+                        "$80,000 diligence plus $40,000 options caps advance commitments",
+                        "Abandon unresolved ownership defects before exercising any purchase obligation",
+                    ],
+                    [
+                        "Separate setup costs from recurring production infrastructure",
+                        "$4,000 setup plus $3,500 systems supports a focused launch",
+                        "$30,000 setup plus $20,000 systems supports broader transaction capacity",
+                        "Obtain written scope and renewal terms before authorizing purchases",
+                    ],
+                    [
+                        "Hold transaction contingencies outside routine acquisition purchase prices",
+                        "$10,000 covers documented exceptions without concealing acquisition overruns",
+                        "$80,000 covers documented exceptions without consuming the protected reserve",
+                        "Require line-item explanations for curative work and closing changes",
+                    ],
+                    [
+                        "Preserve exact scorecard expense totals across operating scenarios",
+                        "Conservative expenses total $24,000; Base expenses total $145,125",
+                        "Scaled expenses total $220,000 against $400,000 recognized annual revenue",
+                        "Reconcile receipts and realized gains without counting returned basis",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four release tests before committing acquisition cash",
+                "body": "A commitment must pass all four tests using dated evidence and a named reviewer.",
+                "items": [
+                    "Confirm the opening reserve remains at least 50% of startup capital after identifying every signed obligation; publish a separate twenty-four-month overhead runway.",
+                    "Match the seller's identity and authority to the recorded chain, including probate, trusts, entity succession, reservations, and any required corrective instruments.",
+                    "Reconcile the purchase price, eligible basis additions, selling-cost treatment, and expected royalty decimal in an independently reviewed closing worksheet.",
+                    "Verify payment instructions by callback, establish operator transfer requirements, and assign responsibility for recording, tax notices, and the first royalty reconciliation.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Assemble twelve inexpensive layers around an auditable tract ledger",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Make the tract ledger the system of record. Each asset needs a stable "
+                    "identifier, state and county, legal description, gross acres, acquired "
+                    "fraction, net mineral acres, interest type, lease references, unit "
+                    "allocation, operator, well identifiers, payment decimal, acquisition "
+                    "basis, and document links. Keep NMA distinct from royalty-adjusted "
+                    "acreage; a marketing convention using an eighth royalty must never "
+                    "overwrite the actual deed fraction. Store the original instrument "
+                    "alongside a structured extraction and a reviewer decision. Python "
+                    "and SQLite are sufficient for a small portfolio when backups, "
+                    "validation, and access restrictions are real. Use decimal arithmetic "
+                    "for money and ownership fractions, retain source precision, and round "
+                    "only at a documented reporting boundary. QGIS connects tract polygons "
+                    "to units, wells, surface constraints, and substations without an "
+                    "enterprise mapping contract. A spatial intersection is a research "
+                    "lead, not a title conclusion. County index gaps, duplicate names, "
+                    "ambiguous aliquot descriptions, and stale unit polygons require human "
+                    "resolution. Keep ownership assertions separate from machine-derived "
+                    "geometry so an attractive map cannot silently become an approved "
+                    "purchase premise. Export the ledger and its document manifest monthly "
+                    "so switching vendors never requires rebuilding the title record."
+                ),
+                (
+                    "Use the twelve-layer matrix as a procurement baseline rather than a "
+                    "claim of live vendor quotations. The paid prices are explicit planning "
+                    "assumptions for named tiers, excluding taxes, promotions, optional "
+                    "services, and future changes; confirm vendor checkout terms before "
+                    "purchase. One Google Workspace Business Starter seat at $7 per month "
+                    "on an annual commitment and one DocuSign Personal subscription at "
+                    "$10 monthly equivalent imply $204 in annual subscription commitments. "
+                    "At the listed S3 Standard storage rate, twenty gigabytes adds $0.46 "
+                    "monthly before requests, transfer, or version accumulation. That makes "
+                    "the basic subscription-and-storage subtotal $17.46 per month, not "
+                    "the whole operating budget. County copies, counsel, landmen, insurance, "
+                    "bookkeeping labor, and technical review still consume the $1,000–$12,000 "
+                    "monthly envelope or separately budgeted deal costs. Avoid buying "
+                    "commercial production datasets until public records demonstrably fail "
+                    "a defined task. Test ten representative wells and three complete "
+                    "ownership files before upgrading. Measure missing months, mismatched "
+                    "identifiers, and reviewer hours, then compare the measured correction "
+                    "cost with an actual subscription proposal. A cheap dataset that "
+                    "creates expensive false positives is not a lean purchase."
+                ),
+                (
+                    "Automate ingestion and exception detection, not ownership judgments. "
+                    "Download permitted public production files on a documented cadence, "
+                    "save retrieval dates and source hashes, and preserve the original "
+                    "royalty statement before normalizing its rows. Reconcile operator "
+                    "checks by production month, product, property, decimal, price, taxes, "
+                    "deductions, and suspense adjustments. Compare reported volumes with "
+                    "public records only after accounting for reporting delays, unit "
+                    "aggregation, gas measurement conventions, and corrections. Flag a "
+                    "decimal change immediately; flag a missing check against contractual "
+                    "timing and the jurisdiction's payment rules rather than an arbitrary "
+                    "calendar date. Texas Natural Resources Code Section 91.402 supplies "
+                    "specific payment timing and withholding provisions for covered proceeds. "
+                    "A dashboard should show the disputed amount, evidence, owner, and next "
+                    "action instead of merely coloring a cell red. Restrict bank access "
+                    "to the operator and authorized backup, require multifactor authentication, "
+                    "and keep tax identifiers out of source repositories. Encrypt offline "
+                    "backups, restrict document storage, and test restoration quarterly. "
+                    "Have the contract landman inspect title exceptions, the petroleum "
+                    "specialist inspect production assumptions, and the accountant inspect "
+                    "cash-to-ledger differences. One accountable owner closes each exception "
+                    "before the next acquisition relies on the same data."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve-Layer Named-Service Stack: Exact Planning Tiers, Roles, and Lean Alternatives",
+                "headers": [
+                    "Layer and named service",
+                    "Tier and explicit price basis",
+                    "Mineral-rights production role and operating boundary",
+                    "Cheaper implementation or controlled fallback",
+                ],
+                "rows": [
+                    [
+                        "01 / Banking through Mercury's Standard business interface",
+                        "Standard planning tier: $0 monthly subscription before optional services",
+                        "Separate reserve and operating cash while verifying underlying bank coverage",
+                        "Use an existing no-monthly-fee business account with equivalent controls",
+                    ],
+                    [
+                        "02 / Business identity through Google Workspace",
+                        "Business Starter assumption: $7 per user monthly, annual commitment",
+                        "Maintain domain email and controlled collaboration for acquisition evidence",
+                        "Retain existing secured business email instead of duplicating paid seats",
+                    ],
+                    [
+                        "03 / Individual credential custody through Bitwarden",
+                        "Free individual tier: $0 subscription for individual vault use",
+                        "Generate unique credentials without sharing one operator login among contractors",
+                        "Use local KeePassXC at $0 with encrypted backups and recovery",
+                    ],
+                    [
+                        "04 / Script version control through GitHub",
+                        "Free repository tier: $0 subscription within included service limits",
+                        "Version ingestion code and schemas without storing deeds or taxpayer identifiers",
+                        "Use local Git at $0 and maintain separately encrypted repository backups",
+                    ],
+                    [
+                        "05 / Evidence object storage through Amazon S3",
+                        "Standard, us-east-1: $0.023 per GB-month for first 50 TB",
+                        "Retain restricted source documents; requests and transfer carry additional charges",
+                        "Use encrypted local storage and a separately located encrypted backup",
+                    ],
+                    [
+                        "06 / Geographic underwriting through the QGIS project",
+                        "QGIS desktop open-source tier: $0 software license charge",
+                        "Overlay tract boundaries, units, wells, substations, and independent land constraints",
+                        "Use the same free desktop installation rather than hosted mapping subscriptions",
+                    ],
+                    [
+                        "07 / Production and docket research through RRC and OCC",
+                        "Texas RRC and Oklahoma OCC public web access: $0",
+                        "Retrieve agency records while purchasing county title evidence separately",
+                        "Download relevant public files manually before paying for aggregated datasets",
+                    ],
+                    [
+                        "08 / Commodity context through the U.S. EIA",
+                        "EIA API v2 public access: $0 service subscription",
+                        "Maintain benchmark price series without substituting benchmarks for realized prices",
+                        "Download EIA spreadsheets manually when scheduled ingestion adds little value",
+                    ],
+                    [
+                        "09 / Queue-signal research through PJM Interconnection",
+                        "Public New Services Queue viewing tier: $0 subscription",
+                        "Track project status and study documents without implying available electricity",
+                        "Review public queue exports manually within the actual target region",
+                    ],
+                    [
+                        "10 / Reconciliation through Python and SQLite",
+                        "Python runtime and SQLite library: $0 software license charges",
+                        "Normalize statements and flag decimal changes using reviewed deterministic rules",
+                        "Use LibreOffice Calc at $0 for very small validated portfolios",
+                    ],
+                    [
+                        "11 / Bookkeeping through Wave's Starter plan",
+                        "Starter subscription tier: $0 monthly; optional payment services priced separately",
+                        "Maintain eligible basic business books with a separate mineral basis subledger",
+                        "Use accountant-approved CSV ledgers when location or functionality prevents adoption",
+                    ],
+                    [
+                        "12 / Routine signatures through DocuSign Personal",
+                        "Personal annual-plan assumption: $120 yearly, five envelopes per month",
+                        "Execute suitable routine agreements; verify separate deed notarization and recording requirements",
+                        "Use wet signatures and required acknowledgments when county practice demands them",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four habits that save more than another data subscription",
+                "body": "Spend on resolving ownership and payment uncertainty before paying for prettier coverage.",
+                "items": [
+                    "Save the recorded image and recording reference, not just the county index result; reservations and exceptions often sit inside the instrument.",
+                    "Preserve every royalty statement revision and its production month so recoupments do not masquerade as fresh production deterioration.",
+                    "Store fixed and floating NPRI interpretations as separate underwriting cases until counsel resolves the deed language; never average incompatible ownership meanings.",
+                    "Require a dated queue document and independent surface-access evidence before paying for a land option; a nearby substation is not a service commitment.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Budget five operating plays without manufacturing revenue or secured power",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The first two mapped plays are producing-mineral purchases and NPRI "
+                    "purchases; these are descriptive workflows, not additional scorecard "
+                    "scenarios. For producing minerals, assume ten NMA uniformly participate "
+                    "in a 640-acre unit under a 20% lease royalty, with no allocation "
+                    "adjustments. The modeled revenue decimal is 10 divided by 640 times "
+                    "0.20, or 0.003125. Applied to $80,000 of monthly unit sales value, "
+                    "that produces $250 before owner-level deductions and taxes. A $30,000 "
+                    "purchase therefore shows $3,000 annualized receipts and a 10% initial "
+                    "cash yield, not a 10% profit margin or a perpetual annuity. Stress "
+                    "price, volumes, deductions, and depletion separately. For an NPRI "
+                    "burdening an 80-acre tract within that same unit, a fixed 1/64 "
+                    "fraction of production produces $156.25 monthly, while a floating "
+                    "one-quarter of a 20% lease royalty produces $500. Those calculations "
+                    "assume uniform tract participation and expose why deed interpretation "
+                    "dominates spreadsheet precision. An $8,000 offer cannot rely on the "
+                    "larger result until title review supports it. If production economics "
+                    "fail, lower the price or pass; if NPRI meaning remains disputed, "
+                    "require curative evidence or withdraw rather than pricing ambiguity "
+                    "as assured upside."
+                ),
+                (
+                    "The third play, pooling-docket curve-jumping, buys or options an interest "
+                    "because a public proceeding may improve buyer attention, not because "
+                    "a hearing guarantees drilling. Read the actual application, spacing "
+                    "description, requested relief, notice record, and subsequent orders. "
+                    "An illustrative transaction spends $2,000 on an option, $3,000 on "
+                    "eligible acquisition diligence, and $25,000 on exercise, producing "
+                    "$30,000 of assumed basis. A $40,000 sale with $2,000 of selling "
+                    "costs yields $8,000 of realized gain and returns $30,000 of basis; "
+                    "the $40,000 proceeds are not all operator revenue. If the proceeding "
+                    "slips or the title cannot close, let the option expire and cap "
+                    "the sunk exposure at the amounts actually committed. The fourth "
+                    "play, institutional rights flipping, needs a buyer-quality package "
+                    "before acquisition: indexed instruments, tract schedules, lease terms, "
+                    "payment history, and a reproducible ownership decimal. Purchasing "
+                    "rights for $100,000, adding $10,000 of eligible basis costs, and "
+                    "selling for $145,000 with $5,000 selling costs creates $30,000 of "
+                    "realized gain and returns $110,000 of basis. If the buyer disappears, "
+                    "retain only assets whose stressed royalty economics independently "
+                    "justify the purchase. Otherwise reduce exposure before closing, "
+                    "rather than treating an indicative bid as cash."
+                ),
+                (
+                    "The fifth mapped play is ferc_grid_interconnection_queue_land_speculation, "
+                    "the TRACK_1 FERC / ISO Substation Interconnection Queue & Powered-Land "
+                    "Option Flipping workflow. Overlay the correct ISO or utility queue "
+                    "with substations, parcels, zoning, floodplain, access, and transmission "
+                    "constraints. Distinguish generator interconnection from the load-service "
+                    "process relevant to an industrial user. Queue position, study progress, "
+                    "and nearby infrastructure are signals; none conveys deliverable "
+                    "power, surface control, easements, or transferable interconnection "
+                    "rights. Assume a $5,000 assignable option on 45 acres with a "
+                    "$225,000 exercise price, plus $4,000 of studies. A permitted $15,000 "
+                    "option assignment produces an illustrative $6,000 gain if the "
+                    "$9,000 expenditure is properly included in basis and there are "
+                    "no further selling costs. The $225,000 exercise obligation remains "
+                    "outside that assignment calculation and must never be silently "
+                    "funded from protected reserves. Counsel must confirm assignability "
+                    "and the accounting treatment. Under 18 CFR 35.28, applicable tariffs "
+                    "and interconnection procedures govern relevant service processes; "
+                    "a land marketer cannot replace them with promotional language. "
+                    "If access, service feasibility, or assignment fails, let the "
+                    "contingent option lapse with $9,000 exposure, or reposition "
+                    "only for independently viable uses without claiming secured power."
+                ),
+            ],
+            "table": {
+                "caption": "Five Mapped Plays and the Evidence Needed Before Capital Moves",
+                "headers": [
+                    "Play or cross-play exposure",
+                    "Concrete unit economics and revenue treatment",
+                    "Evidence required before committing additional capital",
+                    "Failure response that preserves remaining liquidity",
+                ],
+                "rows": [
+                    [
+                        "Producing-mineral acquisition using verified net mineral acreage",
+                        "Ten NMA at the assumed allocation produces $250 monthly receipts",
+                        "Confirm unit participation, lease royalty, payment decimal, and production history",
+                        "Reduce offer or pass when stressed receipts fail the purchase hurdle",
+                    ],
+                    [
+                        "NPRI acquisition separating fixed and floating deed language",
+                        "The stated tract example yields $156.25 or $500 monthly",
+                        "Obtain instrument-specific interpretation and verify every applicable tract allocation",
+                        "Require curative evidence or withdraw rather than selecting optimistic language",
+                    ],
+                    [
+                        "Pooling-docket curve-jumping through a limited contingent option",
+                        "$40,000 sale less $30,000 basis and $2,000 selling costs",
+                        "Read filed application, legal description, notice record, and resulting orders",
+                        "Expire the option when title defects or procedural delays defeat timing",
+                    ],
+                    [
+                        "Institutional rights flipping with a buyer-ready ownership package",
+                        "$145,000 sale less $110,000 basis and $5,000 selling costs",
+                        "Secure reproducible ownership schedules and independently viable stressed holding economics",
+                        "Avoid closing if the fallback depends entirely on one indicative buyer",
+                    ],
+                    [
+                        "Queue-informed surface options under the named TRACK_1 workflow",
+                        "$15,000 assignment less $9,000 assumed basis yields $6,000 gain",
+                        "Verify assignment rights, surface control, service process, and independent land constraints",
+                        "Lapse contingent options or pursue uses that require no claimed power",
+                    ],
+                    [
+                        "Cross-play separation of mineral ownership and surface development",
+                        "Mineral purchase prices do not acquire separate surface or utility rights",
+                        "Review severance instruments, reservations, easements, and each contracted development right",
+                        "Stop incompatible combinations before marketing interests as a unified development package",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Rehearse closing, collection, and failure before launching acquisition outreach",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run a dry closing on one representative tract before scaling outreach. "
+                    "Start with the seller's claimed interest and trace every required "
+                    "conveyance, reservation, probate event, and entity succession through "
+                    "the chosen title standard. Texas Property Code Section 5.021 addresses "
+                    "written conveyances of covered estates; Section 13.001 addresses "
+                    "the effect of recording against specified subsequent parties. Neither "
+                    "a recorded deed nor a county search result independently proves "
+                    "that the seller owns the fraction advertised. Ask transaction "
+                    "counsel to identify exceptions, required curative instruments, "
+                    "acknowledgment requirements, and county recording practices. Compare "
+                    "the resulting ownership fraction with the lease, unit documents, "
+                    "division order, and most recent check detail. Confirm that any "
+                    "executive rights, bonus rights, delay rentals, and development "
+                    "rights are actually included rather than assumed from the word "
+                    "minerals. Assemble a closing packet containing the purchase agreement, "
+                    "deed, recording instructions, settlement statement, identity and "
+                    "authority evidence, tax documentation, and operator notification "
+                    "materials. Rehearse the failed-close branch as carefully as the "
+                    "successful branch: return unused escrow under the contract, "
+                    "terminate outstanding permissions, calendar option expiry, and "
+                    "preserve the reasons for rejection so the same defective interest "
+                    "does not reenter the pipeline under another seller."
+                ),
+                (
+                    "Then rehearse the first ninety days after funding without assuming "
+                    "the first check arrives immediately. Record the instrument, retain "
+                    "the recording confirmation, submit the operator's transfer package, "
+                    "and track requests for additional documentation. Division-order "
+                    "processing can delay payments, while disputed ownership can create "
+                    "suspense balances that remain unavailable for overhead. Establish "
+                    "a property-level receivable log showing production periods, expected "
+                    "decimal, paid amounts, deductions, and unresolved differences. "
+                    "Use the applicable lease and state payment rules when escalating "
+                    "a missing payment. For Texas assets, evaluate the circumstances "
+                    "against Section 91.402 rather than promising one universal check "
+                    "date. Have the accountant maintain acquisition basis and depletion "
+                    "schedules under the applicable tax rules, including 26 U.S.C. "
+                    "611 and 612, instead of applying an automatic deduction percentage "
+                    "to every receipt. Track state severance withholding, property "
+                    "assessments where applicable, and filing obligations by jurisdiction. "
+                    "Do not net an operator's entire sales statement into business "
+                    "revenue when most production belongs to other interests. Post "
+                    "only the owned interest's royalty receipts and realized rights "
+                    "gains on the scorecard basis. A reconciliation is complete only "
+                    "when the bank deposit, statement detail, and ledger entry agree "
+                    "or a documented exception has an accountable owner."
+                ),
+                (
+                    "Finally, establish a release decision that can survive an absent "
+                    "founder and a bad market. Give each specialist a written scope: "
+                    "the landman assembles evidence, counsel resolves legal ownership "
+                    "questions, the technical reviewer tests decline and allocation "
+                    "assumptions, and the accountant verifies treatment and reconciliation. "
+                    "At smaller scale, these are scoped contractor assignments rather "
+                    "than permanent departments. Fund the actual scopes inside the "
+                    "canonical expense limits before representing the team as operational. "
+                    "Require a second-person check of outgoing wire instructions and "
+                    "ownership decimals; retain the review record with the deal. "
+                    "Test whether the portfolio survives six months without a new "
+                    "sale, a 30% commodity-price reduction, and a production decline "
+                    "that the technical reviewer considers plausible for the assets. "
+                    "These are sensitivity tests, not replacements for the three "
+                    "canonical profit cases. If raising pooled capital, resolve the "
+                    "offering structure before soliciting investors: 15 U.S.C. 77b "
+                    "includes specified fractional mineral interests in its securities "
+                    "definition, and Section 77e governs registration requirements "
+                    "subject to applicable exemptions. Keep subscriber money distinct "
+                    "from operator revenue. Launch only after restoring a backup, "
+                    "reconciling a sample check, completing the title packet, and "
+                    "demonstrating that every outstanding commitment fits outside "
+                    "the protected opening reserve."
+                ),
+            ],
+            "table": {
+                "caption": "Pre-Launch Evidence Tests, Named Owners, and Stop Conditions",
+                "headers": [
+                    "Readiness test and accountable function",
+                    "Evidence that makes the test repeatable",
+                    "Specific pass condition before launch",
+                    "Response when the evidence does not reconcile",
+                ],
+                "rows": [
+                    [
+                        "Capital readiness owned by the acquisition operator",
+                        "Dated bank balances, commitment register, and twenty-four-month runway model",
+                        "Opening reserve exceeds 50% and all commitments have separate funding",
+                        "Reduce acquisition scope or postpone commitments without hiding unpaid obligations",
+                    ],
+                    [
+                        "Title readiness reviewed by retained transaction counsel",
+                        "Instrument chain, seller authority, legal description, reservations, and curative checklist",
+                        "Acquired rights and unresolved exceptions are explicitly documented before closing",
+                        "Require curative instruments or terminate under the negotiated purchase terms",
+                    ],
+                    [
+                        "Royalty readiness checked by accountant and technical reviewer",
+                        "Sample operator statement, allocation worksheet, production references, and bank receipt",
+                        "Decimal and cash reconcile with documented rounding and timing differences",
+                        "Assign the discrepancy and prevent its reuse in acquisition underwriting",
+                    ],
+                    [
+                        "Payment readiness controlled by an independent second reviewer",
+                        "Verified callback record, authorized recipient details, and settlement statement",
+                        "Payment destination matches independently confirmed closing instructions and signed authority",
+                        "Suspend the transfer and contact the verified closing representative directly",
+                    ],
+                    [
+                        "Technology readiness demonstrated by the designated backup operator",
+                        "Encrypted backup, restore log, access list, and reproducible sample reconciliation",
+                        "A restored ledger reproduces ownership records and the sample receipt",
+                        "Repair recovery procedures before accumulating additional irreplaceable acquisition evidence",
+                    ],
+                    [
+                        "Offering readiness reviewed before any pooled-capital solicitation",
+                        "Written structure analysis, investor materials, custody arrangements, and exemption analysis",
+                        "Counsel identifies the applicable securities pathway and required operating steps",
+                        "Defer solicitation and continue only with properly authorized proprietary capital",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Lock the reserve and commitment register",
+                    "action": "Separate reserve cash from acquisition availability and enter every signed obligation.",
+                    "detail": "Use the $150,000 or $2,000,000 allocation model as a starting envelope; retain at least half of opening capital as protected working-capital liquidity.",
+                },
+                {
+                    "step": 2,
+                    "title": "Complete one evidence-grade tract file",
+                    "action": "Resolve seller authority, ownership fractions, lease rights, unit allocation, and recording requirements.",
+                    "detail": "Link original instruments to the tract ledger and obtain named specialist review rather than treating a geographic overlay as ownership evidence.",
+                },
+                {
+                    "step": 3,
+                    "title": "Rehearse payment and collection end to end",
+                    "action": "Verify wire instructions, simulate the settlement entry, and reconcile one sample royalty payment.",
+                    "detail": "Show returned basis separately from realized gain and preserve statement-level deductions, production periods, tax withholding, and unresolved suspense amounts.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release only the funded acquisition scope",
+                    "action": "Restore the backup, confirm specialist capacity, and sign the dated launch checklist.",
+                    "detail": "Keep unresolved title, utility-service, offering-structure, and liquidity issues outside the launch scope until the responsible reviewer supplies the missing evidence.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "Buy evidence before acreage, protect liquidity before upside, and never sell a queue signal as secured power.",
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        "Create separate reserve, acquisition, diligence, option, setup, systems, and contingency envelopes that sum exactly to opening capital.",
+        "Document at least 50% protected opening liquidity and calculate twenty-four-month runway using actual fixed-overhead commitments.",
+        "Configure the twelve-layer stack, verify paid-tier checkout terms, and restore an encrypted tract-ledger backup before importing live ownership records.",
+        "Build one counsel-reviewed NMA or NPRI file with original instruments, lease provisions, unit allocation, acquisition basis, and operator transfer requirements.",
+        "Reconcile a sample royalty statement and a sample rights sale so returned basis never appears as recognized operator revenue.",
+        "Complete the four-step launch rehearsal and require independent evidence for title, payment instructions, pooled-capital structure, and any claimed utility-service rights.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "Texas Property Code Section 5.021 — Instrument of Conveyance",
+            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.021",
+            "relevance": "Establishes written-instrument requirements for covered conveyances; apply the requirement to the actual estate and transaction structure.",
+        },
+        {
+            "title": "Texas Property Code Section 13.001 — Validity of Unrecorded Instrument",
+            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.13.htm#13.001",
+            "relevance": "Explains recording consequences against specified creditors and subsequent purchasers; recording does not independently cure defective ownership.",
+        },
+        {
+            "title": "Texas Natural Resources Code Section 91.402 — Time for Payment of Proceeds",
+            "url": "https://statutes.capitol.texas.gov/Docs/NR/htm/NR.91.htm#91.402",
+            "relevance": "Provides payment timing and withholding provisions relevant to covered oil-and-gas proceeds, ownership disputes, and post-closing collection workflows.",
+        },
+        {
+            "title": "18 CFR 35.28 — Non-discriminatory Open Access Transmission Tariff",
+            "url": "https://www.ecfr.gov/current/title-18/chapter-I/subchapter-C/part-35/section-35.28",
+            "relevance": "Provides the federal tariff framework relevant to covered transmission and interconnection procedures; a queue entry does not establish retail load service or site-specific deliverable power.",
+        },
+        {
+            "title": "26 U.S.C. 611 — Allowance of Deduction for Depletion",
+            "url": "https://www.law.cornell.edu/uscode/text/26/611",
+            "relevance": "Supports property-specific depletion accounting rather than treating all royalty receipts as economically undepletable income.",
+        },
+        {
+            "title": "26 U.S.C. 612 — Basis for Cost Depletion",
+            "url": "https://www.law.cornell.edu/uscode/text/26/612",
+            "relevance": "Connects cost-depletion calculations to adjusted basis, requiring maintained acquisition and adjustment records.",
+        },
+        {
+            "title": "15 U.S.C. 77b — Definitions Under the Securities Act",
+            "url": "https://www.law.cornell.edu/uscode/text/15/77b",
+            "relevance": "The securities definition includes specified fractional undivided interests in oil, gas, or other mineral rights; evaluate pooled structures before solicitation.",
+        },
+        {
+            "title": "15 U.S.C. 77e — Prohibitions Relating to Interstate Commerce and the Mails",
+            "url": "https://www.law.cornell.edu/uscode/text/15/77e",
+            "relevance": "Establishes registration-related requirements for securities offers and sales, subject to applicable exemptions and the offering's actual facts.",
+        },
+    ],
+}

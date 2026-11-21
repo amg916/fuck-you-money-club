@@ -1,0 +1,1694 @@
+from __future__ import annotations
+
+
+def build_volume_023_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-023-mineral-rights",
+        "volume_id": "vol-023-mineral-rights",
+        "title": "Mineral Rights — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Mineral and NPRI Underwriting, "
+            "Pooling-Docket Research, Royalty Reconciliation, Capital Discipline, "
+            "and Institutional Exits"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Opportunity Underwriting and Counterparty Qualification",
+                "purpose": (
+                    "Turn a mineral acquisition lead into a documented investment "
+                    "decision before committing capital. Establish the exact property "
+                    "interest, ownership chain, production exposure, development catalyst, "
+                    "seller authority, and realistic institutional buyer universe while "
+                    "separating recorded facts from speculative drilling expectations."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Select one county, producing formation, and acquisition strategy "
+                        "before reviewing offers. Assemble the recorded instruments, lease "
+                        "schedule, production history, public docket entries, and ownership "
+                        "evidence into one dated packet so underwriting assumptions remain "
+                        "traceable to source documents."
+                    ),
+                    (
+                        "Calculate net mineral acres separately from royalty ownership. "
+                        "Read every reservation and granting clause before applying a "
+                        "lease royalty fraction, and obtain a title professional's written "
+                        "interpretation whenever fixed, floating, term, or depth-limited "
+                        "interests create competing decimal outcomes."
+                    ),
+                    (
+                        "Treat pooling applications, permits, and operator presentations "
+                        "as research inputs rather than completed development. Record "
+                        "hearing dates, protests, final orders, elections, and expiration "
+                        "conditions, then price a delayed-development case alongside the "
+                        "proposed near-term drilling case."
+                    ),
+                    (
+                        "Verify seller identity and signing authority through independently "
+                        "obtained records and a trusted callback. Compare the payment "
+                        "recipient with the deed grantor and estate or entity documents "
+                        "before allowing an executed purchase agreement to enter closing."
+                    ),
+                    (
+                        "Identify potential institutional buyers using completed transactions "
+                        "and their stated acquisition criteria. Document acreage thresholds, "
+                        "title expectations, data requirements, and concentration limits "
+                        "without treating an indicative conversation as a binding bid "
+                        "or a guaranteed resale channel."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "County, formation, and acquisition thesis",
+                        "textarea",
+                        (
+                            "Define the geographic boundary, target formation, interest "
+                            "type, investment duration, and observable reason the property "
+                            "fits your strategy. State what evidence would invalidate "
+                            "the thesis before contacting additional owners."
+                        ),
+                        (
+                            "Target producing oil and gas minerals in one defined "
+                            "Reeves County, Texas, acquisition area, with a thirty-six-month "
+                            "holding case. Require recorded ownership and twelve monthly "
+                            "check details. Reject purchases supported only by neighboring "
+                            "permits when the subject tract has no documented development "
+                            "or producing allocation."
+                        ),
+                    ),
+                    field(
+                        "Interest classification and conveyance language",
+                        "textarea",
+                        (
+                            "Quote the operative grant and reservation language, then "
+                            "classify mineral, executive, royalty, and depth rights separately. "
+                            "Explain whether an NPRI fraction is fixed or floating "
+                            "and identify unresolved construction questions."
+                        ),
+                        (
+                            "Instrument A conveys an undivided one-fourth mineral interest "
+                            "in 160 gross acres without a listed depth limitation. "
+                            "Instrument B reserves one-fourth of the royalty, requiring "
+                            "separate floating-NPRI analysis. Do not label both instruments "
+                            "forty royalty acres or combine their burdens without tracing "
+                            "which estate each instrument affects."
+                        ),
+                    ),
+                    field(
+                        "Net mineral acres and unit decimal",
+                        "textarea",
+                        (
+                            "Show gross acres, mineral ownership, lease royalty, unit "
+                            "acreage, and the allocation method actually authorized by "
+                            "the governing documents. Identify burdens and participation "
+                            "adjustments before accepting a revenue decimal."
+                        ),
+                        (
+                            "For an unburdened illustrative tract, 160 gross acres times "
+                            "25% ownership equals 40 NMA. With a 20% lease royalty "
+                            "and valid acreage allocation across 1,280 acres, the decimal "
+                            "is 40 divided by 1,280 times 0.20, or 0.00625. "
+                            "Confirm this allocation rather than importing it into every horizontal unit."
+                        ),
+                    ),
+                    field(
+                        "Fixed and floating NPRI comparison",
+                        "textarea",
+                        (
+                            "Model competing royalty interpretations using the actual "
+                            "tract allocation and lease fraction. Preserve the instrument "
+                            "language alongside each calculation, and explain why an "
+                            "NPRI must not automatically be multiplied by royalty twice."
+                        ),
+                        (
+                            "Across a fully represented 160-acre tract in a 1,280-acre "
+                            "unit, a fixed 1/64 royalty yields 0.015625 times 160/1,280 "
+                            "equals 0.001953125. A floating one-fourth of a 20% royalty "
+                            "yields 0.00625 instead. These alternative examples assume no "
+                            "additional ownership fraction, burdens, or allocation adjustments."
+                        ),
+                    ),
+                    field(
+                        "Recorded chain and severance investigation",
+                        "textarea",
+                        (
+                            "List the deed chain, mineral severances, probate links, "
+                            "liens, reservations, and depth restrictions that establish "
+                            "saleable ownership. Assign a responsible reviewer and a "
+                            "specific corrective document for every material break."
+                        ),
+                        (
+                            "The seller's 2018 deed references a 1974 mineral reservation "
+                            "and a 2009 estate distribution. The landman retrieves both "
+                            "instruments and the probate order; the title attorney resolves "
+                            "whether the reserved interest remains outstanding. A missing "
+                            "heir conveyance blocks funding until an acceptable recorded "
+                            "curative instrument establishes the seller's interest."
+                        ),
+                    ),
+                    field(
+                        "Production, decline, and operator concentration",
+                        "textarea",
+                        (
+                            "Summarize monthly production, realized pricing, downtime, well "
+                            "age, decline assumptions, and operator exposure. Distinguish "
+                            "historical reported volumes from forecast volumes, and identify "
+                            "whether public data represent wells, leases, or allocated units."
+                        ),
+                        (
+                            "Twelve purchaser statements support $18,750 of annual gross "
+                            "royalty on Tract A before specified deductions. The downside "
+                            "case applies a 20% volume decline and 25% price reduction, "
+                            "producing $11,250 before deductions. One operator controls all "
+                            "current cash flow, so the file separately models ninety days "
+                            "of payment interruption."
+                        ),
+                    ),
+                    field(
+                        "Pooling-docket catalyst and jurisdiction",
+                        "textarea",
+                        (
+                            "Identify the agency, proceeding type, tract coverage, public "
+                            "event dates, and legal effect of each docket development. "
+                            "Separate a filed application from an effective order "
+                            "and an effective order from production."
+                        ),
+                        (
+                            "For an illustrative Oklahoma prospect, track the pooling "
+                            "application under 52 O.S. § 87.1, service evidence, hearing, "
+                            "final order, and owner election deadline. A scheduled hearing "
+                            "does not establish completed pooling or drilling. Keep this "
+                            "Oklahoma workflow separate from Texas Mineral Interest Pooling "
+                            "Act analysis under Natural Resources Code Chapter 102."
+                        ),
+                    ),
+                    field(
+                        "Seller identity and authority",
+                        "textarea",
+                        (
+                            "Record the grantor's verified identity, ownership capacity, "
+                            "authorized signer, independent contact source, and payment "
+                            "instructions. Identify estate, trust, entity, or marital "
+                            "documents that must be reviewed before execution and disbursement."
+                        ),
+                        (
+                            "A Texas limited liability company owns the minerals, while "
+                            "an individual negotiates the sale. Obtain its formation "
+                            "record, governing authority, and transaction authorization. "
+                            "Confirm the signer through an independently sourced telephone "
+                            "number, then require the escrow recipient to match documented "
+                            "ownership rather than a newly emailed personal bank account."
+                        ),
+                    ),
+                    field(
+                        "Institutional buyer qualification and exit fit",
+                        "textarea",
+                        (
+                            "Name the intended buyer category, minimum package size, "
+                            "producing exposure, acceptable jurisdictions, title standards, "
+                            "and required data format. Record the difference between "
+                            "a qualified buyer conversation and an executable purchase offer."
+                        ),
+                        (
+                            "The target buyer acquires producing Permian mineral packages "
+                            "with at least $100,000 annual documented royalty receipts. "
+                            "Our $18,750 tract is an aggregation component, not a "
+                            "standalone institutional package. The buyer requests tract "
+                            "polygons, recorded deeds, payor decimals, and twenty-four "
+                            "months of statements before providing a priced indication."
+                        ),
+                    ),
+                    field(
+                        "Investment decision and kill criteria",
+                        "textarea",
+                        (
+                            "State the maximum purchase price, approved assumptions, "
+                            "remaining conditions, responsible decision maker, and explicit "
+                            "rejection triggers. Explain which uncertainty can be priced "
+                            "and which uncertainty prevents an acquisition entirely."
+                        ),
+                        (
+                            "Authorize an indicative price ceiling of $120,000 for "
+                            "Tract A only after the forty NMA and 0.00625 decimal "
+                            "are established. Reject unresolved competing ownership or "
+                            "unverifiable seller authority. A drilling delay may justify "
+                            "a lower price; a missing ownership link cannot be solved "
+                            "merely by assuming a higher future commodity price."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance only when the acquisition lead, title reviewer, and "
+                    "capital owner have signed the source-linked ownership calculation, "
+                    "downside valuation, counterparty verification, and written rejection criteria."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
+                "purpose": (
+                    "Build an acquisition and portfolio model that preserves the "
+                    "distinction between mineral purchase capital, royalty receipts, "
+                    "realized trading gains, operating costs, and owner profit. Quantify "
+                    "title-curative exposure, payment delays, commodity sensitivity, "
+                    "and liquidity without inflating revenue through returned investment basis."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Lock the three canonical portfolio scenarios before entering "
+                        "tract assumptions. Use the stated revenue and owner-profit "
+                        "figures exactly, label supporting allocations as illustrative, "
+                        "and never represent one acquisition's cash yield as the "
+                        "entire portfolio's net margin."
+                    ),
+                    (
+                        "Maintain separate schedules for acquisition basis, realized "
+                        "gain, recurring royalties, overhead, direct transaction costs, "
+                        "and cash restrictions. Reconcile bank movement to those schedules "
+                        "rather than classifying every incoming wire as recognized "
+                        "operator revenue or spendable profit."
+                    ),
+                    (
+                        "Build the royalty forecast from verified ownership decimals "
+                        "and an explicit unit revenue assumption. Show production "
+                        "decline, commodity price, deductions, and downtime separately "
+                        "so a reviewer can identify the exact input responsible "
+                        "for each valuation change."
+                    ),
+                    (
+                        "Size the title-defect reserve from identified curative tasks "
+                        "and credible downside costs. Treat a cash designation as "
+                        "a liquidity decision rather than an automatic expense, and "
+                        "release reserved funds only after documented resolution "
+                        "or a revised written exposure assessment."
+                    ),
+                    (
+                        "Stress payment suspension and delayed resale together, then "
+                        "confirm the business can fund overhead without forced asset "
+                        "sales. State distribution limits and capital-call assumptions "
+                        "explicitly; an attractive paper gain does not pay a "
+                        "near-term legal invoice."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Canonical portfolio scenario lock",
+                        "textarea",
+                        (
+                            "Enter annual gross revenue, net margin, owner net "
+                            "profit, and team size for all three canonical scenarios. "
+                            "Calculate implied total costs and preserve these figures "
+                            "when adding detailed operating assumptions."
+                        ),
+                        (
+                            "Conservative: $30,000 revenue, 20% margin, $6,000 profit, "
+                            "$24,000 costs, 1 FT plus 3 C. Base: $215,000, "
+                            "32.5%, $69,875, $145,125 costs, 1 FT plus 3 C. "
+                            "Scaled: $400,000, 45%, $180,000, $220,000 costs, "
+                            "2 FT plus 4 C, totaling six people."
+                        ),
+                    ),
+                    field(
+                        "Recognized revenue and returned basis bridge",
+                        "textarea",
+                        (
+                            "Bridge royalty receipts and realized rights-trading gains "
+                            "to total recognized operator revenue. Show gross disposal "
+                            "proceeds and returned basis separately, and identify whether "
+                            "transaction costs are expensed or included in basis."
+                        ),
+                        (
+                            "Illustrative Base revenue combines $175,000 royalty receipts "
+                            "and $40,000 realized gain. A $160,000 Tract B sale "
+                            "returns $120,000 recorded basis and creates that $40,000 "
+                            "gain. Total incoming receipts are $335,000, but recognized "
+                            "operator revenue remains $215,000. Selling costs sit within "
+                            "the stated expense bridge, not inside the gain again."
+                        ),
+                    ),
+                    field(
+                        "Purchase basis and royalty cash yield",
+                        "textarea",
+                        (
+                            "Record the acquisition's capitalized basis and its "
+                            "forecast royalty receipts before and after specified "
+                            "deductions. Distinguish unlevered cash yield from owner "
+                            "net margin, and disclose any acquisition costs excluded "
+                            "from the illustrative calculation."
+                        ),
+                        (
+                            "Tract A has an illustrative $120,000 recorded basis. "
+                            "Annual unit sales of $3,000,000 times 0.00625 produce "
+                            "$18,750 before deductions, a 15.625% gross cash yield. "
+                            "Assumed annual deductions of $1,650 reduce receipts to "
+                            "$17,100 and the cash yield to 14.25%, before "
+                            "portfolio overhead and income taxes."
+                        ),
+                    ),
+                    field(
+                        "Commodity and depletion stress calculation",
+                        "textarea",
+                        (
+                            "Recalculate the acquisition under separate price, volume, "
+                            "and payment-interruption stresses. State which costs remain "
+                            "fixed, which deductions move with sales, and whether "
+                            "the analysis includes new wells or only existing production."
+                        ),
+                        (
+                            "Apply 20% lower production and 25% lower realized price "
+                            "to the $18,750 gross royalty forecast: $18,750 times "
+                            "0.80 times 0.75 equals $11,250. For a simple downside "
+                            "test, hold $1,650 deductions constant, leaving $9,600 "
+                            "before overhead. No future wells or sale appreciation "
+                            "rescue this existing-production calculation."
+                        ),
+                    ),
+                    field(
+                        "Title scrub and defect reserve",
+                        "textarea",
+                        (
+                            "Itemize title-review, curative, recording, and disputed-payment "
+                            "exposures with expected timing and responsible owners. "
+                            "Separate a designated cash reserve from booked expense "
+                            "and explain what evidence permits each reserve release."
+                        ),
+                        (
+                            "Designate $15,000 cash for a $6,000 heirship curative, "
+                            "$4,000 specialist title review, $2,000 recording and "
+                            "document retrieval allowance, and $3,000 contingency. "
+                            "This designation is not itself an expense. The accountant "
+                            "classifies actual invoices once incurred; the acquisition "
+                            "lead releases unused cash only after the title reviewer "
+                            "accepts the recorded cure."
+                        ),
+                    ),
+                    field(
+                        "Working-capital float and receipt suspension",
+                        "textarea",
+                        (
+                            "Calculate the cash needed for overhead, expected "
+                            "receipt delays, and curative work before distributions. "
+                            "Identify double counting between lost receipts and "
+                            "funded overhead, and define the minimum unrestricted "
+                            "cash balance required throughout the stress period."
+                        ),
+                        (
+                            "At $6,000 monthly cash overhead, six months require "
+                            "$36,000. Add the separately designated $15,000 curative "
+                            "reserve for a $51,000 liquidity target. A ninety-day "
+                            "suspension of $1,425 monthly Tract A receipts delays "
+                            "$4,275; do not add that amount again when the "
+                            "six-month model already assumes zero receipts."
+                        ),
+                    ),
+                    field(
+                        "Base expense and profit reconciliation",
+                        "textarea",
+                        (
+                            "Allocate the Base scenario's implied annual costs "
+                            "across overhead, transaction work, specialist support, "
+                            "and administration. Make the arithmetic reconcile "
+                            "exactly and explain which line items are recurring "
+                            "versus acquisition-dependent costs."
+                        ),
+                        (
+                            "Base costs comprise $72,000 recurring overhead, $31,000 "
+                            "specialist title and land support, $18,000 deal diligence "
+                            "and sale execution, $12,125 accounting and administration, "
+                            "and $12,000 other operating expense. Total costs equal "
+                            "$145,125; subtracting them from $215,000 revenue produces "
+                            "$69,875 owner net profit, exactly 32.5%."
+                        ),
+                    ),
+                    field(
+                        "Startup capital and cash allocation",
+                        "textarea",
+                        (
+                            "Choose a startup capitalization within the canonical "
+                            "range and allocate it between purchases, liquidity, "
+                            "curative exposure, and undeployed capital. Preserve "
+                            "the distinction between cash spent on assets and "
+                            "current-period operating expense."
+                        ),
+                        (
+                            "An illustrative $400,000 capitalization sits within the "
+                            "$150,000–$2,000,000 range. Allocate $120,000 each to "
+                            "Tracts A and B, $36,000 overhead float, $15,000 "
+                            "curative cash, and $109,000 uncommitted capital. "
+                            "These allocations total $400,000; they do not create "
+                            "$240,000 of immediate operating expense simply because "
+                            "two mineral purchases close."
+                        ),
+                    ),
+                    field(
+                        "Scaled workload and cost capacity",
+                        "textarea",
+                        (
+                            "Test whether the Scaled scenario's staffing and cost "
+                            "envelope can support the portfolio's actual statement "
+                            "volume, title workload, and acquisitions. Separate "
+                            "recurring monthly overhead from annual variable "
+                            "transaction and specialist costs."
+                        ),
+                        (
+                            "Scaled revenue of $400,000 less $220,000 total costs "
+                            "leaves $180,000 owner net profit. Illustratively, recurring "
+                            "overhead is $10,000 monthly, with $100,000 annual variable "
+                            "costs beyond it. Two full-time operators and four "
+                            "contractors cover acquisition, reconciliation, land, title, "
+                            "accounting, and data work without exceeding six people."
+                        ),
+                    ),
+                    field(
+                        "Capital release and distribution rule",
+                        "textarea",
+                        (
+                            "Specify when cash may leave the business and "
+                            "which balances remain restricted by operating policy. "
+                            "Reconcile sale proceeds, expenses, reserve requirements, "
+                            "and proposed distributions without treating returned "
+                            "basis as earned operating profit."
+                        ),
+                        (
+                            "After Tract B sells for $160,000, tag $120,000 as "
+                            "returned investment basis and $40,000 as realized gain "
+                            "before separately recorded expenses. Distributions require "
+                            "the next six months of overhead plus unresolved "
+                            "curative exposure to remain funded. Reinvestment of "
+                            "returned basis is a capital decision, not a profit "
+                            "margin improvement."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance only when all three canonical scenarios reconcile "
+                    "exactly, the Base cash-to-revenue bridge excludes returned basis, "
+                    "and the stressed cash schedule funds overhead and identified "
+                    "defects without relying on an uncontracted sale."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "Execution, Ownership Ledger, and Technical Pre-Flight",
+                "purpose": (
+                    "Convert an approved acquisition into recorded ownership, "
+                    "correct payor setup, and auditable receipts. Establish "
+                    "document controls, parcel identifiers, closing instructions, "
+                    "decimal verification, transaction coding, and exception handling "
+                    "so title defects and payment errors cannot disappear "
+                    "inside a successful-looking dashboard."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Assign immutable identifiers before importing documents or "
+                        "sending purchase agreements. Link the property, instrument, "
+                        "owner, lease, well, unit, and payor through explicit "
+                        "relationships rather than assuming an operator's property "
+                        "number uniquely identifies the mineral estate."
+                    ),
+                    (
+                        "Prepare a closing checklist that distinguishes executed "
+                        "documents, verified authority, cleared conditions, recorded "
+                        "instruments, and disbursed funds. A signed deed alone "
+                        "does not prove recording, and a bank debit does "
+                        "not prove the correct recipient received payment."
+                    ),
+                    (
+                        "Recalculate ownership decimals from source instruments "
+                        "before accepting division-order values. Compare the "
+                        "payor's allocation method with lease and unit documents, "
+                        "then route any unexplained difference to a named "
+                        "reviewer rather than silently forcing the ledger to match."
+                    ),
+                    (
+                        "Reconcile each statement line to production month, "
+                        "product, price, volume, taxes, deductions, and cash "
+                        "settlement. Preserve adjustments as separate records "
+                        "so retroactive corrections remain visible and do not "
+                        "overwrite the original accounting or supporting evidence."
+                    ),
+                    (
+                        "Complete a technical pre-flight with duplicate files, "
+                        "revised statements, suspended payments, and mismatched "
+                        "decimals before importing a live portfolio. Define "
+                        "rollback procedures and retain original source files "
+                        "so an incorrect parser release can be reversed cleanly."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Property master and relationship keys",
+                        "textarea",
+                        (
+                            "Define stable identifiers for tracts, interests, leases, "
+                            "wells, units, and payors. Record how multiple wells "
+                            "relate to one tract and how changed operator "
+                            "identifiers are preserved without creating duplicate assets."
+                        ),
+                        (
+                            "Use TRACT-023-001 for Tract A and INTEREST-023-001 "
+                            "for its purchased mineral estate. Store county recording "
+                            "references separately from operator property codes. "
+                            "Two wells may share the same unit but retain "
+                            "distinct well identifiers. An operator transfer creates "
+                            "a dated payor relationship, not a second copy of "
+                            "the purchased forty NMA."
+                        ),
+                    ),
+                    field(
+                        "Document manifest and evidence versions",
+                        "textarea",
+                        (
+                            "List every required source document with its origin, "
+                            "retrieval date, version, and integrity fingerprint. "
+                            "Explain how a revised instrument interpretation "
+                            "changes derived calculations without deleting the "
+                            "earlier evidence or reviewer comments."
+                        ),
+                        (
+                            "The manifest includes the recorded vesting deed, "
+                            "lease, amendments, unit instrument, title memorandum, "
+                            "purchase agreement, and twelve statements. Python "
+                            "hashlib computes SHA-256 fingerprints for stored files. "
+                            "A corrected title memorandum receives version two; "
+                            "version one remains retained and marked superseded, "
+                            "with the resulting decimal change linked to both versions."
+                        ),
+                    ),
+                    field(
+                        "Purchase agreement and closing sequence",
+                        "textarea",
+                        (
+                            "Set the order of diligence completion, execution, "
+                            "funding, recording, and evidence delivery. Name "
+                            "the person responsible for each step and "
+                            "specify the evidence needed before the escrow "
+                            "agent releases purchase funds."
+                        ),
+                        (
+                            "The agreement identifies the exact conveyed interest, "
+                            "a $120,000 purchase price, the effective date, "
+                            "permitted burdens, and title remedies. Escrow receives "
+                            "funds only after authority review. Release follows "
+                            "the agreed recording protocol and verified instructions; "
+                            "the closing file retains the stamped instrument, "
+                            "disbursement statement, and independent wire confirmation."
+                        ),
+                    ),
+                    field(
+                        "Wire verification and exception response",
+                        "textarea",
+                        (
+                            "Document the trusted callback process, approved "
+                            "recipient, dual verification responsibility, and "
+                            "response to changed bank instructions. State "
+                            "which evidence stops disbursement and how an "
+                            "attempted substitution is preserved for investigation."
+                        ),
+                        (
+                            "The acquisition lead calls the escrow officer using "
+                            "a previously verified number, while the operations "
+                            "reviewer compares account details against the signed "
+                            "closing instructions. An email changes the recipient "
+                            "two hours before funding; disbursement stops immediately. "
+                            "Retain the message and headers, contact escrow independently, "
+                            "and resume only after the discrepancy is resolved."
+                        ),
+                    ),
+                    field(
+                        "Division order and payor onboarding",
+                        "textarea",
+                        (
+                            "Identify required payor forms, ownership evidence, "
+                            "tax documentation, effective dates, and decimal "
+                            "review steps. Explain how division-order language "
+                            "is checked against the lease rather than "
+                            "accepted as a replacement for underlying rights."
+                        ),
+                        (
+                            "Submit the recorded deed, requested ownership "
+                            "documentation, secure tax form, and verified contact "
+                            "information. Compare the offered 0.00500 decimal with "
+                            "the supported 0.00625 calculation before signing. "
+                            "For Texas production, the reviewer checks relevant "
+                            "division-order requirements under Natural Resources "
+                            "Code § 91.402 and requests correction with the "
+                            "supporting tract calculation attached."
+                        ),
+                    ),
+                    field(
+                        "Statement normalization and receipt ledger",
+                        "textarea",
+                        (
+                            "Specify the normalized statement columns and "
+                            "bank-matching rules. Preserve production month "
+                            "separately from payment date and identify "
+                            "how taxes, transportation, processing, adjustments, "
+                            "and suspense releases appear in the accounting trail."
+                        ),
+                        (
+                            "A monthly line shows $250,000 unit sales times "
+                            "0.00625 equals $1,562.50 gross royalty. Separately "
+                            "record $93.75 taxes and $43.75 other stated "
+                            "deductions, leaving $1,425 cash. The ledger stores "
+                            "production month, payment date, statement reference, "
+                            "bank transaction, and deduction descriptions so "
+                            "the $137.50 reduction remains inspectable."
+                        ),
+                    ),
+                    field(
+                        "Decimal variance and deduction dispute",
+                        "textarea",
+                        (
+                            "Set tolerances for ownership and payment differences "
+                            "and define the evidence required to open a "
+                            "payor inquiry. Distinguish a mathematical discrepancy "
+                            "from a disputed contractual deduction and assign "
+                            "each issue a resolution deadline."
+                        ),
+                        (
+                            "At $250,000 unit sales, a 0.00500 decimal produces "
+                            "$1,250 rather than the expected $1,562.50 gross "
+                            "royalty, a $312.50 difference. Open a decimal "
+                            "inquiry with the recorded deed and allocation "
+                            "calculation. Separately challenge the $43.75 charge "
+                            "only after reviewing the lease's valuation and "
+                            "deduction provisions; the two issues require different evidence."
+                        ),
+                    ),
+                    field(
+                        "Asset basis and disposition ledger",
+                        "textarea",
+                        (
+                            "Define the asset-level records supporting acquisition "
+                            "basis, later adjustments, partial disposals, and "
+                            "realized gains. Explain how the operating ledger "
+                            "reconciles to tax-basis schedules without assuming "
+                            "both schedules always carry identical balances."
+                        ),
+                        (
+                            "Tract B's operating schedule records $120,000 basis "
+                            "and $160,000 sale proceeds, producing $40,000 "
+                            "realized gain before separately expensed sale costs. "
+                            "The accountant maintains any depletion-related tax "
+                            "adjustments in a linked schedule. A partial sale "
+                            "requires a documented basis allocation before "
+                            "posting gain; the full original basis cannot "
+                            "be deducted on every partial disposition."
+                        ),
+                    ),
+                    field(
+                        "Parser tests and duplicate prevention",
+                        "textarea",
+                        (
+                            "Describe test fixtures for statement ingestion, "
+                            "revised payments, ownership changes, and malformed "
+                            "numbers. Define idempotency keys and expected "
+                            "results so repeated imports cannot multiply "
+                            "royalty revenue or erase historical adjustments."
+                        ),
+                        (
+                            "Load the same statement twice and require one "
+                            "posted receipt. Use file fingerprints plus payor, "
+                            "owner account, statement identifier, and line "
+                            "identity for matching. A revised statement becomes "
+                            "a linked correction. A parenthesized $125.00 "
+                            "adjustment posts as negative $125.00, while "
+                            "an unreadable amount enters manual review instead "
+                            "of silently becoming zero."
+                        ),
+                    ),
+                    field(
+                        "Month-end certification and recovery plan",
+                        "textarea",
+                        (
+                            "State the close checklist, reviewer responsibilities, "
+                            "unresolved exception presentation, and restoration "
+                            "procedure. Identify the evidence proving recorded "
+                            "receipts match bank activity and that ownership "
+                            "changes have reached each relevant payor."
+                        ),
+                        (
+                            "By business day ten, the bookkeeper ties receipts "
+                            "to bank deposits and the operations lead reviews "
+                            "all decimal changes and suspended balances. "
+                            "Unresolved items remain visible with owners and "
+                            "dates. Before updating the parser, retain a "
+                            "read-only ledger export and database backup; "
+                            "restore and replay the test set if reconciliation totals change unexpectedly."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance only when closing evidence is complete, recorded "
+                    "ownership and payor decimals reconcile, duplicate-import tests "
+                    "pass, and the first available receipt or documented suspense "
+                    "entry matches the asset-level ledger."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Contract, Tax, and Outreach Audit",
+                "purpose": (
+                    "Translate jurisdiction-specific mineral, leasing, pooling, "
+                    "tax, brokerage, securities, and outreach requirements into "
+                    "documented operating tasks. Identify the exact activity "
+                    "being performed, the controlling authority, the required "
+                    "specialist review, and the evidence necessary before "
+                    "signing instruments, soliciting owners, or accepting investor capital."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Map every property and business activity to its "
+                        "jurisdiction before choosing forms or outreach methods. "
+                        "Separate direct ownership purchases from representing "
+                        "another party, and distinguish private mineral interests "
+                        "from federal, state, or tribal leases with additional requirements."
+                    ),
+                    (
+                        "Have the title reviewer resolve severances, reservations, "
+                        "probate authority, marital interests, and recordation "
+                        "requirements using the actual chain. Do not replace "
+                        "instrument analysis with a county tax listing, a "
+                        "seller spreadsheet, or a payor's existing ownership decimal."
+                    ),
+                    (
+                        "Convert lease and purchase provisions into measurable "
+                        "obligations covering effective dates, deductions, "
+                        "pooling authority, warranties, curative periods, and "
+                        "payment remedies. Record the controlling clause "
+                        "beside each operational action instead of relying "
+                        "on a generic contract summary."
+                    ),
+                    (
+                        "Review tax classification, licensing exposure, and "
+                        "capital solicitation before launching the relevant "
+                        "activity. Document the specific statutory pathway "
+                        "and supporting records; the fact that mineral "
+                        "assets are tangible property does not resolve "
+                        "every pooled-investment securities question."
+                    ),
+                    (
+                        "Approve outreach scripts by channel and retain "
+                        "suppression records, source permissions, and complaint "
+                        "handling instructions. Stop a campaign when ownership "
+                        "identity, recipient restrictions, or message accuracy "
+                        "cannot be verified, while continuing permitted "
+                        "research and non-contact diligence work."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Jurisdiction and property-regime map",
+                        "textarea",
+                        (
+                            "Identify the property location, ownership regime, "
+                            "regulator, recording office, and additional approvals "
+                            "that attach to the specific estate. Explain "
+                            "which familiar private-land workflow cannot "
+                            "be reused without modification."
+                        ),
+                        (
+                            "The pilot acquires privately owned Texas minerals "
+                            "and records conveyances with the appropriate county "
+                            "clerk. A later prospect involving a federal oil "
+                            "and gas lease requires separate review of "
+                            "43 CFR Part 3100 and applicable assignment rules. "
+                            "Exclude that prospect from the private-mineral "
+                            "template until the relevant transfer requirements are mapped."
+                        ),
+                    ),
+                    field(
+                        "Conveyance, recording, and ownership authority",
+                        "textarea",
+                        (
+                            "List the instrument execution and recording "
+                            "requirements applicable to the transaction, "
+                            "including authority and property description "
+                            "review. Identify the statute and the "
+                            "documented title condition that must be "
+                            "resolved before funding."
+                        ),
+                        (
+                            "For a Texas conveyance, review Property Code "
+                            "§§ 5.021, 12.001, and 13.001 for relevant "
+                            "conveyance, recording, and notice requirements. "
+                            "The deed must accurately identify the transferred "
+                            "estate and authorized grantor. A probate "
+                            "representative's signature is accepted only "
+                            "after reviewing the appointment and scope "
+                            "of authority supporting this particular sale."
+                        ),
+                    ),
+                    field(
+                        "Lease terms and payment obligations",
+                        "textarea",
+                        (
+                            "Extract royalty valuation, deductions, pooling, "
+                            "retained-acreage, depth, cessation, and payment "
+                            "provisions from the governing lease. Link "
+                            "each provision to a calculation or "
+                            "monitoring task and identify statutory "
+                            "payment exceptions requiring further review."
+                        ),
+                        (
+                            "The lease states a one-fifth royalty and contains "
+                            "a negotiated transportation provision that requires "
+                            "clause-specific interpretation. Review Texas Natural "
+                            "Resources Code §§ 91.402–91.403 for applicable "
+                            "payment timing, withholding grounds, and interest. "
+                            "A suspended payment triggers a written reason "
+                            "request; it does not automatically establish "
+                            "that statutory interest is owed."
+                        ),
+                    ),
+                    field(
+                        "Pooling authority and owner election calendar",
+                        "textarea",
+                        (
+                            "Specify whether pooling arises from contract, "
+                            "voluntary agreement, or a statutory proceeding. "
+                            "Record notice, hearing, election, and payment "
+                            "deadlines from the actual documents rather "
+                            "than applying another state's default timeline."
+                        ),
+                        (
+                            "An Oklahoma pooling order under 52 O.S. § 87.1 "
+                            "requires the team to extract the exact election "
+                            "and payment terms from the entered order. "
+                            "For Texas, evaluate contractual pooling authority "
+                            "and any proposed proceeding under Natural "
+                            "Resources Code Chapter 102 separately. Neither "
+                            "workflow treats a filed application as an "
+                            "effective conveyance or a completed well."
+                        ),
+                    ),
+                    field(
+                        "Purchase protections and defect remedies",
+                        "textarea",
+                        (
+                            "Draft the operational meaning of the title "
+                            "standard, defect threshold, curative period, "
+                            "purchase-price adjustment, closing condition, "
+                            "and remedy. Ensure the agreement allocates "
+                            "risk explicitly rather than relying on "
+                            "an undocumented promise to fix title later."
+                        ),
+                        (
+                            "The purchase agreement schedules forty NMA, "
+                            "specifies the conveyed depths, and permits a "
+                            "price adjustment for verified acreage shortfalls "
+                            "under its stated formula. A material unresolved "
+                            "ownership defect permits termination before "
+                            "funding. An escrow holdback secures only "
+                            "defined curative obligations; it does not "
+                            "transform disputed ownership into established title."
+                        ),
+                    ),
+                    field(
+                        "Activity-based licensing assessment",
+                        "textarea",
+                        (
+                            "Describe whether the business purchases for "
+                            "its own account, negotiates for others, "
+                            "receives transaction compensation, or performs "
+                            "specialist services. Obtain a jurisdiction-specific "
+                            "assessment of licensing requirements and "
+                            "document the activities actually authorized."
+                        ),
+                        (
+                            "The initial business buys minerals for its own "
+                            "portfolio and pays a land contractor for "
+                            "documented research. Before accepting a success "
+                            "fee to negotiate another owner's sale, obtain "
+                            "a Texas Occupations Code Chapter 1101 analysis "
+                            "covering the interest, activity, and any applicable "
+                            "exclusion. Do not assume the contractor's "
+                            "job title settles the licensing question."
+                        ),
+                    ),
+                    field(
+                        "Royalty tax and depletion workpaper",
+                        "textarea",
+                        (
+                            "Assign responsibility for royalty reporting, "
+                            "production taxes, property taxes, depletion "
+                            "analysis, basis adjustments, and disposition "
+                            "reporting. Distinguish operating scorecard "
+                            "profit from the separate tax calculations "
+                            "that depend on owner and property circumstances."
+                        ),
+                        (
+                            "The accountant reviews 26 U.S.C. §§ 611, 612, "
+                            "613, and 613A when evaluating depletion eligibility "
+                            "and limitations. Texas production-tax review "
+                            "considers Tax Code Chapters 201 and 202. "
+                            "Maintain supporting statements and tax-basis "
+                            "adjustments separately; a depletion deduction "
+                            "does not increase the canonical Base operating "
+                            "profit above $69,875."
+                        ),
+                    ),
+                    field(
+                        "Pooled capital and securities pathway",
+                        "textarea",
+                        (
+                            "Describe who contributes capital, who manages "
+                            "the assets, how returns are presented, "
+                            "and whether interests are offered publicly. "
+                            "Require a documented securities analysis "
+                            "before soliciting passive investors or "
+                            "accepting pooled investment subscriptions."
+                        ),
+                        (
+                            "Three passive investors propose funding an "
+                            "operator-managed mineral entity. Review Securities "
+                            "Act § 2(a)(1), 15 U.S.C. § 77b(a)(1), "
+                            "including investment-contract and fractional "
+                            "mineral-interest issues. If using Regulation D, "
+                            "select and satisfy the applicable 17 CFR "
+                            "§ 230.506 pathway, required filings, state "
+                            "notices, and relevant intermediary or adviser analysis before solicitation."
+                        ),
+                    ),
+                    field(
+                        "Owner outreach and suppression controls",
+                        "textarea",
+                        (
+                            "Define permitted outreach channels, contact "
+                            "data sources, message representations, "
+                            "opt-out handling, and retention rules. "
+                            "Map telephone, text, and commercial "
+                            "email requirements to the specific "
+                            "campaign rather than treating all channels alike."
+                        ),
+                        (
+                            "Start with accurate direct mail identifying "
+                            "the purchasing entity and property interest. "
+                            "Before phone or text outreach, assess "
+                            "47 U.S.C. § 227, 47 CFR § 64.1200, "
+                            "and applicable state restrictions. Commercial "
+                            "email review uses 15 U.S.C. § 7704. "
+                            "Suppress opted-out recipients promptly and "
+                            "never imply that a county office endorsed the offer."
+                        ),
+                    ),
+                    field(
+                        "Liens, secured interests, and release evidence",
+                        "textarea",
+                        (
+                            "Identify recorded mortgages, judgments, "
+                            "assignment restrictions, and financing "
+                            "claims that may affect the acquired "
+                            "estate or proceeds. Explain which "
+                            "searches and releases are required "
+                            "and why one database cannot establish clear title."
+                        ),
+                        (
+                            "The title reviewer searches the real-property "
+                            "records and evaluates relevant UCC filings. "
+                            "UCC § 9-109(d)(11) addresses the real-property "
+                            "exclusion with exceptions, while § 9-502(b) "
+                            "addresses specified real-property-related filings. "
+                            "A seller's lender claims as-extracted collateral; "
+                            "obtain a transaction-specific release analysis "
+                            "rather than assuming a standard UCC termination "
+                            "alone clears the mineral conveyance."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance only when every applicable statutory and contract "
+                    "task has an owner, source citation, and retained evidence; "
+                    "unresolved title authority, licensing scope, investor solicitation, "
+                    "or restricted outreach prevents the affected activity from proceeding."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation, Owner Outreach, and Risk Fallback Tracker",
+                "purpose": (
+                    "Design a small-team operating system that automates "
+                    "royalty reconciliation and production monitoring while "
+                    "preserving human judgment for title, valuation, and "
+                    "owner communications. Build a repeatable acquisition "
+                    "pipeline with explicit data provenance, review queues, "
+                    "failure alerts, and manual recovery procedures."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Start with a narrow data flow connecting "
+                        "authorized source documents to a normalized "
+                        "ledger and exception queue. Automate deterministic "
+                        "checks first, retain original evidence, and "
+                        "keep ownership interpretation and purchase-price "
+                        "decisions assigned to named human reviewers."
+                    ),
+                    (
+                        "Establish production-monitoring thresholds using "
+                        "reporting frequency and known data delays. "
+                        "Differentiate missing reports, revised volumes, "
+                        "well downtime, and actual depletion before "
+                        "sending alerts or changing valuations, particularly "
+                        "where public reporting aggregates several wells."
+                    ),
+                    (
+                        "Build outreach from verified ownership records "
+                        "and a single suppression list shared across "
+                        "the team. Measure qualified conversations and "
+                        "complete underwriting packets rather than "
+                        "rewarding raw message volume, repeated contacts, "
+                        "or unverified owner matches."
+                    ),
+                    (
+                        "Use public pooling and permit information "
+                        "to prioritize research, not to represent "
+                        "certain development. Require source links "
+                        "and dated status transitions, then record "
+                        "why each catalyst changed the acquisition "
+                        "queue without automatically raising the offer."
+                    ),
+                    (
+                        "Define fallback procedures before deploying "
+                        "each automation. A source outage, parser "
+                        "error, disputed decimal, or exposed credential "
+                        "must have an owner, recovery target, "
+                        "manual operating method, and documented "
+                        "condition for returning to routine processing."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Authorized source inventory and cadence",
+                        "textarea",
+                        (
+                            "List each production, title, docket, and "
+                            "payment source with access method, "
+                            "refresh frequency, permitted use, and "
+                            "responsible owner. Separate authoritative "
+                            "records from useful secondary indexes "
+                            "that require confirmation before decisions."
+                        ),
+                        (
+                            "Use Texas Railroad Commission public production "
+                            "records for monitoring, county clerk instruments "
+                            "for recorded conveyances, and operator statements "
+                            "for payor-specific receipts. Review Oklahoma "
+                            "Corporation Commission docket updates for "
+                            "designated prospects. Refresh production monthly "
+                            "and active dockets twice weekly, using "
+                            "permitted downloads and retaining source dates "
+                            "instead of bypassing access restrictions."
+                        ),
+                    ),
+                    field(
+                        "Normalization pipeline and validation rules",
+                        "textarea",
+                        (
+                            "Describe ingestion, parsing, validation, storage, "
+                            "review, and export stages. Define "
+                            "required fields and numerical checks "
+                            "that reject unreliable records without "
+                            "discarding the original source or "
+                            "inventing missing ownership and payment values."
+                        ),
+                        (
+                            "A Python stdlib workflow uses csv for "
+                            "exports, decimal for money, sqlite3 for "
+                            "records, and hashlib for file identity. "
+                            "It checks that gross royalty minus "
+                            "listed deductions equals payment within "
+                            "one cent. Missing production month or "
+                            "unreadable decimal sends the record "
+                            "to review with its original attachment "
+                            "and failure reason preserved."
+                        ),
+                    ),
+                    field(
+                        "Royalty reconciliation automation",
+                        "textarea",
+                        (
+                            "Define automated comparisons between expected "
+                            "ownership, reported sales, deductions, and "
+                            "bank receipts. State numerical alert "
+                            "thresholds and identify which discrepancies "
+                            "can be resolved mechanically versus "
+                            "those requiring lease or title interpretation."
+                        ),
+                        (
+                            "For Tract A, the system compares the "
+                            "approved 0.00625 decimal with every "
+                            "statement and flags any change. It "
+                            "also flags a bank mismatch above "
+                            "$1.00 after documented timing items. "
+                            "A rounding difference may close through "
+                            "a logged rule; an unexplained ownership "
+                            "change requires the land or title "
+                            "reviewer to approve the resolution."
+                        ),
+                    ),
+                    field(
+                        "Production monitoring and decline alerts",
+                        "textarea",
+                        (
+                            "Set a monitoring baseline, reporting-lag "
+                            "allowance, variance threshold, and "
+                            "investigation sequence. Explain how "
+                            "revised reports, new wells, shut-ins, "
+                            "and lease-level aggregation affect "
+                            "the interpretation of apparent production changes."
+                        ),
+                        (
+                            "Flag a reported volume decline above "
+                            "25% against the trailing three reported "
+                            "months, excluding periods still inside "
+                            "the source's normal publication lag. "
+                            "The reviewer checks revisions, downtime, "
+                            "and reporting scope before changing "
+                            "the forecast. If two wells share "
+                            "a lease-level record, the alert "
+                            "cannot assign the decline to one "
+                            "well without additional evidence."
+                        ),
+                    ),
+                    field(
+                        "Pooling-docket research prioritization",
+                        "textarea",
+                        (
+                            "Specify how public docket events "
+                            "create research tasks and change "
+                            "lead priority. Record status definitions, "
+                            "source evidence, and safeguards "
+                            "against representing procedural movement "
+                            "as a certain near-term production catalyst."
+                        ),
+                        (
+                            "A filed Oklahoma pooling application "
+                            "creates a research task for tract "
+                            "coverage and owner identity. An "
+                            "entered order creates an election-calendar "
+                            "task, while a permit prompts "
+                            "development review. The model assigns "
+                            "no production revenue until supported "
+                            "by its explicit forecast assumptions; "
+                            "a protested or continued hearing "
+                            "reduces urgency rather than increasing price."
+                        ),
+                    ),
+                    field(
+                        "Owner acquisition funnel and attribution",
+                        "textarea",
+                        (
+                            "Define the stages from researched "
+                            "owner through verified interest, "
+                            "qualified conversation, offer, diligence, "
+                            "and closing. Set denominator rules "
+                            "so conversion rates reflect unique "
+                            "owners and real progress rather "
+                            "than duplicate contacts."
+                        ),
+                        (
+                            "A monthly cohort contains 120 researched "
+                            "owners, 90 verified contact records, "
+                            "18 replies, six qualified conversations, "
+                            "three indicative offers, and one "
+                            "diligence file. Reply rate is "
+                            "18 divided by 90, or 20%. "
+                            "The diligence file is not a "
+                            "closed acquisition, and a second "
+                            "letter to the same owner does "
+                            "not enlarge the owner denominator."
+                        ),
+                    ),
+                    field(
+                        "Outreach content and suppression workflow",
+                        "textarea",
+                        (
+                            "Write the factual message boundaries, "
+                            "review responsibilities, contact-frequency limits, "
+                            "and suppression propagation process. "
+                            "Explain how the team handles "
+                            "ownership disputes and requests "
+                            "to stop contact across every "
+                            "tool used for acquisition outreach."
+                        ),
+                        (
+                            "The letter says the company is "
+                            "interested in purchasing the described "
+                            "mineral interest and invites a "
+                            "discussion; it does not claim "
+                            "a mandatory sale or official "
+                            "affiliation. One stop-contact request "
+                            "updates the central suppression record "
+                            "before the next export. A recipient "
+                            "denying ownership triggers research, "
+                            "not a more aggressive automated follow-up."
+                        ),
+                    ),
+                    field(
+                        "Manual fallback and incident owner",
+                        "textarea",
+                        (
+                            "For each critical automation, define "
+                            "failure detection, accountable owner, "
+                            "manual procedure, recovery target, "
+                            "and return-to-service evidence. "
+                            "Explain how work continues "
+                            "without losing accounting history "
+                            "or bypassing unresolved title questions."
+                        ),
+                        (
+                            "If the parser fails on a "
+                            "new operator layout, the reconciliation "
+                            "contractor enters the statement into "
+                            "the controlled review sheet within "
+                            "two business days. The engineer "
+                            "adds a fixture and validates "
+                            "totals before release. Automated "
+                            "posting resumes only after the "
+                            "same statement produces identical "
+                            "reviewed amounts and no duplicate receipt."
+                        ),
+                    ),
+                    field(
+                        "Access, backups, and document protection",
+                        "textarea",
+                        (
+                            "Assign access by operating role "
+                            "and classify documents containing "
+                            "identity, bank, or tax information. "
+                            "Set backup, restoration, and "
+                            "credential-removal procedures that "
+                            "protect seller information while "
+                            "keeping authorized reviewers productive."
+                        ),
+                        (
+                            "The outreach contractor sees property "
+                            "and permitted contact records, not "
+                            "bank details or tax forms. "
+                            "Closing documents reside in a "
+                            "restricted repository with multifactor "
+                            "authentication. Revoke departing-contractor "
+                            "access the same day, retain "
+                            "access logs, and test a monthly "
+                            "restore using a non-sensitive ledger "
+                            "copy before relying on backups "
+                            "for production recovery."
+                        ),
+                    ),
+                    field(
+                        "Automation value and escalation budget",
+                        "textarea",
+                        (
+                            "Measure saved processing time, "
+                            "exception volume, rework, and "
+                            "specialist review costs. Define "
+                            "when growing exception rates "
+                            "justify reducing automation scope "
+                            "instead of adding more records "
+                            "to an unreliable process."
+                        ),
+                        (
+                            "Manual reconciliation of eighty "
+                            "statements at fifteen minutes "
+                            "each takes twenty hours. "
+                            "Automation leaves four hours "
+                            "of routine work plus six "
+                            "hours of exception review, "
+                            "saving ten hours monthly. "
+                            "At $50 per hour, the "
+                            "capacity value is $500; "
+                            "it becomes a cash saving "
+                            "only if actual paid labor "
+                            "or outside spending declines."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Deploy only after source permissions, duplicate protection, "
+                    "decimal alerts, suppression propagation, and manual restoration "
+                    "have passed documented tests; retain human review for title "
+                    "construction, valuation changes, disputed deductions, and owner disputes."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch, Pod Scorecard, and Exit-Readiness Ledger",
+                "purpose": (
+                    "Launch a disciplined research and acquisition operation "
+                    "without mistaking a thirty-day sprint for a guaranteed "
+                    "closing timeline. Assign the small-team workload, track "
+                    "capital and quality indicators, and assemble the ownership, "
+                    "receipt, and basis evidence an institutional buyer needs "
+                    "to evaluate a mineral package."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Set the first month's deliverables around research "
+                        "quality, workflow testing, and qualified opportunities. "
+                        "Preserve the canonical six-to-twenty-four-month first-deal "
+                        "window, and never manufacture a closing deadline "
+                        "that pressures the team to bypass ownership "
+                        "verification or adequate capital planning."
+                    ),
+                    (
+                        "Assign one accountable owner to each deliverable "
+                        "and define the contractor boundaries before "
+                        "outreach begins. Track the Conservative and "
+                        "Base staffing pattern separately from the "
+                        "six-person Scaled configuration so a growth "
+                        "plan does not silently assume unlimited support."
+                    ),
+                    (
+                        "Use weekly reviews to compare evidence "
+                        "quality, cash availability, unresolved defects, "
+                        "and qualified lead conversion. Review volume "
+                        "metrics alongside rejection reasons, because "
+                        "a smaller clean pipeline may be more "
+                        "valuable than a large list with uncertain ownership."
+                    ),
+                    (
+                        "Build the exit data room while "
+                        "acquiring assets rather than reconstructing "
+                        "it at sale. Maintain consistent tract "
+                        "identifiers, recorded instruments, royalty "
+                        "history, ownership calculations, and basis "
+                        "schedules that allow a buyer to reproduce "
+                        "the package economics independently."
+                    ),
+                    (
+                        "End the sprint with a written "
+                        "continue, narrow, pause, or stop "
+                        "decision tied to predefined evidence. "
+                        "Do not equate process completion "
+                        "with profitable execution; continue only "
+                        "when capital capacity, ownership quality, "
+                        "and a credible acquisition thesis remain intact."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Day 1–7 market boundary and operating setup",
+                        "textarea",
+                        (
+                            "List the first week's concrete "
+                            "deliverables, owners, and acceptance "
+                            "tests. Include the acquisition "
+                            "boundary, document repository, capital "
+                            "ledger, specialist engagement, and "
+                            "source inventory needed before "
+                            "the first owner contact."
+                        ),
+                        (
+                            "By day seven, the principal "
+                            "selects one Reeves County "
+                            "acquisition area, documents the "
+                            "$400,000 illustrative capital plan, "
+                            "and engages land, title, and "
+                            "accounting contractors. The team "
+                            "creates the tract ledger and "
+                            "tests restricted document access. "
+                            "Completion requires one reproducible "
+                            "sample ownership calculation, not "
+                            "a promise to acquire forty NMA immediately."
+                        ),
+                    ),
+                    field(
+                        "Day 8–14 research and owner qualification",
+                        "textarea",
+                        (
+                            "Define the second week's "
+                            "research cohort, ownership checks, "
+                            "contact verification, and outreach "
+                            "review. State the evidence "
+                            "required to promote a "
+                            "lead from raw source "
+                            "record to a qualified owner opportunity."
+                        ),
+                        (
+                            "The land contractor researches "
+                            "thirty tracts and traces "
+                            "ten promising ownership chains. "
+                            "The principal reviews five "
+                            "complete owner packets before "
+                            "sending factual acquisition letters. "
+                            "Each packet includes the "
+                            "recorded reference, interest description, "
+                            "independently checked contact source, "
+                            "and suppression status. A "
+                            "tax-roll name alone does "
+                            "not qualify the lead."
+                        ),
+                    ),
+                    field(
+                        "Day 15–21 underwriting and workflow rehearsal",
+                        "textarea",
+                        (
+                            "Specify the third week's "
+                            "valuation files, title questions, "
+                            "cash stresses, and technical "
+                            "tests. Identify the assumptions "
+                            "that remain conditional and "
+                            "the evidence needed before "
+                            "issuing a purchase commitment."
+                        ),
+                        (
+                            "Prepare three underwriting packets "
+                            "with verified fraction calculations, "
+                            "existing-production forecasts, and "
+                            "commodity downside cases. Rehearse "
+                            "the $1,562.50 gross-to-$1,425 "
+                            "cash statement and the "
+                            "duplicate-import test. The title "
+                            "reviewer addresses each material "
+                            "reservation question; the principal "
+                            "may issue conditional indications "
+                            "but cannot treat unresolved "
+                            "title as completed diligence."
+                        ),
+                    ),
+                    field(
+                        "Day 22–30 decision and pipeline handoff",
+                        "textarea",
+                        (
+                            "Define the final week's "
+                            "deliverables and decision evidence. "
+                            "Separate offers, signed agreements, "
+                            "recorded acquisitions, and first "
+                            "royalty payments so the "
+                            "launch report cannot overstate "
+                            "commercial progress or cash realization."
+                        ),
+                        (
+                            "By day thirty, deliver one "
+                            "complete investment memorandum, "
+                            "an operating reconciliation demonstration, "
+                            "a qualified buyer profile, "
+                            "and the next ninety-day "
+                            "research plan. Report zero "
+                            "closed deals if none "
+                            "have closed. The canonical "
+                            "first-deal expectation remains "
+                            "six to twenty-four months; "
+                            "a successful launch establishes "
+                            "discipline rather than artificial revenue."
+                        ),
+                    ),
+                    field(
+                        "Pod roles and specialist capacity",
+                        "textarea",
+                        (
+                            "Assign acquisition, land research, "
+                            "title interpretation, reconciliation, "
+                            "accounting, and data responsibilities "
+                            "within the canonical staffing "
+                            "envelope. Identify functions that "
+                            "may share one role "
+                            "and decisions requiring an independent specialist."
+                        ),
+                        (
+                            "Base uses one full-time "
+                            "principal plus three contractors: "
+                            "a land researcher, a "
+                            "title attorney, and a "
+                            "bookkeeping and tax provider. "
+                            "Scaled uses two full-time "
+                            "operators plus four contractors, "
+                            "adding dedicated data support. "
+                            "Six people is the Scaled "
+                            "total, not six employees "
+                            "plus an invisible external "
+                            "team excluded from the cost model."
+                        ),
+                    ),
+                    field(
+                        "Weekly quality and cash scorecard",
+                        "textarea",
+                        (
+                            "Choose a compact set "
+                            "of quality, conversion, cash, "
+                            "and exception indicators with "
+                            "clear denominators and responsible "
+                            "owners. Explain which metrics "
+                            "signal excessive risk even "
+                            "when outreach activity or offers increase."
+                        ),
+                        (
+                            "Track verified ownership packets "
+                            "over researched tracts, qualified "
+                            "conversations over unique contacted "
+                            "owners, unresolved material title "
+                            "issues, unrestricted cash, and "
+                            "unmatched receipts. Ten verified "
+                            "packets from thirty tracts "
+                            "equal 33.3%. A rise "
+                            "to six unresolved ownership "
+                            "disputes pauses new commitments "
+                            "even if the team "
+                            "doubles its weekly letter volume."
+                        ),
+                    ),
+                    field(
+                        "Canonical candidate and performance ledger",
+                        "textarea",
+                        (
+                            "Record the candidate's ranking, "
+                            "score components, capital range, "
+                            "monthly overhead range, and "
+                            "canonical profit outcomes. Keep "
+                            "these portfolio reference values "
+                            "distinct from the first "
+                            "month's actual activity and cash balances."
+                        ),
+                        (
+                            "Candidate #7, Resource assets, "
+                            "ranks #23 of 29 and "
+                            "scores 63/100: revenue 20, "
+                            "margin 17, team 16, "
+                            "accessibility 3, automation 7. "
+                            "Capital is $150,000–$2,000,000; "
+                            "monthly opex is $1,000–$12,000. "
+                            "Canonical annual owner profits "
+                            "are $6,000, $69,875, and "
+                            "$180,000. None becomes "
+                            "recognized launch-month profit "
+                            "merely because the operating plan is complete."
+                        ),
+                    ),
+                    field(
+                        "Institutional exit data-room manifest",
+                        "textarea",
+                        (
+                            "List the documents and "
+                            "machine-readable schedules required "
+                            "for buyer diligence. Assign "
+                            "an owner and freshness "
+                            "standard to each item, "
+                            "and explain how sensitive "
+                            "seller information is excluded "
+                            "from routine marketing materials."
+                        ),
+                        (
+                            "Prepare tract polygons, legal "
+                            "descriptions, recorded deeds, "
+                            "lease schedules, title memoranda, "
+                            "unit allocations, approved decimals, "
+                            "twenty-four months of available "
+                            "statements, and a basis "
+                            "bridge. Reconcile every marketed "
+                            "tract to the ownership "
+                            "ledger. Remove tax identifiers "
+                            "and banking details from "
+                            "the buyer overview, providing "
+                            "restricted materials only through controlled diligence access."
+                        ),
+                    ),
+                    field(
+                        "Exit proceeds and owner-profit bridge",
+                        "textarea",
+                        (
+                            "Model the contemplated disposal "
+                            "using actual asset basis, "
+                            "sale proceeds, selling costs, "
+                            "and retained obligations. Reconcile "
+                            "portfolio revenue and profit "
+                            "without counting returned capital "
+                            "or unrealized marks as "
+                            "recognized operating income."
+                        ),
+                        (
+                            "The illustrative Base year "
+                            "receives $175,000 royalties and "
+                            "$160,000 Tract B proceeds. "
+                            "Subtract $120,000 returned basis "
+                            "to obtain $215,000 recognized "
+                            "revenue. Subtract the complete "
+                            "$145,125 cost schedule, including "
+                            "its sale-execution allocation, "
+                            "to obtain $69,875 profit. "
+                            "A higher appraisal of "
+                            "unsold Tract A adds "
+                            "nothing to this realized-revenue bridge."
+                        ),
+                    ),
+                    field(
+                        "Continue, narrow, pause, or stop decision",
+                        "textarea",
+                        (
+                            "State the final operating "
+                            "decision, supporting evidence, "
+                            "capital limits, next review "
+                            "date, and conditions that "
+                            "would reverse the decision. "
+                            "Differentiate a temporary "
+                            "research pause from disposing "
+                            "of assets or terminating the strategy."
+                        ),
+                        (
+                            "Continue research within the "
+                            "selected county while limiting "
+                            "new commitments to $120,000 "
+                            "per fully reviewed tract. "
+                            "Pause purchases if unrestricted "
+                            "liquidity falls below the "
+                            "$51,000 operating-and-curative target "
+                            "or ownership authority remains "
+                            "unresolved. Review again after "
+                            "thirty days. A pause "
+                            "does not authorize a "
+                            "distressed sale or abandonment "
+                            "of existing payor reconciliation."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Complete the launch only when all thirty-day deliverables "
+                    "are evidenced, the canonical scorecard and cash bridge "
+                    "reconcile, specialist responsibilities are accepted, and "
+                    "the next-period decision states capital limits, unresolved "
+                    "risks, and the documented six-to-twenty-four-month first-deal horizon."
+                ),
+            },
+        ],
+    }

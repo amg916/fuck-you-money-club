@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "db46a5c0c92973e68ef0889da74397fc80b03c2d2c2a75e27fb495cccaf4c74c",
-    "brand/brand_system.json": "2eb4ce2f1ea8dca0f07fb3960645a97520152af7d7d60607debd86a960ee4e98",
-    "catalog/pipeline_29_candidates.json": "8679b47eb09e9129bdd72088bd8b0b60d296c567e5d9ef5262ea8a69926f862a",
-    "research/research_database_summary.json": "3cbe459789578d8f4919e65a53989e4d6261275196e6c67dfd01dab3ec920c64",
+    "audit/existing_work_audit.json": "28de78fb4e698aac257d2af7e8f4fd41f6f37b6d40907e2483bfb2eb189aa9f4",
+    "brand/brand_system.json": "26ddb16555045beb7b4c92e41de1b229ea93d55a598070e7b87c893b9e528417",
+    "catalog/pipeline_29_candidates.json": "4d7215923285740854cbee689cb533c1f04a2b35387d49b40483e484928c9288",
+    "research/research_database_summary.json": "f21c3dc37cefbab5167b337f6ad42fd93ca8f74d33d2277278a3486aacf14450",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -401,6 +401,24 @@
     "volumes/vol-022-medical-equipment-resale/manuscript.json": "c8bc7b2286497944bb576153e8a54abef111ae883ddaf5d5f38c50be25a102e9",
     "volumes/vol-022-medical-equipment-resale/metadata.json": "50bc864d4e254713a84f008f437b78584b7cb15f7053fedb4122109448b7dfaa",
     "volumes/vol-022-medical-equipment-resale/scorecard.json": "840fc8508bf255023191f9dfa7aded9713c12968dc3931766cb52fcdfdce2852",
-    "volumes/vol-022-medical-equipment-resale/workbook.json": "0164e99aeede733419c9f3a4f679a20550d1a646d86fdad173a6a26e07ab2edc"
+    "volumes/vol-022-medical-equipment-resale/workbook.json": "0164e99aeede733419c9f3a4f679a20550d1a646d86fdad173a6a26e07ab2edc",
+    "volumes/vol-023-mineral-rights/chapters/chapter-01.md": "52a634ca6999218514d265fd50323c1b9a1316cc46d24f0d540138976e6f6d3e",
+    "volumes/vol-023-mineral-rights/chapters/chapter-02.md": "b9875c3c1b9f58ef3382a3f34993097d391d24041c945dca001809c631bec54e",
+    "volumes/vol-023-mineral-rights/chapters/chapter-03.md": "423816931e757244316c5ec39699e9c23197178603c338c3d603fd4545959e48",
+    "volumes/vol-023-mineral-rights/chapters/chapter-04.md": "25cd6689816c54c1c444e46b2fc4b9a867e6b909e8ea832d4ecc30006c222848",
+    "volumes/vol-023-mineral-rights/chapters/chapter-05.md": "f37499bfbfbb478301b90e1302e014f03766cf79f5177ba126a49b4261ed0152",
+    "volumes/vol-023-mineral-rights/chapters/chapter-06.md": "dd5b0c939a5b5e7430586c32b9b2ee4ba11251cfc1ff275f999cc30a23d7d991",
+    "volumes/vol-023-mineral-rights/chapters/chapter-07.md": "1efe1f3e50d7fef3ee157fbe9f50043c9d8a1a03052605b999f5a23c323604eb",
+    "volumes/vol-023-mineral-rights/chapters/chapter-08.md": "a4a157d375e1b0d5e8e88c4c94d0beca5b7b1f6636abc06615a6e798bdb3aa5e",
+    "volumes/vol-023-mineral-rights/chapters/chapter-09.md": "8cd9488dcb683cfb88a14e0f1fab54b445c4fa372908223a99e40f0f77a80e97",
+    "volumes/vol-023-mineral-rights/chapters/chapter-10.md": "46a20a5d6669da3b2192e3d51d6517f518f1eccad4b61f60501dd3ca9caab619",
+    "volumes/vol-023-mineral-rights/chapters/chapter-11.md": "5a4d75e0eeaf643ba5f34820493eb9646f2681a68cd0db3928fe69b390cd89ae",
+    "volumes/vol-023-mineral-rights/chapters/chapter-12.md": "debfc129e672a75c85d7dbbce70767af3ddf80f80b21a67e6fc27928db48bf5c",
+    "volumes/vol-023-mineral-rights/diagrams_data.json": "765f083a4043936272873cc4c30c9c8055dc65ef0af00288c853c9e67b8e67b5",
+    "volumes/vol-023-mineral-rights/graphics_reviews.json": "bdf715c9b3eafcd9b6c6c619c740f706bd021f3e39c6c53d50cab370b69ceaec",
+    "volumes/vol-023-mineral-rights/manuscript.json": "dbaa58eae52fb32ac328886435630bf65fc88ec43cbf50080d6e8316065285a6",
+    "volumes/vol-023-mineral-rights/metadata.json": "72749d10657b9d99457b23ec7a9ce63d3161e775ea7ebdf176e3ddf2a2ef4e6e",
+    "volumes/vol-023-mineral-rights/scorecard.json": "6c03ee568c9e8a05c8ed7fff06f3547eff52a421c287ca7e7219a486e9a244df",
+    "volumes/vol-023-mineral-rights/workbook.json": "88fa442ea8f09ff6d2f95e75dbee2a6f42279619d2d53fcf06c30ba0b0828fb0"
   }
 }

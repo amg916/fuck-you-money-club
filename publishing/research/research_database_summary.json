@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 3659,
-  "raw_video_count": 3659,
+  "abridged_video_count": 3834,
+  "raw_video_count": 3834,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T22:58:25+00:00",
+      "generated_at": "2026-11-21T23:07:58+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T22:58:25Z",
+  "generated_at": "2026-11-21T23:07:58Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 2910,
-      "tip_count": 5975,
-      "channel_count": 1979,
+      "video_count": 3065,
+      "tip_count": 6294,
+      "channel_count": 2047,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -142,6 +142,24 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "You may not know that these mineral rights were split off a title search is only gonna show this part of the transaction this…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:50",
+          "link": "https://www.youtube.com/watch?v=JpHijIsWFL4&t=110s",
+          "video_title": "Important information about mineral rights and title searches | AFX",
+          "author": "AFX Videos",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Do my equal signs. 00625 and now I'm going to do times which is the asterisk times 0.25 and that number is going to…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:04:22",
+          "link": "https://www.youtube.com/watch?v=n2pg2-Q06P8&t=262s",
+          "video_title": "Unit: Calculating Undivided Interests with Different Royalties in a Unit",
+          "author": "Land Training www.landtraining.net",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Entire period is your cash conversion cycle. And you can probably guess the longer that cycle is, the more of your own cash is…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:02:36",
@@ -167,24 +185,6 @@
           "video_title": "How To Claim Surplus Funds From Foreclosure",
           "author": "Bob Diamond - America's Tax Sale Attorney",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "They're gonna charge even as low as 1,500 — you still got all the extra things. So 1,500 divided by 20 is what? It's…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:02:15",
-          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=135s",
-          "video_title": "How To Estimate Equipment Cost In Construction",
-          "author": "George Hedley | HardHat BIZCOACH",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Even is subdividing land well subdividing land is basically think about it a cake and its pieces, you can have the full cake, or…",
-          "category": "Insider Tactic",
-          "timestamp": "00:00:57",
-          "link": "https://www.youtube.com/watch?v=JXUkA5K7RSc&t=57s",
-          "video_title": "How To Subdivide Land For Profit (Step By Step)",
-          "author": "Jack Bosch",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -199,35 +199,35 @@
         "form you",
         "form a",
         "form so",
-        "form with",
         "form in",
         "form on",
-        "form your",
         "form where",
+        "form with",
+        "form your",
         "form like",
         "court order",
         "form as",
+        "form it",
         "form if",
         "form at",
-        "form it",
-        "letters of administration",
         "form I",
         "form their",
+        "letters of administration",
         "form uh",
+        "form which",
         "form content",
         "form um",
-        "form which",
         "form called",
+        "form an",
         "form below",
         "Chapter 7",
-        "form an",
         "form here",
         "form we",
         "form but",
+        "form from",
         "form right",
         "Protection Act",
-        "form they",
-        "form because"
+        "form they"
       ],
       "tools_and_portals": [
         "Google",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 2720,
-      "tip_count": 5723,
-      "channel_count": 1760,
+      "video_count": 2881,
+      "tip_count": 6217,
+      "channel_count": 1827,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -347,6 +347,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Is a perfect example this is a typical chain of title where if a property was sold by one person to another on a…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:01:24",
+          "link": "https://www.youtube.com/watch?v=JpHijIsWFL4&t=84s",
+          "video_title": "Important information about mineral rights and title searches | AFX",
+          "author": "AFX Videos",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Zoomed lens or any other zoom lens on a drone, always, in my opinion, disconnect and go back down to your wide-angle lens to…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:06:28",
@@ -392,6 +401,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Welcome back to LM J ChalkTalk. I'm Michele Johnson. The seller's lease covers 640 acres. One well is producing. Does the seller still hold…",
+          "category": "Practitioner Note",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=sLCs9xQypFE&t=0s",
+          "video_title": "The Pugh Clause in an Acquisition | LMJ Chalk Talk",
+          "author": "LMJ Land Services",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Say you order $10,000 of plastic storage bins from a factory in China. To bring them into the country, you'll pay U.S. Customs about…",
           "category": "Legal / Deadline",
           "timestamp": "00:00:00",
@@ -408,71 +426,53 @@
           "video_title": "What To Do If Your Land Fails A Perc Test (Before You Panic)",
           "author": "Jack Bosch",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I make sure to do two things with my landing pages for e-commerce products. One is to have a headline that is strongly related…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:03:37",
-          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=217s",
-          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
-          "author": "Aldo Gomes",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It'll be very hard to grow. And obviously, if you've got lots of customers that are canceling, it's pretty unlikely that you're going to…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:04:02",
-          "link": "https://www.youtube.com/watch?v=su9KuGnbAW8&t=242s",
-          "video_title": "AskAVC #2 - SaaS Churn: what is it?",
-          "author": "Ask a VC",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form of",
         "form and",
         "form that",
-        "form the",
         "form to",
+        "form the",
         "form for",
         "form is",
         "form a",
-        "form or",
         "form you",
+        "form or",
         "court order",
         "form your",
-        "form on",
         "form in",
+        "form on",
         "form below",
         "form where",
-        "form with",
         "form like",
+        "form with",
         "form so",
         "letters of administration",
+        "form it",
         "form their",
         "Chapter 7",
-        "form it",
-        "form Commercial",
-        "Form uh",
         "form as",
+        "form Commercial",
         "form I",
+        "Form uh",
         "form if",
         "protection act",
         "Chapter 13",
         "form at",
         "form we",
-        "form um",
         "form which",
+        "form but",
+        "form um",
         "letters testamentary",
         "property Act",
-        "form but",
         "form here",
         "form an",
         "form will"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
+        "Facebook",
         "LinkedIn",
         "Excel",
         "CSV",
@@ -493,13 +493,13 @@
         "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://youtu.be/YyPdhpdEs5c",
+        "PropStream",
         "https://profitablecontracts.co/",
         "https://www.facebook.com/groups/gcwalways",
         "https://youtu.be/-XAlvMJRIEM",
         "https://youtu.be/VunK8iso33g",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
-        "PropStream",
         "https://www.youtube.com/surplusfunds101",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 785,
-      "tip_count": 1835,
-      "channel_count": 521,
+      "video_count": 811,
+      "tip_count": 1846,
+      "channel_count": 537,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,44 +676,44 @@
         "form below",
         "form to",
         "Form is",
-        "form the",
-        "form for",
         "form you",
+        "form for",
+        "form the",
         "form or",
         "form a",
         "form with",
         "form on",
+        "form but",
         "Form uh",
         "form we",
         "form your",
-        "form but",
         "form in",
+        "form it",
         "form so",
         "Property Act",
         "form if",
-        "form it",
         "form our",
         "form where",
+        "court order",
         "form them",
         "form this",
         "form um",
-        "court order",
+        "affidavit of heirship",
         "form from",
         "form like",
         "form today",
         "form which",
-        "affidavit of heirship",
         "form all",
         "form as",
         "form at",
         "form because",
         "form due",
         "form I",
-        "letters of administration"
+        "form was"
       ],
       "tools_and_portals": [
-        "Facebook",
         "Google",
+        "Facebook",
         "LinkedIn",
         "Excel",
         "https://excesselite.com",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 2976,
-      "tip_count": 3742,
-      "channel_count": 2000,
+      "video_count": 3116,
+      "tip_count": 3944,
+      "channel_count": 2060,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -914,43 +914,43 @@
         "form and",
         "form of",
         "form that",
-        "form for",
         "form to",
+        "form for",
         "form is",
         "form the",
-        "form or",
         "form you",
+        "form or",
         "form a",
         "form your",
         "form so",
-        "form with",
         "form on",
         "form in",
+        "form with",
         "form where",
         "form like",
-        "form below",
         "form as",
+        "form below",
+        "form it",
         "form at",
         "form I",
         "form if",
-        "form it",
         "form which",
         "form content",
         "form their",
         "Form uh",
         "form um",
-        "form called",
         "court order",
+        "form called",
         "form Commercial",
         "form here",
+        "form from",
         "form we",
         "form they",
         "letters of administration",
         "property Act",
         "Protection Act",
-        "form but",
-        "form from",
-        "form right"
+        "form an",
+        "form but"
       ],
       "tools_and_portals": [
         "Google",
@@ -981,11 +981,11 @@
         "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
         "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://www.facebook.com/groups/770825015084618",
+        "PropStream",
         "https://www.MediaOptions.com",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
-        "PropStream",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 2019,
-      "tip_count": 1139,
-      "channel_count": 1353,
+      "video_count": 2112,
+      "tip_count": 1147,
+      "channel_count": 1396,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1158,9 +1158,9 @@
         "form for",
         "form to",
         "form or",
+        "form you",
         "form is",
         "form the",
-        "form you",
         "form a",
         "form your",
         "form where",
@@ -1179,19 +1179,19 @@
         "form at",
         "form below",
         "form content",
-        "form if",
         "form I",
+        "form if",
+        "form it",
         "form called",
         "form Commercial",
-        "form it",
         "form but",
         "form here",
         "Chapter 7",
         "form right",
         "Chapter 13",
+        "form them",
         "form they",
-        "form because",
-        "form can"
+        "Copyright Act"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1204,9 +1204,9 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
+        "PropStream",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
-        "PropStream",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.instagram.com/thedavidwilkerson",
@@ -1230,18 +1230,18 @@
         "https://x.com/courtneyfricke",
         "https://youtu.be/-XAlvMJRIEM",
         "https://youtu.be/VunK8iso33g",
+        "Ancestry",
         "https://winnerswaybook.com/",
         "https://www.unclaimedceo.com/linkme",
-        "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
-        "Ancestry"
+        "https://www.youtube.com/kizzyparks/?sub_confirmation=1"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 2876,
-      "tip_count": 4495,
-      "channel_count": 1891,
+      "video_count": 3003,
+      "tip_count": 4693,
+      "channel_count": 1945,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1414,13 +1414,13 @@
         "form as",
         "form below",
         "form at",
-        "letters of administration",
-        "form their",
-        "form I",
         "form it",
+        "form their",
+        "letters of administration",
+        "form I",
         "Form uh",
-        "form um",
         "form which",
+        "form um",
         "Chapter 7",
         "form content",
         "form if",
@@ -1428,11 +1428,11 @@
         "form we",
         "Protection Act",
         "form Commercial",
+        "form from",
         "form here",
         "Chapter 13",
-        "letters testamentary",
-        "property Act",
-        "form but"
+        "form but",
+        "letters testamentary"
       ],
       "tools_and_portals": [
         "Google",
@@ -1440,8 +1440,8 @@
         "LinkedIn",
         "Excel",
         "CSV",
-        "https://excesselite.com",
         "Ancestry",
+        "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "Bing",
@@ -1465,13 +1465,13 @@
         "https://www.youtube.com/surplusfunds101",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
+        "PropStream",
         "https://winnerswaybook.com/",
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/kizzyparks/?sub_confirmation=1",
         "PACER",
-        "PropStream",
         "https://govconwinners.clickfunnels.com/make-money-strategy-video",
         "https://www.MediaOptions.com",
         "https://www.unclaimedceo.com/freemasterclass"
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 3058,
-      "tip_count": 3261,
-      "channel_count": 1980,
+      "video_count": 3223,
+      "tip_count": 3390,
+      "channel_count": 2047,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1606,6 +1606,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "For percentage depletion. So, if you have a net loss, you're not allowed to take percent depletion. If you have really 65% of the…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:01:08",
+          "link": "https://www.youtube.com/watch?v=GPDm8NftR5U&t=68s",
+          "video_title": "How the Depletion Allowance Works in Oil & Gas",
+          "author": "ADKF | With You All The Way",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "You would upload those necessary documents, make the payment of required fees, and then you would receive a receipt from the USPTO providing your…",
           "category": "Legal / Deadline",
           "timestamp": "00:32:53",
@@ -1622,44 +1631,35 @@
           "video_title": "The Licensing Lifestyle with Stephen Key",
           "author": "inventRightTV",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Part of the regulation description. Next, I'm going to discuss method 2, which is to search for a similar device by its clearance or…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:07:26",
-          "link": "https://www.youtube.com/watch?v=XMo038fEjH4&t=446s",
-          "video_title": "Case Study: How is My Medical Device Classified?",
-          "author": "U.S. Food and Drug Administration",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
-        "form for",
         "form to",
-        "form the",
+        "form for",
         "form is",
-        "form or",
-        "form you",
+        "form the",
         "form a",
-        "form your",
+        "form you",
+        "form or",
         "form on",
+        "form your",
         "form in",
-        "form with",
-        "form so",
         "form where",
+        "form with",
         "court order",
-        "form below",
+        "form so",
         "form like",
-        "letters of administration",
+        "form below",
+        "form it",
         "form their",
+        "letters of administration",
         "Form uh",
         "form as",
-        "form it",
-        "Chapter 7",
         "form I",
+        "Chapter 7",
         "form at",
         "Protection Act",
         "form Commercial",
@@ -1669,11 +1669,11 @@
         "form which",
         "Chapter 13",
         "form but",
+        "form an",
         "form here",
         "letters testamentary",
         "property Act",
-        "form an",
-        "form called"
+        "form from"
       ],
       "tools_and_portals": [
         "Google",
@@ -1696,13 +1696,13 @@
         "https://www.facebook.com/ProbateMastery/",
         "https://www.instagram.com/coachbrucehill/",
         "https://youtu.be/YyPdhpdEs5c",
+        "PropStream",
         "https://probatemastery.com/discovery-call/",
         "https://profitablecontracts.co/",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.facebook.com/groups/gcwalways",
         "https://youtu.be/-XAlvMJRIEM",
         "https://youtu.be/VunK8iso33g",
-        "PropStream",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2692,
-      "tip_count": 7290,
-      "channel_count": 1825,
+      "video_count": 2782,
+      "tip_count": 7504,
+      "channel_count": 1867,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1885,8 +1885,8 @@
         "form or",
         "form you",
         "form a",
-        "form with",
         "form so",
+        "form with",
         "form on",
         "form where",
         "form your",
@@ -1906,12 +1906,12 @@
         "form we",
         "form um",
         "form but",
+        "form from",
+        "form their",
         "Chapter 7",
         "form called",
         "form here",
-        "form their",
         "form because",
-        "form from",
         "form this",
         "letters testamentary",
         "form better"
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1979,
-      "video_count": 2910,
-      "corroborating_tip_count": 5975,
+      "channel_count": 2047,
+      "video_count": 3065,
+      "corroborating_tip_count": 6294,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2003,10 +2003,10 @@
           "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
         },
         {
-          "video_title": "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution",
-          "author": "Vanijja | Trade Insights",
-          "timestamp": "00:02:36",
-          "link": "https://www.youtube.com/watch?v=kMiyyMuSUDU&t=156s"
+          "video_title": "Important information about mineral rights and title searches | AFX",
+          "author": "AFX Videos",
+          "timestamp": "00:01:50",
+          "link": "https://www.youtube.com/watch?v=JpHijIsWFL4&t=110s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,15 +2018,21 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1760,
-      "video_count": 2720,
-      "corroborating_tip_count": 5723,
+      "channel_count": 1827,
+      "video_count": 2881,
+      "corroborating_tip_count": 6217,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
           "author": "REtipster",
           "timestamp": "00:02:51",
           "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=171s"
+        },
+        {
+          "video_title": "Important information about mineral rights and title searches | AFX",
+          "author": "AFX Videos",
+          "timestamp": "00:01:24",
+          "link": "https://www.youtube.com/watch?v=JpHijIsWFL4&t=84s"
         },
         {
           "video_title": "How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three Lenses",
@@ -2051,12 +2057,6 @@
           "author": "REtipster",
           "timestamp": "00:12:09",
           "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=729s"
-        },
-        {
-          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
-          "author": "Probate Mastery",
-          "timestamp": "00:05:06",
-          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=306s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 521,
-      "video_count": 785,
-      "corroborating_tip_count": 1835,
+      "channel_count": 537,
+      "video_count": 811,
+      "corroborating_tip_count": 1846,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2000,
-      "video_count": 2976,
-      "corroborating_tip_count": 3742,
+      "channel_count": 2060,
+      "video_count": 3116,
+      "corroborating_tip_count": 3944,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1353,
-      "video_count": 2019,
-      "corroborating_tip_count": 1139,
+      "channel_count": 1396,
+      "video_count": 2112,
+      "corroborating_tip_count": 1147,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1891,
-      "video_count": 2876,
-      "corroborating_tip_count": 4495,
+      "channel_count": 1945,
+      "video_count": 3003,
+      "corroborating_tip_count": 4693,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1980,
-      "video_count": 3058,
-      "corroborating_tip_count": 3261,
+      "channel_count": 2047,
+      "video_count": 3223,
+      "corroborating_tip_count": 3390,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1825,
-      "video_count": 2692,
-      "corroborating_tip_count": 7290,
+      "channel_count": 1867,
+      "video_count": 2782,
+      "corroborating_tip_count": 7504,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 3659 corpus videos",
-        "instance_count": 3659,
+        "source": "YouTube CDN thumbnails for the 3834 corpus videos",
+        "instance_count": 3834,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -28361,6 +28361,1231 @@
             "author": "Metrasens",
             "thumbnail_url": "https://i.ytimg.com/vi/DdLolB1kuRY/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=DdLolB1kuRY"
+          },
+          {
+            "video_id": "I-uVEypiL9w",
+            "title": "How To Buy Mineral Rights (Get Into This $800B Industry)",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/I-uVEypiL9w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I-uVEypiL9w"
+          },
+          {
+            "video_id": "S-yENwSQhi0",
+            "title": "5 Fundamentals of Buying Mineral Rights",
+            "author": "Eckard Enterprises | Oil & Gas Investing",
+            "thumbnail_url": "https://i.ytimg.com/vi/S-yENwSQhi0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S-yENwSQhi0"
+          },
+          {
+            "video_id": "WvlIfeyW4-Q",
+            "title": "Can Mineral Rights Make You Rich?",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/WvlIfeyW4-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WvlIfeyW4-Q"
+          },
+          {
+            "video_id": "mcQ5KsrbKzc",
+            "title": "Oil, Gas, Mineral Rights & Royalties: A Guide to Protecting & Transferring Family Wealth | Tim Pawul",
+            "author": "The Wealth Transfer Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/mcQ5KsrbKzc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mcQ5KsrbKzc"
+          },
+          {
+            "video_id": "Sz-1-E8zTqU",
+            "title": "Thinking about Selling Mineral Rights? | Reasons to Sell Oil and Gas Mineral Rights and Royalties!",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sz-1-E8zTqU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sz-1-E8zTqU"
+          },
+          {
+            "video_id": "QKOAcxHhi_I",
+            "title": "Own Mineral Rights? | Learn about the Shale Revolution and the Market for Oil and Gas Royalties!",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/QKOAcxHhi_I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QKOAcxHhi_I"
+          },
+          {
+            "video_id": "WZxmCcTgeWk",
+            "title": "Oil and Gas Royalty Basics; How They Work",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/WZxmCcTgeWk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WZxmCcTgeWk"
+          },
+          {
+            "video_id": "RR2BlQf14H8",
+            "title": "MRP 70: 5 Tips if You Are Thinking About Selling Mineral Rights",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/RR2BlQf14H8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RR2BlQf14H8"
+          },
+          {
+            "video_id": "yFLZSA3QGGI",
+            "title": "MRP 356: Mineral Rights News November 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/yFLZSA3QGGI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yFLZSA3QGGI"
+          },
+          {
+            "video_id": "oHhvtjxLX9c",
+            "title": "MRP 335: Mineral Rights News June 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/oHhvtjxLX9c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oHhvtjxLX9c"
+          },
+          {
+            "video_id": "KwKa_52Hpqk",
+            "title": "MRP 327: Mineral Rights News April 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/KwKa_52Hpqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KwKa_52Hpqk"
+          },
+          {
+            "video_id": "yfXV7bIliEk",
+            "title": "MRP 314: Organize Your Mineral Legacy Before It's Too Late",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/yfXV7bIliEk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yfXV7bIliEk"
+          },
+          {
+            "video_id": "IZpkZEGcVjk",
+            "title": "MRP 331: Mineral Rights News May 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/IZpkZEGcVjk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IZpkZEGcVjk"
+          },
+          {
+            "video_id": "n2MrqKJ_h80",
+            "title": "MRP 345: Mineral Rights News August 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/n2MrqKJ_h80/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=n2MrqKJ_h80"
+          },
+          {
+            "video_id": "XdquVDjbEAk",
+            "title": "MRP 312: Mineral Rights News December 2025",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/XdquVDjbEAk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XdquVDjbEAk"
+          },
+          {
+            "video_id": "NkT15qxxGYM",
+            "title": "MRP 334: Finally Know What You Own: Use AI to Turn Your Old Deeds Into a Complete Mineral Rights...",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/NkT15qxxGYM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NkT15qxxGYM"
+          },
+          {
+            "video_id": "5Cx7zTkAJdw",
+            "title": "MRP 358: Listener Questions November 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/5Cx7zTkAJdw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5Cx7zTkAJdw"
+          },
+          {
+            "video_id": "ptrz57qzl54",
+            "title": "MRP 357: Helium Shortage and the Opportunity for Mineral Owners with CEO, Tim Rynott",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/ptrz57qzl54/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ptrz57qzl54"
+          },
+          {
+            "video_id": "u4xA0UNrxQs",
+            "title": "MRP 288: Our Favorite Tools for Managing Your Minerals in 2025",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/u4xA0UNrxQs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u4xA0UNrxQs"
+          },
+          {
+            "video_id": "tJr4jiz31fw",
+            "title": "MRP 285: The Mineral Owner's Guide to Division Orders",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/tJr4jiz31fw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tJr4jiz31fw"
+          },
+          {
+            "video_id": "IBxLIQjDNto",
+            "title": "Net Mineral Acres, Royalty Decimal and NPRI: Three Different Numbers | LMJ Chalk Talk Ep 22",
+            "author": "LMJ Land Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/IBxLIQjDNto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IBxLIQjDNto"
+          },
+          {
+            "video_id": "37dcxhS1a6E",
+            "title": "Net Royalty Acres vs. Net Mineral Acres (Q&A clip)",
+            "author": "Tracy Lenz",
+            "thumbnail_url": "https://i.ytimg.com/vi/37dcxhS1a6E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=37dcxhS1a6E"
+          },
+          {
+            "video_id": "mHolW0RfGQ0",
+            "title": "Working Interest vs Royalty Interest in Oil & Gas - Which is Better for You?",
+            "author": "Tracy Lenz",
+            "thumbnail_url": "https://i.ytimg.com/vi/mHolW0RfGQ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mHolW0RfGQ0"
+          },
+          {
+            "video_id": "3AnqzZSRGtg",
+            "title": "MRP 2: What’s the Difference Between Minerals and Royalties?",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/3AnqzZSRGtg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3AnqzZSRGtg"
+          },
+          {
+            "video_id": "QPk4GTvt5YU",
+            "title": "Fixed & Floating Non-Participating Royalty Interests Issues in Texas & Ohio",
+            "author": "Oliva Gibbs",
+            "thumbnail_url": "https://i.ytimg.com/vi/QPk4GTvt5YU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QPk4GTvt5YU"
+          },
+          {
+            "video_id": "qru8bh4mMms",
+            "title": "MRP 263: What You Should Know About Fixed vs Floating NPRIs",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/qru8bh4mMms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qru8bh4mMms"
+          },
+          {
+            "video_id": "pjmqehPUgL8",
+            "title": "MRP 43: Overriding Royalty Interests",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/pjmqehPUgL8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pjmqehPUgL8"
+          },
+          {
+            "video_id": "Yy7az5T7_vs",
+            "title": "MRP 3: How to Calculate your Net Revenue Interest in 3 Simple Steps",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yy7az5T7_vs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yy7az5T7_vs"
+          },
+          {
+            "video_id": "eZU5hvGcngg",
+            "title": "Calculating WI and NRI in an Oil & Gas Lease by Alyce Hoge",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/eZU5hvGcngg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eZU5hvGcngg"
+          },
+          {
+            "video_id": "PjGnR-YfLy4",
+            "title": "III GWI & NRI in an Oil & Gas Lease One Owner Example 1",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/PjGnR-YfLy4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PjGnR-YfLy4"
+          },
+          {
+            "video_id": "9zqL93Kdy1I",
+            "title": "What's the difference? Gross vs. Net Mineral Acres",
+            "author": "Tracy Lenz",
+            "thumbnail_url": "https://i.ytimg.com/vi/9zqL93Kdy1I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9zqL93Kdy1I"
+          },
+          {
+            "video_id": "oHKF06pFkh0",
+            "title": "Calculating the Oil Company’s Net Revenue Interest",
+            "author": "UHD Continuing and Professional Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/oHKF06pFkh0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oHKF06pFkh0"
+          },
+          {
+            "video_id": "HkEK5QVZAJ0",
+            "title": "Situation #5 WI & NRI Calculations p 70 AAPL Study Guide",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/HkEK5QVZAJ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HkEK5QVZAJ0"
+          },
+          {
+            "video_id": "gfqoliQ78bk",
+            "title": "OCC Rulemaking Hearing Part 22 10 30 25",
+            "author": "New Mexico Oil Conservation Commission",
+            "thumbnail_url": "https://i.ytimg.com/vi/gfqoliQ78bk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gfqoliQ78bk"
+          },
+          {
+            "video_id": "-7pNwWErBfk",
+            "title": "OCC Rulemaking Hearing Part 15 10 27 25",
+            "author": "New Mexico Oil Conservation Commission",
+            "thumbnail_url": "https://i.ytimg.com/vi/-7pNwWErBfk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-7pNwWErBfk"
+          },
+          {
+            "video_id": "Gyi9ijeMNgA",
+            "title": "OCD Special Docket October 27, 2026, DAY 3 PART 2",
+            "author": "OCD Pecos Hall",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gyi9ijeMNgA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Gyi9ijeMNgA"
+          },
+          {
+            "video_id": "hYa6oTD7seU",
+            "title": "Well Spacing in Enverus Subsurface Studio (ESS) [HOW TO]",
+            "author": "Enverus",
+            "thumbnail_url": "https://i.ytimg.com/vi/hYa6oTD7seU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hYa6oTD7seU"
+          },
+          {
+            "video_id": "2rbY0Lt22CU",
+            "title": "Enverus Spacing - A Holistic View on Well Spacing & Performance",
+            "author": "Enverus",
+            "thumbnail_url": "https://i.ytimg.com/vi/2rbY0Lt22CU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2rbY0Lt22CU"
+          },
+          {
+            "video_id": "zhTs0NrEVgE",
+            "title": "Horizontal Drilling Method",
+            "author": "Expand Energy",
+            "thumbnail_url": "https://i.ytimg.com/vi/zhTs0NrEVgE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zhTs0NrEVgE"
+          },
+          {
+            "video_id": "40uE_5Fvn_A",
+            "title": "Horizontal drilling optimization, high build rates lead to record wells in Marcellus Shale",
+            "author": "Drilling Contractor Magazine",
+            "thumbnail_url": "https://i.ytimg.com/vi/40uE_5Fvn_A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=40uE_5Fvn_A"
+          },
+          {
+            "video_id": "ifwy0MQE0b4",
+            "title": "What Landmen Actually Do (No One Explains This)",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/ifwy0MQE0b4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ifwy0MQE0b4"
+          },
+          {
+            "video_id": "sldaaowniGM",
+            "title": "Ethics in Negotiations & Title Curative, A Landman's Perspective",
+            "author": "Susan Jessup",
+            "thumbnail_url": "https://i.ytimg.com/vi/sldaaowniGM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sldaaowniGM"
+          },
+          {
+            "video_id": "JpHijIsWFL4",
+            "title": "Important information about mineral rights and title searches | AFX",
+            "author": "AFX Videos",
+            "thumbnail_url": "https://i.ytimg.com/vi/JpHijIsWFL4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JpHijIsWFL4"
+          },
+          {
+            "video_id": "ibeQr-rDmZ4",
+            "title": "Basic Title - Landman Training",
+            "author": "Landman Class",
+            "thumbnail_url": "https://i.ytimg.com/vi/ibeQr-rDmZ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ibeQr-rDmZ4"
+          },
+          {
+            "video_id": "gsOnEm_adKI",
+            "title": "Who Owns the Minerals Under Your Louisiana Land? A Landman Explains | RE: Real Estate Podcast",
+            "author": "RE: REAL ESTATE PODCAST",
+            "thumbnail_url": "https://i.ytimg.com/vi/gsOnEm_adKI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gsOnEm_adKI"
+          },
+          {
+            "video_id": "Z_HlEDh8-rw",
+            "title": "Minerals Management Series: Everything You Need To Know About Division Orders",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z_HlEDh8-rw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z_HlEDh8-rw"
+          },
+          {
+            "video_id": "W3POOsq6ka0",
+            "title": "Mineral Ownership 101| Part 5 Division Orders",
+            "author": "NARO",
+            "thumbnail_url": "https://i.ytimg.com/vi/W3POOsq6ka0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W3POOsq6ka0"
+          },
+          {
+            "video_id": "inopKiaG-3A",
+            "title": "MRP 16: What You Need to Know about Oil & Gas Division Orders",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/inopKiaG-3A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=inopKiaG-3A"
+          },
+          {
+            "video_id": "DN-VIoSmyF0",
+            "title": "Texas Division Orders: What You Can Sign and Refuse",
+            "author": "Royalty Clerk",
+            "thumbnail_url": "https://i.ytimg.com/vi/DN-VIoSmyF0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DN-VIoSmyF0"
+          },
+          {
+            "video_id": "KYu7M4t5LAk",
+            "title": "Don't Sign Your Division Order Until You Check This Number",
+            "author": "Mineral View",
+            "thumbnail_url": "https://i.ytimg.com/vi/KYu7M4t5LAk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KYu7M4t5LAk"
+          },
+          {
+            "video_id": "jZoApbdkCu0",
+            "title": "Division Orders (Oil & Gas 17.2)",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/jZoApbdkCu0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jZoApbdkCu0"
+          },
+          {
+            "video_id": "YeBHUAmigMw",
+            "title": "Oil & Gas 17A: Division Orders",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/YeBHUAmigMw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YeBHUAmigMw"
+          },
+          {
+            "video_id": "nn1juJ3_-WA",
+            "title": "What the Decline Curve Means for Mineral Investments with Troy W. Eckard - Mineral Royalties 101",
+            "author": "Eckard Enterprises | Oil & Gas Investing",
+            "thumbnail_url": "https://i.ytimg.com/vi/nn1juJ3_-WA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nn1juJ3_-WA"
+          },
+          {
+            "video_id": "4mzbNb16NQc",
+            "title": "Decline Curve Analysis: Economic Rate Oil + Gas",
+            "author": "TopDogEngineer",
+            "thumbnail_url": "https://i.ytimg.com/vi/4mzbNb16NQc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4mzbNb16NQc"
+          },
+          {
+            "video_id": "MsMdpB0pFnc",
+            "title": "Flips Pay Once. Royalties Pay Forever.",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/MsMdpB0pFnc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MsMdpB0pFnc"
+          },
+          {
+            "video_id": "9p4KYSjq9r0",
+            "title": "Why More Mineral Assets May Never Get Sold",
+            "author": "Minerals & Royalties Authority LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/9p4KYSjq9r0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9p4KYSjq9r0"
+          },
+          {
+            "video_id": "xL8qooqAeq0",
+            "title": "Why the Biggest Mineral Portfolios May Never Be Sold",
+            "author": "Minerals & Royalties Authority LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/xL8qooqAeq0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xL8qooqAeq0"
+          },
+          {
+            "video_id": "WBGDgooXnq8",
+            "title": "Oil & Gas 09A: Intro to the Oil & Gas Lease",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/WBGDgooXnq8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WBGDgooXnq8"
+          },
+          {
+            "video_id": "b97Q2qy5uEo",
+            "title": "Mineral Rights Management 101: EP 3 | 4 Questions About Your Oil & Gas Lease",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/b97Q2qy5uEo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b97Q2qy5uEo"
+          },
+          {
+            "video_id": "7sPTlHr4F7A",
+            "title": "Oil & Gas 12A: Constructive Production & Shut-In Royalties",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/7sPTlHr4F7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7sPTlHr4F7A"
+          },
+          {
+            "video_id": "dM8LufO_Emg",
+            "title": "Introduction to Royalties (Oil & Gas 14.1)",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/dM8LufO_Emg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dM8LufO_Emg"
+          },
+          {
+            "video_id": "GXqMsH_dUSM",
+            "title": "What is the Railroad Commission?",
+            "author": "Commission Shift",
+            "thumbnail_url": "https://i.ytimg.com/vi/GXqMsH_dUSM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GXqMsH_dUSM"
+          },
+          {
+            "video_id": "fqz-wQBuZ2A",
+            "title": "Recap of the Railroad Commission of Texas Open Meeting, June 20th, 2025",
+            "author": "Commission Shift",
+            "thumbnail_url": "https://i.ytimg.com/vi/fqz-wQBuZ2A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fqz-wQBuZ2A"
+          },
+          {
+            "video_id": "AyWdpWCeHUE",
+            "title": "Anticipated debate between Texas Railroad Commission candidates turns into one-sided conversation",
+            "author": "KXAN",
+            "thumbnail_url": "https://i.ytimg.com/vi/AyWdpWCeHUE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AyWdpWCeHUE"
+          },
+          {
+            "video_id": "Kwv0e2yhRmA",
+            "title": "Permian Resources (PR): How They Beat Negative Gas Prices",
+            "author": "The Byte-Size Brief",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kwv0e2yhRmA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Kwv0e2yhRmA"
+          },
+          {
+            "video_id": "qdJuFyTh5yU",
+            "title": "Quantifying Shale Performance Drivers Across 100,000 Wells | Ryan Hassen, whitson | whitCon 2026",
+            "author": "Whitson Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/qdJuFyTh5yU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qdJuFyTh5yU"
+          },
+          {
+            "video_id": "fqGTqf-VpBc",
+            "title": "Permian Resources: Record Cash Flow vs. Waha Gas Crisis",
+            "author": "The Byte-Size Brief",
+            "thumbnail_url": "https://i.ytimg.com/vi/fqGTqf-VpBc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fqGTqf-VpBc"
+          },
+          {
+            "video_id": "5sPOq_WPRHQ",
+            "title": "Facing Into the Storm: Investing in Small Cap Oil Companies",
+            "author": "Bison Interests",
+            "thumbnail_url": "https://i.ytimg.com/vi/5sPOq_WPRHQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5sPOq_WPRHQ"
+          },
+          {
+            "video_id": "GPDm8NftR5U",
+            "title": "How the Depletion Allowance Works in Oil & Gas",
+            "author": "ADKF | With You All The Way",
+            "thumbnail_url": "https://i.ytimg.com/vi/GPDm8NftR5U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GPDm8NftR5U"
+          },
+          {
+            "video_id": "NYvxAlVlAmQ",
+            "title": "Percentage Depletion for Mineral Owners: The 15% Deduction You Should Know (+ Live Q&A!)",
+            "author": "Tracy Lenz",
+            "thumbnail_url": "https://i.ytimg.com/vi/NYvxAlVlAmQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NYvxAlVlAmQ"
+          },
+          {
+            "video_id": "J21M9DVmwY8",
+            "title": "Tax Advantages of Investing in Oil, Gas & Mineral Rights",
+            "author": "Protect Wealth Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/J21M9DVmwY8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J21M9DVmwY8"
+          },
+          {
+            "video_id": "FagQvbKX71g",
+            "title": "How to MAXIMIZE OIL & GAS TAX DEDUCTIONS",
+            "author": "Neil Jesani Tax Advisors",
+            "thumbnail_url": "https://i.ytimg.com/vi/FagQvbKX71g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FagQvbKX71g"
+          },
+          {
+            "video_id": "TfG5auc0OXc",
+            "title": "How To GET Massive TAX Deductions From Oil And Gas Investments",
+            "author": "Toby Mathis Esq | Tax Planning & Asset Protection",
+            "thumbnail_url": "https://i.ytimg.com/vi/TfG5auc0OXc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TfG5auc0OXc"
+          },
+          {
+            "video_id": "hIerB5MQ52U",
+            "title": "The Economics of Owning an Oil Well Royalty Interest",
+            "author": "Mr. Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/hIerB5MQ52U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hIerB5MQ52U"
+          },
+          {
+            "video_id": "NAcWqXJVAcs",
+            "title": "Closing Tax Loopholes: Fairness in Oil Depletion Allowance",
+            "author": "HenryFord25",
+            "thumbnail_url": "https://i.ytimg.com/vi/NAcWqXJVAcs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NAcWqXJVAcs"
+          },
+          {
+            "video_id": "J9jZGFyolV0",
+            "title": "Working Interest vs Royalty Interest Explained | Risk, Cash Flow & Returns Compared",
+            "author": "Sovereign Energy Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/J9jZGFyolV0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=J9jZGFyolV0"
+          },
+          {
+            "video_id": "OoeKDlEjyqc",
+            "title": "Preserve Wealth & Maximize Deductions Through Oil & Gas Working Interest",
+            "author": "Eckard Enterprises | Oil & Gas Investing",
+            "thumbnail_url": "https://i.ytimg.com/vi/OoeKDlEjyqc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OoeKDlEjyqc"
+          },
+          {
+            "video_id": "yWZaJ-ItXKQ",
+            "title": "Working Interest & Net Revenue Interests in Oil & Gas Lease Calculations",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/yWZaJ-ItXKQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yWZaJ-ItXKQ"
+          },
+          {
+            "video_id": "mhaDQdLWgw0",
+            "title": "Your Life as Every Level of a Landman",
+            "author": "Untold Shifts",
+            "thumbnail_url": "https://i.ytimg.com/vi/mhaDQdLWgw0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mhaDQdLWgw0"
+          },
+          {
+            "video_id": "lCpJ3rpcfvY",
+            "title": "What Does A Landman Actually Do? | Behind The Scenes Of A Real Deal",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/lCpJ3rpcfvY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lCpJ3rpcfvY"
+          },
+          {
+            "video_id": "p0bOEBxdOFs",
+            "title": "What Landman Gets Completely Wrong",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/p0bOEBxdOFs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p0bOEBxdOFs"
+          },
+          {
+            "video_id": "1hz9VkFL01Y",
+            "title": "So You Want to Be a Landman... How to Make the TV Show a Reality",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/1hz9VkFL01Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1hz9VkFL01Y"
+          },
+          {
+            "video_id": "kA4imCIrIU0",
+            "title": "3 Things You Need to Know Before Becoming a Landman",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/kA4imCIrIU0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kA4imCIrIU0"
+          },
+          {
+            "video_id": "e1rml2NIbco",
+            "title": "Want a High-Paying Career in Oil & Gas? Become a Landman – Here’s How",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/e1rml2NIbco/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e1rml2NIbco"
+          },
+          {
+            "video_id": "H6l9yCZoYDQ",
+            "title": "Becoming A Landman: Expectations vs. Reality",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/H6l9yCZoYDQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H6l9yCZoYDQ"
+          },
+          {
+            "video_id": "hZZNvuvGfkc",
+            "title": "Landman vs. Landowner: Who Really Has the Power?",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/hZZNvuvGfkc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hZZNvuvGfkc"
+          },
+          {
+            "video_id": "PAfHHmByY2I",
+            "title": "How to locate your mineral rights on a map (and research oil and gas wells)",
+            "author": "Blue Mesa Minerals",
+            "thumbnail_url": "https://i.ytimg.com/vi/PAfHHmByY2I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PAfHHmByY2I"
+          },
+          {
+            "video_id": "5hXDw_OFeQc",
+            "title": "How To Locate Your Minerals On A Map",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/5hXDw_OFeQc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5hXDw_OFeQc"
+          },
+          {
+            "video_id": "AJGoTBiN9oQ",
+            "title": "The Path of the Landman — Powering the World",
+            "author": "AAPL America's Landman",
+            "thumbnail_url": "https://i.ytimg.com/vi/AJGoTBiN9oQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AJGoTBiN9oQ"
+          },
+          {
+            "video_id": "-fWjBQtg9r4",
+            "title": "Landman Class / Basic Title",
+            "author": "Sebastian Cosme",
+            "thumbnail_url": "https://i.ytimg.com/vi/-fWjBQtg9r4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-fWjBQtg9r4"
+          },
+          {
+            "video_id": "CiR-w5lHfvI",
+            "title": "How are Mineral Rights Valued? | How Oil and Gas Activity Impacts the Value of Your Mineral Rights",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/CiR-w5lHfvI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CiR-w5lHfvI"
+          },
+          {
+            "video_id": "Ij8eFGyDOC4",
+            "title": "What You Need To Know About Investing In Mineral Rights (Oil, Gas, Coal, and more)",
+            "author": "Infinity Investments Real Estate - Steve Peterson",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ij8eFGyDOC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ij8eFGyDOC4"
+          },
+          {
+            "video_id": "qZGXdB7E1lE",
+            "title": "Sell Mineral Rights Oklahoma Oil and Gas Leases Royalty Income from Mineral Rights",
+            "author": "Daniel Lewis",
+            "thumbnail_url": "https://i.ytimg.com/vi/qZGXdB7E1lE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qZGXdB7E1lE"
+          },
+          {
+            "video_id": "_MHogbd2xzU",
+            "title": "MRP 342: Property Taxes on Mineral Rights and What Happens If You Don't Pay",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/_MHogbd2xzU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_MHogbd2xzU"
+          },
+          {
+            "video_id": "1c2UBDuXhrk",
+            "title": "Exploring Mineral Rights with Matt Sands: A Guide for Land Investors",
+            "author": "Modern Land Investor",
+            "thumbnail_url": "https://i.ytimg.com/vi/1c2UBDuXhrk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1c2UBDuXhrk"
+          },
+          {
+            "video_id": "uhffuS4DlLQ",
+            "title": "Matt Sands Shares How To Invest In Mineral Rights & Royalties",
+            "author": "Cashflow Ninja",
+            "thumbnail_url": "https://i.ytimg.com/vi/uhffuS4DlLQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uhffuS4DlLQ"
+          },
+          {
+            "video_id": "y5etlsUEcO0",
+            "title": "MRP 310: Strategic Portfolio Management: How to Sell Mineral Rights at Peak Value",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/y5etlsUEcO0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y5etlsUEcO0"
+          },
+          {
+            "video_id": "VYytHJ0lMVw",
+            "title": "MRP 293: Why Your Royalty Checks Keep Dropping (And How to Predict What's Next)",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/VYytHJ0lMVw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VYytHJ0lMVw"
+          },
+          {
+            "video_id": "o8FqhVu6MNM",
+            "title": "Mineral Rights Explained: What You Own and Where to Start",
+            "author": "National Association of Royalty Owners",
+            "thumbnail_url": "https://i.ytimg.com/vi/o8FqhVu6MNM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o8FqhVu6MNM"
+          },
+          {
+            "video_id": "JVbDAxk_YTU",
+            "title": "Situation #4 WI & NRI Calculations p 70 AAPL Study Guide",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/JVbDAxk_YTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JVbDAxk_YTU"
+          },
+          {
+            "video_id": "W5PjbHVyvWU",
+            "title": "Oil & Gas 06: Intro to Pooling",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/W5PjbHVyvWU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W5PjbHVyvWU"
+          },
+          {
+            "video_id": "le24nqd0H0M",
+            "title": "Pooling & Unitization Webinar",
+            "author": "behoge13",
+            "thumbnail_url": "https://i.ytimg.com/vi/le24nqd0H0M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=le24nqd0H0M"
+          },
+          {
+            "video_id": "SAMqfyu0Ovo",
+            "title": "How Oil & Gas Royalties Are Calculated: The Full Math, Barrel to Check",
+            "author": "Royalty Clerk",
+            "thumbnail_url": "https://i.ytimg.com/vi/SAMqfyu0Ovo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SAMqfyu0Ovo"
+          },
+          {
+            "video_id": "aPa6sCIUG-M",
+            "title": "Cessation, Dry Hole, & Continuous Operations Clauses (Oil & Gas 12.2)",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/aPa6sCIUG-M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aPa6sCIUG-M"
+          },
+          {
+            "video_id": "a-Ltd9yb7JI",
+            "title": "Vertical vs Horizontal Drilling | Directional & Multilateral Wells Explained | Lesson 7",
+            "author": "Carbon Strata Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/a-Ltd9yb7JI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a-Ltd9yb7JI"
+          },
+          {
+            "video_id": "YPFuHij-FYk",
+            "title": "What Is the Annulus? The Most Important Space in a Well | Drilling Ep 4",
+            "author": "Offshore Engineering Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/YPFuHij-FYk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YPFuHij-FYk"
+          },
+          {
+            "video_id": "aY0LJMEZzZo",
+            "title": "The 6 options to drill or intervene depleted wells | Conventional, MPD, UBD, UBCTD and PMCD",
+            "author": "Energy Window Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/aY0LJMEZzZo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aY0LJMEZzZo"
+          },
+          {
+            "video_id": "bZGu6nyMvTA",
+            "title": "Oil and Gas Accounting 102: Practical Case Study | Income Statement & Balance Sheet",
+            "author": "Duahbed Consult",
+            "thumbnail_url": "https://i.ytimg.com/vi/bZGu6nyMvTA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bZGu6nyMvTA"
+          },
+          {
+            "video_id": "gleafhkBQWg",
+            "title": "Decline Curve Analysis with Danomics Flows",
+            "author": "Danomics",
+            "thumbnail_url": "https://i.ytimg.com/vi/gleafhkBQWg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gleafhkBQWg"
+          },
+          {
+            "video_id": "tPB4O0ryZww",
+            "title": "CITRINE - WORKFLOW- Decline Curve Analysis",
+            "author": "KAPPA Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/tPB4O0ryZww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tPB4O0ryZww"
+          },
+          {
+            "video_id": "sLCs9xQypFE",
+            "title": "The Pugh Clause in an Acquisition | LMJ Chalk Talk",
+            "author": "LMJ Land Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/sLCs9xQypFE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sLCs9xQypFE"
+          },
+          {
+            "video_id": "XvpPKXAYhlQ",
+            "title": "Oil and Gas Leases by Mark Sokolow",
+            "author": "Tips from Mark Sokolow",
+            "thumbnail_url": "https://i.ytimg.com/vi/XvpPKXAYhlQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XvpPKXAYhlQ"
+          },
+          {
+            "video_id": "gFgW6n9nb-c",
+            "title": "How To Use the Texas Railroad Commission Website to Find Your Mineral Rights",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/gFgW6n9nb-c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gFgW6n9nb-c"
+          },
+          {
+            "video_id": "S680WOmo72o",
+            "title": "MRP 226: How to Use the Texas Railroad Commission Website",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/S680WOmo72o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S680WOmo72o"
+          },
+          {
+            "video_id": "dgKvg8N8xd8",
+            "title": "Introducing RRC CASES",
+            "author": "Railroad Commission of Texas",
+            "thumbnail_url": "https://i.ytimg.com/vi/dgKvg8N8xd8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dgKvg8N8xd8"
+          },
+          {
+            "video_id": "gjm7ZmMazmc",
+            "title": "Railroad Commission of Texas Permit Discussion",
+            "author": "Alpha Seven Energy",
+            "thumbnail_url": "https://i.ytimg.com/vi/gjm7ZmMazmc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gjm7ZmMazmc"
+          },
+          {
+            "video_id": "k4f-XlIpXZU",
+            "title": "Breaking Down the Haynesville Shale’s Top Wells",
+            "author": "ComboCurve",
+            "thumbnail_url": "https://i.ytimg.com/vi/k4f-XlIpXZU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k4f-XlIpXZU"
+          },
+          {
+            "video_id": "r0aIro_ccSI",
+            "title": "[whitson webinar] Advancing Gas EOR in Shale: Lessons from a Chevron-led Permian Pilot",
+            "author": "Whitson Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/r0aIro_ccSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r0aIro_ccSI"
+          },
+          {
+            "video_id": "nbj7-lPJ59w",
+            "title": "Utica Shale Explained: The $114B Oil Play Under Ohio (And Your Power Bill)",
+            "author": "FutureWise Energy",
+            "thumbnail_url": "https://i.ytimg.com/vi/nbj7-lPJ59w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nbj7-lPJ59w"
+          },
+          {
+            "video_id": "KynEhshipEg",
+            "title": "IndustryVoice: Permian Basin: A Solution Story - Part 1 \"The Source of Success\"",
+            "author": "Hart Energy",
+            "thumbnail_url": "https://i.ytimg.com/vi/KynEhshipEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KynEhshipEg"
+          },
+          {
+            "video_id": "8M30VzyjEpk",
+            "title": "Range Resources Marcellus Shale Field Tour",
+            "author": "Range Resources Corporation",
+            "thumbnail_url": "https://i.ytimg.com/vi/8M30VzyjEpk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8M30VzyjEpk"
+          },
+          {
+            "video_id": "41VgsNOdrto",
+            "title": "Working Interests in Oil & Gas: Cash Flow and Tax Breaks for Physicians | PIMD Podcast",
+            "author": "Passive Income MD",
+            "thumbnail_url": "https://i.ytimg.com/vi/41VgsNOdrto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=41VgsNOdrto"
+          },
+          {
+            "video_id": "822U1_i8V5Q",
+            "title": "Landman Tools for Today",
+            "author": "CourthouseAcademy",
+            "thumbnail_url": "https://i.ytimg.com/vi/822U1_i8V5Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=822U1_i8V5Q"
+          },
+          {
+            "video_id": "cO3OBCezwjw",
+            "title": "MRP 203: How to Navigate Inheritance Issues with Minerals and Royalties",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/cO3OBCezwjw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cO3OBCezwjw"
+          },
+          {
+            "video_id": "175xk8ZQHpI",
+            "title": "Q&A for Mineral and Royalty Owners",
+            "author": "Venergy Momentum Oil & Gas",
+            "thumbnail_url": "https://i.ytimg.com/vi/175xk8ZQHpI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=175xk8ZQHpI"
+          },
+          {
+            "video_id": "r7MMN5ueVCs",
+            "title": "Mineral Rights vs. Mineral Royalties - What's the Difference? 💰",
+            "author": "LandApp by LandGate",
+            "thumbnail_url": "https://i.ytimg.com/vi/r7MMN5ueVCs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r7MMN5ueVCs"
+          },
+          {
+            "video_id": "pjP04Ns4pww",
+            "title": "V NRI Joint Ownership Undivided Interests Same RI Problem 1",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/pjP04Ns4pww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pjP04Ns4pww"
+          },
+          {
+            "video_id": "fihgFZ8xpQo",
+            "title": "Vertical, Deviated & Horizontal Wells Explained | Drilling Manual",
+            "author": "Energy Vision Global",
+            "thumbnail_url": "https://i.ytimg.com/vi/fihgFZ8xpQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fihgFZ8xpQo"
+          },
+          {
+            "video_id": "l8BabqqR8og",
+            "title": "Converting Royalty Fractions to Decimals by Alyce Hoge of Land Training www.landtraining.net",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/l8BabqqR8og/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l8BabqqR8og"
+          },
+          {
+            "video_id": "USmNwOWurpk",
+            "title": "Oil & Gas 09B: The Granting Clause",
+            "author": "Energy Law Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/USmNwOWurpk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=USmNwOWurpk"
+          },
+          {
+            "video_id": "GS_N0TTrBPY",
+            "title": "How to Use the Oklahoma Corporation Commission Website to Find Your Mineral Rights",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/GS_N0TTrBPY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GS_N0TTrBPY"
+          },
+          {
+            "video_id": "dDocusqGT08",
+            "title": "#TxRRC Web Tour",
+            "author": "Railroad Commission of Texas",
+            "thumbnail_url": "https://i.ytimg.com/vi/dDocusqGT08/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dDocusqGT08"
+          },
+          {
+            "video_id": "d7YKQPVyHYc",
+            "title": "What does the Texas Railroad Commissioner do, and who's running?",
+            "author": "KXAN",
+            "thumbnail_url": "https://i.ytimg.com/vi/d7YKQPVyHYc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d7YKQPVyHYc"
+          },
+          {
+            "video_id": "oSSTf7vpnpU",
+            "title": "The Largest Single Natural Gas Deposit Ever Discovered in America",
+            "author": "GeoScope",
+            "thumbnail_url": "https://i.ytimg.com/vi/oSSTf7vpnpU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oSSTf7vpnpU"
+          },
+          {
+            "video_id": "1HDBzjGoDdc",
+            "title": "How to Find Oil & Gas Info for North Dakota (For Free!)",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/1HDBzjGoDdc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1HDBzjGoDdc"
+          },
+          {
+            "video_id": "yEKUUQ-zkaU",
+            "title": "WALKTHROUGH (pt 1): Permian Basin geology, legal descriptions, locating the minerals",
+            "author": "Tracy Lenz",
+            "thumbnail_url": "https://i.ytimg.com/vi/yEKUUQ-zkaU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yEKUUQ-zkaU"
+          },
+          {
+            "video_id": "R-AasPj-Y5E",
+            "title": "THE COST OF DRILLING AN OIL WELL | 8 Million and NO GUARANTEES",
+            "author": "The Crude Files",
+            "thumbnail_url": "https://i.ytimg.com/vi/R-AasPj-Y5E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R-AasPj-Y5E"
+          },
+          {
+            "video_id": "xL3_8adbQ4Q",
+            "title": "This Hidden Oil Field Beneath Texas's Permian Basin Could Change Everything",
+            "author": "GeoFins",
+            "thumbnail_url": "https://i.ytimg.com/vi/xL3_8adbQ4Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xL3_8adbQ4Q"
+          },
+          {
+            "video_id": "z9gHz7FYvRk",
+            "title": "MRP 234: Mineral Rights and Royalties Tax Strategies",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/z9gHz7FYvRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z9gHz7FYvRk"
+          },
+          {
+            "video_id": "DcdI-1zyjQo",
+            "title": "Mineral Rights Management 101 | How to Manage Your Mineral Rights Like the Pro's",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/DcdI-1zyjQo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DcdI-1zyjQo"
+          },
+          {
+            "video_id": "q5XqULtWaUQ",
+            "title": "Inherited Mineral Rights in Texas: The Affidavit of Heirship, Step by Step",
+            "author": "Royalty Clerk",
+            "thumbnail_url": "https://i.ytimg.com/vi/q5XqULtWaUQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q5XqULtWaUQ"
+          },
+          {
+            "video_id": "08zWLxyGaag",
+            "title": "How to Buy Mineral Rights and Oil & Gas Royalties",
+            "author": "Blue Mesa Minerals",
+            "thumbnail_url": "https://i.ytimg.com/vi/08zWLxyGaag/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=08zWLxyGaag"
+          },
+          {
+            "video_id": "hp69lw89Z-I",
+            "title": "Mineral Rights Explained By Oil and Gas Attorney | Mineral Rights 101 | What Are Mineral Rights?",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/hp69lw89Z-I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hp69lw89Z-I"
+          },
+          {
+            "video_id": "ehsvjfRcJIM",
+            "title": "Selling Mineral Rights? | Learn about the History of Mineral Buying and How to Protect Yourself!",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/ehsvjfRcJIM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ehsvjfRcJIM"
+          },
+          {
+            "video_id": "HGUBxgz_6Ak",
+            "title": "Oil & Gas Lease Royalties: Beginner's Guide for Mineral Owners (with examples!)",
+            "author": "Tracy Lenz",
+            "thumbnail_url": "https://i.ytimg.com/vi/HGUBxgz_6Ak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HGUBxgz_6Ak"
+          },
+          {
+            "video_id": "8JwnQSZGjU0",
+            "title": "5 Secret Websites To Find Mineral Rights For Sale That No One Talks About!",
+            "author": "Money Moves With K",
+            "thumbnail_url": "https://i.ytimg.com/vi/8JwnQSZGjU0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8JwnQSZGjU0"
+          },
+          {
+            "video_id": "WIqkczvqoz0",
+            "title": "Watch This Before Selling Mineral Rights! | Types of Mineral Buyers and Who to Avoid!",
+            "author": "Steven Hatcher | Minerals Guy",
+            "thumbnail_url": "https://i.ytimg.com/vi/WIqkczvqoz0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WIqkczvqoz0"
+          },
+          {
+            "video_id": "vcDs5GtSP6Q",
+            "title": "How Mineral Owners Get Paid (The Truth About Royalties)",
+            "author": "PetroPeak Investments LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/vcDs5GtSP6Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vcDs5GtSP6Q"
+          },
+          {
+            "video_id": "FDXztudBSFk",
+            "title": "MRP 352: Mineral Rights News October 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/FDXztudBSFk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FDXztudBSFk"
+          },
+          {
+            "video_id": "86mQK92f7Bg",
+            "title": "MRP 4: How Mineral Rights are Valued",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/86mQK92f7Bg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=86mQK92f7Bg"
+          },
+          {
+            "video_id": "M3eFdVkW_mY",
+            "title": "MRP 319: Mineral Rights News February 2026",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/M3eFdVkW_mY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M3eFdVkW_mY"
+          },
+          {
+            "video_id": "IrkmOVOU8E8",
+            "title": "MRP 299: Mineral Rights News September 2025",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/IrkmOVOU8E8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IrkmOVOU8E8"
+          },
+          {
+            "video_id": "zHSS1bvXiNk",
+            "title": "Mineral vs. Royalty: Stop Making This Investment Mistake",
+            "author": "PetroPeak Investments LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/zHSS1bvXiNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zHSS1bvXiNk"
+          },
+          {
+            "video_id": "iVFjOPF8JW0",
+            "title": "MRP 18: What is the Difference Between a Net Mineral Acre (NMA) and a Net Royalty Acre(NRA)?",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/iVFjOPF8JW0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iVFjOPF8JW0"
+          },
+          {
+            "video_id": "WPeA0rs7SLA",
+            "title": "IV NRI Calculations of Mineral Owner Pooled Unit Problem 1",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/WPeA0rs7SLA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WPeA0rs7SLA"
+          },
+          {
+            "video_id": "QKj_eILAG2k",
+            "title": "Calculating Royalty Interests",
+            "author": "UHD Continuing and Professional Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/QKj_eILAG2k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QKj_eILAG2k"
+          },
+          {
+            "video_id": "wUqopw4hh2o",
+            "title": "VII NRI Co Tenants Different RI in a Spacing Unit Prob 1",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/wUqopw4hh2o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wUqopw4hh2o"
+          },
+          {
+            "video_id": "B5fBIyi1-hw",
+            "title": "Situation #3 WI & NRI Calculations AAPL Study Guide PG 70",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/B5fBIyi1-hw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B5fBIyi1-hw"
+          },
+          {
+            "video_id": "n2pg2-Q06P8",
+            "title": "Unit: Calculating Undivided Interests with Different Royalties in a Unit",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/n2pg2-Q06P8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=n2pg2-Q06P8"
+          },
+          {
+            "video_id": "oigm_h7P_sc",
+            "title": "(09-17-2026) Case No. 01-24-00516-CV Oasis Pipeline, LP v. Penn Virginia Oil & Gas, L.P.",
+            "author": "Texas First Court of Appeals",
+            "thumbnail_url": "https://i.ytimg.com/vi/oigm_h7P_sc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oigm_h7P_sc"
+          },
+          {
+            "video_id": "qSA8EoDzhKo",
+            "title": "Horizontal Drilling and Stimulation Process",
+            "author": "British Columbia Energy Regulator",
+            "thumbnail_url": "https://i.ytimg.com/vi/qSA8EoDzhKo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qSA8EoDzhKo"
+          },
+          {
+            "video_id": "K4HrSTGgbFs",
+            "title": "Protests of Southfield oil drilling permit",
+            "author": "WXYZ-TV Detroit | Channel 7",
+            "thumbnail_url": "https://i.ytimg.com/vi/K4HrSTGgbFs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K4HrSTGgbFs"
+          },
+          {
+            "video_id": "Xr_kSHJguTM",
+            "title": "Exploring Directional Drilling: The Key to Modern Oil and Gas Drilling",
+            "author": "Petro Learn",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xr_kSHJguTM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xr_kSHJguTM"
+          },
+          {
+            "video_id": "Wvs9BxP1JfA",
+            "title": "Michigan DEQ allows permit to drill for oil in Southfield",
+            "author": "WXYZ-TV Detroit | Channel 7",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wvs9BxP1JfA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wvs9BxP1JfA"
+          },
+          {
+            "video_id": "_C039ie8UHw",
+            "title": "The Marcellus Shale Lecture Series: Greg Sovas on Permitting and Regulation (April 21)",
+            "author": "UBCFA - University at Buffalo Center for the Arts",
+            "thumbnail_url": "https://i.ytimg.com/vi/_C039ie8UHw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_C039ie8UHw"
+          },
+          {
+            "video_id": "7tXxUXv528A",
+            "title": "Chesapeake Energy horizontal drilling method | Oil & Gas Industry",
+            "author": "Oil & Gas Industry VDA",
+            "thumbnail_url": "https://i.ytimg.com/vi/7tXxUXv528A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7tXxUXv528A"
+          },
+          {
+            "video_id": "zoP-dgL5D7M",
+            "title": "MRP 11: Oil and Gas Title Defects and Curative Measures",
+            "author": "Matt Sands",
+            "thumbnail_url": "https://i.ytimg.com/vi/zoP-dgL5D7M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zoP-dgL5D7M"
+          },
+          {
+            "video_id": "SfX6ycoYg24",
+            "title": "Oil and Gas Division Orders",
+            "author": "Blue Mesa Minerals",
+            "thumbnail_url": "https://i.ytimg.com/vi/SfX6ycoYg24/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SfX6ycoYg24"
+          },
+          {
+            "video_id": "iD4uCjptCXM",
+            "title": "Don’t Sign that Division Order!",
+            "author": "Richard Winblad",
+            "thumbnail_url": "https://i.ytimg.com/vi/iD4uCjptCXM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iD4uCjptCXM"
+          },
+          {
+            "video_id": "blbomhUd0sA",
+            "title": "What Your Decimal Interest Means (and How to Check It)",
+            "author": "Royalty Clerk",
+            "thumbnail_url": "https://i.ytimg.com/vi/blbomhUd0sA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=blbomhUd0sA"
+          },
+          {
+            "video_id": "6w9YvetItDc",
+            "title": "Calculating The Money Decimal in an Oil & Gas Lease www.landtraining.net",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/6w9YvetItDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6w9YvetItDc"
+          },
+          {
+            "video_id": "PNLVi6Ee0KM",
+            "title": "Calculating Undivided Interest - Different Royalties.avi",
+            "author": "Land Training www.landtraining.net",
+            "thumbnail_url": "https://i.ytimg.com/vi/PNLVi6Ee0KM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PNLVi6Ee0KM"
+          },
+          {
+            "video_id": "u3kTgNXLIGI",
+            "title": "Life of a Well and Decline Curve Analysis",
+            "author": "Francis Ramos II",
+            "thumbnail_url": "https://i.ytimg.com/vi/u3kTgNXLIGI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u3kTgNXLIGI"
+          },
+          {
+            "video_id": "2tJpxiIqFSM",
+            "title": "Type Curves in Oil & Gas Modeling: Modeling Master Key or Academic Curiosity?",
+            "author": "Mergers & Inquisitions / Breaking Into Wall Street",
+            "thumbnail_url": "https://i.ytimg.com/vi/2tJpxiIqFSM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2tJpxiIqFSM"
+          },
+          {
+            "video_id": "8gaFGCKNpnk",
+            "title": "How Oil Well Royalties Work: Income, Decline Curves, Taxes & Risks",
+            "author": "Mr. Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/8gaFGCKNpnk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8gaFGCKNpnk"
           }
         ],
         "research_reference_only": true,
@@ -28373,7 +29598,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 3659 third-party videos (33460 captured tips)",
+        "source": "Spoken content of 3834 third-party videos (35035 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -28389,38 +29614,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 3659,
-    "channel_count": 2375,
-    "total_words": 5373475,
-    "total_hours": 1073.84,
-    "total_pro_tips": 33460,
-    "unique_statutes_and_forms": 1567,
-    "unique_tools_and_portals": 9986
+    "video_count": 3834,
+    "channel_count": 2448,
+    "total_words": 5650212,
+    "total_hours": 1134.3,
+    "total_pro_tips": 35035,
+    "unique_statutes_and_forms": 1642,
+    "unique_tools_and_portals": 10281
   },
   "coverage": {
-    "videos_classified": 3659,
-    "videos_with_multiple_topics": 3656,
-    "tips_classified": 33460,
-    "raw_transcripts_joined": 3659,
+    "videos_classified": 3834,
+    "videos_with_multiple_topics": 3831,
+    "tips_classified": 35035,
+    "raw_transcripts_joined": 3834,
     "topic_video_counts": {
-      "business_model_and_economics": 2910,
-      "probate_and_docket_sourcing": 2720,
-      "unclaimed_property_and_escheat": 785,
-      "genealogy_and_heirship_proof": 2976,
-      "skip_tracing_and_outreach": 2019,
-      "contracts_and_compensation": 2876,
-      "statutory_caps_and_licensing": 3058,
-      "automation_and_small_team_ops": 2692
+      "business_model_and_economics": 3065,
+      "probate_and_docket_sourcing": 2881,
+      "unclaimed_property_and_escheat": 811,
+      "genealogy_and_heirship_proof": 3116,
+      "skip_tracing_and_outreach": 2112,
+      "contracts_and_compensation": 3003,
+      "statutory_caps_and_licensing": 3223,
+      "automation_and_small_team_ops": 2782
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 5975,
-      "probate_and_docket_sourcing": 5723,
-      "unclaimed_property_and_escheat": 1835,
-      "genealogy_and_heirship_proof": 3742,
-      "skip_tracing_and_outreach": 1139,
-      "contracts_and_compensation": 4495,
-      "statutory_caps_and_licensing": 3261,
-      "automation_and_small_team_ops": 7290
+      "business_model_and_economics": 6294,
+      "probate_and_docket_sourcing": 6217,
+      "unclaimed_property_and_escheat": 1846,
+      "genealogy_and_heirship_proof": 3944,
+      "skip_tracing_and_outreach": 1147,
+      "contracts_and_compensation": 4693,
+      "statutory_caps_and_licensing": 3390,
+      "automation_and_small_team_ops": 7504
     }
   },
   "schema_version": "1.0",

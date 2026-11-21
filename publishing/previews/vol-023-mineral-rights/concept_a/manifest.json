@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-023-mineral-rights",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1885500,
+      "sha256": "bcd1b038eb54642169882e447915d153ffb561b07911b87049352c549f43b760"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2420373,
+      "sha256": "7314ea5aeafb3ad2860223d1c81bfb27387ed07478f40d11a81ce6537b003bb7"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 535044,
+      "sha256": "d76c5849d387b343b89ab8e8cf5a66d445f822744c5a83c23cc2324059d33b0f"
+    },
+    "book.epub": {
+      "bytes": 247068,
+      "sha256": "18b892b46f262c6f0608e189161d0fee37bbc17a66a6351b2291bef798dabc55"
+    },
+    "art/cover.svg": {
+      "bytes": 4004,
+      "sha256": "c2b2186d2b818a39d298708aacf7f9905750f51abde1079cdc1f440f08c3a0c1"
+    },
+    "art/scorecard.svg": {
+      "bytes": 34876,
+      "sha256": "c21b3cf182af77d965810a2775d966e374eaddd240f130fce8aa1b3b6b9334bc"
+    },
+    "art/diag_01.svg": {
+      "bytes": 13453,
+      "sha256": "08f8499e425a3648aa9c618cdcb2a0ce9b3ca29fae1a6de1f308c753e37aa992"
+    },
+    "art/diag_02.svg": {
+      "bytes": 9529,
+      "sha256": "d83f76345845a19cc261bd9c977a8ee137c4451f11040ae27473e8dc5463b520"
+    },
+    "art/diag_03.svg": {
+      "bytes": 13795,
+      "sha256": "de626e333f362d5af5ab5b008c0579f4a678d0dab899440f055bcb96a64ea7d1"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10802,
+      "sha256": "bf5a98c7069ceaa59255709073f7ec9cec73afe3bb9d5c02903300729bd5ebd8"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11656,
+      "sha256": "a936320f8c8c705c477cd09a8f0743a9c1c401bbcfc13fd8566b13368c3e9893"
+    },
+    "art/diag_06.svg": {
+      "bytes": 14693,
+      "sha256": "cd0ab86e9efa480a5acf067b9bcfdbeaec479793da75c05adc32c02276678776"
+    },
+    "art/diag_07.svg": {
+      "bytes": 10450,
+      "sha256": "779df39c0944657d0253ba4d106933e357989eb006df6ff3e68bbea7c0bb347b"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9789,
+      "sha256": "59fb0d542a424610ef655c3cd33e3964372089925cc4b4118a29e24b491fa622"
+    }
+  }
+}

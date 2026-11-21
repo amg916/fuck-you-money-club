@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-title-to-cash-workflow",
+      "chart_type": "process_flow",
+      "title": "Buy the Interest, Verify the Decimal, Reconcile the Cash",
+      "subtitle": "Five operating steps from recorded ownership to royalty receipts.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Scope covers private oil and gas mineral interests and nonparticipating royalty interests. NMA means net mineral acres; NPRI means nonparticipating royalty interest. Instruments and state law control ownership, executive rights, and allocation. The typical first-deal window is 6–24 months.",
+      "caption": "A tract description, an operator pay decimal, and a seller's acreage claim are different evidence objects. Reconcile them before pricing the interest.",
+      "stages": [
+        {
+          "label": "Define the acquired property interest precisely",
+          "value": "Map tract, instrument, estate, and seller",
+          "numeric_value": 1.0,
+          "detail": "Record county, legal description, recording references, seller vesting, and whether the asset conveys minerals, a lease-dependent royalty, or an NPRI. Do not substitute surface acreage for the severed mineral estate."
+        },
+        {
+          "label": "Reconstruct title and calculate economic ownership",
+          "value": "Resolve reservations before accepting ownership decimals",
+          "numeric_value": 2.0,
+          "detail": "Use county recorder instruments and a landman's run sheet to trace conveyances, probate, liens, and reservations. Calculate NMA from supported fractional mineral ownership; read fixed and floating NPRI language before applying any lease royalty multiplier."
+        },
+        {
+          "label": "Underwrite production and development evidence separately",
+          "value": "Stress price, decline, deductions, and timing",
+          "numeric_value": 3.0,
+          "detail": "Match operator statements to state well identifiers and production records. Model realized commodity prices, decline curves, post-production deductions, and downtime. Treat undrilled locations and pooling-docket developments as contingent cases rather than current royalty cash."
+        },
+        {
+          "label": "Acquire through documented closing and recordation",
+          "value": "Transfer verified rights with tracked basis",
+          "numeric_value": 4.0,
+          "detail": "Counsel verifies the conveyance and required releases; the landman confirms recording and operator transfer requirements. Track purchase basis and transaction costs by interest, with cash release tied to documented closing conditions."
+        },
+        {
+          "label": "Reconcile royalties and package realized exits",
+          "value": "Recognize royalties plus gains, excluding returned basis",
+          "numeric_value": 5.0,
+          "detail": "Use Python csv and sqlite3 to match statements, production months, ownership decimals, deductions, and bank deposits. Investigate suspense and missing payments; for sales, separate returned carrying basis from realized rights-trading gains."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-nested-acquisition-cohorts",
+      "chart_type": "funnel",
+      "title": "Turn One Sourcing Cohort into Documented Acquisitions",
+      "subtitle": "Five nested cohorts, with explicit denominators and no revenue claims.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative cohort contains 500 distinct seller-interest packages, deduplicated by owner, tract, and conveyed estate. Every later stage is a subset of the preceding stage. Counts are planning assumptions over a 6–24 month acquisition cycle, not observed conversions or a 30-day closing forecast.",
+      "caption": "The cohort narrows 500 → 200 → 80 → 20 → 3. Final conversion is 0.6% of screened packages; acquisition count alone does not establish annual royalty revenue.",
+      "stages": [
+        {
+          "label": "Screen distinct seller and interest packages",
+          "value": "500 packages enter the documented source cohort",
+          "numeric_value": 500.0,
+          "detail": "Capture owner contact provenance, county, legal description, claimed estate, and asking price. Separate duplicate broker listings from distinct interests before calculating any downstream conversion rate."
+        },
+        {
+          "label": "Confirm interest and obtain usable documents",
+          "value": "200 packages qualify; 40% of screened cohort",
+          "numeric_value": 200.0,
+          "detail": "Obtain seller authority, relevant recorded instruments, and permission to review statements when producing. Exclude packages whose seller cannot identify the conveyed estate or provide a workable document trail."
+        },
+        {
+          "label": "Pass preliminary title and engineering review",
+          "value": "80 packages survive; 40% of documented cohort",
+          "numeric_value": 80.0,
+          "detail": "Screen ownership defects, production decline, pricing differentials, lease deductions, and development timing. Record the specific failure reason for every rejected package to improve subsequent sourcing."
+        },
+        {
+          "label": "Issue supported and conditional purchase offers",
+          "value": "20 packages receive offers; 25% of reviewed cohort",
+          "numeric_value": 20.0,
+          "detail": "Attach supported ownership math, price sensitivity, diligence conditions, and a maximum cash commitment. Do not bid contingent drilling upside as though an operator has already scheduled first production."
+        },
+        {
+          "label": "Close and complete recorded ownership transfers",
+          "value": "3 packages close; 15% of offered cohort",
+          "numeric_value": 3.0,
+          "detail": "Count an acquisition only after executed closing documents, required funds movement, and confirmed recordation. Track operator pay-status updates separately; closing does not establish immediate royalty collection."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-owner-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "Base Case: $215,000 Revenue to $69,875 Owner Net",
+      "subtitle": "Six bars reconcile exactly to a 32.5% annual net margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD annually. First and last bars are absolute totals; the four middle bars are signed deductions. Expense allocations are illustrative, not additional scorecard inputs. Cash operating deductions total $120,000, or $10,000 monthly. The $25,125 depletion allocation is a separate modeled noncash economic charge against royalty-producing interests, not a claimed statutory tax deduction. Owner personal taxes are outside this illustrative bridge.",
+      "caption": "$215,000 − $54,000 − $42,000 − $24,000 − $25,125 = $69,875; $69,875 ÷ $215,000 = 32.5%. Conservative remains $30,000 × 20% = $6,000; Scaled remains $400,000 × 45% = $180,000.",
+      "stages": [
+        {
+          "label": "Recognized annual royalty and trading revenue",
+          "value": "$215,000 total recognized operator revenue annually",
+          "numeric_value": 215000.0,
+          "detail": "Illustrative composition: $165,000 royalty receipts plus $50,000 realized rights-trading gains. A rights sale collecting $250,000 against $200,000 carrying basis contributes $50,000, not $250,000, to revenue. Underlying operator hydrocarbon sales are excluded."
+        },
+        {
+          "label": "Pay the three specialist contractor seats",
+          "value": "Subtract $54,000 for the specialist contractor bench",
+          "numeric_value": -54000.0,
+          "detail": "Allocate $24,000 to land work, $18,000 to petroleum engineering, and $12,000 to mineral and tax counsel. These are annual fractional-engagement budgets rather than full-time salaries; the owner occupies the single full-time seat."
+        },
+        {
+          "label": "Operate the recurring portfolio monitoring stack",
+          "value": "Subtract $42,000 for recurring portfolio operating costs",
+          "numeric_value": -42000.0,
+          "detail": "Budget production data, royalty accounting tools, insurance, records storage, travel, and administration. Automation handles statement matching and production exceptions; ambiguous deductions and ownership changes still require review."
+        },
+        {
+          "label": "Expense distinct diligence and transaction support",
+          "value": "Subtract $24,000 for expensed transaction support services",
+          "numeric_value": -24000.0,
+          "detail": "Cover failed-deal diligence, outside title evidence, and expensed disposition support beyond contractor retainers. Acquisition costs capitalized into carrying basis stay outside this deduction and are recovered only through the applicable basis calculation."
+        },
+        {
+          "label": "Charge modeled depletion on retained producing interests",
+          "value": "Subtract $25,125 for modeled annual economic depletion",
+          "numeric_value": -25125.0,
+          "detail": "Apply this illustrative allocation only to retained royalty-producing assets. Do not deduct the sold interest's recovered basis again. Maintain a separate tax schedule under 26 U.S.C. Sections 611 and 613A; eligibility and limitations depend on the taxpayer and property."
+        },
+        {
+          "label": "Retain the canonical annual owner net profit",
+          "value": "$69,875 owner net at exactly 32.5% margin",
+          "numeric_value": 69875.0,
+          "detail": "The Base Case uses one full-time owner and three contractors, four people total. This profit measure is distinct from cash available after new acquisitions, debt principal, working-capital changes, and owner personal taxes."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-producing-interest-gross-receipt-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Producing Interests on One Capital Denominator",
+      "subtitle": "Five illustrative gross royalty receipt yields per $100,000 invested.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Each bar measures annual gross royalty cash receipts divided by $100,000 of acquisition capital. Values are illustrative underwriting inputs, not market observations, net margins, total returns, or perpetual yields. Exclude sale proceeds, rights-trading gains, and unproved drilling upside. No payment method itself creates additional mineral yield.",
+      "caption": "Compare identical capital denominators, then stress decline, commodity prices, deductions, and payment delays. These five independent examples do not sum to a portfolio forecast.",
+      "stages": [
+        {
+          "label": "Diversified mature oil royalties with electronic payment",
+          "value": "6% gross yield; $6,000 annual royalty receipts",
+          "numeric_value": 6.0,
+          "detail": "Illustrative multiwell exposure spreads single-well downtime but does not remove basin price risk. Match ACH deposits to operator remittance identifiers and production months before accepting the trailing receipt total."
+        },
+        {
+          "label": "Single-well producing NPRI with confirmed decimal",
+          "value": "8% gross yield; $8,000 annual royalty receipts",
+          "numeric_value": 8.0,
+          "detail": "Verify whether the NPRI is fixed or floating and whether the operator's decimal follows the instrument. One well creates concentrated downtime and depletion exposure even when recent payments appear stable."
+        },
+        {
+          "label": "Mature gas royalties exposed to regional basis",
+          "value": "10% gross yield; $10,000 annual royalty receipts",
+          "numeric_value": 10.0,
+          "detail": "Stress realized gas prices after regional basis differentials, gathering, processing, and other instrument-permitted deductions. A quoted benchmark price cannot substitute for the property's actual settlement economics."
+        },
+        {
+          "label": "New horizontal production with steep initial decline",
+          "value": "12% gross yield; $12,000 annual royalty receipts",
+          "numeric_value": 12.0,
+          "detail": "Use an explicit twelve-month decline forecast rather than multiplying a peak monthly check by twelve. Compare forecasts with completion dates, production history, and downtime to expose front-loaded receipts."
+        },
+        {
+          "label": "Concentrated legacy wells requiring statement reconciliation",
+          "value": "14% gross yield; $14,000 annual royalty receipts",
+          "numeric_value": 14.0,
+          "detail": "A low acquisition price can produce a high modeled receipt yield alongside severe cessation and operator risk. Paper checks and inconsistent statement formats increase reconciliation work, not intrinsic economic return."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-statutory-and-risk-preflight",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Capital Leaves the Acquisition Account",
+      "subtitle": "Proceed only when each applicable question has documented evidence.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four sequential binary checks: a supported yes advances; an unresolved no routes the package to remediation or rejection. Numeric values indicate check order, not probability. Texas citations apply to Texas interests; Oklahoma docket practice requires its own commission records and governing rules.",
+      "caption": "The decision path separates property ownership, collectible economics, public development evidence, and capital structure. Passing one check does not answer the other three.",
+      "stages": [
+        {
+          "label": "Does recorded title support the conveyed interest?",
+          "value": "Yes: advance; no: cure title or reject",
+          "numeric_value": 1.0,
+          "detail": "Test seller authority, severed estate ownership, reservations, probate, liens, and execution formalities. For Texas assets, examine Property Code Sections 5.021 and 13.001. A recorder index hit alone does not establish marketable title or resolve competing interests."
+        },
+        {
+          "label": "Do lease terms support collectible stressed receipts?",
+          "value": "Yes: advance; no: reprice or reject economics",
+          "numeric_value": 2.0,
+          "detail": "Read royalty language, deduction provisions, pooling authority, and payment history. Texas Natural Resources Code Section 91.402 addresses payment timing and specified withholding circumstances. Stress commodity prices and decline; determine asset-specific tax and depletion treatment under 26 U.S.C. Sections 611 and 613A."
+        },
+        {
+          "label": "Does the docket support the priced development case?",
+          "value": "Yes: advance; no: remove unsupported development value",
+          "numeric_value": 3.0,
+          "detail": "Verify application status, issued orders, affected tracts, election provisions, and deadlines directly with the relevant commission. Texas Natural Resources Code Chapter 102 does not define Oklahoma pooling practice. Do not turn a public filing into assumed drilling, completion, or first-payment dates."
+        },
+        {
+          "label": "Is the funding structure documented before solicitation?",
+          "value": "Yes: authorize closing; no: stop solicitation and remediate",
+          "numeric_value": 4.0,
+          "detail": "Document owner-funded purchases separately from pooled investor offerings. Review 15 U.S.C. Sections 77b and 77e, any applicable exemption conditions, and relevant state securities requirements before soliciting funds. A direct-asset label does not settle whether the offered arrangement is a security."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-person-mineral-pod",
+      "chart_type": "org_architecture",
+      "title": "One Owner, Three Specialists; Two Seats Added at Scale",
+      "subtitle": "Base pod: 1 FT + 3 C. Scaled pod: 2 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each stage represents one person, not one full-time equivalent. The first four seats form both Conservative and Base pods. The final two seats are Scaled-only additions. FT means full-time; C means contractor. Contractor capacity is fractional and scheduled against actual transaction workload.",
+      "caption": "Four people support the $30,000 and $215,000 revenue cases; six support the $400,000 case. Expansion depends on verified workload and economics, not headcount as a revenue predictor.",
+      "stages": [
+        {
+          "label": "Owner and acquisition principal leads the base pod",
+          "value": "Base seat one: one full-time acquisition principal",
+          "numeric_value": 1.0,
+          "detail": "Own sourcing, underwriting decisions, cash allocation, offer authority, royalty exception review, and institutional buyer relationships. Maintain the investment register and distinguish acquisition capital from recognized operating revenue."
+        },
+        {
+          "label": "Contract landman establishes the title evidence trail",
+          "value": "Base seat two: one contract land specialist",
+          "numeric_value": 1.0,
+          "detail": "Build tract-level run sheets, calculate supported ownership fractions, monitor recording, and track operator transfer documents. Escalate instrument interpretation and contested title issues to counsel rather than resolving them through spreadsheet labels."
+        },
+        {
+          "label": "Contract petroleum engineer challenges production assumptions",
+          "value": "Base seat three: one contract petroleum engineer",
+          "numeric_value": 1.0,
+          "detail": "Review well-level decline, commodity sensitivities, offset evidence, downtime, and development scenarios. Keep proved cash-producing exposure separate from unfunded drilling inventory and docket-driven acquisition hypotheses."
+        },
+        {
+          "label": "Contract counsel covers mineral and tax structuring",
+          "value": "Base seat four: one qualified contract attorney",
+          "numeric_value": 1.0,
+          "detail": "Use counsel with demonstrated mineral conveyance and tax competence for instrument review, title remedies, entity structure, and depletion questions. Securities work requires matching expertise before pooled funding; if separate specialists become recurring seats, revise headcount and costs explicitly."
+        },
+        {
+          "label": "Royalty operations analyst joins only at scale",
+          "value": "Scaled seat five: one additional full-time analyst",
+          "numeric_value": 1.0,
+          "detail": "Take over statement ingestion, deposit matching, production monitoring, suspense tracking, and exception queues. Use Python csv and sqlite3 for reproducible reconciliation while preserving original operator statements and review history."
+        },
+        {
+          "label": "Disposition specialist joins only at scale",
+          "value": "Scaled seat six: one additional contract specialist",
+          "numeric_value": 1.0,
+          "detail": "Assemble buyer data rooms, normalize asset schedules, coordinate bids, and track closing deliverables. Document asset-sale intermediary authority and any jurisdiction-specific licensing requirements before accepting the engagement."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation-comparison",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Acquisition Capital Without Calling It Revenue",
+      "subtitle": "Four buckets across $150,000, $600,000, and $2,000,000 startup plans.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "All amounts are USD. Numeric stage values describe the $600,000 reference stack; each stage also identifies the corresponding floor and ceiling allocations. These are alternative capital plans, not additive funding rounds and not mappings to the three annual revenue scenarios. Reserves and acquisition principal are balance-sheet uses, not recognized royalty or trading revenue.",
+      "caption": "Floor: $100,000 + $20,000 + $18,000 + $12,000 = $150,000. Reference: $450,000 + $60,000 + $60,000 + $30,000 = $600,000. Ceiling: $1,600,000 + $160,000 + $180,000 + $60,000 = $2,000,000.",
+      "stages": [
+        {
+          "label": "Fund acquired interests and documented purchase basis",
+          "value": "$450,000 reference allocation for mineral acquisition principal",
+          "numeric_value": 450000.0,
+          "detail": "Floor allocation is $100,000; ceiling allocation is $1,600,000. Deploy only against documented asset underwriting and closing evidence. Track basis by interest so later disposal proceeds do not inflate recognized rights-trading gains."
+        },
+        {
+          "label": "Reserve transaction-specific diligence and closing capital",
+          "value": "$60,000 reference allocation for diligence and closing",
+          "numeric_value": 60000.0,
+          "detail": "Floor allocation is $20,000; ceiling allocation is $160,000. Cover title examination, engineering, recording, and instrument preparation. Separate capitalized acquisition costs from expensed failed-deal work; do not charge the same invoice twice."
+        },
+        {
+          "label": "Hold operating liquidity against delayed first receipts",
+          "value": "$60,000 reference allocation for protected operating liquidity",
+          "numeric_value": 60000.0,
+          "detail": "Floor allocation is $18,000; ceiling allocation is $180,000. At selected monthly burns of $1,000, $2,500, and $7,500 respectively, these fund 18, 24, and 24 months. The floor plan needs another $6,000 or equivalent reductions if first receipts take 24 months."
+        },
+        {
+          "label": "Provision startup systems and controlled contingency cash",
+          "value": "$30,000 reference allocation for setup and contingency",
+          "numeric_value": 30000.0,
+          "detail": "Floor allocation is $12,000; ceiling allocation is $60,000. Cover initial data access, secure document storage, account setup, and a remaining contingency balance. Contingency can extend runway only to the extent it remains unspent."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days-execution-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "Build an Investable Acquisition Process in Thirty Days",
+      "subtitle": "Four weekly milestones prepare the pipeline, not a promised closing.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Milestones cover Days 1–7, 8–14, 15–21, and 22–30. Numeric values mark milestone end days. The canonical first-deal window remains 6–24 months. A completed sprint produces traceable research, underwriting, and operating controls; it does not establish ownership or royalty income.",
+      "caption": "Finish the month with a narrow acquisition mandate, a documented evidence trail, tested economics, and a review-ready offer process.",
+      "stages": [
+        {
+          "label": "Days 1-7: define mandate and evidence standards",
+          "value": "Complete basin scope, capital limits, and record templates",
+          "numeric_value": 7.0,
+          "detail": "Choose one initial basin and asset type. Establish county recorder and state commission access, the investment register, and secure document storage. Write separate fields for NMA, NPRI terms, lease royalty, unit allocation, and operator pay decimal."
+        },
+        {
+          "label": "Days 8-14: build the first traceable sourcing cohort",
+          "value": "Complete a sourced shortlist with ownership evidence links",
+          "numeric_value": 14.0,
+          "detail": "Assemble an illustrative 25-package pilot from authorized seller outreach and public records. Deduplicate interests, collect instrument references, and log seller authority. Monitor relevant public pooling dockets without equating filings with funded development."
+        },
+        {
+          "label": "Days 15-21: underwrite and challenge candidate economics",
+          "value": "Complete three conditional cases and reproducible reconciliations",
+          "numeric_value": 21.0,
+          "detail": "For three candidates with sufficient evidence, build commodity, decline, deduction, and timing sensitivities. Reconcile available royalty statements using Python csv and sqlite3. Compare legal ownership math with operator decimals and document every unresolved difference before setting offer limits."
+        },
+        {
+          "label": "Days 22-30: prepare offers and operating handoffs",
+          "value": "Complete reviewed offer packs and a funded runway plan",
+          "numeric_value": 30.0,
+          "detail": "Prepare conditional offers only for supported candidates. Assign title remediation, closing deliverables, operator transfer tracking, and royalty exception ownership. Reconcile acquisition commitments with liquidity through the 6–24 month first-deal window; retain unresolved candidates in research."
+        }
+      ]
+    }
+  ]
+}
