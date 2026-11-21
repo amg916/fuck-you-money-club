@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "3f00f08c34a96511d09801527a88c819598ba0e59b0cf9e490124f09fb15d5b6",
-    "brand/brand_system.json": "03474d90ca4fb2cc56ef38f736b0feece30fec805e825582bf4c32145d5efb7a",
-    "catalog/pipeline_29_candidates.json": "26ea081176d1c13dac25ebbca6618f3d713594aa5aa460ca3854edaf83732062",
-    "research/research_database_summary.json": "e2e1c9a16bd4d69ceb2849fc0ac357fe0fbf3df04fceb2bbaceab69e454a01cf",
+    "audit/existing_work_audit.json": "1a515426636aecf4bdecd8864abc59f2b83b2a2e547942690c617e938b8b2d13",
+    "brand/brand_system.json": "a62acf23c4976a231a01a58aa9a055516cdc61aae50ad412029ab00c9585dcb6",
+    "catalog/pipeline_29_candidates.json": "2b59afc653fdd19c402c11c6fc821a2dbc8b33bf3bd293332fd58c61e401c808",
+    "research/research_database_summary.json": "e4a9212656649a580d45d2a39abf6ff103e25ead44eba47ae22251362ffe2455",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -149,6 +149,24 @@
     "volumes/vol-008-commercial-lead-generation/manuscript.json": "41b83d18036422908025cac9fb279f6191051b6d415cbd318dae92d3b890c781",
     "volumes/vol-008-commercial-lead-generation/metadata.json": "8df66b3788295a3894126e0100aec81b9201b45eaddbdab7283c32ddf47896e4",
     "volumes/vol-008-commercial-lead-generation/scorecard.json": "958aaa3201943a4a708f12a6467deb2992ebb504c19afb4fd8ec87b067939726",
-    "volumes/vol-008-commercial-lead-generation/workbook.json": "72b3fa58fd6dc8313789df9e1a67c1e07aa22455b1c6dca0855cdb11b5210985"
+    "volumes/vol-008-commercial-lead-generation/workbook.json": "72b3fa58fd6dc8313789df9e1a67c1e07aa22455b1c6dca0855cdb11b5210985",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-01.md": "a7d74f53a9675c4c4959b2e0e81f338faf0aabce93669dc8779fc5db911e20b8",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-02.md": "6963336415851e5afb6a49819bbb0f220f8e5426d4b148641e4dc841c29a9309",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-03.md": "3c4e93596b81a0d232053eb1fc6312364dc5619ee29efac8838ed36b7f57b11c",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-04.md": "ea2a1683dffed57b4782d01763766d7ff3fc35c94393be79c9076ac4b8d5f30c",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-05.md": "30f70fb143758d551a0eb768d0438bf3c5e106f307a8c4342655aae9cbe77746",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-06.md": "dff2de38f9fae4922a45ac64a018a87e935d7df1c47ba5b3bde86ce98514be53",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-07.md": "c91720926c709993662f90168d6604946a1ab530fd53497e6057bec0d7c4cfd9",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-08.md": "f6fbc1369e459aa5fdaadb8d4e1d33af1dfddf21e7a2b7bb87d6c2a4ca1c509e",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-09.md": "ae14061d684cdc7583c22b09f05901eda7e0329b97d0f92639a361d79fda1fb2",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-10.md": "ed4a9684943fc7526fa58b843dea58b389e1fd7d23d84d68ccf90dcf96ae79ca",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-11.md": "b4a55ca4400f7c64d029256e90cd5e3a3bd658c23e33b2a9459734e0c8eeab0c",
+    "volumes/vol-009-million-dollar-lead-generation/chapters/chapter-12.md": "2fc72bdfc08e2884782f1c39686cb8a6adc7938495063b98bb79ed65b71b4f9c",
+    "volumes/vol-009-million-dollar-lead-generation/diagrams_data.json": "06e16d1e2bcfe8c361262e9f1e94e3f1e58dd38db2d1d98f29b315c63f9113ca",
+    "volumes/vol-009-million-dollar-lead-generation/graphics_reviews.json": "fe3f685d17963f2ad2db9f4d1a255d89367c22b80e77883adf61b23856bb81b2",
+    "volumes/vol-009-million-dollar-lead-generation/manuscript.json": "7e92b520b3eb8e3b8081102f2678032f8f6825cc7ce8047075c016af192fff4b",
+    "volumes/vol-009-million-dollar-lead-generation/metadata.json": "935ec2d16271fa6a4ef851e575dd2949d1333f13e3e27071910f971ed6598d43",
+    "volumes/vol-009-million-dollar-lead-generation/scorecard.json": "e6ca5a8dd35c64fca863b34d4d3f791755c2776fbf23cee0bf9522decfdfa149",
+    "volumes/vol-009-million-dollar-lead-generation/workbook.json": "e9ace2e67605896771dc6207c60d916bea75d579a7a75b9e6382c73255675dbb"
   }
 }

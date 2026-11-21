@@ -1,0 +1,702 @@
+from __future__ import annotations
+
+CHAPTER_11 = {
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
+    "question_prompt": "How do you structure a lean 2 FT + 3 C (5 people) -> 3 FT + 4 C (7 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
+    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
+    "subtitle": "Five-to-Seven-Person Enterprise ABM Pods, Salesforce Acceptance Evidence, Accrual Cohorts, Written IP Assignments, and Buyer-Tested Earnings",
+    "layout_template": "action_checklist",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an "
+        "82/100 Money-to-Manpower Score across 30 mapped plays. Build one accountable "
+        "delivery system, not thirty miniature agencies: two full-time seats and three "
+        "contractors initially, then three full-time seats and four contractors when "
+        "measured capacity and collected fees support expansion. Canonical annual owner "
+        "profits are $30,000 Conservative, $202,500 Base, and $480,000 Scaled; client "
+        "contract values never enter operator revenue. This chapter specifies seat "
+        "ownership, contractor acceptance terms, weekly evidence checks, customer and "
+        "payer concentration limits, accrual cohort reporting, and signed intellectual "
+        "property transfers. Premium pricing at exit depends on transferable earnings, "
+        "renewable relationships, and clean delivery records, while the same controls "
+        "support a durable owner-operated cash business."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$150,000",
+            "context": "Annual retainers and qualified-opportunity fees; excludes client contract values.",
+            "note": "20% net margin; $30,000 annual owner net profit; 2 FT + 3 C.",
+        },
+        {
+            "label": "Base",
+            "value": "$675,000",
+            "context": "Annual retainers and qualified-opportunity fees; excludes client contract values.",
+            "note": "30.0% net margin; $202,500 annual owner net profit; 2 FT + 3 C.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,200,000",
+            "context": "Annual retainers and qualified-opportunity fees; excludes client contract values.",
+            "note": "40% net margin; $480,000 annual owner net profit; 3 FT + 4 C.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Assign five accountable seats before expanding to seven",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Organize Candidate #21 around one enterprise demand-generation pod, with "
+                    "the owner occupying the first full-time seat rather than appearing as "
+                    "an invisible sixth person. That seat owns selling, client qualification, "
+                    "commercial terms, renewal conversations, and escalation decisions. The "
+                    "second full-time seat owns account strategy, campaign delivery, CRM "
+                    "definitions, and acceptance evidence. Three bounded contractor scopes "
+                    "provide account research, campaign production, and CRM automation. Keep "
+                    "the complete register of 30 mapped plays, but assign every play a "
+                    "primary seat, backup reviewer, input specification, deliverable, "
+                    "acceptance test, and weekly capacity charge. The chapter does not "
+                    "rename or fabricate the underlying play catalog; its architecture "
+                    "applies ownership to all thirty existing entries. Use Salesforce "
+                    "campaign identifiers or HubSpot properties to connect each active "
+                    "play with its client, account cohort, and statement of work. Start "
+                    "with a deliberately narrow active portfolio while retaining ownership "
+                    "for inactive plays. Count preparation, review, rework, and client "
+                    "meetings against capacity. A researcher delivering five hundred "
+                    "unreviewed contacts has not created five hundred usable opportunities; "
+                    "the pod has merely accumulated inventory that its two employees must "
+                    "still validate before client delivery."
+                ),
+                (
+                    "Use measurable workload rather than revenue excitement to authorize "
+                    "the seven-person configuration. Track delivery hours committed for "
+                    "the next four weeks, reviewer queue age, accepted opportunity volume, "
+                    "and gross contribution by client. As an internal planning rule, keep "
+                    "scheduled employee delivery work below eighty percent of available "
+                    "hours so renewal calls, exceptions, and quality correction have real "
+                    "capacity. Add the third full-time seat as client success and quality "
+                    "lead when the existing lead repeatedly exceeds that threshold and "
+                    "contracted, collectible work funds the incremental loaded cost. Add "
+                    "the fourth contractor for signal operations and scheduling, not as "
+                    "another unowned source of outbound volume. Separate event detection "
+                    "from qualification: a Bombora topic surge, job posting, or product "
+                    "launch can justify research but cannot establish budget or purchasing "
+                    "authority. Preserve the original delivery lead as the accountable "
+                    "systems owner. Require a named backup for acceptance review and "
+                    "billing evidence before adding accounts. Run a two-week absence "
+                    "exercise in which the owner does not attend routine delivery calls; "
+                    "record every decision that still waits for them, then convert those "
+                    "dependencies into documented authority limits."
+                ),
+                (
+                    "Buy contractor outcomes through written statements of work that "
+                    "define the batch, evidence, revision allowance, access rights, and "
+                    "payment trigger. Illustrative buying terms might pay research at "
+                    "$45 per accepted account brief, production at $650 per approved "
+                    "campaign package, and CRM engineering at $85 per hour under a "
+                    "twenty-hour monthly ceiling. These are purchasing examples, not "
+                    "additional scorecard assumptions. A brief must include entity "
+                    "matching, dated source links, role rationale, and suppression checks; "
+                    "a package must include approved copy, routing tests, and version "
+                    "history. Review submissions within two business days, return a "
+                    "specific defect list, and require correction within two further "
+                    "business days when the defect falls inside scope. Pay undisputed "
+                    "accepted work on the contracted schedule. Do not make contractor "
+                    "payment depend on whether an enterprise prospect eventually signs "
+                    "a million-dollar agreement. Classification follows the actual "
+                    "relationship, including applicable federal and state tests, rather "
+                    "than the contractor label. Preserve genuine control over methods "
+                    "where appropriate, avoid employee-like scheduling requirements, and "
+                    "budget employee treatment when the facts require it. Written "
+                    "copyright assignments, confidentiality terms, and documented "
+                    "subcontracting permissions must cover every reusable deliverable."
+                ),
+            ],
+            "table": {
+                "caption": "Five Core Seats and Two Measured Expansion Seats",
+                "headers": [
+                    "Seat and staffing position",
+                    "Accountable work and play coverage",
+                    "Acceptance evidence and service expectation",
+                    "Economic control and backup arrangement",
+                ],
+                "rows": [
+                    [
+                        "Core employee one: owner and commercial pod leader",
+                        "Owns acquisition, pricing, renewals, and commercial escalation across mapped plays",
+                        "Signed scope identifies acceptance authority, fee triggers, and attribution window",
+                        "Delivery lead handles routine client decisions within documented monetary limits",
+                    ],
+                    [
+                        "Core employee two: delivery lead and systems owner",
+                        "Assigns all thirty plays and controls research-to-acceptance workflow ownership",
+                        "Weekly cohort review reconciles CRM events with client acceptance records",
+                        "Owner reviews pricing exceptions while delivery hours remain explicitly budgeted",
+                    ],
+                    [
+                        "Core contractor one: enterprise account research specialist",
+                        "Produces sourced account briefs and buying-committee hypotheses for assigned plays",
+                        "Two-business-day review checks entity identity, sources, relevance, and suppression",
+                        "Illustrative $45 accepted brief pricing includes one scoped correction cycle",
+                    ],
+                    [
+                        "Core contractor two: campaign production and messaging specialist",
+                        "Builds approved outreach assets and account-specific campaign production packages",
+                        "Versioned copy and routing evidence accompany each accepted campaign package",
+                        "Illustrative $650 package fee excludes separately authorized scope expansion",
+                    ],
+                    [
+                        "Core contractor three: CRM integration and automation engineer",
+                        "Maintains attribution fields, scheduling connections, deduplication, and delivery alerts",
+                        "Sandbox evidence demonstrates correct routing, suppression propagation, and rollback",
+                        "Illustrative $85 hourly pricing carries twenty-hour monthly purchase ceiling",
+                    ],
+                    [
+                        "Expansion employee three: client success and quality lead",
+                        "Owns acceptance reviews, renewal preparation, defect analysis, and reviewer coverage",
+                        "Queue age and client evidence remain visible during owner absences",
+                        "Hire only against collected contribution and documented recurring workload",
+                    ],
+                    [
+                        "Expansion contractor four: signal operations and scheduling specialist",
+                        "Validates account signals and coordinates qualified meetings without self-approval",
+                        "Source timestamps and attendee confirmations precede opportunity acceptance review",
+                        "Purchase bounded batches while research contractor provides documented backup coverage",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the reviewer bottleneck before buying more volume",
+                "body": (
+                    "Enterprise origination usually fails at qualification, evidence, or "
+                    "handoff before it fails at raw contact supply."
+                ),
+                "items": [
+                    "Attach the original dated trigger to every account brief; a refreshed intent dashboard must not overwrite the evidence supporting an earlier fee.",
+                    "Price research rework by defect category, separating missing evidence from client-requested changes after the brief was accepted.",
+                    "Maintain a second trained reviewer for the ten accounts closest to fee acceptance; a single absent employee should not stop billing.",
+                    "Track owner rescue hours by mapped play, then rewrite the three most rescue-intensive handoffs before adding contractor production capacity.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Run one weekly scorecard from source evidence to accepted fees",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run a forty-five-minute weekly operating review from a frozen CRM "
+                    "extract, not from contractor slide decks. Give every measure an "
+                    "owner, denominator, cohort date, source field, and corrective action. "
+                    "Account-brief acceptance equals accepted briefs divided by reviewed "
+                    "briefs; meeting attendance equals attended meetings divided by "
+                    "meetings scheduled to occur during the period. Qualified-opportunity "
+                    "acceptance equals client-accepted opportunities divided by submitted "
+                    "opportunities whose contractual review period has expired. Report "
+                    "pending submissions separately so delayed buyer responses do not "
+                    "artificially improve the ratio. Measure acceptance turnaround, "
+                    "first-pass defects, duplicate accounts, disputed fees, and aged "
+                    "receivables alongside production. Establish initial internal targets "
+                    "of at least ninety-five percent first-pass brief acceptance and "
+                    "ninety percent on-time evidence review, then recalibrate using actual "
+                    "cohort performance. These are operating targets rather than market "
+                    "benchmarks. Separate activity metrics from commercial outcomes: email "
+                    "opens are unreliable instrumentation, meeting bookings can conceal "
+                    "no-shows, and pipeline value belongs to the client. A million-dollar "
+                    "prospect contract remains a prospect contract even when the pod "
+                    "originated the introduction. The operator earns only the retainer "
+                    "and opportunity fees supported by its own agreement."
+                ),
+                (
+                    "Resolve attribution before launch by defining eligible accounts, "
+                    "excluded existing opportunities, attribution windows, duplicate "
+                    "treatment, required buyer roles, and the client's acceptance "
+                    "authority. In Salesforce, preserve campaign membership, original "
+                    "source, opportunity creation time, submission time, and acceptance "
+                    "time as distinct facts. A correction should create an auditable "
+                    "history rather than silently replace the original field. Store the "
+                    "supporting email or portal decision with controlled access and a "
+                    "record identifier. Calendly attendance data can corroborate a "
+                    "meeting, but scheduling alone cannot prove enterprise qualification. "
+                    "Require a human reviewer to verify fit, need, buyer involvement, "
+                    "and the agreed next step before submission. Inspect all billable "
+                    "opportunities and a risk-weighted sample of nonbillable research "
+                    "outputs. If acceptance drops, split failures into wrong account, "
+                    "weak buyer role, missing evidence, duplicate opportunity, or client "
+                    "definition change. Assign corrections to the responsible workflow "
+                    "rather than increasing outbound volume. Compensate contractors for "
+                    "accepted deliverables within their control; a modest quality bonus "
+                    "can reward sustained low defects without paying for inflated "
+                    "pipeline estimates. Preserve a separate dispute register with "
+                    "amount, reason, responsible reviewer, and resolution deadline."
+                ),
+                (
+                    "Treat outreach permissions and suppression as measurable delivery "
+                    "requirements, not a separate appendix that production ignores. "
+                    "For commercial email, 15 U.S.C. section 7704 governs matters "
+                    "including truthful transmission information, required identification, "
+                    "postal address, and opt-out handling. Process opt-outs internally "
+                    "within one business day, comfortably inside the federal ten-business-day "
+                    "deadline, and propagate them across sequencers and subcontractor "
+                    "lists. Calls and texts require channel-specific review under "
+                    "47 CFR section 64.1200, including applicable consent and "
+                    "do-not-call requirements; a business contact label does not "
+                    "automatically resolve a mobile-number restriction. Where the "
+                    "California Consumer Privacy Act applies, map collection notices, "
+                    "purposes, retention, and service-provider terms to the actual "
+                    "processing relationship. Keep a permitted-use record for every "
+                    "data source and prohibit contractors from exporting client lists "
+                    "into personal prospecting accounts. The weekly review should "
+                    "surface suppression failures, unauthorized exports, and incomplete "
+                    "permission evidence as immediate stop-work conditions for affected "
+                    "records. Pause the relevant channel or cohort while preserving "
+                    "unaffected delivery. Sector-specific referral rules also matter: "
+                    "do not transplant a technology prospecting fee schedule into "
+                    "healthcare, securities, or federal contracting without evaluating "
+                    "the applicable compensation restrictions."
+                ),
+            ],
+            "table": {
+                "caption": "Weekly Enterprise Origination Scorecard and Corrective Actions",
+                "headers": [
+                    "Metric and accountable operating owner",
+                    "Calculation and retained source evidence",
+                    "Initial operating threshold or review trigger",
+                    "Required correction when performance deteriorates",
+                ],
+                "rows": [
+                    [
+                        "Research acceptance rate owned by delivery lead",
+                        "Accepted briefs divided by reviewed briefs within submission cohort",
+                        "Target at least ninety-five percent first-pass acceptance after calibration",
+                        "Classify defects and return specific failed fields for correction",
+                    ],
+                    [
+                        "Meeting attendance rate owned by scheduling specialist",
+                        "Attended meetings divided by meetings scheduled for that reporting period",
+                        "Investigate material deterioration against the preceding eight comparable weeks",
+                        "Audit confirmations, attendee roles, calendar friction, and source quality",
+                    ],
+                    [
+                        "Opportunity acceptance rate owned by client success reviewer",
+                        "Accepted opportunities divided by submissions past contractual review deadline",
+                        "Report overdue pending submissions separately from accepted and rejected outcomes",
+                        "Escalate unresolved definitions and suspend disputed opportunity fee billing",
+                    ],
+                    [
+                        "Evidence review timeliness owned by designated backup reviewer",
+                        "Packages reviewed within two business days divided by packages due",
+                        "Target ninety percent timeliness while every billed package receives review",
+                        "Reassign reviewer capacity before purchasing additional research production batches",
+                    ],
+                    [
+                        "Disputed fee exposure owned by commercial pod leader",
+                        "Open disputed invoice amounts divided by total outstanding operator receivables",
+                        "Review every dispute weekly with reason and accountable resolution date",
+                        "Correct source evidence or issue documented credits under contract",
+                    ],
+                    [
+                        "Suppression execution quality owned by CRM systems engineer",
+                        "Timestamped requests reconciled against all connected outbound sending systems",
+                        "Internal one-business-day processing target with immediate affected-record suspension",
+                        "Repair propagation, confirm removal, and investigate affected message history",
+                    ],
+                    [
+                        "Delivery contribution and capacity owned by delivery lead",
+                        "Earned operator fees less attributable delivery costs and allocated labor",
+                        "Investigate negative client contribution and sustained eighty-percent scheduling pressure",
+                        "Reprice scope, reduce rework, or defer unprofitable campaign expansion",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the weekly evidence set",
+                    "action": "Export the CRM cohort and accounting references at the same weekly cutoff.",
+                    "detail": "Record extract time, reporting period, source identifiers, and unresolved acceptance decisions before discussing performance.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile deliverables to earned fees",
+                    "action": "Match accepted outputs to contract terms, invoices, and the dispute register.",
+                    "detail": "Separate pending qualification, client pipeline value, deferred retainers, and earned operator fees into different fields.",
+                },
+                {
+                    "step": 3,
+                    "title": "Assign corrective work within existing capacity",
+                    "action": "Give each exception one accountable seat and a dated correction.",
+                    "detail": "Reduce new production when review queues exceed capacity; never resolve missing evidence by changing acceptance definitions retrospectively.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close the loop with client and contractor records",
+                    "action": "Publish the frozen scorecard and track corrections through the following review.",
+                    "detail": "Send each counterparty only their authorized records, confirm disputed items, and preserve prior scorecard versions for diligence.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Reconcile canonical profits to accrual cohorts and concentration limits",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Keep the three canonical cases intact: Conservative revenue is "
+                    "$150,000 with $30,000 owner net profit at twenty percent; Base "
+                    "revenue is $675,000 with $202,500 profit at thirty percent; Scaled "
+                    "revenue is $1,200,000 with $480,000 profit at forty percent. "
+                    "Their implied total annual costs are $120,000, $472,500, and "
+                    "$720,000 respectively. Monthly revenue averages are $12,500, "
+                    "$56,250, and $100,000; monthly profit averages are $2,500, "
+                    "$16,875, and $40,000. Retainers plus earned qualified-opportunity "
+                    "fees must reconcile to those revenue totals without adding "
+                    "client contract values. The stated $4,000–$20,000 monthly opex "
+                    "range cannot be treated as the complete expense ceiling for "
+                    "every scenario: Base and Scaled imply average total monthly "
+                    "costs of $39,375 and $60,000. Build a cost bridge separating "
+                    "payroll, contractor purchases, data, software, selling expense, "
+                    "and overhead. The Conservative five-person configuration presents "
+                    "a genuine labor-budget constraint. Its $120,000 total cost envelope "
+                    "does not demonstrate that two market-rate full-time employees "
+                    "and three contractors are funded. Preserve the scorecard while "
+                    "requiring an explicit compensation and utilization plan; do not "
+                    "hide unpaid owner labor or outside subsidies inside apparent "
+                    "operating efficiency."
+                ),
+                (
+                    "Close the books monthly using an accrual policy aligned with "
+                    "the actual promises in each contract. A retainer collected before "
+                    "delivery is initially deferred to the extent services remain "
+                    "unperformed; recognize it as the contracted service obligation "
+                    "is satisfied rather than assuming every retainer is automatically "
+                    "earned on receipt. Record opportunity fees when the agreed "
+                    "earning conditions and applicable revenue-recognition requirements "
+                    "are met. Assess variable consideration and reversals where "
+                    "acceptance or clawback terms create uncertainty. Accrue contractor "
+                    "costs for accepted work even when the invoice arrives later. "
+                    "Use QuickBooks Online or Xero tracking dimensions for client, "
+                    "service month, and acquisition cohort, with the CRM opportunity "
+                    "identifier retained as supporting detail. Reconcile beginning "
+                    "receivables plus invoices less cash and credits to ending "
+                    "receivables, separately reconciling earned unbilled revenue and "
+                    "deferred balances. Report client contribution after attributable "
+                    "delivery costs, then show shared labor and overhead below that "
+                    "line. Never label contribution as owner net profit. Review "
+                    "cohort retention using starting recurring fees, expansion, "
+                    "contraction, and churn, excluding new clients from existing-client "
+                    "retention calculations. Long enterprise sales cycles make signed "
+                    "backlog, recognized revenue, invoiced amounts, and collected "
+                    "cash four different operational facts."
+                ),
+                (
+                    "Set a maximum twenty-five percent exposure to any customer "
+                    "group and any ultimate paying counterparty, measured separately "
+                    "on trailing-twelve-month earned fees, current receivables, and "
+                    "forward contracted fees. Aggregate affiliates under common "
+                    "control and identify the principal behind agencies or channel "
+                    "partners. Four equal clients technically meet the ceiling but "
+                    "leave no tolerance for one cancellation or uneven fee timing; "
+                    "six to eight balanced relationships provide more practical "
+                    "headroom. A new business with one or two clients will breach "
+                    "the policy, so label that condition explicitly, maintain a "
+                    "dated diversification plan, and do not describe the book as "
+                    "diversified or exit-ready. Freeze discretionary expansion of "
+                    "an over-limit relationship while pursuing other accounts; "
+                    "perform existing obligations rather than manufacturing "
+                    "diversification by relabeling invoices. Apply the same twenty-five "
+                    "percent ceiling to intermediary-controlled fee receipts so "
+                    "multiple end clients cannot disguise dependence on one reseller. "
+                    "Track origination-channel dependence separately and build "
+                    "replacement paths for critical vendors. Stress-test the loss "
+                    "of the largest customer using avoidable costs, notice periods, "
+                    "receivable timing, and retained payroll. Maintain a liquidity "
+                    "plan that covers the actual stressed cash deficit; a profitable "
+                    "accrual statement alone cannot fund a delayed enterprise payment."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Economics and Transferable Accounting Evidence",
+                "headers": [
+                    "Scenario or financial operating control",
+                    "Recognized revenue and economic reconciliation",
+                    "Staffing or exposure interpretation required",
+                    "Evidence retained for operator and buyer",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual scorecard with constrained labor funding",
+                        "$150,000 revenue less $120,000 total costs equals $30,000 profit",
+                        "Two full-time seats plus three contractors require explicit compensation feasibility",
+                        "Preserve twenty-percent margin and document every labor funding assumption",
+                    ],
+                    [
+                        "Base annual scorecard with five-person delivery pod",
+                        "$675,000 revenue less $472,500 total costs equals $202,500 profit",
+                        "Two full-time seats plus three contractors deliver thirty-percent net margin",
+                        "Monthly averages reconcile $56,250 revenue with $16,875 owner profit",
+                    ],
+                    [
+                        "Scaled annual scorecard with seven-person delivery pod",
+                        "$1,200,000 revenue less $720,000 total costs equals $480,000 profit",
+                        "Three full-time seats plus four contractors deliver forty-percent net margin",
+                        "Monthly averages reconcile $100,000 revenue with $40,000 owner profit",
+                    ],
+                    [
+                        "Accrual service cohorts and contractor cost matching",
+                        "Separate earned fees, deferred collections, unbilled revenue, and outstanding receivables",
+                        "Accrue accepted contractor work before late supplier invoices arrive",
+                        "Retain contracts, acceptance records, ledger references, and monthly reconciliations",
+                    ],
+                    [
+                        "Customer groups and ultimate payer concentration ceilings",
+                        "Each exposure remains at or below twenty-five percent independently",
+                        "Measure earned fees, receivables, and forward fees using aggregated affiliates",
+                        "Keep dated breach plans and intermediary-to-principal ownership mapping records",
+                    ],
+                    [
+                        "Largest-customer loss and delayed collection stress exercise",
+                        "Model cash receipts after cancellation against unavoidable retained operating costs",
+                        "Distinguish avoidable contractor purchases from committed payroll and notice obligations",
+                        "Maintain rolling cash forecasts with documented funding and diversification actions",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Sell transferable earnings or retain a resilient cash business",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Build valuation from verified maintainable earnings, not from "
+                    "client pipeline or a headline revenue multiple. Small owner-operated "
+                    "service firms may be discussed on seller's discretionary earnings, "
+                    "while businesses with independent management may be evaluated "
+                    "on adjusted EBITDA. Use two to three times verified SDE "
+                    "and three to five times transferable EBITDA as illustrative "
+                    "negotiating ranges, not observed transaction comparables for "
+                    "this candidate. Actual pricing depends on size, recurrence, "
+                    "growth quality, concentration, and deal structure. Canonical "
+                    "owner net profit is neither automatically SDE nor automatically "
+                    "EBITDA. Prepare a bridge covering owner compensation already "
+                    "expensed, replacement management, interest, taxes, depreciation, "
+                    "amortization, and supportable nonrecurring items. If diligence "
+                    "establishes Base SDE of exactly $202,500, the illustrative "
+                    "two-to-three-times range produces $405,000–$607,500 of enterprise "
+                    "value. That conditional example does not prove the bridge. "
+                    "For Scaled, if the $480,000 owner profit needs $150,000 "
+                    "of incremental replacement management and all other EBITDA "
+                    "adjustments net to zero, transferable EBITDA is $330,000; "
+                    "three to five times yields $990,000–$1,650,000. Subtract "
+                    "debt, account for agreed cash and working-capital adjustments, "
+                    "and distinguish cash at closing from contingent consideration "
+                    "before estimating seller proceeds."
+                ),
+                (
+                    "Make the data room an operating byproduct rather than a "
+                    "last-minute reconstruction. Maintain signed client contracts, "
+                    "amendments, renewal dates, termination rights, assignment "
+                    "provisions, acceptance logs, monthly cohort statements, and "
+                    "the complete thirty-play ownership register. Retain signed "
+                    "contractor copyright assignments satisfying 17 U.S.C. section "
+                    "204(a) where a transfer is intended; payment alone does "
+                    "not transfer copyright, and commissioned work does not "
+                    "automatically qualify as work made for hire. Identify "
+                    "preexisting templates, licensed datasets, software subscriptions, "
+                    "and third-party assets separately so the seller cannot "
+                    "promise rights they do not own. Check whether data and "
+                    "vendor licenses survive a transaction and whether client "
+                    "assignment requires consent. Use company-controlled password "
+                    "management, named accounts, least-privilege access, and a "
+                    "documented offboarding checklist. Share diligence records "
+                    "through staged, access-controlled folders, redacting personal "
+                    "information until disclosure is necessary and permitted. "
+                    "Demonstrate transferability with backup-led client meetings, "
+                    "repeatable acceptance decisions, and a tested recovery "
+                    "procedure for CRM automations. A buyer should be able "
+                    "to trace a sampled fee from agreement to source evidence, "
+                    "acceptance, ledger, and cash without interviewing the founder "
+                    "to reconstruct what happened."
+                ),
+                (
+                    "Negotiate quality of proceeds as carefully as the headline "
+                    "multiple. A large earnout tied to the buyer's future "
+                    "sales execution can transfer enterprise sales-cycle risk "
+                    "back to the seller. Define any contingent payment using "
+                    "auditable retained fees or specified accepted opportunities, "
+                    "with clear accounting policies, information rights, "
+                    "allocation rules, and dispute procedures. Prevent related-party "
+                    "charges or reassigned accounts from silently changing "
+                    "the measurement base. Model seller transition hours and "
+                    "any post-close employment separately from purchase price. "
+                    "For an owner who retains the business, the same "
+                    "discipline supports cash distributions: fund tax obligations, "
+                    "working capital, replacement labor, and downside liquidity "
+                    "before distributing the remaining cash. Compare a "
+                    "risk-adjusted hold case against net closing proceeds "
+                    "plus realistically collectible deferred consideration, "
+                    "rather than comparing annual profit with an unadjusted "
+                    "headline offer. Review the comparison quarterly without "
+                    "forcing a sale timetable. The thirty mapped plays "
+                    "become valuable intellectual property only when another "
+                    "authorized operator can execute them using documented "
+                    "inputs, budgets, acceptance standards, and exception "
+                    "rules. Premium outcomes come from reduced dependence "
+                    "and clean evidence; adding more contractors, campaigns, "
+                    "or theoretical pipeline does not substitute for "
+                    "transferable customer relationships and durable earned fees."
+                ),
+            ],
+            "table": {
+                "caption": "Buyer Diligence, Conditional Valuation, and Cash-Retention Decisions",
+                "headers": [
+                    "Buyer question or ownership decision",
+                    "Concrete evidence or conditional valuation calculation",
+                    "Common failure that reduces transaction quality",
+                    "Operator action before requesting buyer pricing",
+                ],
+                "rows": [
+                    [
+                        "Can another operator replace the founder economically",
+                        "Document replacement duties, market compensation, and successful owner-absence delivery",
+                        "Owner profit excludes necessary management labor that buyers must purchase",
+                        "Build an earnings bridge without counting owner compensation twice",
+                    ],
+                    [
+                        "Does Base support an owner-operated earnings valuation",
+                        "Conditional $202,500 verified SDE supports illustrative $405,000–$607,500 enterprise value",
+                        "Canonical owner profit is asserted as SDE without supporting reconciliation",
+                        "Verify discretionary adjustments and disclose remaining owner operating responsibilities",
+                    ],
+                    [
+                        "Does Scaled support independently managed transferable earnings",
+                        "Conditional $330,000 transferable EBITDA supports illustrative $990,000–$1,650,000 enterprise value",
+                        "Incremental replacement management is omitted from maintainable earnings calculations",
+                        "Validate the $150,000 replacement assumption and every other EBITDA adjustment",
+                    ],
+                    [
+                        "Will customer relationships and delivery rights transfer",
+                        "Signed assignments, contract provisions, and vendor license terms support continuity",
+                        "Contractor authors retain copyrights or client agreements restrict transaction assignment",
+                        "Resolve missing rights and identify required counterparty consents before marketing",
+                    ],
+                    [
+                        "How much purchase consideration becomes spendable closing cash",
+                        "Bridge enterprise value through debt, cash, working capital, and deferred consideration",
+                        "Headline price conceals substantial earnout exposure and unpaid transition work",
+                        "Negotiate measurable earnout terms and separately price continuing employment services",
+                    ],
+                    [
+                        "Is continued ownership superior to the available transaction",
+                        "Compare sustainable distributions against risk-adjusted net sale proceeds and obligations",
+                        "Annual accrual profit is mistaken for immediately distributable unrestricted cash",
+                        "Reserve operating liquidity and fund replacement capacity before declaring distributions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four conditions before scaling or presenting an exit-ready book",
+                "body": (
+                    "Treat missing evidence as unfinished operating work. Expansion and "
+                    "buyer outreach should reflect the condition of the actual business."
+                ),
+                "items": [
+                    "Verify all thirty mapped plays have accountable owners, documented acceptance tests, and backup coverage inside the five- or seven-person configuration.",
+                    "Reconcile the last twelve monthly closes to earned fees, contractor accruals, bank receipts, and the canonical scenario bridge without including client contract values.",
+                    "Verify customer-group and ultimate-payer exposure is at or below twenty-five percent across earned fees, receivables, and forward contracted fees.",
+                    "Confirm signed IP assignments, transferable contract rights, permitted data use, and a buyer-testable owner replacement cost before applying an earnings multiple.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A transferable lead-generation business sells verified fees and repeatable decisions, not the founder's ability to rescue every handoff.",
+    "diagram_id": "diag-06",
+    "action_checklist": [
+        "Assign every one of the thirty mapped plays to a primary seat and backup, keeping the owner inside the stated full-time headcount.",
+        "Issue contractor statements of work with accepted-output pricing, two-business-day review expectations, scoped corrections, and signed copyright assignments.",
+        "Publish a frozen weekly CRM scorecard separating research acceptance, attended meetings, client-accepted opportunities, disputed fees, and earned operator revenue.",
+        "Close monthly accrual cohorts and reconcile $30,000, $202,500, and $480,000 canonical owner profits to their complete expense and compensation bridges.",
+        "Aggregate affiliated customers and ultimate payers, enforce the twenty-five percent concentration ceiling, and document remediation for startup or subsequent breaches.",
+        "Run an owner-absence exercise and assemble the earnings, contract, IP, and working-capital evidence needed to compare a buyer offer with continued ownership.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
+            "url": "https://www.law.cornell.edu/uscode/text/17/204",
+            "relevance": (
+                "A copyright ownership transfer generally requires a writing signed "
+                "by the owner or authorized agent; obtain assignments covering "
+                "contractor-created campaign assets, documentation, and automation code."
+            ),
+        },
+        {
+            "title": "17 U.S.C. section 101 — Definitions, including work made for hire",
+            "url": "https://www.law.cornell.edu/uscode/text/17/101",
+            "relevance": (
+                "Commissioned contractor work qualifies as work made for hire only "
+                "under the statutory conditions; do not substitute a payment record "
+                "for an effective ownership arrangement."
+            ),
+        },
+        {
+            "title": "15 U.S.C. section 7704 — Requirements for commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Build commercial-email identification, accurate transmission details, "
+                "postal-address requirements, and opt-out execution into production "
+                "acceptance checks and suppression monitoring."
+            ),
+        },
+        {
+            "title": "47 CFR section 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": (
+                "Evaluate calling and texting workflows against applicable consent, "
+                "do-not-call, and other channel-specific restrictions before deploying "
+                "automated outreach or contractor-operated campaigns."
+            ),
+        },
+        {
+            "title": "California Civil Code section 1798.100 — Consumer information collection duties",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
+            "relevance": (
+                "Where applicable, align collection notices, disclosed purposes, "
+                "retention practices, and recipient contracts with actual handling "
+                "of account and contact information."
+            ),
+        },
+        {
+            "title": "26 U.S.C. section 3121(d) — Employee definition for employment taxes",
+            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
+            "relevance": (
+                "Federal employment-tax classification includes common-law employee "
+                "relationships; contractor labels and output-based payment terms "
+                "do not independently determine worker status."
+            ),
+        },
+        {
+            "title": "29 U.S.C. section 203 — Fair Labor Standards Act definitions",
+            "url": "https://www.law.cornell.edu/uscode/text/29/203",
+            "relevance": (
+                "Assess applicable wage-and-hour employment obligations separately "
+                "from tax classification and account for required employee costs "
+                "when testing the pod's labor budget."
+            ),
+        },
+        {
+            "title": "FAR 52.203-5 — Covenant Against Contingent Fees",
+            "url": "https://www.acquisition.gov/far/52.203-5",
+            "relevance": (
+                "When the clause applies, evaluate federal-contract origination "
+                "compensation against its contingent-fee covenant and defined "
+                "exceptions before adopting opportunity-based payment terms."
+            ),
+        },
+    ],
+}

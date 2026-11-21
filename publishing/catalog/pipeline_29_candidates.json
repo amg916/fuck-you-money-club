@@ -12,7 +12,8 @@
     "vol-005-high-ticket-affiliate-marketing",
     "vol-006-productized-ai-agencies",
     "vol-007-unclaimed-property-recovery",
-    "vol-008-commercial-lead-generation"
+    "vol-008-commercial-lead-generation",
+    "vol-009-million-dollar-lead-generation"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -11618,7 +11619,7 @@
       "slug": "million-dollar-lead-generation",
       "title": "Million-Dollar Lead Generation",
       "category": "Enterprise demand generation",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 24,
         "profit_margin_potential": 21,
@@ -11635,11 +11636,11 @@
       },
       "total_score": 82,
       "tier_label": "High-Leverage Operator Play",
-      "evidence_confidence": "Preliminary — Uncertainty Range",
-      "uncertainty_band": "±10 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 72,
-        "high": 92
+        "low": 79,
+        "high": 85
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23575,5 +23576,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T21:09:13Z"
+  "generated_at": "2026-11-21T21:11:48Z"
 }

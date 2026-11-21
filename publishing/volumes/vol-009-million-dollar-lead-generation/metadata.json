@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-009-million-dollar-lead-generation",
+  "volume_slug": "vol-009-million-dollar-lead-generation",
+  "volume_number": 9,
+  "site_ui": {
+    "cover": [
+      "MILLION-DOLLAR",
+      "LEAD",
+      "GENERATION"
+    ],
+    "deck": [
+      "TRACK EXECUTIVE TRIGGERS. OPEN DOORS.",
+      "PROTECT ATTRIBUTION."
+    ],
+    "lead": "Enterprise Demand Origination, SEC/UCC Trigger Intelligence & Retainer + Qualified-Opportunity Structures for High-ACV Sellers",
+    "summary": "Originate qualified enterprise opportunities for million-dollar B2B, industrial, and M&A sellers with airtight CRM stage attribution.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "MILLION-DOLLAR LEAD GENERATION",
+  "subtitle": "The Complete Playbook for $150,000–$1,200,000 USD Annually in Enterprise Lead Generation: A 2 FT + 3 C (5-Person) Core Pod, Scaling to Seven",
+  "chapter_count": 12,
+  "total_word_count": 76014,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 82,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-21T21:12:42Z"
+}

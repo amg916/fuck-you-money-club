@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-009-million-dollar-lead-generation",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1811349,
+      "sha256": "6aad4f1445e19546162b414fc3a1973bd5e06eb19a3b4c0bd6c15f4ad123514f"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2332112,
+      "sha256": "68ca670f9621a291526eb840487d13ae887f5c2157233eab10f6356cd4cde10a"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 535641,
+      "sha256": "89ba2558fb0df818aab4a9fed48f74f0bde7d0c772c5c428771c8368c8062637"
+    },
+    "book.epub": {
+      "bytes": 303696,
+      "sha256": "54a58ec1c2f49357b736cc257b89298dce91b0631bafd09137d04dd003192f1d"
+    },
+    "art/cover.svg": {
+      "bytes": 4106,
+      "sha256": "4e8ad6be278342625f05dc334deed7bbdeac9d3eb03ca85675b4310c12075664"
+    },
+    "art/scorecard.svg": {
+      "bytes": 104700,
+      "sha256": "7d8a14c301a486f125d368dbc8e199a760df06d534e192fb46ccb2038f519fb7"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11929,
+      "sha256": "71e26cbc4e328b4eb8f9e02a692a2a06fc488f7fb9aafc9c87d83592b86f8f1c"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8425,
+      "sha256": "d63538a5da57f0eee00b64104bc4532001ed985d763bacc4c28372368c2e1cb2"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12599,
+      "sha256": "fbbb87f6986eb4349d7712e31fddbf41ab50819d731737154caace2a4e0a51b5"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9863,
+      "sha256": "68749d0af72a052c87b36170f859c47d72a0357770da14862cd2d5324d9acdf0"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10611,
+      "sha256": "a895bc485609a8214013af1855fd139060ad86581041195d694d3ce56e3ef7b2"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13774,
+      "sha256": "a4a6bc82389e45a8ed314219429c3916fca540c4ffa15e503f9af6f36379aa37"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8962,
+      "sha256": "541ebc1c614f84da5c6b62a5300e5dcc45f35d3a214054c7f58bcb6de8158f7e"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8870,
+      "sha256": "3d34f9e2acc59110c7855987127cdfd89fd20fafcecf5da96a4c78c4f6fa1414"
+    }
+  }
+}

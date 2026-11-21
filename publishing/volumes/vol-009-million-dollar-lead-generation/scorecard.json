@@ -1,0 +1,1324 @@
+{
+  "candidate_number": 21,
+  "slug": "million-dollar-lead-generation",
+  "title": "Million-Dollar Lead Generation",
+  "category": "Enterprise demand generation",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 24,
+    "profit_margin_potential": 21,
+    "team_efficiency": 16,
+    "startup_accessibility": 9,
+    "automation_potential": 12
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 82,
+  "tier_label": "High-Leverage Operator Play",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 79,
+    "high": 85
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 24/25. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+    "team_efficiency": "Team Efficiency: 16/20. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+    "startup_accessibility": "Startup Accessibility: 9/15. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
+    "automation_potential": "Automation Potential: 12/15. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings."
+  },
+  "economics": {
+    "gross_revenue_range": "$150,000–$1,200,000 USD annually",
+    "net_profit_margin_range": "20–40%",
+    "owner_net_profit_potential": "$30,000–$480,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$15,000–$100,000 USD",
+    "monthly_opex_range": "$4,000–$20,000 USD",
+    "time_to_first_deal": "3–12 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Retainers and qualified-opportunity fees; excludes client contract values",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 150000,
+      "net_profit_margin_pct": 20,
+      "annual_owner_net_profit_usd": 30000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 675000.0,
+      "net_profit_margin_pct": 30.0,
+      "annual_owner_net_profit_usd": 202500,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1200000,
+      "net_profit_margin_pct": 40,
+      "annual_owner_net_profit_usd": 480000,
+      "full_time_including_owner": 3,
+      "contractors": 4,
+      "total_people": 7,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Account qualification",
+    "CRM attribution",
+    "Meeting scheduling"
+  ],
+  "key_risks": [
+    "Long sales cycles",
+    "Attribution disputes",
+    "Customer concentration"
+  ],
+  "regulatory_notes": [
+    "Check privacy, outreach consent and sector-specific referral or contingent-fee restrictions."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "public_filing_trigger_mail_arbitrage",
+      "track_id": "track_1",
+      "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+      "inputs": [
+        "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+        "County Recorder grant/warranty deed & mortgage recording dockets",
+        "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+      ],
+      "workflow": [
+        "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+        "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+        "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+      ],
+      "metrics": [
+        "Filing-to-mailbox latency (hours)",
+        "QR scan & intake conversion % per 1,000 mailers",
+        "Annualized LTV / net revenue per mailed piece"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+        }
+      ]
+    },
+    {
+      "id": "arizona_abs_mass_tort_cocounsel",
+      "track_id": "track_1",
+      "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+      "inputs": [
+        "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+        "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+        "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+      ],
+      "workflow": [
+        "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+        "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+        "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+      ],
+      "metrics": [
+        "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+        "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+        "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+        }
+      ]
+    },
+    {
+      "id": "telegram_channel_signal_scraping",
+      "track_id": "track_1",
+      "name": "Telegram Channel & Deal-Room Signal Scraping",
+      "mechanism": "Ingest public Telegram channel broadcasts, OTC deal rooms, wholesale distress feeds, and niche community message streams in real time to extract high-intent buyer/seller triggers before they hit public search—while avoiding naive member-list scraping traps.",
+      "inputs": [
+        "Public Telegram channel & group broadcast streams",
+        "Keyword & entity-regex signal filters",
+        "Inbound utility-bot & deal-desk capture endpoints"
+      ],
+      "workflow": [
+        "Monitor public channel message history and live broadcast streams for high-intent deal keywords (buying, distressed lot, urgent allocation, broker needed)",
+        "Score and deduplicate message authors and deal metadata against minimum ticket thresholds without scraping hidden member rosters",
+        "Route verified deal signals to an operator desk or deploy a pinned niche utility bot (alert/calculator/directory) that converts channel readers into inbound leads"
+      ],
+      "metrics": [
+        "Signal-to-response latency (seconds)",
+        "Qualified deal triggers per 1,000 messages",
+        "Inbound bot opt-in & close rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+          "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+          "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+          "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+          "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots"
+        }
+      ]
+    },
+    {
+      "id": "rank_and_rent_pay_per_call_routing",
+      "track_id": "track_2",
+      "name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "mechanism": "Build and rank local high-ticket service hubs (foundation repair, water restoration, probate liquidation, commercial roofing) wired to dynamic call-tracking switches (Ringba / Twilio) that auto-bill local operators $75–$300 per inbound call lasting over 90 seconds.",
+      "inputs": [
+        "City + high-ticket emergency/specialty service domain portfolio",
+        "Ringba / Twilio dynamic number insertion (DNI) & IVR duration billing switch",
+        "Co-verified local contractor partner agreements with card-on-file auto-recharge"
+      ],
+      "workflow": [
+        "Launch fast programmatic local service pages and cost calculators for high-ticket, high-urgency verticals ($5,000+ average job ticket)",
+        "Partner with a licensed brick-and-mortar operator in each city for legitimate Google Business Profile co-verification while retaining ownership of the domain and tracking numbers",
+        "Route inbound prospect calls through Ringba with a 90-second duration threshold, automatically charging the partner's card on file per qualified call"
+      ],
+      "metrics": [
+        "Inbound calls per site per month & % of calls >90 seconds",
+        "Revenue per qualified call ($75–$300) and contractor retention rate",
+        "Portfolio gross margin (80–90% once ranked)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile suspension or contractor payment default",
+          "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+          "impact": "Loss of Map Pack call volume or uncollected call receivables",
+          "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+          "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets"
+        }
+      ]
+    },
+    {
+      "id": "social_to_search_ping_post_arbitrage",
+      "track_id": "track_2",
+      "name": "Social-to-Search Ad Feed & Ping-Post Lead Arbitrage",
+      "mechanism": "Buy $0.05–$0.12 curiosity clicks on Meta, TikTok, NewsBreak, and native ad networks and route them through a 4-question qualification bridge—replacing fragile $1.50 RSOC/AFD search-feed clicks with direct $45–$180 Ping-Post lead auctions.",
+      "inputs": [
+        "Low-CPC social/native ad hooks ($0.05–$0.12 CPC)",
+        "Fast 4-question conditional qualification quiz + TCPA consent capture",
+        "Real-time Ping-Post lead distribution engine (Boberdoo / Leadspedia / Phonexa) + RSOC downsell feed"
+      ],
+      "workflow": [
+        "Acquire low-cost social and native clicks using compliant consumer-benefit hooks (tax appeals, solar rebates, insurance audits, surplus claims)",
+        "Pre-qualify zip code, homeowner/business status, and urgency inside a zero-friction 4-step quiz bridge",
+        "Auction verified exclusive leads in real time via Ping-Post for $45–$180/lead and monetize non-qualifying traffic via compliant secondary search/affiliate offers"
+      ],
+      "metrics": [
+        "Effective media cost per qualified lead (CPL) vs. Ping-Post auction payout",
+        "Ping-to-Post acceptance rate (%) and sub-500ms auction response time",
+        "Net arbitrage margin after ad spend and buyer returns"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Ad-account ban, RSOC/AFD feed termination, or TCPA consent challenge",
+          "trigger": "Using fake 'government stimulus' ad bait, forcing accidental ad clicks, or selling leads without one-to-one TCPA consent logs",
+          "impact": "Ad account suspension, feed clawbacks, or buyer lead rejections",
+          "detection_metric": "Ad disapproval rate, buyer return rate >5%, and TrustedForm/Jornaya certificate match rate (100% required)",
+          "fallback": "Enforce 100% factual ad hooks, log cryptographic TrustedForm/Jornaya session certificates on every form submit, and diversify across 5+ direct lead buyers"
+        }
+      ]
+    },
+    {
+      "id": "high_velocity_dm_outbound_systems",
+      "track_id": "track_2",
+      "name": "High-Velocity DM Outbound & Trigger Funnels",
+      "mechanism": "Replace blind cold mass-DM blasts (which die to PeerFloodError and silent Message Request graveyards) with high-velocity comment-to-DM triggers, hand-raiser reaction hooks, and multi-inbox warm signal routing.",
+      "inputs": [
+        "Short-form / community trigger posts ('Comment KEYWORD')",
+        "Signal-verified prospect handles",
+        "Automated DM qualification & booking bridge"
+      ],
+      "workflow": [
+        "Publish high-curiosity teardown or resource posts where prospects comment a trigger keyword or react to unlock a playbook or calculator",
+        "Deliver instant automated DM replies to warm hand-raisers (bypassing cold-DM filters because the user initiated interaction) or send contextual 1-to-1 DMs referencing an active public request",
+        "Qualify budget and timeline inside a 3-message DM micro-funnel and transition immediately to a booked call, checkout link, or owned SMS/email list"
+      ],
+      "metrics": [
+        "Trigger-comment to DM delivery rate",
+        "DM reply-to-qualified-conversation %",
+        "Revenue per 100 DM threads"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+          "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+          "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+          "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+          "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies"
+        }
+      ]
+    },
+    {
+      "id": "identity_graph_pixel_arbitrage",
+      "track_id": "track_2",
+      "name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "mechanism": "Deploy first-party CNAME identity-resolution pixels and pre-click search/bidstream intent feeds (syncing visitor IP/device hashes against publisher co-op SHA-256 rainbow tables and property/B2B graphs) to resolve 35–55% of anonymous bouncing search visitors into verified names, emails, LinkedIn profiles, and physical home addresses.",
+      "inputs": [
+        "First-party CNAME identity-resolution pixel & Google Ads ValueTrack ({keyword}) URL tags",
+        "Publisher co-op SHA-256 HEM spine + County Assessor / B2B LinkedIn enrichment graph",
+        "Automated physical postcard API (Lob / PostGrid), B2B Slack routing, & Custom Audience sync"
+      ],
+      "workflow": [
+        "Geo-fence pixel execution at the CDN edge (US-only, excluding EU/UK GDPR traffic) and capture exact referring search keywords via ValueTrack parameters",
+        "Resolve anonymous bouncing visitors against the identity spine within 200ms to append homeowner address, work email, and LinkedIn URL",
+        "Route resolved B2B executives to instant Slack/LinkedIn warm outreach, trigger physical next-day postcards to resolved homeowner addresses, and sync SHA-256 hashes into Meta/Google Custom Audiences"
+      ],
+      "metrics": [
+        "Anonymous visitor-to-identity match rate (35–55% target)",
+        "Cost per resolved identity ($0.10–$0.25) vs. net recovered revenue per 1,000 bounces",
+        "Postcard & B2B LinkedIn intercept conversion rate (%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+          "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+          "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+          "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+          "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating"
+        }
+      ]
+    },
+    {
+      "id": "municipal_code_violation_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "Municipal Code-Violation, Mechanic's Lien & Permit-Failure Lead Arbitrage",
+      "mechanism": "Poll municipal building department portals and county recorder dockets daily for failed structural/fire inspections, expired permits, code citations, and newly filed mechanic's liens, routing exclusive real-time leads to remediation contractors and construction attorneys.",
+      "inputs": [
+        "Municipal Accela/EnerGov building & code-enforcement portals",
+        "County recorder mechanic's lien & lis pendens dockets",
+        "Real-time Pay-Per-Call & exclusive CPL routing switch"
+      ],
+      "workflow": [
+        "Scrape and normalize daily municipal code citations, failed permit inspections, and recorded mechanic's liens across target metro counties",
+        "Enrich parcel owner contact records and classify urgency by abatement deadline or fine accrual rate",
+        "Route verified property owners via direct mail/outbound alerts into exclusive Pay-Per-Call or CPL agreements with licensed remediation contractors"
+      ],
+      "metrics": [
+        "Citation-to-outreach latency (hours)",
+        "Qualified homeowner/commercial call conversion %",
+        "Revenue per exclusive routed remediation lead"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Municipal portal IP blocking or deceptive official-notice complaints",
+          "trigger": "Aggressive unthrottled scraping of Accela/EnerGov portals or styling outreach like an official city abatement order",
+          "impact": "Portal IP block or city attorney cease-and-desist notice",
+          "detection_metric": "Portal HTTP 403/429 rate and zero municipal impersonation complaints",
+          "fallback": "Use low-frequency scheduled API/bulk exports and clearly identify all outreach as private commercial contractor/remediation assistance"
+        }
+      ]
+    },
+    {
+      "id": "ucc1_expiration_refi_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "mechanism": "Monitor state Secretary of State UCC-1 financing statements and continuation filings to identify operating businesses 4–9 months into high-cost Merchant Cash Advances (MCAs) or equipment notes, triggering refinance and debt-consolidation live transfers.",
+      "inputs": [
+        "Daily state SOS UCC-1 initial, amendment, & termination bulk feeds",
+        "Secured-party lender dictionary (identifying MCA vs. bank/SBA filings)",
+        "Live-transfer commercial refinance & SBA consolidation desk"
+      ],
+      "workflow": [
+        "Classify daily UCC-1 filings by secured party to isolate businesses that took high-cost short-term working capital 120–240 days ago",
+        "Enrich business owner direct phone and email and score by industry revenue stability",
+        "Contact merchants during peak renewal/payoff windows to offer lower-rate term consolidation or equipment refinancing, monetizing via broker points or live-transfer fees"
+      ],
+      "metrics": [
+        "UCC-to-verified-decision-maker match rate (%)",
+        "Live-transfer qualification rate (%)",
+        "Origination commission / referral fee per funded refi"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+          "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+          "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+          "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+          "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures"
+        }
+      ]
+    },
+    {
+      "id": "saas_technographic_churn_pixel_scraping",
+      "track_id": "track_1",
+      "name": "DNS/Script Technographic Drop-Off & Renewal-Window Interception",
+      "mechanism": "Crawl target commercial domains and DNS TXT/CNAME records weekly to detect the exact day a company installs or removes high-ticket enterprise software tags (Salesforce, HubSpot, Marketo, Segment, NetSuite), predicting annual renewal windows (Month 10–11) and active vendor migrations.",
+      "inputs": [
+        "Weekly HTTP script-tag, DOM header, & DNS TXT/CNAME technographic crawler",
+        "Historical install-timestamp ledger (calculating 12-month contract renewal windows)",
+        "B2B executive contact graph & migration-agency/SaaS partner routing"
+      ],
+      "workflow": [
+        "Scan 500,000+ target B2B domains weekly for JavaScript SDKs, tracking pixels, and SPF/CNAME records of $20k–$150k/yr SaaS platforms",
+        "Flag accounts entering Month 10 of their annual contract (60 days before auto-renewal lock-in) or accounts running dual competing tags during a live evaluation",
+        "Route renewal-window and active-churn signals to competing SaaS sales teams, software resellers, and implementation agencies"
+      ],
+      "metrics": [
+        "Install/drop detection precision (%) and renewal-date accuracy",
+        "Outbound reply-to-demo conversion rate on Month-10 renewal targets",
+        "Per-opportunity bounty or retainer revenue per agency/SaaS partner"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "WAF/Cloudflare bot-blocking or false-positive tag detection from server-side GTM",
+          "trigger": "High-concurrency crawling from datacenter IPs or misinterpreting server-side tag manager consolidation as vendor churn",
+          "impact": "Incomplete technographic diffs or wasted sales outreach on false churn signals",
+          "detection_metric": "Crawler HTTP 200 success rate and multi-signal verification (DNS SPF/CNAME + careers-page job-posting confirmation)",
+          "fallback": "Combine passive DNS TXT/CNAME monitoring with job-posting technographic mentions to confirm true vendor switches before routing"
+        }
+      ]
+    },
+    {
+      "id": "sec_edgar_8k_vendor_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "SEC Form 8-K, Form D & C-Suite Turnover Trigger Arbitrage",
+      "mechanism": "Parse SEC EDGAR real-time RSS/JSON feeds for Form D (private Reg D capital raises) and Form 8-K (Item 5.02 C-suite departures, Item 1.01 material agreements, Item 2.01 M&A closings) to trigger sub-hour executive outreach before commercial databases update.",
+      "inputs": [
+        "SEC EDGAR real-time Submissions API & Form D / Form 8-K XML feeds",
+        "Automated filing parser extracting raise amounts, executive names, & signatory contacts",
+        "Enterprise recruiting, specialty finance, & B2B agency deal-routing desk"
+      ],
+      "workflow": [
+        "Ingest SEC EDGAR filings within seconds of publication using a compliant User-Agent header (<=10 requests/second)",
+        "Extract Form D issuers raising $2M–$50M (who immediately deploy capital on hiring, growth agencies, and software) and Form 8-K executive transitions",
+        "Deliver tailored briefings to the filing officers and route warm introductions to executive search firms, enterprise software resellers, and B2B agencies"
+      ],
+      "metrics": [
+        "EDGAR publication-to-enrichment latency (seconds)",
+        "Form D / 8-K executive response rate vs. cold baseline (3–5x lift)",
+        "Retainer and placement referral fees generated per 100 filings"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "SEC EDGAR automated-access block or Reg D general-solicitation confusion",
+          "trigger": "Exceeding SEC EDGAR's 10-requests-per-second fair-access limit or omitting the mandatory contact User-Agent header",
+          "impact": "Temporary IP block by Akamai/SEC infrastructure",
+          "detection_metric": "Request rate strictly <=5 req/sec with compliant User-Agent and zero HTTP 403 responses",
+          "fallback": "Enforce token-bucket rate limiting at 5 req/sec and mirror SEC nightly bulk zip archives for historical lookbacks"
+        }
+      ]
+    },
+    {
+      "id": "patent_trademark_office_action_arbitrage",
+      "track_id": "track_1",
+      "name": "USPTO 'Office Action' Rejection & Trademark Abandonment Trigger Mail",
+      "mechanism": "Poll USPTO TSDR and Trademark Daily XML feeds for pro-se (unrepresented) trademark applicants who just received a Non-Final Office Action refusal, dispatching transparent private-attorney referral mailers while avoiding illegal government-lookalike fee scams.",
+      "inputs": [
+        "USPTO Trademark Daily XML & TSDR Office-Action status feeds",
+        "Filter isolating pro-se (no attorney of record) Section 2(d)/2(e) refusals",
+        "Partner IP law firm intake bridge & trademark-monitoring SaaS offers"
+      ],
+      "workflow": [
+        "Identify daily USPTO trademark applications issued a Non-Final Office Action where the Attorney of Record field is blank",
+        "Classify the refusal reason (specimen deficiency, disclaimer requirement, or likelihood of confusion) and deadline date",
+        "Send transparent private commercial notices offering a flat-fee licensed trademark attorney consultation or automated specimen/monitoring software"
+      ],
+      "metrics": [
+        "Office-action to applicant notification latency (hours)",
+        "Pro-se applicant consultation booking rate (%)",
+        "Legal marketing / software referral revenue per 1,000 notices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPTO Scam Alert blacklisting, 39 U.S.C. § 3001 enforcement, or UPL (Unauthorized Practice of Law)",
+          "trigger": "Mimicking official USPTO patent/trademark invoices, inventing fake registry fees, or giving legal advice without a licensed attorney",
+          "impact": "Federal mail-stop order, USPTO public scam-list naming, and merchant account freeze",
+          "detection_metric": "100% private commercial disclosure compliance and licensed IP counsel review on all legal service offers",
+          "fallback": "Operate strictly as a transparent legal-marketing directory or software platform connecting applicants with licensed USPTO trademark attorneys"
+        }
+      ]
+    },
+    {
+      "id": "government_rfp_subcontractor_brokerage",
+      "track_id": "track_1",
+      "name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "mechanism": "Scrape federal SAM.gov, state procurement portals, and municipal bid boards for low-bid-density service solicitations (janitorial, grounds, courier, translation, IT staffing), pairing compliant proposal automation with vetted local fulfillment subcontractors for a 15–30% management spread.",
+      "inputs": [
+        "SAM.gov Contract Opportunities API & state/municipal e-procurement feeds",
+        "Historical FPDS award pricing benchmark database",
+        "Vetted local subcontractor network with FAR limitation-on-subcontracting compliance"
+      ],
+      "workflow": [
+        "Screen daily federal, state, and municipal RFPs/RFQs with <3 historical bidders and clear unit-price schedules",
+        "Benchmark winning historical unit rates via FPDS/FOIA award records and lock in binding back-to-back quotes from insured local operators",
+        "Submit compliant bid packages and manage billing, insurance, and QA reporting while retaining a 15–30% prime-management or authorized broker spread"
+      ],
+      "metrics": [
+        "Bid-to-award win rate (%) on low-competition solicitations",
+        "Net prime-to-subcontractor gross margin (15–30% target)",
+        "Contract renewal / option-year retention rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+          "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+          "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+          "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+          "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6"
+        }
+      ]
+    },
+    {
+      "id": "google_maps_gbp_lead_gen_network",
+      "track_id": "track_2",
+      "name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "mechanism": "Capture high-margin Google Maps 3-Pack calls across tier-2/3 metros by partnering with real, licensed local tradespeople to co-verify legitimate physical office/shop locations, wiring call-tracking numbers and review-automation workflows to monetize excess lead capacity.",
+      "inputs": [
+        "Geo-grid rank tracker identifying low-review-count Map Pack gaps in $3k+ home/commercial verticals",
+        "Joint-venture co-verification agreements with real brick-and-mortar licensed contractors",
+        "Dynamic call routing (Ringba) + automated SMS post-job review velocity loop"
+      ],
+      "workflow": [
+        "Identify suburban and tier-2 metro sub-markets where top-3 Google Maps competitors have <40 reviews and weak category optimization",
+        "Sign a revenue-share or pay-per-call partnership with a real local contractor or commercial office tenant (never using fake UPS boxes or virtual coworking addresses)",
+        "Optimize GBP primary/secondary categories, service-area pages, and automated customer review requests to lock top-3 Map Pack placement and bill per qualified call"
+      ],
+      "metrics": [
+        "Local Geo-Grid Top-3 share of voice (%)",
+        "Qualified inbound Map Pack calls per location per month",
+        "Net revenue per location ($1,500–$6,000/mo) and partner retention"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+          "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+          "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+          "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+          "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages"
+        }
+      ]
+    },
+    {
+      "id": "free_tier_api_waterfall_multiplexing",
+      "track_id": "track_1",
+      "name": "Multi-Provider Free-Tier API Router & B2B Data-Enrichment Reselling",
+      "mechanism": "Aggregating 30–60+ distinct B2B data, email-verification, firmographic, DNS, and SERP providers that each offer permanent 'Freemium / Developer Free Tiers' (50–1,000 free lookups/month per provider) behind an intelligent waterfall router with aggressive Postgres caching, selling unified B2B lead enrichment and verification at $99–$499/mo with near-zero upstream API COGS.",
+      "inputs": [
+        "Catalog of 30–60+ B2B contact, firmographic, WHOIS, technographic, and email-verification APIs with recurring free quotas",
+        "Deterministic local Postgres/Redis entity cache indexed by domain, LinkedIn URL, and normalized company name",
+        "Quota-aware waterfall routing engine with per-provider rate-limit and credit-reset telemetry"
+      ],
+      "workflow": [
+        "Intercept every incoming B2B enrichment request against the local canonical cache first (eliminating 60–80% of repeat domain/contact lookups at $0 cost)",
+        "Route cache misses dynamically across the pool of 30+ upstream providers ordered by remaining monthly free-tier quota and field-level accuracy",
+        "Normalize disparate provider JSON responses into a single high-confidence schema with verified SMTP handshakes and confidence scores",
+        "Persist every newly resolved record into the proprietary local graph so the dataset compounds daily while upstream API spend remains near zero"
+      ],
+      "metrics": [
+        "Local cache hit rate (%) vs. upstream free-tier quota utilization (%)",
+        "Effective upstream API cost per 1,000 enriched B2B records ($)",
+        "Proprietary entity-graph growth rate (net new verified records cached per day)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Upstream providers deprecating free developer tiers or tightening rate limits",
+          "trigger": "SaaS vendors eliminating free tiers during pricing overhauls or throttling high-concurrency burst requests",
+          "impact": "Reduced free lookup capacity requiring fallback to paid wholesale tiers or direct scraping",
+          "detection_metric": "Real-time HTTP 429/402 error rate per upstream provider and remaining monthly free-pool runway",
+          "fallback": "Maintain 40+ interchangeable upstream adapters, prioritize local graph cache hits, and fall back to direct public-web/DNS/MX extraction when free quotas tighten"
+        }
+      ]
+    },
+    {
+      "id": "aged_high_karma_social_account_brokerage",
+      "track_id": "track_2",
+      "name": "Aged / High-Trust Social Account Farming, Leasing & SERP Seeding (Reddit, LinkedIn, X)",
+      "mechanism": "Programmatically warming and aging hundreds of 'free' accounts on high-authority social platforms (Reddit accounts with 5,000+ organic comment karma and 2+ year age, aged LinkedIn profiles, verified X/TikTok creator accounts) on isolated mobile-proxy fingerprints so their posts bypass new-account spam filters and rank immediately on Google SERPs and LLM citations.",
+      "inputs": [
+        "Anti-detect browser profiles paired 1:1 with dedicated 4G/5G mobile or sticky residential proxies",
+        "Topic-specific warming schedules posting natural non-promotional commentary in hobby, city, and industry communities",
+        "Subreddit CQS (Contributor Quality Score) and shadowban monitoring telemetry"
+      ],
+      "workflow": [
+        "Provision or acquire aged baseline accounts and assign each a permanent fingerprint, residential ISP locale, and topical persona",
+        "Maintain a 95:5 organic-to-promotional contribution ratio so accounts achieve 'High/Highest' Contributor Quality Scores (CQS) and moderator whitelist status",
+        "Deploy the high-trust accounts to seed brand recommendations inside Google-ranking threads or lease aged seats for B2B LinkedIn outbound campaigns",
+        "Monitor post survival and SERP/LLM citation velocity in real time, rotating accounts into cooldown cycles after any commercial mention"
+      ],
+      "metrics": [
+        "30-day comment/post survival rate (%) on strict auto-moderated communities",
+        "Account Contributor Quality Score (CQS) distribution across the fleet",
+        "Monthly revenue per aged seat leased ($150–$400/mo) or per surviving SERP citation ($50–$250)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Batch shadowbanning or behavioral graph cluster detection",
+          "trigger": "Upvoting the same target URLs from multiple fleet accounts or reusing subnet/browser-canvas signatures",
+          "impact": "Simultaneous loss of aged account inventory and removal of historical comments",
+          "detection_metric": "Zero cross-account vote ring activity and daily public-incognito visibility verification",
+          "fallback": "Enforce strict zero-cross-interaction rules between fleet accounts, isolate every persona on dedicated cellular proxies, and never link raw affiliate URLs directly"
+        }
+      ]
+    },
+    {
+      "id": "platform_privilege_tier_account_arbitrage",
+      "track_id": "track_2",
+      "name": "High-Tier \"Local Guide / Autoconfirmed Editor / Top Hunter\" Authority Account Arbitrage",
+      "mechanism": "Cultivating free user accounts into high-privilege algorithmic trust tiers—such as Google Local Guides (Level 6–10), Wikipedia Autoconfirmed/Extended-Confirmed editors, Product Hunt top hunters, and G2/Capterra/Trustpilot verified reviewers—whose edits, map suggest-an-edit actions, category changes, and launches carry massive algorithmic weight and sell for high-ticket B2B retainers.",
+      "inputs": [
+        "Geo-matched Google Local Guide (Level 6+), aged Wikipedia, and aged Product Hunt / software-review accounts",
+        "Location-consistent EXIF metadata, mobile device telemetry, and verifiable third-party citation dossiers",
+        "B2B local-SEO, knowledge-graph, and SaaS launch client demand"
+      ],
+      "workflow": [
+        "Build sustained, legitimate contribution histories across local maps, encyclopedia entries, and software ecosystems to unlock elevated platform trust tiers",
+        "Use high-tier Local Guide accounts to submit rapid-approval GBP spam-name redressals, competitor duplicate merges, and category corrections for local-service clients",
+        "Execute policy-compliant, source-backed knowledge-graph updates and high-visibility Product Hunt/directory launches for B2B SaaS brands",
+        "Package these high-trust authority interventions as premium reputation, entity-SEO, and launch-management retainers ($2,500–$10,000/mo)"
+      ],
+      "metrics": [
+        "Platform edit/suggestion auto-approval rate (%) and time-to-live publication",
+        "Client local-pack rank lift or knowledge-panel entity resolution rate (%)",
+        "Retainer revenue per managed authority campaign ($)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Privilege-tier badge revocation or undisclosed paid-editing enforcement",
+          "trigger": "Submitting biased, unsourced promotional edits or executing bulk map edits outside the account's natural geographic radius",
+          "impact": "Demotion of account trust score and rollback of historical edits",
+          "detection_metric": "Edit acceptance/revert ratio (%) and strict geographic/topical consistency per account",
+          "fallback": "Submit only factually verifiable, secondary-source-backed edits and keep Local Guide accounts strictly locked to their native metropolitan areas"
+        }
+      ]
+    },
+    {
+      "id": "multi_inbox_free_workspace_outbound_clusters",
+      "track_id": "track_2",
+      "name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "mechanism": "Provisioning hundreds of isolated secondary domains across subsidized Microsoft 365 developer/partner tenants, Cloudflare Email Routing, and low-cost SMTP relays—sending strictly 15–25 plain-text emails per inbox per day across 300+ free/subsidized mailboxes to deliver 150,000+ monthly B2B cold emails into primary inboxes without paying $6–$12/seat retail Google Workspace pricing.",
+      "inputs": [
+        "Lookalike secondary domain portfolio with automated SPF, DKIM (2048-bit), DMARC (`p=quarantine`/`reject`), and custom tracking-free MX records",
+        "Subsidized M365 partner/developer tenants, Cloudflare Email Routing catch-alls, and distributed SMTP sending nodes",
+        "Automated peer-to-peer warmup network and master unibox reply-routing webhook"
+      ],
+      "workflow": [
+        "Provision 100–300 secondary sending domains and bind 2–3 mailboxes per domain via automated DNS and tenant scripts",
+        "Warm every mailbox for 14–21 days with realistic thread-depth conversations before introducing live outbound prospects",
+        "Cap daily outbound volume at <=20 zero-link, zero-tracking-pixel plain-text messages per mailbox per day to stay completely beneath ESP volume heuristics",
+        "Aggregate all prospect replies into a single unified AI-triaged inbox that books qualified B2B sales calls on pay-per-show or retainer terms"
+      ],
+      "metrics": [
+        "Primary-inbox placement rate (%) across Gmail and Microsoft 365 seed tests",
+        "All-in monthly infrastructure cost per 10,000 delivered plain-text emails ($)",
+        "Positive reply rate (%) and booked meetings per 1,000 prospects contacted"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+          "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+          "impact": "Tenant suspension or domain-level spam-folder routing",
+          "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+          "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap"
+        }
+      ]
+    },
+    {
+      "id": "telecom_voice_traffic_pumping_8yy_sms_arbitrage",
+      "track_id": "track_2",
+      "name": "Wholesale Telecom Voice Traffic Pumping, 8YY Toll-Free & A2P SMS Termination Arbitrage",
+      "mechanism": "Partnering with revenue-sharing Competitive Local Exchange Carriers (CLECs) and international Tier-2/3 telecom switches to host high-volume free consumer voice and messaging utilities (free conference bridges, AI voice lines, radio call-in streams, international OTP/A2P verification endpoints) that generate tens of millions of terminating minutes or SMS messages billed back to originating carriers under intercarrier compensation and wholesale termination tariffs.",
+      "inputs": [
+        "Revenue-share interconnect agreements with licensed CLECs, tandem switches, or international SMS aggregators",
+        "Ranges of high-yield DIDs, 8YY toll-free numbers, or international mobile virtual numbers (LVNs)",
+        "Free high-duration consumer voice utilities (AI companion hotlines, diaspora radio/prayer lines, conference bridges, OTP test/verification tools)"
+      ],
+      "workflow": [
+        "Provision number blocks assigned to terminating switches or international mobile networks that command elevated per-minute or per-SMS termination rates",
+        "Promote free, high-retention voice or messaging services that organically drive millions of inbound call minutes or A2P verification messages",
+        "Route inbound traffic through compliant SIP trunks to the terminating carrier switch and log CDR (Call Detail Record) duration and completion telemetry",
+        "Collect contractual revenue-share rebates (30–65% of intercarrier settlement receipts) on settled carrier invoices every 30–45 days"
+      ],
+      "metrics": [
+        "Monthly settled inbound minutes of use (MOU) and A2P SMS termination volume",
+        "Effective net rebate per minute ($0.004–$0.03) or per international SMS ($0.02–$0.12)",
+        "Originating-carrier dispute/withholding rate (%) across settlement cycles"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FCC Access Stimulation ('Traffic Pumping') rate reclassification or originating IXC payment withholding",
+          "trigger": "Exceeding FCCinbound-to-outbound traffic ratios on a single rural LEC switch or triggering synthetic autocall detection",
+          "impact": "Tandem/end-office tariff step-down to bill-and-keep or carrier billing dispute freezes",
+          "detection_metric": "Per-OCN inbound/outbound traffic ratio and zero synthetic/auto-dialed CDR patterns",
+          "fallback": "Distribute traffic across multiple global jurisdictions and non-access-stimulation SIP monetization models, and require 100% genuine human user initiation with STIR/SHAKEN attestation"
+        }
+      ]
+    },
+    {
+      "id": "mvno_lifeline_acp_telecom_subsidy_aggregation",
+      "track_id": "track_2",
+      "name": "White-Label MVNO & Federal/State Low-Income Telecom Subsidy Aggregation",
+      "mechanism": "Launching a white-label Mobile Virtual Network Operator (MVNO) or partnering as a master enrollment aggregator for Eligible Telecommunications Carriers (ETCs) to enroll hundreds of thousands of SNAP/Medicaid/SSI-eligible households into '100% Free Unlimited Talk/Text/Data' plans—arbitraging the spread between $2–$4/mo wholesale MVNO network COGS and $9.25–$44+/mo in combined Federal Lifeline, Tribal, and State (e.g., California LifeLine) monthly government reimbursements.",
+      "inputs": [
+        "Wholesale MVNO Enabler (MVNE) agreement (T-Mobile/AT&T wholesale via Plum, Reach, Gigs) or master sub-agent contract with an ETC",
+        "National Verifier (USAC NLAD) API integration checking SNAP, Medicaid, WIC, and SSI eligibility in real time",
+        "Omnichannel street-team tablet canopy network and geotargeted digital co-registration funnels in high-subsidy zip codes"
+      ],
+      "workflow": [
+        "Target zip codes with high SNAP/Medicaid participation and stacked state-level telecom subsidies (e.g., California, Texas, Oklahoma, Tribal lands)",
+        "Verify applicant eligibility instantly against the USAC National Verifier / state administrator API and provision an instant eSIM or pre-activated pSIM",
+        "Pay enrollment agents or digital media channels a $15–$35 one-time acquisition bounty while collecting recurring monthly government reimbursements ($15–$44+/mo) plus upsold data top-ups",
+        "Automate 30-day usage heartbeats (outbound call/SMS check-ins) so enrolled lines satisfy mandatory USAC monthly active-usage rules"
+      ],
+      "metrics": [
+        "Active reimbursed subscriber base and monthly net ARPU ($12–$38/mo) vs. wholesale carrier COGS ($2.50–$4.50/mo)",
+        "30-day USAC non-usage de-enrollment ('cure') rate (%)",
+        "Customer acquisition cost (CAC) payback period (target: <45 days)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USAC audit clawback for duplicate household enrollments or 30-day non-usage de-enrollment rules",
+          "trigger": "Field agents enrolling ineligible subscribers or lines going 30 consecutive days without an outbound call, text, or data session",
+          "impact": "Mandatory de-enrollment of inactive lines or USAC reimbursement recoupment",
+          "detection_metric": "Rolling 20-day zero-usage cohort alerts and 100% NLAD/National Verifier API pre-check enforcement",
+          "fallback": "Run automated Day-20 SMS/IVR engagement campaigns ('Reply YES to keep your free monthly service active') and strictly claw back field-agent commissions on any line failing 30-day usage"
+        }
+      ]
+    },
+    {
+      "id": "erisa_self_funded_specialty_drug_importation_arbitrage",
+      "track_id": "track_1",
+      "name": "Employer Self-Funded ERISA Plan International Specialty-Drug Importation Arbitrage",
+      "mechanism": "Contracting with mid-market US employers (100–5,000 employees) operating self-funded ERISA health plans to carve out high-cost specialty biologics and GLP-1s ($6,000–$15,000/mo US PBM list price) and source the identical manufacturer-sealed drugs from licensed Tier-1 pharmacies in Canada, the UK, Australia, and New Zealand at $800–$2,200/mo—waiving the employee's copay to $0 while taking 25–35% of the employer's $50,000–$100,000/yr per-patient savings.",
+      "inputs": [
+        "Department of Labor (DOL) Form 5500 Schedule A/C database identifying self-funded ERISA employers by broker, TPA, and stop-loss carrier",
+        "Licensed international pharmacy dispensation network across Tier-1 jurisdictions (Canada, UK, Australia, New Zealand) with cold-chain courier logistics",
+        "Turnkey ERISA Summary Plan Description (SPD) 'Specialty Drug Carve-Out Amendment' and $0-copay patient concierge portal"
+      ],
+      "workflow": [
+        "Mine DOL Form 5500 filings to target CFOs and benefits directors of self-funded companies with 150–3,000 covered lives",
+        "Audit the employer's anonymized pharmacy claims file to flag the 1–3% of members driving 45–60% of total drug spend (Humira, Stelara, Skyrizi, Dupixent, Enbrel, Ozempic)",
+        "Plug in a voluntary $0-copay international personal-importation program alongside the existing TPA, fulfilling 90-day cold-chain prescriptions at 60–80% below US PBM prices",
+        "Bill the self-funded employer plan a shared-savings contingency fee equal to 25–35% of verified net claim reduction ($15,000–$30,000/yr per enrolled specialty patient)"
+      ],
+      "metrics": [
+        "Verified annual specialty-claim savings ($) per self-funded employer group",
+        "Net shared-savings fee revenue ($15k–$30k/yr) per enrolled specialty patient",
+        "Employee $0-copay opt-in conversion rate (target: >85%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Incumbent PBM rebate-contract retaliation or cold-chain customs shipment delay",
+          "trigger": "Legacy PBM threatening to withhold formulary rebates if specialty scripts are carved out, or border clearance delays on temperature-sensitive biologics",
+          "impact": "Delayed employer onboarding or need for local emergency bridge fills",
+          "detection_metric": "Cold-chain transit temperature telemetry and net employer savings after accounting for any forfeited PBM rebates",
+          "fallback": "Target independent TPAs and transparent pass-through PBMs first, combine international sourcing with US Manufacturer Patient Assistance Program (PAP) optimization, and maintain domestic bridge-fill coverage"
+        }
+      ]
+    },
+    {
+      "id": "section_340b_contract_pharmacy_spread_arbitrage",
+      "track_id": "track_1",
+      "name": "340B Contract-Pharmacy & Covered-Entity Drug Price Spread Arbitrage",
+      "mechanism": "Partnering with HRSA-qualified 340B Covered Entities (Federally Qualified Health Centers, Ryan White clinics, disproportionate-share rural hospitals) to provide turnkey Third-Party Administrator (TPA) split-billing software, specialty contract-pharmacy fulfillment, and tele-referral capture—buying outpatient specialty medications at 25–50%+ statutory 340B discounts while collecting 100% full commercial insurance reimbursement and splitting the multi-thousand-dollar per-script margin via compliant flat administrative/dispensing fees.",
+      "inputs": [
+        "HRSA OPAIS (Office of Pharmacy Affairs Information System) database of Covered Entities and registered contract pharmacies",
+        "340B split-billing / virtual-inventory accumulator software tracking 11-digit NDCs, prescriber NPIs, and patient-eligibility encounters",
+        "Licensed specialty/mail-order contract pharmacy network and commercial payer PBMs"
+      ],
+      "workflow": [
+        "Identify under-monetized 340B Covered Entities (FQHCs, grantees, rural hospitals) with low specialty capture rates in the HRSA OPAIS registry",
+        "Deploy split-billing TPA software and mail-order specialty contract-pharmacy infrastructure that captures commercially insured prescriptions written or co-managed by clinic providers",
+        "Reimburse the pharmacy at full commercial payer rates ($3,000–$12,000/script) while replenishing drug inventory via the clinic's 340B wholesaler account at $800–$4,000/script",
+        "Charge fixed fair-market-value per-dispense administrative, software, and clinical-management fees that capture a major share of the net spread while funding the clinic's safety-net mission"
+      ],
+      "metrics": [
+        "Captured commercially insured 340B scripts per month per Covered Entity",
+        "Gross commercial-to-340B acquisition spread ($1,500–$6,000+) per specialty fill",
+        "HRSA audit pass rate (zero duplicate Medicaid discount or diversion findings)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Manufacturer contract-pharmacy restriction policies or HRSA 'patient definition' audit findings",
+          "trigger": "Drug manufacturers restricting 340B replenishment to a single contract pharmacy unless claims data is submitted, or filling scripts for patients without a documented clinic encounter",
+          "impact": "Loss of 340B ceiling price on specific NDCs or HRSA repayment liability",
+          "detection_metric": "100% EHR encounter-to-NPI match verification prior to 340B replenishment accumulation and automated ESP (340B ESP) data submission",
+          "fallback": "Operate an in-house entity-owned specialty pharmacy location alongside contract pharmacies, automate 340B ESP claims-data uploads to unlock restricted NDCs, and enforce strict EHR encounter gates"
+        }
+      ]
+    },
+    {
+      "id": "out_of_network_dme_telehealth_billing_arbitrage",
+      "track_id": "track_1",
+      "name": "Out-of-Network DME, CGM & Diagnostic Reference Lab Billing Arbitrage",
+      "mechanism": "Operating a healthcare Management Services Organization (MSO) and performance patient-acquisition engine that pairs targeted paid-social symptom funnels with independent telehealth physician groups and licensed Durable Medical Equipment (DME) / reference lab suppliers—acquiring insured patients at $85–$220 CAC for high-margin HCPCS/CPT codes (Continuous Glucose Monitors, pneumatic compression devices, home sleep testing, custom orthotics) that reimburse $900–$3,500+ against $70–$220 hardware COGS.",
+      "inputs": [
+        "CMS DMEPOS Fee Schedule and commercial payer allowables matrix by HCPCS code and state MAC jurisdiction",
+        "Real-time insurance-eligibility and deductible verification API (Availity / Waystar / Stedi)",
+        "Compliant Management Services Organization (MSO) software + flat-fee marketing contracts with PECOS-enrolled DME suppliers and telehealth PCs"
+      ],
+      "workflow": [
+        "Run high-converting paid social and search funnels educating commercially insured and Medicare-eligible patients on covered at-home medical devices (CGMs, lymphedema pumps, sleep apnea monitors)",
+        "Perform instant real-time eligibility and remaining-deductible checks via EDI 270/271 before scheduling any clinical intake",
+        "Route qualified patients to an independent physician practice for a legitimate synchronous/asynchronous telehealth evaluation and medical-necessity chart documentation",
+        "Fulfill the prescribed hardware and recurring monthly supply refills through a licensed DME entity, collecting Recurring Rental / Resupply reimbursements every 30–90 days"
+      ],
+      "metrics": [
+        "Verified insurance-eligible patient CAC ($85–$220) vs. 12-month LTV including recurring resupply fills ($1,800–$4,500)",
+        "First-pass clean claim acceptance rate (%) and days sales outstanding (DSO)",
+        "Physician medical-necessity chart audit pass rate (100% LCD/NCD criteria match)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Payer post-payment audit recoupment or Anti-Kickback Statute (AKS) per-referral fee scrutiny",
+          "trigger": "Paying per-lead commissions tied to federal healthcare volume or submitting claims without complete Local Coverage Determination (LCD) chart notes",
+          "impact": "MAC prepayment review hold or clawback of reimbursed claims",
+          "detection_metric": "100% automated LCD clinical-criteria checklist validation before claim EDI 837P submission and strict flat-fee MSO billing",
+          "fallback": "Structure all marketing and software agreements strictly under Safe-Harbor Personal Services / MSO flat fair-market-value retainers, prioritize commercial payers and recurring CGM resupply, and enforce third-party clinical chart review"
+        }
+      ]
+    },
+    {
+      "id": "litigation_finance_mass_tort_docket_securitization",
+      "track_id": "track_1",
+      "name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "mechanism": "Pairing an Arizona Alternative Business Structure (ABS) or co-counsel law firm with an institutional litigation-finance credit facility to acquire, medically verify (via $6.50 HITECH patient-directed record requests), and package 1,000–25,000 retained mass-tort plaintiffs (PFAS, AFFF, Paraquat, NEC, rideshare assault, defective medical devices) at $1,200–$2,500 CAC—either flipping vetted case tranches to litigation-finance hedge funds at 2.5x–4x cost or holding for 35–40% global MDL settlement fee splits.",
+      "inputs": [
+        "Judicial Panel on Multidistrict Litigation (JPML) docket analytics, FDA FAERS adverse-event spikes, and EPA contaminant zip-code maps",
+        "Arizona ABS / co-counsel retainer infrastructure with e-sign intake and automated HITECH Act (45 CFR § 164.524) medical-record retrieval engine",
+        "Non-recourse litigation-finance warehouse credit facility and MDL leadership co-counsel placement contracts"
+      ],
+      "workflow": [
+        "Identify emerging MDL mass torts with clear causation biomarkers (specific ICD-10 diagnosis codes + geographic/product exposure proof) and deep-pocket corporate defendants",
+        "Run hyper-targeted CTV, paid social, and public-record outbound campaigns to sign injured claimants directly onto joint co-counsel retainer agreements",
+        "Execute automated HITECH patient-directed electronic medical record (EMR) pulls at the federal statutory cap (~$6.50/record) and use LLM clinical parsers to verify qualifying diagnosis and exposure dates within 72 hours",
+        "Securitize verified, deficiency-free case tranches into litigation-finance buyout facilities at $4,500–$9,000 per vetted retainer or hold on the balance sheet for $25,000–$80,000+ gross contingency fees at MDL settlement"
+      ],
+      "metrics": [
+        "All-in cost per medically verified, deficiency-free retained plaintiff ($1,200–$2,500)",
+        "HITECH medical-record retrieval turnaround time (hours) and clinical qualification pass rate (%)",
+        "Secondary docket tranche sale multiple (2.5x–4.0x CAC) or net MDL settlement IRR"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+          "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+          "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+          "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+          "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders"
+        }
+      ]
+    },
+    {
+      "id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "track_id": "track_1",
+      "name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "mechanism": "Support counsel-led evaluation of genuine tracking-related privacy claims using preserved consent and disclosure evidence; applicability, standing, and recoverable damages require individual legal review.",
+      "inputs": [
+        "Client-authorized browser network captures",
+        "Timestamped consent flows and privacy notices",
+        "Counsel-reviewed standing and statutory applicability checklist"
+      ],
+      "workflow": [
+        "1. Obtain client authorization and preserve ordinary-session tracking and consent evidence",
+        "2. Have counsel assess actual disclosures, statutory coverage, standing, and limitation periods",
+        "3. Route substantiated matters to retained counsel for proportionate notice and resolution",
+        "4. Record outcomes, client distributions, and remediation without duplicate or fabricated claims"
+      ],
+      "metrics": [
+        "Counsel-validated matters per reviewed session",
+        "Net client recovery after disclosed costs",
+        "Evidence completeness and duplicate-claim rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Unsupported statutory demand or evidence rejection",
+          "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+          "impact": "Dismissal, sanctions exposure, and wasted case costs",
+          "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+          "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead"
+        }
+      ]
+    },
+    {
+      "id": "public_adjuster_appraisal_clause_storm_arbitrage",
+      "track_id": "track_1",
+      "name": "Commercial Hail-Swath Public Adjuster & Appraisal-Clause Storm Arbitrage",
+      "mechanism": "Match verified commercial storm damage with licensed public-adjuster capacity and policy-specific appraisal processes, distinguishing valuation disputes from coverage questions.",
+      "inputs": [
+        "Public hail-swath data and property records",
+        "Policy forms and dated damage inspections",
+        "State licensing, solicitation, and fee-limit rules"
+      ],
+      "workflow": [
+        "1. Map storm footprints to commercial properties and conduct permitted owner outreach",
+        "2. Obtain authorized inspections and licensed review of coverage, deadlines, and preexisting damage",
+        "3. Submit supported estimates and invoke appraisal only where the policy and dispute allow it",
+        "4. Reconcile settlement, repairs, and lawful disclosed fees without inflating losses"
+      ],
+      "metrics": [
+        "Verified covered-loss rate",
+        "Days from inspection to resolved valuation",
+        "Net client proceeds after fees and deductible"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Unauthorized adjusting or inapplicable appraisal demand",
+          "trigger": "Unlicensed solicitation or use of appraisal to resolve excluded coverage issues",
+          "impact": "Claim delay, fee forfeiture, and licensing penalties",
+          "detection_metric": "License exceptions and appraisal requests rejected for coverage disputes",
+          "fallback": "Pause solicitation and refer coverage disputes to qualified counsel while licensed adjusters handle supported valuations"
+        }
+      ]
+    },
+    {
+      "id": "out_of_statute_zombie_debt_portfolio_settlement",
+      "track_id": "track_1",
+      "name": "Out-of-Statute Charged-Off Debt Portfolio & Self-Serve Tradeline Settlement Funnels",
+      "mechanism": "Evaluate heavily discounted time-barred receivables for lawful voluntary resolution, separating collection limitation periods from credit-reporting limits and excluding extinguished or otherwise uncollectible obligations.",
+      "inputs": [
+        "Account-level ownership and payment history",
+        "State limitation, revival, and collection-disclosure matrix",
+        "Dispute records and credit-reporting eligibility dates"
+      ],
+      "workflow": [
+        "1. Validate account ownership, balances, bankruptcy status, and applicable limitation periods",
+        "2. Obtain licensed legal review of collectibility, required notices, and payment-revival consequences",
+        "3. Offer permitted voluntary self-service resolutions without lawsuit threats or credit-deletion promises",
+        "4. Honor disputes and opt-outs, issue satisfaction records, and update only accurate eligible reporting"
+      ],
+      "metrics": [
+        "Validated legally collectible balance share",
+        "Net voluntary receipts after servicing costs",
+        "Dispute and disclosure-defect rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Time-barred collection or reporting violation",
+          "trigger": "Threatened litigation, unlawful revival solicitation, or re-aging of obsolete debt",
+          "impact": "Enforcement, restitution, and servicing suspension",
+          "detection_metric": "Accounts failing legal-age checks and substantiated complaints",
+          "fallback": "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation"
+        }
+      ]
+    },
+    {
+      "id": "mca_ucc_stacking_default_restructure_brokerage",
+      "track_id": "track_2",
+      "name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "mechanism": "Use UCC filing changes to identify businesses that may need cash-flow review and consensual MCA restructuring, with verified obligations and disclosed compensation rather than encouraging undisclosed stacking.",
+      "inputs": [
+        "Public UCC filings and termination records",
+        "Merchant-authorized contracts and cash-flow statements",
+        "Broker licensing rules and disclosed creditor compensation terms"
+      ],
+      "workflow": [
+        "1. Treat UCC changes as outreach signals, not proof of default, and obtain merchant authorization",
+        "2. Reconcile advances, liens, repayment pulls, covenants, and sustainable payment capacity",
+        "3. Disclose dual-sided fees and conflicts; use independent counsel where representation would conflict",
+        "4. Coordinate documented creditor-approved modifications and monitor actual payment relief"
+      ],
+      "metrics": [
+        "Net merchant payment relief after fees",
+        "Creditor-approved modification rate",
+        "Post-restructure missed-payment rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+          "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+          "impact": "Accelerated collections and broker liability",
+          "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+          "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "tcpa_litigator_scrub_honeypot_arbitrage",
+      "track_id": "track_2",
+      "name": "TCPA Serial-Plaintiff Docket Scraping & Real-Time Litigator-Scrub Firewall Tollbooth",
+      "mechanism": "Offer consent-first outbound compliance screening using lawful docket-derived risk signals alongside mandatory do-not-call and revocation checks; plaintiff matching neither authorizes contact nor replaces TCPA compliance.",
+      "inputs": [
+        "Permitted public docket data with identity confidence scores",
+        "Consent provenance, revocations, and suppression lists",
+        "Applicable calling rules and customer retention policies"
+      ],
+      "workflow": [
+        "1. Ingest permitted docket records with source dates, minimization, and human identity review",
+        "2. Check consent, do-not-call status, revocations, and calling restrictions before optional risk enrichment",
+        "3. Suppress noncompliant contacts and route uncertain matches to review without planting honeypots or provoking claims",
+        "4. Serve auditable screening decisions with correction, deletion, and retention controls"
+      ],
+      "metrics": [
+        "Contacts blocked for missing consent or suppression match",
+        "False-positive identity match rate",
+        "Screening latency and stale-record share"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "False identity match or false assurance of permission to call",
+          "trigger": "Stale docket data or treating absence from a plaintiff list as consent",
+          "impact": "Unlawful outreach, privacy complaints, and customer liability",
+          "detection_metric": "Consent-audit failure rate and upheld identity correction requests",
+          "fallback": "Disable uncertain enrichment and require independently verified consent and authoritative suppression checks"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+      "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+      "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+      "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+      "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+      "play_id": "public_filing_trigger_mail_arbitrage",
+      "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+      "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+      "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+      "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+      "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+      "play_id": "arizona_abs_mass_tort_cocounsel",
+      "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+      "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+      "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+      "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+      "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots",
+      "play_id": "telegram_channel_signal_scraping",
+      "play_name": "Telegram Channel & Deal-Room Signal Scraping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google Business Profile suspension or contractor payment default",
+      "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+      "impact": "Loss of Map Pack call volume or uncollected call receivables",
+      "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+      "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets",
+      "play_id": "rank_and_rent_pay_per_call_routing",
+      "play_name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Ad-account ban, RSOC/AFD feed termination, or TCPA consent challenge",
+      "trigger": "Using fake 'government stimulus' ad bait, forcing accidental ad clicks, or selling leads without one-to-one TCPA consent logs",
+      "impact": "Ad account suspension, feed clawbacks, or buyer lead rejections",
+      "detection_metric": "Ad disapproval rate, buyer return rate >5%, and TrustedForm/Jornaya certificate match rate (100% required)",
+      "fallback": "Enforce 100% factual ad hooks, log cryptographic TrustedForm/Jornaya session certificates on every form submit, and diversify across 5+ direct lead buyers",
+      "play_id": "social_to_search_ping_post_arbitrage",
+      "play_name": "Social-to-Search Ad Feed & Ping-Post Lead Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+      "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+      "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+      "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+      "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies",
+      "play_id": "high_velocity_dm_outbound_systems",
+      "play_name": "High-Velocity DM Outbound & Trigger Funnels",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+      "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+      "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+      "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+      "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating",
+      "play_id": "identity_graph_pixel_arbitrage",
+      "play_name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Municipal portal IP blocking or deceptive official-notice complaints",
+      "trigger": "Aggressive unthrottled scraping of Accela/EnerGov portals or styling outreach like an official city abatement order",
+      "impact": "Portal IP block or city attorney cease-and-desist notice",
+      "detection_metric": "Portal HTTP 403/429 rate and zero municipal impersonation complaints",
+      "fallback": "Use low-frequency scheduled API/bulk exports and clearly identify all outreach as private commercial contractor/remediation assistance",
+      "play_id": "municipal_code_violation_trigger_arbitrage",
+      "play_name": "Municipal Code-Violation, Mechanic's Lien & Permit-Failure Lead Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+      "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+      "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+      "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+      "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures",
+      "play_id": "ucc1_expiration_refi_trigger_arbitrage",
+      "play_name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "WAF/Cloudflare bot-blocking or false-positive tag detection from server-side GTM",
+      "trigger": "High-concurrency crawling from datacenter IPs or misinterpreting server-side tag manager consolidation as vendor churn",
+      "impact": "Incomplete technographic diffs or wasted sales outreach on false churn signals",
+      "detection_metric": "Crawler HTTP 200 success rate and multi-signal verification (DNS SPF/CNAME + careers-page job-posting confirmation)",
+      "fallback": "Combine passive DNS TXT/CNAME monitoring with job-posting technographic mentions to confirm true vendor switches before routing",
+      "play_id": "saas_technographic_churn_pixel_scraping",
+      "play_name": "DNS/Script Technographic Drop-Off & Renewal-Window Interception",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "SEC EDGAR automated-access block or Reg D general-solicitation confusion",
+      "trigger": "Exceeding SEC EDGAR's 10-requests-per-second fair-access limit or omitting the mandatory contact User-Agent header",
+      "impact": "Temporary IP block by Akamai/SEC infrastructure",
+      "detection_metric": "Request rate strictly <=5 req/sec with compliant User-Agent and zero HTTP 403 responses",
+      "fallback": "Enforce token-bucket rate limiting at 5 req/sec and mirror SEC nightly bulk zip archives for historical lookbacks",
+      "play_id": "sec_edgar_8k_vendor_trigger_arbitrage",
+      "play_name": "SEC Form 8-K, Form D & C-Suite Turnover Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "USPTO Scam Alert blacklisting, 39 U.S.C. § 3001 enforcement, or UPL (Unauthorized Practice of Law)",
+      "trigger": "Mimicking official USPTO patent/trademark invoices, inventing fake registry fees, or giving legal advice without a licensed attorney",
+      "impact": "Federal mail-stop order, USPTO public scam-list naming, and merchant account freeze",
+      "detection_metric": "100% private commercial disclosure compliance and licensed IP counsel review on all legal service offers",
+      "fallback": "Operate strictly as a transparent legal-marketing directory or software platform connecting applicants with licensed USPTO trademark attorneys",
+      "play_id": "patent_trademark_office_action_arbitrage",
+      "play_name": "USPTO 'Office Action' Rejection & Trademark Abandonment Trigger Mail",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+      "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+      "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+      "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+      "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6",
+      "play_id": "government_rfp_subcontractor_brokerage",
+      "play_name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+      "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+      "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+      "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+      "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages",
+      "play_id": "google_maps_gbp_lead_gen_network",
+      "play_name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Upstream providers deprecating free developer tiers or tightening rate limits",
+      "trigger": "SaaS vendors eliminating free tiers during pricing overhauls or throttling high-concurrency burst requests",
+      "impact": "Reduced free lookup capacity requiring fallback to paid wholesale tiers or direct scraping",
+      "detection_metric": "Real-time HTTP 429/402 error rate per upstream provider and remaining monthly free-pool runway",
+      "fallback": "Maintain 40+ interchangeable upstream adapters, prioritize local graph cache hits, and fall back to direct public-web/DNS/MX extraction when free quotas tighten",
+      "play_id": "free_tier_api_waterfall_multiplexing",
+      "play_name": "Multi-Provider Free-Tier API Router & B2B Data-Enrichment Reselling",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Batch shadowbanning or behavioral graph cluster detection",
+      "trigger": "Upvoting the same target URLs from multiple fleet accounts or reusing subnet/browser-canvas signatures",
+      "impact": "Simultaneous loss of aged account inventory and removal of historical comments",
+      "detection_metric": "Zero cross-account vote ring activity and daily public-incognito visibility verification",
+      "fallback": "Enforce strict zero-cross-interaction rules between fleet accounts, isolate every persona on dedicated cellular proxies, and never link raw affiliate URLs directly",
+      "play_id": "aged_high_karma_social_account_brokerage",
+      "play_name": "Aged / High-Trust Social Account Farming, Leasing & SERP Seeding (Reddit, LinkedIn, X)",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Privilege-tier badge revocation or undisclosed paid-editing enforcement",
+      "trigger": "Submitting biased, unsourced promotional edits or executing bulk map edits outside the account's natural geographic radius",
+      "impact": "Demotion of account trust score and rollback of historical edits",
+      "detection_metric": "Edit acceptance/revert ratio (%) and strict geographic/topical consistency per account",
+      "fallback": "Submit only factually verifiable, secondary-source-backed edits and keep Local Guide accounts strictly locked to their native metropolitan areas",
+      "play_id": "platform_privilege_tier_account_arbitrage",
+      "play_name": "High-Tier \"Local Guide / Autoconfirmed Editor / Top Hunter\" Authority Account Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+      "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+      "impact": "Tenant suspension or domain-level spam-folder routing",
+      "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+      "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap",
+      "play_id": "multi_inbox_free_workspace_outbound_clusters",
+      "play_name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "FCC Access Stimulation ('Traffic Pumping') rate reclassification or originating IXC payment withholding",
+      "trigger": "Exceeding FCCinbound-to-outbound traffic ratios on a single rural LEC switch or triggering synthetic autocall detection",
+      "impact": "Tandem/end-office tariff step-down to bill-and-keep or carrier billing dispute freezes",
+      "detection_metric": "Per-OCN inbound/outbound traffic ratio and zero synthetic/auto-dialed CDR patterns",
+      "fallback": "Distribute traffic across multiple global jurisdictions and non-access-stimulation SIP monetization models, and require 100% genuine human user initiation with STIR/SHAKEN attestation",
+      "play_id": "telecom_voice_traffic_pumping_8yy_sms_arbitrage",
+      "play_name": "Wholesale Telecom Voice Traffic Pumping, 8YY Toll-Free & A2P SMS Termination Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "USAC audit clawback for duplicate household enrollments or 30-day non-usage de-enrollment rules",
+      "trigger": "Field agents enrolling ineligible subscribers or lines going 30 consecutive days without an outbound call, text, or data session",
+      "impact": "Mandatory de-enrollment of inactive lines or USAC reimbursement recoupment",
+      "detection_metric": "Rolling 20-day zero-usage cohort alerts and 100% NLAD/National Verifier API pre-check enforcement",
+      "fallback": "Run automated Day-20 SMS/IVR engagement campaigns ('Reply YES to keep your free monthly service active') and strictly claw back field-agent commissions on any line failing 30-day usage",
+      "play_id": "mvno_lifeline_acp_telecom_subsidy_aggregation",
+      "play_name": "White-Label MVNO & Federal/State Low-Income Telecom Subsidy Aggregation",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Incumbent PBM rebate-contract retaliation or cold-chain customs shipment delay",
+      "trigger": "Legacy PBM threatening to withhold formulary rebates if specialty scripts are carved out, or border clearance delays on temperature-sensitive biologics",
+      "impact": "Delayed employer onboarding or need for local emergency bridge fills",
+      "detection_metric": "Cold-chain transit temperature telemetry and net employer savings after accounting for any forfeited PBM rebates",
+      "fallback": "Target independent TPAs and transparent pass-through PBMs first, combine international sourcing with US Manufacturer Patient Assistance Program (PAP) optimization, and maintain domestic bridge-fill coverage",
+      "play_id": "erisa_self_funded_specialty_drug_importation_arbitrage",
+      "play_name": "Employer Self-Funded ERISA Plan International Specialty-Drug Importation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Manufacturer contract-pharmacy restriction policies or HRSA 'patient definition' audit findings",
+      "trigger": "Drug manufacturers restricting 340B replenishment to a single contract pharmacy unless claims data is submitted, or filling scripts for patients without a documented clinic encounter",
+      "impact": "Loss of 340B ceiling price on specific NDCs or HRSA repayment liability",
+      "detection_metric": "100% EHR encounter-to-NPI match verification prior to 340B replenishment accumulation and automated ESP (340B ESP) data submission",
+      "fallback": "Operate an in-house entity-owned specialty pharmacy location alongside contract pharmacies, automate 340B ESP claims-data uploads to unlock restricted NDCs, and enforce strict EHR encounter gates",
+      "play_id": "section_340b_contract_pharmacy_spread_arbitrage",
+      "play_name": "340B Contract-Pharmacy & Covered-Entity Drug Price Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Payer post-payment audit recoupment or Anti-Kickback Statute (AKS) per-referral fee scrutiny",
+      "trigger": "Paying per-lead commissions tied to federal healthcare volume or submitting claims without complete Local Coverage Determination (LCD) chart notes",
+      "impact": "MAC prepayment review hold or clawback of reimbursed claims",
+      "detection_metric": "100% automated LCD clinical-criteria checklist validation before claim EDI 837P submission and strict flat-fee MSO billing",
+      "fallback": "Structure all marketing and software agreements strictly under Safe-Harbor Personal Services / MSO flat fair-market-value retainers, prioritize commercial payers and recurring CGM resupply, and enforce third-party clinical chart review",
+      "play_id": "out_of_network_dme_telehealth_billing_arbitrage",
+      "play_name": "Out-of-Network DME, CGM & Diagnostic Reference Lab Billing Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+      "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+      "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+      "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+      "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders",
+      "play_id": "litigation_finance_mass_tort_docket_securitization",
+      "play_name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Unsupported statutory demand or evidence rejection",
+      "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+      "impact": "Dismissal, sanctions exposure, and wasted case costs",
+      "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+      "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead",
+      "play_id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "play_name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Unauthorized adjusting or inapplicable appraisal demand",
+      "trigger": "Unlicensed solicitation or use of appraisal to resolve excluded coverage issues",
+      "impact": "Claim delay, fee forfeiture, and licensing penalties",
+      "detection_metric": "License exceptions and appraisal requests rejected for coverage disputes",
+      "fallback": "Pause solicitation and refer coverage disputes to qualified counsel while licensed adjusters handle supported valuations",
+      "play_id": "public_adjuster_appraisal_clause_storm_arbitrage",
+      "play_name": "Commercial Hail-Swath Public Adjuster & Appraisal-Clause Storm Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Time-barred collection or reporting violation",
+      "trigger": "Threatened litigation, unlawful revival solicitation, or re-aging of obsolete debt",
+      "impact": "Enforcement, restitution, and servicing suspension",
+      "detection_metric": "Accounts failing legal-age checks and substantiated complaints",
+      "fallback": "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation",
+      "play_id": "out_of_statute_zombie_debt_portfolio_settlement",
+      "play_name": "Out-of-Statute Charged-Off Debt Portfolio & Self-Serve Tradeline Settlement Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+      "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+      "impact": "Accelerated collections and broker liability",
+      "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+      "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel",
+      "play_id": "mca_ucc_stacking_default_restructure_brokerage",
+      "play_name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "False identity match or false assurance of permission to call",
+      "trigger": "Stale docket data or treating absence from a plaintiff list as consent",
+      "impact": "Unlawful outreach, privacy complaints, and customer liability",
+      "detection_metric": "Consent-audit failure rate and upheld identity correction requests",
+      "fallback": "Disable uncertain enrichment and require independently verified consent and authoritative suppression checks",
+      "play_id": "tcpa_litigator_scrub_honeypot_arbitrage",
+      "play_name": "TCPA Serial-Plaintiff Docket Scraping & Real-Time Litigator-Scrub Firewall Tollbooth",
+      "track_id": "track_2"
+    }
+  ]
+}
