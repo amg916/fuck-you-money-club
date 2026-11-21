@@ -1,0 +1,749 @@
+from __future__ import annotations
+
+CHAPTER_3 = {
+    "id": "Q3",
+    "chapter_id": "Q3",
+    "chapter_number": 3,
+    "question_number": 3,
+    "slug": "medical-equipment-resale-unit-economics-margin-waterfall-working-capital",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for medical equipment resale?",
+    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
+    "subtitle": "Serial-Level Acquisition Math, Biomed Contractor Costs, FDA Servicing Boundaries, UCC Lien Releases & HIPAA Data-Clearance Float",
+    "layout_template": "financial_breakdown",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Money-to-Manpower Score: equipment margins are earned through disciplined "
+        "buying, documented refurbishment, and funded collection cycles. This chapter "
+        "maps three operating plays: diagnostic refurbishment resale, surgical "
+        "consignment, and mca_ucc_stacking_default_restructure_brokerage. The first "
+        "two are chapter-local operating labels; the third is the supplied TRACK_2 "
+        "mapping, kept outside equipment revenue. Canonical annual owner profits "
+        "remain $25,000 Conservative, $164,000 Base, and $396,000 Scaled. A "
+        "$25,000 recognized-revenue unit reconciles every case while exposing "
+        "credits, contractor labor, warranty costs, acquisition CAC, and fixed "
+        "overhead. Serial-level cash calendars then distinguish profitable stock "
+        "from stock that exhausts purchasing capacity before buyers release payment."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual gross equipment resale revenue; acquisition and refurbishment included in margin",
+            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,025,000",
+            "context": "Annual gross equipment resale revenue; acquisition and refurbishment included in margin",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,800,000",
+            "context": "Annual gross equipment resale revenue; acquisition and refurbishment included in margin",
+            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define the sale, the serial cohort, and the three operating plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the ledger around a serialized device, not a marketplace "
+                    "listing or a hospital purchase order. Assign acquisition cost, "
+                    "accessories, software-transfer permissions, test records, and "
+                    "freight to that serial before quoting a buyer. For this model, "
+                    "one standardized cohort unit produces $25,500 of invoiced "
+                    "equipment consideration and $500 of expected price credits, "
+                    "leaving $25,000 of recognized resale revenue. Ten, forty-one, "
+                    "and seventy-two equivalent units therefore reconcile to "
+                    "$250,000, $1,025,000, and $1,800,000. Equivalent units are a "
+                    "planning denominator, not a claim that every ultrasound "
+                    "console, surgical tower, veterinary monitor, or aesthetic "
+                    "platform sells at the same price. Exclude collected sales "
+                    "tax and refundable buyer deposits from revenue. Recognize "
+                    "equipment sales when the applicable control-transfer conditions "
+                    "are satisfied, including substantive acceptance provisions, "
+                    "rather than when inventory leaves the warehouse. Document "
+                    "whether quoted freight is part of the equipment transaction "
+                    "or a separate service. The invoice-to-revenue bridge prevents "
+                    "gross billings from silently replacing the canonical scorecard "
+                    "basis. In QuickBooks or an equivalent ledger, use inventory "
+                    "items and a serial register together; reconcile credits "
+                    "against their original invoices rather than burying them "
+                    "in miscellaneous expenses. Require the same reconciliation "
+                    "for returned devices subsequently resold under another invoice."
+                ),
+                (
+                    "The diagnostic refurbishment resale play buys title, controls "
+                    "repair work, and earns the equipment spread. At Base economics, "
+                    "a $12,500 purchase plus $1,750 parts, $1,250 contractor "
+                    "delivery labor, $750 logistics, and $500 expected warranty "
+                    "expense leaves $8,250 contribution on $25,000 recognized "
+                    "revenue before selling and fixed costs. Test the actual "
+                    "configuration: a console without a transferable software "
+                    "license or a usable probe can erase that contribution. "
+                    "Fallback to a documented return right, a lower acquisition "
+                    "price, or a parts-only disposition that is technically and "
+                    "commercially appropriate; never relabel a failed device as "
+                    "patient-ready. Surgical consignment is the second play and "
+                    "a different revenue model. If the operator acts as agent "
+                    "on a $25,000 sale and earns a disclosed 15% commission, "
+                    "operator revenue is $3,750, not $25,000. Deducting $900 "
+                    "inspection and freight coordination, $350 selling expense, "
+                    "and $250 expected dispute expense leaves $2,250 before "
+                    "fixed overhead. Keep this illustrative commission ledger "
+                    "outside the canonical owned-inventory cases. When ownership, "
+                    "service history, or software rights cannot be verified, "
+                    "return the consignment rather than funding repairs against "
+                    "an unenforceable promise of reimbursement."
+                ),
+                (
+                    "The supplied TRACK_2 mapping, "
+                    "mca_ucc_stacking_default_restructure_brokerage, is an adjacent "
+                    "cash-flow review activity, not a device acquisition shortcut. "
+                    "A changed UCC filing can prompt consensual outreach, but "
+                    "it does not prove default, establish a payoff amount, or "
+                    "authorize access to merchant records. With permission, verify "
+                    "contracts, bank debits, outstanding obligations, security "
+                    "interests, and the merchant's stated objective. An illustrative "
+                    "$100,000 obligation review might carry a disclosed $2,000 "
+                    "merchant fee and $1,000 counterparty fee only where permitted "
+                    "and accepted in writing. Subtract $1,000 specialist work, "
+                    "$400 acquisition CAC, and $600 expected refunds to leave "
+                    "$1,000 contribution before overhead. The $100,000 obligation "
+                    "is never operator revenue, and neither those fees nor that "
+                    "contribution enters the equipment scorecard. Dual-sided "
+                    "compensation requires clear conflict disclosure and a "
+                    "jurisdiction-specific review of licensing and fee rules. "
+                    "Do not propose undisclosed additional advances to disguise "
+                    "distress. If obligations, authority, or permissible compensation "
+                    "cannot be established, stop placement, refund improper fees, "
+                    "and refer the merchant to independent licensed restructuring "
+                    "counsel. Separately, require authorized lien releases before "
+                    "buying encumbered equipment; a restructuring conversation "
+                    "does not extinguish a secured party's rights."
+                ),
+            ],
+            "table": {
+                "caption": "Revenue Identity and Asset-Control Matrix for Three Distinct Operating Plays",
+                "headers": [
+                    "Transaction or control point",
+                    "Recognized operator revenue basis",
+                    "Evidence required before committing cash",
+                    "Failure response and economic consequence",
+                ],
+                "rows": [
+                    [
+                        "Owned diagnostic equipment sold after documented refurbishment",
+                        "$25,500 invoiced less $500 credits yields $25,000 revenue",
+                        "Signed purchase contract, serial photographs, and transferable software rights",
+                        "Reject unsupported configurations before purchasing expensive replacement components",
+                    ],
+                    [
+                        "Surgical consignment sold under an agency arrangement",
+                        "$25,000 buyer transaction yields only $3,750 commission revenue",
+                        "Owner authorization, commission terms, and custody responsibility schedule",
+                        "Return disputed inventory rather than treating principal as revenue",
+                    ],
+                    [
+                        "Consensual MCA obligation review with disclosed dual compensation",
+                        "$3,000 permitted disclosed fees exclude the $100,000 reviewed obligation",
+                        "Merchant permission, verified contracts, and written compensation disclosures",
+                        "Stop placement, refund improper fees, and refer independent counsel",
+                    ],
+                    [
+                        "Refundable deposit received before substantive buyer acceptance",
+                        "Record a deposit liability until recognition conditions are satisfied",
+                        "Contractual refund terms and clearly documented acceptance milestones",
+                        "Preserve liquidity for refunds instead of spending deposits twice",
+                    ],
+                    [
+                        "Equipment acquired from a seller with recorded security interests",
+                        "Purchase price becomes inventory cost after authorized title transfer",
+                        "Current lien search, payoff instructions, and authenticated release authorization",
+                        "Withhold acquisition funds until collateral release mechanics are verified",
+                    ],
+                    [
+                        "Patient-data storage discovered during intake or functional testing",
+                        "Data handling creates cost rather than additional equipment revenue",
+                        "Authorized handling scope, sanitization evidence, and restricted technician access",
+                        "Quarantine the device and fund remediation before buyer delivery",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy the complete transferable configuration, not the headline model",
+                "body": (
+                    "The profitable inventory record links the physical serial, "
+                    "licensed features, service evidence, and cash commitments."
+                ),
+                "items": [
+                    "Price probes, footswitches, carts, cables, and licensed options separately before agreeing to a bundled acquisition price.",
+                    "Request powered-on configuration evidence and error logs; chassis photographs cannot establish usable clinical functionality.",
+                    "Negotiate supplier payment milestones around documented inspection and title release instead of relying only on a price discount.",
+                    "Keep hospital acceptance criteria in the sales contract and obtain written completion evidence before starting the collection clock.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile every gross-to-net deduction to the canonical profit cases",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use the waterfall below as an explicitly illustrative cost "
+                    "allocation that reconciles exactly to the supplied scorecard, "
+                    "not as a claim that these expense accounts came from "
+                    "audited statements. Conservative recognized revenue of "
+                    "$250,000 supports $225,000 total deductions and $25,000 "
+                    "owner profit. Base revenue of $1,025,000 supports $861,000 "
+                    "deductions and $164,000 profit. Scaled revenue of "
+                    "$1,800,000 supports $1,404,000 deductions and $396,000 "
+                    "profit. Acquisition, refurbishment parts, contractor labor, "
+                    "logistics, and warranty expense are deducted before the "
+                    "contribution subtotal. Acquisition CAC, collection charges, "
+                    "and fixed operating expense follow it. Credits appear "
+                    "above recognized revenue and must not be deducted again "
+                    "below it. The implied purchase cost per equivalent unit "
+                    "falls from $13,000 to $12,500 to $12,000 as sourcing "
+                    "improves; the model does not assume that technicians "
+                    "magically become free. Parts, labor, and shipping also "
+                    "improve through repeat configurations and consolidated "
+                    "routes. Validate each reduction with vendor quotations "
+                    "and closed work orders. A low auction hammer price "
+                    "means little when buyer premiums, rigging, missing "
+                    "accessories, or a failed display are omitted from landed "
+                    "cost. Capitalize eligible acquisition costs consistently "
+                    "and reconcile inventory movements to the general ledger."
+                ),
+                (
+                    "Separate three different loss mechanisms. Commercial credits "
+                    "reduce transaction consideration: the model allows $500 "
+                    "per equivalent unit for negotiated concessions and expected "
+                    "sales reversals. Warranty expense funds post-sale obligations: "
+                    "$750, $500, and $400 per unit across the three cases. "
+                    "Inventory scrub means a pre-sale technical, title, data, "
+                    "or obsolescence review that can force rework or a write-down. "
+                    "The acquisition and parts budgets assume usable inventory; "
+                    "material scrap losses require an additional adjustment "
+                    "rather than an optimistic reclassification. Build reserve "
+                    "estimates by device family, failure mode, sale age, and "
+                    "actual claim severity. For example, a 5% probability of "
+                    "a $10,000 covered repair supports $500 expected warranty "
+                    "expense per sale, but one early failure still needs "
+                    "$10,000 of immediate cash. Credit accruals and warranty "
+                    "accruals are accounting estimates, not separate cash "
+                    "accounts automatically funded by posting entries. Maintain "
+                    "a liquidity buffer and reconcile settlements against the "
+                    "original estimates. Handle a returned device through both "
+                    "the sales reversal and its recoverable inventory value; "
+                    "deducting the full invoice and the full original purchase "
+                    "again would distort the cohort's actual economic loss."
+                ),
+                (
+                    "Contractor delivery labor means hands-on biomed inspection, "
+                    "repair, calibration, and commissioned installation included "
+                    "in the quoted sale. It is not a substitute label for "
+                    "customer acquisition or founder time. Base labor of "
+                    "$51,250 across forty-one units equals $1,250 per unit; "
+                    "a ten-hour allowance implies $125 per hour before any "
+                    "separately quoted travel. CAC is $750 per unit in "
+                    "Conservative and Base and $700 in Scaled, covering "
+                    "attributable selling work rather than equipment purchases. "
+                    "Payment and collection charges remain 1% of recognized "
+                    "revenue; actual card-heavy sales can exceed that assumption. "
+                    "The residual fixed expense is $32,500, $133,250, and "
+                    "$212,400, covering the modeled employee cash compensation "
+                    "and other fixed operating costs. Those amounts are "
+                    "reconciliation budgets, not demonstrated staffing quotes. "
+                    "In particular, $32,500 cannot fund two ordinary "
+                    "market-rate full-time employees plus premises and insurance. "
+                    "Treat the Conservative 2 FT + 4 C designation as "
+                    "capacity involving owner labor or otherwise supported "
+                    "resources until actual payroll proves feasibility. Owner "
+                    "profit here precedes personal taxes and distributions; "
+                    "unpaid owner replacement labor is not silently included. "
+                    "If replacing that labor adds $90,000 of annual expense, "
+                    "Conservative economic profit becomes negative $65,000 "
+                    "without changing the published canonical case."
+                ),
+            ],
+            "table": {
+                "caption": "Annual Equipment Resale Waterfall: Illustrative Allocations Reconciled to Canonical Outcomes",
+                "headers": [
+                    "Waterfall line and accounting treatment",
+                    "Conservative annual allocation and operating explanation",
+                    "Base annual allocation and operating explanation",
+                    "Scaled annual allocation and operating explanation",
+                ],
+                "rows": [
+                    [
+                        "Gross invoices before expected commercial credit adjustments",
+                        "$255,000 billed across ten equivalent equipment sales",
+                        "$1,045,500 billed across forty-one equivalent equipment sales",
+                        "$1,836,000 billed across seventy-two equivalent equipment sales",
+                    ],
+                    [
+                        "Subtract commercial credits before recognizing equipment revenue",
+                        "$5,000 credits equal $500 per equivalent sale",
+                        "$20,500 credits equal $500 per equivalent sale",
+                        "$36,000 credits equal $500 per equivalent sale",
+                    ],
+                    [
+                        "Recognized gross resale proceeds match the canonical scorecard",
+                        "$250,000 revenue excludes sales tax and refundable deposits",
+                        "$1,025,000 revenue excludes sales tax and refundable deposits",
+                        "$1,800,000 revenue excludes sales tax and refundable deposits",
+                    ],
+                    [
+                        "Subtract landed equipment acquisition costs assigned by serial",
+                        "$130,000 purchase cost equals $13,000 per unit",
+                        "$512,500 purchase cost equals $12,500 per unit",
+                        "$864,000 purchase cost equals $12,000 per unit",
+                    ],
+                    [
+                        "Subtract refurbishment parts and configuration restoration costs",
+                        "$20,000 parts budget equals $2,000 per unit",
+                        "$71,750 parts budget equals $1,750 per unit",
+                        "$108,000 parts budget equals $1,500 per unit",
+                    ],
+                    [
+                        "Subtract contractor delivery labor for biomed and installation",
+                        "$15,000 contractor cost equals $1,500 per unit",
+                        "$51,250 contractor cost equals $1,250 per unit",
+                        "$72,000 contractor cost equals $1,000 per unit",
+                    ],
+                    [
+                        "Subtract transport, packing, rigging, and delivery logistics",
+                        "$10,000 logistics cost equals $1,000 per unit",
+                        "$30,750 logistics cost equals $750 per unit",
+                        "$50,400 logistics cost equals $700 per unit",
+                    ],
+                    [
+                        "Subtract expected warranty expense without duplicating sales credits",
+                        "$7,500 warranty expense equals $750 per unit",
+                        "$20,500 warranty expense equals $500 per unit",
+                        "$28,800 warranty expense equals $400 per unit",
+                    ],
+                    [
+                        "Contribution subtotal after equipment and delivery obligations",
+                        "$67,500 contribution equals 27% of recognized revenue",
+                        "$338,250 contribution equals 33% of recognized revenue",
+                        "$676,800 contribution equals 37.6% of recognized revenue",
+                    ],
+                    [
+                        "Subtract customer acquisition CAC excluding inventory purchase spending",
+                        "$7,500 selling expense equals $750 per unit",
+                        "$30,750 selling expense equals $750 per unit",
+                        "$50,400 selling expense equals $700 per unit",
+                    ],
+                    [
+                        "Subtract payment processing and ordinary collection service charges",
+                        "$2,500 collection expense equals 1% of revenue",
+                        "$10,250 collection expense equals 1% of revenue",
+                        "$18,000 collection expense equals 1% of revenue",
+                    ],
+                    [
+                        "Subtract modeled fixed compensation, premises, insurance, and administration",
+                        "$32,500 fixed budget requires explicit owner-labor feasibility review",
+                        "$133,250 fixed budget requires verified payroll and premises quotations",
+                        "$212,400 fixed budget requires verified payroll and premises quotations",
+                    ],
+                    [
+                        "Annual owner net profit after all modeled deductions",
+                        "$25,000 owner profit preserves the canonical 10% margin",
+                        "$164,000 owner profit preserves the canonical 16.0% margin",
+                        "$396,000 owner profit preserves the canonical 22% margin",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Fund acceptance delays, DSO, and payout locks before buying inventory",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Cash conversion begins when the supplier receives money, "
+                    "not when accounting recognizes a sale. In the Base "
+                    "calendar, pay $12,500 acquisition cost on day zero, "
+                    "$3,000 combined parts and labor around day twenty, "
+                    "and $750 logistics around day thirty. Complete "
+                    "substantive buyer acceptance on day forty-five, collect "
+                    "under thirty-day terms on day seventy-five, and receive "
+                    "unrestricted processor funds after a fifteen-day payout "
+                    "lock on day ninety. This separates forty-five inventory "
+                    "and acceptance days, thirty DSO days, and fifteen "
+                    "additional restricted-cash days. If a platform reports "
+                    "DSO through final payout, do not add its hold period "
+                    "again. With no supplier credit, the planning cash "
+                    "conversion interval is ninety days. A conservative "
+                    "prefunding approximation places the full $16,250 "
+                    "direct cash cost at the start: forty-one annual "
+                    "units divided by 365, multiplied by ninety days "
+                    "and $16,250, requires approximately $164,281. Actual "
+                    "staged disbursements reduce average funding, while "
+                    "clustered auction purchases increase peak funding. "
+                    "Use the approximation for an initial capital screen "
+                    "and a weekly serial-level cash schedule for purchase "
+                    "authorization. Neither an issued invoice nor a processor "
+                    "balance under restriction can pay the next supplier."
+                ),
+                (
+                    "Apply the same conservative prefunding method to all "
+                    "three cases. Conservative uses $17,500 direct cash "
+                    "cost per unit and 120 conversion days, creating "
+                    "approximately $57,534 of direct working capital. Base "
+                    "requires $164,281 at ninety days. Scaled uses "
+                    "$15,200 per unit and seventy-five days, requiring "
+                    "approximately $224,877. Add a fixed-expense runway "
+                    "covering each conversion interval: approximately "
+                    "$10,685, $32,856, and $43,644. Add separate "
+                    "illustrative liquidity cushions of $10,000, $25,000, "
+                    "and $40,000 for claim timing, selling costs, "
+                    "refunds, and uneven receipts. The resulting screening "
+                    "targets are approximately $78,219, $222,137, and "
+                    "$308,521 before extraordinary setup costs or debt "
+                    "service. These targets fit inside the supplied "
+                    "$75,000–$400,000 startup range but do not establish "
+                    "that its lower bound supports every operating case. "
+                    "The cushions are cash-planning allowances, not "
+                    "additional deductions from canonical profit. Replace "
+                    "them with observed weekly peaks as evidence accumulates. "
+                    "A $10,000 refundable customer deposit can reduce "
+                    "temporary external funding only if its contractual "
+                    "use permits that treatment and refund liquidity "
+                    "remains available. Maintain a deposit liability and "
+                    "never count the same deposit as both earned profit "
+                    "and unrestricted emergency reserves."
+                ),
+                (
+                    "Attack float through contract mechanics before borrowing "
+                    "against it. Obtain equipment-specific acceptance tests, "
+                    "named receiving personnel, delivery appointments, and "
+                    "purchase-order matching instructions before dispatch. "
+                    "A hospital invoice rejected for an incorrect entity "
+                    "name can age for weeks despite a functioning device. "
+                    "Negotiate supplier terms only when the discount "
+                    "foregone is cheaper than the funding benefit; a "
+                    "2% discount lost for thirty extra days represents "
+                    "an expensive source of short-term credit. Obtain "
+                    "actual marketplace and processor hold terms instead "
+                    "of assuming immediate ACH availability. Where deposits "
+                    "are practical, match them to evidenced procurement "
+                    "or refurbishment milestones and clearly state refund "
+                    "conditions. When a receivables facility is considered, "
+                    "model its interest, minimum charges, recourse, "
+                    "concentration limits, and disputed-invoice exclusions "
+                    "outside the unchanged canonical case. A lender "
+                    "advance against an invoice is debt proceeds, not "
+                    "a second equipment sale. Forecast unrestricted cash "
+                    "weekly over thirteen weeks, connecting each payment "
+                    "to a serial and each collection to an acceptance "
+                    "event. Pause purchases when the stressed forecast "
+                    "cannot cover existing service commitments and refunds. "
+                    "Liquidating a slow device at a measured loss can "
+                    "preserve more enterprise value than financing another "
+                    "quarter of warehouse optimism."
+                ),
+            ],
+            "table": {
+                "caption": "Cash-Conversion and Capital Screen Using Explicit Prefunding Assumptions",
+                "headers": [
+                    "Funding driver and calculation convention",
+                    "Conservative cash calendar and resulting requirement",
+                    "Base cash calendar and resulting requirement",
+                    "Scaled cash calendar and resulting requirement",
+                ],
+                "rows": [
+                    [
+                        "Direct cash cost excludes warranty accrual and fixed overhead",
+                        "$17,500 per unit funds acquisition, parts, labor, and logistics",
+                        "$16,250 per unit funds acquisition, parts, labor, and logistics",
+                        "$15,200 per unit funds acquisition, parts, labor, and logistics",
+                    ],
+                    [
+                        "Inventory acceptance interval before recognized sale and receivable",
+                        "Sixty days cover intake, refurbishment, delivery, and buyer acceptance",
+                        "Forty-five days cover intake, refurbishment, delivery, and buyer acceptance",
+                        "Thirty-five days cover intake, refurbishment, delivery, and buyer acceptance",
+                    ],
+                    [
+                        "Collection and payout intervals follow the acceptance event",
+                        "Forty-five DSO days plus fifteen payout-lock days follow acceptance",
+                        "Thirty DSO days plus fifteen payout-lock days follow acceptance",
+                        "Thirty DSO days plus ten payout-lock days follow acceptance",
+                    ],
+                    [
+                        "Direct capital uses annual units times cost times days divided by 365",
+                        "$57,534 rounded prefunding covers 120 days with zero supplier credit",
+                        "$164,281 rounded prefunding covers ninety days with zero supplier credit",
+                        "$224,877 rounded prefunding covers seventy-five days with zero supplier credit",
+                    ],
+                    [
+                        "Fixed runway and separate liquidity cushion supplement direct capital",
+                        "$10,685 fixed runway plus $10,000 cushion supports timing variation",
+                        "$32,856 fixed runway plus $25,000 cushion supports timing variation",
+                        "$43,644 fixed runway plus $40,000 cushion supports timing variation",
+                    ],
+                    [
+                        "Total screening capital excludes exceptional setup costs and debt service",
+                        "$78,219 rounded total requires validation against weekly peak disbursements",
+                        "$222,137 rounded total requires validation against weekly peak disbursements",
+                        "$308,521 rounded total requires validation against weekly peak disbursements",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Create the serial-level cash commitment",
+                    "action": "Record supplier payments, quoted parts, technician milestones, and freight dates before bidding.",
+                    "detail": "Include lien-release conditions and distinguish refundable deposits from earned customer receipts.",
+                },
+                {
+                    "step": 2,
+                    "title": "Attach acceptance and payout evidence",
+                    "action": "Link buyer acceptance terms, invoice requirements, due dates, and processor restrictions to each sale.",
+                    "detail": "Use the unrestricted bank-availability date rather than a marketplace dashboard balance.",
+                },
+                {
+                    "step": 3,
+                    "title": "Run the thirteen-week downside forecast",
+                    "action": "Shift collections thirty days later and insert the largest plausible near-term warranty claim.",
+                    "detail": "Compare weekly unrestricted cash with supplier obligations, payroll, refund exposure, and service commitments.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release only funded purchases",
+                    "action": "Approve a purchase only when its stressed cash schedule remains supportable.",
+                    "detail": "If funding fails, renegotiate milestones, choose consignment, reduce the bid, or decline the device.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Stress the spread and convert technical defects into explicit cash decisions",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run sensitivities against unchanged throughput before "
+                    "assuming sales growth will repair weak economics. "
+                    "A 10% acquisition-cost increase reduces annual owner "
+                    "profit to $12,000 Conservative, $112,750 Base, "
+                    "and $309,600 Scaled. A five-percentage-point reduction "
+                    "in realized selling price is different: using a "
+                    "5% reduction in recognized revenue and holding all "
+                    "modeled costs constant produces $12,500, $112,750, "
+                    "and $306,000 profit. An additional warranty expense "
+                    "equal to 2% of original recognized revenue leaves "
+                    "$20,000, $143,500, and $360,000. Combining the "
+                    "acquisition shock and that warranty shock leaves "
+                    "$7,000, $92,250, and $273,600. These are "
+                    "stress outcomes, not replacements for the canonical "
+                    "scorecard. Extending collections thirty days changes "
+                    "liquidity first: the direct prefunding requirement "
+                    "rises by approximately $14,384, $54,760, and "
+                    "$89,951. If that incremental requirement remains "
+                    "outstanding for a full year at 12%, annual "
+                    "interest is approximately $1,726, $6,571, and "
+                    "$10,794. A one-time thirty-day loan instead incurs "
+                    "interest only for its actual duration. Add any "
+                    "fees separately and avoid confusing a recurring "
+                    "working-capital balance with a single delayed invoice."
+                ),
+                (
+                    "Technical and statutory checks determine which losses "
+                    "belong in those sensitivities. Under 21 CFR 807.20, "
+                    "registration and listing duties depend on the "
+                    "establishment's actual activities; a resale label "
+                    "does not settle whether work constitutes manufacturing "
+                    "or remanufacturing. Use FDA's servicing-versus-remanufacturing "
+                    "framework to assess changes to intended use, "
+                    "performance, or safety specifications, and document "
+                    "the device-specific conclusion before expanding work "
+                    "scope. Where the operator is a covered manufacturer, "
+                    "21 CFR 820.10 establishes applicable quality "
+                    "management system requirements. Allocate the resulting "
+                    "inspection, documentation, and corrective-work costs "
+                    "rather than assuming all repairs are interchangeable "
+                    "bench labor. Separately, 45 CFR 164.310(d)(2)(i) "
+                    "and (ii) address disposal and media reuse for "
+                    "regulated entities handling electronic protected health "
+                    "information. Determine whether the reseller's services "
+                    "create business-associate duties; removing a patient "
+                    "name from the startup screen is not complete "
+                    "sanitization. Require validated media handling and "
+                    "device-appropriate decontamination evidence without "
+                    "destroying calibration or software functionality. "
+                    "Human-use, veterinary, and aesthetic configurations "
+                    "can have different intended-use and state licensing "
+                    "implications. Confirm the actual jurisdiction and "
+                    "device category instead of treating every used "
+                    "medical machine as subject to identical requirements."
+                ),
+                (
+                    "Close each month with an exception review that "
+                    "connects reserves, physical inventory, and collectible "
+                    "receivables. For each aging serial, compare its "
+                    "current achievable selling price with remaining "
+                    "repair cost, freight, likely concessions, and "
+                    "warranty exposure. Obtain a real buyer indication "
+                    "or parts bid rather than rolling forward the "
+                    "original listing price. For every reversal, identify "
+                    "whether the root cause was a missing accessory, "
+                    "misdescribed software entitlement, failed acceptance "
+                    "test, incomplete data handling, or an unpaid "
+                    "purchase order. Feed those findings into acquisition "
+                    "limits and the next cohort's reserve assumptions. "
+                    "Measure service-history indexing by the reduction "
+                    "in technician search hours and duplicated tests, "
+                    "not by how many documents were uploaded. Measure "
+                    "inventory automation by fewer serial mismatches, "
+                    "faster aging reports, and recovered accessories. "
+                    "In the Base case, saving two contractor hours "
+                    "per unit at $125 across forty-one units creates "
+                    "$10,250 of potential annual benefit before software "
+                    "and implementation costs; book it only after "
+                    "invoices confirm the reduction. The practical "
+                    "decision rule is simple: buy only when documented "
+                    "resale contribution survives a credible defect "
+                    "scenario and the cash forecast survives delayed "
+                    "acceptance. A margin percentage cannot rescue "
+                    "inventory that cannot lawfully or practically ship."
+                ),
+            ],
+            "table": {
+                "caption": "Downside Sensitivities: Profit Shocks Separated from Additional Cash Requirements",
+                "headers": [
+                    "Stress applied to unchanged canonical baseline",
+                    "Conservative resulting profit or capital effect",
+                    "Base resulting profit or capital effect",
+                    "Scaled resulting profit or capital effect",
+                ],
+                "rows": [
+                    [
+                        "Acquisition cost increases 10% while all other assumptions remain unchanged",
+                        "$12,000 annual profit remains after $13,000 additional acquisition cost",
+                        "$112,750 annual profit remains after $51,250 additional acquisition cost",
+                        "$309,600 annual profit remains after $86,400 additional acquisition cost",
+                    ],
+                    [
+                        "Recognized selling revenue decreases 5% while all modeled costs remain unchanged",
+                        "$12,500 annual profit remains on $237,500 recognized equipment revenue",
+                        "$112,750 annual profit remains on $973,750 recognized equipment revenue",
+                        "$306,000 annual profit remains on $1,710,000 recognized equipment revenue",
+                    ],
+                    [
+                        "Warranty expense increases by 2% of original recognized equipment revenue",
+                        "$20,000 annual profit remains after $5,000 additional warranty expense",
+                        "$143,500 annual profit remains after $20,500 additional warranty expense",
+                        "$360,000 annual profit remains after $36,000 additional warranty expense",
+                    ],
+                    [
+                        "Combine the acquisition shock with the additional warranty expense",
+                        "$7,000 annual profit remains after $18,000 combined additional costs",
+                        "$92,250 annual profit remains after $71,750 combined additional costs",
+                        "$273,600 annual profit remains after $122,400 combined additional costs",
+                    ],
+                    [
+                        "Collection extends thirty days without changing recognition or operating expenses",
+                        "$14,384 additional direct cash funding precedes any borrowing expense",
+                        "$54,760 additional direct cash funding precedes any borrowing expense",
+                        "$89,951 additional direct cash funding precedes any borrowing expense",
+                    ],
+                    [
+                        "Finance the incremental delay balance for one full year at 12%",
+                        "$1,726 approximate annual interest excludes lender fees and other changes",
+                        "$6,571 approximate annual interest excludes lender fees and other changes",
+                        "$10,794 approximate annual interest excludes lender fees and other changes",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before funds leave the acquisition account",
+                "body": (
+                    "Release purchasing cash only after commercial rights, "
+                    "technical condition, reserve sufficiency, and liquidity "
+                    "have documentary support."
+                ),
+                "items": [
+                    "Verify seller authority, serial identity, transferable software rights, and any required secured-party release before paying the equipment seller.",
+                    "Verify device-specific inspection, decontamination, data sanitization, and servicing-versus-remanufacturing scope before promising patient-ready delivery.",
+                    "Verify landed acquisition cost, contractor quotations, expected credits, warranty exposure, and attainable selling price against the stressed contribution model.",
+                    "Verify the thirteen-week cash forecast using acceptance delays, DSO, actual payout restrictions, refundable deposits, and one severe warranty claim.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The spread belongs to the operator only after the device works, the title transfers, and the cash clears.",
+    "diagram_id": "diag-03",
+    "action_checklist": [
+        "Build a serial-level invoice bridge separating gross billings, expected credits, recognized equipment revenue, taxes, and refundable deposits.",
+        "Reconcile ten, forty-one, and seventy-two equivalent sales to the exact Conservative, Base, and Scaled revenue and owner-profit totals.",
+        "Obtain written acquisition, parts, biomed labor, freight, software-transfer, and warranty inputs before accepting a target purchase price.",
+        "Maintain separate ledgers for owned-equipment resale, agent consignment commissions, and any permitted disclosed restructuring fees.",
+        "Prepare a thirteen-week cash forecast with inventory days, DSO, payout locks, supplier terms, claim payments, and restricted deposits shown separately.",
+        "Stress acquisition costs, selling prices, warranty severity, and thirty-day collection delays before releasing the next inventory purchase.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "21 CFR 807.20 — Establishment registration and device listing obligations",
+            "url": "https://www.ecfr.gov/current/title-21/section-807.20",
+            "relevance": (
+                "Determine registration and listing duties from actual device "
+                "activities rather than assuming the resale business label "
+                "resolves manufacturing or remanufacturing status."
+            ),
+        },
+        {
+            "title": "21 CFR 820.10 — Requirements for a quality management system",
+            "url": "https://www.ecfr.gov/current/title-21/section-820.10",
+            "relevance": (
+                "Where the operator falls within covered manufacturer duties, "
+                "budget the applicable quality management system work instead "
+                "of treating it as ordinary unrecorded repair overhead."
+            ),
+        },
+        {
+            "title": "45 CFR 164.310(d) — Device and media controls",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.310",
+            "relevance": (
+                "Disposal and media-reuse requirements inform authorized "
+                "handling and sanitization of equipment containing electronic "
+                "protected health information by regulated entities."
+            ),
+        },
+        {
+            "title": "45 CFR 164.502(e) — Disclosures to business associates",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.502",
+            "relevance": (
+                "Evaluate whether equipment handling services involve "
+                "business-associate relationships and associated safeguards "
+                "before accessing stored patient information."
+            ),
+        },
+        {
+            "title": "California Commercial Code Section 9315 — Security interests following disposition",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9315.&lawCode=COM",
+            "relevance": (
+                "California's enacted UCC provision illustrates why a security "
+                "interest may continue after collateral disposition unless "
+                "an authorization or other applicable rule changes the result; "
+                "check the governing jurisdiction before purchasing."
+            ),
+        },
+        {
+            "title": "California Commercial Code Section 9610 — Disposition of collateral after default",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9610.&lawCode=COM",
+            "relevance": (
+                "For applicable California secured-party dispositions, review "
+                "commercially reasonable sale requirements rather than "
+                "treating a UCC filing as authority to seize or sell equipment."
+            ),
+        },
+    ],
+}

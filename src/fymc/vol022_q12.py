@@ -1,0 +1,751 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-30-day-launch-sprint-kill-fix-scale-gates",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching medical equipment resale, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Six-Person Launch Pod for Ultrasound, Surgical Equipment, and Veterinary Resale: Biomed Release, FDA Classification, HIPAA Data Handling, and Cash-Controlled Inventory",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #14, Medical Equipment Resale, ranks #22 with a Money-to-Manpower "
+        "Score of 64/100. This sprint maps three concrete operator plays: diagnostic "
+        "ultrasound resale, nonimplantable surgical equipment resale, and veterinary "
+        "ultrasound resale. The first month purchases evidence before inventory: "
+        "documented buyer demand, transferable ownership, device-specific biomed "
+        "testing, decontamination records, and verified data removal. A 2 FT + 4 C "
+        "pod works within a $15,000 monthly operating cash ceiling and a $15,000 "
+        "initial inventory exposure limit. Day 30/60/90 decisions distinguish "
+        "repairable commercial gaps from stop-work safety failures. Canonical annual "
+        "owner net profits remain $25,000 Conservative, $164,000 Base, and $396,000 "
+        "Scaled. Because first deals normally require 3–9 months, early Scale "
+        "decisions authorize controlled learning, not speculative purchasing."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
+            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,025,000",
+            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,800,000",
+            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
+            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1–7: Narrow Three Plays and Protect the First $75,000",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat the first week as an evidence sprint rather than an auction "
+                    "shopping trip. Candidate #14 has a 64/100 score because capital "
+                    "exposure and hands-on verification constrain leverage; a clean "
+                    "spreadsheet cannot neutralize an obsolete probe or disputed title. "
+                    "For this chapter, map exactly three launch plays: diagnostic "
+                    "ultrasound resale to outpatient practices, nonimplantable surgical "
+                    "equipment resale to surgery centers, and veterinary ultrasound "
+                    "resale to established clinics. These are execution lanes, not "
+                    "additional scorecard candidates. Start with one supported model "
+                    "family per lane and select one winner before buying. Aesthetic "
+                    "lasers remain a research-only adjacent category until the team "
+                    "documents model-specific service access, calibration capability, "
+                    "buyer restrictions, and insurance coverage. Assign FT1 to sourcing, "
+                    "buyer discovery, pricing, and collections; assign FT2 to custody, "
+                    "documentation, inventory control, and release coordination. The "
+                    "four contractors cover biomedical inspection, specialist repair "
+                    "and decontamination, equipment logistics, and device regulatory "
+                    "plus data-security review. Select contractors whose actual "
+                    "credentials cover those scopes; do not assume one generalist can "
+                    "certify every device. Their booked hours must fit the cash plan. "
+                    "No person substitutes sales urgency for independent technical "
+                    "acceptance, and neither founder releases their own undocumented "
+                    "repair."
+                ),
+                (
+                    "Use the lower end of the stated $75,000–$400,000 startup range "
+                    "to make scarcity explicit. Illustratively allocate $45,000 to "
+                    "three months of operating cash, $15,000 to initial inventory "
+                    "exposure, and $15,000 to an untouched exception reserve. The "
+                    "monthly operating ceiling is $15,000, within the canonical "
+                    "$5,000–$22,000 range: $6,500 for combined founder cash pay, $3,500 "
+                    "for the contractor pool, $2,000 for storage and insurance, and "
+                    "$3,000 for software, professional review, sourcing travel, and "
+                    "general shipping. These are planning allocations, not market "
+                    "salary claims; record deferred founder compensation separately "
+                    "and include economically required labor in pricing. Device "
+                    "acquisition, committed repairs, and attributable freight together "
+                    "consume the $15,000 inventory envelope. Allocate contractor work "
+                    "between overhead and unit cost without counting it twice. Stop "
+                    "new discretionary commitments when actual plus committed monthly "
+                    "operating cash reaches $12,000; the remaining $3,000 completes "
+                    "existing obligations. Never bridge a shortfall with refundable "
+                    "buyer deposits. The initial $75,000 supports only this bounded "
+                    "test, not the full nine-month sales horizon. Before Day 60, "
+                    "secure additional runway or reduce future commitments enough "
+                    "to preserve orderly closure and customer obligations."
+                ),
+                (
+                    "Build the evidence ledger on Day 1 in Airtable or an equivalent "
+                    "access-controlled inventory database, with QuickBooks Online "
+                    "holding accounting rather than technical truth. Give every "
+                    "candidate a permanent asset identifier and fields for model, "
+                    "serial, accessories, seller ownership, lien inquiry, service "
+                    "history, software entitlement, decontamination, data status, "
+                    "biomed results, location, and disposition. Index documents by "
+                    "asset identifier in a restricted document repository; never "
+                    "upload patient records merely to make service histories "
+                    "searchable. By Day 7, complete twelve discovery interviews, "
+                    "four in each play, and obtain at least six written sourcing "
+                    "leads. An interview counts only when an authorized buyer states "
+                    "their application, budget range, purchase horizon, required "
+                    "accessories, and acceptance criteria. A supplier lead counts "
+                    "only with model, serial evidence, asking price, and authority "
+                    "to sell. Use FDA classification resources and current "
+                    "device-specific requirements to separate ordinary resale from "
+                    "activities that could constitute manufacturing or remanufacturing. "
+                    "Check applicable state requirements for the seller location, "
+                    "storage location, and intended destination. Record the basis "
+                    "for each decision and the responsible reviewer. The weekly "
+                    "deliverable is a ranked model-family shortlist with explicit "
+                    "exclusions, not a warehouse full of discounted equipment."
+                ),
+            ],
+            "table": {
+                "caption": "Week One Daily Ownership, Demand, and Capital Deliverables",
+                "headers": [
+                    "Execution day and accountable pod role",
+                    "Required operator action for that day",
+                    "Evidence retained in the asset workspace",
+                    "Quantitative completion test and next action",
+                ],
+                "rows": [
+                    [
+                        "Day 1: both founders establish operating boundaries",
+                        "Assign three plays, six roles, and restricted document access",
+                        "Signed role map, scope exclusions, and initial cash allocation",
+                        "Approve $15,000 monthly operations and $15,000 inventory ceilings",
+                    ],
+                    [
+                        "Day 2: sourcing founder maps prospective buyers",
+                        "Build thirty named accounts across the three selected plays",
+                        "Buyer applications, contact roles, and equipment purchasing responsibilities",
+                        "Record ten accounts per play before starting interviews",
+                    ],
+                    [
+                        "Day 3: operations founder qualifies contractor capacity",
+                        "Interview four contractors against device-specific work and insurance needs",
+                        "Scopes, credentials, availability, rates, and insurance certificates retained",
+                        "Secure four written scopes within the monthly contractor allocation",
+                    ],
+                    [
+                        "Day 4: sourcing founder begins structured discovery",
+                        "Interview six buyers about budgets, accessories, and purchase timing",
+                        "Dated interview notes identifying actual acceptance and installation requirements",
+                        "Complete two qualified conversations within each selected resale play",
+                    ],
+                    [
+                        "Day 5: operations founder reviews acquisition eligibility",
+                        "Screen ownership evidence, recalls, service access, and license transfer",
+                        "Six supplier dossiers with serial evidence and asking prices",
+                        "Reject every candidate lacking documented seller authority to transfer",
+                    ],
+                    [
+                        "Day 6: sourcing founder completes demand comparison",
+                        "Interview six additional buyers and score model-family fit",
+                        "Twelve comparable buyer records with written application requirements",
+                        "Retain one supported model family for each selected play",
+                    ],
+                    [
+                        "Day 7: both founders reconcile evidence and cash",
+                        "Rank three lanes and publish the first exception register",
+                        "Shortlist, committed-spend ledger, and reviewer ownership for unresolved issues",
+                        "Proceed only with twelve interviews and six documented leads",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy the Complete Clinical Configuration, Not the Attractive Console",
+                "body": "Experienced resellers price the missing pieces before they negotiate the visible machine.",
+                "items": [
+                    "Photograph probe model numbers, connector pins, cable strain relief, and serial labels; a console price without usable probes is an incomplete acquisition quote.",
+                    "Ask the OEM or authorized service channel about software entitlement transfer before purchase; a working demonstration does not establish transferable feature rights.",
+                    "Request the hospital surplus release and any lender payoff evidence together; the department disposing of equipment may not control encumbered title.",
+                    "Quote liftgate, inside delivery, stairs, crating, and declared-value protection separately; a low freight estimate can disappear at the receiving dock.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8–14: Turn Supplier Claims into Releasable Asset Evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Week two converts a promising listing into an inspectable asset "
+                    "without assuming ownership prematurely. Request a serial-specific "
+                    "document packet before traveling: proof of authority, maintenance "
+                    "records, configuration screenshots with patient information "
+                    "excluded, accessory inventory, incident disclosures, and storage "
+                    "conditions. Search FDA recalls by manufacturer and model, then "
+                    "establish whether the serial falls within affected production "
+                    "and whether the corrective action was completed. The absence "
+                    "of a search result is not a service certificate. For financed "
+                    "equipment, obtain appropriate lien searches and a release or "
+                    "authorized disposition where required; UCC section 9-315 explains "
+                    "why a security interest can continue after disposition. Have "
+                    "the biomedical contractor write model-specific acceptance tests "
+                    "before inspecting: ultrasound image uniformity, probe integrity, "
+                    "ports, battery condition, and supported software are examples, "
+                    "not a universal test standard. Surgical tables require load, "
+                    "articulation, braking, accessory fit, and applicable electrical "
+                    "checks under the manufacturer's procedures. Veterinary use "
+                    "does not excuse unreliable hardware or contaminated accessories. "
+                    "By Day 10, require three complete inspection dossiers and two "
+                    "independent service estimates. A seller who blocks serial "
+                    "verification or controlled inspection leaves the acquisition "
+                    "queue immediately, regardless of the advertised discount."
+                ),
+                (
+                    "Design custody so the team can prove what happened between "
+                    "pickup and buyer acceptance. The logistics contractor photographs "
+                    "the serial, cosmetic condition, accessories, packaging, and "
+                    "handoff at each transfer. Mark incoming equipment quarantined "
+                    "until decontamination and technical checks are complete. Follow "
+                    "manufacturer-compatible cleaning methods and document chemicals, "
+                    "contact times, operator identity, and limitations; surface "
+                    "cleaning does not establish that an invasive accessory is "
+                    "sterile or reusable. Exclude single-use accessories from any "
+                    "informal reuse plan. For data-bearing equipment, ask the seller "
+                    "to remove patient information before transfer and obtain "
+                    "evidence, then independently verify accessible storage and "
+                    "configured network destinations. Factory reset alone may leave "
+                    "DICOM studies, removable media, credentials, or service logs. "
+                    "Use manufacturer-supported erasure or media replacement methods "
+                    "that preserve safe device function and transferable software "
+                    "rights. Where the reseller performs services involving protected "
+                    "health information for a covered entity, assess business "
+                    "associate status and establish the required agreement before "
+                    "access. Apply 45 CFR 164.310(d) disposal and reuse safeguards "
+                    "where applicable. An accidental patient-data discovery triggers "
+                    "isolation and the agreed incident process, not screenshots in "
+                    "the sales chat. Release records contain verification results, "
+                    "not copies of the patient material removed."
+                ),
+                (
+                    "Keep the servicing boundary visible in every work order. "
+                    "Restoring a device to its original specifications differs from "
+                    "changing intended use or significantly altering safety or "
+                    "performance; actual activities determine whether remanufacturing "
+                    "obligations arise. Do not represent an ordinary resale business "
+                    "as automatically subject to every manufacturer requirement, "
+                    "and do not assume the word refurbished creates an exemption. "
+                    "The reviewer determines the relevant obligations under the "
+                    "Federal Food, Drug, and Cosmetic Act and implementing rules, "
+                    "including 21 CFR Part 820 when the activity makes the business "
+                    "a covered manufacturer. Prescription-device distribution and "
+                    "labeling under 21 CFR 801.109 require a separate device-specific "
+                    "review. Check intended application, buyer eligibility, labeling, "
+                    "and destination before issuing a binding offer. On Day 12, "
+                    "run a mock release using one complete dossier; every missing "
+                    "record becomes a named corrective task. On Day 13, compare "
+                    "the three plays using verified demand, supported service "
+                    "access, all-in cash exposure, and probable time to acceptance. "
+                    "On Day 14, select one pilot asset or record a deliberate "
+                    "no-purchase decision. Both outcomes are valid if they protect "
+                    "capital and document why the evidence did or did not support "
+                    "a transaction."
+                ),
+            ],
+            "table": {
+                "caption": "Week Two Serial-Level Inspection, Data, and Release Schedule",
+                "headers": [
+                    "Execution day and responsible verification role",
+                    "Asset control work completed before purchase",
+                    "Specific evidence required for the release dossier",
+                    "Failure response and measurable completion standard",
+                ],
+                "rows": [
+                    [
+                        "Day 8: operations founder requests complete seller packets",
+                        "Collect ownership, serial, accessory, service, and configuration evidence",
+                        "Three candidate packets linked to permanent asset identifiers",
+                        "Keep all three candidates unpurchased until document review finishes",
+                    ],
+                    [
+                        "Day 9: regulatory contractor evaluates device-specific restrictions",
+                        "Review recalls, intended use, prescription status, and state requirements",
+                        "Written applicability decisions naming sources and unresolved device questions",
+                        "Remove candidates with unresolved distribution or intended-use barriers",
+                    ],
+                    [
+                        "Day 10: biomedical contractor specifies acceptance testing",
+                        "Inspect three dossiers and obtain two independent service estimates",
+                        "Model-specific test protocols with tolerances and required test instruments",
+                        "Reject untestable devices rather than substituting seller demonstration videos",
+                    ],
+                    [
+                        "Day 11: specialist contractor validates contamination and data controls",
+                        "Define compatible cleaning and manufacturer-supported storage sanitization methods",
+                        "Cleaning records, media map, and patient-data handling responsibilities",
+                        "Require documented methods for every storage medium and accessory",
+                    ],
+                    [
+                        "Day 12: operations founder rehearses a complete release",
+                        "Trace one sample asset through custody and acceptance documents",
+                        "Mock release packet with every missing item assigned",
+                        "Allow zero unresolved safety or data-control items before release",
+                    ],
+                    [
+                        "Day 13: both founders compare three acquisition lanes",
+                        "Rank demand evidence, service support, cost, and acceptance timing",
+                        "Three comparable lane scorecards using the same cost definitions",
+                        "Select one primary lane without expanding total inventory exposure",
+                    ],
+                    [
+                        "Day 14: sourcing founder negotiates a conditional pilot",
+                        "Agree inspection rights, accessories, title evidence, and payment milestones",
+                        "Serial-specific draft purchase terms and documented withdrawal conditions",
+                        "Purchase only when all-in committed exposure stays below $15,000",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Independent Checks Before Money or Equipment Moves",
+                "body": "Commercial interest never substitutes for the evidence needed to own, handle, or release a device.",
+                "items": [
+                    "Ownership check: match seller authority, serial evidence, and applicable lien release before paying an acquisition balance.",
+                    "Technical check: require signed model-specific biomed results and completed corrective work before removing quarantine status.",
+                    "Data and contamination check: verify compatible decontamination and storage sanitization, with every exception resolved before outbound release.",
+                    "Commercial check: obtain a qualified buyer profile, complete landed-cost worksheet, and cash forecast that preserves the $15,000 exception reserve.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Days 15–21: Sell a Documented Configuration and Test the Unit Economics",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Week three tests whether a buyer will pay for the exact "
+                    "configuration the pod can deliver, rather than for a generic "
+                    "model name. Prepare a serial-specific offer with dated condition "
+                    "photographs, included probes or accessories, supported software "
+                    "features, test results, delivery responsibilities, installation "
+                    "boundaries, and acceptance criteria. Use eBay Business and "
+                    "Industrial, DOTmed, direct outreach, and local service partners "
+                    "as discovery channels, while following each channel's applicable "
+                    "listing rules. Asking prices indicate competition, not realized "
+                    "value; preserve closed-sale evidence or actual written buyer "
+                    "responses separately. Send at least six offers by Day 21, "
+                    "covering all three plays, but describe unowned equipment "
+                    "accurately as subject to availability and inspection. Do not "
+                    "publish patient-bearing screen images or claim OEM certification "
+                    "without substantiation. A qualified offer identifies the buyer, "
+                    "application, configuration, total delivered price, expected "
+                    "decision date, and unresolved conditions. Require a named "
+                    "clinical or technical acceptance contact, not merely an "
+                    "enthusiastic intermediary. For diagnostic and veterinary "
+                    "ultrasound, demonstrate the required application using suitable "
+                    "test methods rather than repurposed patient studies. For "
+                    "surgical equipment, verify receiving-site dimensions, utilities, "
+                    "and accessory compatibility before treating the quote as "
+                    "actionable demand."
+                ),
+                (
+                    "Use an explicitly illustrative pilot worksheet to expose "
+                    "margin leakage. A $20,000 equipment sale might require $10,000 "
+                    "acquisition, $1,500 refurbishment, $600 inbound freight, $400 "
+                    "decontamination and data work, $500 testing, $800 outbound "
+                    "freight, $400 transaction costs, and a $600 warranty provision. "
+                    "Those $14,800 attributable costs leave $5,200 contribution, "
+                    "or 26%, before general overhead and owner economics. This "
+                    "is a screening example, not a fourth canonical scenario. "
+                    "Its pre-sale inventory exposure is $13,000 through testing; "
+                    "a conservative cash forecast also reserves outbound and "
+                    "transaction payments. Count testing contractor charges once, "
+                    "even when the same contractor also consumes the monthly "
+                    "retainer allocation. A 10% realized-price reduction to $18,000 "
+                    "leaves only $3,200 contribution, about 17.8%, if attributable "
+                    "costs remain unchanged. That sensitivity explains why the "
+                    "launch requires at least 25% projected contribution and a "
+                    "positive downside contribution before purchase. The canonical "
+                    "annual cases remain $250,000 revenue at 10% net margin for "
+                    "$25,000 owner profit, $1,025,000 at 16.0% for $164,000, and "
+                    "$1,800,000 at 22% for $396,000. Gross equipment resale proceeds "
+                    "are revenue; taxes collected, refundable deposits, and "
+                    "hypothetical buyer treatment revenue are not."
+                ),
+                (
+                    "Make the commercial experiment reversible until the asset "
+                    "passes its release checks. Prefer seller-held inspection "
+                    "windows or clearly documented conditional purchase arrangements "
+                    "over speculative stockpiling. If using consignment, specify "
+                    "title, custody, insurance, selling authority, service spending, "
+                    "and return rights; report commission activity separately "
+                    "rather than presenting it as gross resale revenue in the "
+                    "canonical cases. The core launch model here remains purchasing "
+                    "and reselling owned equipment. FT1 logs every objection and "
+                    "next decision date; FT2 updates actual and committed cost "
+                    "daily. Contractors execute bounded work orders with change "
+                    "limits, not open-ended restoration projects. Establish a "
+                    "maximum $1,000 unplanned repair allowance within the existing "
+                    "$15,000 exposure ceiling; anything larger requires re-underwriting "
+                    "or withdrawal before further discretionary work. A buyer "
+                    "deposit remains a liability until earned under the contract "
+                    "and applicable accounting treatment. Record acceptance "
+                    "conditions and refund exposure before accepting it. By Day "
+                    "21, the pod should possess six issued offers, two written "
+                    "buyer responses with concrete objections, one complete pilot "
+                    "cost sheet, and a documented reason to buy or wait. A "
+                    "disciplined wait is superior to a purchase that creates "
+                    "inventory merely to make the sprint appear productive."
+                ),
+            ],
+            "table": {
+                "caption": "Week Three Configuration Selling and Pilot Cost Validation",
+                "headers": [
+                    "Execution day and accountable commercial role",
+                    "Required offer or acquisition experiment today",
+                    "Evidence proving the experiment produced usable information",
+                    "Threshold governing the next reversible operating action",
+                ],
+                "rows": [
+                    [
+                        "Day 15: sourcing founder assembles configuration-specific offers",
+                        "Draft three offers with complete accessories and delivery boundaries",
+                        "Serial references or clearly stated availability and inspection conditions",
+                        "Prepare one actionable offer for each selected resale play",
+                    ],
+                    [
+                        "Day 16: operations founder completes landed-cost worksheets",
+                        "Price acquisition, refurbishment, testing, freight, transaction, and warranty costs",
+                        "Written vendor estimates linked to each material cost assumption",
+                        "Require at least 25% projected contribution before general overhead",
+                    ],
+                    [
+                        "Day 17: sourcing founder tests two discovery channels",
+                        "Send direct offers and publish accurate permitted marketplace listings",
+                        "Channel records separating asking prices from realized-sale evidence",
+                        "Retain buyer identities and decision dates for every response",
+                    ],
+                    [
+                        "Day 18: biomedical contractor supports buyer configuration questions",
+                        "Explain test scope, supported features, and installation dependencies",
+                        "Written responses distinguishing measured results from seller representations",
+                        "Resolve every safety-critical configuration question before purchase commitment",
+                    ],
+                    [
+                        "Day 19: operations founder tests adverse price outcomes",
+                        "Reduce expected selling prices by ten percent without reducing costs",
+                        "Sensitivity worksheets showing contribution and total cash exposure",
+                        "Reject candidates producing negative contribution under the downside case",
+                    ],
+                    [
+                        "Day 20: sourcing founder negotiates bounded purchase rights",
+                        "Seek inspection access, withdrawal rights, and documented payment milestones",
+                        "Draft terms specifying title transfer and unresolved acceptance conditions",
+                        "Keep incremental repair authority within the $1,000 exception allowance",
+                    ],
+                    [
+                        "Day 21: both founders evaluate the offer experiment",
+                        "Reconcile six issued offers and document two substantive buyer responses",
+                        "Pilot worksheet, objections register, and explicit buy-or-wait decision",
+                        "Continue only when projected inventory exposure remains within $15,000",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the configuration and custody record",
+                    "action": "Assign an asset identifier and capture model, serial, accessories, software rights, and present location.",
+                    "detail": "FT2 controls the record; photographs and seller documents must identify the same physical equipment before inspection spending begins.",
+                },
+                {
+                    "step": 2,
+                    "title": "Obtain independent release evidence",
+                    "action": "Complete ownership review, decontamination, data verification, and model-specific biomed testing.",
+                    "detail": "Each contractor signs only their qualified scope; unresolved safety, title, or patient-data exceptions keep the asset quarantined.",
+                },
+                {
+                    "step": 3,
+                    "title": "Underwrite the exact delivered offer",
+                    "action": "Calculate attributable costs, downside contribution, acceptance timing, and deposit refund exposure.",
+                    "detail": "FT1 owns buyer terms while FT2 checks cash commitments; both sign the worksheet before any acquisition balance is paid.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close acceptance and reconcile actual economics",
+                    "action": "Record delivery condition, signed acceptance, collected proceeds, warranty obligations, and final unit costs.",
+                    "detail": "Compare actual contribution with the approved worksheet and update the model-family price ceiling before the next purchase.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Days 22–30 and Reviews at 60/90: Kill the Hazard, Fix the Constraint, Scale the Evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The final nine days convert scattered activity into a "
+                    "decision packet the six-person pod can defend. On Days "
+                    "22–24, reconcile supplier claims against inspection findings, "
+                    "complete a delivery dry run, and have an independent reviewer "
+                    "sample the pilot dossier. On Days 25–27, conduct buyer "
+                    "follow-ups, update signed quotation assumptions, and build "
+                    "a thirteen-week cash forecast that distinguishes operating "
+                    "payments, inventory commitments, restricted deposits, and "
+                    "the exception reserve. On Days 28–30, score each play, "
+                    "reconcile all commitments, and issue a written Kill, Fix, "
+                    "or Scale decision. The metrics count distinct counterparties "
+                    "and serial-specific candidates; repeated calls and revised "
+                    "quotes do not manufacture progress. Define an active "
+                    "opportunity as a named buyer with application fit, stated "
+                    "budget, an identified decision contact, and a dated next "
+                    "step within thirty days. Define a release-ready asset as "
+                    "one with every mandatory technical, ownership, data, and "
+                    "distribution condition satisfied. Zero unresolved critical "
+                    "exceptions is mandatory in every window. Any suspected "
+                    "unsafe device, compromised patient information, or defective "
+                    "ownership evidence immediately stops movement of the "
+                    "affected asset while the responsible specialist determines "
+                    "containment and remediation. Commercial scores never offset "
+                    "those failures."
+                ),
+                (
+                    "Apply the decision matrix in order: hard-stop conditions "
+                    "first, all Scale conditions second, and Fix otherwise. "
+                    "A Kill decision normally closes an asset or play, not "
+                    "automatically the entire company; inability to fund existing "
+                    "obligations or preserve the exception reserve stops new "
+                    "company-wide commitments. At Day 30, Scale means permission "
+                    "to run one controlled pilot under the original limits "
+                    "after eighteen qualified interviews, six eligible sourcing "
+                    "leads, six issued offers, three active opportunities, "
+                    "and one release-ready candidate. At Day 60, require "
+                    "twenty-four interviews, ten offers, five active opportunities, "
+                    "and two release-ready candidates to expand sourcing work, "
+                    "not inventory exposure. At Day 90, purchasing expansion "
+                    "requires one completed, accepted, collected resale with "
+                    "at least 25% actual contribution, three further active "
+                    "opportunities, and replacement working capital. Without "
+                    "that sale, a valid funded pipeline remains Fix, consistent "
+                    "with the canonical 3–9 month time to first deal. An "
+                    "asset aged over sixty days triggers a written liquidation "
+                    "quote and carrying-cost review; ninety days prohibits "
+                    "another purchase in that model family until the stock "
+                    "is sold or a funded exit is documented. Calendar "
+                    "pressure is never a reason to falsify readiness."
+                ),
+                (
+                    "Give Fix a short clock and a specific experiment: ten "
+                    "business days, one accountable founder, and at most "
+                    "$2,000 of already available operating budget, with no "
+                    "increase to the monthly ceiling. Examples include five "
+                    "new buyer interviews after weak demand, a second "
+                    "service estimate after excessive repair pricing, or "
+                    "a manufacturer-supported erasure procedure after incomplete "
+                    "storage verification. Failed safety remediation kills "
+                    "the affected asset; repeated commercial weakness kills "
+                    "the lane under the matrix thresholds. At Day 90, "
+                    "a qualified Scale decision can permit a second "
+                    "concurrent asset only with separately funded working "
+                    "capital, the protected $15,000 reserve, and a forecast "
+                    "covering six months of planned operating outflows. "
+                    "Keep the launch pod at 2 FT + 4 C until "
+                    "actual workload warrants change; the canonical Scaled "
+                    "case uses 3 FT + 5 C and cannot be claimed "
+                    "by simply multiplying pilot contribution. Reconcile "
+                    "gross resale proceeds, acquisition and refurbishment "
+                    "costs, overhead, warranty expense, and economically "
+                    "required labor before comparing annual net margins. "
+                    "Inventory tracking and service-history indexing should "
+                    "reduce search time and missing evidence, not automate "
+                    "technical judgments. End every review with cash "
+                    "remaining, inventory age, open obligations, and the "
+                    "next dated decision. Scale the repeatable control "
+                    "system before scaling the stock."
+                ),
+            ],
+            "table": {
+                "caption": "Days 22–30 Execution and Quantified Day 30/60/90 Kill, Fix, or Scale Decisions",
+                "headers": [
+                    "Review window and accountable decision owner",
+                    "Required work or quantitative trigger condition",
+                    "Evidence and cash limits governing the decision",
+                    "Authorized response and next measurable operating step",
+                ],
+                "rows": [
+                    [
+                        "Day 22: operations founder reconciles supplier assertions",
+                        "Compare service claims with inspection findings and accessory counts",
+                        "Exception register separates critical defects from negotiable cosmetic issues",
+                        "Resolve critical exceptions before any outbound equipment release",
+                    ],
+                    [
+                        "Day 23: logistics contractor rehearses the delivery route",
+                        "Verify packaging, loading, receiving access, and transport protection",
+                        "Written route quote includes inside delivery and receiving constraints",
+                        "Replace estimated freight with a binding or qualified written quote",
+                    ],
+                    [
+                        "Day 24: independent contractor samples the release dossier",
+                        "Trace serial identity through ownership, cleaning, data, and testing",
+                        "Signed review records every required control and supporting document",
+                        "Require zero unresolved critical items before counting readiness",
+                    ],
+                    [
+                        "Day 25: sourcing founder refreshes buyer decision dates",
+                        "Ask each quoted buyer for conditions and next action",
+                        "Dated responses identify budgets, decision contacts, and configuration fit",
+                        "Count only opportunities with next steps within thirty days",
+                    ],
+                    [
+                        "Day 26: operations founder builds the cash forecast",
+                        "Separate operating outflows, inventory commitments, deposits, and protected cash",
+                        "Thirteen-week forecast reconciles bank balances and outstanding purchase commitments",
+                        "Preserve $15,000 exception reserve without treating deposits as runway",
+                    ],
+                    [
+                        "Day 27: both founders stress the pilot economics",
+                        "Reprice delayed acceptance, repair overruns, and ten-percent selling-price reductions",
+                        "Revised worksheets identify contribution and maximum total cash exposure",
+                        "Keep downside contribution positive before any new acquisition commitment",
+                    ],
+                    [
+                        "Day 28: sourcing founder scores each selected play",
+                        "Compare qualified interviews, active opportunities, offers, and eligible suppliers",
+                        "Three lane scorecards use deduplicated counterparties and documented definitions",
+                        "Select one primary lane and retain explicit rejection reasons",
+                    ],
+                    [
+                        "Day 29: operations founder closes the commitment ledger",
+                        "Reconcile contractor hours, invoices, repair changes, and refund exposure",
+                        "Actual plus committed operating spend remains within $15,000",
+                        "Freeze discretionary spending at the $12,000 early-warning threshold",
+                    ],
+                    [
+                        "Day 30: both founders sign the decision packet",
+                        "Apply hard stops first and all Scale conditions second",
+                        "Retain scorecards, release evidence, cash forecast, and exception ownership",
+                        "Issue Kill, Fix, or Scale with a dated next review",
+                    ],
+                    [
+                        "Day 30 Kill: founders close a failed lane",
+                        "After eighteen interviews, fewer than two qualified buyers remain",
+                        "Alternatively, reserve breach or unresolved critical asset defects force stoppage",
+                        "Close weak lane; isolate defective assets; stop unaffordable commitments",
+                    ],
+                    [
+                        "Day 30 Fix: founders repair measurable evidence gaps",
+                        "No Kill trigger exists, but any Scale threshold remains unmet",
+                        "Document missing interviews, offers, readiness evidence, or active opportunities",
+                        "Run ten-business-day correction using at most $2,000 existing budget",
+                    ],
+                    [
+                        "Day 30 Scale: founders authorize one controlled pilot",
+                        "Require eighteen interviews, six eligible leads, and six issued offers",
+                        "Also require three active opportunities, one ready candidate, 25% contribution",
+                        "Proceed within original cash limits with zero critical exceptions",
+                    ],
+                    [
+                        "Day 60 Kill: founders terminate unsupported commercial lanes",
+                        "After twenty-four interviews, fewer than three qualified buyers remain",
+                        "Alternatively, two independently costed candidates fail 25% projected contribution",
+                        "Close the lane rather than buying inventory to create activity",
+                    ],
+                    [
+                        "Day 60 Fix: founders preserve funded pipeline development",
+                        "Kill conditions are absent but Scale evidence remains incomplete",
+                        "Require forecast funding through Day 90 and protected exception cash",
+                        "Correct one constraint without increasing the $15,000 inventory ceiling",
+                    ],
+                    [
+                        "Day 60 Scale: founders expand evidence collection only",
+                        "Require twenty-four interviews, ten offers, and five active opportunities",
+                        "Also require two ready candidates, 25% contribution, and funded runway",
+                        "Expand sourcing activity while retaining one-asset purchasing discipline",
+                    ],
+                    [
+                        "Day 90 Kill: founders stop exhausted commercial experiments",
+                        "After thirty interviews and twelve offers, no active opportunities remain",
+                        "Alternatively, unfunded obligations or failed critical remediation require stoppage",
+                        "Liquidate safely where permitted and close unsupported model-family purchasing",
+                    ],
+                    [
+                        "Day 90 Fix: founders continue a funded longer cycle",
+                        "No completed sale exists, but documented qualified opportunities remain",
+                        "Require six months of forecast operating funding plus protected reserve",
+                        "Continue targeted selling without adding another concurrent owned asset",
+                    ],
+                    [
+                        "Day 90 Scale: founders permit measured inventory expansion",
+                        "Require one accepted collected resale with at least 25% contribution",
+                        "Also require three active opportunities, replacement capital, and six-month runway",
+                        "Permit second asset only under a signed revised exposure limit",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The first asset you scale is the evidence trail; the equipment follows only when cash, custody, and buyer acceptance agree.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Assign the 2 FT + 4 C pod across three explicit plays, select one supported model family per play, and exclude unsupported aesthetic devices from purchasing.",
+        "Fund and track the $15,000 monthly operating ceiling, $15,000 initial inventory envelope, $15,000 protected reserve, and $12,000 discretionary-spend warning.",
+        "Complete twelve qualified interviews and six serial-supported supplier leads by Day 7, then expand to eighteen interviews before the Day 30 decision.",
+        "Build a serial-specific release packet covering ownership, applicable distribution requirements, decontamination, data sanitization, software rights, and signed biomed testing.",
+        "Issue six configuration-specific offers by Day 21 and require at least 25% projected contribution with positive contribution after a ten-percent selling-price reduction.",
+        "Sign Day 30/60/90 decisions using the hard-stop-first matrix; do not expand owned inventory before accepted collected resale evidence and funded replacement runway exist.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "21 U.S.C. § 331 — Prohibited acts involving adulterated or misbranded devices",
+            "url": "https://www.law.cornell.edu/uscode/text/21/331",
+            "relevance": "Supports device-specific screening of resale, labeling, and distribution activities rather than assuming used equipment escapes federal device requirements.",
+        },
+        {
+            "title": "21 CFR § 801.109 — Prescription devices",
+            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-801/subpart-D/section-801.109",
+            "relevance": "Requires evaluation of prescription-device labeling and sale conditions for the actual equipment, intended application, and purchaser before distribution.",
+        },
+        {
+            "title": "21 CFR Part 820 — Quality Management System Regulation",
+            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820",
+            "relevance": "Requires an activity-specific applicability assessment when refurbishment crosses into covered manufacturing or remanufacturing; ordinary resale is not automatically equivalent.",
+        },
+        {
+            "title": "45 CFR § 164.310(d) — Device and media controls",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.310",
+            "relevance": "For regulated entities, addresses disposal, media reuse, accountability, and related safeguards relevant to data-bearing medical equipment custody.",
+        },
+        {
+            "title": "45 CFR § 164.502(e) — Disclosures to business associates",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
+            "relevance": "Informs assessment of whether handling protected health information for a covered entity creates business associate obligations before access occurs.",
+        },
+        {
+            "title": "45 CFR § 164.504(e) — Business associate contracts",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
+            "relevance": "Specifies contractual requirements relevant when the reseller or a service contractor performs covered functions involving protected health information.",
+        },
+        {
+            "title": "UCC § 9-315 — Secured party rights on disposition of collateral",
+            "url": "https://www.law.cornell.edu/ucc/9/9-315",
+            "relevance": "Explains continuing security interests and proceeds; verify the applicable state enactment and obtain authorized disposition or release evidence when required.",
+        },
+    ],
+}

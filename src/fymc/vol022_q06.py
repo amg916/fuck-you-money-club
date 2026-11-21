@@ -1,0 +1,626 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-first-medical-equipment-resale-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in medical equipment resale, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "Hospital Replacement Signals, Practice-Closure Lots, Buyer-Led Specialty Sourcing, Biomed Acceptance, and FDA/HIPAA Controls",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Money-to-Manpower Score: attractive spreads depend on disciplined capital "
+        "deployment and technical labor. This chapter maps three operator plays: "
+        "hospital replacement-cycle capture, practice-closure asset recovery, and "
+        "buyer-led specialty sourcing. Build demand records before bidding, turn "
+        "public replacement signals into authorized seller conversations, and "
+        "quote serial-specific equipment with documented biomed acceptance. The "
+        "canonical annual owner profits are $25,000 Conservative, $164,000 Base, "
+        "and $396,000 Scaled; revenue means gross equipment resale proceeds, not "
+        "customer procedure receipts. A two-employee, four-contractor pod targets "
+        "its first three-to-ten completed deals over three-to-nine months by "
+        "limiting simultaneous lots, verifying transferable functionality, and "
+        "making every outreach sequence answer a concrete replacement need."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
+            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,025,000",
+            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,800,000",
+            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
+            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Mine replacement events, not indiscriminate equipment lists",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with three mapped plays and reject opportunities that fit none of them. "
+                    "Play one captures hospital replacement cycles: diagnostic systems, surgical "
+                    "equipment, and compatible accessories displaced by a funded replacement rather "
+                    "than by technical failure. Play two recovers practice-closure assets: veterinary "
+                    "clinics, ambulatory practices, and aesthetic operators selling identifiable "
+                    "equipment under a documented ownership chain. Play three sources against "
+                    "qualified specialty demand: a buyer specifies an application, configuration, "
+                    "budget, and installation window before the pod locates supply. The first "
+                    "employee owns seller discovery, acquisition economics, and inventory records; "
+                    "the second owns buyer qualification, quotations, and acceptance scheduling. "
+                    "Four fractional contractors cover biomed inspection, decontamination and data "
+                    "handling, insured transport, and bookkeeping with transaction-document "
+                    "administration. Contract specialists remain subject to competency checks; a "
+                    "bookkeeper cannot substitute for device counsel when a classification question "
+                    "arises. Begin with two supported device families and one geographic service "
+                    "radius. Favor equipment whose accessories, service access, and test procedures "
+                    "the pod can actually obtain. A cheap laser without transferable activation "
+                    "or a diagnostic platform without supported probes is not undervalued inventory; "
+                    "it is an unresolved restoration project. Record the exclusion reason so the "
+                    "same attractive photograph does not consume another inspection slot."
+                ),
+                (
+                    "Create a weekly signal queue from hospital board packets, capital-budget "
+                    "resolutions, public procurement awards, state facility-license changes, "
+                    "bankruptcy sale notices, and disclosed clinic relocations. A replacement award "
+                    "is a timing hypothesis, not proof that the outgoing device belongs to the "
+                    "hospital or will be sold. Capture the source URL, publication date, facility, "
+                    "likely equipment family, expected removal month, and named public contact. "
+                    "Use SAM.gov and public hospital purchasing portals for award research, then "
+                    "check whether an incumbent vendor already holds a trade-in right. Review "
+                    "GovDeals and Public Surplus descriptions for serial lists, inspection windows, "
+                    "removal obligations, buyer premiums, and seller authority. PACER can identify "
+                    "a proceeding, but the applicable sale order and authorized representative "
+                    "determine what transaction is actually available. Do not treat a corporate "
+                    "dissolution filing as permission to collect property. Where a record is "
+                    "ambiguous, ask one factual question: who controls disposition of these named "
+                    "assets, and when can their condition be verified? Route every answer into "
+                    "inventory tracking rather than an unstructured inbox. Schedule fresh research "
+                    "twice weekly, deduplicate by facility and event, and expire replacement "
+                    "signals after thirty days without confirmation so stale awards cannot inflate "
+                    "the sourcing pipeline."
+                ),
+                (
+                    "Mine buyer intent in parallel because seller abundance does not establish "
+                    "resale demand. Watch state facility applications, veterinary practice "
+                    "acquisitions, new specialty locations, public equipment solicitations, and "
+                    "job postings that indicate a service expansion. These signals justify a "
+                    "conversation, not a claim about an organization's purchasing budget. For "
+                    "diagnostic buyers, ask about probe compatibility, DICOM requirements, room "
+                    "power, service coverage, and clinical workflow. For surgical buyers, establish "
+                    "the exact accessory chain, sterilization requirements, and biomedical acceptance "
+                    "process. Veterinary buyers may prioritize ruggedness and local support, while "
+                    "aesthetic buyers often depend on consumable availability, activation rights, "
+                    "and an appropriately licensed operating setting. Verify each device's intended "
+                    "use rather than assuming that a veterinary destination removes every relevant "
+                    "requirement. Build narrowly scoped inbound pages naming supported models, "
+                    "available configurations, inspection deliverables, and service geography. "
+                    "Use HubSpot or a structured spreadsheet for demand records and Google Search "
+                    "Console to identify search terms that produce qualified configuration requests. "
+                    "Do not advertise inventory you merely saw at auction as inventory you own. "
+                    "Publish procurement briefs for sought equipment, with condition requirements "
+                    "and response instructions. The useful inbound conversion is a documented "
+                    "buying requirement, not a download, an anonymous price inquiry, or an "
+                    "unverified expression of interest."
+                ),
+            ],
+            "table": {
+                "caption": "Six Public and Commercial Signals Converted into Authorized Sourcing Conversations",
+                "headers": [
+                    "Signal and mapped play",
+                    "Evidence to capture",
+                    "First operator question",
+                    "Reason to stop pursuit",
+                ],
+                "rows": [
+                    [
+                        "Hospital replacement-cycle capture through public capital committee minutes",
+                        "Funded replacement description, department contact, and anticipated removal month",
+                        "Who owns the outgoing serials and controls their disposition?",
+                        "Existing trade-in agreement assigns the equipment to another vendor",
+                    ],
+                    [
+                        "Hospital replacement-cycle capture through GovDeals or Public Surplus listings",
+                        "Serial schedule, buyer premium, inspection access, and removal obligations",
+                        "Can our biomed inspect every offered serial before bidding?",
+                        "Inspection restrictions prevent verification of the essential operating configuration",
+                    ],
+                    [
+                        "Practice-closure asset recovery through state facility closure records",
+                        "Facility identity, closure timing, authorized representative, and equipment photographs",
+                        "Which assets are owned outright rather than leased or financed?",
+                        "Seller cannot establish ownership or obtain required lien releases",
+                    ],
+                    [
+                        "Practice-closure asset recovery through court-supervised equipment sale notices",
+                        "Applicable sale order, asset schedule, representative authority, and deadlines",
+                        "Which order provisions establish the proposed asset transfer conditions?",
+                        "Offered assets cannot be matched to the controlling documents",
+                    ],
+                    [
+                        "Buyer-led specialty sourcing through veterinary expansion and acquisition announcements",
+                        "Clinical application, opening schedule, supported models, and service territory",
+                        "What installed configuration must be working before your opening?",
+                        "Required configuration lacks obtainable parts or competent local service",
+                    ],
+                    [
+                        "Buyer-led specialty sourcing through diagnostic and aesthetic procurement requests",
+                        "Budget authority, accessory requirements, activation terms, and acceptance protocol",
+                        "Who signs acceptance and which tests determine satisfactory delivery?",
+                        "Buyer requirements depend on unsupported software or unavailable consumables",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Find the spread inside configuration and timing",
+                "body": "Experienced resellers price the complete usable system and the removal calendar before negotiating the headline purchase price.",
+                "items": [
+                    "Ask the hospital biomed department for the outgoing asset configuration and service chronology; reconcile them to the disposition officer's serial schedule.",
+                    "Photograph probe labels, footswitches, handpieces, carts, and installed options separately; one missing proprietary accessory can erase the apparent equipment discount.",
+                    "Obtain a written OEM or authorized-provider answer on software transfer and reactivation costs before treating an unlocked demonstration as transferable functionality.",
+                    "Offer a documented pickup window after seller authority is verified; reliable removal can win a lot without increasing the acquisition price.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Qualify demand and underwrite serial-specific inventory",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Score each opportunity out of one hundred using five weighted fields: verified "
+                    "buyer demand earns thirty points, usable and supportable condition twenty-five, "
+                    "documented seller authority twenty, landed contribution fifteen, and executable "
+                    "pickup timing ten. Award demand points only against a named buyer's recorded "
+                    "requirements, purchasing authority, budget, and target date. Award condition "
+                    "points against inspection evidence rather than the phrase working when "
+                    "removed. A score of eighty merits a quotation and reserved inspection "
+                    "capacity; sixty through seventy-nine remains research only; anything lower "
+                    "leaves the active queue. These are internal operating thresholds, not measured "
+                    "industry predictors. Critical failures override the total: unresolved ownership, "
+                    "inaccessible stored patient data, missing essential accessories, or an "
+                    "unresolved recall affecting safe operation prevents purchase. Match seller "
+                    "identity, serials, bills of sale, lease releases, and relevant lien records. "
+                    "Under UCC section 9-315, a security interest can continue in disposed "
+                    "collateral unless an applicable exception or authorized disposition applies; "
+                    "verify the governing state's enactment and obtain releases where needed. A "
+                    "search result alone does not establish clean title. Assign an employee to "
+                    "resolve each failed field, give the task a dated next action, and prohibit "
+                    "a persuasive seller narrative from silently changing the score."
+                ),
+                (
+                    "Underwrite the delivered configuration, not the auction hammer price. An "
+                    "illustrative unit sold for $25,000 might require $12,000 acquisition, $600 "
+                    "buyer premium, $2,400 refurbishment, $1,200 freight and rigging, $500 data "
+                    "handling and decontamination, $300 payment costs, and a $1,000 warranty "
+                    "reserve. Those direct charges total $18,000, leaving $7,000 contribution "
+                    "before allocated overhead, carrying costs, and other business expenses. "
+                    "Applicable unrecoverable taxes and additional installation costs must be "
+                    "added when present; the example assumes none beyond the stated charges. "
+                    "That twenty-eight-percent contribution is not the canonical net margin. "
+                    "Backsolve the purchase ceiling from the buyer's supported delivered price "
+                    "less every nonpurchase charge and the required contribution. Use written "
+                    "carrier quotes and a biomed scope rather than rounded guesses. Within the "
+                    "$75,000–$400,000 startup-capital range, keep a separate reserve for operating "
+                    "expenses, warranty work, and delayed collections. Initially cap each purchase "
+                    "at twenty-five percent of deployable inventory cash and hold no more than "
+                    "two unaccepted lots. Both are conservative internal controls, not scorecard "
+                    "assumptions. Request a time-limited seller inspection option where possible; "
+                    "do not describe a refundable buyer reservation as earned resale revenue "
+                    "or spend it as unrestricted margin."
+                ),
+                (
+                    "Make the inspection packet answer what the next owner will need to operate "
+                    "the equipment. Index service history by serial, record firmware and licensed "
+                    "options, check FDA recall records, and have a competent biomed document "
+                    "model-specific functional and electrical-safety testing. Record instruments, "
+                    "calibration status, test conditions, deficiencies, corrective work, and final "
+                    "results. Cleaning evidence must identify the method and its compatibility "
+                    "with manufacturer instructions; a cosmetic wipe is not decontamination "
+                    "evidence. For ultrasound consoles, imaging workstations, and other storage-bearing "
+                    "devices, isolate storage before any demonstration or transfer. Determine "
+                    "whether the reseller or contractor is acting as a HIPAA business associate; "
+                    "when applicable, establish the required agreement and safeguards before "
+                    "handling protected information. Apply the seller's authorized sanitization "
+                    "method, retain verification evidence without patient content, and quarantine "
+                    "media that cannot be cleared. Use NIST SP 800-88 as technical guidance, "
+                    "not as a substitute for HIPAA obligations. Evaluate modifications against "
+                    "FDA's servicing-versus-remanufacturing distinction; changes that significantly "
+                    "alter performance, safety specifications, or intended use require a different "
+                    "regulatory analysis. Assess applicable registration, listing, quality-system, "
+                    "labeling, and state dealer or radiation-equipment requirements before expanding "
+                    "the offering. The pod should reject a category it cannot competently inspect "
+                    "rather than manufacture confidence through a longer sales description."
+                ),
+            ],
+            "table": {
+                "caption": "Weighted Qualification and Evidence Required Before Inventory Cash Is Committed",
+                "headers": [
+                    "Qualification dimension",
+                    "Evidence earning the points",
+                    "Assigned verification owner",
+                    "Purchase decision or failure response",
+                ],
+                "rows": [
+                    [
+                        "Verified buyer demand carries thirty available qualification points",
+                        "Named buyer confirms application, budget, purchasing authority, and deadline",
+                        "Sales employee records requirements and obtains written configuration confirmation",
+                        "Without verified demand, retain the lead without speculative purchasing",
+                    ],
+                    [
+                        "Usable supported condition carries twenty-five available qualification points",
+                        "Biomed report establishes functionality, accessories, service access, and deficiencies",
+                        "Biomed contractor documents test results against the identified serial",
+                        "Unresolved essential functionality prevents purchase despite an attractive price",
+                    ],
+                    [
+                        "Documented seller authority carries twenty available qualification points",
+                        "Ownership records, representative authority, and applicable releases match serials",
+                        "Sourcing employee coordinates document review and resolves ownership discrepancies",
+                        "Unresolved ownership overrides the aggregate qualification score immediately",
+                    ],
+                    [
+                        "Landed contribution carries fifteen available opportunity qualification points",
+                        "Delivered buyer price exceeds documented direct charges and contribution target",
+                        "Sourcing employee and bookkeeping contractor reconcile the acquisition worksheet",
+                        "Reduce the bid or abandon transactions below required contribution",
+                    ],
+                    [
+                        "Executable pickup timing carries ten available qualification points",
+                        "Seller access, carrier capacity, decontamination, and destination readiness align",
+                        "Transport contractor confirms rigging, insurance, access, and delivery appointment",
+                        "Reprice actual delay costs before accepting revised removal obligations",
+                    ],
+                    [
+                        "Patient data and unresolved recalls are overriding purchase blockers",
+                        "Sanitization verification and recall resolution support the proposed transfer",
+                        "Data contractor and biomed contractor provide separate documented findings",
+                        "Quarantine affected assets until the specific blocker is resolved",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before the pod commits acquisition cash",
+                "body": "A high aggregate score never compensates for missing authority, unsafe condition, inaccessible data, or an unexecutable delivery.",
+                "items": [
+                    "Match seller authority, serial schedule, ownership evidence, and required releases; resolve leased equipment and security interests before executing the purchase.",
+                    "Obtain configuration-specific biomed results, accessory reconciliation, recall disposition, and a service path that covers the buyer's location.",
+                    "Verify authorized data sanitization and decontamination records; prohibit transfer of unresolved patient-bearing storage or inadequately processed equipment.",
+                    "Confirm written delivered-price economics, available acquisition cash, contractor capacity, and buyer acceptance terms before releasing funds.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run a permission-aware cadence that earns the first purchase orders",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run separate seller and buyer sequences so each message asks for one "
+                    "appropriate next action. On day one, send a short business email referencing "
+                    "the public replacement or expansion event and naming the equipment family. "
+                    "For sellers, request the disposition contact and serial schedule; for buyers, "
+                    "offer a configuration worksheet and ask which application must be supported. "
+                    "On day three, make a manual call to a published business number during "
+                    "appropriate local hours. On day six, send one useful artifact: a removal "
+                    "checklist to the seller or a redacted sample acceptance packet to the buyer. "
+                    "On day ten, follow up through a legitimate professional introduction or "
+                    "platform message without scraping restricted information. On day fifteen, "
+                    "close the sequence with a direct question about timing, then stop unless "
+                    "the contact requests continued engagement. Follow CAN-SPAM requirements for "
+                    "commercial email, including accurate headers, a valid postal address, and "
+                    "a working opt-out honored within the statutory period. Maintain suppression "
+                    "records across employees and contractors. Avoid automated calls, prerecorded "
+                    "messages, and unsolicited texts without a documented assessment of TCPA "
+                    "and applicable state requirements. A public telephone number is not blanket "
+                    "permission for every outreach technology. Measure replies that advance "
+                    "qualification, not merely opens."
+                ),
+                (
+                    "Treat conversion benchmarks as a testable cohort plan, not a market fact. "
+                    "For an initial ninety-day buyer cohort, model 120 researched accounts "
+                    "producing forty-eight qualified requirements, twenty-four configuration calls, "
+                    "twelve accepted inspection packets or demonstrations, six signed purchase "
+                    "orders, and three delivered units with completed acceptance. The stage "
+                    "rates are forty percent followed by four successive fifty-percent transitions; "
+                    "the overall researched-account-to-accepted-sale rate is 2.5 percent. These "
+                    "are deliberately explicit planning assumptions that actual results must "
+                    "replace. Define a qualified requirement as a named buying organization with "
+                    "application, configuration, budget authority, and timing recorded. Count a "
+                    "purchase order only when its commercial conditions are understood; count "
+                    "a completed win only after contractual delivery and acceptance. Track seller "
+                    "sourcing separately, because several potential lots can support one buyer "
+                    "and one lot can contain several units. Use distinct account, lot, serial, "
+                    "and transaction identifiers to prevent double counting. At day thirty, "
+                    "inspect the largest stage loss and revise one variable: target segment, "
+                    "configuration fit, evidence packet, or commercial terms. Do not solve weak "
+                    "qualification by buying more equipment. Extend the same measured system "
+                    "toward three-to-ten wins over three-to-nine months while respecting the "
+                    "pod's actual inspection and delivery capacity."
+                ),
+                (
+                    "Handle objections with evidence and scoped commercial choices rather than "
+                    "discount reflexes. When a buyer says a marketplace listing is cheaper, "
+                    "compare serial-specific accessories, tested functions, activation, freight, "
+                    "installation, and warranty coverage line by line. If they want OEM service, "
+                    "seek written eligibility and pricing from the relevant provider; an "
+                    "independent reseller's optimism cannot establish manufacturer support. When "
+                    "they fear downtime, specify response hours, available parts, escalation "
+                    "contacts, and the exact remedy the pod can fund. Do not promise a loaner "
+                    "unless compatible stock is reserved. For a seller demanding immediate "
+                    "payment, explain which ownership and inspection evidence allows a faster "
+                    "close and offer a dated inspection appointment. For a buyer seeking a "
+                    "trial, price freight, damage responsibility, acceptance tests, return timing, "
+                    "and restocking treatment explicitly before shipment. If the objection is "
+                    "cash timing, refer the buyer to an independent equipment lender and "
+                    "verify funding before releasing inventory; keep lender fees separate from "
+                    "equipment economics. End every substantive call with an agreed document, "
+                    "responsible person, and date. Send a concise recap distinguishing confirmed "
+                    "facts from open conditions. A quotation should expire when its freight, "
+                    "inventory availability, or service assumptions expire, not remain indefinitely "
+                    "available because the CRM never scheduled a follow-up."
+                ),
+            ],
+            "table": {
+                "caption": "Objection Responses That Replace Vague Reassurance with Closing Evidence",
+                "headers": [
+                    "Objection heard during qualification",
+                    "Evidence to put in front of buyer",
+                    "Commercial response within pod capacity",
+                    "Recorded next action and stopping condition",
+                ],
+                "rows": [
+                    [
+                        "Another marketplace listing shows a substantially lower asking price",
+                        "Compare accessories, activation, testing, delivered freight, and warranty scope",
+                        "Offer a matched configuration comparison before discussing price changes",
+                        "Close the comparison after buyer confirms the required configuration",
+                    ],
+                    [
+                        "Our department requires manufacturer support after the equipment arrives",
+                        "Provide written service eligibility and a provider-issued support quotation",
+                        "Make purchase terms conditional on the specified support availability",
+                        "Stop pursuing unsupported models when manufacturer coverage is essential",
+                    ],
+                    [
+                        "We cannot tolerate equipment downtime during scheduled patient sessions",
+                        "Show actual response coverage, parts access, and escalation responsibilities",
+                        "Price only service commitments backed by qualified available resources",
+                        "Decline response promises that exceed the contractor coverage agreement",
+                    ],
+                    [
+                        "We want an unrestricted trial before committing to purchase",
+                        "Provide serial-specific acceptance tests and documented baseline operating condition",
+                        "Define trial duration, transport charges, damage responsibility, and returns",
+                        "Ship only after both parties accept the written trial terms",
+                    ],
+                    [
+                        "The seller requires immediate payment before allowing meaningful inspection",
+                        "Request ownership evidence, access arrangements, and existing service records",
+                        "Offer an accelerated inspection appointment instead of blind payment",
+                        "Withdraw when essential inspection or ownership verification remains impossible",
+                    ],
+                    [
+                        "The buyer needs equipment now but funding arrives later",
+                        "Obtain lender confirmation and an executable purchase funding schedule",
+                        "Reserve inventory only under explicit duration and deposit terms",
+                        "Release equipment after agreed payment conditions are actually satisfied",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Build paired supply and demand records",
+                    "action": "Assign every lead to one of the three mapped plays.",
+                    "detail": "Store the source, event date, equipment family, authorized contact, and next action; maintain separate buyer-account and seller-lot identifiers.",
+                },
+                {
+                    "step": 2,
+                    "title": "Qualify before reserving technical labor",
+                    "action": "Complete the weighted score and identify overriding blockers.",
+                    "detail": "Reserve a biomed slot only after configuration, seller authority, plausible delivered economics, and a credible buyer requirement justify inspection.",
+                },
+                {
+                    "step": 3,
+                    "title": "Quote the documented usable configuration",
+                    "action": "Issue a serial-specific quotation and acceptance packet.",
+                    "detail": "Include accessories, licensed options, test evidence, sanitization status, delivery scope, warranty terms, payment conditions, and a defined quotation expiry.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close and reconcile the accepted transaction",
+                    "action": "Collect the required payment and document delivery acceptance.",
+                    "detail": "Match the purchase order, invoice, serial, freight evidence, acceptance record, direct charges, and warranty reserve before updating realized contribution.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Pace the first ten wins against cash, labor, and canonical economics",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use the first month to choose the supported equipment families, contract "
+                    "the four specialist functions, create document templates, and build the "
+                    "initial buyer cohort. Months two and three concentrate on inspection-ready "
+                    "seller relationships and configuration calls, not warehouse accumulation. "
+                    "The earliest completed transaction may fall in month three; complex "
+                    "replacement schedules or site preparation can push first-deal timing "
+                    "toward month nine. Treat three-to-ten completed wins during that operating "
+                    "window as a target range, not a substitute for the stated three-to-nine-month "
+                    "time to first deal. Assign weekly capacity explicitly: the sourcing employee "
+                    "spends two research blocks on signals and two on seller verification; "
+                    "the sales employee runs qualification calls, quotations, and acceptance "
+                    "coordination. Reserve two biomed inspection slots weekly only where "
+                    "contractor availability supports them, and batch nearby visits to reduce "
+                    "travel costs. Limit simultaneous active acquisitions to two until actual "
+                    "turnaround and warranty workload are measured. Four contractors means four "
+                    "specialist relationships, not four full-time people waiting for instructions. "
+                    "Maintain backup providers for critical functions without silently counting "
+                    "them as permanent staff. Move a delivery date when competence or safe "
+                    "handling cannot be secured; the calendar does not override technical "
+                    "readiness or the buyer's receiving requirements."
+                ),
+                (
+                    "Keep the scorecard visible while reviewing early deals. Conservative annual "
+                    "gross equipment resale proceeds are $250,000 at a ten-percent net margin, "
+                    "producing $25,000 owner net profit with two full-time employees and four "
+                    "contractors. Base proceeds are $1,025,000 at 16.0 percent, producing "
+                    "$164,000 with the same staffing structure. Scaled proceeds are $1,800,000 "
+                    "at twenty-two percent, producing $396,000 with three employees and five "
+                    "contractors, eight people total. The corresponding total expense envelopes "
+                    "are $225,000, $861,000, and $1,404,000. Acquisition and refurbishment sit "
+                    "inside those expenses, not outside the margin calculation. The stated "
+                    "$5,000–$22,000 monthly operating-expense range does not represent the "
+                    "entire cost of purchased inventory. Gross resale proceeds also exclude "
+                    "the buyer's patient billings, procedure volume, and equipment-financing "
+                    "principal. These scenarios assume equipment resale as principal; a separate "
+                    "brokerage service must assess its own revenue presentation rather than "
+                    "booking the asset's entire selling price as a commission business's revenue. "
+                    "Do not annualize three successful early transactions into a claimed Base "
+                    "result. Instead, reconcile realized contribution, remaining overhead, "
+                    "inventory aging, warranty exposure, and available cash monthly. The Scaled "
+                    "margin requires an actual operating improvement; adding inventory and a "
+                    "third employee does not mechanically create a twenty-two-percent outcome."
+                ),
+                (
+                    "Instrument the system so failures become specific operating decisions. Inventory "
+                    "tracking should retain acquisition date, serial, configuration, direct costs, "
+                    "storage location, reservation status, and days since the last qualified "
+                    "buyer interaction. Service-history indexing should connect each claim in "
+                    "the quotation to a dated report, photograph, or provider confirmation. "
+                    "Keep patient content out of the CRM and sales attachments. Use document "
+                    "permissions and a transfer log when sharing technical evidence with buyers. "
+                    "Review unsold equipment at thirty, sixty, and ninety days: obtain fresh "
+                    "buyer feedback first, revise configuration or price second, and execute "
+                    "a documented exit plan when carrying costs defeat the original thesis. "
+                    "For every lost deal, record one primary reason such as unsupported "
+                    "activation, weak title evidence, excessive landed cost, or installation "
+                    "delay. For every accepted deal, request a factual reference and permission "
+                    "to describe the equipment category and service experience without exposing "
+                    "patient or confidential operational details. Feed repeat demand into the "
+                    "next acquisition search. Expand from the initial six-person pod only "
+                    "after measured inspection backlog, repeatable demand, and cash conversion "
+                    "justify the extra capacity. The durable advantage is a reliable chain "
+                    "from signal to supported equipment, not a larger spreadsheet of sellers "
+                    "or a warehouse full of apparently inexpensive machines."
+                ),
+            ],
+            "table": {
+                "caption": "First-Deal Control Board for the Two-Employee, Four-Contractor Pod",
+                "headers": [
+                    "Control and review rhythm",
+                    "Specific operating evidence",
+                    "Owner and corrective action",
+                    "Economic or capacity implication",
+                ],
+                "rows": [
+                    [
+                        "Review new public sourcing signals twice during each week",
+                        "Dated event source links to equipment family and authorized contact",
+                        "Sourcing employee expires stale leads and verifies disposition timing",
+                        "Protects research hours from repeated pursuit of unavailable equipment",
+                    ],
+                    [
+                        "Review buyer cohort stage conversion every thirty operating days",
+                        "Distinct accounts progress through requirements, calls, packets, orders, acceptance",
+                        "Sales employee fixes the largest evidenced stage loss first",
+                        "Tests the illustrative 2.5 percent accepted-sale conversion assumption",
+                    ],
+                    [
+                        "Review deployable acquisition cash before every proposed inventory commitment",
+                        "Purchase worksheet separates inventory funds from operating and warranty reserves",
+                        "Sourcing employee enforces initial lot and cash concentration limits",
+                        "Prevents attractive individual purchases from exhausting the entire operating reserve",
+                    ],
+                    [
+                        "Review contractor readiness before confirming each inspection and delivery",
+                        "Named specialists confirm scope, competence, availability, and quoted charges",
+                        "Both employees align biomed, data handling, and transport schedules",
+                        "Keeps six-person pod commitments within actual fractional specialist capacity",
+                    ],
+                    [
+                        "Review unsold equipment at thirty, sixty, and ninety days",
+                        "Serial-level aging combines carrying costs with recent qualified buyer feedback",
+                        "Sales employee revises price or executes the documented exit",
+                        "Limits obsolescence losses and releases cash from unsellable configurations",
+                    ],
+                    [
+                        "Reconcile monthly results against the three canonical annual scenarios",
+                        "Recognized proceeds and complete expenses reconcile to owner net profit",
+                        "Bookkeeping contractor separates direct contribution from total business profitability",
+                        "Preserves exact ten, sixteen, and twenty-two percent scenario margins",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Buy the configuration a verified buyer can accept, not the discount a motivated seller can describe.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Select two supported equipment families and map every opportunity to hospital replacement-cycle capture, practice-closure asset recovery, or buyer-led specialty sourcing.",
+        "Build separate seller-lot and buyer-account records with dated source evidence, authorized contacts, configuration requirements, and explicit next actions.",
+        "Apply the one-hundred-point qualification score and resolve ownership, recall, patient-data, and essential-functionality blockers before committing acquisition cash.",
+        "Run the fifteen-day multichannel cadence with suppression controls, a useful technical artifact, and one concrete qualification request per message.",
+        "Reserve biomed, data handling, and transport capacity before issuing serial-specific delivery and acceptance commitments.",
+        "Count completed accepted sales separately from reservations and purchase orders, then reconcile contribution, cash, warranty exposure, and canonical annual net-profit cases.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "21 CFR 807.20 — Establishment registration and device listing",
+            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-807/subpart-B/section-807.20",
+            "relevance": "Assess registration and listing obligations against the reseller's actual activities and applicable exemptions rather than assuming every resale operation has the same status.",
+        },
+        {
+            "title": "21 CFR 820.1 and 820.3 — Quality Management System Regulation scope and definitions",
+            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820",
+            "relevance": "Evaluate whether the operation performs manufacturing or remanufacturing activities that bring applicable quality-system requirements into scope.",
+        },
+        {
+            "title": "45 CFR 164.310(d) — Device and media controls",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.310",
+            "relevance": "For regulated entities, govern disposal, media reuse, accountability, and relevant movement of hardware or media containing electronic protected health information.",
+        },
+        {
+            "title": "45 CFR 164.502(e) and 164.504(e) — Business associate arrangements",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
+            "relevance": "Determine the reseller's or sanitization contractor's role and establish required business associate terms before handling protected health information on another regulated entity's behalf.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Structure commercial sourcing and sales email with accurate transmission information, required identification and address information, and timely handling of opt-out requests.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on telephone equipment use",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Assess restrictions on automated and prerecorded outreach and relevant texts before choosing outreach technology; also check implementing rules and applicable state requirements.",
+        },
+        {
+            "title": "UCC section 9-315 — Secured party rights on disposition of collateral",
+            "url": "https://www.law.cornell.edu/ucc/9/9-315",
+            "relevance": "Use this model provision as the starting point for checking the governing state's enacted law and whether a security interest continues after an equipment sale.",
+        },
+        {
+            "title": "21 U.S.C. 331(a) — Prohibited introduction of adulterated or misbranded devices",
+            "url": "https://www.law.cornell.edu/uscode/text/21/331",
+            "relevance": "Tie device-condition, labeling, and modification review to the prohibition on introducing adulterated or misbranded devices into interstate commerce.",
+        },
+    ],
+}

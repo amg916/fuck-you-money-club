@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-022-medical-equipment-resale",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1800917,
+      "sha256": "046e90b110dc780c4da36d49671083d744062fcb125914214d9f06ff0013d1d1"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2321996,
+      "sha256": "25fe8e446debbcd9af4cb5b208b706d40a1ef5f74dce41f052cc017b9712c4d6"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 538154,
+      "sha256": "9ed195bf557511bed7331d8eb61cd740da164e5ea822a012d841cbedf5a5e6fb"
+    },
+    "book.epub": {
+      "bytes": 245764,
+      "sha256": "ea41235ae3dc922536ddda76f52bce6492abcc9ebb1165787f6512de0f9b6823"
+    },
+    "art/cover.svg": {
+      "bytes": 4027,
+      "sha256": "b9067080c3f9a3a3e302339ef13f04f03f54ae9cd83efb071c334018698fd517"
+    },
+    "art/scorecard.svg": {
+      "bytes": 30911,
+      "sha256": "bccbe26a13ba7b43437d61c5a19fc7797a93104360f2c2a464ddbf323098cf3f"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12602,
+      "sha256": "98e8589bb329952f45978d9306e6bfed62581b8fe2eb5e85865b1dc689cbf12f"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8443,
+      "sha256": "c34e66a18fec4762b72f9aec6bd8d925978939c8d08c9ec447ab3e8c7032c156"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12646,
+      "sha256": "9134038e934b661712674d42701ea6a92ac8cfe7fa7b2df4d506366199eda381"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10714,
+      "sha256": "bd497241aec3ae649085e51af60760e65e10ba6dd9d7d97a5073c28412cb59da"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11859,
+      "sha256": "9ff03475063d531320a00177e98d65e8da016aaece6ebdd3ce02c0ad0b874b0b"
+    },
+    "art/diag_06.svg": {
+      "bytes": 17379,
+      "sha256": "03ec9af39c36cd793580829eca3fd6224e8dd6904688457580f9d9ca53f29c38"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9668,
+      "sha256": "bd46e2083f9b8b90e3f42e154849f2ab0b8ee05fa1358f1ea6e1eb84e61a295f"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8964,
+      "sha256": "eb71845697d2889ac76bb8f4b5156e34c0cd6a0c3daddbd41e1949dfbb99e041"
+    }
+  }
+}

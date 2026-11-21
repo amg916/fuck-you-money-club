@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 3484,
-  "raw_video_count": 3484,
+  "abridged_video_count": 3659,
+  "raw_video_count": 3659,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T22:49:20+00:00",
+      "generated_at": "2026-11-21T22:58:25+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T22:49:20Z",
+  "generated_at": "2026-11-21T22:58:25Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 2775,
-      "tip_count": 5743,
-      "channel_count": 1871,
+      "video_count": 2910,
+      "tip_count": 5975,
+      "channel_count": 1979,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -198,23 +198,23 @@
         "form or",
         "form you",
         "form a",
-        "form on",
-        "form in",
         "form so",
         "form with",
+        "form in",
+        "form on",
         "form your",
-        "form like",
         "form where",
+        "form like",
         "court order",
         "form as",
         "form if",
         "form at",
         "form it",
         "letters of administration",
-        "form content",
         "form I",
         "form their",
         "form uh",
+        "form content",
         "form um",
         "form which",
         "form called",
@@ -222,11 +222,11 @@
         "Chapter 7",
         "form an",
         "form here",
+        "form we",
+        "form but",
         "form right",
         "Protection Act",
-        "form but",
         "form they",
-        "form we",
         "form because"
       ],
       "tools_and_portals": [
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 2614,
-      "tip_count": 5619,
-      "channel_count": 1670,
+      "video_count": 2720,
+      "tip_count": 5723,
+      "channel_count": 1760,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -432,20 +432,20 @@
         "form of",
         "form and",
         "form that",
+        "form the",
         "form to",
         "form for",
-        "form the",
         "form is",
         "form a",
         "form or",
         "form you",
         "court order",
-        "form on",
         "form your",
+        "form on",
         "form in",
         "form below",
-        "form with",
         "form where",
+        "form with",
         "form like",
         "form so",
         "letters of administration",
@@ -453,18 +453,18 @@
         "Chapter 7",
         "form it",
         "form Commercial",
-        "form if",
         "Form uh",
+        "form as",
+        "form I",
+        "form if",
         "protection act",
         "Chapter 13",
-        "form as",
         "form at",
-        "form I",
         "form we",
-        "letters testamentary",
-        "property Act",
         "form um",
         "form which",
+        "letters testamentary",
+        "property Act",
         "form but",
         "form here",
         "form an",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 762,
-      "tip_count": 1821,
-      "channel_count": 499,
+      "video_count": 785,
+      "tip_count": 1835,
+      "channel_count": 521,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -676,10 +676,10 @@
         "form below",
         "form to",
         "Form is",
+        "form the",
         "form for",
         "form you",
         "form or",
-        "form the",
         "form a",
         "form with",
         "form on",
@@ -698,18 +698,18 @@
         "form this",
         "form um",
         "court order",
+        "form from",
         "form like",
         "form today",
         "form which",
         "affidavit of heirship",
+        "form all",
         "form as",
         "form at",
         "form because",
         "form due",
-        "form from",
         "form I",
-        "letters of administration",
-        "Chapter 7"
+        "letters of administration"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 2823,
-      "tip_count": 3379,
-      "channel_count": 1879,
+      "video_count": 2976,
+      "tip_count": 3742,
+      "channel_count": 2000,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -874,6 +874,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Decrease enough to the point that you're looking at a at the danger of a quench uh quenching's bad for a couple of reasons…",
+          "category": "Practitioner Note",
+          "timestamp": "00:02:47",
+          "link": "https://www.youtube.com/watch?v=_-e12TPIFxw&t=167s",
+          "video_title": "What Is an MRI Quench?",
+          "author": "Block Imaging",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Or group of buyers has the right to vote 25% or more of the securities, has the power to sell or direct the sale…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:02:38",
@@ -899,15 +908,6 @@
           "video_title": "Licensing to Earn royalties Vs Manufacturing Your Invention Idea",
           "author": "Brian Fried - The Inventor Coach",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Últimos 2 años hemos ido migrando todos los sitios de Estados Unidos también al formato eh al formato no presencial porque hemos visto que…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:02:42",
-          "link": "https://www.youtube.com/watch?v=keHIfejYGN8&t=162s",
-          "video_title": "COMPRA Y VENDE MAQUINARIA EN RITCHIE BROS MÉXICO ¡AQUÍ TE DECIMOS CÓMO!",
-          "author": "Sobre Orugas",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -922,35 +922,35 @@
         "form you",
         "form a",
         "form your",
-        "form on",
         "form so",
         "form with",
+        "form on",
         "form in",
-        "form like",
         "form where",
+        "form like",
         "form below",
         "form as",
         "form at",
+        "form I",
         "form if",
         "form it",
-        "form I",
+        "form which",
         "form content",
         "form their",
-        "form which",
-        "form called",
         "Form uh",
+        "form um",
+        "form called",
         "court order",
         "form Commercial",
-        "form um",
         "form here",
-        "form they",
         "form we",
+        "form they",
         "letters of administration",
         "property Act",
         "Protection Act",
-        "form right",
-        "form will",
-        "form an"
+        "form but",
+        "form from",
+        "form right"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1965,
-      "tip_count": 1129,
-      "channel_count": 1314,
+      "video_count": 2019,
+      "tip_count": 1139,
+      "channel_count": 1353,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1163,26 +1163,26 @@
         "form you",
         "form a",
         "form your",
+        "form where",
         "form like",
         "form on",
-        "form where",
         "form with",
         "form in",
         "form so",
         "court order",
         "form as",
+        "form um",
+        "form their",
+        "Form uh",
+        "form which",
         "Protection Act",
         "form at",
         "form below",
-        "form their",
-        "Form uh",
-        "form um",
         "form content",
         "form if",
-        "form which",
+        "form I",
         "form called",
         "form Commercial",
-        "form I",
         "form it",
         "form but",
         "form here",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 2776,
-      "tip_count": 4389,
-      "channel_count": 1816,
+      "video_count": 2876,
+      "tip_count": 4495,
+      "channel_count": 1891,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1403,36 +1403,36 @@
         "form or",
         "form you",
         "form a",
-        "form on",
         "form with",
-        "form like",
+        "form on",
         "form your",
+        "form like",
         "form so",
         "form in",
-        "court order",
         "form where",
-        "form below",
+        "court order",
         "form as",
+        "form below",
         "form at",
         "letters of administration",
-        "form it",
         "form their",
         "form I",
+        "form it",
         "Form uh",
+        "form um",
+        "form which",
         "Chapter 7",
         "form content",
         "form if",
-        "form um",
-        "form which",
         "form called",
+        "form we",
         "Protection Act",
         "form Commercial",
         "form here",
-        "form we",
         "Chapter 13",
         "letters testamentary",
         "property Act",
-        "form they"
+        "form but"
       ],
       "tools_and_portals": [
         "Google",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 2909,
-      "tip_count": 3063,
-      "channel_count": 1861,
+      "video_count": 3058,
+      "tip_count": 3261,
+      "channel_count": 1980,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1527,18 +1527,18 @@
           "duration": "00:12:27"
         },
         {
+          "video_id": "an4G9gKy9wE",
+          "title": "National Standards for the Licensure of Wholesale Drug Distributors&Third-Party Logistics Providers",
+          "author": "U.S. Food and Drug Administration",
+          "url": "https://www.youtube.com/watch?v=an4G9gKy9wE",
+          "duration": "01:33:53"
+        },
+        {
           "video_id": "lVFYoVaNnrs",
           "title": "Exclusive vs Non Exclusive License l What’s the difference?",
           "author": "Ayers Law TV ~ Andrew M. Ayers, Esq.",
           "url": "https://www.youtube.com/watch?v=lVFYoVaNnrs",
           "duration": "00:05:54"
-        },
-        {
-          "video_id": "WMcwXYcUD5c",
-          "title": "What is Brand Licensing?",
-          "author": "inventRightTV",
-          "url": "https://www.youtube.com/watch?v=WMcwXYcUD5c",
-          "duration": "00:05:53"
         }
       ],
       "top_timestamped_insights": [
@@ -1624,12 +1624,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Land comps. This is literally their livelihood it's what pays them how they put food on their table at night. So, let's talk about…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:05:41",
-          "link": "https://www.youtube.com/watch?v=JNufnuENoDM&t=341s",
-          "video_title": "How To Find Comps For Land",
-          "author": "Brent Bowers",
+          "tip_paraphrase_summary": "Part of the regulation description. Next, I'm going to discuss method 2, which is to search for a similar device by its clearance or…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:07:26",
+          "link": "https://www.youtube.com/watch?v=XMo038fEjH4&t=446s",
+          "video_title": "Case Study: How is My Medical Device Classified?",
+          "author": "U.S. Food and Drug Administration",
           "verbatim_research_only": true
         }
       ],
@@ -1639,40 +1639,40 @@
         "form that",
         "form for",
         "form to",
-        "form is",
         "form the",
+        "form is",
         "form or",
         "form you",
         "form a",
-        "form on",
         "form your",
+        "form on",
         "form in",
         "form with",
-        "court order",
         "form so",
         "form where",
+        "court order",
         "form below",
         "form like",
         "letters of administration",
         "form their",
         "Form uh",
+        "form as",
         "form it",
         "Chapter 7",
-        "form as",
-        "form at",
         "form I",
+        "form at",
         "Protection Act",
         "form Commercial",
         "form if",
         "form um",
-        "Chapter 13",
         "form we",
         "form which",
+        "Chapter 13",
+        "form but",
+        "form here",
         "letters testamentary",
         "property Act",
         "form an",
-        "form but",
-        "form here",
         "form called"
       ],
       "tools_and_portals": [
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2570,
-      "tip_count": 6840,
-      "channel_count": 1734,
+      "video_count": 2692,
+      "tip_count": 7290,
+      "channel_count": 1825,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1890,14 +1890,14 @@
         "form on",
         "form where",
         "form your",
-        "form like",
         "form in",
+        "form like",
         "form below",
-        "court order",
         "form as",
+        "court order",
         "form it",
-        "letters of administration",
         "form which",
+        "letters of administration",
         "form content",
         "form if",
         "Form uh",
@@ -1908,13 +1908,13 @@
         "form but",
         "Chapter 7",
         "form called",
-        "form because",
         "form here",
         "form their",
+        "form because",
+        "form from",
         "form this",
         "letters testamentary",
-        "form better",
-        "form builder"
+        "form better"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1871,
-      "video_count": 2775,
-      "corroborating_tip_count": 5743,
+      "channel_count": 1979,
+      "video_count": 2910,
+      "corroborating_tip_count": 5975,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1670,
-      "video_count": 2614,
-      "corroborating_tip_count": 5619,
+      "channel_count": 1760,
+      "video_count": 2720,
+      "corroborating_tip_count": 5723,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 499,
-      "video_count": 762,
-      "corroborating_tip_count": 1821,
+      "channel_count": 521,
+      "video_count": 785,
+      "corroborating_tip_count": 1835,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1879,
-      "video_count": 2823,
-      "corroborating_tip_count": 3379,
+      "channel_count": 2000,
+      "video_count": 2976,
+      "corroborating_tip_count": 3742,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1314,
-      "video_count": 1965,
-      "corroborating_tip_count": 1129,
+      "channel_count": 1353,
+      "video_count": 2019,
+      "corroborating_tip_count": 1139,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1816,
-      "video_count": 2776,
-      "corroborating_tip_count": 4389,
+      "channel_count": 1891,
+      "video_count": 2876,
+      "corroborating_tip_count": 4495,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1861,
-      "video_count": 2909,
-      "corroborating_tip_count": 3063,
+      "channel_count": 1980,
+      "video_count": 3058,
+      "corroborating_tip_count": 3261,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1734,
-      "video_count": 2570,
-      "corroborating_tip_count": 6840,
+      "channel_count": 1825,
+      "video_count": 2692,
+      "corroborating_tip_count": 7290,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 3484 corpus videos",
-        "instance_count": 3484,
+        "source": "YouTube CDN thumbnails for the 3659 corpus videos",
+        "instance_count": 3659,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -27136,6 +27136,1231 @@
             "author": "PPC Incubator",
             "thumbnail_url": "https://i.ytimg.com/vi/79VrN9FhpT8/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=79VrN9FhpT8"
+          },
+          {
+            "video_id": "hQY0qIkQ-xY",
+            "title": "How To Build a Medical Equipment Business",
+            "author": "Earn Your Leisure",
+            "thumbnail_url": "https://i.ytimg.com/vi/hQY0qIkQ-xY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hQY0qIkQ-xY"
+          },
+          {
+            "video_id": "0jN0a_8CpgI",
+            "title": "Used Medical Equipment Company Current Inventory June 2026!",
+            "author": "Used Medical Equipment",
+            "thumbnail_url": "https://i.ytimg.com/vi/0jN0a_8CpgI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0jN0a_8CpgI"
+          },
+          {
+            "video_id": "U-LBQwafIo8",
+            "title": "LAB RESALE | New, Used, Refurbished, Medical Equipment for SALE | ARABLAB | Expo News Dubai 2020",
+            "author": "EXPO NEWS",
+            "thumbnail_url": "https://i.ytimg.com/vi/U-LBQwafIo8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U-LBQwafIo8"
+          },
+          {
+            "video_id": "8meyld3BWGg",
+            "title": "Reselling Medical Equipment Is Where The BIG MONEY Is...MUST WATCH VIDEO",
+            "author": "Jon Sheppard Sells",
+            "thumbnail_url": "https://i.ytimg.com/vi/8meyld3BWGg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8meyld3BWGg"
+          },
+          {
+            "video_id": "_ue3Y22oMAA",
+            "title": "How to Sell or Buy Used Durable Medical Equipment.",
+            "author": "Robert Remitz",
+            "thumbnail_url": "https://i.ytimg.com/vi/_ue3Y22oMAA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_ue3Y22oMAA"
+          },
+          {
+            "video_id": "ezF-botYEqQ",
+            "title": "Used Medical Equipment for Sale USA",
+            "author": "Used Medical Equipment",
+            "thumbnail_url": "https://i.ytimg.com/vi/ezF-botYEqQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ezF-botYEqQ"
+          },
+          {
+            "video_id": "sgJKIx288kY",
+            "title": "Save Major Dollars with Used Medical Equipment",
+            "author": "Better Biomed Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/sgJKIx288kY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sgJKIx288kY"
+          },
+          {
+            "video_id": "dUZz08G_Dzc",
+            "title": "Medical Equipment Auctions",
+            "author": "Centurion Service Group: A TRIMEDX Company",
+            "thumbnail_url": "https://i.ytimg.com/vi/dUZz08G_Dzc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dUZz08G_Dzc"
+          },
+          {
+            "video_id": "mIjl1lP7-nA",
+            "title": "Used Medical Equipment for Sale August 2016 Inventory",
+            "author": "Hospital Beds and Medical Equipment for Sale",
+            "thumbnail_url": "https://i.ytimg.com/vi/mIjl1lP7-nA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mIjl1lP7-nA"
+          },
+          {
+            "video_id": "xzb3hv6fB4g",
+            "title": "How to Legally Sell Used Medical Equipment | Compliance & Data Security Explained!",
+            "author": "DES Technologies",
+            "thumbnail_url": "https://i.ytimg.com/vi/xzb3hv6fB4g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xzb3hv6fB4g"
+          },
+          {
+            "video_id": "dcJl1DC6DM0",
+            "title": "5 PÁGINAS para Comprar EQUIPOS MÉDICOS a BAJO PRECIO 💰 Nuevos, Usados y Envíos Internacionales",
+            "author": "Idi Cruz",
+            "thumbnail_url": "https://i.ytimg.com/vi/dcJl1DC6DM0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dcJl1DC6DM0"
+          },
+          {
+            "video_id": "Yi4V4HzJx-I",
+            "title": "What is 21 CFR Part 820? How does this impact your Medical Device in US.",
+            "author": "Matrix One",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yi4V4HzJx-I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yi4V4HzJx-I"
+          },
+          {
+            "video_id": "yX4mpyZCfjY",
+            "title": "What is 21 CFR 820?",
+            "author": "Medical Device Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/yX4mpyZCfjY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yX4mpyZCfjY"
+          },
+          {
+            "video_id": "PhHUunSO_iQ",
+            "title": "QSR to QMSR: What Changes Before Feb 2, 2026 (FDA Medical Devices)",
+            "author": "AMORIT EDUCATION",
+            "thumbnail_url": "https://i.ytimg.com/vi/PhHUunSO_iQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PhHUunSO_iQ"
+          },
+          {
+            "video_id": "ohnyLE9h6ok",
+            "title": "Servicing 820.200 & ISO 13485 § 7.5.4, 8.4 (Executive Series #52)",
+            "author": "Quality Systems Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/ohnyLE9h6ok/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ohnyLE9h6ok"
+          },
+          {
+            "video_id": "3Qz3714kmCM",
+            "title": "⚙️ (FDA) 21 CFR Part 820 Explained: Medical Device Quality System Compliance",
+            "author": "US Regulations Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/3Qz3714kmCM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3Qz3714kmCM"
+          },
+          {
+            "video_id": "lSIrqUmOamc",
+            "title": "Updates to Servicing & Remanufacturing Through the Medical Device Servicing Collaborative Community",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/lSIrqUmOamc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lSIrqUmOamc"
+          },
+          {
+            "video_id": "cNSAixRUu9Q",
+            "title": "FDA’s New QMSR Final Rule: What Medical Device Manufacturers Need to Know (2026)",
+            "author": "Regulatory Compliance Associates",
+            "thumbnail_url": "https://i.ytimg.com/vi/cNSAixRUu9Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cNSAixRUu9Q"
+          },
+          {
+            "video_id": "qs1HLi9K5XU",
+            "title": "GMP for Medical Devices Overview ( FDA 21 CFR 820 )",
+            "author": "CALISO9000",
+            "thumbnail_url": "https://i.ytimg.com/vi/qs1HLi9K5XU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qs1HLi9K5XU"
+          },
+          {
+            "video_id": "DWOABbtgSgI",
+            "title": "FDA QMSR: What it Means for Your Quality Management System",
+            "author": "Software Connect",
+            "thumbnail_url": "https://i.ytimg.com/vi/DWOABbtgSgI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DWOABbtgSgI"
+          },
+          {
+            "video_id": "8Pgfw2y5xe0",
+            "title": "Corrections and Removals 21 CFR 806 & ISO 13485 § 8.3.3 (Executive Series #55)",
+            "author": "Quality Systems Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/8Pgfw2y5xe0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8Pgfw2y5xe0"
+          },
+          {
+            "video_id": "K2WVBO_rnnA",
+            "title": "Selling medical imaging data to AI: HIPAA and DICOM explained",
+            "author": "Sell My Data To AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/K2WVBO_rnnA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K2WVBO_rnnA"
+          },
+          {
+            "video_id": "an4G9gKy9wE",
+            "title": "National Standards for the Licensure of Wholesale Drug Distributors&Third-Party Logistics Providers",
+            "author": "U.S. Food and Drug Administration",
+            "thumbnail_url": "https://i.ytimg.com/vi/an4G9gKy9wE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=an4G9gKy9wE"
+          },
+          {
+            "video_id": "sB46aiZG8lw",
+            "title": "USFDA Medical Device Submission Explained | 510(k), De Novo & PMA | Complete Introduction",
+            "author": "NextGenMedTech",
+            "thumbnail_url": "https://i.ytimg.com/vi/sB46aiZG8lw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sB46aiZG8lw"
+          },
+          {
+            "video_id": "gfFy3QwozGE",
+            "title": "FDA Medical Device Market Entry: 510(k), De Novo, and PMA Explained for Life Sciences Leaders",
+            "author": "NSF",
+            "thumbnail_url": "https://i.ytimg.com/vi/gfFy3QwozGE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gfFy3QwozGE"
+          },
+          {
+            "video_id": "9Unzt431qg8",
+            "title": "Introduction to U.S. FDA Medical Device Regulations",
+            "author": "Registrar Corp",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Unzt431qg8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Unzt431qg8"
+          },
+          {
+            "video_id": "l_IqH_YvZ68",
+            "title": "How to Get FDA 510(k) Clearance? | Medical Device Submission Guide | Intro Video",
+            "author": "DICOM Code & Cure: MedPhysics and FDA Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/l_IqH_YvZ68/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l_IqH_YvZ68"
+          },
+          {
+            "video_id": "dd7dQRVr-mQ",
+            "title": "How to Prepare a Medical Device 510k Submission for FDA",
+            "author": "Matrix One",
+            "thumbnail_url": "https://i.ytimg.com/vi/dd7dQRVr-mQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dd7dQRVr-mQ"
+          },
+          {
+            "video_id": "1GKnWm8UYVk",
+            "title": "Mastering your 510(k) submission process",
+            "author": "Qualio",
+            "thumbnail_url": "https://i.ytimg.com/vi/1GKnWm8UYVk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1GKnWm8UYVk"
+          },
+          {
+            "video_id": "USqn2QdZTCM",
+            "title": "How to register a Medical Device with FDA? (510k, PMA, de Novo...)",
+            "author": "Easy Medical Device",
+            "thumbnail_url": "https://i.ytimg.com/vi/USqn2QdZTCM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=USqn2QdZTCM"
+          },
+          {
+            "video_id": "b1Ejw4mhVFU",
+            "title": "How to prepare an FDA eSTAR 510(k) submission",
+            "author": "Medical Device Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/b1Ejw4mhVFU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b1Ejw4mhVFU"
+          },
+          {
+            "video_id": "bEKT9pNj8Sg",
+            "title": "What's an RFD and when do I need one for a FDA 510(k)?",
+            "author": "Medical Device Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/bEKT9pNj8Sg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bEKT9pNj8Sg"
+          },
+          {
+            "video_id": "6w27HXwMbmU",
+            "title": "Medical Device Design Controls: Complete FDA 510(k) Guide with ISO 13485 Compliance",
+            "author": "Dave Saunders",
+            "thumbnail_url": "https://i.ytimg.com/vi/6w27HXwMbmU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6w27HXwMbmU"
+          },
+          {
+            "video_id": "kwzaOqIZO2k",
+            "title": "Webinar: Introduction to US FDA Medical Device Regulations (510k, De Novo, IDE, CAPA, eMDR)",
+            "author": "Invent Healthcare",
+            "thumbnail_url": "https://i.ytimg.com/vi/kwzaOqIZO2k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kwzaOqIZO2k"
+          },
+          {
+            "video_id": "-ceDuiClggg",
+            "title": "How to Prepare a Medical Device 510k Submission for FDA | Rob Packard | Joe Hage",
+            "author": "MedicalMarcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/-ceDuiClggg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-ceDuiClggg"
+          },
+          {
+            "video_id": "4ICxQIfTktg",
+            "title": "FDA vs Health Canada: Medical Device Regulations Explained (510k, PMA & MDL)",
+            "author": "Quality Smart Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/4ICxQIfTktg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4ICxQIfTktg"
+          },
+          {
+            "video_id": "yIARvVKN5-s",
+            "title": "510k Workshop: How to Prepare an FDA Submission (Part I)",
+            "author": "MedicalMarcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/yIARvVKN5-s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yIARvVKN5-s"
+          },
+          {
+            "video_id": "0CrtB8E2n30",
+            "title": "How to Submit a 510(k) to the FDA | Step-by-Step Guide for Medical Device Approval",
+            "author": "Prime Path Medtech",
+            "thumbnail_url": "https://i.ytimg.com/vi/0CrtB8E2n30/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0CrtB8E2n30"
+          },
+          {
+            "video_id": "1GAyLn0XcLI",
+            "title": "UNDERSTANDING MRI - HELIUM FILLED //MAGNET QUENCHING //HELIUM FREE MACHINES AS A BIOMED ENGINEER",
+            "author": "JHL SOLUTIONS",
+            "thumbnail_url": "https://i.ytimg.com/vi/1GAyLn0XcLI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1GAyLn0XcLI"
+          },
+          {
+            "video_id": "_-e12TPIFxw",
+            "title": "What Is an MRI Quench?",
+            "author": "Block Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/_-e12TPIFxw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_-e12TPIFxw"
+          },
+          {
+            "video_id": "Bu466hadTu0",
+            "title": "How Much Liquid Helium Does MRI Use?",
+            "author": "MRIPETCTSOURCE",
+            "thumbnail_url": "https://i.ytimg.com/vi/Bu466hadTu0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Bu466hadTu0"
+          },
+          {
+            "video_id": "Xn2oD7o0yyU",
+            "title": "ARH Homebush MRI 'Quench' - Ready For New MRI Install Soon",
+            "author": "VET talk TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xn2oD7o0yyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Xn2oD7o0yyU"
+          },
+          {
+            "video_id": "3203LTd64a8",
+            "title": "Why Get Extended Service Contracts with Medical Imaging Equipment?",
+            "author": "Block Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/3203LTd64a8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3203LTd64a8"
+          },
+          {
+            "video_id": "09hrQ3SQK3E",
+            "title": "Selling Medical Equipment Into Latin America",
+            "author": "Healthcare Direct USA",
+            "thumbnail_url": "https://i.ytimg.com/vi/09hrQ3SQK3E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=09hrQ3SQK3E"
+          },
+          {
+            "video_id": "e1ChWLjN_6Q",
+            "title": "The Market Outlook for Medical Equipment in Latin America",
+            "author": "Global Health Intelligence",
+            "thumbnail_url": "https://i.ytimg.com/vi/e1ChWLjN_6Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e1ChWLjN_6Q"
+          },
+          {
+            "video_id": "8l8Q1Q45u1s",
+            "title": "2022 Latin America Medical Equipment Market",
+            "author": "Global Health Intelligence",
+            "thumbnail_url": "https://i.ytimg.com/vi/8l8Q1Q45u1s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8l8Q1Q45u1s"
+          },
+          {
+            "video_id": "FzWeG7sw7qk",
+            "title": "Increasing Sales of Medical Equipment in Latin America",
+            "author": "Global Health Intelligence",
+            "thumbnail_url": "https://i.ytimg.com/vi/FzWeG7sw7qk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FzWeG7sw7qk"
+          },
+          {
+            "video_id": "4yS9pDHEcIs",
+            "title": "Medical Laser Safety Officer Compliance - A Gateway to Certification",
+            "author": "OR Today Magazine",
+            "thumbnail_url": "https://i.ytimg.com/vi/4yS9pDHEcIs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4yS9pDHEcIs"
+          },
+          {
+            "video_id": "3pHyNlFBLO0",
+            "title": "Advanced Procedures Certification Course - Laser Training Course",
+            "author": "Ohio Optometric",
+            "thumbnail_url": "https://i.ytimg.com/vi/3pHyNlFBLO0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3pHyNlFBLO0"
+          },
+          {
+            "video_id": "QnVjairPvRk",
+            "title": "Healthcare Laser Safety Certification Courses",
+            "author": "Laser Safety Certification",
+            "thumbnail_url": "https://i.ytimg.com/vi/QnVjairPvRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QnVjairPvRk"
+          },
+          {
+            "video_id": "kBlmK6r6MgU",
+            "title": "Laser Safe - The Biomed’s Path to LSO Certification",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/kBlmK6r6MgU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kBlmK6r6MgU"
+          },
+          {
+            "video_id": "OS2unSk68KQ",
+            "title": "FDA's MAUDE database: A medical device expert's insight",
+            "author": "Koven Technology Canada",
+            "thumbnail_url": "https://i.ytimg.com/vi/OS2unSk68KQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OS2unSk68KQ"
+          },
+          {
+            "video_id": "-sk7wovpoZQ",
+            "title": "FDA loophole led to years of unsafe medical devices",
+            "author": "23ABC News | KERO",
+            "thumbnail_url": "https://i.ytimg.com/vi/-sk7wovpoZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-sk7wovpoZQ"
+          },
+          {
+            "video_id": "a-scTl1C2PA",
+            "title": "Searching the FDA MAUDE database",
+            "author": "Ofstead Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/a-scTl1C2PA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a-scTl1C2PA"
+          },
+          {
+            "video_id": "aYQu_0ujhyU",
+            "title": "Medical Device Recalls Unpacked: FDA Compliance and Litigation Insights",
+            "author": "Gardner Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/aYQu_0ujhyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aYQu_0ujhyU"
+          },
+          {
+            "video_id": "0dpHnJj93Ns",
+            "title": "Who's Maude Anyway? Two FDA Databases Get Updates",
+            "author": "in2being",
+            "thumbnail_url": "https://i.ytimg.com/vi/0dpHnJj93Ns/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0dpHnJj93Ns"
+          },
+          {
+            "video_id": "sNeRd4nIrG8",
+            "title": "EPISODE 2: Product Recalls, Including Removals and Corrections",
+            "author": "Mr. Regulatory",
+            "thumbnail_url": "https://i.ytimg.com/vi/sNeRd4nIrG8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sNeRd4nIrG8"
+          },
+          {
+            "video_id": "GoXd4_jxKBg",
+            "title": "FDA Recall vs Warning Letter vs Safety Communication: Know the Difference",
+            "author": "Treomark",
+            "thumbnail_url": "https://i.ytimg.com/vi/GoXd4_jxKBg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GoXd4_jxKBg"
+          },
+          {
+            "video_id": "4_qtgUz46GU",
+            "title": "FDA Recall Update: Food and Medicine Nov 9. 2026",
+            "author": "FDA RECALLS",
+            "thumbnail_url": "https://i.ytimg.com/vi/4_qtgUz46GU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4_qtgUz46GU"
+          },
+          {
+            "video_id": "-6DRTqlDCP0",
+            "title": "Medical Device Complaint Handling Process | MAUDE Database & FDA 3500A Walkthrough",
+            "author": "REGSTALK",
+            "thumbnail_url": "https://i.ytimg.com/vi/-6DRTqlDCP0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-6DRTqlDCP0"
+          },
+          {
+            "video_id": "LXOka69hkxs",
+            "title": "Don’t Ship Medical Equipment Like Regular Freight—Here’s Why",
+            "author": "Ntwdequiptrans",
+            "thumbnail_url": "https://i.ytimg.com/vi/LXOka69hkxs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LXOka69hkxs"
+          },
+          {
+            "video_id": "ricZLyY1F1M",
+            "title": "BIOMEDICAL EQUIPMENT MAINTENANCE - TRAINING AND OPERATIONS",
+            "author": "PublicResourceOrg",
+            "thumbnail_url": "https://i.ytimg.com/vi/ricZLyY1F1M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ricZLyY1F1M"
+          },
+          {
+            "video_id": "I59ePN89yx4",
+            "title": "Medical Equipment Repair Tips 🔧 |Biomedical Engineers keliye Must Know (2026) | 18+ Years Experience",
+            "author": "Biomedical Engineering with Ganesh",
+            "thumbnail_url": "https://i.ytimg.com/vi/I59ePN89yx4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I59ePN89yx4"
+          },
+          {
+            "video_id": "edE21TMq6iY",
+            "title": "Medical Equipment Training | Biomedical Equipment Technology",
+            "author": "Centura College",
+            "thumbnail_url": "https://i.ytimg.com/vi/edE21TMq6iY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=edE21TMq6iY"
+          },
+          {
+            "video_id": "W-lVX6x4V2U",
+            "title": "Biomedical Science vs. Medicine | 6 Key Differences | Atousa",
+            "author": "Doctor Atousa",
+            "thumbnail_url": "https://i.ytimg.com/vi/W-lVX6x4V2U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W-lVX6x4V2U"
+          },
+          {
+            "video_id": "8kG0BUAGcP4",
+            "title": "Best Top 5 Dental Autoclave Sterilizer Cases on AliExpress",
+            "author": "LopinMoetas",
+            "thumbnail_url": "https://i.ytimg.com/vi/8kG0BUAGcP4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8kG0BUAGcP4"
+          },
+          {
+            "video_id": "NFqBMUIcgl4",
+            "title": "Medinas Health: Building a Medical Equipment Marketplace | Berkeley Haas Case Series",
+            "author": "Berkeley Haas Case Series",
+            "thumbnail_url": "https://i.ytimg.com/vi/NFqBMUIcgl4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NFqBMUIcgl4"
+          },
+          {
+            "video_id": "zLW0PtGvqQE",
+            "title": "The used medical equipment marketplace.",
+            "author": "Bill Whittemore",
+            "thumbnail_url": "https://i.ytimg.com/vi/zLW0PtGvqQE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zLW0PtGvqQE"
+          },
+          {
+            "video_id": "ll03lU-_2LM",
+            "title": "Medical Equipment Suppliers Bookkeeping Services | Inventory, Accounting & Financial Management",
+            "author": "Cloud Accounting World",
+            "thumbnail_url": "https://i.ytimg.com/vi/ll03lU-_2LM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ll03lU-_2LM"
+          },
+          {
+            "video_id": "xvO7-DA6X2w",
+            "title": "Seven Questions to Ask Your Provider for Refurbished Medical Equipment",
+            "author": "Block Imaging",
+            "thumbnail_url": "https://i.ytimg.com/vi/xvO7-DA6X2w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xvO7-DA6X2w"
+          },
+          {
+            "video_id": "cJ2aUSQgfeo",
+            "title": "Medical Equipment Case Study",
+            "author": "Marketing Tech",
+            "thumbnail_url": "https://i.ytimg.com/vi/cJ2aUSQgfeo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cJ2aUSQgfeo"
+          },
+          {
+            "video_id": "l108Vrz9wLo",
+            "title": "The Future of Reprocessed Used Medical Equipment",
+            "author": "Greenlight Guru",
+            "thumbnail_url": "https://i.ytimg.com/vi/l108Vrz9wLo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l108Vrz9wLo"
+          },
+          {
+            "video_id": "hJg3slOsTT8",
+            "title": "Medical Device DHF Remediation Interview | ISO 13485 | FDA 21 CFR 820 | Risk Management & Compliance",
+            "author": "SAGAR TIPNE",
+            "thumbnail_url": "https://i.ytimg.com/vi/hJg3slOsTT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hJg3slOsTT8"
+          },
+          {
+            "video_id": "8VMkq0EoUD4",
+            "title": "FDA Reprocessing Medical Devices: Validation Methods and Labeling.#MedicalDeviceReprocessing",
+            "author": "Medical and Health Tips (MHT)",
+            "thumbnail_url": "https://i.ytimg.com/vi/8VMkq0EoUD4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8VMkq0EoUD4"
+          },
+          {
+            "video_id": "9KwVs0WbeZI",
+            "title": "Types of imaging: X-RAY, MRI, CT, ULTRASOUND ✅ | How they work and what they are used for",
+            "author": "Learn Easy Science",
+            "thumbnail_url": "https://i.ytimg.com/vi/9KwVs0WbeZI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9KwVs0WbeZI"
+          },
+          {
+            "video_id": "PhTePMcMXpk",
+            "title": "x ray vs ct vs mri vs usg #shorts #youtubeshorts #education",
+            "author": "SILVER MEDICS",
+            "thumbnail_url": "https://i.ytimg.com/vi/PhTePMcMXpk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PhTePMcMXpk"
+          },
+          {
+            "video_id": "BjPEga16VJY",
+            "title": "Deep Learning for MRI Reconstruction | MRI Data Acquisition #10",
+            "author": "MRI R&D Program - TACTIX Twinning Project",
+            "thumbnail_url": "https://i.ytimg.com/vi/BjPEga16VJY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BjPEga16VJY"
+          },
+          {
+            "video_id": "QAlFneaY_MU",
+            "title": "I Attended the Cynosure x Lutronic Academy | My Laser Training Experience",
+            "author": "Jessica Dela Cruz",
+            "thumbnail_url": "https://i.ytimg.com/vi/QAlFneaY_MU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QAlFneaY_MU"
+          },
+          {
+            "video_id": "HBf8beE8tGc",
+            "title": "Verify ANY Electrical Safety Analyzer",
+            "author": "Better Biomed Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/HBf8beE8tGc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HBf8beE8tGc"
+          },
+          {
+            "video_id": "UatkfSp7sHs",
+            "title": "CBET Exam: What to Study, Tips, and My Results",
+            "author": "Traveling Alaskan Biomed Tech",
+            "thumbnail_url": "https://i.ytimg.com/vi/UatkfSp7sHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UatkfSp7sHs"
+          },
+          {
+            "video_id": "rqUE2pFiqUI",
+            "title": "ESA Training: How to Use a Fluke Electrical Safety Analyzer | ESA620 | Biomedical",
+            "author": "AbishkarTECH",
+            "thumbnail_url": "https://i.ytimg.com/vi/rqUE2pFiqUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rqUE2pFiqUI"
+          },
+          {
+            "video_id": "VMonxNBLqE4",
+            "title": "Take a Tour of Our Ambulatory Surgery Center!",
+            "author": "Henry Schein Medical",
+            "thumbnail_url": "https://i.ytimg.com/vi/VMonxNBLqE4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VMonxNBLqE4"
+          },
+          {
+            "video_id": "DrTCjk0roNk",
+            "title": "Surgical Direct's Veterinary Endoscopy System",
+            "author": "Surgical Direct (Surgical Direct)",
+            "thumbnail_url": "https://i.ytimg.com/vi/DrTCjk0roNk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DrTCjk0roNk"
+          },
+          {
+            "video_id": "zTKQ6_gG7iY",
+            "title": "Surgical Instruments And Their Use - Vet Video Library",
+            "author": "Vet Video Library",
+            "thumbnail_url": "https://i.ytimg.com/vi/zTKQ6_gG7iY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zTKQ6_gG7iY"
+          },
+          {
+            "video_id": "PlDJXzo7cN4",
+            "title": "Preparing sterile surgical packs",
+            "author": "Four Paws Animal Hospital & Wellness Center",
+            "thumbnail_url": "https://i.ytimg.com/vi/PlDJXzo7cN4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PlDJXzo7cN4"
+          },
+          {
+            "video_id": "WoO-cNElJpg",
+            "title": "Veterinary Procedure - Surgery Pack Preparation",
+            "author": "PEER at TAMU",
+            "thumbnail_url": "https://i.ytimg.com/vi/WoO-cNElJpg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WoO-cNElJpg"
+          },
+          {
+            "video_id": "Zb4YYmRy5x0",
+            "title": "Does a vet tech assist in surgery?",
+            "author": "Vet Candy | Veterinary Education, CE & News",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zb4YYmRy5x0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Zb4YYmRy5x0"
+          },
+          {
+            "video_id": "hfx0fS26yO0",
+            "title": "Cerner Ambulatory Surgery Center (ASC) overview",
+            "author": "Cerner Corporation",
+            "thumbnail_url": "https://i.ytimg.com/vi/hfx0fS26yO0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hfx0fS26yO0"
+          },
+          {
+            "video_id": "aZkxlipyWRs",
+            "title": "Mastering the FDA 510(k) Submission Process: A Practical Guide",
+            "author": "Conference Panel",
+            "thumbnail_url": "https://i.ytimg.com/vi/aZkxlipyWRs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aZkxlipyWRs"
+          },
+          {
+            "video_id": "7hmnIP4pXbo",
+            "title": "Behind the 510(k): The Science of Material Compatibility and FDA Clearance Ft. CS Medical Staff",
+            "author": "CS Medical",
+            "thumbnail_url": "https://i.ytimg.com/vi/7hmnIP4pXbo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7hmnIP4pXbo"
+          },
+          {
+            "video_id": "ZXn0JVoWAQk",
+            "title": "Understanding the FDA Medical Device 510k Process",
+            "author": "Patient Guard | Medical Device Consultancy",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZXn0JVoWAQk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZXn0JVoWAQk"
+          },
+          {
+            "video_id": "V3Fob6FXlCo",
+            "title": "FDA 510K Premarket Notification Webinar",
+            "author": "Invent Healthcare",
+            "thumbnail_url": "https://i.ytimg.com/vi/V3Fob6FXlCo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V3Fob6FXlCo"
+          },
+          {
+            "video_id": "gGje01O9B44",
+            "title": "How to prepare a 510k submission for FDA",
+            "author": "MedicalMarcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/gGje01O9B44/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gGje01O9B44"
+          },
+          {
+            "video_id": "UdQw2LB0EYc",
+            "title": "Coffee and Q&A: When a Software Update Needs a New 510(k), FDA's Warning Letter to O.N. Diagnostics",
+            "author": "Innolitics",
+            "thumbnail_url": "https://i.ytimg.com/vi/UdQw2LB0EYc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UdQw2LB0EYc"
+          },
+          {
+            "video_id": "nUaPO0mfwKI",
+            "title": "510k Workshop: How to Prepare an FDA Submission (Part II)",
+            "author": "MedicalMarcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/nUaPO0mfwKI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nUaPO0mfwKI"
+          },
+          {
+            "video_id": "6WEZ6ovm-PE",
+            "title": "How to Pick a Predicate Device for Your 510(k): Intended Use, Split Predicates & FDA Best Practices",
+            "author": "Cleared 인허가 노트",
+            "thumbnail_url": "https://i.ytimg.com/vi/6WEZ6ovm-PE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6WEZ6ovm-PE"
+          },
+          {
+            "video_id": "HPAddrORIJU",
+            "title": "S2 E8 – MRI Quench Pipes: Engineering Challenges and Safety Solutions",
+            "author": "FGI",
+            "thumbnail_url": "https://i.ytimg.com/vi/HPAddrORIJU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HPAddrORIJU"
+          },
+          {
+            "video_id": "eWwVQyVC9X0",
+            "title": "MRI Cryogen Safety",
+            "author": "FREE CME",
+            "thumbnail_url": "https://i.ytimg.com/vi/eWwVQyVC9X0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eWwVQyVC9X0"
+          },
+          {
+            "video_id": "r84DBdhhg1k",
+            "title": "How to Import Medical Equipment to the USA: A Comprehensive Guide",
+            "author": "ISF Customs Broker",
+            "thumbnail_url": "https://i.ytimg.com/vi/r84DBdhhg1k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r84DBdhhg1k"
+          },
+          {
+            "video_id": "uNFHZlCznIw",
+            "title": "Software License Trap: Audits, Fees, Control",
+            "author": "Hidden Industries",
+            "thumbnail_url": "https://i.ytimg.com/vi/uNFHZlCznIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uNFHZlCznIw"
+          },
+          {
+            "video_id": "KPlnFyWRwTQ",
+            "title": "NCLC Laser Certification Process",
+            "author": "Laser Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/KPlnFyWRwTQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KPlnFyWRwTQ"
+          },
+          {
+            "video_id": "p2c6HcivkAA",
+            "title": "Secondary Use: Can Your Clinic License Its Data?",
+            "author": "AI Training Data Broker",
+            "thumbnail_url": "https://i.ytimg.com/vi/p2c6HcivkAA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p2c6HcivkAA"
+          },
+          {
+            "video_id": "-b8Z_S4V2mY",
+            "title": "Cold Laser Therapy Certification - Video Case Study",
+            "author": "Melissa McDowell",
+            "thumbnail_url": "https://i.ytimg.com/vi/-b8Z_S4V2mY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-b8Z_S4V2mY"
+          },
+          {
+            "video_id": "yKomHc_DWtw",
+            "title": "The FDA MAUDE Database. Who is reporting and how good are the reports.",
+            "author": "Health Watch USA",
+            "thumbnail_url": "https://i.ytimg.com/vi/yKomHc_DWtw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yKomHc_DWtw"
+          },
+          {
+            "video_id": "XMo038fEjH4",
+            "title": "Case Study: How is My Medical Device Classified?",
+            "author": "U.S. Food and Drug Administration",
+            "thumbnail_url": "https://i.ytimg.com/vi/XMo038fEjH4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XMo038fEjH4"
+          },
+          {
+            "video_id": "1kYC2rBfPPA",
+            "title": "Recalls, Removals, and Market Corrections in Compliance with FDA and ISO Requirements",
+            "author": "GlobalCompliance Panel",
+            "thumbnail_url": "https://i.ytimg.com/vi/1kYC2rBfPPA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1kYC2rBfPPA"
+          },
+          {
+            "video_id": "nJblY5CRIVY",
+            "title": "Medical Device Recalls and Part 806: The Importance of Getting It Right",
+            "author": "Medmarc",
+            "thumbnail_url": "https://i.ytimg.com/vi/nJblY5CRIVY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nJblY5CRIVY"
+          },
+          {
+            "video_id": "GPC9Ci11MuI",
+            "title": "8 Surprising Ways to Prevent Device Recalls!",
+            "author": "Medical Device Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/GPC9Ci11MuI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GPC9Ci11MuI"
+          },
+          {
+            "video_id": "UQh0OoupetI",
+            "title": "Another Biomedical Repair company sold to private equity?",
+            "author": "Better Biomed Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/UQh0OoupetI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UQh0OoupetI"
+          },
+          {
+            "video_id": "D3YTNIGYcxQ",
+            "title": "Apprenticeships Case Study 5- Pathology",
+            "author": "norfolknhs",
+            "thumbnail_url": "https://i.ytimg.com/vi/D3YTNIGYcxQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D3YTNIGYcxQ"
+          },
+          {
+            "video_id": "e8IOdCXltj0",
+            "title": "Case Study: The advantages of having a CBCT & a dental operating microscope",
+            "author": "The Endo Doc",
+            "thumbnail_url": "https://i.ytimg.com/vi/e8IOdCXltj0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e8IOdCXltj0"
+          },
+          {
+            "video_id": "PoaIdM80c3c",
+            "title": "How to Start a Medical Equipment Business in Dubai (MOHAP Guide)",
+            "author": "A&A Associate LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/PoaIdM80c3c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PoaIdM80c3c"
+          },
+          {
+            "video_id": "Ahi8z5l5Yao",
+            "title": "How To Start A Medical Supply Business In Florida",
+            "author": "How to Start a Business that Prints Cash",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ahi8z5l5Yao/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ahi8z5l5Yao"
+          },
+          {
+            "video_id": "C3pxzDnP6HM",
+            "title": "Special FDA Webinar for Medical Equipment Sales and Service Industry",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/C3pxzDnP6HM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C3pxzDnP6HM"
+          },
+          {
+            "video_id": "Dbp4lOgGoT8",
+            "title": "GMP for Medical Devices Overview FDA 21 CFR 820",
+            "author": "Center for Health Information and Decision Systems",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dbp4lOgGoT8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dbp4lOgGoT8"
+          },
+          {
+            "video_id": "jUg2UuY-OlQ",
+            "title": "Why does 21 CFR 820 need to be modernized to ISO 13485?",
+            "author": "Medical Device Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/jUg2UuY-OlQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jUg2UuY-OlQ"
+          },
+          {
+            "video_id": "URXL-ymHf4w",
+            "title": "QMS Software for Medical Electrical Equipment Companies | Matrix Quality",
+            "author": "Matrix One",
+            "thumbnail_url": "https://i.ytimg.com/vi/URXL-ymHf4w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=URXL-ymHf4w"
+          },
+          {
+            "video_id": "b_a74PE0Cn0",
+            "title": "QMSR Is Now in Force: What FDA Inspectors Look For Now | Matrix Quality",
+            "author": "Matrix One",
+            "thumbnail_url": "https://i.ytimg.com/vi/b_a74PE0Cn0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b_a74PE0Cn0"
+          },
+          {
+            "video_id": "aQZ8tTZnQ8A",
+            "title": "What’s the Difference Between an MRI and a CT?",
+            "author": "RAYUS Radiology",
+            "thumbnail_url": "https://i.ytimg.com/vi/aQZ8tTZnQ8A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aQZ8tTZnQ8A"
+          },
+          {
+            "video_id": "RYWamzzbeSc",
+            "title": "Why X-ray, CT, Ultrasound, MRI & PET Imaging Work",
+            "author": "Radiology Frameworks",
+            "thumbnail_url": "https://i.ytimg.com/vi/RYWamzzbeSc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RYWamzzbeSc"
+          },
+          {
+            "video_id": "iZqTo4cU3Po",
+            "title": "Candela Pro Parameters Explained - How to use the Candela Pro series hair removal laser machine",
+            "author": "The Derma Glow",
+            "thumbnail_url": "https://i.ytimg.com/vi/iZqTo4cU3Po/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iZqTo4cU3Po"
+          },
+          {
+            "video_id": "0O9pt3qlw7E",
+            "title": "Biomed Technician | Day in the life",
+            "author": "Dave The Biomed",
+            "thumbnail_url": "https://i.ytimg.com/vi/0O9pt3qlw7E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0O9pt3qlw7E"
+          },
+          {
+            "video_id": "B0yNPMYGzqM",
+            "title": "Introduction to AAMI’s Certified Associate Biomedical Technician CABT Certification",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/B0yNPMYGzqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B0yNPMYGzqM"
+          },
+          {
+            "video_id": "x772T1-4M-Q",
+            "title": "ESA700 Series Electrical Safety Analyzers",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/x772T1-4M-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x772T1-4M-Q"
+          },
+          {
+            "video_id": "AQIyPCz9bJM",
+            "title": "Solutions to Expand or Optimize your Ambulatory Surgery Center",
+            "author": "American Association of Hip and Knee Surgeons",
+            "thumbnail_url": "https://i.ytimg.com/vi/AQIyPCz9bJM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AQIyPCz9bJM"
+          },
+          {
+            "video_id": "PWqUy0mJWYw",
+            "title": "14. Sx Suite Setup 1",
+            "author": "Vet Tech - Beyond the Books: Hands-on Skills",
+            "thumbnail_url": "https://i.ytimg.com/vi/PWqUy0mJWYw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PWqUy0mJWYw"
+          },
+          {
+            "video_id": "lIY2sYTUh2Y",
+            "title": "VETERINARY BASICS: Things you should know before going into a clinic . . . | Vet School",
+            "author": "Jess Cliffe",
+            "thumbnail_url": "https://i.ytimg.com/vi/lIY2sYTUh2Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lIY2sYTUh2Y"
+          },
+          {
+            "video_id": "iAwNQ3QON9c",
+            "title": "HIPAA Compliance for Dental Practices: The 2026 Guide for MSPs",
+            "author": "Nuronus",
+            "thumbnail_url": "https://i.ytimg.com/vi/iAwNQ3QON9c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iAwNQ3QON9c"
+          },
+          {
+            "video_id": "kiNTAANRFVM",
+            "title": "FDA Approval and Licensing Process",
+            "author": "POCTCTR",
+            "thumbnail_url": "https://i.ytimg.com/vi/kiNTAANRFVM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kiNTAANRFVM"
+          },
+          {
+            "video_id": "Tb7dnxPHBNo",
+            "title": "FDA 510k process",
+            "author": "Verdict Videos, Day in the Life Legal Video",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tb7dnxPHBNo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tb7dnxPHBNo"
+          },
+          {
+            "video_id": "TChhZNirpeM",
+            "title": "Can Distributors File a 510(k) for Chinese Medical Devices? YES!",
+            "author": "Isaac Erickson",
+            "thumbnail_url": "https://i.ytimg.com/vi/TChhZNirpeM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TChhZNirpeM"
+          },
+          {
+            "video_id": "fRqZHq_Gruc",
+            "title": "MRI Safety: Four Zones, Projectiles, Quench & Burns | Ep. 11 #mri #mrimasetry",
+            "author": "Imaging Notes",
+            "thumbnail_url": "https://i.ytimg.com/vi/fRqZHq_Gruc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fRqZHq_Gruc"
+          },
+          {
+            "video_id": "NTlv6-PNAuI",
+            "title": "Medical Compliance With Clarissa - Episode 16 - NMPA Process & Exporting Medical Devices to China",
+            "author": "Intertek",
+            "thumbnail_url": "https://i.ytimg.com/vi/NTlv6-PNAuI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NTlv6-PNAuI"
+          },
+          {
+            "video_id": "NP8OXlNO1lE",
+            "title": "New Laser Therapy Offers More Patient-Friendly Treatment For Skin Imperfections",
+            "author": "CBS Philadelphia",
+            "thumbnail_url": "https://i.ytimg.com/vi/NP8OXlNO1lE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NP8OXlNO1lE"
+          },
+          {
+            "video_id": "iWPkoBanBfY",
+            "title": "AccessGUDID: Search and Download",
+            "author": "National Library of Medicine",
+            "thumbnail_url": "https://i.ytimg.com/vi/iWPkoBanBfY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iWPkoBanBfY"
+          },
+          {
+            "video_id": "15ffob3rfCw",
+            "title": "How to Master Medical Capital Equipment Sales",
+            "author": "Medical Sales U",
+            "thumbnail_url": "https://i.ytimg.com/vi/15ffob3rfCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=15ffob3rfCw"
+          },
+          {
+            "video_id": "-KxAlnmN4IY",
+            "title": "Medical Device Sales Explained (Everything You Need to Know)",
+            "author": "Break Into Medical Device Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/-KxAlnmN4IY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-KxAlnmN4IY"
+          },
+          {
+            "video_id": "2Nn9rL0ZXRg",
+            "title": "5 Tips to Become a Medical Device Sales Rep in 2025",
+            "author": "Med Sales With Matt",
+            "thumbnail_url": "https://i.ytimg.com/vi/2Nn9rL0ZXRg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2Nn9rL0ZXRg"
+          },
+          {
+            "video_id": "G5Dl1131xAw",
+            "title": "The Most Valuable Medical Device Sales Training You'll Ever Watch",
+            "author": "New to Medical Device Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/G5Dl1131xAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G5Dl1131xAw"
+          },
+          {
+            "video_id": "ZLMuTtC8HM0",
+            "title": "7 Skills NEEDED for a Medical Devices Sales Rep Job in 2025",
+            "author": "Med Sales With Matt",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZLMuTtC8HM0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZLMuTtC8HM0"
+          },
+          {
+            "video_id": "PaW-3LfksaU",
+            "title": "Let's Talk About Selling In Medical Device Sales",
+            "author": "New to Medical Device Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/PaW-3LfksaU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PaW-3LfksaU"
+          },
+          {
+            "video_id": "IaALQ3iuJp8",
+            "title": "What Type of Medical Device Sales Should You Pursue? (3 Paths Explained)",
+            "author": "Break Into Medical Device Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/IaALQ3iuJp8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IaALQ3iuJp8"
+          },
+          {
+            "video_id": "fHUIy8gtER4",
+            "title": "The Truth About Medical Device Sales in 2026 (Don’t Do It Before Watching This)",
+            "author": "Break Into Medical Device Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/fHUIy8gtER4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fHUIy8gtER4"
+          },
+          {
+            "video_id": "9bfKQdKe_vU",
+            "title": "2026 Is Your Year: How to Break Into Medical Device Sales NOW",
+            "author": "New to Medical Device Sales",
+            "thumbnail_url": "https://i.ytimg.com/vi/9bfKQdKe_vU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9bfKQdKe_vU"
+          },
+          {
+            "video_id": "BGvm2DdaLEs",
+            "title": "Understanding Medicare and Durable Medical Equipment",
+            "author": "Medicare Rights Center",
+            "thumbnail_url": "https://i.ytimg.com/vi/BGvm2DdaLEs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BGvm2DdaLEs"
+          },
+          {
+            "video_id": "-23KPzW6CW8",
+            "title": "Medical Equipment: 7-Figure Niche or Waste of Time?",
+            "author": "Joe Verschoor",
+            "thumbnail_url": "https://i.ytimg.com/vi/-23KPzW6CW8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-23KPzW6CW8"
+          },
+          {
+            "video_id": "oAV1SBup8Q8",
+            "title": "Medical Device, Diagnostics and Therapeutics Pricing, Revenue & Reimbursement",
+            "author": "Fast Forward Medical Innovation – Commercialization Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/oAV1SBup8Q8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oAV1SBup8Q8"
+          },
+          {
+            "video_id": "iWKTCfxvEUg",
+            "title": "Who Really Profits From Hospital Technology?",
+            "author": "The Business Beneath",
+            "thumbnail_url": "https://i.ytimg.com/vi/iWKTCfxvEUg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iWKTCfxvEUg"
+          },
+          {
+            "video_id": "je3P4ran5jk",
+            "title": "The Economics of the Medical Devices Industry | How Medical Companies Make Billions",
+            "author": "Industry Games",
+            "thumbnail_url": "https://i.ytimg.com/vi/je3P4ran5jk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=je3P4ran5jk"
+          },
+          {
+            "video_id": "KsMhJhbA73k",
+            "title": "Navigating Long Sales Cycles in Capital Equipment or Hospital Systems",
+            "author": "Joe Licata | Medical Sales Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/KsMhJhbA73k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KsMhJhbA73k"
+          },
+          {
+            "video_id": "60julptDir4",
+            "title": "All States MED Franchising - Medical Equipment Sales Franchise Opportunity",
+            "author": "All States MED",
+            "thumbnail_url": "https://i.ytimg.com/vi/60julptDir4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=60julptDir4"
+          },
+          {
+            "video_id": "Z56Xw5_JbNs",
+            "title": "Defibrillator Electrical Safety Testing Featuring ReNew Biomedical",
+            "author": "Better Biomed Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z56Xw5_JbNs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z56Xw5_JbNs"
+          },
+          {
+            "video_id": "7JgSRU2VyXE",
+            "title": "Beginners Troubleshooting Medical Device Power",
+            "author": "Better Biomed Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/7JgSRU2VyXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7JgSRU2VyXE"
+          },
+          {
+            "video_id": "wgffreMAiWI",
+            "title": "Electrical Safety of Medical Equipment's | Part 3 | Biomedical Engineers TV",
+            "author": "Biomedical Engineers TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/wgffreMAiWI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wgffreMAiWI"
+          },
+          {
+            "video_id": "bLqvmql3QHs",
+            "title": "FT10 Functional Tests | Safety Checks and Output Verification (Part 6)",
+            "author": "MedDeviceEngineerX | Isiah",
+            "thumbnail_url": "https://i.ytimg.com/vi/bLqvmql3QHs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bLqvmql3QHs"
+          },
+          {
+            "video_id": "-ZSbkKuzbMc",
+            "title": "Testing and Calibration of Biomedical Equipment - Basics #calibrations #troubleshooting",
+            "author": "ATHEENAPANDIAN BIOMEDICAL INDUSTRY",
+            "thumbnail_url": "https://i.ytimg.com/vi/-ZSbkKuzbMc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-ZSbkKuzbMc"
+          },
+          {
+            "video_id": "jzPWxnzAds0",
+            "title": "Setting Up a Veterinary Office: Essential Equipment and Supplies",
+            "author": "MFI Medical",
+            "thumbnail_url": "https://i.ytimg.com/vi/jzPWxnzAds0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jzPWxnzAds0"
+          },
+          {
+            "video_id": "1jEOjg29-e0",
+            "title": "Ask the Vet - Surgery Instruments",
+            "author": "Ask the Vet",
+            "thumbnail_url": "https://i.ytimg.com/vi/1jEOjg29-e0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1jEOjg29-e0"
+          },
+          {
+            "video_id": "YXLWY7VHfxM",
+            "title": "Starting Your Own Biomed Business!",
+            "author": "Better Biomed Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/YXLWY7VHfxM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YXLWY7VHfxM"
+          },
+          {
+            "video_id": "kmzmXxn2MBE",
+            "title": "Medical Device Servicing Community FDA Industry Updates",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/kmzmXxn2MBE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kmzmXxn2MBE"
+          },
+          {
+            "video_id": "7d4lxsuW9Xs",
+            "title": "How Low Quality Remanufactured Parts Inside Medical Devices Increase Total Cost Of Ownership",
+            "author": "TechNation TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/7d4lxsuW9Xs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7d4lxsuW9Xs"
+          },
+          {
+            "video_id": "XOwMEZdq9q8",
+            "title": "Video 18 of 35 - FDA's 2026 CSA Guidance — Risk Assessment and Assurance Activities |",
+            "author": "Pharma Best Practices",
+            "thumbnail_url": "https://i.ytimg.com/vi/XOwMEZdq9q8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XOwMEZdq9q8"
+          },
+          {
+            "video_id": "2VNYkzxS9nA",
+            "title": "FDA QMSR Compliance Calls for a New Mindset | FDA 21 CFR Part 820 Evolution PART 2",
+            "author": "QT9 Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/2VNYkzxS9nA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2VNYkzxS9nA"
+          },
+          {
+            "video_id": "xr3Vfmkli0Q",
+            "title": "MRI Suite",
+            "author": "Boundary Bay Veterinary Specialty Hospital",
+            "thumbnail_url": "https://i.ytimg.com/vi/xr3Vfmkli0Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xr3Vfmkli0Q"
+          },
+          {
+            "video_id": "NCD01PVUcyY",
+            "title": "Cynosure Lutronic Academy",
+            "author": "GoodSkin Clinics",
+            "thumbnail_url": "https://i.ytimg.com/vi/NCD01PVUcyY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NCD01PVUcyY"
+          },
+          {
+            "video_id": "NarF87OCldw",
+            "title": "CANDELA SKIN REJUVENATION Laser Skin Tightening All you need to know before procedure",
+            "author": "Laser Queen MD | Candela Laser & Electrolysis",
+            "thumbnail_url": "https://i.ytimg.com/vi/NarF87OCldw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NarF87OCldw"
+          },
+          {
+            "video_id": "8Heo1FlDlts",
+            "title": "Biomed Plus - Safe-T Sim Electrical Safety Analyzer",
+            "author": "Biomed Plus",
+            "thumbnail_url": "https://i.ytimg.com/vi/8Heo1FlDlts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8Heo1FlDlts"
+          },
+          {
+            "video_id": "XwxVKQ5h62U",
+            "title": "1. The Bioflex Solution",
+            "author": "BioFlex Laser Therapy",
+            "thumbnail_url": "https://i.ytimg.com/vi/XwxVKQ5h62U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XwxVKQ5h62U"
+          },
+          {
+            "video_id": "Hsmu9JQR5UM",
+            "title": "QLD - Laser license Application Process Explained - For Doctors",
+            "author": "K-Laser Australia",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hsmu9JQR5UM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hsmu9JQR5UM"
+          },
+          {
+            "video_id": "fB0ZiAL0q20",
+            "title": "FDA UDI Regulation’s Impact on Medical Device Labelers Webinar",
+            "author": "Medical Device Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/fB0ZiAL0q20/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fB0ZiAL0q20"
+          },
+          {
+            "video_id": "a_T4LqfP6zE",
+            "title": "A Step-by-Step Guide to the Manufacturer and User Facility Device Experience (MAUDE) Database",
+            "author": "Dr. Hashem Abu Serhan",
+            "thumbnail_url": "https://i.ytimg.com/vi/a_T4LqfP6zE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a_T4LqfP6zE"
+          },
+          {
+            "video_id": "nxzxvwNJELg",
+            "title": "US FDA Class I UDI Requirements and Exceptions",
+            "author": "LexisNexis Life Sciences Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/nxzxvwNJELg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nxzxvwNJELg"
+          },
+          {
+            "video_id": "NXLRmBcAe9U",
+            "title": "Critical FDA Recall: A Usability Issue… or a Software Bug? #fdarecall #usability #software",
+            "author": "Human Factors Engineering",
+            "thumbnail_url": "https://i.ytimg.com/vi/NXLRmBcAe9U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NXLRmBcAe9U"
+          },
+          {
+            "video_id": "xbxXTRwdVRs",
+            "title": "Best Practices for Using Open FDA Data in Medical Device Cases",
+            "author": "Expert Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/xbxXTRwdVRs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xbxXTRwdVRs"
+          },
+          {
+            "video_id": "DdLolB1kuRY",
+            "title": "MRI Accidents - Learning from the MAUDE Database",
+            "author": "Metrasens",
+            "thumbnail_url": "https://i.ytimg.com/vi/DdLolB1kuRY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DdLolB1kuRY"
           }
         ],
         "research_reference_only": true,
@@ -27148,7 +28373,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 3484 third-party videos (31983 captured tips)",
+        "source": "Spoken content of 3659 third-party videos (33460 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -27164,38 +28389,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 3484,
-    "channel_count": 2238,
-    "total_words": 5069308,
-    "total_hours": 1005.91,
-    "total_pro_tips": 31983,
-    "unique_statutes_and_forms": 1464,
-    "unique_tools_and_portals": 9687
+    "video_count": 3659,
+    "channel_count": 2375,
+    "total_words": 5373475,
+    "total_hours": 1073.84,
+    "total_pro_tips": 33460,
+    "unique_statutes_and_forms": 1567,
+    "unique_tools_and_portals": 9986
   },
   "coverage": {
-    "videos_classified": 3484,
-    "videos_with_multiple_topics": 3481,
-    "tips_classified": 31983,
-    "raw_transcripts_joined": 3484,
+    "videos_classified": 3659,
+    "videos_with_multiple_topics": 3656,
+    "tips_classified": 33460,
+    "raw_transcripts_joined": 3659,
     "topic_video_counts": {
-      "business_model_and_economics": 2775,
-      "probate_and_docket_sourcing": 2614,
-      "unclaimed_property_and_escheat": 762,
-      "genealogy_and_heirship_proof": 2823,
-      "skip_tracing_and_outreach": 1965,
-      "contracts_and_compensation": 2776,
-      "statutory_caps_and_licensing": 2909,
-      "automation_and_small_team_ops": 2570
+      "business_model_and_economics": 2910,
+      "probate_and_docket_sourcing": 2720,
+      "unclaimed_property_and_escheat": 785,
+      "genealogy_and_heirship_proof": 2976,
+      "skip_tracing_and_outreach": 2019,
+      "contracts_and_compensation": 2876,
+      "statutory_caps_and_licensing": 3058,
+      "automation_and_small_team_ops": 2692
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 5743,
-      "probate_and_docket_sourcing": 5619,
-      "unclaimed_property_and_escheat": 1821,
-      "genealogy_and_heirship_proof": 3379,
-      "skip_tracing_and_outreach": 1129,
-      "contracts_and_compensation": 4389,
-      "statutory_caps_and_licensing": 3063,
-      "automation_and_small_team_ops": 6840
+      "business_model_and_economics": 5975,
+      "probate_and_docket_sourcing": 5723,
+      "unclaimed_property_and_escheat": 1835,
+      "genealogy_and_heirship_proof": 3742,
+      "skip_tracing_and_outreach": 1139,
+      "contracts_and_compensation": 4495,
+      "statutory_caps_and_licensing": 3261,
+      "automation_and_small_team_ops": 7290
     }
   },
   "schema_version": "1.0",

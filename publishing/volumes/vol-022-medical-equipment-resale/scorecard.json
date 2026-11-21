@@ -1,0 +1,231 @@
+{
+  "candidate_number": 14,
+  "slug": "medical-equipment-resale",
+  "title": "Medical Equipment Resale",
+  "category": "Equipment trading",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 21,
+    "profit_margin_potential": 16,
+    "team_efficiency": 13,
+    "startup_accessibility": 6,
+    "automation_potential": 8
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 64,
+  "tier_label": "Capital / Labor Intensive",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 61,
+    "high": 67
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 21/25. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+    "profit_margin_potential": "Profit Margin Potential: 16/25. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+    "team_efficiency": "Team Efficiency: 13/20. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+    "startup_accessibility": "Startup Accessibility: 6/15. Specialist refurbishment, inventory and traceability reduce lean-team economics.",
+    "automation_potential": "Automation Potential: 8/15. Specialist refurbishment, inventory and traceability reduce lean-team economics."
+  },
+  "economics": {
+    "gross_revenue_range": "$250,000–$1,800,000 USD annually",
+    "net_profit_margin_range": "10–22%",
+    "owner_net_profit_potential": "$25,000–$396,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$75,000–$400,000 USD",
+    "monthly_opex_range": "$5,000–$22,000 USD",
+    "time_to_first_deal": "3–9 months",
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross equipment resale proceeds; acquisition and refurbishment included in margin",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 250000,
+      "net_profit_margin_pct": 10,
+      "annual_owner_net_profit_usd": 25000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 1025000.0,
+      "net_profit_margin_pct": 16.0,
+      "annual_owner_net_profit_usd": 164000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1800000,
+      "net_profit_margin_pct": 22,
+      "annual_owner_net_profit_usd": 396000,
+      "full_time_including_owner": 3,
+      "contractors": 5,
+      "total_people": 8,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Inventory tracking",
+    "Service-history indexing"
+  ],
+  "key_risks": [
+    "Device liability",
+    "Obsolescence",
+    "Unsellable inventory"
+  ],
+  "regulatory_notes": [
+    "Check device-specific FDA obligations, servicing versus remanufacturing and state licensing.",
+    "Sanitize stored patient data and verify decontamination procedures."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "con_decommissioned_medical_imaging_arbitrage",
+      "track_id": "track_1",
+      "name": "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage",
+      "mechanism": "Acquire or option decommissioned imaging assets where approved site capacity has value, separating equipment resale economics from nontransferable or change-of-control-sensitive CON authority.",
+      "inputs": [
+        "State CON decisions and hospital closure notices",
+        "Equipment service logs and site engineering surveys",
+        "Regulatory transfer guidance and buyer commitments"
+      ],
+      "workflow": [
+        "1. Identify closing imaging suites and inventory equipment, permits, and lease rights",
+        "2. Confirm CON status, transfer restrictions, radiation licensing, and deinstallation costs",
+        "3. Negotiate approval-contingent asset purchases with qualified operators and equipment buyers",
+        "4. Close after regulatory clearance and document certified removal, installation, and acceptance"
+      ],
+      "metrics": [
+        "Net resale margin after deinstallation",
+        "Regulatory approval cycle days",
+        "Buyer acceptance rate after inspection"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "CON authority lapses or cannot transfer",
+          "trigger": "Closure, relocation, or ownership change outside approved conditions",
+          "impact": "Loss of site premium and stranded equipment carrying costs",
+          "detection_metric": "Outstanding regulatory conditions and days to permit expiry",
+          "fallback": "Exit under approval contingencies or sell inspected equipment separately without representing transferable operating authority"
+        }
+      ]
+    },
+    {
+      "id": "chapter11_trade_claim_convenience_class_rollup",
+      "track_id": "track_1",
+      "name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "mechanism": "Purchase documented small trade claims below risk-adjusted expected plan distributions, accounting for objections, assignment procedures, and plan rules that may prohibit claim splitting or aggregation benefits.",
+      "inputs": [
+        "Bankruptcy schedules E/F and claims register",
+        "Invoices, payment history, and assignment documents",
+        "Proposed plan classification and distribution waterfall"
+      ],
+      "workflow": [
+        "1. Reconcile scheduled trade creditors with filed claims and supporting invoices",
+        "2. Model recoveries under plan amendments, objections, setoffs, and convenience-class eligibility",
+        "3. Buy eligible claims through documented assignments and complete required transfer notices",
+        "4. Monitor objections and confirmation, then reconcile distributions to each acquired claim"
+      ],
+      "metrics": [
+        "Purchase discount to risk-adjusted recovery",
+        "Allowed claim value versus purchased face value",
+        "Realized return and days to distribution"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim disallowance or convenience-class exclusion",
+          "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+          "impact": "Reduced distribution or complete capital loss",
+          "detection_metric": "Objection rate and eligible allowed value per portfolio",
+          "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries"
+        }
+      ]
+    },
+    {
+      "id": "mca_ucc_stacking_default_restructure_brokerage",
+      "track_id": "track_2",
+      "name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "mechanism": "Use UCC filing changes to identify businesses that may need cash-flow review and consensual MCA restructuring, with verified obligations and disclosed compensation rather than encouraging undisclosed stacking.",
+      "inputs": [
+        "Public UCC filings and termination records",
+        "Merchant-authorized contracts and cash-flow statements",
+        "Broker licensing rules and disclosed creditor compensation terms"
+      ],
+      "workflow": [
+        "1. Treat UCC changes as outreach signals, not proof of default, and obtain merchant authorization",
+        "2. Reconcile advances, liens, repayment pulls, covenants, and sustainable payment capacity",
+        "3. Disclose dual-sided fees and conflicts; use independent counsel where representation would conflict",
+        "4. Coordinate documented creditor-approved modifications and monitor actual payment relief"
+      ],
+      "metrics": [
+        "Net merchant payment relief after fees",
+        "Creditor-approved modification rate",
+        "Post-restructure missed-payment rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+          "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+          "impact": "Accelerated collections and broker liability",
+          "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+          "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "CON authority lapses or cannot transfer",
+      "trigger": "Closure, relocation, or ownership change outside approved conditions",
+      "impact": "Loss of site premium and stranded equipment carrying costs",
+      "detection_metric": "Outstanding regulatory conditions and days to permit expiry",
+      "fallback": "Exit under approval contingencies or sell inspected equipment separately without representing transferable operating authority",
+      "play_id": "con_decommissioned_medical_imaging_arbitrage",
+      "play_name": "Certificate-of-Need (CON) & Decommissioned Hospital Imaging-Suite Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Claim disallowance or convenience-class exclusion",
+      "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+      "impact": "Reduced distribution or complete capital loss",
+      "detection_metric": "Objection rate and eligible allowed value per portfolio",
+      "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries",
+      "play_id": "chapter11_trade_claim_convenience_class_rollup",
+      "play_name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+      "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+      "impact": "Accelerated collections and broker liability",
+      "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+      "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel",
+      "play_id": "mca_ucc_stacking_default_restructure_brokerage",
+      "play_name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "track_id": "track_2"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-traceable-resale-workflow",
+      "chart_type": "process_flow",
+      "title": "From Retired Device to Accepted Resale",
+      "subtitle": "Five evidence-backed stages for diagnostic, surgical, veterinary, and aesthetic equipment.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Stage values indicate sequence, not elapsed time or conversion. The canonical time to first deal is 3–9 months. Inventory tracking and service-history indexing automate records, not physical testing or device-specific regulatory classification.",
+      "caption": "Keep one serial-level record from sourcing through buyer acceptance; never substitute a cosmetic refurbishment claim for functional evidence.",
+      "stages": [
+        {
+          "label": "Source against demand",
+          "value": "1 | Buyer need and asset identity",
+          "numeric_value": 1.0,
+          "detail": "Record model, serial number, intended use, accessories, software revision, asking price, and two dated buyer-demand observations. Check recalls and service support before committing inventory cash."
+        },
+        {
+          "label": "Establish transfer rights",
+          "value": "2 | Ownership and disposition evidence",
+          "numeric_value": 2.0,
+          "detail": "Match seller authority to the serial list, inspect relevant UCC filings, and obtain required secured-party release or disposition authorization. UCC 9-315 means sale alone does not necessarily remove a security interest."
+        },
+        {
+          "label": "Quarantine and sanitize",
+          "value": "3 | Separate biological and data controls",
+          "numeric_value": 3.0,
+          "detail": "Require device-compatible decontamination documentation and inspect every data-bearing component. Record sanitization method and verification separately; do not assume a factory reset removes stored patient records or that surface cleaning addresses internal contamination."
+        },
+        {
+          "label": "Restore and verify",
+          "value": "4 | Qualified biomed acceptance evidence",
+          "numeric_value": 4.0,
+          "detail": "Use model-specific test procedures, calibrated instruments, parts traceability, and measured acceptance limits. Evaluate servicing versus remanufacturing before changes to performance, safety specifications, or intended use; investigate duties under 21 CFR Parts 807 and 820 when triggered."
+        },
+        {
+          "label": "Deliver and close",
+          "value": "5 | Settled proceeds and buyer acceptance",
+          "numeric_value": 5.0,
+          "detail": "Confirm site readiness, insured freight, installation scope, payment settlement, and signed acceptance. Archive test results, transfer records, warranty terms, and service history against the serial number; recognize equipment resale proceeds rather than treating refundable deposits as completed revenue."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-serial-lot-conversion-funnel",
+      "chart_type": "funnel",
+      "title": "A Cohort Funnel That Rejects Weak Inventory Early",
+      "subtitle": "One acquisition cohort; each later stage is a subset of the preceding stage.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative cohort of 100 distinct candidate lots followed over 3–9 months, not a monthly sales forecast. One opportunity identifier persists through all stages; repeat inquiries do not create new lots. Counts do not establish prices, annual revenue, or realized margin.",
+      "caption": "Four completed sales from 100 sourced opportunities represent 4% cohort conversion, not four sales during the launch sprint.",
+      "stages": [
+        {
+          "label": "Identified resale lots",
+          "value": "100 lots | Starting acquisition cohort",
+          "numeric_value": 100.0,
+          "detail": "Log 100 distinct serial-defined lots with a named seller, device family, location, asking terms, and evidence of ownership authority; remove duplicate listings before counting."
+        },
+        {
+          "label": "Documented screening passes",
+          "value": "60 lots | 60% of starting cohort",
+          "numeric_value": 60.0,
+          "detail": "Retain 60 of the original 100 after checking provenance, recall status, manufacturer support, and availability of decontamination and service records; exclude undocumented inventory."
+        },
+        {
+          "label": "Technical and economic passes",
+          "value": "30 lots | 50% of preceding stage",
+          "numeric_value": 30.0,
+          "detail": "Retain 30 of those 60 after qualified inspection, landed-cost estimates, parts availability, and buyer-price comparisons; reject lots whose credible repair exposure erases contribution."
+        },
+        {
+          "label": "Acquired buyer-backed lots",
+          "value": "12 lots | 40% of preceding stage",
+          "numeric_value": 12.0,
+          "detail": "Acquire 12 of those 30 within the working-capital limit after documenting qualified buyer interest and enforceable purchase terms; buyer interest alone is neither a sale nor cash."
+        },
+        {
+          "label": "Accepted and settled sales",
+          "value": "4 lots | 33.3% of preceding stage",
+          "numeric_value": 4.0,
+          "detail": "Close four of the 12 acquired lots after testing, delivery, acceptance, and payment settlement. The other eight remain open cohort inventory or documented dispositions; they are not counted as completed sales."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "Base-Case Gross Proceeds to Owner Net",
+      "subtitle": "$1,025,000 annual gross equipment resale proceeds → $164,000 annual owner net.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per year. First and last bars are absolute totals; the middle four bars are signed deductions. Acquisition, refurbishment, and delivery are modeled direct costs, separate from operating overhead. The cost allocation is illustrative; canonical revenue, net margin, and owner net are fixed. No unlisted residual deduction is assumed.",
+      "caption": "$1,025,000 − $574,000 − $102,500 − $41,000 − $143,500 = $164,000, exactly 16.0% of gross resale proceeds. Gross proceeds are operator equipment sales, not a brokerage fee or the buyer's downstream clinical receipts.",
+      "stages": [
+        {
+          "label": "Gross resale proceeds",
+          "value": "$1,025,000 | Opening total, 100.0%",
+          "numeric_value": 1025000.0,
+          "detail": "Canonical Base-Case annual equipment resale revenue. Recognize sales under the operator's applicable accounting policy; exclude pass-through sales taxes and refundable deposits from this illustrative revenue total."
+        },
+        {
+          "label": "Equipment acquisition",
+          "value": "−$574,000 | 56.0% of gross proceeds",
+          "numeric_value": -574000.0,
+          "detail": "Cost of equipment sold, including purchase premiums assigned to those units; remaining bridge value is $451,000. Unsold purchases stay in inventory rather than becoming current-period cost of sold equipment."
+        },
+        {
+          "label": "Refurbishment and biomed QA",
+          "value": "−$102,500 | 10.0% of gross proceeds",
+          "numeric_value": -102500.0,
+          "detail": "Parts, direct contractor bench labor, calibration, documented decontamination, and unit-level testing assigned to sold units; remaining bridge value is $348,500. Do not charge the same contractor invoice again within overhead."
+        },
+        {
+          "label": "Delivery and transaction costs",
+          "value": "−$41,000 | 4.0% of gross proceeds",
+          "numeric_value": -41000.0,
+          "detail": "Crating, insured freight, payment charges, and modeled sale-related warranty expense; remaining bridge value is $307,500. Assign warranty exposure consistently and avoid counting both the provision and settlement as separate costs."
+        },
+        {
+          "label": "Pod and operating overhead",
+          "value": "−$143,500 | 14.0% of gross proceeds",
+          "numeric_value": -143500.0,
+          "detail": "Loaded payroll, premises, insurance, software, selling expense, and administration consume $143,500 annually, approximately $11,958 monthly within the $5,000–$22,000 canonical operating range. This is a budget envelope requiring local staffing validation."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$164,000 | Closing total, 16.0%",
+          "numeric_value": 164000.0,
+          "detail": "Canonical Base-Case modeled owner net, with no additional deduction invented for an unspecified tax or funding structure. Reference scenarios remain $250,000 × 10% = $25,000 and $1,800,000 × 22% = $396,000; owner net is not gross margin."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-specialty-contribution-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Contribution Yield Before Buying",
+      "subtitle": "Five illustrative specialty and settlement combinations, measured on equal $10,000 sales.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Each numeric value is a percentage of a hypothetical $10,000 sale remaining after equipment acquisition, refurbishment, freight, transaction costs, and modeled warranty expense, before shared overhead. These are screening examples, not observed market yields or scenario net margins. Payment method alone does not determine yield.",
+      "caption": "Use quoted unit costs to replace these assumptions. The Base-Case waterfall has 30% contribution before 14% overhead; these specialty bars are not a weighted revenue mix or a replacement scorecard.",
+      "stages": [
+        {
+          "label": "Diagnostic ultrasound with bank settlement",
+          "value": "32% contribution | $3,200 per $10,000 sale",
+          "numeric_value": 32.0,
+          "detail": "$10,000 sale less $5,400 acquisition, $900 refurbishment, and $500 delivery, payment, and warranty costs leaves $3,200. Test probes for defects and verify software-license transfer before accepting the apparent spread."
+        },
+        {
+          "label": "Surgical instrument sets with bank settlement",
+          "value": "35% contribution | $3,500 per $10,000 sale",
+          "numeric_value": 35.0,
+          "detail": "$10,000 sale less $4,700 acquisition, $1,300 refurbishment, and $500 delivery, payment, and warranty costs leaves $3,500. Confirm set completeness and reusable-device instructions; exclude single-use reprocessing from this illustration."
+        },
+        {
+          "label": "Veterinary monitors with bank settlement",
+          "value": "28% contribution | $2,800 per $10,000 sale",
+          "numeric_value": 28.0,
+          "detail": "$10,000 sale less $5,600 acquisition, $1,000 refurbishment, and $600 delivery, payment, and warranty costs leaves $2,800. Verify intended animal use, compatible accessories, and service access rather than assuming human-device equivalence."
+        },
+        {
+          "label": "Aesthetic laser with card settlement",
+          "value": "24% contribution | $2,400 per $10,000 sale",
+          "numeric_value": 24.0,
+          "detail": "$10,000 sale less $5,500 acquisition, $1,300 refurbishment, and $800 delivery, card, and warranty costs leaves $2,400. Validate handpiece life, energy output, destination requirements, and dispute exposure before releasing equipment."
+        },
+        {
+          "label": "Diagnostic cart with third-party lender settlement",
+          "value": "30% contribution | $3,000 per $10,000 sale",
+          "numeric_value": 30.0,
+          "detail": "$10,000 sale less $5,300 acquisition, $1,100 refurbishment, and $600 delivery, settlement, and warranty costs leaves $3,000. Confirm lender acceptance conditions, payout timing, and recourse terms; funding approval alone is not settled proceeds."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-device-release-decision-tree",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Purchase or Release",
+      "subtitle": "A failed check moves the lot into documented hold or rejection, never an automatic exception.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values indicate check order, not risk scores. Each affirmative branch advances to the next check; unresolved evidence holds the lot, and an unremediable defect rejects it. Complete purchase-stage checks before commitment and repeat release-stage checks before shipment. Requirements depend on device, activity, destination, and data role.",
+      "caption": "Keep title, device regulation, patient-data handling, and biological safety as distinct evidence tracks. Passing one does not satisfy another.",
+      "stages": [
+        {
+          "label": "Clear title and transfer authority?",
+          "value": "Yes: advance | Unresolved: hold purchase",
+          "numeric_value": 1.0,
+          "detail": "Match seller authority, asset serials, sale terms, and relevant lien searches. Under UCC 9-315, a security interest can survive a sale unless disposition is authorized or another rule applies. Obtain applicable release evidence; reject assets the seller cannot lawfully transfer."
+        },
+        {
+          "label": "Correct device and activity classification?",
+          "value": "Yes: advance | Duty unresolved: hold work",
+          "numeric_value": 2.0,
+          "detail": "Review intended use, prescription restrictions under 21 CFR 801.109, and whether proposed work constitutes remanufacturing. Assess registration and listing under 21 CFR Part 807 and manufacturer quality-system duties under Part 820 when applicable. Check destination-state licensing and radiation requirements; do not assume every reseller must register as a manufacturer."
+        },
+        {
+          "label": "Patient-data exposure resolved?",
+          "value": "Yes: advance | Verification fails: hold media",
+          "numeric_value": 3.0,
+          "detail": "Identify drives, removable media, network credentials, and embedded storage. Determine covered-entity or business-associate responsibilities under 45 CFR 164.502(e), with written terms under 164.504(e) where required. For regulated handling, apply 164.310(d) device and media controls; verify sanitization while preserving safe device operation and software entitlements."
+        },
+        {
+          "label": "Decontamination and functional acceptance complete?",
+          "value": "Yes: release | Evidence incomplete: quarantine",
+          "numeric_value": 4.0,
+          "detail": "Require manufacturer-compatible decontamination records, calibrated biomed results, accessory completeness, recall resolution, and agreed buyer acceptance limits. Where occupational exposure is reasonably anticipated, apply 29 CFR 1910.1030 bloodborne-pathogen controls. Reject equipment lacking a credible route to safe, supported operation."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-core-and-scaled-pod-seats",
+      "chart_type": "org_architecture",
+      "title": "Six Core Seats, Eight at Scaled Capacity",
+      "subtitle": "Conservative and Base: 2 FT + 4 C; Scaled Small-Team: 3 FT + 5 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each numeric value represents one person in the eight-person scaled architecture. The first six seats form the core pod; the final two are scaled additions. FT means full-time and C means contractor, not a full-time-equivalent commitment. Contractor hours and local loaded payroll must fit the modeled cost envelopes.",
+      "caption": "The same six-person core supports canonical $250,000 and $1,025,000 gross-revenue scenarios. The $1,800,000 scaled scenario uses eight people; automation does not remove technical accountability.",
+      "stages": [
+        {
+          "label": "Core FT 1: Commercial lead",
+          "value": "One core full-time seat | Buying and sales",
+          "numeric_value": 1.0,
+          "detail": "Own demand qualification, acquisition ceilings, written sale terms, contribution estimates, and aged-stock decisions. Review title exceptions with the relevant specialist and keep commercial urgency separate from technical release."
+        },
+        {
+          "label": "Core FT 2: Operations lead",
+          "value": "One core full-time seat | Inventory and records",
+          "numeric_value": 1.0,
+          "detail": "Own receiving quarantine, serial-level inventory tracking, service-history indexing, cost allocation, documentation completeness, and buyer acceptance scheduling. Reconcile physical assets against the inventory ledger every week."
+        },
+        {
+          "label": "Core C 1: Biomedical specialist",
+          "value": "One core contractor seat | Testing and repair",
+          "numeric_value": 1.0,
+          "detail": "Perform model-qualified inspection, repair planning, calibration checks, functional testing, and signed technical findings. Escalate unavailable parts or unsupported software before the commercial lead commits acquisition funds."
+        },
+        {
+          "label": "Core C 2: Decontamination technician",
+          "value": "One core contractor seat | Biological controls",
+          "numeric_value": 1.0,
+          "detail": "Apply device-compatible cleaning and decontamination procedures, document process conditions, and flag inaccessible contamination. Coordinate occupational exposure controls and never equate clean appearance with completed decontamination."
+        },
+        {
+          "label": "Core C 3: Specialist freight coordinator",
+          "value": "One core contractor seat | Packing and delivery",
+          "numeric_value": 1.0,
+          "detail": "Arrange shock-sensitive packing, carrier selection, declared value, transit evidence, receiving appointments, and damage claims. Verify lift access, power requirements, and installation responsibilities before dispatch."
+        },
+        {
+          "label": "Core C 4: Data and documentation specialist",
+          "value": "One core contractor seat | Media and traceability",
+          "numeric_value": 1.0,
+          "detail": "Map storage locations, perform authorized sanitization and verification, preserve permitted service evidence, and assemble release packets. Escalate device-specific regulatory questions for qualified review rather than inventing certifications."
+        },
+        {
+          "label": "Scaled FT 3: Account and inventory planner",
+          "value": "One additional full-time seat | Scaled scenario only",
+          "numeric_value": 1.0,
+          "detail": "Own recurring buyer accounts, replenishment forecasts, site readiness follow-up, and aging reviews at the $1,800,000 gross-revenue scenario. Add capacity against measured workload and funded payroll, not a revenue aspiration alone."
+        },
+        {
+          "label": "Scaled C 5: Additional field biomed specialist",
+          "value": "One additional contractor seat | Scaled scenario only",
+          "numeric_value": 1.0,
+          "detail": "Provide additional qualified bench or installation capacity when test queues and geography exceed the core specialist's coverage. Maintain the same instrument calibration, evidence standards, and serial-level accountability."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Four Buckets Protect the Inventory Cycle",
+      "subtitle": "Illustrative $200,000 startup stack, with $75,000 and $400,000 comparison allocations.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are USD in the central $200,000 startup allocation. Each bucket uses the same percentage at the $75,000 lower and $400,000 upper endpoints, allowing proportional stacked comparison. Capital allocations are funding uses, not annual expense or revenue. The central allocation is not an additional earnings scenario.",
+      "caption": "All three capital stacks reconcile: $75,000, $200,000, and $400,000. Protect cash for slow sales and repair surprises; an initial inventory purchase is not immediate recognized profit.",
+      "stages": [
+        {
+          "label": "Equipment acquisition reserve",
+          "value": "$100,000 central allocation | 50% of capital",
+          "numeric_value": 100000.0,
+          "detail": "Lower stack: $37,500; central stack: $100,000; upper stack: $200,000. Fund serial-defined inventory within per-model exposure limits and documented buyer demand. Keep unsold equipment on the inventory ledger and review aging weekly."
+        },
+        {
+          "label": "Refurbishment and testing capacity",
+          "value": "$40,000 central allocation | 20% of capital",
+          "numeric_value": 40000.0,
+          "detail": "Lower stack: $15,000; central stack: $40,000; upper stack: $80,000. Fund inspection, parts, bench work, calibrated test equipment access, decontamination, and service documentation. Separate durable tooling from unit-level inventory costs."
+        },
+        {
+          "label": "Operating cash buffer",
+          "value": "$50,000 central allocation | 25% of capital",
+          "numeric_value": 50000.0,
+          "detail": "Lower stack: $18,750; central stack: $50,000; upper stack: $100,000. At the modeled $11,958 monthly Base-Case overhead, the central buffer covers about 4.2 months before direct inventory spending; a nine-month first-sale delay requires lower burn or additional funded liquidity."
+        },
+        {
+          "label": "Setup and transaction reserve",
+          "value": "$10,000 central allocation | 5% of capital",
+          "numeric_value": 10000.0,
+          "detail": "Lower stack: $3,750; central stack: $10,000; upper stack: $20,000. Fund insurance deposits, inventory-system setup, initial packing materials, and specialist classification review. Track refundable deposits separately from expenses and avoid duplicating operating-buffer charges."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Evidence-Ready Trading Operation",
+      "subtitle": "Build sourcing, testing, cash controls, and buyer evidence before expecting a closed deal.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values indicate milestone order. The four periods cover Days 1–30 without gaps; the final period contains nine days. These are readiness milestones, not revenue commitments. Canonical time to first deal remains 3–9 months.",
+      "caption": "End the sprint with a controlled acquisition pipeline and testable unit economics, not an invented first-month sale or compulsory purchase.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define scope and establish the evidence register",
+          "numeric_value": 1.0,
+          "detail": "Select two supported device families and one destination market. Record applicable FDA activity questions, state requirements, intended use, title documents, and data exposure. Build a serial-level SQLite or spreadsheet register with links to a restricted-access evidence folder."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Qualify supply and verify buyer demand",
+          "numeric_value": 2.0,
+          "detail": "Interview five prospective buyers and screen ten distinct seller lots. Record model preferences, budget authority, installation constraints, and comparable asking prices. Obtain written biomed and freight quotes for the two strongest lots without treating interest as a purchase commitment."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Rehearse inspection and reconcile unit economics",
+          "numeric_value": 3.0,
+          "detail": "Inspect one authorized candidate with a qualified biomed contractor. Review storage-media access, decontamination evidence, test limits, service support, and title records. Reconcile quoted acquisition, repair, delivery, and warranty exposure against a defensible buyer price and the available cash buffer."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Prepare one complete acquisition decision packet",
+          "numeric_value": 4.0,
+          "detail": "Assemble price ceiling, serial list, seller authority, classification review, service plan, sanitization method, delivery quote, and draft acceptance terms. Proceed only with resolved material issues and sufficient cash; otherwise retain a documented rejection and continue sourcing."
+        }
+      ]
+    }
+  ]
+}
