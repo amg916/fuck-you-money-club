@@ -6,3 +6,5 @@ publishing/.fymc.lock
 publishing/.journal.json
 publishing/.txn_backup/
 *.tmp
+.claude/
+.orchestrator-state/
