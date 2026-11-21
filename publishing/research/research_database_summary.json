@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 2772,
-  "raw_video_count": 2772,
+  "abridged_video_count": 2950,
+  "raw_video_count": 2950,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T22:17:11+00:00",
+      "generated_at": "2026-11-21T22:24:33+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T22:17:11Z",
+  "generated_at": "2026-11-21T22:24:33Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 2192,
-      "tip_count": 4399,
-      "channel_count": 1504,
+      "video_count": 2325,
+      "tip_count": 4664,
+      "channel_count": 1584,
       "top_sources": [
         {
           "video_id": "JVbzH2BD68w",
@@ -178,18 +178,18 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "What I mean. Don't focus on specific products. Rather focus on brands you love. You can choose almost any one of them. Go to…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:35",
-          "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=95s",
-          "video_title": "The Smartest Affiliate Business Model: Recurring SaaS Commissions",
-          "author": "Michael Bashi",
+          "tip_paraphrase_summary": "Even is subdividing land well subdividing land is basically think about it a cake and its pieces, you can have the full cake, or…",
+          "category": "Insider Tactic",
+          "timestamp": "00:00:57",
+          "link": "https://www.youtube.com/watch?v=JXUkA5K7RSc&t=57s",
+          "video_title": "How To Subdivide Land For Profit (Step By Step)",
+          "author": "Jack Bosch",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form for",
         "form to",
@@ -197,13 +197,13 @@
         "form or",
         "form you",
         "form the",
+        "form a",
         "form in",
         "form like",
-        "form where",
-        "form a",
         "form with",
-        "form on",
+        "form where",
         "form your",
+        "form on",
         "form so",
         "court order",
         "letters of administration",
@@ -214,20 +214,20 @@
         "form I",
         "form at",
         "form called",
-        "form um",
-        "form which",
         "form below",
         "form uh",
-        "Chapter 7",
-        "form right",
+        "form um",
+        "form which",
         "form their",
+        "Chapter 7",
+        "Protection Act",
+        "form right",
+        "form but",
         "form here",
+        "form we",
         "letters testamentary",
-        "form builder",
         "property Act",
-        "form an",
-        "form because",
-        "form but"
+        "form an"
       ],
       "tools_and_portals": [
         "Google",
@@ -251,6 +251,7 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.MediaOptions.com",
+        "PropStream",
         "https://www.instagram.com/erizzyy/",
         "https://www.surplusfunds101.com/freecallingscript",
         "http://familysearch.me/facebook",
@@ -268,16 +269,15 @@
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/@courtneyfricke",
-        "https://www.youtube.com/surplusfunds101",
-        "https://x.com/courtneyfricke"
+        "https://www.youtube.com/surplusfunds101"
       ]
     },
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 2092,
-      "tip_count": 4686,
-      "channel_count": 1354,
+      "video_count": 2266,
+      "tip_count": 5245,
+      "channel_count": 1455,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -338,6 +338,24 @@
       ],
       "top_timestamped_insights": [
         {
+          "tip_paraphrase_summary": "I always wanted to be an entrepreneur. I had all these grand dreams to be job free and all this stuff, but she didn't…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:02:51",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=171s",
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Zoomed lens or any other zoom lens on a drone, always, in my opinion, disconnect and go back down to your wide-angle lens to…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:06:28",
+          "link": "https://www.youtube.com/watch?v=HrG-12X_ds8&t=388s",
+          "video_title": "How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three Lenses",
+          "author": "Next Move with Rob",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Every deal if we can put our prospects needs before our own we can monetize every deal if you're a one shot you know…",
           "category": "Insider Tactic",
           "timestamp": "00:06:27",
@@ -347,12 +365,39 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "It's worth a lot more than what you paid for it. And you don't have to do anything to it, like nothing. And you…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:08:49",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=529s",
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Turning point for me, kind of a milestone. So, this was 12 acres with 500 feet of beach frontage on Lake Huron, right by…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:12:09",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=729s",
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "What if i proactively reach out to everyone in my community that's in that situation knowing good and well that i they're better off…",
           "category": "Legal / Deadline",
           "timestamp": "00:05:06",
           "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=306s",
           "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
           "author": "Probate Mastery",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Know exactly what to do. If your land fails a percolation test, which it hopefully won't. Okay, let's go into it. So the first…",
+          "category": "Insider Tactic",
+          "timestamp": "00:00:57",
+          "link": "https://www.youtube.com/watch?v=nVJMPjUWdZw&t=57s",
+          "video_title": "What To Do If Your Land Fails A Perc Test (Before You Panic)",
+          "author": "Jack Bosch",
           "verbatim_research_only": true
         },
         {
@@ -374,57 +419,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Key to cheaper traffic that is still high intent. But there is a way to come up with even better keywords. And that's what…",
-          "category": "Insider Tactic",
-          "timestamp": "00:02:02",
-          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=122s",
-          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
-          "author": "Aldo Gomes",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Planning ahead is important now i want to talk about the commercial loan loan to value ratios unfortunately with commercial financing it takes a…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:03:19",
-          "link": "https://www.youtube.com/watch?v=SulpxqBYams&t=199s",
-          "video_title": "How A Commercial Loan Works? | Co/LAB Lending",
-          "author": "The Lab: Mortgage & Real Estate Business Academy",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Is instant access to a digital course that digital course will walk you through exactly the way the live course does i've thrown in…",
-          "category": "Insider Tactic",
-          "timestamp": "00:03:34",
-          "link": "https://www.youtube.com/watch?v=svPbBkp8nRQ&t=214s",
-          "video_title": "Learn Probate and Build a Probate Business - Probate Training and Certification with Chad Corbett",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "It's quite a task and it's important to me that i get this right and build a community that's valuable to everybody so you'll…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:04:00",
-          "link": "https://www.youtube.com/watch?v=svPbBkp8nRQ&t=240s",
-          "video_title": "Learn Probate and Build a Probate Business - Probate Training and Certification with Chad Corbett",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Price because of the way we handled the way we transaction engineered that and for me after every appointment i go home and usually…",
+          "tip_paraphrase_summary": "It's a list that every county has where they keep track of who is delinquent on their taxes. And this is different from the…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:04:39",
-          "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=279s",
-          "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
-          "author": "Probate Mastery",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "You don't really own any of that. It's not an asset. Now think about it like an entrepreneur, as you probably are. Your time…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:05:03",
-          "link": "https://www.youtube.com/watch?v=BF1KHGKUa78&t=303s",
-          "video_title": "The New Parasite SEO Loophole Hiding Inside Google",
-          "author": "Alek Borisov",
+          "timestamp": "00:17:10",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=1030s",
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
           "verbatim_research_only": true
         }
       ],
@@ -436,43 +436,43 @@
         "form is",
         "form for",
         "form the",
-        "form or",
         "form you",
         "form a",
+        "form or",
         "court order",
         "form below",
-        "form in",
         "form your",
+        "form in",
         "form on",
         "letters of administration",
         "form with",
+        "form like",
         "form so",
         "form where",
-        "form like",
         "Chapter 7",
         "form Commercial",
         "form it",
+        "form their",
+        "protection act",
         "Chapter 13",
+        "form I",
         "form if",
         "letters testamentary",
-        "form I",
-        "Form uh",
         "property Act",
+        "Form uh",
+        "form we",
         "form as",
-        "form their",
         "form which",
         "form um",
-        "form we",
-        "protection act",
+        "form at",
+        "form but",
         "form an",
         "form here",
-        "form our",
-        "form at",
-        "form but"
+        "form our"
       ],
       "tools_and_portals": [
-        "Google",
         "Facebook",
+        "Google",
         "LinkedIn",
         "Excel",
         "Ancestry",
@@ -493,6 +493,7 @@
         "https://wise.com/invite/dic/todorivanovk1",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
+        "PropStream",
         "https://www.youtube.com/surplusfunds101",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
@@ -503,22 +504,21 @@
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "Small Estate",
+        "DataTree",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://www.MediaOptions.com",
-        "PropStream",
-        "http://familysearch.me/facebook"
+        "https://www.MediaOptions.com"
       ]
     },
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 637,
+      "video_count": 673,
       "tip_count": 1805,
-      "channel_count": 407,
+      "channel_count": 433,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -677,8 +677,8 @@
         "Form is",
         "form to",
         "form you",
-        "form for",
         "form the",
+        "form for",
         "form or",
         "form a",
         "form we",
@@ -694,9 +694,10 @@
         "form so",
         "form in",
         "form them",
+        "form this",
         "form um",
         "court order",
-        "form this",
+        "form today",
         "form where",
         "form which",
         "affidavit of heirship",
@@ -704,7 +705,6 @@
         "form due",
         "form from",
         "form I",
-        "form today",
         "letters of administration",
         "Chapter 7",
         "form acts",
@@ -716,12 +716,12 @@
         "Google",
         "LinkedIn",
         "https://excesselite.com",
+        "Excel",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "Excel",
         "https://www.instagram.com/erizzyy/",
-        "https://www.surplusfunds101.com/freecallingscript",
         "CSV",
+        "https://www.surplusfunds101.com/freecallingscript",
         "https://wise.com/invite/dic/todorivanovk1",
         "https://www.youtube.com/surplusfunds101",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
@@ -732,8 +732,8 @@
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "https://tinyurl.com/unclaimedmentor",
-        "https://www.unclaimedceo.com/home-page-8750",
         "Regrid",
+        "https://www.unclaimedceo.com/home-page-8750",
         "http://springsolutionsllcwordpress.com/",
         "https://recover-bankruptcy-unclaimed-funds.teachable.com/",
         "https://recover-bankruptcy-unclaimed-funds.teachable.com/p/bankruptcy-unclaimed-funds-hack",
@@ -741,6 +741,7 @@
         "https://sso.teachable.com/secure/657120/checkout/4503791/state-unclaimed-funds-guide",
         "https://www.youtube.com/watch?v=jlSGch2JEn0&t=540s",
         "PACER",
+        "DataTree",
         "Ancestry",
         "Bing",
         "https://moneymakingjuggernaut.setmore.com",
@@ -750,16 +751,15 @@
         "https://skool.com/surplusfunds",
         "https://surplusfunds.ai",
         "https://www.surplusfunds101.com/contractlibrary",
-        "Neo4j",
-        "Pennsylvania Treasury"
+        "Neo4j"
       ]
     },
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 2246,
-      "tip_count": 2745,
-      "channel_count": 1512,
+      "video_count": 2383,
+      "tip_count": 2849,
+      "channel_count": 1594,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -917,40 +917,40 @@
         "form to",
         "form for",
         "form is",
-        "form or",
         "form you",
+        "form or",
         "form the",
         "form a",
+        "form your",
+        "form with",
         "form in",
         "form like",
         "form on",
-        "form with",
-        "form your",
         "form where",
         "form so",
         "form below",
         "form as",
+        "form at",
         "form content",
         "form I",
-        "form if",
-        "form at",
         "form it",
-        "form Commercial",
+        "form if",
         "form called",
+        "form Commercial",
+        "court order",
         "form which",
         "Form uh",
+        "form their",
         "form um",
         "letters of administration",
         "property Act",
+        "Protection Act",
         "form here",
         "form right",
-        "court order",
-        "form builder",
+        "form we",
         "Chapter 13",
-        "Chapter 7",
-        "form because",
-        "form submissions",
-        "form their"
+        "form builder",
+        "Chapter 7"
       ],
       "tools_and_portals": [
         "Google",
@@ -976,6 +976,7 @@
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
+        "PropStream",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
@@ -991,16 +992,15 @@
         "http://familysearch.me/youtubeportuguese",
         "http://familysearch.me/youtubespanish",
         "https://ProbateMastery.com",
-        "https://www.youtube.com/@courtneyfricke",
-        "https://youtu.be/3cmj5kGm2Xw"
+        "https://www.youtube.com/@courtneyfricke"
       ]
     },
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 1577,
-      "tip_count": 1001,
-      "channel_count": 1083,
+      "video_count": 1708,
+      "tip_count": 1085,
+      "channel_count": 1155,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1031,6 +1031,13 @@
           "duration": "00:09:25"
         },
         {
+          "video_id": "PMSn1EaZ42Y",
+          "title": "Cold Calling vs Cold Texting vs Direct Mail: Which One Actually Works Best for Land Flipping?",
+          "author": "Michael Bull",
+          "url": "https://www.youtube.com/watch?v=PMSn1EaZ42Y",
+          "duration": "00:12:00"
+        },
+        {
           "video_id": "OqdXhRy5QNY",
           "title": "How to Use LinkedIn for Account-Based Marketing in 2026 (Complete ABM Guide)",
           "author": "Prospeo",
@@ -1050,13 +1057,6 @@
           "author": "lemlist",
           "url": "https://www.youtube.com/watch?v=-LtGmHnpioI",
           "duration": "00:13:48"
-        },
-        {
-          "video_id": "cbgT8jQuacQ",
-          "title": "How To Skip Trace For FREE! Wholesaling Real Estate Step By Step 2025",
-          "author": "Jacob Blank",
-          "url": "https://www.youtube.com/watch?v=cbgT8jQuacQ",
-          "duration": "00:08:07"
         }
       ],
       "top_timestamped_insights": [
@@ -1158,40 +1158,40 @@
         "form to",
         "form for",
         "form or",
-        "form is",
         "form you",
+        "form is",
         "form the",
-        "form your",
         "form a",
+        "form your",
         "form like",
         "form where",
+        "form with",
         "form in",
         "form on",
-        "form with",
-        "form so",
         "court order",
+        "form so",
+        "Protection Act",
         "form below",
         "form content",
-        "form as",
         "Form uh",
+        "form as",
         "form um",
+        "form at",
         "form Commercial",
+        "form I",
         "form if",
         "form which",
-        "form I",
-        "Protection Act",
-        "form at",
         "form called",
         "form it",
+        "form their",
+        "Chapter 13",
         "Chapter 7",
+        "form but",
         "form here",
         "form right",
-        "Chapter 13",
-        "form but",
         "form because",
         "form builder",
-        "form our",
-        "form their"
+        "form our"
       ],
       "tools_and_portals": [
         "Google",
@@ -1206,6 +1206,7 @@
         "https://www.moneymakingjug.com/inquiry",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
+        "PropStream",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.instagram.com/thedavidwilkerson",
@@ -1224,24 +1225,23 @@
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
         "https://www.unclaimedceo.com/linkme",
-        "PropStream",
         "Ancestry",
+        "DataTree",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "http://www.facebook.com/domainsherpa",
         "http://www.linkedin.com/company/domainsherpa",
         "http://www.x.com/andrewrosener",
-        "http://www.x.com/domainsherpa",
-        "http://www.x.com/j10enbaum"
+        "http://www.x.com/domainsherpa"
       ]
     },
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 2202,
-      "tip_count": 2916,
-      "channel_count": 1470,
+      "video_count": 2338,
+      "tip_count": 3149,
+      "channel_count": 1548,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1399,38 +1399,38 @@
         "form to",
         "form for",
         "Form is",
-        "form or",
         "form you",
+        "form or",
         "form the",
         "form a",
-        "form like",
         "form with",
-        "form in",
-        "form on",
-        "form your",
+        "form like",
         "court order",
-        "form where",
+        "form in",
+        "form your",
+        "form on",
         "form below",
+        "form where",
         "form so",
         "letters of administration",
         "form as",
         "form at",
-        "form content",
         "form I",
-        "Chapter 7",
         "form it",
-        "form if",
+        "form content",
+        "Chapter 7",
         "Form uh",
         "form called",
+        "form if",
+        "form their",
+        "Protection Act",
         "form Commercial",
         "form um",
         "form which",
-        "letters testamentary",
         "Chapter 13",
-        "form here",
-        "form their",
+        "letters testamentary",
         "property Act",
-        "Protection Act",
+        "form here",
         "form we",
         "form builder"
       ],
@@ -1444,8 +1444,8 @@
         "Ancestry",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "https://probatemastery.com",
         "Bing",
+        "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "FamilySearch",
         "https://www.youtube.com/@realestateinprobate",
@@ -1463,6 +1463,7 @@
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
         "PACER",
+        "PropStream",
         "https://www.MediaOptions.com",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/digitalcourse",
@@ -1473,16 +1474,15 @@
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "PropStream",
         "https://probatemastery.com/"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 2294,
-      "tip_count": 2534,
-      "channel_count": 1489,
+      "video_count": 2470,
+      "tip_count": 2685,
+      "channel_count": 1592,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1624,56 +1624,56 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "I put my deeded in a as a transfer on death deeded and as soon as I'm dead, boom it goes around. So transfer…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:03:31",
-          "link": "https://www.youtube.com/watch?v=hvl2NRPSVTE&t=211s",
-          "video_title": "How To Save Your House From Medicaid Recovery (Lady Bird Deeds Explained)",
-          "author": "The Medicare Family",
+          "tip_paraphrase_summary": "Land comps. This is literally their livelihood it's what pays them how they put food on their table at night. So, let's talk about…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:05:41",
+          "link": "https://www.youtube.com/watch?v=JNufnuENoDM&t=341s",
+          "video_title": "How To Find Comps For Land",
+          "author": "Brent Bowers",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form to",
         "form for",
         "form is",
         "form the",
-        "form or",
         "form you",
+        "form or",
         "form a",
-        "form in",
-        "form your",
         "court order",
+        "form your",
+        "form in",
         "form below",
         "form on",
-        "form where",
         "form with",
+        "form where",
         "form so",
         "form like",
         "letters of administration",
-        "Chapter 7",
         "form it",
+        "Chapter 7",
         "Form uh",
-        "form Commercial",
         "form I",
-        "form if",
-        "Chapter 13",
         "form their",
+        "Protection Act",
+        "form Commercial",
+        "Chapter 13",
+        "form if",
+        "form we",
         "letters testamentary",
+        "property Act",
         "form as",
         "form um",
-        "property Act",
-        "Protection Act",
-        "form we",
-        "form which",
         "form at",
-        "form content",
-        "form here",
-        "form our",
-        "form an"
+        "form but",
+        "form which",
+        "form an",
+        "form called",
+        "form content"
       ],
       "tools_and_portals": [
         "Google",
@@ -1686,8 +1686,8 @@
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "FamilySearch",
-        "https://probatemastery.com",
         "Bing",
+        "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "https://www.youtube.com/@realestateinprobate",
         "https://estateprofessionalsmastermind.buzzsprout.com/share",
@@ -1696,6 +1696,7 @@
         "https://www.instagram.com/coachbrucehill/",
         "https://probatemastery.com/discovery-call/",
         "https://wise.com/invite/dic/todorivanovk1",
+        "PropStream",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
         "https://www.youtube.com/surplusfunds101",
@@ -1708,22 +1709,21 @@
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "Small Estate",
+        "DataTree",
         "https://instagram.com/courtneyfricke",
         "https://tiktok.com/@courtney.fricke",
         "https://www.facebook.com/courtneyfricke19/",
         "https://www.youtube.com/@courtneyfricke",
         "https://x.com/courtneyfricke",
-        "https://www.MediaOptions.com",
-        "PropStream",
-        "https://probatemastery.com/"
+        "https://www.MediaOptions.com"
       ]
     },
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 2067,
-      "tip_count": 5422,
-      "channel_count": 1398,
+      "video_count": 2168,
+      "tip_count": 5677,
+      "channel_count": 1464,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1784,12 +1784,30 @@
       ],
       "top_timestamped_insights": [
         {
+          "tip_paraphrase_summary": "All this data and they do it all for me and it takes me like minutes I can be in a new county and…",
+          "category": "Insider Tactic",
+          "timestamp": "00:11:35",
+          "link": "https://www.youtube.com/watch?v=JNufnuENoDM&t=695s",
+          "video_title": "How To Find Comps For Land",
+          "author": "Brent Bowers",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "0:04:32.8 S2: A good worker on you guys too, for a free version of this is Google Voice. 0:04:38.2 S1: You just go Google…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:04:31",
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=271s",
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
+          "verbatim_research_only": true
+        },
+        {
+          "tip_paraphrase_summary": "Same afternoon without cropping, no black bars, and nobody cutting off the top of their barn. You just made their job easy. And easy…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:09:18",
+          "link": "https://www.youtube.com/watch?v=HrG-12X_ds8&t=558s",
+          "video_title": "How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three Lenses",
+          "author": "Next Move with Rob",
           "verbatim_research_only": true
         },
         {
@@ -1820,6 +1838,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "That 832 volts is again converted back into AC into 415 volts and then we can connect it back to our grid. Now it…",
+          "category": "Non-Negotiable Rule",
+          "timestamp": "00:10:20",
+          "link": "https://www.youtube.com/watch?v=GNmL-gBPe3g&t=620s",
+          "video_title": "Battery Energy Storage System | BESS | All Components Explained",
+          "author": "Gaurav J - TheElectricalGuy",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Mean, it's wonderful that you've recruited these people, they've worked with you, but you want to keep them as well. You don't want them…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:40:22",
@@ -1838,39 +1865,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "In 2026, the change is AI inside the workflow. These tools can now read an email, decide what it means, draft a reply, summarise…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:00:26",
-          "link": "https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=26s",
-          "video_title": "n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It?",
-          "author": "Whizz AI",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Is they don't perform multiple interviews, I probably have three interviews over a week and a half with people, and most of them were…",
+          "tip_paraphrase_summary": "It understands how to get to that next page. So what we would do is click this locate next button. We're going to scroll…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:02:48",
-          "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=168s",
-          "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I know this! I read an article and the article said that it was Jupiter and 88 moons. So that's the answer. Now, actually…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:00:58",
-          "link": "https://www.youtube.com/watch?v=T-D1OfcDW1M&t=58s",
-          "video_title": "What is Retrieval-Augmented Generation (RAG)?",
-          "author": "IBM Technology",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Dictated by your specs or the green campaign field shortcodes that match the fields. The value for the Key field will be given to…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:00:50",
-          "link": "https://www.youtube.com/watch?v=Ma1kH51odZ0&t=50s",
-          "video_title": "Boberdoo Ping Post Buyer Setup",
-          "author": "Lead Prosper",
+          "timestamp": "00:08:34",
+          "link": "https://www.youtube.com/watch?v=rYCHQ59jzhY&t=514s",
+          "video_title": "How to Use Redfin and LandWatch to Determine Land Values",
+          "author": "REtipster",
           "verbatim_research_only": true
         }
       ],
@@ -1881,22 +1881,22 @@
         "form to",
         "form for",
         "form is",
-        "form or",
         "form you",
+        "form or",
         "form the",
-        "form where",
-        "form with",
         "form a",
+        "form with",
+        "form where",
         "form so",
         "form your",
-        "form like",
         "form on",
+        "form like",
         "form below",
         "form in",
         "court order",
+        "form it",
         "letters of administration",
         "form as",
-        "form it",
         "form content",
         "form if",
         "form which",
@@ -1906,15 +1906,15 @@
         "form um",
         "form we",
         "Chapter 7",
-        "form but",
         "form called",
+        "form but",
         "form here",
         "letters testamentary",
         "form because",
+        "form their",
+        "Protection Act",
         "form builder",
-        "form built",
-        "form submissions",
-        "form their"
+        "form this"
       ],
       "tools_and_portals": [
         "Google",
@@ -1943,20 +1943,20 @@
         "https://www.instagram.com/thedavidwilkerson",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
+        "PropStream",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/freemasterclass",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "PACER",
+        "DataTree",
         "Small Estate",
         "https://probatemastery.com/",
         "https://www.MediaOptions.com",
+        "Regrid",
         "https://tinyurl.com/unclaimedmentor",
         "https://www.unclaimedceo.com/home-page-8750",
-        "PropStream",
-        "Regrid",
-        "http://springsolutionsllcwordpress.com/",
-        "https://plus.google.com/u/0/+boberdoo"
+        "http://springsolutionsllcwordpress.com/"
       ]
     }
   ],
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1504,
-      "video_count": 2192,
-      "corroborating_tip_count": 4399,
+      "channel_count": 1584,
+      "video_count": 2325,
+      "corroborating_tip_count": 4664,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,10 +2018,22 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1354,
-      "video_count": 2092,
-      "corroborating_tip_count": 4686,
+      "channel_count": 1455,
+      "video_count": 2266,
+      "corroborating_tip_count": 5245,
       "supporting_links": [
+        {
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
+          "timestamp": "00:02:51",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=171s"
+        },
+        {
+          "video_title": "How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three Lenses",
+          "author": "Next Move with Rob",
+          "timestamp": "00:06:28",
+          "link": "https://www.youtube.com/watch?v=HrG-12X_ds8&t=388s"
+        },
         {
           "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
           "author": "Probate Mastery",
@@ -2029,34 +2041,22 @@
           "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=387s"
         },
         {
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
+          "timestamp": "00:08:49",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=529s"
+        },
+        {
+          "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+          "author": "REtipster",
+          "timestamp": "00:12:09",
+          "link": "https://www.youtube.com/watch?v=pBstDNy9IuM&t=729s"
+        },
+        {
           "video_title": "Probate Mastery is more than Probate Training and Certification | Chad Corbett's Probate Course",
           "author": "Probate Mastery",
           "timestamp": "00:05:06",
           "link": "https://www.youtube.com/watch?v=d3g2CkHYVp4&t=306s"
-        },
-        {
-          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
-          "author": "Aldo Gomes",
-          "timestamp": "00:03:37",
-          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=217s"
-        },
-        {
-          "video_title": "AskAVC #2 - SaaS Churn: what is it?",
-          "author": "Ask a VC",
-          "timestamp": "00:04:02",
-          "link": "https://www.youtube.com/watch?v=su9KuGnbAW8&t=242s"
-        },
-        {
-          "video_title": "$57 Affiliate Payouts With $35 Google Ads CPA (Full Funnel Breakdown)",
-          "author": "Aldo Gomes",
-          "timestamp": "00:02:02",
-          "link": "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=122s"
-        },
-        {
-          "video_title": "How A Commercial Loan Works? | Co/LAB Lending",
-          "author": "The Lab: Mortgage & Real Estate Business Academy",
-          "timestamp": "00:03:19",
-          "link": "https://www.youtube.com/watch?v=SulpxqBYams&t=199s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 407,
-      "video_count": 637,
+      "channel_count": 433,
+      "video_count": 673,
       "corroborating_tip_count": 1805,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1512,
-      "video_count": 2246,
-      "corroborating_tip_count": 2745,
+      "channel_count": 1594,
+      "video_count": 2383,
+      "corroborating_tip_count": 2849,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1083,
-      "video_count": 1577,
-      "corroborating_tip_count": 1001,
+      "channel_count": 1155,
+      "video_count": 1708,
+      "corroborating_tip_count": 1085,
       "supporting_links": [
         {
           "video_title": "How to Get Unlimited Leads Using Clay Enrichment Waterfall | clay.com Tutorial",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1470,
-      "video_count": 2202,
-      "corroborating_tip_count": 2916,
+      "channel_count": 1548,
+      "video_count": 2338,
+      "corroborating_tip_count": 3149,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1489,
-      "video_count": 2294,
-      "corroborating_tip_count": 2534,
+      "channel_count": 1592,
+      "video_count": 2470,
+      "corroborating_tip_count": 2685,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,15 +2318,27 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1398,
-      "video_count": 2067,
-      "corroborating_tip_count": 5422,
+      "channel_count": 1464,
+      "video_count": 2168,
+      "corroborating_tip_count": 5677,
       "supporting_links": [
+        {
+          "video_title": "How To Find Comps For Land",
+          "author": "Brent Bowers",
+          "timestamp": "00:11:35",
+          "link": "https://www.youtube.com/watch?v=JNufnuENoDM&t=695s"
+        },
         {
           "video_title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
           "author": "Surplus Funds 101",
           "timestamp": "00:04:31",
           "link": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=271s"
+        },
+        {
+          "video_title": "How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three Lenses",
+          "author": "Next Move with Rob",
+          "timestamp": "00:09:18",
+          "link": "https://www.youtube.com/watch?v=HrG-12X_ds8&t=558s"
         },
         {
           "video_title": "Implement Authorization using Row Level Security (RLS) with Supabase (Step By Step Guide)",
@@ -2345,18 +2357,6 @@
           "author": "Surplus Funds 101",
           "timestamp": "00:02:07",
           "link": "https://www.youtube.com/watch?v=Gk0D4wVEXmc&t=127s"
-        },
-        {
-          "video_title": "Building the AI-Powered M&A Deal Team of 2030 | SS&C Intralinks #dealmaking #mergersandacquisitions",
-          "author": "SS&C Intralinks",
-          "timestamp": "00:40:22",
-          "link": "https://www.youtube.com/watch?v=rOwXkmrMljc&t=2422s"
-        },
-        {
-          "video_title": "How To Sell leads To Local Businesses (Rank And Rent Method)",
-          "author": "Digital Real Estate Secrets",
-          "timestamp": "00:14:26",
-          "link": "https://www.youtube.com/watch?v=cSXYPhrwhwo&t=866s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 2772 corpus videos",
-        "instance_count": 2772,
+        "source": "YouTube CDN thumbnails for the 2950 corpus videos",
+        "instance_count": 2950,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -22152,6 +22152,1252 @@
             "author": "The Dividend Domain",
             "thumbnail_url": "https://i.ytimg.com/vi/VV0hxi5TUu4/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=VV0hxi5TUu4"
+          },
+          {
+            "video_id": "gMTr4Kngzx8",
+            "title": "Land Flipping Formula: Neutral Offers VS Blind Offers",
+            "author": "Land Investing Pros",
+            "thumbnail_url": "https://i.ytimg.com/vi/gMTr4Kngzx8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gMTr4Kngzx8"
+          },
+          {
+            "video_id": "Z_ZynszdCFo",
+            "title": "How Ron Apke Made $700K Profit in His First Year Flipping Vacant Land | Land Investing Explained",
+            "author": "Real Estate Pros Show",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z_ZynszdCFo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z_ZynszdCFo"
+          },
+          {
+            "video_id": "U4C3AVYK9M4",
+            "title": "Breaking Down The Numbers Of The Land Flipping Business Model",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/U4C3AVYK9M4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U4C3AVYK9M4"
+          },
+          {
+            "video_id": "tF_EbilAGj4",
+            "title": "$1M flipping vacant land with direct mail | The exact system",
+            "author": "Olufemi Ajose",
+            "thumbnail_url": "https://i.ytimg.com/vi/tF_EbilAGj4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tF_EbilAGj4"
+          },
+          {
+            "video_id": "Tj5JsRK_YdQ",
+            "title": "The Land Flipping Direct Mail Strategy That Actually Works",
+            "author": "Land Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tj5JsRK_YdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tj5JsRK_YdQ"
+          },
+          {
+            "video_id": "xY-aEaO4M98",
+            "title": "Enchanted Farms, Real Estate Land Investor Direct Mail Case Study (Rocket Print & Mail)",
+            "author": "RocketPrint and Mail",
+            "thumbnail_url": "https://i.ytimg.com/vi/xY-aEaO4M98/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xY-aEaO4M98"
+          },
+          {
+            "video_id": "HE45qWS8txg",
+            "title": "He Makes MILLIONS Flipping Vacant Land (Here's How)",
+            "author": "DealMachine Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/HE45qWS8txg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HE45qWS8txg"
+          },
+          {
+            "video_id": "4KWC7a6vLcY",
+            "title": "How to Flip Land and Make $20,000 Texting with The Land Flipping Empire",
+            "author": "DGB Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/4KWC7a6vLcY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4KWC7a6vLcY"
+          },
+          {
+            "video_id": "hWcjM0400as",
+            "title": "How to Flip Vacant Land for Profit | The Land Flipping Business Explained",
+            "author": "Hidden Money",
+            "thumbnail_url": "https://i.ytimg.com/vi/hWcjM0400as/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hWcjM0400as"
+          },
+          {
+            "video_id": "R4icAmTE4WI",
+            "title": "Vacant Land Blind Offers: Insider Truths & Tips | Land Investing Tips | Sumner Healey 2025",
+            "author": "Sumner Healey",
+            "thumbnail_url": "https://i.ytimg.com/vi/R4icAmTE4WI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R4icAmTE4WI"
+          },
+          {
+            "video_id": "ZfyoS572Kbk",
+            "title": "leaking my $63k/month land flipping blueprint (Full Breakdown)",
+            "author": "Thomas | Land Flipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZfyoS572Kbk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZfyoS572Kbk"
+          },
+          {
+            "video_id": "pIgr8VsT8qA",
+            "title": "Land N Deed, Land Investor Direct Mail Case Study (RocketPrint & Mail)",
+            "author": "RocketPrint and Mail",
+            "thumbnail_url": "https://i.ytimg.com/vi/pIgr8VsT8qA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pIgr8VsT8qA"
+          },
+          {
+            "video_id": "JRIbKp3FaEs",
+            "title": "How to Score Big Land Flipping Deals Using Direct Mail",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/JRIbKp3FaEs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JRIbKp3FaEs"
+          },
+          {
+            "video_id": "YPqUHvSAZrU",
+            "title": "How To Make Offers To Land Owners - Masterclass Video 5 w/ Joe McCall",
+            "author": "Flipping Mastery TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/YPqUHvSAZrU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YPqUHvSAZrU"
+          },
+          {
+            "video_id": "abgGG4YJgLw",
+            "title": "Land Investors Review by Seth Williams of ReTipster (CFFL 424)",
+            "author": "Land Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/abgGG4YJgLw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=abgGG4YJgLw"
+          },
+          {
+            "video_id": "pBstDNy9IuM",
+            "title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/pBstDNy9IuM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pBstDNy9IuM"
+          },
+          {
+            "video_id": "iC5tSNnegIw",
+            "title": "The Best Advice I Never Got About Land Investing",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/iC5tSNnegIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iC5tSNnegIw"
+          },
+          {
+            "video_id": "Zu8LEqQ-L0w",
+            "title": "Land Investing 101 (Beginners Guide): Learn the Land Flipping Business Model in 20 Minutes",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zu8LEqQ-L0w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Zu8LEqQ-L0w"
+          },
+          {
+            "video_id": "NoB05d5Eap4",
+            "title": "REtipster Review - Seth Williams Land Investing Course (Cost Are Crazy!)",
+            "author": "Content Marketing Course Reviews by Ippei",
+            "thumbnail_url": "https://i.ytimg.com/vi/NoB05d5Eap4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NoB05d5Eap4"
+          },
+          {
+            "video_id": "IS6mrT0hkGw",
+            "title": "The Report That Gives Land Investors an Unfair Advantage w/ Don Healy | REtipster Podcast 258",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/IS6mrT0hkGw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IS6mrT0hkGw"
+          },
+          {
+            "video_id": "Uaqe67xWZN0",
+            "title": "The Land Strategy That Replaced His W-2 w/ Landon Bleau | REtipster Podcast 291",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/Uaqe67xWZN0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Uaqe67xWZN0"
+          },
+          {
+            "video_id": "k24QX2JK1ps",
+            "title": "The Regulatory Squeeze on Land Investors with Seth Williams",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/k24QX2JK1ps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k24QX2JK1ps"
+          },
+          {
+            "video_id": "JL60o3hoi_w",
+            "title": "How Land Investing Really Works",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/JL60o3hoi_w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JL60o3hoi_w"
+          },
+          {
+            "video_id": "j3-xqUjgb7k",
+            "title": "How to Do Proper Due Diligence on Any Land Deal",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/j3-xqUjgb7k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=j3-xqUjgb7k"
+          },
+          {
+            "video_id": "bFiThXyiz7c",
+            "title": "Land Flipping for Beginners: The Full 7-Step Process",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/bFiThXyiz7c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bFiThXyiz7c"
+          },
+          {
+            "video_id": "WmRK4kG81e4",
+            "title": "Land Flipping is NOT a Passive Investment Strategy",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/WmRK4kG81e4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WmRK4kG81e4"
+          },
+          {
+            "video_id": "8qUfThwrzAw",
+            "title": "Land Funding Expert Steve Hodgdon Breaks Down What Really Matters | REtipster Podcast 181",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/8qUfThwrzAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8qUfThwrzAw"
+          },
+          {
+            "video_id": "Q830bJqxC1Q",
+            "title": "The Future of Land Investing Is Here | REtipster Podcast",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q830bJqxC1Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q830bJqxC1Q"
+          },
+          {
+            "video_id": "HpkNhY7WclQ",
+            "title": "Land Flipping: Why Your Buyers Are the Real Asset w/ Abi Asija | REtipster Podcast 290",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/HpkNhY7WclQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HpkNhY7WclQ"
+          },
+          {
+            "video_id": "1B8q3q_Xt-s",
+            "title": "Minor Partition vs. Subdivision in Land Development",
+            "author": "Cody Bjugan",
+            "thumbnail_url": "https://i.ytimg.com/vi/1B8q3q_Xt-s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1B8q3q_Xt-s"
+          },
+          {
+            "video_id": "JXUkA5K7RSc",
+            "title": "How To Subdivide Land For Profit (Step By Step)",
+            "author": "Jack Bosch",
+            "thumbnail_url": "https://i.ytimg.com/vi/JXUkA5K7RSc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JXUkA5K7RSc"
+          },
+          {
+            "video_id": "8LneZstpCGY",
+            "title": "Subdivide Land With These Simple Steps",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/8LneZstpCGY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8LneZstpCGY"
+          },
+          {
+            "video_id": "ZvmmZBcu3kc",
+            "title": "How To Subdivide Land",
+            "author": "Jerome Maldonado",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZvmmZBcu3kc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZvmmZBcu3kc"
+          },
+          {
+            "video_id": "ffCHGUtstfA",
+            "title": "Subdivide Land Guide: Fastest Profits in Real Estate",
+            "author": "Jerome Maldonado",
+            "thumbnail_url": "https://i.ytimg.com/vi/ffCHGUtstfA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ffCHGUtstfA"
+          },
+          {
+            "video_id": "fNHhVpzVhdo",
+            "title": "How to Subdivide Land for Maximum Profit",
+            "author": "Jerome Maldonado",
+            "thumbnail_url": "https://i.ytimg.com/vi/fNHhVpzVhdo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fNHhVpzVhdo"
+          },
+          {
+            "video_id": "KmCwZ5I6BYU",
+            "title": "Backyard Subdivision, What Most People Get Wrong",
+            "author": "Peter Kelly Property",
+            "thumbnail_url": "https://i.ytimg.com/vi/KmCwZ5I6BYU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KmCwZ5I6BYU"
+          },
+          {
+            "video_id": "TzjxQStPaW4",
+            "title": "The Essential Types of Land Subdivisions (Part 1 of 4) | The Real Deal w/ Neil Clements",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/TzjxQStPaW4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TzjxQStPaW4"
+          },
+          {
+            "video_id": "o_c7zC-iYqE",
+            "title": "Subdividing Land 101: How We Turned 80 Acres in Minnesota Into $235K in 10 Minutes",
+            "author": "Clay Hepler",
+            "thumbnail_url": "https://i.ytimg.com/vi/o_c7zC-iYqE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o_c7zC-iYqE"
+          },
+          {
+            "video_id": "qSoWEXftiCQ",
+            "title": "How to Subdivide Land: Steps, Costs and Approvals",
+            "author": "Liberty Acres",
+            "thumbnail_url": "https://i.ytimg.com/vi/qSoWEXftiCQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qSoWEXftiCQ"
+          },
+          {
+            "video_id": "rtRAjfGZ_nY",
+            "title": "Subdivisions and road frontage",
+            "author": "Tim Howell",
+            "thumbnail_url": "https://i.ytimg.com/vi/rtRAjfGZ_nY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rtRAjfGZ_nY"
+          },
+          {
+            "video_id": "pWQCNBiSpUY",
+            "title": "Full Subdivide Land Guide: Fastest Profits in Real Estate ($192k profit case study)",
+            "author": "Sumner Healey",
+            "thumbnail_url": "https://i.ytimg.com/vi/pWQCNBiSpUY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pWQCNBiSpUY"
+          },
+          {
+            "video_id": "e8Ouv9k5iag",
+            "title": "Subdividing Rural Land For Sale - What is the Process?",
+            "author": "Paul Jang",
+            "thumbnail_url": "https://i.ytimg.com/vi/e8Ouv9k5iag/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e8Ouv9k5iag"
+          },
+          {
+            "video_id": "y_3SP6N-l4c",
+            "title": "Subdividing Land: What Real Estate Investors Should Know | Daily Podcast 183",
+            "author": "BiggerPockets",
+            "thumbnail_url": "https://i.ytimg.com/vi/y_3SP6N-l4c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y_3SP6N-l4c"
+          },
+          {
+            "video_id": "N5LpbcKdDVE",
+            "title": "How I Made $500k with a Minor Land Subdivision",
+            "author": "Jon Jasniak",
+            "thumbnail_url": "https://i.ytimg.com/vi/N5LpbcKdDVE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N5LpbcKdDVE"
+          },
+          {
+            "video_id": "WHUzvXvl_18",
+            "title": "Guide To Subdividing Land: Fastest Profits In Real Estate",
+            "author": "David Reitz",
+            "thumbnail_url": "https://i.ytimg.com/vi/WHUzvXvl_18/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WHUzvXvl_18"
+          },
+          {
+            "video_id": "tZnXE47jWp4",
+            "title": "Is Data Tree the Best Data Tool for Land Investing? (Review & Tutorial)",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/tZnXE47jWp4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tZnXE47jWp4"
+          },
+          {
+            "video_id": "6qNh515jvww",
+            "title": "The Secret to researching land easily with County GIS!",
+            "author": "Country Land Sellers",
+            "thumbnail_url": "https://i.ytimg.com/vi/6qNh515jvww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6qNh515jvww"
+          },
+          {
+            "video_id": "CbpqiGq5E5Y",
+            "title": "DataTree vs TitlePro vs RealQuest Pro (LA 1422)",
+            "author": "Land Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/CbpqiGq5E5Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CbpqiGq5E5Y"
+          },
+          {
+            "video_id": "oJpqcR4iFy8",
+            "title": "How to Build a Hand-Picked List of Properties by “Parcel Tagging” on DataTree",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/oJpqcR4iFy8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oJpqcR4iFy8"
+          },
+          {
+            "video_id": "mhHvzO1O8To",
+            "title": "PRYCD Out of County Owner to Total Parcel Ratio Map Example",
+            "author": "PRYCD",
+            "thumbnail_url": "https://i.ytimg.com/vi/mhHvzO1O8To/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mhHvzO1O8To"
+          },
+          {
+            "video_id": "EmWzMGDpkTY",
+            "title": "Public Records Property Data: Data 101 Series | DataTree by First American",
+            "author": "DataTree by First American",
+            "thumbnail_url": "https://i.ytimg.com/vi/EmWzMGDpkTY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EmWzMGDpkTY"
+          },
+          {
+            "video_id": "7jGQIvwqBwc",
+            "title": "PRYCD Land Step-By-Step Process Flow",
+            "author": "PRYCD",
+            "thumbnail_url": "https://i.ytimg.com/vi/7jGQIvwqBwc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7jGQIvwqBwc"
+          },
+          {
+            "video_id": "_kxaCpUojPw",
+            "title": "Parcel Viewer Tutorial: How To Find Land Deals Fast",
+            "author": "Joséphine Saffert",
+            "thumbnail_url": "https://i.ytimg.com/vi/_kxaCpUojPw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_kxaCpUojPw"
+          },
+          {
+            "video_id": "Mdkx15sX_XM",
+            "title": "Propstream for Land Investors",
+            "author": "Great Lands LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mdkx15sX_XM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mdkx15sX_XM"
+          },
+          {
+            "video_id": "3kN1hBRUqVU",
+            "title": "PRYCD List Upload Example Video",
+            "author": "PRYCD",
+            "thumbnail_url": "https://i.ytimg.com/vi/3kN1hBRUqVU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3kN1hBRUqVU"
+          },
+          {
+            "video_id": "ptM7-3KSnO4",
+            "title": "HOW TO READ A FLOOD MAP BY FEMA TO SEE IF YOU ARE IN A FLOOD ZONE",
+            "author": "LAVERNE MCGEE TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/ptM7-3KSnO4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ptM7-3KSnO4"
+          },
+          {
+            "video_id": "UkiDG5GpG_Y",
+            "title": "Wetland Reserve Easements: Benefits for Landowners and the Environment",
+            "author": "MissStateExtension",
+            "thumbnail_url": "https://i.ytimg.com/vi/UkiDG5GpG_Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UkiDG5GpG_Y"
+          },
+          {
+            "video_id": "VIdzLB23cAw",
+            "title": "Raw Land Traps 2026: Perc Tests, Road Access & Utility Costs Explained",
+            "author": "Barndo And Tiny Homes Vision",
+            "thumbnail_url": "https://i.ytimg.com/vi/VIdzLB23cAw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VIdzLB23cAw"
+          },
+          {
+            "video_id": "3ppoErpmGfs",
+            "title": "Perc testing, flood plains, slope, septic - oh my! Bill Bower explains it all to us!",
+            "author": "The Jen Holden Group of Compass",
+            "thumbnail_url": "https://i.ytimg.com/vi/3ppoErpmGfs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3ppoErpmGfs"
+          },
+          {
+            "video_id": "lRc-2cEUn7U",
+            "title": "How to Identify Zones in the Land Subject to Coastal Storm Flowage (LSCSF) from FEMA Maps",
+            "author": "MassDEP",
+            "thumbnail_url": "https://i.ytimg.com/vi/lRc-2cEUn7U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lRc-2cEUn7U"
+          },
+          {
+            "video_id": "fXtOfFlKqmc",
+            "title": "What is a FEMA flood zone and does it affect your claim?",
+            "author": "PushLeads",
+            "thumbnail_url": "https://i.ytimg.com/vi/fXtOfFlKqmc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fXtOfFlKqmc"
+          },
+          {
+            "video_id": "_Nxxv3hxz1w",
+            "title": "Buying Land in Florida? Check wetlands, flood zones & water tables #buyland #floridaland #wetlands",
+            "author": "Discount Lots",
+            "thumbnail_url": "https://i.ytimg.com/vi/_Nxxv3hxz1w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_Nxxv3hxz1w"
+          },
+          {
+            "video_id": "bPbMFP-bGyU",
+            "title": "How to Change Flood Zone Determination (with FEMA LOMA)",
+            "author": "Compass Land USA",
+            "thumbnail_url": "https://i.ytimg.com/vi/bPbMFP-bGyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bPbMFP-bGyU"
+          },
+          {
+            "video_id": "zWTn3NY8wqc",
+            "title": "Before You Buy Cheap Florida Land: 7 Checks That Kill Deals (Perc, Septic, Flood, Access)",
+            "author": "Florida Land Facts",
+            "thumbnail_url": "https://i.ytimg.com/vi/zWTn3NY8wqc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zWTn3NY8wqc"
+          },
+          {
+            "video_id": "dSAQlt9llvM",
+            "title": "Don't Buy Land Until It Passes This Test (Perc Test Explained)!",
+            "author": "Groundwork",
+            "thumbnail_url": "https://i.ytimg.com/vi/dSAQlt9llvM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dSAQlt9llvM"
+          },
+          {
+            "video_id": "2lVnO8IebI0",
+            "title": "What does landlocked mean, and how do you solve it?",
+            "author": "LandApp by LandGate",
+            "thumbnail_url": "https://i.ytimg.com/vi/2lVnO8IebI0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2lVnO8IebI0"
+          },
+          {
+            "video_id": "5p6zCt25Tyw",
+            "title": "Landlocked Properties & What To Do With A Property With No Access",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/5p6zCt25Tyw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5p6zCt25Tyw"
+          },
+          {
+            "video_id": "4mnTabZRS60",
+            "title": "Is Your Florida Property Landlocked? Here’s What You Can Do",
+            "author": "Legal Counsel P.A.",
+            "thumbnail_url": "https://i.ytimg.com/vi/4mnTabZRS60/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4mnTabZRS60"
+          },
+          {
+            "video_id": "e7VCFv7koQE",
+            "title": "Landlocked: Definition in Real Estate and Easement Solution",
+            "author": "Simple Explain",
+            "thumbnail_url": "https://i.ytimg.com/vi/e7VCFv7koQE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e7VCFv7koQE"
+          },
+          {
+            "video_id": "tfERI-RnheU",
+            "title": "FCP 058: LANDLOCKED REAL ESTATE - HOW TO TURN A PROBLEM PROPERTY INTO PURE PROFIT",
+            "author": "Land Profit Generator with Jack & Michelle Bosch",
+            "thumbnail_url": "https://i.ytimg.com/vi/tfERI-RnheU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tfERI-RnheU"
+          },
+          {
+            "video_id": "wij1Dm2XEX8",
+            "title": "Barry v Hasseldine: Strict Easement of Necessity (Landlocked Land) [1952] Ch 835",
+            "author": "Law Case Summaries",
+            "thumbnail_url": "https://i.ytimg.com/vi/wij1Dm2XEX8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wij1Dm2XEX8"
+          },
+          {
+            "video_id": "orMrWlpfWj4",
+            "title": "Landlocked property, easements, and shark attacks!!! David Holmes Attorney",
+            "author": "David Miller",
+            "thumbnail_url": "https://i.ytimg.com/vi/orMrWlpfWj4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=orMrWlpfWj4"
+          },
+          {
+            "video_id": "gwLVELHJjbc",
+            "title": "Landlocked Properties and Easements",
+            "author": "Land Flipping 101",
+            "thumbnail_url": "https://i.ytimg.com/vi/gwLVELHJjbc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gwLVELHJjbc"
+          },
+          {
+            "video_id": "O6tZ8o1scfY",
+            "title": "🎥 Landlocked Land in Florida?! What I Learned While Hunting for Access, Easements & Closest Neighbor",
+            "author": "Amber Shah of St. Augustine Realtor",
+            "thumbnail_url": "https://i.ytimg.com/vi/O6tZ8o1scfY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O6tZ8o1scfY"
+          },
+          {
+            "video_id": "GpQWztIpKSo",
+            "title": "Landlocked property access easement appraisal",
+            "author": "dhall3000",
+            "thumbnail_url": "https://i.ytimg.com/vi/GpQWztIpKSo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GpQWztIpKSo"
+          },
+          {
+            "video_id": "gnZroureXsw",
+            "title": "I-Team: Landlocked property owners want access",
+            "author": "NBC 10 WJAR",
+            "thumbnail_url": "https://i.ytimg.com/vi/gnZroureXsw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gnZroureXsw"
+          },
+          {
+            "video_id": "HsA2g1n57AY",
+            "title": "Basics of Easements & Encroachments | Real Estate Exam Prep Videos",
+            "author": "The Real Estate Classroom",
+            "thumbnail_url": "https://i.ytimg.com/vi/HsA2g1n57AY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HsA2g1n57AY"
+          },
+          {
+            "video_id": "D_ZiLS1CYJg",
+            "title": "Landlocked Property in Texas - What You Need to Know!",
+            "author": "Texas Agriculture Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/D_ZiLS1CYJg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D_ZiLS1CYJg"
+          },
+          {
+            "video_id": "GsUpcKZrJAQ",
+            "title": "Double Closing Strategies for Land Investors: Complete Guide | Sumner Healey",
+            "author": "Sumner Healey",
+            "thumbnail_url": "https://i.ytimg.com/vi/GsUpcKZrJAQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GsUpcKZrJAQ"
+          },
+          {
+            "video_id": "5U1h-yosUoE",
+            "title": "Why Double Closing Land Deals Fail Most Of The Time (And What Smart Investors Do Instead)",
+            "author": "Land Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/5U1h-yosUoE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5U1h-yosUoE"
+          },
+          {
+            "video_id": "cPrVIwbUYrs",
+            "title": "Closing Costs Explained: Lender Policy vs Owner Policy",
+            "author": "Clause Gate",
+            "thumbnail_url": "https://i.ytimg.com/vi/cPrVIwbUYrs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cPrVIwbUYrs"
+          },
+          {
+            "video_id": "Up2OF5KmfcU",
+            "title": "Owner's Title Insurance: What It Covers, What It Costs, and What Changed",
+            "author": "House Cashers LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/Up2OF5KmfcU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Up2OF5KmfcU"
+          },
+          {
+            "video_id": "4Ueirfxr5Ww",
+            "title": "How to Do a Double Closing Wholesaling Deal with No Money Needed!",
+            "author": "Flip With Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/4Ueirfxr5Ww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4Ueirfxr5Ww"
+          },
+          {
+            "video_id": "LDjHRRkWVYE",
+            "title": "How to Use Double Closing to Dominate Land Investing with Zero Money Down",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/LDjHRRkWVYE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LDjHRRkWVYE"
+          },
+          {
+            "video_id": "zyoO3FxrTDQ",
+            "title": "How We Double Close Land Deals Without Killing Our Profit",
+            "author": "Sumner Advanced",
+            "thumbnail_url": "https://i.ytimg.com/vi/zyoO3FxrTDQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zyoO3FxrTDQ"
+          },
+          {
+            "video_id": "HubgOyQ00K4",
+            "title": "Title Insurance Explained In Under 4 Minutes!",
+            "author": "Get Rich Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/HubgOyQ00K4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HubgOyQ00K4"
+          },
+          {
+            "video_id": "V4qnHYV6EVo",
+            "title": "What Is Wholesaling in Real Estate? Assignment vs Double Close vs Novation",
+            "author": "Michael Bull",
+            "thumbnail_url": "https://i.ytimg.com/vi/V4qnHYV6EVo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V4qnHYV6EVo"
+          },
+          {
+            "video_id": "fTJxXxQQQGs",
+            "title": "Why Double Closing May Be Dead In 2025 | Real Estate Strategies That Still Work",
+            "author": "Land Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/fTJxXxQQQGs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fTJxXxQQQGs"
+          },
+          {
+            "video_id": "z_2D2D6Cusc",
+            "title": "Florida Title Insurance Explained - What Buyers MUST Know Before Closing",
+            "author": "Casey Joiner",
+            "thumbnail_url": "https://i.ytimg.com/vi/z_2D2D6Cusc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z_2D2D6Cusc"
+          },
+          {
+            "video_id": "svuRdMOkJF4",
+            "title": "What is Title Insurance and Do I Need It?",
+            "author": "The Ramsey Show Highlights",
+            "thumbnail_url": "https://i.ytimg.com/vi/svuRdMOkJF4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=svuRdMOkJF4"
+          },
+          {
+            "video_id": "IRJeZQijnxU",
+            "title": "Double Closing for Land Investors 2026 | Ultimate Guide for Beginners (Even in Restricted States)",
+            "author": "Clay Hepler",
+            "thumbnail_url": "https://i.ytimg.com/vi/IRJeZQijnxU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IRJeZQijnxU"
+          },
+          {
+            "video_id": "m1GoTr9J5TM",
+            "title": "What the Dodd-Frank Act Means for Vacant Land & Seller Financing",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/m1GoTr9J5TM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m1GoTr9J5TM"
+          },
+          {
+            "video_id": "B1mBRW8QMrw",
+            "title": "Owner Finance Webinar - The Dodd-Frank Act EXPOSED!",
+            "author": "Phill Grove",
+            "thumbnail_url": "https://i.ytimg.com/vi/B1mBRW8QMrw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B1mBRW8QMrw"
+          },
+          {
+            "video_id": "gSHz85xxIz4",
+            "title": "RehabValuator.com and Daniil Kleyman: Seller Financing, Dodd-Frank, and Profitability in 2014",
+            "author": "Seller Finance Consultants, Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/gSHz85xxIz4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gSHz85xxIz4"
+          },
+          {
+            "video_id": "MNznbFmtOwI",
+            "title": "Seller Financing after Dodd-Frank",
+            "author": "William Bronchick",
+            "thumbnail_url": "https://i.ytimg.com/vi/MNznbFmtOwI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MNznbFmtOwI"
+          },
+          {
+            "video_id": "X6Bv1fbSvBk",
+            "title": "Q&A: Owner Financing and Selling the Notes, Land Trusts, Dodd-Frank, SAFE Act",
+            "author": "Seller Financing, Real Estate & Note Investing",
+            "thumbnail_url": "https://i.ytimg.com/vi/X6Bv1fbSvBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=X6Bv1fbSvBk"
+          },
+          {
+            "video_id": "ZGvGq-_10yA",
+            "title": "Webinar Weds: Understanding Dodd-Frank and Seller Financing",
+            "author": "William Bronchick",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZGvGq-_10yA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZGvGq-_10yA"
+          },
+          {
+            "video_id": "SB_vfxPYuF8",
+            "title": "The Only True Dodd Frank Seller Finance Exemption and Why You Need an MLO For All Seller Financing",
+            "author": "Seller Finance Consultants, Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/SB_vfxPYuF8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SB_vfxPYuF8"
+          },
+          {
+            "video_id": "mtE3-cvmAN0",
+            "title": "How Do I Comply With The Dodd-Frank Act?",
+            "author": "Joe Crump",
+            "thumbnail_url": "https://i.ytimg.com/vi/mtE3-cvmAN0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mtE3-cvmAN0"
+          },
+          {
+            "video_id": "ek2QTeZlqCY",
+            "title": "Mobile Home Park or RV Park? How to Choose the Right Asset",
+            "author": "Commercial Property Advisors",
+            "thumbnail_url": "https://i.ytimg.com/vi/ek2QTeZlqCY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ek2QTeZlqCY"
+          },
+          {
+            "video_id": "xjNh4eemKCs",
+            "title": "The Economics of Owning an RV Storage Lot",
+            "author": "The Owner's Math",
+            "thumbnail_url": "https://i.ytimg.com/vi/xjNh4eemKCs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xjNh4eemKCs"
+          },
+          {
+            "video_id": "bwY6HXq0w4g",
+            "title": "Investing in RV vs. Mobile Home Parks| Key Differences Explained",
+            "author": "Texas Land Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/bwY6HXq0w4g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bwY6HXq0w4g"
+          },
+          {
+            "video_id": "tZwHEMuaXiQ",
+            "title": "Buying an RV Park? WATCH THIS to Avoid Mistakes!",
+            "author": "Debt Free Doctor - Dr. Jeff Anzalone",
+            "thumbnail_url": "https://i.ytimg.com/vi/tZwHEMuaXiQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tZwHEMuaXiQ"
+          },
+          {
+            "video_id": "FY9TF9ZkLwk",
+            "title": "The 30-Minute Beginner’s Course for RV Park Investing",
+            "author": "Heather Blankenship",
+            "thumbnail_url": "https://i.ytimg.com/vi/FY9TF9ZkLwk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FY9TF9ZkLwk"
+          },
+          {
+            "video_id": "JkPCf6kuMu0",
+            "title": "RV Lot Renting vs. Buying: The Pros and Cons of RV Lot Ownership",
+            "author": "Elegment Land",
+            "thumbnail_url": "https://i.ytimg.com/vi/JkPCf6kuMu0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JkPCf6kuMu0"
+          },
+          {
+            "video_id": "BQMMvL0zywU",
+            "title": "America’s RV Parks Are Becoming Too Expensive — Full Time Residents Have Nowhere Left to Go",
+            "author": "American Fault Lines",
+            "thumbnail_url": "https://i.ytimg.com/vi/BQMMvL0zywU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BQMMvL0zywU"
+          },
+          {
+            "video_id": "5o06VeN0Gak",
+            "title": "RV Park Investing: How to Buy Your First Park with No Experience",
+            "author": "Debt Free Doctor - Dr. Jeff Anzalone",
+            "thumbnail_url": "https://i.ytimg.com/vi/5o06VeN0Gak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5o06VeN0Gak"
+          },
+          {
+            "video_id": "Uaymin1wo40",
+            "title": "Solar & Energy Storage Lease Process",
+            "author": "LandApp by LandGate",
+            "thumbnail_url": "https://i.ytimg.com/vi/Uaymin1wo40/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Uaymin1wo40"
+          },
+          {
+            "video_id": "QwCGBQ0n2tM",
+            "title": "Texas’ battery storage: a boom and bust market? | FT Energy Source",
+            "author": "Financial Times",
+            "thumbnail_url": "https://i.ytimg.com/vi/QwCGBQ0n2tM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QwCGBQ0n2tM"
+          },
+          {
+            "video_id": "tBKeO4d6hqc",
+            "title": "Battery Energy Storage Systems (BESS)",
+            "author": "SpeedFreakLS1",
+            "thumbnail_url": "https://i.ytimg.com/vi/tBKeO4d6hqc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tBKeO4d6hqc"
+          },
+          {
+            "video_id": "A84PRdZGcoE",
+            "title": "Planning and Zoning for Battery Energy Storage Systems (BESS)",
+            "author": "PlanningWebcastSeries",
+            "thumbnail_url": "https://i.ytimg.com/vi/A84PRdZGcoE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A84PRdZGcoE"
+          },
+          {
+            "video_id": "sM7ge9ahsGY",
+            "title": "How a Solar Farm is Constructed From Beginning to End",
+            "author": "EltonDP",
+            "thumbnail_url": "https://i.ytimg.com/vi/sM7ge9ahsGY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sM7ge9ahsGY"
+          },
+          {
+            "video_id": "GNmL-gBPe3g",
+            "title": "Battery Energy Storage System | BESS | All Components Explained",
+            "author": "Gaurav J - TheElectricalGuy",
+            "thumbnail_url": "https://i.ytimg.com/vi/GNmL-gBPe3g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GNmL-gBPe3g"
+          },
+          {
+            "video_id": "CLwCvBlXLA4",
+            "title": "Energy Storage System Sizing Webinar with Fortress Power | RENVU",
+            "author": "RENVU Solar Equipment Distribution",
+            "thumbnail_url": "https://i.ytimg.com/vi/CLwCvBlXLA4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CLwCvBlXLA4"
+          },
+          {
+            "video_id": "VZWhkHs1sXA",
+            "title": "Understanding Commercial & Industrial Solar PV Systems with Battery Storage",
+            "author": "Sunsynk",
+            "thumbnail_url": "https://i.ytimg.com/vi/VZWhkHs1sXA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VZWhkHs1sXA"
+          },
+          {
+            "video_id": "3x8J7AdyCEw",
+            "title": "Zillow Land Comping: Master Acreage Pricing 🔑",
+            "author": "Cool Wholesaling+ Land Deals-Real Estate Investing",
+            "thumbnail_url": "https://i.ytimg.com/vi/3x8J7AdyCEw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3x8J7AdyCEw"
+          },
+          {
+            "video_id": "mM0tCRujCDM",
+            "title": "Landwatch and Zillow Comps",
+            "author": "Jeff",
+            "thumbnail_url": "https://i.ytimg.com/vi/mM0tCRujCDM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mM0tCRujCDM"
+          },
+          {
+            "video_id": "UqPvFZ6TGGo",
+            "title": "How I Pull Comps on Zillow as Real Estate Investor (2025)",
+            "author": "DannyG Real Estate",
+            "thumbnail_url": "https://i.ytimg.com/vi/UqPvFZ6TGGo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UqPvFZ6TGGo"
+          },
+          {
+            "video_id": "FOpRZxfMs4I",
+            "title": "Scraping LandWatch",
+            "author": "LandSpeed Price Boss",
+            "thumbnail_url": "https://i.ytimg.com/vi/FOpRZxfMs4I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FOpRZxfMs4I"
+          },
+          {
+            "video_id": "t8XDRE0ZjFc",
+            "title": "How to use Zillow for comping vacant land ii- Determine the best price to offer so you can profit",
+            "author": "Cool Wholesaling+ Land Deals-Real Estate Investing",
+            "thumbnail_url": "https://i.ytimg.com/vi/t8XDRE0ZjFc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t8XDRE0ZjFc"
+          },
+          {
+            "video_id": "JNufnuENoDM",
+            "title": "How To Find Comps For Land",
+            "author": "Brent Bowers",
+            "thumbnail_url": "https://i.ytimg.com/vi/JNufnuENoDM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JNufnuENoDM"
+          },
+          {
+            "video_id": "JRa_lwdSNjo",
+            "title": "HOW TO RUN VACANT LAND COMPS USING ZILLOW | LAND SPECIALIST",
+            "author": "WE ARE LAND SPECIALISTS",
+            "thumbnail_url": "https://i.ytimg.com/vi/JRa_lwdSNjo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JRa_lwdSNjo"
+          },
+          {
+            "video_id": "QB6c4nBfXrs",
+            "title": "How to Find Land Deals (LandWatch, LandSearch & Hidden Sources) #realestate",
+            "author": "Once Upon a Brick · The Land Investor",
+            "thumbnail_url": "https://i.ytimg.com/vi/QB6c4nBfXrs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QB6c4nBfXrs"
+          },
+          {
+            "video_id": "rYCHQ59jzhY",
+            "title": "How to Use Redfin and LandWatch to Determine Land Values",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/rYCHQ59jzhY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rYCHQ59jzhY"
+          },
+          {
+            "video_id": "7FfLOUMhyyA",
+            "title": "This Zillow Property Looks PERFECT for a Family Compound… But Is It?",
+            "author": "For Land and Country",
+            "thumbnail_url": "https://i.ytimg.com/vi/7FfLOUMhyyA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7FfLOUMhyyA"
+          },
+          {
+            "video_id": "Tmf12E9Dg7A",
+            "title": "The $10,000 Land Trap: Don't Overpay #landinvesting #realestate",
+            "author": "Once Upon a Brick · The Land Investor",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tmf12E9Dg7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tmf12E9Dg7A"
+          },
+          {
+            "video_id": "9cX2NuhnYro",
+            "title": "How to Find Land Values and Market Insights with Zillow",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/9cX2NuhnYro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9cX2NuhnYro"
+          },
+          {
+            "video_id": "TbH_4hSsYHU",
+            "title": "Zillow Is Lying To You About Land Prices",
+            "author": "Acrewell Land Company",
+            "thumbnail_url": "https://i.ytimg.com/vi/TbH_4hSsYHU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TbH_4hSsYHU"
+          },
+          {
+            "video_id": "8pB5HoHJ4Bk",
+            "title": "How I Price Land When Sold Prices Aren't Public",
+            "author": "Sumner Advanced",
+            "thumbnail_url": "https://i.ytimg.com/vi/8pB5HoHJ4Bk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8pB5HoHJ4Bk"
+          },
+          {
+            "video_id": "E9KBudZB1Do",
+            "title": "How to Find the Best Counties for Land Investing with Zillow",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/E9KBudZB1Do/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E9KBudZB1Do"
+          },
+          {
+            "video_id": "qBNi7kpsYC4",
+            "title": "Why Neutral Letters Don’t Work In Land Flipping | Avoid These Common Mailer Mistakes",
+            "author": "Land Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/qBNi7kpsYC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qBNi7kpsYC4"
+          },
+          {
+            "video_id": "Hh6ptGrGpDQ",
+            "title": "😱 I sent 1,000 LETTERS to OFF-Market Property Owners (This is what Happened)",
+            "author": "Hayden Crabtree",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hh6ptGrGpDQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hh6ptGrGpDQ"
+          },
+          {
+            "video_id": "PMSn1EaZ42Y",
+            "title": "Cold Calling vs Cold Texting vs Direct Mail: Which One Actually Works Best for Land Flipping?",
+            "author": "Michael Bull",
+            "thumbnail_url": "https://i.ytimg.com/vi/PMSn1EaZ42Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PMSn1EaZ42Y"
+          },
+          {
+            "video_id": "NqZ26rAeL40",
+            "title": "Direct Mail Marketing for Real Estate vs Everything Else",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/NqZ26rAeL40/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NqZ26rAeL40"
+          },
+          {
+            "video_id": "cFfiZJm0txo",
+            "title": "How to Get More Land Deals With Direct Mail",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/cFfiZJm0txo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cFfiZJm0txo"
+          },
+          {
+            "video_id": "Ls2lelB6ImM",
+            "title": "$100K Blueprint: Flipping Land with Texts in 2025",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ls2lelB6ImM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ls2lelB6ImM"
+          },
+          {
+            "video_id": "iSZpxOj5Cus",
+            "title": "How to Price Direct Mail to Get More Out Of Your Land Deals",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/iSZpxOj5Cus/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iSZpxOj5Cus"
+          },
+          {
+            "video_id": "1VVAkFWqVKE",
+            "title": "How I Got 2 Listings from 1 Direct Mail Campaign (Step-by-Step Guide for Realtors)",
+            "author": "Ryan Dossey",
+            "thumbnail_url": "https://i.ytimg.com/vi/1VVAkFWqVKE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1VVAkFWqVKE"
+          },
+          {
+            "video_id": "ipLt_cz8tEY",
+            "title": "Which Marketing Strategy is better: Blind Offers or Neutral Letters?",
+            "author": "Land Investing Pros",
+            "thumbnail_url": "https://i.ytimg.com/vi/ipLt_cz8tEY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ipLt_cz8tEY"
+          },
+          {
+            "video_id": "3VKazhO11yk",
+            "title": "Wholesaling Tax Delinquent Properties (Step by Step)",
+            "author": "Zach Ginn",
+            "thumbnail_url": "https://i.ytimg.com/vi/3VKazhO11yk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3VKazhO11yk"
+          },
+          {
+            "video_id": "U4t9j_wTBLk",
+            "title": "How to Legally Cold Call & Text the DNC LIST!",
+            "author": "Flip With Rick",
+            "thumbnail_url": "https://i.ytimg.com/vi/U4t9j_wTBLk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U4t9j_wTBLk"
+          },
+          {
+            "video_id": "hzDGK6PCjPg",
+            "title": "Getting Sued For Texting AND Cold Calling 😨",
+            "author": "Ryan Dossey",
+            "thumbnail_url": "https://i.ytimg.com/vi/hzDGK6PCjPg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hzDGK6PCjPg"
+          },
+          {
+            "video_id": "uQ2jDRUrtoY",
+            "title": "🌳 Cold Calling Vacant Landowners Until I Get a DEAL",
+            "author": "Maximilian Dier",
+            "thumbnail_url": "https://i.ytimg.com/vi/uQ2jDRUrtoY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uQ2jDRUrtoY"
+          },
+          {
+            "video_id": "L4oZCP8R6RQ",
+            "title": "Real Estate Investors Beware! Texting and Cold calling rules from a TCPA LEGAL expert",
+            "author": "REIPrintMail",
+            "thumbnail_url": "https://i.ytimg.com/vi/L4oZCP8R6RQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L4oZCP8R6RQ"
+          },
+          {
+            "video_id": "p_LcZVcrC3U",
+            "title": "How To Get A Cold Call List - Tax Delinquent List",
+            "author": "The Well Entrepreneur",
+            "thumbnail_url": "https://i.ytimg.com/vi/p_LcZVcrC3U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p_LcZVcrC3U"
+          },
+          {
+            "video_id": "KmEcpx-t8YM",
+            "title": "How to Pull The BEST Wholesale List For Cold Calling & Texting",
+            "author": "Maximilian Dier",
+            "thumbnail_url": "https://i.ytimg.com/vi/KmEcpx-t8YM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KmEcpx-t8YM"
+          },
+          {
+            "video_id": "lWYFLEd7PA0",
+            "title": "Cold Calling Q&A: How to Get Landowners to Say “Yes”",
+            "author": "Apke Brothers",
+            "thumbnail_url": "https://i.ytimg.com/vi/lWYFLEd7PA0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lWYFLEd7PA0"
+          },
+          {
+            "video_id": "xPy40xTlt64",
+            "title": "Cold Calling Code Violations LIVE (Watch Me Get a Wholesale Deal)",
+            "author": "Maximilian Dier",
+            "thumbnail_url": "https://i.ytimg.com/vi/xPy40xTlt64/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xPy40xTlt64"
+          },
+          {
+            "video_id": "hIbsCLgyqbg",
+            "title": "Cold Calling Vacant Land Sellers LIVE",
+            "author": "Maximilian Dier",
+            "thumbnail_url": "https://i.ytimg.com/vi/hIbsCLgyqbg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hIbsCLgyqbg"
+          },
+          {
+            "video_id": "NqKIWNpO1Ic",
+            "title": "Why Cold Calling, Emailing & Texting Fail In Real Estate | Land Deal Marketing Explained",
+            "author": "Land Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/NqKIWNpO1Ic/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NqKIWNpO1Ic"
+          },
+          {
+            "video_id": "ZU1aoe6pwQI",
+            "title": "HOW TO SHOOT Acreage With a Drone - 5 TIPS l Drone VLOGs #4",
+            "author": "Matt Wood",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZU1aoe6pwQI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZU1aoe6pwQI"
+          },
+          {
+            "video_id": "ItWPpkhNHto",
+            "title": "Top Drone Shots For Real Estate Photography",
+            "author": "Wyman Gentry",
+            "thumbnail_url": "https://i.ytimg.com/vi/ItWPpkhNHto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ItWPpkhNHto"
+          },
+          {
+            "video_id": "HrG-12X_ds8",
+            "title": "How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three Lenses",
+            "author": "Next Move with Rob",
+            "thumbnail_url": "https://i.ytimg.com/vi/HrG-12X_ds8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HrG-12X_ds8"
+          },
+          {
+            "video_id": "HbQpeDGaA_c",
+            "title": "How To Start $3,000/Week Real Estate Drone Photography Business",
+            "author": "6 Figure Revenue",
+            "thumbnail_url": "https://i.ytimg.com/vi/HbQpeDGaA_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HbQpeDGaA_c"
+          },
+          {
+            "video_id": "F-UdA3MqSzw",
+            "title": "What Happens When You Fail a Perc Test For A Septic System",
+            "author": "Wells, Septic & More",
+            "thumbnail_url": "https://i.ytimg.com/vi/F-UdA3MqSzw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F-UdA3MqSzw"
+          },
+          {
+            "video_id": "F5XXV-dhw1Q",
+            "title": "Perc Test Walkthrough",
+            "author": "Delaware Valley Septic, Sewer, & Storm",
+            "thumbnail_url": "https://i.ytimg.com/vi/F5XXV-dhw1Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F5XXV-dhw1Q"
+          },
+          {
+            "video_id": "Q3kV6OiudSU",
+            "title": "Perc Tests",
+            "author": "MassDEP",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q3kV6OiudSU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q3kV6OiudSU"
+          },
+          {
+            "video_id": "nVJMPjUWdZw",
+            "title": "What To Do If Your Land Fails A Perc Test (Before You Panic)",
+            "author": "Jack Bosch",
+            "thumbnail_url": "https://i.ytimg.com/vi/nVJMPjUWdZw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nVJMPjUWdZw"
+          },
+          {
+            "video_id": "yp6qPMTkjgE",
+            "title": "What the Heck is a \"Perc Test\" (and How Much Does it Really Matter)?",
+            "author": "REtipster",
+            "thumbnail_url": "https://i.ytimg.com/vi/yp6qPMTkjgE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yp6qPMTkjgE"
+          },
+          {
+            "video_id": "Mio31c7ePlc",
+            "title": "Failed Perc Test? What It Means and Your Septic Options",
+            "author": "Liberty Acres",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mio31c7ePlc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mio31c7ePlc"
+          },
+          {
+            "video_id": "uvqvdLjMBL0",
+            "title": "Perc Test Explained: Why It’s Crucial Before Buying Land to Build a House",
+            "author": "Living in Virginia With Ben Quann",
+            "thumbnail_url": "https://i.ytimg.com/vi/uvqvdLjMBL0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uvqvdLjMBL0"
+          },
+          {
+            "video_id": "8h9gMkksdD8",
+            "title": "We Failed Our Septic Test. Now What?",
+            "author": "Mason Dixon Acres",
+            "thumbnail_url": "https://i.ytimg.com/vi/8h9gMkksdD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8h9gMkksdD8"
+          },
+          {
+            "video_id": "AYim3zSksEs",
+            "title": "The \"Perc Test\": Soil and Septic Basics",
+            "author": "Acrewell Land Company",
+            "thumbnail_url": "https://i.ytimg.com/vi/AYim3zSksEs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AYim3zSksEs"
+          },
+          {
+            "video_id": "vTDxU1jKGSI",
+            "title": "Septic System Safety: Soil Testing and Health Dept. Review on Unique Land",
+            "author": "Soils Inc. & VA Septic",
+            "thumbnail_url": "https://i.ytimg.com/vi/vTDxU1jKGSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vTDxU1jKGSI"
+          },
+          {
+            "video_id": "gP3fDaUu5Iw",
+            "title": "How To Legally Remove Deeded Property Restrictions (HOA, ETC.)",
+            "author": "The Real Estate Lawyer",
+            "thumbnail_url": "https://i.ytimg.com/vi/gP3fDaUu5Iw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gP3fDaUu5Iw"
+          },
+          {
+            "video_id": "okIP6dYiTD4",
+            "title": "How to Find HOA Covenants Conditions & Restrictions #HOACovenants",
+            "author": "Real Estate Made Crystal Clear",
+            "thumbnail_url": "https://i.ytimg.com/vi/okIP6dYiTD4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=okIP6dYiTD4"
+          },
+          {
+            "video_id": "KuFkYy1kf7s",
+            "title": "HOA Claimed My Mineral Rights Were Theirs I Showed Up With the Original Deed and a Geologist!",
+            "author": "HOA Insanity",
+            "thumbnail_url": "https://i.ytimg.com/vi/KuFkYy1kf7s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KuFkYy1kf7s"
+          },
+          {
+            "video_id": "B_XnC97BYF8",
+            "title": "What are Real Estate Deed Restrictions?",
+            "author": "US Realty Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/B_XnC97BYF8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B_XnC97BYF8"
+          },
+          {
+            "video_id": "ieOUjD1jQXA",
+            "title": "Did you know, NO HOA does not mean NO Rules? #hoa #landrestrictions #landusepolicy #land",
+            "author": "Danielle Dojcak",
+            "thumbnail_url": "https://i.ytimg.com/vi/ieOUjD1jQXA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ieOUjD1jQXA"
+          },
+          {
+            "video_id": "CnlqGcAGqOo",
+            "title": "HOA Signed a Mineral Lease Under My Home—Then the Royalty Trail Led Elsewhere",
+            "author": "HOA LAND WARS",
+            "thumbnail_url": "https://i.ytimg.com/vi/CnlqGcAGqOo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CnlqGcAGqOo"
+          },
+          {
+            "video_id": "potSOIxnw0E",
+            "title": "Land Rights: Grazing, Timber and Mineral Rights and Leases for Genealogists - James Tanner",
+            "author": "BYU Library Family History Center",
+            "thumbnail_url": "https://i.ytimg.com/vi/potSOIxnw0E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=potSOIxnw0E"
+          },
+          {
+            "video_id": "zzxrwQSJnC4",
+            "title": "Home Owners Association (HOA) or Covenants Condition and Restrictions (CC&R)",
+            "author": "Tyler Bobo Investor, Alaska Realtor",
+            "thumbnail_url": "https://i.ytimg.com/vi/zzxrwQSJnC4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zzxrwQSJnC4"
+          },
+          {
+            "video_id": "sazxc_VdXOw",
+            "title": "Real Estate Exam Prep: Understanding Private Property Restrictions",
+            "author": "Just Call Maggie",
+            "thumbnail_url": "https://i.ytimg.com/vi/sazxc_VdXOw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sazxc_VdXOw"
+          },
+          {
+            "video_id": "Jb9R7WTh63s",
+            "title": "The 4-Part Deal Acquisition System Every Land Business Needs",
+            "author": "Ajay Sharma",
+            "thumbnail_url": "https://i.ytimg.com/vi/Jb9R7WTh63s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Jb9R7WTh63s"
+          },
+          {
+            "video_id": "V0GF_nQKkTU",
+            "title": "Land Acquisition 101 - 5 Things You Must Know | VestRight",
+            "author": "VestRight",
+            "thumbnail_url": "https://i.ytimg.com/vi/V0GF_nQKkTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V0GF_nQKkTU"
+          },
+          {
+            "video_id": "c8ekY72VGy0",
+            "title": "The 4-Channel Marketing System That Makes Me $3M in Land Deals",
+            "author": "Clay Hepler",
+            "thumbnail_url": "https://i.ytimg.com/vi/c8ekY72VGy0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=c8ekY72VGy0"
+          },
+          {
+            "video_id": "LlahXSpP0k4",
+            "title": "How I Scaled My Real Estate Media Business to $7M (Step by Step)",
+            "author": "ACRE Partner",
+            "thumbnail_url": "https://i.ytimg.com/vi/LlahXSpP0k4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LlahXSpP0k4"
+          },
+          {
+            "video_id": "x1a5YxEWplQ",
+            "title": "How Real Estate Media Agencies Scale From $10K to $100K+ Per Month (Proven Blueprint)",
+            "author": "ACRE Partner",
+            "thumbnail_url": "https://i.ytimg.com/vi/x1a5YxEWplQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x1a5YxEWplQ"
           }
         ],
         "research_reference_only": true,
@@ -22164,7 +23410,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 2772 third-party videos (25508 captured tips)",
+        "source": "Spoken content of 2950 third-party videos (27159 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -22180,38 +23426,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 2772,
-    "channel_count": 1807,
-    "total_words": 4049736,
-    "total_hours": 803.3,
-    "total_pro_tips": 25508,
-    "unique_statutes_and_forms": 1283,
-    "unique_tools_and_portals": 7694
+    "video_count": 2950,
+    "channel_count": 1910,
+    "total_words": 4354357,
+    "total_hours": 859.87,
+    "total_pro_tips": 27159,
+    "unique_statutes_and_forms": 1314,
+    "unique_tools_and_portals": 8337
   },
   "coverage": {
-    "videos_classified": 2772,
-    "videos_with_multiple_topics": 2769,
-    "tips_classified": 25508,
-    "raw_transcripts_joined": 2772,
+    "videos_classified": 2950,
+    "videos_with_multiple_topics": 2947,
+    "tips_classified": 27159,
+    "raw_transcripts_joined": 2950,
     "topic_video_counts": {
-      "business_model_and_economics": 2192,
-      "probate_and_docket_sourcing": 2092,
-      "unclaimed_property_and_escheat": 637,
-      "genealogy_and_heirship_proof": 2246,
-      "skip_tracing_and_outreach": 1577,
-      "contracts_and_compensation": 2202,
-      "statutory_caps_and_licensing": 2294,
-      "automation_and_small_team_ops": 2067
+      "business_model_and_economics": 2325,
+      "probate_and_docket_sourcing": 2266,
+      "unclaimed_property_and_escheat": 673,
+      "genealogy_and_heirship_proof": 2383,
+      "skip_tracing_and_outreach": 1708,
+      "contracts_and_compensation": 2338,
+      "statutory_caps_and_licensing": 2470,
+      "automation_and_small_team_ops": 2168
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 4399,
-      "probate_and_docket_sourcing": 4686,
+      "business_model_and_economics": 4664,
+      "probate_and_docket_sourcing": 5245,
       "unclaimed_property_and_escheat": 1805,
-      "genealogy_and_heirship_proof": 2745,
-      "skip_tracing_and_outreach": 1001,
-      "contracts_and_compensation": 2916,
-      "statutory_caps_and_licensing": 2534,
-      "automation_and_small_team_ops": 5422
+      "genealogy_and_heirship_proof": 2849,
+      "skip_tracing_and_outreach": 1085,
+      "contracts_and_compensation": 3149,
+      "statutory_caps_and_licensing": 2685,
+      "automation_and_small_team_ops": 5677
     }
   },
   "schema_version": "1.0",

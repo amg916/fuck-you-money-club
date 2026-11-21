@@ -1,0 +1,657 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in land flipping, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "County GIS, Recorder Triggers, Builder Buy Boxes, Title-Insured Closings, and TCPA-Aware Owner Outreach",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. "
+        "The sourcing advantage is a documented mismatch between an owner's holding burden "
+        "and a buyer's buildable-land requirements, not a cheap parcel list. This chapter "
+        "maps six plays: builder buy-box reversal, absentee-owner trigger mining, stale-listing "
+        "re-underwriting, adjacent-owner assembly, minor-subdivision feasibility, and "
+        "tcpa_litigator_scrub_honeypot_arbitrage as defensive contact screening. Start with "
+        "verified demand, reject access and environmental defects early, and measure owner "
+        "replies through completed purchases and resales. Canonical annual owner profits "
+        "are $24,000 Conservative, $157,250 Base, and $375,000 Scaled. Gross parcel sale "
+        "proceeds are revenue; acquisition spending remains a cost. The first three to ten "
+        "wins require disciplined outreach, funded diligence, and title-insured exits over "
+        "three to twelve months."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$200,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
+            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$850,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
+            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,500,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
+            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Reverse the search from funded buyers to six sourcing plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Begin with demand that can survive a purchase contract. Select two adjoining "
+                    "counties where recorded vacant-land transfers, building permits, and active builders "
+                    "show repeat activity. Use county assessor exports and QGIS for parcel geometry, "
+                    "the recorder for deeds, and the planning department for zoning text and adopted "
+                    "maps. Interview fifteen builders, manufactured-home dealers, neighboring owners, "
+                    "and land brokers; ask for their last three purchases, required frontage, utility "
+                    "conditions, target purchase price, and funding timeline. A builder saying they "
+                    "want inexpensive lots is not a buy box. A builder seeking six sewer-served "
+                    "lots with sixty feet of frontage, outside mapped floodways, below $85,000 "
+                    "each is actionable. Record whether that price assumes installed taps, impact "
+                    "fees, grading, or only legal availability. Confirm closed consideration through "
+                    "permitted records or a licensed broker where public records omit prices. Reject "
+                    "automated valuations built from improved-home sales. Maintain separate comparable "
+                    "sets for finished lots, raw acreage, and entitled parcels because their prices "
+                    "encode different infrastructure and execution burdens. Demand mining ends with "
+                    "two plausible buyers per target parcel class, not a spreadsheet of optimistic "
+                    "asking prices. Those buyers remain prospects until their funding and parcel "
+                    "requirements are verified."
+                ),
+                (
+                    "Use six explicitly defined plays rather than one undifferentiated owner list. "
+                    "Builder buy-box reversal targets parcels meeting an existing acquisition mandate: "
+                    "an $85,000 supported exit less $7,000 selling costs, $8,000 diligence and "
+                    "holding allocation, and $20,000 target contribution leaves a $50,000 purchase "
+                    "ceiling. Absentee-owner trigger mining combines mailing-address separation with "
+                    "long tenure, returned tax mail where lawfully available, or a newly recorded "
+                    "estate representative; none independently proves distress or authority to sell. "
+                    "Stale-listing re-underwriting finds incorrect acreage, weak photographs, or "
+                    "unanswered utility questions, but routes contact through the listing broker "
+                    "when representation applies. Adjacent-owner assembly seeks incremental value "
+                    "from frontage, access, or usable width without assuming a neighbor must buy. "
+                    "Minor-subdivision feasibility identifies parcels where an approved lot split "
+                    "could produce several marketable lots, while retaining a profitable whole-parcel "
+                    "exit if feasible. The sixth play, tcpa_litigator_scrub_honeypot_arbitrage, is "
+                    "implemented solely as defensive contact screening. These are chapter-level "
+                    "operating plays; only the screening play carries the supplied registry identifier. "
+                    "Keep each parcel attached to one primary thesis and one fallback so the "
+                    "team can explain its value without combining incompatible assumptions. Document "
+                    "each assumption before contacting the owner or paying for technical studies."
+                ),
+                (
+                    "Apply unit economics before celebrating a trigger. If adjacent parcels cost "
+                    "$35,000 each, combined sale proceeds of $100,000 leave $30,000 before "
+                    "survey, title, transfer, selling, and holding costs; allocating $14,000 to "
+                    "those expenses leaves $16,000 contribution before shared overhead. Without "
+                    "both signed acquisitions and documented assemblage value, buy neither on "
+                    "that thesis. For a possible two-lot split, $180,000 combined proceeds less "
+                    "$100,000 acquisition, $25,000 survey and improvement work, and $15,000 other "
+                    "direct costs leaves $40,000 before shared overhead. If the unsplit exit "
+                    "cannot support acquisition and carrying costs, use a feasibility contingency "
+                    "or decline instead of treating future approval as present value. An absentee "
+                    "campaign costing $1,500 that produces one completed acquisition has a $1,500 "
+                    "sourcing cost, not a free deal because the owner replied. A stale listing "
+                    "bought for $45,000 and sold for $70,000 with $10,000 direct expenses "
+                    "contributes $15,000 before overhead. These examples are underwriting exercises, "
+                    "not additional annual revenue cases. Record failed studies, expired contracts, "
+                    "and unsuccessful mail campaigns in operating costs rather than hiding them "
+                    "inside the successful parcel's attractive spread. Review the fallback price "
+                    "with a buyer who has actually purchased similar land."
+                ),
+            ],
+            "table": {
+                "caption": "Six Sourcing Plays With Observable Signals, Unit Math, and Downside Exits",
+                "headers": [
+                    "Operating play and precise acquisition thesis",
+                    "Observable evidence required before owner contact",
+                    "Illustrative unit economics before shared overhead",
+                    "Fallback when the original thesis fails",
+                ],
+                "rows": [
+                    [
+                        "Builder buy-box reversal targets already requested lot specifications",
+                        "Obtain dated buyer requirements and two relevant closed transfers",
+                        "$85,000 exit less $35,000 allowances supports $50,000 acquisition",
+                        "Reprice against another verified buyer or reject the parcel",
+                    ],
+                    [
+                        "Absentee-owner trigger mining prioritizes documented holding friction",
+                        "Combine owner mailing separation with tenure and verified authority",
+                        "$1,500 campaign divided by one acquisition equals sourcing cost",
+                        "Use respectful mail only when digital contact eligibility fails",
+                    ],
+                    [
+                        "Stale-listing re-underwriting corrects measurable information or presentation gaps",
+                        "Compare listing claims against recorder, utility, and zoning evidence",
+                        "$70,000 proceeds less $45,000 purchase and $10,000 costs",
+                        "Require broker coordination and retain an unchanged-use exit",
+                    ],
+                    [
+                        "Adjacent-owner assembly purchases independently defensible parcels with synergy",
+                        "Confirm both sellers, boundary geometry, and buyer assembly value",
+                        "$100,000 proceeds less $70,000 purchases and $14,000 costs",
+                        "Use simultaneous conditional closings or abandon dependent acquisitions",
+                    ],
+                    [
+                        "Minor-subdivision feasibility prices only documented potential lot creation",
+                        "Obtain local process requirements and surveyor infrastructure assumptions",
+                        "$180,000 proceeds less $100,000 purchase and $40,000 costs",
+                        "Preserve a viable whole-parcel exit or decline acquisition",
+                    ],
+                    [
+                        "tcpa_litigator_scrub_honeypot_arbitrage operates only as defensive contact screening",
+                        "Verify lawful docket provenance alongside consent and suppression records",
+                        "A $300 batch across 300 records costs $1 each",
+                        "Disable uncertain enrichment and require authoritative contact eligibility",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Find the missing fact that a real buyer will pay for",
+                "body": (
+                    "Veteran land operators earn an information advantage by resolving specific "
+                    "uncertainties, not by describing every unbuilt parcel as undervalued."
+                ),
+                "items": [
+                    "Ask the utility provider for a parcel-specific written service response; a nearby main does not establish capacity, connection rights, or installed cost.",
+                    "Compare recorded deeds with assessor acreage before mailing; separate tax parcel numbers can still describe interests that cannot be conveyed independently.",
+                    "Ask builders which recently rejected lots nearly qualified, then source the missing frontage, sewer availability, or price characteristic.",
+                    "Request the recorder instrument establishing access before ordering attractive listing photography; a visible road is not evidence of a transferable easement.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Build a parcel evidence file and reject defects before bidding",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Construct the lead file around county identifier, parcel identifier, recorded owner, "
+                    "legal description reference, mailing address, source date, and primary sourcing "
+                    "thesis. Deduplicate by ownership group as well as parcel because one owner "
+                    "with twelve parcels should not receive twelve introductions. Preserve original "
+                    "exports and normalize copies; assessor updates can lag deeds, and GIS outlines "
+                    "are not boundary surveys. Join parcels to FEMA flood layers, National Wetlands "
+                    "Inventory screening, road centerlines, slope data, and available utility service "
+                    "areas. Treat every overlay as triage, not a conclusive buildability opinion. "
+                    "FEMA mapping does not resolve local drainage, and an unmapped wetland can "
+                    "still require investigation. Track the layer date and coordinate reference "
+                    "system to prevent shifted polygons from creating false access or flood "
+                    "conclusions. Request title work early on the best prospects, including vesting, "
+                    "taxes, recorded easements, restrictions, and exceptions. A title commitment "
+                    "does not establish zoning compliance or erase an excluded access defect. "
+                    "Commission a survey when boundary location, frontage, encroachment, or a split "
+                    "drives value. Give each unresolved item a named professional, expected cost, "
+                    "and contractual deadline rather than a reassuring color in the dashboard. "
+                    "Keep seller statements distinguishable from independently obtained evidence throughout."
+                ),
+                (
+                    "Score qualified parcels out of one hundred using buyer fit worth twenty-five "
+                    "points, legal access twenty, utility and buildability evidence twenty, conservative "
+                    "price spread twenty, and seller authority plus timing fifteen. Award full "
+                    "points only for documented evidence; assertions receive partial credit under "
+                    "a written rubric. A score of eighty is a review threshold, not permission "
+                    "to overlook a fatal defect. Unresolved legal access, disputed ownership, or "
+                    "environmental exposure beyond the team's capability stops the acquisition "
+                    "regardless of total. Distinguish physical access, recorded access rights, "
+                    "maintenance obligations, and lender or buyer acceptance. Ask the planning "
+                    "department about permitted uses, setbacks, minimum lot dimensions, legal "
+                    "nonconforming status, and subdivision procedures using the actual parcel "
+                    "and proposed use. Obtain a written response where available, while recognizing "
+                    "that staff correspondence is not a permit. Under CERCLA, 42 U.S.C. "
+                    "9607, ownership can carry environmental liability; where a liability defense "
+                    "is being evaluated, investigate the applicable elements and all-appropriate-inquiries "
+                    "requirements under 40 CFR Part 312 before purchase. A desktop map is "
+                    "not that inquiry. Use a qualified environmental professional for relevant "
+                    "historical industrial, dumping, storage, or agricultural chemical concerns. "
+                    "Price uncertainty only when its possible loss is bounded and supportable."
+                ),
+                (
+                    "Run price discovery as an evidence sequence rather than an argument with "
+                    "the owner. Establish three comparable closed sales, adjust explicitly for "
+                    "utilities and usable acreage, then test the proposed exit with two buyers. "
+                    "Keep listed prices in a separate field because exposure without closing "
+                    "is evidence of competition, not realized value. For an $85,000 expected "
+                    "sale, test a fifteen-percent price reduction to $72,250. With a $50,000 "
+                    "purchase and $15,000 other direct costs, contribution falls from $20,000 "
+                    "to $7,250 before shared overhead; a modest surprise can consume the "
+                    "remaining cushion. Then add six months of incremental taxes, interest, "
+                    "insurance, and maintenance using actual quotes. If combined downside is "
+                    "unacceptable, reduce the offer or secure a contract structure that permits "
+                    "investigation before committing the acquisition balance. Have local counsel "
+                    "prepare or review feasibility, title-objection, extension, and deposit provisions "
+                    "for the jurisdiction. Minor subdivisions require the actual state and local "
+                    "process; for example, California Government Code Section 66424 supplies a "
+                    "subdivision definition, not automatic permission to split. Do not advertise "
+                    "future lots as separately saleable before the required approvals and recording "
+                    "are complete. Retain the evidence supporting each advertised property claim."
+                ),
+            ],
+            "table": {
+                "caption": "Parcel Qualification Matrix: Evidence, Scoring, and Acquisition Stops",
+                "headers": [
+                    "Qualification dimension and maximum available points",
+                    "Evidence needed for a defensible assessment",
+                    "Practical verification action and accountable professional",
+                    "Condition requiring rejection or additional investigation",
+                ],
+                "rows": [
+                    [
+                        "Buyer fit contributes twenty-five points toward parcel qualification",
+                        "Two buyers confirm dimensions, location, funding, and purchase range",
+                        "Acquisitions lead records dated requirements and comparable transactions",
+                        "Only speculative buyers exist or requirements contradict parcel facts",
+                    ],
+                    [
+                        "Legal access contributes twenty points but remains independently decisive",
+                        "Recorded access instruments connect the parcel to lawful ingress",
+                        "Title professional and surveyor examine exceptions and physical alignment",
+                        "Visible road lacks enforceable rights acceptable to intended buyers",
+                    ],
+                    [
+                        "Utilities and buildability contribute twenty documented qualification points",
+                        "Provider responses and local rules support the intended use",
+                        "Planner and utility contacts identify capacity and improvement requirements",
+                        "Connection costs or use restrictions defeat supported exit economics",
+                    ],
+                    [
+                        "Conservative spread contributes twenty points after full direct costs",
+                        "Closed comparables support price after documented condition adjustments",
+                        "Operator stress-tests price, holding period, and quoted transaction expenses",
+                        "Combined downside consumes the approved acquisition risk budget",
+                    ],
+                    [
+                        "Seller authority and timing contribute fifteen documented qualification points",
+                        "Vesting records align with authorized signers and realistic deadlines",
+                        "Closing counsel verifies entity, estate, trust, or individual authority",
+                        "Unresolved ownership dispute prevents a reliable conveyance pathway",
+                    ],
+                    [
+                        "Environmental history remains a separate acquisition stop assessment",
+                        "Historical use and professional findings address material contamination concerns",
+                        "Qualified environmental professional scopes investigation before contractual deadlines",
+                        "Potential liability exceeds expertise, available capital, or acceptable exposure",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four verifications before acquisition funds become committed",
+                "body": (
+                    "A high score prioritizes work. These independent checks determine whether "
+                    "the parcel can proceed under the approved purchase structure."
+                ),
+                "items": [
+                    "Verify recorded seller authority, the legal description, conveyable interests, and a title-insurance path with material exceptions reviewed.",
+                    "Verify enforceable access, survey-dependent dimensions, utility assumptions, and the permitted use supporting the proposed exit.",
+                    "Verify environmental investigation scope and completion timing; do not substitute GIS screening for required professional inquiry.",
+                    "Verify cash availability, downside pricing, carrying reserves, deposit exposure, and every contractual diligence deadline before releasing funds.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run consent-aware outreach with measurable conversion and direct answers",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build a channel-specific contact record before outreach. Record how an address, "
+                    "email, or number was obtained, the intended message, consent evidence where "
+                    "required, suppression status, and any revocation. A public tax record does "
+                    "not establish permission for automated calls or texts. Have counsel classify "
+                    "the actual campaign under 47 U.S.C. 227, 47 CFR 64.1200, applicable "
+                    "state calling laws, and the Telemarketing Sales Rule when applicable; offers "
+                    "to buy property should not be assumed categorically included or excluded "
+                    "from every solicitation rule. Where National Do Not Call requirements apply, "
+                    "use registry data obtained within the applicable thirty-one-day interval, "
+                    "maintain entity-specific suppression, and honor applicable contact-hour rules. "
+                    "Implement the mapped docket-screening play through lawful public docket access "
+                    "or a licensed provider, respecting access restrictions and data terms. Store "
+                    "source and match confidence, restrict access, and send ambiguous matches "
+                    "to review. Plaintiff matching neither authorizes contact nor replaces TCPA "
+                    "requirements. Its useful outcome is reducing mistaken or disputed outreach, "
+                    "not identifying people whose rights can be ignored. If enrichment is "
+                    "uncertain, disable it and require independently verified consent plus authoritative "
+                    "suppression checks before using a channel requiring those controls. Never "
+                    "resell docket-derived identities as a prospect list."
+                ),
+                (
+                    "Use a restrained twenty-eight-day cadence with eligibility checked before every "
+                    "touch. Day one is a personalized postal letter identifying the actual "
+                    "purchaser, parcel, and reason for interest without a fabricated government "
+                    "appearance. Day eight is one follow-up by a separately eligible channel, "
+                    "or postal mail if electronic eligibility is absent. Day eighteen answers "
+                    "one parcel-specific issue, such as purchase timing or responsibility for "
+                    "survey costs. Day twenty-eight closes the sequence politely; silence moves "
+                    "the owner into a cooling period, not an escalating dialer campaign. "
+                    "Inbound pages should collect parcel identifiers, preferred contact methods, "
+                    "and clear channel-specific permission when needed, without preselected choices. "
+                    "Commercial email must meet applicable CAN-SPAM requirements, including truthful "
+                    "headers and working opt-out handling. Process revocations promptly across "
+                    "connected systems and stop incompatible outreach rather than changing vendors. "
+                    "For the screening play, a $300 review cost across 300 records equals "
+                    "$1 per record; ten hours saved at $40 per hour creates $100 "
+                    "of illustrative operating benefit after that charge. This is a cost "
+                    "comparison, not recognized parcel revenue or proof of legal eligibility. "
+                    "Only offer screening to another operator under a separately scoped service "
+                    "with validated data rights, measurable controls, and independently priced delivery."
+                ),
+                (
+                    "Measure unique owners through the entire conversion chain. An illustrative cohort "
+                    "of 3,000 mailed owners yields 120 substantive replies, forty-two qualified "
+                    "conversations, twenty-one written offers, four signed purchase agreements, and "
+                    "three completed acquisitions. Those planning assumptions imply four-percent response, "
+                    "thirty-five-percent qualification of replies, fifty-percent offer conversion, roughly "
+                    "nineteen-percent offer acceptance, and seventy-five-percent contract completion. They "
+                    "are hypotheses to replace with cohort results, not market benchmarks presented "
+                    "as established facts. At $0.85 per initial letter, $2,550 buys the "
+                    "first touch; add follow-ups, research, labor, and screening before computing "
+                    "cost per acquisition. Approximately 10,000 similar owners could support ten "
+                    "acquisitions at that modeled rate, but capacity and buyer absorption must "
+                    "justify expansion. Answer objections with evidence: for 'your price is low,' "
+                    "show the actual condition-adjusted comparable and cash timeline; for 'my "
+                    "neighbor sold for more,' distinguish installed improvements and closing dates; "
+                    "for 'I will not sign online,' offer the closing office's supported "
+                    "paper process. When an owner says stop, suppress rather than rebut. "
+                    "Track signed acquisitions separately from buyer contracts and completed resales "
+                    "so three purchased parcels never masquerade as three realized profit wins. "
+                    "Review objections weekly to improve underwriting, not simply pressure reluctant owners."
+                ),
+            ],
+            "table": {
+                "caption": "Owner Contact Cadence, Objection Responses, and Conversion Evidence",
+                "headers": [
+                    "Channel or objection requiring operator action",
+                    "Specific message or response to deliver",
+                    "Evidence recorded for conversion and control",
+                    "Stop condition or next permitted action",
+                ],
+                "rows": [
+                    [
+                        "Day-one postal introduction to a verified ownership group",
+                        "Identify purchaser, parcel, purchase interest, and realistic response options",
+                        "Record mailing date, address source, campaign cost, and cohort",
+                        "Suppress returned addresses until ownership and delivery details resolve",
+                    ],
+                    [
+                        "Day-eight follow-up through an independently eligible contact channel",
+                        "Ask whether sale timing or parcel questions deserve discussion",
+                        "Retain channel eligibility, suppression checks, and actual response outcome",
+                        "Use postal mail when electronic contact requirements remain unresolved",
+                    ],
+                    [
+                        "Day-eighteen clarification addressing one documented parcel-specific transaction issue",
+                        "Explain responsibility for survey costs and proposed closing timing",
+                        "Record the owner's concern and supporting transaction assumptions",
+                        "Stop incompatible outreach immediately when the owner revokes permission",
+                    ],
+                    [
+                        "Day-twenty-eight final message ending the current outreach sequence",
+                        "Provide a direct reply option without pressure or urgency",
+                        "Close campaign status and preserve preferences across connected systems",
+                        "Resume only under a justified policy respecting suppression instructions",
+                    ],
+                    [
+                        "Price objection comparing the offer with neighboring property sales",
+                        "Separate installed infrastructure, usable acreage, and verified closing dates",
+                        "Attach relevant comparable evidence and revised cost assumptions",
+                        "Increase price only when documented economics support the change",
+                    ],
+                    [
+                        "Signing objection involving online documents or unfamiliar closing arrangements",
+                        "Offer the closing office's supported identity and paper-signing process",
+                        "Document authorized signers and independently verified closing-office contact details",
+                        "Decline payment redirection until the closing office independently confirms",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Assemble a verified owner cohort",
+                    "action": "Select 300 ownership groups matching two documented buyer buy boxes.",
+                    "detail": (
+                        "Preserve source exports, deduplicate related parcels, verify ownership, "
+                        "and remove parcels failing initial access or buildability screens."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Establish channel eligibility",
+                    "action": "Check source rights, applicable consent, suppression, and message classification.",
+                    "detail": (
+                        "Use lawful docket signals only as supplementary risk review; uncertain "
+                        "enrichment stays disabled and never supplies contact permission."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Execute and classify the cadence",
+                    "action": "Run the four-touch sequence while recording replies and stopping on revocation.",
+                    "detail": (
+                        "Separate delivery failures, refusals, future sellers, qualified discussions, "
+                        "written offers, and signed agreements using dated CRM events."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile acquisitions with actual resales",
+                    "action": "Track each signed purchase through diligence, closing, disposition, and collected proceeds.",
+                    "detail": (
+                        "Calculate acquisition cost from all cohort expenses and report realized "
+                        "parcel contribution separately from allocated annual owner profit."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "4. Land the first three to ten wins without breaking the scorecard",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Stage execution across three to twelve months according to diligence and local "
+                    "liquidity, not the calendar alone. During month one, finish buyer interviews, "
+                    "choose two parcel classes, engage a title or closing provider, and test "
+                    "300 ownership groups. During months two and three, expand only the "
+                    "cohort producing qualified conversations, order targeted studies, and negotiate "
+                    "purchase agreements with realistic investigation periods. Months three through "
+                    "six should emphasize the first clean closings and buyer-facing evidence "
+                    "packages: legal description, survey when available, access documents, utility "
+                    "responses, zoning facts, taxes, restrictions, and factual photographs. Months "
+                    "six through twelve extend the proven thesis rather than adding distant "
+                    "counties and unfamiliar entitlement work simultaneously. A signed seller "
+                    "agreement is a sourcing milestone, a purchase closing is an inventory "
+                    "event, and a completed resale is the revenue event for this operating "
+                    "scorecard. Use a licensed broker where appropriate for dispositions and "
+                    "review licensing requirements before representing other owners, negotiating "
+                    "for others, or marketing interests beyond owned property. Keep brokerage "
+                    "fees, referral arrangements, and settlement-provider selection explicit. Where "
+                    "a transaction falls within RESPA, 12 U.S.C. 2607 restricts settlement-service "
+                    "kickbacks; do not assume every raw-land transaction has identical coverage. "
+                    "Avoid volume-based expansion until the first resale validates the cost model."
+                ),
+                (
+                    "Reconcile every annual plan to the canonical scorecard. Conservative revenue is "
+                    "$200,000 in gross parcel sale proceeds, with $176,000 total modeled "
+                    "costs and $24,000 owner net profit at twelve percent. Base revenue "
+                    "is $850,000, costs are $692,750, and owner net profit is $157,250 "
+                    "at eighteen-point-five percent. Scaled revenue is $1,500,000, costs are "
+                    "$1,125,000, and owner net profit is $375,000 at twenty-five percent. "
+                    "Illustrative transaction counts of four sales averaging $50,000, ten averaging "
+                    "$85,000, and fifteen averaging $100,000 reproduce those revenue totals; "
+                    "they are not additional scorecard assumptions about required volume. Total "
+                    "costs must encompass acquisition basis, transaction expenses, diligence, carrying "
+                    "costs, marketing, contractors, and applicable operating overhead without double "
+                    "counting. Conservative and Base use one full-time person plus three "
+                    "contractors; Scaled uses two full-time people plus four contractors. Do "
+                    "not convert those contractor counts into unsupported full-time payroll assumptions. "
+                    "No screening-service receipts are added to these parcel-sale cases. The "
+                    "first three to ten wins are an execution objective, whereas fifteen "
+                    "sales illustrate a later scaled annual run rate. Unsold inventory, "
+                    "buyer inquiries, refundable deposits, and hypothetical subdivision value are "
+                    "not completed-sale revenue in this operating reconciliation."
+                ),
+                (
+                    "Protect liquidity with a rolling thirteen-week cash forecast that separates "
+                    "contract deposits, diligence commitments, purchase balances, carrying reserves, and "
+                    "expected resale receipts. The canonical startup capital range is $50,000 "
+                    "to $400,000, while monthly operating expense ranges from $3,000 to "
+                    "$15,000; parcel acquisition capital is a separate deployment requirement "
+                    "rather than routine monthly overhead. At the low end, a $50,000 "
+                    "purchase can exhaust available capital before title fees or reserves, "
+                    "so pursue a smaller parcel, obtain clearly priced authorized funding, "
+                    "or wait. Three concurrent $50,000 acquisitions plus $5,000 diligence "
+                    "per parcel and $30,000 reserves require $195,000 cash before disposition "
+                    "receipts. Compare that commitment with actual available funds, not a "
+                    "broker's estimate of future sales. Hold a weekly review covering "
+                    "qualified-owner cost, offer acceptance, contract fall-through, days in inventory, "
+                    "price reductions, and realized contribution after allocated costs. Stop a "
+                    "campaign if the acquisition cost exceeds the written budget or the "
+                    "buyer thesis fails; do not compensate by relaxing access standards. "
+                    "Increase cohort size only after documented closings show that title "
+                    "work, buyer absorption, and contractor capacity keep pace. Reliable first "
+                    "wins come from repeatable evidence and controlled exposure, not maximum "
+                    "letters sent. Preserve enough liquidity to refuse the next weak parcel."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Annual Reconciliation and First-Win Capital Controls",
+                "headers": [
+                    "Scenario or operating control being reconciled",
+                    "Revenue basis or explicit cash requirement",
+                    "Cost and profit calculation requiring reconciliation",
+                    "Staffing or decision rule supporting execution",
+                ],
+                "rows": [
+                    [
+                        "Conservative canonical annual case with acquisition costs included",
+                        "$200,000 gross proceeds; illustrative four sales averaging $50,000",
+                        "$176,000 total costs leave $24,000 profit at 12%",
+                        "One full-time person plus three contractors supports this case",
+                    ],
+                    [
+                        "Base canonical annual case with acquisition costs included",
+                        "$850,000 gross proceeds; illustrative ten sales averaging $85,000",
+                        "$692,750 total costs leave $157,250 profit at 18.5%",
+                        "One full-time person plus three contractors supports this case",
+                    ],
+                    [
+                        "Scaled canonical annual case with acquisition costs included",
+                        "$1,500,000 gross proceeds; illustrative fifteen sales averaging $100,000",
+                        "$1,125,000 total costs leave $375,000 profit at 25%",
+                        "Two full-time people plus four contractors total six people",
+                    ],
+                    [
+                        "Three concurrent parcel purchases require a dedicated liquidity check",
+                        "$150,000 acquisitions plus $15,000 diligence and $30,000 reserves",
+                        "$195,000 cash requirement precedes any assumed resale receipts",
+                        "Reduce simultaneous purchases when available funds cannot cover commitments",
+                    ],
+                    [
+                        "Initial owner cohort measures sourcing rather than realized revenue",
+                        "3,000 owners produce three illustrative acquisitions before any resales",
+                        "$2,550 initial postage budget excludes research and follow-up costs",
+                        "Replace planning conversion assumptions with observed dated cohort outcomes",
+                    ],
+                    [
+                        "First three to ten wins remain distinct from annual scaling",
+                        "Count completed resales separately from purchases and signed agreements",
+                        "Allocate failed diligence and unsuccessful campaigns into actual costs",
+                        "Expand only after liquidity and buyer absorption support repetition",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "Buy the parcel whose access, buyer, and downside you can prove, not the discount you can advertise."
+    ),
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Interview fifteen active land buyers and document two parcel-specific buy boxes supported by actual closed transactions.",
+        "Build a deduplicated 300-owner pilot with recorder references, GIS screening dates, primary sourcing theses, and explicit fallback exits.",
+        "Apply the one-hundred-point qualification rubric while treating unresolved access, seller authority, and material environmental exposure as independent stops.",
+        "Configure channel-specific eligibility, authoritative suppression, revocation handling, and lawful supplementary docket review before any electronic outreach.",
+        "Run the twenty-eight-day cadence and report unique-owner conversion through replies, qualified discussions, offers, contracts, acquisitions, and completed resales.",
+        "Reconcile the thirteen-week cash forecast and annual parcel-sale ledger to the exact Conservative, Base, and Scaled revenue, cost, profit, and staffing cases.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Evaluate the actual calling or texting technology, message, recipient, and "
+                "applicable consent requirements before deploying owner outreach."
+            ),
+        },
+        {
+            "title": "47 CFR 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": (
+                "Implement applicable calling restrictions, do-not-call procedures, consent controls, "
+                "and revocation handling; supplementary docket matching supplies no contact authority."
+            ),
+        },
+        {
+            "title": "16 CFR 310.4 — Abusive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
+            "relevance": (
+                "Assess campaign coverage and apply relevant calling-hour, suppression, and "
+                "National Do Not Call requirements, including applicable registry refresh conditions."
+            ),
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Structure covered commercial email with accurate transmission information, required "
+                "sender identification, and functioning opt-out processing."
+            ),
+        },
+        {
+            "title": "42 U.S.C. 9607 — CERCLA liability",
+            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
+            "relevance": (
+                "Evaluate potential owner liability and the elements of any relevant defense "
+                "before acquiring parcels with concerning environmental histories."
+            ),
+        },
+        {
+            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
+            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
+            "relevance": (
+                "Scope and time professional environmental inquiry where required for the "
+                "liability protections being evaluated; desktop parcel screening is insufficient."
+            ),
+        },
+        {
+            "title": "California Government Code Section 66424 — Subdivision definition",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=66424.",
+            "relevance": (
+                "Recognize that proposed parcel divisions can fall within the Subdivision Map "
+                "Act and require the applicable state and local approval process."
+            ),
+        },
+        {
+            "title": "12 U.S.C. 2607 — Prohibition against kickbacks and unearned fees",
+            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
+            "relevance": (
+                "Review settlement-provider referral arrangements for transactions within RESPA "
+                "coverage rather than assuming uniform treatment across all land purchases."
+            ),
+        },
+    ],
+}

@@ -1,0 +1,647 @@
+from __future__ import annotations
+
+CHAPTER_1 = {
+    "id": "Q1",
+    "chapter_id": "Q1",
+    "chapter_number": 1,
+    "question_number": 1,
+    "slug": "what-exactly-is-land-flipping",
+    "question_prompt": "What exactly is land flipping, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
+    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+    "title": "What Exactly Is Land Flipping?",
+    "subtitle": "Vacant-Land Inventory, GIS Underwriting, Recorded Easements, Minor Subdivisions, and Title-Insured Exits",
+    "layout_template": "opportunity_overview",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Land flipping turns purchased parcel inventory into completed sales, not paper appreciation or client transaction volume. "
+        "Candidate #6 ranks #18 with a Money-to-Manpower Score of 72/100: a disciplined specialist play requiring patient capital "
+        "and parcel-level evidence. This chapter maps six plays: access-easement assemblage, rural cash resale, buildable infill, "
+        "adjoining-owner assemblage, minor subdivision, and title-cleanup resale. Canonical annual owner profits are $24,000 "
+        "Conservative, $157,250 Base, and $375,000 Scaled. Gross parcel sale proceeds are revenue; acquisition costs remain "
+        "inside the net-margin calculation. Durable operators convert title, access, zoning, survey, and buyer research into "
+        "repeatable decisions. Fragile operators mistake cheap acreage, automated valuations, and advertised roads for transferable "
+        "land with a verified buyer."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$200,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin.",
+            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C.",
+        },
+        {
+            "label": "Base",
+            "value": "$850,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin.",
+            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,500,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin.",
+            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define the inventory business before buying a discount",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Land flipping is the purchase and resale of real property held as trading inventory, usually without constructing "
+                    "a building. The operator earns a spread by buying below a supportable exit price, resolving a specific impediment, "
+                    "or packaging a parcel for a better matched buyer. Vacant rural acreage, urban infill, surplus strips, and small "
+                    "approved divisions are different products, not interchangeable acreage. A tract suitable for recreation may have "
+                    "little value to a homebuilder if it lacks wastewater capacity, practical access, or a usable building envelope. "
+                    "The transaction starts with a documented acquisition thesis and ends with a completed disposition, not an accepted "
+                    "offer or an attractive listing. County GIS, QGIS, Regrid, and assessor records identify candidates; recorded "
+                    "instruments, field evidence, and buyer interviews establish whether those candidates deserve capital. The five "
+                    "archetypes below describe operating postures, while the six plays in the next section describe transaction "
+                    "mechanics. A solo principal can use several mechanics, but should initially standardize one county, one parcel "
+                    "type, and one buyer segment. Every deviation introduces another pricing model, diligence checklist, and sales "
+                    "cycle. Cheap land becomes inventory only when the operator can explain who buys it, what that buyer can do "
+                    "with it, and which documents support those claims."
+                ),
+                (
+                    "Revenue follows the operator's actual role. When the business acquires and controls a parcel as principal, "
+                    "gross parcel sale proceeds are the scorecard revenue basis; acquisition cost is an inventory cost that enters "
+                    "the profit calculation when the parcel sells. A $40,000 sale of land purchased for $22,000 creates $40,000 "
+                    "of gross sale revenue, not $18,000 of revenue. The $18,000 difference is merely the starting spread before "
+                    "closing, diligence, holding, selling, and overhead costs. For ordinary land inventory, the accounting policy "
+                    "should address ASC 606 contract criteria, transfer of control, collectibility, and any remaining obligations; "
+                    "the date money reaches escrow alone does not settle recognition. A refundable buyer deposit is a liability, "
+                    "and an unsold parcel is not revenue. If the operator only markets another owner's $400,000 property for an "
+                    "earned $20,000 service fee, the relevant operator revenue is that fee, subject to the applicable accounting "
+                    "and licensing treatment. The owner's sale price is underlying client transaction volume. Similarly, a "
+                    "contract assignment requires analysis of the assigned rights and the actual fee earned, rather than automatic "
+                    "recognition of the entire parcel price. Seller-credit collections also require separating principal recovery "
+                    "from interest, without recording the original sale repeatedly."
+                ),
+                (
+                    "A durable moat is a better evidence loop, not a mailing template. Maintain parcel identifiers across assessor "
+                    "exports, recorder searches, CRM records, title files, and sale outcomes; county identifiers can change after "
+                    "splits, so preserve instrument references and parent-child relationships. Record why offers failed and why "
+                    "buyers withdrew. That history produces a county-specific map of septic failures, seasonal access problems, "
+                    "utility extension costs, and misleading comparable sales. Airtable or a carefully controlled spreadsheet can "
+                    "hold the workflow, while QGIS supplies reproducible spatial screening and saved overlays. Neither replaces "
+                    "a surveyor's boundary work or a title examiner's interpretation of recorded interests. The scorecard's 72 "
+                    "points comprise revenue potential 21, profit-margin potential 18, team efficiency 17, startup accessibility "
+                    "6, and automation potential 10. Those numbers describe a disciplined specialist business rather than "
+                    "effortless passive income. The working envelope is $50,000 to $400,000 of startup capital, $3,000 to "
+                    "$15,000 of monthly operating expense, and three to twelve months to the first deal. Budget that runway "
+                    "before assuming inventory turnover. One principal coordinates specialist capacity; contractors still require "
+                    "scheduling, review, and payment. Automation improves parcel screening and comparable-sale tracking most "
+                    "reliably when humans resolve exceptions before any purchase commitment."
+                ),
+            ],
+            "table": {
+                "caption": "Five Land-Flipping Operator Archetypes and Their Evidence-Based Advantages",
+                "headers": [
+                    "Operator archetype and target inventory",
+                    "Revenue mechanic and buyer proposition",
+                    "Repeatable evidence advantage to build",
+                    "Capital-loss mechanism to control",
+                ],
+                "rows": [
+                    [
+                        "Rural inventory merchant buying small recreational acreage",
+                        "Resell owned parcels for gross cash sale proceeds",
+                        "Maintain verified access routes and local recreational comparables",
+                        "Illiquid acreage consumes carrying cash beyond planned seasons",
+                    ],
+                    [
+                        "Infill specialist sourcing existing lots near established services",
+                        "Sell buildable inventory to builders with documented specifications",
+                        "Archive setbacks, service quotations, and builder purchase criteria",
+                        "Utility extensions eliminate spreads despite attractive neighborhood prices",
+                    ],
+                    [
+                        "Access and assemblage specialist coordinating voluntary neighboring transactions",
+                        "Sell improved owned property or separately contracted access services",
+                        "Connect surveyed geometry with recorded rights and cooperative owners",
+                        "Recorded restrictions prevent the intended transferable access improvement",
+                    ],
+                    [
+                        "Minor subdivision operator dividing suitable parent parcel inventory",
+                        "Sell approved child parcels after allocated acquisition costs",
+                        "Standardize survey, infrastructure, recording, and local review sequencing",
+                        "Required road improvements exceed combined child parcel value",
+                    ],
+                    [
+                        "Title-resolution specialist purchasing curable distressed ownership situations",
+                        "Resell owned inventory after documented ownership defects resolve",
+                        "Develop responsive title, probate, and recording specialist relationships",
+                        "Unresolved heirs or superior liens prevent insurable conveyance",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy the missing evidence before buying the land",
+                "body": (
+                    "Experienced operators spend small amounts on decisive facts before committing large amounts to inventory."
+                ),
+                "items": [
+                    "Ask the title company which recorded easement instrument benefits the exact parcel, then obtain that instrument rather than accepting a GIS road overlay.",
+                    "Give three active local builders the same dimensioned infill sketch and record their maximum acquisition prices with utility assumptions attached.",
+                    "Inspect rural access after meaningful rainfall when possible; record culvert condition, maintenance responsibility, and the location of every locked crossing.",
+                    "Track rejected parcels alongside purchased parcels so automated screening learns from septic, access, and title failures instead of only successful exits.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Map six plays to unit economics and reversible commitments",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The first mapped play is gis_landlocked_parcel_easement_assemblage: combine GIS geometry with recorded rights "
+                    "to identify overlooked strips and negotiate voluntary access improvements. A mapped road is not proof of "
+                    "legal access, and ownership of a narrow strip is not permission to obstruct an existing right. For an "
+                    "illustrative option, pay $1,000 credited toward an $8,000 purchase, then budget $4,000 for survey and "
+                    "recording work plus $3,000 for closing and selling. A $24,000 disposition leaves $9,000 before annual "
+                    "overhead and tax treatment; the option payment is not counted twice. Obtain agreement on easement scope, "
+                    "benefited land, maintenance, and transferability before exercise. If rights cannot be documented, exercise "
+                    "available diligence contingencies and offer survey-backed voluntary access services under a separate, permitted "
+                    "service arrangement instead. The second play, rural cash resale, might purchase at $12,000, spend $2,000 "
+                    "on diligence and closing, incur $1,000 holding cost and $3,000 selling cost, then sell for $25,000: "
+                    "$7,000 contribution before overhead. Its fallback is a prepriced neighboring-owner exit, not an assumption "
+                    "that advertising will manufacture demand. Both examples are transaction illustrations, not extra scorecard "
+                    "forecasts. Options must expressly address diligence access, expiration, extension pricing, and which payments "
+                    "remain at risk if the operator walks away."
+                ),
+                (
+                    "The third play, buildable infill resale, sells certainty about a usable lot rather than generic urban "
+                    "acreage. Illustratively, $45,000 acquisition plus $7,000 for survey, service verification, and closing, "
+                    "$3,000 holding expense, and $5,000 selling expense creates a $60,000 cost basis for contribution "
+                    "analysis. An $80,000 exit leaves $20,000 before overhead. A water main across the street does not "
+                    "establish an affordable connection; obtain the serving utility's written capacity and extension response. "
+                    "If the building envelope fails, terminate under the applicable contingency or offer a documented side-yard "
+                    "use at a price that still meets the revised purchase ceiling. The fourth play, adjoining-owner assemblage, "
+                    "combines consenting ownership interests into a parcel a specific buyer can use. Two $15,000 acquisitions "
+                    "plus $6,000 of legal, survey, and closing work and $4,000 of carrying and selling costs total "
+                    "$40,000; a $55,000 disposition leaves $15,000 contribution. Tie acquisition timing to both owners' "
+                    "performance so one failed closing does not strand an unusable fragment. If assembly fails, release "
+                    "unexercised options or retain only a parcel whose independent exit was underwritten. Never treat a "
+                    "prospective neighbor's interest as contracted demand. Obtain the buyer's actual dimensional requirements "
+                    "and distinguish a boundary adjustment from a subdivision requiring separate local review."
+                ),
+                (
+                    "The fifth play, minor subdivision, creates saleable child parcels through the jurisdiction's actual land "
+                    "division process. Assume a $90,000 parent acquisition, $30,000 of survey, review, access, and site work, "
+                    "and $20,000 of holding, closing, and selling expense. Four completed sales at $45,000 produce "
+                    "$180,000 of gross proceeds and $40,000 contribution before overhead. Allocate parent cost and shared "
+                    "improvements across children using a documented method; selling the first child does not erase the remaining "
+                    "inventory's cost. The fallback is an independently priced whole-tract disposition or termination before "
+                    "acquisition if required improvements defeat the economics. The sixth play, title-cleanup resale, might "
+                    "combine a $20,000 acquisition with $8,000 of counsel, curative instruments, title, and closing expense "
+                    "plus $4,000 carrying and selling expense. A $45,000 exit leaves $13,000 contribution. Require the "
+                    "title company to identify acceptable curative evidence before purchase; a quiet-title action has uncertain "
+                    "duration and cannot be treated as routine paperwork. If the defect cannot be resolved within the "
+                    "contract's deadlines, use the contingency rather than pass the defect silently to a retail buyer. Across "
+                    "all six plays, the comparison matrix identifies real sourcing channels and fee mechanics without assuming "
+                    "that any platform verifies buildability, title, or the operator's projected exit."
+                ),
+            ],
+            "table": {
+                "caption": "Sixteen Land Sub-Verticals: Named Channels, Fee Mechanics, Moats, and Failure Triggers",
+                "headers": [
+                    "Sub-vertical and named operating channel",
+                    "Actual fee structure to underwrite",
+                    "Evidence moat that supports the spread",
+                    "Clawback, cancellation, or capital-loss trigger",
+                ],
+                "rows": [
+                    [
+                        "Landlocked access strips screened through QGIS and Regrid",
+                        "QGIS has no license charge; Regrid subscriptions vary",
+                        "Link surveyed strips to recorded transferable access rights",
+                        "Unrecorded permission disappears when the neighboring owner sells",
+                    ],
+                    [
+                        "Rural recreational acreage marketed through LandWatch listing packages",
+                        "Budget contracted advertising charges plus negotiated closing costs",
+                        "Verify seasonal access and comparable completed recreational purchases",
+                        "Buyer terminates after discovering impassable wet-season road conditions",
+                    ],
+                    [
+                        "Desert recreational parcels researched with county GIS portals",
+                        "Public map access may be free; document copies vary",
+                        "Confirm physical access, water strategy, and actual buyer depth",
+                        "Listed dirt tracks cross private land without enforceable rights",
+                    ],
+                    [
+                        "Urban infill lots sourced through local MLS participants",
+                        "Broker compensation and MLS access follow negotiated arrangements",
+                        "Match builder dimensions with setbacks and utility capacity",
+                        "Utility connection quotation exceeds the buyer's residual land budget",
+                    ],
+                    [
+                        "Builder-ready lots marketed through Zillow and local brokers",
+                        "Listing access and broker compensation depend on selected channel",
+                        "Package survey evidence with written builder acquisition criteria",
+                        "Advertised buildability fails when required setbacks are applied",
+                    ],
+                    [
+                        "Voluntary side-yard assemblages researched using county recorder systems",
+                        "Pay document retrieval, survey, recording, and negotiated closing charges",
+                        "Obtain neighbor demand before purchasing independently weak fragments",
+                        "Required owner refuses conveyance after another fragment closes",
+                    ],
+                    [
+                        "Minor residential splits designed with QGIS and licensed surveyors",
+                        "Budget survey proposals, application charges, and required infrastructure",
+                        "Repeat local plat sequencing across comparable parent tract types",
+                        "Road dedication or drainage conditions erase child parcel spreads",
+                    ],
+                    [
+                        "Small commercial pads advertised through LoopNet listing products",
+                        "Advertising packages and broker compensation require current written quotations",
+                        "Document access permits, utility capacity, and purchaser site criteria",
+                        "Driveway permit denial defeats the intended commercial circulation plan",
+                    ],
+                    [
+                        "Industrial infill screened with EPA environmental data resources",
+                        "Public screening data is accessible; professional investigations cost separately",
+                        "Resolve historic uses before committing to sensitive redevelopment assumptions",
+                        "Contamination response obligations exceed the projected resale value",
+                    ],
+                    [
+                        "Flood-adjacent tracts reviewed with FEMA National Flood Hazard Layer",
+                        "Federal map access is free; elevation surveys cost separately",
+                        "Separate mapped hazards from verified usable building envelope evidence",
+                        "Floodway restrictions or drainage costs remove economically usable area",
+                    ],
+                    [
+                        "Wetland-sensitive acreage screened with USFWS National Wetlands Inventory",
+                        "Public screening maps are free; delineation and permitting cost separately",
+                        "Obtain field-supported constraints before pricing developable acreage claims",
+                        "Jurisdictional waters or mitigation expense defeat intended land disturbance",
+                    ],
+                    [
+                        "Tax-sale sourced parcels located through Bid4Assets auction listings",
+                        "Auction-specific deposits, premiums, and settlement charges vary by listing",
+                        "Resolve sale terms, redemption rules, and insurable ownership timing",
+                        "Sale challenge or redemption prevents the planned resale schedule",
+                    ],
+                    [
+                        "Probate-related vacant parcels researched through county court records",
+                        "Budget court copies, counsel, title work, and authorized conveyance",
+                        "Verify representative authority and all required ownership interests",
+                        "Missing authority or an omitted heir blocks insurable conveyance",
+                    ],
+                    [
+                        "Title-curative inventory examined through county recorder document indexes",
+                        "Document fees, counsel charges, and title premiums follow local terms",
+                        "Obtain title-company acceptance criteria before funding curative work",
+                        "Superior liens survive the proposed corrective deed or release",
+                    ],
+                    [
+                        "Exurban homesites screened with USDA Web Soil Survey",
+                        "Public soil mapping is free; site wastewater testing costs separately",
+                        "Pair preliminary soils with approved local wastewater suitability evidence",
+                        "Failed site testing prevents the buyer's intended residential use",
+                    ],
+                    [
+                        "Timbered recreational tracts marketed through Land.com network products",
+                        "Listing packages, forestry work, and brokerage require separate quotations",
+                        "Verify timber ownership, harvest history, access, and buyer preferences",
+                        "Reserved timber rights or recent harvest invalidate advertised value",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Reconcile the three profit cases without inflating revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The Conservative case is exactly $200,000 of annual gross parcel sale proceeds at a 12% net margin, "
+                    "yielding $24,000 of annual owner net profit with 1 FT plus 3 C. An illustrative decomposition is "
+                    "twenty completed sales averaging $10,000, not twenty leads, options, or signed contracts awaiting closing. "
+                    "Total recognized costs must therefore equal $176,000. One internally consistent bridge uses $110,000 "
+                    "of sold-parcel acquisition cost, $14,000 of diligence and closing costs, $10,000 of direct carrying "
+                    "and selling costs, and $42,000 of annual operating overhead. The resulting $3,500 monthly overhead "
+                    "sits within the specified operating range. These allocations illustrate the canonical total rather than "
+                    "claiming an additional historical dataset. Keep unsold purchases on the inventory schedule instead of "
+                    "charging their full price against completed sales without the applicable accounting basis. Conversely, "
+                    "do not omit a sold parcel's acquisition cost because the purchase occurred in a prior year. The three "
+                    "contractors represent limited external capacity, not three full-time salaries concealed inside a lean "
+                    "budget. Define their expected engagements and route invoices to the appropriate cost category. A few "
+                    "slow exits can consume much of the $24,000 profit, so this case demands purchase discipline rather "
+                    "than confidence that every discounted parcel eventually sells."
+                ),
+                (
+                    "The Base case is $850,000 of annual gross parcel sale proceeds at an 18.5% net margin, producing "
+                    "$157,250 of annual owner net profit with the same 1 FT plus 3 C team. Twenty-five sales averaging "
+                    "$34,000 provide a useful operating decomposition. An illustrative cost bridge is $500,000 of sold "
+                    "inventory acquisition cost, $45,000 of diligence and closing costs, $51,750 of direct carrying and "
+                    "selling costs, and $96,000 of annual overhead. Those amounts total $692,750, leaving precisely "
+                    "$157,250. Monthly overhead is $8,000. Do not confuse the $850,000 revenue figure with acquisition "
+                    "capital requirements: purchase cash is deployed before collections and can remain tied up across reporting "
+                    "periods. At twenty-five closings per year and a six-month average inventory holding period, steady "
+                    "throughput implies roughly 12.5 parcels in inventory. At the illustrative $20,000 average acquisition "
+                    "cost, that represents about $250,000 of purchase capital before work in progress and cash reserves. "
+                    "Actual seasonal batching can raise the peak substantially. A parcel-level cash calendar should show "
+                    "deposits, purchase settlements, specialist invoices, property taxes, and expected sale collections separately. "
+                    "Use that calendar to size commitments; an annual profit statement cannot tell the owner whether sufficient "
+                    "cash will exist when several acquisitions close during the same week."
+                ),
+                (
+                    "The Scaled case is exactly $1,500,000 of annual gross parcel sale proceeds at a 25% net margin, "
+                    "or $375,000 annual owner net profit, supported by 2 FT plus 4 C: six people in the capacity "
+                    "model. Thirty sales averaging $50,000 reconcile revenue. Illustrative costs of $780,000 for sold "
+                    "inventory acquisition, $75,000 for diligence and closing, $90,000 for direct carrying and selling, "
+                    "and $180,000 for annual overhead total $1,125,000. Monthly overhead reaches the specified $15,000 "
+                    "upper bound. Higher margin is a canonical scenario assumption, not an automatic consequence of hiring "
+                    "another employee. The operating explanation must be better purchases, higher-value parcels, fewer broken "
+                    "contracts, or more efficient specialist deployment. Test each explanation using completed transactions. "
+                    "For sensitivity, a 10% reduction in the Base case's sale proceeds removes $85,000 of revenue; "
+                    "holding its modeled costs constant reduces owner profit to $72,250. Any associated selling-cost "
+                    "changes require their own calculation. Additional holding periods also add expense and delay capital "
+                    "recovery. Keep those stress results separate from the three canonical cases. Treat owner net profit "
+                    "as the supplied business-model output; distributions, owner compensation policy, debt structure, and "
+                    "personal taxes require explicit treatment rather than silent assumptions about spendable household cash."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Revenue and Profit Bridge with Explicit Illustrative Cost Allocations",
+                "headers": [
+                    "Case or ledger control being tested",
+                    "Revenue and cost arithmetic to preserve",
+                    "Capacity or cash interpretation for operators",
+                    "Evidence required to accept the reported result",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual case with twenty illustrative completed parcel sales",
+                        "$200,000 proceeds less $176,000 costs equals $24,000 profit",
+                        "12% net margin supports one full-time operator plus three contractors",
+                        "Reconcile closing statements and sold-inventory costs to ledger totals",
+                    ],
+                    [
+                        "Base annual case with twenty-five illustrative completed parcel sales",
+                        "$850,000 proceeds less $692,750 costs equals $157,250 profit",
+                        "18.5% net margin supports one full-time operator plus three contractors",
+                        "Verify all direct costs and $96,000 annual overhead allocation",
+                    ],
+                    [
+                        "Scaled annual case with thirty illustrative completed parcel sales",
+                        "$1,500,000 proceeds less $1,125,000 costs equals $375,000 profit",
+                        "25% net margin supports two full-time operators plus four contractors",
+                        "Confirm six-person capacity and all $180,000 annual overhead costs",
+                    ],
+                    [
+                        "Principal-owned parcel sale contrasted with another owner's property transaction",
+                        "Owned sale recognizes proceeds; earned service arrangement recognizes applicable fees",
+                        "Client transaction volume never substitutes for the operator's earned revenue",
+                        "Inspect ownership documents, contracts, performance obligations, and settlement statements",
+                    ],
+                    [
+                        "Unsold inventory purchases separated from current completed-sale acquisition costs",
+                        "Carry applicable inventory costs until recognition under the accounting policy",
+                        "Cash deployed into inventory can exceed current-period recognized expenses",
+                        "Reconcile parcel cost schedules with purchases, dispositions, and remaining inventory",
+                    ],
+                    [
+                        "Seller-credit sale collections separated from original transaction revenue recognition",
+                        "Separate principal recovery, interest income, and applicable impairment accounting",
+                        "A receivable can create accounting profit before equivalent cash collection",
+                        "Match servicing statements to contracts and the adopted recognition policy",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Build a title-to-buyer evidence chain that survives exceptions",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start each acquisition file with the legal description, current vesting, purchase terms, and intended buyer "
+                    "use. Order a title commitment early enough to investigate exceptions before diligence expires. Read the "
+                    "referenced easements, restrictions, reservations, and lien instruments; a commitment is not a promise "
+                    "that every operational assumption is covered. Obtain a survey appropriate to the intended transaction "
+                    "and ask the title provider what access coverage or endorsements are actually available. Legal access, "
+                    "physical access, utility access, and permitted driveway access are separate questions. A recorded "
+                    "pedestrian easement may not serve a house, and an existing gravel track may cross land without "
+                    "transferable rights. Use written municipal or county responses to test zoning, lot dimensions, setback "
+                    "effects, and division requirements. North Carolina's N.C. Gen. Stat. 160D-802 illustrates why operators "
+                    "must examine statutory subdivision definitions and exclusions alongside local regulations rather than "
+                    "assuming every small split qualifies for simplified treatment. Obtain utility capacity and extension "
+                    "pricing from the actual provider. For onsite wastewater, use the responsible authority's process "
+                    "and qualified field work. A county tax designation, postal address, or neighboring house is useful "
+                    "context but does not establish that the subject parcel can support the buyer's intended development."
+                ),
+                (
+                    "Environmental screening must match the property's history and proposed use. EPA databases, historical "
+                    "aerials, FEMA mapping, and the USFWS National Wetlands Inventory are screening inputs, not substitutes "
+                    "for site-specific investigation. Where the acquisition strategy relies on CERCLA bona fide prospective "
+                    "purchaser protections, evaluate the conditions in 42 U.S.C. 9601(40) and 9607(r), including qualifying "
+                    "pre-acquisition inquiry and continuing obligations. The all appropriate inquiries framework appears in "
+                    "40 CFR Part 312; scope the environmental professional's work before purchase, not after contamination "
+                    "appears during resale. Work affecting jurisdictional waters may require authorization under Clean Water "
+                    "Act Section 404, codified at 33 U.S.C. 1344. State and local restrictions can apply independently. "
+                    "A map showing no wetland polygon does not resolve those questions. Land division also requires "
+                    "attention to sales practices: the Interstate Land Sales Full Disclosure Act, including 15 U.S.C. "
+                    "1703 and the exemptions in 1702, can affect subdivision marketing and contracts when applicable. "
+                    "Document the actual project facts rather than assuming a small current release answers the "
+                    "aggregation analysis. For repeated inventory sales, 26 U.S.C. 1221(a)(1) also matters because "
+                    "property held primarily for sale to customers is excluded from the statutory capital-asset definition."
+                ),
+                (
+                    "Close the evidence chain by giving buyers a consistent parcel packet: recorded description, survey, "
+                    "access instruments, relevant title exceptions, documented utility responses, known constraints, and a "
+                    "clearly bounded account of completed investigations. Title insurance addresses covered title risks "
+                    "under its terms and exclusions; it does not certify buildability, soils, market value, or future "
+                    "permit issuance. Describe limitations concretely instead of labeling a parcel ready for a use that "
+                    "has not been established. If the business begins representing other owners, evaluate the applicable "
+                    "broker licensing rules before collecting transaction-based compensation. Florida's 475.011(2), for "
+                    "example, contains an owner exemption with limitations; ownership is not a universal permission slip "
+                    "for every related service arrangement. Assign one person to maintain the source documents and "
+                    "another qualified reviewer to resolve material contradictions where staffing permits. Log the precise "
+                    "reason a parcel advances, pauses, or exits the pipeline. The four-step SOP below creates a repeatable "
+                    "handoff from screening to closing without pretending that automation can adjudicate property rights. "
+                    "Scale only after closed-sale records demonstrate repeatable acquisition spreads, contained exception "
+                    "costs, and manageable holding periods. If a required fact remains unresolved, preserve cash through "
+                    "the negotiated contingency rather than converting an unanswered question into expensive owned inventory."
+                ),
+            ],
+            "table": {
+                "caption": "Pre-Purchase Evidence Matrix for Title-Insured Vacant and Infill Land Dispositions",
+                "headers": [
+                    "Decision requiring parcel-specific proof",
+                    "Primary evidence and responsible specialist",
+                    "Concrete acceptance criterion before commitment",
+                    "Fallback when the evidence fails",
+                ],
+                "rows": [
+                    [
+                        "Seller authority and exact ownership interests being conveyed",
+                        "Recorded vesting, entity authority, probate documents, and title examination",
+                        "All required parties can execute an insurable conveyance",
+                        "Extend documented diligence or terminate under available contract rights",
+                    ],
+                    [
+                        "Transferable access adequate for the intended buyer use",
+                        "Recorded easement instruments, survey, title review, and field inspection",
+                        "Rights, route, permitted use, and maintenance obligations align",
+                        "Negotiate voluntary documented rights or abandon the acquisition thesis",
+                    ],
+                    [
+                        "Practical building envelope and lawful intended land use",
+                        "Local regulations, written agency responses, survey, and qualified site analysis",
+                        "Required dimensions and constraints leave a viable proposed use",
+                        "Reprice for verified alternative use or exercise negotiated contingency",
+                    ],
+                    [
+                        "Water, wastewater, power, and access improvement cost exposure",
+                        "Serving utility quotations, local wastewater determinations, and contractor proposals",
+                        "Documented connection and improvement costs fit the purchase ceiling",
+                        "Reduce price or reject assumptions requiring unpriced infrastructure work",
+                    ],
+                    [
+                        "Environmental conditions relevant to ownership and proposed disturbance",
+                        "Qualified environmental review, historical records, and site-specific constraint investigations",
+                        "Identified obligations and usable area support the priced transaction",
+                        "Terminate or restructure only after specialist-defined scope and costs",
+                    ],
+                    [
+                        "Exit demand and complete economic recognition of the disposition",
+                        "Completed comparable sales, buyer feedback, contracts, and settlement accounting",
+                        "Buyer fit and net spread survive documented downside assumptions",
+                        "Use prepriced alternate exit or preserve capital before purchase",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four verifications before acquisition cash leaves escrow",
+                "body": (
+                    "Advance only when the acquisition file contains evidence matching the intended resale use and the funded cost ceiling."
+                ),
+                "items": [
+                    "Verify seller authority, legal description, required signatures, and the title company's written requirements for the proposed insured conveyance.",
+                    "Verify recorded access scope against the survey and physical route, including any separate driveway authorization and maintenance obligation.",
+                    "Verify zoning, division requirements, utilities, wastewater suitability, and environmental constraints using the responsible agencies and qualified specialists.",
+                    "Verify the purchase ceiling against documented exit evidence, all acquisition and selling costs, holding reserves, and an executable fallback.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Screen one defined parcel cohort",
+                    "action": (
+                        "Filter county GIS or Regrid records in QGIS using a saved parcel-type and buyer-use specification."
+                    ),
+                    "detail": (
+                        "Preserve parcel identifiers, source dates, parent references, and exclusion reasons; do not convert spatial proximity into a legal-access conclusion."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Contract for evidence and an exit",
+                    "action": (
+                        "Negotiate a documented option or purchase agreement with diligence rights, access permission, deadlines, and defined payment exposure."
+                    ),
+                    "detail": (
+                        "Request title, survey, agency, utility, and specialist evidence early enough to use the actual contractual remedies if the thesis fails."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Underwrite the parcel cash cycle",
+                    "action": (
+                        "Build a parcel ledger covering purchase price, direct work, carrying costs, selling costs, expected collections, and fallback proceeds."
+                    ),
+                    "detail": (
+                        "Separate transaction contribution from annual owner profit, track inventory funding, and compare the proposed commitment with cash already reserved."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Close, reconcile, and update the evidence loop",
+                    "action": (
+                        "Deliver the buyer packet, complete the agreed title-insured disposition, and reconcile the settlement to inventory and revenue records."
+                    ),
+                    "detail": (
+                        "Record actual holding days, exception costs, buyer objections, and realized contribution; feed those outcomes into the next screening and pricing cycle."
+                    ),
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The durable land spread comes from buying unresolved evidence cheaply and selling documented usefulness clearly.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Choose one county, one parcel archetype, and one buyer segment; record their access, dimensions, utility, and price requirements.",
+        "Build a parcel evidence register linking GIS identifiers to recorded instruments, title exceptions, surveys, specialist findings, and buyer responses.",
+        "Model one of the six plays with acquisition, diligence, closing, carrying, selling, and overhead costs separated and a priced fallback attached.",
+        "Reconcile planned annual proceeds and costs to the exact Conservative, Base, or Scaled scorecard before describing expected owner profit.",
+        "Use written diligence terms to verify title, access, usable area, utilities, and environmental constraints before committing acquisition cash.",
+        "Create a completed-sale review that updates comparable prices, actual holding periods, failed assumptions, contractor costs, and future purchase ceilings.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "26 U.S.C. 1221(a)(1) — Property excluded from capital-asset treatment",
+            "url": "https://www.law.cornell.edu/uscode/text/26/1221",
+            "relevance": (
+                "Property held primarily for sale to customers in the ordinary course of business is excluded from the statutory capital-asset definition; inventory trading requires its own tax analysis."
+            ),
+        },
+        {
+            "title": "42 U.S.C. 9601(40) — Bona fide prospective purchaser definition",
+            "url": "https://www.law.cornell.edu/uscode/text/42/9601",
+            "relevance": (
+                "Defines conditions relevant to purchasers seeking CERCLA protections, including pre-acquisition inquiry and specified continuing obligations."
+            ),
+        },
+        {
+            "title": "42 U.S.C. 9607(r) — Bona fide prospective purchaser liability provisions",
+            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
+            "relevance": (
+                "Connects qualifying purchaser status with liability protections and addresses potential federal liens; acquisition diligence must evaluate the actual conditions."
+            ),
+        },
+        {
+            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
+            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
+            "relevance": (
+                "Establishes the federal inquiry framework relevant to specified CERCLA landowner protections, including professional review and timing requirements."
+            ),
+        },
+        {
+            "title": "33 U.S.C. 1344 — Permits for dredged or fill material",
+            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
+            "relevance": (
+                "Governs the federal permitting framework for covered discharges of dredged or fill material into jurisdictional waters; intended site work requires parcel-specific review."
+            ),
+        },
+        {
+            "title": "15 U.S.C. 1703 — Interstate land sales prohibitions and purchaser protections",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1703",
+            "relevance": (
+                "Contains requirements and prohibited practices affecting covered subdivision sales, with purchaser remedies that can disrupt assumed completed-sale economics."
+            ),
+        },
+        {
+            "title": "15 U.S.C. 1702 — Interstate land sales exemptions",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1702",
+            "relevance": (
+                "Provides exemptions with different scopes and conditions; operators must evaluate actual project and sales facts rather than presume every small division is excluded."
+            ),
+        },
+        {
+            "title": "N.C. Gen. Stat. 160D-802 — Subdivision definition and statutory exclusions",
+            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_160D/GS_160D-802.html",
+            "relevance": (
+                "Illustrates state-level subdivision definitions and exclusions that must be read with applicable local land development regulations before underwriting child parcel sales."
+            ),
+        },
+        {
+            "title": "Florida Statutes 475.011(2) — Owner exemption and limitations",
+            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0475/Sections/0475.011.html",
+            "relevance": (
+                "Addresses an exemption for specified dealings involving an owner's property and its limitations; representing others requires a separate licensing assessment."
+            ),
+        },
+    ],
+}

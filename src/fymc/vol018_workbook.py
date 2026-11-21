@@ -1,0 +1,1432 @@
+from __future__ import annotations
+
+
+def build_volume_018_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-018-land-flipping",
+        "volume_id": "vol-018-land-flipping",
+        "title": "Land Flipping — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Vacant-Land Selection, GIS "
+            "Underwriting, Parcel Economics, Title-Insured Closings, Minor "
+            "Subdivisions, and Small-Team Portfolio Control"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Parcel Opportunity Underwriting and Counterparty Qualification",
+                "purpose": (
+                    "Translate a vacant-land lead into a documented acquisition thesis "
+                    "before committing earnest money. Establish the intended buyer, "
+                    "supportable resale price, usable acreage, recorded access, seller "
+                    "authority, and evidence requirements that distinguish a marketable "
+                    "parcel from a cheap but unsellable liability."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Choose one county, one parcel category, and one buyer profile "
+                        "before importing owner records. Describe the exit as a specific "
+                        "permitted use, then identify the evidence needed to support that "
+                        "use without relying on listing language."
+                    ),
+                    (
+                        "Create a parcel evidence folder containing assessor records, "
+                        "recorded instruments, zoning sources, comparable deeds, and dated "
+                        "GIS exports. Record each source date and custodian so another "
+                        "operator can reproduce the underwriting without repeating every search."
+                    ),
+                    (
+                        "Separate preliminary screening from acquisition clearance. A "
+                        "mapped road, utility line, or favorable zoning color supports "
+                        "further investigation only; obtain the recorded rights, provider "
+                        "response, and local interpretation required for the proposed exit."
+                    ),
+                    (
+                        "Contact the seller through an approved channel and verify their "
+                        "relationship to the vesting owner before discussing binding "
+                        "terms. Route estates, trusts, entity transfers, and disputed "
+                        "ownership to the settlement team for authority review."
+                    ),
+                    (
+                        "Calculate a maximum acquisition price using supported proceeds "
+                        "and the complete cost stack. Record the exact evidence that "
+                        "would change the decision, and reject opportunities whose "
+                        "economics depend on unapproved subdivision or speculative utility extensions."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Target parcel and buyer thesis",
+                        "textarea",
+                        (
+                            "Define the geography, parcel size, current permitted use, "
+                            "buyer segment, and intended disposition. Explain why this "
+                            "segment offers repeatable demand rather than merely a low "
+                            "asking price or attractive aerial photograph."
+                        ),
+                        (
+                            "Target existing residential lots of 0.25–0.75 acres within "
+                            "a twenty-minute drive of an established employment center. "
+                            "The buyer is a local builder purchasing one buildable lot. "
+                            "Underwrite an $85,000 resale only when recent closed lots "
+                            "support similar frontage, utilities, and permitted housing density."
+                        ),
+                    ),
+                    field(
+                        "Parcel identity and source chain",
+                        "textarea",
+                        (
+                            "Record the assessor parcel identifier, vesting deed reference, "
+                            "legal description source, acreage discrepancies, and evidence "
+                            "timestamps. Explain how the settlement agent will resolve "
+                            "differences between tax mapping and the conveyed property."
+                        ),
+                        (
+                            "Working parcel LF-018-001 has assessor acreage of 0.52 and "
+                            "deed acreage of 0.49. The acquisition file retains the "
+                            "recorded deed, assessor export, and survey request. Pricing "
+                            "uses the smaller acreage until the surveyor and title "
+                            "examiner reconcile boundaries and the conveyance description."
+                        ),
+                    ),
+                    field(
+                        "Seller identity and signing authority",
+                        "textarea",
+                        (
+                            "Identify the vesting owner, proposed signer, ownership form, "
+                            "and authority documents required for closing. Describe the "
+                            "independent verification method and any ownership dispute "
+                            "that would stop negotiations or release of funds."
+                        ),
+                        (
+                            "The vesting owner is an LLC, while the inquiry came "
+                            "from a member using a personal email address. Escrow "
+                            "requests formation records, operating authority, and signer "
+                            "identification through its secure portal. No deposit leaves "
+                            "escrow until the settlement team accepts the signing authority."
+                        ),
+                    ),
+                    field(
+                        "Recorded access and physical access",
+                        "textarea",
+                        (
+                            "Distinguish public frontage, recorded easement rights, physical "
+                            "passability, and maintenance obligations. Identify the instruments "
+                            "and professional review needed to demonstrate access suitable "
+                            "for the proposed buyer's use and likely construction traffic."
+                        ),
+                        (
+                            "An aerial image shows a gravel lane, but the deed "
+                            "does not establish access rights. Request the recorded "
+                            "easement, benefited parcel description, width, maintenance terms, "
+                            "and title treatment. Reject the acquisition if residential "
+                            "and construction access cannot be established before the inspection deadline."
+                        ),
+                    ),
+                    field(
+                        "Zoning and minor-subdivision feasibility",
+                        "textarea",
+                        (
+                            "Record current zoning, minimum lot dimensions, setbacks, "
+                            "frontage standards, and the local subdivision process. Separate "
+                            "an existing-parcel resale from a proposed split, including "
+                            "required approvals, infrastructure conditions, fees, and processing dependencies."
+                        ),
+                        (
+                            "The parent tract contains 1.20 acres, but a proposed "
+                            "three-lot split requires minimum frontage that one child "
+                            "lot lacks. Underwrite the existing parcel only. A subdivision "
+                            "case must separately price surveying, application fees, improvement "
+                            "conditions, recording, and the county's written processing sequence."
+                        ),
+                    ),
+                    field(
+                        "Utilities and buildable-envelope evidence",
+                        "textarea",
+                        (
+                            "Document water, wastewater, power, drainage, and usable building "
+                            "area using provider and professional evidence. Distinguish "
+                            "nearby infrastructure from an enforceable connection opportunity "
+                            "with known capacity, extension scope, and buyer responsibilities."
+                        ),
+                        (
+                            "Water is visible across the street, but the provider "
+                            "quotes a $12,000 connection and road-crossing package. The "
+                            "resale comparison assumes connected lots, so either deduct "
+                            "that burden from supported value or obtain comparable "
+                            "unconnected sales. A nearby main does not establish available capacity."
+                        ),
+                    ),
+                    field(
+                        "Environmental and terrain screening",
+                        "textarea",
+                        (
+                            "List flood, wetland, slope, dumping, historic-use, and habitat "
+                            "indicators, together with their source dates. Identify which "
+                            "conditions require field investigation and how unresolved "
+                            "constraints affect usable acreage, pricing, and acquisition timing."
+                        ),
+                        (
+                            "County terrain data suggests a steep rear section, and "
+                            "a federal wetland inventory shows a mapped feature nearby. "
+                            "Exclude the rear section from the preliminary building envelope. "
+                            "Commission appropriate field review before pricing a homesite "
+                            "that depends on grading or filling that area."
+                        ),
+                    ),
+                    field(
+                        "Closed-sale comparison and liquidity",
+                        "textarea",
+                        (
+                            "Select verified closed sales with comparable rights, utilities, "
+                            "size, and permitted use. Record sale dates, concessions, "
+                            "market exposure, and adjustments, explaining why active asking "
+                            "prices do not establish executable resale proceeds."
+                        ),
+                        (
+                            "Three verified comparable lots closed at $82,000, $86,000, "
+                            "and $89,000 after 74, 103, and 118 market days. "
+                            "The highest sale included a paid connection fee. Support "
+                            "an $85,000 subject resale only after adjusting that benefit "
+                            "and confirming similar recorded access and usable frontage."
+                        ),
+                    ),
+                    field(
+                        "Counterparty and settlement qualification",
+                        "textarea",
+                        (
+                            "Qualify the listing broker, settlement provider, survey resource, "
+                            "and likely buyer for land-specific execution. Record capacity, "
+                            "service scope, verification procedures, fee evidence, and the "
+                            "failure that would trigger replacement of each provider."
+                        ),
+                        (
+                            "The broker supplies five recent vacant-lot closings and "
+                            "accepts a negotiated $3,375 disposition fee. Escrow confirms "
+                            "its title-underwriting relationship and independent wire-verification "
+                            "procedure. The diligence contractor provides survey coordination "
+                            "and identifies when a separately licensed environmental or engineering "
+                            "specialist must be engaged."
+                        ),
+                    ),
+                    field(
+                        "Acquisition decision and maximum bid",
+                        "textarea",
+                        (
+                            "State the supported resale amount, complete nonpurchase cost "
+                            "stack, required owner profit, and resulting maximum bid. "
+                            "Name unresolved evidence and specify whether the decision "
+                            "is rejection, conditional pursuit, or documented acquisition readiness."
+                        ),
+                        (
+                            "At $85,000 proceeds, subtract $15,725 target profit, $2,200 "
+                            "buy-side closing, $1,800 diligence, $1,500 expected cure work, "
+                            "$2,400 carrying, $3,375 selling, and $10,000 overhead allocation. "
+                            "Maximum acquisition price is $48,000. Pursue conditionally, "
+                            "with recorded access and utility evidence still required before closing."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner signs a dated investment memo identifying the parcel, "
+                    "verified seller authority, supported buyer use, three reviewed "
+                    "comparables, maximum bid, and every unresolved acquisition condition. "
+                    "No unresolved access or buildability assumption is described as established."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
+                "purpose": (
+                    "Reconcile parcel-level decisions to the canonical annual scorecard "
+                    "while keeping purchase capital, operating expenses, reserves, and "
+                    "sale proceeds distinct. Model the cash trapped in unsold inventory, "
+                    "the effect of slower exits, and the exact bid reductions needed "
+                    "when defects or selling costs increase."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Use gross parcel sale proceeds as the revenue basis for "
+                        "owned-land trading. Include acquisition costs in the net-margin "
+                        "calculation, exclude borrowed principal from revenue, and keep "
+                        "seller deposits and owner contributions outside earned operating income."
+                    ),
+                    (
+                        "Build each parcel budget from purchase price through disposition, "
+                        "then allocate annual overhead consistently. Mark forecasts as "
+                        "forecasts and replace them with incurred costs at close; "
+                        "an unspent cash reserve does not become an expense automatically."
+                    ),
+                    (
+                        "Reconcile Conservative, Base, and Scaled annual totals before "
+                        "using a parcel calculator. Changes to resale prices, volume, "
+                        "staffing, or cost assumptions belong in a separately labeled "
+                        "sensitivity case rather than an altered canonical scorecard."
+                    ),
+                    (
+                        "Construct a monthly cash schedule showing deposits, acquisitions, "
+                        "diligence, cure payments, carrying costs, and closing receipts. "
+                        "Stress the acquisition cadence against delayed dispositions, "
+                        "because an attractive annual margin can still exhaust available cash."
+                    ),
+                    (
+                        "Set a cash floor and acquisition-pause trigger before making "
+                        "offers. Tie contingency releases to documented risk retirement, "
+                        "and distinguish parcel-level carrying costs from enterprise "
+                        "overhead so the same invoice is never deducted twice."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Canonical scenario reconciliation",
+                        "textarea",
+                        (
+                            "Enter the three required annual revenue, margin, owner-profit, "
+                            "and staffing combinations. Explain the revenue basis and "
+                            "identify which scenario is the operating plan without "
+                            "presenting the other scenarios as interchangeable forecasts."
+                        ),
+                        (
+                            "Conservative: $200,000 revenue × 12% = $24,000 owner "
+                            "profit, with 1 FT + 3 C. Base: $850,000 × "
+                            "18.5% = $157,250, with 1 FT + 3 C. "
+                            "Scaled: $1,500,000 × 25% = $375,000, with 2 FT "
+                            "+ 4 C. Revenue means gross owned-parcel sale proceeds."
+                        ),
+                    ),
+                    field(
+                        "Base parcel cost stack",
+                        "textarea",
+                        (
+                            "List acquisition, purchase closing, diligence, expected defect "
+                            "work, carrying, disposition, and allocated overhead separately. "
+                            "Show the total cost and owner contribution for one "
+                            "representative parcel using the Base scenario assumptions."
+                        ),
+                        (
+                            "One $85,000 sale carries $48,000 acquisition, $2,200 purchase "
+                            "closing, $1,800 diligence, $1,500 expected cure work, $2,400 "
+                            "carrying, $3,375 disposition, and $10,000 overhead. Total cost "
+                            "is $69,275; owner profit is $15,725. Ten identical "
+                            "completed sales reconcile exactly to the Base annual scorecard."
+                        ),
+                    ),
+                    field(
+                        "Annual volume and expense bridge",
+                        "textarea",
+                        (
+                            "Translate annual proceeds into an illustrative count of "
+                            "completed sales and average selling price. Reconcile total "
+                            "expenses and enterprise overhead without implying that these "
+                            "illustrative parcel counts are additional canonical operating requirements."
+                        ),
+                        (
+                            "Illustratively, Conservative sells four parcels at $50,000, "
+                            "with $176,000 total costs including $36,000 overhead. Base "
+                            "sells ten at $85,000, with $692,750 costs including "
+                            "$100,000 overhead. Scaled sells fifteen at $100,000, with "
+                            "$1,125,000 costs including $180,000 overhead. Each produces "
+                            "the required scenario profit."
+                        ),
+                    ),
+                    field(
+                        "Scrub failures and defect reserve",
+                        "textarea",
+                        (
+                            "Estimate rejected-lead diligence and acquired-parcel cure exposure "
+                            "using explicit probabilities or observed cohorts. Separate "
+                            "cash earmarks from recognized expenses, and state how "
+                            "actual spending changes the forecast and final parcel margin."
+                        ),
+                        (
+                            "Budget $18,000 annual diligence, including abandoned-lead research, "
+                            "and allocate it across ten completed sales. Separately "
+                            "forecast $15,000 of incurred cure work, or $1,500 "
+                            "per sale. If only $9,000 is incurred, owner profit "
+                            "rises by $6,000 with other costs unchanged; unused earmarks "
+                            "are not expenses."
+                        ),
+                    ),
+                    field(
+                        "Inventory float and startup funding",
+                        "textarea",
+                        (
+                            "Calculate cash committed before disposition across concurrent "
+                            "parcel slots. Add overhead runway and a separate liquidity "
+                            "buffer, identify the funding source, and compare the "
+                            "result with the stated startup capital range."
+                        ),
+                        (
+                            "Each slot commits $55,900 before selling fees: purchase, "
+                            "buy-side closing, diligence, cure work, and carrying. Three "
+                            "slots require $167,700. Add $50,000 for six months "
+                            "of Base overhead and $20,000 liquidity buffer: $237,700 "
+                            "startup funding, within the $50,000–$400,000 range. Selling fees "
+                            "are deducted at disposition."
+                        ),
+                    ),
+                    field(
+                        "Cash conversion and holding delay",
+                        "textarea",
+                        (
+                            "Specify acquisition-to-cash timing, monthly parcel carrying costs, "
+                            "and the effect of slower closings. Distinguish a cost "
+                            "sensitivity from an annual volume shortfall, and avoid "
+                            "assuming inventory proceeds arrive merely because listings are active."
+                        ),
+                        (
+                            "The Base parcel carries for four months at $600 "
+                            "monthly, totaling $2,400. A three-month delay adds $1,800 "
+                            "and reduces parcel profit to $13,925. Across ten "
+                            "unchanged sales, profit becomes $139,250; if fewer sales "
+                            "close that year, rebuild annual revenue and inventory separately."
+                        ),
+                    ),
+                    field(
+                        "Resale haircut and bid sensitivity",
+                        "textarea",
+                        (
+                            "Stress supported proceeds downward while holding clearly "
+                            "identified costs constant. Calculate revised dollar profit, "
+                            "revised margin, and the acquisition-price adjustment required "
+                            "to preserve the original dollar contribution under that sensitivity."
+                        ),
+                        (
+                            "A 10% resale haircut reduces $85,000 to $76,500. "
+                            "With the original $69,275 cost stack unchanged, profit "
+                            "is $7,225 and margin is approximately 9.44%. Preserving "
+                            "$15,725 dollar profit requires reducing acquisition from $48,000 "
+                            "to $39,500, assuming every other cost remains fixed."
+                        ),
+                    ),
+                    field(
+                        "Funding terms and debt separation",
+                        "textarea",
+                        (
+                            "Document equity, loan proceeds, repayment dates, interest, "
+                            "origination charges, and collateral restrictions. Show how "
+                            "financing costs enter parcel economics while principal "
+                            "movements remain separate from sale revenue and operating profit."
+                        ),
+                        (
+                            "A proposed $40,000 loan at 12% simple annual interest "
+                            "for six months adds $2,400 interest plus an $800 "
+                            "origination charge. Unless already budgeted, the $3,200 "
+                            "reduces Base parcel profit to $12,525. The $40,000 "
+                            "advance and principal repayment are funding movements, not revenue "
+                            "or duplicate acquisition expense."
+                        ),
+                    ),
+                    field(
+                        "Operating runway and acquisition pause",
+                        "textarea",
+                        (
+                            "Set monthly enterprise spending, minimum unrestricted cash, "
+                            "and a pause rule based on expected obligations. Explain "
+                            "how the team distinguishes available cash from escrowed "
+                            "deposits, restricted reserves, and optimistic projected sales."
+                        ),
+                        (
+                            "Base annual overhead of $100,000 equals about $8,333.33 "
+                            "monthly, with a final-month rounding adjustment. Maintain "
+                            "$20,000 unrestricted liquidity beyond committed parcel spending. "
+                            "Pause new deposits when a thirteen-week cash forecast "
+                            "falls below that floor, even if listed inventory appears "
+                            "to contain substantial paper profit."
+                        ),
+                    ),
+                    field(
+                        "Closeout reconciliation and owner distributions",
+                        "textarea",
+                        (
+                            "Describe the parcel closeout process linking settlement "
+                            "statements, invoices, inventory cost release, overhead, and "
+                            "owner withdrawals. Identify the records that prove the "
+                            "annual profit bridge without treating distributions as operating expenses."
+                        ),
+                        (
+                            "Ten Base sales produce $850,000 revenue against $480,000 "
+                            "acquisition, $22,000 purchase closing, $18,000 diligence, $15,000 "
+                            "cure work, $24,000 carrying, $33,750 selling, and $100,000 "
+                            "overhead. Expenses total $692,750 and owner profit equals "
+                            "$157,250. Owner draws reduce cash and equity, not this "
+                            "operating expense bridge."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Every scenario reconciles to its canonical revenue and owner "
+                    "profit; the Base parcel totals $69,275 cost and $15,725 profit. "
+                    "The owner approves a thirteen-week cash forecast, explicit reserve "
+                    "treatment, and a funded acquisition-pause threshold before issuing offers."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "Execution Ledger and Parcel Technical QA Pre-Flight",
+                "purpose": (
+                    "Control the complete parcel lifecycle from accepted offer through "
+                    "recorded disposition. Use evidence-linked status changes, reproducible "
+                    "GIS checks, title exception review, settlement controls, and cost "
+                    "reconciliation to prevent mismatched parcels, missed deadlines, "
+                    "unsupported marketing claims, and funds released against incomplete closing conditions."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Assign one internal deal identifier and preserve the county "
+                        "parcel identifier separately. Use the internal identifier across "
+                        "contracts, GIS layers, invoices, title files, and listings; "
+                        "never substitute a street address for a verified legal description."
+                    ),
+                    (
+                        "Create a dated execution ledger with one accountable owner "
+                        "for each transition. Link source documents rather than "
+                        "summarizing them from memory, and make inspection expiration, "
+                        "title objections, deposit changes, and closing deadlines visible together."
+                    ),
+                    (
+                        "Run GIS screening in a known coordinate system and record "
+                        "layer dates, limitations, and geometry checks. Escalate apparent "
+                        "boundary, access, or flood conflicts to the relevant professional "
+                        "instead of treating a map overlay as a survey."
+                    ),
+                    (
+                        "Review the title commitment and settlement requirements before "
+                        "the acquisition deadline. Track each exception through acceptance, "
+                        "cure, or rejection, and require documented confirmation when "
+                        "a requested coverage provision cannot actually be issued."
+                    ),
+                    (
+                        "Before disposition, compare every listing claim with the "
+                        "evidence packet and reconcile estimated seller proceeds to "
+                        "the signed settlement statement. Complete the ledger only "
+                        "after recording evidence, funds confirmation, and unresolved post-closing items are captured."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Deal identifier and document register",
+                        "textarea",
+                        (
+                            "Define the parcel naming convention, document version rules, "
+                            "and authoritative sources for legal description and ownership. "
+                            "Explain how revised contracts or assessor changes are "
+                            "linked without erasing the evidence supporting earlier decisions."
+                        ),
+                        (
+                            "Use LF-018-001 as the permanent deal identifier and "
+                            "store the county parcel number in a separate field. "
+                            "The executed contract is version 03, linked to its "
+                            "signed amendment. The vesting deed supplies the initial "
+                            "legal description; escrow verifies the final conveyance description "
+                            "against its title examination."
+                        ),
+                    ),
+                    field(
+                        "Contract dates and deposit ledger",
+                        "textarea",
+                        (
+                            "Record acceptance, inspection expiration, title objection, cure, "
+                            "closing, and extension dates with the controlling contract "
+                            "language. Track deposit amount, holder, refund conditions, "
+                            "and the person responsible for timely notices."
+                        ),
+                        (
+                            "The contract is accepted June 3, with inspection ending "
+                            "June 24 at the stated local time and closing "
+                            "July 15. A $1,000 deposit is credited toward the "
+                            "$48,000 purchase price. Calendar reminders occur seven and "
+                            "three days before inspection expiration; the owner sends "
+                            "any required notice."
+                        ),
+                    ),
+                    field(
+                        "GIS geometry and coordinate checks",
+                        "textarea",
+                        (
+                            "Specify the GIS software, source coordinate systems, geometry "
+                            "validation, acreage checks, and overlay tolerances. Explain "
+                            "which discrepancies are screening flags and which require "
+                            "survey evidence before the parcel can advance."
+                        ),
+                        (
+                            "QGIS imports county parcel polygons and reprojects them "
+                            "to a suitable local projected coordinate system before "
+                            "measuring area. Check invalid rings, duplicate features, and "
+                            "missing identifiers. A 0.03-acre difference from the deed "
+                            "is logged for survey review, not silently replaced by "
+                            "the GIS measurement."
+                        ),
+                    ),
+                    field(
+                        "Title commitment and exception disposition",
+                        "textarea",
+                        (
+                            "Record the proposed insured owner, estate, policy amount, "
+                            "requirements, and exceptions. Assign a disposition to each "
+                            "material exception and identify written insurer confirmation "
+                            "needed for access, liens, restrictions, or requested endorsements."
+                        ),
+                        (
+                            "The acquisition commitment names the purchasing LLC and "
+                            "a $48,000 proposed policy amount. Escrow requires payoff "
+                            "of a recorded lien. A restrictive covenant remains "
+                            "for use review. Request available access coverage in "
+                            "writing; do not assume a standard policy resolves "
+                            "every physical-access or zoning concern."
+                        ),
+                    ),
+                    field(
+                        "Survey and field inspection acceptance",
+                        "textarea",
+                        (
+                            "Define the survey scope and field inspection evidence "
+                            "needed for the intended exit. Capture encroachments, monuments, "
+                            "frontage, dumping, fences, and drainage observations, including "
+                            "who determines whether a discovered condition is acceptable."
+                        ),
+                        (
+                            "The survey request identifies boundary location, road frontage, "
+                            "visible encroachments, and recorded easements relevant to the "
+                            "purchase. Site photographs show a neighbor's fence inside "
+                            "the apparent boundary. The owner pauses acquisition while "
+                            "the surveyor, title examiner, and transaction counsel evaluate "
+                            "the encroachment and possible cure."
+                        ),
+                    ),
+                    field(
+                        "Subdivision task sequence and release",
+                        "textarea",
+                        (
+                            "If a split is proposed, map application, conditions, "
+                            "engineering, surveying, recording, and child-parcel creation. Explain "
+                            "what must occur before child lots are marketed or "
+                            "sold, and isolate subdivision economics from the existing-parcel Base example."
+                        ),
+                        (
+                            "The proposed two-lot project receives a separate project "
+                            "code and budget. Planning confirmation precedes survey design; "
+                            "conditions are priced before filing. No child lot "
+                            "is advertised as legally created until required mapping "
+                            "and recording steps are complete. The existing-lot Base "
+                            "budget does not fund this entitlement work."
+                        ),
+                    ),
+                    field(
+                        "Invoice coding and inventory ledger",
+                        "textarea",
+                        (
+                            "Assign parcel costs and enterprise expenses to consistent "
+                            "ledger categories, documenting the accounting treatment approved "
+                            "for the business. Explain allocation of failed-lead costs "
+                            "and prevent invoice duplication between parcel budgets and overhead."
+                        ),
+                        (
+                            "The management ledger assigns a $900 survey invoice "
+                            "to LF-018-001 diligence and an $85 CRM subscription "
+                            "to enterprise overhead. Failed-lead research remains visible "
+                            "in the annual diligence pool. The accountant determines "
+                            "capitalization and tax treatment; the management bridge still "
+                            "reconciles all costs to annual owner profit."
+                        ),
+                    ),
+                    field(
+                        "Wire verification and closing pre-flight",
+                        "textarea",
+                        (
+                            "Specify how settlement instructions, recipient identity, payoff "
+                            "figures, deed execution, and cash requirements are independently "
+                            "verified. Identify the stop condition for changed instructions "
+                            "and the evidence retained after funds are transmitted."
+                        ),
+                        (
+                            "Before sending acquisition funds, the owner calls escrow "
+                            "using a previously verified number, confirms account details, "
+                            "and matches the final cash requirement to the statement. "
+                            "A last-minute emailed account change stops transmission. "
+                            "Retain callback notes and bank confirmation without copying "
+                            "full account credentials into the general CRM."
+                        ),
+                    ),
+                    field(
+                        "Listing evidence and disposition QA",
+                        "textarea",
+                        (
+                            "Compare asking price, parcel dimensions, access, utility, "
+                            "zoning, and subdivision claims with current evidence. Define "
+                            "who approves listing revisions and how the buyer "
+                            "receives relevant documents without exposing unnecessary seller or payment information."
+                        ),
+                        (
+                            "The listing states residential zoning and links the "
+                            "dated local source, but does not promise permit "
+                            "issuance. Utility language identifies the provider's written "
+                            "connection estimate. The broker removes an unsupported "
+                            "'ready to build' claim and supplies buyers a redacted "
+                            "survey, title summary, and documented access description."
+                        ),
+                    ),
+                    field(
+                        "Post-closing receipt and exception ledger",
+                        "textarea",
+                        (
+                            "Describe how recorded instruments, issued title coverage, "
+                            "net proceeds, tax reporting, and remaining obligations are "
+                            "confirmed after closing. Set an aging threshold for "
+                            "missing documents and assign responsibility for clearing each item."
+                        ),
+                        (
+                            "The $85,000 sale is marked closed only after escrow "
+                            "confirms recording and the bank confirms collected proceeds. "
+                            "The issued policy and final statement are requested "
+                            "within the agreed service period. Missing documents remain "
+                            "open in a weekly exception queue, with escrow "
+                            "follow-up assigned to the owner."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "A second reviewer or designated settlement professional checks "
+                    "the legal description, deadline ledger, material title items, and "
+                    "closing figures. Every material exception has evidence of cure, "
+                    "documented acceptance within the investment thesis, or a stop decision."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Licensing, Contract, and Outreach Audit",
+                "purpose": (
+                    "Translate applicable land-use, brokerage, environmental, settlement, "
+                    "and outreach rules into documented operating requirements. Identify "
+                    "the actual jurisdiction and transaction structure before selecting "
+                    "forms or marketing language, with special attention to subdivision "
+                    "creation, seller authority, title representations, tax withholding, and permission-sensitive outreach."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Start with the property's state, county, municipality, and "
+                        "transaction structure. Record the controlling sources and "
+                        "verification date; a rule from a neighboring county or "
+                        "a residential-house form does not automatically fit a vacant-land transaction."
+                    ),
+                    (
+                        "Separate selling property the business owns from representing "
+                        "another owner or marketing contractual rights. Confirm the "
+                        "state-specific licensing and disclosure requirements for each "
+                        "activity before paying transaction-based compensation or publishing the offer."
+                    ),
+                    (
+                        "Have the transaction professional review contract contingencies, "
+                        "title delivery, disclosures, deposit release, and recording "
+                        "requirements against the actual parcel. Convert required actions "
+                        "into named tasks with due dates rather than attaching unused statutory excerpts."
+                    ),
+                    (
+                        "Review environmental and water-related triggers before disturbing "
+                        "soil or assuming development capacity. Screening maps identify "
+                        "questions; appropriate investigations and agency determinations "
+                        "resolve them when the intended use depends on regulated land or water features."
+                    ),
+                    (
+                        "Audit each outreach channel separately for identification, "
+                        "permission, suppression, and record-retention requirements. Store "
+                        "the evidence supporting contact eligibility, and disable "
+                        "automation when eligibility cannot be established or a recipient withdraws permission."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Jurisdiction and controlling-source register",
+                        "textarea",
+                        (
+                            "Identify the parcel's governing jurisdictions and official "
+                            "sources for zoning, subdivision, recording, taxation, and "
+                            "broker licensing. Record the effective version and verification "
+                            "date, including any written agency interpretation used in underwriting."
+                        ),
+                        (
+                            "For an illustrative California acquisition, retain the county "
+                            "zoning ordinance, subdivision ordinance, recorder checklist, and "
+                            "state licensing source. A planning email dated May 12 "
+                            "explains frontage treatment for this parcel. The register "
+                            "distinguishes that parcel-specific response from the broader ordinance "
+                            "and records who confirmed its continuing applicability."
+                        ),
+                    ),
+                    field(
+                        "Principal trading versus licensed representation",
+                        "textarea",
+                        (
+                            "Describe whether the business sells owned land, represents "
+                            "another party, or transfers contract rights. Identify the "
+                            "applicable licensing analysis, compensation restrictions, required "
+                            "disclosures, and evidence that marketing accurately reflects the business's role."
+                        ),
+                        (
+                            "The LLC purchases and resells its own parcel; it "
+                            "does not accept a neighbor's listing for a success "
+                            "fee. California Business and Professions Code sections "
+                            "10130, 10131, and 10133 inform the role review. "
+                            "Any proposed representation service is routed to a "
+                            "properly licensed broker before outreach begins."
+                        ),
+                    ),
+                    field(
+                        "Subdivision mapping and public-report analysis",
+                        "textarea",
+                        (
+                            "Record proposed lot count, contiguous project ownership, "
+                            "local mapping requirements, and state sale requirements. "
+                            "Distinguish map approval from permission to offer lots "
+                            "and identify exemptions only when the actual project satisfies their conditions."
+                        ),
+                        (
+                            "For a California three-lot proposal, review Government Code "
+                            "sections 66424 and 66428 plus local parcel-map rules. "
+                            "Separately examine Business and Professions Code sections "
+                            "11000 and 11010 for the broader project and any "
+                            "public-report requirement. Splitting phases does not by itself "
+                            "establish an exemption."
+                        ),
+                    ),
+                    field(
+                        "Environmental liability and inquiry timing",
+                        "textarea",
+                        (
+                            "Identify historical-use concerns and the investigation needed "
+                            "before acquisition. If relying on a federal landowner "
+                            "liability protection, document the relevant qualification, inquiry "
+                            "timing, and continuing obligations rather than treating a report as blanket protection."
+                        ),
+                        (
+                            "A former equipment yard triggers environmental review before "
+                            "purchase. The specialist evaluates all appropriate inquiries "
+                            "under 40 CFR Part 312 and relevant CERCLA "
+                            "conditions in 42 U.S.C. 9601(40) and 9607(r). "
+                            "Confirm the one-year inquiry window, specified 180-day updates, "
+                            "and continuing obligations for any intended protection."
+                        ),
+                    ),
+                    field(
+                        "Wetlands, fill, drainage, and site disturbance",
+                        "textarea",
+                        (
+                            "Describe proposed disturbance and possible regulated waters "
+                            "or drainage features. Identify the federal, state, and "
+                            "local determinations or permits needed before grading, "
+                            "filling, clearing, or advertising a development envelope dependent on those activities."
+                        ),
+                        (
+                            "A buyer's proposed driveway crosses a wet area. "
+                            "Before pricing the parcel as driveway-ready, investigate "
+                            "Clean Water Act section 404, 33 U.S.C. 1344, "
+                            "and applicable section 401 certification under 33 U.S.C. "
+                            "1341. Agency jurisdiction, permit needs, and state wetland "
+                            "rules require project-specific review; inventory maps alone "
+                            "do not settle them."
+                        ),
+                    ),
+                    field(
+                        "Contract protections and factual disclosures",
+                        "textarea",
+                        (
+                            "Specify inspection rights, title objections, access verification, "
+                            "deposit treatment, seller representations, and required property "
+                            "disclosures. Explain how known adverse facts reach the "
+                            "buyer and why a general condition clause does not replace required disclosure."
+                        ),
+                        (
+                            "Draft terms allow termination by written notice before "
+                            "inspection expiration if recorded access or the intended "
+                            "use cannot be verified. The seller identifies a "
+                            "known dumping area in a signed attachment. Transaction "
+                            "counsel selects applicable vacant-land disclosures rather than "
+                            "automatically reusing a one-to-four-unit housing disclosure package."
+                        ),
+                    ),
+                    field(
+                        "Settlement taxes, withholding, and reporting",
+                        "textarea",
+                        (
+                            "Identify seller tax-status documentation, potential withholding, "
+                            "information reporting, transfer taxes, and responsible settlement "
+                            "parties. Distinguish the amount realized from the seller's "
+                            "gain and require written resolution of any claimed withholding exception."
+                        ),
+                        (
+                            "A foreign seller's $48,000 sale receives FIRPTA review "
+                            "under 26 U.S.C. 1445. The general 15% calculation "
+                            "is $7,200 of amount realized unless an applicable "
+                            "exception or adjustment is established. Escrow also assigns "
+                            "real-estate reporting under 26 U.S.C. 6045(e); vacant land "
+                            "does not automatically satisfy residence-based exceptions."
+                        ),
+                    ),
+                    field(
+                        "Email outreach and suppression controls",
+                        "textarea",
+                        (
+                            "Describe the commercial email audience, sender identification, "
+                            "subject-line review, physical address, unsubscribe method, and "
+                            "suppression timing. Identify the party monitoring vendors "
+                            "and explain how suppressed addresses are prevented from reentering later campaigns."
+                        ),
+                        (
+                            "Builder outreach uses accurate sender information, a truthful "
+                            "parcel-specific subject, advertising identification where required, "
+                            "a postal address, and an operational unsubscribe link. "
+                            "Under 15 U.S.C. 7704, eligible opt-out requests are "
+                            "honored within ten business days. The CRM checks "
+                            "the suppression list before every send and vendor upload."
+                        ),
+                    ),
+                    field(
+                        "Telephone, text, and direct-mail eligibility",
+                        "textarea",
+                        (
+                            "Identify calling or texting technology, message purpose, "
+                            "permission evidence, applicable do-not-call restrictions, and "
+                            "state requirements. Separately describe truthful direct-mail "
+                            "practices, and establish an immediate stop when contact eligibility is unresolved."
+                        ),
+                        (
+                            "Do not infer texting permission from a public assessor "
+                            "record. Review 47 U.S.C. 227, 47 CFR 64.1200, "
+                            "and applicable state rules for the proposed technology "
+                            "and campaign. Disable automated calls and texts until "
+                            "eligibility is established. Postal offers identify the actual "
+                            "buyer and avoid government-style notices or misleading urgency."
+                        ),
+                    ),
+                    field(
+                        "Electronic records, privacy, and retention",
+                        "textarea",
+                        (
+                            "Define secure handling of identity records, signatures, "
+                            "contact information, and transaction evidence. Record applicable "
+                            "retention requirements and distinguish electronic contract validity "
+                            "from notarization, delivery, and county recording acceptance for a particular instrument."
+                        ),
+                        (
+                            "E-SIGN, 15 U.S.C. 7001, supports qualifying electronic "
+                            "records but does not eliminate every deed execution "
+                            "or recording requirement. Escrow confirms the recorder's "
+                            "accepted process. Identity files remain in restricted storage; "
+                            "the CRM retains only verification status. A written "
+                            "retention schedule incorporates applicable state and transaction requirements."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner and appropriate transaction specialists resolve every "
+                    "applicable licensing, land-use, environmental, contract, withholding, "
+                    "and outreach question in a source-linked register. Unresolved items "
+                    "remain explicit stop conditions for the affected purchase, listing, "
+                    "site activity, or communication channel."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation Pipeline, Growth Flywheel, and Risk Fallbacks",
+                "purpose": (
+                    "Automate repeatable parcel screening and comparable-sale tracking "
+                    "without converting imperfect public data into false acquisition "
+                    "certainty. Build a measured sourcing and buyer-development system "
+                    "with source lineage, communication controls, human exception handling, "
+                    "and practical fallbacks when data feeds, provider responses, or market liquidity deteriorate."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Define the input contract for every data feed, including "
+                        "permitted use, refresh cadence, parcel identifiers, and required "
+                        "fields. Reject malformed records visibly, and preserve source "
+                        "lineage so a scoring decision can be reconstructed after an update."
+                    ),
+                    (
+                        "Automate exclusions and prioritization before attempting automated "
+                        "valuation. Keep legal access, seller authority, environmental "
+                        "interpretation, and buildability decisions under qualified human "
+                        "review; a clean data row is not evidence that those "
+                        "transaction risks are resolved."
+                    ),
+                    (
+                        "Connect outbound work to a narrow buyer thesis and "
+                        "documented contact eligibility. Measure progression from eligible "
+                        "records to responses, qualified conversations, accepted offers, "
+                        "and closed sales rather than celebrating imported records or gross message volume."
+                    ),
+                    (
+                        "Keep comparable-sale monitoring separate from listing-price monitoring. "
+                        "Record verification, concessions, rights, utilities, and market "
+                        "exposure, then flag changes that affect current inventory "
+                        "instead of silently replacing the assumptions used when it was purchased."
+                    ),
+                    (
+                        "For each automation, assign an owner, alert threshold, "
+                        "manual fallback, and restart condition. Test stale data, "
+                        "duplicate events, failed sends, and provider outages before "
+                        "the workflow can change a deal status or initiate external communication."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Source inventory and permitted-use contract",
+                        "textarea",
+                        (
+                            "List county GIS, assessor, recorder, listing, and contact "
+                            "sources with access terms, refresh cadence, and required "
+                            "fields. Explain how licensed datasets remain segregated "
+                            "from public records and how expired access stops downstream processing."
+                        ),
+                        (
+                            "The county GIS export refreshes monthly and supplies "
+                            "parcel identifiers, geometry, and acreage. Recorder documents "
+                            "support deed verification. Broker-provided sales data stays "
+                            "within its licensed use. Each imported batch records "
+                            "source, retrieval date, terms reference, and checksum; an "
+                            "expired data license suspends that connector rather than "
+                            "reusing restricted exports."
+                        ),
+                    ),
+                    field(
+                        "Parcel normalization and duplicate prevention",
+                        "textarea",
+                        (
+                            "Define normalization for parcel identifiers, owner names, "
+                            "mailing addresses, geometry, and jurisdiction. Explain how "
+                            "the pipeline handles leading zeros, multi-parcel ownership, "
+                            "changed identifiers, and repeated records without merging distinct properties."
+                        ),
+                        (
+                            "Store parcel identifiers as strings so leading zeros "
+                            "survive CSV imports. Use county code plus normalized "
+                            "parcel identifier as the current record key. Link "
+                            "an owner's four parcels without combining their geometry. "
+                            "A parcel renumbering creates a reviewed predecessor link "
+                            "instead of overwriting the historical deal record."
+                        ),
+                    ),
+                    field(
+                        "Screening rules and exception routing",
+                        "textarea",
+                        (
+                            "Specify reproducible filters for target size, zoning, "
+                            "location, ownership, and apparent constraints. Separate hard "
+                            "exclusions from review flags and identify which evidence "
+                            "allows a reviewer to override an automated result."
+                        ),
+                        (
+                            "Screen for 0.25–0.75-acre residential parcels inside the "
+                            "chosen service area. Flag apparent landlocked geometry, "
+                            "steep terrain, and wetland intersections for review. A "
+                            "flag never becomes a confirmed legal conclusion. Overrides "
+                            "require a named reviewer and linked evidence, such "
+                            "as a recorded access easement accepted by the title examiner."
+                        ),
+                    ),
+                    field(
+                        "Comparable-sale tracking and drift alerts",
+                        "textarea",
+                        (
+                            "Describe the verified-sale data structure, update schedule, "
+                            "adjustment method, and repricing alert. Explain how active "
+                            "listings, stale transactions, unusual concessions, and dissimilar "
+                            "utility conditions are prevented from distorting the underwriting range."
+                        ),
+                        (
+                            "A weekly review adds closed sales with deed reference, "
+                            "closing date, utility status, access, and exposure time. "
+                            "An alert fires when three new comparable closings "
+                            "support a range more than 8% below the current "
+                            "$85,000 exit assumption. Active listings remain a separate "
+                            "competition view rather than verified sale evidence."
+                        ),
+                    ),
+                    field(
+                        "Seller outreach cohort and response ledger",
+                        "textarea",
+                        (
+                            "Define a bounded sourcing cohort, eligible channels, offer "
+                            "logic, response categories, and follow-up limits. Track "
+                            "actual acquisition funnel outcomes and prevent repeat "
+                            "contact after suppression, ownership disputes, or a clear request to stop."
+                        ),
+                        (
+                            "The pilot sends 100 individually checked postal offers "
+                            "to owners of screened lots. Log 12 responses, "
+                            "four qualified conversations, two document-ready opportunities, "
+                            "and one conditional offer as observed pilot results "
+                            "only if achieved. Every refusal updates suppression, "
+                            "and the same owner is not approached repeatedly "
+                            "through duplicate parcel records."
+                        ),
+                    ),
+                    field(
+                        "Builder network and buyer qualification",
+                        "textarea",
+                        (
+                            "Identify buyer segments, acquisition criteria, proof-of-funds "
+                            "handling, viewing process, and repeat-purchase signals. Explain "
+                            "how buyer feedback improves parcel selection without "
+                            "disclosing confidential seller terms or promising an unverified development outcome."
+                        ),
+                        (
+                            "Interview ten local builders about frontage, utility "
+                            "cost tolerance, price ceiling, and closing speed. Three "
+                            "prefer serviced lots below $90,000 and request future "
+                            "inventory notices. Obtain appropriate communication permission, "
+                            "record criteria, and verify purchase capacity through the "
+                            "settlement process rather than storing bank statements "
+                            "in an unrestricted marketing folder."
+                        ),
+                    ),
+                    field(
+                        "Workflow controls and communication eligibility",
+                        "textarea",
+                        (
+                            "Map the transition from screened parcel to reviewed "
+                            "opportunity, authorized offer, and scheduled follow-up. Specify "
+                            "which actions require human authorization and how suppression, "
+                            "channel eligibility, and stale evidence block external messages."
+                        ),
+                        (
+                            "Airtable stores review status while a scheduled Python "
+                            "job prepares an internal offer queue. The owner "
+                            "reviews price and recipient before any offer is "
+                            "sent. Suppressed contacts and expired evidence block "
+                            "queue release. No workflow signs contracts, changes "
+                            "escrow instructions, or treats a suggested bid as "
+                            "an accepted commitment."
+                        ),
+                    ),
+                    field(
+                        "Automation quality test and audit sample",
+                        "textarea",
+                        (
+                            "Define representative test cases, acceptable error thresholds, "
+                            "sampling frequency, and incident ownership. Include duplicates, "
+                            "missing source dates, mismatched jurisdictions, and contradictory "
+                            "access indicators, with evidence showing how failed records are isolated."
+                        ),
+                        (
+                            "Test twenty fixtures, including a leading-zero parcel "
+                            "identifier, a county-name collision, duplicate owner records, "
+                            "and a polygon beside an unrecorded road. Any "
+                            "cross-county merge blocks deployment. Review ten newly "
+                            "screened records weekly and retain before-and-after evidence "
+                            "when correcting rules, so earlier acquisition assumptions "
+                            "can be reevaluated."
+                        ),
+                    ),
+                    field(
+                        "Data outage and provider fallback",
+                        "textarea",
+                        (
+                            "Name the failure signals for source outages, stale "
+                            "exports, missing provider responses, and communication errors. "
+                            "Assign a manual fallback and restart test, ensuring "
+                            "the team does not silently reuse old evidence as current information."
+                        ),
+                        (
+                            "If the monthly county feed is more than forty-five "
+                            "days old, pause automated prioritization and verify active "
+                            "deals directly with official records. If the title "
+                            "provider misses a committed response date, escalate "
+                            "and evaluate a qualified replacement. Restart requires "
+                            "a validated fresh batch and review of affected "
+                            "open opportunities."
+                        ),
+                    ),
+                    field(
+                        "Illiquidity fallback and learning loop",
+                        "textarea",
+                        (
+                            "Set inventory aging thresholds, buyer-feedback reviews, "
+                            "repricing authority, and the conditions for pausing "
+                            "acquisitions. Explain how realized selling results update "
+                            "future screening without disguising a liquidation loss or extending unsupported valuation assumptions."
+                        ),
+                        (
+                            "At ninety listing days without a qualified offer, "
+                            "review inquiries, showing feedback, and new closed sales. "
+                            "At 120 days, model a reduced-price cash exit "
+                            "and update the thirteen-week cash forecast. Pause "
+                            "new purchases if liquidity falls below $20,000. "
+                            "Record any loss explicitly and tighten future selection "
+                            "rules using the observed failure."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The screening pipeline passes its test set, every outward "
+                    "message has channel eligibility and owner authorization, and "
+                    "stale-source or suppression failures stop affected work. Parcel "
+                    "screening and comparable-sale tracking remain assistive systems, "
+                    "with accountable reviewers for material acquisition conclusions."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch Sprint, Pod KPI Scorecard, and Exit Ledger",
+                "purpose": (
+                    "Launch a focused land-trading operation with measurable evidence "
+                    "production rather than premature revenue promises. Assign small-team "
+                    "responsibilities, sequence thirty days of setup and sourcing, "
+                    "monitor capital and inventory quality, and preserve the records "
+                    "needed to sell individual parcels or transfer an organized operating business."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Treat the first thirty days as system construction and "
+                        "qualified pipeline development, not a mandatory closing window. "
+                        "The stated time to first deal is three to twelve "
+                        "months, so capital planning must accommodate a prolonged initial acquisition cycle."
+                    ),
+                    (
+                        "Assign the canonical Base pod before setting activity targets: "
+                        "one full-time owner and three contractor roles. Define "
+                        "deliverables, capacity, and escalation paths, and purchase "
+                        "specialist services by scope without hiding their cost or workload."
+                    ),
+                    (
+                        "Schedule market selection, source setup, professional onboarding, "
+                        "pilot outreach, and evidence-backed underwriting in that order. "
+                        "Do not accelerate offers simply to satisfy a launch "
+                        "calendar when access, title, seller authority, or liquidity remains unresolved."
+                    ),
+                    (
+                        "Review leading indicators weekly and realized economics monthly. "
+                        "Keep records screened, conversations, offers, accepted contracts, "
+                        "closed sales, and collected cash separate, with explicit "
+                        "denominators and dates so the scorecard cannot mistake activity for completed revenue."
+                    ),
+                    (
+                        "Maintain an exit ledger from the first purchase, including "
+                        "inventory cost, market evidence, title documents, provider "
+                        "contracts, and open obligations. A possible business transfer "
+                        "requires portable records and defensible earnings, not merely a stack of parcel listings."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Strategic position and launch constraints",
+                        "textarea",
+                        (
+                            "Record the candidate's rank, score, capital range, operating "
+                            "expense range, and first-deal timing. Explain how these "
+                            "constraints shape the initial county, parcel category, "
+                            "acquisition cadence, and acceptable dependence on outside expertise."
+                        ),
+                        (
+                            "Land Flipping is Candidate #6, pipeline rank #18 "
+                            "of 29, scoring 72/100 as a Disciplined Specialist "
+                            "Play. Startup capital is $50,000–$400,000, monthly operating "
+                            "expense is $3,000–$15,000, and first-deal timing is "
+                            "3–12 months. Launch in one county with existing "
+                            "lots rather than funding speculative subdivision work."
+                        ),
+                    ),
+                    field(
+                        "Pod roles and capacity commitments",
+                        "textarea",
+                        (
+                            "Assign the full-time owner and three contractor roles "
+                            "for the Base plan, including deliverables and backup "
+                            "arrangements. Distinguish contractor service costs from permanent "
+                            "staffing and describe the capacity change required for the Scaled plan."
+                        ),
+                        (
+                            "Base uses one full-time owner for underwriting and "
+                            "capital decisions, plus three contractor roles: diligence "
+                            "coordination, title and settlement, and disposition brokerage. "
+                            "Specialist engagements are scoped through the relevant "
+                            "role and separately budgeted. Scaled uses 2 FT "
+                            "+ 4 C, six people total; additional transaction "
+                            "volume requires demonstrated capacity, not assumed availability."
+                        ),
+                    ),
+                    field(
+                        "Days 1–7 market and evidence setup",
+                        "textarea",
+                        (
+                            "Specify first-week deliverables for county selection, buyer "
+                            "interviews, source access, record structure, and professional "
+                            "onboarding. Define completion through usable evidence and "
+                            "confirmed service scope rather than meetings booked or software accounts opened."
+                        ),
+                        (
+                            "By day seven, select one county, interview five "
+                            "builders, document ten closed-sale candidates, and confirm "
+                            "escrow and diligence service scopes. Create the deal "
+                            "register, evidence folder structure, and thirteen-week cash "
+                            "template. Completion requires source-linked records and written "
+                            "provider responses, not an unreviewed owner list or "
+                            "a generic market presentation."
+                        ),
+                    ),
+                    field(
+                        "Days 8–14 screening and economics pilot",
+                        "textarea",
+                        (
+                            "Define the second-week screening sample, quality checks, "
+                            "valuation work, and funding review. Explain what "
+                            "constitutes a qualified acquisition candidate and which "
+                            "findings require rejection before any seller receives a binding commitment."
+                        ),
+                        (
+                            "Screen 100 parcels and manually audit twenty records. "
+                            "Build complete preliminary economics for five candidates, "
+                            "including access evidence requests and utility assumptions. "
+                            "Verify the $237,700 illustrative three-slot funding plan "
+                            "against actual available funds. Reject apparent bargains "
+                            "whose supported exit cannot cover all costs and "
+                            "the required owner contribution."
+                        ),
+                    ),
+                    field(
+                        "Days 15–21 controlled sourcing pilot",
+                        "textarea",
+                        (
+                            "Set a bounded outreach pilot, qualification checklist, "
+                            "offer authority, and response review cadence. Distinguish "
+                            "target activities from achieved results and identify "
+                            "what must be documented before a conditional offer is released."
+                        ),
+                        (
+                            "Prepare up to 100 reviewed postal contacts and "
+                            "log actual delivery and response outcomes. For each "
+                            "responsive owner, confirm the parcel and relationship "
+                            "to the vesting owner. Release a conditional offer "
+                            "only after owner review of price, inspection rights, "
+                            "deposit exposure, and funding. The sprint target "
+                            "does not require an accepted contract."
+                        ),
+                    ),
+                    field(
+                        "Days 22–30 review and acquisition readiness",
+                        "textarea",
+                        (
+                            "Describe the final-week review of pilot results, deal "
+                            "files, provider performance, and cash capacity. Define "
+                            "the next thirty-day commitment using evidence, including "
+                            "the acceptable outcome when no parcel satisfies the investment criteria."
+                        ),
+                        (
+                            "Review every active opportunity, reconcile incurred launch "
+                            "spending, and refresh the cash forecast. If two "
+                            "parcels remain promising but access documentation is "
+                            "pending, continue diligence without closing. If none "
+                            "qualifies, revise the selection thesis or pricing "
+                            "method. A documented rejection cohort is preferable "
+                            "to purchasing defective inventory to satisfy day-thirty optics."
+                        ),
+                    ),
+                    field(
+                        "Weekly funnel and quality KPI definitions",
+                        "textarea",
+                        (
+                            "Define each funnel stage, denominator, reporting period, "
+                            "and evidence requirement. Include defect detection, source "
+                            "freshness, and turnaround measures so the pod can "
+                            "distinguish weak sourcing from slow execution or poor data quality."
+                        ),
+                        (
+                            "Report screened parcels, qualified parcels, owner responses, "
+                            "reviewed offers, accepted contracts, and completed sales "
+                            "as separate counts. If 20 of 100 screened "
+                            "parcels qualify, qualification is 20%; if four "
+                            "of twenty qualify for offers, offer readiness is "
+                            "20%. Track unresolved access cases and median "
+                            "title-response days alongside conversion."
+                        ),
+                    ),
+                    field(
+                        "Monthly earnings and capital KPI scorecard",
+                        "textarea",
+                        (
+                            "Record realized revenue, incurred expenses, owner profit, "
+                            "inventory cost, unrestricted cash, and aging by cohort. "
+                            "Connect results to the Base annual plan while "
+                            "avoiding straight-line revenue assumptions when closings are irregular or seasonal."
+                        ),
+                        (
+                            "One completed Base parcel contributes $85,000 revenue "
+                            "and $15,725 modeled owner profit after its $10,000 "
+                            "overhead allocation. Annual overhead still follows actual "
+                            "incurrence, so one closing does not prove monthly "
+                            "profitability. Track unsold parcels at ledger cost, "
+                            "cash separately, and progress toward ten completed "
+                            "sales without booking anticipated proceeds."
+                        ),
+                    ),
+                    field(
+                        "Scale decision and score-component review",
+                        "textarea",
+                        (
+                            "Review the five score components against actual execution "
+                            "evidence. Identify the conditions required to increase "
+                            "inventory slots or staffing and show how the "
+                            "Scaled cost ceiling preserves the canonical owner-profit target."
+                        ),
+                        (
+                            "The 72 points comprise revenue potential 21, profit "
+                            "margin potential 18, team efficiency 17, startup "
+                            "accessibility 6, and automation potential 10. Scale "
+                            "only after repeatable closings, reliable access review, "
+                            "and adequate cash. At $1,500,000 proceeds, total "
+                            "costs must stay within $1,125,000 to preserve "
+                            "$375,000 owner profit and 25% margin."
+                        ),
+                    ),
+                    field(
+                        "Parcel liquidation and business exit-readiness ledger",
+                        "textarea",
+                        (
+                            "List the records required for an individual parcel "
+                            "sale and a possible operating-business transfer. Separate "
+                            "inventory value from business earnings, identify nontransferable "
+                            "contracts, and document open claims, deposits, obligations, and owner-dependent activities."
+                        ),
+                        (
+                            "Each parcel file contains deed, title policy, survey "
+                            "evidence, tax status, cost ledger, market comparison, "
+                            "and active obligations. The business file adds "
+                            "reconciled earnings, provider contracts, data-license restrictions, "
+                            "and workflow documentation. Do not count inventory "
+                            "sale proceeds twice as both asset value and "
+                            "recurring earnings; obtain independent support for any "
+                            "proposed transfer valuation."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "By day thirty, the owner signs the launch review with "
+                    "actual activity counts, incurred spending, a refreshed cash "
+                    "forecast, assigned pod responsibilities, and an evidence-based "
+                    "next-month plan. Acquisition and scaling decisions remain tied "
+                    "to verified parcel quality, funded obligations, and canonical "
+                    "profit reconciliation rather than calendar pressure."
+                ),
+            },
+        ],
+    }

@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "58e5fff920ca44ef72fc573835814e5888b14e30c8c7b1ab6cc4801575474e82",
-    "brand/brand_system.json": "176c721aa7b7f20fefa10ba2a10652d916abc4156f3c3ed94259d98e83414a8f",
-    "catalog/pipeline_29_candidates.json": "f4ac64fb46deacdc2de9956f5ab87a94e384b126ea9e176e25373e10bf42dd58",
-    "research/research_database_summary.json": "f808b5d18fc830b0ed9eab535001b35f5a025d0a2335e54ff6055e41341f4953",
+    "audit/existing_work_audit.json": "c2aa5cbe0c2b979c5e297d7e9226beb38910fc52f11059f22f268f8e1e85f883",
+    "brand/brand_system.json": "7bf2ffc76aeec896d8ffaa7b087489cd69e061dd10571750aa54ef5f9c25a4fb",
+    "catalog/pipeline_29_candidates.json": "e6ff093e16bbec4dfd4a741faad1f25fcf50ff59206c694c58718fd896ec0829",
+    "research/research_database_summary.json": "ee6024ae397ed034ce31d9eb637f3729a26c26a64cf72f23a52a9336d5486d53",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -311,6 +311,24 @@
     "volumes/vol-017-domain-investing/manuscript.json": "1229ece9c99cc7bca00eb1b1cfad1f692060e299a1a3a556701eede29bb8016e",
     "volumes/vol-017-domain-investing/metadata.json": "61e6f8cf9ebd42b14b30f990fa930699c24dc52f91b8f7bbbf146369a52762f1",
     "volumes/vol-017-domain-investing/scorecard.json": "bb511a2c864f6029dc10849760ebb7d57492d4330f206c60cc4a49777729bdfe",
-    "volumes/vol-017-domain-investing/workbook.json": "3e501be65c5bdb70090ca24cc54ecb3ebc24cddc0413d7de68693a12f2269d32"
+    "volumes/vol-017-domain-investing/workbook.json": "3e501be65c5bdb70090ca24cc54ecb3ebc24cddc0413d7de68693a12f2269d32",
+    "volumes/vol-018-land-flipping/chapters/chapter-01.md": "ee8cea99a11aca4e8398f0e77da5afffd6156f82b0d00c7ceceec9edb8c8e573",
+    "volumes/vol-018-land-flipping/chapters/chapter-02.md": "81998645ceafddac29711ebad383d9b84b453919f91005342b62f9cff0f27ba6",
+    "volumes/vol-018-land-flipping/chapters/chapter-03.md": "978e6ee9ee292186d8e44a2e4e37e0626a0cab0c2235b163a10c5169d57bf6e5",
+    "volumes/vol-018-land-flipping/chapters/chapter-04.md": "ac5087709b860f2f088c1c59323ea903e7da3e7f6d60cd285d51145512c8816a",
+    "volumes/vol-018-land-flipping/chapters/chapter-05.md": "a6fd284c153e2f5f150fd914b9b1d573410c6d22b128bc41b91d1434dfc533bb",
+    "volumes/vol-018-land-flipping/chapters/chapter-06.md": "a2185b64dcdfe2f3ea89caca2bccd818839243998ab46803cc7c92e1e97d49d5",
+    "volumes/vol-018-land-flipping/chapters/chapter-07.md": "337728f69e971f0704ece8958e4d15367fd7bba87be9bfbd29854ff22ab3fecd",
+    "volumes/vol-018-land-flipping/chapters/chapter-08.md": "c06bd0c83c758681688f9ba4044a1aa4e330d719d9da2de99bf42c7b36a986e0",
+    "volumes/vol-018-land-flipping/chapters/chapter-09.md": "7318fe61594f2387f4b0f6f53426c8682c02a312a26adfd13ff6be913967393a",
+    "volumes/vol-018-land-flipping/chapters/chapter-10.md": "d0ce8c1bce210b844467f923829425915cdfdf2d4c537b1cfda9958cc919ce12",
+    "volumes/vol-018-land-flipping/chapters/chapter-11.md": "ea3b64b1505c8155eb1102ded0d07a312068df20c42aa30dc9dae0d04e4a46eb",
+    "volumes/vol-018-land-flipping/chapters/chapter-12.md": "cfc9b4ca7e69a1b82e4cfc865ebde17acf07630f61ba83edcb322a71bdf95d6d",
+    "volumes/vol-018-land-flipping/diagrams_data.json": "a55211137bd647dc9695555d2a7d83aa50cc68ae1e426eb79e21d277fe6a79b2",
+    "volumes/vol-018-land-flipping/graphics_reviews.json": "51fd9f78df4d9372c1e63d133e13f88447078a0376c658a19524e34ff48545fa",
+    "volumes/vol-018-land-flipping/manuscript.json": "263389d7d4e4fee83cc191365d97c27c186f31d7117f530214f9e13f35c40790",
+    "volumes/vol-018-land-flipping/metadata.json": "2d7a1c6d4c9cb178796c9c950108ada982e8f5d55f5c2d113f12105c759f6022",
+    "volumes/vol-018-land-flipping/scorecard.json": "89154edfea34248f69c2d99cf73c7ae50a911281073ef4b9df599d4750ccb51e",
+    "volumes/vol-018-land-flipping/workbook.json": "d272aed456fe4dbbdc048431b18ae7f032cb0aabfd2041aaa382a66bd9b01586"
   }
 }

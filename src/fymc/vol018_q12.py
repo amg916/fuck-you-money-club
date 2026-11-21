@@ -1,0 +1,726 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-30-day-land-flipping-launch-sprint",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching land flipping, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Four-Person Parcel Acquisition Sprint Across QGIS, Recorded Access, Title Commitments, County Plat Rules, and Cash-Controlled Resale",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. "
+        "This chapter maps six operator plays into one controlled launch: GIS discount sourcing, "
+        "access-verified rural parcels, utility-ready infill, assemblage, minor subdivisions, and "
+        "title-insured resale. One full-time owner and three contractors build a measurable pipeline "
+        "without treating a thirty-day sprint as a promised closing. Days 1–30 establish county "
+        "economics, contact owners, investigate responsive parcels, and authorize only evidence-backed "
+        "commitments. Day 30/60/90 decisions separate channel failure from fixable diligence delays "
+        "and earned expansion. Annual owner profit remains $24,000 Conservative, $157,250 Base, "
+        "and $375,000 Scaled. Gross parcel sale proceeds are revenue; acquisition, carrying, selling, "
+        "and operating costs remain real deductions. A $6,000 monthly launch ceiling protects "
+        "capital while parcel evidence accumulates."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$200,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
+            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$850,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
+            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,500,000",
+            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
+            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1–7: Select One County and Establish the Capital Boundary",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with one county, one parcel-size band, and one buyer use case rather than "
+                    "a statewide mailing list. Candidate #6 rewards disciplined screening, not maximum "
+                    "acreage under contract. For this sprint, map six operator plays explicitly: P1 "
+                    "GIS discount sourcing; P2 access-verified rural parcels; P3 utility-ready infill; "
+                    "P4 adjacent-owner assemblage; P5 minor subdivisions; and P6 title-insured resale. "
+                    "These are this chapter's operating labels, not six separate businesses to launch "
+                    "simultaneously. P1 feeds every opportunity, P6 closes the loop, and the owner "
+                    "selects either P2 or P3 as the initial product. Keep P4 and P5 as documented "
+                    "exceptions until buyer demand and county procedures support their additional "
+                    "complexity. On Day 1, write the intended purchaser, maximum parcel basis, allowed "
+                    "zoning categories, minimum usable area, and excluded conditions into a one-page "
+                    "buy box. On Day 2, examine county recorder documents, assessor exports, local "
+                    "planning rules, FEMA mapping, and actual recorded sales. QGIS organizes overlays; "
+                    "it does not establish boundaries, ownership, or legal access. Reject counties "
+                    "where available evidence cannot support at least ten relevant closed sales from "
+                    "the preceding twelve months without mixing incompatible parcel uses or infrastructure "
+                    "conditions. Record the search boundary so later expansion cannot disguise weak evidence."
+                ),
+                (
+                    "Assign the four-person pod before buying data. The full-time owner controls offers, "
+                    "capital allocation, seller conversations, and final underwriting. Contractor one "
+                    "maintains parcel records, QGIS layers, and comparable-sale tracking. Contractor two "
+                    "coordinates title, surveying, access documents, and planning inquiries with qualified "
+                    "local providers. Contractor three handles authorized outreach administration, listing "
+                    "production, and buyer follow-up, using a licensed broker where the activity requires "
+                    "one. Surveyors, laboratories, closing firms, and counsel remain separately purchased "
+                    "services; their invoices must still enter parcel economics and workload reporting. "
+                    "Cap the owner's planned week at forty hours: twelve for sourcing and seller calls, "
+                    "twelve for underwriting, eight for transaction coordination, and eight for buyer "
+                    "development and management. Give each contractor a ten-hour weekly planning allowance "
+                    "during the pilot, subject to actual rates and the spending ceiling. Hours are capacity "
+                    "limits, not evidence that every specialist can be retained at the implied price. "
+                    "Maintain one Airtable or spreadsheet record per assessor parcel number, with a "
+                    "separate county identifier to prevent collisions. Store source dates, document links, "
+                    "responsible person, next action, and cash exposure. Never let an attractive asking "
+                    "price substitute for a complete parcel record or a confirmed person responsible "
+                    "for resolving its outstanding questions."
+                ),
+                (
+                    "Set the first month's non-acquisition cash ceiling at $6,000 before outreach starts. "
+                    "Allocate $1,500 to data and outreach, $1,200 to parcel analysis, $1,000 to title "
+                    "and access investigation, $800 to field and planning checks, $900 to buyer "
+                    "development, and $600 to contingency. These are proposed allocations within the "
+                    "volume's $3,000–$15,000 monthly operating range, not vendor quotations. Include "
+                    "contractor invoices inside these buckets rather than adding labor afterward. At "
+                    "the $50,000 startup-capital floor, ring-fence another $18,000 for three future "
+                    "months at the same ceiling. That leaves no more than $26,000 for purchase price, "
+                    "escrow deposits, and parcel-specific closing obligations after the first month's "
+                    "planned spend. Larger acquisitions require more capital or a different buy box; "
+                    "do not consume the operating reserve to force a deal. Treat deposits as committed "
+                    "cash even when refundable, and record their refund deadlines. Review incurred "
+                    "costs plus signed obligations twice weekly. If specialist quotes exceed the budget, "
+                    "reduce parcel count or stop a play before ordering work. The three-to-twelve-month "
+                    "time to first deal makes liquidity preservation more important than producing a "
+                    "ceremonial Day-30 purchase. No debt proceeds or anticipated resale receipts belong "
+                    "in available cash until the funds are actually accessible."
+                ),
+            ],
+            "table": {
+                "caption": "Days 1–7 County Selection, Pod Ownership, and Cash Deliverables",
+                "headers": [
+                    "Daily checkpoint and assigned accountable operator",
+                    "Required execution and concrete evidence produced",
+                    "Measurable completion test for the sprint",
+                    "Failure response before additional cash commitment",
+                ],
+                "rows": [
+                    [
+                        "Day 1: owner defines the initial purchase mandate",
+                        "Write one county, parcel band, purchaser profile, and maximum basis",
+                        "Choose either rural access parcels or utility-ready infill as primary",
+                        "Remove any parcel category requiring unbudgeted specialist investigation immediately",
+                    ],
+                    [
+                        "Day 2: analyst assembles the county evidence package",
+                        "Download assessor identifiers, recorder references, zoning maps, and flood layers",
+                        "Record source dates and retrieve ten relevant closed-sale references",
+                        "Change counties if comparable evidence depends on unrelated property types",
+                    ],
+                    [
+                        "Day 3: owner validates the intended buyer segment",
+                        "Interview five local buyers or brokers about completed purchases",
+                        "Capture price ranges, infrastructure expectations, and typical purchasing timelines",
+                        "Narrow the buy box when stated demand lacks transaction evidence",
+                    ],
+                    [
+                        "Day 4: analyst normalizes the comparable-sale worksheet",
+                        "Separate acreage, access, utilities, zoning, concessions, and recording dates",
+                        "Retain ten usable comparables with documented inclusion and exclusion reasons",
+                        "Discard bulk transfers and related-party sales without supportable adjustments",
+                    ],
+                    [
+                        "Day 5: coordinator obtains local diligence service quotations",
+                        "Request title, survey, field inspection, and planning consultation scopes",
+                        "Assign actual quoted charges to the six approved spending buckets",
+                        "Reduce active investigations when quoted costs exceed remaining authorized funds",
+                    ],
+                    [
+                        "Day 6: owner locks the capital exposure register",
+                        "Separate operating reserve, committed deposits, acquisition capacity, and contingency",
+                        "Preserve eighteen thousand dollars beyond the initial monthly operating allocation",
+                        "Decline acquisitions whose total commitment consumes the protected operating reserve",
+                    ],
+                    [
+                        "Day 7: entire pod reviews the first county package",
+                        "Inspect ten sample parcel files against the written buy box",
+                        "Require complete source links and assigned next actions for every sample",
+                        "Repair missing evidence before purchasing a larger owner contact list",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before the First Acquisition Commitment",
+                "body": (
+                    "An accepted price does not authorize a purchase. The owner records these "
+                    "four checks before releasing acquisition funds or allowing protections to expire."
+                ),
+                "items": [
+                    "Verify the seller's signing authority and match the legal description across the deed, commitment, contract, and survey evidence.",
+                    "Obtain documented legal access and inspect the recorded easement scope; a visible road or assessor frontage line is insufficient.",
+                    "Confirm intended use, utility feasibility, environmental investigation scope, and any required plat action with the responsible local authority or specialist.",
+                    "Recalculate purchase cash, closing charges, downside proceeds, and remaining operating reserve using written quotes and dated comparable evidence.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8–14: Run One Measured Outreach Cohort and Underwrite Responses",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build a 200-parcel research cohort during Week 2, then remove duplicates, parcels "
+                    "outside the buy box, unresolved ownership conflicts, and obvious disqualifiers. "
+                    "The target is 150 screened records and 100 distinct owners reached through "
+                    "documented delivery, not 200 indiscriminate messages. Prefer individually addressed "
+                    "postal letters for the initial test, with accurate purchaser identity and no "
+                    "suggestion of government affiliation. Calling and texting require a separate "
+                    "review of 47 U.S.C. § 227, applicable state requirements, and suppression procedures; "
+                    "a purchased telephone number does not itself establish permission. Record sent, "
+                    "returned, delivered or reasonably delivery-supported, responded, qualified, and "
+                    "offered as separate events. Use a consistent maturity window: evaluate response "
+                    "rates only after fourteen calendar days from supported delivery. A Day-14 mailing "
+                    "therefore contributes mature observations by Day 28, whereas a replacement mailed "
+                    "on Day 25 does not. Count owners rather than parcels for response rates because "
+                    "one owner may control several lots. Keep undelivered records outside the response "
+                    "denominator and inside the address-quality denominator. Do not mix a rural letter "
+                    "cohort with infill broker referrals when calculating channel performance. Their "
+                    "acquisition costs and conversion paths differ materially, and blending them would "
+                    "conceal which repeatable process deserves the next dollar."
+                ),
+                (
+                    "Define a qualified seller conversation before the first response arrives: the "
+                    "person has plausible authority, identifies the parcel, expresses willingness to "
+                    "discuss a sale, and provides a price expectation or agrees to review an offer. "
+                    "A callback requesting removal is not qualified demand. Target five qualified "
+                    "conversations from the first 100 mature delivered contacts, but treat five percent "
+                    "as a pilot decision threshold rather than a market benchmark. For each promising "
+                    "parcel, retrieve at least three genuinely comparable closed transactions and "
+                    "explain differences in access, usable acreage, utility distance, entitlement, and "
+                    "sale timing. Use a conservative resale estimate based on supportable adjustments, "
+                    "not the highest neighboring listing. Calculate maximum purchase price as expected "
+                    "gross proceeds minus closing and selling costs, diligence, carrying costs, allocated "
+                    "overhead, and required profit. As an illustrative Base-margin screen, a $100,000 "
+                    "resale supports $81,500 of total costs and $18,500 of profit. One possible cost "
+                    "stack is $55,000 acquisition, $4,000 diligence, $7,500 settlement and marketing, "
+                    "$5,000 carrying, and $10,000 allocated overhead. That example exceeds the smallest "
+                    "launch's acquisition capacity; it illustrates underwriting, not permission to "
+                    "spend beyond available cash. Quote each material input before converting the "
+                    "screen into a binding commitment."
+                ),
+                (
+                    "Separate desktop rejection from paid investigation. P2 requires a recorded access "
+                    "path benefiting the actual parcel, practical entry conditions, and evidence that "
+                    "maintenance obligations are affordable. P3 requires utility-provider information "
+                    "about service availability, connection charges, capacity, and timing; a line on "
+                    "the next street does not establish a usable connection. P4 requires an identified "
+                    "adjacent buyer and a premium supported by their use case, not a speculative "
+                    "assemblage multiplier. P5 requires written procedural guidance about subdivision, "
+                    "frontage, drainage, minimum lot dimensions, and infrastructure obligations. In "
+                    "applicable unincorporated Texas areas, Local Government Code § 232.001 supplies "
+                    "a county plat framework, with exceptions and additional rules requiring local "
+                    "review. Never assume that drawing two polygons creates two saleable lots. P6 "
+                    "requires a closing path that addresses commitment requirements and material "
+                    "exceptions before promising clean delivery. Ask the title company what coverage "
+                    "is actually available; insurance does not automatically establish buildability "
+                    "or remove exclusions. By Day 14, the owner should have three documented offer "
+                    "candidates or a specific diagnosis explaining the shortfall. If every candidate "
+                    "depends on an unpriced easement, rezoning, or utility extension, the county may "
+                    "be workable but the selected product and capital envelope are not aligned."
+                ),
+            ],
+            "table": {
+                "caption": "Days 8–14 Owner Outreach and Six-Play Screening Work Queue",
+                "headers": [
+                    "Daily checkpoint and accountable pod member",
+                    "Specific parcel or outreach work product",
+                    "Quantitative evidence required before proceeding further",
+                    "Concrete response when the evidence fails",
+                ],
+                "rows": [
+                    [
+                        "Day 8: analyst constructs the initial research cohort",
+                        "Assemble two hundred parcel records with county and ownership identifiers",
+                        "Remove duplicate ownership records and log every screening exclusion reason",
+                        "Return to the buy box when exclusions reveal inconsistent targeting",
+                    ],
+                    [
+                        "Day 9: analyst finishes the desktop parcel screen",
+                        "Retain one hundred fifty records matching acreage, use, and access screens",
+                        "Attach preliminary map evidence and ownership source dates to retained records",
+                        "Replace weak source records rather than treating map visibility as verification",
+                    ],
+                    [
+                        "Day 10: outreach contractor prepares the first owner letters",
+                        "Create accurate individualized letters and a dated delivery tracking register",
+                        "Target one hundred distinct owners after address and suppression checks",
+                        "Hold incorrect identities and addresses outside the active outreach cohort",
+                    ],
+                    [
+                        "Day 11: owner rehearses the qualification and offer process",
+                        "Document authority questions, parcel facts, price expectations, and response categories",
+                        "Distinguish qualified sale discussions from removals and unrelated incoming inquiries",
+                        "Revise the conversation script when essential parcel facts remain uncollected",
+                    ],
+                    [
+                        "Day 12: coordinator tests rural access and infill utilities",
+                        "Request recorded easements and utility-provider service scope for responsive parcels",
+                        "Identify a responsible source for each access or connection assertion",
+                        "Reject unsupported claims before ordering expensive parcel-specific specialist work",
+                    ],
+                    [
+                        "Day 13: owner evaluates assemblage and subdivision exceptions",
+                        "Document adjacent buyer interest and applicable county subdivision procedure",
+                        "Require priced incremental work before assigning any added resale value",
+                        "Keep speculative premiums outside the conservative offer calculation entirely",
+                    ],
+                    [
+                        "Day 14: owner ranks the first documented offer candidates",
+                        "Complete three comparable-supported underwriting files or a written shortfall diagnosis",
+                        "Check total cost, available capital, and three relevant comparables per candidate",
+                        "Revise product selection when every candidate requires unbudgeted entitlement work",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four Land-Specific Ways to Avoid Paying for False Positives",
+                "body": (
+                    "Buy inexpensive evidence first, but never confuse inexpensive evidence "
+                    "with a final professional determination."
+                ),
+                "items": [
+                    "Ask the recorder for the easement instrument and amendments before commissioning field work; the grant may exclude the intended use or benefit another parcel.",
+                    "Call the utility's service-design desk with the parcel identifier and intended load; a general customer-service statement rarely prices extension work.",
+                    "Interview adjacent owners about actual purchase interest before modeling assemblage value, and keep their statements separate from a binding purchase commitment.",
+                    "Maintain rejected comparable sales alongside accepted ones; a documented exclusion log prevents the next analyst from reintroducing inflated subdivision or improved-property prices.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Days 15–21: Resolve Fatal Defects Before Advancing Contract Exposure",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Week 3 turns seller interest into a controlled investigation, not an obligation "
+                    "to rescue every attractive parcel. Issue offers only after the owner signs the "
+                    "underwriting record and checks cash availability. Use locally appropriate contract "
+                    "forms and transaction counsel when drafting or modifying protections. Specify "
+                    "inspection periods, title review rights, deposit handling, permitted assignment "
+                    "if relevant, closing conditions, and the procedure for timely termination. Do "
+                    "not assume a contingency exists because a spreadsheet contains an unresolved "
+                    "issue. Open a deadline register immediately after execution, with reminders "
+                    "five, three, and one business day before each critical notice deadline. Route "
+                    "funds through the selected closing provider and independently verify wiring "
+                    "instructions using a previously established telephone number. A changed email "
+                    "attachment is not sufficient verification. Cap the pilot at two simultaneous "
+                    "paid diligence files; this limits both cash leakage and the coordinator's task "
+                    "load. Each file receives a defect ledger listing the issue, source document, "
+                    "responsible resolver, estimated cost, completion date, and effect on the offer. "
+                    "If a seller will not provide enough investigation time to answer a material "
+                    "question, decline or renegotiate rather than substituting confidence for evidence. "
+                    "The owner's signature records a decision, not merely attendance at a review."
+                ),
+                (
+                    "Investigate environmental constraints in proportion to the parcel's history and "
+                    "intended use, with qualified environmental professionals determining appropriate "
+                    "scope. County GIS, EPA mapping, aerial history, and FEMA layers identify questions; "
+                    "they cannot establish absence of contamination, wetlands, or developable area. "
+                    "CERCLA's bona fide prospective purchaser framework includes requirements in "
+                    "42 U.S.C. § 9601(40) and § 9607(r), while 40 CFR Part 312 governs all appropriate "
+                    "inquiries. Some inquiry components require updating within 180 days before "
+                    "acquisition, and the overall timing framework includes a one-year limit. Have "
+                    "the professional confirm applicable components and continuing obligations rather "
+                    "than treating a report date as a universal shield. Where fill or dredged material "
+                    "may affect jurisdictional waters, examine Clean Water Act § 404, 33 U.S.C. "
+                    "§ 1344, before modeling earthwork as routine preparation. For access, distinguish "
+                    "recorded legal rights, physical usability, and lender or title-insurer treatment. "
+                    "For zoning, obtain the permitted-use basis and dimensional constraints from "
+                    "the responsible authority. A parcel can have an insurable ownership interest "
+                    "while remaining commercially unsuitable for the intended purchaser. Record "
+                    "that distinction in the investment memo so a clean title discussion cannot "
+                    "silently replace the separate buildability investigation."
+                ),
+                (
+                    "Price the exit while diligence is still reversible. Contractor three develops "
+                    "a buyer evidence sheet with two independent price opinions, three comparable "
+                    "closings, likely buyer financing, estimated marketing time, and disposition "
+                    "expenses. A broker opinion is useful evidence but not a completed sale. When "
+                    "representing others for compensation, check the governing licensing rules; "
+                    "California Business and Professions Code §§ 10130–10131 illustrate why buying "
+                    "for one's own account and performing brokerage for another are distinct "
+                    "activities. Do not assume an ownership structure or assignment label resolves "
+                    "every state's requirements. Build a downside case with resale proceeds ten "
+                    "percent below the supported estimate and an additional six months of quoted "
+                    "carrying costs. The pilot purchase rule requires nonnegative owner profit under "
+                    "that downside and at least an 18.5 percent modeled net margin under the "
+                    "supported case, after allocated overhead. These are selection thresholds, not "
+                    "a restatement of the portfolio's realized outcomes. For example, an extra "
+                    "$3,000 carry on the $100,000 illustration leaves $5,500 profit after a ten "
+                    "percent price reduction. An unpaid easement cure can erase that cushion "
+                    "immediately. Reprice or terminate when verified costs break either threshold; "
+                    "do not preserve a contract merely because diligence money has already been spent."
+                ),
+            ],
+            "table": {
+                "caption": "Days 15–21 Contract, Access, Environmental, and Exit Evidence",
+                "headers": [
+                    "Daily checkpoint and named accountable function",
+                    "Required transaction evidence or completed work",
+                    "Specific completion standard before exposure increases",
+                    "Defect response and required operating consequence",
+                ],
+                "rows": [
+                    [
+                        "Day 15: owner issues evidence-backed written purchase offers",
+                        "Attach internal underwriting, funding availability, and a dated offer register",
+                        "Require three comparable closings and the supported margin screen",
+                        "Withhold offers whose acquisition cash exceeds the remaining deployable balance",
+                    ],
+                    [
+                        "Day 16: coordinator opens the executed-contract deadline register",
+                        "Record deposits, inspection dates, title objections, and notice delivery methods",
+                        "Schedule five, three, and one business day reminder intervals",
+                        "Escalate missing protections before releasing funds or allowing deadlines to expire",
+                    ],
+                    [
+                        "Day 17: coordinator reconciles title and recorded access",
+                        "Compare commitment requirements, legal description, easements, and available survey evidence",
+                        "Identify the exact recorded instrument supporting the parcel's access rights",
+                        "Terminate or renegotiate when the access defect lacks a priced cure",
+                    ],
+                    [
+                        "Day 18: specialist coordinator scopes environmental and field investigation",
+                        "Review historic uses, flood exposure, environmental flags, and physical conditions",
+                        "Obtain qualified scope and timing recommendations for material unresolved risks",
+                        "Stop discretionary spending where contamination or unusable acreage defeats the thesis",
+                    ],
+                    [
+                        "Day 19: owner confirms planning and subdivision assumptions",
+                        "Request intended-use interpretation, dimensional requirements, and applicable plat procedures",
+                        "Require written source support before assigning subdivision-related resale premiums",
+                        "Remove unverified lot creation from the current purchase price calculation",
+                    ],
+                    [
+                        "Day 20: disposition contractor validates the supported exit",
+                        "Collect two independent price opinions and relevant buyer financing expectations",
+                        "Separate signed buyer commitments from conversations and indicative price opinions",
+                        "Lower the resale estimate when actual buyer evidence contradicts listings",
+                    ],
+                    [
+                        "Day 21: owner reviews the complete downside investment memo",
+                        "Model ten percent lower proceeds and six additional carrying months",
+                        "Require nonnegative downside profit and an eighteen-point-five percent supported margin",
+                        "Reprice or exit contracts failing either documented parcel selection threshold",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the evidence package",
+                    "action": "Save dated title, access, comparable, utility, planning, and cost documents.",
+                    "detail": "Link each underwriting input to its source and distinguish professional findings from preliminary desktop observations.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile the entire cash obligation",
+                    "action": "Add purchase cash, deposits, fees, diligence, carrying, and selling obligations.",
+                    "detail": "Avoid double-counting credited deposits while retaining their full effect on cash availability before closing.",
+                },
+                {
+                    "step": 3,
+                    "title": "Apply supported and downside screens",
+                    "action": "Require the supported margin threshold, nonnegative downside profit, and protected operating reserve.",
+                    "detail": "Use verified cure costs and six extra months of carrying charges rather than a generic contingency percentage.",
+                },
+                {
+                    "step": 4,
+                    "title": "Execute or exit before the deadline",
+                    "action": "Record the owner's decision and deliver any required notices through the contract's specified method.",
+                    "detail": "Retain confirmation of delivery, deposit disposition, and the closed defect ledger in the parcel file.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Days 22–30 and Reviews at 60/90: Earn Expansion with Cohort Evidence",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use the final nine days to finish evidence, inspect workload, and reconcile "
+                    "cash rather than manufacture a closing milestone. Candidate #6 normally needs "
+                    "three to twelve months to reach a first deal, so Day 30 measures process "
+                    "validity and investable pipeline. Reconcile every invoice, refundable deposit, "
+                    "signed purchase obligation, and remaining reserve on Day 24. On Day 25, ask "
+                    "each contractor to report actual hours and unresolved tasks. If the owner "
+                    "exceeds forty planned hours or a contractor exceeds ten for two consecutive "
+                    "weeks, stop expanding file count until work is removed or repriced. On Day 26, "
+                    "audit ten randomly selected parcel records against original sources. Require "
+                    "at least nine complete files, with zero misidentified owners or unsupported "
+                    "legal-access conclusions. On Days 27–29, mature the outreach cohort, refresh "
+                    "the pipeline, and classify defects as fatal, curable within ten business days, "
+                    "or awaiting an external milestone. Day 30 produces a written Kill, Fix, or "
+                    "Scale decision for each channel and play. An immature cohort receives Fix, "
+                    "not a fabricated response rate. A healthy research pipeline can earn more "
+                    "screening capacity while still earning no authority to purchase a parcel."
+                ),
+                (
+                    "Apply the decision matrix in order: capital and fatal-defect stops first, "
+                    "qualified evidence second, expansion last. Kill means stop new spending on "
+                    "the affected channel, play, or parcel and preserve contractual rights; it "
+                    "does not mean abandon existing obligations. Fix means hold spending flat, "
+                    "name one bottleneck, and give its owner ten business days to produce a "
+                    "specific correction. Scale means increase screened or contacted volume by "
+                    "no more than twenty-five percent per review while preserving the same "
+                    "purchase rules and reserve. At Day 30, require 100 mature delivered contacts, "
+                    "five qualified seller conversations, three costed offers, and one diligence-ready "
+                    "candidate before expanding sourcing. Diligence-ready means plausible seller "
+                    "agreement on price, complete preliminary underwriting, an identified investigation "
+                    "path, and affordable cash exposure; it is not a title clearance. At Day 60, "
+                    "require 200 mature contacts, ten qualified conversations, six costed offers, "
+                    "and one executed investigation-protected contract. At Day 90, require 300, "
+                    "fifteen, and nine respectively, plus one fully underwritten acquisition-ready "
+                    "file and two evidenced buyer prospects. These cumulative targets test repeatability, "
+                    "not a predicted sales calendar. Failure to close by Day 90 alone does not "
+                    "trigger termination when the milestones, liquidity, and priced investigation "
+                    "path remain intact."
+                ),
+                (
+                    "Keep cash-control reporting separate from annual earnings reconciliation. The "
+                    "launch ceiling is $6,000 by Day 30, $12,000 cumulatively by Day 60, and "
+                    "$18,000 by Day 90 for non-acquisition pilot outlays. Purchase principal and "
+                    "closing commitments sit in a separate exposure schedule, never outside total "
+                    "cash control. Categorize direct parcel costs, inventory, and period overhead "
+                    "consistently with the accountant's treatment; deposits and unsold land are "
+                    "not completed-sale proceeds. The canonical Conservative case is $200,000 gross "
+                    "parcel sale proceeds less $176,000 total costs, leaving $24,000 owner profit "
+                    "at twelve percent. Base is $850,000 less $692,750, leaving $157,250 at "
+                    "18.5 percent. Scaled is $1,500,000 less $1,125,000, leaving $375,000 at "
+                    "twenty-five percent. Conservative and Base retain one full-time owner plus "
+                    "three contractors; Scaled requires two full-time people plus four contractors. "
+                    "Do not multiply a single successful flip into an annual forecast without "
+                    "accounting for capital recycling, inventory duration, overhead, and failed "
+                    "investigations. Add the sixth-person structure only after completed-sale evidence "
+                    "and workload support it, not because a Day-90 sourcing threshold was reached. "
+                    "Track realized margin separately from modeled margin and explain every variance. "
+                    "The sprint succeeds when the next capital decision is better supported, even "
+                    "when that decision is to stop buying."
+                ),
+            ],
+            "table": {
+                "caption": "Days 22–30 Execution and Quantitative Day 30/60/90 Kill, Fix, or Scale Matrix",
+                "headers": [
+                    "Execution checkpoint or quantitative review classification",
+                    "Required evidence and explicit measurable threshold",
+                    "Authorized action within the current capital envelope",
+                    "Required record and next verification deadline",
+                ],
+                "rows": [
+                    [
+                        "Day 22: coordinator resolves the highest-priority open defects",
+                        "Price every material cure or record a supported termination recommendation",
+                        "Advance no more than two simultaneous paid diligence files",
+                        "Update defect owner, quoted cost, source evidence, and resolution date",
+                    ],
+                    [
+                        "Day 23: disposition contractor completes buyer evidence records",
+                        "Document two independent price opinions and parcel-specific purchaser requirements",
+                        "Prepare accurate listing materials without asserting unverified buildability or utilities",
+                        "Retain the source behind each public property feature claim",
+                    ],
+                    [
+                        "Day 24: owner reconciles cash and signed obligations",
+                        "Keep first-month non-acquisition outlays within the six-thousand-dollar cumulative ceiling",
+                        "Suspend discretionary orders when incurred costs and commitments exceed budget",
+                        "Reconcile bank activity, invoices, deposits, and protected reserve balances",
+                    ],
+                    [
+                        "Day 25: owner checks the four-person pod workload",
+                        "Compare two weeks against forty owner hours and ten per contractor",
+                        "Freeze additional files after two consecutive weeks above planned capacity",
+                        "Name removable tasks and verify the revised schedule within one week",
+                    ],
+                    [
+                        "Day 26: analyst and owner audit ten parcel records",
+                        "Require nine complete files and zero identity or access misrepresentations",
+                        "Repair documentation before expanding the parcel sourcing or contact cohort",
+                        "Save sampled identifiers, source checks, defects, and assigned correction owners",
+                    ],
+                    [
+                        "Day 27: outreach contractor freezes the mature response cohort",
+                        "Include only supported deliveries aged at least fourteen calendar days",
+                        "Separate late mailings and undelivered records from the response denominator",
+                        "Publish distinct owner counts, qualified responses, and address-quality results",
+                    ],
+                    [
+                        "Day 28: owner assigns fatal and curable defect categories",
+                        "Require a priced ten-business-day correction plan for every curable bottleneck",
+                        "Exit fatal parcel defects while preserving notices and deposit rights",
+                        "Retain termination evidence or the responsible resolver's dated work commitment",
+                    ],
+                    [
+                        "Day 29: entire pod rehearses the next review decision",
+                        "Compare actual spend, evidence quality, workload, and cumulative pipeline targets",
+                        "Prepare separate recommendations for sourcing expansion and acquisition authorization",
+                        "Complete the decision memo before any new discretionary purchase orders",
+                    ],
+                    [
+                        "Day 30: owner signs the first cohort decision",
+                        "Apply the review thresholds below using frozen denominator and cost records",
+                        "Choose Kill, Fix, or Scale separately for each channel and play",
+                        "Schedule the correction review and the formal Day-60 portfolio review",
+                    ],
+                    [
+                        "Day 30 Kill: stop a failed mature channel",
+                        "Zero qualified conversations from at least one hundred mature delivered contacts",
+                        "Stop that channel's discretionary spend and investigate targeting before restarting",
+                        "Document the mature cohort and require a redesigned test before spending",
+                    ],
+                    [
+                        "Day 30 Fix: hold an incomplete or weaker test",
+                        "Below any Scale threshold without meeting the mature zero-response Kill condition",
+                        "Hold volume flat and correct one named bottleneck within ten business days",
+                        "Recheck cohort maturity, five conversations, three offers, and one viable candidate",
+                    ],
+                    [
+                        "Day 30 Scale: expand only the evidenced sourcing process",
+                        "One hundred mature contacts, five conversations, three offers, one diligence-ready candidate",
+                        "Increase sourcing volume by at most twenty-five percent inside existing budgets",
+                        "Require nine-of-ten file quality, protected reserve, and unchanged acquisition screens",
+                    ],
+                    [
+                        "Day 60 Kill: retire a demonstrably unproductive channel",
+                        "Fewer than four qualified conversations from two hundred mature delivered contacts",
+                        "Stop additional channel orders and preserve cash for verified existing opportunities",
+                        "Record the below-two-percent result and the cost of qualified conversations",
+                    ],
+                    [
+                        "Day 60 Fix: repair a pipeline below expansion thresholds",
+                        "Avoid the Kill condition but miss any Day-60 Scale requirement",
+                        "Keep cumulative non-acquisition spend at or below twelve thousand dollars",
+                        "Assign a ten-business-day correction for pricing, targeting, or contract conversion",
+                    ],
+                    [
+                        "Day 60 Scale: expand a contract-producing sourcing cohort",
+                        "Two hundred contacts, ten conversations, six offers, one protected executed contract",
+                        "Increase sourcing volume at most twenty-five percent without relaxing parcel screens",
+                        "Verify contract protections, workload capacity, file quality, and reserve before expansion",
+                    ],
+                    [
+                        "Day 90 Kill: stop a structurally failed channel or play",
+                        "Below six conversations from three hundred contacts, or three consecutive uncurable files",
+                        "Stop affected new commitments and reassess county selection or product economics",
+                        "Document whether response failure or repeated fatal defects caused the stop",
+                    ],
+                    [
+                        "Day 90 Fix: retain a solvent but unfinished pipeline",
+                        "Avoid Kill conditions but miss any Day-90 expansion evidence requirement",
+                        "Hold volume flat within eighteen thousand dollars cumulative non-acquisition spend",
+                        "Set the next external milestone and a ten-business-day internal correction review",
+                    ],
+                    [
+                        "Day 90 Scale: expand supported sourcing rather than forecast revenue",
+                        "Three hundred contacts, fifteen conversations, nine offers, one acquisition-ready file, two prospects",
+                        "Increase sourcing at most twenty-five percent while approving acquisitions individually",
+                        "Require complete parcel verification and buyer evidence before committing purchase funds",
+                    ],
+                    [
+                        "Every review: cash and fatal-defect stops override expansion",
+                        "Any reserve-threatening commitment, expired protection, or unresolved material parcel defect",
+                        "Suspend affected discretionary commitments and resolve obligations before further exposure",
+                        "Reconcile exposure immediately and require documented clearance before activity resumes",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Scale the evidence before you scale the acreage.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Select one county and one primary product; label all opportunities against the six mapped plays before buying owner data.",
+        "Assign the one-owner, three-contractor pod and publish the forty-hour owner and ten-hour contractor weekly planning limits.",
+        "Lock the $6,000 first-month non-acquisition ceiling, preserve the $18,000 future operating reserve, and track deposits as committed cash.",
+        "Build the 200-parcel research cohort, retain 150 screened records, and measure 100 distinct owner deliveries using a fourteen-day maturity window.",
+        "Complete access, title, intended-use, environmental, comparable-sale, and downside evidence before authorizing an acquisition.",
+        "Sign separate Day-30/60/90 channel and parcel decisions; reconcile realized results to the canonical annual revenue, cost, profit, and staffing cases.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "42 U.S.C. § 9601(40) — Bona fide prospective purchaser requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/42/9601",
+            "relevance": (
+                "Defines conditions relevant to purchaser liability protection, including "
+                "pre-acquisition inquiry and specified post-acquisition responsibilities."
+            ),
+        },
+        {
+            "title": "42 U.S.C. § 9607(r) — Prospective purchaser liability and windfall lien",
+            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
+            "relevance": (
+                "Connects qualifying purchaser status to CERCLA liability treatment and "
+                "identifies potential federal windfall-lien consequences."
+            ),
+        },
+        {
+            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
+            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
+            "relevance": (
+                "Provides environmental inquiry requirements, timing rules, and professional "
+                "evaluation standards relevant to pre-acquisition investigation."
+            ),
+        },
+        {
+            "title": "33 U.S.C. § 1344 — Permits for dredged or fill material",
+            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
+            "relevance": (
+                "Requires evaluating applicable federal permitting before assuming that "
+                "wet-area filling or related earthwork is an ordinary parcel improvement."
+            ),
+        },
+        {
+            "title": "Texas Local Government Code § 232.001 — Plat required",
+            "url": "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.232.htm#232.001",
+            "relevance": (
+                "Supplies a county subdivision plat framework for applicable land outside "
+                "municipal limits; local rules and statutory exceptions must be checked."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code § 10130 — License requirement",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
+            "relevance": (
+                "Establishes licensing requirements for acting as a real estate broker "
+                "or salesperson within California, subject to the governing statutory scheme."
+            ),
+        },
+        {
+            "title": "California Business and Professions Code § 10131 — Broker activities",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
+            "relevance": (
+                "Defines specified compensated real estate activities performed for another, "
+                "helping distinguish principal acquisitions from brokerage services."
+            ),
+        },
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Requires channel-specific assessment before adding regulated calling or "
+                "texting practices to the owner outreach program."
+            ),
+        },
+    ],
+}

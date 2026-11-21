@@ -1,0 +1,322 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-evidence-to-title-insured-exit",
+      "chart_type": "process_flow",
+      "title": "Buy the Evidence Before Buying the Parcel",
+      "subtitle": "Five operating stages for vacant land, infill, and minor subdivisions",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The operator trades owned inventory as principal. Annual revenue means gross parcel sale proceeds, with acquisition costs included in the net-margin calculation. Desktop GIS results are screening evidence, not proof of access, boundaries, or development rights.",
+      "caption": "Keep one parcel evidence packet from initial screening through recorded acquisition and insured disposition; unresolved fatal defects stop the purchase before capital becomes trapped.",
+      "stages": [
+        {
+          "label": "Screen the parcel",
+          "value": "GIS and comparable sales",
+          "numeric_value": 1.0,
+          "detail": "Join county assessor records to QGIS parcel layers, FEMA flood mapping, terrain, and recorded comparable sales. Flag landlocked geometry, steep slopes, suspect lot lines, and asking prices unsupported by completed transactions."
+        },
+        {
+          "label": "Verify the rights",
+          "value": "Access, title, and use",
+          "numeric_value": 1.0,
+          "detail": "Obtain the title commitment and exception documents; verify deeded access, easement scope, legal-lot status, zoning, utility availability, and environmental history. A visible road or neighboring house proves neither legal access nor permission to build."
+        },
+        {
+          "label": "Price and contract",
+          "value": "Exit value less every cost",
+          "numeric_value": 1.0,
+          "detail": "Set the acquisition ceiling from defensible resale value less acquisition expense, diligence, selling expense, carry, and target profit. Preserve inspection rights and tie deposits to explicit termination dates."
+        },
+        {
+          "label": "Close and prepare",
+          "value": "Insured acquisition and evidence",
+          "numeric_value": 1.0,
+          "detail": "Use a title or escrow provider to resolve closing requirements and record the deed. Complete only scoped survey, access, cleanup, or subdivision work supported by permits, written estimates, and the resale thesis."
+        },
+        {
+          "label": "Sell and reconcile",
+          "value": "Recorded exit and released cash",
+          "numeric_value": 1.0,
+          "detail": "Publish substantiated parcel facts through suitable land channels or a licensed broker, close with title insurance, and reconcile settlement proceeds against parcel costs. Track days held, realized margin, and cash released."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-annual-parcel-cohort-conversion",
+      "chart_type": "funnel",
+      "title": "From 10,000 Screened Parcels to 17 Completed Exits",
+      "subtitle": "One nested annual cohort supporting the mature Base-Case model",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Each stage is a subset of the preceding stage and counts unique parcel opportunities, not emails, owner contacts, or repeat offers. This illustrative mature-year cohort assumes its 17 acquisitions also resell within the modeled year at $50,000 each. Actual acquisition and disposition cohorts can cross reporting years.",
+      "caption": "17 completed parcel sales × $50,000 = $850,000 gross annual revenue. This is a steady-state illustration, not a first-month closing target; time to first deal remains 3–12 months.",
+      "stages": [
+        {
+          "label": "Parcels screened",
+          "value": "10,000 unique opportunities",
+          "numeric_value": 10000.0,
+          "detail": "Deduplicate assessor parcel identifiers and remove public land, incompatible parcel sizes, and obvious geographic mismatches. This starting population supplies the denominator for the complete conversion funnel."
+        },
+        {
+          "label": "Desktop-qualified parcels",
+          "value": "2,000 parcels; 20% advance",
+          "numeric_value": 2000.0,
+          "detail": "Retain parcels with plausible access, usable terrain, supporting sale comparables, and an identifiable owner. Desktop qualification does not replace title review or establish environmental suitability."
+        },
+        {
+          "label": "Seller-engaged parcels",
+          "value": "400 parcels; 20% advance",
+          "numeric_value": 400.0,
+          "detail": "Count an opportunity only after the owner or authorized representative responds substantively about that parcel. Record price expectations, ownership authority, timing, and disclosed property issues before preparing terms."
+        },
+        {
+          "label": "Written offers issued",
+          "value": "100 parcels; 25% advance",
+          "numeric_value": 100.0,
+          "detail": "Issue written offers only where preliminary economics survive transaction expenses and holding costs. Maintain one cohort entry per parcel even when price or inspection terms are revised."
+        },
+        {
+          "label": "Acquired and resold",
+          "value": "17 parcels; 17% advance",
+          "numeric_value": 17.0,
+          "detail": "Complete diligence, insured acquisition, and subsequent sale for 17 parcels: 0.17% of the original cohort. Count gross completed-sale proceeds rather than pending contracts, listing prices, or unrealized appreciation."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-owner-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "$850,000 Gross Sales to $157,250 Owner Net",
+      "subtitle": "Six bars reconcile exactly to the Base-Case 18.5% net margin",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per mature operating year. The first bar opens the balance, the next four bars are signed deductions, and the sixth bar is the closing total rather than another additive movement. Cost allocations are illustrative; gross revenue, margin, and owner net match the supplied scorecard. Owner net is the modeled business residual before personal income tax; no separate owner salary is deducted in this illustration.",
+      "caption": "$850,000 − $510,000 − $42,500 − $55,250 − $85,000 = $157,250; $157,250 ÷ $850,000 = 18.5%. Acquisition cost is an expense in this bridge, not an amount omitted from revenue.",
+      "stages": [
+        {
+          "label": "Gross parcel sales",
+          "value": "$850,000 opening balance",
+          "numeric_value": 850000.0,
+          "detail": "Recognize the model's gross completed parcel sale proceeds: 17 exits averaging $50,000. This principal trading model does not substitute broker commissions or third-party transaction volume for operator revenue."
+        },
+        {
+          "label": "Parcel acquisition basis",
+          "value": "−$510,000; 60.0% of sales",
+          "numeric_value": -510000.0,
+          "detail": "Allocate $30,000 average purchase price to each of 17 sold parcels. Match inventory basis to completed sales; cash spent on parcels still held at year-end is not automatically a current-year sale expense."
+        },
+        {
+          "label": "Diligence and preparation",
+          "value": "−$42,500; 5.0% of sales",
+          "numeric_value": -42500.0,
+          "detail": "Allow $2,500 per sold parcel for survey work, environmental screening, zoning verification, and limited site preparation. Specialist investigations or major entitlements require a separate acquisition budget."
+        },
+        {
+          "label": "Closing and selling",
+          "value": "−$55,250; 6.5% of sales",
+          "numeric_value": -55250.0,
+          "detail": "Allow $3,250 per sold parcel for allocated acquisition and disposition settlement charges, title costs, transaction-linked marketing, and applicable brokerage. Exclude these items from overhead to prevent double counting."
+        },
+        {
+          "label": "Carry and operating expense",
+          "value": "−$85,000; 10.0% of sales",
+          "numeric_value": -85000.0,
+          "detail": "Combine $25,000 annual parcel carry and financing expense with $60,000 recurring operating expense. The latter equals $5,000 monthly for contract capacity, screening systems, outreach, and administration."
+        },
+        {
+          "label": "Annual owner net",
+          "value": "$157,250 closing total",
+          "numeric_value": 157250.0,
+          "detail": "The final residual is 18.5% of gross sales after all four modeled expense groups. Render this bar from zero as the ending total, not as an additional increase to the running balance."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-parcel-strategy-spread-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Acquisition-Spread Yields, Not Listing Hype",
+      "subtitle": "Five independent parcel examples with the same $50,000 sale price",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Each numeric value is gross acquisition spread as a percentage of sale price: (sale price − purchase price) ÷ sale price. These illustrative yields exclude diligence, preparation, closing, selling, carry, and overhead; they are neither net margins nor annualized returns. Examples are independent alternatives, not a weighted portfolio or observed market ranking.",
+      "caption": "A wide acquisition spread can disappear through access repairs, utility extensions, septic failure, or delayed approvals. The 40% example matches the Base-Case spread before its remaining 21.5 percentage points of modeled expenses.",
+      "stages": [
+        {
+          "label": "Accessible rural acreage",
+          "value": "40% gross spread",
+          "numeric_value": 40.0,
+          "detail": "$50,000 resale less $30,000 purchase leaves $20,000 before other costs. Verify recorded access and actual road condition; a cheap landlocked parcel does not become attractive through a larger spreadsheet spread."
+        },
+        {
+          "label": "Utility-served infill lot",
+          "value": "35% gross spread",
+          "numeric_value": 35.0,
+          "detail": "$50,000 resale less $32,500 purchase leaves $17,500 before other costs. Confirm connection capacity, tap fees, setbacks, and legal-lot status; a utility line near the boundary is insufficient evidence."
+        },
+        {
+          "label": "Septic-dependent homesite",
+          "value": "30% gross spread",
+          "numeric_value": 30.0,
+          "detail": "$50,000 resale less $35,000 purchase leaves $15,000 before other costs. Obtain the local authority's required soil and wastewater findings before representing the parcel as suitable for residential construction."
+        },
+        {
+          "label": "Approved minor-split lot",
+          "value": "25% gross spread",
+          "numeric_value": 25.0,
+          "detail": "$50,000 resale less $37,500 allocated purchase basis leaves $12,500 before other costs. This example assumes an approved, legally created lot; unresolved split applications require separate timing and expense scenarios."
+        },
+        {
+          "label": "Recreational-use parcel",
+          "value": "20% gross spread",
+          "numeric_value": 20.0,
+          "detail": "$50,000 resale less $40,000 purchase leaves $10,000 before other costs. Verify lawful recreational uses, seasonal access, and restrictions; narrow buyer demand can make even modest carrying costs decisive."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-acquisition-statutory-risk-decisions",
+      "chart_type": "decision_tree",
+      "title": "Four Questions Before Acquisition Cash Leaves Escrow",
+      "subtitle": "Proceed on evidence; cure or reject material unresolved defects",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Read the four nodes sequentially. An affirmative, documented finding advances to the next node; an adverse or incomplete finding routes to a documented cure or rejection before closing. Federal environmental rules and California statutory examples serve different purposes; apply the actual property's state and local requirements rather than exporting California rules.",
+      "caption": "Title insurance, a clean-looking map, and a low purchase price answer different questions. None independently establishes legal access, permitted use, environmental suitability, or authority to represent another seller.",
+      "stages": [
+        {
+          "label": "Title and access",
+          "value": "Document rights or stop",
+          "numeric_value": 1.0,
+          "detail": "Review vesting, liens, taxes, recorded easements, surveys, and commitment exceptions with the title provider and counsel. Require access rights adequate for the intended use; cure defects before closing or reject the parcel rather than assume coverage."
+        },
+        {
+          "label": "Zoning and legal division",
+          "value": "Confirm the lawful parcel",
+          "numeric_value": 1.0,
+          "detail": "Obtain jurisdiction-specific findings on legal-lot status, setbacks, minimum area, and proposed division. For California examples, review Government Code §§ 66424 and 66428 and applicable local ordinances; an assessor parcel identifier alone proves no split approval."
+        },
+        {
+          "label": "Environmental constraints",
+          "value": "Investigate before taking title",
+          "numeric_value": 1.0,
+          "detail": "Evaluate contamination under 42 U.S.C. § 9607 and applicable inquiry requirements under 40 CFR Part 312. Check flood exposure and potential jurisdictional waters; discharges of dredged or fill material may require authorization under 33 U.S.C. § 1344."
+        },
+        {
+          "label": "Representation and disclosures",
+          "value": "Verify role and offering rules",
+          "numeric_value": 1.0,
+          "detail": "Distinguish owned-inventory sales from compensated representation of others. California examples include Business and Professions Code §§ 10130–10131 for licensing and § 11010 for covered subdivided-land offerings. Verify exemptions, required reports, and property-specific disclosures before solicitation or sale."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-person-land-trading-pod",
+      "chart_type": "org_architecture",
+      "title": "One Accountable Owner, Three Contract Specialists",
+      "subtitle": "Base pod: 1 FT + 3 C; scaled pod: 2 FT + 4 C",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The four displayed seats are people in the Conservative and Base-Case pod; C means contractor, not full-time equivalent. The scaled six-person pod adds one full-time operations lead and one contract field coordinator. Title, escrow, survey, environmental, and legal firms are transaction vendors outside this pod headcount; applicable fees remain in modeled expenses.",
+      "caption": "The owner controls capital allocation and final purchase terms. Specialists supply parcel evidence and transaction execution; automation accelerates screening without deciding title, access, zoning, or environmental conclusions.",
+      "stages": [
+        {
+          "label": "Owner and investment lead",
+          "value": "1 full-time seat",
+          "numeric_value": 1.0,
+          "detail": "Own acquisition ceilings, liquidity limits, offer terms, and exit decisions. Review held inventory weekly, reconcile parcel-level profit after settlement, and retain accountability when adding the scaled operations lead."
+        },
+        {
+          "label": "GIS and comparable-sales analyst",
+          "value": "1 contract seat",
+          "numeric_value": 1.0,
+          "detail": "Maintain QGIS screening layers, assessor extracts, recorded-sale comparisons, and evidence timestamps. Automate duplicate detection and comparable-sale tracking; escalate mismatched boundaries, unsupported access, and stale valuations to the owner."
+        },
+        {
+          "label": "Transaction coordinator",
+          "value": "1 contract seat",
+          "numeric_value": 1.0,
+          "detail": "Track inspection deadlines, title requirements, vendor deliverables, escrow documents, and settlement reconciliations. Route title opinions to counsel and coverage questions to the insurer; coordination does not confer authority to provide regulated professional services."
+        },
+        {
+          "label": "Licensed disposition specialist",
+          "value": "1 contract seat",
+          "numeric_value": 1.0,
+          "detail": "Use an appropriately licensed professional where representation requires it. Manage substantiated listings, buyer qualification, feedback, and closing coordination. At scaled volume, the added field coordinator handles site visits and vendor scheduling rather than brokerage."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-two-hundred-thousand-dollar-startup-stack",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate $200,000 Before Making the First Offer",
+      "subtitle": "Four nonoverlapping capital buckets within the $50,000–$400,000 range",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "This single startup allocation totals $200,000 and sits inside the canonical $50,000–$400,000 capital range. Values are USD capital allocations, not annual expenses or recognized revenue. Acquisition capital remains inventory until disposition; unused reserves remain cash. Recycling sale proceeds is required to support annual purchases above the initial inventory bucket.",
+      "caption": "$140,000 + $20,000 + $15,000 + $25,000 = $200,000. The operating reserve covers five months at the illustrative $5,000 monthly run rate, not the entire 3–12 month first-deal window under every timing outcome.",
+      "stages": [
+        {
+          "label": "Parcel purchase capital",
+          "value": "$140,000; 70.0%",
+          "numeric_value": 140000.0,
+          "detail": "Reserve cash for purchase prices and deposits credited against those prices. At the Base-Case $30,000 average purchase price, four simultaneous parcels use $120,000; do not count pending sales as available acquisition cash."
+        },
+        {
+          "label": "Diligence and preparation",
+          "value": "$20,000; 10.0%",
+          "numeric_value": 20000.0,
+          "detail": "Fund surveys, environmental work, land-use verification, and narrowly scoped preparation. Track failed-deal investigation costs separately from successful parcel basis, and stop spending when a fatal defect emerges."
+        },
+        {
+          "label": "Closing and carrying liquidity",
+          "value": "$15,000; 7.5%",
+          "numeric_value": 15000.0,
+          "detail": "Hold liquidity for settlement charges, property taxes, insurance, and parcel-specific carrying bills before sales replenish cash. Do not also allocate this same cash to recurring contractor or software invoices."
+        },
+        {
+          "label": "Operating runway",
+          "value": "$25,000; 12.5%",
+          "numeric_value": 25000.0,
+          "detail": "Fund five months of recurring operations at $5,000 monthly. The canonical monthly range is $3,000–$15,000; a slower exit or higher burn requires fewer concurrent purchases, more capital, or lower spending."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-land-desk-launch",
+      "chart_type": "timeline_roadmap",
+      "title": "Build the Acquisition System in 30 Days",
+      "subtitle": "Four weekly deliverables; first-deal timing remains 3–12 months",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are cumulative milestone days: 7, 14, 21, and 30. This sprint establishes operating readiness and a measured pipeline, not a promised closing. Canonical annual scenarios are Conservative: $200,000 gross × 12% = $24,000 owner net with 1 FT + 3 C; Base-Case: $850,000 gross × 18.5% = $157,250 owner net with 1 FT + 3 C; Scaled Small-Team: $1,500,000 gross × 25% = $375,000 owner net with 2 FT + 4 C.",
+      "caption": "Advance by completed evidence and funded obligations. Illiquidity, absent legal access, and environmental constraints can defeat attractive headline spreads before the first resale.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Select market and capital limits",
+          "numeric_value": 7.0,
+          "detail": "Choose one county and parcel thesis, assemble recorded sale comparables, and document zoning and subdivision contacts. Set maximum cash exposure per parcel, minimum operating runway, and the four startup capital allocations before soliciting sellers."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Build the screening evidence chain",
+          "numeric_value": 14.0,
+          "detail": "Configure QGIS parcel layers, assessor-record imports, comparable-sale tracking, and a parcel evidence checklist. Screen an initial 250 unique parcels and manually inspect 25 records for mapping, ownership, and sale-comparison errors before increasing throughput."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Test outreach and transaction support",
+          "numeric_value": 21.0,
+          "detail": "Contact a measured subset of qualified owners and record parcel-level responses rather than message counts. Obtain title-provider terms, survey quotes, and specialist availability; prepare written offer forms and jurisdiction-specific disclosure checklists."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Review offers and funded runway",
+          "numeric_value": 30.0,
+          "detail": "Underwrite responsive opportunities, issue only offers supported by evidence, and schedule inspection deadlines. Reconcile funnel counts, committed cash, remaining runway, and open defects; carry incomplete investigations forward without treating unsigned or unclosed deals as revenue."
+        }
+      ]
+    }
+  ]
+}

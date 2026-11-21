@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-018-land-flipping",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1921523,
+      "sha256": "b3cbc2457bdb9680859508346f04277f4169e6c7124bc7293b2f1cb073301771"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2499790,
+      "sha256": "3bb2d60c861bfdf121ce95d93a3731a7dcf6fbca5b4db6cce3307f4cd32c80a5"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 531833,
+      "sha256": "d129131ee575d1b285978522900a5ce162c2a0f1ab917e7fd4c44b18e6554f02"
+    },
+    "book.epub": {
+      "bytes": 249763,
+      "sha256": "204a5212c6aa373ba32e2d2a45f0c021c2ab015696151eacc196373f64d2c724"
+    },
+    "art/cover.svg": {
+      "bytes": 4009,
+      "sha256": "98c25d66bf72cf62ba8bfffe094f05864c100dfaf5653dec52238d919bc99fc9"
+    },
+    "art/scorecard.svg": {
+      "bytes": 36931,
+      "sha256": "b9889906c434c815b81fe9df1c3d30c50780e26cb72b92ddf8dc05497b3824c2"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12023,
+      "sha256": "1947bd3fc1e69cb580d90f46a841da7def33599309363321aa457a3d8e5f983e"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8654,
+      "sha256": "e49312c83b8b2daeee31da79dc63f01b68dd0be0da664a386f109cc1d7992a1c"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12154,
+      "sha256": "c0083f566818f8c063880f708dcfc91b3106b9fe5f237a781a32758a6b2f8ea2"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9911,
+      "sha256": "74c0690a8c9ca9be0548e6c22781b44fc4b2ca2bf34ff7293c892869f4d418f1"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10762,
+      "sha256": "86b98e03cd1b7f9c7f8607deaca3f078875e49bdb64bf1eb555f699a7c589267"
+    },
+    "art/diag_06.svg": {
+      "bytes": 10483,
+      "sha256": "387c18e990ba2eea952105ce2422665a1dc9580a47c3b6d69881b21e908a163b"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8909,
+      "sha256": "5db2c17ecc63cb77496c9788e4c32cda0da0baeacea95275a83b2132d56dc2c9"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8966,
+      "sha256": "b4854d2dc372e8b1b7a8773cf37871b9b87594d90a80fba90f0368e5be3cbae3"
+    }
+  }
+}
