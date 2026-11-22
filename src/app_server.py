@@ -103,6 +103,10 @@ def markdown_to_pdf_bytes(markdown: str, title: str = "ProTip Agent Report", sub
     raise RuntimeError("markdown_to_pdf_bytes is not available in this project")
 
 
+_APPSTATE_CORPUS_CACHE: dict[str, tuple[list[dict], list[dict]]] = {}
+_APPSTATE_CORPUS_CACHE_LOCK = threading.Lock()
+
+
 class AppState:
     """Thread-safe corpus state: raw records, abridged digests and the evidence index."""
 
@@ -110,12 +114,23 @@ class AppState:
         self.data_dir = Path(data_dir)
         self._lock = threading.RLock()
         self.lock = self._lock
-        self.raw_videos = self._load_videos()
-        self.evidence_index = EvidenceIndex(self.raw_videos)
-        self.abridged_list = [abridge_video(v) for v in self.raw_videos]
+        self._evidence_index: EvidenceIndex | None = None
+        self.raw_videos, self.abridged_list = self._load_videos_and_abridged()
         self.abridged_by_id = {a["video_id"]: a for a in self.abridged_list}
         self.raw_by_id = {v["video_id"]: v for v in self.raw_videos}
         self._last_ebook = None
+
+    @property
+    def evidence_index(self) -> EvidenceIndex:
+        with self._lock:
+            if self._evidence_index is None:
+                self._evidence_index = EvidenceIndex(self.raw_videos)
+            return self._evidence_index
+
+    @evidence_index.setter
+    def evidence_index(self, value: EvidenceIndex | None) -> None:
+        with self._lock:
+            self._evidence_index = value
 
     @property
     def last_ebook(self):
@@ -127,15 +142,46 @@ class AppState:
         with self.lock:
             self._last_ebook = copy.deepcopy(value) if value is not None else None
 
+    def _corpus_paths(self) -> list[Path]:
+        return (sorted((self.data_dir / 'transcripts').glob('*.json')) +
+                sorted((self.data_dir / 'custom').glob('*.json')) +
+                [self.data_dir / 'custom_videos.json'])
+
     def _load_videos(self) -> list[dict]:
-        videos, known = [], set()
-        paths = (sorted((self.data_dir / 'transcripts').glob('*.json')) +
-                 sorted((self.data_dir / 'custom').glob('*.json')) +
-                 [self.data_dir / 'custom_videos.json'])
+        raw_videos, _ = self._load_videos_and_abridged()
+        return raw_videos
+
+    def _load_videos_and_abridged(self) -> tuple[list[dict], list[dict]]:
+        import hashlib
+        paths = self._corpus_paths()
+        hasher = hashlib.sha256()
+        existing_blobs: list[tuple[Path, bytes]] = []
         for path in paths:
             try:
-                data = json.loads(path.read_text(encoding='utf-8'))
-            except (OSError, ValueError):
+                raw_bytes = path.read_bytes()
+            except OSError:
+                continue
+            rel = str(path.relative_to(self.data_dir)) if self.data_dir in path.parents else path.name
+            hasher.update(rel.encode('utf-8'))
+            hasher.update(b'\0')
+            hasher.update(hashlib.sha256(raw_bytes).digest())
+            existing_blobs.append((path, raw_bytes))
+        cache_key = hasher.hexdigest()
+        with _APPSTATE_CORPUS_CACHE_LOCK:
+            cached = _APPSTATE_CORPUS_CACHE.get(cache_key)
+        if cached is not None:
+            return copy.deepcopy(cached[0]), copy.deepcopy(cached[1])
+
+        if __package__:
+            from .build_agent_report import classify as _classify, mentions as _mentions
+        else:
+            from build_agent_report import classify as _classify, mentions as _mentions
+
+        videos, abridged_out, known = [], [], set()
+        for path, raw_bytes in existing_blobs:
+            try:
+                data = json.loads(raw_bytes.decode('utf-8'))
+            except (UnicodeDecodeError, ValueError):
                 continue
             entries = data if isinstance(data, list) else data.get('videos', [data]) if isinstance(data, dict) else []
             if not isinstance(entries, list):
@@ -169,12 +215,19 @@ class AppState:
                 record['index'] = len(videos) + 1
                 record['word_count'] = len(record['full_text'].split())
                 try:
-                    abridge_video(record)
+                    record['domain'] = _classify(record)
+                    record['tools'] = _mentions(record['full_text'] + '\n' + meta.get('shortDescription', ''))
+                    ab = abridge_video(record)
                 except (KeyError, TypeError, ValueError, AttributeError, OverflowError):
                     continue
                 videos.append(record)
+                abridged_out.append(ab)
                 known.add(vid)
-        return videos
+        with _APPSTATE_CORPUS_CACHE_LOCK:
+            if len(_APPSTATE_CORPUS_CACHE) >= 8:
+                _APPSTATE_CORPUS_CACHE.pop(next(iter(_APPSTATE_CORPUS_CACHE)))
+            _APPSTATE_CORPUS_CACHE[cache_key] = (copy.deepcopy(videos), copy.deepcopy(abridged_out))
+        return videos, abridged_out
 
     def _persist(self, record: dict) -> None:
         atomic_write(self.data_dir / 'custom_videos.json',
@@ -218,9 +271,18 @@ class AppState:
                     prior_bytes = custom_path.read_bytes() if custom_path.exists() else None
                     prior_raw = list(self.raw_videos)
                     prior_abridged = list(self.abridged_list)
+                    had_ei = self._evidence_index is not None
                     try:
                         self._persist(record)
-                        self.evidence_index.add_record(record)
+                        if had_ei:
+                            self._evidence_index.add_record(record)
+                        else:
+                            if __package__:
+                                from .build_agent_report import classify as _classify, mentions as _mentions
+                            else:
+                                from build_agent_report import classify as _classify, mentions as _mentions
+                            record['domain'] = _classify(record)
+                            record['tools'] = _mentions(record['full_text'] + '\n' + record.get('metadata', {}).get('shortDescription', ''))
                         self.raw_videos.append(record)
                         self.raw_by_id[vid] = record
                         self.abridged_list.append(ab)
@@ -238,7 +300,7 @@ class AppState:
                         self.abridged_list = prior_abridged
                         self.raw_by_id = {v['video_id']: v for v in prior_raw}
                         self.abridged_by_id = {v['video_id']: v for v in prior_abridged}
-                        self.evidence_index = EvidenceIndex(prior_raw)
+                        self._evidence_index = EvidenceIndex(prior_raw) if had_ei else None
                         raise
             except Exception as exc:
                 failed += 1

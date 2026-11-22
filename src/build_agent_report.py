@@ -35,10 +35,20 @@ TOOLS = (
 ACTION = re.compile(r'\b(search|check|find|verify|record|request|compare|look|click|select|upload|download|file|contact|read|identify|follow|use|obtain|review|trace|document)\b', re.I)
 SIGNAL = re.compile(r'\b(must|need|important|because|first|step|deadline|required|cannot|always|never|example|however|instead)\b', re.I)
 URL = re.compile(r'https?://[^\s<>"\]]+')
+_TOKEN_RE = re.compile(r'[a-z0-9]+')
+_TOOLS_CANON = {tool.lower(): tool for tool in TOOLS}
+_TOOLS_RE = re.compile(
+    r'(?<!\w)(?:' + '|'.join(re.escape(tool) for tool in sorted(TOOLS, key=len, reverse=True)) + r')(?!\w)',
+    re.I,
+)
+_STATUTE_ACT_RE = re.compile(r'\b(?:[A-Z][a-z]+\s+){0,3}(?:Code|Act|Statute)\s*(?:§\s*)?\d+(?:\.\d+)*')
 
 
 def tokens(text):
-    return [w for w in re.findall(r'[a-z0-9]+', text.lower()) if len(w) > 2 and w not in STOP]
+    return [w for w in _TOKEN_RE.findall(text.lower()) if len(w) > 2 and w not in STOP]
+
+
+_DOMAIN_TERMS = {domain: tokens(terms) for domain, (_, terms) in DOMAINS.items()}
 
 
 def stamp(seconds):
@@ -108,18 +118,15 @@ def classify(video):
     title = Counter(tokens(video['metadata'].get('title', '')))
     body = Counter(tokens(video['full_text']))
     scores = {}
-    for domain, (_, terms) in DOMAINS.items():
-        scores[domain] = sum(10 * title[t] + math.log1p(body[t]) for t in tokens(terms))
+    for domain, d_terms in _DOMAIN_TERMS.items():
+        scores[domain] = sum(10 * title[t] + math.log1p(body[t]) for t in d_terms)
     return max(scores, key=scores.get)
 
 
 def mentions(text):
-    found = set()
-    for tool in TOOLS:
-        if re.search(r'(?<!\w)' + re.escape(tool) + r'(?!\w)', text, re.I):
-            found.add(tool)
+    found = {_TOOLS_CANON[m.group(0).lower()] for m in _TOOLS_RE.finditer(text)}
     found.update(url.rstrip('.,);') for url in URL.findall(text))
-    found.update(m.group(0) for m in re.finditer(r'\b(?:[A-Z][a-z]+\s+){0,3}(?:Code|Act|Statute)\s*(?:§\s*)?\d+(?:\.\d+)*', text))
+    found.update(m.group(0) for m in _STATUTE_ACT_RE.finditer(text))
     return sorted(found, key=lambda s: (s.casefold(), s))
 
 

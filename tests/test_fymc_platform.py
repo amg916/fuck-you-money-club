@@ -2795,7 +2795,71 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(man_b_v5["volume_id"], VOLUME_005_ID)
         self.assertTrue(man_b_v5["approved"])
 
-        # 7. Full QA across all five built volumes + multi-volume HTTP routes
+        # 6c. Volumes 006–029 (All 24 Expansion Playbooks) 10/10 3-Question Self-Audit & PDF Octal Escape Invariants
+        from src.fymc import ALL_VOLUME_SPECS
+        from src.fymc.scorecard_engine import get_candidate_track_metadata
+        self.assertEqual(len(PUBLISHED_VOLUME_IDS), 29)
+        repo_full_state = self.store.load_publishing_state(ROOT, verify_manifest=True)
+        for vnum in range(6, 30):
+            vspec = ALL_VOLUME_SPECS[vnum]
+            vid = vspec["volume_id"]
+            with self.subTest(volume_id=vid):
+                self.assertIn(vid, PUBLISHED_VOLUME_IDS)
+                vbundle = repo_full_state["volumes"][vid]
+                vms = vbundle["manuscript"]
+                vwb = vbundle["workbook"]
+                vsc = vbundle["scorecard"]
+                self.assertEqual(vsc["total_score"], vspec["score"])
+                self.assertEqual(vsc["production_stage"], "approved_master")
+                # Q1: >=150 distinct cited videos & >=180 deep links
+                self.assertGreaterEqual(vms["expert_youtube_link_count"], 180)
+                cited_vids = {
+                    cit["video_id"]
+                    for ch in vms["chapters"]
+                    for cit in (ch.get("source_citations") or [])
+                    if cit.get("video_id")
+                }
+                self.assertGreaterEqual(len(cited_vids), 150)
+                # Q2: 12 INSIDER PRO-TIPS callouts (>=48 tactics) + 12 OPERATOR GATE callouts
+                ins_callouts = [
+                    c for ch in vms["chapters"] for sec in ch.get("sections", [])
+                    for c in (sec.get("callouts") or ([sec["callout"]] if isinstance(sec.get("callout"), dict) else []))
+                    if isinstance(c, dict) and c.get("kind") == "INSIDER PRO-TIPS"
+                ]
+                op_gates = [
+                    c for ch in vms["chapters"] for sec in ch.get("sections", [])
+                    for c in (sec.get("callouts") or ([sec["callout"]] if isinstance(sec.get("callout"), dict) else []))
+                    if isinstance(c, dict) and c.get("kind") == "OPERATOR GATE"
+                ]
+                self.assertGreaterEqual(len(ins_callouts), 12)
+                self.assertGreaterEqual(sum(len(c.get("items") or []) for c in ins_callouts), 48)
+                self.assertGreaterEqual(len(op_gates), 12)
+                # Q3: >=58k words, >=1,950 prose words/ch, >=5.5 avg words/cell, Worked 90-Day Cohort Walk, 100% mapped plays, >=5,050 workbook words
+                self.assertGreaterEqual(vms["total_word_count"], 58000)
+                expected_plays = {p["id"] for p in get_candidate_track_metadata(vspec["candidate_number"]).get("plays", [])}
+                self.assertEqual({p["id"] for p in vms.get("operator_plays", [])}, expected_plays)
+                self.assertIn("Worked 90-Day Cohort Walk", json.dumps(vms["chapters"][6]))
+                self.assertEqual(len(vwb["worksheets"]), 6)
+                self.assertGreaterEqual(len(json.dumps(vwb).split()), 5050)
+                vtables = [
+                    t for ch in vms["chapters"] for sec in ch.get("sections", [])
+                    for t in (sec.get("tables") or ([sec["table"]] if isinstance(sec.get("table"), dict) else []))
+                    if isinstance(t, dict) and t.get("rows")
+                ]
+                vcells = [str(cell) for t in vtables for r in t["rows"] for cell in r]
+                self.assertGreaterEqual(sum(len(c.split()) for c in vcells) / max(1, len(vcells)), 5.5)
+                for ch in vms["chapters"]:
+                    pw = sum(len(re.findall(r"\b\w+\b", str(p))) for sec in ch.get("sections", []) for p in sec.get("paragraphs", []))
+                    self.assertGreaterEqual(pw, 1950)
+                    self.assertGreaterEqual(len(ch.get("statutory_citations", [])), 3)
+                    self.assertGreaterEqual(len(ch.get("source_citations", [])), 15)
+
+        # Verify Vol 015 PDF octal \042 escape avoids false-positive UTF-16BE U+2122 on '!"'
+        pdf_v15_b = render_fymc_pdf_bytes(repo_full_state, "concept_b", "digital_pdf", volume_id="vol-015-judgment-recovery")
+        self.assertTrue(validate_pdf_bytes(pdf_v15_b, "digital_pdf")["passed"])
+        self.assertIn(b"VOLUME 015", pdf_v15_b)
+
+        # 7. Full QA across all 29 built volumes + multi-volume HTTP routes
         qa = run_full_qa_suite(self.root, state)
         self.assertTrue(qa["overall_pass"], qa["issues"])
         self.assertTrue(qa["gates"]["owner_design_approved"])

@@ -31,6 +31,11 @@ CATEGORIES = (("never|don't|mistake|trap|reject", "Pitfall / Hard No"),
               ("first|instead", "Sequence / Alternative"))
 VERBS = ("call", "pull", "file", "record", "order", "check", "search", "verify", "skip", "send",
          "sign", "request", "confirm", "open", "close", "negotiate", "offer", "contact", "review")
+_CATEGORIES_COMPILED = tuple((re.compile(pattern), label) for pattern, label in CATEGORIES)
+_VERBS_RE = re.compile(r"\b(?:" + "|".join(re.escape(v) for v in VERBS) + r")\b")
+_WS_RE = re.compile(r"\s+")
+_ALNUM_RE = re.compile(r"[^a-z0-9]")
+_SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|(?<=—)\s+")
 
 _URL_RE = re.compile(
     r"(?:youtube\.com/(?:watch\?(?:[^\s\"'<>&]*&)*v=|shorts/|embed/|live/|v/)|youtu\.be/)([A-Za-z0-9_-]{11})(?=$|[?&#/\s])"
@@ -60,7 +65,7 @@ def extract_video_urls(raw_text: str) -> list[tuple[str, str]]:
 
 
 def _clean(text: str) -> str:
-    return re.sub(r"\s+", " ", str(text or "")).strip()
+    return _WS_RE.sub(" ", str(text or "")).strip()
 
 
 def _win_parts(w) -> tuple[str, int]:
@@ -98,14 +103,14 @@ def _score(text: str) -> int:
 
 def _category(text: str) -> str:
     low = text.lower()
-    for pattern, label in CATEGORIES:
-        if re.search(pattern, low):
+    for compiled_re, label in _CATEGORIES_COMPILED:
+        if compiled_re.search(low):
             return label
     return "Practitioner Note"
 
 
 def _sentences(text: str) -> list[str]:
-    return [s.strip() for s in re.split(r"(?<=[.!?])\s+|(?<=—)\s+", _clean(text)) if len(s.strip()) > 25]
+    return [s.strip() for s in _SENT_SPLIT_RE.split(_clean(text)) if len(s.strip()) > 25]
 
 
 def abridge_video(video: dict) -> dict:
@@ -131,7 +136,7 @@ def abridge_video(video: dict) -> dict:
     for sc, _, text, secs in ranked:
         if sc <= 0 or len(tips) >= 7:
             break
-        key = re.sub(r"[^a-z0-9]", "", text.lower())[:90]
+        key = _ALNUM_RE.sub("", text.lower())[:90]
         if key in seen:
             continue
         seen.add(key)
@@ -169,7 +174,7 @@ def abridge_video(video: dict) -> dict:
         if len(checklist) >= 8:
             break
         low = text.lower()
-        if any(re.search(rf"\b{v}\b", low) for v in VERBS):
+        if _VERBS_RE.search(low):
             checklist.append(text[:260])
     details = {"tools_and_portals": mentions(full_text + "\n" + _clean(meta.get("shortDescription"))),
                "statutes_and_forms": statutes[:25],

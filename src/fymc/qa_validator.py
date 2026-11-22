@@ -442,14 +442,19 @@ def run_full_qa_suite(root_dir: Path, state: dict, *, volume_id: object = None) 
                                               or metadata.get('volume_number'))
         volume_reports = {active_slug: report}
         issues = list(report['issues'])
-        for slug in volumes:
-            if slug == active_slug:
-                continue
+        other_slugs = [slug for slug in volumes if slug != active_slug]
+        def _safe_sub_qa(target_slug: str) -> dict:
             try:
-                sub_report = _run_single_volume_qa(state, slug)
+                return _run_single_volume_qa(state, target_slug)
             except Exception as exc:
-                sub_report = {'overall_pass': False,
-                              'issues': [f'{type(exc).__name__}: {exc}']}
+                return {'overall_pass': False, 'issues': [f'{type(exc).__name__}: {exc}']}
+        if len(other_slugs) > 1:
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(max_workers=min(8, len(other_slugs))) as pool:
+                sub_results = list(pool.map(_safe_sub_qa, other_slugs))
+        else:
+            sub_results = [_safe_sub_qa(s) for s in other_slugs]
+        for slug, sub_report in zip(other_slugs, sub_results):
             volume_reports[slug] = sub_report
             issues.extend(f'{slug}: {issue}' for issue in sub_report['issues'])
         report = {**report, 'issues': issues, 'overall_pass': not issues,

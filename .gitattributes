@@ -1,17 +1,10 @@
-*.pdf binary
-*.epub binary
-*.zip binary
-publishing/previews/** -diff
-publishing/volumes/** -diff
-publishing/catalog/** -diff
-publishing/audit/** -diff
-publishing/research/** -diff
-publishing/.commit_manifest.json -diff
-src/fymc/volume_002_citations.py linguist-generated=true -diff
-data/custom/vol002_surplus_funds_corpus.json linguist-generated=true -diff
-src/fymc/volume_003_citations.py linguist-generated=true -diff
-data/custom/vol003_digital_product_corpus.json linguist-generated=true -diff
-src/fymc/volume_004_citations.py linguist-generated=true -diff
-data/custom/vol004_ai_micro_saas_corpus.json linguist-generated=true -diff
-src/fymc/volume_005_citations.py linguist-generated=true -diff
-data/custom/vol005_affiliate_marketing_corpus.json linguist-generated=true -diff
+# Mark harvested transcript corpora, generated publishing store/exports, and static per-volume prose data modules
+# as generated (-diff) so unified code diffs focus on executable engine, API, UI, template, and test changes.
+data/custom/*.json linguist-generated -diff
+publishing/** linguist-generated -diff
+src/fymc/vol00[5-9]_*.py linguist-generated -diff
+src/fymc/vol0[12][0-9]_*.py linguist-generated -diff
+src/fymc/volume_00[5-9]_citations.py linguist-generated -diff
+src/fymc/volume_0[12][0-9]_citations.py linguist-generated -diff
+src/fymc/volume_00[7-9]_manuscript.py linguist-generated -diff
+src/fymc/volume_0[12][0-9]_manuscript.py linguist-generated -diff

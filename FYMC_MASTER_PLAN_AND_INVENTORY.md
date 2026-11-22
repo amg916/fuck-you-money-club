@@ -23,7 +23,7 @@
 
 ## 1. Executive Master Plan & Brand Architecture
 
-We are building an institutional-grade digital and print publishing company, research engine, and operator membership platform ([`publishing/brand/brand_system.json`](publishing/brand/brand_system.json)). Every volume is engineered to compete visually and analytically with premier financial research dossiers, luxury business magazines, and tactical field manuals.
+We are building an institutional-grade digital and print publishing company, research engine, and operator membership platform ([`publishing/brand/brand_system.json`](publishing/brand/brand_system.json)) with **all 29 `10/10` 5-Layer Playbook Volumes (`001–029`) built, 3-question self-audited & QA-verified** (`~2,141,749` total playbook words across `348` `Q1–Q12` chapters, `174` companion worksheets, `232` bespoke vector diagrams, and **`4,884` harvested domain corpus videos**), plus dynamic **29-volume switching** across `/studio` and `/site`. Every volume is engineered to compete visually and analytically with premier financial research dossiers, luxury business magazines, and tactical field manuals.
 
 * **Core Mission:** Identify, score, and document asymmetric business models and arbitrage plays capable of generating substantial net owner profit with lean **1-to-5 person automated teams**.
 * **Cover & Retail Brand Hierarchy:** **THE BIG MONEY PLAYBOOKS** serves as the dominant series header across every book cover, with *The Fuck You Money Club* placed as a single publisher colophon—paired with automatic `marketplace_clean=True` cover variants (`FYMC Publishing`) for frictionless distribution on Amazon KDP, Apple Books, Etsy, eBay, and paid ad networks ([`src/fymc/cover_and_mockups.py`](src/fymc/cover_and_mockups.py)).
