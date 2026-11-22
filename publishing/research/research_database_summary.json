@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 4359,
-  "raw_video_count": 4359,
+  "abridged_video_count": 4534,
+  "raw_video_count": 4534,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-21T23:38:52+00:00",
+      "generated_at": "2026-11-22T00:15:40+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-21T23:38:52Z",
+  "generated_at": "2026-11-22T00:15:40Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 3392,
-      "tip_count": 6837,
-      "channel_count": 2211,
+      "video_count": 3555,
+      "tip_count": 7199,
+      "channel_count": 2310,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -81,18 +81,18 @@
           "duration": "00:19:07"
         },
         {
+          "video_id": "ha9dRzcYak4",
+          "title": "EBITDA Is an Opinion. Cash Flow Is a Fact. (M&A Practitioner Walkthrough)",
+          "author": "John Colley | The Investment Banking Practitioner",
+          "url": "https://www.youtube.com/watch?v=ha9dRzcYak4",
+          "duration": "00:10:27"
+        },
+        {
           "video_id": "SPl9Y_xMJHA",
           "title": "Freight Broker Commission Percentage | Everything you need to know! 🚚",
           "author": "Freight 360",
           "url": "https://www.youtube.com/watch?v=SPl9Y_xMJHA",
           "duration": "00:04:59"
-        },
-        {
-          "video_id": "e5r7-KT6mQ0",
-          "title": "Ecommerce Contribution Margin Explained",
-          "author": "LedgerGurus: Ecommerce Accounting Experts",
-          "url": "https://www.youtube.com/watch?v=e5r7-KT6mQ0",
-          "duration": "00:03:42"
         }
       ],
       "top_timestamped_insights": [
@@ -192,42 +192,42 @@
         "form and",
         "form that",
         "form for",
-        "form to",
         "form is",
+        "form to",
         "form the",
         "form or",
         "form you",
         "form a",
         "form in",
-        "form on",
         "form so",
+        "form your",
+        "form on",
         "form where",
         "form with",
-        "form your",
         "form like",
         "court order",
         "form as",
-        "quiet title",
-        "form it",
-        "form uh",
-        "form at",
-        "form I",
         "form if",
-        "form their",
+        "form it",
+        "quiet title",
+        "form I",
+        "form uh",
         "form which",
-        "letters of administration",
-        "form content",
-        "form um",
+        "form at",
+        "form their",
         "form called",
+        "form content",
+        "letters of administration",
+        "form um",
         "Chapter 7",
-        "form below",
-        "form here",
         "form an",
-        "form right",
-        "form we",
+        "form below",
         "form but",
-        "form from",
-        "form they"
+        "form here",
+        "form we",
+        "form right",
+        "form well",
+        "form because"
       ],
       "tools_and_portals": [
         "Google",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 3326,
-      "tip_count": 6695,
-      "channel_count": 2045,
+      "video_count": 3492,
+      "tip_count": 7397,
+      "channel_count": 2143,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -401,6 +401,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "From private equity firms, the concept being that if they can kind of bird dog a deal that the private equity firm wouldn't otherwise…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:05:20",
+          "link": "https://www.youtube.com/watch?v=t_yGWsgaZ_s&t=320s",
+          "video_title": "The Four Paths of Acquisition Entrepreneurship",
+          "author": "Walker Deibel",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Welcome back to LM J ChalkTalk. I'm Michele Johnson. The seller's lease covers 640 acres. One well is producing. Does the seller still hold…",
           "category": "Practitioner Note",
           "timestamp": "00:00:00",
@@ -417,58 +426,49 @@
           "video_title": "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's Guide for Beginner",
           "author": "Trade Counsel",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Know exactly what to do. If your land fails a percolation test, which it hopefully won't. Okay, let's go into it. So the first…",
-          "category": "Insider Tactic",
-          "timestamp": "00:00:57",
-          "link": "https://www.youtube.com/watch?v=nVJMPjUWdZw&t=57s",
-          "video_title": "What To Do If Your Land Fails A Perc Test (Before You Panic)",
-          "author": "Jack Bosch",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
         "form of",
         "form and",
         "form that",
-        "form to",
         "form is",
+        "form to",
         "form the",
         "form for",
         "form a",
         "form you",
         "form or",
-        "court order",
-        "form on",
         "form in",
         "form your",
+        "court order",
+        "form on",
         "quiet title",
         "form below",
         "form where",
         "form with",
-        "form like",
         "form so",
+        "form like",
         "Chapter 7",
-        "letters of administration",
         "form it",
+        "letters of administration",
+        "form I",
         "form their",
         "Chapter 13",
-        "form I",
-        "Form uh",
-        "form at",
-        "form but",
         "form if",
+        "form but",
+        "Form uh",
         "form as",
-        "form Commercial",
         "form which",
+        "form at",
+        "form Commercial",
+        "form we",
         "protection act",
         "form here",
-        "form we",
         "form um",
+        "form an",
         "property Act",
-        "warranty deed",
-        "letters testamentary"
+        "warranty deed"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 951,
-      "tip_count": 2375,
-      "channel_count": 621,
+      "video_count": 971,
+      "tip_count": 2398,
+      "channel_count": 637,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -674,29 +674,30 @@
         "form that",
         "form of",
         "form below",
-        "form to",
         "Form is",
+        "form to",
         "form the",
+        "form for",
         "form or",
         "form you",
-        "form for",
         "form a",
         "Form uh",
         "form but",
         "form with",
         "form on",
         "form we",
+        "court order",
         "form where",
         "form your",
         "Property Act",
-        "court order",
+        "form if",
         "form in",
         "form it",
         "form so",
         "quiet title",
         "form at",
-        "form if",
         "form our",
+        "Chapter 7",
         "form from",
         "form like",
         "form them",
@@ -704,7 +705,6 @@
         "form um",
         "form which",
         "affidavit of heirship",
-        "Chapter 7",
         "form as",
         "form due",
         "form today",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 3595,
-      "tip_count": 4788,
-      "channel_count": 2290,
+      "video_count": 3754,
+      "tip_count": 4923,
+      "channel_count": 2387,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -874,6 +874,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Andrew Cousin: I was search fund number 7, I think, back in 1,992. And here was my calculus I was coming out of. Andrew…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:13:50",
+          "link": "https://www.youtube.com/watch?v=oJcm3Bn-lXE&t=830s",
+          "video_title": "Search to Success: Entrepreneurship Through Acquisition",
+          "author": "HBS Rock Center for Entrepreneurship",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Decrease enough to the point that you're looking at a at the danger of a quench uh quenching's bad for a couple of reasons…",
           "category": "Practitioner Note",
           "timestamp": "00:02:47",
@@ -892,27 +901,18 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Thus we need to pay them regardless of what our customer does. They don't care if our customer pays us. Just like if the…",
+          "tip_paraphrase_summary": "Andrew Cousin: It's interesting. I thought about it as boy. There is never a lower risk time to be giving this a shot, and…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:02:48",
-          "link": "https://www.youtube.com/watch?v=OzmQFxT30NM&t=168s",
-          "video_title": "Broker didn't pay Detention?? Broker's take on Detention!",
-          "author": "ShipLeague",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Only worth four the truthfulness and just being able to tell the bad news because no matter how great a business is there are…",
-          "category": "Non-Negotiable Rule",
-          "timestamp": "00:00:29",
-          "link": "https://www.youtube.com/watch?v=fAVVcCIVQeE&t=29s",
-          "video_title": "Business Brokers Vs M&A Advisors | The Vant Group",
-          "author": "The Vant Group",
+          "timestamp": "00:14:54",
+          "link": "https://www.youtube.com/watch?v=oJcm3Bn-lXE&t=894s",
+          "video_title": "Search to Success: Entrepreneurship Through Acquisition",
+          "author": "HBS Rock Center for Entrepreneurship",
           "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form is",
         "form to",
@@ -922,9 +922,9 @@
         "form or",
         "form a",
         "form your",
-        "form on",
-        "form so",
         "form in",
+        "form so",
+        "form on",
         "form with",
         "form where",
         "form like",
@@ -932,25 +932,25 @@
         "form as",
         "form below",
         "form I",
+        "form if",
         "form it",
         "form at",
-        "form if",
         "form which",
+        "form called",
         "form content",
         "form their",
-        "court order",
-        "form called",
-        "form here",
         "Form uh",
+        "court order",
+        "form here",
         "form um",
-        "form we",
         "form but",
+        "form we",
         "form Commercial",
         "Chapter 13",
         "Chapter 7",
+        "form an",
         "form from",
-        "form they",
-        "form right"
+        "form they"
       ],
       "tools_and_portals": [
         "Google",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 2398,
-      "tip_count": 1264,
-      "channel_count": 1522,
+      "video_count": 2538,
+      "tip_count": 1291,
+      "channel_count": 1607,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1061,6 +1061,15 @@
       ],
       "top_timestamped_insights": [
         {
+          "tip_paraphrase_summary": "Activity because given they are a search fund, they're either operating on their own or maybe they have a few analysts that are working…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=x4qfCP1pVmE&t=56s",
+          "video_title": "How Search Funds Source Proprietary Deals Without Cold Calling",
+          "author": "Marco Palmero",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Much as as you can online whether it be like YouTube videos or like someone that you may know that's already an agent or…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:07:29",
@@ -1106,6 +1115,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "I cannot reach out again or I would does look bad. But the reality of it is a lot of business owners might not…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:11:19",
+          "link": "https://www.youtube.com/watch?v=x4qfCP1pVmE&t=679s",
+          "video_title": "How Search Funds Source Proprietary Deals Without Cold Calling",
+          "author": "Marco Palmero",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "People aren't, and so I wanna have all that information from you while I'm making my decision. 0:06:00.8 S1: Number two, firing people too…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:05:55",
@@ -1131,24 +1149,6 @@
           "video_title": "6 Steps to Become a Freight Broker in 2026 (No Experience Needed)",
           "author": "Matt Krause",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "I have also left an overly broad question at the end for now. We will improve that, because the best follow up should connect…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:18:18",
-          "link": "https://www.youtube.com/watch?v=gGfsCEiyizs&t=1098s",
-          "video_title": "Parasite Reddit SEO: Find Google Traffic With This Workflow",
-          "author": "Rankso SEO",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Working with but within these companies you signed a deal make sure you get everybody's title and check them out on LinkedIn know exactly…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:08:03",
-          "link": "https://www.youtube.com/watch?v=hbfKyomYp6U&t=483s",
-          "video_title": "The Licensing Lifestyle with Stephen Key",
-          "author": "inventRightTV",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -1157,41 +1157,41 @@
         "form that",
         "form to",
         "form for",
-        "form you",
         "form or",
         "form is",
+        "form you",
         "form the",
         "form a",
         "form your",
         "form on",
         "form where",
         "form like",
-        "quiet title",
         "form in",
-        "form with",
+        "quiet title",
         "form so",
+        "form with",
         "court order",
         "form as",
-        "Form uh",
-        "form um",
-        "form which",
-        "form at",
         "form I",
-        "form their",
-        "form below",
+        "Form uh",
+        "form which",
         "form if",
-        "form it",
-        "Protection Act",
+        "form um",
         "form but",
-        "form content",
+        "form their",
+        "form at",
+        "form it",
+        "form below",
         "form called",
+        "form content",
+        "Protection Act",
         "Chapter 7",
         "form Commercial",
         "form here",
         "Chapter 13",
         "form right",
-        "form them",
-        "warranty deed"
+        "form because",
+        "form them"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 3413,
-      "tip_count": 6087,
-      "channel_count": 2139,
+      "video_count": 3560,
+      "tip_count": 6225,
+      "channel_count": 2230,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1404,35 +1404,35 @@
         "form or",
         "form a",
         "form on",
-        "form with",
-        "form so",
         "form your",
         "form in",
+        "form so",
+        "form with",
         "form like",
         "form where",
         "court order",
-        "quiet title",
         "form as",
+        "quiet title",
         "form below",
-        "form at",
         "form I",
+        "form at",
         "Chapter 7",
         "form it",
         "form their",
         "Form uh",
-        "letters of administration",
         "form which",
+        "form if",
+        "letters of administration",
+        "form called",
         "form um",
         "Chapter 13",
-        "form if",
-        "form called",
         "form content",
         "form we",
+        "form but",
         "form here",
         "Protection Act",
-        "form but",
         "form Commercial",
-        "form from"
+        "form an"
       ],
       "tools_and_portals": [
         "Google",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 3685,
-      "tip_count": 3679,
-      "channel_count": 2267,
+      "video_count": 3853,
+      "tip_count": 3750,
+      "channel_count": 2365,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1624,12 +1624,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "For percentage depletion. So, if you have a net loss, you're not allowed to take percent depletion. If you have really 65% of the…",
-          "category": "Pitfall / Hard No",
-          "timestamp": "00:01:08",
-          "link": "https://www.youtube.com/watch?v=GPDm8NftR5U&t=68s",
-          "video_title": "How the Depletion Allowance Works in Oil & Gas",
-          "author": "ADKF | With You All The Way",
+          "tip_paraphrase_summary": "Hi everyone, hope you're having a great week. Today we're gonna talk about LOIs or letters of intent, and how they're used in the…",
+          "category": "Sequence / Alternative",
+          "timestamp": "00:00:00",
+          "link": "https://www.youtube.com/watch?v=aNioqOmfOe4&t=0s",
+          "video_title": "M&A Letters of Intent: Are They Really Necessary?",
+          "author": "Brett Cenkus",
           "verbatim_research_only": true
         }
       ],
@@ -1644,36 +1644,36 @@
         "form you",
         "form or",
         "form a",
-        "form on",
         "form your",
         "form in",
+        "form on",
         "court order",
+        "form so",
         "form where",
         "form with",
-        "form so",
         "form like",
         "quiet title",
         "form below",
+        "form I",
         "form it",
         "Form uh",
         "Chapter 7",
         "form their",
-        "form I",
         "letters of administration",
-        "Chapter 13",
         "form as",
-        "form at",
-        "form but",
         "form if",
+        "Chapter 13",
+        "form but",
+        "form at",
         "form which",
-        "Protection Act",
         "form um",
         "form we",
+        "Protection Act",
+        "form an",
         "form Commercial",
         "form here",
         "warranty deed",
-        "property Act",
-        "form an"
+        "form called"
       ],
       "tools_and_portals": [
         "Google",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 3073,
-      "tip_count": 8134,
-      "channel_count": 2025,
+      "video_count": 3162,
+      "tip_count": 8299,
+      "channel_count": 2088,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1879,42 +1879,42 @@
         "form of",
         "form that",
         "form for",
-        "form to",
         "form is",
+        "form to",
         "form the",
-        "form you",
         "form or",
+        "form you",
         "form a",
         "form so",
         "form with",
-        "form on",
         "form where",
+        "form on",
         "form your",
         "form in",
         "form like",
         "court order",
-        "form below",
         "form as",
+        "form below",
         "form it",
         "form which",
         "Form uh",
         "letters of administration",
+        "form if",
         "form at",
         "form content",
-        "form if",
-        "Chapter 7",
         "form I",
+        "Chapter 7",
         "form we",
         "form but",
-        "form um",
         "form called",
+        "form um",
         "form from",
         "form here",
-        "Chapter 13",
         "form their",
+        "Chapter 13",
         "form because",
         "form this",
-        "letters testamentary"
+        "form an"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2211,
-      "video_count": 3392,
-      "corroborating_tip_count": 6837,
+      "channel_count": 2310,
+      "video_count": 3555,
+      "corroborating_tip_count": 7199,
       "supporting_links": [
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2045,
-      "video_count": 3326,
-      "corroborating_tip_count": 6695,
+      "channel_count": 2143,
+      "video_count": 3492,
+      "corroborating_tip_count": 7397,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 621,
-      "video_count": 951,
-      "corroborating_tip_count": 2375,
+      "channel_count": 637,
+      "video_count": 971,
+      "corroborating_tip_count": 2398,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2290,
-      "video_count": 3595,
-      "corroborating_tip_count": 4788,
+      "channel_count": 2387,
+      "video_count": 3754,
+      "corroborating_tip_count": 4923,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,10 +2168,16 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1522,
-      "video_count": 2398,
-      "corroborating_tip_count": 1264,
+      "channel_count": 1607,
+      "video_count": 2538,
+      "corroborating_tip_count": 1291,
       "supporting_links": [
+        {
+          "video_title": "How Search Funds Source Proprietary Deals Without Cold Calling",
+          "author": "Marco Palmero",
+          "timestamp": "00:00:56",
+          "link": "https://www.youtube.com/watch?v=x4qfCP1pVmE&t=56s"
+        },
         {
           "video_title": "How to Become a Freight Agent in 2027 (No Experience Needed)",
           "author": "Matt Krause",
@@ -2201,12 +2207,6 @@
           "author": "Matt Krause",
           "timestamp": "00:20:55",
           "link": "https://www.youtube.com/watch?v=bP4Dnpd58PE&t=1255s"
-        },
-        {
-          "video_title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:05:55",
-          "link": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=355s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2139,
-      "video_count": 3413,
-      "corroborating_tip_count": 6087,
+      "channel_count": 2230,
+      "video_count": 3560,
+      "corroborating_tip_count": 6225,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2267,
-      "video_count": 3685,
-      "corroborating_tip_count": 3679,
+      "channel_count": 2365,
+      "video_count": 3853,
+      "corroborating_tip_count": 3750,
       "supporting_links": [
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2025,
-      "video_count": 3073,
-      "corroborating_tip_count": 8134,
+      "channel_count": 2088,
+      "video_count": 3162,
+      "corroborating_tip_count": 8299,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 4359 corpus videos",
-        "instance_count": 4359,
+        "source": "YouTube CDN thumbnails for the 4534 corpus videos",
+        "instance_count": 4534,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -33261,6 +33261,1231 @@
             "author": "We Hustle Daily",
             "thumbnail_url": "https://i.ytimg.com/vi/VRmsT2o_6og/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=VRmsT2o_6og"
+          },
+          {
+            "video_id": "QtvW_tq7sAQ",
+            "title": "Buy a Business Instead of Starting One | Entrepreneurship Through Acquisition (ETA)",
+            "author": "Prince George's Chamber of Commerce",
+            "thumbnail_url": "https://i.ytimg.com/vi/QtvW_tq7sAQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QtvW_tq7sAQ"
+          },
+          {
+            "video_id": "_exEOi-Wxuk",
+            "title": "How to Buy and Scale Businesses (ETA Explained) | Pete Seligman x David Aboud [Part 1]",
+            "author": "David Nazeem Aboud",
+            "thumbnail_url": "https://i.ytimg.com/vi/_exEOi-Wxuk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_exEOi-Wxuk"
+          },
+          {
+            "video_id": "oJcm3Bn-lXE",
+            "title": "Search to Success: Entrepreneurship Through Acquisition",
+            "author": "HBS Rock Center for Entrepreneurship",
+            "thumbnail_url": "https://i.ytimg.com/vi/oJcm3Bn-lXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oJcm3Bn-lXE"
+          },
+          {
+            "video_id": "c1OtHjDpymM",
+            "title": "The 2 Professors Who Helped Start the ETA Movement | Royce Yudkoff & Rick Ruback Interview",
+            "author": "Acquiring Minds",
+            "thumbnail_url": "https://i.ytimg.com/vi/c1OtHjDpymM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=c1OtHjDpymM"
+          },
+          {
+            "video_id": "nOnsMlkLh10",
+            "title": "Entrepreneurship through acquisition: How to buy a business",
+            "author": "Technically News",
+            "thumbnail_url": "https://i.ytimg.com/vi/nOnsMlkLh10/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nOnsMlkLh10"
+          },
+          {
+            "video_id": "60ZOJolZwOo",
+            "title": "Understanding the Basics of Entrepreneurship Through Acquisition - Event Series",
+            "author": "The University of Chicago Booth School of Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/60ZOJolZwOo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=60ZOJolZwOo"
+          },
+          {
+            "video_id": "004ptgWQ2TE",
+            "title": "Inside the Mind of an Acquirer: The Harvard Playbook for Buying Your Business",
+            "author": "Built to Sell",
+            "thumbnail_url": "https://i.ytimg.com/vi/004ptgWQ2TE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=004ptgWQ2TE"
+          },
+          {
+            "video_id": "cl31TiHq92Y",
+            "title": "ETA - Entrepreneurship Through Acquisition Introduction | William & Mary Entrepreneurship Hub",
+            "author": "Joel Ankney",
+            "thumbnail_url": "https://i.ytimg.com/vi/cl31TiHq92Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cl31TiHq92Y"
+          },
+          {
+            "video_id": "MpeYmBDptXs",
+            "title": "Entrepreneurship Through Acquisition 101",
+            "author": "The Wall Street Skinny",
+            "thumbnail_url": "https://i.ytimg.com/vi/MpeYmBDptXs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MpeYmBDptXs"
+          },
+          {
+            "video_id": "9Kv6npBoTpQ",
+            "title": "Entrepreneurship Through Acquisition: The Smarter Way to Become a CEO?",
+            "author": "The Explainer USA - Business & Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Kv6npBoTpQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Kv6npBoTpQ"
+          },
+          {
+            "video_id": "ybzODlrITiw",
+            "title": "How to Get Into Entrepreneurship Through Acquisition (ETA)",
+            "author": "Dominik Höhener",
+            "thumbnail_url": "https://i.ytimg.com/vi/ybzODlrITiw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ybzODlrITiw"
+          },
+          {
+            "video_id": "LlIJ71_IXbs",
+            "title": "MIT Entrepreneurship Through Acquisition Conference Keynote by Walker Deibel of Buy Then Build",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/LlIJ71_IXbs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LlIJ71_IXbs"
+          },
+          {
+            "video_id": "i7FBr84AUfY",
+            "title": "INSEAD Explains Entrepreneurship: Becoming an Entrepreneur by Acquisition",
+            "author": "INSEAD",
+            "thumbnail_url": "https://i.ytimg.com/vi/i7FBr84AUfY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i7FBr84AUfY"
+          },
+          {
+            "video_id": "Hh83Lc7sWf4",
+            "title": "Navigating Entrepreneurship Through Acquisition | Ep. 43 Part 1 | Before You Buy or Sell a Business",
+            "author": "Before You Buy or Sell a Business Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hh83Lc7sWf4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hh83Lc7sWf4"
+          },
+          {
+            "video_id": "pqmsev-3MPY",
+            "title": "ETA Reality Check: SBA Lending, Buyer Mistakes, Deal Killers, and the Truth About Buying a Business",
+            "author": "Before You Buy or Sell a Business Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/pqmsev-3MPY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pqmsev-3MPY"
+          },
+          {
+            "video_id": "LOtte4Lq1OY",
+            "title": "Dr. Newton Campos crash Course on Entrepreneurship through Acquisition - Understanding Search Funds",
+            "author": "Newton Campos",
+            "thumbnail_url": "https://i.ytimg.com/vi/LOtte4Lq1OY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LOtte4Lq1OY"
+          },
+          {
+            "video_id": "WF2-6ODNQms",
+            "title": "SBA SOP 50 10 8.1: The New Rules for Buying a Business (Effective Oct 1, 2026)",
+            "author": "Pioneer Capital Advisory LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/WF2-6ODNQms/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WF2-6ODNQms"
+          },
+          {
+            "video_id": "3tkWRQX9WjI",
+            "title": "The New SBA Rules are LIVE: How to Plan Business Acquisition in 2026",
+            "author": "Matthias Smith",
+            "thumbnail_url": "https://i.ytimg.com/vi/3tkWRQX9WjI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3tkWRQX9WjI"
+          },
+          {
+            "video_id": "Tt3Ae9PDn8A",
+            "title": "How to Buy a Business With an SBA Loan (2026 Rules Explained)",
+            "author": "Exit Ready Valuation",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tt3Ae9PDn8A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tt3Ae9PDn8A"
+          },
+          {
+            "video_id": "7RAyVC1b9Pg",
+            "title": "How to Use a Seller Note with an SBA Loan 2024",
+            "author": "Keira Hamilton",
+            "thumbnail_url": "https://i.ytimg.com/vi/7RAyVC1b9Pg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7RAyVC1b9Pg"
+          },
+          {
+            "video_id": "orHTcAJcuAM",
+            "title": "SBA SOP 50 10 8.1: What Changed for Business Acquisitions, and What Didn’t",
+            "author": "Lion Business Advisors",
+            "thumbnail_url": "https://i.ytimg.com/vi/orHTcAJcuAM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=orHTcAJcuAM"
+          },
+          {
+            "video_id": "Rsg9fKAzdAo",
+            "title": "The SBA Does It Again: More Changes to the New SBA SOP",
+            "author": "Commercial Lending X",
+            "thumbnail_url": "https://i.ytimg.com/vi/Rsg9fKAzdAo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Rsg9fKAzdAo"
+          },
+          {
+            "video_id": "W3nhTnkKZcU",
+            "title": "How Seller Financing Actually Works in SBA Deals",
+            "author": "Josh Kim",
+            "thumbnail_url": "https://i.ytimg.com/vi/W3nhTnkKZcU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W3nhTnkKZcU"
+          },
+          {
+            "video_id": "8Gok1YA-HS8",
+            "title": "SBA Changes to Seller Note Full Standby Rules (BIG improvement!)",
+            "author": "ProjectionHub",
+            "thumbnail_url": "https://i.ytimg.com/vi/8Gok1YA-HS8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8Gok1YA-HS8"
+          },
+          {
+            "video_id": "OSZgayF9jHw",
+            "title": "Seller Notes with SBA Loans Explained — The 2025 Rules You Can’t Ignore!",
+            "author": "Loan To Launch",
+            "thumbnail_url": "https://i.ytimg.com/vi/OSZgayF9jHw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OSZgayF9jHw"
+          },
+          {
+            "video_id": "NmgNpE_W_po",
+            "title": "SBA 7(a) Loan for Business Acquisition | Tresle Talks",
+            "author": "Tresle Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/NmgNpE_W_po/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NmgNpE_W_po"
+          },
+          {
+            "video_id": "92Nd2yD33As",
+            "title": "What a Perfect Business Acquisition Application Looks Like | SBA Loans",
+            "author": "SBA University",
+            "thumbnail_url": "https://i.ytimg.com/vi/92Nd2yD33As/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=92Nd2yD33As"
+          },
+          {
+            "video_id": "WfgrSa37vaA",
+            "title": "New SBA Rules 2027: What Changed for Buying a Business",
+            "author": "Michael S Glaspie",
+            "thumbnail_url": "https://i.ytimg.com/vi/WfgrSa37vaA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WfgrSa37vaA"
+          },
+          {
+            "video_id": "aJcoLYwi6vo",
+            "title": "SBA Loan Changes 2026: What Business Sellers Need to Know",
+            "author": "Ed Weeks Jr. MBA",
+            "thumbnail_url": "https://i.ytimg.com/vi/aJcoLYwi6vo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aJcoLYwi6vo"
+          },
+          {
+            "video_id": "EzOFN-69wBU",
+            "title": "Quality of Earnings Databook - A Case Walkthrough",
+            "author": "Verified Metrics",
+            "thumbnail_url": "https://i.ytimg.com/vi/EzOFN-69wBU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EzOFN-69wBU"
+          },
+          {
+            "video_id": "a5aX7QK8vKA",
+            "title": "Financial Due Diligence: Quality of Earnings Analysis Step-by-Step",
+            "author": "CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/a5aX7QK8vKA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a5aX7QK8vKA"
+          },
+          {
+            "video_id": "UfQ-Ho_j61s",
+            "title": "Qualifying EBITDA Add-Backs - Separating Fact From Fiction | Masterclass",
+            "author": "growthink",
+            "thumbnail_url": "https://i.ytimg.com/vi/UfQ-Ho_j61s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UfQ-Ho_j61s"
+          },
+          {
+            "video_id": "3hIMMSUc5gQ",
+            "title": "Quality of Earnings (QoE) Explained | Financial Due Diligence Interview Questions",
+            "author": "CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/3hIMMSUc5gQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3hIMMSUc5gQ"
+          },
+          {
+            "video_id": "itIweMi_DyU",
+            "title": "Quality of Earnings Report",
+            "author": "Edspira",
+            "thumbnail_url": "https://i.ytimg.com/vi/itIweMi_DyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=itIweMi_DyU"
+          },
+          {
+            "video_id": "QVDTq7Qd6-A",
+            "title": "Quality of Earnings (QoE) vs EBITDA | Key Differences Explained",
+            "author": "CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/QVDTq7Qd6-A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QVDTq7Qd6-A"
+          },
+          {
+            "video_id": "KJPGQ94h_GY",
+            "title": "Quality of Earnings Explained",
+            "author": "Elliott Holland",
+            "thumbnail_url": "https://i.ytimg.com/vi/KJPGQ94h_GY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KJPGQ94h_GY"
+          },
+          {
+            "video_id": "BHyx6-mgFe8",
+            "title": "Add Backs for Adjusted EBITDA",
+            "author": "Kirk Michie",
+            "thumbnail_url": "https://i.ytimg.com/vi/BHyx6-mgFe8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BHyx6-mgFe8"
+          },
+          {
+            "video_id": "g_fy5eeJpHE",
+            "title": "Quality of Earnings Explained: Financial Due Diligence Mistakes That Kill Deals",
+            "author": "Acquira",
+            "thumbnail_url": "https://i.ytimg.com/vi/g_fy5eeJpHE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g_fy5eeJpHE"
+          },
+          {
+            "video_id": "Yr06Fv79PU0",
+            "title": "Due Diligence, Quality of Earnings and Why Deals Fail",
+            "author": "Jon Stoddard",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yr06Fv79PU0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Yr06Fv79PU0"
+          },
+          {
+            "video_id": "04Uy5gfO_PU",
+            "title": "One Wrong Move, Scary Result: Asset Purchase vs Share Purchase",
+            "author": "Martin Godfrey Legido",
+            "thumbnail_url": "https://i.ytimg.com/vi/04Uy5gfO_PU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=04Uy5gfO_PU"
+          },
+          {
+            "video_id": "-DthgkqGsGA",
+            "title": "Asset purchase or stock purchase?",
+            "author": "Chris Barsness - Securities Law Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/-DthgkqGsGA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-DthgkqGsGA"
+          },
+          {
+            "video_id": "NM-ZwBNBHQE",
+            "title": "Asset Sale vs Stock Sale",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/NM-ZwBNBHQE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NM-ZwBNBHQE"
+          },
+          {
+            "video_id": "C-seCQXqtM4",
+            "title": "Working Capital Adjustment Process",
+            "author": "A Simple Model",
+            "thumbnail_url": "https://i.ytimg.com/vi/C-seCQXqtM4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C-seCQXqtM4"
+          },
+          {
+            "video_id": "gFJZwK-3sq0",
+            "title": "Working Capital Adjustments on Closing",
+            "author": "David C Barnett Small Business and Deal Making SMB",
+            "thumbnail_url": "https://i.ytimg.com/vi/gFJZwK-3sq0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gFJZwK-3sq0"
+          },
+          {
+            "video_id": "lPy47SFZqDw",
+            "title": "Working Capital: Targets & Adjustments",
+            "author": "Brett Cenkus",
+            "thumbnail_url": "https://i.ytimg.com/vi/lPy47SFZqDw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lPy47SFZqDw"
+          },
+          {
+            "video_id": "0V-By_uyuhM",
+            "title": "Working Capital Adjustment: Common Issues in M&A Transactions",
+            "author": "Morse",
+            "thumbnail_url": "https://i.ytimg.com/vi/0V-By_uyuhM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0V-By_uyuhM"
+          },
+          {
+            "video_id": "almKwAlo5T4",
+            "title": "Most Common Working Capital Adjustments",
+            "author": "MCM Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/almKwAlo5T4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=almKwAlo5T4"
+          },
+          {
+            "video_id": "oa8dUICluLM",
+            "title": "The Working Capital Adjustment in M&A Deals and Leveraged Buyouts",
+            "author": "Mergers & Inquisitions / Breaking Into Wall Street",
+            "thumbnail_url": "https://i.ytimg.com/vi/oa8dUICluLM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oa8dUICluLM"
+          },
+          {
+            "video_id": "ydfu0lpiDjc",
+            "title": "M&A Deal Structures: Working Capital Adjustments vs. Locked Box Closing Approach",
+            "author": "Brett Cenkus",
+            "thumbnail_url": "https://i.ytimg.com/vi/ydfu0lpiDjc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ydfu0lpiDjc"
+          },
+          {
+            "video_id": "QqemANnN2ZM",
+            "title": "Net Working Capital Peg for Business Owners",
+            "author": "Kirk Michie",
+            "thumbnail_url": "https://i.ytimg.com/vi/QqemANnN2ZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QqemANnN2ZM"
+          },
+          {
+            "video_id": "8AOvKeCdAH0",
+            "title": "Negotiating Net Working Capital Adjustments in M&A – Definitions and How to Calculate",
+            "author": "FinanceKid",
+            "thumbnail_url": "https://i.ytimg.com/vi/8AOvKeCdAH0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8AOvKeCdAH0"
+          },
+          {
+            "video_id": "BvJfOb1y6x8",
+            "title": "How to Perform a Net Working Capital True-Up Calculation for a Small Business Acquisition",
+            "author": "ProjectionHub",
+            "thumbnail_url": "https://i.ytimg.com/vi/BvJfOb1y6x8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BvJfOb1y6x8"
+          },
+          {
+            "video_id": "ob7Q-yxAsNs",
+            "title": "The Working Capital Peg: Why the Price Is Not What You Get at Closing",
+            "author": "Anchor Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/ob7Q-yxAsNs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ob7Q-yxAsNs"
+          },
+          {
+            "video_id": "VuuLz-8NiYg",
+            "title": "SPECIAL EPISODE - Structuring the Deal: Letters of Intent Explained",
+            "author": "Letters of Intent",
+            "thumbnail_url": "https://i.ytimg.com/vi/VuuLz-8NiYg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VuuLz-8NiYg"
+          },
+          {
+            "video_id": "YJMOV57uFMk",
+            "title": "Key Terms to Know When Negotiating a Letter of Intent",
+            "author": "PCE Investment Bankers - M&A | ESOP | Valuation",
+            "thumbnail_url": "https://i.ytimg.com/vi/YJMOV57uFMk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YJMOV57uFMk"
+          },
+          {
+            "video_id": "aNioqOmfOe4",
+            "title": "M&A Letters of Intent: Are They Really Necessary?",
+            "author": "Brett Cenkus",
+            "thumbnail_url": "https://i.ytimg.com/vi/aNioqOmfOe4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aNioqOmfOe4"
+          },
+          {
+            "video_id": "Axofinu0FSU",
+            "title": "What is the Letter Of Intent in Investment Banking - 8 Milestones of M&A - Transact Capital",
+            "author": "Transact Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/Axofinu0FSU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Axofinu0FSU"
+          },
+          {
+            "video_id": "juS-FdGX2o0",
+            "title": "Letter of Intent Terms to Settle Before Due Diligence",
+            "author": "Escamilla Law Office",
+            "thumbnail_url": "https://i.ytimg.com/vi/juS-FdGX2o0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=juS-FdGX2o0"
+          },
+          {
+            "video_id": "32xGWYMqfWk",
+            "title": "How to Write a Strong M&A Letter of Intent (LOI) | PRIME exits",
+            "author": "PRIME exits M&A Advisory",
+            "thumbnail_url": "https://i.ytimg.com/vi/32xGWYMqfWk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=32xGWYMqfWk"
+          },
+          {
+            "video_id": "6uqSoqOVnsg",
+            "title": "Why a Letter of Intent Is Critical to the Sale of a Business",
+            "author": "Oberman Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/6uqSoqOVnsg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6uqSoqOVnsg"
+          },
+          {
+            "video_id": "Q6exObbgCgk",
+            "title": "The M&A Term Sheet or LOI",
+            "author": "KreischerMiller",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q6exObbgCgk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q6exObbgCgk"
+          },
+          {
+            "video_id": "4Pg78F28qCM",
+            "title": "What Really Happens When You Sign a Letter of Intent to Buy a Business?",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/4Pg78F28qCM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4Pg78F28qCM"
+          },
+          {
+            "video_id": "2RBitaEo6mY",
+            "title": "Why a Letter of Intent Is Critical to the Sale of a Business",
+            "author": "Oberman Law Firm",
+            "thumbnail_url": "https://i.ytimg.com/vi/2RBitaEo6mY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2RBitaEo6mY"
+          },
+          {
+            "video_id": "NCbzskaBTdQ",
+            "title": "The Anatomy of an LOI",
+            "author": "Lockaby PLLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/NCbzskaBTdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NCbzskaBTdQ"
+          },
+          {
+            "video_id": "BDlt56r8cRk",
+            "title": "How a Letter of Intent (LOI) works when buying a business",
+            "author": "Bootstrapping to Billions",
+            "thumbnail_url": "https://i.ytimg.com/vi/BDlt56r8cRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BDlt56r8cRk"
+          },
+          {
+            "video_id": "MVmF4HlTHGM",
+            "title": "How to Buy Boomer Business With No Competition",
+            "author": "Mind Of Monte",
+            "thumbnail_url": "https://i.ytimg.com/vi/MVmF4HlTHGM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MVmF4HlTHGM"
+          },
+          {
+            "video_id": "pTSIi3Y4_TA",
+            "title": "Boomers Are Selling — How You Can Buy a Great Business with Little Cash Down",
+            "author": "Start Up University",
+            "thumbnail_url": "https://i.ytimg.com/vi/pTSIi3Y4_TA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pTSIi3Y4_TA"
+          },
+          {
+            "video_id": "AKE-710SdA4",
+            "title": "Walker Deibel | Buy Then Build: How Acquisition Entrepreneurs Outsmart the Startup Game",
+            "author": "Darius Mirshahzadeh",
+            "thumbnail_url": "https://i.ytimg.com/vi/AKE-710SdA4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AKE-710SdA4"
+          },
+          {
+            "video_id": "aoPPGxWI8dY",
+            "title": "New to Buying Businesses? Here’s What NOT to Do",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/aoPPGxWI8dY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aoPPGxWI8dY"
+          },
+          {
+            "video_id": "uY1iPCwJqk8",
+            "title": "Turning $100K into $50 Million Through Business Acquisitions",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/uY1iPCwJqk8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uY1iPCwJqk8"
+          },
+          {
+            "video_id": "3mtS8rOAqoM",
+            "title": "How to Find Businesses to Buy NO ONE ELSE Knows About (80 MINUTE Playbook)",
+            "author": "Codie Sanchez",
+            "thumbnail_url": "https://i.ytimg.com/vi/3mtS8rOAqoM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3mtS8rOAqoM"
+          },
+          {
+            "video_id": "LzJITHl_i2k",
+            "title": "Buy Then Build by Walker Deibel | audiobook summary | Mastering the Acquisition Game",
+            "author": "Master Afle",
+            "thumbnail_url": "https://i.ytimg.com/vi/LzJITHl_i2k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LzJITHl_i2k"
+          },
+          {
+            "video_id": "iYE-lc1tFUI",
+            "title": "BUY THEN BUILD: Your Private Equity Masterclass on Buying Companies - Walker Deibel",
+            "author": "Making Billions with Ryan Miller",
+            "thumbnail_url": "https://i.ytimg.com/vi/iYE-lc1tFUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iYE-lc1tFUI"
+          },
+          {
+            "video_id": "1blBuzvtWoA",
+            "title": "Acquiring a Company vs. Innovating an Industry",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/1blBuzvtWoA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1blBuzvtWoA"
+          },
+          {
+            "video_id": "xpFa8hcRy_k",
+            "title": "Master the 'Moneyball' of Business: Unveiling Acquisition Entrepreneurship with Walker Deibel",
+            "author": "Jake & Gino",
+            "thumbnail_url": "https://i.ytimg.com/vi/xpFa8hcRy_k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xpFa8hcRy_k"
+          },
+          {
+            "video_id": "KT5T3j2jVQ4",
+            "title": "The Self Funded Search Model | Robert Graham & Jordan carter",
+            "author": "Acquiring Minds",
+            "thumbnail_url": "https://i.ytimg.com/vi/KT5T3j2jVQ4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KT5T3j2jVQ4"
+          },
+          {
+            "video_id": "0KhOZrLBMVQ",
+            "title": "Search Funds: How to Buy a Small Business",
+            "author": "Peak Frameworks",
+            "thumbnail_url": "https://i.ytimg.com/vi/0KhOZrLBMVQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0KhOZrLBMVQ"
+          },
+          {
+            "video_id": "0lg8Gh_uAPU",
+            "title": "Self-Funded Search vs. Traditional Search Funds",
+            "author": "Acquiring Minds",
+            "thumbnail_url": "https://i.ytimg.com/vi/0lg8Gh_uAPU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0lg8Gh_uAPU"
+          },
+          {
+            "video_id": "GYvpRW21sSY",
+            "title": "How search fund operators convince owners to sell their business with Steve Divitikos",
+            "author": "Built to Sell",
+            "thumbnail_url": "https://i.ytimg.com/vi/GYvpRW21sSY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GYvpRW21sSY"
+          },
+          {
+            "video_id": "_m1Q0kLTooU",
+            "title": "Acquire.com Review: An Honest Look At The Pros & Cons 👍👎 (2026)",
+            "author": "jackhaigh",
+            "thumbnail_url": "https://i.ytimg.com/vi/_m1Q0kLTooU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_m1Q0kLTooU"
+          },
+          {
+            "video_id": "_rMBWgqtfUI",
+            "title": "Coley Andrews: What it Takes to be a Search Fund Entrepreneur",
+            "author": "Stanford Graduate School of Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/_rMBWgqtfUI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_rMBWgqtfUI"
+          },
+          {
+            "video_id": "i_Ownd9smbk",
+            "title": "How to Start a Search Fund from Nothing! | Funding with Peter Harris",
+            "author": "VCPete",
+            "thumbnail_url": "https://i.ytimg.com/vi/i_Ownd9smbk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i_Ownd9smbk"
+          },
+          {
+            "video_id": "uXEbfHnDSes",
+            "title": "How to Create Financial Projections for a Search Fund Acquisition (Template Walkthrough)",
+            "author": "ProjectionHub",
+            "thumbnail_url": "https://i.ytimg.com/vi/uXEbfHnDSes/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uXEbfHnDSes"
+          },
+          {
+            "video_id": "AWJaRrNXru8",
+            "title": "Tim Ludwig on What Industries Excite him as a Search Fund",
+            "author": "POWERS Pod",
+            "thumbnail_url": "https://i.ytimg.com/vi/AWJaRrNXru8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AWJaRrNXru8"
+          },
+          {
+            "video_id": "oplaAtHYPlU",
+            "title": "How to Sell Your Startup Company | Acquire.com *full guide in 10 min*",
+            "author": "Anna Stepura: AI for Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/oplaAtHYPlU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oplaAtHYPlU"
+          },
+          {
+            "video_id": "onN8dTJIXAM",
+            "title": "Roland's Earnouts and Seller Financing Secrets 🤯",
+            "author": "Roland Frasier",
+            "thumbnail_url": "https://i.ytimg.com/vi/onN8dTJIXAM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=onN8dTJIXAM"
+          },
+          {
+            "video_id": "ZGklOUqHKYg",
+            "title": "Earnouts vs Seller Financing - How to Document Each",
+            "author": "Escamilla Law Office",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZGklOUqHKYg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZGklOUqHKYg"
+          },
+          {
+            "video_id": "iNOj__jXGpE",
+            "title": "Seller Financing and Set-Off Rights: Recovery Mechanisms in M&A Deals",
+            "author": "SMB Law Group LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/iNOj__jXGpE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iNOj__jXGpE"
+          },
+          {
+            "video_id": "7w05y7xLcNI",
+            "title": "Structure your first \"M&A EARN-OUT\" - without all the legal fees (here's how...)",
+            "author": "Jason Paul Rogers",
+            "thumbnail_url": "https://i.ytimg.com/vi/7w05y7xLcNI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7w05y7xLcNI"
+          },
+          {
+            "video_id": "PO1M-_wq-m4",
+            "title": "Why Would a Seller Want to Finance the Deal? Owner Will Carry Seller Financing | business broker smb",
+            "author": "David C Barnett Small Business and Deal Making SMB",
+            "thumbnail_url": "https://i.ytimg.com/vi/PO1M-_wq-m4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PO1M-_wq-m4"
+          },
+          {
+            "video_id": "3Cgn92T6L1Y",
+            "title": "Structuring your deal for success",
+            "author": "acquiredotcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/3Cgn92T6L1Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3Cgn92T6L1Y"
+          },
+          {
+            "video_id": "4kQ8R30J5q4",
+            "title": "Post-Acquisition Finance Integration: First 100 Days Checklist #PostAcquisitionIntegration",
+            "author": "Neo Expertise",
+            "thumbnail_url": "https://i.ytimg.com/vi/4kQ8R30J5q4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4kQ8R30J5q4"
+          },
+          {
+            "video_id": "_sFK2HgcBFo",
+            "title": "The First 100 Days: Practical Guidance for PE Investors Post-Acquisition",
+            "author": "McGuireWoods LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/_sFK2HgcBFo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_sFK2HgcBFo"
+          },
+          {
+            "video_id": "slGlxgrDvps",
+            "title": "The First 100 Days After a Private Equity Deal: What LPs Should Check",
+            "author": "Lighthouse Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/slGlxgrDvps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=slGlxgrDvps"
+          },
+          {
+            "video_id": "wjVsYwI5G_E",
+            "title": "The First 30 Days After an Acquisition: What IT Must Decide Before Migration",
+            "author": "Bridgeyard",
+            "thumbnail_url": "https://i.ytimg.com/vi/wjVsYwI5G_E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wjVsYwI5G_E"
+          },
+          {
+            "video_id": "OwAOc9xgv9U",
+            "title": "Post-Acquisition Financial Controls: The First 30 Days",
+            "author": "Lighthouse Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/OwAOc9xgv9U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OwAOc9xgv9U"
+          },
+          {
+            "video_id": "cC2-F0YZb9M",
+            "title": "How to Navigate the First 90 Days Post-Acquisition - The Intentional Owner #15",
+            "author": "The Intentional Owner",
+            "thumbnail_url": "https://i.ytimg.com/vi/cC2-F0YZb9M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cC2-F0YZb9M"
+          },
+          {
+            "video_id": "NotNaT329hg",
+            "title": "Post-Deal Finance Integration: Why Acquisitions Underperform in the First 100 Days",
+            "author": "Byron Thomas Recruitment",
+            "thumbnail_url": "https://i.ytimg.com/vi/NotNaT329hg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NotNaT329hg"
+          },
+          {
+            "video_id": "6AT45jrM2CU",
+            "title": "The First 100 Days: How to Succeed After a Business Acquisition",
+            "author": "Patrick O'Connell - M&A Transaction Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/6AT45jrM2CU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6AT45jrM2CU"
+          },
+          {
+            "video_id": "fFDPLnXTi0o",
+            "title": "Everything you need to know about Post Acquisition and Execution",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/fFDPLnXTi0o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fFDPLnXTi0o"
+          },
+          {
+            "video_id": "9fvL0IINg6k",
+            "title": "Middle Market Smart – Episode 3 (Part 2 of 2) The M&A Playbook for Middle Market Leaders",
+            "author": "Middle Market Smart",
+            "thumbnail_url": "https://i.ytimg.com/vi/9fvL0IINg6k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9fvL0IINg6k"
+          },
+          {
+            "video_id": "W6A4gRp6eow",
+            "title": "HubSpot + Apollo + Clay + Smartlead: The Outbound Stack Boundary",
+            "author": "ToolColumn",
+            "thumbnail_url": "https://i.ytimg.com/vi/W6A4gRp6eow/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W6A4gRp6eow"
+          },
+          {
+            "video_id": "uJWyOGsPXbA",
+            "title": "Best Cold Calling Software for SMB Sales Teams in 2026",
+            "author": "SoftSavvy",
+            "thumbnail_url": "https://i.ytimg.com/vi/uJWyOGsPXbA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uJWyOGsPXbA"
+          },
+          {
+            "video_id": "CoNZbm4aVto",
+            "title": "HubSpot vs Pipedrive vs Close CRM: Stop Overpaying for B2B SaaS (Full Cost Audit)",
+            "author": "Lean Stack",
+            "thumbnail_url": "https://i.ytimg.com/vi/CoNZbm4aVto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CoNZbm4aVto"
+          },
+          {
+            "video_id": "KAz03HJ5nHg",
+            "title": "How to Build Go-to-Market Efficiency in SMB Sales with Owner.com CRO Kyle Norton",
+            "author": "SaaStr AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/KAz03HJ5nHg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KAz03HJ5nHg"
+          },
+          {
+            "video_id": "BJojYQ4nJho",
+            "title": "The Pros and Cons of the SBA 7(a) Loan [2026 Update]",
+            "author": "SBA Ray",
+            "thumbnail_url": "https://i.ytimg.com/vi/BJojYQ4nJho/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BJojYQ4nJho"
+          },
+          {
+            "video_id": "104miMfvJRg",
+            "title": "SBA Loan Personal Guarantee: Protect Yourself Before You Sign",
+            "author": "Jon Stoddard",
+            "thumbnail_url": "https://i.ytimg.com/vi/104miMfvJRg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=104miMfvJRg"
+          },
+          {
+            "video_id": "uwpDjf5v_jM",
+            "title": "Easy Breakdown of Entrepreneurship Through Acquisition.",
+            "author": "Kristina M. Wynne",
+            "thumbnail_url": "https://i.ytimg.com/vi/uwpDjf5v_jM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uwpDjf5v_jM"
+          },
+          {
+            "video_id": "YXFpxJrIjD0",
+            "title": "What is Entrepreneurship through Acquisition?",
+            "author": "Kevin Henderson",
+            "thumbnail_url": "https://i.ytimg.com/vi/YXFpxJrIjD0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YXFpxJrIjD0"
+          },
+          {
+            "video_id": "c0fXb_wXv7A",
+            "title": "Expert Insights: Exploring Entrepreneurship Through Acquisition",
+            "author": "UWContinuingEd",
+            "thumbnail_url": "https://i.ytimg.com/vi/c0fXb_wXv7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=c0fXb_wXv7A"
+          },
+          {
+            "video_id": "zVSWRRAfFO8",
+            "title": "How To Start A Business Acquisition Company - With Alex Hormozi",
+            "author": "Leveling Up Clips",
+            "thumbnail_url": "https://i.ytimg.com/vi/zVSWRRAfFO8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zVSWRRAfFO8"
+          },
+          {
+            "video_id": "zrmjVDmvL1w",
+            "title": "Complete Guide to Buying a Business (For Beginners) 2026 | Jonathan Jay",
+            "author": "Jonathan Jay",
+            "thumbnail_url": "https://i.ytimg.com/vi/zrmjVDmvL1w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zrmjVDmvL1w"
+          },
+          {
+            "video_id": "kKwXdeUVNOw",
+            "title": "Structuring the Acquisition Deal - Entrepreneurship Through Acquisition Event Series",
+            "author": "The University of Chicago Booth School of Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/kKwXdeUVNOw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kKwXdeUVNOw"
+          },
+          {
+            "video_id": "7znMZDlxFBU",
+            "title": "How I Find Businesses to Buy: Step-by-Step Method",
+            "author": "Kenny Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/7znMZDlxFBU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7znMZDlxFBU"
+          },
+          {
+            "video_id": "YsZAnvfQAqk",
+            "title": "$60m Roll-Up That Started With an SBA Acquisition | Brian Boland and Onu Okebie Interview",
+            "author": "Acquiring Minds",
+            "thumbnail_url": "https://i.ytimg.com/vi/YsZAnvfQAqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YsZAnvfQAqk"
+          },
+          {
+            "video_id": "ccaGmVeLcto",
+            "title": "The Acquisition Search Process - Entrepreneurship Through Acquisition Event Series",
+            "author": "The University of Chicago Booth School of Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/ccaGmVeLcto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ccaGmVeLcto"
+          },
+          {
+            "video_id": "lfjqb1es1E4",
+            "title": "BIG Update: Seller Note Standby Rules When Buying a Business",
+            "author": "Owner Actions | Buy a Business with Us",
+            "thumbnail_url": "https://i.ytimg.com/vi/lfjqb1es1E4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lfjqb1es1E4"
+          },
+          {
+            "video_id": "y_3r9__pQR0",
+            "title": "How to Buy a Business Using an SBA Loan | SBDC Workshop",
+            "author": "Lower Hudson Small Business Development Center",
+            "thumbnail_url": "https://i.ytimg.com/vi/y_3r9__pQR0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y_3r9__pQR0"
+          },
+          {
+            "video_id": "Ru9e1wYKGHc",
+            "title": "Midwest CPA Breaks Down the SBA SOP 50 10 8.1 Technical Update",
+            "author": "Chris Barrett, CPA",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ru9e1wYKGHc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ru9e1wYKGHc"
+          },
+          {
+            "video_id": "s5o1MBGuspY",
+            "title": "Seller Notes in Business Acquisitions (BEGINNERS Guide for 2025) | SBA Loans",
+            "author": "SBA University",
+            "thumbnail_url": "https://i.ytimg.com/vi/s5o1MBGuspY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s5o1MBGuspY"
+          },
+          {
+            "video_id": "FvywvHEpXKU",
+            "title": "Corporate Finance Explained | Financial Due Diligence",
+            "author": "Corporate Finance Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/FvywvHEpXKU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FvywvHEpXKU"
+          },
+          {
+            "video_id": "xgCInPpZDiQ",
+            "title": "Quality of Earnings Analysis in Mergers and Acquisitions || CFA",
+            "author": "Figuring Out with Rahul",
+            "thumbnail_url": "https://i.ytimg.com/vi/xgCInPpZDiQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xgCInPpZDiQ"
+          },
+          {
+            "video_id": "zQE4R-z6Yww",
+            "title": "How to Read a Quality of Earnings Report (M&A Practitioner's Method)",
+            "author": "John Colley | The Investment Banking Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/zQE4R-z6Yww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zQE4R-z6Yww"
+          },
+          {
+            "video_id": "Qqgfjq8CujE",
+            "title": "Part 1 of Acquiring a Business (Asset purchase vs Stock purchase)",
+            "author": "Paper Rich",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qqgfjq8CujE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qqgfjq8CujE"
+          },
+          {
+            "video_id": "VBNjS7UATHo",
+            "title": "What Exactly Are You Buying in an M&A Deal? Share Purchase vs Asset Purchase #mergersandacquisitions",
+            "author": "Acquireman M&A",
+            "thumbnail_url": "https://i.ytimg.com/vi/VBNjS7UATHo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VBNjS7UATHo"
+          },
+          {
+            "video_id": "G0f0r8tYMnk",
+            "title": "IRS Form 8594 walkthrough (Asset Acquisition Statement under IRC Section 1060)",
+            "author": "Teach Me! Personal Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/G0f0r8tYMnk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G0f0r8tYMnk"
+          },
+          {
+            "video_id": "I8L23gqP5to",
+            "title": "Asset Sale Allocation: What Can't a Seller Note Spread? (2026)",
+            "author": "Hans Goldstein: Tax & Exit Planning",
+            "thumbnail_url": "https://i.ytimg.com/vi/I8L23gqP5to/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I8L23gqP5to"
+          },
+          {
+            "video_id": "S31vo0Umk5M",
+            "title": "Net Working Capital Adjustment - M&A Transactions (#5)",
+            "author": "Break Into Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/S31vo0Umk5M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S31vo0Umk5M"
+          },
+          {
+            "video_id": "siH_wi11PX8",
+            "title": "Financial Due Diligence Working Capital Analysis: Practical Case Study",
+            "author": "CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/siH_wi11PX8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=siH_wi11PX8"
+          },
+          {
+            "video_id": "x_72u8PgHpc",
+            "title": "The Working Capital Peg in M&A: How Sellers Steal Millions at Closing",
+            "author": "John Colley | The Investment Banking Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/x_72u8PgHpc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x_72u8PgHpc"
+          },
+          {
+            "video_id": "t0rj9LcHTgw",
+            "title": "Working Capital Adjustments in the Indirect Method (Add or Subtract?)",
+            "author": "Accounting Rescue with Lisa",
+            "thumbnail_url": "https://i.ytimg.com/vi/t0rj9LcHTgw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t0rj9LcHTgw"
+          },
+          {
+            "video_id": "JulvxMkY4VY",
+            "title": "Structuring Your Business Acquisition LOI For Success",
+            "author": "Keira Hamilton",
+            "thumbnail_url": "https://i.ytimg.com/vi/JulvxMkY4VY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JulvxMkY4VY"
+          },
+          {
+            "video_id": "mADDz83tbN0",
+            "title": "Private Equity Letter Of Intent Negotiation | Favorite LOI Negotiation Story",
+            "author": "A Simple Model",
+            "thumbnail_url": "https://i.ytimg.com/vi/mADDz83tbN0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mADDz83tbN0"
+          },
+          {
+            "video_id": "OIcTvUbSEgM",
+            "title": "How to Structure a Winning LOI for a Small Business Acquisition",
+            "author": "SMB Law Group LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/OIcTvUbSEgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OIcTvUbSEgM"
+          },
+          {
+            "video_id": "JSIfjvnhOco",
+            "title": "Mastering the Letter of Intent (LOI) in M&A: Best Practices & Common Mistakes",
+            "author": "FinanceKid",
+            "thumbnail_url": "https://i.ytimg.com/vi/JSIfjvnhOco/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JSIfjvnhOco"
+          },
+          {
+            "video_id": "OzPzqbUSgPw",
+            "title": "Deal-by-Deal: Ep. 12 - How to Craft an M&A Letter of Intent with Greg Hawver and Jeff Brooker (Pt 1)",
+            "author": "McGuireWoods LLP",
+            "thumbnail_url": "https://i.ytimg.com/vi/OzPzqbUSgPw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OzPzqbUSgPw"
+          },
+          {
+            "video_id": "PF2SOneLrJ0",
+            "title": "SMB PE Experts: The Essential Guide To The Letter Of Intent (\"LOI\") in M&A – Advice from a Lawyer",
+            "author": "Dennis Unrein / SMB PE LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/PF2SOneLrJ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PF2SOneLrJ0"
+          },
+          {
+            "video_id": "NBxRy2fAY-s",
+            "title": "How to Negotiate Your Letter of Intent (LOI) When Selling Your Business",
+            "author": "Built to Sell",
+            "thumbnail_url": "https://i.ytimg.com/vi/NBxRy2fAY-s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NBxRy2fAY-s"
+          },
+          {
+            "video_id": "MYKKpeF0xMM",
+            "title": "Letter of Intent Document Builder - Acquire.com",
+            "author": "acquiredotcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/MYKKpeF0xMM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MYKKpeF0xMM"
+          },
+          {
+            "video_id": "3FGfilDTCro",
+            "title": "How to Negotiate a Letter of Intent With an Acquirer (LOI)",
+            "author": "Built to Sell",
+            "thumbnail_url": "https://i.ytimg.com/vi/3FGfilDTCro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3FGfilDTCro"
+          },
+          {
+            "video_id": "cS2OjyHbq8U",
+            "title": "23 Off-Market HVAC Opportunities: Here's Exactly How We Got Them (Private Equity Case Study)",
+            "author": "Avi",
+            "thumbnail_url": "https://i.ytimg.com/vi/cS2OjyHbq8U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cS2OjyHbq8U"
+          },
+          {
+            "video_id": "u2bZWIf9b5k",
+            "title": "Buying the Right Business & Building It Up - A Guide to Acquisition Entrepreneurship | Walker Deibel",
+            "author": "DigitalTriggers",
+            "thumbnail_url": "https://i.ytimg.com/vi/u2bZWIf9b5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u2bZWIf9b5k"
+          },
+          {
+            "video_id": "6KZrugmBkcs",
+            "title": "Walker at Codie Sanchez Mastermind Event",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/6KZrugmBkcs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6KZrugmBkcs"
+          },
+          {
+            "video_id": "SXwOv9QUWws",
+            "title": "Making Billions Buying Businesses: A Masterclass",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/SXwOv9QUWws/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SXwOv9QUWws"
+          },
+          {
+            "video_id": "WP5MdYhV05A",
+            "title": "Buy Then Build: 3 Acquisition Secrets with Walker Deibel | Let's Buy a Business #83",
+            "author": "Let's Buy a Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/WP5MdYhV05A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WP5MdYhV05A"
+          },
+          {
+            "video_id": "qjwlutaiugE",
+            "title": "Acquire.com - How It Works",
+            "author": "acquiredotcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/qjwlutaiugE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qjwlutaiugE"
+          },
+          {
+            "video_id": "iPMw4FjbyRQ",
+            "title": "Search Fund Case Study: 5–10 Qualified Seller Meetings Every Month",
+            "author": "Marco Palmero",
+            "thumbnail_url": "https://i.ytimg.com/vi/iPMw4FjbyRQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iPMw4FjbyRQ"
+          },
+          {
+            "video_id": "nu3zh5FOFME",
+            "title": "An Acquire com Guide to Buying the Best Startups with Andrew Gazdecki",
+            "author": "acquiredotcom",
+            "thumbnail_url": "https://i.ytimg.com/vi/nu3zh5FOFME/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nu3zh5FOFME"
+          },
+          {
+            "video_id": "x4qfCP1pVmE",
+            "title": "How Search Funds Source Proprietary Deals Without Cold Calling",
+            "author": "Marco Palmero",
+            "thumbnail_url": "https://i.ytimg.com/vi/x4qfCP1pVmE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x4qfCP1pVmE"
+          },
+          {
+            "video_id": "LStVgWOM2LI",
+            "title": "Do Representations and Warranties have any value? business broker vendor financing seller financing",
+            "author": "David C Barnett Small Business and Deal Making SMB",
+            "thumbnail_url": "https://i.ytimg.com/vi/LStVgWOM2LI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LStVgWOM2LI"
+          },
+          {
+            "video_id": "cnvG-qb6w9Q",
+            "title": "Representations and Warranties in Mergers and Acquisitions (M&A)",
+            "author": "Brett Cenkus",
+            "thumbnail_url": "https://i.ytimg.com/vi/cnvG-qb6w9Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cnvG-qb6w9Q"
+          },
+          {
+            "video_id": "4jPZ0fzlgQY",
+            "title": "How to make a successful M&A deal - 100 Days and Beyond",
+            "author": "100 Days and Beyond Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/4jPZ0fzlgQY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4jPZ0fzlgQY"
+          },
+          {
+            "video_id": "OeJwN9bz5dE",
+            "title": "What to Do After an Acquisition: A No-BS Marketing Playbook",
+            "author": "Strategy Leaders Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/OeJwN9bz5dE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OeJwN9bz5dE"
+          },
+          {
+            "video_id": "a7XwL5Q-ttE",
+            "title": "How A $3B Multinational Company Integrated 40+ Mergers and Acquisitions [M&A Integration Case Study]",
+            "author": "Digital Transformation with Eric Kimberling",
+            "thumbnail_url": "https://i.ytimg.com/vi/a7XwL5Q-ttE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a7XwL5Q-ttE"
+          },
+          {
+            "video_id": "WUI9T65UP54",
+            "title": "Post-Acquisition Integration Dynamics",
+            "author": "UNSW eLearning",
+            "thumbnail_url": "https://i.ytimg.com/vi/WUI9T65UP54/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WUI9T65UP54"
+          },
+          {
+            "video_id": "ASUM5illI98",
+            "title": "Merger & Acquisition (M&A) Deal Structures Explained",
+            "author": "Brett Cenkus",
+            "thumbnail_url": "https://i.ytimg.com/vi/ASUM5illI98/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ASUM5illI98"
+          },
+          {
+            "video_id": "6qKxeAkc2YY",
+            "title": "Roll-Up Buyer Case Study: Deal Origination System Built in 4 Weeks",
+            "author": "Marco Palmero",
+            "thumbnail_url": "https://i.ytimg.com/vi/6qKxeAkc2YY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6qKxeAkc2YY"
+          },
+          {
+            "video_id": "zYUvLwZ6ipc",
+            "title": "How I Study Closed Deals Before Calling Brokers | Commercial Real Estate Case Study Review",
+            "author": "The Acquisition Manager",
+            "thumbnail_url": "https://i.ytimg.com/vi/zYUvLwZ6ipc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zYUvLwZ6ipc"
+          },
+          {
+            "video_id": "t_yGWsgaZ_s",
+            "title": "The Four Paths of Acquisition Entrepreneurship",
+            "author": "Walker Deibel",
+            "thumbnail_url": "https://i.ytimg.com/vi/t_yGWsgaZ_s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t_yGWsgaZ_s"
+          },
+          {
+            "video_id": "ScOjsEfBwZQ",
+            "title": "Entrepreneurship Through Acquisition: A Legal Guide to Buying a Small Business // Ep 32 of DWLD",
+            "author": "Dean Street Law",
+            "thumbnail_url": "https://i.ytimg.com/vi/ScOjsEfBwZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ScOjsEfBwZQ"
+          },
+          {
+            "video_id": "DyCKwhKRtK0",
+            "title": "SBA Loan to Buy a Business: What Changed on October 1, 2026",
+            "author": "The Money Rules",
+            "thumbnail_url": "https://i.ytimg.com/vi/DyCKwhKRtK0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DyCKwhKRtK0"
+          },
+          {
+            "video_id": "1-sviMTVjUs",
+            "title": "How to Buy a Business with SBA 7a or Seller Finance",
+            "author": "Beau Eckstein, Business Ownership Coach",
+            "thumbnail_url": "https://i.ytimg.com/vi/1-sviMTVjUs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1-sviMTVjUs"
+          },
+          {
+            "video_id": "zBzv99U7MyE",
+            "title": "EP. 1: Can a Seller Note Cover Your SBA Down Payment? Plus, What Business Should You Buy?",
+            "author": "Evan DiLeonardi | Acquisitions",
+            "thumbnail_url": "https://i.ytimg.com/vi/zBzv99U7MyE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zBzv99U7MyE"
+          },
+          {
+            "video_id": "I6M8wAaqm5s",
+            "title": "SBA Loan Strategies for Acquiring a Business | Expert Advice #6",
+            "author": "JackQuisitions",
+            "thumbnail_url": "https://i.ytimg.com/vi/I6M8wAaqm5s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=I6M8wAaqm5s"
+          },
+          {
+            "video_id": "OiLlMiZv9ZQ",
+            "title": "What are Common EBITDA Add Backs When Calculating SDE",
+            "author": "ProjectionHub",
+            "thumbnail_url": "https://i.ytimg.com/vi/OiLlMiZv9ZQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OiLlMiZv9ZQ"
+          },
+          {
+            "video_id": "gRV7segOzzo",
+            "title": "Behind the Numbers: Quality of Earnings in a Transaction",
+            "author": "XPX - Exit Planning Exchange",
+            "thumbnail_url": "https://i.ytimg.com/vi/gRV7segOzzo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gRV7segOzzo"
+          },
+          {
+            "video_id": "ha9dRzcYak4",
+            "title": "EBITDA Is an Opinion. Cash Flow Is a Fact. (M&A Practitioner Walkthrough)",
+            "author": "John Colley | The Investment Banking Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/ha9dRzcYak4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ha9dRzcYak4"
+          },
+          {
+            "video_id": "36OTOiIXSrk",
+            "title": "How Much Does a Quality of Earnings (QoE) Analysis Cost?",
+            "author": "Chris Barrett, CPA",
+            "thumbnail_url": "https://i.ytimg.com/vi/36OTOiIXSrk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=36OTOiIXSrk"
+          },
+          {
+            "video_id": "b43cWRS8RKE",
+            "title": "Fixed asset toolkit: Asset acquisitions",
+            "author": "PwC US",
+            "thumbnail_url": "https://i.ytimg.com/vi/b43cWRS8RKE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b43cWRS8RKE"
+          },
+          {
+            "video_id": "YAk3dxgnsBU",
+            "title": "Investment Banking - How To Calculate Net Working Capital for an M&A Transaction - Transact Capital",
+            "author": "Transact Capital",
+            "thumbnail_url": "https://i.ytimg.com/vi/YAk3dxgnsBU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YAk3dxgnsBU"
+          },
+          {
+            "video_id": "fPwi8HVhX3Q",
+            "title": "Working Capital Adjustments in a Business Sale Can Be a Nasty Surprise (S3)",
+            "author": "RareBrain",
+            "thumbnail_url": "https://i.ytimg.com/vi/fPwi8HVhX3Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fPwi8HVhX3Q"
+          },
+          {
+            "video_id": "329Ul-sT1ps",
+            "title": "Components of a Letter of Intent",
+            "author": "Pacific Mergers and Acquisitions Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/329Ul-sT1ps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=329Ul-sT1ps"
+          },
+          {
+            "video_id": "MvN2Q7SWbgY",
+            "title": "How to Sell Your Business: The 8-Stage M&A Process Explained",
+            "author": "THE M&A DESK",
+            "thumbnail_url": "https://i.ytimg.com/vi/MvN2Q7SWbgY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MvN2Q7SWbgY"
+          },
+          {
+            "video_id": "OOlka50xFck",
+            "title": "Negotiating a SaaS sale: the letter of intent, exclusivity and the terms that matter",
+            "author": "MySaasForSale",
+            "thumbnail_url": "https://i.ytimg.com/vi/OOlka50xFck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OOlka50xFck"
+          },
+          {
+            "video_id": "n_gxsr8QgBM",
+            "title": "Letter of Intent",
+            "author": "PCE Investment Bankers - M&A | ESOP | Valuation",
+            "thumbnail_url": "https://i.ytimg.com/vi/n_gxsr8QgBM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=n_gxsr8QgBM"
           }
         ],
         "research_reference_only": true,
@@ -33273,7 +34498,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 4359 third-party videos (39859 captured tips)",
+        "source": "Spoken content of 4534 third-party videos (41482 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -33289,38 +34514,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 4359,
-    "channel_count": 2697,
-    "total_words": 6339031,
-    "total_hours": 1277.01,
-    "total_pro_tips": 39859,
-    "unique_statutes_and_forms": 1777,
-    "unique_tools_and_portals": 11408
+    "video_count": 4534,
+    "channel_count": 2800,
+    "total_words": 6671876,
+    "total_hours": 1340.72,
+    "total_pro_tips": 41482,
+    "unique_statutes_and_forms": 1807,
+    "unique_tools_and_portals": 11777
   },
   "coverage": {
-    "videos_classified": 4359,
-    "videos_with_multiple_topics": 4356,
-    "tips_classified": 39859,
-    "raw_transcripts_joined": 4359,
+    "videos_classified": 4534,
+    "videos_with_multiple_topics": 4531,
+    "tips_classified": 41482,
+    "raw_transcripts_joined": 4534,
     "topic_video_counts": {
-      "business_model_and_economics": 3392,
-      "probate_and_docket_sourcing": 3326,
-      "unclaimed_property_and_escheat": 951,
-      "genealogy_and_heirship_proof": 3595,
-      "skip_tracing_and_outreach": 2398,
-      "contracts_and_compensation": 3413,
-      "statutory_caps_and_licensing": 3685,
-      "automation_and_small_team_ops": 3073
+      "business_model_and_economics": 3555,
+      "probate_and_docket_sourcing": 3492,
+      "unclaimed_property_and_escheat": 971,
+      "genealogy_and_heirship_proof": 3754,
+      "skip_tracing_and_outreach": 2538,
+      "contracts_and_compensation": 3560,
+      "statutory_caps_and_licensing": 3853,
+      "automation_and_small_team_ops": 3162
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 6837,
-      "probate_and_docket_sourcing": 6695,
-      "unclaimed_property_and_escheat": 2375,
-      "genealogy_and_heirship_proof": 4788,
-      "skip_tracing_and_outreach": 1264,
-      "contracts_and_compensation": 6087,
-      "statutory_caps_and_licensing": 3679,
-      "automation_and_small_team_ops": 8134
+      "business_model_and_economics": 7199,
+      "probate_and_docket_sourcing": 7397,
+      "unclaimed_property_and_escheat": 2398,
+      "genealogy_and_heirship_proof": 4923,
+      "skip_tracing_and_outreach": 1291,
+      "contracts_and_compensation": 6225,
+      "statutory_caps_and_licensing": 3750,
+      "automation_and_small_team_ops": 8299
     }
   },
   "schema_version": "1.0",

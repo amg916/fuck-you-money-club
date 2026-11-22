@@ -189,6 +189,7 @@ The thirty-five mapped plays (`Track 01 + Track 02`) are `parasitic_seo`, `compe
 | **Vol. 024** | **Tax Lien Investing** (`#024`, `62/100`) | `76,601` (`2,296–2,463`/ch) | `48` tables / `322` rows (`10.64` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `4` plays | `230`p Dig / `369`p Print / `84`p WB (`7,168`w) |
 | **Vol. 025** | **Freight Brokerage** (`#025`, `62/100`) | `75,197` (`2,267–2,482`/ch) | `48` tables / `338` rows (`10.19` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `8` plays | `221`p Dig / `352`p Print / `84`p WB (`7,206`w) |
 | **Vol. 026** | **Government Surplus Auctions** (`#026`, `62/100`) | `77,754` (`2,262–2,450`/ch) | `48` tables / `342` rows (`10.50` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `6` plays | `225`p Dig / `368`p Print / `84`p WB (`7,209`w) |
+| **Vol. 027** | **Business Acquisition** (`#027`, `57/100`) | `78,138` (`2,208–2,549`/ch) | `48` tables / `344` rows (`10.37` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `7` plays | `229`p Dig / `371`p Print / `85`p WB (`7,236`w) |
 
 ### Built-Volume Unit Economics
 
@@ -269,7 +270,7 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 | **#24** | **Tax Lien Investing** *(Vol. 024 Built & QA-Verified)* | Asset investing | **62/100** (`±6` Mod) | `17/15/17/5/8` | 3 (`1 FT + 2 C`) | \$15k–\$180k | \$4,500–\$99,000 | T1, T2 | `4` |
 | **#25** | **Freight Brokerage** *(Vol. 025 Built & QA-Verified)* | Logistics | **62/100** (`±6` Mod) | `23/10/10/7/12` | 5 (`3 FT + 2 C`) | \$1.0M–\$5.0M | \$30,000–\$400,000 | T1 | `8` |
 | **#26** | **Government Surplus Auctions** *(Vol. 026 Built & QA-Verified)* | Surplus asset trading | **62/100** (`±6` Mod) | `20/14/12/8/8` | 5 (`2 FT + 3 C`) | \$150k–\$1.0M | \$12,000–\$200,000 | T1, T2 | `6` |
-| **#27** | **Business Acquisition** | Operating ownership | **57/100** (`±6` Mod) | `24/16/7/2/8` | 10 (`7 FT + 3 C`) | \$750k–\$3.0M | \$60,000–\$540,000 | T1, T2 | `7` |
+| **#27** | **Business Acquisition** *(Vol. 027 Built & QA-Verified)* | Operating ownership | **57/100** (`±6` Mod) | `24/16/7/2/8` | 10 (`7 FT + 3 C`) | \$750k–\$3.0M | \$60,000–\$540,000 | T1, T2 | `7` |
 | **#28** | **Commercial Cleaning Contracts** | Facility services | **56/100** (`±6` Mod) | `21/12/6/11/6` | 9 (`5 FT + 4 C`) | \$250k–\$1.2M | \$20,000–\$192,000 | T1, T2 | `4` |
 | **#29** | **Insurance Restoration** | Property restoration | **54/100** (`±6` Mod) | `24/13/5/5/7` | 11 (`5 FT + 6 C`) | \$500k–\$2.5M | \$40,000–\$450,000 | T2, T1 | `5` |
 

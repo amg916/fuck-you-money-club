@@ -1,0 +1,370 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-acquisition-to-operating-control",
+      "chart_type": "process_flow",
+      "title": "Buy Verified Earnings; Then Protect Them",
+      "subtitle": "Five linked workstreams from acquisition thesis to the first 100 days.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "First-deal timing is 6–18 months. The 100-day operating plan starts after closing, not after initial outreach. Recognized revenue is acquired-business sales, not purchase price, borrowed principal, seller proceeds, or transaction volume.",
+      "caption": "Advance only with the evidence named in each stage; keep the customer-retention plan connected to the purchase agreement.",
+      "stages": [
+        {
+          "label": "Define the buy box",
+          "value": "Owner: acquisition lead",
+          "numeric_value": 1.0,
+          "detail": "Specify geography, transferable licenses, customer concentration limits, operator replacement cost, and a $200,000–$1,000,000 buyer-capital envelope."
+        },
+        {
+          "label": "Verify earnings",
+          "value": "Owner: QoE and tax contractor",
+          "numeric_value": 2.0,
+          "detail": "Tie QuickBooks exports to bank deposits, tax returns, receivables aging, payroll, and customer contracts; remove unsupported add-backs and identify maintenance capex."
+        },
+        {
+          "label": "Structure the purchase",
+          "value": "Owner: acquisition lead and counsel",
+          "numeric_value": 3.0,
+          "detail": "Model lender debt and seller notes separately; define working-capital delivery, asset allocation, lien releases, representations, indemnities, and required contract transfers."
+        },
+        {
+          "label": "Transfer operating control",
+          "value": "Owner: general manager",
+          "numeric_value": 4.0,
+          "detail": "Reconcile closing funds, verify insurance and license continuity, transfer authorized bank access, and test payroll and customer billing before retiring seller access."
+        },
+        {
+          "label": "Run the 100-day plan",
+          "value": "Owner: general manager and controller",
+          "numeric_value": 5.0,
+          "detail": "Track weekly collections, customer retention, backlog, service defects, and covenant headroom; automate reporting only after ledger ownership and exception handling work."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-single-cohort-sourcing-funnel",
+      "chart_type": "funnel",
+      "title": "One Cohort, Five Evidence Filters",
+      "subtitle": "An illustrative 120-target search cohort narrows to two signed LOIs.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Counts describe one hypothetical cohort observed through a common cutoff, not monthly throughput or an industry benchmark. Each stage is a subset of the preceding stage. A signed LOI does not establish a completed acquisition.",
+      "caption": "Stage conversions are 40%, 50%, 33.33%, and 25%; cumulative target-to-LOI conversion is 2 / 120 = 1.67%.",
+      "stages": [
+        {
+          "label": "Qualified targets",
+          "value": "120 businesses fit the buy box",
+          "numeric_value": 120.0,
+          "detail": "Deduplicate broker and direct-owner leads in Airtable; record business identity, geography, sector, and a specific reason the ownership model fits."
+        },
+        {
+          "label": "Owner conversations",
+          "value": "48 of 120 targets; 40% conversion",
+          "numeric_value": 48.0,
+          "detail": "Confirm seller authority, transition intentions, expected timing, and willingness to provide operating records before requesting confidential customer-level material."
+        },
+        {
+          "label": "Usable data rooms",
+          "value": "24 of 48 conversations; 50% conversion",
+          "numeric_value": 24.0,
+          "detail": "Execute confidentiality terms and obtain sufficient ledger, payroll, tax, and receivables records to compare the seller narrative with recorded operating activity."
+        },
+        {
+          "label": "Diligence-ready candidates",
+          "value": "8 of 24 data rooms; 33.33% conversion",
+          "numeric_value": 8.0,
+          "detail": "Complete preliminary earnings normalization, concentration review, and debt-service stress testing; reserve full third-party QoE expenditure for the selected transaction."
+        },
+        {
+          "label": "Signed LOIs",
+          "value": "2 of 8 candidates; 25% conversion",
+          "numeric_value": 2.0,
+          "detail": "Negotiate price mechanics, exclusivity, diligence access, and closing conditions sequentially where capacity demands; neither LOI is counted as revenue or a closed deal."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-earnings-waterfall",
+      "chart_type": "waterfall",
+      "title": "From $1,875,000 Sales to $243,750 Owner Net",
+      "subtitle": "Six bars reconcile the Base-Case 13.0% annual net margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Canonical annual outcomes: Conservative $750,000 sales at 8% equals $60,000 owner net; Base $1,875,000 at 13.0% equals $243,750; Scaled $3,000,000 at 18% equals $540,000. Expense allocations below are illustrative, not additional scorecard inputs. Net is after interest and before principal repayments; no separate owner-level income-tax calculation is supplied.",
+      "caption": "Render sales as the opening total, four negative expense movements, and owner net as the closing total: $1,875,000 − $900,000 − $450,000 − $187,500 − $93,750 = $243,750. Do not add the closing total as another movement.",
+      "stages": [
+        {
+          "label": "Acquired-business sales",
+          "value": "$1,875,000 annual recognized revenue",
+          "numeric_value": 1875000.0,
+          "detail": "Use earned sales from the operating company; exclude acquisition debt proceeds, equity contributions, sales tax collected for remittance, and purchase consideration."
+        },
+        {
+          "label": "Direct fulfillment costs",
+          "value": "Subtract $900,000 annual direct costs",
+          "numeric_value": -900000.0,
+          "detail": "Allocate materials, outside fulfillment, and other direct costs here; exclude pod payroll already assigned below. The remaining gross profit is $975,000."
+        },
+        {
+          "label": "Recurring pod labor",
+          "value": "Subtract $450,000 annual labor expense",
+          "numeric_value": -450000.0,
+          "detail": "Illustrative loaded labor and recurring contractor expense averages $37,500 monthly across the core pod; validate local wages, benefits, and contractor scope."
+        },
+        {
+          "label": "Other operating expense",
+          "value": "Subtract $187,500 annual operating expense",
+          "numeric_value": -187500.0,
+          "detail": "Budget $15,625 monthly for occupancy, insurance, software, and remaining operating charges. Together with pod labor, recurring overhead is $53,125 monthly, excluding direct costs."
+        },
+        {
+          "label": "Interest expense",
+          "value": "Subtract $93,750 annual interest expense",
+          "numeric_value": -93750.0,
+          "detail": "Interest averages $7,812.50 monthly in this allocation. Debt principal is not an earnings expense; model its cash requirement separately using actual amortization schedules."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$243,750 closing total; 13.0% margin",
+          "numeric_value": 243750.0,
+          "detail": "Divide $243,750 by $1,875,000 to recover 13.0%. Then separately bridge earnings to available cash for principal, working-capital changes, capex, and distributions."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-collection-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Collection Yield by Acquisition Sub-Niche",
+      "subtitle": "Illustrative dollars banked within 30 days per $100 invoiced.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Five independent underwriting examples use hypothetical collection assumptions, not observed sector averages. Numeric values are percentages of an invoice cohort collected within 30 days. Collections are measured before payment-processing fees; slower collection does not automatically mean bad debt.",
+      "caption": "Compare cash conversion rather than mistaking payment-rail receipts for incremental sales or owner profit. Replace every assumption with target-specific invoice and bank evidence.",
+      "stages": [
+        {
+          "label": "Managed IT services",
+          "value": "$95 banked per $100 invoiced",
+          "numeric_value": 95.0,
+          "detail": "Illustrative recurring ACH cohort: verify debit authorizations, return histories, disputed service credits, and whether customer contracts survive the ownership change."
+        },
+        {
+          "label": "Commercial cleaning",
+          "value": "$90 banked per $100 invoiced",
+          "numeric_value": 90.0,
+          "detail": "Illustrative ACH and check cohort: inspect customer payment runs, site acceptance requirements, invoice disputes, and payroll funded before customer collection."
+        },
+        {
+          "label": "Equipment maintenance",
+          "value": "$85 banked per $100 invoiced",
+          "numeric_value": 85.0,
+          "detail": "Illustrative card and ACH cohort: reconcile signed service tickets, parts charges, processor deductions, refund exposure, and commercial-account credit terms."
+        },
+        {
+          "label": "Specialty distribution",
+          "value": "$80 banked per $100 invoiced",
+          "numeric_value": 80.0,
+          "detail": "Illustrative trade-credit cohort: test delivery evidence, returns, deductions, inventory funding, and customer credit limits rather than relying on invoice totals."
+        },
+        {
+          "label": "Commercial field services",
+          "value": "$75 banked per $100 invoiced",
+          "numeric_value": 75.0,
+          "detail": "Illustrative milestone-billing cohort: identify retainage, purchase-order mismatches, disputed completion certificates, and collection delays hidden inside reported receivables."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-statutory-risk-tree",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Committing Closing Funds",
+      "subtitle": "Each affirmative branch advances; unresolved evidence returns to diligence.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Apply jurisdiction-specific employment, tax, licensing, and secured-transactions rules to the actual deal structure. SBA requirements apply when using the relevant program; lender covenants and disclosure obligations depend on executed terms.",
+      "caption": "Treat the four nodes as sequential decisions. An unresolved branch requires a documented cure, revised economics, or withdrawal before funds are committed.",
+      "stages": [
+        {
+          "label": "Can title transfer cleanly?",
+          "value": "Yes: advance; unresolved: obtain releases",
+          "numeric_value": 1.0,
+          "detail": "Search applicable UCC filing offices and inspect liens outside that system. UCC § 9-315 generally preserves security interests after disposition unless an exception applies; obtain secured-party releases and payoff evidence."
+        },
+        {
+          "label": "Are tax terms executable?",
+          "value": "Yes: advance; unresolved: revise closing terms",
+          "numeric_value": 2.0,
+          "detail": "For applicable asset acquisitions, align allocation and Form 8594 reporting under 26 U.S.C. § 1060. Review state successor-tax exposure, payroll remittances, clearance requirements, and tax-related indemnity support."
+        },
+        {
+          "label": "Can people and licenses continue?",
+          "value": "Yes: advance; unresolved: cure continuity risks",
+          "numeric_value": 3.0,
+          "detail": "Test overtime exposure under 29 U.S.C. § 207, applicable WARN duties under §§ 2101–2102, state employment rules, and license transfer restrictions. Obtain required consents and verify customer assignment terms."
+        },
+        {
+          "label": "Does the debt structure survive stress?",
+          "value": "Yes: proceed; unresolved: resize or withdraw",
+          "numeric_value": 4.0,
+          "detail": "For SBA transactions, review 13 CFR §§ 120.110, 120.150, and 120.160 plus current program requirements. Disclose seller notes and side agreements; stress principal, interest, customer loss, and covenant headroom."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-ten-to-twelve-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Ten Core Seats; Two Explicit Scale Additions",
+      "subtitle": "Base and Conservative: 7 FT + 3 C. Scaled: 8 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each numeric value represents one person. The first ten seats form the core pod; the final two activate only in the Scaled case. Contractors are people, not full-time-equivalent claims. Roles are an illustrative combined ownership-and-operation roster, not ten extra hires above an acquired workforce.",
+      "caption": "The acquisition lead owns capital allocation; the general manager directs operations. Specialist contractors support defined workstreams without replacing management accountability.",
+      "stages": [
+        {
+          "label": "Acquisition lead",
+          "value": "Core FT 1 of 7",
+          "numeric_value": 1.0,
+          "detail": "Own purchase discipline, lender relationships, investment decisions, seller negotiations, and the weekly review of liquidity and customer concentration."
+        },
+        {
+          "label": "General manager",
+          "value": "Core FT 2 of 7",
+          "numeric_value": 1.0,
+          "detail": "Own the operating result, customer retention, staffing priorities, service recovery, and execution of the post-close 100-day integration plan."
+        },
+        {
+          "label": "Operations lead",
+          "value": "Core FT 3 of 7",
+          "numeric_value": 1.0,
+          "detail": "Control scheduling, vendor commitments, capacity allocation, backlog aging, and daily escalation of delivery constraints to the general manager."
+        },
+        {
+          "label": "Service lead",
+          "value": "Core FT 4 of 7",
+          "numeric_value": 1.0,
+          "detail": "Set delivery standards, supervise job execution, review defects, and preserve customer-specific operating knowledge that could leave with the seller."
+        },
+        {
+          "label": "Delivery specialist",
+          "value": "Core FT 5 of 7",
+          "numeric_value": 1.0,
+          "detail": "Perform customer work, capture completion evidence, record materials and hours, and flag scope changes before they become unbilled service."
+        },
+        {
+          "label": "Account and retention lead",
+          "value": "Core FT 6 of 7",
+          "numeric_value": 1.0,
+          "detail": "Own renewals, customer transition calls, dispute resolution, concentration monitoring, and early escalation of threatened account departures."
+        },
+        {
+          "label": "Controller and reporting lead",
+          "value": "Core FT 7 of 7",
+          "numeric_value": 1.0,
+          "detail": "Own QuickBooks reconciliations, the cash forecast, receivables follow-up, covenant calculations, and automated management reporting with reviewed exceptions."
+        },
+        {
+          "label": "Transaction counsel",
+          "value": "Core contractor 1 of 3",
+          "numeric_value": 1.0,
+          "detail": "Review transaction disclosures, purchase terms, lien releases, license transfers, employment issues, and post-close claims within a defined engagement."
+        },
+        {
+          "label": "QoE and tax specialist",
+          "value": "Core contractor 2 of 3",
+          "numeric_value": 1.0,
+          "detail": "Normalize earnings, test working capital, evaluate tax allocation, and reconcile diligence findings with the opening operating-company records."
+        },
+        {
+          "label": "Systems and workflow specialist",
+          "value": "Core contractor 3 of 3",
+          "numeric_value": 1.0,
+          "detail": "Configure Microsoft 365 access, accounting integrations, backups, and back-office workflows; document recovery procedures and test exception ownership."
+        },
+        {
+          "label": "Capacity supervisor",
+          "value": "Scaled addition: FT 8 of 8",
+          "numeric_value": 1.0,
+          "detail": "Add only in the twelve-person Scaled configuration to supervise higher throughput, absorb scheduling complexity, and prevent service-quality erosion."
+        },
+        {
+          "label": "Integration coach",
+          "value": "Scaled addition: contractor 4 of 4",
+          "numeric_value": 1.0,
+          "detail": "Add time-bounded process coaching and integration support in the Scaled configuration; transfer documented routines to the permanent operating leads."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-buyer-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Buyer Capital Before Negotiating Price",
+      "subtitle": "Four buckets divide an illustrative $600,000 startup-capital plan.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "The canonical buyer-capital range is $200,000–$1,000,000. The $600,000 illustration allocates 40%, 10%, 30%, and 20%. Boundary allocations use the same illustrative weights, not claims that every transaction is feasible at either boundary.",
+      "caption": "Numeric values are USD and sum to $600,000. Detail text provides comparable $200,000 and $1,000,000 allocations. Buyer capital is neither recognized sales nor total enterprise value.",
+      "stages": [
+        {
+          "label": "Purchase equity contribution",
+          "value": "$240,000; 40% of buyer capital",
+          "numeric_value": 240000.0,
+          "detail": "Allocate $80,000 at the lower boundary and $400,000 at the upper boundary. Size debt separately; confirm lender equity requirements and seller-note treatment before treating any note as qualifying injection."
+        },
+        {
+          "label": "Diligence and closing costs",
+          "value": "$60,000; 10% of buyer capital",
+          "numeric_value": 60000.0,
+          "detail": "Allocate $20,000 at the lower boundary and $100,000 at the upper boundary for QoE, counsel, tax work, searches, and transaction expenses. Separate one-time engagement charges from recurring contractor expense."
+        },
+        {
+          "label": "Opening working-capital reserve",
+          "value": "$180,000; 30% of buyer capital",
+          "numeric_value": 180000.0,
+          "detail": "Allocate $60,000 at the lower boundary and $300,000 at the upper boundary. Fund collection gaps and seasonality after reconciling seller-delivered working capital to the negotiated closing adjustment."
+        },
+        {
+          "label": "Integration and contingency liquidity",
+          "value": "$120,000; 20% of buyer capital",
+          "numeric_value": 120000.0,
+          "detail": "Allocate $40,000 at the lower boundary and $200,000 at the upper boundary for migration, retention, and repair contingencies. Cash released for one purpose cannot simultaneously remain available for another."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days-search-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to a Decision-Ready Acquisition Search",
+      "subtitle": "Build an evidence pipeline without pretending the first deal closes in a month.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "This is a pre-acquisition launch sprint. First-deal timing remains 6–18 months; the 100-day turnaround starts after closing. Numeric values are milestone endpoint days.",
+      "caption": "Complete one inspectable operating artifact each week. A missing seller document becomes a tracked diligence issue, not an invented input to the debt model.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Deliver the buy box and capital plan",
+          "numeric_value": 7.0,
+          "detail": "Assign the acquisition lead; document sector exclusions, buyer liquidity, operator capacity, and concentration limits. Build the four-bucket capital worksheet and identify lender and specialist interview targets."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Deliver the tracked sourcing cohort",
+          "numeric_value": 14.0,
+          "detail": "Configure Airtable stages and deduplication; begin broker and owner outreach. Record response evidence, confidentiality terms, seller authority, and requested records without treating the illustrative funnel as a quota."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Deliver the first evidence-backed screening memo",
+          "numeric_value": 21.0,
+          "detail": "For a responsive target, reconcile available statements to deposits, review customer concentration, and build an interest-and-principal schedule. If records are insufficient, issue a precise evidence request instead."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Deliver the pursue, revise, or reject decision",
+          "numeric_value": 30.0,
+          "detail": "Review the four pre-flight checks, document downside liquidity, and price unresolved liabilities. Prepare LOI terms only for a supported candidate; otherwise revise the search and preserve diligence capital."
+        }
+      ]
+    }
+  ]
+}

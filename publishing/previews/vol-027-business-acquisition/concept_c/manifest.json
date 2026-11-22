@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-027-business-acquisition",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1854175,
+      "sha256": "c45295ae39ca59afd584d2bd1985ffdf089cfacd19001d2aad0a169b0c52d8f4"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2380719,
+      "sha256": "cb72d2b0f9057e9803b9c8a8cf2d75de5ea4febc823cd0fa93ee7069449d9dc2"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 548281,
+      "sha256": "70015dbb41589f66519077e055a40b1ef9bff90bb222ce016d324032beaaacdb"
+    },
+    "book.epub": {
+      "bytes": 250656,
+      "sha256": "ec9abe9f373e05affd62ee00259a44e93293726caae0302b79867b63173ba8a2"
+    },
+    "art/cover.svg": {
+      "bytes": 4094,
+      "sha256": "4c1dd0d0e16a709138f78e1731549eeea9a5537e92794e1361fe916ec5533433"
+    },
+    "art/scorecard.svg": {
+      "bytes": 36279,
+      "sha256": "df9fbc7eebb2caa7a23e3db1d9486d4e929d56f5769074603f2477122d6865be"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10855,
+      "sha256": "bf0a7c9eb40c07f5e5050c3c774d5cdb3f75e3e907aa19088746bc2b79f52e08"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7574,
+      "sha256": "f15e9af7628b8e28c014be84aee9b88eef0fe2b62806d7a0e8c4cfb3837f2a50"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11560,
+      "sha256": "499be03a7e92464ee9216f8ae2972f8cae47f5d9631f124b4bf36b02ce632934"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9064,
+      "sha256": "b9573ad80abc2868fe2ac45853bafa45e2d5921c9a666383d415de3095cda041"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9566,
+      "sha256": "6221e62948de806925cec5464f86541741dd8f0e59283426ea0533e45b9ac6ac"
+    },
+    "art/diag_06.svg": {
+      "bytes": 15939,
+      "sha256": "a134ac190ed78571909e4d542b78022a8cb8ac9d253d24882ef3ddc44dfec59a"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8332,
+      "sha256": "0eab88645122cc24180f99bb7de103838c6212cd968b3e8c7b72271a7a24da2c"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8063,
+      "sha256": "249fc8c4d1eee70d8b4ca435b0df414f8efef68a18693ce161a2dca61faa2da3"
+    }
+  }
+}

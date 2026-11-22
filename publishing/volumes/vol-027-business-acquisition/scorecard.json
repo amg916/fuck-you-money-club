@@ -1,0 +1,392 @@
+{
+  "candidate_number": 13,
+  "slug": "business-acquisition",
+  "title": "Business Acquisition",
+  "category": "Operating business ownership",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 24,
+    "profit_margin_potential": 16,
+    "team_efficiency": 7,
+    "startup_accessibility": 2,
+    "automation_potential": 8
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 57,
+  "tier_label": "Capital / Labor Intensive",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 54,
+    "high": 60
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 24/25. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+    "profit_margin_potential": "Profit Margin Potential: 16/25. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+    "team_efficiency": "Team Efficiency: 7/20. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+    "startup_accessibility": "Startup Accessibility: 2/15. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
+    "automation_potential": "Automation Potential: 8/15. Existing cash flow requires purchase capital, retained staff and debt-service discipline."
+  },
+  "economics": {
+    "gross_revenue_range": "$750,000–$3,000,000 USD annually",
+    "net_profit_margin_range": "8–18%",
+    "owner_net_profit_potential": "$60,000–$540,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$200,000–$1,000,000 USD",
+    "monthly_opex_range": "$15,000–$70,000 USD",
+    "time_to_first_deal": "6–18 months",
+    "typical_team_size": {
+      "full_time_including_owner": 7,
+      "contractors": 3,
+      "total_people": 10
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Acquired business sales; margin after interest, before principal repayments",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 750000,
+      "net_profit_margin_pct": 8,
+      "annual_owner_net_profit_usd": 60000,
+      "full_time_including_owner": 7,
+      "contractors": 3,
+      "total_people": 10,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 1875000.0,
+      "net_profit_margin_pct": 13.0,
+      "annual_owner_net_profit_usd": 243750,
+      "full_time_including_owner": 7,
+      "contractors": 3,
+      "total_people": 10,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 3000000,
+      "net_profit_margin_pct": 18,
+      "annual_owner_net_profit_usd": 540000,
+      "full_time_including_owner": 8,
+      "contractors": 4,
+      "total_people": 12,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Financial reporting",
+    "Back-office workflows"
+  ],
+  "key_risks": [
+    "Hidden liabilities",
+    "Customer attrition",
+    "Leverage"
+  ],
+  "regulatory_notes": [
+    "Review employment, tax, licenses, lender covenants and transaction disclosures."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "distressed_asset_recovery",
+      "track_id": "track_1",
+      "name": "Distressed Asset Recovery",
+      "mechanism": "Locate mispriced, orphaned, or administratively stranded assets—tax-sale overages, unclaimed state funds, dormant judgments, government surplus lots, or distressed micro-businesses—and capture a contingent recovery fee or acquisition spread.",
+      "inputs": [
+        "Tax-sale excess proceeds ledgers",
+        "Unclaimed property & judgment dockets",
+        "Surplus auction manifests"
+      ],
+      "workflow": [
+        "Audit statutory fee caps, claim windows, and chain-of-title encumbrances",
+        "Execute skip-tracing or asset inspection to confirm net realizable value",
+        "Lock in contingent recovery agreements or below-intrinsic buyouts"
+      ],
+      "metrics": [
+        "Gross spread / contingent fee per case",
+        "Claim approval rate",
+        "Days from filing to disbursement"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory fee-cap compression or administrative hold",
+          "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+          "impact": "Reduced net fee margin or extended cash conversion cycle",
+          "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+          "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required"
+        }
+      ]
+    },
+    {
+      "id": "expired_chrome_extension_acquisitions",
+      "track_id": "track_2",
+      "name": "Dormant Chrome Extension & Shopify App Roll-Up / Monetization Flip",
+      "mechanism": "Scan the Chrome Web Store, WordPress Plugin Directory, and Shopify App Store for high-install (10,000–250,000 active users), 4.5+-star free utilities neglected by solo developers, acquire them at 1–2x potential annual cashflow, and introduce clean freemium Pro tiers or opt-in contextual partner offers.",
+      "inputs": [
+        "Chrome Web Store / Shopify / WP plugin scraper filtering by active installs, rating, & last-updated date (>12 months)",
+        "Asset Purchase Agreement (APA) & Chrome Web Store developer-account transfer checklist",
+        "Freemium Stripe checkout SDK + non-intrusive opt-in partner recommendation module"
+      ],
+      "workflow": [
+        "Identify utility extensions and micro-apps with strong organic weekly installs and zero monetization whose solo creator has not pushed an update in 12–24 months",
+        "Acquire the codebase, store listing, and domain for $3,000–$35,000 with an escrowed transfer through the official developer console",
+        "Ship a Manifest V3 maintenance update first to build user trust, then grandfather existing free features while adding a $7–$19/mo Pro power-user tier or explicit opt-in partner deals"
+      ],
+      "metrics": [
+        "Acquisition payback period (target 2–5 months)",
+        "Free-to-Pro conversion rate (1.5–4%) + monthly ARPU per 1,000 WAU",
+        "Post-acquisition review rating stability (>=4.4 stars) and uninstall rate (<3%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Chrome Web Store malware/policy takedown or mass 1-star user revolt after acquisition",
+          "trigger": "Injecting silent background adware/tracking scripts post-acquisition or locking previously free core features behind a sudden paywall",
+          "impact": "Permanent Chrome Web Store removal and total write-off of acquisition capital",
+          "detection_metric": "Zero CWS permission-scope expansion without user opt-in and daily 1-star review velocity monitor",
+          "fallback": "Never inject hidden tracking or background ad scripts; keep existing permissions narrow, grandfather all legacy free features, and monetize strictly via additive Pro workflows"
+        }
+      ]
+    },
+    {
+      "id": "chapter11_trade_claim_convenience_class_rollup",
+      "track_id": "track_1",
+      "name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "mechanism": "Purchase documented small trade claims below risk-adjusted expected plan distributions, accounting for objections, assignment procedures, and plan rules that may prohibit claim splitting or aggregation benefits.",
+      "inputs": [
+        "Bankruptcy schedules E/F and claims register",
+        "Invoices, payment history, and assignment documents",
+        "Proposed plan classification and distribution waterfall"
+      ],
+      "workflow": [
+        "1. Reconcile scheduled trade creditors with filed claims and supporting invoices",
+        "2. Model recoveries under plan amendments, objections, setoffs, and convenience-class eligibility",
+        "3. Buy eligible claims through documented assignments and complete required transfer notices",
+        "4. Monitor objections and confirmation, then reconcile distributions to each acquired claim"
+      ],
+      "metrics": [
+        "Purchase discount to risk-adjusted recovery",
+        "Allowed claim value versus purchased face value",
+        "Realized return and days to distribution"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim disallowance or convenience-class exclusion",
+          "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+          "impact": "Reduced distribution or complete capital loss",
+          "detection_metric": "Objection rate and eligible allowed value per portfolio",
+          "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries"
+        }
+      ]
+    },
+    {
+      "id": "aged_shelf_corp_tradeline_credit_stacking",
+      "track_id": "track_1",
+      "name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "mechanism": "Compare reinstated entities and genuine business credit facilities for working-capital financing; entity age is not operating history, and promotional APR economics require accurate underwriting and repayment capacity.",
+      "inputs": [
+        "Entity filings, beneficial ownership, and liability searches",
+        "Verified operating financials and genuine supplier tradelines",
+        "Lender eligibility, promotional APR, fee, and guarantee terms"
+      ],
+      "workflow": [
+        "1. Audit the entity's ownership, tax liabilities, and reinstatement requirements",
+        "2. Disclose acquisition and actual operating history; establish only genuine paid supplier accounts",
+        "3. Compare lender-approved applications with full debt disclosure and consolidated exposure limits",
+        "4. Fund documented business expenses and repay before promotional expiry using cash-flow reserves"
+      ],
+      "metrics": [
+        "Effective borrowing cost including fees",
+        "Debt service coverage under post-promotion APR",
+        "Utilization and days to promotional expiry"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit withdrawal or unaffordable repricing",
+          "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+          "impact": "Account closure, accelerated repayment, and guarantee exposure",
+          "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+          "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending"
+        }
+      ]
+    },
+    {
+      "id": "ferc_grid_interconnection_queue_land_speculation",
+      "track_id": "track_1",
+      "name": "FERC / ISO Substation Interconnection Queue & Powered-Land Option Flipping",
+      "mechanism": "Overlay public interconnection queues with land-use and substation data to option potentially useful sites, treating queue position and nearby infrastructure as signals rather than guaranteed deliverable power.",
+      "inputs": [
+        "ISO and utility interconnection queues and study results",
+        "Parcel zoning, transmission corridors, and substation maps",
+        "Utility service estimates and developer site requirements"
+      ],
+      "workflow": [
+        "1. Match queue activity and infrastructure constraints to suitable parcels",
+        "2. Verify site control requirements, zoning, environmental limits, and utility capacity assumptions",
+        "3. Negotiate assignable diligence-contingent options within capped carrying-cost budgets",
+        "4. Assign approved options to qualified developers with explicit disclosure of unresolved power and study conditions"
+      ],
+      "metrics": [
+        "Option cost per qualified developable acre",
+        "Utility-validated capacity versus marketed capacity",
+        "Net assignment proceeds after study and option costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Queue withdrawal or prohibitive network upgrade cost",
+          "trigger": "Restudy, milestone failure, or capacity estimate unsupported by utility commitments",
+          "impact": "Option expiry and unrecoverable diligence spending",
+          "detection_metric": "Study cost revisions and unresolved interconnection milestones",
+          "fallback": "Let contingent options lapse or reposition land for independently viable uses without claiming secured power"
+        }
+      ]
+    },
+    {
+      "id": "wotc_hourly_payroll_tax_credit_contingency_engine",
+      "track_id": "track_1",
+      "name": "Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine",
+      "mechanism": "Automate employer-authorized WOTC screening and separately substantiate Section 41 research credits, earning outcome-linked service fees only where permitted; program authorization, qualifying activities, wage coordination, and professional fee restrictions govern each claim.",
+      "inputs": [
+        "Consented hiring records, Form 8850 responses, and payroll hours",
+        "Research project evidence and qualified expense ledgers",
+        "State workforce certification procedures and tax-year credit and fee rules"
+      ],
+      "workflow": [
+        "1. Confirm WOTC authorization for each hire date and complete required prescreening by the job-offer date",
+        "2. Submit Form 8850 and required supporting forms within the applicable 28-day deadline and track state certification and qualifying hours",
+        "3. Separately document Section 41 qualifying research and expenses, reconciling wage overlap and applicable deduction adjustments with a tax professional",
+        "4. Obtain employer and preparer approval before filing, retain audit support, and collect permitted fees without guaranteeing credits"
+      ],
+      "metrics": [
+        "Timely WOTC certification submission rate",
+        "Substantiated credits realized by the employer",
+        "Net permitted service fees after review and filing costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit denial or impermissible contingent-fee arrangement",
+          "trigger": "Expired program authority, late certification, unsupported research expenses, or restricted practitioner compensation",
+          "impact": "Reduced credits, amended returns, penalties, and fee repayment exposure",
+          "detection_metric": "Deadline exceptions, certification denials, and unsupported expense share",
+          "fallback": "Exclude unsupported claims and use compliant fixed-fee payroll and research-documentation services under independent tax review"
+        }
+      ]
+    },
+    {
+      "id": "solar_tax_equity_depreciation_strip_syndication",
+      "track_id": "track_1",
+      "name": "Commercial Solar Tax-Equity Flip & Bonus-Depreciation Strip Syndication",
+      "mechanism": "Arrange commercial solar partnership-flip investments that allocate supported tax benefits and cash flows to genuine equity owners; depreciation cannot be sold as a standalone credit, and allocations require economic substance, tax compliance, and securities-law review.",
+      "inputs": [
+        "Solar project costs, ownership records, and operating contracts",
+        "Investor tax capacity and dated depreciation eligibility analysis",
+        "Counsel-reviewed partnership waterfall and securities offering documents"
+      ],
+      "workflow": [
+        "1. Underwrite project cash flows, eligible basis, construction and service dates, and current credit and depreciation availability",
+        "2. Verify investor suitability, tax capacity, at-risk and passive-loss limits, and applicable securities and intermediary requirements",
+        "3. Structure counsel-approved partnership allocations and flip terms with genuine equity risk, basis adjustments, and recapture protections",
+        "4. Close through authorized intermediaries and monitor operations, tax reporting, and flip conditions before distributing permitted fees"
+      ],
+      "metrics": [
+        "Qualified tax-equity capital closed",
+        "Realized investor distributions versus underwritten waterfall",
+        "Net permitted placement fees after legal and diligence costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tax allocations disallowed or unlicensed securities placement",
+          "trigger": "Unsupported depreciation stripping, inadequate economic substance, ineligible project timing, or unauthorized transaction-based compensation",
+          "impact": "Tax assessments, recapture, investor losses, and fee disgorgement exposure",
+          "detection_metric": "Unresolved tax opinion conditions and securities compliance exceptions",
+          "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Statutory fee-cap compression or administrative hold",
+      "trigger": "Jurisdiction updates finder fee limits, waiting periods, or filing documentation rules",
+      "impact": "Reduced net fee margin or extended cash conversion cycle",
+      "detection_metric": "County/state rejection notice rate and days-to-payout variance",
+      "fallback": "Diversify across multi-state dockets and use attorney-backed filing partnerships where required",
+      "play_id": "distressed_asset_recovery",
+      "play_name": "Distressed Asset Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Chrome Web Store malware/policy takedown or mass 1-star user revolt after acquisition",
+      "trigger": "Injecting silent background adware/tracking scripts post-acquisition or locking previously free core features behind a sudden paywall",
+      "impact": "Permanent Chrome Web Store removal and total write-off of acquisition capital",
+      "detection_metric": "Zero CWS permission-scope expansion without user opt-in and daily 1-star review velocity monitor",
+      "fallback": "Never inject hidden tracking or background ad scripts; keep existing permissions narrow, grandfather all legacy free features, and monetize strictly via additive Pro workflows",
+      "play_id": "expired_chrome_extension_acquisitions",
+      "play_name": "Dormant Chrome Extension & Shopify App Roll-Up / Monetization Flip",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Claim disallowance or convenience-class exclusion",
+      "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+      "impact": "Reduced distribution or complete capital loss",
+      "detection_metric": "Objection rate and eligible allowed value per portfolio",
+      "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries",
+      "play_id": "chapter11_trade_claim_convenience_class_rollup",
+      "play_name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Credit withdrawal or unaffordable repricing",
+      "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+      "impact": "Account closure, accelerated repayment, and guarantee exposure",
+      "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+      "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending",
+      "play_id": "aged_shelf_corp_tradeline_credit_stacking",
+      "play_name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Queue withdrawal or prohibitive network upgrade cost",
+      "trigger": "Restudy, milestone failure, or capacity estimate unsupported by utility commitments",
+      "impact": "Option expiry and unrecoverable diligence spending",
+      "detection_metric": "Study cost revisions and unresolved interconnection milestones",
+      "fallback": "Let contingent options lapse or reposition land for independently viable uses without claiming secured power",
+      "play_id": "ferc_grid_interconnection_queue_land_speculation",
+      "play_name": "FERC / ISO Substation Interconnection Queue & Powered-Land Option Flipping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Credit denial or impermissible contingent-fee arrangement",
+      "trigger": "Expired program authority, late certification, unsupported research expenses, or restricted practitioner compensation",
+      "impact": "Reduced credits, amended returns, penalties, and fee repayment exposure",
+      "detection_metric": "Deadline exceptions, certification denials, and unsupported expense share",
+      "fallback": "Exclude unsupported claims and use compliant fixed-fee payroll and research-documentation services under independent tax review",
+      "play_id": "wotc_hourly_payroll_tax_credit_contingency_engine",
+      "play_name": "Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Tax allocations disallowed or unlicensed securities placement",
+      "trigger": "Unsupported depreciation stripping, inadequate economic substance, ineligible project timing, or unauthorized transaction-based compensation",
+      "impact": "Tax assessments, recapture, investor losses, and fee disgorgement exposure",
+      "detection_metric": "Unresolved tax opinion conditions and securities compliance exceptions",
+      "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership",
+      "play_id": "solar_tax_equity_depreciation_strip_syndication",
+      "play_name": "Commercial Solar Tax-Equity Flip & Bonus-Depreciation Strip Syndication",
+      "track_id": "track_1"
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-027-business-acquisition",
+  "volume_id": "vol-027-business-acquisition",
+  "title": "Business Acquisition — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for Cash-Flowing SMB Acquisitions: Deal Underwriting, Quality of Earnings, Acquisition Financing, Closing Controls, Growth Automation, and the First 100 Days",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Opportunity, Vertical Underwriting, and Counterparty Qualification",
+      "purpose": "Convert an attractive listing into a documented acquisition thesis that survives customer, seller, lender, and operating-team scrutiny. Separate verified recurring earnings from broker adjustments, identify ownership dependencies, and establish explicit conditions for investing diligence dollars before negotiating a binding purchase agreement.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Create one deal record with a permanent identifier, named buyer, seller entities, operating locations, and document owners. Preserve the original listing and each subsequent revision so price changes and earnings representations remain traceable throughout negotiations.",
+        "Screen the vertical before requesting sensitive records. Compare customer concentration, repeat-purchase behavior, replacement-manager cost, licensing requirements, and supplier alternatives against your capital limits; reject businesses whose cash generation depends on an untransferable personal relationship.",
+        "Request three fiscal years and trailing monthly financials, bank statements, tax returns, payroll registers, and customer-level sales. Assign each discrepancy to an evidence owner rather than treating the broker's narrative as a substitute for reconciliation.",
+        "Interview the seller and proposed operating leader separately using the same dependency questions. Record conflicting answers about pricing authority, purchasing, employee retention, and customer ownership, then resolve those conflicts before increasing diligence expenditure.",
+        "Prepare a written investment decision using the canonical revenue and owner-profit scenarios as reference cases. Keep purchase price, financing proceeds, and acquired customer sales in separate categories; document every assumption that requires confirmation before signing."
+      ],
+      "fields": [
+        {
+          "name": "Deal identity and acquisition perimeter",
+          "type": "textarea",
+          "prompt": "Identify the buyer, target legal entities, transaction structure, locations, and included assets. Explain which receivables, inventory, contracts, employees, intellectual property, and liabilities transfer, and who verifies each boundary before the purchase agreement is finalized.",
+          "example": "Deal BA-027-01 evaluates an illustrative regional maintenance supplier through an asset purchase. The $1,500,000 price includes equipment, customer contracts, trade names, and normalized operating working capital. Seller debt and unrestricted cash remain excluded; the acquisition attorney maps assumed liabilities to a signed schedule."
+        },
+        {
+          "name": "Vertical thesis and repeat-demand evidence",
+          "type": "textarea",
+          "prompt": "Describe the narrow customer problem, purchasing frequency, competitive alternatives, and operational reason demand persists. Provide measurable evidence for recurring business rather than equating a long customer list with contractual or predictable revenue.",
+          "example": "The target supplies replacement parts and scheduled maintenance to local production facilities. Of $1,875,000 annual sales, $1,312,500 comes from customers purchasing in each of the last three years. That 70% repeat share is behavioral evidence, not contracted backlog; twelve customer interviews test switching reasons."
+        },
+        {
+          "name": "Canonical investment screen",
+          "type": "textarea",
+          "prompt": "Record the candidate's score, ranking, capital range, staffing requirements, and expected acquisition timeline. Explain how those constraints affect your search mandate without replacing the canonical figures with a more attractive broker presentation.",
+          "example": "Candidate 13 ranks 27 of 29 at 57/100: revenue 24, margin 16, team efficiency 7, accessibility 2, automation 8. Startup capital is $200,000–$1,000,000; monthly operating expense metadata is $15,000–$70,000; first deal timing is 6–18 months. The mandate therefore requires substantial capital and an accountable operating leader."
+        },
+        {
+          "name": "Seller authority and counterparty verification",
+          "type": "textarea",
+          "prompt": "Identify every person or entity whose authority is necessary to sell the business and release collateral. Record how ownership, signing authority, lender relationships, litigation, and payment instructions will be verified independently of email assertions.",
+          "example": "The seller supplies its operating agreement, ownership register, and member resolution authorizing the transaction. Counsel checks state entity records and searches liens under the exact legal name. Closing personnel verify the $1,200,000 bank funding destination by calling a previously authenticated contact, never a changed email number."
+        },
+        {
+          "name": "Quality of Earnings evidence request",
+          "type": "textarea",
+          "prompt": "List the documents needed to reconstruct earnings and distinguish recurring operations from discretionary adjustments. Specify periods, sampling coverage, responsible reviewers, and escalation rules when tax filings, bank deposits, sales records, or payroll disagree.",
+          "example": "The QoE reviewer requests 36 monthly trial balances, three tax returns, bank statements, payroll registers, and invoice-level sales exports. A $42,000 difference between recorded sales and deposit-supported collections is investigated through receivables movement, sales-tax liabilities, refunds, and timing before any earnings adjustment is accepted."
+        },
+        {
+          "name": "Customer concentration and transfer durability",
+          "type": "textarea",
+          "prompt": "Measure concentration using recognized customer sales, gross profit, receivables, and renewal timing. Identify assignment restrictions and relationship dependencies, then state the retention evidence required before underwriting revenue from the largest customer accounts.",
+          "example": "Customer A contributes $337,500, or 18% of $1,875,000 revenue, and $118,125 gross profit at a 35% contribution assumption. Its agreement requires written assignment permission. The buyer requests permission before closing and models losing half that account as a $59,062.50 contribution reduction before replacement costs."
+        },
+        {
+          "name": "Owner dependence and replacement labor",
+          "type": "textarea",
+          "prompt": "Map the seller's weekly responsibilities to specific employees or new hires. Price replacement labor at fully loaded cost, identify knowledge that has never been documented, and prohibit adding back compensation for duties that continue after closing.",
+          "example": "The seller works 45 hours weekly across estimating, purchasing, and collections. A proposed $120,000 compensation add-back is rejected because an operating manager costs $105,000 fully loaded and bookkeeping support costs $15,000. The seven-full-time, three-contractor base team includes those replacement responsibilities rather than assuming free buyer labor."
+        },
+        {
+          "name": "Supplier, facility, and license dependencies",
+          "type": "textarea",
+          "prompt": "Identify operating dependencies capable of interrupting revenue immediately after ownership changes. Document supplier credit terms, lease assignment, equipment serviceability, required licenses, and the practical replacement time for each concentrated dependency before committing to a closing date.",
+          "example": "One distributor supplies 55% of purchased parts and extends 25-day terms. The facility lease has 24 months remaining and requires landlord permission for assignment. Operations obtains a second distributor quote, a written credit decision, and landlord documentation before treating uninterrupted operations as a reasonable closing assumption."
+        },
+        {
+          "name": "LOI economics and diligence spending limit",
+          "type": "textarea",
+          "prompt": "Draft the economic terms to place in the letter of intent, including working-capital treatment, debt exclusions, exclusivity, and diligence access. Separate potentially binding process obligations from proposed purchase terms and assign an expenditure ceiling.",
+          "example": "The LOI proposes $1,500,000 cash-free, debt-free consideration with a $150,000 operating working-capital peg. It allocates $25,000 to initial QoE and legal diligence before expansion of scope. Exclusivity lasts 45 days; counsel identifies the specific confidentiality, access, expense, and exclusivity provisions intended to bind."
+        },
+        {
+          "name": "Investment decision and fatal-flaw register",
+          "type": "textarea",
+          "prompt": "Summarize the evidence supporting continued diligence and list conditions that would force repricing, restructuring, or withdrawal. Give each unresolved issue a decision owner, evidence deadline, financial exposure, and explicit consequence if verification fails.",
+          "example": "Proceed only if verified earnings support the base model, Customer A permits assignment, and liens can be released. An unresolved $90,000 payroll-tax assessment requires documented resolution or a negotiated economic remedy before signing. The buyer withdraws if the seller refuses direct access to bank-supported earnings evidence."
+        }
+      ],
+      "completion_gate": "The investment lead signs a dated underwriting memorandum with verified seller authority, an evidence-backed earnings range, a funded diligence budget, and a disposition for every potentially deal-breaking dependency."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Unit Economics, QoE Scrub, Reserves, and Working-Capital Float",
+      "purpose": "Translate acquired business sales into earnings, financing obligations, and usable liquidity without confusing accounting profit with distributions. Reconcile the three canonical scenarios, scrub seller adjustments, size working-capital needs, and expose the cash consequences of leverage, customer losses, and post-close defects.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Enter the canonical scenarios exactly before adding transaction assumptions. Recognized revenue means acquired business sales, not the purchase price, loan proceeds, customer purchase budgets, or enterprise value; owner net profit includes interest but precedes principal repayments.",
+        "Build the earnings bridge from the general ledger and reconcile each adjustment to source evidence. Separate direct costs, recurring overhead, interest, and owner distributions; identify tax treatment and noncash items explicitly rather than silently changing the margin definition.",
+        "Prepare sources and uses with every dollar assigned once. Distinguish working capital already included in consideration from incremental operating cash, transaction fees, financing reserves, and price adjustments; reject models that fund the same asset twice.",
+        "Calculate receivable, inventory, and payable timing from the target's actual records. Build a weekly cash forecast alongside annual profitability, because seasonal purchases, debt service, and collection delays can exhaust liquidity even when the annual income statement remains positive.",
+        "Run the same debt and cash assumptions through all three scenarios as an explicitly illustrative sensitivity. Compare cash after principal, maintenance investment, and working-capital growth with minimum liquidity requirements before authorizing discretionary distributions."
+      ],
+      "fields": [
+        {
+          "name": "Canonical revenue and owner-profit scenarios",
+          "type": "textarea",
+          "prompt": "Enter annual business sales, net margin, owner net profit, and team size for each canonical scenario. State the revenue recognition boundary and explain why principal repayment must be modeled outside the stated margin calculation.",
+          "example": "Conservative: $750,000 × 8% = $60,000; Base: $1,875,000 × 13.0% = $243,750; Scaled: $3,000,000 × 18% = $540,000. Conservative and Base each use 7 full-time employees plus 3 contractors; Scaled uses 8 plus 4. These profits are after interest and before principal, not distributable-cash promises."
+        },
+        {
+          "name": "Base-case earnings bridge and expense scope",
+          "type": "textarea",
+          "prompt": "Reconcile base revenue to owner net profit using a complete expense bridge. Identify direct costs and recurring overhead separately, and explain any difference between the candidate's monthly expense screen and the deal's fully classified annual ledger.",
+          "example": "Base revenue of $1,875,000 less $1,019,250 direct operating charges and $480,000 recurring overhead produces $375,750 before interest. Deduct $132,000 modeled interest to reach $243,750. The $40,000 monthly overhead component fits the screening range; the reviewer must verify scope rather than treating that range as total costs."
+        },
+        {
+          "name": "QoE adjustment and earnings scrub",
+          "type": "textarea",
+          "prompt": "Record seller adjustments with original expense accounts, supporting documents, recurring replacement costs, and buyer acceptance decisions. Keep normalized preinterest earnings separate from EBITDA terminology unless depreciation, amortization, and tax treatments are expressly reconciled in the supporting schedule.",
+          "example": "Reported preinterest earnings are $350,750. Accept a documented $25,000 one-time litigation expense, producing $375,750 normalized preinterest earnings. Reject the $120,000 owner-compensation add-back because replacement duties cost the same amount. The bridge retains the source ledger's other treatments and does not relabel the result as EBITDA."
+        },
+        {
+          "name": "Acquisition sources and uses",
+          "type": "textarea",
+          "prompt": "Balance purchase consideration, closing costs, incremental liquidity, and financing sources. State whether the working-capital peg is inside the purchase price, and identify contingent consideration or fees that would require additional capital beyond the signed funding commitments.",
+          "example": "Uses equal $1,500,000 consideration, $60,000 transaction costs, and $240,000 incremental cash: $1,800,000 total. Sources equal $1,200,000 bank debt, $150,000 seller financing, and $450,000 buyer equity. The $150,000 operating working-capital peg is included in consideration; it is not added again as a separate funding use."
+        },
+        {
+          "name": "Debt structure and principal schedule",
+          "type": "textarea",
+          "prompt": "Specify interest rates, payment timing, amortization, maturity, security, guarantees, and seller-note restrictions. Distinguish an illustrative conventional financing schedule from lender-approved SBA terms, and identify the cash needed when deferred principal eventually becomes payable.",
+          "example": "Illustrative conventional bank debt is $1,200,000 at 10%, with $120,000 principal paid at each year-end. First-year bank interest is $120,000. A $150,000 seller note at 8% adds $12,000 interest, with principal deferred 24 months. Total first-year interest is $132,000; principal is $120,000; SBA terms require separate underwriting."
+        },
+        {
+          "name": "Debt-service coverage and cash headroom",
+          "type": "textarea",
+          "prompt": "Calculate cash available for debt service using clearly labeled assumptions, then compare annual scheduled payments with the actual lender covenant definition. Show how maintenance investment, working-capital growth, taxes, and noncash adjustments can change apparent coverage.",
+          "example": "For a simplified cash proxy, $375,750 preinterest earnings less $30,000 maintenance investment and $25,000 working-capital growth leaves $320,750. Debt service is $252,000, giving 1.273× coverage. A hypothetical 1.25× requirement needs $315,000, leaving only $5,750 headroom before additional tax or lender-definition adjustments."
+        },
+        {
+          "name": "Receivables, inventory, payables, and peg",
+          "type": "textarea",
+          "prompt": "Calculate operating working capital from credit sales and inventory-related cost flows using one stated day-count convention. Compare the result with the contractual peg, and separate purchase-price true-ups from subsequent growth-driven cash requirements in the operating forecast.",
+          "example": "Using 365 days, $1,875,000 credit sales at 35-day collections requires $179,794.52 receivables. Eligible inventory costs of $900,000 create $49,315.07 inventory at 20 days and $61,643.84 payables at 25 days. Net operating working capital is $167,465.75, exceeding the $150,000 peg by $17,465.75 before contractual adjustments."
+        },
+        {
+          "name": "Defect reserve and purchase-price protection",
+          "type": "textarea",
+          "prompt": "List receivable collectibility defects, obsolete inventory, customer credits, and other identified exposures. State valuation rules and recovery mechanisms, distinguishing accounting reserves from restricted cash and ensuring a single defect is not deducted through multiple purchase-price mechanisms.",
+          "example": "A receivables review identifies $18,000 requiring full allowance, and an inventory count identifies $12,000 of unusable parts. The agreement excludes both from eligible working capital, reducing the earlier $167,465.75 estimate to $137,465.75. That implies a $12,534.25 peg shortfall, not an additional duplicate $30,000 indemnity recovery."
+        },
+        {
+          "name": "Thirteen-week liquidity and collection stress",
+          "type": "textarea",
+          "prompt": "Build a rolling cash forecast from dated receipts and payments, not straight-line accounting revenue. Identify the minimum operating cash balance, payment concentrations, and a specific collection downside, ensuring direct payroll and supplier costs are counted only once.",
+          "example": "Opening cash is $240,000. Thirteen-week collections are $450,000; direct payments $260,000; overhead $120,000; interest $33,000; principal reserve $30,000; maintenance spending $7,500. Available cash after reserving principal is $239,500. A $50,000 collection delay reduces it to $189,500, leaving $39,500 above the $150,000 liquidity floor."
+        },
+        {
+          "name": "Scenario cash after principal and reinvestment",
+          "type": "textarea",
+          "prompt": "Apply the illustrative principal, maintenance, and working-capital assumptions to each canonical owner-profit figure. Label the result as a simplified cash bridge, identify omitted noncash or tax adjustments, and state the distribution response when cash turns negative.",
+          "example": "Subtracting $120,000 principal, $30,000 maintenance investment, and $25,000 working-capital growth gives Conservative negative $115,000, Base positive $68,750, and Scaled positive $365,000. These sensitivities hold financing constant and assume no other cash adjustments. The Conservative case requires additional liquidity or restructuring, not owner distributions."
+        }
+      ],
+      "completion_gate": "The finance lead verifies exact canonical scenario arithmetic, balanced sources and uses, a documented QoE bridge, a nonduplicative reserve schedule, and a weekly cash forecast that exposes debt-service shortfalls."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "Execution, Acquisition Ledger, and Technical QA Pre-Flight",
+      "purpose": "Turn negotiated economics into a controlled closing and a usable operating system. Establish document ownership, payment verification, opening-ledger controls, access transfers, and technical acceptance tests so the acquired business can invoice, collect, pay employees, and serve customers without losing transaction evidence.",
+      "chapter_ref": "Q7, Q8",
+      "instructions": [
+        "Create a closing checklist organized by responsible person and dependency rather than document name alone. Mark financing, landlord permissions, customer assignments, license issuance, lien releases, and payroll readiness as separately evidenced conditions with clear escalation paths.",
+        "Freeze a dated copy of the seller's financial exports before migration. Preserve chart-of-accounts mappings, customer identifiers, open invoices, inventory quantities, and source documents so the opening ledger can be reconstructed without relying on an inaccessible seller account.",
+        "Rehearse the closing funds flow using verified beneficiary records and independently checked amounts. Require different people to prepare and release material transfers, and stop immediately when a late instruction changes account details or payment destinations.",
+        "Run end-to-end operating tests with representative transactions before moving production activity. Include invoice creation, tax calculation, cash application, supplier payment, payroll submission, refunds, and bank reconciliation; keep screenshots or export evidence for every successful test.",
+        "Maintain a dated defect register through the first monthly close. Assign severity according to cash, customer, payroll, and reporting impact, and retain a reversible operating fallback whenever migration errors could interrupt billing or corrupt opening balances."
+      ],
+      "fields": [
+        {
+          "name": "Transaction milestone and dependency map",
+          "type": "textarea",
+          "prompt": "List the major transaction milestones, evidence required at each milestone, and person empowered to resolve exceptions. Distinguish a desired closing date from a date supported by lender funding, third-party permissions, and operational readiness.",
+          "example": "The schedule targets signing on day 45 and closing on day 60. Funding requires the lender's final documents, landlord assignment, Customer A permission, and verified license continuity. The transaction lead updates dependencies daily during the final ten days and moves closing rather than assuming an absent permission will arrive."
+        },
+        {
+          "name": "Data-room index and evidence provenance",
+          "type": "textarea",
+          "prompt": "Define document naming, version control, source attribution, retention, and access permissions. Ensure reviewers can identify which export supported each decision and distinguish seller-supplied records from buyer calculations, independently obtained evidence, and superseded draft transaction documents.",
+          "example": "The secure deal room separates seller originals, buyer analyses, third-party confirmations, and executed agreements. Each file receives a date, source owner, and revision identifier. The accepted QoE bridge references ledger export GL-2026-09-v2, bank statements for all twelve months, and an adjustment log with reviewer initials."
+        },
+        {
+          "name": "Closing funds flow and wire verification",
+          "type": "textarea",
+          "prompt": "Prepare a sources-and-uses-linked payment schedule identifying beneficiaries, debt payoffs, fees, seller proceeds, and operating cash. Describe independent verification, dual authorization, and the procedure for suspending transfers when last-minute payment instructions conflict with authenticated closing records.",
+          "example": "Cash funding totals $1,650,000: $1,200,000 bank proceeds and $450,000 equity. The $150,000 seller note supplies noncash consideration. Cash pays $1,350,000 purchase consideration, $60,000 fees, and $240,000 operating liquidity. Seller-creditor payoffs, if present, reduce seller proceeds within consideration rather than increasing total uses."
+        },
+        {
+          "name": "Opening balance sheet and accounting allocation",
+          "type": "textarea",
+          "prompt": "Describe how consideration, assumed liabilities, acquired assets, transaction costs, and financing will enter the opening records. Separate tax purchase-price allocation from book accounting and assign unresolved valuation or capitalization questions to the transaction accountant before final posting.",
+          "example": "The accountant reconciles $1,500,000 consideration to acquired assets and expressly assumed liabilities, including the agreed working-capital balance. The $60,000 fee ledger separates legal, QoE, financing, and other costs for treatment review. For an applicable asset acquisition, buyer and seller coordinate allocation reporting under 26 U.S.C. § 1060."
+        },
+        {
+          "name": "Receivable, payable, and inventory migration",
+          "type": "textarea",
+          "prompt": "Specify record counts, monetary control totals, aging categories, and inventory valuation checks for the migration. Explain how excluded items, reserves, duplicate records, and post-close receipts will be handled without overwriting the preserved seller ledger.",
+          "example": "The migration imports 184 open invoices totaling $179,794.52, then separately records the $18,000 allowance identified in diligence. Inventory gross value is $49,315.07 with a $12,000 exclusion. Payables total $61,643.84. Control totals must reproduce $137,465.75 eligible net working capital before any additional agreement-specific adjustments."
+        },
+        {
+          "name": "Identity, banking, and system ownership transfer",
+          "type": "textarea",
+          "prompt": "Inventory business-critical accounts and distinguish transferable business access from the seller's personal credentials. Record new administrators, multifactor authentication, recovery ownership, bank permissions, and removal timing while preserving necessary transition access through named, time-limited individual accounts.",
+          "example": "The buyer establishes its own banking users, QuickBooks Online administrators, Microsoft 365 administrators, domain registrar contacts, and payroll access. Two named employees hold emergency recovery credentials in a business password manager. The seller receives a 30-day restricted transition account, not continued access through shared administrator credentials."
+        },
+        {
+          "name": "Invoice-to-cash technical acceptance tests",
+          "type": "textarea",
+          "prompt": "Define test transactions that prove pricing, tax handling, delivery evidence, invoice numbering, payment application, and refund processing work after transfer. Include expected amounts and checks preventing test activity from contaminating actual customer balances or reported business sales.",
+          "example": "In a test environment, a $2,000 invoice with an assumed 8% applicable sales-tax rate totals $2,160. Applying a $1,000 payment leaves $1,160 receivable. A $200 pre-tax credit reduces the balance by $216. The reviewer confirms tax liability and customer balances before discarding test records."
+        },
+        {
+          "name": "Payroll and supplier-payment readiness",
+          "type": "textarea",
+          "prompt": "Verify that employee classifications, pay rates, benefits, withholding, supplier records, and payment authorization survive the ownership change. Specify a realistic contingency for payment-system failure without treating manual payments as exempt from payroll reporting or contractual payment obligations.",
+          "example": "The payroll lead reconciles seven full-time employees and three contractors to offer documents, vendor agreements, and the first pay run. A $28,000 illustrative payroll is funded two business days before submission. If the provider fails, documented manual payments are reconciled into payroll records with required withholding and reporting."
+        },
+        {
+          "name": "Backup, restoration, and cutover fallback",
+          "type": "textarea",
+          "prompt": "Record the financial and operating data to preserve before cutover, the restoration test, and the authority to pause migration. Define how orders and receipts will be captured during an outage and subsequently reconciled without duplicate postings.",
+          "example": "Before cutover, finance exports the trial balance, open-item ledgers, customer master, inventory file, and bank reconciliation. A restoration drill rebuilds the prior day's open invoices in a separate workspace. During a four-hour outage, numbered manual order forms preserve activity; one reviewer checks every later posting for duplication."
+        },
+        {
+          "name": "First close and transaction defect ledger",
+          "type": "textarea",
+          "prompt": "Set the first monthly-close deadline and identify reconciliations that establish reliable ownership-period results. Record each defect's cash exposure, responsible person, correction evidence, and contractual notification deadline where recovery from the seller may be available under the executed agreement.",
+          "example": "The first close finishes by business day ten. Finance reconciles bank cash, receivables, payables, inventory, payroll liabilities, and debt balances. A $7,500 pre-close customer credit discovered afterward enters the defect ledger with supporting correspondence; counsel checks the notice deadline and prevents duplicate recovery through the working-capital true-up."
+        }
+      ],
+      "completion_gate": "The transaction lead and controller approve the funds flow, opening control totals, critical operating tests, verified account ownership, restoration evidence, and an assigned resolution plan for every material defect."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Statutory, Licensing, Contract, and Outreach Audit",
+      "purpose": "Identify concrete legal and contractual obligations that affect ownership transfer, employee continuity, debt funding, customer communications, and operating permissions. Convert each applicable requirement into evidence, an accountable reviewer, and a deadline so unresolved liabilities cannot disappear inside a generic diligence checklist.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Map the target's actual jurisdictions, activities, workforce, customers, and financing before selecting statutory requirements. Use official agency sources and executed documents; record applicability reasoning rather than importing a generic national checklist that ignores the business being acquired.",
+        "Separate federal requirements from state, local, professional, and contractual requirements. Ownership changes can trigger new applications even when operations remain unchanged, so obtain written transfer guidance from the issuing authority for every material license or permit.",
+        "Review the purchase agreement alongside disclosure schedules and source evidence. Trace each material representation to a document or investigation, and reconcile indemnity limits, survival periods, escrow, and working-capital adjustments so remedies remain usable without double counting.",
+        "Ask the lender to identify current program rules, credit conditions, and covenant definitions in writing. Do not infer SBA eligibility, seller-note treatment, equity requirements, or permitted distributions from an old acquisition article or another borrower's financing structure.",
+        "Finish with an obligation register containing an owner, applicability decision, source citation, evidence location, deadline, and operating consequence. Escalate unresolved requirements that could prevent lawful operation or funding before the purchase agreement makes those risks the buyer's responsibility."
+      ],
+      "fields": [
+        {
+          "name": "Jurisdiction and operating-license map",
+          "type": "textarea",
+          "prompt": "List every state and locality where the business operates, the regulated activities it performs, and required entity registrations or licenses. Determine whether each permission transfers, requires reissuance, or depends on a qualifying individual who may leave.",
+          "example": "For an illustrative California location, the reviewer checks the city business license, seller's permit, and whether installation work requires a contractor license under California Business and Professions Code § 7026. A parts-only sales model and a regulated installation model receive different documented applicability conclusions."
+        },
+        {
+          "name": "Entity authority, disclosures, and transaction structure",
+          "type": "textarea",
+          "prompt": "Document the approvals and disclosures needed for the chosen asset or equity structure. Identify ownership restrictions, material litigation, related-party arrangements, and any transaction notification thresholds requiring specific analysis rather than assuming that every small-business acquisition is automatically exempt.",
+          "example": "Counsel obtains member authorization and schedules related-party leases, pending disputes, and excluded liabilities. The transaction memo records why notification under 15 U.S.C. § 18a is not triggered for this $1,500,000 transaction after reviewing current thresholds and aggregation rules; the conclusion is documented, not inferred solely from the business label."
+        },
+        {
+          "name": "Tax diligence and successor exposure",
+          "type": "textarea",
+          "prompt": "Review income, payroll, sales, use, property, and employment tax records relevant to the transaction. Identify clearance procedures, withholding obligations, filing responsibilities, and allocation reporting, distinguishing seller promises from evidence that protects the buyer against statutory successor exposure.",
+          "example": "For a California asset sale, counsel evaluates purchase-price withholding and clearance under Revenue and Taxation Code §§ 6811–6812 for covered sales-tax liabilities. Payroll returns are reconciled separately. Buyer and seller also coordinate Form 8594 when 26 U.S.C. § 1060 applies, using consistent asset-allocation assumptions."
+        },
+        {
+          "name": "Wages, classification, benefits, and workforce changes",
+          "type": "textarea",
+          "prompt": "Check employee and contractor classifications, wage records, benefit obligations, accrued leave, and proposed staffing changes. Evaluate federal and state notice requirements using the actual employer and workforce facts, including affiliated operations, rather than only the acquired site's headcount.",
+          "example": "The seven-employee target receives a wage-and-hour review under 29 U.S.C. §§ 206–207 and applicable state rules. Federal WARN analysis under 29 U.S.C. §§ 2101–2109 and 20 CFR Part 639 documents employer coverage and event thresholds; state notice rules and contractor classification are reviewed separately."
+        },
+        {
+          "name": "Secured debt, liens, and release mechanics",
+          "type": "textarea",
+          "prompt": "Identify liens against transferred assets, including blanket security interests and tax liens. Specify payoff evidence, secured-party authorization, release deliverables, and post-close verification instead of assuming the asset-purchase structure automatically eliminates encumbrances or seller creditor claims.",
+          "example": "A UCC search reveals a blanket equipment-and-inventory lien. Counsel applies the state's enacted UCC § 9-315 rules on continuing security interests and obtains authenticated sale authorization, payoff instructions, and appropriate release filings. Termination mechanics under UCC § 9-513 are tracked through filing confirmation rather than merely promised at closing."
+        },
+        {
+          "name": "SBA eligibility and lender covenant evidence",
+          "type": "textarea",
+          "prompt": "If SBA financing is proposed, document current eligibility, credit requirements, lender interpretations, and transaction-specific conditions. Record seller-note restrictions, permitted ownership changes, guarantees, distributions, and reporting requirements directly from the applicable program documents and signed loan agreement.",
+          "example": "The lender reviews business eligibility under 13 CFR § 120.110 and credit criteria under 13 CFR § 120.150, then identifies the current SBA procedural requirements. The illustrative conventional $150,000 interest-paying seller note is not assumed acceptable for an SBA structure; equity contribution and standby treatment require written confirmation."
+        },
+        {
+          "name": "Contract assignments and enforceable transition support",
+          "type": "textarea",
+          "prompt": "Review assignment, change-of-control, termination, exclusivity, pricing, and renewal clauses in material agreements. Specify seller transition services with hours, deliverables, payment terms, and access restrictions, and obtain jurisdiction-specific review of any proposed restrictive covenants before relying on them.",
+          "example": "Customer A requires written permission for an asset assignment; the landlord requires separate lease documentation. A transition agreement buys 60 seller hours monthly for three months at $100 per hour, capped at $18,000. This additional cash requirement must enter the deal budget before signing rather than remaining hidden outside the model."
+        },
+        {
+          "name": "Customer data and security obligations",
+          "type": "textarea",
+          "prompt": "Inventory personal information and customer-confidential data that will transfer or remain accessible during diligence. Determine applicable privacy duties, contract restrictions, breach notification rules, retention periods, and secure transfer controls before exposing production records to additional reviewers or service providers.",
+          "example": "The deal room uses redacted employee records until detailed access is necessary. California Civil Code § 1798.100 et seq. receives an applicability review based on the business's actual thresholds and processing activities. California Civil Code § 1798.82 breach-notification duties are assessed separately; customer contracts may impose additional security requirements."
+        },
+        {
+          "name": "Acquisition outreach and customer marketing rules",
+          "type": "textarea",
+          "prompt": "Describe the communication channels used for seller sourcing and post-close customer growth. Record sender identification, suppression handling, unsubscribe processing, call or text restrictions, and evidence of any required permission before launching automated communications at scale.",
+          "example": "Commercial email follows 15 U.S.C. § 7704 with accurate headers, a valid postal address, and opt-out processing within ten business days. Telephone and text campaigns receive separate review under 47 U.S.C. § 227 and 47 CFR § 64.1200; a public business number alone does not establish every required permission."
+        },
+        {
+          "name": "Representations, remedies, and obligation register",
+          "type": "textarea",
+          "prompt": "Translate material diligence findings into specific representations, disclosures, exclusions, or remedies. Record negotiated limits and notice mechanics, then distinguish recoverable seller obligations from operational requirements the buyer must satisfy regardless of the purchase agreement's allocation of responsibility.",
+          "example": "The agreement schedules the $30,000 receivable-and-inventory defect through working-capital valuation, while a separate identified tax dispute receives its own negotiated protection. Each register entry records owner, evidence, deadline, and notice address. Counsel checks that any proposed escrow reduces seller cash proceeds rather than silently increasing acquisition uses."
+        }
+      ],
+      "completion_gate": "The transaction attorney and relevant operating owners document applicability, evidence, deadlines, and consequences for all material requirements; unresolved permissions, statutory exposures, and lender conditions receive an explicit closing decision."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Automation, Customer Growth, and Risk Fallback Tracker",
+      "purpose": "Install a small-team operating system that improves reporting and back-office execution without automating unreliable data or hiding customer risk. Connect retention, targeted growth, collections, and exception handling to measurable cash outcomes while preserving manual fallbacks for every business-critical workflow.",
+      "chapter_ref": "Q6, Q10",
+      "instructions": [
+        "Stabilize source records before connecting systems. Assign authoritative owners for customers, products, invoices, cash, and employee data; document identifiers and update rules so integrations cannot silently create duplicate revenue, conflicting balances, or uncontrolled changes to payment instructions.",
+        "Automate reporting and repetitive back-office tasks before complex decision-making. Start with daily cash visibility, aging reports, close checklists, and exception alerts, then expand only after measured accuracy and time savings justify the additional integration and maintenance burden.",
+        "Prioritize retention before outbound acquisition during the ownership transition. Contact major customers with a specific service-continuity plan, track concerns and renewal dates, and require evidence of delivery capacity before offering growth promotions that could overload the acquired team.",
+        "Tie growth experiments to contribution margin and collection timing, not only booked sales. Record audience, offer, communication permissions, staffing capacity, test cost, and stopping conditions; prevent promotional discounts from consuming the liquidity needed for payroll, suppliers, and debt service.",
+        "Give every critical automation a named owner, failure signal, manual substitute, and recovery procedure. Test retries and duplicate prevention with harmless records before production use, and keep a change log that explains when reported metrics changed because of system logic rather than business performance."
+      ],
+      "fields": [
+        {
+          "name": "System-of-record and integration ownership",
+          "type": "textarea",
+          "prompt": "Identify the authoritative application for each core business record and map every integration between systems. Define stable identifiers, permitted update directions, access scopes, and the human owner responsible when two applications disagree about a customer's balance or order status.",
+          "example": "QuickBooks Online owns invoices and receivables; HubSpot owns relationship activities; the inventory application owns stock quantities. Integrations use a persistent customer identifier rather than company-name matching. The controller owns balance conflicts, and the operations manager owns stock conflicts; neither integration can edit bank beneficiary details."
+        },
+        {
+          "name": "Financial reporting automation and reconciliation",
+          "type": "textarea",
+          "prompt": "Define the automated reports, delivery cadence, source data, and reconciliation checks needed for reliable cash and earnings visibility. State how incomplete bank feeds, unposted journals, or stale exports are flagged instead of being presented as final management results.",
+          "example": "A daily dashboard reports bank cash, overdue receivables, supplier payments due, and the next debt obligation. A weekly report compares sales with the $156,250 base monthly planning average. Reports display source timestamps and reconciliation status; the controller withholds final profit classification until payroll, inventory, and interest entries are posted."
+        },
+        {
+          "name": "Back-office workflow and exception routing",
+          "type": "textarea",
+          "prompt": "Select one repetitive workflow and specify its trigger, required inputs, validation rules, decision owner, and exception queue. Quantify the work removed while preventing automation from authorizing payments, credits, or accounting changes beyond the responsible employee's existing authority.",
+          "example": "A purchase-invoice workflow matches supplier, purchase order, receipt quantity, and price before proposing an accounting entry. A $4,800 invoice against a $4,500 order creates a $300 exception for purchasing review. Forty monthly invoices at eight minutes each represent 5.33 hours of processing, not automatic headcount savings."
+        },
+        {
+          "name": "Customer retention and ownership-transition outreach",
+          "type": "textarea",
+          "prompt": "Create a retention sequence for the customers most exposed to ownership change. Assign relationship owners, service commitments, renewal dates, concern categories, and escalation rules, ensuring customer assurances reflect actual staffing and contractual obligations rather than aspirational sales messaging.",
+          "example": "During the first ten business days, the operating manager contacts the top twenty customers representing $1,125,000, or 60% of base revenue. Customer A receives a joint seller-buyer introduction and named service contact. Any complaint involving delivery interruption receives same-day triage and a dated corrective-action commitment."
+        },
+        {
+          "name": "Targeted growth experiment and contribution math",
+          "type": "textarea",
+          "prompt": "Define a narrow cross-sell or prospecting experiment with eligible contacts, offer economics, delivery capacity, campaign cost, and collection timing. Calculate contribution after incremental delivery costs and distinguish the experiment's result from the canonical annual owner-profit scenarios.",
+          "example": "A pilot offers maintenance kits to 100 existing customers. Ten purchase at $1,000 each, producing $10,000 incremental sales. At 40% contribution before campaign expense, the pilot generates $4,000; subtract $1,500 outreach expense for $2,500. This is experiment contribution before other incremental obligations, not a revised base-case owner profit."
+        },
+        {
+          "name": "Collections cadence and receivable-risk response",
+          "type": "textarea",
+          "prompt": "Specify collection reminders, dispute routing, customer contact ownership, and credit restrictions. Calculate the liquidity effect of collection improvement separately from revenue growth, and avoid sending automated demands for invoices with unresolved service disputes or incorrect customer records.",
+          "example": "Reducing collection time from 35 to 30 days on $1,875,000 annual credit sales releases approximately $25,684.93 using 365 days. It does not create additional sales or accounting profit. The workflow sends pre-due reminders, pauses disputed invoices, and routes accounts over 45 days to the controller for a credit decision."
+        },
+        {
+          "name": "Labor capacity and automation economics",
+          "type": "textarea",
+          "prompt": "Measure saved time against actual loaded labor costs and continuing review effort. State whether savings increase capacity, avoid an additional hire, or reduce cash expense, and preserve the canonical team assumptions unless a separately evidenced operating model supports a change.",
+          "example": "Reporting automation saves ten hours weekly at a $35 loaded hourly cost, indicating $18,200 annual capacity value over 52 weeks. A $300 monthly software subscription costs $3,600, leaving $14,600 theoretical value before maintenance. The seven-full-time, three-contractor base team remains unchanged; payroll expense falls only if actual paid labor falls."
+        },
+        {
+          "name": "Hidden-liability and attrition warning dashboard",
+          "type": "textarea",
+          "prompt": "Choose leading indicators for the acquisition's principal risks: hidden liabilities, customer attrition, and leverage. Define measurable triggers, escalation owners, and immediate responses, separating ordinary operating variance from events that require lender contact or contractual claim preservation.",
+          "example": "The dashboard flags undocumented pre-close liabilities above $5,000, top-customer order declines above 20%, and forecast cash below $150,000. The controller preserves claim evidence, the operating manager investigates customer changes, and the buyer reviews lender obligations. Forecast covenant pressure triggers early lender discussion before a payment is missed."
+        },
+        {
+          "name": "Automation failure and manual operating fallback",
+          "type": "textarea",
+          "prompt": "Describe a realistic integration failure and the exact manual process that keeps operations running. Include outage detection, safe retry behavior, duplicate prevention, access restrictions, and reconciliation steps before automated processing resumes on the recovered production system.",
+          "example": "If invoice synchronization stops for two hours, billing staff export approved invoices and record them through a numbered manual queue. Each invoice retains its original external identifier. After recovery, the integration checks existing identifiers before posting; finance reconciles counts and dollar totals before clearing the queue or enabling unattended retries."
+        },
+        {
+          "name": "Experiment review and change-control ledger",
+          "type": "textarea",
+          "prompt": "Record each process or growth change with its hypothesis, baseline, owner, expected economic effect, and review date. Define success and stopping conditions, and explain how accepted changes will be documented so another operator can reproduce the workflow without its original creator.",
+          "example": "The collections pilot targets a five-day reduction over 60 days while keeping dispute rates below 3% of invoices. Finance compares matched customer cohorts rather than seasonal averages. If disputes exceed 3%, reminders pause for diagnosis. Accepted logic enters a versioned runbook with screenshots, permissions, recovery steps, and a named backup operator."
+        }
+      ],
+      "completion_gate": "The operating manager verifies reconciled reports, an accountable retention plan, contribution-based growth tests, measured automation economics, and a successfully rehearsed fallback for each critical integration."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch, Pod KPI Scorecard, and Exit-Readiness Ledger",
+      "purpose": "Organize the first month after closing around cash protection, service continuity, reliable reporting, and accountable ownership. Connect the launch sprint to a 100-day improvement plan and build transferable evidence of performance so future refinancing or sale depends on verifiable operations rather than seller storytelling.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Set the sprint start at transaction closing, not the beginning of the acquisition search. The canonical first-deal timeline remains 6–18 months; this worksheet governs the first 30 ownership days after financing, transfer permissions, and operating readiness have been established.",
+        "Assign a primary owner and backup for finance, customer continuity, delivery, and employee support. Build responsibilities inside the canonical staffing plan before adding positions, and make contractor scope and authority explicit so temporary support does not become unmanaged recurring overhead.",
+        "Hold short daily operating reviews during the first week and weekly reviews thereafter. Discuss cash, service failures, collection disputes, payroll, supplier interruptions, and transaction defects before optional improvement projects that cannot protect near-term operations or measurable contribution.",
+        "Use the first reliable monthly close to establish actual performance against the acquisition model. Keep partial-month results, seasonal patterns, one-time transition costs, and annualized estimates separate; a strong first week does not validate the annual base-case margin.",
+        "Complete the month with a 100-day operating plan and an exit-evidence ledger. Prioritize reversible, funded improvements with accountable owners, and preserve contracts, earnings reconciliations, and operating procedures so the business becomes less dependent on individual memory over time."
+      ],
+      "fields": [
+        {
+          "name": "Day-one ownership and communication plan",
+          "type": "textarea",
+          "prompt": "List the first-day communications and operating confirmations needed by employees, customers, suppliers, lenders, and service providers. Assign speakers, factual messages, and follow-up owners, avoiding promises about jobs, pricing, or contract continuity that exceed executed agreements.",
+          "example": "At closing, the buyer confirms payroll funding, banking access, dispatch ownership, supplier contacts, and customer support numbers. The operating manager holds a staff meeting before customer announcements. Messaging confirms the existing service schedule and named contacts while routing individual compensation or contract questions to the responsible reviewer."
+        },
+        {
+          "name": "Days two through seven stabilization backlog",
+          "type": "textarea",
+          "prompt": "Rank the first week's tasks by their ability to prevent cash loss, customer interruption, or employee payment problems. Define deliverables, owners, dependencies, and verification evidence while postponing discretionary system replacements that create unnecessary transition risk.",
+          "example": "Days two through seven reconcile the opening bank balance, verify the first payroll, count high-value inventory, contact the top twenty customers, and validate supplier credit terms. The manager postpones a proposed ERP replacement. A daily checklist records evidence and defects rather than marking tasks complete merely because someone attended a meeting."
+        },
+        {
+          "name": "Days eight through fourteen cash and service sprint",
+          "type": "textarea",
+          "prompt": "Select a limited second-week improvement set using verified operational bottlenecks. Connect each task to collection timing, fulfillment reliability, or customer retention, and assign a measurable result without assuming that all benefits arrive during the first ownership month.",
+          "example": "The controller resolves the ten largest overdue invoices, representing $45,000, while operations reviews every late order from the prior two weeks. A $15,000 collection target is measured against actual receipts, not promises. The team records reasons for delays before changing credit terms or purchasing more stock."
+        },
+        {
+          "name": "Days fifteen through thirty close and improvement decision",
+          "type": "textarea",
+          "prompt": "Define the remaining first-month deliverables, including the financial close, defect resolution, customer review, and funded improvement selection. Explain how actual results will be compared with planning assumptions without treating a partial accounting period as a complete annual run rate.",
+          "example": "By day 30, finance delivers reconciled ownership-period accounts and a refreshed thirteen-week cash forecast. Operations presents customer retention, late-order causes, and capacity constraints. The buyer funds only documented priorities; a $6,000 workflow project must identify its cash source and measurable benefit before displacing maintenance or liquidity reserves."
+        },
+        {
+          "name": "Operating pod and decision-rights scorecard",
+          "type": "textarea",
+          "prompt": "Allocate the canonical team across operating responsibilities and name decision rights for pricing, purchasing, payments, collections, and customer remedies. Count people once even when they hold several roles, and distinguish contractor capacity from employee availability during critical operating hours.",
+          "example": "The base team has seven employees: one manager, one sales lead, one administrator, and four delivery staff. Three contractors provide bookkeeping, technical support, and specialist service. The manager approves routine purchasing; the controller reviews cash releases. The Scaled reference remains eight employees plus four contractors, twelve people total."
+        },
+        {
+          "name": "Canonical monthly planning KPI sheet",
+          "type": "textarea",
+          "prompt": "Translate the canonical annual scenarios into clearly labeled monthly planning averages and pair them with operating indicators. Preserve annual margins and staffing assumptions, flag seasonal differences, and avoid presenting a planning average as a prediction of any specific month's actual result.",
+          "example": "Monthly averages are Conservative $62,500 sales and $5,000 owner profit; Base $156,250 and $20,312.50; Scaled $250,000 and $45,000. Corresponding margins remain 8%, 13.0%, and 18%. The weekly sheet also tracks cash against $150,000, collection days against 35, overdue invoices, customer losses, and operating defects."
+        },
+        {
+          "name": "Owner distributions and capital-allocation discipline",
+          "type": "textarea",
+          "prompt": "Define how the buyer decides whether cash may leave the business after debt service, required investment, working-capital needs, and applicable restrictions. Separate owner net profit from available distributions and record unresolved tax, covenant, or reserve requirements before authorizing a withdrawal.",
+          "example": "Base annual owner profit is $243,750, but the simplified bridge leaves only $68,750 after $120,000 principal, $30,000 maintenance investment, and $25,000 working-capital growth. Dividing by twelve gives $5,729.17 as a planning average, not a monthly entitlement. Actual distributions require sufficient unrestricted cash and satisfied loan conditions."
+        },
+        {
+          "name": "Days thirty-one through one hundred operating roadmap",
+          "type": "textarea",
+          "prompt": "Select the next three improvements using verified first-month evidence, cash availability, and organizational capacity. For each initiative, specify owner, investment, milestone, measurable benefit, and stopping condition, prioritizing operational resilience over a long list of loosely funded transformation projects.",
+          "example": "Days 31–60 standardize collections and document critical purchasing steps. Days 61–80 test the $1,500 customer cross-sell pilot. Days 81–100 evaluate results and complete backup-operator training. Spending pauses if forecast cash falls below $150,000; the plan does not assume campaign contribution or released receivables have already arrived."
+        },
+        {
+          "name": "Exit-readiness evidence and transferable earnings",
+          "type": "textarea",
+          "prompt": "Identify the records a future lender or buyer would need to verify earnings quality and operational transferability. Specify retention owners, update cadence, and evidence of reduced founder dependence without asserting an unsupported valuation multiple or guaranteed sale outcome.",
+          "example": "The controller maintains monthly reconciliations, an adjustment register, tax filings, debt schedules, and customer concentration reports. Operations maintains assignable contracts, service procedures, license records, and backup coverage. After twelve monthly closes, a future reviewer can trace each material adjustment to evidence rather than accepting a reconstructed earnings story."
+        },
+        {
+          "name": "Refinancing, seller-note maturity, and exit proceeds",
+          "type": "textarea",
+          "prompt": "Track future debt maturities, lender restrictions, transaction costs, and operating cash needs that affect refinancing or sale proceeds. Distinguish enterprise value from equity proceeds and identify the evidence required before assuming a refinance can repay deferred seller principal.",
+          "example": "After two scheduled $120,000 bank principal payments, bank debt would be $960,000 under the illustrative schedule, while the $150,000 seller note reaches its 24-month principal date. A hypothetical $1,800,000 sale less both debts and $90,000 selling costs leaves $600,000 before taxes, working-capital adjustments, and other settlement items."
+        }
+      ],
+      "completion_gate": "The buyer and operating manager approve a completed first-month scorecard, reconciled ownership-period accounts, a funded 100-day plan, documented distribution restrictions, and an exit-evidence ledger with named maintenance owners and upcoming debt maturities."
+    }
+  ]
+}

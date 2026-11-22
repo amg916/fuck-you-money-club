@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "20cd0702c5f5fe888d4760e9117ae1e64c8fdc10d8642b1c3090ce69f7564e64",
-    "brand/brand_system.json": "c56d0181c6c93df85a2bbc104d9b7b037cceb52e345ad85775f7327de1a9dd1c",
-    "catalog/pipeline_29_candidates.json": "9b451d327afb6a047243d6373e27aa95f3cbcf729a868e211dfd40c4b455245e",
-    "research/research_database_summary.json": "55819ccf1007f39f6ee3371478e2f8e3f81d9f7b1cf68ddfeb7dd17527a7664e",
+    "audit/existing_work_audit.json": "365430e57c0e397c4db2b5ff9983738ca5dfb36d127eaca6dfd57db4c922bee9",
+    "brand/brand_system.json": "a694d098d3733dcf1553cae941a41f745473bfdf0e8ffc6f91be8c3618520deb",
+    "catalog/pipeline_29_candidates.json": "b96163b1f857107b31cd30da35f1881d19a6c2f8ec0594ac1abe38982d51da95",
+    "research/research_database_summary.json": "c5d71f7bd5d321d1cde18e14a5b2d84add56e36d56a9af058a933b1d7ed75c19",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -473,6 +473,24 @@
     "volumes/vol-026-government-surplus-auctions/manuscript.json": "08a5c9e6a17883d05bfe8086a9d8b20f600d997ee8a23216528ebd12fb602bd5",
     "volumes/vol-026-government-surplus-auctions/metadata.json": "1ead05e1502f9e06bd064bc68eb8e561e96ddd2a214476d96cc84c138fa323d0",
     "volumes/vol-026-government-surplus-auctions/scorecard.json": "f4ca2e19a3d97dcfb908f056945b5fbd540c523c3df19b6d302df1fd654bb628",
-    "volumes/vol-026-government-surplus-auctions/workbook.json": "1686cf017a9870b12fd5d29da1ce8e3f8813afe8ed754ce0d8d4837043a96799"
+    "volumes/vol-026-government-surplus-auctions/workbook.json": "1686cf017a9870b12fd5d29da1ce8e3f8813afe8ed754ce0d8d4837043a96799",
+    "volumes/vol-027-business-acquisition/chapters/chapter-01.md": "fe96d322ae02ad2f28569c14ce9ade5eea969bef786723a93a0800cc2890d51e",
+    "volumes/vol-027-business-acquisition/chapters/chapter-02.md": "14039a49b4ee3bed1f052989cc303854afcb01d339799d9a40b2fbbc6caf7504",
+    "volumes/vol-027-business-acquisition/chapters/chapter-03.md": "36e238ac52fc1f70f64fbcb0e32d593d3c3415e8c70565d962ba072c16cb06bd",
+    "volumes/vol-027-business-acquisition/chapters/chapter-04.md": "ca6da3e08f653aa2f4edc07f0fcbf4f394b56642f0f92d1f81a248cf1a74a143",
+    "volumes/vol-027-business-acquisition/chapters/chapter-05.md": "7884712956ffcb5fd29d39db7e53b801cd3eefd2a718a3d065fd7a60af4f2b76",
+    "volumes/vol-027-business-acquisition/chapters/chapter-06.md": "715193a907e75d208e8be2762086a0871e93ece616c8ecf1f5a47c9c29c92eb6",
+    "volumes/vol-027-business-acquisition/chapters/chapter-07.md": "63c972f9a240c1ac749d82c155806cdcc9a1ff412f3cc44b3f939744b1166f09",
+    "volumes/vol-027-business-acquisition/chapters/chapter-08.md": "8919584abbc006d10a56a69890b566751914ae48ed606b19e20d38096a2423da",
+    "volumes/vol-027-business-acquisition/chapters/chapter-09.md": "43882faa85d39cb32c52932834ac47831abe494d203a3e9da96c4a61c1cf3de8",
+    "volumes/vol-027-business-acquisition/chapters/chapter-10.md": "02735428c4cb5c32765705f7f941d3fb045e85e8da6d0e7dd277de8d46d2aadb",
+    "volumes/vol-027-business-acquisition/chapters/chapter-11.md": "41370dc5d750a1b1b5122aeaca2b59f4211b1fe36ea2c5a986b1502d3b0bfc23",
+    "volumes/vol-027-business-acquisition/chapters/chapter-12.md": "621ba36a9602a02960d9c395e4300a725955e95149b6187379efca0c1b634243",
+    "volumes/vol-027-business-acquisition/diagrams_data.json": "181d23c31c33d059f04312a71e945081ab08035e9bc31cb28b4e991d4d86bd7d",
+    "volumes/vol-027-business-acquisition/graphics_reviews.json": "8abbe838d355baca3a2026454b66be27dec1cc65b224ceb582ceaac6f4c19c6b",
+    "volumes/vol-027-business-acquisition/manuscript.json": "a70b729773b41a7a71ddcc3a272e5fe71efeb9738fb8470afc5e947b6608b79d",
+    "volumes/vol-027-business-acquisition/metadata.json": "4b0f3bb7e2907bef3c6de11fe169a230350386be30a7227c46086133e0ce28bc",
+    "volumes/vol-027-business-acquisition/scorecard.json": "e19f2ffe80167cb83ff4f820a6ec569805b30cc32b0d8b3dc317a594345da0d5",
+    "volumes/vol-027-business-acquisition/workbook.json": "ec9efd76dabbbb4aff9c7ee718a58647bebbad33e217877b20e242a8a95050d4"
   }
 }
