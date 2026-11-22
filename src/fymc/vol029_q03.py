@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a 54/100 Money-to-Manpower "
+        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower "
         "Score because attractive invoices conceal labor intensity, disputed scope, and "
         "slow cash conversion. This chapter connects five operator plays: "
         "google_maps_gbp_lead_gen_network, evidence-led drying documentation, controlled "
@@ -32,19 +32,19 @@ CHAPTER_3 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractors and materials remain operator costs.",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C.",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractors and materials remain operator costs.",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C.",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractors and materials remain operator costs.",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C.",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C.",
         },
     ],
     "sections": [
@@ -112,8 +112,8 @@ CHAPTER_3 = {
                     "with occasional labor. Record any working owner's wages inside "
                     "the appropriate labor bucket; owner distributions come after the "
                     "modeled profit and do not reduce it again. The supplied startup "
-                    "capital range of $75,000 to $350,000 and monthly operating "
-                    "expense range of $10,000 to $45,000 are planning references, "
+                    "capital range of $18,000 to $75,000 and monthly operating "
+                    "expense range of $4,000 to $20,000 are planning references, "
                     "not evidence that total delivery costs fit a fixed monthly allowance."
                 ),
             ],

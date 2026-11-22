@@ -13,8 +13,8 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, holds Rank #19 with a "
-        "72/100 Money-to-Manpower Score. This chapter turns contract discipline "
+        "Candidate #23, Enterprise Software Reselling, holds Rank #14 with a "
+        "87/100 Money-to-Manpower Score. This chapter turns contract discipline "
         "into operating controls across nine mapped plays: reseller authorization, "
         "deal registration, AWS CPPO, Microsoft CSP, implementation spreads, "
         "renewal management, license reconciliation, public-sector procurement, "

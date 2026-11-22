@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
         "Score. The business earns gross domain sale proceeds, not transaction "
         "volume belonging to another merchant. Its canonical annual owner profits "
         "are $3,000 Conservative, $44,000 Base, and $120,000 Scaled. This chapter "
@@ -403,7 +403,7 @@ CHAPTER_3 = {
                     "pipeline protection and upcoming disbursements. None includes "
                     "the purchase cost of the existing unsold portfolio, expansion "
                     "inventory, or owner living expenses. Consequently, the stated "
-                    "$10,000 to $150,000 startup capital range does not establish "
+                    "$8,000 to $60,000 startup capital range does not establish "
                     "that every Scaled portfolio fits inside $150,000. Subtract "
                     "the required cash envelope before bidding on initial inventory. "
                     "Likewise, the $500 to $5,000 monthly opex range is a "

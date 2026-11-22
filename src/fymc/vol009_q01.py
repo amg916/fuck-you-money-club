@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Million-dollar lead generation originates enterprise buying conversations; it does not book the buyer's million-dollar contract as agency revenue. "
-        "Candidate #21, Rank #09 of 29, scores 82/100 as a High-Leverage Operator Play within the series' 30 mapped plays. "
+        "Candidate #21, Rank #18 of 29, scores 86/100 as a High-Leverage Operator Play within the series' 30 mapped plays. "
         "The business earns retainers and qualified-opportunity fees through account qualification, CRM attribution, and meeting scheduling. "
         "Canonical annual owner profit is $30,000 Conservative, $202,500 Base, and $480,000 Scaled, supported by revenue of $150,000, $675,000, and $1,200,000 respectively. "
         "Durability comes from narrow buying-event expertise, documented acceptance criteria, lawful data use, and defensible account ownership. "
@@ -81,7 +81,7 @@ CHAPTER_1 = {
                     "A beginner often scales list volume when acceptance falls; a disciplined operator narrows the signal or repairs the evidence. "
                     "Keep client concentration visible using both recognized revenue share and unpaid receivables. "
                     "If one account supplies 40% of revenue, a delayed renewal can impair staffing even while the pipeline dashboard looks healthy. "
-                    "Candidate #21 earns its 82/100 score through leverage and specialization, not through immunity to long sales cycles or disputed attribution."
+                    "Candidate #21 earns its 86/100 score through leverage and specialization, not through immunity to long sales cycles or disputed attribution."
                 ),
             ],
             "table": {

@@ -5,11 +5,11 @@
   "category": "Specialist transaction services",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 23,
-    "profit_margin_potential": 22,
-    "team_efficiency": 18,
-    "startup_accessibility": 10,
-    "automation_potential": 9
+    "revenue_potential": 24,
+    "profit_margin_potential": 23,
+    "team_efficiency": 19,
+    "startup_accessibility": 11,
+    "automation_potential": 11
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 82,
-  "tier_label": "High-Leverage Operator Play",
+  "total_score": 88,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 79,
-    "high": 85
+    "low": 85,
+    "high": 91
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 23/25. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
-    "profit_margin_potential": "Profit Margin Potential: 22/25. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
-    "team_efficiency": "Team Efficiency: 18/20. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
-    "startup_accessibility": "Startup Accessibility: 10/15. Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
-    "automation_potential": "Automation Potential: 9/15. Large specialist transactions can yield substantial commissions, but closing frequency is uneven."
+    "revenue_potential": "Revenue Potential: 24/25. Exclusive lower-middle-market, digital-asset, tax-credit, and easement mandates generate six-figure escrow commissions on a 4-person deal desk.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. Exclusive lower-middle-market, digital-asset, tax-credit, and easement mandates generate six-figure escrow commissions on a 4-person deal desk.",
+    "team_efficiency": "Team Efficiency: 19/20. Exclusive lower-middle-market, digital-asset, tax-credit, and easement mandates generate six-figure escrow commissions on a 4-person deal desk.",
+    "startup_accessibility": "Startup Accessibility: 11/15. Exclusive lower-middle-market, digital-asset, tax-credit, and easement mandates generate six-figure escrow commissions on a 4-person deal desk.",
+    "automation_potential": "Automation Potential: 11/15. Exclusive lower-middle-market, digital-asset, tax-credit, and easement mandates generate six-figure escrow commissions on a 4-person deal desk."
   },
   "economics": {
     "gross_revenue_range": "$100,000–$1,000,000 USD annually",
+    "retained_revenue_range": "$100,000–$1,000,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "25–50%",
+    "retained_profit_margin_range": "25–50%",
     "owner_net_profit_potential": "$25,000–$500,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$15,000–$100,000 USD",
     "monthly_opex_range": "$3,000–$18,000 USD",
     "time_to_first_deal": "3–12 months",
+    "automation_coverage": 0.67,
     "typical_team_size": {
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 100000,
+      "annual_retained_revenue_usd": 100000,
       "net_profit_margin_pct": 25,
+      "retained_profit_margin_pct": 25.0,
       "annual_owner_net_profit_usd": 25000,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 550000.0,
+      "annual_retained_revenue_usd": 550000,
       "net_profit_margin_pct": 37.5,
+      "retained_profit_margin_pct": 37.5,
       "annual_owner_net_profit_usd": 206250,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1000000,
+      "annual_retained_revenue_usd": 1000000,
       "net_profit_margin_pct": 50,
+      "retained_profit_margin_pct": 50.0,
       "annual_owner_net_profit_usd": 500000,
       "full_time_including_owner": 2,
       "contractors": 4,
@@ -83,7 +93,7 @@
   "automation_levers": [
     "Buyer-seller matching",
     "Deal milestone tracking",
-    "Document checklists"
+    "Escrow checklists"
   ],
   "key_risks": [
     "Failed closings",

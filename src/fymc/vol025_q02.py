@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, holds Rank #25 with a 62/100 Money-to-Manpower "
+        "Candidate #12, Freight Brokerage, holds Rank #19 with a 85/100 Money-to-Manpower "
         "Score because reliable capacity monetizes urgent shipper problems but consumes "
         "working capital and exception-handling labor. The payer is usually a shipper's "
         "accounts-payable function; the transportation buyer creates demand but may lack "
@@ -240,7 +240,7 @@ CHAPTER_2 = {
                     "misses $56,250 of margin embedded in outstanding receivables. Actual timing "
                     "depends on invoice acceptance and shipment seasonality, so build a weekly "
                     "thirteen-week cash forecast from individual maturities. The stated "
-                    "$50,000–$250,000 startup capital range does not automatically fund the full "
+                    "$15,000–$80,000 startup capital range does not automatically fund the full "
                     "Base steady state under these terms. Shorter shipper terms, deposits, a "
                     "committed working-capital facility, or lower accepted volume must close the "
                     "gap. If an eligible $2,000 invoice is factored for a $40 fee, its "

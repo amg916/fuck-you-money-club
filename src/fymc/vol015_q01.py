@@ -14,8 +14,8 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Judgment recovery converts an existing court award into collected money through verified authority, "
-        "asset intelligence, priority analysis, and lawful enforcement. Candidate #8 ranks #15 with a "
-        "77/100 Money-to-Manpower Score: a high-leverage operator play when case selection beats case volume. "
+        "asset intelligence, priority analysis, and lawful enforcement. Candidate #8 ranks #28 with a "
+        "79/100 Money-to-Manpower Score: a high-leverage operator play when case selection beats case volume. "
         "This chapter maps 15 operating plays, separating commercial collection workflows from counsel-led "
         "privacy-claim evaluation. Recognized service fees, not judgment balances or client recoveries, support "
         "the scorecard: Conservative revenue of $60,000 produces $12,000 annual owner profit; Base revenue "

@@ -13,7 +13,7 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a 62/100 Money-to-Manpower "
+        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower "
         "Score: sourcing succeeds when lane intelligence, carrier verification, and "
         "working capital move together. This chapter maps eight plays: authorized-distributor "
         "diversion logistics, import replenishment, new-facility launches, appointment recovery, "
@@ -475,7 +475,7 @@ CHAPTER_6 = {
                     "two-week collection delay adds approximately $42,000. This simplified "
                     "model assumes level volume, prompt invoicing, and no disputes; actual "
                     "daily cash forecasting must incorporate shipment dates and individual "
-                    "terms. The canonical $50,000–$250,000 startup capital range therefore "
+                    "terms. The canonical $15,000–$80,000 startup capital range therefore "
                     "does not support every growth plan equally, especially with monthly "
                     "operating expense of $6,000–$30,000. A $75,000 broker bond is security, "
                     "not unrestricted working cash; bond premiums and collateral differ "

@@ -6,14 +6,14 @@ CHAPTER_11 = {
     "chapter_number": 11,
     "question_number": 11,
     "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 7 FT + 3 C (10 people) -> 8 FT + 4 C (12 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "question_prompt": "How do you structure a lean 2 FT + 2 C (4 people) -> 3 FT + 3 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
     "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
     "subtitle": "ETA Seat Design, Contractor Acceptance SLAs, Accrual QoE, SBA Debt Bridges, and Signed Copyright Transfers",
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a 57/100 Money-to-Manpower Score: "
+        "Candidate #13, Business Acquisition, ranks #17 with a 86/100 Money-to-Manpower Score: "
         "returns depend on disciplined ownership, not invisible labor. This chapter maps seven "
         "operator plays: acquisition screening, quality of earnings, capital structuring, "
         "100-day integration, customer retention, reporting automation, and exit readiness. "
@@ -30,19 +30,19 @@ CHAPTER_11 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "8% margin; $60,000 annual owner net profit; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "13.0% margin; $243,750 annual owner net profit; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "18% margin; $540,000 annual owner net profit; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -110,7 +110,7 @@ CHAPTER_11 = {
                 ),
             ],
             "table": {
-                "caption": "Ten-Person Base Pod and Two Precisely Defined Scaled Additions",
+                "caption": "Four-Person Base Pod and Two Precisely Defined Scaled Additions",
                 "headers": [
                     "Seat and explicit place in headcount",
                     "Mapped play and accountable operating output",

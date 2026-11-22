@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower Score across 21 mapped plays. The sourcing advantage comes from documented transaction pressure, verified buyer demand, and defensible rights—not larger contact lists. This chapter operationalizes UCC financing triggers and cell-tower, rooftop, and billboard rights separation, then connects both to qualification, exclusive mandates, controlled introductions, and escrow closings. Build toward the first 3–10 completed transactions over 3–12 months using explicit funnel assumptions rather than promised conversion rates. Canonical annual owner profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled. Recognized revenue means retained transaction commissions only; asset purchase prices, financing principal, and client funds never become brokerage revenue.
+Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower Score across 21 mapped plays. The sourcing advantage comes from documented transaction pressure, verified buyer demand, and defensible rights—not larger contact lists. This chapter operationalizes UCC financing triggers and cell-tower, rooftop, and billboard rights separation, then connects both to qualification, exclusive mandates, controlled introductions, and escrow closings. Build toward the first 3–10 completed transactions over 3–12 months using explicit funnel assumptions rather than promised conversion rates. Canonical annual owner profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled. Recognized revenue means retained transaction commissions only; asset purchase prices, financing principal, and client funds never become brokerage revenue.
 
 ### Key Metrics
 

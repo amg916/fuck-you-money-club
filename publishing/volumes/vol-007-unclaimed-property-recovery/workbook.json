@@ -407,7 +407,7 @@
           "name": "Canonical candidate and scorecard anchor",
           "type": "textarea",
           "prompt": "Record the candidate identity, pipeline rank, score components, revenue basis, capital range, and first-deal expectation. Use this anchor to prevent launch reporting from drifting into principal-based revenue or unsupported earnings claims.",
-          "example": "Volume 007 covers Candidate #5, Unclaimed Property Recovery, ranked #07 of 29. Money-to-Manpower Score is 85/100: revenue potential 20, profit margin potential 22, team efficiency 18, startup accessibility 13, and automation potential 12. Classification: Elite Small-Team Cash Machine. Revenue means recognized service fees. Startup capital is $5,000–$35,000; first deal timing is 3–12 months."
+          "example": "Volume 007 covers Candidate #5, Unclaimed Property Recovery, ranked #07 of 29. Money-to-Manpower Score is 89/100: revenue potential 22, margin potential 23, team efficiency 19, startup accessibility 13, and automation potential 12. Classification: Elite Small-Team Cash Machine. Revenue means recognized service fees. Startup capital is $5,000–$35,000; first deal timing is 3–12 months."
         },
         {
           "name": "Days one through seven: source and rule validation",

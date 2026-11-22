@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
         "Score across a portfolio of 15 mapped plays. Its attractive fee economics "
         "collapse when operators buy face value instead of collectible priority, "
         "mistake client receipts for revenue, or enforce through bankruptcy and "

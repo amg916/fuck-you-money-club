@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, holds Rank #12 with an 81/100 "
+        "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 "
         "Money-to-Manpower Score. Its economics depend on collected commissions, "
         "not the equipment value moving through escrow. This chapter reconciles "
         "annual owner profit of $25,000 Conservative, $157,500 Base, and $360,000 "

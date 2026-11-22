@@ -14,8 +14,8 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Productized AI Agencies turn repeatable client workflows into bounded implementation "
-        "packages and monitored support subscriptions. Candidate #29 ranks #06 of 29 with "
-        "an 86/100 Money-to-Manpower Score and 23 mapped plays; this chapter examines three "
+        "packages and monitored support subscriptions. Candidate #29 ranks #08 of 29 with "
+        "an 89/100 Money-to-Manpower Score and 23 mapped plays; this chapter examines three "
         "trigger-led plays without treating every lead signal as permission to investigate. "
         "Recognized operator revenue consists of implementation fees and support retainers, "
         "not client sales, merchant GMV, avoided losses, or disputed settlement amounts. "
@@ -96,7 +96,7 @@ CHAPTER_1 = {
                     "Candidate #29 sits in technology implementation services, with a score "
                     "breakdown of 23 for revenue potential, 21 for margin potential, 17 for "
                     "team efficiency, 12 for startup accessibility, and 13 for automation "
-                    "potential. Together those components produce 86/100, labeled Elite "
+                    "potential. Together those components produce 89/100, labeled Elite "
                     "Small-Team Cash Machine. The operating thesis is leverage through client "
                     "intake workflows, deployment checklists, and usage and quality monitoring; "
                     "the principal risks remain scope creep, unreliable outputs, and client "

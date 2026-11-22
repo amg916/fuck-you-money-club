@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 Money-to-Manpower Score, but strong economics require disciplined rejection of defective claims. Within the volume's 12 mapped plays, this chapter separates treasury recovery from adjacent freight-audit contingencies and identifies where identity errors, invalid agreements, duplicate submissions, portal abuse, and premature fee recognition destroy cash. The canonical annual owner profit cases are $15,000 Conservative, $95,625 Base, and $225,000 Scaled; client property is never operator revenue. Use claim-level evidence chains, state-specific contract checks, cohort contribution tests, and explicit stop conditions to protect those outcomes. The question's 80% figure is a framing device, not an established industry failure statistic.
+Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 Money-to-Manpower Score, but strong economics require disciplined rejection of defective claims. Within the volume's 12 mapped plays, this chapter separates treasury recovery from adjacent freight-audit contingencies and identifies where identity errors, invalid agreements, duplicate submissions, portal abuse, and premature fee recognition destroy cash. The canonical annual owner profit cases are $15,000 Conservative, $95,625 Base, and $225,000 Scaled; client property is never operator revenue. Use claim-level evidence chains, state-specific contract checks, cohort contribution tests, and explicit stop conditions to protect those outcomes. The question's 80% figure is a framing device, not an established industry failure statistic.
 
 ### Key Metrics
 

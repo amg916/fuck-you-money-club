@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a 62/100 Money-to-Manpower Score: "
+        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower Score: "
         "this is a working-capital business, not passive software income. Structure three employee "
         "seats and two bounded contractor engagements around eight mapped plays: niche acquisition, "
         "shipper credit, carrier verification, pricing and matching, shipment control, billing and "
@@ -374,7 +374,7 @@ CHAPTER_11 = {
                     "before other expenses must still cover $285,000 to reach Base owner profit "
                     "of $165,000. Weekly cash planning must also consider seasonality, disputed invoices, "
                     "quick-pay discounts, factor reserves, and claim payments. Compare the resulting "
-                    "cash requirement with the stated $50,000–$250,000 startup capital range and actual "
+                    "cash requirement with the stated $15,000–$80,000 startup capital range and actual "
                     "committed facilities, rather than treating that range as automatic funding. "
                     "Maintain a thirteen-week cash forecast with named receipts and payment obligations. "
                     "The stated $6,000–$30,000 monthly operating-expense range is planning context; "

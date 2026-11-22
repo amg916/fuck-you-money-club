@@ -116,7 +116,7 @@ def build_volume_022_workbook() -> dict:
                         "Opportunity decision and rejection conditions",
                         "textarea",
                         "State the acquisition decision, accountable owner, unresolved evidence, expiry date, and hard rejection conditions. Relate the capital and labor burden to the candidate score rather than presenting equipment trading as passive income.",
-                        "Proceed only after title release, probe testing, and license confirmation. The acquisition lead owns a ten-business-day offer window. Candidate #14 ranks #22 of 29 with 64/100: revenue 21, margin 16, team 13, startup 6, and automation 8; capital and labor remain substantial.",
+                        "Proceed only after title release, probe testing, and license confirmation. The acquisition lead owns a ten-business-day offer window. Candidate #14 ranks #20 of 29 with 85/100: revenue potential 24, margin potential 22, team efficiency 18, startup accessibility 11, and automation potential 10; capital and labor remain substantial.",
                     ),
                 ],
                 "completion_gate": (
@@ -203,7 +203,7 @@ def build_volume_022_workbook() -> dict:
                         "Startup capitalization and inventory slots",
                         "textarea",
                         "Allocate startup cash across acquisition slots, refurbishment, freight, protected defect liquidity, overhead runway, and contingency. Reconcile the total to the stated startup range and avoid counting a cash reserve as both spending and available inventory capital.",
-                        "Allocate $180,000 as $112,000 for eight acquisitions, $16,000 refurbishment, $8,000 freight, $8,000 protected defect cash, $30,750 for three months of base overhead, and $5,250 contingency. The total sits within the $75,000–$400,000 startup range; protected amounts cannot fund additional purchases.",
+                        "Allocate $180,000 as $112,000 for eight acquisitions, $16,000 refurbishment, $8,000 freight, $8,000 protected defect cash, $30,750 for three months of base overhead, and $5,250 contingency. The total sits within the $20,000–$95,000 startup range; protected amounts cannot fund additional purchases.",
                     ),
                     field(
                         "Inventory turns and collection stress",

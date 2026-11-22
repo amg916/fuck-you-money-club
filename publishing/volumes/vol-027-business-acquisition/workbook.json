@@ -34,7 +34,7 @@
           "name": "Canonical investment screen",
           "type": "textarea",
           "prompt": "Record the candidate's score, ranking, capital range, staffing requirements, and expected acquisition timeline. Explain how those constraints affect your search mandate without replacing the canonical figures with a more attractive broker presentation.",
-          "example": "Candidate 13 ranks 27 of 29 at 57/100: revenue 24, margin 16, team efficiency 7, accessibility 2, automation 8. Startup capital is $200,000–$1,000,000; monthly operating expense metadata is $15,000–$70,000; first deal timing is 6–18 months. The mandate therefore requires substantial capital and an accountable operating leader."
+          "example": "Candidate 13 ranks 27 of 29 at 86/100: revenue potential 25, margin potential 22, team efficiency 19, startup accessibility 10, and automation potential 10. Startup capital is $30,000–$120,000; monthly operating expense metadata is $6,000–$25,000; first deal timing is 4–10 months. The mandate therefore requires substantial capital and an accountable operating leader."
         },
         {
           "name": "Seller authority and counterparty verification",
@@ -396,7 +396,7 @@
       "purpose": "Organize the first month after closing around cash protection, service continuity, reliable reporting, and accountable ownership. Connect the launch sprint to a 100-day improvement plan and build transferable evidence of performance so future refinancing or sale depends on verifiable operations rather than seller storytelling.",
       "chapter_ref": "Q11, Q12",
       "instructions": [
-        "Set the sprint start at transaction closing, not the beginning of the acquisition search. The canonical first-deal timeline remains 6–18 months; this worksheet governs the first 30 ownership days after financing, transfer permissions, and operating readiness have been established.",
+        "Set the sprint start at transaction closing, not the beginning of the acquisition search. The canonical first-deal timeline remains 4–10 months; this worksheet governs the first 30 ownership days after financing, transfer permissions, and operating readiness have been established.",
         "Assign a primary owner and backup for finance, customer continuity, delivery, and employee support. Build responsibilities inside the canonical staffing plan before adding positions, and make contractor scope and authority explicit so temporary support does not become unmanaged recurring overhead.",
         "Hold short daily operating reviews during the first week and weekly reviews thereafter. Discuss cash, service failures, collection disputes, payroll, supplier interruptions, and transaction defects before optional improvement projects that cannot protect near-term operations or measurable contribution.",
         "Use the first reliable monthly close to establish actual performance against the acquisition model. Keep partial-month results, seasonal patterns, one-time transition costs, and annualized estimates separate; a strong first week does not validate the annual base-case margin.",

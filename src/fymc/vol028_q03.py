@@ -13,8 +13,8 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 of 29 with a "
-        "56/100 Money-to-Manpower Score: profitable execution requires paid crew "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 of 29 with a "
+        "82/100 Money-to-Manpower Score: profitable execution requires paid crew "
         "capacity, disciplined pricing, and funded receivables. Four mapped plays "
         "structure this chapter: ISSA production-rate bidding, supervisor-pod routing, "
         "invoice-to-cash control, and "
@@ -32,19 +32,19 @@ CHAPTER_3 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual cleaning contract revenue after modeled billing corrections",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual cleaning contract revenue after modeled billing corrections",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual cleaning contract revenue after modeled billing corrections",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -440,10 +440,10 @@ CHAPTER_3 = {
                     "debt service on their real due dates. Do not "
                     "add the entire receivable balance to this expense-funded "
                     "gap and call the sum necessary working capital. "
-                    "The stated $15,000–$90,000 startup range may cover "
+                    "The stated $10,000–$50,000 startup range may cover "
                     "a staged launch, but it does not automatically "
                     "fund Base or Scaled receivables. Likewise, the "
-                    "$4,000–$18,000 monthly operating range cannot replace "
+                    "$3,000–$14,000 monthly operating range cannot replace "
                     "scenario expense budgets averaging $19,167, $53,167, "
                     "and $84,000 per month respectively."
                 ),

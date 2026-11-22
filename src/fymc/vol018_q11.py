@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
         "Build around six chapter-mapped execution plays: off-market sourcing, GIS screening, "
         "comparable-led offers, title/access diligence, minor subdivisions, and title-insured "
         "dispositions. The lean pod uses one full-time principal and three contractors; "

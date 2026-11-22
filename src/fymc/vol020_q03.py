@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
+        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
         "Money-to-Manpower Score. Its economics depend on recognized service fees, "
         "not the face value of contracts sourced through SAM.gov or municipal portals. "
         "This chapter develops seven mapped plays as operating variants of the supplied "
@@ -376,7 +376,7 @@ CHAPTER_3 = {
                     "of expense buffer, approximately $8,384, $35,671, and $57,534, producing "
                     "rounded funding targets of $20,959, $124,849, and $230,137. Calculate "
                     "totals before rounding the displayed components. The Scaled target "
-                    "exceeds the stated $25,000–$150,000 startup capital range; expansion "
+                    "exceeds the stated $20,000–$90,000 startup capital range; expansion "
                     "therefore needs accumulated cash, contracted advances, suitable credit, "
                     "or slower starts. The stated $5,000–$25,000 monthly operating range "
                     "also cannot describe all-in spending at scale: canonical annual "

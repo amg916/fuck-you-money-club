@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, sits at Rank #29 with a 54/100 "
+        "Candidate #15, Insurance Restoration, sits at Rank #13 with a 87/100 "
         "Money-to-Manpower Score because physical production and slow collections dominate "
         "the economics. This chapter maps five operator plays: water mitigation, fire and "
         "smoke restoration, mold remediation, storm reconstruction, and documented supplements "
@@ -30,24 +30,24 @@ CHAPTER_7 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs remain inside expenses.",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C.",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs remain inside expenses.",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C.",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs remain inside expenses.",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C.",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Assign the eleven-person pod before accepting the loss",
+            "heading": "1. Assign the four-person pod before accepting the loss",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
@@ -111,7 +111,7 @@ CHAPTER_7 = {
                 ),
             ],
             "table": {
-                "caption": "Eleven-Person Pod: Intake-to-Cash Responsibility and Evidence Matrix",
+                "caption": "Four-Person Pod: Intake-to-Cash Responsibility and Evidence Matrix",
                 "headers": [
                     "Operating handoff and assigned accountable person",
                     "Required evidence before the handoff advances",
@@ -990,7 +990,7 @@ if __name__ == "__main__":
                     "intramonth requirement, so the dispatcher maintains a rolling thirteen-week "
                     "cash schedule using actual due dates. Available opening cash is a modeling "
                     "input, not a claim that total startup capital always equals $150,000. "
-                    "Candidate #15's supplied startup range remains $75,000 to $350,000, with "
+                    "Candidate #15's supplied startup range remains $18,000 to $75,000, with "
                     "monthly operating overhead planning between $10,000 and $45,000; this "
                     "example's $28,750 overhead lies inside that band while direct job costs "
                     "remain additional. From Month 3 onward, identical cohorts produce $125,000 "

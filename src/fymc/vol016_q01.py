@@ -14,8 +14,8 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Probate real estate turns difficult estate-property transfers into a specialized brokerage operation, "
-        "not a claim on the estate's entire property value. Candidate #9 ranks #16 of 29 with a "
-        "76/100 Money-to-Manpower Score. This chapter maps 11 operator plays across docket intelligence, "
+        "not a claim on the estate's entire property value. Candidate #9 ranks #26 of 29 with a "
+        "80/100 Money-to-Manpower Score. This chapter maps 11 operator plays across docket intelligence, "
         "executor service, attorney relationships, transaction execution, and carefully separated heir-interest "
         "acquisitions. Recognized scorecard revenue means retained brokerage commissions after brokerage splits: "
         "$120,000 Conservative, $510,000 Base, and $900,000 Scaled. Corresponding annual owner profits are "

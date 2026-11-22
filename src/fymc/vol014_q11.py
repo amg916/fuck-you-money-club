@@ -13,8 +13,8 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 across 29 mapped "
-        "operator plays with a 79/100 Money-to-Manpower Score. Its asset is a "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 across 29 mapped "
+        "operator plays with a 89/100 Money-to-Manpower Score. Its asset is a "
         "transferable origination system, not loan principal or a founder's "
         "personal lender contacts. Build the Conservative and Base cases with "
         "2 FT + 2 C, then add one employee and one contractor only when "
@@ -512,7 +512,7 @@ CHAPTER_11 = {
                     "capital, assumed liabilities, and consideration form. "
                     "A larger headline multiple with contingent payments "
                     "may produce less certain value than a smaller "
-                    "cash offer. Candidate #20's score of 79/100 measures "
+                    "cash offer. Candidate #20's score of 89/100 measures "
                     "the operating opportunity across 29 mapped plays; "
                     "it is not a valuation formula."
                 ),

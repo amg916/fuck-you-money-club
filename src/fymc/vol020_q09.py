@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #20 with a 70/100 "
+        "Candidate #4, Government Contract Brokering, holds Rank #27 with a 79/100 "
         "Money-to-Manpower Score. This chapter organizes execution into seven mapped "
         "operator plays: solicitation monitoring, opportunity qualification, bid-calendar "
         "control, proposal coordination, prime/sub teaming, supplier readiness, and "
@@ -409,7 +409,7 @@ CHAPTER_9 = {
                     "especially tight for that staffing pattern and needs a priced "
                     "labor plan. The stated $5,000-$25,000 monthly operating range "
                     "must be reconciled with variable delivery costs rather than "
-                    "substituted for total annual expenses. Budget $25,000-$150,000 "
+                    "substituted for total annual expenses. Budget $20,000-$90,000 "
                     "startup capital against the six-to-eighteen-month first-deal "
                     "window, milestone collections, and payment-delay exposure."
                 ),

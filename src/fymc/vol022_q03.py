@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
         "Money-to-Manpower Score: equipment margins are earned through disciplined "
         "buying, documented refurbishment, and funded collection cycles. This chapter "
         "maps three operating plays: diagnostic refurbishment resale, surgical "
@@ -31,19 +31,19 @@ CHAPTER_3 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale revenue; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale revenue; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale revenue; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -262,7 +262,7 @@ CHAPTER_3 = {
                     "reconciliation budgets, not demonstrated staffing quotes. "
                     "In particular, $32,500 cannot fund two ordinary "
                     "market-rate full-time employees plus premises and insurance. "
-                    "Treat the Conservative 2 FT + 4 C designation as "
+                    "Treat the Conservative 1 FT + 3 C designation as "
                     "capacity involving owner labor or otherwise supported "
                     "resources until actual payroll proves feasibility. Owner "
                     "profit here precedes personal taxes and distributions; "
@@ -408,7 +408,7 @@ CHAPTER_3 = {
                     "targets are approximately $78,219, $222,137, and "
                     "$308,521 before extraordinary setup costs or debt "
                     "service. These targets fit inside the supplied "
-                    "$75,000–$400,000 startup range but do not establish "
+                    "$20,000–$95,000 startup range but do not establish "
                     "that its lower bound supports every operating case. "
                     "The cushions are cash-planning allowances, not "
                     "additional deductions from canonical profit. Replace "

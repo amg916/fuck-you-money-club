@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score. Across the volume's 15 mapped plays, the economic denominator is recognized service fees, never judgment face value or client recoveries. The canonical Conservative, Base, and Scaled cases produce $12,000, $84,000, and $200,000 annual owner net profit on $60,000, $280,000, and $500,000 revenue. This chapter converts those totals into paying-case yields, contractor costs, acquisition expense, enforcement disbursements, reversal allowances, and cash-conversion gaps. It also separates commercial judgment enforcement from settlement-claim administration and time-barred receivable resolution. The operating discipline is simple: price the collectible, legally reachable outcome; fund the waiting period; and keep client money outside the operating runway.
+Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score. Across the volume's 15 mapped plays, the economic denominator is recognized service fees, never judgment face value or client recoveries. The canonical Conservative, Base, and Scaled cases produce $12,000, $84,000, and $200,000 annual owner net profit on $60,000, $280,000, and $500,000 revenue. This chapter converts those totals into paying-case yields, contractor costs, acquisition expense, enforcement disbursements, reversal allowances, and cash-conversion gaps. It also separates commercial judgment enforcement from settlement-claim administration and time-barred receivable resolution. The operating discipline is simple: price the collectible, legally reachable outcome; fund the waiting period; and keep client money outside the operating runway.
 
 ### Key Metrics
 

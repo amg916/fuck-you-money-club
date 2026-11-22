@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #26 with a Money-to-Manpower "
-        "Score of 62/100. The business earns gross resale proceeds, not government "
+        "Candidate #17, Government Surplus Auctions, ranks #29 with a Money-to-Manpower "
+        "Score of 79/100. The business earns gross resale proceeds, not government "
         "procurement budgets or customer purchasing principal. This chapter maps six "
         "plays: fleet resale, shop-equipment resale, municipal-equipment resale, parts-lot "
         "breakup, authorized buyer sourcing, and government_rfp_subcontractor_brokerage. "
@@ -485,7 +485,7 @@ CHAPTER_2 = {
                     "and remaining operating costs. Four overlapping units therefore "
                     "tie up $32,600 before those additional expenses, even though "
                     "their eventual combined modeled profit is only $6,440. Compare "
-                    "that requirement with the canonical $25,000–$200,000 startup "
+                    "that requirement with the canonical $15,000–$80,000 startup "
                     "capital range and a realistic first-deal horizon of 1–6 months. "
                     "A refundable buyer deposit reduces immediate cash pressure only "
                     "while the corresponding refund obligation remains funded; it is "

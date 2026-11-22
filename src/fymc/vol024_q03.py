@@ -14,7 +14,7 @@ CHAPTER_3 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower "
-        "Score of 62/100. Its four mapped operating lenses are auction bid-down "
+        "Score of 81/100. Its four mapped operating lenses are auction bid-down "
         "discipline, redemption-ladder construction, redeemable-deed recovery underwriting, "
         "and agency_ad_spend_card_multiplier_rebate_cycling; the agency play remains "
         "economically separate from the lien portfolio. Canonical annual owner profits "

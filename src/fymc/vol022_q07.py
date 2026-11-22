@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
         "Money-to-Manpower Score. This chapter maps three operator plays: diagnostic "
         "replacement lots, surgical/veterinary procedure bundles, and pre-sold aesthetic "
         "refurbishment. A two-full-time, four-contractor pod moves each serialized asset "
@@ -31,19 +31,19 @@ CHAPTER_7 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C.",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C.",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C, eight people.",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C, eight people.",
         },
     ],
     "sections": [
@@ -630,7 +630,7 @@ def worked_cohort():
                     "Treat this as a mature operating quarter with a warmed seller and buyer "
                     "pipeline, not a promise that a new entrant collects immediately. Candidate "
                     "#14 still carries a three-to-nine-month time to first deal and a "
-                    "$75,000–$400,000 startup capital range. The illustration begins with "
+                    "$20,000–$95,000 startup capital range. The illustration begins with "
                     "$150,000 cash, no inventory, no receivables, and no debt. Month 1 screens "
                     "24 leads, rejects 18 before purchase, acquires six units, and sells four. "
                     "Month 2 screens 20 leads, rejects 15, acquires five units, and sells "
@@ -799,7 +799,7 @@ def worked_cohort():
                     "escrow balances from settled bank cash. Review warranty, return, "
                     "and damage claims for additional expense requirements; if real "
                     "experience exceeds the illustration, report the lower actual profit "
-                    "instead of protecting the 16.0% narrative. The six-person Base "
+                    "instead of protecting the 16.0% narrative. The four-person Base "
                     "pod should automate inventory tracking and service-history indexing, "
                     "but keep purchase authority, technical release, and cash review "
                     "explicitly assigned. The Scaled scorecard allows three full-time "

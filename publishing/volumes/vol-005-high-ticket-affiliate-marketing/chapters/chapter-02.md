@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-The merchant funds a commission because a new customer can yield more cash than the full cost to win and serve that account. The publisher gets paid only for the event the contract defines, not for a click or a sales team's hope. This chapter turns that gap into a buying discipline: price the customer, test the event, inspect the payer, and reconcile the cash. Volume 005, Candidate #24, ranks #04 at 87/100 across 35 mapped operator plays. Its economics work only when earned commissions survive reversals and collection costs.
+The merchant funds a commission because a new customer can yield more cash than the full cost to win and serve that account. The publisher gets paid only for the event the contract defines, not for a click or a sales team's hope. This chapter turns that gap into a buying discipline: price the customer, test the event, inspect the payer, and reconcile the cash. Volume 005, Candidate #24, ranks #02 at 92/100 across 35 mapped operator plays. Its economics work only when earned commissions survive reversals and collection costs.
 
 ### Key Metrics
 

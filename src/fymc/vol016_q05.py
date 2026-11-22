@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, holds Rank #16 with a 76/100 "
+        "Candidate #9, Probate Real Estate, holds Rank #26 with a 80/100 "
         "Money-to-Manpower Score. This chapter pressure-tests 11 mapped plays "
         "against defective representative authority, contested sales, title "
         "surprises, referral compensation, outreach abuse, and cash trapped in "

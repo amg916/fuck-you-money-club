@@ -9,11 +9,11 @@ CHAPTER_8 = {
     "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small commercial cleaning contracts desk an unfair information edge?",
     "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
     "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "SAM.gov, CMS, Parcel Records, ISSA Workloading, and Inspection-to-Invoice Controls for Nine-Person Janitorial Pods",
+    "subtitle": "SAM.gov, CMS, Parcel Records, ISSA Workloading, and Inspection-to-Invoice Controls for Four-Person Janitorial Pods",
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a 56/100 "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a 82/100 "
         "Money-to-Manpower Score because software organizes labor rather than replacing it. "
         "This chapter maps four operator plays: recurring commercial route density, medical "
         "janitorial specialization, public-sector rebid capture, and supervisor-pod retention "
@@ -21,8 +21,8 @@ CHAPTER_8 = {
         "business contacts, and inspection evidence to identify cleanable sites, reach actual "
         "buyers, price paid crew hours, and defend invoices. The canonical annual owner "
         "profits remain $20,000 Conservative, $87,000 Base, and $192,000 Scaled. Keep the "
-        "first two cases within the specified 5 FT + 4 C planning envelope; the scaled "
-        "case requires 6 FT + 5 C. Every enrichment expense must improve a measurable "
+        "first two cases within the specified 1 FT + 3 C planning envelope; the scaled "
+        "case requires 2 FT + 4 C. Every enrichment expense must improve a measurable "
         "site, labor, or collection decision."
     ),
     "key_metrics": [
@@ -30,19 +30,19 @@ CHAPTER_8 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual recognized cleaning contract revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual recognized cleaning contract revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual recognized cleaning contract revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -62,7 +62,7 @@ CHAPTER_8 = {
                     "connecting inspections, corrective work, approved scope changes, and "
                     "invoices. Give every record one primary play and one next decision: "
                     "verify occupancy, identify the buyer, inspect the site, or resolve a "
-                    "delivery exception. For the 5 FT + 4 C planning envelope, assign a "
+                    "delivery exception. For the 1 FT + 3 C planning envelope, assign a "
                     "designated employee an intake block and a supervisor an evidence-review "
                     "block; these are duties within existing capacity, not two added hires. "
                     "Contractor participation depends on actual agreements and classification, "
@@ -333,7 +333,7 @@ CHAPTER_8 = {
                     "without retaining unnecessary personal fields. Review a sample of "
                     "accepted matches and every suspected cross-organization merge. "
                     "Measure qualified walkthroughs per enrichment dollar, not records "
-                    "processed per minute. Within the nine-person planning envelope, "
+                    "processed per minute. Within the four-person planning envelope, "
                     "batch unresolved records into one daily review queue and stop "
                     "collection when the pod's available walkthrough slots are filled. "
                     "That capacity rule keeps automation from creating a second "
@@ -451,8 +451,8 @@ CHAPTER_8 = {
                     "$1,008,000 for all costs. Customer property values, hospital "
                     "billings, procurement ceilings, and underlying agency spending never "
                     "enter recognized operator revenue. Conservative and Base retain "
-                    "the specified 5 FT + 4 C roster labels; Scaled "
-                    "uses 6 FT + 5 C, or eleven people. These "
+                    "the specified 1 FT + 3 C roster labels; Scaled "
+                    "uses 2 FT + 4 C, or eleven people. These "
                     "labels do not supply wage rates, contractor utilization, or "
                     "scheduled hours. In particular, the Conservative cost envelope "
                     "requires a direct feasibility check before anyone assumes five "
@@ -625,7 +625,7 @@ CHAPTER_8 = {
                     "The Scaled case explicitly adds a sixth full-time "
                     "role and a fifth contractor, so its larger "
                     "revenue should never be described as the same "
-                    "nine-person pod doing unlimited extra work. The "
+                    "four-person pod doing unlimited extra work. The "
                     "information edge is earlier, better decisions about "
                     "paid labor and retained accounts."
                 ),

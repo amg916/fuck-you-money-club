@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
         "Score across 15 mapped plays. The creditor buys execution discipline; the "
         "debtor supplies recoveries when lawful enforcement, settlement economics, "
         "or a transaction requiring lien release makes payment rational. Those are "

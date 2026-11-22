@@ -13,8 +13,8 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 among the series' 29 mapped plays "
-        "with a Money-to-Manpower Score of 79/100. Launch one commercial financing lane with "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 among the series' 29 mapped plays "
+        "with a Money-to-Manpower Score of 89/100. Launch one commercial financing lane with "
         "two full-time operators and two contractors, not four simultaneous product desks. "
         "The first month must produce a documented lender matrix, permissioned borrower files, "
         "written compensation terms and measurable lender engagement within an $8,000 cash ceiling. "

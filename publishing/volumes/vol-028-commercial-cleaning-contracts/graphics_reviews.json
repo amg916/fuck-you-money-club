@@ -34,8 +34,8 @@
     "diag-03-base-case-revenue-to-owner-net",
     "diag-04-sub-niche-contribution-per-paid-hour",
     "diag-05-preflight-labor-chemical-and-contract-checks",
-    "diag-06-nine-seat-pod-with-two-seat-expansion",
-    "diag-07-startup-cash-allocation",
+    "diag-06-four-seat-core-with-two-seat-expansion",
+    "diag-07-thirty-thousand-reference-startup-allocation",
     "diag-08-first-thirty-days-execution"
   ],
   "cover_graphic_ids": [
@@ -59,8 +59,8 @@
     "diag-03-base-case-revenue-to-owner-net",
     "diag-04-sub-niche-contribution-per-paid-hour",
     "diag-05-preflight-labor-chemical-and-contract-checks",
-    "diag-06-nine-seat-pod-with-two-seat-expansion",
-    "diag-07-startup-cash-allocation",
+    "diag-06-four-seat-core-with-two-seat-expansion",
+    "diag-07-thirty-thousand-reference-startup-allocation",
     "diag-08-first-thirty-days-execution"
   ],
   "allowed_statuses": [
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-nine-seat-pod-with-two-seat-expansion": {
+    "diag-06-four-seat-core-with-two-seat-expansion": {
       "concept_a": {
-        "graphic_id": "diag-06-nine-seat-pod-with-two-seat-expansion",
+        "graphic_id": "diag-06-four-seat-core-with-two-seat-expansion",
         "graphic_type": "diagram",
-        "label": "Nine Active Seats, Two Explicit Expansion Seats",
+        "label": "Four Core Seats, Two Explicit Expansion Seats",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-nine-seat-pod-with-two-seat-expansion",
+        "graphic_id": "diag-06-four-seat-core-with-two-seat-expansion",
         "graphic_type": "diagram",
-        "label": "Nine Active Seats, Two Explicit Expansion Seats",
+        "label": "Four Core Seats, Two Explicit Expansion Seats",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-nine-seat-pod-with-two-seat-expansion",
+        "graphic_id": "diag-06-four-seat-core-with-two-seat-expansion",
         "graphic_type": "diagram",
-        "label": "Nine Active Seats, Two Explicit Expansion Seats",
+        "label": "Four Core Seats, Two Explicit Expansion Seats",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-cash-allocation": {
+    "diag-07-thirty-thousand-reference-startup-allocation": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-cash-allocation",
+        "graphic_id": "diag-07-thirty-thousand-reference-startup-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Launch Cash Before Buying Capacity",
+        "label": "Allocate a $30,000 Reference Launch Budget",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-cash-allocation",
+        "graphic_id": "diag-07-thirty-thousand-reference-startup-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Launch Cash Before Buying Capacity",
+        "label": "Allocate a $30,000 Reference Launch Budget",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-cash-allocation",
+        "graphic_id": "diag-07-thirty-thousand-reference-startup-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Launch Cash Before Buying Capacity",
+        "label": "Allocate a $30,000 Reference Launch Budget",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-22T04:19:48Z"
+  "updated_at": "2026-11-22T16:33:29Z"
 }

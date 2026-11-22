@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a 63/100 Money-to-Manpower Score: "
+        "Candidate #7, Mineral Rights, ranks #25 with a 81/100 Money-to-Manpower Score: "
         "automation improves evidence throughput, but capital, depletion, and title still control returns. "
         "This chapter maps five plays: NMA acquisitions, NPRI underwriting, pooling-docket positioning, "
         "royalty recovery, and institutional flips. A 1 FT + 3 C pod uses Python ingestion, "
@@ -339,7 +339,7 @@ CHAPTER_10 = {
                     "almost the entire Conservative cost allowance, so that case needs a smaller workload "
                     "and budget. Monthly operating overhead of $1,000–$12,000 is a separate planning "
                     "range, not a substitute for total scenario costs. Startup capital remains "
-                    "$150,000–$2,000,000 and time to first deal remains 6–24 months. Revenue means royalty "
+                    "$15,000–$75,000 and time to first deal remains 3–9 months. Revenue means royalty "
                     "receipts plus realized rights-trading gains excluding returned basis; gross sale "
                     "proceeds and underlying producer sales are different measures. Track depletion "
                     "analysis under 26 U.S.C. Sections 611 and 613A separately from operational yield "

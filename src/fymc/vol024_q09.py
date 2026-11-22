@@ -14,7 +14,7 @@ CHAPTER_9 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
-        "62/100. This chapter maps four operator plays: Florida bid-down certificates, "
+        "81/100. This chapter maps four operator plays: Florida bid-down certificates, "
         "Arizona certificate enforcement, Illinois redemption-file control, and Texas "
         "redeemable-deed acquisition. Each requires a different statutory calendar, "
         "contract package, and owner-contact script. Annual owner profit is $4,500 "
@@ -422,7 +422,7 @@ CHAPTER_9 = {
                     "must cover the costs assigned by the scorecard, not simply the monthly "
                     "software subscription. The stated monthly operating range of $500 to "
                     "$4,000 is not automatically an exhaustive all-in expense schedule. Startup "
-                    "capital of $100,000 to $1,500,000 is invested capital, not annual revenue. "
+                    "capital of $15,000 to $85,000 is invested capital, not annual revenue. "
                     "The Conservative and Base pods each contain one full-time operator and "
                     "two contractors; Scaled uses two full-time people and three contractors. "
                     "Do not interpret contractor headcount as two full-time salaries or assume "

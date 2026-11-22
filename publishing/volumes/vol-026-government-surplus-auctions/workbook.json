@@ -141,7 +141,7 @@
           "name": "Startup capital and recurring cost envelope",
           "type": "textarea",
           "prompt": "Allocate starting cash among inventory, services, reserves, facilities, and operating liquidity. Compare the plan with the canonical capital and monthly cost ranges, and distinguish annual budget allocations from cash already committed at launch.",
-          "example": "Use $75,000 within the $25,000-$200,000 startup range: $30,000 acquisition capacity, $8,000 logistics, $6,000 repairs, $6,000 defects, $10,000 facilities and tools, and $15,000 operating liquidity. Recurring costs of $10,000 monthly fit the $3,000-$15,000 range. The operating reserve covers only 1.5 months, so early commitments must remain deliberately limited."
+          "example": "Use $75,000 within the $15,000-$80,000 startup range: $30,000 acquisition capacity, $8,000 logistics, $6,000 repairs, $6,000 defects, $10,000 facilities and tools, and $15,000 operating liquidity. Recurring costs of $10,000 monthly fit the $3,000-$15,000 range. The operating reserve covers only 1.5 months, so early commitments must remain deliberately limited."
         },
         {
           "name": "Base-case annual cost bridge",
@@ -384,7 +384,7 @@
           "name": "Automation value and capacity boundary",
           "type": "textarea",
           "prompt": "Estimate hours saved, recurring software costs, error reduction, and remaining physical labor. Explain which tasks cannot be automated safely and how measured throughput affects staffing without overstating the candidate's overall automation or margin potential.",
-          "example": "Alerts, calculators, and inventory views save six administrative hours weekly, valued at $30 per hour: $180 weekly before software costs. Inspection, loading, repair, and title resolution remain physical or specialist work. The candidate retains its 62/100 Money-to-Manpower score; automation does not convert a capital- and labor-intensive operation into a passive business."
+          "example": "Alerts, calculators, and inventory views save six administrative hours weekly, valued at $30 per hour: $180 weekly before software costs. Inspection, loading, repair, and title resolution remain physical or specialist work. The candidate retains its 79/100 Money-to-Manpower score; automation does not convert a high-leverage, system-disciplined operation into a passive business."
         }
       ],
       "completion_gate": "The team demonstrates one complete alert-to-record workflow, a tested bid calculator, asset-level status controls, synchronized buyer suppression, and a successful outage rehearsal. Automation cannot submit an unreviewed bid or publish an unsupported asset condition."
@@ -407,7 +407,7 @@
           "name": "Canonical position and investment thesis",
           "type": "textarea",
           "prompt": "Record the candidate identity, pipeline rank, overall score, component scores, and operating classification. Explain how these fixed reference values shape the launch plan without turning the score into a forecast of actual investment returns.",
-          "example": "Candidate #17, Government Surplus Auctions, ranks #26 of 29 and scores 62/100, classified Capital / Labor Intensive. Components are revenue potential 20, profit margin potential 14, team efficiency 12, startup accessibility 8, and automation potential 8. The launch therefore prioritizes capital recovery, inspection quality, and executable removal rather than aggressive lot count."
+          "example": "Candidate #17, Government Surplus Auctions, ranks #29 of 29 and scores 79/100, classified High-Leverage Operator Play. Components are revenue potential 21, margin potential 21, team efficiency 15, startup accessibility 12, and automation potential 10. The launch therefore prioritizes capital recovery, inspection quality, and executable removal rather than aggressive lot count."
         },
         {
           "name": "Pod roster and accountable role coverage",

@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
         "Money-to-Manpower Score. This chapter connects nine mapped plays to one "
         "controlled operating system: qualify demand, establish channel rights, price "
         "vendor obligations, deliver accepted scope, and reconcile collected cash. Eight "
@@ -728,7 +728,7 @@ if __name__ == "__main__":
                     "to establish authorization, evidence controls, relationships, "
                     "and implementation capability while funding a longer sales "
                     "cycle. The walk opens with $75,000 cash contributed by the "
-                    "owner, within the $25,000–$150,000 startup range, and zero "
+                    "owner, within the $15,000–$75,000 startup range, and zero "
                     "receivables or vendor payables. That contribution credits "
                     "equity, not revenue. Month 1 processes forty opportunities: "
                     "eight are scrubbed for eligibility, twenty are lost, four "

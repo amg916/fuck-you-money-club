@@ -13,8 +13,8 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped plays "
-        "with a Money-to-Manpower Score of 79/100. Its information edge comes from "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped plays "
+        "with a Money-to-Manpower Score of 89/100. Its information edge comes from "
         "joining authoritative records to permissioned borrower evidence, not buying "
         "the largest contact list. This chapter specifies registry access, enrichment "
         "waterfalls, refresh controls, and lender-matrix diagnostics for equipment, "

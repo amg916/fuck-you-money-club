@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. Build the business around accepted commercial opportunities, not mailbox counts or client advertising volume. Reserve 60% of the $5,000–$40,000 opening capital, buy one narrow production stack, and release spending against collected retainers and documented acceptance rates. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. This chapter connects public-channel signals, freight recovery, assessment appeals, static edge sites, healthcare acquisition, and consent-first screening to explicit cash controls. The operating discipline is simple: authenticate every channel, reconcile every billable event, and keep speculative infrastructure from consuming the reserve that carries collections.
+Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. Build the business around accepted commercial opportunities, not mailbox counts or client advertising volume. Reserve 60% of the $5,000–$40,000 opening capital, buy one narrow production stack, and release spending against collected retainers and documented acceptance rates. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. This chapter connects public-channel signals, freight recovery, assessment appeals, static edge sites, healthcare acquisition, and consent-first screening to explicit cash controls. The operating discipline is simple: authenticate every channel, reconcile every billable event, and keep speculative infrastructure from consuming the reserve that carries collections.
 
 ### Key Metrics
 

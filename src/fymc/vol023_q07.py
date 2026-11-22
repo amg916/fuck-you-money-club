@@ -504,7 +504,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, holds Rank #23 with a 63/100 "
+        "Candidate #7, Mineral Rights, holds Rank #25 with a 81/100 "
         "Money-to-Manpower Score because capital, title work, and depletion "
         "constrain throughput. This chapter maps five operating plays: severed-mineral "
         "aggregation, NPRI yield acquisition, pooling-docket curve-jumping, royalty "
@@ -1088,7 +1088,7 @@ CHAPTER_7 = {
                     "a producing book and a prepared acquisition pipeline. "
                     "Opening assets are $100,000 unrestricted cash and "
                     "$150,000 contributed mineral basis, representing $250,000 "
-                    "of capital within the canonical $150,000–$2,000,000 "
+                    "of capital within the canonical $15,000–$75,000 "
                     "startup range. Opening equity is not revenue. "
                     "The existing book produces collected royalties of "
                     "$4,000, $4,500, and $5,250 across three months. "

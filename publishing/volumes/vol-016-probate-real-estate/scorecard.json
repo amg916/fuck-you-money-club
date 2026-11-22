@@ -6,10 +6,10 @@
   "production_stage": "approved_master",
   "scores": {
     "revenue_potential": 23,
-    "profit_margin_potential": 18,
+    "profit_margin_potential": 20,
     "team_efficiency": 16,
-    "startup_accessibility": 9,
-    "automation_potential": 10
+    "startup_accessibility": 10,
+    "automation_potential": 11
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 76,
+  "total_score": 80,
   "tier_label": "High-Leverage Operator Play",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 73,
-    "high": 79
+    "low": 77,
+    "high": 83
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 23/25. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
-    "profit_margin_potential": "Profit Margin Potential: 18/25. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
-    "team_efficiency": "Team Efficiency: 16/20. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
-    "startup_accessibility": "Startup Accessibility: 9/15. Modeled as licensed brokerage rather than capital-heavy property acquisition.",
-    "automation_potential": "Automation Potential: 10/15. Modeled as licensed brokerage rather than capital-heavy property acquisition."
+    "revenue_potential": "Revenue Potential: 23/25. Modeled as licensed probate concierge brokerage and attorney referral desks rather than capital-heavy property flipping.",
+    "profit_margin_potential": "Profit Margin Potential: 20/25. Modeled as licensed probate concierge brokerage and attorney referral desks rather than capital-heavy property flipping.",
+    "team_efficiency": "Team Efficiency: 16/20. Modeled as licensed probate concierge brokerage and attorney referral desks rather than capital-heavy property flipping.",
+    "startup_accessibility": "Startup Accessibility: 10/15. Modeled as licensed probate concierge brokerage and attorney referral desks rather than capital-heavy property flipping.",
+    "automation_potential": "Automation Potential: 11/15. Modeled as licensed probate concierge brokerage and attorney referral desks rather than capital-heavy property flipping."
   },
   "economics": {
     "gross_revenue_range": "$120,000–$900,000 USD annually",
+    "retained_revenue_range": "$120,000–$900,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "20–35%",
+    "retained_profit_margin_range": "20–35%",
     "owner_net_profit_potential": "$24,000–$315,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$15,000–$100,000 USD",
     "monthly_opex_range": "$3,000–$18,000 USD",
     "time_to_first_deal": "4–18 months",
+    "automation_coverage": 0.67,
     "typical_team_size": {
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 120000,
+      "annual_retained_revenue_usd": 120000,
       "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 24000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 510000.0,
+      "annual_retained_revenue_usd": 510000,
       "net_profit_margin_pct": 27.5,
+      "retained_profit_margin_pct": 27.5,
       "annual_owner_net_profit_usd": 140250,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 900000,
+      "annual_retained_revenue_usd": 900000,
       "net_profit_margin_pct": 35,
+      "retained_profit_margin_pct": 35.0,
       "annual_owner_net_profit_usd": 315000,
       "full_time_including_owner": 3,
       "contractors": 4,

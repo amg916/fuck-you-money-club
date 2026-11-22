@@ -3,7 +3,7 @@ from __future__ import annotations
 VOLUME_029_SUBTITLE = (
     "The Complete Playbook for Insurance Restoration: "
     "$500,000–$2,500,000 USD in Annual Gross Restoration Billings "
-    "with a 5 FT + 6 C (11 People) Core Pod, Expanding to 13 at Scale"
+    "with a 2 FT + 2 C (4 People) Core Pod, Expanding to 3 FT + 3 C (6 People) at Scale"
 )
 
 VOLUME_029_POSITIONING_ALTERNATIVES = [
@@ -14,8 +14,8 @@ VOLUME_029_POSITIONING_ALTERNATIVES = [
             "authorized scope, field measurements, job costs, and collections."
         ),
         "audience": (
-            "Restoration owners assembling an eleven-person employee and "
-            "contractor pod around documented mitigation and reconstruction."
+            "Restoration owners assembling a 2 FT + 2 C (four-person) "
+            "core pod around documented mitigation and reconstruction."
         ),
         "research_basis": (
             "29 CFR 1910.134 establishes respiratory-protection requirements "
@@ -69,8 +69,9 @@ VOLUME_029_POSITIONING_ALTERNATIVES = [
             "capital before accepting the next storm-loss job."
         ),
         "audience": (
-            "Owner-operators managing $75,000–$350,000 USD of startup capital "
-            "across an eleven-person core and thirteen-person scaled pod."
+            "Owner-operators managing $18,000–$75,000 USD of startup capital "
+            "across a 2 FT + 2 C (four-person) core and "
+            "3 FT + 3 C (six-person) scaled pod."
         ),
         "research_basis": (
             "Texas Occupations Code Chapter 1958 provides a concrete example "
@@ -247,9 +248,9 @@ def build_volume_029_diagrams_data() -> list[dict]:
                 "canonical scenario revenue and net profit remain fixed."
             ),
             (
-                "Conservative: $500,000 × 8% = $40,000 with 5 FT + 6 C. "
-                "Base: $1,500,000 × 13.0% = $195,000 with 5 FT + 6 C. "
-                "Scaled: $2,500,000 × 18% = $450,000 with 6 FT + 7 C."
+                "Conservative: $500,000 × 8% = $40,000 with 2 FT + 2 C. "
+                "Base: $1,500,000 × 13.0% = $195,000 with 2 FT + 2 C. "
+                "Scaled: $2,500,000 × 18% = $450,000 with 3 FT + 3 C."
             ),
             [
                 (
@@ -268,8 +269,11 @@ def build_volume_029_diagrams_data() -> list[dict]:
                     -795000,
                     (
                         "Charge actual contractor invoices and consumed "
-                        "materials to jobs. Six core contractor seats are "
-                        "capacity relationships, not six employee salaries."
+                        "materials to jobs. The 2 FT + 2 C core pod includes "
+                        "two individual contractor seats, not employee salaries. "
+                        "External vendor and trade sub-crews are charged to "
+                        "direct subcontractor/COGS pass-through and are not "
+                        "included in internal pod headcount."
                     ),
                 ),
                 (
@@ -277,8 +281,9 @@ def build_volume_029_diagrams_data() -> list[dict]:
                     "−$270,000 employee costs; 18%",
                     -270000,
                     (
-                        "Illustrative loaded annual payroll for five full-time "
-                        "seats averages $54,000 per seat, including the working "
+                        "Illustrative loaded annual payroll for the two "
+                        "full-time seats in the 2 FT + 2 C core pod averages "
+                        "$135,000 per FT seat, including the working "
                         "owner-manager seat where applicable."
                     ),
                 ),
@@ -454,218 +459,164 @@ def build_volume_029_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-06-core-and-scaled-pod",
+            "diag-06-four-core-six-scaled-pod",
             "org_architecture",
-            "Eleven Core Seats, Thirteen at Scale",
-            "Five employees plus six contractors; add one of each for scale.",
+            "Four Core Seats, Six at Scale",
+            "2 FT + 2 C core pod; add 1 FT + 1 C for a 3 FT + 3 C scaled pod.",
             11,
             "operating_framework",
             (
-                "Numeric values show core-seat occupancy: eleven values of "
-                "one and two expansion values of zero. Activating both "
-                "expansion seats produces 6 FT + 7 C. Contractor seats "
-                "represent individual capacity commitments, not guaranteed "
-                "full-time employee equivalents."
+                "Numeric values show core-seat occupancy: four values of "
+                "one and two expansion values of zero. The core comprises "
+                "2 FT + 2 C; activating both expansion seats produces "
+                "3 FT + 3 C, six people total. Contractor seats represent "
+                "individual capacity commitments, not guaranteed full-time "
+                "employee equivalents. External vendor and trade sub-crews "
+                "are direct subcontractor/COGS pass-through, not internal "
+                "pod headcount."
             ),
             (
-                "Core pod supports the Conservative and Base scenarios; the "
-                "expanded pod belongs to the Scaled scenario. Verify worker "
-                "classification from actual working arrangements."
+                "Conservative and Base scenarios use the four-person core; "
+                "the Scaled scenario uses all six seats. Consolidate operating "
+                "responsibilities within the core before expansion, and verify "
+                "worker classification from actual working arrangements."
             ),
             [
                 (
-                    "FT 1: Owner-manager",
-                    "Core employee seat; commercial accountability",
+                    "FT 1: Owner-manager and estimator",
+                    "Core employee seat; commercial and scope accountability",
                     1,
                     (
                         "Own pricing, cash forecasting, jurisdiction selection, "
-                        "insurance relationships, and escalation of contractual "
-                        "disputes outside the field team's authority."
+                        "Xactimate estimates, measured quantities, and supplement "
+                        "support. Escalate contractual disputes appropriately "
+                        "without negotiating policy coverage or claim settlement."
                     ),
                 ),
                 (
-                    "FT 2: Estimator",
-                    "Core employee seat; documented scope",
+                    "FT 2: Project and mitigation lead",
+                    "Core employee seat; field delivery, safety, and quality",
                     1,
                     (
-                        "Maintain Xactimate estimates, measured quantities, "
-                        "photo references, and supplement support without "
-                        "negotiating policy coverage or claim settlement."
-                    ),
-                ),
-                (
-                    "FT 3: Project manager",
-                    "Core employee seat; delivery control",
-                    1,
-                    (
-                        "Schedule trades, manage customer change orders, "
-                        "review daily job costs, and verify completion "
-                        "before milestone billing."
-                    ),
-                ),
-                (
-                    "FT 4: Mitigation lead",
-                    "Core employee seat; technical field lead",
-                    1,
-                    (
-                        "Direct extraction and drying, maintain psychrometric "
-                        "records, verify equipment placement, and escalate "
-                        "contamination or structural hazards."
-                    ),
-                ),
-                (
-                    "FT 5: Dispatch and receivables",
-                    "Core employee seat; scheduling and collections",
-                    1,
-                    (
-                        "Coordinate arrivals, maintain authorization records, "
-                        "submit invoices, track aging, and reconcile cleared "
-                        "payments to individual job balances."
+                        "Coordinate dispatch and trades, direct extraction and "
+                        "drying, verify psychrometric records and hazard controls, "
+                        "review job costs, and confirm completion before billing. "
+                        "Maintain required qualifications for assigned work."
                     ),
                 ),
                 (
                     "C 1: Mitigation technician",
-                    "Core contractor seat; extraction capacity",
+                    "Core contractor seat; extraction and monitoring capacity",
                     1,
                     (
-                        "Perform assigned extraction and equipment handling "
-                        "within documented qualifications and the project's "
-                        "hazard-control plan."
+                        "Perform agreed extraction, equipment handling, moisture "
+                        "monitoring, and containment tasks within documented "
+                        "qualifications and the project's hazard-control plan. "
+                        "Record equipment checks and removal evidence."
                     ),
                 ),
                 (
-                    "C 2: Mitigation technician",
-                    "Core contractor seat; monitoring capacity",
+                    "C 2: Dispatch and receivables coordinator",
+                    "Core contractor seat; scheduling and billing support",
                     1,
                     (
-                        "Support moisture monitoring, equipment checks, "
-                        "containment tasks, and removal documentation under "
-                        "the agreed project scope."
+                        "Coordinate arrivals, maintain authorization records, "
+                        "prepare invoices, track aging, and reconcile cleared "
+                        "payments under the agreed service scope. The owner-manager "
+                        "retains commercial accountability and approval authority."
                     ),
                 ),
                 (
-                    "C 3: Reconstruction carpenter",
-                    "Core contractor seat; demolition and framing",
-                    1,
-                    (
-                        "Execute authorized selective demolition and framing "
-                        "after required hazard assessments, permits, and "
-                        "scope boundaries are established."
-                    ),
-                ),
-                (
-                    "C 4: Reconstruction finisher",
-                    "Core contractor seat; interior restoration",
-                    1,
-                    (
-                        "Deliver drywall, trim, and finish repairs against "
-                        "measured quantities, approved customer changes, "
-                        "and documented quality checks."
-                    ),
-                ),
-                (
-                    "C 5: Electrical specialist",
-                    "Core contractor seat; qualified electrical work",
-                    1,
-                    (
-                        "Inspect and restore affected electrical systems "
-                        "within applicable licensing, permit, inspection, "
-                        "and safe-isolation requirements."
-                    ),
-                ),
-                (
-                    "C 6: Plumbing specialist",
-                    "Core contractor seat; qualified plumbing work",
-                    1,
-                    (
-                        "Address authorized plumbing repairs, record source "
-                        "correction evidence, and separate repair charges "
-                        "from mitigation equipment charges."
-                    ),
-                ),
-                (
-                    "FT 6: Safety and quality lead",
+                    "FT 3: Safety and quality lead",
                     "Expansion employee seat; core occupancy zero",
                     0,
                     (
-                        "Activate at scale to audit hazard controls, "
-                        "training, field records, and rework. Core operations "
-                        "retain these responsibilities before this hire."
+                        "Activate at scale to audit hazard controls, training, "
+                        "field records, and rework. The project and mitigation "
+                        "lead retains these responsibilities before this hire."
                     ),
                 ),
                 (
-                    "C 7: Flooring specialist",
+                    "C 3: Reconstruction coordinator",
                     "Expansion contractor seat; core occupancy zero",
                     0,
                     (
-                        "Activate at scale for substrate preparation and "
-                        "floor installation, with moisture acceptance "
-                        "criteria documented before closing assemblies."
+                        "Activate at scale to coordinate qualified trade vendors, "
+                        "approved repair scopes, moisture acceptance criteria, "
+                        "and completion records. External trade sub-crews remain "
+                        "direct subcontractor/COGS pass-through, not pod seats."
                     ),
                 ),
             ],
         ),
         (
-            "diag-07-startup-capital-stack",
+            "diag-07-45000-reference-startup-capital",
             "stacked_comparison",
-            "Startup Capital: Preserve Cash Before Expanding Equipment",
-            "Four buckets total $150,000 within the $75,000–$350,000 range.",
+            "Startup Capital: A $45,000 Reference Plan",
+            "Four buckets total $45,000 within the $18,000–$75,000 USD range.",
             4,
             "illustrative_model",
             (
-                "Numeric values encode the $150,000 reference allocation in "
-                "USD. Details also provide complete $75,000 lean and $350,000 "
-                "expanded allocations. Startup capital is funding capacity, "
-                "not revenue or an immediate operating expense."
+                "Numeric values encode the $45,000 central/reference startup "
+                "allocation in USD. Details also provide complete $18,000 lean "
+                "and $75,000 expanded allocations across the same four buckets. "
+                "Startup capital is funding capacity, not revenue or an "
+                "immediate operating expense. Choose equipment access and "
+                "job commitments to fit available funding."
             ),
             (
-                "Lean: $25,000 + $20,000 + $10,000 + $20,000 = $75,000. "
-                "Reference: $60,000 + $40,000 + $20,000 + $30,000 = $150,000. "
-                "Expanded: $150,000 + $90,000 + $40,000 + $70,000 = $350,000."
+                "Lean: $7,000 + $5,000 + $2,000 + $4,000 = $18,000. "
+                "Reference: $18,000 + $12,000 + $6,000 + $9,000 = $45,000. "
+                "Expanded: $30,000 + $20,000 + $10,000 + $15,000 = $75,000."
             ),
             [
                 (
                     "Working-capital reserve",
-                    "$60,000 reference allocation; 40.0%",
-                    60000,
+                    "$18,000 reference allocation; 40.0%",
+                    18000,
                     (
-                        "Lean $25,000; reference $60,000; expanded $150,000. "
-                        "Fund receivable delays and job commitments. At "
-                        "$42,500 monthly Base operating costs, $60,000 covers "
-                        "about 1.41 months before variable direct job costs."
+                        "Lean $7,000; reference $18,000; expanded $30,000. "
+                        "Fund receivable delays and job commitments. Model "
+                        "cash needs against the $4,000–$20,000 monthly operating "
+                        "expense planning range and separately fund variable "
+                        "direct job costs; a reserve does not guarantee runway "
+                        "through the 1–5 month time-to-first-deal window."
                     ),
                 ),
                 (
                     "Mitigation equipment",
-                    "$40,000 reference allocation; 26.7%",
-                    40000,
+                    "$12,000 reference allocation; 26.7%",
+                    12000,
                     (
-                        "Lean $20,000; reference $40,000; expanded $90,000. "
+                        "Lean $5,000; reference $12,000; expanded $20,000. "
                         "Prioritize extraction, air movement, dehumidification, "
                         "moisture meters, protective equipment, and calibrated "
-                        "measurement tools; rent overflow capacity."
+                        "measurement tools. Use rental access or suitable used "
+                        "equipment where needed and rent overflow capacity."
                     ),
                 ),
                 (
                     "Vehicle and mobilization setup",
-                    "$20,000 reference allocation; 13.3%",
-                    20000,
+                    "$6,000 reference allocation; 13.3%",
+                    6000,
                     (
-                        "Lean $10,000; reference $20,000; expanded $40,000. "
-                        "Fund vehicle deposits or acquisitions, secure storage, "
-                        "load restraint, and initial mobilization equipment; "
-                        "ongoing vehicle costs remain operating expenses."
+                        "Lean $2,000; reference $6,000; expanded $10,000. "
+                        "Fund vehicle rental or lease deposits, secure storage, "
+                        "load restraint, and initial mobilization equipment. "
+                        "Lean deployment assumes access to a suitable existing "
+                        "or rented vehicle; ongoing costs remain operating expenses."
                     ),
                 ),
                 (
                     "Business and technical setup",
-                    "$30,000 reference allocation; 20.0%",
-                    30000,
+                    "$9,000 reference allocation; 20.0%",
+                    9000,
                     (
-                        "Lean $20,000; reference $30,000; expanded $70,000. "
+                        "Lean $4,000; reference $9,000; expanded $15,000. "
                         "Fund licensing, training, insurance deposits, estimating "
                         "setup, dispatch configuration, bookkeeping systems, "
-                        "and initial referral development."
+                        "and initial referral development. Limit launch scope "
+                        "to work supported by funded credentials and safeguards."
                     ),
                 ),
             ],
@@ -679,9 +630,9 @@ def build_volume_029_diagrams_data() -> list[dict]:
             "operating_framework",
             (
                 "Numeric values are milestone end days. The canonical time "
-                "to first deal is 1–6 months; this sprint establishes readiness "
+                "to first deal is 1–5 months; this sprint establishes readiness "
                 "and does not assume a paid job within thirty days. Monthly "
-                "operating costs span $10,000–$45,000 depending on deployment."
+                "operating costs span $4,000–$20,000 depending on deployment."
             ),
             (
                 "Use simulated job files until authorized customer work is "
@@ -704,7 +655,7 @@ def build_volume_029_diagrams_data() -> list[dict]:
                     "Pod, equipment, and safety readiness",
                     14,
                     (
-                        "Assign five employee and six contractor core roles, "
+                        "Assign two employee and two contractor core roles, "
                         "verify qualifications and worker classification, secure "
                         "equipment access, and document hazard assessment, "
                         "respiratory protection, and emergency escalation procedures."

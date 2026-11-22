@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 Money-to-Manpower Score. "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 Money-to-Manpower Score. "
         "Its information advantage comes from connecting procurement evidence to authorized channel economics, "
         "not collecting indiscriminate contact lists. This chapter maps nine plays: public-award timing, entity "
         "verification, deal-registration protection, AWS CPPO private offers, Microsoft CSP provisioning, renewal "
@@ -519,7 +519,7 @@ CHAPTER_8 = {
                     "contractor expense, bad debt, and collection timing in separate reconciled accounts. Gross "
                     "presentation also requires review of whether the desk controls the promised goods or services "
                     "before transfer; a marketplace label alone does not settle principal-versus-agent treatment. "
-                    "Respect the $25,000–$150,000 startup capital range, $5,000–$25,000 monthly operating expense "
+                    "Respect the $15,000–$75,000 startup capital range, $5,000–$25,000 monthly operating expense "
                     "range, and three-to-twelve-month first-deal horizon when buying tools. Start with official "
                     "records and existing partner exports, then purchase enrichment only when a measured bottleneck "
                     "justifies it. Scale connector coverage after match quality and collected contribution improve, "

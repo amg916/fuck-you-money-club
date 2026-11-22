@@ -14,7 +14,7 @@ CHAPTER_12 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, holds Rank #24 with a Money-to-Manpower "
-        "Score of 62/100: capital discipline matters more than auction activity. "
+        "Score of 81/100: capital discipline matters more than auction activity. "
         "This sprint maps four operator plays: auction screening, certificate "
         "bid-down acquisition, redemption tracking, and redeemable-deed or "
         "foreclosure disposition. One full-time owner and two contractors build "
@@ -54,7 +54,7 @@ CHAPTER_12 = {
             "paragraphs": [
                 (
                     "Start Day 1 by separating a launch decision from an investment "
-                    "return promise. Candidate #3 carries a $100,000–$1,500,000 startup "
+                    "return promise. Candidate #3 carries a $15,000–$85,000 startup "
                     "capital range and a six-to-thirty-six-month time to first deal; "
                     "this thirty-day sprint establishes capability rather than assuming "
                     "an auction award or redemption. Map the work into four plays: "

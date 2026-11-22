@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, holds Rank #11 with an 82/100 "
+        "Candidate #26, High-Ticket Brokerage, holds Rank #10 with an 88/100 "
         "Money-to-Manpower Score across 21 mapped plays. Its economic engine is "
         "retained transaction commissions, never the asset value moving through "
         "escrow. The canonical Conservative, Base, and Scaled cases produce "

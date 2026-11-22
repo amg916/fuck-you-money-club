@@ -382,7 +382,7 @@ def build_volume_020_workbook() -> dict:
                         "cash deficit and remaining buffer, keeping borrowing "
                         "proceeds separate from revenue.",
                         "The launch uses $120,000 starting capital, within the "
-                        "$25,000 to $150,000 range. Setup consumes $18,000. "
+                        "$20,000 to $90,000 range. Setup consumes $18,000. "
                         "A ten-week forecast contains $70,000 outflows and $25,000 "
                         "collections, leaving $57,000 cash: $120,000 less $18,000 "
                         "less $45,000. Reserving $20,000 for contingencies leaves "
@@ -413,7 +413,7 @@ def build_volume_020_workbook() -> dict:
                         "and cash availability.",
                         "Management pursues Base as a steady-state target, not a "
                         "promise of first-year collections. The expected first-deal "
-                        "window remains 6 to 18 months. Pricing below $20,000 "
+                        "window remains 3 to 12 months. Pricing below $20,000 "
                         "requires a revised hour budget. Additional contractor hours "
                         "require signed client scope and a forecast retaining "
                         "at least $20,000 unrestricted operating cash.",
@@ -1585,7 +1585,7 @@ def build_volume_020_workbook() -> dict:
                         "Contract Brokering, "
                         "ranked #20 "
                         "of 29. "
-                        "Its 70/100 "
+                        "Its 79/100 "
                         "score comprises "
                         "22 revenue, "
                         "16 margin, "
@@ -1598,8 +1598,7 @@ def build_volume_020_workbook() -> dict:
                         "positions a "
                         "facilities bid "
                         "desk as "
-                        "a Disciplined "
-                        "Specialist Play "
+                        "a High-Leverage Operator Play "
                         "with $120,000 "
                         "committed starting capital.",
                     ),

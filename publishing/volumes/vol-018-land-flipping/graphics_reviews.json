@@ -35,7 +35,7 @@
     "diag-04-parcel-strategy-spread-yields",
     "diag-05-acquisition-statutory-risk-decisions",
     "diag-06-four-person-land-trading-pod",
-    "diag-07-two-hundred-thousand-dollar-startup-stack",
+    "diag-07-forty-five-thousand-dollar-startup-stack",
     "diag-08-thirty-day-land-desk-launch"
   ],
   "cover_graphic_ids": [
@@ -60,7 +60,7 @@
     "diag-04-parcel-strategy-spread-yields",
     "diag-05-acquisition-statutory-risk-decisions",
     "diag-06-four-person-land-trading-pod",
-    "diag-07-two-hundred-thousand-dollar-startup-stack",
+    "diag-07-forty-five-thousand-dollar-startup-stack",
     "diag-08-thirty-day-land-desk-launch"
   ],
   "allowed_statuses": [
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-two-hundred-thousand-dollar-startup-stack": {
+    "diag-07-forty-five-thousand-dollar-startup-stack": {
       "concept_a": {
-        "graphic_id": "diag-07-two-hundred-thousand-dollar-startup-stack",
+        "graphic_id": "diag-07-forty-five-thousand-dollar-startup-stack",
         "graphic_type": "diagram",
-        "label": "Allocate $200,000 Before Making the First Offer",
+        "label": "Allocate a $45,000 Reference Budget Before the First Offer",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-two-hundred-thousand-dollar-startup-stack",
+        "graphic_id": "diag-07-forty-five-thousand-dollar-startup-stack",
         "graphic_type": "diagram",
-        "label": "Allocate $200,000 Before Making the First Offer",
+        "label": "Allocate a $45,000 Reference Budget Before the First Offer",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-two-hundred-thousand-dollar-startup-stack",
+        "graphic_id": "diag-07-forty-five-thousand-dollar-startup-stack",
         "graphic_type": "diagram",
-        "label": "Allocate $200,000 Before Making the First Offer",
+        "label": "Allocate a $45,000 Reference Budget Before the First Offer",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-21T22:24:33Z"
+  "updated_at": "2026-11-22T16:33:24Z"
 }

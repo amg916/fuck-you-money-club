@@ -13,7 +13,7 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 "
+        "Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 "
         "Money-to-Manpower Score across a volume containing 30 mapped plays. Build "
         "the enterprise demand engine around cash reserves, documented opportunity "
         "acceptance, and a small production stack rather than speculative software "

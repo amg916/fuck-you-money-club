@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #23, Enterprise Software Reselling, holds Rank #19 with a 72/100 Money-to-Manpower Score. Its leverage comes from automating evidence movement, not delegating commercial authority to a model. This chapter connects nine mapped plays: account research, qualification, deal registration, quote preparation, marketplace offers, implementation attachment, license reconciliation, renewal orchestration, and distribution referrals. A 2 FT + 3 C pod uses Python workers, signed webhooks, constrained LLM extraction, and named human reviewers to target 70%+ removal of repetitive labor. Canonical annual owner profits remain $24,000 Conservative, $196,000 Base, and $500,000 Scaled; the Scaled case requires 3 FT + 4 C. Instrument run costs, authorization evidence, collections, and recovery paths before expanding automated volume.
+Candidate #23, Enterprise Software Reselling, holds Rank #14 with a 87/100 Money-to-Manpower Score. Its leverage comes from automating evidence movement, not delegating commercial authority to a model. This chapter connects nine mapped plays: account research, qualification, deal registration, quote preparation, marketplace offers, implementation attachment, license reconciliation, renewal orchestration, and distribution referrals. A 2 FT + 3 C pod uses Python workers, signed webhooks, constrained LLM extraction, and named human reviewers to target 70%+ removal of repetitive labor. Canonical annual owner profits remain $24,000 Conservative, $196,000 Base, and $500,000 Scaled; the Scaled case requires 3 FT + 4 C. Instrument run costs, authorization evidence, collections, and recovery paths before expanding automated volume.
 
 ### Key Metrics
 

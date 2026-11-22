@@ -16,7 +16,7 @@ CHAPTER_1 = {
         "Business acquisition buys control of an existing operating company and earns money "
         "from its delivered products or services, not from the purchase price or customer "
         "funds passing through its accounts. Candidate #13, Business Acquisition, holds "
-        "Rank #27 of 29 and scores 57/100: capital and labor intensity constrain otherwise "
+        "Rank #17 of 29 and scores 86/100: capital and labor intensity constrain otherwise "
         "attractive cash generation. This chapter maps seven operating plays, from "
         "distressed_asset_recovery to recurring-contract conversion, and tests each against "
         "collections, staffing, transferability, and debt service. Canonical annual owner "
@@ -30,19 +30,19 @@ CHAPTER_1 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired business sales; exclude client funds and purchase financing",
-            "note": "8% margin; $60,000 owner profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "8% margin; $60,000 owner profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired business sales; exclude client funds and purchase financing",
-            "note": "13.0% margin; $243,750 owner profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 owner profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired business sales; exclude client funds and purchase financing",
-            "note": "18% margin; $540,000 owner profit after interest, before principal repayments; 8 FT + 4 C",
+            "note": "18% margin; $540,000 owner profit after interest, before principal repayments; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -102,14 +102,14 @@ CHAPTER_1 = {
                     "requires eight employees plus four contractors. Twelve people is a real "
                     "management system, not a passive-income side project. These cases imply "
                     "$690,000, $1,631,250, and $2,460,000 respectively of costs and charges within "
-                    "the stated profit boundary. Treat the separate $15,000-$70,000 monthly opex "
+                    "the stated profit boundary. Treat the separate $6,000-$25,000 monthly opex "
                     "planning range as a scope-dependent budget input, not a complete expense "
-                    "reconciliation. Startup capital of $200,000-$1,000,000 must cover the actual "
+                    "reconciliation. Startup capital of $30,000-$120,000 must cover the actual "
                     "equity requirement, transaction spending, liquidity reserve, and unfunded "
                     "transition work; first-deal timing is six to eighteen months. Principal "
                     "amortization, capital purchases, and working-capital expansion can consume "
                     "profit without reducing that scorecard measure. Build a second cash "
-                    "waterfall for those uses. The 57/100 score reflects this burden: revenue "
+                    "waterfall for those uses. The 86/100 score reflects this burden: revenue "
                     "potential contributes 24 points, margin 16, team efficiency seven, startup "
                     "accessibility two, and automation eight. The opportunity is operating "
                     "ownership with leverage, not an accounting shortcut."

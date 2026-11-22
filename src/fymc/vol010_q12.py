@@ -9,21 +9,21 @@ CHAPTER_12 = {
     "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching building an seo empire, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
     "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
     "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Six-Person Search Publishing Sprint Using Search Console, Crawl Cohorts, Affiliate Disclosures, Copyright Records, and Cash-Limited Expansion",
+    "subtitle": "A Four-Person Search Publishing Sprint Using Search Console, Crawl Cohorts, Affiliate Disclosures, Copyright Records, and Cash-Limited Expansion",
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
         "Money-to-Manpower Score. Turn its 30 mapped plays into a controlled "
         "launch: one accountable daily deliverable, one initial domain, 24 "
-        "evidence-backed pages, and a six-person pod comprising 2 FT + 4 C. "
+        "evidence-backed pages, and a four-person pod comprising 1 FT + 3 C. "
         "Authorize $12,000 of first-month expenditure, preserve a separate "
         "$3,000 reserve, and judge early progress through crawlability, indexing, "
         "qualified demand, and attributable economics rather than premature "
         "revenue promises. Day 30/60/90 decisions distinguish technical repair "
         "from weak demand and cap every expansion. Canonical annual owner "
         "profits remain $16,000 Conservative, $159,250 Base, and $405,000 "
-        "Scaled; the final case requires 3 FT + 5 C. These are annual "
+        "Scaled; the final case requires 1 FT + 3 C. These are annual "
         "operating scenarios, not launch-month forecasts."
     ),
     "key_metrics": [
@@ -31,19 +31,19 @@ CHAPTER_12 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C, eight people",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C, eight people",
         },
     ],
     "sections": [

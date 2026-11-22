@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Medical equipment resale converts documented, serviceable assets into buyer-ready clinical capacity, "
-        "not merely inexpensive auction inventory. Candidate #14, Pipeline Rank #22 of 29, scores 64/100 "
+        "not merely inexpensive auction inventory. Candidate #14, Pipeline Rank #20 of 29, scores 85/100 "
         "because capital exposure and specialist labor constrain otherwise attractive spreads. This chapter "
         "maps three operating plays: CON-sensitive decommissioned imaging arbitrage, diagnostic equipment "
         "refurbishment, and veterinary equipment redeployment; the latter two are chapter-level applications, "
@@ -29,19 +29,19 @@ CHAPTER_1 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -348,8 +348,8 @@ CHAPTER_1 = {
                 ),
                 (
                     "Working capital explains why a profitable spreadsheet can still produce a failed trading "
-                    "business. The startup capital range is $75,000 to $400,000, monthly operating expenditure ranges "
-                    "from $5,000 to $22,000, and time to first deal is three to nine months. Those are planning "
+                    "business. The startup capital range is $20,000 to $95,000, monthly operating expenditure ranges "
+                    "from $4,000 to $18,000, and time to first deal is three to nine months. Those are planning "
                     "ranges, not additional deductions layered onto already complete annual cases. Classify recurring "
                     "operating costs separately from inventory acquisition cash flows and reconcile both to the "
                     "expense model. Three months at the upper operating range consumes $66,000 before any equipment "

@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a 63/100 Money-to-Manpower "
+        "Candidate #7, Mineral Rights, ranks #25 with a 81/100 Money-to-Manpower "
         "Score because title work, capital intensity, and depletion resist effortless "
         "scaling. This sprint operationalizes five mapped plays: producing NMA "
         "acquisitions, NPRI acquisitions, pooling-docket curve-jumping, owned-asset "
@@ -90,7 +90,7 @@ CHAPTER_12 = {
                     "owner profit. Four legal hours buy issue spotting and "
                     "document scoping, not an unlimited title opinion. Any "
                     "closing-specific work needs a separate written estimate "
-                    "before commitment. Candidate #7 requires $150,000–$2,000,000 "
+                    "before commitment. Candidate #7 requires $15,000–$75,000 "
                     "of startup capital and has a stated $1,000–$12,000 "
                     "monthly operating range; the sprint ceiling is a chosen "
                     "control inside that range. After any purchase, retain "
@@ -566,7 +566,7 @@ CHAPTER_12 = {
                     "Day 30 is a capital-allocation decision, "
                     "not a mandatory transaction date. Candidate "
                     "#7's expected first-deal interval is "
-                    "6–24 months, so zero closings at "
+                    "3–9 months, so zero closings at "
                     "Days 30, 60, or 90 is compatible "
                     "with a successful launch. The Day-30 "
                     "Scale threshold is forty screened "

@@ -6,7 +6,7 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-first-tax-lien-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in tax lien investing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–36 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in tax lien investing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–10 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "County Auction Signals, Certificate Assignments, Texas Redemption Premiums, and Post-Tyler Surplus Controls",
@@ -14,7 +14,7 @@ CHAPTER_6 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
-        "62/100. Source executable claims rather than impressive advertised rates. This "
+        "81/100. Source executable claims rather than impressive advertised rates. This "
         "chapter maps four operator plays: primary certificate auctions, county-held "
         "certificate purchases, documented secondary assignments, and redeemable-deed "
         "auctions. A one-full-time, two-contractor pod turns county records, auction "
@@ -479,7 +479,7 @@ CHAPTER_6 = {
                     "as a hiring budget."
                 ),
                 (
-                    "Use the $100,000–$1,500,000 startup capital range to design a "
+                    "Use the $15,000–$85,000 startup capital range to design a "
                     "deployment schedule, not to infer a promised portfolio yield. "
                     "A hypothetical $100,000 deployment earning eight percent for a "
                     "full year would generate $8,000 simple interest before costs, "

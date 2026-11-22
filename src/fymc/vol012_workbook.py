@@ -1147,11 +1147,8 @@ def build_volume_012_workbook() -> dict:
                         "variance without replacing canonical reference "
                         "values or presenting equipment transaction "
                         "value as recognized brokerage revenue.",
-                        "Candidate #11 ranks #12 of 29 with "
-                        "81/100: revenue potential 22, margin "
-                        "potential 20, team efficiency 18, startup "
-                        "accessibility 11, and automation potential "
-                        "10. Reference commission revenue and "
+                        "Candidate #11 ranks #16 of 29 with "
+                        "86/100: revenue potential 23, margin potential 23, team efficiency 18, startup accessibility 12, and automation potential 10. Reference commission revenue and "
                         "owner profit remain $100,000/$25,000, "
                         "$450,000/$157,500, and $800,000/$360,000. "
                         "Forecast changes receive a separate dated "

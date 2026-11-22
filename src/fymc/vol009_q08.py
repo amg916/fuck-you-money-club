@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 "
+        "Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 "
         "Money-to-Manpower Score across the series and its 30 mapped plays. This "
         "chapter turns public records, commercial enrichment, and CRM instrumentation "
         "into a defensible enterprise account queue. Build around identifiable "

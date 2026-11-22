@@ -222,7 +222,7 @@ def build_volume_019_workbook() -> dict:
                         (
                             "Pursue with a $2,000 discovery budget and no vendor purchase until "
                             "authorization and deposit evidence are complete. Enterprise Software "
-                            "Reselling is candidate 23, ranked 19 of 29, with a 72/100 "
+                            "Reselling is candidate 23, ranked 19 of 29, with a 87/100 "
                             "Money-to-Manpower Score. That disciplined specialist profile favors "
                             "repeatable deployments over broad catalog selling or speculative inventory commitments."
                         ),
@@ -408,8 +408,8 @@ def build_volume_019_workbook() -> dict:
                             "funded operating plan."
                         ),
                         (
-                            "The candidate range is $25,000 to $150,000 startup capital, $5,000 "
-                            "to $25,000 monthly operating expense, and 3 to 12 months to "
+                            "The candidate range is $15,000 to $75,000 startup capital, $5,000 "
+                            "to $25,000 monthly operating expense, and 3 to 9 months to "
                             "first deal. A $150,000 plan using $30,000 for six months of "
                             "pre-deal burn and $112,000 for two concurrent buffered deals leaves "
                             "only $8,000 before other setup costs."
@@ -1355,9 +1355,7 @@ def build_volume_019_workbook() -> dict:
                             "uncollected invoices for owner profit."
                         ),
                         (
-                            "Scores are revenue potential 23, margin potential 14, "
-                            "team efficiency 15, startup accessibility 9, and automation "
-                            "potential 11, totaling 72. Annual benchmarks remain "
+                            "Scores are revenue potential 24, margin potential 23, team efficiency 17, startup accessibility 11, and automation potential 12. Annual benchmarks remain "
                             "$300,000/$24,000, $1,400,000/$196,000, and $2,500,000/$500,000 "
                             "for gross revenue/owner net profit. The weekly forecast "
                             "shows deviations separately and retains the corresponding "

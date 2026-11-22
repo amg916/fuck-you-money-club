@@ -305,7 +305,7 @@
       "subtitle": "Commission-Only Heavy Equipment, CNC and Fleet Deals: UCC Lien Clearance, Inspection Evidence, Escrow Settlement and Buyer Matching",
       "layout_template": "opportunity_overview",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #12 of 29 with an 81/100 Money-to-Manpower Score. The operator earns commissions for matching equipment owners with qualified buyers and coordinating documented transfers, not for owning the underlying transaction value. Seven mapped plays structure this chapter: Telegram signal capture, retirement sourcing, specification matching, buyer alerts, inspection coordination, lien-clearance orchestration, and fleet disposition packaging. Only the first carries a supplied catalog identifier; the remaining six are chapter-defined operating mappings. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled. Durability comes from accurate machine records, reachable decision-makers, verified payout instructions, and repeat buyers. Beginner hype mistakes large machine prices for broker revenue and treats listings as saleable inventory.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #16 of 29 with an 86/100 Money-to-Manpower Score. The operator earns commissions for matching equipment owners with qualified buyers and coordinating documented transfers, not for owning the underlying transaction value. Seven mapped plays structure this chapter: Telegram signal capture, retirement sourcing, specification matching, buyer alerts, inspection coordination, lien-clearance orchestration, and fleet disposition packaging. Only the first carries a supplied catalog identifier; the remaining six are chapter-defined operating mappings. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled. Durability comes from accurate machine records, reachable decision-makers, verified payout instructions, and repeat buyers. Beginner hype mistakes large machine prices for broker revenue and treats listings as saleable inventory.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -603,7 +603,7 @@
           "paragraphs": [
             "The canonical cases are fixed commission businesses, not forecasts of equipment resale turnover. Conservative revenue is $100,000 at a 25% net margin, producing $25,000 annual owner net profit with one full-time operator and three contractors. Base revenue is $450,000 at 35.0%, producing $157,500 with the same stated team. Scaled revenue is $800,000 at 45%, producing $360,000 with two full-time people and four contractors, six people altogether. Subtracting owner profit from commission revenue implies total annual costs of $75,000, $292,500, and $440,000 respectively. An illustrative common 5% commission makes the underlying asset volume $2 million, $9 million, and $16 million. At $200,000 per completed machine sale, that means ten, forty-five, and eighty closings annually; larger assets or different negotiated fees change deal counts without changing the canonical scorecard. Do not add buyer funds, creditor payoffs, or inspection invoices to those revenue totals. Likewise, the seven operating plays are stages and capabilities supporting these closings, not seven independent income streams. Count each earned commission once against a unique deal identifier and reconcile every reversal to that original entry.",
             "Startup capital ranges from $10,000 to $75,000, monthly operating expense from $2,500 to $14,000, and time to the first deal from two to nine months. Those ranges are planning inputs, not interchangeable promises of runway. Nine months at the lowest stated monthly burn consumes $22,500 before exceptional travel, setup, or transaction costs; a $10,000 starting balance cannot fund that path without lower spending or another documented source of cash. Annualizing the monthly range gives $30,000 to $168,000, which does not describe the complete cost stack implied by the Base or Scaled cases. Treat that range as baseline overhead only when using these scenarios, and separately budget all transaction-linked labor, selling costs, travel, insurance, and other operating charges so the annual totals reconcile. The contractor count does not specify full-time equivalents or compensation. Build role-based scopes for technical inspection, documentation support, and marketing rather than assuming three contractors cost nothing between closings. Maintain a thirteen-week cash forecast showing committed outflows, uncertain commission dates, and downside delays. Signed mandates and buyer inquiries belong in pipeline reports; neither is spendable cash nor earned commission without the required contractual performance.",
-            "The 81/100 score comprises revenue potential of 22, profit margin potential of 20, team efficiency of 18, startup accessibility of 11, and automation potential of 10. Interpret that score as the supplied candidate ranking, not a measured probability of success. Inventory matching and buyer alerts offer leverage when structured records exist: normalize manufacturer, model, year, serial identifier, hours, location, price authority, ownership status, and inspection date. Use HubSpot or Airtable for a controlled pipeline, with links to evidence rather than unverified copied claims. Automation should propose matches and reminders; the operator still resolves inconsistent identifiers, stale mandates, and unclear buyer requirements. Track repeat-buyer share, verified mandates per sourcing hour, days from inspection to decision, closing rate by asset class, and commission reversals. A small team scales through repeatable diligence and reusable buyer knowledge, not through promising to know every machine. Keep fallback inspection specialists and alternative qualified buyers for each active category. Stop adding listings when unresolved ownership or condition exceptions exceed the team's ability to investigate them. The moat is a reliable path from specific buyer need to evidenced transfer, with enough cash discipline to survive lumpy commissions."
+            "The 86/100 score comprises revenue potential of 22, profit margin potential of 20, team efficiency of 18, startup accessibility of 11, and automation potential of 10. Interpret that score as the supplied candidate ranking, not a measured probability of success. Inventory matching and buyer alerts offer leverage when structured records exist: normalize manufacturer, model, year, serial identifier, hours, location, price authority, ownership status, and inspection date. Use HubSpot or Airtable for a controlled pipeline, with links to evidence rather than unverified copied claims. Automation should propose matches and reminders; the operator still resolves inconsistent identifiers, stale mandates, and unclear buyer requirements. Track repeat-buyer share, verified mandates per sourcing hour, days from inspection to decision, closing rate by asset class, and commission reversals. A small team scales through repeatable diligence and reusable buyer knowledge, not through promising to know every machine. Keep fallback inspection specialists and alternative qualified buyers for each active category. Stop adding listings when unresolved ownership or condition exceptions exceed the team's ability to investigate them. The moat is a reliable path from specific buyer need to evidenced transfer, with enough cash discipline to survive lumpy commissions."
           ],
           "table": {
             "caption": "Canonical Annual Economics with Explicitly Illustrative Five Percent Deal Math",
@@ -955,7 +955,7 @@
           "video_id": "fP5ysbGB2H0"
         }
       ],
-      "revision": "0abbe4dfc3d1a668"
+      "revision": "76e3250c18bec2b7"
     },
     {
       "id": "Q2",
@@ -969,7 +969,7 @@
       "subtitle": "Seller Mandates, Buyer Authority, UCC Lien Releases, Fedwire Settlement & Commission-Protected Equipment Closings",
       "layout_template": "executive_summary",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #12 with an 81/100 Money-to-Manpower Score because disciplined intermediaries monetize difficult transfers without owning the machines. This chapter maps seven operating plays: seller disposition, buyer sourcing, fleet aggregation, CNC replacement sourcing, lien-coordinated sales, export matching, and ego_bait_directory_badge_arbitrage. Each starts with an identifiable fee obligor, documented purchasing authority, and a settlement instruction that protects the commission. Conservative, Base, and Scaled annual owner profits are $25,000, $157,500, and $360,000, respectively, on broker commissions alone. Equipment purchase prices are transaction value, never operator revenue. Build payment certainty through verified counterparties, independent inspection, lender payoff letters, authenticated bank instructions, and expressly accepted disbursement directions before revealing an actionable introduction or releasing equipment.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 Money-to-Manpower Score because disciplined intermediaries monetize difficult transfers without owning the machines. This chapter maps seven operating plays: seller disposition, buyer sourcing, fleet aggregation, CNC replacement sourcing, lien-coordinated sales, export matching, and ego_bait_directory_badge_arbitrage. Each starts with an identifiable fee obligor, documented purchasing authority, and a settlement instruction that protects the commission. Conservative, Base, and Scaled annual owner profits are $25,000, $157,500, and $360,000, respectively, on broker commissions alone. Equipment purchase prices are transaction value, never operator revenue. Build payment certainty through verified counterparties, independent inspection, lender payoff letters, authenticated bank instructions, and expressly accepted disbursement directions before revealing an actionable introduction or releasing equipment.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -1606,7 +1606,7 @@
           "video_id": "1B6uxG5WNzQ"
         }
       ],
-      "revision": "e3ae5237a982bebb"
+      "revision": "b3af4ef2e8e9671b"
     },
     {
       "id": "Q3",
@@ -1620,7 +1620,7 @@
       "subtitle": "Commission-Only Cohorts, UCC Lien Releases, Escrow Payout Locks, FMCSA Lead Economics & Cash-Runway Stress Tests",
       "layout_template": "financial_breakdown",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #12 with an 81/100 Money-to-Manpower Score. Its economics depend on collected commissions, not the equipment value moving through escrow. This chapter reconciles annual owner profit of $25,000 Conservative, $157,500 Base, and $360,000 Scaled through explicit delivery, acquisition, reversal, settlement, and overhead deductions. Seven chapter-level mapped plays connect the supplied FMCSA trigger funnel with CNC replacement matching, construction disposal mandates, fleet refresh sourcing, lien-resolution coordination, inspection coordination, and buyer-alert reactivation. Illustrative closing cohorts produce the canonical revenue totals without counting merchant principal. A separate cash model prices pre-closing advances, receivable days, payout locks, and concentrated losses. Operators leave with contribution hurdles, liquidity targets, and a release sequence that protects commission collection.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 Money-to-Manpower Score. Its economics depend on collected commissions, not the equipment value moving through escrow. This chapter reconciles annual owner profit of $25,000 Conservative, $157,500 Base, and $360,000 Scaled through explicit delivery, acquisition, reversal, settlement, and overhead deductions. Seven chapter-level mapped plays connect the supplied FMCSA trigger funnel with CNC replacement matching, construction disposal mandates, fleet refresh sourcing, lien-resolution coordination, inspection coordination, and buyer-alert reactivation. Illustrative closing cohorts produce the canonical revenue totals without counting merchant principal. A separate cash model prices pre-closing advances, receivable days, payout locks, and concentrated losses. Operators leave with contribution hurdles, liquidity targets, and a release sequence that protects commission collection.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -2235,7 +2235,7 @@
           "video_id": "R9dHZ4P7yp0"
         }
       ],
-      "revision": "6af13c2613d68237"
+      "revision": "94134e360b0de1e6"
     },
     {
       "id": "Q4",
@@ -2249,7 +2249,7 @@
       "subtitle": "Commission-Only Equipment Mandates, UCC Lien Clearance, Independent Escrow, and a Twelve-Layer Operating Stack",
       "layout_template": "comparison_table",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. Build around earned commissions, not equipment ownership: protect 60% of startup cash, buy independent evidence, and keep settlement principal outside operating accounts. This chapter maps seven operating plays: construction mandates, CNC matching, fleet disposition, industrial surplus alerts, buyer-side procurement, cross-border settlement coordination, and authorized-distributor grey-market diversion. Only the last arrives with a supplied canonical play identifier; the other six are chapter-local applications. Annual owner net profit remains $25,000 Conservative, $157,500 Base, and $360,000 Scaled. A twelve-layer stack, capital-use matrix, and evidence-first launch sequence show what to purchase, what to defer, and when a long commission cycle makes the proposed cash commitment untenable.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. Build around earned commissions, not equipment ownership: protect 60% of startup cash, buy independent evidence, and keep settlement principal outside operating accounts. This chapter maps seven operating plays: construction mandates, CNC matching, fleet disposition, industrial surplus alerts, buyer-side procurement, cross-border settlement coordination, and authorized-distributor grey-market diversion. Only the last arrives with a supplied canonical play identifier; the other six are chapter-local applications. Annual owner net profit remains $25,000 Conservative, $157,500 Base, and $360,000 Scaled. A twelve-layer stack, capital-use matrix, and evidence-first launch sequence show what to purchase, what to defer, and when a long commission cycle makes the proposed cash commitment untenable.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -2869,7 +2869,7 @@
           "video_id": "POHJMjG37XM"
         }
       ],
-      "revision": "6e5193cbdcaa087f"
+      "revision": "30d0eb831e0f68cf"
     },
     {
       "id": "Q5",
@@ -2883,7 +2883,7 @@
       "subtitle": "UCC Lien Clearance, CNC Acceptance Tests, Escrow Waterfalls, CON-Sensitive Imaging Assets, and Commission-Loss Circuit Breakers",
       "layout_template": "expert_insights",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. Its leverage disappears when a broker mistakes possession for title, a running spindle for proven accuracy, or escrow funding for earned commission. This chapter maps seven operating plays: heavy-construction consignment, CNC matching, fleet remarketing, industrial liquidation, domestic inventory matching, export buyer sourcing, and CON-sensitive decommissioned imaging brokerage. These are chapter operating categories, not seven supplied catalog identifiers. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled, exclusively from broker commission revenue. The question's 80% framing is not an established failure statistic. Use serial-level evidence, commission waterfalls, inspection stop conditions, and exception telemetry to contain defects, fraud, clawbacks, licensing exposure, and platform suspension before a single disputed machine consumes the year's earnings.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. Its leverage disappears when a broker mistakes possession for title, a running spindle for proven accuracy, or escrow funding for earned commission. This chapter maps seven operating plays: heavy-construction consignment, CNC matching, fleet remarketing, industrial liquidation, domestic inventory matching, export buyer sourcing, and CON-sensitive decommissioned imaging brokerage. These are chapter operating categories, not seven supplied catalog identifiers. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled, exclusively from broker commission revenue. The question's 80% framing is not an established failure statistic. Use serial-level evidence, commission waterfalls, inspection stop conditions, and exception telemetry to contain defects, fraud, clawbacks, licensing exposure, and platform suspension before a single disputed machine consumes the year's earnings.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -3497,7 +3497,7 @@
           "video_id": "ypiqyyCR9MI"
         }
       ],
-      "revision": "8db2dbfd046fe3d9"
+      "revision": "063e700be56468ea"
     },
     {
       "id": "Q6",
@@ -3511,7 +3511,7 @@
       "subtitle": "Mine Fleet Rotations, CNC Replacement Orders and Plant Closures; Convert Verified Demand Through UCC Releases, Independent Inspection and Escrow",
       "layout_template": "step_by_step_sop",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. The opportunity is verified matching, not speculative equipment ownership. This chapter develops seven sourcing plays: fleet rotation, CNC replacement, plant closure, rental refresh, lender-directed disposition, buyer-wanted matching, and the mapped cell-tower, rooftop and billboard easement strip-out adjacency. The last requires separate property-rights authority and stays outside equipment commission projections. Build buyer specifications first, mine dated seller triggers, and earn mandates through documented inspection, lien clearance and settlement. Canonical annual owner profits are $25,000 Conservative, $157,500 Base and $360,000 Scaled. A measured 2–9 month launch targets the first 3–10 completed transactions without treating asset value, escrow balances or prospective commissions as earned brokerage revenue.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. The opportunity is verified matching, not speculative equipment ownership. This chapter develops seven sourcing plays: fleet rotation, CNC replacement, plant closure, rental refresh, lender-directed disposition, buyer-wanted matching, and the mapped cell-tower, rooftop and billboard easement strip-out adjacency. The last requires separate property-rights authority and stays outside equipment commission projections. Build buyer specifications first, mine dated seller triggers, and earn mandates through documented inspection, lien clearance and settlement. Canonical annual owner profits are $25,000 Conservative, $157,500 Base and $360,000 Scaled. A measured 2–9 month launch targets the first 3–10 completed transactions without treating asset value, escrow balances or prospective commissions as earned brokerage revenue.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -4106,7 +4106,7 @@
           "video_id": "w3saQAgnyLI"
         }
       ],
-      "revision": "b0618f5befa39f3c"
+      "revision": "d0e5252bc69ebe5b"
     },
     {
       "id": "Q7",
@@ -4120,7 +4120,7 @@
       "subtitle": "Serial-Level Intake, UCC Lien Releases, Independent Inspections, Escrow Instructions, SQLite Event Receipts, and Commission-Only Cash Reconciliation",
       "layout_template": "research_exhibit",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. This chapter converts seven mapped plays into one controlled production system: lender dispositions, CNC matching, fleet breakups, plant relocations, inspection-led recovery, buyer alerts, and queue-informed site intelligence. Six are chapter-defined operating applications; the seventh retains its supplied cross-track identifier. The ledger recognizes broker commissions, never equipment principal or land-option value. Canonical annual owner profits remain $25,000 Conservative, $157,500 Base, and $360,000 Scaled. A six-module SQLite reference serializes writes, rejects reused event identifiers with changed payloads, and reconciles paired postings. The worked cohort demonstrates $112,500 quarterly commissions and $39,375 operating cash generation from a seasoned pipeline, while separating that steady-state illustration from a cold-start launch.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. This chapter converts seven mapped plays into one controlled production system: lender dispositions, CNC matching, fleet breakups, plant relocations, inspection-led recovery, buyer alerts, and queue-informed site intelligence. Six are chapter-defined operating applications; the seventh retains its supplied cross-track identifier. The ledger recognizes broker commissions, never equipment principal or land-option value. Canonical annual owner profits remain $25,000 Conservative, $157,500 Base, and $360,000 Scaled. A six-module SQLite reference serializes writes, rejects reused event identifiers with changed payloads, and reconciles paired postings. The worked cohort demonstrates $112,500 quarterly commissions and $39,375 operating cash generation from a seasoned pipeline, while separating that steady-state illustration from a cold-start launch.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -4728,7 +4728,7 @@
           "video_id": "ALXdY2bAHV0"
         }
       ],
-      "revision": "48e639c3f6bdd170"
+      "revision": "71bbd39756927efd"
     },
     {
       "id": "Q8",
@@ -4742,7 +4742,7 @@
       "subtitle": "State UCC Searches, Fleet Identity APIs, OEM Diagnostics, Inventory Matching, and Evidence-Controlled Escrow Settlement",
       "layout_template": "resource_directory",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. Its information advantage comes from connecting asset identity, seller authority, buyer demand, and settlement evidence before competitors connect the same records. This chapter maps seven operating plays: construction sourcing, CNC sourcing, fleet sourcing, liquidation sourcing, buyer matching, lien-clearance coordination, and escrow/export coordination. A 1 FT + 3 C pod uses official registries for authority, licensed commercial feeds for discovery, and field diagnostics for condition. Conservative, Base, and Scaled annual owner profits remain $25,000, $157,500, and $360,000. Recognized revenue is broker commissions only, never equipment transaction value. The directory and workflow below turn fragmented records into timestamped evidence without treating a search result as ownership proof.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. Its information advantage comes from connecting asset identity, seller authority, buyer demand, and settlement evidence before competitors connect the same records. This chapter maps seven operating plays: construction sourcing, CNC sourcing, fleet sourcing, liquidation sourcing, buyer matching, lien-clearance coordination, and escrow/export coordination. A 1 FT + 3 C pod uses official registries for authority, licensed commercial feeds for discovery, and field diagnostics for condition. Conservative, Base, and Scaled annual owner profits remain $25,000, $157,500, and $360,000. Recognized revenue is broker commissions only, never equipment transaction value. The directory and workflow below turn fragmented records into timestamped evidence without treating a search result as ownership proof.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -5446,7 +5446,7 @@
           "video_id": "S8sjPgCnSag"
         }
       ],
-      "revision": "af4bd09925dc09ec"
+      "revision": "a1dddf865f2e0d06"
     },
     {
       "id": "Q9",
@@ -5460,7 +5460,7 @@
       "subtitle": "Dealer Boundaries, UCC Lien Releases, CNC Warranty Language, Independent Escrow, Export Controls & Permission-Based Buyer Scripts",
       "layout_template": "legal_compliance_notes",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. This chapter translates statutory boundaries into seven mapped operator plays: seller representation, buyer mandates, heavy-construction resale, CNC matching, fleet remarketing, industrial liquidation, and export coordination. Build the commission agreement around the actual transaction: who owns the machine, who can release its liens, which license covers the activity, and what evidence permits settlement. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled; recognized revenue includes broker commissions only. A 1 FT + 3 C pod can operate the first two cases by separating commercial decisions, inspection, documentation, and logistics while keeping client purchase funds with an independent settlement provider.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. This chapter translates statutory boundaries into seven mapped operator plays: seller representation, buyer mandates, heavy-construction resale, CNC matching, fleet remarketing, industrial liquidation, and export coordination. Build the commission agreement around the actual transaction: who owns the machine, who can release its liens, which license covers the activity, and what evidence permits settlement. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled; recognized revenue includes broker commissions only. A 1 FT + 3 C pod can operate the first two cases by separating commercial decisions, inspection, documentation, and logistics while keeping client purchase funds with an independent settlement provider.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -6099,7 +6099,7 @@
           "video_id": "F80Wku6kGE0"
         }
       ],
-      "revision": "c4139919e0021013"
+      "revision": "b1ff14290e87fe96"
     },
     {
       "id": "Q10",
@@ -6113,7 +6113,7 @@
       "subtitle": "Python Inventory Matching, Verified Buyer Alerts, UCC Lien Releases, Escrow Evidence, and Seven Small-Pod Distribution Plays",
       "layout_template": "case_study_walkthrough",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #12 with an 81/100 Money-to-Manpower Score. This chapter operationalizes seven mapped plays: inventory intake, equipment research, inventory matching, buyer alerts, buyer qualification, settlement orchestration, and distribution recycling. A 1 FT + 3 C pod uses Python workers, authenticated webhooks, structured LLM extraction, and evidence-linked review queues to target 70%+ less repetitive labor without delegating equipment representations or payment decisions. Conservative, Base, and Scaled annual owner profits remain $25,000, $157,500, and $360,000 respectively; revenue means broker commissions, never equipment transaction value. The design connects inspected machines to qualified buyers, measures automation after rework, and turns verified availability into permissioned distribution rather than unreliable listing volume.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 Money-to-Manpower Score. This chapter operationalizes seven mapped plays: inventory intake, equipment research, inventory matching, buyer alerts, buyer qualification, settlement orchestration, and distribution recycling. A 1 FT + 3 C pod uses Python workers, authenticated webhooks, structured LLM extraction, and evidence-linked review queues to target 70%+ less repetitive labor without delegating equipment representations or payment decisions. Conservative, Base, and Scaled annual owner profits remain $25,000, $157,500, and $360,000 respectively; revenue means broker commissions, never equipment transaction value. The design connects inspected machines to qualified buyers, measures automation after rework, and turns verified availability into permissioned distribution rather than unreliable listing volume.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -6212,7 +6212,7 @@
           "heading": "2. Make inventory matching and buyer alerts explainable, bounded, and cheap",
           "epistemic_status": "illustrative_model",
           "paragraphs": [
-            "Use deterministic matching before asking an LLM to explain anything. For CNC equipment, hard filters can include travel envelope, spindle interface, electrical supply, control generation, installed axis capability, and buyer floor-loading limits. For excavators, include operating weight, transport dimensions, attachment compatibility, hours evidence, and geographic delivery constraints. Fleet records need vehicle-specific title, registration, and odometer handling where applicable; an industrial asset record is not a substitute. Represent absent evidence with a dedicated missing-data state and route it to a reviewer instead of inventing a value. Normalize units explicitly, preserving the original measurement and conversion method. A machine described as three-phase must not automatically match every three-phase installation. After hard constraints pass, an illustrative score can weight application fit at 40%, delivered-cost fit at 25%, inspection evidence at 20%, and timing at 15%. These weights are tuning assumptions, not the candidate's 81/100 scorecard. Return the components with each recommendation. Keep transport estimates separate from machine price, label their quote dates, and require refreshing when route, dimensions, permits, or loading arrangements change. Test every release against previously rejected near-matches.",
+            "Use deterministic matching before asking an LLM to explain anything. For CNC equipment, hard filters can include travel envelope, spindle interface, electrical supply, control generation, installed axis capability, and buyer floor-loading limits. For excavators, include operating weight, transport dimensions, attachment compatibility, hours evidence, and geographic delivery constraints. Fleet records need vehicle-specific title, registration, and odometer handling where applicable; an industrial asset record is not a substitute. Represent absent evidence with a dedicated missing-data state and route it to a reviewer instead of inventing a value. Normalize units explicitly, preserving the original measurement and conversion method. A machine described as three-phase must not automatically match every three-phase installation. After hard constraints pass, an illustrative score can weight application fit at 40%, delivered-cost fit at 25%, inspection evidence at 20%, and timing at 15%. These weights are tuning assumptions, not the candidate's 86/100 scorecard. Return the components with each recommendation. Keep transport estimates separate from machine price, label their quote dates, and require refreshing when route, dimensions, permits, or loading arrangements change. Test every release against previously rejected near-matches.",
             "Give the LLM a narrow extraction and drafting role. Send selected inspection text or seller-authorized specifications with field definitions, allowed units, evidence identifiers, and an explicit requirement to leave unsupported attributes unpopulated. Validate returned JSON against an allowlist of keys and expected Python types; reject extra fields, impossible ranges, contradictory units, and uncited condition claims. Schema-conforming output can still be wrong, so compare high-consequence fields with source evidence and require technical review before publication. Never provide bank instructions, complete identity packets, or unrestricted CRM exports merely to improve a description. An illustrative extraction run using 2,000 input tokens at $1.50 per million and 500 output tokens at $6.00 per million costs $0.006 in model usage. Add an assumed $0.004 for metered processing and storage to obtain $0.010 per run before fixed costs and labor. At 3,000 runs, that variable budget is $30; assumed monthly hosting of $20 and monitoring of $25 bring the narrow pipeline subtotal to $75. Verify actual vendor rates and include retries, failed runs, review labor, CRM subscriptions, inspection, and acquisition costs in the operating ledger.",
             "Buyer alerts should render approved facts, not generate fresh representations at send time. Store a reviewed equipment snapshot, template version, audience segment, suppression status, and availability expiry. The broker can authorize a narrowly defined campaign class once, such as domestic CNC matches containing only reviewed specifications and an invitation to inspect. A changed warranty, export destination, payment request, or unsupported performance statement requires transaction-specific review. Before each send, recheck availability and recipient suppression; a queued message is not permission to ignore later changes. Apply frequency caps and deduplicate by recipient, equipment identifier, and material version. Use Postmark or Amazon SES delivery events to separate bounces from substantive responses, without treating opens as proof of buying intent. Commercial email must satisfy applicable 15 U.S.C. 7704 requirements, including accurate routing information, a nondeceptive subject, required identification, a valid postal address, and a working opt-out process. Honor opt-outs within the statutory period and suppress immediately operationally. An alert should explain why the machine matches, disclose consequential evidence gaps, and offer a direct path to a broker. Measure qualified replies and inspection bookings rather than celebrating message volume."
           ],
@@ -6703,7 +6703,7 @@
           "video_id": "_yl0gY1cWj8"
         }
       ],
-      "revision": "d5fcca61ef8946e7"
+      "revision": "2df23e880eade49d"
     },
     {
       "id": "Q11",
@@ -6717,7 +6717,7 @@
       "subtitle": "Seven Equipment Brokerage Plays, UCC Lien Releases, Escrow Controls, Contractor SLAs & Transferable Commission Books",
       "layout_template": "action_checklist",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. Its seven mapped operating plays become transferable assets only when seller mandates, inspection evidence, lien clearance, inventory matching, buyer alerts, commission contracts, and escrow settlement share one accountable record. Build the initial 1 FT + 3 C pod around founder judgment and specialist deliverables; expand to 2 FT + 4 C only when earned commissions support the added capacity. Canonical annual owner profits are $25,000 Conservative, $157,500 Base, and $360,000 Scaled. This chapter specifies contractor economics, weekly acceptance metrics, 25% concentration ceilings, accrual accounting, and written IP transfers. Exit value comes from repeatable earnings after realistic replacement labor, not equipment transaction value or an attractive contact list.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. Its seven mapped operating plays become transferable assets only when seller mandates, inspection evidence, lien clearance, inventory matching, buyer alerts, commission contracts, and escrow settlement share one accountable record. Build the initial 1 FT + 3 C pod around founder judgment and specialist deliverables; expand to 2 FT + 4 C only when earned commissions support the added capacity. Canonical annual owner profits are $25,000 Conservative, $157,500 Base, and $360,000 Scaled. This chapter specifies contractor economics, weekly acceptance metrics, 25% concentration ceilings, accrual accounting, and written IP transfers. Exit value comes from repeatable earnings after realistic replacement labor, not equipment transaction value or an attractive contact list.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -7296,7 +7296,7 @@
           "video_id": "4ZnfP4pS7A8"
         }
       ],
-      "revision": "bc40e6ca45f4dab0"
+      "revision": "f195fc0a07788be3"
     },
     {
       "id": "Q12",
@@ -7310,7 +7310,7 @@
       "subtitle": "A Four-Person Commission-Only Sprint Across Construction, CNC, Fleet and Industrial Assets, With UCC Lien Releases, Inspection Evidence and Escrow Settlement",
       "layout_template": "thirty_day_plan",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. Launch seven mapped plays through one controlled funnel: construction resale, CNC resale, fleet resale, industrial surplus, buyer mandates, seller dispositions, and repeat-buyer alerts. One full-time owner and three contractors validate authority, inspect assets, clear liens, and prepare independent escrow settlement without buying inventory. The first month buys verified supply and executable demand, not an artificial closing deadline: first deals typically require 2–9 months. Cap cumulative launch spending at $7,500, preserve a separate operating reserve, and use explicit Day 30/60/90 thresholds to stop, repair, or expand individual plays. Canonical annual owner profit remains $25,000 Conservative, $157,500 Base, and $360,000 Scaled; all revenue figures represent broker commissions, never equipment sale proceeds.",
+      "executive_summary": "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. Launch seven mapped plays through one controlled funnel: construction resale, CNC resale, fleet resale, industrial surplus, buyer mandates, seller dispositions, and repeat-buyer alerts. One full-time owner and three contractors validate authority, inspect assets, clear liens, and prepare independent escrow settlement without buying inventory. The first month buys verified supply and executable demand, not an artificial closing deadline: first deals typically require 2–9 months. Cap cumulative launch spending at $7,500, preserve a separate operating reserve, and use explicit Day 30/60/90 thresholds to stop, repair, or expand individual plays. Canonical annual owner profit remains $25,000 Conservative, $157,500 Base, and $360,000 Scaled; all revenue figures represent broker commissions, never equipment sale proceeds.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -7965,11 +7965,11 @@
           "video_id": "60uc8gnDCiY"
         }
       ],
-      "revision": "e74ee41c9a2f50c0"
+      "revision": "50fc3323ad4d29d7"
     }
   ],
   "chapter_count": 12,
   "total_word_count": 76561,
   "epistemic_note": "Educational and research material grounded in documented public authorities and attributed practitioner sources; verify jurisdiction-specific licensing, tax, and contracting rules independently.",
-  "updated_at": "2026-11-21T21:34:59Z"
+  "updated_at": "2026-11-22T16:33:21Z"
 }

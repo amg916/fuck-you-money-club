@@ -580,40 +580,42 @@ def build_volume_020_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-startup-capital-reference-budget",
             "stacked_comparison",
-            "Allocate Startup Cash Before Pursuit Volume",
-            "Four buckets across $25,000, $100,000, and $150,000 funding plans.",
+            "Allocate a $55,000 Reference Startup Budget",
+            "Four buckets across $20,000 lean, $55,000 reference, and $90,000 expanded plans.",
             4,
             "illustrative_model",
             (
-                "Numeric bar values represent the selected $100,000 startup plan "
-                "in USD. Each stage also specifies its $25,000 lean-plan and "
-                "$150,000 upper-plan allocation. These are funding alternatives, "
+                "Numeric bar values represent the $55,000 central/reference startup "
+                "plan in USD, inside the canonical $20,000–$90,000 startup capital "
+                "range. Each stage also specifies its $20,000 lean-plan and "
+                "$90,000 expanded-plan allocation. These are funding alternatives, "
                 "not the Conservative, Base, or Scaled annual earnings scenarios."
             ),
             (
-                "Lean: $10,000 + $5,000 + $6,000 + $4,000 = $25,000. Selected: "
-                "$40,000 + $20,000 + $25,000 + $15,000 = $100,000. Upper: "
-                "$60,000 + $30,000 + $38,000 + $22,000 = $150,000."
+                "Lean: $8,000 + $4,000 + $5,000 + $3,000 = $20,000. Reference: "
+                "$22,000 + $11,000 + $14,000 + $8,000 = $55,000. Expanded: "
+                "$36,000 + $18,000 + $23,000 + $13,000 = $90,000."
             ),
             [
                 (
                     "Working-capital runway",
-                    "Selected $40,000; lean $10,000; upper $60,000",
-                    40000.0,
+                    "Reference $22,000; lean $8,000; expanded $36,000",
+                    22000.0,
                     (
                         "Hold cash for staged operating commitments and collection "
-                        "timing. At $5,000 monthly operating expense, these allocations "
-                        "cover two, eight, and twelve months before receipts; at "
-                        "$25,000 they cover 0.4, 1.6, and 2.4 months. Direct "
-                        "delivery costs can require additional cash."
+                        "timing. At $5,000 monthly operating expense, the lean, "
+                        "reference, and expanded allocations cover 1.6, 4.4, and "
+                        "7.2 months before receipts, respectively; at $25,000 they "
+                        "cover 0.32, 0.88, and 1.44 months. Direct delivery costs "
+                        "can require additional cash."
                     ),
                 ),
                 (
                     "Contracting and risk setup",
-                    "Selected $20,000; lean $5,000; upper $30,000",
-                    20000.0,
+                    "Reference $11,000; lean $4,000; expanded $18,000",
+                    11000.0,
                     (
                         "Fund scoped agreement review, insurance placement, entity "
                         "administration, and jurisdiction-specific operating procedures. "
@@ -624,8 +626,8 @@ def build_volume_020_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Bid-desk systems and launch delivery",
-                    "Selected $25,000; lean $6,000; upper $38,000",
-                    25000.0,
+                    "Reference $14,000; lean $5,000; expanded $23,000",
+                    14000.0,
                     (
                         "Fund secure document storage, access controls, CRM setup, "
                         "calendar automation, and limited launch contractor work. "
@@ -635,12 +637,12 @@ def build_volume_020_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Pipeline development",
-                    "Selected $15,000; lean $4,000; upper $22,000",
-                    15000.0,
+                    "Reference $8,000; lean $3,000; expanded $13,000",
+                    8000.0,
                     (
                         "Fund targeted supplier outreach, capability interviews, "
                         "industry meetings, and scoped proposal development. Model "
-                        "the stated 6–18 months to first deal; startup cash alone "
+                        "the stated 3–12 months to first deal; startup cash alone "
                         "does not support every combination of that delay and "
                         "the $5,000–$25,000 monthly operating range."
                     ),
@@ -657,7 +659,7 @@ def build_volume_020_diagrams_data() -> list[dict]:
             (
                 "Numeric values identify milestone end days. The sprint establishes "
                 "service scope, systems, and pursuit discipline; the canonical "
-                "time to first deal remains 6–18 months. Client awards, signed "
+                "time to first deal remains 3–12 months. Client awards, signed "
                 "engagements, recognized fees, and collected cash are separate events."
             ),
             (

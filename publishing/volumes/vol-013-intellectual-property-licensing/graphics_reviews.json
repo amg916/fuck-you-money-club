@@ -35,7 +35,7 @@
     "diag-04-license-structure-yields",
     "diag-05-preflight-rights-and-risk",
     "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-buckets",
+    "diag-07-forty-thousand-startup-capital-buckets",
     "diag-08-thirty-day-evidence-sprint"
   ],
   "cover_graphic_ids": [
@@ -60,7 +60,7 @@
     "diag-04-license-structure-yields",
     "diag-05-preflight-rights-and-risk",
     "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-buckets",
+    "diag-07-forty-thousand-startup-capital-buckets",
     "diag-08-thirty-day-evidence-sprint"
   ],
   "allowed_statuses": [
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-buckets": {
+    "diag-07-forty-thousand-startup-capital-buckets": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-buckets",
+        "graphic_id": "diag-07-forty-thousand-startup-capital-buckets",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital Before Expanding the Rights Portfolio",
+        "label": "Allocate a $40,000 Reference Startup Budget Across Four Buckets",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-buckets",
+        "graphic_id": "diag-07-forty-thousand-startup-capital-buckets",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital Before Expanding the Rights Portfolio",
+        "label": "Allocate a $40,000 Reference Startup Budget Across Four Buckets",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-buckets",
+        "graphic_id": "diag-07-forty-thousand-startup-capital-buckets",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital Before Expanding the Rights Portfolio",
+        "label": "Allocate a $40,000 Reference Startup Budget Across Four Buckets",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-21T21:38:41Z"
+  "updated_at": "2026-11-22T16:33:22Z"
 }

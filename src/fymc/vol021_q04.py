@@ -6,16 +6,16 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($30,000–$250,000 USD) and configure a lean, low-opex ($4,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($15,000–$80,000 USD) and configure a lean, low-opex ($4,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Capital, Shopify-to-3PL Controls, Authorized Sourcing, and Customs Recovery Underwriting",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 of 29 with a Money-to-Manpower Score of 70/100. "
+        "Candidate #28, Automated E-Commerce, ranks #21 of 29 with a Money-to-Manpower Score of 85/100. "
         "Its 18 mapped plays reward disciplined purchasing, reliable fulfillment, and contribution-led retention rather than an oversized software estate. "
-        "Start with $30,000–$250,000, retain 60% as liquid working capital, and purchase infrastructure only against measured operating needs. "
+        "Start with $15,000–$80,000, retain 60% as liquid working capital, and purchase infrastructure only against measured operating needs. "
         "The canonical annual owner-profit cases are $12,500 Conservative, $129,375 Base, and $360,000 Scaled; retail revenue is net of refunds, with goods, fulfillment, and advertising inside the margin. "
         "This chapter translates those constraints into capital envelopes, twelve named infrastructure layers, authorized freight-recovery and distributor-sourcing pilots, and evidence-based launch checks. "
         "Keep the $4,000–$25,000 monthly overhead envelope separate from inventory purchases and settlement exposure."

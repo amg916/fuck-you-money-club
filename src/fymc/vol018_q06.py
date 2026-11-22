@@ -6,14 +6,14 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in land flipping, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in land flipping, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "County GIS, Recorder Triggers, Builder Buy Boxes, Title-Insured Closings, and TCPA-Aware Owner Outreach",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
         "The sourcing advantage is a documented mismatch between an owner's holding burden "
         "and a buyer's buildable-land requirements, not a cheap parcel list. This chapter "
         "maps six plays: builder buy-box reversal, absentee-owner trigger mining, stale-listing "

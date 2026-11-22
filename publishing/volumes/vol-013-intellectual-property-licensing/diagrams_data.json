@@ -7,7 +7,7 @@
       "subtitle": "Five evidence-backed handoffs from asset intake to renewal.",
       "chapter_number": 1,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Stages show operating sequence, not elapsed months or conversion rates. First-deal planning remains 6–24 months. Recognized revenue consists of operator license fees and royalties, excluding licensees' underlying product sales.",
+      "assumptions_note": "Stages show operating sequence, not elapsed months or conversion rates. First-deal planning remains 4–14 months. Recognized revenue consists of operator license fees and royalties, excluding licensees' underlying product sales.",
       "caption": "Every handoff produces an inspectable record; a signed license does not replace usage evidence or a reconciled royalty statement.",
       "stages": [
         {
@@ -259,38 +259,38 @@
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-buckets",
+      "diagram_id": "diag-07-forty-thousand-startup-capital-buckets",
       "chart_type": "stacked_comparison",
-      "title": "Allocate Startup Capital Before Expanding the Rights Portfolio",
-      "subtitle": "Four buckets illustrate a $100,000 plan within $25,000–$250,000.",
+      "title": "Allocate a $40,000 Reference Startup Budget Across Four Buckets",
+      "subtitle": "Compare lean $12,000, reference $40,000, and expanded $75,000 plans.",
       "chapter_number": 4,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are USD allocations for the illustrative $100,000 plan, not annual expenses or canonical revenue. The same 35% / 25% / 20% / 20% split produces $25,000 and $250,000 endpoint comparisons stated in the details. Startup capital does not establish runway: recurring monthly opex is $2,000–$15,000 and first-deal timing is 6–24 months.",
-      "caption": "The four allocations sum to $100,000. The liquidity bucket covers two months at $10,000 recurring monthly opex, so separately fund the remaining development period and variable costs.",
+      "assumptions_note": "Numeric values are USD allocations for the illustrative $40,000 reference plan within the $12,000–$75,000 startup capital range, not annual expenses or canonical revenue. The same 35% / 25% / 20% / 20% split produces the lean $12,000 and expanded $75,000 comparisons stated in the details. Startup capital does not establish runway: recurring monthly opex is $2,000–$12,000 and first-deal timing is 4–14 months.",
+      "caption": "Reference: $14,000 + $10,000 + $8,000 + $8,000 = $40,000. Lean: $4,200 + $3,000 + $2,400 + $2,400 = $12,000. Expanded: $26,250 + $18,750 + $15,000 + $15,000 = $75,000. The reference liquidity bucket covers 0.8 months at $10,000 recurring monthly opex, so separately fund the remaining development period and variable costs.",
       "stages": [
         {
           "label": "Rights diligence and contracting",
-          "value": "$35,000 central plan allocation for defensible grants",
-          "numeric_value": 35000.0,
-          "detail": "Allocate 35% to title investigation, asset schedules, and contract drafting. Endpoint allocations are $8,750 at $25,000 and $87,500 at $250,000."
+          "value": "$14,000 reference plan allocation for defensible grants",
+          "numeric_value": 14000.0,
+          "detail": "Allocate 35% to title investigation, asset schedules, and contract drafting: $4,200 in the lean $12,000 plan, $14,000 in the reference $40,000 plan, and $26,250 in the expanded $75,000 plan."
         },
         {
           "label": "Buyer validation and packaging",
-          "value": "$25,000 central plan allocation for commercial evidence",
-          "numeric_value": 25000.0,
-          "detail": "Allocate 25% to technical demonstrations, buyer interviews, and scoped licensing materials. Endpoint allocations are $6,250 at $25,000 and $62,500 at $250,000."
+          "value": "$10,000 reference plan allocation for commercial evidence",
+          "numeric_value": 10000.0,
+          "detail": "Allocate 25% to technical demonstrations, buyer interviews, and scoped licensing materials: $3,000 in the lean $12,000 plan, $10,000 in the reference $40,000 plan, and $18,750 in the expanded $75,000 plan."
         },
         {
           "label": "Reporting and obligation systems",
-          "value": "$20,000 central plan allocation for inspectable operations",
-          "numeric_value": 20000.0,
-          "detail": "Allocate 20% to report templates, controlled document storage, SQLite reconciliation, and renewal scheduling. Endpoint allocations are $5,000 and $50,000 respectively."
+          "value": "$8,000 reference plan allocation for inspectable operations",
+          "numeric_value": 8000.0,
+          "detail": "Allocate 20% to report templates, controlled document storage, SQLite reconciliation, and renewal scheduling: $2,400 in the lean $12,000 plan, $8,000 in the reference $40,000 plan, and $15,000 in the expanded $75,000 plan."
         },
         {
           "label": "Uncommitted operating liquidity",
-          "value": "$20,000 central plan allocation for cash continuity",
-          "numeric_value": 20000.0,
-          "detail": "Hold 20% as cash rather than recording an immediate expense. Endpoint allocations are $5,000 and $50,000; do not treat this reserve as acquisition funding twice."
+          "value": "$8,000 reference plan allocation for cash continuity",
+          "numeric_value": 8000.0,
+          "detail": "Hold 20% as cash rather than recording an immediate expense: $2,400 in the lean $12,000 plan, $8,000 in the reference $40,000 plan, and $15,000 in the expanded $75,000 plan. Do not treat this reserve as acquisition funding twice."
         }
       ]
     },
@@ -301,7 +301,7 @@
       "subtitle": "Four weekly milestones prepare a disciplined licensing pipeline.",
       "chapter_number": 12,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are milestone ending days. Deliverables are 30-day operating targets, not executed-license forecasts. First-deal planning remains 6–24 months; the sprint does not change the canonical revenue or staffing scenarios.",
+      "assumptions_note": "Numeric values are milestone ending days. Deliverables are 30-day operating targets, not executed-license forecasts. First-deal planning remains 4–14 months; the sprint does not change the canonical revenue or staffing scenarios.",
       "caption": "Finish the month with a rights dossier, tested use cases, a draft term structure, and a working reporting rehearsal.",
       "stages": [
         {

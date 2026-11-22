@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a 54/100 Money-to-Manpower "
+        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower "
         "Score because disputed scopes, labor exposure, and collection delays can consume "
         "apparently strong production margins. Canonical annual owner net profit is $40,000 "
         "Conservative, $195,000 Base, and $450,000 Scaled. This chapter maps five operating "
@@ -30,19 +30,19 @@ CHAPTER_5 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractors and materials remain costs",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractors and materials remain costs",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractors and materials remain costs",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -80,7 +80,7 @@ CHAPTER_5 = {
                     "$123,288 in additional receivables if billings remain level and deposits "
                     "do not offset the delay. That is roughly 63% of Base annual owner profit, "
                     "although the cash absorption is not itself an expense. Compare the exposure "
-                    "with the stated $75,000–$350,000 startup range and $10,000–$45,000 monthly "
+                    "with the stated $18,000–$75,000 startup range and $4,000–$20,000 monthly "
                     "operating range; neither range establishes that a particular crew plan is "
                     "funded. Five full-time staff plus six contractors must fit the Conservative "
                     "case's entire $460,000 cost envelope, so validate wages, utilization, and "

@@ -6,19 +6,19 @@ CHAPTER_11 = {
     "chapter_number": 11,
     "question_number": 11,
     "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 2 FT + 4 C (6 people) -> 3 FT + 5 C (8 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 1 FT + 3 C (4 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
     "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
     "subtitle": "Serial-Level Biomed Release, Contractor SLAs, Accrual Cohorts, HIPAA Data Hygiene, and Transferable Equipment-Trading Earnings",
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, holds Rank #22 with a 64/100 "
+        "Candidate #14, Medical Equipment Resale, holds Rank #20 with a 85/100 "
         "Money-to-Manpower Score: capital discipline and technical accountability matter more "
         "than headcount compression. This chapter maps three operator plays: diagnostic "
         "equipment refurbishment, surgical equipment resale, and veterinary/aesthetic equipment "
         "remarketing. Run them through one serial-level operating system, initially staffed "
-        "by 2 FT + 4 C and expanded only to 3 FT + 5 C when throughput supports it. "
+        "by 1 FT + 3 C and expanded only to 1 FT + 3 C when throughput supports it. "
         "Canonical annual owner net profits are $25,000 Conservative, $164,000 Base, and "
         "$396,000 Scaled. Protect those economics with accepted-work contractor payments, "
         "weekly exception reviews, counterparty concentration limits, and clean accrual "
@@ -30,19 +30,19 @@ CHAPTER_11 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C (8 people)",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C (4 people)",
         },
     ],
     "sections": [
@@ -54,7 +54,7 @@ CHAPTER_11 = {
                     "Build one shared pod around three explicitly mapped plays: diagnostic "
                     "equipment refurbishment, surgical equipment resale, and veterinary/aesthetic "
                     "equipment remarketing. These are operating lanes for Candidate #14, not "
-                    "separate businesses with duplicated managers. In the six-person configuration, "
+                    "separate businesses with duplicated managers. In the four-person configuration, "
                     "the owner occupies the first full-time seat as commercial lead and capital "
                     "allocator; the second full-time employee owns inventory operations, document "
                     "control, and collections coordination. Four contractors provide biomed testing, "
@@ -116,7 +116,7 @@ CHAPTER_11 = {
                 ),
             ],
             "table": {
-                "caption": "Six-Person Core Pod and Two Explicit Scaled Additions",
+                "caption": "Four-Person Core Pod and Two Explicit Scaled Additions",
                 "headers": [
                     "Named seat and exact staffing position",
                     "Owned deliverables across the three operating plays",
@@ -539,7 +539,7 @@ CHAPTER_11 = {
                     "If retaining the business, use the same discipline: distribute "
                     "cash only after funding inventory commitments, expected repairs, "
                     "taxes, and a documented liquidity reserve. The stated "
-                    "$75,000–$400,000 startup capital and $5,000–$22,000 monthly operating "
+                    "$20,000–$95,000 startup capital and $4,000–$18,000 monthly operating "
                     "expense ranges are planning context, not incremental deductions "
                     "from already reconciled owner profit. Promote the eight-person "
                     "pod only when incremental capacity pays for its real costs. "

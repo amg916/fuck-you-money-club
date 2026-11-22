@@ -13,8 +13,8 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a Money-to-Manpower Score of "
-        "77/100. This chapter organizes 15 mapped plays into a creditor-first sourcing "
+        "Candidate #8, Judgment Recovery, ranks #28 with a Money-to-Manpower Score of "
+        "79/100. This chapter organizes 15 mapped plays into a creditor-first sourcing "
         "system: commercial docket mining, counsel referrals, asset-event monitoring, "
         "and carefully separated refinance-intent referrals. The product is a documented "
         "path to collectible proceeds, not a pile of judgment balances. Build a narrow "

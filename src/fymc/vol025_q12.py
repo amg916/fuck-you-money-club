@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, holds Rank #25 with a 62/100 "
+        "Candidate #12, Freight Brokerage, holds Rank #19 with a 85/100 "
         "Money-to-Manpower Score because transaction volume demands working capital, "
         "verified carriers, and disciplined exception handling. This sprint translates "
         "eight mapped plays into accountable work: niche selection, shipper acquisition, "
@@ -102,7 +102,7 @@ CHAPTER_12 = {
                 (
                     "Use a deliberately funded launch model: $150,000 of unrestricted "
                     "equity, a separately priced bond, and no assumed borrowing "
-                    "availability. This sits inside the canonical $50,000-$250,000 "
+                    "availability. This sits inside the canonical $15,000-$80,000 "
                     "startup range but does not make its lower endpoint suitable "
                     "for this staffing plan. Limit first-month operating spending "
                     "to $18,000: $14,000 for three full-time roles including "

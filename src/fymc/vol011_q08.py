@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
         "Score across 21 mapped plays. Its information edge comes from resolving ownership, "
         "authority, encumbrances, buyer capacity, and closing dependencies before competing "
         "desks do. This chapter connects official registries, commercial enrichment, "

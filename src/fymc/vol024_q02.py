@@ -14,7 +14,7 @@ CHAPTER_2 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
-        "62/100: payment depends on statutory claims and verified settlement authority, "
+        "81/100: payment depends on statutory claims and verified settlement authority, "
         "not persuasive collection scripts. Four mapped plays organize this chapter: "
         "certificate redemption carry, mortgage-servicer-funded redemption, Texas "
         "redeemable-deed settlement, and fractional_heir_share_partition_forcing. "

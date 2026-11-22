@@ -28,7 +28,7 @@
           "name": "Candidate score and operating constraints",
           "type": "textarea",
           "prompt": "Record the canonical candidate identity, score components, startup envelope, operating-cost range, and first-deal horizon. Translate these portfolio-level indicators into a specific resource limit without substituting them for client-level underwriting or actual campaign results.",
-          "example": "Candidate #18 ranks #08 of 29: Commercial Lead Generation scores 85/100, labeled Elite Small-Team Cash Machine. Components are 21 revenue, 21 margin, 18 team efficiency, 12 accessibility, and 13 automation. Screening ranges are $5,000–$40,000 startup, $2,000–$12,000 monthly opex, and 1–4 months to first deal; scaled all-in costs require separate budgets."
+          "example": "Candidate #18 ranks #05 of 29: Commercial Lead Generation scores 89/100, labeled Elite Small-Team Cash Machine. Components are 21 revenue, 21 margin, 18 team efficiency, 12 accessibility, and 13 automation. Screening ranges are $5,000–$40,000 startup, $2,000–$12,000 monthly opex, and 1–4 months to first deal; scaled all-in costs require separate budgets."
         },
         {
           "name": "Client identity and payment authority",

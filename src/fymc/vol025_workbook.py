@@ -121,7 +121,7 @@ def build_volume_025_workbook() -> dict:
                         "Opportunity score and investment fit",
                         "textarea",
                         "Connect the chosen niche to the canonical candidate score, capital range, staffing burden, and first-deal timing. Explain the evidence that makes this specific opportunity workable without treating the series ranking as a prediction of customer demand.",
-                        "Freight Brokerage is candidate 12, pipeline rank 25 of 29, scoring 62/100: revenue 23, margin 10, team efficiency 10, accessibility 7, and automation 12. The $50,000–$250,000 startup range and two-to-six-month first-deal window justify a staged launch rather than immediate full-volume hiring.",
+                        "Freight Brokerage is candidate 12, pipeline rank 25 of 29, scoring 85/100: revenue potential 24, margin potential 21, team efficiency 17, startup accessibility 12, and automation potential 11. The $15,000–$80,000 startup range and two-to-six-month first-deal window justify a staged launch rather than immediate full-volume hiring.",
                     ),
                     field(
                         "Underwriting decision and accountable owner",

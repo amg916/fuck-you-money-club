@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a 54/100 Money-to-Manpower "
+        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower "
         "Score because execution depends on licensed field capacity, defensible documentation, "
         "and working capital. This chapter maps five operator plays: emergency water mitigation, "
         "fire and contents restoration, mold remediation, storm reconstruction, and documentation-led "
@@ -21,7 +21,7 @@ CHAPTER_9 = {
         "insurance representation outside the contractor role, and collect deductibles without "
         "concealed rebates. Canonical annual owner net profit is $40,000 Conservative, $195,000 "
         "Base, and $450,000 Scaled, against gross restoration billings rather than insurance "
-        "claim value. The initial 5 FT + 6 C pod needs state-specific contract versions, "
+        "claim value. The initial 2 FT + 2 C pod needs state-specific contract versions, "
         "restricted outreach scripts, and evidence-backed billing before expanding territory."
     ),
     "key_metrics": [
@@ -29,19 +29,19 @@ CHAPTER_9 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -156,7 +156,7 @@ CHAPTER_9 = {
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Mobilizing the Eleven-Person Pod",
+                "title": "Four Checks Before Mobilizing the Four-Person Pod",
                 "body": "Release a crew only when the assigned employee can point to evidence for each applicable check.",
                 "items": [
                     "Verify the property address, contractor classification, qualifying individual, and specialty licenses against the issuing authority's records.",
@@ -435,7 +435,7 @@ CHAPTER_9 = {
                     "an 8% net margin, producing $40,000 annual owner net profit; Base is $1,500,000 "
                     "at 13.0%, producing $195,000; Scaled is $2,500,000 at 18%, producing $450,000. "
                     "Subcontractor and material costs are already reflected in those margins. The "
-                    "first two cases use 5 FT + 6 C; Scaled uses 6 FT + 7 C, thirteen people. "
+                    "first two cases use 2 FT + 2 C; Scaled uses 3 FT + 3 C, thirteen people. "
                     "The implied annual expense envelopes are $460,000, $1,305,000, and $2,050,000 "
                     "respectively. Track earned billings, collected cash, disputed amounts, subcontractor "
                     "commitments, and customer deposits separately. An approved insurance payment is "
@@ -465,7 +465,7 @@ CHAPTER_9 = {
                     "zone, test license coverage, contract readiness, safe staffing, vendor capacity, "
                     "and cash runway together. Dispatch automation, photo documentation, and job-cost "
                     "tracking should reduce missed handoffs, not manufacture extra field capacity. "
-                    "The eleven-person pod remains constrained by supervision and specialist availability. "
+                    "The four-person pod remains constrained by supervision and specialist availability. "
                     "Expansion makes sense when the existing five plays close with defensible records, "
                     "predictable collections, and manageable rework, not merely when lead volume "
                     "rises after a storm."

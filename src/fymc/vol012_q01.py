@@ -13,7 +13,7 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, holds Rank #12 of 29 with an 81/100 "
+        "Candidate #11, Equipment Brokerage, holds Rank #16 of 29 with an 86/100 "
         "Money-to-Manpower Score. The operator earns commissions for matching equipment "
         "owners with qualified buyers and coordinating documented transfers, not for "
         "owning the underlying transaction value. Seven mapped plays structure this "
@@ -563,7 +563,7 @@ CHAPTER_1 = {
                     "without the required contractual performance."
                 ),
                 (
-                    "The 81/100 score comprises revenue potential of 22, profit "
+                    "The 86/100 score comprises revenue potential of 22, profit "
                     "margin potential of 20, team efficiency of 18, startup "
                     "accessibility of 11, and automation potential of 10. Interpret "
                     "that score as the supplied candidate ranking, not a measured "

@@ -5,10 +5,10 @@
   "category": "Technology implementation services",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 23,
+    "revenue_potential": 24,
     "profit_margin_potential": 21,
     "team_efficiency": 17,
-    "startup_accessibility": 12,
+    "startup_accessibility": 14,
     "automation_potential": 13
   },
   "dimension_max": {
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 86,
+  "total_score": 89,
   "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 83,
-    "high": 89
+    "low": 86,
+    "high": 92
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 23/25. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
-    "profit_margin_potential": "Profit Margin Potential: 21/25. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
-    "team_efficiency": "Team Efficiency: 17/20. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
-    "startup_accessibility": "Startup Accessibility: 12/15. Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
-    "automation_potential": "Automation Potential: 13/15. Standardized implementations improve repeatability, but integration exceptions and human review remain costly."
+    "revenue_potential": "Revenue Potential: 24/25. Fixed-scope B2B AI implementation sprints and client-owned inference retainers deliver immediate cashflow with minimal startup capital.",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. Fixed-scope B2B AI implementation sprints and client-owned inference retainers deliver immediate cashflow with minimal startup capital.",
+    "team_efficiency": "Team Efficiency: 17/20. Fixed-scope B2B AI implementation sprints and client-owned inference retainers deliver immediate cashflow with minimal startup capital.",
+    "startup_accessibility": "Startup Accessibility: 14/15. Fixed-scope B2B AI implementation sprints and client-owned inference retainers deliver immediate cashflow with minimal startup capital.",
+    "automation_potential": "Automation Potential: 13/15. Fixed-scope B2B AI implementation sprints and client-owned inference retainers deliver immediate cashflow with minimal startup capital."
   },
   "economics": {
     "gross_revenue_range": "$100,000–$1,000,000 USD annually",
+    "retained_revenue_range": "$100,000–$1,000,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "20–40%",
+    "retained_profit_margin_range": "20–40%",
     "owner_net_profit_potential": "$20,000–$400,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$5,000–$60,000 USD",
     "monthly_opex_range": "$2,500–$18,000 USD",
     "time_to_first_deal": "1–4 months",
+    "automation_coverage": 0.84,
     "typical_team_size": {
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 100000,
+      "annual_retained_revenue_usd": 100000,
       "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 20000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 550000.0,
+      "annual_retained_revenue_usd": 550000,
       "net_profit_margin_pct": 30.0,
+      "retained_profit_margin_pct": 30.0,
       "annual_owner_net_profit_usd": 165000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1000000,
+      "annual_retained_revenue_usd": 1000000,
       "net_profit_margin_pct": 40,
+      "retained_profit_margin_pct": 40.0,
       "annual_owner_net_profit_usd": 400000,
       "full_time_including_owner": 3,
       "contractors": 4,
@@ -81,13 +91,13 @@
     }
   },
   "automation_levers": [
-    "Client intake workflows",
-    "Deployment checklists",
-    "Usage and quality monitoring"
+    "Standardized intake & deployment",
+    "Human-in-the-loop eval gates",
+    "Retainer SLA monitoring"
   ],
   "key_risks": [
     "Scope creep",
-    "Unreliable outputs",
+    "Hallucination regressions",
     "Client data exposure"
   ],
   "regulatory_notes": [

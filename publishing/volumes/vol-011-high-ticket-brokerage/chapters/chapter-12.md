@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower Score and 21 mapped operator plays. This sprint turns those plays into accountable work for one full-time principal and three contractors: select one asset lane, establish lawful transaction scope, secure exclusive mandates, verify buyers, and control disclosure through independent escrow. Day 30 measures repeatable transaction readiness, not promised closings; first-deal timing remains 3–12 months. Annual owner profit cases are $25,000 Conservative, $206,250 Base, and $500,000 Scaled, derived solely from retained transaction commissions. A $9,000 first-month cash ceiling and explicit Day-30/60/90 thresholds determine whether to stop acquisition spending, repair one bottleneck, or expand only the proven portion of the pipeline.
+Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower Score and 21 mapped operator plays. This sprint turns those plays into accountable work for one full-time principal and three contractors: select one asset lane, establish lawful transaction scope, secure exclusive mandates, verify buyers, and control disclosure through independent escrow. Day 30 measures repeatable transaction readiness, not promised closings; first-deal timing remains 3–12 months. Annual owner profit cases are $25,000 Conservative, $206,250 Base, and $500,000 Scaled, derived solely from retained transaction commissions. A $9,000 first-month cash ceiling and explicit Day-30/60/90 thresholds determine whether to stop acquisition spending, repair one bottleneck, or expand only the proven portion of the pipeline.
 
 ### Key Metrics
 

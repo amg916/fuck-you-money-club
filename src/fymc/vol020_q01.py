@@ -13,8 +13,8 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #20 of 29 with a "
-        "70/100 Money-to-Manpower Score: a Disciplined Specialist Play, not an award-flipping "
+        "Candidate #4, Government Contract Brokering, holds Rank #27 of 29 with a "
+        "79/100 Money-to-Manpower Score: a High-Leverage Operator Play, not an award-flipping "
         "shortcut. The operator sells procurement intelligence, bid production, supplier "
         "coordination, and documented contract administration while clients retain their "
         "contract obligations. Seven mapped plays organize the work: public_record_api_intelligence, "
@@ -427,7 +427,7 @@ CHAPTER_1 = {
                     "from any local staffing revision."
                 ),
                 (
-                    "Startup capital of $25,000 to $150,000 and a six-to-eighteen-month "
+                    "Startup capital of $20,000 to $90,000 and a six-to-eighteen-month "
                     "time to first deal demand deliberate runway planning. The stated "
                     "$5,000 to $25,000 monthly operating-expense range must not be "
                     "confused with an all-inclusive cap on annual scenario costs. "

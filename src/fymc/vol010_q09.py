@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, holds Rank #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, holds Rank #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. This chapter turns statutory "
         "duties into publishing contracts, attribution controls, vendor restrictions, and "
         "usable outreach scripts. The annual owner-profit cases remain $16,000 "
@@ -32,19 +32,19 @@ CHAPTER_9 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -231,8 +231,8 @@ CHAPTER_9 = {
                     "Base revenue of $490,000 less $330,750 leaves $159,250 at 32.5%. "
                     "Scaled revenue of $900,000 less $495,000 leaves $405,000 at 45%. "
                     "These are annual whole-business cases, not incremental promises from any "
-                    "single play. Conservative and Base use 2 FT + 4 C; Scaled uses "
-                    "3 FT + 5 C. Allocate contract administration, rights review, reversals, "
+                    "single play. Conservative and Base use 1 FT + 3 C; Scaled uses "
+                    "1 FT + 3 C. Allocate contract administration, rights review, reversals, "
                     "and monitoring within those modeled costs. If actual vendor commitments "
                     "break the envelope, revise the operating plan rather than quietly "
                     "changing the canonical profit figures."

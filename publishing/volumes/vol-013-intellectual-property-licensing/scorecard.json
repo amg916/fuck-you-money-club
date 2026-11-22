@@ -5,10 +5,10 @@
   "category": "Licensing services",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 22,
-    "profit_margin_potential": 23,
-    "team_efficiency": 18,
-    "startup_accessibility": 6,
+    "revenue_potential": 24,
+    "profit_margin_potential": 24,
+    "team_efficiency": 19,
+    "startup_accessibility": 11,
     "automation_potential": 10
   },
   "dimension_max": {
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 79,
-  "tier_label": "High-Leverage Operator Play",
+  "total_score": 88,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 76,
-    "high": 82
+    "low": 85,
+    "high": 91
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 22/25. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
-    "profit_margin_potential": "Profit Margin Potential: 23/25. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
-    "team_efficiency": "Team Efficiency: 18/20. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
-    "startup_accessibility": "Startup Accessibility: 6/15. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
-    "automation_potential": "Automation Potential: 10/15. Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish."
+    "revenue_potential": "Revenue Potential: 24/25. Fee-and-royalty IP licensing agency commercializing dormant patents, brands, and datasets with zero manufacturing inventory.",
+    "profit_margin_potential": "Profit Margin Potential: 24/25. Fee-and-royalty IP licensing agency commercializing dormant patents, brands, and datasets with zero manufacturing inventory.",
+    "team_efficiency": "Team Efficiency: 19/20. Fee-and-royalty IP licensing agency commercializing dormant patents, brands, and datasets with zero manufacturing inventory.",
+    "startup_accessibility": "Startup Accessibility: 11/15. Fee-and-royalty IP licensing agency commercializing dormant patents, brands, and datasets with zero manufacturing inventory.",
+    "automation_potential": "Automation Potential: 10/15. Fee-and-royalty IP licensing agency commercializing dormant patents, brands, and datasets with zero manufacturing inventory."
   },
   "economics": {
     "gross_revenue_range": "$50,000–$800,000 USD annually",
+    "retained_revenue_range": "$50,000–$800,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "25–60%",
+    "retained_profit_margin_range": "25–60%",
     "owner_net_profit_potential": "$12,500–$480,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$25,000–$250,000 USD",
-    "monthly_opex_range": "$2,000–$15,000 USD",
-    "time_to_first_deal": "6–24 months",
+    "startup_capital_range": "$12,000–$75,000 USD",
+    "monthly_opex_range": "$2,000–$12,000 USD",
+    "time_to_first_deal": "4–14 months",
+    "automation_coverage": 0.69,
     "typical_team_size": {
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 50000,
+      "annual_retained_revenue_usd": 50000,
       "net_profit_margin_pct": 25,
+      "retained_profit_margin_pct": 25.0,
       "annual_owner_net_profit_usd": 12500,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 425000.0,
+      "annual_retained_revenue_usd": 425000,
       "net_profit_margin_pct": 42.5,
+      "retained_profit_margin_pct": 42.5,
       "annual_owner_net_profit_usd": 180625,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 800000,
+      "annual_retained_revenue_usd": 800000,
       "net_profit_margin_pct": 60,
+      "retained_profit_margin_pct": 60.0,
       "annual_owner_net_profit_usd": 480000,
       "full_time_including_owner": 2,
       "contractors": 4,
@@ -81,12 +91,12 @@
     }
   },
   "automation_levers": [
-    "Royalty reporting",
+    "Royalty audit ledgers",
     "License renewal alerts",
-    "Contract obligation tracking"
+    "Field-of-use contract tracking"
   ],
   "key_risks": [
-    "Unproven demand",
+    "Slow licensee adoption",
     "Infringement disputes",
     "Licensee underreporting"
   ],

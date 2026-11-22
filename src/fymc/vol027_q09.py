@@ -13,8 +13,8 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a Money-to-Manpower Score of "
-        "57/100: capital and labor intensity make transaction discipline essential. This "
+        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower Score of "
+        "86/100: capital and labor intensity make transaction discipline essential. This "
         "chapter maps seven operator plays: targeted sourcing, mandate qualification, QoE, "
         "debt structuring, contract-and-license diligence, closing transition, and 100-day "
         "retention. A seven-full-time, three-contractor pod must distinguish buying its own "
@@ -31,19 +31,19 @@ CHAPTER_9 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; recognized operating revenue",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; recognized operating revenue",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; recognized operating revenue",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -440,8 +440,8 @@ CHAPTER_9 = {
                     "lender coverage calculations from the lender's defined numerator, denominator, testing "
                     "period, and permitted adjustments rather than treating net margin as debt-service "
                     "coverage. Review restrictions on distributions, additional debt, liens, acquisitions, "
-                    "ownership changes, and seller-note payments. Keep the $200,000–$1,000,000 startup-capital "
-                    "range distinct from the $15,000–$70,000 monthly operating-expense planning range; neither "
+                    "ownership changes, and seller-note payments. Keep the $30,000–$120,000 startup-capital "
+                    "range distinct from the $6,000–$25,000 monthly operating-expense planning range; neither "
                     "range independently proves that a particular purchase price or leverage package works. "
                     "Use actual target statements and funded terms to establish affordability."
                 ),

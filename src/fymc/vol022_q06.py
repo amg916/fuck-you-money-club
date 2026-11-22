@@ -6,14 +6,14 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-first-medical-equipment-resale-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in medical equipment resale, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in medical equipment resale, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (2–7 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Hospital Replacement Signals, Practice-Closure Lots, Buyer-Led Specialty Sourcing, Biomed Acceptance, and FDA/HIPAA Controls",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
         "Money-to-Manpower Score: attractive spreads depend on disciplined capital "
         "deployment and technical labor. This chapter maps three operator plays: "
         "hospital replacement-cycle capture, practice-closure asset recovery, and "
@@ -32,19 +32,19 @@ CHAPTER_6 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -216,7 +216,7 @@ CHAPTER_6 = {
                     "Backsolve the purchase ceiling from the buyer's supported delivered price "
                     "less every nonpurchase charge and the required contribution. Use written "
                     "carrier quotes and a biomed scope rather than rounded guesses. Within the "
-                    "$75,000–$400,000 startup-capital range, keep a separate reserve for operating "
+                    "$20,000–$95,000 startup-capital range, keep a separate reserve for operating "
                     "expenses, warranty work, and delayed collections. Initially cap each purchase "
                     "at twenty-five percent of deployable inventory cash and hold no more than "
                     "two unaccepted lots. Both are conservative internal controls, not scorecard "
@@ -487,7 +487,7 @@ CHAPTER_6 = {
                     "contractors, eight people total. The corresponding total expense envelopes "
                     "are $225,000, $861,000, and $1,404,000. Acquisition and refurbishment sit "
                     "inside those expenses, not outside the margin calculation. The stated "
-                    "$5,000–$22,000 monthly operating-expense range does not represent the "
+                    "$4,000–$18,000 monthly operating-expense range does not represent the "
                     "entire cost of purchased inventory. Gross resale proceeds also exclude "
                     "the buyer's patient billings, procedure volume, and equipment-financing "
                     "principal. These scenarios assume equipment resale as principal; a separate "
@@ -515,7 +515,7 @@ CHAPTER_6 = {
                     "delay. For every accepted deal, request a factual reference and permission "
                     "to describe the equipment category and service experience without exposing "
                     "patient or confidential operational details. Feed repeat demand into the "
-                    "next acquisition search. Expand from the initial six-person pod only "
+                    "next acquisition search. Expand from the initial four-person pod only "
                     "after measured inspection backlog, repeatable demand, and cash conversion "
                     "justify the extra capacity. The durable advantage is a reliable chain "
                     "from signal to supported equipment, not a larger spreadsheet of sellers "
@@ -553,7 +553,7 @@ CHAPTER_6 = {
                         "Review contractor readiness before confirming each inspection and delivery",
                         "Named specialists confirm scope, competence, availability, and quoted charges",
                         "Both employees align biomed, data handling, and transport schedules",
-                        "Keeps six-person pod commitments within actual fractional specialist capacity",
+                        "Keeps four-person pod commitments within actual fractional specialist capacity",
                     ],
                     [
                         "Review unsold equipment at thirty, sixty, and ninety days",

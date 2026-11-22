@@ -79,10 +79,8 @@ def build_volume_010_workbook() -> dict:
                             "of traffic, contractual access, or achievable returns."
                         ),
                         (
-                            "Candidate #25 is Building an SEO Empire, pipeline rank #10 of "
-                            "29, with an 82/100 Money-to-Manpower score. Components are revenue "
-                            "22, margin 21, team efficiency 17, accessibility 10, and "
-                            "automation 12. The mandate is a United States home-water "
+                            "Candidate #25 is Building an SEO Empire, pipeline rank #07 of "
+                            "29, with an 89/100 Money-to-Manpower score. Components are revenue potential 24, margin potential 22, team efficiency 18, startup accessibility 12, and automation potential 13. The mandate is a United States home-water "
                             "maintenance portfolio supported by original testing and documented "
                             "product compatibility."
                         ),
@@ -319,10 +317,10 @@ def build_volume_010_workbook() -> dict:
                         ),
                         (
                             "Conservative: $80,000 revenue minus $64,000 costs equals "
-                            "$16,000 owner net at 20%, with 2 FT + 4 C. "
+                            "$16,000 owner net at 20%, with 1 FT + 3 C. "
                             "Base: $490,000 minus $330,750 equals $159,250 at 32.5%, "
-                            "with 2 FT + 4 C. Scaled: $900,000 minus $495,000 "
-                            "equals $405,000 at 45%, with 3 FT + 5 C."
+                            "with 1 FT + 3 C. Scaled: $900,000 minus $495,000 "
+                            "equals $405,000 at 45%, with 1 FT + 3 C."
                         ),
                     ),
                     field(
@@ -397,7 +395,7 @@ def build_volume_010_workbook() -> dict:
                             "$72,000, production $48,000, technology $18,000, distribution "
                             "$18,000, administration $18,500, and bad-debt expense $12,250: "
                             "$330,750 total. Monthly all-in cost is $27,562.50, exceeding "
-                            "the stated $3,000–$20,000 range. Require budget-scope clarification; "
+                            "the stated $2,500–$14,000 range. Require budget-scope clarification; "
                             "that range cannot represent every mature Base expense."
                         ),
                     ),
@@ -450,7 +448,7 @@ def build_volume_010_workbook() -> dict:
                             "prevent a funding shortfall."
                         ),
                         (
-                            "Select $100,000 within the $15,000–$120,000 startup range: "
+                            "Select $100,000 within the $10,000–$60,000 startup range: "
                             "$20,000 setup and $80,000 liquid cash. At $3,000 monthly "
                             "pre-revenue burn, six months leaves $62,000; 24 months "
                             "leaves $8,000. The latter cannot fund the $53,593.75 "
@@ -489,7 +487,7 @@ def build_volume_010_workbook() -> dict:
                         ),
                         (
                             "Conservative allows only $64,000 total annual expenses for "
-                            "2 FT + 4 C and all other costs. Two $50,000 "
+                            "1 FT + 3 C and all other costs. Two $50,000 "
                             "loaded employee quotes alone exceed that envelope by "
                             "$36,000. Retain the canonical scenario for comparison, "
                             "but do not authorize those hires; document the unresolved "
@@ -1669,7 +1667,7 @@ def build_volume_010_workbook() -> dict:
                         ),
                         (
                             "Base role design uses "
-                            "2 FT + 4 C: "
+                            "1 FT + 3 C: "
                             "a portfolio lead and "
                             "managing editor, supported by "
                             "technical SEO, subject review, "

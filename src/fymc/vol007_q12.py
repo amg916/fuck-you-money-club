@@ -13,8 +13,8 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an "
-        "85/100 Money-to-Manpower Score. This sprint operationalizes its 12 mapped "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an "
+        "89/100 Money-to-Manpower Score. This sprint operationalizes its 12 mapped "
         "plays through a one-full-time, two-contractor pod, concentrating on "
         "state-treasury property, corporate uncashed warrants, and lawful finder-fee "
         "engagements. Days 1–30 establish jurisdiction rules, audit identity matches, "

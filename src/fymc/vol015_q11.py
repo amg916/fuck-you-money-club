@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score. "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score. "
         "Its 15 mapped plays become valuable only when a small pod converts lawful casework into "
         "documented, transferable service-fee earnings. Start with 1 FT + 3 C: an owner-operator, "
         "docket researcher, asset-and-priority analyst, and independently retained enforcement attorney. "

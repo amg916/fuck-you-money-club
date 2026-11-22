@@ -788,7 +788,7 @@
       "subtitle": "Fixed-Scope AI Sprints, Managed Workflow Retainers, Authorized Client Access, and Evidence Under 15 U.S.C. § 45",
       "layout_template": "opportunity_overview",
       "reading_time_minutes": 14,
-      "executive_summary": "Productized AI Agencies turn repeatable client workflows into bounded implementation packages and monitored support subscriptions. Candidate #29 ranks #06 of 29 with an 86/100 Money-to-Manpower Score and 23 mapped plays; this chapter examines three trigger-led plays without treating every lead signal as permission to investigate. Recognized operator revenue consists of implementation fees and support retainers, not client sales, merchant GMV, avoided losses, or disputed settlement amounts. Annual owner net profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Durability comes from reusable integration contracts, measured output quality, authorized access, and disciplined change pricing. Fragile agencies instead sell unbounded customization, unsupported performance claims, or automated decisions whose consequences exceed their delivery controls.",
+      "executive_summary": "Productized AI Agencies turn repeatable client workflows into bounded implementation packages and monitored support subscriptions. Candidate #29 ranks #08 of 29 with an 89/100 Money-to-Manpower Score and 23 mapped plays; this chapter examines three trigger-led plays without treating every lead signal as permission to investigate. Recognized operator revenue consists of implementation fees and support retainers, not client sales, merchant GMV, avoided losses, or disputed settlement amounts. Annual owner net profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Durability comes from reusable integration contracts, measured output quality, authorized access, and disciplined change pricing. Fragile agencies instead sell unbounded customization, unsupported performance claims, or automated decisions whose consequences exceed their delivery controls.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -816,7 +816,7 @@
           "paragraphs": [
             "A productized AI agency sells a repeatable implementation outcome with a defined input, delivery boundary, acceptance test, and support envelope. The unit is not access to a chatbot. It might be a fourteen-day sprint that converts approved support articles into cited draft replies inside Zendesk, followed by a monthly subscription covering evaluation, connector maintenance, and a capped exception queue. The buyer supplies an authorized knowledge source and a responsible process owner; the agency supplies configuration, integration code, test fixtures, training, and operating documentation. Productization means that another customer in the same niche can buy substantially the same package without restarting discovery. Specify included systems, record volumes, languages, environments, and review responsibilities before quoting. A request to add Salesforce after agreeing to HubSpot is a change order, not evidence of helpfulness. The managed retainer buys an explicit service schedule rather than unlimited developer availability. This distinguishes the model from staffing, where the buyer rents capacity, and from software licensing, where the buyer primarily acquires standardized product access. The strongest packages combine reusable engineering with narrow, customer-specific configuration and retain human accountability for consequential outputs.",
             "Start with a workflow whose baseline can be measured before introducing a model. For invoice intake, record weekly document counts, average handling minutes, exception reasons, and correction rates; then separate extraction from payment authorization. For support drafting, compare assisted handling time and reviewed factual accuracy against a fixed ticket sample rather than claiming that every closed ticket represents incremental sales. Use n8n or Microsoft Power Automate for orchestration when those tools fit the client's environment, but keep credentials in an appropriate secret store and preserve auditable workflow versions. A standard offer might include one source system, one destination, two document types, fifty evaluation cases, and two administrator training sessions. Its exclusion list should name historical data cleanup, unsupported connectors, multilingual expansion, and production write privileges unless purchased. An acceptance checklist can require correctly structured outputs, cited source passages, safe rejection of malformed inputs, and successful recovery from a simulated vendor timeout. Those tests create a sellable boundary. Without them, every unexpected input becomes unpaid consulting, and a supposedly recurring account becomes an open-ended repair obligation that consumes the team's implementation capacity.",
-            "Candidate #29 sits in technology implementation services, with a score breakdown of 23 for revenue potential, 21 for margin potential, 17 for team efficiency, 12 for startup accessibility, and 13 for automation potential. Together those components produce 86/100, labeled Elite Small-Team Cash Machine. The operating thesis is leverage through client intake workflows, deployment checklists, and usage and quality monitoring; the principal risks remain scope creep, unreliable outputs, and client data exposure. The stated startup capital range is $5,000–$60,000, monthly opex range is $2,500–$18,000, and time to first deal is one to four months. Treat those ranges as planning inputs, not substitutes for a staffed delivery budget. The five archetypes below organize the business around an accountable workflow owner rather than fashionable model names. Choose one archetype and one industry first, because a reusable evaluation set for hospitality booking questions does little to validate an insurance claim workflow. A defensible niche accumulates permissioned examples, integration knowledge, and repeatable acceptance criteria. A beginner niche merely accumulates demos that nobody has agreed to operate or pay to maintain after launch."
+            "Candidate #29 sits in technology implementation services, with a score breakdown of 23 for revenue potential, 21 for margin potential, 17 for team efficiency, 12 for startup accessibility, and 13 for automation potential. Together those components produce 89/100, labeled Elite Small-Team Cash Machine. The operating thesis is leverage through client intake workflows, deployment checklists, and usage and quality monitoring; the principal risks remain scope creep, unreliable outputs, and client data exposure. The stated startup capital range is $5,000–$60,000, monthly opex range is $2,500–$18,000, and time to first deal is one to four months. Treat those ranges as planning inputs, not substitutes for a staffed delivery budget. The five archetypes below organize the business around an accountable workflow owner rather than fashionable model names. Choose one archetype and one industry first, because a reusable evaluation set for hospitality booking questions does little to validate an insurance claim workflow. A defensible niche accumulates permissioned examples, integration knowledge, and repeatable acceptance criteria. A beginner niche merely accumulates demos that nobody has agreed to operate or pay to maintain after launch."
           ],
           "table": {
             "caption": "Five Operator Archetypes Defined by Delivery Boundaries and Recurring Work",
@@ -1416,7 +1416,7 @@
           "video_id": "I1NSFLOBQvc"
         }
       ],
-      "revision": "d5a5eaecd85e24ae"
+      "revision": "e84607879eebf83e"
     },
     {
       "id": "Q2",
@@ -1430,7 +1430,7 @@
       "subtitle": "Budget Owners, Stripe and ACH Collections, Escrow Milestones, FAR Payment Clocks, and Evidence-Backed AI Workflow Fees",
       "layout_template": "executive_summary",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. Buyers fund bounded improvements to expensive workflows, not abstract access to models. This chapter separates the executive sponsor, budget owner, security reviewer, and accounts-payable operator; then connects signed scope to acceptance evidence and collectible invoices. Annual owner net profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. Telegram signals, factual citation publishing, and permitted web subscription funnels illustrate paid deliverables. Eight payment arrangements expose settlement delays, dispute rights, financing costs, and the controls that protect fees without holding client data hostage.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. Buyers fund bounded improvements to expensive workflows, not abstract access to models. This chapter separates the executive sponsor, budget owner, security reviewer, and accounts-payable operator; then connects signed scope to acceptance evidence and collectible invoices. Annual owner net profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. Telegram signals, factual citation publishing, and permitted web subscription funnels illustrate paid deliverables. Eight payment arrangements expose settlement delays, dispute rights, financing costs, and the controls that protect fees without holding client data hostage.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -2026,7 +2026,7 @@
           "video_id": "mw1V2GoYHsk"
         }
       ],
-      "revision": "b9164d8f01c7573c"
+      "revision": "533d95fa63324dac"
     },
     {
       "id": "Q3",
@@ -2040,7 +2040,7 @@
       "subtitle": "Sprint Cohorts, Contractor Accruals, Processor Holds, Cloud-Credit Expiry, and Claim Controls under 15 U.S.C. 45",
       "layout_template": "financial_breakdown",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, ranks #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. Its canonical annual owner profits are $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. This chapter converts those totals into acquired-client cohorts, a seven-deduction margin waterfall, explicit remediation allowances, and settlement-delay cash requirements. Comparison-page acquisition, startup compute credits, and authorized advertising rebates receive separate economic tests. The operating discipline is simple: price human review, accrue contractors before paying distributions, distinguish deposits from earned fees, and fund delayed collections without depending on promotional credits or client advertising principal.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, ranks #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. Its canonical annual owner profits are $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. This chapter converts those totals into acquired-client cohorts, a seven-deduction margin waterfall, explicit remediation allowances, and settlement-delay cash requirements. Comparison-page acquisition, startup compute credits, and authorized advertising rebates receive separate economic tests. The operating discipline is simple: price human review, accrue contractors before paying distributions, distinguish deposits from earned fees, and fund delayed collections without depending on promotional credits or client advertising principal.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -2650,7 +2650,7 @@
           "video_id": "swIGkbLXEdM"
         }
       ],
-      "revision": "808627fd16ebc435"
+      "revision": "dbfe91116e13b6c8"
     },
     {
       "id": "Q4",
@@ -2664,7 +2664,7 @@
       "subtitle": "Reserve-First Funding, Postgres Waterfalls, Authorized Messaging, and Tenant-Isolated Delivery Under 18 U.S.C. § 1030",
       "layout_template": "comparison_table",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. Allocate sixty percent of startup cash to working capital, then buy only infrastructure that supports a contracted workflow, measurable acceptance test, or recoverable deployment. This chapter converts the $5,000–$60,000 funding range into reserve-first budgets and a twelve-layer production stack, with explicit limits on outbound automation and enrichment waterfalls. Recognized revenue consists of implementation fees and support retainers, never client sales attributed to automation. Canonical annual owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Earn those outcomes through bounded scope, authorized access, tenant isolation, usage metering, and tested recovery rather than prepaid software collections or speculative hiring.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. Allocate sixty percent of startup cash to working capital, then buy only infrastructure that supports a contracted workflow, measurable acceptance test, or recoverable deployment. This chapter converts the $5,000–$60,000 funding range into reserve-first budgets and a twelve-layer production stack, with explicit limits on outbound automation and enrichment waterfalls. Recognized revenue consists of implementation fees and support retainers, never client sales attributed to automation. Canonical annual owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Earn those outcomes through bounded scope, authorized access, tenant isolation, usage metering, and tested recovery rather than prepaid software collections or speculative hiring.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -3274,7 +3274,7 @@
           "video_id": "4imOFZeP7nk"
         }
       ],
-      "revision": "c2e10dd7cdf98779"
+      "revision": "adf0f1764e5ae5e6"
     },
     {
       "id": "Q5",
@@ -3288,7 +3288,7 @@
       "subtitle": "Fixed-Scope Sprint Economics, API Circuit-Breakers, Affiliate Reversals, Identity-Resolution Controls, and FTC Exposure",
       "layout_template": "expert_insights",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. The attractive economics depend on selling bounded implementation work, not absorbing unlimited integration debt or confusing customer sales with agency revenue. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. This chapter dissects scope creep, retry storms, defective outputs, data exposure, disputed milestones, identity-resolution claims, and affiliate bounty reversals. Treat the question's 80% figure as a rhetorical premise, not a measured failure rate. Instrument contribution by workflow, reserve against contractual reversals, and suspend unsafe actions before expanding volume. The strongest agency keeps delivery evidence, authorization, and cash realization attached to every promise.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. The attractive economics depend on selling bounded implementation work, not absorbing unlimited integration debt or confusing customer sales with agency revenue. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. This chapter dissects scope creep, retry storms, defective outputs, data exposure, disputed milestones, identity-resolution claims, and affiliate bounty reversals. Treat the question's 80% figure as a rhetorical premise, not a measured failure rate. Instrument contribution by workflow, reserve against contractual reversals, and suspend unsafe actions before expanding volume. The strongest agency keeps delivery evidence, authorization, and cash realization attached to every promise.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -3872,7 +3872,7 @@
           "video_id": "5558JLgLk50"
         }
       ],
-      "revision": "880a4fd0e12576aa"
+      "revision": "88964a9854860715"
     },
     {
       "id": "Q6",
@@ -3886,7 +3886,7 @@
       "subtitle": "DNS and Hiring Signals, HubSpot Migration Sprints, Evidence-Led Outreach, and CAN-SPAM Operating Controls",
       "layout_template": "step_by_step_sop",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score and 23 mapped plays. The sourcing advantage is finding expensive workflow friction before buyers publish a formal brief: software migrations, operations hiring, support backlogs, and integration partner overflow. Convert those signals into one fixed-scope sprint, a measurable acceptance test, and a support retainer tied to actual monitoring work. This chapter builds a weekly evidence queue, qualification scorecard, permission-aware outreach cadence, and first-deal conversion model for a 1–4 month selling window. Canonical annual owner profits remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those figures derive from implementation fees and retainers, never client sales attributed to automation.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score and 23 mapped plays. The sourcing advantage is finding expensive workflow friction before buyers publish a formal brief: software migrations, operations hiring, support backlogs, and integration partner overflow. Convert those signals into one fixed-scope sprint, a measurable acceptance test, and a support retainer tied to actual monitoring work. This chapter builds a weekly evidence queue, qualification scorecard, permission-aware outreach cadence, and first-deal conversion model for a 1–4 month selling window. Canonical annual owner profits remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those figures derive from implementation fees and retainers, never client sales attributed to automation.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -4470,7 +4470,7 @@
           "video_id": "6FS1eyS2agI"
         }
       ],
-      "revision": "a6300835980297f7"
+      "revision": "74b2e7223ebc7fc4"
     },
     {
       "id": "Q7",
@@ -4484,7 +4484,7 @@
       "subtitle": "Fixed-Scope AI Sprints, SEC EDGAR Triggers, SQLite Idempotency, Human Verification, and Cash-to-Ledger Reconciliation",
       "layout_template": "research_exhibit",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. This chapter turns that position into an executable operating system: permissioned intake, bounded workflow delivery, evidence-backed acceptance, immutable posting keys, and bank reconciliation. Annual owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled; client sales attributed to automation never enter agency revenue. A six-module SQLite reference separates internal release controls from actual custody of funds. The worked cohort produces $137,500 quarterly revenue and $41,250 profit while explaining why collections initially trail earnings. EDGAR triggers and platform-authority work become measurable acquisition experiments, with explicit fallbacks when evidence, permissions, or platform rules prevent execution.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. This chapter turns that position into an executable operating system: permissioned intake, bounded workflow delivery, evidence-backed acceptance, immutable posting keys, and bank reconciliation. Annual owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled; client sales attributed to automation never enter agency revenue. A six-module SQLite reference separates internal release controls from actual custody of funds. The worked cohort produces $137,500 quarterly revenue and $41,250 profit while explaining why collections initially trail earnings. EDGAR triggers and platform-authority work become measurable acquisition experiments, with explicit fallbacks when evidence, permissions, or platform rules prevent execution.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -5063,7 +5063,7 @@
           "video_id": "XKoGenFWVHs"
         }
       ],
-      "revision": "49c46dec249ea0c0"
+      "revision": "c72b37d43e26de94"
     },
     {
       "id": "Q8",
@@ -5077,7 +5077,7 @@
       "subtitle": "USPTO TSDR, SEC EDGAR, Microsoft Graph, Evidence Waterfalls, Tenant-Isolated Pipelines, and Measured Implementation Economics",
       "layout_template": "resource_directory",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across a portfolio of 23 mapped plays. The information edge comes from verified events, authorized integrations, and reproducible delivery economics rather than indiscriminate scraping. This chapter turns USPTO records, federal spending feeds, corporate registries, commercial enrichment, and diagnostic telemetry into fixed-scope implementation sprints and managed support retainers. It examines trademark office-action referrals and multi-inbox infrastructure, separating useful engineering from misleading mailers and unsupported delivery promises. Canonical annual owner net profits are $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those profits derive from agency fees, never client sales attributed to automation. An eighteen-source directory and explicit operating checks make delivery auditable.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across a portfolio of 23 mapped plays. The information edge comes from verified events, authorized integrations, and reproducible delivery economics rather than indiscriminate scraping. This chapter turns USPTO records, federal spending feeds, corporate registries, commercial enrichment, and diagnostic telemetry into fixed-scope implementation sprints and managed support retainers. It examines trademark office-action referrals and multi-inbox infrastructure, separating useful engineering from misleading mailers and unsupported delivery promises. Canonical annual owner net profits are $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those profits derive from agency fees, never client sales attributed to automation. An eighteen-source directory and explicit operating checks make delivery auditable.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -5740,7 +5740,7 @@
           "video_id": "DHX8uoA53OI"
         }
       ],
-      "revision": "adb3667304094696"
+      "revision": "34568de9816b84d9"
     },
     {
       "id": "Q9",
@@ -5754,7 +5754,7 @@
       "subtitle": "CFAA Access Boundaries, FTC Review Rules, TCPA Outreach, Carrier Duties, and Fixed-Scope AI Delivery Contracts",
       "layout_template": "legal_compliance_notes",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. The operating advantage comes from selling bounded implementation outcomes, not assuming clients' regulatory duties or treating their transaction volume as agency revenue. This chapter connects written access authority, data-processing terms, intellectual-property allocation, consequential-decision review, and substantiated outreach to fixed-scope sprints and support retainers. Annual owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Two hazardous mapped plays receive explicit boundaries: reputation monitoring must not become review suppression, and telecom utilities must not depend on artificial traffic or jurisdiction shopping. Use the clause matrix, scripts, and evidence checkpoints to sell repeatable services without inheriting unbounded operational exposure.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. The operating advantage comes from selling bounded implementation outcomes, not assuming clients' regulatory duties or treating their transaction volume as agency revenue. This chapter connects written access authority, data-processing terms, intellectual-property allocation, consequential-decision review, and substantiated outreach to fixed-scope sprints and support retainers. Annual owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Two hazardous mapped plays receive explicit boundaries: reputation monitoring must not become review suppression, and telecom utilities must not depend on artificial traffic or jurisdiction shopping. Use the clause matrix, scripts, and evidence checkpoints to sell repeatable services without inheriting unbounded operational exposure.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -6378,7 +6378,7 @@
           "video_id": "xQf-khf_CWE"
         }
       ],
-      "revision": "66ac1152ecb5aab1"
+      "revision": "ad008573eb4df0df"
     },
     {
       "id": "Q10",
@@ -6392,7 +6392,7 @@
       "subtitle": "Signed Webhooks, Python Workers, Evidence-Bound LLMs, Authorized Marketplace Monitoring, and Merchant-Approved Payment Routing",
       "layout_template": "case_study_walkthrough",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score. Across the volume's 23 mapped plays, the scalable asset is a repeatable implementation system, not an unlimited custom-development promise. This chapter builds signed intake webhooks, Python job workers, evidence-bound LLM outputs, deployment checklists, and monitored distribution loops around fixed-scope sprints and support retainers. Marketplace brand protection and authorized payment orchestration provide demanding operating examples. Target more than 70% automation of measured repetitive work while retaining human review for consequential outputs. Canonical annual owner net profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled; recognized revenue includes implementation fees and support retainers, never client sales or merchant payment volume.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score. Across the volume's 23 mapped plays, the scalable asset is a repeatable implementation system, not an unlimited custom-development promise. This chapter builds signed intake webhooks, Python job workers, evidence-bound LLM outputs, deployment checklists, and monitored distribution loops around fixed-scope sprints and support retainers. Marketplace brand protection and authorized payment orchestration provide demanding operating examples. Target more than 70% automation of measured repetitive work while retaining human review for consequential outputs. Canonical annual owner net profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled; recognized revenue includes implementation fees and support retainers, never client sales or merchant payment volume.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -6981,7 +6981,7 @@
           "video_id": "YaFtlj9qXQc"
         }
       ],
-      "revision": "6d7b781a6e14e2a6"
+      "revision": "f69b18a7f9c663d8"
     },
     {
       "id": "Q11",
@@ -6995,7 +6995,7 @@
       "subtitle": "Five-to-Seven-Person Delivery Pods, Weekly Acceptance Economics, Accrual Cohorts, Signed IP Transfers, and Buyer-Tested Earnings",
       "layout_template": "action_checklist",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. The operating asset is a repeatable delivery pod, not the founder's ability to rescue every deployment. Assign five seats across scope control, architecture, implementation, independent QA, and monitoring; expand to seven only against funded backlog and measured capacity. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Preserve those cases through acceptance-linked contractor payments, customer and counterparty exposure limits of 25%, accrual books, signed IP assignments, and documented access authority. Weekly evidence must connect delivered work to recognized fees and support obligations. A buyer pays for transferable earnings; a continuing owner collects the same discipline as durable cash.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. The operating asset is a repeatable delivery pod, not the founder's ability to rescue every deployment. Assign five seats across scope control, architecture, implementation, independent QA, and monitoring; expand to seven only against funded backlog and measured capacity. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Preserve those cases through acceptance-linked contractor payments, customer and counterparty exposure limits of 25%, accrual books, signed IP assignments, and documented access authority. Weekly evidence must connect delivered work to recognized fees and support obligations. A buyer pays for transferable earnings; a continuing owner collects the same discipline as durable cash.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -7574,7 +7574,7 @@
           "video_id": "91lw5ubtLMc"
         }
       ],
-      "revision": "0c0520f8cc60efc0"
+      "revision": "8bf9b3fa0d0e0628"
     },
     {
       "id": "Q12",
@@ -7588,7 +7588,7 @@
       "subtitle": "A Five-Person Sprint for Fixed-Scope AI Implementations: Authorized Access, Paid Pilots, Evaluation Evidence, and Day-30/60/90 Cash Decisions",
       "layout_template": "thirty_day_plan",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score and 23 mapped plays. Launch through one narrow workflow, one paid implementation offer, and one measurable acceptance contract rather than a catalog of custom agents. This sprint assigns commercial and technical ownership across two full-time operators and three contractors, caps initial cash exposure at $7,500, and converts daily evidence into explicit Day-30/60/90 decisions. The canonical annual owner-profit cases remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled; client savings never become agency revenue. Scale requires paid demand, repeatable delivery, safe exception handling, and positive project economics. Fix weak evidence with a bounded experiment; kill an exhausted offer rather than financing indefinite customization.",
+      "executive_summary": "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score and 23 mapped plays. Launch through one narrow workflow, one paid implementation offer, and one measurable acceptance contract rather than a catalog of custom agents. This sprint assigns commercial and technical ownership across two full-time operators and three contractors, caps initial cash exposure at $7,500, and converts daily evidence into explicit Day-30/60/90 decisions. The canonical annual owner-profit cases remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled; client savings never become agency revenue. Scale requires paid demand, repeatable delivery, safe exception handling, and positive project economics. Fix weak evidence with a bounded experiment; kill an exhausted offer rather than financing indefinite customization.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -8193,11 +8193,11 @@
           "video_id": "fMdUS6amki0"
         }
       ],
-      "revision": "89f317e5c623b7d2"
+      "revision": "93ec35bba115c6d4"
     }
   ],
   "chapter_count": 12,
   "total_word_count": 76030,
   "epistemic_note": "Educational and research material grounded in documented public authorities and attributed practitioner sources; verify jurisdiction-specific licensing, tax, and contracting rules independently.",
-  "updated_at": "2026-11-21T20:39:18Z"
+  "updated_at": "2026-11-22T16:33:18Z"
 }

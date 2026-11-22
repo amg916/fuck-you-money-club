@@ -437,7 +437,7 @@
           "name": "Canonical scorecard and positioning",
           "type": "textarea",
           "prompt": "Record the candidate identity, pipeline rank, Money-to-Manpower score, component scores, and revenue basis. Explain how the rating guides operating design without being presented as a measured probability of collecting a particular judgment.",
-          "example": "Candidate #8, Judgment Recovery, is pipeline rank #15 of 29 and scores 77/100, a High-Leverage Operator Play. Components are revenue 20, margin 21, team efficiency 16, startup accessibility 10, and automation 10. The revenue basis is recognized service fees, not client asset value or judgment principal."
+          "example": "Candidate #8, Judgment Recovery, is pipeline rank #28 of 29 and scores 79/100, a High-Leverage Operator Play. Components are revenue potential 21, margin potential 21, team efficiency 16, startup accessibility 10, and automation potential 11. The revenue basis is recognized service fees, not client asset value or judgment principal."
         },
         {
           "name": "Weekly KPI definitions and exception review",

@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower Score across a portfolio of 21 mapped plays. Its leverage comes from specialist mandates and retained transaction commissions, never from counting client asset values as revenue. Annual owner profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled. This chapter converts licensing boundaries, agency disclosures, anti-circumvention evidence, and escrow instructions into executable deal controls. It also separates legitimate ticket allocation resale from purchase-limit evasion and distinguishes authorized WOTC screening from unsupported credit claims. Use the contract matrices and verbatim scripts before soliciting counterparties: a signed mandate cannot cure an unlicensed activity, an unavailable exemption, or a commission trigger that never occurred.
+Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower Score across a portfolio of 21 mapped plays. Its leverage comes from specialist mandates and retained transaction commissions, never from counting client asset values as revenue. Annual owner profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled. This chapter converts licensing boundaries, agency disclosures, anti-circumvention evidence, and escrow instructions into executable deal controls. It also separates legitimate ticket allocation resale from purchase-limit evasion and distinguishes authorized WOTC screening from unsupported credit claims. Use the contract matrices and verbatim scripts before soliciting counterparties: a signed mandate cannot cure an unlicensed activity, an unavailable exemption, or a commission trigger that never occurred.
 
 ### Key Metrics
 

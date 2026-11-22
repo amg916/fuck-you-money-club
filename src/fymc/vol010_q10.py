@@ -6,14 +6,14 @@ CHAPTER_10 = {
     "chapter_number": 10,
     "question_number": 10,
     "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 4 C (6 people) building an seo empire team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "question_prompt": "How does a 1 FT + 3 C (4 people) building an seo empire team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
     "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
     "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
     "subtitle": "Python Audit Workers, Evidence-Bound Content Refreshes, Pinterest Distribution, Revenue Ledgers, and Copyright Review Under 17 U.S.C.",
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, holds Rank #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, holds Rank #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. This chapter converts "
         "technical audits, refresh queues, and revenue reporting into a measured "
         "automation system for two full-time operators and four contractors. "
@@ -31,19 +31,19 @@ CHAPTER_10 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -211,15 +211,15 @@ CHAPTER_10 = {
                     "and $330,750 costs. Scaled revenue of $900,000 at 45% yields "
                     "$405,000 profit and $495,000 costs. Recognized operator revenue contains "
                     "advertising, affiliate commissions, and sponsorships, never referred "
-                    "merchant checkout value. The first two cases retain 2 FT + 4 C; "
-                    "Scaled uses 3 FT + 5 C. These headcounts describe the supplied "
+                    "merchant checkout value. The first two cases retain 1 FT + 3 C; "
+                    "Scaled uses 1 FT + 3 C. These headcounts describe the supplied "
                     "team configuration, not proof that every role can receive a "
                     "market-rate salary within each case. In particular, validate owner "
                     "labor treatment and contractor utilization before treating the "
-                    "Conservative case as a hiring budget. The stated $3,000–$20,000 "
+                    "Conservative case as a hiring budget. The stated $2,500–$14,000 "
                     "monthly operating range cannot cover every implied cost in the "
                     "larger cases; reconcile its scope explicitly instead of silently "
-                    "forcing the numbers to match. Startup capital remains $15,000–$120,000, "
+                    "forcing the numbers to match. Startup capital remains $10,000–$60,000, "
                     "with a 6–24 month first-deal horizon. Fund learning and audience "
                     "development without booking projected commissions as cash. Treat the "
                     "$650 example as a proposed cost allocation within these totals, "

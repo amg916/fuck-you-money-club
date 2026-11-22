@@ -6,15 +6,15 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in business acquisition, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–18 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in business acquisition, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (4–10 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "ETA Origination Through Renewal Evidence, Succession Signals, QoE, SBA Structures, and Section 51/41 Claim Discipline",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a Money-to-Manpower "
-        "Score of 57/100: ownership offers durable upside, but sourcing cannot erase "
+        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower "
+        "Score of 86/100: ownership offers durable upside, but sourcing cannot erase "
         "capital intensity or operating labor. Seven mapped plays structure this "
         "chapter: Renewal-Led Demand Mining, License-and-Route Scarcity, "
         "Retirement-Succession Outreach, Referral-Partner Origination, "
@@ -22,7 +22,7 @@ CHAPTER_6 = {
         "wotc_hourly_payroll_tax_credit_contingency_engine. Build a documented "
         "target universe, convert observable triggers into seller conversations, "
         "and distinguish qualified opportunities from completed acquisitions. "
-        "Over 6–18 months, pursue three to ten diligence-ready opportunities "
+        "Over 4–10 months, pursue three to ten diligence-ready opportunities "
         "without forcing an unsafe closing. Canonical annual owner profit is "
         "$60,000 Conservative, $243,750 Base, and $540,000 Scaled, after interest "
         "but before principal repayments. Every offer must survive customer-loss, "
@@ -34,19 +34,19 @@ CHAPTER_6 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; exclude purchase principal and seller proceeds",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; exclude purchase principal and seller proceeds",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; exclude purchase principal and seller proceeds",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 8 FT + 4 C, 12 people",
+            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C, 12 people",
         },
     ],
     "sections": [
@@ -473,7 +473,7 @@ CHAPTER_6 = {
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Sequence the first 6–18 months around evidence milestones. Use "
+                    "Sequence the first 4–10 months around evidence milestones. Use "
                     "months one through three to refine the thesis, establish capital "
                     "capacity, build the account universe, and test outreach messages. "
                     "Use months four through six to deepen partner introductions, "
@@ -512,7 +512,7 @@ CHAPTER_6 = {
                     "scheduled annual principal leaves $153,750 before capital "
                     "spending, working-capital changes, and any other cash adjustments. "
                     "Do not subtract interest a second time. Startup capital of "
-                    "$200,000–$1,000,000 and monthly operating outlays of $15,000–$70,000 "
+                    "$30,000–$120,000 and monthly operating outlays of $6,000–$25,000 "
                     "are planning ranges, not a substitute for a complete target "
                     "cost structure. Reconcile all payroll, delivery costs, overhead, "
                     "and interest to the canonical margins rather than forcing "

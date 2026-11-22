@@ -34,8 +34,8 @@
     "diag-03-base-case-revenue-to-owner-net",
     "diag-04-subniche-publisher-revenue-yields",
     "diag-05-publication-statutory-risk-checks",
-    "diag-06-six-core-eight-scaled-publishing-seats",
-    "diag-07-startup-capital-four-bucket-allocation",
+    "diag-06-four-core-six-scaled-publishing-seats",
+    "diag-07-startup-capital-35000-reference-allocation",
     "diag-08-thirty-day-search-portfolio-sprint"
   ],
   "cover_graphic_ids": [
@@ -59,8 +59,8 @@
     "diag-03-base-case-revenue-to-owner-net",
     "diag-04-subniche-publisher-revenue-yields",
     "diag-05-publication-statutory-risk-checks",
-    "diag-06-six-core-eight-scaled-publishing-seats",
-    "diag-07-startup-capital-four-bucket-allocation",
+    "diag-06-four-core-six-scaled-publishing-seats",
+    "diag-07-startup-capital-35000-reference-allocation",
     "diag-08-thirty-day-search-portfolio-sprint"
   ],
   "allowed_statuses": [
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-six-core-eight-scaled-publishing-seats": {
+    "diag-06-four-core-six-scaled-publishing-seats": {
       "concept_a": {
-        "graphic_id": "diag-06-six-core-eight-scaled-publishing-seats",
+        "graphic_id": "diag-06-four-core-six-scaled-publishing-seats",
         "graphic_type": "diagram",
-        "label": "Operate Six Core Seats; Add Two Only in the Scaled Model",
+        "label": "Operate Four Core Seats; Add Two Only in the Scaled Model",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-six-core-eight-scaled-publishing-seats",
+        "graphic_id": "diag-06-four-core-six-scaled-publishing-seats",
         "graphic_type": "diagram",
-        "label": "Operate Six Core Seats; Add Two Only in the Scaled Model",
+        "label": "Operate Four Core Seats; Add Two Only in the Scaled Model",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-six-core-eight-scaled-publishing-seats",
+        "graphic_id": "diag-06-four-core-six-scaled-publishing-seats",
         "graphic_type": "diagram",
-        "label": "Operate Six Core Seats; Add Two Only in the Scaled Model",
+        "label": "Operate Four Core Seats; Add Two Only in the Scaled Model",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-four-bucket-allocation": {
+    "diag-07-startup-capital-35000-reference-allocation": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-startup-capital-35000-reference-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital without Mistaking It for Annual Profit",
+        "label": "Allocate a $35,000 Reference Startup Plan across Four Buckets",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-startup-capital-35000-reference-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital without Mistaking It for Annual Profit",
+        "label": "Allocate a $35,000 Reference Startup Plan across Four Buckets",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-startup-capital-35000-reference-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Capital without Mistaking It for Annual Profit",
+        "label": "Allocate a $35,000 Reference Startup Plan across Four Buckets",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-21T21:28:24Z"
+  "updated_at": "2026-11-22T16:33:20Z"
 }

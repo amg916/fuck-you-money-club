@@ -6,7 +6,7 @@ CHAPTER_2 = {
     "title": "Who Pays, Why Merchants Fund $500-$5,000 CPAs & Attribution Rails",
     "subtitle": "B2B LTV-to-CAC Economics, PartnerStack vs. Impact vs. Everflow S2S, Ringba Pay-Per-Call Switches & Regulated Healthcare/Telecom/Payfac Boundaries",
     "layout_template": "executive_summary", "reading_time_minutes": 14,
-    "executive_summary": "The merchant funds a commission because a new customer can yield more cash than the full cost to win and serve that account. The publisher gets paid only for the event the contract defines, not for a click or a sales team's hope. This chapter turns that gap into a buying discipline: price the customer, test the event, inspect the payer, and reconcile the cash. Volume 005, Candidate #24, ranks #04 at 87/100 across 35 mapped operator plays. Its economics work only when earned commissions survive reversals and collection costs.",
+    "executive_summary": "The merchant funds a commission because a new customer can yield more cash than the full cost to win and serve that account. The publisher gets paid only for the event the contract defines, not for a click or a sales team's hope. This chapter turns that gap into a buying discipline: price the customer, test the event, inspect the payer, and reconcile the cash. Volume 005, Candidate #24, ranks #02 at 92/100 across 35 mapped operator plays. Its economics work only when earned commissions survive reversals and collection costs.",
     "key_metrics": [
         {"label": "Customer LTV", "value": "$3,000-$50,000+", "context": "Merchant model", "note": "Test contribution, not sales."},
         {"label": "Acquisition fee", "value": "$300-$3,000+", "context": "Illustrative range", "note": "$5,000 needs stronger economics."},

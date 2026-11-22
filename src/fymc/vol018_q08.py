@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower "
         "Score. Its information advantage comes from resolving parcel identity, "
         "ownership, access, buildability, and resale evidence before committing "
         "capital. This chapter maps six plays: rural discount resales, infill "
@@ -586,7 +586,7 @@ CHAPTER_8 = {
                     "as someone else's transaction volume. The desk's revenue basis "
                     "is its gross parcel sale proceeds, not client deal volume, "
                     "borrowed principal, or an imagined recurring software fee. "
-                    "The stated startup capital range is $50,000 to $400,000, "
+                    "The stated startup capital range is $15,000 to $75,000, "
                     "monthly operating expense range is $3,000 to $15,000, and "
                     "time to first deal is three to twelve months. These are "
                     "planning ranges, not instructions to combine every upper "

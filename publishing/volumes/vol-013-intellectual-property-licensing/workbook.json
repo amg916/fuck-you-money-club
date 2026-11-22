@@ -70,7 +70,7 @@
           "name": "Underwriting budget and decision timetable",
           "type": "textarea",
           "prompt": "Set a staged expenditure limit for title review, demand testing, valuation, and negotiation. Connect spending releases to evidence received, and distinguish the 30-day preparation sprint from the likely time needed to close a first license.",
-          "example": "The operator starts with $75,000 capital, within the $25,000 to $250,000 planning range. Initial underwriting receives $9,000: $4,000 title work, $2,500 customer testing, and $2,500 contract design. A further $6,000 requires two qualified licensees. The first-deal planning window remains 6 to 24 months, not the first sprint."
+          "example": "The operator starts with $75,000 capital, within the $25,000 to $250,000 planning range. Initial underwriting receives $9,000: $4,000 title work, $2,500 customer testing, and $2,500 contract design. A further $6,000 requires two qualified licensees. The first-deal planning window remains 4 to 14 months, not the first sprint."
         },
         {
           "name": "Advance, revise, or reject decision",
@@ -443,7 +443,7 @@
           "name": "Canonical economics and leverage checkpoint",
           "type": "textarea",
           "prompt": "Restate the canonical portfolio economics and leverage rating without changing them to match an early pipeline. Explain how actual contracts and costs will be compared with these reference scenarios over time.",
-          "example": "Candidate 19 ranks 13 of 29 with a 79/100 score: revenue 22, margin 23, team 18, accessibility 6, automation 10. Annual revenue and owner net remain $50,000/$12,500 Conservative, $425,000/$180,625 Base, and $800,000/$480,000 Scaled. The score expresses operating leverage, not a probability of closing or a substitute for deal underwriting."
+          "example": "Candidate 19 ranks 13 of 29 with a 88/100 score: revenue potential 24, margin potential 24, team efficiency 19, startup accessibility 11, and automation potential 10. Annual revenue and owner net remain $50,000/$12,500 Conservative, $425,000/$180,625 Base, and $800,000/$480,000 Scaled. The score expresses operating leverage, not a probability of closing or a substitute for deal underwriting."
         },
         {
           "name": "Renewal quality and concentration exposure",

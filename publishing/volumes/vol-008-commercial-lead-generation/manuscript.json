@@ -1734,7 +1734,7 @@
       "subtitle": "Retainers, Accepted Appointments, Public-Record Signals, HubSpot Routing, CAN-SPAM, and TCPA Operating Boundaries",
       "layout_template": "opportunity_overview",
       "reading_time_minutes": 14,
-      "executive_summary": "Commercial lead generation converts documented business buying signals into contracted, qualified sales opportunities. Candidate #18 holds Pipeline Rank #08 of 29 and an 85/100 Money-to-Manpower Score, placing it in the Elite Small-Team Cash Machine category across 54 mapped plays. The operator earns retainers and accepted-lead fees, not the client's contract value, property proceeds, or advertising budget. Canonical annual owner net profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Durable firms own qualification definitions, signal provenance, routing reliability, and renewal evidence. Fragile firms sell scraped lists, inflated attribution, and appointments that sales teams reject. This chapter translates six mapped plays into measurable operating economics, separating legitimate infrastructure advantages from privacy exposure, fabricated demand, and funding assumptions that cannot support recurring service delivery.",
+      "executive_summary": "Commercial lead generation converts documented business buying signals into contracted, qualified sales opportunities. Candidate #18 holds Pipeline Rank #05 of 29 and an 89/100 Money-to-Manpower Score, placing it in the Elite Small-Team Cash Machine category across 54 mapped plays. The operator earns retainers and accepted-lead fees, not the client's contract value, property proceeds, or advertising budget. Canonical annual owner net profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Durable firms own qualification definitions, signal provenance, routing reliability, and renewal evidence. Fragile firms sell scraped lists, inflated attribution, and appointments that sales teams reject. This chapter translates six mapped plays into measurable operating economics, separating legitimate infrastructure advantages from privacy exposure, fabricated demand, and funding assumptions that cannot support recurring service delivery.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -1760,7 +1760,7 @@
           "heading": "1. Define the product as an accepted business opportunity",
           "epistemic_status": "operating_framework",
           "paragraphs": [
-            "Commercial lead generation is a B2B service that identifies a potential buyer, establishes a relevant business need, and delivers an opportunity under a written acceptance standard. The deliverable might be a verified facilities director requesting a roofing inspection, an IT executive attending a security assessment, or an inbound commercial insurance caller meeting a buyer's appetite. A database record alone is not equivalent to an accepted lead. Neither is a calendar reservation created without the prospect's participation. The operating contract specifies company size, territory, decision role, need, timing, duplication rules, and evidence required for acceptance. Volume 008 covers this service business rather than the customer's eventual transaction. Candidate #18 ranks #08, scores 85/100, and combines 21 revenue-potential points, 21 profit-margin points, 18 team-efficiency points, 12 startup-accessibility points, and 13 automation points. Its planning envelope is $5,000–$40,000 startup capital, $2,000–$12,000 monthly operating overhead, and one to four months to the first deal. Treat that overhead range as an early operating envelope, not a ceiling on scaled delivery costs. A founder can sell and supervise qualification while contractors handle research, campaign operations, and CRM administration. The constraint is reliable buyer acceptance, not how many contacts software can export.",
+            "Commercial lead generation is a B2B service that identifies a potential buyer, establishes a relevant business need, and delivers an opportunity under a written acceptance standard. The deliverable might be a verified facilities director requesting a roofing inspection, an IT executive attending a security assessment, or an inbound commercial insurance caller meeting a buyer's appetite. A database record alone is not equivalent to an accepted lead. Neither is a calendar reservation created without the prospect's participation. The operating contract specifies company size, territory, decision role, need, timing, duplication rules, and evidence required for acceptance. Volume 008 covers this service business rather than the customer's eventual transaction. Candidate #18 ranks #05, scores 89/100, and combines 21 revenue-potential points, 21 profit-margin points, 18 team-efficiency points, 12 startup-accessibility points, and 13 automation points. Its planning envelope is $5,000–$40,000 startup capital, $2,000–$12,000 monthly operating overhead, and one to four months to the first deal. Treat that overhead range as an early operating envelope, not a ceiling on scaled delivery costs. A founder can sell and supervise qualification while contractors handle research, campaign operations, and CRM administration. The constraint is reliable buyer acceptance, not how many contacts software can export.",
             "Five operator archetypes organize the market: signal researchers, outbound appointment teams, inbound acquisition specialists, call-routing desks, and embedded revenue-operations partners. Each earns a different mix of recurring service fees and accepted-opportunity fees. A signal researcher sells a documented trigger and verified business contact; an appointment team additionally earns the prospect's agreement to meet. An inbound specialist converts client-funded search traffic into screened inquiries. A routing desk connects genuine callers to available buyers, while an embedded partner manages qualification and handoff inside HubSpot or Salesforce. Combine archetypes only when the acceptance and attribution rules remain legible. For example, charge a $2,500 monthly operating retainer plus $250 for each separately billable accepted appointment; do not quietly count appointments already included in the retainer twice. Contract language should distinguish booked, attended, qualified, accepted, and closed stages. A prospect can attend and still fail the agreed company-size test. Conversely, a properly qualified meeting does not become defective merely because the client's salesperson loses the deal. Durable operators obtain rejection codes and supporting evidence within a defined review window. They then compare rejection rates by source and cohort, rather than accepting a buyer's unexplained monthly deduction. This discipline turns lead quality into a measurable service specification.",
             "The mapped play public_record_api_intelligence uses fragmented county dockets, permit files, probate registries, unclaimed-property ledgers, and public APIs to identify documented events. For commercial lead generation, prioritize business expansion permits, contractor registrations, commercial filings, and other organizational buying signals. A public record is a research input, not proof that a claim is uncontested or permission to solicit every named individual. Probate and unclaimed-property work can involve personal information, solicitation limits, recovery-fee restrictions, and separate licensing questions; route those opportunities to a separately qualified service rather than treating them as ordinary B2B inventory. An illustrative batch of 2,000 records might produce 200 relevant business events and 40 verified accounts. At $600 in extraction and analyst cost, the verified-account cost is $15. If eight accounts become accepted appointments billed at $250, appointment fees total $2,000 before outreach labor, overhead, and rejection adjustments. Record source URLs, publication dates, retrieval timestamps, entity matches, and permitted reuse terms. Federal FOIA under 5 U.S.C. 552 applies to federal agencies; county access follows the relevant state records law. When APIs disappear or access terms change, switch to scheduled public-record exports, official feeds, and low-frequency cached queues. Never sell stale filing dates as evidence of fresh purchase intent."
           ],
@@ -2387,7 +2387,7 @@
           "video_id": "d7ES0xh_MqI"
         }
       ],
-      "revision": "9d219d2681bb1164"
+      "revision": "2cc191941ff833e7"
     },
     {
       "id": "Q2",
@@ -2401,7 +2401,7 @@
       "subtitle": "Budget Owners, Accepted-Lead Ledgers, ACH Settlement, Private Trigger Mail, FAR Contingent-Fee Limits, and Carrier-Paid Enrollment",
       "layout_template": "executive_summary",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. Buyers pay to replace idle sales capacity and uncertain acquisition costs with documented, accepted commercial opportunities. Their statutory exposure shapes qualification and evidence requirements; it does not create an automatic right to fees. This chapter identifies the actual budget owner, separates settlement rails from pricing arrangements, and protects payment through acceptance records, credit limits, and bounded dispute procedures. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees, excluding client-funded advertising pass-through. Six mapped plays show how to sell commercial introductions without confusing merchant principal, public subsidies, or subcontractor billings with agency revenue.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. Buyers pay to replace idle sales capacity and uncertain acquisition costs with documented, accepted commercial opportunities. Their statutory exposure shapes qualification and evidence requirements; it does not create an automatic right to fees. This chapter identifies the actual budget owner, separates settlement rails from pricing arrangements, and protects payment through acceptance records, credit limits, and bounded dispute procedures. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees, excluding client-funded advertising pass-through. Six mapped plays show how to sell commercial introductions without confusing merchant principal, public subsidies, or subcontractor billings with agency revenue.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -3027,7 +3027,7 @@
           "video_id": "ozWkxUTBug4"
         }
       ],
-      "revision": "c089abba97837b9a"
+      "revision": "cdfca1dde7d07830"
     },
     {
       "id": "Q3",
@@ -3041,7 +3041,7 @@
       "subtitle": "Accepted-Lead Cohorts, CRM Reversal Ledgers, Contractor CAC, DSO Locks, and TCPA-Aware Cash Forecasting",
       "layout_template": "financial_breakdown",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. The business sells retainers and accepted-lead fees, not client advertising volume. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled, on recognized revenue of $100,000, $425,000, and $750,000 respectively. This chapter reconciles those outcomes through explicit scrub allowances, contractor labor, acquisition costs, infrastructure, and collection expenses. Six mapped plays expose different rejection, legal, and funding risks; none receives free revenue simply because its trigger data is inexpensive. Cohort acceptance rules, contractual reversal deadlines, and a thirteen-week cash forecast determine whether reported margin becomes spendable cash. Client-funded media remains outside operator revenue throughout.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. The business sells retainers and accepted-lead fees, not client advertising volume. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled, on recognized revenue of $100,000, $425,000, and $750,000 respectively. This chapter reconciles those outcomes through explicit scrub allowances, contractor labor, acquisition costs, infrastructure, and collection expenses. Six mapped plays expose different rejection, legal, and funding risks; none receives free revenue simply because its trigger data is inexpensive. Cohort acceptance rules, contractual reversal deadlines, and a thirteen-week cash forecast determine whether reported margin becomes spendable cash. Client-funded media remains outside operator revenue throughout.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -3671,7 +3671,7 @@
           "video_id": "tfCx05hBH78"
         }
       ],
-      "revision": "963328c6e5e89b05"
+      "revision": "12501c9238eaa3bc"
     },
     {
       "id": "Q4",
@@ -3685,7 +3685,7 @@
       "subtitle": "Reserve-First Capital Allocation, Google Workspace, Cloudflare, Twilio, Consent Records, and Accepted-Lead Economics",
       "layout_template": "comparison_table",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. Build the business around accepted commercial opportunities, not mailbox counts or client advertising volume. Reserve 60% of the $5,000–$40,000 opening capital, buy one narrow production stack, and release spending against collected retainers and documented acceptance rates. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. This chapter connects public-channel signals, freight recovery, assessment appeals, static edge sites, healthcare acquisition, and consent-first screening to explicit cash controls. The operating discipline is simple: authenticate every channel, reconcile every billable event, and keep speculative infrastructure from consuming the reserve that carries collections.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. Build the business around accepted commercial opportunities, not mailbox counts or client advertising volume. Reserve 60% of the $5,000–$40,000 opening capital, buy one narrow production stack, and release spending against collected retainers and documented acceptance rates. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. This chapter connects public-channel signals, freight recovery, assessment appeals, static edge sites, healthcare acquisition, and consent-first screening to explicit cash controls. The operating discipline is simple: authenticate every channel, reconcile every billable event, and keep speculative infrastructure from consuming the reserve that carries collections.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -4320,7 +4320,7 @@
           "video_id": "RodU66qhDeY"
         }
       ],
-      "revision": "af790787e6a3c926"
+      "revision": "adb21cfcb950248c"
     },
     {
       "id": "Q5",
@@ -4334,7 +4334,7 @@
       "subtitle": "Accepted-Lead Economics, Multi-Inbox Suspension Signals, UCC Filing Limits, TCPA Exposure & Rebate Clawbacks",
       "layout_template": "expert_insights",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. Its small-team advantage disappears when booked meetings masquerade as accepted leads, advertising pass-through becomes reported revenue, or unsettled partner commissions finance payroll. Canonical annual owner profits are $20,000 Conservative, $127,500 Base, and $300,000 Scaled. This chapter isolates the defects behind those collapses: attribution disputes, inbox restrictions, stale UCC signals, unsupported accessibility claims, affiliate reversals, and vendor refusal of virtual cards. Each operating threshold is a proposed internal control, not an industry survival statistic. The question's 80% framing is not treated as measured evidence. Build around auditable acceptance, channel-specific permissions, contribution after defects, and cash that survives the contractual reversal window.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. Its small-team advantage disappears when booked meetings masquerade as accepted leads, advertising pass-through becomes reported revenue, or unsettled partner commissions finance payroll. Canonical annual owner profits are $20,000 Conservative, $127,500 Base, and $300,000 Scaled. This chapter isolates the defects behind those collapses: attribution disputes, inbox restrictions, stale UCC signals, unsupported accessibility claims, affiliate reversals, and vendor refusal of virtual cards. Each operating threshold is a proposed internal control, not an industry survival statistic. The question's 80% framing is not treated as measured evidence. Build around auditable acceptance, channel-specific permissions, contribution after defects, and cash that survives the contractual reversal window.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -4928,7 +4928,7 @@
           "video_id": "wU1OKeR3fvI"
         }
       ],
-      "revision": "ad1d420e012bee7c"
+      "revision": "ab61823f9efc4504"
     },
     {
       "id": "Q6",
@@ -4942,7 +4942,7 @@
       "subtitle": "FMCSA Signals, Objective Directory Rankings, Account-Level Intent, CAN-SPAM Outreach, and Accepted-Appointment Economics",
       "layout_template": "step_by_step_sop",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. The first deals hide where a dated operating trigger meets a buyer with capacity, budget, and measurable customer value. Build one narrow signal feed, qualify the receiving client before sourcing prospects, and sell a bounded pilot with explicit acceptance rules. This chapter turns directory placements, trucking records, community intent, transparent social publishing, and carefully bounded legal-sector marketing into a repeatable sourcing system. Canonical annual owner profits are $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees; client advertising pass-through, prospective settlement values, and customers' sales remain outside operator revenue.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. The first deals hide where a dated operating trigger meets a buyer with capacity, budget, and measurable customer value. Build one narrow signal feed, qualify the receiving client before sourcing prospects, and sell a bounded pilot with explicit acceptance rules. This chapter turns directory placements, trucking records, community intent, transparent social publishing, and carefully bounded legal-sector marketing into a repeatable sourcing system. Canonical annual owner profits are $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees; client advertising pass-through, prospective settlement values, and customers' sales remain outside operator revenue.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -5541,7 +5541,7 @@
           "video_id": "UpSWlkeuUqs"
         }
       ],
-      "revision": "a146efc481ec3e53"
+      "revision": "a490a84be2a2c31b"
     },
     {
       "id": "Q7",
@@ -5555,7 +5555,7 @@
       "subtitle": "Permissioned Outbound, Qualified-Call Routing, SQLite Event Controls, CAN-SPAM Duties, and a Cash-Reconciled Five-Client Cohort",
       "layout_template": "research_exhibit",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. The operating advantage comes from proving lead acceptance, controlling delivery costs, and collecting contracted fees without treating client advertising spend as revenue. This chapter connects intake, permission checks, multi-inbox delivery, call routing, verification, billing, and cash through a six-module SQLite reference. A five-client, 90-day cohort earns $106,250, incurs $74,375 of operating costs, and produces $31,875 of owner profit, exactly one quarter of the Base case. Annual owner profit remains $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Specialist plays receive explicit boundaries separating ordinary marketing fees from licensed legal operations, property transactions, and platform participation.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. The operating advantage comes from proving lead acceptance, controlling delivery costs, and collecting contracted fees without treating client advertising spend as revenue. This chapter connects intake, permission checks, multi-inbox delivery, call routing, verification, billing, and cash through a six-module SQLite reference. A five-client, 90-day cohort earns $106,250, incurs $74,375 of operating costs, and produces $31,875 of owner profit, exactly one quarter of the Base case. Annual owner profit remains $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Specialist plays receive explicit boundaries separating ordinary marketing fees from licensed legal operations, property transactions, and platform participation.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -6139,7 +6139,7 @@
           "video_id": "QnqQKoCeYa8"
         }
       ],
-      "revision": "fbe79e680ecae5f5"
+      "revision": "8531abe2516aafdd"
     },
     {
       "id": "Q8",
@@ -6153,7 +6153,7 @@
       "subtitle": "SAM.gov, Permit Feeds, DNS Change Detection, Enrichment Waterfalls, Authenticated Mailboxes, and Metered Twilio / Ringba Routing",
       "layout_template": "resource_directory",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. Its information edge comes from joining public buying signals, verified business identities, permission records, and auditable delivery events—not accumulating larger contact lists. This chapter specifies a twenty-source directory, an evidence-preserving enrichment waterfall, mailbox diagnostics, and prepaid call-routing controls. It unpacks five mapped plays while separating observable signals from unsupported renewal predictions, artificial citation manipulation, and provider-ineligible mailbox subsidies. Canonical annual owner net profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Retainers and accepted-lead fees produce those cases; client advertising spend and underlying customer contract value never become desk revenue.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. Its information edge comes from joining public buying signals, verified business identities, permission records, and auditable delivery events—not accumulating larger contact lists. This chapter specifies a twenty-source directory, an evidence-preserving enrichment waterfall, mailbox diagnostics, and prepaid call-routing controls. It unpacks five mapped plays while separating observable signals from unsupported renewal predictions, artificial citation manipulation, and provider-ineligible mailbox subsidies. Canonical annual owner net profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Retainers and accepted-lead fees produce those cases; client advertising spend and underlying customer contract value never become desk revenue.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -6810,7 +6810,7 @@
           "video_id": "nRh4F859Xjo"
         }
       ],
-      "revision": "7fb054045777f802"
+      "revision": "2a0c4d4d1da8398f"
     },
     {
       "id": "Q9",
@@ -6824,7 +6824,7 @@
       "subtitle": "CAN-SPAM, TCPA, State Privacy Rules, Accepted-Lead Contracts, Ping-Post Evidence, and Permission-Aware B2B Outreach",
       "layout_template": "legal_compliance_notes",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. The durable business sells documented qualification and accountable routing, rather than untraceable contact lists. This chapter translates CAN-SPAM, TCPA, state privacy and recording rules, sector licensing boundaries, and buyer contracts into operating controls for multi-inbox outbound, appointment setting, newsletter referrals, and ping-post auctions. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees, excluding client-funded advertising pass-through. Use explicit acceptance evidence, restrained outreach scripts, channel-specific permissions, and enforceable dispute procedures to protect those margins before increasing acquisition volume.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. The durable business sells documented qualification and accountable routing, rather than untraceable contact lists. This chapter translates CAN-SPAM, TCPA, state privacy and recording rules, sector licensing boundaries, and buyer contracts into operating controls for multi-inbox outbound, appointment setting, newsletter referrals, and ping-post auctions. Canonical annual owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees, excluding client-funded advertising pass-through. Use explicit acceptance evidence, restrained outreach scripts, channel-specific permissions, and enforceable dispute procedures to protect those margins before increasing acquisition volume.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -7466,7 +7466,7 @@
           "video_id": "94mDeuLH24c"
         }
       ],
-      "revision": "ba8d486c7c0da847"
+      "revision": "94b9ccd377bef1ba"
     },
     {
       "id": "Q10",
@@ -7480,7 +7480,7 @@
       "subtitle": "Python Event Ledgers, Permission-Aware CRM Routing, TSDR Triggers, JobPosting Feeds, and Human-Reviewed Acquisition Economics",
       "layout_template": "case_study_walkthrough",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. Its automation advantage is not message volume; it is a permission-aware operating system that turns verified signals into accepted appointments without multiplying review labor. Build Python webhook intake, durable event storage, deterministic suppression, evidence-backed qualification, and CRM reconciliation before adding language models. This chapter connects warm outbound triggers, trademark events, recruitment feeds, search-feed economics, and storm matching to explicit human controls. Canonical annual owner profit remains $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Retainers and accepted-lead fees constitute revenue; client advertising spend does not. Measure untouched work, exception minutes, reversals, and accepted-lead contribution before expanding distribution.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. Its automation advantage is not message volume; it is a permission-aware operating system that turns verified signals into accepted appointments without multiplying review labor. Build Python webhook intake, durable event storage, deterministic suppression, evidence-backed qualification, and CRM reconciliation before adding language models. This chapter connects warm outbound triggers, trademark events, recruitment feeds, search-feed economics, and storm matching to explicit human controls. Canonical annual owner profit remains $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Retainers and accepted-lead fees constitute revenue; client advertising spend does not. Measure untouched work, exception minutes, reversals, and accepted-lead contribution before expanding distribution.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -8069,7 +8069,7 @@
           "video_id": "bAri9HF705I"
         }
       ],
-      "revision": "ae5ba6b0f44f0c24"
+      "revision": "b6b8ad81dade9878"
     },
     {
       "id": "Q11",
@@ -8083,7 +8083,7 @@
       "subtitle": "Four-to-Six-Person B2B Pods, HubSpot Acceptance Ledgers, Contractor QA SLAs, CAN-SPAM Controls, and Written IP Transfers Under 17 U.S.C. Section 204(a)",
       "layout_template": "action_checklist",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. Build the business around accepted demand, documented delivery, and transferable customer relationships, not inbox counts. The Conservative case produces $20,000 annual owner net profit on $100,000 revenue; Base produces $127,500 on $425,000; Scaled produces $300,000 on $750,000. Retainers and accepted-lead fees constitute revenue; client-funded advertising pass-through does not. This chapter assigns every delivery responsibility within the 1 FT + 3 C starting pod and 2 FT + 4 C scaled pod, connects weekly quality evidence to contractor payments, and separates owner earnings from buyer-normalized earnings. Concentration limits, signed IP assignments, cohort accounting, and tested founder absence make either an exit or continued ownership credible.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. Build the business around accepted demand, documented delivery, and transferable customer relationships, not inbox counts. The Conservative case produces $20,000 annual owner net profit on $100,000 revenue; Base produces $127,500 on $425,000; Scaled produces $300,000 on $750,000. Retainers and accepted-lead fees constitute revenue; client-funded advertising pass-through does not. This chapter assigns every delivery responsibility within the 1 FT + 3 C starting pod and 2 FT + 4 C scaled pod, connects weekly quality evidence to contractor payments, and separates owner earnings from buyer-normalized earnings. Concentration limits, signed IP assignments, cohort accounting, and tested founder absence make either an exit or continued ownership credible.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -8672,7 +8672,7 @@
           "video_id": "klDqIDgOt58"
         }
       ],
-      "revision": "5fd0682eacf55b9f"
+      "revision": "3ff969e30e5d059c"
     },
     {
       "id": "Q12",
@@ -8686,7 +8686,7 @@
       "subtitle": "A Four-Person Launch Pod Using HubSpot, Google Workspace, Qualified-Appointment Routing, CAN-SPAM Controls, and Cash-Bounded Cohort Decisions",
       "layout_template": "thirty_day_plan",
       "reading_time_minutes": 14,
-      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. This sprint turns that opportunity into a four-person operating system: one full-time owner plus three contractors cover targeting, inbox operations, and qualification. Days 1–7 establish the offer and evidence controls; Days 8–14 test outreach; Days 15–21 validate appointments and client acceptance; Days 22–30 reconcile cash and select Kill, Fix, or Scale. The canonical annual owner-profit cases are $20,000 Conservative, $127,500 Base, and $300,000 Scaled, excluding client-funded advertising pass-through from operator revenue. A $5,000 first-month cash-burn ceiling, explicit sample requirements, and separate acquisition and delivery scoreboards prevent early activity from masquerading as a repeatable business.",
+      "executive_summary": "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. This sprint turns that opportunity into a four-person operating system: one full-time owner plus three contractors cover targeting, inbox operations, and qualification. Days 1–7 establish the offer and evidence controls; Days 8–14 test outreach; Days 15–21 validate appointments and client acceptance; Days 22–30 reconcile cash and select Kill, Fix, or Scale. The canonical annual owner-profit cases are $20,000 Conservative, $127,500 Base, and $300,000 Scaled, excluding client-funded advertising pass-through from operator revenue. A $5,000 first-month cash-burn ceiling, explicit sample requirements, and separate acquisition and delivery scoreboards prevent early activity from masquerading as a repeatable business.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -9314,11 +9314,11 @@
           "video_id": "OJFNkb_PwS4"
         }
       ],
-      "revision": "3404042914352300"
+      "revision": "26855c0f5358a963"
     }
   ],
   "chapter_count": 12,
   "total_word_count": 77918,
   "epistemic_note": "Educational and research material grounded in documented public authorities and attributed practitioner sources; verify jurisdiction-specific licensing, tax, and contracting rules independently.",
-  "updated_at": "2026-11-21T21:09:59Z"
+  "updated_at": "2026-11-22T16:33:19Z"
 }

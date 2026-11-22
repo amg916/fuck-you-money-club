@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 Money-to-Manpower Score. This chapter translates 12 mapped plays into a fee-only operating model: client property is never operator revenue. Conservative, Base, and Scaled cases produce $60,000, $255,000, and $450,000 recognized annual fees, yielding $15,000, $95,625, and $225,000 annual owner profit. The waterfall separates identity scrubs, fee reversals, contractor delivery, acquisition, overhead, and collection expense. Cash planning then adds treasury processing, payout restrictions, and invoice DSO rather than treating an accepted claim as spendable cash. Settlement recovery receives its own eligibility and fee logic; corporate class-action contingencies cannot be substituted for capped state finder fees.
+Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 Money-to-Manpower Score. This chapter translates 12 mapped plays into a fee-only operating model: client property is never operator revenue. Conservative, Base, and Scaled cases produce $60,000, $255,000, and $450,000 recognized annual fees, yielding $15,000, $95,625, and $225,000 annual owner profit. The waterfall separates identity scrubs, fee reversals, contractor delivery, acquisition, overhead, and collection expense. Cash planning then adds treasury processing, payout restrictions, and invoice DSO rather than treating an accepted claim as spendable cash. Settlement recovery receives its own eligibility and fee logic; corporate class-action contingencies cannot be substituted for capped state finder fees.
 
 ### Key Metrics
 

@@ -6,21 +6,21 @@ CHAPTER_10 = {
     "chapter_number": 10,
     "question_number": 10,
     "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 7 FT + 3 C (10 people) business acquisition team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "question_prompt": "How does a 2 FT + 2 C (4 people) business acquisition team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
     "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
     "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
     "subtitle": "Seven ETA Automation Plays: Python Webhooks, Evidence-Linked QoE, SBA Covenant Monitoring, and Measured Distribution Loops",
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a 57/100 Money-to-Manpower Score: "
+        "Candidate #13, Business Acquisition, ranks #17 with a 86/100 Money-to-Manpower Score: "
         "automation improves operating discipline, but does not remove capital intensity or leverage. "
         "This chapter maps seven plays: sourcing research, qualification, QoE evidence preparation, "
         "financial reporting, back-office routing, fulfillment coordination, and distribution feedback. "
-        "A 7 FT + 3 C pod uses Python, authenticated webhooks, bounded language-model tasks, and "
+        "A 2 FT + 2 C pod uses Python, authenticated webhooks, bounded language-model tasks, and "
         "human release decisions to target 70%+ automation of measured repetitive work. Canonical "
         "annual owner profit remains $60,000 Conservative, $243,750 Base, and $540,000 Scaled, "
-        "after interest and before principal repayments. The Scaled case requires 8 FT + 4 C. "
+        "after interest and before principal repayments. The Scaled case requires 3 FT + 3 C. "
         "Build durable evidence trails, price every completed workflow, and convert verified customer "
         "outcomes into repeatable acquisition channels without confusing pipeline value with acquired-business sales."
     ),
@@ -29,19 +29,19 @@ CHAPTER_10 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; interest included in margin",
-            "note": "8% margin; $60,000 annual owner net profit; 7 FT + 3 C; before principal repayments",
+            "note": "8% margin; $60,000 annual owner net profit; 2 FT + 2 C; before principal repayments",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; interest included in margin",
-            "note": "13.0% margin; $243,750 annual owner net profit; 7 FT + 3 C; before principal repayments",
+            "note": "13.0% margin; $243,750 annual owner net profit; 2 FT + 2 C; before principal repayments",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; interest included in margin",
-            "note": "18% margin; $540,000 annual owner net profit; 8 FT + 4 C; before principal repayments",
+            "note": "18% margin; $540,000 annual owner net profit; 3 FT + 3 C; before principal repayments",
         },
     ],
     "sections": [
@@ -62,7 +62,7 @@ CHAPTER_10 = {
                     "success lead, and two delivery operators. Assign the three contractor seats to transaction "
                     "counsel, a QoE specialist, and an automation engineer, with their hours budgeted rather than "
                     "treated as unlimited capacity. This is an illustrative staffing allocation within the "
-                    "canonical ten-person constraint, not ten acquisition staff sitting above an uncounted workforce. "
+                    "canonical four-person constraint, not ten acquisition staff sitting above an uncounted workforce. "
                     "Choose targets whose delivery model actually fits these seats. If the acquired company "
                     "needs more field labor, reconcile that requirement before underwriting its operating margin "
                     "or promising an automated turnaround."
@@ -93,8 +93,8 @@ CHAPTER_10 = {
                     "before growth experiments amplify them. During days 31 through 60, standardize invoice "
                     "routing, delivery checklists, and renewal alerts. During days 61 through 100, expand sourcing "
                     "and distribution only after service reliability and cash conversion hold steady. The "
-                    "canonical $200,000–$1,000,000 startup capital range is acquisition context, not a software "
-                    "budget, and the $15,000–$70,000 monthly opex range is not a complete income statement. "
+                    "canonical $30,000–$120,000 startup capital range is acquisition context, not a software "
+                    "budget, and the $6,000–$25,000 monthly opex range is not a complete income statement. "
                     "Build an explicit bridge for cost of delivery, overhead, interest, and working capital "
                     "rather than forcing those ranges to equal scenario expenses. The six-to-eighteen-month "
                     "first-deal horizon also means sourcing automation must survive long quiet periods without "
@@ -105,7 +105,7 @@ CHAPTER_10 = {
                 ),
             ],
             "table": {
-                "caption": "Seven Mapped Business Acquisition Plays Within the Ten-Person Pod",
+                "caption": "Seven Mapped Business Acquisition Plays Within the Four-Person Pod",
                 "headers": [
                     "Mapped operator play",
                     "Accountable pod ownership",
@@ -314,9 +314,9 @@ CHAPTER_10 = {
                     "The corresponding expense envelopes are $690,000, $1,631,250, and $2,460,000, respectively. These "
                     "margins include interest and precede principal repayments. Do not add estimated automation "
                     "savings to those profits unless rebuilding the entire scenario with an explicit expense "
-                    "bridge. Conservative and Base both use 7 FT + 3 C, while Scaled uses 8 FT "
+                    "bridge. Conservative and Base both use 2 FT + 2 C, while Scaled uses 8 FT "
                     "+ 4 C, or twelve people. A software demonstration cannot justify calling the Scaled "
-                    "case a ten-person operation. Principal belongs in a separate cash schedule: an illustrative "
+                    "case a four-person operation. Principal belongs in a separate cash schedule: an illustrative "
                     "$90,000 annual principal requirement would leave Base profit less principal of $153,750, "
                     "before working-capital movements, capital expenditures, and owner-level taxes. That amount "
                     "is neither revised scorecard profit nor automatically distributable cash. Read the executed "
@@ -348,7 +348,7 @@ CHAPTER_10 = {
                     "cash. If the same illustrative workload previously required four minutes per run at "
                     "$45 per hour, its loaded labor value was $6,000 monthly. Subtracting the $1,676 "
                     "workflow cost yields $4,324 of potential capacity value, not automatic incremental profit. "
-                    "The ten-person pod may redeploy that time into collections, customer retention, and delivery "
+                    "The four-person pod may redeploy that time into collections, customer retention, and delivery "
                     "quality while payroll remains unchanged. Recognize a cash saving only when a real "
                     "expense disappears, such as a reduced contractor invoice or an avoided incremental hire "
                     "supported by capacity records. Monitor review precision, correction rates, and cash outcomes "
@@ -418,7 +418,7 @@ CHAPTER_10 = {
                     "Verify the scenario bridge still yields $60,000, $243,750, or $540,000 annual owner profit as applicable, with interest included and principal tracked separately.",
                     "Confirm every payment, lender submission, purchase offer, and employment action has a named human release owner and retained evidence of the reviewed version.",
                     "Demonstrate duplicate-event handling, ambiguous-write reconciliation, backup restoration, and manual fulfillment fallback using test records before production expansion.",
-                    "Confirm measured review hours fit the 7 FT + 3 C pod; budget the Scaled case's additional employee and contractor before adopting its throughput assumptions.",
+                    "Confirm measured review hours fit the 2 FT + 2 C pod; budget the Scaled case's additional employee and contractor before adopting its throughput assumptions.",
                 ],
             },
         },

@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a 63/100 Money-to-Manpower "
+        "Candidate #7, Mineral Rights, ranks #25 with a 81/100 Money-to-Manpower "
         "Score: attractive asset economics, constrained by capital, title work, and specialist labor. "
         "This chapter maps five operator plays: producing-mineral acquisitions, NPRI acquisitions, "
         "pooling-docket curve-jumping, royalty reconciliation, and institutional flips. Each requires "
@@ -353,7 +353,7 @@ CHAPTER_9 = {
                     "revenue and profit are $24,000, $145,125, and $220,000. These are "
                     "scenario expense envelopes, not permission to expense returned acquisition "
                     "principal as recurring overhead. Maintain a separate capital ledger for "
-                    "the $150,000 to $2,000,000 startup capital range. Explain timing and "
+                    "the $15,000 to $75,000 startup capital range. Explain timing and "
                     "classification differences between cash movement, asset basis, and recognized "
                     "results before comparing a quarter with the annual model."
                 ),

@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. Its economic engine is "
         "advertising, affiliate commissions, and sponsorship revenue, never referred "
         "merchant sales. The canonical annual owner-profit cases are $16,000 "
@@ -32,19 +32,19 @@ CHAPTER_3 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -405,10 +405,10 @@ CHAPTER_3 = {
                     "reserve, not a claim that the reserve is another annual "
                     "expense. It also excludes acquisition purchase prices, "
                     "tax payments, debt principal, and prelaunch spending. "
-                    "The supplied $15,000–$120,000 startup range therefore "
+                    "The supplied $10,000–$60,000 startup range therefore "
                     "does not automatically fund the Base or Scaled "
                     "steady-state liquidity target. Similarly, the supplied "
-                    "$3,000–$20,000 monthly opex range cannot describe every "
+                    "$2,500–$14,000 monthly opex range cannot describe every "
                     "mature scenario: the reconciled annual expenses imply "
                     "approximately $5,333, $27,563, and $41,250 monthly. Treat "
                     "the stated range as an earlier operating envelope "

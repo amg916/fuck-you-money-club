@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower Score. This chapter turns 11 mapped plays into an authority-first sourcing system: docket intelligence, property distress signals, professional referrals, and executor service demand become verified conversations rather than indiscriminate mailing lists. Start with one county, establish lawful contact routes, and measure each transition from matched estate to collected commission. The first 3-to-10 closed wins belong inside a 4–18 month planning window, with court delays and family disputes explicitly tracked. Canonical annual owner profits are $24,000 Conservative, $140,250 Base, and $315,000 Scaled. Revenue means retained brokerage commissions after brokerage splits, never property sale proceeds, acquisition principal, or contractor invoices.
+Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. This chapter turns 11 mapped plays into an authority-first sourcing system: docket intelligence, property distress signals, professional referrals, and executor service demand become verified conversations rather than indiscriminate mailing lists. Start with one county, establish lawful contact routes, and measure each transition from matched estate to collected commission. The first 3-to-10 closed wins belong inside a 4–18 month planning window, with court delays and family disputes explicitly tracked. Canonical annual owner profits are $24,000 Conservative, $140,250 Base, and $315,000 Scaled. Revenue means retained brokerage commissions after brokerage splits, never property sale proceeds, acquisition principal, or contractor invoices.
 
 ### Key Metrics
 

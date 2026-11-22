@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 "
         "Money-to-Manpower Score across 54 mapped plays. Its information edge comes "
         "from joining public buying signals, verified business identities, permission "
         "records, and auditable delivery events—not accumulating larger contact lists. "

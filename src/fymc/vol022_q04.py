@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($75,000–$400,000 USD) and configure a lean, low-opex ($5,000–$22,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($20,000–$95,000 USD) and configure a lean, low-opex ($4,000–$18,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Serial-Level Inventory, Biomed Bench Capacity, FDA Servicing Boundaries, HIPAA Media Disposal, and a Cash-First Six-Person Pod",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
         "Money-to-Manpower Score: capital discipline matters more than another software subscription. "
         "This chapter maps three operator plays: diagnostic buy-refurbish-resell, matched-buyer "
         "surgical/veterinary resale, and aesthetic buy-to-order resale. Allocate 55% of startup "
@@ -30,19 +30,19 @@ CHAPTER_4 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -440,7 +440,7 @@ CHAPTER_4 = {
             },
         },
         {
-            "heading": "4. Rehearse one complete transaction before expanding the six-person pod",
+            "heading": "4. Rehearse one complete transaction before expanding the four-person pod",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
@@ -502,7 +502,7 @@ CHAPTER_4 = {
                 ),
             ],
             "table": {
-                "caption": "Six-Person Launch Pod and Evidence-Based Handoffs Before Scaled Expansion",
+                "caption": "Four-Person Launch Pod and Evidence-Based Handoffs Before Scaled Expansion",
                 "headers": [
                     "Pod position and accountable operating scope",
                     "Required output before the next handoff",

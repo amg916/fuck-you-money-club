@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #20, Specialty Finance Brokerage, ranks #14 among the series' 29 mapped plays with a Money-to-Manpower Score of 79/100. Launch one commercial financing lane with two full-time operators and two contractors, not four simultaneous product desks. The first month must produce a documented lender matrix, permissioned borrower files, written compensation terms and measurable lender engagement within an $8,000 cash ceiling. Day 30/60/90 decisions distinguish broken distribution from ordinary closing latency: first revenue commonly takes three to nine months. Canonical annual owner profits are $30,000 Conservative, $196,000 Base and $450,000 Scaled. These are retained-fee business outcomes, never financed principal. Expand only after independent lender coverage, qualified-file conversion and executable fee economics survive explicit thresholds.
+Candidate #20, Specialty Finance Brokerage, ranks #06 among the series' 29 mapped plays with a Money-to-Manpower Score of 89/100. Launch one commercial financing lane with two full-time operators and two contractors, not four simultaneous product desks. The first month must produce a documented lender matrix, permissioned borrower files, written compensation terms and measurable lender engagement within an $8,000 cash ceiling. Day 30/60/90 decisions distinguish broken distribution from ordinary closing latency: first revenue commonly takes three to nine months. Canonical annual owner profits are $30,000 Conservative, $196,000 Base and $450,000 Scaled. These are retained-fee business outcomes, never financed principal. Expand only after independent lender coverage, qualified-file conversion and executable fee economics survive explicit thresholds.
 
 ### Key Metrics
 

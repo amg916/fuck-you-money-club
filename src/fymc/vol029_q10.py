@@ -6,23 +6,23 @@ CHAPTER_10 = {
     "chapter_number": 10,
     "question_number": 10,
     "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 5 FT + 6 C (11 people) insurance restoration team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "question_prompt": "How does a 2 FT + 2 C (4 people) insurance restoration team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
     "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
     "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
     "subtitle": "Python Webhooks, IICRC Drying Evidence, Xactimate Supplements, Job-Cost Ledgers, and UPPA-Safe Referral Loops",
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a Money-to-Manpower "
-        "Score of 54/100 because trucks, drying equipment, skilled crews, and "
+        "Candidate #15, Insurance Restoration, ranks #13 with a Money-to-Manpower "
+        "Score of 87/100 because trucks, drying equipment, skilled crews, and "
         "receivables remain stubbornly physical. This chapter maps five operator "
         "plays: emergency water mitigation, fire and smoke restoration, mold "
         "remediation, storm reconstruction, and documented rebuild closeout with "
-        "collections. A 5 FT + 6 C pod automates dispatch preparation, evidence "
+        "collections. A 2 FT + 2 C pod automates dispatch preparation, evidence "
         "indexing, estimate research, cost reconciliation, and referral follow-up "
         "while people retain safety, scope, pricing, and customer decisions. "
         "Canonical annual owner profit remains $40,000 Conservative, $195,000 "
-        "Base, and $450,000 Scaled; the Scaled case requires 6 FT + 7 C. "
+        "Base, and $450,000 Scaled; the Scaled case requires 3 FT + 3 C. "
         "The operating target is 70%+ straight-through completion of defined "
         "repetitive tasks, measured separately from labor savings and consequential review."
     ),
@@ -31,24 +31,24 @@ CHAPTER_10 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C, totaling 13 people",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C, totaling 6 people",
         },
     ],
     "sections": [
         {
-            "heading": "1. Allocate the five plays before automating the eleven-person pod",
+            "heading": "1. Allocate the five plays before automating the four-person pod",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
@@ -364,10 +364,10 @@ CHAPTER_10 = {
                     "Keep the scorecard intact while testing automation economics. "
                     "Conservative gross restoration billings are $500,000 at an "
                     "8% net margin, producing $40,000 annual owner net profit "
-                    "with 5 FT + 6 C. Base billings are $1,500,000 at "
-                    "13.0%, producing $195,000 with the same eleven-person "
+                    "with 2 FT + 2 C. Base billings are $1,500,000 at "
+                    "13.0%, producing $195,000 with the same four-person "
                     "configuration. Scaled billings are $2,500,000 at 18%, "
-                    "producing $450,000 with 6 FT + 7 C, thirteen people "
+                    "producing $450,000 with 3 FT + 3 C, thirteen people "
                     "rather than eleven. Corresponding total annual costs are "
                     "$460,000, $1,305,000, and $2,050,000. Subcontractor "
                     "and material costs already sit inside those margins. "
@@ -380,8 +380,8 @@ CHAPTER_10 = {
                     "Automation spending must fit within each case's "
                     "total cost envelope or be offset by measured "
                     "savings to preserve the stated profit. The "
-                    "$75,000–$350,000 startup capital range and "
-                    "$10,000–$45,000 monthly operating expense range "
+                    "$18,000–$75,000 startup capital range and "
+                    "$4,000–$20,000 monthly operating expense range "
                     "are planning inputs, not substitutes for a full "
                     "annual job-cost reconciliation. Equipment purchases "
                     "and collection delays also require a separate cash "

@@ -7,7 +7,7 @@
       "subtitle": "Five evidence-backed stages for diagnostic, surgical, veterinary, and aesthetic equipment.",
       "chapter_number": 1,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Stage values indicate sequence, not elapsed time or conversion. The canonical time to first deal is 3–9 months. Inventory tracking and service-history indexing automate records, not physical testing or device-specific regulatory classification.",
+      "assumptions_note": "Stage values indicate sequence, not elapsed time or conversion. The canonical time to first deal is 2–7 months. Inventory tracking and service-history indexing automate records, not physical testing or device-specific regulatory classification.",
       "caption": "Keep one serial-level record from sourcing through buyer acceptance; never substitute a cosmetic refurbishment claim for functional evidence.",
       "stages": [
         {
@@ -49,7 +49,7 @@
       "subtitle": "One acquisition cohort; each later stage is a subset of the preceding stage.",
       "chapter_number": 6,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative cohort of 100 distinct candidate lots followed over 3–9 months, not a monthly sales forecast. One opportunity identifier persists through all stages; repeat inquiries do not create new lots. Counts do not establish prices, annual revenue, or realized margin.",
+      "assumptions_note": "Illustrative cohort of 100 distinct candidate lots followed over 2–7 months, not a monthly sales forecast. One opportunity identifier persists through all stages; repeat inquiries do not create new lots. Counts do not establish prices, annual revenue, or realized margin.",
       "caption": "Four completed sales from 100 sourced opportunities represent 4% cohort conversion, not four sales during the launch sprint.",
       "stages": [
         {
@@ -122,7 +122,7 @@
           "label": "Pod and operating overhead",
           "value": "−$143,500 | 14.0% of gross proceeds",
           "numeric_value": -143500.0,
-          "detail": "Loaded payroll, premises, insurance, software, selling expense, and administration consume $143,500 annually, approximately $11,958 monthly within the $5,000–$22,000 canonical operating range. This is a budget envelope requiring local staffing validation."
+          "detail": "Loaded payroll, premises, insurance, software, selling expense, and administration consume $143,500 annually, approximately $11,958 monthly within the $4,000–$18,000 canonical operating range. This is a budget envelope requiring local staffing validation."
         },
         {
           "label": "Annual owner net profit",
@@ -211,98 +211,86 @@
       ]
     },
     {
-      "diagram_id": "diag-06-core-and-scaled-pod-seats",
+      "diagram_id": "diag-06-four-core-and-two-expansion-seats",
       "chart_type": "org_architecture",
-      "title": "Six Core Seats, Eight at Scaled Capacity",
-      "subtitle": "Conservative and Base: 2 FT + 4 C; Scaled Small-Team: 3 FT + 5 C.",
+      "title": "Four Core Seats, Six at Scaled Capacity",
+      "subtitle": "Conservative and Base: 1 FT + 3 C; Scaled Small-Team: 2 FT + 4 C.",
       "chapter_number": 11,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each numeric value represents one person in the eight-person scaled architecture. The first six seats form the core pod; the final two are scaled additions. FT means full-time and C means contractor, not a full-time-equivalent commitment. Contractor hours and local loaded payroll must fit the modeled cost envelopes.",
-      "caption": "The same six-person core supports canonical $250,000 and $1,025,000 gross-revenue scenarios. The $1,800,000 scaled scenario uses eight people; automation does not remove technical accountability.",
+      "assumptions_note": "The first four entries are core seats with numeric values of 1, representing 1 FT + 3 C. The final two entries have numeric values of 0 because they are expansion seats excluded from core headcount; adding 1 FT + 1 C produces the six-person scaled pod of 2 FT + 4 C. FT means full-time and C means contractor, not a full-time-equivalent commitment. External vendor and trade sub-crews are charged to direct subcontractor/COGS pass-through, not internal pod headcount. Allocate each labor charge once; contractor hours and local loaded payroll must fit the modeled cost envelopes.",
+      "caption": "The four-person core supports canonical $250,000 and $1,025,000 gross-revenue scenarios; the $1,800,000 scaled scenario uses six people. FYMC 2.0 score: 85/100; rank #20 of 29; tier: Elite Small-Team Cash Machine. Automation does not remove technical accountability.",
       "stages": [
         {
-          "label": "Core FT 1: Commercial lead",
-          "value": "One core full-time seat | Buying and sales",
+          "label": "Core FT 1: Commercial and operations lead",
+          "value": "One core full-time seat | Buying, sales, and inventory",
           "numeric_value": 1.0,
-          "detail": "Own demand qualification, acquisition ceilings, written sale terms, contribution estimates, and aged-stock decisions. Review title exceptions with the relevant specialist and keep commercial urgency separate from technical release."
-        },
-        {
-          "label": "Core FT 2: Operations lead",
-          "value": "One core full-time seat | Inventory and records",
-          "numeric_value": 1.0,
-          "detail": "Own receiving quarantine, serial-level inventory tracking, service-history indexing, cost allocation, documentation completeness, and buyer acceptance scheduling. Reconcile physical assets against the inventory ledger every week."
+          "detail": "Own demand qualification, acquisition ceilings, written sale terms, contribution estimates, and aged-stock decisions. Oversee receiving quarantine, cost allocation, and buyer acceptance scheduling; reconcile physical assets against the inventory ledger weekly. Keep commercial urgency separate from technical release."
         },
         {
           "label": "Core C 1: Biomedical specialist",
           "value": "One core contractor seat | Testing and repair",
           "numeric_value": 1.0,
-          "detail": "Perform model-qualified inspection, repair planning, calibration checks, functional testing, and signed technical findings. Escalate unavailable parts or unsupported software before the commercial lead commits acquisition funds."
+          "detail": "Perform model-qualified inspection, repair planning, calibration checks, functional testing, and signed technical findings. Escalate unavailable parts or unsupported software before the commercial lead commits acquisition funds. Specify qualified external bench work when needed and allocate unit-level labor to direct costs without duplicate overhead."
         },
         {
-          "label": "Core C 2: Decontamination technician",
-          "value": "One core contractor seat | Biological controls",
+          "label": "Core C 2: Logistics and decontamination coordinator",
+          "value": "One core contractor seat | Biological controls and delivery",
           "numeric_value": 1.0,
-          "detail": "Apply device-compatible cleaning and decontamination procedures, document process conditions, and flag inaccessible contamination. Coordinate occupational exposure controls and never equate clean appearance with completed decontamination."
+          "detail": "Coordinate qualified external decontamination providers, device-compatible procedures, process records, and occupational exposure controls. Arrange packing, insured freight, receiving appointments, site readiness, and damage claims. External cleaning, packing, and installation crews are direct subcontractor/COGS pass-through, not additional pod seats."
         },
         {
-          "label": "Core C 3: Specialist freight coordinator",
-          "value": "One core contractor seat | Packing and delivery",
-          "numeric_value": 1.0,
-          "detail": "Arrange shock-sensitive packing, carrier selection, declared value, transit evidence, receiving appointments, and damage claims. Verify lift access, power requirements, and installation responsibilities before dispatch."
-        },
-        {
-          "label": "Core C 4: Data and documentation specialist",
+          "label": "Core C 3: Data and documentation specialist",
           "value": "One core contractor seat | Media and traceability",
           "numeric_value": 1.0,
-          "detail": "Map storage locations, perform authorized sanitization and verification, preserve permitted service evidence, and assemble release packets. Escalate device-specific regulatory questions for qualified review rather than inventing certifications."
+          "detail": "Map storage locations, perform authorized sanitization and verification, preserve permitted service evidence, and assemble release packets. Maintain serial-level inventory records and service-history indexing. Escalate device-specific regulatory questions for qualified review rather than inventing certifications."
         },
         {
-          "label": "Scaled FT 3: Account and inventory planner",
-          "value": "One additional full-time seat | Scaled scenario only",
-          "numeric_value": 1.0,
-          "detail": "Own recurring buyer accounts, replenishment forecasts, site readiness follow-up, and aging reviews at the $1,800,000 gross-revenue scenario. Add capacity against measured workload and funded payroll, not a revenue aspiration alone."
+          "label": "Scaled FT 2: Account and inventory planner",
+          "value": "Expansion only | One additional FT seat; zero core count",
+          "numeric_value": 0.0,
+          "detail": "Join only at scaled capacity to own recurring buyer accounts, replenishment forecasts, site readiness follow-up, and aging reviews at the $1,800,000 gross-revenue scenario. Add capacity against measured workload and funded payroll, not a revenue aspiration alone; this seat raises full-time headcount to two."
         },
         {
-          "label": "Scaled C 5: Additional field biomed specialist",
-          "value": "One additional contractor seat | Scaled scenario only",
-          "numeric_value": 1.0,
-          "detail": "Provide additional qualified bench or installation capacity when test queues and geography exceed the core specialist's coverage. Maintain the same instrument calibration, evidence standards, and serial-level accountability."
+          "label": "Scaled C 4: Additional field biomed specialist",
+          "value": "Expansion only | One additional C seat; zero core count",
+          "numeric_value": 0.0,
+          "detail": "Join only at scaled capacity to provide additional qualified bench or installation coverage when test queues and geography exceed the core specialist's capacity. Maintain the same instrument calibration, evidence standards, and serial-level accountability; this seat raises contractor headcount to four."
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
+      "diagram_id": "diag-07-lean-reference-expanded-startup-allocation",
       "chart_type": "stacked_comparison",
-      "title": "Four Buckets Protect the Inventory Cycle",
-      "subtitle": "Illustrative $200,000 startup stack, with $75,000 and $400,000 comparison allocations.",
+      "title": "Four Buckets Allocate the $55,000 Reference Budget",
+      "subtitle": "Startup capital: $20,000–$95,000 USD; compare $20,000 lean, $55,000 reference, and $95,000 expanded.",
       "chapter_number": 4,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are USD in the central $200,000 startup allocation. Each bucket uses the same percentage at the $75,000 lower and $400,000 upper endpoints, allowing proportional stacked comparison. Capital allocations are funding uses, not annual expense or revenue. The central allocation is not an additional earnings scenario.",
-      "caption": "All three capital stacks reconcile: $75,000, $200,000, and $400,000. Protect cash for slow sales and repair surprises; an initial inventory purchase is not immediate recognized profit.",
+      "assumptions_note": "Numeric values are USD in the central $55,000 reference startup plan, within the canonical $20,000–$95,000 range. Each bucket uses the same percentage at the $20,000 lean and $95,000 expanded endpoints, allowing proportional stacked comparison. Capital allocations are funding uses, not annual expense or revenue. The reference allocation is not an additional earnings scenario or a guarantee of sufficient runway.",
+      "caption": "All four buckets reconcile at each funding level: $20,000 lean, $55,000 reference, and $95,000 expanded. Monthly opex remains $4,000–$18,000 and time to first deal remains 2–7 months; match commitments to funded liquidity rather than assuming the cash buffer covers the entire launch. Inventory purchases are not profit.",
       "stages": [
         {
           "label": "Equipment acquisition reserve",
-          "value": "$100,000 central allocation | 50% of capital",
-          "numeric_value": 100000.0,
-          "detail": "Lower stack: $37,500; central stack: $100,000; upper stack: $200,000. Fund serial-defined inventory within per-model exposure limits and documented buyer demand. Keep unsold equipment on the inventory ledger and review aging weekly."
+          "value": "$27,500 reference allocation | 50% of capital",
+          "numeric_value": 27500.0,
+          "detail": "Lean stack: $10,000; reference stack: $27,500; expanded stack: $47,500. Fund serial-defined inventory within per-model exposure limits and documented buyer demand. Keep unsold equipment on the inventory ledger and review aging weekly."
         },
         {
           "label": "Refurbishment and testing capacity",
-          "value": "$40,000 central allocation | 20% of capital",
-          "numeric_value": 40000.0,
-          "detail": "Lower stack: $15,000; central stack: $40,000; upper stack: $80,000. Fund inspection, parts, bench work, calibrated test equipment access, decontamination, and service documentation. Separate durable tooling from unit-level inventory costs."
+          "value": "$11,000 reference allocation | 20% of capital",
+          "numeric_value": 11000.0,
+          "detail": "Lean stack: $4,000; reference stack: $11,000; expanded stack: $19,000. Fund inspection, parts, bench work, calibrated test equipment access, decontamination, and service documentation. Separate durable tooling from unit-level inventory costs."
         },
         {
           "label": "Operating cash buffer",
-          "value": "$50,000 central allocation | 25% of capital",
-          "numeric_value": 50000.0,
-          "detail": "Lower stack: $18,750; central stack: $50,000; upper stack: $100,000. At the modeled $11,958 monthly Base-Case overhead, the central buffer covers about 4.2 months before direct inventory spending; a nine-month first-sale delay requires lower burn or additional funded liquidity."
+          "value": "$13,750 reference allocation | 25% of capital",
+          "numeric_value": 13750.0,
+          "detail": "Lean stack: $5,000; reference stack: $13,750; expanded stack: $23,750. At the modeled $11,958 monthly Base-Case overhead, the reference buffer covers about 1.15 months before direct inventory spending, shorter than the 2–7 month first-deal window. Phase commitments, reduce launch burn, or secure additional liquidity before taking on unfunded obligations."
         },
         {
           "label": "Setup and transaction reserve",
-          "value": "$10,000 central allocation | 5% of capital",
-          "numeric_value": 10000.0,
-          "detail": "Lower stack: $3,750; central stack: $10,000; upper stack: $20,000. Fund insurance deposits, inventory-system setup, initial packing materials, and specialist classification review. Track refundable deposits separately from expenses and avoid duplicating operating-buffer charges."
+          "value": "$2,750 reference allocation | 5% of capital",
+          "numeric_value": 2750.0,
+          "detail": "Lean stack: $1,000; reference stack: $2,750; expanded stack: $4,750. Fund insurance deposits, inventory-system setup, initial packing materials, and specialist classification review. Track refundable deposits separately from expenses and avoid duplicating operating-buffer charges."
         }
       ]
     },
@@ -313,7 +301,7 @@
       "subtitle": "Build sourcing, testing, cash controls, and buyer evidence before expecting a closed deal.",
       "chapter_number": 12,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate milestone order. The four periods cover Days 1–30 without gaps; the final period contains nine days. These are readiness milestones, not revenue commitments. Canonical time to first deal remains 3–9 months.",
+      "assumptions_note": "Numeric values indicate milestone order. The four periods cover Days 1–30 without gaps; the final period contains nine days. These are readiness milestones, not revenue commitments. Canonical time to first deal remains 2–7 months.",
       "caption": "End the sprint with a controlled acquisition pipeline and testable unit economics, not an invented first-month sale or compulsory purchase.",
       "stages": [
         {

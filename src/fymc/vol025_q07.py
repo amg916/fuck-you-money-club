@@ -13,8 +13,8 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a 62/100 Money-to-Manpower "
-        "Score: this is a capital- and labor-intensive operating business. Eight mapped "
+        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower "
+        "Score: this is a high-leverage, system-disciplined operating business. Eight mapped "
         "plays connect niche acquisition, shipper credit, carrier identity, load matching, "
         "shipment tracking, invoice reconciliation, float management, and customs first-sale "
         "coordination. This chapter turns those plays into a controlled shipment lifecycle, "
@@ -53,7 +53,7 @@ CHAPTER_7 = {
                 (
                     "Start with a narrow service promise: scheduled dry-van replenishment between "
                     "two distribution clusters, with named pickup windows, equipment requirements, "
-                    "and exception ownership. Candidate #12 ranks #25 because attractive billings "
+                    "and exception ownership. Candidate #12 ranks #19 because attractive billings "
                     "conceal purchased transportation, labor, and working capital. The canonical "
                     "Base operation has three full-time staff and two contractors, not an "
                     "unattended matching bot. Assign commercial intake and credit to one employee, "
@@ -206,7 +206,7 @@ CHAPTER_7 = {
                 ),
                 (
                     "Module two scores intake deterministically and records only qualified shipments. "
-                    "The score is an operational margin screen, not the candidate's 62/100 "
+                    "The score is an operational margin screen, not the candidate's 85/100 "
                     "portfolio score. An illustrative $12,500 bill and $10,500 carrier commitment "
                     "produce a sixteen-percent purchased-transportation spread and pass the threshold. "
                     "Module three progresses qualified, verified, reserved, dispatched, delivered, "

@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
         "Score across 15 mapped plays. This chapter converts commercial judgment "
         "screening into an evidence-backed production system: establish authority, "
         "verify collectible equity, authorize counsel-led enforcement, capture cleared "

@@ -863,7 +863,7 @@
   "min_expert_youtube_links_per_book": 150,
   "target_expert_youtube_links_per_book": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
-  "expert_youtube_link_count": 201,
+  "expert_youtube_link_count": 180,
   "positioning_alternatives": [
     {
       "title": "The Vertical B2B AI Wedge",
@@ -913,7 +913,7 @@
       "key_metrics": [
         {
           "label": "Series position",
-          "value": "88/100; #02",
+          "value": "90/100; #03",
           "context": "Volume 004",
           "note": "Editorial score, not investment performance."
         },
@@ -1567,57 +1567,9 @@
           "title": "Paddle for Merchant of Record Honest Review - Watch Before Using (HelperMan)",
           "url": "https://www.youtube.com/watch?v=o3KRrFnoAgM&t=120s",
           "video_id": "o3KRrFnoAgM"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "YouTubers in your product's niche that have their emails available, so you don't have to spend time trying to find their emails. You will then copy their email to paste in your Gmail, Yahoo, or any other email provider you're using to send emails. Then, click generate outreach so Creator Closer can do all the heavy lifting. You can select the tone of the email.",
-          "tip": "YouTubers in your product's niche that have their emails available, so you don't have to spend time trying to find their emails. You will then copy their email to paste in your Gmail, Yahoo, or any other email provider you're using to send emails. Then, click generate outreach so Creator Closer can do all the heavy lifting. You can select the tone of the email.",
-          "timestamp": 641,
-          "timestamp_seconds": 641,
-          "timestamp_label": "[00:10:41]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=641s",
-          "markdown": "[00:10:41](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=641s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Framer it is very important that you use the the share URL this URL won't change even if you make changes to your product listing so for example sometimes the URL can change on the store Page when you change the name of your template or make some tweaks like the price the share link will always remain the same so it is important that you use this link and send it to us or share.",
-          "tip": "Framer it is very important that you use the the share URL this URL won't change even if you make changes to your product listing so for example sometimes the URL can change on the store Page when you change the name of your template or make some tweaks like the price the share link will always remain the same so it is important that you use this link and send it to us or share.",
-          "timestamp": 194,
-          "timestamp_seconds": 194,
-          "timestamp_label": "[00:03:14]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=194s",
-          "markdown": "[00:03:14](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=194s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Template I'm going to change the button text to get your template you can make this anything you want but uh yeah just uh have it hidden towards that you can get your template at the button I'm not going to add a thank you note I'll just leave it to the default then I'm going to publish my product and scroll back up and go over to the share page when you submit your template to us.",
-          "tip": "Template I'm going to change the button text to get your template you can make this anything you want but uh yeah just uh have it hidden towards that you can get your template at the button I'm not going to add a thank you note I'll just leave it to the default then I'm going to publish my product and scroll back up and go over to the share page when you submit your template to us.",
-          "timestamp": 161,
-          "timestamp_seconds": 161,
-          "timestamp_label": "[00:02:41]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=161s",
-          "markdown": "[00:02:41](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=161s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "ccf11e1ec88c1227"
+      "revision": "a5218d0799eb288e"
     },
     {
       "id": "Q2",
@@ -2199,57 +2151,9 @@
           "title": "How to update Stripe Billing to add usage-based pricing - Full Guide (GuideFrame)",
           "url": "https://www.youtube.com/watch?v=xssyCPxzFWA&t=89s",
           "video_id": "xssyCPxzFWA"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Button link so that after people complete their purchase they get an email which will confirm their purchase this email will also have a button and if they click that button they will also be redirected to the remix link which will also give them a copy in their in their own account so for instance if they if they lose the template they'll still have the email that they can keep where they can always find the link.",
-          "tip": "Button link so that after people complete their purchase they get an email which will confirm their purchase this email will also have a button and if they click that button they will also be redirected to the remix link which will also give them a copy in their in their own account so for instance if they if they lose the template they'll still have the email that they can keep where they can always find the link.",
-          "timestamp": 133,
-          "timestamp_seconds": 133,
-          "timestamp_label": "[00:02:13]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=133s",
-          "markdown": "[00:02:13](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=133s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Um you can drag to reorder these images which will make the first image show up on your store Page you can also disable or enable some we're not going to use any files because we are going to redirect people to a remix link of our project also not going to use any variants so what we can do is we can redirect people to our template immediately after they complete their purchase.",
-          "tip": "Um you can drag to reorder these images which will make the first image show up on your store Page you can also disable or enable some we're not going to use any files because we are going to redirect people to a remix link of our project also not going to use any variants so what we can do is we can redirect people to our template immediately after they complete their purchase.",
-          "timestamp": 77,
-          "timestamp_seconds": 77,
-          "timestamp_label": "[00:01:17]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=77s",
-          "markdown": "[00:01:17](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=77s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Certain special features that you're using so I already have a description set up so I'm just going to copy and paste this then we're going to scroll down and we're going to select single payment so we want a one-time fee for our template and I want to sell this for 49 euros we can also add some images so I have a few images set up I'm just going to drag.",
-          "tip": "Certain special features that you're using so I already have a description set up so I'm just going to copy and paste this then we're going to scroll down and we're going to select single payment so we want a one-time fee for our template and I want to sell this for 49 euros we can also add some images so I have a few images set up I'm just going to drag.",
-          "timestamp": 49,
-          "timestamp_seconds": 49,
-          "timestamp_label": "[00:00:49]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=49s",
-          "markdown": "[00:00:49](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=49s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "ed091e9f71e90506"
+      "revision": "20e4c9149589914d"
     },
     {
       "id": "Q3",
@@ -2743,57 +2647,9 @@
           "title": "How Prompt Caching makes LLM calls 10x Cheaper (cruxbits8)",
           "url": "https://www.youtube.com/watch?v=xncObRtKRsw&t=173s",
           "video_id": "xncObRtKRsw"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Framer it is very important that you use the the share URL this URL won't change even if you make changes to your product listing so for example sometimes the URL can change on the store Page when you change the name of your template or make some tweaks like the price the share link will always remain the same so it is important that you use this link and send it to us or share.",
-          "tip": "Framer it is very important that you use the the share URL this URL won't change even if you make changes to your product listing so for example sometimes the URL can change on the store Page when you change the name of your template or make some tweaks like the price the share link will always remain the same so it is important that you use this link and send it to us or share.",
-          "timestamp": 194,
-          "timestamp_seconds": 194,
-          "timestamp_label": "[00:03:14]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=194s",
-          "markdown": "[00:03:14](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=194s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "i05UCC3UvNY",
-          "title": "Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use?",
-          "channel": "SoloBuild",
-          "author": "SoloBuild",
-          "text": "Stripe Tax's no-code option is half a percent per transaction, where you're registered to collect. Stripe Billing, for subscriptions, is point seven percent of billing volume. Stack those, and a US subscription business lands near four point one percent plus thirty cents. That's rough math, but it shows the headline rate isn't the full bill. How's that price looking now, Nova? NOVA: That's more than the sticker said.",
-          "tip": "Stripe Tax's no-code option is half a percent per transaction, where you're registered to collect. Stripe Billing, for subscriptions, is point seven percent of billing volume. Stack those, and a US subscription business lands near four point one percent plus thirty cents. That's rough math, but it shows the headline rate isn't the full bill. How's that price looking now, Nova? NOVA: That's more than the sticker said.",
-          "timestamp": 193,
-          "timestamp_seconds": 193,
-          "timestamp_label": "[00:03:13]",
-          "url": "https://www.youtube.com/watch?v=i05UCC3UvNY&t=193s",
-          "markdown": "[00:03:13](https://www.youtube.com/watch?v=i05UCC3UvNY&t=193s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "F-WZgXuQIuQ",
-          "title": "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an Existing App #mcp",
-          "channel": "Stephen S.",
-          "author": "Stephen S.",
-          "text": "These plans. So I'm going to click on the pro plan and you can see that it opens up the checkout here. What's pretty cool is it actually created descriptions for the price variant and then obviously the price that was grabbed from our marketing site and then Stripe Power created the price artifact in Stripe using MCP.",
-          "tip": "These plans. So I'm going to click on the pro plan and you can see that it opens up the checkout here. What's pretty cool is it actually created descriptions for the price variant and then obviously the price that was grabbed from our marketing site and then Stripe Power created the price artifact in Stripe using MCP.",
-          "timestamp": 197,
-          "timestamp_seconds": 197,
-          "timestamp_label": "[00:03:17]",
-          "url": "https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=197s",
-          "markdown": "[00:03:17](https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=197s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "d6555f707ab144a6"
+      "revision": "fadaa96f9ad0e9b3"
     },
     {
       "id": "Q4",
@@ -3424,57 +3280,9 @@
           "title": "I Built A Micro-Version Of A $1B SaaS. Now I Make $50K/Month (Starter Story)",
           "url": "https://www.youtube.com/watch?v=Nnpz1wsTjBI&t=363s",
           "video_id": "Nnpz1wsTjBI"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "M61DsgB51BI",
-          "title": "Lemon Squeezy Winds Down After Stripe Acquisition",
-          "channel": "Folioquest",
-          "author": "Folioquest",
-          "text": "beloved startup tools can vanish inside a giant acquisition.",
-          "tip": "beloved startup tools can vanish inside a giant acquisition.",
-          "timestamp": 184,
-          "timestamp_seconds": 184,
-          "timestamp_label": "[00:03:04]",
-          "url": "https://www.youtube.com/watch?v=M61DsgB51BI&t=184s",
-          "markdown": "[00:03:04](https://www.youtube.com/watch?v=M61DsgB51BI&t=184s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "i05UCC3UvNY",
-          "title": "Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use?",
-          "channel": "SoloBuild",
-          "author": "SoloBuild",
-          "text": "Transaction, with no monthly charge for its store features. Some extras apply. International transactions add one point five percent, PayPal adds one point five percent, and subscription payments add half a percent. Payouts go out twice a month, free to US bank accounts, and one percent to bank accounts outside the US. It includes a store, secure digital downloads, and built-in affiliate tools. That suits people selling an ebook or a template pack.",
-          "tip": "Transaction, with no monthly charge for its store features. Some extras apply. International transactions add one point five percent, PayPal adds one point five percent, and subscription payments add half a percent. Payouts go out twice a month, free to US bank accounts, and one percent to bank accounts outside the US. It includes a store, secure digital downloads, and built-in affiliate tools. That suits people selling an ebook or a template pack.",
-          "timestamp": 233,
-          "timestamp_seconds": 233,
-          "timestamp_label": "[00:03:53]",
-          "url": "https://www.youtube.com/watch?v=i05UCC3UvNY&t=233s",
-          "markdown": "[00:03:53](https://www.youtube.com/watch?v=i05UCC3UvNY&t=233s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "9Rig_F79rWo",
-          "title": "Micro-SaaS in 2026 🚀 | Build a Profitable SaaS Business with Just $50/Month",
-          "channel": "TechFuelAI",
-          "author": "TechFuelAI",
-          "text": "Market cap that just literally evaporated in a matter of weeks between January and February of 2026. You had like Chegg watching their valuations absolutely plummet after ChatGPT basically ate their entire homework business overnight. Stack Overflow, they saw their questions drop by 76%. The disruption out there is very real, and honestly, it is brutal. And because of that, the old model is really struggling.",
-          "tip": "Market cap that just literally evaporated in a matter of weeks between January and February of 2026. You had like Chegg watching their valuations absolutely plummet after ChatGPT basically ate their entire homework business overnight. Stack Overflow, they saw their questions drop by 76%. The disruption out there is very real, and honestly, it is brutal. And because of that, the old model is really struggling.",
-          "timestamp": 55,
-          "timestamp_seconds": 55,
-          "timestamp_label": "[00:00:55]",
-          "url": "https://www.youtube.com/watch?v=9Rig_F79rWo&t=55s",
-          "markdown": "[00:00:55](https://www.youtube.com/watch?v=9Rig_F79rWo&t=55s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "75fb4f6a935455f0"
+      "revision": "60e27d49b0542cb2"
     },
     {
       "id": "Q5",
@@ -3928,57 +3736,9 @@
           "title": "Prompt Caching Explained: Stop Overpaying for AI Agents (Hugging Face)",
           "url": "https://www.youtube.com/watch?v=SkM4k4SKvCM&t=998s",
           "video_id": "SkM4k4SKvCM"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "Whatever to write a good, you know, outreach email, and you don't know how to write a good outreach email. So, Chat GPT can't even do that for you, in my opinion. So, instead of, you know, trying to figure out what messages to email these YouTubers, and then how to negotiate and go back and forth with them, you know, all that jazz, right?",
-          "tip": "Whatever to write a good, you know, outreach email, and you don't know how to write a good outreach email. So, Chat GPT can't even do that for you, in my opinion. So, instead of, you know, trying to figure out what messages to email these YouTubers, and then how to negotiate and go back and forth with them, you know, all that jazz, right?",
-          "timestamp": 531,
-          "timestamp_seconds": 531,
-          "timestamp_label": "[00:08:51]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=531s",
-          "markdown": "[00:08:51](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=531s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "Like me. It It don't mean that. But, when I was in your shoes, I would watch these videos for motivation and just maybe a little bit of entertainment because I'm funny. You know what I'm saying? But, let's get on to the nitty and gritty and why you're here to see how to make people give you their money.",
-          "tip": "Like me. It It don't mean that. But, when I was in your shoes, I would watch these videos for motivation and just maybe a little bit of entertainment because I'm funny. You know what I'm saying? But, let's get on to the nitty and gritty and why you're here to see how to make people give you their money.",
-          "timestamp": 292,
-          "timestamp_seconds": 292,
-          "timestamp_label": "[00:04:52]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=292s",
-          "markdown": "[00:04:52](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=292s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "Money. Say with me, give me their money. Now, for the marketing, okay? If you watch my channel, you know that I predominantly If you don't know what predominantly means, then you need to go back to school and stop trying to make money online. You know what I'm saying? Like, just just stop. Anyway, if you watch my channel, then you know that I predominantly, mostly use YouTubers to promote my PDF guides.",
-          "tip": "Money. Say with me, give me their money. Now, for the marketing, okay? If you watch my channel, you know that I predominantly If you don't know what predominantly means, then you need to go back to school and stop trying to make money online. You know what I'm saying? Like, just just stop. Anyway, if you watch my channel, then you know that I predominantly, mostly use YouTubers to promote my PDF guides.",
-          "timestamp": 349,
-          "timestamp_seconds": 349,
-          "timestamp_label": "[00:05:49]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=349s",
-          "markdown": "[00:05:49](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=349s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "f9f9cb157b5a7c2d"
+      "revision": "e1cf9667c4a6f9ce"
     },
     {
       "id": "Q6",
@@ -3992,7 +3752,7 @@
       "subtitle": "Technographic Churn Interception, G2/GBP 1-Star Pain Mining, Automated WCAG/Security Diagnostic Scanners & Paid-Pilot Validation",
       "layout_template": "step_by_step_sop",
       "reading_time_minutes": 14,
-      "executive_summary": "Buy evidence before buying infrastructure. Volume 004 scores 88/100 and ranks #02 because a narrow recurring business problem can support recurring revenue without a broad platform. That potential disappears when founders mistake visible defects for purchase intent. Use four demand gates: a repeated expensive problem, a verified account signal, a demonstrated workflow, and signed commercial commitment. Combine installation changes, incumbent complaints, and reproducible diagnostics to reach buyers with something specific. Keep delivery manual until five to ten target buyers sign paid pilots or substantive letters of intent. Then build only the workflow those commitments share.",
+      "executive_summary": "Buy evidence before buying infrastructure. Volume 004 scores 90/100 and ranks #03 because a narrow recurring business problem can support recurring revenue without a broad platform. That potential disappears when founders mistake visible defects for purchase intent. Use four demand gates: a repeated expensive problem, a verified account signal, a demonstrated workflow, and signed commercial commitment. Combine installation changes, incumbent complaints, and reproducible diagnostics to reach buyers with something specific. Keep delivery manual until five to ten target buyers sign paid pilots or substantive letters of intent. Then build only the workflow those commitments share.",
       "key_metrics": [
         {
           "label": "Conservative",
@@ -4423,57 +4183,9 @@
           "title": "Alex Hormozi: Fix SaaS Churn With This Onboarding Strategy (AMA) (Business Beast Mode)",
           "url": "https://www.youtube.com/watch?v=iGqudu6WmHs&t=20s",
           "video_id": "iGqudu6WmHs"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "Ex-FBI and curative skip-trace chain — identity anchor and legitimate research purpose — Begin with an evidence-based identity profile: age range, known residences, associates and chronology, not speculative psychological labels.",
-          "tip": "Ex-FBI and curative skip-trace chain — identity anchor and legitimate research purpose — Begin with an evidence-based identity profile: age range, known residences, associates and chronology, not speculative psychological labels.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Forward descendancy versus reverse genealogy — known ancestor and bounded research question — Start reverse research with the subject and prove each parent-child link independently.",
-          "tip": "Forward descendancy versus reverse genealogy — known ancestor and bounded research question — Start reverse research with the subject and prove each parent-child link independently.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "GPS and conflicting evidence — all competing assertions about one event — Define reasonably exhaustive research by jurisdiction, period and surviving record classes.",
-          "tip": "GPS and conflicting evidence — all competing assertions about one event — Define reasonably exhaustive research by jurisdiction, period and surviving record classes.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "face7bd8839375e9"
+      "revision": "faa0d199491f9c61"
     },
     {
       "id": "Q7",
@@ -5045,57 +4757,9 @@
           "title": "How I cut token costs by 90%: AI cost optimization guide (ClankerEngineer)",
           "url": "https://www.youtube.com/watch?v=4x4nM0uPmg0&t=209s",
           "video_id": "4x4nM0uPmg0"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Button link so that after people complete their purchase they get an email which will confirm their purchase this email will also have a button and if they click that button they will also be redirected to the remix link which will also give them a copy in their in their own account so for instance if they if they lose the template they'll still have the email that they can keep where they can always find the link.",
-          "tip": "Button link so that after people complete their purchase they get an email which will confirm their purchase this email will also have a button and if they click that button they will also be redirected to the remix link which will also give them a copy in their in their own account so for instance if they if they lose the template they'll still have the email that they can keep where they can always find the link.",
-          "timestamp": 133,
-          "timestamp_seconds": 133,
-          "timestamp_label": "[00:02:13]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=133s",
-          "markdown": "[00:02:13](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=133s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Um you can drag to reorder these images which will make the first image show up on your store Page you can also disable or enable some we're not going to use any files because we are going to redirect people to a remix link of our project also not going to use any variants so what we can do is we can redirect people to our template immediately after they complete their purchase.",
-          "tip": "Um you can drag to reorder these images which will make the first image show up on your store Page you can also disable or enable some we're not going to use any files because we are going to redirect people to a remix link of our project also not going to use any variants so what we can do is we can redirect people to our template immediately after they complete their purchase.",
-          "timestamp": 77,
-          "timestamp_seconds": 77,
-          "timestamp_label": "[00:01:17]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=77s",
-          "markdown": "[00:01:17](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=77s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Collateral lines and brickwalls — unresolved parentage or migration — Build a sibling set from censuses, probate distributions and household records.",
-          "tip": "Collateral lines and brickwalls — unresolved parentage or migration — Build a sibling set from censuses, probate distributions and household records.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "e0aba8d36710396c"
+      "revision": "17af28f281c2960c"
     },
     {
       "id": "Q8",
@@ -5566,57 +5230,9 @@
           "title": "Use AI to enable and generate RLS policies for Postgres with Supabase (Supabase)",
           "url": "https://www.youtube.com/watch?v=hu2SQjvCXIw&t=198s",
           "video_id": "hu2SQjvCXIw"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "Hidden lien discovery — title chain and owner aliases — Search municipal code enforcement, utilities and special assessments outside ordinary mortgage indexes.",
-          "tip": "Hidden lien discovery — title chain and owner aliases — Search municipal code enforcement, utilities and special assessments outside ordinary mortgage indexes.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "IA4eosnOzIE",
-          "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
-          "channel": "HelperMan",
-          "author": "HelperMan",
-          "text": "Decision gates and exception queue — case dossier — Gate identity on discriminating evidence, not name similarity.",
-          "tip": "Decision gates and exception queue — case dossier — Gate identity on discriminating evidence, not name similarity.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "IA4eosnOzIE",
-          "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
-          "channel": "HelperMan",
-          "author": "HelperMan",
-          "text": "Research quality and tool selection — research tasks and available tools — Prefer official source images over commercial summaries when resolving decisive facts.",
-          "tip": "Research quality and tool selection — research tasks and available tools — Prefer official source images over commercial summaries when resolving decisive facts.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "093485df423142c6"
+      "revision": "7a45d6de130d7e6b"
     },
     {
       "id": "Q9",
@@ -6165,57 +5781,9 @@
           "title": "How To Enable Row Level Security In Supabase [RLS Guide 2026] (SmartMoneyTutorials)",
           "url": "https://www.youtube.com/watch?v=Sctm5VrwWTw&t=144s",
           "video_id": "Sctm5VrwWTw"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "M61DsgB51BI",
-          "title": "Lemon Squeezy Winds Down After Stripe Acquisition",
-          "channel": "Folioquest",
-          "author": "Folioquest",
-          "text": "For thousands of indie hackers and SaaS founders, [music] Lemon Squeezy was the easiest button on the internet. Sell digital products, let them handle global sales tax, and run built-in affiliates. [music] Then in November 2026 came the email nobody expected. Lemon Squeezy is shutting down on March 31st, 2027. [music] In a post titled Saying Goodbye to Lemon Squeezy, CEO JR Farr confirmed new signups closed immediately.",
-          "tip": "For thousands of indie hackers and SaaS founders, [music] Lemon Squeezy was the easiest button on the internet. Sell digital products, let them handle global sales tax, and run built-in affiliates. [music] Then in November 2026 came the email nobody expected. Lemon Squeezy is shutting down on March 31st, 2027. [music] In a post titled Saying Goodbye to Lemon Squeezy, CEO JR Farr confirmed new signups closed immediately.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=M61DsgB51BI&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=M61DsgB51BI&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "M61DsgB51BI",
-          "title": "Lemon Squeezy Winds Down After Stripe Acquisition",
-          "channel": "Folioquest",
-          "author": "Folioquest",
-          "text": "Curative lead sourcing — geographic buy box — Collect dead wholesaler leads, code violations, tax-delinquent deceased owners and aged probates.",
-          "tip": "Curative lead sourcing — geographic buy box — Collect dead wholesaler leads, code violations, tax-delinquent deceased owners and aged probates.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=M61DsgB51BI&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=M61DsgB51BI&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "o3KRrFnoAgM",
-          "title": "Paddle for Merchant of Record Honest Review - Watch Before Using",
-          "channel": "HelperMan",
-          "author": "HelperMan",
-          "text": "Payment processors [music] because it acts as a merchant of record. That means it handles things like taxes, >> [music] >> compliance, invoicing, and payment regulations for you, which removes a huge amount of stress if you're selling globally. What I like most is how much administrative [music] work it saves. Instead of worrying about VAT, international tax rules, or complicated compliance issues, Paddle takes care of most of that automatically.",
-          "tip": "Payment processors [music] because it acts as a merchant of record. That means it handles things like taxes, >> [music] >> compliance, invoicing, and payment regulations for you, which removes a huge amount of stress if you're selling globally. What I like most is how much administrative [music] work it saves. Instead of worrying about VAT, international tax rules, or complicated compliance issues, Paddle takes care of most of that automatically.",
-          "timestamp": 23,
-          "timestamp_seconds": 23,
-          "timestamp_label": "[00:00:23]",
-          "url": "https://www.youtube.com/watch?v=o3KRrFnoAgM&t=23s",
-          "markdown": "[00:00:23](https://www.youtube.com/watch?v=o3KRrFnoAgM&t=23s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "4123530fa85c898a"
+      "revision": "f69b010bb50a80d7"
     },
     {
       "id": "Q10",
@@ -6721,57 +6289,9 @@
           "title": "it’s almost unfair how easy it is to build a SaaS that makes $15,000 a month (Fomin Unscripted)",
           "url": "https://www.youtube.com/watch?v=29mXPG15AGM&t=56s",
           "video_id": "29mXPG15AGM"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "Take so long, and just a bunch of guessing and, you know, research and just time. Instead of just manual trial and error, I said to myself, \"Hmm, what if I can literally find these YouTubers, like YouTubers with their emails, instead of trying to, you know, search and then find a YouTuber and figure out, \"Oh my god, they don't even have their email on their YouTube. Where is their email?\"",
-          "tip": "Take so long, and just a bunch of guessing and, you know, research and just time. Instead of just manual trial and error, I said to myself, \"Hmm, what if I can literally find these YouTubers, like YouTubers with their emails, instead of trying to, you know, search and then find a YouTuber and figure out, \"Oh my god, they don't even have their email on their YouTube. Where is their email?\"",
-          "timestamp": 557,
-          "timestamp_seconds": 557,
-          "timestamp_label": "[00:09:17]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=557s",
-          "markdown": "[00:09:17](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=557s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Button link so that after people complete their purchase they get an email which will confirm their purchase this email will also have a button and if they click that button they will also be redirected to the remix link which will also give them a copy in their in their own account so for instance if they if they lose the template they'll still have the email that they can keep where they can always find the link.",
-          "tip": "Button link so that after people complete their purchase they get an email which will confirm their purchase this email will also have a button and if they click that button they will also be redirected to the remix link which will also give them a copy in their in their own account so for instance if they if they lose the template they'll still have the email that they can keep where they can always find the link.",
-          "timestamp": 133,
-          "timestamp_seconds": 133,
-          "timestamp_label": "[00:02:13]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=133s",
-          "markdown": "[00:02:13](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=133s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "IA4eosnOzIE",
-          "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
-          "channel": "HelperMan",
-          "author": "HelperMan",
-          "text": "End-to-end autonomous case SOP — lead and research objective — Ingest raw evidence and assign immutable source IDs.",
-          "tip": "End-to-end autonomous case SOP — lead and research objective — Ingest raw evidence and assign immutable source IDs.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "6c7141151281b330"
+      "revision": "ecc063284bca5f2a"
     },
     {
       "id": "Q11",
@@ -7236,57 +6756,9 @@
           "title": "LiteLLM AI Gateway: Routing, API Keys, Budgets, and Guardrails for Local and Cloud Models (Paul Zuradzki)",
           "url": "https://www.youtube.com/watch?v=Nk7qDiLHyuU&t=225s",
           "video_id": "Nk7qDiLHyuU"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "IA4eosnOzIE",
-          "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
-          "channel": "HelperMan",
-          "author": "HelperMan",
-          "text": "Is it really good for you? Watch our video, so we'll share our own experience. Watch till the end so you won't make any mistakes, and let's get started. I've been using Lemon Squeezy for around 6 months now, and honestly, it feels like one of the easiest platforms for selling digital products and SaaS online, especially for solo founders and small creators. The first thing I noticed is how simple the setup process is.",
-          "tip": "Is it really good for you? Watch our video, so we'll share our own experience. Watch till the end so you won't make any mistakes, and let's get started. I've been using Lemon Squeezy for around 6 months now, and honestly, it feels like one of the easiest platforms for selling digital products and SaaS online, especially for solo founders and small creators. The first thing I noticed is how simple the setup process is.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "IA4eosnOzIE",
-          "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
-          "channel": "HelperMan",
-          "author": "HelperMan",
-          "text": "End-to-end autonomous case SOP — lead and research objective — Ingest raw evidence and assign immutable source IDs.",
-          "tip": "End-to-end autonomous case SOP — lead and research objective — Ingest raw evidence and assign immutable source IDs.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=IA4eosnOzIE&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "M61DsgB51BI",
-          "title": "Lemon Squeezy Winds Down After Stripe Acquisition",
-          "channel": "Folioquest",
-          "author": "Folioquest",
-          "text": "Curative lead sourcing — geographic buy box — Collect dead wholesaler leads, code violations, tax-delinquent deceased owners and aged probates.",
-          "tip": "Curative lead sourcing — geographic buy box — Collect dead wholesaler leads, code violations, tax-delinquent deceased owners and aged probates.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=M61DsgB51BI&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=M61DsgB51BI&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "15beb51e846be4b9"
+      "revision": "14c7e5b54f21d2db"
     },
     {
       "id": "Q12",
@@ -7300,7 +6772,7 @@
       "subtitle": "Day-by-Day Buyer Discovery, Metered Multi-Tenant MVP Build, Diagnostic-Scanner Outbound & Kill/Pivot/Scale MRR Gates",
       "layout_template": "thirty_day_plan",
       "reading_time_minutes": 14,
-      "executive_summary": "Volume 004 scores 88/100 and ranks #02 because narrow business workflows can support recurring revenue, not because models make distribution free. Spend thirty days proving one paid outcome. Interview fifteen buyers, collect three pilot payments before backend work, and build tenant isolation and usage limits before adding acquisition volume. Aim for ten paying business accounts, but let measured activation, contribution margin, and repeat use decide the next investment. This roadmap separates subscription billings from service costs and owner profit, treats scanner results as evidence rather than verdicts, and makes weak demand a reason to stop spending.",
+      "executive_summary": "Volume 004 scores 90/100 and ranks #03 because narrow business workflows can support recurring revenue, not because models make distribution free. Spend thirty days proving one paid outcome. Interview fifteen buyers, collect three pilot payments before backend work, and build tenant isolation and usage limits before adding acquisition volume. Aim for ten paying business accounts, but let measured activation, contribution margin, and repeat use decide the next investment. This roadmap separates subscription billings from service costs and owner profit, treats scanner results as evidence rather than verdicts, and makes weak demand a reason to stop spending.",
       "key_metrics": [
         {
           "label": "Week one",
@@ -7772,61 +7244,13 @@
           "title": "Enabling pay-as-you-go with usage based billing (Stripe Developers)",
           "url": "https://www.youtube.com/watch?v=Hr9MP_3-QPg&t=624s",
           "video_id": "Hr9MP_3-QPg"
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "B8Z2fA5X0J4",
-          "title": "I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI",
-          "channel": "Money Talk With Leon",
-          "author": "Money Talk With Leon",
-          "text": "for creator closer. And in the next video, when I'm choosing a winner, if that person is signed up for creator closer, that person will win $3,000 instead of $1,000. I'm not Mr. Beast, but I try. Hope you guys find value in everything I do and show on this channel as I document my journey as an entrepreneur. I'll see you in the next video, whenever that is, a week from now to a month, two months, I don't know.",
-          "tip": "for creator closer. And in the next video, when I'm choosing a winner, if that person is signed up for creator closer, that person will win $3,000 instead of $1,000. I'm not Mr. Beast, but I try. Hope you guys find value in everything I do and show on this channel as I document my journey as an entrepreneur. I'll see you in the next video, whenever that is, a week from now to a month, two months, I don't know.",
-          "timestamp": 962,
-          "timestamp_seconds": 962,
-          "timestamp_label": "[00:16:02]",
-          "url": "https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=962s",
-          "markdown": "[00:16:02](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=962s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Um you can drag to reorder these images which will make the first image show up on your store Page you can also disable or enable some we're not going to use any files because we are going to redirect people to a remix link of our project also not going to use any variants so what we can do is we can redirect people to our template immediately after they complete their purchase.",
-          "tip": "Um you can drag to reorder these images which will make the first image show up on your store Page you can also disable or enable some we're not going to use any files because we are going to redirect people to a remix link of our project also not going to use any variants so what we can do is we can redirect people to our template immediately after they complete their purchase.",
-          "timestamp": 77,
-          "timestamp_seconds": 77,
-          "timestamp_label": "[00:01:17]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=77s",
-          "markdown": "[00:01:17](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=77s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
-        },
-        {
-          "source_type": "video_pro_tip",
-          "video_id": "RN0VWAvL-qc",
-          "title": "How to start selling your Framer templates through Lemon Squeezy",
-          "channel": "Framer",
-          "author": "Framer",
-          "text": "Forward descendancy versus reverse genealogy — known ancestor and bounded research question — Start reverse research with the subject and prove each parent-child link independently.",
-          "tip": "Forward descendancy versus reverse genealogy — known ancestor and bounded research question — Start reverse research with the subject and prove each parent-child link independently.",
-          "timestamp": 0,
-          "timestamp_seconds": 0,
-          "timestamp_label": "[00:00:00]",
-          "url": "https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s",
-          "markdown": "[00:00:00](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=0s)",
-          "epistemic_status": "attributed_practitioner_claim",
-          "relevance": "Matched source commentary; not independent verification or legal authority."
         }
       ],
-      "revision": "5340439653ec685e"
+      "revision": "951d9a99922281c9"
     }
   ],
   "chapter_count": 12,
-  "total_word_count": 63632,
+  "total_word_count": 58967,
   "epistemic_note": "Educational and research material only, not legal, tax, accounting, security, or investment advice. Verify data-protection, billing, and tax obligations independently.",
-  "updated_at": "2026-11-21T18:31:12Z"
+  "updated_at": "2026-11-22T17:18:33Z"
 }

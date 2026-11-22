@@ -13,8 +13,8 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100: this is a labor-intensive operating business, not an automation "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100: this is a labor-intensive operating business, not an automation "
         "arbitrage. This chapter maps four execution plays: recurring office contracts, "
         "outpatient medical janitorial service, properly classified W-2 and subcontractor "
         "delivery, and supervisor-pod retention. Each play requires enforceable scope, "
@@ -22,7 +22,7 @@ CHAPTER_9 = {
         "Canonical annual owner net profit is $20,000 Conservative, $87,000 Base, and "
         "$192,000 Scaled, supported by cleaning contract revenue rather than customer "
         "sales or property value. Use the statutory matrix, clause checklist, and verbatim "
-        "scripts to qualify buyers before mobilizing the nine-person starting pod. "
+        "scripts to qualify buyers before mobilizing the four-person starting pod. "
         "Scheduling, inspection logs, and billing reduce administration; they do not "
         "erase paid crew hours."
     ),
@@ -31,19 +31,19 @@ CHAPTER_9 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual cleaning contract revenue; only operator service revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual cleaning contract revenue; only operator service revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual cleaning contract revenue; only operator service revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C (11 people)",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C (6 people)",
         },
     ],
     "sections": [
@@ -182,7 +182,7 @@ CHAPTER_9 = {
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four checks before the nine-person pod mobilizes",
+                "title": "Four checks before the four-person pod mobilizes",
                 "body": (
                     "The working supervisor signs the site-readiness record only after "
                     "the owner resolves these four concrete operating requirements."
@@ -383,13 +383,13 @@ CHAPTER_9 = {
                     "invoices as delivery costs, not revenue offsets that hide actual "
                     "scale. Maintain enough cash to bridge payroll and customer payment "
                     "dates; a signed annual contract does not fund next Friday's wages. "
-                    "The $15,000 to $90,000 startup capital range and $4,000 to $18,000 "
+                    "The $10,000 to $50,000 startup capital range and $3,000 to $14,000 "
                     "monthly operating-expense planning range cannot substitute for a "
                     "complete scaled payroll model. Do not use that expense range as "
                     "an all-in ceiling for every scenario."
                 ),
                 (
-                    "The nine-person pod needs a named coverage plan, not simply nine "
+                    "The four-person pod needs a named coverage plan, not simply nine "
                     "names in scheduling software. Use Swept or Jobber to assign sites "
                     "and inspection reminders, QuickBooks Online to connect invoices "
                     "to the contract register, and a controlled document store for "

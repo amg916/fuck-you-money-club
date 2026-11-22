@@ -3,7 +3,7 @@ from __future__ import annotations
 VOLUME_027_SUBTITLE: str = (
     "The Complete Playbook for Buying Cash-Flowing Businesses: "
     "$750,000–$3,000,000 USD in Annual Acquired-Business Sales, "
-    "a 7 FT + 3 C (10-Person) Core Pod, and Disciplined Debt"
+    "a 2 FT + 2 C (4-Person) Core Pod, and Disciplined Debt"
 )
 
 VOLUME_027_POSITIONING_ALTERNATIVES: list[dict] = [
@@ -68,7 +68,8 @@ VOLUME_027_POSITIONING_ALTERNATIVES: list[dict] = [
         ),
         "audience": (
             "Micro-PE sponsors and hands-on general managers integrating "
-            "labor-intensive businesses with a ten-to-twelve-person operating pod."
+            "labor-intensive businesses with a 2 FT + 2 C (4-person) core pod "
+            "that expands to 3 FT + 3 C (6 people) at scale."
         ),
         "research_basis": (
             "29 U.S.C. § 207 supplies federal overtime requirements for covered "
@@ -99,7 +100,7 @@ def build_volume_027_diagrams_data() -> list[dict]:
             1,
             "operating_framework",
             (
-                "First-deal timing is 6–18 months. The 100-day operating plan "
+                "First-deal timing is 4–10 months. The 100-day operating plan "
                 "starts after closing, not after initial outreach. Recognized "
                 "revenue is acquired-business sales, not purchase price, borrowed "
                 "principal, seller proceeds, or transaction volume."
@@ -116,7 +117,7 @@ def build_volume_027_diagrams_data() -> list[dict]:
                     (
                         "Specify geography, transferable licenses, customer "
                         "concentration limits, operator replacement cost, and "
-                        "a $200,000–$1,000,000 buyer-capital envelope."
+                        "a $30,000–$120,000 buyer-capital envelope."
                     ),
                 ),
                 (
@@ -453,28 +454,33 @@ def build_volume_027_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-06-ten-to-twelve-person-pod",
+            "diag-06-four-core-six-scaled-pod",
             "org_architecture",
-            "Ten Core Seats; Two Explicit Scale Additions",
-            "Base and Conservative: 7 FT + 3 C. Scaled: 8 FT + 4 C.",
+            "Four Core Seats; Two Explicit Scale Additions",
+            "Conservative and Base: 2 FT + 2 C (4 people). Scaled: 3 FT + 3 C (6 people).",
             11,
             "operating_framework",
             (
-                "Each numeric value represents one person. The first ten seats "
-                "form the core pod; the final two activate only in the Scaled "
-                "case. Contractors are people, not full-time-equivalent claims. "
-                "Roles are an illustrative combined ownership-and-operation "
-                "roster, not ten extra hires above an acquired workforce."
+                "Each of the first four entries has numeric value 1 and represents "
+                "one active core person: two full-time operators and two contractors. "
+                "The final two entries have numeric value 0 because they are "
+                "inactive in the core configuration; activating one FT and one C "
+                "produces the six-person Scaled pod. Contractors are people, not "
+                "full-time-equivalent claims. External vendor and trade sub-crews "
+                "are charged to direct subcontractor/COGS pass-through, not "
+                "counted as internal pod seats."
             ),
             (
                 "The acquisition lead owns capital allocation; the general "
-                "manager directs operations. Specialist contractors support "
-                "defined workstreams without replacing management accountability."
+                "manager combines operating, service, and retention leadership. "
+                "Two specialist contractors cover legal and financial workstreams. "
+                "Add an operations lead and a systems contractor only at scale: "
+                "four active core seats plus two optional seats, not six core hires."
             ),
             [
                 (
                     "Acquisition lead",
-                    "Core FT 1 of 7",
+                    "Core FT 1 of 2",
                     1.0,
                     (
                         "Own purchase discipline, lender relationships, "
@@ -484,67 +490,18 @@ def build_volume_027_diagrams_data() -> list[dict]:
                 ),
                 (
                     "General manager",
-                    "Core FT 2 of 7",
+                    "Core FT 2 of 2",
                     1.0,
                     (
-                        "Own the operating result, customer retention, staffing "
-                        "priorities, service recovery, and execution of the "
-                        "post-close 100-day integration plan."
-                    ),
-                ),
-                (
-                    "Operations lead",
-                    "Core FT 3 of 7",
-                    1.0,
-                    (
-                        "Control scheduling, vendor commitments, capacity "
-                        "allocation, backlog aging, and daily escalation of "
-                        "delivery constraints to the general manager."
-                    ),
-                ),
-                (
-                    "Service lead",
-                    "Core FT 4 of 7",
-                    1.0,
-                    (
-                        "Set delivery standards, supervise job execution, "
-                        "review defects, and preserve customer-specific operating "
-                        "knowledge that could leave with the seller."
-                    ),
-                ),
-                (
-                    "Delivery specialist",
-                    "Core FT 5 of 7",
-                    1.0,
-                    (
-                        "Perform customer work, capture completion evidence, "
-                        "record materials and hours, and flag scope changes "
-                        "before they become unbilled service."
-                    ),
-                ),
-                (
-                    "Account and retention lead",
-                    "Core FT 6 of 7",
-                    1.0,
-                    (
-                        "Own renewals, customer transition calls, dispute "
-                        "resolution, concentration monitoring, and early "
-                        "escalation of threatened account departures."
-                    ),
-                ),
-                (
-                    "Controller and reporting lead",
-                    "Core FT 7 of 7",
-                    1.0,
-                    (
-                        "Own QuickBooks reconciliations, the cash forecast, "
-                        "receivables follow-up, covenant calculations, and "
-                        "automated management reporting with reviewed exceptions."
+                        "Own the operating result, scheduling, vendor coordination, "
+                        "service standards, customer retention, and execution of "
+                        "the post-close 100-day integration plan. Retain delivery "
+                        "accountability when external vendors perform customer work."
                     ),
                 ),
                 (
                     "Transaction counsel",
-                    "Core contractor 1 of 3",
+                    "Core contractor 1 of 2",
                     1.0,
                     (
                         "Review transaction disclosures, purchase terms, lien "
@@ -553,106 +510,110 @@ def build_volume_027_diagrams_data() -> list[dict]:
                     ),
                 ),
                 (
-                    "QoE and tax specialist",
-                    "Core contractor 2 of 3",
+                    "Fractional controller, QoE and tax specialist",
+                    "Core contractor 2 of 2",
                     1.0,
                     (
-                        "Normalize earnings, test working capital, evaluate "
-                        "tax allocation, and reconcile diligence findings "
-                        "with the opening operating-company records."
+                        "One appropriately qualified contractor combines earnings "
+                        "verification, working-capital review, and tax-allocation "
+                        "support with post-close reconciliations, cash forecasting, "
+                        "receivables oversight, and covenant reporting. Define "
+                        "scope and capacity explicitly rather than implying extra seats."
+                    ),
+                ),
+                (
+                    "Operations lead",
+                    "Scale-only addition: FT 3 of 3; inactive in core",
+                    0.0,
+                    (
+                        "Activate one additional full-time person only in the "
+                        "six-person Scaled configuration to own scheduling, "
+                        "vendor capacity, backlog, and service-quality controls, "
+                        "freeing the general manager for broader operating oversight."
                     ),
                 ),
                 (
                     "Systems and workflow specialist",
-                    "Core contractor 3 of 3",
-                    1.0,
+                    "Scale-only addition: contractor 3 of 3; inactive in core",
+                    0.0,
                     (
-                        "Configure Microsoft 365 access, accounting integrations, "
-                        "backups, and back-office workflows; document recovery "
-                        "procedures and test exception ownership."
-                    ),
-                ),
-                (
-                    "Capacity supervisor",
-                    "Scaled addition: FT 8 of 8",
-                    1.0,
-                    (
-                        "Add only in the twelve-person Scaled configuration "
-                        "to supervise higher throughput, absorb scheduling "
-                        "complexity, and prevent service-quality erosion."
-                    ),
-                ),
-                (
-                    "Integration coach",
-                    "Scaled addition: contractor 4 of 4",
-                    1.0,
-                    (
-                        "Add time-bounded process coaching and integration "
-                        "support in the Scaled configuration; transfer "
-                        "documented routines to the permanent operating leads."
+                        "Activate one additional contractor only in the Scaled "
+                        "configuration to configure accounting integrations, "
+                        "access controls, backups, and reporting automation; "
+                        "document recovery procedures and exception ownership."
                     ),
                 ),
             ],
         ),
         (
-            "diag-07-buyer-capital-allocation",
+            "diag-07-75000-reference-buyer-capital-allocation",
             "stacked_comparison",
-            "Allocate Buyer Capital Before Negotiating Price",
-            "Four buckets divide an illustrative $600,000 startup-capital plan.",
+            "Allocate a $75,000 Reference Startup Budget",
+            "Four buckets compare $30,000 lean, $75,000 reference, and $120,000 expanded plans.",
             4,
             "illustrative_model",
             (
-                "The canonical buyer-capital range is $200,000–$1,000,000. "
-                "The $600,000 illustration allocates 40%, 10%, 30%, and 20%. "
-                "Boundary allocations use the same illustrative weights, not "
-                "claims that every transaction is feasible at either boundary."
+                "The canonical startup-capital range is $30,000–$120,000 USD. "
+                "The $75,000 central/reference plan allocates 40%, 10%, 30%, "
+                "and 20% across four buckets. Lean and expanded plans use the "
+                "same illustrative weights, not claims that every transaction "
+                "is feasible at either boundary. Size acquisition financing "
+                "and required liquidity against transaction-specific evidence."
             ),
             (
-                "Numeric values are USD and sum to $600,000. Detail text "
-                "provides comparable $200,000 and $1,000,000 allocations. "
-                "Buyer capital is neither recognized sales nor total enterprise value."
+                "Numeric values are reference-plan USD and sum to $75,000: "
+                "$30,000 + $7,500 + $22,500 + $15,000. Lean allocations sum "
+                "to $30,000: $12,000 + $3,000 + $9,000 + $6,000. Expanded "
+                "allocations sum to $120,000: $48,000 + $12,000 + $36,000 "
+                "+ $24,000. Buyer capital is neither recognized sales nor "
+                "total enterprise value."
             ),
             [
                 (
                     "Purchase equity contribution",
-                    "$240,000; 40% of buyer capital",
-                    240000.0,
+                    "Lean $12,000; reference $30,000; expanded $48,000; 40%",
+                    30000.0,
                     (
-                        "Allocate $80,000 at the lower boundary and $400,000 "
-                        "at the upper boundary. Size debt separately; confirm "
+                        "Allocate $12,000 of the $30,000 lean plan, $30,000 "
+                        "of the $75,000 reference plan, and $48,000 of the "
+                        "$120,000 expanded plan. Size debt separately; confirm "
                         "lender equity requirements and seller-note treatment "
                         "before treating any note as qualifying injection."
                     ),
                 ),
                 (
                     "Diligence and closing costs",
-                    "$60,000; 10% of buyer capital",
-                    60000.0,
+                    "Lean $3,000; reference $7,500; expanded $12,000; 10%",
+                    7500.0,
                     (
-                        "Allocate $20,000 at the lower boundary and $100,000 "
-                        "at the upper boundary for QoE, counsel, tax work, "
-                        "searches, and transaction expenses. Separate one-time "
-                        "engagement charges from recurring contractor expense."
+                        "Allocate $3,000 of the $30,000 lean plan, $7,500 "
+                        "of the $75,000 reference plan, and $12,000 of the "
+                        "$120,000 expanded plan for QoE, counsel, tax work, "
+                        "searches, and transaction expenses. Validate quoted "
+                        "fees before proceeding; separate one-time engagement "
+                        "charges from recurring contractor expense."
                     ),
                 ),
                 (
                     "Opening working-capital reserve",
-                    "$180,000; 30% of buyer capital",
-                    180000.0,
+                    "Lean $9,000; reference $22,500; expanded $36,000; 30%",
+                    22500.0,
                     (
-                        "Allocate $60,000 at the lower boundary and $300,000 "
-                        "at the upper boundary. Fund collection gaps and "
+                        "Allocate $9,000 of the $30,000 lean plan, $22,500 "
+                        "of the $75,000 reference plan, and $36,000 of the "
+                        "$120,000 expanded plan. Fund collection gaps and "
                         "seasonality after reconciling seller-delivered working "
                         "capital to the negotiated closing adjustment."
                     ),
                 ),
                 (
                     "Integration and contingency liquidity",
-                    "$120,000; 20% of buyer capital",
-                    120000.0,
+                    "Lean $6,000; reference $15,000; expanded $24,000; 20%",
+                    15000.0,
                     (
-                        "Allocate $40,000 at the lower boundary and $200,000 "
-                        "at the upper boundary for migration, retention, and "
+                        "Allocate $6,000 of the $30,000 lean plan, $15,000 "
+                        "of the $75,000 reference plan, and $24,000 of the "
+                        "$120,000 expanded plan for migration, retention, and "
                         "repair contingencies. Cash released for one purpose "
                         "cannot simultaneously remain available for another."
                     ),
@@ -668,7 +629,7 @@ def build_volume_027_diagrams_data() -> list[dict]:
             "operating_framework",
             (
                 "This is a pre-acquisition launch sprint. First-deal timing "
-                "remains 6–18 months; the 100-day turnaround starts after "
+                "remains 4–10 months; the 100-day turnaround starts after "
                 "closing. Numeric values are milestone endpoint days."
             ),
             (

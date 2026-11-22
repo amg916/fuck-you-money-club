@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($50,000–$250,000 USD) and configure a lean, low-opex ($6,000–$30,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($15,000–$80,000 USD) and configure a lean, low-opex ($6,000–$30,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Carrier Payments, FMCSA Security, Highway/RMIS Screening, and a Twelve-Layer Dispatch Stack",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a 62/100 Money-to-Manpower "
+        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower "
         "Score because carrier payments arrive before many shipper collections. "
         "Allocate at least half of startup capital to accessible freight float, "
         "separate statutory security from operating cash, and purchase software only "

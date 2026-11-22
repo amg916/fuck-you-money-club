@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #26 with a Money-to-Manpower "
-        "Score of 62/100: automation must reduce clerical drag without disguising capital "
+        "Candidate #17, Government Surplus Auctions, ranks #29 with a Money-to-Manpower "
+        "Score of 79/100: automation must reduce clerical drag without disguising capital "
         "and handling intensity. This chapter maps six operator plays: auction discovery, "
         "evidence qualification, bid-limit underwriting, removal coordination, inventory "
         "remarketing, and buyer reactivation. A 2 FT + 3 C pod uses Python collectors, "
@@ -506,7 +506,7 @@ CHAPTER_10 = {
                     "as invisible extras. These totals do not establish a "
                     "specific wage schedule or prove that every listed team "
                     "member receives full-year market compensation. Build the actual "
-                    "staffing budget before committing to hires. The $25,000–$200,000 "
+                    "staffing budget before committing to hires. The $15,000–$80,000 "
                     "startup capital range and $3,000–$15,000 monthly operating "
                     "expense range are planning context, not additional revenue. "
                     "Distinguish inventory cash purchases, recurring expenses, and "

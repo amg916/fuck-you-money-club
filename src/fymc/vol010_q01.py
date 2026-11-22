@@ -13,8 +13,8 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Building an SEO Empire is Candidate #25, Pipeline Rank #10 of 29, with an "
-        "82/100 Money-to-Manpower Score: a high-leverage publishing operation, not a "
+        "Building an SEO Empire is Candidate #25, Pipeline Rank #07 of 29, with an "
+        "89/100 Money-to-Manpower Score: a high-leverage publishing operation, not a "
         "promise that rankings become cash. Its 30 mapped plays combine search "
         "distribution, original information assets, and advertising, affiliate, or "
         "sponsorship contracts. This chapter defines five operator archetypes and "
@@ -32,19 +32,19 @@ CHAPTER_1 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -103,12 +103,12 @@ CHAPTER_1 = {
                 (
                     "Treat the 30 mapped plays as a portfolio of possible operating "
                     "mechanisms, not thirty simultaneous launches. Candidate #25 earns "
-                    "82/100 from revenue potential of 22, margin potential of 21, team "
+                    "89/100 from revenue potential of 22, margin potential of 21, team "
                     "efficiency of 17, startup accessibility of 10, and automation "
                     "potential of 12. Those scores describe relative operating leverage; "
                     "they do not remove ranking losses, slow audience growth, or revenue "
-                    "concentration. The stated startup envelope is $15,000–$120,000, with "
-                    "monthly operating expenditure of $3,000–$20,000 and a 6–24 month "
+                    "concentration. The stated startup envelope is $10,000–$60,000, with "
+                    "monthly operating expenditure of $2,500–$14,000 and a 6–24 month "
                     "time to first deal. Build a monthly cash schedule because those "
                     "ranges do not imply that the minimum capital funds the longest "
                     "runway. At $3,000 monthly outflow, six months consumes $18,000 "

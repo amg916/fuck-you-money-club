@@ -15,7 +15,7 @@ VOLUME_017_POSITIONING_ALTERNATIVES = [
         ),
         "audience": (
             "A full-time owner and contract researcher operating a "
-            "$10,000–$150,000 startup portfolio with patient capital."
+            "$8,000–$60,000 startup portfolio with patient capital."
         ),
         "research_basis": (
             "15 U.S.C. 1125(d) makes bad-faith intent to profit from protected "
@@ -95,7 +95,7 @@ def build_volume_017_diagrams_data() -> list[dict]:
             "operating_framework",
             (
                 "The core pod is one full-time owner plus one contractor. "
-                "First-deal timing is 3–24 months; a completed sourcing cycle "
+                "First-deal timing is 2–9 months; a completed sourcing cycle "
                 "does not establish buyer demand or immediate liquidity."
             ),
             (
@@ -514,65 +514,87 @@ def build_volume_017_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-startup-capital-30000-reference-allocation",
             "stacked_comparison",
-            "Allocate Startup Cash Without Treating Inventory as Profit",
-            "Four buckets total $100,000 within the $10,000–$150,000 range.",
+            "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
+            "Compare $8,000 lean, $30,000 reference, and $60,000 expanded plans.",
             4,
             "illustrative_model",
             (
-                "This is one illustrative $100,000 opening cash allocation, "
-                "not a required portfolio size or an annual expense forecast. "
-                "Numeric values are dollars; labels show shares of the same "
-                "capital pool. Do not add these buckets to the annual "
-                "waterfall as though all cash deployed were current expense."
+                "This illustrative $30,000 reference opening cash allocation "
+                "sits within the $8,000–$60,000 USD startup capital range; "
+                "it is not a required portfolio size or an annual expense "
+                "forecast. Numeric values are reference-plan dollars. "
+                "Each plan allocates 50% to acquisition inventory, 10% to "
+                "research and transaction setup, 10% to renewal and transfer "
+                "reserves, and 30% to operating runway. Lean and expanded "
+                "amounts are shown in each bucket. Do not add these buckets "
+                "to the annual waterfall as though all cash deployed were "
+                "current expense."
             ),
             (
-                "$50,000 + $10,000 + $10,000 + $30,000 = $100,000. "
-                "At $500–$5,000 monthly operating expense, the $30,000 "
-                "operating reserve covers 6–60 months before inventory "
-                "purchases and separately reserved renewals."
+                "Lean: $4,000 + $800 + $800 + $2,400 = $8,000. "
+                "Reference: $15,000 + $3,000 + $3,000 + $9,000 = $30,000. "
+                "Expanded: $30,000 + $6,000 + $6,000 + $18,000 = $60,000. "
+                "At $500–$5,000 monthly operating expense, the reference "
+                "$9,000 operating reserve covers 1.8–18 months, excluding "
+                "inventory purchases and separately reserved renewals "
+                "and transfers."
             ),
             [
                 (
                     "Acquisition inventory",
-                    "$50,000; 50% of opening capital",
-                    50000.0,
+                    "Lean $4,000; reference $15,000; expanded $30,000; 50%",
+                    15000.0,
                     (
-                        "Deploy gradually into researched names and capped "
-                        "auction bids; retain a per-domain basis ledger "
-                        "rather than marking unsold inventory to asking prices."
+                        "Allocate $4,000 of the $8,000 lean plan, $15,000 "
+                        "of the $30,000 reference plan, or $30,000 of the "
+                        "$60,000 expanded plan. Deploy gradually into "
+                        "researched names and capped auction bids; retain "
+                        "a per-domain basis ledger rather than marking "
+                        "unsold inventory to asking prices."
                     ),
                 ),
                 (
                     "Research and transaction setup",
-                    "$10,000; 10% of opening capital",
-                    10000.0,
+                    "Lean $800; reference $3,000; expanded $6,000; 10%",
+                    3000.0,
                     (
-                        "Reserve for comparable-sale tools, historical-use "
-                        "research, targeted rights review, and initial "
-                        "transaction setup; release funds against scoped work."
+                        "Allocate $800 of the $8,000 lean plan, $3,000 "
+                        "of the $30,000 reference plan, or $6,000 of the "
+                        "$60,000 expanded plan. Reserve for comparable-sale "
+                        "tools, historical-use research, targeted rights "
+                        "review, and initial transaction setup; release "
+                        "funds against scoped work."
                     ),
                 ),
                 (
                     "Renewal and transfer reserve",
-                    "$10,000; 10% of opening capital",
-                    10000.0,
+                    "Lean $800; reference $3,000; expanded $6,000; 10%",
+                    3000.0,
                     (
-                        "Ring-fence cash against registrar renewal schedules, "
-                        "premium-name charges, and transfer costs; revise "
-                        "the reserve as holdings and renewal dates change."
+                        "Allocate $800 of the $8,000 lean plan, $3,000 "
+                        "of the $30,000 reference plan, or $6,000 of the "
+                        "$60,000 expanded plan. Ring-fence cash against "
+                        "registrar renewal schedules, premium-name charges, "
+                        "and transfer costs; revise the reserve as holdings "
+                        "and renewal dates change."
                     ),
                 ),
                 (
                     "Operating runway reserve",
-                    "$30,000; 30% of opening capital",
-                    30000.0,
+                    "Lean $2,400; reference $9,000; expanded $18,000; 30%",
+                    9000.0,
                     (
-                        "Support contractor work, inquiry handling, and "
-                        "routine administration while sales remain uneven; "
-                        "six months at maximum operating expense falls "
-                        "short of the 24-month first-deal horizon."
+                        "Allocate $2,400 of the $8,000 lean plan, $9,000 "
+                        "of the $30,000 reference plan, or $18,000 of the "
+                        "$60,000 expanded plan. Support contractor work, "
+                        "inquiry handling, and routine administration while "
+                        "sales remain uneven. First-deal timing is 2–9 "
+                        "months; the reference reserve covers nine months "
+                        "only at monthly operating expense of $1,000 or less. "
+                        "At $5,000 monthly, even the expanded operating "
+                        "reserve covers only 3.6 months."
                     ),
                 ),
             ],
@@ -586,7 +608,7 @@ def build_volume_017_diagrams_data() -> list[dict]:
             "operating_framework",
             (
                 "The launch sprint creates evidence, controls, and listings. "
-                "Canonical first-deal timing remains 3–24 months. Buying "
+                "Canonical first-deal timing remains 2–9 months. Buying "
                 "inventory during the sprint is conditional on completed "
                 "diligence and available carrying reserves."
             ),

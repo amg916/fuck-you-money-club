@@ -83,7 +83,7 @@ def build_volume_006_workbook() -> dict:
                         "Underwriting decision and next commitment",
                         "textarea",
                         "Record the accept, narrow, or decline decision with evidence, commercial conditions, and the next reversible action. Explain how the agency's overall candidate positioning informs strategy without replacing engagement-specific technical and commercial diligence.",
-                        "Accept the distributor pilot after the access letter and $10,000 deposit arrive. Candidate #29 ranks #06 of 29 with an 86/100 Money-to-Manpower Score, but this engagement proceeds because its workflow is repeatable, reviewer-owned, and collectible, not because the overall category ranks highly.",
+                        "Accept the distributor pilot after the access letter and $10,000 deposit arrive. Candidate #29 ranks #08 of 29 with an 89/100 Money-to-Manpower Score, but this engagement proceeds because its workflow is repeatable, reviewer-owned, and collectible, not because the overall category ranks highly.",
                     ),
                 ],
                 "completion_gate": "Advance only when the contracting entity and signer are verified, representative data is authorized, the workflow scores at least 16 of 20, exclusions are written, reviewer ownership is confirmed, and the deposit requirement appears in the signed order form.",
@@ -450,7 +450,7 @@ def build_volume_006_workbook() -> dict:
                         "Canonical performance reference and score breakdown",
                         "textarea",
                         "Record the category's positioning, score components, annual targets, and scaled staffing limit. Use these as planning references while clearly distinguishing measured agency results and recognizing that projected performance does not replace operating evidence or labor-market feasibility.",
-                        "Productized AI Agencies scores 86/100: revenue potential 23, margin potential 21, team efficiency 17, startup accessibility 12, and automation potential 13. Canonical owner net is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. The Scaled configuration is three full-time people plus four contractors, seven people total.",
+                        "Productized AI Agencies scores 89/100: revenue potential 24, margin potential 21, team efficiency 17, startup accessibility 14, and automation potential 13. Canonical owner net is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. The Scaled configuration is three full-time people plus four contractors, seven people total.",
                     ),
                     field(
                         "Customer concentration and renewal ledger",

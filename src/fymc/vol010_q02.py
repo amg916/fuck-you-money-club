@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. The buyer purchases "
         "qualified attention, attributable customers, or exclusive access to a "
         "credible niche audience; search rankings themselves do not write checks. "
@@ -31,19 +31,19 @@ CHAPTER_2 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -523,7 +523,7 @@ CHAPTER_2 = {
                     "sale proceeds are outside this bridge."
                 ),
                 (
-                    "The supplied $3,000 to $20,000 monthly operating "
+                    "The supplied $2,500 to $14,000 monthly operating "
                     "expense range does not by itself explain every scenario's "
                     "all-in annual costs. Conservative implies approximately $5,333 "
                     "monthly costs, Base $27,562.50, and Scaled $41,250. "
@@ -536,7 +536,7 @@ CHAPTER_2 = {
                     "headcounts describe the supplied team configurations; they do "
                     "not establish salaries or prove that two full-time market-rate "
                     "employees fit the Conservative budget. Startup capital of "
-                    "$15,000 to $120,000 and a 6–24 month "
+                    "$10,000 to $60,000 and a 6–24 month "
                     "time to first deal make cash timing a separate "
                     "survival problem. At Base revenue, a hypothetical uniform "
                     "60-day collection delay ties up roughly $80,548 "

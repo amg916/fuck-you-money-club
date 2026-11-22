@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an 82/100 Money-to-Manpower Score across 30 mapped plays. The payer buys documented access to qualified demand, not ownership of a prospect's eventual contract value. This chapter connects enterprise buying committees, eight settlement arrangements, counterparty credit, and fee-protection evidence to three demanding applications: Arizona ABS case acquisition, USPTO office-action triggers, and 340B administrative origination. Annual owner net profit is $30,000 Conservative, $202,500 Base, and $480,000 Scaled. Separate marketing revenue from attorney fees, pharmacy reimbursement, and client funds. Establish the authorized payer, objective acceptance event, permitted compensation structure, and collection route before spending on account acquisition.
+Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an 86/100 Money-to-Manpower Score across 30 mapped plays. The payer buys documented access to qualified demand, not ownership of a prospect's eventual contract value. This chapter connects enterprise buying committees, eight settlement arrangements, counterparty credit, and fee-protection evidence to three demanding applications: Arizona ABS case acquisition, USPTO office-action triggers, and 340B administrative origination. Annual owner net profit is $30,000 Conservative, $202,500 Base, and $480,000 Scaled. Separate marketing revenue from attorney fees, pharmacy reimbursement, and client funds. Establish the authorized payer, objective acceptance event, permitted compensation structure, and collection route before spending on account acquisition.
 
 ### Key Metrics
 

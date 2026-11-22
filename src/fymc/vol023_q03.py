@@ -13,8 +13,8 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a Money-to-Manpower Score of "
-        "63/100: attractive asset margins, demanding capital deployment, and stubborn "
+        "Candidate #7, Mineral Rights, ranks #25 with a Money-to-Manpower Score of "
+        "81/100: attractive asset margins, demanding capital deployment, and stubborn "
         "title labor. This chapter maps five operating plays: producing-mineral "
         "acquisition, NPRI aggregation, pooling-docket curve-jumping, institutional "
         "rights flips, and cell_tower_billboard_easement_strip_out. Only royalty "
@@ -392,7 +392,7 @@ CHAPTER_3 = {
                     "asset deployment, total opening uses are $446,281.25. "
                     "A $150,000 facility allocated to purchases leaves "
                     "$296,281.25 of equity funding. This fits the stated "
-                    "$150,000–$2,000,000 startup range without implying every "
+                    "$15,000–$75,000 startup range without implying every "
                     "portfolio can borrow at the assumed rate or close "
                     "within the 6–24 month first-deal window."
                 ),

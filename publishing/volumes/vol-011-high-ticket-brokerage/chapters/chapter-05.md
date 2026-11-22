@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, holds Rank #11 with an 82/100 Money-to-Manpower Score across 21 mapped plays. Its leverage comes from retained transaction commissions, not ownership of the assets changing hands. Annual owner net profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled; one disputed fee can consume much of the smaller case. This chapter isolates mandate defects, unlawful solicitation, escrow substitution, defective introductions, refund exposure, invasive identity matching, and misleading credit applications. Treat the question's 80% figure as a challenge, not measured industry attrition. Use evidence-linked milestones, written fee allocation, independent wire verification, and cash stress tests to stop asymmetric losses before another attractive listing consumes the firm's remaining runway.
+Candidate #26, High-Ticket Brokerage, holds Rank #10 with an 88/100 Money-to-Manpower Score across 21 mapped plays. Its leverage comes from retained transaction commissions, not ownership of the assets changing hands. Annual owner net profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled; one disputed fee can consume much of the smaller case. This chapter isolates mandate defects, unlawful solicitation, escrow substitution, defective introductions, refund exposure, invasive identity matching, and misleading credit applications. Treat the question's 80% figure as a challenge, not measured industry attrition. Use evidence-linked milestones, written fee allocation, independent wire verification, and cash stress tests to stop asymmetric losses before another attractive listing consumes the firm's remaining runway.
 
 ### Key Metrics
 

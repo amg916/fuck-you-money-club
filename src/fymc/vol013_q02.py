@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. Four mapped plays organize the buyer: patent "
         "field-of-use licensing, brand licensing with evidence-led protection, catalog "
         "rights licensing, and dataset access licensing. Each sells a defined operating "
@@ -590,14 +590,14 @@ CHAPTER_2 = {
                     "debtor and rights package, not merely "
                     "aggregate receivables; a profitable portfolio "
                     "can hide one insolvent exclusive licensee. "
-                    "The stated $25,000–$250,000 startup capital "
-                    "range and $2,000–$15,000 monthly operating "
+                    "The stated $12,000–$75,000 startup capital "
+                    "range and $2,000–$12,000 monthly operating "
                     "range are planning descriptors, not amounts "
                     "to add mechanically to every scenario. "
                     "Annual scenario expense totals govern these "
                     "profit reconciliations and can include costs "
                     "outside recurring monthly overhead. With "
-                    "6–24 months to a first deal, "
+                    "4–14 months to a first deal, "
                     "reserve liquidity for diligence and collection "
                     "delays rather than spending projected royalties. "
                     "At renewal, expand territory or exclusivity "

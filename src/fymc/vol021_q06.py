@@ -13,8 +13,8 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 Money-to-Manpower "
-        "Score: a disciplined specialist play, not unattended retail. This chapter organizes "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower "
+        "Score: a elite small-team cash machine, not unattended retail. This chapter organizes "
         "18 mapped plays into demand discovery, authorized supply, and specialist partner "
         "sourcing. Use marketplace evidence, recall searches, dealer applications, landed-cost "
         "quotes, and tightly measured outreach to secure the first 3–10 paid pilot wins "
@@ -237,7 +237,7 @@ CHAPTER_6 = {
                     "contractor hours. Validate actual labor quotes before adopting the "
                     "cases as a budget. The stated $4,000–$25,000 monthly operating-expense "
                     "range must be classified consistently, not added blindly on top "
-                    "of already included costs. Likewise, the $30,000–$250,000 startup "
+                    "of already included costs. Likewise, the $15,000–$80,000 startup "
                     "capital range funds inventory and runway, not immediate revenue. "
                     "Maintain a thirteen-week cash forecast showing supplier deposits, "
                     "settlement delays, refunds, tax remittances, and replenishment purchases "

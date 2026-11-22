@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, holds Rank #13 with a "
-        "79/100 Money-to-Manpower Score. Map automation to four operator plays: "
+        "Candidate #19, Intellectual Property Licensing, holds Rank #09 with a "
+        "88/100 Money-to-Manpower Score. Map automation to four operator plays: "
         "patent field-of-use licensing, brand category licensing, catalog rights "
         "licensing, and dataset access licensing. A 1 FT + 3 C pod can target "
         "70%+ repetitive-work reduction by separating evidence collection from "
@@ -542,13 +542,13 @@ CHAPTER_10 = {
                     "Base retain 1 FT + 3 C; Scaled "
                     "uses 2 FT + 4 C, six people. "
                     "These total annual cost envelopes are broader "
-                    "than the stated $2,000–$15,000 monthly operating "
+                    "than the stated $2,000–$12,000 monthly operating "
                     "expense range: reconcile specialist work, rights "
                     "acquisition treatment, and deal-specific costs "
                     "rather than treating that range as total "
                     "annual expenditure. Startup capital remains "
-                    "$25,000–$250,000, and first-deal timing remains "
-                    "6–24 months. Build the evidence ledger and "
+                    "$12,000–$75,000, and first-deal timing remains "
+                    "4–14 months. Build the evidence ledger and "
                     "one reporting adapter before funding elaborate "
                     "acquisition infrastructure. A possible Base "
                     "revenue composition is $250,000 of recognized "

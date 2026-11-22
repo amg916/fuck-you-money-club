@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an 82/100 Money-to-Manpower Score across 30 mapped plays. Its economic asset is an enforceable retainer and accepted-opportunity fee, not the enterprise contract value appearing in a client's pipeline. This chapter reconciles annual owner profit of $30,000 Conservative, $202,500 Base, and $480,000 Scaled through explicit credit allowances, delivery labor, acquisition cost, collection losses, and funding expense. It separates revenue recognition from payout availability, prices attribution disputes before they become cash emergencies, and stress-tests customer acquisition, scrubs, and payroll together. Telegram signals, procurement brokerage, and healthcare acquisition illustrate why similar-looking leads require different fee structures, evidence packages, and working-capital commitments.
+Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an 86/100 Money-to-Manpower Score across 30 mapped plays. Its economic asset is an enforceable retainer and accepted-opportunity fee, not the enterprise contract value appearing in a client's pipeline. This chapter reconciles annual owner profit of $30,000 Conservative, $202,500 Base, and $480,000 Scaled through explicit credit allowances, delivery labor, acquisition cost, collection losses, and funding expense. It separates revenue recognition from payout availability, prices attribution disputes before they become cash emergencies, and stress-tests customer acquisition, scrubs, and payroll together. Telegram signals, procurement brokerage, and healthcare acquisition illustrate why similar-looking leads require different fee structures, evidence packages, and working-capital commitments.
 
 ### Key Metrics
 

@@ -6,38 +6,38 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-first-insurance-restoration-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in insurance restoration, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–6 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in insurance restoration, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–5 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Five Referral and Intent Plays Using Permit Signals, IICRC Drying Records, Xactimate Scope Evidence, and Contractor-Safe Collections",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a 54/100 Money-to-Manpower Score because dispatch speed only creates value when labor, documentation, and collections stay controlled. "
+        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower Score because dispatch speed only creates value when labor, documentation, and collections stay controlled. "
         "This chapter maps five operator plays: plumber-led water mitigation, multifamily response agreements, fire stabilization referrals, properly licensed mold remediation, and storm-envelope restoration. "
         "Build demand from verified property signals and trusted service partners rather than purchased catastrophe lists. "
         "Land the first 3–10 wins within a 1–6 month planning window by qualifying authority, payment responsibility, access, and crew capacity before dispatch. "
         "Canonical annual owner profit is $40,000 Conservative, $195,000 Base, and $450,000 Scaled. "
-        "The operating system respects the 5 FT + 6 C pod, distinguishes contractor scope support from public adjusting, and converts documented work into collectible gross restoration billings."
+        "The operating system respects the 2 FT + 2 C pod, distinguishes contractor scope support from public adjusting, and converts documented work into collectible gross restoration billings."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C, totaling 13 people",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C, totaling 6 people",
         },
     ],
     "sections": [
@@ -47,7 +47,7 @@ CHAPTER_6 = {
             "paragraphs": [
                 (
                     "Start with five mapped plays, each carrying a different buying trigger and operational burden: plumber-led water mitigation, multifamily response agreements, fire stabilization referrals, properly licensed mold remediation, and storm-envelope restoration. "
-                    "These are sourcing lanes, not five departments. For the canonical 5 FT + 6 C pod, assign one owner-estimator, one dispatcher-documentation coordinator, one field supervisor, and two technicians; prequalify six contractors across the trades actually offered. "
+                    "These are sourcing lanes, not five departments. For the canonical 2 FT + 2 C pod, assign one owner-estimator, one dispatcher-documentation coordinator, one field supervisor, and two technicians; prequalify six contractors across the trades actually offered. "
                     "Contractors are scheduled capacity, not six people automatically available overnight. Begin within a drive-time polygon that preserves monitoring visits, equipment retrieval, and a second emergency response. "
                     "High-margin opportunities usually hide in avoidable friction: a plumber has stopped the leak but cannot dry concealed assemblies, or a property manager has recurring losses but no vendor who closes documentation promptly. "
                     "The opportunity is the service gap, not the customer's distress or the size of their policy. Prioritize safe, accessible losses with a known decision-maker, an isolated source, and a realistic payment path. "
@@ -160,7 +160,7 @@ CHAPTER_6 = {
                     "Separate job contribution from annual owner profit when deciding which inquiries deserve scarce crew time. As an illustrative screening case, a $12,000 restoration scope with $3,200 subcontract cost, $1,800 materials, $2,400 allocated field labor, and $600 equipment and disposal cost leaves $4,000 before remaining overhead, collection losses, and taxes. "
                     "That 33.3% contribution does not replace the canonical annual net margins. Conservative remains $500,000 gross billings at 8%, producing $40,000 owner profit; Base remains $1,500,000 at 13.0%, producing $195,000; Scaled remains $2,500,000 at 18%, producing $450,000. "
                     "These revenues include subcontractor and material charges, rather than counting the same costs again as separate revenue. Claim limits, property values, and insurer reserves are not operator revenue. "
-                    "Use the $75,000–$350,000 startup range and $10,000–$45,000 monthly operating-expense range as planning boundaries, then build a weekly cash forecast from the actual pod. "
+                    "Use the $18,000–$75,000 startup range and $4,000–$20,000 monthly operating-expense range as planning boundaries, then build a weekly cash forecast from the actual pod. "
                     "Check deposits and progress billing against applicable state contract rules before offering them. Describe deductible responsibility accurately; Texas Insurance Code section 707.002 prohibits specified deductible-waiver arrangements. "
                     "If a customer asks whether insurance will pay everything, answer with the documented scope and contractual payment terms, not a coverage promise. "
                     "Decline profitable-looking jobs whose procurement and payroll timing exceed available working capital."
@@ -357,8 +357,8 @@ CHAPTER_6 = {
                 ),
                 (
                     "At each monthly review, rank the five plays by collected contribution, crew hours, travel burden, dispute frequency, and repeat introductions, not by signed estimate totals alone. "
-                    "The canonical Conservative and Base cases both use 5 FT + 6 C; reaching Base therefore requires better throughput, scope mix, utilization, or realized pricing rather than pretending labor is unlimited. "
-                    "Scaled uses 6 FT + 7 C, totaling 13 people, and its $450,000 annual owner profit requires the stated 18% margin on $2,500,000 gross billings. "
+                    "The canonical Conservative and Base cases both use 2 FT + 2 C; reaching Base therefore requires better throughput, scope mix, utilization, or realized pricing rather than pretending labor is unlimited. "
+                    "Scaled uses 3 FT + 3 C, totaling 6 people, and its $450,000 annual owner profit requires the stated 18% margin on $2,500,000 gross billings. "
                     "Do not annualize the first three emergency jobs into that result. Track leading constraints instead: technician hours already committed, next-day monitoring slots, equipment ready for deployment, contractor acceptance, and cash due before the next payroll. "
                     "Pause a channel when it fills the calendar with distant, poorly authorized, or heavily disputed work. Expand the strongest lane only after completed jobs show stable documentation and collectible economics. "
                     "Ask satisfied customers and partners for specific introductions, without exposing loss details or paying prohibited referral compensation. "
@@ -417,7 +417,7 @@ CHAPTER_6 = {
     "pull_quote": "The best restoration lead is the loss you can safely authorize, document, deliver, and collect without breaking tomorrow's schedule.",
     "diagram_id": "diag-02",
     "action_checklist": [
-        "Map the five plays inside a defensible drive-time territory and assign ownership within the 5 FT + 6 C pod.",
+        "Map the five plays inside a defensible drive-time territory and assign ownership within the 2 FT + 2 C pod.",
         "Research 120 business accounts using verified public signals, recording source dates, contact basis, and current decision-makers.",
         "Deploy the 100-point qualification scorecard with mandatory safety, licensing, authority, and payment checks before dispatch.",
         "Run the 15-business-day outreach cadence and measure each transition from unique account to signed paid work order.",

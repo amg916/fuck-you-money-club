@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an "
-        "82/100 Money-to-Manpower Score across 30 mapped plays. This chapter turns "
+        "Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an "
+        "86/100 Money-to-Manpower Score across 30 mapped plays. This chapter turns "
         "that opportunity into an evidence-bound operating system: Python workers "
         "collect account signals, language models structure research, Salesforce "
         "preserves attribution, and scheduling webhooks close the delivery loop. "

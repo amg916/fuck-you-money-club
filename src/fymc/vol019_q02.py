@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
         "Money-to-Manpower Score. This chapter maps nine operator plays: SEC filing "
         "triggers, deal registration, renewal rescue, license reconciliation, AWS CPPO, "
         "Microsoft CSP, implementation milestones, procurement consolidation, and "
@@ -495,7 +495,7 @@ CHAPTER_2 = {
                     "scale, not a claim that every license carries identical economics. Contractor "
                     "counts do not imply full-year utilization, so price delivery hours explicitly. "
                     "The stated $5,000 to $25,000 monthly operating expense range is contextual, "
-                    "not an extra deduction after these net profits. Likewise, $25,000 to $150,000 "
+                    "not an extra deduction after these net profits. Likewise, $15,000 to $75,000 "
                     "startup capital is funding capacity, not revenue. With three to twelve "
                     "months to a first deal, cash runway and supplier-credit headroom must be "
                     "planned separately from the annual profit target."

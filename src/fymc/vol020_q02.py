@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #20 with a "
-        "70/100 Money-to-Manpower Score: a disciplined specialist play built on "
+        "Candidate #4, Government Contract Brokering, holds Rank #27 with a "
+        "79/100 Money-to-Manpower Score: a high-leverage operator play built on "
         "recognized service fees, never client contract value. The check usually "
         "comes from a contractor's operating account, not an agency procurement "
         "officer. Seven chapter-mapped plays monetize capture retainers, bid "
@@ -671,7 +671,7 @@ CHAPTER_2 = {
                     "award uncertainty, payment delays, and "
                     "supplier failure without merging the "
                     "operator's receivable with the client's "
-                    "public contract. The stated $25,000–$150,000 "
+                    "public contract. The stated $20,000–$90,000 "
                     "startup range and $5,000–$25,000 monthly "
                     "opex range do not establish sufficient "
                     "runway for a 6–18 month first-deal cycle. "

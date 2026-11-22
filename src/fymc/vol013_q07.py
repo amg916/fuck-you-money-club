@@ -13,8 +13,8 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, holds Rank #13 with a "
-        "79/100 Money-to-Manpower Score. This chapter maps four operator plays: "
+        "Candidate #19, Intellectual Property Licensing, holds Rank #09 with a "
+        "88/100 Money-to-Manpower Score. This chapter maps four operator plays: "
         "patent field-of-use licensing, brand licensing, catalog licensing, and "
         "dataset licensing. One full-time operator and three fractional "
         "contractors convert documented rights into bounded permissions, earned "
@@ -221,7 +221,7 @@ CHAPTER_7 = {
                     "compact reference permits one contract per asset package, so split "
                     "nonoverlapping fields or territories into separately identified packages "
                     "before activation. Its intake score measures readiness and is unrelated "
-                    "to Candidate #19's fixed 79/100 portfolio score. Store sensitive "
+                    "to Candidate #19's fixed 88/100 portfolio score. Store sensitive "
                     "documents outside event payloads and use durable evidence references. "
                     "Document access requires separate authenticated application controls. The "
                     "Python functions assume their caller has already been authenticated "
@@ -883,7 +883,7 @@ if __name__ == "__main__":
                     "The Worked 90-Day Cohort Walk models a mature operating quarter, "
                     "not the first quarter after buying an asset. Candidate #19's "
                     "time to first deal remains six to twenty-four months, with "
-                    "$25,000–$250,000 of startup capital. At day one, eleven existing "
+                    "$12,000–$75,000 of startup capital. At day one, eleven existing "
                     "contracts are already active: three patent packages contribute $45,000 "
                     "of earned quarterly fees and royalties, three brand packages "
                     "contribute $30,000, three catalog packages contribute $18,750, and "
@@ -928,7 +928,7 @@ if __name__ == "__main__":
                     "Quarterly operating costs total $61,093.75: $36,000 of recurring "
                     "overhead and $25,093.75 of variable delivery, specialist, and "
                     "contract-specific costs. The recurring component is $12,000 monthly, "
-                    "inside the stated $2,000–$15,000 monthly opex range; that "
+                    "inside the stated $2,000–$12,000 monthly opex range; that "
                     "range is not a ceiling on all costs used "
                     "to calculate net margin. Monthly variable costs are $8,000, "
                     "$8,375, and $8,718.75, giving total monthly expenses and "
@@ -1004,7 +1004,7 @@ if __name__ == "__main__":
                         "Scenario boundary preserves canonical cases and separately funded startup spending.",
                         "Base and Conservative use one full-time operator plus three fractional contractors.",
                         "Conservative revenue is $50,000; Scaled revenue is $800,000 from operator fees.",
-                        "Startup capital remains $25,000–$250,000; first-deal timing remains six to twenty-four months.",
+                        "Startup capital remains $12,000–$75,000; first-deal timing remains six to twenty-four months.",
                         "Conservative costs are $37,500; Scaled costs are $320,000 for its larger pod.",
                         "Owner profit is $12,500 Conservative and $480,000 Scaled; Scaled uses six people.",
                     ],

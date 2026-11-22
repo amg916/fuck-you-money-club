@@ -9,11 +9,11 @@ CHAPTER_8 = {
     "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small medical equipment resale desk an unfair information edge?",
     "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
     "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "AccessGUDID, openFDA, UCC Searches, Biomedical Test Records, and HIPAA-Aware Asset Pipelines for a Six-Person Resale Pod",
+    "subtitle": "AccessGUDID, openFDA, UCC Searches, Biomedical Test Records, and HIPAA-Aware Asset Pipelines for a Four-Person Resale Pod",
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 Money-to-Manpower Score. "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 Money-to-Manpower Score. "
         "Its information advantage comes from connecting identity, ownership, serviceability, and buyer demand before committing capital. "
         "This chapter maps three operator plays: diagnostic replacement sourcing, surgical surplus recovery, and veterinary/aesthetic buyer matching. "
         "AccessGUDID and FDA records establish product context; procurement, surplus, and provider records expose opportunities; biomedical testing and controlled sanitization establish resale readiness. "
@@ -26,19 +26,19 @@ CHAPTER_8 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -266,7 +266,7 @@ CHAPTER_8 = {
                     "When a listing changes price, retain both observations instead of rewriting the original underwriting evidence. "
                     "Send the sourcing operator one daily digest containing new actionable leads and changed material facts; send the operations operator stale evidence and blocked transitions. "
                     "Keep public research polling modest and contractor document requests consolidated. "
-                    "For the six-person pod, a dependable twenty-record review queue beats a continuous stream of several thousand unranked alerts, especially when the same equipment is cross-listed through several brokers."
+                    "For the four-person pod, a dependable twenty-record review queue beats a continuous stream of several thousand unranked alerts, especially when the same equipment is cross-listed through several brokers."
                 ),
             ],
             "table": {
@@ -461,11 +461,11 @@ CHAPTER_8 = {
                 (
                     "Keep the scorecard fixed while evaluating tools. "
                     "Conservative annual gross equipment resale proceeds are $250,000 at a 10% net margin, producing $25,000 owner net profit with two full-time staff and four contractors. "
-                    "Base proceeds are $1,025,000 at 16.0%, producing $164,000 with the same six-person pod. "
+                    "Base proceeds are $1,025,000 at 16.0%, producing $164,000 with the same four-person pod. "
                     "Scaled proceeds are $1,800,000 at 22%, producing $396,000 with three full-time staff and five contractors. "
                     "The corresponding total expense envelopes are $225,000, $861,000, and $1,404,000; acquisition and refurbishment are already inside those envelopes. "
                     "Do not subtract acquisition twice or treat equipment purchase principal as separate customer transaction volume. "
-                    "The stated startup capital range is $75,000 to $400,000, monthly operating expenditure range is $5,000 to $22,000, and first-deal horizon is three to nine months. "
+                    "The stated startup capital range is $20,000 to $95,000, monthly operating expenditure range is $4,000 to $18,000, and first-deal horizon is three to nine months. "
                     "Those ranges are planning constraints, not additional amounts to append mechanically to each scenario. "
                     "A proposed subscription, inspection package, or contractor retainer must either fit the modeled expense envelope through an identified allocation or appear in a separately labeled sensitivity. "
                     "Information tooling does not automatically improve the canonical margin. "
@@ -513,7 +513,7 @@ CHAPTER_8 = {
                         "Two full-time staff plus four contractors; keep tools inside expenses",
                     ],
                     [
-                        "Base canonical case for the same six-person operating pod",
+                        "Base canonical case for the same four-person operating pod",
                         "$1,025,000 gross proceeds less $861,000 total modeled expenses",
                         "$164,000 annual owner net profit at 16.0% net margin",
                         "Two full-time staff plus four contractors; prioritize bounded specialist queues",

@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a Money-to-Manpower Score of 63/100. "
+        "Candidate #7, Mineral Rights, ranks #25 with a Money-to-Manpower Score of 81/100. "
         "Checks come from production purchasers, operators acting as disbursers, mineral buyers, "
         "and co-owners purchasing documented interests; their authority and obligations differ. "
         "This chapter maps five operating plays: fractional_heir_share_partition_forcing, producing-royalty "
@@ -317,7 +317,7 @@ CHAPTER_2 = {
                     "profit at 45%. Conservative and Base each use 1 FT + 3 C; Scaled uses "
                     "2 FT + 4 C, six people. These are annual operating cases, not acquisition "
                     "capital recovery schedules or guaranteed staffing productivity. The supplied startup "
-                    "capital range is $150,000 to $2,000,000, monthly operating expense range is $1,000 "
+                    "capital range is $15,000 to $75,000, monthly operating expense range is $1,000 "
                     "to $12,000, and time to first deal is six to twenty-four months. Annual "
                     "scenario costs are broader than a monthly overhead budget and must be reconciled "
                     "through actual categories rather than forced into that range. Track purchase basis, "

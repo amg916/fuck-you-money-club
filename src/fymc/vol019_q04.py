@@ -6,15 +6,15 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($25,000–$150,000 USD) and configure a lean, low-opex ($5,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($15,000–$75,000 USD) and configure a lean, low-opex ($5,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Protect Reseller Float, Configure AWS CPPO and Microsoft CSP Rails, and Prove Contract, Collection, and License Controls Before Launch",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 "
-        "Money-to-Manpower Score. Start with $25,000–$150,000, keep 60% in "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
+        "Money-to-Manpower Score. Start with $15,000–$75,000, keep 60% in "
         "working-capital reserve, and purchase evidence-producing infrastructure "
         "rather than overlapping subscriptions. This chapter maps nine operator "
         "plays: eight channel execution patterns and the supplied specialty-drug "

@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #20, Specialty Finance Brokerage, holds Rank #14 among 29 mapped plays with a 79/100 Money-to-Manpower Score. Its economics depend on retained fees, not the principal moving through lender accounts. The canonical annual owner profits are $30,000 Conservative, $196,000 Base, and $450,000 Scaled, supported by retained revenue of $120,000, $560,000, and $1,000,000. This chapter reconstructs those outcomes through funded cohorts, acquisition spend, contractor delivery, commission scrubs, and collection delays. It also separates specialty-finance placement income from the underlying legal, healthcare, and property economics in three mapped plays. Use the waterfall to price files, reserve reversals, negotiate payout terms, and size working capital before expanding lender-dependent volume.
+Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays with a 89/100 Money-to-Manpower Score. Its economics depend on retained fees, not the principal moving through lender accounts. The canonical annual owner profits are $30,000 Conservative, $196,000 Base, and $450,000 Scaled, supported by retained revenue of $120,000, $560,000, and $1,000,000. This chapter reconstructs those outcomes through funded cohorts, acquisition spend, contractor delivery, commission scrubs, and collection delays. It also separates specialty-finance placement income from the underlying legal, healthcare, and property economics in three mapped plays. Use the waterfall to price files, reserve reversals, negotiate payout terms, and size working capital before expanding lender-dependent volume.
 
 ### Key Metrics
 

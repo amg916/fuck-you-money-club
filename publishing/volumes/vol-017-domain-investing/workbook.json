@@ -396,7 +396,7 @@
       "purpose": "Launch a disciplined domain operation in 30 days without pretending the first sale must arrive within that window. Translate the canonical scorecard into accountable work, cash controls, portfolio health measures, and transferable records that support a small team or an eventual portfolio disposition.",
       "chapter_ref": "Q11, Q12",
       "instructions": [
-        "Set the launch objective around operational readiness, screened inventory, funded renewals, and tested transaction procedures. The stated first-deal window is 3 to 24 months; a 30-day sprint must not rely on immediate sales to meet unavoidable payments.",
+        "Set the launch objective around operational readiness, screened inventory, funded renewals, and tested transaction procedures. The stated first-deal window is 2 to 9 months; a 30-day sprint must not rely on immediate sales to meet unavoidable payments.",
         "Assign every recurring task to an accountable person and define backup coverage. Use the canonical staffing patterns as capacity references, then test actual labor commitments against the operating budget before hiring or promising availability the team cannot provide.",
         "Review leading and lagging metrics separately each week. Track clean underwriting packets, qualified inquiries, funded transactions, completed sales, renewal coverage, and unrestricted cash. Do not treat portfolio asking prices as realized revenue or proof of liquidity.",
         "Prepare transfer-ready records as the portfolio grows rather than reconstructing them during an exit. Maintain ownership evidence, cost basis, registrar restrictions, disputes, renewal liabilities, and listing status. Restrict buyer diligence access to information necessary for the proposed transaction.",
@@ -407,7 +407,7 @@
           "name": "Canonical position and launch objective",
           "type": "textarea",
           "prompt": "Record the candidate identity, pipeline rank, score breakdown, capital range, operating range, and first-deal window. Translate the positioning into a practical launch objective without treating the score as evidence of market liquidity or a predicted investment return.",
-          "example": "Candidate #16, Domain Investing, ranks #17 of 29 and scores 74/100: revenue 17, margin 18, team efficiency 19, accessibility 9, automation 11. Positioning is Disciplined Specialist Play. Launch assumptions retain $10,000–$150,000 startup capital, $500–$5,000 monthly operating costs, and 3–24 months to the first deal."
+          "example": "Candidate #16, Domain Investing, ranks #22 of 29 and scores 83/100: revenue potential 19, margin potential 21, team efficiency 18, startup accessibility 13, and automation potential 12. Positioning is High-Leverage Operator Play. Launch assumptions retain $8,000–$60,000 startup capital, $500–$5,000 monthly operating costs, and 2–9 months to the first deal."
         },
         {
           "name": "Days 1 through 7: foundation deliverables",

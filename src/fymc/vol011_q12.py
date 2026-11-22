@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 "
         "Money-to-Manpower Score and 21 mapped operator plays. This sprint turns "
         "those plays into accountable work for one full-time principal and three "
         "contractors: select one asset lane, establish lawful transaction scope, "

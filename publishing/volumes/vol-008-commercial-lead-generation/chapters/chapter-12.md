@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 Money-to-Manpower Score and 54 mapped plays. This sprint turns that opportunity into a four-person operating system: one full-time owner plus three contractors cover targeting, inbox operations, and qualification. Days 1–7 establish the offer and evidence controls; Days 8–14 test outreach; Days 15–21 validate appointments and client acceptance; Days 22–30 reconcile cash and select Kill, Fix, or Scale. The canonical annual owner-profit cases are $20,000 Conservative, $127,500 Base, and $300,000 Scaled, excluding client-funded advertising pass-through from operator revenue. A $5,000 first-month cash-burn ceiling, explicit sample requirements, and separate acquisition and delivery scoreboards prevent early activity from masquerading as a repeatable business.
+Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 Money-to-Manpower Score and 54 mapped plays. This sprint turns that opportunity into a four-person operating system: one full-time owner plus three contractors cover targeting, inbox operations, and qualification. Days 1–7 establish the offer and evidence controls; Days 8–14 test outreach; Days 15–21 validate appointments and client acceptance; Days 22–30 reconcile cash and select Kill, Fix, or Scale. The canonical annual owner-profit cases are $20,000 Conservative, $127,500 Base, and $300,000 Scaled, excluding client-funded advertising pass-through from operator revenue. A $5,000 first-month cash-burn ceiling, explicit sample requirements, and separate acquisition and delivery scoreboards prevent early activity from masquerading as a repeatable business.
 
 ### Key Metrics
 

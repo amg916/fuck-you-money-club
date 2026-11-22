@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. Its seven mapped operating plays become transferable assets only when seller mandates, inspection evidence, lien clearance, inventory matching, buyer alerts, commission contracts, and escrow settlement share one accountable record. Build the initial 1 FT + 3 C pod around founder judgment and specialist deliverables; expand to 2 FT + 4 C only when earned commissions support the added capacity. Canonical annual owner profits are $25,000 Conservative, $157,500 Base, and $360,000 Scaled. This chapter specifies contractor economics, weekly acceptance metrics, 25% concentration ceilings, accrual accounting, and written IP transfers. Exit value comes from repeatable earnings after realistic replacement labor, not equipment transaction value or an attractive contact list.
+Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. Its seven mapped operating plays become transferable assets only when seller mandates, inspection evidence, lien clearance, inventory matching, buyer alerts, commission contracts, and escrow settlement share one accountable record. Build the initial 1 FT + 3 C pod around founder judgment and specialist deliverables; expand to 2 FT + 4 C only when earned commissions support the added capacity. Canonical annual owner profits are $25,000 Conservative, $157,500 Base, and $360,000 Scaled. This chapter specifies contractor economics, weekly acceptance metrics, 25% concentration ceilings, accrual accounting, and written IP transfers. Exit value comes from repeatable earnings after realistic replacement labor, not equipment transaction value or an attractive contact list.
 
 ### Key Metrics
 

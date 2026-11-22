@@ -13,13 +13,13 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100 because recurring revenue still requires paid crew hours. This "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100 because recurring revenue still requires paid crew hours. This "
         "sprint organizes execution into four mapped plays: dense recurring office routes, "
         "bounded medical environmental cleaning, measured scope-and-price resets, and "
         "supervisor-led delivery pods. Spend the first month proving access, production "
         "rates, payroll coverage, inspection quality, and collectible invoices rather "
-        "than assembling an idle nine-person team. Canonical annual owner profits are "
+        "than assembling an idle four-person team. Canonical annual owner profits are "
         "$20,000 Conservative, $87,000 Base, and $192,000 Scaled; none represents a "
         "first-month target. Daily deliverables feed explicit Day 30/60/90 decisions, "
         "with a $6,000 first-month launch-burn ceiling, protected payroll liquidity, "
@@ -31,19 +31,19 @@ CHAPTER_12 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross cleaning contract revenue; recognized operator revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual gross cleaning contract revenue; recognized operator revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual gross cleaning contract revenue; recognized operator revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -519,7 +519,7 @@ CHAPTER_12 = {
                     "three measured proposals by this review. A credible "
                     "pipeline can justify continued testing within the "
                     "cash ceiling, but it cannot justify hiring the "
-                    "entire nine-person pod or advertising unused capacity "
+                    "entire four-person pod or advertising unused capacity "
                     "as an operating achievement."
                 ),
                 (

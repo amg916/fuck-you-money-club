@@ -13,8 +13,8 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 Money-to-Manpower "
-        "Score: a Disciplined Specialist Play built on authorization, procurement fluency, and renewal "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 Money-to-Manpower "
+        "Score: an Elite Small-Team Cash Machine built on authorization, procurement fluency, and renewal "
         "control. This chapter maps nine operating plays across technographic signals, registered "
         "resale, Microsoft CSP, AWS CPPO, Azure private offers, implementation, license reconciliation, "
         "renewal recovery, and procurement consolidation. Canonical annual owner profits are $24,000 "
@@ -184,7 +184,7 @@ CHAPTER_1 = {
                     "requires a $108,000 supplier payment. If the supplier requires payment on day "
                     "30 while the customer pays on day 75, the operator must bridge $108,000 "
                     "for 45 days, excluding other business obligations. That exposure already "
-                    "exceeds the low end of the $25,000 to $150,000 startup capital range. "
+                    "exceeds the low end of the $15,000 to $75,000 startup capital range. "
                     "A customer's monthly payment preference does not shorten an annual supplier "
                     "commitment. Require a deposit, matching payment dates, a suitably approved "
                     "credit facility, or a different transaction structure before accepting the "
@@ -208,7 +208,7 @@ CHAPTER_1 = {
                     "cost bridges above do not validate a full market-rate payroll. Price those "
                     "inputs explicitly before committing to hires. At $24,000 annual owner "
                     "profit, a single $12,000 unrecoverable account consumes half the modeled "
-                    "result; even modest support leakage matters. Use the first 3 to 12 months, "
+                    "result; even modest support leakage matters. Use the first 3 to 9 months, "
                     "the stated first-deal window, to secure authorization, build references, "
                     "and prove one delivery pattern rather than assume immediate recurring cash. "
                     "Assign one accountable commercial owner and one delivery owner, with "

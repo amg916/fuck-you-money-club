@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($75,000–$350,000 USD) and configure a lean, low-opex ($10,000–$45,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($18,000–$75,000 USD) and configure a lean, low-opex ($4,000–$20,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Mitigation Budgets, Xactimate Evidence, IICRC Drying Records, Contractor-Safe Collections & Disclosed Facility Subcontracting",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, holds Rank #29 with a 54/100 Money-to-Manpower "
+        "Candidate #15, Insurance Restoration, holds Rank #13 with a 87/100 Money-to-Manpower "
         "Score because equipment, labor, and disputed receivables consume cash before owners "
         "collect profit. Allocate at least half of startup capital to working reserves, then "
         "buy only the capacity that documented demand supports. This chapter maps five plays: "
@@ -30,19 +30,19 @@ CHAPTER_4 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; materials and subcontractors included in costs",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; materials and subcontractors included in costs",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; materials and subcontractors included in costs",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -52,7 +52,7 @@ CHAPTER_4 = {
             "paragraphs": [
                 (
                     "Insurance restoration fails when an attractive equipment yard hides an empty "
-                    "operating account. Treat the $75,000–$350,000 startup range as cash available "
+                    "operating account. Treat the $18,000–$75,000 startup range as cash available "
                     "for deployment, not permission to purchase that much machinery. The three "
                     "budgets below reserve $40,000, $95,000, and $190,000 respectively: 53.3%, "
                     "54.3%, and 54.3% of total capital. Equipment, vehicles, deposits, training, "
@@ -73,7 +73,7 @@ CHAPTER_4 = {
                 ),
                 (
                     "Distinguish readiness overhead from the full cost of delivering restoration. "
-                    "The $10,000–$45,000 monthly operating range is a planning envelope for the "
+                    "The $4,000–$20,000 monthly operating range is a planning envelope for the "
                     "lean fixed stack; job labor, subcontractors, materials, disposal, and surge "
                     "rentals still enter the complete job-cost ledger. It cannot credibly "
                     "represent every monthly expense at all three canonical revenue levels. "

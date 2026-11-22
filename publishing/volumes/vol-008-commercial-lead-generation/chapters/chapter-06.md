@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. The first deals hide where a dated operating trigger meets a buyer with capacity, budget, and measurable customer value. Build one narrow signal feed, qualify the receiving client before sourcing prospects, and sell a bounded pilot with explicit acceptance rules. This chapter turns directory placements, trucking records, community intent, transparent social publishing, and carefully bounded legal-sector marketing into a repeatable sourcing system. Canonical annual owner profits are $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees; client advertising pass-through, prospective settlement values, and customers' sales remain outside operator revenue.
+Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. The first deals hide where a dated operating trigger meets a buyer with capacity, budget, and measurable customer value. Build one narrow signal feed, qualify the receiving client before sourcing prospects, and sell a bounded pilot with explicit acceptance rules. This chapter turns directory placements, trucking records, community intent, transparent social publishing, and carefully bounded legal-sector marketing into a repeatable sourcing system. Canonical annual owner profits are $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Recognized revenue consists of retainers and accepted-lead fees; client advertising pass-through, prospective settlement values, and customers' sales remain outside operator revenue.
 
 ### Key Metrics
 

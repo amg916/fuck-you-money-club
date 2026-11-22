@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. Build around six chapter-mapped execution plays: off-market sourcing, GIS screening, comparable-led offers, title/access diligence, minor subdivisions, and title-insured dispositions. The lean pod uses one full-time principal and three contractors; the scaled pod adds an operations manager and a subdivision specialist. Canonical annual owner net profit is $24,000 Conservative, $157,250 Base, and $375,000 Scaled, on gross parcel sale proceeds rather than intermediary fees. Transferability comes from documented access, closed-loop contractor QA, parcel-level accrual books, assigned work-product rights, and counterparty exposure capped at 25%. Value repeatable earnings separately from surplus land, and price replacement labor before treating the business as a durable cash cow.
+Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. Build around six chapter-mapped execution plays: off-market sourcing, GIS screening, comparable-led offers, title/access diligence, minor subdivisions, and title-insured dispositions. The lean pod uses one full-time principal and three contractors; the scaled pod adds an operations manager and a subdivision specialist. Canonical annual owner net profit is $24,000 Conservative, $157,250 Base, and $375,000 Scaled, on gross parcel sale proceeds rather than intermediary fees. Transferability comes from documented access, closed-loop contractor QA, parcel-level accrual books, assigned work-product rights, and counterparty exposure capped at 25%. Value repeatable earnings separately from surplus land, and price replacement labor before treating the business as a durable cash cow.
 
 ### Key Metrics
 

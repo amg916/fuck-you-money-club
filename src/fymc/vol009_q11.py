@@ -13,8 +13,8 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an "
-        "82/100 Money-to-Manpower Score across 30 mapped plays. Build one accountable "
+        "Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an "
+        "86/100 Money-to-Manpower Score across 30 mapped plays. Build one accountable "
         "delivery system, not thirty miniature agencies: two full-time seats and three "
         "contractors initially, then three full-time seats and four contractors when "
         "measured capacity and collected fees support expansion. Canonical annual owner "

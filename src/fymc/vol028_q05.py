@@ -13,8 +13,8 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100: execution depends on paid labor, not software leverage. This "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100: execution depends on paid labor, not software leverage. This "
         "chapter maps four operator plays: production-rate recurring B2B bidding, medical "
         "janitorial scope control, W-2/subcontractor workforce integrity, and supervisor-pod "
         "retention and collections. Canonical annual owner profits are $20,000 Conservative, "
@@ -31,19 +31,19 @@ CHAPTER_5 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross cleaning contract revenue; excludes client business receipts",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual gross cleaning contract revenue; earned from contracted facility services",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual gross cleaning contract revenue; additional paid crew capacity required",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -245,7 +245,7 @@ CHAPTER_5 = {
                 ),
             ],
             "table": {
-                "caption": "Nine-Person Pod Labor Integrity and Capacity Review",
+                "caption": "Four-Person Pod Labor Integrity and Capacity Review",
                 "headers": [
                     "Labor failure affecting the recurring service pod",
                     "Early-warning metric and internal intervention threshold",

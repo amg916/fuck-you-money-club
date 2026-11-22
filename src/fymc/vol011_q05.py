@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, holds Rank #11 with an 82/100 "
+        "Candidate #26, High-Ticket Brokerage, holds Rank #10 with an 88/100 "
         "Money-to-Manpower Score across 21 mapped plays. Its leverage comes from "
         "retained transaction commissions, not ownership of the assets changing "
         "hands. Annual owner net profit is $25,000 Conservative, $206,250 Base, "

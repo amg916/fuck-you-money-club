@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #3, Tax Lien Investing, ranks #24 with a 62/100 Money-to-Manpower "
+        "Candidate #3, Tax Lien Investing, ranks #24 with a 81/100 Money-to-Manpower "
         "Score because capital deployment and exception handling constrain scale. This "
         "chapter maps four operator plays: auction screening, disciplined bidding, "
         "redemption servicing, and title-aware resolution. Build the initial pod around "

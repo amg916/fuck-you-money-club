@@ -13,8 +13,8 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #20 with a "
-        "70/100 Money-to-Manpower Score. This chapter turns seven mapped plays "
+        "Candidate #4, Government Contract Brokering, holds Rank #27 with a "
+        "79/100 Money-to-Manpower Score. This chapter turns seven mapped plays "
         "into an executable service operation: federal opportunity triage, municipal "
         "bid-desk support, prime/sub teaming, response production, supplier verification, "
         "invoice reconciliation, and Section 179D allocation documentation. The production "
@@ -1064,7 +1064,7 @@ if __name__ == "__main__":
                     "availability, review throughput, customer "
                     "concentration, and the minimum cash "
                     "balance under delayed-payment stress. "
-                    "The $25,000–$150,000 startup capital "
+                    "The $20,000–$90,000 startup capital "
                     "range must support the actual "
                     "six-to-eighteen-month first-deal horizon; "
                     "the illustrated $60,000 opening "

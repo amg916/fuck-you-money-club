@@ -13,8 +13,8 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Pipeline Rank #07 of 29 "
-        "with an 85/100 Money-to-Manpower Score: an Elite Small-Team Cash Machine "
+        "Candidate #5, Unclaimed Property Recovery, holds Pipeline Rank #04 of 29 "
+        "with an 89/100 Money-to-Manpower Score: an Elite Small-Team Cash Machine "
         "when evidence quality outruns acquisition expense. The business earns "
         "recognized service fees, never the owner's recovered asset value. This "
         "chapter maps 12 plays, separating treasury recovery from adjacent "

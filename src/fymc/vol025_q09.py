@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a 62/100 Money-to-Manpower Score. "
+        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower Score. "
         "Its eight mapped plays connect niche prospecting, shipper qualification, contracting, "
         "carrier verification, load matching, shipment tracking, invoice reconciliation, and "
         "float management. This chapter converts those plays into FMCSA licensing controls, "
@@ -304,7 +304,7 @@ CHAPTER_9 = {
                     "by 365, approximately $167,671. This is neither additional revenue nor a complete "
                     "working-capital forecast: payroll, taxes, disputes, seasonality, and security collateral still require modeling. "
                     "The chapter's 85% purchase assumption does not replace a canonical scenario input. "
-                    "Against the $50,000–$250,000 startup-capital range, it demonstrates why a profitable Base "
+                    "Against the $15,000–$80,000 startup-capital range, it demonstrates why a profitable Base "
                     "book can exhaust available cash. Finance should size customer limits from committed liquidity "
                     "and payment behavior, not merely from annual sales ambition."
                 ),

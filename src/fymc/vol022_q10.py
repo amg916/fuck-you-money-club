@@ -6,22 +6,22 @@ CHAPTER_10 = {
     "chapter_number": 10,
     "question_number": 10,
     "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 4 C (6 people) medical equipment resale team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "question_prompt": "How does a 1 FT + 3 C (4 people) medical equipment resale team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
     "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
     "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
     "subtitle": "Serial-Level Python Pipelines, Evidence-Linked Service Histories, Biomed Release Controls, and FDA/HIPAA-Aware Distribution",
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 Money-to-Manpower "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 Money-to-Manpower "
         "Score because automation accelerates evidence handling, not physical refurbishment. "
         "This chapter maps three operating plays: diagnostic fleet refresh, surgical equipment "
-        "redeployment, and veterinary/aesthetic specialty resale. A 2 FT + 4 C pod connects "
+        "redeployment, and veterinary/aesthetic specialty resale. A 1 FT + 3 C pod connects "
         "serial-level inventory, service-history indexing, buyer qualification, and distribution "
         "through durable Python jobs and evidence-constrained language models. Biomed personnel "
         "retain release authority; commercial staff retain pricing and claims authority. The "
         "canonical annual owner profits remain $25,000 Conservative, $164,000 Base, and $396,000 "
-        "Scaled, with the last case requiring 3 FT + 5 C. Measure 70%+ automation against "
+        "Scaled, with the last case requiring 1 FT + 3 C. Measure 70%+ automation against "
         "a fixed repetitive-work denominator, including exception handling, rather than counting "
         "generated listings as completed deals."
     ),
@@ -30,24 +30,24 @@ CHAPTER_10 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C.",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C.",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C.",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Build one serial ledger and divide the six-person pod by decision authority",
+            "heading": "1. Build one serial ledger and divide the four-person pod by decision authority",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
@@ -67,7 +67,7 @@ CHAPTER_10 = {
                     "questions do not interrupt every bench task. Each unresolved item receives an owner, "
                     "evidence request, and expiration time. When specialist capacity is full, purchasing "
                     "slows before unfinished inventory consumes cash. This division preserves the canonical "
-                    "2 FT + 4 C constraint while making the actual bottleneck visible: qualified release "
+                    "1 FT + 3 C constraint while making the actual bottleneck visible: qualified release "
                     "hours, not the number of descriptions a model can draft."
                 ),
                 (
@@ -113,7 +113,7 @@ CHAPTER_10 = {
                 ),
             ],
             "table": {
-                "caption": "Six-Person Pod: Serial-Level Ownership Across Three Operating Plays",
+                "caption": "Four-Person Pod: Serial-Level Ownership Across Three Operating Plays",
                 "headers": [
                     "Assigned operator and working responsibility",
                     "Automated preparation and permitted system behavior",
@@ -545,8 +545,8 @@ CHAPTER_10 = {
                     "availability, carrying cost, and realistic exit value. Automation should accelerate "
                     "markdown or parts-recovery decisions when evidence supports them, not conceal "
                     "unsellable inventory behind fresh traffic. The Scaled case explicitly expands "
-                    "to 3 FT + 5 C; assign added capacity to the measured bottleneck rather "
-                    "than claiming the six-person pod produces that case unchanged. Buy additional "
+                    "to 1 FT + 3 C; assign added capacity to the measured bottleneck rather "
+                    "than claiming the four-person pod produces that case unchanged. Buy additional "
                     "inventory only when released-stock throughput, specialist availability, cash "
                     "conversion, and exception burden support it. The distribution flywheel must "
                     "remain subordinate to device safety and cash discipline."

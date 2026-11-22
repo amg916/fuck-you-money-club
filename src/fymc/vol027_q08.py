@@ -13,8 +13,8 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a Money-to-Manpower "
-        "Score of 57/100: evidence automation helps, but ownership remains capital "
+        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower "
+        "Score of 86/100: evidence automation helps, but ownership remains capital "
         "and labor intensive. This directory maps seven operator plays: target "
         "origination, entity verification, liability discovery, revenue validation, "
         "QoE normalization, financing structure, and the 100-day turnaround. Build "
@@ -31,19 +31,19 @@ CHAPTER_8 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; not acquisition fees or transaction principal",
-            "note": "8% margin; $60,000 annual owner net profit; 7 FT + 3 C; after interest, before principal repayments",
+            "note": "8% margin; $60,000 annual owner net profit; 2 FT + 2 C; after interest, before principal repayments",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; not acquisition fees or transaction principal",
-            "note": "13.0% margin; $243,750 annual owner net profit; 7 FT + 3 C; after interest, before principal repayments",
+            "note": "13.0% margin; $243,750 annual owner net profit; 2 FT + 2 C; after interest, before principal repayments",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; not acquisition fees or transaction principal",
-            "note": "18% margin; $540,000 annual owner net profit; 8 FT + 4 C; after interest, before principal repayments",
+            "note": "18% margin; $540,000 annual owner net profit; 3 FT + 3 C; after interest, before principal repayments",
         },
     ],
     "sections": [
@@ -65,7 +65,7 @@ CHAPTER_8 = {
                     "administrative controller, and four delivery employees, supported "
                     "by contracted transaction counsel, a QoE accountant, and an "
                     "integration specialist. These are capacity assignments within "
-                    "the ten-person envelope, not hires layered onto the scorecard. "
+                    "the four-person envelope, not hires layered onto the scorecard. "
                     "The delivery employees protect customer service while the owner "
                     "and controller maintain the evidence queue. During the search "
                     "period, the buyer and retained specialists cover those functions "
@@ -283,7 +283,7 @@ CHAPTER_8 = {
                     "Use these denominators to cancel tools that produce "
                     "decorative coverage. Do not extrapolate this screening "
                     "budget into deal economics or replace the canonical "
-                    "$15,000–$70,000 monthly operating-expense range with it. "
+                    "$6,000–$25,000 monthly operating-expense range with it. "
                     "The owner approves target criteria, the controller manages "
                     "provider credits, and the integration contractor maintains "
                     "connectors within a capped assignment. Counsel reviews "
@@ -320,7 +320,7 @@ CHAPTER_8 = {
                     "relevant to their work. This keeps P1 through "
                     "P7 connected without exposing payroll, customer "
                     "contracts, or seller bank details across the "
-                    "entire ten-person pod. Review access again when "
+                    "entire four-person pod. Review access again when "
                     "a bidder withdraws or a contractor finishes."
                 ),
             ],
@@ -632,7 +632,7 @@ CHAPTER_8 = {
                     "rather than claiming that "
                     "automation preserves the stated "
                     "profit automatically. Keep the "
-                    "$200,000–$1,000,000 startup-capital "
+                    "$30,000–$120,000 startup-capital "
                     "range distinct from annual "
                     "sales, owner profit, and "
                     "borrowed acquisition principal. "
@@ -662,7 +662,7 @@ CHAPTER_8 = {
                 ),
             ],
             "table": {
-                "caption": "Four operating cadences that preserve the ten-person Base pod",
+                "caption": "Four operating cadences that preserve the four-person Base pod",
                 "headers": [
                     "Cadence and evidence-driven operating objective",
                     "Named owner within the existing team",
@@ -732,7 +732,7 @@ CHAPTER_8 = {
         "Implement a capped enrichment waterfall that verifies official identity before purchasing contact credits and preserves rejected matches.",
         "Obtain authorized accounting and bank evidence, retain hashed originals, and reconcile every imported period to documented source totals.",
         "Preserve the $60,000, $243,750, and $540,000 canonical profit cases while modeling principal repayments and working-capital cash needs separately.",
-        "Launch the 100-day exception register within the 7 FT + 3 C Base pod and require a reproducible monthly close before expanding automation.",
+        "Launch the 100-day exception register within the 2 FT + 2 C Base pod and require a reproducible monthly close before expanding automation.",
     ],
     "statutory_citations": [
         {

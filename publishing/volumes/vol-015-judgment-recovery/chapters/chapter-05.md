@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score across a portfolio of 15 mapped plays. Its attractive fee economics collapse when operators buy face value instead of collectible priority, mistake client receipts for revenue, or enforce through bankruptcy and exemption defects. Canonical annual owner profit is $12,000 Conservative, $84,000 Base, and $200,000 Scaled; these outcomes require disciplined cost containment, not aggressive promises. This chapter isolates fatal intake defects, cash reversals, vendor-access failures, and misleading adjacent opportunities. Use docket evidence, dated asset waterfalls, transaction-level reconciliation, and explicit stop thresholds to protect capital. The question's 80% framing is rhetorical; no measured newcomer failure rate is asserted.
+Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score across a portfolio of 15 mapped plays. Its attractive fee economics collapse when operators buy face value instead of collectible priority, mistake client receipts for revenue, or enforce through bankruptcy and exemption defects. Canonical annual owner profit is $12,000 Conservative, $84,000 Base, and $200,000 Scaled; these outcomes require disciplined cost containment, not aggressive promises. This chapter isolates fatal intake defects, cash reversals, vendor-access failures, and misleading adjacent opportunities. Use docket evidence, dated asset waterfalls, transaction-level reconciliation, and explicit stop thresholds to protect capital. The question's 80% framing is rhetorical; no measured newcomer failure rate is asserted.
 
 ### Key Metrics
 

@@ -6,28 +6,28 @@
   "preview_only": true,
   "files": {
     "digital_pdf.pdf": {
-      "bytes": 1926605,
-      "sha256": "54555f897314819c53b76c6fd52f3e2820a00095a6bf51efd0fb21e2683768d2"
+      "bytes": 1927097,
+      "sha256": "12f2508a4f9f0992c51b809e66aea46f49a3859f626679b35eb473af3dab859d"
     },
     "print_6x9_pdf.pdf": {
-      "bytes": 2545036,
-      "sha256": "92cab50c149136b841c1a8cc400948c8d98fd67cc91fb31a121ad9eaafa2ebb5"
+      "bytes": 2545527,
+      "sha256": "81e14da1d3f0272895acf59f1dd4a5c71fb08bc7e86184241f036ee8be0e76cb"
     },
     "workbook_pdf.pdf": {
-      "bytes": 547130,
-      "sha256": "26a9b24307e270e36da5d11986dd81351f4f64807a75527301f561d988e1f1d7"
+      "bytes": 547131,
+      "sha256": "e2d73e632430995f0b566a824f430239185d10f033f69086e57724517ef7704c"
     },
     "book.epub": {
-      "bytes": 253403,
-      "sha256": "88b3a5a74a163d767723d43ac520703d016a0dc7d62f6afae736c0c9803a6514"
+      "bytes": 253933,
+      "sha256": "78e11d53f78ddcd0eafb7927a7476d2379941ad4b7c38c78229f612680b5fdea"
     },
     "art/cover.svg": {
-      "bytes": 4247,
-      "sha256": "5e4fcae2e87b75fa68c7eda813739714f856da30b29d9010e1bdfc7ad4a8a5a5"
+      "bytes": 4249,
+      "sha256": "bd30aa39e9cdf7fc104fa14ab1b450b5efcdc2e1ac4e193d3bfa09f1c0f446a1"
     },
     "art/scorecard.svg": {
-      "bytes": 62823,
-      "sha256": "d7e097dbbec0273117b662577fb3e10878eff8890998e2cf2bc1a8ce055d9aeb"
+      "bytes": 66695,
+      "sha256": "b1180ce5af286cdede3e848748ff432ecabb3cde71fc07fbe16f789cc3b89b88"
     },
     "art/diag_01.svg": {
       "bytes": 11027,
@@ -38,8 +38,8 @@
       "sha256": "19f67ff75c01559f2164c3eb4d096bf21b6375d5bcd891845ca4aa44973cb9d4"
     },
     "art/diag_03.svg": {
-      "bytes": 11337,
-      "sha256": "8420db364d76d454f07cc069397499050c354d68595fbcd0c6ef28ac1cea0c6b"
+      "bytes": 11677,
+      "sha256": "874b0757a2f5219f4ebfaf522ed6a72b3483f669d172db1d2fb69e599ff6d295"
     },
     "art/diag_04.svg": {
       "bytes": 9370,
@@ -54,8 +54,8 @@
       "sha256": "fe5972a7f0ef082ae860d23415417ca270b5e1530b7533d0f2ba7dd3f6242622"
     },
     "art/diag_07.svg": {
-      "bytes": 8568,
-      "sha256": "b372ed48cb932cc4e85367614d4af8e8f1e74c88dd99969ca333882f38b99df1"
+      "bytes": 9109,
+      "sha256": "f76afafc180279ace380c2988de034e2289d9f4b0a91fd551c22bc039c0492d3"
     },
     "art/diag_08.svg": {
       "bytes": 8794,

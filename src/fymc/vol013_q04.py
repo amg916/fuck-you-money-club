@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($25,000–$250,000 USD) and configure a lean, low-opex ($2,000–$15,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($12,000–$75,000 USD) and configure a lean, low-opex ($2,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Funding, Twelve Lean Infrastructure Layers, Chain-of-Title Controls, and Auditable Patent, Brand, Catalog, and Dataset Royalties",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. Allocate 60% of startup capital to working reserves, "
         "then purchase title certainty, buyer evidence, and royalty controls before "
         "adding overhead. This chapter maps four operator plays: patent field-of-use "
@@ -54,7 +54,7 @@ CHAPTER_4 = {
                 (
                     "Allocate capital against the expected delay to signed, collectible "
                     "licenses, not against the apparent size of the intellectual property "
-                    "portfolio. The prescribed startup range is $25,000 to $250,000, "
+                    "portfolio. The prescribed startup range is $12,000 to $75,000, "
                     "while the first deal can take six to twenty-four months. Hold "
                     "60% in a separately tracked working-capital reserve: $15,000 at "
                     "the lean entry point, $75,000 at a $125,000 midpoint, and "
@@ -194,7 +194,7 @@ CHAPTER_4 = {
                     "monthly before request, retrieval, transfer, and other charges. "
                     "That small subtotal is not the business's monthly operating "
                     "cost; counsel, bookkeeping, insurance, hosting, and contractor "
-                    "support dominate the $2,000 to $15,000 envelope. Free software "
+                    "support dominate the $2,000 to $12,000 envelope. Free software "
                     "does not supply free administration. Prefer a single managed "
                     "workspace and a minimal deployment over maintaining several "
                     "servers simply to avoid a small subscription. Keep customer "

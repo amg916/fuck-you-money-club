@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
         "Score. Build its eight mapped plays around controlled inventory rather than "
         "auction excitement: brandables, exact-match names, expired-authority names, "
         "drop-catching, rights screening, outbound upgrades, inbound conversion, and "

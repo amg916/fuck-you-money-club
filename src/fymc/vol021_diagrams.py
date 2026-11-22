@@ -562,35 +562,35 @@ def build_volume_021_diagrams_data() -> list[dict]:
             "diag-07-startup-capital-allocation",
             "stacked_comparison",
             "Allocate Capital Before Funding Advertising Expansion",
-            "Four buckets across $30,000, $100,000, and $250,000 startup envelopes.",
+            "Four buckets across $15,000, $45,000, and $80,000 startup envelopes.",
             4,
             "illustrative_model",
             (
-                "Numeric values encode the $100,000 planning stack in USD. "
-                "Each stage also states its $30,000 and $250,000 comparison "
+                "Numeric values encode the $45,000 planning stack in USD. "
+                "Each stage also states its $15,000 and $80,000 comparison "
                 "allocations. These are startup funding envelopes, not the "
                 "Conservative, Base, and Scaled annual revenue scenarios."
             ),
             (
-                "Lean: $12,000 + $6,000 + $4,000 + $8,000 = $30,000. "
-                "Planning: $40,000 + $20,000 + $15,000 + $25,000 = $100,000. "
-                "Expanded: $100,000 + $50,000 + $35,000 + $65,000 = $250,000."
+                "Lean: $6,000 + $3,000 + $2,000 + $4,000 = $15,000. "
+                "Planning: $18,000 + $9,000 + $7,000 + $11,000 = $45,000. "
+                "Expanded: $32,000 + $16,000 + $12,000 + $20,000 = $80,000."
             ),
             [
                 (
                     "Opening inventory and supplier purchase commitments",
-                    "Lean $12,000; planning $40,000; expanded $100,000",
-                    40000.0,
+                    "Lean $6,000; planning $18,000; expanded $32,000",
+                    18000.0,
                     (
-                        "Fund landed inventory and supplier deposits with "
+                        "Fund initial authorized-dealer test batches and supplier deposits with "
                         "SKU-level sell-through limits. Keep purchase cash outflow "
                         "separate from cost of goods recognized when products sell."
                     ),
                 ),
                 (
                     "Acquisition testing and launch creative production",
-                    "Lean $6,000; planning $20,000; expanded $50,000",
-                    20000.0,
+                    "Lean $3,000; planning $9,000; expanded $16,000",
+                    9000.0,
                     (
                         "Release spend in measured cohorts across creative, "
                         "product pages, and paid traffic. Stop additional "
@@ -599,8 +599,8 @@ def build_volume_021_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Storefront, integrations, and fulfillment onboarding setup",
-                    "Lean $4,000; planning $15,000; expanded $35,000",
-                    15000.0,
+                    "Lean $2,000; planning $7,000; expanded $12,000",
+                    7000.0,
                     (
                         "Budget Shopify configuration, 3PL onboarding, product "
                         "data, routing tests, and returns setup. Separate one-time "
@@ -609,13 +609,13 @@ def build_volume_021_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Operating liquidity and exception recovery reserve",
-                    "Lean $8,000; planning $25,000; expanded $65,000",
-                    25000.0,
+                    "Lean $4,000; planning $11,000; expanded $20,000",
+                    11000.0,
                     (
                         "Hold cash for settlement delays, replacements, refunds, "
                         "and operating expenses. Against the canonical $4,000–$25,000 "
-                        "monthly opex range, the planning reserve alone covers "
-                        "approximately 1–6.25 months before replenishment cash needs."
+                        "monthly opex range, the planning and expanded reserves bridge "
+                        "initial settlement float before repeat-cohort replenishment."
                     ),
                 ),
             ],

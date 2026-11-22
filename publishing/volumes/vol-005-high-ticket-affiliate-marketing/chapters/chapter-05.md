@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #24 ranks #04 with 87/100 and 35 mapped operator plays. Its durable edge is control over distribution, contract rights, attribution evidence, and audience access. This chapter turns three fragile plays into defensible operating systems without confusing merchant sales with affiliate income. Search visibility can disappear; merchants can cut rates; checkout tools can overwrite credit. Build around earned commissions after reversals, then subtract every operating cost before calling the remainder profit. Use the defense matrix, attribution procedure, audience experiment, and scenario ledger to decide which traffic deserves another dollar and which exposure needs replacing.
+Candidate #24 ranks #02 with 92/100 and 35 mapped operator plays. Its durable edge is control over distribution, contract rights, attribution evidence, and audience access. This chapter turns three fragile plays into defensible operating systems without confusing merchant sales with affiliate income. Search visibility can disappear; merchants can cut rates; checkout tools can overwrite credit. Build around earned commissions after reversals, then subtract every operating cost before calling the remainder profit. Use the defense matrix, attribution procedure, audience experiment, and scenario ledger to decide which traffic deserves another dollar and which exposure needs replacing.
 
 ### Key Metrics
 

@@ -9,21 +9,21 @@ CHAPTER_12 = {
     "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching medical equipment resale, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
     "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
     "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Six-Person Launch Pod for Ultrasound, Surgical Equipment, and Veterinary Resale: Biomed Release, FDA Classification, HIPAA Data Handling, and Cash-Controlled Inventory",
+    "subtitle": "A Four-Person Launch Pod for Ultrasound, Surgical Equipment, and Veterinary Resale: Biomed Release, FDA Classification, HIPAA Data Handling, and Cash-Controlled Inventory",
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a Money-to-Manpower "
-        "Score of 64/100. This sprint maps three concrete operator plays: diagnostic "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a Money-to-Manpower "
+        "Score of 85/100. This sprint maps three concrete operator plays: diagnostic "
         "ultrasound resale, nonimplantable surgical equipment resale, and veterinary "
         "ultrasound resale. The first month purchases evidence before inventory: "
         "documented buyer demand, transferable ownership, device-specific biomed "
-        "testing, decontamination records, and verified data removal. A 2 FT + 4 C "
+        "testing, decontamination records, and verified data removal. A 1 FT + 3 C "
         "pod works within a $15,000 monthly operating cash ceiling and a $15,000 "
         "initial inventory exposure limit. Day 30/60/90 decisions distinguish "
         "repairable commercial gaps from stop-work safety failures. Canonical annual "
         "owner net profits remain $25,000 Conservative, $164,000 Base, and $396,000 "
-        "Scaled. Because first deals normally require 3–9 months, early Scale "
+        "Scaled. Because first deals normally require 2–7 months, early Scale "
         "decisions authorize controlled learning, not speculative purchasing."
     ),
     "key_metrics": [
@@ -31,19 +31,19 @@ CHAPTER_12 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -53,7 +53,7 @@ CHAPTER_12 = {
             "paragraphs": [
                 (
                     "Treat the first week as an evidence sprint rather than an auction "
-                    "shopping trip. Candidate #14 has a 64/100 score because capital "
+                    "shopping trip. Candidate #14 has a 85/100 score because capital "
                     "exposure and hands-on verification constrain leverage; a clean "
                     "spreadsheet cannot neutralize an obsolete probe or disputed title. "
                     "For this chapter, map exactly three launch plays: diagnostic "
@@ -77,12 +77,12 @@ CHAPTER_12 = {
                     "repair."
                 ),
                 (
-                    "Use the lower end of the stated $75,000–$400,000 startup range "
+                    "Use the lower end of the stated $20,000–$95,000 startup range "
                     "to make scarcity explicit. Illustratively allocate $45,000 to "
                     "three months of operating cash, $15,000 to initial inventory "
                     "exposure, and $15,000 to an untouched exception reserve. The "
                     "monthly operating ceiling is $15,000, within the canonical "
-                    "$5,000–$22,000 range: $6,500 for combined founder cash pay, $3,500 "
+                    "$4,000–$18,000 range: $6,500 for combined founder cash pay, $3,500 "
                     "for the contractor pool, $2,000 for storage and insurance, and "
                     "$3,000 for software, professional review, sourcing travel, and "
                     "general shipping. These are planning allocations, not market "
@@ -501,7 +501,7 @@ CHAPTER_12 = {
             "paragraphs": [
                 (
                     "The final nine days convert scattered activity into a "
-                    "decision packet the six-person pod can defend. On Days "
+                    "decision packet the four-person pod can defend. On Days "
                     "22–24, reconcile supplier claims against inspection findings, "
                     "complete a delivery dry run, and have an independent reviewer "
                     "sample the pilot dossier. On Days 25–27, conduct buyer "
@@ -565,9 +565,9 @@ CHAPTER_12 = {
                     "concurrent asset only with separately funded working "
                     "capital, the protected $15,000 reserve, and a forecast "
                     "covering six months of planned operating outflows. "
-                    "Keep the launch pod at 2 FT + 4 C until "
+                    "Keep the launch pod at 1 FT + 3 C until "
                     "actual workload warrants change; the canonical Scaled "
-                    "case uses 3 FT + 5 C and cannot be claimed "
+                    "case uses 1 FT + 3 C and cannot be claimed "
                     "by simply multiplying pilot contribution. Reconcile "
                     "gross resale proceeds, acquisition and refurbishment "
                     "costs, overhead, warranty expense, and economically "
@@ -704,7 +704,7 @@ CHAPTER_12 = {
     "pull_quote": "The first asset you scale is the evidence trail; the equipment follows only when cash, custody, and buyer acceptance agree.",
     "diagram_id": "diag-08",
     "action_checklist": [
-        "Assign the 2 FT + 4 C pod across three explicit plays, select one supported model family per play, and exclude unsupported aesthetic devices from purchasing.",
+        "Assign the 1 FT + 3 C pod across three explicit plays, select one supported model family per play, and exclude unsupported aesthetic devices from purchasing.",
         "Fund and track the $15,000 monthly operating ceiling, $15,000 initial inventory envelope, $15,000 protected reserve, and $12,000 discretionary-spend warning.",
         "Complete twelve qualified interviews and six serial-supported supplier leads by Day 7, then expand to eighteen interviews before the Day 30 decision.",
         "Build a serial-specific release packet covering ownership, applicable distribution requirements, decontamination, data sanitization, software rights, and signed biomed testing.",

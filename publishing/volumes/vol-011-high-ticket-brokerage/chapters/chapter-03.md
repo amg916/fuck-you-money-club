@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, holds Rank #11 with an 82/100 Money-to-Manpower Score across 21 mapped plays. Its economic engine is retained transaction commissions, never the asset value moving through escrow. The canonical Conservative, Base, and Scaled cases produce $25,000, $206,250, and $500,000 annual owner net profit from $100,000, $550,000, and $1,000,000 recognized revenue. This chapter reconstructs those outcomes through co-broker deductions, contractor delivery, acquisition costs, diligence, overhead, and reversal allowances. It then separates profitable closings from spendable cash using explicit collection and release delays. Directory placements and mineral docket sourcing receive separate unit models, so ancillary receipts and principal exposure cannot inflate brokerage margins.
+Candidate #26, High-Ticket Brokerage, holds Rank #10 with an 88/100 Money-to-Manpower Score across 21 mapped plays. Its economic engine is retained transaction commissions, never the asset value moving through escrow. The canonical Conservative, Base, and Scaled cases produce $25,000, $206,250, and $500,000 annual owner net profit from $100,000, $550,000, and $1,000,000 recognized revenue. This chapter reconstructs those outcomes through co-broker deductions, contractor delivery, acquisition costs, diligence, overhead, and reversal allowances. It then separates profitable closings from spendable cash using explicit collection and release delays. Directory placements and mineral docket sourcing receive separate unit models, so ancillary receipts and principal exposure cannot inflate brokerage margins.
 
 ### Key Metrics
 

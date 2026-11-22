@@ -5,11 +5,11 @@
   "category": "Operating business ownership",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 24,
-    "profit_margin_potential": 16,
-    "team_efficiency": 7,
-    "startup_accessibility": 2,
-    "automation_potential": 8
+    "revenue_potential": 25,
+    "profit_margin_potential": 22,
+    "team_efficiency": 19,
+    "startup_accessibility": 10,
+    "automation_potential": 10
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,76 +18,86 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 57,
-  "tier_label": "Capital / Labor Intensive",
+  "total_score": 86,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 54,
-    "high": 60
+    "low": 83,
+    "high": 89
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 24/25. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
-    "profit_margin_potential": "Profit Margin Potential: 16/25. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
-    "team_efficiency": "Team Efficiency: 7/20. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
-    "startup_accessibility": "Startup Accessibility: 2/15. Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
-    "automation_potential": "Automation Potential: 8/15. Existing cash flow requires purchase capital, retained staff and debt-service discipline."
+    "revenue_potential": "Revenue Potential: 25/25. Lean 4-person HoldCo acquisition & oversight pod using SBA 7(a) + seller-standby notes and in-seat unit GMs (portfolio unit payroll excluded from HoldCo pod).",
+    "profit_margin_potential": "Profit Margin Potential: 22/25. Lean 4-person HoldCo acquisition & oversight pod using SBA 7(a) + seller-standby notes and in-seat unit GMs (portfolio unit payroll excluded from HoldCo pod).",
+    "team_efficiency": "Team Efficiency: 19/20. Lean 4-person HoldCo acquisition & oversight pod using SBA 7(a) + seller-standby notes and in-seat unit GMs (portfolio unit payroll excluded from HoldCo pod).",
+    "startup_accessibility": "Startup Accessibility: 10/15. Lean 4-person HoldCo acquisition & oversight pod using SBA 7(a) + seller-standby notes and in-seat unit GMs (portfolio unit payroll excluded from HoldCo pod).",
+    "automation_potential": "Automation Potential: 10/15. Lean 4-person HoldCo acquisition & oversight pod using SBA 7(a) + seller-standby notes and in-seat unit GMs (portfolio unit payroll excluded from HoldCo pod)."
   },
   "economics": {
     "gross_revenue_range": "$750,000–$3,000,000 USD annually",
+    "retained_revenue_range": "$300,000–$1,200,000 USD annually",
+    "retained_share": 0.4,
     "net_profit_margin_range": "8–18%",
+    "retained_profit_margin_range": "20–45%",
     "owner_net_profit_potential": "$60,000–$540,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$200,000–$1,000,000 USD",
-    "monthly_opex_range": "$15,000–$70,000 USD",
-    "time_to_first_deal": "6–18 months",
+    "startup_capital_range": "$30,000–$120,000 USD",
+    "monthly_opex_range": "$6,000–$25,000 USD",
+    "time_to_first_deal": "4–10 months",
+    "automation_coverage": 0.62,
     "typical_team_size": {
-      "full_time_including_owner": 7,
-      "contractors": 3,
-      "total_people": 10
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Acquired business sales; margin after interest, before principal repayments",
+    "revenue_basis": "Acquired unit sales (40% retained HoldCo operating contribution; margin after debt interest)",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 750000,
+      "annual_retained_revenue_usd": 300000,
       "net_profit_margin_pct": 8,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 60000,
-      "full_time_including_owner": 7,
-      "contractors": 3,
-      "total_people": 10,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "base_case": {
       "annual_gross_revenue_usd": 1875000.0,
+      "annual_retained_revenue_usd": 750000,
       "net_profit_margin_pct": 13.0,
+      "retained_profit_margin_pct": 32.5,
       "annual_owner_net_profit_usd": 243750,
-      "full_time_including_owner": 7,
-      "contractors": 3,
-      "total_people": 10,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 3000000,
+      "annual_retained_revenue_usd": 1200000,
       "net_profit_margin_pct": 18,
+      "retained_profit_margin_pct": 45.0,
       "annual_owner_net_profit_usd": 540000,
-      "full_time_including_owner": 8,
-      "contractors": 4,
-      "total_people": 12,
+      "full_time_including_owner": 3,
+      "contractors": 3,
+      "total_people": 6,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     }
   },
   "automation_levers": [
-    "Financial reporting",
-    "Back-office workflows"
+    "Automated QoE & cash reconciliation",
+    "Shared HoldCo back-office workflows"
   ],
   "key_risks": [
     "Hidden liabilities",
     "Customer attrition",
-    "Leverage"
+    "Debt-service coverage"
   ],
   "regulatory_notes": [
     "Review employment, tax, licenses, lender covenants and transaction disclosures."

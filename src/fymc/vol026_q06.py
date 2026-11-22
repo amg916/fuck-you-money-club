@@ -13,8 +13,8 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #26 with a Money-to-Manpower "
-        "Score of 62/100. This capital- and labor-intensive model rewards documented buyer "
+        "Candidate #17, Government Surplus Auctions, ranks #29 with a Money-to-Manpower "
+        "Score of 79/100. This high-leverage, system-disciplined model rewards documented buyer "
         "demand, not optimistic bidding. Six mapped sourcing plays structure this chapter: "
         "fleet replacement resale, municipal shop-equipment resale, public-facility closure "
         "splits, inspected generator resale, restricted-screened federal equipment remarketing, "
@@ -458,7 +458,7 @@ CHAPTER_6 = {
                     "route; ten should demonstrate repeatability across more than "
                     "one purchaser. Do not multiply the funnel mechanically to "
                     "force ten transactions when inventory turns slowly. With "
-                    "startup capital of $25,000–$200,000 and monthly operating "
+                    "startup capital of $15,000–$80,000 and monthly operating "
                     "expense of $3,000–$15,000, the low end cannot support several "
                     "specialized lots plus months of storage. Maintain a rolling "
                     "thirteen-week cash forecast and reserve funds for removal, "

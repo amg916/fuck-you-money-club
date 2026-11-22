@@ -6,14 +6,14 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-first-enterprise-software-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in enterprise software reselling, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in enterprise software reselling, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Mine Renewal Windows, AWS CPPO and Microsoft CSP Demand with Deal Registration, License Evidence, and Procurement-Ready Implementation Scopes",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
         "Money-to-Manpower Score. This chapter maps nine sourcing plays: renewal rescue, "
         "license reconciliation, cloud commitment alignment, security remediation, acquisition "
         "integration, public procurement, implementation recovery, vendor referral coverage, "
@@ -254,7 +254,7 @@ CHAPTER_6 = {
                     "support, and overhead. If the vendor requires payment on day "
                     "fifteen and the customer pays on day sixty, the reseller "
                     "carries $88,000 for forty-five days. That single order can "
-                    "consume much of the canonical $25,000–$150,000 startup capital "
+                    "consume much of the canonical $15,000–$75,000 startup capital "
                     "range, while monthly operating expense still runs $5,000–$25,000. "
                     "Seek a deposit, shorter customer terms, distributor credit, or "
                     "a permitted marketplace settlement structure; calculate each alternative "

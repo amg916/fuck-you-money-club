@@ -445,7 +445,7 @@ def build_volume_023_workbook() -> dict:
                         ),
                         (
                             "An illustrative $400,000 capitalization sits within the "
-                            "$150,000–$2,000,000 range. Allocate $120,000 each to "
+                            "$15,000–$75,000 range. Allocate $120,000 each to "
                             "Tracts A and B, $36,000 overhead float, $15,000 "
                             "curative cash, and $109,000 uncommitted capital. "
                             "These allocations total $400,000; they do not create "
@@ -1583,11 +1583,9 @@ def build_volume_023_workbook() -> dict:
                         ),
                         (
                             "Candidate #7, Resource assets, "
-                            "ranks #23 of 29 and "
-                            "scores 63/100: revenue 20, "
-                            "margin 17, team 16, "
-                            "accessibility 3, automation 7. "
-                            "Capital is $150,000–$2,000,000; "
+                            "ranks #25 of 29 and "
+                            "scores 81/100: revenue potential 21, margin potential 22, team efficiency 16, startup accessibility 11, and automation potential 11. "
+                            "Capital is $15,000–$75,000; "
                             "monthly opex is $1,000–$12,000. "
                             "Canonical annual owner profits "
                             "are $6,000, $69,875, and "

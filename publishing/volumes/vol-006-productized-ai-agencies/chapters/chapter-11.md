@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. The operating asset is a repeatable delivery pod, not the founder's ability to rescue every deployment. Assign five seats across scope control, architecture, implementation, independent QA, and monitoring; expand to seven only against funded backlog and measured capacity. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Preserve those cases through acceptance-linked contractor payments, customer and counterparty exposure limits of 25%, accrual books, signed IP assignments, and documented access authority. Weekly evidence must connect delivered work to recognized fees and support obligations. A buyer pays for transferable earnings; a continuing owner collects the same discipline as durable cash.
+Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. The operating asset is a repeatable delivery pod, not the founder's ability to rescue every deployment. Assign five seats across scope control, architecture, implementation, independent QA, and monitoring; expand to seven only against funded backlog and measured capacity. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Preserve those cases through acceptance-linked contractor payments, customer and counterparty exposure limits of 25%, accrual books, signed IP assignments, and documented access authority. Weekly evidence must connect delivered work to recognized fees and support obligations. A buyer pays for transferable earnings; a continuing owner collects the same discipline as durable cash.
 
 ### Key Metrics
 

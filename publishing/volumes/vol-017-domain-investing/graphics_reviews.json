@@ -35,7 +35,7 @@
     "diag-04-domain-route-contribution-yields",
     "diag-05-domain-preflight-risk-tree",
     "diag-06-domain-investing-pod-seats",
-    "diag-07-startup-capital-allocation",
+    "diag-07-startup-capital-30000-reference-allocation",
     "diag-08-thirty-day-domain-launch"
   ],
   "cover_graphic_ids": [
@@ -60,7 +60,7 @@
     "diag-04-domain-route-contribution-yields",
     "diag-05-domain-preflight-risk-tree",
     "diag-06-domain-investing-pod-seats",
-    "diag-07-startup-capital-allocation",
+    "diag-07-startup-capital-30000-reference-allocation",
     "diag-08-thirty-day-domain-launch"
   ],
   "allowed_statuses": [
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-startup-capital-30000-reference-allocation": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-startup-capital-30000-reference-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Treating Inventory as Profit",
+        "label": "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-startup-capital-30000-reference-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Treating Inventory as Profit",
+        "label": "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-startup-capital-30000-reference-allocation",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Treating Inventory as Profit",
+        "label": "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-21T22:17:11Z"
+  "updated_at": "2026-11-22T16:33:24Z"
 }

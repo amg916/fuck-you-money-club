@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Freight brokerage sells accountable transportation coordination, not trucks or ownership of cargo. "
-        "Candidate #12 ranks #25 of 29 with a Money-to-Manpower Score of 62/100: capital and labor remain binding constraints. "
+        "Candidate #12 ranks #19 of 29 with a Money-to-Manpower Score of 85/100: capital and labor remain binding constraints. "
         "The canonical gross-billings cases produce $30,000, $165,000, and $400,000 in annual owner net profit, "
         "but carrier payments consume most shipper collections. This chapter maps eight operator plays: niche lane procurement, "
         "backup-capacity retainers, appointment exception management, carrier identity verification, shipment visibility, "
@@ -196,7 +196,7 @@ CHAPTER_1 = {
                     "use actual invoice cohorts rather than treating it as a credit facility quote. One late $40,000 "
                     "shipper balance can consume months of owner earnings even while the income statement looks healthy. "
                     "Set exposure limits using open receivables plus delivered-unbilled work and committed loads, less "
-                    "applicable deposits. The stated startup capital range is $50,000 to $250,000, with first deals "
+                    "applicable deposits. The stated startup capital range is $15,000 to $80,000, with first deals "
                     "typically modeled at two to six months. The stated monthly operating range is $6,000 to $30,000, "
                     "but the illustrative Scaled residual expense envelope averages $41,667 monthly and therefore exceeds "
                     "that range when all noncarrier costs are included. Make that expansion visible. A $75,000 BMC-84 "
@@ -492,7 +492,7 @@ CHAPTER_1 = {
                     "loads, surface shipment exceptions, and reconcile invoices while preserving evidence and accountable "
                     "human decisions. It should not release freight to an unresolved identity or keep selling into "
                     "exhausted customer credit. Review weekly spread, cash exposure, claims, and after-hours workload "
-                    "together. The 62/100 score reflects real capital and labor intensity: the opportunity improves "
+                    "together. The 85/100 score reflects real capital and labor intensity: the opportunity improves "
                     "when repeatability lowers exception cost, not when gross billings are mistaken for wealth or "
                     "contractor headcount is hidden."
                 ),

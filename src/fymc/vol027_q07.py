@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a 57/100 Money-to-Manpower "
+        "Candidate #13, Business Acquisition, ranks #17 with a 86/100 Money-to-Manpower "
         "Score: ownership produces cash only when diligence survives operating reality. "
         "This chapter connects seven mapped plays: acquisition sourcing, Quality of Earnings, "
         "SBA and seller-note structuring, controlled closing, customer-retention turnaround, "
@@ -30,19 +30,19 @@ CHAPTER_7 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; interest included before debt principal",
-            "note": "8% margin; $60,000 annual owner net profit; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; interest included before debt principal",
-            "note": "13.0% margin; $243,750 annual owner net profit; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; interest included before debt principal",
-            "note": "18% margin; $540,000 annual owner net profit; 8 FT + 4 C, 12 people",
+            "note": "18% margin; $540,000 annual owner net profit; 3 FT + 3 C, 12 people",
         },
     ],
     "sections": [
@@ -65,7 +65,7 @@ CHAPTER_7 = {
                     "four credible diligence candidates means eight documented scrubs, not eight unexplained "
                     "CRM deletions. Retain the rejected records so the next broker email cannot resurrect "
                     "a known title defect under a different business name. Budget the actual six-to-eighteen-month "
-                    "search horizon and $200,000–$1,000,000 startup capital range. The ninety-day walkthrough "
+                    "search horizon and $30,000–$120,000 startup capital range. The ninety-day walkthrough "
                     "begins after an anchor acquisition closes; it does not compress that search into three months."
                 ),
                 (
@@ -215,7 +215,7 @@ CHAPTER_7 = {
                     "a new documented transaction or a separately reviewed migration, never overwrite "
                     "an old evidence hash. The intake score is a transparent local screening "
                     "heuristic using margin and concentration; it is unrelated to the volume's "
-                    "57/100 Money-to-Manpower Score. Keep those labels separate in dashboards. "
+                    "86/100 Money-to-Manpower Score. Keep those labels separate in dashboards. "
                     "The stored version increments during state changes, while the write transaction "
                     "prevents another worker from changing the predecessor state mid-decision. "
                     "Do not expose these write functions directly as unauthenticated web endpoints."
@@ -823,7 +823,7 @@ def match_cash(op_id, journal_id, statement_id):
                     "Direct delivery costs equal sixty-five percent of sales: $91,406.25, "
                     "$101,562.50, and $111,718.75. Operating overhead is $27,437.50, "
                     "$30,875, and $34,312.50, while interest is $3,500 each month. "
-                    "Overhead falls inside the supplied $15,000–$70,000 monthly operating "
+                    "Overhead falls inside the supplied $6,000–$25,000 monthly operating "
                     "expense planning range under this model's classification; total expenses "
                     "also include direct delivery and interest. Each month therefore retains "
                     "thirteen percent owner profit: $18,281.25, $20,312.50, and "

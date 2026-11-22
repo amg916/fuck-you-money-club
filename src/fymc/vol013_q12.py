@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. This sprint maps four operator plays: patent "
         "field-of-use licensing, controlled brand licensing, catalog rights packaging, "
         "and permissioned dataset licensing. One full-time operator and three fractional "
@@ -23,7 +23,7 @@ CHAPTER_12 = {
         "and $480,000 Scaled. A $6,000 first-month cash ceiling and explicit Day "
         "30/60/90 evidence thresholds determine whether to stop an asset, repair its "
         "offer, or expand a validated lane. Scaling means controlled diligence and "
-        "buyer coverage; first-deal timing remains 6–24 months."
+        "buyer coverage; first-deal timing remains 4–14 months."
     ),
     "key_metrics": [
         {
@@ -100,8 +100,8 @@ CHAPTER_12 = {
                     "at $50, $900 for twelve operations hours at $75, $400 for software and "
                     "records, $500 for buyer interviews and sample preparation, and $800 "
                     "contingency. This is a sprint budget, not the complete startup requirement. "
-                    "Candidate #19 retains a $25,000–$250,000 startup capital range and "
-                    "$2,000–$15,000 monthly operating range. Asset purchases, litigation, "
+                    "Candidate #19 retains a $12,000–$75,000 startup capital range and "
+                    "$2,000–$12,000 monthly operating range. Asset purchases, litigation, "
                     "registration campaigns, and founder living costs are outside this sprint "
                     "authorization and require separate funding before commitment. Track founder "
                     "hours even when no cash salary is drawn. Use a weekly cash-plus-committed "

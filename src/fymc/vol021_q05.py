@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 Money-to-Manpower "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower "
         "Score across 18 mapped plays. Its attraction is automated order routing, inventory "
         "alerts, and retention; its weakness is paying for mistakes before discovering them. "
         "The canonical annual owner profits are $12,500 Conservative, $129,375 Base, and "
@@ -64,7 +64,7 @@ CHAPTER_5 = {
                     "scorecard. Likewise, annual owner profit is not cash available today: inventory "
                     "deposits, processor holds, and refund timing can consume liquidity without "
                     "immediately changing the income statement. Maintain separate contribution, "
-                    "operating-profit, and cash schedules. The $30,000–$250,000 startup-capital range "
+                    "operating-profit, and cash schedules. The $15,000–$80,000 startup-capital range "
                     "does not excuse skipping those schedules, and the $4,000–$25,000 monthly operating "
                     "range must not be added again to costs already included in the canonical cases. "
                     "Assign each cost account once, then reconcile its treatment monthly."

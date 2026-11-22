@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a Money-to-Manpower Score of "
-        "72/100. Buyers pay for usable rights, predictable delivery, and avoided delay, "
+        "Candidate #6, Land Flipping, ranks #15 with a Money-to-Manpower Score of "
+        "86/100. Buyers pay for usable rights, predictable delivery, and avoided delay, "
         "not acreage alone. This chapter maps six operator plays: vacant-parcel cash "
         "resale, infill-builder disposition, minor-subdivision lot release, access-cure "
         "resale, seller-financed disposition, and forced-pooling mineral-interest "
@@ -594,7 +594,7 @@ CHAPTER_2 = {
                     "Distinguish cost of sold parcels from cash "
                     "still invested in unsold inventory. Maintain "
                     "a rolling thirteen-week cash forecast because "
-                    "$50,000–$400,000 startup capital, "
+                    "$15,000–$75,000 startup capital, "
                     "$3,000–$15,000 monthly operating expense, "
                     "and a 3–12 month first-deal timeline "
                     "can create funding pressure before annual "

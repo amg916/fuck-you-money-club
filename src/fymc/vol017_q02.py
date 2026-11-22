@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, holds Rank #17 with a 74/100 "
+        "Candidate #16, Domain Investing, holds Rank #22 with a 83/100 "
         "Money-to-Manpower Score. Buyers pay for launch readiness, memorable positioning, "
         "search relevance, and reduced customer confusion; a trademark concern does not "
         "create an obligation to buy. This chapter maps eight plays: NRD diagnostic "
@@ -549,7 +549,7 @@ CHAPTER_2 = {
                     "inventory monthly using comparable-sale monitoring, inquiry routing, "
                     "and renewal tracking; automation should expose carrying cost, "
                     "not manufacture demand. The stated startup capital range "
-                    "is $10,000 to $150,000, monthly operating expense range "
+                    "is $8,000 to $60,000, monthly operating expense range "
                     "$500 to $5,000, and first-deal window three to "
                     "twenty-four months. Those ranges are planning inputs rather "
                     "than a second set of annual profit equations. Maintain "

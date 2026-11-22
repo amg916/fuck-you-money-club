@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower "
         "Score. This chapter maps six operator plays: vacant-parcel principal "
         "purchases, infill repositioning, GIS parcel screening, comparable-sale "
         "tracking, minor subdivisions, and title-insured dispositions. Each play "
@@ -346,7 +346,7 @@ CHAPTER_9 = {
                     "an acquisition outflow, not revenue, and a refundable buyer deposit "
                     "is not an additional parcel sale. Do not count gross sale proceeds "
                     "and the same transaction's spread as separate revenue streams. The "
-                    "$50,000–$400,000 startup range and $3,000–$15,000 monthly operating "
+                    "$15,000–$75,000 startup range and $3,000–$15,000 monthly operating "
                     "range constrain liquidity; they are not additions to the stated profit "
                     "cases. Reserve funding for diligence failures, property taxes, insurance, "
                     "title cures, and extended holding periods. Track available cash separately "

@@ -13,8 +13,8 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower Score of "
-        "56/100 because recurring revenue still requires paid crew hours. This chapter maps four plays: "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower Score of "
+        "82/100 because recurring revenue still requires paid crew hours. This chapter maps four plays: "
         "new-occupancy office contracts, outpatient medical suites, property-manager route clusters, and "
         "incumbent-service recovery. Mine public records and buyer intent, verify authority and service "
         "economics, then convert measured walkthroughs into tightly scoped recurring agreements. The "
@@ -29,19 +29,19 @@ CHAPTER_6 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual recognized cleaning contract revenue; excludes customer property value",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual recognized cleaning contract revenue; excludes customer property value",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual recognized cleaning contract revenue; excludes customer property value",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C (11 people)",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C (6 people)",
         },
     ],
     "sections": [

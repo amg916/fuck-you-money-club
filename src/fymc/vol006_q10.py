@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 "
+        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
         "Money-to-Manpower Score. Across the volume's 23 mapped plays, the scalable "
         "asset is a repeatable implementation system, not an unlimited custom-development "
         "promise. This chapter builds signed intake webhooks, Python job workers, "

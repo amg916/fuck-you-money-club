@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, ranks #06 with an 86/100 "
+        "Candidate #29, Productized AI Agencies, ranks #08 with an 89/100 "
         "Money-to-Manpower Score across 23 mapped plays. Its canonical annual "
         "owner profits are $20,000 Conservative, $165,000 Base, and $400,000 "
         "Scaled, earned on implementation fees and support retainers rather "

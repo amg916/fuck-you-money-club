@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, holds Rank #18 with a 72/100 Money-to-Manpower "
+        "Candidate #6, Land Flipping, holds Rank #15 with a 86/100 Money-to-Manpower "
         "Score. This chapter maps six operator plays: owner-source intake, parcel "
         "screening, comparable-sale tracking, underwriting and title routing, sale-packet "
         "fulfillment, and buyer distribution with referral recirculation. A 1 FT + 3 C "
@@ -470,7 +470,7 @@ CHAPTER_10 = {
                     "$692,750, and $1,125,000, including acquisition costs and all other costs "
                     "captured by the scorecard. Do not subtract those acquisition costs again, "
                     "and do not add modeled automation savings on top of the stated profits. "
-                    "The $50,000–$400,000 startup capital range and $3,000–$15,000 monthly "
+                    "The $15,000–$75,000 startup capital range and $3,000–$15,000 monthly "
                     "operating expense range describe funding requirements, not extra revenue. "
                     "Model the cash calendar separately because purchase deposits, diligence, "
                     "carrying costs, and selling expenses precede many receipts. A profitable "

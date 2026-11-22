@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, holds Rank #23 with a 63/100 Money-to-Manpower Score. "
+        "Candidate #7, Mineral Rights, holds Rank #25 with a 81/100 Money-to-Manpower Score. "
         "This chapter maps the tooling stack to five operator plays: severed-title acquisitions, "
         "NPRI cash-flow purchases, pooling-docket curve-jumping, owned-asset royalty recovery, and "
         "institutional flips. County instruments establish the ownership evidence; state production "
@@ -483,7 +483,7 @@ CHAPTER_8 = {
                 ),
                 (
                     "Keep capital deployment, cash proceeds, and recognized revenue in separate views. The stated "
-                    "$150,000–$2,000,000 startup capital range primarily describes the ability to buy and hold "
+                    "$15,000–$75,000 startup capital range primarily describes the ability to buy and hold "
                     "rights while research and payment cycles unfold; it is not operator revenue. In an illustrative "
                     "flip, an interest purchased for $100,000 and sold for $130,000 produces $130,000 of sale "
                     "proceeds, including $100,000 of returned basis and a $30,000 realized gain before separately "
@@ -547,7 +547,7 @@ CHAPTER_8 = {
                     [
                         "Capital and proceeds control applying across all five plays",
                         "Royalty receipts and realized rights-trading gains enter revenue; returned purchase basis stays outside recognized operator revenue.",
-                        "$150,000–$2,000,000 startup capital supports acquisitions and holding periods; first-deal planning remains six to twenty-four months.",
+                        "$15,000–$75,000 startup capital supports acquisitions and holding periods; first-deal planning remains six to twenty-four months.",
                         "Track data spend, committed capital, and cash runway separately; do not count underlying hydrocarbon sales as desk revenue.",
                     ],
                 ],

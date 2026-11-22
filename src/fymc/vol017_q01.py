@@ -14,8 +14,8 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Domain investing is an inventory business: acquire transferable registration rights, carry renewal risk, "
-        "and sell to buyers whose commercial use justifies a higher price. Candidate #16, Rank #17 of 29, "
-        "scores 74/100 as a Disciplined Specialist Play. This chapter maps eight plays: brandable inventory, "
+        "and sell to buyers whose commercial use justifies a higher price. Candidate #16, Rank #22 of 29, "
+        "scores 83/100 as a High-Leverage Operator Play. This chapter maps eight plays: brandable inventory, "
         "exact-match upgrades, expired-authority rebuilds, drop-catch resale, liquid short-name trading, geographic "
         "service names, portfolio liquidation, and buyer-side brokerage. Owned-domain revenue means gross sale "
         "proceeds, with acquisition and renewal costs inside the margin; client purchase principal is different. "
@@ -369,8 +369,8 @@ CHAPTER_1 = {
                 ),
                 (
                     "Capital sufficiency depends on timing, not just annual margin. The stated startup range "
-                    "is $10,000–$150,000, monthly operating expense range is $500–$5,000, and time to "
-                    "first deal is 3–24 months. Treat those ranges as planning constraints rather than "
+                    "is $8,000–$60,000, monthly operating expense range is $500–$5,000, and time to "
+                    "first deal is 2–9 months. Treat those ranges as planning constraints rather than "
                     "evidence that any particular portfolio will sell. At $500 monthly overhead, eighteen "
                     "months without a sale consumes $9,000 before acquisition spending and renewals. A "
                     "$10,000 starting balance therefore cannot support aggressive buying plus that waiting "

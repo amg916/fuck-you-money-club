@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
         "Score. Its canonical annual owner profits are $3,000 Conservative, $44,000 "
         "Base, and $120,000 Scaled; renewal drag and disputed ownership can erase "
         "them quickly. This chapter maps eight operating plays: brandable resale, "
@@ -88,7 +88,7 @@ CHAPTER_5 = {
                     "materially. New inventory purchases also consume cash even when their "
                     "cost is not immediately included in that period's profit calculation. "
                     "Maintain a separate cash bridge rather than deducting those purchases "
-                    "twice. Startup capital of $10,000–$150,000 and monthly operating expenditure "
+                    "twice. Startup capital of $8,000–$60,000 and monthly operating expenditure "
                     "of $500–$5,000 describe planning ranges, not extra revenue or permission "
                     "to exceed the canonical cost envelope."
                 ),

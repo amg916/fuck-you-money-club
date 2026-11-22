@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped plays with a 79/100 Money-to-Manpower Score. Its automation advantage comes from turning application evidence, lender appetite, and renewal dates into versioned workflows rather than delegating credit judgment to a model. A 2 FT + 2 C team can target automation of 70%+ of repetitive task instances while retaining accountable review of lender submissions, fees, and borrower communications. Canonical annual owner profits remain $30,000 Conservative, $196,000 Base, and $450,000 Scaled; recognized revenue includes retained origination or referral fees, never loan principal. This chapter connects measured workflow economics to formation referrals and bankruptcy-claim research, separating adjacent-play receipts and principal risk from the brokerage scorecard.
+Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped plays with a 89/100 Money-to-Manpower Score. Its automation advantage comes from turning application evidence, lender appetite, and renewal dates into versioned workflows rather than delegating credit judgment to a model. A 2 FT + 2 C team can target automation of 70%+ of repetitive task instances while retaining accountable review of lender submissions, fees, and borrower communications. Canonical annual owner profits remain $30,000 Conservative, $196,000 Base, and $450,000 Scaled; recognized revenue includes retained origination or referral fees, never loan principal. This chapter connects measured workflow economics to formation referrals and bankruptcy-claim research, separating adjacent-play receipts and principal risk from the brokerage scorecard.
 
 ### Key Metrics
 

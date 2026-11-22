@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 Money-to-Manpower Score. Its 12 mapped plays become transferable only when identity evidence, finder agreements, treasury submissions, and fee collections survive the founder's absence. This chapter assigns those plays to a lean 1 FT + 2 C pod, then expands deliberately to 2 FT + 3 C. Weekly scorecards measure accepted evidence and collectible fees rather than discovered asset value. Canonical annual owner profits are $15,000 Conservative, $95,625 Base, and $225,000 Scaled. Build separate treasury cohorts, enforce concentration limits of 25% or less, secure contractor IP assignments, and normalize owner labor before discussing a sale. A premium depends on documented transferability, not a large spreadsheet of possible claims.
+Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 Money-to-Manpower Score. Its 12 mapped plays become transferable only when identity evidence, finder agreements, treasury submissions, and fee collections survive the founder's absence. This chapter assigns those plays to a lean 1 FT + 2 C pod, then expands deliberately to 2 FT + 3 C. Weekly scorecards measure accepted evidence and collectible fees rather than discovered asset value. Canonical annual owner profits are $15,000 Conservative, $95,625 Base, and $225,000 Scaled. Build separate treasury cohorts, enforce concentration limits of 25% or less, secure contractor IP assignments, and normalize owner labor before discussing a sale. A premium depends on documented transferability, not a large spreadsheet of possible claims.
 
 ### Key Metrics
 

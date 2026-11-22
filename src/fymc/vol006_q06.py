@@ -13,7 +13,7 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score "
+        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score "
         "and 23 mapped plays. The sourcing advantage is finding expensive workflow friction before buyers "
         "publish a formal brief: software migrations, operations hiring, support backlogs, and integration "
         "partner overflow. Convert those signals into one fixed-scope sprint, a measurable acceptance test, "

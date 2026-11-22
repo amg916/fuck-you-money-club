@@ -15,7 +15,7 @@ VOLUME_026_POSITIONING_ALTERNATIVES = [
         ),
         "audience": (
             "A two-full-time, three-contractor operating pod with "
-            "$25,000–$200,000 in startup capital, dependable freight access, "
+            "$15,000–$80,000 in startup capital, dependable freight access, "
             "and practical experience inspecting commercial equipment."
         ),
         "research_basis": (
@@ -353,9 +353,12 @@ def build_volume_026_diagrams_data() -> list[dict]:
                     80500.0,
                     (
                         "Canonical Base-Case residual after the four expense "
-                        "categories for a two-full-time, three-contractor pod. "
-                        "Owner distributions do not create an additional "
-                        "expense below this closing total."
+                        "categories for a 2 FT + 3 C core pod (5 people). "
+                        "External vendor and trade sub-crews are charged to "
+                        "direct subcontractor/COGS pass-through within the "
+                        "applicable direct-cost categories, not counted in "
+                        "internal pod headcount. Owner distributions do not "
+                        "create an additional expense below this closing total."
                     ),
                 ),
             ],
@@ -617,67 +620,71 @@ def build_volume_026_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-startup-capital-45000-reference",
             "stacked_comparison",
-            "Protect Removal Cash Before Expanding Inventory",
-            "Four allocation buckets across $25,000, $100,000, and $200,000",
+            "Protect Removal Cash in a $45,000 Startup Plan",
+            "Four buckets: $15,000 lean, $45,000 reference, $80,000 expanded",
             4,
             "illustrative_model",
             (
-                "Numeric values show the $100,000 reference budget in USD. "
-                "Each stage also provides its allocation at the canonical "
-                "$25,000 minimum and $200,000 maximum. The allocation "
+                "Numeric values show the $45,000 central/reference startup "
+                "budget in USD, within the canonical $15,000–$80,000 range. "
+                "Each stage also provides its allocation at the $15,000 "
+                "lean minimum and $80,000 expanded maximum. The allocation "
                 "percentages are illustrative and sum to 100% at every "
                 "capital level. Startup deployment is not annual revenue "
                 "or annual expense."
             ),
             (
-                "Minimum: $15,000 + $3,750 + $2,500 + $3,750 = $25,000. "
-                "Reference: $60,000 + $15,000 + $10,000 + $15,000 = "
-                "$100,000. Maximum: $120,000 + $30,000 + $20,000 + "
-                "$30,000 = $200,000."
+                "Lean: $9,000 + $2,250 + $1,500 + $2,250 = $15,000. "
+                "Reference: $27,000 + $6,750 + $4,500 + $6,750 = $45,000. "
+                "Expanded: $48,000 + $12,000 + $8,000 + $12,000 = $80,000."
             ),
             [
                 (
                     "Acquisition working capital",
-                    "60%; $60,000 reference allocation",
-                    60000.0,
+                    "60%; $27,000 reference allocation",
+                    27000.0,
                     (
-                        "Allocate $15,000 at minimum capital and $120,000 "
-                        "at maximum capital. Cover hammer prices, premiums, "
+                        "Allocate $9,000 in the $15,000 lean plan, $27,000 "
+                        "in the $45,000 reference plan, and $48,000 in the "
+                        "$80,000 expanded plan. Cover hammer prices, premiums, "
                         "and acquisition cash obligations while limiting "
                         "concentration in any single lot or buyer segment."
                     ),
                 ),
                 (
                     "Removal and repair float",
-                    "15%; $15,000 reference allocation",
-                    15000.0,
+                    "15%; $6,750 reference allocation",
+                    6750.0,
                     (
-                        "Allocate $3,750 at minimum capital and $30,000 "
-                        "at maximum capital. Ring-fence loading, freight, "
+                        "Allocate $2,250 in the $15,000 lean plan, $6,750 "
+                        "in the $45,000 reference plan, and $12,000 in the "
+                        "$80,000 expanded plan. Ring-fence loading, freight, "
                         "inspection, testing, and bounded repair payments "
                         "that fall due before resale collections."
                     ),
                 ),
                 (
                     "Facilities and operating setup",
-                    "10%; $10,000 reference allocation",
-                    10000.0,
+                    "10%; $4,500 reference allocation",
+                    4500.0,
                     (
-                        "Allocate $2,500 at minimum capital and $20,000 "
-                        "at maximum capital. Fund appropriately scaled "
+                        "Allocate $1,500 in the $15,000 lean plan, $4,500 "
+                        "in the $45,000 reference plan, and $8,000 in the "
+                        "$80,000 expanded plan. Fund appropriately scaled "
                         "storage deposits, insurance setup, safety equipment, "
                         "inventory controls, and required business registrations."
                     ),
                 ),
                 (
                     "Liquidity and holding reserve",
-                    "15%; $15,000 reference allocation",
-                    15000.0,
+                    "15%; $6,750 reference allocation",
+                    6750.0,
                     (
-                        "Allocate $3,750 at minimum capital and $30,000 "
-                        "at maximum capital. Preserve cash for delayed "
+                        "Allocate $2,250 in the $15,000 lean plan, $6,750 "
+                        "in the $45,000 reference plan, and $12,000 in the "
+                        "$80,000 expanded plan. Preserve cash for delayed "
                         "collections, additional storage, and operating "
                         "disruptions; calculate runway from actual monthly "
                         "burn rather than assuming six months are funded."

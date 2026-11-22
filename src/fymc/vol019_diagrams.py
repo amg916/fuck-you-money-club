@@ -190,7 +190,7 @@ def build_volume_019_diagrams_data() -> list[dict]:
             ),
             (
                 "Track conversion and elapsed days separately: the canonical "
-                "time to first deal is 3–12 months, so these annual results "
+                "time to first deal is 3–9 months, so these annual results "
                 "are not a first-month sales commitment."
             ),
             [
@@ -565,31 +565,34 @@ def build_volume_019_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-startup-capital-45000-reference",
             "stacked_comparison",
-            "Allocate Startup Cash Without Hiding Vendor Float",
-            "Four buckets total $75,000 within the $25,000–$150,000 range.",
+            "Allocate a $45,000 Startup Plan Without Hiding Vendor Float",
+            "Four buckets total $45,000 within the $15,000–$75,000 USD range.",
             4,
             "illustrative_model",
             (
-                "numeric_value encodes the $75,000 planning allocation. Matching "
-                "low-capital allocations total $25,000 and high-capital allocations "
-                "total $150,000, as detailed in each bucket. These are startup "
-                "capital envelopes, not the Conservative, Base, and Scaled "
-                "annual revenue scenarios."
+                "numeric_value encodes the $45,000 central/reference startup "
+                "allocation. Matching lean allocations total $15,000 and expanded "
+                "allocations total $75,000, as detailed in each bucket. All amounts "
+                "are USD. These are startup capital envelopes, not the Conservative, "
+                "Base, and Scaled annual revenue scenarios. Displayed percentages "
+                "are rounded to one decimal place."
             ),
             (
-                "Startup cash funds timing differences and operating readiness; "
-                "it is not revenue. First deals may take 3–12 months, so "
-                "recalculate runway against actual spending and vendor terms."
+                "The $45,000 reference plan separates vendor settlement float "
+                "from operating reserves and setup spending; startup cash is "
+                "not revenue. First deals may take 3–9 months, so recalculate "
+                "runway against actual spending and vendor terms rather than "
+                "assuming any envelope funds the entire wait."
             ),
             [
                 (
                     "Vendor settlement float",
-                    "$30,000 planning allocation; 40.0% of startup cash",
-                    30000.0,
+                    "$18,000 reference allocation; 40.0% of startup cash",
+                    18000.0,
                     (
-                        "Low envelope: $10,000; high envelope: $60,000. Cover "
+                        "Lean envelope: $6,000; expanded envelope: $30,000. Cover "
                         "the gap between vendor payment and customer settlement. "
                         "Do not accept orders whose uncovered exposure exceeds "
                         "available cash and confirmed credit capacity."
@@ -597,21 +600,21 @@ def build_volume_019_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Operating cash reserve",
-                    "$20,000 planning allocation; 26.7% of startup cash",
-                    20000.0,
+                    "$12,000 reference allocation; 26.7% of startup cash",
+                    12000.0,
                     (
-                        "Low envelope: $7,000; high envelope: $40,000. At the "
+                        "Lean envelope: $4,000; expanded envelope: $20,000. At the "
                         "canonical $5,000–$25,000 monthly operating range, this "
-                        "$20,000 reserve covers 4.0 to 0.8 months before "
+                        "$12,000 reserve covers 2.4 to 0.48 months before "
                         "receipts, excluding separately allocated vendor float."
                     ),
                 ),
                 (
                     "Vendor enablement and delivery",
-                    "$15,000 planning allocation; 20.0% of startup cash",
-                    15000.0,
+                    "$9,000 reference allocation; 20.0% of startup cash",
+                    9000.0,
                     (
-                        "Low envelope: $5,000; high envelope: $30,000. Fund "
+                        "Lean envelope: $3,000; expanded envelope: $15,000. Fund "
                         "required certifications, documented demonstration environments, "
                         "deployment runbooks, and limited specialist preparation "
                         "for the chosen product family."
@@ -619,10 +622,10 @@ def build_volume_019_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Commercial systems and setup",
-                    "$10,000 planning allocation; 13.3% of startup cash",
-                    10000.0,
+                    "$6,000 reference allocation; 13.3% of startup cash",
+                    6000.0,
                     (
-                        "Low envelope: $3,000; high envelope: $20,000. Establish "
+                        "Lean envelope: $2,000; expanded envelope: $10,000. Establish "
                         "CRM, quote templates, accounting integration, insurance, "
                         "contract review, and focused account research without "
                         "committing to broad paid acquisition."
@@ -641,7 +644,7 @@ def build_volume_019_diagrams_data() -> list[dict]:
                 "Milestones represent Days 1–7, 8–14, 15–21, and 22–30; "
                 "numeric_value records each milestone's ending day. This sprint "
                 "prepares the operating system and early pipeline. Canonical "
-                "time to first deal remains 3–12 months."
+                "time to first deal remains 3–9 months."
             ),
             (
                 "Finish the month with a narrow product thesis, reconciled "

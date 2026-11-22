@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 "
+        "Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 "
         "Money-to-Manpower Score. This chapter turns its 30 mapped plays into a "
         "daily execution sequence for a two-employee, three-contractor pod: define "
         "one enterprise buying problem, instrument attribution, test a bounded "

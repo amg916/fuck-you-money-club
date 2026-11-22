@@ -6,10 +6,10 @@
   "production_stage": "approved_master",
   "scores": {
     "revenue_potential": 24,
-    "profit_margin_potential": 13,
-    "team_efficiency": 5,
-    "startup_accessibility": 5,
-    "automation_potential": 7
+    "profit_margin_potential": 22,
+    "team_efficiency": 19,
+    "startup_accessibility": 12,
+    "automation_potential": 10
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,77 +18,87 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 54,
-  "tier_label": "Capital / Labor Intensive",
+  "total_score": 87,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 51,
-    "high": 57
+    "low": 84,
+    "high": 90
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 24/25. High ticket sizes require field crews, working capital and demanding project oversight.",
-    "profit_margin_potential": "Profit Margin Potential: 13/25. High ticket sizes require field crews, working capital and demanding project oversight.",
-    "team_efficiency": "Team Efficiency: 5/20. High ticket sizes require field crews, working capital and demanding project oversight.",
-    "startup_accessibility": "Startup Accessibility: 5/15. High ticket sizes require field crews, working capital and demanding project oversight.",
-    "automation_potential": "Automation Potential: 7/15. High ticket sizes require field crews, working capital and demanding project oversight."
+    "revenue_potential": "Revenue Potential: 24/25. Lean 4-person storm-swath origination, IICRC psychrometric/Xactimate supplement, and insured-subcontractor coordination desk.",
+    "profit_margin_potential": "Profit Margin Potential: 22/25. Lean 4-person storm-swath origination, IICRC psychrometric/Xactimate supplement, and insured-subcontractor coordination desk.",
+    "team_efficiency": "Team Efficiency: 19/20. Lean 4-person storm-swath origination, IICRC psychrometric/Xactimate supplement, and insured-subcontractor coordination desk.",
+    "startup_accessibility": "Startup Accessibility: 12/15. Lean 4-person storm-swath origination, IICRC psychrometric/Xactimate supplement, and insured-subcontractor coordination desk.",
+    "automation_potential": "Automation Potential: 10/15. Lean 4-person storm-swath origination, IICRC psychrometric/Xactimate supplement, and insured-subcontractor coordination desk."
   },
   "economics": {
     "gross_revenue_range": "$500,000–$2,500,000 USD annually",
+    "retained_revenue_range": "$200,000–$1,000,000 USD annually",
+    "retained_share": 0.4,
     "net_profit_margin_range": "8–18%",
+    "retained_profit_margin_range": "20–45%",
     "owner_net_profit_potential": "$40,000–$450,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$75,000–$350,000 USD",
-    "monthly_opex_range": "$10,000–$45,000 USD",
-    "time_to_first_deal": "1–6 months",
+    "startup_capital_range": "$18,000–$75,000 USD",
+    "monthly_opex_range": "$4,000–$20,000 USD",
+    "time_to_first_deal": "1–5 months",
+    "automation_coverage": 0.68,
     "typical_team_size": {
-      "full_time_including_owner": 5,
-      "contractors": 6,
-      "total_people": 11
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Gross restoration billings; subcontractor and material costs included in margin",
+    "revenue_basis": "Gross restoration billings (40% retained mitigation/supplement contribution after subcontracted trades & materials)",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 500000,
+      "annual_retained_revenue_usd": 200000,
       "net_profit_margin_pct": 8,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 40000,
-      "full_time_including_owner": 5,
-      "contractors": 6,
-      "total_people": 11,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "base_case": {
       "annual_gross_revenue_usd": 1500000.0,
+      "annual_retained_revenue_usd": 600000,
       "net_profit_margin_pct": 13.0,
+      "retained_profit_margin_pct": 32.5,
       "annual_owner_net_profit_usd": 195000,
-      "full_time_including_owner": 5,
-      "contractors": 6,
-      "total_people": 11,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 2500000,
+      "annual_retained_revenue_usd": 1000000,
       "net_profit_margin_pct": 18,
+      "retained_profit_margin_pct": 45.0,
       "annual_owner_net_profit_usd": 450000,
-      "full_time_including_owner": 6,
-      "contractors": 7,
-      "total_people": 13,
+      "full_time_including_owner": 3,
+      "contractors": 3,
+      "total_people": 6,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     }
   },
   "automation_levers": [
-    "Dispatch",
-    "Photo documentation",
-    "Job-cost tracking"
+    "NOAA swath & dispatch triggers",
+    "Psychrometric & Xactimate audit logs",
+    "Milestone AR tracking"
   ],
   "key_risks": [
-    "Claim disputes",
-    "Cash-flow gaps",
-    "Safety incidents"
+    "Supplement disputes",
+    "Two-party mortgage check float",
+    "Subcontractor QC"
   ],
   "regulatory_notes": [
     "Check contractor and remediation licensing; public adjusting may require a separate license.",

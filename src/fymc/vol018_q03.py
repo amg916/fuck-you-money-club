@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, holds Rank #18 with a 72/100 Money-to-Manpower score. "
+        "Candidate #6, Land Flipping, holds Rank #15 with a 86/100 Money-to-Manpower score. "
         "Its canonical annual owner profits are $24,000 Conservative, $157,250 Base, and "
         "$375,000 Scaled, measured against gross parcel sale proceeds rather than broker "
         "commissions. This chapter maps six operating plays: fractional heir-share acquisition, "

@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #26 with a 62/100 "
+        "Candidate #17, Government Surplus Auctions, ranks #29 with a 79/100 "
         "Money-to-Manpower Score. Its information edge comes from six mapped operating "
         "plays: federal fleet resale, municipal equipment resale, commercial equipment "
         "bundling, repair-led resale, documented parts recovery, and buyer-led B2B "
@@ -577,7 +577,7 @@ CHAPTER_8 = {
                     "selling expenses, and other operating costs must fit inside those "
                     "envelopes under the scorecard's accounting convention. Do not add "
                     "subscription spending beneath owner profit as though it were free. "
-                    "The stated $25,000–$200,000 startup capital range and $3,000–$15,000 "
+                    "The stated $15,000–$80,000 startup capital range and $3,000–$15,000 "
                     "monthly operating-expense range describe planning boundaries, not "
                     "permission to combine every high-cost assumption with the Conservative "
                     "case. Reconcile a specific budget before purchasing inventory. Track "

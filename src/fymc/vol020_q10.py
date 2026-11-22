@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
-        "Money-to-Manpower Score: a disciplined specialist play, not an autonomous "
+        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
+        "Money-to-Manpower Score: a high-leverage operator play, not an autonomous "
         "award machine. This chapter maps seven operating plays: solicitation "
         "intelligence, qualification, lawful teaming, bid production, fulfillment "
         "evidence, service-fee collections, and partner distribution. A 2 FT + 3 C "
@@ -372,7 +372,7 @@ CHAPTER_10 = {
                     "headcount establishes affordability. The stated $5,000–$25,000 "
                     "monthly operating range is a planning envelope, not permission "
                     "to exclude delivery labor from scenario expenses. Startup "
-                    "capital of $25,000–$150,000 and a 6–18 month first-deal "
+                    "capital of $20,000–$90,000 and a 6–18 month first-deal "
                     "window demand a separate cash runway schedule before hiring "
                     "or committing to annual software contracts."
                 ),

@@ -13,7 +13,7 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
         "Score across a portfolio of 15 mapped plays. Its capital advantage comes "
         "from screening enforceable commercial judgments before funding enforcement, "
         "not from buying an oversized software stack. Allocate 60% of startup cash "

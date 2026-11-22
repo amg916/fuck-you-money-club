@@ -6,22 +6,22 @@ CHAPTER_10 = {
     "chapter_number": 10,
     "question_number": 10,
     "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 5 FT + 4 C (9 people) commercial cleaning contracts team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "question_prompt": "How does a 1 FT + 3 C (4 people) commercial cleaning contracts team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
     "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
     "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
     "subtitle": "Python Webhooks, ISSA Labor Budgets, Supervisor Pods, Inspection Evidence, and Contract-to-Cash Controls Under FLSA and OSHA",
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100 because software coordinates labor rather than replacing cleaning. "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100 because software coordinates labor rather than replacing cleaning. "
         "This chapter maps four operator plays: territory research and qualification; "
         "labor-aware scheduling; inspection evidence and corrective action; and billing, "
-        "renewal, and referral distribution. A 5 FT + 4 C pod targets 70%+ automation "
+        "renewal, and referral distribution. A 1 FT + 3 C pod targets 70%+ automation "
         "of eligible repetitive administrative events while supervisors retain decisions "
         "about bids, staffing exceptions, safety, and customer commitments. Canonical annual "
         "owner profit remains $20,000 Conservative, $87,000 Base, and $192,000 Scaled; "
-        "the Scaled team increases to 6 FT + 5 C. Build around measured ISSA task "
+        "the Scaled team increases to 2 FT + 4 C. Build around measured ISSA task "
         "rates, durable webhook queues, evidence-backed inspection logs, and reconciled "
         "invoices, then grow through route density rather than indiscriminate lead volume."
     ),
@@ -30,19 +30,19 @@ CHAPTER_10 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual cleaning contract revenue; recognized operator revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual cleaning contract revenue; recognized operator revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual cleaning contract revenue; recognized operator revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -73,7 +73,7 @@ CHAPTER_10 = {
                     "coverage so a fast pipeline cannot conceal unanswered customers or missing visits."
                 ),
                 (
-                    "Assign ownership inside the 5 FT + 4 C constraint rather than inventing a "
+                    "Assign ownership inside the 1 FT + 3 C constraint rather than inventing a "
                     "separate technology department. One illustrative allocation is a working "
                     "owner handling sales and account decisions, one working supervisor handling "
                     "dispatch and inspections, and three full-time cleaners supporting recurring "
@@ -248,7 +248,7 @@ CHAPTER_10 = {
                 ),
             ],
             "table": {
-                "caption": "Scheduling and Inspection Exception Handling for a Nine-Person Pod",
+                "caption": "Scheduling and Inspection Exception Handling for a Four-Person Pod",
                 "headers": [
                     "Operational condition requiring an explicit decision",
                     "Machine check performed before proposing action",
@@ -363,8 +363,8 @@ CHAPTER_10 = {
                     "costs. Base revenue is $725,000 with a 12.0% net margin and $87,000 "
                     "owner net profit, implying $638,000 of costs. Scaled revenue is "
                     "$1,200,000 with a 16% net margin and $192,000 owner net profit, "
-                    "implying $1,008,000 of costs. The first two cases use 5 FT + 4 C; "
-                    "Scaled uses 6 FT + 5 C, eleven people. These are recognized cleaning "
+                    "implying $1,008,000 of costs. The first two cases use 1 FT + 3 C; "
+                    "Scaled uses 2 FT + 4 C, eleven people. These are recognized cleaning "
                     "contract revenues, not customer property values, rent rolls, or payment "
                     "volume. The scorecard does not supply wage schedules, utilization, or "
                     "contractor hours, so validate each case through a bottom-up staffing "
@@ -524,7 +524,7 @@ CHAPTER_10 = {
                     "inspection defects, collection aging, and acquisition contribution. "
                     "Expand only the workflows whose error rates and recovery times "
                     "the current pod can support. Candidate #10 remains labor intensive "
-                    "at 56/100: the durable flywheel is better evidence producing "
+                    "at 82/100: the durable flywheel is better evidence producing "
                     "better targeting, denser routes, reliable service, stronger retention, "
                     "and credible referrals, with more paid crew hours added when "
                     "contracted cleaning demand genuinely increases."
@@ -583,7 +583,7 @@ CHAPTER_10 = {
     "diagram_id": "diag-02",
     "action_checklist": [
         "Baseline two weeks of eligible administrative events across the four mapped plays, recording stable identifiers, handling minutes, review needs, and recovery work.",
-        "Assign the nine-person pod's owner and supervisor responsibilities, then reconcile field capacity with setup, travel, training, absences, and actual worker relationships.",
+        "Assign the four-person pod's owner and supervisor responsibilities, then reconcile field capacity with setup, travel, training, absences, and actual worker relationships.",
         "Implement signed webhook validation, a durable event ledger, duplicate protection, an outbound outbox, bounded retries, and daily source reconciliation.",
         "Pilot one building's versioned ISSA-informed task budget, mobile inspection form, approved chemical records, offline roster, and corrective-action escalation procedure.",
         "Run contract-to-cash reconciliation and measure machine costs, review time, audit time, and maintenance inside the canonical scenario cost envelope.",

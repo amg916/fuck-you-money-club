@@ -100,7 +100,7 @@ def build_volume_013_diagrams_data() -> list[dict]:
             "operating_framework",
             (
                 "Stages show operating sequence, not elapsed months or conversion "
-                "rates. First-deal planning remains 6–24 months. Recognized revenue "
+                "rates. First-deal planning remains 4–14 months. Recognized revenue "
                 "consists of operator license fees and royalties, excluding "
                 "licensees' underlying product sales."
             ),
@@ -528,64 +528,73 @@ def build_volume_013_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-buckets",
+            "diag-07-forty-thousand-startup-capital-buckets",
             "stacked_comparison",
-            "Allocate Startup Capital Before Expanding the Rights Portfolio",
-            "Four buckets illustrate a $100,000 plan within $25,000–$250,000.",
+            "Allocate a $40,000 Reference Startup Budget Across Four Buckets",
+            "Compare lean $12,000, reference $40,000, and expanded $75,000 plans.",
             4,
             "illustrative_model",
             (
                 "Numeric values are USD allocations for the illustrative "
-                "$100,000 plan, not annual expenses or canonical revenue. "
-                "The same 35% / 25% / 20% / 20% split produces "
-                "$25,000 and $250,000 endpoint comparisons stated in the details. "
+                "$40,000 reference plan within the $12,000–$75,000 startup "
+                "capital range, not annual expenses or canonical revenue. "
+                "The same 35% / 25% / 20% / 20% split produces the lean "
+                "$12,000 and expanded $75,000 comparisons stated in the details. "
                 "Startup capital does not establish runway: recurring monthly "
-                "opex is $2,000–$15,000 and first-deal timing is 6–24 months."
+                "opex is $2,000–$12,000 and first-deal timing is 4–14 months."
             ),
             (
-                "The four allocations sum to $100,000. The liquidity bucket "
-                "covers two months at $10,000 recurring monthly opex, so "
-                "separately fund the remaining development period and variable costs."
+                "Reference: $14,000 + $10,000 + $8,000 + $8,000 = $40,000. "
+                "Lean: $4,200 + $3,000 + $2,400 + $2,400 = $12,000. "
+                "Expanded: $26,250 + $18,750 + $15,000 + $15,000 = $75,000. "
+                "The reference liquidity bucket covers 0.8 months at $10,000 "
+                "recurring monthly opex, so separately fund the remaining "
+                "development period and variable costs."
             ),
             [
                 (
                     "Rights diligence and contracting",
-                    "$35,000 central plan allocation for defensible grants",
-                    35000,
+                    "$14,000 reference plan allocation for defensible grants",
+                    14000,
                     (
                         "Allocate 35% to title investigation, asset schedules, "
-                        "and contract drafting. Endpoint allocations are $8,750 "
-                        "at $25,000 and $87,500 at $250,000."
+                        "and contract drafting: $4,200 in the lean $12,000 plan, "
+                        "$14,000 in the reference $40,000 plan, and $26,250 "
+                        "in the expanded $75,000 plan."
                     ),
                 ),
                 (
                     "Buyer validation and packaging",
-                    "$25,000 central plan allocation for commercial evidence",
-                    25000,
+                    "$10,000 reference plan allocation for commercial evidence",
+                    10000,
                     (
                         "Allocate 25% to technical demonstrations, buyer interviews, "
-                        "and scoped licensing materials. Endpoint allocations are "
-                        "$6,250 at $25,000 and $62,500 at $250,000."
+                        "and scoped licensing materials: $3,000 in the lean "
+                        "$12,000 plan, $10,000 in the reference $40,000 plan, "
+                        "and $18,750 in the expanded $75,000 plan."
                     ),
                 ),
                 (
                     "Reporting and obligation systems",
-                    "$20,000 central plan allocation for inspectable operations",
-                    20000,
+                    "$8,000 reference plan allocation for inspectable operations",
+                    8000,
                     (
                         "Allocate 20% to report templates, controlled document "
-                        "storage, SQLite reconciliation, and renewal scheduling. "
-                        "Endpoint allocations are $5,000 and $50,000 respectively."
+                        "storage, SQLite reconciliation, and renewal scheduling: "
+                        "$2,400 in the lean $12,000 plan, $8,000 in the reference "
+                        "$40,000 plan, and $15,000 in the expanded $75,000 plan."
                     ),
                 ),
                 (
                     "Uncommitted operating liquidity",
-                    "$20,000 central plan allocation for cash continuity",
-                    20000,
+                    "$8,000 reference plan allocation for cash continuity",
+                    8000,
                     (
                         "Hold 20% as cash rather than recording an immediate "
-                        "expense. Endpoint allocations are $5,000 and $50,000; "
-                        "do not treat this reserve as acquisition funding twice."
+                        "expense: $2,400 in the lean $12,000 plan, $8,000 in "
+                        "the reference $40,000 plan, and $15,000 in the expanded "
+                        "$75,000 plan. Do not treat this reserve as acquisition "
+                        "funding twice."
                     ),
                 ),
             ],
@@ -600,7 +609,7 @@ def build_volume_013_diagrams_data() -> list[dict]:
             (
                 "Numeric values are milestone ending days. Deliverables are "
                 "30-day operating targets, not executed-license forecasts. "
-                "First-deal planning remains 6–24 months; the sprint does "
+                "First-deal planning remains 4–14 months; the sprint does "
                 "not change the canonical revenue or staffing scenarios."
             ),
             (

@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Insurance restoration converts damaged property into documented, completed repair work—not into ownership of the insurance claim. "
-        "Candidate #15 ranks #29 with a Money-to-Manpower Score of 54/100 because equipment, field labor, subcontractors, and collection delays resist effortless scaling. "
+        "Candidate #15 ranks #13 with a Money-to-Manpower Score of 87/100 because equipment, field labor, subcontractors, and collection delays resist effortless scaling. "
         "This chapter maps five plays: water mitigation, fire and contents recovery, mold remediation, storm reconstruction, and rank_and_rent_pay_per_call_routing. "
         "The operating boundary is gross restoration billings recognized as earned contractor revenue; property value and total claim proceeds are separate. "
         "Canonical annual owner net profit is $40,000 Conservative, $195,000 Base, and $450,000 Scaled. "
@@ -25,19 +25,19 @@ CHAPTER_1 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration revenue; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration revenue; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration revenue; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C, totaling 13 people",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C, totaling 6 people",
         },
     ],
     "sections": [
@@ -332,7 +332,7 @@ CHAPTER_1 = {
                     "completed contract equivalents annually. Actual mixes will contain smaller mitigation jobs and larger rebuilds. Contractor "
                     "headcount does not describe hours purchased, and the Conservative staffing burden requires an explicit wage, utilization, "
                     "and benefits budget before hiring. Preserve the scorecard numbers while testing whether local costs can support them. "
-                    "The $75,000–$350,000 startup range, $10,000–$45,000 monthly operating-expense range, and 1–6 months to first deal are "
+                    "The $18,000–$75,000 startup range, $4,000–$20,000 monthly operating-expense range, and 1–5 months to first deal are "
                     "planning inputs, not proof of funded capacity. Reconcile the monthly expense definition against total annual costs rather "
                     "than treating its upper endpoint as a ceiling on all production spending."
                 ),
@@ -484,7 +484,7 @@ CHAPTER_1 = {
                     "after callbacks and lead costs, not by booked claim value. Fragile beginner hype celebrates catastrophe demand, oversized "
                     "estimates, and nominal contractor networks without checking who can actually supervise the work. A resilient operator "
                     "declines unsafe volume, reserves cash for disputed balances, and expands only after existing crews produce reproducible "
-                    "results. With a 54/100 score and last-place pipeline rank, this is a disciplined execution business, not a "
+                    "results. With a 87/100 score and last-place pipeline rank, this is a disciplined execution business, not a "
                     "low-labor arbitrage opportunity."
                 ),
             ],

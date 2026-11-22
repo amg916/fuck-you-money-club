@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
         "Score across 21 mapped plays. Build its four-person pod around one accountable "
         "principal and three bounded contractor seats, then add execution leadership and "
         "sector analysis only when collected commissions support six people. The canonical "

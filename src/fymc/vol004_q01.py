@@ -8,7 +8,7 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview", "reading_time_minutes": 14,
     "executive_summary": "AI-powered micro SaaS sells a narrow, recurring business outcome, not access to a clever prompt. The durable product captures authorized inputs, applies domain rules, produces reviewable work, and writes results into an existing workflow. Its moat is integration depth, accumulated exception knowledge, and reliable execution. This chapter distinguishes five product archetypes, translates three specialist plays into bounded software opportunities, and separates subscription billings from delivery costs and owner profit. Start with one buyer, one expensive recurring exception, and one measurable resolution. Expand only when customers keep paying after the novelty disappears and the actual support workload is visible.",
     "key_metrics": [
-        {"label": "Series position", "value": "88/100; #02", "context": "Volume 004", "note": "Editorial score, not investment performance."},
+        {"label": "Series position", "value": "90/100; #03", "context": "Volume 004", "note": "Editorial score, not investment performance."},
         {"label": "Base annual gross", "value": "$375,000", "context": "Subscription billings", "note": "Illustrative, before all delivery and operating costs."},
         {"label": "Base annual owner profit", "value": "$112,500", "context": "30% margin; 1 FT + 2 C", "note": "Before owner income tax; labor assumptions matter."},
     ],

@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 "
         "Money-to-Manpower Score across 18 mapped plays. Execution depends on "
         "authorized inventory, contribution-positive acquisition, deterministic order "
         "routing, and settlement evidence—not unattended storefront software. This "

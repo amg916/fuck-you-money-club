@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, holds Rank #17 with a 74/100 Money-to-Manpower Score. "
+        "Candidate #16, Domain Investing, holds Rank #22 with a 83/100 Money-to-Manpower Score. "
         "Its information edge comes from evidence sequencing, not indiscriminate scraping. "
         "This chapter maps eight operating plays: Brandable Inventory Screening; Exact-Match Buyer Mapping; "
         "Expired-Authority Provenance Audits; Drop-Catch Auction Underwriting; UDRP/ACPA Conflict Screening; "

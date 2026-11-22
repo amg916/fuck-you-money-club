@@ -6,15 +6,15 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-first-government-contract-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in government contract brokering, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–18 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in government contract brokering, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Mine SAM.gov, USAspending.gov and Municipal Records; Convert Demand into Disclosed FAR-Aware Prime/Sub Engagements",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #20 with a 70/100 "
-        "Money-to-Manpower Score: a Disciplined Specialist Play. Build a narrow bid "
+        "Candidate #4, Government Contract Brokering, holds Rank #27 with a 79/100 "
+        "Money-to-Manpower Score: a High-Leverage Operator Play. Build a narrow bid "
         "desk around recurring facility demand, documented supplier capacity, and "
         "paid deliverables rather than speculative award commissions. This chapter "
         "maps seven sourcing plays: disclosed facility teaming, recompete intelligence, "
@@ -24,7 +24,7 @@ CHAPTER_6 = {
         "extensions. Annual owner profit is $18,000 Conservative, $126,000 Base, "
         "and $300,000 Scaled, on recognized service fees rather than government "
         "award value. Use public evidence, measured outreach, and delivery-capacity "
-        "checks to pursue the first three to ten paid engagements over 6–18 months."
+        "checks to pursue the first three to ten paid engagements over 3–12 months."
     ),
     "key_metrics": [
         {
@@ -543,7 +543,7 @@ CHAPTER_6 = {
                     "month. Calculate acquisition cost from attributable outreach "
                     "labor and spending divided by new paying clients; compare "
                     "it with collected contribution, not a government contract's "
-                    "face value. The stated startup capital range is $25,000–$150,000 "
+                    "face value. The stated startup capital range is $20,000–$90,000 "
                     "and monthly operating expense range is $5,000–$25,000; neither "
                     "substitutes for a dated cash forecast. Retain enough runway "
                     "for delayed buying cycles and model milestone collections "

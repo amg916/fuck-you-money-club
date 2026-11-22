@@ -13,8 +13,8 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, holds Rank #13 with a "
-        "79/100 Money-to-Manpower Score. Build its four mapped plays around patent "
+        "Candidate #19, Intellectual Property Licensing, holds Rank #09 with a "
+        "88/100 Money-to-Manpower Score. Build its four mapped plays around patent "
         "field-of-use licenses, quality-controlled brand licenses, catalog rights "
         "packages, and purpose-limited dataset licenses. One full-time owner and "
         "three fractional contractors cover commercial decisions, rights work, "
@@ -413,10 +413,10 @@ CHAPTER_11 = {
                     "margin, with the same headcount. Scaled revenue of $800,000 less "
                     "$320,000 leaves $480,000, a 60% margin, with two employees and four "
                     "contractors. Contractor counts describe seats, not identical hours "
-                    "or retainers across scenarios. The stated $2,000 to $15,000 monthly "
+                    "or retainers across scenarios. The stated $2,000 to $12,000 monthly "
                     "opex range is a planning range, not a substitute for these all-in "
                     "annual expense totals; reconcile scope and excluded direct costs "
-                    "before comparing them. Keep startup capital of $25,000 to $250,000 "
+                    "before comparing them. Keep startup capital of $12,000 to $75,000 "
                     "separate from annual operating profit, and plan liquidity around "
                     "a six-to-twenty-four-month first-deal window. Build a rolling thirteen-week "
                     "cash forecast from contractual payment dates, probable collection "

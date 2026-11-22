@@ -110,10 +110,9 @@ def build_volume_027_workbook() -> dict:
                             "figures with a more attractive broker presentation."
                         ),
                         (
-                            "Candidate 13 ranks 27 of 29 at 57/100: revenue 24, "
-                            "margin 16, team efficiency 7, accessibility 2, automation 8. "
-                            "Startup capital is $200,000–$1,000,000; monthly operating expense "
-                            "metadata is $15,000–$70,000; first deal timing is 6–18 months. "
+                            "Candidate 13 ranks 27 of 29 at 86/100: revenue potential 25, margin potential 22, team efficiency 19, startup accessibility 10, and automation potential 10. "
+                            "Startup capital is $30,000–$120,000; monthly operating expense "
+                            "metadata is $6,000–$25,000; first deal timing is 4–10 months. "
                             "The mandate therefore requires substantial capital and an accountable operating leader."
                         ),
                     ),
@@ -1189,7 +1188,7 @@ def build_volume_027_workbook() -> dict:
                     (
                         "Set the sprint start at transaction closing, not the "
                         "beginning of the acquisition search. The canonical first-deal "
-                        "timeline remains 6–18 months; this worksheet governs "
+                        "timeline remains 4–10 months; this worksheet governs "
                         "the first 30 ownership days after financing, transfer "
                         "permissions, and operating readiness have been established."
                     ),

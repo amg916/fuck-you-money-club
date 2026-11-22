@@ -13,8 +13,8 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, holds Rank #16 with a Money-to-Manpower "
-        "Score of 76/100. Across the volume's 11 mapped plays, capital discipline "
+        "Candidate #9, Probate Real Estate, holds Rank #26 with a Money-to-Manpower "
+        "Score of 80/100. Across the volume's 11 mapped plays, capital discipline "
         "starts with retained brokerage commissions, never property sale values. "
         "This chapter separates operating reserves from estate funds, budgets "
         "a twelve-layer production stack, and tests the supplied "

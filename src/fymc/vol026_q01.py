@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Government surplus auctions turn public-sector asset disposal into a disciplined inventory-resale business. "
-        "Candidate #17, Pipeline Rank #26 of 29, scores 62/100 because transport, working capital, inspection and "
+        "Candidate #17, Pipeline Rank #29 of 29, scores 79/100 because transport, working capital, inspection and "
         "removal labor constrain leverage. This chapter maps six operating plays: distressed_asset_recovery, fleet "
         "title arbitrage, industrial equipment remarketing, institutional furniture bundling, parts harvesting and "
         "scheduled buyer matching. The latter five are chapter-level implementations, not additional catalog identifiers. "
@@ -93,7 +93,7 @@ CHAPTER_1 = {
                     "specialists require model-level demand knowledge and a documented disposition path for residual "
                     "material. These are different businesses even when the same municipality supplies inventory. Start "
                     "with one category, one removal radius and two reachable buyer segments. The stated startup capital "
-                    "range is $25,000 to $200,000, monthly operating expense range is $3,000 to $15,000, and first-deal "
+                    "range is $15,000 to $80,000, monthly operating expense range is $3,000 to $15,000, and first-deal "
                     "window is one to six months. Those ranges describe the opportunity, not permission to spend the "
                     "maximum before proving sell-through. Reserve money for unloading, unexpected repairs and slow "
                     "collections rather than committing the entire account to hammer prices. A repeatable buyer "

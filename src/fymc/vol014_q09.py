@@ -13,8 +13,8 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, holds Rank #14 among 29 mapped plays "
-        "with a Money-to-Manpower Score of 79/100. The operating asset is a documented "
+        "Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays "
+        "with a Money-to-Manpower Score of 89/100. The operating asset is a documented "
         "boundary between commercial debt placement, claims administration, and securities "
         "intermediation. Build jurisdiction-specific lender matrices, signed fee triggers, "
         "controlled disclosures, and evidence-backed outreach before accepting applications. "

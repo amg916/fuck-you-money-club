@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Buy a small stream of readers, earn back acquisition cost through qualified newsletter referrals, and turn their questions into useful assets that keep earning. That is the engine, not a promise that paid traffic funds itself. Candidate #24 ranks fourth with 87/100 and 35 mapped operator plays. This chapter connects eight traffic plays through ten channels, one cohort ledger, and a strict distinction between merchant sales and affiliate income. Scale only settled commissions, track rejected referrals, and keep useful tools and an owned audience when a search engine, merchant, or platform changes its rules.
+Buy a small stream of readers, earn back acquisition cost through qualified newsletter referrals, and turn their questions into useful assets that keep earning. That is the engine, not a promise that paid traffic funds itself. Candidate #24 ranks second with 92/100 and 35 mapped operator plays. This chapter connects eight traffic plays through ten channels, one cohort ledger, and a strict distinction between merchant sales and affiliate income. Scale only settled commissions, track rejected referrals, and keep useful tools and an owned audience when a search engine, merchant, or platform changes its rules.
 
 ### Key Metrics
 

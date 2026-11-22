@@ -5,11 +5,11 @@
   "category": "Software channel sales",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 23,
-    "profit_margin_potential": 14,
-    "team_efficiency": 15,
-    "startup_accessibility": 9,
-    "automation_potential": 11
+    "revenue_potential": 24,
+    "profit_margin_potential": 23,
+    "team_efficiency": 17,
+    "startup_accessibility": 11,
+    "automation_potential": 12
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,43 +18,49 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 72,
-  "tier_label": "Disciplined Specialist Play",
+  "total_score": 87,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 69,
-    "high": 75
+    "low": 84,
+    "high": 90
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 23/25. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
-    "profit_margin_potential": "Profit Margin Potential: 14/25. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
-    "team_efficiency": "Team Efficiency: 15/20. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
-    "startup_accessibility": "Startup Accessibility: 9/15. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
-    "automation_potential": "Automation Potential: 11/15. Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor."
+    "revenue_potential": "Revenue Potential: 24/25. Cloud marketplace CPPO/CSP channel VAR scored on 40% retained net agency margin and FinOps implementation retainers rather than vendor pass-through billings.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. Cloud marketplace CPPO/CSP channel VAR scored on 40% retained net agency margin and FinOps implementation retainers rather than vendor pass-through billings.",
+    "team_efficiency": "Team Efficiency: 17/20. Cloud marketplace CPPO/CSP channel VAR scored on 40% retained net agency margin and FinOps implementation retainers rather than vendor pass-through billings.",
+    "startup_accessibility": "Startup Accessibility: 11/15. Cloud marketplace CPPO/CSP channel VAR scored on 40% retained net agency margin and FinOps implementation retainers rather than vendor pass-through billings.",
+    "automation_potential": "Automation Potential: 12/15. Cloud marketplace CPPO/CSP channel VAR scored on 40% retained net agency margin and FinOps implementation retainers rather than vendor pass-through billings."
   },
   "economics": {
     "gross_revenue_range": "$300,000–$2,500,000 USD annually",
+    "retained_revenue_range": "$120,000–$1,000,000 USD annually",
+    "retained_share": 0.4,
     "net_profit_margin_range": "8–20%",
+    "retained_profit_margin_range": "20–50%",
     "owner_net_profit_potential": "$24,000–$500,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$25,000–$150,000 USD",
+    "startup_capital_range": "$15,000–$75,000 USD",
     "monthly_opex_range": "$5,000–$25,000 USD",
-    "time_to_first_deal": "3–12 months",
+    "time_to_first_deal": "3–9 months",
+    "automation_coverage": 0.79,
     "typical_team_size": {
       "full_time_including_owner": 2,
       "contractors": 3,
       "total_people": 5
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Gross license resale and service billings; vendor costs included in margin",
+    "revenue_basis": "Gross license and FinOps billings (40% retained ASC 606 net agency & service contribution)",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 300000,
+      "annual_retained_revenue_usd": 120000,
       "net_profit_margin_pct": 8,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 24000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 1400000.0,
+      "annual_retained_revenue_usd": 560000,
       "net_profit_margin_pct": 14.0,
+      "retained_profit_margin_pct": 35.0,
       "annual_owner_net_profit_usd": 196000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 2500000,
+      "annual_retained_revenue_usd": 1000000,
       "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 50.0,
       "annual_owner_net_profit_usd": 500000,
       "full_time_including_owner": 3,
       "contractors": 4,
@@ -81,13 +91,13 @@
     }
   },
   "automation_levers": [
-    "Renewal alerts",
-    "Quote generation",
-    "License reconciliation"
+    "Technographic renewal alerts",
+    "CPPO/CSP quote automation",
+    "License & FinOps reconciliation"
   ],
   "key_risks": [
-    "Vendor policy changes",
-    "Slow collections",
+    "Vendor rebate shifts",
+    "Net-term float",
     "Channel competition"
   ],
   "regulatory_notes": [

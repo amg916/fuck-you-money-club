@@ -76,7 +76,7 @@
           "name": "Opportunity decision and scorecard anchor",
           "type": "textarea",
           "prompt": "Record the pursuit decision, evidence still required, and named decision owner. Anchor expectations to the candidate's actual rank, score, revenue basis, and staffing dependence instead of presenting cleaning as passive income.",
-          "example": "Proceed to a paid site trial, subject to verified access and funding. Commercial Cleaning Contracts is Candidate #10, pipeline rank #28 of 29, with a 56/100 Money-to-Manpower Score. Its component scores are 21, 12, 6, 11, and 6 respectively; growth requires additional paid crew hours, not software alone."
+          "example": "Proceed to a paid site trial, subject to verified access and funding. Commercial Cleaning Contracts is Candidate #10, pipeline rank #23 of 29, with a 82/100 Money-to-Manpower Score. Its component scores are 21, 12, 6, 11, and 6 respectively; growth requires additional paid crew hours, not software alone."
         }
       ],
       "completion_gate": "The operations lead and finance owner sign the measured scope, counterparty record, capacity estimate, and cash requirement. Do not issue a binding start date while purchasing authority, medical-task boundaries, access, or payroll coverage remains unresolved."
@@ -99,7 +99,7 @@
           "name": "Canonical scenario reconciliation",
           "type": "textarea",
           "prompt": "Enter annual recognized cleaning revenue, net margin, owner net profit, implied total cost, and team composition for every canonical scenario. Preserve the published values even when operational feasibility requires further investigation.",
-          "example": "Conservative: $250,000 revenue, 8% margin, $20,000 owner net, $230,000 implied cost, 5 FT + 4 C. Base: $725,000, 12.0%, $87,000, $638,000, 5 FT + 4 C. Scaled: $1,200,000, 16%, $192,000, $1,008,000, 6 FT + 5 C, totaling 11 people. These are portfolio benchmarks."
+          "example": "Conservative: $250,000 revenue, 8% margin, $20,000 owner net, $230,000 implied cost, 1 FT + 3 C. Base: $725,000, 12.0%, $87,000, $638,000, 1 FT + 3 C. Scaled: $1,200,000, 16%, $192,000, $1,008,000, 2 FT + 4 C, totaling 6 people. These are portfolio benchmarks."
         },
         {
           "name": "Direct cleaning labor",
@@ -141,7 +141,7 @@
           "name": "Startup cash and expense boundaries",
           "type": "textarea",
           "prompt": "Allocate startup resources across equipment, deposits, onboarding, and payroll float. Explain how the stated monthly operating range relates to launch scale rather than mistaking it for every mature portfolio expense.",
-          "example": "A $35,000 launch budget allocates $10,000 equipment, $3,000 insurance deposits, $2,000 onboarding, and $20,000 float. It sits within the $15,000–$90,000 startup range. The $4,000–$18,000 monthly operating range describes a planning envelope; Base implied all-in annual cost is $638,000, averaging $53,166.67 monthly."
+          "example": "A $35,000 launch budget allocates $10,000 equipment, $3,000 insurance deposits, $2,000 onboarding, and $20,000 float. It sits within the $10,000–$50,000 startup range. The $3,000–$14,000 monthly operating range describes a planning envelope; Base implied all-in annual cost is $638,000, averaging $53,166.67 monthly."
         },
         {
           "name": "Labor sensitivity and feasibility exception",
@@ -461,7 +461,7 @@
           "name": "Scale decision and exit-readiness review",
           "type": "textarea",
           "prompt": "State the next ninety-day decision, required evidence, capital limits, and unresolved risks. Preserve the Scaled benchmark while requiring proof that additional crew hours, supervision, collections, and documentation support expansion.",
-          "example": "The next review requires three months of reconciled contract results, documented relief coverage, and adequate cash before adding sites. Scaled remains $1,200,000 revenue, 16% margin, $192,000 owner net, and 6 FT + 5 C. The owner must substantiate the $1,008,000 cost envelope and eleven-person capacity; scheduling software alone does not establish either result."
+          "example": "The next review requires three months of reconciled contract results, documented relief coverage, and adequate cash before adding sites. Scaled remains $1,200,000 revenue, 16% margin, $192,000 owner net, and 2 FT + 4 C. The owner must substantiate the $1,008,000 cost envelope and eleven-person capacity; scheduling software alone does not establish either result."
         }
       ],
       "completion_gate": "The owner signs a thirty-day evidence ledger, a funded ninety-day plan, and a pod capacity reconciliation. Exit readiness requires traceable earnings, documented owner replacement work, accessible service records, and an explicit register of contract-transfer conditions and unresolved operating risks."

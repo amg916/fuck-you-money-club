@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. Its four mapped operator plays are patent field-of-use "
         "licensing, brand licensing, catalog rights licensing, and permissioned dataset "
         "licensing. Each monetizes documented rights through license fees and royalties, "
@@ -535,7 +535,7 @@ CHAPTER_9 = {
                     "outbound accuracy; counsel reviews new channels, the analyst "
                     "controls claim substantiation, and the accountant validates quoted "
                     "economics. Keep the 6–24 month first-deal horizon visible: disciplined "
-                    "qualification protects the $25,000–$250,000 startup capital range "
+                    "qualification protects the $12,000–$75,000 startup capital range "
                     "better than unsupported promises intended to accelerate a signature."
                 ),
             ],

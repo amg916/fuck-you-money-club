@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 "
         "Money-to-Manpower Score across a portfolio of 21 mapped plays. Its leverage "
         "comes from specialist mandates and retained transaction commissions, never "
         "from counting client asset values as revenue. Annual owner profit is $25,000 "

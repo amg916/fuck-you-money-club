@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$120,000 USD) and configure a lean, low-opex ($3,000–$20,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($10,000–$60,000 USD) and configure a lean, low-opex ($2,500–$14,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Publishing Budgets, WordPress and Cloudflare Rails, Objective Directories, Legitimate GBP Partnerships, and FTC-Ready Affiliate Operations",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, holds Rank #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, holds Rank #07 with an 89/100 "
         "Money-to-Manpower Score across a portfolio of 30 mapped plays. Capital "
         "discipline matters more than an expensive keyword subscription: retain "
         "60% of startup cash, launch one measurable publishing engine, and add "
@@ -21,7 +21,7 @@ CHAPTER_4 = {
         "annual owner profits are $16,000 Conservative, $159,250 Base, and "
         "$405,000 Scaled, earned from advertising, affiliate commissions, and "
         "sponsorships rather than referred merchant sales. This chapter budgets "
-        "$15,000–$120,000, separates core overhead from complete operating costs, "
+        "$10,000–$60,000, separates core overhead from complete operating costs, "
         "specifies twelve infrastructure layers, and tests directory sponsorships, "
         "legitimate local partnerships, and affiliate-funded setup services "
         "without treating backlinks, trial registrations, or unpaid invoices "
@@ -32,19 +32,19 @@ CHAPTER_4 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate, and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -83,13 +83,13 @@ CHAPTER_4 = {
                     "of costs. Scaled revenue of $900,000 at 45% leaves $405,000 "
                     "and $495,000 of costs. Those cost envelopes average $5,333.33, "
                     "$27,562.50, and $41,250 monthly, respectively. Consequently, the "
-                    "$3,000–$20,000 monthly stack and core-overhead range cannot be "
+                    "$2,500–$14,000 monthly stack and core-overhead range cannot be "
                     "presented as all-in spending for every mature scenario. Separate "
                     "fixed tools, hosting, administration, and minimum editorial retainers "
                     "from variable production, sales delivery, and remaining personnel "
                     "costs; include every category in the scenario reconciliation. "
-                    "Preserve the canonical teams of 2 FT + 4 C, 2 FT + 4 C, "
-                    "and 3 FT + 5 C without claiming the Conservative envelope "
+                    "Preserve the canonical teams of 1 FT + 3 C, 1 FT + 3 C, "
+                    "and 1 FT + 3 C without claiming the Conservative envelope "
                     "comfortably buys two typical United States salaries plus contractors. "
                     "Validate actual compensation, geography, employment status, and "
                     "benefits before committing to that staffing pattern. A headcount "

@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-A digital product empire is a connected portfolio of reusable tools, instruction, and maintained intelligence sold against one expensive customer workflow. Its advantage is not free duplication; it is reliable implementation with bounded support costs. Volume 003 ranks first at 90/100 in The Big Money Playbooks, an editorial assessment rather than a return forecast. Start with a measurable operational painkiller, then sell deeper implementation and recurring updates only where customers need them. The modeled small team generates $50,000 to $800,000 in annual gross billings, but keeps $10,000 to $440,000 in contribution before founder compensation and income tax.
+A digital product empire is a connected portfolio of reusable tools, instruction, and maintained intelligence sold against one expensive customer workflow. Its advantage is not free duplication; it is reliable implementation with bounded support costs. Volume 003 ranks first at 94/100 in The Big Money Playbooks, an editorial assessment rather than a return forecast. Start with a measurable operational painkiller, then sell deeper implementation and recurring updates only where customers need them. The modeled small team generates $50,000 to $800,000 in annual gross billings, but keeps $10,000 to $440,000 in contribution before founder compensation and income tax.
 
 ### Key Metrics
 

@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score "
         "across a volume containing 15 mapped plays. The operating edge is disciplined "
         "classification: commercial versus consumer obligations, ownership versus servicing, "
         "investigation versus legal representation, and recoverable assets versus senior liens. "

@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower "
+        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower "
         "Score. This chapter converts seven mapped plays into one controlled production "
         "system: lender dispositions, CNC matching, fleet breakups, plant relocations, "
         "inspection-led recovery, buyer alerts, and queue-informed site intelligence. "

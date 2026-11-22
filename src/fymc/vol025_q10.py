@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a Money-to-Manpower Score of "
-        "62/100 because automation cannot erase carrier exposure, working-capital demands, "
+        "Candidate #12, Freight Brokerage, ranks #19 with a Money-to-Manpower Score of "
+        "85/100 because automation cannot erase carrier exposure, working-capital demands, "
         "or service accountability. This chapter maps eight operator plays: lane research, "
         "shipper qualification, carrier verification, load matching, shipment tracking, "
         "invoice reconciliation, targeted outbound, and lane-content referrals. A 3 FT + "

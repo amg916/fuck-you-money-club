@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 "
         "Money-to-Manpower Score across 54 mapped plays. Buyers pay to replace idle "
         "sales capacity and uncertain acquisition costs with documented, accepted "
         "commercial opportunities. Their statutory exposure shapes qualification "

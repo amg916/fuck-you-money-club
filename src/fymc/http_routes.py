@@ -112,6 +112,10 @@ def _enrich_volume_meta_with_scorecard(meta: dict, sc: dict | None, spec: dict |
             out["startup_capital_range"] = econ["startup_capital_range"]
         if econ.get("time_to_first_deal"):
             out["time_to_first_deal"] = econ["time_to_first_deal"]
+        if econ.get("retained_share") is not None:
+            out["retained_share"] = econ["retained_share"]
+        if econ.get("retained_profit_margin_range"):
+            out["retained_profit_margin_range"] = econ["retained_profit_margin_range"]
         if team:
             out["team_size"] = dict(team)
         if isinstance(base, dict) and base:
@@ -247,6 +251,8 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                     "tier_label": c.get("tier_label"),
                     "startup_capital_range": econ.get("startup_capital_range"),
                     "time_to_first_deal": econ.get("time_to_first_deal"),
+                    "retained_share": econ.get("retained_share"),
+                    "retained_profit_margin_range": econ.get("retained_profit_margin_range"),
                     "team_size": team if team else None,
                     "base_case": base if isinstance(base, dict) and base else None,
                     "description": _candidate_summary(c),

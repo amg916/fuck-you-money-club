@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
         "Score. This chapter translates 11 mapped plays into an evidence-first operating "
         "system: authorized docket ingestion, reviewed qualification, executor concierge "
         "coordination, transaction checklists, attorney distribution, and recorded-access "

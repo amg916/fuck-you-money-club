@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
         "Score. Its information advantage comes from joining court events, entity "
         "identifiers, recorded liens, and payment evidence without confusing a "
         "search result with an executable recovery. This chapter connects 15 mapped "

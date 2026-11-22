@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. Execute it as a publishing "
         "and receivables operation: qualify topics, ship evidence-backed pages, route "
         "monetizable demand, verify partner acceptance, and reconcile settled cash. "
@@ -31,19 +31,19 @@ CHAPTER_7 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -657,7 +657,7 @@ def report(conn):
                     "The Worked 90-Day Cohort Walk begins with a mature portfolio already capable "
                     "of the Base revenue run rate; it is not a promise that a newly registered "
                     "site reaches these volumes in 90 days. The canonical first-deal planning "
-                    "window remains 6–24 months and startup capital remains $15,000–$120,000. "
+                    "window remains 3–12 months and startup capital remains $10,000–$60,000. "
                     "Each monthly cohort contains 125 candidate service calls, of which 100 qualify "
                     "at $150, producing $15,000 of performance advertising revenue. Display "
                     "advertising contributes $10,000, illustrated by 400,000 eligible sessions "
@@ -698,7 +698,7 @@ def report(conn):
                     "for core staffing and platform overhead plus $10,062.50 for direct "
                     "production, acquisition, contractor delivery, and other variable costs. "
                     "The latter includes the newsletter cohort's $1,000 acquisition spend. "
-                    "The supplied $3,000–$20,000 monthly opex range is a planning band; "
+                    "The supplied $2,500–$14,000 monthly opex range is a planning band; "
                     "it cannot represent every cost in the canonical Base income statement. "
                     "This exhibit explicitly treats that band as core overhead and adds "
                     "variable delivery costs, rather than hiding the mathematical difference. "
@@ -771,7 +771,7 @@ def report(conn):
                         "Four equivalent revenue quarters produce exactly $490,000 recognized earnings",
                         "Cash follows actual settlement dates and changing opening receivable balances",
                         "$330,750 annual costs leave $159,250 profit at 32.5% margin",
-                        "Maintain the canonical Base staffing envelope of 2 FT + 4 C",
+                        "Maintain the canonical Base staffing envelope of 1 FT + 3 C",
                         "Reforecast working capital independently from the annual owner-profit scorecard",
                     ],
                 ],
@@ -863,10 +863,10 @@ def report(conn):
                     "ranking control or GEO dominance. Show sampled measurements with dates, "
                     "methodology, and concentration exposure. Preserve the canonical cases when "
                     "discussing valuation or staffing: Conservative revenue of $80,000 less "
-                    "$64,000 costs yields $16,000 profit with 2 FT + 4 C; "
+                    "$64,000 costs yields $16,000 profit with 1 FT + 3 C; "
                     "Base revenue of $490,000 less $330,750 costs yields $159,250 "
-                    "with 2 FT + 4 C; Scaled revenue of $900,000 less "
-                    "$495,000 costs yields $405,000 with 3 FT + 5 C. "
+                    "with 1 FT + 3 C; Scaled revenue of $900,000 less "
+                    "$495,000 costs yields $405,000 with 1 FT + 3 C. "
                     "The Scaled margin is 45%, not an assumption that workload disappears. "
                     "Technical audits, refresh queues, and revenue reporting supply leverage; "
                     "editorial judgment, buyer negotiation, and exception handling remain assigned "

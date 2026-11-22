@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 "
         "Money-to-Manpower Score across 21 mapped plays. This chapter turns "
         "specialist transaction services into a controlled operating sequence: "
         "source, qualify, verify authority, secure an exclusive mandate, match "

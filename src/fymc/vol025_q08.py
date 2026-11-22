@@ -13,8 +13,8 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a Money-to-Manpower Score of "
-        "62/100. Its information edge comes from eight mapped operating plays: authority "
+        "Candidate #12, Freight Brokerage, ranks #19 with a Money-to-Manpower Score of "
+        "85/100. Its information edge comes from eight mapped operating plays: authority "
         "verification, carrier identity defense, shipper credit screening, lane pricing "
         "and matching, shipment exception tracking, invoice reconciliation, cash-float "
         "control, and commercial virtual-card settlement rebates. This directory connects "
@@ -567,7 +567,7 @@ CHAPTER_8 = {
                     "not a solo operation. Gross billings include carrier "
                     "costs; principal-versus-agent accounting presentation requires "
                     "a separate assessment. Purchase tools within the stated "
-                    "$6,000–$30,000 monthly operating range and $50,000–$250,000 "
+                    "$6,000–$30,000 monthly operating range and $15,000–$80,000 "
                     "startup capital range, testing actual affordability. A "
                     "rebate opportunity must never override carrier verification, "
                     "shipper credit limits, or the cash required to "

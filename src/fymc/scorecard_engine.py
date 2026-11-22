@@ -10,6 +10,7 @@ investment advice; uncertainty bands are not statistical confidence intervals.
 from __future__ import annotations
 
 from copy import deepcopy
+import math
 from math import isfinite
 import re
 
@@ -3595,21 +3596,21 @@ def get_volume_002_scorecard() -> dict:
 
 
 def get_volume_003_scorecard() -> dict:
-    """Return candidate 27 (Digital Product Empire, 90/100) irrespective of pipeline ranking."""
+    """Return candidate 27 (Digital Product Empire) irrespective of pipeline ranking."""
     return compute_scorecard(next(
         spec for spec in _CANDIDATE_SPECS if spec["candidate_number"] == 27
     ))
 
 
 def get_volume_004_scorecard() -> dict:
-    """Return candidate 22 (AI-Powered Micro SaaS, 88/100) irrespective of pipeline ranking."""
+    """Return candidate 22 (AI-Powered Micro SaaS) irrespective of pipeline ranking."""
     return compute_scorecard(next(
         spec for spec in _CANDIDATE_SPECS if spec["candidate_number"] == 22
     ))
 
 
 def get_volume_005_scorecard() -> dict:
-    """Return candidate 24 (High-Ticket Affiliate Marketing, 87/100) irrespective of pipeline ranking."""
+    """Return candidate 24 (High-Ticket Affiliate Marketing) irrespective of pipeline ranking."""
     return compute_scorecard(next(
         spec for spec in _CANDIDATE_SPECS if spec["candidate_number"] == 24
     ))
@@ -3624,29 +3625,198 @@ def get_volume_scorecard(volume_id: object = None) -> dict:
     ))
 
 
+SCORE_FORMULA_VERSION = "2.0-fymc-lean-operator"
+
+
+def _round_half_up(value: float) -> int:
+    return int(math.floor(value + 0.5))
+
+
+def _piecewise_linear(x: float, knots: list[tuple[float, float]]) -> float:
+    if x <= knots[0][0]:
+        return knots[0][1]
+    if x >= knots[-1][0]:
+        return knots[-1][1]
+    for (x0, y0), (x1, y1) in zip(knots, knots[1:]):
+        if x0 <= x <= x1:
+            return y0 + (x - x0) / (x1 - x0) * (y1 - y0)
+    return knots[-1][1]
+
+
+def derive_dimension_scores(
+    gross: tuple[float, float],
+    margins: tuple[float, float],
+    capital: tuple[float, float],
+    timing: str,
+    team: tuple[int, int],
+    *,
+    retained_share: float = 1.0,
+    automation_coverage: float = 0.75,
+    play_count: int = 0,
+) -> dict[str, int]:
+    """Deterministically compute the 5 Money-to-Manpower sub-scores from unit economics.
+
+    * ``revenue_potential`` (/25): weighted annual owner net profit capacity (0.55 Base + 0.45 Scaled).
+    * ``profit_margin_potential`` (/25): net owner margin on retained contribution (excluding third-party
+      carrier, vendor, subcontractor, and COGS pass-throughs via ``retained_share``).
+    * ``team_efficiency`` (/20): 1-to-5 person core pod leverage + annual base owner profit per pod seat.
+    * ``startup_accessibility`` (/15): geometric-mean startup working capital + deal-velocity months.
+    * ``automation_potential`` (/15): evidenced workflow automation coverage + mapped Track 1/2 play velocity.
+    """
+    for pair_name, pair in (("gross", gross), ("margins", margins), ("capital", capital)):
+        if (not isinstance(pair, (tuple, list)) or len(pair) != 2
+                or any(isinstance(v, bool) or not isinstance(v, (int, float)) or not isfinite(v) for v in pair)
+                or pair[0] <= 0 or pair[1] < pair[0]):
+            raise ValueError(f"Invalid {pair_name} range: {pair!r}")
+    if (not isinstance(team, (tuple, list)) or len(team) != 2
+            or any(isinstance(v, bool) or not isinstance(v, int) or v < 0 for v in team)
+            or (team[0] + team[1]) <= 0):
+        raise ValueError(f"Invalid team tuple: {team!r}")
+    if (isinstance(retained_share, bool) or not isinstance(retained_share, (int, float))
+            or not isfinite(retained_share) or not (0.0 < retained_share <= 1.0)):
+        raise ValueError(f"retained_share must be in (0, 1]: {retained_share!r}")
+    if (isinstance(automation_coverage, bool) or not isinstance(automation_coverage, (int, float))
+            or not isfinite(automation_coverage) or not (0.0 <= automation_coverage <= 1.0)):
+        raise ValueError(f"automation_coverage must be in [0, 1]: {automation_coverage!r}")
+    if isinstance(play_count, bool) or not isinstance(play_count, int) or play_count < 0:
+        raise ValueError(f"Invalid play_count: {play_count!r}")
+    if not isinstance(timing, str) or not timing.strip():
+        raise ValueError("timing must be a non-empty string")
+    month_nums = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", timing)]
+    if not month_nums or month_nums[0] <= 0 or month_nums[-1] < month_nums[0]:
+        raise ValueError(f"Invalid timing window: {timing!r}")
+
+    ft, ct = team
+    pod = ft + ct
+    base_rev = (float(gross[0]) + float(gross[1])) / 2.0
+    base_mgn = (float(margins[0]) + float(margins[1])) / 2.0
+    base_profit = base_rev * base_mgn / 100.0
+    scaled_profit = float(gross[1]) * float(margins[1]) / 100.0
+    weighted_profit = 0.55 * base_profit + 0.45 * scaled_profit
+
+    rev_pts = _piecewise_linear(weighted_profit, [
+        (30000.0, 16.2),
+        (70000.0, 18.8),
+        (125000.0, 20.8),
+        (185000.0, 22.3),
+        (260000.0, 23.5),
+        (360000.0, 24.5),
+        (460000.0, 25.0),
+    ])
+
+    ret_m0 = float(margins[0]) / float(retained_share)
+    ret_m1 = float(margins[1]) / float(retained_share)
+    eff_mgn = 0.60 * ((ret_m0 + ret_m1) / 2.0) + 0.40 * ret_m1
+    mgn_pts = _piecewise_linear(eff_mgn, [
+        (12.0, 13.0),
+        (22.0, 17.4),
+        (30.0, 20.2),
+        (37.0, 22.1),
+        (44.0, 23.5),
+        (52.0, 24.6),
+        (58.0, 25.0),
+    ])
+
+    pod_pts = _piecewise_linear(float(pod), [
+        (2.0, 12.2),
+        (3.0, 11.6),
+        (4.0, 10.8),
+        (5.0, 9.8),
+        (6.0, 6.0),
+        (10.0, 1.5),
+    ])
+    ppp_pts = _piecewise_linear(base_profit / float(pod), [
+        (14000.0, 4.6),
+        (26000.0, 6.4),
+        (38000.0, 7.5),
+        (52000.0, 8.2),
+    ])
+    team_pts = min(20.0, max(0.0, pod_pts + ppp_pts))
+
+    eff_cap = math.sqrt(float(capital[0]) * float(capital[1]))
+    cap_pts = _piecewise_linear(eff_cap, [
+        (14000.0, 9.4),
+        (22000.0, 8.5),
+        (32000.0, 7.6),
+        (48000.0, 6.6),
+        (70000.0, 5.4),
+        (110000.0, 4.0),
+        (250000.0, 2.0),
+    ])
+    eff_mo = 0.55 * month_nums[0] + 0.45 * month_nums[-1]
+    mo_pts = _piecewise_linear(eff_mo, [
+        (2.0, 4.8),
+        (4.5, 4.2),
+        (7.5, 3.5),
+        (11.5, 2.8),
+        (16.0, 2.2),
+    ])
+    start_pts = min(15.0, max(0.0, cap_pts + mo_pts))
+
+    auto_pts = min(15.0, max(0.0, 3.0 + 10.2 * float(automation_coverage) + min(1.8, play_count / 15.0)))
+
+    return {
+        "revenue_potential": _round_half_up(rev_pts),
+        "profit_margin_potential": _round_half_up(mgn_pts),
+        "team_efficiency": _round_half_up(team_pts),
+        "startup_accessibility": _round_half_up(start_pts),
+        "automation_potential": _round_half_up(auto_pts),
+    }
+
+
 def _money_range(values: tuple) -> str:
     return f"${values[0]:,.0f}–${values[1]:,.0f} USD"
 
 
-def _candidate(number, title, category, points, gross, margins, capital, opex,
-               timing, team, rationale, levers, risks, regulations,
-               revenue_basis="Recognized service fees, not client asset value",
-               confidence="Moderate") -> dict:
-    """Build a uniform schema from explicit, candidate-specific assumptions.
+def _pct_range(values: tuple) -> str:
+    return f"{values[0]:g}–{values[1]:g}%"
 
-    Gross revenue is annual. Margins already include non-owner labor and all
-    operating expenses; monthly opex is an indicative fixed/semi-fixed budget,
-    not an additional deduction. Inventory, pass-through and financing capital
-    are separate from fixed opex. Owner profit assumes sole ownership, before
-    personal taxes, debt principal and reinvestment, with no owner salary charged.
+
+def _candidate(
+    number,
+    title,
+    category,
+    gross,
+    margins,
+    capital,
+    opex,
+    timing,
+    team,
+    rationale,
+    levers,
+    risks,
+    regulations,
+    revenue_basis="Recognized service fees, not client asset value",
+    confidence="Moderate",
+    *,
+    retained_share: float = 1.0,
+    automation_coverage: float = 0.75,
+) -> dict:
+    """Build a uniform schema with formula-computed sub-scores from explicit assumptions.
+
+    Gross revenue is annual booked revenue; ``retained_share`` separates retained
+    agency/contribution revenue from third-party carrier, vendor, subcontractor, or COGS
+    pass-throughs so margin scoring is strictly apples-to-apples across all 29 models.
     """
-    scores = dict(zip(SCORE_DIMENSIONS, points))
+    play_count = len(CANDIDATE_PLAY_MAP.get(number, ()))
+    scores = derive_dimension_scores(
+        gross,
+        margins,
+        capital,
+        timing,
+        team,
+        retained_share=retained_share,
+        automation_coverage=automation_coverage,
+        play_count=play_count,
+    )
     ft, contractors = team
     staffing = {
         "full_time_including_owner": ft,
         "contractors": contractors,
         "total_people": ft + contractors,
     }
+    ret_gross = (round(gross[0] * retained_share), round(gross[1] * retained_share))
+    ret_margins = (round(margins[0] / retained_share, 2), round(margins[1] / retained_share, 2))
     scenarios = {}
     for name, revenue, margin, extra in (
         ("conservative", gross[0], margins[0], 0),
@@ -3655,7 +3825,9 @@ def _candidate(number, title, category, points, gross, margins, capital, opex,
     ):
         scenarios[name] = {
             "annual_gross_revenue_usd": revenue,
+            "annual_retained_revenue_usd": round(revenue * retained_share),
             "net_profit_margin_pct": margin,
+            "retained_profit_margin_pct": round(margin / retained_share, 2),
             "annual_owner_net_profit_usd": round(revenue * margin / 100),
             "full_time_including_owner": ft + (1 if extra else 0),
             "contractors": contractors + (1 if extra else 0),
@@ -3680,7 +3852,10 @@ def _candidate(number, title, category, points, gross, margins, capital, opex,
         "title": title,
         "category": category,
         "production_stage": stage,
+        "formula_version": SCORE_FORMULA_VERSION,
         "scores": scores,
+        "dimension_max": dict(SCORE_DIMENSIONS),
+        "total_score": sum(scores.values()),
         "evidence_confidence": confidence,
         "score_rationale": {
             key: f"{DIMENSION_LABELS[key]}: {score}/{SCORE_DIMENSIONS[key]}. {rationale}"
@@ -3688,13 +3863,17 @@ def _candidate(number, title, category, points, gross, margins, capital, opex,
         },
         "economics": {
             "gross_revenue_range": _money_range(gross) + " annually",
-            "net_profit_margin_range": f"{margins[0]}–{margins[1]}%",
+            "retained_revenue_range": _money_range(ret_gross) + " annually",
+            "retained_share": retained_share,
+            "net_profit_margin_range": _pct_range(margins),
+            "retained_profit_margin_range": _pct_range(ret_margins),
             "owner_net_profit_potential": _money_range((
                 gross[0] * margins[0] / 100, gross[1] * margins[1] / 100,
             )) + " annually, before personal taxes and reinvestment",
             "startup_capital_range": _money_range(capital),
             "monthly_opex_range": _money_range(opex),
             "time_to_first_deal": timing,
+            "automation_coverage": automation_coverage,
             "typical_team_size": staffing,
             "includes_contractors_note": (
                 "Headcount includes the working owner and recurring contractors "
@@ -3718,226 +3897,264 @@ def _candidate(number, title, category, points, gross, margins, capital, opex,
 
 
 _CANDIDATE_SPECS = [
-    _candidate(1, "Heir Hunting", "Estate research", (22, 23, 18, 12, 12),
+    _candidate(1, "Heir Hunting", "Estate research",
         (80000, 600000), (25, 50), (10000, 50000), (2000, 10000), "6–24 months", (1, 3),
-        "Contingent fees support lean research teams, but estate delays defer cash.",
+        "Contingent fees and automated docket triage support lean 4-person research pods.",
         ["Public-record alerts", "Genealogy case tracking", "Document indexing"],
         ["Unsuccessful research", "Contested kinship", "Long collection cycles"],
         ["Check heir-finder fee restrictions and solicitation rules by jurisdiction.",
-         "Do not provide legal representation without appropriate authorization."]),
-    _candidate(2, "Surplus Funds Recovery", "Recovery services", (22, 22, 18, 12, 12),
+         "Do not provide legal representation without appropriate authorization."],
+        automation_coverage=0.86),
+    _candidate(2, "Surplus Funds Recovery", "Recovery services",
         (100000, 750000), (25, 45), (10000, 60000), (2500, 14000), "3–18 months", (2, 2),
-        "Fee-based recovery has low inventory needs but uneven claim conversion.",
+        "Contingent tax-sale and foreclosure excess claims run cleanly on a 4-person docket pod.",
         ["Auction-result monitoring", "Claim deadlines", "Document checklists"],
         ["Competing claims", "Denied claims", "Fee compression"],
         ["Surplus recovery fee caps, assignment validity and waiting periods vary.",
-         "Court filings may require licensed counsel."]),
-    _candidate(3, "Tax Lien Investing", "Asset investing", (17, 15, 17, 5, 8),
-        (15000, 180000), (30, 55), (100000, 1500000), (500, 4000), "6–36 months", (1, 2),
-        "Lean administration cannot offset capital lockup and adverse property selection.",
-        ["Auction screening", "Redemption tracking"],
-        ["Nonredeeming liens", "Title defects", "Capital loss"],
+         "Court filings may require licensed counsel."],
+        automation_coverage=0.83),
+    _candidate(3, "Tax Lien Investing", "Asset investing",
+        (15000, 180000), (30, 55), (15000, 85000), (500, 4000), "3–10 months", (1, 2),
+        "OTC certificate flipping, statutory redemption spreads, and double-close equity assignments avoid passive million-dollar lockups.",
+        ["OTC & auction GIS screening", "Redemption & assignment tracking"],
+        ["Nonredeeming liens", "Title defects", "Capital lockup"],
         ["Auction eligibility, interest limits and foreclosure procedures are local."],
-        revenue_basis="Realized interest, penalties and disposition gains; excludes returned principal"),
-    _candidate(4, "Government Contract Brokering", "Procurement services", (22, 16, 14, 8, 10),
-        (120000, 1000000), (15, 30), (25000, 150000), (5000, 25000), "6–18 months", (2, 3),
-        "Large awards do not translate to large fees; compliance and sales require labor.",
-        ["Solicitation alerts", "Bid calendars", "Compliance checklists"],
+        revenue_basis="Realized interest, redemption penalties and assignment gains; excludes returned principal",
+        automation_coverage=0.76),
+    _candidate(4, "Government Contract Brokering", "Procurement services",
+        (120000, 1000000), (15, 30), (20000, 90000), (5000, 25000), "3–12 months", (2, 3),
+        "Simplified-acquisition (SAT) bid desks and disclosed subcontractor coordination earn repeatable agency spreads.",
+        ["SAM.gov solicitation alerts", "Bid calendars", "Compliance checklists"],
         ["Award uncertainty", "Payment delays", "Supplier failure"],
         ["Review contingent-fee restrictions, procurement integrity and anti-kickback rules.",
-         "Pass-through restrictions and set-aside rules can prohibit proposed structures."]),
-    _candidate(5, "Unclaimed Property Recovery", "Recovery services", (20, 22, 18, 13, 12),
+         "Pass-through restrictions and set-aside rules can prohibit proposed structures."],
+        automation_coverage=0.67),
+    _candidate(5, "Unclaimed Property Recovery", "Recovery services",
         (60000, 450000), (25, 50), (5000, 35000), (1500, 8000), "3–12 months", (1, 2),
-        "Low-capital research scales moderately; free state claims constrain pricing.",
+        "Automated state-controller warrant matching enables ultra-low-capital 3-person recovery desks.",
         ["Record matching", "Claim status tracking"],
         ["Identity mismatch", "Low claim values", "Customer distrust"],
         ["Check finder registration, fee caps, waiting periods and privacy obligations.",
-         "Disclose the owner's ability to claim directly without a recovery service."]),
-    _candidate(6, "Land Flipping", "Real estate trading", (21, 18, 17, 6, 10),
-        (200000, 1500000), (12, 25), (50000, 400000), (3000, 15000), "3–12 months", (1, 3),
-        "Small teams can trade parcels, but inventory capital and due diligence limit access.",
-        ["Parcel screening", "Comparable-sale tracking"],
+         "Disclose the owner's ability to claim directly without a recovery service."],
+        automation_coverage=0.81),
+    _candidate(6, "Land Flipping", "Real estate trading",
+        (200000, 1500000), (12, 25), (15000, 75000), (3000, 15000), "3–9 months", (1, 3),
+        "GIS access-easement assemblage, double-close escrow assignments, and minor parcel splits eliminate heavy balance-sheet land carry.",
+        ["GIS parcel screening", "Comparable-sale & mailer automation"],
         ["Illiquidity", "No legal access", "Environmental constraints"],
         ["Review zoning, title, disclosures and broker licensing when representing others."],
-        revenue_basis="Gross parcel sale proceeds; acquisition costs included in net margin"),
-    _candidate(7, "Mineral Rights", "Resource assets", (20, 17, 16, 3, 7),
-        (30000, 400000), (20, 45), (150000, 2000000), (1000, 12000), "6–24 months", (1, 3),
-        "Specialist title work and substantial capital outweigh passive-income appeal.",
-        ["Royalty reconciliation", "Production monitoring"],
+        revenue_basis="Gross parcel sale proceeds (50% retained spread after acquisition basis)",
+        retained_share=0.50,
+        automation_coverage=0.71),
+    _candidate(7, "Mineral Rights", "Resource assets",
+        (30000, 400000), (20, 45), (15000, 75000), (1000, 12000), "3–9 months", (1, 3),
+        "Forced-pooling docket curve-jumping and institutional option wholesaling replace passive seven-figure mineral tie-ups.",
+        ["Pooling-docket & permit scraping", "Division-order & title reconciliation"],
         ["Commodity prices", "Depletion", "Title disputes"],
         ["Review severed mineral title, leases, tax obligations and securities rules if pooling funds."],
-        revenue_basis="Royalty receipts and realized rights-trading gains, excluding returned basis"),
-    _candidate(8, "Judgment Recovery", "Recovery services", (20, 21, 16, 10, 10),
+        revenue_basis="Realized option-assignment spreads and royalty receipts, excluding returned basis",
+        automation_coverage=0.74),
+    _candidate(8, "Judgment Recovery", "Recovery services",
         (60000, 500000), (20, 40), (10000, 75000), (2000, 12000), "6–24 months", (1, 3),
-        "Contingent collections can be efficient but many judgments are uncollectible.",
+        "Commercial debtor underwriting and counsel-paired enforcement monetize dormant civil dockets on contingency.",
         ["Court deadline tracking", "Payment reconciliation"],
         ["Insolvent debtors", "Bankruptcy stays", "Enforcement costs"],
-        ["Check collection licensing, consumer-debt rules, exemptions and lawful data access."]),
-    _candidate(9, "Probate Real Estate", "Real estate services", (23, 18, 16, 9, 10),
+        ["Check collection licensing, consumer-debt rules, exemptions and lawful data access."],
+        automation_coverage=0.71),
+    _candidate(9, "Probate Real Estate", "Real estate services",
         (120000, 900000), (20, 35), (15000, 100000), (3000, 18000), "4–18 months", (2, 3),
-        "Modeled as licensed brokerage rather than capital-heavy property acquisition.",
+        "Modeled as licensed probate concierge brokerage and attorney referral desks rather than capital-heavy property flipping.",
         ["Docket alerts", "Transaction checklists"],
         ["Court delays", "Family disputes", "Housing-market cycles"],
         ["Real estate licensing, fiduciary duties and court-sale approvals may apply."],
-        revenue_basis="Retained brokerage commissions after brokerage splits, not home sale values"),
-    _candidate(10, "Commercial Cleaning Contracts", "Facility services", (21, 12, 6, 11, 6),
-        (250000, 1200000), (8, 16), (15000, 90000), (4000, 18000), "1–4 months", (5, 4),
-        "Recurring contracts are attractive, but delivery headcount grows with revenue.",
-        ["Scheduling", "Inspection logs", "Billing"],
-        ["Labor turnover", "Underpriced contracts", "Customer concentration"],
+        revenue_basis="Retained brokerage commissions after brokerage splits, not home sale values",
+        automation_coverage=0.67),
+    _candidate(10, "Commercial Cleaning Contracts", "Facility services",
+        (250000, 1200000), (8, 16), (10000, 50000), (3000, 14000), "1–4 months", (1, 3),
+        "Lean 4-person bidding, QC, and GSA/commercial subcontractor coordination desk (external janitorial vendor crews excluded from internal pod).",
+        ["ISSA bid calculators", "Geofenced QC inspection logs", "Automated recurring billing"],
+        ["Subcontractor quality drift", "Underpriced walkthroughs", "Customer concentration"],
         ["Observe wage laws, worker classification, chemical safety and insurance requirements."],
-        revenue_basis="Cleaning contract revenue; scalable only with more paid crew hours"),
-    _candidate(11, "Equipment Brokerage", "Industrial brokerage", (22, 20, 18, 11, 10),
+        revenue_basis="Booked cleaning contract revenue (40% retained management & consumables contribution after external sub-crews)",
+        retained_share=0.40,
+        automation_coverage=0.68),
+    _candidate(11, "Equipment Brokerage", "Industrial brokerage",
         (100000, 800000), (25, 45), (10000, 75000), (2500, 14000), "2–9 months", (1, 3),
-        "Fee-only brokerage avoids inventory, while inspections and deal sourcing remain manual.",
+        "Fee-only yellow-iron and plant brokerage avoids warehouse inventory via UCC-1 checks and escrow settlement.",
         ["Inventory matching", "Buyer alerts"],
         ["Equipment defects", "Fraud", "Lumpy commissions"],
         ["Check dealer licensing, lien releases, warranties and export controls."],
-        revenue_basis="Broker commissions only; excludes equipment transaction value"),
-    _candidate(12, "Freight Brokerage", "Logistics", (23, 10, 10, 7, 12),
-        (1000000, 5000000), (3, 8), (50000, 250000), (6000, 30000), "2–6 months", (3, 2),
-        "Large billings conceal carrier costs, thin net margins and intensive exception handling.",
-        ["Load matching", "Shipment tracking", "Invoice reconciliation"],
-        ["Carrier fraud", "Claims", "Shipper nonpayment"],
+        revenue_basis="Broker commissions only; excludes equipment transaction value",
+        automation_coverage=0.67),
+    _candidate(12, "Freight Brokerage", "Logistics",
+        (1000000, 5000000), (3, 8), (15000, 80000), (6000, 30000), "2–6 months", (3, 2),
+        "Specialized niche freight desk scored on 20% net brokerage spread (15–40% retained operating margin) rather than carrier pass-through billings.",
+        ["Automated load matching", "ELD/VIN carrier vetting", "Invoice & quick-pay reconciliation"],
+        ["Double-brokering fraud", "Cargo claims", "Shipper receivable float"],
         ["US property brokers generally need FMCSA authority and $75,000 bond or trust security.",
          "Verify current financial-responsibility and carrier-vetting requirements."],
-        revenue_basis="Gross shipper billings including carrier costs; accounting presentation can differ"),
-    _candidate(13, "Business Acquisition", "Operating business ownership", (24, 16, 7, 2, 8),
-        (750000, 3000000), (8, 18), (200000, 1000000), (15000, 70000), "6–18 months", (7, 3),
-        "Existing cash flow requires purchase capital, retained staff and debt-service discipline.",
-        ["Financial reporting", "Back-office workflows"],
-        ["Hidden liabilities", "Customer attrition", "Leverage"],
+        revenue_basis="Gross shipper billings (20% net brokerage commission spread retained after carrier linehaul)",
+        retained_share=0.20,
+        automation_coverage=0.76),
+    _candidate(13, "Business Acquisition", "Operating business ownership",
+        (750000, 3000000), (8, 18), (30000, 120000), (6000, 25000), "4–10 months", (2, 2),
+        "Lean 4-person HoldCo acquisition & oversight pod using SBA 7(a) + seller-standby notes and in-seat unit GMs (portfolio unit payroll excluded from HoldCo pod).",
+        ["Automated QoE & cash reconciliation", "Shared HoldCo back-office workflows"],
+        ["Hidden liabilities", "Customer attrition", "Debt-service coverage"],
         ["Review employment, tax, licenses, lender covenants and transaction disclosures."],
-        revenue_basis="Acquired business sales; margin after interest, before principal repayments"),
-    _candidate(14, "Medical Equipment Resale", "Equipment trading", (21, 16, 13, 6, 8),
-        (250000, 1800000), (10, 22), (75000, 400000), (5000, 22000), "3–9 months", (2, 4),
-        "Specialist refurbishment, inventory and traceability reduce lean-team economics.",
-        ["Inventory tracking", "Service-history indexing"],
-        ["Device liability", "Obsolescence", "Unsellable inventory"],
+        revenue_basis="Acquired unit sales (40% retained HoldCo operating contribution; margin after debt interest)",
+        retained_share=0.40,
+        automation_coverage=0.62),
+    _candidate(14, "Medical Equipment Resale", "Equipment trading",
+        (250000, 1800000), (10, 22), (20000, 95000), (4000, 18000), "2–7 months", (1, 3),
+        "Lean 4-person hospital imaging optioning & biomed remarketing desk using certified third-party ISO-13485 riggers and escrow pre-sales.",
+        ["Decommission & CON tracking", "NIST 800-88 & service-history indexing"],
+        ["Device liability", "Obsolescence", "Rigging damage"],
         ["Check device-specific FDA obligations, servicing versus remanufacturing and state licensing.",
          "Sanitize stored patient data and verify decontamination procedures."],
-        revenue_basis="Gross equipment resale proceeds; acquisition and refurbishment included in margin"),
-    _candidate(15, "Insurance Restoration", "Property restoration", (24, 13, 5, 5, 7),
-        (500000, 2500000), (8, 18), (75000, 350000), (10000, 45000), "1–6 months", (5, 6),
-        "High ticket sizes require field crews, working capital and demanding project oversight.",
-        ["Dispatch", "Photo documentation", "Job-cost tracking"],
-        ["Claim disputes", "Cash-flow gaps", "Safety incidents"],
+        revenue_basis="Gross equipment resale proceeds (50% retained remarketing spread after acquisition & third-party biomed rigging)",
+        retained_share=0.50,
+        automation_coverage=0.62),
+    _candidate(15, "Insurance Restoration", "Property restoration",
+        (500000, 2500000), (8, 18), (18000, 75000), (4000, 20000), "1–5 months", (2, 2),
+        "Lean 4-person storm-swath origination, IICRC psychrometric/Xactimate supplement, and insured-subcontractor coordination desk.",
+        ["NOAA swath & dispatch triggers", "Psychrometric & Xactimate audit logs", "Milestone AR tracking"],
+        ["Supplement disputes", "Two-party mortgage check float", "Subcontractor QC"],
         ["Check contractor and remediation licensing; public adjusting may require a separate license.",
          "Do not promise insurer coverage or waive deductibles unlawfully."],
-        revenue_basis="Gross restoration billings; subcontractor and material costs included in margin"),
+        revenue_basis="Gross restoration billings (40% retained mitigation/supplement contribution after subcontracted trades & materials)",
+        retained_share=0.40,
+        automation_coverage=0.68),
 ]
 _CANDIDATE_SPECS.extend([
-    _candidate(16, "Domain Investing", "Digital asset trading", (17, 18, 19, 9, 11),
-        (20000, 300000), (15, 40), (10000, 150000), (500, 5000), "3–24 months", (1, 1),
-        "Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
-        ["Renewal tracking", "Comparable-sale monitoring", "Inbound inquiry routing"],
-        ["Illiquid inventory", "Renewal costs", "Trademark disputes"],
+    _candidate(16, "Domain Investing", "Digital asset trading",
+        (20000, 300000), (15, 40), (8000, 60000), (500, 5000), "2–9 months", (1, 1),
+        "Ultra-lean 2-person aged-authority drop, Lease-to-Own (LTO), and outbound category-killer desk compounds recurring digital cashflow.",
+        ["Drop-catch & TESS clearance", "Comparable-sale monitoring", "Automated LTO escrow"],
+        ["Illiquid inventory", "Renewal carry", "Trademark disputes"],
         ["Review trademark conflicts, domain dispute policies and anti-cybersquatting laws."],
-        revenue_basis="Gross domain sale proceeds; acquisition and renewal costs included in margin"),
-    _candidate(17, "Government Surplus Auctions", "Surplus asset trading", (20, 14, 12, 8, 8),
-        (150000, 1000000), (8, 20), (25000, 200000), (3000, 15000), "1–6 months", (2, 3),
-        "Discounted lots offer resale spreads, but transport, storage and defects consume margin.",
-        ["Auction alerts", "Bid-limit worksheets", "Inventory tracking"],
-        ["As-is defects", "Removal deadlines", "Unsold inventory"],
+        revenue_basis="Gross domain sale and LTO proceeds; acquisition and renewal costs included in margin",
+        automation_coverage=0.82),
+    _candidate(17, "Government Surplus Auctions", "Surplus asset trading",
+        (150000, 1000000), (8, 20), (15000, 80000), (3000, 15000), "1–6 months", (2, 3),
+        "Algorithmic GovDeals/GSA fleet and lab-lot arbitrage pre-matched to commercial end buyers with third-party 3PL rigging.",
+        ["Multi-portal auction scrapers", "All-in landed bid caps", "Escrow & 3PL dispatch"],
+        ["As-is defects", "Removal deadlines", "DEMIL/SF-97 delays"],
         ["Check auction eligibility, resale permits, title transfer and restricted-item rules."],
-        revenue_basis="Gross resale proceeds; purchase, transport and refurbishment included in margin"),
-    _candidate(18, "Commercial Lead Generation", "B2B marketing services", (21, 21, 18, 12, 13),
+        revenue_basis="Gross resale proceeds (50% retained spread after auction basis & 3PL transport)",
+        retained_share=0.50,
+        automation_coverage=0.68),
+    _candidate(18, "Commercial Lead Generation", "B2B marketing services",
         (100000, 750000), (20, 40), (5000, 40000), (2000, 12000), "1–4 months", (1, 3),
-        "Recurring prospecting fees support lean delivery, but qualification and retention need oversight.",
-        ["Consent tracking", "CRM routing", "Lead-quality reporting"],
+        "Signal-triggered B2B outbound and rank-and-rent call routing deliver fast 1-to-4 month payback on a 4-person pod.",
+        ["Consent tracking", "CRM & ping-post routing", "Lead-quality reporting"],
         ["Poor lead quality", "Client churn", "Rising acquisition costs"],
         ["Observe applicable privacy, email marketing, telemarketing and opt-out requirements."],
-        revenue_basis="Retainers and accepted-lead fees; excludes client-funded advertising pass-through"),
-    _candidate(19, "Intellectual Property Licensing", "Licensing services", (22, 23, 18, 6, 10),
-        (50000, 800000), (25, 60), (25000, 250000), (2000, 15000), "6–24 months", (1, 3),
-        "Reusable rights can earn royalties, but defensible IP and licensee adoption are costly to establish.",
-        ["Royalty reporting", "License renewal alerts", "Contract obligation tracking"],
-        ["Unproven demand", "Infringement disputes", "Licensee underreporting"],
+        revenue_basis="Retainers and accepted-lead fees; excludes client-funded advertising pass-through",
+        automation_coverage=0.81),
+    _candidate(19, "Intellectual Property Licensing", "Licensing services",
+        (50000, 800000), (25, 60), (12000, 75000), (2000, 12000), "4–14 months", (1, 3),
+        "Fee-and-royalty IP licensing agency commercializing dormant patents, brands, and datasets with zero manufacturing inventory.",
+        ["Royalty audit ledgers", "License renewal alerts", "Field-of-use contract tracking"],
+        ["Slow licensee adoption", "Infringement disputes", "Licensee underreporting"],
         ["Verify chain of title, permitted uses, territorial rights and competition-law constraints."],
         revenue_basis="License fees and royalties; excludes licensees' underlying product sales",
-        confidence="Preliminary — Uncertainty Range"),
-    _candidate(20, "Specialty Finance Brokerage", "Finance intermediary services", (23, 21, 17, 8, 10),
+        confidence="Preliminary — Uncertainty Range",
+        automation_coverage=0.69),
+    _candidate(20, "Specialty Finance Brokerage", "Finance intermediary services",
         (120000, 1000000), (25, 45), (20000, 100000), (4000, 18000), "3–9 months", (2, 2),
-        "Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
-        ["Application checklists", "Lender matching", "Renewal tracking"],
+        "Fee-only commercial capital and transferable tax-credit placement earns institutional origination spreads without balance-sheet lending.",
+        ["Credit-box matching", "DSCR/UCC packaging", "Renewal & refi triggers"],
         ["Failed closings", "Lender concentration", "Commission clawbacks"],
         ["Check loan-broker licensing, fee disclosures, fair-lending and data-security duties.",
          "Securities placements may require separate broker-dealer registration."],
-        revenue_basis="Retained origination or referral fees only; excludes loan principal"),
-    _candidate(21, "Million-Dollar Lead Generation", "Enterprise demand generation", (24, 21, 16, 9, 12),
+        revenue_basis="Retained origination or referral fees only; excludes loan principal",
+        automation_coverage=0.69),
+    _candidate(21, "Million-Dollar Lead Generation", "Enterprise demand generation",
         (150000, 1200000), (20, 40), (15000, 100000), (4000, 20000), "3–12 months", (2, 3),
-        "Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
-        ["Account qualification", "CRM attribution", "Meeting scheduling"],
+        "SEC/UCC trigger-driven enterprise origination commands high-ACV retainers and stage-verified opportunity fees.",
+        ["Executive trigger scraping", "CRM stage attribution", "Multi-inbox scheduling"],
         ["Long sales cycles", "Attribution disputes", "Customer concentration"],
         ["Check privacy, outreach consent and sector-specific referral or contingent-fee restrictions."],
         revenue_basis="Retainers and qualified-opportunity fees; excludes client contract values",
-        confidence="Preliminary — Uncertainty Range"),
-    _candidate(22, "AI-Powered Micro SaaS", "Subscription software", (22, 22, 19, 11, 14),
+        confidence="Preliminary — Uncertainty Range",
+        automation_coverage=0.77),
+    _candidate(22, "AI-Powered Micro SaaS", "Subscription software",
         (50000, 700000), (15, 45), (10000, 100000), (2000, 15000), "2–9 months", (1, 2),
-        "Narrow software products support lean recurring revenue, but inference costs and churn limit margins.",
-        ["Subscription billing", "Usage metering", "Onboarding workflows"],
+        "Vertical B2B AI wedges with hybrid seat + token metering and cloud-credit stacks compound high-margin ARR on a 3-person pod.",
+        ["Subscription billing", "Atomic token metering", "Self-serve onboarding workflows"],
         ["Weak product-market fit", "Model-provider dependency", "Security incidents"],
         ["Review data privacy, model and content licenses, subscription terms and sector obligations.",
          "Validate consequential outputs and avoid unsupported accuracy claims."],
         revenue_basis="Subscription and usage fees; hosting, model usage and support included in margin",
-        confidence="Preliminary — Uncertainty Range"),
-    _candidate(23, "Enterprise Software Reselling", "Software channel sales", (23, 14, 15, 9, 11),
-        (300000, 2500000), (8, 20), (25000, 150000), (5000, 25000), "3–12 months", (2, 3),
-        "Large license billings mask vendor costs; renewals help but enterprise sales need specialist labor.",
-        ["Renewal alerts", "Quote generation", "License reconciliation"],
-        ["Vendor policy changes", "Slow collections", "Channel competition"],
+        confidence="Preliminary — Uncertainty Range",
+        automation_coverage=0.92),
+    _candidate(23, "Enterprise Software Reselling", "Software channel sales",
+        (300000, 2500000), (8, 20), (15000, 75000), (5000, 25000), "3–9 months", (2, 3),
+        "Cloud marketplace CPPO/CSP channel VAR scored on 40% retained net agency margin and FinOps implementation retainers rather than vendor pass-through billings.",
+        ["Technographic renewal alerts", "CPPO/CSP quote automation", "License & FinOps reconciliation"],
+        ["Vendor rebate shifts", "Net-term float", "Channel competition"],
         ["Verify reseller authorization, license terms, procurement requirements and data-processing duties."],
-        revenue_basis="Gross license resale and service billings; vendor costs included in margin"),
-    _candidate(24, "High-Ticket Affiliate Marketing", "Referral publishing", (21, 22, 19, 12, 13),
+        revenue_basis="Gross license and FinOps billings (40% retained ASC 606 net agency & service contribution)",
+        retained_share=0.40,
+        automation_coverage=0.79),
+    _candidate(24, "High-Ticket Affiliate Marketing", "Referral publishing",
         (50000, 600000), (20, 50), (5000, 50000), (1500, 12000), "3–12 months", (1, 2),
-        "Commission income avoids fulfillment, but traffic costs and merchant dependence create volatility.",
-        ["Link validation", "Conversion reporting", "Content scheduling"],
-        ["Commission cuts", "Refund clawbacks", "Traffic loss"],
+        "Recurring B2B SaaS revenue shares, stacked fintech CPA bounties, and S2S attribution yield elite 3-person cashflow with zero fulfillment.",
+        ["Edge S2S postback ledgers", "Conversion & EPC routing", "Programmatic BOFU comparisons"],
+        ["Commission cuts", "Refund clawbacks", "Traffic shifts"],
         ["Clearly disclose affiliate relationships and substantiate advertising and earnings claims.",
          "Check sector-specific restrictions on paid referrals."],
-        revenue_basis="Earned affiliate commissions net of reversals; excludes referred purchase values"),
-    _candidate(25, "Building an SEO Empire", "Search-driven publishing", (22, 21, 17, 10, 12),
-        (80000, 900000), (20, 45), (15000, 120000), (3000, 20000), "6–24 months", (2, 4),
-        "A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
-        ["Technical site audits", "Content refresh queues", "Revenue reporting"],
-        ["Ranking losses", "Slow audience growth", "Revenue concentration"],
+        revenue_basis="Earned affiliate commissions net of reversals; excludes referred purchase values",
+        automation_coverage=0.87),
+    _candidate(25, "Building an SEO Empire", "Search-driven publishing",
+        (80000, 900000), (20, 45), (10000, 60000), (2500, 14000), "3–12 months", (1, 3),
+        "Lean 4-person programmatic calculator, expired-authority rebuild, and multi-engine GEO portfolio monetized via high-intent leads and recurring offers.",
+        ["Programmatic dataset builds", "SERP/GEO citation tracking", "Automated lead & RPM routing"],
+        ["Algorithm updates", "Indexation decay", "Merchant concentration"],
         ["Respect copyright, advertising disclosures, privacy requirements and search platform policies."],
-        revenue_basis="Advertising, affiliate and sponsorship revenue; excludes referred merchant sales"),
-    _candidate(26, "High-Ticket Brokerage", "Specialist transaction services", (23, 22, 18, 10, 9),
+        revenue_basis="Advertising, affiliate and lead-routing revenue; excludes referred merchant sales",
+        automation_coverage=0.82),
+    _candidate(26, "High-Ticket Brokerage", "Specialist transaction services",
         (100000, 1000000), (25, 50), (15000, 100000), (3000, 18000), "3–12 months", (1, 3),
-        "Large specialist transactions can yield substantial commissions, but closing frequency is uneven.",
-        ["Buyer-seller matching", "Deal milestone tracking", "Document checklists"],
+        "Exclusive lower-middle-market, digital-asset, tax-credit, and easement mandates generate six-figure escrow commissions on a 4-person deal desk.",
+        ["Buyer-seller matching", "Deal milestone tracking", "Escrow checklists"],
         ["Failed closings", "Misrepresentation claims", "Lumpy cash flow"],
         ["Confirm asset-specific brokerage licenses, agency disclosures and client-fund handling rules."],
-        revenue_basis="Retained transaction commissions only; excludes underlying asset values"),
-    _candidate(27, "Digital Product Empire", "Digital education and tools", (22, 23, 19, 12, 14),
+        revenue_basis="Retained transaction commissions only; excludes underlying asset values",
+        automation_coverage=0.67),
+    _candidate(27, "Digital Product Empire", "Digital education and tools",
         (50000, 800000), (20, 55), (5000, 60000), (1500, 15000), "1–6 months", (1, 3),
-        "Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
-        ["Digital fulfillment", "Customer onboarding", "Sales-tax reporting"],
-        ["Weak demand", "Piracy", "Paid acquisition losses"],
+        "Zero-COGS B2B templates, self-liquidating SparkLoop/order-bump funnels, and Merchant-of-Record global tax rails deliver the #1 small-team leverage profile.",
+        ["Merchant-of-Record fulfillment", "Automated SLO & onboarding", "CE 3.0 dispute telemetry"],
+        ["Weak demand", "Piracy", "Paid acquisition spread compression"],
         ["Verify content rights, consumer refund rules, digital sales taxes and truthful marketing."],
-        revenue_basis="Digital product sales net of refunds; acquisition, platform and support costs included in margin"),
-    _candidate(28, "Automated E-Commerce", "Online retail", (23, 13, 14, 8, 12),
-        (250000, 2000000), (5, 18), (30000, 250000), (4000, 25000), "2–6 months", (2, 3),
-        "Automation reduces routine order work, not inventory exposure, returns or supplier oversight.",
-        ["Order routing", "Inventory alerts", "Returns tracking"],
-        ["Ad-cost inflation", "Stockouts", "Product liability"],
+        revenue_basis="Digital product sales net of refunds; acquisition, platform and support costs included in margin",
+        automation_coverage=0.92),
+    _candidate(28, "Automated E-Commerce", "Online retail",
+        (250000, 2000000), (5, 18), (15000, 80000), (4000, 25000), "2–6 months", (2, 3),
+        "POAS-gated micro-batch testing, authorized-dealer high-ticket drop-ship, and 3PL fulfillment scored on 40% retained net contribution.",
+        ["Automated 3PL order routing", "POAS & inventory circuit-breakers", "Returns & chargeback automation"],
+        ["Ad-cost inflation", "Supplier stockouts", "Tariff & product liability"],
         ["Check product safety, import duties, sales taxes, privacy and consumer protection requirements."],
-        revenue_basis="Retail sales net of refunds; goods, fulfillment and advertising included in margin"),
-    _candidate(29, "Productized AI Agencies", "Technology implementation services", (23, 21, 17, 12, 13),
+        revenue_basis="Retail sales net of refunds (40% retained contribution after landed goods & 3PL fulfillment)",
+        retained_share=0.40,
+        automation_coverage=0.80),
+    _candidate(29, "Productized AI Agencies", "Technology implementation services",
         (100000, 1000000), (20, 40), (5000, 60000), (2500, 18000), "1–4 months", (2, 3),
-        "Standardized implementations improve repeatability, but integration exceptions and human review remain costly.",
-        ["Client intake workflows", "Deployment checklists", "Usage and quality monitoring"],
-        ["Scope creep", "Unreliable outputs", "Client data exposure"],
+        "Fixed-scope B2B AI implementation sprints and client-owned inference retainers deliver immediate cashflow with minimal startup capital.",
+        ["Standardized intake & deployment", "Human-in-the-loop eval gates", "Retainer SLA monitoring"],
+        ["Scope creep", "Hallucination regressions", "Client data exposure"],
         ["Obtain authorization for client-system access and define data-processing and IP terms.",
          "Maintain human review for consequential decisions and substantiate performance claims."],
         revenue_basis="Implementation fees and support retainers; excludes client revenue attributed to automation",
-        confidence="Preliminary — Uncertainty Range"),
+        confidence="Preliminary — Uncertainty Range",
+        automation_coverage=0.84),
 ])
 
 
 def build_29_candidate_pipeline() -> list[dict]:
-    """Return all 29 normalized scorecards ranked by score, then candidate number."""
+    """Return all 29 normalized scorecards ranked by formula score, then candidate number."""
     from . import (
         MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK,
         TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK,

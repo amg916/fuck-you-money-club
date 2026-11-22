@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 "
         "Money-to-Manpower Score. Across the volume's 18 mapped plays, the information "
         "edge comes from joining product identity, supplier authority, inventory truth, "
         "and contribution margin before committing cash. This chapter specifies an "
@@ -112,7 +112,7 @@ CHAPTER_8 = {
                     "fresh tariff review before each materially changed import "
                     "order. These are desk operating targets, not provider service "
                     "commitments. Budget each connector against the $4,000–$25,000 "
-                    "monthly operating range and the $30,000–$250,000 startup "
+                    "monthly operating range and the $15,000–$80,000 startup "
                     "capital envelope without assuming every subscription is "
                     "incremental to the scorecard. Preserve a manual fallback "
                     "that can stop sales or release verified orders during an "

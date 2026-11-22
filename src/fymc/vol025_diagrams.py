@@ -42,7 +42,7 @@ VOLUME_025_POSITIONING_ALTERNATIVES: list[dict] = [
         ),
         "audience": (
             "Brokerage founders managing shipper credit exposure and carrier "
-            "payment commitments with $50,000–$250,000 USD in startup capital."
+            "payment commitments with $15,000–$80,000 USD in startup capital."
         ),
         "research_basis": (
             "49 U.S.C. 13906(b) and 49 CFR 387.307 establish property-broker "
@@ -281,9 +281,12 @@ def build_volume_025_diagrams_data() -> list[dict]:
                     -180000.0,
                     (
                         "Illustrative combined payroll, payroll burden, and "
-                        "contractor spending for the three-full-time, "
-                        "two-contractor pod; reconcile actual owner compensation "
-                        "and local labor costs without counting distributions twice."
+                        "contractor spending for the 3 FT + 2 C core pod "
+                        "(five people); reconcile actual owner compensation "
+                        "and local labor costs without counting distributions twice. "
+                        "External carrier/vendor and trade sub-crews belong to "
+                        "direct subcontractor/COGS pass-through, not internal "
+                        "pod headcount."
                     ),
                 ),
                 (
@@ -564,68 +567,94 @@ def build_volume_025_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-startup-capital-45000-reference-plan",
             "stacked_comparison",
-            "Allocate a $150,000 Startup Capital Plan",
-            "Four cash buckets inside the canonical $50,000–$250,000 range.",
+            "Allocate a $45,000 Reference Startup Capital Plan",
+            "Four buckets compare $15,000 lean, $45,000 reference, and $80,000 expanded plans.",
             4,
             "illustrative_model",
             (
-                "USD allocations total $150,000. This illustration uses a "
-                "fully funded $75,000 BMC-85 trust rather than a BMC-84 bond. "
-                "Verify eligible trustee, assets, and current requirements. "
-                "Trust principal remains restricted and cannot also fund "
-                "carrier payments."
+                "USD. Numeric values represent the $45,000 central/reference "
+                "plan within the canonical $15,000–$80,000 startup range; "
+                "value and detail text show the lean and expanded alternatives. "
+                "All three plans assume a $75,000 BMC-84 bond, not a fully "
+                "funded BMC-85 trust. Security allocations cover illustrative "
+                "premium, provider charges, and any required collateral only "
+                "if actual underwriting fits the allowance. Bond face value "
+                "is not cash available to the brokerage. Verify current "
+                "requirements and quotes before launch; restricted collateral "
+                "cannot also fund carrier payments or operating runway."
             ),
             (
-                "$75,000 + $45,000 + $20,000 + $10,000 = $150,000. A bond-based "
-                "plan uses quoted premiums and any required collateral instead "
-                "of assuming $75,000 cash funding. Neither arrangement removes "
-                "the need to fund shipper-to-carrier timing gaps."
+                "Lean: $3,000 + $4,000 + $6,000 + $2,000 = $15,000. "
+                "Reference: $5,000 + $15,000 + $20,000 + $5,000 = $45,000. "
+                "Expanded: $8,000 + $30,000 + $34,000 + $8,000 = $80,000. "
+                "Bucket order is bond security, carrier working capital, "
+                "operating runway, and setup. These launch budgets do not "
+                "fully fund Base-volume payment gaps or guarantee runway "
+                "through the 2–6 month first-deal window; phase spending, "
+                "limit load exposure, or arrange additional funding."
             ),
             [
                 (
-                    "Restricted broker trust security",
-                    "$75,000 allocated; 50% of startup capital",
-                    75000.0,
+                    "Broker bond premium and security allowance",
+                    "Lean $3,000; reference $5,000; expanded $8,000",
+                    5000.0,
                     (
-                        "Fund the illustrated BMC-85 security arrangement "
-                        "separately from operating cash. Track provider charges "
-                        "and any replenishment obligations without treating "
-                        "restricted principal as available working capital."
+                        "Allocate $3,000 of the $15,000 lean plan, $5,000 of "
+                        "the $45,000 reference plan, or $8,000 of the $80,000 "
+                        "expanded plan to quoted BMC-84 premium, provider "
+                        "charges, and any required collateral. These are "
+                        "planning allowances, not guaranteed quotes. If "
+                        "underwriting exceeds the allocation, revise funding "
+                        "before launch; do not substitute a partial BMC-85 "
+                        "trust or count restricted collateral as working cash."
                     ),
                 ),
                 (
                     "Carrier payment working capital",
-                    "$45,000 allocated; 30% of startup capital",
-                    45000.0,
+                    "Lean $4,000; reference $15,000; expanded $30,000",
+                    15000.0,
                     (
-                        "At a 20-day gap and 85% carrier-cost ratio, this "
-                        "supports roughly $966,176 annualized billings before "
-                        "buffers. Base throughput needs about $139,726 for "
-                        "that gap, so shorten terms or secure additional funding."
+                        "Reserve $4,000 of the $15,000 lean plan, $15,000 of "
+                        "the $45,000 reference plan, or $30,000 of the $80,000 "
+                        "expanded plan for carrier-payment timing gaps. Base "
+                        "carrier purchases of $2,550,000 annually require "
+                        "about $139,726 for a 20-day gap before buffers, so "
+                        "none of these allocations supports that exposure. "
+                        "Shorten collection terms, obtain deposits, reduce "
+                        "load volume, or secure additional committed funding."
                     ),
                 ),
                 (
                     "Launch operating runway",
-                    "$20,000 allocated; about 13.3% of capital",
+                    "Lean $6,000; reference $20,000; expanded $34,000",
                     20000.0,
                     (
-                        "Fund lean pre-revenue operations and initial staffing. "
-                        "At $6,000 monthly burn this lasts about 3.3 months, "
-                        "shorter than the six-month first-deal planning boundary; "
-                        "phase hiring or raise the runway allocation."
+                        "Reserve $6,000 of the $15,000 lean plan, $20,000 of "
+                        "the $45,000 reference plan, or $34,000 of the $80,000 "
+                        "expanded plan for pre-revenue operations and initial "
+                        "staffing. At $6,000 monthly burn, these fund about "
+                        "1.0, 3.3, and 5.7 months respectively. The canonical "
+                        "monthly opex range is $6,000–$30,000, so higher burn "
+                        "shortens runway. None guarantees six months; phase "
+                        "hiring and spending or arrange additional funding "
+                        "without double-counting carrier working capital."
                     ),
                 ),
                 (
                     "Setup systems and administration",
-                    "$10,000 allocated; about 6.7% of capital",
-                    10000.0,
+                    "Lean $2,000; reference $5,000; expanded $8,000",
+                    5000.0,
                     (
-                        "Budget registration work, process-agent services, "
-                        "contract preparation, TMS configuration, verification "
-                        "onboarding, and accounting setup. Separate one-time "
-                        "charges from recurring monthly operating expense."
+                        "Allocate $2,000 of the $15,000 lean plan, $5,000 of "
+                        "the $45,000 reference plan, or $8,000 of the $80,000 "
+                        "expanded plan to registration work, process-agent "
+                        "services, contract preparation, TMS configuration, "
+                        "verification onboarding, and accounting setup. "
+                        "Obtain actual quotes and prioritize required launch "
+                        "controls. Keep one-time setup charges separate from "
+                        "bond costs and recurring operating-runway spending."
                     ),
                 ),
             ],

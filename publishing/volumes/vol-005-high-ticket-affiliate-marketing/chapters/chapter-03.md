@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #24 ranks #04 at 87/100, with 35 mapped operator plays. Its engine is earned commission, not the merchant's sales volume. Buy traffic only when mature cohorts show enough cash after reversals to pay media, people, tools, and debt costs. A large payout can conceal weak retention or a long wait for cash. This chapter prices those gaps, compares upfront and recurring deals, and builds an annual profit bridge. The aim is simple: keep every click tied to a cohort, every reserve tied to evidence, and every growth decision tied to funded cash needs.
+Candidate #24 ranks #02 at 92/100, with 35 mapped operator plays. Its engine is earned commission, not the merchant's sales volume. Buy traffic only when mature cohorts show enough cash after reversals to pay media, people, tools, and debt costs. A large payout can conceal weak retention or a long wait for cash. This chapter prices those gaps, compares upfront and recurring deals, and builds an annual profit bridge. The aim is simple: keep every click tied to a cohort, every reserve tied to evidence, and every growth decision tied to funded cash needs.
 
 ### Key Metrics
 

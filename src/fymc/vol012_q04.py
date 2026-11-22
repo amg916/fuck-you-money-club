@@ -13,7 +13,7 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. "
+        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. "
         "Build around earned commissions, not equipment ownership: protect 60% of startup cash, "
         "buy independent evidence, and keep settlement principal outside operating accounts. "
         "This chapter maps seven operating plays: construction mandates, CNC matching, fleet disposition, "

@@ -13,8 +13,8 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an "
-        "82/100 Money-to-Manpower Score across 30 mapped plays. Its economic asset "
+        "Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an "
+        "86/100 Money-to-Manpower Score across 30 mapped plays. Its economic asset "
         "is an enforceable retainer and accepted-opportunity fee, not the enterprise "
         "contract value appearing in a client's pipeline. This chapter reconciles "
         "annual owner profit of $30,000 Conservative, $202,500 Base, and $480,000 "

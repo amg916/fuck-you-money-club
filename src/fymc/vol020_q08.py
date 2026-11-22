@@ -13,8 +13,8 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #20 with a "
-        "70/100 Money-to-Manpower Score: a Disciplined Specialist Play. Its edge "
+        "Candidate #4, Government Contract Brokering, holds Rank #27 with a "
+        "79/100 Money-to-Manpower Score: a High-Leverage Operator Play. Its edge "
         "comes from verified procurement evidence, not a larger contact list. "
         "This chapter maps seven operator plays: solicitation discovery, award "
         "intelligence, prime qualification, supplier discovery, lawful teaming, "
@@ -662,7 +662,7 @@ CHAPTER_8 = {
                     "this test inside the existing scenario cost envelope; "
                     "otherwise the published margin must change, so it "
                     "cannot be presented as the canonical case. Use "
-                    "the $25,000 to $150,000 startup capital range to "
+                    "the $20,000 to $90,000 startup capital range to "
                     "plan setup and runway against the six-to-eighteen-month "
                     "time to first deal. Neither range proves that the "
                     "smallest capital budget covers the longest delay. "
@@ -743,7 +743,7 @@ CHAPTER_8 = {
                     ],
                     [
                         "Runway planning reconciles startup resources with a potentially extended first-deal cycle",
-                        "$25,000 to $150,000 startup capital faces six to eighteen months before first deal",
+                        "$20,000 to $90,000 startup capital faces six to eighteen months before first deal",
                         "Capture lead forecasts cash alongside the supplied $5,000 to $25,000 monthly range",
                         "Model setup, delivery costs, collection timing, and reserves instead of assuming coverage",
                     ],

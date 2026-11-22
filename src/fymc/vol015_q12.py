@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 "
         "Money-to-Manpower Score across 15 mapped plays. Launch the operating system "
         "in thirty days, not a promise of immediate collections: the canonical "
         "time to first deal is six to twenty-four months. This sprint assigns "

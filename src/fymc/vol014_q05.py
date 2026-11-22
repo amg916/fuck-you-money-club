@@ -13,8 +13,8 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, holds Rank #14 among 29 mapped plays "
-        "with a Money-to-Manpower Score of 79/100. Its leverage comes from retained origination "
+        "Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays "
+        "with a Money-to-Manpower Score of 89/100. Its leverage comes from retained origination "
         "and referral fees, not loan principal. Annual owner profit is $30,000 Conservative, "
         "$196,000 Base, and $450,000 Scaled. Newcomers lose capital through conditional commitments, "
         "commission recourse, collateral defects, lender dependence, and unauthorized handling of "

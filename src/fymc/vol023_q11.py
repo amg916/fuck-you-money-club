@@ -13,8 +13,8 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, holds Rank #23 with a Money-to-Manpower "
-        "Score of 63/100: asset selection matters, but transferable evidence determines "
+        "Candidate #7, Mineral Rights, holds Rank #25 with a Money-to-Manpower "
+        "Score of 81/100: asset selection matters, but transferable evidence determines "
         "whether the owner can leave. This chapter maps five operating plays: producing "
         "NMA acquisitions, NPRI acquisitions, royalty reconciliation, pooling-docket "
         "curve-jumping, and institutional flips. Build one accountable full-time owner "
@@ -393,7 +393,7 @@ CHAPTER_11 = {
                     "scorecard does not itemize the difference, so the controller "
                     "must substantiate actual overhead, transaction expenses, and other "
                     "cost classifications before presenting a detailed budget. Acquisition "
-                    "capital of $150,000 to $2,000,000 belongs in investment funding, "
+                    "capital of $15,000 to $75,000 belongs in investment funding, "
                     "not automatically in operating expense. Track liquidity separately "
                     "because six to twenty-four months to a first deal can consume "
                     "cash before royalties arrive. Do not label owner net profit "

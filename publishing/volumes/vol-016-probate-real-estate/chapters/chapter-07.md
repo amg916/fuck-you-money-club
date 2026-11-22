@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower Score. Its 11 mapped plays connect docket sourcing, executor verification, brokerage production, acquisitions screening, attorney relationships, and property-tax appeals without mixing estate proceeds with operator revenue. This chapter specifies the evidence required at every handoff, a six-module SQLite reference implementation, and a worked mature-pipeline cohort that collects $127,500 over 90 days. Five monthly closings retaining $8,500 each support the $510,000 Base annual revenue case. Annual owner net profit remains $24,000 Conservative, $140,250 Base, and $315,000 Scaled. The operating rule is simple: court authority controls the sale, escrow evidence controls completion, and independently matched bank credits control cash reporting.
+Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. Its 11 mapped plays connect docket sourcing, executor verification, brokerage production, acquisitions screening, attorney relationships, and property-tax appeals without mixing estate proceeds with operator revenue. This chapter specifies the evidence required at every handoff, a six-module SQLite reference implementation, and a worked mature-pipeline cohort that collects $127,500 over 90 days. Five monthly closings retaining $8,500 each support the $510,000 Base annual revenue case. Annual owner net profit remains $24,000 Conservative, $140,250 Base, and $315,000 Scaled. The operating rule is simple: court authority controls the sale, escrow evidence controls completion, and independently matched bank credits control cash reporting.
 
 ### Key Metrics
 

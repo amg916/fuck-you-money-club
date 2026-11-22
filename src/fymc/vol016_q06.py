@@ -13,7 +13,7 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
         "Score. This chapter turns 11 mapped plays into an authority-first sourcing "
         "system: docket intelligence, property distress signals, professional referrals, "
         "and executor service demand become verified conversations rather than indiscriminate "

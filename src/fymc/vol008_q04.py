@@ -13,7 +13,7 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 "
         "Money-to-Manpower Score and 54 mapped plays. Build the business around "
         "accepted commercial opportunities, not mailbox counts or client advertising "
         "volume. Reserve 60% of the $5,000–$40,000 opening capital, buy one narrow "

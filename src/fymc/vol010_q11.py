@@ -6,18 +6,18 @@ CHAPTER_11 = {
     "chapter_number": 11,
     "question_number": 11,
     "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 2 FT + 4 C (6 people) -> 3 FT + 5 C (8 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 1 FT + 3 C (4 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
     "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
     "subtitle": "Six-to-Eight-Person Search Publishing Pods, Accrual Cohorts, Copyright Assignments & Evidence-Based Media Exit Pricing",
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 Money-to-Manpower "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 Money-to-Manpower "
         "Score and 30 mapped plays. Convert that breadth into six accountable seats, not "
         "thirty disconnected projects. The Conservative case produces $16,000 annual owner "
         "profit on $80,000 revenue; Base produces $159,250 on $490,000; Scaled produces "
-        "$405,000 on $900,000. Start with 2 FT + 4 C and expand to 3 FT + 5 C only "
+        "$405,000 on $900,000. Start with 1 FT + 3 C and expand to 1 FT + 3 C only "
         "when accepted-output economics support the added capacity. This chapter connects "
         "contractor acceptance criteria, weekly search and revenue scorecards, counterparty "
         "caps, accrual cohorts, and signed copyright assignments. Build books that survive "
@@ -29,19 +29,19 @@ CHAPTER_11 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 owner profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 owner profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 owner profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 owner profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 owner profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 owner profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -85,7 +85,7 @@ CHAPTER_11 = {
                     "Scaled, add a full-time operations and analytics lead to own close preparation, "
                     "capacity planning, and reporting automation, plus a specialist contractor for "
                     "original testing, data acquisition, or vertical expertise. That produces exactly "
-                    "3 FT + 5 C. Do not multiply the entire pod by the number of domains. Shared "
+                    "1 FT + 3 C. Do not multiply the entire pod by the number of domains. Shared "
                     "technical systems, research libraries, and commercial reporting create leverage; "
                     "independent domain-level accountability prevents a profitable site from concealing "
                     "another site's persistent losses."
@@ -96,14 +96,14 @@ CHAPTER_11 = {
                     "total annual expenses. Base implies $330,750, and Scaled implies $495,000. "
                     "Those totals include every expense within the scenario's profit definition; "
                     "contractor budgets cannot be added afterward without reducing the stated profit. "
-                    "The published $3,000–$20,000 monthly operating range is a planning reference, "
+                    "The published $2,500–$14,000 monthly operating range is a planning reference, "
                     "not an all-in ceiling consistent with every annual case: Base and Scaled "
                     "average $27,562.50 and $41,250 in implied monthly expenses. Resolve scope "
                     "differences explicitly in the model. Conservative cannot credibly purchase two "
                     "ordinary market-rate full-time salaries plus substantial contractor capacity from "
                     "$64,000. Document any founder labor, limited contractor allocations, or separately "
                     "funded runway; do not describe unpaid effort as transferable earnings. The "
-                    "$15,000–$120,000 startup capital range and six-to-twenty-four-month first-deal "
+                    "$10,000–$60,000 startup capital range and six-to-twenty-four-month first-deal "
                     "window make liquidity planning material. Maintain a thirteen-week cash forecast "
                     "and a twelve-month capacity budget. Add the two Scaled seats only after "
                     "observed acceptance throughput, collection behavior, and contribution forecasts "
@@ -215,7 +215,7 @@ CHAPTER_11 = {
                     "Run a thirty-minute Monday meeting: inspect anomalies, identify the binding "
                     "constraint, authorize the next batch, and assign one owner and deadline "
                     "to each exception. Across the thirty-play register, distinguish active, "
-                    "queued, and deliberately paused work so the six-person pod is not "
+                    "queued, and deliberately paused work so the four-person pod is not "
                     "committed to thirty simultaneous initiatives. Contractor classification "
                     "also depends on the actual relationship. The Fair Labor Standards Act's "
                     "employee definitions in 29 U.S.C. section 203 and applicable state rules "
@@ -579,7 +579,7 @@ CHAPTER_11 = {
     "pull_quote": "A buyer pays for earnings that survive your absence, not traffic that requires your constant rescue.",
     "diagram_id": "diag-06",
     "action_checklist": [
-        "Assign all thirty mapped plays to the six-person pod, with one accountable owner, acceptance artifact, capacity estimate, and economic metric per play.",
+        "Assign all thirty mapped plays to the four-person pod, with one accountable owner, acceptance artifact, capacity estimate, and economic metric per play.",
         "Issue scoped contractor purchase orders with accepted-unit pricing, two-business-day editorial review, three-business-day corrections, and explicit payment terms.",
         "Publish the weekly scorecard from retained Search Console, analytics, workflow, and partner evidence, showing freshness and unresolved reconciliation differences.",
         "Close monthly accrual books by domain and cohort, separate merchant sales from operator revenue, and enforce the 25% counterparty concentration policy.",

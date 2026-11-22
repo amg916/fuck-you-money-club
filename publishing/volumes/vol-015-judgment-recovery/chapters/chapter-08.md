@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score. Its information advantage comes from joining court events, entity identifiers, recorded liens, and payment evidence without confusing a search result with an executable recovery. This chapter connects 15 mapped plays to a source-ranked research waterfall, an evidence-preserving pipeline, and a tightly bounded tax-credit origination adjacency. The canonical annual owner profit cases are $12,000 Conservative, $84,000 Base, and $200,000 Scaled; recognized service fees, never judgment balances or client asset values, drive those cases. Buy fewer speculative reports, refresh critical records at the moment of action, and route disputed identity, bankruptcy, priority, and credit eligibility questions to the appropriate specialist before money or process moves.
+Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score. Its information advantage comes from joining court events, entity identifiers, recorded liens, and payment evidence without confusing a search result with an executable recovery. This chapter connects 15 mapped plays to a source-ranked research waterfall, an evidence-preserving pipeline, and a tightly bounded tax-credit origination adjacency. The canonical annual owner profit cases are $12,000 Conservative, $84,000 Base, and $200,000 Scaled; recognized service fees, never judgment balances or client asset values, drive those cases. Buy fewer speculative reports, refresh critical records at the moment of action, and route disputed identity, bankruptcy, priority, and credit eligibility questions to the appropriate specialist before money or process moves.
 
 ### Key Metrics
 

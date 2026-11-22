@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score. "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score. "
         "This chapter gives the volume's 15 mapped plays a shared automation architecture: "
         "authorized docket ingestion, evidence-linked LLM extraction, reviewed deadline calculations, "
         "payment reconciliation, and creditor referral loops. Target 70%+ less repetitive handling "

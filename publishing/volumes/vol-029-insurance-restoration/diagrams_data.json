@@ -92,7 +92,7 @@
       "chapter_number": 3,
       "epistemic_tag": "illustrative_model",
       "assumptions_note": "Annual USD. First bar is opening revenue; four negative bars are cost deductions; the sixth bar is the closing total, not an additional cash inflow. Cost allocations are illustrative; canonical scenario revenue and net profit remain fixed.",
-      "caption": "Conservative: $500,000 × 8% = $40,000 with 5 FT + 6 C. Base: $1,500,000 × 13.0% = $195,000 with 5 FT + 6 C. Scaled: $2,500,000 × 18% = $450,000 with 6 FT + 7 C.",
+      "caption": "Conservative: $500,000 × 8% = $40,000 with 2 FT + 2 C. Base: $1,500,000 × 13.0% = $195,000 with 2 FT + 2 C. Scaled: $2,500,000 × 18% = $450,000 with 3 FT + 3 C.",
       "stages": [
         {
           "label": "Gross restoration billings",
@@ -104,13 +104,13 @@
           "label": "Subcontractors and materials",
           "value": "−$795,000 direct costs; 53%",
           "numeric_value": -795000.0,
-          "detail": "Charge actual contractor invoices and consumed materials to jobs. Six core contractor seats are capacity relationships, not six employee salaries."
+          "detail": "Charge actual contractor invoices and consumed materials to jobs. The 2 FT + 2 C core pod includes two individual contractor seats, not employee salaries. External vendor and trade sub-crews are charged to direct subcontractor/COGS pass-through and are not included in internal pod headcount."
         },
         {
           "label": "Employee payroll and burden",
           "value": "−$270,000 employee costs; 18%",
           "numeric_value": -270000.0,
-          "detail": "Illustrative loaded annual payroll for five full-time seats averages $54,000 per seat, including the working owner-manager seat where applicable."
+          "detail": "Illustrative loaded annual payroll for the two full-time seats in the 2 FT + 2 C core pod averages $135,000 per FT seat, including the working owner-manager seat where applicable."
         },
         {
           "label": "Field operating costs",
@@ -211,128 +211,86 @@
       ]
     },
     {
-      "diagram_id": "diag-06-core-and-scaled-pod",
+      "diagram_id": "diag-06-four-core-six-scaled-pod",
       "chart_type": "org_architecture",
-      "title": "Eleven Core Seats, Thirteen at Scale",
-      "subtitle": "Five employees plus six contractors; add one of each for scale.",
+      "title": "Four Core Seats, Six at Scale",
+      "subtitle": "2 FT + 2 C core pod; add 1 FT + 1 C for a 3 FT + 3 C scaled pod.",
       "chapter_number": 11,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values show core-seat occupancy: eleven values of one and two expansion values of zero. Activating both expansion seats produces 6 FT + 7 C. Contractor seats represent individual capacity commitments, not guaranteed full-time employee equivalents.",
-      "caption": "Core pod supports the Conservative and Base scenarios; the expanded pod belongs to the Scaled scenario. Verify worker classification from actual working arrangements.",
+      "assumptions_note": "Numeric values show core-seat occupancy: four values of one and two expansion values of zero. The core comprises 2 FT + 2 C; activating both expansion seats produces 3 FT + 3 C, six people total. Contractor seats represent individual capacity commitments, not guaranteed full-time employee equivalents. External vendor and trade sub-crews are direct subcontractor/COGS pass-through, not internal pod headcount.",
+      "caption": "Conservative and Base scenarios use the four-person core; the Scaled scenario uses all six seats. Consolidate operating responsibilities within the core before expansion, and verify worker classification from actual working arrangements.",
       "stages": [
         {
-          "label": "FT 1: Owner-manager",
-          "value": "Core employee seat; commercial accountability",
+          "label": "FT 1: Owner-manager and estimator",
+          "value": "Core employee seat; commercial and scope accountability",
           "numeric_value": 1.0,
-          "detail": "Own pricing, cash forecasting, jurisdiction selection, insurance relationships, and escalation of contractual disputes outside the field team's authority."
+          "detail": "Own pricing, cash forecasting, jurisdiction selection, Xactimate estimates, measured quantities, and supplement support. Escalate contractual disputes appropriately without negotiating policy coverage or claim settlement."
         },
         {
-          "label": "FT 2: Estimator",
-          "value": "Core employee seat; documented scope",
+          "label": "FT 2: Project and mitigation lead",
+          "value": "Core employee seat; field delivery, safety, and quality",
           "numeric_value": 1.0,
-          "detail": "Maintain Xactimate estimates, measured quantities, photo references, and supplement support without negotiating policy coverage or claim settlement."
-        },
-        {
-          "label": "FT 3: Project manager",
-          "value": "Core employee seat; delivery control",
-          "numeric_value": 1.0,
-          "detail": "Schedule trades, manage customer change orders, review daily job costs, and verify completion before milestone billing."
-        },
-        {
-          "label": "FT 4: Mitigation lead",
-          "value": "Core employee seat; technical field lead",
-          "numeric_value": 1.0,
-          "detail": "Direct extraction and drying, maintain psychrometric records, verify equipment placement, and escalate contamination or structural hazards."
-        },
-        {
-          "label": "FT 5: Dispatch and receivables",
-          "value": "Core employee seat; scheduling and collections",
-          "numeric_value": 1.0,
-          "detail": "Coordinate arrivals, maintain authorization records, submit invoices, track aging, and reconcile cleared payments to individual job balances."
+          "detail": "Coordinate dispatch and trades, direct extraction and drying, verify psychrometric records and hazard controls, review job costs, and confirm completion before billing. Maintain required qualifications for assigned work."
         },
         {
           "label": "C 1: Mitigation technician",
-          "value": "Core contractor seat; extraction capacity",
+          "value": "Core contractor seat; extraction and monitoring capacity",
           "numeric_value": 1.0,
-          "detail": "Perform assigned extraction and equipment handling within documented qualifications and the project's hazard-control plan."
+          "detail": "Perform agreed extraction, equipment handling, moisture monitoring, and containment tasks within documented qualifications and the project's hazard-control plan. Record equipment checks and removal evidence."
         },
         {
-          "label": "C 2: Mitigation technician",
-          "value": "Core contractor seat; monitoring capacity",
+          "label": "C 2: Dispatch and receivables coordinator",
+          "value": "Core contractor seat; scheduling and billing support",
           "numeric_value": 1.0,
-          "detail": "Support moisture monitoring, equipment checks, containment tasks, and removal documentation under the agreed project scope."
+          "detail": "Coordinate arrivals, maintain authorization records, prepare invoices, track aging, and reconcile cleared payments under the agreed service scope. The owner-manager retains commercial accountability and approval authority."
         },
         {
-          "label": "C 3: Reconstruction carpenter",
-          "value": "Core contractor seat; demolition and framing",
-          "numeric_value": 1.0,
-          "detail": "Execute authorized selective demolition and framing after required hazard assessments, permits, and scope boundaries are established."
-        },
-        {
-          "label": "C 4: Reconstruction finisher",
-          "value": "Core contractor seat; interior restoration",
-          "numeric_value": 1.0,
-          "detail": "Deliver drywall, trim, and finish repairs against measured quantities, approved customer changes, and documented quality checks."
-        },
-        {
-          "label": "C 5: Electrical specialist",
-          "value": "Core contractor seat; qualified electrical work",
-          "numeric_value": 1.0,
-          "detail": "Inspect and restore affected electrical systems within applicable licensing, permit, inspection, and safe-isolation requirements."
-        },
-        {
-          "label": "C 6: Plumbing specialist",
-          "value": "Core contractor seat; qualified plumbing work",
-          "numeric_value": 1.0,
-          "detail": "Address authorized plumbing repairs, record source correction evidence, and separate repair charges from mitigation equipment charges."
-        },
-        {
-          "label": "FT 6: Safety and quality lead",
+          "label": "FT 3: Safety and quality lead",
           "value": "Expansion employee seat; core occupancy zero",
           "numeric_value": 0.0,
-          "detail": "Activate at scale to audit hazard controls, training, field records, and rework. Core operations retain these responsibilities before this hire."
+          "detail": "Activate at scale to audit hazard controls, training, field records, and rework. The project and mitigation lead retains these responsibilities before this hire."
         },
         {
-          "label": "C 7: Flooring specialist",
+          "label": "C 3: Reconstruction coordinator",
           "value": "Expansion contractor seat; core occupancy zero",
           "numeric_value": 0.0,
-          "detail": "Activate at scale for substrate preparation and floor installation, with moisture acceptance criteria documented before closing assemblies."
+          "detail": "Activate at scale to coordinate qualified trade vendors, approved repair scopes, moisture acceptance criteria, and completion records. External trade sub-crews remain direct subcontractor/COGS pass-through, not pod seats."
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-stack",
+      "diagram_id": "diag-07-45000-reference-startup-capital",
       "chart_type": "stacked_comparison",
-      "title": "Startup Capital: Preserve Cash Before Expanding Equipment",
-      "subtitle": "Four buckets total $150,000 within the $75,000–$350,000 range.",
+      "title": "Startup Capital: A $45,000 Reference Plan",
+      "subtitle": "Four buckets total $45,000 within the $18,000–$75,000 USD range.",
       "chapter_number": 4,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values encode the $150,000 reference allocation in USD. Details also provide complete $75,000 lean and $350,000 expanded allocations. Startup capital is funding capacity, not revenue or an immediate operating expense.",
-      "caption": "Lean: $25,000 + $20,000 + $10,000 + $20,000 = $75,000. Reference: $60,000 + $40,000 + $20,000 + $30,000 = $150,000. Expanded: $150,000 + $90,000 + $40,000 + $70,000 = $350,000.",
+      "assumptions_note": "Numeric values encode the $45,000 central/reference startup allocation in USD. Details also provide complete $18,000 lean and $75,000 expanded allocations across the same four buckets. Startup capital is funding capacity, not revenue or an immediate operating expense. Choose equipment access and job commitments to fit available funding.",
+      "caption": "Lean: $7,000 + $5,000 + $2,000 + $4,000 = $18,000. Reference: $18,000 + $12,000 + $6,000 + $9,000 = $45,000. Expanded: $30,000 + $20,000 + $10,000 + $15,000 = $75,000.",
       "stages": [
         {
           "label": "Working-capital reserve",
-          "value": "$60,000 reference allocation; 40.0%",
-          "numeric_value": 60000.0,
-          "detail": "Lean $25,000; reference $60,000; expanded $150,000. Fund receivable delays and job commitments. At $42,500 monthly Base operating costs, $60,000 covers about 1.41 months before variable direct job costs."
+          "value": "$18,000 reference allocation; 40.0%",
+          "numeric_value": 18000.0,
+          "detail": "Lean $7,000; reference $18,000; expanded $30,000. Fund receivable delays and job commitments. Model cash needs against the $4,000–$20,000 monthly operating expense planning range and separately fund variable direct job costs; a reserve does not guarantee runway through the 1–5 month time-to-first-deal window."
         },
         {
           "label": "Mitigation equipment",
-          "value": "$40,000 reference allocation; 26.7%",
-          "numeric_value": 40000.0,
-          "detail": "Lean $20,000; reference $40,000; expanded $90,000. Prioritize extraction, air movement, dehumidification, moisture meters, protective equipment, and calibrated measurement tools; rent overflow capacity."
+          "value": "$12,000 reference allocation; 26.7%",
+          "numeric_value": 12000.0,
+          "detail": "Lean $5,000; reference $12,000; expanded $20,000. Prioritize extraction, air movement, dehumidification, moisture meters, protective equipment, and calibrated measurement tools. Use rental access or suitable used equipment where needed and rent overflow capacity."
         },
         {
           "label": "Vehicle and mobilization setup",
-          "value": "$20,000 reference allocation; 13.3%",
-          "numeric_value": 20000.0,
-          "detail": "Lean $10,000; reference $20,000; expanded $40,000. Fund vehicle deposits or acquisitions, secure storage, load restraint, and initial mobilization equipment; ongoing vehicle costs remain operating expenses."
+          "value": "$6,000 reference allocation; 13.3%",
+          "numeric_value": 6000.0,
+          "detail": "Lean $2,000; reference $6,000; expanded $10,000. Fund vehicle rental or lease deposits, secure storage, load restraint, and initial mobilization equipment. Lean deployment assumes access to a suitable existing or rented vehicle; ongoing costs remain operating expenses."
         },
         {
           "label": "Business and technical setup",
-          "value": "$30,000 reference allocation; 20.0%",
-          "numeric_value": 30000.0,
-          "detail": "Lean $20,000; reference $30,000; expanded $70,000. Fund licensing, training, insurance deposits, estimating setup, dispatch configuration, bookkeeping systems, and initial referral development."
+          "value": "$9,000 reference allocation; 20.0%",
+          "numeric_value": 9000.0,
+          "detail": "Lean $4,000; reference $9,000; expanded $15,000. Fund licensing, training, insurance deposits, estimating setup, dispatch configuration, bookkeeping systems, and initial referral development. Limit launch scope to work supported by funded credentials and safeguards."
         }
       ]
     },
@@ -343,7 +301,7 @@
       "subtitle": "Four weekly milestones establish evidence, capacity, and cash controls.",
       "chapter_number": 12,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are milestone end days. The canonical time to first deal is 1–6 months; this sprint establishes readiness and does not assume a paid job within thirty days. Monthly operating costs span $10,000–$45,000 depending on deployment.",
+      "assumptions_note": "Numeric values are milestone end days. The canonical time to first deal is 1–5 months; this sprint establishes readiness and does not assume a paid job within thirty days. Monthly operating costs span $4,000–$20,000 depending on deployment.",
       "caption": "Use simulated job files until authorized customer work is available; never fabricate loss evidence, invoices, or insurer responses.",
       "stages": [
         {
@@ -356,7 +314,7 @@
           "label": "Days 8-14",
           "value": "Pod, equipment, and safety readiness",
           "numeric_value": 14.0,
-          "detail": "Assign five employee and six contractor core roles, verify qualifications and worker classification, secure equipment access, and document hazard assessment, respiratory protection, and emergency escalation procedures."
+          "detail": "Assign two employee and two contractor core roles, verify qualifications and worker classification, secure equipment access, and document hazard assessment, respiratory protection, and emergency escalation procedures."
         },
         {
           "label": "Days 15-21",

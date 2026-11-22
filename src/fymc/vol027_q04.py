@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($200,000–$1,000,000 USD) and configure a lean, low-opex ($15,000–$70,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($30,000–$120,000 USD) and configure a lean, low-opex ($6,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First ETA Capital, SBA and Seller-Note Structures, Twelve Software Layers, and Verified Closing Readiness",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a 57/100 Money-to-Manpower "
+        "Candidate #13, Business Acquisition, ranks #17 with a 86/100 Money-to-Manpower "
         "Score: the constraint is capital and operating labor, not software access. "
         "This chapter maps seven operator plays: reserve-first capitalization, QoE-led "
         "price discipline, SBA and seller-note structuring, aged-entity and tradeline "
@@ -31,19 +31,19 @@ CHAPTER_4 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; not acquisition financing proceeds",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; not purchase consideration",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; not financing capacity",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -54,7 +54,7 @@ CHAPTER_4 = {
                 (
                     "Play one, reserve-first capitalization, starts with a sources-and-uses "
                     "schedule that distinguishes buyer cash from purchase price. Allocate "
-                    "55% of the $200,000–$1,000,000 startup envelope to working-capital and "
+                    "55% of the $30,000–$120,000 startup envelope to working-capital and "
                     "liquidity reserves before bidding. The three illustrative budgets below "
                     "sum to $200,000, $600,000, and $1,000,000; they are funding envelopes, "
                     "not additional scorecard scenarios. Keep reserves in separately identified "

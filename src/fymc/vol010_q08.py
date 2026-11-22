@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. Its information edge comes "
         "from reproducible evidence, not bulk scraping or unverifiable ranking folklore. "
         "This chapter connects official economic datasets, ownership records, search "
@@ -31,19 +31,19 @@ CHAPTER_8 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -294,14 +294,14 @@ CHAPTER_8 = {
                     "remain 2 FT plus 4 C, 2 FT plus 4 C, and 3 FT plus "
                     "5 C respectively. These staffing labels do not prove that "
                     "market-rate payroll fits every scenario; build a compensation "
-                    "bridge before committing hires. Likewise, the stated $3,000–$20,000 "
+                    "bridge before committing hires. Likewise, the stated $2,500–$14,000 "
                     "monthly opex range is not automatically the complete annual cost "
                     "base: identify labor, acquisition, distribution, and other expenses "
                     "without double counting. A $600 monthly tool package costs "
                     "$7,200 annually, or 9% of Conservative revenue before anyone "
-                    "uses it. Keep the $15,000–$120,000 startup capital range distinct "
+                    "uses it. Keep the $10,000–$60,000 startup capital range distinct "
                     "from recurring expense and reserve runway for the stated "
-                    "6–24 months to a first deal. Faster ingestion cannot accelerate "
+                    "3–12 months to a first deal. Faster ingestion cannot accelerate "
                     "audience trust on command."
                 ),
             ],

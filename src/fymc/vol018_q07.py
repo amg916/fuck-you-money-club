@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
         "This chapter maps six operator plays: county screening, owner sourcing, access-cleared "
         "vacant resale, buildable infill, minor subdivision, and title-insured disposition. "
         "A one-full-time-owner, three-contractor pod runs evidence-backed acquisitions rather "
@@ -850,7 +850,7 @@ def self_test():
                     "three to twelve months. County selection, contractor onboarding, buyer discovery, "
                     "and seller conversations begin before day one; acquisition-ready opportunities "
                     "enter the illustrated quarter. Opening unrestricted cash is $150,000, within "
-                    "the $50,000 to $400,000 startup range, and opening parcel inventory is zero. "
+                    "the $15,000 to $75,000 startup range, and opening parcel inventory is zero. "
                     "Each monthly lead cohort contains 120 researched records: ninety fail desktop "
                     "screening, twenty of the thirty survivors fail contact-stage qualification, "
                     "seven of the remaining ten fail offer underwriting, and two of three offers "

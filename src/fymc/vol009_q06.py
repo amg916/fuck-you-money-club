@@ -13,7 +13,7 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an 82/100 "
+        "Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an 86/100 "
         "Money-to-Manpower Score across a volume containing 30 mapped plays. The sourcing "
         "advantage is evidence of a funded buying event, not a larger contact database. "
         "Build a narrow account universe from procurement calendars, public filings, "

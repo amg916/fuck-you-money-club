@@ -5,11 +5,11 @@
   "category": "Finance intermediary services",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 23,
-    "profit_margin_potential": 21,
-    "team_efficiency": 17,
-    "startup_accessibility": 8,
-    "automation_potential": 10
+    "revenue_potential": 24,
+    "profit_margin_potential": 23,
+    "team_efficiency": 19,
+    "startup_accessibility": 11,
+    "automation_potential": 12
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 79,
-  "tier_label": "High-Leverage Operator Play",
+  "total_score": 89,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 76,
-    "high": 82
+    "low": 86,
+    "high": 92
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 23/25. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
-    "profit_margin_potential": "Profit Margin Potential: 21/25. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
-    "team_efficiency": "Team Efficiency: 17/20. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
-    "startup_accessibility": "Startup Accessibility: 8/15. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale.",
-    "automation_potential": "Automation Potential: 10/15. Fee-only placement avoids lending capital, but underwriting coordination and licensing constrain scale."
+    "revenue_potential": "Revenue Potential: 24/25. Fee-only commercial capital and transferable tax-credit placement earns institutional origination spreads without balance-sheet lending.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. Fee-only commercial capital and transferable tax-credit placement earns institutional origination spreads without balance-sheet lending.",
+    "team_efficiency": "Team Efficiency: 19/20. Fee-only commercial capital and transferable tax-credit placement earns institutional origination spreads without balance-sheet lending.",
+    "startup_accessibility": "Startup Accessibility: 11/15. Fee-only commercial capital and transferable tax-credit placement earns institutional origination spreads without balance-sheet lending.",
+    "automation_potential": "Automation Potential: 12/15. Fee-only commercial capital and transferable tax-credit placement earns institutional origination spreads without balance-sheet lending."
   },
   "economics": {
     "gross_revenue_range": "$120,000–$1,000,000 USD annually",
+    "retained_revenue_range": "$120,000–$1,000,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "25–45%",
+    "retained_profit_margin_range": "25–45%",
     "owner_net_profit_potential": "$30,000–$450,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$20,000–$100,000 USD",
     "monthly_opex_range": "$4,000–$18,000 USD",
     "time_to_first_deal": "3–9 months",
+    "automation_coverage": 0.69,
     "typical_team_size": {
       "full_time_including_owner": 2,
       "contractors": 2,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 120000,
+      "annual_retained_revenue_usd": 120000,
       "net_profit_margin_pct": 25,
+      "retained_profit_margin_pct": 25.0,
       "annual_owner_net_profit_usd": 30000,
       "full_time_including_owner": 2,
       "contractors": 2,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 560000.0,
+      "annual_retained_revenue_usd": 560000,
       "net_profit_margin_pct": 35.0,
+      "retained_profit_margin_pct": 35.0,
       "annual_owner_net_profit_usd": 196000,
       "full_time_including_owner": 2,
       "contractors": 2,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1000000,
+      "annual_retained_revenue_usd": 1000000,
       "net_profit_margin_pct": 45,
+      "retained_profit_margin_pct": 45.0,
       "annual_owner_net_profit_usd": 450000,
       "full_time_including_owner": 3,
       "contractors": 3,
@@ -81,9 +91,9 @@
     }
   },
   "automation_levers": [
-    "Application checklists",
-    "Lender matching",
-    "Renewal tracking"
+    "Credit-box matching",
+    "DSCR/UCC packaging",
+    "Renewal & refi triggers"
   ],
   "key_risks": [
     "Failed closings",

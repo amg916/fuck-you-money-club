@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, holds Rank #12 with an 81/100 Money-to-Manpower "
+        "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 Money-to-Manpower "
         "Score because disciplined intermediaries monetize difficult transfers without owning "
         "the machines. This chapter maps seven operating plays: seller disposition, buyer "
         "sourcing, fleet aggregation, CNC replacement sourcing, lien-coordinated sales, export "

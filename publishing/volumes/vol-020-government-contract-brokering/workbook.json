@@ -141,7 +141,7 @@
           "name": "Startup capital and weekly float requirement",
           "type": "textarea",
           "prompt": "Set starting capital within the canonical startup range and forecast weekly collections, payroll, contractor payments, fixed overhead, and setup costs. Calculate peak cumulative cash deficit and remaining buffer, keeping borrowing proceeds separate from revenue.",
-          "example": "The launch uses $120,000 starting capital, within the $25,000 to $150,000 range. Setup consumes $18,000. A ten-week forecast contains $70,000 outflows and $25,000 collections, leaving $57,000 cash: $120,000 less $18,000 less $45,000. Reserving $20,000 for contingencies leaves $37,000 available above that buffer."
+          "example": "The launch uses $120,000 starting capital, within the $20,000 to $90,000 range. Setup consumes $18,000. A ten-week forecast contains $70,000 outflows and $25,000 collections, leaving $57,000 cash: $120,000 less $18,000 less $45,000. Reserving $20,000 for contingencies leaves $37,000 available above that buffer."
         },
         {
           "name": "Collection delay and supplier-failure stress",
@@ -153,7 +153,7 @@
           "name": "Economic decision and funding commitments",
           "type": "textarea",
           "prompt": "State the accepted pricing floor, capital source, collection assumptions, budget owner, and conditions for adding capacity. Identify which scenario is being pursued and distinguish an annual steady-state model from first-year timing and cash availability.",
-          "example": "Management pursues Base as a steady-state target, not a promise of first-year collections. The expected first-deal window remains 6 to 18 months. Pricing below $20,000 requires a revised hour budget. Additional contractor hours require signed client scope and a forecast retaining at least $20,000 unrestricted operating cash."
+          "example": "Management pursues Base as a steady-state target, not a promise of first-year collections. The expected first-deal window remains 3 to 12 months. Pricing below $20,000 requires a revised hour budget. Additional contractor hours require signed client scope and a forecast retaining at least $20,000 unrestricted operating cash."
         }
       ],
       "completion_gate": "The finance owner reconciles all three canonical scenarios, verifies that only earned service fees enter revenue, documents the Conservative staffing affordability gap, and signs a weekly cash forecast with funded reserves and explicit stop-work thresholds."
@@ -407,7 +407,7 @@
           "name": "Launch thesis and canonical positioning",
           "type": "textarea",
           "prompt": "State the selected vertical, operator role, initial service, capital commitment, and canonical positioning. Record the score and component scores accurately, while separating the series ranking from your own opportunity-level pursuit criteria.",
-          "example": "Volume 020 covers Candidate #4, Government Contract Brokering, ranked #20 of 29. Its 70/100 score comprises 22 revenue, 16 margin, 14 team efficiency, eight startup accessibility, and ten automation points. The launch positions a facilities bid desk as a Disciplined Specialist Play with $120,000 committed starting capital."
+          "example": "Volume 020 covers Candidate #4, Government Contract Brokering, ranked #20 of 29. Its 79/100 score comprises 22 revenue, 16 margin, 14 team efficiency, eight startup accessibility, and ten automation points. The launch positions a facilities bid desk as a High-Leverage Operator Play with $120,000 committed starting capital."
         },
         {
           "name": "Days 1 through 7: foundation sprint",

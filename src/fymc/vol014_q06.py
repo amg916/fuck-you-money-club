@@ -13,8 +13,8 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped "
-        "plays with a 79/100 Money-to-Manpower Score. The sourcing advantage is "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped "
+        "plays with a 89/100 Money-to-Manpower Score. The sourcing advantage is "
         "timing: identify a documented financing constraint before a borrower "
         "starts broadcasting applications. Build around UCC refinance triggers, "
         "equipment vendors, receivables advisers, and tightly bounded payment "

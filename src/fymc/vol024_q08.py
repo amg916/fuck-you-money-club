@@ -14,7 +14,7 @@ CHAPTER_8 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
-        "62/100. This chapter maps four desk plays: certificate auction screening, "
+        "81/100. This chapter maps four desk plays: certificate auction screening, "
         "bid-down underwriting, redemption servicing, and post-Tyler resolution. "
         "The information edge comes from joining authoritative certificate records "
         "to parcel histories, recorded instruments, court events, and dated payment "
@@ -483,7 +483,7 @@ CHAPTER_8 = {
                     "annualizes to $6,000 to $48,000, but transaction costs, "
                     "contractor work, and other modeled expenses must also "
                     "reconcile within each scenario rather than being counted "
-                    "twice. The $100,000 to $1,500,000 startup capital range "
+                    "twice. The $15,000 to $85,000 startup capital range "
                     "describes funding needs, not revenue or a software budget. "
                     "Likewise, the six-to-thirty-six-month first-deal window argues "
                     "for reversible subscriptions and limited paid experiments. "

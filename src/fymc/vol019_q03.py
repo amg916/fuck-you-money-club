@@ -13,8 +13,8 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, holds Rank #19 with a "
-        "72/100 Money-to-Manpower Score. This chapter translates nine mapped "
+        "Candidate #23, Enterprise Software Reselling, holds Rank #14 with a "
+        "87/100 Money-to-Manpower Score. This chapter translates nine mapped "
         "plays into cohort contribution, reversal exposure, and cash requirements "
         "across enterprise VAR, AWS Marketplace CPPO, and Microsoft CSP motions. "
         "The canonical annual cases are $300,000 revenue and $24,000 owner "
@@ -414,7 +414,7 @@ CHAPTER_3 = {
                     "cash and taxes. These are planning combinations, "
                     "not substitutes for the weekly peak model, and "
                     "rounded component totals can differ by a dollar. "
-                    "The supplied $25,000 to $150,000 startup capital "
+                    "The supplied $15,000 to $75,000 startup capital "
                     "range can support some early structures but does "
                     "not automatically finance the Scaled book. Its "
                     "$5,000 to $25,000 monthly operating range likewise "

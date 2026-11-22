@@ -6,18 +6,18 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "mineral-rights-sourcing-demand-mining-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in mineral rights, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–24 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in mineral rights, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "County-Record NMA and NPRI Origination, Pooling-Docket Signals, Royalty Verification, and Institutional Exit Demand",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a 63/100 Money-to-Manpower "
+        "Candidate #7, Mineral Rights, ranks #25 with a 81/100 Money-to-Manpower "
         "Score. This chapter maps five operating plays: severed-title mineral "
         "acquisitions, NPRI purchases, producing-royalty acquisitions, pooling-docket "
         "curve-jumping, and institutional flips. Build the first three-to-ten wins "
-        "over 6–24 months by connecting recorded ownership, operator activity, "
+        "over 3–9 months by connecting recorded ownership, operator activity, "
         "verified payment histories, and documented buyer demand. A one-owner, "
         "three-contractor pod concentrates diligence on opportunities that survive "
         "title, decline, price, and liquidity tests. Canonical annual owner profits "
@@ -259,7 +259,7 @@ CHAPTER_6 = {
                     "an indefinitely postponed success. Deduct title work, "
                     "legal review, recording, taxes, transaction expenses, "
                     "and required holding liquidity from the acquisition "
-                    "budget. The canonical startup range is $150,000–$2,000,000, "
+                    "budget. The canonical startup range is $15,000–$75,000, "
                     "with monthly operating expense capacity of $1,000–$12,000; "
                     "neither range authorizes tying up every dollar "
                     "in deeds. For a $150,000 starting pool, an "

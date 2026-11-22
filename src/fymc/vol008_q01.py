@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Commercial lead generation converts documented business buying signals into contracted, "
-        "qualified sales opportunities. Candidate #18 holds Pipeline Rank #08 of 29 and an 85/100 "
+        "qualified sales opportunities. Candidate #18 holds Pipeline Rank #05 of 29 and an 89/100 "
         "Money-to-Manpower Score, placing it in the Elite Small-Team Cash Machine category across "
         "54 mapped plays. The operator earns retainers and accepted-lead fees, not the client's "
         "contract value, property proceeds, or advertising budget. Canonical annual owner net "
@@ -60,7 +60,7 @@ CHAPTER_1 = {
                     "the prospect's participation. The operating contract specifies company size, territory, "
                     "decision role, need, timing, duplication rules, and evidence required for acceptance. "
                     "Volume 008 covers this service business rather than the customer's eventual transaction. "
-                    "Candidate #18 ranks #08, scores 85/100, and combines 21 revenue-potential points, "
+                    "Candidate #18 ranks #05, scores 89/100, and combines 21 revenue-potential points, "
                     "21 profit-margin points, 18 team-efficiency points, 12 startup-accessibility points, "
                     "and 13 automation points. Its planning envelope is $5,000–$40,000 startup capital, "
                     "$2,000–$12,000 monthly operating overhead, and one to four months to the first deal. "

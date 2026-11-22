@@ -13,8 +13,8 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a Money-to-Manpower Score "
-        "of 62/100 because spread is earned load by load while cash leaves before "
+        "Candidate #12, Freight Brokerage, ranks #19 with a Money-to-Manpower Score "
+        "of 85/100 because spread is earned load by load while cash leaves before "
         "shippers pay. The canonical annual owner profits are $30,000 Conservative, "
         "$165,000 Base, and $400,000 Scaled on $1 million, $3 million, and $5 million "
         "of gross shipper billings. This chapter maps eight operating plays: niche-lane "
@@ -418,7 +418,7 @@ CHAPTER_3 = {
                     "are actually satisfied."
                 ),
                 (
-                    "The $50,000–$250,000 startup capital range does not "
+                    "The $15,000–$80,000 startup capital range does not "
                     "automatically fund the Base or Scaled receivables "
                     "book. A $250,000 cash contribution falls $70,000 "
                     "short of the illustrative Base liquidity target "

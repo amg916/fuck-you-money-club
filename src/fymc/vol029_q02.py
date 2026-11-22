@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, holds Rank #29 with a 54/100 "
+        "Candidate #15, Insurance Restoration, holds Rank #13 with a 87/100 "
         "Money-to-Manpower Score because urgent demand does not eliminate labor, "
         "credit, or collection risk. This chapter maps five operating plays: "
         "municipal_code_violation_trigger_arbitrage, emergency water mitigation, "
@@ -31,19 +31,19 @@ CHAPTER_2 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -540,8 +540,8 @@ CHAPTER_2 = {
                     "terms. Receivables are not identical to required "
                     "working capital: payroll timing, subcontractor obligations, "
                     "restricted cash, and customer advances determine the "
-                    "actual cash trough. The stated $75,000–$350,000 "
-                    "startup range and $10,000–$45,000 monthly operating "
+                    "actual cash trough. The stated $18,000–$75,000 "
+                    "startup range and $4,000–$20,000 monthly operating "
                     "expense range do not replace full project-cost "
                     "budgets. Automate dispatch, photo indexing, and "
                     "job-cost tracking, then review disputed balances weekly. "

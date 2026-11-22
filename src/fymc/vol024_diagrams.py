@@ -14,7 +14,7 @@ VOLUME_024_POSITIONING_ALTERNATIVES = [
             "redemption timing, and realized interest rather than advertised rates."
         ),
         "audience": (
-            "Capital-backed owner-operators deploying $100,000–$1,500,000 USD "
+            "Capital-backed owner-operators deploying $15,000–$85,000 USD "
             "with a full-time principal and contracted title and legal specialists."
         ),
         "research_basis": (
@@ -103,7 +103,7 @@ def build_volume_024_diagrams_data() -> list[dict]:
             (
                 "Applies to statutory certificates and separately classified "
                 "redeemable deeds. County procedures control execution. The "
-                "canonical time to first deal is 6–36 months; completing research "
+                "canonical time to first deal is 3–10 months; completing research "
                 "or registering for an auction does not establish an earned return."
             ),
             (
@@ -572,71 +572,91 @@ def build_volume_024_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-reference-startup-capital-allocation",
             "stacked_comparison",
-            "Capital Is Inventory and Runway, Not Revenue",
-            "Four buckets allocate a $1,000,000 startup illustration.",
+            "$50,000 Startup Plan: Inventory, Reserves, and Runway",
+            "Four buckets compare $15,000 lean, $50,000 reference, and $85,000 expanded plans.",
             4,
             "illustrative_model",
             (
-                "Numeric values are dollar allocations totaling $1,000,000, "
-                "within the canonical $100,000–$1,500,000 startup range. "
-                "Allocation shares are 75%, 10%, 10%, and 5%. Endpoint "
-                "comparisons apply those shares mechanically, not as forecasts. "
+                "Numeric values are dollar allocations totaling exactly $50,000, "
+                "the central reference budget within the canonical "
+                "$15,000–$85,000 USD startup range. Allocation shares are "
+                "75%, 10%, 10%, and 5%. Lean allocations total "
+                "$11,250 + $1,500 + $1,500 + $750 = $15,000; reference "
+                "allocations total $37,500 + $5,000 + $5,000 + $2,500 = $50,000; "
+                "expanded allocations total "
+                "$63,750 + $8,500 + $8,500 + $4,250 = $85,000. "
+                "These are mechanical allocation comparisons, not forecasts. "
                 "Capital allocation alone does not generate the canonical "
                 "Conservative, Base, or Scaled revenue outcomes."
             ),
             (
-                "The $750,000 acquisition bucket matches the illustrative "
-                "twenty-position funnel. The $50,000 operating reserve covers "
-                "about 16.7 months of the Base illustration's $3,000 recurring "
-                "monthly spend, not the entire possible 36-month deal timeline."
+                "The $37,500 reference acquisition bucket is independent of "
+                "the larger twenty-position cohort illustration in diag-02; "
+                "this startup plan does not fund that cohort. The $2,500 "
+                "operating reserve covers five months at $500 monthly or "
+                "about 0.83 months at the Base illustration's $3,000 monthly "
+                "spend. It does not guarantee runway through the 3–10-month "
+                "first-deal window or a later redemption. Reallocate capital "
+                "before bidding if projected expenses exceed funded runway; "
+                "do not assume investment proceeds will cover the shortfall."
             ),
             [
                 (
                     "Acquisition principal and premiums",
-                    "$750,000 allocated; 75% of startup capital",
-                    750000,
+                    "$37,500 reference allocation; 75% of startup capital",
+                    37500,
                     (
                         "Fund certificate principal or deed purchase basis "
                         "and any required premium without counting purchases "
-                        "as revenue. At $100,000 total capital this bucket "
-                        "is $75,000; at $1,500,000 it is $1,125,000."
+                        "as revenue. Lean: $11,250 of $15,000; reference: "
+                        "$37,500 of $50,000; expanded: $63,750 of $85,000. "
+                        "Size acquisitions to available capital and parcel-level "
+                        "risk limits rather than targeting a fixed deal count."
                     ),
                 ),
                 (
                     "Parcel diligence and enforcement reserve",
-                    "$100,000 allocated; 10% of startup capital",
-                    100000,
+                    "$5,000 reference allocation; 10% of startup capital",
+                    5000,
                     (
                         "Hold cash for inspections, title work, recording, "
                         "notices, and exceptional enforcement matters. Reserve "
-                        "funding is not an immediate expense. Endpoint "
-                        "allocations are $10,000 and $150,000 respectively."
+                        "funding is not an immediate expense. Lean: $1,500 "
+                        "of $15,000; reference: $5,000 of $50,000; expanded: "
+                        "$8,500 of $85,000. Verify matter-specific estimates "
+                        "before treating this reserve as sufficient."
                     ),
                 ),
                 (
                     "Liquidity and subsequent-tax reserve",
-                    "$100,000 allocated; 10% of startup capital",
-                    100000,
+                    "$5,000 reference allocation; 10% of startup capital",
+                    5000,
                     (
                         "Preserve uncommitted liquidity for delayed redemptions "
                         "and underwritten subsequent-tax decisions. Do not "
                         "assume every additional tax payment earns interest "
-                        "or preserves priority. Endpoint allocations are "
-                        "$10,000 and $150,000 respectively."
+                        "or preserves priority. Lean: $1,500 of $15,000; "
+                        "reference: $5,000 of $50,000; expanded: $8,500 "
+                        "of $85,000. Do not count this cash simultaneously "
+                        "as acquisition funding or operating runway."
                     ),
                 ),
                 (
                     "Operating cash runway",
-                    "$50,000 allocated; 5% of startup capital",
-                    50000,
+                    "$2,500 reference allocation; 5% of startup capital",
+                    2500,
                     (
                         "Fund recurring administration and contractor retainers "
-                        "while investment cash remains tied up. Endpoint "
-                        "allocations are $5,000 and $75,000; at the lower "
-                        "endpoint, size spend and commitments to available "
-                        "runway rather than assuming Base-case overhead fits."
+                        "while investment cash remains tied up. Lean: $750 "
+                        "of $15,000; reference: $2,500 of $50,000; expanded: "
+                        "$4,250 of $85,000. At $500 monthly, these reserves "
+                        "cover 1.5, 5, and 8.5 months respectively; at $4,000 "
+                        "monthly, each covers less than 1.1 months. Match "
+                        "commitments to funded runway and revise allocations "
+                        "before deployment if the cash plan does not cover "
+                        "the expected wait."
                     ),
                 ),
             ],
@@ -651,7 +671,7 @@ def build_volume_024_diagrams_data() -> list[dict]:
             (
                 "Four consecutive work periods cover Days 1–30. Numeric "
                 "values are each period's ending day, not revenue or deal "
-                "counts. The canonical first-deal window remains 6–36 months; "
+                "counts. The canonical first-deal window remains 3–10 months; "
                 "the sprint produces diligence and operating artifacts rather "
                 "than promising an acquisition, redemption, or foreclosure."
             ),

@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 Money-to-Manpower "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower "
         "Score across 18 mapped plays. Its economics depend on retained retail sales, "
         "not checkout volume, attributed advertising revenue, or another merchant's "
         "import value. The canonical annual owner-profit cases are $12,500 Conservative, "
@@ -584,7 +584,7 @@ CHAPTER_3 = {
                     "and $232,000. These are downside tests, not replacements "
                     "for the canonical three cases. Then overlay settlement and "
                     "inventory stresses because losses and cash locks can occur "
-                    "together. Startup capital of $30,000–$250,000 and monthly "
+                    "together. Startup capital of $15,000–$80,000 and monthly "
                     "operating expense of $4,000–$25,000 are screening ranges, "
                     "not substitutes for this expense taxonomy or dated cash "
                     "schedule. Order routing, inventory alerts, and returns tracking "

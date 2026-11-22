@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 "
         "Money-to-Manpower Score across 54 mapped plays. The operating advantage "
         "comes from proving lead acceptance, controlling delivery costs, and collecting "
         "contracted fees without treating client advertising spend as revenue. This "

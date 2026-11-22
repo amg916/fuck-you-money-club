@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score and 23 mapped plays. The sourcing advantage is finding expensive workflow friction before buyers publish a formal brief: software migrations, operations hiring, support backlogs, and integration partner overflow. Convert those signals into one fixed-scope sprint, a measurable acceptance test, and a support retainer tied to actual monitoring work. This chapter builds a weekly evidence queue, qualification scorecard, permission-aware outreach cadence, and first-deal conversion model for a 1–4 month selling window. Canonical annual owner profits remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those figures derive from implementation fees and retainers, never client sales attributed to automation.
+Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score and 23 mapped plays. The sourcing advantage is finding expensive workflow friction before buyers publish a formal brief: software migrations, operations hiring, support backlogs, and integration partner overflow. Convert those signals into one fixed-scope sprint, a measurable acceptance test, and a support retainer tied to actual monitoring work. This chapter builds a weekly evidence queue, qualification scorecard, permission-aware outreach cadence, and first-deal conversion model for a 1–4 month selling window. Canonical annual owner profits remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled. Those figures derive from implementation fees and retainers, never client sales attributed to automation.
 
 ### Key Metrics
 

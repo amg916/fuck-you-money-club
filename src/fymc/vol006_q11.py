@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 "
+        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
         "Money-to-Manpower Score across 23 mapped plays. The operating asset is a "
         "repeatable delivery pod, not the founder's ability to rescue every deployment. "
         "Assign five seats across scope control, architecture, implementation, independent "

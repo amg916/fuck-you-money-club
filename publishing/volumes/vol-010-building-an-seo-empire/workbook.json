@@ -22,7 +22,7 @@
           "name": "Portfolio thesis and operator mandate",
           "type": "textarea",
           "prompt": "Define the publishing opportunity, reader problem, geographic market, and owner responsibilities. Connect the thesis to the canonical candidate score without treating that score as evidence of traffic, contractual access, or achievable returns.",
-          "example": "Candidate #25 is Building an SEO Empire, pipeline rank #10 of 29, with an 82/100 Money-to-Manpower score. Components are revenue 22, margin 21, team efficiency 17, accessibility 10, and automation 12. The mandate is a United States home-water maintenance portfolio supported by original testing and documented product compatibility."
+          "example": "Candidate #25 is Building an SEO Empire, pipeline rank #07 of 29, with an 89/100 Money-to-Manpower score. Components are revenue potential 24, margin potential 22, team efficiency 18, startup accessibility 12, and automation potential 13. The mandate is a United States home-water maintenance portfolio supported by original testing and documented product compatibility."
         },
         {
           "name": "Demand sample and search-result evidence",
@@ -99,7 +99,7 @@
           "name": "Canonical annual scenario bridge",
           "type": "textarea",
           "prompt": "Enter gross operator revenue, net margin, annual owner net profit, implied total annual costs, and team configuration for all three canonical scenarios. Show the arithmetic so later channel models cannot silently change the scorecard.",
-          "example": "Conservative: $80,000 revenue minus $64,000 costs equals $16,000 owner net at 20%, with 2 FT + 4 C. Base: $490,000 minus $330,750 equals $159,250 at 32.5%, with 2 FT + 4 C. Scaled: $900,000 minus $495,000 equals $405,000 at 45%, with 3 FT + 5 C."
+          "example": "Conservative: $80,000 revenue minus $64,000 costs equals $16,000 owner net at 20%, with 1 FT + 3 C. Base: $490,000 minus $330,750 equals $159,250 at 32.5%, with 1 FT + 3 C. Scaled: $900,000 minus $495,000 equals $405,000 at 45%, with 1 FT + 3 C."
         },
         {
           "name": "Base advertising revenue construction",
@@ -123,7 +123,7 @@
           "name": "Fully loaded expense bridge",
           "type": "textarea",
           "prompt": "Allocate the Base cost envelope across labor, contractors, production, technology, distribution, administration, and collectibility expense. Compare fully loaded monthly costs with the stated operating range and flag scope differences rather than forcing an artificial reconciliation.",
-          "example": "Illustrative Base costs are payroll $144,000, contractors $72,000, production $48,000, technology $18,000, distribution $18,000, administration $18,500, and bad-debt expense $12,250: $330,750 total. Monthly all-in cost is $27,562.50, exceeding the stated $3,000–$20,000 range. Require budget-scope clarification; that range cannot represent every mature Base expense."
+          "example": "Illustrative Base costs are payroll $144,000, contractors $72,000, production $48,000, technology $18,000, distribution $18,000, administration $18,500, and bad-debt expense $12,250: $330,750 total. Monthly all-in cost is $27,562.50, exceeding the stated $2,500–$14,000 range. Require budget-scope clarification; that range cannot represent every mature Base expense."
         },
         {
           "name": "Scrub, defect, and collectibility treatment",
@@ -141,7 +141,7 @@
           "name": "Startup funding and delayed monetization",
           "type": "textarea",
           "prompt": "Allocate startup capital between irreversible setup costs and liquid runway. Test both early and late ends of the first-deal interval, showing when the mature operating cash floor becomes relevant and which spending changes prevent a funding shortfall.",
-          "example": "Select $100,000 within the $15,000–$120,000 startup range: $20,000 setup and $80,000 liquid cash. At $3,000 monthly pre-revenue burn, six months leaves $62,000; 24 months leaves $8,000. The latter cannot fund the $53,593.75 mature cash floor, so defer expansion or secure additional capital before increasing obligations."
+          "example": "Select $100,000 within the $10,000–$60,000 startup range: $20,000 setup and $80,000 liquid cash. At $3,000 monthly pre-revenue burn, six months leaves $62,000; 24 months leaves $8,000. The latter cannot fund the $53,593.75 mature cash floor, so defer expansion or secure additional capital before increasing obligations."
         },
         {
           "name": "Content cohort contribution and payback",
@@ -153,7 +153,7 @@
           "name": "Labor feasibility and sensitivity decision",
           "type": "textarea",
           "prompt": "Test whether each canonical team can be paid from its implied expense envelope using documented wage, contractor, and overhead assumptions. Preserve the canonical numbers while clearly identifying execution constraints and scenarios that cannot support the proposed staffing arrangement.",
-          "example": "Conservative allows only $64,000 total annual expenses for 2 FT + 4 C and all other costs. Two $50,000 loaded employee quotes alone exceed that envelope by $36,000. Retain the canonical scenario for comparison, but do not authorize those hires; document the unresolved staffing feasibility before committing to operations."
+          "example": "Conservative allows only $64,000 total annual expenses for 1 FT + 3 C and all other costs. Two $50,000 loaded employee quotes alone exceed that envelope by $36,000. Retain the canonical scenario for comparison, but do not authorize those hires; document the unresolved staffing feasibility before committing to operations."
         }
       ],
       "completion_gate": "The model owner verifies all three canonical profit equations, excludes merchant sales, assigns each adjustment once, and documents the $53,593.75 illustrative Base cash floor. Staffing feasibility and the monthly-cost scope mismatch require explicit resolution before commitments exceed available cash."
@@ -437,7 +437,7 @@
           "name": "Pod ownership and canonical staffing",
           "type": "textarea",
           "prompt": "Map editorial, technical, commercial, and reporting responsibilities to the canonical small-team structure. Distinguish role coverage from immediate hiring commitments, and identify backup ownership so critical operations remain functional during contributor absence or turnover.",
-          "example": "Base role design uses 2 FT + 4 C: a portfolio lead and managing editor, supported by technical SEO, subject review, writing, and design contractors. Scaled remains 3 FT + 5 C, eight people total. Initial engagements follow funded scopes; this role map does not override the Conservative labor feasibility issue or authorize unfunded hiring."
+          "example": "Base role design uses 1 FT + 3 C: a portfolio lead and managing editor, supported by technical SEO, subject review, writing, and design contractors. Scaled remains 3 FT + 5 C, eight people total. Initial engagements follow funded scopes; this role map does not override the Conservative labor feasibility issue or authorize unfunded hiring."
         },
         {
           "name": "Weekly pod KPI scorecard",

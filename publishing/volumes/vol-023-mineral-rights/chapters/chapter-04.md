@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #7, Mineral Rights, ranks #23 with a Money-to-Manpower Score of 63/100: capital discipline matters more than subscription count. This chapter maps five operating plays: producing-mineral purchases, NPRI purchases, pooling-docket curve-jumping, institutional rights flips, and FERC queue-informed land options. Keep at least half of startup capital untouched as liquidity, buy evidence before acreage, and separate mineral ownership from surface access and electricity service. A twelve-layer stack supports title packets, production monitoring, and royalty reconciliation without enterprise overhead. Canonical annual owner profits remain $6,000 Conservative, $69,875 Base, and $180,000 Scaled. The operating test is executable title, traceable receipts, controlled downside, and enough cash to survive the full 6–24-month first-deal window.
+Candidate #7, Mineral Rights, ranks #25 with a Money-to-Manpower Score of 81/100: capital discipline matters more than subscription count. This chapter maps five operating plays: producing-mineral purchases, NPRI purchases, pooling-docket curve-jumping, institutional rights flips, and FERC queue-informed land options. Keep at least half of startup capital untouched as liquidity, buy evidence before acreage, and separate mineral ownership from surface access and electricity service. A twelve-layer stack supports title packets, production monitoring, and royalty reconciliation without enterprise overhead. Canonical annual owner profits remain $6,000 Conservative, $69,875 Base, and $180,000 Scaled. The operating test is executable title, traceable receipts, controlled downside, and enough cash to survive the full 6–24-month first-deal window.
 
 ### Key Metrics
 

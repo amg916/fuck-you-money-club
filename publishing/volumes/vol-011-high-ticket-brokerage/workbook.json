@@ -443,7 +443,7 @@
           "name": "Canonical scorecard and scaling trigger",
           "type": "textarea",
           "prompt": "Record the canonical candidate score, component scores, rank, scenario economics, and staffing transition. Define an evidence-based scaling trigger that preserves cash and service quality without treating the model score as proof of actual transaction performance.",
-          "example": "Candidate 26 ranks #11 of 29 at 82/100: revenue 23, margin 22, team 18, startup 10, automation 9. Owner net targets remain $25,000, $206,250, and $500,000. Move from 1 FT plus 3 contractors to 2 FT plus 4 only after funded capacity planning."
+          "example": "Candidate 26 ranks #11 of 29 at 88/100: revenue potential 24, margin potential 23, team efficiency 19, startup accessibility 11, and automation potential 11. Owner net targets remain $25,000, $206,250, and $500,000. Move from 1 FT plus 3 contractors to 2 FT plus 4 only after funded capacity planning."
         },
         {
           "name": "Relationship concentration and founder-dependence test",

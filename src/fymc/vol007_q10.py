@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score. This chapter maps 12 operator plays into an evidence-led "
         "system for treasury records, corporate uncashed warrants, claim fulfillment, and "
         "distribution. A 1 FT + 2 C team targets more than 70% repetitive-work reduction "

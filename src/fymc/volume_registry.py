@@ -87,7 +87,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-002-surplus-funds-recovery",
         "short_slug": "surplus-funds-recovery",
         "candidate_number": 2,
-        "score": 86,
+        "score": 87,
         "title": "Surplus Funds Recovery",
         "subtitle": "The Money-to-Manpower Playbook for Tax-Sale Overages & Foreclosure Excess Proceeds",
         "site_ui": _ui(
@@ -124,7 +124,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-003-digital-product-empire",
         "short_slug": "digital-product-empire",
         "candidate_number": 27,
-        "score": 90,
+        "score": 94,
         "title": "Digital Product Empire",
         "subtitle": "The Money-to-Manpower Playbook for High-Margin Digital Products & Self-Liquidating Funnels",
         "site_ui": _ui(
@@ -161,7 +161,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-004-ai-powered-micro-saas",
         "short_slug": "ai-powered-micro-saas",
         "candidate_number": 22,
-        "score": 88,
+        "score": 90,
         "title": "AI-Powered Micro SaaS",
         "subtitle": "The Money-to-Manpower Playbook for Vertical B2B AI Wedges, Token Metering & Lean SaaS Margins",
         "site_ui": _ui(
@@ -198,7 +198,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-005-high-ticket-affiliate-marketing",
         "short_slug": "high-ticket-affiliate-marketing",
         "candidate_number": 24,
-        "score": 87,
+        "score": 92,
         "title": "High-Ticket Affiliate Marketing",
         "subtitle": "The Money-to-Manpower Playbook for Recurring B2B Software Shares, Fintech CPA Bounties & S2S Attribution",
         "site_ui": _ui(
@@ -235,7 +235,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-006-productized-ai-agencies",
         "short_slug": "productized-ai-agencies",
         "candidate_number": 29,
-        "score": 86,
+        "score": 89,
         "title": "Productized AI Agencies",
         "subtitle": "The Money-to-Manpower Playbook for Fixed-Scope B2B AI Sprints, Managed Workflow Retainers & 5-Person Delivery Pods",
         "site_ui": _ui(
@@ -250,7 +250,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-007-unclaimed-property-recovery",
         "short_slug": "unclaimed-property-recovery",
         "candidate_number": 5,
-        "score": 85,
+        "score": 89,
         "title": "Unclaimed Property Recovery",
         "subtitle": "The Money-to-Manpower Playbook for State Treasury Escheatment, Uncashed Corporate Warrants & Statutory Finder Claims",
         "site_ui": _ui(
@@ -265,7 +265,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-008-commercial-lead-generation",
         "short_slug": "commercial-lead-generation",
         "candidate_number": 18,
-        "score": 85,
+        "score": 89,
         "title": "Commercial Lead Generation",
         "subtitle": "The Money-to-Manpower Playbook for Multi-Inbox Outbound, Pay-Per-Call Routing & Verified B2B Pipeline Pods",
         "site_ui": _ui(
@@ -280,7 +280,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-009-million-dollar-lead-generation",
         "short_slug": "million-dollar-lead-generation",
         "candidate_number": 21,
-        "score": 82,
+        "score": 86,
         "title": "Million-Dollar Lead Generation",
         "subtitle": "The Money-to-Manpower Playbook for Enterprise ABM Signals, Seven-Figure Deal Origination & Retainer + SQL Mandates",
         "site_ui": _ui(
@@ -295,13 +295,13 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-010-building-an-seo-empire",
         "short_slug": "building-an-seo-empire",
         "candidate_number": 25,
-        "score": 82,
+        "score": 89,
         "title": "Building an SEO Empire",
         "subtitle": "The Money-to-Manpower Playbook for Topical-Authority Portfolios, Programmatic Data Hubs, GEO Citations & 30x–45x Exits",
         "site_ui": _ui(
             ["BUILDING AN", "SEO", "EMPIRE"],
             ["OWN THE DATASET. CAPTURE SERP & GEO.", "COMPOUND MEDIA EQUITY."],
-            "Programmatic Utility Hubs, Topical-Continuity Domain Rebuilds, Multi-Engine GEO & Scaling a $900k/yr 6-Person Search Portfolio",
+            "Programmatic Utility Hubs, Topical-Continuity Domain Rebuilds, Multi-Engine GEO & Scaling a $900k/yr 4-Person Search Portfolio",
             "Build resilient search and AI-citation portfolios backed by proprietary calculators, clean link equity, and diversified ad/lead/affiliate yield.",
         ),
     },
@@ -310,7 +310,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-011-high-ticket-brokerage",
         "short_slug": "high-ticket-brokerage",
         "candidate_number": 26,
-        "score": 82,
+        "score": 88,
         "title": "High-Ticket Brokerage",
         "subtitle": "The Money-to-Manpower Playbook for Exclusive Sell-Side Mandates, NCNDA Protection & Specialist Asset Closings",
         "site_ui": _ui(
@@ -325,7 +325,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-012-equipment-brokerage",
         "short_slug": "equipment-brokerage",
         "candidate_number": 11,
-        "score": 81,
+        "score": 86,
         "title": "Equipment Brokerage",
         "subtitle": "The Money-to-Manpower Playbook for Heavy Construction, CNC & Fleet Machinery Arbitrage, UCC-1 Lien Checks & Escrow Settlement",
         "site_ui": _ui(
@@ -340,7 +340,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-013-intellectual-property-licensing",
         "short_slug": "intellectual-property-licensing",
         "candidate_number": 19,
-        "score": 79,
+        "score": 88,
         "title": "Intellectual Property Licensing",
         "subtitle": "The Money-to-Manpower Playbook for Patent, Brand & Dataset Royalties, Minimum Annual Guarantees & Audit Clauses",
         "site_ui": _ui(
@@ -355,7 +355,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-014-specialty-finance-brokerage",
         "short_slug": "specialty-finance-brokerage",
         "candidate_number": 20,
-        "score": 79,
+        "score": 89,
         "title": "Specialty Finance Brokerage",
         "subtitle": "The Money-to-Manpower Playbook for Commercial Equipment, AR Factoring, SBA & Bridge Debt Placement Without Balance-Sheet Risk",
         "site_ui": _ui(
@@ -370,7 +370,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-015-judgment-recovery",
         "short_slug": "judgment-recovery",
         "candidate_number": 8,
-        "score": 77,
+        "score": 79,
         "title": "Judgment Recovery",
         "subtitle": "The Money-to-Manpower Playbook for Commercial Civil Docket Screening, Lawful Assignment & Lien-Priority Enforcement",
         "site_ui": _ui(
@@ -385,7 +385,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-016-probate-real-estate",
         "short_slug": "probate-real-estate",
         "candidate_number": 9,
-        "score": 76,
+        "score": 80,
         "title": "Probate Real Estate",
         "subtitle": "The Money-to-Manpower Playbook for Executor Concierge Brokerage, Letters Testamentary Dockets & Estate-Attorney Referral Flywheels",
         "site_ui": _ui(
@@ -400,7 +400,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-017-domain-investing",
         "short_slug": "domain-investing",
         "candidate_number": 16,
-        "score": 74,
+        "score": 83,
         "title": "Domain Investing",
         "subtitle": "The Money-to-Manpower Playbook for Drop-Catch Auctions, Sell-Through Renewal Math, UDRP/ACPA Clearance & Outbound Founder Upgrades",
         "site_ui": _ui(
@@ -415,7 +415,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-018-land-flipping",
         "short_slug": "land-flipping",
         "candidate_number": 6,
-        "score": 72,
+        "score": 86,
         "title": "Land Flipping",
         "subtitle": "The Money-to-Manpower Playbook for GIS Parcel Screening, Access/Wetlands Diligence, Minor Subdivisions & Title-Insured Flips",
         "site_ui": _ui(
@@ -430,7 +430,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-019-enterprise-software-reselling",
         "short_slug": "enterprise-software-reselling",
         "candidate_number": 23,
-        "score": 72,
+        "score": 87,
         "title": "Enterprise Software Reselling",
         "subtitle": "The Money-to-Manpower Playbook for Cloud Marketplace Private Offers (CPPO/CSP), Deal Registration & High-Margin FinOps Services",
         "site_ui": _ui(
@@ -445,7 +445,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-020-government-contract-brokering",
         "short_slug": "government-contract-brokering",
         "candidate_number": 4,
-        "score": 70,
+        "score": 79,
         "title": "Government Contract Brokering",
         "subtitle": "The Money-to-Manpower Playbook for SAM.gov Simplified Acquisitions, FAR 52.219-14 Teaming & Lawful Bona Fide Agency Structures",
         "site_ui": _ui(
@@ -460,7 +460,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-021-automated-e-commerce",
         "short_slug": "automated-e-commerce",
         "candidate_number": 28,
-        "score": 70,
+        "score": 85,
         "title": "Automated E-Commerce",
         "subtitle": "The Money-to-Manpower Playbook for 3PL-Backed Brands, Authorized High-Ticket Dealer Rails, POAS Accounting & Retention Flows",
         "site_ui": _ui(
@@ -475,7 +475,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-022-medical-equipment-resale",
         "short_slug": "medical-equipment-resale",
         "candidate_number": 14,
-        "score": 64,
+        "score": 85,
         "title": "Medical Equipment Resale",
         "subtitle": "The Money-to-Manpower Playbook for Hospital Decommissions, Biomed Electrical/Calibration QA, ePHI Sanitization & FDA 21 CFR Rules",
         "site_ui": _ui(
@@ -490,7 +490,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-023-mineral-rights",
         "short_slug": "mineral-rights",
         "candidate_number": 7,
-        "score": 63,
+        "score": 81,
         "title": "Mineral Rights",
         "subtitle": "The Money-to-Manpower Playbook for Net Mineral Acre Underwriting, Permit/Pooling Dockets, Severed Title Curative & Aggregator Flips",
         "site_ui": _ui(
@@ -505,7 +505,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-024-tax-lien-investing",
         "short_slug": "tax-lien-investing",
         "candidate_number": 3,
-        "score": 62,
+        "score": 81,
         "title": "Tax Lien Investing",
         "subtitle": "The Money-to-Manpower Playbook for County Certificate Auctions, Bid-Down Yield Math, Sub-Taxing & Post-Tyler Foreclosure Rules",
         "site_ui": _ui(
@@ -520,7 +520,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-025-freight-brokerage",
         "short_slug": "freight-brokerage",
         "candidate_number": 12,
-        "score": 62,
+        "score": 85,
         "title": "Freight Brokerage",
         "subtitle": "The Money-to-Manpower Playbook for FMCSA Authority, BMC-84 Bonding, Double-Brokering Defense & Shipper-to-Carrier Float Discipline",
         "site_ui": _ui(
@@ -535,7 +535,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-026-government-surplus-auctions",
         "short_slug": "government-surplus-auctions",
         "candidate_number": 17,
-        "score": 62,
+        "score": 79,
         "title": "Government Surplus Auctions",
         "subtitle": "The Money-to-Manpower Playbook for GSA/GovDeals Fleet & Lab Lots, SF-97/DEMIL Rules, Rigging Cost Caps & Fast B2B Remarketing",
         "site_ui": _ui(
@@ -550,7 +550,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-027-business-acquisition",
         "short_slug": "business-acquisition",
         "candidate_number": 13,
-        "score": 57,
+        "score": 86,
         "title": "Business Acquisition",
         "subtitle": "The Money-to-Manpower Playbook for Cash-Flowing SMB Acquisitions, Quality of Earnings, Working-Capital Pegs & 100-Day Operator Systems",
         "site_ui": _ui(
@@ -565,7 +565,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-028-commercial-cleaning-contracts",
         "short_slug": "commercial-cleaning-contracts",
         "candidate_number": 10,
-        "score": 56,
+        "score": 82,
         "title": "Commercial Cleaning Contracts",
         "subtitle": "The Money-to-Manpower Playbook for Recurring B2B & Medical Janitorial Bids, ISSA Production Rates, W-2 Labor Compliance & Supervisor Pods",
         "site_ui": _ui(
@@ -580,7 +580,7 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
         "volume_id": "vol-029-insurance-restoration",
         "short_slug": "insurance-restoration",
         "candidate_number": 15,
-        "score": 54,
+        "score": 87,
         "title": "Insurance Restoration",
         "subtitle": "The Money-to-Manpower Playbook for Emergency Water/Fire/Storm Mitigation, IICRC Psychrometrics, Xactimate Supplements & UPPA Boundaries",
         "site_ui": _ui(

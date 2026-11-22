@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower Score. "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. "
         "This sprint operationalizes 11 mapped plays through docket intelligence, authority verification, "
         "executor service, attorney relationships, property preparation, brokerage execution, and separately "
         "controlled acquisition screening. Two full-time operators and three contractors establish one county, "

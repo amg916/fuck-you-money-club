@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a Money-to-Manpower "
-        "Score of 64/100. Buyers pay to restore clinical capacity, preserve capital, "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a Money-to-Manpower "
+        "Score of 85/100. Buyers pay to restore clinical capacity, preserve capital, "
         "or replace equipment whose service economics have deteriorated. This chapter "
         "maps three plays: replacement-capacity resale, documented refurbishment with "
         "milestone settlement, and "
@@ -32,19 +32,19 @@ CHAPTER_2 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C, eight people total",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C, eight people total",
         },
     ],
     "sections": [
@@ -588,8 +588,8 @@ CHAPTER_2 = {
                     "net margins. Claim face value, lender principal, "
                     "escrow deposits, and expected distributions cannot "
                     "inflate those equipment figures. With startup "
-                    "capital of $75,000 to $400,000 and monthly "
-                    "operating expense of $5,000 to $22,000, "
+                    "capital of $20,000 to $95,000 and monthly "
+                    "operating expense of $4,000 to $18,000, "
                     "cash trapped in speculative claims competes "
                     "directly with saleable inventory. Preserve capacity "
                     "for the stated three-to-nine-month first-deal window "

@@ -5,11 +5,11 @@
   "category": "Digital asset trading",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 17,
-    "profit_margin_potential": 18,
-    "team_efficiency": 19,
-    "startup_accessibility": 9,
-    "automation_potential": 11
+    "revenue_potential": 19,
+    "profit_margin_potential": 21,
+    "team_efficiency": 18,
+    "startup_accessibility": 13,
+    "automation_potential": 12
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,43 +18,49 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 74,
-  "tier_label": "Disciplined Specialist Play",
+  "total_score": 83,
+  "tier_label": "High-Leverage Operator Play",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 71,
-    "high": 77
+    "low": 80,
+    "high": 86
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 17/25. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
-    "profit_margin_potential": "Profit Margin Potential: 18/25. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
-    "team_efficiency": "Team Efficiency: 19/20. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
-    "startup_accessibility": "Startup Accessibility: 9/15. Lean portfolios can produce high-margin sales, but low sell-through ties up capital.",
-    "automation_potential": "Automation Potential: 11/15. Lean portfolios can produce high-margin sales, but low sell-through ties up capital."
+    "revenue_potential": "Revenue Potential: 19/25. Ultra-lean 2-person aged-authority drop, Lease-to-Own (LTO), and outbound category-killer desk compounds recurring digital cashflow.",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. Ultra-lean 2-person aged-authority drop, Lease-to-Own (LTO), and outbound category-killer desk compounds recurring digital cashflow.",
+    "team_efficiency": "Team Efficiency: 18/20. Ultra-lean 2-person aged-authority drop, Lease-to-Own (LTO), and outbound category-killer desk compounds recurring digital cashflow.",
+    "startup_accessibility": "Startup Accessibility: 13/15. Ultra-lean 2-person aged-authority drop, Lease-to-Own (LTO), and outbound category-killer desk compounds recurring digital cashflow.",
+    "automation_potential": "Automation Potential: 12/15. Ultra-lean 2-person aged-authority drop, Lease-to-Own (LTO), and outbound category-killer desk compounds recurring digital cashflow."
   },
   "economics": {
     "gross_revenue_range": "$20,000–$300,000 USD annually",
+    "retained_revenue_range": "$20,000–$300,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "15–40%",
+    "retained_profit_margin_range": "15–40%",
     "owner_net_profit_potential": "$3,000–$120,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$10,000–$150,000 USD",
+    "startup_capital_range": "$8,000–$60,000 USD",
     "monthly_opex_range": "$500–$5,000 USD",
-    "time_to_first_deal": "3–24 months",
+    "time_to_first_deal": "2–9 months",
+    "automation_coverage": 0.82,
     "typical_team_size": {
       "full_time_including_owner": 1,
       "contractors": 1,
       "total_people": 2
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Gross domain sale proceeds; acquisition and renewal costs included in margin",
+    "revenue_basis": "Gross domain sale and LTO proceeds; acquisition and renewal costs included in margin",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 20000,
+      "annual_retained_revenue_usd": 20000,
       "net_profit_margin_pct": 15,
+      "retained_profit_margin_pct": 15.0,
       "annual_owner_net_profit_usd": 3000,
       "full_time_including_owner": 1,
       "contractors": 1,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 160000.0,
+      "annual_retained_revenue_usd": 160000,
       "net_profit_margin_pct": 27.5,
+      "retained_profit_margin_pct": 27.5,
       "annual_owner_net_profit_usd": 44000,
       "full_time_including_owner": 1,
       "contractors": 1,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 300000,
+      "annual_retained_revenue_usd": 300000,
       "net_profit_margin_pct": 40,
+      "retained_profit_margin_pct": 40.0,
       "annual_owner_net_profit_usd": 120000,
       "full_time_including_owner": 2,
       "contractors": 2,
@@ -81,13 +91,13 @@
     }
   },
   "automation_levers": [
-    "Renewal tracking",
+    "Drop-catch & TESS clearance",
     "Comparable-sale monitoring",
-    "Inbound inquiry routing"
+    "Automated LTO escrow"
   ],
   "key_risks": [
     "Illiquid inventory",
-    "Renewal costs",
+    "Renewal carry",
     "Trademark disputes"
   ],
   "regulatory_notes": [

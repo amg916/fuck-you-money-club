@@ -14,7 +14,7 @@ CHAPTER_7 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
-        "62/100: capital and specialist judgment, rather than staffing alone, constrain "
+        "81/100: capital and specialist judgment, rather than staffing alone, constrain "
         "the business. This chapter maps four operator plays: certificate screening, "
         "bid-down acquisition, redemption servicing, and redeemable-deed disposition. "
         "A one-full-time-plus-two-contractor pod executes them through documented county "
@@ -803,7 +803,7 @@ if __name__ == '__main__':
                     "not a promise that fresh purchases produce cash within a quarter. "
                     "Open with $750,000 of funded capital: $625,000 of documented "
                     "investment basis and $125,000 of unrestricted cash. That capital "
-                    "assumption sits within the volume's $100,000 to $1,500,000 startup "
+                    "assumption sits within the volume's $15,000 to $85,000 startup "
                     "range but is illustrative rather than a scorecard requirement. "
                     "Existing instruments supply the quarter's realizations; newly "
                     "acquired Month 1, Month 2, and Month 3 cohorts remain invested "

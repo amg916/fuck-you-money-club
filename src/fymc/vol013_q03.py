@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. Its four operating plays here are patent "
         "field-of-use licensing, territorial brand licensing, catalog-and-dataset "
         "licensing, and customs_first_sale_rule_valuation_arbitrage. The first "
@@ -262,7 +262,7 @@ CHAPTER_3 = {
                     "can actually purchase the proposed staffing locally. "
                     "Conservative and Base use one full-time operator plus "
                     "three contractors; Scaled uses two full-time people plus "
-                    "four contractors. The stated $2,000 to $15,000 monthly "
+                    "four contractors. The stated $2,000 to $12,000 monthly "
                     "opex range describes the platform's operating envelope, "
                     "not an all-inclusive cap on royalties and delivery costs. "
                     "Base all-in monthly costs average $20,364.58 and Scaled "
@@ -375,7 +375,7 @@ CHAPTER_3 = {
                     "independent callback rather than an emailed instruction."
                 ),
                 (
-                    "Startup capital of $25,000 to $250,000 must finance both "
+                    "Startup capital of $12,000 to $75,000 must finance both "
                     "origination and the collection bridge, with first deals "
                     "potentially taking six to 24 months. At $2,000 monthly "
                     "predeal overhead, six months consumes $12,000 and 24 months "

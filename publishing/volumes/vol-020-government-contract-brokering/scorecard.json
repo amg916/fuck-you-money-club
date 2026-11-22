@@ -5,10 +5,10 @@
   "category": "Procurement services",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 22,
-    "profit_margin_potential": 16,
-    "team_efficiency": 14,
-    "startup_accessibility": 8,
+    "revenue_potential": 23,
+    "profit_margin_potential": 19,
+    "team_efficiency": 16,
+    "startup_accessibility": 11,
     "automation_potential": 10
   },
   "dimension_max": {
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 70,
-  "tier_label": "Disciplined Specialist Play",
+  "total_score": 79,
+  "tier_label": "High-Leverage Operator Play",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 67,
-    "high": 73
+    "low": 76,
+    "high": 82
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 22/25. Large awards do not translate to large fees; compliance and sales require labor.",
-    "profit_margin_potential": "Profit Margin Potential: 16/25. Large awards do not translate to large fees; compliance and sales require labor.",
-    "team_efficiency": "Team Efficiency: 14/20. Large awards do not translate to large fees; compliance and sales require labor.",
-    "startup_accessibility": "Startup Accessibility: 8/15. Large awards do not translate to large fees; compliance and sales require labor.",
-    "automation_potential": "Automation Potential: 10/15. Large awards do not translate to large fees; compliance and sales require labor."
+    "revenue_potential": "Revenue Potential: 23/25. Simplified-acquisition (SAT) bid desks and disclosed subcontractor coordination earn repeatable agency spreads.",
+    "profit_margin_potential": "Profit Margin Potential: 19/25. Simplified-acquisition (SAT) bid desks and disclosed subcontractor coordination earn repeatable agency spreads.",
+    "team_efficiency": "Team Efficiency: 16/20. Simplified-acquisition (SAT) bid desks and disclosed subcontractor coordination earn repeatable agency spreads.",
+    "startup_accessibility": "Startup Accessibility: 11/15. Simplified-acquisition (SAT) bid desks and disclosed subcontractor coordination earn repeatable agency spreads.",
+    "automation_potential": "Automation Potential: 10/15. Simplified-acquisition (SAT) bid desks and disclosed subcontractor coordination earn repeatable agency spreads."
   },
   "economics": {
     "gross_revenue_range": "$120,000–$1,000,000 USD annually",
+    "retained_revenue_range": "$120,000–$1,000,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "15–30%",
+    "retained_profit_margin_range": "15–30%",
     "owner_net_profit_potential": "$18,000–$300,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$25,000–$150,000 USD",
+    "startup_capital_range": "$20,000–$90,000 USD",
     "monthly_opex_range": "$5,000–$25,000 USD",
-    "time_to_first_deal": "6–18 months",
+    "time_to_first_deal": "3–12 months",
+    "automation_coverage": 0.67,
     "typical_team_size": {
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 120000,
+      "annual_retained_revenue_usd": 120000,
       "net_profit_margin_pct": 15,
+      "retained_profit_margin_pct": 15.0,
       "annual_owner_net_profit_usd": 18000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 560000.0,
+      "annual_retained_revenue_usd": 560000,
       "net_profit_margin_pct": 22.5,
+      "retained_profit_margin_pct": 22.5,
       "annual_owner_net_profit_usd": 126000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1000000,
+      "annual_retained_revenue_usd": 1000000,
       "net_profit_margin_pct": 30,
+      "retained_profit_margin_pct": 30.0,
       "annual_owner_net_profit_usd": 300000,
       "full_time_including_owner": 3,
       "contractors": 4,
@@ -81,7 +91,7 @@
     }
   },
   "automation_levers": [
-    "Solicitation alerts",
+    "SAM.gov solicitation alerts",
     "Bid calendars",
     "Compliance checklists"
   ],

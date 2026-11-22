@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 Money-to-Manpower Score across a volume containing 30 mapped plays. Its fatal weakness is mistaking activity, client pipeline, or provisional buyer acceptance for collectible operator revenue. This chapter turns attribution disputes, lead reversals, enrichment quotas, privacy evidence, and platform enforcement into measurable operating controls. The canonical annual owner profit cases remain $30,000 Conservative, $202,500 Base, and $480,000 Scaled; client contract values never enter that revenue ledger. Three mapped plays receive explicit unit economics and shutdown rules. The question's 80% framing is not an established failure statistic: the useful deliverable is a forensic system that catches losses before growth multiplies them.
+Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 Money-to-Manpower Score across a volume containing 30 mapped plays. Its fatal weakness is mistaking activity, client pipeline, or provisional buyer acceptance for collectible operator revenue. This chapter turns attribution disputes, lead reversals, enrichment quotas, privacy evidence, and platform enforcement into measurable operating controls. The canonical annual owner profit cases remain $30,000 Conservative, $202,500 Base, and $480,000 Scaled; client contract values never enter that revenue ledger. Three mapped plays receive explicit unit economics and shutdown rules. The question's 80% framing is not an established failure statistic: the useful deliverable is a forensic system that catches losses before growth multiplies them.
 
 ### Key Metrics
 

@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 "
+        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
         "Money-to-Manpower Score across 23 mapped plays. Buyers fund bounded improvements "
         "to expensive workflows, not abstract access to models. This chapter separates "
         "the executive sponsor, budget owner, security reviewer, and accounts-payable "

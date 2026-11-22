@@ -3,7 +3,7 @@ from __future__ import annotations
 VOLUME_022_SUBTITLE = (
     "The Complete Playbook for Medical Equipment Resale: "
     "$250,000–$1,800,000 USD in Annual Gross Resale Proceeds, "
-    "Built Around a 2 FT + 4 C Six-Person Pod and Scaling to Eight People"
+    "Built Around a 1 FT + 3 C Four-Person Pod and Scaling to Six People"
 )
 
 VOLUME_022_POSITIONING_ALTERNATIVES = [
@@ -107,7 +107,7 @@ def build_volume_022_diagrams_data() -> list[dict]:
             "operating_framework",
             (
                 "Stage values indicate sequence, not elapsed time or conversion. "
-                "The canonical time to first deal is 3–9 months. Inventory tracking "
+                "The canonical time to first deal is 2–7 months. Inventory tracking "
                 "and service-history indexing automate records, not physical testing "
                 "or device-specific regulatory classification."
             ),
@@ -184,7 +184,7 @@ def build_volume_022_diagrams_data() -> list[dict]:
             "illustrative_model",
             (
                 "Illustrative cohort of 100 distinct candidate lots followed over "
-                "3–9 months, not a monthly sales forecast. One opportunity identifier "
+                "2–7 months, not a monthly sales forecast. One opportunity identifier "
                 "persists through all stages; repeat inquiries do not create new lots. "
                 "Counts do not establish prices, annual revenue, or realized margin."
             ),
@@ -318,7 +318,7 @@ def build_volume_022_diagrams_data() -> list[dict]:
                     (
                         "Loaded payroll, premises, insurance, software, selling expense, "
                         "and administration consume $143,500 annually, approximately "
-                        "$11,958 monthly within the $5,000–$22,000 canonical operating "
+                        "$11,958 monthly within the $4,000–$18,000 canonical operating "
                         "range. This is a budget envelope requiring local staffing validation."
                     ),
                 ),
@@ -485,45 +485,41 @@ def build_volume_022_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-06-core-and-scaled-pod-seats",
+            "diag-06-four-core-and-two-expansion-seats",
             "org_architecture",
-            "Six Core Seats, Eight at Scaled Capacity",
-            "Conservative and Base: 2 FT + 4 C; Scaled Small-Team: 3 FT + 5 C.",
+            "Four Core Seats, Six at Scaled Capacity",
+            "Conservative and Base: 1 FT + 3 C; Scaled Small-Team: 2 FT + 4 C.",
             11,
             "operating_framework",
             (
-                "Each numeric value represents one person in the eight-person scaled "
-                "architecture. The first six seats form the core pod; the final two "
-                "are scaled additions. FT means full-time and C means contractor, "
-                "not a full-time-equivalent commitment. Contractor hours and local "
-                "loaded payroll must fit the modeled cost envelopes."
+                "The first four entries are core seats with numeric values of 1, "
+                "representing 1 FT + 3 C. The final two entries have numeric values "
+                "of 0 because they are expansion seats excluded from core headcount; "
+                "adding 1 FT + 1 C produces the six-person scaled pod of 2 FT + 4 C. "
+                "FT means full-time and C means contractor, not a full-time-equivalent "
+                "commitment. External vendor and trade sub-crews are charged to direct "
+                "subcontractor/COGS pass-through, not internal pod headcount. Allocate "
+                "each labor charge once; contractor hours and local loaded payroll "
+                "must fit the modeled cost envelopes."
             ),
             (
-                "The same six-person core supports canonical $250,000 and $1,025,000 "
-                "gross-revenue scenarios. The $1,800,000 scaled scenario uses eight "
-                "people; automation does not remove technical accountability."
+                "The four-person core supports canonical $250,000 and $1,025,000 "
+                "gross-revenue scenarios; the $1,800,000 scaled scenario uses six people. "
+                "FYMC 2.0 score: 85/100; rank #20 of 29; tier: Elite Small-Team Cash "
+                "Machine. Automation does not remove technical accountability."
             ),
             [
                 (
-                    "Core FT 1: Commercial lead",
-                    "One core full-time seat | Buying and sales",
+                    "Core FT 1: Commercial and operations lead",
+                    "One core full-time seat | Buying, sales, and inventory",
                     1.0,
                     (
                         "Own demand qualification, acquisition ceilings, written sale "
                         "terms, contribution estimates, and aged-stock decisions. "
-                        "Review title exceptions with the relevant specialist and "
-                        "keep commercial urgency separate from technical release."
-                    ),
-                ),
-                (
-                    "Core FT 2: Operations lead",
-                    "One core full-time seat | Inventory and records",
-                    1.0,
-                    (
-                        "Own receiving quarantine, serial-level inventory tracking, "
-                        "service-history indexing, cost allocation, documentation "
-                        "completeness, and buyer acceptance scheduling. Reconcile physical "
-                        "assets against the inventory ledger every week."
+                        "Oversee receiving quarantine, cost allocation, and buyer "
+                        "acceptance scheduling; reconcile physical assets against "
+                        "the inventory ledger weekly. Keep commercial urgency "
+                        "separate from technical release."
                     ),
                 ),
                 (
@@ -534,127 +530,128 @@ def build_volume_022_diagrams_data() -> list[dict]:
                         "Perform model-qualified inspection, repair planning, calibration "
                         "checks, functional testing, and signed technical findings. "
                         "Escalate unavailable parts or unsupported software before "
-                        "the commercial lead commits acquisition funds."
+                        "the commercial lead commits acquisition funds. Specify "
+                        "qualified external bench work when needed and allocate "
+                        "unit-level labor to direct costs without duplicate overhead."
                     ),
                 ),
                 (
-                    "Core C 2: Decontamination technician",
-                    "One core contractor seat | Biological controls",
+                    "Core C 2: Logistics and decontamination coordinator",
+                    "One core contractor seat | Biological controls and delivery",
                     1.0,
                     (
-                        "Apply device-compatible cleaning and decontamination procedures, "
-                        "document process conditions, and flag inaccessible contamination. "
-                        "Coordinate occupational exposure controls and never equate "
-                        "clean appearance with completed decontamination."
+                        "Coordinate qualified external decontamination providers, "
+                        "device-compatible procedures, process records, and occupational "
+                        "exposure controls. Arrange packing, insured freight, receiving "
+                        "appointments, site readiness, and damage claims. External "
+                        "cleaning, packing, and installation crews are direct "
+                        "subcontractor/COGS pass-through, not additional pod seats."
                     ),
                 ),
                 (
-                    "Core C 3: Specialist freight coordinator",
-                    "One core contractor seat | Packing and delivery",
-                    1.0,
-                    (
-                        "Arrange shock-sensitive packing, carrier selection, declared "
-                        "value, transit evidence, receiving appointments, and damage "
-                        "claims. Verify lift access, power requirements, and installation "
-                        "responsibilities before dispatch."
-                    ),
-                ),
-                (
-                    "Core C 4: Data and documentation specialist",
+                    "Core C 3: Data and documentation specialist",
                     "One core contractor seat | Media and traceability",
                     1.0,
                     (
                         "Map storage locations, perform authorized sanitization and "
                         "verification, preserve permitted service evidence, and assemble "
-                        "release packets. Escalate device-specific regulatory questions "
-                        "for qualified review rather than inventing certifications."
+                        "release packets. Maintain serial-level inventory records and "
+                        "service-history indexing. Escalate device-specific regulatory "
+                        "questions for qualified review rather than inventing certifications."
                     ),
                 ),
                 (
-                    "Scaled FT 3: Account and inventory planner",
-                    "One additional full-time seat | Scaled scenario only",
-                    1.0,
+                    "Scaled FT 2: Account and inventory planner",
+                    "Expansion only | One additional FT seat; zero core count",
+                    0.0,
                     (
-                        "Own recurring buyer accounts, replenishment forecasts, site "
-                        "readiness follow-up, and aging reviews at the $1,800,000 "
-                        "gross-revenue scenario. Add capacity against measured workload "
-                        "and funded payroll, not a revenue aspiration alone."
+                        "Join only at scaled capacity to own recurring buyer accounts, "
+                        "replenishment forecasts, site readiness follow-up, and aging "
+                        "reviews at the $1,800,000 gross-revenue scenario. Add capacity "
+                        "against measured workload and funded payroll, not a revenue "
+                        "aspiration alone; this seat raises full-time headcount to two."
                     ),
                 ),
                 (
-                    "Scaled C 5: Additional field biomed specialist",
-                    "One additional contractor seat | Scaled scenario only",
-                    1.0,
+                    "Scaled C 4: Additional field biomed specialist",
+                    "Expansion only | One additional C seat; zero core count",
+                    0.0,
                     (
-                        "Provide additional qualified bench or installation capacity "
-                        "when test queues and geography exceed the core specialist's "
-                        "coverage. Maintain the same instrument calibration, evidence "
-                        "standards, and serial-level accountability."
+                        "Join only at scaled capacity to provide additional qualified "
+                        "bench or installation coverage when test queues and geography "
+                        "exceed the core specialist's capacity. Maintain the same "
+                        "instrument calibration, evidence standards, and serial-level "
+                        "accountability; this seat raises contractor headcount to four."
                     ),
                 ),
             ],
         ),
         (
-            "diag-07-startup-capital-allocation",
+            "diag-07-lean-reference-expanded-startup-allocation",
             "stacked_comparison",
-            "Four Buckets Protect the Inventory Cycle",
-            "Illustrative $200,000 startup stack, with $75,000 and $400,000 comparison allocations.",
+            "Four Buckets Allocate the $55,000 Reference Budget",
+            "Startup capital: $20,000–$95,000 USD; compare $20,000 lean, $55,000 reference, and $95,000 expanded.",
             4,
             "illustrative_model",
             (
-                "Numeric values are USD in the central $200,000 startup allocation. "
-                "Each bucket uses the same percentage at the $75,000 lower and "
-                "$400,000 upper endpoints, allowing proportional stacked comparison. "
-                "Capital allocations are funding uses, not annual expense or revenue. "
-                "The central allocation is not an additional earnings scenario."
+                "Numeric values are USD in the central $55,000 reference startup "
+                "plan, within the canonical $20,000–$95,000 range. Each bucket uses "
+                "the same percentage at the $20,000 lean and $95,000 expanded "
+                "endpoints, allowing proportional stacked comparison. Capital "
+                "allocations are funding uses, not annual expense or revenue. "
+                "The reference allocation is not an additional earnings scenario "
+                "or a guarantee of sufficient runway."
             ),
             (
-                "All three capital stacks reconcile: $75,000, $200,000, and $400,000. "
-                "Protect cash for slow sales and repair surprises; an initial "
-                "inventory purchase is not immediate recognized profit."
+                "All four buckets reconcile at each funding level: $20,000 lean, "
+                "$55,000 reference, and $95,000 expanded. Monthly opex remains "
+                "$4,000–$18,000 and time to first deal remains 2–7 months; match "
+                "commitments to funded liquidity rather than assuming the cash "
+                "buffer covers the entire launch. Inventory purchases are not profit."
             ),
             [
                 (
                     "Equipment acquisition reserve",
-                    "$100,000 central allocation | 50% of capital",
-                    100000.0,
+                    "$27,500 reference allocation | 50% of capital",
+                    27500.0,
                     (
-                        "Lower stack: $37,500; central stack: $100,000; upper stack: "
-                        "$200,000. Fund serial-defined inventory within per-model "
+                        "Lean stack: $10,000; reference stack: $27,500; expanded stack: "
+                        "$47,500. Fund serial-defined inventory within per-model "
                         "exposure limits and documented buyer demand. Keep unsold "
                         "equipment on the inventory ledger and review aging weekly."
                     ),
                 ),
                 (
                     "Refurbishment and testing capacity",
-                    "$40,000 central allocation | 20% of capital",
-                    40000.0,
+                    "$11,000 reference allocation | 20% of capital",
+                    11000.0,
                     (
-                        "Lower stack: $15,000; central stack: $40,000; upper stack: "
-                        "$80,000. Fund inspection, parts, bench work, calibrated test "
+                        "Lean stack: $4,000; reference stack: $11,000; expanded stack: "
+                        "$19,000. Fund inspection, parts, bench work, calibrated test "
                         "equipment access, decontamination, and service documentation. "
                         "Separate durable tooling from unit-level inventory costs."
                     ),
                 ),
                 (
                     "Operating cash buffer",
-                    "$50,000 central allocation | 25% of capital",
-                    50000.0,
+                    "$13,750 reference allocation | 25% of capital",
+                    13750.0,
                     (
-                        "Lower stack: $18,750; central stack: $50,000; upper stack: "
-                        "$100,000. At the modeled $11,958 monthly Base-Case overhead, "
-                        "the central buffer covers about 4.2 months before direct "
-                        "inventory spending; a nine-month first-sale delay requires "
-                        "lower burn or additional funded liquidity."
+                        "Lean stack: $5,000; reference stack: $13,750; expanded stack: "
+                        "$23,750. At the modeled $11,958 monthly Base-Case overhead, "
+                        "the reference buffer covers about 1.15 months before direct "
+                        "inventory spending, shorter than the 2–7 month first-deal "
+                        "window. Phase commitments, reduce launch burn, or secure "
+                        "additional liquidity before taking on unfunded obligations."
                     ),
                 ),
                 (
                     "Setup and transaction reserve",
-                    "$10,000 central allocation | 5% of capital",
-                    10000.0,
+                    "$2,750 reference allocation | 5% of capital",
+                    2750.0,
                     (
-                        "Lower stack: $3,750; central stack: $10,000; upper stack: "
-                        "$20,000. Fund insurance deposits, inventory-system setup, "
+                        "Lean stack: $1,000; reference stack: $2,750; expanded stack: "
+                        "$4,750. Fund insurance deposits, inventory-system setup, "
                         "initial packing materials, and specialist classification "
                         "review. Track refundable deposits separately from expenses "
                         "and avoid duplicating operating-buffer charges."
@@ -673,7 +670,7 @@ def build_volume_022_diagrams_data() -> list[dict]:
                 "Numeric values indicate milestone order. The four periods cover "
                 "Days 1–30 without gaps; the final period contains nine days. "
                 "These are readiness milestones, not revenue commitments. Canonical "
-                "time to first deal remains 3–9 months."
+                "time to first deal remains 2–7 months."
             ),
             (
                 "End the sprint with a controlled acquisition pipeline and testable "

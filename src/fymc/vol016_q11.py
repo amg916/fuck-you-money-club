@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
         "Score. Its 11 mapped operator plays become transferable only when executor "
         "relationships, court-sale controls, and retained commissions survive the "
         "founder's absence. This chapter assigns those plays to a five-person pod "

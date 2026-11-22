@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 "
         "Money-to-Manpower Score and 54 mapped plays. Its small-team advantage disappears "
         "when booked meetings masquerade as accepted leads, advertising pass-through becomes "
         "reported revenue, or unsettled partner commissions finance payroll. Canonical annual "

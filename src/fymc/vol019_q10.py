@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, holds Rank #19 with a 72/100 "
+        "Candidate #23, Enterprise Software Reselling, holds Rank #14 with a 87/100 "
         "Money-to-Manpower Score. Its leverage comes from automating evidence movement, "
         "not delegating commercial authority to a model. This chapter connects nine mapped "
         "plays: account research, qualification, deal registration, quote preparation, "

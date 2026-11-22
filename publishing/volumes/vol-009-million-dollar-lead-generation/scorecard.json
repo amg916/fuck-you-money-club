@@ -7,9 +7,9 @@
   "scores": {
     "revenue_potential": 24,
     "profit_margin_potential": 21,
-    "team_efficiency": 16,
-    "startup_accessibility": 9,
-    "automation_potential": 12
+    "team_efficiency": 17,
+    "startup_accessibility": 11,
+    "automation_potential": 13
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 82,
-  "tier_label": "High-Leverage Operator Play",
+  "total_score": 86,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 79,
-    "high": 85
+    "low": 83,
+    "high": 89
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 24/25. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
-    "profit_margin_potential": "Profit Margin Potential: 21/25. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
-    "team_efficiency": "Team Efficiency: 16/20. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
-    "startup_accessibility": "Startup Accessibility: 9/15. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings.",
-    "automation_potential": "Automation Potential: 12/15. Targets buyers of million-dollar contracts, not guaranteed million-dollar lead fees or earnings."
+    "revenue_potential": "Revenue Potential: 24/25. SEC/UCC trigger-driven enterprise origination commands high-ACV retainers and stage-verified opportunity fees.",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. SEC/UCC trigger-driven enterprise origination commands high-ACV retainers and stage-verified opportunity fees.",
+    "team_efficiency": "Team Efficiency: 17/20. SEC/UCC trigger-driven enterprise origination commands high-ACV retainers and stage-verified opportunity fees.",
+    "startup_accessibility": "Startup Accessibility: 11/15. SEC/UCC trigger-driven enterprise origination commands high-ACV retainers and stage-verified opportunity fees.",
+    "automation_potential": "Automation Potential: 13/15. SEC/UCC trigger-driven enterprise origination commands high-ACV retainers and stage-verified opportunity fees."
   },
   "economics": {
     "gross_revenue_range": "$150,000–$1,200,000 USD annually",
+    "retained_revenue_range": "$150,000–$1,200,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "20–40%",
+    "retained_profit_margin_range": "20–40%",
     "owner_net_profit_potential": "$30,000–$480,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$15,000–$100,000 USD",
     "monthly_opex_range": "$4,000–$20,000 USD",
     "time_to_first_deal": "3–12 months",
+    "automation_coverage": 0.77,
     "typical_team_size": {
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 150000,
+      "annual_retained_revenue_usd": 150000,
       "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 30000,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 675000.0,
+      "annual_retained_revenue_usd": 675000,
       "net_profit_margin_pct": 30.0,
+      "retained_profit_margin_pct": 30.0,
       "annual_owner_net_profit_usd": 202500,
       "full_time_including_owner": 2,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1200000,
+      "annual_retained_revenue_usd": 1200000,
       "net_profit_margin_pct": 40,
+      "retained_profit_margin_pct": 40.0,
       "annual_owner_net_profit_usd": 480000,
       "full_time_including_owner": 3,
       "contractors": 4,
@@ -81,9 +91,9 @@
     }
   },
   "automation_levers": [
-    "Account qualification",
-    "CRM attribution",
-    "Meeting scheduling"
+    "Executive trigger scraping",
+    "CRM stage attribution",
+    "Multi-inbox scheduling"
   ],
   "key_risks": [
     "Long sales cycles",

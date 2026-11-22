@@ -184,7 +184,7 @@ def build_volume_013_workbook() -> dict:
                         "to $250,000 planning range. Initial underwriting receives $9,000: "
                         "$4,000 title work, $2,500 customer testing, and $2,500 contract "
                         "design. A further $6,000 requires two qualified licensees. "
-                        "The first-deal planning window remains 6 to 24 months, "
+                        "The first-deal planning window remains 4 to 14 months, "
                         "not the first sprint.",
                     ),
                     field(
@@ -1563,12 +1563,8 @@ def build_volume_013_workbook() -> dict:
                         "ranks 13 "
                         "of 29 "
                         "with a "
-                        "79/100 score: "
-                        "revenue 22, "
-                        "margin 23, "
-                        "team 18, "
-                        "accessibility 6, "
-                        "automation 10. "
+                        "88/100 score: "
+                        "revenue potential 24, margin potential 24, team efficiency 19, startup accessibility 11, and automation potential 10. "
                         "Annual revenue "
                         "and owner "
                         "net remain "

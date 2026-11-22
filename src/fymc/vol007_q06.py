@@ -13,7 +13,7 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score. Its advantage is evidence assembly, not secret access "
         "to state money. This chapter maps 12 sourcing plays, from corporate warrants "
         "and merger remnants to a separately controlled medical-recovery adjacency. Build "

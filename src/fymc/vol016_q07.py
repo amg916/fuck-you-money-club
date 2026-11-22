@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
         "Score. Its 11 mapped plays connect docket sourcing, executor verification, "
         "brokerage production, acquisitions screening, attorney relationships, and "
         "property-tax appeals without mixing estate proceeds with operator revenue. "

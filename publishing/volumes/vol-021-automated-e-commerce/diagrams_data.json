@@ -268,35 +268,35 @@
       "diagram_id": "diag-07-startup-capital-allocation",
       "chart_type": "stacked_comparison",
       "title": "Allocate Capital Before Funding Advertising Expansion",
-      "subtitle": "Four buckets across $30,000, $100,000, and $250,000 startup envelopes.",
+      "subtitle": "Four buckets across $15,000, $45,000, and $80,000 startup envelopes.",
       "chapter_number": 4,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values encode the $100,000 planning stack in USD. Each stage also states its $30,000 and $250,000 comparison allocations. These are startup funding envelopes, not the Conservative, Base, and Scaled annual revenue scenarios.",
-      "caption": "Lean: $12,000 + $6,000 + $4,000 + $8,000 = $30,000. Planning: $40,000 + $20,000 + $15,000 + $25,000 = $100,000. Expanded: $100,000 + $50,000 + $35,000 + $65,000 = $250,000.",
+      "assumptions_note": "Numeric values encode the $45,000 planning stack in USD. Each stage also states its $15,000 and $80,000 comparison allocations. These are startup funding envelopes, not the Conservative, Base, and Scaled annual revenue scenarios.",
+      "caption": "Lean: $6,000 + $3,000 + $2,000 + $4,000 = $15,000. Planning: $18,000 + $9,000 + $7,000 + $11,000 = $45,000. Expanded: $32,000 + $16,000 + $12,000 + $20,000 = $80,000.",
       "stages": [
         {
           "label": "Opening inventory and supplier purchase commitments",
-          "value": "Lean $12,000; planning $40,000; expanded $100,000",
-          "numeric_value": 40000.0,
-          "detail": "Fund landed inventory and supplier deposits with SKU-level sell-through limits. Keep purchase cash outflow separate from cost of goods recognized when products sell."
+          "value": "Lean $6,000; planning $18,000; expanded $32,000",
+          "numeric_value": 18000.0,
+          "detail": "Fund initial authorized-dealer test batches and supplier deposits with SKU-level sell-through limits. Keep purchase cash outflow separate from cost of goods recognized when products sell."
         },
         {
           "label": "Acquisition testing and launch creative production",
-          "value": "Lean $6,000; planning $20,000; expanded $50,000",
-          "numeric_value": 20000.0,
+          "value": "Lean $3,000; planning $9,000; expanded $16,000",
+          "numeric_value": 9000.0,
           "detail": "Release spend in measured cohorts across creative, product pages, and paid traffic. Stop additional funding when retained-order contribution fails the underwriting target."
         },
         {
           "label": "Storefront, integrations, and fulfillment onboarding setup",
-          "value": "Lean $4,000; planning $15,000; expanded $35,000",
-          "numeric_value": 15000.0,
+          "value": "Lean $2,000; planning $7,000; expanded $12,000",
+          "numeric_value": 7000.0,
           "detail": "Budget Shopify configuration, 3PL onboarding, product data, routing tests, and returns setup. Separate one-time implementation payments from recurring software and service expenses."
         },
         {
           "label": "Operating liquidity and exception recovery reserve",
-          "value": "Lean $8,000; planning $25,000; expanded $65,000",
-          "numeric_value": 25000.0,
-          "detail": "Hold cash for settlement delays, replacements, refunds, and operating expenses. Against the canonical $4,000–$25,000 monthly opex range, the planning reserve alone covers approximately 1–6.25 months before replenishment cash needs."
+          "value": "Lean $4,000; planning $11,000; expanded $20,000",
+          "numeric_value": 11000.0,
+          "detail": "Hold cash for settlement delays, replacements, refunds, and operating expenses. Against the canonical $4,000–$25,000 monthly opex range, the planning and expanded reserves bridge initial settlement float before repeat-cohort replenishment."
         }
       ]
     },

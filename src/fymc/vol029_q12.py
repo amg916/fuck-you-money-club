@@ -13,12 +13,12 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a Money-to-Manpower Score "
-        "of 54/100: this is a capital- and labor-intensive operating business, not a "
+        "Candidate #15, Insurance Restoration, ranks #13 with a Money-to-Manpower Score "
+        "of 87/100: this is a high-leverage, system-disciplined operating business, not a "
         "claims-arbitrage shortcut. Map the launch into five plays: water mitigation, "
         "fire and soot cleaning, mold remediation, storm stabilization and reconstruction, "
         "and evidence-led estimating and collections. The first month establishes a "
-        "5 FT + 6 C pod, proves safe dispatch, builds IICRC-aligned records, and limits "
+        "2 FT + 2 C pod, proves safe dispatch, builds IICRC-aligned records, and limits "
         "cash exposure before expanding. Canonical annual owner profit is $40,000 "
         "Conservative, $195,000 Base, and $450,000 Scaled; these are scenario outcomes, "
         "not first-month promises. Daily deliverables feed Day 30/60/90 decisions using "
@@ -31,19 +31,19 @@ CHAPTER_12 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; materials and subcontractors remain costs.",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C.",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; materials and subcontractors remain costs.",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C.",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; materials and subcontractors remain costs.",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C.",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C.",
         },
     ],
     "sections": [
@@ -76,7 +76,7 @@ CHAPTER_12 = {
                 ),
                 (
                     "Fund a bounded experiment before buying a warehouse of drying equipment. "
-                    "An illustrative $125,000 launch authorization, within the stated $75,000-$350,000 "
+                    "An illustrative $125,000 launch authorization, within the stated $18,000-$75,000 "
                     "startup range, allocates $30,000 to vehicles and equipment deposits or purchases, "
                     "$10,000 to initial insurance, credentials, training, and setup, $45,000 to "
                     "the first month's operating cash envelope, and $40,000 to protected reserve. "
@@ -84,7 +84,7 @@ CHAPTER_12 = {
                     "five full-time seats, $8,000 for recurring overhead, and at most $10,000 "
                     "for incremental pilot-job outlays. Replace these illustrative allowances "
                     "with actual local quotes before committing. The $35,000 recurring overhead "
-                    "fits the canonical $10,000-$45,000 monthly operating range; subcontractor "
+                    "fits the canonical $4,000-$20,000 monthly operating range; subcontractor "
                     "and material spending still requires a separate job-level cash schedule. "
                     "Track gross disbursements and receipts separately: collections do not silently "
                     "increase the authorized spending ceiling. Release reserve only against a "
@@ -133,7 +133,7 @@ CHAPTER_12 = {
                         "Remove unsupported services before any customer outreach",
                     ],
                     [
-                        "Day 2: owner confirms the eleven-person roster",
+                        "Day 2: owner confirms the four-person roster",
                         "Assign five employees and six named contractors",
                         "Record rates, availability, insurance, and classification review",
                         "Do not count unavailable contractors as capacity",
@@ -523,7 +523,7 @@ CHAPTER_12 = {
                     "toward the Scaled configuration requires the Day 90 tests, a "
                     "funded role-specific hiring plan, and explicit conversion from five "
                     "employees plus six contractors to six employees plus seven "
-                    "contractors. That is thirteen people, not an automated eleven-person "
+                    "contractors. That is six people, not an automated four-person "
                     "pod. Keep canonical annual economics intact: $500,000 gross restoration "
                     "billings at 8% net produces $40,000 owner profit; $1,500,000 at "
                     "13.0% produces $195,000; $2,500,000 at 18% produces $450,000. "
@@ -632,7 +632,7 @@ CHAPTER_12 = {
         "Complete the Day 1-14 licensing, safety, dispatch, referral, and documentation deliverables; label simulations separately from completed customer work.",
         "Connect every live job across photo records, Xactimate revisions, job-cost codes, signed authorizations, invoice delivery, and bank receipts.",
         "Prepare the Day 30 decision packet with sample size, weighted contribution, critical-record completeness, aged receivables, and a thirty-day receipt-delay stress test.",
-        "Record Day 30/60/90 Kill, Fix, or Scale decisions, fund each repair experiment explicitly, and reconcile any expansion to the canonical eleven-person or thirteen-person configuration.",
+        "Record Day 30/60/90 Kill, Fix, or Scale decisions, fund each repair experiment explicitly, and reconcile any expansion to the canonical four-person or six-person configuration.",
     ],
     "statutory_citations": [
         {

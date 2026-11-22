@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score. Across the volume's 12 mapped plays, this chapter "
         "isolates payer authority, lawful fee attachment, and collected cash, with "
         "specific treatment of distressed_asset_recovery and "

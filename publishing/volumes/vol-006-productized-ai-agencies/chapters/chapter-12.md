@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score and 23 mapped plays. Launch through one narrow workflow, one paid implementation offer, and one measurable acceptance contract rather than a catalog of custom agents. This sprint assigns commercial and technical ownership across two full-time operators and three contractors, caps initial cash exposure at $7,500, and converts daily evidence into explicit Day-30/60/90 decisions. The canonical annual owner-profit cases remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled; client savings never become agency revenue. Scale requires paid demand, repeatable delivery, safe exception handling, and positive project economics. Fix weak evidence with a bounded experiment; kill an exhausted offer rather than financing indefinite customization.
+Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score and 23 mapped plays. Launch through one narrow workflow, one paid implementation offer, and one measurable acceptance contract rather than a catalog of custom agents. This sprint assigns commercial and technical ownership across two full-time operators and three contractors, caps initial cash exposure at $7,500, and converts daily evidence into explicit Day-30/60/90 decisions. The canonical annual owner-profit cases remain $20,000 Conservative, $165,000 Base, and $400,000 Scaled; client savings never become agency revenue. Scale requires paid demand, repeatable delivery, safe exception handling, and positive project economics. Fix weak evidence with a bounded experiment; kill an exhausted offer rather than financing indefinite customization.
 
 ### Key Metrics
 

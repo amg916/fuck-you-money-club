@@ -265,38 +265,38 @@
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
+      "diagram_id": "diag-07-startup-capital-reference-budget",
       "chart_type": "stacked_comparison",
-      "title": "Allocate Startup Cash Before Pursuit Volume",
-      "subtitle": "Four buckets across $25,000, $100,000, and $150,000 funding plans.",
+      "title": "Allocate a $55,000 Reference Startup Budget",
+      "subtitle": "Four buckets across $20,000 lean, $55,000 reference, and $90,000 expanded plans.",
       "chapter_number": 4,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric bar values represent the selected $100,000 startup plan in USD. Each stage also specifies its $25,000 lean-plan and $150,000 upper-plan allocation. These are funding alternatives, not the Conservative, Base, or Scaled annual earnings scenarios.",
-      "caption": "Lean: $10,000 + $5,000 + $6,000 + $4,000 = $25,000. Selected: $40,000 + $20,000 + $25,000 + $15,000 = $100,000. Upper: $60,000 + $30,000 + $38,000 + $22,000 = $150,000.",
+      "assumptions_note": "Numeric bar values represent the $55,000 central/reference startup plan in USD, inside the canonical $20,000–$90,000 startup capital range. Each stage also specifies its $20,000 lean-plan and $90,000 expanded-plan allocation. These are funding alternatives, not the Conservative, Base, or Scaled annual earnings scenarios.",
+      "caption": "Lean: $8,000 + $4,000 + $5,000 + $3,000 = $20,000. Reference: $22,000 + $11,000 + $14,000 + $8,000 = $55,000. Expanded: $36,000 + $18,000 + $23,000 + $13,000 = $90,000.",
       "stages": [
         {
           "label": "Working-capital runway",
-          "value": "Selected $40,000; lean $10,000; upper $60,000",
-          "numeric_value": 40000.0,
-          "detail": "Hold cash for staged operating commitments and collection timing. At $5,000 monthly operating expense, these allocations cover two, eight, and twelve months before receipts; at $25,000 they cover 0.4, 1.6, and 2.4 months. Direct delivery costs can require additional cash."
+          "value": "Reference $22,000; lean $8,000; expanded $36,000",
+          "numeric_value": 22000.0,
+          "detail": "Hold cash for staged operating commitments and collection timing. At $5,000 monthly operating expense, the lean, reference, and expanded allocations cover 1.6, 4.4, and 7.2 months before receipts, respectively; at $25,000 they cover 0.32, 0.88, and 1.44 months. Direct delivery costs can require additional cash."
         },
         {
           "label": "Contracting and risk setup",
-          "value": "Selected $20,000; lean $5,000; upper $30,000",
-          "numeric_value": 20000.0,
+          "value": "Reference $11,000; lean $4,000; expanded $18,000",
+          "numeric_value": 11000.0,
           "detail": "Fund scoped agreement review, insurance placement, entity administration, and jurisdiction-specific operating procedures. SAM.gov registration itself is free; any paid assistance must be separately described rather than represented as a government registration charge."
         },
         {
           "label": "Bid-desk systems and launch delivery",
-          "value": "Selected $25,000; lean $6,000; upper $38,000",
-          "numeric_value": 25000.0,
+          "value": "Reference $14,000; lean $5,000; expanded $23,000",
+          "numeric_value": 14000.0,
           "detail": "Fund secure document storage, access controls, CRM setup, calendar automation, and limited launch contractor work. Use SAM.gov alerts, Microsoft 365, and documented checklists before purchasing overlapping research subscriptions."
         },
         {
           "label": "Pipeline development",
-          "value": "Selected $15,000; lean $4,000; upper $22,000",
-          "numeric_value": 15000.0,
-          "detail": "Fund targeted supplier outreach, capability interviews, industry meetings, and scoped proposal development. Model the stated 6–18 months to first deal; startup cash alone does not support every combination of that delay and the $5,000–$25,000 monthly operating range."
+          "value": "Reference $8,000; lean $3,000; expanded $13,000",
+          "numeric_value": 8000.0,
+          "detail": "Fund targeted supplier outreach, capability interviews, industry meetings, and scoped proposal development. Model the stated 3–12 months to first deal; startup cash alone does not support every combination of that delay and the $5,000–$25,000 monthly operating range."
         }
       ]
     },
@@ -307,7 +307,7 @@
       "subtitle": "Build operating readiness without assuming an award in the first month.",
       "chapter_number": 12,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values identify milestone end days. The sprint establishes service scope, systems, and pursuit discipline; the canonical time to first deal remains 6–18 months. Client awards, signed engagements, recognized fees, and collected cash are separate events.",
+      "assumptions_note": "Numeric values identify milestone end days. The sprint establishes service scope, systems, and pursuit discipline; the canonical time to first deal remains 3–12 months. Client awards, signed engagements, recognized fees, and collected cash are separate events.",
       "caption": "Advance on completed evidence: a service charter, an opportunity matrix, a tested submission workflow, and a dated pursuit plan.",
       "stages": [
         {

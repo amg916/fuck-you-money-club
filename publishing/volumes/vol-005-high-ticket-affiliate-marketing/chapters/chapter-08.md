@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #24 ranks #04 at 87/100 because high-ticket referrals can support a lean team, not because every attributed sale becomes cash. This chapter connects comparison hubs, useful browser tools, public benchmark data, and restrained visitor measurement. Its four mapped plays sit within the volume's 35 operator plays. Build one evidence trail from buyer question to cleared commission before buying more traffic or an old extension. Treat merchant sales, affiliate income, and owner profit as different ledgers. The stack earns its place only when it improves a buyer decision or proves incremental income after reversals and operating costs.
+Candidate #24 ranks #02 at 92/100 because high-ticket referrals can support a lean team, not because every attributed sale becomes cash. This chapter connects comparison hubs, useful browser tools, public benchmark data, and restrained visitor measurement. Its four mapped plays sit within the volume's 35 operator plays. Build one evidence trail from buyer question to cleared commission before buying more traffic or an old extension. Treat merchant sales, affiliate income, and owner profit as different ledgers. The stack earns its place only when it improves a buyer decision or proves incremental income after reversals and operating costs.
 
 ### Key Metrics
 

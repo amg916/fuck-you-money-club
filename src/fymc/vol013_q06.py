@@ -6,14 +6,14 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in intellectual property licensing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–24 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in intellectual property licensing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (4–14 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Mine Patent Assignments, Brand Category Gaps, Catalog Rights and Dataset Procurement Signals into Auditable Minimum Guarantees and Royalties",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. Its four mapped operator plays are patent "
         "commercialization, brand category licensing, catalog reuse, and dataset "
         "licensing. Source demand before accumulating rights: pair public records "
@@ -109,7 +109,7 @@ CHAPTER_6 = {
                     "Use a documented representation mandate or a conditional rights arrangement "
                     "that specifies who can negotiate and who must sign. Keep owner authorization "
                     "separate from buyer qualification in the CRM. With startup capital of "
-                    "$25,000–$250,000 and a 6–24 month first-deal window, avoid tying the entire "
+                    "$12,000–$75,000 and a 6–24 month first-deal window, avoid tying the entire "
                     "budget to speculative rights acquisition. Reserve capacity for document "
                     "review, buyer evaluation, and reporting setup, because those activities "
                     "convert a promising introduction into a collectible contract."
@@ -580,9 +580,9 @@ CHAPTER_6 = {
                     ],
                     [
                         "Monthly operating range must remain distinct from total annual costs",
-                        "$2,000–$15,000 monthly operating range is a separate planning input",
+                        "$2,000–$12,000 monthly operating range is a separate planning input",
                         "Reconcile owner participations, variable delivery costs, and other scenario expenses",
-                        "Founder maintains runway against the $25,000–$250,000 startup capital range",
+                        "Founder maintains runway against the $12,000–$75,000 startup capital range",
                     ],
                     [
                         "Renewal and royalty exceptions require evidence-backed follow-up before expansion",

@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 "
         "Money-to-Manpower Score. This sprint turns 18 mapped plays into an "
         "accountable launch system for two full-time operators and three "
         "contractors. Days 1–30 establish authorized supply, landed economics, "
@@ -107,7 +107,7 @@ CHAPTER_12 = {
                     "Days 5–7 establish a cash envelope before placing the "
                     "opening purchase order. This illustrative sprint requires "
                     "$60,000 of committed funding, within the candidate's "
-                    "$30,000–$250,000 startup range, and caps first-month cash "
+                    "$15,000–$80,000 startup range, and caps first-month cash "
                     "commitments at $35,000: $16,000 inventory and inbound freight, "
                     "$12,000 loaded payroll and contractor work, $3,000 advertising, "
                     "$2,000 systems and setup, and $2,000 contingency. The "

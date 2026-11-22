@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score. "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
         "This chapter maps six operator plays into one controlled launch: GIS discount sourcing, "
         "access-verified rural parcels, utility-ready infill, assemblage, minor subdivisions, and "
         "title-insured resale. One full-time owner and three contractors build a measurable pipeline "

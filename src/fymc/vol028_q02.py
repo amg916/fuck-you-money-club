@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100: collections can be automated, but cleaning capacity still requires "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100: collections can be automated, but cleaning capacity still requires "
         "paid labor. Buyers purchase reliable occupancy, inspection evidence, and relief from "
         "supervisory distraction. This chapter maps four plays: direct recurring facility "
         "contracts, medical-site supervisor pods, public-prime subcontract collections, and "
@@ -31,19 +31,19 @@ CHAPTER_2 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross cleaning contract revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual gross cleaning contract revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual gross cleaning contract revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -351,11 +351,11 @@ CHAPTER_2 = {
                 (
                     "Reconcile the portfolio to the canonical scorecard before presenting upside. "
                     "Conservative annual cleaning revenue is $250,000, costs are $230,000, "
-                    "and owner net profit is $20,000 at 8%, with 5 FT + 4 C. "
+                    "and owner net profit is $20,000 at 8%, with 1 FT + 3 C. "
                     "Base revenue is $725,000, costs are $638,000, and owner net profit "
-                    "is $87,000 at 12.0%, again with 5 FT + 4 C. Scaled revenue "
+                    "is $87,000 at 12.0%, again with 1 FT + 3 C. Scaled revenue "
                     "is $1,200,000, costs are $1,008,000, and owner net profit is "
-                    "$192,000 at 16%, with 6 FT + 5 C. Twelve annualized contracts "
+                    "$192,000 at 16%, with 2 FT + 4 C. Twelve annualized contracts "
                     "matching the $5,000 example produce $720,000 revenue, $633,600 cost, "
                     "and $86,400 profit; a $5,000 annual extra-work package costing "
                     "$4,400 completes the Base totals exactly. This is an arithmetic "

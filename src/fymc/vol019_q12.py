@@ -13,8 +13,8 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a "
-        "72/100 Money-to-Manpower Score. This sprint organizes nine mapped plays "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a "
+        "87/100 Money-to-Manpower Score. This sprint organizes nine mapped plays "
         "around authorized resale, deal registration, AWS CPPO, Microsoft CSP, "
         "license reconciliation, implementation, migration, support, and renewals. "
         "The first thirty days establish an executable channel, documented buyer "
@@ -102,7 +102,7 @@ CHAPTER_12 = {
                 (
                     "Set cash controls on Day 5 before paying for certifications or "
                     "contractor availability. The canonical startup-capital range is "
-                    "$25,000–$150,000 and monthly operating expense range is "
+                    "$15,000–$75,000 and monthly operating expense range is "
                     "$5,000–$25,000; this chapter selects a tighter $15,000 first-month "
                     "operating-disbursement ceiling. Allocate at most $7,000 to full-time "
                     "cash compensation, $3,000 to contractor work, $1,000 to operating "

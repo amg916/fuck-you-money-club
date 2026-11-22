@@ -84,7 +84,7 @@ def build_volume_024_workbook() -> dict:
                             "separately reviewed Texas redeemable deeds, with "
                             "$125,000 committed capital and no occupied-property "
                             "management. Volume 024 ranks #24 of 29 and scores "
-                            "62/100. Budget one full-time operator plus two "
+                            "81/100. Budget one full-time operator plus two "
                             "contractors; retain the canonical 6–36 month "
                             "first-deal planning window."
                         ),
@@ -2021,13 +2021,8 @@ def build_volume_024_workbook() -> dict:
                             "business."
                         ),
                         (
-                            "The 62/100 score "
-                            "comprises revenue potential "
-                            "17, margin potential "
-                            "15, team efficiency "
-                            "17, startup accessibility "
-                            "5, and automation "
-                            "8. Annual owner-profit "
+                            "The 81/100 score "
+                            "comprises revenue potential 19, margin potential 24, team efficiency 16, startup accessibility 11, and automation potential 11. Annual owner-profit "
                             "targets remain $4,500, "
                             "$41,438, and $99,000 "
                             "for conservative, base, "

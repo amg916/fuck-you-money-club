@@ -96,7 +96,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> /Contents 11 0 R >>
 endobj
 11 0 obj
-<< /Length 5455 >>
+<< /Length 5362 >>
 stream
 BT /F2 8 Tf 1 0 0 1 54.00 755.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 54.00 747.00 m 558.00 747.00 l S
@@ -112,37 +112,37 @@ BT /F1 10.5 Tf 1 0 0 1 54.00 594.20 Tm (Type: textarea) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 54.00 578.97 Tm (Prompt: Record the candidate's canonical rank, score components, and operating constraints. Identify the) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 54.00 563.75 Tm (specific repetitive tasks that automation can remove while preserving licensed judgment and representative) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 54.00 548.52 Tm (control over consequential decisions.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 533.30 Tm (Example: Candidate #9, Probate Real Estate, ranks #16 of 29 with 76/100: revenue potential 23, margin) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 518.07 Tm (potential 18, team efficiency 16, startup accessibility 9, and automation 10. Docket alerts and transaction) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 502.85 Tm (checklists support the High-Leverage Operator Play; they do not replace court interpretation or negotiations.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 487.62 Tm (Name: Representative identity and documented authority) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 472.40 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 457.17 Tm (Prompt: Identify the appointed representative, appointment date, current letters, relevant restrictions, and) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 441.95 Tm (counsel's procedure assessment. Specify what evidence must exist before the broker accepts instructions,) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 426.72 Tm (access permissions, or a listing agreement.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 411.50 Tm (Example: Case PR-2026-0412 names Jordan Lee as personal representative. The file contains current) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 396.27 Tm (Letters of Administration and the appointment order; counsel confirms full IAEA authority and checks for) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 381.05 Tm (restrictions. Jordan signs the listing only after the broker verifies identity and matches the signing capacity.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 365.82 Tm (Name: Counterparty communication and dispute map) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 350.60 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 335.37 Tm (Prompt: Map who instructs the broker, who receives updates, and who may object through the applicable) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 320.15 Tm (procedure. Record actual disputes and communication permissions without assuming every beneficiary) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 304.92 Tm (controls pricing or contract execution.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 289.70 Tm (Example: Jordan instructs the broker; estate counsel receives legal questions; three beneficiaries receive an) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 274.47 Tm (authorized Friday status summary. One beneficiary disputes the proposed cleanout budget. The broker) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 259.25 Tm (records the concern and routes it to Jordan and counsel rather than collecting informal beneficiary) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 244.02 Tm (signatures.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 228.80 Tm (Name: Property condition and access underwriting) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 213.57 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 198.35 Tm (Prompt: Describe occupancy, utilities, security, insurance, deferred maintenance, and inspection access.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 183.12 Tm (Separate observed facts from estimates, identify qualified vendors, and assign the representative) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 167.90 Tm (responsibility for authorizing estate expenditures.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 152.67 Tm (Example: The $625,000 target property is vacant with active utilities and a leaking garage roof. Jordan) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 137.45 Tm (authorizes a $450 inspection and obtains vacant-property coverage confirmation. The coordinator logs) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 122.22 Tm (lockbox access; no belongings leave the house until the representative gives written disposition instructions.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 107.00 Tm (Name: Title debt and estate proceeds bridge) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 91.77 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 76.55 Tm (Prompt: List preliminary liens, payoff estimates, taxes, selling costs, and title exceptions. Calculate) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 533.30 Tm (Example: Candidate #9, Probate Real Estate, ranks #26 of 29 with 80/100: revenue potential 23, margin) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 518.07 Tm (potential 20, team efficiency 16, startup accessibility 10, and automation potential 11. Docket alerts and) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 502.85 Tm (transaction checklists support the High-Leverage Operator Play; they do not replace court interpretation or) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 487.62 Tm (negotiations.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 472.40 Tm (Name: Representative identity and documented authority) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 457.17 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 441.95 Tm (Prompt: Identify the appointed representative, appointment date, current letters, relevant restrictions, and) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 426.72 Tm (counsel's procedure assessment. Specify what evidence must exist before the broker accepts instructions,) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 411.50 Tm (access permissions, or a listing agreement.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 396.27 Tm (Example: Case PR-2026-0412 names Jordan Lee as personal representative. The file contains current) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 381.05 Tm (Letters of Administration and the appointment order; counsel confirms full IAEA authority and checks for) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 365.82 Tm (restrictions. Jordan signs the listing only after the broker verifies identity and matches the signing capacity.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 350.60 Tm (Name: Counterparty communication and dispute map) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 335.37 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 320.15 Tm (Prompt: Map who instructs the broker, who receives updates, and who may object through the applicable) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 304.92 Tm (procedure. Record actual disputes and communication permissions without assuming every beneficiary) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 289.70 Tm (controls pricing or contract execution.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 274.47 Tm (Example: Jordan instructs the broker; estate counsel receives legal questions; three beneficiaries receive an) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 259.25 Tm (authorized Friday status summary. One beneficiary disputes the proposed cleanout budget. The broker) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 244.02 Tm (records the concern and routes it to Jordan and counsel rather than collecting informal beneficiary) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 228.80 Tm (signatures.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 213.57 Tm (Name: Property condition and access underwriting) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 198.35 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 183.12 Tm (Prompt: Describe occupancy, utilities, security, insurance, deferred maintenance, and inspection access.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 167.90 Tm (Separate observed facts from estimates, identify qualified vendors, and assign the representative) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 152.67 Tm (responsibility for authorizing estate expenditures.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 137.45 Tm (Example: The $625,000 target property is vacant with active utilities and a leaking garage roof. Jordan) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 122.22 Tm (authorizes a $450 inspection and obtains vacant-property coverage confirmation. The coordinator logs) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 107.00 Tm (lockbox access; no belongings leave the house until the representative gives written disposition instructions.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 91.77 Tm (Name: Title debt and estate proceeds bridge) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 76.55 Tm (Type: textarea) Tj ET
 BT /F2 8 Tf 277.20 30 Td (Page 3 of 84) Tj ET
 endstream
 endobj
@@ -150,51 +150,51 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> /Contents 13 0 R >>
 endobj
 13 0 obj
-<< /Length 5116 >>
+<< /Length 5206 >>
 stream
 BT /F2 8 Tf 1 0 0 1 54.00 755.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 54.00 747.00 m 558.00 747.00 l S
-BT /F1 10.5 Tf 1 0 0 1 54.00 716.00 Tm (illustrative estate proceeds separately from brokerage receipts, identifying items that require updated) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 700.77 Tm (demands or title clearance before closing.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 685.55 Tm (Example: At a $625,000 sale, subtract a $210,000 mortgage, $12,000 tax lien, $18,750 negotiated) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 670.32 Tm (listing-side commission, and $14,250 other estimated selling costs: provisional estate proceeds equal) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 655.10 Tm ($370,000. The operator retains $15,000 after the assumed brokerage split; payoff interest and final) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 639.87 Tm (settlement charges remain subject to reconciliation.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 624.65 Tm (Name: Sale route and court timing) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 609.42 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 594.20 Tm (Prompt: Identify whether the proposed transaction uses independent administration or a court-supervised) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 578.97 Tm (sale route. Record counsel's required notices, objection handling, hearing dependencies, and timing) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 563.75 Tm (assumptions rather than promising a fixed closing date.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 548.52 Tm (Example: Counsel selects a full-authority IAEA sale subject to the applicable notice process under California) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 533.30 Tm (Probate Code sections 10580-10589. The planning calendar allows notice time plus a 30-day buyer escrow.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 518.07 Tm (An objection moves the file to counsel's revised procedure before any closing commitment.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 502.85 Tm (Name: Pricing evidence and downside sensitivity) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 487.62 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 472.40 Tm (Prompt: Document comparable sales, condition adjustments, valuation date, and the effect of a lower sale) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 457.17 Tm (price on retained commission. State the negotiated rate and split explicitly; never present either as an) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 441.95 Tm (industry requirement.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 426.72 Tm (Example: Three adjusted comparable sales support $600,000 to $650,000, with $625,000 used for planning.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 411.50 Tm (At an illustrative negotiated 3% listing-side rate and 80% retention, operator revenue is $15,000. A 10%) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 396.27 Tm (price reduction produces $562,500 of sale value and $13,500 of retained commission.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 381.05 Tm (Name: Acquisition and concierge conflict screen) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 365.82 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 350.60 Tm (Prompt: Identify operator ownership interests, proposed purchases, vendor relationships, and concierge) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 335.37 Tm (compensation. Describe how conflicts are disclosed and evaluated before proceeding, including alternatives) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 320.15 Tm (that preserve independent representation and estate decision-making.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 304.92 Tm (Example: An affiliated acquisition entity offers $540,000 while the listing analysis supports $625,000 before) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 289.70 Tm (condition adjustments. The broker discloses ownership, stops using confidential seller leverage in) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 274.47 Tm (acquisition negotiations, and asks counsel to assess the conflict and proposed procedure. The forecast) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 259.25 Tm (excludes acquisition resale gains.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 244.02 Tm (Name: Pursuit decision and resource ceiling) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 228.80 Tm (Type: textarea) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 213.57 Tm (Prompt: State pursue, defer, or decline with evidence-based reasons, an initial labor budget, cash exposure) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 198.35 Tm (limit, and next review date. Tie the decision to authority, economics, property readiness, and realistic closing) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 183.12 Tm (dependencies.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 167.90 Tm (Example: Pursue after authority verification, preliminary title review, and signed representation documents.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 152.67 Tm (Limit pre-listing work to 12 staff hours and $600 of brokerage spending; estate vendors invoice the estate) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 137.45 Tm (directly. Review in seven days if access or insurance remains unresolved and defer marketing until those) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 122.22 Tm (issues are cleared.) Tj ET
-BT /F0 17 Tf 1 0 0 1 54.00 100.00 Tm (Completion Gate) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 716.00 Tm (Prompt: List preliminary liens, payoff estimates, taxes, selling costs, and title exceptions. Calculate) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 700.77 Tm (illustrative estate proceeds separately from brokerage receipts, identifying items that require updated) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 685.55 Tm (demands or title clearance before closing.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 670.32 Tm (Example: At a $625,000 sale, subtract a $210,000 mortgage, $12,000 tax lien, $18,750 negotiated) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 655.10 Tm (listing-side commission, and $14,250 other estimated selling costs: provisional estate proceeds equal) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 639.87 Tm ($370,000. The operator retains $15,000 after the assumed brokerage split; payoff interest and final) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 624.65 Tm (settlement charges remain subject to reconciliation.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 609.42 Tm (Name: Sale route and court timing) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 594.20 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 578.97 Tm (Prompt: Identify whether the proposed transaction uses independent administration or a court-supervised) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 563.75 Tm (sale route. Record counsel's required notices, objection handling, hearing dependencies, and timing) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 548.52 Tm (assumptions rather than promising a fixed closing date.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 533.30 Tm (Example: Counsel selects a full-authority IAEA sale subject to the applicable notice process under California) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 518.07 Tm (Probate Code sections 10580-10589. The planning calendar allows notice time plus a 30-day buyer escrow.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 502.85 Tm (An objection moves the file to counsel's revised procedure before any closing commitment.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 487.62 Tm (Name: Pricing evidence and downside sensitivity) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 472.40 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 457.17 Tm (Prompt: Document comparable sales, condition adjustments, valuation date, and the effect of a lower sale) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 441.95 Tm (price on retained commission. State the negotiated rate and split explicitly; never present either as an) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 426.72 Tm (industry requirement.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 411.50 Tm (Example: Three adjusted comparable sales support $600,000 to $650,000, with $625,000 used for planning.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 396.27 Tm (At an illustrative negotiated 3% listing-side rate and 80% retention, operator revenue is $15,000. A 10%) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 381.05 Tm (price reduction produces $562,500 of sale value and $13,500 of retained commission.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 365.82 Tm (Name: Acquisition and concierge conflict screen) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 350.60 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 335.37 Tm (Prompt: Identify operator ownership interests, proposed purchases, vendor relationships, and concierge) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 320.15 Tm (compensation. Describe how conflicts are disclosed and evaluated before proceeding, including alternatives) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 304.92 Tm (that preserve independent representation and estate decision-making.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 289.70 Tm (Example: An affiliated acquisition entity offers $540,000 while the listing analysis supports $625,000 before) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 274.47 Tm (condition adjustments. The broker discloses ownership, stops using confidential seller leverage in) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 259.25 Tm (acquisition negotiations, and asks counsel to assess the conflict and proposed procedure. The forecast) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 244.02 Tm (excludes acquisition resale gains.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 228.80 Tm (Name: Pursuit decision and resource ceiling) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 213.57 Tm (Type: textarea) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 198.35 Tm (Prompt: State pursue, defer, or decline with evidence-based reasons, an initial labor budget, cash exposure) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 183.12 Tm (limit, and next review date. Tie the decision to authority, economics, property readiness, and realistic closing) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 167.90 Tm (dependencies.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 152.67 Tm (Example: Pursue after authority verification, preliminary title review, and signed representation documents.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 137.45 Tm (Limit pre-listing work to 12 staff hours and $600 of brokerage spending; estate vendors invoice the estate) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 122.22 Tm (directly. Review in seven days if access or insurance remains unresolved and defer marketing until those) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 107.00 Tm (issues are cleared.) Tj ET
 BT /F2 8 Tf 277.20 30 Td (Page 4 of 84) Tj ET
 endstream
 endobj
@@ -202,26 +202,27 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> /Contents 15 0 R >>
 endobj
 15 0 obj
-<< /Length 1254 >>
+<< /Length 1315 >>
 stream
 BT /F2 8 Tf 1 0 0 1 54.00 755.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 54.00 747.00 m 558.00 747.00 l S
-BT /F1 10.5 Tf 1 0 0 1 54.00 716.00 Tm (The supervising broker records a pursuit decision supported by verified signing authority, a documented sale) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 700.77 Tm (route, preliminary property and title findings, a retained-commission estimate, and named owners for every) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 685.55 Tm (unresolved condition.) Tj ET
-BT /F0 17 Tf 1 0 0 1 54.00 663.32 Tm (Operator checklist) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 631.67 Tm ([ ] Review assumptions) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 54.00 609.45 Tm ([ ] Record next action) Tj ET
-BT /F0 17 Tf 1 0 0 1 54.00 587.22 Tm (Write-in workspace) Tj ET
-q 0 0 0 RG 54.00 415.57 504.00 140.00 re S Q
-0.6 w 62.00 535.57 m 550.00 535.57 l S
-0.6 w 62.00 515.57 m 550.00 515.57 l S
-0.6 w 62.00 495.57 m 550.00 495.57 l S
-0.6 w 62.00 475.57 m 550.00 475.57 l S
-0.6 w 62.00 455.57 m 550.00 455.57 l S
-0.6 w 62.00 435.57 m 550.00 435.57 l S
-BT /F0 10 Tf 1 0 0 1 54.00 400.57 Tm (Statutory & source citations) Tj ET
-BT /F1 9 Tf 1 0 0 1 54.00 379.07 Tm (No source timestamps supplied; verify before publication.) Tj ET
+BT /F0 17 Tf 1 0 0 1 54.00 716.00 Tm (Completion Gate) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 684.35 Tm (The supervising broker records a pursuit decision supported by verified signing authority, a documented sale) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 669.12 Tm (route, preliminary property and title findings, a retained-commission estimate, and named owners for every) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 653.90 Tm (unresolved condition.) Tj ET
+BT /F0 17 Tf 1 0 0 1 54.00 631.67 Tm (Operator checklist) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 600.02 Tm ([ ] Review assumptions) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 577.80 Tm ([ ] Record next action) Tj ET
+BT /F0 17 Tf 1 0 0 1 54.00 555.57 Tm (Write-in workspace) Tj ET
+q 0 0 0 RG 54.00 383.92 504.00 140.00 re S Q
+0.6 w 62.00 503.92 m 550.00 503.92 l S
+0.6 w 62.00 483.92 m 550.00 483.92 l S
+0.6 w 62.00 463.92 m 550.00 463.92 l S
+0.6 w 62.00 443.92 m 550.00 443.92 l S
+0.6 w 62.00 423.92 m 550.00 423.92 l S
+0.6 w 62.00 403.92 m 550.00 403.92 l S
+BT /F0 10 Tf 1 0 0 1 54.00 368.92 Tm (Statutory & source citations) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 347.42 Tm (No source timestamps supplied; verify before publication.) Tj ET
 BT /F2 8 Tf 277.20 30 Td (Page 5 of 84) Tj ET
 endstream
 endobj
@@ -5962,530 +5963,530 @@ xref
 0000002130 00000 n 
 0000005907 00000 n 
 0000006055 00000 n 
-0000011563 00000 n 
-0000011711 00000 n 
-0000016880 00000 n 
-0000017028 00000 n 
-0000018335 00000 n 
-0000018483 00000 n 
-0000022192 00000 n 
-0000022340 00000 n 
-0000027639 00000 n 
-0000027787 00000 n 
-0000032910 00000 n 
-0000033058 00000 n 
-0000034436 00000 n 
-0000034584 00000 n 
-0000038515 00000 n 
-0000038663 00000 n 
-0000043934 00000 n 
-0000044082 00000 n 
-0000049240 00000 n 
-0000049388 00000 n 
-0000050745 00000 n 
-0000050893 00000 n 
-0000054904 00000 n 
-0000055052 00000 n 
-0000060452 00000 n 
-0000060600 00000 n 
-0000065759 00000 n 
-0000065907 00000 n 
-0000067283 00000 n 
-0000067431 00000 n 
-0000071161 00000 n 
-0000071309 00000 n 
-0000076761 00000 n 
-0000076909 00000 n 
-0000082106 00000 n 
-0000082254 00000 n 
-0000083268 00000 n 
-0000083416 00000 n 
-0000087027 00000 n 
-0000087175 00000 n 
-0000092446 00000 n 
-0000092594 00000 n 
-0000097947 00000 n 
-0000098095 00000 n 
-0000099518 00000 n 
-0000099695 00000 n 
-0000099871 00000 n 
-0000100049 00000 n 
-0000100226 00000 n 
-0000100403 00000 n 
-0000100596 00000 n 
-0000106268 00000 n 
-0000106444 00000 n 
-0000106622 00000 n 
-0000106799 00000 n 
-0000106975 00000 n 
-0000107150 00000 n 
-0000107327 00000 n 
-0000107527 00000 n 
-0000113649 00000 n 
-0000113825 00000 n 
-0000114002 00000 n 
-0000114178 00000 n 
-0000114355 00000 n 
-0000114531 00000 n 
-0000114709 00000 n 
-0000114909 00000 n 
-0000120732 00000 n 
-0000120909 00000 n 
-0000121086 00000 n 
-0000121262 00000 n 
-0000121439 00000 n 
-0000121615 00000 n 
-0000121793 00000 n 
-0000121993 00000 n 
-0000127944 00000 n 
-0000128121 00000 n 
-0000128299 00000 n 
-0000128476 00000 n 
-0000128652 00000 n 
-0000128827 00000 n 
-0000129004 00000 n 
-0000129204 00000 n 
-0000135302 00000 n 
-0000135478 00000 n 
-0000135655 00000 n 
-0000135831 00000 n 
-0000136008 00000 n 
-0000136184 00000 n 
-0000136363 00000 n 
-0000136566 00000 n 
-0000142701 00000 n 
-0000142879 00000 n 
-0000143057 00000 n 
-0000143234 00000 n 
-0000143413 00000 n 
-0000143591 00000 n 
-0000143769 00000 n 
-0000143977 00000 n 
-0000150040 00000 n 
-0000150217 00000 n 
-0000150395 00000 n 
-0000150572 00000 n 
-0000150752 00000 n 
-0000150931 00000 n 
-0000151108 00000 n 
-0000151316 00000 n 
-0000157279 00000 n 
-0000157455 00000 n 
-0000157633 00000 n 
-0000157810 00000 n 
-0000157988 00000 n 
-0000158165 00000 n 
-0000158343 00000 n 
-0000158518 00000 n 
-0000158734 00000 n 
-0000164420 00000 n 
-0000164597 00000 n 
-0000164773 00000 n 
-0000164952 00000 n 
-0000165130 00000 n 
-0000165309 00000 n 
-0000165487 00000 n 
-0000165695 00000 n 
-0000171531 00000 n 
-0000171709 00000 n 
-0000171886 00000 n 
-0000172064 00000 n 
-0000172241 00000 n 
-0000172418 00000 n 
-0000172594 00000 n 
-0000172802 00000 n 
-0000179072 00000 n 
-0000179250 00000 n 
-0000179427 00000 n 
-0000179605 00000 n 
-0000179782 00000 n 
-0000179959 00000 n 
-0000180135 00000 n 
-0000180343 00000 n 
-0000186343 00000 n 
-0000186521 00000 n 
-0000186698 00000 n 
-0000186876 00000 n 
-0000187053 00000 n 
-0000187231 00000 n 
-0000187408 00000 n 
-0000187585 00000 n 
-0000187801 00000 n 
-0000194133 00000 n 
-0000194311 00000 n 
-0000194490 00000 n 
-0000194668 00000 n 
-0000194845 00000 n 
-0000195021 00000 n 
-0000195197 00000 n 
-0000195405 00000 n 
-0000201457 00000 n 
-0000201634 00000 n 
-0000201812 00000 n 
-0000201989 00000 n 
-0000202168 00000 n 
-0000202346 00000 n 
-0000202522 00000 n 
-0000202730 00000 n 
-0000208488 00000 n 
-0000208665 00000 n 
-0000208843 00000 n 
-0000209020 00000 n 
-0000209198 00000 n 
-0000209375 00000 n 
-0000209552 00000 n 
-0000209760 00000 n 
-0000215962 00000 n 
-0000216138 00000 n 
-0000216317 00000 n 
-0000216495 00000 n 
-0000216673 00000 n 
-0000216850 00000 n 
-0000217027 00000 n 
-0000217235 00000 n 
-0000223061 00000 n 
-0000223237 00000 n 
-0000223414 00000 n 
-0000223590 00000 n 
-0000223768 00000 n 
-0000223945 00000 n 
-0000224123 00000 n 
-0000224331 00000 n 
-0000230362 00000 n 
-0000230539 00000 n 
-0000230716 00000 n 
-0000230892 00000 n 
-0000231071 00000 n 
-0000231249 00000 n 
-0000231427 00000 n 
-0000231635 00000 n 
-0000237434 00000 n 
-0000237611 00000 n 
-0000237789 00000 n 
-0000237966 00000 n 
-0000238143 00000 n 
-0000238319 00000 n 
-0000238497 00000 n 
-0000238705 00000 n 
-0000244722 00000 n 
-0000244899 00000 n 
-0000245077 00000 n 
-0000245254 00000 n 
-0000245432 00000 n 
-0000245609 00000 n 
-0000245786 00000 n 
-0000245994 00000 n 
-0000252336 00000 n 
-0000252512 00000 n 
-0000252690 00000 n 
-0000252867 00000 n 
-0000253045 00000 n 
-0000253222 00000 n 
-0000253400 00000 n 
-0000253575 00000 n 
-0000253791 00000 n 
-0000260101 00000 n 
-0000260280 00000 n 
-0000260458 00000 n 
-0000260635 00000 n 
-0000260811 00000 n 
-0000260989 00000 n 
-0000261166 00000 n 
-0000261374 00000 n 
-0000266958 00000 n 
-0000267135 00000 n 
-0000267311 00000 n 
-0000267488 00000 n 
-0000267664 00000 n 
-0000267841 00000 n 
-0000268017 00000 n 
-0000268194 00000 n 
-0000268410 00000 n 
-0000274118 00000 n 
-0000274294 00000 n 
-0000274472 00000 n 
-0000274649 00000 n 
-0000274827 00000 n 
-0000275004 00000 n 
-0000275183 00000 n 
-0000275391 00000 n 
-0000281321 00000 n 
-0000281499 00000 n 
-0000281677 00000 n 
-0000281854 00000 n 
-0000282031 00000 n 
-0000282207 00000 n 
-0000282385 00000 n 
-0000282593 00000 n 
-0000288786 00000 n 
-0000288963 00000 n 
-0000289141 00000 n 
-0000289318 00000 n 
-0000289497 00000 n 
-0000289675 00000 n 
-0000289852 00000 n 
-0000290060 00000 n 
-0000296098 00000 n 
-0000296274 00000 n 
-0000296452 00000 n 
-0000296629 00000 n 
-0000296807 00000 n 
-0000296984 00000 n 
-0000297163 00000 n 
-0000297371 00000 n 
-0000303339 00000 n 
-0000303517 00000 n 
-0000303694 00000 n 
-0000303870 00000 n 
-0000304048 00000 n 
-0000304225 00000 n 
-0000304404 00000 n 
-0000304612 00000 n 
-0000310715 00000 n 
-0000310893 00000 n 
-0000311071 00000 n 
-0000311248 00000 n 
-0000311425 00000 n 
-0000311601 00000 n 
-0000311779 00000 n 
-0000311987 00000 n 
-0000318161 00000 n 
-0000318338 00000 n 
-0000318516 00000 n 
-0000318693 00000 n 
-0000318870 00000 n 
-0000319046 00000 n 
-0000319224 00000 n 
-0000319399 00000 n 
-0000319615 00000 n 
-0000325802 00000 n 
-0000325981 00000 n 
-0000326159 00000 n 
-0000326336 00000 n 
-0000326512 00000 n 
-0000326690 00000 n 
-0000326865 00000 n 
-0000327073 00000 n 
-0000333117 00000 n 
-0000333294 00000 n 
-0000333470 00000 n 
-0000333649 00000 n 
-0000333827 00000 n 
-0000334005 00000 n 
-0000334182 00000 n 
-0000334390 00000 n 
-0000340156 00000 n 
-0000340333 00000 n 
-0000340509 00000 n 
-0000340688 00000 n 
-0000340866 00000 n 
-0000341044 00000 n 
-0000341221 00000 n 
-0000341397 00000 n 
-0000341613 00000 n 
-0000347819 00000 n 
-0000347996 00000 n 
-0000348173 00000 n 
-0000348349 00000 n 
-0000348527 00000 n 
-0000348704 00000 n 
-0000348881 00000 n 
-0000349089 00000 n 
-0000355128 00000 n 
-0000355306 00000 n 
-0000355484 00000 n 
-0000355661 00000 n 
-0000355839 00000 n 
-0000356016 00000 n 
-0000356195 00000 n 
-0000356403 00000 n 
-0000362447 00000 n 
-0000362625 00000 n 
-0000362803 00000 n 
-0000362980 00000 n 
-0000363158 00000 n 
-0000363335 00000 n 
-0000363513 00000 n 
-0000363721 00000 n 
-0000369888 00000 n 
-0000370065 00000 n 
-0000370243 00000 n 
-0000370420 00000 n 
-0000370599 00000 n 
-0000370777 00000 n 
-0000370955 00000 n 
-0000371163 00000 n 
-0000377111 00000 n 
-0000377288 00000 n 
-0000377466 00000 n 
-0000377643 00000 n 
-0000377821 00000 n 
-0000377998 00000 n 
-0000378176 00000 n 
-0000378384 00000 n 
-0000384481 00000 n 
-0000384658 00000 n 
-0000384835 00000 n 
-0000385011 00000 n 
-0000385189 00000 n 
-0000385366 00000 n 
-0000385544 00000 n 
-0000385752 00000 n 
-0000391723 00000 n 
-0000391900 00000 n 
-0000392078 00000 n 
-0000392255 00000 n 
-0000392432 00000 n 
-0000392608 00000 n 
-0000392785 00000 n 
-0000392993 00000 n 
-0000398953 00000 n 
-0000399129 00000 n 
-0000399306 00000 n 
-0000399482 00000 n 
-0000399660 00000 n 
-0000399837 00000 n 
-0000400015 00000 n 
-0000400223 00000 n 
-0000406108 00000 n 
-0000406285 00000 n 
-0000406462 00000 n 
-0000406638 00000 n 
-0000406816 00000 n 
-0000406993 00000 n 
-0000407170 00000 n 
-0000407378 00000 n 
-0000413305 00000 n 
-0000413481 00000 n 
-0000413659 00000 n 
-0000413836 00000 n 
-0000414013 00000 n 
-0000414189 00000 n 
-0000414367 00000 n 
-0000414575 00000 n 
-0000420424 00000 n 
-0000420601 00000 n 
-0000420780 00000 n 
-0000420958 00000 n 
-0000421136 00000 n 
-0000421313 00000 n 
-0000421491 00000 n 
-0000421699 00000 n 
-0000427444 00000 n 
-0000427621 00000 n 
-0000427799 00000 n 
-0000427976 00000 n 
-0000428153 00000 n 
-0000428329 00000 n 
-0000428507 00000 n 
-0000428715 00000 n 
-0000434697 00000 n 
-0000434874 00000 n 
-0000435051 00000 n 
-0000435227 00000 n 
-0000435404 00000 n 
-0000435580 00000 n 
-0000435759 00000 n 
-0000435967 00000 n 
-0000442042 00000 n 
-0000442220 00000 n 
-0000442399 00000 n 
-0000442577 00000 n 
-0000442754 00000 n 
-0000442930 00000 n 
-0000443108 00000 n 
-0000443283 00000 n 
-0000443499 00000 n 
-0000449528 00000 n 
-0000449706 00000 n 
-0000449883 00000 n 
-0000450061 00000 n 
-0000450238 00000 n 
-0000450417 00000 n 
-0000450595 00000 n 
-0000450803 00000 n 
-0000456568 00000 n 
-0000456745 00000 n 
-0000456921 00000 n 
-0000457100 00000 n 
-0000457278 00000 n 
-0000457455 00000 n 
-0000457631 00000 n 
-0000457839 00000 n 
-0000463662 00000 n 
-0000463840 00000 n 
-0000464017 00000 n 
-0000464195 00000 n 
-0000464372 00000 n 
-0000464550 00000 n 
-0000464727 00000 n 
-0000464903 00000 n 
-0000465119 00000 n 
-0000471288 00000 n 
-0000471465 00000 n 
-0000471644 00000 n 
-0000471822 00000 n 
-0000472000 00000 n 
-0000472177 00000 n 
-0000472355 00000 n 
-0000472563 00000 n 
-0000478388 00000 n 
-0000478565 00000 n 
-0000478742 00000 n 
-0000478918 00000 n 
-0000479096 00000 n 
-0000479273 00000 n 
-0000479451 00000 n 
-0000479659 00000 n 
-0000485571 00000 n 
-0000485748 00000 n 
-0000485927 00000 n 
-0000486105 00000 n 
-0000486283 00000 n 
-0000486460 00000 n 
-0000486638 00000 n 
-0000486846 00000 n 
-0000492894 00000 n 
-0000493071 00000 n 
-0000493250 00000 n 
-0000493428 00000 n 
-0000493606 00000 n 
-0000493783 00000 n 
-0000493961 00000 n 
-0000494169 00000 n 
-0000500430 00000 n 
-0000500607 00000 n 
-0000500784 00000 n 
-0000500960 00000 n 
-0000501138 00000 n 
-0000501315 00000 n 
-0000501494 00000 n 
-0000501702 00000 n 
-0000507644 00000 n 
-0000507822 00000 n 
-0000507999 00000 n 
-0000508175 00000 n 
-0000508353 00000 n 
-0000508530 00000 n 
-0000508708 00000 n 
-0000508916 00000 n 
-0000514955 00000 n 
-0000515132 00000 n 
-0000515309 00000 n 
-0000515485 00000 n 
-0000515663 00000 n 
-0000515840 00000 n 
-0000516019 00000 n 
-0000516227 00000 n 
-0000522349 00000 n 
-0000522527 00000 n 
-0000522705 00000 n 
-0000522882 00000 n 
-0000523060 00000 n 
-0000523237 00000 n 
-0000523437 00000 n 
+0000011470 00000 n 
+0000011618 00000 n 
+0000016877 00000 n 
+0000017025 00000 n 
+0000018393 00000 n 
+0000018541 00000 n 
+0000022250 00000 n 
+0000022398 00000 n 
+0000027697 00000 n 
+0000027845 00000 n 
+0000032968 00000 n 
+0000033116 00000 n 
+0000034494 00000 n 
+0000034642 00000 n 
+0000038573 00000 n 
+0000038721 00000 n 
+0000043992 00000 n 
+0000044140 00000 n 
+0000049298 00000 n 
+0000049446 00000 n 
+0000050803 00000 n 
+0000050951 00000 n 
+0000054962 00000 n 
+0000055110 00000 n 
+0000060510 00000 n 
+0000060658 00000 n 
+0000065817 00000 n 
+0000065965 00000 n 
+0000067341 00000 n 
+0000067489 00000 n 
+0000071219 00000 n 
+0000071367 00000 n 
+0000076819 00000 n 
+0000076967 00000 n 
+0000082164 00000 n 
+0000082312 00000 n 
+0000083326 00000 n 
+0000083474 00000 n 
+0000087085 00000 n 
+0000087233 00000 n 
+0000092504 00000 n 
+0000092652 00000 n 
+0000098005 00000 n 
+0000098153 00000 n 
+0000099576 00000 n 
+0000099753 00000 n 
+0000099929 00000 n 
+0000100107 00000 n 
+0000100284 00000 n 
+0000100461 00000 n 
+0000100654 00000 n 
+0000106326 00000 n 
+0000106502 00000 n 
+0000106680 00000 n 
+0000106857 00000 n 
+0000107033 00000 n 
+0000107208 00000 n 
+0000107385 00000 n 
+0000107585 00000 n 
+0000113707 00000 n 
+0000113883 00000 n 
+0000114060 00000 n 
+0000114236 00000 n 
+0000114413 00000 n 
+0000114589 00000 n 
+0000114767 00000 n 
+0000114967 00000 n 
+0000120790 00000 n 
+0000120967 00000 n 
+0000121144 00000 n 
+0000121320 00000 n 
+0000121497 00000 n 
+0000121673 00000 n 
+0000121851 00000 n 
+0000122051 00000 n 
+0000128002 00000 n 
+0000128179 00000 n 
+0000128357 00000 n 
+0000128534 00000 n 
+0000128710 00000 n 
+0000128885 00000 n 
+0000129062 00000 n 
+0000129262 00000 n 
+0000135360 00000 n 
+0000135536 00000 n 
+0000135713 00000 n 
+0000135889 00000 n 
+0000136066 00000 n 
+0000136242 00000 n 
+0000136421 00000 n 
+0000136624 00000 n 
+0000142759 00000 n 
+0000142937 00000 n 
+0000143115 00000 n 
+0000143292 00000 n 
+0000143471 00000 n 
+0000143649 00000 n 
+0000143827 00000 n 
+0000144035 00000 n 
+0000150098 00000 n 
+0000150275 00000 n 
+0000150453 00000 n 
+0000150630 00000 n 
+0000150810 00000 n 
+0000150989 00000 n 
+0000151166 00000 n 
+0000151374 00000 n 
+0000157337 00000 n 
+0000157513 00000 n 
+0000157691 00000 n 
+0000157868 00000 n 
+0000158046 00000 n 
+0000158223 00000 n 
+0000158401 00000 n 
+0000158576 00000 n 
+0000158792 00000 n 
+0000164478 00000 n 
+0000164655 00000 n 
+0000164831 00000 n 
+0000165010 00000 n 
+0000165188 00000 n 
+0000165367 00000 n 
+0000165545 00000 n 
+0000165753 00000 n 
+0000171589 00000 n 
+0000171767 00000 n 
+0000171944 00000 n 
+0000172122 00000 n 
+0000172299 00000 n 
+0000172476 00000 n 
+0000172652 00000 n 
+0000172860 00000 n 
+0000179130 00000 n 
+0000179308 00000 n 
+0000179485 00000 n 
+0000179663 00000 n 
+0000179840 00000 n 
+0000180017 00000 n 
+0000180193 00000 n 
+0000180401 00000 n 
+0000186401 00000 n 
+0000186579 00000 n 
+0000186756 00000 n 
+0000186934 00000 n 
+0000187111 00000 n 
+0000187289 00000 n 
+0000187466 00000 n 
+0000187643 00000 n 
+0000187859 00000 n 
+0000194191 00000 n 
+0000194369 00000 n 
+0000194548 00000 n 
+0000194726 00000 n 
+0000194903 00000 n 
+0000195079 00000 n 
+0000195255 00000 n 
+0000195463 00000 n 
+0000201515 00000 n 
+0000201692 00000 n 
+0000201870 00000 n 
+0000202047 00000 n 
+0000202226 00000 n 
+0000202404 00000 n 
+0000202580 00000 n 
+0000202788 00000 n 
+0000208546 00000 n 
+0000208723 00000 n 
+0000208901 00000 n 
+0000209078 00000 n 
+0000209256 00000 n 
+0000209433 00000 n 
+0000209610 00000 n 
+0000209818 00000 n 
+0000216020 00000 n 
+0000216196 00000 n 
+0000216375 00000 n 
+0000216553 00000 n 
+0000216731 00000 n 
+0000216908 00000 n 
+0000217085 00000 n 
+0000217293 00000 n 
+0000223119 00000 n 
+0000223295 00000 n 
+0000223472 00000 n 
+0000223648 00000 n 
+0000223826 00000 n 
+0000224003 00000 n 
+0000224181 00000 n 
+0000224389 00000 n 
+0000230420 00000 n 
+0000230597 00000 n 
+0000230774 00000 n 
+0000230950 00000 n 
+0000231129 00000 n 
+0000231307 00000 n 
+0000231485 00000 n 
+0000231693 00000 n 
+0000237492 00000 n 
+0000237669 00000 n 
+0000237847 00000 n 
+0000238024 00000 n 
+0000238201 00000 n 
+0000238377 00000 n 
+0000238555 00000 n 
+0000238763 00000 n 
+0000244780 00000 n 
+0000244957 00000 n 
+0000245135 00000 n 
+0000245312 00000 n 
+0000245490 00000 n 
+0000245667 00000 n 
+0000245844 00000 n 
+0000246052 00000 n 
+0000252394 00000 n 
+0000252570 00000 n 
+0000252748 00000 n 
+0000252925 00000 n 
+0000253103 00000 n 
+0000253280 00000 n 
+0000253458 00000 n 
+0000253633 00000 n 
+0000253849 00000 n 
+0000260159 00000 n 
+0000260338 00000 n 
+0000260516 00000 n 
+0000260693 00000 n 
+0000260869 00000 n 
+0000261047 00000 n 
+0000261224 00000 n 
+0000261432 00000 n 
+0000267016 00000 n 
+0000267193 00000 n 
+0000267369 00000 n 
+0000267546 00000 n 
+0000267722 00000 n 
+0000267899 00000 n 
+0000268075 00000 n 
+0000268252 00000 n 
+0000268468 00000 n 
+0000274176 00000 n 
+0000274352 00000 n 
+0000274530 00000 n 
+0000274707 00000 n 
+0000274885 00000 n 
+0000275062 00000 n 
+0000275241 00000 n 
+0000275449 00000 n 
+0000281379 00000 n 
+0000281557 00000 n 
+0000281735 00000 n 
+0000281912 00000 n 
+0000282089 00000 n 
+0000282265 00000 n 
+0000282443 00000 n 
+0000282651 00000 n 
+0000288844 00000 n 
+0000289021 00000 n 
+0000289199 00000 n 
+0000289376 00000 n 
+0000289555 00000 n 
+0000289733 00000 n 
+0000289910 00000 n 
+0000290118 00000 n 
+0000296156 00000 n 
+0000296332 00000 n 
+0000296510 00000 n 
+0000296687 00000 n 
+0000296865 00000 n 
+0000297042 00000 n 
+0000297221 00000 n 
+0000297429 00000 n 
+0000303397 00000 n 
+0000303575 00000 n 
+0000303752 00000 n 
+0000303928 00000 n 
+0000304106 00000 n 
+0000304283 00000 n 
+0000304462 00000 n 
+0000304670 00000 n 
+0000310773 00000 n 
+0000310951 00000 n 
+0000311129 00000 n 
+0000311306 00000 n 
+0000311483 00000 n 
+0000311659 00000 n 
+0000311837 00000 n 
+0000312045 00000 n 
+0000318219 00000 n 
+0000318396 00000 n 
+0000318574 00000 n 
+0000318751 00000 n 
+0000318928 00000 n 
+0000319104 00000 n 
+0000319282 00000 n 
+0000319457 00000 n 
+0000319673 00000 n 
+0000325860 00000 n 
+0000326039 00000 n 
+0000326217 00000 n 
+0000326394 00000 n 
+0000326570 00000 n 
+0000326748 00000 n 
+0000326923 00000 n 
+0000327131 00000 n 
+0000333175 00000 n 
+0000333352 00000 n 
+0000333528 00000 n 
+0000333707 00000 n 
+0000333885 00000 n 
+0000334063 00000 n 
+0000334240 00000 n 
+0000334448 00000 n 
+0000340214 00000 n 
+0000340391 00000 n 
+0000340567 00000 n 
+0000340746 00000 n 
+0000340924 00000 n 
+0000341102 00000 n 
+0000341279 00000 n 
+0000341455 00000 n 
+0000341671 00000 n 
+0000347877 00000 n 
+0000348054 00000 n 
+0000348231 00000 n 
+0000348407 00000 n 
+0000348585 00000 n 
+0000348762 00000 n 
+0000348939 00000 n 
+0000349147 00000 n 
+0000355186 00000 n 
+0000355364 00000 n 
+0000355542 00000 n 
+0000355719 00000 n 
+0000355897 00000 n 
+0000356074 00000 n 
+0000356253 00000 n 
+0000356461 00000 n 
+0000362505 00000 n 
+0000362683 00000 n 
+0000362861 00000 n 
+0000363038 00000 n 
+0000363216 00000 n 
+0000363393 00000 n 
+0000363571 00000 n 
+0000363779 00000 n 
+0000369946 00000 n 
+0000370123 00000 n 
+0000370301 00000 n 
+0000370478 00000 n 
+0000370657 00000 n 
+0000370835 00000 n 
+0000371013 00000 n 
+0000371221 00000 n 
+0000377169 00000 n 
+0000377346 00000 n 
+0000377524 00000 n 
+0000377701 00000 n 
+0000377879 00000 n 
+0000378056 00000 n 
+0000378234 00000 n 
+0000378442 00000 n 
+0000384539 00000 n 
+0000384716 00000 n 
+0000384893 00000 n 
+0000385069 00000 n 
+0000385247 00000 n 
+0000385424 00000 n 
+0000385602 00000 n 
+0000385810 00000 n 
+0000391781 00000 n 
+0000391958 00000 n 
+0000392136 00000 n 
+0000392313 00000 n 
+0000392490 00000 n 
+0000392666 00000 n 
+0000392843 00000 n 
+0000393051 00000 n 
+0000399011 00000 n 
+0000399187 00000 n 
+0000399364 00000 n 
+0000399540 00000 n 
+0000399718 00000 n 
+0000399895 00000 n 
+0000400073 00000 n 
+0000400281 00000 n 
+0000406166 00000 n 
+0000406343 00000 n 
+0000406520 00000 n 
+0000406696 00000 n 
+0000406874 00000 n 
+0000407051 00000 n 
+0000407228 00000 n 
+0000407436 00000 n 
+0000413363 00000 n 
+0000413539 00000 n 
+0000413717 00000 n 
+0000413894 00000 n 
+0000414071 00000 n 
+0000414247 00000 n 
+0000414425 00000 n 
+0000414633 00000 n 
+0000420482 00000 n 
+0000420659 00000 n 
+0000420838 00000 n 
+0000421016 00000 n 
+0000421194 00000 n 
+0000421371 00000 n 
+0000421549 00000 n 
+0000421757 00000 n 
+0000427502 00000 n 
+0000427679 00000 n 
+0000427857 00000 n 
+0000428034 00000 n 
+0000428211 00000 n 
+0000428387 00000 n 
+0000428565 00000 n 
+0000428773 00000 n 
+0000434755 00000 n 
+0000434932 00000 n 
+0000435109 00000 n 
+0000435285 00000 n 
+0000435462 00000 n 
+0000435638 00000 n 
+0000435817 00000 n 
+0000436025 00000 n 
+0000442100 00000 n 
+0000442278 00000 n 
+0000442457 00000 n 
+0000442635 00000 n 
+0000442812 00000 n 
+0000442988 00000 n 
+0000443166 00000 n 
+0000443341 00000 n 
+0000443557 00000 n 
+0000449586 00000 n 
+0000449764 00000 n 
+0000449941 00000 n 
+0000450119 00000 n 
+0000450296 00000 n 
+0000450475 00000 n 
+0000450653 00000 n 
+0000450861 00000 n 
+0000456626 00000 n 
+0000456803 00000 n 
+0000456979 00000 n 
+0000457158 00000 n 
+0000457336 00000 n 
+0000457513 00000 n 
+0000457689 00000 n 
+0000457897 00000 n 
+0000463720 00000 n 
+0000463898 00000 n 
+0000464075 00000 n 
+0000464253 00000 n 
+0000464430 00000 n 
+0000464608 00000 n 
+0000464785 00000 n 
+0000464961 00000 n 
+0000465177 00000 n 
+0000471346 00000 n 
+0000471523 00000 n 
+0000471702 00000 n 
+0000471880 00000 n 
+0000472058 00000 n 
+0000472235 00000 n 
+0000472413 00000 n 
+0000472621 00000 n 
+0000478446 00000 n 
+0000478623 00000 n 
+0000478800 00000 n 
+0000478976 00000 n 
+0000479154 00000 n 
+0000479331 00000 n 
+0000479509 00000 n 
+0000479717 00000 n 
+0000485629 00000 n 
+0000485806 00000 n 
+0000485985 00000 n 
+0000486163 00000 n 
+0000486341 00000 n 
+0000486518 00000 n 
+0000486696 00000 n 
+0000486904 00000 n 
+0000492952 00000 n 
+0000493129 00000 n 
+0000493308 00000 n 
+0000493486 00000 n 
+0000493664 00000 n 
+0000493841 00000 n 
+0000494019 00000 n 
+0000494227 00000 n 
+0000500488 00000 n 
+0000500665 00000 n 
+0000500842 00000 n 
+0000501018 00000 n 
+0000501196 00000 n 
+0000501373 00000 n 
+0000501552 00000 n 
+0000501760 00000 n 
+0000507702 00000 n 
+0000507880 00000 n 
+0000508057 00000 n 
+0000508233 00000 n 
+0000508411 00000 n 
+0000508588 00000 n 
+0000508766 00000 n 
+0000508974 00000 n 
+0000515013 00000 n 
+0000515190 00000 n 
+0000515367 00000 n 
+0000515543 00000 n 
+0000515721 00000 n 
+0000515898 00000 n 
+0000516077 00000 n 
+0000516285 00000 n 
+0000522407 00000 n 
+0000522585 00000 n 
+0000522763 00000 n 
+0000522940 00000 n 
+0000523118 00000 n 
+0000523295 00000 n 
+0000523495 00000 n 
 trailer
 << /Size 534 /Root 1 0 R >>
 startxref
-528386
+528444
 %%EOF

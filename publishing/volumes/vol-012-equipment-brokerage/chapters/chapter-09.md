@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. This chapter translates statutory boundaries into seven mapped operator plays: seller representation, buyer mandates, heavy-construction resale, CNC matching, fleet remarketing, industrial liquidation, and export coordination. Build the commission agreement around the actual transaction: who owns the machine, who can release its liens, which license covers the activity, and what evidence permits settlement. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled; recognized revenue includes broker commissions only. A 1 FT + 3 C pod can operate the first two cases by separating commercial decisions, inspection, documentation, and logistics while keeping client purchase funds with an independent settlement provider.
+Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. This chapter translates statutory boundaries into seven mapped operator plays: seller representation, buyer mandates, heavy-construction resale, CNC matching, fleet remarketing, industrial liquidation, and export coordination. Build the commission agreement around the actual transaction: who owns the machine, who can release its liens, which license covers the activity, and what evidence permits settlement. Canonical annual owner profit is $25,000 Conservative, $157,500 Base, and $360,000 Scaled; recognized revenue includes broker commissions only. A 1 FT + 3 C pod can operate the first two cases by separating commercial decisions, inspection, documentation, and logistics while keeping client purchase funds with an independent settlement provider.
 
 ### Key Metrics
 

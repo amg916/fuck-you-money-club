@@ -238,7 +238,7 @@ def build_volume_028_workbook() -> dict:
                         (
                             "Proceed to a paid site trial, subject to verified access "
                             "and funding. Commercial Cleaning Contracts is Candidate "
-                            "#10, pipeline rank #28 of 29, with a 56/100 "
+                            "#10, pipeline rank #23 of 29, with a 82/100 "
                             "Money-to-Manpower Score. Its component scores are 21, "
                             "12, 6, 11, and 6 respectively; growth requires "
                             "additional paid crew hours, not software alone."
@@ -309,10 +309,10 @@ def build_volume_028_workbook() -> dict:
                         ),
                         (
                             "Conservative: $250,000 revenue, 8% margin, $20,000 owner "
-                            "net, $230,000 implied cost, 5 FT + 4 C. Base: "
-                            "$725,000, 12.0%, $87,000, $638,000, 5 FT + 4 C. "
+                            "net, $230,000 implied cost, 1 FT + 3 C. Base: "
+                            "$725,000, 12.0%, $87,000, $638,000, 1 FT + 3 C. "
                             "Scaled: $1,200,000, 16%, $192,000, $1,008,000, "
-                            "6 FT + 5 C, totaling 11 people. These are portfolio benchmarks."
+                            "2 FT + 4 C, totaling 6 people. These are portfolio benchmarks."
                         ),
                     ),
                     field(
@@ -436,8 +436,8 @@ def build_volume_028_workbook() -> dict:
                         (
                             "A $35,000 launch budget allocates $10,000 equipment, "
                             "$3,000 insurance deposits, $2,000 onboarding, and "
-                            "$20,000 float. It sits within the $15,000–$90,000 "
-                            "startup range. The $4,000–$18,000 monthly operating "
+                            "$20,000 float. It sits within the $10,000–$50,000 "
+                            "startup range. The $3,000–$14,000 monthly operating "
                             "range describes a planning envelope; Base implied "
                             "all-in annual cost is $638,000, averaging $53,166.67 monthly."
                         ),
@@ -1543,7 +1543,7 @@ def build_volume_028_workbook() -> dict:
                             "adequate cash before adding sites. "
                             "Scaled remains $1,200,000 revenue, "
                             "16% margin, $192,000 owner net, "
-                            "and 6 FT + 5 C. "
+                            "and 2 FT + 4 C. "
                             "The owner must substantiate the $1,008,000 cost envelope and eleven-person capacity; scheduling software alone does not establish either result."
                         ),
                     ),

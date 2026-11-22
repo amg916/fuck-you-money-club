@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, holds Rank #12 with an 81/100 "
+        "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 "
         "Money-to-Manpower Score. This chapter operationalizes seven mapped plays: "
         "inventory intake, equipment research, inventory matching, buyer alerts, "
         "buyer qualification, settlement orchestration, and distribution recycling. "
@@ -204,7 +204,7 @@ CHAPTER_10 = {
                     "every three-phase installation. After hard constraints pass, an "
                     "illustrative score can weight application fit at 40%, delivered-cost "
                     "fit at 25%, inspection evidence at 20%, and timing at 15%. These "
-                    "weights are tuning assumptions, not the candidate's 81/100 scorecard. "
+                    "weights are tuning assumptions, not the candidate's 86/100 scorecard. "
                     "Return the components with each recommendation. Keep transport estimates "
                     "separate from machine price, label their quote dates, and require "
                     "refreshing when route, dimensions, permits, or loading arrangements "

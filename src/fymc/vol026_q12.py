@@ -13,8 +13,8 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #26 with a 62/100 "
-        "Money-to-Manpower Score: this is capital- and labor-intensive asset trading, "
+        "Candidate #17, Government Surplus Auctions, ranks #29 with a 79/100 "
+        "Money-to-Manpower Score: this is high-leverage, system-disciplined asset trading, "
         "not passive auction arbitrage. This chapter maps six execution plays: GSA "
         "light fleet, GSA shop equipment, GovPlanet unrestricted rolling stock, "
         "GovDeals municipal equipment, PublicSurplus facilities assets, and B2B "
@@ -74,7 +74,7 @@ CHAPTER_12 = {
                 ),
                 (
                     "Use a $75,000 opening-cash illustration within the canonical "
-                    "$25,000-$200,000 startup range, not a new earnings forecast. Cap "
+                    "$15,000-$80,000 startup range, not a new earnings forecast. Cap "
                     "operating cash burn at $9,000 per month, inside the stated "
                     "$3,000-$15,000 range, and cap total pilot inventory commitments at "
                     "$15,000. No individual lot may consume more than $7,500 of fully "

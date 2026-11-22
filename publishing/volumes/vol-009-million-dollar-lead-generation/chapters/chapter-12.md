@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 Money-to-Manpower Score. This chapter turns its 30 mapped plays into a daily execution sequence for a two-employee, three-contractor pod: define one enterprise buying problem, instrument attribution, test a bounded account cohort, and sell evidence-backed opportunity creation. The first 30 days establish operating proof; the stated three-to-twelve-month time to first deal prevents confusing early meetings with enterprise contract wins. Annual owner profit remains $30,000 Conservative, $202,500 Base, and $480,000 Scaled. A $15,000 first-month spending ceiling, explicit cohort denominators, and Day-30/60/90 Kill, Fix, or Scale thresholds keep client contract values outside operator revenue and keep expansion subordinate to cash, attribution, and delivery capacity.
+Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 Money-to-Manpower Score. This chapter turns its 30 mapped plays into a daily execution sequence for a two-employee, three-contractor pod: define one enterprise buying problem, instrument attribution, test a bounded account cohort, and sell evidence-backed opportunity creation. The first 30 days establish operating proof; the stated three-to-twelve-month time to first deal prevents confusing early meetings with enterprise contract wins. Annual owner profit remains $30,000 Conservative, $202,500 Base, and $480,000 Scaled. A $15,000 first-month spending ceiling, explicit cohort denominators, and Day-30/60/90 Kill, Fix, or Scale thresholds keep client contract values outside operator revenue and keep expansion subordinate to cash, attribution, and delivery capacity.
 
 ### Key Metrics
 

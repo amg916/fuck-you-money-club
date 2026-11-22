@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
         "Score across a volume containing 21 mapped plays. The payer buys transaction certainty: "
         "qualified counterparties, documented authority, defensible diligence, and a closing sequence "
         "that releases an earned commission. This chapter separates purchase consideration from "

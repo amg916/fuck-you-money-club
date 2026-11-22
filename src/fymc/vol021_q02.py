@@ -14,7 +14,7 @@ CHAPTER_2 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #28, Automated E-Commerce, ranks #21 with a Money-to-Manpower Score of "
-        "70/100. Its 18 mapped plays are opportunities to underwrite, not permission to bypass "
+        "85/100. Its 18 mapped plays are opportunities to underwrite, not permission to bypass "
         "purchase restrictions. Consumers pay for authentic inventory, delivery certainty, and "
         "convenience; wholesale buyers pay for documented supply and resale margin. The operator "
         "earns retail sales net of refunds, not processor float, sales taxes, or financed principal. "
@@ -509,7 +509,7 @@ CHAPTER_2 = {
                     "balances together tie up about $58,561 before taxes, operating cash, or "
                     "refund buffers. This is a liquidity illustration, not an added expense "
                     "or a change to $129,375 annual profit. The stated startup capital range "
-                    "of $30,000–$250,000 and monthly operating-expense range of $4,000–$25,000 "
+                    "of $15,000–$80,000 and monthly operating-expense range of $4,000–$25,000 "
                     "must therefore be evaluated against the actual cash cycle and cost "
                     "classification. Do not subtract a broad operating-expense estimate again "
                     "after the scorecard margin already includes those costs. Assign finance "

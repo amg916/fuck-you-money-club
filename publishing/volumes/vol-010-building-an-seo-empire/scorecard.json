@@ -5,11 +5,11 @@
   "category": "Search-driven publishing",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 22,
-    "profit_margin_potential": 21,
-    "team_efficiency": 17,
-    "startup_accessibility": 10,
-    "automation_potential": 12
+    "revenue_potential": 24,
+    "profit_margin_potential": 22,
+    "team_efficiency": 18,
+    "startup_accessibility": 12,
+    "automation_potential": 13
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,77 +18,87 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 82,
-  "tier_label": "High-Leverage Operator Play",
+  "total_score": 89,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 79,
-    "high": 85
+    "low": 86,
+    "high": 92
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 22/25. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
-    "profit_margin_potential": "Profit Margin Potential: 21/25. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
-    "team_efficiency": "Team Efficiency: 17/20. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
-    "startup_accessibility": "Startup Accessibility: 10/15. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment.",
-    "automation_potential": "Automation Potential: 12/15. A site portfolio can monetize recurring traffic, but editorial quality and search volatility require investment."
+    "revenue_potential": "Revenue Potential: 24/25. Lean 4-person programmatic calculator, expired-authority rebuild, and multi-engine GEO portfolio monetized via high-intent leads and recurring offers.",
+    "profit_margin_potential": "Profit Margin Potential: 22/25. Lean 4-person programmatic calculator, expired-authority rebuild, and multi-engine GEO portfolio monetized via high-intent leads and recurring offers.",
+    "team_efficiency": "Team Efficiency: 18/20. Lean 4-person programmatic calculator, expired-authority rebuild, and multi-engine GEO portfolio monetized via high-intent leads and recurring offers.",
+    "startup_accessibility": "Startup Accessibility: 12/15. Lean 4-person programmatic calculator, expired-authority rebuild, and multi-engine GEO portfolio monetized via high-intent leads and recurring offers.",
+    "automation_potential": "Automation Potential: 13/15. Lean 4-person programmatic calculator, expired-authority rebuild, and multi-engine GEO portfolio monetized via high-intent leads and recurring offers."
   },
   "economics": {
     "gross_revenue_range": "$80,000–$900,000 USD annually",
+    "retained_revenue_range": "$80,000–$900,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "20–45%",
+    "retained_profit_margin_range": "20–45%",
     "owner_net_profit_potential": "$16,000–$405,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$15,000–$120,000 USD",
-    "monthly_opex_range": "$3,000–$20,000 USD",
-    "time_to_first_deal": "6–24 months",
+    "startup_capital_range": "$10,000–$60,000 USD",
+    "monthly_opex_range": "$2,500–$14,000 USD",
+    "time_to_first_deal": "3–12 months",
+    "automation_coverage": 0.82,
     "typical_team_size": {
-      "full_time_including_owner": 2,
-      "contractors": 4,
-      "total_people": 6
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
+    "revenue_basis": "Advertising, affiliate and lead-routing revenue; excludes referred merchant sales",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 80000,
+      "annual_retained_revenue_usd": 80000,
       "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 16000,
-      "full_time_including_owner": 2,
-      "contractors": 4,
-      "total_people": 6,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "base_case": {
       "annual_gross_revenue_usd": 490000.0,
+      "annual_retained_revenue_usd": 490000,
       "net_profit_margin_pct": 32.5,
+      "retained_profit_margin_pct": 32.5,
       "annual_owner_net_profit_usd": 159250,
-      "full_time_including_owner": 2,
-      "contractors": 4,
-      "total_people": 6,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 900000,
+      "annual_retained_revenue_usd": 900000,
       "net_profit_margin_pct": 45,
+      "retained_profit_margin_pct": 45.0,
       "annual_owner_net_profit_usd": 405000,
-      "full_time_including_owner": 3,
-      "contractors": 5,
-      "total_people": 8,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     }
   },
   "automation_levers": [
-    "Technical site audits",
-    "Content refresh queues",
-    "Revenue reporting"
+    "Programmatic dataset builds",
+    "SERP/GEO citation tracking",
+    "Automated lead & RPM routing"
   ],
   "key_risks": [
-    "Ranking losses",
-    "Slow audience growth",
-    "Revenue concentration"
+    "Algorithm updates",
+    "Indexation decay",
+    "Merchant concentration"
   ],
   "regulatory_notes": [
     "Respect copyright, advertising disclosures, privacy requirements and search platform policies."

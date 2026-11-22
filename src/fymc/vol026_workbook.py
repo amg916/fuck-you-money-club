@@ -398,7 +398,7 @@ def build_volume_026_workbook() -> dict:
                             "the canonical capital and monthly cost ranges, and distinguish annual budget allocations from cash already committed at launch."
                         ),
                         (
-                            "Use $75,000 within the $25,000-$200,000 startup range: "
+                            "Use $75,000 within the $15,000-$80,000 startup range: "
                             "$30,000 acquisition capacity, $8,000 logistics, $6,000 repairs, "
                             "$6,000 defects, $10,000 facilities and tools, and $15,000 "
                             "operating liquidity. Recurring costs of $10,000 monthly fit "
@@ -1119,8 +1119,8 @@ def build_volume_026_workbook() -> dict:
                             "hour: $180 weekly before software costs. Inspection, "
                             "loading, repair, and title resolution remain physical "
                             "or specialist work. The candidate retains its "
-                            "62/100 Money-to-Manpower score; automation does not "
-                            "convert a capital- and labor-intensive operation "
+                            "79/100 Money-to-Manpower score; automation does not "
+                            "convert a high-leverage, system-disciplined operation "
                             "into a passive business."
                         ),
                     ),
@@ -1188,11 +1188,8 @@ def build_volume_026_workbook() -> dict:
                             "Explain how these fixed reference values shape the launch plan without turning the score into a forecast of actual investment returns."
                         ),
                         (
-                            "Candidate #17, Government Surplus Auctions, ranks #26 "
-                            "of 29 and scores 62/100, classified Capital / Labor "
-                            "Intensive. Components are revenue potential 20, profit "
-                            "margin potential 14, team efficiency 12, startup "
-                            "accessibility 8, and automation potential 8. The launch "
+                            "Candidate #17, Government Surplus Auctions, ranks #29 "
+                            "of 29 and scores 79/100, classified High-Leverage Operator Play. Components are revenue potential 21, margin potential 21, team efficiency 15, startup accessibility 12, and automation potential 10. The launch "
                             "therefore prioritizes capital recovery, inspection quality, "
                             "and executable removal rather than aggressive lot count."
                         ),

@@ -102,8 +102,8 @@ def build_volume_008_workbook() -> dict:
                             "underwriting or actual campaign results."
                         ),
                         (
-                            "Candidate #18 ranks #08 of 29: Commercial Lead Generation "
-                            "scores 85/100, labeled Elite Small-Team Cash Machine. "
+                            "Candidate #18 ranks #05 of 29: Commercial Lead Generation "
+                            "scores 89/100, labeled Elite Small-Team Cash Machine. "
                             "Components are 21 revenue, 21 margin, 18 team efficiency, "
                             "12 accessibility, and 13 automation. Screening ranges are "
                             "$5,000–$40,000 startup, $2,000–$12,000 monthly opex, and "

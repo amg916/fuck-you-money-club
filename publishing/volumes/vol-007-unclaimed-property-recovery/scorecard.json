@@ -5,9 +5,9 @@
   "category": "Recovery services",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 20,
-    "profit_margin_potential": 22,
-    "team_efficiency": 18,
+    "revenue_potential": 22,
+    "profit_margin_potential": 23,
+    "team_efficiency": 19,
     "startup_accessibility": 13,
     "automation_potential": 12
   },
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 85,
+  "total_score": 89,
   "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 82,
-    "high": 88
+    "low": 86,
+    "high": 92
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 20/25. Low-capital research scales moderately; free state claims constrain pricing.",
-    "profit_margin_potential": "Profit Margin Potential: 22/25. Low-capital research scales moderately; free state claims constrain pricing.",
-    "team_efficiency": "Team Efficiency: 18/20. Low-capital research scales moderately; free state claims constrain pricing.",
-    "startup_accessibility": "Startup Accessibility: 13/15. Low-capital research scales moderately; free state claims constrain pricing.",
-    "automation_potential": "Automation Potential: 12/15. Low-capital research scales moderately; free state claims constrain pricing."
+    "revenue_potential": "Revenue Potential: 22/25. Automated state-controller warrant matching enables ultra-low-capital 3-person recovery desks.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. Automated state-controller warrant matching enables ultra-low-capital 3-person recovery desks.",
+    "team_efficiency": "Team Efficiency: 19/20. Automated state-controller warrant matching enables ultra-low-capital 3-person recovery desks.",
+    "startup_accessibility": "Startup Accessibility: 13/15. Automated state-controller warrant matching enables ultra-low-capital 3-person recovery desks.",
+    "automation_potential": "Automation Potential: 12/15. Automated state-controller warrant matching enables ultra-low-capital 3-person recovery desks."
   },
   "economics": {
     "gross_revenue_range": "$60,000–$450,000 USD annually",
+    "retained_revenue_range": "$60,000–$450,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "25–50%",
+    "retained_profit_margin_range": "25–50%",
     "owner_net_profit_potential": "$15,000–$225,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$5,000–$35,000 USD",
     "monthly_opex_range": "$1,500–$8,000 USD",
     "time_to_first_deal": "3–12 months",
+    "automation_coverage": 0.81,
     "typical_team_size": {
       "full_time_including_owner": 1,
       "contractors": 2,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 60000,
+      "annual_retained_revenue_usd": 60000,
       "net_profit_margin_pct": 25,
+      "retained_profit_margin_pct": 25.0,
       "annual_owner_net_profit_usd": 15000,
       "full_time_including_owner": 1,
       "contractors": 2,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 255000.0,
+      "annual_retained_revenue_usd": 255000,
       "net_profit_margin_pct": 37.5,
+      "retained_profit_margin_pct": 37.5,
       "annual_owner_net_profit_usd": 95625,
       "full_time_including_owner": 1,
       "contractors": 2,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 450000,
+      "annual_retained_revenue_usd": 450000,
       "net_profit_margin_pct": 50,
+      "retained_profit_margin_pct": 50.0,
       "annual_owner_net_profit_usd": 225000,
       "full_time_including_owner": 2,
       "contractors": 3,

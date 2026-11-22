@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($100,000–$1,500,000 USD) and configure a lean, low-opex ($500–$4,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($15,000–$85,000 USD) and configure a lean, low-opex ($500–$4,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Certificate Budgets, Bid-Down Yield Controls, County Redemption Ledgers & Surplus-Aware Foreclosure Readiness",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #3, Tax Lien Investing, sits at Rank #24 with a 62/100 "
+        "Candidate #3, Tax Lien Investing, sits at Rank #24 with a 81/100 "
         "Money-to-Manpower Score because capital lockup and local procedure dominate software "
         "leverage. Allocate 55% of startup cash to untouched float, separate returned principal "
         "from realized income, and buy operating evidence before subscriptions. This chapter maps "

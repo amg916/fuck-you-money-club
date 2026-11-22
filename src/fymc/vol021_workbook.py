@@ -102,9 +102,7 @@ def build_volume_021_workbook() -> dict:
                         ),
                         (
                             "Candidate #28, Automated E-Commerce, ranks #21 of 29 "
-                            "and scores 70/100: revenue 23, margin 13, team efficiency "
-                            "14, accessibility 8, automation 12. This Disciplined "
-                            "Specialist Play permits $30,000–$250,000 startup capital, "
+                            "and scores 85/100: revenue potential 23, margin potential 22, team efficiency 16, startup accessibility 12, and automation potential 12. This Elite Small-Team Cash Machine permits $15,000–$80,000 startup capital, "
                             "$4,000–$25,000 monthly opex, and 2–6 months to the "
                             "first deal; validate the proposed $145,000 funding plan."
                         ),

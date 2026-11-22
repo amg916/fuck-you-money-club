@@ -13,7 +13,7 @@ CHAPTER_6 = {
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
         "Score across 21 mapped plays. The sourcing advantage comes from documented "
         "transaction pressure, verified buyer demand, and defensible rights—not larger "
         "contact lists. This chapter operationalizes UCC financing triggers and cell-tower, "

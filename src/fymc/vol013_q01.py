@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Intellectual property licensing turns controlled rights into permission fees, not ownership of a licensee's sales. "
-        "Candidate #19, Pipeline Rank #13 of 29, scores 79/100 as a High-Leverage Operator Play. "
+        "Candidate #19, Pipeline Rank #09 of 29, scores 88/100 as a High-Leverage Operator Play. "
         "Four mapped plays anchor the business: patent field-of-use licensing, quality-controlled brand licensing, catalog rights licensing, and purpose-limited dataset licensing. "
         "The canonical annual owner profits are $12,500 Conservative, $180,625 Base, and $480,000 Scaled, supported by recognized revenue of $50,000, $425,000, and $800,000 respectively. "
         "Durability comes from clean title, narrow permissions, repeatable demand, and enforceable reporting. "
@@ -330,7 +330,7 @@ CHAPTER_1 = {
                     "The Scaled team contains six people; contractor counts do not imply six full-time salaries."
                 ),
                 (
-                    "Budget against the actual rights-acquisition and sales cycle: startup capital ranges from $25,000 to $250,000, monthly operating overhead from $2,000 to $15,000, and time to first deal from six to twenty-four months. "
+                    "Budget against the actual rights-acquisition and sales cycle: startup capital ranges from $12,000 to $75,000, monthly operating overhead from $2,000 to $12,000, and time to first deal from six to twenty-four months. "
                     "Twelve months of the stated overhead alone requires $24,000 to $180,000 before acquisition payments and other incremental costs. "
                     "A $25,000 starting balance therefore cannot support every combination of diligence cost and long sales cycle. "
                     "The monthly range is not a substitute for the complete annual cost bridge, which can also contain contributor shares, upstream royalties, acquisition amortization, specialist work, and collection losses. "

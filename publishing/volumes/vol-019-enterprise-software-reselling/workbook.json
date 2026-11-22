@@ -76,7 +76,7 @@
           "name": "Pursuit decision and bounded next commitment",
           "type": "textarea",
           "prompt": "State pursue, repair, or decline with an accountable owner, evidence deadline, and maximum next commitment. Connect the decision to the candidate's specialist profile instead of treating pipeline size as proof of operating quality.",
-          "example": "Pursue with a $2,000 discovery budget and no vendor purchase until authorization and deposit evidence are complete. Enterprise Software Reselling is candidate 23, ranked 19 of 29, with a 72/100 Money-to-Manpower Score. That disciplined specialist profile favors repeatable deployments over broad catalog selling or speculative inventory commitments."
+          "example": "Pursue with a $2,000 discovery budget and no vendor purchase until authorization and deposit evidence are complete. Enterprise Software Reselling is candidate 23, ranked 19 of 29, with a 87/100 Money-to-Manpower Score. That disciplined specialist profile favors repeatable deployments over broad catalog selling or speculative inventory commitments."
         }
       ],
       "completion_gate": "The channel lead and delivery lead sign the evidence packet only after resale rights, purchasing authority, credit exposure, deployment scope, and the next spending limit are documented; unresolved mandatory conditions remain assigned repair items rather than approved pursuits."
@@ -141,7 +141,7 @@
           "name": "Startup capital and concurrent exposure",
           "type": "textarea",
           "prompt": "Compare startup funds with overlapping deal deficits, fixed operating burn, and delayed first revenue. Use the supplied capital, expense, and first-deal ranges while distinguishing a range boundary from a funded operating plan.",
-          "example": "The candidate range is $25,000 to $150,000 startup capital, $5,000 to $25,000 monthly operating expense, and 3 to 12 months to first deal. A $150,000 plan using $30,000 for six months of pre-deal burn and $112,000 for two concurrent buffered deals leaves only $8,000 before other setup costs."
+          "example": "The candidate range is $15,000 to $75,000 startup capital, $5,000 to $25,000 monthly operating expense, and 3 to 9 months to first deal. A $150,000 plan using $30,000 for six months of pre-deal burn and $112,000 for two concurrent buffered deals leaves only $8,000 before other setup costs."
         },
         {
           "name": "Discount and collection stress cases",
@@ -449,7 +449,7 @@
           "name": "Canonical scorecard and forecast variance",
           "type": "textarea",
           "prompt": "Preserve the candidate score breakdown and all annual scenario outputs in the management record. Explain variance using actual costs and timing rather than substituting pipeline value, customer cloud spending, or uncollected invoices for owner profit.",
-          "example": "Scores are revenue potential 23, margin potential 14, team efficiency 15, startup accessibility 9, and automation potential 11, totaling 72. Annual benchmarks remain $300,000/$24,000, $1,400,000/$196,000, and $2,500,000/$500,000 for gross revenue/owner net profit. The weekly forecast shows deviations separately and retains the corresponding 8%, 14%, and 20% canonical margins."
+          "example": "Scores are revenue potential 24, margin potential 23, team efficiency 17, startup accessibility 11, and automation potential 12. Annual benchmarks remain $300,000/$24,000, $1,400,000/$196,000, and $2,500,000/$500,000 for gross revenue/owner net profit. The weekly forecast shows deviations separately and retains the corresponding 8%, 14%, and 20% canonical margins."
         },
         {
           "name": "Exit-readiness records and transfer restrictions",

@@ -13,14 +13,14 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #22 with a 64/100 "
+        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
         "Money-to-Manpower Score: attractive spreads conceal capital-intensive, "
         "labor-intensive failure paths. This chapter maps three operator plays: "
         "diagnostic-system refurbishment, surgical-equipment resale, and "
         "veterinary/aesthetic specialty resale. The canonical annual owner profits "
         "are $25,000 Conservative, $164,000 Base, and $396,000 Scaled, on gross "
         "equipment resale proceeds rather than customer treatment revenue. A "
-        "2 FT + 4 C pod must defend those outcomes through serial-specific "
+        "1 FT + 3 C pod must defend those outcomes through serial-specific "
         "ownership evidence, biomed release records, supportability checks, and "
         "cash reserves for reversals. The question's 80% framing is not a measured "
         "failure rate. The actionable issue is loss concentration: one contaminated "
@@ -32,19 +32,19 @@ CHAPTER_5 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -71,7 +71,7 @@ CHAPTER_5 = {
                     "bidding, the commercial lead must identify a plausible buyer "
                     "and the operations lead must identify a supportable release "
                     "path. A low auction price without those two facts is a "
-                    "speculative parts position. The stated $75,000–$400,000 startup "
+                    "speculative parts position. The stated $20,000–$95,000 startup "
                     "capital range does not make every lot affordable: quarantine, "
                     "freight, repairs, and refunds compete for the same cash. "
                     "An acquisition that consumes both purchasing liquidity and "
@@ -99,7 +99,7 @@ CHAPTER_5 = {
                     "usable handpieces can have negative recovery value after "
                     "removal costs. Record unresolved ownership or entitlement "
                     "questions as a purchase hold, not a discount negotiation. "
-                    "The six-person pod cannot economically litigate title while "
+                    "The four-person pod cannot economically litigate title while "
                     "simultaneously rebuilding a service ecosystem for orphaned equipment."
                 ),
                 (
@@ -350,8 +350,8 @@ CHAPTER_5 = {
                     "16.0% produces $164,000 and implies $861,000 total costs. "
                     "Scaled revenue of $1,800,000 at 22% produces $396,000 "
                     "and implies $1,404,000 total costs. The first two "
-                    "cases use 2 FT + 4 C; Scaled uses "
-                    "3 FT + 5 C, eight people. These are "
+                    "cases use 1 FT + 3 C; Scaled uses "
+                    "1 FT + 3 C, eight people. These are "
                     "scenario targets, not evidence that actual wages, throughput, "
                     "or warranty experience already fit. Build a serial-level "
                     "cost ledger in QuickBooks Online or Xero, with an "
@@ -361,7 +361,7 @@ CHAPTER_5 = {
                     "return exposure. Reconcile inventory accounting with the "
                     "bookkeeper so purchasing cash outflow is not confused "
                     "with immediate cost of goods sold. The stated "
-                    "$5,000–$22,000 monthly operating-expense range is planning "
+                    "$4,000–$18,000 monthly operating-expense range is planning "
                     "context, not a second deduction from published net "
                     "profit; actual recurring expenses must fit inside the "
                     "total-cost envelope for the selected case."
@@ -415,7 +415,7 @@ CHAPTER_5 = {
                     "restricted processor balances as available money. "
                     "If that reserve falls short, stop new "
                     "purchases before seeking more sales. For "
-                    "the six-person pod, inspect every first "
+                    "the four-person pod, inspect every first "
                     "return from a new model family. "
                     "Two same-cause failures within ten deliveries "
                     "trigger a model-family hold and root-cause "

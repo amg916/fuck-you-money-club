@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 "
+        "Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 "
         "Money-to-Manpower Score across a volume containing 30 mapped plays. Its "
         "fatal weakness is mistaking activity, client pipeline, or provisional "
         "buyer acceptance for collectible operator revenue. This chapter turns "

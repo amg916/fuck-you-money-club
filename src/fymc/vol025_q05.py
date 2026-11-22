@@ -13,8 +13,8 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #25 with a Money-to-Manpower Score of "
-        "62/100 because revenue scales faster than forgiveness for operational mistakes. "
+        "Candidate #12, Freight Brokerage, ranks #19 with a Money-to-Manpower Score of "
+        "85/100 because revenue scales faster than forgiveness for operational mistakes. "
         "The canonical annual owner profits are $30,000 Conservative, $165,000 Base, "
         "and $400,000 Scaled; gross shipper billings include carrier costs. This chapter "
         "maps eight plays: the supplied cross-border tariff strategy plus seven "
@@ -219,7 +219,7 @@ CHAPTER_5 = {
                     "at 15 days creates a 30-day timing gap, approximately $212,500 at "
                     "steady volume before payroll, seasonality, deductions, and reserves. "
                     "Adding fifteen collection days requires approximately another $106,250. "
-                    "Those figures explain why the stated $50,000–$250,000 startup capital "
+                    "Those figures explain why the stated $15,000–$80,000 startup capital "
                     "range does not automatically support Base throughput. Weekly cash "
                     "forecasting must include committed loads and realistic collection dates. "
                     "When the forecast breaches the board-approved liquidity floor, reduce "

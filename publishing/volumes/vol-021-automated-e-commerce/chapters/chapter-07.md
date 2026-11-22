@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 Money-to-Manpower Score across 18 mapped plays. Execution depends on authorized inventory, contribution-positive acquisition, deterministic order routing, and settlement evidence—not unattended storefront software. This chapter connects sixteen retail workstreams with two adjacent mapped plays, then supplies a six-module SQLite reference and a worked three-month cash bridge. Annual owner profit remains $12,500 Conservative, $129,375 Base, and $360,000 Scaled. The Base walk produces $93,750 monthly recognized retail revenue and $10,781.25 monthly profit while exposing processor settlement lag, inventory funding, returns, and fixed overhead. Operators can reproduce the ledger checks, assign exception ownership, and distinguish earned profit from immediately spendable cash.
+Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower Score across 18 mapped plays. Execution depends on authorized inventory, contribution-positive acquisition, deterministic order routing, and settlement evidence—not unattended storefront software. This chapter connects sixteen retail workstreams with two adjacent mapped plays, then supplies a six-module SQLite reference and a worked three-month cash bridge. Annual owner profit remains $12,500 Conservative, $129,375 Base, and $360,000 Scaled. The Base walk produces $93,750 monthly recognized retail revenue and $10,781.25 monthly profit while exposing processor settlement lag, inventory funding, returns, and fixed overhead. Operators can reproduce the ledger checks, assign exception ownership, and distinguish earned profit from immediately spendable cash.
 
 ### Key Metrics
 

@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
         "Score. Its eight mapped plays are brandable resale, exact-match resale, "
         "expired-authority acquisition, drop-catch auctions, portfolio acquisition "
         "and resale, inbound marketplace sales, outbound upgrades, and lease-to-own "
@@ -493,7 +493,7 @@ CHAPTER_9 = {
                     "require removing those assets from scope while preserving the domain-only "
                     "transaction if the parties agree. Review unsold names before renewal "
                     "using expected sale probability, acquisition thesis, legal exposure, "
-                    "and carrying cost. The stated $10,000–$150,000 startup capital range, "
+                    "and carrying cost. The stated $8,000–$60,000 startup capital range, "
                     "$500–$5,000 monthly operating expense range, and three-to-twenty-four-month "
                     "time to first deal describe liquidity pressure, not extra deductions "
                     "from the canonical profits. Allocate the contractor to evidence gathering "

@@ -407,7 +407,7 @@
           "name": "Launch charter and canonical positioning",
           "type": "textarea",
           "prompt": "State the candidate, pipeline rank, leverage score, capital range, operating range, and first-deal timeline. Explain how these inputs shape the launch rather than treating the score as earned performance.",
-          "example": "Volume 014 covers Candidate #20, Specialty Finance Brokerage, ranked #14 of 29 with a 79/100 Money-to-Manpower Score: 23 revenue, 21 margin, 17 team efficiency, 8 accessibility, and 10 automation. Plan around $20,000–$100,000 startup capital, $4,000–$18,000 monthly core operations, and three to nine months to the first deal."
+          "example": "Volume 014 covers Candidate #20, Specialty Finance Brokerage, ranked #06 of 29 with a 89/100 Money-to-Manpower Score: 23 revenue, 21 margin, 17 team efficiency, 8 accessibility, and 10 automation. Plan around $20,000–$100,000 startup capital, $4,000–$18,000 monthly core operations, and three to nine months to the first deal."
         },
         {
           "name": "Days 1–7: scope, authority, and evidence",

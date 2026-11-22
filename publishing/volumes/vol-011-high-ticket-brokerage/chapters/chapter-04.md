@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower Score and 21 mapped plays. Its capital advantage comes from controlling mandates and transaction execution, not purchasing the assets being brokered. Allocate at least half of startup cash to operating reserve, buy narrow specialist support, and postpone permanent overhead until collected commissions support it. The canonical annual owner-profit cases are $25,000 Conservative, $206,250 Base, and $500,000 Scaled, calculated only on retained transaction commissions. This chapter translates those cases into reserve budgets, a twelve-layer production stack, entity and insurance controls, and evidence-based launch checks. Trigger-led outreach and imaging-suite mandates receive explicit unit economics, authority boundaries, and failure exits before capital leaves the account.
+Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower Score and 21 mapped plays. Its capital advantage comes from controlling mandates and transaction execution, not purchasing the assets being brokered. Allocate at least half of startup cash to operating reserve, buy narrow specialist support, and postpone permanent overhead until collected commissions support it. The canonical annual owner-profit cases are $25,000 Conservative, $206,250 Base, and $500,000 Scaled, calculated only on retained transaction commissions. This chapter translates those cases into reserve budgets, a twelve-layer production stack, entity and insurance controls, and evidence-based launch checks. Trigger-led outreach and imaging-suite mandates receive explicit unit economics, authority boundaries, and failure exits before capital leaves the account.
 
 ### Key Metrics
 

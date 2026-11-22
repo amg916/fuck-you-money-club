@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Business Acquisition is Candidate #13, Rank #27 of 29, with a "
-        "Money-to-Manpower Score of 57/100. The buyer funds ownership; customers "
+        "Business Acquisition is Candidate #13, Rank #17 of 29, with a "
+        "Money-to-Manpower Score of 86/100. The buyer funds ownership; customers "
         "fund the operating business; neither borrowed principal nor escrow releases "
         "create operating revenue. This chapter maps seven operator plays across "
         "application acquisitions, recurring services, maintenance, distribution, "
@@ -32,19 +32,19 @@ CHAPTER_2 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired business sales; debt proceeds excluded",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired business sales; debt proceeds excluded",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired business sales; debt proceeds excluded",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -115,8 +115,8 @@ CHAPTER_2 = {
                     "processor reports, receivables aging, and deferred-revenue "
                     "schedules. Exclude acquisition borrowing, investor contributions, "
                     "seller-note principal, customer pass-through funds, and refundable "
-                    "deposits from earned sales. Use the stated $200,000–$1,000,000 "
-                    "startup range and $15,000–$70,000 monthly operating-expense "
+                    "deposits from earned sales. Use the stated $30,000–$120,000 "
+                    "startup range and $6,000–$25,000 monthly operating-expense "
                     "range as planning parameters, not substitutes for a target-specific "
                     "cost bridge that actually supports these margins."
                 ),

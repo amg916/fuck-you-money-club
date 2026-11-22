@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 of 29 with a Money-to-Manpower "
-        "Score of 62/100: capital and labor intensive, despite auction-screening and "
+        "Score of 81/100: capital and labor intensive, despite auction-screening and "
         "redemption-tracking automation. The business buys enforceable statutory interests, "
         "not effortless property ownership. Four mapped plays organize this chapter: "
         "HOA Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage; "
@@ -113,7 +113,7 @@ CHAPTER_1 = {
                     "issues that warrant deeper investigation. These tools screen evidence, "
                     "not certify investment quality. Start with one instrument in one "
                     "county and accumulate a complete redemption cycle before expanding. "
-                    "The canonical startup range is $100,000 to $1,500,000, monthly "
+                    "The canonical startup range is $15,000 to $85,000, monthly "
                     "operating expense is $500 to $4,000, and time to first deal "
                     "is six to thirty-six months. Do not replace those planning "
                     "ranges with an auction site's faster transaction timetable."

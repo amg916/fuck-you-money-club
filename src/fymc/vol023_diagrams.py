@@ -105,7 +105,7 @@ def build_volume_023_diagrams_data() -> list[dict]:
                 "nonparticipating royalty interests. NMA means net mineral acres; "
                 "NPRI means nonparticipating royalty interest. Instruments and "
                 "state law control ownership, executive rights, and allocation. "
-                "The typical first-deal window is 6–24 months."
+                "The typical first-deal window is 3–9 months."
             ),
             (
                 "A tract description, an operator pay decimal, and a seller's "
@@ -185,7 +185,7 @@ def build_volume_023_diagrams_data() -> list[dict]:
                 "Illustrative cohort contains 500 distinct seller-interest "
                 "packages, deduplicated by owner, tract, and conveyed estate. "
                 "Every later stage is a subset of the preceding stage. Counts "
-                "are planning assumptions over a 6–24 month acquisition cycle, "
+                "are planning assumptions over a 3–9 month acquisition cycle, "
                 "not observed conversions or a 30-day closing forecast."
             ),
             (
@@ -603,72 +603,71 @@ def build_volume_023_diagrams_data() -> list[dict]:
         (
             "diag-07-startup-capital-allocation-comparison",
             "stacked_comparison",
-            "Allocate Acquisition Capital Without Calling It Revenue",
-            "Four buckets across $150,000, $600,000, and $2,000,000 startup plans.",
+            "Allocate Option & Diligence Capital Without Calling It Revenue",
+            "Four buckets across $15,000, $45,000, and $75,000 startup plans.",
             4,
             "illustrative_model",
             (
                 "All amounts are USD. Numeric stage values describe the "
-                "$600,000 reference stack; each stage also identifies the "
-                "corresponding floor and ceiling allocations. These are "
+                "$45,000 reference stack; each stage also identifies the "
+                "corresponding floor ($15,000) and ceiling ($75,000) allocations "
+                "for an option-and-assignment / micro-royalty desk. These are "
                 "alternative capital plans, not additive funding rounds and "
-                "not mappings to the three annual revenue scenarios. Reserves "
-                "and acquisition principal are balance-sheet uses, not "
+                "not mappings to the three annual revenue scenarios. Option "
+                "earnest deposits and reserves are balance-sheet uses, not "
                 "recognized royalty or trading revenue."
             ),
             (
-                "Floor: $100,000 + $20,000 + $18,000 + $12,000 = $150,000. "
-                "Reference: $450,000 + $60,000 + $60,000 + $30,000 = $600,000. "
-                "Ceiling: $1,600,000 + $160,000 + $180,000 + $60,000 "
-                "= $2,000,000."
+                "Floor: $6,000 + $4,000 + $3,000 + $2,000 = $15,000. "
+                "Reference: $20,000 + $11,000 + $9,000 + $5,000 = $45,000. "
+                "Ceiling: $35,000 + $18,000 + $14,000 + $8,000 = $75,000."
             ),
             [
                 (
-                    "Fund acquired interests and documented purchase basis",
-                    "$450,000 reference allocation for mineral acquisition principal",
-                    450000.0,
+                    "Option earnest deposits and micro-tract acquisition pool",
+                    "$20,000 reference allocation for option/earnest & micro-tract basis",
+                    20000.0,
                     (
-                        "Floor allocation is $100,000; ceiling allocation is "
-                        "$1,600,000. Deploy only against documented asset "
-                        "underwriting and closing evidence. Track basis by "
-                        "interest so later disposal proceeds do not inflate "
-                        "recognized rights-trading gains."
+                        "Floor allocation is $6,000; ceiling allocation is "
+                        "$35,000. Deploy into pooling-docket option contracts "
+                        "and small verified NPRI tranches backed by institutional "
+                        "takeout buyers. Track basis by interest so disposal "
+                        "proceeds do not inflate recognized rights-trading gains."
                     ),
                 ),
                 (
-                    "Reserve transaction-specific diligence and closing capital",
-                    "$60,000 reference allocation for diligence and closing",
-                    60000.0,
+                    "Reserve transaction-specific diligence and title curative",
+                    "$11,000 reference allocation for run-sheet diligence and closing",
+                    11000.0,
                     (
-                        "Floor allocation is $20,000; ceiling allocation is "
-                        "$160,000. Cover title examination, engineering, "
-                        "recording, and instrument preparation. Separate "
+                        "Floor allocation is $4,000; ceiling allocation is "
+                        "$18,000. Cover county recorder run sheets, engineering "
+                        "decline checks, recording, and deed preparation. Separate "
                         "capitalized acquisition costs from expensed failed-deal "
                         "work; do not charge the same invoice twice."
                     ),
                 ),
                 (
-                    "Hold operating liquidity against delayed first receipts",
-                    "$60,000 reference allocation for protected operating liquidity",
-                    60000.0,
+                    "Hold operating liquidity through the first assignment cycle",
+                    "$9,000 reference allocation for protected operating liquidity",
+                    9000.0,
                     (
-                        "Floor allocation is $18,000; ceiling allocation is "
-                        "$180,000. At selected monthly burns of $1,000, $2,500, "
-                        "and $7,500 respectively, these fund 18, 24, and 24 "
-                        "months. The floor plan needs another $6,000 or "
-                        "equivalent reductions if first receipts take 24 months."
+                        "Floor allocation is $3,000; ceiling allocation is "
+                        "$14,000. Against lean monthly burns of $1,000–$3,000 "
+                        "during initial sourcing, this reserve bridges the "
+                        "canonical 3–9 month first-deal window before assignment "
+                        "spreads or division-order receipts clear."
                     ),
                 ),
                 (
-                    "Provision startup systems and controlled contingency cash",
-                    "$30,000 reference allocation for setup and contingency",
-                    30000.0,
+                    "Provision docket scrapers, GIS stack, and contingency cash",
+                    "$5,000 reference allocation for data stack and contingency",
+                    5000.0,
                     (
-                        "Floor allocation is $12,000; ceiling allocation is "
-                        "$60,000. Cover initial data access, secure document "
-                        "storage, account setup, and a remaining contingency "
-                        "balance. Contingency can extend runway only to the "
-                        "extent it remains unspent."
+                        "Floor allocation is $2,000; ceiling allocation is "
+                        "$8,000. Cover state oil-and-gas commission docket feeds, "
+                        "GIS parcel overlays, entity setup, and contingency "
+                        "reserves."
                     ),
                 ),
             ],
@@ -683,7 +682,7 @@ def build_volume_023_diagrams_data() -> list[dict]:
             (
                 "Milestones cover Days 1–7, 8–14, 15–21, and 22–30. Numeric "
                 "values mark milestone end days. The canonical first-deal "
-                "window remains 6–24 months. A completed sprint produces "
+                "window remains 3–9 months. A completed sprint produces "
                 "traceable research, underwriting, and operating controls; "
                 "it does not establish ownership or royalty income."
             ),
@@ -740,7 +739,7 @@ def build_volume_023_diagrams_data() -> list[dict]:
                         "candidates. Assign title remediation, closing "
                         "deliverables, operator transfer tracking, and royalty "
                         "exception ownership. Reconcile acquisition commitments "
-                        "with liquidity through the 6–24 month first-deal "
+                        "with liquidity through the 3–9 month first-deal "
                         "window; retain unresolved candidates in research."
                     ),
                 ),

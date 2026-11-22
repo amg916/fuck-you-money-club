@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 "
+        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
         "Money-to-Manpower Score and 23 mapped plays. Launch through one narrow "
         "workflow, one paid implementation offer, and one measurable acceptance "
         "contract rather than a catalog of custom agents. This sprint assigns "

@@ -373,7 +373,7 @@ def build_volume_018_workbook() -> dict:
                             "buy-side closing, diligence, cure work, and carrying. Three "
                             "slots require $167,700. Add $50,000 for six months "
                             "of Base overhead and $20,000 liquidity buffer: $237,700 "
-                            "startup funding, within the $50,000–$400,000 range. Selling fees "
+                            "startup funding, within the $15,000–$75,000 range. Selling fees "
                             "are deducted at disposition."
                         ),
                     ),
@@ -1238,11 +1238,10 @@ def build_volume_018_workbook() -> dict:
                             "acquisition cadence, and acceptable dependence on outside expertise."
                         ),
                         (
-                            "Land Flipping is Candidate #6, pipeline rank #18 "
-                            "of 29, scoring 72/100 as a Disciplined Specialist "
-                            "Play. Startup capital is $50,000–$400,000, monthly operating "
+                            "Land Flipping is Candidate #6, pipeline rank #15 "
+                            "of 29, scoring 86/100 as an Elite Small-Team Cash Machine. Startup capital is $15,000–$75,000, monthly operating "
                             "expense is $3,000–$15,000, and first-deal timing is "
-                            "3–12 months. Launch in one county with existing "
+                            "3–9 months. Launch in one county with existing "
                             "lots rather than funding speculative subdivision work."
                         ),
                     ),
@@ -1389,9 +1388,7 @@ def build_volume_018_workbook() -> dict:
                             "Scaled cost ceiling preserves the canonical owner-profit target."
                         ),
                         (
-                            "The 72 points comprise revenue potential 21, profit "
-                            "margin potential 18, team efficiency 17, startup "
-                            "accessibility 6, and automation potential 10. Scale "
+                            "The 86 points comprise revenue potential 23, margin potential 23, team efficiency 18, startup accessibility 11, and automation potential 11. Scale "
                             "only after repeatable closings, reliable access review, "
                             "and adequate cash. At $1,500,000 proceeds, total "
                             "costs must stay within $1,125,000 to preserve "

@@ -507,8 +507,8 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100: this is a labor-intensive production business, not software "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100: this is a labor-intensive production business, not software "
         "revenue disguised as facilities work. This chapter maps four operator plays: "
         "recurring commercial routes, medical janitorial scopes, production-rate bidding, "
         "and supervisor-led scheduling, inspection, and billing. The operating unit is "
@@ -524,19 +524,19 @@ CHAPTER_7 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual cleaning contract revenue; no client operating revenue included",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual cleaning contract revenue; $638,000 annual operating costs",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual cleaning contract revenue; expansion requires additional paid capacity",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -601,7 +601,7 @@ CHAPTER_7 = {
                     "cost also includes $3,600 supplies, $2,400 transport, and $4,700 of "
                     "scheduled relief labor and equipment upkeep. Add $8,000 overhead to "
                     "reach approximately $53,166.67 total operating cost. The quoted "
-                    "$4,000–$18,000 monthly overhead planning range cannot represent all "
+                    "$3,000–$14,000 monthly overhead planning range cannot represent all "
                     "payroll-inclusive spending at Base volume. Customer concentration remains "
                     "a separate exposure: replacing one large medical account can consume "
                     "the whole supervisor's mobilization capacity even when annual revenue "
@@ -609,7 +609,7 @@ CHAPTER_7 = {
                 ),
             ],
             "table": {
-                "caption": "Four Mapped Plays and the Nine-Person Production Envelope",
+                "caption": "Four Mapped Plays and the Four-Person Production Envelope",
                 "headers": [
                     "Operating motion and accountable production owner",
                     "Required field evidence before committing capacity",

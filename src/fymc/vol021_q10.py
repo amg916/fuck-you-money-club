@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 70/100 Money-to-Manpower "
-        "Score: a Disciplined Specialist Play built around authorized inventory, reliable "
+        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower "
+        "Score: an Elite Small-Team Cash Machine built around authorized inventory, reliable "
         "fulfillment, and retained contribution. This chapter maps 18 operating plays into "
         "a Python, webhook, and bounded-LLM architecture that targets 70%+ repetitive-work "
         "automation without delegating consequential decisions. A two-employee, "
@@ -504,7 +504,7 @@ CHAPTER_10 = {
                     "contribution. At the illustrative $100 retained order value, the "
                     "cases imply 2,500, 11,250, and 20,000 retained annual orders; these "
                     "are workload translations, not revised revenue forecasts. The "
-                    "startup capital range of $30,000 to $250,000 and monthly operating "
+                    "startup capital range of $15,000 to $80,000 and monthly operating "
                     "range of $4,000 to $25,000 do not replace the complete annual "
                     "expense model. Inventory purchases and settlement delays also "
                     "require a separate cash schedule even when reported profit rises."

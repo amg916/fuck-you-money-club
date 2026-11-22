@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a Money-to-Manpower Score of 57/100: capital and labor intensity punish weak diligence. "
+        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower Score of 86/100: capital and labor intensity punish weak diligence. "
         "Canonical annual owner profits are $60,000 Conservative, $243,750 Base, and $540,000 Scaled, after interest but before principal repayments. "
         "The question's 80% framing is not an established failure statistic; this chapter replaces it with measurable loss mechanisms. "
         "Seven mapped operating plays organize the defense: QoE normalization, working-capital protection, debt-service structuring, customer retention, liability containment, payment-platform continuity, and powered-land option screening. "
@@ -25,19 +25,19 @@ CHAPTER_5 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; recognized operator revenue",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; recognized operator revenue",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; recognized operator revenue",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -283,7 +283,7 @@ CHAPTER_5 = {
                     "Set an internal alert below the provider's applicable program threshold and escalate any adverse provider notice immediately, since programs and account terms differ. "
                     "For liquidity, produce a weekly thirteen-week cash forecast with payroll, taxes, debt service, inventory commitments, reserve releases, and customer receipts shown separately. "
                     "Use an initial investigation trigger of less than six weeks of unavoidable cash outflow, then calibrate it to seasonal volatility and lender requirements. "
-                    "The canonical monthly operating-expense range is $15,000 to $70,000; six weeks approximates $22,500 to $105,000 using a four-week planning month, before separately modeled debt principal or exceptional commitments. "
+                    "The canonical monthly operating-expense range is $6,000 to $25,000; six weeks approximates $22,500 to $105,000 using a four-week planning month, before separately modeled debt principal or exceptional commitments. "
                     "Do not treat that range as a scenario-specific expense schedule. "
                     "When thresholds trip, stop discretionary distributions, suspend unprofitable acquisition campaigns, investigate fulfillment defects, and negotiate terms before missing contractual payments. "
                     "Keep required payroll, tax, and customer obligations visible during prioritization. "
@@ -396,7 +396,7 @@ CHAPTER_5 = {
                 ),
                 (
                     "Return every adjacent opportunity to the acquisition's capital allocation discipline. "
-                    "The canonical startup capital range is $200,000 to $1,000,000 and time to first deal is six to eighteen months; neither describes cash that remains freely spendable after closing. "
+                    "The canonical startup capital range is $30,000 to $120,000 and time to first deal is six to eighteen months; neither describes cash that remains freely spendable after closing. "
                     "Maintain separate balances for acquisition equity, transaction costs, operating liquidity, contractual reserves, and optional projects. "
                     "A $50,000 speculative loss equals approximately 83% of Conservative annual owner profit and about 21% of Base profit before principal repayments. "
                     "That asymmetry makes a modest-looking option program capable of destabilizing an otherwise sound purchase. "

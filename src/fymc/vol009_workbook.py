@@ -233,8 +233,8 @@ def build_volume_009_workbook() -> dict:
                         ),
                         (
                             "Proceed with a 40-account pilot after signer verification "
-                            "and CRM exclusion matching. Candidate #21 carries an 82/100 "
-                            "Money-to-Manpower Score and pipeline rank #09 of 29. Its "
+                            "and CRM exclusion matching. Candidate #21 carries an 86/100 "
+                            "Money-to-Manpower Score and pipeline rank #18 of 29. Its "
                             "component scores are 24 revenue, 21 margin, 16 team efficiency, "
                             "9 startup accessibility, and 12 automation."
                         ),

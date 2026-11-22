@@ -6,15 +6,15 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($50,000–$400,000 USD) and configure a lean, low-opex ($3,000–$15,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($15,000–$75,000 USD) and configure a lean, low-opex ($3,000–$15,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Parcel Buying, QGIS Underwriting, Title-Controlled Closings, and Recorded Easement Economics",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #18 with a 72/100 Money-to-Manpower Score: "
-        "a disciplined specialist play, not an excuse to accumulate stranded acreage. "
+        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score: "
+        "a elite small-team cash machine, not an excuse to accumulate stranded acreage. "
         "Allocate 60% of opening capital to working-capital reserves, then buy evidence before inventory. "
         "This chapter maps six operating plays: vacant-parcel cash resale, infill buildability screening, "
         "legal-access verification, minor-subdivision sequencing, title-insured disposition, and "

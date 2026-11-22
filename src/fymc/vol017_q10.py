@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower Score. "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower Score. "
         "Its leverage comes from processing inventory evidence and buyer intent without automating speculative judgment. "
         "This chapter maps eight operator plays: auction sourcing, asset qualification, comparable-sale monitoring, renewal control, "
         "inbound routing, programmatic distribution, outbound upgrades, and transfer fulfillment. A 1 FT + 1 C pod uses Python "
@@ -406,7 +406,7 @@ CHAPTER_10 = {
                     "gross sales of the operator's domain assets, not marketplace-wide transaction volume, escrow balances, or "
                     "buyers' later business revenue. Keep working-capital cash requirements distinct from annual profit because "
                     "inventory purchases can precede sales by many months and unsold inventory remains illiquid. The startup "
-                    "capital range is $10,000–$150,000, and time to first deal can be 3–24 months. Automation does not "
+                    "capital range is $8,000–$60,000, and time to first deal can be 2–9 months. Automation does not "
                     "compress that interval by assertion. Conservative and Base use 1 FT + 1 C; Scaled uses 2 FT "
                     "+ 2 C. The canonical Scaled economics therefore cannot be presented as a two-person outcome merely "
                     "because the software processes additional records."

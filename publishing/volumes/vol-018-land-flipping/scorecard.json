@@ -5,11 +5,11 @@
   "category": "Real estate trading",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 21,
-    "profit_margin_potential": 18,
-    "team_efficiency": 17,
-    "startup_accessibility": 6,
-    "automation_potential": 10
+    "revenue_potential": 23,
+    "profit_margin_potential": 23,
+    "team_efficiency": 18,
+    "startup_accessibility": 11,
+    "automation_potential": 11
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,43 +18,49 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 72,
-  "tier_label": "Disciplined Specialist Play",
+  "total_score": 86,
+  "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 69,
-    "high": 75
+    "low": 83,
+    "high": 89
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 21/25. Small teams can trade parcels, but inventory capital and due diligence limit access.",
-    "profit_margin_potential": "Profit Margin Potential: 18/25. Small teams can trade parcels, but inventory capital and due diligence limit access.",
-    "team_efficiency": "Team Efficiency: 17/20. Small teams can trade parcels, but inventory capital and due diligence limit access.",
-    "startup_accessibility": "Startup Accessibility: 6/15. Small teams can trade parcels, but inventory capital and due diligence limit access.",
-    "automation_potential": "Automation Potential: 10/15. Small teams can trade parcels, but inventory capital and due diligence limit access."
+    "revenue_potential": "Revenue Potential: 23/25. GIS access-easement assemblage, double-close escrow assignments, and minor parcel splits eliminate heavy balance-sheet land carry.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. GIS access-easement assemblage, double-close escrow assignments, and minor parcel splits eliminate heavy balance-sheet land carry.",
+    "team_efficiency": "Team Efficiency: 18/20. GIS access-easement assemblage, double-close escrow assignments, and minor parcel splits eliminate heavy balance-sheet land carry.",
+    "startup_accessibility": "Startup Accessibility: 11/15. GIS access-easement assemblage, double-close escrow assignments, and minor parcel splits eliminate heavy balance-sheet land carry.",
+    "automation_potential": "Automation Potential: 11/15. GIS access-easement assemblage, double-close escrow assignments, and minor parcel splits eliminate heavy balance-sheet land carry."
   },
   "economics": {
     "gross_revenue_range": "$200,000–$1,500,000 USD annually",
+    "retained_revenue_range": "$100,000–$750,000 USD annually",
+    "retained_share": 0.5,
     "net_profit_margin_range": "12–25%",
+    "retained_profit_margin_range": "24–50%",
     "owner_net_profit_potential": "$24,000–$375,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$50,000–$400,000 USD",
+    "startup_capital_range": "$15,000–$75,000 USD",
     "monthly_opex_range": "$3,000–$15,000 USD",
-    "time_to_first_deal": "3–12 months",
+    "time_to_first_deal": "3–9 months",
+    "automation_coverage": 0.71,
     "typical_team_size": {
       "full_time_including_owner": 1,
       "contractors": 3,
       "total_people": 4
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Gross parcel sale proceeds; acquisition costs included in net margin",
+    "revenue_basis": "Gross parcel sale proceeds (50% retained spread after acquisition basis)",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 200000,
+      "annual_retained_revenue_usd": 100000,
       "net_profit_margin_pct": 12,
+      "retained_profit_margin_pct": 24.0,
       "annual_owner_net_profit_usd": 24000,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 850000.0,
+      "annual_retained_revenue_usd": 425000,
       "net_profit_margin_pct": 18.5,
+      "retained_profit_margin_pct": 37.0,
       "annual_owner_net_profit_usd": 157250,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1500000,
+      "annual_retained_revenue_usd": 750000,
       "net_profit_margin_pct": 25,
+      "retained_profit_margin_pct": 50.0,
       "annual_owner_net_profit_usd": 375000,
       "full_time_including_owner": 2,
       "contractors": 4,
@@ -81,8 +91,8 @@
     }
   },
   "automation_levers": [
-    "Parcel screening",
-    "Comparable-sale tracking"
+    "GIS parcel screening",
+    "Comparable-sale & mailer automation"
   ],
   "key_risks": [
     "Illiquidity",

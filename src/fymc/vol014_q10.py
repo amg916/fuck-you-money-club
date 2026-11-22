@@ -13,8 +13,8 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped plays "
-        "with a 79/100 Money-to-Manpower Score. Its automation advantage comes from "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped plays "
+        "with a 89/100 Money-to-Manpower Score. Its automation advantage comes from "
         "turning application evidence, lender appetite, and renewal dates into "
         "versioned workflows rather than delegating credit judgment to a model. "
         "A 2 FT + 2 C team can target automation of 70%+ of repetitive task "

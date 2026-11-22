@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
+        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
         "Money-to-Manpower Score. Build its procurement-services business around "
         "seven mapped operator plays: solicitation intelligence, opportunity "
         "qualification, bid-calendar control, proposal assembly, teaming "
@@ -475,8 +475,8 @@ CHAPTER_11 = {
                     "A client's government payment expectations "
                     "do not automatically determine when "
                     "the desk gets paid. The stated "
-                    "6–18 months to first deal makes "
-                    "the $25,000–$150,000 startup range a "
+                    "3–12 months to first deal makes "
+                    "the $20,000–$90,000 startup range a "
                     "runway constraint, not a hiring "
                     "instruction. At $25,000 monthly cash "
                     "burn, $150,000 funds six months "

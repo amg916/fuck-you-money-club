@@ -581,7 +581,7 @@ def build_volume_017_workbook() -> dict:
                     (
                         "Set the launch objective around operational readiness, screened inventory, "
                         "funded renewals, and tested transaction procedures. The stated first-deal "
-                        "window is 3 to 24 months; a 30-day sprint must not rely on immediate "
+                        "window is 2 to 9 months; a 30-day sprint must not rely on immediate "
                         "sales to meet unavoidable payments."
                     ),
                     (
@@ -614,7 +614,7 @@ def build_volume_017_workbook() -> dict:
                         "Canonical position and launch objective",
                         "textarea",
                         "Record the candidate identity, pipeline rank, score breakdown, capital range, operating range, and first-deal window. Translate the positioning into a practical launch objective without treating the score as evidence of market liquidity or a predicted investment return.",
-                        "Candidate #16, Domain Investing, ranks #17 of 29 and scores 74/100: revenue 17, margin 18, team efficiency 19, accessibility 9, automation 11. Positioning is Disciplined Specialist Play. Launch assumptions retain $10,000–$150,000 startup capital, $500–$5,000 monthly operating costs, and 3–24 months to the first deal.",
+                        "Candidate #16, Domain Investing, ranks #22 of 29 and scores 83/100: revenue potential 19, margin potential 21, team efficiency 18, startup accessibility 13, and automation potential 12. Positioning is High-Leverage Operator Play. Launch assumptions retain $8,000–$60,000 startup capital, $500–$5,000 monthly operating costs, and 2–9 months to the first deal.",
                     ),
                     field(
                         "Days 1 through 7: foundation deliverables",

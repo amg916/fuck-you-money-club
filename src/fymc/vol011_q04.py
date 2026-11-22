@@ -13,7 +13,7 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 "
+        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 "
         "Money-to-Manpower Score and 21 mapped plays. Its capital advantage comes "
         "from controlling mandates and transaction execution, not purchasing the "
         "assets being brokered. Allocate at least half of startup cash to operating "

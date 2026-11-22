@@ -98,9 +98,8 @@ def build_volume_016_workbook() -> dict:
                             "and representative control over consequential decisions."
                         ),
                         (
-                            "Candidate #9, Probate Real Estate, ranks #16 of 29 with "
-                            "76/100: revenue potential 23, margin potential 18, team "
-                            "efficiency 16, startup accessibility 9, and automation 10. "
+                            "Candidate #9, Probate Real Estate, ranks #26 of 29 with "
+                            "80/100: revenue potential 23, margin potential 20, team efficiency 16, startup accessibility 10, and automation potential 11. "
                             "Docket alerts and transaction checklists support the "
                             "High-Leverage Operator Play; they do not replace court "
                             "interpretation or negotiations."

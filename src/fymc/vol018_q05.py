@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #6, Land Flipping, holds Rank #18 with a 72/100 Money-to-Manpower "
+        "Candidate #6, Land Flipping, holds Rank #15 with a 86/100 Money-to-Manpower "
         "Score. Newcomers lose capital by confusing a mapped parcel with a transferable, "
         "buildable, liquid product; the question's 80% figure is a framing device, not "
         "an established failure statistic. This chapter maps six operating plays: "

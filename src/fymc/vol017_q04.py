@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($10,000–$150,000 USD) and configure a lean, low-opex ($500–$5,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($8,000–$60,000 USD) and configure a lean, low-opex ($500–$5,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Domain Budgets, Porkbun and Cloudflare Rails, Escrow Settlement, and ACPA-Screened Asset Transfers",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
         "Score. The production advantage is patient capital, controlled renewals, "
         "and defensible ownership—not a sprawling subscription stack. Allocate "
         "60% of opening capital to working reserves, separate inventory from "

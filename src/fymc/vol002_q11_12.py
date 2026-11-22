@@ -16,7 +16,7 @@ Q11 = {
     "key_metrics": [
         {"label": "Base", "value": "$425,000 gross fees", "context": "2 FT + 2 C", "note": "35% modeled margin; $148,750 owner net."},
         {"label": "Multi-State", "value": "$750,000 gross fees", "context": "3 FT + 3 C", "note": "45% modeled margin; $337,500 owner net."},
-        {"label": "Score", "value": "86/100", "context": "22/22/18/12/12", "note": "+/-3 points; High confidence editorial rating."},
+        {"label": "Score", "value": "87/100", "context": "23/23/18/11/12", "note": "+/-3 points; High confidence editorial rating."},
     ],
     "sections": [
         {

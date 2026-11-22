@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower Score. "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower Score. "
         "This chapter converts eight mapped plays into a controlled acquisition, verification, "
         "sale, transfer, and reconciliation process. Seven domain operating plays cover brandables, "
         "exact-match names, expired assets, drop-catching, upgrades, inbound conversion, and renewal "
@@ -640,7 +640,7 @@ def check():
                 (
                     "The Worked 90-Day Cohort Walk is a deliberately successful illustrative "
                     "quarter calibrated to the Base case, not a measured sell-through forecast. "
-                    "Opening owner capital is $25,000, within the stated $10,000–$150,000 startup "
+                    "Opening owner capital is $25,000, within the stated $8,000–$60,000 startup "
                     "range. There is no opening inventory, debt, payable, or escrow balance. "
                     "Month 1 screens 30 acquisition candidates, rejects 20, and purchases ten "
                     "names for $8,000. Month 2 screens 22, rejects 16, and purchases six for "

@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score. Its 12 mapped plays become transferable only when "
         "identity evidence, finder agreements, treasury submissions, and fee collections "
         "survive the founder's absence. This chapter assigns those plays to a lean "

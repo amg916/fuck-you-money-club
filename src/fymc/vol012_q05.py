@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower "
+        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower "
         "Score. Its leverage disappears when a broker mistakes possession for title, "
         "a running spindle for proven accuracy, or escrow funding for earned commission. "
         "This chapter maps seven operating plays: heavy-construction consignment, CNC "

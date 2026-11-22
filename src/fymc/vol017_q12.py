@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
         "Score. Launch a controlled inventory experiment, not an indiscriminate buying "
         "spree. This chapter maps eight operator plays: brandable acquisition, exact-match "
         "acquisition, expired-authority diligence, drop-catching, wholesale exits, inbound "

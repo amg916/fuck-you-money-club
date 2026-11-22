@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #24 ranks #04 with an 87/100 score and 35 mapped operator plays. Its operating advantage is not a clever redirect: it is a reconciled chain from declared intent to settled commission. Build useful bridge content, preserve first-party attribution, authenticate merchant events, and reconcile every reversal before buying more traffic. This chapter connects quiz qualification, search-feed editorial journeys, and partner web checkouts without treating them as interchangeable funnels. The annual scenarios separate merchant sales from affiliate revenue and owner profit. Instrument the chain first; scale only the traffic cohorts whose mature commissions survive refunds, scrubs, and acquisition costs.
+Candidate #24 ranks #02 with an 92/100 score and 35 mapped operator plays. Its operating advantage is not a clever redirect: it is a reconciled chain from declared intent to settled commission. Build useful bridge content, preserve first-party attribution, authenticate merchant events, and reconcile every reversal before buying more traffic. This chapter connects quiz qualification, search-feed editorial journeys, and partner web checkouts without treating them as interchangeable funnels. The annual scenarios separate merchant sales from affiliate revenue and owner profit. Instrument the chain first; scale only the traffic cohorts whose mature commissions survive refunds, scrubs, and acquisition costs.
 
 ### Key Metrics
 

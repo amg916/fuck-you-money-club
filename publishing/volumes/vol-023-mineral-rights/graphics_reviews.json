@@ -682,7 +682,7 @@
       "concept_a": {
         "graphic_id": "diag-07-startup-capital-allocation-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate Acquisition Capital Without Calling It Revenue",
+        "label": "Allocate Option & Diligence Capital Without Calling It Revenue",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -692,7 +692,7 @@
       "concept_b": {
         "graphic_id": "diag-07-startup-capital-allocation-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate Acquisition Capital Without Calling It Revenue",
+        "label": "Allocate Option & Diligence Capital Without Calling It Revenue",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -702,7 +702,7 @@
       "concept_c": {
         "graphic_id": "diag-07-startup-capital-allocation-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate Acquisition Capital Without Calling It Revenue",
+        "label": "Allocate Option & Diligence Capital Without Calling It Revenue",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-21T23:07:58Z"
+  "updated_at": "2026-11-22T16:33:27Z"
 }

@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, ranks #09 with an 82/100 "
+        "Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 "
         "Money-to-Manpower Score across 30 mapped plays. Its product is documented "
         "enterprise buying intent, not ownership of a client's million-dollar contract. "
         "Build contracts around accepted opportunities, traceable account attribution, "

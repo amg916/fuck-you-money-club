@@ -3,7 +3,7 @@ from __future__ import annotations
 VOLUME_028_SUBTITLE: str = (
     "The Complete Playbook for Commercial Cleaning Contracts: "
     "$250,000–$1,200,000 USD in Annual Contract Revenue, "
-    "from a 5 FT + 4 C (9 People) Pod to an 11-Person Team"
+    "from a 1 FT + 3 C (4 People) Pod to a 6-Person Team"
 )
 
 VOLUME_028_POSITIONING_ALTERNATIVES: list[dict] = [
@@ -15,7 +15,7 @@ VOLUME_028_POSITIONING_ALTERNATIVES: list[dict] = [
         ),
         "audience": (
             "Local janitorial operators building dense office routes with "
-            "five full-time employees and four genuine independent service providers."
+            "one full-time employee and three genuine independent service providers."
         ),
         "research_basis": (
             "Federal minimum-wage, overtime, and time-record requirements make "
@@ -63,8 +63,8 @@ VOLUME_028_POSITIONING_ALTERNATIVES: list[dict] = [
     {
         "title": "The Supervisor-Pod Cleaning Business",
         "subtitle": (
-            "Build a nine-person operating pod with explicit labor status, "
-            "measured route capacity, and a controlled eleven-person expansion."
+            "Build a four-person operating pod (1 FT + 3 C) with explicit labor status, "
+            "measured route capacity, and a controlled six-person expansion (2 FT + 4 C)."
         ),
         "audience": (
             "Owner-operators replacing informal labor arrangements with documented "
@@ -257,7 +257,7 @@ def build_volume_028_diagrams_data() -> list[dict]:
             (
                 "$725,000 minus $435,000 minus $43,500 minus $79,750 minus "
                 "$79,750 equals $87,000. Costs total $638,000, or 88.0% "
-                "of revenue; owner net equals 12.0%. The stated $4,000–$18,000 "
+                "of revenue; owner net equals 12.0%. The stated $3,000–$14,000 "
                 "monthly opex range cannot serve as an all-in cost ceiling "
                 "for this scenario; its coverage must be reconciled before bidding."
             ),
@@ -481,79 +481,48 @@ def build_volume_028_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-06-nine-seat-pod-with-two-seat-expansion",
+            "diag-06-four-seat-core-with-two-seat-expansion",
             "org_architecture",
-            "Nine Active Seats, Two Explicit Expansion Seats",
-            "Base: 5 FT + 4 C. Scaled: 6 FT + 5 C.",
+            "Four Core Seats, Two Explicit Expansion Seats",
+            "Conservative and Base: 1 FT + 3 C (4 people). Scaled: 2 FT + 4 C (6 people).",
             11,
             "operating_framework",
             (
-                "Numeric values indicate Base-Case active seats: nine ones "
-                "and two zeros. Activate both zero-valued seats only in "
-                "the Scaled scenario. FT denotes full-time employee seats; "
-                "C denotes one-person independent service-provider seats, "
-                "subject to applicable classification tests. Headcount is "
-                "not a full-time-equivalent measure."
+                "Numeric values indicate active Conservative and Base core seats: "
+                "four ones and two zeros. The core comprises 1 FT + 3 C; "
+                "activate the two zero-valued seats, 1 FT + 1 C, only in "
+                "the Scaled scenario for 2 FT + 4 C. FT denotes full-time "
+                "employee seats; C denotes one-person independent service-provider "
+                "seats, subject to applicable classification tests. Headcount "
+                "is not a full-time-equivalent measure. External vendor/trade "
+                "sub-crews are charged to direct subcontractor/COGS pass-through, "
+                "not internal pod headcount; their delivery capacity and costs "
+                "must still be measured and funded."
             ),
             (
                 "Conservative: $250,000 revenue and $20,000 owner net with "
-                "nine people. Base: $725,000 revenue and $87,000 owner net "
-                "with nine people. Scaled: $1,200,000 revenue and $192,000 "
-                "owner net with eleven people. These are separate operating "
-                "scenarios, not proof that two hires alone produce the revenue "
-                "increase. Validate paid hours, utilization, pricing, and route "
-                "capacity before accepting added work."
+                "four people (1 FT + 3 C). Base: $725,000 revenue and "
+                "$87,000 owner net with four people (1 FT + 3 C). "
+                "Scaled: $1,200,000 revenue and $192,000 owner net with "
+                "six people (2 FT + 4 C). These are separate operating "
+                "scenarios, not proof that two added seats alone produce the "
+                "revenue increase. Validate paid hours, external delivery "
+                "capacity, utilization, pricing, and route capacity before "
+                "accepting added work."
             ),
             [
                 (
-                    "FT 1: pod supervisor",
-                    "One active employee owning delivery quality and coverage",
+                    "FT 1: pod supervisor and account operations",
+                    "One active employee owning delivery quality, estimates, and billing",
                     1.0,
                     (
-                        "Own employee scheduling, site mobilization, inspection "
-                        "review, supply readiness, and absence coverage. Maintain "
-                        "a weekly bid-hours-versus-actual-hours report for each account."
-                    ),
-                ),
-                (
-                    "FT 2: working lead",
-                    "One active employee leading the primary recurring route",
-                    1.0,
-                    (
-                        "Perform cleaning while coaching employee task sequencing, "
-                        "checking lockup procedures, and documenting exceptions. "
-                        "Record supervisory and field time separately for costing."
-                    ),
-                ),
-                (
-                    "FT 3: route cleaner",
-                    "One active employee serving measured recurring office scopes",
-                    1.0,
-                    (
-                        "Execute assigned office cleaning tasks and record actual "
-                        "service time. Escalate access delays, excess waste, "
-                        "missing consumables, and out-of-scope requests immediately."
-                    ),
-                ),
-                (
-                    "FT 4: route cleaner",
-                    "One active employee serving trained medical-office scopes",
-                    1.0,
-                    (
-                        "Follow site-specific task lists, product labeling, and "
-                        "required exposure controls. Log missed rooms and corrective "
-                        "actions without capturing patient records in inspection photographs."
-                    ),
-                ),
-                (
-                    "FT 5: account operations",
-                    "One active employee owning estimates, billing, and renewals",
-                    1.0,
-                    (
-                        "Maintain the prospect cohort, proposal costing, customer "
-                        "purchase-order details, invoice follow-up, and renewal "
-                        "calendar. If the owner fills this seat, include "
-                        "their work compensation before residual owner net."
+                        "Own site mobilization, inspection review, supply readiness, "
+                        "proposal costing, invoice follow-up, and renewals. Coordinate "
+                        "contracted provider outcomes without imposing employee-style "
+                        "methods on independent businesses. Maintain weekly bid-hours "
+                        "versus actual-hours reporting and verify external delivery "
+                        "coverage. If the owner fills this seat, include their work "
+                        "compensation before residual owner net."
                     ),
                 ),
                 (
@@ -590,79 +559,78 @@ def build_volume_028_diagrams_data() -> list[dict]:
                     ),
                 ),
                 (
-                    "C 4: project-cleaning provider",
-                    "One active independent provider delivering separate periodic projects",
-                    1.0,
+                    "FT 2: scaled working lead",
+                    "Zero core seats; activate one employee for Scaled capacity",
+                    0.0,
                     (
-                        "Use independently priced deep-cleaning projects with bounded "
-                        "deliverables rather than employee-style fill-in shifts. "
-                        "For controlled shift coverage, use an appropriate employee "
-                        "arrangement and revise the staffing plan."
+                        "Add this second full-time employee only against measured "
+                        "recurring paid-hour demand and adequate collection funding. "
+                        "Perform cleaning and support inspection and route coverage. "
+                        "Record supervisory and field time separately; recalculate "
+                        "overtime exposure and supervisor capacity before expanding."
                     ),
                 ),
                 (
-                    "FT 6: scaled route cleaner",
-                    "Zero Base seats; activate one employee for Scaled capacity",
+                    "C 4: scaled project-cleaning provider",
+                    "Zero core seats; activate one independent provider for Scaled demand",
                     0.0,
                     (
-                        "Add this sixth employee only against measured recurring "
-                        "paid-hour demand and adequate collection funding. Recalculate "
-                        "supervisor coverage and overtime exposure before expanding "
-                        "the route."
-                    ),
-                ),
-                (
-                    "C 5: scaled specialist provider",
-                    "Zero Base seats; activate one independent provider when justified",
-                    0.0,
-                    (
-                        "Add a fifth genuine provider for separately scoped "
-                        "specialist demand. The illustrated headcount assumes each "
-                        "provider is one person; count additional people explicitly "
-                        "if a subcontract business deploys a larger crew."
+                        "Add a fourth genuine one-person provider for independently "
+                        "priced deep-cleaning projects with bounded deliverables, "
+                        "not employee-style fill-in shifts. External vendor/trade "
+                        "sub-crews remain direct subcontractor/COGS pass-through "
+                        "rather than additional internal pod seats. Verify their "
+                        "capacity, insurance, and lawful working arrangements."
                     ),
                 ),
             ],
         ),
         (
-            "diag-07-startup-cash-allocation",
+            "diag-07-thirty-thousand-reference-startup-allocation",
             "stacked_comparison",
-            "Allocate Launch Cash Before Buying Capacity",
-            "Four buckets reconcile lean, reference, and expanded startup budgets.",
+            "Allocate a $30,000 Reference Launch Budget",
+            "Four buckets reconcile $10,000 lean, $30,000 reference, and $50,000 expanded plans.",
             4,
             "illustrative_model",
             (
-                "Numeric values encode the $45,000 reference stack only. "
-                "The value text supplies comparable $15,000 lean and "
-                "$90,000 expanded stacks in the same bucket order. "
-                "These are startup cash allocations, not annual expenses "
-                "or revenue scenarios. Do not stack all three budgets together."
+                "All amounts are USD. Numeric values encode only the $30,000 "
+                "central/reference startup stack within the canonical "
+                "$10,000–$50,000 startup capital range. The value text "
+                "supplies comparable $10,000 lean and $50,000 expanded stacks "
+                "in the same four-bucket order. These are startup cash "
+                "allocations, not annual expenses or revenue scenarios. "
+                "Do not stack all three budgets together."
             ),
             (
-                "Lean: $4,500 + $2,000 + $1,000 + $7,500 = $15,000. "
-                "Reference: $12,000 + $5,000 + $3,000 + $25,000 = $45,000. "
-                "Expanded: $22,000 + $10,000 + $6,000 + $52,000 = $90,000. "
-                "A lean launch uses existing transport and staged hiring; "
-                "none of these budgets proves runway for nine simultaneous starts."
+                "Lean: $3,000 + $1,500 + $500 + $5,000 = $10,000. "
+                "Reference: $8,000 + $3,500 + $1,500 + $17,000 = $30,000. "
+                "Expanded: $13,000 + $6,000 + $3,000 + $28,000 = $50,000. "
+                "A lean launch uses existing transport and staged commitments. "
+                "None of these budgets guarantees runway for the four-person "
+                "core pod (1 FT + 3 C), external delivery crews, or expansion "
+                "to six people (2 FT + 4 C); model mobilization and collections."
             ),
             [
                 (
                     "Equipment and initial supplies",
-                    "Lean $4,500; reference $12,000; expanded $22,000 equipment cash",
-                    12000.0,
+                    "Lean $3,000; reference $8,000; expanded $13,000 equipment cash",
+                    8000.0,
                     (
-                        "Fund commercial vacuums, carts, microfiber systems, PPE, "
-                        "dispensers, and initial chemicals. Rent infrequent specialty "
-                        "machines until contracted utilization supports ownership. "
-                        "Avoid duplicating client-provided equipment in the budget."
+                        "Allocate $3,000 lean, $8,000 reference, or $13,000 "
+                        "expanded to commercial vacuums, carts, microfiber systems, "
+                        "PPE, dispensers, and initial chemicals. Rent infrequent "
+                        "specialty machines until contracted utilization supports "
+                        "ownership. Avoid duplicating client-provided or independent "
+                        "provider-owned equipment in the budget."
                     ),
                 ),
                 (
                     "Setup and coverage deposits",
-                    "Lean $2,000; reference $5,000; expanded $10,000 setup cash",
-                    5000.0,
+                    "Lean $1,500; reference $3,500; expanded $6,000 setup cash",
+                    3500.0,
                     (
-                        "Reserve cash for registration, required local licensing, "
+                        "Allocate $1,500 lean, $3,500 reference, or $6,000 "
+                        "expanded to registration, required local licensing, "
                         "insurance deposits, contract preparation, and initial safety "
                         "training. Replace estimates with jurisdiction-specific fees "
                         "and written broker quotations before committing funds."
@@ -670,25 +638,29 @@ def build_volume_028_diagrams_data() -> list[dict]:
                 ),
                 (
                     "Acquisition and operating systems",
-                    "Lean $1,000; reference $3,000; expanded $6,000 acquisition cash",
-                    3000.0,
+                    "Lean $500; reference $1,500; expanded $3,000 acquisition cash",
+                    1500.0,
                     (
-                        "Fund a focused website, local prospect research, walkthrough "
-                        "travel, estimating setup, Swept onboarding, and QuickBooks "
-                        "configuration. Limit subscription seats and advertising "
-                        "commitments until the first route converts."
+                        "Allocate $500 lean, $1,500 reference, or $3,000 "
+                        "expanded to a focused website, local prospect research, "
+                        "walkthrough travel, estimating setup, and appropriately "
+                        "staged Swept and QuickBooks configuration. Limit subscription "
+                        "seats and advertising commitments until the first route converts."
                     ),
                 ),
                 (
                     "Payroll and collection buffer",
-                    "Lean $7,500; reference $25,000; expanded $52,000 liquidity",
-                    25000.0,
+                    "Lean $5,000; reference $17,000; expanded $28,000 liquidity",
+                    17000.0,
                     (
-                        "Hold unspent cash for wages, payroll charges, subcontract "
-                        "invoices, and collection delays. At Base-Case direct labor "
-                        "of $435,000 yearly, $25,000 covers about three weeks "
-                        "of direct labor alone; stage mobilization and model "
-                        "all other cash outflows separately."
+                        "Hold $5,000 lean, $17,000 reference, or $28,000 "
+                        "expanded as unspent cash for wages, payroll charges, "
+                        "subcontract invoices, and collection delays. At Base-Case "
+                        "direct service labor of $435,000 yearly, the $17,000 "
+                        "reference buffer covers about two weeks of that cost "
+                        "alone. External vendor/trade sub-crews are direct "
+                        "subcontractor/COGS pass-through, not internal pod headcount. "
+                        "Stage mobilization and model all other cash outflows separately."
                     ),
                 ),
             ],

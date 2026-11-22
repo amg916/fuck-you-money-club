@@ -13,7 +13,7 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score. This production blueprint connects 12 mapped plays "
         "to evidence collection, statutory finder agreements, treasury submissions, "
         "owner-directed distributions, and reconciled service fees. Annual owner net "

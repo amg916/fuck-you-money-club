@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower "
+        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower "
         "Score. Its information advantage comes from connecting asset identity, seller "
         "authority, buyer demand, and settlement evidence before competitors connect "
         "the same records. This chapter maps seven operating plays: construction "

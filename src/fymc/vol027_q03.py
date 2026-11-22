@@ -13,8 +13,8 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a Money-to-Manpower "
-        "Score of 57/100: attractive cash generation requires substantial capital "
+        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower "
+        "Score of 86/100: attractive cash generation requires substantial capital "
         "and operating labor. The canonical annual owner-profit cases are $60,000 "
         "Conservative, $243,750 Base, and $540,000 Scaled, after interest but before "
         "principal repayments. Seven mapped operating plays connect QoE revenue "
@@ -32,19 +32,19 @@ CHAPTER_3 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales after customer credits and reversals",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit after interest, before principal; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales after customer credits and reversals",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales after customer credits and reversals",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit after interest, before principal; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -448,7 +448,7 @@ CHAPTER_3 = {
                     "terms should replace that simplifying convention. "
                     "This reserve is additional to delivered normal "
                     "working capital and excludes transaction fees. "
-                    "The quoted $15,000-$70,000 monthly operating "
+                    "The quoted $6,000-$25,000 monthly operating "
                     "expense range cannot stand in for total "
                     "modeled cash outflow: Base materials, delivery "
                     "labor, CAC, and overhead total approximately "

@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #19 with a 72/100 "
+        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
         "Money-to-Manpower Score. Its annual owner-profit cases are $24,000 "
         "Conservative, $196,000 Base, and $500,000 Scaled. This chapter organizes "
         "nine mapped plays: authorized VAR resale, AWS CPPO, Microsoft CSP, deal "

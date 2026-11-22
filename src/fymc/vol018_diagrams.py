@@ -207,7 +207,7 @@ def build_volume_018_diagrams_data() -> list[dict]:
             (
                 "17 completed parcel sales × $50,000 = $850,000 gross annual "
                 "revenue. This is a steady-state illustration, not a first-month "
-                "closing target; time to first deal remains 3–12 months."
+                "closing target; time to first deal remains 3–9 months."
             ),
             [
                 (
@@ -581,69 +581,91 @@ def build_volume_018_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-07-two-hundred-thousand-dollar-startup-stack",
+            "diag-07-forty-five-thousand-dollar-startup-stack",
             "stacked_comparison",
-            "Allocate $200,000 Before Making the First Offer",
-            "Four nonoverlapping capital buckets within the $50,000–$400,000 range",
+            "Allocate a $45,000 Reference Budget Before the First Offer",
+            "Four capital buckets: $15,000 lean, $45,000 reference, $75,000 expanded",
             4,
             "illustrative_model",
             (
-                "This single startup allocation totals $200,000 and sits inside "
-                "the canonical $50,000–$400,000 capital range. Values are USD "
-                "capital allocations, not annual expenses or recognized revenue. "
-                "Acquisition capital remains inventory until disposition; unused "
-                "reserves remain cash. Recycling sale proceeds is required "
-                "to support annual purchases above the initial inventory bucket."
+                "Numeric values represent the $45,000 central startup plan "
+                "inside the canonical $15,000–$75,000 USD capital range. "
+                "Each bucket also states its lean and expanded allocations; "
+                "these are alternative budgets, not additive funding sources. "
+                "Values are capital allocations, not annual expenses or recognized "
+                "revenue. Acquisition capital remains inventory until disposition; "
+                "unused reserves remain cash. Startup parcel prices must fit "
+                "available cash rather than assume the mature Base-Case purchase "
+                "price. Recycling sale proceeds is required to support annual "
+                "purchases above the initial inventory bucket."
             ),
             (
-                "$140,000 + $20,000 + $15,000 + $25,000 = $200,000. "
-                "The operating reserve covers five months at the illustrative "
-                "$5,000 monthly run rate, not the entire 3–12 month "
-                "first-deal window under every timing outcome."
+                "Lean: $6,000 + $1,500 + $1,500 + $6,000 = $15,000. "
+                "Reference: $24,000 + $4,500 + $1,500 + $15,000 = $45,000. "
+                "Expanded: $42,000 + $7,500 + $3,000 + $22,500 = $75,000. "
+                "The reference operating reserve covers three months at $5,000 "
+                "monthly, not the entire 3–9 month first-deal window under "
+                "every timing outcome."
             ),
             [
                 (
                     "Parcel purchase capital",
-                    "$140,000; 70.0%",
-                    140000,
+                    "Lean $6,000; reference $24,000; expanded $42,000",
+                    24000,
                     (
-                        "Reserve cash for purchase prices and deposits credited "
-                        "against those prices. At the Base-Case $30,000 average "
-                        "purchase price, four simultaneous parcels use $120,000; "
-                        "do not count pending sales as available acquisition cash."
+                        "Allocate $6,000 in the $15,000 lean plan, $24,000 in "
+                        "the $45,000 reference plan, or $42,000 in the $75,000 "
+                        "expanded plan to purchase prices and deposits credited "
+                        "against those prices. The reference bucket cannot fund "
+                        "the mature Base-Case $30,000 average purchase outright; "
+                        "target lower-priced inventory without consuming reserves. "
+                        "Do not count pending sales as available acquisition cash."
                     ),
                 ),
                 (
                     "Diligence and preparation",
-                    "$20,000; 10.0%",
-                    20000,
+                    "Lean $1,500; reference $4,500; expanded $7,500",
+                    4500,
                     (
-                        "Fund surveys, environmental work, land-use verification, "
-                        "and narrowly scoped preparation. Track failed-deal "
-                        "investigation costs separately from successful parcel "
-                        "basis, and stop spending when a fatal defect emerges."
+                        "Allocate $1,500 in the $15,000 lean plan, $4,500 in "
+                        "the $45,000 reference plan, or $7,500 in the $75,000 "
+                        "expanded plan to surveys, environmental work, land-use "
+                        "verification, and narrowly scoped preparation. Track "
+                        "failed-deal investigation costs separately from successful "
+                        "parcel basis, and stop spending when a fatal defect "
+                        "emerges. Reject or separately fund scopes exceeding "
+                        "the available diligence allocation."
                     ),
                 ),
                 (
                     "Closing and carrying liquidity",
-                    "$15,000; 7.5%",
-                    15000,
+                    "Lean $1,500; reference $1,500; expanded $3,000",
+                    1500,
                     (
-                        "Hold liquidity for settlement charges, property taxes, "
+                        "Allocate $1,500 in the $15,000 lean plan, $1,500 in "
+                        "the $45,000 reference plan, or $3,000 in the $75,000 "
+                        "expanded plan to settlement charges, property taxes, "
                         "insurance, and parcel-specific carrying bills before "
-                        "sales replenish cash. Do not also allocate this "
+                        "sales replenish cash. Confirm transaction-specific costs "
+                        "before committing capital. Do not also allocate this "
                         "same cash to recurring contractor or software invoices."
                     ),
                 ),
                 (
                     "Operating runway",
-                    "$25,000; 12.5%",
-                    25000,
+                    "Lean $6,000; reference $15,000; expanded $22,500",
+                    15000,
                     (
-                        "Fund five months of recurring operations at $5,000 "
-                        "monthly. The canonical monthly range is $3,000–$15,000; "
-                        "a slower exit or higher burn requires fewer "
-                        "concurrent purchases, more capital, or lower spending."
+                        "Allocate $6,000 in the $15,000 lean plan, $15,000 in "
+                        "the $45,000 reference plan, or $22,500 in the $75,000 "
+                        "expanded plan to recurring operations. Lean runway is "
+                        "two months at $3,000 monthly; reference and expanded "
+                        "runway are three and 4.5 months at $5,000 monthly. "
+                        "The canonical monthly range is $3,000–$15,000, and time "
+                        "to first deal is 3–9 months; resale cash may arrive later. "
+                        "These reserves do not guarantee funding through exit. "
+                        "Close any projected cash shortfall before committing "
+                        "to purchases by reducing spending or securing funding."
                     ),
                 ),
             ],
@@ -652,7 +674,7 @@ def build_volume_018_diagrams_data() -> list[dict]:
             "diag-08-thirty-day-land-desk-launch",
             "timeline_roadmap",
             "Build the Acquisition System in 30 Days",
-            "Four weekly deliverables; first-deal timing remains 3–12 months",
+            "Four weekly deliverables; first-deal timing remains 3–9 months",
             12,
             "operating_framework",
             (

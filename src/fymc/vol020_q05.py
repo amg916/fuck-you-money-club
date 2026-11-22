@@ -13,8 +13,8 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
-        "Money-to-Manpower Score: a Disciplined Specialist Play, not effortless "
+        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
+        "Money-to-Manpower Score: a High-Leverage Operator Play, not effortless "
         "procurement arbitrage. Seven chapter-mapped plays anchor this teardown: "
         "federal bid-desk retainers, municipal solicitation monitoring, prime/sub "
         "teaming support, fixed-fee proposal production, subcontract administration, "
@@ -490,13 +490,13 @@ CHAPTER_5 = {
                 ),
                 (
                     "The fourteenth trap is confusing profitable bookings with "
-                    "spendable cash. Startup capital of $25,000–$150,000 "
+                    "spendable cash. Startup capital of $20,000–$90,000 "
                     "and monthly operating expense of $5,000–$25,000 "
                     "produce only one month of runway at the "
                     "lowest-capital, highest-burn combination, versus thirty "
                     "months at the opposite extremes, before setup "
                     "spending or collections. First deals may take "
-                    "6–18 months, so underwrite runway against a "
+                    "3–12 months, so underwrite runway against a "
                     "dated sales pipeline rather than the best endpoint. "
                     "The monthly expense range is an operating "
                     "planning input, not a substitute for total "

@@ -6,28 +6,28 @@
   "preview_only": true,
   "files": {
     "digital_pdf.pdf": {
-      "bytes": 2030295,
-      "sha256": "f2e035f8e4aea56d8640af64f26a84d8e7287cc5cd7b30718f4bf8de8b59b9c2"
+      "bytes": 2030974,
+      "sha256": "568e6d2da3a93acefaf4d2bb6bc075b8526984cea3ac276b21480fa836898c4f"
     },
     "print_6x9_pdf.pdf": {
-      "bytes": 2671153,
-      "sha256": "56a12205daf64f6e21e5f017a43000974fdddc63fe78d8b41bc4395fc500f14a"
+      "bytes": 2671829,
+      "sha256": "3f8ed188e46ce0ad4301f0781e82c6b6826b1d4589139391edda4f32311d451f"
     },
     "workbook_pdf.pdf": {
-      "bytes": 546620,
-      "sha256": "f4908004aedd40f4d64130d0e512daaa61a956f21fa95dd323254fc62e286c48"
+      "bytes": 546619,
+      "sha256": "188e25f0be9bede6d9ef3104d12cdb5891cb892f842060dad6d1baca9b0fb74b"
     },
     "book.epub": {
-      "bytes": 251922,
-      "sha256": "6ff026d2aa88f63004933babb8c858039a9abad6cf6eb1d24ff6e7316544aa68"
+      "bytes": 252252,
+      "sha256": "815fad0fe3248e9779dac5d228809d8c2f14354cf3518b69dac787d2422b2ad2"
     },
     "art/cover.svg": {
-      "bytes": 4236,
-      "sha256": "01cadd65555384b0a1882eeda36dcbadd13202abc323f8af95f1e08f747222e3"
+      "bytes": 4237,
+      "sha256": "fde669570c92722e639a3536a1b8340733d2cf91f72af08224725908afb253ff"
     },
     "art/scorecard.svg": {
-      "bytes": 63663,
-      "sha256": "5ff17d57e0e4a52329af762c9dd36837382040d4955aa7479dd0d7b05bb9f593"
+      "bytes": 67464,
+      "sha256": "55195ba8650ab3758801a1f0f5340c98fbfa20237a73f183fe00a71d4b55f6df"
     },
     "art/diag_01.svg": {
       "bytes": 11276,
@@ -54,12 +54,12 @@
       "sha256": "7ea7db09518761d0d2c6216588c8a7f16879a609be5ab1db394e4024a41e06f1"
     },
     "art/diag_07.svg": {
-      "bytes": 9004,
-      "sha256": "2a029f9cb2b496ae2acbbe06da02fbf5a6902ab80416c0da2143d8c5afc1d974"
+      "bytes": 9322,
+      "sha256": "4c910087b37d5dc052c0957b103bb0fae57654028c570d701ef25d4cba44ba9e"
     },
     "art/diag_08.svg": {
       "bytes": 8988,
-      "sha256": "67bbae3f5c782fe4b99fbd61ae2e3dcfe164664c6cdc985402ec43da112fae88"
+      "sha256": "98d185ac4ecd746f87262fe767f435c4684e99649fc9f134f67c27ffec5971fa"
     }
   }
 }

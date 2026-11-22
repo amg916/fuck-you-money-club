@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #17, Government Surplus Auctions, holds Rank #26 with a 62/100 Money-to-Manpower Score because physical custody, working capital and exception handling dominate execution. This chapter maps six operator plays: discover and score; verify and bid; fund and remove; triage and refurbish; remarket to businesses; reconcile and recycle capital. A two full-time, three-contractor pod runs those plays through evidence-linked lot records, serialized SQLite transactions and immutable journals. The worked quarter produces $143,750 gross resale revenue and $20,125 owner profit, annualizing to the $80,500 Base case. Conservative annual owner profit remains $12,000; Scaled remains $200,000. The operating test is whether title, custody, inventory cost, receivables and bank cash reconcile without treating unsold assets as earnings.
+Candidate #17, Government Surplus Auctions, holds Rank #29 with a 79/100 Money-to-Manpower Score because physical custody, working capital and exception handling dominate execution. This chapter maps six operator plays: discover and score; verify and bid; fund and remove; triage and refurbish; remarket to businesses; reconcile and recycle capital. A two full-time, three-contractor pod runs those plays through evidence-linked lot records, serialized SQLite transactions and immutable journals. The worked quarter produces $143,750 gross resale revenue and $20,125 owner profit, annualizing to the $80,500 Base case. Conservative annual owner profit remains $12,000; Scaled remains $200,000. The operating test is whether title, custody, inventory cost, receivables and bank cash reconcile without treating unsold assets as earnings.
 
 ### Key Metrics
 

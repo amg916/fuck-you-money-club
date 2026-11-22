@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. The attractive economics depend on selling bounded implementation work, not absorbing unlimited integration debt or confusing customer sales with agency revenue. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. This chapter dissects scope creep, retry storms, defective outputs, data exposure, disputed milestones, identity-resolution claims, and affiliate bounty reversals. Treat the question's 80% figure as a rhetorical premise, not a measured failure rate. Instrument contribution by workflow, reserve against contractual reversals, and suspend unsafe actions before expanding volume. The strongest agency keeps delivery evidence, authorization, and cash realization attached to every promise.
+Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. The attractive economics depend on selling bounded implementation work, not absorbing unlimited integration debt or confusing customer sales with agency revenue. Canonical annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled. This chapter dissects scope creep, retry storms, defective outputs, data exposure, disputed milestones, identity-resolution claims, and affiliate bounty reversals. Treat the question's 80% figure as a rhetorical premise, not a measured failure rate. Instrument contribution by workflow, reserve against contractual reversals, and suspend unsafe actions before expanding volume. The strongest agency keeps delivery evidence, authorization, and cash realization attached to every promise.
 
 ### Key Metrics
 

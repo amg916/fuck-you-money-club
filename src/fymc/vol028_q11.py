@@ -6,15 +6,15 @@ CHAPTER_11 = {
     "chapter_number": 11,
     "question_number": 11,
     "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 5 FT + 4 C (9 people) -> 6 FT + 5 C (11 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
     "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
     "subtitle": "Nine-Seat Janitorial Pods, ISSA Bid Controls, W-2 and Subcontractor SLAs, Accrual Cohorts, and Transferable Contract Earnings",
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, holds Rank #28 with a "
-        "56/100 Money-to-Manpower Score because recurring contracts still require "
+        "Candidate #10, Commercial Cleaning Contracts, holds Rank #23 with a "
+        "82/100 Money-to-Manpower Score because recurring contracts still require "
         "paid crew hours. This chapter maps four operator plays: recurring B2B "
         "route density, medical janitorial specialization, ISSA-based production-rate "
         "bidding, and supervisor pods with scheduling, inspection, and billing "
@@ -32,19 +32,19 @@ CHAPTER_11 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual recognized cleaning contract revenue; total operating costs $230,000.",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C.",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual recognized cleaning contract revenue; total operating costs $638,000.",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C.",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual recognized cleaning contract revenue; total operating costs $1,008,000.",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C.",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C.",
         },
     ],
     "sections": [
@@ -58,7 +58,7 @@ CHAPTER_11 = {
                     "plays used here are recurring B2B route density, medical "
                     "janitorial specialization, ISSA-based production-rate bidding, "
                     "and supervisor pods supported by scheduling, inspection, and "
-                    "billing automation. In the nine-person configuration, FT1 is "
+                    "billing automation. In the four-person configuration, FT1 is "
                     "the working owner-supervisor, responsible for bids, account "
                     "reviews, payroll review, dispatch exceptions, and selected "
                     "production shifts. FT2 owns the first recurring route; FT3 "
@@ -240,7 +240,7 @@ CHAPTER_11 = {
                     "not amend coverage. Track expiration dates and excluded "
                     "operations against the actual scope, particularly floor "
                     "treatments, elevated glass work, and medical environments. "
-                    "If the nine-person model needs more reliable controlled "
+                    "If the four-person model needs more reliable controlled "
                     "labor than lawful contractor arrangements provide, "
                     "identify the headcount conflict and rework the operation "
                     "rather than claiming the same pod still fits."
@@ -326,7 +326,7 @@ CHAPTER_11 = {
                 "title": "Verify four conditions before the next account starts",
                 "body": "Mobilize only when the named pod can perform the contracted work with documented capacity, lawful staffing, and an executable quality plan.",
                 "items": [
-                    "Reconcile signed scope to employee hours, contractor packages, paid travel, and absence coverage without exceeding the nine-person or eleven-person model.",
+                    "Reconcile signed scope to employee hours, contractor packages, paid travel, and absence coverage without exceeding the four-person or eleven-person model.",
                     "Complete jurisdiction-specific worker-status review and verify required insurance terms against the actual services rather than relying on contract labels.",
                     "Confirm site access, chemical inventory, safety data sheets, required training, and medical protocol ownership before issuing the first service schedule.",
                     "Test the inspection-to-correction workflow and confirm that the proposed account leaves customer-group and contractor-counterparty exposure within the 25% caps.",

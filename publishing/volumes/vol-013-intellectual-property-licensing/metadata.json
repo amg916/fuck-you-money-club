@@ -67,7 +67,7 @@
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
   "rating_system": "Money-to-Manpower Score",
-  "composite_score": 79,
+  "composite_score": 88,
   "formats": [
     "8.5×11 Executive Digital PDF",
     "6×9 Print Edition",
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-21T21:38:41Z"
+  "updated_at": "2026-11-22T16:33:22Z"
 }

@@ -13,7 +13,7 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
+        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
         "Money-to-Manpower Score. Launch a paid procurement-services desk, not an "
         "award-prediction business. Map seven plays into one controlled workflow: "
         "solicitation monitoring, bid qualification, deadline management, proposal "

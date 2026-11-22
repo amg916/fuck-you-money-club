@@ -35,7 +35,7 @@
     "diag-04-channel-contribution-yields",
     "diag-05-resale-preflight-decisions",
     "diag-06-five-to-seven-person-pod",
-    "diag-07-startup-capital-allocation",
+    "diag-07-startup-capital-45000-reference",
     "diag-08-thirty-day-launch-roadmap"
   ],
   "cover_graphic_ids": [
@@ -60,7 +60,7 @@
     "diag-04-channel-contribution-yields",
     "diag-05-resale-preflight-decisions",
     "diag-06-five-to-seven-person-pod",
-    "diag-07-startup-capital-allocation",
+    "diag-07-startup-capital-45000-reference",
     "diag-08-thirty-day-launch-roadmap"
   ],
   "allowed_statuses": [
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-startup-capital-45000-reference": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-startup-capital-45000-reference",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Hiding Vendor Float",
+        "label": "Allocate a $45,000 Startup Plan Without Hiding Vendor Float",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-startup-capital-45000-reference",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Hiding Vendor Float",
+        "label": "Allocate a $45,000 Startup Plan Without Hiding Vendor Float",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-startup-capital-45000-reference",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Without Hiding Vendor Float",
+        "label": "Allocate a $45,000 Startup Plan Without Hiding Vendor Float",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-21T22:32:18Z"
+  "updated_at": "2026-11-22T16:33:25Z"
 }

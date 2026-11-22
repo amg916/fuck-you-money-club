@@ -13,8 +13,8 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a "
-        "79/100 Money-to-Manpower Score. This directory maps four operator plays: "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a "
+        "88/100 Money-to-Manpower Score. This directory maps four operator plays: "
         "patent licensing, brand licensing, catalog licensing, and dataset licensing. "
         "The edge comes from reconciling public evidence with executed rights "
         "documents, then converting contract obligations into reproducible royalty "
@@ -648,8 +648,8 @@ CHAPTER_8 = {
                     "brand agreement above. Conservative and Base retain "
                     "one full-time operator plus three contractors; Scaled "
                     "uses two full-time operators plus four contractors. "
-                    "Startup capital of $25,000 to $250,000 and monthly "
-                    "operating outlays of $2,000 to $15,000 describe planning "
+                    "Startup capital of $12,000 to $75,000 and monthly "
+                    "operating outlays of $2,000 to $12,000 describe planning "
                     "ranges, not a complete reconciliation of every annual "
                     "scenario cost. Do not force those ranges to replace "
                     "the implied total expense figures. With six to "

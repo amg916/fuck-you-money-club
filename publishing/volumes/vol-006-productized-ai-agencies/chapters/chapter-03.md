@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #29, Productized AI Agencies, ranks #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. Its canonical annual owner profits are $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. This chapter converts those totals into acquired-client cohorts, a seven-deduction margin waterfall, explicit remediation allowances, and settlement-delay cash requirements. Comparison-page acquisition, startup compute credits, and authorized advertising rebates receive separate economic tests. The operating discipline is simple: price human review, accrue contractors before paying distributions, distinguish deposits from earned fees, and fund delayed collections without depending on promotional credits or client advertising principal.
+Candidate #29, Productized AI Agencies, ranks #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. Its canonical annual owner profits are $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. This chapter converts those totals into acquired-client cohorts, a seven-deduction margin waterfall, explicit remediation allowances, and settlement-delay cash requirements. Comparison-page acquisition, startup compute credits, and authorized advertising rebates receive separate economic tests. The operating discipline is simple: price human review, accrue contractors before paying distributions, distinguish deposits from earned fees, and fund delayed collections without depending on promotional credits or client advertising principal.
 
 ### Key Metrics
 

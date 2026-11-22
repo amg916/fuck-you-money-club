@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 "
         "Money-to-Manpower Score across 54 mapped plays. Build the business around "
         "accepted demand, documented delivery, and transferable customer relationships, "
         "not inbox counts. The Conservative case produces $20,000 annual owner net "

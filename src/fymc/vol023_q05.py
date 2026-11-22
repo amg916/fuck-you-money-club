@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a 63/100 Money-to-Manpower "
+        "Candidate #7, Mineral Rights, ranks #25 with a 81/100 Money-to-Manpower "
         "Score: capital discipline matters more than acquisition volume. This chapter "
         "maps five operator plays: NMA/NPRI title underwriting, pooling-docket "
         "curve-jumping, institutional flips, royalty reconciliation, and "
@@ -395,7 +395,7 @@ CHAPTER_5 = {
                     "uses two plus four. The $1,000-$12,000 monthly opex "
                     "range is not a complete allocation of every "
                     "scenario's aggregate costs; do not force the annual "
-                    "cost residual into that range. The $150,000-$2,000,000 "
+                    "cost residual into that range. The $15,000-$75,000 "
                     "startup capital range and six-to-twenty-four-month first-deal "
                     "window demand a separate liquidity schedule. In an "
                     "illustrative flat-cost sensitivity, a $10,000 revenue "

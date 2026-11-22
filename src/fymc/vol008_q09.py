@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, holds Rank #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 "
         "Money-to-Manpower Score across 54 mapped plays. The durable business sells "
         "documented qualification and accountable routing, rather than untraceable "
         "contact lists. This chapter translates CAN-SPAM, TCPA, state privacy and "

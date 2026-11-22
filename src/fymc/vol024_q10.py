@@ -14,7 +14,7 @@ CHAPTER_10 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score of "
-        "62/100. This chapter maps four operator plays: auction intelligence, bid "
+        "81/100. This chapter maps four operator plays: auction intelligence, bid "
         "qualification, redemption servicing, and disposition-led distribution. A "
         "1 FT + 2 C pod uses Python ingestion, evidence-linked LLM extraction, "
         "signed webhooks, and exception queues to target 70%+ automation of measured "
@@ -634,7 +634,7 @@ CHAPTER_10 = {
                     "servicing, title, legal, losses, "
                     "and disposition costs to the "
                     "full expense bridge. Startup "
-                    "capital of $100,000–$1,500,000 "
+                    "capital of $15,000–$85,000 "
                     "and a six-to-thirty-six-month "
                     "first-deal horizon create "
                     "liquidity constraints that "

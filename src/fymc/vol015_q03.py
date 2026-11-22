@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower "
+        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
         "Score. Across the volume's 15 mapped plays, the economic denominator is "
         "recognized service fees, never judgment face value or client recoveries. "
         "The canonical Conservative, Base, and Scaled cases produce $12,000, "

@@ -13,7 +13,7 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower Score. "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. "
         "The paying client is usually the estate acting through an authorized personal representative; "
         "the economic funding source is usually buyer proceeds delivered into settlement escrow. "
         "This chapter organizes 11 mapped plays into practical payer, authority, and collection workflows, "

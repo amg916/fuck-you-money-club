@@ -13,7 +13,7 @@ CHAPTER_10 = {
     "layout_template": "case_study_walkthrough",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 "
         "Money-to-Manpower Score and 54 mapped plays. Its automation advantage is "
         "not message volume; it is a permission-aware operating system that turns "
         "verified signals into accepted appointments without multiplying review "

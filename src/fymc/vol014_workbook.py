@@ -1363,8 +1363,8 @@ def build_volume_014_workbook() -> dict:
                         (
                             "Volume 014 covers Candidate "
                             "#20, Specialty Finance Brokerage, "
-                            "ranked #14 of 29 "
-                            "with a 79/100 Money-to-Manpower "
+                            "ranked #06 of 29 "
+                            "with a 89/100 Money-to-Manpower "
                             "Score: 23 revenue, 21 "
                             "margin, 17 team efficiency, "
                             "8 accessibility, and 10 "

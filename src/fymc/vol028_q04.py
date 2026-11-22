@@ -6,16 +6,16 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$90,000 USD) and configure a lean, low-opex ($4,000–$18,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($10,000–$50,000 USD) and configure a lean, low-opex ($3,000–$14,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Payroll Float, ISSA Task Bids, W-2 Crew Controls, OSHA Chemical Files & Twelve Lean Infrastructure Layers",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a 56/100 "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a 82/100 "
         "Money-to-Manpower Score because growth still consumes paid crew hours. "
-        "Allocate at least half of the $15,000–$90,000 launch budget to protected "
+        "Allocate at least half of the $10,000–$50,000 launch budget to protected "
         "working capital, then purchase only equipment, coverage, and systems tied "
         "to signed work. This chapter maps four plays: reserve-first launch, "
         "production-rate bid control, supervisor-pod dispatch, and "
@@ -24,7 +24,7 @@ CHAPTER_4 = {
         "Canonical annual owner profit remains $20,000 Conservative, $87,000 Base, "
         "and $192,000 Scaled. A twelve-layer stack connects payroll, inspection "
         "evidence, chemical records, and collections without confusing the "
-        "$4,000–$18,000 monthly lean operating envelope with the much larger "
+        "$3,000–$14,000 monthly lean operating envelope with the much larger "
         "all-in cost of a mature cleaning workforce."
     ),
     "key_metrics": [
@@ -32,19 +32,19 @@ CHAPTER_4 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual recognized cleaning contract revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual recognized cleaning contract revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual recognized cleaning contract revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -77,7 +77,7 @@ CHAPTER_4 = {
                     "portal, purchase-order requirement, or acceptance procedure."
                 ),
                 (
-                    "Treat the published $4,000–$18,000 monthly operating range "
+                    "Treat the published $3,000–$14,000 monthly operating range "
                     "as a lean launch-stage planning envelope, not a claim "
                     "that a mature crew costs less than its wages. The "
                     "Conservative case recognizes $250,000 of cleaning revenue "

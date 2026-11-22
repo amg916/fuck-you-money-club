@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #24 earns commissions, not the merchant's checkout revenue. Build its startup budget around that distinction. A $5,000 launch buys one organic comparison wedge; $20,000 funds a hybrid co-registration and paid search bridge; $50,000 supports a bounded multi-vertical call and media test desk. None buys automatic distribution. Release cash against reconciled events, accepted calls, and mature commissions rather than traffic screenshots. Keep hosting replaceable, click identifiers durable, and acquired domains or feeds subject to documented rights review. This chapter turns the 87/100, rank #04 opportunity and its 35 mapped operator plays into a staged infrastructure purchasing plan.
+Candidate #24 earns commissions, not the merchant's checkout revenue. Build its startup budget around that distinction. A $5,000 launch buys one organic comparison wedge; $20,000 funds a hybrid co-registration and paid search bridge; $50,000 supports a bounded multi-vertical call and media test desk. None buys automatic distribution. Release cash against reconciled events, accepted calls, and mature commissions rather than traffic screenshots. Keep hosting replaceable, click identifiers durable, and acquired domains or feeds subject to documented rights review. This chapter turns the 92/100, rank #02 opportunity and its 35 mapped operator plays into a staged infrastructure purchasing plan.
 
 ### Key Metrics
 

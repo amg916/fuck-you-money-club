@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #8, Judgment Recovery, ranks #15 with a 77/100 Money-to-Manpower Score across a portfolio of 15 mapped plays. Its capital advantage comes from screening enforceable commercial judgments before funding enforcement, not from buying an oversized software stack. Allocate 60% of startup cash to working-capital reserves, separate client proceeds from earned fees, and release investigation dollars against documented recovery hypotheses. The canonical annual owner-profit cases are $12,000 Conservative, $84,000 Base, and $200,000 Scaled; revenue means recognized service fees, never judgment principal. This chapter specifies twelve infrastructure layers, reconciles fixed overhead with total scenario expenses, and tests pre-launch authority, bankruptcy screening, payment controls, and lawful adjacent-play economics before the first creditor mandate.
+Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score across a portfolio of 15 mapped plays. Its capital advantage comes from screening enforceable commercial judgments before funding enforcement, not from buying an oversized software stack. Allocate 60% of startup cash to working-capital reserves, separate client proceeds from earned fees, and release investigation dollars against documented recovery hypotheses. The canonical annual owner-profit cases are $12,000 Conservative, $84,000 Base, and $200,000 Scaled; revenue means recognized service fees, never judgment principal. This chapter specifies twelve infrastructure layers, reconciles fixed overhead with total scenario expenses, and tests pre-launch authority, bankruptcy screening, payment controls, and lawful adjacent-play economics before the first creditor mandate.
 
 ### Key Metrics
 

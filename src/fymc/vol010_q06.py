@@ -6,20 +6,20 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in building an seo empire, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–24 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in building an seo empire, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Mine Search Console, Public Pricing Changes, Software Migration Demand, and Publisher Records to Win Measurable Affiliate and Sponsorship Deals",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
         "Money-to-Manpower Score across a portfolio of 30 mapped plays. Source "
         "opportunities where observable buyer friction meets weak independent coverage: "
         "pricing changes, migration failures, neglected comparison pages, and publishers "
         "with monetizable audiences but poor commercial execution. This chapter turns "
         "those signals into a scored prospect queue, evidence-led outreach, and the "
-        "first three to ten commercial wins over 6–24 months. It unpacks comparison "
+        "first three to ten commercial wins over 3–12 months. It unpacks comparison "
         "publishing, original software demonstrations, and accountable platform participation "
         "without confusing account status with transferable authority. Annual owner profit "
         "is $16,000 Conservative, $159,250 Base, and $405,000 Scaled. Recognized revenue "
@@ -31,19 +31,19 @@ CHAPTER_6 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -503,11 +503,11 @@ CHAPTER_6 = {
                     "Keep the canonical scorecard visible while evaluating "
                     "each small win. Conservative annual revenue is "
                     "$80,000 at 20% net margin, producing $16,000 "
-                    "owner net profit with 2 FT + 4 C. "
+                    "owner net profit with 1 FT + 3 C. "
                     "Base revenue is $490,000 at 32.5%, producing "
                     "$159,250 with the same team configuration. "
                     "Scaled revenue is $900,000 at 45%, producing "
-                    "$405,000 with 3 FT + 5 C. An "
+                    "$405,000 with 1 FT + 3 C. An "
                     "illustrative channel decomposition that preserves "
                     "those totals is $40,000 advertising, $30,000 "
                     "affiliate, and $10,000 sponsorship in Conservative; "
@@ -523,7 +523,7 @@ CHAPTER_6 = {
                     "revenue, not $300,000. Likewise, acquisition "
                     "purchase prices are investment outflows, "
                     "not negative sponsorship revenue. The "
-                    "$3,000–$20,000 monthly operating range "
+                    "$2,500–$14,000 monthly operating range "
                     "is a stated planning input, not a "
                     "ceiling that reconciles every mature "
                     "scenario. Base and Scaled implied "
@@ -587,7 +587,7 @@ CHAPTER_6 = {
                     "expand toward ten commercial wins "
                     "only when delivery and contribution "
                     "remain measurable. Use the "
-                    "$15,000–$120,000 startup capital "
+                    "$10,000–$60,000 startup capital "
                     "range to set a spending "
                     "limit, not to justify exhausting "
                     "cash before a signal appears. "
@@ -632,19 +632,19 @@ CHAPTER_6 = {
                     [
                         "Conservative canonical annual operating scenario for the search publishing portfolio",
                         "$80,000 revenue less $64,000 expenses produces the specified annual result",
-                        "$16,000 owner net profit at 20% margin; 2 FT + 4 C",
+                        "$16,000 owner net profit at 20% margin; 1 FT + 3 C",
                         "Exclude underlying merchant purchases from every operator revenue report",
                     ],
                     [
                         "Base canonical annual operating scenario for the search publishing portfolio",
                         "$490,000 revenue less $330,750 expenses produces the specified annual result",
-                        "$159,250 owner net profit at 32.5% margin; 2 FT + 4 C",
+                        "$159,250 owner net profit at 32.5% margin; 1 FT + 3 C",
                         "Budget the complete expense envelope rather than the baseline monthly range",
                     ],
                     [
                         "Scaled canonical annual operating scenario for the search publishing portfolio",
                         "$900,000 revenue less $495,000 expenses produces the specified annual result",
-                        "$405,000 owner net profit at 45% margin; 3 FT + 5 C",
+                        "$405,000 owner net profit at 45% margin; 1 FT + 3 C",
                         "Eight people require explicit workload allocation and partner concentration monitoring",
                     ],
                     [

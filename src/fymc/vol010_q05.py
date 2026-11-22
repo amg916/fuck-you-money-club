@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, holds Rank #10 with an 82/100 "
+        "Candidate #25, Building an SEO Empire, holds Rank #07 with an 89/100 "
         "Money-to-Manpower Score across 30 mapped plays. Its danger is asymmetric: "
         "publishing costs arrive before search demand, while ranking losses, affiliate "
         "reversals, and rights disputes can erase several revenue streams together. "
@@ -31,19 +31,19 @@ CHAPTER_5 = {
             "label": "Conservative",
             "value": "$80,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 owner profit; 2 FT + 4 C",
+            "note": "20% net margin; $16,000 owner profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$490,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 owner profit; 2 FT + 4 C",
+            "note": "32.5% net margin; $159,250 owner profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$900,000",
             "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 owner profit; 3 FT + 5 C",
+            "note": "45% net margin; $405,000 owner profit; 1 FT + 3 C",
         },
     ],
     "sections": [
@@ -81,10 +81,10 @@ CHAPTER_5 = {
                     "$5,333.33 monthly when rounded, so two full-time roles plus four contractors "
                     "may be infeasible at local compensation rates. Validate actual compensation "
                     "rather than silently treating unpaid founder labor as free. Similarly, the "
-                    "$3,000–$20,000 monthly operating range cannot be substituted for the entire "
+                    "$2,500–$14,000 monthly operating range cannot be substituted for the entire "
                     "expense ledger: Base and Scaled implied expenses average $27,562.50 and "
                     "$41,250 monthly. Reconcile payroll, production, commissions, hosting, and "
-                    "shared services separately. Treat $15,000–$120,000 startup capital and the "
+                    "shared services separately. Treat $10,000–$60,000 startup capital and the "
                     "6–24 month first-deal window as planning inputs, not sufficient runway. "
                     "Publish the funding gap before adding another site. A profitable mature "
                     "portfolio can still require cash its launch budget does not contain."

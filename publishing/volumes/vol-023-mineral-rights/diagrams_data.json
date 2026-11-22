@@ -7,7 +7,7 @@
       "subtitle": "Five operating steps from recorded ownership to royalty receipts.",
       "chapter_number": 1,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Scope covers private oil and gas mineral interests and nonparticipating royalty interests. NMA means net mineral acres; NPRI means nonparticipating royalty interest. Instruments and state law control ownership, executive rights, and allocation. The typical first-deal window is 6–24 months.",
+      "assumptions_note": "Scope covers private oil and gas mineral interests and nonparticipating royalty interests. NMA means net mineral acres; NPRI means nonparticipating royalty interest. Instruments and state law control ownership, executive rights, and allocation. The typical first-deal window is 3–9 months.",
       "caption": "A tract description, an operator pay decimal, and a seller's acreage claim are different evidence objects. Reconcile them before pricing the interest.",
       "stages": [
         {
@@ -49,7 +49,7 @@
       "subtitle": "Five nested cohorts, with explicit denominators and no revenue claims.",
       "chapter_number": 6,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative cohort contains 500 distinct seller-interest packages, deduplicated by owner, tract, and conveyed estate. Every later stage is a subset of the preceding stage. Counts are planning assumptions over a 6–24 month acquisition cycle, not observed conversions or a 30-day closing forecast.",
+      "assumptions_note": "Illustrative cohort contains 500 distinct seller-interest packages, deduplicated by owner, tract, and conveyed estate. Every later stage is a subset of the preceding stage. Counts are planning assumptions over a 3–9 month acquisition cycle, not observed conversions or a 30-day closing forecast.",
       "caption": "The cohort narrows 500 → 200 → 80 → 20 → 3. Final conversion is 0.6% of screened packages; acquisition count alone does not establish annual royalty revenue.",
       "stages": [
         {
@@ -261,36 +261,36 @@
     {
       "diagram_id": "diag-07-startup-capital-allocation-comparison",
       "chart_type": "stacked_comparison",
-      "title": "Allocate Acquisition Capital Without Calling It Revenue",
-      "subtitle": "Four buckets across $150,000, $600,000, and $2,000,000 startup plans.",
+      "title": "Allocate Option & Diligence Capital Without Calling It Revenue",
+      "subtitle": "Four buckets across $15,000, $45,000, and $75,000 startup plans.",
       "chapter_number": 4,
       "epistemic_tag": "illustrative_model",
-      "assumptions_note": "All amounts are USD. Numeric stage values describe the $600,000 reference stack; each stage also identifies the corresponding floor and ceiling allocations. These are alternative capital plans, not additive funding rounds and not mappings to the three annual revenue scenarios. Reserves and acquisition principal are balance-sheet uses, not recognized royalty or trading revenue.",
-      "caption": "Floor: $100,000 + $20,000 + $18,000 + $12,000 = $150,000. Reference: $450,000 + $60,000 + $60,000 + $30,000 = $600,000. Ceiling: $1,600,000 + $160,000 + $180,000 + $60,000 = $2,000,000.",
+      "assumptions_note": "All amounts are USD. Numeric stage values describe the $45,000 reference stack; each stage also identifies the corresponding floor ($15,000) and ceiling ($75,000) allocations for an option-and-assignment / micro-royalty desk. These are alternative capital plans, not additive funding rounds and not mappings to the three annual revenue scenarios. Option earnest deposits and reserves are balance-sheet uses, not recognized royalty or trading revenue.",
+      "caption": "Floor: $6,000 + $4,000 + $3,000 + $2,000 = $15,000. Reference: $20,000 + $11,000 + $9,000 + $5,000 = $45,000. Ceiling: $35,000 + $18,000 + $14,000 + $8,000 = $75,000.",
       "stages": [
         {
-          "label": "Fund acquired interests and documented purchase basis",
-          "value": "$450,000 reference allocation for mineral acquisition principal",
-          "numeric_value": 450000.0,
-          "detail": "Floor allocation is $100,000; ceiling allocation is $1,600,000. Deploy only against documented asset underwriting and closing evidence. Track basis by interest so later disposal proceeds do not inflate recognized rights-trading gains."
+          "label": "Option earnest deposits and micro-tract acquisition pool",
+          "value": "$20,000 reference allocation for option/earnest & micro-tract basis",
+          "numeric_value": 20000.0,
+          "detail": "Floor allocation is $6,000; ceiling allocation is $35,000. Deploy into pooling-docket option contracts and small verified NPRI tranches backed by institutional takeout buyers. Track basis by interest so disposal proceeds do not inflate recognized rights-trading gains."
         },
         {
-          "label": "Reserve transaction-specific diligence and closing capital",
-          "value": "$60,000 reference allocation for diligence and closing",
-          "numeric_value": 60000.0,
-          "detail": "Floor allocation is $20,000; ceiling allocation is $160,000. Cover title examination, engineering, recording, and instrument preparation. Separate capitalized acquisition costs from expensed failed-deal work; do not charge the same invoice twice."
+          "label": "Reserve transaction-specific diligence and title curative",
+          "value": "$11,000 reference allocation for run-sheet diligence and closing",
+          "numeric_value": 11000.0,
+          "detail": "Floor allocation is $4,000; ceiling allocation is $18,000. Cover county recorder run sheets, engineering decline checks, recording, and deed preparation. Separate capitalized acquisition costs from expensed failed-deal work; do not charge the same invoice twice."
         },
         {
-          "label": "Hold operating liquidity against delayed first receipts",
-          "value": "$60,000 reference allocation for protected operating liquidity",
-          "numeric_value": 60000.0,
-          "detail": "Floor allocation is $18,000; ceiling allocation is $180,000. At selected monthly burns of $1,000, $2,500, and $7,500 respectively, these fund 18, 24, and 24 months. The floor plan needs another $6,000 or equivalent reductions if first receipts take 24 months."
+          "label": "Hold operating liquidity through the first assignment cycle",
+          "value": "$9,000 reference allocation for protected operating liquidity",
+          "numeric_value": 9000.0,
+          "detail": "Floor allocation is $3,000; ceiling allocation is $14,000. Against lean monthly burns of $1,000–$3,000 during initial sourcing, this reserve bridges the canonical 3–9 month first-deal window before assignment spreads or division-order receipts clear."
         },
         {
-          "label": "Provision startup systems and controlled contingency cash",
-          "value": "$30,000 reference allocation for setup and contingency",
-          "numeric_value": 30000.0,
-          "detail": "Floor allocation is $12,000; ceiling allocation is $60,000. Cover initial data access, secure document storage, account setup, and a remaining contingency balance. Contingency can extend runway only to the extent it remains unspent."
+          "label": "Provision docket scrapers, GIS stack, and contingency cash",
+          "value": "$5,000 reference allocation for data stack and contingency",
+          "numeric_value": 5000.0,
+          "detail": "Floor allocation is $2,000; ceiling allocation is $8,000. Cover state oil-and-gas commission docket feeds, GIS parcel overlays, entity setup, and contingency reserves."
         }
       ]
     },
@@ -301,7 +301,7 @@
       "subtitle": "Four weekly milestones prepare the pipeline, not a promised closing.",
       "chapter_number": 12,
       "epistemic_tag": "operating_framework",
-      "assumptions_note": "Milestones cover Days 1–7, 8–14, 15–21, and 22–30. Numeric values mark milestone end days. The canonical first-deal window remains 6–24 months. A completed sprint produces traceable research, underwriting, and operating controls; it does not establish ownership or royalty income.",
+      "assumptions_note": "Milestones cover Days 1–7, 8–14, 15–21, and 22–30. Numeric values mark milestone end days. The canonical first-deal window remains 3–9 months. A completed sprint produces traceable research, underwriting, and operating controls; it does not establish ownership or royalty income.",
       "caption": "Finish the month with a narrow acquisition mandate, a documented evidence trail, tested economics, and a review-ready offer process.",
       "stages": [
         {
@@ -326,7 +326,7 @@
           "label": "Days 22-30: prepare offers and operating handoffs",
           "value": "Complete reviewed offer packs and a funded runway plan",
           "numeric_value": 30.0,
-          "detail": "Prepare conditional offers only for supported candidates. Assign title remediation, closing deliverables, operator transfer tracking, and royalty exception ownership. Reconcile acquisition commitments with liquidity through the 6–24 month first-deal window; retain unresolved candidates in research."
+          "detail": "Prepare conditional offers only for supported candidates. Assign title remediation, closing deliverables, operator transfer tracking, and royalty exception ownership. Reconcile acquisition commitments with liquidity through the 3–9 month first-deal window; retain unresolved candidates in research."
         }
       ]
     }

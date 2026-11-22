@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 Money-to-Manpower Score. Launch a paid procurement-services desk, not an award-prediction business. Map seven plays into one controlled workflow: solicitation monitoring, bid qualification, deadline management, proposal assembly, supplier diligence, prime/sub teaming, and invoice administration. The first month proves buyer demand, lawful delivery, and cash discipline using a 2 FT + 3 C pod. Day 30/60/90 decisions use collected service fees, accepted work, contribution margin, and runway rather than advertised contract ceilings. Canonical annual owner profits remain $18,000 Conservative, $126,000 Base, and $300,000 Scaled. The sprint does not compress the stated 6–18-month first-deal horizon; it tests whether customers will pay for useful work before an award arrives.
+Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 Money-to-Manpower Score. Launch a paid procurement-services desk, not an award-prediction business. Map seven plays into one controlled workflow: solicitation monitoring, bid qualification, deadline management, proposal assembly, supplier diligence, prime/sub teaming, and invoice administration. The first month proves buyer demand, lawful delivery, and cash discipline using a 2 FT + 3 C pod. Day 30/60/90 decisions use collected service fees, accepted work, contribution margin, and runway rather than advertised contract ceilings. Canonical annual owner profits remain $18,000 Conservative, $126,000 Base, and $300,000 Scaled. The sprint does not compress the stated 6–18-month first-deal horizon; it tests whether customers will pay for useful work before an award arrives.
 
 ### Key Metrics
 

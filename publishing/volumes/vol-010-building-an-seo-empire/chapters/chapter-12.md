@@ -1,12 +1,12 @@
 # Chapter 12: The First 30-Day Launch Sprint & Kill / Fix / Scale Gates
 
-*A Six-Person Search Publishing Sprint Using Search Console, Crawl Cohorts, Affiliate Disclosures, Copyright Records, and Cash-Limited Expansion*
+*A Four-Person Search Publishing Sprint Using Search Console, Crawl Cohorts, Affiliate Disclosures, Copyright Records, and Cash-Limited Expansion*
 
 > THE BIG MONEY PLAYBOOKS · THE FUCK YOU MONEY CLUB
 
 ## Executive Summary
 
-Candidate #25, Building an SEO Empire, ranks #10 with an 82/100 Money-to-Manpower Score. Turn its 30 mapped plays into a controlled launch: one accountable daily deliverable, one initial domain, 24 evidence-backed pages, and a six-person pod comprising 2 FT + 4 C. Authorize $12,000 of first-month expenditure, preserve a separate $3,000 reserve, and judge early progress through crawlability, indexing, qualified demand, and attributable economics rather than premature revenue promises. Day 30/60/90 decisions distinguish technical repair from weak demand and cap every expansion. Canonical annual owner profits remain $16,000 Conservative, $159,250 Base, and $405,000 Scaled; the final case requires 3 FT + 5 C. These are annual operating scenarios, not launch-month forecasts.
+Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 Money-to-Manpower Score. Turn its 30 mapped plays into a controlled launch: one accountable daily deliverable, one initial domain, 24 evidence-backed pages, and a four-person pod comprising 1 FT + 3 C. Authorize $12,000 of first-month expenditure, preserve a separate $3,000 reserve, and judge early progress through crawlability, indexing, qualified demand, and attributable economics rather than premature revenue promises. Day 30/60/90 decisions distinguish technical repair from weak demand and cap every expansion. Canonical annual owner profits remain $16,000 Conservative, $159,250 Base, and $405,000 Scaled; the final case requires 1 FT + 3 C. These are annual operating scenarios, not launch-month forecasts.
 
 ### Key Metrics
 

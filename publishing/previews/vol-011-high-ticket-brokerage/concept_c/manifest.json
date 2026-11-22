@@ -6,28 +6,28 @@
   "preview_only": true,
   "files": {
     "digital_pdf.pdf": {
-      "bytes": 1890857,
-      "sha256": "30ea3ef6efef7e490ff02d78bbc7d9d1a9fcde2b90a037be799dc4ae67c61bd6"
+      "bytes": 1891349,
+      "sha256": "6a809cecca331d0408a74a5d0206036541a12e702693d278896d569dc835c11b"
     },
     "print_6x9_pdf.pdf": {
-      "bytes": 2453810,
-      "sha256": "54133b3e473f50484dd77dc727288bd6c6b051a802fd78c4b64a7fc0798a3c1f"
+      "bytes": 2454301,
+      "sha256": "cd5758bcd3768935897430904fc57d701e0761f816bec74bfcc75f603bcb4f64"
     },
     "workbook_pdf.pdf": {
-      "bytes": 540146,
-      "sha256": "2e5b82badd86fad11b2caeb88d34a1b2fa41e83b67197e50ae21472d7a690b76"
+      "bytes": 540206,
+      "sha256": "d6204b55dd14a3593df035697d81bf568170d67b556c308152c25bd9a4383405"
     },
     "book.epub": {
-      "bytes": 278658,
-      "sha256": "e64cea45a635336a014f7e7ac65f35d4429873a88c008f63630bf45dfdd93ab6"
+      "bytes": 278925,
+      "sha256": "1c1792ba6d358b4a68b9f4442ccf098972bde819f266dd43620262073321efc7"
     },
     "art/cover.svg": {
-      "bytes": 4296,
-      "sha256": "7f9253d8097e7eb5607391159ca7d6e790f7dad0ba3082664a6d8684877211ee"
+      "bytes": 4299,
+      "sha256": "01e130081b6ffabe02aa2ee98f671f84720e207c47a5bedc850b2f55796e4f79"
     },
     "art/scorecard.svg": {
-      "bytes": 75661,
-      "sha256": "356d8c865789e983afe4bc9356501d47374e2793a7339d56a85ac956ccd86550"
+      "bytes": 76674,
+      "sha256": "81ba2bc937497e8242b3c238e54e3d8029f6f4ed129bb10fbc026c6e5a2f0da0"
     },
     "art/diag_01.svg": {
       "bytes": 12302,

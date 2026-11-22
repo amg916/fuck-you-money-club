@@ -6,21 +6,21 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-your-first-domain-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in domain investing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–24 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in domain investing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (2–9 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
     "subtitle": "Mine USPTO Records, RDAP, Drop Auctions and Buyer Intent; Close Through Escrow With ACPA, UDRP and CAN-SPAM Discipline",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #17 with a 74/100 Money-to-Manpower score. "
+        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower score. "
         "The advantage is disciplined demand discovery, not collecting attractive strings. "
         "This chapter maps eight operating plays: brandable buyer baskets, exact-match demand gaps, "
         "expired-authority recovery, drop-auction discipline, outbound domain upgrades, portfolio "
         "liquidation sourcing, inbound intent routing, and serverless edge demonstrations. "
         "Only the edge-hosting play carries a supplied catalog identifier; the other seven are "
         "chapter-defined domain workflows. Build auditable buyer evidence, cap acquisition exposure, "
-        "and use measured outreach to pursue the first three to ten completed sales over 3–24 months. "
+        "and use measured outreach to pursue the first three to ten completed sales over 2–9 months. "
         "Canonical annual owner profits remain $3,000 Conservative, $44,000 Base, and $120,000 Scaled. "
         "Gross domain sale proceeds are revenue; acquisition, renewals, commissions, and operating "
         "expenses must fit inside those margins."
@@ -486,7 +486,7 @@ CHAPTER_6 = {
                     "or sell-through. The cost totals include acquisition and renewals under the canonical "
                     "model, alongside selling and operating expenses. Maintain a separate cash schedule "
                     "for unsold acquisitions, escrow balances, and installment collections so modeled profit "
-                    "cannot disguise a funding shortage. Startup capital remains $10,000–$150,000 and "
+                    "cannot disguise a funding shortage. Startup capital remains $8,000–$60,000 and "
                     "monthly operating expenditure $500–$5,000; neither substitutes for a renewal reserve. "
                     "After three completed sales, compare source-level contribution and time invested. "
                     "After ten, expand only the channels with reproducible buyer evidence, manageable "

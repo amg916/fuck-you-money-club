@@ -13,7 +13,7 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower "
+        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower "
         "Score. Its seven mapped operating plays become transferable assets only when "
         "seller mandates, inspection evidence, lien clearance, inventory matching, buyer "
         "alerts, commission contracts, and escrow settlement share one accountable record. "

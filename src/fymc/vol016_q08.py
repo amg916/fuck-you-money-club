@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower Score. "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. "
         "This chapter supplies the records and tooling layer supporting the volume's 11 mapped plays: "
         "court events become verified authority, parcels become defensible property files, and local discovery "
         "becomes attributable brokerage demand. Build around county dockets, recorder instruments, assessor "

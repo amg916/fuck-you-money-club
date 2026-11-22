@@ -889,11 +889,11 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(list(ALL_VOLUME_SPECS), list(range(1, 30)))
         self.assertEqual({s["candidate_number"] for s in specs}, set(range(1, 30)))
         self.assertEqual(len({s["volume_id"] for s in specs}), 29)
-        # The two original volumes retain their numbers; the remainder is ranked.
+        # Permanent volume edition numbers map bijectively to candidates 1..29;
+        # formula-derived scores synchronize dynamically without renumbering books.
         ranked = build_29_candidate_pipeline()
-        expected = [1, 2] + [c["candidate_number"] for c in ranked
-                             if c["candidate_number"] not in (1, 2)]
-        self.assertEqual([s["candidate_number"] for s in specs], expected)
+        self.assertEqual([specs[0]["candidate_number"], specs[1]["candidate_number"]], [1, 2])
+        self.assertEqual([s["volume_number"] for s in specs], list(range(1, 30)))
         scores = {c["candidate_number"]: c["total_score"] for c in ranked}
         for number, spec in ALL_VOLUME_SPECS.items():
             self.assertEqual(spec["volume_number"], number)
@@ -2534,15 +2534,15 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 self.assertTrue(ch_name and ch_name.lower() != "unknown", cit)
                 self.assertRegex(str(cit.get("text") or "").strip(), r'[.!?]["\')\]]*$')
 
-        # 4. Volume 002 (Surplus Funds Recovery, 86/100) 10/10 5-layer content structure & exports
+        # 4. Volume 002 (Surplus Funds Recovery, 87/100) 10/10 5-layer content structure & exports
         sc2 = get_volume_002_scorecard()
-        self.assertEqual(sc2["total_score"], 86)
+        self.assertEqual(sc2["total_score"], 87)
         self.assertEqual(get_volume_scorecard("vol-002")["candidate_number"], 2)
         state_v2 = self.store.load_publishing_state(self.root, volume_id=VOLUME_002_ID, verify_manifest=True)
         self.assertEqual(state_v2["active_volume_id"], VOLUME_002_ID)
         v2 = state_v2["volume"]
         self.assertEqual(v2["metadata"]["volume_number"], 2)
-        self.assertEqual(v2["scorecard"]["total_score"], 86)
+        self.assertEqual(v2["scorecard"]["total_score"], 87)
         self.assertEqual(len(v2["manuscript"]["operator_plays"]), 10)
         v2_play_ids = {p["id"] for p in v2["manuscript"]["operator_plays"]}
         for required_play in (
@@ -2595,15 +2595,15 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(man_b_v1_after["volume_id"], FLAGSHIP_VOLUME_ID)
         self.assertTrue(self.store.verify_commit_manifest(self.root, strict=True)["passed"])
 
-        # 5. Volume 003 (Digital Product Empire, 90/100) 10/10 5-layer content structure & exports
+        # 5. Volume 003 (Digital Product Empire, 94/100) 10/10 5-layer content structure & exports
         sc3 = get_volume_003_scorecard()
-        self.assertEqual(sc3["total_score"], 90)
+        self.assertEqual(sc3["total_score"], 94)
         self.assertEqual(get_volume_scorecard("vol-003")["candidate_number"], 27)
         state_v3 = self.store.load_publishing_state(self.root, volume_id=VOLUME_003_ID, verify_manifest=True)
         self.assertEqual(state_v3["active_volume_id"], VOLUME_003_ID)
         v3 = state_v3["volume"]
         self.assertEqual(v3["metadata"]["volume_number"], 3)
-        self.assertEqual(v3["scorecard"]["total_score"], 90)
+        self.assertEqual(v3["scorecard"]["total_score"], 94)
         self.assertEqual(len(v3["manuscript"]["operator_plays"]), 25)
         self.assertGreater(v3["manuscript"]["total_word_count"], 50000)
         repo_v3 = self.store.load_publishing_state(ROOT, volume_id=VOLUME_003_ID, verify_manifest=True)["volume"]
@@ -2636,15 +2636,15 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(man_b_v3["volume_id"], VOLUME_003_ID)
         self.assertTrue(man_b_v3["approved"])
 
-        # 6. Volume 004 (AI-Powered Micro SaaS, 88/100) 10/10 5-layer content structure & exports
+        # 6. Volume 004 (AI-Powered Micro SaaS, 90/100) 10/10 5-layer content structure & exports
         sc4 = get_volume_004_scorecard()
-        self.assertEqual(sc4["total_score"], 88)
+        self.assertEqual(sc4["total_score"], 90)
         self.assertEqual(get_volume_scorecard("vol-004")["candidate_number"], 22)
         state_v4 = self.store.load_publishing_state(self.root, volume_id=VOLUME_004_ID, verify_manifest=True)
         self.assertEqual(state_v4["active_volume_id"], VOLUME_004_ID)
         v4 = state_v4["volume"]
         self.assertEqual(v4["metadata"]["volume_number"], 4)
-        self.assertEqual(v4["scorecard"]["total_score"], 88)
+        self.assertEqual(v4["scorecard"]["total_score"], 90)
         self.assertEqual(len(v4["manuscript"]["operator_plays"]), 27)
         self.assertGreater(v4["manuscript"]["total_word_count"], 50000)
         repo_v4 = self.store.load_publishing_state(ROOT, volume_id=VOLUME_004_ID, verify_manifest=True)["volume"]
@@ -2705,15 +2705,15 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertEqual(man_b_v4["volume_id"], VOLUME_004_ID)
         self.assertTrue(man_b_v4["approved"])
 
-        # 6b. Volume 005 (High-Ticket Affiliate Marketing, 87/100) 10/10 5-layer content structure & exports
+        # 6b. Volume 005 (High-Ticket Affiliate Marketing, 92/100) 10/10 5-layer content structure & exports
         sc5 = get_volume_005_scorecard()
-        self.assertEqual(sc5["total_score"], 87)
+        self.assertEqual(sc5["total_score"], 92)
         self.assertEqual(get_volume_scorecard("vol-005")["candidate_number"], 24)
         state_v5 = self.store.load_publishing_state(self.root, volume_id=VOLUME_005_ID, verify_manifest=True)
         self.assertEqual(state_v5["active_volume_id"], VOLUME_005_ID)
         v5 = state_v5["volume"]
         self.assertEqual(v5["metadata"]["volume_number"], 5)
-        self.assertEqual(v5["scorecard"]["total_score"], 87)
+        self.assertEqual(v5["scorecard"]["total_score"], 92)
         self.assertEqual(len(v5["manuscript"]["operator_plays"]), 35)
         self.assertGreater(v5["manuscript"]["total_word_count"], 50000)
         repo_v5 = self.store.load_publishing_state(ROOT, volume_id=VOLUME_005_ID, verify_manifest=True)["volume"]
@@ -3012,6 +3012,60 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             self.assertIn(marker, site_html)
         for marker in ('id="studio-quick-picks"', "Money-to-Manpower Score", "Not rated", "Load Vol. "):
             self.assertIn(marker, studio_html)
+
+    def test_30_formula_scorecard_engine_and_lean_recalibration(self):
+        from src.fymc.scorecard_engine import (
+            SCORE_FORMULA_VERSION,
+            _CANDIDATE_SPECS,
+            build_29_candidate_pipeline,
+            derive_dimension_scores,
+        )
+        from src.fymc.volume_registry import ALL_VOLUME_SPECS
+
+        self.assertEqual(SCORE_FORMULA_VERSION, "2.0-fymc-lean-operator")
+        for spec in _CANDIDATE_SPECS:
+            self.assertNotIn("points", spec, f"Hand-typed points still present on {spec.get('slug')}")
+            self.assertEqual(spec["formula_version"], SCORE_FORMULA_VERSION)
+
+        # Deterministic monotonicity across all 5 dimensions
+        low_rev = derive_dimension_scores((50000, 300000), (25, 45), (10000, 50000), "3–9 months", (1, 2))
+        high_rev = derive_dimension_scores((200000, 900000), (25, 45), (10000, 50000), "3–9 months", (1, 2))
+        self.assertGreater(high_rev["revenue_potential"], low_rev["revenue_potential"])
+
+        gmv_raw = derive_dimension_scores((500000, 2500000), (8, 20), (15000, 75000), "3–9 months", (2, 3), retained_share=1.0)
+        gmv_net = derive_dimension_scores((500000, 2500000), (8, 20), (15000, 75000), "3–9 months", (2, 3), retained_share=0.40)
+        self.assertGreater(gmv_net["profit_margin_potential"], gmv_raw["profit_margin_potential"])
+        self.assertEqual(gmv_net["revenue_potential"], gmv_raw["revenue_potential"])
+
+        heavy_cap = derive_dimension_scores((100000, 750000), (20, 45), (150000, 1000000), "6–24 months", (1, 3))
+        lean_cap = derive_dimension_scores((100000, 750000), (20, 45), (10000, 50000), "1–4 months", (1, 3))
+        self.assertGreater(lean_cap["startup_accessibility"], heavy_cap["startup_accessibility"])
+
+        low_auto = derive_dimension_scores((100000, 750000), (20, 45), (10000, 50000), "3–9 months", (1, 3), automation_coverage=0.55, play_count=2)
+        high_auto = derive_dimension_scores((100000, 750000), (20, 45), (10000, 50000), "3–9 months", (1, 3), automation_coverage=0.95, play_count=30)
+        self.assertGreater(high_auto["automation_potential"], low_auto["automation_potential"])
+
+        with self.assertRaises(ValueError):
+            derive_dimension_scores((100000, 750000), (20, 45), (10000, 50000), "3–9 months", (1, 3), retained_share=0.0)
+        with self.assertRaises(ValueError):
+            derive_dimension_scores((100000, 750000), (20, 45), (10000, 50000), "3–9 months", (1, 3), retained_share=True)
+
+        pipeline = build_29_candidate_pipeline()
+        self.assertEqual([c["rank"] for c in pipeline], list(range(1, 30)))
+        for cand in pipeline:
+            self.assertEqual(sum(cand["scores"].values()), cand["total_score"])
+            self.assertGreaterEqual(cand["total_score"], 79)
+            self.assertLessEqual(cand["total_score"], 95)
+            self.assertLessEqual(cand["economics"]["typical_team_size"]["total_people"], 5)
+            for sc_name, sc_row in cand["scenarios"].items():
+                expected_p = round(sc_row["annual_gross_revenue_usd"] * (sc_row["net_profit_margin_pct"] / 100.0))
+                self.assertEqual(sc_row["annual_owner_net_profit_usd"], expected_p, (cand["slug"], sc_name))
+                ret_p = round(sc_row["annual_retained_revenue_usd"] * (sc_row["retained_profit_margin_pct"] / 100.0))
+                self.assertAlmostEqual(ret_p, sc_row["annual_owner_net_profit_usd"], delta=5)
+
+        # Expansion volumes 006..029 no longer artificially decay monotonically downward by volume number
+        expansion_scores = [ALL_VOLUME_SPECS[v]["score"] for v in range(6, 30)]
+        self.assertTrue(any(expansion_scores[i] < expansion_scores[i + 1] for i in range(len(expansion_scores) - 1)))
 
 
 if __name__ == "__main__":

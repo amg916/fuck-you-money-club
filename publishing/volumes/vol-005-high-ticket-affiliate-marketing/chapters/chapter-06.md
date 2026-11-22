@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Buy evidence of intent, not cheap visits. Candidate #24 ranks #04 with 87/100 and 35 mapped operator plays; this chapter turns three plays into a repeatable offer test. Start with pricing, comparison, migration, and verified hiring queries. Use persistent ads to select experiments, never to infer profit. Secure written traffic terms, publish useful comparison pages, and reconcile clicks to accepted commissions after reversals. A seven day test can reject bad economics; it cannot prove lifetime performance. Negotiate a private payout increase only with documented lead quality. Keep merchant sales, affiliate earnings, operating costs, and owner profit in separate ledger columns.
+Buy evidence of intent, not cheap visits. Candidate #24 ranks #02 with 92/100 and 35 mapped operator plays; this chapter turns three plays into a repeatable offer test. Start with pricing, comparison, migration, and verified hiring queries. Use persistent ads to select experiments, never to infer profit. Secure written traffic terms, publish useful comparison pages, and reconcile clicks to accepted commissions after reversals. A seven day test can reject bad economics; it cannot prove lifetime performance. Negotiate a private payout increase only with documented lead quality. Keep merchant sales, affiliate earnings, operating costs, and owner profit in separate ledger columns.
 
 ### Key Metrics
 

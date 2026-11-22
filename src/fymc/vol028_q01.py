@@ -13,8 +13,8 @@ CHAPTER_1 = {
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
-        "Score of 56/100: a recurring service business whose growth still consumes paid "
+        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
+        "Score of 82/100: a recurring service business whose growth still consumes paid "
         "crew hours. Sell measurable cleaning outcomes, recognize earned contract revenue, "
         "and keep client property values and procurement budgets outside operator sales. "
         "This chapter maps four operating plays: dense office routes, medical zoning "
@@ -30,19 +30,19 @@ CHAPTER_1 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual earned cleaning contract revenue, excluding client property value",
-            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Base",
             "value": "$725,000",
             "context": "Annual earned cleaning contract revenue, excluding client procurement budgets",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
         },
         {
             "label": "Scaled",
             "value": "$1,200,000",
             "context": "Annual earned cleaning contract revenue, supported by additional paid crew hours",
-            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
         },
     ],
     "sections": [
@@ -66,7 +66,7 @@ CHAPTER_1 = {
                     "rooms, elevator queues, and furniture density can defeat an attractive "
                     "square-foot estimate. The five archetypes below share this contract "
                     "discipline while differing in access friction, training, equipment, "
-                    "and purchasing cycles. Candidate #10 earns its 56/100 score because "
+                    "and purchasing cycles. Candidate #10 earns its 82/100 score because "
                     "repeat demand is real but delivery remains labor intensive. Scheduling "
                     "software can remove dispatch work; it cannot empty another wastebasket. "
                     "A defensible offer therefore specifies who cleans, what they clean, "
@@ -409,8 +409,8 @@ CHAPTER_1 = {
                 (
                     "Working capital determines whether a profitable contract survives "
                     "its first billing cycle. The supplied startup capital range "
-                    "is $15,000 to $90,000, monthly operating outlay range is "
-                    "$4,000 to $18,000, and time to first deal is one "
+                    "is $10,000 to $50,000, monthly operating outlay range is "
+                    "$3,000 to $14,000, and time to first deal is one "
                     "to four months. Those outlay figures cannot represent total "
                     "steady-state company expenses for every canonical case: the "
                     "implied average monthly expenses are about $19,167 Conservative, "

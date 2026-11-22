@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 Money-to-Manpower Score. Build a procurement service, not a speculative inventory book: reserve 60% of startup capital, buy delivery capacity against signed work, and separate recurring overhead from project costs. This chapter maps seven operating plays: solicitation intelligence, bid-calendar management, proposal production, prime/sub teaming, supplier verification, invoice administration, and transferable tax-credit brokerage. The first six are chapter operating applications; the seventh carries the supplied catalog identifier. Annual owner profit remains $18,000 Conservative, $126,000 Base, and $300,000 Scaled. A twelve-layer stack, explicit cash runway, entity and insurance controls, and evidence-based launch checks prevent award uncertainty, slow collections, and supplier failure from consuming the business before repeatable service revenue arrives.
+Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 Money-to-Manpower Score. Build a procurement service, not a speculative inventory book: reserve 60% of startup capital, buy delivery capacity against signed work, and separate recurring overhead from project costs. This chapter maps seven operating plays: solicitation intelligence, bid-calendar management, proposal production, prime/sub teaming, supplier verification, invoice administration, and transferable tax-credit brokerage. The first six are chapter operating applications; the seventh carries the supplied catalog identifier. Annual owner profit remains $18,000 Conservative, $126,000 Base, and $300,000 Scaled. A twelve-layer stack, explicit cash runway, entity and insurance controls, and evidence-based launch checks prevent award uncertainty, slow collections, and supplier failure from consuming the business before repeatable service revenue arrives.
 
 ### Key Metrics
 
@@ -137,7 +137,7 @@ Measure readiness with evidence, then expand only the constraint that actually l
 
 ## Action Checklist
 
-- [ ] Allocate 60% of the selected $25,000–$150,000 startup package to a segregated reserve and calculate runway at both $5,000 and $25,000 monthly burn.
+- [ ] Allocate 60% of the selected $20,000–$90,000 startup package to a segregated reserve and calculate runway at both $5,000 and $25,000 monthly burn.
 - [ ] Reconcile the $102,000, $434,000, and $700,000 annual expense residuals to realistic compensation, delivery costs, and recurring overhead before hiring.
 - [ ] Provision the twelve production functions using the fewest necessary subscriptions, verifying current prices, seat limits, security requirements, and annual cash commitments.
 - [ ] Execute written service scopes defining compensation, bidder authority, prime/sub responsibilities, acceptance evidence, insurance requirements, and invoice routes.

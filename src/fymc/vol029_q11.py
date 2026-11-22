@@ -6,21 +6,21 @@ CHAPTER_11 = {
     "chapter_number": 11,
     "question_number": 11,
     "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 5 FT + 6 C (11 people) -> 6 FT + 7 C (13 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "question_prompt": "How do you structure a lean 2 FT + 2 C (4 people) -> 3 FT + 3 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
     "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
     "subtitle": "Five Restoration Plays, IICRC Drying Records, Xactimate Scope Controls, Accrual Cohorts, and Transferable Contractor Economics",
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a Money-to-Manpower Score of "
-        "54/100 because equipment, labor, collections, and claim disputes constrain operating "
+        "Candidate #15, Insurance Restoration, ranks #13 with a Money-to-Manpower Score of "
+        "87/100 because equipment, labor, collections, and claim disputes constrain operating "
         "leverage. This chapter maps five operator plays: water mitigation, fire restoration, "
         "mold remediation, storm reconstruction, and documented supplements with collections. "
         "Build each around one accountable employee seat, bounded contractor capacity, and "
         "job-level evidence. The canonical annual owner profit cases remain $40,000 "
         "Conservative, $195,000 Base, and $450,000 Scaled on gross restoration billings of "
-        "$500,000, $1,500,000, and $2,500,000. Move from 5 FT + 6 C to 6 FT + 7 C only "
+        "$500,000, $1,500,000, and $2,500,000. Move from 2 FT + 2 C to 3 FT + 3 C only "
         "when collected contribution supports the additional capacity. Weekly scorecards, "
         "concentration limits, signed intellectual-property assignments, and reconciled "
         "accrual cohorts make the operation transferable without assuming a premium multiple."
@@ -30,19 +30,19 @@ CHAPTER_11 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C; 13 people",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C; 13 people",
         },
     ],
     "sections": [
@@ -117,7 +117,7 @@ CHAPTER_11 = {
                 ),
             ],
             "table": {
-                "caption": "Eleven-Person Pod Seats and the Thirteen-Person Expansion",
+                "caption": "Four-Person Pod Seats and the Six-Person Expansion",
                 "headers": [
                     "Seat or explicitly counted external allocation",
                     "Play ownership and recurring production responsibility",

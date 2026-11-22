@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #16 with a 76/100 Money-to-Manpower Score. "
+        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. "
         "Across the volume's 11 mapped plays, the operating advantage comes from verified executor "
         "authority, licensed execution, disciplined contracts, and documented outreach—not privileged "
         "access to grieving families. Recognized revenue means retained brokerage commissions after "

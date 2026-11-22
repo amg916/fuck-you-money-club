@@ -123,7 +123,7 @@ def build_volume_029_workbook() -> dict:
                         "Underwriting decision and exposure limit",
                         "textarea",
                         "State the acceptance decision, maximum initial commitment, expected collection timing, technical conditions, and accountable supervisor. Explain how the opportunity fits the candidate's capital-intensive profile without treating the platform score as a substitute for job-level judgment.",
-                        "Accept the $9,800 stabilization phase with a $6,400 cash commitment ceiling and a sixty-day collection assumption. Expansion requires a revised scope and funding review. Candidate 15 ranks twenty-ninth with a 54/100 score, reinforcing the need to protect crew capacity and liquidity rather than chase every referral.",
+                        "Accept the $9,800 stabilization phase with a $6,400 cash commitment ceiling and a sixty-day collection assumption. Expansion requires a revised scope and funding review. Candidate 15 ranks thirteenth with a 87/100 score, reinforcing the need to protect crew capacity and liquidity rather than chase every referral.",
                     ),
                 ],
                 "completion_gate": (
@@ -182,7 +182,7 @@ def build_volume_029_workbook() -> dict:
                         "Canonical revenue and profit anchor",
                         "textarea",
                         "Enter all three annual revenue, margin, profit, and staffing combinations exactly. Define gross restoration billings as the operator's revenue basis, with materials and subcontractors included in costs rather than deducted to create a different revenue measure.",
-                        "Conservative is $500,000 at 8%, producing $40,000 with 5 FT + 6 C. Base is $1,500,000 at 13.0%, producing $195,000 with 5 FT + 6 C. Scaled is $2,500,000 at 18%, producing $450,000 with 6 FT + 7 C, totaling thirteen people.",
+                        "Conservative is $500,000 at 8%, producing $40,000 with 2 FT + 2 C. Base is $1,500,000 at 13.0%, producing $195,000 with 2 FT + 2 C. Scaled is $2,500,000 at 18%, producing $450,000 with 3 FT + 3 C, totaling thirteen people.",
                     ),
                     field(
                         "Job volume and realized invoice size",
@@ -212,7 +212,7 @@ def build_volume_029_workbook() -> dict:
                         "Monthly operating expense classification",
                         "textarea",
                         "Reconcile the supplied monthly operating range with the specific recurring costs in your model. Identify pass-through production purchases, noncash planning allowances, and amounts already in annual costs so the monthly figure is never mistaken for total business spending.",
-                        "The supplied range is $10,000–$45,000 monthly. This Base illustration uses its $45,000 upper end: $25,000 employee labor, $10,000 equipment, and $10,000 administration. Materials and subcontractors add $60,000 monthly production spending; the $3,750 monthly defect allowance completes average modeled costs of $108,750 without adding overhead again.",
+                        "The supplied range is $4,000–$20,000 monthly. This Base illustration uses its $45,000 upper end: $25,000 employee labor, $10,000 equipment, and $10,000 administration. Materials and subcontractors add $60,000 monthly production spending; the $3,750 monthly defect allowance completes average modeled costs of $108,750 without adding overhead again.",
                     ),
                     field(
                         "Receivable aging and collection assumptions",
@@ -230,7 +230,7 @@ def build_volume_029_workbook() -> dict:
                         "Startup capital and committed funding",
                         "textarea",
                         "Place equipment purchases, setup spending, working capital, and contingency within the supplied startup range. Separate cash already available from conditional borrowing, and explain how owned equipment purchases differ from recurring rental, maintenance, insurance, and fleet expense.",
-                        "A $310,000 startup plan allocates $55,000 to equipment, $20,000 to deposits and training, and $235,000 to liquidity, within the $75,000–$350,000 range. Recurring equipment expense remains in the operating bridge. A lender's unexecuted proposal supplies no usable funding; launch commitments rely on documented cash and executed availability.",
+                        "A $310,000 startup plan allocates $55,000 to equipment, $20,000 to deposits and training, and $235,000 to liquidity, within the $18,000–$75,000 range. Recurring equipment expense remains in the operating bridge. A lender's unexecuted proposal supplies no usable funding; launch commitments rely on documented cash and executed availability.",
                     ),
                     field(
                         "Collection delay and margin downside",
@@ -658,7 +658,7 @@ def build_volume_029_workbook() -> dict:
                         "Pod roles and canonical staffing bridge",
                         "textarea",
                         "Assign the five Base full-time positions and six contractor relationships to specific responsibilities, then describe the scaled change. Preserve the canonical headcounts while explaining cross-training, supervisory coverage, contractor availability, and tasks that cannot safely be combined.",
-                        "Base roles are an owner-operator, estimator-project manager, lead technician, technician, and office coordinator, supported by six contractor relationships. The illustrative $300,000 employee-labor budget averages $60,000 loaded per full-time position and requires local validation. Scaled adds one full-time role and one contractor relationship, producing 6 FT + 7 C.",
+                        "Base roles are an owner-operator, estimator-project manager, lead technician, technician, and office coordinator, supported by six contractor relationships. The illustrative $300,000 employee-labor budget averages $60,000 loaded per full-time position and requires local validation. Scaled adds one full-time role and one contractor relationship, producing 3 FT + 3 C.",
                     ),
                     field(
                         "Pod operating KPI definitions",
@@ -670,7 +670,7 @@ def build_volume_029_workbook() -> dict:
                         "Economic score and scenario review",
                         "textarea",
                         "Restate the candidate's score components and canonical economic outcomes as fixed reference data. Explain how actual results will be compared without changing the scoring model, and identify the capital or labor constraints that the operating score makes especially important.",
-                        "The score is 54/100: revenue potential 24, margin potential 13, team efficiency 5, startup accessibility 5, and automation potential 7. Annual owner profit anchors remain $40,000 Conservative, $195,000 Base, and $450,000 Scaled. Actual cohort margins are reported separately, with particular attention to staffing intensity and cash tied up in receivables.",
+                        "The score is 87/100: revenue potential 24, margin potential 22, team efficiency 19, startup accessibility 12, and automation potential 10. Annual owner profit anchors remain $40,000 Conservative, $195,000 Base, and $450,000 Scaled. Actual cohort margins are reported separately, with particular attention to staffing intensity and cash tied up in receivables.",
                     ),
                     field(
                         "Risk register and cash intervention triggers",

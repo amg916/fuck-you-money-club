@@ -13,8 +13,8 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, holds Rank #22 with a Money-to-Manpower "
-        "Score of 64/100. This chapter maps three operator plays: documented diagnostic "
+        "Candidate #14, Medical Equipment Resale, holds Rank #20 with a Money-to-Manpower "
+        "Score of 85/100. This chapter maps three operator plays: documented diagnostic "
         "resale, service-backed surgical resale, and specialty veterinary/aesthetic resale "
         "with intended-use separation. Contracts must connect clean title, device identity, "
         "service scope, patient-data removal, and buyer acceptance before inventory becomes "
@@ -31,19 +31,19 @@ CHAPTER_9 = {
             "label": "Conservative",
             "value": "$250,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "10% net margin; $25,000 annual owner net profit; 2 FT + 4 C.",
+            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 2 FT + 4 C.",
+            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
             "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin.",
-            "note": "22% net margin; $396,000 annual owner net profit; 3 FT + 5 C.",
+            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C.",
         },
     ],
     "sections": [
@@ -563,8 +563,8 @@ CHAPTER_9 = {
                     "and unpriced warranty work. The Conservative and Base "
                     "cases retain two employees plus four contractors; the "
                     "Scaled case requires three employees plus five contractors. "
-                    "Do not claim the higher case preserves the six-person "
-                    "pod. With $75,000–$400,000 startup capital, $5,000–$22,000 "
+                    "Do not claim the higher case preserves the four-person "
+                    "pod. With $20,000–$95,000 startup capital, $4,000–$18,000 "
                     "monthly operating expense, and three to nine months "
                     "to first deal, disciplined rejection protects runway "
                     "as much as disciplined selling generates receipts."

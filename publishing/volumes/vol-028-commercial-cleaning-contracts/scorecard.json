@@ -6,10 +6,10 @@
   "production_stage": "approved_master",
   "scores": {
     "revenue_potential": 21,
-    "profit_margin_potential": 12,
-    "team_efficiency": 6,
-    "startup_accessibility": 11,
-    "automation_potential": 6
+    "profit_margin_potential": 21,
+    "team_efficiency": 17,
+    "startup_accessibility": 13,
+    "automation_potential": 10
   },
   "dimension_max": {
     "revenue_potential": 25,
@@ -18,76 +18,86 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 56,
-  "tier_label": "Capital / Labor Intensive",
+  "total_score": 82,
+  "tier_label": "High-Leverage Operator Play",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 53,
-    "high": 59
+    "low": 79,
+    "high": 85
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 21/25. Recurring contracts are attractive, but delivery headcount grows with revenue.",
-    "profit_margin_potential": "Profit Margin Potential: 12/25. Recurring contracts are attractive, but delivery headcount grows with revenue.",
-    "team_efficiency": "Team Efficiency: 6/20. Recurring contracts are attractive, but delivery headcount grows with revenue.",
-    "startup_accessibility": "Startup Accessibility: 11/15. Recurring contracts are attractive, but delivery headcount grows with revenue.",
-    "automation_potential": "Automation Potential: 6/15. Recurring contracts are attractive, but delivery headcount grows with revenue."
+    "revenue_potential": "Revenue Potential: 21/25. Lean 4-person bidding, QC, and GSA/commercial subcontractor coordination desk (external janitorial vendor crews excluded from internal pod).",
+    "profit_margin_potential": "Profit Margin Potential: 21/25. Lean 4-person bidding, QC, and GSA/commercial subcontractor coordination desk (external janitorial vendor crews excluded from internal pod).",
+    "team_efficiency": "Team Efficiency: 17/20. Lean 4-person bidding, QC, and GSA/commercial subcontractor coordination desk (external janitorial vendor crews excluded from internal pod).",
+    "startup_accessibility": "Startup Accessibility: 13/15. Lean 4-person bidding, QC, and GSA/commercial subcontractor coordination desk (external janitorial vendor crews excluded from internal pod).",
+    "automation_potential": "Automation Potential: 10/15. Lean 4-person bidding, QC, and GSA/commercial subcontractor coordination desk (external janitorial vendor crews excluded from internal pod)."
   },
   "economics": {
     "gross_revenue_range": "$250,000–$1,200,000 USD annually",
+    "retained_revenue_range": "$100,000–$480,000 USD annually",
+    "retained_share": 0.4,
     "net_profit_margin_range": "8–16%",
+    "retained_profit_margin_range": "20–40%",
     "owner_net_profit_potential": "$20,000–$192,000 USD annually, before personal taxes and reinvestment",
-    "startup_capital_range": "$15,000–$90,000 USD",
-    "monthly_opex_range": "$4,000–$18,000 USD",
+    "startup_capital_range": "$10,000–$50,000 USD",
+    "monthly_opex_range": "$3,000–$14,000 USD",
     "time_to_first_deal": "1–4 months",
+    "automation_coverage": 0.68,
     "typical_team_size": {
-      "full_time_including_owner": 5,
-      "contractors": 4,
-      "total_people": 9
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
     },
     "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
-    "revenue_basis": "Cleaning contract revenue; scalable only with more paid crew hours",
+    "revenue_basis": "Booked cleaning contract revenue (40% retained management & consumables contribution after external sub-crews)",
     "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
     "estimate_status": "Illustrative assumptions; not verified earnings data"
   },
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 250000,
+      "annual_retained_revenue_usd": 100000,
       "net_profit_margin_pct": 8,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 20000,
-      "full_time_including_owner": 5,
-      "contractors": 4,
-      "total_people": 9,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "base_case": {
       "annual_gross_revenue_usd": 725000.0,
+      "annual_retained_revenue_usd": 290000,
       "net_profit_margin_pct": 12.0,
+      "retained_profit_margin_pct": 30.0,
       "annual_owner_net_profit_usd": 87000,
-      "full_time_including_owner": 5,
-      "contractors": 4,
-      "total_people": 9,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 1200000,
+      "annual_retained_revenue_usd": 480000,
       "net_profit_margin_pct": 16,
+      "retained_profit_margin_pct": 40.0,
       "annual_owner_net_profit_usd": 192000,
-      "full_time_including_owner": 6,
-      "contractors": 5,
-      "total_people": 11,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
       "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
     }
   },
   "automation_levers": [
-    "Scheduling",
-    "Inspection logs",
-    "Billing"
+    "ISSA bid calculators",
+    "Geofenced QC inspection logs",
+    "Automated recurring billing"
   ],
   "key_risks": [
-    "Labor turnover",
-    "Underpriced contracts",
+    "Subcontractor quality drift",
+    "Underpriced walkthroughs",
     "Customer concentration"
   ],
   "regulatory_notes": [

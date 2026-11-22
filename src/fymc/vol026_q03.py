@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, holds Rank #26 with a 62/100 "
+        "Candidate #17, Government Surplus Auctions, holds Rank #29 with a 79/100 "
         "Money-to-Manpower Score because capital turns and physical execution constrain "
         "apparently attractive auction spreads. Canonical annual owner profits are "
         "$12,000 Conservative, $80,500 Base, and $200,000 Scaled, on gross resale "
@@ -525,7 +525,7 @@ CHAPTER_3 = {
                     "$11,500, and $15,000 loss-liquidity buffers. Total "
                     "planning liquidity becomes $36,380, $111,426, and "
                     "$155,342. These illustrative requirements fit within "
-                    "the stated $25,000–$200,000 startup range, but the "
+                    "the stated $15,000–$80,000 startup range, but the "
                     "range's low end does not fund every scenario. "
                     "They exclude separately purchased warehouse equipment, "
                     "security deposits, and launch losses, which require "

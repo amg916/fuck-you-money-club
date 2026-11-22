@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #12 with an 81/100 Money-to-Manpower Score. "
+        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower Score. "
         "This chapter translates statutory boundaries into seven mapped operator plays: seller representation, "
         "buyer mandates, heavy-construction resale, CNC matching, fleet remarketing, industrial liquidation, "
         "and export coordination. Build the commission agreement around the actual transaction: who owns "

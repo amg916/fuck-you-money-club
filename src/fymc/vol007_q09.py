@@ -13,7 +13,7 @@ CHAPTER_9 = {
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, ranks #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, ranks #04 with an 89/100 "
         "Money-to-Manpower Score. This chapter supplies the contract, licensing, "
         "privacy, and outreach controls supporting the volume's 12 mapped plays. "
         "Separate treasury recovery services from bankruptcy claim purchases: "

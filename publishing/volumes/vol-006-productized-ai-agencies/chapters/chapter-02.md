@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #29, Productized AI Agencies, holds Rank #06 with an 86/100 Money-to-Manpower Score across 23 mapped plays. Buyers fund bounded improvements to expensive workflows, not abstract access to models. This chapter separates the executive sponsor, budget owner, security reviewer, and accounts-payable operator; then connects signed scope to acceptance evidence and collectible invoices. Annual owner net profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. Telegram signals, factual citation publishing, and permitted web subscription funnels illustrate paid deliverables. Eight payment arrangements expose settlement delays, dispute rights, financing costs, and the controls that protect fees without holding client data hostage.
+Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 Money-to-Manpower Score across 23 mapped plays. Buyers fund bounded improvements to expensive workflows, not abstract access to models. This chapter separates the executive sponsor, budget owner, security reviewer, and accounts-payable operator; then connects signed scope to acceptance evidence and collectible invoices. Annual owner net profit is $20,000 Conservative, $165,000 Base, and $400,000 Scaled, earned on implementation fees and support retainers rather than client sales attributed to automation. Telegram signals, factual citation publishing, and permitted web subscription funnels illustrate paid deliverables. Eight payment arrangements expose settlement delays, dispute rights, financing costs, and the controls that protect fees without holding client data hostage.
 
 ### Key Metrics
 

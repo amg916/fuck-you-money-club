@@ -13,8 +13,8 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, holds Rank #26 with a "
-        "62/100 Money-to-Manpower Score: capital and labor discipline determine "
+        "Candidate #17, Government Surplus Auctions, holds Rank #29 with a "
+        "79/100 Money-to-Manpower Score: capital and labor discipline determine "
         "whether the inventory becomes income. This chapter maps six operator "
         "plays: auction intelligence, bid underwriting, removal logistics, "
         "refurbishment control, B2B remarketing, and inventory-to-cash governance. "
@@ -120,7 +120,7 @@ CHAPTER_11 = {
                     "transferable earnings. The stated $3,000-$15,000 monthly operating "
                     "expense range represents alternative operating conditions, not "
                     "an amount automatically added to every scenario. Likewise, "
-                    "$25,000-$200,000 of startup capital must cover inventory funding "
+                    "$15,000-$80,000 of startup capital must cover inventory funding "
                     "and timing gaps without being mistaken for revenue. If actual "
                     "costs exceed a canonical envelope, report the variance and "
                     "redesign workload, purchasing, or pricing before claiming that "

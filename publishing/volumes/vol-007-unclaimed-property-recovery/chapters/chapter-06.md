@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 Money-to-Manpower Score. Its advantage is evidence assembly, not secret access to state money. This chapter maps 12 sourcing plays, from corporate warrants and merger remnants to a separately controlled medical-recovery adjacency. Build a narrow jurisdictional lane, reconcile owner identity before outreach, explain direct claiming, and sell document coordination rather than privileged access. The canonical annual owner-profit cases are $15,000 Conservative, $95,625 Base, and $225,000 Scaled; recognized revenue means service fees, never recovered principal. A measured 3–12 month acquisition program combines public-record signals, professional referrals, restrained outbound, and secure intake to target the first 3-to-10 paid wins without confusing signatures with collections.
+Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 Money-to-Manpower Score. Its advantage is evidence assembly, not secret access to state money. This chapter maps 12 sourcing plays, from corporate warrants and merger remnants to a separately controlled medical-recovery adjacency. Build a narrow jurisdictional lane, reconcile owner identity before outreach, explain direct claiming, and sell document coordination rather than privileged access. The canonical annual owner-profit cases are $15,000 Conservative, $95,625 Base, and $225,000 Scaled; recognized revenue means service fees, never recovered principal. A measured 3–12 month acquisition program combines public-record signals, professional referrals, restrained outbound, and secure intake to target the first 3-to-10 paid wins without confusing signatures with collections.
 
 ### Key Metrics
 

@@ -13,7 +13,7 @@ CHAPTER_8 = {
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #29 with a 54/100 Money-to-Manpower "
+        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower "
         "Score because field labor, working capital, and disputed invoices constrain "
         "software leverage. This chapter maps five operator plays: storm triage, water "
         "mitigation, fire and contents recovery, mold remediation, and reconstruction "
@@ -31,19 +31,19 @@ CHAPTER_8 = {
             "label": "Conservative",
             "value": "$500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C",
+            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$2,500,000",
             "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C",
+            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -68,7 +68,7 @@ CHAPTER_8 = {
                     "owns public-feed exceptions, the estimator owns scope provenance, and "
                     "the project manager owns access permissions and job-cost reconciliation. "
                     "Field leads collect measurements and supervise site execution. This "
-                    "division prevents an eleven-person pod from appointing an imaginary "
+                    "division prevents a four-person pod from appointing an imaginary "
                     "data department. Start with the sources that change today's dispatch "
                     "or strengthen an existing authorized job; defer everything that merely "
                     "produces a larger prospect spreadsheet."
@@ -110,7 +110,7 @@ CHAPTER_8 = {
                     "old event arriving today cannot trigger a fresh dispatch surge. For "
                     "licensed commercial platforms, confirm whether API access includes your "
                     "subscription before designing around it. A supported CSV export is "
-                    "often sufficient for an eleven-person operation and easier to reconcile "
+                    "often sufficient for a four-person operation and easier to reconcile "
                     "than an undocumented integration. Cache stable parcel attributes, refresh "
                     "license status before assignment, and expire alerts according to their "
                     "own timestamps. Track outages visibly. When a feed fails, label its "
@@ -553,10 +553,10 @@ CHAPTER_8 = {
                     "implied annual cost envelopes are $460,000, $1,305,000, and $2,050,000. "
                     "Headcount alone does not specify contractor utilization, compensation, "
                     "or local labor economics, so validate those inputs before treating "
-                    "any case as executable. The stated $10,000–$45,000 monthly operating "
+                    "any case as executable. The stated $4,000–$20,000 monthly operating "
                     "expense range must not be mistaken for the entire cost envelope "
                     "when direct project costs are additional. Startup capital of "
-                    "$75,000–$350,000 and a one-to-six-month first-deal window also require "
+                    "$18,000–$75,000 and a one-to-six-month first-deal window also require "
                     "a separate cash plan. Software cannot erase the need to fund "
                     "payroll, deposits, equipment, and materials before collections arrive."
                 ),
@@ -658,7 +658,7 @@ CHAPTER_8 = {
     "pull_quote": "The best restoration data stack turns a field observation into a traceable scope, a correct invoice, and a collected balance without inventing authority.",
     "diagram_id": "diag-04",
     "action_checklist": [
-        "Assign P1 storm triage, P2 water mitigation, P3 fire contents, P4 mold remediation, and P5 reconstruction documentation to named owners within the eleven-person pod.",
+        "Assign P1 storm triage, P2 water mitigation, P3 fire contents, P4 mold remediation, and P5 reconstruction documentation to named owners within the four-person pod.",
         "Create the eighteen-source register with access routes, entitlements, source timestamps, measured latency, permitted purposes, and tested fallbacks.",
         "Pilot one official hazard feed and one existing-job export using stable identifiers, bounded retries, provenance records, and duplicate-safe writes.",
         "Standardize moisture points, instrument metadata, equipment serial-number logs, contents custody, and estimate-version evidence across authorized jobs.",

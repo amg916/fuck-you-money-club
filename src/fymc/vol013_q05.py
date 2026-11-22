@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #13 with a 79/100 "
+        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
         "Money-to-Manpower Score. Its four mapped operator plays are patent licensing, "
         "brand licensing, catalog licensing, and dataset licensing. Each converts controlled "
         "rights into license fees and royalties, not ownership of the licensee's sales. "
@@ -114,7 +114,7 @@ CHAPTER_5 = {
                     "remains accountable for acceptance and commercial decisions. This "
                     "one-full-time, three-contractor pod cannot investigate an unlimited "
                     "catalog cheaply: cap active diligence work to available review hours "
-                    "and price exceptions separately. The $25,000–$250,000 startup range "
+                    "and price exceptions separately. The $12,000–$75,000 startup range "
                     "is capital capacity, not permission to buy doubtful rights before "
                     "a qualified licensee confirms demand, budget, and intended use."
                 ),
@@ -198,7 +198,7 @@ CHAPTER_5 = {
                     "yields $425,000; $16,000,000 at 5% yields $800,000. Those sales "
                     "bases belong to licensees and are not additional operator revenue. "
                     "They are arithmetic examples, not evidence that customers exist. "
-                    "The $2,000–$15,000 monthly operating range is a planning input, "
+                    "The $2,000–$12,000 monthly operating range is a planning input, "
                     "not a substitute for each scenario's complete annual expense envelope. "
                     "Reconcile contractor work, acquisition charges, audit costs, collection "
                     "losses, and other applicable expenses without double counting. A "

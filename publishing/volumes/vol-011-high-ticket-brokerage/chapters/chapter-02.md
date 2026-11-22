@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #26, High-Ticket Brokerage, ranks #11 with an 82/100 Money-to-Manpower Score across a volume containing 21 mapped plays. The payer buys transaction certainty: qualified counterparties, documented authority, defensible diligence, and a closing sequence that releases an earned commission. This chapter separates purchase consideration from retained brokerage revenue, compares eight payment arrangements, and turns exclusive mandates into executable disbursement instructions. Canonical annual owner profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled, supported by retained commissions of $100,000, $550,000, and $1,000,000 respectively. Public Telegram signals and voluntary access-easement assignments become useful only when they reach a creditworthy principal, a lawful engagement, and independently verified settlement authority.
+Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower Score across a volume containing 21 mapped plays. The payer buys transaction certainty: qualified counterparties, documented authority, defensible diligence, and a closing sequence that releases an earned commission. This chapter separates purchase consideration from retained brokerage revenue, compares eight payment arrangements, and turns exclusive mandates into executable disbursement instructions. Canonical annual owner profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled, supported by retained commissions of $100,000, $550,000, and $1,000,000 respectively. Public Telegram signals and voluntary access-easement assignments become useful only when they reach a creditworthy principal, a lawful engagement, and independently verified settlement authority.
 
 ### Key Metrics
 

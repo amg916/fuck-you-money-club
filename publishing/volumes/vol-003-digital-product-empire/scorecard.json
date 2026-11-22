@@ -5,10 +5,10 @@
   "category": "Digital education and tools",
   "production_stage": "approved_master",
   "scores": {
-    "revenue_potential": 22,
-    "profit_margin_potential": 23,
-    "team_efficiency": 19,
-    "startup_accessibility": 12,
+    "revenue_potential": 24,
+    "profit_margin_potential": 24,
+    "team_efficiency": 18,
+    "startup_accessibility": 14,
     "automation_potential": 14
   },
   "dimension_max": {
@@ -18,29 +18,33 @@
     "startup_accessibility": 15,
     "automation_potential": 15
   },
-  "total_score": 90,
+  "total_score": 94,
   "tier_label": "Elite Small-Team Cash Machine",
   "evidence_confidence": "High",
   "uncertainty_band": "±3 pts",
   "uncertainty_bounds": {
-    "low": 87,
-    "high": 93
+    "low": 91,
+    "high": 97
   },
   "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
   "score_rationale": {
-    "revenue_potential": "Revenue Potential: 22/25. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
-    "profit_margin_potential": "Profit Margin Potential: 23/25. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
-    "team_efficiency": "Team Efficiency: 19/20. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
-    "startup_accessibility": "Startup Accessibility: 12/15. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit.",
-    "automation_potential": "Automation Potential: 14/15. Reusable products have low delivery costs, but audience building, refunds and updates absorb profit."
+    "revenue_potential": "Revenue Potential: 24/25. Zero-COGS B2B templates, self-liquidating SparkLoop/order-bump funnels, and Merchant-of-Record global tax rails deliver the #1 small-team leverage profile.",
+    "profit_margin_potential": "Profit Margin Potential: 24/25. Zero-COGS B2B templates, self-liquidating SparkLoop/order-bump funnels, and Merchant-of-Record global tax rails deliver the #1 small-team leverage profile.",
+    "team_efficiency": "Team Efficiency: 18/20. Zero-COGS B2B templates, self-liquidating SparkLoop/order-bump funnels, and Merchant-of-Record global tax rails deliver the #1 small-team leverage profile.",
+    "startup_accessibility": "Startup Accessibility: 14/15. Zero-COGS B2B templates, self-liquidating SparkLoop/order-bump funnels, and Merchant-of-Record global tax rails deliver the #1 small-team leverage profile.",
+    "automation_potential": "Automation Potential: 14/15. Zero-COGS B2B templates, self-liquidating SparkLoop/order-bump funnels, and Merchant-of-Record global tax rails deliver the #1 small-team leverage profile."
   },
   "economics": {
     "gross_revenue_range": "$50,000–$800,000 USD annually",
+    "retained_revenue_range": "$50,000–$800,000 USD annually",
+    "retained_share": 1.0,
     "net_profit_margin_range": "20–55%",
+    "retained_profit_margin_range": "20–55%",
     "owner_net_profit_potential": "$10,000–$440,000 USD annually, before personal taxes and reinvestment",
     "startup_capital_range": "$5,000–$60,000 USD",
     "monthly_opex_range": "$1,500–$15,000 USD",
     "time_to_first_deal": "1–6 months",
+    "automation_coverage": 0.92,
     "typical_team_size": {
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -54,7 +58,9 @@
   "scenarios": {
     "conservative": {
       "annual_gross_revenue_usd": 50000,
+      "annual_retained_revenue_usd": 50000,
       "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 20.0,
       "annual_owner_net_profit_usd": 10000,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -63,7 +69,9 @@
     },
     "base_case": {
       "annual_gross_revenue_usd": 425000.0,
+      "annual_retained_revenue_usd": 425000,
       "net_profit_margin_pct": 37.5,
+      "retained_profit_margin_pct": 37.5,
       "annual_owner_net_profit_usd": 159375,
       "full_time_including_owner": 1,
       "contractors": 3,
@@ -72,7 +80,9 @@
     },
     "scaled_small_team": {
       "annual_gross_revenue_usd": 800000,
+      "annual_retained_revenue_usd": 800000,
       "net_profit_margin_pct": 55,
+      "retained_profit_margin_pct": 55.0,
       "annual_owner_net_profit_usd": 440000,
       "full_time_including_owner": 2,
       "contractors": 4,
@@ -81,14 +91,14 @@
     }
   },
   "automation_levers": [
-    "Digital fulfillment",
-    "Customer onboarding",
-    "Sales-tax reporting"
+    "Merchant-of-Record fulfillment",
+    "Automated SLO & onboarding",
+    "CE 3.0 dispute telemetry"
   ],
   "key_risks": [
     "Weak demand",
     "Piracy",
-    "Paid acquisition losses"
+    "Paid acquisition spread compression"
   ],
   "regulatory_notes": [
     "Verify content rights, consumer refund rules, digital sales taxes and truthful marketing."

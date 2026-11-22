@@ -13,8 +13,8 @@ CHAPTER_11 = {
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #28, Automated E-Commerce, holds Rank #21 with a 70/100 "
-        "Money-to-Manpower Score: a Disciplined Specialist Play, not unattended retail. "
+        "Candidate #28, Automated E-Commerce, holds Rank #21 with a 85/100 "
+        "Money-to-Manpower Score: an Elite Small-Team Cash Machine, not unattended retail. "
         "Organize its 18 mapped plays around two accountable employees and three "
         "specialist contractors, expanding to three employees and four contractors "
         "only when contribution dollars support the added capacity. Canonical annual "

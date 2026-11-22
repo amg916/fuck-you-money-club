@@ -13,8 +13,8 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, holds Rank #26 with a "
-        "62/100 Money-to-Manpower Score because physical custody, working capital "
+        "Candidate #17, Government Surplus Auctions, holds Rank #29 with a "
+        "79/100 Money-to-Manpower Score because physical custody, working capital "
         "and exception handling dominate execution. This chapter maps six operator "
         "plays: discover and score; verify and bid; fund and remove; triage and "
         "refurbish; remarket to businesses; reconcile and recycle capital. A two "

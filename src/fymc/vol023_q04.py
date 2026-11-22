@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($150,000–$2,000,000 USD) and configure a lean, low-opex ($1,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($15,000–$75,000 USD) and configure a lean, low-opex ($1,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First NMA and NPRI Underwriting, County Title Evidence, Royalty Reconciliation, and FERC Queue-Signal Discipline",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #23 with a Money-to-Manpower Score of 63/100: "
+        "Candidate #7, Mineral Rights, ranks #25 with a Money-to-Manpower Score of 81/100: "
         "capital discipline matters more than subscription count. This chapter maps five operating "
         "plays: producing-mineral purchases, NPRI purchases, pooling-docket curve-jumping, "
         "institutional rights flips, and FERC queue-informed land options. Keep at least half "

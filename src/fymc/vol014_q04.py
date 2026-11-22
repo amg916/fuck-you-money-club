@@ -13,8 +13,8 @@ CHAPTER_4 = {
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, holds Rank #14 among 29 mapped plays "
-        "with a Money-to-Manpower Score of 79/100. Build its infrastructure around retained "
+        "Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays "
+        "with a Money-to-Manpower Score of 89/100. Build its infrastructure around retained "
         "origination and referral fees, never loan principal. Allocate at least half of "
         "$20,000–$100,000 startup capital to working-capital reserves, then purchase narrow "
         "capabilities for secure intake, lender matching, documented compensation, and "

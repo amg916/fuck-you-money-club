@@ -6,14 +6,14 @@ CHAPTER_4 = {
     "chapter_number": 4,
     "question_number": 4,
     "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($25,000–$150,000 USD) and configure a lean, low-opex ($5,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "question_prompt": "How do you allocate startup capital ($20,000–$90,000 USD) and configure a lean, low-opex ($5,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
     "subtitle": "Reserve-First Bid Desks, SAM.gov Intelligence, Lawful Teaming, and FAR-Aware Production Controls",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #20 with a 70/100 "
+        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
         "Money-to-Manpower Score. Build a procurement service, not a speculative "
         "inventory book: reserve 60% of startup capital, buy delivery capacity "
         "against signed work, and separate recurring overhead from project costs. "
@@ -607,7 +607,7 @@ CHAPTER_4 = {
     "pull_quote": "Protect the reserve, sell documented work, and never mistake a client's award value for your own revenue.",
     "diagram_id": "diag-07",
     "action_checklist": [
-        "Allocate 60% of the selected $25,000–$150,000 startup package to a segregated reserve and calculate runway at both $5,000 and $25,000 monthly burn.",
+        "Allocate 60% of the selected $20,000–$90,000 startup package to a segregated reserve and calculate runway at both $5,000 and $25,000 monthly burn.",
         "Reconcile the $102,000, $434,000, and $700,000 annual expense residuals to realistic compensation, delivery costs, and recurring overhead before hiring.",
         "Provision the twelve production functions using the fewest necessary subscriptions, verifying current prices, seat limits, security requirements, and annual cash commitments.",
         "Execute written service scopes defining compensation, bidder authority, prime/sub responsibilities, acceptance evidence, insurance requirements, and invoice routes.",

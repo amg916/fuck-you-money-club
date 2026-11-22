@@ -14,7 +14,7 @@ CHAPTER_1 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Land flipping turns purchased parcel inventory into completed sales, not paper appreciation or client transaction volume. "
-        "Candidate #6 ranks #18 with a Money-to-Manpower Score of 72/100: a disciplined specialist play requiring patient capital "
+        "Candidate #6 ranks #15 with a Money-to-Manpower Score of 86/100: a elite small-team cash machine requiring patient capital "
         "and parcel-level evidence. This chapter maps six plays: access-easement assemblage, rural cash resale, buildable infill, "
         "adjoining-owner assemblage, minor subdivision, and title-cleanup resale. Canonical annual owner profits are $24,000 "
         "Conservative, $157,250 Base, and $375,000 Scaled. Gross parcel sale proceeds are revenue; acquisition costs remain "
@@ -85,9 +85,8 @@ CHAPTER_1 = {
                     "utility extension costs, and misleading comparable sales. Airtable or a carefully controlled spreadsheet can "
                     "hold the workflow, while QGIS supplies reproducible spatial screening and saved overlays. Neither replaces "
                     "a surveyor's boundary work or a title examiner's interpretation of recorded interests. The scorecard's 72 "
-                    "points comprise revenue potential 21, profit-margin potential 18, team efficiency 17, startup accessibility "
-                    "6, and automation potential 10. Those numbers describe a disciplined specialist business rather than "
-                    "effortless passive income. The working envelope is $50,000 to $400,000 of startup capital, $3,000 to "
+                    "points comprise revenue potential 23, margin potential 23, team efficiency 18, startup accessibility 11, and automation potential 11. Those numbers describe a disciplined specialist business rather than "
+                    "effortless passive income. The working envelope is $15,000 to $75,000 of startup capital, $3,000 to "
                     "$15,000 of monthly operating expense, and three to twelve months to the first deal. Budget that runway "
                     "before assuming inventory turnover. One principal coordinates specialist capacity; contractors still require "
                     "scheduling, review, and payment. Automation improves parcel screening and comparable-sale tracking most "

@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #9, Probate Real Estate, holds Rank #16 with a 76/100 "
+        "Candidate #9, Probate Real Estate, holds Rank #26 with a 80/100 "
         "Money-to-Manpower Score across the volume's 11 mapped plays. The economic "
         "engine is retained brokerage commission after brokerage splits, never "
         "the estate's property proceeds. Canonical annual owner profits are "

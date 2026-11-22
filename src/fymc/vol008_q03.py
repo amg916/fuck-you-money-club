@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 "
+        "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 "
         "Money-to-Manpower Score and 54 mapped plays. The business sells retainers "
         "and accepted-lead fees, not client advertising volume. Canonical annual "
         "owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled, "

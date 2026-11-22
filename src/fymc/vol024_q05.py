@@ -14,7 +14,7 @@ CHAPTER_5 = {
     "reading_time_minutes": 14,
     "executive_summary": (
         "Candidate #3, Tax Lien Investing, ranks #24 with a Money-to-Manpower Score "
-        "of 62/100. Its four operating plays here are auction screening, bid-down "
+        "of 81/100. Its four operating plays here are auction screening, bid-down "
         "underwriting, redemption servicing, and foreclosure or redeemable-deed "
         "recovery. Each can destroy capital through different mechanics: unusable "
         "collateral, overstated yield, misapplied receipts, or defective enforcement. "
@@ -119,7 +119,7 @@ CHAPTER_5 = {
                     "investment capital. Begin with one jurisdiction and one instrument "
                     "family so contractors can maintain reusable checklists. Expansion "
                     "requires complete files and demonstrated servicing capacity, "
-                    "not merely spare auction cash. Treat the stated $100,000–$1,500,000 "
+                    "not merely spare auction cash. Treat the stated $15,000–$85,000 "
                     "startup range as capital at risk, not a spending target. A "
                     "6–36 month first-deal horizon makes preservation of operating "
                     "liquidity more important than winning the next lot."
@@ -527,7 +527,7 @@ CHAPTER_5 = {
                     "contractors cannot cover the jurisdiction or deadline, "
                     "reduce new commitments rather than silently transferring "
                     "specialist work to the operator. Candidate #3 scores "
-                    "62/100 because capital and process remain substantial "
+                    "81/100 because capital and process remain substantial "
                     "constraints despite useful automation. Preserve the "
                     "canonical $4,500, $41,438, and $99,000 annual profit cases "
                     "as reference scenarios, then show actual variance from "

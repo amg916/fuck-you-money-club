@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-High-ticket affiliate publishing earns fees for sending the right buyer to a merchant, not for owning the sale. Candidate #24 ranks #04 with an 87/100 score and 35 mapped operator plays. The durable version solves a costly buying problem, records the referral, and earns a contract-defined share or bounty. The fragile version rents cheap clicks and hopes a short tracking window survives. This chapter separates merchant sales from affiliate revenue, shows where reversals destroy apparent yield, and builds three annual profit cases. Start with one buyer problem, one verified offer, and one repeatable proof of value.
+High-ticket affiliate publishing earns fees for sending the right buyer to a merchant, not for owning the sale. Candidate #24 ranks #02 with an 92/100 score and 35 mapped operator plays. The durable version solves a costly buying problem, records the referral, and earns a contract-defined share or bounty. The fragile version rents cheap clicks and hopes a short tracking window survives. This chapter separates merchant sales from affiliate revenue, shows where reversals destroy apparent yield, and builds three annual profit cases. Start with one buyer problem, one verified offer, and one repeatable proof of value.
 
 ### Key Metrics
 

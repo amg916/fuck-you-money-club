@@ -83,15 +83,15 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 450 666] /TrimBox [9 9 441 657] /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> /Contents 11 0 R >>
 endobj
 11 0 obj
-<< /Length 2098 >>
+<< /Length 2069 >>
 stream
 BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 63.00 621.00 m 405.00 621.00 l S
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (Money-to-Manpower Scorecard) Tj ET
 BT /F2 11 Tf 1 0 0 1 63.00 558.35 Tm (Money-to-Manpower Score) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 535.40 Tm (Revenue potential - 20/25) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 535.40 Tm (Revenue potential - 21/25) Tj ET
 q 0 0 0 RG 63.00 499.17 342.00 12.00 re S Q
-q .18 .27 .22 rg 63.00 499.17 273.60 12.00 re f Q
+q .18 .27 .22 rg 63.00 499.17 287.28 12.00 re f Q
 BT /F1 10.5 Tf 1 0 0 1 63.00 478.17 Tm (Profit margin potential - 21/25) Tj ET
 q 0 0 0 RG 63.00 441.95 342.00 12.00 re S Q
 q .18 .27 .22 rg 63.00 441.95 287.28 12.00 re f Q
@@ -101,20 +101,20 @@ q .18 .27 .22 rg 63.00 384.72 273.60 12.00 re f Q
 BT /F1 10.5 Tf 1 0 0 1 63.00 363.72 Tm (Startup accessibility - 10/15) Tj ET
 q 0 0 0 RG 63.00 327.50 342.00 12.00 re S Q
 q .18 .27 .22 rg 63.00 327.50 228.00 12.00 re f Q
-BT /F1 10.5 Tf 1 0 0 1 63.00 306.50 Tm (Automation potential - 10/15) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 306.50 Tm (Automation potential - 11/15) Tj ET
 q 0 0 0 RG 63.00 270.27 342.00 12.00 re S Q
-q .18 .27 .22 rg 63.00 270.27 228.00 12.00 re f Q
+q .18 .27 .22 rg 63.00 270.27 250.80 12.00 re f Q
 BT /F0 17 Tf 1 0 0 1 63.00 249.27 Tm (Three operating scenarios) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 217.62 Tm (Conservative: Annual Gross Revenue Usd: 60000) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 202.40 Tm (Net Profit Margin Pct: 20) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 187.17 Tm (Annual Owner Net Profit Usd: 12000) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 171.95 Tm (Full Time Including Owner: 1) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 156.72 Tm (Contractors: 3) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 141.50 Tm (Total People: 4) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 126.27 Tm (Assumption: Illustrative established-operation run rate, not first-year earnings.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 111.05 Tm (Margin includes operating costs and non-owner labor; owner labor is not) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 95.82 Tm (separately compensated. Scale requires additional demand, working capital and) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 80.60 Tm (delivery capacity.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 202.40 Tm (Annual Retained Revenue Usd: 60000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 187.17 Tm (Net Profit Margin Pct: 20) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 171.95 Tm (Retained Profit Margin Pct: 20.0) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 156.72 Tm (Annual Owner Net Profit Usd: 12000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 141.50 Tm (Full Time Including Owner: 1) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 126.27 Tm (Contractors: 3) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 111.05 Tm (Total People: 4) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 95.82 Tm (Assumption: Illustrative established-operation run rate, not first-year earnings.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 80.60 Tm (Margin includes operating costs and non-owner labor; owner labor is not) Tj ET
 BT /F2 8 Tf 193.80 30 Td (Page 3 of 353) Tj ET
 endstream
 endobj
@@ -122,30 +122,36 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 450 666] /TrimBox [9 9 441 657] /Resources << /Font << /F0 3 0 R /F1 4 0 R /F2 5 0 R >> >> /Contents 13 0 R >>
 endobj
 13 0 obj
-<< /Length 1938 >>
+<< /Length 2455 >>
 stream
 BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 45.00 621.00 m 387.00 621.00 l S
-BT /F1 10.5 Tf 1 0 0 1 45.00 590.00 Tm (Base Case: Annual Gross Revenue Usd: 280000.0) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 574.77 Tm (Net Profit Margin Pct: 30.0) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 559.55 Tm (Annual Owner Net Profit Usd: 84000) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 544.32 Tm (Full Time Including Owner: 1) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 529.10 Tm (Contractors: 3) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 513.87 Tm (Total People: 4) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 498.65 Tm (Assumption: Illustrative established-operation run rate, not first-year earnings.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 483.42 Tm (Margin includes operating costs and non-owner labor; owner labor is not) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 468.20 Tm (separately compensated. Scale requires additional demand, working capital and) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 452.97 Tm (delivery capacity.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 437.75 Tm (Scaled Small Team: Annual Gross Revenue Usd: 500000) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 422.52 Tm (Net Profit Margin Pct: 40) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 407.30 Tm (Annual Owner Net Profit Usd: 200000) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 392.07 Tm (Full Time Including Owner: 2) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 376.85 Tm (Contractors: 4) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 361.62 Tm (Total People: 6) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 346.40 Tm (Assumption: Illustrative established-operation run rate, not first-year earnings.) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 331.17 Tm (Margin includes operating costs and non-owner labor; owner labor is not) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 315.95 Tm (separately compensated. Scale requires additional demand, working capital and) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 300.72 Tm (delivery capacity.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 590.00 Tm (separately compensated. Scale requires additional demand, working capital and) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 574.77 Tm (delivery capacity.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 559.55 Tm (Base Case: Annual Gross Revenue Usd: 280000.0) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 544.32 Tm (Annual Retained Revenue Usd: 280000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 529.10 Tm (Net Profit Margin Pct: 30.0) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 513.87 Tm (Retained Profit Margin Pct: 30.0) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 498.65 Tm (Annual Owner Net Profit Usd: 84000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 483.42 Tm (Full Time Including Owner: 1) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 468.20 Tm (Contractors: 3) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 452.97 Tm (Total People: 4) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 437.75 Tm (Assumption: Illustrative established-operation run rate, not first-year earnings.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 422.52 Tm (Margin includes operating costs and non-owner labor; owner labor is not) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 407.30 Tm (separately compensated. Scale requires additional demand, working capital and) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 392.07 Tm (delivery capacity.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 376.85 Tm (Scaled Small Team: Annual Gross Revenue Usd: 500000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 361.62 Tm (Annual Retained Revenue Usd: 500000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 346.40 Tm (Net Profit Margin Pct: 40) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 331.17 Tm (Retained Profit Margin Pct: 40.0) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 315.95 Tm (Annual Owner Net Profit Usd: 200000) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 300.72 Tm (Full Time Including Owner: 2) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 285.50 Tm (Contractors: 4) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 270.27 Tm (Total People: 6) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 255.05 Tm (Assumption: Illustrative established-operation run rate, not first-year earnings.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 239.82 Tm (Margin includes operating costs and non-owner labor; owner labor is not) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 224.60 Tm (separately compensated. Scale requires additional demand, working capital and) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 209.37 Tm (delivery capacity.) Tj ET
 BT /F2 8 Tf 193.80 30 Td (Page 4 of 353) Tj ET
 endstream
 endobj
@@ -163,7 +169,7 @@ BT /F1 10.5 Tf 1 0 0 1 71.00 558.35 Tm (Judgment recovery converts an existing c
 q 0 0 0 RG 63.00 539.12 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 543.12 Tm (through verified authority, asset intelligence, priority analysis, and lawful) Tj ET
 q 0 0 0 RG 63.00 523.90 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 527.90 Tm (enforcement. Candidate #8 ranks #15 with a 77/100 Money-to-Manpower) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 527.90 Tm (enforcement. Candidate #8 ranks #28 with a 79/100 Money-to-Manpower) Tj ET
 q 0 0 0 RG 63.00 508.67 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 512.67 Tm (Score: a high-leverage operator play when case selection beats case volume.) Tj ET
 q 0 0 0 RG 63.00 493.45 342.00 15.22 re S Q
@@ -2376,7 +2382,7 @@ BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 45.00 621.00 m 387.00 621.00 l S
 BT /F1 10.5 Tf 1 0 0 1 45.00 590.00 Tm (reached and earning only the agreed fee.) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 567.77 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 536.12 Tm (59ad61b412a7a7be) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 536.12 Tm (727e27b56848a223) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 513.90 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 482.25 Tm ([ ] Select one commercial recovery archetype and document its authority,) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 467.02 Tm (licensing, representation, and compensation boundaries.) Tj ET
@@ -3078,7 +3084,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (02 / Who Pays, Why They Pay & How the) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Payment Rail Works) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score across 15 mapped plays. The creditor buys) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -4717,7 +4723,7 @@ BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 558.35 Tm (A judgment names an obligation; verified authority, reachable equity, and) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 543.12 Tm (reconciled cash determine whether the operator earns anything.) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 520.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 489.25 Tm (0dba80ee9d4c5b26) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 489.25 Tm (6bc2aed1b480f047) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 467.02 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 435.38 Tm ([ ] Create a three-party authority record identifying the creditor buyer, debtor) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 420.15 Tm (funding source, and authorized settlement or release signer.) Tj ET
@@ -5393,7 +5399,7 @@ BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (03 / Unit Economics, Margin Waterfall &) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 565.35 Tm (Working-Capital Float) Tj ET
 q 0 0 0 RG 45.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 45.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 53.00 518.48 Tm (Money-to-Manpower Score. Across the volume's 15 mapped plays, the) Tj ET
 q 0 0 0 RG 45.00 499.25 342.00 15.22 re S Q
@@ -7079,7 +7085,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 63.00 621.00 m 405.00 621.00 l S
 BT /F1 10.5 Tf 1 0 0 1 63.00 590.00 Tm (pays the next enforcement invoice.) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 567.77 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 536.12 Tm (9af18262ace0c9b3) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 536.12 Tm (c3fba36c8fe7ac13) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 513.90 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 482.25 Tm ([ ] Build a matter-level cohort ledger separating accepted engagements, paying) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 467.02 Tm (resolutions, client recoveries, provisional commissions, and recognized fees.) Tj ET
@@ -7716,7 +7722,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (04 / Startup Capital, Lean Infrastructure &) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Pre-Flight Stack) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score across a portfolio of 15 mapped plays. Its capital) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -9622,7 +9628,7 @@ stream
 BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 63.00 621.00 m 405.00 621.00 l S
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 558.35 Tm (56283f0377b34f9a) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 558.35 Tm (5b59dc8756c96c9f) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 536.12 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 504.48 Tm ([ ] Allocate 60% of the selected startup capitalization to unrestricted working) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 489.25 Tm (capital and document the first-collection funding gap.) Tj ET
@@ -10250,7 +10256,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (05 / Beginner Traps, Clawbacks &) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Asymmetric Failure Modes) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score across a portfolio of 15 mapped plays. Its) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -12019,7 +12025,7 @@ BT /F0 17 Tf 1 0 0 1 45.00 454.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 422.35 Tm (Buy verified collection rights, spend against reachable equity, and never mistake) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 407.12 Tm (someone else's money for your margin.) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 384.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 353.25 Tm (7071521391deca2d) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 353.25 Tm (e6a7a866229361f9) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 331.02 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 299.38 Tm ([ ] Build a matter register linking debtor identity, service evidence, assignment) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 284.15 Tm (chain, judgment deadlines, lien deadlines, and the responsible local attorney.) Tj ET
@@ -12679,9 +12685,9 @@ BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (06 / Sourcing, Demand Mining & Landing) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 565.35 Tm (Your First Deals) Tj ET
 q 0 0 0 RG 45.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a Money-to-Manpower) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a Money-to-Manpower) Tj ET
 q 0 0 0 RG 45.00 514.48 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 53.00 518.48 Tm (Score of 77/100. This chapter organizes 15 mapped plays into a creditor-first) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 53.00 518.48 Tm (Score of 79/100. This chapter organizes 15 mapped plays into a creditor-first) Tj ET
 q 0 0 0 RG 45.00 499.25 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 53.00 503.25 Tm (sourcing system: commercial docket mining, counsel referrals, asset-event) Tj ET
 q 0 0 0 RG 45.00 484.02 342.00 15.22 re S Q
@@ -14606,7 +14612,7 @@ BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 558.35 Tm (Source the creditor's problem, prove the debtor's equity, and count only the fee) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 543.12 Tm (you have earned.) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 520.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 489.25 Tm (34102ae352566efb) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 489.25 Tm (14f628db94d14544) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 467.02 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 435.38 Tm ([ ] Select two court systems and one commercial creditor segment; create a dated) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 420.15 Tm (watchlist with exact entity identifiers and source links.) Tj ET
@@ -15278,7 +15284,7 @@ BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (07 / The Complete Operating Process,) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 565.35 Tm (Production Blueprint & 90-Day Cohort Walk) Tj ET
 q 0 0 0 RG 45.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 45.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 53.00 518.48 Tm (Money-to-Manpower Score across 15 mapped plays. This chapter converts) Tj ET
 q 0 0 0 RG 45.00 499.25 342.00 15.22 re S Q
@@ -26740,7 +26746,7 @@ BT /F0 17 Tf 1 0 0 1 45.00 390.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 358.35 Tm (A judgment balance is inventory; only an earned, reconciled fee is operator) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 343.12 Tm (revenue.) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 320.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 289.25 Tm (1eb3a7eb4deea99f) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 289.25 Tm (b153ec9aa7646421) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 267.02 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 235.37 Tm ([ ] Create one evidence-backed case identity and verify creditor authority,) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 220.15 Tm (obligation type, enforcement rights, and current bankruptcy status before) Tj ET
@@ -27430,7 +27436,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (08 / Public Records, APIs, Data Pipelines &) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Operator Tooling) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score. Its information advantage comes from joining) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -31344,7 +31350,7 @@ BT /F0 17 Tf 1 0 0 1 63.00 534.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 502.35 Tm (The winning record is the one that survives identity, priority, freshness, and cash) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 487.12 Tm (reconciliation - not the one that appears first in search.) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 464.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 433.25 Tm (20ae1ca0176983b2) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 433.25 Tm (1807db89d8249b96) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 411.02 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 379.38 Tm ([ ] Create a source register covering all eighteen directory entries, with) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 364.15 Tm (authorized access, current pricing, permitted uses, refresh targets, and fallback) Tj ET
@@ -31987,7 +31993,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (09 / Contracts, Statutory Guardrails,) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Licensing & Outreach Scripts) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score across a volume containing 15 mapped plays.) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -33549,7 +33555,7 @@ BT /F0 17 Tf 1 0 0 1 63.00 230.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 198.35 Tm (A judgment becomes an operating asset only when authority, priority, lawful) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 183.12 Tm (access, and the cash waterfall agree.) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 160.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 129.25 Tm (762df5d62c667bb8) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 129.25 Tm (3c604dacf841b152) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 107.03 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 75.38 Tm ([ ] Complete a jurisdiction worksheet covering debt origin, collector status,) Tj ET
 BT /F2 8 Tf 189.00 30 Td (Page 265 of 353) Tj ET
@@ -34315,7 +34321,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (10 / Automation, AI Leverage & Scalable) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Distribution Flywheels) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score. This chapter gives the volume's 15 mapped) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -35980,7 +35986,7 @@ stream
 BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 45.00 621.00 m 387.00 621.00 l S
 BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 45.00 558.35 Tm (860d2aea8f59bb02) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 45.00 558.35 Tm (c19070c04f3d39bc) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 536.12 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 504.48 Tm ([ ] Create a case-event schema linking every material field to an immutable) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 45.00 489.25 Tm (source document, retrieval timestamp, and assigned reviewer.) Tj ET
@@ -36634,7 +36640,7 @@ BT /F2 8 Tf 1 0 0 1 45.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 590.00 Tm (11 / Pod Architecture, Contractor KPIs & Exit) Tj ET
 BT /F0 17 Tf 1 0 0 1 45.00 565.35 Tm (Valuation) Tj ET
 q 0 0 0 RG 45.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 53.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 45.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 53.00 518.48 Tm (Money-to-Manpower Score. Its 15 mapped plays become valuable only) Tj ET
 q 0 0 0 RG 45.00 499.25 342.00 15.22 re S Q
@@ -38372,7 +38378,7 @@ BT /F0 17 Tf 1 0 0 1 63.00 422.00 Tm (Pull Quote) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 390.35 Tm (A transferable recovery book is a chain of authority, evidence, and earned fees -) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 375.12 Tm (not a stack of large judgments.) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 352.90 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 321.25 Tm (9deee6f8cfd80a16) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 321.25 Tm (c8143e8ec2bc1193) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 299.02 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 267.38 Tm ([ ] Map all fifteen execution lanes to the baseline owner, docket researcher, asset) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 252.15 Tm (analyst, and independently retained enforcement counsel, with one accountable) Tj ET
@@ -39030,7 +39036,7 @@ BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (12 / The First 30-Day Launch Sprint & Kill /) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 565.35 Tm (Fix / Scale Gates) Tj ET
 q 0 0 0 RG 63.00 529.70 342.00 15.22 re S Q
-BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #15 with a 77/100) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 71.00 533.70 Tm (Candidate #8, Judgment Recovery, ranks #28 with a 79/100) Tj ET
 q 0 0 0 RG 63.00 514.48 342.00 15.22 re S Q
 BT /F1 10.5 Tf 1 0 0 1 71.00 518.48 Tm (Money-to-Manpower Score across 15 mapped plays. Launch the operating) Tj ET
 q 0 0 0 RG 63.00 499.25 342.00 15.22 re S Q
@@ -40977,7 +40983,7 @@ stream
 BT /F2 8 Tf 1 0 0 1 63.00 629.00 Tm (THE BIG MONEY PLAYBOOKS) Tj ET
 0.6 w 63.00 621.00 m 405.00 621.00 l S
 BT /F0 17 Tf 1 0 0 1 63.00 590.00 Tm (Revision) Tj ET
-BT /F1 10.5 Tf 1 0 0 1 63.00 558.35 Tm (7f9ebdc757b2c2a8) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 63.00 558.35 Tm (84b080683f52057b) Tj ET
 BT /F0 17 Tf 1 0 0 1 63.00 536.12 Tm (Operator checklist) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 504.48 Tm ([ ] Choose one state and commercial judgment segment, then have local counsel) Tj ET
 BT /F1 10.5 Tf 1 0 0 1 63.00 489.25 Tm (document licensing, authority, representation, and assignment requirements.) Tj ET
@@ -41609,1211 +41615,1211 @@ xref
 0000004643 00000 n 
 0000006406 00000 n 
 0000006577 00000 n 
-0000008728 00000 n 
-0000008899 00000 n 
-0000010890 00000 n 
-0000011061 00000 n 
-0000013984 00000 n 
-0000014155 00000 n 
-0000016419 00000 n 
-0000016590 00000 n 
-0000020580 00000 n 
-0000020751 00000 n 
-0000026208 00000 n 
-0000026379 00000 n 
-0000038753 00000 n 
-0000038924 00000 n 
-0000043453 00000 n 
-0000043624 00000 n 
-0000050922 00000 n 
-0000051093 00000 n 
-0000064881 00000 n 
-0000065052 00000 n 
-0000078743 00000 n 
-0000078914 00000 n 
-0000089265 00000 n 
-0000089436 00000 n 
-0000093606 00000 n 
-0000093777 00000 n 
-0000100474 00000 n 
-0000100645 00000 n 
-0000112847 00000 n 
-0000113018 00000 n 
-0000116853 00000 n 
-0000117024 00000 n 
-0000121467 00000 n 
-0000121638 00000 n 
-0000132081 00000 n 
-0000132252 00000 n 
-0000141359 00000 n 
-0000141530 00000 n 
-0000143575 00000 n 
-0000143747 00000 n 
-0000143919 00000 n 
-0000144093 00000 n 
-0000144266 00000 n 
-0000144440 00000 n 
-0000144665 00000 n 
-0000144890 00000 n 
-0000145120 00000 n 
-0000151645 00000 n 
-0000151826 00000 n 
-0000152047 00000 n 
-0000152267 00000 n 
-0000152490 00000 n 
-0000152712 00000 n 
-0000152885 00000 n 
-0000153057 00000 n 
-0000153228 00000 n 
-0000153404 00000 n 
-0000153648 00000 n 
-0000158109 00000 n 
-0000158284 00000 n 
-0000158462 00000 n 
-0000158639 00000 n 
-0000158816 00000 n 
-0000159025 00000 n 
-0000163283 00000 n 
-0000163459 00000 n 
-0000163635 00000 n 
-0000163810 00000 n 
-0000163986 00000 n 
-0000164195 00000 n 
-0000168440 00000 n 
-0000168615 00000 n 
-0000168793 00000 n 
-0000168970 00000 n 
-0000169146 00000 n 
-0000169319 00000 n 
-0000169535 00000 n 
-0000173931 00000 n 
-0000174107 00000 n 
-0000174282 00000 n 
-0000174459 00000 n 
-0000174633 00000 n 
-0000174842 00000 n 
-0000179059 00000 n 
-0000179236 00000 n 
-0000179412 00000 n 
-0000179590 00000 n 
-0000179766 00000 n 
-0000179976 00000 n 
-0000184224 00000 n 
-0000184401 00000 n 
-0000184577 00000 n 
-0000184755 00000 n 
-0000184962 00000 n 
-0000189327 00000 n 
-0000189504 00000 n 
-0000189682 00000 n 
-0000189859 00000 n 
-0000190036 00000 n 
-0000190251 00000 n 
-0000194601 00000 n 
-0000194777 00000 n 
-0000194968 00000 n 
-0000195412 00000 n 
-0000195585 00000 n 
-0000198553 00000 n 
-0000198726 00000 n 
-0000200872 00000 n 
-0000201045 00000 n 
-0000204956 00000 n 
-0000205129 00000 n 
-0000210362 00000 n 
-0000210535 00000 n 
-0000222747 00000 n 
-0000222920 00000 n 
-0000226601 00000 n 
-0000226774 00000 n 
-0000231289 00000 n 
-0000231462 00000 n 
-0000238828 00000 n 
-0000239001 00000 n 
-0000252627 00000 n 
-0000252800 00000 n 
-0000257096 00000 n 
-0000257269 00000 n 
-0000264313 00000 n 
-0000264486 00000 n 
-0000274892 00000 n 
-0000275065 00000 n 
-0000279192 00000 n 
-0000279365 00000 n 
-0000284331 00000 n 
-0000284504 00000 n 
-0000297349 00000 n 
-0000297522 00000 n 
-0000300070 00000 n 
-0000300243 00000 n 
-0000300418 00000 n 
-0000300593 00000 n 
-0000300766 00000 n 
-0000300939 00000 n 
-0000301112 00000 n 
-0000301343 00000 n 
-0000307822 00000 n 
-0000307996 00000 n 
-0000308171 00000 n 
-0000308396 00000 n 
-0000308620 00000 n 
-0000308845 00000 n 
-0000309069 00000 n 
-0000309247 00000 n 
-0000309422 00000 n 
-0000309669 00000 n 
-0000314066 00000 n 
-0000314244 00000 n 
-0000314421 00000 n 
-0000314599 00000 n 
-0000314806 00000 n 
-0000319177 00000 n 
-0000319354 00000 n 
-0000319532 00000 n 
-0000319709 00000 n 
-0000319887 00000 n 
-0000320062 00000 n 
-0000320285 00000 n 
-0000324477 00000 n 
-0000324655 00000 n 
-0000324832 00000 n 
-0000325009 00000 n 
-0000325183 00000 n 
-0000325398 00000 n 
-0000329789 00000 n 
-0000329967 00000 n 
-0000330144 00000 n 
-0000330322 00000 n 
-0000330499 00000 n 
-0000330714 00000 n 
-0000334890 00000 n 
-0000335067 00000 n 
-0000335243 00000 n 
-0000335420 00000 n 
-0000335596 00000 n 
-0000335772 00000 n 
-0000335995 00000 n 
-0000340245 00000 n 
-0000340422 00000 n 
-0000340600 00000 n 
-0000340777 00000 n 
-0000340953 00000 n 
-0000341168 00000 n 
-0000345564 00000 n 
-0000345741 00000 n 
-0000345919 00000 n 
-0000346096 00000 n 
-0000346303 00000 n 
-0000350290 00000 n 
-0000350463 00000 n 
-0000353328 00000 n 
-0000353501 00000 n 
-0000355790 00000 n 
-0000355963 00000 n 
-0000360078 00000 n 
-0000360251 00000 n 
-0000366283 00000 n 
-0000366456 00000 n 
-0000380088 00000 n 
-0000380261 00000 n 
-0000390389 00000 n 
-0000390562 00000 n 
-0000394720 00000 n 
-0000394893 00000 n 
-0000401406 00000 n 
-0000401579 00000 n 
-0000411891 00000 n 
-0000412064 00000 n 
-0000415772 00000 n 
-0000415945 00000 n 
-0000420439 00000 n 
-0000420612 00000 n 
-0000430849 00000 n 
-0000431022 00000 n 
-0000436926 00000 n 
-0000437099 00000 n 
-0000441450 00000 n 
-0000441623 00000 n 
-0000454209 00000 n 
-0000454382 00000 n 
-0000456524 00000 n 
-0000456697 00000 n 
-0000456870 00000 n 
-0000457080 00000 n 
-0000457255 00000 n 
-0000457430 00000 n 
-0000457605 00000 n 
-0000457836 00000 n 
-0000464665 00000 n 
-0000464847 00000 n 
-0000465025 00000 n 
-0000465202 00000 n 
-0000465379 00000 n 
-0000465594 00000 n 
-0000470045 00000 n 
-0000470221 00000 n 
-0000470399 00000 n 
-0000470576 00000 n 
-0000470754 00000 n 
-0000470930 00000 n 
-0000471153 00000 n 
-0000475281 00000 n 
-0000475458 00000 n 
-0000475634 00000 n 
-0000475812 00000 n 
-0000475988 00000 n 
-0000476203 00000 n 
-0000480480 00000 n 
-0000480659 00000 n 
-0000480837 00000 n 
-0000481015 00000 n 
-0000481192 00000 n 
-0000481367 00000 n 
-0000481590 00000 n 
-0000485723 00000 n 
-0000485899 00000 n 
-0000486076 00000 n 
-0000486252 00000 n 
-0000486428 00000 n 
-0000486643 00000 n 
-0000490888 00000 n 
-0000491065 00000 n 
-0000491244 00000 n 
-0000491422 00000 n 
-0000491598 00000 n 
-0000491813 00000 n 
-0000496126 00000 n 
-0000496302 00000 n 
-0000496479 00000 n 
-0000496655 00000 n 
-0000496833 00000 n 
-0000497048 00000 n 
-0000501250 00000 n 
-0000501427 00000 n 
-0000501618 00000 n 
-0000503119 00000 n 
-0000503292 00000 n 
-0000506267 00000 n 
-0000506440 00000 n 
-0000508688 00000 n 
-0000508861 00000 n 
-0000512793 00000 n 
-0000512966 00000 n 
-0000517756 00000 n 
-0000517929 00000 n 
-0000530162 00000 n 
-0000530335 00000 n 
-0000534394 00000 n 
-0000534567 00000 n 
-0000538862 00000 n 
-0000539035 00000 n 
-0000552710 00000 n 
-0000552883 00000 n 
-0000566456 00000 n 
-0000566629 00000 n 
-0000571058 00000 n 
-0000571231 00000 n 
-0000577514 00000 n 
-0000577687 00000 n 
-0000590247 00000 n 
-0000590420 00000 n 
-0000594165 00000 n 
-0000594338 00000 n 
-0000598854 00000 n 
-0000599027 00000 n 
-0000609246 00000 n 
-0000609419 00000 n 
-0000618170 00000 n 
-0000618343 00000 n 
-0000622809 00000 n 
-0000622982 00000 n 
-0000623157 00000 n 
-0000623332 00000 n 
-0000623505 00000 n 
-0000623670 00000 n 
-0000623835 00000 n 
-0000623990 00000 n 
-0000624184 00000 n 
-0000624357 00000 n 
-0000624532 00000 n 
-0000624795 00000 n 
-0000629473 00000 n 
-0000629649 00000 n 
-0000629826 00000 n 
-0000630002 00000 n 
-0000630177 00000 n 
-0000630392 00000 n 
-0000634693 00000 n 
-0000634869 00000 n 
-0000635047 00000 n 
-0000635224 00000 n 
-0000635402 00000 n 
-0000635617 00000 n 
-0000639892 00000 n 
-0000640069 00000 n 
-0000640248 00000 n 
-0000640426 00000 n 
-0000640603 00000 n 
-0000640818 00000 n 
-0000645149 00000 n 
-0000645326 00000 n 
-0000645504 00000 n 
-0000645681 00000 n 
-0000645859 00000 n 
-0000646074 00000 n 
-0000650277 00000 n 
-0000650454 00000 n 
-0000650632 00000 n 
-0000650809 00000 n 
-0000650987 00000 n 
-0000651202 00000 n 
-0000655493 00000 n 
-0000655670 00000 n 
-0000655848 00000 n 
-0000656025 00000 n 
-0000656203 00000 n 
-0000656418 00000 n 
-0000660624 00000 n 
-0000660801 00000 n 
-0000660979 00000 n 
-0000661156 00000 n 
-0000661334 00000 n 
-0000661549 00000 n 
-0000665723 00000 n 
-0000665900 00000 n 
-0000666091 00000 n 
-0000667064 00000 n 
-0000667237 00000 n 
-0000670074 00000 n 
-0000670247 00000 n 
-0000672527 00000 n 
-0000672700 00000 n 
-0000676894 00000 n 
-0000677067 00000 n 
-0000683030 00000 n 
-0000683203 00000 n 
-0000696854 00000 n 
-0000697027 00000 n 
-0000707378 00000 n 
-0000707551 00000 n 
-0000710996 00000 n 
-0000711169 00000 n 
-0000715697 00000 n 
-0000715870 00000 n 
-0000725011 00000 n 
-0000725184 00000 n 
-0000732933 00000 n 
-0000733106 00000 n 
-0000737626 00000 n 
-0000737799 00000 n 
-0000750406 00000 n 
-0000750579 00000 n 
-0000755341 00000 n 
-0000755514 00000 n 
-0000760082 00000 n 
-0000760255 00000 n 
-0000771941 00000 n 
-0000772114 00000 n 
-0000777496 00000 n 
-0000777669 00000 n 
-0000777842 00000 n 
-0000778015 00000 n 
-0000778188 00000 n 
-0000778361 00000 n 
-0000778532 00000 n 
-0000778763 00000 n 
-0000784304 00000 n 
-0000784479 00000 n 
-0000784654 00000 n 
-0000784828 00000 n 
-0000785051 00000 n 
-0000785273 00000 n 
-0000785445 00000 n 
-0000785617 00000 n 
-0000785795 00000 n 
-0000786042 00000 n 
-0000790378 00000 n 
-0000790555 00000 n 
-0000790733 00000 n 
-0000790910 00000 n 
-0000791087 00000 n 
-0000791302 00000 n 
-0000795576 00000 n 
-0000795752 00000 n 
-0000795929 00000 n 
-0000796105 00000 n 
-0000796283 00000 n 
-0000796498 00000 n 
-0000800802 00000 n 
-0000800979 00000 n 
-0000801158 00000 n 
-0000801336 00000 n 
-0000801513 00000 n 
-0000801728 00000 n 
-0000806031 00000 n 
-0000806207 00000 n 
-0000806384 00000 n 
-0000806560 00000 n 
-0000806738 00000 n 
-0000806913 00000 n 
-0000807136 00000 n 
-0000811408 00000 n 
-0000811586 00000 n 
-0000811763 00000 n 
-0000811940 00000 n 
-0000812147 00000 n 
-0000816336 00000 n 
-0000816512 00000 n 
-0000816690 00000 n 
-0000816867 00000 n 
-0000817045 00000 n 
-0000817260 00000 n 
-0000821403 00000 n 
-0000821580 00000 n 
-0000821758 00000 n 
-0000821935 00000 n 
-0000822113 00000 n 
-0000822288 00000 n 
-0000822511 00000 n 
-0000826772 00000 n 
-0000826945 00000 n 
-0000829838 00000 n 
-0000830011 00000 n 
-0000832272 00000 n 
-0000832445 00000 n 
-0000836385 00000 n 
-0000836558 00000 n 
-0000841121 00000 n 
-0000841294 00000 n 
-0000854913 00000 n 
-0000855086 00000 n 
-0000868711 00000 n 
-0000868884 00000 n 
-0000875664 00000 n 
-0000875837 00000 n 
-0000880296 00000 n 
-0000880469 00000 n 
-0000889843 00000 n 
-0000890016 00000 n 
-0000898154 00000 n 
-0000898327 00000 n 
-0000902356 00000 n 
-0000902529 00000 n 
-0000907050 00000 n 
-0000907223 00000 n 
-0000919307 00000 n 
-0000919480 00000 n 
-0000925078 00000 n 
-0000925251 00000 n 
-0000929776 00000 n 
-0000929949 00000 n 
-0000942947 00000 n 
-0000943120 00000 n 
-0000945394 00000 n 
-0000945567 00000 n 
-0000945740 00000 n 
-0000945913 00000 n 
-0000946135 00000 n 
-0000946356 00000 n 
-0000946531 00000 n 
-0000946762 00000 n 
-0000953356 00000 n 
-0000953531 00000 n 
-0000953705 00000 n 
-0000953879 00000 n 
-0000954052 00000 n 
-0000954275 00000 n 
-0000954497 00000 n 
-0000954676 00000 n 
-0000954852 00000 n 
-0000955099 00000 n 
-0000959746 00000 n 
-0000959924 00000 n 
-0000960101 00000 n 
-0000960279 00000 n 
-0000960454 00000 n 
-0000960669 00000 n 
-0000964842 00000 n 
-0000965020 00000 n 
-0000965197 00000 n 
-0000965374 00000 n 
-0000965550 00000 n 
-0000965726 00000 n 
-0000965949 00000 n 
-0000970093 00000 n 
-0000970270 00000 n 
-0000970447 00000 n 
-0000970623 00000 n 
-0000970830 00000 n 
-0000975219 00000 n 
-0000975397 00000 n 
-0000975574 00000 n 
-0000975752 00000 n 
-0000975929 00000 n 
-0000976105 00000 n 
-0000976328 00000 n 
-0000980529 00000 n 
-0000980706 00000 n 
-0000980884 00000 n 
-0000981061 00000 n 
-0000981237 00000 n 
-0000981452 00000 n 
-0000985674 00000 n 
-0000985851 00000 n 
-0000986029 00000 n 
-0000986206 00000 n 
-0000986382 00000 n 
-0000986597 00000 n 
-0000990954 00000 n 
-0000991131 00000 n 
-0000991309 00000 n 
-0000991486 00000 n 
-0000991693 00000 n 
-0000995046 00000 n 
-0000995219 00000 n 
-0000998255 00000 n 
-0000998428 00000 n 
-0001000673 00000 n 
-0001000846 00000 n 
-0001004373 00000 n 
-0001004546 00000 n 
-0001009096 00000 n 
-0001009269 00000 n 
-0001018970 00000 n 
-0001019143 00000 n 
-0001031893 00000 n 
-0001032066 00000 n 
-0001036171 00000 n 
-0001036344 00000 n 
-0001040622 00000 n 
-0001040795 00000 n 
-0001053643 00000 n 
-0001053816 00000 n 
-0001066207 00000 n 
-0001066380 00000 n 
-0001078755 00000 n 
-0001078928 00000 n 
-0001091328 00000 n 
-0001091501 00000 n 
-0001103886 00000 n 
-0001104059 00000 n 
-0001116420 00000 n 
-0001116593 00000 n 
-0001128969 00000 n 
-0001129142 00000 n 
-0001141529 00000 n 
-0001141702 00000 n 
-0001154441 00000 n 
-0001154614 00000 n 
-0001167047 00000 n 
-0001167220 00000 n 
-0001179624 00000 n 
-0001179797 00000 n 
-0001192212 00000 n 
-0001192385 00000 n 
-0001205178 00000 n 
-0001205351 00000 n 
-0001217792 00000 n 
-0001217965 00000 n 
-0001230402 00000 n 
-0001230575 00000 n 
-0001242985 00000 n 
-0001243158 00000 n 
-0001255633 00000 n 
-0001255806 00000 n 
-0001268628 00000 n 
-0001268801 00000 n 
-0001281237 00000 n 
-0001281410 00000 n 
-0001293862 00000 n 
-0001294035 00000 n 
-0001306430 00000 n 
-0001306603 00000 n 
-0001319029 00000 n 
-0001319202 00000 n 
-0001331662 00000 n 
-0001331835 00000 n 
-0001344258 00000 n 
-0001344431 00000 n 
-0001356905 00000 n 
-0001357078 00000 n 
-0001369761 00000 n 
-0001369934 00000 n 
-0001382330 00000 n 
-0001382503 00000 n 
-0001395320 00000 n 
-0001395493 00000 n 
-0001407915 00000 n 
-0001408088 00000 n 
-0001420493 00000 n 
-0001420666 00000 n 
-0001433091 00000 n 
-0001433264 00000 n 
-0001445651 00000 n 
-0001445824 00000 n 
-0001458213 00000 n 
-0001458386 00000 n 
-0001470841 00000 n 
-0001471014 00000 n 
-0001483440 00000 n 
-0001483613 00000 n 
-0001492349 00000 n 
-0001492522 00000 n 
-0001496847 00000 n 
-0001497020 00000 n 
-0001503566 00000 n 
-0001503739 00000 n 
-0001517342 00000 n 
-0001517515 00000 n 
-0001521818 00000 n 
-0001521991 00000 n 
-0001529670 00000 n 
-0001529843 00000 n 
-0001543865 00000 n 
-0001544038 00000 n 
-0001550673 00000 n 
-0001550846 00000 n 
-0001551021 00000 n 
-0001551195 00000 n 
-0001551402 00000 n 
-0001557496 00000 n 
-0001557662 00000 n 
-0001557841 00000 n 
-0001558064 00000 n 
-0001558286 00000 n 
-0001558515 00000 n 
-0001558743 00000 n 
-0001558917 00000 n 
-0001559140 00000 n 
-0001559362 00000 n 
-0001559585 00000 n 
-0001559807 00000 n 
-0001559982 00000 n 
-0001560261 00000 n 
-0001564699 00000 n 
-0001564875 00000 n 
-0001565052 00000 n 
-0001565228 00000 n 
-0001565404 00000 n 
-0001565619 00000 n 
-0001569764 00000 n 
-0001569941 00000 n 
-0001570119 00000 n 
-0001570296 00000 n 
-0001570474 00000 n 
-0001570689 00000 n 
-0001574897 00000 n 
-0001575074 00000 n 
-0001575252 00000 n 
-0001575429 00000 n 
-0001575607 00000 n 
-0001575822 00000 n 
-0001580040 00000 n 
-0001580217 00000 n 
-0001580394 00000 n 
-0001580570 00000 n 
-0001580749 00000 n 
-0001580964 00000 n 
-0001585172 00000 n 
-0001585350 00000 n 
-0001585528 00000 n 
-0001585705 00000 n 
-0001585883 00000 n 
-0001586098 00000 n 
-0001590322 00000 n 
-0001590499 00000 n 
-0001590677 00000 n 
-0001590854 00000 n 
-0001591033 00000 n 
-0001591248 00000 n 
-0001595596 00000 n 
-0001595774 00000 n 
-0001595952 00000 n 
-0001596129 00000 n 
-0001596306 00000 n 
-0001596521 00000 n 
-0001600680 00000 n 
-0001600856 00000 n 
-0001601047 00000 n 
-0001601533 00000 n 
-0001601706 00000 n 
-0001604575 00000 n 
-0001604748 00000 n 
-0001607020 00000 n 
-0001607193 00000 n 
-0001611183 00000 n 
-0001611356 00000 n 
-0001617895 00000 n 
-0001618068 00000 n 
-0001637444 00000 n 
-0001637617 00000 n 
-0001656919 00000 n 
-0001657092 00000 n 
-0001676454 00000 n 
-0001676627 00000 n 
-0001696103 00000 n 
-0001696276 00000 n 
-0001715701 00000 n 
-0001715874 00000 n 
-0001731750 00000 n 
-0001731923 00000 n 
-0001735699 00000 n 
-0001735872 00000 n 
-0001740385 00000 n 
-0001740558 00000 n 
-0001752621 00000 n 
-0001752794 00000 n 
-0001759988 00000 n 
-0001760161 00000 n 
-0001764685 00000 n 
-0001764858 00000 n 
-0001774713 00000 n 
-0001774886 00000 n 
-0001784642 00000 n 
-0001784815 00000 n 
-0001789113 00000 n 
-0001789286 00000 n 
-0001796112 00000 n 
-0001796285 00000 n 
-0001809880 00000 n 
-0001810053 00000 n 
-0001813835 00000 n 
-0001814008 00000 n 
-0001814181 00000 n 
-0001814356 00000 n 
-0001814530 00000 n 
-0001814756 00000 n 
-0001814981 00000 n 
-0001815155 00000 n 
-0001815394 00000 n 
-0001821962 00000 n 
-0001822143 00000 n 
-0001822324 00000 n 
-0001822502 00000 n 
-0001822679 00000 n 
-0001822857 00000 n 
-0001823080 00000 n 
-0001827468 00000 n 
-0001827645 00000 n 
-0001827823 00000 n 
-0001828000 00000 n 
-0001828177 00000 n 
-0001828392 00000 n 
-0001832690 00000 n 
-0001832866 00000 n 
-0001833044 00000 n 
-0001833221 00000 n 
-0001833398 00000 n 
-0001833613 00000 n 
-0001837932 00000 n 
-0001838108 00000 n 
-0001838287 00000 n 
-0001838465 00000 n 
-0001838642 00000 n 
-0001838857 00000 n 
-0001843191 00000 n 
-0001843367 00000 n 
-0001843545 00000 n 
-0001843722 00000 n 
-0001843899 00000 n 
-0001844114 00000 n 
-0001848395 00000 n 
-0001848571 00000 n 
-0001848748 00000 n 
-0001848924 00000 n 
-0001849102 00000 n 
-0001849277 00000 n 
-0001849500 00000 n 
-0001853861 00000 n 
-0001854039 00000 n 
-0001854216 00000 n 
-0001854393 00000 n 
-0001854569 00000 n 
-0001854745 00000 n 
-0001854968 00000 n 
-0001859031 00000 n 
-0001859208 00000 n 
-0001859399 00000 n 
-0001860931 00000 n 
-0001861104 00000 n 
-0001864139 00000 n 
-0001864312 00000 n 
-0001866575 00000 n 
-0001866748 00000 n 
-0001870912 00000 n 
-0001871085 00000 n 
-0001877113 00000 n 
-0001877286 00000 n 
-0001889290 00000 n 
-0001889463 00000 n 
-0001893536 00000 n 
-0001893709 00000 n 
-0001898071 00000 n 
-0001898244 00000 n 
-0001911006 00000 n 
-0001911179 00000 n 
-0001914723 00000 n 
-0001914896 00000 n 
-0001919279 00000 n 
-0001919452 00000 n 
-0001926559 00000 n 
-0001926732 00000 n 
-0001937852 00000 n 
-0001938025 00000 n 
-0001942537 00000 n 
-0001942710 00000 n 
-0001950093 00000 n 
-0001950266 00000 n 
-0001960093 00000 n 
-0001960268 00000 n 
-0001960459 00000 n 
-0001960658 00000 n 
-0001965731 00000 n 
-0001965915 00000 n 
-0001966088 00000 n 
-0001966261 00000 n 
-0001966435 00000 n 
-0001966608 00000 n 
-0001966789 00000 n 
-0001966970 00000 n 
-0001967210 00000 n 
-0001967450 00000 n 
-0001967690 00000 n 
-0001967929 00000 n 
-0001968200 00000 n 
-0001972533 00000 n 
-0001972757 00000 n 
-0001972980 00000 n 
-0001973202 00000 n 
-0001973423 00000 n 
-0001973645 00000 n 
-0001973866 00000 n 
-0001974041 00000 n 
-0001974215 00000 n 
-0001974389 00000 n 
-0001974563 00000 n 
-0001974736 00000 n 
-0001974955 00000 n 
-0001975173 00000 n 
-0001975460 00000 n 
-0001979669 00000 n 
-0001979892 00000 n 
-0001980114 00000 n 
-0001980292 00000 n 
-0001980469 00000 n 
-0001980647 00000 n 
-0001980870 00000 n 
-0001985010 00000 n 
-0001985187 00000 n 
-0001985364 00000 n 
-0001985540 00000 n 
-0001985718 00000 n 
-0001985933 00000 n 
-0001990317 00000 n 
-0001990494 00000 n 
-0001990672 00000 n 
-0001990849 00000 n 
-0001991026 00000 n 
-0001991241 00000 n 
-0001995411 00000 n 
-0001995587 00000 n 
-0001995765 00000 n 
-0001995942 00000 n 
-0001996119 00000 n 
-0001996293 00000 n 
-0001996516 00000 n 
-0002000851 00000 n 
-0002001030 00000 n 
-0002001208 00000 n 
-0002001386 00000 n 
-0002001563 00000 n 
-0002001778 00000 n 
-0002005871 00000 n 
-0002006049 00000 n 
-0002006226 00000 n 
-0002006404 00000 n 
-0002006581 00000 n 
-0002006757 00000 n 
-0002006980 00000 n 
-0002011192 00000 n 
-0002011369 00000 n 
-0002011547 00000 n 
-0002011724 00000 n 
-0002011900 00000 n 
-0002012115 00000 n 
-0002016375 00000 n 
-0002016552 00000 n 
-0002016743 00000 n 
-0002018381 00000 n 
-0002018554 00000 n 
-0002021604 00000 n 
-0002021777 00000 n 
-0002024069 00000 n 
-0002024242 00000 n 
-0002028127 00000 n 
-0002028300 00000 n 
-0002033752 00000 n 
-0002033925 00000 n 
-0002047071 00000 n 
-0002047244 00000 n 
-0002050883 00000 n 
-0002051056 00000 n 
-0002055357 00000 n 
-0002055530 00000 n 
-0002062534 00000 n 
-0002062707 00000 n 
-0002073991 00000 n 
-0002074164 00000 n 
-0002078712 00000 n 
-0002078885 00000 n 
-0002088140 00000 n 
-0002088313 00000 n 
-0002097868 00000 n 
-0002098041 00000 n 
-0002102361 00000 n 
-0002102534 00000 n 
-0002109262 00000 n 
-0002109435 00000 n 
-0002121301 00000 n 
-0002121474 00000 n 
-0002123664 00000 n 
-0002123837 00000 n 
-0002124010 00000 n 
-0002124236 00000 n 
-0002124462 00000 n 
-0002124637 00000 n 
-0002124811 00000 n 
-0002124983 00000 n 
-0002125222 00000 n 
-0002131915 00000 n 
-0002132100 00000 n 
-0002132289 00000 n 
-0002132467 00000 n 
-0002132644 00000 n 
-0002132822 00000 n 
-0002133045 00000 n 
-0002137534 00000 n 
-0002137711 00000 n 
-0002137888 00000 n 
-0002138064 00000 n 
-0002138241 00000 n 
-0002138457 00000 n 
-0002142830 00000 n 
-0002143007 00000 n 
-0002143185 00000 n 
-0002143362 00000 n 
-0002143540 00000 n 
-0002143761 00000 n 
-0002147973 00000 n 
-0002148150 00000 n 
-0002148329 00000 n 
-0002148507 00000 n 
-0002148686 00000 n 
-0002148907 00000 n 
-0002153171 00000 n 
-0002153349 00000 n 
-0002153529 00000 n 
-0002153708 00000 n 
-0002153887 00000 n 
-0002154108 00000 n 
-0002158172 00000 n 
-0002158350 00000 n 
-0002158530 00000 n 
-0002158709 00000 n 
-0002158887 00000 n 
-0002159108 00000 n 
-0002163409 00000 n 
-0002163586 00000 n 
-0002163764 00000 n 
-0002163941 00000 n 
-0002164120 00000 n 
-0002164341 00000 n 
-0002168691 00000 n 
-0002168869 00000 n 
-0002169048 00000 n 
-0002169226 00000 n 
-0002169438 00000 n 
-0002171706 00000 n 
-0002171881 00000 n 
-0002174869 00000 n 
-0002175044 00000 n 
-0002177448 00000 n 
-0002177623 00000 n 
-0002181807 00000 n 
-0002181982 00000 n 
-0002187688 00000 n 
-0002187863 00000 n 
-0002201474 00000 n 
-0002201649 00000 n 
-0002205742 00000 n 
-0002205917 00000 n 
-0002210048 00000 n 
-0002210223 00000 n 
-0002215347 00000 n 
-0002215522 00000 n 
-0002229255 00000 n 
-0002229430 00000 n 
-0002233980 00000 n 
-0002234155 00000 n 
-0002238620 00000 n 
-0002238795 00000 n 
-0002250417 00000 n 
-0002250592 00000 n 
-0002257343 00000 n 
-0002257518 00000 n 
-0002262018 00000 n 
-0002262193 00000 n 
-0002274564 00000 n 
-0002274739 00000 n 
-0002280858 00000 n 
-0002281032 00000 n 
-0002281208 00000 n 
-0002281384 00000 n 
-0002281596 00000 n 
-0002288008 00000 n 
-0002288182 00000 n 
-0002288356 00000 n 
-0002288582 00000 n 
-0002288808 00000 n 
-0002288983 00000 n 
-0002289162 00000 n 
-0002289340 00000 n 
-0002289588 00000 n 
-0002294034 00000 n 
-0002294213 00000 n 
-0002294391 00000 n 
-0002294570 00000 n 
-0002294747 00000 n 
-0002294968 00000 n 
-0002299231 00000 n 
-0002299410 00000 n 
-0002299588 00000 n 
-0002299766 00000 n 
-0002299943 00000 n 
-0002300164 00000 n 
-0002304321 00000 n 
-0002304500 00000 n 
-0002304678 00000 n 
-0002304857 00000 n 
-0002305035 00000 n 
-0002305211 00000 n 
-0002305441 00000 n 
-0002309752 00000 n 
-0002309929 00000 n 
-0002310107 00000 n 
-0002310284 00000 n 
-0002310460 00000 n 
-0002310681 00000 n 
-0002315020 00000 n 
-0002315197 00000 n 
-0002315376 00000 n 
-0002315554 00000 n 
-0002315730 00000 n 
-0002315951 00000 n 
-0002320093 00000 n 
-0002320270 00000 n 
-0002320449 00000 n 
-0002320627 00000 n 
-0002320806 00000 n 
-0002321027 00000 n 
-0002325175 00000 n 
-0002325353 00000 n 
-0002325531 00000 n 
-0002325708 00000 n 
-0002325920 00000 n 
-0002329254 00000 n 
-0002329429 00000 n 
-0002332416 00000 n 
-0002332591 00000 n 
-0002334949 00000 n 
-0002335124 00000 n 
-0002339232 00000 n 
-0002339407 00000 n 
-0002345416 00000 n 
-0002345591 00000 n 
-0002358337 00000 n 
-0002358512 00000 n 
-0002362643 00000 n 
-0002362818 00000 n 
-0002367205 00000 n 
-0002367380 00000 n 
-0002380020 00000 n 
-0002380195 00000 n 
-0002383594 00000 n 
-0002383769 00000 n 
-0002387988 00000 n 
-0002388163 00000 n 
-0002394252 00000 n 
-0002394427 00000 n 
-0002405664 00000 n 
-0002405839 00000 n 
-0002410340 00000 n 
-0002410515 00000 n 
-0002420241 00000 n 
-0002420416 00000 n 
-0002433974 00000 n 
-0002434149 00000 n 
-0002445949 00000 n 
-0002446124 00000 n 
-0002450457 00000 n 
-0002450633 00000 n 
-0002450807 00000 n 
-0002450981 00000 n 
-0002451157 00000 n 
-0002451332 00000 n 
-0002451507 00000 n 
-0002451681 00000 n 
-0002451860 00000 n 
-0002452117 00000 n 
-0002456589 00000 n 
-0002456767 00000 n 
-0002456946 00000 n 
-0002457124 00000 n 
-0002457302 00000 n 
-0002457523 00000 n 
-0002461810 00000 n 
-0002461987 00000 n 
-0002462167 00000 n 
-0002462346 00000 n 
-0002462525 00000 n 
-0002462746 00000 n 
-0002467022 00000 n 
-0002467200 00000 n 
-0002467378 00000 n 
-0002467555 00000 n 
-0002467734 00000 n 
-0002467955 00000 n 
-0002472177 00000 n 
-0002472355 00000 n 
-0002472534 00000 n 
-0002472712 00000 n 
-0002472891 00000 n 
-0002473112 00000 n 
-0002477393 00000 n 
-0002477571 00000 n 
-0002477750 00000 n 
-0002477928 00000 n 
-0002478107 00000 n 
-0002478328 00000 n 
-0002482506 00000 n 
-0002482684 00000 n 
-0002482863 00000 n 
-0002483041 00000 n 
-0002483220 00000 n 
-0002483441 00000 n 
-0002487627 00000 n 
-0002487805 00000 n 
-0002487984 00000 n 
-0002488162 00000 n 
-0002488341 00000 n 
-0002488562 00000 n 
-0002492878 00000 n 
-0002493056 00000 n 
-0002493250 00000 n 
-0002494092 00000 n 
-0002494267 00000 n 
+0000008699 00000 n 
+0000008870 00000 n 
+0000011378 00000 n 
+0000011549 00000 n 
+0000014472 00000 n 
+0000014643 00000 n 
+0000016907 00000 n 
+0000017078 00000 n 
+0000021068 00000 n 
+0000021239 00000 n 
+0000026696 00000 n 
+0000026867 00000 n 
+0000039241 00000 n 
+0000039412 00000 n 
+0000043941 00000 n 
+0000044112 00000 n 
+0000051410 00000 n 
+0000051581 00000 n 
+0000065369 00000 n 
+0000065540 00000 n 
+0000079231 00000 n 
+0000079402 00000 n 
+0000089753 00000 n 
+0000089924 00000 n 
+0000094094 00000 n 
+0000094265 00000 n 
+0000100962 00000 n 
+0000101133 00000 n 
+0000113335 00000 n 
+0000113506 00000 n 
+0000117341 00000 n 
+0000117512 00000 n 
+0000121955 00000 n 
+0000122126 00000 n 
+0000132569 00000 n 
+0000132740 00000 n 
+0000141847 00000 n 
+0000142018 00000 n 
+0000144063 00000 n 
+0000144235 00000 n 
+0000144407 00000 n 
+0000144581 00000 n 
+0000144754 00000 n 
+0000144928 00000 n 
+0000145153 00000 n 
+0000145378 00000 n 
+0000145608 00000 n 
+0000152133 00000 n 
+0000152314 00000 n 
+0000152535 00000 n 
+0000152755 00000 n 
+0000152978 00000 n 
+0000153200 00000 n 
+0000153373 00000 n 
+0000153545 00000 n 
+0000153716 00000 n 
+0000153892 00000 n 
+0000154136 00000 n 
+0000158597 00000 n 
+0000158772 00000 n 
+0000158950 00000 n 
+0000159127 00000 n 
+0000159304 00000 n 
+0000159513 00000 n 
+0000163771 00000 n 
+0000163947 00000 n 
+0000164123 00000 n 
+0000164298 00000 n 
+0000164474 00000 n 
+0000164683 00000 n 
+0000168928 00000 n 
+0000169103 00000 n 
+0000169281 00000 n 
+0000169458 00000 n 
+0000169634 00000 n 
+0000169807 00000 n 
+0000170023 00000 n 
+0000174419 00000 n 
+0000174595 00000 n 
+0000174770 00000 n 
+0000174947 00000 n 
+0000175121 00000 n 
+0000175330 00000 n 
+0000179547 00000 n 
+0000179724 00000 n 
+0000179900 00000 n 
+0000180078 00000 n 
+0000180254 00000 n 
+0000180464 00000 n 
+0000184712 00000 n 
+0000184889 00000 n 
+0000185065 00000 n 
+0000185243 00000 n 
+0000185450 00000 n 
+0000189815 00000 n 
+0000189992 00000 n 
+0000190170 00000 n 
+0000190347 00000 n 
+0000190524 00000 n 
+0000190739 00000 n 
+0000195089 00000 n 
+0000195265 00000 n 
+0000195456 00000 n 
+0000195900 00000 n 
+0000196073 00000 n 
+0000199041 00000 n 
+0000199214 00000 n 
+0000201360 00000 n 
+0000201533 00000 n 
+0000205444 00000 n 
+0000205617 00000 n 
+0000210850 00000 n 
+0000211023 00000 n 
+0000223235 00000 n 
+0000223408 00000 n 
+0000227089 00000 n 
+0000227262 00000 n 
+0000231777 00000 n 
+0000231950 00000 n 
+0000239316 00000 n 
+0000239489 00000 n 
+0000253115 00000 n 
+0000253288 00000 n 
+0000257584 00000 n 
+0000257757 00000 n 
+0000264801 00000 n 
+0000264974 00000 n 
+0000275380 00000 n 
+0000275553 00000 n 
+0000279680 00000 n 
+0000279853 00000 n 
+0000284819 00000 n 
+0000284992 00000 n 
+0000297837 00000 n 
+0000298010 00000 n 
+0000300558 00000 n 
+0000300731 00000 n 
+0000300906 00000 n 
+0000301081 00000 n 
+0000301254 00000 n 
+0000301427 00000 n 
+0000301600 00000 n 
+0000301831 00000 n 
+0000308310 00000 n 
+0000308484 00000 n 
+0000308659 00000 n 
+0000308884 00000 n 
+0000309108 00000 n 
+0000309333 00000 n 
+0000309557 00000 n 
+0000309735 00000 n 
+0000309910 00000 n 
+0000310157 00000 n 
+0000314554 00000 n 
+0000314732 00000 n 
+0000314909 00000 n 
+0000315087 00000 n 
+0000315294 00000 n 
+0000319665 00000 n 
+0000319842 00000 n 
+0000320020 00000 n 
+0000320197 00000 n 
+0000320375 00000 n 
+0000320550 00000 n 
+0000320773 00000 n 
+0000324965 00000 n 
+0000325143 00000 n 
+0000325320 00000 n 
+0000325497 00000 n 
+0000325671 00000 n 
+0000325886 00000 n 
+0000330277 00000 n 
+0000330455 00000 n 
+0000330632 00000 n 
+0000330810 00000 n 
+0000330987 00000 n 
+0000331202 00000 n 
+0000335378 00000 n 
+0000335555 00000 n 
+0000335731 00000 n 
+0000335908 00000 n 
+0000336084 00000 n 
+0000336260 00000 n 
+0000336483 00000 n 
+0000340733 00000 n 
+0000340910 00000 n 
+0000341088 00000 n 
+0000341265 00000 n 
+0000341441 00000 n 
+0000341656 00000 n 
+0000346052 00000 n 
+0000346229 00000 n 
+0000346407 00000 n 
+0000346584 00000 n 
+0000346791 00000 n 
+0000350778 00000 n 
+0000350951 00000 n 
+0000353816 00000 n 
+0000353989 00000 n 
+0000356278 00000 n 
+0000356451 00000 n 
+0000360566 00000 n 
+0000360739 00000 n 
+0000366771 00000 n 
+0000366944 00000 n 
+0000380576 00000 n 
+0000380749 00000 n 
+0000390877 00000 n 
+0000391050 00000 n 
+0000395208 00000 n 
+0000395381 00000 n 
+0000401894 00000 n 
+0000402067 00000 n 
+0000412379 00000 n 
+0000412552 00000 n 
+0000416260 00000 n 
+0000416433 00000 n 
+0000420927 00000 n 
+0000421100 00000 n 
+0000431337 00000 n 
+0000431510 00000 n 
+0000437414 00000 n 
+0000437587 00000 n 
+0000441938 00000 n 
+0000442111 00000 n 
+0000454697 00000 n 
+0000454870 00000 n 
+0000457012 00000 n 
+0000457185 00000 n 
+0000457358 00000 n 
+0000457568 00000 n 
+0000457743 00000 n 
+0000457918 00000 n 
+0000458093 00000 n 
+0000458324 00000 n 
+0000465153 00000 n 
+0000465335 00000 n 
+0000465513 00000 n 
+0000465690 00000 n 
+0000465867 00000 n 
+0000466082 00000 n 
+0000470533 00000 n 
+0000470709 00000 n 
+0000470887 00000 n 
+0000471064 00000 n 
+0000471242 00000 n 
+0000471418 00000 n 
+0000471641 00000 n 
+0000475769 00000 n 
+0000475946 00000 n 
+0000476122 00000 n 
+0000476300 00000 n 
+0000476476 00000 n 
+0000476691 00000 n 
+0000480968 00000 n 
+0000481147 00000 n 
+0000481325 00000 n 
+0000481503 00000 n 
+0000481680 00000 n 
+0000481855 00000 n 
+0000482078 00000 n 
+0000486211 00000 n 
+0000486387 00000 n 
+0000486564 00000 n 
+0000486740 00000 n 
+0000486916 00000 n 
+0000487131 00000 n 
+0000491376 00000 n 
+0000491553 00000 n 
+0000491732 00000 n 
+0000491910 00000 n 
+0000492086 00000 n 
+0000492301 00000 n 
+0000496614 00000 n 
+0000496790 00000 n 
+0000496967 00000 n 
+0000497143 00000 n 
+0000497321 00000 n 
+0000497536 00000 n 
+0000501738 00000 n 
+0000501915 00000 n 
+0000502106 00000 n 
+0000503607 00000 n 
+0000503780 00000 n 
+0000506755 00000 n 
+0000506928 00000 n 
+0000509176 00000 n 
+0000509349 00000 n 
+0000513281 00000 n 
+0000513454 00000 n 
+0000518244 00000 n 
+0000518417 00000 n 
+0000530650 00000 n 
+0000530823 00000 n 
+0000534882 00000 n 
+0000535055 00000 n 
+0000539350 00000 n 
+0000539523 00000 n 
+0000553198 00000 n 
+0000553371 00000 n 
+0000566944 00000 n 
+0000567117 00000 n 
+0000571546 00000 n 
+0000571719 00000 n 
+0000578002 00000 n 
+0000578175 00000 n 
+0000590735 00000 n 
+0000590908 00000 n 
+0000594653 00000 n 
+0000594826 00000 n 
+0000599342 00000 n 
+0000599515 00000 n 
+0000609734 00000 n 
+0000609907 00000 n 
+0000618658 00000 n 
+0000618831 00000 n 
+0000623297 00000 n 
+0000623470 00000 n 
+0000623645 00000 n 
+0000623820 00000 n 
+0000623993 00000 n 
+0000624158 00000 n 
+0000624323 00000 n 
+0000624478 00000 n 
+0000624672 00000 n 
+0000624845 00000 n 
+0000625020 00000 n 
+0000625283 00000 n 
+0000629961 00000 n 
+0000630137 00000 n 
+0000630314 00000 n 
+0000630490 00000 n 
+0000630665 00000 n 
+0000630880 00000 n 
+0000635181 00000 n 
+0000635357 00000 n 
+0000635535 00000 n 
+0000635712 00000 n 
+0000635890 00000 n 
+0000636105 00000 n 
+0000640380 00000 n 
+0000640557 00000 n 
+0000640736 00000 n 
+0000640914 00000 n 
+0000641091 00000 n 
+0000641306 00000 n 
+0000645637 00000 n 
+0000645814 00000 n 
+0000645992 00000 n 
+0000646169 00000 n 
+0000646347 00000 n 
+0000646562 00000 n 
+0000650765 00000 n 
+0000650942 00000 n 
+0000651120 00000 n 
+0000651297 00000 n 
+0000651475 00000 n 
+0000651690 00000 n 
+0000655981 00000 n 
+0000656158 00000 n 
+0000656336 00000 n 
+0000656513 00000 n 
+0000656691 00000 n 
+0000656906 00000 n 
+0000661112 00000 n 
+0000661289 00000 n 
+0000661467 00000 n 
+0000661644 00000 n 
+0000661822 00000 n 
+0000662037 00000 n 
+0000666211 00000 n 
+0000666388 00000 n 
+0000666579 00000 n 
+0000667552 00000 n 
+0000667725 00000 n 
+0000670562 00000 n 
+0000670735 00000 n 
+0000673015 00000 n 
+0000673188 00000 n 
+0000677382 00000 n 
+0000677555 00000 n 
+0000683518 00000 n 
+0000683691 00000 n 
+0000697342 00000 n 
+0000697515 00000 n 
+0000707866 00000 n 
+0000708039 00000 n 
+0000711484 00000 n 
+0000711657 00000 n 
+0000716185 00000 n 
+0000716358 00000 n 
+0000725499 00000 n 
+0000725672 00000 n 
+0000733421 00000 n 
+0000733594 00000 n 
+0000738114 00000 n 
+0000738287 00000 n 
+0000750894 00000 n 
+0000751067 00000 n 
+0000755829 00000 n 
+0000756002 00000 n 
+0000760570 00000 n 
+0000760743 00000 n 
+0000772429 00000 n 
+0000772602 00000 n 
+0000777984 00000 n 
+0000778157 00000 n 
+0000778330 00000 n 
+0000778503 00000 n 
+0000778676 00000 n 
+0000778849 00000 n 
+0000779020 00000 n 
+0000779251 00000 n 
+0000784792 00000 n 
+0000784967 00000 n 
+0000785142 00000 n 
+0000785316 00000 n 
+0000785539 00000 n 
+0000785761 00000 n 
+0000785933 00000 n 
+0000786105 00000 n 
+0000786283 00000 n 
+0000786530 00000 n 
+0000790866 00000 n 
+0000791043 00000 n 
+0000791221 00000 n 
+0000791398 00000 n 
+0000791575 00000 n 
+0000791790 00000 n 
+0000796064 00000 n 
+0000796240 00000 n 
+0000796417 00000 n 
+0000796593 00000 n 
+0000796771 00000 n 
+0000796986 00000 n 
+0000801290 00000 n 
+0000801467 00000 n 
+0000801646 00000 n 
+0000801824 00000 n 
+0000802001 00000 n 
+0000802216 00000 n 
+0000806519 00000 n 
+0000806695 00000 n 
+0000806872 00000 n 
+0000807048 00000 n 
+0000807226 00000 n 
+0000807401 00000 n 
+0000807624 00000 n 
+0000811896 00000 n 
+0000812074 00000 n 
+0000812251 00000 n 
+0000812428 00000 n 
+0000812635 00000 n 
+0000816824 00000 n 
+0000817000 00000 n 
+0000817178 00000 n 
+0000817355 00000 n 
+0000817533 00000 n 
+0000817748 00000 n 
+0000821891 00000 n 
+0000822068 00000 n 
+0000822246 00000 n 
+0000822423 00000 n 
+0000822601 00000 n 
+0000822776 00000 n 
+0000822999 00000 n 
+0000827260 00000 n 
+0000827433 00000 n 
+0000830326 00000 n 
+0000830499 00000 n 
+0000832760 00000 n 
+0000832933 00000 n 
+0000836873 00000 n 
+0000837046 00000 n 
+0000841609 00000 n 
+0000841782 00000 n 
+0000855401 00000 n 
+0000855574 00000 n 
+0000869199 00000 n 
+0000869372 00000 n 
+0000876152 00000 n 
+0000876325 00000 n 
+0000880784 00000 n 
+0000880957 00000 n 
+0000890331 00000 n 
+0000890504 00000 n 
+0000898642 00000 n 
+0000898815 00000 n 
+0000902844 00000 n 
+0000903017 00000 n 
+0000907538 00000 n 
+0000907711 00000 n 
+0000919795 00000 n 
+0000919968 00000 n 
+0000925566 00000 n 
+0000925739 00000 n 
+0000930264 00000 n 
+0000930437 00000 n 
+0000943435 00000 n 
+0000943608 00000 n 
+0000945882 00000 n 
+0000946055 00000 n 
+0000946228 00000 n 
+0000946401 00000 n 
+0000946623 00000 n 
+0000946844 00000 n 
+0000947019 00000 n 
+0000947250 00000 n 
+0000953844 00000 n 
+0000954019 00000 n 
+0000954193 00000 n 
+0000954367 00000 n 
+0000954540 00000 n 
+0000954763 00000 n 
+0000954985 00000 n 
+0000955164 00000 n 
+0000955340 00000 n 
+0000955587 00000 n 
+0000960234 00000 n 
+0000960412 00000 n 
+0000960589 00000 n 
+0000960767 00000 n 
+0000960942 00000 n 
+0000961157 00000 n 
+0000965330 00000 n 
+0000965508 00000 n 
+0000965685 00000 n 
+0000965862 00000 n 
+0000966038 00000 n 
+0000966214 00000 n 
+0000966437 00000 n 
+0000970581 00000 n 
+0000970758 00000 n 
+0000970935 00000 n 
+0000971111 00000 n 
+0000971318 00000 n 
+0000975707 00000 n 
+0000975885 00000 n 
+0000976062 00000 n 
+0000976240 00000 n 
+0000976417 00000 n 
+0000976593 00000 n 
+0000976816 00000 n 
+0000981017 00000 n 
+0000981194 00000 n 
+0000981372 00000 n 
+0000981549 00000 n 
+0000981725 00000 n 
+0000981940 00000 n 
+0000986162 00000 n 
+0000986339 00000 n 
+0000986517 00000 n 
+0000986694 00000 n 
+0000986870 00000 n 
+0000987085 00000 n 
+0000991442 00000 n 
+0000991619 00000 n 
+0000991797 00000 n 
+0000991974 00000 n 
+0000992181 00000 n 
+0000995534 00000 n 
+0000995707 00000 n 
+0000998743 00000 n 
+0000998916 00000 n 
+0001001161 00000 n 
+0001001334 00000 n 
+0001004861 00000 n 
+0001005034 00000 n 
+0001009584 00000 n 
+0001009757 00000 n 
+0001019458 00000 n 
+0001019631 00000 n 
+0001032381 00000 n 
+0001032554 00000 n 
+0001036659 00000 n 
+0001036832 00000 n 
+0001041110 00000 n 
+0001041283 00000 n 
+0001054131 00000 n 
+0001054304 00000 n 
+0001066695 00000 n 
+0001066868 00000 n 
+0001079243 00000 n 
+0001079416 00000 n 
+0001091816 00000 n 
+0001091989 00000 n 
+0001104374 00000 n 
+0001104547 00000 n 
+0001116908 00000 n 
+0001117081 00000 n 
+0001129457 00000 n 
+0001129630 00000 n 
+0001142017 00000 n 
+0001142190 00000 n 
+0001154929 00000 n 
+0001155102 00000 n 
+0001167535 00000 n 
+0001167708 00000 n 
+0001180112 00000 n 
+0001180285 00000 n 
+0001192700 00000 n 
+0001192873 00000 n 
+0001205666 00000 n 
+0001205839 00000 n 
+0001218280 00000 n 
+0001218453 00000 n 
+0001230890 00000 n 
+0001231063 00000 n 
+0001243473 00000 n 
+0001243646 00000 n 
+0001256121 00000 n 
+0001256294 00000 n 
+0001269116 00000 n 
+0001269289 00000 n 
+0001281725 00000 n 
+0001281898 00000 n 
+0001294350 00000 n 
+0001294523 00000 n 
+0001306918 00000 n 
+0001307091 00000 n 
+0001319517 00000 n 
+0001319690 00000 n 
+0001332150 00000 n 
+0001332323 00000 n 
+0001344746 00000 n 
+0001344919 00000 n 
+0001357393 00000 n 
+0001357566 00000 n 
+0001370249 00000 n 
+0001370422 00000 n 
+0001382818 00000 n 
+0001382991 00000 n 
+0001395808 00000 n 
+0001395981 00000 n 
+0001408403 00000 n 
+0001408576 00000 n 
+0001420981 00000 n 
+0001421154 00000 n 
+0001433579 00000 n 
+0001433752 00000 n 
+0001446139 00000 n 
+0001446312 00000 n 
+0001458701 00000 n 
+0001458874 00000 n 
+0001471329 00000 n 
+0001471502 00000 n 
+0001483928 00000 n 
+0001484101 00000 n 
+0001492837 00000 n 
+0001493010 00000 n 
+0001497335 00000 n 
+0001497508 00000 n 
+0001504054 00000 n 
+0001504227 00000 n 
+0001517830 00000 n 
+0001518003 00000 n 
+0001522306 00000 n 
+0001522479 00000 n 
+0001530158 00000 n 
+0001530331 00000 n 
+0001544353 00000 n 
+0001544526 00000 n 
+0001551161 00000 n 
+0001551334 00000 n 
+0001551509 00000 n 
+0001551683 00000 n 
+0001551890 00000 n 
+0001557984 00000 n 
+0001558150 00000 n 
+0001558329 00000 n 
+0001558552 00000 n 
+0001558774 00000 n 
+0001559003 00000 n 
+0001559231 00000 n 
+0001559405 00000 n 
+0001559628 00000 n 
+0001559850 00000 n 
+0001560073 00000 n 
+0001560295 00000 n 
+0001560470 00000 n 
+0001560749 00000 n 
+0001565187 00000 n 
+0001565363 00000 n 
+0001565540 00000 n 
+0001565716 00000 n 
+0001565892 00000 n 
+0001566107 00000 n 
+0001570252 00000 n 
+0001570429 00000 n 
+0001570607 00000 n 
+0001570784 00000 n 
+0001570962 00000 n 
+0001571177 00000 n 
+0001575385 00000 n 
+0001575562 00000 n 
+0001575740 00000 n 
+0001575917 00000 n 
+0001576095 00000 n 
+0001576310 00000 n 
+0001580528 00000 n 
+0001580705 00000 n 
+0001580882 00000 n 
+0001581058 00000 n 
+0001581237 00000 n 
+0001581452 00000 n 
+0001585660 00000 n 
+0001585838 00000 n 
+0001586016 00000 n 
+0001586193 00000 n 
+0001586371 00000 n 
+0001586586 00000 n 
+0001590810 00000 n 
+0001590987 00000 n 
+0001591165 00000 n 
+0001591342 00000 n 
+0001591521 00000 n 
+0001591736 00000 n 
+0001596084 00000 n 
+0001596262 00000 n 
+0001596440 00000 n 
+0001596617 00000 n 
+0001596794 00000 n 
+0001597009 00000 n 
+0001601168 00000 n 
+0001601344 00000 n 
+0001601535 00000 n 
+0001602021 00000 n 
+0001602194 00000 n 
+0001605063 00000 n 
+0001605236 00000 n 
+0001607508 00000 n 
+0001607681 00000 n 
+0001611671 00000 n 
+0001611844 00000 n 
+0001618383 00000 n 
+0001618556 00000 n 
+0001637932 00000 n 
+0001638105 00000 n 
+0001657407 00000 n 
+0001657580 00000 n 
+0001676942 00000 n 
+0001677115 00000 n 
+0001696591 00000 n 
+0001696764 00000 n 
+0001716189 00000 n 
+0001716362 00000 n 
+0001732238 00000 n 
+0001732411 00000 n 
+0001736187 00000 n 
+0001736360 00000 n 
+0001740873 00000 n 
+0001741046 00000 n 
+0001753109 00000 n 
+0001753282 00000 n 
+0001760476 00000 n 
+0001760649 00000 n 
+0001765173 00000 n 
+0001765346 00000 n 
+0001775201 00000 n 
+0001775374 00000 n 
+0001785130 00000 n 
+0001785303 00000 n 
+0001789601 00000 n 
+0001789774 00000 n 
+0001796600 00000 n 
+0001796773 00000 n 
+0001810368 00000 n 
+0001810541 00000 n 
+0001814323 00000 n 
+0001814496 00000 n 
+0001814669 00000 n 
+0001814844 00000 n 
+0001815018 00000 n 
+0001815244 00000 n 
+0001815469 00000 n 
+0001815643 00000 n 
+0001815882 00000 n 
+0001822450 00000 n 
+0001822631 00000 n 
+0001822812 00000 n 
+0001822990 00000 n 
+0001823167 00000 n 
+0001823345 00000 n 
+0001823568 00000 n 
+0001827956 00000 n 
+0001828133 00000 n 
+0001828311 00000 n 
+0001828488 00000 n 
+0001828665 00000 n 
+0001828880 00000 n 
+0001833178 00000 n 
+0001833354 00000 n 
+0001833532 00000 n 
+0001833709 00000 n 
+0001833886 00000 n 
+0001834101 00000 n 
+0001838420 00000 n 
+0001838596 00000 n 
+0001838775 00000 n 
+0001838953 00000 n 
+0001839130 00000 n 
+0001839345 00000 n 
+0001843679 00000 n 
+0001843855 00000 n 
+0001844033 00000 n 
+0001844210 00000 n 
+0001844387 00000 n 
+0001844602 00000 n 
+0001848883 00000 n 
+0001849059 00000 n 
+0001849236 00000 n 
+0001849412 00000 n 
+0001849590 00000 n 
+0001849765 00000 n 
+0001849988 00000 n 
+0001854349 00000 n 
+0001854527 00000 n 
+0001854704 00000 n 
+0001854881 00000 n 
+0001855057 00000 n 
+0001855233 00000 n 
+0001855456 00000 n 
+0001859519 00000 n 
+0001859696 00000 n 
+0001859887 00000 n 
+0001861419 00000 n 
+0001861592 00000 n 
+0001864627 00000 n 
+0001864800 00000 n 
+0001867063 00000 n 
+0001867236 00000 n 
+0001871400 00000 n 
+0001871573 00000 n 
+0001877601 00000 n 
+0001877774 00000 n 
+0001889778 00000 n 
+0001889951 00000 n 
+0001894024 00000 n 
+0001894197 00000 n 
+0001898559 00000 n 
+0001898732 00000 n 
+0001911494 00000 n 
+0001911667 00000 n 
+0001915211 00000 n 
+0001915384 00000 n 
+0001919767 00000 n 
+0001919940 00000 n 
+0001927047 00000 n 
+0001927220 00000 n 
+0001938340 00000 n 
+0001938513 00000 n 
+0001943025 00000 n 
+0001943198 00000 n 
+0001950581 00000 n 
+0001950754 00000 n 
+0001960581 00000 n 
+0001960756 00000 n 
+0001960947 00000 n 
+0001961146 00000 n 
+0001966219 00000 n 
+0001966403 00000 n 
+0001966576 00000 n 
+0001966749 00000 n 
+0001966923 00000 n 
+0001967096 00000 n 
+0001967277 00000 n 
+0001967458 00000 n 
+0001967698 00000 n 
+0001967938 00000 n 
+0001968178 00000 n 
+0001968417 00000 n 
+0001968688 00000 n 
+0001973021 00000 n 
+0001973245 00000 n 
+0001973468 00000 n 
+0001973690 00000 n 
+0001973911 00000 n 
+0001974133 00000 n 
+0001974354 00000 n 
+0001974529 00000 n 
+0001974703 00000 n 
+0001974877 00000 n 
+0001975051 00000 n 
+0001975224 00000 n 
+0001975443 00000 n 
+0001975661 00000 n 
+0001975948 00000 n 
+0001980157 00000 n 
+0001980380 00000 n 
+0001980602 00000 n 
+0001980780 00000 n 
+0001980957 00000 n 
+0001981135 00000 n 
+0001981358 00000 n 
+0001985498 00000 n 
+0001985675 00000 n 
+0001985852 00000 n 
+0001986028 00000 n 
+0001986206 00000 n 
+0001986421 00000 n 
+0001990805 00000 n 
+0001990982 00000 n 
+0001991160 00000 n 
+0001991337 00000 n 
+0001991514 00000 n 
+0001991729 00000 n 
+0001995899 00000 n 
+0001996075 00000 n 
+0001996253 00000 n 
+0001996430 00000 n 
+0001996607 00000 n 
+0001996781 00000 n 
+0001997004 00000 n 
+0002001339 00000 n 
+0002001518 00000 n 
+0002001696 00000 n 
+0002001874 00000 n 
+0002002051 00000 n 
+0002002266 00000 n 
+0002006359 00000 n 
+0002006537 00000 n 
+0002006714 00000 n 
+0002006892 00000 n 
+0002007069 00000 n 
+0002007245 00000 n 
+0002007468 00000 n 
+0002011680 00000 n 
+0002011857 00000 n 
+0002012035 00000 n 
+0002012212 00000 n 
+0002012388 00000 n 
+0002012603 00000 n 
+0002016863 00000 n 
+0002017040 00000 n 
+0002017231 00000 n 
+0002018869 00000 n 
+0002019042 00000 n 
+0002022092 00000 n 
+0002022265 00000 n 
+0002024557 00000 n 
+0002024730 00000 n 
+0002028615 00000 n 
+0002028788 00000 n 
+0002034240 00000 n 
+0002034413 00000 n 
+0002047559 00000 n 
+0002047732 00000 n 
+0002051371 00000 n 
+0002051544 00000 n 
+0002055845 00000 n 
+0002056018 00000 n 
+0002063022 00000 n 
+0002063195 00000 n 
+0002074479 00000 n 
+0002074652 00000 n 
+0002079200 00000 n 
+0002079373 00000 n 
+0002088628 00000 n 
+0002088801 00000 n 
+0002098356 00000 n 
+0002098529 00000 n 
+0002102849 00000 n 
+0002103022 00000 n 
+0002109750 00000 n 
+0002109923 00000 n 
+0002121789 00000 n 
+0002121962 00000 n 
+0002124152 00000 n 
+0002124325 00000 n 
+0002124498 00000 n 
+0002124724 00000 n 
+0002124950 00000 n 
+0002125125 00000 n 
+0002125299 00000 n 
+0002125471 00000 n 
+0002125710 00000 n 
+0002132403 00000 n 
+0002132588 00000 n 
+0002132777 00000 n 
+0002132955 00000 n 
+0002133132 00000 n 
+0002133310 00000 n 
+0002133533 00000 n 
+0002138022 00000 n 
+0002138199 00000 n 
+0002138376 00000 n 
+0002138552 00000 n 
+0002138729 00000 n 
+0002138945 00000 n 
+0002143318 00000 n 
+0002143495 00000 n 
+0002143673 00000 n 
+0002143850 00000 n 
+0002144028 00000 n 
+0002144249 00000 n 
+0002148461 00000 n 
+0002148638 00000 n 
+0002148817 00000 n 
+0002148995 00000 n 
+0002149174 00000 n 
+0002149395 00000 n 
+0002153659 00000 n 
+0002153837 00000 n 
+0002154017 00000 n 
+0002154196 00000 n 
+0002154375 00000 n 
+0002154596 00000 n 
+0002158660 00000 n 
+0002158838 00000 n 
+0002159018 00000 n 
+0002159197 00000 n 
+0002159375 00000 n 
+0002159596 00000 n 
+0002163897 00000 n 
+0002164074 00000 n 
+0002164252 00000 n 
+0002164429 00000 n 
+0002164608 00000 n 
+0002164829 00000 n 
+0002169179 00000 n 
+0002169357 00000 n 
+0002169536 00000 n 
+0002169714 00000 n 
+0002169926 00000 n 
+0002172194 00000 n 
+0002172369 00000 n 
+0002175357 00000 n 
+0002175532 00000 n 
+0002177936 00000 n 
+0002178111 00000 n 
+0002182295 00000 n 
+0002182470 00000 n 
+0002188176 00000 n 
+0002188351 00000 n 
+0002201962 00000 n 
+0002202137 00000 n 
+0002206230 00000 n 
+0002206405 00000 n 
+0002210536 00000 n 
+0002210711 00000 n 
+0002215835 00000 n 
+0002216010 00000 n 
+0002229743 00000 n 
+0002229918 00000 n 
+0002234468 00000 n 
+0002234643 00000 n 
+0002239108 00000 n 
+0002239283 00000 n 
+0002250905 00000 n 
+0002251080 00000 n 
+0002257831 00000 n 
+0002258006 00000 n 
+0002262506 00000 n 
+0002262681 00000 n 
+0002275052 00000 n 
+0002275227 00000 n 
+0002281346 00000 n 
+0002281520 00000 n 
+0002281696 00000 n 
+0002281872 00000 n 
+0002282084 00000 n 
+0002288496 00000 n 
+0002288670 00000 n 
+0002288844 00000 n 
+0002289070 00000 n 
+0002289296 00000 n 
+0002289471 00000 n 
+0002289650 00000 n 
+0002289828 00000 n 
+0002290076 00000 n 
+0002294522 00000 n 
+0002294701 00000 n 
+0002294879 00000 n 
+0002295058 00000 n 
+0002295235 00000 n 
+0002295456 00000 n 
+0002299719 00000 n 
+0002299898 00000 n 
+0002300076 00000 n 
+0002300254 00000 n 
+0002300431 00000 n 
+0002300652 00000 n 
+0002304809 00000 n 
+0002304988 00000 n 
+0002305166 00000 n 
+0002305345 00000 n 
+0002305523 00000 n 
+0002305699 00000 n 
+0002305929 00000 n 
+0002310240 00000 n 
+0002310417 00000 n 
+0002310595 00000 n 
+0002310772 00000 n 
+0002310948 00000 n 
+0002311169 00000 n 
+0002315508 00000 n 
+0002315685 00000 n 
+0002315864 00000 n 
+0002316042 00000 n 
+0002316218 00000 n 
+0002316439 00000 n 
+0002320581 00000 n 
+0002320758 00000 n 
+0002320937 00000 n 
+0002321115 00000 n 
+0002321294 00000 n 
+0002321515 00000 n 
+0002325663 00000 n 
+0002325841 00000 n 
+0002326019 00000 n 
+0002326196 00000 n 
+0002326408 00000 n 
+0002329742 00000 n 
+0002329917 00000 n 
+0002332904 00000 n 
+0002333079 00000 n 
+0002335437 00000 n 
+0002335612 00000 n 
+0002339720 00000 n 
+0002339895 00000 n 
+0002345904 00000 n 
+0002346079 00000 n 
+0002358825 00000 n 
+0002359000 00000 n 
+0002363131 00000 n 
+0002363306 00000 n 
+0002367693 00000 n 
+0002367868 00000 n 
+0002380508 00000 n 
+0002380683 00000 n 
+0002384082 00000 n 
+0002384257 00000 n 
+0002388476 00000 n 
+0002388651 00000 n 
+0002394740 00000 n 
+0002394915 00000 n 
+0002406152 00000 n 
+0002406327 00000 n 
+0002410828 00000 n 
+0002411003 00000 n 
+0002420729 00000 n 
+0002420904 00000 n 
+0002434462 00000 n 
+0002434637 00000 n 
+0002446437 00000 n 
+0002446612 00000 n 
+0002450945 00000 n 
+0002451121 00000 n 
+0002451295 00000 n 
+0002451469 00000 n 
+0002451645 00000 n 
+0002451820 00000 n 
+0002451995 00000 n 
+0002452169 00000 n 
+0002452348 00000 n 
+0002452605 00000 n 
+0002457077 00000 n 
+0002457255 00000 n 
+0002457434 00000 n 
+0002457612 00000 n 
+0002457790 00000 n 
+0002458011 00000 n 
+0002462298 00000 n 
+0002462475 00000 n 
+0002462655 00000 n 
+0002462834 00000 n 
+0002463013 00000 n 
+0002463234 00000 n 
+0002467510 00000 n 
+0002467688 00000 n 
+0002467866 00000 n 
+0002468043 00000 n 
+0002468222 00000 n 
+0002468443 00000 n 
+0002472665 00000 n 
+0002472843 00000 n 
+0002473022 00000 n 
+0002473200 00000 n 
+0002473379 00000 n 
+0002473600 00000 n 
+0002477881 00000 n 
+0002478059 00000 n 
+0002478238 00000 n 
+0002478416 00000 n 
+0002478595 00000 n 
+0002478816 00000 n 
+0002482994 00000 n 
+0002483172 00000 n 
+0002483351 00000 n 
+0002483529 00000 n 
+0002483708 00000 n 
+0002483929 00000 n 
+0002488115 00000 n 
+0002488293 00000 n 
+0002488472 00000 n 
+0002488650 00000 n 
+0002488829 00000 n 
+0002489050 00000 n 
+0002493366 00000 n 
+0002493544 00000 n 
+0002493738 00000 n 
+0002494580 00000 n 
+0002494755 00000 n 
 trailer
 << /Size 1215 /Root 1 0 R >>
 startxref
-2494648
+2495136
 %%EOF

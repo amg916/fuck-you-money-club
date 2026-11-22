@@ -13,8 +13,8 @@ CHAPTER_12 = {
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #27 with a Money-to-Manpower "
-        "Score of 57/100 because purchased cash flow still requires capital, "
+        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower "
+        "Score of 86/100 because purchased cash flow still requires capital, "
         "operators, and disciplined debt service. This sprint activates seven "
         "mapped plays: sourcing, screening, QoE, capital structuring, transaction "
         "execution, transition, and operating automation. Days 1–30 launch a "
@@ -32,19 +32,19 @@ CHAPTER_12 = {
             "label": "Conservative",
             "value": "$750,000",
             "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "8% margin; $60,000 annual owner net profit; 7 FT + 3 C",
+            "note": "8% margin; $60,000 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,875,000",
             "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "13.0% margin; $243,750 annual owner net profit; 7 FT + 3 C",
+            "note": "13.0% margin; $243,750 annual owner net profit; 2 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$3,000,000",
             "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "18% margin; $540,000 annual owner net profit; 8 FT + 4 C",
+            "note": "18% margin; $540,000 annual owner net profit; 3 FT + 3 C",
         },
     ],
     "sections": [
@@ -54,7 +54,7 @@ CHAPTER_12 = {
             "paragraphs": [
                 (
                     "Start the clock when the sponsor authorizes the search, not when a seller "
-                    "accepts an offer. Candidate #13 typically requires 6–18 months to reach "
+                    "accepts an offer. Candidate #13 typically requires 4–10 months to reach "
                     "a first deal, so a successful opening month produces a qualified pipeline, "
                     "documented underwriting, and a funded next stage rather than purchased "
                     "revenue. Map the work into seven explicit chapter plays: P1 proprietary "
@@ -94,14 +94,14 @@ CHAPTER_12 = {
                 ),
                 (
                     "Authorize an illustrative $12,000 first-month search ceiling inside the "
-                    "$200,000–$1,000,000 startup-capital envelope, without implying that its "
+                    "$30,000–$120,000 startup-capital envelope, without implying that its "
                     "lower end funds every target. Allocate $1,500 to data and outreach, $2,000 "
                     "to initial legal review, $4,000 to limited accounting diligence, $1,000 "
                     "to lender packaging, $1,000 to site visits, and $2,500 to contingency. "
                     "Measure the ceiling as cash already paid plus noncancelable commitments, "
                     "so an unpaid engagement letter cannot hide spending. Keep purchase equity, "
                     "closing costs, and operating liquidity in separate ledger categories. "
-                    "The quoted $15,000–$70,000 monthly opex range is a planning input, not "
+                    "The quoted $6,000–$25,000 monthly opex range is a planning input, not "
                     "the complete expense bridge behind every revenue scenario; verify payroll, "
                     "direct costs, debt service, and working capital separately. On Day 6, "
                     "build a thirteen-week cash forecast and tag every proposed commitment "

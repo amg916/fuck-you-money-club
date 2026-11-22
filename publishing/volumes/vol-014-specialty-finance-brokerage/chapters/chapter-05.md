@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #20, Specialty Finance Brokerage, holds Rank #14 among 29 mapped plays with a Money-to-Manpower Score of 79/100. Its leverage comes from retained origination and referral fees, not loan principal. Annual owner profit is $30,000 Conservative, $196,000 Base, and $450,000 Scaled. Newcomers lose capital through conditional commitments, commission recourse, collateral defects, lender dependence, and unauthorized handling of applications or payment credentials. The question's 80% figure is a framing device, not an established failure statistic. This chapter turns those exposures into measurable stop conditions and connects freight recovery audits, commercial virtual-card rebates, and authorized agency advertising rewards to the same discipline: verify entitlement, isolate third-party funds, and measure cash retained after reversals.
+Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays with a Money-to-Manpower Score of 89/100. Its leverage comes from retained origination and referral fees, not loan principal. Annual owner profit is $30,000 Conservative, $196,000 Base, and $450,000 Scaled. Newcomers lose capital through conditional commitments, commission recourse, collateral defects, lender dependence, and unauthorized handling of applications or payment credentials. The question's 80% figure is a framing device, not an established failure statistic. This chapter turns those exposures into measurable stop conditions and connects freight recovery audits, commercial virtual-card rebates, and authorized agency advertising rewards to the same discipline: verify entitlement, isolate third-party funds, and measure cash retained after reversals.
 
 ### Key Metrics
 

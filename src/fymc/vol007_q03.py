@@ -13,7 +13,7 @@ CHAPTER_3 = {
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score. This chapter translates 12 mapped plays into a "
         "fee-only operating model: client property is never operator revenue. "
         "Conservative, Base, and Scaled cases produce $60,000, $255,000, and "

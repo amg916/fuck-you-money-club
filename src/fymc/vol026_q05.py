@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #26 with a 62/100 "
+        "Candidate #17, Government Surplus Auctions, ranks #29 with a 79/100 "
         "Money-to-Manpower Score because physical execution dominates auction discovery. "
         "Annual owner net profit is $12,000 Conservative, $80,500 Base, and $200,000 "
         "Scaled, measured against gross resale proceeds rather than purchase budgets. "
@@ -362,7 +362,7 @@ CHAPTER_5 = {
                     "and 83.33% of Conservative owner profit. The stated $3,000–$15,000 "
                     "monthly operating range annualizes to $36,000–$180,000, so its upper "
                     "end cannot coexist with the Conservative envelope. Startup capital "
-                    "of $25,000–$200,000 is funding capacity, not recognized sales or "
+                    "of $15,000–$80,000 is funding capacity, not recognized sales or "
                     "an additional profit line."
                 ),
                 (

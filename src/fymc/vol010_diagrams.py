@@ -3,7 +3,7 @@ from __future__ import annotations
 VOLUME_010_SUBTITLE = (
     "The Complete Playbook for Building an SEO Empire: "
     "$80,000–$900,000 USD Annually, Starting with a "
-    "2 FT + 4 C (6 People) Publishing Pod"
+    "1 FT + 3 C (4 People) Publishing Pod"
 )
 
 VOLUME_010_POSITIONING_ALTERNATIVES = [
@@ -14,7 +14,7 @@ VOLUME_010_POSITIONING_ALTERNATIVES = [
             "audits, content refresh queues, and earned-revenue reporting."
         ),
         "audience": (
-            "Publisher-operators starting with two full-time employees and four "
+            "Publisher-operators starting with one full-time employee and three "
             "contractors who need site-level economics rather than traffic vanity metrics."
         ),
         "research_basis": (
@@ -104,7 +104,7 @@ def build_volume_010_diagrams_data() -> list[dict]:
                 "The operating sequence covers multi-site search publishing, "
                 "selective programmatic production, and GEO citation tracking. "
                 "Stage numbers express sequence, not revenue forecasts. The "
-                "canonical time to first deal is 6–24 months."
+                "canonical time to first deal is 3–12 months."
             ),
             (
                 "Automate technical audits, refresh queues, and revenue reporting; "
@@ -246,7 +246,7 @@ def build_volume_010_diagrams_data() -> list[dict]:
                 "First and last bars are totals; the four intervening bars are "
                 "negative deductions. Revenue and owner net are canonical; cost "
                 "category allocations are illustrative. Annual costs total $330,750, "
-                "or $27,562.50 monthly. The supplied $3,000–$20,000 monthly opex "
+                "or $27,562.50 monthly. The supplied $2,500–$14,000 monthly opex "
                 "range cannot be an all-in ceiling for this Base case: implied "
                 "annual costs exceed its $240,000 upper annual equivalent by "
                 "$90,750. Resolve that scope difference before budgeting."
@@ -272,9 +272,10 @@ def build_volume_010_diagrams_data() -> list[dict]:
                     "Subtract $156,000 in modeled annual labor",
                     -156000.0,
                     (
-                        "Allocate $78,000 per full-time seat across two seats. "
-                        "Treat these as modeled loaded labor budgets, not salary "
-                        "survey findings or a separate owner distribution."
+                        "Allocate $156,000 to the single full-time seat in the "
+                        "1 FT + 3 C core pod. Treat this as a modeled loaded "
+                        "labor budget, not a salary survey finding or a separate "
+                        "owner distribution."
                     ),
                 ),
                 (
@@ -282,9 +283,12 @@ def build_volume_010_diagrams_data() -> list[dict]:
                     "Subtract $84,000 in modeled contractor fees",
                     -84000.0,
                     (
-                        "Allocate $21,000 annually to each of four fractional "
-                        "contractor relationships. Purchased capacity is limited; "
-                        "four contractors do not equal four full-time equivalents."
+                        "The core pod includes three fractional contractor seats, "
+                        "not four. The unchanged $84,000 production envelope covers "
+                        "their purchased capacity and any external vendor/trade "
+                        "sub-crews charged to direct subcontractor/COGS pass-through. "
+                        "External crews are not internal pod headcount; do not "
+                        "add their costs again outside this deduction."
                     ),
                 ),
                 (
@@ -459,44 +463,54 @@ def build_volume_010_diagrams_data() -> list[dict]:
             ],
         ),
         (
-            "diag-06-six-core-eight-scaled-publishing-seats",
+            "diag-06-four-core-six-scaled-publishing-seats",
             "org_architecture",
-            "Operate Six Core Seats; Add Two Only in the Scaled Model",
-            "Conservative and Base: 2 FT + 4 C. Scaled: 3 FT + 5 C.",
+            "Operate Four Core Seats; Add Two Only in the Scaled Model",
+            "Conservative and Base: 1 FT + 3 C. Scaled: 2 FT + 4 C.",
             11,
             "operating_framework",
             (
-                "Eight depicted seats represent the Scaled organization; six "
-                "are core and two are explicitly Scaled-only. Each numeric "
-                "value represents one person, not a full-time equivalent. "
-                "Contractor seats are fractional service relationships. Revenue "
-                "scenarios do not establish workload capacity by themselves."
+                "Six entries depict four core seats and two Scaled-only expansion "
+                "seats. A numeric value of 1 marks a person included in the core "
+                "pod; 0 marks an expansion seat excluded from core headcount, "
+                "not an unstaffed role once scaled. The core is 1 FT + 3 C "
+                "(4 people); adding 1 FT + 1 C produces 2 FT + 4 C "
+                "(6 people). Contractor seats are fractional service relationships, "
+                "not full-time equivalents. External vendor/trade sub-crews are "
+                "direct subcontractor/COGS pass-through, not internal pod seats. "
+                "FYMC 2.0 score: 89/100; rank #07 of 29; "
+                "tier: Elite Small-Team Cash Machine."
             ),
             (
-                "Core seats support the canonical $80,000 Conservative and "
-                "$490,000 Base scenarios; the eight-person configuration belongs "
-                "to the $900,000 Scaled scenario. Do not apply Base labor budgets "
-                "to Conservative revenue without resizing paid capacity."
+                "The four-person core supports the canonical $80,000 Conservative "
+                "and $490,000 Base scenarios; the six-person configuration belongs "
+                "to the $900,000 Scaled scenario. Add the full-time partnerships "
+                "lead and contracted production specialist only when funded workload "
+                "justifies expansion. Resize paid capacity for Conservative revenue; "
+                "scenario revenue alone does not establish workload capacity."
             ),
             [
                 (
                     "Portfolio operator",
-                    "Core seat 1: full-time portfolio ownership",
+                    "Core seat 1: full-time portfolio and commercial ownership",
                     1.0,
                     (
                         "Own topic allocation, site-level profit reporting, partner "
-                        "concentration, and capital deployment. Maintain the rights "
-                        "register and transaction-ready operating records for potential exits."
+                        "concentration, and capital deployment. Reconcile advertising, "
+                        "payable affiliate commissions, and delivered sponsorships. "
+                        "Maintain the rights register and transaction-ready records; "
+                        "retain commercial responsibility until the expansion lead joins."
                     ),
                 ),
                 (
                     "Managing editor",
-                    "Core seat 2: full-time editorial ownership",
+                    "Core seat 2: contracted editorial ownership",
                     1.0,
                     (
                         "Own evidence standards, contributor briefs, publishing "
-                        "cadence, and refresh priorities. Review risky commercial "
-                        "claims and prevent duplicative programmatic page expansion."
+                        "cadence, and refresh priorities within contracted capacity. "
+                        "Review commercial claims, contributor rights, and disclosure "
+                        "placement; prevent duplicative programmatic page expansion."
                     ),
                 ),
                 (
@@ -505,121 +519,118 @@ def build_volume_010_diagrams_data() -> list[dict]:
                     1.0,
                     (
                         "Maintain crawl monitoring, template tests, structured data, "
-                        "and deployment checks. Route indexing regressions to a "
-                        "tracked repair queue instead of mass resubmission."
+                        "analytics connectors, and deployment checks. Route indexing "
+                        "regressions to a tracked repair queue instead of mass "
+                        "resubmission; support the operator's revenue reporting."
                     ),
                 ),
                 (
-                    "Subject specialist",
-                    "Core seat 4: contracted research and writing",
+                    "Subject and production specialist",
+                    "Core seat 4: contracted research, writing, and CMS production",
                     1.0,
                     (
-                        "Produce original explanations, product testing records, "
-                        "and attributable expert contributions. Deliver source packets "
-                        "and explicit rights documentation with every assignment."
-                    ),
-                ),
-                (
-                    "Production specialist",
-                    "Core seat 5: contracted visual and CMS production",
-                    1.0,
-                    (
-                        "Create licensed or original visuals, format accessible "
-                        "pages, and maintain CMS consistency. Verify internal links "
-                        "and disclosure placement before scheduled publication."
-                    ),
-                ),
-                (
-                    "Revenue analyst",
-                    "Core seat 6: contracted measurement and reconciliation",
-                    1.0,
-                    (
-                        "Reconcile advertising statements, payable affiliate events, "
-                        "and sponsorship delivery. Publish revenue per session, "
-                        "receivable aging, and partner exposure without merchant-sales inflation."
+                        "Produce original explanations, testing records, and attributable "
+                        "expert contributions. Supply source packets and documented "
+                        "media rights, format accessible pages, and verify internal "
+                        "links. Scope combined research and production work to "
+                        "purchased capacity rather than assuming multiple full-time roles."
                     ),
                 ),
                 (
                     "Growth partnerships lead",
-                    "Scaled-only seat 7: additional full-time commercial owner",
-                    1.0,
+                    "Scaled-only seat 5: additional full-time commercial owner",
+                    0.0,
                     (
-                        "Add in the Scaled configuration to diversify sponsorships "
-                        "and manage partner renewals. Protect editorial independence "
-                        "and document placement obligations before recognizing sponsor revenue."
+                        "Add one FT seat in the Scaled configuration to diversify "
+                        "sponsorships and manage partner renewals. Protect editorial "
+                        "independence and document placement obligations before "
+                        "recognizing sponsor revenue; this seat is outside the core pod."
                     ),
                 ),
                 (
-                    "Second subject specialist",
-                    "Scaled-only seat 8: additional contracted production capacity",
-                    1.0,
+                    "Production specialist",
+                    "Scaled-only seat 6: additional contracted production capacity",
+                    0.0,
                     (
-                        "Add in the Scaled configuration for a second validated "
-                        "topic cluster. Expand production only after measuring "
-                        "editorial review capacity and existing refresh backlog."
+                        "Add one C seat in the Scaled configuration for licensed "
+                        "visuals, accessible CMS formatting, and publication checks. "
+                        "Relieve the core subject specialist's production workload "
+                        "only after measuring editorial review capacity and the "
+                        "refresh backlog; this seat is outside the core pod."
                     ),
                 ),
             ],
         ),
         (
-            "diag-07-startup-capital-four-bucket-allocation",
+            "diag-07-startup-capital-35000-reference-allocation",
             "stacked_comparison",
-            "Allocate Startup Capital without Mistaking It for Annual Profit",
-            "Four buckets sum to a $45,000 reference launch budget.",
+            "Allocate a $35,000 Reference Startup Plan across Four Buckets",
+            "Lean $10,000, reference $35,000, and expanded $60,000 USD launch plans.",
             4,
             "illustrative_model",
             (
-                "Numeric values depict the $45,000 reference budget. Stage "
-                "details also specify allocations for the canonical $15,000 "
-                "minimum and $120,000 maximum: each column sums exactly to "
-                "its total. These are illustrative cash allocations, not "
-                "accounting capitalization instructions or additional annual costs."
+                "Numeric values depict the $35,000 central/reference startup "
+                "budget within the canonical $10,000–$60,000 USD range. Each "
+                "bucket also specifies lean and expanded allocations; all three "
+                "plans use 40%, 30%, 20%, and 10% shares and sum exactly to "
+                "$10,000, $35,000, and $60,000 respectively. These are illustrative "
+                "cash allocations, not accounting capitalization instructions or "
+                "additional annual costs. Expanded startup funding does not "
+                "automatically activate the Scaled pod."
             ),
             (
-                "Reference allocation is $18,000 + $12,000 + $9,000 + $6,000 "
-                "= $45,000. A startup budget does not fund the entire canonical "
-                "6–24-month path to the first deal; calculate continuing funding separately."
+                "Lean: $4,000 + $3,000 + $2,000 + $1,000 = $10,000. "
+                "Reference: $14,000 + $10,500 + $7,000 + $3,500 = $35,000. "
+                "Expanded: $24,000 + $18,000 + $12,000 + $6,000 = $60,000. "
+                "Budget continuing funding separately for the canonical 3–12 months "
+                "to first deal and $2,500–$14,000 USD monthly opex range; "
+                "startup capital alone does not guarantee sufficient runway."
             ),
             [
                 (
                     "Original content and evidence",
-                    "$18,000 reference allocation; 40% of launch cash",
-                    18000.0,
+                    "$14,000 reference; $4,000 lean; $24,000 expanded; 40%",
+                    14000.0,
                     (
-                        "Allocate $6,000 at the minimum, $18,000 at reference, "
-                        "or $48,000 at maximum. Fund original testing, commissioned "
-                        "writing, editing, and documented media licenses."
+                        "Allocate $4,000 of the $10,000 lean plan, $14,000 of "
+                        "the $35,000 reference plan, or $24,000 of the $60,000 "
+                        "expanded plan. Fund original testing, commissioned writing, "
+                        "editing, and documented media licenses."
                     ),
                 ),
                 (
                     "Technical publishing foundation",
-                    "$12,000 reference allocation; 26.67% of launch cash",
-                    12000.0,
+                    "$10,500 reference; $3,000 lean; $18,000 expanded; 30%",
+                    10500.0,
                     (
-                        "Allocate $4,000 at the minimum, $12,000 at reference, "
-                        "or $32,000 at maximum. Fund templates, hosting setup, "
-                        "backups, access controls, and initial crawl remediation."
+                        "Allocate $3,000 of the $10,000 lean plan, $10,500 of "
+                        "the $35,000 reference plan, or $18,000 of the $60,000 "
+                        "expanded plan. Fund templates, hosting setup, backups, "
+                        "access controls, and initial crawl remediation."
                     ),
                 ),
                 (
                     "Measurement and commercial setup",
-                    "$9,000 reference allocation; 20% of launch cash",
-                    9000.0,
+                    "$7,000 reference; $2,000 lean; $12,000 expanded; 20%",
+                    7000.0,
                     (
-                        "Allocate $3,000 at the minimum, $9,000 at reference, "
-                        "or $24,000 at maximum. Fund attribution setup, reporting "
-                        "connectors, partner materials, and contributor agreement preparation."
+                        "Allocate $2,000 of the $10,000 lean plan, $7,000 of "
+                        "the $35,000 reference plan, or $12,000 of the $60,000 "
+                        "expanded plan. Fund attribution setup, reporting connectors, "
+                        "partner materials, and contributor agreement preparation."
                     ),
                 ),
                 (
                     "Unspent working reserve",
-                    "$6,000 reference allocation; 13.33% of launch cash",
-                    6000.0,
+                    "$3,500 reference; $1,000 lean; $6,000 expanded; 10%",
+                    3500.0,
                     (
-                        "Allocate $2,000 at the minimum, $6,000 at reference, "
-                        "or $16,000 at maximum. The reference reserve covers "
-                        "two months at $3,000 monthly opex or 0.3 months "
-                        "at $20,000; reserve cash is not an incurred expense."
+                        "Allocate $1,000 of the $10,000 lean plan, $3,500 of "
+                        "the $35,000 reference plan, or $6,000 of the $60,000 "
+                        "expanded plan. The reference reserve covers 1.4 months "
+                        "at $2,500 monthly opex or 0.25 months at $14,000. "
+                        "Reserve cash is not an incurred expense; avoid counting "
+                        "the same funded activity again as an additional cash need."
                     ),
                 ),
             ],
@@ -634,9 +645,9 @@ def build_volume_010_diagrams_data() -> list[dict]:
             (
                 "Four weekly milestones span Days 1–7, 8–14, 15–21, and "
                 "22–30. Numeric values are milestone end days. Deliverable "
-                "counts are sprint planning assumptions for the six-person "
-                "core pod, not traffic forecasts. First-deal timing remains "
-                "the canonical 6–24 months."
+                "counts are sprint planning assumptions for the four-person "
+                "core pod (1 FT + 3 C), not traffic forecasts. First-deal timing remains "
+                "the canonical 3–12 months."
             ),
             (
                 "Finish with a tested pilot, documented rights, functioning "

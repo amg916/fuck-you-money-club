@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #21, Million-Dollar Lead Generation, holds Rank #09 with an 82/100 Money-to-Manpower Score across 30 mapped plays. This chapter turns that opportunity into an evidence-bound operating system: Python workers collect account signals, language models structure research, Salesforce preserves attribution, and scheduling webhooks close the delivery loop. The Conservative, Base, and Scaled cases produce $30,000, $202,500, and $480,000 annual owner net profit, respectively, from operator retainers and qualified-opportunity fees rather than client contract values. A 2 FT + 3 C team targets more than 70% net repetitive-work reduction while retaining human decisions over outreach, disputed attribution, and regulated referrals. Three mapped plays expose the architecture's hardest evidence, eligibility, and recovery problems.
+Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an 86/100 Money-to-Manpower Score across 30 mapped plays. This chapter turns that opportunity into an evidence-bound operating system: Python workers collect account signals, language models structure research, Salesforce preserves attribution, and scheduling webhooks close the delivery loop. The Conservative, Base, and Scaled cases produce $30,000, $202,500, and $480,000 annual owner net profit, respectively, from operator retainers and qualified-opportunity fees rather than client contract values. A 2 FT + 3 C team targets more than 70% net repetitive-work reduction while retaining human decisions over outreach, disputed attribution, and regulated referrals. Three mapped plays expose the architecture's hardest evidence, eligibility, and recovery problems.
 
 ### Key Metrics
 

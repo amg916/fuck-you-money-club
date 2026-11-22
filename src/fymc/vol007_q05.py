@@ -13,7 +13,7 @@ CHAPTER_5 = {
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #07 with an 85/100 "
+        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
         "Money-to-Manpower Score, but strong economics require disciplined rejection of "
         "defective claims. Within the volume's 12 mapped plays, this chapter separates "
         "treasury recovery from adjacent freight-audit contingencies and identifies where "

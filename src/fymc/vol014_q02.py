@@ -13,8 +13,8 @@ CHAPTER_2 = {
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped plays "
-        "with a 79/100 Money-to-Manpower Score. The customer buys a financeable "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped plays "
+        "with a 89/100 Money-to-Manpower Score. The customer buys a financeable "
         "structure, credible lender access, and execution before liquidity expires; "
         "the paying party may instead be the lender under a separate commission "
         "agreement. Recognized operator revenue consists solely of retained origination "

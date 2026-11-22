@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Candidate #18, Commercial Lead Generation, ranks #08 with an 85/100 Money-to-Manpower Score across 54 mapped plays. The operating advantage comes from proving lead acceptance, controlling delivery costs, and collecting contracted fees without treating client advertising spend as revenue. This chapter connects intake, permission checks, multi-inbox delivery, call routing, verification, billing, and cash through a six-module SQLite reference. A five-client, 90-day cohort earns $106,250, incurs $74,375 of operating costs, and produces $31,875 of owner profit, exactly one quarter of the Base case. Annual owner profit remains $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Specialist plays receive explicit boundaries separating ordinary marketing fees from licensed legal operations, property transactions, and platform participation.
+Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 Money-to-Manpower Score across 54 mapped plays. The operating advantage comes from proving lead acceptance, controlling delivery costs, and collecting contracted fees without treating client advertising spend as revenue. This chapter connects intake, permission checks, multi-inbox delivery, call routing, verification, billing, and cash through a six-module SQLite reference. A five-client, 90-day cohort earns $106,250, incurs $74,375 of operating costs, and produces $31,875 of owner profit, exactly one quarter of the Base case. Annual owner profit remains $20,000 Conservative, $127,500 Base, and $300,000 Scaled. Specialist plays receive explicit boundaries separating ordinary marketing fees from licensed legal operations, property transactions, and platform participation.
 
 ### Key Metrics
 

@@ -13,8 +13,8 @@ CHAPTER_7 = {
     "layout_template": "research_exhibit",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #14 among 29 mapped plays "
-        "with a Money-to-Manpower Score of 79/100. Execution means converting verified "
+        "Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped plays "
+        "with a Money-to-Manpower Score of 89/100. Execution means converting verified "
         "borrower evidence into lender acceptance, documented funding, earned fees and "
         "reconciled bank cash without treating loan principal as operator revenue. "
         "This chapter supplies a six-module SQLite reference, lender-routing controls "
