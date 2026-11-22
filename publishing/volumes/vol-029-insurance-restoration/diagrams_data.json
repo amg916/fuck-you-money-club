@@ -1,0 +1,376 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-evidence-to-collection",
+      "chart_type": "process_flow",
+      "title": "From Loss Intake to Collected Restoration Invoice",
+      "subtitle": "Five accountable handoffs connect field evidence with job economics.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Stage numbers indicate sequence, not conversion rates. Restoration contract billings are operator revenue; total insured property value and insurer claim reserves are not.",
+      "caption": "Dispatch, photo documentation, and job-cost tracking automate handoffs without deciding coverage or negotiating policy rights.",
+      "stages": [
+        {
+          "label": "Qualify the loss",
+          "value": "Intake and jurisdiction review",
+          "numeric_value": 1.0,
+          "detail": "Record property address, water source or fire damage, occupancy, access authority, emergency hazards, and required contractor or remediation credentials."
+        },
+        {
+          "label": "Authorize the work",
+          "value": "Signed scope and payment terms",
+          "numeric_value": 2.0,
+          "detail": "Obtain the customer's work authorization, explain deductible responsibilities, and document payment terms without promising insurer coverage."
+        },
+        {
+          "label": "Mitigate and measure",
+          "value": "Time-stamped field evidence",
+          "numeric_value": 3.0,
+          "detail": "Assign drying equipment and responsible technicians; record temperature, relative humidity, humidity ratio, material moisture, equipment days, and dated photographs using applicable IICRC documentation practices."
+        },
+        {
+          "label": "Estimate and reconcile",
+          "value": "Supported Xactimate scope",
+          "numeric_value": 4.0,
+          "detail": "Tie quantities, labor, equipment, and supplements to actual work and supporting evidence. Route policy interpretation or claim negotiation outside contractor scope."
+        },
+        {
+          "label": "Invoice and collect",
+          "value": "Receivable and margin closeout",
+          "numeric_value": 5.0,
+          "detail": "Submit an itemized invoice, track customer and insurer remittance paths, resolve contractual scope discrepancies, and reconcile receipts against job costs without unauthorized public adjusting."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-loss-inquiry-cohort",
+      "chart_type": "funnel",
+      "title": "A Single Restoration Inquiry Cohort",
+      "subtitle": "120 inquiries narrow to 30 fully collected jobs at day 120.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Hypothetical cohort followed for 120 days after intake closes. Every later group is a subset of the preceding group. Counts are neither annual sales forecasts nor recognized revenue.",
+      "caption": "Separate lead qualification, completed work, and cash receipt; a paid-job count cannot substitute for earned contract revenue.",
+      "stages": [
+        {
+          "label": "Recorded inquiries",
+          "value": "120 inquiries; 100% of intake",
+          "numeric_value": 120.0,
+          "detail": "Log every unique loss inquiry with source, address, contact permission, and incident date; remove duplicate calls concerning the same property and event."
+        },
+        {
+          "label": "Qualified opportunities",
+          "value": "84 qualified; 70% of intake",
+          "numeric_value": 84.0,
+          "detail": "Retain jobs inside the service radius with appropriate credentials, accessible premises, available capacity, and a customer able to authorize work."
+        },
+        {
+          "label": "Authorized jobs",
+          "value": "48 signed; 57.1% of qualified",
+          "numeric_value": 48.0,
+          "detail": "Count only executed work authorizations with a defined scope and payment terms; insurer acknowledgment alone does not create customer authorization."
+        },
+        {
+          "label": "Completed and invoiced",
+          "value": "36 completed; 75% of authorized",
+          "numeric_value": 36.0,
+          "detail": "Require completed contracted scope, supporting job records, and an issued invoice; twelve authorized jobs remain outside this completed subset."
+        },
+        {
+          "label": "Fully collected jobs",
+          "value": "30 collected; 83.3% of completed",
+          "numeric_value": 30.0,
+          "detail": "Require cleared payment against the full outstanding invoice balance; six completed jobs remain unpaid or partially paid at the observation cutoff."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base-Case Gross Billings to Owner Net Profit",
+      "subtitle": "$1,500,000 revenue less $1,305,000 costs leaves $195,000.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Annual USD. First bar is opening revenue; four negative bars are cost deductions; the sixth bar is the closing total, not an additional cash inflow. Cost allocations are illustrative; canonical scenario revenue and net profit remain fixed.",
+      "caption": "Conservative: $500,000 × 8% = $40,000 with 5 FT + 6 C. Base: $1,500,000 × 13.0% = $195,000 with 5 FT + 6 C. Scaled: $2,500,000 × 18% = $450,000 with 6 FT + 7 C.",
+      "stages": [
+        {
+          "label": "Gross restoration billings",
+          "value": "$1,500,000 opening revenue; 100%",
+          "numeric_value": 1500000.0,
+          "detail": "Recognized restoration contract revenue includes subcontracted work and materials. Do not substitute total claim value, property value, or cash advances."
+        },
+        {
+          "label": "Subcontractors and materials",
+          "value": "−$795,000 direct costs; 53%",
+          "numeric_value": -795000.0,
+          "detail": "Charge actual contractor invoices and consumed materials to jobs. Six core contractor seats are capacity relationships, not six employee salaries."
+        },
+        {
+          "label": "Employee payroll and burden",
+          "value": "−$270,000 employee costs; 18%",
+          "numeric_value": -270000.0,
+          "detail": "Illustrative loaded annual payroll for five full-time seats averages $54,000 per seat, including the working owner-manager seat where applicable."
+        },
+        {
+          "label": "Field operating costs",
+          "value": "−$105,000 field operations; 7%",
+          "numeric_value": -105000.0,
+          "detail": "Allocate vehicle operation, equipment depreciation or rental, maintenance, consumables, and field safety costs without repeating direct material charges."
+        },
+        {
+          "label": "Administrative operating costs",
+          "value": "−$135,000 administrative costs; 9%",
+          "numeric_value": -135000.0,
+          "detail": "Allocate facilities, insurance, dispatch software, estimating subscriptions, bookkeeping, marketing, and collection losses. Payroll, field, and administrative costs total $42,500 monthly, excluding variable direct costs."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$195,000 closing total; 13.0%",
+          "numeric_value": 195000.0,
+          "detail": "Subtract all four cost groups from gross revenue: $1,500,000 − $795,000 − $270,000 − $105,000 − $135,000 = $195,000. This is profit, not available cash before receivable collection."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-contribution-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Job Contribution Before Fixed Operating Costs",
+      "subtitle": "Five illustrative service and payment-path combinations.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are hypothetical contribution percentages: billings less job-variable costs, divided by billings. They are not observed market averages, net margins, or an annual service mix; do not add the percentages.",
+      "caption": "Use actual job-cost records to replace these planning inputs. The canonical Base-Case net margin remains 13.0% after all costs.",
+      "stages": [
+        {
+          "label": "Clean-water mitigation",
+          "value": "45% illustrative job contribution",
+          "numeric_value": 45.0,
+          "detail": "Customer-authorized extraction and drying with itemized equipment days; customer payment or insurer remittance must be reconciled to the same contract balance."
+        },
+        {
+          "label": "Fire and smoke cleaning",
+          "value": "40% illustrative job contribution",
+          "numeric_value": 40.0,
+          "detail": "Document affected surfaces, cleaning methods, and contents handling; disputed cleaning scope can delay collection despite completed field labor."
+        },
+        {
+          "label": "Mold remediation",
+          "value": "38% illustrative job contribution",
+          "numeric_value": 38.0,
+          "detail": "Use required remediation credentials and project protocols; customer-funded work remains collectible under its contract even when coverage is excluded."
+        },
+        {
+          "label": "Storm stabilization",
+          "value": "35% illustrative job contribution",
+          "numeric_value": 35.0,
+          "detail": "Separate emergency protection from permanent repair; weather exposure, access equipment, and crew travel can erode initially attractive invoice yields."
+        },
+        {
+          "label": "Reconstruction",
+          "value": "28% illustrative job contribution",
+          "numeric_value": 28.0,
+          "detail": "Align progress invoices with completed milestones; mortgage-servicer endorsements, retainage, and trade rework can extend the cash conversion cycle."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-statutory-risk-checks",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Dispatch or Scope Expansion",
+      "subtitle": "Proceed only through applicable, documented operating requirements.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numbers identify sequential decisions rather than risk scores. A failed check routes to the corrective action in its detail. Texas citations are jurisdiction-specific examples, not nationwide contractor rules.",
+      "caption": "Coverage uncertainty does not authorize contractor claim negotiation, deductible concessions, or unsafe mobilization.",
+      "stages": [
+        {
+          "label": "Credentials match the work?",
+          "value": "Yes: continue; no: reassign scope",
+          "numeric_value": 1.0,
+          "detail": "Verify local contractor requirements and applicable remediation licensing, including Texas Occupations Code Chapter 1958 where relevant. If credentials are missing, exclude the work or use a properly qualified provider under a permitted contracting arrangement."
+        },
+        {
+          "label": "Activity stays within contractor scope?",
+          "value": "Yes: continue; no: redirect request",
+          "numeric_value": 2.0,
+          "detail": "Under Texas Insurance Code sections 4102.051 and 4102.163, assess licensing and contractor restrictions before any adjusting activity. Explain construction quantities and prices; redirect coverage advocacy or settlement negotiation to an authorized professional."
+        },
+        {
+          "label": "Payment terms preserve required deductibles?",
+          "value": "Yes: continue; no: correct terms",
+          "numeric_value": 3.0,
+          "detail": "Review Texas Business and Commerce Code section 27.02 where applicable. Reject prohibited deductible waivers, disguised rebates, and inflated invoices; document the customer's actual payment obligations and collection path."
+        },
+        {
+          "label": "Hazards and cash exposure controlled?",
+          "value": "Yes: dispatch; no: resolve deficiencies",
+          "numeric_value": 4.0,
+          "detail": "Apply 29 CFR 1910.134 when respiratory protection is required, 29 CFR 1926.1101 for covered asbestos work, and 40 CFR 745.85 for covered renovations. Assign qualified crews, protective measures, and funded job commitments before releasing affected work."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-core-and-scaled-pod",
+      "chart_type": "org_architecture",
+      "title": "Eleven Core Seats, Thirteen at Scale",
+      "subtitle": "Five employees plus six contractors; add one of each for scale.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values show core-seat occupancy: eleven values of one and two expansion values of zero. Activating both expansion seats produces 6 FT + 7 C. Contractor seats represent individual capacity commitments, not guaranteed full-time employee equivalents.",
+      "caption": "Core pod supports the Conservative and Base scenarios; the expanded pod belongs to the Scaled scenario. Verify worker classification from actual working arrangements.",
+      "stages": [
+        {
+          "label": "FT 1: Owner-manager",
+          "value": "Core employee seat; commercial accountability",
+          "numeric_value": 1.0,
+          "detail": "Own pricing, cash forecasting, jurisdiction selection, insurance relationships, and escalation of contractual disputes outside the field team's authority."
+        },
+        {
+          "label": "FT 2: Estimator",
+          "value": "Core employee seat; documented scope",
+          "numeric_value": 1.0,
+          "detail": "Maintain Xactimate estimates, measured quantities, photo references, and supplement support without negotiating policy coverage or claim settlement."
+        },
+        {
+          "label": "FT 3: Project manager",
+          "value": "Core employee seat; delivery control",
+          "numeric_value": 1.0,
+          "detail": "Schedule trades, manage customer change orders, review daily job costs, and verify completion before milestone billing."
+        },
+        {
+          "label": "FT 4: Mitigation lead",
+          "value": "Core employee seat; technical field lead",
+          "numeric_value": 1.0,
+          "detail": "Direct extraction and drying, maintain psychrometric records, verify equipment placement, and escalate contamination or structural hazards."
+        },
+        {
+          "label": "FT 5: Dispatch and receivables",
+          "value": "Core employee seat; scheduling and collections",
+          "numeric_value": 1.0,
+          "detail": "Coordinate arrivals, maintain authorization records, submit invoices, track aging, and reconcile cleared payments to individual job balances."
+        },
+        {
+          "label": "C 1: Mitigation technician",
+          "value": "Core contractor seat; extraction capacity",
+          "numeric_value": 1.0,
+          "detail": "Perform assigned extraction and equipment handling within documented qualifications and the project's hazard-control plan."
+        },
+        {
+          "label": "C 2: Mitigation technician",
+          "value": "Core contractor seat; monitoring capacity",
+          "numeric_value": 1.0,
+          "detail": "Support moisture monitoring, equipment checks, containment tasks, and removal documentation under the agreed project scope."
+        },
+        {
+          "label": "C 3: Reconstruction carpenter",
+          "value": "Core contractor seat; demolition and framing",
+          "numeric_value": 1.0,
+          "detail": "Execute authorized selective demolition and framing after required hazard assessments, permits, and scope boundaries are established."
+        },
+        {
+          "label": "C 4: Reconstruction finisher",
+          "value": "Core contractor seat; interior restoration",
+          "numeric_value": 1.0,
+          "detail": "Deliver drywall, trim, and finish repairs against measured quantities, approved customer changes, and documented quality checks."
+        },
+        {
+          "label": "C 5: Electrical specialist",
+          "value": "Core contractor seat; qualified electrical work",
+          "numeric_value": 1.0,
+          "detail": "Inspect and restore affected electrical systems within applicable licensing, permit, inspection, and safe-isolation requirements."
+        },
+        {
+          "label": "C 6: Plumbing specialist",
+          "value": "Core contractor seat; qualified plumbing work",
+          "numeric_value": 1.0,
+          "detail": "Address authorized plumbing repairs, record source correction evidence, and separate repair charges from mitigation equipment charges."
+        },
+        {
+          "label": "FT 6: Safety and quality lead",
+          "value": "Expansion employee seat; core occupancy zero",
+          "numeric_value": 0.0,
+          "detail": "Activate at scale to audit hazard controls, training, field records, and rework. Core operations retain these responsibilities before this hire."
+        },
+        {
+          "label": "C 7: Flooring specialist",
+          "value": "Expansion contractor seat; core occupancy zero",
+          "numeric_value": 0.0,
+          "detail": "Activate at scale for substrate preparation and floor installation, with moisture acceptance criteria documented before closing assemblies."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-stack",
+      "chart_type": "stacked_comparison",
+      "title": "Startup Capital: Preserve Cash Before Expanding Equipment",
+      "subtitle": "Four buckets total $150,000 within the $75,000–$350,000 range.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values encode the $150,000 reference allocation in USD. Details also provide complete $75,000 lean and $350,000 expanded allocations. Startup capital is funding capacity, not revenue or an immediate operating expense.",
+      "caption": "Lean: $25,000 + $20,000 + $10,000 + $20,000 = $75,000. Reference: $60,000 + $40,000 + $20,000 + $30,000 = $150,000. Expanded: $150,000 + $90,000 + $40,000 + $70,000 = $350,000.",
+      "stages": [
+        {
+          "label": "Working-capital reserve",
+          "value": "$60,000 reference allocation; 40.0%",
+          "numeric_value": 60000.0,
+          "detail": "Lean $25,000; reference $60,000; expanded $150,000. Fund receivable delays and job commitments. At $42,500 monthly Base operating costs, $60,000 covers about 1.41 months before variable direct job costs."
+        },
+        {
+          "label": "Mitigation equipment",
+          "value": "$40,000 reference allocation; 26.7%",
+          "numeric_value": 40000.0,
+          "detail": "Lean $20,000; reference $40,000; expanded $90,000. Prioritize extraction, air movement, dehumidification, moisture meters, protective equipment, and calibrated measurement tools; rent overflow capacity."
+        },
+        {
+          "label": "Vehicle and mobilization setup",
+          "value": "$20,000 reference allocation; 13.3%",
+          "numeric_value": 20000.0,
+          "detail": "Lean $10,000; reference $20,000; expanded $40,000. Fund vehicle deposits or acquisitions, secure storage, load restraint, and initial mobilization equipment; ongoing vehicle costs remain operating expenses."
+        },
+        {
+          "label": "Business and technical setup",
+          "value": "$30,000 reference allocation; 20.0%",
+          "numeric_value": 30000.0,
+          "detail": "Lean $20,000; reference $30,000; expanded $70,000. Fund licensing, training, insurance deposits, estimating setup, dispatch configuration, bookkeeping systems, and initial referral development."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Operationally Ready Restoration Pod",
+      "subtitle": "Four weekly milestones establish evidence, capacity, and cash controls.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone end days. The canonical time to first deal is 1–6 months; this sprint establishes readiness and does not assume a paid job within thirty days. Monthly operating costs span $10,000–$45,000 depending on deployment.",
+      "caption": "Use simulated job files until authorized customer work is available; never fabricate loss evidence, invoices, or insurer responses.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Jurisdiction, scope, and cash plan",
+          "numeric_value": 7.0,
+          "detail": "Map contractor and remediation credentials, define public-adjusting boundaries, select the startup budget, and build a thirteen-week cash forecast separating operating costs from direct job commitments."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Pod, equipment, and safety readiness",
+          "numeric_value": 14.0,
+          "detail": "Assign five employee and six contractor core roles, verify qualifications and worker classification, secure equipment access, and document hazard assessment, respiratory protection, and emergency escalation procedures."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Evidence and billing rehearsal",
+          "numeric_value": 21.0,
+          "detail": "Run a simulated water-loss file through dispatch, photo capture, psychrometric readings, Xactimate scope, customer authorization, job-cost coding, and invoice reconciliation; resolve missing evidence before live use."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Referral activation and measured deployment",
+          "numeric_value": 30.0,
+          "detail": "Contact targeted property managers and referral partners, track the inquiry cohort, and accept only authorized work within capacity. Review weekly cash exposure, receivable aging, safety events, and job contribution."
+        }
+      ]
+    }
+  ]
+}

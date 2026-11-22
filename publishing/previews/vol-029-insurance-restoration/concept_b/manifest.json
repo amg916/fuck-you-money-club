@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-029-insurance-restoration",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1982955,
+      "sha256": "9176d9037cb354a0446a1983d504554421fe2b18d35041d57f6944224a401171"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2619936,
+      "sha256": "0afcf64ac12b4e0290185d508d03f661b36730e5b4cc16b5fc206dd28ff44533"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 552057,
+      "sha256": "ba454b173d27037d8bfa22c2bf379ab7476cdf44c129c6fabb1febbab44ad0da"
+    },
+    "book.epub": {
+      "bytes": 244984,
+      "sha256": "5dd61b3afc70e18b91df26d9570bfa2f63513d15a01c8494835a67538f3285f6"
+    },
+    "art/cover.svg": {
+      "bytes": 3655,
+      "sha256": "124f3872168a0d4253cd51f4bc8d19c2e4c877b4e14ecbdad694b66d9063b532"
+    },
+    "art/scorecard.svg": {
+      "bytes": 57375,
+      "sha256": "eca4bd58de558c508cb7806f61bbe232c3b10d6bf6c689c8ea5cc3fe36653d79"
+    },
+    "art/diag_01.svg": {
+      "bytes": 10071,
+      "sha256": "f70f31cbf91072cc18acc8c976f4a30439591f53148fd11fd5864364dd7b99e1"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7002,
+      "sha256": "04534bb51c21cc1e4aa845fdad79fe341ac376da67e38c45520e751f0049047c"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11116,
+      "sha256": "eae7dcdbc791eb950f62a959f6d12209a2de7e5ddefb0d836d89995234645bfa"
+    },
+    "art/diag_04.svg": {
+      "bytes": 8362,
+      "sha256": "bcea80e0f5b0125d27f91c39124921da65976512f06bfbb2f0c2d57965b72531"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9759,
+      "sha256": "aedf98753ce1f6bc4c8a5861a7198e75bd12c3111f03f6c90092d8ad61c200a1"
+    },
+    "art/diag_06.svg": {
+      "bytes": 15899,
+      "sha256": "a403684f4efa68e55a53acdd9e9f9b16cdcd6fea5a7176fa3f626ddf64a67a5b"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8397,
+      "sha256": "9d31a725e9a8645790f88e0412814b0a96da37a45dece892edaa843dcc8b0984"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8314,
+      "sha256": "4b59a30bc3e84b5e5c613252905171c594a95c223862459a366056dbb84ec68a"
+    }
+  }
+}

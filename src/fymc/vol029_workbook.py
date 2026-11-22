@@ -1,0 +1,703 @@
+from __future__ import annotations
+
+
+def build_volume_029_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-029-insurance-restoration",
+        "volume_id": "vol-029-insurance-restoration",
+        "title": "Insurance Restoration — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Water, Fire, Mold, and Storm "
+            "Restoration: Deal Screening, Cash Float, Psychrometric Evidence, "
+            "Licensing, Dispatch Automation, and Exit-Ready Operating Controls"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Opportunity Underwriting and Counterparty Qualification",
+                "purpose": (
+                    "Qualify restoration opportunities before committing crews, equipment, "
+                    "or working capital. Separate property-owner authorization from insurer "
+                    "payment expectations, document site hazards and license boundaries, "
+                    "and select losses whose technical demands, collection profile, and "
+                    "crew requirements fit the operating model."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Create one record per property and loss event, not one record per "
+                        "referral source. Capture the owner, authorized signer, observed "
+                        "damage, access restrictions, and proposed services before assigning "
+                        "a dispatch priority or quoting an arrival window."
+                    ),
+                    (
+                        "Interview the owner and referral source separately when facts "
+                        "conflict. Record who supplied each statement, distinguish observed "
+                        "conditions from reported causes, and request documents through "
+                        "an access-controlled channel rather than relying on forwarded screenshots."
+                    ),
+                    (
+                        "Screen technical scope against current licenses, trained personnel, "
+                        "equipment availability, and geographic reach. Treat reconstruction, "
+                        "mold work, asbestos disturbance, and roof access as distinct "
+                        "capabilities requiring their own evidence rather than automatic extensions of mitigation."
+                    ),
+                    (
+                        "Build the collection thesis from the signed work agreement, "
+                        "customer payment capacity, documented scope, and invoice terms. "
+                        "An insurer claim number identifies a file; it does not establish "
+                        "coverage, pricing acceptance, or a payment obligation to your company."
+                    ),
+                    (
+                        "Record an accept, revise, or decline decision with a named "
+                        "decision owner and quantified exposure. Route emergency work "
+                        "through the same safety and authorization checks, while keeping "
+                        "initial stabilization scope narrow enough to supervise and document."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Loss identity and referral provenance",
+                        "textarea",
+                        "Identify the property, loss date, referring organization, contact authority, and evidence supporting the reported peril. Explain how duplicate referrals and conflicting descriptions will be resolved before a crew receives dispatch instructions.",
+                        "Job IR-029-014 concerns a burst supply line reported on March 3 at a twelve-unit apartment building. A property manager and plumber referred the same loss. Dispatch merged both leads, retained their separate statements, and recorded the plumber's repair photograph without treating it as a coverage determination.",
+                    ),
+                    field(
+                        "Service vertical and peril fit",
+                        "textarea",
+                        "Classify the requested work as water mitigation, fire cleaning, mold remediation, storm stabilization, or reconstruction. Identify the technical boundaries, specialist dependencies, and excluded activities that make this specific opportunity suitable for the current service platform.",
+                        "The initial package covers extraction, controlled removal of damaged drywall after hazard screening, and structural drying in two units. It excludes roof repair, asbestos disturbance, and contents restoration. A separately qualified contents vendor receives an owner-authorized introduction, with no promise that another party will fund its work.",
+                    ),
+                    field(
+                        "Owner and signer authority",
+                        "textarea",
+                        "Record the legal customer, property ownership evidence, signer capacity, spending authority, and access permissions. Explain what documentation establishes authority for emergency stabilization and what additional authorization is required before expanding into demolition or reconstruction.",
+                        "Oak Street Apartments LLC is the customer; its manager signs under a management agreement allowing emergency expenditures up to $15,000. The proposed $9,800 stabilization scope fits that limit. Any added demolition exceeding the limit requires written authorization from the LLC's designated member before work begins.",
+                    ),
+                    field(
+                        "Payment counterparties and collection thesis",
+                        "textarea",
+                        "Identify the party contractually responsible for payment, invoice recipients, insurer contacts, mortgage interests, and customer funding constraints. Separate factual billing coordination from policy interpretation, settlement negotiation, or representations that insurance proceeds will necessarily cover your charges.",
+                        "The owner remains responsible under the service agreement and receives every invoice. The carrier receives factual documentation at the owner's written direction. A lender may control proceeds, so the office requests disbursement instructions early and models a sixty-day collection period without assuming direct payment from the carrier.",
+                    ),
+                    field(
+                        "Geography and credential fit",
+                        "textarea",
+                        "List the job jurisdiction, contractor classification, remediation credentials, permit triggers, and specialist licenses relevant to the proposed activities. Name the person responsible for checking official records and resolving any mismatch before scheduling that portion of work.",
+                        "The operations coordinator checks the state licensing board and city permit desk for the actual property address. Water extraction fits the company's verified scope, but electrical repairs go to a licensed electrical subcontractor. The job folder stores verification dates, credential numbers, and the subcontractor's insurance evidence.",
+                    ),
+                    field(
+                        "Bounded initial scope and pricing assumptions",
+                        "textarea",
+                        "Describe measurable quantities, access conditions, equipment assumptions, exclusions, and the process for discovering concealed damage. Explain how the customer will authorize changes without confusing an estimating platform's suggested price with an enforceable reimbursement commitment.",
+                        "The initial estimate includes 1,200 square feet of extraction, six air movers, and two dehumidifiers for an estimated three days, subject to documented conditions. Xactimate supplies an estimating reference, not a payment promise. Additional equipment days require technical support, customer communication, and authorization consistent with the agreement.",
+                    ),
+                    field(
+                        "Crew and equipment capacity",
+                        "textarea",
+                        "Map the opportunity to available full-time staff, contractor capacity, vehicle routes, and equipment inventory. Include supervision coverage, travel time, and existing job commitments so an attractive loss does not silently overload the same working crew.",
+                        "The Base model has five full-time staff and six contractor relationships, not eleven interchangeable daily workers. Two technicians and one lead can cover this loss while another technician monitors existing drying jobs. Four additional air movers must be rented, and their delivery charge enters the estimate before acceptance.",
+                    ),
+                    field(
+                        "Site hazards and stop-work triggers",
+                        "textarea",
+                        "Record electrical exposure, structural instability, contaminated water, suspect building materials, occupant vulnerabilities, and required specialist assessments. Define observable conditions that stop work immediately and identify who may release the affected task after hazards are controlled.",
+                        "The lower unit has standing water near an energized panel and ceiling sagging beneath a bathroom. The crew stays outside the affected area until qualified electrical and structural personnel address those hazards. Suspect flooring remains undisturbed pending assessment, and residents receive a documented restricted-access instruction.",
+                    ),
+                    field(
+                        "Evidence readiness and dispute exposure",
+                        "textarea",
+                        "Assess whether the team can obtain baseline photographs, moisture readings, dimensions, equipment records, and signed authorizations. Identify missing evidence that could undermine scope justification, collection, or a later dispute, and assign a practical recovery action.",
+                        "The owner photographed standing water before the plumber arrived, but no moisture map exists. The lead captures an initial grid before extraction where safe, labels unaffected reference locations, and records instrument identity. The estimate flags concealed conditions as unresolved scope questions rather than inserting unsupported quantities.",
+                    ),
+                    field(
+                        "Underwriting decision and exposure limit",
+                        "textarea",
+                        "State the acceptance decision, maximum initial commitment, expected collection timing, technical conditions, and accountable supervisor. Explain how the opportunity fits the candidate's capital-intensive profile without treating the platform score as a substitute for job-level judgment.",
+                        "Accept the $9,800 stabilization phase with a $6,400 cash commitment ceiling and a sixty-day collection assumption. Expansion requires a revised scope and funding review. Candidate 15 ranks twenty-ninth with a 54/100 score, reinforcing the need to protect crew capacity and liquidity rather than chase every referral.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The operations lead and collections owner sign the record only after "
+                    "customer authority, jurisdictional scope, hazard controls, crew availability, "
+                    "and a quantified initial cash exposure are documented; unresolved hazards "
+                    "block the affected work rather than being buried in estimate notes."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
+                "purpose": (
+                    "Translate restoration billings into reconciled job contribution, annual "
+                    "owner profit, and cash requirements. Separate customer claim values "
+                    "from company revenue, budget documentation defects and collection "
+                    "friction once, and test whether payroll and vendors remain funded "
+                    "while receivables age."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Copy the three canonical scenarios before building local assumptions. "
+                        "Preserve their gross restoration revenue, net margins, owner profit, "
+                        "and team counts exactly; label every job illustration or timing "
+                        "sensitivity separately so it cannot overwrite the reference scorecard."
+                    ),
+                    (
+                        "Use completed, billable restoration services as the operating revenue "
+                        "basis and reconcile period recognition with the accountant. Exclude "
+                        "the owner's entire claim value, lender-held proceeds, and unearned "
+                        "customer advances from earned restoration revenue until their treatment is established."
+                    ),
+                    (
+                        "Build a cost bridge that includes materials, subcontractors, employee "
+                        "labor, equipment, overhead, and an explicit defect allowance. Identify "
+                        "which costs are already allocated to jobs before adding any "
+                        "monthly operating allowance to avoid counting the same expense twice."
+                    ),
+                    (
+                        "Calculate receivable and payable exposure using stated timing conventions. "
+                        "Add work performed before invoicing and subtract usable customer "
+                        "funding only when supported by contracts and ledgers; a credit "
+                        "facility is a funding source, not a reduction in exposure."
+                    ),
+                    (
+                        "Stress collection timing and scope reductions independently, then together. "
+                        "Show the additional liquidity required and the effect on profit "
+                        "without silently changing canonical results. Assign collection actions "
+                        "to named owners and preserve evidence supporting every disputed invoice."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Canonical revenue and profit anchor",
+                        "textarea",
+                        "Enter all three annual revenue, margin, profit, and staffing combinations exactly. Define gross restoration billings as the operator's revenue basis, with materials and subcontractors included in costs rather than deducted to create a different revenue measure.",
+                        "Conservative is $500,000 at 8%, producing $40,000 with 5 FT + 6 C. Base is $1,500,000 at 13.0%, producing $195,000 with 5 FT + 6 C. Scaled is $2,500,000 at 18%, producing $450,000 with 6 FT + 7 C, totaling thirteen people.",
+                    ),
+                    field(
+                        "Job volume and realized invoice size",
+                        "textarea",
+                        "Choose a transparent annual job-count and average-invoice combination that reproduces the selected scenario. Distinguish completed invoices from leads, estimates, insurance claim totals, and cash receipts, then state how cancellations and credits affect the count.",
+                        "The Base illustration uses fifty completed jobs at $30,000 each, totaling $1,500,000. A customer's $85,000 total loss claim contributes only our earned $30,000 restoration scope. Five additional estimates that never become authorized work contribute no revenue, and any issued credit reduces the applicable invoice rather than becoming another job.",
+                    ),
+                    field(
+                        "Annual cost bridge to owner profit",
+                        "textarea",
+                        "Allocate the selected scenario's total costs across concrete operating categories and verify that revenue minus every category equals canonical owner profit. State whether subcontractor charges, equipment expenses, and defect provisions are already included before calculating any additional margin.",
+                        "Base costs are materials $360,000, subcontractors $360,000, employee labor $300,000, fleet and equipment $120,000, administration $120,000, and defect allowance $45,000. Their $1,305,000 total leaves $195,000 from $1,500,000 revenue. These are illustrative allocations beneath the fixed Base result, not additional charges outside its margin.",
+                    ),
+                    field(
+                        "Per-job contribution and overhead recovery",
+                        "textarea",
+                        "Translate the annual bridge into a representative job with direct costs, contribution, overhead recovery, and owner profit. Explain the treatment of employee labor and equipment allocations so dispatch decisions do not confuse spare capacity with cost-free production.",
+                        "A $30,000 job carries $7,200 materials, $7,200 subcontractors, $6,000 employee labor, and $2,400 equipment, leaving $7,200 contribution. Administration consumes $2,400 and the defect allowance $900, leaving $3,900 owner profit. Multiplying every amount by fifty reproduces the Base bridge and its 13.0% net margin.",
+                    ),
+                    field(
+                        "Documentation scrub and defect reserve",
+                        "textarea",
+                        "Budget specific losses from unsupported quantities, rework, collection shortfalls, and estimating corrections. Separate the management allowance from actual ledger treatment, explain how realized defects consume the allowance, and prevent duplicate expense recognition or unsupported revenue accruals.",
+                        "The $45,000 annual allowance equals 3% of Base revenue, or $900 per average job. A planning split assigns $18,000 to rework, $15,000 to invoice reductions, and $12,000 to collection loss. Accounting maps actual items to their proper accounts and replaces the planning allowance rather than adding losses twice.",
+                    ),
+                    field(
+                        "Monthly operating expense classification",
+                        "textarea",
+                        "Reconcile the supplied monthly operating range with the specific recurring costs in your model. Identify pass-through production purchases, noncash planning allowances, and amounts already in annual costs so the monthly figure is never mistaken for total business spending.",
+                        "The supplied range is $10,000–$45,000 monthly. This Base illustration uses its $45,000 upper end: $25,000 employee labor, $10,000 equipment, and $10,000 administration. Materials and subcontractors add $60,000 monthly production spending; the $3,750 monthly defect allowance completes average modeled costs of $108,750 without adding overhead again.",
+                    ),
+                    field(
+                        "Receivable aging and collection assumptions",
+                        "textarea",
+                        "Record monthly invoicing, collection days, disputed balances, lender-controlled checks, and the timing convention used in calculations. Separate the date work finishes from invoice issuance so delayed documentation does not disappear inside a deceptively favorable receivable metric.",
+                        "Base invoicing averages $125,000 monthly. Using thirty-day planning months, sixty collection days imply $250,000 receivables. The office separately tracks completed but uninvoiced work, with a two-business-day invoicing target. Joint checks remain open receivables until deposited funds clear; a carrier's verbal payment update is not collected cash.",
+                    ),
+                    field(
+                        "Working-capital float calculation",
+                        "textarea",
+                        "Calculate receivables plus unbilled work and inventory, less eligible supplier payables and usable customer advances. State simplified assumptions, add a distinct operating buffer, and identify the timing risks that could make the actual cash requirement larger.",
+                        "With $250,000 receivables, zero assumed unbilled work, zero incremental inventory, and $60,000 supplier payables at thirty days, operating float is $190,000. Add a $45,000 buffer for $235,000 liquidity. Customer advances are assumed zero; any actual unbilled production or stocked materials would increase this simplified requirement.",
+                    ),
+                    field(
+                        "Startup capital and committed funding",
+                        "textarea",
+                        "Place equipment purchases, setup spending, working capital, and contingency within the supplied startup range. Separate cash already available from conditional borrowing, and explain how owned equipment purchases differ from recurring rental, maintenance, insurance, and fleet expense.",
+                        "A $310,000 startup plan allocates $55,000 to equipment, $20,000 to deposits and training, and $235,000 to liquidity, within the $75,000–$350,000 range. Recurring equipment expense remains in the operating bridge. A lender's unexecuted proposal supplies no usable funding; launch commitments rely on documented cash and executed availability.",
+                    ),
+                    field(
+                        "Collection delay and margin downside",
+                        "textarea",
+                        "Run a timing shock and a separate cost shock against the Base illustration. Quantify incremental funding and revised sensitivity profit, preserve the canonical reference, and state what operational action prevents the modeled downside from becoming an unmanaged cash crisis.",
+                        "Moving collection from sixty to ninety days adds $125,000 receivables and liquidity demand. A separate $30,000 rework overrun beyond the existing allowance reduces sensitivity profit to $165,000, or 11%. Neither changes canonical Base profit of $195,000; management restricts new cash-heavy jobs until funding and defect recovery plans are documented.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The finance owner verifies all three canonical equations, the Base "
+                    "$1,305,000 cost bridge, the $190,000 simplified float, and the $235,000 "
+                    "buffered liquidity requirement. Every sensitivity is labeled, and startup "
+                    "commitments remain within documented available funding rather than projected collections."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "Execution Ledger and Technical QA Pre-Flight",
+                "purpose": (
+                    "Create an auditable path from emergency dispatch through drying "
+                    "verification and final collection. Tie physical conditions to equipment "
+                    "choices, daily records, estimating quantities, and job costs so the "
+                    "team can defend performed work without substituting billing targets "
+                    "for technical judgment."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Assign one job identifier across dispatch, photographs, moisture maps, "
+                        "estimates, purchase orders, and invoices. Preserve original evidence "
+                        "and record corrections separately so a later reviewer can reconstruct "
+                        "what the crew observed, authorized, performed, and billed each day."
+                    ),
+                    (
+                        "Establish the initial safety assessment, water source observations, "
+                        "affected assemblies, and dry reference locations before selecting "
+                        "equipment. Apply the relevant IICRC S500 or S520 process through "
+                        "trained personnel rather than treating a software template as technical direction."
+                    ),
+                    (
+                        "Document ambient temperature, relative humidity, material readings, "
+                        "equipment operation, and changing conditions at defined intervals. "
+                        "Interpret trends against comparable materials and instrument limitations; "
+                        "a single favorable room reading does not establish that concealed assemblies are dry."
+                    ),
+                    (
+                        "Prepare Xactimate scope from measured quantities and actual operations. "
+                        "Support supplements with photographs, logs, authorizations, and task "
+                        "explanations; keep factual construction communications distinct from interpreting "
+                        "policy provisions or negotiating an insured's settlement as their representative."
+                    ),
+                    (
+                        "Reconcile job costs and evidence before sending the final invoice. "
+                        "Require a technical reviewer to examine unresolved moisture, occupant "
+                        "concerns, equipment duration, subcontractor completion, and change documentation "
+                        "before closing the production record or releasing equipment for another loss."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Dispatch packet and job identifier",
+                        "textarea",
+                        "Specify the minimum information that must travel from intake to the crew: job identity, access authority, hazards, approved scope, customer contact, equipment reservation, and escalation route. Include a method for acknowledging instructions when mobile connectivity fails.",
+                        "Dispatch packet IR-029-014 includes the signed stabilization scope, restricted electrical area, manager contact, two assigned technicians, and reserved equipment serials. The lead acknowledges receipt before departure. An encrypted offline copy carries the same revision number, and later synchronization records who added each field rather than replacing the original packet.",
+                    ),
+                    field(
+                        "Initial condition and source assessment",
+                        "textarea",
+                        "Describe observed water or fire conditions, source control, elapsed time, affected materials, and uncertainties requiring specialist review. Explain how changing contamination conditions or concealed damage will trigger reassessment instead of being forced into the first intake classification.",
+                        "The plumber reports the supply line isolated at 08:10; the crew verifies no active flow at 09:05. Water contacted laminate, gypsum, and cabinet bases. The lead documents source information and affected pathways under the applicable S500 assessment process, then reassesses when opening a cavity reveals older staining and odor.",
+                    ),
+                    field(
+                        "Psychrometric measurement plan",
+                        "textarea",
+                        "Define measurement locations, instrument identities, reading frequency, and relevant ambient variables. Explain how temperature, relative humidity, humidity ratio, and equipment inlet or outlet conditions support drying decisions while remaining separate from direct evidence about moisture inside materials.",
+                        "At 09:30, the affected room measures 75 F and 65% relative humidity; dehumidifier inlet and outlet readings are recorded separately. The team logs actual barometric assumptions when deriving humidity ratio with a validated calculator. Raw readings remain attached, and no calculated air metric substitutes for material measurements.",
+                    ),
+                    field(
+                        "Material moisture map and dry reference",
+                        "textarea",
+                        "Identify assemblies, repeatable test locations, meter modes, reference materials, and drying objectives established by the responsible technician. State how readings are compared when instruments produce relative scales rather than directly comparable moisture percentages across different building materials.",
+                        "The map labels twelve gypsum locations and six wood locations, with unaffected comparable references. Wood pin readings use the appropriate correction settings; gypsum relative-scale readings remain labeled as relative values. The lead records a wood target near the verified reference and documents why inaccessible cabinet backing requires additional investigation.",
+                    ),
+                    field(
+                        "Equipment sizing and daily operating log",
+                        "textarea",
+                        "Record the technical rationale for equipment quantity, placement, monitoring, changes, and removal. Tie serial-number deployment hours to observed conditions and equipment performance, explaining how interrupted power or altered containment affects both the drying plan and billed duration.",
+                        "Six air movers and two dehumidifiers begin service after the lead's documented assessment. On day two, one circuit trips for four hours; the log records downtime and the corrective electrical arrangement. Equipment charges follow actual deployment and applicable contract terms, while the drying plan is revised from observed progress.",
+                    ),
+                    field(
+                        "Photograph and evidence chain",
+                        "textarea",
+                        "Define the photo sequence, room identifiers, timestamps, original-file retention, access permissions, and correction history. Include protection for occupant information and explain how edited presentation copies remain traceable to original evidence used for technical review or invoice support.",
+                        "Each room receives overview, damage-detail, measurement-context, and completion photographs labeled with job and room identifiers. CompanyCam exports link to original files in restricted storage. A redacted insurer packet omits unrelated family photographs, while the original evidence remains access-controlled and the export log records its recipient and purpose.",
+                    ),
+                    field(
+                        "Estimate line-item and supplement support",
+                        "textarea",
+                        "Connect each material quantity, labor activity, equipment duration, and disposal charge to measurements or work records. Explain the review process for supplements and identify language that keeps the communication focused on performed construction services rather than policy advocacy.",
+                        "A supplement adds 240 square feet of wet insulation removal supported by cavity photographs, measured dimensions, disposal tickets, and the customer's change authorization. The estimator explains why the material was removed and how quantity was measured. The packet requests review of our invoice support without interpreting coverage or negotiating claim settlement.",
+                    ),
+                    field(
+                        "Job-cost ledger and purchase controls",
+                        "textarea",
+                        "Specify cost codes, purchase authorization thresholds, labor posting deadlines, subcontractor document requirements, and reconciliation ownership. Show how committed costs are visible before invoices arrive so an apparently profitable job does not conceal unposted labor or supplier obligations.",
+                        "IR-029-014 uses separate codes for extraction, demolition, drying, cleaning, and reconstruction. Purchases above $500 require the production manager's documented authorization. Technicians post time daily; the ledger includes a $2,400 subcontract commitment before billing arrives. Weekly review compares actual plus committed costs with the current authorized estimate.",
+                    ),
+                    field(
+                        "Technical closeout and exception handling",
+                        "textarea",
+                        "Define the evidence required to end drying or remediation, remove equipment, and hand work to reconstruction. Identify unresolved conditions that prevent technical closure and specify when independent assessment or a qualified specialist is necessary for the agreed scope.",
+                        "The lead compares final mapped readings with established material references and documents accessible assemblies, remaining limitations, and occupant concerns. One wet cabinet base remains outside the initial scope, so that area stays open for a revised plan. Mold-project verification follows the project specification and applicable jurisdictional independence requirements.",
+                    ),
+                    field(
+                        "Invoice package and ledger release",
+                        "textarea",
+                        "List the signed scope, changes, quantities, equipment logs, completion evidence, invoice terms, and cost reconciliation required for billing. Distinguish production completion, customer acceptance, earned revenue treatment, and actual cash collection so the ledger preserves each milestone separately.",
+                        "The billing packet contains the signed $30,000 scope, approved changes, measured estimate, daily logs, and completion record. Production closes March 12, the invoice issues March 13, and collection remains open until funds clear. The controller reconciles the $26,100 modeled total cost independently from the customer's signature.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The technical lead confirms documented drying or remediation outcomes "
+                    "and explicitly identifies unresolved areas. The estimator and controller "
+                    "then reconcile quantities, equipment duration, authorizations, committed "
+                    "costs, and invoice attachments under one job identifier before billing release."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Licensing, Contract, and Outreach Audit",
+                "purpose": (
+                    "Turn jurisdictional requirements into specific operating records, "
+                    "contract language, and crew instructions. Keep restoration contracting "
+                    "separate from public adjusting, preserve lawful deductible collection, "
+                    "and verify that marketing, hazardous-material work, safety controls, "
+                    "and payment remedies match the actual property and service."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Build the jurisdiction record from the property's location, building "
+                        "use, service scope, and customer type. Retrieve current statutes "
+                        "and licensing-board guidance from official sources, recording the "
+                        "review date and responsible reviewer instead of copying another contractor's checklist."
+                    ),
+                    (
+                        "Audit the work agreement against applicable home-improvement, emergency-service, "
+                        "deposit, cancellation, and change-order requirements. Match each operational "
+                        "promise to a responsible employee and preserve the customer's "
+                        "executed version, including attachments and any legally required notices."
+                    ),
+                    (
+                        "Train estimators and collectors to discuss their own services, "
+                        "quantities, invoices, and factual support. Escalate requests for policy "
+                        "interpretation or settlement representation rather than letting helpful "
+                        "billing coordination become unlicensed public adjusting through scripts or informal messages."
+                    ),
+                    (
+                        "Review site hazards and environmental triggers before disturbance, "
+                        "not after demolition begins. Confirm the applicable worker-protection "
+                        "standard, specialist qualifications, occupant controls, and waste pathway; "
+                        "record objective task restrictions when required assessments or controls are incomplete."
+                    ),
+                    (
+                        "Inspect actual outreach messages, referral payments, deductible language, "
+                        "and collection notices. Assign every correction a deadline and owner, "
+                        "then verify implementation in the live template or workflow rather "
+                        "than marking the issue resolved after a meeting."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Jurisdiction and license register",
+                        "textarea",
+                        "List contractor, mold, electrical, plumbing, roofing, and local permit requirements that apply to the proposed work. Record official-source verification, license holder identity, scope restrictions, renewal dates, and the operational response when the business lacks a required credential.",
+                        "For a Florida mold engagement, the reviewer checks Florida Statutes sections 468.841 through 468.8424 and current DBPR records for assessment and remediation requirements. The worksheet identifies the credentialed entity and checks applicable exemptions and conflict restrictions. Water mitigation credentials alone do not authorize every regulated mold activity.",
+                    ),
+                    field(
+                        "Public-adjusting boundary and escalation",
+                        "textarea",
+                        "Define permitted contractor communications and activities requiring separate public-adjusting authority under the applicable state rules. Identify prohibited role combinations and create an escalation route that does not imply a separate license automatically permits acting in conflicting capacities.",
+                        "For Texas work, the reviewer checks Insurance Code sections 4102.051 and 4102.163 for licensing and conflicts. Staff may explain measured repair quantities and their own invoices, but do not negotiate the owner's policy settlement. A request to argue coverage goes back to the owner and their independently selected representative.",
+                    ),
+                    field(
+                        "Deductible collection and pricing integrity",
+                        "textarea",
+                        "Document how customer deductibles, discounts, promotional credits, and insurer-facing invoices are handled. Cite the applicable jurisdiction's rule and ensure that customer communications cannot disguise a waived deductible through inflated charges, rebates, or inconsistent invoice versions.",
+                        "For Texas property claims, the reviewer applies Insurance Code section 707.002 to deductible payment and Business and Commerce Code section 27.02 to prohibited conduct and required contract terms. The invoice states actual charges; no salesperson offers a hidden rebate or increases line items to offset the customer's deductible.",
+                    ),
+                    field(
+                        "Work agreement and change authorization",
+                        "textarea",
+                        "Identify required contract contents, notices, deposit limits, scope descriptions, payment milestones, and signed-change procedures. Distinguish a jurisdiction-specific requirement from a universal company practice, and explain how the office verifies the correct agreement before collecting money or commencing work.",
+                        "For a covered California home-improvement contract, the reviewer applies Business and Professions Code section 7159, including the generally applicable down-payment limit of $1,000 or 10% of the price, whichever is less. A $30,000 covered contract therefore uses a $1,000 maximum initial down payment, subject to verified statutory applicability.",
+                    ),
+                    field(
+                        "Cancellation rights and emergency requests",
+                        "textarea",
+                        "Assess whether the sales location, solicitation method, customer status, and transaction create cancellation rights. Record required notices and any precisely applicable emergency exception; do not assume that describing damage as urgent automatically removes a customer's statutory rights.",
+                        "The reviewer checks the FTC Cooling-Off Rule, 16 CFR Part 429, and applicable state rules for an in-home sale. Any emergency exception is evaluated against its actual requirements and documented facts. The crew receives a start instruction tied to the reviewed transaction, not a generic prechecked waiver.",
+                    ),
+                    field(
+                        "Lead asbestos and regulated disturbance",
+                        "textarea",
+                        "Record building age, suspect materials, planned disturbance, sampling or assessment needs, specialist assignments, and waste requirements. Explain how emergency stabilization is separated from later renovation activities when environmental rules provide limited exceptions rather than a blanket exemption.",
+                        "A 1965 residence triggers review of EPA renovation requirements under 40 CFR 745.82 and 745.85 before painted surfaces are disturbed. The reviewer separately evaluates OSHA asbestos requirements under 29 CFR 1926.1101. Any emergency provision is applied only to qualifying tasks, with subsequent work returned to the applicable procedures.",
+                    ),
+                    field(
+                        "Worker protection and respiratory program",
+                        "textarea",
+                        "Identify task-specific electrical, fall, respiratory, structural, and exposure controls with a responsible supervisor. State the applicable standard and required training or program records, distinguishing a complete respiratory-protection process from merely purchasing masks or collecting employee acknowledgments.",
+                        "Where required respirator use applies, the safety lead implements 29 CFR 1910.134, including medical evaluation, fit testing, training, and program administration. Roof-related construction work is assessed under 29 CFR 1926.501, and electrical exposure under 29 CFR 1926.416. Task authorization follows verified controls, not equipment availability alone.",
+                    ),
+                    field(
+                        "Outreach scripts and contact permissions",
+                        "textarea",
+                        "Review telephone, text, email, and door-to-door acquisition methods against channel-specific federal and state requirements. Record the source of contact permission where required, suppression procedures, vendor controls, and factual limits on insurance-related statements in advertisements and scripts.",
+                        "The marketing lead reviews calls and texts under 47 U.S.C. 227 and 47 CFR 64.1200, including applicable permission and do-not-call duties. Commercial email follows 15 U.S.C. 7704. The storm-response email identifies the company and unsubscribe method, and states service availability without promising that insurance will pay.",
+                    ),
+                    field(
+                        "Collection remedies and lien calendar",
+                        "textarea",
+                        "Identify contract payment terms, notice requirements, lien deadlines, collection restrictions, and the person authorized to approve escalation. Explain how project location, customer relationship, and claimant status affect remedies, rather than treating one deadline or demand template as universally valid.",
+                        "For a California subcontract assignment, the reviewer checks Civil Code section 8200 for preliminary-notice applicability and timing, then separately calendars recording and enforcement rules for the claimant's role. The office sends an itemized invoice and supporting records first; no automated message threatens a lien before the file-specific prerequisites are verified.",
+                    ),
+                    field(
+                        "Insurance subcontractors and audit evidence",
+                        "textarea",
+                        "Record company coverage, relevant exclusions, subcontractor agreements, worker classification review, and evidence retention. Explain how insurance certificates, policy endorsements, and written scope allocations are checked without assuming that a certificate alone establishes coverage for every restoration hazard.",
+                        "The broker reviews general liability, workers' compensation, vehicle coverage, and pollution-related exposures against water, fire, and mold operations. Six contractor relationships receive written scopes and credential checks; calling someone a contractor does not settle classification. The file retains certificates and relevant endorsements, with renewal tracking assigned to the office manager.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The jurisdiction reviewer records current sources, applicability findings, "
+                    "and corrected live documents. Work outside verified credentials or hazard "
+                    "controls remains unscheduled, and customer-facing scripts contain neither "
+                    "coverage promises nor deductible-offset schemes or unauthorized settlement representation."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
+                "purpose": (
+                    "Automate dispatch, photo organization, and job-cost visibility without "
+                    "automating unsupported decisions. Build a referral engine that rewards "
+                    "documented service quality, then specify human ownership and fallback "
+                    "procedures for missing evidence, integration failures, disputed invoices, "
+                    "and sudden changes in field capacity."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Map the workflow from inbound lead to cleared payment before "
+                        "connecting tools. Define record ownership, required fields, unique "
+                        "identifiers, and permitted state changes so automation accelerates "
+                        "an understandable process rather than spreading inconsistent data across several applications."
+                    ),
+                    (
+                        "Prioritize dispatch, photo documentation, and job-cost tracking because "
+                        "they directly support the canonical automation thesis. Keep technical "
+                        "classification, safety release, customer scope changes, and dispute "
+                        "decisions with accountable people who can inspect the underlying evidence."
+                    ),
+                    (
+                        "Design referral outreach around response reliability, documented work, "
+                        "and clear handoffs. Segment plumbers, property managers, roofers, "
+                        "and facilities teams, but screen compensation arrangements and contact "
+                        "methods against applicable rules before creating recurring campaigns or automated introductions."
+                    ),
+                    (
+                        "Test each integration with duplicate events, missing photographs, "
+                        "revised estimates, disconnected phones, and failed accounting writes. "
+                        "Define retry limits and reconciliation reports; repeated notifications "
+                        "should not create duplicate jobs, duplicate customer messages, or duplicate invoices."
+                    ),
+                    (
+                        "Assign a fallback owner and recovery target to every business-critical "
+                        "automation. Keep customer and occupant information in approved systems, "
+                        "limit vendor access, and rehearse manual dispatch and billing so "
+                        "the team can operate safely during an outage."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "System map and source-of-truth ownership",
+                        "textarea",
+                        "List the selected CRM, dispatch, photo, estimate, accounting, and document systems with ownership for each core record. Explain which system governs customer identity, job status, authorized scope, and receivable balance when synchronized copies disagree.",
+                        "Jobber manages scheduling, CompanyCam stores field-photo references, Xactimate holds estimating revisions, and QuickBooks Online governs posted receivables. The signed agreement repository controls authorized scope. Job IR-029-014 appears in every system, but a scheduling status cannot override the accounting balance or turn an unsigned estimate into customer authorization.",
+                    ),
+                    field(
+                        "Dispatch rules and human release",
+                        "textarea",
+                        "Define priority inputs, service-radius checks, crew skills, equipment constraints, and escalation conditions for automated scheduling suggestions. State which decisions remain manual and how the system prevents an urgent lead from bypassing site hazards or credential limitations.",
+                        "A dispatch rule flags active water intrusion within twenty miles for immediate coordinator review. It proposes the nearest qualified crew with available equipment, but the coordinator verifies authority and known hazards before release. Reports of unstable ceilings or energized standing water trigger specialist escalation instead of a faster technician arrival promise.",
+                    ),
+                    field(
+                        "Photo completeness and evidence checks",
+                        "textarea",
+                        "Specify required photo categories, room tags, upload deadlines, missing-evidence alerts, and reviewer responsibilities. Explain how automation checks completeness without inventing image descriptions, inferring concealed damage, or treating a timestamp alone as proof of the work performed.",
+                        "At each monitoring visit, the application checks for room overview, meter-context image, equipment image, and visit notes. A missing category creates a task for the lead within two hours. Computer-generated labels remain suggestions; the estimator verifies images and quantities before they support any invoice or supplement.",
+                    ),
+                    field(
+                        "Job-cost alerts and committed-cost capture",
+                        "textarea",
+                        "Define how time entries, purchases, subcontract commitments, and revised scope feed the cost dashboard. Set alert thresholds tied to the authorized estimate, and explain who investigates exceptions before a margin warning becomes an unsupported customer charge.",
+                        "The average $30,000 Base job has $22,800 direct production costs before administration and defect allowance. An alert triggers when actual plus committed direct costs exceed $23,940, a 5% overrun. The manager checks duplicate purchases, scope changes, and labor productivity before deciding whether any properly authorized additional work is billable.",
+                    ),
+                    field(
+                        "Referral partner qualification and offer",
+                        "textarea",
+                        "Identify target partner segments, service promises, referral handoff details, and compensation restrictions. Build an offer based on measurable operational performance and customer choice rather than implied insurer endorsement, guaranteed coverage, or undocumented payments for access to vulnerable owners.",
+                        "The team approaches ten plumbers and five property managers with a documented emergency contact process, arrival updates, and photo-supported completion summaries shared with customer permission. The offer contains no insurer affiliation claim and no per-claim payment. Any proposed referral compensation receives jurisdiction-specific review before a salesperson can offer it.",
+                    ),
+                    field(
+                        "Outbound funnel and capacity forecast",
+                        "textarea",
+                        "Connect outreach activity to conversations, qualified referrals, accepted jobs, and delivered revenue using explicit conversion assumptions. Distinguish annual planning arithmetic from early launch evidence, and cap accepted work according to actual crew, equipment, and liquidity availability.",
+                        "An annual illustration uses 1,000 targeted partner touches, 200 conversations, 100 qualified referrals, and fifty completed jobs at $30,000, reproducing $1,500,000 Base revenue. These are planning conversions, not observed results. A monthly review replaces assumptions with cohort evidence and rejects overflow when supervision or cash exposure exceeds limits.",
+                    ),
+                    field(
+                        "Review requests and retention loop",
+                        "textarea",
+                        "Specify when customers receive completion follow-up, maintenance information, and an optional review request. Explain how negative feedback enters corrective action, how public responses protect customer information, and how referral success is measured without selectively filtering unhappy customers.",
+                        "Every completed customer receives the same optional review invitation after the completion discussion, regardless of satisfaction score. A reported odor creates a service investigation, not a request to revise the rating. Public replies omit loss details, and partner reporting uses permissioned operational summaries rather than customer claim documents.",
+                    ),
+                    field(
+                        "Integration retry and duplicate prevention",
+                        "textarea",
+                        "Define event identifiers, retry behavior, reconciliation ownership, and failure queues for cross-system updates. Include protections against duplicate invoices and repeated customer messages, and describe how accounting-posting failures become visible before staff rely on an incomplete dashboard.",
+                        "An invoice export uses job ID, invoice number, and revision as an idempotency key. A timeout prompts a destination lookup before another write attempt. After three controlled attempts, the record enters a review queue, and the controller checks source totals against QuickBooks Online before any payment reminder is sent.",
+                    ),
+                    field(
+                        "Access retention and vendor controls",
+                        "textarea",
+                        "Define access roles, multifactor authentication, device protections, retention ownership, and restrictions on external processing of property evidence. Explain how temporary subcontractor access expires and how the company verifies restoration of records from backups rather than merely assuming backups exist.",
+                        "Technicians access assigned jobs, estimators access scope evidence, and accounting controls bank details. Temporary contractor links expire after seven days unless renewed for a documented need. The administrator requires multifactor authentication, prohibits uploads to unapproved analysis services, and tests restoration of a sample job folder quarterly with results recorded.",
+                    ),
+                    field(
+                        "Outage dispute and incident fallback",
+                        "textarea",
+                        "Create practical fallback steps for dispatch outages, missing data, safety incidents, and disputed invoices. Assign an owner, communication method, recovery target, and reconciliation task while ensuring that an automation failure cannot authorize unsafe work or unauthorized claim representation.",
+                        "During a mobile outage, the coordinator uses the encrypted offline roster and numbered paper visit sheets. The lead phones safety changes immediately; the office reconciles records within one business day after recovery. A disputed invoice freezes automated reminders for review, while the collector continues only factual, documented billing communications.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The workflow owner demonstrates one successful job transfer, one duplicate "
+                    "event test, one failed accounting-write recovery, and one offline dispatch "
+                    "exercise. Referral scripts are reviewed, data access is bounded, and each "
+                    "critical exception has a named human owner and tested recovery procedure."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch, Pod KPI Scorecard, and Exit-Readiness Ledger",
+                "purpose": (
+                    "Convert the operating design into a thirty-day readiness sprint "
+                    "with measurable responsibilities, evidence, and cash limits. Track "
+                    "technical quality and collections alongside growth, preserve the "
+                    "canonical small-team economics, and build records that remain useful "
+                    "when ownership or management changes."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Treat the first thirty days as a readiness and controlled "
+                        "market-entry sprint, not proof that annual economics have been "
+                        "achieved. The supplied time to first deal is one to six "
+                        "months, so early milestones must include credible nonrevenue evidence."
+                    ),
+                    (
+                        "Assign every deliverable to a named role with a due date, "
+                        "required evidence, and spending limit. Order work so licenses, "
+                        "safety capability, agreements, and cash availability precede live "
+                        "production commitments rather than becoming cleanup tasks after the first loss."
+                    ),
+                    (
+                        "Build the pod around the canonical full-time and contractor "
+                        "counts, then define actual responsibilities and available hours. "
+                        "Do not treat a contractor relationship as guaranteed capacity "
+                        "or equate thirteen people with thirteen full-time employees in the scaled model."
+                    ),
+                    (
+                        "Review a compact weekly scorecard covering response, documentation, "
+                        "drying exceptions, job contribution, receivables, safety, and available "
+                        "liquidity. Preserve metric definitions and cohort dates so a "
+                        "short launch period cannot make annualized performance look more certain than it is."
+                    ),
+                    (
+                        "Create the exit-readiness folder while records are fresh: agreements, "
+                        "licenses, evidence samples, job-cost reconciliations, receivable aging, "
+                        "and process ownership. Protect customer information and disclose "
+                        "documents externally only through an authorized diligence process with controlled access."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days one through seven readiness plan",
+                        "textarea",
+                        "Set first-week deliverables for jurisdiction review, service boundaries, insurance, funding, customer agreements, and equipment sourcing. Specify evidence of completion and distinguish reversible planning work from spending or customer commitments that require documented authority.",
+                        "By day seven, the operations lead completes the jurisdiction matrix, the broker returns a coverage review, and the controller verifies available funding against the $310,000 startup plan. The manager selects equipment suppliers but releases purchases only under assigned spending authority. The contract packet receives a dated, jurisdiction-specific review.",
+                    ),
+                    field(
+                        "Days eight through fourteen technical rehearsal",
+                        "textarea",
+                        "Design a controlled rehearsal covering dispatch, hazard assessment, moisture mapping, photographs, equipment logging, estimating, and accounting transfer. Define pass criteria and corrective actions without claiming that a demonstration property establishes competence for every water, fire, or mold loss.",
+                        "The crew rehearses a documented mock water-loss workflow on an authorized training setup. It captures twelve labeled readings, uploads the required photo sequence, builds a measured estimate, and posts a test invoice to a segregated test environment. Any missing evidence becomes a correction task before that workflow handles customer work.",
+                    ),
+                    field(
+                        "Days fifteen through twenty-one market entry",
+                        "textarea",
+                        "Set a modest partner-outreach and intake target that fits the verified operating footprint. Specify the offer, qualification criteria, recordkeeping, and capacity limits, while separating actual qualified opportunities from meetings, purchased leads, and optimistic pipeline estimates.",
+                        "The owner schedules ten plumber conversations and five property-manager introductions, using the reviewed service script. Each opportunity must pass the first worksheet before acceptance. Two promising conversations remain pipeline records rather than revenue, and the coordinator declines simultaneous deployments that would leave existing drying jobs without adequate monitoring.",
+                    ),
+                    field(
+                        "Days twenty-two through thirty review",
+                        "textarea",
+                        "Define the final sprint review using actual evidence from rehearsals, outreach, and any completed work. State how the team proceeds if no contract has closed, given the supplied first-deal range, and identify the conditions for continued controlled deployment.",
+                        "On day thirty, the team reviews funding, credential checks, rehearsal defects, partner responses, and any signed work. Zero closed jobs remains compatible with the one-to-six-month first-deal range. The next month retains limited deployment capacity and targeted outreach; it does not annualize an unsigned estimate or hire against assumed receipts.",
+                    ),
+                    field(
+                        "Pod roles and canonical staffing bridge",
+                        "textarea",
+                        "Assign the five Base full-time positions and six contractor relationships to specific responsibilities, then describe the scaled change. Preserve the canonical headcounts while explaining cross-training, supervisory coverage, contractor availability, and tasks that cannot safely be combined.",
+                        "Base roles are an owner-operator, estimator-project manager, lead technician, technician, and office coordinator, supported by six contractor relationships. The illustrative $300,000 employee-labor budget averages $60,000 loaded per full-time position and requires local validation. Scaled adds one full-time role and one contractor relationship, producing 6 FT + 7 C.",
+                    ),
+                    field(
+                        "Pod operating KPI definitions",
+                        "textarea",
+                        "Define response, evidence completeness, invoice speed, receivable age, and margin metrics with numerators, denominators, owners, and review frequency. Include technical exceptions and safety events so sales growth cannot conceal deteriorating documentation, unmonitored drying, or unsafe production practices.",
+                        "The weekly scorecard tracks acknowledged dispatches within fifteen minutes, complete visit packets divided by required visits, invoices issued within two business days of billing readiness, and aged receivables by invoice date. The production lead also reports unresolved moisture exceptions and incidents. Targets guide review; missed targets retain their actual values.",
+                    ),
+                    field(
+                        "Economic score and scenario review",
+                        "textarea",
+                        "Restate the candidate's score components and canonical economic outcomes as fixed reference data. Explain how actual results will be compared without changing the scoring model, and identify the capital or labor constraints that the operating score makes especially important.",
+                        "The score is 54/100: revenue potential 24, margin potential 13, team efficiency 5, startup accessibility 5, and automation potential 7. Annual owner profit anchors remain $40,000 Conservative, $195,000 Base, and $450,000 Scaled. Actual cohort margins are reported separately, with particular attention to staffing intensity and cash tied up in receivables.",
+                    ),
+                    field(
+                        "Risk register and cash intervention triggers",
+                        "textarea",
+                        "Create measurable triggers for claim disputes, cash-flow gaps, safety incidents, and documentation failures. Assign a response owner and a practical intervention that protects existing commitments rather than assuming new sales, future insurer payments, or unavailable borrowing will resolve the problem.",
+                        "If available liquidity falls below the modeled $45,000 buffer, the controller updates a thirteen-week cash forecast and reviews new commitments daily. Invoices older than sixty days receive documented collection review. A serious site hazard stops the affected task immediately, while recurring missing monitoring records trigger retraining and supervised visits.",
+                    ),
+                    field(
+                        "Exit-readiness and transferable evidence",
+                        "textarea",
+                        "List records that demonstrate repeatable operations, defensible revenue, clean receivables, equipment ownership, and qualified personnel. Identify transfer restrictions and customer-data controls, and distinguish a useful internal diligence folder from an authorized external disclosure or a promised transaction outcome.",
+                        "The internal folder contains monthly job-cost reconciliations, signed scope samples, aging reports, equipment titles, credential records, and documented system ownership. Customer examples are redacted for preliminary review. The manager flags nontransferable licenses, consent-dependent contracts, and referral concentration before any buyer discussion, and releases documents only through an authorized access process.",
+                    ),
+                    field(
+                        "Day-thirty decision and next commitments",
+                        "textarea",
+                        "Record the continue, correct, or pause decision with supporting evidence, remaining constraints, next-month spending limits, and responsible owners. Separate readiness accomplishments from revenue achievements and preserve a clear list of unfinished work rather than declaring the entire operation complete prematurely.",
+                        "Decision: continue controlled market entry after verified licenses, funded liquidity, and a successful rehearsal; correct two photo-tagging defects before the next deployment. No revenue milestone is claimed because no job has closed. The owner authorizes $3,000 of next-month outreach within the existing administration budget, with weekly cash and capacity review.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner and controller sign a day-thirty decision supported by "
+                    "completed readiness evidence, actual pipeline results, a funded cash "
+                    "forecast, defined staffing responsibilities, and an exception list. "
+                    "Canonical annual outcomes remain reference scenarios, while incomplete "
+                    "tasks and unearned revenue remain explicitly outside completed results."
+                ),
+            },
+        ],
+    }

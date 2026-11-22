@@ -191,6 +191,7 @@ The thirty-five mapped plays (`Track 01 + Track 02`) are `parasitic_seo`, `compe
 | **Vol. 026** | **Government Surplus Auctions** (`#026`, `62/100`) | `77,754` (`2,262–2,450`/ch) | `48` tables / `342` rows (`10.50` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `6` plays | `225`p Dig / `368`p Print / `84`p WB (`7,209`w) |
 | **Vol. 027** | **Business Acquisition** (`#027`, `57/100`) | `78,138` (`2,208–2,549`/ch) | `48` tables / `344` rows (`10.37` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `7` plays | `229`p Dig / `371`p Print / `85`p WB (`7,236`w) |
 | **Vol. 028** | **Commercial Cleaning Contracts** (`#028`, `56/100`) | `74,656` (`2,212–2,416`/ch) | `48` tables / `331` rows (`10.38` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `4` plays | `227`p Dig / `368`p Print / `84`p WB (`6,914`w) |
+| **Vol. 029** | **Insurance Restoration** (`#029`, `54/100`) | `75,411` (`2,239–2,464`/ch) | `48` tables / `331` rows (`10.05` w/cell) | `48` (`12` callouts) | `180` links / `175` videos (`175` harvested) | `5` plays | `227`p Dig / `376`p Print / `85`p WB (`7,363`w) |
 
 ### Built-Volume Unit Economics
 
@@ -273,7 +274,7 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 | **#26** | **Government Surplus Auctions** *(Vol. 026 Built & QA-Verified)* | Surplus asset trading | **62/100** (`±6` Mod) | `20/14/12/8/8` | 5 (`2 FT + 3 C`) | \$150k–\$1.0M | \$12,000–\$200,000 | T1, T2 | `6` |
 | **#27** | **Business Acquisition** *(Vol. 027 Built & QA-Verified)* | Operating ownership | **57/100** (`±6` Mod) | `24/16/7/2/8` | 10 (`7 FT + 3 C`) | \$750k–\$3.0M | \$60,000–\$540,000 | T1, T2 | `7` |
 | **#28** | **Commercial Cleaning Contracts** *(Vol. 028 Built & QA-Verified)* | Facility services | **56/100** (`±6` Mod) | `21/12/6/11/6` | 9 (`5 FT + 4 C`) | \$250k–\$1.2M | \$20,000–\$192,000 | T1, T2 | `4` |
-| **#29** | **Insurance Restoration** | Property restoration | **54/100** (`±6` Mod) | `24/13/5/5/7` | 11 (`5 FT + 6 C`) | \$500k–\$2.5M | \$40,000–\$450,000 | T2, T1 | `5` |
+| **#29** | **Insurance Restoration** *(Vol. 029 Built & QA-Verified)* | Property restoration | **54/100** (`±6` Mod) | `24/13/5/5/7` | 11 (`5 FT + 6 C`) | \$500k–\$2.5M | \$40,000–\$450,000 | T2, T1 | `5` |
 
 ---
 

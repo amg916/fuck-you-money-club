@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "344355bc7f264d308c53b1e14781c1b6976ef25946c654b32d73ad02bd9304e0",
-    "brand/brand_system.json": "f82a44c263008f13c9878a797aa0089bc9f7a00300e039c881552a9ef104f1c1",
-    "catalog/pipeline_29_candidates.json": "c992214232d8842f9757eef326fbc52839bf6527cf141b7c7cf1c62fc19ad547",
-    "research/research_database_summary.json": "99cce439769a4066ab1ee6c99747c0db423fa781e21f9bb7eda3c4a4672dccc4",
+    "audit/existing_work_audit.json": "df8e719044490fd0afa9f3ee2877bd62a6fb14a82439a06e5f5a7d87a98c1be4",
+    "brand/brand_system.json": "abb9682f8315c135d6d5619d40e4c7d6b6766dfc2e8192a7fca394b324c963d8",
+    "catalog/pipeline_29_candidates.json": "0c99774a364188d9d128f152ddb13d2680d13daab7fd56a4a5c4cb7947875f53",
+    "research/research_database_summary.json": "a1a59b2e80bd67d709db430a311f35c64875649e45c8cfc68d0c6e47e460c334",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -509,6 +509,24 @@
     "volumes/vol-028-commercial-cleaning-contracts/manuscript.json": "bf8559f4cc21615e29ea73175decac01702485ce1f25ade837cc63be7be3ce02",
     "volumes/vol-028-commercial-cleaning-contracts/metadata.json": "480e8ec2d05ebdecd8789136bbb06a66d06e7f66b6c0c73bdd603b075a3e38b1",
     "volumes/vol-028-commercial-cleaning-contracts/scorecard.json": "efe37848e556115150de9391171e3079adb40ee23ad7c5bf6eeb65c89a245ee7",
-    "volumes/vol-028-commercial-cleaning-contracts/workbook.json": "0ae74c799c8e763a0b4d30b0c5dbef6ca40c966ecdeae308b0a91ee48fed54de"
+    "volumes/vol-028-commercial-cleaning-contracts/workbook.json": "0ae74c799c8e763a0b4d30b0c5dbef6ca40c966ecdeae308b0a91ee48fed54de",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-01.md": "9c5659a0a20d7612a8327b0f26ed264d1d0c33a19cd6218da13f12553927f13b",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-02.md": "ca39f6740ef06959d499c70f2f12c6981525d3bdae6bb185600f35ebbf6b089e",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-03.md": "4d2b603d5f21dcb34a98644fb3d25e4079a39e5baea61d017c75aece68f00d7a",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-04.md": "9e5071e3f33642c21c4250c29c514b87e9b7cfc280c4d07736dde238863594e5",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-05.md": "a6856bb6d554030dc35990062d0f3ebb2d07cf8a61e9c37fcd6c1e9e1b58d969",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-06.md": "36cce4df2d5f42bd1bb3efafd2f3faa5477dd1e90bea9e3997b143dedb60372f",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-07.md": "3204976e2607838c3083a8b44eb67b316ce634055621fa5ab06fbddfe2569d95",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-08.md": "84266ca473f45bbc9178efc5b7ca0ab39d23f3a8122b6e168c7c9fe9e01d7afa",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-09.md": "ece7808711921efeb5f0972774fffd0647e49de0607a41b3c49beabed20a91f8",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-10.md": "a9306e661b41bc1ba77b383f300602f3e51ffb96c2af091e9428dba24cc9df18",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-11.md": "6c2c7205525cb636ac62ffa172180a062091c0e622572b0905ed31545c727b5d",
+    "volumes/vol-029-insurance-restoration/chapters/chapter-12.md": "1f6711c4739609b8e106e35bcd83d0fef2a4ba15b09efd9b156a019851ae78ff",
+    "volumes/vol-029-insurance-restoration/diagrams_data.json": "15ce65f7b82e7b5b353b0fc880135dca5fc7921e4a6987687ad4bfa7bbbd7a88",
+    "volumes/vol-029-insurance-restoration/graphics_reviews.json": "33a7e656f21fcdb748a10e8989250dc06765ff7ed576e21aa31a312907583de9",
+    "volumes/vol-029-insurance-restoration/manuscript.json": "e0ec085ab7522b51e8e25d5babc6c32ae58968540c7ae2b517553321d90874ab",
+    "volumes/vol-029-insurance-restoration/metadata.json": "cca0cda0b0835dddab5a9ffed5d35092b878eaaae4ac540d1a3f95233ce4330c",
+    "volumes/vol-029-insurance-restoration/scorecard.json": "5df030050acbbb5212c3c453438f0540695e069827545c34673843e8d17181dd",
+    "volumes/vol-029-insurance-restoration/workbook.json": "441da4bb68cbe243633f1405d7906a594128d8d2a334c3a2a14820fd0298f8a0"
   }
 }

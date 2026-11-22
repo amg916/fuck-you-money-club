@@ -1,0 +1,80 @@
+{
+  "volume_id": "vol-029-insurance-restoration",
+  "volume_slug": "vol-029-insurance-restoration",
+  "volume_number": 29,
+  "site_ui": {
+    "cover": [
+      "INSURANCE",
+      "RESTORATION"
+    ],
+    "deck": [
+      "DOCUMENT PSYCHROMETRICS. SCOPE ACCURATELY.",
+      "FINANCE CARRIER FLOAT."
+    ],
+    "lead": "High-Ticket Water Mitigation, Contents Packout & Commercial Storm Restoration Backed by Auditable Moisture Logs and Clean Carrier Billing",
+    "summary": "Separate licensed contracting from public adjusting, never rebate deductibles, and bridge mortgage two-party check float with strict AR controls.",
+    "chapters": [
+      "Business model & revenue boundaries",
+      "Decision-makers & payment rails",
+      "Unit economics & margin waterfall",
+      "Startup capital & lean stack",
+      "Beginner traps & failure modes",
+      "Sourcing & first deals",
+      "End-to-end operating blueprint",
+      "Public records, APIs & tooling",
+      "Contracts, statutes & scripts",
+      "Automation & distribution loops",
+      "Small-team pod & exit valuation",
+      "First 30-day launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Mine high-intent deal triggers"
+      ],
+      [
+        "UNDERWRITE",
+        "Screen margin, float & rules"
+      ],
+      [
+        "ENGAGE",
+        "Execute mandate or pre-sell"
+      ],
+      [
+        "DELIVER",
+        "Run standardized SOP & ledger"
+      ],
+      [
+        "VERIFY",
+        "Audit quality, scrubs & statutes"
+      ],
+      [
+        "COMPOUND",
+        "Reconcile cash & scale pod"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "INSURANCE RESTORATION",
+  "subtitle": "The Complete Playbook for Insurance Restoration: $500,000–$2,500,000 USD in Annual Gross Restoration Billings with a 5 FT + 6 C (11 People) Core Pod, Expanding to 13 at Scale",
+  "chapter_count": 12,
+  "total_word_count": 75411,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 54,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T04:31:35Z"
+}

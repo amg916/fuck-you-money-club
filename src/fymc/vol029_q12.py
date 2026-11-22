@@ -1,0 +1,674 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-30-day-insurance-restoration-launch-sprint",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching insurance restoration, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Five-Play Dispatch Sprint Using IICRC Drying Records, Xactimate Evidence, OSHA Controls, and Public-Adjusting Boundaries",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #15, Insurance Restoration, ranks #29 with a Money-to-Manpower Score "
+        "of 54/100: this is a capital- and labor-intensive operating business, not a "
+        "claims-arbitrage shortcut. Map the launch into five plays: water mitigation, "
+        "fire and soot cleaning, mold remediation, storm stabilization and reconstruction, "
+        "and evidence-led estimating and collections. The first month establishes a "
+        "5 FT + 6 C pod, proves safe dispatch, builds IICRC-aligned records, and limits "
+        "cash exposure before expanding. Canonical annual owner profit is $40,000 "
+        "Conservative, $195,000 Base, and $450,000 Scaled; these are scenario outcomes, "
+        "not first-month promises. Daily deliverables feed Day 30/60/90 decisions using "
+        "document completeness, contribution margin, collection aging, capacity, and "
+        "funded runway. Unsafe work stops immediately; unproven demand earns a bounded "
+        "repair experiment rather than automatic expansion."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$500,000",
+            "context": "Annual gross restoration billings; materials and subcontractors remain costs.",
+            "note": "8% net margin; $40,000 annual owner net profit; 5 FT + 6 C.",
+        },
+        {
+            "label": "Base",
+            "value": "$1,500,000",
+            "context": "Annual gross restoration billings; materials and subcontractors remain costs.",
+            "note": "13.0% net margin; $195,000 annual owner net profit; 5 FT + 6 C.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$2,500,000",
+            "context": "Annual gross restoration billings; materials and subcontractors remain costs.",
+            "note": "18% net margin; $450,000 annual owner net profit; 6 FT + 7 C.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1-7: Fund the Pod and Define Exactly What It May Sell",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with five explicit operating plays rather than an unrestricted promise "
+                    "to restore every insured loss. For this chapter, the mapping is water "
+                    "extraction and structural drying; fire and soot cleaning; mold containment "
+                    "and remediation; storm stabilization and reconstruction; and evidence-led "
+                    "estimating, supplements, and collections. The fifth play supports the other "
+                    "four and must never double-count their invoices as additional revenue. "
+                    "Assign the five full-time seats to an owner/general manager, estimator/project "
+                    "manager, dispatch/accounts-receivable coordinator, lead mitigation technician, "
+                    "and second mitigation technician. Designate six individual contract resources "
+                    "for roofing, carpentry, electrical work, plumbing, specialized remediation, "
+                    "and overflow field labor. These are six people, not six unlimited crews. "
+                    "Record each person's actual weekly availability, credentials, response radius, "
+                    "and substitution limits. Use qualified external specialists where the work "
+                    "requires independence, but charge their services to the job rather than "
+                    "pretending they expand internal capacity. Initially permit one active "
+                    "mitigation site per two-person field crew and one separately supervised "
+                    "reconstruction job. The owner handles overflow coordination, not simultaneous "
+                    "unqualified technical work. Reserve protected estimating and collection blocks "
+                    "daily; losing those blocks converts completed production into disputed "
+                    "receivables instead of usable cash. Treat classification and overtime "
+                    "obligations as staffing inputs, not optional paperwork."
+                ),
+                (
+                    "Fund a bounded experiment before buying a warehouse of drying equipment. "
+                    "An illustrative $125,000 launch authorization, within the stated $75,000-$350,000 "
+                    "startup range, allocates $30,000 to vehicles and equipment deposits or purchases, "
+                    "$10,000 to initial insurance, credentials, training, and setup, $45,000 to "
+                    "the first month's operating cash envelope, and $40,000 to protected reserve. "
+                    "Inside that operating envelope, budget $27,000 for loaded payroll across "
+                    "five full-time seats, $8,000 for recurring overhead, and at most $10,000 "
+                    "for incremental pilot-job outlays. Replace these illustrative allowances "
+                    "with actual local quotes before committing. The $35,000 recurring overhead "
+                    "fits the canonical $10,000-$45,000 monthly operating range; subcontractor "
+                    "and material spending still requires a separate job-level cash schedule. "
+                    "Track gross disbursements and receipts separately: collections do not silently "
+                    "increase the authorized spending ceiling. Release reserve only against a "
+                    "documented revised cash plan. At $35,000 monthly fixed overhead and a "
+                    "45% contribution margin after variable job costs, operating break-even "
+                    "requires approximately $77,778 monthly billings. That arithmetic exposes "
+                    "why the Conservative case cannot carry this particular launch overhead "
+                    "indefinitely. Use rentals and staged purchasing to preserve cash, not "
+                    "unpaid labor or unsupported reimbursement assumptions."
+                ),
+                (
+                    "Days 1-3 establish the service territory, licensing matrix, customer agreement, "
+                    "and role boundaries before outreach generates emergencies. Contractor and "
+                    "remediation requirements vary by state and locality; record the authority, "
+                    "credential holder, expiration date, and permitted scope for each offered "
+                    "service. Florida provides a concrete boundary example: Fla. Stat. "
+                    "§ 626.854 distinguishes public adjusting from a contractor explaining "
+                    "their own construction or repair bid. Train staff to describe observed "
+                    "damage, performed work, quantities, and prices without negotiating policy "
+                    "coverage for the insured. Days 4-5 establish safety procedures and validate "
+                    "equipment through a controlled exercise. OSHA requirements apply according "
+                    "to the task and employment setting; construction respiratory protection "
+                    "under 29 CFR 1926.103 incorporates 29 CFR 1910.134. Required respirator "
+                    "use needs the applicable written program, medical evaluation, training, "
+                    "and fit testing before exposure. Days 6-7 prove dispatch and accounting "
+                    "with a simulated loss, including an after-hours escalation. Treat IICRC "
+                    "S500 and S520 as technical standards, not statutes or automatic insurer "
+                    "payment rules. A qualified technical lead must select procedures appropriate "
+                    "to the actual loss. Open sales only for scopes that passed the exercise; "
+                    "keep unsupported specialties off the service menu."
+                ),
+            ],
+            "table": {
+                "caption": "Week One Daily Ownership, Deliverables, and Release Evidence",
+                "headers": [
+                    "Day and accountable role",
+                    "Required operating deliverable",
+                    "Evidence required before advancing",
+                    "Failure response and spending boundary",
+                ],
+                "rows": [
+                    [
+                        "Day 1: owner establishes territory and scope",
+                        "Map five plays against local credential requirements",
+                        "Save authority links and verified credential records",
+                        "Remove unsupported services before any customer outreach",
+                    ],
+                    [
+                        "Day 2: owner confirms the eleven-person roster",
+                        "Assign five employees and six named contractors",
+                        "Record rates, availability, insurance, and classification review",
+                        "Do not count unavailable contractors as capacity",
+                    ],
+                    [
+                        "Day 3: estimator defines customer contracting boundaries",
+                        "Separate work authorization from insurance coverage discussions",
+                        "Review deductible wording and state adjusting restrictions",
+                        "Reject scripts promising coverage or unlawful rebates",
+                    ],
+                    [
+                        "Day 4: lead technician prepares exposure controls",
+                        "Document hazard assessment and respiratory program requirements",
+                        "Verify task-specific training and required medical clearance",
+                        "Suspend exposure tasks until controls are effective",
+                    ],
+                    [
+                        "Day 5: field pair validates drying equipment",
+                        "Test meters, dehumidifiers, containment, and electrical loading",
+                        "Save serial numbers and controlled measurement results",
+                        "Rent verified substitutes instead of deploying defects",
+                    ],
+                    [
+                        "Day 6: dispatcher runs the emergency simulation",
+                        "Route intake through authorization and crew assignment",
+                        "Capture timestamps and complete the escalation drill",
+                        "Narrow service hours if response promises fail",
+                    ],
+                    [
+                        "Day 7: owner reconciles the launch ledger",
+                        "Approve cost codes and bounded spending envelopes",
+                        "Match cash balances against all committed purchases",
+                        "Freeze new commitments exceeding the authorized ceiling",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before the First Occupied-Property Dispatch",
+                "body": "Every check needs recorded evidence and an accountable person; a verbal assurance does not release a crew.",
+                "items": [
+                    "Verify the actual jurisdiction's contractor and remediation requirements against the named credential holder and the proposed work scope.",
+                    "Confirm customer authority, written work authorization, payment terms, and a script that does not promise coverage or negotiate the insured's claim.",
+                    "Complete the task-specific hazard assessment, required respiratory protections, electrical checks, and emergency contact briefing before exposure.",
+                    "Reserve the job's expected cash outlay, assign two available field technicians, and confirm who will review drying records before invoicing.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8-14: Generate Qualified Demand and Build Defensible Job Files",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Week two tests whether a narrow service promise produces qualified demand "
+                    "without exhausting the pod. Build a list of thirty local referral accounts "
+                    "across plumbers, property managers, roofers, and facilities operators. Seek "
+                    "ten substantive conversations by Day 14 and twenty by Day 30; count a "
+                    "conversation only when someone discusses an actual service need, territory, "
+                    "and response expectations. Ask for inclusion on an emergency contact list "
+                    "rather than implying insurer endorsement. Record referral source, loss date, "
+                    "property location, customer authority, apparent hazard, and requested service "
+                    "in a simple CRM. A qualified opportunity requires a reachable authorized "
+                    "buyer, an in-territory loss, a permitted scope, and an agreed next action. "
+                    "An unanswered contact form does not qualify. Test phone coverage within "
+                    "five minutes during advertised staffed hours, but offer arrival times only "
+                    "after checking crew location and hazards. Because the canonical time to "
+                    "first deal is one to six months, zero completed jobs during this week "
+                    "does not independently invalidate the business. It does prohibit claims "
+                    "that unit economics have been demonstrated. Track outreach effort and "
+                    "conversion by source before purchasing more leads; expensive calls outside "
+                    "the licensed service scope merely accelerate cash consumption."
+                ),
+                (
+                    "Create one job identifier across CompanyCam or an equivalent photo system, "
+                    "Xactimate, dispatch, and QuickBooks Online job costing. For water mitigation, "
+                    "capture the source condition, affected materials, room dimensions, moisture "
+                    "map, and a suitable unaffected reference where available. Record temperature "
+                    "and relative humidity with location, timestamp, instrument identification, "
+                    "and relevant psychrometric calculations; distinguish ambient conditions from "
+                    "material moisture readings. Equipment placement and changes need a stated "
+                    "drying objective, not just a photograph of running machines. Track daily "
+                    "readings while active drying continues and investigate stalled progress "
+                    "before extending rental days. Fire files require material-specific cleaning "
+                    "tests, soot observations, and decisions about salvage versus replacement. "
+                    "Mold files need the assessed scope, containment plan, exposure controls, "
+                    "and any jurisdiction-required assessment or clearance arrangements. Storm "
+                    "files need safe-access decisions, temporary protection details, and separation "
+                    "of emergency work from reconstruction. Photos support facts; they do not "
+                    "establish policy coverage. Keep original files and edit history, restrict "
+                    "access to assigned staff, and exclude unnecessary occupant documents from "
+                    "images. Have the estimator audit the file before the crew demobilizes, "
+                    "while missing measurements can still be recovered without another disruptive "
+                    "visit to the property."
+                ),
+                (
+                    "Use the estimator's first Xactimate exercise to expose unsupported line "
+                    "items before a customer sees an invoice. Select the relevant price list "
+                    "and date, measure quantities, distinguish removal from replacement, and "
+                    "attach evidence for equipment duration, labor exceptions, and material "
+                    "selection. A supplement should explain a factual difference between the "
+                    "documented scope and the earlier estimate; it is not a device for adding "
+                    "unperformed work. Separate contractor pricing communication from activity "
+                    "requiring a public-adjuster license. The accounts-receivable coordinator "
+                    "can send the contractor's invoice, provide records, explain payment terms, "
+                    "and request status without making coverage arguments on the customer's "
+                    "behalf. For residential work disturbing painted surfaces in covered "
+                    "pre-1978 housing, evaluate EPA's Renovation, Repair and Painting requirements "
+                    "under 40 CFR Part 745 before demolition. Evaluate asbestos and other "
+                    "suspect materials through qualified procedures rather than assuming every "
+                    "wet wall is safe to remove. On Day 14, score the complete simulated "
+                    "file and any live files against the same checklist. Require every "
+                    "critical authorization and safety item, plus at least 95% of all "
+                    "applicable documentation fields. Record legitimate inapplicability with "
+                    "a specific reason instead of blank cells or invented measurements."
+                ),
+            ],
+            "table": {
+                "caption": "Week Two Referral and Documentation Production Schedule",
+                "headers": [
+                    "Day and primary operating play",
+                    "Concrete deliverable for the assigned owner",
+                    "Required evidence and measurement standard",
+                    "Constraint protecting the existing small pod",
+                ],
+                "rows": [
+                    [
+                        "Day 8: dispatcher organizes all five plays",
+                        "Build thirty qualified local referral account records",
+                        "Record territory, contact role, and service relevance",
+                        "Exclude accounts outside supported travel and scope",
+                    ],
+                    [
+                        "Day 9: owner begins targeted referral conversations",
+                        "Discuss response expectations with five relevant accounts",
+                        "Log actual needs and agreed follow-up actions",
+                        "Avoid paid commitments before measuring source quality",
+                    ],
+                    [
+                        "Day 10: field lead tests water documentation",
+                        "Produce moisture maps and timestamped psychrometric records",
+                        "Tie readings to instruments and drying objectives",
+                        "Use controlled exercises when no customer authorizes work",
+                    ],
+                    [
+                        "Day 11: estimator prepares fire cleaning records",
+                        "Build material-specific test and salvage decision templates",
+                        "Show observation, proposed method, and customer authorization",
+                        "Exclude hazardous specialties lacking qualified available resources",
+                    ],
+                    [
+                        "Day 12: lead technician reviews mold boundaries",
+                        "Document containment requirements and local assessment separation",
+                        "Verify credential scope and independent testing arrangements",
+                        "Do not sell remediation before prerequisites exist",
+                    ],
+                    [
+                        "Day 13: project manager prepares storm workflows",
+                        "Separate temporary protection from permanent reconstruction estimates",
+                        "Record safe access and licensed trade assignments",
+                        "Keep one supervised reconstruction slot as maximum",
+                    ],
+                    [
+                        "Day 14: estimator audits evidence and collections",
+                        "Complete the first end-to-end invoice packet review",
+                        "Require all critical records and 95% completeness",
+                        "Repair missing evidence before sending unsupported charges",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make the File Collectible While the Crew Is Still There",
+                "body": "Experienced restoration operators prevent collection friction at the property instead of trying to repair the record weeks later.",
+                "items": [
+                    "Photograph meter placement and record the material being measured; a detached screen reading cannot establish where moisture remained.",
+                    "Save the Xactimate price-list identifier and estimate revision history so a supplement can explain changed quantities without obscuring the original scope.",
+                    "Record why each dehumidifier or air mover remains deployed, then compare drying progress before extending equipment days.",
+                    "Call the customer before the final crew visit to identify access, punch-list, and invoice-delivery problems while correction still costs one trip.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Days 15-21: Run Controlled Production and Close the Cash Loop",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Week three converts preparation into a controlled production cycle when "
+                    "authorized demand exists. Dispatch only after confirming the signed scope, "
+                    "site contact, hazard review, equipment availability, and cash reservation. "
+                    "Hold a fifteen-minute morning huddle covering the two field technicians, "
+                    "contractor commitments, pending estimates, and collection blockers. Count "
+                    "travel, setup, cleaning, equipment handling, and documentation as scheduled "
+                    "work rather than hiding them outside utilization. Cap committed field "
+                    "hours at 80% of paid available hours during the pilot, leaving the "
+                    "balance for emergency response, training, and corrections. Do not imply "
+                    "around-the-clock coverage from two technicians without a funded lawful "
+                    "rota. If a storm creates multiple calls, triage by safety, authorized "
+                    "scope, and capacity; refer excess work to vetted alternatives with the "
+                    "customer's permission instead of accepting impossible arrival commitments. "
+                    "Contractor mobilization must identify the individual performing the work "
+                    "and the employee reviewing it. The estimator remains accountable for "
+                    "scope changes even when a trade contractor proposes them. On a quiet "
+                    "day, run a timed tabletop exercise and label it as such. A rehearsal "
+                    "can prove routing and recordkeeping, but it cannot prove customer "
+                    "conversion, realized margin, or payment speed."
+                ),
+                (
+                    "Close daily job costs before discussing growth. Code technician hours, "
+                    "payroll burden, contractor invoices, consumed materials, disposal, equipment "
+                    "rental, and attributable transport to the job. Reconcile how employee "
+                    "labor appears in the contribution calculation: if regular payroll remains "
+                    "in fixed overhead, do not deduct it again as variable cost. Also "
+                    "calculate a fully burdened job margin that allocates regular labor, "
+                    "so apparently attractive jobs cannot conceal inefficient field production. "
+                    "For the gate model, contribution means collectible billed revenue less "
+                    "incremental job costs, with regular payroll held in fixed overhead. "
+                    "Use a 45% minimum pilot contribution target and show disputed amounts "
+                    "separately from collectible revenue. For example, an authorized $10,000 "
+                    "job with $5,500 incremental costs contributes $4,500 before fixed payroll "
+                    "and overhead; it does not produce $4,500 owner profit. A further "
+                    "$1,000 unsupported supplement stays outside the gate calculation until "
+                    "the amount has a defensible contractual basis and collection assessment. "
+                    "Review purchase commitments as well as paid invoices, because an unpaid "
+                    "subcontractor bill still consumes runway. Flag any job whose revised "
+                    "direct-cost forecast rises more than 10% above its approved budget, "
+                    "and investigate quantities, crew productivity, and scope before accepting "
+                    "another similar loss."
+                ),
+                (
+                    "Use Days 19-21 to exercise the entire collection chain, not merely "
+                    "produce an attractive estimate. Deliver the completed work packet within "
+                    "two business days after the relevant milestone, subject to actual contract "
+                    "billing terms. Confirm receipt with the responsible payer and customer, "
+                    "record objections verbatim, and assign each objection to scope evidence, "
+                    "work quality, billing error, or coverage discussion requiring a separately "
+                    "authorized professional. Do not tell the customer that insurer delay "
+                    "erases contractual obligations, and do not promise that the insurer "
+                    "will pay. Handle deductibles according to the contract and applicable "
+                    "state restrictions; Texas Insurance Code § 707.002 prohibits specified "
+                    "deductible assistance by providers of insurance-funded services. Never "
+                    "manufacture invoice credits to conceal a prohibited waiver. Track "
+                    "receivables from invoice date and also track days past contractual "
+                    "due date, because those measures answer different questions. Prepare "
+                    "a thirteen-week cash forecast with weekly receipts, payroll, taxes, "
+                    "trade payments, rentals, and committed purchases. Stress it by delaying "
+                    "expected claim-related receipts thirty days. The owner reviews the "
+                    "lowest projected cash balance, not just the ending balance, and "
+                    "reduces commitments before an otherwise profitable job causes a payroll "
+                    "shortfall. Collections activity must remain inside the contractor's "
+                    "permitted role throughout."
+                ),
+            ],
+            "table": {
+                "caption": "Week Three Production, Cost Control, and Collection Evidence",
+                "headers": [
+                    "Day and accountable operating role",
+                    "Required production or cash deliverable",
+                    "Quantitative evidence used for release",
+                    "Corrective action before additional job acceptance",
+                ],
+                "rows": [
+                    [
+                        "Day 15: dispatcher releases the first controlled assignment",
+                        "Confirm scope, hazards, staffing, and reserved job cash",
+                        "Keep committed field hours below 80% capacity",
+                        "Refer overflow rather than overbooking field technicians",
+                    ],
+                    [
+                        "Day 16: field lead reviews active drying",
+                        "Compare current measurements against the initial baseline",
+                        "Explain equipment changes using observed drying progress",
+                        "Investigate stalled progress before adding rental days",
+                    ],
+                    [
+                        "Day 17: estimator reconciles revised job quantities",
+                        "Link each scope change to supporting site evidence",
+                        "Flag forecast direct-cost increases exceeding 10% budget",
+                        "Resolve scope and productivity causes before replication",
+                    ],
+                    [
+                        "Day 18: coordinator completes the job-cost ledger",
+                        "Match time records, purchase orders, and contractor charges",
+                        "Calculate contribution without deducting regular payroll twice",
+                        "Correct coding before reporting any margin result",
+                    ],
+                    [
+                        "Day 19: estimator assembles the billing packet",
+                        "Connect authorization, measurements, photographs, and completed quantities",
+                        "Send milestone invoices within two business days",
+                        "Remove unsupported charges instead of obscuring evidence",
+                    ],
+                    [
+                        "Day 20: coordinator confirms delivery and objections",
+                        "Record payer receipt and assign each collection blocker",
+                        "Separate invoice aging from contractual overdue aging",
+                        "Route coverage advocacy outside the contractor role",
+                    ],
+                    [
+                        "Day 21: owner stress-tests thirteen-week cash",
+                        "Delay expected claim-related receipts by thirty days",
+                        "Include committed unpaid purchases in projected outflows",
+                        "Stop new commitments before projected cash turns negative",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Release a bounded assignment",
+                    "action": "Verify scope, customer authority, hazard controls, and the job cash reservation.",
+                    "detail": "The dispatcher records the assigned field pair, available equipment, escalation contact, and promised response window before mobilization.",
+                },
+                {
+                    "step": 2,
+                    "title": "Capture evidence during production",
+                    "action": "Record measurements, quantities, crew time, equipment decisions, and approved scope changes.",
+                    "detail": "The lead technician uploads original records daily; the estimator checks critical omissions before the next site visit.",
+                },
+                {
+                    "step": 3,
+                    "title": "Reconcile scope against actual cost",
+                    "action": "Match completed quantities to cost codes and the supported invoice.",
+                    "detail": "Show incremental contribution and fully burdened job margin separately, with disputed charges excluded from the gate calculation.",
+                },
+                {
+                    "step": 4,
+                    "title": "Confirm receipt and forecast cash",
+                    "action": "Send the billing packet, confirm delivery, and update expected receipts.",
+                    "detail": "The coordinator assigns objections without negotiating coverage; the owner checks the stressed weekly cash trough before accepting more work.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Days 22-30 and Reviews at 60/90: Kill, Fix, or Scale on Evidence",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Finish the month with a deliberate closing sequence. Day 22 reconciles "
+                    "every open authorization and purchase commitment. Day 23 audits all "
+                    "pilot files, including failed or declined assignments, so the review "
+                    "does not cherry-pick easy losses. Day 24 interviews referral partners "
+                    "and customers about response, clarity, and unfinished work. Day 25 "
+                    "ranks lead sources by qualified opportunities rather than call volume. "
+                    "Day 26 reprices the least attractive scope using observed costs. "
+                    "Day 27 runs the thirty-day receipt-delay stress test again. Day 28 "
+                    "checks actual employee hours and contractor availability against the "
+                    "next fortnight's commitments. Day 29 prepares a decision packet "
+                    "containing cash, aging, documentation, safety, contribution, and conversion "
+                    "measures. Day 30 records a signed Kill, Fix, or Scale decision "
+                    "with the owner, due date, and next cash ceiling. These thresholds "
+                    "are proposed management rules, not scorecard forecasts or insurer "
+                    "standards. Apply the strictest failed condition first. A critical "
+                    "safety or licensing defect stops the affected service immediately, "
+                    "regardless of sales. Insufficient evidence normally means Fix with "
+                    "a bounded test, not a fabricated passing score. Kill means "
+                    "stopping new commitments in the failed play and arranging an "
+                    "orderly completion or transfer of existing obligations."
+                ),
+                (
+                    "At Day 30, permit only limited scale within the existing pod "
+                    "when at least three completed, cost-reconciled customer jobs support "
+                    "a weighted contribution margin of 45% or better, every critical "
+                    "record is present, overall documentation reaches 95%, and post-commitment "
+                    "cash covers sixty days of fixed overhead plus forecast incremental "
+                    "outlays. Without that sample, use Fix even if the rehearsal was "
+                    "excellent. Twenty referral conversations producing fewer than three "
+                    "qualified opportunities trigger a fourteen-day channel repair experiment; "
+                    "they do not prove that a one-to-six-month sales cycle has failed. "
+                    "At Day 60, require at least six completed jobs, 90% on-time "
+                    "billing, no more than 15% of receivables over sixty days old, "
+                    "and the same cash and contribution tests before adding volume. "
+                    "At Day 90, require ten completed jobs and two consecutive months "
+                    "with realized contribution covering actual fixed overhead. Receivable "
+                    "tests use dollars, not invoice counts; disputed amounts remain "
+                    "visible in the denominator. Fewer observations keep the decision "
+                    "in Fix with an explicit cash limit. If funded runway falls "
+                    "below thirty days and no committed replenishment or executable "
+                    "cost reduction exists, stop acquisition immediately rather than "
+                    "waiting for the next calendar review."
+                ),
+                (
+                    "Scale the bottleneck that evidence identifies, not the owner's enthusiasm. "
+                    "A Day 30 pass permits at most a 20% increase in accepted "
+                    "weekly job hours while preserving the 80% scheduling ceiling; it "
+                    "does not authorize another full-time hire. A Day 60 pass may "
+                    "expand a proven referral source within existing capacity. Moving "
+                    "toward the Scaled configuration requires the Day 90 tests, a "
+                    "funded role-specific hiring plan, and explicit conversion from five "
+                    "employees plus six contractors to six employees plus seven "
+                    "contractors. That is thirteen people, not an automated eleven-person "
+                    "pod. Keep canonical annual economics intact: $500,000 gross restoration "
+                    "billings at 8% net produces $40,000 owner profit; $1,500,000 at "
+                    "13.0% produces $195,000; $2,500,000 at 18% produces $450,000. "
+                    "The corresponding total annual cost envelopes are $460,000, $1,305,000, "
+                    "and $2,050,000. Materials and subcontractors belong inside those costs. "
+                    "Customer claim totals, property values, and insurer reserves are "
+                    "not operator revenue. The launch budget and contribution tests "
+                    "do not derive these annual net margins; actual overhead must "
+                    "be reconciled separately. In particular, the illustrative launch "
+                    "cost structure needs repair before it could support the "
+                    "Conservative outcome. Dispatch automation, photo capture, and job-cost "
+                    "tracking improve control, but cannot replace licensed judgment, "
+                    "field labor, or collectible customer demand."
+                ),
+            ],
+            "table": {
+                "caption": "Day 30/60/90 Decision Matrix: Apply Stops First, Then Every Scale Condition",
+                "headers": [
+                    "Metric and defined measurement basis",
+                    "Day 30 threshold and required response",
+                    "Day 60 threshold and required response",
+                    "Day 90 threshold and required response",
+                ],
+                "rows": [
+                    [
+                        "Safety and credentials across each offered service",
+                        "Stop affected work for any unresolved critical defect",
+                        "Reopen only after documented correction and competent review",
+                        "Remove repeatedly uncontrolled services from the operating portfolio",
+                    ],
+                    [
+                        "Completed customer jobs with reconciled actual costs",
+                        "Require three jobs before limited within-pod scaling",
+                        "Require six jobs before expanding proven referral spending",
+                        "Require ten jobs before considering additional permanent capacity",
+                    ],
+                    [
+                        "Weighted contribution after incremental job costs only",
+                        "Scale at 45% or higher across qualifying jobs",
+                        "Fix 35%-44.9%; stop expansion below 35% after six jobs",
+                        "Kill the play below 35% after two documented repairs",
+                    ],
+                    [
+                        "Post-commitment cash coverage of future operating outflows",
+                        "Scale requires sixty days fixed overhead plus incremental outlays",
+                        "Below thirty days without funded remedy stops acquisition",
+                        "Retain sixty-day coverage after proposed hiring and purchases",
+                    ],
+                    [
+                        "Critical records and applicable documentation field completion",
+                        "Require all critical records and 95% overall completeness",
+                        "Missing critical records suspend dispatch for affected scopes",
+                        "Maintain 95% completeness across the ten-job review sample",
+                    ],
+                    [
+                        "Referral conversations converted into qualified service opportunities",
+                        "Below three opportunities from twenty conversations triggers Fix",
+                        "Test one repaired channel for fourteen bounded days",
+                        "Retire channels failing two fully executed repair experiments",
+                    ],
+                    [
+                        "Milestone invoices delivered within two business days",
+                        "Measure every eligible invoice and repair delivery delays",
+                        "Require 90% timely delivery before increasing accepted volume",
+                        "Maintain 95% timely delivery before adding permanent capacity",
+                    ],
+                    [
+                        "Receivable dollars outstanding beyond sixty invoice-date days",
+                        "Inspect inherited balances; immature invoices cannot prove collections",
+                        "Require aged balance at or below 15% total receivables",
+                        "Require aged balance at or below 10% total receivables",
+                    ],
+                    [
+                        "Zero receivables and actual customer payment evidence",
+                        "Zero receivables pass aging only with documented customer payments",
+                        "No billed customer work remains insufficient scaling evidence",
+                        "Reconcile bank receipts against invoices before marking collection success",
+                    ],
+                    [
+                        "Realized monthly contribution compared with actual fixed overhead",
+                        "Calculate the shortfall without substituting projected annual profit",
+                        "Fix pricing or overhead when contribution misses coverage",
+                        "Require two consecutive months covering actual fixed overhead",
+                    ],
+                    [
+                        "Accepted field hours versus paid available field hours",
+                        "Limit growth to 20% while remaining below 80% utilization",
+                        "Expand only when contractor availability is specifically confirmed",
+                        "Add the sixth employee only after funded capacity approval",
+                    ],
+                    [
+                        "Repair experiment duration and incremental cash authorization",
+                        "Cap each fourteen-day experiment at $3,000 within existing envelope",
+                        "Renew once only with measurable improvement and funded runway",
+                        "Stop failed experiments rather than extending unsupported spending",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Scale the restoration file you can collect, not the claim value you can photograph.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Assign the five full-time seats and six named contract resources, then publish a capacity calendar that permits only supported scopes and realistic response windows.",
+        "Authorize a locally quoted startup budget, separate capital purchases from recurring overhead, and enforce the first-month operating cash ceiling before committing to equipment.",
+        "Complete the Day 1-14 licensing, safety, dispatch, referral, and documentation deliverables; label simulations separately from completed customer work.",
+        "Connect every live job across photo records, Xactimate revisions, job-cost codes, signed authorizations, invoice delivery, and bank receipts.",
+        "Prepare the Day 30 decision packet with sample size, weighted contribution, critical-record completeness, aged receivables, and a thirty-day receipt-delay stress test.",
+        "Record Day 30/60/90 Kill, Fix, or Scale decisions, fund each repair experiment explicitly, and reconcile any expansion to the canonical eleven-person or thirteen-person configuration.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "Fla. Stat. § 626.854 — Public adjuster definition and contractor boundaries",
+            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0626/Sections/0626.854.html",
+            "relevance": "Use Florida's specific boundary when drafting contractor scripts: explaining the contractor's bid differs from representing the insured in claim negotiation.",
+        },
+        {
+            "title": "Texas Insurance Code § 707.002 — Prohibited deductible assistance",
+            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.707.htm#707.002",
+            "relevance": "Review Texas service contracts, credits, and sales language against restrictions on paying, waiving, rebating, or otherwise assisting with covered deductibles.",
+        },
+        {
+            "title": "29 CFR 1926.103 — Respiratory protection in construction",
+            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-E/section-1926.103",
+            "relevance": "Construction respiratory protection incorporates the requirements of 29 CFR 1910.134; evaluate the actual restoration task before crew release.",
+        },
+        {
+            "title": "29 CFR 1910.134 — Respiratory protection program requirements",
+            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-I/section-1910.134",
+            "relevance": "Required respirator use entails applicable program administration, medical evaluation, fit testing, equipment selection, and training obligations.",
+        },
+        {
+            "title": "40 CFR 745.85 — Work practice standards for covered renovations",
+            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.85",
+            "relevance": "Evaluate covered painted-surface disturbance before demolition and apply required containment, cleaning, verification, and emergency-renovation provisions as applicable.",
+        },
+        {
+            "title": "40 CFR 745.89 — Firm certification for covered renovation work",
+            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.89",
+            "relevance": "Verify firm certification requirements before offering or performing renovation work governed by EPA's lead-based paint renovation rules.",
+        },
+        {
+            "title": "29 U.S.C. § 207 — Maximum hours and overtime requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/29/207",
+            "relevance": "Budget covered nonexempt employee overtime when designing after-hours dispatch and emergency staffing instead of assuming unpaid response capacity.",
+        },
+    ],
+}

@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 4709,
-  "raw_video_count": 4709,
+  "abridged_video_count": 4884,
+  "raw_video_count": 4884,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-22T04:19:48+00:00",
+      "generated_at": "2026-11-22T04:31:34+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-22T04:19:48Z",
+  "generated_at": "2026-11-22T04:31:34Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 3714,
-      "tip_count": 7542,
-      "channel_count": 2389,
+      "video_count": 3858,
+      "tip_count": 7775,
+      "channel_count": 2470,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -74,6 +74,13 @@
           "duration": "00:05:41"
         },
         {
+          "video_id": "ppn4akh1gPo",
+          "title": "How To price a Job? Profit Margin Vs Markup: Most Roofing Contractors don't know this",
+          "author": "Roofing Insights",
+          "url": "https://www.youtube.com/watch?v=ppn4akh1gPo",
+          "duration": "00:04:17"
+        },
+        {
           "video_id": "8eHInIdNfa0",
           "title": "The Ultimate SaaS Unit Economics Tutorial",
           "author": "Eric Andrews",
@@ -86,16 +93,18 @@
           "author": "John Colley | The Investment Banking Practitioner",
           "url": "https://www.youtube.com/watch?v=ha9dRzcYak4",
           "duration": "00:10:27"
-        },
-        {
-          "video_id": "SPl9Y_xMJHA",
-          "title": "Freight Broker Commission Percentage | Everything you need to know! 🚚",
-          "author": "Freight 360",
-          "url": "https://www.youtube.com/watch?v=SPl9Y_xMJHA",
-          "duration": "00:04:59"
         }
       ],
       "top_timestamped_insights": [
+        {
+          "tip_paraphrase_summary": "Right? You you work for free. That's cool. Good. I've never met a public adjuster who works for free. That's not what I said.…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:02:22",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=142s",
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "verbatim_research_only": true
+        },
         {
           "tip_paraphrase_summary": "0:03:15.0 S1: Here are the answers, those things... So as far as an investigator commission capas, usually the biggest thing, how much am I…",
           "category": "Pitfall / Hard No",
@@ -176,23 +185,14 @@
           "video_title": "Don't be a Victim of Broker NDA Agreements",
           "author": "David C Barnett Small Business and Deal Making SMB",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Could get anything. So this business is reaching out to those folks, letting know the good news, there's money they could claim and see…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:05:14",
-          "link": "https://www.youtube.com/watch?v=lzU09FRqmhg&t=314s",
-          "video_title": "How To Claim Surplus Funds From Foreclosure",
-          "author": "Bob Diamond - America's Tax Sale Attorney",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form of",
         "form that",
-        "form for",
         "form is",
+        "form for",
         "form to",
         "form the",
         "form or",
@@ -200,34 +200,34 @@
         "form a",
         "form your",
         "form in",
-        "form on",
         "form so",
+        "form on",
         "form where",
-        "form with",
         "form like",
+        "form with",
         "court order",
         "form as",
-        "form it",
         "form if",
-        "quiet title",
+        "form it",
         "form I",
+        "quiet title",
         "form at",
-        "form uh",
         "form their",
+        "form uh",
         "form which",
         "form called",
         "form content",
         "letters of administration",
+        "form an",
         "form um",
         "Chapter 7",
-        "form an",
-        "form below",
         "form but",
         "form here",
         "form we",
+        "form below",
         "form because",
-        "form right",
-        "form they"
+        "form well",
+        "form right"
       ],
       "tools_and_portals": [
         "Google",
@@ -236,9 +236,9 @@
         "Excel",
         "CSV",
         "Ancestry",
+        "Bing",
         "FamilySearch",
         "https://probatemastery.com",
-        "Bing",
         "https://www.govconwinners.com/",
         "https://youtu.be/YyPdhpdEs5c",
         "https://excesselite.com",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 3605,
-      "tip_count": 7517,
-      "channel_count": 2205,
+      "video_count": 3740,
+      "tip_count": 7663,
+      "channel_count": 2291,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -433,42 +433,42 @@
         "form and",
         "form that",
         "form is",
-        "form to",
         "form the",
+        "form to",
         "form for",
         "form a",
         "form you",
         "form or",
         "form your",
         "form in",
-        "court order",
         "form on",
+        "court order",
         "quiet title",
         "form below",
         "form where",
-        "form with",
         "form so",
+        "form with",
         "form like",
         "form it",
         "Chapter 7",
-        "letters of administration",
         "form I",
-        "form their",
         "form if",
+        "form their",
+        "letters of administration",
         "Chapter 13",
+        "form as",
         "form but",
         "Form uh",
-        "form as",
         "form at",
-        "form which",
-        "form Commercial",
-        "form um",
         "form we",
-        "protection act",
+        "form which",
         "form an",
+        "form Commercial",
         "form here",
-        "property Act",
-        "warranty deed"
+        "form um",
+        "protection act",
+        "form will",
+        "property Act"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -480,8 +480,8 @@
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "FamilySearch",
         "Bing",
+        "FamilySearch",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "https://TaxLienSchool.com",
@@ -504,8 +504,8 @@
         "https://youtu.be/VunK8iso33g",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
-        "https://www.youtube.com/surplusfunds101",
         "PACER",
+        "https://www.youtube.com/surplusfunds101",
         "https://winnerswaybook.com/",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.unclaimedceo.com/linkme",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 986,
-      "tip_count": 2398,
-      "channel_count": 648,
+      "video_count": 1002,
+      "tip_count": 2407,
+      "channel_count": 663,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -687,10 +687,10 @@
         "form on",
         "form we",
         "form where",
-        "court order",
         "form your",
-        "Property Act",
+        "court order",
         "form if",
+        "Property Act",
         "form in",
         "form it",
         "form so",
@@ -707,9 +707,9 @@
         "affidavit of heirship",
         "form as",
         "form due",
+        "form I",
         "form today",
-        "form all",
-        "form because"
+        "form all"
       ],
       "tools_and_portals": [
         "Google",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 3913,
-      "tip_count": 5244,
-      "channel_count": 2470,
+      "video_count": 4063,
+      "tip_count": 5690,
+      "channel_count": 2558,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -911,8 +911,8 @@
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form of",
         "form that",
         "form is",
         "form to",
@@ -932,25 +932,25 @@
         "form as",
         "form below",
         "form I",
-        "form it",
         "form if",
+        "form it",
         "form at",
         "form which",
         "form called",
         "form their",
         "form content",
+        "form here",
+        "form but",
         "Form uh",
         "form um",
-        "court order",
-        "form but",
-        "form here",
         "form we",
-        "form Commercial",
+        "court order",
         "form an",
+        "form Commercial",
+        "form will",
         "form they",
         "Chapter 13",
-        "Chapter 7",
-        "form from"
+        "Chapter 7"
       ],
       "tools_and_portals": [
         "Google",
@@ -960,10 +960,10 @@
         "CSV",
         "Ancestry",
         "https://excesselite.com",
+        "Bing",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
         "FamilySearch",
-        "Bing",
         "https://www.instagram.com/erizzyy/",
         "https://TaxLienSchool.com",
         "https://www.surplusfunds101.com/freecallingscript",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 2622,
-      "tip_count": 1345,
-      "channel_count": 1643,
+      "video_count": 2678,
+      "tip_count": 1369,
+      "channel_count": 1680,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1157,9 +1157,9 @@
         "form that",
         "form to",
         "form for",
-        "form or",
-        "form is",
         "form you",
+        "form is",
+        "form or",
         "form the",
         "form a",
         "form your",
@@ -1172,13 +1172,13 @@
         "form with",
         "court order",
         "form as",
-        "form I",
         "form if",
+        "form I",
         "Form uh",
         "form um",
         "form which",
-        "form it",
         "form at",
+        "form it",
         "form but",
         "form their",
         "form below",
@@ -1186,12 +1186,12 @@
         "form content",
         "Protection Act",
         "Chapter 7",
-        "form Commercial",
         "form here",
-        "Chapter 13",
         "form because",
+        "form Commercial",
+        "Chapter 13",
         "form right",
-        "form them"
+        "form we"
       ],
       "tools_and_portals": [
         "LinkedIn",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 3703,
-      "tip_count": 6543,
-      "channel_count": 2296,
+      "video_count": 3844,
+      "tip_count": 6853,
+      "channel_count": 2376,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1393,20 +1393,20 @@
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form of",
         "form that",
         "form for",
         "Form is",
         "form to",
         "form the",
-        "form or",
         "form you",
+        "form or",
         "form a",
-        "form on",
         "form your",
-        "form in",
+        "form on",
         "form so",
+        "form in",
         "form with",
         "form like",
         "form where",
@@ -1418,21 +1418,21 @@
         "form at",
         "form it",
         "form their",
+        "form if",
         "Chapter 7",
         "Form uh",
-        "form if",
         "form which",
         "letters of administration",
         "form called",
         "form um",
-        "Chapter 13",
-        "form content",
-        "form but",
         "form we",
+        "Chapter 13",
+        "form but",
+        "form content",
         "form here",
+        "form an",
         "Protection Act",
-        "form Commercial",
-        "form an"
+        "form because"
       ],
       "tools_and_portals": [
         "Google",
@@ -1442,9 +1442,9 @@
         "CSV",
         "https://excesselite.com",
         "Ancestry",
+        "Bing",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "Bing",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
         "https://TaxLienSchool.com",
@@ -1473,16 +1473,16 @@
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://winnerswaybook.com/",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
-        "https://calendly.com/ajsimmons",
-        "https://nextinsurance.sjv.io/Ea23K9"
+        "PACER",
+        "https://calendly.com/ajsimmons"
       ]
     },
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 3980,
-      "tip_count": 3819,
-      "channel_count": 2435,
+      "video_count": 4131,
+      "tip_count": 3937,
+      "channel_count": 2526,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1543,6 +1543,15 @@
       ],
       "top_timestamped_insights": [
         {
+          "tip_paraphrase_summary": "Things to ensure that money actually gets put into the right account. Or even, and I know the PAs aren't going to like this…",
+          "category": "Pitfall / Hard No",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s",
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Then you can say, great, well, first off, I'm an agent but also an investor and will be acting as a buyer in this…",
           "category": "Insider Tactic",
           "timestamp": "00:30:38",
@@ -1579,6 +1588,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Next thing you know they're they're doing those four jobs and other seven in the hole I've been there you know so I know…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:04:36",
+          "link": "https://www.youtube.com/watch?v=FqdbOCycivo&t=276s",
+          "video_title": "Roofer on Roofing Subcontractors | Illegal Roofers | Kareem Hunter",
+          "author": "Roofing Insights",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Succeed and you can claim 5% royalties on their sales uh the reward uh can be significant. So a few of the um uh…",
           "category": "Legal / Deadline",
           "timestamp": "00:02:21",
@@ -1606,30 +1624,12 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Even the IRS. Okay, so it gets everybody's attention. And then they come down and pay it off. But if they don't come in…",
+          "tip_paraphrase_summary": "In your claim file, which means no new evidence can be submitted after this stage in most cases if the appeal is denied. As…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:06:51",
-          "link": "https://www.youtube.com/watch?v=EXkUbWWenl0&t=411s",
-          "video_title": "How To Foreclose On A Tax Lien Property",
-          "author": "Saen Higgins",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "MONTH, AND YOU BRING IN YOUR LICENSE AND NOW THEY GOTTA PAY YOU $15 AND IT DIDN'T INCREASE THE SALE OF THE JEANS, WELL…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:08:49",
-          "link": "https://www.youtube.com/watch?v=knoob7eUS6Y&t=529s",
-          "video_title": "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
-          "author": "Daymond John",
-          "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Hi everyone, hope you're having a great week. Today we're gonna talk about LOIs or letters of intent, and how they're used in the…",
-          "category": "Sequence / Alternative",
-          "timestamp": "00:00:00",
-          "link": "https://www.youtube.com/watch?v=aNioqOmfOe4&t=0s",
-          "video_title": "M&A Letters of Intent: Are They Really Necessary?",
-          "author": "Brett Cenkus",
+          "timestamp": "00:02:59",
+          "link": "https://www.youtube.com/watch?v=lnhw4pYCOFU&t=179s",
+          "video_title": "How Sedgwick Handles LTD Claims and Why Denials Happen",
+          "author": "CCK Law Long-Term Disability",
           "verbatim_research_only": true
         }
       ],
@@ -1641,14 +1641,14 @@
         "form to",
         "form the",
         "form for",
-        "form or",
         "form you",
+        "form or",
         "form a",
         "form your",
         "form in",
         "form on",
-        "court order",
         "form so",
+        "court order",
         "form where",
         "form with",
         "form like",
@@ -1656,36 +1656,36 @@
         "form below",
         "form it",
         "form I",
+        "form their",
         "Form uh",
         "Chapter 7",
-        "form their",
-        "letters of administration",
         "form as",
         "form if",
-        "Chapter 13",
+        "letters of administration",
         "form at",
+        "Chapter 13",
         "form but",
-        "form which",
-        "form um",
         "form we",
-        "Protection Act",
+        "form which",
         "form an",
+        "form um",
+        "Protection Act",
         "form Commercial",
         "form here",
-        "warranty deed",
-        "form called"
+        "form will",
+        "warranty deed"
       ],
       "tools_and_portals": [
-        "Google",
         "Facebook",
+        "Google",
         "LinkedIn",
         "Excel",
         "CSV",
         "Ancestry",
         "https://excesselite.com",
+        "Bing",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
-        "Bing",
         "FamilySearch",
         "https://probatemastery.com",
         "https://www.instagram.com/erizzyy/",
@@ -1709,9 +1709,9 @@
         "https://wise.com/invite/dic/todorivanovk1",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.surplusfunds101.com/freecallingscript",
+        "PACER",
         "https://winnerswaybook.com/",
         "https://www.youtube.com/surplusfunds101",
-        "PACER",
         "https://assettfranchise.com",
         "https://assettservices.com",
         "https://www.facebook.com/groups/770825015084618",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 3286,
-      "tip_count": 8681,
-      "channel_count": 2147,
+      "video_count": 3397,
+      "tip_count": 8985,
+      "channel_count": 2216,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1893,28 +1893,28 @@
         "form in",
         "form like",
         "court order",
-        "form below",
         "form as",
+        "form below",
         "form it",
         "form which",
+        "form if",
         "Form uh",
         "letters of administration",
         "form at",
-        "form if",
-        "form content",
         "form I",
-        "Chapter 7",
-        "form but",
         "form we",
+        "form but",
+        "form content",
+        "Chapter 7",
         "form called",
         "form um",
+        "form here",
         "form their",
         "form because",
         "form from",
-        "form here",
+        "form will",
         "Chapter 13",
-        "form this",
-        "form an"
+        "form this"
       ],
       "tools_and_portals": [
         "Google",
@@ -1947,9 +1947,9 @@
         "https://www.instagram.com/ajsimmonsonline/",
         "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/channel/UCHLYt_LJmvvmsyp-wKYX0lw/join",
+        "PACER",
         "PropStream",
         "https://www.cleanbiznetwork.app/",
-        "PACER",
         "https://facebook.com/groups/estateprofessionalsmastermind",
         "https://www.govconwinners.com/",
         "https://www.unclaimedceo.com/digitalcourse",
@@ -1968,10 +1968,16 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2389,
-      "video_count": 3714,
-      "corroborating_tip_count": 7542,
+      "channel_count": 2470,
+      "video_count": 3858,
+      "corroborating_tip_count": 7775,
       "supporting_links": [
+        {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:02:22",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=142s"
+        },
         {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
           "author": "Surplus Funds 101",
@@ -2001,12 +2007,6 @@
           "author": "George Hedley | HardHat BIZCOACH",
           "timestamp": "00:01:45",
           "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
-        },
-        {
-          "video_title": "Important information about mineral rights and title searches | AFX",
-          "author": "AFX Videos",
-          "timestamp": "00:01:50",
-          "link": "https://www.youtube.com/watch?v=JpHijIsWFL4&t=110s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2205,
-      "video_count": 3605,
-      "corroborating_tip_count": 7517,
+      "channel_count": 2291,
+      "video_count": 3740,
+      "corroborating_tip_count": 7663,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 648,
-      "video_count": 986,
-      "corroborating_tip_count": 2398,
+      "channel_count": 663,
+      "video_count": 1002,
+      "corroborating_tip_count": 2407,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2470,
-      "video_count": 3913,
-      "corroborating_tip_count": 5244,
+      "channel_count": 2558,
+      "video_count": 4063,
+      "corroborating_tip_count": 5690,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1643,
-      "video_count": 2622,
-      "corroborating_tip_count": 1345,
+      "channel_count": 1680,
+      "video_count": 2678,
+      "corroborating_tip_count": 1369,
       "supporting_links": [
         {
           "video_title": "How Search Funds Source Proprietary Deals Without Cold Calling",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2296,
-      "video_count": 3703,
-      "corroborating_tip_count": 6543,
+      "channel_count": 2376,
+      "video_count": 3844,
+      "corroborating_tip_count": 6853,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,10 +2268,16 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2435,
-      "video_count": 3980,
-      "corroborating_tip_count": 3819,
+      "channel_count": 2526,
+      "video_count": 4131,
+      "corroborating_tip_count": 3937,
       "supporting_links": [
+        {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
         {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
@@ -2297,16 +2303,10 @@
           "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         },
         {
-          "video_title": "5 Patent Monetization Strategies Inventors Don't Know About",
-          "author": "Patent pc",
-          "timestamp": "00:02:21",
-          "link": "https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=141s"
-        },
-        {
-          "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
-          "author": "Surplus Funds 101",
-          "timestamp": "00:14:47",
-          "link": "https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=887s"
+          "video_title": "Roofer on Roofing Subcontractors | Illegal Roofers | Kareem Hunter",
+          "author": "Roofing Insights",
+          "timestamp": "00:04:36",
+          "link": "https://www.youtube.com/watch?v=FqdbOCycivo&t=276s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2147,
-      "video_count": 3286,
-      "corroborating_tip_count": 8681,
+      "channel_count": 2216,
+      "video_count": 3397,
+      "corroborating_tip_count": 8985,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2378,6 +2378,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -2394,12 +2400,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2418,6 +2418,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -2434,12 +2440,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2458,6 +2458,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -2474,12 +2480,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2538,6 +2538,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -2554,12 +2560,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -2578,6 +2578,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:02:22",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=142s"
+        },
+        {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:14",
@@ -2594,12 +2600,6 @@
           "author": "domainsherpa",
           "timestamp": "01:09:59",
           "link": "https://www.youtube.com/watch?v=P7O7_GHUYb0&t=4199s"
-        },
-        {
-          "video_title": "How To Claim Tax Sale Overages",
-          "author": "Ted Thomas",
-          "timestamp": "00:03:53",
-          "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         }
       ]
     }
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 4709 corpus videos",
-        "instance_count": 4709,
+        "source": "YouTube CDN thumbnails for the 4884 corpus videos",
+        "instance_count": 4884,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -35711,6 +35711,1231 @@
             "author": "Grow My Cleaning Company",
             "thumbnail_url": "https://i.ytimg.com/vi/D9L_Gw-APSU/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=D9L_Gw-APSU"
+          },
+          {
+            "video_id": "72Qh6dRR94U",
+            "title": "Water Restoration Business - Estimates (Maximize Self-Pay & Insurance Payouts)",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/72Qh6dRR94U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=72Qh6dRR94U"
+          },
+          {
+            "video_id": "PqL0m54Gjb4",
+            "title": "The biggest mistake contractors make when billing insurance for water damage claims",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/PqL0m54Gjb4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PqL0m54Gjb4"
+          },
+          {
+            "video_id": "5CbcT0WZWts",
+            "title": "How a restoration contractor should write an estimate for water mitigation",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/5CbcT0WZWts/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5CbcT0WZWts"
+          },
+          {
+            "video_id": "CFVMi9HmVcM",
+            "title": "Xactimate - Water Mitigation to Rebuild Estimate Tool",
+            "author": "Xactimate Training by Crest LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/CFVMi9HmVcM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CFVMi9HmVcM"
+          },
+          {
+            "video_id": "NyqgMvKRX14",
+            "title": "How to avoid insurance reductions on estimates for water damage restoration",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/NyqgMvKRX14/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NyqgMvKRX14"
+          },
+          {
+            "video_id": "wTueMQ06kvA",
+            "title": "Xactimate Xpert Tip: Starting a Water Mitigation in Estimate in XactScope",
+            "author": "Verisk Property and Restoration Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/wTueMQ06kvA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wTueMQ06kvA"
+          },
+          {
+            "video_id": "m97k7TBcJgY",
+            "title": "Estimates for Water Damage Restoration: Advanced Tips",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/m97k7TBcJgY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m97k7TBcJgY"
+          },
+          {
+            "video_id": "roHp-ZzbYvs",
+            "title": "Top 5 Xactimate hacks for water damage estimates",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/roHp-ZzbYvs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=roHp-ZzbYvs"
+          },
+          {
+            "video_id": "tYSY3Eo_nvA",
+            "title": "Insurance Adjusters Use Wrong Xactimate Estimate Items | Wet Drywall",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/tYSY3Eo_nvA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tYSY3Eo_nvA"
+          },
+          {
+            "video_id": "irpHqZ46CG8",
+            "title": "How to Document Water Damage Restoration Like a Pro",
+            "author": "magicplan",
+            "thumbnail_url": "https://i.ytimg.com/vi/irpHqZ46CG8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=irpHqZ46CG8"
+          },
+          {
+            "video_id": "3PlUwHvZkxE",
+            "title": "How to Start a Water Damage Restoration Company in 2026",
+            "author": "Restoration Success Strategies | Albi",
+            "thumbnail_url": "https://i.ytimg.com/vi/3PlUwHvZkxE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3PlUwHvZkxE"
+          },
+          {
+            "video_id": "SK7KHGnvQ6Y",
+            "title": "The ugly truth about Xactimate and the restoration industry",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/SK7KHGnvQ6Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SK7KHGnvQ6Y"
+          },
+          {
+            "video_id": "HHLnyMyxcpQ",
+            "title": "The Water Damage Mitigation Process Step by Step by PuroClean",
+            "author": "PuroClean of Central Southwest Houston",
+            "thumbnail_url": "https://i.ytimg.com/vi/HHLnyMyxcpQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HHLnyMyxcpQ"
+          },
+          {
+            "video_id": "aBQA1Wn_LNQ",
+            "title": "Restoration Made Simple - How to start a water damage business",
+            "author": "Restoration Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/aBQA1Wn_LNQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aBQA1Wn_LNQ"
+          },
+          {
+            "video_id": "Dl8DpDk97_A",
+            "title": "IICRC S520 - Core Principle of Mould Remediation",
+            "author": "Phill McGurk",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dl8DpDk97_A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dl8DpDk97_A"
+          },
+          {
+            "video_id": "YdUmzaa5wO0",
+            "title": "Mould Remediation Done Right: The Official IICRC S520 Homeowner Guide",
+            "author": "Balanced Building Biology",
+            "thumbnail_url": "https://i.ytimg.com/vi/YdUmzaa5wO0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YdUmzaa5wO0"
+          },
+          {
+            "video_id": "bcid0F9jRTI",
+            "title": "ANSI/IICRC S500: 2021 Edition",
+            "author": "TheIICRC",
+            "thumbnail_url": "https://i.ytimg.com/vi/bcid0F9jRTI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bcid0F9jRTI"
+          },
+          {
+            "video_id": "7gZTdFWoHgs",
+            "title": "Reviewing the ANSI/IICRC S500 2021 Standard for Professional Water Damage Restoration, 5th Edition",
+            "author": "Coach8",
+            "thumbnail_url": "https://i.ytimg.com/vi/7gZTdFWoHgs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7gZTdFWoHgs"
+          },
+          {
+            "video_id": "i4RGAC2VwaY",
+            "title": "Intro to the IICRC S500 for Water Damage Restoration",
+            "author": "Learn To Restore",
+            "thumbnail_url": "https://i.ytimg.com/vi/i4RGAC2VwaY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i4RGAC2VwaY"
+          },
+          {
+            "video_id": "JOiWfXdUwjM",
+            "title": "IICRC June Webinar: S520 2024 Standard",
+            "author": "TheIICRC",
+            "thumbnail_url": "https://i.ytimg.com/vi/JOiWfXdUwjM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JOiWfXdUwjM"
+          },
+          {
+            "video_id": "iQ4PIKW3sEc",
+            "title": "Only Hire Certified Professionals! - (Water Restoration/IICRC s500 VS. Mold Remediation/IICRC s520)",
+            "author": "Andrew Melrose",
+            "thumbnail_url": "https://i.ytimg.com/vi/iQ4PIKW3sEc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iQ4PIKW3sEc"
+          },
+          {
+            "video_id": "jFMj8u8OsU4",
+            "title": "Inside the S520: The Standard That Changed Mold Remediation",
+            "author": "ISSA Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/jFMj8u8OsU4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jFMj8u8OsU4"
+          },
+          {
+            "video_id": "y00Yi4bnLx4",
+            "title": "Texas Mold Remediation: IICRC S520/R520, IICRC S500 and the TMARR",
+            "author": "Time's Dark Captains",
+            "thumbnail_url": "https://i.ytimg.com/vi/y00Yi4bnLx4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=y00Yi4bnLx4"
+          },
+          {
+            "video_id": "XMpZ-8ZsSW8",
+            "title": "POV: Applied Structural Drying with RTI | IICRC ASD Course with Destry Ransdell",
+            "author": "Restoration Technical Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/XMpZ-8ZsSW8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XMpZ-8ZsSW8"
+          },
+          {
+            "video_id": "cPAFOZbMKQE",
+            "title": "2019 08 29 12 51 IICRC S500 Standard Water Damage Principles Recovery",
+            "author": "APPALeadership",
+            "thumbnail_url": "https://i.ytimg.com/vi/cPAFOZbMKQE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cPAFOZbMKQE"
+          },
+          {
+            "video_id": "0HzVwvOo2Ww",
+            "title": "IICRC Mold Remediation Specialist (MRS) Application Guide",
+            "author": "TheIICRC",
+            "thumbnail_url": "https://i.ytimg.com/vi/0HzVwvOo2Ww/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0HzVwvOo2Ww"
+          },
+          {
+            "video_id": "tPPswF112gY",
+            "title": "IICRC Mold Remediation Specialist (MRS) - Handbook",
+            "author": "TheIICRC",
+            "thumbnail_url": "https://i.ytimg.com/vi/tPPswF112gY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tPPswF112gY"
+          },
+          {
+            "video_id": "6CI2NAsooLw",
+            "title": "Newly-Revised ANSI/IICRC S520: 2015 - What You Need to Know",
+            "author": "TheIICRC",
+            "thumbnail_url": "https://i.ytimg.com/vi/6CI2NAsooLw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6CI2NAsooLw"
+          },
+          {
+            "video_id": "Lh586v6HcYw",
+            "title": "Xactimate Estimate Tips | Handling Insurance Adjusters",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/Lh586v6HcYw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Lh586v6HcYw"
+          },
+          {
+            "video_id": "sSaHviAzZ6w",
+            "title": "How to find materials and repairs in Xactimate | Line Items and Search",
+            "author": "EstimateTV",
+            "thumbnail_url": "https://i.ytimg.com/vi/sSaHviAzZ6w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sSaHviAzZ6w"
+          },
+          {
+            "video_id": "HLwvN9mF1R0",
+            "title": "Xactimate Line Item Cheat Sheet",
+            "author": "Daughtry Construction Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/HLwvN9mF1R0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HLwvN9mF1R0"
+          },
+          {
+            "video_id": "Z7kbWUDeX6A",
+            "title": "WALL XACTIMATE LINE ITEMS",
+            "author": "Canei Adjusting",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z7kbWUDeX6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Z7kbWUDeX6A"
+          },
+          {
+            "video_id": "Qu-NqEwWWPk",
+            "title": "Xactimate Scoping and Estimating Training | Adjuster University",
+            "author": "Claim Daddy",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qu-NqEwWWPk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qu-NqEwWWPk"
+          },
+          {
+            "video_id": "s4xCprLX1Yw",
+            "title": "🚨 23 NEW XACTIMATE LINE ITEMS!",
+            "author": "Actionable",
+            "thumbnail_url": "https://i.ytimg.com/vi/s4xCprLX1Yw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s4xCprLX1Yw"
+          },
+          {
+            "video_id": "HpoMhPz1KfU",
+            "title": "How to Prove an Insurance Estimate Wrong — Line by Line in Xactimate",
+            "author": "American Roof Supplements",
+            "thumbnail_url": "https://i.ytimg.com/vi/HpoMhPz1KfU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HpoMhPz1KfU"
+          },
+          {
+            "video_id": "qQzYZWLmaSI",
+            "title": "Ultimate Xactimate Cheat Sheet & How I built a chatbot to help write my estimates",
+            "author": "The Restoration Advisors Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/qQzYZWLmaSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qQzYZWLmaSI"
+          },
+          {
+            "video_id": "6084H_VeZTA",
+            "title": "HAIL CLAIM WALKTHROUGH | Xactimate X1 roof claim",
+            "author": "Adjuster TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/6084H_VeZTA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6084H_VeZTA"
+          },
+          {
+            "video_id": "kWxJ6PIkM-M",
+            "title": "Reading Xactimate Estimate",
+            "author": "Builder's Perspective Public Adjusting",
+            "thumbnail_url": "https://i.ytimg.com/vi/kWxJ6PIkM-M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kWxJ6PIkM-M"
+          },
+          {
+            "video_id": "BQZjEuyEaq4",
+            "title": "CEILING XACTIMATE LINE ITEMS",
+            "author": "Canei Adjusting",
+            "thumbnail_url": "https://i.ytimg.com/vi/BQZjEuyEaq4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BQZjEuyEaq4"
+          },
+          {
+            "video_id": "A7SLk2mjCXU",
+            "title": "Xactimate and Insurance Prices Change Every Month; Do You Know How Much?",
+            "author": "Overhead And Profit",
+            "thumbnail_url": "https://i.ytimg.com/vi/A7SLk2mjCXU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A7SLk2mjCXU"
+          },
+          {
+            "video_id": "q6R8Iom5Uz8",
+            "title": "Estimate Review - Supplementing in Xactimate",
+            "author": "Estimate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/q6R8Iom5Uz8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q6R8Iom5Uz8"
+          },
+          {
+            "video_id": "gtsj3GY7D8c",
+            "title": "Writing Xactimate Roofing Supplement - Texas",
+            "author": "Dustin Taylor",
+            "thumbnail_url": "https://i.ytimg.com/vi/gtsj3GY7D8c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gtsj3GY7D8c"
+          },
+          {
+            "video_id": "q63afBPc6eY",
+            "title": "How to Supplement Insurance Roofing Claims with Xactimate",
+            "author": "Roof Sales Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/q63afBPc6eY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q63afBPc6eY"
+          },
+          {
+            "video_id": "DR03Zlogfe0",
+            "title": "Roofer Explains Roofing Terms: 12 Roof Components That Matter in Xactimate",
+            "author": "American Roof Supplements",
+            "thumbnail_url": "https://i.ytimg.com/vi/DR03Zlogfe0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DR03Zlogfe0"
+          },
+          {
+            "video_id": "4dhIe6HGIs0",
+            "title": "The Ultimate Insurance Claim Supplement",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/4dhIe6HGIs0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4dhIe6HGIs0"
+          },
+          {
+            "video_id": "lIyYVIMZa0s",
+            "title": "How to write a roof repair estimate in Xactimate X1",
+            "author": "Adjuster TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/lIyYVIMZa0s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lIyYVIMZa0s"
+          },
+          {
+            "video_id": "zxGa72oAf0w",
+            "title": "Explaining Supplements to Homeowners: How Roof Insurance Claim Supplements Work",
+            "author": "The STRONG Roofer w/ Adam Bensman",
+            "thumbnail_url": "https://i.ytimg.com/vi/zxGa72oAf0w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zxGa72oAf0w"
+          },
+          {
+            "video_id": "fdW0W_-MR-s",
+            "title": "1 Click Secret - Write a roof & siding estimate in 15 minutes using this one tool in Xactimate",
+            "author": "Estimate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/fdW0W_-MR-s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fdW0W_-MR-s"
+          },
+          {
+            "video_id": "yytgxtBGSF8",
+            "title": "🏠🎯 Master Hail Claim Xactimate Estimating | Pro Adjuster Training",
+            "author": "Claim Daddy",
+            "thumbnail_url": "https://i.ytimg.com/vi/yytgxtBGSF8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yytgxtBGSF8"
+          },
+          {
+            "video_id": "Op9Qkl-qW58",
+            "title": "Commercial Roof Coating | Hail Damage",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/Op9Qkl-qW58/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Op9Qkl-qW58"
+          },
+          {
+            "video_id": "bVX2IRINNSM",
+            "title": "Who To Send Xactimate Estimate To? | Roof Claim Supplement",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/bVX2IRINNSM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bVX2IRINNSM"
+          },
+          {
+            "video_id": "D4BavFC6d1E",
+            "title": "How to get referrals for a water damage restoration business - plumbers",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/D4BavFC6d1E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D4BavFC6d1E"
+          },
+          {
+            "video_id": "CV0x51fC7pw",
+            "title": "How to Get Plumbers Sending You $60K Water Jobs",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/CV0x51fC7pw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CV0x51fC7pw"
+          },
+          {
+            "video_id": "nFvUl2Kjwjs",
+            "title": "Plumber Referral Program for Indianapolis Plumbers | Restorex Disaster Restoration",
+            "author": "Restorex Disaster Restoration",
+            "thumbnail_url": "https://i.ytimg.com/vi/nFvUl2Kjwjs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nFvUl2Kjwjs"
+          },
+          {
+            "video_id": "n7ECptsaJTQ",
+            "title": "How to Get Plumbers to Actually Send You Mitigation Jobs",
+            "author": "Marketing Ninjas",
+            "thumbnail_url": "https://i.ytimg.com/vi/n7ECptsaJTQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=n7ECptsaJTQ"
+          },
+          {
+            "video_id": "xXe9Z763dDc",
+            "title": "How to get consistent water damage jobs without storms",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/xXe9Z763dDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xXe9Z763dDc"
+          },
+          {
+            "video_id": "MLuoMdYemWU",
+            "title": "Creative Ways To Get Consistent Water Restoration Business Leads",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/MLuoMdYemWU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MLuoMdYemWU"
+          },
+          {
+            "video_id": "Fj9S8rNJ5d4",
+            "title": "How Restoration Companies Get Water Damage Jobs (The Plumber Referral Playbook)",
+            "author": "Restoration Success Strategies | Albi",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fj9S8rNJ5d4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Fj9S8rNJ5d4"
+          },
+          {
+            "video_id": "8nQyv3vEI6A",
+            "title": "Close More Water Damage Restoration Leads - Call Conversion Tips",
+            "author": "Restoration Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/8nQyv3vEI6A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8nQyv3vEI6A"
+          },
+          {
+            "video_id": "HFcU3Nls6fM",
+            "title": "3 Ways to get more water damage jobs from plumbers",
+            "author": "Water Damage Restoration Coach - Jon Schoen",
+            "thumbnail_url": "https://i.ytimg.com/vi/HFcU3Nls6fM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HFcU3Nls6fM"
+          },
+          {
+            "video_id": "Rcmd8gVFzB8",
+            "title": "How to get leads for water damage restoration",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/Rcmd8gVFzB8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Rcmd8gVFzB8"
+          },
+          {
+            "video_id": "-0hAYhkhJaw",
+            "title": "How to Get on Insurance Restoration Third Party Administrator's TPA's Lists",
+            "author": "Water Damage Restoration Coach - Jon Schoen",
+            "thumbnail_url": "https://i.ytimg.com/vi/-0hAYhkhJaw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-0hAYhkhJaw"
+          },
+          {
+            "video_id": "onSDIprTeAU",
+            "title": "How do you win the insurance claims TPA game (Contractor Connections & Alacrity)? TDP 58 (PVJ 012)",
+            "author": "The DYOJO (The DYOJO)",
+            "thumbnail_url": "https://i.ytimg.com/vi/onSDIprTeAU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=onSDIprTeAU"
+          },
+          {
+            "video_id": "pNIYu-t990E",
+            "title": "Running a TPA (Third Party Administrator) RFP Process That Is Less of a Wild West Fiduciary Shootout",
+            "author": "Relentless Health Value",
+            "thumbnail_url": "https://i.ytimg.com/vi/pNIYu-t990E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pNIYu-t990E"
+          },
+          {
+            "video_id": "LEzohuG5ykg",
+            "title": "What does a TPA or third party administrator do for my company benefits plan?",
+            "author": "Chris Hamilton",
+            "thumbnail_url": "https://i.ytimg.com/vi/LEzohuG5ykg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LEzohuG5ykg"
+          },
+          {
+            "video_id": "z0-3oV0C8EU",
+            "title": "Understanding Third-Party Administrators (TPAs) in Healthcare Insurance",
+            "author": "Navigating the Business of Medicine",
+            "thumbnail_url": "https://i.ytimg.com/vi/z0-3oV0C8EU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z0-3oV0C8EU"
+          },
+          {
+            "video_id": "nBqdaYbbpKg",
+            "title": "Life at Third Party Administrator - Owen Paradis - JP Farley - True Captive Summit",
+            "author": "Self-Funded",
+            "thumbnail_url": "https://i.ytimg.com/vi/nBqdaYbbpKg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nBqdaYbbpKg"
+          },
+          {
+            "video_id": "u947iwIhI7A",
+            "title": "State Farm vs Sedgwick: Which is Better for New Claims Adjusters?",
+            "author": "Be A Claims Adjuster",
+            "thumbnail_url": "https://i.ytimg.com/vi/u947iwIhI7A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u947iwIhI7A"
+          },
+          {
+            "video_id": "lnhw4pYCOFU",
+            "title": "How Sedgwick Handles LTD Claims and Why Denials Happen",
+            "author": "CCK Law Long-Term Disability",
+            "thumbnail_url": "https://i.ytimg.com/vi/lnhw4pYCOFU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lnhw4pYCOFU"
+          },
+          {
+            "video_id": "7lU917xnSRE",
+            "title": "Third Party Administrators",
+            "author": "Self Insured Reporting",
+            "thumbnail_url": "https://i.ytimg.com/vi/7lU917xnSRE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7lU917xnSRE"
+          },
+          {
+            "video_id": "xXGIjQfUG4s",
+            "title": "Claim access for insurers and third-party administrators",
+            "author": "MN Labor and Industry",
+            "thumbnail_url": "https://i.ytimg.com/vi/xXGIjQfUG4s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xXGIjQfUG4s"
+          },
+          {
+            "video_id": "1quXRyfkTgo",
+            "title": "What is Insurance Restoration Roofing? (Beginner's Guide)",
+            "author": "Chris Zimmerman",
+            "thumbnail_url": "https://i.ytimg.com/vi/1quXRyfkTgo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1quXRyfkTgo"
+          },
+          {
+            "video_id": "esg8I0BJFLM",
+            "title": "What All Roofing Contractors Need to Know About Adjusters",
+            "author": "Chris Zimmerman",
+            "thumbnail_url": "https://i.ytimg.com/vi/esg8I0BJFLM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=esg8I0BJFLM"
+          },
+          {
+            "video_id": "h_W9kUbadMM",
+            "title": "5 Reasons Not to Use Your Insurance Company Contractor: Water Mitigation or Restoration Company",
+            "author": "The Claim Squad Public Adjusters",
+            "thumbnail_url": "https://i.ytimg.com/vi/h_W9kUbadMM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h_W9kUbadMM"
+          },
+          {
+            "video_id": "wnVxHv3JM28",
+            "title": "Restoration Company vs General Contractor: What's the Difference?",
+            "author": "PushLeads",
+            "thumbnail_url": "https://i.ytimg.com/vi/wnVxHv3JM28/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wnVxHv3JM28"
+          },
+          {
+            "video_id": "b1-Dcqk4F9g",
+            "title": "Contractor Contracts vs Restoration Contracts",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/b1-Dcqk4F9g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=b1-Dcqk4F9g"
+          },
+          {
+            "video_id": "9A5QEe9xxXk",
+            "title": "Watch This BEFORE You Do Everything Your Insurance Adjuster Says",
+            "author": "Chris Zimmerman",
+            "thumbnail_url": "https://i.ytimg.com/vi/9A5QEe9xxXk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9A5QEe9xxXk"
+          },
+          {
+            "video_id": "vkrXTVQcVQQ",
+            "title": "When the Contractor and the Insurance Adjuster Disagree | Effective Methods To Unlock Stalemate",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/vkrXTVQcVQQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vkrXTVQcVQQ"
+          },
+          {
+            "video_id": "2WVlG5yPBTU",
+            "title": "What Does a Public Adjuster Actually Do? Insurance Estimates, Settlements & Your Rights",
+            "author": "claimhelpme",
+            "thumbnail_url": "https://i.ytimg.com/vi/2WVlG5yPBTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2WVlG5yPBTU"
+          },
+          {
+            "video_id": "RRn3mzn9xCw",
+            "title": "Roofers Vs Public Adjuster - Fight to the Death - Public Adjuster Training",
+            "author": "Public Adjuster Show with Vince Perri",
+            "thumbnail_url": "https://i.ytimg.com/vi/RRn3mzn9xCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RRn3mzn9xCw"
+          },
+          {
+            "video_id": "8x3Gfr6Uyr8",
+            "title": "Ask Avner Deep Dive: Restoration Companies vs Insurance Claims",
+            "author": "Avner Gat, Inc. - Public Insurance Adjusters",
+            "thumbnail_url": "https://i.ytimg.com/vi/8x3Gfr6Uyr8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8x3Gfr6Uyr8"
+          },
+          {
+            "video_id": "3xfQ7PdL-AA",
+            "title": "How to negotiate with adjusters | restoration company",
+            "author": "Shane O'Dazier | RestorationProfits",
+            "thumbnail_url": "https://i.ytimg.com/vi/3xfQ7PdL-AA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3xfQ7PdL-AA"
+          },
+          {
+            "video_id": "LwNOcenSP_c",
+            "title": "How to Get More Out of Your First Insurance Adjuster Meeting",
+            "author": "Chris Zimmerman",
+            "thumbnail_url": "https://i.ytimg.com/vi/LwNOcenSP_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LwNOcenSP_c"
+          },
+          {
+            "video_id": "zDKvQs0viSI",
+            "title": "7 Levels of Public Adjusters: Simple Claims to Total Chaos",
+            "author": "American Roof Supplements",
+            "thumbnail_url": "https://i.ytimg.com/vi/zDKvQs0viSI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zDKvQs0viSI"
+          },
+          {
+            "video_id": "Qv99F8pvYNU",
+            "title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+            "author": "Roofing Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qv99F8pvYNU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qv99F8pvYNU"
+          },
+          {
+            "video_id": "uykTx34p0Js",
+            "title": "Public Adjusters: Scam or Savior? 5 Key Questions Every Homeowner Must Ask",
+            "author": "Roofing Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/uykTx34p0Js/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uykTx34p0Js"
+          },
+          {
+            "video_id": "UxKcyrt-VS0",
+            "title": "He Signed One Form at His Front Door and Lost Control of His Own Claim | Assignment of Benefits",
+            "author": "The Fine Print",
+            "thumbnail_url": "https://i.ytimg.com/vi/UxKcyrt-VS0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UxKcyrt-VS0"
+          },
+          {
+            "video_id": "CbZ5Nrxx8Xw",
+            "title": "Webinar: Assignment of Benefit (AoB) Changes - What You Need to Know",
+            "author": "Tyro Health",
+            "thumbnail_url": "https://i.ytimg.com/vi/CbZ5Nrxx8Xw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CbZ5Nrxx8Xw"
+          },
+          {
+            "video_id": "bPBmUaKay2w",
+            "title": "Claims Underground Podcast: Mastering Assignment of Benefits with Top Public Adjusters",
+            "author": "Claims Underground Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/bPBmUaKay2w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bPBmUaKay2w"
+          },
+          {
+            "video_id": "hqbiodyd1gc",
+            "title": "What Is an Assignment of Benefits (AOB)? | Should You Sign One After a Property Damage Claim?",
+            "author": "Happy Adjuster",
+            "thumbnail_url": "https://i.ytimg.com/vi/hqbiodyd1gc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hqbiodyd1gc"
+          },
+          {
+            "video_id": "4AHP633shFk",
+            "title": "Healthcare Law, Steve Dunn Assignment of Benefits",
+            "author": "Long Term Care Law Office",
+            "thumbnail_url": "https://i.ytimg.com/vi/4AHP633shFk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4AHP633shFk"
+          },
+          {
+            "video_id": "HC1u-rGDBKc",
+            "title": "Assignment of Benefits (AOB) in Medical Billing: Your Comprehensive Guide",
+            "author": "Medicalbillingz",
+            "thumbnail_url": "https://i.ytimg.com/vi/HC1u-rGDBKc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HC1u-rGDBKc"
+          },
+          {
+            "video_id": "vscXMMen_rc",
+            "title": "Barbara Day Assignment of Benefits (AOB) on insurance claims",
+            "author": "AARP Florida - The Sunshine State!",
+            "thumbnail_url": "https://i.ytimg.com/vi/vscXMMen_rc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vscXMMen_rc"
+          },
+          {
+            "video_id": "7-KaOK5zk7g",
+            "title": "Insurers Call for Assignment of Benefits Reform",
+            "author": "flanewscapitol",
+            "thumbnail_url": "https://i.ytimg.com/vi/7-KaOK5zk7g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7-KaOK5zk7g"
+          },
+          {
+            "video_id": "1DrEImX-sYU",
+            "title": "Stopping 'Assignment of Benefits' Abuse",
+            "author": "Tampa Bay 28",
+            "thumbnail_url": "https://i.ytimg.com/vi/1DrEImX-sYU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1DrEImX-sYU"
+          },
+          {
+            "video_id": "Tg526FvHOmY",
+            "title": "Shifting Sands: The Move from AOB to Direction to Pay in Florida Restoration Contracting",
+            "author": "Contractor Talk Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tg526FvHOmY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Tg526FvHOmY"
+          },
+          {
+            "video_id": "On3xbq5nLqk",
+            "title": "Assignment of Benefits (AOB)",
+            "author": "yourEadvisor.com",
+            "thumbnail_url": "https://i.ytimg.com/vi/On3xbq5nLqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=On3xbq5nLqk"
+          },
+          {
+            "video_id": "wq1z-Qyyws8",
+            "title": "OCS: Assignment Of Benefits",
+            "author": "One Claim Solution",
+            "thumbnail_url": "https://i.ytimg.com/vi/wq1z-Qyyws8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wq1z-Qyyws8"
+          },
+          {
+            "video_id": "hB0EZGfpw4I",
+            "title": "Florida lawmakers seek 'assignment of benefits' solution",
+            "author": "News4JAX The Local Station",
+            "thumbnail_url": "https://i.ytimg.com/vi/hB0EZGfpw4I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hB0EZGfpw4I"
+          },
+          {
+            "video_id": "F4WLuIxWd-Q",
+            "title": "When Does Assignment of Benefits (AOB) Work Best? Tips for Restorers (w/Josh Ehmke)",
+            "author": "magicplan",
+            "thumbnail_url": "https://i.ytimg.com/vi/F4WLuIxWd-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F4WLuIxWd-Q"
+          },
+          {
+            "video_id": "tLwSSUZ6Awc",
+            "title": "Your Insurance Deductible After a Claim: What Nobody Tells You",
+            "author": "AnnePullen",
+            "thumbnail_url": "https://i.ytimg.com/vi/tLwSSUZ6Awc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tLwSSUZ6Awc"
+          },
+          {
+            "video_id": "t6BiCluK7GY",
+            "title": "Is it illegal for my roofer to waive my deductible? | #Insurancedeductible",
+            "author": "Restoration Roofing",
+            "thumbnail_url": "https://i.ytimg.com/vi/t6BiCluK7GY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t6BiCluK7GY"
+          },
+          {
+            "video_id": "jcrOa0gm--g",
+            "title": "Do You Have to Pay Your Deductible If the Accident Wasn't Your Fault?",
+            "author": "Collision Crash Course",
+            "thumbnail_url": "https://i.ytimg.com/vi/jcrOa0gm--g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jcrOa0gm--g"
+          },
+          {
+            "video_id": "rw8dEal_Ppk",
+            "title": "RestoreMasters TPO Roof Inspections (Property Damage Assessments) | Hail Damage",
+            "author": "RestoreMasters",
+            "thumbnail_url": "https://i.ytimg.com/vi/rw8dEal_Ppk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rw8dEal_Ppk"
+          },
+          {
+            "video_id": "wQbjMlmo1Bg",
+            "title": "Mid-Atlantic Hail Recap: 34 Reports, Storms Move Offshore | November 12, 2026",
+            "author": "MaprBot",
+            "thumbnail_url": "https://i.ytimg.com/vi/wQbjMlmo1Bg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wQbjMlmo1Bg"
+          },
+          {
+            "video_id": "Mi6XZq4h6yo",
+            "title": "Mortgage Company Insurance Check Endorsement",
+            "author": "Integrity Roofing and Painting",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mi6XZq4h6yo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mi6XZq4h6yo"
+          },
+          {
+            "video_id": "VFWDHse67ws",
+            "title": "Insurance check has my mortgage company on it. What do I do?",
+            "author": "Richard Levisee",
+            "thumbnail_url": "https://i.ytimg.com/vi/VFWDHse67ws/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VFWDHse67ws"
+          },
+          {
+            "video_id": "86mEe0yHwiw",
+            "title": "Matterport Demo and Walkthrough",
+            "author": "Adjuster TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/86mEe0yHwiw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=86mEe0yHwiw"
+          },
+          {
+            "video_id": "uy09gaqf4AU",
+            "title": "A New Era of Estimating | Your Data, Your Expertise, From Scope to Estimate — Webinar",
+            "author": "Encircle",
+            "thumbnail_url": "https://i.ytimg.com/vi/uy09gaqf4AU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uy09gaqf4AU"
+          },
+          {
+            "video_id": "3UmvqUcOFDc",
+            "title": "Tips for Proper Restoration Packout",
+            "author": "Omegasonics",
+            "thumbnail_url": "https://i.ytimg.com/vi/3UmvqUcOFDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3UmvqUcOFDc"
+          },
+          {
+            "video_id": "Appti0ctcGA",
+            "title": "How To Packout A Fire Restoration Job Without Damage To Contents",
+            "author": "FirehouseEducation",
+            "thumbnail_url": "https://i.ytimg.com/vi/Appti0ctcGA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Appti0ctcGA"
+          },
+          {
+            "video_id": "MkCNqNRsk04",
+            "title": "How to Clean Smoke-Damaged Contents After a Wildfire | Ask Annissa",
+            "author": "FirehouseEducation",
+            "thumbnail_url": "https://i.ytimg.com/vi/MkCNqNRsk04/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MkCNqNRsk04"
+          },
+          {
+            "video_id": "rAAR3Zmm80c",
+            "title": "How To Packout For Sucess On Contents Restoration Jobs",
+            "author": "FirehouseEducation",
+            "thumbnail_url": "https://i.ytimg.com/vi/rAAR3Zmm80c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rAAR3Zmm80c"
+          },
+          {
+            "video_id": "yrUY61hcioM",
+            "title": "Fire Damage Contents Pack Outs",
+            "author": "Fred McCutcheon Jr.",
+            "thumbnail_url": "https://i.ytimg.com/vi/yrUY61hcioM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yrUY61hcioM"
+          },
+          {
+            "video_id": "w85_KBcX690",
+            "title": "When Do You Packout or Clean In Place A Contents Restoration Job?",
+            "author": "FirehouseEducation",
+            "thumbnail_url": "https://i.ytimg.com/vi/w85_KBcX690/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w85_KBcX690"
+          },
+          {
+            "video_id": "WTz841eMFkk",
+            "title": "Inside Fire Damage Restoration: A Project Manager’s Perspective",
+            "author": "Octagon Cleaning and Restoration",
+            "thumbnail_url": "https://i.ytimg.com/vi/WTz841eMFkk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WTz841eMFkk"
+          },
+          {
+            "video_id": "33iGNdZ6fyE",
+            "title": "Fire & Smoke Restoration Bootcamp - Webinar",
+            "author": "Encircle",
+            "thumbnail_url": "https://i.ytimg.com/vi/33iGNdZ6fyE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=33iGNdZ6fyE"
+          },
+          {
+            "video_id": "IDqwheOOgb0",
+            "title": "Water Damage Google Local Services Ads: Everything You Need to Know",
+            "author": "Water Damage Restoration Marketing - Vinnie Mac",
+            "thumbnail_url": "https://i.ytimg.com/vi/IDqwheOOgb0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IDqwheOOgb0"
+          },
+          {
+            "video_id": "2akNGTmJry8",
+            "title": "Google Local Service Ads For Water Damage Restoration Companies Everything You Need To Know In 2026",
+            "author": "Water Damage Restoration Marketing - Vinnie Mac",
+            "thumbnail_url": "https://i.ytimg.com/vi/2akNGTmJry8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2akNGTmJry8"
+          },
+          {
+            "video_id": "O0STLVhCL2c",
+            "title": "Water Damage Google Local Services Ads - Everything You Need To Know - Restoration Marketing",
+            "author": "Water Damage Restoration Marketing - Vinnie Mac",
+            "thumbnail_url": "https://i.ytimg.com/vi/O0STLVhCL2c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O0STLVhCL2c"
+          },
+          {
+            "video_id": "zkR_04H9hBQ",
+            "title": "The Hidden Cost of Water Damage Google Ads (And How to Stop It!)",
+            "author": "Restoration Growth Co",
+            "thumbnail_url": "https://i.ytimg.com/vi/zkR_04H9hBQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zkR_04H9hBQ"
+          },
+          {
+            "video_id": "9FnufX3pXj4",
+            "title": "How do you set up Google Ads for emergency contractors in 2026?",
+            "author": "PushLeads",
+            "thumbnail_url": "https://i.ytimg.com/vi/9FnufX3pXj4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9FnufX3pXj4"
+          },
+          {
+            "video_id": "BCYwigE5kQU",
+            "title": "Google Just Killed the LSAs: What Every Contractor Needs to Know (August 2026)",
+            "author": "Hook Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/BCYwigE5kQU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BCYwigE5kQU"
+          },
+          {
+            "video_id": "4NKJ6zuVvTY",
+            "title": "Lead Safe Renovator Training - Interior Work Practices",
+            "author": "Testudo LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/4NKJ6zuVvTY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4NKJ6zuVvTY"
+          },
+          {
+            "video_id": "ppn4akh1gPo",
+            "title": "How To price a Job? Profit Margin Vs Markup: Most Roofing Contractors don't know this",
+            "author": "Roofing Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/ppn4akh1gPo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ppn4akh1gPo"
+          },
+          {
+            "video_id": "tVMI8UScmmE",
+            "title": "How to Pay Your Roofing Subcontractors - Ch 4 Vd 14",
+            "author": "Digital Roofing Innovations",
+            "thumbnail_url": "https://i.ytimg.com/vi/tVMI8UScmmE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tVMI8UScmmE"
+          },
+          {
+            "video_id": "FqdbOCycivo",
+            "title": "Roofer on Roofing Subcontractors | Illegal Roofers | Kareem Hunter",
+            "author": "Roofing Insights",
+            "thumbnail_url": "https://i.ytimg.com/vi/FqdbOCycivo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FqdbOCycivo"
+          },
+          {
+            "video_id": "g3I-8o2x140",
+            "title": "Roofing subcrews, profit, markup, and repair work | Roofer2Roofer 002",
+            "author": "ProLine",
+            "thumbnail_url": "https://i.ytimg.com/vi/g3I-8o2x140/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=g3I-8o2x140"
+          },
+          {
+            "video_id": "gLFs8l5O0j4",
+            "title": "How to Price Roofing Jobs for Profit (Without Losing Clients)",
+            "author": "RoofCoach",
+            "thumbnail_url": "https://i.ytimg.com/vi/gLFs8l5O0j4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gLFs8l5O0j4"
+          },
+          {
+            "video_id": "KnWhJDOPsTc",
+            "title": "Why Contractors Lose Margin After the Job Is Sold",
+            "author": "George Gabriel",
+            "thumbnail_url": "https://i.ytimg.com/vi/KnWhJDOPsTc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KnWhJDOPsTc"
+          },
+          {
+            "video_id": "4EdiIO_RCX0",
+            "title": "Why and How to use Scope Sheets - Tutorial",
+            "author": "Adjusterpedia",
+            "thumbnail_url": "https://i.ytimg.com/vi/4EdiIO_RCX0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4EdiIO_RCX0"
+          },
+          {
+            "video_id": "nHMaLQmm8nw",
+            "title": "How to ACTUALLY work as a remote desk adjuster",
+            "author": "Adjuster TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/nHMaLQmm8nw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nHMaLQmm8nw"
+          },
+          {
+            "video_id": "ZY8afiQROiI",
+            "title": "Xactimate - Global Depreciation, Bid Item (from the \"Desk Adjuster\" course)",
+            "author": "Xactimate Training by Crest LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZY8afiQROiI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZY8afiQROiI"
+          },
+          {
+            "video_id": "EDF71IxtN5w",
+            "title": "How to Use Xactimate for Training as an Adjuster | Training for beginners 🔥 Claims Adjuster",
+            "author": "Claims Adjuster of the Year",
+            "thumbnail_url": "https://i.ytimg.com/vi/EDF71IxtN5w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EDF71IxtN5w"
+          },
+          {
+            "video_id": "i4kOEeFrMaI",
+            "title": "TopAdjuster.com Xactimate tutorial - Mitigation and Restoration total pages from one estimate",
+            "author": "Chris Hatcher",
+            "thumbnail_url": "https://i.ytimg.com/vi/i4kOEeFrMaI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i4kOEeFrMaI"
+          },
+          {
+            "video_id": "3DF6Xf4wlIg",
+            "title": "Understanding Water Mitigation: From the Loss to the Estimate | ReconSmart",
+            "author": "ReconSmart Solutions LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/3DF6Xf4wlIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3DF6Xf4wlIg"
+          },
+          {
+            "video_id": "r1JeD2hb2jM",
+            "title": "AS-IICRC S520-2024 Nicole Bijlsma",
+            "author": "James Poon",
+            "thumbnail_url": "https://i.ytimg.com/vi/r1JeD2hb2jM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r1JeD2hb2jM"
+          },
+          {
+            "video_id": "MDZLPIkMaI8",
+            "title": "The Ultimate Guide To Water Damage Restoration: Everything You Need To Know",
+            "author": "Restoration Success Strategies | Albi",
+            "thumbnail_url": "https://i.ytimg.com/vi/MDZLPIkMaI8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MDZLPIkMaI8"
+          },
+          {
+            "video_id": "WNR0K0ubIoI",
+            "title": "Make More Money on Your Next Insurance Job With This Xactimate Tip for Windows!",
+            "author": "Estimate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/WNR0K0ubIoI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WNR0K0ubIoI"
+          },
+          {
+            "video_id": "Sk9blhK0GiU",
+            "title": "XACTIMATE CLAIM INFORMATION",
+            "author": "Canei Adjusting",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sk9blhK0GiU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sk9blhK0GiU"
+          },
+          {
+            "video_id": "GK_Was-iK98",
+            "title": "Public Adjusters: Stop Wasting Hours Building Xactimate Estimates",
+            "author": "American Roof Supplements",
+            "thumbnail_url": "https://i.ytimg.com/vi/GK_Was-iK98/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GK_Was-iK98"
+          },
+          {
+            "video_id": "Vj-mEgtLqUw",
+            "title": "Xactimate 101 - Free Beginner Training in Xactimate",
+            "author": "Estimate Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vj-mEgtLqUw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Vj-mEgtLqUw"
+          },
+          {
+            "video_id": "dtHSqRxkHLA",
+            "title": "5 MIND BLOWING Xactimate Mobile Hacks in 5 Minutes 💥",
+            "author": "Adjuster TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/dtHSqRxkHLA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dtHSqRxkHLA"
+          },
+          {
+            "video_id": "KeJzOY4eZHU",
+            "title": "Xactimate Estimate Example",
+            "author": "EstimateHub — PDF to ESX converter for Xactimate",
+            "thumbnail_url": "https://i.ytimg.com/vi/KeJzOY4eZHU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KeJzOY4eZHU"
+          },
+          {
+            "video_id": "MPSOkm3YFak",
+            "title": "Did the Hail Really Damage Your Roof? Check This First",
+            "author": "Homeowner Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/MPSOkm3YFak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MPSOkm3YFak"
+          },
+          {
+            "video_id": "jj-GWZEtOc0",
+            "title": "Best Way to Learn Roof Supplementing & Xactimate",
+            "author": "Roof Sales Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/jj-GWZEtOc0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jj-GWZEtOc0"
+          },
+          {
+            "video_id": "Kiez0kPNuRk",
+            "title": "Roof Measurement → Supplement → Signed Contract in One Workflow | TradeForge for Roofers",
+            "author": "Tradeforge CRM",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kiez0kPNuRk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Kiez0kPNuRk"
+          },
+          {
+            "video_id": "sICOGLUjsao",
+            "title": "The Basic Process of Supplementing Insurance Claims for Roofers",
+            "author": "Roof Sales Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/sICOGLUjsao/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sICOGLUjsao"
+          },
+          {
+            "video_id": "rui1iBgQxWY",
+            "title": "Should You Designate an In-House Supplementer for Roof Claims?",
+            "author": "Roof Sales Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/rui1iBgQxWY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rui1iBgQxWY"
+          },
+          {
+            "video_id": "Jvj3So17gtA",
+            "title": "Maxing Out Roof Only Claims",
+            "author": "Roof Sales Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/Jvj3So17gtA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Jvj3So17gtA"
+          },
+          {
+            "video_id": "wi2YpyR1was",
+            "title": "Supplement Training: Step by Step Instructions for Roofing Contractors",
+            "author": "American Roof Supplements",
+            "thumbnail_url": "https://i.ytimg.com/vi/wi2YpyR1was/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wi2YpyR1was"
+          },
+          {
+            "video_id": "-aZHNsY5qIY",
+            "title": "Selling Hail-Damaged Roofs: The Hail Sales Process From Start to Finish",
+            "author": "The STRONG Roofer w/ Adam Bensman",
+            "thumbnail_url": "https://i.ytimg.com/vi/-aZHNsY5qIY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-aZHNsY5qIY"
+          },
+          {
+            "video_id": "TkCEjbO6vQs",
+            "title": "Xactimate 101 How Roofing Supplements Actually Work (Beginner’s Guide)",
+            "author": "American Roof Supplements",
+            "thumbnail_url": "https://i.ytimg.com/vi/TkCEjbO6vQs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TkCEjbO6vQs"
+          },
+          {
+            "video_id": "KYZjCfsaWhs",
+            "title": "Water Damage Marketing | How To Generate Water Damage Leads",
+            "author": "Water Damage Restoration Marketing - Vinnie Mac",
+            "thumbnail_url": "https://i.ytimg.com/vi/KYZjCfsaWhs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KYZjCfsaWhs"
+          },
+          {
+            "video_id": "5Ibyq8oHR7Y",
+            "title": "How to Generate 7 Figures for Your Restoration Company From Plumbers",
+            "author": "Marketing Ninjas",
+            "thumbnail_url": "https://i.ytimg.com/vi/5Ibyq8oHR7Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5Ibyq8oHR7Y"
+          },
+          {
+            "video_id": "kR0zavFV0HU",
+            "title": "TPA Licensure 101: What Every Third-Party Administrator Needs to Know",
+            "author": "Regulatory Joe",
+            "thumbnail_url": "https://i.ytimg.com/vi/kR0zavFV0HU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kR0zavFV0HU"
+          },
+          {
+            "video_id": "LQ4DKKitI6o",
+            "title": "Claim Toolkit Training - 06/17/2021 (Sedgwick)",
+            "author": "Claim Toolkit",
+            "thumbnail_url": "https://i.ytimg.com/vi/LQ4DKKitI6o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LQ4DKKitI6o"
+          },
+          {
+            "video_id": "GhZSitNz6aQ",
+            "title": "What Is a Public Adjuster and what is their role in Restoration?",
+            "author": "FirehouseEducation",
+            "thumbnail_url": "https://i.ytimg.com/vi/GhZSitNz6aQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GhZSitNz6aQ"
+          },
+          {
+            "video_id": "diiBgujlZF0",
+            "title": "One Question That Will Shake the Billion-Dollar Insurance Restoration Industry",
+            "author": "Grossman PA LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/diiBgujlZF0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=diiBgujlZF0"
+          },
+          {
+            "video_id": "jaGktNyKvE4",
+            "title": "Unauthorized Practice of Public Adjusting (UPPA)",
+            "author": "Daly & Black, P.C.",
+            "thumbnail_url": "https://i.ytimg.com/vi/jaGktNyKvE4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jaGktNyKvE4"
+          },
+          {
+            "video_id": "_wmRAji2ZmI",
+            "title": "How he Overturned a Denied Insurance Claim | Public Adjuster Case Study & Expert Tips",
+            "author": "The Adjuster's Roundtable",
+            "thumbnail_url": "https://i.ytimg.com/vi/_wmRAji2ZmI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_wmRAji2ZmI"
+          },
+          {
+            "video_id": "eLQHV7yIGx8",
+            "title": "Restoration Contractors: Stop Selling From Weakness! Insurance Claims Done Right",
+            "author": "claimhelpme",
+            "thumbnail_url": "https://i.ytimg.com/vi/eLQHV7yIGx8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eLQHV7yIGx8"
+          },
+          {
+            "video_id": "oEc6cQdcK6I",
+            "title": "Don’t Let the Insurance Company’s Contractor Ruin Your Claim 😳 | Public Adjuster Explains",
+            "author": "On-Site Adjusting",
+            "thumbnail_url": "https://i.ytimg.com/vi/oEc6cQdcK6I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oEc6cQdcK6I"
+          },
+          {
+            "video_id": "RmjqTZJ3II0",
+            "title": "Contingency contracts may violate UPPA",
+            "author": "Building Experts Institute",
+            "thumbnail_url": "https://i.ytimg.com/vi/RmjqTZJ3II0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RmjqTZJ3II0"
+          },
+          {
+            "video_id": "kY8cf-6-nlQ",
+            "title": "Medicare Assignment of Benefit (AoB) in Gentu",
+            "author": "Magentus | Practice Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/kY8cf-6-nlQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kY8cf-6-nlQ"
+          },
+          {
+            "video_id": "rxahzd6qaCw",
+            "title": "Handling of Assignment of Benefit (\"AOB\") Claims",
+            "author": "Butler Legal",
+            "thumbnail_url": "https://i.ytimg.com/vi/rxahzd6qaCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rxahzd6qaCw"
+          },
+          {
+            "video_id": "zzzZPeokDUk",
+            "title": "What is Assignment of Benefits (AOB)?",
+            "author": "Holmes Drafting Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/zzzZPeokDUk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zzzZPeokDUk"
+          },
+          {
+            "video_id": "iKLGuESx4po",
+            "title": "Assignment of Benefits in Your Insurance Claim",
+            "author": "Crossroads Insurance Recovery",
+            "thumbnail_url": "https://i.ytimg.com/vi/iKLGuESx4po/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iKLGuESx4po"
+          },
+          {
+            "video_id": "06ChGuOZCto",
+            "title": "Insurance Deductible Explained What It Means for Your Roof Claim",
+            "author": "State Restoration Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/06ChGuOZCto/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=06ChGuOZCto"
+          },
+          {
+            "video_id": "-mzjb7XSisY",
+            "title": "RFBT Insurance 05: Special Classes of Insurance, Claims Settlement, Prescription, and Subrogation",
+            "author": "Accountancy Students Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/-mzjb7XSisY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-mzjb7XSisY"
+          },
+          {
+            "video_id": "A4K6Yt2bnWk",
+            "title": "Deductibles Explained: The Math That Decides If a Claim Is Worth Filing",
+            "author": "The Deductible",
+            "thumbnail_url": "https://i.ytimg.com/vi/A4K6Yt2bnWk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=A4K6Yt2bnWk"
+          },
+          {
+            "video_id": "bNL46sw5_5c",
+            "title": "Auto Claims Subrogation/Deductible Refund Process | State Farm",
+            "author": "State Farm Insurance",
+            "thumbnail_url": "https://i.ytimg.com/vi/bNL46sw5_5c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bNL46sw5_5c"
+          },
+          {
+            "video_id": "DmesIP8hcak",
+            "title": "How to Legally COVER The Deductible",
+            "author": "Chad Michael - The Practitioner",
+            "thumbnail_url": "https://i.ytimg.com/vi/DmesIP8hcak/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DmesIP8hcak"
+          },
+          {
+            "video_id": "zOFPOUrXGw4",
+            "title": "Insurance Deductibles 101: When, Why, and How They Apply",
+            "author": "Adjuster TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/zOFPOUrXGw4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zOFPOUrXGw4"
+          },
+          {
+            "video_id": "AVAVGkoZuK0",
+            "title": "Adjuster Exam: Salvage, Subrogation, Fraud, Ethics, Fair Claims Practices & Catastrophe Claims",
+            "author": "CandiMentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/AVAVGkoZuK0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=AVAVGkoZuK0"
           }
         ],
         "research_reference_only": true,
@@ -35723,7 +36948,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 4709 third-party videos (43089 captured tips)",
+        "source": "Spoken content of 4884 third-party videos (44679 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -35739,38 +36964,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 4709,
-    "channel_count": 2886,
-    "total_words": 6889733,
-    "total_hours": 1382.24,
-    "total_pro_tips": 43089,
-    "unique_statutes_and_forms": 1828,
-    "unique_tools_and_portals": 12216
+    "video_count": 4884,
+    "channel_count": 2987,
+    "total_words": 7162681,
+    "total_hours": 1436.64,
+    "total_pro_tips": 44679,
+    "unique_statutes_and_forms": 1867,
+    "unique_tools_and_portals": 12533
   },
   "coverage": {
-    "videos_classified": 4709,
-    "videos_with_multiple_topics": 4706,
-    "tips_classified": 43089,
-    "raw_transcripts_joined": 4709,
+    "videos_classified": 4884,
+    "videos_with_multiple_topics": 4881,
+    "tips_classified": 44679,
+    "raw_transcripts_joined": 4884,
     "topic_video_counts": {
-      "business_model_and_economics": 3714,
-      "probate_and_docket_sourcing": 3605,
-      "unclaimed_property_and_escheat": 986,
-      "genealogy_and_heirship_proof": 3913,
-      "skip_tracing_and_outreach": 2622,
-      "contracts_and_compensation": 3703,
-      "statutory_caps_and_licensing": 3980,
-      "automation_and_small_team_ops": 3286
+      "business_model_and_economics": 3858,
+      "probate_and_docket_sourcing": 3740,
+      "unclaimed_property_and_escheat": 1002,
+      "genealogy_and_heirship_proof": 4063,
+      "skip_tracing_and_outreach": 2678,
+      "contracts_and_compensation": 3844,
+      "statutory_caps_and_licensing": 4131,
+      "automation_and_small_team_ops": 3397
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 7542,
-      "probate_and_docket_sourcing": 7517,
-      "unclaimed_property_and_escheat": 2398,
-      "genealogy_and_heirship_proof": 5244,
-      "skip_tracing_and_outreach": 1345,
-      "contracts_and_compensation": 6543,
-      "statutory_caps_and_licensing": 3819,
-      "automation_and_small_team_ops": 8681
+      "business_model_and_economics": 7775,
+      "probate_and_docket_sourcing": 7663,
+      "unclaimed_property_and_escheat": 2407,
+      "genealogy_and_heirship_proof": 5690,
+      "skip_tracing_and_outreach": 1369,
+      "contracts_and_compensation": 6853,
+      "statutory_caps_and_licensing": 3937,
+      "automation_and_small_team_ops": 8985
     }
   },
   "schema_version": "1.0",
@@ -35790,6 +37015,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -35806,12 +37037,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -35830,6 +37055,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -35846,12 +37077,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -35870,6 +37095,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -35886,12 +37117,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -35950,6 +37175,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:35:50",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=2150s"
+        },
+        {
           "video_title": "How To Start Wholesale Real Estate In 2027 (15hrs/wk)!",
           "author": "Real Estate Skills",
           "timestamp": "00:30:38",
@@ -35966,12 +37197,6 @@
           "author": "Brian Fried - The Inventor Coach",
           "timestamp": "00:02:28",
           "link": "https://www.youtube.com/watch?v=UnGdjQb467o&t=148s"
-        },
-        {
-          "video_title": "Quiet Title Process and Timeline",
-          "author": "Quiet Title Michigan",
-          "timestamp": "00:01:36",
-          "link": "https://www.youtube.com/watch?v=kJRxvYeK_eU&t=96s"
         }
       ]
     },
@@ -35990,6 +37215,12 @@
       "priority": "high",
       "corpus_references": [
         {
+          "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
+          "author": "Roofing Insights",
+          "timestamp": "00:02:22",
+          "link": "https://www.youtube.com/watch?v=Qv99F8pvYNU&t=142s"
+        },
+        {
           "video_title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
           "author": "Surplus Funds 101",
           "timestamp": "00:03:14",
@@ -36006,12 +37237,6 @@
           "author": "domainsherpa",
           "timestamp": "01:09:59",
           "link": "https://www.youtube.com/watch?v=P7O7_GHUYb0&t=4199s"
-        },
-        {
-          "video_title": "How To Claim Tax Sale Overages",
-          "author": "Ted Thomas",
-          "timestamp": "00:03:53",
-          "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
         }
       ]
     }
