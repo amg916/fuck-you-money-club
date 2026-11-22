@@ -1,0 +1,732 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small commercial cleaning contracts desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "SAM.gov, CMS, Parcel Records, ISSA Workloading, and Inspection-to-Invoice Controls for Nine-Person Janitorial Pods",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a 56/100 "
+        "Money-to-Manpower Score because software organizes labor rather than replacing it. "
+        "This chapter maps four operator plays: recurring commercial route density, medical "
+        "janitorial specialization, public-sector rebid capture, and supervisor-pod retention "
+        "with billing control. Use parcel records, CMS directories, SAM.gov notices, verified "
+        "business contacts, and inspection evidence to identify cleanable sites, reach actual "
+        "buyers, price paid crew hours, and defend invoices. The canonical annual owner "
+        "profits remain $20,000 Conservative, $87,000 Base, and $192,000 Scaled. Keep the "
+        "first two cases within the specified 5 FT + 4 C planning envelope; the scaled "
+        "case requires 6 FT + 5 C. Every enrichment expense must improve a measurable "
+        "site, labor, or collection decision."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual recognized cleaning contract revenue",
+            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$725,000",
+            "context": "Annual recognized cleaning contract revenue",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,200,000",
+            "context": "Annual recognized cleaning contract revenue",
+            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build a Source Register Around Four Revenue Decisions",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Organize the desk around four mapped plays, not four disconnected lead "
+                    "lists. Play one builds recurring commercial route density by finding "
+                    "offices, managed buildings, and nearby replacement accounts. Play two "
+                    "qualifies medical janitorial sites whose room mix, exposure controls, "
+                    "and service windows justify differentiated pricing. Play three captures "
+                    "public-sector rebids before the walkthrough deadline, using actual "
+                    "solicitations and award history rather than purchased intent scores. "
+                    "Play four protects supervisor-pod retention and cash collection by "
+                    "connecting inspections, corrective work, approved scope changes, and "
+                    "invoices. Give every record one primary play and one next decision: "
+                    "verify occupancy, identify the buyer, inspect the site, or resolve a "
+                    "delivery exception. For the 5 FT + 4 C planning envelope, assign a "
+                    "designated employee an intake block and a supervisor an evidence-review "
+                    "block; these are duties within existing capacity, not two added hires. "
+                    "Contractor participation depends on actual agreements and classification, "
+                    "not the database label. Limit prospecting to service windows and "
+                    "geographic clusters the pod can cover. A thousand distant addresses "
+                    "cannot compensate for missing evening coverage, and a rich contact "
+                    "record cannot rescue a contract priced below its paid labor requirement."
+                ),
+                (
+                    "Treat the following directory as a source-selection register rather "
+                    "than a promise that every publisher offers a stable API. Official "
+                    "records are usually free to inspect, but retrieval engineering, member "
+                    "resources, exports, and commercial lookups have separate costs. Preserve "
+                    "the source URL, retrieval time, publisher's effective date, query "
+                    "parameters, and evidence category with every result. Publisher latency "
+                    "and your polling interval are different: checking an award daily does "
+                    "not make a delayed award submission current. For each connector, "
+                    "record the live account quota and service terms before activation; "
+                    "where no universal numeric limit is published, use serialized requests, "
+                    "caching, and bounded retries rather than inventing one. Respect "
+                    "Retry-After responses and stop retrying authentication failures. The "
+                    "New York sources illustrate exact municipal access routes; substitute "
+                    "the corresponding local assessor, permitting authority, and procurement "
+                    "office when operating elsewhere. Parcel ownership, permitted construction, "
+                    "and provider enrollment are discovery evidence, not confirmation that "
+                    "a particular buyer controls cleaning procurement. Save the specific "
+                    "record that motivated outreach, then verify occupancy and responsibility "
+                    "directly. This prevents the desk from contacting a landlord about a "
+                    "tenant-managed suite or treating a provider's mailing address as a "
+                    "medical facility."
+                ),
+                (
+                    "For public work, start with SAM.gov opportunity notices filtered by "
+                    "place of performance and NAICS 561720, then inspect the scope instead "
+                    "of assuming the classification is complete. Capture notice identifiers, "
+                    "amendments, site-visit instructions, response deadlines, contract periods, "
+                    "and incorporated wage determinations. USAspending award amounts help "
+                    "describe purchasing history, but obligations, options, modifications, "
+                    "and recognized contractor revenue are different measures. Calculate a "
+                    "possible rebid window from the actual period of performance and "
+                    "option structure; confirm it with current procurement documents. "
+                    "State and municipal contracts often appear only on local portals. "
+                    "Medical discovery follows a different evidence chain: CMS facility "
+                    "records establish a regulated provider identity, NPPES helps reconcile "
+                    "organization names and addresses, and the facility confirms which "
+                    "locations and rooms need janitorial service. Neither registry proves "
+                    "that a listed clinician buys cleaning. For private commercial routes, "
+                    "parcel and building records establish location context while property "
+                    "management websites identify likely operators. Keep historical ownership "
+                    "separate from current management. Across all three acquisition plays, "
+                    "a walkthrough remains the decisive source for cleanable area, "
+                    "access constraints, consumables responsibility, and attainable production "
+                    "rates; public data earns the visit rather than replacing it."
+                ),
+            ],
+            "table": {
+                "caption": "Eighteen Named Sources: Access, Cost, Freshness, Request Discipline, and Fallbacks",
+                "headers": [
+                    "Named source and operator decision",
+                    "Exact access route and cost basis",
+                    "Refresh latency and polling choice",
+                    "Rate-limit and access hygiene",
+                    "Fallback evidence and practical limitation",
+                ],
+                "rows": [
+                    [
+                        "SAM.gov Contract Opportunities identifies federal janitorial rebid opportunities.",
+                        "Use sam.gov/search or api.sam.gov/opportunities/v2/opportunities with an API key; public access is free.",
+                        "Poll qualified searches daily; amendment publication controls actual freshness.",
+                        "Read current key quotas; cache notices and honor throttling responses.",
+                        "Use solicitation attachments and contracting-office clarification when structured fields conflict.",
+                    ],
+                    [
+                        "SAM.gov Entity Information verifies federal supplier identity and registration.",
+                        "Search sam.gov entity records freely; entity API access depends on permissions.",
+                        "Recheck registration before submission; saved extracts can lag later changes.",
+                        "Use permitted public fields; never assume restricted entity access.",
+                        "Request current registration evidence directly from the proposed contracting entity.",
+                    ],
+                    [
+                        "USAspending.gov award records reveal incumbent agencies and purchasing history.",
+                        "POST filters to api.usaspending.gov/api/v2/search/spending_by_award/; public access is free.",
+                        "Check weekly; agency reporting and corrections determine underlying latency.",
+                        "Paginate narrowly by geography and classification; cache completed query results.",
+                        "Reconcile obligations against award documents rather than assuming annual revenue.",
+                    ],
+                    [
+                        "SAM.gov Wage Determinations anchors covered federal service labor estimates.",
+                        "Search sam.gov/content/wage-determinations freely by location and determination attributes.",
+                        "Check during bidding and amendments; incorporated revisions govern contract requirements.",
+                        "Download relevant documents once; retain revision identifiers with bid evidence.",
+                        "Ask the contracting officer to resolve conflicting incorporated wage schedules.",
+                    ],
+                    [
+                        "NYC PASSPort Public and procurement pages identify municipal solicitations.",
+                        "Enter through nyc.gov/site/mocs/passport/about-passport.page; public discovery access is free.",
+                        "Review active pursuits daily; amendments can change deadlines and scope.",
+                        "Use published search and vendor workflows rather than automated login scraping.",
+                        "Check the agency procurement page and named solicitation contact directly.",
+                    ],
+                    [
+                        "NYC ACRIS recorded documents establish ownership and transaction evidence.",
+                        "Search a836-acris.nyc.gov/CP/ freely using borough, block, lot, or party.",
+                        "Recording follows filing; inspect document dates before asserting current ownership.",
+                        "Use public search or published datasets; avoid aggressive document harvesting.",
+                        "Confirm current management directly; recorded ownership does not identify cleaning buyers.",
+                    ],
+                    [
+                        "NYC PLUTO and MapPLUTO provide parcel and building context.",
+                        "Download free releases through nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page.",
+                        "Ingest each published release; store its version and publication date.",
+                        "Prefer bulk downloads over repeated requests for individual parcel attributes.",
+                        "Use assessor records and walkthrough measurements; gross area differs from scope.",
+                    ],
+                    [
+                        "NYC DOB NOW permit datasets signal property and occupancy changes.",
+                        "Search data.cityofnewyork.us for DOB NOW Build permits; public datasets are free.",
+                        "Read dataset update metadata; ingest changed records on a weekly schedule.",
+                        "Use the dataset's published Socrata endpoint and narrow modified-date filters.",
+                        "Verify permit status with DOB records and confirm actual facility opening.",
+                    ],
+                    [
+                        "CMS Provider Data Catalog identifies specific medical facility categories.",
+                        "Download free facility datasets from data.cms.gov/provider-data using dataset export controls.",
+                        "Refresh after publisher updates; retain dataset-specific reporting and release dates.",
+                        "Prefer complete exports for small regions; follow each dataset's API documentation.",
+                        "Use state facility licensing records and direct administrator confirmation for coverage.",
+                    ],
+                    [
+                        "NPPES NPI Registry reconciles organization identities and practice addresses.",
+                        "GET npiregistry.cms.hhs.gov/api/?version=2.1 with supported filters; public access is free.",
+                        "Recheck shortlisted organizations weekly; provider submissions determine address currency.",
+                        "Use supported pagination with limit at most 200; cache matched results.",
+                        "Verify the service address directly; individual enrollment does not establish procurement authority.",
+                    ],
+                    [
+                        "OSHA Establishment Search supplies inspection history for diligence questions.",
+                        "Search osha.gov/ords/imis/establishment.html freely by establishment name and geography.",
+                        "Review during qualification; case processing and database updates introduce reporting lag.",
+                        "Search specific entities manually; distinguish similarly named businesses before recording findings.",
+                        "Request relevant safety documentation directly; inspection absence proves little about controls.",
+                    ],
+                    [
+                        "EPA List N verifies disinfectant registration context and label links.",
+                        "Use epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19 freely, then inspect the product label.",
+                        "Recheck before product substitution; registry listings and approved labels can change.",
+                        "Cache registration references; avoid repeatedly fetching unchanged product search results.",
+                        "Use the EPA registration label and facility protocol for required organisms.",
+                    ],
+                    [
+                        "ISSA workloading resources support task-based janitorial production assumptions.",
+                        "Use issa.com membership and store resources; access varies by purchased resource.",
+                        "Record the resource edition; recalibrate assumptions after measured site trials.",
+                        "Use licensed publications and calculators; do not assume a public API.",
+                        "Build measured task studies when reference conditions differ from actual rooms.",
+                    ],
+                    [
+                        "Google Places API supplies business location and contact discovery.",
+                        "Use places.googleapis.com/v1/places:searchText with credentials; field-based usage incurs published charges.",
+                        "Query shortlisted sites on demand; listings can still reflect outdated operations.",
+                        "Apply field masks, budget alerts, quotas, and applicable caching restrictions.",
+                        "Confirm through official business websites and direct calls before assigning contacts.",
+                    ],
+                    [
+                        "Hunter Domain Search and Email Verifier support business-contact enrichment.",
+                        "Call api.hunter.io/v2/domain-search or email-verifier with credentials; free and paid tiers apply.",
+                        "Run after domain confirmation; reverification is appropriate before an outreach batch.",
+                        "Read current credit rules and limits; deduplicate domains before spending credits.",
+                        "Use the company's published contact route when results lack reliable attribution.",
+                    ],
+                    [
+                        "Twilio Lookup checks telephone formatting and optional line intelligence.",
+                        "GET lookups.twilio.com/v2/PhoneNumbers/{PhoneNumber}; optional data packages have usage-based pricing.",
+                        "Check before authorized calling workflows; number intelligence can change over time.",
+                        "Enable only necessary fields; throttle requests and protect account credentials.",
+                        "Confirm numbers from official business pages; lookup does not establish outreach permission.",
+                    ],
+                    [
+                        "QuickBooks Online Accounting API connects contracts, invoices, and receipts.",
+                        "Use OAuth and quickbooks.api.intuit.com/v3/company/{realmId}/; accounting subscriptions and current platform terms apply.",
+                        "Use events where supported plus nightly reconciliation; posting dates remain distinct.",
+                        "Honor current throttles, deduplicate writes, and reconcile after interrupted sync operations.",
+                        "Export invoice and payment reports for controlled reconciliation when integration fails.",
+                    ],
+                    [
+                        "Swept centralizes janitorial schedules, communications, and inspection evidence.",
+                        "Access sweptworks.com through a paid vendor plan; verify export features before purchase.",
+                        "Capture inspections during service; offline synchronization can delay supervisor visibility.",
+                        "Use supported exports or contracted integrations; do not scrape staff accounts.",
+                        "Maintain controlled inspection forms and roster exports for temporary service continuity.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Exploit the Gap Between a Record and a Workable Route",
+                "body": "The strongest advantage is better qualification before the walkthrough, not a larger purchased contact list.",
+                "items": [
+                    "Overlay shortlisted parcels against actual evening crew routes; prioritize nearby replacement accounts before adding a new travel corridor.",
+                    "Read the last solicitation's exclusions and amendment history before calling an agency; recurring scope disputes often reveal where incumbents lost margin.",
+                    "Match medical locations by organization identity and service address; reject clinician mailing addresses before buying contact enrichment.",
+                    "Ask property managers which spaces they control before measuring area; common corridors and tenant suites can belong to different cleaning agreements.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Run an Evidence-Preserving Enrichment Waterfall",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Create a small relational model with separate organization, site, "
+                    "contact, opportunity, contract, and evidence tables. A company can "
+                    "operate several sites, a building can house several companies, and "
+                    "one property manager can represent several owners. Collapsing these "
+                    "relationships into a single spreadsheet row causes duplicate outreach "
+                    "and scope errors. Use an internal site identifier as the durable "
+                    "key, with parcel identifiers, NPI organization identifiers, agency "
+                    "notice numbers, and accounting customer identifiers stored as source "
+                    "references. Normalize street suffixes and suite formatting, but preserve "
+                    "the original address for review. Match exact source identifiers "
+                    "first, verified address and domain combinations second, and fuzzy "
+                    "names only into a review queue. Never merge two medical practices "
+                    "solely because they share a street address. Store contact roles "
+                    "explicitly: owner, property manager, practice administrator, procurement "
+                    "officer, or facility supervisor. A source assertion should include "
+                    "its evidence URL, observed value, retrieval time, and verification "
+                    "state. Prefer field-level confidence over one opaque lead score, "
+                    "because a verified building address can coexist with an unverified "
+                    "buyer. The supervisor needs to know which assumption still requires "
+                    "a call before committing scarce walkthrough time."
+                ),
+                (
+                    "Run enrichment in a fixed economic order. First obtain free "
+                    "official identity and location evidence. Second inspect the organization's "
+                    "own website for current occupancy, a business domain, service hours, "
+                    "and a published purchasing contact. Third use paid location or "
+                    "domain discovery only when a required field remains unresolved. "
+                    "Fourth verify the chosen business contact and suppress duplicates, "
+                    "previous objections, and invalid addresses before outreach. A paid "
+                    "verification result describes delivery risk; it does not prove "
+                    "that the recipient manages cleaning or wants a solicitation. "
+                    "Commercial email must satisfy 15 U.S.C. 7704, including accurate "
+                    "routing information, required identification and address information, "
+                    "and a functioning opt-out process. Record suppression centrally so "
+                    "another employee cannot restart the sequence from a fresh export. "
+                    "For calls and texts, review the applicable requirements of 47 "
+                    "U.S.C. 227 and the actual dialing method rather than treating "
+                    "a public number as blanket permission. Keep outreach centered on "
+                    "the facility's operating problem: missed inspections, inconsistent "
+                    "coverage, or a coming procurement cycle. Do not collect patient "
+                    "information or individual health details to personalize medical "
+                    "janitorial prospecting; facility-level operational evidence is sufficient "
+                    "for this business."
+                ),
+                (
+                    "Implement the first pipeline with Python's sqlite3, csv, json, "
+                    "urllib.request, and logging modules, plus scheduled execution appropriate "
+                    "to the operator's workstation or approved server. A small desk "
+                    "does not need a distributed event platform to manage several "
+                    "hundred qualified buildings. Keep source adapters separate from "
+                    "matching rules so a changed municipal column does not corrupt "
+                    "the contract ledger. Validate required columns and data types "
+                    "before promotion, quarantine malformed rows, and preserve a checksum "
+                    "of each permitted raw download. Keep credentials outside source "
+                    "files and exclude them from logs. Set explicit connection timeouts, "
+                    "bounded exponential backoff with jitter, and a daily spend ceiling "
+                    "for paid services. Log the request category and source identifier "
+                    "without retaining unnecessary personal fields. Review a sample of "
+                    "accepted matches and every suspected cross-organization merge. "
+                    "Measure qualified walkthroughs per enrichment dollar, not records "
+                    "processed per minute. Within the nine-person planning envelope, "
+                    "batch unresolved records into one daily review queue and stop "
+                    "collection when the pod's available walkthrough slots are filled. "
+                    "That capacity rule keeps automation from creating a second "
+                    "administrative workload while field employees are already covering "
+                    "absence, travel, inspection, and corrective service."
+                ),
+            ],
+            "table": {
+                "caption": "Six Waterfall Controls That Prevent Bad Matches and Wasted Enrichment",
+                "headers": [
+                    "Processing stage and accountable duty",
+                    "Required evidence before advancing the record",
+                    "Failure signal requiring human inspection",
+                    "Fallback action preserving operating capacity",
+                ],
+                "rows": [
+                    [
+                        "Intake employee assigns source and primary operator play.",
+                        "Retain source record identifier, effective date, and retrieval timestamp.",
+                        "Source describes an individual rather than a serviceable facility.",
+                        "Move record to identity review before buying additional enrichment.",
+                    ],
+                    [
+                        "Site reviewer separates building identity from tenant identity.",
+                        "Verify suite, service address, and organization relationship against evidence.",
+                        "Several unrelated practices share the same normalized street address.",
+                        "Preserve separate site relationships and request direct occupancy confirmation.",
+                    ],
+                    [
+                        "Contact researcher verifies the organization's current business domain.",
+                        "Match published organization name, location, and official contact page.",
+                        "Search result points to a directory or abandoned website.",
+                        "Use the published switchboard to identify the responsible manager.",
+                    ],
+                    [
+                        "Enrichment owner authorizes only necessary paid lookup fields.",
+                        "Document unresolved field, expected decision benefit, and remaining budget.",
+                        "Credit spending increases without additional qualified walkthroughs being scheduled.",
+                        "Pause paid discovery and review the qualification criteria first.",
+                    ],
+                    [
+                        "Outreach owner checks role relevance and suppression history.",
+                        "Confirm buyer responsibility and apply centralized channel-specific suppression rules.",
+                        "Verified mailbox belongs to a clinician without purchasing responsibility.",
+                        "Use the facility's administrative contact route instead of guessing.",
+                    ],
+                    [
+                        "Pipeline maintainer promotes only validated and attributable records.",
+                        "Pass schema checks, identifier checks, and sampled match review.",
+                        "A publisher changes columns or returns unexpected response content.",
+                        "Quarantine the batch and retain the last validated dataset.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Select one serviceable cluster",
+                    "action": "Filter one territory by travel time, service windows, and available crew capacity.",
+                    "detail": "Tag every candidate with one of the four plays and retain only records that could produce a feasible next action.",
+                },
+                {
+                    "step": 2,
+                    "title": "Resolve site and buyer separately",
+                    "action": "Match official identifiers and service addresses before researching purchasing contacts.",
+                    "detail": "Preserve source evidence, review ambiguous suites, and confirm whether landlord, tenant, agency, or administrator controls the scope.",
+                },
+                {
+                    "step": 3,
+                    "title": "Spend only on unresolved decisions",
+                    "action": "Use paid enrichment after free official records and the organization's own website.",
+                    "detail": "Apply current account quotas, field restrictions, suppression rules, and a daily budget before sending any lookup or outreach batch.",
+                },
+                {
+                    "step": 4,
+                    "title": "Hand off a bounded walkthrough queue",
+                    "action": "Give the supervisor verified sites, buyer roles, evidence links, and remaining scope questions.",
+                    "detail": "Limit scheduled visits to available capacity and feed measured labor assumptions back into qualification and pricing.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Turn Records Into Paid-Hour Bids and Verifiable Operating Requirements",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Convert site intelligence into a room-and-task workload before entering "
+                    "a monthly price. Public gross building area is not cleanable "
+                    "contract area, and an ISSA reference rate is not a universal "
+                    "promise of field productivity. Separate offices, corridors, restrooms, "
+                    "exam rooms, procedure spaces, floor types, fixtures, and service "
+                    "frequencies. Add setup, security access, equipment movement, waste "
+                    "handling, travel that must be paid, inspection, and expected "
+                    "corrective work. As an illustrative site calculation, 20,000 cleanable "
+                    "square feet divided by a locally tested blended rate of 4,000 "
+                    "square feet per productive hour produces five productive hours "
+                    "per visit. Adding one paid hour for access, setup, and "
+                    "inspection yields six paid hours. At 260 annual visits, "
+                    "that is 1,560 paid hours. A hypothetical fully loaded labor "
+                    "cost of $24 per hour produces $37,440 in annual labor "
+                    "cost; adding $7,560 for supplies, supervision allocation, equipment, "
+                    "and other assigned costs produces $45,000 total cost. At a "
+                    "$54,000 annual price, contribution after those assigned costs "
+                    "is $9,000, or 16.67%. This is a site-level illustration, "
+                    "not the portfolio's owner profit; unallocated overhead and actual "
+                    "performance still determine the final result."
+                ),
+                (
+                    "Keep the canonical portfolio cases separate from the illustrative "
+                    "site calculation. Conservative recognizes $250,000 in cleaning contract "
+                    "revenue and $20,000 owner net profit at 8%, leaving "
+                    "$230,000 for all costs. Base recognizes $725,000 and "
+                    "$87,000 at 12.0%, leaving $638,000 for all costs. "
+                    "Scaled recognizes $1,200,000 and $192,000 at 16%, leaving "
+                    "$1,008,000 for all costs. Customer property values, hospital "
+                    "billings, procurement ceilings, and underlying agency spending never "
+                    "enter recognized operator revenue. Conservative and Base retain "
+                    "the specified 5 FT + 4 C roster labels; Scaled "
+                    "uses 6 FT + 5 C, or eleven people. These "
+                    "labels do not supply wage rates, contractor utilization, or "
+                    "scheduled hours. In particular, the Conservative cost envelope "
+                    "requires a direct feasibility check before anyone assumes five "
+                    "employees can be fully funded for a year at local "
+                    "loaded wages alongside four contractors and operating overhead. "
+                    "Do not silently convert the listed full-time roles into "
+                    "part-time labor to make arithmetic fit. Report any unsupported "
+                    "capacity assumption, then retain the canonical figures as the "
+                    "comparison benchmark. Scheduling, inspection logs, and billing reduce "
+                    "leakage; they do not make paid cleaning hours disappear."
+                ),
+                (
+                    "Attach operating requirements to the bid evidence rather than "
+                    "burying them in generic policy documents. The Fair Labor "
+                    "Standards Act provisions at 29 U.S.C. 206 and 207 "
+                    "establish federal minimum-wage and overtime requirements, while state "
+                    "and local rules may impose higher obligations. Employee records "
+                    "under 29 CFR 516.2 must support actual pay calculations. "
+                    "For covered federal service contracts, examine 41 U.S.C. "
+                    "6702 and 6703, the solicitation's wage determination, fringe "
+                    "benefits, and incorporated clauses; do not assume ordinary "
+                    "commercial wage estimates satisfy that scope. A contractor "
+                    "agreement alone does not settle worker classification. Record "
+                    "the applicable federal and state analysis, actual supervision "
+                    "arrangements, and insurance evidence for genuine subcontractors. "
+                    "For chemicals, 29 CFR 1910.1200 requires applicable hazard "
+                    "communication controls, including labels, safety data sheets, and "
+                    "training. Where occupational exposure exists, assess 29 CFR "
+                    "1910.1030 requirements before medical work begins. EPA List "
+                    "N addresses a particular pathogen context; the registered "
+                    "product label and facility protocol determine whether the "
+                    "product fits the required task. Capture dilution, contact "
+                    "time, surface compatibility, PPE, and training in inspection "
+                    "design. Those details change achievable production rates and "
+                    "therefore belong in the price model."
+                ),
+            ],
+            "table": {
+                "caption": "Six Bid Diagnostics Linking Evidence to Labor Cost and Scope",
+                "headers": [
+                    "Diagnostic test and relevant operator play",
+                    "Evidence required before committing the price",
+                    "Cost or safety failure being prevented",
+                    "Required operator response to the finding",
+                ],
+                "rows": [
+                    [
+                        "Route-density play tests travel and service-window compatibility.",
+                        "Compare actual crew routes with access windows and paid travel rules.",
+                        "Nearby buildings require simultaneous service and create hidden overtime.",
+                        "Rebuild the route before offering a recurring contract start date.",
+                    ],
+                    [
+                        "Medical specialization tests room mix and exposure conditions.",
+                        "Document facility protocols, task surfaces, waste boundaries, and exposure assessment.",
+                        "Generic office production rates omit mandatory medical cleaning task time.",
+                        "Time representative tasks and price the verified operating requirements.",
+                    ],
+                    [
+                        "Public-sector rebid play tests incorporated labor cost requirements.",
+                        "Retain applicable wage determination revisions, fringes, clauses, and solicitation amendments.",
+                        "Commercial wage assumptions understate covered employee compensation and required benefits.",
+                        "Recalculate the loaded bid and resolve document conflicts before submission.",
+                    ],
+                    [
+                        "Supervisor retention play tests corrective-work and inspection capacity.",
+                        "Review failed inspections, repeat defects, supervisor hours, and client response commitments.",
+                        "Unpriced revisits consume replacement coverage and destabilize established accounts.",
+                        "Assign corrective time explicitly and change recurring scope when justified.",
+                    ],
+                    [
+                        "Portfolio scenario test reconciles recognized revenue and complete costs.",
+                        "Compare annual revenue, net profit, roster assumptions, and total cost envelopes.",
+                        "Site contribution is incorrectly presented as annual owner net profit.",
+                        "Separate assigned site costs from remaining overhead before reporting margins.",
+                    ],
+                    [
+                        "Contractor deployment test examines actual relationships and service controls.",
+                        "Review applicable classification tests, work arrangements, contracts, and insurance evidence.",
+                        "A contractor label conceals employee obligations or uninsured delivery exposure.",
+                        "Resolve the work structure before assigning recurring independent coverage.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before a Prospect Becomes a Delivery Commitment",
+                "body": "The supervisor and pricing owner must resolve these four checks before promising price, scope, or a service start date.",
+                "items": [
+                    "Verify cleanable area, room mix, keys, alarms, service windows, consumables ownership, and exclusions through a documented walkthrough.",
+                    "Verify required paid hours, local loaded wages, applicable overtime, covered-contract benefits, and roster capacity against the full cost envelope.",
+                    "Verify worker arrangements, insurance evidence, chemical labels, safety data sheets, and exposure-specific training for the actual assigned work.",
+                    "Verify signed scope, authorized buyer, inspection acceptance method, billing identifiers, payment terms, and the route for documenting changed work.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Close the Loop From Inspection Evidence to Collected Cash",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use one contract identifier to join the schedule, inspection "
+                    "record, corrective ticket, approved change, invoice, and receipt. "
+                    "Swept or another verified janitorial platform can organize field "
+                    "execution, while QuickBooks Online remains the accounting ledger "
+                    "when that is the chosen system. Confirm export rights and "
+                    "integration capabilities in the purchased plan instead of designing "
+                    "around an assumed API. A completed shift is not automatically "
+                    "an accepted inspection, and an accepted inspection is not "
+                    "automatically recognized revenue or collected cash. Preserve those "
+                    "states separately. Capture scheduled and actual paid hours, "
+                    "site identifier, checklist version, defect category, correction "
+                    "owner, client acceptance where required, and the linked "
+                    "billing period. Keep medical inspection records focused on "
+                    "work surfaces and service outcomes; prohibit patient identifiers "
+                    "in notes and avoid photographs containing charts, screens, "
+                    "or people. Restrict employee contact and location information "
+                    "to operational need. When offline submissions arrive late, "
+                    "record both service time and synchronization time. Otherwise "
+                    "the supervisor may misread a transmission delay as a missed "
+                    "visit, dispatch duplicate labor, and damage the very margin "
+                    "the tooling was purchased to protect. Route every exception "
+                    "to a named duty within the existing pod."
+                ),
+                (
+                    "Build diagnostics that answer operational questions, not just "
+                    "whether a scheduled job returned a successful exit code. "
+                    "A source freshness monitor should compare retrieval age with "
+                    "the publisher's release cadence. A schema monitor should "
+                    "detect missing identifiers and changed field types. A "
+                    "matching monitor should report duplicate sites and unresolved "
+                    "suite conflicts. A labor monitor should compare estimated "
+                    "paid hours with actual paid hours by task and "
+                    "account. A billing monitor should identify completed eligible "
+                    "service that has no invoice, invoices without supporting "
+                    "scope, and receipts not matched to the ledger. Test "
+                    "the pipeline with saved, permitted fixtures, including a "
+                    "repeated webhook, an expired credential, a partial export, "
+                    "a changed address, and a delayed inspection upload. "
+                    "For write operations, record an internal operation identifier "
+                    "and reconcile destination state before retrying an ambiguous "
+                    "timeout; blind retries can create duplicate invoices. Use "
+                    "unittest for matching and arithmetic checks, sqlite3 integrity "
+                    "checks for local storage, and structured logs for "
+                    "connector failures. Back up the database and configuration "
+                    "separately from credentials, then perform a restore drill. "
+                    "A backup that nobody has restored is weak evidence "
+                    "that Monday's routes and receivables can survive a failure."
+                ),
+                (
+                    "Review the four plays through one weekly exception meeting. "
+                    "For commercial route density, inspect qualified walkthroughs, "
+                    "paid travel, and the number of viable replacement accounts "
+                    "inside each service cluster. For medical specialization, review "
+                    "room-specific labor variance, inspection defects, and required "
+                    "training completion. For public-sector rebids, review approaching "
+                    "deadlines, unresolved amendments, and wage-sensitive estimate changes. "
+                    "For supervisor-pod retention and billing control, review repeat "
+                    "defects, unbilled eligible work, invoice disputes, aging receivables, "
+                    "and customer concentration. Keep software and enrichment spending "
+                    "inside the canonical total cost envelopes rather than "
+                    "subtracting it after announcing owner profit. Record the "
+                    "hours consumed by administration and supervision alongside "
+                    "field hours; moving a supervisor into data cleanup "
+                    "creates a coverage cost even when no additional "
+                    "subscription appears. Expand collection only after the current "
+                    "queue produces executable visits and profitable service "
+                    "decisions. Expand delivery only after verified crew "
+                    "capacity, not after a dashboard fills with leads. "
+                    "The Scaled case explicitly adds a sixth full-time "
+                    "role and a fifth contractor, so its larger "
+                    "revenue should never be described as the same "
+                    "nine-person pod doing unlimited extra work. The "
+                    "information edge is earlier, better decisions about "
+                    "paid labor and retained accounts."
+                ),
+            ],
+            "table": {
+                "caption": "Four Production Diagnostics for a Small Janitorial Desk",
+                "headers": [
+                    "Diagnostic and assigned review responsibility",
+                    "Specific measurement and evidence to inspect",
+                    "Failure injection or reconciliation test",
+                    "Recovery action protecting service and collections",
+                ],
+                "rows": [
+                    [
+                        "Data maintainer reviews source freshness and schema failures.",
+                        "Compare publisher dates, retrieval timestamps, required columns, and quarantined records.",
+                        "Replay an export with a missing identifier and changed column name.",
+                        "Reject promotion, retain validated data, and repair the source adapter.",
+                    ],
+                    [
+                        "Supervisor reviews labor variance and delayed field evidence.",
+                        "Compare paid hours, scheduled scope, defect counts, and upload timestamps.",
+                        "Submit a delayed inspection and confirm no duplicate dispatch occurs.",
+                        "Verify actual service completion before assigning any additional corrective labor.",
+                    ],
+                    [
+                        "Billing owner reviews duplicate writes and unbilled eligible service.",
+                        "Reconcile contract periods, approved changes, invoice identifiers, and posted receipts.",
+                        "Repeat an event and simulate an ambiguous invoice creation timeout.",
+                        "Check destination state before retrying and document any necessary correction.",
+                    ],
+                    [
+                        "Operator reviews continuity, access permissions, and recovery readiness.",
+                        "Inspect successful restores, current roster exports, and credential access assignments.",
+                        "Restore a backup into an isolated test location without live writes.",
+                        "Recover validated schedules and ledgers before reconnecting production integrations.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The best cleaning database tells you which paid hour to sell, protect, or stop wasting.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create a source register with access routes, current account quotas, permitted retention rules, publisher dates, and a fallback for each selected connector.",
+        "Map every prospect to commercial route density, medical specialization, public-sector rebids, or supervisor-pod retention and billing control.",
+        "Build separate organization, site, contact, opportunity, contract, and evidence records; review ambiguous medical suites before enriching contacts.",
+        "Run one geographic cluster through the free-first enrichment waterfall, with centralized suppression and a capped paid-lookup budget.",
+        "Validate walkthrough labor assumptions, wage requirements, worker arrangements, chemical controls, and the canonical portfolio cost envelopes before pricing.",
+        "Join schedules, inspections, corrections, invoices, and receipts by contract identifier; test duplicate events, delayed uploads, and backup restoration.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 7704 — Requirements for Commercial Electronic Mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Supports accurate sender information, required commercial-email disclosures, physical address information, and functioning opt-out procedures in prospecting workflows.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on Telephone Equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Requires channel-specific review of calling and messaging methods; a publicly listed business number alone does not resolve applicable restrictions.",
+        },
+        {
+            "title": "29 U.S.C. 206 — Minimum Wage",
+            "url": "https://www.law.cornell.edu/uscode/text/29/206",
+            "relevance": "Establishes federal wage requirements that must be evaluated alongside applicable higher state or local wage requirements when loading crew-hour costs.",
+        },
+        {
+            "title": "29 U.S.C. 207 — Maximum Hours",
+            "url": "https://www.law.cornell.edu/uscode/text/29/207",
+            "relevance": "Informs overtime calculations and roster-level review when several customer sites draw on the same covered employees.",
+        },
+        {
+            "title": "29 CFR 516.2 — Employee Records",
+            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-A/part-516/subpart-A/section-516.2",
+            "relevance": "Specifies records for covered employees, supporting timekeeping, wage calculations, and reconciliation between operational schedules and payroll.",
+        },
+        {
+            "title": "41 U.S.C. 6702 — Service Contract Labor Standards Applicability",
+            "url": "https://www.law.cornell.edu/uscode/text/41/6702",
+            "relevance": "Defines the applicability framework for federal service contracts, requiring scope-specific review before treating a janitorial bid as covered.",
+        },
+        {
+            "title": "41 U.S.C. 6703 — Required Contract Terms",
+            "url": "https://www.law.cornell.edu/uscode/text/41/6703",
+            "relevance": "Addresses required wage, fringe-benefit, and related terms for covered federal service contracts that affect labor estimates.",
+        },
+        {
+            "title": "29 CFR 1910.1200 — Hazard Communication",
+            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1200",
+            "relevance": "Connects chemical inventories, labels, safety data sheets, and employee training to cleaning scope and field inspection controls.",
+        },
+        {
+            "title": "29 CFR 1910.1030 — Bloodborne Pathogens",
+            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1030",
+            "relevance": "Requires exposure-specific assessment and controls where occupational exposure exists, affecting medical janitorial procedures, training, and labor estimates.",
+        },
+        {
+            "title": "7 U.S.C. 136j — Unlawful Acts Under FIFRA",
+            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
+            "relevance": "Includes restrictions on using registered pesticides inconsistently with labeling, supporting product-specific disinfectant selection and application procedures.",
+        },
+    ],
+}

@@ -1,10 +1,10 @@
 {
   "scope": "publishing_store_excluding_previews",
   "sha256": {
-    "audit/existing_work_audit.json": "365430e57c0e397c4db2b5ff9983738ca5dfb36d127eaca6dfd57db4c922bee9",
-    "brand/brand_system.json": "a694d098d3733dcf1553cae941a41f745473bfdf0e8ffc6f91be8c3618520deb",
-    "catalog/pipeline_29_candidates.json": "b96163b1f857107b31cd30da35f1881d19a6c2f8ec0594ac1abe38982d51da95",
-    "research/research_database_summary.json": "c5d71f7bd5d321d1cde18e14a5b2d84add56e36d56a9af058a933b1d7ed75c19",
+    "audit/existing_work_audit.json": "344355bc7f264d308c53b1e14781c1b6976ef25946c654b32d73ad02bd9304e0",
+    "brand/brand_system.json": "f82a44c263008f13c9878a797aa0089bc9f7a00300e039c881552a9ef104f1c1",
+    "catalog/pipeline_29_candidates.json": "c992214232d8842f9757eef326fbc52839bf6527cf141b7c7cf1c62fc19ad547",
+    "research/research_database_summary.json": "99cce439769a4066ab1ee6c99747c0db423fa781e21f9bb7eda3c4a4672dccc4",
     "site/newsletter_signups.json": "5a97fe09f877c0fccee940246e74f27dc5b6bc83148037af241946b350933794",
     "volumes/vol-001-heir-hunting/chapters/chapter-01.md": "4c44fe7e11c2f4af10ed7241bb0f8b49674c33d8c70c91a965cd3a0dab1133f0",
     "volumes/vol-001-heir-hunting/chapters/chapter-02.md": "c9f8705ba384dbbbd713674229cb8dfce45ab4fab27acea1480b476f229ad08b",
@@ -491,6 +491,24 @@
     "volumes/vol-027-business-acquisition/manuscript.json": "a70b729773b41a7a71ddcc3a272e5fe71efeb9738fb8470afc5e947b6608b79d",
     "volumes/vol-027-business-acquisition/metadata.json": "4b0f3bb7e2907bef3c6de11fe169a230350386be30a7227c46086133e0ce28bc",
     "volumes/vol-027-business-acquisition/scorecard.json": "e19f2ffe80167cb83ff4f820a6ec569805b30cc32b0d8b3dc317a594345da0d5",
-    "volumes/vol-027-business-acquisition/workbook.json": "ec9efd76dabbbb4aff9c7ee718a58647bebbad33e217877b20e242a8a95050d4"
+    "volumes/vol-027-business-acquisition/workbook.json": "ec9efd76dabbbb4aff9c7ee718a58647bebbad33e217877b20e242a8a95050d4",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-01.md": "53e1ee4bb58555df124a6d4358ee1c0892c171542eb445bfe6e8608a2095e4f6",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-02.md": "1029563cdeb3b668546c655e3255405bc3dcbdb7515de051d6988ca232e12d00",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-03.md": "8cf40d7decf6bf94869bae3d159eda89aa71ca96d81ad1b57ea8f49589d18761",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-04.md": "d18d66f120e2bd11452b344bb796186f2426b7e47624de6ee0896f3817f0756e",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-05.md": "91c470cf4b6df4fb6480780749a367a860fcc0f131aaac19f9dabd7e4ce2be3d",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-06.md": "044218891391ca08674cf7aed85325123dba35d5156d4ef14fc61654ca804437",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-07.md": "50cebca543bd396415860991015f23669fd05166e5ded164a36f1bd3efd18406",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-08.md": "432ff40197b2d3fbd32b7c9260c769201df074105d04234d176e0c107a1eebc8",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-09.md": "6fccb109a646464553a6149dc66ea461c1c68bcef9c3cc9add2fe025cec3bc45",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-10.md": "d10cec6040434562961a26ea0e583170356832ed831399e49104c28117ed39c1",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-11.md": "d913086470b5a82077907b089b652b0e06d3cdcc9c806461f21ce49a35d2e571",
+    "volumes/vol-028-commercial-cleaning-contracts/chapters/chapter-12.md": "d98c8c01d090238bdd501ee307130b00f568a2193ada46ce04c1e1714622a364",
+    "volumes/vol-028-commercial-cleaning-contracts/diagrams_data.json": "9566a15b1373285afdadb6659655096e2f686f56bb7c02c17bc3dc9d64af8dd3",
+    "volumes/vol-028-commercial-cleaning-contracts/graphics_reviews.json": "9fa671f4deae59a2d8aa116cc57f0a7b44bcb834ed58e088ebae2fc723e4a843",
+    "volumes/vol-028-commercial-cleaning-contracts/manuscript.json": "bf8559f4cc21615e29ea73175decac01702485ce1f25ade837cc63be7be3ce02",
+    "volumes/vol-028-commercial-cleaning-contracts/metadata.json": "480e8ec2d05ebdecd8789136bbb06a66d06e7f66b6c0c73bdd603b075a3e38b1",
+    "volumes/vol-028-commercial-cleaning-contracts/scorecard.json": "efe37848e556115150de9391171e3079adb40ee23ad7c5bf6eeb65c89a245ee7",
+    "volumes/vol-028-commercial-cleaning-contracts/workbook.json": "0ae74c799c8e763a0b4d30b0c5dbef6ca40c966ecdeae308b0a91ee48fed54de"
   }
 }

@@ -31,7 +31,8 @@
     "vol-024-tax-lien-investing",
     "vol-025-freight-brokerage",
     "vol-026-government-surplus-auctions",
-    "vol-027-business-acquisition"
+    "vol-027-business-acquisition",
+    "vol-028-commercial-cleaning-contracts"
   ],
   "editorial_tracks": {
     "track_1": {
@@ -23007,7 +23008,7 @@
       "slug": "commercial-cleaning-contracts",
       "title": "Commercial Cleaning Contracts",
       "category": "Facility services",
-      "production_stage": "candidate_scored",
+      "production_stage": "approved_master",
       "scores": {
         "revenue_potential": 21,
         "profit_margin_potential": 12,
@@ -23024,11 +23025,11 @@
       },
       "total_score": 56,
       "tier_label": "Capital / Labor Intensive",
-      "evidence_confidence": "Moderate",
-      "uncertainty_band": "±6 pts",
+      "evidence_confidence": "High",
+      "uncertainty_band": "±3 pts",
       "uncertainty_bounds": {
-        "low": 50,
-        "high": 62
+        "low": 53,
+        "high": 59
       },
       "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
       "score_rationale": {
@@ -23594,5 +23595,5 @@
       "min_expert_youtube_links_per_chapter": 12
     }
   ],
-  "generated_at": "2026-11-21T23:45:41Z"
+  "generated_at": "2026-11-22T04:15:29Z"
 }

@@ -1,0 +1,1114 @@
+from __future__ import annotations
+
+ENGINE_1 = r'''
+# Module 1: initialize one local SQLite ledger before starting workers.
+import hashlib
+import json
+import sqlite3
+from contextlib import contextmanager
+from datetime import date, datetime
+
+SCHEMA = """
+CREATE TABLE IF NOT EXISTS requests (
+    request_key TEXT PRIMARY KEY,
+    payload_hash TEXT NOT NULL,
+    result_json TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS leads (
+    lead_id TEXT PRIMARY KEY,
+    source TEXT NOT NULL,
+    external_id TEXT NOT NULL,
+    payload_json TEXT NOT NULL,
+    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
+    disposition TEXT NOT NULL CHECK(disposition IN ('qualified', 'scrubbed')),
+    UNIQUE(source, external_id)
+);
+CREATE TABLE IF NOT EXISTS contracts (
+    contract_id TEXT PRIMARY KEY,
+    lead_id TEXT NOT NULL UNIQUE REFERENCES leads(lead_id),
+    monthly_cents INTEGER NOT NULL
+        CHECK(typeof(monthly_cents) = 'integer' AND monthly_cents > 0),
+    state TEXT NOT NULL CHECK(state IN
+        ('scoped', 'priced', 'signed', 'verified', 'active', 'paused', 'closed'))
+);
+CREATE TABLE IF NOT EXISTS evidence (
+    evidence_id INTEGER PRIMARY KEY,
+    contract_id TEXT NOT NULL REFERENCES contracts(contract_id),
+    kind TEXT NOT NULL,
+    digest TEXT NOT NULL CHECK(length(digest) = 64),
+    UNIQUE(contract_id, kind, digest)
+);
+CREATE TABLE IF NOT EXISTS transitions (
+    transition_id INTEGER PRIMARY KEY,
+    request_key TEXT NOT NULL UNIQUE,
+    contract_id TEXT NOT NULL REFERENCES contracts(contract_id),
+    old_state TEXT NOT NULL,
+    new_state TEXT NOT NULL,
+    changed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS services (
+    service_id TEXT PRIMARY KEY,
+    contract_id TEXT NOT NULL REFERENCES contracts(contract_id),
+    period TEXT NOT NULL,
+    minutes INTEGER NOT NULL CHECK(typeof(minutes) = 'integer' AND minutes > 0),
+    acceptance_digest TEXT NOT NULL CHECK(length(acceptance_digest) = 64),
+    UNIQUE(contract_id, period)
+);
+CREATE TABLE IF NOT EXISTS invoices (
+    invoice_id TEXT PRIMARY KEY,
+    service_id TEXT NOT NULL UNIQUE REFERENCES services(service_id),
+    period TEXT NOT NULL,
+    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0)
+);
+CREATE TABLE IF NOT EXISTS receipts (
+    receipt_id TEXT PRIMARY KEY,
+    bank_ref TEXT NOT NULL UNIQUE,
+    invoice_id TEXT NOT NULL REFERENCES invoices(invoice_id),
+    period TEXT NOT NULL,
+    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0)
+);
+CREATE TABLE IF NOT EXISTS costs (
+    cost_id TEXT PRIMARY KEY,
+    source_ref TEXT NOT NULL UNIQUE,
+    expense_period TEXT NOT NULL,
+    cash_period TEXT NOT NULL,
+    category TEXT NOT NULL,
+    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0)
+);
+CREATE VIEW IF NOT EXISTS reconciliation AS
+WITH periods AS (
+    SELECT period FROM invoices
+    UNION SELECT period FROM receipts
+    UNION SELECT expense_period FROM costs
+    UNION SELECT cash_period FROM costs
+), totals AS (
+    SELECT p.period,
+        COALESCE((SELECT SUM(i.cents) FROM invoices i
+                  WHERE i.period = p.period), 0) AS revenue_cents,
+        COALESCE((SELECT SUM(r.cents) FROM receipts r
+                  WHERE r.period = p.period), 0) AS collected_cents,
+        COALESCE((SELECT SUM(c.cents) FROM costs c
+                  WHERE c.expense_period = p.period), 0) AS expense_cents,
+        COALESCE((SELECT SUM(c.cents) FROM costs c
+                  WHERE c.cash_period = p.period), 0) AS paid_cents
+    FROM periods p
+)
+SELECT period, revenue_cents, collected_cents, expense_cents, paid_cents,
+       revenue_cents - expense_cents AS operating_profit_cents,
+       collected_cents - paid_cents AS cash_change_cents
+FROM totals;
+CREATE VIEW IF NOT EXISTS receivables AS
+SELECT i.invoice_id, i.period, i.cents AS invoiced_cents,
+       COALESCE(SUM(r.cents), 0) AS collected_cents,
+       i.cents - COALESCE(SUM(r.cents), 0) AS outstanding_cents
+FROM invoices i
+LEFT JOIN receipts r ON r.invoice_id = i.invoice_id
+GROUP BY i.invoice_id, i.period, i.cents;
+"""
+
+def connect(path):
+    db = sqlite3.connect(str(path), timeout=30, isolation_level=None)
+    db.row_factory = sqlite3.Row
+    db.execute("PRAGMA foreign_keys = ON")
+    db.execute("PRAGMA busy_timeout = 30000")
+    db.execute("PRAGMA synchronous = FULL")
+    return db
+
+def initialize(path):
+    db = connect(path)
+    try:
+        db.execute("PRAGMA journal_mode = WAL")
+        db.executescript(SCHEMA)
+    finally:
+        db.close()
+
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"),
+                      allow_nan=False)
+
+def positive_integer(value):
+    if type(value) is not int or value <= 0:
+        raise ValueError("A positive integer is required")
+    return value
+
+def period_value(value):
+    parsed = datetime.strptime(value, "%Y-%m")
+    if parsed.strftime("%Y-%m") != value:
+        raise ValueError("Use a zero-padded calendar period")
+    return value
+
+def digest_value(value):
+    if len(value) != 64 or any(c not in "0123456789abcdef" for c in value):
+        raise ValueError("Use a lowercase SHA-256 document digest")
+    return value
+
+@contextmanager
+def write_transaction(db):
+    db.execute("BEGIN IMMEDIATE")
+    try:
+        yield
+        db.execute("COMMIT")
+    except BaseException:
+        if db.in_transaction:
+            db.execute("ROLLBACK")
+        raise
+
+def once(db, request_key, payload, action):
+    if not request_key:
+        raise ValueError("A durable request key is required")
+    fingerprint = hashlib.sha256(canonical(payload).encode("utf-8")).hexdigest()
+    with write_transaction(db):
+        existing = db.execute(
+            "SELECT payload_hash, result_json FROM requests WHERE request_key = ?",
+            (request_key,)
+        ).fetchone()
+        if existing:
+            if existing["payload_hash"] != fingerprint:
+                raise ValueError("Request key was reused with different contents")
+            return json.loads(existing["result_json"])
+        result = action()
+        db.execute(
+            "INSERT INTO requests VALUES (?, ?, ?)",
+            (request_key, fingerprint, canonical(result))
+        )
+        return result
+'''
+
+ENGINE_2 = r'''
+# Module 2: score an inspected opportunity and create its scoped contract.
+def intake(db, request_key, lead_id, contract_id, source, external_id,
+           monthly_cents, direct_cost_cents, route_fit, access_ready):
+    positive_integer(monthly_cents)
+    positive_integer(direct_cost_cents)
+    if type(route_fit) is not bool or type(access_ready) is not bool:
+        raise ValueError("Route and access findings must be explicit booleans")
+    payload = {
+        "operation": "intake", "lead_id": lead_id, "contract_id": contract_id,
+        "source": source, "external_id": external_id,
+        "monthly_cents": monthly_cents, "direct_cost_cents": direct_cost_cents,
+        "route_fit": route_fit, "access_ready": access_ready
+    }
+
+    def action():
+        encoded = canonical(payload)
+        existing = db.execute(
+            "SELECT lead_id, payload_json, score, disposition FROM leads "
+            "WHERE source = ? AND external_id = ?", (source, external_id)
+        ).fetchone()
+        if existing:
+            if existing["payload_json"] != encoded:
+                raise ValueError("Existing lead requires an explicit reviewed revision")
+            return {"lead_id": existing["lead_id"], "score": existing["score"],
+                    "disposition": existing["disposition"]}
+        contribution_ok = (
+            (monthly_cents - direct_cost_cents) * 100 >= monthly_cents * 20
+        )
+        score = 20 + (40 if contribution_ok else 0)
+        score += 20 if route_fit else 0
+        score += 20 if access_ready else 0
+        disposition = "qualified" if score >= 80 else "scrubbed"
+        db.execute(
+            "INSERT INTO leads VALUES (?, ?, ?, ?, ?, ?)",
+            (lead_id, source, external_id, encoded, score, disposition)
+        )
+        if disposition == "qualified":
+            db.execute(
+                "INSERT INTO contracts VALUES (?, ?, ?, 'scoped')",
+                (contract_id, lead_id, monthly_cents)
+            )
+        return {"lead_id": lead_id, "score": score, "disposition": disposition}
+
+    return once(db, request_key, payload, action)
+'''
+
+ENGINE_3 = r'''
+# Module 3: evidence-backed verification; no financial escrow is implemented.
+REQUIRED_EVIDENCE = frozenset({
+    "signed_scope", "wage_plan", "safety_screen", "insurance", "access_test"
+})
+ALLOWED_TRANSITIONS = {
+    "scoped": {"priced", "closed"},
+    "priced": {"signed", "closed"},
+    "signed": {"verified", "closed"},
+    "verified": {"active", "closed"},
+    "active": {"paused", "closed"},
+    "paused": {"active", "closed"},
+    "closed": set()
+}
+
+def attach_evidence(db, request_key, contract_id, kind, digest):
+    if kind not in REQUIRED_EVIDENCE:
+        raise ValueError("Use a supported evidence category")
+    digest_value(digest)
+    payload = {"operation": "evidence", "contract_id": contract_id,
+               "kind": kind, "digest": digest}
+
+    def action():
+        db.execute(
+            "INSERT INTO evidence(contract_id, kind, digest) VALUES (?, ?, ?) "
+            "ON CONFLICT(contract_id, kind, digest) DO NOTHING",
+            (contract_id, kind, digest)
+        )
+        return {"contract_id": contract_id, "kind": kind, "digest": digest}
+
+    return once(db, request_key, payload, action)
+
+def transition(db, request_key, contract_id, target):
+    payload = {"operation": "transition", "contract_id": contract_id,
+               "target": target}
+
+    def action():
+        row = db.execute(
+            "SELECT state FROM contracts WHERE contract_id = ?", (contract_id,)
+        ).fetchone()
+        if row is None:
+            raise ValueError("Contract does not exist")
+        old = row["state"]
+        if target not in ALLOWED_TRANSITIONS[old]:
+            raise ValueError("State transition is disallowed")
+        if target in {"verified", "active"}:
+            present = {
+                item["kind"] for item in db.execute(
+                    "SELECT kind FROM evidence WHERE contract_id = ?",
+                    (contract_id,)
+                )
+            }
+            if not REQUIRED_EVIDENCE.issubset(present):
+                raise ValueError("Required verification evidence is incomplete")
+        changed = db.execute(
+            "UPDATE contracts SET state = ? WHERE contract_id = ? AND state = ?",
+            (target, contract_id, old)
+        ).rowcount
+        if changed != 1:
+            raise RuntimeError("Contract state changed unexpectedly")
+        db.execute(
+            "INSERT INTO transitions(request_key, contract_id, old_state, new_state) "
+            "VALUES (?, ?, ?, ?)", (request_key, contract_id, old, target)
+        )
+        return {"contract_id": contract_id, "state": target}
+
+    return once(db, request_key, payload, action)
+'''
+
+ENGINE_4 = r'''
+# Module 4: close a completed monthly service and issue its invoice atomically.
+def close_service(db, request_key, contract_id, service_id, invoice_id,
+                  period, minutes, acceptance_digest):
+    period_value(period)
+    positive_integer(minutes)
+    digest_value(acceptance_digest)
+    payload = {
+        "operation": "close_service", "contract_id": contract_id,
+        "service_id": service_id, "invoice_id": invoice_id, "period": period,
+        "minutes": minutes, "acceptance_digest": acceptance_digest
+    }
+
+    def action():
+        contract = db.execute(
+            "SELECT state, monthly_cents FROM contracts WHERE contract_id = ?",
+            (contract_id,)
+        ).fetchone()
+        if contract is None or contract["state"] != "active":
+            raise ValueError("Only active contracts can close monthly service")
+        db.execute(
+            "INSERT INTO services VALUES (?, ?, ?, ?, ?)",
+            (service_id, contract_id, period, minutes, acceptance_digest)
+        )
+        db.execute(
+            "INSERT INTO invoices VALUES (?, ?, ?, ?)",
+            (invoice_id, service_id, period, contract["monthly_cents"])
+        )
+        return {"invoice_id": invoice_id, "cents": contract["monthly_cents"]}
+
+    return once(db, request_key, payload, action)
+'''
+
+ENGINE_5 = r'''
+# Module 5: match bank receipts and record expense versus payment periods.
+def receive_cash(db, request_key, receipt_id, bank_ref, invoice_id, period, cents):
+    period_value(period)
+    positive_integer(cents)
+    payload = {
+        "operation": "receive_cash", "receipt_id": receipt_id, "bank_ref": bank_ref,
+        "invoice_id": invoice_id, "period": period, "cents": cents
+    }
+
+    def action():
+        row = db.execute(
+            "SELECT outstanding_cents FROM receivables WHERE invoice_id = ?",
+            (invoice_id,)
+        ).fetchone()
+        if row is None or cents > row["outstanding_cents"]:
+            raise ValueError("Receipt exceeds the invoice balance or lacks an invoice")
+        db.execute(
+            "INSERT INTO receipts VALUES (?, ?, ?, ?, ?)",
+            (receipt_id, bank_ref, invoice_id, period, cents)
+        )
+        return {"receipt_id": receipt_id, "cents": cents}
+
+    return once(db, request_key, payload, action)
+
+def record_cost(db, request_key, cost_id, source_ref, expense_period,
+                cash_period, category, cents):
+    period_value(expense_period)
+    period_value(cash_period)
+    positive_integer(cents)
+    if category not in {"wages", "subcontract", "supplies", "travel",
+                        "relief_repairs", "overhead"}:
+        raise ValueError("Use a supported operating cost category")
+    payload = {
+        "operation": "record_cost", "cost_id": cost_id, "source_ref": source_ref,
+        "expense_period": expense_period, "cash_period": cash_period,
+        "category": category, "cents": cents
+    }
+
+    def action():
+        db.execute(
+            "INSERT INTO costs VALUES (?, ?, ?, ?, ?, ?)",
+            (cost_id, source_ref, expense_period, cash_period, category, cents)
+        )
+        return {"cost_id": cost_id, "cents": cents}
+
+    return once(db, request_key, payload, action)
+
+def snapshot(db):
+    db.execute("BEGIN")
+    try:
+        monthly = [
+            dict(row) for row in db.execute(
+                "SELECT * FROM reconciliation ORDER BY period"
+            )
+        ]
+        balances = [
+            dict(row) for row in db.execute(
+                "SELECT * FROM receivables ORDER BY invoice_id"
+            )
+        ]
+        db.execute("COMMIT")
+        return {"monthly": monthly, "receivables": balances}
+    except BaseException:
+        if db.in_transaction:
+            db.execute("ROLLBACK")
+        raise
+'''
+
+ENGINE_6 = r'''
+# Module 6: isolated acceptance checks, including concurrent replay.
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
+def require(condition, message):
+    if not condition:
+        raise AssertionError(message)
+
+def expect_value_error(action):
+    try:
+        action()
+    except ValueError:
+        return
+    raise AssertionError("Expected a rejected operation")
+
+def run_reference_checks():
+    with TemporaryDirectory() as directory:
+        path = Path(directory) / "cohort.sqlite3"
+        initialize(path)
+        db = connect(path)
+        try:
+            intake(db, "lead:1", "lead-1", "contract-1", "referral", "site-1",
+                   100000, 60000, True, True)
+            transition(db, "price:1", "contract-1", "priced")
+            transition(db, "sign:1", "contract-1", "signed")
+            expect_value_error(
+                lambda: transition(db, "early:1", "contract-1", "verified")
+            )
+            for kind in sorted(REQUIRED_EVIDENCE):
+                attach_evidence(
+                    db, "evidence:" + kind, "contract-1", kind,
+                    hashlib.sha256(kind.encode("utf-8")).hexdigest()
+                )
+            transition(db, "verify:1", "contract-1", "verified")
+            transition(db, "activate:1", "contract-1", "active")
+            close_service(
+                db, "service:1", "contract-1", "service-1", "invoice-1",
+                "2026-01", 600, "a" * 64
+            )
+
+            def worker(_):
+                connection = connect(path)
+                try:
+                    return receive_cash(
+                        connection, "receipt:1", "receipt-1", "bank-line-1",
+                        "invoice-1", "2026-02", 60000
+                    )
+                finally:
+                    connection.close()
+
+            with ThreadPoolExecutor(max_workers=8) as pool:
+                results = list(pool.map(worker, range(16)))
+            require(all(item == results[0] for item in results),
+                    "Concurrent replays must return identical results")
+            require(
+                db.execute("SELECT COUNT(*) FROM receipts").fetchone()[0] == 1,
+                "Concurrent replays must create exactly one receipt"
+            )
+            expect_value_error(
+                lambda: receive_cash(
+                    db, "receipt:1", "receipt-1", "bank-line-1",
+                    "invoice-1", "2026-02", 50000
+                )
+            )
+            expect_value_error(
+                lambda: receive_cash(
+                    db, "receipt:2", "receipt-2", "bank-line-2",
+                    "invoice-1", "2026-02", 50000
+                )
+            )
+            record_cost(
+                db, "cost:1", "cost-1", "payroll-line-1",
+                "2026-01", "2026-02", "wages", 10000
+            )
+            report = snapshot(db)
+            by_period = {row["period"]: row for row in report["monthly"]}
+            require(by_period["2026-01"]["operating_profit_cents"] == 90000,
+                    "Accrued operating profit must reconcile")
+            require(by_period["2026-02"]["cash_change_cents"] == 50000,
+                    "Collection less paid expense must reconcile")
+            require(report["receivables"][0]["outstanding_cents"] == 40000,
+                    "Remaining receivable must equal unpaid invoice value")
+            require(
+                db.execute("SELECT COUNT(*) FROM requests WHERE request_key = ?",
+                           ("receipt:2",)).fetchone()[0] == 0,
+                "Rejected receipts must roll back their request records"
+            )
+            require(db.execute("PRAGMA integrity_check").fetchone()[0] == "ok",
+                    "SQLite integrity check must succeed")
+            require(not list(db.execute("PRAGMA foreign_key_check")),
+                    "Every foreign key must resolve")
+            return {"checks": "passed", "concurrent_replays": 16,
+                    "receipt_rows": 1, "outstanding_cents": 40000}
+        finally:
+            db.close()
+
+# Execute run_reference_checks() explicitly after copying all six modules.
+# This reference supplies checks; it does not claim they were executed here.
+'''
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "commercial-cleaning-end-to-end-production-ledger-90-day-cohort",
+    "question_prompt": "How does an operator execute commercial cleaning contracts end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "ISSA-Informed Bidding, W-2 Supervisor Pods, OSHA Chemical Controls, SQLite Event Integrity, and Net-30 Cash Reconciliation",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower "
+        "Score of 56/100: this is a labor-intensive production business, not software "
+        "revenue disguised as facilities work. This chapter maps four operator plays: "
+        "recurring commercial routes, medical janitorial scopes, production-rate bidding, "
+        "and supervisor-led scheduling, inspection, and billing. The operating unit is "
+        "five full-time people plus four contractor relationships, with paid capacity "
+        "checked before every replacement or expansion. A six-module SQLite reference "
+        "connects qualified intake to verified service, invoices, receipts, and reconciled "
+        "cash. The worked quarter produces $181,250 revenue and $21,750 operating profit, "
+        "matching the $725,000 Base annual revenue and $87,000 owner profit. Conservative "
+        "and Scaled annual owner profits remain $20,000 and $192,000 respectively."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual cleaning contract revenue; no client operating revenue included",
+            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$725,000",
+            "context": "Annual cleaning contract revenue; $638,000 annual operating costs",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,200,000",
+            "context": "Annual cleaning contract revenue; expansion requires additional paid capacity",
+            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Convert inspected demand into four capacity-priced operator plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with a site record, not a square-footage quote. Assign one durable "
+                    "lead identifier to the property, buyer, service address, referral source, "
+                    "and requested start date. Walk the site with the facility contact and "
+                    "separate cleanable floor area from leased area; identify restroom fixtures, "
+                    "occupied workstations, flooring, waste streams, security windows, and "
+                    "daytime interruptions. For this chapter, the four mapped plays are P1 "
+                    "recurring commercial routes, P2 medical janitorial scopes, P3 production-rate "
+                    "bidding, and P4 supervisor-pod execution with scheduling, inspections, and "
+                    "billing. They are connected operating motions, not four independently "
+                    "additive revenue forecasts. P1 supplies route density; P2 supplies explicitly "
+                    "bounded clinical work; P3 protects contribution; P4 prevents accepted work "
+                    "from becoming unbilled labor. Record the incumbent termination date and "
+                    "purchase-order requirements before promising mobilization. A qualified lead "
+                    "must fit both the service window and the paid labor envelope. The reference "
+                    "score favors contribution, route fit, and tested access, but a high score "
+                    "does not authorize service. The signed scope, site safety assessment, "
+                    "insurance evidence, and payroll plan still control activation. Reject "
+                    "unpriced isolation-room work and ambiguous sharps handling rather than "
+                    "burying those tasks inside ordinary trash removal."
+                ),
+                (
+                    "Build the estimate from task quantities multiplied by visit frequency and "
+                    "measured minutes. Use licensed ISSA estimating materials as a starting "
+                    "reference, then time the actual restroom, vacuuming, hard-floor, and "
+                    "touchpoint sequence during a supervised trial. Do not treat a published "
+                    "production rate as a promise across different furniture density or soil "
+                    "loads. Add setup, chemical preparation, equipment movement, paid travel, "
+                    "quality checks, and relief coverage separately. An illustrative Base month "
+                    "supports 1,040 service hours: 720 employee production hours and 320 hours "
+                    "purchased from genuine independent service businesses. Five full-time "
+                    "people provide approximately 866.67 paid hours monthly, leaving 146.67 "
+                    "employee hours for supervision, travel, training, and administration. At "
+                    "$25 loaded employee cost per paid hour, employee expense is approximately "
+                    "$21,666.67; subcontract service at $40 per hour adds $12,800. Revenue of "
+                    "$60,416.67 therefore averages $58.09 per delivered service hour, before "
+                    "supplies, transport, relief, and overhead. That arithmetic is a planning "
+                    "envelope, not permission to schedule every minute. Reprice a site when "
+                    "observed production exceeds its allowance, and verify that medical "
+                    "dwell-time requirements fit the actual sequence rather than an optimistic "
+                    "spreadsheet."
+                ),
+                (
+                    "Assign the five full-time positions as one working supervisor and four "
+                    "cleaners; the supervisor's compensation is already inside the labor budget. "
+                    "The four contractor relationships buy defined service scopes, not four "
+                    "extra unpaid people or disguised employee shifts. Classification follows "
+                    "the actual relationship under applicable wage, tax, and state tests; "
+                    "a certificate of insurance and a signed contractor form do not settle "
+                    "that question. Use W-2 payroll when the operating facts require it. Under "
+                    "29 U.S.C. 207, covered nonexempt employees generally earn overtime after "
+                    "forty hours in a workweek; travel between job sites during the workday "
+                    "is addressed by 29 CFR 785.38. Check each person's weekly schedule rather "
+                    "than averaging overtime away across the month. The modeled monthly direct "
+                    "cost also includes $3,600 supplies, $2,400 transport, and $4,700 of "
+                    "scheduled relief labor and equipment upkeep. Add $8,000 overhead to "
+                    "reach approximately $53,166.67 total operating cost. The quoted "
+                    "$4,000–$18,000 monthly overhead planning range cannot represent all "
+                    "payroll-inclusive spending at Base volume. Customer concentration remains "
+                    "a separate exposure: replacing one large medical account can consume "
+                    "the whole supervisor's mobilization capacity even when annual revenue "
+                    "appears unchanged."
+                ),
+            ],
+            "table": {
+                "caption": "Four Mapped Plays and the Nine-Person Production Envelope",
+                "headers": [
+                    "Operating motion and accountable production owner",
+                    "Required field evidence before committing capacity",
+                    "Economic constraint and practical failure signal",
+                    "Recorded output feeding the next operating step",
+                ],
+                "rows": [
+                    [
+                        "P1 recurring commercial routes, owned by the working supervisor",
+                        "Measured cleanable area, fixture counts, access windows, and visit frequency",
+                        "Reject distant stops when paid travel destroys the quoted contribution",
+                        "A signed task-frequency schedule attached to the durable contract identifier",
+                    ],
+                    [
+                        "P2 medical janitorial scopes, supervised with site-specific exposure assessment",
+                        "Documented room boundaries, approved products, exposure findings, and escalation contacts",
+                        "Exclude unpriced sharps handling and separately estimate required protective procedures",
+                        "A medical scope appendix specifying responsibilities and cleaning acceptance evidence",
+                    ],
+                    [
+                        "P3 production-rate bidding, maintained by the supervisor using timed trials",
+                        "ISSA-informed task estimates reconciled against observed site-specific production minutes",
+                        "Budget 1,040 delivered service hours before accepting additional recurring commitments",
+                        "A costed estimate separating wages, purchased service, supplies, and supervision",
+                    ],
+                    [
+                        "P4 supervisor-pod execution, connecting scheduling, inspection records, and billing",
+                        "Assigned workers, completed access tests, inspection results, and exception ownership",
+                        "Reserve 146.67 employee hours for travel, supervision, training, and administration",
+                        "Accepted monthly service records that release invoices without duplicate posting",
+                    ],
+                    [
+                        "Five full-time positions, including one paid working supervisor",
+                        "Weekly payroll records showing work, travel, training, and overtime exposure",
+                        "Approximately $21,666.67 monthly loaded employee expense within the Base envelope",
+                        "Payroll-source identifiers reconciled against cost records and bank settlement evidence",
+                    ],
+                    [
+                        "Four contractor relationships purchasing distinct independently operated service scopes",
+                        "Documented classification analysis, insurance coverage, scope responsibility, and service acceptance",
+                        "Approximately 320 purchased service hours at an illustrative $40 hourly equivalent",
+                        "Approved subcontract invoices matched to distinct sites and accepted service periods",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the minutes that disappear between the bid and the shift",
+                "body": "Veteran cleaning operators defend route economics with observed production evidence, not optimistic area ratios.",
+                "items": [
+                    "Time the last restroom of the shift, not only the first demonstration restroom; fatigue and restocking often change the production allowance.",
+                    "Run the actual key, alarm, elevator, and loading-dock sequence before the first paid shift; record failed access as a mobilization defect.",
+                    "Keep floor restoration and periodic carpet extraction outside ordinary nightly frequency unless their labor and machine costs are explicitly funded.",
+                    "Photograph supply levels and equipment condition without patient information; compare consumption per visit before blaming unexplained margin erosion on wages.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Install a transactional production ledger before automating handoffs",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use one authoritative operational subledger for contract state, accepted "
+                    "service, invoices, cash receipts, and operating costs. The six modules "
+                    "below are sequential Python source fragments: concatenate them in order "
+                    "into one reference script, initialize a local database once, and give "
+                    "each worker its own connection. They use only the standard library. "
+                    "Store money as integer cents and durations as integer minutes; never "
+                    "round a floating-point subtotal into the ledger. A source-system key "
+                    "identifies the business object, while a separate request key identifies "
+                    "the attempted operation. Both matter: retry protection alone cannot stop "
+                    "two different requests from billing the same monthly service. UNIQUE "
+                    "constraints therefore protect source leads, contract periods, service "
+                    "invoices, bank references, and cost references independently. Every "
+                    "mutation begins with BEGIN IMMEDIATE, checks existing state under the "
+                    "same write lock, inserts all dependent records, and commits the "
+                    "idempotency result atomically. Concurrent retries either observe the "
+                    "committed result or wait; changed contents under the same key fail. "
+                    "A lock timeout returns failure for a later same-key retry. There is "
+                    "no read-then-write race outside the transaction in these write paths, "
+                    "and a failed operation leaves neither partial business records nor "
+                    "a successful request marker."
+                ),
+                (
+                    "The verification state machine is scoped, priced, signed, verified, "
+                    "active, paused, and closed. Its hold is an internal restriction on "
+                    "mobilization, not a customer-money escrow arrangement. Contract funds "
+                    "remain ordinary cleaning receipts unless a separately designed banking "
+                    "arrangement actually exists. Attach document digests for signed scope, "
+                    "wage planning, safety screening, insurance, and access testing; the "
+                    "digest links to a controlled document repository and does not prove "
+                    "that the document is accurate or current. The supervisor must review "
+                    "the contents, monitor expiry dates outside this compact reference, "
+                    "and pause service when a required condition lapses. Module four "
+                    "implements one completed recurring service period per contract and "
+                    "atomically creates its invoice at the stored monthly price. Do not "
+                    "feed partial-month work, deposits, adjustments, or variable project "
+                    "charges into that function. Those require explicit schedules, credit "
+                    "documents, and additional posting types. Cleaning revenue represents "
+                    "the operator's earned service fees; a medical customer's collections, "
+                    "a property owner's rent roll, and customer purchase-order ceilings "
+                    "are not operator revenue. Completion evidence must support the "
+                    "service period, while the financial close separately tests whether "
+                    "recognition matches the actual contract and accounting policy."
+                ),
+                (
+                    "Keep this SQLite file on local persistent storage behind one "
+                    "authorized ledger service, not on a shared network filesystem. "
+                    "Restrict direct database writes so scheduling connectors cannot bypass "
+                    "the transaction functions. Connecteam or Swept can supply assignments "
+                    "and inspection exports; QuickBooks Online can receive reviewed invoice "
+                    "and expense exports. They are peripheral systems, not competing "
+                    "sources of invoice identity. Never make a remote billing call inside "
+                    "a database transaction and assume it shares the commit. This "
+                    "reference deliberately performs no external side effects; an added "
+                    "integration needs a transactional outbox and destination-side "
+                    "idempotency, with delivery receipts reconciled independently. Module "
+                    "five matches bank cash without allowing receipts above the invoice "
+                    "balance, and its snapshot uses one read transaction for consistent "
+                    "monthly and receivable views. Costs carry separate expense and "
+                    "payment periods so accrual profit does not masquerade as available "
+                    "cash. The compact model supports fully paid cost documents, not "
+                    "partial accounts-payable settlements. Module six supplies concurrent "
+                    "replay, rejected-transition, overpayment, rollback, and integrity "
+                    "checks; these checks are provided for execution, not reported as "
+                    "already run. Back up through SQLite's backup interface and test "
+                    "restoration before relying on the ledger for a payroll-week close."
+                ),
+            ],
+            "table": {
+                "caption": "6-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
+                "headers": [
+                    "Sequential module and specific production responsibility",
+                    "Copy-pasteable Python and embedded SQLite implementation",
+                    "Concurrency boundary and financial integrity protection",
+                    "Operator acceptance evidence before live operational use",
+                ],
+                "rows": [
+                    [
+                        "Module one establishes constrained storage and the atomic request wrapper",
+                        ENGINE_1,
+                        "BEGIN IMMEDIATE serializes writers; independent UNIQUE constraints defend natural identities",
+                        "Initialize once, restrict direct writes, and verify a restored local backup",
+                    ],
+                    [
+                        "Module two converts inspected intake into scored and scoped opportunities",
+                        ENGINE_2,
+                        "Lead identity and request identity are checked within the same transaction",
+                        "Review real production costs before allowing the illustrative qualification score",
+                    ],
+                    [
+                        "Module three enforces document-backed verification and controlled service activation",
+                        ENGINE_3,
+                        "State checks, evidence checks, transition history, and updates commit together",
+                        "Verify document contents and current validity rather than trusting digests alone",
+                    ],
+                    [
+                        "Module four posts accepted recurring service and its invoice together",
+                        ENGINE_4,
+                        "One contract-period service and one service invoice prevent duplicate monthly billing",
+                        "Use completed fixed-fee periods only; route adjustments through separately designed documents",
+                    ],
+                    [
+                        "Module five matches receipts and separates expense recognition from payment",
+                        ENGINE_5,
+                        "Locked balance checks prevent concurrent over-allocation; snapshots share one read transaction",
+                        "Match each bank line to its invoice and each cost to evidence",
+                    ],
+                    [
+                        "Module six exercises replay, rollback, receivable arithmetic, and database integrity",
+                        ENGINE_6,
+                        "Sixteen concurrent same-key receipts must create exactly one committed receipt",
+                        "Execute the supplied checks and retain actual results before operational adoption",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before a site becomes active",
+                "body": "Activation requires independently checked operational evidence; a sales signature alone does not release a crew.",
+                "items": [
+                    "Confirm cleanable quantities, task frequencies, contractual price, purchase-order identity, and the first invoice recipient against the signed scope.",
+                    "Verify paid weekly capacity, overtime treatment, between-site travel, and the actual classification of every assigned service provider.",
+                    "Review chemical labels, safety data sheets, exposure findings, protective equipment, and the site's sharps and incident-response boundaries.",
+                    "Test physical access and alarm procedures, inspect insurance evidence, and assign one supervisor to resolve the first-shift exceptions.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run each shift as evidence-backed production and close exceptions before billing",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Publish the coming week's route only after comparing contracted minutes "
+                    "with paid availability by person and service window. The supervisor "
+                    "owns assignment changes, substitute training, and client communication; "
+                    "cleaners should not discover a medical scope change from an informal "
+                    "message left at reception. Each shift packet includes site identity, "
+                    "access instructions, task frequencies, product names, dilution method, "
+                    "required protective equipment, and escalation contacts. Under 29 CFR "
+                    "1910.1200, maintain the applicable written hazard communication program, "
+                    "labels, safety data sheets, and employee information and training. "
+                    "Select disinfectants registered for the intended use and follow "
+                    "label instructions, including contact time and surface restrictions; "
+                    "7 U.S.C. 136j(a)(2)(G) generally prohibits pesticide use inconsistent "
+                    "with labeling, subject to statutory exceptions. A misted surface "
+                    "that dries before its required wet contact time is a production "
+                    "defect, even when an inspection photograph looks clean. Do not mix "
+                    "chemicals or substitute a product based only on fragrance or price. "
+                    "Separate clean and dirty equipment, record dilution-system faults, "
+                    "and stop tasks when the specified protective or ventilation "
+                    "conditions cannot be met. Schedule corrective work as paid capacity "
+                    "rather than asking employees to absorb it off the clock."
+                ),
+                (
+                    "Medical janitorial work begins with an exposure determination, not "
+                    "a blanket assumption that every clinic requires identical procedures. "
+                    "Where occupational exposure to blood or other potentially infectious "
+                    "materials exists, 29 CFR 1910.1030 establishes requirements including "
+                    "an exposure control plan, appropriate controls, training, hepatitis "
+                    "B vaccination provisions, and post-exposure evaluation. Confirm "
+                    "which party handles regulated waste, sharps containers, isolation "
+                    "areas, and spill response. A cleaner encountering an uncapped "
+                    "needle should isolate the area and invoke the agreed response, "
+                    "not improvise pickup to preserve a route's completion percentage. "
+                    "The supervisor inspects a rotating sample of high-risk surfaces "
+                    "and a separate sample of ordinary appearance tasks; otherwise "
+                    "a polished lobby can conceal failed restroom execution. Record "
+                    "severity, affected room, failed task, corrective owner, and closure "
+                    "time. Avoid patient information in photographs and free-text notes. "
+                    "Link rework to the original service identifier so the site-level "
+                    "cost report includes the second visit. A complaint closed by "
+                    "telephone without confirming the correction remains an unresolved "
+                    "quality event. Contractor rework obligations belong in the "
+                    "purchased scope, but employee rework still creates compensable "
+                    "time and must enter payroll."
+                ),
+                (
+                    "At month-end, reconcile planned visits, completed visits, exceptions, "
+                    "accepted service, invoices, and bank receipts in that order. A "
+                    "missing inspection record is an evidence problem; a missed visit "
+                    "may also be a price or service-credit problem. Resolve the "
+                    "contractual treatment before using the fixed-fee close function. "
+                    "The reference records one monthly invoice per completed contract "
+                    "period and does not silently reduce invoice amounts when the "
+                    "bank pays short. For a disputed deduction, preserve the original "
+                    "invoice, investigate the reason, and issue an authorized adjustment "
+                    "through a separately implemented credit workflow. Reconcile payroll "
+                    "to approved time, subcontract invoices to accepted scopes, and "
+                    "supply spending to delivered stock. The supervisor prepares the "
+                    "evidence packet; an existing owner or bookkeeper reviews the "
+                    "bank reconciliation within the stated overhead budget, rather "
+                    "than adding an invisible tenth full-time person. Separate "
+                    "preparation from review whenever practical and retain the review "
+                    "record. Every Friday, inspect aging receivables and the next "
+                    "two payroll dates together. A profitable contract paid late "
+                    "can exhaust the pod's working cash before its annual margin "
+                    "changes. Invoice delivery confirmation and a named accounts-payable "
+                    "contact are therefore production outputs, not optional office "
+                    "cleanup."
+                ),
+            ],
+            "table": {
+                "caption": "Shift-to-Cash Forensic Controls for Commercial and Medical Routes",
+                "headers": [
+                    "Observed operating exception requiring a named owner",
+                    "Evidence that distinguishes cause from superficial symptoms",
+                    "Immediate operational action within paid pod capacity",
+                    "Ledger consequence and financial review responsibility",
+                ],
+                "rows": [
+                    [
+                        "Access failure prevents the assigned crew from entering the site",
+                        "Timestamped access attempt, tested credentials, and facility contact response history",
+                        "Supervisor contacts the client and reschedules only within available paid capacity",
+                        "Record actual travel and labor costs; resolve contractual billing treatment separately",
+                    ],
+                    [
+                        "Measured task duration repeatedly exceeds the original production estimate",
+                        "Timed task samples separated from travel, restocking, interruptions, and rework",
+                        "Revise task sequencing or negotiate a priced scope change with the buyer",
+                        "Compare site contribution before accepting another renewal at the existing price",
+                    ],
+                    [
+                        "Disinfectant application fails the product's required wet contact interval",
+                        "Product label, dilution record, application method, and observed drying interval",
+                        "Retrain the assigned worker and schedule an appropriately sequenced paid correction",
+                        "Attribute corrective labor and supplies to the original site's service period",
+                    ],
+                    [
+                        "Potential blood exposure or discovered sharps exceeds ordinary janitorial boundaries",
+                        "Site exposure determination, agreed response responsibilities, and documented incident facts",
+                        "Isolate the affected area and activate the established exposure response procedure",
+                        "Retain incident costs separately while protecting sensitive worker and patient information",
+                    ],
+                    [
+                        "Customer payment arrives below the original outstanding invoice amount",
+                        "Bank settlement identifier, remittance explanation, invoice identity, and client correspondence",
+                        "Apply only received cash and investigate the deduction with accounts payable",
+                        "Preserve the residual receivable until a supported credit workflow resolves it",
+                    ],
+                    [
+                        "Payroll cash requirement precedes collection of the largest outstanding account",
+                        "Aging report compared against payroll dates and unrestricted bank cash balances",
+                        "Escalate collection and defer expansion that would consume the same cash buffer",
+                        "Review liquidity separately from earned profit and document the resulting decision",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Release a capacity-checked shift",
+                    "action": "Compare assigned task minutes with each person's paid weekly availability.",
+                    "detail": "Include travel, required training, relief, and overtime exposure before the supervisor publishes the route.",
+                },
+                {
+                    "step": 2,
+                    "title": "Capture service and exception evidence",
+                    "action": "Record completion against the site-specific task schedule and original service identifier.",
+                    "detail": "Escalate access, chemical, exposure, and scope exceptions immediately; avoid sensitive information in inspection media.",
+                },
+                {
+                    "step": 3,
+                    "title": "Accept the recurring service period",
+                    "action": "Resolve missed work and contractual credits before posting the fixed-fee monthly close.",
+                    "detail": "Attach the acceptance digest and allow the transaction to create service and invoice records together.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile cash and review capacity",
+                    "action": "Match bank receipts, payroll, subcontract bills, and paid operating costs to durable source references.",
+                    "detail": "Review receivable aging, the next two payroll dates, site contribution, and remaining route capacity before adding work.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Walk a mature Base cohort through ninety days without confusing profit and cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The worked cohort begins with an operating portfolio, not a "
+                    "zero-revenue launch. Ten active contracts collectively produce the "
+                    "Base annual service value of $725,000. Opening unrestricted cash "
+                    "is $40,000, and opening receivables are $60,416.67 for the "
+                    "preceding month's completed work. All invoices in this illustration "
+                    "collect the following month; no bad debts, financing flows, "
+                    "capital purchases, owner distributions, or income-tax payments "
+                    "occur during the quarter. Those omissions define the cash "
+                    "bridge rather than suggesting such flows never exist. The "
+                    "opening cash balance is existing working capital, not another "
+                    "quarter of revenue or a second charge for startup investment. "
+                    "Monthly service values are $60,416.67, $60,416.67, and $60,416.66; "
+                    "the final cent is the illustrative allocation needed to make "
+                    "one quarter exactly $181,250. Actual invoices must use "
+                    "contract-authorized price schedules, not an arbitrary ledger "
+                    "rounding adjustment. The compact fixed-monthly-price reference "
+                    "requires an added reviewed schedule workflow for that allocation. "
+                    "Monthly operating costs follow the same cent allocation "
+                    "at $53,166.67, $53,166.67, and $53,166.66. Each month therefore "
+                    "earns $7,250. The quarter's $21,750 profit annualizes to "
+                    "$87,000 at exactly 12.0%, while its $159,500 costs annualize "
+                    "to $638,000."
+                ),
+                (
+                    "Track selling activity separately from the active billing portfolio. "
+                    "Month one receives twelve leads: four are scrubbed for scope "
+                    "or route mismatch, two lose competitively, two sign, and four "
+                    "remain open. Month two combines fourteen new leads with those "
+                    "four carryovers; five scrub, three lose, two sign, and eight "
+                    "remain open. Month three combines sixteen new leads with "
+                    "eight carryovers; six scrub, four lose, two sign, and twelve "
+                    "remain open. Across the quarter, forty-two unique leads "
+                    "reconcile to fifteen scrubs, nine losses, six wins, and "
+                    "twelve open opportunities. The six wins replace scheduled "
+                    "departures rather than increasing the portfolio above ten "
+                    "active accounts: each month's two wins start in the "
+                    "following month as two incumbents leave. Month-three wins "
+                    "therefore support month-four continuity, not quarter-three "
+                    "billing. Replacement scopes are assumed to preserve aggregate "
+                    "fees and service hours; verify that assumption site by "
+                    "site before accepting it. P1 and P2 supply replacement "
+                    "demand, P3 rejects uneconomic work, and P4 absorbs mobilization "
+                    "inside the paid supervision allowance. No sales conversion "
+                    "percentage creates extra cleaning capacity, and an unsigned "
+                    "pipeline opportunity creates neither revenue nor a receivable."
+                ),
+                (
+                    "Collections are $60,416.67 in each month because month three "
+                    "collects month two's invoice, not its own slightly smaller "
+                    "invoice. Quarterly cash received is consequently $181,250.01. "
+                    "Subtract $159,500 paid operating costs to obtain $21,750.01 "
+                    "incremental cash and $61,750.01 ending unrestricted cash. "
+                    "Ending receivables are $60,416.66. The bridge is exact: "
+                    "$21,750 profit plus the $0.01 decrease in receivables "
+                    "equals $21,750.01 cash generation. This is why a "
+                    "one-cent difference belongs in the reconciliation rather "
+                    "than being hidden as miscellaneous revenue. In the "
+                    "illustration, every operating cost is both incurred "
+                    "and paid within its month; the reference ledger can "
+                    "separate those periods when reality differs. A delayed "
+                    "large invoice would reduce bank cash and increase "
+                    "receivables without immediately changing earned revenue. "
+                    "Run that collection stress before spending the buffer "
+                    "on another route. The Conservative case remains "
+                    "$250,000 revenue, $230,000 costs, and $20,000 owner "
+                    "profit with five full-time people and four contractor "
+                    "relationships. Scaled remains $1,200,000 revenue, "
+                    "$1,008,000 costs, and $192,000 owner profit with "
+                    "six full-time people and five contractor relationships. "
+                    "Neither alternative can be reached by multiplying "
+                    "this quarter's invoices while holding productive labor "
+                    "and supervision permanently fixed."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Month and separately identified lead or financial cohort",
+                    "Cohort movement, service recognition, or operating expense",
+                    "Cash timing, scrubs, losses, and balance-sheet consequence",
+                    "Reconciliation result and next-period operating responsibility",
+                ],
+                "rows": [
+                    [
+                        "Month 1 lead cohort begins with twelve new inspected opportunities",
+                        "Four scrubbed, two lost, two signed, and four opportunities remain open",
+                        "Signed replacements generate no current-month cash merely because contracts were executed",
+                        "Two signed sites replace two departures next month without expanding paid capacity",
+                    ],
+                    [
+                        "Month 1 financial cohort serves ten already active recurring contracts",
+                        "Revenue $60,416.67 less operating expense $53,166.67 produces $7,250 earned profit",
+                        "Collect opening receivables $60,416.67; pay costs $53,166.67; ending receivables $60,416.67",
+                        "Cumulative incremental cash $7,250; unrestricted cash rises from $40,000 to $47,250",
+                    ],
+                    [
+                        "Month 2 lead cohort combines fourteen new leads with four carryovers",
+                        "Five scrubbed, three lost, two signed, and eight opportunities remain open",
+                        "Prior-month wins replace departures; this month's signatures support next-month service",
+                        "Maintain ten active contracts and verify unchanged aggregate pricing and production hours",
+                    ],
+                    [
+                        "Month 2 financial cohort preserves the same ten-contract production envelope",
+                        "Revenue $60,416.67 less operating expense $53,166.67 produces $7,250 earned profit",
+                        "Collect Month 1 invoices $60,416.67; pay $53,166.67; ending receivables $60,416.67",
+                        "Cumulative incremental cash $14,500; unrestricted cash reaches $54,500 after operating payments",
+                    ],
+                    [
+                        "Month 3 lead cohort combines sixteen new leads with eight carryovers",
+                        "Six scrubbed, four lost, two signed, and twelve opportunities remain open",
+                        "Quarter totals reconcile forty-two leads into fifteen scrubs, nine losses, six wins",
+                        "Twelve open opportunities remain; latest two wins replace Month 4 departures",
+                    ],
+                    [
+                        "Month 3 financial cohort completes the exact quarterly Base allocation",
+                        "Revenue $60,416.66 less operating expense $53,166.66 produces $7,250 earned profit",
+                        "Collect Month 2 invoices $60,416.67; pay $53,166.66; ending receivables $60,416.66",
+                        "Quarter revenue $181,250; profit $21,750; cumulative cash gain $21,750.01; ending cash $61,750.01",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A cleaning contract becomes a business asset only when its paid minutes, accepted work, invoice, and bank receipt tell the same story.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Map every active site to the four operating plays and rebuild its estimate from measured tasks, visit frequencies, paid travel, and relief coverage.",
+        "Prove that the five full-time positions and four contractor relationships can deliver the planned 1,040 monthly service hours without hidden overtime or misclassification.",
+        "Copy the six reference modules sequentially, execute the supplied acceptance checks, and retain actual results plus a successful database restoration record.",
+        "Require signed scope, wage planning, safety screening, current insurance review, and tested site access before activating a contract.",
+        "Close each monthly service against accepted evidence, reconcile bank receipts by unique reference, and investigate every residual invoice balance.",
+        "Reproduce the $181,250 revenue, $21,750 profit, and $21,750.01 cash bridge before allocating the working-capital buffer to expansion.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "29 U.S.C. 207 — Maximum hours",
+            "url": "https://www.law.cornell.edu/uscode/text/29/207",
+            "relevance": "Covered nonexempt employee overtime must be assessed by workweek; monthly route averages cannot erase overtime obligations.",
+        },
+        {
+            "title": "29 CFR 785.38 — Travel that is all in the day's work",
+            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-B/part-785/subpart-C/subject-group-ECFRad996a1050fcae8/section-785.38",
+            "relevance": "Travel between job sites during the workday is working time and belongs in route costing and payroll records.",
+        },
+        {
+            "title": "29 CFR 1910.1200 — Hazard communication",
+            "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200",
+            "relevance": "Cleaning chemical operations require applicable hazard communication programs, labeling, safety data sheets, and employee information and training.",
+        },
+        {
+            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
+            "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+            "relevance": "Occupational exposure findings determine applicable medical-site controls, training, vaccination provisions, and post-exposure response requirements.",
+        },
+        {
+            "title": "7 U.S.C. 136j(a)(2)(G) — Pesticide use inconsistent with labeling",
+            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
+            "relevance": "Disinfectant application must follow applicable labeling requirements, including use directions and contact time, subject to statutory exceptions.",
+        },
+    ],
+}

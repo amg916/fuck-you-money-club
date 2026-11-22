@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-028-commercial-cleaning-contracts",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1868514,
+      "sha256": "b798a433b0f9b97e90acce45e51d07366a0762713ffb51fcb39d859f9ef4412a"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2405759,
+      "sha256": "07a729d37fedb72b291151339cd43340d677e90acd7fc50edfb5fda99e5ab843"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 532672,
+      "sha256": "de594fb338e985be03edfe96a022ed1d0de0c1ae7444192abee289fe68f3b86c"
+    },
+    "book.epub": {
+      "bytes": 241435,
+      "sha256": "2161d7243857fdd2c6eb061a0b187e016578a27133a1d02a1672a800167b2232"
+    },
+    "art/cover.svg": {
+      "bytes": 4031,
+      "sha256": "f38e06a0a63f07b863d1d56052dd1b4be9f99cba94be9ed29d62dd0eec76bf37"
+    },
+    "art/scorecard.svg": {
+      "bytes": 32909,
+      "sha256": "c3cc687fbb868592d3412f217d901b6ca1c1194af2ab93828ec3f192fe038810"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12302,
+      "sha256": "5b3b24085c78dbcf92cb7b181e3a56f0e25acf2099c6f01cd1ed1a0615d4627d"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8360,
+      "sha256": "d0071401193eaf82d3d2635d51ec43ed161577f0507e59b3239ba16f43a213ce"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12727,
+      "sha256": "860dceae6529e2e06811f5684af883f27941a8b13aac634791cfbdc166b6bd0c"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10279,
+      "sha256": "2b1cdbd0edb34ad6f94d2298080e1908d8f7e472a1711ed1661992cd28a5fe6c"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10881,
+      "sha256": "3611ba9ef1f32c847988e0242da04553ebca92c85942f61283bbc52c1af01e54"
+    },
+    "art/diag_06.svg": {
+      "bytes": 18891,
+      "sha256": "323d8e71332e1eebb2326e812aa0a0a18da7b7c27e3c4ec08402c800d3d8f57c"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9771,
+      "sha256": "b702f256fe8f2d59c46b231a59ba608fa213d3d8794f0178fb6f014eec41425e"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9069,
+      "sha256": "e031813a45cd592b4084c06b03cf0dc86c1c1dd012c0b5ae89bb998413acd776"
+    }
+  }
+}

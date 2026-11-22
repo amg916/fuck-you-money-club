@@ -1,0 +1,622 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-first-commercial-cleaning-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in commercial cleaning contracts, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–4 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "Four Local Sourcing Plays: Permit Signals, Medical Suites, Property-Manager Routes, and Incumbent Recovery Using ISSA Task Rates and W-2 Supervisor Pods",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #10, Commercial Cleaning Contracts, ranks #28 with a Money-to-Manpower Score of "
+        "56/100 because recurring revenue still requires paid crew hours. This chapter maps four plays: "
+        "new-occupancy office contracts, outpatient medical suites, property-manager route clusters, and "
+        "incumbent-service recovery. Mine public records and buyer intent, verify authority and service "
+        "economics, then convert measured walkthroughs into tightly scoped recurring agreements. The "
+        "canonical annual owner-profit cases are $20,000 Conservative, $87,000 Base, and $192,000 Scaled; "
+        "revenue is cleaning contract revenue, never customer property value or tenant sales. Build the "
+        "first three-to-ten wins over one-to-four months without selling beyond the five-full-time, "
+        "four-contractor pod. Scheduling, inspection logs, and billing reduce coordination waste; they "
+        "do not replace productive cleaning labor."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual recognized cleaning contract revenue; excludes customer property value",
+            "note": "8% net margin; $20,000 annual owner net profit; 5 FT + 4 C",
+        },
+        {
+            "label": "Base",
+            "value": "$725,000",
+            "context": "Annual recognized cleaning contract revenue; excludes customer property value",
+            "note": "12.0% net margin; $87,000 annual owner net profit; 5 FT + 4 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,200,000",
+            "context": "Annual recognized cleaning contract revenue; excludes customer property value",
+            "note": "16% net margin; $192,000 annual owner net profit; 6 FT + 5 C (11 people)",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Mine four demand signals inside a serviceable route",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with a route, not a purchased national contact file. Draw a service polygon "
+                    "around the existing supervisor's evening travel pattern, then enumerate offices, "
+                    "outpatient practices, and multi-tenant properties inside it. The four mapped plays "
+                    "are P1 new-occupancy offices, P2 outpatient medical suites, P3 property-manager "
+                    "clusters, and P4 incumbent-service recovery. Each needs a different evidence trail "
+                    "and the same final test: can this address support profitable, repeatable work "
+                    "during an available crew window? For P1, inspect municipal permit portals, planning "
+                    "agendas, certificates of occupancy where publicly available, and broker move-in "
+                    "announcements. A tenant-improvement permit is an investigation trigger, not proof "
+                    "that the tenant has possession or controls janitorial purchasing. Match the address "
+                    "to the assessor's parcel record, property website, and business website; distinguish "
+                    "the owner, manager, tenant, and facilities buyer. Record the source URL, observation "
+                    "date, likely opening window, usable contact route, and reason the prospect fits "
+                    "the route. Exclude demolition sites, hazardous remediation, and construction cleanup "
+                    "unless those services are separately equipped and priced. The asset being sourced "
+                    "is contracted service demand with manageable travel, not the building's market value."
+                ),
+                (
+                    "For P2, combine CMS Care Compare, state facility-license searches, and practice "
+                    "expansion announcements to identify operating medical locations. These sources have "
+                    "different coverage; a directory entry does not establish a cleaning need, and an "
+                    "NPI mailing address may not be the service site. Call the practice's public office "
+                    "number to verify location, purchasing responsibility, cleaning frequency, and whether "
+                    "the landlord handles common areas only. Ask about room turnover boundaries, sharps "
+                    "handling exclusions, disinfectant contact times, and access after the final appointment. "
+                    "For P3, mine manager websites, leasing brochures, and public ownership records for "
+                    "adjacent properties sharing a purchasing contact. Offer one accountable supervisor "
+                    "and property-specific inspection records rather than an indiscriminate portfolio "
+                    "discount. For P4, watch public bid notices, buyer-issued requests, and recurring "
+                    "service complaints that can be confirmed directly. Reviews are prompts for questions, "
+                    "not evidence to repeat as accusations. Ask whether the actual failure is missed "
+                    "visits, restroom replenishment, inconsistent staffing, or an unworkable scope. A "
+                    "replacement contract is attractive only when the buyer will repair the operating "
+                    "cause instead of transferring an impossible price to the next vendor."
+                ),
+                (
+                    "Create one account record per purchasing unit in HubSpot or Pipedrive and separate "
+                    "the account from its service addresses. Required fields are play code, source, buyer "
+                    "role, square footage by cleanable zone, frequency, renewal date if confirmed, current "
+                    "problem, travel time, and next action. A building appearing in two public feeds "
+                    "remains one prospect. Use Google Maps for routing estimates, then validate travel "
+                    "during the actual shift; a fifteen-minute daytime hop can become a forty-minute "
+                    "evening transfer. Give the five-full-time, four-contractor pod a single demand board "
+                    "so separate sellers cannot promise the same start slot. Contractors belong on the "
+                    "capacity board only after availability, lawful classification, and scope are verified. "
+                    "Do not equate nine names with nine interchangeable cleaners: supervision, absence "
+                    "cover, training, and specialty work consume capacity differently. Each week, review "
+                    "new signals with the field supervisor and reject distant opportunities before "
+                    "spending time on proposals. Keep public-sector notices in a separate lane when "
+                    "procurement timing, wage determinations, or bonding differ from ordinary commercial "
+                    "work. Research only public business information and buyer-provided records; tenant "
+                    "rosters do not justify collecting patient information or private access credentials."
+                ),
+            ],
+            "table": {
+                "caption": "Four-Play Demand Mining Matrix and Evidence Validation",
+                "headers": [
+                    "Mapped play and target",
+                    "Public signal worth investigating",
+                    "Verification before buyer outreach",
+                    "Specific offer and economic protection",
+                ],
+                "rows": [
+                    [
+                        "P1 offices approaching a confirmed tenant occupancy",
+                        "Municipal tenant-improvement permits paired with leasing announcements",
+                        "Verify possession timing and tenant janitorial purchasing authority",
+                        "Offer recurring service separately from initial construction cleanup",
+                    ],
+                    [
+                        "P1 occupied offices expanding their usable floorplate",
+                        "Broker announcements and public business location expansion notices",
+                        "Confirm added cleanable area and actual employee attendance",
+                        "Price occupied zones rather than total advertised building area",
+                    ],
+                    [
+                        "P2 outpatient practices opening additional local treatment suites",
+                        "State license records paired with practice expansion announcements",
+                        "Verify service address and responsibility for clinical cleaning",
+                        "Offer room-specific schedules with explicit sharps handling exclusions",
+                    ],
+                    [
+                        "P3 managers controlling several closely spaced commercial properties",
+                        "Manager portfolio pages and public parcel ownership records",
+                        "Confirm buyer authority separately for each proposed property",
+                        "Offer shared supervision while preserving property-specific service economics",
+                    ],
+                    [
+                        "P4 buyers publicly seeking replacement recurring janitorial service",
+                        "Buyer procurement notices describing renewal or replacement needs",
+                        "Confirm procurement deadlines and reasons for replacing incumbents",
+                        "Offer measured scope recovery instead of automatic price matching",
+                    ],
+                    [
+                        "P4 local facilities reporting repeated verifiable service interruptions",
+                        "Public reviews followed by direct buyer problem confirmation",
+                        "Verify missed tasks without repeating unsupported competitor allegations",
+                        "Offer documented recovery milestones and priced initial restoration",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Find the operational opening before discussing price",
+                "body": (
+                    "Experienced cleaning sellers win by resolving the buyer's specific service failure "
+                    "while protecting the supervisor's route and the crew's paid time."
+                ),
+                "items": [
+                    "Ask whether restroom supplies are owner-furnished; empty dispensers can create a service complaint even when cleaning is complete.",
+                    "Walk the loading entrance and elevator route during the proposed shift; locked docks and shared elevators change paid production time.",
+                    "Ask property managers for the next nearby renewal after proving the first site; geographic adjacency is more valuable than scattered logo count.",
+                    "Separate initial floor recovery from maintenance pricing; years of buildup should not become an unpaid first-month obligation.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Qualify authority, task hours, and pod economics before bidding",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use a one-hundred-point qualification card before scheduling a full walkthrough. "
+                    "Award twenty points for verified purchasing authority and a decision window within "
+                    "one hundred twenty days; twenty for route and shift fit; twenty-five for task-level "
+                    "economics; fifteen for a documented recurring service problem; ten for workable "
+                    "payment terms and payer identity; and ten for manageable access and safety "
+                    "requirements. Score each category against written evidence, not seller enthusiasm. "
+                    "A score of seventy-five earns a walkthrough, sixty through seventy-four enters "
+                    "timed nurture, and lower scores leave the active pipeline. Missing authority, "
+                    "unfunded payroll, or uncontrolled exposure overrides the numerical result. Confirm "
+                    "whether the signer controls the entire contract or needs an owner, regional "
+                    "manager, or procurement team. Ask when incumbent notice must be delivered without "
+                    "encouraging breach of an existing agreement. Document invoices, purchase-order "
+                    "requirements, and who resolves disputes. For medical sites, distinguish ordinary "
+                    "environmental cleaning from instrument reprocessing, regulated waste transport, and "
+                    "tasks involving occupational exposure. The latter can require equipment and training "
+                    "outside the initial pod's capability. Declining those tasks preserves a viable "
+                    "recurring contract rather than creating an unsupported service promise."
+                ),
+                (
+                    "During the walkthrough, measure cleanable zones and count fixtures, waste points, "
+                    "stair flights, and high-touch surfaces. Use ISSA task-time references as starting "
+                    "estimates, then adjust using timed observations for occupancy, soil load, equipment, "
+                    "security procedures, and clutter. Do not apply one square-feet-per-hour assumption "
+                    "to both carpet vacuuming and treatment-room disinfection. An illustrative office "
+                    "requires three productive hours per visit, five visits weekly, and fifty-two weeks: "
+                    "780 productive hours annually. Add 156 paid hours for travel, setup, and inspection, "
+                    "producing 936 paid hours. At an illustrative $24 loaded hourly cost, direct labor "
+                    "is $22,464. Add $3,600 for supplies and equipment allocation; a $36,000 annual "
+                    "contract then leaves $9,936, or 27.6%, before remaining company overhead and owner "
+                    "profit. This is a bid example, not an additional scorecard scenario. A ten-percent "
+                    "increase in paid hours adds $2,246.40 of labor expense and reduces that contribution "
+                    "to $7,689.60. Validate the loaded rate against local wages, payroll taxes, workers' "
+                    "compensation, paid leave, overtime, and recruiting costs. Quote periodic floor work "
+                    "and initial restoration separately, with quantities and service dates."
+                ),
+                (
+                    "Keep the canonical annual cases intact: Conservative revenue of $250,000 at eight "
+                    "percent produces $20,000 owner net profit; Base revenue of $725,000 at twelve "
+                    "percent produces $87,000; Scaled revenue of $1,200,000 at sixteen percent produces "
+                    "$192,000. Their implied total annual cost envelopes are $230,000, $638,000, and "
+                    "$1,008,000 respectively. Conservative and Base each specify five full-time employees "
+                    "plus four contractors; Scaled specifies six plus five. Those headcounts do not "
+                    "establish affordable payroll. Five employees at forty hours for fifty-two weeks "
+                    "represent 10,400 paid hours; even an illustrative $20 loaded rate consumes $208,000 "
+                    "before contractor costs and other overhead. That leaves only $22,000 in the "
+                    "Conservative cost envelope, making local wage and coverage validation decisive. "
+                    "If actual costs exceed the envelope, flag the scenario as operationally infeasible "
+                    "rather than quietly reducing wages or relabeling employees. Maintain a weekly "
+                    "capacity ledger separating sold productive hours from travel, supervision, training, "
+                    "and reserve coverage. Add contracts only when the relevant shift has funded "
+                    "capacity. Scheduling, inspection logs, and billing improve coordination, but growth "
+                    "still requires more paid crew hours and cannot be modeled as software-like "
+                    "incremental revenue."
+                ),
+            ],
+            "table": {
+                "caption": "Weighted Qualification Card for the Five-Full-Time, Four-Contractor Pod",
+                "headers": [
+                    "Criterion and available points",
+                    "Evidence required for full credit",
+                    "Specific reason to reduce credit",
+                    "Operator action before advancing the opportunity",
+                ],
+                "rows": [
+                    [
+                        "Purchasing authority and near-term decision timing: twenty points",
+                        "Named authorized buyer confirms decision within one hundred twenty days",
+                        "Contact cannot identify signer or existing contract notice period",
+                        "Map actual decision participants before investing in detailed estimating",
+                    ],
+                    [
+                        "Route density and available service window: twenty points",
+                        "Supervisor confirms travel and shift capacity against existing assignments",
+                        "Requested arrival conflicts with another contracted site service window",
+                        "Reserve a feasible slot without double-booking the same crew",
+                    ],
+                    [
+                        "Task-level pricing and contribution capacity: twenty-five available points",
+                        "Measured task hours support labor burden and overhead recovery",
+                        "Buyer budget requires unpaid travel or unrealistic production rates",
+                        "Re-scope frequency transparently or decline the uneconomic requested scope",
+                    ],
+                    [
+                        "Documented recurring problem and service fit: fifteen available points",
+                        "Buyer identifies recurring failures matched to supported cleaning tasks",
+                        "Complaint actually requires remediation outside available equipment and training",
+                        "Separate excluded specialty work from the recurring maintenance proposal",
+                    ],
+                    [
+                        "Identified payer and workable payment terms: ten available points",
+                        "Verified entity accepts invoice process compatible with funded payroll",
+                        "Payment depends on unresolved tenant reimbursements or excessive deductions",
+                        "Negotiate clear payment obligations before reserving the mobilization date",
+                    ],
+                    [
+                        "Controlled access and manageable safety requirements: ten available points",
+                        "Access permissions and exposure controls match verified staff capabilities",
+                        "Buyer expects uncontrolled sharps handling or undocumented chemical practices",
+                        "Resolve exposure controls before authorizing any affected cleaning assignment",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four conditions before promising a start date",
+                "body": (
+                    "A high sourcing score cannot compensate for missing authority, negative unit "
+                    "economics, unsupported staffing, or uncontrolled site hazards."
+                ),
+                "items": [
+                    "Verify the signing entity, authorized signer, service addresses, incumbent notice timing, and invoice recipient in writing.",
+                    "Recalculate paid hours, overtime exposure, supplies, equipment, travel, and company overhead against the proposed recurring price.",
+                    "Have the supervisor confirm named coverage, backup availability, training time, and funded payroll through the expected collection date.",
+                    "Confirm chemical labels, accessible safety data sheets, required training, insurance evidence, and exposure controls for the actual contracted tasks.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run a measured outbound cadence with a local inbound loop",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Work a compact, evidence-led cadence rather than blasting every business in the "
+                    "county. On day one, send a short email naming the verified trigger, the relevant "
+                    "service problem, and a fifteen-minute scope call. For P1, reference the announced "
+                    "move and ask who owns recurring cleaning after handover. For P2, ask whether "
+                    "treatment-room cleaning and landlord common-area service have separate owners. "
+                    "On day three, call the published business line manually and confirm the responsible "
+                    "role. On day six, send a one-page task-frequency example matched to that property "
+                    "type. On day ten, offer two walkthrough windows aligned with the supervisor's route. "
+                    "On day fifteen, close the loop and ask whether a future renewal month is more "
+                    "appropriate. Stop immediately after an opt-out and suppress the address across "
+                    "campaigns. Commercial email must follow 15 U.S.C. 7704, including truthful routing "
+                    "information, nondeceptive subjects, the required advertising identification, a valid "
+                    "physical postal address, and a functioning opt-out honored within ten business "
+                    "days. Do not assume a published mobile number authorizes automated calls or texts. "
+                    "Use manual business outreach and evaluate applicable federal and state calling "
+                    "restrictions before adding automation."
+                ),
+                (
+                    "Treat conversion numbers as planning hypotheses until this territory produces "
+                    "measured cohorts. One illustrative batch contains 240 unique accounts, ninety-six "
+                    "verified buyer contacts, thirty-six two-way conversations, eighteen qualified "
+                    "opportunities, twelve completed walkthroughs, eight economically acceptable proposals, "
+                    "and four signed wins. These imply forty-percent contact coverage, 37.5-percent "
+                    "contact-to-conversation conversion, fifty-percent conversation-to-qualified conversion, "
+                    "66.7-percent qualified-to-walkthrough conversion, 66.7-percent walkthrough-to-proposal "
+                    "conversion, and fifty-percent proposal-to-win conversion. Overall account-to-win "
+                    "conversion is 1.67 percent. They are test targets, not measured industry benchmarks. "
+                    "Track timestamps so a deal that signs in month four stays attributed to its original "
+                    "cohort. Count wins only after executed agreements establish funded, schedulable "
+                    "service obligations; a verbal yes is not a win. At the same illustrative yield, "
+                    "three wins require roughly 180 accounts and ten require roughly 600, subject to "
+                    "capacity and lead quality. Process sixty researched accounts weekly for four weeks "
+                    "to test the first batch, then revise from observed results. A surge in conversations "
+                    "without walkthroughs usually points to weak authority or timing qualification; "
+                    "walkthroughs without proposals can indicate bad targeting, inadequate budget, or "
+                    "uncontrolled estimating effort."
+                ),
+                (
+                    "Build inbound around proof that answers a local facilities buyer's next question. "
+                    "Maintain an eligible Google Business Profile with accurate service areas and "
+                    "business details, then publish separate office, outpatient, and property-management "
+                    "pages describing actual supported tasks. Use Search Console and tagged website "
+                    "forms to distinguish organic inquiries from outbound replies. Show an anonymized "
+                    "inspection example, a task-frequency schedule, and a clear walkthrough request; "
+                    "avoid security layouts, patient records, badge images, or customer logos without "
+                    "permission. Ask satisfied buyers for honest reviews without conditioning rewards "
+                    "on positive sentiment. Pursue reciprocal introductions with commercial brokers, "
+                    "floor-care specialists, and facility maintenance vendors, documenting referral "
+                    "arrangements and buyer restrictions. Keep one seller accountable for follow-up and "
+                    "batch supervisor walkthroughs into two route-compatible blocks weekly. Do not "
+                    "pull productive cleaners off contracted shifts to create appearances of sales "
+                    "activity. Review channel results every Friday by qualified opportunities, quoted "
+                    "contribution, signed recurring revenue, and hours sold, not impressions or raw "
+                    "form counts. Schedule early starts sequentially so the pod can establish inspection "
+                    "baselines before taking the next site. A first-three-to-ten-win objective remains "
+                    "subordinate to service quality and funded capacity during the one-to-four-month "
+                    "acquisition window."
+                ),
+            ],
+            "table": {
+                "caption": "Fifteen-Day Outreach Cadence and Local Inbound Evidence Loop",
+                "headers": [
+                    "Channel and scheduled operating moment",
+                    "Concrete message or buyer-facing evidence",
+                    "Specific conversion event to record",
+                    "Stop condition or quality control",
+                ],
+                "rows": [
+                    [
+                        "Day one personalized email to verified business contact",
+                        "Reference one verified trigger and request a short scope call",
+                        "Record reply classification and confirmed purchasing role separately",
+                        "Suppress opt-outs immediately and retain the original source evidence",
+                    ],
+                    [
+                        "Day three manual call to published business line",
+                        "Ask who controls recurring janitorial purchasing for this address",
+                        "Record buyer identity and permission for the proposed follow-up",
+                        "Do not infer automated calling permission from public listing",
+                    ],
+                    [
+                        "Day six practical scope example delivered by email",
+                        "Show task frequencies relevant to the confirmed building use",
+                        "Record whether the buyer identifies a concrete service gap",
+                        "Avoid fabricated customer outcomes and unsupported competitor service claims",
+                    ],
+                    [
+                        "Day ten walkthrough invitation aligned with supervisor route",
+                        "Offer two specific appointment windows and a measurement agenda",
+                        "Record accepted appointment and all required decision participants",
+                        "Do not reserve field time without verified access arrangements",
+                    ],
+                    [
+                        "Day fifteen close-loop message or dated renewal nurture",
+                        "Ask for the appropriate renewal month or close the sequence",
+                        "Record confirmed nurture date or closed outreach disposition",
+                        "End repeated touches when the prospect declines further contact",
+                    ],
+                    [
+                        "Weekly inbound review across local pages and referral partners",
+                        "Provide anonymized inspections and clearly scoped recurring service examples",
+                        "Attribute qualified inquiries to their actual originating channel",
+                        "Remove sensitive site details before publishing any operational example",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Build and deduplicate the weekly account batch",
+                    "action": "Research sixty route-compatible accounts across the four mapped plays.",
+                    "detail": (
+                        "Attach dated source evidence, purchasing-unit identity, service address, "
+                        "play code, and the next verification question to every account."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Verify the buyer and apply the qualification card",
+                    "action": "Confirm authority, timing, route fit, and supported task scope.",
+                    "detail": (
+                        "Advance scores of seventy-five or higher only when authority, funded "
+                        "capacity, and safety conditions also pass the pre-flight checks."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Run the cadence and measure the walkthrough",
+                    "action": "Complete the fifteen-day sequence while respecting stop requests.",
+                    "detail": (
+                        "Use actual task quantities, access constraints, and timed production "
+                        "observations to construct an auditable labor estimate."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Review conversion and release supported start slots",
+                    "action": "Audit cohort conversions, proposal contribution, and weekly crew capacity.",
+                    "detail": (
+                        "Book only executed, funded agreements; sequence mobilizations and send "
+                        "failed bids back to targeting or pricing review with recorded reasons."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "4. Convert objections into scoped agreements and retained routes",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Handle objections by exposing the service variable beneath the requested concession. "
+                    "When a buyer says the incumbent is cheaper, compare visit frequency, cleanable "
+                    "zones, periodic work, consumables, inspection time, and relief coverage before "
+                    "comparing totals. Offer a reduced task frequency only where the buyer's actual "
+                    "operating needs permit it; do not silently remove required disinfectant contact "
+                    "time or worker protections. When asked for a free trial, offer a short paid pilot "
+                    "with defined rooms, visits, acceptance criteria, and a decision date. When the "
+                    "buyer says staff changes caused prior failures, show the supervisor escalation "
+                    "path, training records, and backup assignment rather than promising zero turnover. "
+                    "For price pressure from a property manager, exchange route density or a longer "
+                    "committed schedule for documented savings only after recalculating hours. A medical "
+                    "practice requesting complete infection prevention needs precise task boundaries, "
+                    "not a sweeping claim that janitorial work eliminates clinical risk. Respond to "
+                    "slow procurement by providing insurance evidence, a completed vendor packet, and "
+                    "a written scope; do not start unpaid service to bypass purchasing controls. Record "
+                    "each objection and resolution so future targeting reflects actual buyer economics "
+                    "rather than the seller's recollection."
+                ),
+                (
+                    "Close with a service schedule that names each area, task, frequency, access "
+                    "window, inspection method, and excluded activity. State responsibility for keys, "
+                    "alarm codes, equipment storage, consumables, and waste streams. Keep access "
+                    "credentials out of the sales CRM and issue them through a controlled operational "
+                    "process. Define the initial restoration charge, recurring price, separately "
+                    "authorized extras, invoice timing, dispute process, renewal terms, and termination "
+                    "notice. For wages, apply the Fair Labor Standards Act's minimum-wage and overtime "
+                    "requirements under 29 U.S.C. 206 and 207 plus applicable state and local rules. "
+                    "A subcontract agreement alone does not settle worker classification; evaluate "
+                    "the actual relationship under applicable wage, tax, and state standards. OSHA "
+                    "29 CFR 1910.1200 requires a hazard communication program where applicable, including "
+                    "labels, safety data sheets, and employee information and training. Where reasonably "
+                    "anticipated occupational exposure exists, assess 29 CFR 1910.1030 requirements "
+                    "before assignment. Ordinary incidental access during janitorial service does "
+                    "not automatically make the vendor a HIPAA business associate; evaluate whether "
+                    "the contracted function involves protected health information under 45 CFR "
+                    "160.103. Keep patient information out of cleaning logs and follow the customer's "
+                    "authorized privacy procedures."
+                ),
+                (
+                    "The first signed agreement becomes a sourcing asset only after the operation "
+                    "works. Before the first shift, walk the route with the assigned supervisor, "
+                    "confirm supply staging, test permitted access, and document baseline conditions "
+                    "without capturing sensitive material. Inspect after the first service, review "
+                    "exceptions with the buyer during the first week, and compare estimated versus "
+                    "paid hours after two weeks. If excess time comes from added scope, document it "
+                    "and agree a change order; if it comes from poor training or routing, correct "
+                    "the internal process without shifting blame. At thirty days, review task "
+                    "completion, complaint closure, labor variance, collections, and contribution. "
+                    "Request an introduction to one adjacent property only after this review supports "
+                    "the claim of reliable service. Track concentration by recognized contract "
+                    "revenue and by supervisor dependence: three buildings under one manager may "
+                    "represent one cancellation decision. Set an internal concentration review "
+                    "threshold, such as twenty-five percent of revenue, and test the payroll impact "
+                    "of losing that buyer. Continue sourcing replacements and adjacent opportunities, "
+                    "but never count unsigned proposals as revenue. Reliable first wins come from "
+                    "measured work, paid capacity, and explicit accountability rather than a growing "
+                    "list of addresses."
+                ),
+            ],
+            "table": {
+                "caption": "Buyer Objections, Contract Repairs, and First-Month Retention Controls",
+                "headers": [
+                    "Buyer objection or operating concern",
+                    "Question that reveals the underlying constraint",
+                    "Specific response or contract mechanism",
+                    "Evidence required before declaring the issue resolved",
+                ],
+                "rows": [
+                    [
+                        "The incumbent's monthly price is materially below your proposal",
+                        "Which tasks and frequencies are included in that comparison",
+                        "Compare measured scope and offer explicit priced frequency alternatives",
+                        "Buyer accepts the revised task schedule and associated recurring price",
+                    ],
+                    [
+                        "The buyer wants free service before making any commitment",
+                        "Which observable service outcomes would establish acceptable vendor performance",
+                        "Offer a paid pilot with fixed visits and acceptance criteria",
+                        "Signed pilot terms identify payment timing and final decision date",
+                    ],
+                    [
+                        "Previous cleaners changed constantly and repeatedly missed assigned tasks",
+                        "Which shifts and tasks generated the most repeated service failures",
+                        "Present supervisor accountability and verified backup coverage by shift",
+                        "Inspection logs demonstrate completed tasks and documented exception closure",
+                    ],
+                    [
+                        "The property manager requests discounts across several distant buildings",
+                        "Do these buildings actually share efficient routes and service windows",
+                        "Price each site before crediting demonstrated shared operating savings",
+                        "Route model supports the discount without reducing funded labor coverage",
+                    ],
+                    [
+                        "The medical buyer expects broad clinical infection prevention coverage",
+                        "Which environmental tasks are requested versus clinical treatment responsibilities",
+                        "Define supported cleaning tasks and exclude unsupported clinical functions",
+                        "Written scope and exposure assessment match actual worker training",
+                    ],
+                    [
+                        "The new account consumes more paid hours than the estimate",
+                        "Did task quantities change or did the execution process fail",
+                        "Use measured variances to separate change orders from internal corrections",
+                        "Buyer-approved scope and subsequent paid-hour records reconcile the difference",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The best cleaning lead is not the largest building; it is the next profitable stop your supervisor can reliably cover.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Map the four plays to a defined service polygon and research the first sixty accounts with dated public evidence and verified service addresses.",
+        "Build a one-hundred-point qualification card and require verified authority, acceptable task economics, and safe supported scope before scheduling walkthroughs.",
+        "Measure task quantities with ISSA-informed estimates, validate paid travel and setup time, and reconcile each bid to the actual local labor burden.",
+        "Run the fifteen-day email and manual-call cadence, maintain suppression records, and report cohort conversion from unique accounts through executed contracts.",
+        "Publish local service pages and anonymized inspection examples, then assign inbound inquiries and referrals to the same capacity-controlled pipeline.",
+        "Release start dates only after signed terms and funded coverage; inspect first-week service and compare actual hours, collections, and contribution at thirty days.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Governs commercial email practices, including header accuracy, subject lines, "
+                "advertising identification, postal address disclosure, and opt-out handling."
+            ),
+        },
+        {
+            "title": "29 U.S.C. 206 — Minimum wage",
+            "url": "https://www.law.cornell.edu/uscode/text/29/206",
+            "relevance": (
+                "Establishes federal minimum-wage requirements used with applicable state and "
+                "local requirements when building cleaning labor budgets."
+            ),
+        },
+        {
+            "title": "29 U.S.C. 207 — Maximum hours",
+            "url": "https://www.law.cornell.edu/uscode/text/29/207",
+            "relevance": (
+                "Provides federal overtime requirements relevant to covered nonexempt employees "
+                "working across multiple cleaning sites in the same workweek."
+            ),
+        },
+        {
+            "title": "29 CFR 1910.1200 — Hazard communication",
+            "url": "https://www.ecfr.gov/current/title-29/section-1910.1200",
+            "relevance": (
+                "Sets applicable chemical hazard communication duties, including written "
+                "programs, labeling, safety data sheets, and employee training."
+            ),
+        },
+        {
+            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
+            "url": "https://www.ecfr.gov/current/title-29/section-1910.1030",
+            "relevance": (
+                "Requires exposure-based controls for covered work involving reasonably "
+                "anticipated occupational exposure to blood or other potentially infectious materials."
+            ),
+        },
+        {
+            "title": "45 CFR 160.103 — Definitions",
+            "url": "https://www.ecfr.gov/current/title-45/section-160.103",
+            "relevance": (
+                "Defines business associate and protected health information for evaluating "
+                "whether a medical cleaning vendor's actual contracted functions trigger that status."
+            ),
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Provides federal restrictions relevant to specified calling technologies and "
+                "telephone solicitations; a public business listing does not itself establish permission."
+            ),
+        },
+    ],
+}
