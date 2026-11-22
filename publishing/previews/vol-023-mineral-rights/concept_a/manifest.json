@@ -18,12 +18,12 @@
       "sha256": "d76c5849d387b343b89ab8e8cf5a66d445f822744c5a83c23cc2324059d33b0f"
     },
     "book.epub": {
-      "bytes": 247068,
-      "sha256": "18b892b46f262c6f0608e189161d0fee37bbc17a66a6351b2291bef798dabc55"
+      "bytes": 247166,
+      "sha256": "74e777f268301f14e5505905d694638bb16bf0ce1dd194f48b631b9bb48e733e"
     },
     "art/cover.svg": {
-      "bytes": 4004,
-      "sha256": "c2b2186d2b818a39d298708aacf7f9905750f51abde1079cdc1f440f08c3a0c1"
+      "bytes": 4313,
+      "sha256": "4c2d8fbbea2958672511d9e84dfb272a00c927db2ddf66aa67793fea12d766e5"
     },
     "art/scorecard.svg": {
       "bytes": 34876,

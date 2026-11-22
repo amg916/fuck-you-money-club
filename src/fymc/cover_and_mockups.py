@@ -94,8 +94,31 @@ def _footer(meta, clean, include_full_colophon, ink, x=300, y=840):
             + _text(x, y, publisher, 17, ink, anchor="middle", width=470))
 
 
+def _score_display(score: dict | None) -> tuple[str, str]:
+    """Return `(total_str, sub_str)` using canonical scorecard values without inventing sub-scores."""
+    numeric = resolve_score_value(score, default=87)
+    total_str = _copy(f"{numeric:g} / 100" if numeric is not None else "87 / 100", 40)
+    dims = score.get("scores") if isinstance(score, dict) and isinstance(score.get("scores"), dict) else None
+    keys = (
+        ("revenue_potential", "REV", 25),
+        ("profit_margin_potential", "MGN", 25),
+        ("team_efficiency", "TEAM", 20),
+        ("startup_accessibility", "START", 15),
+        ("automation_potential", "AUTO", 15),
+    )
+    if dims and all(
+        isinstance(dims.get(k), (int, float)) and not isinstance(dims.get(k), bool)
+        for k, _, _ in keys
+    ):
+        sub_str = " / ".join(f"{abbr} {dims[k]:g}/{cap}" for k, abbr, cap in keys)
+    else:
+        sub_str = ""
+    return total_str, sub_str
+
+
 def _concept_a(meta, score, clean, include_full_colophon):
     bg, gold, white = _CONCEPTS["concept_a"]
+    total_str, sub_str = _score_display(score)
     out = _rect(0, 0, 600, 900, bg)
     out += _rect(24, 24, 552, 852, "none", stroke=gold, sw=2)
     out += _rect(33, 33, 534, 834, "none", stroke=gold, sw=0.7)
@@ -103,32 +126,43 @@ def _concept_a(meta, score, clean, include_full_colophon):
     out += _path("M300 84 L336 102 L331 149 Q320 169 300 180 Q280 169 269 149 L264 102 Z", "none", gold, 0.8)
     out += _text(300, 139, "FYMC", 22, gold, 700, "middle")
     out += _text(300, 235, "THE EXECUTIVE SERIES / VOL. " + meta["number"], 14, gold, 700, "middle")
-    for y, word, size in ((335, "THE BIG", 64), (430, "MONEY", 91), (518, "PLAYBOOKS", 64)):
+    for y, word, size in ((325, "THE BIG", 62), (416, "MONEY", 89), (502, "PLAYBOOKS", 62)):
         out += _text(300, y, word, size, white, 800, "middle", 490)
-    out += _path("M110 563 H490 M175 571 H425", stroke=gold, sw=1)
-    out += _text(300, 624, meta["title"], 23, gold, 600, "middle", 460)
-    out += _lines(85, 678, meta["subtitle"], 46, 18, white, count=3)
+    out += _path("M110 540 H490 M175 548 H425", stroke=gold, sw=1)
+    out += _text(300, 592, meta["title"], 23, gold, 600, "middle", 460)
+    out += _lines(85, 636, meta["subtitle"], 46, 17, white, count=2)
+    out += _rect(95, 708, 410, 66 if sub_str else 48, "#17191D", radius=4, stroke=gold, sw=1.2)
+    out += _text(300, 736, "MONEY-TO-MANPOWER SCORE: " + total_str, 15, gold, 700, "middle", 386)
+    if sub_str:
+        out += _text(300, 760, sub_str, 11, white, 600, "middle", 386)
     return out + _footer(meta, clean, include_full_colophon, gold)
 
 
 def _concept_b(meta, score, clean, include_full_colophon):
     bg, yellow, white = _CONCEPTS["concept_b"]
+    total_str, sub_str = _score_display(score)
     out = _rect(0, 0, 600, 900, bg)
-    out += _text(38, 56, "FYMC / FIELD EDITIONS", 15, white, 700)
-    out += _text(562, 56, meta["number"], 18, yellow, 800, "end")
+    out += _text(38, 56, "FYMC / VOL. " + meta["number"], 15, white, 700)
+    out += _rect(368, 30, 198, 36, yellow, radius=3)
+    out += _text(467, 54, "SCORE " + total_str, 16, bg, 900, "middle", 184)
     out += _path("M38 80 H562", stroke=white, sw=2)
-    for y, word, size in ((184, "THE BIG", 87), (294, "MONEY", 110), (390, "PLAYBOOKS", 76)):
+    for y, word, size in ((182, "THE BIG", 86), (290, "MONEY", 108), (384, "PLAYBOOKS", 75)):
         out += _text(32, y, word, size, white, 900, width=534)
-    out += _path("M0 502 L600 404 L600 558 L0 656 Z", yellow)
-    band = _text(35, 540, "CAPITAL / LEVERAGE / FREEDOM", 27, bg, 900, width=530)
-    out += _group(band, "rotate(-9.3 35 540)")
-    out += _text(38, 700, meta["title"], 23, white, 700, width=524)
-    out += _lines(38, 739, meta["subtitle"], 52, 16, white, count=2)
-    return out + _footer(meta, clean, include_full_colophon, white, y=855)
+    out += _path("M0 492 L600 396 L600 546 L0 642 Z", yellow)
+    band = _text(35, 528, "CAPITAL / LEVERAGE / FREEDOM", 27, bg, 900, width=530)
+    out += _group(band, "rotate(-9.3 35 528)")
+    out += _text(38, 680, meta["title"], 23, white, 700, width=524)
+    out += _lines(38, 714, meta["subtitle"], 52, 15, white, count=2)
+    out += _rect(38, 758, 524, 52 if sub_str else 36, "#1E1E22", radius=3, stroke=yellow, sw=1.5)
+    out += _text(52, 780, "MONEY-TO-MANPOWER SCORE: " + total_str, 14, yellow, 800, width=496)
+    if sub_str:
+        out += _text(52, 800, sub_str, 11, white, 700, width=496)
+    return out + _footer(meta, clean, include_full_colophon, white, y=858)
 
 
 def _concept_c(meta, score, clean, include_full_colophon):
     vellum, green, ink = _CONCEPTS["concept_c"]
+    total_str, sub_str = _score_display(score)
     out = _rect(0, 0, 600, 900, vellum)
     out += _path("M27 0 V900 M34 0 V900", stroke="#D5CCBD", sw=1)
     out += _text(60, 55, "WEALTH INTELLIGENCE / VOL. " + meta["number"], 15, ink, 700)
@@ -138,16 +172,16 @@ def _concept_c(meta, score, clean, include_full_colophon):
     for y, word, size in ((258, "THE BIG", 65), (350, "MONEY", 90), (435, "PLAYBOOKS", 60)):
         out += _text(72, y, word, size, vellum, 800, width=468)
     out += _text(72, 511, meta["title"], 20, vellum, 600, width=460)
-    out += _rect(64, 594, 484, 174, "#D9D1C3", radius=2)
-    out += _rect(58, 588, 484, 174, "#FFFCF5", radius=2, stroke="#BDB5A6")
+    out += _rect(64, 594, 484, 182, "#D9D1C3", radius=2)
+    out += _rect(58, 588, 484, 182, "#FFFCF5", radius=2, stroke="#BDB5A6")
     out += _text(76, 617, "ANALYTICAL INDEX / " + meta["number"], 13, ink, 700)
     out += _path("M76 630 H524 M76 711 H524", stroke="#D5CCBD")
     out += _text(76, 656, "Money-to-Manpower Score", 18, ink, 700, width=430)
-    numeric = resolve_score_value(score, default=87)
-    value = f"{numeric:g} / 100" if numeric is not None else "87 / 100"
-    out += _text(76, 694, _copy(value, 40), 27, ink, 700, width=420)
+    out += _text(76, 694, total_str, 27, ink, 700, width=420)
     label = score.get("label") or score.get("tier_label") or "CAPITAL EFFICIENCY / OPERATOR INDEPENDENCE"
-    out += _text(76, 741, _copy(label, 75), 12, ink, width=430)
+    out += _text(76, 735, _copy(label, 75), 12, ink, width=430)
+    if sub_str:
+        out += _text(76, 756, sub_str, 11, ink, 700, width=430)
     return out + _footer(meta, clean, include_full_colophon, ink, y=852)
 
 
@@ -164,13 +198,19 @@ def _placed_cover(concept, meta, score, clean, x, y, w, h, include_full_colophon
             f'viewBox="0 0 600 900" preserveAspectRatio="xMidYMid meet">{content}</svg>')
 
 
-def _back(concept, meta):
+def _back(concept, meta, score=None):
     bg, accent, ink = _CONCEPTS[concept]
+    total_str, sub_str = _score_display(score)
     out = _rect(0, 0, 600, 900, bg)
     out += _text(55, 100, "OWN YOUR NEXT CHAPTER.", 29, ink, 800, width=490)
     out += _path("M55 132 H545", stroke=accent, sw=2)
-    out += _lines(55, 198, meta["description"], 42, 21, ink, count=10)
-    out += _lines(55, 570, "Build assets. Design systems. Protect your time.", 33, 25, ink, count=3)
+    out += _lines(55, 198, meta["description"], 42, 21, ink, count=9)
+    out += _lines(55, 520, "Build assets. Design systems. Protect your time.", 33, 24, ink, count=2)
+    panel_bg = "#FFFCF5" if concept == "concept_c" else "#1A1B1F"
+    out += _rect(55, 620, 490, 86 if sub_str else 58, panel_bg, radius=4, stroke=accent, sw=1.4)
+    out += _text(75, 654, "MONEY-TO-MANPOWER SCORE: " + total_str, 17, accent if concept != "concept_c" else ink, 800, width=450)
+    if sub_str:
+        out += _text(75, 684, sub_str, 12, ink, 700, width=450)
     out += _text(55, 770, "FYMC / VOL. " + meta["number"], 17, ink, 700)
     out += _rect(355, 798, 190, 62, "#FFFFFF")
     out += _text(450, 833, "ISBN AREA RESERVED", 11, "#333333", anchor="middle")
@@ -191,7 +231,7 @@ def _asset_01(concept, meta, score, clean):
 
 def _asset_02(concept, meta, score, clean):
     out = _rect(0, 0, 1320, 960, "#DEDAD1")
-    out += _group(_back(concept, meta), "translate(30 30)")
+    out += _group(_back(concept, meta, score), "translate(30 30)")
     out += _group(_spine(concept, meta, 60, 900), "translate(630 30)")
     out += _placed_cover(concept, meta, score, clean, 690, 30, 600, 900)
     out += _text(660, 951, "CONCEPT WRAP / SPINE AND BLEED REQUIRE PRINTER SPECIFICATIONS", 12, "#333333", anchor="middle")
@@ -202,7 +242,7 @@ def _asset_03(concept, meta, score, clean):
     out = _rect(0, 0, 1500, 1100, "#DEDAD1")
     out += _text(70, 70, "HARDCOVER / CASE DESIGN STUDY", 25, "#262626", 700)
     out += _rect(60, 125, 630, 930, "#262626", radius=8)
-    out += _group(_back(concept, meta), "translate(75 140)")
+    out += _group(_back(concept, meta, score), "translate(75 140)")
     out += _rect(760, 125, 650, 930, "#262626", radius=8)
     out += _group(_spine(concept, meta, 35, 900), "translate(775 140)")
     out += _placed_cover(concept, meta, score, clean, 810, 140, 585, 900)

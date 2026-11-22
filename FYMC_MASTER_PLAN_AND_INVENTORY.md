@@ -231,7 +231,7 @@ Of the **12 workflow stages**, stages **1–11** — Research, Source Review, Ed
   * **Volume 001 — Heir Hunting (`87/100`)** upgraded to the full 5-Layer structure: 12 deep chapters, all 5 mapped plays and forensic fallback matrices, 180 expert deep links, 8 vector diagrams, 10 cover/mockup SVGs, and 6 worksheets in the [volume package](publishing/volumes/vol-001-heir-hunting/) and [Concept B exports](publishing/previews/concept_b/).
 * **Phase 2 — Initial 5-Volume Founder Collection Shelf *(COMPLETE)*:**
   * **Volume 002 — Surplus Funds Recovery (`86/100`)**, **Volume 003 — Digital Product Empire (`90/100`, Rank `#01` Overall)**, **Volume 004 — AI-Powered Micro SaaS (`88/100`, Rank `#02` Overall)**, and **Volume 005 — High-Ticket Affiliate Marketing (`87/100`, Rank `#04` Overall)** are **100% Built & QA-Verified** at `10/10` depth across `636` total corpus videos (`189` core + `72` surplus + `75` digital-product + `105` AI Micro-SaaS + `195` High-Ticket Affiliate transcripts; `5,991` pro tips), with 5-volume switching live in both `/studio` and `/site`.
-  * Volumes `001–006` are **100% Built & QA-Verified** (`814` total corpus videos); next in rank order: **Volume 007 — Unclaimed Property Recovery**.
+  * All **29/29 volumes (`Volumes 001–029`)** are **100% Built, 3-Question Self-Audited & QA-Verified** (`4,884` total corpus videos), with exact `XX / 100` Money-to-Manpower Scores + 5-factor strips rendered on every cover, `/site`, and `/studio`.
 * **Phase 3 — Public Launch, Checkout & 4-Channel Distribution *(GATED ON OWNER LAUNCH APPROVAL)*:**
   * Connect production domain + live Stripe checkout on `/site` (`84–97%` direct net margin + \$290/yr Charter Memberships).
   * Distribute `marketplace_clean` editions across **Amazon KDP** (`6×9` Print + Kindle), **Etsy** (Digital Playbook + Printable Workbook bundles), and **eBay** (Collector print + bundle packs).
@@ -240,7 +240,45 @@ Of the **12 workflow stages**, stages **1–11** — Research, Source Review, Ed
 
 ---
 
-## 6. All 29 Scored Candidate Playbook Volumes (`#01`–`#29`)
+## 6. All 29 Scored Playbook Volumes (`#01`–`#29`) & Quick-Pick Operator Directory
+
+### Quick-Pick Operator Scorecard Directory (`Volumes 001–029`)
+
+Use this quick-pick matrix to compare all **29 built playbooks** side-by-side by their exact **Money-to-Manpower Score (`0–100`)**, **5 weighted sub-scores** (`Rev /25 · Mgn /25 · Team /20 · Start /15 · Auto /15`), **Startup Capital**, **Time to First Deal**, **Pod Size**, and **Illustrative Base Owner Net Profit (`$/yr`)** so prospective operators can pick the right business model immediately:
+
+| Vol. | Rank | Playbook Title | Exact Score (Band) | Rev `/25` | Mgn `/25` | Team `/20` | Start `/15` | Auto `/15` | Startup Capital | Time to 1st Deal | Lean Pod | Base Net Profit/yr *(Illustrative)* |
+| :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- | :--- | :--- | ---: |
+| **Vol. 001** | `#03` | **Heir Hunting** | **87/100** (`±3 pts`) | `22` | `23` | `18` | `12` | `12` | \$10,000–\$50,000 | 6–24 months | 4 (1 FT + 3 C) | \$127,500/yr (`37.5%`) |
+| **Vol. 002** | `#05` | **Surplus Funds Recovery** | **86/100** (`±3 pts`) | `22` | `22` | `18` | `12` | `12` | \$10,000–\$60,000 | 3–18 months | 4 (2 FT + 2 C) | \$148,750/yr (`35%`) |
+| **Vol. 003** | `#01` | **Digital Product Empire** | **90/100** (`±3 pts`) | `22` | `23` | `19` | `12` | `14` | \$5,000–\$60,000 | 1–6 months | 4 (1 FT + 3 C) | \$159,375/yr (`37.5%`) |
+| **Vol. 004** | `#02` | **AI-Powered Micro SaaS** | **88/100** (`±3 pts`) | `22` | `22` | `19` | `11` | `14` | \$10,000–\$100,000 | 2–9 months | 3 (1 FT + 2 C) | \$112,500/yr (`30%`) |
+| **Vol. 005** | `#04` | **High-Ticket Affiliate Marketing** | **87/100** (`±3 pts`) | `21` | `22` | `19` | `12` | `13` | \$5,000–\$50,000 | 3–12 months | 3 (1 FT + 2 C) | \$113,750/yr (`35%`) |
+| **Vol. 006** | `#06` | **Productized AI Agencies** | **86/100** (`±3 pts`) | `23` | `21` | `17` | `12` | `13` | \$5,000–\$60,000 | 1–4 months | 5 (2 FT + 3 C) | \$165,000/yr (`30%`) |
+| **Vol. 007** | `#07` | **Unclaimed Property Recovery** | **85/100** (`±3 pts`) | `20` | `22` | `18` | `13` | `12` | \$5,000–\$35,000 | 3–12 months | 3 (1 FT + 2 C) | \$95,625/yr (`37.5%`) |
+| **Vol. 008** | `#08` | **Commercial Lead Generation** | **85/100** (`±3 pts`) | `21` | `21` | `18` | `12` | `13` | \$5,000–\$40,000 | 1–4 months | 4 (1 FT + 3 C) | \$127,500/yr (`30%`) |
+| **Vol. 009** | `#09` | **Million-Dollar Lead Generation** | **82/100** (`±3 pts`) | `24` | `21` | `16` | `9` | `12` | \$15,000–\$100,000 | 3–12 months | 5 (2 FT + 3 C) | \$202,500/yr (`30%`) |
+| **Vol. 010** | `#10` | **Building an SEO Empire** | **82/100** (`±3 pts`) | `22` | `21` | `17` | `10` | `12` | \$15,000–\$120,000 | 6–24 months | 6 (2 FT + 4 C) | \$159,250/yr (`32.5%`) |
+| **Vol. 011** | `#11` | **High-Ticket Brokerage** | **82/100** (`±3 pts`) | `23` | `22` | `18` | `10` | `9` | \$15,000–\$100,000 | 3–12 months | 4 (1 FT + 3 C) | \$206,250/yr (`37.5%`) |
+| **Vol. 012** | `#12` | **Equipment Brokerage** | **81/100** (`±3 pts`) | `22` | `20` | `18` | `11` | `10` | \$10,000–\$75,000 | 2–9 months | 4 (1 FT + 3 C) | \$157,500/yr (`35%`) |
+| **Vol. 013** | `#13` | **Intellectual Property Licensing** | **79/100** (`±3 pts`) | `22` | `23` | `18` | `6` | `10` | \$25,000–\$250,000 | 6–24 months | 4 (1 FT + 3 C) | \$180,625/yr (`42.5%`) |
+| **Vol. 014** | `#14` | **Specialty Finance Brokerage** | **79/100** (`±3 pts`) | `23` | `21` | `17` | `8` | `10` | \$20,000–\$100,000 | 3–9 months | 4 (2 FT + 2 C) | \$196,000/yr (`35%`) |
+| **Vol. 015** | `#15` | **Judgment Recovery** | **77/100** (`±3 pts`) | `20` | `21` | `16` | `10` | `10` | \$10,000–\$75,000 | 6–24 months | 4 (1 FT + 3 C) | \$84,000/yr (`30%`) |
+| **Vol. 016** | `#16` | **Probate Real Estate** | **76/100** (`±3 pts`) | `23` | `18` | `16` | `9` | `10` | \$15,000–\$100,000 | 4–18 months | 5 (2 FT + 3 C) | \$140,250/yr (`27.5%`) |
+| **Vol. 017** | `#17` | **Domain Investing** | **74/100** (`±3 pts`) | `17` | `18` | `19` | `9` | `11` | \$10,000–\$150,000 | 3–24 months | 2 (1 FT + 1 C) | \$44,000/yr (`27.5%`) |
+| **Vol. 018** | `#18` | **Land Flipping** | **72/100** (`±3 pts`) | `21` | `18` | `17` | `6` | `10` | \$50,000–\$400,000 | 3–12 months | 4 (1 FT + 3 C) | \$157,250/yr (`18.5%`) |
+| **Vol. 019** | `#19` | **Enterprise Software Reselling** | **72/100** (`±3 pts`) | `23` | `14` | `15` | `9` | `11` | \$25,000–\$150,000 | 3–12 months | 5 (2 FT + 3 C) | \$196,000/yr (`14%`) |
+| **Vol. 020** | `#20` | **Government Contract Brokering** | **70/100** (`±3 pts`) | `22` | `16` | `14` | `8` | `10` | \$25,000–\$150,000 | 6–18 months | 5 (2 FT + 3 C) | \$126,000/yr (`22.5%`) |
+| **Vol. 021** | `#21` | **Automated E-Commerce** | **70/100** (`±3 pts`) | `23` | `13` | `14` | `8` | `12` | \$30,000–\$250,000 | 2–6 months | 5 (2 FT + 3 C) | \$129,375/yr (`11.5%`) |
+| **Vol. 022** | `#22` | **Medical Equipment Resale** | **64/100** (`±3 pts`) | `21` | `16` | `13` | `6` | `8` | \$75,000–\$400,000 | 3–9 months | 6 (2 FT + 4 C) | \$164,000/yr (`16%`) |
+| **Vol. 023** | `#23` | **Mineral Rights** | **63/100** (`±3 pts`) | `20` | `17` | `16` | `3` | `7` | \$150,000–\$2,000,000 | 6–24 months | 4 (1 FT + 3 C) | \$69,875/yr (`32.5%`) |
+| **Vol. 024** | `#24` | **Tax Lien Investing** | **62/100** (`±3 pts`) | `17` | `15` | `17` | `5` | `8` | \$100,000–\$1,500,000 | 6–36 months | 3 (1 FT + 2 C) | \$41,438/yr (`42.5%`) |
+| **Vol. 025** | `#25` | **Freight Brokerage** | **62/100** (`±3 pts`) | `23` | `10` | `10` | `7` | `12` | \$50,000–\$250,000 | 2–6 months | 5 (3 FT + 2 C) | \$165,000/yr (`5.5%`) |
+| **Vol. 026** | `#26` | **Government Surplus Auctions** | **62/100** (`±3 pts`) | `20` | `14` | `12` | `8` | `8` | \$25,000–\$200,000 | 1–6 months | 5 (2 FT + 3 C) | \$80,500/yr (`14%`) |
+| **Vol. 027** | `#27` | **Business Acquisition** | **57/100** (`±3 pts`) | `24` | `16` | `7` | `2` | `8` | \$200,000–\$1,000,000 | 6–18 months | 10 (7 FT + 3 C) | \$243,750/yr (`13%`) |
+| **Vol. 028** | `#28` | **Commercial Cleaning Contracts** | **56/100** (`±3 pts`) | `21` | `12` | `6` | `11` | `6` | \$15,000–\$90,000 | 1–4 months | 9 (5 FT + 4 C) | \$87,000/yr (`12%`) |
+| **Vol. 029** | `#29` | **Insurance Restoration** | **54/100** (`±3 pts`) | `24` | `13` | `5` | `5` | `7` | \$75,000–\$350,000 | 1–6 months | 11 (5 FT + 6 C) | \$195,000/yr (`13%`) |
+
+#### Ranked Pipeline View (`#01`–`#29`)
 
 Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/catalog/pipeline_29_candidates.json). Sub-scores represent `Rev(25)/Mgn(25)/Team(20)/Start(15)/Auto(15)`.
 
@@ -251,30 +289,30 @@ Source of truth: [`publishing/catalog/pipeline_29_candidates.json`](publishing/c
 | **#03** | **Heir Hunting** *(Vol. 001 Flagship)* | Estate research | **87/100** (`±3` High) | `22/23/18/12/12` | 4 (`1 FT + 3 C`) | \$80k–\$600k | \$20,000–\$300,000 | T1 | `5` |
 | **#04** | **High-Ticket Affiliate Marketing** *(Vol. 005 Built & QA-Verified)* | Referral publishing | **87/100** (`±3` High) | `21/22/19/12/13` | 3 (`1 FT + 2 C`) | \$50k–\$600k | \$10,000–\$300,000 | T2, T1 | `35` |
 | **#05** | **Surplus Funds Recovery** *(Vol. 002 Built & QA-Verified)* | Recovery services | **86/100** (`±3` High) | `22/22/18/12/12` | 4 (`2 FT + 2 C`) | \$100k–\$750k | \$25,000–\$337,500 | T1, T2 | `10` |
-| **#06** | **Productized AI Agencies** *(Vol. 006 Built & QA-Verified)* | Tech implementation | **86/100** (`±10` Prelim) | `23/21/17/12/13` | 5 (`2 FT + 3 C`) | \$100k–\$1.0M | \$20,000–\$400,000 | T1, T2 | `23` |
+| **#06** | **Productized AI Agencies** *(Vol. 006 Built & QA-Verified)* | Tech implementation | **86/100** (`±3` High) | `23/21/17/12/13` | 5 (`2 FT + 3 C`) | \$100k–\$1.0M | \$20,000–\$400,000 | T1, T2 | `23` |
 | **#07** | **Unclaimed Property Recovery** *(Vol. 007 Built & QA-Verified)* | Recovery services | **85/100** (`±3` High) | `20/22/18/13/12` | 3 (`1 FT + 2 C`) | \$60k–\$450k | \$15,000–\$225,000 | T1 | `12` |
-| **#08** | **Commercial Lead Generation** *(Vol. 008 Built & QA-Verified)* | B2B marketing services | **85/100** (`±6` Mod) | `21/21/18/12/13` | 4 (`1 FT + 3 C`) | \$100k–\$750k | \$20,000–\$300,000 | T1, T2 | `54` |
-| **#09** | **Million-Dollar Lead Generation** *(Vol. 009 Built & QA-Verified)* | Enterprise demand gen | **82/100** (`±10` Prelim) | `24/21/16/9/12` | 5 (`2 FT + 3 C`) | \$150k–\$1.2M | \$30,000–\$480,000 | T1, T2 | `30` |
-| **#10** | **Building an SEO Empire** *(Vol. 010 Built & QA-Verified)* | Search-driven publishing | **82/100** (`±6` Mod) | `22/21/17/10/12` | 6 (`2 FT + 4 C`) | \$80k–\$900k | \$16,000–\$405,000 | T1, T2 | `30` |
-| **#11** | **High-Ticket Brokerage** *(Vol. 011 Built & QA-Verified)* | Specialist transactions | **82/100** (`±6` Mod) | `23/22/18/10/9` | 4 (`1 FT + 3 C`) | \$100k–\$1.0M | \$25,000–\$500,000 | T1, T2 | `21` |
-| **#12** | **Equipment Brokerage** *(Vol. 012 Built & QA-Verified)* | Industrial brokerage | **81/100** (`±6` Mod) | `22/20/18/11/10` | 4 (`1 FT + 3 C`) | \$100k–\$800k | \$25,000–\$360,000 | T1 | `7` |
-| **#13** | **Intellectual Property Licensing** *(Vol. 013 Built & QA-Verified)* | Licensing services | **79/100** (`±10` Prelim) | `22/23/18/6/10` | 4 (`1 FT + 3 C`) | \$50k–\$800k | \$12,500–\$480,000 | T1, T2 | `4` |
-| **#14** | **Specialty Finance Brokerage** *(Vol. 014 Built & QA-Verified)* | Finance intermediary | **79/100** (`±6` Mod) | `23/21/17/8/10` | 4 (`2 FT + 2 C`) | \$120k–\$1.0M | \$30,000–\$450,000 | T1, T2 | `29` |
-| **#15** | **Judgment Recovery** *(Vol. 015 Built & QA-Verified)* | Recovery services | **77/100** (`±6` Mod) | `20/21/16/10/10` | 4 (`1 FT + 3 C`) | \$60k–\$500k | \$12,000–\$200,000 | T1, T2 | `15` |
+| **#08** | **Commercial Lead Generation** *(Vol. 008 Built & QA-Verified)* | B2B marketing services | **85/100** (`±3` High) | `21/21/18/12/13` | 4 (`1 FT + 3 C`) | \$100k–\$750k | \$20,000–\$300,000 | T1, T2 | `54` |
+| **#09** | **Million-Dollar Lead Generation** *(Vol. 009 Built & QA-Verified)* | Enterprise demand gen | **82/100** (`±3` High) | `24/21/16/9/12` | 5 (`2 FT + 3 C`) | \$150k–\$1.2M | \$30,000–\$480,000 | T1, T2 | `30` |
+| **#10** | **Building an SEO Empire** *(Vol. 010 Built & QA-Verified)* | Search-driven publishing | **82/100** (`±3` High) | `22/21/17/10/12` | 6 (`2 FT + 4 C`) | \$80k–\$900k | \$16,000–\$405,000 | T1, T2 | `30` |
+| **#11** | **High-Ticket Brokerage** *(Vol. 011 Built & QA-Verified)* | Specialist transactions | **82/100** (`±3` High) | `23/22/18/10/9` | 4 (`1 FT + 3 C`) | \$100k–\$1.0M | \$25,000–\$500,000 | T1, T2 | `21` |
+| **#12** | **Equipment Brokerage** *(Vol. 012 Built & QA-Verified)* | Industrial brokerage | **81/100** (`±3` High) | `22/20/18/11/10` | 4 (`1 FT + 3 C`) | \$100k–\$800k | \$25,000–\$360,000 | T1 | `7` |
+| **#13** | **Intellectual Property Licensing** *(Vol. 013 Built & QA-Verified)* | Licensing services | **79/100** (`±3` High) | `22/23/18/6/10` | 4 (`1 FT + 3 C`) | \$50k–\$800k | \$12,500–\$480,000 | T1, T2 | `4` |
+| **#14** | **Specialty Finance Brokerage** *(Vol. 014 Built & QA-Verified)* | Finance intermediary | **79/100** (`±3` High) | `23/21/17/8/10` | 4 (`2 FT + 2 C`) | \$120k–\$1.0M | \$30,000–\$450,000 | T1, T2 | `29` |
+| **#15** | **Judgment Recovery** *(Vol. 015 Built & QA-Verified)* | Recovery services | **77/100** (`±3` High) | `20/21/16/10/10` | 4 (`1 FT + 3 C`) | \$60k–\$500k | \$12,000–\$200,000 | T1, T2 | `15` |
 | **#16** | **Probate Real Estate** *(Vol. 016 Built & QA-Verified)* | Real estate services | **76/100** (`±3` High) | `23/18/16/9/10` | 5 (`2 FT + 3 C`) | \$120k–\$900k | \$24,000–\$315,000 | T1, T2 | `11` |
-| **#17** | **Domain Investing** *(Vol. 017 Built & QA-Verified)* | Digital asset trading | **74/100** (`±6` Mod) | `17/18/19/9/11` | 2 (`1 FT + 1 C`) | \$20k–\$300k | \$3,000–\$120,000 | T1, T2 | `8` |
-| **#18** | **Land Flipping** *(Vol. 018 Built & QA-Verified)* | Real estate trading | **72/100** (`±6` Mod) | `21/18/17/6/10` | 4 (`1 FT + 3 C`) | \$200k–\$1.5M | \$24,000–\$375,000 | T1, T2 | `6` |
-| **#19** | **Enterprise Software Reselling** *(Vol. 019 Built & QA-Verified)* | Software channel sales | **72/100** (`±6` Mod) | `23/14/15/9/11` | 5 (`2 FT + 3 C`) | \$300k–\$2.5M | \$24,000–\$500,000 | T1, T2 | `9` |
-| **#20** | **Government Contract Brokering** *(Vol. 020 Built & QA-Verified)* | Procurement services | **70/100** (`±6` Mod) | `22/16/14/8/10` | 5 (`2 FT + 3 C`) | \$120k–\$1.0M | \$18,000–\$300,000 | T1, T2 | `7` |
-| **#21** | **Automated E-Commerce** *(Vol. 021 Built & QA-Verified)* | Online retail | **70/100** (`±6` Mod) | `23/13/14/8/12` | 5 (`2 FT + 3 C`) | \$250k–\$2.0M | \$12,500–\$360,000 | T2, T1 | `18` |
-| **#22** | **Medical Equipment Resale** *(Vol. 022 Built & QA-Verified)* | Equipment trading | **64/100** (`±6` Mod) | `21/16/13/6/8` | 6 (`2 FT + 4 C`) | \$250k–\$1.8M | \$25,000–\$396,000 | T1, T2 | `3` |
-| **#23** | **Mineral Rights** *(Vol. 023 Built & QA-Verified)* | Resource assets | **63/100** (`±6` Mod) | `20/17/16/3/7` | 4 (`1 FT + 3 C`) | \$30k–\$400k | \$6,000–\$180,000 | T1, T2 | `5` |
-| **#24** | **Tax Lien Investing** *(Vol. 024 Built & QA-Verified)* | Asset investing | **62/100** (`±6` Mod) | `17/15/17/5/8` | 3 (`1 FT + 2 C`) | \$15k–\$180k | \$4,500–\$99,000 | T1, T2 | `4` |
-| **#25** | **Freight Brokerage** *(Vol. 025 Built & QA-Verified)* | Logistics | **62/100** (`±6` Mod) | `23/10/10/7/12` | 5 (`3 FT + 2 C`) | \$1.0M–\$5.0M | \$30,000–\$400,000 | T1 | `8` |
-| **#26** | **Government Surplus Auctions** *(Vol. 026 Built & QA-Verified)* | Surplus asset trading | **62/100** (`±6` Mod) | `20/14/12/8/8` | 5 (`2 FT + 3 C`) | \$150k–\$1.0M | \$12,000–\$200,000 | T1, T2 | `6` |
-| **#27** | **Business Acquisition** *(Vol. 027 Built & QA-Verified)* | Operating ownership | **57/100** (`±6` Mod) | `24/16/7/2/8` | 10 (`7 FT + 3 C`) | \$750k–\$3.0M | \$60,000–\$540,000 | T1, T2 | `7` |
-| **#28** | **Commercial Cleaning Contracts** *(Vol. 028 Built & QA-Verified)* | Facility services | **56/100** (`±6` Mod) | `21/12/6/11/6` | 9 (`5 FT + 4 C`) | \$250k–\$1.2M | \$20,000–\$192,000 | T1, T2 | `4` |
-| **#29** | **Insurance Restoration** *(Vol. 029 Built & QA-Verified)* | Property restoration | **54/100** (`±6` Mod) | `24/13/5/5/7` | 11 (`5 FT + 6 C`) | \$500k–\$2.5M | \$40,000–\$450,000 | T2, T1 | `5` |
+| **#17** | **Domain Investing** *(Vol. 017 Built & QA-Verified)* | Digital asset trading | **74/100** (`±3` High) | `17/18/19/9/11` | 2 (`1 FT + 1 C`) | \$20k–\$300k | \$3,000–\$120,000 | T1, T2 | `8` |
+| **#18** | **Land Flipping** *(Vol. 018 Built & QA-Verified)* | Real estate trading | **72/100** (`±3` High) | `21/18/17/6/10` | 4 (`1 FT + 3 C`) | \$200k–\$1.5M | \$24,000–\$375,000 | T1, T2 | `6` |
+| **#19** | **Enterprise Software Reselling** *(Vol. 019 Built & QA-Verified)* | Software channel sales | **72/100** (`±3` High) | `23/14/15/9/11` | 5 (`2 FT + 3 C`) | \$300k–\$2.5M | \$24,000–\$500,000 | T1, T2 | `9` |
+| **#20** | **Government Contract Brokering** *(Vol. 020 Built & QA-Verified)* | Procurement services | **70/100** (`±3` High) | `22/16/14/8/10` | 5 (`2 FT + 3 C`) | \$120k–\$1.0M | \$18,000–\$300,000 | T1, T2 | `7` |
+| **#21** | **Automated E-Commerce** *(Vol. 021 Built & QA-Verified)* | Online retail | **70/100** (`±3` High) | `23/13/14/8/12` | 5 (`2 FT + 3 C`) | \$250k–\$2.0M | \$12,500–\$360,000 | T2, T1 | `18` |
+| **#22** | **Medical Equipment Resale** *(Vol. 022 Built & QA-Verified)* | Equipment trading | **64/100** (`±3` High) | `21/16/13/6/8` | 6 (`2 FT + 4 C`) | \$250k–\$1.8M | \$25,000–\$396,000 | T1, T2 | `3` |
+| **#23** | **Mineral Rights** *(Vol. 023 Built & QA-Verified)* | Resource assets | **63/100** (`±3` High) | `20/17/16/3/7` | 4 (`1 FT + 3 C`) | \$30k–\$400k | \$6,000–\$180,000 | T1, T2 | `5` |
+| **#24** | **Tax Lien Investing** *(Vol. 024 Built & QA-Verified)* | Asset investing | **62/100** (`±3` High) | `17/15/17/5/8` | 3 (`1 FT + 2 C`) | \$15k–\$180k | \$4,500–\$99,000 | T1, T2 | `4` |
+| **#25** | **Freight Brokerage** *(Vol. 025 Built & QA-Verified)* | Logistics | **62/100** (`±3` High) | `23/10/10/7/12` | 5 (`3 FT + 2 C`) | \$1.0M–\$5.0M | \$30,000–\$400,000 | T1 | `8` |
+| **#26** | **Government Surplus Auctions** *(Vol. 026 Built & QA-Verified)* | Surplus asset trading | **62/100** (`±3` High) | `20/14/12/8/8` | 5 (`2 FT + 3 C`) | \$150k–\$1.0M | \$12,000–\$200,000 | T1, T2 | `6` |
+| **#27** | **Business Acquisition** *(Vol. 027 Built & QA-Verified)* | Operating ownership | **57/100** (`±3` High) | `24/16/7/2/8` | 10 (`7 FT + 3 C`) | \$750k–\$3.0M | \$60,000–\$540,000 | T1, T2 | `7` |
+| **#28** | **Commercial Cleaning Contracts** *(Vol. 028 Built & QA-Verified)* | Facility services | **56/100** (`±3` High) | `21/12/6/11/6` | 9 (`5 FT + 4 C`) | \$250k–\$1.2M | \$20,000–\$192,000 | T1, T2 | `4` |
+| **#29** | **Insurance Restoration** *(Vol. 029 Built & QA-Verified)* | Property restoration | **54/100** (`±3` High) | `24/13/5/5/7` | 11 (`5 FT + 6 C`) | \$500k–\$2.5M | \$40,000–\$450,000 | T2, T1 | `5` |
 
 ---
 

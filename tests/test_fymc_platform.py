@@ -2948,6 +2948,71 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             server.server_close()
             thread.join(timeout=10)
 
+    def test_29_quick_pick_exact_scores_across_covers_api_and_ui(self):
+        from src.fymc.cover_and_mockups import render_cover_or_mockup_svg
+        from src.fymc.qa_validator import validate_svg_asset
+        from src.fymc.scorecard_engine import build_29_candidate_pipeline
+        from src.fymc.volume_registry import ALL_VOLUME_SPECS, get_volume_spec_by_candidate
+
+        pipeline = build_29_candidate_pipeline()
+        self.assertEqual(len(pipeline), 29)
+        by_cand = {c["candidate_number"]: c for c in pipeline}
+        for cnum, cand in by_cand.items():
+            spec = get_volume_spec_by_candidate(cnum)
+            self.assertIsNotNone(spec)
+            self.assertEqual(spec["score"], cand["total_score"])
+            self.assertEqual(sum(cand["scores"].values()), cand["total_score"])
+
+        self.assertIsNone(get_volume_spec_by_candidate(True))
+        self.assertIsNone(get_volume_spec_by_candidate(999))
+
+        for vnum in (1, 3, 15, 29):
+            spec = ALL_VOLUME_SPECS[vnum]
+            sc = by_cand[spec["candidate_number"]]
+            meta = {"volume_number": vnum, "title": spec["title"], "subtitle": spec["subtitle"]}
+            expected_score = f"{sc['total_score']} / 100"
+            expected_rev = f"REV {sc['scores']['revenue_potential']}/25"
+            for concept in ("concept_a", "concept_b", "concept_c"):
+                for asset in ("01_front_cover", "02_paperback_wrap"):
+                    svg = render_cover_or_mockup_svg(concept, asset, meta, sc)
+                    self.assertIn(expected_score, svg)
+                    self.assertIn(expected_rev, svg)
+                    self.assertTrue(validate_svg_asset(svg, asset, check_cover_profanity=True)["passed"])
+
+        for concept in ("concept_a", "concept_b", "concept_c"):
+            minimal_svg = render_cover_or_mockup_svg(concept, "01_front_cover", {"title": "Minimal"}, {"total_score": 79})
+            self.assertIn("79 / 100", minimal_svg)
+            self.assertNotIn("REV ", minimal_svg)
+
+        status, cat = self.route("GET", "/api/fymc/catalog")
+        self.assertEqual(status, 200)
+        self.assertEqual(len(cat["businesses"]), 29)
+        for biz in cat["businesses"]:
+            spec = get_volume_spec_by_candidate(biz["candidate_number"])
+            self.assertEqual(biz["volume_id"], spec["volume_id"])
+            self.assertEqual(biz["volume_number"], spec["volume_number"])
+            self.assertEqual(biz["total_score"], spec["score"])
+            self.assertEqual(sum(biz["scores"].values()), biz["total_score"])
+            self.assertTrue(biz["startup_capital_range"])
+            self.assertTrue(biz["time_to_first_deal"])
+            self.assertIn("total_people", biz["team_size"])
+            self.assertIn("annual_owner_net_profit_usd", biz["base_case"])
+
+        status, ov = self.route("GET", "/api/fymc/overview")
+        self.assertEqual(status, 200)
+        self.assertEqual(len(ov["published_volumes"]), 29)
+        for pv in ov["published_volumes"]:
+            self.assertEqual(sum(pv["scores"].values()), pv["total_score"])
+            self.assertTrue(pv["startup_capital_range"])
+            self.assertIn("annual_owner_net_profit_usd", pv["base_case"])
+
+        site_html = (ROOT / "src" / "static" / "site.html").read_text(encoding="utf-8")
+        studio_html = (ROOT / "src" / "static" / "studio.html").read_text(encoding="utf-8")
+        for marker in ('id="flagship-score-breakdown"', 'id="quick-pick-filters"', "Not rated", "Open Vol. "):
+            self.assertIn(marker, site_html)
+        for marker in ('id="studio-quick-picks"', "Money-to-Manpower Score", "Not rated", "Load Vol. "):
+            self.assertIn(marker, studio_html)
+
 
 if __name__ == "__main__":
     unittest.main()

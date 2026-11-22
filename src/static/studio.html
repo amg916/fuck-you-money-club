@@ -19,6 +19,18 @@ label{display:block;color:var(--muted);font-size:12px;font-weight:650;line-heigh
 @media(max-width:760px){.sidebar{position:relative;width:auto;padding:16px;border-right:0;border-bottom:1px solid var(--line)}.brand{display:flex;gap:16px;padding:0 0 12px;align-items:center}.brand p{margin:0}.sidebar nav{display:flex;flex-wrap:wrap;margin-top:12px;gap:6px}.sidebar nav a{white-space:nowrap;padding:8px 10px;font-size:12px}.sidebar footer{display:none}.workspace{margin:0}.topbar{padding:14px 18px}.topbar .eyebrow{font-size:9px}.topbar .status{display:none}main{padding:24px 18px}.heading{align-items:start}.heading .edition{display:none}.three,.split{grid-template-columns:1fr}.chapter-list{max-height:240px;overflow:auto}.stats{gap:10px}.stat{padding:16px}.card{padding:16px}.hero{padding:24px}td,th{padding:8px 3px;font-size:9.5px;overflow-wrap:anywhere}th{font-size:8.5px;letter-spacing:.2px}.dialog-head{flex-wrap:wrap}.zoom-stage{height:calc(100% - 140px)}.zoom-controls{flex-wrap:wrap}.toolbar label{min-width:130px}.reader{font-size:17px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}@media(forced-colors:active){button,.card,.tag,.stat,.sidebar nav a[aria-current=page]{border:1px solid CanvasText}}@media print{.sidebar,.topbar,.toolbar,.actions,.toast,dialog{display:none!important}.workspace{margin:0}main{padding:0}.card,.hero{break-inside:avoid}body{background:white;color:black}}
 #studio-volume-select{width:auto;max-width:100%;min-width:0;margin-top:0;flex:1 1 260px}.topbar .actions{min-width:0;max-width:100%}@media(max-width:760px){.topbar{flex-wrap:wrap}#studio-volume-select{width:100%;flex:1 1 100%}}
+.studio-score-pill{display:inline-flex;align-items:center;padding:5px 10px;border:1px solid var(--gold);border-radius:999px;color:var(--gold);background:#29251d;font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.studio-score-pill.unrated{border-color:var(--line);color:var(--muted);background:var(--bg)}
+.studio-quick-picks{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.studio-quick-picks button{border-radius:999px;min-height:38px;padding:7px 13px;font-size:12px;font-weight:700}
+.studio-quick-picks button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#090d12;box-shadow:none}
+.book-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.studio-factors{display:flex;flex-wrap:wrap;gap:5px;font-variant-numeric:tabular-nums}
+.studio-factor{padding:3px 7px;border:1px solid var(--line);border-radius:5px;background:#0b1118;font-size:11px;color:var(--muted)}
+.studio-factor b{color:var(--cyan)}
+.studio-fit{padding:10px 12px;border:1px solid var(--line);border-left:3px solid var(--cyan);border-radius:8px;background:#0b1118;font-size:12px;line-height:1.65;color:var(--ink);font-variant-numeric:tabular-nums}
+.stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.stat{min-width:0;overflow-wrap:anywhere}.stat strong{font-size:clamp(22px,2.4vw,32px)}@media(max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat strong{font-size:22px}.studio-quick-picks button{font-size:11px;padding:6px 10px}}@media(max-width:480px){.stats{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -96,36 +108,646 @@ async function busy(button, task) { if (button.disabled) return; const text = bu
 function brand() { return S.overview.brand_system || S.overview.state?.brand_system || S.overview.brand || {}; }
 function volume() { return S.manuscript.volume || S.overview.volume || {}; }
 const volumeMetaById = {
- "vol-001-heir-hunting":{volume_number:1,title:"Heir Hunting",composite_score:87},
- "vol-002-surplus-funds-recovery":{volume_number:2,title:"Surplus Funds Recovery",composite_score:86},
- "vol-003-digital-product-empire":{volume_number:3,title:"Digital Product Empire",composite_score:90},
- "vol-004-ai-powered-micro-saas":{volume_number:4,title:"AI-Powered Micro SaaS",composite_score:88},
- "vol-005-high-ticket-affiliate-marketing":{volume_number:5,title:"High-Ticket Affiliate Marketing",composite_score:87},
- "vol-006-productized-ai-agencies":{volume_number:6,title:"Productized AI Agencies",composite_score:86},
- "vol-007-unclaimed-property-recovery":{volume_number:7,title:"Unclaimed Property Recovery",composite_score:85},
- "vol-008-commercial-lead-generation":{volume_number:8,title:"Commercial Lead Generation",composite_score:85},
- "vol-009-million-dollar-lead-generation":{volume_number:9,title:"Million-Dollar Lead Generation",composite_score:82},
- "vol-010-building-an-seo-empire":{volume_number:10,title:"Building an SEO Empire",composite_score:82},
- "vol-011-high-ticket-brokerage":{volume_number:11,title:"High-Ticket Brokerage",composite_score:82},
- "vol-012-equipment-brokerage":{volume_number:12,title:"Equipment Brokerage",composite_score:81},
- "vol-013-intellectual-property-licensing":{volume_number:13,title:"Intellectual Property Licensing",composite_score:79},
- "vol-014-specialty-finance-brokerage":{volume_number:14,title:"Specialty Finance Brokerage",composite_score:79},
- "vol-015-judgment-recovery":{volume_number:15,title:"Judgment Recovery",composite_score:77},
- "vol-016-probate-real-estate":{volume_number:16,title:"Probate Real Estate",composite_score:76},
- "vol-017-domain-investing":{volume_number:17,title:"Domain Investing",composite_score:74},
- "vol-018-land-flipping":{volume_number:18,title:"Land Flipping",composite_score:72},
- "vol-019-enterprise-software-reselling":{volume_number:19,title:"Enterprise Software Reselling",composite_score:72},
- "vol-020-government-contract-brokering":{volume_number:20,title:"Government Contract Brokering",composite_score:70},
- "vol-021-automated-e-commerce":{volume_number:21,title:"Automated E-Commerce",composite_score:70},
- "vol-022-medical-equipment-resale":{volume_number:22,title:"Medical Equipment Resale",composite_score:64},
- "vol-023-mineral-rights":{volume_number:23,title:"Mineral Rights",composite_score:63},
- "vol-024-tax-lien-investing":{volume_number:24,title:"Tax Lien Investing",composite_score:62},
- "vol-025-freight-brokerage":{volume_number:25,title:"Freight Brokerage",composite_score:62},
- "vol-026-government-surplus-auctions":{volume_number:26,title:"Government Surplus Auctions",composite_score:62},
- "vol-027-business-acquisition":{volume_number:27,title:"Business Acquisition",composite_score:57},
- "vol-028-commercial-cleaning-contracts":{volume_number:28,title:"Commercial Cleaning Contracts",composite_score:56},
- "vol-029-insurance-restoration":{volume_number:29,title:"Insurance Restoration",composite_score:54}
+ "vol-001-heir-hunting": {
+  "volume_number": 1,
+  "candidate_number": 1,
+  "rank": 3,
+  "title": "Heir Hunting",
+  "category": "Estate research",
+  "composite_score": 87,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 23,
+   "team_efficiency": 18,
+   "startup_accessibility": 12,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$10,000\u2013$50,000",
+  "time_to_first_deal": "6\u201324 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 127500,
+  "base_margin_pct": 37.5
+ },
+ "vol-002-surplus-funds-recovery": {
+  "volume_number": 2,
+  "candidate_number": 2,
+  "rank": 5,
+  "title": "Surplus Funds Recovery",
+  "category": "Recovery services",
+  "composite_score": 86,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 22,
+   "team_efficiency": 18,
+   "startup_accessibility": 12,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$10,000\u2013$60,000",
+  "time_to_first_deal": "3\u201318 months",
+  "team_label": "4 (2 FT + 2 C)",
+  "base_profit_usd": 148750,
+  "base_margin_pct": 35.0
+ },
+ "vol-003-digital-product-empire": {
+  "volume_number": 3,
+  "candidate_number": 27,
+  "rank": 1,
+  "title": "Digital Product Empire",
+  "category": "Digital education and tools",
+  "composite_score": 90,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 23,
+   "team_efficiency": 19,
+   "startup_accessibility": 12,
+   "automation_potential": 14
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$5,000\u2013$60,000",
+  "time_to_first_deal": "1\u20136 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 159375,
+  "base_margin_pct": 37.5
+ },
+ "vol-004-ai-powered-micro-saas": {
+  "volume_number": 4,
+  "candidate_number": 22,
+  "rank": 2,
+  "title": "AI-Powered Micro SaaS",
+  "category": "Subscription software",
+  "composite_score": 88,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 22,
+   "team_efficiency": 19,
+   "startup_accessibility": 11,
+   "automation_potential": 14
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$10,000\u2013$100,000",
+  "time_to_first_deal": "2\u20139 months",
+  "team_label": "3 (1 FT + 2 C)",
+  "base_profit_usd": 112500,
+  "base_margin_pct": 30.0
+ },
+ "vol-005-high-ticket-affiliate-marketing": {
+  "volume_number": 5,
+  "candidate_number": 24,
+  "rank": 4,
+  "title": "High-Ticket Affiliate Marketing",
+  "category": "Referral publishing",
+  "composite_score": 87,
+  "scores": {
+   "revenue_potential": 21,
+   "profit_margin_potential": 22,
+   "team_efficiency": 19,
+   "startup_accessibility": 12,
+   "automation_potential": 13
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$5,000\u2013$50,000",
+  "time_to_first_deal": "3\u201312 months",
+  "team_label": "3 (1 FT + 2 C)",
+  "base_profit_usd": 113750,
+  "base_margin_pct": 35.0
+ },
+ "vol-006-productized-ai-agencies": {
+  "volume_number": 6,
+  "candidate_number": 29,
+  "rank": 6,
+  "title": "Productized AI Agencies",
+  "category": "Technology implementation services",
+  "composite_score": 86,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 21,
+   "team_efficiency": 17,
+   "startup_accessibility": 12,
+   "automation_potential": 13
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$5,000\u2013$60,000",
+  "time_to_first_deal": "1\u20134 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 165000,
+  "base_margin_pct": 30.0
+ },
+ "vol-007-unclaimed-property-recovery": {
+  "volume_number": 7,
+  "candidate_number": 5,
+  "rank": 7,
+  "title": "Unclaimed Property Recovery",
+  "category": "Recovery services",
+  "composite_score": 85,
+  "scores": {
+   "revenue_potential": 20,
+   "profit_margin_potential": 22,
+   "team_efficiency": 18,
+   "startup_accessibility": 13,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$5,000\u2013$35,000",
+  "time_to_first_deal": "3\u201312 months",
+  "team_label": "3 (1 FT + 2 C)",
+  "base_profit_usd": 95625,
+  "base_margin_pct": 37.5
+ },
+ "vol-008-commercial-lead-generation": {
+  "volume_number": 8,
+  "candidate_number": 18,
+  "rank": 8,
+  "title": "Commercial Lead Generation",
+  "category": "B2B marketing services",
+  "composite_score": 85,
+  "scores": {
+   "revenue_potential": 21,
+   "profit_margin_potential": 21,
+   "team_efficiency": 18,
+   "startup_accessibility": 12,
+   "automation_potential": 13
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Elite Small-Team Cash Machine",
+  "startup_capital_range": "$5,000\u2013$40,000",
+  "time_to_first_deal": "1\u20134 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 127500,
+  "base_margin_pct": 30.0
+ },
+ "vol-009-million-dollar-lead-generation": {
+  "volume_number": 9,
+  "candidate_number": 21,
+  "rank": 9,
+  "title": "Million-Dollar Lead Generation",
+  "category": "Enterprise demand generation",
+  "composite_score": 82,
+  "scores": {
+   "revenue_potential": 24,
+   "profit_margin_potential": 21,
+   "team_efficiency": 16,
+   "startup_accessibility": 9,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$15,000\u2013$100,000",
+  "time_to_first_deal": "3\u201312 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 202500,
+  "base_margin_pct": 30.0
+ },
+ "vol-010-building-an-seo-empire": {
+  "volume_number": 10,
+  "candidate_number": 25,
+  "rank": 10,
+  "title": "Building an SEO Empire",
+  "category": "Search-driven publishing",
+  "composite_score": 82,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 21,
+   "team_efficiency": 17,
+   "startup_accessibility": 10,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$15,000\u2013$120,000",
+  "time_to_first_deal": "6\u201324 months",
+  "team_label": "6 (2 FT + 4 C)",
+  "base_profit_usd": 159250,
+  "base_margin_pct": 32.5
+ },
+ "vol-011-high-ticket-brokerage": {
+  "volume_number": 11,
+  "candidate_number": 26,
+  "rank": 11,
+  "title": "High-Ticket Brokerage",
+  "category": "Specialist transaction services",
+  "composite_score": 82,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 22,
+   "team_efficiency": 18,
+   "startup_accessibility": 10,
+   "automation_potential": 9
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$15,000\u2013$100,000",
+  "time_to_first_deal": "3\u201312 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 206250,
+  "base_margin_pct": 37.5
+ },
+ "vol-012-equipment-brokerage": {
+  "volume_number": 12,
+  "candidate_number": 11,
+  "rank": 12,
+  "title": "Equipment Brokerage",
+  "category": "Industrial brokerage",
+  "composite_score": 81,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 20,
+   "team_efficiency": 18,
+   "startup_accessibility": 11,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$10,000\u2013$75,000",
+  "time_to_first_deal": "2\u20139 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 157500,
+  "base_margin_pct": 35.0
+ },
+ "vol-013-intellectual-property-licensing": {
+  "volume_number": 13,
+  "candidate_number": 19,
+  "rank": 13,
+  "title": "Intellectual Property Licensing",
+  "category": "Licensing services",
+  "composite_score": 79,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 23,
+   "team_efficiency": 18,
+   "startup_accessibility": 6,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$25,000\u2013$250,000",
+  "time_to_first_deal": "6\u201324 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 180625,
+  "base_margin_pct": 42.5
+ },
+ "vol-014-specialty-finance-brokerage": {
+  "volume_number": 14,
+  "candidate_number": 20,
+  "rank": 14,
+  "title": "Specialty Finance Brokerage",
+  "category": "Finance intermediary services",
+  "composite_score": 79,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 21,
+   "team_efficiency": 17,
+   "startup_accessibility": 8,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$20,000\u2013$100,000",
+  "time_to_first_deal": "3\u20139 months",
+  "team_label": "4 (2 FT + 2 C)",
+  "base_profit_usd": 196000,
+  "base_margin_pct": 35.0
+ },
+ "vol-015-judgment-recovery": {
+  "volume_number": 15,
+  "candidate_number": 8,
+  "rank": 15,
+  "title": "Judgment Recovery",
+  "category": "Recovery services",
+  "composite_score": 77,
+  "scores": {
+   "revenue_potential": 20,
+   "profit_margin_potential": 21,
+   "team_efficiency": 16,
+   "startup_accessibility": 10,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$10,000\u2013$75,000",
+  "time_to_first_deal": "6\u201324 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 84000,
+  "base_margin_pct": 30.0
+ },
+ "vol-016-probate-real-estate": {
+  "volume_number": 16,
+  "candidate_number": 9,
+  "rank": 16,
+  "title": "Probate Real Estate",
+  "category": "Real estate services",
+  "composite_score": 76,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 18,
+   "team_efficiency": 16,
+   "startup_accessibility": 9,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "High-Leverage Operator Play",
+  "startup_capital_range": "$15,000\u2013$100,000",
+  "time_to_first_deal": "4\u201318 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 140250,
+  "base_margin_pct": 27.5
+ },
+ "vol-017-domain-investing": {
+  "volume_number": 17,
+  "candidate_number": 16,
+  "rank": 17,
+  "title": "Domain Investing",
+  "category": "Digital asset trading",
+  "composite_score": 74,
+  "scores": {
+   "revenue_potential": 17,
+   "profit_margin_potential": 18,
+   "team_efficiency": 19,
+   "startup_accessibility": 9,
+   "automation_potential": 11
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Disciplined Specialist Play",
+  "startup_capital_range": "$10,000\u2013$150,000",
+  "time_to_first_deal": "3\u201324 months",
+  "team_label": "2 (1 FT + 1 C)",
+  "base_profit_usd": 44000,
+  "base_margin_pct": 27.5
+ },
+ "vol-018-land-flipping": {
+  "volume_number": 18,
+  "candidate_number": 6,
+  "rank": 18,
+  "title": "Land Flipping",
+  "category": "Real estate trading",
+  "composite_score": 72,
+  "scores": {
+   "revenue_potential": 21,
+   "profit_margin_potential": 18,
+   "team_efficiency": 17,
+   "startup_accessibility": 6,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Disciplined Specialist Play",
+  "startup_capital_range": "$50,000\u2013$400,000",
+  "time_to_first_deal": "3\u201312 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 157250,
+  "base_margin_pct": 18.5
+ },
+ "vol-019-enterprise-software-reselling": {
+  "volume_number": 19,
+  "candidate_number": 23,
+  "rank": 19,
+  "title": "Enterprise Software Reselling",
+  "category": "Software channel sales",
+  "composite_score": 72,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 14,
+   "team_efficiency": 15,
+   "startup_accessibility": 9,
+   "automation_potential": 11
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Disciplined Specialist Play",
+  "startup_capital_range": "$25,000\u2013$150,000",
+  "time_to_first_deal": "3\u201312 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 196000,
+  "base_margin_pct": 14.0
+ },
+ "vol-020-government-contract-brokering": {
+  "volume_number": 20,
+  "candidate_number": 4,
+  "rank": 20,
+  "title": "Government Contract Brokering",
+  "category": "Procurement services",
+  "composite_score": 70,
+  "scores": {
+   "revenue_potential": 22,
+   "profit_margin_potential": 16,
+   "team_efficiency": 14,
+   "startup_accessibility": 8,
+   "automation_potential": 10
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Disciplined Specialist Play",
+  "startup_capital_range": "$25,000\u2013$150,000",
+  "time_to_first_deal": "6\u201318 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 126000,
+  "base_margin_pct": 22.5
+ },
+ "vol-021-automated-e-commerce": {
+  "volume_number": 21,
+  "candidate_number": 28,
+  "rank": 21,
+  "title": "Automated E-Commerce",
+  "category": "Online retail",
+  "composite_score": 70,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 13,
+   "team_efficiency": 14,
+   "startup_accessibility": 8,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Disciplined Specialist Play",
+  "startup_capital_range": "$30,000\u2013$250,000",
+  "time_to_first_deal": "2\u20136 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 129375,
+  "base_margin_pct": 11.5
+ },
+ "vol-022-medical-equipment-resale": {
+  "volume_number": 22,
+  "candidate_number": 14,
+  "rank": 22,
+  "title": "Medical Equipment Resale",
+  "category": "Equipment trading",
+  "composite_score": 64,
+  "scores": {
+   "revenue_potential": 21,
+   "profit_margin_potential": 16,
+   "team_efficiency": 13,
+   "startup_accessibility": 6,
+   "automation_potential": 8
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$75,000\u2013$400,000",
+  "time_to_first_deal": "3\u20139 months",
+  "team_label": "6 (2 FT + 4 C)",
+  "base_profit_usd": 164000,
+  "base_margin_pct": 16.0
+ },
+ "vol-023-mineral-rights": {
+  "volume_number": 23,
+  "candidate_number": 7,
+  "rank": 23,
+  "title": "Mineral Rights",
+  "category": "Resource assets",
+  "composite_score": 63,
+  "scores": {
+   "revenue_potential": 20,
+   "profit_margin_potential": 17,
+   "team_efficiency": 16,
+   "startup_accessibility": 3,
+   "automation_potential": 7
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$150,000\u2013$2,000,000",
+  "time_to_first_deal": "6\u201324 months",
+  "team_label": "4 (1 FT + 3 C)",
+  "base_profit_usd": 69875,
+  "base_margin_pct": 32.5
+ },
+ "vol-024-tax-lien-investing": {
+  "volume_number": 24,
+  "candidate_number": 3,
+  "rank": 24,
+  "title": "Tax Lien Investing",
+  "category": "Asset investing",
+  "composite_score": 62,
+  "scores": {
+   "revenue_potential": 17,
+   "profit_margin_potential": 15,
+   "team_efficiency": 17,
+   "startup_accessibility": 5,
+   "automation_potential": 8
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$100,000\u2013$1,500,000",
+  "time_to_first_deal": "6\u201336 months",
+  "team_label": "3 (1 FT + 2 C)",
+  "base_profit_usd": 41438,
+  "base_margin_pct": 42.5
+ },
+ "vol-025-freight-brokerage": {
+  "volume_number": 25,
+  "candidate_number": 12,
+  "rank": 25,
+  "title": "Freight Brokerage",
+  "category": "Logistics",
+  "composite_score": 62,
+  "scores": {
+   "revenue_potential": 23,
+   "profit_margin_potential": 10,
+   "team_efficiency": 10,
+   "startup_accessibility": 7,
+   "automation_potential": 12
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$50,000\u2013$250,000",
+  "time_to_first_deal": "2\u20136 months",
+  "team_label": "5 (3 FT + 2 C)",
+  "base_profit_usd": 165000,
+  "base_margin_pct": 5.5
+ },
+ "vol-026-government-surplus-auctions": {
+  "volume_number": 26,
+  "candidate_number": 17,
+  "rank": 26,
+  "title": "Government Surplus Auctions",
+  "category": "Surplus asset trading",
+  "composite_score": 62,
+  "scores": {
+   "revenue_potential": 20,
+   "profit_margin_potential": 14,
+   "team_efficiency": 12,
+   "startup_accessibility": 8,
+   "automation_potential": 8
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$25,000\u2013$200,000",
+  "time_to_first_deal": "1\u20136 months",
+  "team_label": "5 (2 FT + 3 C)",
+  "base_profit_usd": 80500,
+  "base_margin_pct": 14.0
+ },
+ "vol-027-business-acquisition": {
+  "volume_number": 27,
+  "candidate_number": 13,
+  "rank": 27,
+  "title": "Business Acquisition",
+  "category": "Operating business ownership",
+  "composite_score": 57,
+  "scores": {
+   "revenue_potential": 24,
+   "profit_margin_potential": 16,
+   "team_efficiency": 7,
+   "startup_accessibility": 2,
+   "automation_potential": 8
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$200,000\u2013$1,000,000",
+  "time_to_first_deal": "6\u201318 months",
+  "team_label": "10 (7 FT + 3 C)",
+  "base_profit_usd": 243750,
+  "base_margin_pct": 13.0
+ },
+ "vol-028-commercial-cleaning-contracts": {
+  "volume_number": 28,
+  "candidate_number": 10,
+  "rank": 28,
+  "title": "Commercial Cleaning Contracts",
+  "category": "Facility services",
+  "composite_score": 56,
+  "scores": {
+   "revenue_potential": 21,
+   "profit_margin_potential": 12,
+   "team_efficiency": 6,
+   "startup_accessibility": 11,
+   "automation_potential": 6
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$15,000\u2013$90,000",
+  "time_to_first_deal": "1\u20134 months",
+  "team_label": "9 (5 FT + 4 C)",
+  "base_profit_usd": 87000,
+  "base_margin_pct": 12.0
+ },
+ "vol-029-insurance-restoration": {
+  "volume_number": 29,
+  "candidate_number": 15,
+  "rank": 29,
+  "title": "Insurance Restoration",
+  "category": "Property restoration",
+  "composite_score": 54,
+  "scores": {
+   "revenue_potential": 24,
+   "profit_margin_potential": 13,
+   "team_efficiency": 5,
+   "startup_accessibility": 5,
+   "automation_potential": 7
+  },
+  "uncertainty_band": "\u00b13 pts",
+  "tier_label": "Capital / Labor Intensive",
+  "startup_capital_range": "$75,000\u2013$350,000",
+  "time_to_first_deal": "1\u20136 months",
+  "team_label": "11 (5 FT + 6 C)",
+  "base_profit_usd": 195000,
+  "base_margin_pct": 13.0
+ }
 };
+const volumeIdByCandidate = Object.fromEntries(Object.entries(volumeMetaById).map(([id,m])=>[String(m.candidate_number),id]));
 const volumeIds = Object.keys(volumeMetaById);
 function syncVolumeOptions() {
  const incoming = [...firstList(S.overview.published_volumes, S.overview.volumes), ...firstList(S.catalog.volumes)];
@@ -210,34 +832,92 @@ function openSVG(url, title) { $('#svg-title').textContent = title; $('#svg-full
 $('#zoom-in').addEventListener('click',()=>setZoom(zoom+25)); $('#zoom-out').addEventListener('click',()=>setZoom(zoom-25)); $('#zoom-fit').addEventListener('click',()=>setZoom(100));
 $('#svg-full').addEventListener('error',()=>notify('This artwork could not be loaded. Check the SVG endpoint.',true));
 document.addEventListener('click',event=>{ const art = event.target.closest('[data-svg]'); if (art) openSVG(art.dataset.svg,art.dataset.title || 'Artwork'); });
+const studioMoneyFmt = new Intl.NumberFormat('en-US',{maximumFractionDigits:0});
+function parseStudioMinCap(str){const m=/\$([0-9,]+)/.exec(String(str||''));return m?Number(m[1].replace(/,/g,'')):null;}
 function renderDashboard() {
  const o=S.overview, b=brand(), meta=volume().metadata || o.metadata || {}, stages=firstList(b.workflow_stages,o.workflow_stages);
  const gates=b.gates || o.gates || {};
+ const vm=volumeMetaById[S.volumeId] || {};
+ const sc=volume().scorecard || o.volume?.scorecard || {};
+ const scoreVal=sc.total_score ?? meta.composite_score ?? vm.composite_score ?? '—';
+ const bandVal=sc.uncertainty_band || vm.uncertainty_band || '±3 pts';
+ const s=sc.scores || vm.scores || {};
+ const factorNote=(s.revenue_potential!=null)?`R${s.revenue_potential}/25 · M${s.profit_margin_potential}/25 · T${s.team_efficiency}/20 · S${s.startup_accessibility}/15 · A${s.automation_potential}/15`:'5-factor weighted rating';
+ const rankLabel=vm.rank?` · Rank #${String(vm.rank).padStart(2,'0')} of 29`:'';
  const rawYt=meta.expert_youtube_link_count ?? S.manuscript?.manuscript?.expert_youtube_link_count ?? S.manuscript?.expert_youtube_link_count;
  const ytCount=(S.loaded.overview || S.loaded.manuscript) && typeof rawYt==='number' ? rawYt : '—';
- panel('dashboard',`<div class="hero" data-testid="volume-detail"><div class="eyebrow">The Big Money Playbooks / flagship volume</div><h2>${esc(meta.title || volumeTitle())}</h2><p>${esc(meta.subtitle || 'Build an evidence-led playbook. Shape the manuscript, pressure-test the economics, and make every page earn its place.')}</p><div class="actions"><a class="button primary" href="#manuscript">Open manuscript →</a><a class="button" href="#design-studio">Explore design directions</a></div></div><div class="stats">${[['Candidate books',S.loaded.catalog?S.books.length:'—','Pipeline inventory'],['Chapters',S.loaded.manuscript?S.chapters.length:'—','Flagship manuscript'],['Expert YouTube links',ytCount,'150–200+ mandatory floor'],['Worksheets',S.loaded.manuscript?S.worksheets.length:'—','Operator companion'],['Design approval',gates.approved_concept_id?'Recorded':'Pending','Owner decision required']].map(([t,n,note])=>`<div class="stat"><small>${esc(t)}</small><strong>${esc(n)}</strong><small>${esc(note)}</small></div>`).join('')}</div><div class="two"><div class="card"><h2>From research to release</h2>${stages.length?`<ol class="step-list">${stages.map(s=>`<li><span>${esc(nameOf(s))}${s.status?` · ${esc(label(s.status))}`:''}</span></li>`).join('')}</ol>`:empty('Workflow stages are not available in the overview response.')}</div><div class="stack"><div class="card"><h2>The approval boundary</h2><p>Concept previews and graphic reviews are editorial decisions. They do not authorize a public deployment or paid sales.</p><div class="details">${details(gates)}</div><a class="button spaced" href="#publishing">Review publishing gates →</a></div><div class="card"><h2>Evidence, not certainty</h2><p>Use the Money-to-Manpower Score alongside source quality, legal verification, and operational assumptions.</p><a href="#research">Inspect the research ledger →</a></div></div></div>`);
+ panel('dashboard',`<div class="hero" data-testid="volume-detail"><div class="eyebrow">The Big Money Playbooks / Volume ${esc(volumeNumber())}${esc(rankLabel)}</div><p style="margin:10px 0 0"><span class="studio-score-pill">Money-to-Manpower Score: ${esc(scoreVal)} / 100 (${esc(bandVal)})</span></p><h2>${esc(meta.title || volumeTitle())}</h2><p>${esc(meta.subtitle || 'Build an evidence-led playbook. Shape the manuscript, pressure-test the economics, and make every page earn its place.')}</p><div class="actions"><a class="button primary" href="#manuscript">Open manuscript →</a><a class="button" href="#library">Compare all 29 scores →</a><a class="button" href="#design-studio">Explore design directions</a></div></div><div class="stats">${[['Money-to-Manpower Score',scoreVal===''||scoreVal==='—'?'—':scoreVal+' / 100',factorNote],['Candidate books',S.loaded.catalog?S.books.length:'—','All 29 scored & built'],['Chapters',S.loaded.manuscript?S.chapters.length:'—','Q1–Q12 operating spine'],['Expert YouTube links',ytCount,'150–200+ mandatory floor'],['Worksheets',S.loaded.manuscript?S.worksheets.length:'—','Operator companion'],['Design approval',gates.approved_concept_id?'Recorded':'Pending','Concept B Series Master']].map(([t,n,note])=>`<div class="stat"><small>${esc(t)}</small><strong>${esc(n)}</strong><small>${esc(note)}</small></div>`).join('')}</div><div class="two"><div class="card"><h2>From research to release</h2>${stages.length?`<ol class="step-list">${stages.map(st=>`<li><span>${esc(nameOf(st))}${st.status?` · ${esc(label(st.status))}`:''}</span></li>`).join('')}</ol>`:empty('Workflow stages are not available in the overview response.')}</div><div class="stack"><div class="card"><h2>The approval boundary</h2><p>Concept previews and graphic reviews are editorial decisions. They do not authorize a public deployment or paid sales.</p><div class="details">${details(gates)}</div><a class="button spaced" href="#publishing">Review publishing gates →</a></div><div class="card"><h2>Evidence, not certainty</h2><p>Use the Money-to-Manpower Score alongside source quality, legal verification, and operational assumptions.</p><a href="#research">Inspect the research ledger →</a></div></div></div>`);
 }
 function renderLibrary() {
  const categories=[...new Set(S.books.map(b=>b.category || b.sector || b.business_category).filter(Boolean))];
  const trackMap=S.catalog.editorial_tracks || S.catalog.pipeline_29_candidates?.editorial_tracks || brand().editorial_tracks || {track_1:{id:'track_1',name:'Asymmetric & Data-Arbitrage Plays'},track_2:{id:'track_2',name:'Grey-Zone Growth & Traffic Arbitrage'}};
  const trackEntries=Object.values(trackMap).filter(t=>t && t.id);
- panel('library',`<div class="toolbar"><label>Find a book<input id="book-search" type="search" placeholder="Title, play, or keyword…"></label><label>Category<select id="book-category"><option value="">All categories</option>${categories.map(c=>`<option>${esc(c)}</option>`).join('')}</select></label><label>Editorial track<select id="book-track"><option value="">All tracks</option>${trackEntries.map(t=>`<option value="${esc(t.id)}">${esc(t.short_label || t.name)}</option>`).join('')}</select></label><label>Sort by<select id="book-sort"><option value="pipeline">Pipeline order</option><option value="title">Title</option><option value="score">Score · highest first</option></select></label></div><p id="book-count" class="muted" role="status"></p><div id="book-grid" class="grid"></div>`);
+ S.libQuick = S.libQuick || 'all';
+ panel('library',`<div class="toolbar"><label>Find a book<input id="book-search" type="search" placeholder="Title, volume, play, or keyword…"></label><label>Category<select id="book-category"><option value="">All categories</option>${categories.map(c=>`<option>${esc(c)}</option>`).join('')}</select></label><label>Editorial track<select id="book-track"><option value="">All tracks</option>${trackEntries.map(t=>`<option value="${esc(t.id)}">${esc(t.short_label || t.name)}</option>`).join('')}</select></label><label>Sort by<select id="book-sort"><option value="score" selected>Score · highest first</option><option value="volume">Volume order (001–029)</option><option value="startup">Startup accessibility (/15)</option><option value="automation">Automation potential (/15)</option><option value="margin">Profit margin (/25)</option><option value="pipeline">Pipeline order</option><option value="title">Title (A–Z)</option></select></label></div><div id="studio-quick-picks" class="studio-quick-picks" role="group" aria-label="Quick-pick filters">${[['all','All 29 Books'],['top85','85+ Top Tier'],['low_cap','Low Startup (≤$5k min)'],['high_auto','High Automation (12+/15)'],['lean_pod','Small Pod (≤3 People)']].map(([k,lbl])=>`<button type="button" data-studio-pick="${k}" aria-pressed="${S.libQuick===k}">${esc(lbl)}</button>`).join('')}</div><p id="book-count" class="muted" role="status"></p><div id="book-grid" class="grid"></div>`);
+ const bookScore = b => {
+  const card=b.scorecard || b;
+  if((Object.hasOwn(b,'score')&&b.score===null)||(Object.hasOwn(b,'total_score')&&b.total_score===null)||(Object.hasOwn(b,'money_to_manpower_score')&&b.money_to_manpower_score===null))return null;
+  const raw=b.total_score ?? b.money_to_manpower_score ?? b.score ?? card.total_score ?? card.score;
+  if(raw===null || raw===undefined || (typeof raw==='string'&&!raw.trim()))return null;
+  const n=Number(raw);
+  return Number.isFinite(n)&&n>=0&&n<=100?n:null;
+ };
+ const resolveVol = (b,i) => {
+  const card=b.scorecard || b;
+  const candNum=Number(card.candidate_number ?? b.candidate_number ?? (i+1));
+  const vid=b.volume_id || card.volume_id || volumeIdByCandidate[String(candNum)] || null;
+  const vnum=Number(b.volume_number || card.volume_number || volumeMetaById[vid]?.volume_number || candNum);
+  return {vid, vnum, candNum, vm:volumeMetaById[vid] || {}};
+ };
  const draw = ()=>{
   const q=$('#book-search').value.trim().toLowerCase(), category=$('#book-category').value, track=$('#book-track').value, sort=$('#book-sort').value;
-  const rows=S.books.map((book,index)=>({book,index})).filter(({book})=>{
+  const rows=S.books.map((book,index)=>({book,index,...resolveVol(book,index),scVal:bookScore(book)})).filter(({book,vnum,scVal})=>{
    const card=book.scorecard || book, tids=Array.isArray(card.track_ids)?card.track_ids:(Array.isArray(book.track_ids)?book.track_ids:[]);
-   return (!q || JSON.stringify(book).toLowerCase().includes(q)) && (!category || (book.category || book.sector || book.business_category)===category) && (!track || tids.includes(track));
+   const s=card.scores || book.scores || {};
+   const econ=card.economics || {};
+   const capStr=String(book.startup_capital_range || econ.startup_capital_range || '');
+   const minCap=parseStudioMinCap(capStr);
+   const people=Number(book.team_size?.total_people ?? econ.typical_team_size?.total_people ?? 0);
+   if(S.libQuick==='top85' && !(scVal!==null && scVal>=85))return false;
+   if(S.libQuick==='low_cap' && !(minCap!==null && minCap<=5000))return false;
+   if(S.libQuick==='high_auto' && !(Number(s.automation_potential)>=12))return false;
+   if(S.libQuick==='lean_pod' && !(people>0 && people<=3))return false;
+   const hay=(JSON.stringify(book)+' vol '+String(vnum).padStart(3,'0')).toLowerCase();
+   return (!q || hay.includes(q)) && (!category || (book.category || book.sector || book.business_category)===category) && (!track || tids.includes(track));
   });
-  const score=b=>Number(b.total_score ?? b.scorecard?.total_score ?? b.scorecard?.score ?? b.money_to_manpower_score ?? b.score ?? 0);
-  if(sort==='title') rows.sort((a,b)=>nameOf(a.book).localeCompare(nameOf(b.book))); if(sort==='score') rows.sort((a,b)=>score(b.book)-score(a.book));
-  $('#book-count').textContent=`${rows.length} of ${S.books.length} candidate books`;
-  $('#book-grid').innerHTML=rows.length?rows.map(({book:b,index:i})=>{
-   const card=b.scorecard || b, tlabels=Array.isArray(card.track_labels)?card.track_labels.filter(Boolean):[], plays=Array.isArray(card.plays)?card.plays.filter(p=>p&&typeof p==='object'):[];
-   const rawNum=Number(card.candidate_number ?? b.candidate_number); const num=Number.isInteger(rawNum)&&rawNum>0?rawNum:(i+1);
-   return `<article class="card book"><div class="book-number">PLAYBOOK / ${esc(String(num).padStart(3,'0'))}</div><h3>${esc(nameOf(b))}</h3><div>${badge(b.status || b.tier || card.tier_label || 'Candidate')}${b.category?' '+badge(b.category):''}${tlabels.map(t=>' '+badge(t)).join('')}</div><p>${esc(b.subtitle || b.one_line_thesis || b.description || b.summary || b.business_model || (plays.length?plays.map(p=>p.name).filter(Boolean).join(' · '):'Open the dossier to inspect this opportunity.'))}</p><div class="actions"><button type="button" data-book="${i}">Open dossier ↗</button></div></article>`;
-  }).join(''):empty('No books match this filter. If the catalog is unavailable, retry the connection above.');
+  const cmpDesc=(x,y)=>(x===null&&y===null)?0:(x===null?1:(y===null?-1:y-x));
+  rows.sort((a,b)=>{
+   const sa=(a.book.scorecard||a.book).scores||{}, sb=(b.book.scorecard||b.book).scores||{};
+   if(sort==='title')return nameOf(a.book).localeCompare(nameOf(b.book));
+   if(sort==='volume')return a.vnum-b.vnum;
+   if(sort==='startup')return cmpDesc(sa.startup_accessibility??null,sb.startup_accessibility??null)||cmpDesc(a.scVal,b.scVal);
+   if(sort==='automation')return cmpDesc(sa.automation_potential??null,sb.automation_potential??null)||cmpDesc(a.scVal,b.scVal);
+   if(sort==='margin')return cmpDesc(sa.profit_margin_potential??null,sb.profit_margin_potential??null)||cmpDesc(a.scVal,b.scVal);
+   if(sort==='pipeline')return a.index-b.index;
+   return cmpDesc(a.scVal,b.scVal)||a.vnum-b.vnum;
+  });
+  $$('#studio-quick-picks [data-studio-pick]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.studioPick===S.libQuick)));
+  $('#book-count').textContent=`${rows.length} of ${S.books.length} playbooks shown`;
+  $('#book-grid').innerHTML=rows.length?rows.map(({book:b,index:i,vid,vnum,vm,scVal})=>{
+   const card=b.scorecard || b, tlabels=Array.isArray(card.track_labels)?card.track_labels.filter(Boolean):[];
+   const s=card.scores || b.scores || {};
+   const econ=card.economics || {};
+   const base=card.scenarios?.base_case || b.base_case || {};
+   const rankNum=Number(card.rank || b.rank || vm.rank || (i+1));
+   const cap=(b.startup_capital_range || econ.startup_capital_range || vm.startup_capital_range || '—').replace(/\s*USD$/i,'');
+   const deal=b.time_to_first_deal || econ.time_to_first_deal || vm.time_to_first_deal || '—';
+   const teamObj=b.team_size || econ.typical_team_size;
+   const pod=teamObj?`${teamObj.total_people} (${teamObj.full_time_including_owner} FT + ${teamObj.contractors} C)`:(vm.team_label || '—');
+   const rawProf=base.annual_owner_net_profit_usd ?? vm.base_profit_usd;const profitNum=(rawProf!==null&&rawProf!==undefined&&rawProf!=='')?Number(rawProf):NaN;
+   const baseTxt=Number.isFinite(profitNum)?`$${studioMoneyFmt.format(profitNum)}/yr`:'—';
+   const factorHtml=(scVal!==null && s.revenue_potential!=null)?`<div class="studio-factors"><span class="studio-factor">Rev <b>${esc(s.revenue_potential)}/25</b></span><span class="studio-factor">Mgn <b>${esc(s.profit_margin_potential)}/25</b></span><span class="studio-factor">Team <b>${esc(s.team_efficiency)}/20</b></span><span class="studio-factor">Start <b>${esc(s.startup_accessibility)}/15</b></span><span class="studio-factor">Auto <b>${esc(s.automation_potential)}/15</b></span></div>`:'';
+   const openBtnHtml=(vid && volumeMetaById[vid])?`<button type="button" class="primary" data-open-volume="${esc(vid)}">Load Vol. ${esc(String(vnum).padStart(3,'0'))} →</button>`:'';
+   return `<article class="card book"><div class="book-top"><span class="book-number">VOLUME ${esc(String(vnum).padStart(3,'0'))} · RANK #${esc(String(rankNum).padStart(2,'0'))}</span><span class="studio-score-pill${scVal===null?' unrated':''}">${scVal===null?'Not rated':esc(scVal)+' / 100'}</span></div><h3>${esc(nameOf(b))}</h3><div>${badge(card.tier_label || b.tier || 'Built Master','gold')}${b.category?' '+badge(b.category):''}${tlabels.map(t=>' '+badge(t)).join('')}</div>${factorHtml}<div class="studio-fit"><strong>Startup:</strong> ${esc(cap)} · <strong>1st Deal:</strong> ${esc(deal)}<br><strong>Pod:</strong> ${esc(pod)} · <strong>Base Net:</strong> ${esc(baseTxt)} (illustrative)</div><div class="actions">${openBtnHtml}<button type="button" data-book="${i}">Scorecard &amp; Dossier ↗</button></div></article>`;
+  }).join(''):empty('No books match this filter. Choose All 29 Books to reset.');
+  $$('[data-open-volume]').forEach(button=>button.addEventListener('click',()=>{const vid=button.dataset.openVolume;if(S.dirty){notify('Save or discard chapter edits before switching volumes.',true);return;}history.replaceState(null,'','#volume/'+vid);changeVolume(vid,true);}));
   $$('[data-book]').forEach(button=>button.addEventListener('click',()=>{const book=S.books[Number(button.dataset.book)]; $('#drawer-title').textContent=nameOf(book); $('#drawer-body').innerHTML=details(book); $('#book-drawer').showModal();}));
  };
+ $$('#studio-quick-picks [data-studio-pick]').forEach(btn=>btn.addEventListener('click',()=>{S.libQuick=btn.dataset.studioPick;draw();}));
  ['book-search','book-category','book-track','book-sort'].forEach(id=>$('#'+id).addEventListener(id==='book-search'?'input':'change',draw)); draw();
 }
 function renderResearch() {
@@ -390,7 +1070,7 @@ function renderScorecards() {
  const rows=S.books.map((book,index)=>({book,card:book.scorecard || book,index})).sort((a,b)=>(b.card.total_score ?? -1)-(a.card.total_score ?? -1));
  if(!rows.length){panel('scorecards',empty('No ranked candidates returned by the catalog. Retry the workspace connection.'));return;}
  if(!rows.some(row=>String(row.card.candidate_number ?? row.book.candidate_number ?? row.index+1)===String(S.scoreCandidate)))S.scoreCandidate=rows[0].card.candidate_number ?? rows[0].book.candidate_number ?? rows[0].index+1;
- panel('scorecards',`<div class="notice">Money-to-Manpower Score (0–100) · Editorial comparison, not verified earnings or an investment recommendation. A new operator can earn nothing or lose capital.</div><div class="toolbar"><label>Ranked candidate · ${rows.length} available<select id="score-candidate">${rows.map(({book,card,index},rank)=>{const id=card.candidate_number ?? book.candidate_number ?? index+1;return `<option value="${esc(id)}" ${String(id)===String(S.scoreCandidate)?'selected':''}>#${rank+1} · ${esc(nameOf(book))} · ${esc(card.total_score ?? 'Not scored')}/100</option>`;}).join('')}</select></label><label>Scorecard preview concept<select id="score-concept">${conceptOptions(S.scoreConcept || S.concept)}</select></label></div><div id="score-explorer"></div>`);
+ panel('scorecards',`<div class="notice">Money-to-Manpower Score (0–100) · Editorial comparison, not verified earnings or an investment recommendation. A new operator can earn nothing or lose capital.</div><div class="toolbar"><label>Ranked candidate · ${rows.length} available<select id="score-candidate">${rows.map(({book,card,index},rank)=>{const id=card.candidate_number ?? book.candidate_number ?? index+1;const vid=book.volume_id||card.volume_id||volumeIdByCandidate[String(id)];const vnum=book.volume_number||card.volume_number||volumeMetaById[vid]?.volume_number;const vtag=vnum?`Vol. ${String(vnum).padStart(3,'0')} · `:'';return `<option value="${esc(id)}" ${String(id)===String(S.scoreCandidate)?'selected':''}>#${String(rank+1).padStart(2,'0')} · ${esc(vtag)}${esc(nameOf(book))} · ${esc(card.total_score ?? 'Not scored')}/100</option>`;}).join('')}</select></label><label>Scorecard preview concept<select id="score-concept">${conceptOptions(S.scoreConcept || S.concept)}</select></label></div><div id="score-explorer"></div>`);
  const draw=()=>{
   S.scoreCandidate=$('#score-candidate').value;S.scoreConcept=$('#score-concept').value;
   const row=rows.find(({book,card,index})=>String(card.candidate_number ?? book.candidate_number ?? index+1)===S.scoreCandidate), c=row.card, economics=c.economics || {}, scenarios=c.scenarios || {};

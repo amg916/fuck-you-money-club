@@ -5,7 +5,7 @@ import hashlib
 from pathlib import Path
 
 from . import WORKFLOW_STAGES, resolve_volume_slug
-from .volume_registry import get_published_volume_ids, get_volume_spec
+from .volume_registry import get_published_volume_ids, get_volume_spec, get_volume_spec_by_candidate
 from .brand_and_catalog import (EDITABLE_CHAPTER_FIELDS, VOLUME_SLUG,
                                 CorruptStoreError, _resolve_contained,
                                 load_publishing_state,
@@ -93,20 +93,52 @@ def _candidate_summary(candidate):
                     if economics.get(key))
 
 
+def _enrich_volume_meta_with_scorecard(meta: dict, sc: dict | None, spec: dict | None = None) -> dict:
+    out = dict(meta)
+    if isinstance(sc, dict):
+        if sc.get("total_score") is not None:
+            out.setdefault("composite_score", sc["total_score"])
+            out["total_score"] = sc["total_score"]
+        if isinstance(sc.get("scores"), dict):
+            out["scores"] = dict(sc["scores"])
+        for k in ("rank", "tier_label", "uncertainty_band", "evidence_confidence"):
+            if sc.get(k) is not None:
+                out[k] = sc[k]
+        econ = sc.get("economics") if isinstance(sc.get("economics"), dict) else {}
+        scen = sc.get("scenarios") if isinstance(sc.get("scenarios"), dict) else {}
+        base = (scen.get("base_case") or scen.get("base")) if isinstance(scen, dict) else {}
+        team = econ.get("typical_team_size") if isinstance(econ.get("typical_team_size"), dict) else {}
+        if econ.get("startup_capital_range"):
+            out["startup_capital_range"] = econ["startup_capital_range"]
+        if econ.get("time_to_first_deal"):
+            out["time_to_first_deal"] = econ["time_to_first_deal"]
+        if team:
+            out["team_size"] = dict(team)
+        if isinstance(base, dict) and base:
+            out["base_case"] = dict(base)
+    if spec and isinstance(spec.get("site_ui"), dict):
+        out.setdefault("site_ui", spec["site_ui"])
+    return out
+
+
 def _five_volume_collection(pub):
     volumes = []
     bundles = pub.get("volumes", {})
+    published_set = set(get_published_volume_ids())
     for slug in get_published_volume_ids():
         spec = get_volume_spec(slug)
         bundle = bundles.get(slug)
         if bundle is None and spec["volume_number"] == 1:
             bundle = pub.get("volume")
         if bundle and bundle.get("metadata"):
-            volumes.append(dict(bundle["metadata"], status="approved_master"))
+            enriched = _enrich_volume_meta_with_scorecard(bundle["metadata"], bundle.get("scorecard"), spec)
+            enriched["status"] = "approved_master"
+            volumes.append(enriched)
         else:
             volumes.append({
                 "volume_id": slug, "volume_number": spec["volume_number"],
-                "title": spec["title"], "status": "proposed",
+                "title": spec["title"], "composite_score": spec["score"],
+                "status": "approved_master" if slug in published_set else "proposed",
                 "public_deploy_approved": False, "paid_sales_approved": False,
             })
     return volumes
@@ -164,13 +196,17 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
         volume = pub["volume"]
         default_concept = pub["brand_system"].get("active_preview_concept", "concept_b")
         if method == "GET" and path == "/api/fymc/overview":
+            pub_vols = []
+            for s in get_published_volume_ids():
+                if s in pub.get("volumes", {}):
+                    vb = pub["volumes"][s]
+                    pub_vols.append(_enrich_volume_meta_with_scorecard(vb["metadata"], vb.get("scorecard"), get_volume_spec(s)))
             return handler._json({"ok": True, "brand_system": pub["brand_system"],
                 "gates": pub["brand_system"].get("gates", {}), "workflow_stages": WORKFLOW_STAGES,
                 "concepts": get_all_concepts(), "mockup_specs": MOCKUP_SPECS,
                 "interior_templates": INTERIOR_TEMPLATES,
                 "active_volume_id": pub.get("active_volume_id", vol_slug),
-                "published_volumes": [pub["volumes"][s]["metadata"] for s in get_published_volume_ids()
-                                      if s in pub.get("volumes", {})],
+                "published_volumes": pub_vols,
                 "volume": {key: volume[key] for key in (
                     "metadata", "scorecard", "diagrams_data", "graphics_reviews")},
                 "counts": pub["counts"],
@@ -180,13 +216,44 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
             return handler._json({"ok": True, **pub["existing_work_audit"]})
         if method == "GET" and path == "/api/fymc/catalog":
             candidates = _candidates(pub)
-            businesses = [{"id": c.get("slug") or str(c.get("candidate_number")),
-                "candidate_number": c.get("candidate_number"), "rank": c.get("rank"),
-                "name": c.get("title"), "title": c.get("title"), "category": c.get("category"),
-                "money_to_manpower_score": c.get("total_score"), "total_score": c.get("total_score"),
-                "tier_label": c.get("tier_label"), "description": _candidate_summary(c),
-                "methodology": METHODOLOGY + ".", "scorecard": c} for c in candidates]
-            return handler._json({"ok": True, "candidates": candidates,
+            published_set = set(get_published_volume_ids())
+            enriched_candidates = []
+            businesses = []
+            for c in candidates:
+                vspec = get_volume_spec_by_candidate(c.get("candidate_number"))
+                vid = vspec["volume_id"] if vspec else None
+                vnum = vspec["volume_number"] if vspec else None
+                c_out = dict(c)
+                c_out["volume_id"] = vid if vid in published_set else None
+                c_out["volume_number"] = vnum if vid in published_set else None
+                enriched_candidates.append(c_out)
+                econ = c.get("economics") if isinstance(c.get("economics"), dict) else {}
+                scen = c.get("scenarios") if isinstance(c.get("scenarios"), dict) else {}
+                base = (scen.get("base_case") or scen.get("base")) if isinstance(scen, dict) else {}
+                team = econ.get("typical_team_size") if isinstance(econ.get("typical_team_size"), dict) else {}
+                businesses.append({
+                    "id": c.get("slug") or str(c.get("candidate_number")),
+                    "candidate_number": c.get("candidate_number"),
+                    "rank": c.get("rank"),
+                    "volume_id": vid if vid in published_set else None,
+                    "volume_number": vnum if vid in published_set else None,
+                    "name": c.get("title"),
+                    "title": c.get("title"),
+                    "category": c.get("category"),
+                    "money_to_manpower_score": c.get("total_score"),
+                    "total_score": c.get("total_score"),
+                    "scores": c.get("scores") if isinstance(c.get("scores"), dict) else None,
+                    "uncertainty_band": c.get("uncertainty_band"),
+                    "tier_label": c.get("tier_label"),
+                    "startup_capital_range": econ.get("startup_capital_range"),
+                    "time_to_first_deal": econ.get("time_to_first_deal"),
+                    "team_size": team if team else None,
+                    "base_case": base if isinstance(base, dict) and base else None,
+                    "description": _candidate_summary(c),
+                    "methodology": METHODOLOGY + ".",
+                    "scorecard": c_out,
+                })
+            return handler._json({"ok": True, "candidates": enriched_candidates,
                 "pipeline_29_candidates": pub["pipeline_29_candidates"], "businesses": businesses,
                 "volumes": _five_volume_collection(pub), "methodology": METHODOLOGY +
                 ", separating gross revenue from net owner profit and counting full labor hours."})

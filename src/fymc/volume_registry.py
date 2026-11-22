@@ -593,6 +593,21 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
 }
 
 ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+CANDIDATE_TO_VOLUME_NUMBER: dict[int, int] = {
+    int(spec["candidate_number"]): num for num, spec in ALL_VOLUME_SPECS.items()
+}
+
+
+def get_volume_spec_by_candidate(candidate_number: object) -> dict | None:
+    """Return the canonical volume spec for a 1..29 candidate_number, or None."""
+    if isinstance(candidate_number, bool):
+        return None
+    try:
+        cnum = int(candidate_number)
+    except (TypeError, ValueError):
+        return None
+    vnum = CANDIDATE_TO_VOLUME_NUMBER.get(cnum)
+    return ALL_VOLUME_SPECS.get(vnum) if vnum is not None else None
 
 
 def get_published_volume_ids() -> tuple[str, ...]:
