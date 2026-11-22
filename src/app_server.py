@@ -114,11 +114,68 @@ class AppState:
         self.data_dir = Path(data_dir)
         self._lock = threading.RLock()
         self.lock = self._lock
+        self._loaded_corpus = False
+        self._raw_videos: list[dict] = []
+        self._abridged_list: list[dict] = []
+        self._abridged_by_id: dict[str, dict] = {}
+        self._raw_by_id: dict[str, dict] = {}
         self._evidence_index: EvidenceIndex | None = None
-        self.raw_videos, self.abridged_list = self._load_videos_and_abridged()
-        self.abridged_by_id = {a["video_id"]: a for a in self.abridged_list}
-        self.raw_by_id = {v["video_id"]: v for v in self.raw_videos}
         self._last_ebook = None
+
+    def _ensure_corpus_loaded(self) -> None:
+        if self._loaded_corpus:
+            return
+        with self._lock:
+            if self._loaded_corpus:
+                return
+            raw_v, abr_v = self._load_videos_and_abridged()
+            self._raw_videos = raw_v
+            self._abridged_list = abr_v
+            self._abridged_by_id = {a["video_id"]: a for a in abr_v}
+            self._raw_by_id = {v["video_id"]: v for v in raw_v}
+            self._loaded_corpus = True
+
+    @property
+    def raw_videos(self) -> list[dict]:
+        self._ensure_corpus_loaded()
+        return self._raw_videos
+
+    @raw_videos.setter
+    def raw_videos(self, value: list[dict]) -> None:
+        with self._lock:
+            self._raw_videos = value
+            self._loaded_corpus = True
+
+    @property
+    def abridged_list(self) -> list[dict]:
+        self._ensure_corpus_loaded()
+        return self._abridged_list
+
+    @abridged_list.setter
+    def abridged_list(self, value: list[dict]) -> None:
+        with self._lock:
+            self._abridged_list = value
+            self._loaded_corpus = True
+
+    @property
+    def abridged_by_id(self) -> dict[str, dict]:
+        self._ensure_corpus_loaded()
+        return self._abridged_by_id
+
+    @abridged_by_id.setter
+    def abridged_by_id(self, value: dict[str, dict]) -> None:
+        with self._lock:
+            self._abridged_by_id = value
+
+    @property
+    def raw_by_id(self) -> dict[str, dict]:
+        self._ensure_corpus_loaded()
+        return self._raw_by_id
+
+    @raw_by_id.setter
+    def raw_by_id(self, value: dict[str, dict]) -> None:
+        with self._lock:
+            self._raw_by_id = value
 
     @property
     def evidence_index(self) -> EvidenceIndex:
@@ -628,8 +685,7 @@ def main(argv=None):
     parser.add_argument("--data", type=Path, default=ROOT / "data")
     args = parser.parse_args(argv)
     server = create_server(args.host, args.port, args.data)
-    print(f"ProTip Abridger on http://{args.host}:{args.port} "
-          f"({len(server.state.abridged_list)} videos loaded)", flush=True)
+    print(f"ProTip Abridger & FYMC Studio on http://{args.host}:{args.port}", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

@@ -18,7 +18,7 @@ label{display:block;color:var(--muted);font-size:12px;font-weight:650;line-heigh
 @media(min-width:1600px){main{padding:44px 50px}}@media(max-width:1100px){.three{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:210px minmax(0,1fr)}.sidebar{width:215px}.workspace{margin-left:215px}main{padding:28px}.topbar{padding:16px 28px}}
 @media(max-width:760px){.sidebar{position:relative;width:auto;padding:16px;border-right:0;border-bottom:1px solid var(--line)}.brand{display:flex;gap:16px;padding:0 0 12px;align-items:center}.brand p{margin:0}.sidebar nav{display:flex;flex-wrap:wrap;margin-top:12px;gap:6px}.sidebar nav a{white-space:nowrap;padding:8px 10px;font-size:12px}.sidebar footer{display:none}.workspace{margin:0}.topbar{padding:14px 18px}.topbar .eyebrow{font-size:9px}.topbar .status{display:none}main{padding:24px 18px}.heading{align-items:start}.heading .edition{display:none}.three,.split{grid-template-columns:1fr}.chapter-list{max-height:240px;overflow:auto}.stats{gap:10px}.stat{padding:16px}.card{padding:16px}.hero{padding:24px}td,th{padding:8px 3px;font-size:9.5px;overflow-wrap:anywhere}th{font-size:8.5px;letter-spacing:.2px}.dialog-head{flex-wrap:wrap}.zoom-stage{height:calc(100% - 140px)}.zoom-controls{flex-wrap:wrap}.toolbar label{min-width:130px}.reader{font-size:17px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}@media(forced-colors:active){button,.card,.tag,.stat,.sidebar nav a[aria-current=page]{border:1px solid CanvasText}}@media print{.sidebar,.topbar,.toolbar,.actions,.toast,dialog{display:none!important}.workspace{margin:0}main{padding:0}.card,.hero{break-inside:avoid}body{background:white;color:black}}
-#studio-volume-select{width:auto;max-width:100%;margin-top:0;flex:1 1 280px}.topbar .actions{min-width:0}
+#studio-volume-select{width:auto;max-width:100%;min-width:0;margin-top:0;flex:1 1 260px}.topbar .actions{min-width:0;max-width:100%}@media(max-width:760px){.topbar{flex-wrap:wrap}#studio-volume-select{width:100%;flex:1 1 100%}}
 </style>
 </head>
 <body>
@@ -96,11 +96,35 @@ async function busy(button, task) { if (button.disabled) return; const text = bu
 function brand() { return S.overview.brand_system || S.overview.state?.brand_system || S.overview.brand || {}; }
 function volume() { return S.manuscript.volume || S.overview.volume || {}; }
 const volumeMetaById = {
- 'vol-001-heir-hunting':{volume_number:1,title:'Heir Hunting',composite_score:87},
- 'vol-002-surplus-funds-recovery':{volume_number:2,title:'Surplus Funds Recovery',composite_score:86},
- 'vol-003-digital-product-empire':{volume_number:3,title:'Digital Product Empire',composite_score:90},
- 'vol-004-ai-powered-micro-saas':{volume_number:4,title:'AI-Powered Micro SaaS',composite_score:88},
- 'vol-005-high-ticket-affiliate-marketing':{volume_number:5,title:'High-Ticket Affiliate Marketing',composite_score:87}
+ "vol-001-heir-hunting":{volume_number:1,title:"Heir Hunting",composite_score:87},
+ "vol-002-surplus-funds-recovery":{volume_number:2,title:"Surplus Funds Recovery",composite_score:86},
+ "vol-003-digital-product-empire":{volume_number:3,title:"Digital Product Empire",composite_score:90},
+ "vol-004-ai-powered-micro-saas":{volume_number:4,title:"AI-Powered Micro SaaS",composite_score:88},
+ "vol-005-high-ticket-affiliate-marketing":{volume_number:5,title:"High-Ticket Affiliate Marketing",composite_score:87},
+ "vol-006-productized-ai-agencies":{volume_number:6,title:"Productized AI Agencies",composite_score:86},
+ "vol-007-unclaimed-property-recovery":{volume_number:7,title:"Unclaimed Property Recovery",composite_score:85},
+ "vol-008-commercial-lead-generation":{volume_number:8,title:"Commercial Lead Generation",composite_score:85},
+ "vol-009-million-dollar-lead-generation":{volume_number:9,title:"Million-Dollar Lead Generation",composite_score:82},
+ "vol-010-building-an-seo-empire":{volume_number:10,title:"Building an SEO Empire",composite_score:82},
+ "vol-011-high-ticket-brokerage":{volume_number:11,title:"High-Ticket Brokerage",composite_score:82},
+ "vol-012-equipment-brokerage":{volume_number:12,title:"Equipment Brokerage",composite_score:81},
+ "vol-013-intellectual-property-licensing":{volume_number:13,title:"Intellectual Property Licensing",composite_score:79},
+ "vol-014-specialty-finance-brokerage":{volume_number:14,title:"Specialty Finance Brokerage",composite_score:79},
+ "vol-015-judgment-recovery":{volume_number:15,title:"Judgment Recovery",composite_score:77},
+ "vol-016-probate-real-estate":{volume_number:16,title:"Probate Real Estate",composite_score:76},
+ "vol-017-domain-investing":{volume_number:17,title:"Domain Investing",composite_score:74},
+ "vol-018-land-flipping":{volume_number:18,title:"Land Flipping",composite_score:72},
+ "vol-019-enterprise-software-reselling":{volume_number:19,title:"Enterprise Software Reselling",composite_score:72},
+ "vol-020-government-contract-brokering":{volume_number:20,title:"Government Contract Brokering",composite_score:70},
+ "vol-021-automated-e-commerce":{volume_number:21,title:"Automated E-Commerce",composite_score:70},
+ "vol-022-medical-equipment-resale":{volume_number:22,title:"Medical Equipment Resale",composite_score:64},
+ "vol-023-mineral-rights":{volume_number:23,title:"Mineral Rights",composite_score:63},
+ "vol-024-tax-lien-investing":{volume_number:24,title:"Tax Lien Investing",composite_score:62},
+ "vol-025-freight-brokerage":{volume_number:25,title:"Freight Brokerage",composite_score:62},
+ "vol-026-government-surplus-auctions":{volume_number:26,title:"Government Surplus Auctions",composite_score:62},
+ "vol-027-business-acquisition":{volume_number:27,title:"Business Acquisition",composite_score:57},
+ "vol-028-commercial-cleaning-contracts":{volume_number:28,title:"Commercial Cleaning Contracts",composite_score:56},
+ "vol-029-insurance-restoration":{volume_number:29,title:"Insurance Restoration",composite_score:54}
 };
 const volumeIds = Object.keys(volumeMetaById);
 function syncVolumeOptions() {
@@ -279,7 +303,8 @@ async function bootstrap() {
  normalize();
  const failures=Object.entries(S.errors); const errorNode=$('#bootstrap-errors');errorNode.hidden=!failures.length;
  errorNode.innerHTML=failures.length?`<div class="empty error"><strong>Some workspace data could not be loaded.</strong><ul>${failures.map(([k,v])=>`<li>${esc(label(k))}: ${esc(v)}</li>`).join('')}</ul><button id="retry-bootstrap" type="button">Retry connection</button></div>`:'';
- $('#retry-bootstrap')?.addEventListener('click',()=>{if(S.dirty){notify('Save or discard chapter edits before reloading.',true);return;}bootstrap();});
+ $('#retry-bootstrap')?.addEventListener('click',()=>{if(S.dirty){notify('Save or discard chapter edits before reloading.',true);return;}syncVolumeOptions();
+bootstrap();});
  $('#connection').textContent=failures.length?'Partial connection · see details':'Workspace connected';
  const renderers=[renderDashboard,renderLibrary,renderResearch,renderManuscript,renderDesignStudio,renderScorecards,renderExports,renderPublishing,renderSettings];
  renderers.forEach((render,i)=>{try{render();}catch(error){panel(sections[i],empty(`Unable to render this section: ${error.message}`));}});

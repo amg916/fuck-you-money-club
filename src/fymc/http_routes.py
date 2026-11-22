@@ -40,10 +40,29 @@ def _store_revision(root_dir):
             if not path.is_file():
                 continue
             stat = path.stat()
-        except FileNotFoundError:
+            digest.update(f"{path.relative_to(publishing)}\0{stat.st_mtime_ns}\0{stat.st_size}\n".encode())
+            if stat.st_size <= 65536:
+                digest.update(hashlib.sha256(path.read_bytes()).digest())
+        except OSError:
             continue
-        digest.update(f"{path.relative_to(publishing)}\0{stat.st_mtime_ns}\0{stat.st_size}\n".encode())
     return digest.hexdigest()
+
+
+def _load_cached_publishing_state(state, root_dir: Path, vol_slug: str) -> dict:
+    from copy import copy
+    rev = _store_revision(root_dir)
+    cache = getattr(state, "_fymc_pub_cache", None)
+    key = (str(root_dir.resolve()), rev)
+    if isinstance(cache, tuple) and len(cache) == 2 and cache[0] == key:
+        base_pub = cache[1]
+        if vol_slug in base_pub.get("volumes", {}):
+            out = copy(base_pub)
+            out["active_volume_id"] = vol_slug
+            out["volume"] = base_pub["volumes"][vol_slug]
+            return out
+    pub = load_publishing_state(root_dir, volume_id=vol_slug)
+    state._fymc_pub_cache = (key, pub)
+    return pub
 
 
 def is_fymc_route(path: str) -> bool:
@@ -108,7 +127,9 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
 
     def mutation(func, *args):
         with state.lock:
+            state._fymc_pub_cache = None
             result = func(root_dir, *args)
+            state._fymc_pub_cache = None
             if result.get("ok", True):
                 state._fymc_qa_cache = None
             return result
@@ -139,7 +160,7 @@ def handle_fymc_http(handler, state, method: str, path: str, query: dict, body: 
                                 for slug in published_slugs)):
                     sync_publishing_store(root_dir, state.abridged_list, state.raw_videos, force=False)
                 state._fymc_initialized_roots = initialized | {root_key}
-            pub = load_publishing_state(root_dir, volume_id=vol_slug)
+            pub = _load_cached_publishing_state(state, root_dir, vol_slug)
         volume = pub["volume"]
         default_concept = pub["brand_system"].get("active_preview_concept", "concept_b")
         if method == "GET" and path == "/api/fymc/overview":
