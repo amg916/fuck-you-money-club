@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-032-payment-processing-and-atm-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1807391,
+      "sha256": "fa2b124cd22cf501f2027417f9960e89d05edd19c1bf4c33673ac2e0c47262f2"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2318449,
+      "sha256": "ab48c9d30d37412a55143ff81a66d5b82e2a42d2dde024186c2c822f63d5f541"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 542681,
+      "sha256": "222ef41dbf3bbf8ee0de3d02eb2e073a186e07c07989fde4b5c14f2d14da90a1"
+    },
+    "book.epub": {
+      "bytes": 262889,
+      "sha256": "2700587f38e46f432cfe3b8edcdd7b08a9a45ef1fb82c6b85d9fc441a6301457"
+    },
+    "art/cover.svg": {
+      "bytes": 4440,
+      "sha256": "f545bddb0c521fe03b0c3f210e5738a445be3b1dbb5d4359d1d7c338c943a5b0"
+    },
+    "art/scorecard.svg": {
+      "bytes": 60271,
+      "sha256": "1ce39cb31bc654d076ff27e843f44556f47585c6adcf28d2bce6bfc7e7d5cb73"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11229,
+      "sha256": "1b4c2ea51340fc2323bad6e32ef887702dbeaa889f32253f87acf12589a968e5"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8018,
+      "sha256": "cfb5c2bb3803ae1322402914a156c7eed0c7156db326f0782700586cccd8c7c2"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11697,
+      "sha256": "2d7dca3b27018afc178694ef20480141a2b891a0489aa966be422e3ad06c618b"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9613,
+      "sha256": "0c94ba463035c1b8950eeca69244c51def973f3567fd9f1fbb6b9ece57b0fba6"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9956,
+      "sha256": "f824cc9f670809ca084cb6cd24ee51622b3694e4269885c30e1d9de0e816aae7"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12406,
+      "sha256": "9379fb8f65d93fac510914b021331a21557dc02f2aab80474ebdcc53ff098bbe"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9129,
+      "sha256": "e0d79058fc44b4377c1f91551c383454fe74f1cc18f54e59a3252cc3b9dd5255"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8240,
+      "sha256": "f0aee4341a0cb8346638ebbda590f601bc82e46fd3629101602fb66e9a42f382"
+    }
+  }
+}

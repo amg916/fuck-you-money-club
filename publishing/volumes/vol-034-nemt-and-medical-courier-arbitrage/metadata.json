@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-034-nemt-and-medical-courier-arbitrage",
+  "volume_slug": "vol-034-nemt-and-medical-courier-arbitrage",
+  "volume_number": 34,
+  "site_ui": {
+    "cover": [
+      "NEMT &",
+      "COURIER",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "CREDENTIAL THE FLEET. VERIFY THE ORDER.",
+      "DISPATCH WITH TRACEABLE HANDOFFS."
+    ],
+    "lead": "Medicaid Transportation Networks, STAT Laboratory Routes & Credentialed Fleet Dispatch with Documented Service Controls",
+    "summary": "Separate passenger transportation from specimen logistics, verify broker contracts and service authorizations, and control route margins through credential checks, custody records, and lawful worker classification.",
+    "chapters": [
+      "NEMT trips vs medical courier route models",
+      "Medicaid TPAs, laboratories & service buyers",
+      "Per-trip rates, deadhead & route contribution",
+      "Dispatch systems & credentialing startup costs",
+      "Missed trips, rejected claims & specimen loss",
+      "Broker enrollment & laboratory route sourcing",
+      "Driver qualifications & vehicle inspections",
+      "STAT dispatch, cold chain & custody records",
+      "Privacy, transport rules & 1099 classification",
+      "Service verification & clean billing workflows",
+      "Dispatch pods & backup fleet coverage",
+      "First 30-day credentialed-route launch sprint"
+    ],
+    "flow": [
+      [
+        "CONTRACT",
+        "Confirm network terms & service scope"
+      ],
+      [
+        "CREDENTIAL",
+        "Verify drivers, vehicles & coverage"
+      ],
+      [
+        "AUTHORIZE",
+        "Validate trip or specimen orders"
+      ],
+      [
+        "DISPATCH",
+        "Assign qualified capacity & track timing"
+      ],
+      [
+        "VERIFY",
+        "Record delivery, custody & exceptions"
+      ],
+      [
+        "RECONCILE",
+        "Audit claims, payouts & route margins"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "NEMT & MEDICAL COURIER DISPATCH ARBITRAGE",
+  "subtitle": "The Complete Playbook for NEMT & Medical Courier Dispatch Arbitrage: $250,000–$1,600,000 USD in Annual Gross Billings with a 2 FT + 2 C (4 People) Core Pod, Scaling to Six",
+  "chapter_count": 12,
+  "total_word_count": 78263,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 90,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:25:59Z"
+}

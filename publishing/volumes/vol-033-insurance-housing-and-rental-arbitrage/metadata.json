@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-033-insurance-housing-and-rental-arbitrage",
+  "volume_slug": "vol-033-insurance-housing-and-rental-arbitrage",
+  "volume_number": 33,
+  "site_ui": {
+    "cover": [
+      "INSURANCE",
+      "HOUSING",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "VERIFY THE PLACEMENT. SECURE LEASE RIGHTS.",
+      "CONTROL VACANCY AND PAYMENT FLOAT."
+    ],
+    "lead": "Displaced-Policyholder Housing, Corporate Master Leases & Mid-Term Relocation Placements for a Lean Housing Desk",
+    "summary": "Coordinate authorized ALE and corporate placements with suitable furnished inventory, written landlord permissions, documented payer commitments, and reserves for vacancy, damage, and collection delays.",
+    "chapters": [
+      "ALE placements vs corporate rental models",
+      "Housing vendors, adjusters & payer authority",
+      "Nightly spreads, occupancy & collection float",
+      "Furnished inventory & startup reserve budgets",
+      "Vacancy, coverage limits & unpaid extensions",
+      "Relocation referrals & landlord sourcing",
+      "Master leases & written subletting permissions",
+      "Move-in evidence, maintenance & guest support",
+      "Habitability, fair housing & local rental rules",
+      "Extension approvals & invoice reconciliation",
+      "Placement pods & property concentration caps",
+      "First 30-day housing-placement launch sprint"
+    ],
+    "flow": [
+      [
+        "QUALIFY",
+        "Confirm housing needs & payer authority"
+      ],
+      [
+        "SOURCE",
+        "Match suitable inventory & lease rights"
+      ],
+      [
+        "AUTHORIZE",
+        "Document rates, dates & payment terms"
+      ],
+      [
+        "PLACE",
+        "Inspect the unit & record move-in"
+      ],
+      [
+        "SERVICE",
+        "Track repairs & approved extensions"
+      ],
+      [
+        "SETTLE",
+        "Reconcile invoices, deposits & turnover"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "INSURANCE HOUSING & CORPORATE RENTAL ARBITRAGE",
+  "subtitle": "The Complete Playbook for Insurance Housing & Corporate Rental Arbitrage: $180,000–$1,400,000 USD in Annual Gross Billings with a 1 FT + 3 C (4 People) Core Pod; Six Seats at Scale",
+  "chapter_count": 12,
+  "total_word_count": 77239,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 90,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:25:59Z"
+}

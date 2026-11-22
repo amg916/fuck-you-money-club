@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-030-lending-and-flash-funding-arbitrage",
+  "volume_slug": "vol-030-lending-and-flash-funding-arbitrage",
+  "volume_number": 30,
+  "site_ui": {
+    "cover": [
+      "LENDING &",
+      "FLASH-FUNDING",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "VERIFY ESCROW. UNDERWRITE THE EXIT.",
+      "RECYCLE CAPITAL WITH CONTROLS."
+    ],
+    "lead": "Transactional Double-Close Funding, Earnest-Money Deposit Loans & Corporate Credit Liquidity for a Lean Lending Desk",
+    "summary": "Screen both closing legs, document earnest-money refund rights, and reconcile escrow-controlled disbursements while pricing credit costs, failed exits, and state lending requirements.",
+    "chapters": [
+      "Transactional funding vs EMD lending",
+      "Title partners & verified closing instructions",
+      "Funding fees, cost of capital & velocity",
+      "Corporate credit terms & liquidity reserves",
+      "Failed closings, wire fraud & deposit losses",
+      "Sourcing wholesalers & repeat borrowers",
+      "Double-close underwriting & escrow controls",
+      "EMD refund rights & release conditions",
+      "Lending licenses, usury & loan documents",
+      "Funding calendars & repayment reconciliation",
+      "Lean credit desk & concentration limits",
+      "First 30-day funded-deal launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Qualify borrowers & title partners"
+      ],
+      [
+        "UNDERWRITE",
+        "Verify both closings & repayment exit"
+      ],
+      [
+        "DOCUMENT",
+        "Set loan terms & escrow conditions"
+      ],
+      [
+        "FUND",
+        "Confirm instructions before disbursement"
+      ],
+      [
+        "RECONCILE",
+        "Track principal, fees & exceptions"
+      ],
+      [
+        "RECYCLE",
+        "Release capital within exposure caps"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "LENDING & FLASH-FUNDING ARBITRAGE",
+  "subtitle": "The Complete Playbook for Lending & Flash-Funding Arbitrage: $120,000–$950,000 USD in Annual Earned Revenue; a 1 FT + 2 C Three-Person Pod, Expanding to Five People at Scale",
+  "chapter_count": 12,
+  "total_word_count": 78274,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 93,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:25:59Z"
+}

@@ -1,0 +1,920 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "nemt-medical-courier-production-blueprint-90-day-cohort",
+    "question_prompt": "How does an operator execute nemt & medical courier dispatch arbitrage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "RouteGenie and MediRoutes Dispatch, Medicaid Authorization, UN3373 Custody, SQLite Settlement Controls, and a $925,000 Billing Run Rate",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #34, NEMT & Medical Courier Dispatch Arbitrage, ranks #08 of 36 "
+        "with a 90/100 Money-to-Manpower Score. This chapter maps nine operating plays "
+        "to one auditable intake-to-cash system: legitimate GBP acquisition, Medicaid "
+        "standing orders, workers' compensation transport, discharge coverage, dialysis "
+        "returns, scheduled specimen routes, STAT specimens, overflow dispatch, and "
+        "documentation recovery. Annual owner profit is $30,000 Conservative, $166,500 "
+        "Base, and $384,000 Scaled. The Base case converts $925,000 gross contracted "
+        "billings into $416,250 retained contribution before operating deductions. "
+        "A six-module SQLite reference separates service evidence, driver liabilities, "
+        "receivables, and bank settlements. The worked cohort exposes the practical "
+        "constraint: profitable dispatch can exhaust working cash before the first "
+        "broker payment arrives."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "Annual gross contracted billings; $112,500 retained at 45%",
+            "note": "12% gross-billing margin; $30,000 owner profit; 26.67% retained margin; 2 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$925,000",
+            "context": "Annual gross contracted billings; $416,250 retained at 45%",
+            "note": "18.0% gross-billing margin; $166,500 owner profit; 40.0% retained margin; 2 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,600,000",
+            "context": "Annual gross contracted billings; $720,000 retained at 45%",
+            "note": "24% gross-billing margin; $384,000 owner profit; 53.33% retained margin; 3 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Admit only serviceable demand and price the nine operating plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Begin with a payer contract, a service boundary, and a verifiable operator, "
+                    "not a purchased list of patients. Candidate #34 combines healthcare logistics "
+                    "brokerage with capacity coordination; underlying medical spending and patient "
+                    "benefits never become dispatch revenue. Create separate intake queues for "
+                    "authorized passenger trips and laboratory consignments because eligibility, "
+                    "equipment, evidence, and escalation differ. A passenger record needs the payer "
+                    "authorization reference, permitted transport mode, pickup window, destination, "
+                    "mobility requirements, and return arrangement. A specimen record needs the "
+                    "ordering facility, packaging classification, required temperature range, receiving "
+                    "laboratory cutoff, and custody identifiers. Keep clinical descriptions outside "
+                    "the commercial ledger. RouteGenie or MediRoutes can supply scheduling and GPS "
+                    "evidence, but confirm contractual export rights and actual integration support "
+                    "before promising automation. Dispatch accepts work only after checking the "
+                    "specific driver's credential dates, vehicle suitability, insurance scope, and "
+                    "available service interval. A wheelchair booking cannot silently become a sedan "
+                    "booking because the cheaper vehicle is nearby. When capacity fails, contact the "
+                    "contracted broker or laboratory immediately and document the authorized substitute "
+                    "or cancellation. Never send an unqualified replacement to preserve an attractive "
+                    "spread; the apparent contribution disappears when the service is rejected."
+                ),
+                (
+                    "The required acquisition mapping is google_maps_gbp_lead_gen_network. Apply it "
+                    "to genuine local transport businesses rather than copying a trades directory "
+                    "into healthcare. A partner must actually operate the represented business, "
+                    "control its eligible location, and satisfy Google's current verification and "
+                    "representation rules. Never publish nine profiles for nine rented mailing "
+                    "addresses. At an illustrative $600 monthly acquisition cost, twenty qualified "
+                    "facility inquiries cost $30 each; five converted accounts cost $120 each. "
+                    "If those accounts generate forty authorized $80 legs monthly, gross billings "
+                    "are $3,200 and retained contribution is $1,440 before overhead. These are "
+                    "channel economics, not additional revenue layered onto the canonical case. "
+                    "Use call tracking without recording patient conversations by default, disclose "
+                    "recording where required, and keep review requests free of treatment details. "
+                    "The fallback is one legitimate partner location capable of live video "
+                    "verification, paired with useful organic city service pages. A service-area "
+                    "business should follow address-display requirements rather than pretending its "
+                    "yard receives patients. Do not pay healthcare referral sources per reimbursable "
+                    "patient; assess remuneration arrangements against 42 U.S.C. 1320a-7b(b). Route "
+                    "emergency symptoms to emergency services instead of treating every incoming "
+                    "call as a dispatch opportunity."
+                ),
+                (
+                    "The remaining eight mapped plays are chapter-level operating applications, "
+                    "not additional externally supplied play identifiers: Medicaid standing orders, "
+                    "workers' compensation transport, discharge coverage, dialysis returns, scheduled "
+                    "specimen routes, STAT specimens, overflow dispatch, and documentation recovery. "
+                    "Price the first three on authorized completed legs, dialysis on separately "
+                    "authorized outbound and return legs, and specimens on contracted route or "
+                    "pickup units. An $80 passenger leg leaves $36 after a $44 driver settlement; "
+                    "a $200 specimen route leaves $90 after $110. A $150 STAT pickup leaves "
+                    "$67.50 after $82.50, but a missed laboratory cutoff can erase the entire "
+                    "invoice. Do not assume a scheduled route's margin survives an unpriced STAT "
+                    "detour. Overflow work requires explicit substitution rights and identical "
+                    "evidence standards; documentation recovery fixes missing support for real "
+                    "services rather than creating another service charge. The matrix below gives "
+                    "each play a measurable fallback. Treat repeated authorization failures as "
+                    "a source-quality defect, not a dispatcher productivity problem. Measure "
+                    "retained dollars per occupied driver hour, empty miles per completed leg, "
+                    "and evidence-complete percentage together. A busy dashboard can conceal "
+                    "unprofitable capacity if deadhead mileage, wait time, and canceled returns "
+                    "remain outside the quoted unit."
+                ),
+            ],
+            "table": {
+                "caption": "Nine Mapped Plays: Contract Units, Retained Contribution, and Failure Fallbacks",
+                "headers": [
+                    "Operating play and demand source",
+                    "Concrete unit economics before operating deductions",
+                    "Required evidence and contract boundary",
+                    "Failure fallback and responsible operator",
+                ],
+                "rows": [
+                    [
+                        "google_maps_gbp_lead_gen_network through a genuine local transport partner",
+                        "Forty $80 legs produce $3,200 billings and $1,440 retained contribution",
+                        "Verify actual business location, profile ownership, and authorized service territory",
+                        "Use organic city pages when a legitimate profile cannot qualify",
+                    ],
+                    [
+                        "Medicaid standing orders from a contracted transportation broker",
+                        "One hundred $80 legs produce $8,000 billings and $3,600 retained contribution",
+                        "Match each dated leg against eligibility, authorization, mode, and completion evidence",
+                        "Ask the broker to resolve mismatches before allocating driver capacity",
+                    ],
+                    [
+                        "Workers' compensation transport plus separately contracted discharge coverage",
+                        "Ten $100 compensation legs or ten $80 discharge legs retain $450 or $360",
+                        "Obtain adjuster authorization for compensation and discharge readiness for hospital trips",
+                        "Return unresolved payment responsibility to the originating authorized coordinator",
+                    ],
+                    [
+                        "Dialysis return coordination with distinct outbound and inbound service units",
+                        "Twelve $160 round trips produce $1,920 billings and $864 retained contribution",
+                        "Preserve two leg identifiers and the facility's actual ready-time notification",
+                        "Activate qualified backup capacity rather than abandoning a delayed return",
+                    ],
+                    [
+                        "Scheduled specimen routes from laboratories with receiving cutoff commitments",
+                        "Twenty $200 routes produce $4,000 billings and $1,800 retained contribution",
+                        "Record packaging acceptance, barcode custody, temperature evidence, and laboratory receipt",
+                        "Quarantine packaging exceptions with the shipper before custody acceptance",
+                    ],
+                    [
+                        "STAT specimen pickups with separately reserved urgent-response capacity",
+                        "Eight $150 pickups produce $1,200 billings and $540 retained contribution",
+                        "Confirm classification, packaging, response promise, and destination acceptance window",
+                        "Escalate immediately when the receiving cutoff cannot be met",
+                    ],
+                    [
+                        "Overflow dispatch and documentation recovery for existing contracted services",
+                        "Ten $80 overflow legs retain $360; recovering two $80 claims restores $160 receivables",
+                        "Require substitution permission; recovery never duplicates an already recognized service",
+                        "Decline unauthorized overflow and correct evidence without manufacturing trip records",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the spread before the vehicle moves",
+                "body": "Veteran dispatchers protect scarce response capacity and collect usable evidence at the service boundary.",
+                "items": [
+                    "Price dialysis waiting and return readiness explicitly; a nominal round-trip rate hides two scheduling events.",
+                    "Reserve one qualified backup interval around laboratory cutoffs instead of selling every available driver minute.",
+                    "Compare GPS arrival, facility readiness, and actual departure before disputing detention charges.",
+                    "Use laboratory accession or receiving references to resolve custody disputes without copying clinical results into dispatch notes.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Install the six-module ledger and make every mutation replay-safe",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use the six reference modules below as a narrow monetary control plane, "
+                    "not a replacement for credentialing, clinical systems, or a complete claims "
+                    "platform. Save each artifact under its named filename in one directory, "
+                    "initialize SQLite with schema.sql and views.sql, then import the Python "
+                    "functions from the dispatch integration. Python's sqlite3 module provides "
+                    "the database interface without additional packages. Store amounts as integer "
+                    "cents and treat payer plus service reference as the immutable intake identity. "
+                    "A changed quote under the same identity is rejected rather than silently "
+                    "overwriting previously authorized work. Every write acquires BEGIN IMMEDIATE "
+                    "before reading mutable balances, so concurrent writers serialize within this "
+                    "single database. A bounded busy timeout can produce a retryable lock error; "
+                    "it cannot produce a half-posted transaction. Keep the database on supported "
+                    "local storage, enable foreign keys on every connection, and restrict direct "
+                    "write access to these functions. Database permissions, encrypted storage, "
+                    "backups, and restore drills remain deployment responsibilities. The reference "
+                    "deliberately excludes patient names and addresses. Its identifiers point to "
+                    "access-controlled evidence in the operational system, reducing the information "
+                    "exposed through billing exports and support logs."
+                ),
+                (
+                    "The state machine admits INTAKE or HOLD records into VERIFIED only when "
+                    "a reviewer supplies authorization, service, and custody-or-arrival references; "
+                    "it then recognizes the receivable and creates one driver payment instruction "
+                    "in the same transaction. Presence checks establish machine-readable completeness, "
+                    "not truth: an authorized reviewer must inspect the referenced evidence before "
+                    "calling release. The instruction's stable payout key crosses the payment "
+                    "boundary unchanged. An external bank adapter must support durable idempotency "
+                    "and status lookup before automated submission is enabled. If it does not, "
+                    "use controlled manual release and reconcile the bank reference before any "
+                    "retry; never claim that a SQLite transaction can make an unrelated bank "
+                    "transfer atomic. This design removes read-modify-write races inside the "
+                    "reference database and makes settled-payment recording replay-safe. It does "
+                    "not promise failure-free third-party services. A HOLD is an internal "
+                    "verification reserve, not a representation that customer money sits in "
+                    "regulated escrow. Driver payment terms still govern actual due dates. "
+                    "After recognition, corrections require separately designed reversal entries "
+                    "and supporting review; the supplied functions reject attempts to repurpose "
+                    "a released job or overwrite its evidence."
+                ),
+                (
+                    "Recognition follows the supplied agent-style retained-share presentation: a "
+                    "$100 completed service debits receivables $100, credits driver payable $55, "
+                    "and credits retained revenue $45. Collecting the invoice moves $100 from "
+                    "receivables to cash without producing new revenue. Settling the driver "
+                    "reduces cash and the liability by $55 without charging that amount again "
+                    "against retained revenue. Actual principal-versus-agent presentation depends "
+                    "on the executed contracts and control of the promised service; the 45% "
+                    "convention here is the scorecard's explicit modeling basis. The reconciliation "
+                    "view reports gross recognized billings separately from retained revenue, "
+                    "expenses, bank cash, and outstanding liabilities. Bank references are unique "
+                    "across cash events, so a reused transaction reference cannot settle two "
+                    "jobs accidentally. Partial customer receipts are supported, while driver "
+                    "settlement is intentionally one complete payment per instruction. Split "
+                    "settlements require a distinct installment design before use. The QA module "
+                    "checks integrity, foreign keys, balanced entries, revenue allocation, "
+                    "instruction settlement, and the balance-sheet identity. Reconcile its cash "
+                    "output to an independent bank statement daily. The code is a reference "
+                    "artifact supplied for implementation; execution, load testing, and integration "
+                    "verification have not been performed here."
+                ),
+            ],
+            "table": {
+                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
+                "headers": [
+                    "Module and deployment responsibility",
+                    "Copy-pasteable reference artifact using standard library interfaces",
+                    "Concurrency boundary and operational acceptance evidence",
+                ],
+                "rows": [
+                    [
+                        "Module 1: schema.sql establishes immutable identities and monetary records",
+                        '''PRAGMA journal_mode=WAL;
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS jobs (
+    id INTEGER PRIMARY KEY,
+    payer TEXT NOT NULL,
+    service_ref TEXT NOT NULL,
+    lane TEXT NOT NULL CHECK(lane IN ('NEMT','ROUTE','STAT')),
+    gross INTEGER NOT NULL CHECK(gross > 0),
+    driver INTEGER NOT NULL CHECK(driver > 0 AND driver < gross),
+    retained INTEGER NOT NULL CHECK(retained = gross - driver),
+    score INTEGER NOT NULL,
+    status TEXT NOT NULL DEFAULT 'INTAKE'
+        CHECK(status IN ('INTAKE','HOLD','VERIFIED','RECOGNIZED')),
+    evidence TEXT,
+    UNIQUE(payer, service_ref)
+);
+CREATE TABLE IF NOT EXISTS events (
+    event_key TEXT PRIMARY KEY,
+    job_id INTEGER REFERENCES jobs(id),
+    kind TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS entries (
+    event_key TEXT NOT NULL REFERENCES events(event_key),
+    account TEXT NOT NULL CHECK(account IN
+        ('AR','CASH','DRIVER_PAYABLE','RETAINED_REVENUE','OPEX','CAPITAL')),
+    cents INTEGER NOT NULL CHECK(cents != 0),
+    PRIMARY KEY(event_key, account)
+);
+CREATE TABLE IF NOT EXISTS payout_outbox (
+    payout_key TEXT PRIMARY KEY,
+    job_id INTEGER NOT NULL UNIQUE REFERENCES jobs(id),
+    cents INTEGER NOT NULL CHECK(cents > 0),
+    status TEXT NOT NULL DEFAULT 'READY'
+        CHECK(status IN ('READY','SETTLED')),
+    bank_ref TEXT UNIQUE
+);
+CREATE TABLE IF NOT EXISTS bank_refs (
+    bank_ref TEXT PRIMARY KEY,
+    event_key TEXT NOT NULL UNIQUE REFERENCES events(event_key)
+);
+CREATE INDEX IF NOT EXISTS events_job_idx ON events(job_id);
+''',
+                        "Initialize once before workers start; keep all database writes inside serialized transactions",
+                    ],
+                    [
+                        "Module 2: core.py implements transaction ownership, intake, and priority scoring",
+                        '''from __future__ import annotations
+import json
+import os
+import sqlite3
+from contextlib import contextmanager
+
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"))
+
+@contextmanager
+def tx():
+    db = sqlite3.connect(os.environ.get("FYMC_DB", "dispatch.db"),
+                         timeout=30, isolation_level=None)
+    db.row_factory = sqlite3.Row
+    db.execute("PRAGMA foreign_keys=ON")
+    db.execute("PRAGMA busy_timeout=30000")
+    try:
+        db.execute("BEGIN IMMEDIATE")
+        yield db
+        db.commit()
+    except BaseException:
+        db.rollback()
+        raise
+    finally:
+        db.close()
+
+def post(db, key, job_id, kind, payload, lines):
+    if not key or sum(lines.values()) != 0:
+        raise ValueError("A keyed, balanced event is required")
+    encoded = canonical(payload)
+    old = db.execute(
+        "SELECT job_id,kind,payload FROM events WHERE event_key=?",
+        (key,)
+    ).fetchone()
+    if old is not None:
+        if tuple(old) != (job_id, kind, encoded):
+            raise ValueError("Event identity reused with different content")
+        return False
+    db.execute("INSERT INTO events(event_key,job_id,kind,payload) VALUES(?,?,?,?)",
+               (key, job_id, kind, encoded))
+    db.executemany("INSERT INTO entries VALUES(?,?,?)",
+                   [(key, account, cents) for account, cents in lines.items()
+                    if cents])
+    return True
+
+def intake(payer, service_ref, lane, gross, driver):
+    if not payer or not service_ref or lane not in ("NEMT", "ROUTE", "STAT"):
+        raise ValueError("Valid payer, service identity, and lane required")
+    if type(gross) is not int or type(driver) is not int:
+        raise ValueError("Amounts must be integer cents")
+    if not 0 < driver < gross:
+        raise ValueError("Positive driver share must be below gross")
+    retained = gross - driver
+    score = 100 if lane == "STAT" else 50
+    expected = (lane, gross, driver, retained, score)
+    with tx() as db:
+        row = db.execute(
+            "SELECT * FROM jobs WHERE payer=? AND service_ref=?",
+            (payer, service_ref)
+        ).fetchone()
+        if row is not None:
+            actual = tuple(row[k] for k in
+                           ("lane", "gross", "driver", "retained", "score"))
+            if actual != expected:
+                raise ValueError("Intake replay conflicts with stored quote")
+            return row["id"]
+        cursor = db.execute(
+            "INSERT INTO jobs(payer,service_ref,lane,gross,driver,retained,score) "
+            "VALUES(?,?,?,?,?,?,?)",
+            (payer, service_ref) + expected
+        )
+        return cursor.lastrowid
+''',
+                        "Identical intake retries return one job; conflicting quotes fail without altering prior records",
+                    ],
+                    [
+                        "Module 3: verify.py controls evidence holds, release, and recognition",
+                        '''from __future__ import annotations
+from core import canonical, post, tx
+
+def review(job_id, decision, evidence):
+    if decision not in ("hold", "release"):
+        raise ValueError("Decision must be hold or release")
+    required = ("reviewer", "reason") if decision == "hold" else (
+        "reviewer", "authorization_ref", "service_ref", "arrival_or_custody_ref"
+    )
+    if any(not isinstance(evidence.get(k), str) or not evidence[k].strip()
+           for k in required):
+        raise ValueError("Complete reviewed evidence references required")
+    encoded = canonical(evidence)
+    with tx() as db:
+        job = db.execute("SELECT * FROM jobs WHERE id=?", (job_id,)).fetchone()
+        if job is None:
+            raise ValueError("Job does not exist")
+        if job["status"] == "RECOGNIZED":
+            if decision == "release" and job["evidence"] == encoded:
+                return
+            raise ValueError("Recognized service requires a separate correction")
+        if decision == "hold":
+            db.execute("UPDATE jobs SET status='HOLD',evidence=? WHERE id=?",
+                       (encoded, job_id))
+            return
+        if job["status"] not in ("INTAKE", "HOLD"):
+            raise ValueError("Job cannot enter verification")
+        db.execute("UPDATE jobs SET status='VERIFIED',evidence=? WHERE id=?",
+                   (encoded, job_id))
+        post(db, "recognize:" + str(job_id), job_id, "recognize", evidence, {
+            "AR": job["gross"],
+            "DRIVER_PAYABLE": -job["driver"],
+            "RETAINED_REVENUE": -job["retained"]
+        })
+        db.execute(
+            "INSERT INTO payout_outbox(payout_key,job_id,cents) VALUES(?,?,?)",
+            ("driver:" + str(job_id), job_id, job["driver"])
+        )
+        db.execute("UPDATE jobs SET status='RECOGNIZED' WHERE id=?", (job_id,))
+''',
+                        "Recognition and payment instruction commit together; incomplete evidence cannot create a receivable",
+                    ],
+                    [
+                        "Module 4: cash.py records independently verified bank settlements and expenses",
+                        '''from __future__ import annotations
+from core import canonical, post, tx
+
+def record_cash(event_key, kind, cents, bank_ref, job_id=None):
+    if not isinstance(event_key, str) or not event_key.startswith("bank:"):
+        raise ValueError("Cash event keys must use the bank prefix")
+    if kind not in ("collection", "payout", "expense", "capital"):
+        raise ValueError("Unsupported cash event kind")
+    if type(cents) is not int or cents <= 0 or not bank_ref:
+        raise ValueError("Positive integer cents and verified bank reference required")
+    if (kind in ("collection", "payout")) != (job_id is not None):
+        raise ValueError("Only service cash events require a job")
+    payload = {"cents": cents, "bank_ref": bank_ref, "job_id": job_id}
+    with tx() as db:
+        old = db.execute(
+            "SELECT job_id,kind,payload FROM events WHERE event_key=?",
+            (event_key,)
+        ).fetchone()
+        if old is not None:
+            if tuple(old) != (job_id, kind, canonical(payload)):
+                raise ValueError("Cash replay conflicts with stored event")
+            return
+        if kind in ("collection", "payout"):
+            job = db.execute("SELECT * FROM jobs WHERE id=?", (job_id,)).fetchone()
+            if job is None or job["status"] != "RECOGNIZED":
+                raise ValueError("Recognized job required")
+        if kind == "collection":
+            outstanding = db.execute(
+                "SELECT COALESCE(SUM(e.cents),0) FROM entries e "
+                "JOIN events v ON v.event_key=e.event_key "
+                "WHERE v.job_id=? AND e.account='AR'", (job_id,)
+            ).fetchone()[0]
+            if cents > outstanding:
+                raise ValueError("Receipt exceeds open receivable")
+            lines = {"CASH": cents, "AR": -cents}
+        elif kind == "payout":
+            instruction = db.execute(
+                "SELECT * FROM payout_outbox WHERE job_id=?", (job_id,)
+            ).fetchone()
+            if instruction is None or instruction["status"] != "READY":
+                raise ValueError("Ready payment instruction required")
+            if instruction["cents"] != cents:
+                raise ValueError("Payment must match full driver instruction")
+            lines = {"DRIVER_PAYABLE": cents, "CASH": -cents}
+        elif kind == "expense":
+            lines = {"OPEX": cents, "CASH": -cents}
+        else:
+            lines = {"CASH": cents, "CAPITAL": -cents}
+        post(db, event_key, job_id, kind, payload, lines)
+        db.execute("INSERT INTO bank_refs VALUES(?,?)", (bank_ref, event_key))
+        if kind == "payout":
+            db.execute(
+                "UPDATE payout_outbox SET status='SETTLED',bank_ref=? WHERE job_id=?",
+                (bank_ref, job_id)
+            )
+''',
+                        "Use the stable outbox key at the bank; this module records settlements rather than initiating transfers",
+                    ],
+                    [
+                        "Module 5: views.sql exposes gross activity, retained earnings, and cash",
+                        '''CREATE VIEW IF NOT EXISTS ledger_reconciliation AS
+SELECT
+    COALESCE(SUM(CASE WHEN e.account='AR' AND v.kind='recognize'
+                      THEN e.cents ELSE 0 END),0) AS gross_billings_cents,
+    -COALESCE(SUM(CASE WHEN e.account='RETAINED_REVENUE'
+                       THEN e.cents ELSE 0 END),0) AS retained_revenue_cents,
+    COALESCE(SUM(CASE WHEN e.account='OPEX'
+                      THEN e.cents ELSE 0 END),0) AS operating_cost_cents,
+    -COALESCE(SUM(CASE WHEN e.account IN ('RETAINED_REVENUE','OPEX')
+                       THEN e.cents ELSE 0 END),0) AS owner_profit_cents,
+    COALESCE(SUM(CASE WHEN e.account='AR'
+                      THEN e.cents ELSE 0 END),0) AS receivables_cents,
+    -COALESCE(SUM(CASE WHEN e.account='DRIVER_PAYABLE'
+                       THEN e.cents ELSE 0 END),0) AS driver_payable_cents,
+    COALESCE(SUM(CASE WHEN e.account='CASH'
+                      THEN e.cents ELSE 0 END),0) AS cash_cents,
+    -COALESCE(SUM(CASE WHEN e.account='CAPITAL'
+                       THEN e.cents ELSE 0 END),0) AS capital_cents
+FROM entries e JOIN events v ON v.event_key=e.event_key;
+CREATE VIEW IF NOT EXISTS ready_driver_payments AS
+SELECT payout_key,job_id,cents
+FROM payout_outbox WHERE status='READY';
+''',
+                        "Independent aggregates avoid join multiplication; positive liabilities remain distinct from recognized retained revenue",
+                    ],
+                    [
+                        "Module 6: qa.py checks integrity and reports a reproducible ledger snapshot",
+                        '''from __future__ import annotations
+from core import tx
+
+def require(condition, message):
+    if not condition:
+        raise RuntimeError(message)
+
+def run():
+    with tx() as db:
+        require(db.execute("PRAGMA integrity_check").fetchone()[0] == "ok",
+                "Database integrity check failed")
+        require(not db.execute("PRAGMA foreign_key_check").fetchall(),
+                "Foreign key check failed")
+        bad = db.execute(
+            "SELECT v.event_key FROM events v LEFT JOIN entries e "
+            "ON e.event_key=v.event_key GROUP BY v.event_key "
+            "HAVING COUNT(e.account)<2 OR SUM(e.cents)!=0"
+        ).fetchall()
+        require(not bad, "Unbalanced or incomplete event")
+        for job in db.execute("SELECT * FROM jobs WHERE status='RECOGNIZED'"):
+            lines = dict(db.execute(
+                "SELECT account,cents FROM entries WHERE event_key=?",
+                ("recognize:" + str(job["id"]),)
+            ).fetchall())
+            require(lines == {
+                "AR": job["gross"],
+                "DRIVER_PAYABLE": -job["driver"],
+                "RETAINED_REVENUE": -job["retained"]
+            }, "Recognition allocation mismatch")
+            instruction = db.execute(
+                "SELECT * FROM payout_outbox WHERE job_id=?", (job["id"],)
+            ).fetchone()
+            require(instruction is not None, "Driver instruction missing")
+            require(instruction["cents"] == job["driver"],
+                    "Driver instruction amount mismatch")
+            paid = db.execute(
+                "SELECT COALESCE(SUM(e.cents),0) FROM entries e "
+                "JOIN events v ON v.event_key=e.event_key "
+                "WHERE v.job_id=? AND v.kind='payout' "
+                "AND e.account='DRIVER_PAYABLE'", (job["id"],)
+            ).fetchone()[0]
+            expected = job["driver"] if instruction["status"] == "SETTLED" else 0
+            require(paid == expected, "Driver settlement state mismatch")
+            if instruction["status"] == "SETTLED":
+                require(db.execute(
+                    "SELECT 1 FROM bank_refs WHERE bank_ref=?",
+                    (instruction["bank_ref"],)
+                ).fetchone() is not None, "Settlement bank reference missing")
+        missing = db.execute(
+            "SELECT v.event_key FROM events v LEFT JOIN bank_refs b "
+            "ON b.event_key=v.event_key "
+            "WHERE v.kind IN ('collection','payout','expense','capital') "
+            "AND b.event_key IS NULL"
+        ).fetchall()
+        require(not missing, "Cash event lacks bank reference")
+        snapshot = dict(db.execute(
+            "SELECT * FROM ledger_reconciliation"
+        ).fetchone())
+        require(
+            snapshot["cash_cents"] + snapshot["receivables_cents"]
+            - snapshot["driver_payable_cents"]
+            == snapshot["capital_cents"] + snapshot["owner_profit_cents"],
+            "Balance-sheet identity failed"
+        )
+        print(snapshot)
+
+if __name__ == "__main__":
+    run()
+''',
+                        "Run after imports and settlements; separately compare cash totals with the independent bank statement",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Initialize an isolated acceptance database",
+                    "action": "Save all six artifacts and execute schema.sql followed by views.sql through sqlite3.",
+                    "detail": "Set FYMC_DB to the intended local database path; validate backup and restore before live imports.",
+                },
+                {
+                    "step": 2,
+                    "title": "Prove intake and recognition replay behavior",
+                    "action": "Submit identical intake twice, release twice with identical evidence, and confirm one job and recognition event.",
+                    "detail": "Repeat with conflicting amounts and evidence; both conflicts must fail without changing committed balances.",
+                },
+                {
+                    "step": 3,
+                    "title": "Exercise concurrent monetary mutations",
+                    "action": "Run competing receipt and payout calls against the same job using independent connections.",
+                    "detail": "Confirm serialized balances, overcollection rejection, duplicate bank-reference rejection, and unchanged totals after retries.",
+                },
+                {
+                    "step": 4,
+                    "title": "Verify the external payment boundary",
+                    "action": "Interrupt a payment adapter after submission and recover using the same payout key and provider status lookup.",
+                    "detail": "Enable automated submission only when the provider's durable idempotency behavior is demonstrated; otherwise use controlled manual settlement.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Run evidence-first dispatch, claims scrubbing, and exception recovery",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "At shift opening, compare today's standing orders against payer eligibility, "
+                    "authorization limits, driver availability, and facility calendars. A recurring "
+                    "dialysis schedule is not perpetual authority to invoice every planned leg. "
+                    "Confirm cancellations and hospital admissions before creating driver commitments. "
+                    "The dispatcher owns timing and exception routing; the second full-time role "
+                    "owns credential files, evidence review, invoicing, and receivables. Contractors "
+                    "supply service capacity under arrangements assessed against actual state labor "
+                    "rules, not merely documents titled independent contractor agreements. The "
+                    "scorecard's two contractors represent modeled contractor relationships or "
+                    "capacity equivalents, not proof that two individual drivers can fulfill every "
+                    "illustrative service unit. Validate occupied hours, subcontract rights, and "
+                    "backup coverage against the selected route mix. For each completed passenger "
+                    "leg, capture scheduled and actual times, vehicle and operator identifiers, "
+                    "authorized mode, distance basis, and required rider or facility acknowledgment. "
+                    "For each specimen handoff, capture container identifier, sender, recipient, "
+                    "time, seal condition, and temperature evidence when required. GPS establishes "
+                    "location corroboration; it does not independently prove patient boarding, "
+                    "specimen integrity, or successful delivery. Close these gaps before the shift "
+                    "ends, while the responsible people can still resolve conflicting records."
+                ),
+                (
+                    "Separate claim creation from evidence approval. Where the payer actually "
+                    "requires an 837P transaction, map the contracted transport code, modifiers, "
+                    "units, service dates, provider identifiers, and authorization into its "
+                    "companion-guide requirements. Other brokers require portal uploads, trip "
+                    "files, or ordinary invoices; forcing every account through professional "
+                    "claims EDI creates avoidable rejects. Preserve transmission identifiers and "
+                    "the payer's acknowledgments. A 999 or 277CA response can establish transaction "
+                    "or claim acceptance status without establishing payment; reconcile later "
+                    "remittance and bank receipt separately. Scrub duplicate service references, "
+                    "expired authorizations, incompatible transport modes, unsupported mileage, "
+                    "and missing signatures before submission. Hold rejected records in an "
+                    "exception queue with an owner and next action, not a spreadsheet copied "
+                    "between departments. A corrected resubmission must retain its relationship "
+                    "to the original service and claim version. Never recognize the same leg "
+                    "again because its payer control number changed. Review aging by service "
+                    "cohort, submission date, and contractual due date so documentation delay "
+                    "does not masquerade as ordinary broker float. When a payer disputes a "
+                    "real service, preserve the original evidence and pursue the contract's "
+                    "correction or appeal process rather than editing history."
+                ),
+                (
+                    "Specimen safety starts with classification by the responsible shipper, not "
+                    "with a dispatcher applying a universal UN3373 sticker. Category B infectious "
+                    "substances require the applicable packaging and marking provisions of "
+                    "49 CFR 173.199; Category A material and other dangerous goods require "
+                    "different handling. Qualified staff must identify exempt specimens correctly "
+                    "rather than treating exemption as a sales shortcut. The laboratory's "
+                    "42 CFR 493.1242 specimen procedures define collection, transport, preservation, "
+                    "and acceptability expectations that should become contract fields and pickup "
+                    "checks. Where employees face occupational exposure, 29 CFR 1910.1030 "
+                    "requires the relevant exposure-control measures, training, and protective "
+                    "practices. Assign packaging responsibility explicitly and decline damaged "
+                    "or improperly prepared consignments until the shipper resolves them. For "
+                    "protected health information, determine each party's actual HIPAA role, "
+                    "execute required business associate agreements, and apply minimum-necessary "
+                    "access. The narrow conduit treatment is fact-specific and should not be "
+                    "assumed for a dispatch operation storing identifiable trip histories. Keep "
+                    "clinical messages out of general messaging channels. A lost package, "
+                    "temperature excursion, misdirected patient record, or missed STAT cutoff "
+                    "needs an immediate named escalation path and preserved timestamps, not "
+                    "a retrospective note after invoicing."
+                ),
+            ],
+            "table": {
+                "caption": "Dispatch Evidence, Claim Scrubs, and Named Exception Ownership",
+                "headers": [
+                    "Operational checkpoint requiring active ownership",
+                    "Evidence captured before the next transition",
+                    "Concrete rejection or loss mechanism",
+                    "Recovery action with accountable operating role",
+                ],
+                "rows": [
+                    [
+                        "Shift-start dispatcher validates recurring passenger service demand",
+                        "Current eligibility, dated authorization, transport mode, and facility confirmation",
+                        "Canceled dialysis appointment creates an unpaid trip and avoidable driver commitment",
+                        "Dispatcher cancels allocation and records the facility's notification timestamp",
+                    ],
+                    [
+                        "Credential coordinator verifies operator and vehicle suitability",
+                        "Current payer enrollment, insurance scope, licenses, and accessibility equipment records",
+                        "Expired credential invalidates service despite correct GPS arrival evidence",
+                        "Coordinator replaces the assignment with an already qualified capacity provider",
+                    ],
+                    [
+                        "Trip reviewer closes passenger service evidence before invoicing",
+                        "Pickup and drop-off times, distance support, and required acknowledgment",
+                        "Missing acknowledgment triggers claim rejection or later audit recovery",
+                        "Reviewer obtains authentic contemporaneous support without reconstructing invented signatures",
+                    ],
+                    [
+                        "Specimen dispatcher checks shipper classification and packaging acceptance",
+                        "Barcode identity, package condition, transport temperature requirements, and receiving cutoff",
+                        "Incorrect classification or damaged packaging creates exposure and rejected custody",
+                        "Dispatcher pauses acceptance and contacts the laboratory's designated responsible person",
+                    ],
+                    [
+                        "Billing coordinator selects the payer's actual submission rail",
+                        "Contract companion guide, approved codes, authorization mapping, and submission acknowledgment",
+                        "Unsupported EDI assumptions create rejected files and delayed collection dates",
+                        "Coordinator corrects the mapping and preserves the original service identity",
+                    ],
+                    [
+                        "Receivables owner reconciles remittance against actual deposited cash",
+                        "Payer control references, adjustment reasons, invoice allocation, and bank transaction",
+                        "Treating claim acceptance as payment overstates available driver settlement cash",
+                        "Receivables owner posts only verified deposits and follows disputed adjustments",
+                    ],
+                    [
+                        "Incident owner responds to service or information exceptions",
+                        "Original event times, affected identifiers, escalation contacts, and corrective actions",
+                        "Unreported temperature excursion or information exposure compounds operational loss",
+                        "Incident owner follows contractual reporting and applicable statutory response requirements",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before accepting the next service",
+                "body": "An attractive quoted spread does not override missing authority, unsuitable capacity, incomplete evidence design, or insufficient settlement cash.",
+                "items": [
+                    "Verify the payer's dated authorization, covered mode, unit limits, and actual submission method before scheduling.",
+                    "Verify driver credentials, vehicle capability, permitted substitution, insurance scope, and genuine backup availability.",
+                    "Verify passenger arrival evidence or specimen packaging, custody, temperature, and receiving-cutoff requirements.",
+                    "Verify available cash covers committed driver payments and operating deductions through the modeled collection delay.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Walk three service cohorts from demand screening to reconciled cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The Worked 90-Day Cohort Walk starts after contracting and credentialing, "
+                    "not on the day the founder first begins prospecting. The stated two-to-five "
+                    "month first-deal interval remains separate from this production window. "
+                    "Each month begins with 1,020 candidate service units at an illustrative "
+                    "$77,083.33 aggregate accepted billing target. Twenty candidates fail eligibility "
+                    "or capacity checks before commitment, leaving 1,000 completed billable units. "
+                    "The third month's aggregate is $77,083.34 to allocate the quarter's final "
+                    "cent correctly. A service unit can be a passenger leg or a contracted "
+                    "specimen route; it is not necessarily a unique patient or new customer. "
+                    "The blended price is a planning device, not a quoted universal rate. "
+                    "Thirty completed units per month initially fail documentation scrubs and "
+                    "are corrected before the contractual invoice cutoff. Therefore permanent "
+                    "recognized losses are zero in this clean Base bridge, while pre-service "
+                    "screening losses remain visible. Any uncorrected services, refund liability, "
+                    "or payer reduction would require an explicit adverse-case adjustment instead "
+                    "of being hidden inside collections. Keep acquisition inquiries, authorized "
+                    "service orders, performed units, and recognized invoices as four separate "
+                    "counts in the operating dashboard."
+                ),
+                (
+                    "Assume each month's recognized invoices are deposited during the following "
+                    "month, approximating a clean Net-30 cycle after timely submission. Driver "
+                    "settlements and operating deductions are paid during the service month, "
+                    "with no opening receivable or driver liability. This assumption isolates "
+                    "the working-capital effect; Net-45, delayed batch acceptance, or unpaid "
+                    "scrubs would push cash later. Monthly retained revenue is $34,687.50. "
+                    "Driver settlements are $42,395.83, $42,395.83, and $42,395.84, preserving "
+                    "the quarter's exact 55% aggregate. Monthly operating deductions total "
+                    "$20,812.50: an explicit illustrative split assigns $18,000 to recurring "
+                    "run costs and $2,812.50 to variable administration and exception handling. "
+                    "The supplied $3,500–$18,000 monthly opex range cannot describe every "
+                    "operating deduction at the Base revenue and profit levels; this bridge "
+                    "uses its upper end for recurring costs and shows the additional variable "
+                    "amount rather than concealing the mismatch. Total annual operating "
+                    "deductions are $249,750. Include paid staffing and founder service "
+                    "compensation, if applicable, inside that total rather than subtracting "
+                    "them again from the stated owner profit. Owner distributions, taxes, "
+                    "borrowing, and equipment purchases are outside this simplified cash walk."
+                ),
+                (
+                    "Month 1 consumes $63,208.33 before any collection. Starting with $65,000 "
+                    "of available working cash leaves only $1,791.67 at its close; that opening "
+                    "balance is not evidence that the same amount also funds setup purchases. "
+                    "Month 2 collects $77,083.33 and adds $13,875.00 of cash. Month 3 collects "
+                    "another $77,083.33 and adds $13,874.99 because its driver allocation "
+                    "contains the quarter's extra cent. Ending cash is $29,541.66, with "
+                    "$77,083.34 still receivable. Across ninety days, $231,250 gross billings "
+                    "produce $104,062.50 retained revenue, $62,437.50 operating deductions, "
+                    "and $41,625 owner profit. The reconciliation is exact: $41,625 profit "
+                    "minus $77,083.34 receivable growth equals negative $35,458.34 operating "
+                    "cash flow. Multiply the quarter's service economics by four to obtain "
+                    "$925,000 gross billings, $416,250 retained revenue, and $166,500 annual "
+                    "owner profit. Do not multiply the startup cash deficit by four; mature "
+                    "cohorts collect prior-period invoices. An additional half-month collection "
+                    "delay can tie up roughly $38,542 more receivables at this billing pace. "
+                    "The $15,000 startup floor therefore requires a materially smaller launch, "
+                    "faster payment terms, or separately secured working capital."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Cohort timing and accepted production volume",
+                    "Billings, retained revenue, and scrub treatment",
+                    "Collections, settlements, and operating deductions",
+                    "Profit, cumulative cash flow, and reconciliation",
+                ],
+                "rows": [
+                    [
+                        "Opening production position begins with $65,000 available working cash",
+                        "Opening receivables and recognized services both begin at zero",
+                        "Opening driver liabilities are zero; setup purchases remain outside this walk",
+                        "Opening capital is $65,000; cumulative operating cash flow starts at zero",
+                    ],
+                    [
+                        "Month 1 screens 1,020 candidates and performs 1,000 accepted service units",
+                        "$77,083.33 billed; $34,687.50 retained; thirty scrubbed units corrected; twenty pre-service losses",
+                        "$0 collected; $42,395.83 driver settlements; $18,000 recurring costs plus $2,812.50 variable costs",
+                        "$13,875 profit; cumulative cash flow negative $63,208.33; ending cash $1,791.67",
+                    ],
+                    [
+                        "Month 2 screens 1,020 candidates and performs 1,000 accepted service units",
+                        "$77,083.33 billed; $34,687.50 retained; thirty scrubbed units corrected; twenty pre-service losses",
+                        "$77,083.33 collected from Month 1; $42,395.83 drivers; $20,812.50 operating deductions",
+                        "$13,875 profit; cumulative cash flow negative $49,333.33; ending cash $15,666.67",
+                    ],
+                    [
+                        "Month 3 screens 1,020 candidates and performs 1,000 accepted service units",
+                        "$77,083.34 billed; $34,687.50 retained; thirty scrubbed units corrected; twenty pre-service losses",
+                        "$77,083.33 collected from Month 2; $42,395.84 drivers; $20,812.50 operating deductions",
+                        "$13,875 profit; cumulative cash flow negative $35,458.34; ending cash $29,541.66",
+                    ],
+                    [
+                        "Quarter totals include 3,060 candidates and 3,000 completed service units",
+                        "$231,250 billings; $104,062.50 retained; ninety corrected scrubs; sixty pre-service losses",
+                        "$154,166.66 collected; $127,187.50 drivers; $62,437.50 total operating deductions",
+                        "$41,625 profit less $77,083.34 receivable growth equals negative $35,458.34 cash flow",
+                    ],
+                    [
+                        "Annualized Base production repeats the quarter's accepted service economics four times",
+                        "$925,000 gross billings produce $416,250 retained revenue at exactly 45%",
+                        "$508,750 driver settlements plus $249,750 operating deductions reconcile annual costs",
+                        "$166,500 owner profit equals 18.0% gross margin and 40.0% retained margin",
+                    ],
+                    [
+                        "Canonical comparison preserves Conservative and Scaled staffing and contribution assumptions",
+                        "Conservative retains $112,500 from $250,000; Scaled retains $720,000 from $1,600,000",
+                        "Conservative deducts $82,500 after drivers; Scaled deducts $336,000 after drivers",
+                        "Conservative earns $30,000 with 2 FT + 2 C; Scaled earns $384,000 with 3 FT + 3 C",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A completed trip becomes durable profit only when its authority, evidence, driver liability, and bank receipt agree.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Map all nine operating plays to actual payer contracts, priced service units, authorized capacity, and named exception fallbacks.",
+        "Verify GBP ownership and real-location eligibility before launching call tracking or organic city acquisition pages.",
+        "Implement the six reference modules in an isolated database and test duplicate intake, concurrent receipts, payment replay, and restore behavior.",
+        "Connect RouteGenie or MediRoutes evidence exports and laboratory custody references without placing clinical detail in the monetary ledger.",
+        "Rebuild the ninety-day walk using actual payment terms, driver due dates, staffing costs, setup spending, and documented collection delays.",
+        "Reconcile bank cash, receivables, driver liabilities, retained revenue, and operating deductions daily before adding service commitments.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "42 CFR 431.53 — Assurance of transportation",
+            "url": "https://www.ecfr.gov/current/title-42/section-431.53",
+            "relevance": "Establishes the Medicaid state-plan transportation assurance; actual operator participation and authorization follow the applicable state and broker arrangements.",
+        },
+        {
+            "title": "45 CFR 164.502 — Uses and disclosures of protected health information",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.502",
+            "relevance": "Supports role-based information handling, minimum-necessary analysis, and business-associate treatment where the dispatch relationship requires it.",
+        },
+        {
+            "title": "45 CFR 164.504 — Uses and disclosures: organizational requirements",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
+            "relevance": "Specifies business-associate contract requirements relevant to dispatch providers maintaining or processing protected health information.",
+        },
+        {
+            "title": "49 CFR 173.199 — Category B infectious substances",
+            "url": "https://www.ecfr.gov/current/title-49/section-173.199",
+            "relevance": "Provides packaging and marking requirements for qualifying Category B specimen shipments rather than a universal rule for every medical package.",
+        },
+        {
+            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
+            "url": "https://www.ecfr.gov/current/title-29/section-1910.1030",
+            "relevance": "Defines employer exposure-control, training, protective-practice, and related duties when employees have occupational exposure.",
+        },
+        {
+            "title": "42 CFR 493.1242 — Standard: specimen submission, handling, and referral",
+            "url": "https://www.ecfr.gov/current/title-42/section-493.1242",
+            "relevance": "Requires laboratory specimen procedures that should inform contracted collection, preservation, transport, and acceptability checks.",
+        },
+        {
+            "title": "42 U.S.C. 1320a-7b(b) — Illegal remunerations",
+            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
+            "relevance": "Makes healthcare referral remuneration a concrete contracting concern when structuring acquisition fees involving federal healthcare program business.",
+        },
+        {
+            "title": "California Labor Code section 2775 — Worker classification",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2775.&lawCode=LAB",
+            "relevance": "Illustrates a state classification framework requiring analysis of the actual working relationship and applicable exceptions before using owner-operator contracts.",
+        },
+    ],
+}

@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-030-lending-and-flash-funding-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1889156,
+      "sha256": "7b63dc8f3c57489ca363857b4fd5e472e4d509b3e77054c804804ef63cdae026"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2446592,
+      "sha256": "b7b6cdcff37154c76abeb515dcfb153876a41ecbe24ed67461a9b8e505725e65"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 543606,
+      "sha256": "e319c68fef4388bcb6c646134e1573d32bf5251d818ed35caca9e2ab42293d07"
+    },
+    "book.epub": {
+      "bytes": 267606,
+      "sha256": "e72ecfd13df60f97d4705482b407da6782780d07607d282c7a9a89eaaaa0d093"
+    },
+    "art/cover.svg": {
+      "bytes": 4390,
+      "sha256": "eaa95d349edb65adf18a5709283ce24b79f41679ccd17747a4b99cb9789823a7"
+    },
+    "art/scorecard.svg": {
+      "bytes": 63905,
+      "sha256": "42f8bf11be81b7ea33b5503b484af487a53fa86cc36bfb436c196556b2e742ad"
+    },
+    "art/diag_01.svg": {
+      "bytes": 13695,
+      "sha256": "1106913577e0b0c463f69090962b5a441261ab9e243b55a301d59217f2780d14"
+    },
+    "art/diag_02.svg": {
+      "bytes": 9792,
+      "sha256": "2492de2309b55325e03c437cb7fdb5ddb93efd5e428ae34e8fbbb5b666021632"
+    },
+    "art/diag_03.svg": {
+      "bytes": 13588,
+      "sha256": "69a652d07d08d196fc60c72e3031a98751518085f7b043e38cdad683994e33bc"
+    },
+    "art/diag_04.svg": {
+      "bytes": 11216,
+      "sha256": "1365ca2a3a54ddefb8477c6610b0adf4135d8a2e5cbf486b9f6ccf61ae60030c"
+    },
+    "art/diag_05.svg": {
+      "bytes": 12050,
+      "sha256": "65381ad5f657a0d1a9cfca46b5ae401e2af5db827604a26623e2dab01d3c52bd"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12925,
+      "sha256": "1fbdd69a729ed116fa15f1ff178bca6110510abc24996a893543c6e2102803ab"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9982,
+      "sha256": "ad3b8fb50d7509ff46e58c188634c678cb6c99d394a8c5e0610412269f7b1f55"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9752,
+      "sha256": "5cb740bf579066370fc89241f0e49e62d6bdd71e195c2ddaabb089cfb5a299c2"
+    }
+  }
+}

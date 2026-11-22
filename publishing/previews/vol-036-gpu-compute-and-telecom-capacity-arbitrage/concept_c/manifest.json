@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-036-gpu-compute-and-telecom-capacity-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1944609,
+      "sha256": "0d1409bf9cf529c7ac9f36fd322e507ab73fc24fc614cf4d281b4020bca1b86a"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2514811,
+      "sha256": "e7d590b46b045413b011895da3ca7935589d088e7b2bdd133a21e6fadb2f4f4c"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 546466,
+      "sha256": "699c3c0e91acd9ab34d07b7e3208c568475ff1e5a2549296f55dd2d9659a404b"
+    },
+    "book.epub": {
+      "bytes": 276815,
+      "sha256": "443320e792fd0a24336267d128b514a6668a56ce4bbf0b25ca975ae15ccfac0d"
+    },
+    "art/cover.svg": {
+      "bytes": 4371,
+      "sha256": "a2bc55c823823444dd079a728f308710df024a57a311b0b961665f23cfc2bd22"
+    },
+    "art/scorecard.svg": {
+      "bytes": 66231,
+      "sha256": "1e047c082d3e9593a4282fbc224d53225d35f10689cd366b80ca170acf741d04"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11281,
+      "sha256": "cef9eff031e65805de1364db8c557062bc6f6e896a56555354d3ae60b572abe2"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7779,
+      "sha256": "9d887e3dd96ff086951f476cd535134fc7e4eee8c35693df0cc64f2ec1c13cee"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12235,
+      "sha256": "66badef1183fdb65bc52640da129906d9112c47ca61a88a8988682dc7bd00ca1"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9543,
+      "sha256": "20225a291912e943464d1ce6043103f02dec4e56a56323ee9adea223dcf0caa8"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10084,
+      "sha256": "406bcb5cb8aba20b056d93d6f2ae5c406af20b252eba28a310ceeca022ef004e"
+    },
+    "art/diag_06.svg": {
+      "bytes": 11189,
+      "sha256": "38c7f8d6914288bff5b32fce9478dcfb8aca25f6110ac1d842e7465accaae1ae"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9114,
+      "sha256": "53f982d4273b47031806df365879c47ff1a6b40031e35befe37d490b43def95a"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8426,
+      "sha256": "a483a598d4d68e4e284f7f2ee7674117b85fe8b0132ed64e09ec962cf1e0dea7"
+    }
+  }
+}

@@ -1,0 +1,603 @@
+from __future__ import annotations
+
+CHAPTER_2 = {
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "who-pays-gpu-compute-telecom-payment-rails",
+    "question_prompt": "Who writes the check in gpu compute & telecom capacity arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
+    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
+    "subtitle": "H100/H200/B200 Reservations, LiteLLM Metering, SIP Settlement, Stripe Prefunding, and FCC Provider Obligations",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, ranks #03 of 36 "
+        "with a 94/100 Money-to-Manpower Score. Across 15 mapped plays, buyers pay "
+        "to replace idle GPU commitments, unpredictable inference bills, carrier failures, "
+        "and fragmented provisioning with measurable service. The economic buyer is "
+        "usually a founder, infrastructure leader, agency principal, or communications "
+        "operator; treasury controls settlement. Conservative, Base, and Scaled annual "
+        "owner profits are $27,000, $189,000, and $456,000 against gross billings of "
+        "$150,000, $675,000, and $1,200,000. The scorecard retains 65% after upstream "
+        "capacity costs. This chapter separates budget authority from technical enthusiasm, "
+        "compares eight settlement rails, and establishes prefunding, fee evidence, credit "
+        "limits, and lawful service suspension before irreversible capacity is purchased."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$150,000",
+            "context": "Annual gross billings; $97,500 retained contribution at 65%",
+            "note": "18% gross-basis net margin; $27,000 owner profit; 1 FT + 2 C; 27.69% retained-basis margin",
+        },
+        {
+            "label": "Base",
+            "value": "$675,000",
+            "context": "Annual gross billings; $438,750 retained contribution at 65%",
+            "note": "28.0% gross-basis net margin; $189,000 owner profit; 1 FT + 2 C; 43.08% retained-basis margin",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,200,000",
+            "context": "Annual gross billings; $780,000 retained contribution at 65%",
+            "note": "38% gross-basis net margin; $456,000 owner profit; 2 FT + 3 C; 58.46% retained-basis margin",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Identify the buyer, the budget owner, and the measurable loss",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The check writer buys relief from a measurable operating loss, not an abstract capacity spread. "
+                    "For an AI application founder, the acute pain is a product launch whose inference cost exceeds "
+                    "subscription receipts. For an infrastructure director, it is a reserved cluster sitting idle while "
+                    "another team queues urgent jobs. For a contact-center operator, it is rejected calls, unstable "
+                    "termination quality, or a carrier deposit that absorbs working capital. Quote an accepted unit "
+                    "before quoting savings: GPU device-hour with a named configuration, model-specific input and output "
+                    "tokens, answered SIP minutes by destination, or registered messaging traffic with carrier fees "
+                    "itemized. An illustrative H100 purchase at $1.40 per device-hour and sale at $2.00 leaves $0.60 "
+                    "before orchestration, idle inventory, support, and settlement expense. At 1,000 sold hours, that "
+                    "is $600, not $2,000 of owner earnings. This transaction has different unit economics from the "
+                    "portfolio scorecard and must not replace its 65% retained assumption. Ask the buyer which existing "
+                    "invoice or missed revenue event the purchase replaces. If they cannot identify either, sell a "
+                    "small paid benchmark rather than committing a month of bare metal. A benchmark must reproduce "
+                    "their workload, latency target, isolation requirement, and real invoice dimensions."
+                ),
+                (
+                    "Separate the technical champion, contractual signer, budget owner, and person authorized to release "
+                    "cash. A developer may possess an API key without authority to accept a twelve-month minimum. "
+                    "Procurement may issue a purchase order while accounts payable still lacks the vendor record "
+                    "needed to remit funds. Obtain the legal entity name, billing address, purchase-order reference, "
+                    "signatory authority, tax documentation, remittance contact, and dispute address before reserving "
+                    "capacity. For escrow, identify both the depositor and the person empowered to accept deliverables; "
+                    "their release authority belongs in the escrow instructions. A founder paying by card should "
+                    "authorize recurring replenishment and its maximum amount explicitly. An enterprise paying by wire "
+                    "should confirm beneficiary details through a previously verified callback channel, never solely "
+                    "through an emailed bank-change notice. Counterparty screening combines business-registration records, "
+                    "domain ownership signals, expected workloads, sanctions screening where applicable, and upstream "
+                    "acceptable-use restrictions. These controls support commercial risk management; they do not imply "
+                    "every compute reseller is a regulated bank. Reject requests to conceal the end customer from "
+                    "a supplier when supplier terms require disclosure. A genuine buyer can explain who uses the "
+                    "service, who approves charges, and which entity bears payment responsibility when an affiliate "
+                    "or subcontractor consumes the capacity."
+                ),
+                (
+                    "Use a fifteen-play operating map without pretending every play has identical buyers or margins. "
+                    "The first thirteen are H100 reservation slicing, H200 reservation slicing, B200 reservation slicing, "
+                    "batch GPU backfill, managed fine-tuning windows, dedicated private inference, multi-provider token "
+                    "routing, regional inference overflow, wholesale SIP termination, inbound DID bundles, registered "
+                    "10DLC messaging, authorized IPv4 leasing, and managed capacity procurement. The remaining two are "
+                    "cloud_ai_startup_credit_aggregation_arbitrage and agency_ad_spend_card_multiplier_rebate_cycling. "
+                    "This is the chapter's operational mapping, not a claim that thirteen additional canonical identifiers "
+                    "were supplied. For each play, record a paid unit, the person owning its budget, a measurable "
+                    "acceptance condition, and a fallback route. A 100,000-minute SIP order at $0.012 produces $1,200 "
+                    "in billings; termination at $0.008 consumes $800 before number rental, surcharges, fraud, and "
+                    "support. If a route deteriorates, move only permitted traffic to a qualified alternative and "
+                    "apply a contractual spend ceiling. A 1,000-hour GPU reservation sold for only 600 hours can "
+                    "lose money despite a positive quoted hourly spread. Release uncommitted inventory, shorten "
+                    "reservation duration, or price the reservation itself. Capacity access is the product only "
+                    "when the operator has contractual resale rights; otherwise, sell authorized management services "
+                    "against the customer's own supplier account."
+                ),
+            ],
+            "table": {
+                "caption": "Seven Buyer Groups, Budget Authority, and Evidence Required Before Capacity Purchase",
+                "headers": [
+                    "Buyer and immediate operating pain",
+                    "Budget and settlement authority",
+                    "Accepted paid unit and evidence",
+                    "Fallback when authority or demand fails",
+                ],
+                "rows": [
+                    [
+                        "AI SaaS founder facing inference costs above subscription receipts",
+                        "Founder signs within documented corporate spending authority and limits",
+                        "Model-specific token ledger reconciled against application request identifiers",
+                        "Run a prepaid benchmark before accepting recurring capacity commitments",
+                    ],
+                    [
+                        "Infrastructure director carrying idle H100 and H200 reservation expense",
+                        "Procurement signs while treasury confirms the approved payment schedule",
+                        "Reserved device-hours with configuration, availability, and isolation evidence",
+                        "Offer shorter reservation windows with clearly priced cancellation exposure",
+                    ],
+                    [
+                        "Research team requiring scheduled fine-tuning on named GPU configurations",
+                        "Department budget owner approves spend under institutional purchasing rules",
+                        "Completed training window supported by job logs and checkpoints",
+                        "Use smaller paid trials without promising identical benchmark performance",
+                    ],
+                    [
+                        "Contact-center operator losing answered calls through unstable termination routes",
+                        "Communications executive contracts and finance authorizes carrier settlement funds",
+                        "Rated call-detail records showing destination, duration, and route selection",
+                        "Shift permitted traffic to tested alternative carriers within limits",
+                    ],
+                    [
+                        "Messaging platform suffering blocked campaigns and unpredictable carrier surcharges",
+                        "Platform principal funds campaigns and accepts documented messaging charges",
+                        "Registered campaign traffic matched to delivery events and surcharges",
+                        "Pause affected campaigns rather than rotate identities around filtering",
+                    ],
+                    [
+                        "Hosting operator requiring legitimate address space and documented routing rights",
+                        "Network owner approves lease terms and finance verifies beneficiary",
+                        "Authorized address lease with routing authorization and abuse ownership",
+                        "Withdraw disputed announcements and obtain replacement authorized address space",
+                    ],
+                    [
+                        "Agency principal seeking permitted rebates without financing client advertising",
+                        "Client authorizes spend while agency finance controls prefunded limits",
+                        "Client-approved advertising invoices reconciled with contractual rebate allocation terms",
+                        "Move advertising to client-direct billing when funding becomes uncertain",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Select settlement rails that match reversibility and delivery",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Prefunding changes the exposure clock, but a dashboard balance is not proof of final cash. "
+                    "Stripe checkout can confirm a successful card payment while chargeback exposure and processor "
+                    "reserves remain. ACH debit can produce a return after service has already consumed upstream "
+                    "capacity. A wire credited to the correct account generally offers stronger settlement certainty, "
+                    "although fraud investigations, sanctions issues, and recall requests still require handling. Track "
+                    "three states separately: payment initiated, funds available, and risk reserve released. Create "
+                    "customer spendable credit only under an explicit policy for the particular rail and buyer. "
+                    "For example, a $5,000 card-funded account with a $1,000 internal risk reserve permits $4,000 "
+                    "of initial service, not an immediate $5,000 noncancelable supplier purchase. At $200 hourly "
+                    "burn, that spendable balance covers twenty hours. Stop admitting new jobs before it reaches "
+                    "zero, while reserving enough credit for jobs already running. Disclose this balance policy "
+                    "before payment. Treat prepaid service balances as customer contract liabilities until earned, "
+                    "with documented refund and expiration rules where permitted. Keep them closed-loop service "
+                    "credits rather than transferable cash equivalents; transferability, cash redemption, and holding "
+                    "money for third parties require a separate payments-law analysis. Never describe a processor's "
+                    "ordinary merchant balance as an independent escrow account."
+                ),
+                (
+                    "Compare settlement rails against the same delivery obligation instead of choosing the cheapest "
+                    "headline fee. Wire suits larger verified reservations; ACH can suit established business customers; "
+                    "platform checkout accelerates small prepaid purchases. Retainers and milestone holds are contract "
+                    "structures layered over a payment rail, while factoring finances an eligible receivable after "
+                    "it exists. Escrow is useful when a buyer needs independent custody before a defined release "
+                    "event, but hourly compute cannot tolerate an acceptance test left open for weeks. Specify "
+                    "the benchmark, evidence source, objection period, partial-release method, refund allocation, and "
+                    "dispute procedure before either party deposits funds. Statutory disbursement is not an ordinary "
+                    "GPU payment option: a telecom support program pays only eligible participants and services "
+                    "under its governing rules. Do not sell a speculative program reimbursement as committed cash. "
+                    "For an illustrative $20,000 reservation, $5,000 released after provisioning and $15,000 after "
+                    "a specified burn-in test reduces ambiguity but still leaves supplier exposure before the second "
+                    "release. Match upstream commitment dates to released funds, or finance the gap explicitly. "
+                    "A customer-funded escrow balance cannot pay the supplier until its instructions permit release. "
+                    "The operator must price that timing difference rather than quietly borrowing against customer "
+                    "money that remains restricted."
+                ),
+                (
+                    "Credit screening should translate evidence into a dollar limit, not a decorative risk score. "
+                    "Verify the buyer's entity and business purpose, request trade references for material postpaid "
+                    "exposure, inspect payment history, and investigate mismatches between the contracting party and "
+                    "the payer. A bank letter alone does not establish willingness to pay disputed usage. Define "
+                    "unsecured exposure as delivered unpaid service plus unavoidable supplier commitments, less eligible "
+                    "cash collateral actually available to cover those obligations. If delivered usage is $8,000, "
+                    "remaining unavoidable commitments are $4,000, and usable security is $5,000, exposure is $7,000. "
+                    "A $6,000 limit therefore requires additional funding or reduced new consumption. Avoid double "
+                    "counting deposits already applied to invoices. For new counterparties, begin with prefunded "
+                    "service and enlarge limits only after observed settlement performance. Obtain consent for any "
+                    "credit inquiry that requires it and collect only necessary verification data. Bind account "
+                    "ownership changes to renewed verification, especially before raising throughput. The contract "
+                    "should permit suspension of new work for exhausted credit, suspected account compromise, or "
+                    "prohibited traffic, with notice and emergency handling appropriate to the service. Retain enough "
+                    "operational capacity to export customer artifacts safely rather than using their data as "
+                    "collection leverage."
+                ),
+            ],
+            "table": {
+                "caption": "Eight Settlement Rails and Structures Compared Against Irreversible Capacity Exposure",
+                "headers": [
+                    "Rail or settlement structure",
+                    "Authority and usable release evidence",
+                    "Exposure and fee protection mechanics",
+                    "Best deployment and concrete failure fallback",
+                ],
+                "rows": [
+                    [
+                        "Bank wire for verified business reservation purchases and deposits",
+                        "Treasury verifies beneficiary independently and bank confirms credited funds",
+                        "Bind reserved inventory to credited funds and documented cancellation terms",
+                        "Delay supplier commitment when beneficiary verification or receipt remains unresolved",
+                    ],
+                    [
+                        "Independent escrow for negotiated provisioning and benchmark acceptance obligations",
+                        "Named acceptance authority releases funds under signed objective instructions",
+                        "Specify partial releases, dispute deadlines, refund allocation, and custody fees",
+                        "Reduce provisioning scope when release timing cannot fund supplier obligations",
+                    ],
+                    [
+                        "ACH credit or authorized business debit for repeat purchasers",
+                        "Match bank settlement records with authorization and customer invoice references",
+                        "Price return exposure and maintain limits through applicable return periods",
+                        "Require wire prefunding after returns or inconsistent payer identity evidence",
+                    ],
+                    [
+                        "Service retainer funded through a separately identified payment rail",
+                        "Authorized signer accepts reservation scope and finance funds scheduled replenishment",
+                        "Separate earned reservation fees from refundable unused service credit balances",
+                        "Reduce reserved capacity when replenishment misses the contractual payment date",
+                    ],
+                    [
+                        "Statutory program disbursement for eligible supported telecommunications services only",
+                        "Program administrator approves eligible claims under governing support program rules",
+                        "Preserve eligibility, service, and invoice evidence without assuming reimbursement timing",
+                        "Exclude anticipated reimbursements from available working capital until actually received",
+                    ],
+                    [
+                        "Platform checkout using Stripe cards or other enabled payment methods",
+                        "Authenticated customer accepts pricing and processor reports the payment lifecycle",
+                        "Maintain dispute reserves and reconcile webhooks against authoritative payment records",
+                        "Throttle new consumption when disputes exceed the approved risk allowance",
+                    ],
+                    [
+                        "Receivables factoring against assignable earned and accepted customer invoices",
+                        "Factor approves debtor and assignment while customer receives required notice",
+                        "Model fees, reserves, dilution, recourse, and customer setoff rights explicitly",
+                        "Return to prefunding when invoices fail verification or assignment restrictions",
+                    ],
+                    [
+                        "Milestone holds with payment released against narrowly defined delivery evidence",
+                        "Named buyer representative accepts milestones within the agreed review period",
+                        "Limit retained amounts and distinguish service credits from withheld principal",
+                        "Pause subsequent milestones when earlier undisputed amounts remain contractually overdue",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify Authority, Cash, Capacity, and Exposure Before Activation",
+                "body": "Release service only after these four checks produce retained evidence tied to the customer account.",
+                "items": [
+                    "Match the contracting entity, authorized signer, payer, and permitted end customer; resolve affiliate-payment exceptions in writing.",
+                    "Confirm usable funds for the selected rail, subtract restricted escrow and dispute reserves, and establish the spendable balance.",
+                    "Verify supplier resale rights, named hardware or carrier service, available inventory, and upstream cancellation exposure.",
+                    "Simulate wallet exhaustion with running jobs and live calls; confirm that admission limits prevent uncontrolled new commitments.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Protect the fee and reconcile gross billings to owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Reconcile every proposal to the supplied Formula v2.0 rather than borrowing a favorable margin "
+                    "from one transaction. Conservative gross billings are $150,000; upstream capacity costs at 35% "
+                    "are $52,500, leaving $97,500 retained contribution. Subtract $70,500 of remaining modeled costs "
+                    "to obtain $27,000 owner profit: 18% of gross billings and 27.69% of retained contribution. "
+                    "Base gross billings of $675,000 less $236,250 upstream costs leave $438,750; remaining costs "
+                    "of $249,750 produce $189,000 profit, or 28.0% gross-basis and 43.08% retained-basis margins. "
+                    "Scaled billings of $1,200,000 less $420,000 upstream costs leave $780,000; remaining costs "
+                    "of $324,000 produce $456,000 profit, or 38% and 58.46%, respectively. These remaining-cost "
+                    "figures are algebraic residuals, not an invented expense allocation. The supplied $2,000–$14,000 "
+                    "monthly operating-expense range cannot describe every residual at Base and Scaled; obtain its "
+                    "scope before using it as a total-cost ceiling. Conservative and Base use 1 FT + 2 C; "
+                    "Scaled uses 2 FT + 3 C. Under ASC 606, principal-versus-agent presentation depends on "
+                    "control of the specified service, not merely collecting the invoice. Use the supplied 65% "
+                    "retained basis for scorecard comparison without automatically treating gross collections as recognized "
+                    "operator revenue."
+                ),
+                (
+                    "Fee protection starts with delivering a service the customer continues to need. A buyer can "
+                    "purchase hardware access elsewhere; they cannot instantly reproduce tested routing, normalized "
+                    "metering, reserved inventory management, and documented carrier operations. Contract for those "
+                    "deliverables explicitly. Separate capacity charges, orchestration fees, managed-service retainers, and "
+                    "permitted procurement commissions so a payment dispute does not erase the entire invoice. A "
+                    "narrow introduction-protection clause should identify the introduced supplier or customer, covered "
+                    "transaction, duration, fee trigger, reporting obligation, and existing-relationship exceptions. Its "
+                    "enforceability depends on the governing law and actual facts; avoid punitive formulas disconnected "
+                    "from the earned fee. Obtain supplier acknowledgment when their settlement process must remit "
+                    "your commission. A signed introduction email is useful evidence but does not create payment "
+                    "authority by itself. Attach an order schedule defining device configuration, token tokenizer, "
+                    "SIP billing increments, destination rates, taxes, carrier surcharges, and service-credit calculations. "
+                    "Record tariff or rate-deck versions and their effective timestamps before usage begins. Preserve "
+                    "signed acceptance, metering exports, and invoice delivery records in an access-controlled archive. "
+                    "If the customer objects to one rated destination, isolate that amount while pursuing undisputed "
+                    "charges under the contract. Do not threaten network abuse, data withholding, or deceptive "
+                    "routing to collect an invoice."
+                ),
+                (
+                    "The agency_ad_spend_card_multiplier_rebate_cycling play concerns genuine client-authorized advertising "
+                    "spend, not synthetic purchases or a way to manufacture compute revenue. Assume an eligible "
+                    "agency arrangement processes $100,000 of approved monthly advertising and earns 2% cash-equivalent "
+                    "rewards plus a contract-permitted 0.5% volume rebate. That is $2,500 before deductions. If "
+                    "incremental processing costs are $700, financing costs are $600, and the client receives "
+                    "$800 under the agency agreement, the residual is $400 before agency labor and taxes. "
+                    "If financing doubles, the residual becomes negative $200. Check reward-category exclusions, "
+                    "merchant acceptance terms, issuer limits, rebate clawbacks, client ownership of benefits, and "
+                    "payment timing before approving the arrangement. Value points at a defensible realized redemption "
+                    "amount, not a promotional travel valuation. The client's $100,000 media purchase is underlying "
+                    "client spend, not automatically agency revenue or GPU billings. Keep this example outside "
+                    "the canonical annual scenarios unless the scorecard explicitly incorporates its net economics. "
+                    "Require client prefunding or approved agency credit terms, and never increase advertising solely "
+                    "to chase rewards. The fallback is client-direct billing or prefunded approved agency terms; "
+                    "stop rewards-dependent spending immediately when permitted economics deteriorate. Preserve campaign "
+                    "authorization, invoices, card statements, and the agreed allocation of every rebate."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Annual Waterfall and Contractual Fee-Protection Evidence",
+                "headers": [
+                    "Scenario or control being reconciled",
+                    "Gross billing and retained contribution treatment",
+                    "Cost or exposure calculation to preserve",
+                    "Owner economics or required collection evidence",
+                ],
+                "rows": [
+                    [
+                        "Conservative case operated by one full-time person and two contractors",
+                        "$150,000 gross billings yield $97,500 retained contribution at 65%",
+                        "$52,500 upstream expense plus $70,500 remaining modeled annual costs",
+                        "$27,000 owner profit equals 18% gross-basis and 27.69% retained-basis",
+                    ],
+                    [
+                        "Base case operated by one full-time person and two contractors",
+                        "$675,000 gross billings yield $438,750 retained contribution at 65%",
+                        "$236,250 upstream expense plus $249,750 remaining modeled annual costs",
+                        "$189,000 owner profit equals 28.0% gross-basis and 43.08% retained-basis",
+                    ],
+                    [
+                        "Scaled case operated by two full-time people and three contractors",
+                        "$1,200,000 gross billings yield $780,000 retained contribution at 65%",
+                        "$420,000 upstream expense plus $324,000 remaining modeled annual costs",
+                        "$456,000 owner profit equals 38% gross-basis and 58.46% retained-basis",
+                    ],
+                    [
+                        "Principal-versus-agent assessment applied separately to each specified customer service",
+                        "Present gross revenue only when the applicable control analysis supports it",
+                        "Avoid deducting upstream costs twice from already net-presented service revenue",
+                        "Retain accounting memorandum connecting contract promises with actual delivery control",
+                    ],
+                    [
+                        "Introduced supplier commission protected through a narrowly drafted agreement",
+                        "Identify covered transactions and exclude documented preexisting customer supplier relationships",
+                        "Calculate commission using agreed eligible transactions and disclosed settlement deductions",
+                        "Preserve signed acknowledgment, transaction reports, invoices, and actual remittance records",
+                    ],
+                    [
+                        "Agency rewards example based on genuine authorized monthly advertising",
+                        "$100,000 client media spend creates $2,500 illustrative gross reward benefits",
+                        "$700 processing plus $600 financing plus $800 client allocation",
+                        "$400 residual precedes labor and taxes; doubled financing produces loss",
+                    ],
+                    [
+                        "Disputed usage isolated without rewriting the entire monthly service invoice",
+                        "Separate challenged destination charges from all other accepted customer usage",
+                        "Apply documented service credits without silently changing underlying metered quantities",
+                        "Collect undisputed balances using contract terms and preserved delivery evidence",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect Spread Through Evidence Rather Than Lock-In",
+                "body": "Veteran operators preserve optionality while making the purchased service and earned fee easy to verify.",
+                "items": [
+                    "Version every SIP rate deck with an effective timestamp; attach the applicable version identifier to each rated call record.",
+                    "Quote H100, H200, and B200 capacity by actual configuration and tested workload throughput, not by model name alone.",
+                    "Keep commission acknowledgments separate from supplier introductions so remittance responsibility survives personnel changes.",
+                    "Calculate card-reward economics after financing, clawbacks, processing, and client allocation; disable the strategy before its residual turns negative.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Connect entitlement, metering, and suspension to the cash ledger",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "For cloud_ai_startup_credit_aggregation_arbitrage, form Delaware or Wyoming entities only for genuine "
+                    "standalone vertical SaaS businesses, not duplicate identities designed to evade program limits. "
+                    "AWS Activate, Microsoft for Startups and Azure founder programs, Google for Startups Cloud, "
+                    "Cloudflare, and startup offers from OpenAI or Anthropic have distinct eligibility, referral, "
+                    "expiration, and permitted-use terms. The supplied $25,000–$350,000 grant range and $50,000–$350,000 "
+                    "play label are planning envelopes, not available balances or promises of stackable awards. "
+                    "Verify each current offer and approved account separately. An illustrative $50,000 approved "
+                    "credit used against eligible $5,000 monthly charges lasts ten months only if expiration "
+                    "and service restrictions allow it. A genuine extraction SaaS earning $10,000 monthly with "
+                    "$200–$1,000 remaining cash delivery costs can show 90–98% cash delivery margin while eligible "
+                    "compute is covered; that excludes labor, taxes, acquisition, and replacement compute costs. "
+                    "Never label it owner net margin. Sell the application outcome, never raw API keys or "
+                    "unapproved credit transfers. Use authorized data sources and permitted collection methods. Track "
+                    "grant depletion beside paid demand, and price renewals against unsubsidized costs. Maintain "
+                    "tested local open-weight Llama or DeepSeek deployments through vLLM where licensing and hardware "
+                    "fit; warm capacity and regression tests, rather than a model name alone, determine migration "
+                    "continuity."
+                ),
+                (
+                    "Make the consumption ledger independently reconstructable. LiteLLM can route inference across approved "
+                    "providers, but record request identifier, customer, model revision, tokenizer basis, input tokens, "
+                    "output tokens, retry disposition, and billed price. vLLM serving metrics and NVIDIA DCGM "
+                    "telemetry support operations; GPU utilization percentage alone is not a customer invoice. For "
+                    "device-hour products, bill the contracted allocation interval, excluding only the downtime or "
+                    "credits actually promised. Reserve maximum expected job cost before admission and reconcile "
+                    "actual consumption afterward. If a job can consume $120 and the wallet holds $100, "
+                    "reject it, shorten it with customer authorization, or obtain more funds before starting. "
+                    "For SIP, rate call-detail records with destination normalization, rounding increments, connected duration, "
+                    "and concurrency caps. For messaging, reconcile provider-accepted segments, delivery events, campaign "
+                    "fees, and carrier surcharges under the agreed charging rules. Stripe webhooks require signature "
+                    "verification, idempotent processing, and reconciliation against the processor's records so a replay "
+                    "cannot mint credit twice. Keep immutable accounting events with correcting entries rather than "
+                    "editing historical usage silently. Enterprise zero-data-retention commitments require provider eligibility "
+                    "checks and payload logging disabled throughout the path; retain only contractually permitted "
+                    "billing metadata. Separate tenants through appropriate GPU, container, network, storage, and credential "
+                    "boundaries, then test those boundaries."
+                ),
+                (
+                    "Telecom delivery requires role-specific obligations before automation can safely provision service. Determine "
+                    "whether the business is a voice service provider, intermediate provider, interconnected VoIP provider, "
+                    "reseller, or messaging software vendor under the applicable rule. STIR/SHAKEN implementation and "
+                    "Robocall Mitigation Database duties follow the covered role and current FCC requirements; buying "
+                    "an upstream carrier connection does not automatically discharge them. Register applicable 10DLC "
+                    "brands and campaigns through the carrier ecosystem, while distinguishing those contractual requirements "
+                    "from the TCPA and FCC calling rules. Evaluate FCC Form 499-A registration and reporting "
+                    "under the service classification and filing instructions; a contribution exemption does not "
+                    "automatically eliminate reporting. Screen workloads and traffic against supplier acceptable-use terms, "
+                    "including prohibited mining, unlawful calls, and identity misrepresentation. An automated least-cost "
+                    "router must optimize only among authorized, quality-qualified routes; never bypass blocking through "
+                    "caller-ID manipulation or campaign identity rotation. Run a daily close joining customer payments, "
+                    "earned usage, unused credit, supplier accruals, refunds, disputes, and restricted reserves. Investigate "
+                    "breaks before increasing throughput. The minimum operating package is a signed order, verified "
+                    "payment authority, funded exposure limit, reproducible meter, qualified fallback, and tested suspension "
+                    "path. These controls turn capacity trading into a service business whose cash conversion "
+                    "survives both customer disputes and supplier repricing."
+                ),
+            ],
+            "table": {
+                "caption": "Meter-to-Cash Controls for Credits, Inference, GPU Reservations, and Telecom Traffic",
+                "headers": [
+                    "Operating surface and charged unit",
+                    "Evidence captured before service activation",
+                    "Reconciliation and customer fee protection",
+                    "Failure response preserving permitted service boundaries",
+                ],
+                "rows": [
+                    [
+                        "Startup grant funded SaaS using eligible cloud service consumption",
+                        "Approved program account, genuine entity, expiration date, and service eligibility",
+                        "Match grant deductions to supplier invoices without recording grants as sales",
+                        "Switch to funded permitted compute before usable grant balances expire",
+                    ],
+                    [
+                        "Multi-provider inference billed through model-specific input and output tokens",
+                        "Approved provider route, model revision, price schedule, and retention terms",
+                        "Join request identifiers to tokenizer counts and duplicate retry treatment",
+                        "Route to tested permitted alternatives within customer latency and budget",
+                    ],
+                    [
+                        "Reserved H100, H200, or B200 capacity sold by allocation interval",
+                        "Hardware configuration, isolation method, reservation rights, and available supplier inventory",
+                        "Reconcile allocation intervals with scheduler events and contractual downtime credits",
+                        "Stop new allocations when credit cannot cover already admitted workloads",
+                    ],
+                    [
+                        "Wholesale SIP traffic billed using destination-specific answered call minutes",
+                        "Verified customer role, permitted traffic, destination limits, and carrier terms",
+                        "Match call-detail records with versioned rate decks and rounding increments",
+                        "Suspend prohibited traffic while routing legitimate calls through qualified alternatives",
+                    ],
+                    [
+                        "Registered 10DLC messaging charged by agreed segments and carrier fees",
+                        "Verified brand, applicable campaign registration, permitted content, and sender authority",
+                        "Reconcile accepted segments, carrier charges, delivery events, and campaign fees",
+                        "Pause rejected campaigns rather than bypass filtering through identity rotation",
+                    ],
+                    [
+                        "Customer service wallet funded through approved merchant payment methods",
+                        "Verified payer, accepted balance terms, risk reserve, and authenticated payment",
+                        "Reconcile deposits, earned charges, refunds, disputes, and unused service liabilities",
+                        "Freeze suspicious replenishment and preserve an auditable customer balance history",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Bind the commercial parties",
+                    "action": "Collect entity, signer, payer, end-user, purchase-order, and remittance details.",
+                    "detail": "Attach supplier resale permissions, acceptable-use terms, service classification, and the named person authorized to accept delivery.",
+                },
+                {
+                    "step": 2,
+                    "title": "Fund the exposure limit",
+                    "action": "Select the settlement rail and calculate spendable funds after restrictions and reserves.",
+                    "detail": "Exclude unreleased escrow, anticipated grants, speculative reimbursements, and unearned card rewards from usable supplier funding.",
+                },
+                {
+                    "step": 3,
+                    "title": "Test admission and metering",
+                    "action": "Run a paid benchmark with signed prices, reproducible usage records, and a wallet-exhaustion test.",
+                    "detail": "Verify idempotent payment posting, maximum job-cost reservation, telecom destination caps, and the agreed treatment of retries or failed delivery.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close cash and earned service daily",
+                    "action": "Reconcile payments, consumption, supplier accruals, refunds, disputes, and customer liabilities.",
+                    "detail": "Investigate unmatched events before expanding limits; execute the tested fallback or suspend new consumption when funding or service conditions fail.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The spread belongs to the operator only after authorized demand, earned service, and usable cash reconcile.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create a buyer-authority record identifying the legal customer, technical champion, authorized signer, budget owner, payer, and acceptance representative.",
+        "Choose one of the eight settlement structures and document release evidence, reversibility, reserves, refund treatment, and supplier funding dates.",
+        "Rebuild all three scorecard waterfalls with 65% retained contribution and the exact $27,000, $189,000, and $456,000 annual owner profits.",
+        "Attach configuration-specific GPU pricing, model-specific token prices, versioned SIP rate decks, and messaging surcharges to signed customer orders.",
+        "Verify startup-credit eligibility and agency-reward permissions independently; exclude client media spend and grant face values from operator sales.",
+        "Test metering reconstruction, tenant isolation, qualified route failover, grant depletion response, and suspension before a wallet can fund uncontrolled exposure.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 CFR § 64.6301 — Caller ID authentication",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
+            "relevance": "Determine applicable caller-ID authentication duties from the provider's actual role and covered network operations before enabling voice traffic.",
+        },
+        {
+            "title": "47 CFR § 64.6305 — Robocall mitigation and certification",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
+            "relevance": "Evaluate covered-provider mitigation, certification, database, and traffic-acceptance requirements rather than assuming an upstream carrier covers every obligation.",
+        },
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Assess calling and messaging restrictions independently of carrier campaign registration and contractual traffic permissions.",
+        },
+        {
+            "title": "47 CFR § 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Translate applicable calling restrictions and consent-related duties into customer onboarding, traffic controls, and complaint response.",
+        },
+        {
+            "title": "47 CFR § 54.706 — Contributions",
+            "url": "https://www.ecfr.gov/current/title-47/section-54.706",
+            "relevance": "Determine whether the offered telecommunications services and provider classification create universal service contribution obligations.",
+        },
+        {
+            "title": "47 CFR § 54.711 — Contributor reporting requirements",
+            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
+            "relevance": "Evaluate reporting duties alongside current FCC Form 499 instructions rather than treating a contribution exemption as a universal filing exemption.",
+        },
+        {
+            "title": "47 CFR § 54.514 — Payment for discounted services",
+            "url": "https://www.ecfr.gov/current/title-47/section-54.514",
+            "relevance": "Illustrates why program-based telecommunications disbursement requires eligible services, parties, and payment procedures instead of ordinary merchant checkout.",
+        },
+        {
+            "title": "31 CFR § 1010.100(ff) — Money services business definitions",
+            "url": "https://www.ecfr.gov/current/title-31/section-1010.100",
+            "relevance": "Assess the specific wallet and funds-flow design before adding transfers, redemption, or third-party money movement; a service-credit label alone does not decide classification.",
+        },
+    ],
+}

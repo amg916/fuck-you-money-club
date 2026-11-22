@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-035-subject-to-and-wraparound-note-arbitrage",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1982361,
+      "sha256": "46c528ad25e28a30baeaefc1dd371ea7f6bc528959d49dfc22918fed241ce8bf"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2582206,
+      "sha256": "29332375ba41bae373d14995599840b3f9a6e23bb3bb3ec2f79e08222aed30a7"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 544522,
+      "sha256": "e9e4f548e52d244c9a68d8595cdb3ff11f91530dbee284b77656eeb7bc38dab4"
+    },
+    "book.epub": {
+      "bytes": 258257,
+      "sha256": "6fbc77e970884c1244a9facdc3cd41f5e83e28d6c6182b836da81a3379174467"
+    },
+    "art/cover.svg": {
+      "bytes": 4261,
+      "sha256": "edb30735d20e9bf450e7d44223f2607010fd4678906847c0ef47cf471983354e"
+    },
+    "art/scorecard.svg": {
+      "bytes": 89045,
+      "sha256": "e9da787a52b0e06583fce4bba727d0931f2a62030304a961cfa2ad0f4f61b8d2"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11672,
+      "sha256": "e4b235c0ed9b3f790a8f72d55fba0e1d3549d88d50788fc07a75957694b1dfbb"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7959,
+      "sha256": "53a02c196163fdc116aa1520c5a8e77d8ba3cf114419942304553f29bfe12490"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12790,
+      "sha256": "2aaf541fc63d12ac0e7d4e29738bd075ac7983a1558f6c76139eff1ee7ec0191"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9598,
+      "sha256": "13d82a2712ca7b33b6f36641b167ac9eb7a9b7ff548e827a95f033ad610b0a74"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10405,
+      "sha256": "4211a28090bd4d69de57e74a8cb12b9cfcf8b03d801136287194c9a8d22f6edd"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13348,
+      "sha256": "09d66aa5f7de9bb20d3dcdfd9b0c84a0af84d2cf770ac4a3148670ae0193c66e"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9697,
+      "sha256": "e8948d2b67567cbb3b33835cbbde16bddb30c45fd28598f980db2582f11abc78"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9164,
+      "sha256": "34209389adf68ad29245e02540a5c932c894c05ca1ba2ef7cd7638f860395194"
+    }
+  }
+}

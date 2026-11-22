@@ -2975,6 +2975,393 @@ PLAY_DEFINITIONS = {
             "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership",
         }],
     },
+    'transactional_double_close_flash_funding': {'id': 'transactional_double_close_flash_funding',
+ 'track_id': 'track_1',
+ 'name': '24-to-72-Hour Escrow-Locked Transactional ("Flash") Double-Close Funding',
+ 'mechanism': 'Fund the A->B acquisition only after the title agent independently verifies '
+              'cleared, unconditional end-buyer B->C funds in escrow and an enforceable closing '
+              'waterfall. Target a 1.0%–2.5% earned funding fee per 1–3 day turn; closing delays, '
+              'fraud and legal restrictions can impair returns or principal.',
+ 'inputs': ['Executed A->B and B->C purchase contracts, title commitment and independently '
+            'verified settlement-agent credentials',
+            'Cleared end-buyer escrow funds, written disbursement conditions and a reconciled '
+            'same-transaction payoff waterfall',
+            'Commercial-purpose funding agreement reviewed for applicable licensing, usury and '
+            'escrow requirements'],
+ 'workflow': ['1. Underwrite both contracts, title exceptions, end-buyer closing conditions and '
+              "the settlement agent's authority and applicable bonding or insurance.",
+              '2. Independently confirm end-buyer cleared funds and irrevocable disbursement '
+              'instructions using a previously verified title-agent contact channel.',
+              '3. Wire A->B funding only to approved title escrow after all release conditions are '
+              'satisfied and the closing sequence is documented.',
+              '4. Reconcile B->C settlement, recover principal and earned fees, and release '
+              'capital for reuse only after cleared repayment is confirmed.'],
+ 'metrics': ['Earned funding fees as a percentage of funded principal per completed turn',
+             'Median and maximum hours from funding disbursement to cleared repayment',
+             'Unrecovered principal and delayed-closing exposure as a percentage of outstanding '
+             'funding'],
+ 'platform_risks': [{'failure_mode': 'Fraudulent wire instructions or conditional end-buyer funds '
+                                     'leave the A->B advance unrepaid',
+                     'trigger': 'Last-minute beneficiary changes, failed independent callbacks or '
+                                'unresolved B->C release conditions',
+                     'impact': 'Loss of principal, prolonged escrow disputes and interruption of '
+                               'capital recycling',
+                     'detection_metric': 'Count of unresolved wire-verification exceptions and '
+                                         'funded closings past contractual repayment deadlines',
+                     'fallback': 'Stop disbursement, independently reverify settlement '
+                                 'instructions and obtain counsel-directed escrow recovery before '
+                                 'further funding'}]},
+    'earnest_money_gator_escrow_lending': {'id': 'earnest_money_gator_escrow_lending',
+ 'track_id': 'track_1',
+ 'name': 'Earnest-Money Deposit ("Gator") Escrow Lending & Joint-Venture Splits',
+ 'mechanism': 'Advance $2,500–$25,000 refundable-contingency earnest-money deposits directly to '
+              'title escrow under documented JV or promissory protections, with security recorded '
+              'or perfected where legally appropriate. Negotiate a 15%–30% share of an earned '
+              'assignment fee or a lawful fixed return; refunds depend on contractual deadlines, '
+              'valid contingency exercise and escrow release terms.',
+ 'inputs': ['Assignable purchase agreement with explicit refundable contingencies, notice '
+            'procedures and deadline calendar',
+            'Verified title escrow account and executed JV or promissory documents with legally '
+            'appropriate recorded or perfected protections',
+            'Borrower diligence, assignment economics and state-specific lending, brokerage, '
+            'securities and usury review'],
+ 'workflow': ['1. Verify assignment rights, counterparty identity, refundable contingencies and '
+              'the enforceability of the proposed JV or lending structure.',
+              '2. Execute repayment and profit-split documents, perfect any lawful security and '
+              'transmit the deposit directly to verified title escrow.',
+              '3. Track contingency and assignment deadlines, require documented progress and '
+              'deliver timely cancellation notices when authorized and necessary.',
+              '4. Reconcile the closing or refund statement, recover deposited principal and '
+              'collect only the contractually earned fee or lawful return.'],
+ 'metrics': ['Earned assignment-fee share or fixed return per completed deposit advance',
+             'Percentage of active deposits with verified unexpired refund rights and complete '
+             'documentation',
+             'Deposit loss rate and median days from advance to cleared repayment'],
+ 'platform_risks': [{'failure_mode': 'A supposedly refundable deposit becomes nonrefundable or '
+                                     'disputed',
+                     'trigger': 'Missed contingency notice deadline, invalid cancellation or '
+                                'unauthorized contract amendment',
+                     'impact': 'Deposit forfeiture, delayed recovery and disputes over assignment '
+                               'proceeds',
+                     'detection_metric': 'Deposits approaching contingency expiry without '
+                                         'documented assignment or cancellation instructions',
+                     'fallback': 'Freeze additional advances, seek timely authorized cancellation '
+                                 'and pursue counsel-reviewed escrow release or contractual '
+                                 'remedies'}]},
+    'uber_fleet_partner_waterfall_split': {'id': 'uber_fleet_partner_waterfall_split',
+ 'track_id': 'track_1',
+ 'name': 'Uber Fleet Partner Portal Top-of-Waterfall Vehicle Lease & Livery Split Arbitrage',
+ 'mechanism': 'Onboard eligible fleet vehicles and vetted drivers through Uber Fleet Partner '
+              'Portal and configure authorized $425–$650 weekly lease charges and documented toll '
+              'deductions ahead of driver payout where the local platform and law permit. The '
+              'collection waterfall reduces manual billing but does not guarantee sufficient '
+              'driver earnings, platform availability or permission for every deduction.',
+ 'inputs': ['Locally eligible fleet vehicles with commercial registration, inspection records and '
+            'continuous applicable livery or rideshare insurance',
+            'Vetted drivers with valid licenses, required permits, MVR screening and signed lease '
+            'and deduction authorizations',
+            'Approved Fleet Partner account with verified local payout-split capabilities and '
+            'vehicle-level toll and maintenance records'],
+ 'workflow': ['1. Confirm local Fleet Partner eligibility, vehicle class requirements, insurance '
+              'coverage and the legality of the proposed lease and payout structure.',
+              '2. Vet and onboard drivers, execute clear lease and toll disclosures and configure '
+              'only supported, expressly authorized payout deductions.',
+              '3. Dispatch vehicles and reconcile trip earnings, weekly lease charges, toll '
+              'evidence and driver balances against actual settlement reports.',
+              '4. Pay driver balances promptly, audit disputed deductions and schedule maintenance '
+              'or vehicle reassignment based on utilization and safety data.'],
+ 'metrics': ['Collected weekly lease revenue per active vehicle against the $425–$650 target',
+             'Authorized lease and toll collection rate relative to amounts actually due',
+             'Vehicle contribution after insurance, maintenance, depreciation and downtime'],
+ 'platform_risks': [{'failure_mode': 'Platform payout controls change or driver earnings cannot '
+                                     'cover authorized lease deductions',
+                     'trigger': 'Fleet account restriction, unsupported local deduction feature or '
+                                'persistently low driver utilization',
+                     'impact': 'Collection shortfalls, driver disputes and negative vehicle '
+                               'contribution',
+                     'detection_metric': 'Weekly unpaid authorized charges and settlement '
+                                         'reconciliation exceptions per active vehicle',
+                     'fallback': 'Suspend unsupported deductions, reconcile driver balances and '
+                                 'use lawful disclosed invoicing or voluntary vehicle '
+                                 'reassignment'}]},
+    'commercial_tlc_tcp_plate_shift_dispatch': {'id': 'commercial_tlc_tcp_plate_shift_dispatch',
+ 'track_id': 'track_1',
+ 'name': 'Commercial TLC/TCP Livery Plate & Two-Shift Black SUV Airport Dispatch Arbitrage',
+ 'mechanism': 'Operate commercially registered Black SUVs using the locally applicable TLC, TCP or '
+              'other livery authority across two separately staffed 10-hour shifts. Combine '
+              'eligible Uber Black demand with independently contracted corporate airport '
+              'transfers to improve utilization without assuming guaranteed surge pricing or '
+              'treating jurisdiction-specific permits as interchangeable.',
+ 'inputs': ['Eligible commercially registered Black SUVs with local livery authority, airport '
+            'permissions and commercial insurance',
+            'Two qualified drivers per scheduled vehicle with verified credentials, rest '
+            'compliance and documented shift handoffs',
+            'Authorized Uber Black access and independently sourced corporate transfer contracts '
+            'with flight-aware dispatch'],
+ 'workflow': ['1. Verify local commercial operating authority, airport access, vehicle eligibility '
+              'and coverage for both app-based and direct-booked trips.',
+              '2. Staff two separate 10-hour driver shifts subject to applicable duty and rest '
+              'limits, leaving time for inspection, charging or fueling and cleaning.',
+              '3. Allocate eligible app demand and direct corporate airport bookings using flight '
+              'status, deadhead distance and confirmed pickup commitments.',
+              '4. Reconcile fares, driver compensation and airport fees, inspect each shift '
+              'handoff and adjust schedules to measured contribution and safety performance.'],
+ 'metrics': ['Paid passenger hours as a percentage of available vehicle hours',
+             'Contribution per vehicle-day after driver pay, insurance, fuel, platform fees and '
+             'maintenance',
+             'On-time airport pickup rate and deadhead miles per completed transfer'],
+ 'platform_risks': [{'failure_mode': 'Permit, insurance or driver-duty noncompliance interrupts '
+                                     'commercial operations',
+                     'trigger': 'Expired credentials, uninsured trip category, prohibited airport '
+                                'pickup or fatigue-related scheduling exception',
+                     'impact': 'Fines, denied coverage, vehicle suspension and lost corporate '
+                               'bookings',
+                     'detection_metric': 'Upcoming credential expirations, uncovered-trip '
+                                         'exceptions and duty-limit violations',
+                     'fallback': 'Remove the affected vehicle or driver from dispatch and fulfill '
+                                 'bookings through independently verified licensed and insured '
+                                 'backup operators'}]},
+    'zero_metal_vehicle_cohost_consignment': {'id': 'zero_metal_vehicle_cohost_consignment',
+ 'track_id': 'track_2',
+ 'name': 'Zero-Owned-Metal Investor Vehicle Co-Hosting & GPS Starter-Interrupt Consignment',
+ 'mechanism': 'Manage investor-titled SUVs, hybrids and cargo vans for a contractually defined '
+              '25%–35% gross management split without owning the vehicles. Use professionally '
+              'installed GPS/OBD-II telematics and, where lawful, a hardwired starter-interrupt '
+              'with explicit notice and safe stationary-only controls. Maintain coverage matched '
+              'to actual commercial use, including rideshare Periods 1, 2 and 3 where applicable '
+              'and separate rental or off-platform coverage when needed.',
+ 'inputs': ['Investor-titled vehicles with owner and lienholder permissions plus signed '
+            'consignment agreements defining the gross management split',
+            'Use-specific commercial insurance verified for drivers, rentals, off-platform trips '
+            'and applicable rideshare Periods 1, 2 and 3',
+            'Professionally installed GPS/OBD-II telematics and lawful starter-interrupt equipment '
+            'with privacy consent and stationary-only safety controls'],
+ 'workflow': ['1. Inspect each investor vehicle, verify title and financing permissions and '
+              'execute a management agreement allocating maintenance, claims and revenue '
+              'responsibilities.',
+              '2. Bind use-specific coverage and install disclosed telematics with access '
+              'controls; prohibit remote engine shutdown or any immobilization while moving.',
+              '3. Place vehicles only with authorized vetted drivers or eligible booking channels '
+              'and monitor utilization, maintenance needs and permitted location data.',
+              '4. Reconcile gross receipts, pay investor balances and the agreed management split, '
+              'and coordinate lawful recovery or servicing only under documented safe procedures.'],
+ 'metrics': ['Earned management fees as a percentage of contractually defined gross vehicle '
+             'receipts',
+             'Net management contribution per active investor-owned vehicle',
+             'Covered utilization days, unscheduled downtime and safety-control exceptions'],
+ 'platform_risks': [{'failure_mode': 'Coverage gaps or unsafe telematics use create uninsured '
+                                     'liability',
+                     'trigger': 'Undeclared commercial use, an excluded driver or a '
+                                'starter-interrupt command without verified safe stationary '
+                                'conditions',
+                     'impact': 'Injury exposure, denied claims, investor losses and termination of '
+                               'management contracts',
+                     'detection_metric': 'Unverified coverage periods, unauthorized device access '
+                                         'and rejected unsafe immobilization attempts',
+                     'fallback': 'Disable remote immobilization, pause affected placements and '
+                                 'arrange insurer-approved service or lawful professional recovery '
+                                 'after safety review'}]},
+    'iso_schedule_a_dual_pricing_residual_spread': {'id': 'iso_schedule_a_dual_pricing_residual_spread',
+ 'track_id': 'track_1',
+ 'name': 'Wholesale ISO Schedule A Interchange-Plus vs. Compliant Dual-Pricing & ATM Residual '
+         'Spread',
+ 'mechanism': 'Negotiate sponsor-approved ISO Schedule A buy-rates with low markup over '
+              'interchange and network assessments, then earn disclosed processing residual '
+              'spreads through compliant dual-pricing or cash-discount POS deployments and '
+              'exclusive venue ATMs. Pursue recurring basis-point and surcharge income for the '
+              'contractual residual term; no lifetime payout or universal debit surcharge '
+              'permission is assumed.',
+ 'inputs': ['Executed sponsor-bank or processor ISO agreement and Schedule A defining buy-rates, '
+            'residual ownership, reserves and termination rights',
+            'Merchant-approved POS configuration with legally reviewed cash and card pricing, '
+            'signage, receipts and debit treatment',
+            'Exclusive venue ATM agreements with compliant fee disclosures, approved cash sourcing '
+            'and remote operational telemetry'],
+ 'workflow': ['1. Negotiate and document processing buy-rates, residual calculations, sponsor '
+              'approval and enforceable payout and portfolio rights.',
+              '2. Underwrite merchants and configure genuine dual pricing or cash discounts under '
+              'current network, debit and local-law requirements.',
+              '3. Deploy approved POS terminals and venue ATMs with clear customer disclosures, '
+              'PCI controls and reconciled settlement and cash processes.',
+              '4. Audit monthly residuals and ATM surcharges against transaction reports, track '
+              'attrition and correct pricing or disclosure exceptions promptly.'],
+ 'metrics': ['Net retained processing basis points after Schedule A costs, assessments and '
+             'adjustments',
+             'Monthly net ATM surcharge contribution after venue splits, cash servicing and '
+             'network costs',
+             'Merchant retention rate and residual statement reconciliation variance'],
+ 'platform_risks': [{'failure_mode': 'Pricing misconfiguration or noncompliant disclosures trigger '
+                                     'sponsor or card-network enforcement',
+                     'trigger': 'Prohibited debit surcharge, misleading cash-discount presentation '
+                                'or unapproved merchant processing activity',
+                     'impact': 'Refund obligations, fines, residual withholding and merchant or '
+                               'ISO termination',
+                     'detection_metric': 'Pricing audit exceptions, customer fee complaints and '
+                                         'sponsor compliance notices',
+                     'fallback': 'Disable the disputed pricing configuration, restore approved '
+                                 'transparent pricing and remediate with the sponsor before '
+                                 'resuming the program'}]},
+    'insurance_ale_displaced_housing_master_lease': {'id': 'insurance_ale_displaced_housing_master_lease',
+ 'track_id': 'track_1',
+ 'name': 'Insurance Additional Living Expense (ALE) Displaced-Policyholder Master-Lease Arbitrage',
+ 'mechanism': 'Secure explicit landlord-authorized corporate master-leases on suitable 3–5 BR '
+              'single-family homes, using approximately $2,500 monthly base rent as a market '
+              'screening assumption. Seek approved displaced-family placements through ALE '
+              'Solutions, CRS Temporary Housing or Sedgwick at $6,500–$9,500 monthly for 4–9 month '
+              'stays. Rates, availability and carrier payment depend on local demand, policy '
+              'limits and written placement authorization.',
+ 'inputs': ['Habitable furnished 3–5 BR homes with written landlord corporate-housing and sublease '
+            'authorization',
+            'Approved relocation-vendor onboarding and written placement orders defining payer, '
+            'authorized rates, stay limits and cancellation terms',
+            'Property-level budget covering rent, utilities, furnishings, insurance, vacancy '
+            'reserves and applicable occupancy taxes'],
+ 'workflow': ['1. Validate local displaced-family demand and legal occupancy requirements, then '
+              'obtain explicit written master-lease and sublease permissions.',
+              '2. Furnish and inspect homes, bind appropriate coverage and submit accurate '
+              'availability and property details to approved relocation channels.',
+              '3. Accept placements only with verified payment responsibility, authorized stay '
+              'dates and clear family-facing lease, utility and extension terms.',
+              '4. Reconcile authorized invoices, obtain written extensions before coverage expiry '
+              'and manage turnover or lawful alternative leasing during placement gaps.'],
+ 'metrics': ['Collected monthly placement revenue less landlord rent, utilities, furnishing costs '
+             'and operating expenses',
+             'Authorized occupied nights as a percentage of available property nights',
+             'Days sales outstanding and uncovered rent exposure after placement cancellation'],
+ 'platform_risks': [{'failure_mode': 'Carrier-authorized stays end before the underlying '
+                                     'master-lease obligation',
+                     'trigger': 'Claim resolution, exhausted ALE limits, unapproved extension or '
+                                'relocation-vendor cancellation',
+                     'impact': 'Vacancy losses, disputed invoices and continuing rent liability',
+                     'detection_metric': 'Days of confirmed paid occupancy remaining versus '
+                                         'unavoidable rent commitments',
+                     'fallback': 'Obtain written extensions when available, activate '
+                                 'landlord-approved alternative occupancy and use reserves or '
+                                 'negotiated termination rights without violating tenant '
+                                 'protections'}]},
+    'medicaid_nemt_tpa_subcontract_dispatch': {'id': 'medicaid_nemt_tpa_subcontract_dispatch',
+ 'track_id': 'track_2',
+ 'name': 'State Medicaid NEMT Broker & STAT Medical Specimen Subcontract Dispatch Arbitrage',
+ 'mechanism': 'Obtain authorized recurring NEMT standing orders through brokers such as Modivcare, '
+              'MTM or SafeRide and separately contract STAT specimen routes with appropriately '
+              'certified clinical laboratories. Dispatch credentialed van and courier '
+              'owner-operators through route-optimization software, retaining the contracted '
+              'service spread only where subcontracting and worker classification are lawful. '
+              'Apply HIPAA, specimen handling and laboratory requirements according to the actual '
+              'service; CLIA certification of a laboratory does not credential a courier.',
+ 'inputs': ['Executed broker and laboratory contracts permitting subcontracting, with verified '
+            'service authorizations and payment schedules',
+            'Credentialed and insured owner-operators with required vehicle inspections, screening '
+            'and role-specific patient or specimen training',
+            'Secure dispatch, trip verification, specimen chain-of-custody and billing systems '
+            'with applicable business associate agreements'],
+ 'workflow': ['1. Verify broker participation, provider credentials, subcontracting permissions '
+              "and each transportation or laboratory service's documentation requirements.",
+              '2. Vet operators, determine lawful contractor or employee classification and train '
+              'personnel for the assigned passenger or specimen service.',
+              '3. Dispatch only authorized trips and routes, separating patient transport and '
+              'specimen handling workflows and capturing required GPS or barcode evidence.',
+              '4. Submit contract-appropriate invoices or claims only for documented completed '
+              'services, reconcile operator settlements and audit denials and custody exceptions.'],
+ 'metrics': ['On-time authorized trip and STAT delivery completion rate',
+             'Collected dispatch contribution after operator settlements and route operating costs',
+             'Claim or invoice denial rate, collection days and chain-of-custody exception rate'],
+ 'platform_risks': [{'failure_mode': 'Missing trip authorization or custody evidence invalidates '
+                                     'service payment or compromises patient safety',
+                     'trigger': 'Expired credentials, unauthorized subcontracting, incomplete trip '
+                                'logs or a specimen handling breach',
+                     'impact': 'Payment clawbacks, contract suspension, privacy exposure and '
+                               'clinical delivery failures',
+                     'detection_metric': 'Percentage of services with unresolved authorization, '
+                                         'credential, timing or custody exceptions',
+                     'fallback': 'Hold unsupported billing, dispatch credentialed backup '
+                                 'operators, notify the appropriate contracting or clinical party '
+                                 'and remediate records without fabrication'}]},
+    'subject_to_wraparound_rmlo_note_spread': {'id': 'subject_to_wraparound_rmlo_note_spread',
+ 'track_id': 'track_2',
+ 'name': 'Subject-To Low-Rate Mortgage Acquisition & RMLO-Underwritten Wraparound Note Spread '
+         'Arbitrage',
+ 'mechanism': 'Acquire property subject to existing 2.75%–4.25% mortgage debt and, where lawful, '
+              'resell through an 8.5%–9.9% wraparound note originated with licensed RMLO '
+              'involvement, applicable ability-to-repay review and licensed third-party servicing. '
+              'Retain lawful origination economics and the net interest spread rather than '
+              'operating as a landlord. RMLO involvement does not eliminate due-on-sale '
+              'acceleration, seller liability, buyer default or property-related obligations.',
+ 'inputs': ['Verified underlying loan, title, tax and insurance records with seller disclosures '
+            'and counsel-reviewed due-on-sale analysis',
+            'Qualified buyer file and licensed RMLO underwriting with applicable SAFE Act, '
+            'Dodd-Frank and state wraparound compliance',
+            'Legally reviewed transfer and wrap documents plus licensed third-party servicing, '
+            'payment verification and default reserves'],
+ 'workflow': ["1. Verify the underlying mortgage and title, disclose the seller's continuing debt "
+              'exposure and obtain counsel-reviewed lender consent or a documented lawful '
+              'acceleration-risk plan.',
+              '2. Underwrite the buyer through a licensed RMLO where required and deliver all '
+              'applicable consumer, financing and wraparound disclosures.',
+              '3. Close only a lawful documented transfer with appropriate insurance and escrow '
+              'arrangements, assigning property responsibilities explicitly rather than assuming '
+              'none exist.',
+              '4. Service the wrap through a licensed third party, verify underlying debt and tax '
+              'payments monthly and follow lawful loss-mitigation procedures if payments fail.'],
+ 'metrics': ['Collected wrap interest less underlying interest, servicing fees and credit-loss '
+             'provision',
+             'Buyer delinquency rate and percentage of underlying payments verified on time',
+             'Liquidity reserves relative to acceleration, foreclosure and property carrying '
+             'exposure'],
+ 'platform_risks': [{'failure_mode': 'The underlying lender accelerates debt after a subject-to '
+                                     'transfer',
+                     'trigger': 'Enforcement of a due-on-sale clause or a related servicing or '
+                                'insurance default',
+                     'impact': 'Immediate payoff demand, refinancing costs, foreclosure exposure '
+                               'and harm to the original borrower',
+                     'detection_metric': 'Lender acceleration notices, unresolved servicing alerts '
+                                         'and reserve shortfall against payoff exposure',
+                     'fallback': 'Engage counsel and the servicer, pursue lender-approved '
+                                 'assumption or refinancing and use a documented lawful sale or '
+                                 'payoff exit if necessary'}]},
+    'gpu_reserved_to_spot_inference_slicing': {'id': 'gpu_reserved_to_spot_inference_slicing',
+ 'track_id': 'track_2',
+ 'name': 'Reserved Bare-Metal H100/H200 Cluster Slicing & Multi-Provider Inference Router '
+         'Arbitrage',
+ 'mechanism': 'Commit to wholesale bare-metal or reserved H100/H200/B200 GPU capacity where resale '
+              'is permitted, then serve isolated multi-tenant quantized vLLM inference and '
+              'interruptible batch queues through a multi-provider router. Separately resell '
+              'authorized wholesale SIP and registered 10DLC capacity. Target a 35%–55% net spread '
+              'after upstream and operating costs; utilization, hardware depreciation, quality '
+              'requirements and carrier pricing can erase that spread.',
+ 'inputs': ['Resale-permitted GPU reservations and approved wholesale telecom agreements with '
+            'explicit capacity, SLA and acceptable-use terms',
+            'Tenant-isolated vLLM inference and provider routing with quantization validation, '
+            'DCGM metering and protected customer data',
+            'Prepaid usage billing, demand commitments and role-appropriate KYC, telecom '
+            'registration and abuse-response controls'],
+ 'workflow': ['1. Validate committed customer demand, benchmark models and negotiate '
+              'resale-permitted GPU and telecom capacity against conservative utilization '
+              'forecasts.',
+              '2. Configure isolated workloads, licensed models, retention controls and usage '
+              'metering; establish required telecom registrations and consent controls before '
+              'activation.',
+              '3. Route authorized inference and batch jobs by quality, latency and landed cost '
+              'while provisioning only vetted, compliant SIP and 10DLC traffic.',
+              '4. Reconcile prepaid usage against provider bills, rebalance or reduce commitments '
+              'when permitted and suspend abusive tenants under documented procedures.'],
+ 'metrics': ['Net contribution percentage after GPU commitments, carrier costs, bandwidth, support '
+             'and payment expenses',
+             'Billable GPU utilization and inference cost per million tokens at the required '
+             'quality and latency',
+             'Prepaid balance coverage, tenant isolation incidents and telecom abuse complaint '
+             'rate'],
+ 'platform_risks': [{'failure_mode': 'Committed capacity remains underused or abusive traffic '
+                                     'causes upstream suspension',
+                     'trigger': 'Demand shortfall, rapid market price compression, tenant '
+                                'isolation failure or prohibited compute or calling activity',
+                     'impact': 'Negative margin, stranded commitments, customer service '
+                               'interruption and regulatory exposure',
+                     'detection_metric': 'Utilization below break-even, prepaid balance deficits, '
+                                         'isolation alerts and carrier abuse notices',
+                     'fallback': 'Suspend abusive workloads, preserve required evidence, route '
+                                 'compliant traffic only to authorized alternatives and reduce or '
+                                 'renegotiate excess commitments'}]},
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -3463,6 +3850,103 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         "cipa_vppa_wiretap_pixel_settlement_arbitrage",
         "web2app_quiz_subscription_billing_bypass",
         "agency_ad_spend_card_multiplier_rebate_cycling",
+    ),
+    30: (
+        'transactional_double_close_flash_funding',
+        'earnest_money_gator_escrow_lending',
+        'aged_shelf_corp_tradeline_credit_stacking',
+        'b2b_commercial_vcc_interchange_rebate_arbitrage',
+        'agency_ad_spend_card_multiplier_rebate_cycling',
+        'ucc1_expiration_refi_trigger_arbitrage',
+        'mca_ucc_stacking_default_restructure_brokerage',
+        'public_record_api_intelligence',
+        'public_filing_trigger_mail_arbitrage',
+        'high_velocity_dm_outbound_systems',
+        'multi_inbox_free_workspace_outbound_clusters',
+        'free_llc_fintech_bounty_stacking',
+        'chapter11_trade_claim_convenience_class_rollup',
+        'litigation_finance_mass_tort_docket_securitization',
+    ),
+    31: (
+        'uber_fleet_partner_waterfall_split',
+        'commercial_tlc_tcp_plate_shift_dispatch',
+        'zero_metal_vehicle_cohost_consignment',
+        'fmcsa_dot_inspection_trigger_arbitrage',
+        'google_maps_gbp_lead_gen_network',
+        'rank_and_rent_pay_per_call_routing',
+        'free_llc_fintech_bounty_stacking',
+        'agency_ad_spend_card_multiplier_rebate_cycling',
+        'platform_privilege_tier_account_arbitrage',
+        'public_record_api_intelligence',
+    ),
+    32: (
+        'iso_schedule_a_dual_pricing_residual_spread',
+        'high_risk_payfac_iso_mid_cascading_arbitrage',
+        'b2b_commercial_vcc_interchange_rebate_arbitrage',
+        'newly_registered_domain_trigger_arbitrage',
+        'google_maps_gbp_lead_gen_network',
+        'saas_technographic_churn_pixel_scraping',
+        'multi_inbox_free_workspace_outbound_clusters',
+        'high_velocity_dm_outbound_systems',
+        'free_llc_fintech_bounty_stacking',
+        'agency_ad_spend_card_multiplier_rebate_cycling',
+        'web2app_quiz_subscription_billing_bypass',
+        'ucc1_expiration_refi_trigger_arbitrage',
+    ),
+    33: (
+        'insurance_ale_displaced_housing_master_lease',
+        'public_adjuster_appraisal_clause_storm_arbitrage',
+        'municipal_code_violation_trigger_arbitrage',
+        'public_record_api_intelligence',
+        'google_maps_gbp_lead_gen_network',
+        'rank_and_rent_pay_per_call_routing',
+        'high_velocity_dm_outbound_systems',
+        'multi_inbox_free_workspace_outbound_clusters',
+        'ego_bait_directory_badge_arbitrage',
+        'agency_ad_spend_card_multiplier_rebate_cycling',
+        'free_llc_fintech_bounty_stacking',
+        'platform_privilege_tier_account_arbitrage',
+    ),
+    34: (
+        'medicaid_nemt_tpa_subcontract_dispatch',
+        'gsa_municipal_set_aside_facility_ghost_brokering',
+        'government_rfp_subcontractor_brokerage',
+        'hospital_lien_medical_receivables_arbitrage',
+        'out_of_network_dme_telehealth_billing_arbitrage',
+        'wotc_hourly_payroll_tax_credit_contingency_engine',
+        'google_maps_gbp_lead_gen_network',
+        'rank_and_rent_pay_per_call_routing',
+        'multi_inbox_free_workspace_outbound_clusters',
+    ),
+    35: (
+        'subject_to_wraparound_rmlo_note_spread',
+        'distressed_asset_recovery',
+        'probate_docket_inheritance_arbitrage',
+        'hoa_super_lien_tax_deed_redemption_arbitrage',
+        'public_filing_trigger_mail_arbitrage',
+        'municipal_code_violation_trigger_arbitrage',
+        'property_tax_assessment_appeal_contingency',
+        'earnest_money_gator_escrow_lending',
+        'transactional_double_close_flash_funding',
+        'social_to_search_ping_post_arbitrage',
+        'tcpa_litigator_scrub_honeypot_arbitrage',
+    ),
+    36: (
+        'gpu_reserved_to_spot_inference_slicing',
+        'cloud_ai_startup_credit_aggregation_arbitrage',
+        'free_tier_api_waterfall_multiplexing',
+        'serverless_edge_free_tier_empire_hosting',
+        'telecom_voice_traffic_pumping_8yy_sms_arbitrage',
+        'mvno_lifeline_acp_telecom_subsidy_aggregation',
+        'saas_technographic_churn_pixel_scraping',
+        'newly_registered_domain_trigger_arbitrage',
+        'competitor_intent_comparison_hijacking',
+        'llm_citation_geo_poisoning',
+        'b2b_commercial_vcc_interchange_rebate_arbitrage',
+        'agency_ad_spend_card_multiplier_rebate_cycling',
+        'free_llc_fintech_bounty_stacking',
+        'ferc_grid_interconnection_queue_land_speculation',
+        'high_velocity_dm_outbound_systems',
     ),
 }
 
@@ -4150,6 +4634,13 @@ _CANDIDATE_SPECS.extend([
         revenue_basis="Implementation fees and support retainers; excludes client revenue attributed to automation",
         confidence="Preliminary — Uncertainty Range",
         automation_coverage=0.84),
+    _candidate(30, "Lending & Flash-Funding Arbitrage", "Specialty liquidity arbitrage", (120000, 950000), (30, 55), (25000, 100000), (2000, 12000), "1–4 months", (1, 2), "24-to-72-hour escrow-locked transactional double-close funding and earnest-money Gator lending recycle capital rapidly with end-buyer cash verified in escrow.", ["Title-escrow wire verification", "Automated POF & underwriting intake", "Escrow payoff ledger"], ["Title or escrow wire fraud", "Dry-closing end-buyer fallout", "State commercial-lending recharacterization"], ["Verify state commercial-purpose lending exemptions, usury ceilings and escrow licensing rules.", "Release funds strictly to bonded title/settlement agents after verifying unconditional end-buyer cash on deposit."], revenue_basis="Earned transactional funding fees, EMD JV splits and origination points only; excludes principal wired through escrow", automation_coverage=0.84),
+    _candidate(31, "Uber & Commercial Fleet Arbitrage", "Mobility & livery arbitrage", (180000, 1200000), (14, 28), (12000, 65000), (2500, 15000), "1–3 months", (1, 3), "Uber Fleet Partner top-of-waterfall lease deductions, two-shift commercial Black SUV dispatch, and zero-owned-metal investor co-hosting eliminate gig-driver collection friction.", ["Uber Fleet Partner waterfall splits", "OBD-II GPS & starter-interrupt telematics", "Automated MVR, toll & maintenance billing"], ["Commercial livery insurance spikes", "Driver collision deductibles", "Vehicle downtime & depreciation"], ["Maintain continuous commercial livery / Period 1-2-3 rideshare coverage and airport TCP/TLC permits.", "Observe state rental-car contract disclosures, toll pass-through rules and immobilizer safety laws."], revenue_basis="Gross weekly driver lease, commercial dispatch and co-hosting billings (55% retained contribution after investor owner splits & pass-through fleet costs)", retained_share=0.55, automation_coverage=0.78),
+    _candidate(32, "ISO Payment Processing & ATM Arbitrage", "Merchant & payment arbitrage", (90000, 800000), (30, 55), (8000, 45000), (1500, 10000), "1–4 months", (1, 3), "Wholesale ISO Schedule A buy-rates paired with compliant zero-fee dual-pricing POS terminals, high-risk MID orchestration, and venue ATMs compound sticky monthly residuals.", ["IRIS CRM boarding & residual audit", "Verifi RDR / Ethoca dispute auto-deflection", "Remote ATM telemetry & vault-cash alerts"], ["Merchant attrition & rate-matching", "Excessive chargebacks / MATCH placement", "Card-brand surcharge compliance audits"], ["Comply with Visa/Mastercard surcharge vs dual-pricing signage rules, Durbin debit restrictions and state surcharge laws.", "Observe FinCEN/Reg E ATM disclosures and sponsor-bank ISO underwriting standards."], revenue_basis="Net retained ISO processing residuals, gateway markups and ATM surcharges; excludes merchant card settlement volume and ATM vault cash", automation_coverage=0.86),
+    _candidate(33, "Insurance Housing & Corporate Rental Arbitrage", "Corporate relocation arbitrage", (180000, 1400000), (12, 26), (12000, 60000), (3000, 18000), "1–3 months", (1, 3), "Placing landlord-authorized master-leased family homes into carrier-paid Insurance ALE relocation portals at 2.2x–3.0x long-term rent outperforms tourist Airbnb subleases with minimal turnover.", ["ALE / CRS housing portal synchronization", "Smart-lock, leak & noise telemetry", "Automated lease-extension & utility-cap billing"], ["Vacancy gaps between claims", "Early claim closeout / lease-break friction", "Unauthorized sublease default if addendum omitted"], ["Execute explicit written landlord corporate-housing sublease addenda on every property.", "Check 30+-day occupancy tax exemptions, habitability codes and commercial liability insurance requirements."], revenue_basis="Gross insurance relocation and corporate housing billings (45% retained spread after master-lease landlord rent & utility pass-throughs)", retained_share=0.45, automation_coverage=0.82),
+    _candidate(34, "NEMT & Medical Courier Dispatch Arbitrage", "Healthcare logistics brokerage", (250000, 1600000), (12, 24), (15000, 65000), (3500, 18000), "2–5 months", (2, 2), "Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow.", ["RouteGenie / MediRoutes GPS dispatch", "837P EDI claim scrubbing & AR tracking", "Barcode specimen chain-of-custody logs"], ["Medicaid broker Net-30/45 payment float", "1099 driver misclassification exposure", "Missed STAT pickup or trip-log audit clawbacks"], ["Maintain HIPAA Business Associate Agreements, OSHA bloodborne-pathogen / DOT UN3373 specimen protocols and Medicaid provider credentialing.", "Structure independent-contractor owner-operator agreements and GPS trip verification strictly within state labor and Medicaid rules."], revenue_basis="Gross contracted NEMT broker and medical courier billings (45% retained dispatch contribution after 1099 driver settlements)", retained_share=0.45, automation_coverage=0.78),
+    _candidate(35, "Subject-To & Wraparound Note Arbitrage", "Creative real estate note spread", (100000, 850000), (28, 52), (12000, 65000), (2000, 12000), "2–6 months", (1, 3), "Acquiring low-rate 2.75%–4.25% mortgages Subject-To and reselling via RMLO-underwritten 8.5%–9.9% wraparound notes generates upfront down-payment spreads and multi-year interest arbitrage without landlord repairs.", ["Low-equity & pre-foreclosure debt triggers", "Third-party licensed loan-servicer autopay", "Escrow tax/insurance & underlying-payment audit"], ["Underlying lender due-on-sale acceleration", "Wrap buyer default & foreclosure carrying cost", "Non-compliant seller-financing origination"], ["Underwrite every owner-occupant wraparound buyer through a licensed RMLO under SAFE Act / Dodd-Frank Ability-to-Repay rules and state wraparound disclosure statutes (e.g., Tex. Prop. Code §5.016).", "Use a licensed third-party loan servicer so underlying mortgage, tax and insurance payments are verified transparently every month."], revenue_basis="Net upfront option/down-payment spreads and retained annual wraparound interest margin; excludes underlying home face value and pass-through debt service", automation_coverage=0.76),
+    _candidate(36, "GPU Compute & Telecom Capacity Arbitrage", "Compute & telecom capacity brokerage", (150000, 1200000), (18, 38), (10000, 60000), (2000, 14000), "1–4 months", (1, 2), "Slicing wholesale bare-metal H100/H200 clusters, routing quantized multi-provider LLM inference, and reselling wholesale SIP/10DLC telecom trunks deliver software-like leverage on a 3-person pod.", ["LiteLLM / vLLM dynamic inference router", "Prepaid Stripe credit-wallet & DCGM metering", "Automated LCR SIP & 10DLC campaign provisioning"], ["Committed bare-metal utilization dips", "GPU generation pricing compression", "Abusive crypto-mining or robocall AUP violations"], ["Enforce prepaid credit wallets, KYC/AUP screening, STIR/SHAKEN Robocall Mitigation Database filings, 10DLC TCR registration and FCC Form 499-A telecom compliance.", "Isolate multi-tenant workloads and honor enterprise zero-data-retention commitments."], revenue_basis="Gross compute, inference-token and wholesale telecom billings (65% retained net contribution after upstream bare-metal & carrier termination commits)", retained_share=0.65, automation_coverage=0.90),
 ])
 
 
@@ -4168,3 +4659,6 @@ def build_29_candidate_pipeline() -> list[dict]:
         card["target_expert_youtube_links"] = TARGET_EXPERT_YOUTUBE_LINKS_PER_BOOK
         card["min_expert_youtube_links_per_chapter"] = MIN_EXPERT_YOUTUBE_LINKS_PER_CHAPTER
     return pipeline
+
+
+build_candidate_pipeline = build_29_candidate_pipeline

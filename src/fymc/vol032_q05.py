@@ -1,0 +1,650 @@
+from __future__ import annotations
+
+CHAPTER_5 = {
+    "id": "Q5",
+    "chapter_id": "Q5",
+    "chapter_number": 5,
+    "question_number": 5,
+    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
+    "question_prompt": "What kills 80% of newcomers in iso payment processing & atm arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
+    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
+    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
+    "subtitle": "Schedule A Residual Forensics, Sponsor-Bank Recourse, MATCH Exposure, Reg E ATM Controls & Legitimate GBP Acquisition",
+    "layout_template": "expert_insights",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #32, ranked #02 of 36 with a 94/100 Money-to-Manpower Score, "
+        "rewards operators who control contractual leakage rather than merely board merchants. "
+        "Across the volume's 12 mapped plays, this chapter isolates residual repricing, reserve "
+        "withholding, equipment clawbacks, dispute contagion, unlawful surcharge configurations, "
+        "ATM cash losses, and fragile acquisition channels. Canonical annual owner profits are "
+        "$27,000 Conservative, $189,125 Base, and $440,000 Scaled; merchant settlement volume "
+        "and ATM vault cash are excluded from operator revenue. The named GBP acquisition "
+        "play receives an eligibility-first implementation with explicit unit economics. "
+        "Daily reconciliations, sponsor-specific thresholds, and funded incident reserves turn "
+        "small-team leverage into a controlled operating system. The question's 80% framing "
+        "is a diagnostic challenge, not an evidenced newcomer failure rate."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$90,000",
+            "context": "Annual retained ISO, gateway and ATM revenue; merchant settlement and vault cash excluded",
+            "note": "30% net margin; $27,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$445,000",
+            "context": "Annual retained ISO, gateway and ATM revenue; merchant settlement and vault cash excluded",
+            "note": "42.5% net margin; $189,125 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$800,000",
+            "context": "Annual retained ISO, gateway and ATM revenue; merchant settlement and vault cash excluded",
+            "note": "55% net margin; $440,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Reconstruct earned residuals before trusting the deposit",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The first fatal trap is calling merchant card volume revenue; the second is treating "
+                    "a processor's residual deposit as a complete profit statement. A merchant processing "
+                    "$100,000 monthly at a retained twenty-basis-point spread contributes $200 before any "
+                    "additional operator expenses, not $100,000. Separate interchange and network pass-through "
+                    "amounts, sponsor buy rates, gateway markups, agent splits, and operator-retained fees. "
+                    "Apply ASC 606 principal-versus-agent analysis to each contractual service instead of "
+                    "assuming every customer charge belongs in the operator's top line. The canonical "
+                    "scorecard calls its revenue field gross revenue, but this candidate's defined basis "
+                    "is already retained ISO residuals, gateway markups, and ATM surcharges. Do not apply "
+                    "a second retained-share haircut. Formula v2.0 fixes Conservative revenue at $90,000 "
+                    "and profit at $27,000, Base at $445,000 and $189,125, and Scaled at $800,000 and "
+                    "$440,000. Corresponding total annual expenses are $63,000, $255,875, and $360,000. "
+                    "Keep these cases separate from diagnostic examples, which explain mechanics rather "
+                    "than replace the scorecard. Merchant settlement funds, reserve balances owed to "
+                    "merchants, and ATM vault cash belong in separate reconciliations. A dollar moving "
+                    "through an account is not automatically earned revenue or distributable owner cash. "
+                    "Document the accounting policy before importing any dashboard total."
+                ),
+                (
+                    "The third trap is buying a residual stream without reading Schedule A amendments, "
+                    "vesting language, cross-collateralization, and post-termination rights. A ten-basis-point "
+                    "buy-rate increase on $2 million of monthly merchant volume removes $2,000 monthly, "
+                    "or $24,000 annually, if selling prices remain unchanged. That sensitivity alone "
+                    "approaches the entire Conservative owner-profit case. Request signed schedules, "
+                    "effective dates, notice provisions, residual assignment restrictions, and the exact "
+                    "conditions permitting offsets. A processor may have contractual rights to debit "
+                    "future residuals for merchant losses, but those rights are not identical across "
+                    "sponsors. Model only the recourse actually accepted. A $600 boarding incentive "
+                    "subject to full recovery during the first six months becomes a $12,000 exposure "
+                    "when twenty incentivized accounts close inside that window. Equipment leases can "
+                    "survive processing termination, creating customer anger without producing continuing "
+                    "residuals. Merchant reserves are not the ISO's operating float; an ISO payout hold "
+                    "is not automatically a permanent expense. Track recognized earnings, collectible "
+                    "receivables, disputed deductions, and available cash independently. Before purchasing "
+                    "a portfolio, reconcile twelve monthly statements to bank receipts and sample the "
+                    "underlying merchant agreements. Refuse acquisition pricing based solely on a "
+                    "seller's spreadsheet or a single unusually strong month."
+                ),
+                (
+                    "Build the residual audit around a stable merchant identifier, contract version, "
+                    "processor identifier, statement month, expected calculation, actual calculation, and "
+                    "deduction reason. IRIS CRM can organize boarding and residual workflows, but imported "
+                    "files still require source-to-bank controls. For an internal early-warning policy, "
+                    "investigate any unexplained merchant-level variance exceeding the greater of $25 "
+                    "or 2% of expected monthly residual; investigate every unfamiliar deduction code "
+                    "regardless of size. These are operator settings, not network limits. Reconcile "
+                    "portfolio totals separately so hundreds of small discrepancies cannot evade the "
+                    "merchant-level trigger. Track same-merchant retained basis points, paid residual "
+                    "per active account, involuntary closures, and ninety-day cohort survival. If "
+                    "retained basis points fall from twenty to sixteen on unchanged volume, unit "
+                    "revenue has declined 20% even when acquisition makes aggregate deposits rise. "
+                    "Freeze discretionary acquisition spending when two consecutive cycles contain "
+                    "unresolved material differences. Require a processor ticket, supporting statement, "
+                    "assigned owner, and resolution date for every exception. The corrective action "
+                    "might be a billing adjustment, an authorized merchant repricing, or a sponsor "
+                    "migration permitted by contract. Never recover a processor error through an "
+                    "undisclosed merchant fee. Keep recovered amounts tied to their original periods "
+                    "so a one-time reimbursement does not masquerade as recurring growth."
+                ),
+            ],
+            "table": {
+                "caption": "Schedule A, Residual Ownership and Cash-Conversion Failure Matrix",
+                "headers": [
+                    "Beginner trap and exposed economic unit",
+                    "Forensic evidence and calculation to retain",
+                    "Internal trigger requiring an assigned investigation",
+                    "Circuit-breaker and specific recovery operating path",
+                ],
+                "rows": [
+                    [
+                        "Merchant settlement volume gets reported as operator revenue",
+                        "Separate $100,000 merchant volume from $200 retained spread",
+                        "Any report blends settlement principal with retained fees",
+                        "Rebuild revenue mapping before approving distributions or valuations",
+                    ],
+                    [
+                        "Schedule A repricing silently consumes the contracted spread",
+                        "Ten basis points on $2 million costs $2,000 monthly",
+                        "Any effective buy-rate change lacks its supporting amendment",
+                        "Reconcile notices and pursue documented correction or permitted repricing",
+                    ],
+                    [
+                        "Upfront boarding incentives conceal early cancellation recovery obligations",
+                        "Twenty recoverable $600 bonuses create $12,000 contingent exposure",
+                        "An incentivized account terminates before its contractual vesting date",
+                        "Hold contractual exposure in the operating liquidity forecast",
+                    ],
+                    [
+                        "Residual ownership disappears under termination or assignment restrictions",
+                        "Review survival clauses against every proposed portfolio purchase",
+                        "Seller cannot produce signed residual rights and assignment consent",
+                        "Pause purchase negotiations until ownership evidence is independently reconciled",
+                    ],
+                    [
+                        "Payout holds get confused with permanent economic losses",
+                        "Reconcile earned receivables, held cash and disputed deductions separately",
+                        "Held balances age beyond the contract's stated release terms",
+                        "Escalate collectible amounts while preserving cash for operating expenses",
+                    ],
+                    [
+                        "Growing account counts hide deteriorating merchant cohort quality",
+                        "Twenty retained basis points becoming sixteen represents 20% erosion",
+                        "Same-merchant yield declines while aggregate residual deposits increase",
+                        "Investigate cohort pricing before funding additional acquisition campaigns",
+                    ],
+                    [
+                        "Small unexplained deductions bypass weak merchant-level review thresholds",
+                        "Aggregate all deduction codes across merchants and statement periods",
+                        "Portfolio unexplained leakage remains material despite small individual items",
+                        "Open processor evidence tickets and suspend discretionary acquisition spending",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the contractual spread before optimizing sales volume",
+                "body": "Experienced operators audit the rights and deductions beneath the deposit, then price acquisition against collectible contribution.",
+                "items": [
+                    "Archive each signed Schedule A with its effective date and compare every new deduction code against that version before accepting a changed residual.",
+                    "Sample both your highest-volume merchants and your weakest ninety-day cohorts; portfolio growth otherwise hides buy-rate drift and early cancellation losses.",
+                    "Maintain a separate clawback exposure schedule for boarding incentives, equipment subsidies, and accepted merchant-loss recourse instead of blending them into ordinary payables.",
+                    "Pay referral commissions from reconciled, contractually earned residuals under written terms rather than immediately spending an unreconciled processor deposit.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Contain merchant risk without creating sponsor or network exposure",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "High-risk MID orchestration means transparently arranging approved processing "
+                    "relationships for the merchant's actual business, not rotating identities to "
+                    "outrun monitoring. Fatal shortcuts include transaction laundering, inaccurate "
+                    "merchant category codes, fabricated beneficial ownership, and routing a terminated "
+                    "merchant through an unrelated company's account. Those practices can produce "
+                    "sponsor termination, withheld residuals, civil exposure, and difficulty obtaining "
+                    "future sponsorship. Mastercard MATCH is a reason-coded merchant screening system, "
+                    "not a universal permanent blacklist and not a problem solved by opening another "
+                    "entity. Obtain the sponsor's stated reason, supporting records, and available "
+                    "correction procedure. Before boarding, reconcile ownership documents, product "
+                    "pages, fulfillment promises, refund terms, descriptor text, and expected geography. "
+                    "A merchant promising delivery in ninety days carries different exposure from "
+                    "a same-day repair shop, even at identical monthly volume. Maintain a trailing "
+                    "unfulfilled-sales estimate: 500 undelivered orders at $120 represent $60,000 "
+                    "of customer exposure before refunds, recoveries, or contractual allocation. "
+                    "That amount is neither ISO revenue nor automatically ISO liability. Determine "
+                    "which agreement transfers which losses. If the sponsor declines the business, "
+                    "stop boarding and discuss a genuinely suitable, fully disclosed alternative. "
+                    "Never coach a merchant to disguise products or split transactions to conceal "
+                    "the underlying business model from underwriting."
+                ),
+                (
+                    "Chargeback monitoring fails when operators rely on one blended percentage or "
+                    "assume an automated refund erases every program signal. Keep sponsor-defined "
+                    "counts, denominators, reporting windows, fraud indicators, and applicable "
+                    "Visa or Mastercard program thresholds versioned by region and effective date. "
+                    "For an internal policy, review a merchant at 50% of its applicable count or "
+                    "ratio limit, then escalate at 75%; a projected breach overrides both checkpoints. "
+                    "Do not substitute these percentages for the actual program methodology. A "
+                    "hypothetical sponsor policy measuring thirty disputes against 5,000 settled "
+                    "transactions yields 0.60%, but another program may measure a different population "
+                    "or month. Verifi RDR and Ethoca services can resolve eligible incidents earlier; "
+                    "coverage, fees, refund timing, and program treatment require explicit confirmation. "
+                    "For illustration, twenty $80 refunds plus twenty $5 alert fees cost $1,700. "
+                    "The benefit depends on avoided handling costs, inventory recovery, and the "
+                    "specific incident's downstream treatment, not simply a lower dashboard count. "
+                    "Use order-level idempotency to prevent an alert refund and a separate support "
+                    "refund from both firing. When fulfillment slips or complaint velocity doubles "
+                    "against a comparable baseline, contact the merchant immediately and coordinate "
+                    "any processing restrictions with the sponsor. An ISO should not invent powers "
+                    "to seize merchant funds."
+                ),
+                (
+                    "Surcharge configuration is another asymmetric trap: a small extra merchant "
+                    "yield can trigger customer complaints, network assessments, and expensive "
+                    "repricing across an entire portfolio. Distinguish a credit-card surcharge "
+                    "from a genuine cash discount or dual-price presentation. Changing the label "
+                    "does not change how the terminal calculates the transaction or what customers "
+                    "see before paying. Visa and Mastercard prohibit surcharges on their debit "
+                    "and prepaid products, including debit transactions processed without a PIN; "
+                    "this is not a blanket surcharge prohibition created by Regulation II. "
+                    "Regulation II separately addresses covered debit interchange and routing "
+                    "requirements. Apply the most restrictive applicable network, sponsor, and "
+                    "state requirement, verifying current caps and required notices directly. "
+                    "For a $100 credit purchase, an illustrative permitted 3% charge produces "
+                    "$103 payable; the same configured debit transaction must not acquire that "
+                    "surcharge. New York General Business Law section 518 requires the highest "
+                    "total credit-card price to be clearly displayed under its applicable terms. "
+                    "Test menus, quotes, ecommerce checkout, receipts, refund behavior, and split "
+                    "tenders rather than inspecting a countertop sign alone. Disable the affected "
+                    "configuration when product classification or displayed pricing fails. Preserve "
+                    "test receipts and software versions so a processor update cannot silently "
+                    "reintroduce the defect."
+                ),
+            ],
+            "table": {
+                "caption": "Sponsor Underwriting, Dispute Automation and Surcharge Defect Matrix",
+                "headers": [
+                    "Risk mechanism and potentially affected relationship",
+                    "Specific evidence or measurable exposure calculation",
+                    "Early-warning condition and required operating interpretation",
+                    "Authorized response preserving sponsor and merchant records",
+                ],
+                "rows": [
+                    [
+                        "Misclassified business activity creates undisclosed sponsor underwriting exposure",
+                        "Compare actual products against merchant category and application disclosures",
+                        "Live checkout sells products absent from the approved application",
+                        "Stop onboarding changes and request explicit sponsor underwriting review",
+                    ],
+                    [
+                        "Unfulfilled orders accumulate exposure faster than residual earnings",
+                        "Five hundred undelivered $120 orders represent $60,000 exposure",
+                        "Delivery backlog exceeds the merchant's documented normal fulfillment cycle",
+                        "Coordinate refund planning and sponsor-directed processing restrictions immediately",
+                    ],
+                    [
+                        "Merchant identity rotation attempts to conceal previous termination",
+                        "Preserve ownership records, termination notices and sponsor correspondence together",
+                        "Proposed replacement account conceals the same underlying merchant activity",
+                        "Reject concealment and use the sponsor's documented correction process",
+                    ],
+                    [
+                        "Blended dispute ratios obscure merchant-specific network program proximity",
+                        "Version applicable counts, denominators, windows and regional program rules",
+                        "Internal review starts at half the applicable program limit",
+                        "Escalate earlier when projected activity would exceed sponsor tolerance",
+                    ],
+                    [
+                        "Automated refunds duplicate separate customer service refund actions",
+                        "Match each alert, order, refund identifier and settlement record",
+                        "One purchase receives multiple successful refunds without documented justification",
+                        "Pause duplicate automation and reconcile with processor support immediately",
+                    ],
+                    [
+                        "Debit transactions receive an impermissible credit-card surcharge configuration",
+                        "Run debit, prepaid and credit tests through production-equivalent checkout",
+                        "Any debit or prepaid test acquires the surcharge",
+                        "Disable affected surcharge logic and document remediation with processor",
+                    ],
+                    [
+                        "Posted prices conflict with applicable total-price display requirements",
+                        "Compare shelf prices, menus, checkout screens and final receipts",
+                        "Customer sees a higher credit total only after ordering",
+                        "Correct every customer touchpoint before restoring the affected pricing",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four facts before activating a merchant or price change",
+                "body": "Activation follows evidence, not a salesperson's confidence or an unreviewed terminal default.",
+                "items": [
+                    "Match beneficial ownership, merchant category, products, descriptor and fulfillment terms to the sponsor-approved application; obtain review for material deviations.",
+                    "Load the current sponsor-specific dispute rules with exact denominators and effective dates; assign an owner for the 50% and 75% internal warning levels.",
+                    "Test credit, debit, prepaid, refund and split-tender behavior; retain screenshots and receipts showing both correct classification and required price presentation.",
+                    "Document reserve terms, loss recourse, residual vesting and clawback provisions, then confirm the operating cash forecast can absorb the accepted exposure.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Separate ATM surcharge economics from vault-cash survival",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "An ATM can appear profitable while draining cash because withdrawal principal "
+                    "and surcharge revenue move through different settlement paths. Consider an "
+                    "illustrative venue producing 800 monthly withdrawals at a $3.50 surcharge: "
+                    "customer surcharge collections equal $2,800. If the venue receives $0.75 "
+                    "per withdrawal under an agency arrangement, its $600 share leaves $2,200 "
+                    "of retained surcharge revenue for this example. Treat contractual routing "
+                    "and settlement fees consistently with the selected accounting policy; do "
+                    "not deduct a retained-share allocation twice. Suppose $200 of processing "
+                    "costs, $400 of servicing, $100 of connectivity and monitoring, and $200 "
+                    "of other operating expense then leave $1,300 monthly contribution before "
+                    "additional portfolio overhead and taxes. These are unit sensitivities, "
+                    "not a reconstruction of the three canonical scenarios. At a $100 "
+                    "average withdrawal, the machine dispenses $80,000 of monthly principal, "
+                    "which is not operator revenue. A $10,000 cassette requires replenishment "
+                    "according to actual demand and settlement timing, not a simplistic "
+                    "monthly average. Record the ownership of every dollar loaded, the "
+                    "settlement receivable created by dispensing, and each balancing adjustment. "
+                    "A shortage is an incident requiring evidence, not a miscellaneous fee "
+                    "quietly buried beneath attractive surcharge totals. Reconcile the machine "
+                    "journal before distributing venue payments."
+                ),
+                (
+                    "The next traps are ignoring physical custody, buying unsuitable insurance, "
+                    "and treating venue exclusivity as permanent demand. At the example's "
+                    "$1,300 monthly contribution, an uninsured $10,000 cash loss consumes "
+                    "about 7.7 months of contribution before deductibles or repair expense. "
+                    "Check cash-in-machine, cash-in-transit, employee dishonesty, unattended "
+                    "vehicle, anchoring, alarm, and cash-limit conditions with the actual "
+                    "policy wording. A certificate alone does not establish coverage for "
+                    "the operating method. Use dual custody where practical, sealed "
+                    "containers, documented cassette counts, and access logs that separate "
+                    "cash handling from settlement adjustments. Avoid publishing replenishment "
+                    "routes or predictable cash balances. Contract for site access, "
+                    "electricity, telecommunications, relocation rights, venue sale, early "
+                    "termination, and removal of the machine; exclusivity without access "
+                    "can strand both equipment and cash. Observe applicable accessibility "
+                    "requirements, including the 2010 ADA Standards section 707 where "
+                    "applicable, rather than assuming a functioning dispenser is an "
+                    "acceptable installation. Before buying a location, inspect withdrawal "
+                    "history across ordinary weeks and seasonal troughs. A festival "
+                    "month is not a recurring baseline. If the venue closes or "
+                    "access becomes unsafe, stop dispatching cash and activate the "
+                    "contractual retrieval plan with the property operator."
+                ),
+                (
+                    "Regulation E, 12 CFR 1005.16, requires a fee-charging ATM operator "
+                    "to disclose the fee on screen or on paper before the consumer "
+                    "is committed and to obtain the consumer's election to continue. "
+                    "Federal law no longer requires the former exterior fee placard; "
+                    "other applicable requirements still need separate review. Test "
+                    "cancel behavior and compare the disclosed amount with journal "
+                    "and settlement records after every surcharge change. FinCEN's "
+                    "FIN-2007-G006 addresses limited-service ATM owner-operators; do not "
+                    "extend that analysis automatically to cash acceptance, stored-value "
+                    "loading, crypto exchange, or money transmission. A changed service "
+                    "requires fresh classification against 31 CFR 1010.100 and applicable "
+                    "state rules. Operationally, use remote telemetry to alert when "
+                    "forecast cash falls below the next service window's stressed "
+                    "demand, not merely when the cassette reaches an arbitrary percentage. "
+                    "If weekend demand could reach $6,000 before replenishment, a "
+                    "$4,000 balance is already inadequate. Treat any unexplained cash "
+                    "difference as an immediate incident; escalate dispatch according "
+                    "to safety and severity. Alert on two missed fifteen-minute "
+                    "heartbeats as an internal connectivity policy, then distinguish "
+                    "telecom failure from dispenser faults. Disable affected service "
+                    "when cash accounting or fee presentation cannot be trusted, "
+                    "and preserve journals before resetting equipment."
+                ),
+            ],
+            "table": {
+                "caption": "ATM Cash Custody, Retained Surcharge and Reg E Control Matrix",
+                "headers": [
+                    "Failure mode and exposed operating asset",
+                    "Unit economics or documentary control evidence",
+                    "Specific telemetry condition requiring immediate triage",
+                    "Recovery action with accounting and custody preserved",
+                ],
+                "rows": [
+                    [
+                        "Withdrawal principal inflates reported ATM operating revenue figures",
+                        "Eight hundred $100 withdrawals create $80,000 principal movement",
+                        "Revenue reports include amounts used to replenish cash cassettes",
+                        "Separate principal settlement from retained surcharge revenue immediately",
+                    ],
+                    [
+                        "Venue revenue shares get deducted twice during reporting",
+                        "Gross surcharges of $2,800 less $600 leave $2,200",
+                        "The retained revenue ledger repeats the venue share expense",
+                        "Correct accounting mapping and reconcile each contractual allocation once",
+                    ],
+                    [
+                        "Thin cassette balances cause predictable weekend service outages",
+                        "Forecast $6,000 demand against only $4,000 available cash",
+                        "Available cash falls below stressed demand before next servicing",
+                        "Arrange authorized safe replenishment or suspend unavailable withdrawal service",
+                    ],
+                    [
+                        "Insurance wording excludes the actual cash handling process",
+                        "A $10,000 uninsured loss consumes roughly 7.7 contribution months",
+                        "Policy exclusions conflict with transport, storage or machine installation",
+                        "Change operating procedures or coverage before exposing additional cash",
+                    ],
+                    [
+                        "Fee changes bypass correct advance disclosure and customer election",
+                        "Compare displayed surcharge, cancel behavior, journal and settlement amounts",
+                        "Any tested transaction charges a fee different from disclosure",
+                        "Disable affected fee configuration and preserve transaction evidence immediately",
+                    ],
+                    [
+                        "Telemetry silence masks dispenser failures or interrupted connectivity",
+                        "Two missed fifteen-minute heartbeats trigger internal connectivity triage",
+                        "Machine fails heartbeat checks across the configured monitoring window",
+                        "Diagnose remotely before arranging an authorized safe onsite inspection",
+                    ],
+                    [
+                        "Expanded ATM services invalidate assumptions about regulatory classification",
+                        "Document every cash acceptance, stored-value or transmission service change",
+                        "Proposed functionality extends beyond the reviewed limited-service withdrawal model",
+                        "Review federal and state classification before enabling new functionality",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Stress-test acquisition, concentration and incident liquidity before scaling",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mapped play google_maps_gbp_lead_gen_network, Multi-Location Google Business "
+                    "Profile Local-Pack Grid Arbitrage, TRACK_2, can introduce real tradespeople "
+                    "to merchant services, but lead-generation entities themselves are not eligible "
+                    "for Google Business Profiles. The eligible trade business must own its "
+                    "representation and authorize management. Never create fictitious shops, "
+                    "duplicate branches, or rented-address listings to manufacture coverage. "
+                    "Use the specified fallback: launch only with a real partner's physical "
+                    "shop or yard capable of passing live video verification, paired "
+                    "with organic city rank-and-rent pages. Physical existence alone is "
+                    "insufficient; verify actual staffing, operations, signage where required, "
+                    "and customer-facing eligibility. A service-area business that does not "
+                    "receive customers at its address should hide that address and "
+                    "follow Google's service-area rules. For illustrative acquisition math, "
+                    "$600 of monthly content and call-tracking expense producing thirty "
+                    "qualified calls costs $20 per call. Six completed jobs at "
+                    "a disclosed $150 referral fee produce $900 gross referral revenue "
+                    "and $300 contribution before additional costs. Those referral earnings "
+                    "are outside this candidate's canonical retained-payment revenue basis "
+                    "and must remain separate. Any resulting processing referral needs "
+                    "its own authorized application, acquisition cost, and residual "
+                    "measurement. Do not count a phone call as a boarded merchant."
+                ),
+                (
+                    "Call tracking must preserve an accurate business identity and a "
+                    "working route to the real partner; use a partner-controlled local "
+                    "number and authorized forwarding configuration that follows current "
+                    "Google guidance. Review automation should request genuine customer "
+                    "feedback consistently, without fabricated reviews, incentives tied "
+                    "to sentiment, or filtering unhappy customers away from public "
+                    "review channels. Recording calls introduces separate requirements: "
+                    "18 U.S.C. 2511 contains federal interception rules and exceptions, "
+                    "while California Penal Code section 632 can require all-party "
+                    "consent for confidential communications. Configure recording and "
+                    "notices for the actual jurisdictions, or disable recording when "
+                    "the necessary conditions are unresolved. Organic city pages must "
+                    "describe the real service relationship and coverage, not imply "
+                    "nonexistent branches. If a profile is suspended, stop adding "
+                    "listings, preserve verification evidence, use the documented appeal "
+                    "route, and maintain acquisition through truthful organic pages "
+                    "and partner referrals. Payment acquisition has its own unit "
+                    "test: a $900 acquisition cost against $150 monthly retained "
+                    "residual has six-month revenue payback, not profit payback. "
+                    "With $30 monthly incremental servicing expense, contribution "
+                    "is $120 and payback becomes 7.5 months before attrition "
+                    "or clawbacks. Decline expansion when observed cohort survival "
+                    "does not support that recovery period."
+                ),
+                (
+                    "The final trap is treating profitable averages as protection "
+                    "against concentrated cash interruption. Track revenue by sponsor, "
+                    "merchant group, venue owner, acquisition channel, and common "
+                    "beneficial owner. If 40% of Base retained revenue depends "
+                    "on one sponsor, a three-month payout hold affects "
+                    "$44,500 of cash receipts at a uniform run rate: "
+                    "$445,000 multiplied by 40% and three-twelfths. That is "
+                    "a liquidity stress, not automatically lost revenue; permanent "
+                    "termination requires a separate earnings-loss scenario. The "
+                    "Base expense envelope averages about $21,323 monthly, "
+                    "although actual payment dates and variable expenses govern "
+                    "cash needs. Maintain a thirteen-week cash forecast that "
+                    "separates collectible holds, anticipated clawbacks, ordinary "
+                    "expenses, and restricted vault cash. Do not assume the "
+                    "$8,000–$45,000 startup range covers a mature portfolio's "
+                    "incident exposure. Run a weekly exception meeting with "
+                    "one accountable owner and named contractors for residual "
+                    "audit, merchant support, and field service. Conservative "
+                    "and Base staffing remain 1 FT plus 3 C; "
+                    "Scaled remains 2 FT plus 4 C. If exceptions "
+                    "consume available capacity, slow boarding rather than "
+                    "silently adding unbudgeted labor. Resume expansion only "
+                    "after reconciliations close, affected controls pass retests, "
+                    "and the cash forecast survives the specific incident "
+                    "being modeled."
+                ),
+            ],
+            "table": {
+                "caption": "Legitimate GBP Acquisition, Cohort Payback and Concentration Stress Matrix",
+                "headers": [
+                    "Acquisition or concentration trap under examination",
+                    "Evidence and explicit contribution or liquidity calculation",
+                    "Warning condition requiring a documented operating decision",
+                    "Fallback preserving legitimate acquisition and controlled cash use",
+                ],
+                "rows": [
+                    [
+                        "Lead generator creates profiles instead of representing eligible businesses",
+                        "Confirm real partner ownership, operations and authorized profile management",
+                        "Listing represents an intermediary rather than the actual trade business",
+                        "Use eligible partner profiles and truthful organic service pages",
+                    ],
+                    [
+                        "Physical address exists but fails actual location eligibility",
+                        "Retain operational evidence suitable for legitimate live video verification",
+                        "Location lacks required staffing or falsely implies customer access",
+                        "Correct service-area presentation or defer the proposed profile launch",
+                    ],
+                    [
+                        "Referral income gets blended into canonical payment residual revenue",
+                        "Thirty calls cost $600 while six referrals produce $900",
+                        "Referral invoices inflate the scorecard's retained-payment revenue reporting",
+                        "Maintain separate acquisition economics and exclude unrelated referral earnings",
+                    ],
+                    [
+                        "Review automation manufactures reputation through sentiment filtering tactics",
+                        "Audit invitation rules, customer samples and published review patterns",
+                        "Unhappy customers receive systematically different public review access",
+                        "Remove selective routing and request genuine feedback consistently",
+                    ],
+                    [
+                        "Recorded calls lack jurisdiction-appropriate interception and confidentiality controls",
+                        "Map caller jurisdictions against recording settings and notice behavior",
+                        "Recording starts before required conditions have been established",
+                        "Disable recording while retaining lawful call routing and attribution",
+                    ],
+                    [
+                        "Revenue payback obscures servicing costs and merchant attrition",
+                        "A $900 acquisition cost divided by $120 yields 7.5 months",
+                        "Observed cohort survival falls short of contribution recovery time",
+                        "Reduce acquisition spending and improve retention before further expansion",
+                    ],
+                    [
+                        "One sponsor payout hold threatens otherwise profitable operating liquidity",
+                        "Forty percent of Base revenue held quarterly equals $44,500",
+                        "Thirteen-week forecast becomes negative without using restricted vault cash",
+                        "Preserve liquidity and execute contractually permitted concentration reduction",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Capture the exception without destroying evidence",
+                    "action": "Open one incident record linking the merchant, ATM, sponsor or eligible partner profile to its source evidence.",
+                    "detail": "Preserve statements, journals, contract versions, screenshots and timestamps before equipment resets, configuration changes or appeal submissions.",
+                },
+                {
+                    "step": 2,
+                    "title": "Quantify earnings, cash and principal separately",
+                    "action": "Calculate lost contribution, delayed receivables, contractual recourse and restricted principal as distinct amounts.",
+                    "detail": "Use the canonical revenue basis and keep merchant settlement, ATM vault cash and unrelated referral earnings outside retained-payment revenue.",
+                },
+                {
+                    "step": 3,
+                    "title": "Apply the narrow authorized circuit-breaker",
+                    "action": "Pause the affected acquisition spend, pricing configuration, onboarding activity or ATM service while assigning the correct counterparty.",
+                    "detail": "Use sponsor-directed merchant restrictions, authorized site access and documented Google appeals rather than identity substitution or improvised control over customer funds.",
+                },
+                {
+                    "step": 4,
+                    "title": "Retest the repaired control and fund the recovery",
+                    "action": "Close reconciliation differences, repeat affected transaction tests and update the thirteen-week cash forecast before resuming expansion.",
+                    "detail": "Require an accountable owner, preserved evidence and a recurrence monitor; include recovery labor within the applicable scorecard expense envelope.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The residual is yours only after the contract, the reconciliation and the cash position agree.",
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        "Reconcile twelve months of retained residual statements to bank receipts, signed Schedule A versions and merchant-level deduction codes before buying or valuing a portfolio.",
+        "Calculate incentive clawbacks, accepted merchant-loss recourse and payout-hold exposure separately, then place each obligation or timing stress into a thirteen-week cash forecast.",
+        "Load current sponsor and network monitoring methodologies, assign merchant-level warning owners, and test alert-refund idempotency before enabling dispute automation.",
+        "Run credit, debit, prepaid, refund and split-tender tests across every pricing configuration; preserve required price displays, receipts and software versions.",
+        "Reconcile each ATM journal to cassette counts and settlement receivables; test Reg E fee election, cash-demand alerts, insurance conditions and safe service access.",
+        "Launch google_maps_gbp_lead_gen_network only through eligible real partner businesses, pair profiles with truthful organic city pages, and measure payment-residual payback separately from referral income.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "12 CFR 1005.16 — Disclosures at automated teller machines",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.16",
+            "relevance": "Requires applicable ATM fee disclosure before commitment and the consumer's election to continue; supports screen, paper, cancellation and settlement testing.",
+        },
+        {
+            "title": "31 CFR 1010.100(ff) — Money services business definitions",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
+            "relevance": "Provides federal classification definitions relevant when an ATM operator expands beyond the limited-service withdrawal model addressed in FinCEN FIN-2007-G006.",
+        },
+        {
+            "title": "12 CFR 235.7 — Limitations on payment card restrictions",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235/section-235.7",
+            "relevance": "Addresses debit network exclusivity and routing restrictions; these requirements must be distinguished from card-network debit surcharge prohibitions.",
+        },
+        {
+            "title": "New York General Business Law section 518 — Credit card surcharge",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/518",
+            "relevance": "Establishes applicable surcharge and total credit-price display requirements, making posted prices and checkout presentation part of merchant configuration testing.",
+        },
+        {
+            "title": "18 U.S.C. 2511 — Interception and disclosure of wire, oral or electronic communications",
+            "url": "https://www.law.cornell.edu/uscode/text/18/2511",
+            "relevance": "Supplies federal interception rules and exceptions relevant to call-tracking recordings; state confidentiality and recording requirements require separate application.",
+        },
+        {
+            "title": "California Penal Code section 632 — Confidential communications",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
+            "relevance": "Addresses recording confidential communications without all-party consent, informing jurisdiction-specific recording controls for partner lead-routing operations.",
+        },
+        {
+            "title": "28 CFR 36.406 — Standards for new construction and alterations",
+            "url": "https://www.ecfr.gov/current/title-28/chapter-I/part-36/subpart-D/section-36.406",
+            "relevance": "Incorporates applicable accessibility standards for covered construction and alterations; ATM installations require assessment of relevant scoping and section 707 technical requirements.",
+        },
+    ],
+}

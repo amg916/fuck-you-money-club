@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-placement-to-collection",
+      "chart_type": "process_flow",
+      "title": "Control the Placement Before Buying the Lease",
+      "subtitle": "Five linked records connect payer authority to collected housing cash.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Operating framework for authorized ALE and corporate placements lasting approximately 30–270 days. A referral is neither payment authorization nor a signed occupancy agreement.",
+      "caption": "The control point is a documented match among landlord permission, payer commitment, occupant terms, and lease exposure.",
+      "stages": [
+        {
+          "label": "Qualify the placement",
+          "value": "Capture payer, dates, household, and authorized budget",
+          "numeric_value": 1.0,
+          "detail": "Record the contracting payer, claim or purchase-order reference, household requirements, covered dates, and spending limit in Airtable. Obtain written authority before representing a carrier as the debtor."
+        },
+        {
+          "label": "Secure lawful inventory",
+          "value": "Obtain explicit landlord corporate-housing sublease permission",
+          "numeric_value": 2.0,
+          "detail": "Execute a property-specific written addendum covering corporate occupants, subletting, furnished use, access, maximum occupancy, and lease-break terms; reject verbal permission and conflicting building restrictions."
+        },
+        {
+          "label": "Price the exposure",
+          "value": "Match approved stay economics against committed lease costs",
+          "numeric_value": 3.0,
+          "detail": "Quote rent, included utilities, utility caps, taxes, deposits, and extension pricing separately. Stress-test an early claim closeout against remaining landlord rent and the next realistically obtainable placement."
+        },
+        {
+          "label": "Deliver and extend",
+          "value": "Document readiness, access, and written extension authority",
+          "numeric_value": 4.0,
+          "detail": "Capture condition photographs and a readiness checklist; issue time-limited smart-lock access. Use authorized ALE or CRS portal exports to reconcile dates, and request extensions before current funding expires."
+        },
+        {
+          "label": "Collect and reconcile",
+          "value": "Match invoices, receipts, deposits, and landlord settlements",
+          "numeric_value": 5.0,
+          "detail": "Reconcile approved nights and documented utility-cap charges in QuickBooks Online. Keep refundable deposits separate from earnings; close access credentials and record vacancy exposure when occupants depart."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-authorized-placement-funnel",
+      "chart_type": "funnel",
+      "title": "A Placement Funnel with Traceable Denominators",
+      "subtitle": "One 100-request cohort narrows to twelve executed, funded starts.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative acquisition cohort, not observed conversion data or an annual revenue forecast. Each stage is a subset of the preceding stage; use one request identifier throughout.",
+      "caption": "Track loss reasons separately: missing authority, inventory mismatch, rejected terms, or an unfunded start.",
+      "stages": [
+        {
+          "label": "Received housing requests",
+          "value": "100 requests captured within one intake cohort",
+          "numeric_value": 100.0,
+          "detail": "Deduplicate requests across adjusters, relocation desks, and authorized housing portals. Count one household or corporate assignment once, even when multiple properties are proposed."
+        },
+        {
+          "label": "Payer-qualified requests",
+          "value": "60 requests retain documented authority and budget",
+          "numeric_value": 60.0,
+          "detail": "Sixty percent of intake passes payer identity, approved dates, and budget checks. Reject unsupported promises that a later claim decision will reimburse the stay."
+        },
+        {
+          "label": "Inventory-matched requests",
+          "value": "36 qualified requests match permitted ready inventory",
+          "numeric_value": 36.0,
+          "detail": "Sixty percent of qualified requests fit landlord permission, location, household needs, readiness date, and occupancy limits; apply consistent screening and reasonable-accommodation procedures where required."
+        },
+        {
+          "label": "Accepted commercial terms",
+          "value": "18 matched requests accept documented pricing and terms",
+          "numeric_value": 18.0,
+          "detail": "Half of matched requests accept the complete quote, including taxes, utility caps, cancellation exposure, extension mechanics, and the responsible contracting payer."
+        },
+        {
+          "label": "Executed funded starts",
+          "value": "12 accepted requests become executed funded placements",
+          "numeric_value": 12.0,
+          "detail": "Two-thirds of accepted requests produce signed agreements and the required deposit or documented credit terms. Overall cohort conversion is twelve percent; placement count alone does not establish annual billings."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-billings-to-owner-profit",
+      "chart_type": "waterfall",
+      "title": "From $790,000 Gross Billings to $150,100 Owner Profit",
+      "subtitle": "Six bars reconcile the 45% retained spread and 19.0% gross-basis margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Formula v2.0 canonical Base totals: $790,000 gross billings, $355,500 retained revenue, and $150,100 annual owner profit. The three operating-expense categories are illustrative allocations totaling $205,400, not supplied line-item forecasts. First and last bars are totals; intervening negative values are deductions. The 45% retained presentation follows the supplied ASC 606 scorecard convention; actual reporting requires the contract-specific principal-versus-agent assessment.",
+      "caption": "$790,000 − $434,500 − $96,000 − $72,000 − $37,400 = $150,100. Owner profit is 19.0% of gross billings and 42.22% of retained revenue.",
+      "stages": [
+        {
+          "label": "Gross housing billings",
+          "value": "$790,000 annual customer housing billings before deductions",
+          "numeric_value": 790000.0,
+          "detail": "Opening total represents billed housing activity, not underlying property value or retained operator revenue. Refundable deposits and taxes collected solely for remittance are outside this modeled total."
+        },
+        {
+          "label": "Landlord rent and utilities",
+          "value": "Subtract $434,500 for the 55% pass-through share",
+          "numeric_value": -434500.0,
+          "detail": "Landlord master-lease rent and utility pass-throughs consume fifty-five percent of billings, leaving $355,500 retained revenue at the canonical forty-five percent retained share."
+        },
+        {
+          "label": "Delivery labor expense",
+          "value": "Subtract $96,000 for modeled non-owner delivery labor",
+          "numeric_value": -96000.0,
+          "detail": "Illustrative contractor and support-labor expense covers placement coordination, field execution, and billing. The owner's full-time seat receives the remaining modeled owner profit rather than a second salary deduction."
+        },
+        {
+          "label": "Property services and systems",
+          "value": "Subtract $72,000 for services, insurance, and operating systems",
+          "numeric_value": -72000.0,
+          "detail": "Illustrative expense covers turnover services, maintenance, commercial insurance, access hardware support, and software subscriptions. Exclude landlord rent and utility amounts already deducted in the pass-through bar."
+        },
+        {
+          "label": "Acquisition and administration",
+          "value": "Subtract $37,400 for acquisition and administrative expenses",
+          "numeric_value": -37400.0,
+          "detail": "Illustrative expense includes referral acquisition, payment processing, bookkeeping, and general administration. Total post-spread operating expense is $205,400 annually, or $17,116.67 monthly before rounding."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$150,100 remains after all modeled operating deductions",
+          "numeric_value": 150100.0,
+          "detail": "Closing total is the canonical Base owner profit, not another positive increment. Divide by $790,000 for 19.0% gross-basis margin or by $355,500 for 42.22% retained-basis margin."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-placement-rail-retained-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Retained Spread Before Overhead",
+      "subtitle": "Illustrative retained dollars per $100 of housing billings.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Independent underwriting examples, not measured market yields or a weighted portfolio forecast. Each bar subtracts only landlord rent and utility pass-throughs. The canonical portfolio retained share remains 45%; these bars are not owner net margins.",
+      "caption": "A higher apparent spread can disappear through vacancy, slow collection, chargebacks, or an unpriced lease extension.",
+      "stages": [
+        {
+          "label": "Authorized ALE housing invoice",
+          "value": "$48 retained per $100 under this illustration",
+          "numeric_value": 48.0,
+          "detail": "Illustrative $52 landlord-and-utility cost leaves $48 before overhead. Require a named contracting payer and written coverage dates; an adjuster referral alone does not establish carrier payment liability."
+        },
+        {
+          "label": "Employer purchase-order ACH",
+          "value": "$45 retained per $100 under this illustration",
+          "numeric_value": 45.0,
+          "detail": "Illustrative $55 landlord-and-utility cost leaves $45 before overhead. Match employer purchase-order limits, invoice routing, and ACH settlement terms; fund the gap between landlord due dates and customer receipts."
+        },
+        {
+          "label": "Relocation intermediary invoice",
+          "value": "$42 retained per $100 under this illustration",
+          "numeric_value": 42.0,
+          "detail": "Illustrative $58 landlord-and-utility cost leaves $42 before overhead. Identify the intermediary's actual payment obligation and separately expense any platform or placement fee rather than hiding it in rent."
+        },
+        {
+          "label": "Healthcare staffing housing",
+          "value": "$46 retained per $100 under this illustration",
+          "numeric_value": 46.0,
+          "detail": "Illustrative $54 landlord-and-utility cost leaves $46 before overhead. Align assignment cancellation terms with landlord exposure and document who pays when a worker changes facilities or leaves early."
+        },
+        {
+          "label": "Direct corporate card booking",
+          "value": "$44 retained per $100 under this illustration",
+          "numeric_value": 44.0,
+          "detail": "Illustrative $56 landlord-and-utility cost leaves $44 before overhead. Deduct card-processing costs later as operating expense and preserve signed occupancy records for billing disputes and chargeback responses."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-property-and-placement-preflight",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before a Binding Housing Commitment",
+      "subtitle": "Every check must pass; a failed branch returns to remediation.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Sequential decision framework, not a numerical risk score. Cited state provisions apply only in their jurisdictions. Assess the actual property, occupancy classification, contracting structure, and local rules.",
+      "caption": "Written permission, tax treatment, dwelling readiness, and funded risk allocation must agree before committing rent.",
+      "stages": [
+        {
+          "label": "Landlord authority",
+          "value": "Pass with explicit permission; otherwise stop lease commitment",
+          "numeric_value": 1.0,
+          "detail": "Obtain an executed corporate-housing sublease addendum for every property. Check lease, building, and local restrictions; New York Real Property Law section 226-b has scope and procedure limits and is not blanket permission for corporate subletting."
+        },
+        {
+          "label": "Occupancy and tax treatment",
+          "value": "Pass with documented classification; otherwise reprice or decline",
+          "numeric_value": 2.0,
+          "detail": "Review lodging classification and state plus local occupancy taxes. Texas Tax Code section 156.101 addresses the state permanent-resident exemption for at least thirty consecutive days with uninterrupted payment; do not export that rule nationwide."
+        },
+        {
+          "label": "Habitability and fair housing",
+          "value": "Pass with readiness evidence; otherwise repair before occupancy",
+          "numeric_value": 3.0,
+          "detail": "Inspect required heating, plumbing, electrical safety, and dwelling conditions; California Civil Code section 1941.1 supplies California requirements. Apply 42 U.S.C. 3604 and 24 CFR 100.202 where applicable to screening and disability-related housing practices."
+        },
+        {
+          "label": "Insurance and closeout exposure",
+          "value": "Pass with funded exposure; otherwise renegotiate before signing",
+          "numeric_value": 4.0,
+          "detail": "Have the broker confirm furnished corporate-sublet coverage, exclusions, and required liability limits. Compare early claim closeout with landlord lease-break costs, verify commercial insurance requirements, and assign utility overruns and uninsured losses explicitly."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-seat-pod",
+      "chart_type": "org_architecture",
+      "title": "Four Core Seats, Six at Scale",
+      "subtitle": "The placement seat converts to full-time before two contractor additions.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time; C means contractor. Core pod: owner 1 FT plus placement, property, and billing 3 C. Scaled pod: owner and placement 2 FT plus property, billing, inventory, and coverage 4 C. Each node represents one person when active; the last two nodes activate only in the scaled scenario. Worker classification follows actual working arrangements.",
+      "caption": "Conservative: $180,000 gross, $81,000 retained, $21,600 profit at 12% gross margin and 26.67% retained margin. Base: $790,000 gross, $355,500 retained, $150,100 profit at 19.0% and 42.22%. Scaled: $1,400,000 gross, $630,000 retained, $364,000 profit at 26% and 57.78%.",
+      "stages": [
+        {
+          "label": "Owner and commercial lead",
+          "value": "Core and scaled: one full-time accountable operator",
+          "numeric_value": 1.0,
+          "detail": "Own landlord commitments, payer credit terms, pricing floors, cash exposure, and placement exceptions. Review a weekly forward vacancy schedule and aged receivables before accepting additional fixed lease obligations."
+        },
+        {
+          "label": "Placement and extension lead",
+          "value": "Core: one contractor; scaled: one full-time lead",
+          "numeric_value": 1.0,
+          "detail": "Own intake, approved budgets, inventory matching, and extension reminders. Reconcile authorized ALE or CRS portal records with Airtable; use supported integrations or permitted exports rather than assuming API access."
+        },
+        {
+          "label": "Property readiness lead",
+          "value": "Core and scaled: one contracted property-readiness specialist",
+          "numeric_value": 1.0,
+          "detail": "Own inspections, turnover scheduling, access provisioning, and vendor dispatch. Use smart locks plus disclosed leak and noise-level telemetry; avoid recording private conversations or using cameras inside occupied homes."
+        },
+        {
+          "label": "Billing and collections lead",
+          "value": "Core and scaled: one contracted billing specialist",
+          "numeric_value": 1.0,
+          "detail": "Own QuickBooks Online invoices, approved utility-cap charges, payment matching, deposit liabilities, and extension billing. Escalate overdue balances before additional unfunded nights accumulate."
+        },
+        {
+          "label": "Inventory onboarding specialist",
+          "value": "Scaled addition: one contractor for incremental property onboarding",
+          "numeric_value": 1.0,
+          "detail": "Activate only in the six-person configuration. Assemble landlord addenda, property specifications, tax treatment records, readiness photographs, and insurance evidence without shifting final lease authority from the owner."
+        },
+        {
+          "label": "Service coverage specialist",
+          "value": "Scaled addition: one contractor for extended service coverage",
+          "numeric_value": 1.0,
+          "detail": "Activate only in the six-person configuration. Provide documented incident triage and extension follow-up coverage; route emergencies to appropriate responders and log handoffs to the property lead."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Startup Cash Before Adding Fixed Rent",
+      "subtitle": "Four buckets reconcile $12,000 lean, $30,000 planning, and $60,000 upper budgets.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative allocations within the canonical $12,000–$60,000 startup range. Numeric values encode the $30,000 planning stack; each stage also supplies lean and upper allocations. Weights remain 30%, 35%, 20%, and 15%. These are cash uses, not four immediate profit-and-loss expenses.",
+      "caption": "Lean totals $12,000; planning totals $30,000; upper totals $60,000. Validate deposits and furnishing quotes before choosing a property count.",
+      "stages": [
+        {
+          "label": "Lease-entry cash",
+          "value": "$3,600 lean; $9,000 planning; $18,000 upper allocation",
+          "numeric_value": 9000.0,
+          "detail": "Thirty percent funds landlord security deposits and contractually required prepaid rent. Track refundable deposits as assets and prepaid rent by service period; neither is automatically an immediate operating expense."
+        },
+        {
+          "label": "Furniture and property setup",
+          "value": "$4,200 lean; $10,500 planning; $21,000 upper allocation",
+          "numeric_value": 10500.0,
+          "detail": "Thirty-five percent funds furniture, linens, kitchen equipment, installation, and initial readiness work. Obtain property-specific quotes; distinguish durable assets from consumables and avoid assuming one budget equips an arbitrary number of units."
+        },
+        {
+          "label": "Vacancy and collection liquidity",
+          "value": "$2,400 lean; $6,000 planning; $12,000 upper allocation",
+          "numeric_value": 6000.0,
+          "detail": "Twenty percent remains available for vacancy gaps, payer delays, and early-closeout rent exposure. This cash reserve is not a deductible expense merely because it has been assigned to a budget bucket."
+        },
+        {
+          "label": "Launch systems and risk setup",
+          "value": "$1,800 lean; $4,500 planning; $9,000 upper allocation",
+          "numeric_value": 4500.0,
+          "detail": "Fifteen percent funds insurance inception payments, contract preparation, access equipment, bookkeeping setup, and workflow configuration. Separate recurring charges from prepayments and installed assets."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Build a Placement-Ready Desk in Thirty Days",
+      "subtitle": "Four weekly milestones establish evidence before expanding lease exposure.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The sprint prepares operations; canonical time to first deal remains one to three months. Numeric values are milestone end days, not expected placements. Initial commitments must fit available capital and documented payer demand.",
+      "caption": "End the month with permissioned inventory, tested billing, clear responsibility, and a controlled live-placement pipeline.",
+      "stages": [
+        {
+          "label": "Days 1–7",
+          "value": "Choose one service area and document operating constraints",
+          "numeric_value": 7.0,
+          "detail": "Map landlord permission requirements, occupancy taxes, habitability rules, and insurance needs. Build a thirteen-week cash forecast using the $3,000–$18,000 monthly operating-expense envelope and separately model landlord rent and utility pass-through timing."
+        },
+        {
+          "label": "Days 8–14",
+          "value": "Qualify inventory and complete the property permission file",
+          "numeric_value": 14.0,
+          "detail": "Inspect candidate units, obtain furnishing quotes, and negotiate explicit corporate-housing sublease addenda. Obtain broker coverage confirmation and calculate the cash loss from an early departure followed by an unfilled lease period."
+        },
+        {
+          "label": "Days 15–21",
+          "value": "Test intake, extension tracking, access, and invoice reconciliation",
+          "numeric_value": 21.0,
+          "detail": "Configure Airtable records, authorized portal exports, QuickBooks Online invoice mapping, and smart-lock expiry. Run a synthetic placement through extension, utility overage, partial payment, and early-closeout cases without transmitting invented customer records."
+        },
+        {
+          "label": "Days 22–30",
+          "value": "Open qualified referrals and review every proposed commitment",
+          "numeric_value": 30.0,
+          "detail": "Contact relevant insurance housing coordinators and corporate relocation desks with verified inventory facts. Track the nested request cohort, evaluate signed payer terms, and commit only exposure the cash forecast can support if first collection slips."
+        }
+      ]
+    }
+  ]
+}

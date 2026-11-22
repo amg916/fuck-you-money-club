@@ -1,0 +1,675 @@
+from __future__ import annotations
+
+CHAPTER_1 = {
+    "id": "Q1",
+    "chapter_id": "Q1",
+    "chapter_number": 1,
+    "question_number": 1,
+    "slug": "subject-to-wraparound-note-arbitrage-operating-model",
+    "question_prompt": "What exactly is subject-to & wraparound note arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
+    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+    "title": "What Exactly Is Subject-To & Wraparound Note Arbitrage?",
+    "subtitle": "Low-Rate Debt, RMLO-Underwritten Wrap Notes, Garn-St Germain Transfer Risk, and Licensed-Servicer Cash Waterfalls",
+    "layout_template": "opportunity_overview",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #35, Subject-To & Wraparound Note Arbitrage, ranks #09 of 36 "
+        "with a 90/100 Money-to-Manpower Score. The operator acquires property "
+        "subject to existing low-rate debt, then finances a qualified buyer "
+        "through a lawful wraparound note. Revenue means retained upfront "
+        "economics and interest spread, never property value or debt-service "
+        "throughput. This chapter organizes 11 mapped plays: two specified "
+        "cross-shelf plays and nine supporting operating applications. Canonical "
+        "annual owner profits are $28,000 Conservative, $190,000 Base, and "
+        "$442,000 Scaled. Durable returns require licensed RMLO underwriting, "
+        "licensed third-party servicing, verified underlying payments, and a "
+        "funded acceleration exit. The moat is a documented performing-note "
+        "system; a large coupon without transfer-risk reserves is merely "
+        "leveraged exposure."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual retained upfront economics and wrap interest margin",
+            "note": "28% margin; $28,000 owner profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$475,000",
+            "context": "Annual retained upfront economics and wrap interest margin",
+            "note": "40.0% margin; $190,000 owner profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$850,000",
+            "context": "Annual retained upfront economics and wrap interest margin",
+            "note": "52% margin; $442,000 owner profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Acquire a financing position, not an exemption from mortgage risk",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Subject-to describes a title acquisition in which an existing mortgage remains "
+                    "attached to the property and the original borrower ordinarily remains liable "
+                    "on the underlying note. It is not a lender-approved assumption, and making "
+                    "payments does not release that borrower. A wraparound resale creates a new "
+                    "buyer obligation that includes the economic burden of the existing debt. "
+                    "The operator collects the wrap payment through a licensed third-party "
+                    "servicer, funds the underlying obligation, and retains the permitted spread "
+                    "after expenses. The specified play, subject_to_wraparound_rmlo_note_spread, "
+                    "targets underlying coupons of 2.75%–4.25% and buyer coupons of 8.5%–9.9%, "
+                    "subject to underwriting, pricing restrictions, and state execution rules. "
+                    "Those bands describe a screening thesis, not an entitlement to charge "
+                    "any particular borrower a particular rate. Start with the actual note, "
+                    "security instrument, payment history, payoff statement, title commitment, "
+                    "insurance declarations, and escrow analysis. A seller's dashboard screenshot "
+                    "cannot establish lien priority, reinstatement cost, or permission to transfer. "
+                    "Record who owns the property, who owes each debt, who services each "
+                    "payment, and who can enforce each remedy. These relationships determine "
+                    "whether the apparent spread survives a missed payment, casualty loss, "
+                    "lender demand, or disputed closing."
+                ),
+                (
+                    "The simplest unit illustration uses a $200,000 underlying balance at 3.5% "
+                    "and a $220,000 wrap balance at 9.0%. Opening-balance annualized interest "
+                    "is $7,000 underneath and $19,800 on the wrap, producing $12,800 before "
+                    "servicing, losses, carrying costs, and overhead. This is an interest "
+                    "snapshot, not a twelve-month amortization forecast. Calculate actual monthly "
+                    "interest on declining balances and split every payment between principal, "
+                    "interest, escrow, and charges. If the resale price is $240,000 and the "
+                    "buyer contributes $20,000, the resulting $220,000 note fits that illustration; "
+                    "neither the $240,000 price nor the entire down payment becomes retained "
+                    "operating revenue. Compare the scheduled underlying payment with the buyer's "
+                    "fully underwritten housing payment, including taxes, insurance, association "
+                    "charges, and applicable assessments. Reject a structure that works only "
+                    "because escrow shortages or repairs are ignored. A $45 monthly servicing "
+                    "budget consumes $540 annually; an additional $2,400 operating reserve "
+                    "allocation reduces distributable cash further, although transferring cash "
+                    "to a reserve is not itself an accounting expense. If acceleration occurs, "
+                    "engage counsel and the servicer, seek lender-approved assumption or "
+                    "refinancing, and execute a documented lawful sale or payoff when necessary."
+                ),
+                (
+                    "Five operator archetypes share the same payment plumbing but require "
+                    "different acquisition discipline. A low-equity seller specialist solves "
+                    "a narrow exit problem; an equity-rich seller specialist must separately "
+                    "fund the seller's equity rather than pretend a cheap first mortgage "
+                    "finances everything. An owner-occupant wrap originator needs a qualified "
+                    "buyer and documented repayment capacity. A performing-note operator earns "
+                    "through collected cash flows rather than repeated closings. An institutional "
+                    "process specialist supplies servicing oversight and evidence management "
+                    "without representing that administration transfers creditor obligations. "
+                    "Use PropStream or ATTOM to identify candidate properties, then verify "
+                    "ownership and recorded liens through authoritative county records and "
+                    "a title professional. Low-equity and pre-foreclosure signals are research "
+                    "inputs, not invitations to pressure distressed households. Map state "
+                    "foreclosure-rescue restrictions before discussing a transaction with an "
+                    "owner facing an active sale date. The practical moat is a network of "
+                    "title personnel, RMLOs, servicers, insurance agents, and local counsel "
+                    "who can reject defective transactions quickly. The beginner mistake is "
+                    "building marketing volume before establishing this rejection capability. "
+                    "One disputed deed or uninsurable transfer can consume several years "
+                    "of modeled interest margin and strand the original borrower."
+                ),
+            ],
+            "table": {
+                "caption": "Five operator archetypes and the financing problem each actually solves",
+                "headers": [
+                    "Operator archetype",
+                    "Acquisition and buyer focus",
+                    "Retained economic engine",
+                    "Durability test and failure response",
+                ],
+                "rows": [
+                    [
+                        "Low-equity seller exit specialist using documented title transfers",
+                        "Target manageable arrears and motivated sellers with verifiable ownership",
+                        "Retain permitted closing economics plus collected net wrap interest",
+                        "Reject disputed reinstatement figures; require a funded payoff alternative",
+                    ],
+                    [
+                        "Equity-rich seller specialist combining cash and existing mortgage debt",
+                        "Fund seller equity explicitly without concealing additional junior obligations",
+                        "Price total capital cost before claiming any mortgage spread",
+                        "Reduce purchase price when equity funding erases recurring contribution",
+                    ],
+                    [
+                        "Owner-occupant wrap originator coordinating licensed RMLO buyer underwriting",
+                        "Match affordable housing payments with independently documented repayment capacity",
+                        "Earn permitted retained economics after origination and servicing allocations",
+                        "Decline buyers whose qualification depends on speculative future refinancing",
+                    ],
+                    [
+                        "Performing-note portfolio operator emphasizing collections rather than closing volume",
+                        "Acquire or retain documented notes with verified payment histories",
+                        "Collect net interest while tracking principal recovery separately monthly",
+                        "Reprice delinquent assets using lawful workout and enforcement timelines",
+                    ],
+                    [
+                        "Servicing oversight specialist maintaining lender and borrower evidence trails",
+                        "Coordinate licensed servicers without personally commingling borrower escrow funds",
+                        "Charge separately contracted administrative fees for actual delivered services",
+                        "Escalate missing remittances immediately and preserve independent account access",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Underwrite the documents that survive a bad month",
+                "body": "A useful acquisition file explains the downside without requiring the original salesperson to interpret it.",
+                "items": [
+                    "Obtain a current reinstatement or payoff statement directly through authorized channels; reconcile legal fees and escrow advances before pricing seller proceeds.",
+                    "Compare the underlying amortization schedule with the proposed wrap schedule month by month; a favorable coupon gap can conceal an unfavorable payment gap.",
+                    "Require the insurance agent to document ownership, occupancy, mortgagee interests, and loss-payee treatment accurately rather than preserve an obsolete policy description.",
+                    "Keep an acceleration-exit worksheet with dated refinance assumptions, sale costs, liens, and available liquidity; refresh it whenever value or borrower performance deteriorates.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Separate asset value, cash collections, retained revenue, and owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The scorecard's gross revenue field uses a deliberately narrow economic "
+                    "boundary: net upfront option or down-payment spreads plus retained annual "
+                    "wraparound interest margin. It excludes home face value, mortgage principal "
+                    "collections, escrow receipts, and pass-through debt service. Treat that "
+                    "boundary as a management reporting convention, not a substitute for "
+                    "transaction-specific accounting. A property sale, loan origination, purchased "
+                    "note, and separately contracted administrative service can follow different "
+                    "recognition rules. Interest-bearing instruments are generally analyzed under "
+                    "applicable financial-instrument guidance rather than automatically applying "
+                    "ASC 606 to every receipt. ASC 606 principal-versus-agent analysis matters "
+                    "where a service arrangement actually falls within its scope. A buyer's "
+                    "down payment can represent purchase consideration, principal recovery, "
+                    "deferred amounts, or refundable funds; it is not automatically earned "
+                    "fee income. Build a closing statement bridge that identifies seller "
+                    "proceeds, lien cures, third-party charges, refundable balances, basis "
+                    "recovery, and any amount actually eligible for recognition. Have the "
+                    "accountant reconcile the scorecard presentation to the financial statements. "
+                    "Do not apply another retained-share haircut to scorecard dollars already "
+                    "expressed on a retained basis. Equally, never inflate those dollars "
+                    "by adding the mortgage payments handled for somebody else."
+                ),
+                (
+                    "The canonical Conservative case is $100,000 revenue, $72,000 expenses, "
+                    "and $28,000 annual owner profit at 28%. Base is $475,000 revenue, "
+                    "$285,000 expenses, and $190,000 profit at 40.0%. Scaled is $850,000 "
+                    "revenue, $408,000 expenses, and $442,000 profit at 52%. Staffing remains "
+                    "one full-time operator plus three contractors in the first two cases "
+                    "and two full-time operators plus four contractors in the third. These "
+                    "are the fixed Formula v2.0 outputs, not projections derived from the "
+                    "single-property illustration. A transparent illustrative bridge uses "
+                    "$25,000 retained upfront economics plus $75,000 retained interest for "
+                    "Conservative; $175,000 plus $300,000 for Base; and $300,000 plus "
+                    "$550,000 for Scaled. The bridge reconciles revenue but does not assert "
+                    "an undocumented portfolio count or closing cadence. Recurring overhead "
+                    "of $2,000–$12,000 monthly is only one component of total expenses. "
+                    "Direct origination work, acquisition expenses, servicing, collection "
+                    "costs, realized losses, and other properly recognized charges explain "
+                    "why annual total expenses can exceed that overhead range. Keep owner "
+                    "distributions, debt principal, and cash reserve transfers outside the "
+                    "expense bridge unless their underlying accounting treatment requires "
+                    "otherwise. Avoid subtracting underlying interest twice after reporting "
+                    "interest margin net of that same cost."
+                ),
+                (
+                    "Startup capital of $12,000–$65,000 and a two-to-six-month first-deal "
+                    "window describe access conditions, not sufficient capitalization for "
+                    "every acquisition. A property requiring $18,000 of reinstatement, $7,000 "
+                    "of closing and repair cash, and $10,000 of liquidity already absorbs "
+                    "$35,000 before any seller equity payment. An $800,000 portfolio balance "
+                    "does not become operating revenue merely because the operator controls "
+                    "its payment instructions. Build separate ledgers for property basis, "
+                    "underlying debt, wrap receivables, escrow liabilities, retained income, "
+                    "and unrestricted cash. Use QuickBooks Online for the general ledger "
+                    "and a licensed servicer's loan-level statements for contractual balances; "
+                    "neither should silently overwrite the other. Reconcile bank deposits "
+                    "to collection batches, batches to borrower statements, and underlying "
+                    "remittances to lender confirmations. A principal collection improves "
+                    "cash availability while reducing a receivable; interest recognition "
+                    "and loss provisioning require their own analysis. Stress liquidity "
+                    "for borrower delinquency, tax reassessment, insurance renewal, legal "
+                    "expense, and an accelerated first mortgage. The largest downside is "
+                    "often a payoff demand rather than one missed installment. Profit "
+                    "quality therefore depends on funded survival time and exit feasibility, "
+                    "not only the percentage printed beside the annual revenue figure."
+                ),
+            ],
+            "table": {
+                "caption": "Formula v2.0 reconciliation using retained revenue rather than property throughput",
+                "headers": [
+                    "Canonical scenario and team",
+                    "Retained revenue bridge",
+                    "Expenses and owner profit",
+                    "Interpretation and operating constraint",
+                ],
+                "rows": [
+                    [
+                        "Conservative operation with one full-time operator and three contractors",
+                        "$25,000 upfront plus $75,000 interest equals $100,000 annual revenue",
+                        "$72,000 expenses leave $28,000 annual owner profit at 28%",
+                        "Keep acquisition commitments within funded reserves and verified servicing capacity",
+                    ],
+                    [
+                        "Base operation with one full-time operator and three contractors",
+                        "$175,000 upfront plus $300,000 interest equals $475,000 annual revenue",
+                        "$285,000 expenses leave $190,000 annual owner profit at 40.0%",
+                        "Increase performing balances without counting principal collections as earned income",
+                    ],
+                    [
+                        "Scaled operation with two full-time operators and four contractors",
+                        "$300,000 upfront plus $550,000 interest equals $850,000 annual revenue",
+                        "$408,000 expenses leave $442,000 annual owner profit at 52%",
+                        "Maintain six-person execution while reserving liquidity against correlated acceleration exposure",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Compare sixteen sub-verticals and map eleven executable operating plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The comparison matrix distinguishes eleven mapped operating plays from "
+                    "five additional underwriting segments. Plays one and eleven use the "
+                    "two supplied cross-shelf identifiers; plays two through ten are descriptive "
+                    "operating applications, not invented catalog identifiers. Play one is "
+                    "the complete subject-to wrap engine. The nine supporting applications "
+                    "cover low-equity sourcing, arrears resolution, seller-equity funding, "
+                    "buyer qualification, servicing, escrow auditing, performing-note retention, "
+                    "workouts, and acceleration exits. Their unit economics are costs, capital "
+                    "allocations, or retained receipts within the same transaction, not eleven "
+                    "independent revenue streams. The five additional segments expose different "
+                    "risks involving condominiums, insurance, tax resets, balloons, and note "
+                    "sales. Named platforms identify practical research or workflow tools, "
+                    "not endorsements or verified current price quotations. Every dollar "
+                    "budget in the matrix is an illustrative operator assumption to replace "
+                    "with a written quote. PropStream and ATTOM can support sourcing; ICE "
+                    "Mortgage Technology Encompass can support an RMLO's origination workflow; "
+                    "DocuSign can document permitted electronic execution. None establishes "
+                    "that a particular transfer, instrument, fee, or foreclosure remedy is "
+                    "valid. A title professional and state-specific execution plan remain "
+                    "necessary even when the software shows a complete checklist."
+                ),
+                (
+                    "The second specified play, tcpa_litigator_scrub_honeypot_arbitrage, is "
+                    "best understood here as consent-first outbound risk screening, not a "
+                    "method for bypassing telephone restrictions. Lawfully obtained PACER "
+                    "or CourtListener records can contribute docket-derived risk signals "
+                    "alongside authoritative do-not-call checks, revocation processing, "
+                    "identity verification, and channel-specific consent evidence. A plaintiff "
+                    "match neither authorizes contact nor establishes that someone is a "
+                    "fraudulent claimant. Name collisions, stale telephone assignments, sealed "
+                    "records, and incomplete dockets create obvious error paths. For a "
+                    "separately contracted screening service, an illustrative $0.03 charge "
+                    "on 10,000 authorized screening events yields $300 billings; $120 "
+                    "of data and processing costs leaves $180 contribution before labor "
+                    "and overhead. Those amounts do not enter the canonical real-estate "
+                    "scenario bridge. Price the service for evidence preservation and "
+                    "suppression accuracy, not a promise of immunity. Apply 47 U.S.C. "
+                    "§227, 47 CFR §64.1200, applicable state calling rules, and the "
+                    "FTC Telemarketing Sales Rule where relevant. Disable uncertain "
+                    "enrichment and require independently verified consent and authoritative "
+                    "suppression checks when provenance or matching fails. Never rotate "
+                    "numbers or change vendors to defeat a recipient's revocation."
+                ),
+                (
+                    "Evaluate every sub-vertical using the same four questions: what money "
+                    "is actually retained, what capital remains exposed, what document "
+                    "proves performance, and what event reverses the expected economics? "
+                    "A $2,000 closing fee can be less valuable than $600 of well-supported "
+                    "annual contribution if the former carries a refund obligation or "
+                    "conceals defective origination. Conversely, a long-duration note with "
+                    "an attractive coupon can be worth little when its underlying mortgage "
+                    "is immediately callable and no exit is funded. Record refund and "
+                    "repurchase obligations as contract terms, not generic worst-case "
+                    "language. In a note sale, distinguish sale proceeds and carrying "
+                    "value from previously recognized interest; representations about "
+                    "payment history can create recourse after cash arrives. For condominium "
+                    "and association properties, read assessment notices and lien provisions "
+                    "before calculating the buyer's housing burden. For insurance-sensitive "
+                    "properties, obtain a bound or bindable coverage plan reflecting "
+                    "actual ownership and occupancy. For balloon structures, test lawful "
+                    "availability and repayment feasibility rather than assume refinancing. "
+                    "The comparison favors repeatable document quality over exotic terms: "
+                    "an ordinary fixed-payment transaction with reliable remittances usually "
+                    "fits a small team better than a clever instrument requiring constant "
+                    "exceptions and emergency legal work."
+                ),
+            ],
+            "table": {
+                "caption": "Sixteen sub-vertical comparisons: eleven mapped plays and five additional risk segments",
+                "headers": [
+                    "Sub-vertical and mapped role",
+                    "Named platform or execution rail",
+                    "Illustrative fee structure or unit economics",
+                    "Small-team moat and evidence requirement",
+                    "Clawback or failure trigger and fallback",
+                ],
+                "rows": [
+                    [
+                        "Play 1: subject_to_wraparound_rmlo_note_spread combining acquisition and qualified resale",
+                        "Encompass-supported RMLO workflow plus independently licensed third-party loan servicing",
+                        "$19,800 wrap interest less $7,000 underlying interest gives $12,800 annualized",
+                        "Preserve verified underwriting, title priority, and monthly underlying payment evidence",
+                        "Acceleration destroys carry assumptions; pursue approved assumption, refinancing, or payoff",
+                    ],
+                    [
+                        "Play 2: low-equity sourcing with independently verified ownership records",
+                        "PropStream candidate searches followed by authoritative county recorder document review",
+                        "$600 research budget across twenty reviewed leads equals $30 each",
+                        "Maintain seller-specific lien evidence rather than merely purchased lead lists",
+                        "Incorrect balances erase spread; stop acquisition and rebuild verified underwriting",
+                    ],
+                    [
+                        "Play 3: arrears resolution before purchasing distressed mortgaged property",
+                        "ATTOM signals plus lender-issued reinstatement statements and local counsel review",
+                        "$18,000 arrears plus $2,000 documented charges requires $20,000 cure capital",
+                        "Track foreclosure dates and permitted transaction structures before negotiating terms",
+                        "Expired cure quotations require refreshed amounts or a canceled acquisition",
+                    ],
+                    [
+                        "Play 4: seller-equity funding alongside an existing low-rate mortgage",
+                        "Qualia-supported title closing workflow with separately documented capital funding sources",
+                        "$30,000 seller equity at 10% costs $3,000 annual interest",
+                        "Disclose every funding lien and model aggregate repayment obligations explicitly",
+                        "Unfunded equity commitments require repricing rather than concealed junior debt",
+                    ],
+                    [
+                        "Play 5: owner-occupant qualification through licensed mortgage origination professionals",
+                        "NMLS Consumer Access license checks and Encompass-supported underwriting document workflows",
+                        "$1,500 illustrative origination budget reduces $5,000 retained economics to $3,500",
+                        "Retain verified income, obligations, housing costs, and written underwriting conclusions",
+                        "Failed repayment capacity means decline or restructure within lawful limits",
+                    ],
+                    [
+                        "Play 6: licensed servicing with reconciled borrower and underlying remittances",
+                        "Account Servicing platform evaluation with state licensing and service-scope verification",
+                        "$45 monthly servicing allowance equals $540 annual cost per note",
+                        "Reconcile collections, underlying payments, escrow liabilities, and exception logs monthly",
+                        "Missing remittance evidence triggers immediate investigation and documented servicing correction",
+                    ],
+                    [
+                        "Play 7: escrow auditing for tax and insurance payment continuity",
+                        "County tax portals and carrier billing records reconciled against servicer statements",
+                        "$3,600 annual taxes plus $1,800 insurance requires $450 monthly funding",
+                        "Check actual disbursements rather than trusting a positive escrow balance",
+                        "Tax increases require lawful adjustment and prompt funded shortage resolution",
+                    ],
+                    [
+                        "Play 8: performing-note retention with disciplined cash and principal separation",
+                        "QuickBooks Online general ledger reconciled with licensed servicer loan statements",
+                        "$12,800 annualized spread less $540 servicing leaves $12,260 before other costs",
+                        "Preserve payment history and maintain independent control of accounting classifications",
+                        "Delinquency requires collectibility review rather than continued optimistic income reporting",
+                    ],
+                    [
+                        "Play 9: documented borrower workouts before avoidable enforcement expense",
+                        "DocuSign-supported execution where permitted plus counsel-managed state notice procedures",
+                        "Two $1,600 missed payments create $3,200 arrears before permitted charges",
+                        "Use consistent hardship documentation and authorized servicing communications throughout resolution",
+                        "Broken workout terms trigger counsel-reviewed remedies and updated carrying reserves",
+                    ],
+                    [
+                        "Play 10: acceleration exits through approved refinancing or documented sale",
+                        "Bankrate rate research followed by actual lender underwriting and written quotations",
+                        "$210,000 net sale proceeds less $200,000 payoff leaves $10,000 liquidity",
+                        "Refresh executable exit values and track available unrestricted payoff resources",
+                        "Refinance denial requires lawful sale planning instead of concealed transfers",
+                    ],
+                    [
+                        "Play 11: tcpa_litigator_scrub_honeypot_arbitrage supporting consent-first outbound screening services",
+                        "PACER and CourtListener risk signals alongside National Do Not Call checks",
+                        "10,000 screenings at $0.03 less $120 processing leaves $180 contribution",
+                        "Preserve contact permission, revocations, source provenance, and cautious identity matching",
+                        "Ambiguous matches disable enrichment; verified permission and suppression remain mandatory",
+                    ],
+                    [
+                        "Comparison segment 12: condominium wraps with association assessment exposure",
+                        "County recorder records and association-issued resale certificates reviewed before closing",
+                        "$300 monthly association dues add $3,600 annual buyer housing burden",
+                        "Read lien provisions, special assessments, and pending association litigation records",
+                        "Unfunded assessments require repricing or rejection before buyer payment commitments",
+                    ],
+                    [
+                        "Comparison segment 13: insurance-sensitive properties with ownership or occupancy changes",
+                        "FEMA flood maps plus licensed insurance agent coverage and carrier confirmation",
+                        "$1,200 annual premium increase consumes $100 of monthly payment capacity",
+                        "Match insured interests and occupancy facts to actual transaction documents",
+                        "Coverage refusal requires replacement coverage or abandoning the proposed structure",
+                    ],
+                    [
+                        "Comparison segment 14: tax-reset properties following taxable ownership transfers",
+                        "County assessor records and tax collector estimates checked against exemption eligibility",
+                        "$2,400 annual reassessment increase adds $200 to monthly housing expense",
+                        "Underwrite post-transfer taxes rather than automatically preserving seller exemption assumptions",
+                        "Lost exemptions require revised affordability analysis and properly funded escrows",
+                    ],
+                    [
+                        "Comparison segment 15: balloon obligations requiring independently feasible maturity exits",
+                        "Encompass-supported maturity analysis and written lender criteria for prospective refinancing",
+                        "$220,000 maturity balance requires principal funding beyond ordinary monthly interest",
+                        "Track legal eligibility and repayment capacity without assuming future appreciation",
+                        "Unavailable refinancing requires early lawful sale or documented permitted restructuring",
+                    ],
+                    [
+                        "Comparison segment 16: performing-note sales with documented investor recourse terms",
+                        "Paperstac transaction workflow supplemented by independent document custody and counsel",
+                        "$220,000 face value sold at 92% yields $202,400 before costs",
+                        "Reconcile proceeds to carrying value and preserve precise seller representations",
+                        "Breached representations can trigger repurchase; cure defects before marketing notes",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Build a small-team control system that survives acceleration and default",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Federal due-on-sale law is the first structural constraint. Under "
+                    "12 U.S.C. §1701j-3, lenders generally may enforce contractual due-on-sale "
+                    "provisions subject to specified protections and exceptions. An ordinary "
+                    "investor acquisition does not automatically qualify for those protections. "
+                    "A trust label, payment history, or servicing arrangement does not "
+                    "independently neutralize acceleration. Explain continuing seller liability "
+                    "and record the agreed response to a lender demand. For Texas property, "
+                    "Tex. Prop. Code §5.016 addresses notice requirements for certain "
+                    "conveyances encumbered by recorded liens, with statutory exceptions; "
+                    "Texas Finance Code Chapter 159 separately addresses wrap mortgage "
+                    "loan licensing, disclosures, and related obligations. Treat these as "
+                    "distinct analyses rather than one universal form. For owner-occupant "
+                    "buyers, require licensed RMLO involvement as the operating standard, "
+                    "then determine applicable federal and state creditor, originator, "
+                    "disclosure, and ability-to-repay duties. The SAFE Act framework, "
+                    "12 U.S.C. §§5101–5116, does not replace Regulation Z analysis. "
+                    "Seller-financer exclusions under 12 CFR §1026.36 have conditions "
+                    "and limited scope; they do not automatically eliminate obligations "
+                    "under §1026.43. Resolve coverage before advertising terms, collecting "
+                    "application fees, or promising a closing date to the buyer."
+                ),
+                (
+                    "A one-person operator should coordinate specialists, not impersonate "
+                    "all of them. In the Conservative and Base team design, the three "
+                    "contractor roles cover transaction and legal coordination, licensed "
+                    "origination, and licensed servicing or bookkeeping coordination. "
+                    "Required title, insurance, and other vendors remain external service "
+                    "providers; the staffing shorthand is not a claim that three people "
+                    "hold every necessary credential. At Scaled, a second full-time "
+                    "operator owns portfolio exceptions while four contractors support "
+                    "repeatable execution. Build a monthly evidence packet containing "
+                    "buyer collections, underlying lender confirmations, escrow movements, "
+                    "tax and insurance status, delinquencies, and current reserve availability. "
+                    "Use the servicer's controlled portal for sensitive records and "
+                    "restricted accounting access for reconciliation. Avoid emailing "
+                    "complete identity documents across a casual deal group. Separate "
+                    "payment authorization from reconciliation wherever practical, even "
+                    "if that separation is an external bookkeeper checking the owner's "
+                    "instructions. Route exceptions by severity: insurance cancellation "
+                    "and acceleration notices outrank routine document cleanup. A shared "
+                    "calendar tracks notice deadlines, renewal dates, escrow reviews, "
+                    "and note maturities. Automation should collect evidence and expose "
+                    "exceptions; it should not independently issue legal notices or "
+                    "change borrower terms without authorized professional review."
+                ),
+                (
+                    "The final purchase decision combines profitability with survivability. "
+                    "Require a positive retained spread after realistic servicing and "
+                    "loss assumptions, a buyer payment supported by verified capacity, "
+                    "accurate insurance, a lawful closing path, and an executable response "
+                    "to acceleration. A six-month reserve based on $1,600 of monthly "
+                    "underlying payment and $400 of property carrying costs equals "
+                    "$12,000, but it does not fund a $200,000 payoff demand. Track "
+                    "those risks separately. If a buyer defaults, contact the servicer "
+                    "and counsel, preserve records, evaluate permitted workouts, and "
+                    "follow applicable notice and foreclosure procedures. Do not use "
+                    "lockouts, utility interruption, or informal repossession as collection "
+                    "tools. If the underlying lender accelerates, confirm the demand "
+                    "and deadlines, update payoff figures, evaluate lender-approved "
+                    "assumption or refinancing, and prepare a lawful sale if necessary. "
+                    "The seller should receive the communications promised in the "
+                    "transaction documents rather than discover problems through damaged "
+                    "credit. Review portfolio concentration by underlying lender, geography, "
+                    "insurance exposure, maturity date, and servicer. The durable "
+                    "small-team business earns a financing spread while continuously "
+                    "verifying performance; the fragile version spends upfront cash "
+                    "and hopes nobody exercises a contractual right."
+                ),
+            ],
+            "table": {
+                "caption": "Four operating controls with named evidence, owners, and stop conditions",
+                "headers": [
+                    "Control and accountable execution owner",
+                    "Required evidence before commitment",
+                    "Recurring verification and operating frequency",
+                    "Stop condition and practical next action",
+                ],
+                "rows": [
+                    [
+                        "Title and transfer analysis owned by transaction counsel and title personnel",
+                        "Review recorded liens, underlying instruments, seller authority, and required transfer notices",
+                        "Refresh payoff figures and search updates immediately before final closing disbursement",
+                        "Unresolved priority or transfer defects require correction before funds are released",
+                    ],
+                    [
+                        "Buyer underwriting coordinated by a licensed RMLO with creditor oversight",
+                        "Document income, debts, housing costs, applicable disclosures, and underwriting conclusions",
+                        "Recheck material changes before consummation and retain the completed origination record",
+                        "Unsupported repayment capacity requires declining or lawfully restructuring the proposed transaction",
+                    ],
+                    [
+                        "Payment and escrow reconciliation owned by licensed servicer and independent reviewer",
+                        "Confirm servicing authority, payment waterfall, escrow treatment, and underlying account access",
+                        "Match every monthly collection batch against lender confirmations and escrow disbursements",
+                        "Missing underlying payment confirmation requires immediate investigation and documented corrective action",
+                    ],
+                    [
+                        "Liquidity and exit readiness owned by operator with counsel support",
+                        "Maintain reserve balances, current payoff estimates, sale values, and refinancing alternatives",
+                        "Refresh exit assumptions quarterly and immediately after material adverse portfolio events",
+                        "Unfunded acceleration exposure requires reducing commitments and executing a feasible exit",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before committing acquisition capital",
+                "body": "Proceed only when the evidence supports the transaction as structured, not a more convenient version of it.",
+                "items": [
+                    "Verify title, current balances, seller authority, transfer restrictions, required notices, and the original borrower's continuing liability in the closing file.",
+                    "Obtain licensed RMLO underwriting and a documented determination of applicable origination, disclosure, pricing, and ability-to-repay requirements.",
+                    "Execute the licensed servicing arrangement, test the payment waterfall, and confirm that insurance and tax monitoring reflect actual ownership and occupancy.",
+                    "Fund carrying reserves and document a separate acceleration response supported by realistic assumption, refinancing, sale, or payoff capacity.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Build the verified debt and title file",
+                    "action": "Collect authorized lender records, recorded instruments, seller documents, and insurance information.",
+                    "detail": "Reconcile balances and arrears to current statements; identify due-on-sale language, lien priority, and state-specific transfer requirements.",
+                },
+                {
+                    "step": 2,
+                    "title": "Underwrite the buyer and retained economics",
+                    "action": "Coordinate licensed RMLO review and model both amortization schedules with complete housing costs.",
+                    "detail": "Separate principal, interest, escrow, refundable receipts, and eligible retained economics; reject structures dependent on unsupported refinancing assumptions.",
+                },
+                {
+                    "step": 3,
+                    "title": "Close through documented professional execution",
+                    "action": "Use counsel and title personnel to finalize instruments, notices, disbursements, and servicing authority.",
+                    "detail": "Confirm accurate insurance, licensed servicing capacity, underlying payment access, and funded reserves before releasing transaction funds.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile performance and refresh the exit",
+                    "action": "Review collections, lender confirmations, escrow disbursements, and exception reports every month.",
+                    "detail": "Escalate delinquency or acceleration immediately; update liquidity and pursue documented lawful workout, assumption, refinancing, sale, or payoff paths.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "A mortgage spread is durable only when the payment trail is provable and the exit can survive the lender exercising its rights.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Create a debt-and-title intake packet covering underlying instruments, current balances, reinstatement amounts, seller authority, and transfer restrictions.",
+        "Engage a licensed RMLO and transaction counsel to document buyer underwriting and applicable federal and state origination requirements.",
+        "Build a monthly amortization and cash-waterfall model that separates principal, interest, escrow, retained revenue, expenses, and reserve transfers.",
+        "Reconcile the three canonical scenarios to $28,000, $190,000, and $442,000 owner profit without adding property value or pass-through payments.",
+        "Select and verify a licensed third-party servicer, establish independent underlying-payment checks, and schedule tax and insurance reviews.",
+        "Fund carrying liquidity, document an acceleration exit, and restrict outbound outreach to verified permissions and authoritative suppression controls.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "12 U.S.C. §1701j-3 — Preemption of due-on-sale prohibitions",
+            "url": "https://www.law.cornell.edu/uscode/text/12/1701j-3",
+            "relevance": "Establishes the federal due-on-sale framework and specified transfer protections; ordinary investor transfers require independent contractual and statutory analysis.",
+        },
+        {
+            "title": "12 U.S.C. §5103 — Mortgage loan originator licensing and registration",
+            "url": "https://www.law.cornell.edu/uscode/text/12/5103",
+            "relevance": "Provides core SAFE Act licensing and registration requirements relevant to individuals engaging in covered mortgage origination activities.",
+        },
+        {
+            "title": "12 CFR §1026.43 — Minimum standards for transactions secured by a dwelling",
+            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/",
+            "relevance": "Defines applicable ability-to-repay requirements, coverage, and exceptions; licensed RMLO participation does not replace the creditor's required analysis.",
+        },
+        {
+            "title": "12 CFR §1026.36 — Prohibited acts or practices and certain requirements for credit secured by a dwelling",
+            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+            "relevance": "Addresses loan-originator requirements and conditional seller-financer exclusions that must be evaluated separately from other mortgage obligations.",
+        },
+        {
+            "title": "Texas Property Code §5.016 — Conveyance of residential property encumbered by lien",
+            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.016",
+            "relevance": "Sets notice requirements and exceptions for covered encumbered residential conveyances; incorporate applicable timing and delivery into the closing process.",
+        },
+        {
+            "title": "Texas Finance Code Chapter 159 — Wrap mortgage loan financing",
+            "url": "https://statutes.capitol.texas.gov/Docs/FI/htm/FI.159.htm",
+            "relevance": "Provides Texas-specific wrap mortgage licensing, disclosure, and other operating requirements beyond the general property-transfer notice analysis.",
+        },
+        {
+            "title": "47 U.S.C. §227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Supplies the statutory TCPA framework; docket-based risk screening neither creates contact permission nor displaces applicable telephone restrictions.",
+        },
+        {
+            "title": "47 CFR §64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Contains telephone solicitation and related operational restrictions requiring channel-appropriate consent, suppression, and revocation handling.",
+        },
+        {
+            "title": "16 CFR §310.4 — Abusive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
+            "relevance": "Addresses applicable telemarketing restrictions, including do-not-call controls that remain necessary regardless of plaintiff-risk screening results.",
+        },
+    ],
+}

@@ -1,4 +1,4 @@
-"""Canonical 29-volume registry, slug resolver, and dynamic builder loader for FYMC."""
+"""Canonical 36-volume registry, slug resolver, and dynamic builder loader for FYMC."""
 from __future__ import annotations
 
 import importlib
@@ -590,16 +590,275 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
             "Separate licensed contracting from public adjusting, never rebate deductibles, and bridge mortgage two-party check float with strict AR controls.",
         ),
     },
+    30: {
+        "volume_number": 30,
+        "volume_id": "vol-030-lending-and-flash-funding-arbitrage",
+        "short_slug": "lending-and-flash-funding-arbitrage",
+        "candidate_number": 30,
+        "score": 93,
+        "title": "Lending & Flash-Funding Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Escrow-Locked Transactional Double-Close Funding, Gator EMD Lending & Corporate Credit Liquidity Velocity",
+        "site_ui": _ui(
+            ["LENDING &", "FLASH-FUNDING", "ARBITRAGE"],
+            ["VERIFY ESCROW. UNDERWRITE THE EXIT.", "RECYCLE CAPITAL WITH CONTROLS."],
+            "Transactional Double-Close Funding, Earnest-Money Deposit Loans & Corporate Credit Liquidity for a Lean Lending Desk",
+            "Screen both closing legs, document earnest-money refund rights, and reconcile escrow-controlled disbursements while pricing credit costs, failed exits, and state lending requirements.",
+            [
+                "Transactional funding vs EMD lending",
+                "Title partners & verified closing instructions",
+                "Funding fees, cost of capital & velocity",
+                "Corporate credit terms & liquidity reserves",
+                "Failed closings, wire fraud & deposit losses",
+                "Sourcing wholesalers & repeat borrowers",
+                "Double-close underwriting & escrow controls",
+                "EMD refund rights & release conditions",
+                "Lending licenses, usury & loan documents",
+                "Funding calendars & repayment reconciliation",
+                "Lean credit desk & concentration limits",
+                "First 30-day funded-deal launch sprint",
+            ],
+            [
+                ["SOURCE", "Qualify borrowers & title partners"],
+                ["UNDERWRITE", "Verify both closings & repayment exit"],
+                ["DOCUMENT", "Set loan terms & escrow conditions"],
+                ["FUND", "Confirm instructions before disbursement"],
+                ["RECONCILE", "Track principal, fees & exceptions"],
+                ["RECYCLE", "Release capital within exposure caps"],
+            ],
+        ),
+    },
+    31: {
+        "volume_number": 31,
+        "volume_id": "vol-031-uber-and-commercial-fleet-arbitrage",
+        "short_slug": "uber-and-commercial-fleet-arbitrage",
+        "candidate_number": 31,
+        "score": 89,
+        "title": "Uber & Commercial Fleet Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Uber Fleet Partner Portals, Commercial Black SUV Shift Dispatch & Zero-Owned-Metal Co-Hosting",
+        "site_ui": _ui(
+            ["UBER &", "FLEET", "ARBITRAGE"],
+            ["CONTRACT THE CAPACITY. VERIFY COVERAGE.", "DISPATCH PROFITABLE SHIFTS."],
+            "Uber Fleet Partner Operations, Commercial Black SUV Dispatch & Owner-Vehicle Co-Hosting Without Buying the Fleet",
+            "Match eligible owner vehicles with qualified drivers, verify platform and local operating permissions, and manage shift contribution margins after insurance, downtime, cleaning, and claims reserves.",
+            [
+                "Fleet partner vs co-host operating models",
+                "Owner agreements & platform eligibility",
+                "Shift revenue, utilization & net contribution",
+                "Fleet portals & lean dispatch tooling",
+                "Insurance gaps, accidents & downtime traps",
+                "Recruiting vehicle owners & qualified drivers",
+                "Black SUV shift planning & handover checks",
+                "Maintenance, cleaning & incident response",
+                "Commercial permits & worker classification",
+                "Payout reconciliation & owner reporting",
+                "Dispatcher pods & fleet concentration caps",
+                "First 30-day managed-fleet launch sprint",
+            ],
+            [
+                ["SOURCE", "Recruit eligible owner vehicles"],
+                ["VERIFY", "Check drivers, permits & coverage"],
+                ["CONTRACT", "Define custody, payouts & liability"],
+                ["DISPATCH", "Schedule shifts & document handovers"],
+                ["RECONCILE", "Audit fares, costs & owner shares"],
+                ["OPTIMIZE", "Improve utilization & reserve for repairs"],
+            ],
+        ),
+    },
+    32: {
+        "volume_number": 32,
+        "volume_id": "vol-032-payment-processing-and-atm-arbitrage",
+        "short_slug": "payment-processing-and-atm-arbitrage",
+        "candidate_number": 32,
+        "score": 94,
+        "title": "ISO Payment Processing & ATM Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Wholesale Schedule A ISO Residuals, Dual-Pricing Merchant Terminals & Exclusive Venue ATM Routes",
+        "site_ui": _ui(
+            ["PAYMENT &", "ATM", "ARBITRAGE"],
+            ["AUDIT SCHEDULE A. SECURE THE VENUE.", "RECONCILE RECURRING RESIDUALS."],
+            "Wholesale ISO Residual Portfolios, Compliant Dual-Pricing Terminals & Exclusive-Venue ATM Route Economics",
+            "Separate merchant processing volume from earned residuals, validate sponsor and network rules, and price ATM placements around cash replenishment, venue shares, security, and transaction density.",
+            [
+                "ISO residuals vs ATM surcharge revenue",
+                "Sponsor banks, processors & Schedule A terms",
+                "Basis-point spreads & route unit economics",
+                "Terminal deployment & ATM startup capital",
+                "Chargebacks, reserves & residual clawbacks",
+                "Merchant statement audits & venue prospecting",
+                "Dual-pricing disclosures & terminal setup",
+                "ATM cash loading & settlement reconciliation",
+                "Network rules, PCI scope & local compliance",
+                "Residual audits & merchant retention loops",
+                "Lean service pods & portfolio transfer rights",
+                "First 30-day merchant-and-venue launch sprint",
+            ],
+            [
+                ["SOURCE", "Audit merchant demand & venue traffic"],
+                ["PRICE", "Model Schedule A & cash-service costs"],
+                ["CONTRACT", "Confirm sponsor terms & placement rights"],
+                ["DEPLOY", "Configure terminals & verify disclosures"],
+                ["RECONCILE", "Match settlements, residuals & cash"],
+                ["RETAIN", "Service accounts & monitor route yield"],
+            ],
+        ),
+    },
+    33: {
+        "volume_number": 33,
+        "volume_id": "vol-033-insurance-housing-and-rental-arbitrage",
+        "short_slug": "insurance-housing-and-rental-arbitrage",
+        "candidate_number": 33,
+        "score": 90,
+        "title": "Insurance Housing & Corporate Rental Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Displaced-Policyholder ALE Placements, Corporate Master Leases & Mid-Term Relocation Arbitrage",
+        "site_ui": _ui(
+            ["INSURANCE", "HOUSING", "ARBITRAGE"],
+            ["VERIFY THE PLACEMENT. SECURE LEASE RIGHTS.", "CONTROL VACANCY AND PAYMENT FLOAT."],
+            "Displaced-Policyholder Housing, Corporate Master Leases & Mid-Term Relocation Placements for a Lean Housing Desk",
+            "Coordinate authorized ALE and corporate placements with suitable furnished inventory, written landlord permissions, documented payer commitments, and reserves for vacancy, damage, and collection delays.",
+            [
+                "ALE placements vs corporate rental models",
+                "Housing vendors, adjusters & payer authority",
+                "Nightly spreads, occupancy & collection float",
+                "Furnished inventory & startup reserve budgets",
+                "Vacancy, coverage limits & unpaid extensions",
+                "Relocation referrals & landlord sourcing",
+                "Master leases & written subletting permissions",
+                "Move-in evidence, maintenance & guest support",
+                "Habitability, fair housing & local rental rules",
+                "Extension approvals & invoice reconciliation",
+                "Placement pods & property concentration caps",
+                "First 30-day housing-placement launch sprint",
+            ],
+            [
+                ["QUALIFY", "Confirm housing needs & payer authority"],
+                ["SOURCE", "Match suitable inventory & lease rights"],
+                ["AUTHORIZE", "Document rates, dates & payment terms"],
+                ["PLACE", "Inspect the unit & record move-in"],
+                ["SERVICE", "Track repairs & approved extensions"],
+                ["SETTLE", "Reconcile invoices, deposits & turnover"],
+            ],
+        ),
+    },
+    34: {
+        "volume_number": 34,
+        "volume_id": "vol-034-nemt-and-medical-courier-arbitrage",
+        "short_slug": "nemt-and-medical-courier-arbitrage",
+        "candidate_number": 34,
+        "score": 90,
+        "title": "NEMT & Medical Courier Dispatch Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Medicaid TPA Transportation Brokers, STAT Lab Specimen Routes & 1099 Fleet Dispatch",
+        "site_ui": _ui(
+            ["NEMT &", "COURIER", "ARBITRAGE"],
+            ["CREDENTIAL THE FLEET. VERIFY THE ORDER.", "DISPATCH WITH TRACEABLE HANDOFFS."],
+            "Medicaid Transportation Networks, STAT Laboratory Routes & Credentialed Fleet Dispatch with Documented Service Controls",
+            "Separate passenger transportation from specimen logistics, verify broker contracts and service authorizations, and control route margins through credential checks, custody records, and lawful worker classification.",
+            [
+                "NEMT trips vs medical courier route models",
+                "Medicaid TPAs, laboratories & service buyers",
+                "Per-trip rates, deadhead & route contribution",
+                "Dispatch systems & credentialing startup costs",
+                "Missed trips, rejected claims & specimen loss",
+                "Broker enrollment & laboratory route sourcing",
+                "Driver qualifications & vehicle inspections",
+                "STAT dispatch, cold chain & custody records",
+                "Privacy, transport rules & 1099 classification",
+                "Service verification & clean billing workflows",
+                "Dispatch pods & backup fleet coverage",
+                "First 30-day credentialed-route launch sprint",
+            ],
+            [
+                ["CONTRACT", "Confirm network terms & service scope"],
+                ["CREDENTIAL", "Verify drivers, vehicles & coverage"],
+                ["AUTHORIZE", "Validate trip or specimen orders"],
+                ["DISPATCH", "Assign qualified capacity & track timing"],
+                ["VERIFY", "Record delivery, custody & exceptions"],
+                ["RECONCILE", "Audit claims, payouts & route margins"],
+            ],
+        ),
+    },
+    35: {
+        "volume_number": 35,
+        "volume_id": "vol-035-subject-to-and-wraparound-note-arbitrage",
+        "short_slug": "subject-to-and-wraparound-note-arbitrage",
+        "candidate_number": 35,
+        "score": 90,
+        "title": "Subject-To & Wraparound Note Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Low-Rate SubTo Acquisitions, RMLO-Underwritten Wrap Mortgages & Performing Note Spreads",
+        "site_ui": _ui(
+            ["SUBJECT-TO", "& WRAP", "ARBITRAGE"],
+            ["DISCLOSE THE DEBT. UNDERWRITE THE BUYER.", "SERVICE EVERY PAYMENT."],
+            "Subject-To Acquisitions, RMLO-Underwritten Wrap Mortgages & Serviced Performing-Note Spreads with Explicit Debt Risk Controls",
+            "Evaluate existing loan terms, due-on-sale exposure, seller liability, and buyer repayment capacity before structuring counsel-reviewed acquisitions and wraps with independent servicing and payment reserves.",
+            [
+                "Subject-to acquisitions vs wrap note structures",
+                "Existing lenders, sellers & buyer obligations",
+                "Payment spreads, amortization & reserve math",
+                "Title review, servicing & closing costs",
+                "Due-on-sale calls, defaults & insurance gaps",
+                "Seller sourcing & informed risk disclosures",
+                "Acquisition diligence & counsel-led closings",
+                "RMLO underwriting & ability-to-repay review",
+                "Mortgage licensing & consumer credit rules",
+                "Third-party servicing & underlying loan audits",
+                "Note portfolio controls & workout planning",
+                "First 30-day acquisition-screening sprint",
+            ],
+            [
+                ["SCREEN", "Review loan terms, title & seller goals"],
+                ["DISCLOSE", "Explain seller liability & acceleration risk"],
+                ["UNDERWRITE", "Verify buyer capacity with an RMLO"],
+                ["CLOSE", "Execute counsel-reviewed documents"],
+                ["SERVICE", "Track wrap & underlying loan payments"],
+                ["MONITOR", "Audit reserves, insurance & defaults"],
+            ],
+        ),
+    },
+    36: {
+        "volume_number": 36,
+        "volume_id": "vol-036-gpu-compute-and-telecom-capacity-arbitrage",
+        "short_slug": "gpu-compute-and-telecom-capacity-arbitrage",
+        "candidate_number": 36,
+        "score": 94,
+        "title": "GPU Compute & Telecom Capacity Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Bare-Metal H100/H200 Cluster Slicing, Inference Routing & Wholesale SIP/A2P Telecom Spreads",
+        "site_ui": _ui(
+            ["GPU &", "TELECOM", "ARBITRAGE"],
+            ["RESERVE CAPACITY. METER REAL USAGE.", "PROTECT SPREADS AND SERVICE LEVELS."],
+            "Bare-Metal H100/H200 Capacity Resale, Metered Inference Routing & Authorized Wholesale SIP/A2P Telecom Operations",
+            "Match contracted compute and telecom capacity to verified customer demand, isolate tenants, meter billable consumption, and protect margins with resale permissions, service-level controls, and consent-based messaging safeguards.",
+            [
+                "GPU capacity vs SIP and A2P resale models",
+                "Infrastructure suppliers & authorized resale terms",
+                "GPU-hour, token, minute & message margins",
+                "Capacity commitments & working-capital reserves",
+                "Idle clusters, toll fraud & service-credit losses",
+                "Demand validation & committed customer sourcing",
+                "H100/H200 slicing & tenant isolation",
+                "Inference routing, metering & failover controls",
+                "Telecom registration, consent & data obligations",
+                "Usage reconciliation & automated spend limits",
+                "Lean operations pods & supplier diversification",
+                "First 30-day metered-capacity launch sprint",
+            ],
+            [
+                ["VALIDATE", "Confirm workloads & lawful traffic demand"],
+                ["CONTRACT", "Secure resale rights & capacity terms"],
+                ["PROVISION", "Isolate tenants & configure routes"],
+                ["METER", "Track usage, cost & customer limits"],
+                ["PROTECT", "Enforce service levels & abuse controls"],
+                ["RECONCILE", "Audit supplier bills & realized spreads"],
+            ],
+        ),
+    },
 }
 
-ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36)
 CANDIDATE_TO_VOLUME_NUMBER: dict[int, int] = {
     int(spec["candidate_number"]): num for num, spec in ALL_VOLUME_SPECS.items()
 }
 
 
 def get_volume_spec_by_candidate(candidate_number: object) -> dict | None:
-    """Return the canonical volume spec for a 1..29 candidate_number, or None."""
+    """Return the canonical volume spec for a 1..36 candidate_number, or None."""
     if isinstance(candidate_number, bool):
         return None
     try:
@@ -636,7 +895,7 @@ def _match_volume_number(volume_id: object) -> int | None:
 
 
 def get_volume_spec(volume_id_or_num: object = None) -> dict:
-    """Return the canonical spec dict for any of the 29 registered volumes."""
+    """Return the canonical spec dict for any of the 36 registered volumes."""
     if volume_id_or_num is None:
         return ALL_VOLUME_SPECS[1]
     num = _match_volume_number(volume_id_or_num)

@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-034-nemt-and-medical-courier-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1782651,
+      "sha256": "893b7809daa464d8d8b8128bba11a36c741d3442b395c79b3669b4ddd4d6bd14"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2292325,
+      "sha256": "aa7698d1f9d387fa043f27c0c1c3a3c4259d7335d00df55a2216dc19d3e44ad6"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 550691,
+      "sha256": "244f51895b07d93e00712eb5f7308a5a344701877a1b03b059195b0421ae249b"
+    },
+    "book.epub": {
+      "bytes": 260264,
+      "sha256": "74eec7195c00d08a1bc954b42234b7104356e382ab73c9e946fd8289d39330e3"
+    },
+    "art/cover.svg": {
+      "bytes": 4427,
+      "sha256": "5bd50afb6b4fc8d258c66c1e5f384ca506cb097905d18b14eff98abe361fd505"
+    },
+    "art/scorecard.svg": {
+      "bytes": 52282,
+      "sha256": "a15f05a298faf1278d9174491af492f6bc2ca12455ca140c13741b1578e2297c"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11854,
+      "sha256": "1f321ce3ad2cbbaa65c2eafbde21d291cc72b4d43349c08589ef5cdc7e5e1c39"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8079,
+      "sha256": "8b62ba6d74f0bddaba812e925ed0b1562d7776cd04e14169144144e3387dd094"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12314,
+      "sha256": "88127d3d835718f263226eecf146592d3163462f643c9426339dc8fca7e58326"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9641,
+      "sha256": "c93a5bb7a49573fdcafac20c7ddaff242921aaa905791e6e17a6a6c418ca4e80"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10644,
+      "sha256": "e390f7bda09fd442f403c7ada89ae0c2d1c3742802790f6e38bbe645210d98c5"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12663,
+      "sha256": "27d12a261241aecbe7698a9d34ff54e6622331245e6312554fedb85be8746b8c"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9356,
+      "sha256": "534512f1b99b8bbf7ce50577dfa666fbdf2d6155a3f265f95bd46ee6a62502c5"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9247,
+      "sha256": "645c998b85bfebf5da85086c80f7b65cd75253d48c4ef04bbf6518ee097d6715"
+    }
+  }
+}

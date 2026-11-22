@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import fcntl
 import hashlib
+import inspect
 import math
 import shutil
 import weakref
@@ -1023,7 +1024,7 @@ def build_default_brand_system() -> dict:
                 "test_price_usd": 249,
                 "includes": [
                     "5-Volume Flagship Boxed/Digital Set",
-                    "29-Business Money-to-Manpower Atlas",
+                    "36-Business Money-to-Manpower Atlas",
                     "All Companion Workbooks",
                 ],
                 "hypothesis": True,
@@ -1041,7 +1042,7 @@ def build_default_brand_system() -> dict:
                 ],
                 "hypothesis": True,
                 "paid_checkout_enabled": False,
-                "notes": "All Big Money Playbook releases, live 29-business Money-to-Manpower deal scorecards, and operator templates.",
+                "notes": "All Big Money Playbook releases, live 36-business Money-to-Manpower deal scorecards, and operator templates.",
             },
         },
         "workflow_stages": _build_workflow_stages(),
@@ -1773,11 +1774,8 @@ _VOLUME_BUILDERS_CACHE: dict[tuple, tuple[dict, dict, dict]] = {}
 _VOLUME_BUILDERS_CACHE_LOCK = threading.Lock()
 
 
-def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict, dict, dict]:
-    spec = get_volume_spec(volume_slug)
-    num = spec["volume_number"]
-    source_path = Path(__file__).with_name(f"volume_{num:03d}_manuscript.py")
-    fingerprint = (
+def _abridged_fingerprint(abridged: list[dict]) -> tuple[int, str]:
+    return (
         len(abridged),
         hashlib.sha256(json.dumps(
             abridged,
@@ -1786,6 +1784,18 @@ def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict
             separators=(",", ":"),
         ).encode("utf-8")).hexdigest()[:24],
     )
+
+
+def _fresh_volume_builders(
+    volume_slug: str,
+    abridged: list[dict],
+    *,
+    _fingerprint: tuple[int, str] | None = None,
+) -> tuple[dict, dict, dict]:
+    spec = get_volume_spec(volume_slug)
+    num = spec["volume_number"]
+    source_path = Path(__file__).with_name(f"volume_{num:03d}_manuscript.py")
+    fingerprint = _abridged_fingerprint(abridged) if _fingerprint is None else _fingerprint
     key = (spec["volume_id"], fingerprint, source_path.stat().st_mtime_ns)
     with _VOLUME_BUILDERS_CACHE_LOCK:
         if key in _VOLUME_BUILDERS_CACHE:
@@ -1798,7 +1808,7 @@ def _fresh_volume_builders(volume_slug: str, abridged: list[dict]) -> tuple[dict
     )
     with _VOLUME_BUILDERS_CACHE_LOCK:
         _VOLUME_BUILDERS_CACHE[key] = deepcopy(result)
-        while len(_VOLUME_BUILDERS_CACHE) > 64:
+        while len(_VOLUME_BUILDERS_CACHE) > 96:
             del _VOLUME_BUILDERS_CACHE[next(iter(_VOLUME_BUILDERS_CACHE))]
     return result
 
@@ -1837,6 +1847,7 @@ def sync_publishing_store(
             return path
 
         abridged = list(abridged_videos or [])
+        abridged_fp = _abridged_fingerprint(abridged)
         raw = list(raw_videos or [])
 
         # --- brand -----------------------------------------------------------
@@ -1904,6 +1915,11 @@ def sync_publishing_store(
         flagship_chapter_files: list[str] = []
         flagship_graphics_reviews: dict = {}
         flagship_workbook: dict = {}
+        builder_kwargs = (
+            {"_fingerprint": abridged_fp}
+            if "_fingerprint" in inspect.signature(_fresh_volume_builders).parameters
+            else {}
+        )
 
         for vol_slug in published_slugs:
             vol_dir = _volume_dir(root, vol_slug)
@@ -1932,7 +1948,7 @@ def sync_publishing_store(
                 continue
             vol_scorecard = _volume_scorecard_for_slug(pipeline, vol_slug)
             vol_diagrams_data, vol_workbook, vol_fresh_manuscript = _fresh_volume_builders(
-                vol_slug, abridged
+                vol_slug, abridged, **builder_kwargs
             )
             vol_manuscript_path = vol_dir / "manuscript.json"
             existing_manuscript = _read_json(vol_manuscript_path, None, strict=not force)

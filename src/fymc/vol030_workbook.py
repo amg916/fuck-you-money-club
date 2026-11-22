@@ -1,0 +1,1807 @@
+from __future__ import annotations
+
+
+def build_volume_030_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-030-lending-and-flash-funding-arbitrage",
+        "volume_id": "vol-030-lending-and-flash-funding-arbitrage",
+        "title": "Lending & Flash-Funding Arbitrage — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Escrow-Locked Double Closes, "
+            "Earnest-Money Qualification, Liquidity Velocity, Wire Controls, "
+            "State Lending Reviews, and Small-Team Operating Discipline"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
+                "purpose": (
+                    "Qualify each proposed advance before promising liquidity. Establish the "
+                    "actual repayment source, verify every counterparty independently, and "
+                    "separate earned fees from principal movement. Reject apparent spreads "
+                    "that depend on provisional buyer funds, unsecured reimbursement promises, "
+                    "or unverified settlement instructions."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Assign one immutable deal identifier before reviewing documents. Map "
+                        "the seller-to-intermediary purchase and intermediary-to-end-buyer resale "
+                        "separately, then identify which obligations require cash, which documents "
+                        "create repayment rights, and which parties can change settlement instructions."
+                    ),
+                    (
+                        "Obtain the complete purchase agreements, resale agreement, settlement "
+                        "agent engagement, and proposed disbursement schedule. Compare legal names, "
+                        "property identifiers, dates, assignment restrictions, and cancellation "
+                        "rights rather than relying on a broker summary or proof-of-funds letter."
+                    ),
+                    (
+                        "Verify the settlement agent through independently sourced contact "
+                        "information and confirm applicable bonding, insurance, licensing, and "
+                        "underwriter relationships. Record evidence dates and limits; a familiar "
+                        "logo or prior successful transaction does not authenticate new wire instructions."
+                    ),
+                    (
+                        "Require unconditional end-buyer cash on deposit before releasing "
+                        "principal to the verified bonded title or settlement agent. Treat lender "
+                        "commitments, pending transfers, conditional deposits, and screenshots as "
+                        "insufficient; document the agent's written confirmation and its precise limitations."
+                    ),
+                    (
+                        "Calculate spread after capital usage, verification work, settlement "
+                        "charges, and reserves. Apply the same cash-release requirement to "
+                        "earnest-money proposals; ordinary speculative deposits fail this playbook "
+                        "when the required end-buyer cash cannot already be verified."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Deal identity and transaction chain",
+                        "textarea",
+                        "Record the immutable deal identifier, property description, contracting "
+                        "entities, settlement sequence, and proposed advance. Explain exactly "
+                        "where the operator enters the chain and which agreement establishes "
+                        "the right to receive repayment.",
+                        "Deal LF-030-001 concerns 18 Cedar Avenue. Cedar Buyer LLC purchases "
+                        "for $100,000 and resells to Harbor Holdings LLC for $125,000. The "
+                        "operator advances $100,000 only to the verified settlement account; "
+                        "a signed funding agreement directs return of principal plus a $2,000 earned fee.",
+                    ),
+                    field(
+                        "Counterparty identity and signing authority",
+                        "textarea",
+                        "Identify each entity's registration, beneficial ownership evidence, "
+                        "authorized signer, and independently verified contact route. Distinguish "
+                        "identity checks from creditworthiness and document inconsistencies "
+                        "that must be resolved before any commitment becomes executable.",
+                        "Cedar Buyer LLC provides its state registration, operating agreement, "
+                        "manager resolution, and signer identification. The analyst matches the "
+                        "manager across all four records and calls a previously verified number. "
+                        "A different email domain triggers fresh verification rather than an "
+                        "automatic update to payment instructions.",
+                    ),
+                    field(
+                        "Settlement agent qualification",
+                        "textarea",
+                        "Document the settlement agent's applicable license, bond, insurance, "
+                        "bank account title, and title-underwriter relationship. Capture "
+                        "independently sourced verification evidence, including exclusions that "
+                        "could prevent recovery after escrow theft or unauthorized disbursement.",
+                        "The proposed agent presents a $250,000 fidelity bond and $1 million "
+                        "errors-and-omissions policy. The analyst verifies status with the issuer "
+                        "and checks whether lender loss and employee dishonesty are covered. "
+                        "The $100,000 advance remains blocked until account ownership and applicable "
+                        "settlement authority are independently confirmed.",
+                    ),
+                    field(
+                        "Unconditional end-buyer cash evidence",
+                        "textarea",
+                        "Describe the evidence proving end-buyer cash is already deposited, "
+                        "available for the specified closing, and free of unresolved funding "
+                        "conditions. Identify the agent providing confirmation and any remaining "
+                        "contractual right that could interrupt disbursement.",
+                        "Harbor deposits $125,000 into the verified escrow account before "
+                        "release. The settlement officer confirms receipt, availability, and "
+                        "satisfaction of buyer funding conditions in writing. A pending ACH "
+                        "credit does not qualify. The reviewer also checks cancellation language "
+                        "because deposited cash alone does not eliminate contractual withdrawal risk.",
+                    ),
+                    field(
+                        "Repayment waterfall and instruction priority",
+                        "textarea",
+                        "Specify the order of principal return, earned fee payment, settlement "
+                        "expenses, and intermediary proceeds. Reconcile the waterfall against "
+                        "both closing statements and identify whose written acceptance makes "
+                        "the disbursement instructions operationally effective.",
+                        "The resale receives $125,000. Accepted instructions allocate $100,000 "
+                        "to principal return, $2,000 to the operator's earned fee, $3,000 to "
+                        "other settlement expenses, and $20,000 to Cedar. Both transactions "
+                        "must balance independently; the operator's $100,000 initial advance "
+                        "pays the first purchase price and is never fee revenue.",
+                    ),
+                    field(
+                        "Net spread qualification",
+                        "textarea",
+                        "Calculate the transaction's earned fee less attributable capital, "
+                        "verification, transfer, and administration costs. State the minimum "
+                        "acceptable contribution and distinguish this deal-level result from "
+                        "annual owner profit after overhead and portfolio losses.",
+                        "A $2,000 funding fee less $80 capital cost, $150 diligence, $50 "
+                        "wire charges, and $120 administration produces $1,600 transaction "
+                        "contribution. The contribution ratio is 80%, but the canonical base "
+                        "annual owner margin remains 42.5% after all modeled operating expenses "
+                        "and loss-related costs.",
+                    ),
+                    field(
+                        "Earnest-money structure qualification",
+                        "textarea",
+                        "Describe whether the proposed earnest-money arrangement creates "
+                        "repayable debt, genuine shared investment risk, or another economic "
+                        "relationship. Evaluate actual loss allocation and the universal "
+                        "cash-release condition instead of accepting a promotional product label.",
+                        "A sponsor requests $15,000 of earnest money for a promised $3,000 "
+                        "profit split, but no end-buyer cash is deposited. The request is "
+                        "rejected under this operating policy. Calling the arrangement a "
+                        "Gator joint venture does not cure missing repayment evidence or "
+                        "resolve state lending characterization.",
+                    ),
+                    field(
+                        "Corporate promotional-credit suitability",
+                        "textarea",
+                        "Record the issuer's permitted transaction types, promotional period, "
+                        "transfer charges, repayment requirements, and cash-advance treatment. "
+                        "Explain how funds would reach escrow without disguised purchases, "
+                        "unsupported representations, or dependence on repeated credit extensions.",
+                        "An issuer offers a documented promotional transfer with a 3% charge. "
+                        "Moving $20,000 costs $600 before any escrow expense. A proposed $500 "
+                        "earned fee therefore loses at least $100. The operator rejects the "
+                        "transaction rather than treating a 0% promotional interest rate as "
+                        "costless liquidity.",
+                    ),
+                    field(
+                        "Failure triggers and exposure limits",
+                        "textarea",
+                        "List transaction-specific rejection triggers, maximum principal "
+                        "exposure, expected settlement duration, and concentration limits. "
+                        "Identify the person who can stop funding when evidence changes and "
+                        "the records required to resume the review.",
+                        "LF-030-001 has a $100,000 principal ceiling and a planned two-business-day "
+                        "cycle. Changed beneficiary details, conditional buyer cash, missing "
+                        "bond verification, or unsigned repayment instructions stop release. "
+                        "The owner may restart review only after independent evidence resolves "
+                        "the specific failure; commercial pressure cannot substitute for verification.",
+                    ),
+                    field(
+                        "Underwriting decision and evidence expiry",
+                        "textarea",
+                        "Summarize the decision, outstanding conditions, evidence timestamps, "
+                        "and validity window. Separate a preliminary indication from an "
+                        "executable commitment, and explain which document changes require "
+                        "complete re-underwriting rather than a clerical amendment.",
+                        "The preliminary indication allows $100,000 for a $2,000 fee, subject "
+                        "to same-day cash and beneficiary verification. It expires after "
+                        "three business days. A new buyer, settlement agent, property, or "
+                        "repayment waterfall requires a fresh decision. Only the owner signs "
+                        "the final commitment after the reviewer completes all evidence checks.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance only when all ten underwriting records identify their evidence, "
+                    "the verified bonded settlement agent has accepted repayment instructions, "
+                    "unconditional end-buyer cash is confirmed, and the owner records an "
+                    "explicit executable commitment within its validity window."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
+                "purpose": (
+                    "Build a capital model that distinguishes fee revenue, deployed "
+                    "principal, protected reserves, and available borrowing capacity. "
+                    "Reproduce the three canonical annual scenarios exactly, then test "
+                    "whether settlement duration, funding charges, concentration, and "
+                    "fixed expenses support the proposed operating cadence."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Copy the canonical annual revenue, margin, profit, and staffing "
+                        "figures without substituting transaction contribution for owner "
+                        "profit. Derive total modeled costs by subtraction, and keep "
+                        "principal movement outside every revenue calculation and sales dashboard."
+                    ),
+                    (
+                        "Build a fee bridge using completed services and enforceable "
+                        "compensation terms. Separate transactional fees, earned origination "
+                        "points, and any retained joint-venture economics; do not count the "
+                        "same compensation twice because it appears on multiple settlement documents."
+                    ),
+                    (
+                        "Model peak deployment using actual settlement calendars, bank "
+                        "cutoffs, holidays, and overlapping commitments. Use business days "
+                        "for capacity planning and the contractual day-count convention "
+                        "for capital charges; disclose the difference whenever weekends extend cash usage."
+                    ),
+                    (
+                        "Ring-fence operating and loss reserves before offering commitments. "
+                        "Treat external facilities as available only after execution and "
+                        "satisfaction of draw conditions, and never use another client's "
+                        "escrow funds to bridge an unrelated transaction or operating expense."
+                    ),
+                    (
+                        "Stress the model for delayed repayment, disputed fees, unavailable "
+                        "facilities, and principal impairment. Reconcile transaction ledgers "
+                        "to bank evidence and the annual scenario, then state whether the "
+                        "startup capital supports the planned capacity without assuming unlimited recycling."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Canonical scenario reconciliation",
+                        "textarea",
+                        "Enter all three canonical annual scenarios with revenue, owner "
+                        "margin, owner profit, derived total costs, and staffing. Explain "
+                        "that these are modeled annual outcomes rather than closing-day "
+                        "cash balances or automatic results.",
+                        "Conservative: $120,000 revenue, 30% margin, $36,000 owner profit, "
+                        "$84,000 costs, one full-time operator plus two contractors. Base: "
+                        "$535,000, 42.5%, $227,375, $307,625, identical staffing. Scaled: "
+                        "$950,000, 55%, $522,500, $427,500, two full-time staff plus three "
+                        "contractors. Each profit equals revenue multiplied by its stated margin.",
+                    ),
+                    field(
+                        "Recognized fee revenue bridge",
+                        "textarea",
+                        "Construct an illustrative annual fee mix that reconciles exactly "
+                        "to each scenario. Identify service completion and contract evidence "
+                        "for earned amounts, exclude returned principal, and distinguish "
+                        "origination compensation from duplicated funding fees.",
+                        "Conservative uses 60 completed closings at $2,000, totaling $120,000. "
+                        "Base uses 250 at $2,000 plus 35 separately earned $1,000 origination "
+                        "fees, totaling $535,000. Scaled uses 450 at $2,000 plus 50 separately "
+                        "earned $1,000 origination fees, totaling $950,000. Each additional "
+                        "origination fee requires distinct contractual support.",
+                    ),
+                    field(
+                        "Principal and retained-share classification",
+                        "textarea",
+                        "Define principal, operator-owned fees, and compensation collected "
+                        "for others. Document principal-versus-agent treatment for fees "
+                        "within ASC 606 and identify lending amounts requiring other "
+                        "accounting guidance instead of forcing all receipts into one category.",
+                        "A $102,000 receipt contains $100,000 principal and $2,000 earned "
+                        "operator compensation. Principal reduces the advance receivable. "
+                        "For a separate agency arrangement collecting a $3,000 fee with "
+                        "retained_share of 0.40, recognized operator revenue is $1,200 and "
+                        "$1,800 is payable onward. That illustration does not increase canonical revenue.",
+                    ),
+                    field(
+                        "Startup capital and committed capacity",
+                        "textarea",
+                        "Allocate startup cash between protected reserves and deployable "
+                        "equity, then identify executed external capacity separately. Show "
+                        "the maximum simultaneous principal commitment and the consequences "
+                        "if a proposed facility is unavailable at launch.",
+                        "At the $100,000 startup ceiling, protect $50,000 and deploy "
+                        "$50,000 of equity. A hypothetical executed $450,000 facility "
+                        "would create $500,000 total deployment capacity. Without that "
+                        "facility, capacity remains $50,000 and the illustrated $100,000 "
+                        "deal cannot proceed; promotional credit limits do not automatically "
+                        "replace committed funds.",
+                    ),
+                    field(
+                        "Capital turns and deployment utilization",
+                        "textarea",
+                        "Calculate annual principal throughput, principal-days, average "
+                        "deployment, and utilization using explicit assumptions. Distinguish "
+                        "capacity arithmetic from achievable demand, and leave room for "
+                        "settlement bunching rather than scheduling every dollar continuously.",
+                        "Base throughput assumes 250 closings at $100,000, or $25 million "
+                        "of principal movement, not revenue. Two business days per closing "
+                        "creates $50 million principal-days. Across 250 business days, "
+                        "average deployment is $200,000, representing 40% utilization of "
+                        "$500,000 capacity. Five simultaneous $100,000 deals consume all capacity.",
+                    ),
+                    field(
+                        "Per-deal contribution and capital charge",
+                        "textarea",
+                        "Itemize one transaction's earned fee and direct costs, including "
+                        "the actual capital-charge convention. Compute contribution before "
+                        "fixed overhead, and identify whether minimum facility charges "
+                        "or unused-line fees require additional annual expense allocations.",
+                        "For LF-030-001, $2,000 revenue less $80 capital, $150 diligence, "
+                        "$50 transfers, and $120 administration leaves $1,600. The $80 "
+                        "capital charge assumes $100,000 for two chargeable days at 14.6% "
+                        "on an actual/365 basis. A weekend extension or facility minimum "
+                        "requires recalculation before the quote remains valid.",
+                    ),
+                    field(
+                        "Base annual cost bridge",
+                        "textarea",
+                        "Reconcile illustrative direct costs and recurring overhead to "
+                        "the canonical base total cost envelope. Show each category "
+                        "separately and explain whether monthly operating expenses exclude "
+                        "transaction-linked capital charges, contractor work, or portfolio provisions.",
+                        "Base costs comprise $100,000 closing direct costs, $7,000 separate "
+                        "origination delivery costs, $120,000 recurring overhead, $50,000 "
+                        "additional portfolio capital costs, and $30,625 loss-related expense. "
+                        "Total costs equal $307,625, leaving $227,375 from $535,000 revenue. "
+                        "Recurring overhead averages $10,000 monthly, within the stated "
+                        "$2,000–$12,000 operating range.",
+                    ),
+                    field(
+                        "Protected reserve and liquidity runway",
+                        "textarea",
+                        "Set an operating reserve, loss buffer, and minimum available "
+                        "cash floor. Explain reserve ownership and replenishment rules, "
+                        "and distinguish an earmarked cash balance from a booked loss "
+                        "expense so the model avoids double counting.",
+                        "The protected $50,000 comprises $30,000 for three months of "
+                        "$10,000 recurring overhead and $20,000 of loss liquidity. "
+                        "Earmarking does not itself create an expense. The annual "
+                        "$30,625 loss-related budget is separate from reserve cash, "
+                        "and new commitments stop if projected unrestricted cash falls "
+                        "below the required operating floor.",
+                    ),
+                    field(
+                        "Delay and impairment sensitivity",
+                        "textarea",
+                        "Quantify an extended settlement and a principal-loss case "
+                        "separately. State additional capital costs, unavailable capacity, "
+                        "and incremental profit impact relative to the canonical base; "
+                        "do not silently replace the published scenario with stressed results.",
+                        "Three extra chargeable days on $100,000 add $120 at 14.6% "
+                        "actual/365 and occupy one funding slot longer. Separately, "
+                        "a $25,000 incremental loss beyond all modeled provisions reduces "
+                        "base owner profit from $227,375 to $202,375. Neither stress "
+                        "result changes the canonical $227,375 scenario printed in the scorecard.",
+                    ),
+                    field(
+                        "Owner distributions and cash reconciliation",
+                        "textarea",
+                        "Specify when earned profit may be distributed after bank "
+                        "reconciliation, payable settlement, reserve replenishment, and "
+                        "facility obligations. Explain why revenue recognition, accounting "
+                        "profit, collected fees, and distributable cash can differ during growth.",
+                        "The monthly review shows $40,000 earned revenue, $23,000 expenses, "
+                        "and $17,000 accounting profit, but $5,000 of fees remain "
+                        "uncollected. Collected operating surplus is $12,000 before "
+                        "other balance-sheet changes. The owner defers distributions "
+                        "until contractor payables, facility requirements, and the "
+                        "$50,000 protected reserve are fully covered.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Proceed only after all three scenarios reproduce their exact canonical "
+                    "profits, the fee bridge excludes principal, the reserve and external "
+                    "capacity assumptions are explicit, and the proposed closing calendar "
+                    "fits available committed cash under the documented delay stress."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
+                "purpose": (
+                    "Translate underwriting into a controlled settlement process with "
+                    "independent wire verification, explicit state transitions, and "
+                    "replay-safe records. Preserve a complete principal and fee trail "
+                    "while preventing duplicate releases, premature revenue posting, "
+                    "and silent exceptions during delayed or disputed closings."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Create separate preparation and release responsibilities even "
+                        "when contractors support a single full-time owner. Require "
+                        "independent evidence review before the bank instruction becomes "
+                        "executable, and log who checked beneficiary ownership, buyer cash, "
+                        "and accepted repayment terms."
+                    ),
+                    (
+                        "Represent the deal as explicit operational states with permitted "
+                        "transitions and evidence requirements. Prevent automation from "
+                        "jumping directly from intake to funded, and freeze movement "
+                        "when a material document changes after the final pre-flight review."
+                    ),
+                    (
+                        "Use immutable event identifiers and unique business keys for "
+                        "ledger operations. Persist intent before requesting a transfer, "
+                        "then reconcile provider status before retrying; a timeout does "
+                        "not prove failure and must never automatically trigger a second wire."
+                    ),
+                    (
+                        "Reconcile both sides of every principal movement against bank "
+                        "records and settlement statements. Post fees only when earned "
+                        "under the applicable agreement and accounting policy, and keep "
+                        "bank availability distinct from revenue recognition and contractual collectability."
+                    ),
+                    (
+                        "Conduct a tabletop incident before the first funded closing. "
+                        "Test changed wiring instructions, duplicate callbacks, delayed "
+                        "repayment, and an unavailable reviewer, then preserve the "
+                        "decision trail and correct any workflow capable of releasing "
+                        "cash without the required evidence."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "State machine and transition evidence",
+                        "textarea",
+                        "List permitted deal states and the evidence required for each "
+                        "transition. Identify terminal rejection states, reversible "
+                        "preparation steps, and the point where an external payment "
+                        "creates an obligation that cannot be undone locally.",
+                        "LF-030-001 moves through intake, verified, documented, cash-confirmed, "
+                        "release-authorized, submitted, funded, repaid, and reconciled. "
+                        "A bank acknowledgment is required before funded status. "
+                        "Rejected is terminal unless a new review version is created. "
+                        "Once a wire is submitted, deleting an application record "
+                        "cannot cancel the external instruction.",
+                    ),
+                    field(
+                        "Independent beneficiary verification",
+                        "textarea",
+                        "Describe the callback procedure, trusted contact source, account "
+                        "ownership evidence, and reviewer separation. Specify how changed "
+                        "instructions invalidate earlier verification and how the team "
+                        "avoids authenticating a suspicious message through that same message.",
+                        "The preparer uploads the agent's instructions, and the reviewer "
+                        "calls a number verified during onboarding rather than the "
+                        "email signature. They confirm beneficiary name, routing number, "
+                        "account digits, and deal reference. Any change creates a "
+                        "new verification record and blocks reuse of the prior "
+                        "release authorization.",
+                    ),
+                    field(
+                        "Release packet and final pre-flight",
+                        "textarea",
+                        "Define the minimum release packet and its freshness requirements. "
+                        "Include buyer cash confirmation, signed repayment instructions, "
+                        "settlement-agent verification, available capital, and exact "
+                        "beneficiary details, with a named reviewer responsible for "
+                        "resolving discrepancies.",
+                        "The release packet contains both contracts, accepted disbursement "
+                        "instructions, current agent checks, same-day $125,000 buyer "
+                        "cash confirmation, and the $100,000 wire request. The "
+                        "reviewer compares every amount with the ledger. Missing "
+                        "signatures, changed buyer identity, or stale beneficiary "
+                        "verification returns the deal to documented status.",
+                    ),
+                    field(
+                        "Idempotency key and retry behavior",
+                        "textarea",
+                        "Define a unique key for each intended principal disbursement "
+                        "and explain retry behavior after timeouts. Distinguish "
+                        "application deduplication from bank-side protection and require "
+                        "status reconciliation wherever the payment provider cannot "
+                        "enforce idempotent requests.",
+                        "The business key is LF-030-001:principal-release:v1. SQLite "
+                        "enforces one release-intent row for that key, while a "
+                        "separate attempt record stores provider references. A timeout "
+                        "moves the attempt to status-review. The operator checks "
+                        "the bank before retrying; application uniqueness alone "
+                        "cannot prevent a manually duplicated bank wire.",
+                    ),
+                    field(
+                        "Principal and fee journal entries",
+                        "textarea",
+                        "Write balanced entries for advance, fee earning, collection, "
+                        "and transaction costs. Identify the supporting event for "
+                        "each posting and ensure principal return reduces the "
+                        "receivable rather than inflating earned revenue or profit.",
+                        "Advance: debit principal receivable $100,000 and credit cash "
+                        "$100,000. When the contractual service is complete, debit "
+                        "fee receivable $2,000 and credit fee revenue $2,000. "
+                        "Collection debits cash $102,000 and credits those receivables "
+                        "$100,000 and $2,000. Direct costs debit expense $400 "
+                        "and credit cash or payables $400.",
+                    ),
+                    field(
+                        "Escrow payoff reconciliation",
+                        "textarea",
+                        "Specify the documents and arithmetic used to reconcile "
+                        "repayment against the accepted waterfall. Define tolerances, "
+                        "investigation ownership, and treatment of short payments "
+                        "without silently rewriting the original contractual fee "
+                        "or principal balance.",
+                        "The payoff ledger expects $102,000 but the bank receives "
+                        "$101,950. A $50 difference is assigned to investigation, "
+                        "not automatically deducted from revenue. The reviewer "
+                        "obtains the bank advice and settlement statement to "
+                        "determine whether an authorized transfer charge, underpayment, "
+                        "or posting error explains the discrepancy.",
+                    ),
+                    field(
+                        "Immutable evidence and version history",
+                        "textarea",
+                        "Describe storage locations, document versions, access "
+                        "restrictions, and event timestamps. Explain what a "
+                        "cryptographic digest proves and what it cannot establish "
+                        "about authenticity, legal authority, or the accuracy "
+                        "of a settlement representation.",
+                        "Each accepted PDF receives a SHA-256 digest, UTC timestamp, "
+                        "document version, and uploader identity in the evidence "
+                        "index. Originals remain access-controlled and retained "
+                        "under the record schedule. Matching hashes demonstrate "
+                        "unchanged bytes after capture; they do not prove that "
+                        "the signer had authority or that buyer cash existed.",
+                    ),
+                    field(
+                        "QA fixtures and expected outcomes",
+                        "textarea",
+                        "List deterministic test cases for duplicate requests, "
+                        "partial repayments, stale documents, and invalid transitions. "
+                        "State expected ledger balances and system behavior so "
+                        "a reviewer can repeat the tests before workflow changes "
+                        "reach production.",
+                        "Submitting the same release key twice produces one "
+                        "$100,000 intent. A $60,000 principal repayment leaves "
+                        "$40,000 outstanding. A changed beneficiary blocks "
+                        "release. A duplicated bank event creates no second "
+                        "journal entry. Tests compare exact integer-cent balances "
+                        "and require every accepted posting batch to balance "
+                        "to zero.",
+                    ),
+                    field(
+                        "Wire incident response and escalation",
+                        "textarea",
+                        "Define the immediate response to suspected diversion, "
+                        "including bank contacts, evidence preservation, settlement "
+                        "notification, and reporting ownership. Distinguish requesting "
+                        "recall or cancellation from obtaining confirmed recovery "
+                        "of the transferred funds.",
+                        "If the $100,000 wire appears diverted, the owner immediately "
+                        "contacts the bank's fraud desk and requests recall, "
+                        "preserves headers and call records, and alerts the "
+                        "verified settlement agent. UCC 4A-211 cancellation "
+                        "depends on timing and applicable rules. The ledger "
+                        "continues showing exposure until recovery is confirmed.",
+                    ),
+                    field(
+                        "Closing pack and exception closure",
+                        "textarea",
+                        "Specify the final evidence required to close a deal "
+                        "operationally and in the ledger. Assign unresolved "
+                        "exceptions an owner and deadline rather than marking "
+                        "the transaction complete solely because expected cash "
+                        "has appeared.",
+                        "LF-030-001 closes only after principal receivable reaches "
+                        "zero, the $2,000 fee is supported and collected, "
+                        "the $400 direct costs are posted, and settlement "
+                        "statements match the bank. A missing signed statement "
+                        "remains an open documentation exception with a named "
+                        "owner, even when the cash reconciliation is exact.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Release only after the independent reviewer signs the current packet "
+                    "and the ledger contains one authorized release intent. Mark the "
+                    "worksheet complete after duplicate-event tests pass, repayment "
+                    "reconciles, and every remaining exception has an explicit owner."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
+                "purpose": (
+                    "Convert jurisdictional questions into documented operating "
+                    "requirements before quoting or deploying capital. Evaluate "
+                    "licensing, interest characterization, escrow authority, referral "
+                    "compensation, and enforceability using actual transaction facts "
+                    "rather than assuming that short duration or entity borrowers "
+                    "create universal exemptions."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Map borrower location, property location, lender activity, "
+                        "solicitation channels, and settlement location before "
+                        "selecting governing law. Assign qualified counsel a "
+                        "specific fact pattern and request a written operating "
+                        "matrix with permitted structures and evidence requirements."
+                    ),
+                    (
+                        "Analyze economic substance before naming a product. "
+                        "A mandatory repayment promise and fixed return can "
+                        "support lending treatment despite joint-venture terminology, "
+                        "while genuine investment participation requires careful "
+                        "review of actual control, risk sharing, and compensation."
+                    ),
+                    (
+                        "Separate federal coverage questions from state licensing "
+                        "and rate restrictions. Business-purpose treatment under "
+                        "one federal rule does not establish a state exemption, "
+                        "authorize escrow activity, or validate every fee imposed "
+                        "on a short-duration advance."
+                    ),
+                    (
+                        "Attach transaction-specific schedules to the funding "
+                        "agreement and obtain the settlement agent's acceptance "
+                        "of operational instructions. Confirm that contract "
+                        "language matches actual accounts, timing, available "
+                        "remedies, and the agent's authority to carry out "
+                        "the proposed disbursement."
+                    ),
+                    (
+                        "Maintain a change log for laws, counsel conclusions, "
+                        "issuer terms, and settlement-agent requirements. Stop "
+                        "affected activity when a material assumption changes, "
+                        "then update templates, intake questions, and training "
+                        "before the revised structure is offered to counterparties."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Jurisdiction and activity map",
+                        "textarea",
+                        "Record all locations and activities relevant to "
+                        "lending, brokering, solicitation, and settlement. Explain "
+                        "why contractual governing law alone does not settle "
+                        "licensing or mandatory statutory requirements, and "
+                        "identify the reviewer responsible for each jurisdiction.",
+                        "The operator works from California, the borrowing entity "
+                        "is organized in Delaware, and the property and "
+                        "settlement agent are in Arizona. Counsel reviews "
+                        "both operating-state and transaction-state requirements. "
+                        "A Delaware governing-law clause is recorded but "
+                        "does not replace analysis of California lending "
+                        "activity or Arizona settlement authority.",
+                    ),
+                    field(
+                        "Commercial lending license analysis",
+                        "textarea",
+                        "Identify the statute governing the proposed lending "
+                        "activity, the asserted exemption, and the facts "
+                        "supporting its use. Require a conclusion about "
+                        "actual transactions rather than treating commercial "
+                        "purpose or short duration as self-executing exemptions.",
+                        "For California activity, the review addresses the "
+                        "California Financing Law, including Financial Code "
+                        "section 22100 and applicable exemptions such as "
+                        "those in section 22050. The matrix records whether "
+                        "this operator and transaction qualify. An entity "
+                        "borrower and a two-day term alone do not "
+                        "establish an exemption.",
+                    ),
+                    field(
+                        "Interest characterization and rate review",
+                        "textarea",
+                        "Inventory interest, origination points, extension "
+                        "charges, mandatory participation fees, and amounts "
+                        "paid to affiliates. Calculate an illustrative "
+                        "annualized burden, then identify the jurisdiction-specific "
+                        "method and exemptions used for the actual "
+                        "rate-limit analysis.",
+                        "A $2,000 charge on $100,000 for two days "
+                        "equals 2% for the period and 365% using "
+                        "simple 365-day annualization. That diagnostic is "
+                        "not a substitute for statutory methodology. "
+                        "California Constitution article XV, section 1, "
+                        "and applicable exemptions require review; renaming "
+                        "interest a service fee does not resolve "
+                        "its treatment.",
+                    ),
+                    field(
+                        "Federal business-purpose scope",
+                        "textarea",
+                        "Document actual use of proceeds, borrower "
+                        "organization, collateral, and occupancy facts "
+                        "relevant to federal coverage. Distinguish any "
+                        "business-purpose exclusion from continuing state "
+                        "requirements and retain evidence supporting "
+                        "the classification for each transaction.",
+                        "The file documents an entity's purchase and "
+                        "immediate resale of investment property, with "
+                        "no personal occupancy. The review addresses "
+                        "12 CFR 1026.3(a) for Regulation Z and "
+                        "12 CFR 1024.5(b)(2) for Regulation X "
+                        "business-purpose exclusions. Changed use or "
+                        "borrower facts trigger a fresh scope "
+                        "determination rather than automatic reuse.",
+                    ),
+                    field(
+                        "Escrow authority and custody boundaries",
+                        "textarea",
+                        "Identify who may receive, hold, and disburse "
+                        "the funds under applicable state rules. "
+                        "Record licensing or exemption evidence and "
+                        "keep the operator's funding role distinct "
+                        "from providing unlicensed settlement or "
+                        "escrow services.",
+                        "Where California escrow activity is involved, "
+                        "the review considers Financial Code section "
+                        "17200 and relevant exemptions, including "
+                        "section 17006. The operator wires only "
+                        "to the verified bonded agent's designated "
+                        "account. It does not collect unrelated "
+                        "buyer deposits in its operating account "
+                        "or advertise itself as the escrow holder.",
+                    ),
+                    field(
+                        "Commercial disclosures and referral compensation",
+                        "textarea",
+                        "Determine whether commercial funding disclosures "
+                        "or referral restrictions apply to the "
+                        "specific product and parties. Record "
+                        "compensation recipients, actual services, "
+                        "and statutory coverage rather than "
+                        "assuming every introduction can generate "
+                        "a lawful fee.",
+                        "California Financial Code section 22800 "
+                        "and following provisions are screened "
+                        "for applicable commercial funding disclosures "
+                        "and exemptions. For a covered federally "
+                        "related mortgage transaction, 12 U.S.C. "
+                        "2607 restricts settlement-service kickbacks "
+                        "and unearned fee splitting. A $250 "
+                        "referral proposal remains unpaid until "
+                        "coverage and permitted compensation are "
+                        "documented.",
+                    ),
+                    field(
+                        "Funding agreement and settlement addendum",
+                        "textarea",
+                        "Specify principal, earned compensation, maturity, "
+                        "release conditions, repayment waterfall, "
+                        "extension treatment, and dispute handling. "
+                        "Require the addendum to distinguish "
+                        "borrower obligations from the settlement "
+                        "agent's separately accepted instructions "
+                        "and actual authority.",
+                        "The schedule states $100,000 principal, "
+                        "$2,000 earned funding compensation, and "
+                        "a two-business-day target. Release requires "
+                        "verified unconditional buyer cash and "
+                        "accepted repayment instructions. Extensions "
+                        "require written terms reviewed for "
+                        "rate restrictions. The agent separately "
+                        "acknowledges the waterfall; the borrower "
+                        "cannot bind the agent merely by "
+                        "signing the funding agreement.",
+                    ),
+                    field(
+                        "Security interests and insolvency exposure",
+                        "textarea",
+                        "Identify collateral, attachment requirements, "
+                        "perfection method, competing claims, "
+                        "and insolvency consequences. Distinguish "
+                        "contractual payment instructions from "
+                        "a perfected security interest, "
+                        "and document why escrow segregation "
+                        "does not automatically eliminate "
+                        "bankruptcy or priority disputes.",
+                        "Counsel reviews UCC 9-203 for attachment "
+                        "and 9-310 for filing requirements "
+                        "and exceptions where Article 9 "
+                        "applies. Real-property interests need "
+                        "separate analysis. The file also "
+                        "considers 11 U.S.C. 362 and 547. "
+                        "A signed payoff instruction alone "
+                        "does not establish perfected priority "
+                        "or make a repayment immune "
+                        "from avoidance litigation.",
+                    ),
+                    field(
+                        "Credit data, signatures, and record controls",
+                        "textarea",
+                        "Document permissible credit-data access, "
+                        "signer authentication, electronic record "
+                        "retention, and access restrictions. "
+                        "Separate electronic-signature validity "
+                        "from identity verification, and "
+                        "assign retention periods according "
+                        "to applicable law and "
+                        "documented business requirements.",
+                        "A personal credit report requires "
+                        "a documented permissible purpose "
+                        "under 15 U.S.C. 1681b. "
+                        "Electronic execution is evaluated "
+                        "under 15 U.S.C. 7001 "
+                        "and applicable state rules. "
+                        "The team retains signer "
+                        "authentication and document history; "
+                        "a completed electronic envelope "
+                        "does not independently establish "
+                        "authority, buyer liquidity, "
+                        "or lawful report access.",
+                    ),
+                    field(
+                        "Written determinations and renewal triggers",
+                        "textarea",
+                        "Record counsel conclusions, scope "
+                        "limits, source dates, and "
+                        "operational consequences. Identify "
+                        "events requiring renewed review, "
+                        "including new jurisdictions, "
+                        "changed fee structures, "
+                        "new acquisition channels, "
+                        "and altered borrower "
+                        "or collateral characteristics.",
+                        "The initial matrix permits only "
+                        "the reviewed entity-borrower structure "
+                        "in the documented jurisdictions. "
+                        "A proposed New York expansion "
+                        "requires separate review of "
+                        "Banking Law section 340, "
+                        "General Obligations Law section "
+                        "5-501, and Penal Law "
+                        "section 190.40 as applicable. "
+                        "The sales team cannot "
+                        "extend the existing conclusion "
+                        "by analogy.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Offer and fund only structures covered by a current written "
+                    "jurisdictional determination, supported licensing or exemption "
+                    "evidence, reviewed compensation terms, and executed agreements "
+                    "matching the actual settlement process and custody boundaries."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
+                "purpose": (
+                    "Automate evidence collection and reconciliation without "
+                    "delegating irreversible cash decisions to unverified "
+                    "messages or model output. Build repeatable referral "
+                    "demand from qualified counterparties, measure "
+                    "conversion honestly, and preserve manual fallback "
+                    "procedures when integrations, staffing, or "
+                    "settlement assumptions fail."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Map each workflow stage to "
+                        "a specific input, validation, "
+                        "owner, and output. Automate "
+                        "document completeness checks and "
+                        "status reminders first, keeping "
+                        "beneficiary verification and final "
+                        "cash release dependent on "
+                        "independent evidence and designated "
+                        "human responsibility."
+                    ),
+                    (
+                        "Design proof-of-funds generation "
+                        "around verified availability and "
+                        "explicit conditions. Prevent "
+                        "templates from implying unlimited "
+                        "capital, bank affiliation, or "
+                        "unconditional commitments, and "
+                        "withdraw outdated letters whenever "
+                        "capacity reservations or evidence "
+                        "change materially."
+                    ),
+                    (
+                        "Build acquisition around title "
+                        "professionals, experienced repeat "
+                        "buyers, and transaction counsel "
+                        "who understand the release "
+                        "requirements. Qualify referral "
+                        "compensation separately and measure "
+                        "completed eligible closings rather "
+                        "than celebrating unverified "
+                        "lead volume or principal "
+                        "throughput."
+                    ),
+                    (
+                        "Use least-privilege access, "
+                        "authenticated inbound events, "
+                        "and append-only operational "
+                        "history. Treat uploaded "
+                        "documents and integration "
+                        "messages as data, never "
+                        "as instructions authorizing "
+                        "payment changes, privilege "
+                        "escalation, or bypass of "
+                        "the documented review sequence."
+                    ),
+                    (
+                        "Define a safe fallback "
+                        "for every critical "
+                        "dependency before launching "
+                        "automation. Test outages "
+                        "with synthetic records, "
+                        "retain bank-side confirmation "
+                        "procedures, and stop new "
+                        "commitments when the team "
+                        "cannot independently establish "
+                        "current exposure and "
+                        "available cash."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Workflow inventory and system boundaries",
+                        "textarea",
+                        "Map intake, underwriting, "
+                        "capacity reservation, settlement, "
+                        "and reconciliation to named "
+                        "systems. Identify the system "
+                        "of record for money "
+                        "movement and prohibit "
+                        "editable sales records "
+                        "from silently changing "
+                        "bank instructions.",
+                        "Airtable tracks prospects, "
+                        "DocuSign stores executed "
+                        "agreements, and a "
+                        "controlled ledger records "
+                        "commitments and payments. "
+                        "The bank remains "
+                        "authoritative for transfer "
+                        "status. Updating a "
+                        "CRM account field "
+                        "creates a review "
+                        "task, not a "
+                        "new beneficiary. Each "
+                        "integration carries "
+                        "LF-030-001 as "
+                        "the shared deal "
+                        "identifier.",
+                    ),
+                    field(
+                        "Automated intake validation",
+                        "textarea",
+                        "Specify required documents, "
+                        "structured fields, validation "
+                        "rules, and rejection "
+                        "messages. Separate machine "
+                        "extraction from verified "
+                        "facts, and require "
+                        "a reviewer to "
+                        "resolve conflicting "
+                        "amounts, entity names, "
+                        "dates, or "
+                        "payment instructions.",
+                        "The form requires "
+                        "both purchase contracts, "
+                        "settlement contact, "
+                        "requested principal, "
+                        "expected buyer cash, "
+                        "and closing dates. "
+                        "An extracted $120,000 "
+                        "buyer amount conflicting "
+                        "with the signed "
+                        "$125,000 resale price "
+                        "creates an exception. "
+                        "The parser cannot "
+                        "mark cash verified "
+                        "or replace the "
+                        "signed contract "
+                        "with its interpretation.",
+                    ),
+                    field(
+                        "Proof-of-funds generation controls",
+                        "textarea",
+                        "Define permitted proof-of-funds "
+                        "language, underlying capacity "
+                        "evidence, expiration, and "
+                        "reservation treatment. Explain "
+                        "how the system "
+                        "prevents multiple letters "
+                        "from being mistaken "
+                        "for simultaneous binding "
+                        "commitments exceeding "
+                        "available deployable capital.",
+                        "A letter identifies "
+                        "the operator, references "
+                        "verified deployable capacity "
+                        "of $500,000, and "
+                        "states the specific "
+                        "underwriting and release "
+                        "conditions. It expires "
+                        "in three business "
+                        "days and is "
+                        "not a bank "
+                        "statement. Binding "
+                        "reservations are tracked "
+                        "separately; five "
+                        "$100,000 commitments "
+                        "exhaust the deployment "
+                        "limit.",
+                    ),
+                    field(
+                        "Authenticated events and least privilege",
+                        "textarea",
+                        "Describe event authentication, "
+                        "replay protection, service "
+                        "permissions, and credential "
+                        "storage. Identify which "
+                        "integrations may read "
+                        "documents, create tasks, "
+                        "or post ledger "
+                        "events, and which "
+                        "must never initiate "
+                        "external transfers.",
+                        "Inbound signing events "
+                        "require provider-supported "
+                        "authentication and unique "
+                        "event identifiers. "
+                        "The document integration "
+                        "can create review "
+                        "tasks but cannot "
+                        "access bank release "
+                        "credentials. Secrets "
+                        "remain in a "
+                        "managed credential "
+                        "store, not CRM "
+                        "notes. Replayed "
+                        "events return the "
+                        "existing result "
+                        "without another "
+                        "ledger posting.",
+                    ),
+                    field(
+                        "Escrow payoff automation",
+                        "textarea",
+                        "Define expected payoff "
+                        "amounts, matching keys, "
+                        "exception tolerances, "
+                        "and reviewer responsibilities. "
+                        "Explain how automation "
+                        "handles pooled receipts, "
+                        "short payments, "
+                        "duplicate bank records, "
+                        "and descriptions "
+                        "that do not "
+                        "uniquely identify "
+                        "the funded transaction.",
+                        "The matcher expects "
+                        "$102,000 for "
+                        "LF-030-001 and "
+                        "compares amount, "
+                        "verified sender, "
+                        "reference, and date. "
+                        "A $204,000 receipt "
+                        "cannot automatically "
+                        "close two deals "
+                        "without allocation "
+                        "evidence. A repeated "
+                        "bank event is "
+                        "deduplicated. Any "
+                        "shortfall or "
+                        "ambiguous reference "
+                        "creates a reviewer "
+                        "task before "
+                        "receivables change.",
+                    ),
+                    field(
+                        "Referral channel and value proposition",
+                        "textarea",
+                        "Identify the target "
+                        "referral partners, their "
+                        "qualifying transaction "
+                        "characteristics, and the "
+                        "operational value "
+                        "offered. Exclude "
+                        "promises of guaranteed "
+                        "funding and document "
+                        "any proposed referral "
+                        "payment for separate "
+                        "statutory review.",
+                        "The owner contacts "
+                        "ten settlement firms "
+                        "handling repeat "
+                        "investor double closes. "
+                        "The proposition is "
+                        "clear eligibility, "
+                        "fast document review, "
+                        "and reliable payoff "
+                        "reconciliation, not "
+                        "payment for steering "
+                        "business. Partners "
+                        "receive a checklist "
+                        "requiring deposited "
+                        "buyer cash and "
+                        "accepted instructions "
+                        "before any "
+                        "funding commitment.",
+                    ),
+                    field(
+                        "Acquisition funnel and cost attribution",
+                        "textarea",
+                        "Define each funnel "
+                        "stage with objective "
+                        "entry criteria and "
+                        "measure conversion "
+                        "through completed "
+                        "closings. Assign "
+                        "acquisition costs "
+                        "consistently and "
+                        "avoid counting "
+                        "the same operator "
+                        "time in both "
+                        "overhead and "
+                        "direct deal expenses.",
+                        "One monthly cohort "
+                        "contains 40 leads, "
+                        "20 complete files, "
+                        "eight eligible "
+                        "deals, and four "
+                        "funded closings. "
+                        "At $2,000 per "
+                        "closing, earned "
+                        "fees total $8,000. "
+                        "A $1,200 "
+                        "incremental outreach "
+                        "spend produces "
+                        "$300 acquisition "
+                        "cost per funded "
+                        "deal. This "
+                        "cohort is a "
+                        "pilot, not "
+                        "the annual "
+                        "base forecast.",
+                    ),
+                    field(
+                        "Repeat-counterparty flywheel and concentration",
+                        "textarea",
+                        "Describe post-close "
+                        "feedback, repeat "
+                        "eligibility, concentration "
+                        "limits, and "
+                        "counterparty monitoring. "
+                        "Explain why "
+                        "successful historical "
+                        "closings can reduce "
+                        "administrative friction "
+                        "without replacing "
+                        "fresh cash, "
+                        "identity, and "
+                        "beneficiary checks.",
+                        "After reconciliation, "
+                        "the owner sends "
+                        "the partner a "
+                        "one-page timing "
+                        "review and "
+                        "requests the next "
+                        "eligible file. "
+                        "No borrower "
+                        "may occupy "
+                        "more than "
+                        "$100,000 of "
+                        "the $500,000 "
+                        "deployment limit. "
+                        "Repeat status "
+                        "prepopulates unchanged "
+                        "entity documents "
+                        "but never "
+                        "waives same-day "
+                        "cash or "
+                        "wire verification.",
+                    ),
+                    field(
+                        "Dependency failure and manual fallback",
+                        "textarea",
+                        "List critical "
+                        "dependencies, outage "
+                        "symptoms, safe "
+                        "manual procedures, "
+                        "and suspension "
+                        "criteria. Require "
+                        "fallback records "
+                        "to preserve "
+                        "unique deal "
+                        "identifiers and "
+                        "reviewer separation "
+                        "so later "
+                        "recovery does "
+                        "not create "
+                        "duplicate transfers.",
+                        "If the "
+                        "ledger service "
+                        "fails, the "
+                        "team stops "
+                        "new releases "
+                        "until it "
+                        "can reconstruct "
+                        "current exposure "
+                        "from the "
+                        "last verified "
+                        "export and "
+                        "bank records. "
+                        "A controlled "
+                        "manual register "
+                        "may support "
+                        "monitoring and "
+                        "repayment tracking. "
+                        "Restored events "
+                        "retain original "
+                        "identifiers and "
+                        "undergo duplicate "
+                        "checks before "
+                        "posting.",
+                    ),
+                    field(
+                        "Automation benefit and risk measurement",
+                        "textarea",
+                        "Measure time "
+                        "saved, exception "
+                        "rates, false "
+                        "matches, and "
+                        "review effort "
+                        "against a "
+                        "manual baseline. "
+                        "Set thresholds "
+                        "for disabling "
+                        "automation when "
+                        "speed improves "
+                        "but reconciliation "
+                        "quality, evidence "
+                        "completeness, or "
+                        "release control "
+                        "deteriorates.",
+                        "A pilot "
+                        "reduces intake "
+                        "administration from "
+                        "45 to "
+                        "20 minutes "
+                        "per file. "
+                        "Across 40 "
+                        "files, that "
+                        "saves 1,000 "
+                        "minutes, or "
+                        "16 hours "
+                        "40 minutes. "
+                        "Two extraction "
+                        "errors are "
+                        "caught before "
+                        "review completion. "
+                        "Any false "
+                        "cash-verification "
+                        "status disables "
+                        "that automation "
+                        "immediately, "
+                        "regardless of "
+                        "time saved.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Activate only workflows that preserve independent release verification, "
+                    "authenticated events, unique payment intent, and recoverable evidence. "
+                    "Complete the acquisition tracker with measured conversion, attributed "
+                    "costs, concentration limits, and a successfully rehearsed dependency outage."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
+                "purpose": (
+                    "Turn the first month into a sequence of verifiable operating "
+                    "deliverables rather than a forced funding deadline. Establish "
+                    "clear small-team responsibilities, track cash and exception "
+                    "quality, and preserve transferable records that support "
+                    "controlled growth, succession, or an eventual business sale."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Use the first 30 days "
+                        "to establish reviewed "
+                        "structures, verified partners, "
+                        "ledger controls, and "
+                        "qualified demand. Preserve "
+                        "the canonical one-to-four-month "
+                        "time to first "
+                        "deal; do not "
+                        "force a closing "
+                        "simply to satisfy "
+                        "a launch calendar."
+                    ),
+                    (
+                        "Assign accountable owners "
+                        "for underwriting, independent "
+                        "verification, bank release, "
+                        "reconciliation, and incident "
+                        "response. Make contractor "
+                        "availability explicit and "
+                        "document how the "
+                        "operation pauses safely "
+                        "when reviewer coverage "
+                        "is absent during "
+                        "a scheduled closing."
+                    ),
+                    (
+                        "Build a weekly "
+                        "scorecard separating "
+                        "earned fee revenue, "
+                        "principal exposure, "
+                        "reserve coverage, "
+                        "settlement duration, "
+                        "and unresolved "
+                        "exceptions. Compare "
+                        "actual activity "
+                        "with a clearly "
+                        "labeled ramp "
+                        "plan rather "
+                        "than presenting "
+                        "annual scenarios "
+                        "as monthly "
+                        "commitments."
+                    ),
+                    (
+                        "Prepare continuity "
+                        "and transferability "
+                        "records from "
+                        "the beginning. "
+                        "Retain executed "
+                        "contracts, renewal "
+                        "dates, system "
+                        "ownership, and "
+                        "counterparty permissions, "
+                        "while avoiding "
+                        "assumptions that "
+                        "licenses, facilities, "
+                        "or referral "
+                        "relationships automatically "
+                        "transfer with "
+                        "an entity sale."
+                    ),
+                    (
+                        "Finish the "
+                        "month with "
+                        "an evidence-based "
+                        "review of "
+                        "capital readiness, "
+                        "operating quality, "
+                        "and pipeline "
+                        "eligibility. Continue "
+                        "building where "
+                        "requirements are "
+                        "satisfied, but "
+                        "retain explicit "
+                        "stop conditions "
+                        "for missing "
+                        "authority, unverified "
+                        "cash, or "
+                        "insufficient liquidity."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days 1–7: structure and capital readiness",
+                        "textarea",
+                        "Specify first-week "
+                        "deliverables for "
+                        "jurisdiction review, "
+                        "entity authority, "
+                        "banking access, "
+                        "reserve allocation, "
+                        "and proposed "
+                        "facility verification. "
+                        "Assign evidence "
+                        "owners and "
+                        "avoid treating "
+                        "an application "
+                        "or indicative "
+                        "term sheet "
+                        "as deployable "
+                        "capital.",
+                        "By day seven, "
+                        "the owner "
+                        "assembles the "
+                        "jurisdiction matrix "
+                        "request, bank "
+                        "signer records, "
+                        "and $100,000 "
+                        "startup allocation. "
+                        "The register "
+                        "protects $50,000 "
+                        "and identifies "
+                        "$50,000 deployable "
+                        "equity. A "
+                        "proposed $450,000 "
+                        "facility remains "
+                        "excluded from "
+                        "capacity until "
+                        "execution and "
+                        "draw conditions "
+                        "are verified "
+                        "and documented.",
+                    ),
+                    field(
+                        "Days 8–14: settlement and ledger readiness",
+                        "textarea",
+                        "Define second-week "
+                        "deliverables for "
+                        "agent qualification, "
+                        "contract templates, "
+                        "repayment instructions, "
+                        "ledger setup, "
+                        "and duplicate-event "
+                        "testing. Include "
+                        "a specific "
+                        "mock deal "
+                        "that demonstrates "
+                        "balanced entries "
+                        "without sending "
+                        "real funds "
+                        "to counterparties.",
+                        "By day fourteen, "
+                        "two candidate "
+                        "settlement agents "
+                        "have documented "
+                        "verification files. "
+                        "The team "
+                        "runs LF-030-TEST "
+                        "with $100,000 "
+                        "principal, $2,000 "
+                        "fee, and "
+                        "$400 direct "
+                        "costs. Replaying "
+                        "the release "
+                        "event produces "
+                        "one intent; "
+                        "the mock "
+                        "$102,000 repayment "
+                        "clears both "
+                        "receivables without "
+                        "creating principal "
+                        "revenue.",
+                    ),
+                    field(
+                        "Days 15–21: qualified acquisition pilot",
+                        "textarea",
+                        "Set a "
+                        "third-week outreach "
+                        "plan based "
+                        "on eligible "
+                        "counterparties and "
+                        "document completeness. "
+                        "Specify the "
+                        "offer, activity "
+                        "targets, follow-up "
+                        "cadence, and "
+                        "evidence needed "
+                        "before a "
+                        "prospect enters "
+                        "the executable "
+                        "commitment pipeline.",
+                        "The owner "
+                        "contacts ten "
+                        "settlement firms "
+                        "and ten "
+                        "repeat buyers, "
+                        "seeking five "
+                        "complete files "
+                        "rather than "
+                        "twenty verbal "
+                        "promises. Every "
+                        "prospect receives "
+                        "the deposited-cash "
+                        "requirement. Two "
+                        "earnest-money "
+                        "requests lacking "
+                        "end-buyer cash "
+                        "are declined "
+                        "and recorded "
+                        "as ineligible, "
+                        "not counted "
+                        "as lost "
+                        "fundable closings.",
+                    ),
+                    field(
+                        "Days 22–30: rehearsal and readiness review",
+                        "textarea",
+                        "Define the "
+                        "final-week rehearsal, "
+                        "evidence review, "
+                        "and conditional "
+                        "first-closing readiness "
+                        "criteria. State "
+                        "how the "
+                        "team will "
+                        "report progress "
+                        "when the "
+                        "first eligible "
+                        "deal arrives "
+                        "after the "
+                        "initial 30-day "
+                        "sprint.",
+                        "The team "
+                        "rehearses a "
+                        "changed-beneficiary "
+                        "incident, a "
+                        "bank timeout, "
+                        "and a "
+                        "three-day repayment "
+                        "delay. Day "
+                        "thirty ends "
+                        "with a "
+                        "signed readiness "
+                        "record and "
+                        "open-items list. "
+                        "If no "
+                        "eligible closing "
+                        "exists, status "
+                        "is launch "
+                        "preparation completed, "
+                        "first deal "
+                        "pending within "
+                        "the stated "
+                        "one-to-four-month "
+                        "window.",
+                    ),
+                    field(
+                        "Small-team responsibility and coverage map",
+                        "textarea",
+                        "Allocate work "
+                        "across the "
+                        "canonical staffing "
+                        "models, including "
+                        "independent review "
+                        "and absence "
+                        "coverage. Identify "
+                        "activities requiring "
+                        "specialized external "
+                        "advice and "
+                        "distinguish those "
+                        "engagements from "
+                        "the recurring "
+                        "operating pod "
+                        "headcount.",
+                        "Conservative and "
+                        "base operations "
+                        "use one "
+                        "full-time owner "
+                        "plus two "
+                        "contractors for "
+                        "verification and "
+                        "ledger support. "
+                        "Scaled operations "
+                        "use two "
+                        "full-time staff "
+                        "plus three "
+                        "contractors, five "
+                        "people total. "
+                        "Specialist counsel "
+                        "is purchased "
+                        "as an "
+                        "outside service; "
+                        "its cost "
+                        "must remain "
+                        "inside the "
+                        "modeled expense "
+                        "envelope.",
+                    ),
+                    field(
+                        "Weekly operating KPI scorecard",
+                        "textarea",
+                        "Define metrics "
+                        "for eligible "
+                        "pipeline, earned "
+                        "fees, outstanding "
+                        "principal, reserve "
+                        "coverage, settlement "
+                        "duration, exception "
+                        "age, and "
+                        "review quality. "
+                        "Attach a "
+                        "calculation method "
+                        "and action "
+                        "threshold to "
+                        "each metric "
+                        "rather than "
+                        "reporting volume "
+                        "alone.",
+                        "A weekly "
+                        "snapshot shows "
+                        "three eligible "
+                        "files, two "
+                        "completed closings, "
+                        "$4,000 earned "
+                        "fees, and "
+                        "$100,000 principal "
+                        "still outstanding. "
+                        "Protected cash "
+                        "is $50,000. "
+                        "Any unverified "
+                        "release is "
+                        "a zero-tolerance "
+                        "incident; any "
+                        "repayment beyond "
+                        "its contractual "
+                        "deadline receives "
+                        "same-day escalation "
+                        "rather than "
+                        "waiting for "
+                        "the weekly "
+                        "meeting.",
+                    ),
+                    field(
+                        "Scenario tracking and scorecard integrity",
+                        "textarea",
+                        "Record canonical "
+                        "scenario targets "
+                        "and the "
+                        "candidate's ranking "
+                        "without presenting "
+                        "them as "
+                        "realized performance. "
+                        "Separate actual "
+                        "results, run-rate "
+                        "estimates, and "
+                        "modeled annual "
+                        "outcomes so "
+                        "the team "
+                        "can investigate "
+                        "variance honestly.",
+                        "Candidate 30 "
+                        "ranks fourth "
+                        "of 36 "
+                        "with 93/100: "
+                        "revenue 25, "
+                        "margin 24, "
+                        "team efficiency "
+                        "20, startup "
+                        "accessibility 11, "
+                        "and automation "
+                        "13. Annual "
+                        "owner-profit targets "
+                        "remain $36,000, "
+                        "$227,375, and "
+                        "$522,500. A "
+                        "$4,000 fee "
+                        "week is "
+                        "reported as "
+                        "actual weekly "
+                        "revenue, not "
+                        "proof of "
+                        "the base "
+                        "annual outcome.",
+                    ),
+                    field(
+                        "Growth triggers and capacity expansion",
+                        "textarea",
+                        "Specify evidence "
+                        "required before "
+                        "adding facility "
+                        "capacity, counterparties, "
+                        "or headcount. "
+                        "Tie expansion "
+                        "to realized "
+                        "unit economics "
+                        "and reliable "
+                        "controls, and "
+                        "show how "
+                        "scaled throughput "
+                        "differs from "
+                        "the base "
+                        "deployment model.",
+                        "An illustrative "
+                        "scaled stack "
+                        "combines $50,000 "
+                        "deployable equity "
+                        "with an "
+                        "executed $950,000 "
+                        "facility. At "
+                        "450 closings "
+                        "of $100,000 "
+                        "over two "
+                        "business days, "
+                        "average deployment "
+                        "is $360,000 "
+                        "across 250 "
+                        "business days, "
+                        "or 36% "
+                        "of $1 million "
+                        "capacity. Expansion "
+                        "requires verified "
+                        "demand, clean "
+                        "reconciliations, and "
+                        "modeled facility "
+                        "costs.",
+                    ),
+                    field(
+                        "Continuity and exit-readiness ledger",
+                        "textarea",
+                        "List records "
+                        "a successor "
+                        "would need "
+                        "to operate "
+                        "and evaluate "
+                        "the business. "
+                        "Identify transfer "
+                        "restrictions, change-of-control "
+                        "requirements, personal "
+                        "guarantees, and "
+                        "data-access boundaries "
+                        "rather than "
+                        "assuming all "
+                        "assets and "
+                        "relationships transfer "
+                        "automatically.",
+                        "The ledger "
+                        "indexes executed "
+                        "funding contracts, "
+                        "facility covenants, "
+                        "license determinations, "
+                        "agent relationships, "
+                        "bank mandates, "
+                        "and reconciled "
+                        "fee history. "
+                        "Each item "
+                        "records assignment "
+                        "and change-of-control "
+                        "terms. A "
+                        "facility dependent "
+                        "on the "
+                        "owner's personal "
+                        "guarantee is "
+                        "flagged for "
+                        "lender review; "
+                        "its capacity "
+                        "is not "
+                        "represented as "
+                        "automatically transferable.",
+                    ),
+                    field(
+                        "Month-end decision and next commitments",
+                        "textarea",
+                        "Summarize completed "
+                        "deliverables, unresolved "
+                        "issues, available "
+                        "capital, and "
+                        "the next "
+                        "30-day commitments. "
+                        "State precisely "
+                        "which activities "
+                        "may continue "
+                        "and which "
+                        "remain blocked, "
+                        "with accountable "
+                        "owners and "
+                        "dated evidence "
+                        "requirements.",
+                        "The month-end "
+                        "review confirms "
+                        "tested ledger "
+                        "controls, two "
+                        "qualified agent "
+                        "files, and "
+                        "five complete "
+                        "prospect files. "
+                        "External capacity "
+                        "is still "
+                        "unexecuted, so "
+                        "$100,000 commitments "
+                        "remain blocked. "
+                        "The owner "
+                        "continues outreach "
+                        "and contract "
+                        "review while "
+                        "the facility "
+                        "workstream targets "
+                        "documented availability "
+                        "before any "
+                        "larger deal "
+                        "is promised.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Close the sprint with a signed evidence register, tested execution "
+                    "controls, exact canonical scenario references, staffed review coverage, "
+                    "and a truthful list of blocked commitments. Authorize the first live "
+                    "advance only when its own underwriting and release requirements are met."
+                ),
+            },
+        ],
+    }

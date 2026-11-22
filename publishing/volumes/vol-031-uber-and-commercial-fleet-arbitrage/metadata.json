@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-031-uber-and-commercial-fleet-arbitrage",
+  "volume_slug": "vol-031-uber-and-commercial-fleet-arbitrage",
+  "volume_number": 31,
+  "site_ui": {
+    "cover": [
+      "UBER &",
+      "FLEET",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "CONTRACT THE CAPACITY. VERIFY COVERAGE.",
+      "DISPATCH PROFITABLE SHIFTS."
+    ],
+    "lead": "Uber Fleet Partner Operations, Commercial Black SUV Dispatch & Owner-Vehicle Co-Hosting Without Buying the Fleet",
+    "summary": "Match eligible owner vehicles with qualified drivers, verify platform and local operating permissions, and manage shift contribution margins after insurance, downtime, cleaning, and claims reserves.",
+    "chapters": [
+      "Fleet partner vs co-host operating models",
+      "Owner agreements & platform eligibility",
+      "Shift revenue, utilization & net contribution",
+      "Fleet portals & lean dispatch tooling",
+      "Insurance gaps, accidents & downtime traps",
+      "Recruiting vehicle owners & qualified drivers",
+      "Black SUV shift planning & handover checks",
+      "Maintenance, cleaning & incident response",
+      "Commercial permits & worker classification",
+      "Payout reconciliation & owner reporting",
+      "Dispatcher pods & fleet concentration caps",
+      "First 30-day managed-fleet launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Recruit eligible owner vehicles"
+      ],
+      [
+        "VERIFY",
+        "Check drivers, permits & coverage"
+      ],
+      [
+        "CONTRACT",
+        "Define custody, payouts & liability"
+      ],
+      [
+        "DISPATCH",
+        "Schedule shifts & document handovers"
+      ],
+      [
+        "RECONCILE",
+        "Audit fares, costs & owner shares"
+      ],
+      [
+        "OPTIMIZE",
+        "Improve utilization & reserve for repairs"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "UBER & COMMERCIAL FLEET ARBITRAGE",
+  "subtitle": "The Complete Playbook for Uber & Commercial Fleet Arbitrage: $180,000–$1,200,000 USD in Annual Gross Billings, Built Around a 1 FT + 3 C (4 People) Pod",
+  "chapter_count": 12,
+  "total_word_count": 80065,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 89,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:25:59Z"
+}

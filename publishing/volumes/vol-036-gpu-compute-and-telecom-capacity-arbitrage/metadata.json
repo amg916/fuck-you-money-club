@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-036-gpu-compute-and-telecom-capacity-arbitrage",
+  "volume_slug": "vol-036-gpu-compute-and-telecom-capacity-arbitrage",
+  "volume_number": 36,
+  "site_ui": {
+    "cover": [
+      "GPU &",
+      "TELECOM",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "RESERVE CAPACITY. METER REAL USAGE.",
+      "PROTECT SPREADS AND SERVICE LEVELS."
+    ],
+    "lead": "Bare-Metal H100/H200 Capacity Resale, Metered Inference Routing & Authorized Wholesale SIP/A2P Telecom Operations",
+    "summary": "Match contracted compute and telecom capacity to verified customer demand, isolate tenants, meter billable consumption, and protect margins with resale permissions, service-level controls, and consent-based messaging safeguards.",
+    "chapters": [
+      "GPU capacity vs SIP and A2P resale models",
+      "Infrastructure suppliers & authorized resale terms",
+      "GPU-hour, token, minute & message margins",
+      "Capacity commitments & working-capital reserves",
+      "Idle clusters, toll fraud & service-credit losses",
+      "Demand validation & committed customer sourcing",
+      "H100/H200 slicing & tenant isolation",
+      "Inference routing, metering & failover controls",
+      "Telecom registration, consent & data obligations",
+      "Usage reconciliation & automated spend limits",
+      "Lean operations pods & supplier diversification",
+      "First 30-day metered-capacity launch sprint"
+    ],
+    "flow": [
+      [
+        "VALIDATE",
+        "Confirm workloads & lawful traffic demand"
+      ],
+      [
+        "CONTRACT",
+        "Secure resale rights & capacity terms"
+      ],
+      [
+        "PROVISION",
+        "Isolate tenants & configure routes"
+      ],
+      [
+        "METER",
+        "Track usage, cost & customer limits"
+      ],
+      [
+        "PROTECT",
+        "Enforce service levels & abuse controls"
+      ],
+      [
+        "RECONCILE",
+        "Audit supplier bills & realized spreads"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "GPU COMPUTE & TELECOM CAPACITY ARBITRAGE",
+  "subtitle": "The Complete Playbook for GPU Compute & Telecom Capacity Arbitrage: $150,000–$1,200,000 USD in Annual Gross Billings, Built Around a 1 FT + 2 C Pod (3 People), Scaling to 5",
+  "chapter_count": 12,
+  "total_word_count": 79002,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 94,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:26:00Z"
+}

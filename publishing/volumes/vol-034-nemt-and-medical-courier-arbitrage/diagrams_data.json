@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-order-to-cash-dispatch",
+      "chart_type": "process_flow",
+      "title": "One Order, One Evidence Trail, One Settlement",
+      "subtitle": "Separate passenger transport and specimen handling within one dispatch desk.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The pod coordinates contracted providers rather than owning a fleet. Passenger trips and specimen movements require separate service rules, escalation procedures, and evidence packets.",
+      "caption": "Close each assignment only after reconciling authorization, performance evidence, payer billing, and provider settlement.",
+      "stages": [
+        {
+          "label": "Validate the contracted order",
+          "value": "Confirm payer, service scope, authorization, and collection terms",
+          "numeric_value": 1.0,
+          "detail": "For NEMT, verify member eligibility, authorized transport level, destination, and standing-order validity. For courier work, verify specimen class, receiving hours, packaging responsibility, and contracted pickup deadline."
+        },
+        {
+          "label": "Match qualified transport capacity",
+          "value": "Assign an eligible provider with documented backup coverage",
+          "numeric_value": 2.0,
+          "detail": "Check driver credentials, vehicle suitability, insurance, service-area limits, and exclusions. A signed owner-operator agreement does not resolve worker classification."
+        },
+        {
+          "label": "Dispatch and capture service events",
+          "value": "Record timestamped pickup, movement, delivery, and exceptions",
+          "numeric_value": 3.0,
+          "detail": "Use RouteGenie or MediRoutes for configured NEMT GPS events. Use barcode custody records for specimens; escalate missed STAT pickups to the named laboratory contact immediately."
+        },
+        {
+          "label": "Build the payer evidence packet",
+          "value": "Reconcile ordered service against completed service before billing",
+          "numeric_value": 4.0,
+          "detail": "Scrub 837P claims only where the payer requires that format; otherwise submit the contracted broker file or courier invoice. Attach required trip verification or custody evidence."
+        },
+        {
+          "label": "Collect, settle, and reconcile",
+          "value": "Track receivables separately from provider payment obligations",
+          "numeric_value": 5.0,
+          "detail": "Forecast Medicaid broker Net-30/45 collection exposure against settlement dates. Under the canonical model, 55% of gross billings funds drivers and 45% remains before pod costs and owner profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-qualified-account-conversion",
+      "chart_type": "funnel",
+      "title": "Convert a Defined Account Cohort",
+      "subtitle": "One hundred target accounts narrow to five signed service accounts.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative counts follow one account cohort across a complete sales cycle; they are not observed conversion benchmarks. Every later stage is a subset of the preceding stage. First-deal planning remains 2–5 months, not one sprint.",
+      "caption": "Count accounts consistently: route reviews, proposals, and awards refer to the same original account list.",
+      "stages": [
+        {
+          "label": "Mapped target accounts",
+          "value": "100 accounts with named purchasing or transport contacts",
+          "numeric_value": 100.0,
+          "detail": "Build a deduplicated list of Medicaid transport brokers, workers'-comp administrators, laboratories, and collection networks within the service territory."
+        },
+        {
+          "label": "Qualified service fit",
+          "value": "60 accounts pass territory, service, and payer screening",
+          "numeric_value": 60.0,
+          "detail": "Retain 60% of the original cohort after confirming outsourcing demand, procurement access, credentialing requirements, and feasible payment terms."
+        },
+        {
+          "label": "Documented route discovery",
+          "value": "30 accounts share usable service and exception requirements",
+          "numeric_value": 30.0,
+          "detail": "Advance 50% of qualified accounts after receiving trip windows, route density, transport levels, specimen needs, or other service-specific workload evidence."
+        },
+        {
+          "label": "Costed proposals delivered",
+          "value": "15 accounts receive capacity-backed pricing and service terms",
+          "numeric_value": 15.0,
+          "detail": "Advance 50% of discovery accounts after pricing driver settlements, deadhead, standby coverage, failed pickups, and collection timing."
+        },
+        {
+          "label": "Signed service accounts",
+          "value": "5 accounts execute scoped contracts with operating contacts",
+          "numeric_value": 5.0,
+          "detail": "Convert one-third of proposals and 5% of the original cohort. Signing does not equal dispatch readiness, recognized revenue, or collected cash."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-billings-to-profit",
+      "chart_type": "waterfall",
+      "title": "Base Case: $925,000 Gross to $166,500 Owner Profit",
+      "subtitle": "Six bars distinguish billings, retained contribution, costs, and profit.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Annual USD. Opening, retained subtotal, and closing bars are absolute totals; negative bars are deductions. Retained share is 45%. The two pod-cost allocations are illustrative splits of the canonical $249,750 residual operating cost.",
+      "caption": "$925,000 − $508,750 = $416,250 retained; $416,250 − $120,000 − $129,750 = $166,500 profit. Profit is 18.0% of gross billings and 40.0% of retained revenue.",
+      "stages": [
+        {
+          "label": "Opening gross contracted billings",
+          "value": "$925,000 annual customer billings before driver settlements",
+          "numeric_value": 925000.0,
+          "detail": "Opening total: NEMT brokerage and medical courier service billings, excluding underlying healthcare charges and any unrelated client transaction volume."
+        },
+        {
+          "label": "Deduct external driver settlements",
+          "value": "−$508,750 paid to contracted transport delivery providers",
+          "numeric_value": -508750.0,
+          "detail": "Deduction: 55% of gross billings compensates the external transport network. These providers are separate from the four-person administrative and dispatch pod."
+        },
+        {
+          "label": "Retained dispatch revenue subtotal",
+          "value": "$416,250 retained under the canonical 45% share",
+          "numeric_value": 416250.0,
+          "detail": "Absolute subtotal, not another inflow. This model uses the specified ASC 606 agent presentation; actual net presentation requires a contract-specific principal-agent assessment and is not established by the percentage alone."
+        },
+        {
+          "label": "Deduct full-time pod seat costs",
+          "value": "−$120,000 allocated to two full-time operating seats",
+          "numeric_value": -120000.0,
+          "detail": "Deduction: illustrative combined compensation and employment burden for the two full-time seats. If the owner fills a seat, keep seat compensation distinct from the residual owner-profit line."
+        },
+        {
+          "label": "Deduct remaining pod operating costs",
+          "value": "−$129,750 covers contractor seats and other operating expenses",
+          "numeric_value": -129750.0,
+          "detail": "Deduction: illustrative aggregate for two contractor seats, dispatch software, insurance, billing support, credentialing, administration, and service exceptions. Do not deduct driver settlements a second time."
+        },
+        {
+          "label": "Closing annual owner net profit",
+          "value": "$166,500 equals 18.0% gross and 40.0% retained margin",
+          "numeric_value": 166500.0,
+          "detail": "Closing total: canonical Base-Case annual owner profit. Working-capital funding is a cash requirement rather than an additional expense automatically deducted here."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-service-rail-retained-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Retained Dollars per Completed Assignment",
+      "subtitle": "Five service examples use the same 45% retained-share assumption.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Synthetic pricing examples, not fee schedules or market quotes. Each bar measures USD retained before pod overhead for one completed one-way trip or one defined courier run. Assignment duration and mileage differ, so bars do not rank hourly returns.",
+      "caption": "Apply the contracted unit definition before comparing yield; a courier run and a passenger trip are not interchangeable units.",
+      "stages": [
+        {
+          "label": "Medicaid broker ambulatory trip",
+          "value": "$31.50 retained from a $70 completed one-way trip",
+          "numeric_value": 31.5,
+          "detail": "$70 gross less $38.50 driver settlement leaves $31.50. Use broker authorization and trip-log rules; disputed eligibility or missing GPS evidence can erase collection."
+        },
+        {
+          "label": "Medicaid broker wheelchair trip",
+          "value": "$54 retained from a $120 completed one-way trip",
+          "numeric_value": 54.0,
+          "detail": "$120 gross less $66 driver settlement leaves $54. Verify vehicle equipment, securement capability, passenger assistance requirements, and the authorized transport level."
+        },
+        {
+          "label": "Workers'-comp administrator trip",
+          "value": "$45 retained from a $100 completed one-way trip",
+          "numeric_value": 45.0,
+          "detail": "$100 gross less $55 driver settlement leaves $45. Confirm administrator authorization and contracted wait-time rules rather than importing Medicaid billing assumptions."
+        },
+        {
+          "label": "Scheduled laboratory courier run",
+          "value": "$40.50 retained from a $90 defined collection run",
+          "numeric_value": 40.5,
+          "detail": "$90 gross less $49.50 driver settlement leaves $40.50. Specify included stops, receiving cutoffs, packaging responsibility, and custody-event evidence in the route scope."
+        },
+        {
+          "label": "Contracted STAT specimen run",
+          "value": "$81 retained from a $180 defined urgent run",
+          "numeric_value": 81.0,
+          "detail": "$180 gross less $99 driver settlement leaves $81. Price backup availability and deadline exposure; higher dollars per run do not establish better utilization."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-statutory-risk-checks",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Accepting a Live Assignment",
+      "subtitle": "A failed applicable check routes the order to remediation, not dispatch.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Apply checks in sequence to the actual service. Passenger-only work does not inherit specimen-shipping requirements. Document why a conditional requirement does or does not apply.",
+      "caption": "Proceed only when the assigned provider, information workflow, service evidence, and handling method support the contracted work.",
+      "stages": [
+        {
+          "label": "Payer and provider eligibility",
+          "value": "Yes: continue; no: obtain required credentials and authorization",
+          "numeric_value": 1.0,
+          "detail": "For Medicaid work, verify state and broker enrollment, driver and vehicle requirements, exclusions screening, and trip authorization under applicable program rules. 42 CFR 431.53 and 440.170(a) establish context, not universal broker payment eligibility."
+        },
+        {
+          "label": "Worker status and insured capacity",
+          "value": "Yes: continue; no: redesign staffing or replace capacity",
+          "numeric_value": 2.0,
+          "detail": "Evaluate actual control and applicable labor tests under 29 U.S.C. 203 and state law, including California Labor Code section 2775 where relevant. Verify commercial coverage for the assigned service; a 1099 label or insurance certificate alone does not resolve exposure."
+        },
+        {
+          "label": "Protected information handling",
+          "value": "Yes: continue; no: repair access controls and required agreements",
+          "numeric_value": 3.0,
+          "detail": "Determine business-associate status under 45 CFR 160.103; execute required agreements under 164.502(e) and 164.504(e). Restrict dispatch access to necessary information. A courier conduit analysis does not automatically extend to a platform storing protected health information."
+        },
+        {
+          "label": "Specimen classification and exposure controls",
+          "value": "Yes: release; no: correct packaging or select qualified service",
+          "numeric_value": 4.0,
+          "detail": "For specimen work, confirm classification before applying 49 CFR 173.199 Category B packaging and marking rules; Category A material needs a different workflow. Apply 29 CFR 1910.1030 to covered employee exposure and follow laboratory handling instructions under 42 CFR 493.1242."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Four Core Seats, Six at Scaled Volume",
+      "subtitle": "Two full-time and two contractor seats expand to three of each.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each bar represents one distinct pod seat; the final two seats activate only in the Scaled scenario. External drivers are delivery capacity outside the pod count. Contractor designation requires a supportable relationship under applicable law.",
+      "caption": "Base capacity is not round-the-clock staffing. Sell only coverage windows supported by the roster and documented backup arrangements.",
+      "stages": [
+        {
+          "label": "Core FT: owner and account lead",
+          "value": "One full-time seat owns contracts, capacity, and cash",
+          "numeric_value": 1.0,
+          "detail": "Approve pricing, review receivable aging, maintain payer relationships, and own escalation decisions. Separate operating seat compensation from residual owner profit."
+        },
+        {
+          "label": "Core FT: dispatch operations lead",
+          "value": "One full-time seat owns live routing and service evidence",
+          "numeric_value": 1.0,
+          "detail": "Manage RouteGenie or MediRoutes workflows, provider availability, missed pickups, and shift handoffs. Protect specimen and passenger workflows from accidental mixing."
+        },
+        {
+          "label": "Core C: claims and collections specialist",
+          "value": "One contractor seat owns billing quality and receivable follow-up",
+          "numeric_value": 1.0,
+          "detail": "Validate required 837P fields or broker invoice files, resolve denials, reconcile remittances, and escalate Net-30/45 slippage before settlement cash becomes constrained."
+        },
+        {
+          "label": "Core C: credential and quality specialist",
+          "value": "One contractor seat owns provider records and evidence sampling",
+          "numeric_value": 1.0,
+          "detail": "Track credential expiration, insurance evidence, trip-log completeness, and barcode custody exceptions. Structure the engagement around a lawful service relationship."
+        },
+        {
+          "label": "Scaled FT: second operations dispatcher",
+          "value": "One additional full-time seat extends supported coverage windows",
+          "numeric_value": 1.0,
+          "detail": "Add this seat for the canonical three-FT configuration as concurrent assignments and recovery workload exceed the documented capacity of the core operations lead."
+        },
+        {
+          "label": "Scaled C: route onboarding specialist",
+          "value": "One additional contractor seat implements newly awarded service routes",
+          "numeric_value": 1.0,
+          "detail": "Add this seat for the canonical three-contractor configuration; document stop instructions, provider readiness, laboratory contacts, and route acceptance evidence."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Startup Capital Without Buying a Fleet",
+      "subtitle": "Four buckets total $40,000 within the $15,000–$65,000 range.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values show a $40,000 planning case. Corresponding lean allocations total $15,000 and expanded allocations total $65,000. These are funding envelopes, not automatically deductible expenses or proof of sufficient payment float.",
+      "caption": "At Base-Case driver settlements of $508,750 annually, smooth 30-day exposure is approximately $41,815 and 45-day exposure is $62,723 before offsets from actual settlement terms.",
+      "stages": [
+        {
+          "label": "Provider readiness and insurance setup",
+          "value": "$12,000 planning allocation for service-ready provider onboarding",
+          "numeric_value": 12000.0,
+          "detail": "Lean allocation $3,000; expanded allocation $18,000. Fund coverage deposits, credential checks, contract setup, and provider onboarding rather than vehicle purchases."
+        },
+        {
+          "label": "Dispatch and evidence infrastructure",
+          "value": "$8,000 planning allocation for configured operational tooling",
+          "numeric_value": 8000.0,
+          "detail": "Lean allocation $2,000; expanded allocation $12,000. Fund dispatch configuration, barcode equipment, access controls, billing integration, and event-record retention."
+        },
+        {
+          "label": "Commercial setup and pilot preparation",
+          "value": "$9,000 planning allocation for contracting and service preparation",
+          "numeric_value": 9000.0,
+          "detail": "Lean allocation $3,000; expanded allocation $15,000. Fund scoped route discovery, staff preparation, dry runs, payer setup, and account acquisition before live volume."
+        },
+        {
+          "label": "Settlement cash and exception reserve",
+          "value": "$11,000 planning allocation held for timing and recovery exposure",
+          "numeric_value": 11000.0,
+          "detail": "Lean allocation $7,000; expanded allocation $20,000. Size final liquidity from daily settlements and collection lags. This reserve alone cannot fund Base-Case 30-day driver exposure; stage volume or secure additional liquidity."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Evidence-Ready Operating Desk",
+      "subtitle": "Four weekly milestones prepare the business for a 2–5 month sales cycle.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "This sprint establishes readiness, not a promised first award. Use synthetic or properly authorized test records; do not dispatch paid passenger or specimen work before applicable credentials, agreements, and service requirements are satisfied.",
+      "caption": "Preserve the canonical annual cases: Conservative $250,000 gross and $30,000 profit; Base $925,000 and $166,500; Scaled $1,600,000 and $384,000. The sprint does not forecast those results.",
+      "stages": [
+        {
+          "label": "Days 1-7: define the service boundary",
+          "value": "Complete territory, payer, provider, and service requirement maps",
+          "numeric_value": 7.0,
+          "detail": "Choose initial NEMT transport levels and courier specimen classes. Document enrollment requirements, insurance coverage, labor classification, pickup windows, and accountable exception contacts."
+        },
+        {
+          "label": "Days 8-14: configure the evidence path",
+          "value": "Demonstrate order intake through dispatch, custody, and billing records",
+          "numeric_value": 14.0,
+          "detail": "Configure dispatch roles, GPS events, barcode custody records, required information agreements, and payer-specific billing outputs. Test missing authorization and missed pickup cases with controlled records."
+        },
+        {
+          "label": "Days 15-21: validate capacity and unit economics",
+          "value": "Finish provider-backed route quotes and settlement timing models",
+          "numeric_value": 21.0,
+          "detail": "Model 45% retained share: Conservative $112,500 retained with $30,000 profit at 26.67%; Base $416,250 retained with $166,500 profit at 40.0%; Scaled $720,000 retained with $384,000 profit at 53.33%. Gross margins remain 12%, 18.0%, and 24%, respectively."
+        },
+        {
+          "label": "Days 22-30: rehearse and pursue scoped awards",
+          "value": "Complete exception drills, account proposals, and operating handoffs",
+          "numeric_value": 30.0,
+          "detail": "Rehearse driver absence, disputed trip evidence, missed STAT pickup, and late remittance. Assign the four core seats and define when the two Scaled seats are needed. Submit proposals without treating unsigned pipeline as revenue."
+        }
+      ]
+    }
+  ]
+}

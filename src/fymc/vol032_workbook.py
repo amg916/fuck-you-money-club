@@ -1,0 +1,735 @@
+from __future__ import annotations
+
+
+def build_volume_032_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-032-payment-processing-and-atm-arbitrage",
+        "volume_id": "vol-032-payment-processing-and-atm-arbitrage",
+        "title": "ISO Payment Processing & ATM Arbitrage — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Schedule A Spread Qualification, "
+            "Merchant Residuals, Venue ATM Economics, Reserve Controls, Payment "
+            "Operations, Statutory Audits, and a Transferable Small-Team Portfolio"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
+                "purpose": (
+                    "Qualify the actual spread owner before pursuing merchant accounts or "
+                    "ATM locations. Separate sponsor permissions, merchant economics, venue "
+                    "traffic, and transferable contract rights so apparent payment volume "
+                    "does not conceal thin retained revenue, inaccessible reserves, or "
+                    "counterparty terms that erase the arbitrage."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Collect the signed ISO agreement, wholesale Schedule A, residual "
+                        "statement sample, sponsor underwriting matrix, and venue agreement "
+                        "before quoting. Record document versions and effective dates; "
+                        "sales presentations cannot establish your ownership of residuals "
+                        "or permission to board a merchant category."
+                    ),
+                    (
+                        "Underwrite each legal entity separately using formation records, "
+                        "beneficial-owner verification, bank-account confirmation, and actual "
+                        "operating evidence. Map every processor, sponsor, cash provider, "
+                        "and venue to its obligations rather than treating the branded "
+                        "sales organization as the entire payment chain."
+                    ),
+                    (
+                        "Rebuild one merchant statement and one ATM settlement period "
+                        "from source transactions. Separate interchange, assessments, "
+                        "processor charges, gateway markups, venue shares, and operator "
+                        "residuals; measure retained dollars rather than using merchant "
+                        "card volume as the apparent opportunity size."
+                    ),
+                    (
+                        "Stress the candidate with rate matching, lower ATM withdrawals, "
+                        "reserve changes, and termination. Require a named owner for "
+                        "each response, including merchant communication, sponsor escalation, "
+                        "venue renegotiation, and cash-service adjustment before accepting "
+                        "a spread that depends on perfect conditions."
+                    ),
+                    (
+                        "Finish with a written pursue, reprice, or decline decision "
+                        "supported by source evidence. Tie the decision to contract "
+                        "rights and twelve-month retained contribution, and retain the "
+                        "rejected alternatives so the next reviewer can reproduce "
+                        "the underwriting judgment."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Counterparty identity and permission chain",
+                        "textarea",
+                        "Identify each contracting entity, sponsor bank, processor, cash provider, and venue owner. State who verifies ownership, who can authorize boarding, and which current documents establish that authority for the proposed activity.",
+                        "Example: Harbor Payments LLC contracts with the ISO, while its named sponsor bank authorizes merchant boarding. The venue lease is signed by Pier Market LLC, verified against state formation records. Operations stores dated authority evidence and independently confirms the settlement account before any account activation.",
+                    ),
+                    field(
+                        "Schedule A residual waterfall",
+                        "textarea",
+                        "Reconstruct a monthly merchant waterfall using actual processing charges and wholesale deductions. Identify the contractual residual pool, operator split, repricing rights, and any charge that would otherwise be counted twice in the spread.",
+                        "Example: A merchant processes $100,000 monthly and pays $2,700 processing charges. Interchange is $2,000, assessments $150, and processor charges $150, leaving $400 eligible residual. The ISO receives 62.5%, or $250 monthly. Gateway fees remain outside this waterfall and require separate supporting invoices.",
+                    ),
+                    field(
+                        "Merchant operating profile and demand evidence",
+                        "textarea",
+                        "Document the merchant's products, delivery timing, transaction channels, average ticket, refund pattern, and seasonality. Match these facts to sponsor underwriting requirements and explain why observed activity supports the proposed pricing and reserve structure.",
+                        "Example: A bicycle repair shop reports 800 monthly transactions averaging $125, with 92% card-present sales and same-day service completion. Three statements substantiate $100,000 monthly card volume. Refunds average $1,400 monthly; no advance subscription obligations appear in the reviewed invoices or merchant website.",
+                    ),
+                    field(
+                        "Disclosed high-risk MID architecture",
+                        "textarea",
+                        "Describe any elevated-risk product, recurring billing, or delayed fulfillment explicitly. Record sponsor authorization for each MID and descriptor, and explain how routing preserves merchant identity rather than hiding activity across unrelated accounts.",
+                        "Example: A recurring membership merchant uses two sponsor-approved MIDs for separately disclosed product lines. Routing follows documented product identifiers, not dispute ratios or transaction splitting. A third proposed category remains inactive until underwriting accepts its terms, fulfillment evidence, descriptor, and reserve schedule in writing.",
+                    ),
+                    field(
+                        "Venue traffic and exclusive placement rights",
+                        "textarea",
+                        "Measure cash demand using withdrawal records, nearby alternatives, venue hours, and access restrictions. Extract exclusivity boundaries, relocation rights, service windows, and termination remedies so a promising location is supported by enforceable operating access.",
+                        "Example: A market venue supports 500 completed withdrawals monthly from a twelve-week trial. Its agreement grants one exclusive ATM position inside the main entrance, seven-day servicing access, and thirty days to cure outages. Outdoor event areas are excluded and cannot support additional forecast withdrawals.",
+                    ),
+                    field(
+                        "ATM surcharge and retained spread",
+                        "textarea",
+                        "Calculate retained surcharge revenue per completed withdrawal after contractually allocated venue and network amounts. Keep vault cash, withdrawal principal, reversals, and any separately earned interchange outside the surcharge estimate unless independently documented.",
+                        "Example: Each completed withdrawal carries a $3.00 surcharge, allocated $1.00 to the venue, $1.00 to the provider bundle, and $1.00 to the operator. At 500 withdrawals monthly, retained revenue is $500 per device. Withdrawal principal returns through settlement and never becomes operator revenue.",
+                    ),
+                    field(
+                        "Residual ownership and portability",
+                        "textarea",
+                        "Quote the contract language governing residual survival, assignment, merchant solicitation, and sponsor consent. Identify whether sale rights attach to the residual stream, merchant agreement, equipment, or merely a revocable servicing appointment.",
+                        "Example: Section 8 preserves earned residuals after ordinary termination while allowing offsets for documented losses. Section 12 requires processor consent for assignment and gives thirty days for review. The buyer acquires eligible residual rights, not merchant settlement balances; counsel flags unrestricted repricing language for negotiation.",
+                    ),
+                    field(
+                        "Attrition and rate-match stress",
+                        "textarea",
+                        "Quantify merchant loss, residual compression, and venue traffic deterioration separately. Specify the evidence needed before matching a competitor and establish a retained-dollar floor below which retention would destroy the account's contribution.",
+                        "Example: Losing ten of 100 merchants at $250 monthly residual removes $30,000 annual revenue. Matching pricing across twenty retained merchants by $40 monthly removes another $9,600. The account owner offers service remediation first and declines concessions that reduce an account below $120 monthly contribution.",
+                    ),
+                    field(
+                        "Risk evidence and escalation ownership",
+                        "textarea",
+                        "List concrete signs of chargeback deterioration, inconsistent business activity, cash shortages, or settlement delays. Assign a reviewer and response deadline to each signal, distinguishing internal warning thresholds from current sponsor or network program criteria.",
+                        "Example: A merchant's dispute count rises from three to eleven while transaction count falls from 1,000 to 800. Risk reviews the ratio and fulfillment evidence within one business day. Sponsor reporting follows its current program definitions; internal monitoring does not assert that a network threshold was crossed.",
+                    ),
+                    field(
+                        "Qualified deal decision and evidence register",
+                        "textarea",
+                        "Summarize expected retained revenue, required cash, unresolved contractual terms, and the next authorized action. Reference supporting document identifiers and explain which specific change would turn a rejected or repriced candidate into an acceptable deal.",
+                        "Example: Pursue the repair merchant at $250 monthly processing residual, subject to the signed Schedule A and verified settlement account. Defer the venue until access rights include weekend servicing. Evidence register entries U-032-01 through U-032-06 contain statements, traffic counts, entity records, and redlined agreements.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The owner and operations reviewer can reproduce both spreads from "
+                    "source records, verify the permission chain, and identify executable "
+                    "contract rights. Every unresolved material term has an owner and "
+                    "deadline; no unapproved merchant activity is represented as boardable."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
+                "purpose": (
+                    "Translate merchant and ATM activity into recognized operator revenue, "
+                    "cash availability, and canonical owner profit. Reconcile the three "
+                    "Formula v2.0 cases while isolating customer settlement, vault cash, "
+                    "restricted reserves, acquisition spending, and operating expenses "
+                    "that otherwise make liquidity look stronger than it is."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Start with the canonical annual revenue and owner-profit figures, "
+                        "then build a separate operational driver model. Treat the "
+                        "scorecard revenue label as retained operator revenue for this "
+                        "candidate; do not substitute merchant settlement volume or "
+                        "gross ATM withdrawals."
+                    ),
+                    (
+                        "Classify each revenue stream under the actual principal-versus-agent "
+                        "contract facts before applying retained_share. Document which "
+                        "amounts are already net so provider allocations are not "
+                        "deducted twice, and retain the accounting memo beside the "
+                        "supporting statement exports."
+                    ),
+                    (
+                        "Prepare a thirteen-week cash schedule using receipt dates, "
+                        "not only earned revenue. Separate unrestricted operating cash "
+                        "from sponsor reserves and vault funding, then test delayed "
+                        "residual payments against contractor invoices, lease payments, "
+                        "and cash-service commitments due during the delay."
+                    ),
+                    (
+                        "Build a complete expense bridge rather than forcing every "
+                        "cost into the headline monthly operating range. Include "
+                        "acquisition, contractors, equipment leases, and risk support; "
+                        "identify whether the quoted baseline already contains any "
+                        "item before adding it again."
+                    ),
+                    (
+                        "Reconcile all scenarios to exact annual dollars before rounding "
+                        "monthly displays. Write the funding source beside every reserve "
+                        "and cash requirement, and prohibit distributions that rely "
+                        "on merchant funds, unsettled withdrawals, or receivables that "
+                        "have not become available cash."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Revenue boundary and retained_share policy",
+                        "textarea",
+                        "Define recognized operator revenue by stream and document the ASC 606 principal-versus-agent assessment. State where retained_share applies, where inputs are already retained, and why merchant card volume and vault cash remain excluded.",
+                        "Example: The accounting memo supports net presentation for the illustrated agency streams. An eligible ISO pool of $480,000 multiplied by retained_share of 0.625 produces $300,000 operator revenue. Already retained gateway and ATM figures use 1.0 in the aggregation, preventing a second deduction of allocated counterparty shares.",
+                    ),
+                    field(
+                        "Conservative canonical reconciliation",
+                        "textarea",
+                        "Enter the Conservative annual retained revenue, net margin, owner profit, total implied expenses, and staffing. Explain the monthly rounding convention and identify which funding needs remain outside the profit calculation because they are balance-sheet movements.",
+                        "Example: Conservative revenue is $90,000 and net margin is 30%, producing $27,000 annual owner net profit and $63,000 implied expenses. Staffing is 1 FT + 3 C. Monthly averages are $7,500 revenue and $2,250 profit; vault advances and reserve transfers require separate cash tracking.",
+                    ),
+                    field(
+                        "Base-Case canonical reconciliation",
+                        "textarea",
+                        "Enter the Base-Case annual retained revenue, net margin, owner profit, expenses, and staffing exactly. Connect the annual totals to your operating-driver model without changing the canonical figures to fit a convenient monthly estimate.",
+                        "Example: Base-Case revenue is $445,000 at 42.5% net margin, yielding $189,125 annual owner net profit and $255,875 expenses. Staffing remains 1 FT + 3 C. Monthly averages display $37,083.33 revenue and $15,760.42 profit, while annual reconciliation retains the exact dollar totals.",
+                    ),
+                    field(
+                        "Scaled Small-Team canonical reconciliation",
+                        "textarea",
+                        "Enter the Scaled Small-Team annual retained revenue, net margin, owner profit, implied expenses, and six-person staffing. Describe the operating constraint that must be solved before increasing transaction or account counts to this level.",
+                        "Example: Scaled revenue is $800,000 at 55% net margin, producing $440,000 annual owner net profit and $360,000 expenses. Staffing is 2 FT + 4 C, six people total. Exception queues must remain within staffed capacity; higher volume alone does not establish the required margin.",
+                    ),
+                    field(
+                        "Base revenue driver bridge",
+                        "textarea",
+                        "Build independent annual drivers for processing residuals, gateway markups, and retained ATM surcharges. State eligible units and retained dollars per unit, then verify that the component sum equals the canonical Base-Case revenue without counting any underlying principal.",
+                        "Example: One hundred merchants at $250 monthly retained processing residual produce $300,000 annually. Separately billed gateway activity contributes 250,000 eligible transactions at $0.10 retained, or $25,000. Twenty leased ATMs produce 500 monthly withdrawals each at $1.00 retained, or $120,000. Total operator revenue equals $445,000.",
+                    ),
+                    field(
+                        "Complete expense bridge and baseline range",
+                        "textarea",
+                        "Separate baseline platform and administration spending from acquisition, contractors, leases, and risk support. Reconcile all annual expenses to the selected canonical scenario, and explain why the headline monthly operating range is not a substitute for complete expenses.",
+                        "Example: Base expenses comprise $72,000 platform and administration, $60,000 acquisition, $54,000 contractors, $36,000 device leases, and $33,875 risk support. Total expenses are $255,875. The $6,000 monthly baseline fits the stated $1,500–$10,000 range; all-in average monthly expenses are $21,322.92, with no duplicated provider pass-through charges.",
+                    ),
+                    field(
+                        "Restricted reserve and escrow classification",
+                        "textarea",
+                        "Record reserve ownership, permitted offsets, release timing, and account control. Distinguish sponsor-held merchant reserves from operator-owned restricted assets, and describe the cash consequence without assuming that reserve balances are available revenue or working capital.",
+                        "Example: The sponsor holds a merchant reserve equal to 5% of $100,000 monthly processing, adding $5,000 monthly subject to a 180-day release schedule and contractual offsets. The ISO neither controls nor earns that balance. A separate $6,000 ISO security deposit is tracked as restricted operator cash.",
+                    ),
+                    field(
+                        "Vault cash requirement and funding cost",
+                        "textarea",
+                        "Estimate withdrawal principal between replenishments, safety cash, settlement timing, and funding charges. Identify the actual cash owner and ensure that repayment of vault principal is separated from the funding expense charged to the operator.",
+                        "Example: One ATM dispenses 500 monthly withdrawals averaging $80, or $40,000 principal. A four-day interval at thirty-day average demand requires $5,333.33, increased to $6,400 with 20% safety cash. A vault provider supplies the principal; contractual funding charges are expenses, not deductions from withdrawal principal revenue.",
+                    ),
+                    field(
+                        "Startup allocation and thirteen-week liquidity",
+                        "textarea",
+                        "Allocate startup cash within the stated capital range and prepare weekly unrestricted balances. Show the first-deal timing assumption, sponsor payment lag, minimum cash floor, and explicitly funded response to a slower launch or reserve increase.",
+                        "Example: A $32,000 launch budget assigns $8,000 to deposits and setup, $5,000 to integration, $7,000 to acquisition, and $12,000 to unrestricted liquidity. This fits the $8,000–$45,000 range. With first deals expected in one to four months, spending pauses before forecast cash falls below $6,000.",
+                    ),
+                    field(
+                        "Sensitivity and distribution control",
+                        "textarea",
+                        "Quantify revenue compression, delayed collections, and unexpected cash requirements independently. Specify which result changes profit and which changes timing, then establish a distribution rule that protects operating obligations without treating restricted balances as owner liquidity.",
+                        "Example: A 10% reduction in $300,000 processing residuals removes $30,000 annual revenue before expense responses. A thirty-day delay in $25,000 monthly processing receipts shifts cash timing instead. Distributions require eight weeks of scheduled unrestricted obligations plus the $6,000 floor after all pending invoices and reserve calls.",
+                    ),
+                ],
+                "completion_gate": (
+                    "All three canonical cases reconcile exactly: $27,000, $189,125, "
+                    "and $440,000 annual owner net profit. The Base driver bridge "
+                    "equals $445,000, expenses equal $255,875, and the cash schedule "
+                    "excludes merchant settlement, restricted reserves, and vault principal."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
+                "purpose": (
+                    "Design a repeatable boarding-to-reconciliation workflow that survives "
+                    "duplicate webhooks, delayed files, reversals, and field outages. "
+                    "Establish immutable transaction evidence, explicit accounting ownership, "
+                    "tested exception handling, and release criteria before connecting "
+                    "merchant residuals or ATM activity to live reporting and payouts."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Map the lifecycle from qualified lead through underwriting, "
+                        "boarding, activation, settlement reporting, residual accrual, and "
+                        "cash receipt. Assign one accountable owner per transition "
+                        "and identify the source record proving completion before "
+                        "a downstream task can start."
+                    ),
+                    (
+                        "Define identifiers before importing production data. Separate "
+                        "merchant tokens, MID references, terminal identifiers, settlement "
+                        "batches, and provider event identifiers; preserve their relationships "
+                        "without placing cardholder secrets or unnecessary personal "
+                        "information into the workbook or automation logs."
+                    ),
+                    (
+                        "Treat every external notification as potentially duplicated, "
+                        "late, reordered, or corrected. Use durable uniqueness constraints "
+                        "and atomic posting, then record reversals as linked entries "
+                        "rather than editing settled history to make the latest "
+                        "dashboard appear clean."
+                    ),
+                    (
+                        "Test approved sandbox paths for sales, refunds, surcharge "
+                        "cancellation, ATM dispense failures, delayed settlement, and "
+                        "duplicate delivery. Save expected ledger effects beside "
+                        "observed results, including proof that retrying an event "
+                        "does not create another payout or revenue accrual."
+                    ),
+                    (
+                        "Run a controlled launch with limited devices and merchant "
+                        "accounts before expanding. Reconcile source activity, provider "
+                        "statements, receivables, and bank deposits daily; unresolved "
+                        "differences remain visible with owners and deadlines rather "
+                        "than being silently absorbed into miscellaneous revenue."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Lifecycle state ownership",
+                        "textarea",
+                        "Define named states, entry evidence, responsible roles, and permitted transitions for merchant and ATM onboarding. Include rejection, suspension, and reactivation paths so sales status cannot override underwriting or technical readiness.",
+                        "Example: IRIS CRM moves a merchant from Submitted to Underwriting Accepted only after the sponsor reference is attached. Operations then records Boarded, Tested, and Active states. Rejected applications retain reasons and evidence. Sales cannot move a rejected MID directly into Active or create a substitute merchant identity.",
+                    ),
+                    field(
+                        "Identifier and data-minimization map",
+                        "textarea",
+                        "Specify stable internal identifiers and external reference mappings used across CRM, processor, gateway, and ATM telemetry. Identify prohibited sensitive data and explain how operators can investigate exceptions without copying payment credentials into worksheets.",
+                        "Example: Merchant M-0102 maps to a processor-issued MID reference, gateway customer token, and contract C-0188. ATM A-0020 maps to terminal T-4402 and venue V-0011. Logs contain provider transaction tokens and masked account references only; full PAN, PIN data, and security codes stay outside these records.",
+                    ),
+                    field(
+                        "Idempotency key and atomic posting",
+                        "textarea",
+                        "Define the uniqueness scope for each event source, the durable enforcement mechanism, and the transaction boundary. Describe retry behavior when an acknowledgment fails after a successful write, including how changed payloads under reused identifiers are handled.",
+                        "Example: The database enforces uniqueness on provider, account, event type, and event ID. Event storage and balanced ledger insertion commit together. A timeout triggers retrieval of the existing result, not another posting. A reused identifier with a different payload hash enters an exception queue for investigation.",
+                    ),
+                    field(
+                        "Balanced ledger and revenue accounts",
+                        "textarea",
+                        "Specify journal accounts for retained residual receivables, operating cash, earned revenue, restricted deposits, and adjustments. Keep merchant settlement and vault principal outside operator revenue, and identify whether off-ledger operational records track third-party balances.",
+                        "Example: An earned $250 merchant residual debits residual receivables and credits processing residual revenue by $250. Collection debits operating cash and credits receivables. The merchant's $100,000 card settlement never enters those revenue accounts; provider-controlled vault balances appear in a separate custody and reconciliation register.",
+                    ),
+                    field(
+                        "ATM dispense and reversal lifecycle",
+                        "textarea",
+                        "Describe how authorization, cash presentation, dispense completion, partial dispense, reversal, and settlement records are matched. State when a surcharge becomes earned under the provider contract and how uncertain outcomes are quarantined from recognized retained revenue.",
+                        "Example: A request for $80 plus a $3 surcharge authorizes successfully, but telemetry reports a dispenser fault. Operations matches the electronic journal with the provider reversal before closing the case. The event contributes no $1 retained surcharge until a completed, billable withdrawal is supported by settlement evidence.",
+                    ),
+                    field(
+                        "Three-way residual reconciliation",
+                        "textarea",
+                        "Define the comparison between merchant-level source activity, processor residual calculations, and bank receipts. Establish tolerances, review timing, and treatment of differences caused by rate changes, missing accounts, prior-period offsets, or contract interpretation.",
+                        "Example: The month contains 100 merchants expected to generate $25,000 retained processing residual. The processor statement shows $24,750 and the bank receives $24,750. Review finds one omitted $250 account; operations opens claim R-0041 and records the disputed receivable separately rather than inventing a cash receipt.",
+                    ),
+                    field(
+                        "Pricing and disclosure pre-flight",
+                        "textarea",
+                        "List evidence required before activating a merchant price program or ATM surcharge. Include terminal configuration, eligible card handling, displayed prices, receipts, fee disclosure, cancellation behavior, and sponsor review of the actual implementation.",
+                        "Example: The test pack contains credit, debit, prepaid, refund, and canceled ATM transactions. Debit and prepaid transactions receive no credit-card surcharge. The ATM displays the $3 fee before commitment and permits cancellation. Receipts, signage photographs, and sponsor configuration confirmation are attached to test pack QA-032-07.",
+                    ),
+                    field(
+                        "Exception severity and rollback procedure",
+                        "textarea",
+                        "Assign severity levels to duplicate postings, incorrect fees, settlement gaps, and device faults. Define the safe operational fallback, notification owner, evidence preservation requirements, and conditions for resuming service after the root cause is corrected.",
+                        "Example: Duplicate revenue postings are severity one: suspend the affected importer, preserve raw events, and reconcile the impacted batch. Incorrect surcharge logic disables that pricing feature through the supported processor configuration. Operations resumes only after corrected test results and a balanced adjustment journal are independently reviewed.",
+                    ),
+                    field(
+                        "Acceptance test matrix and evidence",
+                        "textarea",
+                        "Write concrete expected outcomes for normal processing, retries, out-of-order events, refunds, and failures. Include event counts, ledger balances, and operator notifications so acceptance depends on measurable behavior rather than a general statement that testing succeeded.",
+                        "Example: Replaying event E-882 ten times creates one source-event record and one $250 accrual journal. A later $25 contractual adjustment creates a separate linked journal, leaving $225 receivable. Receiving the adjustment first holds it pending linkage; the test checks balances, alert delivery, and preserved raw payloads.",
+                    ),
+                    field(
+                        "Closeout packet and service handoff",
+                        "textarea",
+                        "Define the records required to hand an activated account or ATM to ongoing operations. Include contacts, access ownership, statement schedules, configuration versions, unresolved exceptions, and the first review date with a named replacement operator.",
+                        "Example: The handoff contains contract C-0188, sponsor boarding reference B-2290, configuration version 4, service contacts, and the first residual review on day thirty. A backup operator demonstrates read-only statement retrieval and fault escalation. Open issue R-0041 remains visible with a named owner and response date.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The launch test pack demonstrates single posting under retries, "
+                    "balanced journals, correct reversals, and verified disclosures. "
+                    "Source activity reconciles to statements and receipts; every open "
+                    "exception has an owner, deadline, and operating containment measure."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
+                "purpose": (
+                    "Convert payment rules into observable configuration, contract, and "
+                    "recordkeeping requirements. Distinguish federal law, state pricing "
+                    "rules, sponsor obligations, network standards, and actual funds "
+                    "flows so the portfolio can demonstrate lawful pricing, disclosed "
+                    "ATM fees, accurate underwriting, and appropriately scoped registrations."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Create a jurisdiction inventory using merchant locations, customer "
+                        "channels, ATM sites, and the actual movement of funds. "
+                        "Assign source links, effective dates, and responsible reviewers "
+                        "to each applicable rule instead of assuming one national "
+                        "pricing template covers every deployment."
+                    ),
+                    (
+                        "Separate statutes and regulations from network contracts and "
+                        "sponsor instructions. When requirements differ, document the "
+                        "configuration that satisfies every applicable restriction; do "
+                        "not describe a card-brand requirement as federal law or "
+                        "a sponsor preference as a universal license."
+                    ),
+                    (
+                        "Inspect implemented behavior, not merely policy documents. Test "
+                        "eligible card identification, advertised prices, fee disclosures, "
+                        "cancellation, receipts, descriptors, and access controls using "
+                        "approved test methods, then retain screenshots and transaction "
+                        "references that demonstrate the rule actually operates."
+                    ),
+                    (
+                        "Review contract addenda for pricing authority, reserve offsets, "
+                        "data responsibilities, venue access, assignment, and termination. "
+                        "Resolve conflicts between sales promises and signed documents "
+                        "before deployment, with amendments executed by parties who "
+                        "have authority to bind the relevant entity."
+                    ),
+                    (
+                        "Schedule recurring reviews around actual change events: new "
+                        "states, merchant categories, sponsors, pricing features, ownership, "
+                        "and funds flows. Record the reviewer, conclusion, corrective "
+                        "action, and retest evidence so a historical checklist "
+                        "does not masquerade as current operating authority."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Jurisdiction and authoritative-source register",
+                        "textarea",
+                        "List each operating state, relevant merchant channel, and ATM location. Attach the actual statutory or regulatory source, effective date, implementation requirement, and reviewer rather than relying on summaries that omit exceptions or later amendments.",
+                        "Example: Register J-01 covers a New York retail merchant under N.Y. General Business Law § 518 and its posted credit-card price requirements. Register J-02 covers a Connecticut merchant under Conn. Gen. Stat. § 42-133ff. Separate reviews determine the permitted price presentation before either terminal configuration is deployed.",
+                    ),
+                    field(
+                        "Credit surcharge eligibility and network limits",
+                        "textarea",
+                        "Document current Visa and Mastercard surcharge conditions, including eligible cards, applicable caps, cost-based limits, notices, and registration requirements. Distinguish these contractual rules from statutes and verify that debit and prepaid transactions cannot inherit credit-only fees.",
+                        "Example: The merchant proposes a 2.5% credit surcharge. Review checks current network limits, the merchant's documented acceptance cost, state restrictions, and required notices before activation. Debit and prepaid cards are excluded even when routed without a PIN; sampled receipts and processor configuration exports substantiate that exclusion.",
+                    ),
+                    field(
+                        "Dual-pricing and displayed-price controls",
+                        "textarea",
+                        "Describe the exact cash and card prices customers see before purchase, including tax and receipt treatment. Explain whether the implementation is genuine dual pricing or an added surcharge, and validate that its label matches its actual behavior.",
+                        "Example: A shop displays a $100.00 cash price and a $102.50 card price wherever the item price appears, subject to the location's applicable rules. The register selects the disclosed price rather than adding an unexplained service fee. Test receipts show the chosen price and correctly computed tax.",
+                    ),
+                    field(
+                        "Durbin and debit-routing implementation",
+                        "textarea",
+                        "Map debit acceptance controls to 15 U.S.C. § 1693o-2 and 12 CFR Part 235. Explain the distinction between debit interchange and routing rules, card-brand surcharge restrictions, and state requirements governing consumer price presentation.",
+                        "Example: The review cites 12 CFR §§ 235.3 and 235.7 for covered interchange and routing requirements. Operations verifies the processor's supported merchant routing choices. The worksheet separately records the network prohibition on debit surcharges; it does not claim that the Durbin provisions alone establish every pricing restriction.",
+                    ),
+                    field(
+                        "ATM fee disclosure and accessibility evidence",
+                        "textarea",
+                        "Specify electronic ATM fee disclosure, affirmative continuation, cancellation, and receipt evidence under Regulation E. Add applicable accessibility checks for physical deployment, identifying which requirements concern transaction disclosures and which concern the installed device and route.",
+                        "Example: Under 12 CFR § 1005.16, the ATM shows the $3.00 fee on screen before the consumer is committed and proceeds only after election to continue. The site inspection separately checks applicable 2010 ADA Standards § 707 features and the accessible route, with photographs and a completed functional test.",
+                    ),
+                    field(
+                        "FinCEN classification and funds-flow analysis",
+                        "textarea",
+                        "Map who accepts, controls, and transmits funds before assigning Bank Secrecy Act obligations. Review 31 CFR § 1010.100(ff), relevant FinCEN ATM guidance, and sponsor requirements, documenting why the actual service does or does not trigger an MSB category.",
+                        "Example: The illustrated operator owns cash-dispensing equipment but does not accept customer deposits, transmit customer funds independently, or offer currency exchange. Review uses FinCEN's 2007 independent ATM owner guidance alongside 31 CFR § 1010.100(ff). A proposed cash-in transfer feature requires fresh classification before activation, not automatic reuse of this conclusion.",
+                    ),
+                    field(
+                        "Sponsor underwriting, sanctions, and MATCH controls",
+                        "textarea",
+                        "Record sponsor-required identity, beneficial ownership, sanctions, prohibited-business, and terminated-merchant screening procedures. Specify who performs each check, how potential matches are resolved, and how material changes reach the sponsor without inventing clearance authority for the ISO.",
+                        "Example: The sponsor's authorized underwriting team performs required MATCH checks and reviews identity evidence before issuing a boarding decision. A potential sanctions match is escalated under the sponsor procedure with reference to applicable 31 CFR Chapter V programs. Sales cannot clear a match or reopen an account under another identity.",
+                    ),
+                    field(
+                        "Payment-data security and incident responsibilities",
+                        "textarea",
+                        "Document PCI DSS responsibilities, applicable validation scope, tokenization boundaries, privileged access, and incident escalation. Identify contractual standards separately from statutes, and require evidence that outsourced services actually cover the systems and tasks assigned to them.",
+                        "Example: The merchant uses a validated payment terminal service, but the responsibility matrix still assigns access reviews, device inspection, and incident reporting. PCI DSS v4.0.1 is recorded as the applicable contractual standard after scope review. Operators store tokens, enforce multifactor access, and never place sensitive authentication data in support tickets.",
+                    ),
+                    field(
+                        "Contract addendum and secured-interest review",
+                        "textarea",
+                        "Draft specific terms for residual survival, reserve offsets, pricing changes, venue exclusivity, cash loss, and assignment. Where receivables are financed or pledged, examine applicable enacted UCC Article 9 requirements instead of assuming contract labels establish priority.",
+                        "Example: The addendum requires itemized loss offsets, thirty-day notice of wholesale repricing, and continued residual payment after ordinary termination. A proposed receivables pledge receives review under the applicable state's enacted UCC §§ 9-203 and 9-310 for attachment and filing. Venue cash-loss allocation is documented separately from residual ownership.",
+                    ),
+                    field(
+                        "Audit findings and corrective-action evidence",
+                        "textarea",
+                        "Record the tested requirement, observed defect, affected population, corrective owner, due date, and retest result. Explain how transactions or devices are contained while remediation occurs, and preserve evidence supporting both the original finding and its closure.",
+                        "Example: Audit A-032-04 finds one ATM displaying an obsolete $2.50 fee while settlement charges $3.00. Operations disables surcharge-bearing service on that device, corrects the configuration, reviews affected transactions with the provider, and retains the remediation record. Closure requires a witnessed $3.00 disclosure and cancellation-path test.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Every deployed state, merchant price program, and ATM configuration "
+                    "has current source-backed requirements and implementation evidence. "
+                    "Material findings are corrected or the affected feature remains "
+                    "inactive; contract authority and any required registrations match "
+                    "the documented funds flow."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
+                "purpose": (
+                    "Build automation that reduces repetitive work without obscuring "
+                    "pricing errors, underwriting decisions, disputes, or cash shortages. "
+                    "Connect qualified acquisition, IRIS CRM records, residual audits, "
+                    "dispute tools, and ATM telemetry to measured queues with "
+                    "explicit human ownership and tested fallback procedures."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Draw the pipeline from lead source to retained account "
+                        "and ongoing service. Define the event that creates each "
+                        "task, the record that proves completion, and the human "
+                        "owner for exceptions; automated movement must not conceal "
+                        "missing underwriting or contract evidence."
+                    ),
+                    (
+                        "Use IRIS CRM for structured boarding records and residual "
+                        "audit workflows where supported by your configuration. Verify "
+                        "available exports, integrations, and permissions directly; do "
+                        "not design critical controls around an assumed product "
+                        "feature or an undocumented connector behavior."
+                    ),
+                    (
+                        "Configure Verifi RDR and Ethoca workflows against sponsor "
+                        "instructions, provider eligibility, and merchant authorization. "
+                        "Track refund outcomes and duplicate alerts across providers, "
+                        "and compare total resolution costs with measured losses "
+                        "rather than counting every intercepted alert as saved revenue."
+                    ),
+                    (
+                        "Connect ATM telemetry to operationally useful thresholds "
+                        "for cash, communication, tamper events, and dispenser "
+                        "faults. Validate sensor freshness and distinguish stale "
+                        "readings from actual cash depletion before sending "
+                        "service personnel or assuming a venue has stopped producing."
+                    ),
+                    (
+                        "Maintain manual continuity paths for failed webhooks, "
+                        "provider outages, staffing gaps, and suspended merchants. "
+                        "Exercise the fallback with limited controlled records "
+                        "and reconcile the recovery batch before returning "
+                        "to automation, so retries cannot duplicate postings or customer remedies."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Acquisition segment and qualification trigger",
+                        "textarea",
+                        "Define a narrow merchant or venue segment, observable demand, and the evidence required before outreach becomes a qualified opportunity. Track source attribution and avoid treating purchased contact counts as proof of genuine payment-processing demand.",
+                        "Example: The first segment is independent repair shops with $60,000–$150,000 monthly card volume and same-day fulfillment. A qualified opportunity requires a decision-maker conversation and permission to review three redacted statements. Forty targeted introductions yield twelve reviews; bulk contact volume does not enter the qualified-opportunity denominator.",
+                    ),
+                    field(
+                        "IRIS CRM workflow and evidence completeness",
+                        "textarea",
+                        "Map required CRM fields, document references, task owners, and allowed status changes. Explain how incomplete records are held for review and how exported identifiers connect boarded accounts to later residual statements and service activity.",
+                        "Example: IRIS CRM stores merchant token, sponsor reference, Schedule A version, pricing program, and evidence checklist. A workflow creates an operations task when all required references exist; underwriting acceptance remains a recorded sponsor decision. Weekly exports compare Active accounts with the processor list to identify missing or duplicate records.",
+                    ),
+                    field(
+                        "Residual audit automation and tolerance",
+                        "textarea",
+                        "Specify source files, contractual rate versions, expected calculations, and exception thresholds for automated residual review. Distinguish harmless rounding from missing merchants, unauthorized rate changes, and unexplained offsets requiring contractual investigation.",
+                        "Example: A monthly importer compares 100 merchant rows against effective Schedule A terms. Differences above $2 per merchant or $50 portfolio-wide create review tasks, while all differences remain logged. A missing $250 residual is escalated even if aggregate totals appear close because another account has an offsetting overpayment.",
+                    ),
+                    field(
+                        "Verifi RDR policy and refund controls",
+                        "textarea",
+                        "Define authorized dispute-resolution rules, eligible transactions, monetary limits, and expected ledger effects. Include rule ownership, duplicate prevention, refund reconciliation, and a review cadence that detects when automated resolutions cost more than the disputes they address.",
+                        "Example: A merchant authorizes an RDR rule for eligible transactions up to $75 where evidence recovery is poor. Operations records each resolution against the original payment token and verifies provider outcome before posting the refund. Weekly review compares resolved principal, fees, avoided handling work, and remaining disputes without claiming universal prevention.",
+                    ),
+                    field(
+                        "Ethoca alert matching and duplicate prevention",
+                        "textarea",
+                        "Describe alert intake, transaction matching, response deadlines, and confirmation of prior remedies. State how RDR outcomes, merchant refunds, and Ethoca alerts share a common resolution record without assuming all provider events use identical identifiers.",
+                        "Example: An Ethoca alert for a $48 transaction matches the processor token, merchant, amount, and transaction date. The resolution register already shows a completed $48 refund, so operations verifies the provider response instead of refunding again. Ambiguous matches enter manual review before any additional monetary action.",
+                    ),
+                    field(
+                        "ATM telemetry and vault-cash alerting",
+                        "textarea",
+                        "Define cash-level forecasts, fault signals, stale-data thresholds, and service dispatch criteria. Include normal replenishment lead time and explain how telemetry estimates are reconciled with cassette counts, electronic journals, and the cash provider's records.",
+                        "Example: ATM A-0020 averages $1,333.33 daily principal withdrawals and normally needs twenty-four hours for replenishment. An alert triggers below $2,700 forecast cash or after fifteen minutes without telemetry. A stale reading prompts connectivity verification; it does not automatically authorize a cash delivery or alter the vault ledger.",
+                    ),
+                    field(
+                        "Retention flywheel and referral economics",
+                        "textarea",
+                        "Connect recurring service reviews to measurable retention, referral requests, and acquisition cost. Identify the service event that earns the introduction and calculate payback using incremental retained contribution rather than merchant card volume or headline processing charges.",
+                        "Example: After two accurate residual cycles and one documented merchant service review, the account owner requests an introduction. Four introductions produce one boarded merchant at $600 total acquisition cost. At $250 monthly retained revenue less $50 direct servicing expense, contribution is $200 monthly and acquisition payback is three months.",
+                    ),
+                    field(
+                        "Attrition, disputes, and reserve early-warning dashboard",
+                        "textarea",
+                        "Choose leading indicators with explicit denominators, observation windows, and named responders. Separate internal risk signals from sponsor enforcement criteria, and define actions that reduce exposure without concealing merchant identity or rerouting prohibited transactions.",
+                        "Example: The dashboard tracks thirty-day merchant count retention, retained residual per active account, dispute counts by provider definition, and sponsor reserve notices. A 15% residual decline triggers account review within two business days. Suspended merchants remain suspended; operations does not transfer their activity to unrelated MIDs.",
+                    ),
+                    field(
+                        "Provider outage and manual continuity plan",
+                        "textarea",
+                        "Document what stops, what may continue, and which evidence supports manual processing during an integration or provider outage. Define recovery ordering and replay controls so restored automation cannot create duplicate accruals, refunds, or dispatches.",
+                        "Example: During a six-hour CRM connector outage, underwriting decisions remain in the sponsor portal and are logged in a controlled queue with source identifiers. No status is inferred from email subject lines. Recovery imports records once, reconciles counts, and verifies twenty sampled transitions before scheduled automation resumes.",
+                    ),
+                    field(
+                        "Automation ROI and accountable exception capacity",
+                        "textarea",
+                        "Measure hours saved, implementation costs, recurring fees, and unresolved exception workload. Define an expansion ceiling tied to staffed capacity, ensuring that automation success reflects accurate outcomes rather than simply fewer visible tasks in the dashboard.",
+                        "Example: Residual automation reduces monthly review from thirty hours to twelve, saving eighteen hours at a $40 loaded rate, or $720. Recurring tooling costs $250, leaving $470 monthly benefit before setup recovery. Expansion stops when unresolved material exceptions exceed the pod's documented two-business-day handling capacity.",
+                    ),
+                ],
+                "completion_gate": (
+                    "Each automation has verified inputs, a business owner, measurable "
+                    "outputs, duplicate controls, and a rehearsed manual path. Acquisition "
+                    "payback uses retained contribution, dispute remedies reconcile to "
+                    "original transactions, and telemetry alerts reflect current readings "
+                    "with accountable response deadlines."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
+                "purpose": (
+                    "Turn underwriting and operating controls into a thirty-day launch "
+                    "plan with accountable staffing, cash limits, and evidence-based "
+                    "milestones. Establish portfolio KPIs and transferable records "
+                    "without confusing early pipeline progress with mature annual "
+                    "economics or assuming sponsor consent to an eventual sale."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Plan the first thirty days around evidence collection, "
+                        "contracts, controlled testing, and qualified pipeline development. "
+                        "Respect the stated one-to-four-month first-deal window; a "
+                        "successful sprint may produce executable opportunities and "
+                        "validated operations before it produces collected residual cash."
+                    ),
+                    (
+                        "Assign a primary and backup owner to each operating "
+                        "function using the canonical team sizes. Specify contractor "
+                        "deliverables and coverage windows rather than assuming "
+                        "three contractors equal three full-time employees or "
+                        "that the owner can absorb every unresolved exception."
+                    ),
+                    (
+                        "Define every KPI with a numerator, denominator, reporting "
+                        "window, and source. Separate leading indicators such as "
+                        "qualified reviews from recognized revenue and collected "
+                        "cash, then preserve cohort history so attrition cannot "
+                        "be hidden by newly boarded merchants."
+                    ),
+                    (
+                        "Use spending checkpoints tied to documented cash availability "
+                        "and completed work. Do not expand ATM leases, acquisition "
+                        "commitments, or cash-service obligations merely because a "
+                        "pipeline forecast resembles the Base scenario; require "
+                        "observed unit economics and supported service capacity."
+                    ),
+                    (
+                        "Build the exit ledger while the portfolio is small. "
+                        "Preserve assignment rights, residual reconciliations, merchant "
+                        "cohorts, venue contracts, equipment obligations, and dispute "
+                        "history in access-controlled records so a later buyer "
+                        "can diligence the actual transferable earnings stream."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days 1–7: authority and evidence sprint",
+                        "textarea",
+                        "List the first week's deliverables, owners, document dependencies, and spending ceiling. Prioritize sponsor permissions, Schedule A economics, target-segment evidence, and source-backed pricing requirements before committing to equipment deployments or broad acquisition spending.",
+                        "Example: By day seven, the owner collects two sponsor proposals, operations reconstructs three merchant statements, and the contract reviewer marks residual assignment clauses. Spending is capped at $2,000 from the setup allocation. The sprint produces a ranked partner decision, not a claim that any merchant has been approved.",
+                    ),
+                    field(
+                        "Days 8–14: configuration and controlled tests",
+                        "textarea",
+                        "Specify the workflow configuration, ledger tests, price-program checks, and device inspection work scheduled for week two. Identify dependencies that must be satisfied before live activation and assign an accountable reviewer for each evidence packet.",
+                        "Example: Operations configures CRM states and runs ten duplicate-event replays, while the field contractor checks one proposed ATM site. The accounting reviewer validates the $250 residual accrual example. No live surcharge launches until card eligibility, display behavior, receipts, and sponsor configuration confirmation are recorded in QA-032-07.",
+                    ),
+                    field(
+                        "Days 15–21: qualified acquisition and pilot preparation",
+                        "textarea",
+                        "Define outreach volume, qualification criteria, pilot candidates, and fallback work if sponsor decisions remain pending. Measure substantive progress without treating unsigned proposals, expected transaction volume, or installed but inactive equipment as earned revenue.",
+                        "Example: Twenty targeted introductions generate six statement-review permissions and two complete applications. One venue signs a conditional placement agreement with servicing access specified. If boarding remains pending, the pod finishes cash-service arrangements and reversal tests; recognized processing and ATM revenue remain zero until actual earning events occur.",
+                    ),
+                    field(
+                        "Days 22–30: launch review and next-month commitments",
+                        "textarea",
+                        "Specify the evidence reviewed at day thirty, conditions for limited activation, and decisions deferred until real statements arrive. Include cash availability, unresolved defects, service coverage, and the next review date rather than requiring artificial first-month profitability.",
+                        "Example: The day-thirty review examines completed applications, signed agreements, test evidence, $10,500 remaining unrestricted cash, and two open noncritical workflow issues. One sponsor-approved merchant may activate if tests pass. Additional ATM leases wait for funded service coverage; the first residual statement is reviewed when actually issued.",
+                    ),
+                    field(
+                        "Pod roles and canonical staffing",
+                        "textarea",
+                        "Assign sales, underwriting coordination, accounting, field service, and exception handling across the canonical staffing structures. Specify contractor hours and backup coverage, and distinguish headcount from full-time-equivalent capacity when assessing expansion readiness.",
+                        "Example: Conservative and Base use 1 FT + 3 C: the full-time owner handles acquisition and partner management, supported by operations, accounting, and field-service contractors. Scaled uses 2 FT + 4 C, six people total. Contractor scopes specify weekly capacity, response windows, and named backup coverage for critical incidents.",
+                    ),
+                    field(
+                        "KPI definitions and cohort retention",
+                        "textarea",
+                        "Define active merchants, qualified pipeline, boarding conversion, retained revenue, cash collection, and cohort retention using explicit periods. Include denominator exclusions and source systems so different operators cannot improve reported performance merely by changing definitions.",
+                        "Example: Monthly merchant retention equals opening-cohort accounts still active at month-end divided by opening active accounts. Ninety-six of 100 retained accounts yields 96%, even if eight new merchants join. Collected residual cash comes from reconciled bank receipts; recognized residual revenue comes from supported accruals and may differ by timing.",
+                    ),
+                    field(
+                        "Canonical scorecard and stage interpretation",
+                        "textarea",
+                        "Record the portfolio's canonical ranking, score components, and scenario targets. Explain how these planning benchmarks differ from demonstrated launch results, and identify the evidence required before describing the operating portfolio as having achieved a scenario.",
+                        "Example: Volume 032 is pipeline rank #02 of 36 with Money-to-Manpower Score 94/100: revenue 24, margin 24, team 19, startup 14, automation 13. The Elite Small-Team Cash Machine designation is a planning classification. Achieving Base requires supported annual revenue of $445,000 and owner net profit of $189,125.",
+                    ),
+                    field(
+                        "Expansion decision and cash-risk limits",
+                        "textarea",
+                        "Set explicit conditions for adding merchants, devices, contractors, or acquisition spending. Link each decision to retained unit contribution, cash runway, exception capacity, contractual permissions, and observed performance rather than a desired portfolio size.",
+                        "Example: Add a second pilot ATM only after the first location supports verified withdrawal counts, a reconciled settlement cycle, and service response within contract terms. The next commitment must preserve the $6,000 unrestricted floor and funded near-term obligations. Forecast surcharge receipts cannot substitute for signed vault-funding arrangements.",
+                    ),
+                    field(
+                        "Exit-readiness evidence and transfer rights",
+                        "textarea",
+                        "Inventory the records a buyer would need to verify recurring earnings and transferable assets. Identify assignment consents, merchant concentration, device ownership, venue termination rights, contractor dependencies, and liabilities that could reduce the usable residual stream.",
+                        "Example: The controlled data room holds twelve monthly residual reconciliations when available, cohort retention, signed Schedule A versions, venue contracts, lease schedules, and sponsor correspondence. A consent tracker marks which assignments require written processor approval. Restricted reserves and third-party vault cash are excluded from saleable unrestricted cash.",
+                    ),
+                    field(
+                        "Valuation sensitivity and owner transition",
+                        "textarea",
+                        "Build an illustrative valuation bridge from verified transferable earnings, not merchant volume. Separate enterprise value assumptions, debt, working capital, retained liabilities, and transaction costs, then specify the operational evidence needed for an orderly owner handoff.",
+                        "Example: If a buyer accepts $189,125 as normalized transferable annual earnings, an illustrative 2.5-times multiple implies $472,812.50 enterprise value before negotiated adjustments. This is a sensitivity, not a market quote. Sponsor consent, concentration, leases, taxes, transaction costs, and transition support can materially change actual owner proceeds.",
+                    ),
+                ],
+                "completion_gate": (
+                    "The thirty-day review has dated evidence, accountable pod coverage, "
+                    "a funded next-month plan, and reproducible KPI definitions. Canonical "
+                    "targets remain separate from observed results, and the exit ledger "
+                    "identifies transferable rights, required consents, retained liabilities, "
+                    "and records still awaiting an actual operating history."
+                ),
+            },
+        ],
+    }

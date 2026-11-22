@@ -1,0 +1,761 @@
+from __future__ import annotations
+
+CHAPTER_9 = {
+    "id": "Q9",
+    "chapter_id": "Q9",
+    "chapter_number": 9,
+    "question_number": 9,
+    "slug": "contracts-statutory-guardrails-licensing-and-outreach-scripts",
+    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern lending & flash-funding arbitrage?",
+    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
+    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
+    "subtitle": "Business-Purpose Credit, State Usury Screens, Bonded Escrow Controls, Earned-Fee Contracts & Private-Branded Trigger Mail",
+    "layout_template": "legal_compliance_notes",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #30, Lending & Flash-Funding Arbitrage, holds Rank #04 of 36 "
+        "with a 93/100 Money-to-Manpower Score. Across the volume's 14 mapped plays, "
+        "the operating advantage is controlled settlement velocity, not permission "
+        "to ignore lending law. This chapter turns business-purpose classifications, "
+        "state licensing boundaries, usury calculations, escrow instructions, and "
+        "outreach restrictions into executable documents. It also adapts "
+        "public_filing_trigger_mail_arbitrage to clearly branded, useful commercial "
+        "offers rather than government-lookalike demands. Formula v2.0 produces "
+        "annual owner profit of $36,000 Conservative, $227,375 Base, and $522,500 "
+        "Scaled. Those outcomes recognize earned transactional fees, EMD JV splits, "
+        "and origination points only; principal passing through escrow is excluded. "
+        "Release requires verified unconditional end-buyer cash at a bonded "
+        "title or settlement agent."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual earned transactional fees, EMD JV splits, and origination points; escrow principal excluded",
+            "note": "30% net margin; $36,000 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$535,000",
+            "context": "Annual earned transactional fees, EMD JV splits, and origination points; escrow principal excluded",
+            "note": "42.5% net margin; $227,375 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$950,000",
+            "context": "Annual earned transactional fees, EMD JV splits, and origination points; escrow principal excluded",
+            "note": "55% net margin; $522,500 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Classify the transaction before pricing the money",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with the actual credit transaction, not the label on the entity. "
+                    "A business-purpose representation supports the file but does not establish "
+                    "an exemption by itself. Record the borrower's identity, beneficial owners, "
+                    "use of proceeds, collateral address, occupancy, repayment source, and every "
+                    "state connected to solicitation, negotiation, execution, and performance. "
+                    "Regulation Z, 12 CFR 1026.3(a), generally exempts business, commercial, "
+                    "agricultural, and organizational credit from its consumer-credit requirements; "
+                    "the official commentary supplies purpose factors for mixed-use cases. "
+                    "RESPA has a related business-purpose exemption at 12 CFR 1024.5(b)(2). "
+                    "Neither provision supplies a nationwide commercial-lender license or erases "
+                    "state rate limits. An LLC borrowing against its member's residence therefore "
+                    "requires factual review rather than a checkbox. Regulation B reaches "
+                    "business credit, so standardize neutral underwriting criteria, preserve "
+                    "application records under the applicable business-credit rules, and use "
+                    "the correct adverse-action procedure for the applicant's revenue category. "
+                    "Do not promise identical notice mechanics for every commercial applicant. "
+                    "The practical file contains a dated purpose memorandum, a jurisdiction "
+                    "matrix, the responsible legal review, and a versioned product decision. "
+                    "If the facts change between intake and settlement, rerun the classification "
+                    "before issuing revised terms or moving capital."
+                ),
+                (
+                    "Treat state authority as a product-by-state question covering lender, "
+                    "broker, servicer, and settlement roles separately. California Financial "
+                    "Code section 22100 generally requires a license for finance-lender or "
+                    "broker activity unless an applicable exemption exists; commercial purpose "
+                    "alone is not the exemption analysis. New York Banking Law section 340 "
+                    "has its own licensing scope, while General Obligations Law sections "
+                    "5-501 and 5-521 and Penal Law section 190.40 create distinct civil "
+                    "and criminal usury questions. A corporate borrower's limited civil "
+                    "usury defenses do not authorize every pricing structure. Florida "
+                    "Statutes sections 687.03 and 687.071 distinguish interest restrictions "
+                    "and criminal consequences; Texas Finance Code Chapter 306 provides "
+                    "commercial-loan rules that still require transaction-specific analysis. "
+                    "Calculate the treatment of points, minimum fees, extensions, default "
+                    "charges, and lender-retained expenses before quoting. A $750 charge "
+                    "on $50,000 for two days equals 1.5% for the period and 273.75% "
+                    "under simple 365-day annualization. That screening number is not a "
+                    "substitute for the jurisdiction's statutory calculation, but it exposes "
+                    "why short duration cannot excuse careless pricing. When a lawful "
+                    "structure is unavailable, decline, reprice, or refer through an "
+                    "authorized arrangement instead of renaming interest a consulting fee."
+                ),
+                (
+                    "Separate contractual control from statutory status. A 24-to-72-hour "
+                    "double close remains subject to its actual lending, brokerage, real "
+                    "estate, and settlement characteristics even when principal never reaches "
+                    "the borrower. Earnest-money funding requires a second analysis: a fixed "
+                    "repayment promise plus a purported profit split can resemble credit, "
+                    "while genuine shared downside introduces investment and potentially "
+                    "securities questions. Pooling passive investors or paying capital-raising "
+                    "commissions requires a separate securities analysis before solicitation. "
+                    "Under this playbook's release standard, unconditional end-buyer cash "
+                    "must already be deposited with a verified bonded title or settlement "
+                    "agent. Most early-stage EMD requests cannot satisfy that standard; "
+                    "decline them or provide a lawful referral rather than quietly relaxing "
+                    "the rule. Likewise, a 0%-APR corporate card is neither verified cash "
+                    "nor permission to manufacture purchases. Read issuer cash-advance, "
+                    "balance-transfer, promotional-expiration, and prohibited-use terms, then "
+                    "model the actual permitted proceeds and repayment date. Do not route "
+                    "fictitious merchant sales into escrow. Where applicable, assess state "
+                    "commercial-financing disclosure requirements and real-estate collateral "
+                    "exceptions separately from licensing. For any covered consumer "
+                    "settlement, avoid referral compensation prohibited by RESPA section 8; "
+                    "an administrative-services label does not rescue payment for a referral."
+                ),
+            ],
+            "table": {
+                "caption": "Product-by-State Authority Matrix for Short-Duration Liquidity",
+                "headers": [
+                    "Transaction and jurisdiction facts requiring an explicit classification",
+                    "Primary authority and boundary controlling the operating decision",
+                    "Evidence required before quoting or accepting the transaction",
+                    "Concrete fallback when the proposed structure fails review",
+                ],
+                "rows": [
+                    [
+                        "Business acquisition credit involving mixed personal and commercial purposes",
+                        "12 CFR 1026.3(a) separates covered consumer credit from exempt categories",
+                        "Document actual proceeds use, occupancy facts, and purpose factors",
+                        "Reclassify the product and use an appropriately authorized provider",
+                    ],
+                    [
+                        "Commercial applications evaluated using automated borrower and transaction scoring",
+                        "12 CFR Part 1002 applies business-credit nondiscrimination and notice requirements",
+                        "Retain objective criteria, decision reasons, and applicable notice records",
+                        "Pause automated decisions when reasons cannot be reproduced accurately",
+                    ],
+                    [
+                        "California lending or brokering conducted without an established exemption",
+                        "California Financial Code section 22100 establishes the licensing baseline",
+                        "Keep license verification or transaction-specific exemption analysis in file",
+                        "Stop solicitation and route inquiries through an authorized arrangement",
+                    ],
+                    [
+                        "New York corporate borrower requesting unusually expensive bridge liquidity",
+                        "Banking Law section 340 and usury statutes require separate analyses",
+                        "Calculate all potentially interest-bearing charges using applicable legal methods",
+                        "Reduce pricing or decline rather than relabeling the same charge",
+                    ],
+                    [
+                        "Florida short-term funding priced through points and minimum charges",
+                        "Florida Statutes sections 687.03 and 687.071 require rate screening",
+                        "Document principal amount, term, charge classification, and exemption analysis",
+                        "Use a reviewed lawful structure or refuse the proposed economics",
+                    ],
+                    [
+                        "Texas commercial credit using origination fees and extension provisions",
+                        "Texas Finance Code Chapter 306 governs specified commercial-loan issues",
+                        "Map borrower type, loan category, charge treatment, and collection rights",
+                        "Remove unsupported charges before issuing the final written offer",
+                    ],
+                    [
+                        "Real-estate settlement involving consumer financing and compensated introductions",
+                        "12 U.S.C. 2607 restricts kickbacks and unearned settlement charges",
+                        "Identify coverage and substantiate actual services independently of referrals",
+                        "Eliminate referral compensation rather than disguising it as administration",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Draft contracts that survive a failed closing",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build a document stack with four coordinated components: the funding "
+                    "agreement, transaction schedule, escrow instructions accepted by the "
+                    "settlement agent, and any valid security or guaranty documents. The "
+                    "scope clause identifies the property, borrower, funded leg, maximum "
+                    "principal, authorized payees, and permitted settlement window. It also "
+                    "states what the operator does not control, including title underwriting "
+                    "and the end buyer's obligations. Define each fee by an observable "
+                    "event. For example, a funding fee becomes earned only after the "
+                    "authorized advance is disbursed and the specified closing event "
+                    "occurs; a separately negotiated commitment charge requires its own "
+                    "lawful basis and unmistakable trigger. Distinguish earned charges "
+                    "from refundable deposits and third-party expenses. Do not collect "
+                    "origination points twice through both the funding agreement and "
+                    "the settlement statement. Include the exact maturity time, applicable "
+                    "time zone, return account, cancellation procedure, and consequences "
+                    "of missed cutoffs. An extension requires a written amendment and "
+                    "fresh rate review, not a casual text promising another day. If "
+                    "end-buyer funds become conditional or are withdrawn before release, "
+                    "the instructions must prohibit disbursement and specify how any "
+                    "unreleased operator money returns without improvisation by the closer."
+                ),
+                (
+                    "A repayment waterfall must distinguish priority by agreement from "
+                    "priority enforceable against third parties. State principal return, "
+                    "lawfully earned fees, approved expenses, and residual distributions "
+                    "in order, with settlement-statement lines that reconcile to the "
+                    "ledger. Where collateral supports the advance, attachment, perfection, "
+                    "and competing claims require their own work. UCC section 9-203 "
+                    "addresses attachment and enforceability of security interests; section "
+                    "9-310 supplies the general filing rule, subject to exceptions. "
+                    "Use the relevant state's enacted provisions, not a generic national "
+                    "form. Real-property liens require the applicable mortgage or deed-of-trust "
+                    "process, while deposit-account perfection may require control rather "
+                    "than an ordinary financing statement. Do not describe a first "
+                    "priority position until searches, filings, and required agreements "
+                    "support it. For an EMD joint venture, identify who bears a forfeited "
+                    "deposit, who may cancel, what evidence supports release, and whether "
+                    "profits exist before distributions. A mandatory principal return plus "
+                    "fixed compensation must be reviewed for credit characterization. "
+                    "If the proposed recovery depends on suing an insolvent intermediary "
+                    "after a dry closing, the operational fallback is rejection or "
+                    "a materially different documented risk allocation, not stronger "
+                    "adjectives in the contract."
+                ),
+                (
+                    "Use narrow anti-circumvention language tied to a named introduction, "
+                    "specified transaction, reasonable duration, and provable lost compensation; "
+                    "do not prohibit all future business with an entire title company. "
+                    "Have the remedy reviewed for enforceability and interaction with "
+                    "state brokerage restrictions. A liability cap should state its "
+                    "calculation and any negotiated exclusions for fraud, intentional "
+                    "misconduct, mishandling entrusted funds, or data incidents. Avoid "
+                    "suggesting a cap can erase statutory duties or protect every "
+                    "form of negligence. Choose governing law, forum, service mechanics, "
+                    "and either an intelligible arbitration procedure or court process, "
+                    "while recognizing mandatory local rules may still control. The "
+                    "data schedule separates ownership of borrower records from the "
+                    "operator's underwriting templates and vendor software. Specify "
+                    "permitted uses, access roles, retention periods, secure deletion "
+                    "subject to recordkeeping duties, incident notification, and vendor "
+                    "export rights. DocuSign completion certificates establish an execution "
+                    "trail, not the signer's authority or factual truth. Verify "
+                    "organizational resolutions and callback contacts independently. Require "
+                    "signed change control for payment instructions and a renewed "
+                    "independent callback; an amended PDF arriving from the familiar "
+                    "email thread must never replace verification. Close the file with "
+                    "one consistent executed version and a documented precedence rule."
+                ),
+            ],
+            "table": {
+                "caption": "Clause-to-Evidence Checklist for Funding and Escrow Documents",
+                "headers": [
+                    "Contract provision requiring transaction-specific language before signature",
+                    "Concrete drafting instruction that defines the operator's rights",
+                    "Independent evidence supporting performance of the written provision",
+                    "Failure response that avoids relying on ambiguous remedies",
+                ],
+                "rows": [
+                    [
+                        "Scope clause defining the precise funded acquisition leg",
+                        "Identify property, borrower, principal ceiling, authorized payees, and timing",
+                        "Match executed purchase contracts against the settlement agent's schedule",
+                        "Reject substitutions until the complete document stack is revised",
+                    ],
+                    [
+                        "Fee trigger separating earned compensation from refundable deposits",
+                        "Tie each fee to a lawful observable performance event",
+                        "Reconcile signed pricing with final settlement lines and bank receipts",
+                        "Reverse unearned charges and return refundable amounts as agreed",
+                    ],
+                    [
+                        "Repayment waterfall covering principal, fees, expenses, and residual distributions",
+                        "Require accepted escrow instructions stating the precise payment sequence",
+                        "Obtain the agent's acknowledgment and transaction-specific disbursement ledger",
+                        "Stop release if competing instructions defeat the intended sequence",
+                    ],
+                    [
+                        "Anti-circumvention protection limited to an identifiable commercial introduction",
+                        "Specify covered parties, transaction, duration, and supportable compensation remedy",
+                        "Preserve introduction records and evidence of the actual covered opportunity",
+                        "Pursue the agreed remedy rather than asserting unlimited exclusivity",
+                    ],
+                    [
+                        "Liability allocation addressing operational errors and entrusted transaction money",
+                        "Define the cap and reviewed exclusions without erasing statutory duties",
+                        "Check insurance terms against the activities and exclusions negotiated",
+                        "Remove unsupported risk transfers before accepting custody-related obligations",
+                    ],
+                    [
+                        "Dispute resolution clause connecting forum selection with enforceable procedure",
+                        "State governing law, service method, venue, and chosen dispute mechanism",
+                        "Verify local mandatory rules and organizational authority to execute",
+                        "Resolve conflicting forms before funds or binding commitments move",
+                    ],
+                    [
+                        "IP and data ownership schedule separating records from reusable methods",
+                        "Allocate permitted uses, access, retention, exports, and incident notification",
+                        "Inventory vendor permissions and test retrieval of signed transaction records",
+                        "Disable unnecessary access and retain required records through termination",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make the document stack do operational work",
+                "body": (
+                    "Experienced funding operators remove ambiguity before the closing "
+                    "rush, when counterparties still have time to resolve it."
+                ),
+                "items": [
+                    "Ask the escrow officer to mark the exact ledger lines returning principal and paying each fee before circulating signatures.",
+                    "Place the cutoff time and time zone beside the disbursement condition, not only in a definitions appendix.",
+                    "Attach a named-party introduction schedule to anti-circumvention terms so ordinary future business stays outside the restriction.",
+                    "Keep a clean fallback instruction that returns unreleased principal to the verified originating account when the second closing fails.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Bind release controls to the ledger and scorecard",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Make the settlement agent the verified release point, not merely "
+                    "a recognizable logo on an email. Confirm the entity's applicable "
+                    "license, physical office, responsible escrow officer, bond, and "
+                    "relevant insurance through independent sources. Bonding is an "
+                    "internal eligibility requirement here even where local rules "
+                    "permit another arrangement; a bond does not insure every "
+                    "loss. Verify the account beneficiary and wiring instructions "
+                    "using a telephone number independently obtained from an established "
+                    "source, then document the person reached and the confirmation "
+                    "time. CertifID or another verification service can supplement this "
+                    "process, but vendor output does not replace independent account "
+                    "and authority checks. Obtain direct confirmation that the end "
+                    "buyer's funds are received, available for the specified closing, "
+                    "and free of unresolved financing or release conditions. A "
+                    "screenshot, lender commitment, pending ACH entry, or proof-of-funds "
+                    "letter does not satisfy that condition. Separately verify "
+                    "accepted instructions that control the sequence and returns if "
+                    "the second conveyance fails. The title underwriter and closer "
+                    "must permit the actual double-close structure. If required cash "
+                    "or authorized instructions are missing at cutoff, preserve the "
+                    "capital and reschedule; do not convert a controlled transaction "
+                    "into unsecured overnight exposure by habit."
+                ),
+                (
+                    "Keep unit economics separate from wire volume. An illustrative "
+                    "$50,000 advance earning a lawful $750 funding fee produces "
+                    "$750 of fee revenue, not $50,750. The returned $50,000 "
+                    "reduces the principal receivable. If an EMD arrangement distributes "
+                    "$2,000 to the operator from a $5,000 total venture fee "
+                    "pool, record only the operator's earned contractual share under "
+                    "the applicable accounting analysis, not the entire pool. Evaluate "
+                    "ASC 606 principal-versus-agent presentation where it applies; "
+                    "origination fees associated with loans may instead require "
+                    "loan-specific accounting and timing. Maintain a bridge from "
+                    "the management scorecard to the financial statements. The "
+                    "canonical Formula v2.0 revenue cases are $120,000, $535,000, "
+                    "and $950,000, all excluding principal. Their respective "
+                    "30%, 42.5%, and 55% margins produce $36,000, $227,375, "
+                    "and $522,500 of annual owner net profit. Implied total "
+                    "annual costs are $84,000, $307,625, and $427,500. These "
+                    "totals include more than the stated $2,000-to-$12,000 "
+                    "monthly operating-expense range; bridge direct capital costs, "
+                    "contractors, losses, acquisition costs, and other modeled "
+                    "expenses explicitly. The Conservative and Base teams remain "
+                    "1 FT plus 2 C; Scaled remains 2 FT plus 3 C. "
+                    "Never improve the margin by silently excluding a cost category."
+                ),
+                (
+                    "For capacity planning, one illustrative reconciliation uses 60 "
+                    "earned fees at $2,000 for Conservative revenue of $120,000. "
+                    "Base combines 100 transactional fees at $3,500, 60 operator "
+                    "EMD splits at $2,000, and 65 origination-point receipts at "
+                    "$1,000, totaling $535,000. Scaled combines 140 transactional "
+                    "fees at $4,000, 90 operator EMD splits at $3,000, "
+                    "and 120 origination-point receipts at $1,000, totaling "
+                    "$950,000. These are illustrative revenue decompositions, not "
+                    "additional canonical assumptions or assertions that every receipt "
+                    "represents a separate transaction. Count an origination receipt "
+                    "only when it is distinct, lawfully earned, and not already "
+                    "inside the transactional fee. EMD receipts remain subject "
+                    "to the same release standard; if eligible transactions "
+                    "cannot support the mix, report the shortfall rather than "
+                    "funding weaker files. The $25,000-to-$100,000 startup "
+                    "capital range also constrains simultaneous advances independently "
+                    "of annual fee totals. Track available cash, outstanding "
+                    "principal, settlement cutoffs, and concentration by escrow agent. "
+                    "At $50,000 per advance, $100,000 supports at most two "
+                    "simultaneous fully funded advances before reserves and costs. "
+                    "Require fresh confirmation after any closing delay. A "
+                    "next-day release is a changed exposure, not yesterday's "
+                    "verified deal automatically carried forward."
+                ),
+            ],
+            "table": {
+                "caption": "Release Evidence and Accounting Controls for Escrow-Locked Funding",
+                "headers": [
+                    "Control point tested before or immediately after settlement",
+                    "Evidence supporting release or accurate earned-revenue recognition",
+                    "Specific operating instruction for the responsible team member",
+                    "Fallback action when the required evidence is incomplete",
+                ],
+                "rows": [
+                    [
+                        "Settlement counterparty eligibility before accepting any wiring instructions",
+                        "Independent license verification, current bond evidence, and responsible officer identity",
+                        "Check actual coverage limitations rather than treating bonding as insurance",
+                        "Select another verified bonded agent or decline the transaction",
+                    ],
+                    [
+                        "Beneficiary and routing confirmation for every new destination account",
+                        "Independent callback record matching bank details and beneficiary identity",
+                        "Require a second person's review before transmitting the wire",
+                        "Hold the transfer when email and callback details disagree",
+                    ],
+                    [
+                        "Unconditional end-buyer cash supporting the specified second closing",
+                        "Direct agent confirmation of received funds and satisfied release conditions",
+                        "Reject pending deposits, financing promises, and screenshots as substitutes",
+                        "Reschedule without releasing operator capital into a conditional closing",
+                    ],
+                    [
+                        "Written disbursement sequence governing both conveyances and failed completion",
+                        "Accepted escrow instructions plus title-underwriter acceptance of the structure",
+                        "Verify return paths before permitting the first funded disbursement",
+                        "Stop when the agent cannot perform the required sequence",
+                    ],
+                    [
+                        "Principal recovery recorded independently from earned transaction compensation",
+                        "Bank receipt and payoff ledger distinguishing principal from each fee",
+                        "Reduce the receivable for principal without inflating operator revenue",
+                        "Investigate unmatched cash before treating any excess as earnings",
+                    ],
+                    [
+                        "Joint-venture fee allocation limited to the operator's contractual entitlement",
+                        "Executed split agreement reconciled to the final distribution statement",
+                        "Record the earned share without duplicating the partner's allocation",
+                        "Suspend disputed revenue recognition until entitlement and timing resolve",
+                    ],
+                    [
+                        "Annual scenario reconciliation connecting revenue, costs, profit, and staffing",
+                        "Formula v2.0 totals tied to a documented management-accounting bridge",
+                        "Maintain canonical margins while explaining all included cost categories",
+                        "Report actual variance instead of substituting principal for revenue",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four confirmations before a dollar leaves",
+                "body": (
+                    "Every condition is necessary. A strong borrower or familiar "
+                    "closer cannot compensate for missing release evidence."
+                ),
+                "items": [
+                    "Confirm the transaction's purpose, state authority, fee treatment, and executed document version match the current facts.",
+                    "Verify the bonded settlement agent, authorized escrow officer, account beneficiary, and wire instructions through independent channels.",
+                    "Obtain direct confirmation of unconditional end-buyer cash on deposit and accepted instructions controlling both closing legs.",
+                    "Have a second reviewer match available capital, cutoff time, principal-return instructions, and the final fee ledger before release.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Create the jurisdiction and purpose record",
+                    "action": "Classify the parties, proceeds, collateral, states, and actual operator roles.",
+                    "detail": "Attach the applicable authority analysis and prevent quoting from an unreviewed product-state combination.",
+                },
+                {
+                    "step": 2,
+                    "title": "Execute a consistent transaction document stack",
+                    "action": "Match the funding schedule, fee triggers, security documents, and accepted escrow instructions.",
+                    "detail": "Resolve conflicting payment terms and verify signer authority before treating the package as executable.",
+                },
+                {
+                    "step": 3,
+                    "title": "Verify cash and independently authorize release",
+                    "action": "Confirm bonded-agent eligibility, verified bank details, unconditional buyer cash, and closing sequence.",
+                    "detail": "Record two-person review and repeat affected checks whenever the account, timing, or material transaction facts change.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile principal, earned fees, and exceptions",
+                    "action": "Match bank movements to settlement statements and close the payoff ledger.",
+                    "detail": "Separate principal recovery from operator compensation, explain variances, and retain the complete execution and callback record.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Use public triggers without impersonation or unsupported promises",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mapped play public_filing_trigger_mail_arbitrage uses daily "
+                    "Secretary of State new-LLC filings and County Recorder "
+                    "deed or mortgage recordings as timing signals, not "
+                    "evidence of creditworthiness or purchasing intent. Acquire "
+                    "records through permitted downloads, APIs, or licensed "
+                    "providers; preserve source, retrieval date, permitted use, "
+                    "and deduplication keys. A registered-agent address may "
+                    "represent hundreds of unrelated entities, so exclude "
+                    "those clusters rather than paying postage repeatedly. "
+                    "Use Lob or PostGrid to send plainly private commercial "
+                    "mail with accurate sender identity, optional-offer language, "
+                    "and a functioning response path. 39 U.S.C. 3001 "
+                    "restricts deceptive solicitations, including specified "
+                    "invoice-like mailings, and California Business and "
+                    "Professions Code section 17537.9 imposes particular "
+                    "requirements on covered recorded-document solicitations. "
+                    "Avoid the imitation format entirely instead of "
+                    "depending on tiny corrective text. Never mimic "
+                    "government seals, citation numbers, mandatory payment "
+                    "demands, or claims that a purchased deed copy "
+                    "is required. The fallback product must deliver "
+                    "real value: annual workplace-compliance updates, "
+                    "appropriately qualified property-tax appeal services, "
+                    "or a useful B2B introduction. State authority "
+                    "to represent taxpayers, fee restrictions, recurring "
+                    "billing rules, and actual service scope need "
+                    "review before the associated offer is launched. "
+                    "Public availability of an address does not "
+                    "eliminate data-use duties or authorize resale "
+                    "under every upstream agreement."
+                ),
+                (
+                    "Measure the mail play separately from lending revenue. "
+                    "An illustrative batch of 1,000 pieces at $0.90 "
+                    "each costs $900; add $100 for records and "
+                    "deduplication for $1,000 total acquisition spend. "
+                    "A 2% response rate yields 20 responses; a "
+                    "25% response-to-sale rate produces five customers "
+                    "and a $200 acquisition cost. At $480 annual "
+                    "subscription revenue and $180 direct annual "
+                    "delivery cost per customer, first-year contribution "
+                    "before acquisition is $300 each, or $1,500 "
+                    "total. Subtract the $1,000 campaign cost for "
+                    "$500 before fixed overhead, refunds, and taxes. "
+                    "These assumptions are sensitivity inputs, not "
+                    "observed results. With only three customers, "
+                    "$900 of contribution fails to cover that "
+                    "campaign cost. Keep this subscription activity "
+                    "outside the canonical funding-fee scenarios unless "
+                    "a separately approved scorecard explicitly includes "
+                    "it. Property-tax appeals should quote a clearly "
+                    "defined fee basis and never promise a reduction "
+                    "from the recording event alone. Exclusive lead "
+                    "monetization requires a truthful exclusivity definition, "
+                    "permitted data transfer, and buyer qualification. "
+                    "For example, two buyers cannot each receive "
+                    "the same supposedly exclusive lead. Stop a "
+                    "weak campaign, improve targeting or the actual "
+                    "service, and retain private commercial branding; "
+                    "do not rescue conversion by making the "
+                    "piece resemble an official collection notice."
+                ),
+                (
+                    "Use scripts that invite factual verification instead "
+                    "of manufacturing urgency. For transactional funding: "
+                    "'We provide short-duration business-purpose funding "
+                    "for eligible double closings. We fund only "
+                    "through a verified bonded settlement agent after "
+                    "unconditional end-buyer cash is confirmed. May "
+                    "we review your closing dates, purchase contracts, "
+                    "and settlement contact before discussing a written "
+                    "fee?' For discovery: 'Who is the borrower, "
+                    "how will proceeds be used, which states "
+                    "are involved, and what conditions remain "
+                    "on the buyer's funds?' For a failed "
+                    "cash check: 'We cannot release against "
+                    "pending financing. We can revisit the "
+                    "file after the agent confirms received "
+                    "cash and accepted closing instructions.' "
+                    "Commercial email must satisfy CAN-SPAM, "
+                    "15 U.S.C. 7704, including accurate "
+                    "headers, nondeceptive subjects, required advertising "
+                    "identification, a valid postal address, "
+                    "and a working opt-out honored within "
+                    "ten business days. Screen telephone "
+                    "and text campaigns under 47 U.S.C. "
+                    "227, 47 CFR 64.1200, and relevant "
+                    "state rules before selecting automation "
+                    "or prerecorded content. A public "
+                    "filing does not supply required "
+                    "calling permission. Use manual, screened "
+                    "outreach where appropriate and maintain "
+                    "channel-specific suppression records. Never "
+                    "claim approval, available credit, verified "
+                    "cash, or a government relationship "
+                    "before the corresponding facts exist."
+                ),
+            ],
+            "table": {
+                "caption": "Verbatim Outreach and Discovery Scripts with Operational Fallbacks",
+                "headers": [
+                    "Channel and triggering situation for the operator's communication",
+                    "Verbatim opening language suitable for a clearly identified sender",
+                    "Discovery language that obtains facts without promising an outcome",
+                    "Mandatory operating check or fallback before further contact",
+                ],
+                "rows": [
+                    [
+                        "Private-branded direct mail following a verified new business filing",
+                        "'We are a private business offering optional annual workplace-compliance updates.'",
+                        "'Which states and employee counts should our proposed service cover?'",
+                        "Identify the sender and specify actual deliverables without official-looking demands",
+                    ],
+                    [
+                        "Recorded-deed trigger offering a qualified property-tax assessment review",
+                        "'We offer a private assessment review, not a government billing service.'",
+                        "'May we review your assessment notice and explain our written fee basis?'",
+                        "Verify representation authority and state-specific solicitation requirements before mailing",
+                    ],
+                    [
+                        "Business email introducing escrow-locked transactional double-close funding",
+                        "'We evaluate business-purpose double closings with confirmed end-buyer cash.'",
+                        "'Which settlement agent holds the cash, and what conditions remain?'",
+                        "Include required email disclosures and suppress opt-outs within statutory timing",
+                    ],
+                    [
+                        "Discovery conversation about earnest-money funding described as joint venture capital",
+                        "'We first review repayment rights, loss allocation, and the actual settlement sequence.'",
+                        "'Who bears forfeiture, and is unconditional end-buyer cash already deposited?'",
+                        "Decline early-stage deposits that cannot satisfy the required cash condition",
+                    ],
+                    [
+                        "Caller proposing corporate credit as the source of escrow liquidity",
+                        "'We review permitted cash availability, issuer terms, and the repayment schedule.'",
+                        "'Does your issuer permit this transaction, and which charges actually apply?'",
+                        "Reject fictitious purchases and do not equate promotional credit with cash",
+                    ],
+                    [
+                        "Follow-up after the settlement officer reports pending buyer financing",
+                        "'We cannot release while the buyer's funds remain conditional or pending.'",
+                        "'When can the agent confirm received cash and accepted disbursement instructions?'",
+                        "Reschedule and repeat affected verification rather than extending unsecured exposure",
+                    ],
+                    [
+                        "Exclusive B2B introduction offer generated from permitted public-record signals",
+                        "'We offer a private introduction service with clearly defined exclusivity terms.'",
+                        "'Which geography, service category, and duplicate-contact rules should the contract specify?'",
+                        "Verify permitted transfer and never sell identical exclusivity to multiple buyers",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A fee is earned by a lawful completed transaction, not by the size of the wire passing through escrow.",
+    "diagram_id": "diag-05",
+    "action_checklist": [
+        "Create a product-by-state matrix covering purpose, lender and broker authority, rate treatment, settlement roles, and applicable commercial disclosures.",
+        "Execute matching funding, fee, security, and escrow documents with explicit failed-closing instructions and verified organizational authority.",
+        "Verify the bonded settlement agent and bank beneficiary independently, then require direct confirmation of unconditional end-buyer cash before release.",
+        "Reconcile principal separately from earned fees and bridge every scenario to the canonical revenue, margin, owner-profit, and staffing totals.",
+        "Deploy private-branded public-filing mail only after reviewing data permissions, offer substance, state solicitation rules, and acquisition economics.",
+        "Train callers and closers on the verbatim scripts, email opt-outs, telephone restrictions, channel suppression, and documented refusal of conditional funding.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, and organizational credit exemptions",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
+            "relevance": "Establishes the federal Regulation Z exemption categories; actual purpose and the official interpretations guide mixed-purpose classification.",
+        },
+        {
+            "title": "12 CFR 1024.5(b)(2) — Business-purpose loan exemption",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1024/section-1024.5",
+            "relevance": "Defines a relevant RESPA coverage exemption without granting state lending authority or removing state interest restrictions.",
+        },
+        {
+            "title": "12 CFR 1002.9 — Notifications, including business-credit applications",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.9",
+            "relevance": "Supports applicant-specific notification procedures, including the differing treatment of specified business-credit applications.",
+        },
+        {
+            "title": "12 CFR 1002.12 — Record retention",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.12",
+            "relevance": "Supplies retention rules and business-credit distinctions for applications, decisions, and related evidence.",
+        },
+        {
+            "title": "California Financial Code section 22100 — Finance lender and broker licensing",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22100.&lawCode=FIN",
+            "relevance": "Provides the licensing baseline requiring a license or an applicable exemption rather than reliance on a commercial-purpose label.",
+        },
+        {
+            "title": "New York Banking Law section 340 — Licensed lender activity",
+            "url": "https://www.nysenate.gov/legislation/laws/BNK/340",
+            "relevance": "Defines state licensed-lender activity through transaction and pricing conditions that require specific review.",
+        },
+        {
+            "title": "New York General Obligations Law section 5-501 — Interest rate",
+            "url": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+            "relevance": "Forms part of the state's interest framework and must be read with applicable exceptions and related statutes.",
+        },
+        {
+            "title": "New York General Obligations Law section 5-521 — Corporate usury defense",
+            "url": "https://www.nysenate.gov/legislation/laws/GOB/5-521",
+            "relevance": "Limits certain corporate usury defenses while preserving the need to examine criminal-usury exposure.",
+        },
+        {
+            "title": "New York Penal Law section 190.40 — Criminal usury in the second degree",
+            "url": "https://www.nysenate.gov/legislation/laws/PEN/190.40",
+            "relevance": "Prevents treating corporate status or short maturity as blanket permission for excessive charges.",
+        },
+        {
+            "title": "Florida Statutes section 687.03 — Unlawful rates of interest",
+            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0687/Sections/0687.03.html",
+            "relevance": "Supports principal-sensitive rate analysis and review of charges included in the applicable interest calculation.",
+        },
+        {
+            "title": "Florida Statutes section 687.071 — Criminal usury and related prohibited conduct",
+            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0687/Sections/0687.071.html",
+            "relevance": "Adds criminal consequences and definitions that must be considered separately from ordinary pricing review.",
+        },
+        {
+            "title": "Texas Finance Code Chapter 306 — Commercial transactions",
+            "url": "https://statutes.capitol.texas.gov/Docs/FI/htm/FI.306.htm",
+            "relevance": "Provides commercial-loan provisions whose applicability depends on the transaction and the defined categories involved.",
+        },
+        {
+            "title": "California Commercial Code section 9203 — Attachment and enforceability",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9203.&lawCode=COM",
+            "relevance": "Illustrates an enacted UCC attachment provision; the relevant state's law governs the actual collateral analysis.",
+        },
+        {
+            "title": "California Commercial Code section 9310 — Filing requirements and exceptions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9310.&lawCode=COM",
+            "relevance": "Illustrates the general perfection-by-filing rule while preserving exceptions and collateral-specific requirements.",
+        },
+        {
+            "title": "12 U.S.C. 2607 — Prohibition against kickbacks and unearned fees",
+            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
+            "relevance": "Restricts referral compensation and unearned settlement charges in covered transactions.",
+        },
+        {
+            "title": "39 U.S.C. 3001 — Nonmailable matter and specified deceptive solicitations",
+            "url": "https://www.law.cornell.edu/uscode/text/39/3001",
+            "relevance": "Addresses specified invoice-like and government-connection solicitations; direct mail should use unmistakably private commercial presentation.",
+        },
+        {
+            "title": "California Business and Professions Code section 17537.9 — Recorded-document solicitations",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17537.9.&lawCode=BPC",
+            "relevance": "Imposes requirements on covered solicitations involving recorded documents and supports review of deed-trigger campaigns.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Governs commercial email identity, subject lines, required disclosures, opt-out mechanisms, and timely suppression.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on specified telephone equipment and calls",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Requires channel and technology review before using automated calls, prerecorded content, or covered messaging.",
+        },
+        {
+            "title": "47 CFR 64.1200 — Delivery restrictions for telephone solicitations and related communications",
+            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
+            "relevance": "Supplies operational calling, permission, and suppression requirements that public-record sourcing does not replace.",
+        },
+    ],
+}

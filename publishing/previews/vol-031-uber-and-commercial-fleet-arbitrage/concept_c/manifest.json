@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-031-uber-and-commercial-fleet-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1974426,
+      "sha256": "a85327e1d9ae8590d73d3ab93474c4343d1c42670583e5558721a245dfb7b01a"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2584549,
+      "sha256": "ba87d3ac3e5ce9f5bad27438cf53ce714f6ee1a65a6b465de550fb6397b13167"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 548415,
+      "sha256": "3ca826aaf7c19bd49d13e649a63efc14a2c1713833bb431129745bc9a6140e3d"
+    },
+    "book.epub": {
+      "bytes": 262294,
+      "sha256": "ea07ea6883bdd9283fd4e87b6651f5b9254b3ab63a52be088ace899567fe8256"
+    },
+    "art/cover.svg": {
+      "bytes": 4315,
+      "sha256": "22c17fe6e7d02ea730529371c996bc2a666b873a7db11cde77fdb0419fad2416"
+    },
+    "art/scorecard.svg": {
+      "bytes": 48967,
+      "sha256": "b03cd8a15e1c9d058458a0a8043cc9810d89009d92eecc6d950e03b5e54a0d2f"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12469,
+      "sha256": "6da75ffddd8fa1b6d7f494d39de2e3e2b4c77d7a6d05e0bafb4b2ec89d6adb4f"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8311,
+      "sha256": "924f1be83a8a760f8c7eb4aacf9cc804b6bb6f9be8c988fc1ecfa5206c21e927"
+    },
+    "art/diag_03.svg": {
+      "bytes": 13050,
+      "sha256": "a147166f24ec40aa5e67f9d22567182943e4f5037aee1ae3abc0f6a1f9680fd7"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10334,
+      "sha256": "9c55f0d751f9ed727516e9275a150a2985ceb7d5712407dedb4eb13416e92b7a"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10696,
+      "sha256": "c8ed307d5c16cb4737848d6b64ecdb9851288e5c4788b4ae6fb65ab40d365d33"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13706,
+      "sha256": "fc03feb039e148baefd318d7f2f89c46a3bb6a49110b5b6a589b00f511e9ed16"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9513,
+      "sha256": "cff19ecde5f3c812b5fea17ab5c1b9866e15bcbe15f45895bbf9025907fca362"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9289,
+      "sha256": "f8eb65f7269041eb57d36a6ee3d368680e1ad03c41b33ab03ebebe6522aaf396"
+    }
+  }
+}

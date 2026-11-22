@@ -1,0 +1,691 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in iso payment processing & atm arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–4 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "Schedule A Spread Discovery, Verified Migration Signals, Exclusive ATM Venues, and Sponsor-Ready Merchant Acquisition",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #32, ISO Payment Processing & ATM Arbitrage, ranks #02 of 36 "
+        "with a 94/100 Money-to-Manpower Score. This chapter turns 12 mapped plays "
+        "into a sourcing system built around processor statements, verified software "
+        "migrations, renewal dates, and exclusive ATM locations. Pursue evidence of "
+        "recoverable margin rather than indiscriminate merchant lists. Net retained "
+        "ISO residuals, gateway markups, and ATM surcharges support the canonical "
+        "annual owner-profit cases: $27,000 Conservative, $189,125 Base, and $440,000 "
+        "Scaled. Merchant settlement volume and ATM vault cash never become operator "
+        "revenue. A four-month cadence links public signals to permissioned discovery, "
+        "sponsor underwriting, signed agreements, and verified production. The first "
+        "3-to-10 wins establish acquisition economics; they do not automatically "
+        "produce the mature portfolio's annual scorecard."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$90,000",
+            "context": "Annual operator revenue from net retained residuals, gateway markups, and ATM surcharges",
+            "note": "30% net margin; $27,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$445,000",
+            "context": "Annual operator revenue from net retained residuals, gateway markups, and ATM surcharges",
+            "note": "42.5% net margin; $189,125 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$800,000",
+            "context": "Annual operator revenue from net retained residuals, gateway markups, and ATM surcharges",
+            "note": "55% net margin; $440,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Mine twelve deal lanes for evidence of movable margin",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the prospect universe around a change event, not a purchased "
+                    "list of businesses accepting cards. Start with two adjacent merchant "
+                    "verticals and one compact ATM service territory. Municipal business "
+                    "licenses, building permits, state entity registrations, liquor-license "
+                    "applications, and venue event calendars can reveal openings, ownership "
+                    "changes, expanded hours, and new cash demand. Record the source URL, "
+                    "publication date, business address, likely decision-maker role, and "
+                    "specific commercial hypothesis in IRIS CRM. An entity filing alone "
+                    "does not establish operating activity or buying intent; confirm the "
+                    "location through its own website and a direct business conversation. "
+                    "For each merchant, seek an observable reason to revisit processing: "
+                    "a POS replacement, recurring checkout errors, a second location, or "
+                    "an approaching contract anniversary. For each ATM venue, seek cash "
+                    "demand plus a service defect: queues, repeated outages, inconvenient "
+                    "placement, or an expiring exclusive agreement. Avoid assuming that "
+                    "high foot traffic produces withdrawals. A busy cashless restaurant "
+                    "may be weaker than a smaller entertainment venue with documented "
+                    "cash purchases. The twelve lanes in the first two matrices are "
+                    "chapter-level operating mappings, not twelve externally supplied "
+                    "play identifiers. Each lane needs a measurable next question and "
+                    "an explicit reason to stop pursuing it."
+                ),
+                (
+                    "The supplied play saas_technographic_churn_pixel_scraping becomes a "
+                    "migration-intent detector, not a license to assert private contract "
+                    "dates. Fetch public commercial pages weekly with urllib.request, "
+                    "inspect script references with html.parser, and compare normalized "
+                    "observations in sqlite3. Respect site access rules, use modest request "
+                    "rates, and never bypass authentication. Detect visible Salesforce, "
+                    "HubSpot, Marketo, Segment, or NetSuite references without collecting "
+                    "visitor identifiers. Python's standard socket interface does not "
+                    "provide general TXT/CNAME lookups; use an authorized DNS-over-HTTPS "
+                    "JSON endpoint through urllib.request or an approved passive-DNS "
+                    "export. Persist first-seen and last-seen timestamps. Weekly sampling "
+                    "bounds a change between observations; it cannot establish the exact "
+                    "installation day. Script removal may reflect a tag-manager change, "
+                    "regional rendering, or a redesign rather than vendor churn. Confirm "
+                    "with passive DNS TXT/CNAME history, public job-posting mentions, and "
+                    "a direct operational question before routing the lead. Month 10–11 "
+                    "outreach is a hypothesis only after someone confirms an annual "
+                    "contract's start date. Prioritize migrations that actually touch "
+                    "commerce, subscriptions, reconciliation, or checkout. A marketing "
+                    "automation change without payment implications deserves a lower "
+                    "score, even when the technology signal is perfectly accurate. "
+                    "Offer a settlement-reconciliation review rather than claiming the "
+                    "merchant is replacing its processor."
+                ),
+                (
+                    "Translate every signal into retained economics before assigning "
+                    "sales time. Suppose an authorized statement review establishes "
+                    "$80,000 monthly eligible card volume and a 25-basis-point residual "
+                    "remaining after processor pricing and contractual partner allocations. "
+                    "The operator receives $200 monthly, plus an illustrative $20 retained "
+                    "gateway markup, or $2,640 annually before operating expenses. "
+                    "The $960,000 annual card volume belongs to the merchant's activity, "
+                    "not the operator's revenue. A $600 acquisition cost therefore pays "
+                    "back in 2.73 months against $220 monthly retained revenue, or 3.16 "
+                    "months after a separately budgeted $30 monthly servicing expense. "
+                    "For a technographic test, 200 domains producing 20 confirmed "
+                    "changes, six relevant conversations, three statement reviews, and "
+                    "one activated merchant yield a 0.5% domain-to-activation rate. "
+                    "At $500 total acquisition cost, that merchant's $190 illustrative "
+                    "monthly contribution supports a 2.63-month payback. These are "
+                    "planning assumptions, not measured campaign results. If software "
+                    "signals fail to produce payment-relevant conversations, replace "
+                    "the lane with accountant referrals or permissioned renewal "
+                    "reminders. Keep rejected signals in a labeled review queue so "
+                    "false positives improve the rules. Never rescue a weak lane by "
+                    "inventing renewal dates, exaggerating incumbent costs, or treating "
+                    "every marketing-tag change as processor dissatisfaction."
+                ),
+            ],
+            "table": {
+                "caption": "Mapped Plays 1–7: Public Signals, Retained Unit Math, and Evidence-Based Fallbacks",
+                "headers": [
+                    "Mapped sourcing play and acquisition surface",
+                    "Evidence to collect before commercial outreach",
+                    "Illustrative retained economics before operating expenses",
+                    "Risk fallback when the signal fails",
+                ],
+                "rows": [
+                    [
+                        "Play 1: saas_technographic_churn_pixel_scraping for payment-relevant vendor migration interception",
+                        "Compare weekly public scripts, passive DNS history, and dated hiring mentions",
+                        "One merchant yields $200 residual plus $20 gateway markup monthly",
+                        "Confirm vendor changes directly; replace weak signals with accountant introductions",
+                    ],
+                    [
+                        "Play 2: Newly licensed independent restaurants approaching their first opening",
+                        "Match municipal license records with confirmed opening dates and POS selection",
+                        "$60,000 monthly volume at 20 retained basis points yields $120",
+                        "Pause when opening slips; avoid purchasing hardware before sponsor acceptance",
+                    ],
+                    [
+                        "Play 3: Multi-location retailers adding stores under existing ownership",
+                        "Confirm new premises, centralized purchasing authority, and location-specific merchant accounts",
+                        "Three stores at $180 retained monthly each yield $540",
+                        "Pilot one location when integration consistency cannot yet be demonstrated",
+                    ],
+                    [
+                        "Play 4: Accountant referrals triggered by recurring settlement reconciliation problems",
+                        "Request permissioned statement samples showing deposit mismatches and unexplained deductions",
+                        "$250 monthly retained revenue less $50 referral allocation leaves $200",
+                        "Use written referral terms and never request shared accounting credentials",
+                    ],
+                    [
+                        "Play 5: POS service partners encountering payment-integration replacement projects",
+                        "Verify supported processor connections, terminal ownership, and partner support responsibilities",
+                        "Four activations at $150 retained monthly each generate $600",
+                        "Choose a supported connection instead of promising custom integration prematurely",
+                    ],
+                    [
+                        "Play 6: Confirmed processing anniversaries with reachable termination notice windows",
+                        "Obtain merchant-provided contract dates, renewal provisions, and termination cost schedules",
+                        "$220 monthly retained revenue supports $600 acquisition cost before servicing",
+                        "Schedule around notice deadlines instead of absorbing unpriced termination penalties",
+                    ],
+                    [
+                        "Play 7: Public checkout complaints indicating documented payment acceptance friction",
+                        "Confirm merchant ownership and reproduce only ordinary public checkout behavior",
+                        "$100,000 monthly eligible volume at 20 retained basis points yields $200",
+                        "Offer an authorized diagnostic when complaints concern fulfillment rather than payments",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Turn weak public signals into strong private discovery",
+                "body": "The advantage comes from asking a better operational question before competing on price.",
+                "items": [
+                    "Ask for the statement containing the annual processor fee as well as ordinary months; a clean monthly sample can conceal the real cost baseline.",
+                    "Compare statement legal names with storefront names before merging IRIS CRM records; one owner can operate several entities with different underwriting profiles.",
+                    "Pair each script-change alert with a screenshot or normalized source hash and observation interval; never label a weekly detection as an exact installation date.",
+                    "Visit ATM prospects during both peak trading and refill windows; counting patrons without observing cash access and service logistics creates expensive false positives.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Qualify the spread, the sponsor fit, and the venue before quoting",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use a 100-point qualification scorecard that sales and operations "
+                    "can reproduce. Allocate 25 points to documented retained economics, "
+                    "20 to contract timing and decision authority, 20 to sponsor and "
+                    "integration fit, 20 to payment or cash-demand evidence, and 15 to "
+                    "serviceability and referral potential. Require evidence for every "
+                    "awarded point: three statements, a contract excerpt, supported "
+                    "terminal specifications, a venue count, or a named owner meeting. "
+                    "Route scores of 75 or more to a proposal, 55–74 to evidence "
+                    "collection, and lower scores to dated nurture. Missing beneficial "
+                    "ownership information, unsupported business activity, or an unresolved "
+                    "exclusive ATM contract overrides a high score. These are internal "
+                    "routing thresholds, not industry conversion statistics. For merchant "
+                    "reviews, separate interchange, network assessments, processor markup, "
+                    "gateway charges, equipment rent, and incidental fees. Use the "
+                    "sponsor's actual Schedule A and residual contract to calculate "
+                    "retained revenue; a low advertised processor rate says little "
+                    "about the operator's payable share. Model referral allocations "
+                    "once, at the correct contractual layer. Require explicit treatment "
+                    "of reserves, reversals, minimums, and residual adjustments. Retain "
+                    "redacted working copies through an access-controlled intake channel "
+                    "rather than forwarding unmasked statements among contractors or "
+                    "storing cardholder information in lead notes."
+                ),
+                (
+                    "ATM qualification begins with contribution per completed surchargeable "
+                    "withdrawal and the physical route, not the machine's purchase price. "
+                    "For illustration, 350 monthly withdrawals at a $3 surcharge produce "
+                    "$1,050 collected surcharges. Subtract $350 of venue participation "
+                    "and $105 of processor allocations to obtain $595 retained monthly "
+                    "operator revenue under the assumed contract. Separately deduct "
+                    "$180 for communications, servicing, insurance, and cash logistics; "
+                    "the resulting monthly site contribution is $415 before central "
+                    "overhead and taxes. A $4,000 installed machine therefore takes "
+                    "9.64 months to recover from that contribution, excluding salvage "
+                    "value and separately funded vault cash. At 150 withdrawals, the "
+                    "same $1.70 retained amount per withdrawal yields $255 revenue "
+                    "and only $75 after the assumed fixed site costs. Establish the "
+                    "minimum withdrawal count before negotiating exclusivity. Verify "
+                    "power, connectivity, accessibility, secure placement, replenishment "
+                    "responsibility, incident response, and removal rights in the venue "
+                    "agreement. Vault cash is a working asset, not surcharge revenue "
+                    "or a machine expense. A liquor license or crowded event calendar "
+                    "is a prospecting signal, not withdrawal proof. When activity is "
+                    "unverified, negotiate a reversible pilot with a relocation clause "
+                    "instead of paying a large signing bonus or projecting peak-night "
+                    "traffic across every operating day."
+                ),
+                (
+                    "Treat high-risk MID orchestration as disclosed sponsor matching "
+                    "and operational continuity, never transaction laundering or routing "
+                    "around underwriting restrictions. Obtain the actual business model, "
+                    "fulfillment interval, refund policy, recurring-billing terms, historic "
+                    "disputes, and ownership information before requesting sponsor "
+                    "feedback. Do not promise acceptance, conceal merchant categories, "
+                    "split activity to evade monitoring, or represent a second MID "
+                    "as permission to ignore a first sponsor's conditions. A "
+                    "$200,000 monthly merchant at 30 retained basis points suggests "
+                    "$600 monthly revenue, but one support-intensive dispute pattern "
+                    "can consume the apparent premium. Obtain eligibility and pricing "
+                    "for Verifi RDR or Ethoca services through the relevant provider; "
+                    "coverage, alert charges, refunds, and duplicate handling affect "
+                    "the merchant's economics. MATCH-related checks and decisions "
+                    "belong with the acquiring sponsor and applicable network processes. "
+                    "For surcharge or dual-pricing proposals, validate credit-versus-debit "
+                    "classification, network requirements, applicable state law, "
+                    "receipts, and displayed prices before configuring terminals. "
+                    "Debit does not become surcharge-eligible because the customer "
+                    "selects a credit-style transaction flow. New York General Business "
+                    "Law section 518 requires attention to total displayed credit "
+                    "prices and surcharge limits. If a pricing program cannot be "
+                    "implemented correctly, propose ordinary transparent processing "
+                    "rather than relabeling an added fee as a discount."
+                ),
+            ],
+            "table": {
+                "caption": "Mapped Plays 8–12 and Two Qualification Controls for Sponsor-Ready Opportunities",
+                "headers": [
+                    "Mapped play or underwriting control point",
+                    "Specific evidence required for qualified status",
+                    "Illustrative economics or quantified decision rule",
+                    "Fallback protecting the acquisition budget and relationship",
+                ],
+                "rows": [
+                    [
+                        "Play 8: Service-neglected ATM venues with recurring equipment outage complaints",
+                        "Verify completed withdrawal history, current service obligations, and replacement rights",
+                        "350 withdrawals at $1.70 retained each produce $595 monthly revenue",
+                        "Offer a cancellable site test when existing usage records are unavailable",
+                    ],
+                    [
+                        "Play 9: Entertainment venues with expiring exclusive ATM placement agreements",
+                        "Review executed exclusivity terms, expiration dates, and physical machine access",
+                        "$595 retained revenue less $180 site expenses leaves $415 contribution",
+                        "Wait for lawful termination rather than installing competing equipment prematurely",
+                    ],
+                    [
+                        "Play 10: Seasonal event operators needing temporary authorized cash access",
+                        "Secure organizer permission, event attendance history, and safe replenishment arrangements",
+                        "800 withdrawals at $1.50 retained each yield $1,200 event revenue",
+                        "Subtract transport and staffing before accepting a short seasonal placement",
+                    ],
+                    [
+                        "Play 11: Disclosed higher-risk merchants seeking a suitable acquiring sponsor",
+                        "Collect fulfillment evidence, ownership details, dispute history, and sponsor eligibility",
+                        "$200,000 monthly eligible volume at 30 retained basis points yields $600",
+                        "Decline unsupported activity rather than hiding products or misclassifying transactions",
+                    ],
+                    [
+                        "Play 12: Small residual portfolios offered by retiring independent agents",
+                        "Reconcile twelve statements, assignment rights, attrition history, and merchant concentration",
+                        "$1,500 verified monthly residual at 20 times implies $30,000 price",
+                        "Tie consideration to transfer approval and verified retention rather than projections",
+                    ],
+                    [
+                        "Control point: Repeatable qualification score before issuing any commercial proposal",
+                        "Attach evidence for economics, authority, sponsor fit, demand, and serviceability",
+                        "Require 75 of 100 points plus all mandatory eligibility conditions",
+                        "Return incomplete cases to evidence collection with a dated owner task",
+                    ],
+                    [
+                        "Control point: Written pricing classification before configuring merchant acceptance devices",
+                        "Check debit handling, network rules, state pricing requirements, and receipt output",
+                        "Reject any quote whose retained spread disappears after required allocations",
+                        "Use standard pricing when a surcharge configuration cannot satisfy applicable requirements",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before a binding commitment",
+                "body": "A high prospect score cannot compensate for missing authority, unsupported economics, or an unserviceable location.",
+                "items": [
+                    "Verify the signer controls the merchant entity or venue placement rights, and inspect existing termination and exclusivity provisions before scheduling conversion.",
+                    "Reconcile the proposed retained spread to the executed Schedule A, referral terms, gateway charges, and actual sponsor residual calculation.",
+                    "Obtain sponsor confirmation for the disclosed business activity and supported integration; document unresolved ownership, dispute, and reserve questions.",
+                    "Test the applicable pricing display or ATM fee disclosure and customer election flow, then confirm service coverage, cash responsibility, and incident ownership.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run a permission-aware cadence that earns statements and site visits",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Run a 15-business-day sequence around one verifiable observation "
+                    "and one useful deliverable. On day one, send a short business "
+                    "email identifying the observed opening, migration, or service "
+                    "problem and offer a statement-level comparison or ATM site "
+                    "assessment. Do not claim affiliation with the incumbent processor "
+                    "or a card network. On day three, place a manual call to the "
+                    "published business line and ask who owns processing or venue "
+                    "operations. On day six, send a one-page example explaining "
+                    "which charges can change and which simply pass through. On "
+                    "day ten, contact an existing mutual partner only with an "
+                    "appropriate introduction arrangement. On day fifteen, close "
+                    "the loop with a clear next step or an invitation to decline. "
+                    "Maintain a suppression list across contractors and channels. "
+                    "Commercial email must follow 15 U.S.C. 7704, including truthful "
+                    "routing and subjects, applicable advertising identification, "
+                    "a valid postal address, and a working opt-out honored within "
+                    "ten business days. Review calling rules under 47 U.S.C. 227, "
+                    "implementing regulations, and applicable state requirements; "
+                    "do not assume a business contact removes every restriction. "
+                    "Avoid unsolicited automated marketing texts. The objective is "
+                    "permission to inspect a specific economic problem, not maximum "
+                    "message volume or a manufactured sense of urgency."
+                ),
+                (
+                    "Use a transparent cohort model rather than declaring that a "
+                    "particular close rate is normal. An illustrative first campaign "
+                    "starts with 300 raw records, removes 60 duplicates or ineligible "
+                    "businesses, and reaches 240 qualified contacts. Assume 72 "
+                    "two-way conversations, 36 permissioned discoveries, 18 complete "
+                    "statement reviews or ATM site assessments, ten proposals, six "
+                    "signed agreements, and five activations within 120 days. Those "
+                    "stage conversions are 80%, 30%, 50%, 50%, 55.6%, 60%, and "
+                    "83.3%; overall raw-to-signed conversion is 2%, while raw-to-live "
+                    "conversion is 1.67%. Six signed agreements and five live "
+                    "accounts are different outcomes and must remain separate. "
+                    "At $3,000 acquisition expense, cost per signed agreement is "
+                    "$500 and cost per activation is $600. If each activated "
+                    "merchant resembles the $220 monthly retained example, five "
+                    "accounts create $1,100 monthly revenue and $950 after the "
+                    "illustrative $30-per-account servicing cost. Acquisition "
+                    "payback is then 3.16 months after full activation, before "
+                    "central overhead and attrition. A ten-win goal requires "
+                    "approximately twice this successful cohort or better verified "
+                    "conversion, not simply twice as many follow-up messages. "
+                    "Measure performance by source lane, owner, and cohort date "
+                    "so a slow sponsor queue is not mistaken for ineffective "
+                    "prospecting."
+                ),
+                (
+                    "Build inbound assets around evidence a merchant can recognize. "
+                    "Publish a processor-statement field guide, a location-opening "
+                    "payment checklist, and an ATM venue contribution worksheet "
+                    "with clearly labeled assumptions. Offer a short review "
+                    "appointment rather than a generic quote form. Track source "
+                    "and appointment outcomes in IRIS CRM, while keeping uploaded "
+                    "statements in restricted storage with retention dates. "
+                    "Accountants, restaurant equipment installers, POS technicians, "
+                    "and commercial property managers are useful referral partners "
+                    "because they encounter operational change before a public "
+                    "directory does. Agree in writing who introduces whom, what "
+                    "information may be shared, how compensation is calculated, "
+                    "and who supports the account. A partner sending five "
+                    "introductions monthly, yielding three discoveries and one "
+                    "activation, can outperform 100 unqualified cold contacts. "
+                    "If that merchant generates $250 monthly before a $50 "
+                    "partner allocation, report $200 retained revenue where "
+                    "that matches the operator's contractual entitlement. Do "
+                    "not subtract the allocation again as though it remained "
+                    "inside recognized revenue. Search pages should target "
+                    "specific operating questions, such as reconciling deposits "
+                    "or planning ATM refill frequency, rather than unsupported "
+                    "savings percentages. Every inbound response should state "
+                    "the next evidence required, the review timetable, and "
+                    "the conditions under which the operator will decline "
+                    "to recommend a switch."
+                ),
+            ],
+            "table": {
+                "caption": "First-Cohort Conversion Benchmarks: Explicit Planning Assumptions, Not Market Statistics",
+                "headers": [
+                    "Funnel stage and illustrative retained count",
+                    "Conversion calculation against the preceding defined stage",
+                    "Evidence required before advancing the prospect record",
+                    "Corrective action when observed performance falls short",
+                ],
+                "rows": [
+                    [
+                        "Qualified contact pool contains 240 of 300 raw prospect records",
+                        "240 divided by 300 equals an 80% qualification rate",
+                        "Unique operating business, reachable role, documented signal, and source date",
+                        "Narrow the territory and remove stale registrations before buying more records",
+                    ],
+                    [
+                        "Two-way conversations reach 72 of 240 qualified business contacts",
+                        "72 divided by 240 equals a 30% conversation rate",
+                        "Decision-maker or authorized colleague acknowledges the relevant operational question",
+                        "Improve contact accuracy and the opening observation before extending the cadence",
+                    ],
+                    [
+                        "Permissioned discoveries reach 36 of 72 completed two-way conversations",
+                        "36 divided by 72 equals a 50% discovery rate",
+                        "Prospect agrees to discuss economics, timing, authority, and operating constraints",
+                        "Replace generic savings claims with a bounded statement or site assessment",
+                    ],
+                    [
+                        "Complete reviews reach 18 of 36 permissioned merchant discoveries",
+                        "18 divided by 36 equals a 50% evidence-completion rate",
+                        "Statements or site data support a reproducible retained contribution calculation",
+                        "Simplify secure intake and specify exactly which missing documents matter",
+                    ],
+                    [
+                        "Commercial proposals reach ten of eighteen completed economic reviews",
+                        "Ten divided by eighteen equals a 55.6% proposal rate",
+                        "Sponsor fit, signer authority, supported integration, and acceptable economics established",
+                        "Reject weak economics instead of increasing proposal volume through looser qualification",
+                    ],
+                    [
+                        "Signed agreements reach six of ten properly qualified commercial proposals",
+                        "Six divided by ten equals a 60% signing rate",
+                        "Authorized agreement executed with pricing, responsibilities, and material conditions documented",
+                        "Record the actual objection and resolve only substantiated commercial friction",
+                    ],
+                    [
+                        "Production activations reach five of six signed merchant agreements",
+                        "Five divided by six equals an 83.3% activation rate",
+                        "Live processing or ATM transactions verified with settlement and support ownership",
+                        "Separate sponsor delays from integration defects and assign dated remediation owners",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Create the first evidence-backed cohort",
+                    "action": "Build 300 raw records across two merchant verticals and one ATM territory.",
+                    "detail": "During weeks one and two, attach a public source, observation date, lane, owner role, and testable margin hypothesis; remove duplicates before outreach.",
+                },
+                {
+                    "step": 2,
+                    "title": "Earn permission and collect operating evidence",
+                    "action": "Run the 15-business-day cadence and request secure statement uploads or site access.",
+                    "detail": "During weeks two through six, record opt-outs, completed conversations, discovery consent, contract timing, and the specific documents still required.",
+                },
+                {
+                    "step": 3,
+                    "title": "Price only sponsor-ready opportunities",
+                    "action": "Score each review and reconcile proposed pricing to retained contractual economics.",
+                    "detail": "During weeks four through ten, confirm sponsor eligibility, existing obligations, integration support, service costs, and the customer-facing pricing or ATM disclosure flow.",
+                },
+                {
+                    "step": 4,
+                    "title": "Convert signed agreements into measured production",
+                    "action": "Activate three to ten accounts or placements and verify their first operating cycle.",
+                    "detail": "During weeks six through sixteen, compare signed, live, and first-paid counts; investigate settlement errors, residual differences, downtime, and acquisition payback separately.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Close the first wins without buying losses or overstating revenue",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Handle objections by identifying the evidence that would change "
+                    "the decision. When a merchant says the incumbent will match "
+                    "any rate, compare the same card mix, volume, contract period, "
+                    "equipment obligations, and service scope; a rate match that "
+                    "preserves the operator's minimum retained spread can be "
+                    "acceptable, while an uneconomic auction should end politely. "
+                    "When they fear downtime, propose a supported terminal or "
+                    "location pilot with documented reversal and settlement tests "
+                    "before broader migration. When they refuse to share statements, "
+                    "offer an explanation of the necessary fields and a redacted "
+                    "upload route; do not issue a precise savings claim without "
+                    "a baseline. When an ATM venue requests a guaranteed payment, "
+                    "calculate the minimum withdrawal volume under that guarantee "
+                    "and offer variable participation if demand evidence is weak. "
+                    "A $300 monthly minimum against $1.70 retained per withdrawal "
+                    "requires about 177 withdrawals before servicing expenses, "
+                    "assuming that minimum is incremental to the modeled allocations. "
+                    "If it replaces an existing allocation, recalculate rather "
+                    "than double counting. When customers question surcharge "
+                    "acceptance, test properly disclosed pricing and monitor "
+                    "complaints instead of promising universal acceptance. Record "
+                    "each objection as price, trust, timing, authority, integration, "
+                    "or demand uncertainty, then assign one measurable next "
+                    "action and a deadline."
+                ),
+                (
+                    "Keep the portfolio scorecard separate from deal-level illustrations. "
+                    "Formula v2.0 supplies $90,000 annual operator revenue at a "
+                    "30% net margin for $27,000 Conservative owner profit; "
+                    "$445,000 at 42.5% for $189,125 Base profit; and $800,000 "
+                    "at 55% for $440,000 Scaled profit. The corresponding total "
+                    "annual expense envelopes are $63,000, $255,875, and $360,000. "
+                    "Although the scorecard labels its top line gross revenue, "
+                    "its specified basis here is net retained ISO residuals, "
+                    "gateway markups, and ATM surcharges, excluding merchant "
+                    "settlement volume and ATM vault cash. Do not apply another "
+                    "retained-share haircut to those canonical totals. Document "
+                    "the principal-versus-agent assessment under ASC 606 for "
+                    "each actual contract rather than assuming every collected "
+                    "dollar is recognized revenue. Conservative and Base use "
+                    "1 FT + 3 C; Scaled uses 2 FT + 4 C. Contractor "
+                    "counts describe staffing structure, not full-time-equivalent "
+                    "workload. The stated $1,500–$10,000 monthly operating-cost "
+                    "range cannot substitute for the larger total expense "
+                    "envelopes implied by the mature scenarios. Separate recurring "
+                    "platform overhead from acquisition, labor, route costs, and "
+                    "other scenario expenses. Five illustrative merchants at "
+                    "$220 monthly produce only $13,200 annualized revenue, "
+                    "so first wins validate the acquisition engine without "
+                    "proving the Base portfolio exists."
+                ),
+                (
+                    "Define a win as a signed, eligible account or venue "
+                    "that reaches production and produces reconcilable economics. "
+                    "For merchants, check the first authorization, reversal, "
+                    "batch close, settlement deposit, and residual statement. "
+                    "For ATMs, verify processor connectivity, withdrawal completion, "
+                    "electronic journal access, customer fee notice, affirmative "
+                    "election, and cash reconciliation. Regulation E, 12 CFR "
+                    "1005.16, addresses ATM operator fee disclosure before "
+                    "the customer is committed; do not substitute an outdated "
+                    "physical-sign-only checklist for the actual electronic "
+                    "transaction flow. Evaluate the ATM operator's activities "
+                    "against 31 CFR 1010.100(ff); do not assume cash "
+                    "dispensing automatically creates, or universally avoids, "
+                    "money-services-business obligations. Use remote telemetry "
+                    "and vault-cash alerts to prevent avoidable outages, with "
+                    "named human responsibility for replenishment and incidents. "
+                    "Reconcile IRIS CRM residual imports to sponsor statements "
+                    "and flag missing accounts, changed splits, clawbacks, "
+                    "and unexplained adjustments. Ask satisfied clients for "
+                    "one relevant introduction only after the promised "
+                    "service works. Expand the strongest lane after two "
+                    "cohorts show acceptable acquisition payback and support "
+                    "load. Stop buying machines, leads, or portfolios when "
+                    "retention and reconciled contribution deteriorate. The "
+                    "repeatable advantage is verified retained spread with "
+                    "reliable delivery, not the number of signatures collected "
+                    "before the first residual payment arrives."
+                ),
+            ],
+            "table": {
+                "caption": "Objection Resolution and First-Payment Verification Without Margin Leakage",
+                "headers": [
+                    "Buyer objection or operating failure encountered",
+                    "Evidence-led response offered by the account owner",
+                    "Economic test before accepting the proposed remedy",
+                    "Specific fallback when the remedy remains uneconomic",
+                ],
+                "rows": [
+                    [
+                        "The incumbent processor promises to match every quoted pricing term",
+                        "Compare identical volumes, card mix, equipment obligations, and service responsibilities",
+                        "Recalculate retained spread using the complete Schedule A and partner allocation",
+                        "Leave a renewal reminder instead of winning an account with negative contribution",
+                    ],
+                    [
+                        "The merchant fears checkout disruption during the proposed processor migration",
+                        "Demonstrate a supported pilot with authorization, reversal, settlement, and reconciliation tests",
+                        "Include technician time and overlapping service charges in acquisition cost",
+                        "Keep the incumbent live until the supported transition plan is ready",
+                    ],
+                    [
+                        "The decision-maker will not circulate unredacted merchant processing statements",
+                        "Offer restricted upload access and explain the fields required for comparison",
+                        "Withhold precise savings estimates until the fee baseline can be reproduced",
+                        "Provide educational guidance and schedule a later permissioned document review",
+                    ],
+                    [
+                        "The ATM venue demands an additional $300 monthly guaranteed payment",
+                        "Request withdrawal history and show the guarantee's effect on site contribution",
+                        "At $1.70 per withdrawal, incremental guarantee coverage requires about 177 withdrawals",
+                        "Offer variable participation or decline when demand cannot cover all site costs",
+                    ],
+                    [
+                        "The merchant wants every debit payment included in a surcharge program",
+                        "Explain network debit restrictions and demonstrate correct tender classification behavior",
+                        "Reprice the proposal with only eligible transactions supporting the assumed spread",
+                        "Offer ordinary processing pricing rather than disguising an added debit fee",
+                    ],
+                    [
+                        "The first sponsor residual statement differs from the signed economic model",
+                        "Reconcile eligible volume, exclusions, allocations, timing, reversals, and contractual adjustments",
+                        "Calculate account-level retained revenue before assigning additional acquisition budget",
+                        "Open a documented sponsor inquiry and pause forecasts based on disputed amounts",
+                    ],
+                    [
+                        "The newly installed ATM repeatedly runs empty during peak venue hours",
+                        "Review telemetry, journal counts, replenishment ownership, and route response times",
+                        "Compare added cash-logistics cost with recoverable retained withdrawal revenue",
+                        "Change refill frequency or relocate under agreed terms when service remains uneconomic",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Source the change, verify the retained spread, and count the win only when the money reconciles.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Create a 300-record cohort with dated public evidence, one of twelve sourcing lanes, a decision-maker role, and a specific merchant or ATM contribution hypothesis.",
+        "Configure weekly public-script and authorized DNS observations, preserve detection intervals, and confirm payment relevance before using software changes in outreach.",
+        "Collect three merchant statements or documented venue usage, then score economics, authority, sponsor fit, demand, and serviceability against the 100-point rubric.",
+        "Run the 15-business-day outreach sequence with centralized suppression records, permissioned document intake, and separate raw, signed, live, and first-paid counts.",
+        "Reconcile every proposal to Schedule A or ATM allocation terms, verify applicable pricing and disclosure requirements, and document pilot, termination, and support responsibilities.",
+        "Activate the first three to ten wins within the planning window, reconcile initial settlements and residuals, and expand only the lanes with verified contribution and manageable service load.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Controls commercial-email headers, subject lines, applicable advertising identification, postal address disclosure, opt-out mechanisms, and timely suppression.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Requires channel-specific review before telephone or text campaigns, particularly where automated technology, prerecorded messages, or protected numbers are involved.",
+        },
+        {
+            "title": "47 CFR 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Provides implementing rules relevant to telemarketing calls, automated or prerecorded communications, consent, and applicable do-not-call procedures.",
+        },
+        {
+            "title": "12 CFR 1005.16 — Disclosures at automated teller machines",
+            "url": "https://www.ecfr.gov/current/title-12/section-1005.16",
+            "relevance": "Requires applicable ATM operator fee notice and disclosure of the amount before the consumer is committed, with the consumer electing to continue.",
+        },
+        {
+            "title": "31 CFR 1010.100(ff) — Money services business definition",
+            "url": "https://www.ecfr.gov/current/title-31/section-1010.100",
+            "relevance": "Supplies the activity-based definitions to assess ATM-related business models; the operator must evaluate actual services rather than infer status from machine ownership.",
+        },
+        {
+            "title": "15 U.S.C. 1693o-2 — Reasonable fees and rules for payment card transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1693o-2",
+            "relevance": "Establishes the statutory framework for debit interchange regulation, routing, and payment-card discount protections; it does not establish a universal right to surcharge debit.",
+        },
+        {
+            "title": "12 CFR 235.7 — Limitations on payment card restrictions",
+            "url": "https://www.ecfr.gov/current/title-12/section-235.7",
+            "relevance": "Addresses debit network exclusivity and routing restrictions that matter when assessing supported processing configurations and merchant routing choices.",
+        },
+        {
+            "title": "New York General Business Law section 518 — Credit card surcharge",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/518",
+            "relevance": "Requires attention to the total displayed credit-card price and applicable surcharge limits when implementing payment pricing for New York merchants.",
+        },
+    ],
+}

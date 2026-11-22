@@ -1,0 +1,525 @@
+{
+  "candidate_number": 31,
+  "slug": "uber-&-commercial-fleet-arbitrage",
+  "title": "Uber & Commercial Fleet Arbitrage",
+  "category": "Mobility & livery arbitrage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 23,
+    "profit_margin_potential": 23,
+    "team_efficiency": 18,
+    "startup_accessibility": 13,
+    "automation_potential": 12
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 89,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 86,
+    "high": 92
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 23/25. Uber Fleet Partner top-of-waterfall lease deductions, two-shift commercial Black SUV dispatch, and zero-owned-metal investor co-hosting eliminate gig-driver collection friction.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. Uber Fleet Partner top-of-waterfall lease deductions, two-shift commercial Black SUV dispatch, and zero-owned-metal investor co-hosting eliminate gig-driver collection friction.",
+    "team_efficiency": "Team Efficiency: 18/20. Uber Fleet Partner top-of-waterfall lease deductions, two-shift commercial Black SUV dispatch, and zero-owned-metal investor co-hosting eliminate gig-driver collection friction.",
+    "startup_accessibility": "Startup Accessibility: 13/15. Uber Fleet Partner top-of-waterfall lease deductions, two-shift commercial Black SUV dispatch, and zero-owned-metal investor co-hosting eliminate gig-driver collection friction.",
+    "automation_potential": "Automation Potential: 12/15. Uber Fleet Partner top-of-waterfall lease deductions, two-shift commercial Black SUV dispatch, and zero-owned-metal investor co-hosting eliminate gig-driver collection friction."
+  },
+  "economics": {
+    "gross_revenue_range": "$180,000–$1,200,000 USD annually",
+    "retained_revenue_range": "$99,000–$660,000 USD annually",
+    "retained_share": 0.55,
+    "net_profit_margin_range": "14–28%",
+    "retained_profit_margin_range": "25.45–50.91%",
+    "owner_net_profit_potential": "$25,200–$336,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$12,000–$65,000 USD",
+    "monthly_opex_range": "$2,500–$15,000 USD",
+    "time_to_first_deal": "1–3 months",
+    "automation_coverage": 0.78,
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross weekly driver lease, commercial dispatch and co-hosting billings (55% retained contribution after investor owner splits & pass-through fleet costs)",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 180000,
+      "annual_retained_revenue_usd": 99000,
+      "net_profit_margin_pct": 14,
+      "retained_profit_margin_pct": 25.45,
+      "annual_owner_net_profit_usd": 25200,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 690000.0,
+      "annual_retained_revenue_usd": 379500,
+      "net_profit_margin_pct": 21.0,
+      "retained_profit_margin_pct": 38.18,
+      "annual_owner_net_profit_usd": 144900,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1200000,
+      "annual_retained_revenue_usd": 660000,
+      "net_profit_margin_pct": 28,
+      "retained_profit_margin_pct": 50.91,
+      "annual_owner_net_profit_usd": 336000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Uber Fleet Partner waterfall splits",
+    "OBD-II GPS & starter-interrupt telematics",
+    "Automated MVR, toll & maintenance billing"
+  ],
+  "key_risks": [
+    "Commercial livery insurance spikes",
+    "Driver collision deductibles",
+    "Vehicle downtime & depreciation"
+  ],
+  "regulatory_notes": [
+    "Maintain continuous commercial livery / Period 1-2-3 rideshare coverage and airport TCP/TLC permits.",
+    "Observe state rental-car contract disclosures, toll pass-through rules and immobilizer safety laws."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "uber_fleet_partner_waterfall_split",
+      "track_id": "track_1",
+      "name": "Uber Fleet Partner Portal Top-of-Waterfall Vehicle Lease & Livery Split Arbitrage",
+      "mechanism": "Onboard eligible fleet vehicles and vetted drivers through Uber Fleet Partner Portal and configure authorized $425–$650 weekly lease charges and documented toll deductions ahead of driver payout where the local platform and law permit. The collection waterfall reduces manual billing but does not guarantee sufficient driver earnings, platform availability or permission for every deduction.",
+      "inputs": [
+        "Locally eligible fleet vehicles with commercial registration, inspection records and continuous applicable livery or rideshare insurance",
+        "Vetted drivers with valid licenses, required permits, MVR screening and signed lease and deduction authorizations",
+        "Approved Fleet Partner account with verified local payout-split capabilities and vehicle-level toll and maintenance records"
+      ],
+      "workflow": [
+        "1. Confirm local Fleet Partner eligibility, vehicle class requirements, insurance coverage and the legality of the proposed lease and payout structure.",
+        "2. Vet and onboard drivers, execute clear lease and toll disclosures and configure only supported, expressly authorized payout deductions.",
+        "3. Dispatch vehicles and reconcile trip earnings, weekly lease charges, toll evidence and driver balances against actual settlement reports.",
+        "4. Pay driver balances promptly, audit disputed deductions and schedule maintenance or vehicle reassignment based on utilization and safety data."
+      ],
+      "metrics": [
+        "Collected weekly lease revenue per active vehicle against the $425–$650 target",
+        "Authorized lease and toll collection rate relative to amounts actually due",
+        "Vehicle contribution after insurance, maintenance, depreciation and downtime"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Platform payout controls change or driver earnings cannot cover authorized lease deductions",
+          "trigger": "Fleet account restriction, unsupported local deduction feature or persistently low driver utilization",
+          "impact": "Collection shortfalls, driver disputes and negative vehicle contribution",
+          "detection_metric": "Weekly unpaid authorized charges and settlement reconciliation exceptions per active vehicle",
+          "fallback": "Suspend unsupported deductions, reconcile driver balances and use lawful disclosed invoicing or voluntary vehicle reassignment"
+        }
+      ]
+    },
+    {
+      "id": "commercial_tlc_tcp_plate_shift_dispatch",
+      "track_id": "track_1",
+      "name": "Commercial TLC/TCP Livery Plate & Two-Shift Black SUV Airport Dispatch Arbitrage",
+      "mechanism": "Operate commercially registered Black SUVs using the locally applicable TLC, TCP or other livery authority across two separately staffed 10-hour shifts. Combine eligible Uber Black demand with independently contracted corporate airport transfers to improve utilization without assuming guaranteed surge pricing or treating jurisdiction-specific permits as interchangeable.",
+      "inputs": [
+        "Eligible commercially registered Black SUVs with local livery authority, airport permissions and commercial insurance",
+        "Two qualified drivers per scheduled vehicle with verified credentials, rest compliance and documented shift handoffs",
+        "Authorized Uber Black access and independently sourced corporate transfer contracts with flight-aware dispatch"
+      ],
+      "workflow": [
+        "1. Verify local commercial operating authority, airport access, vehicle eligibility and coverage for both app-based and direct-booked trips.",
+        "2. Staff two separate 10-hour driver shifts subject to applicable duty and rest limits, leaving time for inspection, charging or fueling and cleaning.",
+        "3. Allocate eligible app demand and direct corporate airport bookings using flight status, deadhead distance and confirmed pickup commitments.",
+        "4. Reconcile fares, driver compensation and airport fees, inspect each shift handoff and adjust schedules to measured contribution and safety performance."
+      ],
+      "metrics": [
+        "Paid passenger hours as a percentage of available vehicle hours",
+        "Contribution per vehicle-day after driver pay, insurance, fuel, platform fees and maintenance",
+        "On-time airport pickup rate and deadhead miles per completed transfer"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Permit, insurance or driver-duty noncompliance interrupts commercial operations",
+          "trigger": "Expired credentials, uninsured trip category, prohibited airport pickup or fatigue-related scheduling exception",
+          "impact": "Fines, denied coverage, vehicle suspension and lost corporate bookings",
+          "detection_metric": "Upcoming credential expirations, uncovered-trip exceptions and duty-limit violations",
+          "fallback": "Remove the affected vehicle or driver from dispatch and fulfill bookings through independently verified licensed and insured backup operators"
+        }
+      ]
+    },
+    {
+      "id": "zero_metal_vehicle_cohost_consignment",
+      "track_id": "track_2",
+      "name": "Zero-Owned-Metal Investor Vehicle Co-Hosting & GPS Starter-Interrupt Consignment",
+      "mechanism": "Manage investor-titled SUVs, hybrids and cargo vans for a contractually defined 25%–35% gross management split without owning the vehicles. Use professionally installed GPS/OBD-II telematics and, where lawful, a hardwired starter-interrupt with explicit notice and safe stationary-only controls. Maintain coverage matched to actual commercial use, including rideshare Periods 1, 2 and 3 where applicable and separate rental or off-platform coverage when needed.",
+      "inputs": [
+        "Investor-titled vehicles with owner and lienholder permissions plus signed consignment agreements defining the gross management split",
+        "Use-specific commercial insurance verified for drivers, rentals, off-platform trips and applicable rideshare Periods 1, 2 and 3",
+        "Professionally installed GPS/OBD-II telematics and lawful starter-interrupt equipment with privacy consent and stationary-only safety controls"
+      ],
+      "workflow": [
+        "1. Inspect each investor vehicle, verify title and financing permissions and execute a management agreement allocating maintenance, claims and revenue responsibilities.",
+        "2. Bind use-specific coverage and install disclosed telematics with access controls; prohibit remote engine shutdown or any immobilization while moving.",
+        "3. Place vehicles only with authorized vetted drivers or eligible booking channels and monitor utilization, maintenance needs and permitted location data.",
+        "4. Reconcile gross receipts, pay investor balances and the agreed management split, and coordinate lawful recovery or servicing only under documented safe procedures."
+      ],
+      "metrics": [
+        "Earned management fees as a percentage of contractually defined gross vehicle receipts",
+        "Net management contribution per active investor-owned vehicle",
+        "Covered utilization days, unscheduled downtime and safety-control exceptions"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Coverage gaps or unsafe telematics use create uninsured liability",
+          "trigger": "Undeclared commercial use, an excluded driver or a starter-interrupt command without verified safe stationary conditions",
+          "impact": "Injury exposure, denied claims, investor losses and termination of management contracts",
+          "detection_metric": "Unverified coverage periods, unauthorized device access and rejected unsafe immobilization attempts",
+          "fallback": "Disable remote immobilization, pause affected placements and arrange insurer-approved service or lawful professional recovery after safety review"
+        }
+      ]
+    },
+    {
+      "id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "mechanism": "Ingest daily federal FMCSA Census, Licensing & Insurance (L&I), and SMS roadside-inspection violation feeds to intercept newly granted MC/DOT authorities (during the mandatory 21-day insurance-filing window) and fleets with fresh HOS/maintenance citations.",
+      "inputs": [
+        "FMCSA daily Licensing & Insurance (L&I) pending-authority feed",
+        "FMCSA Safety Measurement System (SMS) roadside violation & BASIC score logs",
+        "Commercial trucking insurance, factoring, & ELD compliance partner network"
+      ],
+      "workflow": [
+        "Poll daily FMCSA pending-application feeds to identify carriers that received a docket number but still need BOC-3 and BIPD insurance filings to go active",
+        "Monitor SMS inspection logs for fleets cited for ELD, hours-of-service, or maintenance violations requiring corrective action plans",
+        "Route carriers in real time to commercial truck insurance brokers ($500–$1,500 CPA/split), freight factoring desks, and compliance consultants"
+      ],
+      "metrics": [
+        "FMCSA filing-to-contact latency (minutes)",
+        "Pending-authority to bound-policy conversion %",
+        "Combined CPA from insurance, BOC-3, ELD, and factoring referrals"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+          "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+          "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+          "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+          "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels"
+        }
+      ]
+    },
+    {
+      "id": "google_maps_gbp_lead_gen_network",
+      "track_id": "track_2",
+      "name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "mechanism": "Capture high-margin Google Maps 3-Pack calls across tier-2/3 metros by partnering with real, licensed local tradespeople to co-verify legitimate physical office/shop locations, wiring call-tracking numbers and review-automation workflows to monetize excess lead capacity.",
+      "inputs": [
+        "Geo-grid rank tracker identifying low-review-count Map Pack gaps in $3k+ home/commercial verticals",
+        "Joint-venture co-verification agreements with real brick-and-mortar licensed contractors",
+        "Dynamic call routing (Ringba) + automated SMS post-job review velocity loop"
+      ],
+      "workflow": [
+        "Identify suburban and tier-2 metro sub-markets where top-3 Google Maps competitors have <40 reviews and weak category optimization",
+        "Sign a revenue-share or pay-per-call partnership with a real local contractor or commercial office tenant (never using fake UPS boxes or virtual coworking addresses)",
+        "Optimize GBP primary/secondary categories, service-area pages, and automated customer review requests to lock top-3 Map Pack placement and bill per qualified call"
+      ],
+      "metrics": [
+        "Local Geo-Grid Top-3 share of voice (%)",
+        "Qualified inbound Map Pack calls per location per month",
+        "Net revenue per location ($1,500–$6,000/mo) and partner retention"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+          "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+          "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+          "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+          "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages"
+        }
+      ]
+    },
+    {
+      "id": "rank_and_rent_pay_per_call_routing",
+      "track_id": "track_2",
+      "name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "mechanism": "Build and rank local high-ticket service hubs (foundation repair, water restoration, probate liquidation, commercial roofing) wired to dynamic call-tracking switches (Ringba / Twilio) that auto-bill local operators $75–$300 per inbound call lasting over 90 seconds.",
+      "inputs": [
+        "City + high-ticket emergency/specialty service domain portfolio",
+        "Ringba / Twilio dynamic number insertion (DNI) & IVR duration billing switch",
+        "Co-verified local contractor partner agreements with card-on-file auto-recharge"
+      ],
+      "workflow": [
+        "Launch fast programmatic local service pages and cost calculators for high-ticket, high-urgency verticals ($5,000+ average job ticket)",
+        "Partner with a licensed brick-and-mortar operator in each city for legitimate Google Business Profile co-verification while retaining ownership of the domain and tracking numbers",
+        "Route inbound prospect calls through Ringba with a 90-second duration threshold, automatically charging the partner's card on file per qualified call"
+      ],
+      "metrics": [
+        "Inbound calls per site per month & % of calls >90 seconds",
+        "Revenue per qualified call ($75–$300) and contractor retention rate",
+        "Portfolio gross margin (80–90% once ranked)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile suspension or contractor payment default",
+          "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+          "impact": "Loss of Map Pack call volume or uncollected call receivables",
+          "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+          "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets"
+        }
+      ]
+    },
+    {
+      "id": "free_llc_fintech_bounty_stacking",
+      "track_id": "track_1",
+      "name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "mechanism": "Offering a $0-service-fee LLC formation and business-launch concierge (borrower pays only mandatory state filing fees) that embeds a sequential post-formation 'Required Business Infrastructure Checklist' where every newly formed entity opens free business banking, corporate card, payroll, bookkeeping, and merchant accounts—yielding $600–$1,800+ in stacked B2B fintech CPA bounties per free formation.",
+      "inputs": [
+        "High-intent 'free LLC formation' and 'start a business in [State]' search, social, and creator traffic",
+        "Automated state SOS filing workflow, EIN retrieval assistant, and operating-agreement generator",
+        "Direct B2B partner/CPA agreements with neobank, corporate card, payroll, and registered-agent providers"
+      ],
+      "workflow": [
+        "Acquire first-time founders via a genuine $0-markup LLC formation funnel where the user pays only state statutory fees",
+        "Guide the founder through an automated EIN and corporate-resolution wizard immediately upon state filing submission",
+        "Present an integrated 1-click onboarding sequence for a free business checking account ($150–$400 CPA), corporate charge card ($200–$500 CPA), payroll/bookkeeping trial ($100–$300 CPA), and web/domain host ($100–$200 CPA)",
+        "Provide automated compliance reminders and annual report tracking to capture recurring Year-2 registered-agent renewals"
+      ],
+      "metrics": [
+        "Stacked fintech CPA bounty revenue ($) realized per 100 free LLC formations",
+        "Post-EIN bank-account funding conversion rate (%) within 14 days of formation",
+        "Net customer acquisition margin after paid search/creator traffic spend"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+          "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+          "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+          "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+          "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "platform_privilege_tier_account_arbitrage",
+      "track_id": "track_2",
+      "name": "High-Tier \"Local Guide / Autoconfirmed Editor / Top Hunter\" Authority Account Arbitrage",
+      "mechanism": "Cultivating free user accounts into high-privilege algorithmic trust tiers—such as Google Local Guides (Level 6–10), Wikipedia Autoconfirmed/Extended-Confirmed editors, Product Hunt top hunters, and G2/Capterra/Trustpilot verified reviewers—whose edits, map suggest-an-edit actions, category changes, and launches carry massive algorithmic weight and sell for high-ticket B2B retainers.",
+      "inputs": [
+        "Geo-matched Google Local Guide (Level 6+), aged Wikipedia, and aged Product Hunt / software-review accounts",
+        "Location-consistent EXIF metadata, mobile device telemetry, and verifiable third-party citation dossiers",
+        "B2B local-SEO, knowledge-graph, and SaaS launch client demand"
+      ],
+      "workflow": [
+        "Build sustained, legitimate contribution histories across local maps, encyclopedia entries, and software ecosystems to unlock elevated platform trust tiers",
+        "Use high-tier Local Guide accounts to submit rapid-approval GBP spam-name redressals, competitor duplicate merges, and category corrections for local-service clients",
+        "Execute policy-compliant, source-backed knowledge-graph updates and high-visibility Product Hunt/directory launches for B2B SaaS brands",
+        "Package these high-trust authority interventions as premium reputation, entity-SEO, and launch-management retainers ($2,500–$10,000/mo)"
+      ],
+      "metrics": [
+        "Platform edit/suggestion auto-approval rate (%) and time-to-live publication",
+        "Client local-pack rank lift or knowledge-panel entity resolution rate (%)",
+        "Retainer revenue per managed authority campaign ($)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Privilege-tier badge revocation or undisclosed paid-editing enforcement",
+          "trigger": "Submitting biased, unsourced promotional edits or executing bulk map edits outside the account's natural geographic radius",
+          "impact": "Demotion of account trust score and rollback of historical edits",
+          "detection_metric": "Edit acceptance/revert ratio (%) and strict geographic/topical consistency per account",
+          "fallback": "Submit only factually verifiable, secondary-source-backed edits and keep Local Guide accounts strictly locked to their native metropolitan areas"
+        }
+      ]
+    },
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Platform payout controls change or driver earnings cannot cover authorized lease deductions",
+      "trigger": "Fleet account restriction, unsupported local deduction feature or persistently low driver utilization",
+      "impact": "Collection shortfalls, driver disputes and negative vehicle contribution",
+      "detection_metric": "Weekly unpaid authorized charges and settlement reconciliation exceptions per active vehicle",
+      "fallback": "Suspend unsupported deductions, reconcile driver balances and use lawful disclosed invoicing or voluntary vehicle reassignment",
+      "play_id": "uber_fleet_partner_waterfall_split",
+      "play_name": "Uber Fleet Partner Portal Top-of-Waterfall Vehicle Lease & Livery Split Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Permit, insurance or driver-duty noncompliance interrupts commercial operations",
+      "trigger": "Expired credentials, uninsured trip category, prohibited airport pickup or fatigue-related scheduling exception",
+      "impact": "Fines, denied coverage, vehicle suspension and lost corporate bookings",
+      "detection_metric": "Upcoming credential expirations, uncovered-trip exceptions and duty-limit violations",
+      "fallback": "Remove the affected vehicle or driver from dispatch and fulfill bookings through independently verified licensed and insured backup operators",
+      "play_id": "commercial_tlc_tcp_plate_shift_dispatch",
+      "play_name": "Commercial TLC/TCP Livery Plate & Two-Shift Black SUV Airport Dispatch Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Coverage gaps or unsafe telematics use create uninsured liability",
+      "trigger": "Undeclared commercial use, an excluded driver or a starter-interrupt command without verified safe stationary conditions",
+      "impact": "Injury exposure, denied claims, investor losses and termination of management contracts",
+      "detection_metric": "Unverified coverage periods, unauthorized device access and rejected unsafe immobilization attempts",
+      "fallback": "Disable remote immobilization, pause affected placements and arrange insurer-approved service or lawful professional recovery after safety review",
+      "play_id": "zero_metal_vehicle_cohost_consignment",
+      "play_name": "Zero-Owned-Metal Investor Vehicle Co-Hosting & GPS Starter-Interrupt Consignment",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+      "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+      "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+      "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+      "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels",
+      "play_id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "play_name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+      "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+      "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+      "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+      "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages",
+      "play_id": "google_maps_gbp_lead_gen_network",
+      "play_name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Google Business Profile suspension or contractor payment default",
+      "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+      "impact": "Loss of Map Pack call volume or uncollected call receivables",
+      "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+      "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets",
+      "play_id": "rank_and_rent_pay_per_call_routing",
+      "play_name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+      "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+      "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+      "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+      "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent",
+      "play_id": "free_llc_fintech_bounty_stacking",
+      "play_name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Privilege-tier badge revocation or undisclosed paid-editing enforcement",
+      "trigger": "Submitting biased, unsourced promotional edits or executing bulk map edits outside the account's natural geographic radius",
+      "impact": "Demotion of account trust score and rollback of historical edits",
+      "detection_metric": "Edit acceptance/revert ratio (%) and strict geographic/topical consistency per account",
+      "fallback": "Submit only factually verifiable, secondary-source-backed edits and keep Local Guide accounts strictly locked to their native metropolitan areas",
+      "play_id": "platform_privilege_tier_account_arbitrage",
+      "play_name": "High-Tier \"Local Guide / Autoconfirmed Editor / Top Hunter\" Authority Account Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    }
+  ]
+}

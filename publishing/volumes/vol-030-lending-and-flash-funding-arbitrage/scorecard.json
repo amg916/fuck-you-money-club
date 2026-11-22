@@ -1,0 +1,689 @@
+{
+  "candidate_number": 30,
+  "slug": "lending-&-flash-funding-arbitrage",
+  "title": "Lending & Flash-Funding Arbitrage",
+  "category": "Specialty liquidity arbitrage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 24,
+    "team_efficiency": 20,
+    "startup_accessibility": 11,
+    "automation_potential": 13
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 93,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 90,
+    "high": 96
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 25/25. 24-to-72-hour escrow-locked transactional double-close funding and earnest-money Gator lending recycle capital rapidly with end-buyer cash verified in escrow.",
+    "profit_margin_potential": "Profit Margin Potential: 24/25. 24-to-72-hour escrow-locked transactional double-close funding and earnest-money Gator lending recycle capital rapidly with end-buyer cash verified in escrow.",
+    "team_efficiency": "Team Efficiency: 20/20. 24-to-72-hour escrow-locked transactional double-close funding and earnest-money Gator lending recycle capital rapidly with end-buyer cash verified in escrow.",
+    "startup_accessibility": "Startup Accessibility: 11/15. 24-to-72-hour escrow-locked transactional double-close funding and earnest-money Gator lending recycle capital rapidly with end-buyer cash verified in escrow.",
+    "automation_potential": "Automation Potential: 13/15. 24-to-72-hour escrow-locked transactional double-close funding and earnest-money Gator lending recycle capital rapidly with end-buyer cash verified in escrow."
+  },
+  "economics": {
+    "gross_revenue_range": "$120,000–$950,000 USD annually",
+    "retained_revenue_range": "$120,000–$950,000 USD annually",
+    "retained_share": 1.0,
+    "net_profit_margin_range": "30–55%",
+    "retained_profit_margin_range": "30–55%",
+    "owner_net_profit_potential": "$36,000–$522,500 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$25,000–$100,000 USD",
+    "monthly_opex_range": "$2,000–$12,000 USD",
+    "time_to_first_deal": "1–4 months",
+    "automation_coverage": 0.84,
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Earned transactional funding fees, EMD JV splits and origination points only; excludes principal wired through escrow",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 120000,
+      "annual_retained_revenue_usd": 120000,
+      "net_profit_margin_pct": 30,
+      "retained_profit_margin_pct": 30.0,
+      "annual_owner_net_profit_usd": 36000,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 535000.0,
+      "annual_retained_revenue_usd": 535000,
+      "net_profit_margin_pct": 42.5,
+      "retained_profit_margin_pct": 42.5,
+      "annual_owner_net_profit_usd": 227375,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 950000,
+      "annual_retained_revenue_usd": 950000,
+      "net_profit_margin_pct": 55,
+      "retained_profit_margin_pct": 55.0,
+      "annual_owner_net_profit_usd": 522500,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Title-escrow wire verification",
+    "Automated POF & underwriting intake",
+    "Escrow payoff ledger"
+  ],
+  "key_risks": [
+    "Title or escrow wire fraud",
+    "Dry-closing end-buyer fallout",
+    "State commercial-lending recharacterization"
+  ],
+  "regulatory_notes": [
+    "Verify state commercial-purpose lending exemptions, usury ceilings and escrow licensing rules.",
+    "Release funds strictly to bonded title/settlement agents after verifying unconditional end-buyer cash on deposit."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "transactional_double_close_flash_funding",
+      "track_id": "track_1",
+      "name": "24-to-72-Hour Escrow-Locked Transactional (\"Flash\") Double-Close Funding",
+      "mechanism": "Fund the A->B acquisition only after the title agent independently verifies cleared, unconditional end-buyer B->C funds in escrow and an enforceable closing waterfall. Target a 1.0%–2.5% earned funding fee per 1–3 day turn; closing delays, fraud and legal restrictions can impair returns or principal.",
+      "inputs": [
+        "Executed A->B and B->C purchase contracts, title commitment and independently verified settlement-agent credentials",
+        "Cleared end-buyer escrow funds, written disbursement conditions and a reconciled same-transaction payoff waterfall",
+        "Commercial-purpose funding agreement reviewed for applicable licensing, usury and escrow requirements"
+      ],
+      "workflow": [
+        "1. Underwrite both contracts, title exceptions, end-buyer closing conditions and the settlement agent's authority and applicable bonding or insurance.",
+        "2. Independently confirm end-buyer cleared funds and irrevocable disbursement instructions using a previously verified title-agent contact channel.",
+        "3. Wire A->B funding only to approved title escrow after all release conditions are satisfied and the closing sequence is documented.",
+        "4. Reconcile B->C settlement, recover principal and earned fees, and release capital for reuse only after cleared repayment is confirmed."
+      ],
+      "metrics": [
+        "Earned funding fees as a percentage of funded principal per completed turn",
+        "Median and maximum hours from funding disbursement to cleared repayment",
+        "Unrecovered principal and delayed-closing exposure as a percentage of outstanding funding"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Fraudulent wire instructions or conditional end-buyer funds leave the A->B advance unrepaid",
+          "trigger": "Last-minute beneficiary changes, failed independent callbacks or unresolved B->C release conditions",
+          "impact": "Loss of principal, prolonged escrow disputes and interruption of capital recycling",
+          "detection_metric": "Count of unresolved wire-verification exceptions and funded closings past contractual repayment deadlines",
+          "fallback": "Stop disbursement, independently reverify settlement instructions and obtain counsel-directed escrow recovery before further funding"
+        }
+      ]
+    },
+    {
+      "id": "earnest_money_gator_escrow_lending",
+      "track_id": "track_1",
+      "name": "Earnest-Money Deposit (\"Gator\") Escrow Lending & Joint-Venture Splits",
+      "mechanism": "Advance $2,500–$25,000 refundable-contingency earnest-money deposits directly to title escrow under documented JV or promissory protections, with security recorded or perfected where legally appropriate. Negotiate a 15%–30% share of an earned assignment fee or a lawful fixed return; refunds depend on contractual deadlines, valid contingency exercise and escrow release terms.",
+      "inputs": [
+        "Assignable purchase agreement with explicit refundable contingencies, notice procedures and deadline calendar",
+        "Verified title escrow account and executed JV or promissory documents with legally appropriate recorded or perfected protections",
+        "Borrower diligence, assignment economics and state-specific lending, brokerage, securities and usury review"
+      ],
+      "workflow": [
+        "1. Verify assignment rights, counterparty identity, refundable contingencies and the enforceability of the proposed JV or lending structure.",
+        "2. Execute repayment and profit-split documents, perfect any lawful security and transmit the deposit directly to verified title escrow.",
+        "3. Track contingency and assignment deadlines, require documented progress and deliver timely cancellation notices when authorized and necessary.",
+        "4. Reconcile the closing or refund statement, recover deposited principal and collect only the contractually earned fee or lawful return."
+      ],
+      "metrics": [
+        "Earned assignment-fee share or fixed return per completed deposit advance",
+        "Percentage of active deposits with verified unexpired refund rights and complete documentation",
+        "Deposit loss rate and median days from advance to cleared repayment"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "A supposedly refundable deposit becomes nonrefundable or disputed",
+          "trigger": "Missed contingency notice deadline, invalid cancellation or unauthorized contract amendment",
+          "impact": "Deposit forfeiture, delayed recovery and disputes over assignment proceeds",
+          "detection_metric": "Deposits approaching contingency expiry without documented assignment or cancellation instructions",
+          "fallback": "Freeze additional advances, seek timely authorized cancellation and pursue counsel-reviewed escrow release or contractual remedies"
+        }
+      ]
+    },
+    {
+      "id": "aged_shelf_corp_tradeline_credit_stacking",
+      "track_id": "track_1",
+      "name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "mechanism": "Compare reinstated entities and genuine business credit facilities for working-capital financing; entity age is not operating history, and promotional APR economics require accurate underwriting and repayment capacity.",
+      "inputs": [
+        "Entity filings, beneficial ownership, and liability searches",
+        "Verified operating financials and genuine supplier tradelines",
+        "Lender eligibility, promotional APR, fee, and guarantee terms"
+      ],
+      "workflow": [
+        "1. Audit the entity's ownership, tax liabilities, and reinstatement requirements",
+        "2. Disclose acquisition and actual operating history; establish only genuine paid supplier accounts",
+        "3. Compare lender-approved applications with full debt disclosure and consolidated exposure limits",
+        "4. Fund documented business expenses and repay before promotional expiry using cash-flow reserves"
+      ],
+      "metrics": [
+        "Effective borrowing cost including fees",
+        "Debt service coverage under post-promotion APR",
+        "Utilization and days to promotional expiry"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit withdrawal or unaffordable repricing",
+          "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+          "impact": "Account closure, accelerated repayment, and guarantee exposure",
+          "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+          "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending"
+        }
+      ]
+    },
+    {
+      "id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "track_id": "track_1",
+      "name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "mechanism": "Embedding a 'Free Automated Accounts Payable (AP) / Instant Vendor Settlement' platform inside high-volume B2B verticals (freight brokerage, construction general contracting, medical supply, property management, media agencies) that converts checks and ACH payables into single-use Visa/Mastercard Commercial Virtual Credit Cards (VCCs)—capturing 140–195 basis points (1.40%–1.95%) in uncapped commercial interchange rebates on hundreds of millions in third-party invoice volume.",
+      "inputs": [
+        "BaaS / Commercial Card Issuing bank partnership (Marqeta, Lithic, Stripe Issuing, Highnote, Cross River) on uncapped Visa/Mastercard Large-Ticket & Purchasing interchange tiers",
+        "ERP/accounting connector (QuickBooks, NetSuite, Sage, McLeod/TMW freight TMS) ingesting open vendor AP ledgers",
+        "Automated vendor-enablement call/email engine pitching 'Day-1 Instant Payment via Virtual Card vs. Net-45 Check/ACH'"
+      ],
+      "workflow": [
+        "Onboard mid-market companies with $20M–$250M/yr in fragmented vendor payables onto a $0-cost AP automation and working-capital portal",
+        "Cross-reference their vendor master list against Visa/Mastercard supplier-acceptance networks to flag vendors that already accept card payments",
+        "Offer remaining vendors immediate Day-1 invoice settlement via single-use emailed/API virtual card in exchange for waiving Net-30/Net-60 wait times",
+        "Earn 1.50%–1.95% gross interchange rebate from the issuing bank on every settled dollar, sharing 0.25%–0.50% with the corporate client while retaining 1.10%–1.45% net platform margin"
+      ],
+      "metrics": [
+        "Total annualized Gross Payment Volume (GPV $) converted from ACH/check to Virtual Card (target: 25–45% of total AP)",
+        "Net retained interchange spread in basis points (110–145 bps) after bank processor fees and client revenue share",
+        "Vendor card-acceptance retention rate (%) across repeat monthly invoices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+          "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+          "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+          "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+          "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "ucc1_expiration_refi_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "mechanism": "Monitor state Secretary of State UCC-1 financing statements and continuation filings to identify operating businesses 4–9 months into high-cost Merchant Cash Advances (MCAs) or equipment notes, triggering refinance and debt-consolidation live transfers.",
+      "inputs": [
+        "Daily state SOS UCC-1 initial, amendment, & termination bulk feeds",
+        "Secured-party lender dictionary (identifying MCA vs. bank/SBA filings)",
+        "Live-transfer commercial refinance & SBA consolidation desk"
+      ],
+      "workflow": [
+        "Classify daily UCC-1 filings by secured party to isolate businesses that took high-cost short-term working capital 120–240 days ago",
+        "Enrich business owner direct phone and email and score by industry revenue stability",
+        "Contact merchants during peak renewal/payoff windows to offer lower-rate term consolidation or equipment refinancing, monetizing via broker points or live-transfer fees"
+      ],
+      "metrics": [
+        "UCC-to-verified-decision-maker match rate (%)",
+        "Live-transfer qualification rate (%)",
+        "Origination commission / referral fee per funded refi"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+          "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+          "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+          "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+          "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures"
+        }
+      ]
+    },
+    {
+      "id": "mca_ucc_stacking_default_restructure_brokerage",
+      "track_id": "track_2",
+      "name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "mechanism": "Use UCC filing changes to identify businesses that may need cash-flow review and consensual MCA restructuring, with verified obligations and disclosed compensation rather than encouraging undisclosed stacking.",
+      "inputs": [
+        "Public UCC filings and termination records",
+        "Merchant-authorized contracts and cash-flow statements",
+        "Broker licensing rules and disclosed creditor compensation terms"
+      ],
+      "workflow": [
+        "1. Treat UCC changes as outreach signals, not proof of default, and obtain merchant authorization",
+        "2. Reconcile advances, liens, repayment pulls, covenants, and sustainable payment capacity",
+        "3. Disclose dual-sided fees and conflicts; use independent counsel where representation would conflict",
+        "4. Coordinate documented creditor-approved modifications and monitor actual payment relief"
+      ],
+      "metrics": [
+        "Net merchant payment relief after fees",
+        "Creditor-approved modification rate",
+        "Post-restructure missed-payment rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+          "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+          "impact": "Accelerated collections and broker liability",
+          "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+          "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel"
+        }
+      ]
+    },
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    },
+    {
+      "id": "public_filing_trigger_mail_arbitrage",
+      "track_id": "track_1",
+      "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+      "inputs": [
+        "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+        "County Recorder grant/warranty deed & mortgage recording dockets",
+        "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+      ],
+      "workflow": [
+        "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+        "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+        "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+      ],
+      "metrics": [
+        "Filing-to-mailbox latency (hours)",
+        "QR scan & intake conversion % per 1,000 mailers",
+        "Annualized LTV / net revenue per mailed piece"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+        }
+      ]
+    },
+    {
+      "id": "high_velocity_dm_outbound_systems",
+      "track_id": "track_2",
+      "name": "High-Velocity DM Outbound & Trigger Funnels",
+      "mechanism": "Replace blind cold mass-DM blasts (which die to PeerFloodError and silent Message Request graveyards) with high-velocity comment-to-DM triggers, hand-raiser reaction hooks, and multi-inbox warm signal routing.",
+      "inputs": [
+        "Short-form / community trigger posts ('Comment KEYWORD')",
+        "Signal-verified prospect handles",
+        "Automated DM qualification & booking bridge"
+      ],
+      "workflow": [
+        "Publish high-curiosity teardown or resource posts where prospects comment a trigger keyword or react to unlock a playbook or calculator",
+        "Deliver instant automated DM replies to warm hand-raisers (bypassing cold-DM filters because the user initiated interaction) or send contextual 1-to-1 DMs referencing an active public request",
+        "Qualify budget and timeline inside a 3-message DM micro-funnel and transition immediately to a booked call, checkout link, or owned SMS/email list"
+      ],
+      "metrics": [
+        "Trigger-comment to DM delivery rate",
+        "DM reply-to-qualified-conversation %",
+        "Revenue per 100 DM threads"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+          "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+          "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+          "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+          "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies"
+        }
+      ]
+    },
+    {
+      "id": "multi_inbox_free_workspace_outbound_clusters",
+      "track_id": "track_2",
+      "name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "mechanism": "Provisioning hundreds of isolated secondary domains across subsidized Microsoft 365 developer/partner tenants, Cloudflare Email Routing, and low-cost SMTP relays—sending strictly 15–25 plain-text emails per inbox per day across 300+ free/subsidized mailboxes to deliver 150,000+ monthly B2B cold emails into primary inboxes without paying $6–$12/seat retail Google Workspace pricing.",
+      "inputs": [
+        "Lookalike secondary domain portfolio with automated SPF, DKIM (2048-bit), DMARC (`p=quarantine`/`reject`), and custom tracking-free MX records",
+        "Subsidized M365 partner/developer tenants, Cloudflare Email Routing catch-alls, and distributed SMTP sending nodes",
+        "Automated peer-to-peer warmup network and master unibox reply-routing webhook"
+      ],
+      "workflow": [
+        "Provision 100–300 secondary sending domains and bind 2–3 mailboxes per domain via automated DNS and tenant scripts",
+        "Warm every mailbox for 14–21 days with realistic thread-depth conversations before introducing live outbound prospects",
+        "Cap daily outbound volume at <=20 zero-link, zero-tracking-pixel plain-text messages per mailbox per day to stay completely beneath ESP volume heuristics",
+        "Aggregate all prospect replies into a single unified AI-triaged inbox that books qualified B2B sales calls on pay-per-show or retainer terms"
+      ],
+      "metrics": [
+        "Primary-inbox placement rate (%) across Gmail and Microsoft 365 seed tests",
+        "All-in monthly infrastructure cost per 10,000 delivered plain-text emails ($)",
+        "Positive reply rate (%) and booked meetings per 1,000 prospects contacted"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+          "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+          "impact": "Tenant suspension or domain-level spam-folder routing",
+          "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+          "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap"
+        }
+      ]
+    },
+    {
+      "id": "free_llc_fintech_bounty_stacking",
+      "track_id": "track_1",
+      "name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "mechanism": "Offering a $0-service-fee LLC formation and business-launch concierge (borrower pays only mandatory state filing fees) that embeds a sequential post-formation 'Required Business Infrastructure Checklist' where every newly formed entity opens free business banking, corporate card, payroll, bookkeeping, and merchant accounts—yielding $600–$1,800+ in stacked B2B fintech CPA bounties per free formation.",
+      "inputs": [
+        "High-intent 'free LLC formation' and 'start a business in [State]' search, social, and creator traffic",
+        "Automated state SOS filing workflow, EIN retrieval assistant, and operating-agreement generator",
+        "Direct B2B partner/CPA agreements with neobank, corporate card, payroll, and registered-agent providers"
+      ],
+      "workflow": [
+        "Acquire first-time founders via a genuine $0-markup LLC formation funnel where the user pays only state statutory fees",
+        "Guide the founder through an automated EIN and corporate-resolution wizard immediately upon state filing submission",
+        "Present an integrated 1-click onboarding sequence for a free business checking account ($150–$400 CPA), corporate charge card ($200–$500 CPA), payroll/bookkeeping trial ($100–$300 CPA), and web/domain host ($100–$200 CPA)",
+        "Provide automated compliance reminders and annual report tracking to capture recurring Year-2 registered-agent renewals"
+      ],
+      "metrics": [
+        "Stacked fintech CPA bounty revenue ($) realized per 100 free LLC formations",
+        "Post-EIN bank-account funding conversion rate (%) within 14 days of formation",
+        "Net customer acquisition margin after paid search/creator traffic spend"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+          "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+          "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+          "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+          "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent"
+        }
+      ]
+    },
+    {
+      "id": "chapter11_trade_claim_convenience_class_rollup",
+      "track_id": "track_1",
+      "name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "mechanism": "Purchase documented small trade claims below risk-adjusted expected plan distributions, accounting for objections, assignment procedures, and plan rules that may prohibit claim splitting or aggregation benefits.",
+      "inputs": [
+        "Bankruptcy schedules E/F and claims register",
+        "Invoices, payment history, and assignment documents",
+        "Proposed plan classification and distribution waterfall"
+      ],
+      "workflow": [
+        "1. Reconcile scheduled trade creditors with filed claims and supporting invoices",
+        "2. Model recoveries under plan amendments, objections, setoffs, and convenience-class eligibility",
+        "3. Buy eligible claims through documented assignments and complete required transfer notices",
+        "4. Monitor objections and confirmation, then reconcile distributions to each acquired claim"
+      ],
+      "metrics": [
+        "Purchase discount to risk-adjusted recovery",
+        "Allowed claim value versus purchased face value",
+        "Realized return and days to distribution"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Claim disallowance or convenience-class exclusion",
+          "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+          "impact": "Reduced distribution or complete capital loss",
+          "detection_metric": "Objection rate and eligible allowed value per portfolio",
+          "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries"
+        }
+      ]
+    },
+    {
+      "id": "litigation_finance_mass_tort_docket_securitization",
+      "track_id": "track_1",
+      "name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "mechanism": "Pairing an Arizona Alternative Business Structure (ABS) or co-counsel law firm with an institutional litigation-finance credit facility to acquire, medically verify (via $6.50 HITECH patient-directed record requests), and package 1,000–25,000 retained mass-tort plaintiffs (PFAS, AFFF, Paraquat, NEC, rideshare assault, defective medical devices) at $1,200–$2,500 CAC—either flipping vetted case tranches to litigation-finance hedge funds at 2.5x–4x cost or holding for 35–40% global MDL settlement fee splits.",
+      "inputs": [
+        "Judicial Panel on Multidistrict Litigation (JPML) docket analytics, FDA FAERS adverse-event spikes, and EPA contaminant zip-code maps",
+        "Arizona ABS / co-counsel retainer infrastructure with e-sign intake and automated HITECH Act (45 CFR § 164.524) medical-record retrieval engine",
+        "Non-recourse litigation-finance warehouse credit facility and MDL leadership co-counsel placement contracts"
+      ],
+      "workflow": [
+        "Identify emerging MDL mass torts with clear causation biomarkers (specific ICD-10 diagnosis codes + geographic/product exposure proof) and deep-pocket corporate defendants",
+        "Run hyper-targeted CTV, paid social, and public-record outbound campaigns to sign injured claimants directly onto joint co-counsel retainer agreements",
+        "Execute automated HITECH patient-directed electronic medical record (EMR) pulls at the federal statutory cap (~$6.50/record) and use LLM clinical parsers to verify qualifying diagnosis and exposure dates within 72 hours",
+        "Securitize verified, deficiency-free case tranches into litigation-finance buyout facilities at $4,500–$9,000 per vetted retainer or hold on the balance sheet for $25,000–$80,000+ gross contingency fees at MDL settlement"
+      ],
+      "metrics": [
+        "All-in cost per medically verified, deficiency-free retained plaintiff ($1,200–$2,500)",
+        "HITECH medical-record retrieval turnaround time (hours) and clinical qualification pass rate (%)",
+        "Secondary docket tranche sale multiple (2.5x–4.0x CAC) or net MDL settlement IRR"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+          "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+          "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+          "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+          "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Fraudulent wire instructions or conditional end-buyer funds leave the A->B advance unrepaid",
+      "trigger": "Last-minute beneficiary changes, failed independent callbacks or unresolved B->C release conditions",
+      "impact": "Loss of principal, prolonged escrow disputes and interruption of capital recycling",
+      "detection_metric": "Count of unresolved wire-verification exceptions and funded closings past contractual repayment deadlines",
+      "fallback": "Stop disbursement, independently reverify settlement instructions and obtain counsel-directed escrow recovery before further funding",
+      "play_id": "transactional_double_close_flash_funding",
+      "play_name": "24-to-72-Hour Escrow-Locked Transactional (\"Flash\") Double-Close Funding",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "A supposedly refundable deposit becomes nonrefundable or disputed",
+      "trigger": "Missed contingency notice deadline, invalid cancellation or unauthorized contract amendment",
+      "impact": "Deposit forfeiture, delayed recovery and disputes over assignment proceeds",
+      "detection_metric": "Deposits approaching contingency expiry without documented assignment or cancellation instructions",
+      "fallback": "Freeze additional advances, seek timely authorized cancellation and pursue counsel-reviewed escrow release or contractual remedies",
+      "play_id": "earnest_money_gator_escrow_lending",
+      "play_name": "Earnest-Money Deposit (\"Gator\") Escrow Lending & Joint-Venture Splits",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Credit withdrawal or unaffordable repricing",
+      "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+      "impact": "Account closure, accelerated repayment, and guarantee exposure",
+      "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+      "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending",
+      "play_id": "aged_shelf_corp_tradeline_credit_stacking",
+      "play_name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+      "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+      "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+      "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+      "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases",
+      "play_id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "play_name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "TCPA automated-calling liability or state commercial-financing disclosure violations",
+      "trigger": "Robocalling cell phones without consent or quoting misleading APRs in states with commercial Truth-in-Lending laws (CA, NY, UT, VA)",
+      "impact": "Statutory TCPA demand letters or state DFPI regulatory enforcement",
+      "detection_metric": "100% DNC/litigator-scrub pass rate and statutory APR disclosure audit in regulated states",
+      "fallback": "Use direct mail, B2B work-email sequences, and manual human-dialed outreach paired with compliant state commercial financing disclosures",
+      "play_id": "ucc1_expiration_refi_trigger_arbitrage",
+      "play_name": "UCC-1 Filing, MCA Stacking & Maturity-Date Trigger Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Conflicted brokerage or prohibited stacking worsens default",
+      "trigger": "Hidden commissions, inaccurate balances, or new financing breaching existing contracts",
+      "impact": "Accelerated collections and broker liability",
+      "detection_metric": "Undisclosed fee exceptions and covenant breaches per engagement",
+      "fallback": "Stop placement, refund improper fees, and refer the merchant to independent licensed restructuring counsel",
+      "play_id": "mca_ucc_stacking_default_restructure_brokerage",
+      "play_name": "MCA UCC-1 Trigger Stacking & Dual-Sided Default-Restructure Brokerage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+      "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+      "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+      "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+      "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+      "play_id": "public_filing_trigger_mail_arbitrage",
+      "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+      "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+      "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+      "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+      "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies",
+      "play_id": "high_velocity_dm_outbound_systems",
+      "play_name": "High-Velocity DM Outbound & Trigger Funnels",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+      "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+      "impact": "Tenant suspension or domain-level spam-folder routing",
+      "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+      "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap",
+      "play_id": "multi_inbox_free_workspace_outbound_clusters",
+      "play_name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+      "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+      "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+      "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+      "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent",
+      "play_id": "free_llc_fintech_bounty_stacking",
+      "play_name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Claim disallowance or convenience-class exclusion",
+      "trigger": "Disputed invoices, setoff rights, or plan restrictions on purchased or split claims",
+      "impact": "Reduced distribution or complete capital loss",
+      "detection_metric": "Objection rate and eligible allowed value per portfolio",
+      "fallback": "Stop affected purchases, enforce documented seller recourse where available, and price only supported general-unsecured recoveries",
+      "play_id": "chapter11_trade_claim_convenience_class_rollup",
+      "play_name": "Chapter 11 Bankruptcy Schedule E/F Trade-Claim & Convenience-Class Rollups",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+      "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+      "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+      "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+      "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders",
+      "play_id": "litigation_finance_mass_tort_docket_securitization",
+      "play_name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "track_id": "track_1"
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "candidate_number": 34,
+  "slug": "nemt-&-medical-courier-dispatch-arbitrage",
+  "title": "NEMT & Medical Courier Dispatch Arbitrage",
+  "category": "Healthcare logistics brokerage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 24,
+    "profit_margin_potential": 24,
+    "team_efficiency": 18,
+    "startup_accessibility": 12,
+    "automation_potential": 12
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 90,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 87,
+    "high": 93
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 24/25. Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow.",
+    "profit_margin_potential": "Profit Margin Potential: 24/25. Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow.",
+    "team_efficiency": "Team Efficiency: 18/20. Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow.",
+    "startup_accessibility": "Startup Accessibility: 12/15. Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow.",
+    "automation_potential": "Automation Potential: 12/15. Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow."
+  },
+  "economics": {
+    "gross_revenue_range": "$250,000–$1,600,000 USD annually",
+    "retained_revenue_range": "$112,500–$720,000 USD annually",
+    "retained_share": 0.45,
+    "net_profit_margin_range": "12–24%",
+    "retained_profit_margin_range": "26.67–53.33%",
+    "owner_net_profit_potential": "$30,000–$384,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$15,000–$65,000 USD",
+    "monthly_opex_range": "$3,500–$18,000 USD",
+    "time_to_first_deal": "2–5 months",
+    "automation_coverage": 0.78,
+    "typical_team_size": {
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross contracted NEMT broker and medical courier billings (45% retained dispatch contribution after 1099 driver settlements)",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 250000,
+      "annual_retained_revenue_usd": 112500,
+      "net_profit_margin_pct": 12,
+      "retained_profit_margin_pct": 26.67,
+      "annual_owner_net_profit_usd": 30000,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 925000.0,
+      "annual_retained_revenue_usd": 416250,
+      "net_profit_margin_pct": 18.0,
+      "retained_profit_margin_pct": 40.0,
+      "annual_owner_net_profit_usd": 166500,
+      "full_time_including_owner": 2,
+      "contractors": 2,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1600000,
+      "annual_retained_revenue_usd": 720000,
+      "net_profit_margin_pct": 24,
+      "retained_profit_margin_pct": 53.33,
+      "annual_owner_net_profit_usd": 384000,
+      "full_time_including_owner": 3,
+      "contractors": 3,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "RouteGenie / MediRoutes GPS dispatch",
+    "837P EDI claim scrubbing & AR tracking",
+    "Barcode specimen chain-of-custody logs"
+  ],
+  "key_risks": [
+    "Medicaid broker Net-30/45 payment float",
+    "1099 driver misclassification exposure",
+    "Missed STAT pickup or trip-log audit clawbacks"
+  ],
+  "regulatory_notes": [
+    "Maintain HIPAA Business Associate Agreements, OSHA bloodborne-pathogen / DOT UN3373 specimen protocols and Medicaid provider credentialing.",
+    "Structure independent-contractor owner-operator agreements and GPS trip verification strictly within state labor and Medicaid rules."
+  ],
+  "track_ids": [
+    "track_2",
+    "track_1"
+  ],
+  "track_labels": [
+    "Grey-Zone Growth & Traffic Arbitrage",
+    "Asymmetric & Data-Arbitrage Plays"
+  ],
+  "plays": [
+    {
+      "id": "medicaid_nemt_tpa_subcontract_dispatch",
+      "track_id": "track_2",
+      "name": "State Medicaid NEMT Broker & STAT Medical Specimen Subcontract Dispatch Arbitrage",
+      "mechanism": "Obtain authorized recurring NEMT standing orders through brokers such as Modivcare, MTM or SafeRide and separately contract STAT specimen routes with appropriately certified clinical laboratories. Dispatch credentialed van and courier owner-operators through route-optimization software, retaining the contracted service spread only where subcontracting and worker classification are lawful. Apply HIPAA, specimen handling and laboratory requirements according to the actual service; CLIA certification of a laboratory does not credential a courier.",
+      "inputs": [
+        "Executed broker and laboratory contracts permitting subcontracting, with verified service authorizations and payment schedules",
+        "Credentialed and insured owner-operators with required vehicle inspections, screening and role-specific patient or specimen training",
+        "Secure dispatch, trip verification, specimen chain-of-custody and billing systems with applicable business associate agreements"
+      ],
+      "workflow": [
+        "1. Verify broker participation, provider credentials, subcontracting permissions and each transportation or laboratory service's documentation requirements.",
+        "2. Vet operators, determine lawful contractor or employee classification and train personnel for the assigned passenger or specimen service.",
+        "3. Dispatch only authorized trips and routes, separating patient transport and specimen handling workflows and capturing required GPS or barcode evidence.",
+        "4. Submit contract-appropriate invoices or claims only for documented completed services, reconcile operator settlements and audit denials and custody exceptions."
+      ],
+      "metrics": [
+        "On-time authorized trip and STAT delivery completion rate",
+        "Collected dispatch contribution after operator settlements and route operating costs",
+        "Claim or invoice denial rate, collection days and chain-of-custody exception rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Missing trip authorization or custody evidence invalidates service payment or compromises patient safety",
+          "trigger": "Expired credentials, unauthorized subcontracting, incomplete trip logs or a specimen handling breach",
+          "impact": "Payment clawbacks, contract suspension, privacy exposure and clinical delivery failures",
+          "detection_metric": "Percentage of services with unresolved authorization, credential, timing or custody exceptions",
+          "fallback": "Hold unsupported billing, dispatch credentialed backup operators, notify the appropriate contracting or clinical party and remediate records without fabrication"
+        }
+      ]
+    },
+    {
+      "id": "gsa_municipal_set_aside_facility_ghost_brokering",
+      "track_id": "track_1",
+      "name": "GSA & Municipal Set-Aside Pass-Through Facility Ghost-Brokering",
+      "mechanism": "Match eligible facility-service primes with disclosed qualified subcontractors and earn documented coordination fees; opaque pass-throughs and false set-aside eligibility are excluded.",
+      "inputs": [
+        "GSA and municipal facility solicitations",
+        "Prime eligibility and subcontracting-limit documentation",
+        "Licensed local vendor bids and capacity records"
+      ],
+      "workflow": [
+        "1. Screen solicitations for service scope, eligibility, and permitted subcontracting",
+        "2. Verify the prime performs required work and disclose broker and subcontractor roles",
+        "3. Submit priced delivery plans with genuine vendor commitments and required certifications",
+        "4. Track service acceptance, payroll obligations, and authorized fee payments against contract terms"
+      ],
+      "metrics": [
+        "Compliant bids accepted (%)",
+        "Net coordination margin per contract",
+        "On-time service acceptance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Set-aside eligibility protest or prohibited pass-through finding",
+          "trigger": "Inaccurate certification or subcontracting beyond contract limits",
+          "impact": "Termination, repayment demands, or debarment exposure",
+          "detection_metric": "Unverified certifications and subcontracted work share versus permitted limits",
+          "fallback": "Withdraw noncompliant bids and operate as a disclosed subcontractor on unrestricted work"
+        }
+      ]
+    },
+    {
+      "id": "government_rfp_subcontractor_brokerage",
+      "track_id": "track_1",
+      "name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "mechanism": "Scrape federal SAM.gov, state procurement portals, and municipal bid boards for low-bid-density service solicitations (janitorial, grounds, courier, translation, IT staffing), pairing compliant proposal automation with vetted local fulfillment subcontractors for a 15–30% management spread.",
+      "inputs": [
+        "SAM.gov Contract Opportunities API & state/municipal e-procurement feeds",
+        "Historical FPDS award pricing benchmark database",
+        "Vetted local subcontractor network with FAR limitation-on-subcontracting compliance"
+      ],
+      "workflow": [
+        "Screen daily federal, state, and municipal RFPs/RFQs with <3 historical bidders and clear unit-price schedules",
+        "Benchmark winning historical unit rates via FPDS/FOIA award records and lock in binding back-to-back quotes from insured local operators",
+        "Submit compliant bid packages and manage billing, insurance, and QA reporting while retaining a 15–30% prime-management or authorized broker spread"
+      ],
+      "metrics": [
+        "Bid-to-award win rate (%) on low-competition solicitations",
+        "Net prime-to-subcontractor gross margin (15–30% target)",
+        "Contract renewal / option-year retention rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+          "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+          "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+          "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+          "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6"
+        }
+      ]
+    },
+    {
+      "id": "hospital_lien_medical_receivables_arbitrage",
+      "track_id": "track_1",
+      "name": "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery",
+      "mechanism": "Partner with surgical centers, air/ground ambulance operators, and specialty clinics to ingest underpaid or denied commercial insurance claims, automating federal No Surprises Act IDR (Independent Dispute Resolution) and ERISA administrative appeals on a 20–35% contingency fee.",
+      "inputs": [
+        "Provider 835/837 EDI remittance & denial feeds (CO-45, CO-50, PR-96 codes)",
+        "Qualified Payment Amount (QPA) & regional FAIR Health benchmark database",
+        "Automated ERISA plan-document demand & Federal IDR portal filing workflow"
+      ],
+      "workflow": [
+        "Ingest denied and severely underpaid out-of-network commercial claims from specialty medical practices",
+        "Cross-reference payer remittances against statutory Open Negotiation windows (30 business days) under the No Surprises Act and ERISA SPD timelines",
+        "Generate evidence-backed arbitration briefs and ERISA appeals, collecting 20–35% of the incremental insurer payout above the initial remittance"
+      ],
+      "metrics": [
+        "Average incremental recovery per arbitrated claim ($1,500–$25,000+)",
+        "IDR / ERISA appeal win rate vs. initial payer offer (%)",
+        "Contingency revenue per practice partner per month"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Missed 30-day Open Negotiation / 4-day IDR initiation statutory deadlines or HIPAA breach",
+          "trigger": "Failing to file within strict federal No Surprises Act business-day windows or handling PHI without a signed Business Associate Agreement (BAA)",
+          "impact": "Permanent forfeiture of IDR arbitration eligibility on expired claims or HIPAA compliance penalties",
+          "detection_metric": "100% BAA execution before EDI ingestion and automated T-minus-5-day statutory deadline alerts",
+          "fallback": "Enforce HIPAA-compliant encrypted EDI pipelines with signed BAAs and fall back to longer-window ERISA administrative appeals when IDR windows have lapsed"
+        }
+      ]
+    },
+    {
+      "id": "out_of_network_dme_telehealth_billing_arbitrage",
+      "track_id": "track_1",
+      "name": "Out-of-Network DME, CGM & Diagnostic Reference Lab Billing Arbitrage",
+      "mechanism": "Operating a healthcare Management Services Organization (MSO) and performance patient-acquisition engine that pairs targeted paid-social symptom funnels with independent telehealth physician groups and licensed Durable Medical Equipment (DME) / reference lab suppliers—acquiring insured patients at $85–$220 CAC for high-margin HCPCS/CPT codes (Continuous Glucose Monitors, pneumatic compression devices, home sleep testing, custom orthotics) that reimburse $900–$3,500+ against $70–$220 hardware COGS.",
+      "inputs": [
+        "CMS DMEPOS Fee Schedule and commercial payer allowables matrix by HCPCS code and state MAC jurisdiction",
+        "Real-time insurance-eligibility and deductible verification API (Availity / Waystar / Stedi)",
+        "Compliant Management Services Organization (MSO) software + flat-fee marketing contracts with PECOS-enrolled DME suppliers and telehealth PCs"
+      ],
+      "workflow": [
+        "Run high-converting paid social and search funnels educating commercially insured and Medicare-eligible patients on covered at-home medical devices (CGMs, lymphedema pumps, sleep apnea monitors)",
+        "Perform instant real-time eligibility and remaining-deductible checks via EDI 270/271 before scheduling any clinical intake",
+        "Route qualified patients to an independent physician practice for a legitimate synchronous/asynchronous telehealth evaluation and medical-necessity chart documentation",
+        "Fulfill the prescribed hardware and recurring monthly supply refills through a licensed DME entity, collecting Recurring Rental / Resupply reimbursements every 30–90 days"
+      ],
+      "metrics": [
+        "Verified insurance-eligible patient CAC ($85–$220) vs. 12-month LTV including recurring resupply fills ($1,800–$4,500)",
+        "First-pass clean claim acceptance rate (%) and days sales outstanding (DSO)",
+        "Physician medical-necessity chart audit pass rate (100% LCD/NCD criteria match)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Payer post-payment audit recoupment or Anti-Kickback Statute (AKS) per-referral fee scrutiny",
+          "trigger": "Paying per-lead commissions tied to federal healthcare volume or submitting claims without complete Local Coverage Determination (LCD) chart notes",
+          "impact": "MAC prepayment review hold or clawback of reimbursed claims",
+          "detection_metric": "100% automated LCD clinical-criteria checklist validation before claim EDI 837P submission and strict flat-fee MSO billing",
+          "fallback": "Structure all marketing and software agreements strictly under Safe-Harbor Personal Services / MSO flat fair-market-value retainers, prioritize commercial payers and recurring CGM resupply, and enforce third-party clinical chart review"
+        }
+      ]
+    },
+    {
+      "id": "wotc_hourly_payroll_tax_credit_contingency_engine",
+      "track_id": "track_1",
+      "name": "Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine",
+      "mechanism": "Automate employer-authorized WOTC screening and separately substantiate Section 41 research credits, earning outcome-linked service fees only where permitted; program authorization, qualifying activities, wage coordination, and professional fee restrictions govern each claim.",
+      "inputs": [
+        "Consented hiring records, Form 8850 responses, and payroll hours",
+        "Research project evidence and qualified expense ledgers",
+        "State workforce certification procedures and tax-year credit and fee rules"
+      ],
+      "workflow": [
+        "1. Confirm WOTC authorization for each hire date and complete required prescreening by the job-offer date",
+        "2. Submit Form 8850 and required supporting forms within the applicable 28-day deadline and track state certification and qualifying hours",
+        "3. Separately document Section 41 qualifying research and expenses, reconciling wage overlap and applicable deduction adjustments with a tax professional",
+        "4. Obtain employer and preparer approval before filing, retain audit support, and collect permitted fees without guaranteeing credits"
+      ],
+      "metrics": [
+        "Timely WOTC certification submission rate",
+        "Substantiated credits realized by the employer",
+        "Net permitted service fees after review and filing costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit denial or impermissible contingent-fee arrangement",
+          "trigger": "Expired program authority, late certification, unsupported research expenses, or restricted practitioner compensation",
+          "impact": "Reduced credits, amended returns, penalties, and fee repayment exposure",
+          "detection_metric": "Deadline exceptions, certification denials, and unsupported expense share",
+          "fallback": "Exclude unsupported claims and use compliant fixed-fee payroll and research-documentation services under independent tax review"
+        }
+      ]
+    },
+    {
+      "id": "google_maps_gbp_lead_gen_network",
+      "track_id": "track_2",
+      "name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "mechanism": "Capture high-margin Google Maps 3-Pack calls across tier-2/3 metros by partnering with real, licensed local tradespeople to co-verify legitimate physical office/shop locations, wiring call-tracking numbers and review-automation workflows to monetize excess lead capacity.",
+      "inputs": [
+        "Geo-grid rank tracker identifying low-review-count Map Pack gaps in $3k+ home/commercial verticals",
+        "Joint-venture co-verification agreements with real brick-and-mortar licensed contractors",
+        "Dynamic call routing (Ringba) + automated SMS post-job review velocity loop"
+      ],
+      "workflow": [
+        "Identify suburban and tier-2 metro sub-markets where top-3 Google Maps competitors have <40 reviews and weak category optimization",
+        "Sign a revenue-share or pay-per-call partnership with a real local contractor or commercial office tenant (never using fake UPS boxes or virtual coworking addresses)",
+        "Optimize GBP primary/secondary categories, service-area pages, and automated customer review requests to lock top-3 Map Pack placement and bill per qualified call"
+      ],
+      "metrics": [
+        "Local Geo-Grid Top-3 share of voice (%)",
+        "Qualified inbound Map Pack calls per location per month",
+        "Net revenue per location ($1,500–$6,000/mo) and partner retention"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+          "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+          "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+          "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+          "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages"
+        }
+      ]
+    },
+    {
+      "id": "rank_and_rent_pay_per_call_routing",
+      "track_id": "track_2",
+      "name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "mechanism": "Build and rank local high-ticket service hubs (foundation repair, water restoration, probate liquidation, commercial roofing) wired to dynamic call-tracking switches (Ringba / Twilio) that auto-bill local operators $75–$300 per inbound call lasting over 90 seconds.",
+      "inputs": [
+        "City + high-ticket emergency/specialty service domain portfolio",
+        "Ringba / Twilio dynamic number insertion (DNI) & IVR duration billing switch",
+        "Co-verified local contractor partner agreements with card-on-file auto-recharge"
+      ],
+      "workflow": [
+        "Launch fast programmatic local service pages and cost calculators for high-ticket, high-urgency verticals ($5,000+ average job ticket)",
+        "Partner with a licensed brick-and-mortar operator in each city for legitimate Google Business Profile co-verification while retaining ownership of the domain and tracking numbers",
+        "Route inbound prospect calls through Ringba with a 90-second duration threshold, automatically charging the partner's card on file per qualified call"
+      ],
+      "metrics": [
+        "Inbound calls per site per month & % of calls >90 seconds",
+        "Revenue per qualified call ($75–$300) and contractor retention rate",
+        "Portfolio gross margin (80–90% once ranked)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Google Business Profile suspension or contractor payment default",
+          "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+          "impact": "Loss of Map Pack call volume or uncollected call receivables",
+          "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+          "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets"
+        }
+      ]
+    },
+    {
+      "id": "multi_inbox_free_workspace_outbound_clusters",
+      "track_id": "track_2",
+      "name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "mechanism": "Provisioning hundreds of isolated secondary domains across subsidized Microsoft 365 developer/partner tenants, Cloudflare Email Routing, and low-cost SMTP relays—sending strictly 15–25 plain-text emails per inbox per day across 300+ free/subsidized mailboxes to deliver 150,000+ monthly B2B cold emails into primary inboxes without paying $6–$12/seat retail Google Workspace pricing.",
+      "inputs": [
+        "Lookalike secondary domain portfolio with automated SPF, DKIM (2048-bit), DMARC (`p=quarantine`/`reject`), and custom tracking-free MX records",
+        "Subsidized M365 partner/developer tenants, Cloudflare Email Routing catch-alls, and distributed SMTP sending nodes",
+        "Automated peer-to-peer warmup network and master unibox reply-routing webhook"
+      ],
+      "workflow": [
+        "Provision 100–300 secondary sending domains and bind 2–3 mailboxes per domain via automated DNS and tenant scripts",
+        "Warm every mailbox for 14–21 days with realistic thread-depth conversations before introducing live outbound prospects",
+        "Cap daily outbound volume at <=20 zero-link, zero-tracking-pixel plain-text messages per mailbox per day to stay completely beneath ESP volume heuristics",
+        "Aggregate all prospect replies into a single unified AI-triaged inbox that books qualified B2B sales calls on pay-per-show or retainer terms"
+      ],
+      "metrics": [
+        "Primary-inbox placement rate (%) across Gmail and Microsoft 365 seed tests",
+        "All-in monthly infrastructure cost per 10,000 delivered plain-text emails ($)",
+        "Positive reply rate (%) and booked meetings per 1,000 prospects contacted"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+          "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+          "impact": "Tenant suspension or domain-level spam-folder routing",
+          "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+          "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "failure_mode": "Missing trip authorization or custody evidence invalidates service payment or compromises patient safety",
+      "trigger": "Expired credentials, unauthorized subcontracting, incomplete trip logs or a specimen handling breach",
+      "impact": "Payment clawbacks, contract suspension, privacy exposure and clinical delivery failures",
+      "detection_metric": "Percentage of services with unresolved authorization, credential, timing or custody exceptions",
+      "fallback": "Hold unsupported billing, dispatch credentialed backup operators, notify the appropriate contracting or clinical party and remediate records without fabrication",
+      "play_id": "medicaid_nemt_tpa_subcontract_dispatch",
+      "play_name": "State Medicaid NEMT Broker & STAT Medical Specimen Subcontract Dispatch Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Set-aside eligibility protest or prohibited pass-through finding",
+      "trigger": "Inaccurate certification or subcontracting beyond contract limits",
+      "impact": "Termination, repayment demands, or debarment exposure",
+      "detection_metric": "Unverified certifications and subcontracted work share versus permitted limits",
+      "fallback": "Withdraw noncompliant bids and operate as a disclosed subcontractor on unrestricted work",
+      "play_id": "gsa_municipal_set_aside_facility_ghost_brokering",
+      "play_name": "GSA & Municipal Set-Aside Pass-Through Facility Ghost-Brokering",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FAR 52.219-14 (Limitations on Subcontracting) violation or illegal pass-through scheme",
+      "trigger": "Bidding small-business set-aside contracts and subcontracting 100% of the work to non-similarly-situated entities without performing required prime share",
+      "impact": "Contract termination for default, False Claims Act liability, or SAM.gov debarment",
+      "detection_metric": "Subcontracted labor-cost percentage strictly within FAR 52.219-14 limits (<=50% for services unless partnering with similarly situated small businesses)",
+      "fallback": "Bid unrestricted commercial/municipal contracts without set-aside caps, or team exclusively with 'similarly situated entities' under 13 CFR § 125.6",
+      "play_id": "government_rfp_subcontractor_brokerage",
+      "play_name": "SAM.gov / Municipal RFP Scraping & Prime-Subcontractor Spread Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Missed 30-day Open Negotiation / 4-day IDR initiation statutory deadlines or HIPAA breach",
+      "trigger": "Failing to file within strict federal No Surprises Act business-day windows or handling PHI without a signed Business Associate Agreement (BAA)",
+      "impact": "Permanent forfeiture of IDR arbitration eligibility on expired claims or HIPAA compliance penalties",
+      "detection_metric": "100% BAA execution before EDI ingestion and automated T-minus-5-day statutory deadline alerts",
+      "fallback": "Enforce HIPAA-compliant encrypted EDI pipelines with signed BAAs and fall back to longer-window ERISA administrative appeals when IDR windows have lapsed",
+      "play_id": "hospital_lien_medical_receivables_arbitrage",
+      "play_name": "Out-of-Network Medical Claim & ERISA Appeal Contingency Recovery",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Payer post-payment audit recoupment or Anti-Kickback Statute (AKS) per-referral fee scrutiny",
+      "trigger": "Paying per-lead commissions tied to federal healthcare volume or submitting claims without complete Local Coverage Determination (LCD) chart notes",
+      "impact": "MAC prepayment review hold or clawback of reimbursed claims",
+      "detection_metric": "100% automated LCD clinical-criteria checklist validation before claim EDI 837P submission and strict flat-fee MSO billing",
+      "fallback": "Structure all marketing and software agreements strictly under Safe-Harbor Personal Services / MSO flat fair-market-value retainers, prioritize commercial payers and recurring CGM resupply, and enforce third-party clinical chart review",
+      "play_id": "out_of_network_dme_telehealth_billing_arbitrage",
+      "play_name": "Out-of-Network DME, CGM & Diagnostic Reference Lab Billing Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Credit denial or impermissible contingent-fee arrangement",
+      "trigger": "Expired program authority, late certification, unsupported research expenses, or restricted practitioner compensation",
+      "impact": "Reduced credits, amended returns, penalties, and fee repayment exposure",
+      "detection_metric": "Deadline exceptions, certification denials, and unsupported expense share",
+      "fallback": "Exclude unsupported claims and use compliant fixed-fee payroll and research-documentation services under independent tax review",
+      "play_id": "wotc_hourly_payroll_tax_credit_contingency_engine",
+      "play_name": "Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Google Business Profile video-verification failure or network-wide account suspension",
+      "trigger": "Creating fake storefront listings at UPS stores, virtual offices, or residential addresses without signage/licensing",
+      "impact": "Immediate GBP suspension and loss of all accumulated reviews and Map Pack calls",
+      "detection_metric": "100% physical signage, utility bill, and state contractor license verification readiness per profile",
+      "fallback": "Only launch GBP profiles backed by a real partner's physical shop/yard capable of passing live video verification, and pair every listing with organic city rank-and-rent pages",
+      "play_id": "google_maps_gbp_lead_gen_network",
+      "play_name": "Multi-Location Google Business Profile (GBP) Local-Pack Grid Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Google Business Profile suspension or contractor payment default",
+      "trigger": "Registering fake Google Maps pins at UPS stores/virtual offices or delivering calls before collecting prepaid credit balances",
+      "impact": "Loss of Map Pack call volume or uncollected call receivables",
+      "detection_metric": "Organic-vs-Maps call split and prepaid Stripe wallet balance per partner",
+      "fallback": "Anchor traffic in organic city/calculator pages (immune to GBP suspension), co-verify Maps only with real partner physical addresses, and enforce prepaid auto-refill call wallets",
+      "play_id": "rank_and_rent_pay_per_call_routing",
+      "play_name": "Rank-and-Rent Digital Real Estate & Pay-Per-Call Routing",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+      "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+      "impact": "Tenant suspension or domain-level spam-folder routing",
+      "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+      "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap",
+      "play_id": "multi_inbox_free_workspace_outbound_clusters",
+      "play_name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "track_id": "track_2"
+    }
+  ]
+}

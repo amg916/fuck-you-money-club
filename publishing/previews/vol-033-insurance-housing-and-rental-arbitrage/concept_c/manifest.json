@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-033-insurance-housing-and-rental-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1920701,
+      "sha256": "37b6cd9e937d69cd60b0a3b3f35e960ac61a9dae4ef38579c29432f40ea7cf24"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2496044,
+      "sha256": "dd19710691333ebb5bf7ed596541dde7cca13373bf4951f8d0a169a860cb9d65"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 548245,
+      "sha256": "a528d1cf10f2e77f83110cd10e3c91efafa0110a28cef579e46d0a831942a4cf"
+    },
+    "book.epub": {
+      "bytes": 262974,
+      "sha256": "cfa89edeaebb70d1e21a0378339f16f5c2b11d2d9ba6b00bc3c0696310288541"
+    },
+    "art/cover.svg": {
+      "bytes": 4377,
+      "sha256": "a66aca11752048b10588902cbeea9e66f1e3dc0def7271869548457d5f3afbfd"
+    },
+    "art/scorecard.svg": {
+      "bytes": 53408,
+      "sha256": "c1c76da824e2377e065307a0a23d80b11537f8c71106c8c80c72a4cb58b87d1c"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11646,
+      "sha256": "1ec36185a7b56c7314b902f907a0a784d72e7fe33a85c761f491c4bac0f161c0"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8001,
+      "sha256": "27aee2f1fd4a71dea1c3fef86cee9be2114f4a95b6c23fcb236e2272f134d8b6"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12631,
+      "sha256": "68accfc819845e2a31ad09defa1d7b56efe67d03f73dc9c833db126976a1750c"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9698,
+      "sha256": "13f567eb60415811ef4d182505a9c46d4e72b0e9a24de0cd9c0891c52f7d151f"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9902,
+      "sha256": "2e870f0f14a06f3c6f9ee82569ebaca64bb6964a5d52160efba3ebbdac914661"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13073,
+      "sha256": "bfb62dd1d20da3a6180466db403ec96085fd2ba033287685aaf96fe7fb5d5817"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8780,
+      "sha256": "4042a1a25db27991468e756717f5013b77dfc5ee10589fb7b31a78dda4d71e25"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8906,
+      "sha256": "94254b96404590b8b6f9e57d05fa0c6adbf0905d25d0c553330d6f496b793edc"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-035-subject-to-and-wraparound-note-arbitrage",
+  "volume_slug": "vol-035-subject-to-and-wraparound-note-arbitrage",
+  "volume_number": 35,
+  "site_ui": {
+    "cover": [
+      "SUBJECT-TO",
+      "& WRAP",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "DISCLOSE THE DEBT. UNDERWRITE THE BUYER.",
+      "SERVICE EVERY PAYMENT."
+    ],
+    "lead": "Subject-To Acquisitions, RMLO-Underwritten Wrap Mortgages & Serviced Performing-Note Spreads with Explicit Debt Risk Controls",
+    "summary": "Evaluate existing loan terms, due-on-sale exposure, seller liability, and buyer repayment capacity before structuring counsel-reviewed acquisitions and wraps with independent servicing and payment reserves.",
+    "chapters": [
+      "Subject-to acquisitions vs wrap note structures",
+      "Existing lenders, sellers & buyer obligations",
+      "Payment spreads, amortization & reserve math",
+      "Title review, servicing & closing costs",
+      "Due-on-sale calls, defaults & insurance gaps",
+      "Seller sourcing & informed risk disclosures",
+      "Acquisition diligence & counsel-led closings",
+      "RMLO underwriting & ability-to-repay review",
+      "Mortgage licensing & consumer credit rules",
+      "Third-party servicing & underlying loan audits",
+      "Note portfolio controls & workout planning",
+      "First 30-day acquisition-screening sprint"
+    ],
+    "flow": [
+      [
+        "SCREEN",
+        "Review loan terms, title & seller goals"
+      ],
+      [
+        "DISCLOSE",
+        "Explain seller liability & acceleration risk"
+      ],
+      [
+        "UNDERWRITE",
+        "Verify buyer capacity with an RMLO"
+      ],
+      [
+        "CLOSE",
+        "Execute counsel-reviewed documents"
+      ],
+      [
+        "SERVICE",
+        "Track wrap & underlying loan payments"
+      ],
+      [
+        "MONITOR",
+        "Audit reserves, insurance & defaults"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "SUBJECT-TO & WRAPAROUND NOTE ARBITRAGE",
+  "subtitle": "The Complete Playbook for Subject-To & Wraparound Note Arbitrage: $100,000–$850,000 USD in Annual Operator Revenue, a 1 FT + 3 C (4 People) Core Pod, and a Six-Person Scale Plan",
+  "chapter_count": 12,
+  "total_word_count": 77689,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 90,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:26:00Z"
+}

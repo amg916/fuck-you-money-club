@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-vehicle-to-settlement-workflow",
+      "chart_type": "process_flow",
+      "title": "Control the Vehicle-to-Cash Chain",
+      "subtitle": "Five operating steps for investor vehicles, qualified drivers, and reconciled collections.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The asset-light model assumes documented owner authority and platform acceptance of each vehicle and arrangement. Gross operator billings mean driver leases, dispatch, and co-hosting charges; passenger trip GMV and investor vehicle values remain outside this revenue measure.",
+      "caption": "A top-of-waterfall lease is a contractual collection priority, not an automatic platform capability. Use Uber fleet settlement features only where the account supports the documented split; otherwise reconcile authorized collections separately.",
+      "stages": [
+        {
+          "label": "Secure vehicle authority",
+          "value": "Document ownership and permitted commercial use before listing",
+          "numeric_value": 1.0,
+          "detail": "Capture VIN, title or lease authority, lender restrictions, owner settlement terms, and responsibility for depreciation. Reject vehicles whose financing or insurance excludes the intended rental, livery, or rideshare activity."
+        },
+        {
+          "label": "Qualify driver and operation",
+          "value": "Match driver credentials to vehicle and service jurisdiction",
+          "numeric_value": 2.0,
+          "detail": "Verify applicable licenses, platform eligibility, MVR authorization, inspection dates, airport access, and policy endorsements. Treat personal use, app-on waiting, accepted trips, and passenger carriage as distinct exposure states."
+        },
+        {
+          "label": "Execute handover and collection",
+          "value": "Record condition and activate expressly authorized payment instructions",
+          "numeric_value": 3.0,
+          "detail": "Photograph condition, record odometer and fuel, explain deductibles and toll charges, and obtain the required payment authorization. Keep refundable security deposits in a liability ledger rather than recording them as sales."
+        },
+        {
+          "label": "Monitor service and exceptions",
+          "value": "Convert telematics exceptions into scheduled human operating decisions",
+          "numeric_value": 4.0,
+          "detail": "Use OBD-II GPS, diagnostic alerts, and maintenance mileage to schedule service. Route collision, overdue-payment, and vehicle-location exceptions to a named operator. Never remotely interrupt a moving or occupied vehicle."
+        },
+        {
+          "label": "Close weekly settlements",
+          "value": "Reconcile billed charges, collected cash, and owner distributions",
+          "numeric_value": 5.0,
+          "detail": "Match Uber settlement exports, authorized ACH receipts, toll statements, repair invoices, and owner splits to vehicle-level ledgers. Age failed collections separately and reconcile retained contribution before calculating profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-driver-qualification-cohort",
+      "chart_type": "funnel",
+      "title": "From Driver Inquiry to Settled Vehicle Week",
+      "subtitle": "One nested 100-inquiry cohort; every later stage is a subset of the preceding stage.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative counts describe a single prospect cohort, not verified acquisition performance or annual revenue capacity. Stage counts are 100, 60, 36, 18, and 12; total conversion is 12%. The first settled week can occur after day 30.",
+      "caption": "Track unique applicants rather than form submissions. Record a dated exclusion reason at each transition so insurance ineligibility, missing credentials, and payment failures do not disappear inside one blended conversion percentage.",
+      "stages": [
+        {
+          "label": "Inbound inquiries",
+          "value": "100 unique applicants enter the dated source cohort",
+          "numeric_value": 100.0,
+          "detail": "Deduplicate telephone numbers and applicant records in the CRM. Record service area, desired vehicle class, work schedule, and acquisition channel before screening."
+        },
+        {
+          "label": "Operating fit established",
+          "value": "60 applicants meet the initial jurisdiction and schedule criteria",
+          "numeric_value": 60.0,
+          "detail": "Retain 60% of inquiries after checking intended service, license category, platform status, weekly availability, and published insurer eligibility requirements."
+        },
+        {
+          "label": "Documents and screening complete",
+          "value": "36 applicants complete the authorized evidence collection process",
+          "numeric_value": 36.0,
+          "detail": "Retain 60% of the prior cohort after identity, license, MVR, and insurer review. Establish the permissible purpose under 15 U.S.C. 1681b before ordering a consumer report."
+        },
+        {
+          "label": "Vehicle offer accepted",
+          "value": "18 applicants accept documented vehicle and collection terms",
+          "numeric_value": 18.0,
+          "detail": "Retain 50% of screened applicants after disclosing weekly charges, deposits, deductible allocation, mileage terms, toll administration, and service downtime procedures."
+        },
+        {
+          "label": "First settled week completed",
+          "value": "12 drivers complete handover and produce reconciled cleared collections",
+          "numeric_value": 12.0,
+          "detail": "Retain two-thirds of accepted offers only after coverage activation, vehicle inspection, completed handover, and cleared first-week collections. An executed contract alone does not qualify as a settled vehicle week."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-contribution-waterfall",
+      "chart_type": "waterfall",
+      "title": "The $690,000 Base-Case Waterfall",
+      "subtitle": "$379,500 retained contribution becomes $144,900 owner profit after operator expenses.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "All amounts are annual USD. Bars 1, 3, and 6 are absolute totals or subtotals; bars 2, 4, and 5 are signed deductions. Subtotals must reset the plotted running balance rather than being added again. The $180,000 and $54,600 expense categories are illustrative allocations of the canonical $234,600 residual operator expense requirement, not separately supplied estimates.",
+      "caption": "$690,000 - $310,500 = $379,500; $379,500 - $180,000 - $54,600 = $144,900. Owner profit equals 21.0% of gross billings and 38.18% of retained contribution. Apply the supplied 55% ASC 606 net-presentation convention; actual principal-versus-agent presentation follows the contracts and control analysis.",
+      "stages": [
+        {
+          "label": "Gross operator billings",
+          "value": "$690,000 annual lease, dispatch, and co-hosting charges",
+          "numeric_value": 690000.0,
+          "detail": "Opening total: $57,500 average monthly gross billings. Exclude underlying passenger fares, vehicle purchase values, refundable deposits, and investor capital from this operator billing measure."
+        },
+        {
+          "label": "Owner splits and pass-through costs",
+          "value": "Subtract $310,500 distributed or passed through under contracts",
+          "numeric_value": -310500.0,
+          "detail": "Deduction: 45% of gross billings leaves the operator under the canonical retained-share model. Reconcile owner distributions and pass-through fleet costs individually; do not deduct these same costs again below retained contribution."
+        },
+        {
+          "label": "Retained contribution subtotal",
+          "value": "$379,500 remains under the supplied 55% retained-share convention",
+          "numeric_value": 379500.0,
+          "detail": "Absolute subtotal: $31,625 average monthly retained contribution. This is the supplied net-presentation revenue basis, not owner profit and not a separate increment added to the running balance."
+        },
+        {
+          "label": "Recurring operator operating costs",
+          "value": "Subtract $180,000 for the modeled recurring operating cost envelope",
+          "numeric_value": -180000.0,
+          "detail": "Deduction: $15,000 monthly covers the modeled operator labor, contractor support, software, administration, and operator-borne recurring costs. Include only costs outside the preceding owner and pass-through deduction."
+        },
+        {
+          "label": "Depreciation and uninsured collision expense",
+          "value": "Subtract $54,600 in separately modeled operator-borne expense",
+          "numeric_value": -54600.0,
+          "detail": "Deduction: $4,550 monthly equivalent represents recognized depreciation where the operator bears it and uninsured collision expense. Investor-borne depreciation stays with the investor; cash transferred into a reserve is not itself expense."
+        },
+        {
+          "label": "Annual owner profit total",
+          "value": "$144,900 equals 21.0% of gross operator billings",
+          "numeric_value": 144900.0,
+          "detail": "Closing total: $12,075 monthly equivalent and 38.18% of $379,500 retained contribution. Preserve the scorecard owner-profit definition; this figure is not a statement of after-personal-tax distributions or unrestricted cash."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-retained-yield-bars",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Retention, Not Passenger Fare Volume",
+      "subtitle": "Five illustrative sub-niches measured as retained dollars per $100 of operator billings.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Each bar represents $100 of gross operator billings before operator overhead. Equal billing weights across yields of $60, $50, $65, $45, and $55 produce the canonical 55% blended retained share. These are illustrative contract economics, not observed market yields or separate scorecard forecasts.",
+      "caption": "Collection rails affect settlement speed, fees, and reversals; they do not create the underlying yield. Maintain separate contract, payment-fee, and failed-collection fields. The canonical scenarios retain 55% regardless of this illustrative niche mix.",
+      "stages": [
+        {
+          "label": "Weekly rideshare driver leases",
+          "value": "$60 retained per $100 billed through authorized ACH collections",
+          "numeric_value": 60.0,
+          "detail": "Illustrative $40 owner and pass-through allocation leaves $60 before operator overhead. Reconcile scheduled lease collections to cleared cash; an ACH initiation does not establish final payment."
+        },
+        {
+          "label": "Licensed Black SUV shift dispatch",
+          "value": "$50 retained per $100 billed through reconciled commercial settlements",
+          "numeric_value": 50.0,
+          "detail": "Illustrative $50 owner and vehicle-service allocation leaves $50 before overhead. Measure operator dispatch billings rather than all passenger fares; airport waiting and empty repositioning can destroy shift contribution."
+        },
+        {
+          "label": "Investor vehicle co-hosting",
+          "value": "$65 retained per $100 of gross co-hosting billings",
+          "numeric_value": 65.0,
+          "detail": "Illustrative $35 contractually payable owner and pass-through allocation leaves $65. Where the operator bills only a management fee in practice, reassess the billing denominator instead of importing investor receipts."
+        },
+        {
+          "label": "Short-duration replacement vehicles",
+          "value": "$45 retained per $100 billed through documented short-term rentals",
+          "numeric_value": 45.0,
+          "detail": "Illustrative $55 owner and pass-through allocation leaves $45 before overhead. Delivery labor, cleaning, charge reversals, and idle days require separate tracking; deposits remain liabilities until properly applied."
+        },
+        {
+          "label": "Commercial sedan driver leases",
+          "value": "$55 retained per $100 billed through scheduled business collections",
+          "numeric_value": 55.0,
+          "detail": "Illustrative $45 owner and pass-through allocation matches the canonical blend. Attach toll evidence to each permitted charge and distinguish recurring rent from reimbursements and separately disclosed administration fees."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-statutory-risk-tree",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Vehicle Release",
+      "subtitle": "A sequential decision path: every affirmative result advances; every failed check holds release.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The four nodes are sequential predicates, not numerical risk scores. Numeric values indicate reading order. California and New York City are concrete jurisdiction examples; apply the actual operating jurisdiction, service category, and airport rules.",
+      "caption": "Release only after all four evidence sets are complete. Correct missing authority, coverage, screening, or contract terms before handover; a platform account does not replace carrier authority, insurer acceptance, or airport permission.",
+      "stages": [
+        {
+          "label": "Coverage matches every use state",
+          "value": "Yes: advance; no: hold release until endorsements are verified",
+          "numeric_value": 1.0,
+          "detail": "Map off-app rental use and rideshare Periods 1, 2, and 3 to actual policy language and named insureds. California Public Utilities Code section 5433 governs specified TNC coverage periods; commercial livery use needs its own applicable coverage analysis."
+        },
+        {
+          "label": "Authority matches service and location",
+          "value": "Yes: advance; no: remove the prohibited operating assignment",
+          "numeric_value": 2.0,
+          "detail": "Check California charter-party authority under Public Utilities Code section 5371 where applicable, or NYC TLC driver, vehicle, and base requirements for the relevant service. Verify airport permissions separately; TCP and TLC credentials are not nationwide substitutes."
+        },
+        {
+          "label": "Screening has a documented lawful basis",
+          "value": "Yes: advance; no: stop report ordering and driver assignment",
+          "numeric_value": 3.0,
+          "detail": "Establish a permissible consumer-report purpose under 15 U.S.C. 1681b and protect motor-vehicle information under 18 U.S.C. 2721. Use employment-specific disclosure and pre-adverse procedures when applicable; apply 15 U.S.C. 1681m adverse-action notices as required."
+        },
+        {
+          "label": "Contract and immobilizer controls are safe",
+          "value": "Yes: release vehicle; no: correct terms or disable remote immobilization",
+          "numeric_value": 4.0,
+          "detail": "Use enacted state UCC Article 2A and applicable rental statutes to review lease disclosures, toll fees, and remedies. Validate state immobilizer restrictions and insurer terms; permit no remote engine shutdown, and require verified stationary, unoccupied status plus human review for any permitted starter inhibition."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Four Seats at Base; Six at Scale",
+      "subtitle": "One accountable fleet lead coordinates three contractors before adding two distinct expansion seats.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time seat; C means contractor seat. Conservative and Base use 1 FT + 3 C, four people total. Scaled uses 2 FT + 4 C, six people total. Each node represents one person; the last two nodes activate only in the Scaled configuration. Seat labels do not determine worker classification.",
+      "caption": "Conservative: $180,000 gross, $99,000 retained, $25,200 profit at 14% gross margin and 25.45% retained margin. Base: $690,000 gross, $379,500 retained, $144,900 profit at 21.0% and 38.18%. Scaled: $1,200,000 gross, $660,000 retained, $336,000 profit at 28% and 50.91%. Scaled economics require the six-person pod.",
+      "stages": [
+        {
+          "label": "Fleet principal — base FT",
+          "value": "One full-time owner leads contracts, cash, and exception decisions",
+          "numeric_value": 1.0,
+          "detail": "Own vehicle acceptance, insurer relationships, investor terms, weekly contribution review, and incident escalation. Approve settlement corrections against source evidence rather than allowing dispatch to rewrite owner allocations."
+        },
+        {
+          "label": "Dispatch coordinator — base contractor",
+          "value": "One contractor coordinates assignments, handovers, and driver communication",
+          "numeric_value": 1.0,
+          "detail": "Maintain the vehicle availability board, collect signed handover records, route platform issues, and confirm service interruptions. Escalate coverage and permit exceptions instead of assigning around them."
+        },
+        {
+          "label": "Maintenance coordinator — base contractor",
+          "value": "One contractor schedules inspections, repairs, and downtime recovery",
+          "numeric_value": 1.0,
+          "detail": "Review OBD-II alerts, mileage intervals, tire condition, repair estimates, and return-to-service evidence. Keep maintenance availability separate from paid utilization so idle vehicles remain visible."
+        },
+        {
+          "label": "Settlement specialist — base contractor",
+          "value": "One contractor reconciles billing, tolls, and investor statements",
+          "numeric_value": 1.0,
+          "detail": "Match platform exports, bank receipts, owner splits, repair invoices, and toll evidence. Produce aged receivables and deposit-liability schedules; the fleet principal reviews adjustments and payment releases."
+        },
+        {
+          "label": "Operations manager — scaled FT",
+          "value": "Add one full-time manager only in the six-person configuration",
+          "numeric_value": 1.0,
+          "detail": "Take daily dispatch supervision and service recovery from the principal. Use documented workload, incident response, and contribution capacity to justify the seat rather than hiring against gross passenger fare volume."
+        },
+        {
+          "label": "Claims and onboarding specialist — scaled contractor",
+          "value": "Add one contractor for screening administration and incident documentation",
+          "numeric_value": 1.0,
+          "detail": "Assemble authorized screening records, renewal evidence, collision photographs, insurer submissions, and recovery tracking. Keep report access restricted and separate claims documentation from settlement payment authority."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Deploy $12,000–$65,000 Without Buying a Fleet",
+      "subtitle": "Four capital buckets; the rendered example totals $35,000.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are USD allocations for one $35,000 startup stack. Low-envelope allocations total $12,000; high-envelope allocations total $65,000. Endpoint allocations are coordinated budgets, not independently selectable cost ranges. This model assumes investor-supplied vehicles and excludes vehicle acquisitions.",
+      "caption": "Example: $10,000 + $5,000 + $8,000 + $12,000 = $35,000. Low envelope: $4,000 + $1,500 + $2,500 + $4,000 = $12,000. High envelope: $20,000 + $8,000 + $12,000 + $25,000 = $65,000. Startup cash, refundable deposits, and operating expense are different ledger categories.",
+      "stages": [
+        {
+          "label": "Insurance and authority funding",
+          "value": "$10,000 example allocation for coverage activation and operating credentials",
+          "numeric_value": 10000.0,
+          "detail": "Allocate $4,000 in the low envelope and $20,000 in the high envelope for required insurance deposits, initial premiums, inspections, and applicable authority fees. Obtain actual quotes before accepting vehicle commitments."
+        },
+        {
+          "label": "Telematics and collection infrastructure",
+          "value": "$5,000 example allocation for installed monitoring and billing setup",
+          "numeric_value": 5000.0,
+          "detail": "Allocate $1,500 low and $8,000 high for OBD-II devices, GPS installation, secure account setup, collection integration, and settlement templates. Treat later subscriptions as operating costs rather than repeatedly charging them to startup capital."
+        },
+        {
+          "label": "Contracts and vehicle onboarding",
+          "value": "$8,000 example allocation for documented vehicle and driver activation",
+          "numeric_value": 8000.0,
+          "detail": "Allocate $2,500 low and $12,000 high for contract drafting, authorized screening, condition documentation, initial preparation, and handover logistics. Exclude vehicle purchase prices and investor capital contributions."
+        },
+        {
+          "label": "Liquidity and collision buffer",
+          "value": "$12,000 example allocation retained as operating liquidity",
+          "numeric_value": 12000.0,
+          "detail": "Allocate $4,000 low and $25,000 high for deductible liquidity, collection delays, and service interruptions. Keep customer deposits separate. Holding this cash does not reduce accounting profit; recognized expenses and actual disbursements follow their own timing."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-first-thirty-days-roadmap",
+      "chart_type": "timeline_roadmap",
+      "title": "Build a Controlled Fleet Launch in 30 Days",
+      "subtitle": "Four weekly milestones create a launch-ready operation without forcing an early first deal.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone ending days: 7, 14, 21, and 30. The canonical time to first deal is 1–3 months. The sprint can finish with qualified prospects and complete documentation while insurer, licensing, or vehicle activation work continues.",
+      "caption": "Maintain the supplied $2,500–$15,000 monthly operating-cost range as a planning envelope, not a universal runway estimate. Release dates follow completed evidence; acquisition volume does not override vehicle readiness or insured operating scope.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define the service jurisdiction and obtain written operating requirements",
+          "numeric_value": 7.0,
+          "detail": "Choose one launch niche and geography. Obtain insurer quotes, identify applicable carrier or TLC authority, confirm platform vehicle requirements, and model the 55% retained share separately from passenger trip GMV. Deliver a priced launch worksheet and jurisdiction checklist."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Document owner terms and configure auditable collections and ledgers",
+          "numeric_value": 14.0,
+          "detail": "Review vehicle-owner authority, draft driver terms, configure authorized payment collection, and create separate deposit, pass-through, and retained-contribution accounts. Deliver a sample owner statement that reconciles from gross billings to distributable amounts."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Run a limited qualification and vehicle-readiness rehearsal",
+          "numeric_value": 21.0,
+          "detail": "Process a small authorized applicant cohort, inspect candidate vehicles, install approved telematics, and test maintenance alerts. Rehearse collision reporting, failed-payment handling, and stationary starter-inhibition controls without deploying an unsafe vehicle."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Complete a settlement rehearsal and schedule only ready handovers",
+          "numeric_value": 30.0,
+          "detail": "Reconcile a labeled test dataset across billing, bank receipts, tolls, repairs, and owner splits. Where every requirement is complete, conduct a controlled handover; otherwise continue the documented 1–3 month first-deal plan without recording test collections as revenue."
+        }
+      ]
+    }
+  ]
+}

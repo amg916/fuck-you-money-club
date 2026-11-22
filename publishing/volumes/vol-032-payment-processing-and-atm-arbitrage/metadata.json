@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-032-payment-processing-and-atm-arbitrage",
+  "volume_slug": "vol-032-payment-processing-and-atm-arbitrage",
+  "volume_number": 32,
+  "site_ui": {
+    "cover": [
+      "PAYMENT &",
+      "ATM",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "AUDIT SCHEDULE A. SECURE THE VENUE.",
+      "RECONCILE RECURRING RESIDUALS."
+    ],
+    "lead": "Wholesale ISO Residual Portfolios, Compliant Dual-Pricing Terminals & Exclusive-Venue ATM Route Economics",
+    "summary": "Separate merchant processing volume from earned residuals, validate sponsor and network rules, and price ATM placements around cash replenishment, venue shares, security, and transaction density.",
+    "chapters": [
+      "ISO residuals vs ATM surcharge revenue",
+      "Sponsor banks, processors & Schedule A terms",
+      "Basis-point spreads & route unit economics",
+      "Terminal deployment & ATM startup capital",
+      "Chargebacks, reserves & residual clawbacks",
+      "Merchant statement audits & venue prospecting",
+      "Dual-pricing disclosures & terminal setup",
+      "ATM cash loading & settlement reconciliation",
+      "Network rules, PCI scope & local compliance",
+      "Residual audits & merchant retention loops",
+      "Lean service pods & portfolio transfer rights",
+      "First 30-day merchant-and-venue launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Audit merchant demand & venue traffic"
+      ],
+      [
+        "PRICE",
+        "Model Schedule A & cash-service costs"
+      ],
+      [
+        "CONTRACT",
+        "Confirm sponsor terms & placement rights"
+      ],
+      [
+        "DEPLOY",
+        "Configure terminals & verify disclosures"
+      ],
+      [
+        "RECONCILE",
+        "Match settlements, residuals & cash"
+      ],
+      [
+        "RETAIN",
+        "Service accounts & monitor route yield"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "ISO PAYMENT PROCESSING & ATM ARBITRAGE",
+  "subtitle": "The Complete Playbook for ISO Payment Processing & ATM Arbitrage: $90,000–$800,000 USD in Annual Retained Revenue, Built Around a 1 FT + 3 C (4 People) Pod",
+  "chapter_count": 12,
+  "total_word_count": 77260,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 94,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-22T19:29:44Z"
+}

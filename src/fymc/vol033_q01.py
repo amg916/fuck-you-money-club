@@ -1,0 +1,574 @@
+from __future__ import annotations
+
+CHAPTER_1 = {
+    "id": "Q1",
+    "chapter_id": "Q1",
+    "chapter_number": 1,
+    "question_number": 1,
+    "slug": "insurance-housing-corporate-rental-arbitrage-operating-model",
+    "question_prompt": "What exactly is insurance housing & corporate rental arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
+    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
+    "title": "What Exactly Is Insurance Housing & Corporate Rental Arbitrage?",
+    "subtitle": "Carrier-Authorized ALE Placements, Corporate Master-Leases, ASC 606 Revenue Boundaries, and Written Occupancy Rights",
+    "layout_template": "opportunity_overview",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #33 ranks #07 of 36 with a 90/100 Money-to-Manpower Score: "
+        "a small-team housing operation that buys authorized occupancy capacity and sells reliable temporary accommodation. "
+        "This chapter maps 12 operator plays, separating eleven housing strategies from one adjacent fintech acquisition offer. "
+        "The canonical annual owner profits are $21,600 Conservative, $150,100 Base, and $364,000 Scaled. "
+        "Gross housing billings of $180,000, $790,000, and $1,400,000 produce a modeled 45% retained spread, "
+        "not an automatic accounting conclusion about net revenue. Durable operators control landlord permissions, "
+        "placement authorization, extension deadlines, collections, and replacement demand. Fragile operators mistake an "
+        "adjuster's referral for payment authority, a premium monthly quote for year-round occupancy, or household displacement "
+        "for unlimited insurance coverage."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$180,000",
+            "context": "Annual gross housing billings; $81,000 retained at 45%",
+            "note": "12% gross-billings net margin; $21,600 annual owner net profit; 1 FT + 3 C; 26.67% retained margin",
+        },
+        {
+            "label": "Base",
+            "value": "$790,000",
+            "context": "Annual gross housing billings; $355,500 retained at 45%",
+            "note": "19.0% gross-billings net margin; $150,100 annual owner net profit; 1 FT + 3 C; 42.22% retained margin",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,400,000",
+            "context": "Annual gross housing billings; $630,000 retained at 45%",
+            "note": "26% gross-billings net margin; $364,000 annual owner net profit; 2 FT + 4 C; 57.78% retained margin",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Buy authorized housing capacity, then sell placement reliability",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Insurance housing and corporate rental arbitrage means contracting for housing capacity, furnishing and servicing "
+                    "that capacity, and charging an authorized payer for temporary occupancy. The operator does not buy the underlying "
+                    "home and does not earn the home's market value, the employer's relocation budget, or the household's insurance "
+                    "claim amount. The core product is a habitable, available dwelling with documented occupancy rights, predictable "
+                    "utilities, responsive maintenance, and a clean billing trail. Insurance Additional Living Expense, or ALE, funds "
+                    "eligible displacement costs under the relevant policy; it is not a universal housing allowance. Corporate housing "
+                    "instead relies on an employer, relocation manager, or occupant contract. Thirty-to-270-day stays are the operating "
+                    "focus, but a minimum stay does not erase local tenancy, zoning, licensing, or tax requirements. Before advertising "
+                    "a property, secure a landlord-signed addendum expressly permitting the intended corporate-housing and sublease "
+                    "activities, occupant substitutions, furnishings, pets where accepted, and the proposed channels. A generic residential "
+                    "lease plus verbal enthusiasm is inadequate inventory control. The practical arbitrage is between predictable wholesale "
+                    "occupancy commitments and a buyer's premium for immediate, suitable accommodation, not between two screenshots "
+                    "showing different nightly prices. Service execution determines whether that premium survives the placement."
+                ),
+                (
+                    "The anchor play, insurance_ale_displaced_housing_master_lease, screens suitable three-to-five-bedroom single-family "
+                    "homes around a $2,500 monthly base-rent assumption. Seek placements through ALE Solutions, CRS Temporary Housing, "
+                    "or Sedgwick only through their actual supplier and authorization processes. A quoted $6,500-$9,500 monthly placement "
+                    "for four-to-nine months depends on geography, available inventory, household requirements, policy limits, and written "
+                    "authorization. At an illustrative $7,500 monthly charge, subtracting $2,500 rent and $650 utilities leaves $4,350 "
+                    "before furniture, vacancy, labor, cleaning, collections losses, and overhead. That property illustration does not replace "
+                    "the scorecard's portfolio-wide 45% retained assumption. Four occupied months generate $30,000 billings; nine generate "
+                    "$67,500, but neither duration should be assumed before authorization. Match school proximity, bedroom count, parking, "
+                    "pets, and accessibility before presenting a quote. A displaced family's need does not establish who owes the invoice. "
+                    "Identify the contracting payer and distinguish carrier reimbursement from a direct payment commitment. When repairs "
+                    "finish early, obtain a written extension if justified, activate landlord-approved alternative occupancy, or use reserves "
+                    "and negotiated termination rights. Never treat smart-lock access as permission to bypass tenant protections. Require "
+                    "a documented end date and escalation owner before collecting keys."
+                ),
+                (
+                    "Five operator archetypes explain the shelf without pretending every business carries the same balance-sheet risk. "
+                    "The master-lease principal carries rent during vacancy; the placement agent earns an arranging fee without necessarily "
+                    "controlling accommodation; the corporate block operator matches employer demand to reserved units; the clinical specialist "
+                    "serves rotating assignments; and the accessibility or pet specialist solves hard-to-match household constraints. Their "
+                    "shared moat is verified fulfillment, not a secret listing website. Candidate #33's score components are 23 revenue "
+                    "potential, 24 profit-margin potential, 18 team efficiency, 13 startup accessibility, and 12 automation potential, totaling "
+                    "90. The $12,000-$60,000 startup range must cover deposits, furnishings, insurance, setup, and working capital rather than "
+                    "just furniture photographs. At $2,500 rent plus $650 utilities, three vacant months consume $9,450 before other costs; "
+                    "that reserve alone nearly exhausts the lower startup case. First-deal timing of one-to-three months is a planning "
+                    "window, not booked demand. Start with one authorized property and a documented buyer requirement, then measure days "
+                    "vacant, acceptance rate, collection lag, and extension conversion. A beginner who signs five leases before testing "
+                    "payer acceptance has purchased five recurring liabilities, not five revenue streams. Expand only when those measurements "
+                    "support another fixed commitment."
+                ),
+            ],
+            "table": {
+                "caption": "Five operator archetypes: contractual position determines economics and exposure",
+                "headers": [
+                    "Operator archetype and customer",
+                    "Contractual asset actually controlled",
+                    "Illustrative earning mechanism and boundary",
+                    "Durable moat and principal failure",
+                ],
+                "rows": [
+                    [
+                        "ALE master-lease principal serving displaced insured households",
+                        "Landlord-authorized occupancy rights with explicit household substitution provisions",
+                        "$7,500 monthly housing charge less contracted property operating obligations",
+                        "Documented placement readiness wins; uncovered vacancy consumes fixed rent",
+                    ],
+                    [
+                        "Corporate block operator serving employer relocation coordinators directly",
+                        "Reserved furnished units matched against signed employer occupancy commitments",
+                        "$5,200 monthly employer charge less $3,700 direct housing costs",
+                        "Employer renewal history compounds; project cancellation strands reserved capacity",
+                    ],
+                    [
+                        "Clinical assignment specialist serving traveling healthcare professionals directly",
+                        "Permitted furnished units near hospitals with workable shift logistics",
+                        "$3,600 monthly occupancy charge less $2,600 direct housing costs",
+                        "Quiet reliable accommodation retains buyers; assignment cancellation breaks continuity",
+                    ],
+                    [
+                        "Accessibility and pet specialist serving difficult household placement requests",
+                        "Verified property features and landlord permissions matching individual requirements",
+                        "$8,000 monthly placement charge less $4,800 direct housing costs",
+                        "Accurate feature evidence reduces rejection; misdescribed access forces relocation",
+                    ],
+                    [
+                        "Placement agent arranging third-party housing without controlling accommodation",
+                        "Supplier relationships and an enforceable fee agreement with customer",
+                        "$300 earned arranging fee rather than $6,000 underlying accommodation",
+                        "Responsive matching creates referrals; undocumented agency terms erase commissions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Sell certainty that another listing cannot demonstrate",
+                "body": "Build the evidence package before a coordinator asks for it, and price only the accommodation you can actually deliver.",
+                "items": [
+                    "Photograph bedroom layouts, driveway dimensions, stairs, fenced areas, and laundry access; label the inspection date and avoid claiming accessibility from photographs alone.",
+                    "Keep separate rent, utility-cap, pet, cleaning, and extension line items so a payer can authorize a revision without reopening the entire placement.",
+                    "Negotiate a landlord-approved replacement-occupant process before the first move-in; a vacant interval is the wrong moment to request broader rights.",
+                    "Track authorization expiry separately from expected repair completion, and escalate missing extensions while enough time remains to arrange a lawful alternative.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile gross billings, retained spread, and actual owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Maintain three separate ledgers: customer billings, direct accommodation obligations, and residual operating expense. Formula "
+                    "v2.0 uses gross insurance relocation and corporate housing billings with retained_share=0.45 after master-lease landlord "
+                    "rent and utility pass-throughs. Therefore the modeled direct allocation is 55% and the retained operating pool is 45%. "
+                    "Do not describe the entire customer's claim, relocation allowance, property value, or employer payroll as operator revenue. "
+                    "Equally, do not assume that labeling a payment a pass-through makes net presentation correct. Under ASC 606's "
+                    "principal-versus-agent framework, evaluate whether the operator controls the specified service before transfer; contractual "
+                    "responsibility, inventory risk, and pricing discretion inform that assessment. A principal may report gross service "
+                    "revenue with housing costs separately, while an agent generally reports the fee or commission earned for arranging "
+                    "the service. Lease components can instead require ASC 842 analysis. The 45% retained figure is the scorecard's "
+                    "management bridge, not a substitute for contract-level accounting. Deposits remain liabilities until earned or validly "
+                    "applied, and advance collections do not automatically become current revenue. Document the performance period, cancellation "
+                    "terms, principal-agent conclusion, and treatment of taxes for each contract form. Have the accountant reconcile these "
+                    "decisions before dashboard totals become lender or investor representations."
+                ),
+                (
+                    "The Conservative case starts with $180,000 annual gross billings, subtracts $99,000 modeled direct accommodation costs, "
+                    "and retains $81,000. Deduct $59,400 residual operating expense to reach exactly $21,600 annual owner net profit: "
+                    "12% of gross billings and 26.67% of retained revenue. Base starts with $790,000, subtracts $434,500, retains "
+                    "$355,500, and deducts $205,400 to produce $150,100: 19.0% gross margin and 42.22% retained margin. Scaled "
+                    "starts with $1,400,000, subtracts $770,000, retains $630,000, and deducts $266,000 to produce $364,000: 26% "
+                    "gross margin and 57.78% retained margin. Teams are respectively one full-time operator plus three contractors, the "
+                    "same Base headcount, and two full-time operators plus four contractors. Contractor count does not imply four full-time "
+                    "salaries or unlimited response capacity. The supplied $3,000-$18,000 monthly operating-expense range needs a scope "
+                    "definition: reconciled residual costs average $4,950, $17,116.67, and $22,166.67 monthly, so Scaled exceeds its "
+                    "upper endpoint when measured on that basis. Do not conceal the difference by changing profit. Separate recurring "
+                    "overhead from variable servicing, reserves, acquisition, and replacement costs, then budget the complete residual envelope. "
+                    "These cases preserve the supplied owner-profit convention without inventing a salary deduction."
+                ),
+                (
+                    "Translate the annual model into occupied unit-months before acquiring leases. At an illustrative blended $7,500 monthly "
+                    "billing rate, Conservative requires 24 occupied unit-months, Base 105.33, and Scaled 186.67. At 85% economic occupancy, "
+                    "those volumes imply approximately 2.35, 10.33, and 18.30 continuously available units respectively; operationally, capacity "
+                    "must be rounded and matched to actual stay dates. These are capacity illustrations, not an alternative portfolio forecast. "
+                    "A single $2,500 lease left uncovered for two months consumes $5,000 rent before utilities or turnover, reducing "
+                    "Conservative profit by 23.15% if no offsetting action occurs. A $7,500 receivable delayed sixty days can coexist "
+                    "with $6,300 of rent and utility payments over those two months. Profit therefore does not fund today's payroll "
+                    "unless collections arrive. Maintain a rolling thirteen-week cash forecast with lease due dates, approved invoice dates, "
+                    "expected remittances, deposits, and extension decisions. Stress cancellation at the earliest contractually permitted date, "
+                    "rather than assuming the repair contractor's original schedule holds. Track arrears by payer and dispute reason. A "
+                    "creditworthy carrier's involvement does not eliminate exposure when the actual agreement names a different debtor. "
+                    "Keep refundable deposits outside the spending pool and reconcile every receipt against its invoice."
+                ),
+            ],
+            "table": {
+                "caption": "Formula v2.0 reconciliation: annual dollars, unchanged canonical owner profit",
+                "headers": [
+                    "Scenario and gross billing denominator",
+                    "Direct allocation and retained operating pool",
+                    "Residual expense and exact owner profit",
+                    "Margin denominator and staffing interpretation",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual gross housing billings equal exactly $180,000",
+                        "$99,000 direct allocation leaves $81,000 retained at 45%",
+                        "$59,400 residual expense leaves exactly $21,600 owner profit",
+                        "12% gross; 26.67% retained; one full-time plus three contractors",
+                    ],
+                    [
+                        "Base annual gross housing billings equal exactly $790,000",
+                        "$434,500 direct allocation leaves $355,500 retained at 45%",
+                        "$205,400 residual expense leaves exactly $150,100 owner profit",
+                        "19.0% gross; 42.22% retained; one full-time plus three contractors",
+                    ],
+                    [
+                        "Scaled annual gross housing billings equal exactly $1,400,000",
+                        "$770,000 direct allocation leaves $630,000 retained at 45%",
+                        "$266,000 residual expense leaves exactly $364,000 owner profit",
+                        "26% gross; 57.78% retained; two full-time plus four contractors",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Establish the contract and payer",
+                    "action": "Record the landlord authorization, occupant agreement, placement authorization, and invoice debtor together.",
+                    "detail": "Assign one placement identifier and distinguish the person occupying the dwelling from the party contractually responsible for payment.",
+                },
+                {
+                    "step": 2,
+                    "title": "Classify each cash movement",
+                    "action": "Separate earned housing charges, refundable deposits, collected taxes, rent obligations, utilities, and service expenses.",
+                    "detail": "Record the service dates and document principal-agent or lease accounting treatment instead of treating every bank receipt as revenue.",
+                },
+                {
+                    "step": 3,
+                    "title": "Bridge the scorecard without changing it",
+                    "action": "Calculate gross billings times 45%, then subtract the scenario's residual expense to reproduce canonical owner profit.",
+                    "detail": "Show actual property economics alongside the benchmark and explain variances rather than forcing every individual property to retain exactly 45%.",
+                },
+                {
+                    "step": 4,
+                    "title": "Test cash and expiry exposure weekly",
+                    "action": "Update the thirteen-week cash forecast and review authorization expiries, vacancy intervals, and receivable disputes.",
+                    "detail": "Assign a named owner and next action to every threatened extension, payer discrepancy, or lease commitment lacking matched demand.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Select a sub-vertical where evidence and renewal discipline create a moat",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The twelve-play map comprises the supplied ALE master-lease play, ten chapter-defined housing variants, and the supplied "
+                    "fintech co-registration play discussed next. The ten variants are Corporate project-team blocks, Travel-clinician housing, "
+                    "Pet-capable catastrophe housing, Verified-access family housing, Executive relocation housing, Intern cohort housing, "
+                    "Restoration bridge housing, Planned-renovation housing, Cross-border assignee housing, and Furnished exit-bridge housing. "
+                    "These descriptive variants are operating choices, not additional canonical candidate identifiers. The comparison matrix "
+                    "adds five benchmark niches without counting them as mapped plays. Named platforms identify realistic discovery or "
+                    "procurement environments, not promised supplier acceptance, current integrations, fixed commissions, or guaranteed bookings. "
+                    "Every price and direct-cost pair in that matrix is an illustrative underwriting input, excluding residual overhead "
+                    "and actual channel fees unless explicitly stated. Obtain current supplier agreements before calculating net proceeds. "
+                    "Furnished Finder can support clinician discovery, CHBO can expose furnished corporate inventory, and Cartus or SIRVA "
+                    "can appear in managed relocation procurement; none removes the need for an executed payer agreement. Select one "
+                    "primary niche and one permitted fallback with compatible property requirements. A school-oriented family house and "
+                    "a downtown executive apartment solve different problems and should not share an untested occupancy forecast. "
+                    "Keep separate acceptance criteria and evidence packs for each."
+                ),
+                (
+                    "Compare contribution per occupied month with contribution per committed month. A corporate block billed at $5,200 "
+                    "against $3,700 direct housing costs yields $1,500 before residual overhead when occupied, but three empty months "
+                    "can overwhelm several successful placements. An eight-person internship requirement is not automatically eight legal "
+                    "occupants in one house; zoning, fire safety, lease terms, and occupancy standards govern capacity. Travel-clinician "
+                    "demand may support $3,600 against $2,600 direct costs, yet assignment cancellation can arrive before the landlord "
+                    "permits termination. Prefer end-date alignment, written substitutions, and deposits or credit support appropriate to the "
+                    "actual contract. Pet-capable inventory can differentiate a catastrophe placement, but distinguish ordinary pets from "
+                    "assistance animals and assess Fair Housing Act obligations before applying restrictions or charges. Verified-access "
+                    "housing needs measured entrances, bathroom layouts, parking paths, and an honest description of limitations; an elevator "
+                    "photograph is insufficient. Use 42 U.S.C. 3604 to structure nondiscrimination and accommodation procedures. For covered "
+                    "pre-1978 target housing, apply lead disclosure requirements before the occupant becomes obligated, subject to applicable "
+                    "exemptions. Specialist positioning is durable only when the physical dwelling and signed permissions support the "
+                    "promise. Otherwise the premium becomes a refund, emergency move, or dispute."
+                ),
+                (
+                    "Treat distribution as a procurement workflow rather than a scraping exercise. Maintain availability with date-stamped "
+                    "property records, then confirm requested dates and household fit before sending a binding offer. Where ALE or CRS "
+                    "workflows support authorized synchronization, use their permitted interfaces; otherwise assign controlled manual updates "
+                    "and reconcile confirmations. Never imply a public API exists because a portal exists. Store authorization limits, "
+                    "utility caps, purchase-order references, extension deadlines, and contact roles in Airtable or a comparable controlled "
+                    "register, with accounting records in QuickBooks or another ledger. Smart locks, leak sensors, and disclosed noise-level "
+                    "monitoring can reduce response time, but should collect only necessary operational data and never substitute for "
+                    "lawful entry or possession procedures. California Civil Code section 1954, for example, constrains residential entry; "
+                    "other jurisdictions impose their own rules. Pair every automated lease-extension reminder with a human decision and "
+                    "written acceptance. Pair utility-cap billing with meter dates, invoices, and the contract clause authorizing the charge. "
+                    "A durable small-team moat is the ability to answer a coordinator's request with current evidence and a reliable "
+                    "price while competitors are still asking whether their landlord permits the stay. Automation amplifies that discipline; "
+                    "it cannot manufacture missing contractual authority."
+                ),
+            ],
+            "table": {
+                "caption": "Sixteen sub-vertical comparisons: eleven mapped housing plays plus five benchmarks; all price pairs are illustrative before overhead and negotiated channel charges",
+                "headers": [
+                    "Sub-vertical and play classification",
+                    "Named discovery or procurement environment",
+                    "Fee structure and concrete unit economics",
+                    "Defensible operating moat and supporting evidence",
+                    "Clawback or failure trigger and fallback",
+                ],
+                "rows": [
+                    [
+                        "Mapped play: insurance_ale_displaced_housing_master_lease for displaced insured families",
+                        "ALE Solutions, CRS Temporary Housing, or Sedgwick supplier processes",
+                        "$7,500 monthly charge minus $3,150 rent and utilities leaves $4,350",
+                        "Signed sublease rights and ready three-to-five-bedroom family inventory",
+                        "Early claim closure strands rent; use written extensions or permitted replacements",
+                    ],
+                    [
+                        "Mapped play: Corporate project-team blocks near employer work sites",
+                        "CHBO discovery and direct employer procurement with executed agreements",
+                        "$5,200 monthly charge minus $3,700 direct costs leaves $1,500",
+                        "Contiguous units and consistent invoices reduce employer coordination effort",
+                        "Project cancellation removes demand; negotiate substitutions and minimum commitments",
+                    ],
+                    [
+                        "Mapped play: Travel-clinician housing near hospitals and treatment centers",
+                        "Furnished Finder discovery followed by independently verified occupant contracting",
+                        "$3,600 monthly charge minus $2,600 direct costs leaves $1,000",
+                        "Quiet daytime sleeping conditions and commute evidence fit clinical shifts",
+                        "Assignment cancellation shortens stays; align termination terms and replacement demand",
+                    ],
+                    [
+                        "Mapped play: Pet-capable catastrophe housing for displaced larger households",
+                        "CRS Temporary Housing and ALE Solutions placement-specific supplier inquiries",
+                        "$8,500 monthly charge minus $4,900 direct costs leaves $3,600",
+                        "Documented fencing and written animal permissions reduce placement rejection",
+                        "Damage exceeds reserves; document condition and separate assistance-animal requirements",
+                    ],
+                    [
+                        "Mapped play: Verified-access family housing for specific mobility requirements",
+                        "Sedgwick or relocation coordinator requests requiring property-specific suitability confirmation",
+                        "$8,000 monthly charge minus $4,800 direct costs leaves $3,200",
+                        "Measured access routes and verified layouts make matching more reliable",
+                        "Unsuitable access forces relocation; verify requirements before accepting payment",
+                    ],
+                    [
+                        "Mapped play: Executive relocation housing for employer-sponsored household moves",
+                        "Cartus and SIRVA procurement relationships subject to supplier acceptance",
+                        "$6,200 monthly charge minus $4,300 direct costs leaves $1,900",
+                        "Reliable internet and polished maintenance response protect employer relationships",
+                        "Offer withdrawal cancels relocation; require enforceable cancellation and rescheduling terms",
+                    ],
+                    [
+                        "Mapped play: Intern cohort housing with lawful shared occupancy",
+                        "Handshake employer discovery followed by direct program-manager housing procurement",
+                        "Four occupants paying $1,500 minus $4,300 direct costs leaves $1,700",
+                        "Verified occupancy limits and cohort calendars simplify employer administration",
+                        "Recruiting shortfalls strand beds; secure employer commitments before reserving units",
+                    ],
+                    [
+                        "Mapped play: Restoration bridge housing during insured repair scheduling",
+                        "Contractor connections through Alacrity Solutions networks require independent payer verification",
+                        "$6,800 monthly charge minus $4,000 direct costs leaves $2,800",
+                        "Repair milestone tracking supports timely extension requests and vacancy planning",
+                        "Repair completion accelerates departure; use authorized replacement occupancy or negotiated exits",
+                    ],
+                    [
+                        "Mapped play: Planned-renovation housing for self-funded displaced homeowners",
+                        "Houzz contractor discovery and direct homeowner agreements establish separate demand",
+                        "$5,800 monthly charge minus $3,900 direct costs leaves $1,900",
+                        "Contractor scheduling relationships generate repeat referrals without implying insurance coverage",
+                        "Renovation postponement cancels occupancy; collect contractually supported reservation payments",
+                    ],
+                    [
+                        "Mapped play: Cross-border assignee housing for employer-sponsored temporary transfers",
+                        "SIRVA or Cartus managed relocation procurement requires documented contracting authority",
+                        "$6,400 monthly charge minus $4,500 direct costs leaves $1,900",
+                        "Remote walkthroughs and reliable arrival logistics reduce employer coordination burdens",
+                        "Transfer delays shift arrival; negotiate date changes and creditworthy payer backing",
+                    ],
+                    [
+                        "Mapped play: Furnished exit-bridge housing between home sale and move",
+                        "CHBO listings and direct real-estate referral relationships support discovery",
+                        "$5,400 monthly charge minus $3,800 direct costs leaves $1,600",
+                        "Flexible documented extensions solve uncertain closing and construction timelines",
+                        "Closing moves unexpectedly; maintain permitted replacements and explicit extension pricing",
+                    ],
+                    [
+                        "Benchmark niche: Visiting university scholar housing near research campuses",
+                        "SabbaticalHomes discovery with separately verified university or occupant payment obligations",
+                        "$3,800 monthly charge minus $2,900 direct costs leaves $900",
+                        "Academic calendar knowledge and campus access evidence improve seasonal matching",
+                        "Funding withdrawal removes demand; confirm debtor and preserve alternative seasonal demand",
+                    ],
+                    [
+                        "Benchmark niche: Film production crew housing near temporary locations",
+                        "ProductionHUB discovery followed by direct production-company housing procurement agreements",
+                        "$5,600 monthly charge minus $3,900 direct costs leaves $1,700",
+                        "Parking capacity and coordinated arrival procedures support irregular production schedules",
+                        "Production suspension cancels blocks; negotiate minimum terms and replacement rights",
+                    ],
+                    [
+                        "Benchmark niche: Professional sports transfer housing for relocating households",
+                        "CHBO visibility and direct team relocation staff procurement discussions",
+                        "$6,000 monthly charge minus $4,200 direct costs leaves $1,800",
+                        "Discreet communications and family-ready homes support sensitive move schedules",
+                        "Roster changes shorten stays; obtain payer-backed termination terms before occupancy",
+                    ],
+                    [
+                        "Benchmark niche: Diplomatic assignment housing under verified payment arrangements",
+                        "SAM.gov opportunities or mission procurement require opportunity-specific eligibility review",
+                        "$6,500 monthly charge minus $4,600 direct costs leaves $1,900",
+                        "Accurate procurement paperwork and suitable locations support institutional repeat demand",
+                        "Authority or payment disputes arise; verify contracting terms before committing inventory",
+                    ],
+                    [
+                        "Benchmark niche: Utility restoration crew housing after regional disruptions",
+                        "SAM.gov solicitations and direct utility contractor procurement offer distinct channels",
+                        "$5,000 monthly charge minus $3,700 direct costs leaves $1,300",
+                        "Safe parking and resilient utilities support demanding restoration schedules",
+                        "Deployment ends abruptly; require minimum commitments and lawful occupancy limits",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Separate adjacent acquisition income from housing economics and verify launch readiness",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The twelfth mapped play, free_llc_fintech_bounty_stacking, is an adjacent business-launch concierge, not insurance housing "
+                    "revenue. Its proposed offer is a $0 service-fee LLC formation workflow with the founder paying mandatory state filing "
+                    "fees, followed by a 'Required Business Infrastructure Checklist' covering banking, corporate cards, payroll, bookkeeping, "
+                    "and merchant services. That checklist title must not imply that optional products are legally required or that every "
+                    "founder should open every account. Explain the commercial offer, disclose paid referral relationships, and recommend only "
+                    "products relevant to the founder's intended operations. Actual partner eligibility, funding, spending, payroll, and retention "
+                    "conditions determine whether bounties become payable. An illustrative stack of $300 banking, $400 card, $200 payroll, "
+                    "and $100 bookkeeping produces $1,000 before acquisition cost, support, tax, reversals, and exclusions; the supplied "
+                    "$600-$1,800-plus range is a prospective offer range rather than an observed payout schedule. Mercury, Relay, Gusto, "
+                    "and QuickBooks are examples of business infrastructure products, not assertions of currently available commissions. "
+                    "Never open accounts without the founder's authorization or submit misleading business activity. Keep this funnel in "
+                    "a separate ledger so housing occupancy weakness cannot be disguised as higher relocation revenue. Recognize referral "
+                    "income only under the applicable earning conditions."
+                ),
+                (
+                    "The specified fintech fallback is to condition free operating-agreement and bookkeeping templates on verified bank-account "
+                    "funding and prequalify founders for genuine operating-revenue intent within thirty days. Implement that condition transparently "
+                    "before signup, provide formation deliverables already owed regardless of later optional purchases, and never withhold access "
+                    "to a founder's own accounts. Verify only the minimum evidence allowed by the partner agreement; do not collect banking "
+                    "passwords or encourage circular funding to simulate eligibility. FTC endorsement principles in 16 CFR Part 255 require "
+                    "clear disclosure of material connections where applicable, while deceptive promotional claims can implicate 15 U.S.C. 45. "
+                    "If three qualifying referrals earn $1,000 each and one $300 banking payment reverses, gross earned commissions "
+                    "become $2,700 before other costs. That reversal belongs in the affiliate ledger, not the housing utility account. "
+                    "For the housing launch itself, verify local tax treatment independently: Texas Tax Code section 156.101 addresses "
+                    "permanent residents occupying a room for at least thirty consecutive days, but qualifying facts and administrative "
+                    "rules matter. Do not extrapolate one state's treatment to another city or property type. Capture exemption evidence, "
+                    "stay amendments, and tax calculations in the placement file before sending the final invoice."
+                ),
+                (
+                    "Launch readiness requires evidence across property rights, household suitability, payer authority, and cash survival. Review "
+                    "habitability requirements where the property sits; California Civil Code section 1941.1 illustrates concrete standards "
+                    "rather than a generic quality promise. Obtain insurance appropriate to the actual corporate-housing use, disclose the "
+                    "operating model to the broker, and inspect exclusions, deductibles, business-property coverage, and liability limits. A "
+                    "landlord's policy or a platform protection description does not establish your coverage. Confirm smoke and carbon-monoxide "
+                    "requirements, maintenance contacts, emergency access procedures, and a lawful occupant communications plan. Before acquiring "
+                    "another unit, test a scenario with immediate placement cancellation, two vacant months, a delayed receivable, and a "
+                    "repair deductible; use actual contract obligations rather than a blended premium rate. Assign the full-time operator "
+                    "pricing, payer communication, and cash decisions while contractors handle defined cleaning, maintenance, and bookkeeping "
+                    "tasks with response standards. At scale, the second full-time role should remove a measured coordination bottleneck, "
+                    "not merely inherit miscellaneous messages. Durable small-team returns come from repeatable documentation and selective "
+                    "inventory acquisition. Decline a placement that lacks authority, fit, or viable economics; an occupied house with an "
+                    "uncollectible invoice is not a successful deal. Close every stay with reconciled charges and documented condition."
+                ),
+            ],
+            "table": {
+                "caption": "Pre-flight evidence matrix: housing obligations and affiliate income remain separate",
+                "headers": [
+                    "Control area and responsible operating role",
+                    "Evidence required before committing the transaction",
+                    "Quantified test or explicit acceptance standard",
+                    "Failure response protecting cash and contractual rights",
+                ],
+                "rows": [
+                    [
+                        "Property rights reviewed by the accountable housing operator",
+                        "Signed landlord addendum permits intended subleases and occupant substitutions",
+                        "Every advertised property has matching executed permission documents",
+                        "Withhold listing and negotiate rights before accepting any placement",
+                    ],
+                    [
+                        "Payer authorization reviewed by billing and placement operations",
+                        "Written debtor identity, approved dates, rates, limits, and extension process",
+                        "$7,500 illustrative invoice matches authorized charges and service dates",
+                        "Resolve discrepancy before move-in or execute an acceptable alternative agreement",
+                    ],
+                    [
+                        "Liquidity survival reviewed by the owner and bookkeeper",
+                        "Thirteen-week forecast includes vacancies, receivables, deposits, and lease obligations",
+                        "Two vacant months require $6,300 for illustrated rent and utilities",
+                        "Reduce new commitments and negotiate exits without bypassing tenant protections",
+                    ],
+                    [
+                        "Affiliate earning conditions reviewed in a separate acquisition ledger",
+                        "Partner terms, founder authorization, disclosure, eligibility, and reversal evidence",
+                        "Three $1,000 stacks less $300 reversal leave $2,700 commissions",
+                        "Reverse disputed earnings and stop unsuitable account recommendations immediately",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before taking a fixed housing obligation",
+                "body": "Each check requires a document or reconciled calculation, not a salesperson's verbal assurance.",
+                "items": [
+                    "Property authority: obtain the executed landlord corporate-housing and sublease addendum, verify local use restrictions, and confirm the proposed household fits permitted occupancy.",
+                    "Payer authority: verify the contracting debtor, authorized rate, covered dates, utility treatment, purchase-order requirements, and who can approve extensions in writing.",
+                    "Physical and insurance readiness: inspect habitability and safety features, confirm household-specific requirements, and obtain broker-confirmed coverage for the actual operating use.",
+                    "Cash resilience: fund the vacancy and collection-delay stress case, preserve refundable deposits, and document lawful replacement or negotiated termination options before signing.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The spread becomes a business only when occupancy rights, payment authority, and cash timing survive the same stress test.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Select one housing niche and one landlord-permitted fallback, then document actual buyer requirements before acquiring inventory.",
+        "Execute a property-specific corporate-housing sublease addendum covering occupants, substitutions, pets, utilities, maintenance, and termination.",
+        "Build a placement evidence pack with current photographs, measured features, payer identity, written authorization, approved dates, and rate components.",
+        "Reconcile the three canonical scenarios to 45% retained spread and exact owner profits of $21,600, $150,100, and $364,000.",
+        "Run a thirteen-week cash forecast with early claim closeout, two vacant months, delayed collections, and property-specific insurance deductibles.",
+        "Configure extension reminders and invoice controls, while keeping any fintech referral funnel, disclosures, earnings, and reversals outside housing billings.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "42 U.S.C. 3604 — Discrimination in the sale or rental of housing",
+            "url": "https://www.law.cornell.edu/uscode/text/42/3604",
+            "relevance": "Structure rental advertising, household screening, disability accommodations, and applicable assistance-animal procedures around the statutory housing protections.",
+        },
+        {
+            "title": "24 CFR 35.92 — Lead-based paint disclosure requirements",
+            "url": "https://www.ecfr.gov/current/title-24/subtitle-A/part-35/subpart-A/section-35.92",
+            "relevance": "For covered target housing, provide required lead information and disclosures before the lessee becomes obligated; evaluate exemptions under the surrounding subpart.",
+        },
+        {
+            "title": "California Civil Code section 1941.1 — Tenantable residential conditions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1.",
+            "relevance": "For California inventory, inspect the listed habitability conditions and maintain evidence of corrective maintenance rather than relying only on furnishing quality.",
+        },
+        {
+            "title": "California Civil Code section 1954 — Landlord entry into a dwelling",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+            "relevance": "For California residential occupancy, design maintenance access and smart-lock procedures around permitted entry purposes and applicable notice requirements.",
+        },
+        {
+            "title": "Texas Tax Code section 156.101 — Exception for permanent residents",
+            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.156.htm#156.101",
+            "relevance": "Evaluate the permanent-resident exception for qualifying hotel occupancy of at least thirty consecutive days, with supporting facts and applicable administrative requirements.",
+        },
+        {
+            "title": "16 CFR Part 255 — Guides concerning endorsements and testimonials in advertising",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
+            "relevance": "Disclose material referral relationships clearly when promoting business infrastructure products through the adjacent formation concierge.",
+        },
+        {
+            "title": "15 U.S.C. 45 — Unfair methods of competition and deceptive acts or practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": "Keep free-formation claims, optional account recommendations, payout illustrations, and product eligibility representations accurate and nondeceptive.",
+        },
+    ],
+}

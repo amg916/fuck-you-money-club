@@ -1,0 +1,1086 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-and-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small gpu compute & telecom capacity arbitrage desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": (
+        "ICANN CZDS, FCC Carrier Records, ARIN RDAP, NVIDIA DCGM, "
+        "Prepaid Stripe Ledgers, and Evidence-Controlled GPU/SIP Routing"
+    ),
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #36, GPU Compute & Telecom Capacity Arbitrage, ranks #03 of 36 "
+        "with a 94/100 Money-to-Manpower Score. Its information edge comes from "
+        "joining public identity records, supply telemetry, route economics, and "
+        "prepaid balances before quoting capacity. This chapter connects 15 mapped "
+        "plays to an eighteen-entry resource directory, an enrichment waterfall, "
+        "and a reproducible evidence ledger. Formula v2.0 produces annual owner "
+        "profits of $27,000, $189,000, and $456,000 on gross billings of $150,000, "
+        "$675,000, and $1,200,000. The 65% retained contribution is distinct from "
+        "customer billings and underlying traffic. Operators learn which sources "
+        "prove identity, which merely suggest demand, and which measurements "
+        "must stop a quote when capacity, authorization, or settlement evidence fails."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$150,000",
+            "context": (
+                "Annual gross compute, inference-token, and telecom billings; "
+                "$97,500 retained contribution at 65%"
+            ),
+            "note": (
+                "18% gross-billings net margin; $27,000 annual owner net profit; "
+                "27.69% retained margin; 1 FT + 2 C"
+            ),
+        },
+        {
+            "label": "Base",
+            "value": "$675,000",
+            "context": (
+                "Annual gross compute, inference-token, and telecom billings; "
+                "$438,750 retained contribution at 65%"
+            ),
+            "note": (
+                "28.0% gross-billings net margin; $189,000 annual owner net profit; "
+                "43.08% retained margin; 1 FT + 2 C"
+            ),
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,200,000",
+            "context": (
+                "Annual gross compute, inference-token, and telecom billings; "
+                "$780,000 retained contribution at 65%"
+            ),
+            "note": (
+                "38% gross-billings net margin; $456,000 annual owner net profit; "
+                "58.46% retained margin; 2 FT + 3 C"
+            ),
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build an identity ledger from registries, not scraped assumptions",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with an evidence ledger whose primary keys distinguish a legal entity, "
+                    "domain, carrier identifier, autonomous system, and customer account. A domain "
+                    "string is not a company identifier, and a company registration is not permission "
+                    "to resell its carrier services. Store the source URL, retrieval timestamp, "
+                    "effective date, response hash, permitted reuse conditions, and the exact matching "
+                    "rule for every relationship. For the domain acquisition play, obtain approved "
+                    "ICANN Centralized Zone Data Service access and compare successive zone snapshots "
+                    "locally. A zone addition means newly observed delegation, not necessarily a newly "
+                    "registered domain: transfers, restored delegations, and prior snapshot gaps create "
+                    "false triggers. Preserve the previous snapshot and classify additions before "
+                    "enrichment. The .us registry sits outside any assumption that CZDS supplies every "
+                    "top-level domain. Discover its authoritative RDAP service through the IANA bootstrap "
+                    "file, inspect actual response fields, and respect redaction and access policy. "
+                    "There is no dependable universal unredacted .us bulk registrant feed to assume. "
+                    "Join domain tokens to Secretary of State records only when another public business "
+                    "identifier corroborates the relationship. Keep registered-agent addresses separate "
+                    "from operating addresses; a convenient mailing destination does not establish "
+                    "ownership, occupancy, or buyer intent."
+                ),
+                (
+                    "Implement newly_registered_domain_trigger_arbitrage as an evidence-based technical "
+                    "diagnostic, not a claim to privileged registry access. After the first observation, "
+                    "schedule bounded checks at observation time, twenty-four hours, and seventy-two "
+                    "hours. Query authoritative DNS for MX, SPF-bearing TXT records, and the DMARC record "
+                    "at the correct organizational domain; check HTTPS status and the conventional "
+                    "sitemap.xml location without crawling unrelated paths. An absent sitemap at that "
+                    "path does not prove that the site has no sitemap, because robots.txt or application "
+                    "configuration may publish another location. Likewise, zero Google indexed pages "
+                    "cannot be established reliably by scraping search results. Use Google Search Console "
+                    "only after the property owner grants access; otherwise describe indexing as "
+                    "unverified and exclude it from scored defects. Match public business mailing "
+                    "addresses through corroborated company filings without trying to reconstruct "
+                    "redacted personal contacts. For an illustrative batch of 100 private diagnostic "
+                    "mailers at $1.40 each plus two review hours at $35, acquisition expense is $210. "
+                    "Three completed $150 diagnostic engagements yield $450 gross receipts and $240 "
+                    "before delivery expense. If matching confidence fails, suppress the mailer rather "
+                    "than purchasing speculative identity enrichment. Explain actual DNS fixes and "
+                    "identify the sender as a private service business."
+                ),
+                (
+                    "Carrier records answer a different question: whether the proposed counterparty "
+                    "has a verifiable identity and the filings relevant to its actual role. Search the "
+                    "FCC Robocall Mitigation Database before activating voice routes, preserve the "
+                    "record identifier and filing date, and inspect the stated mitigation or "
+                    "authentication posture. A listing does not certify route quality, lawful traffic, "
+                    "or creditworthiness. Review FCC Form 499 records alongside contracts to establish "
+                    "the reported entity and services, then determine applicable filing and contribution "
+                    "duties under 47 CFR 54.706 and 54.711. Exemptions and reseller treatment depend on "
+                    "facts; buying wholesale minutes does not settle those questions. ULS license "
+                    "records help evaluate wireless counterparties but do not prove that a particular "
+                    "SIP route is authorized. Broadband Data Collection coverage helps prioritize "
+                    "facilities and connectivity discussions, not promise deliverable transit at a "
+                    "specific rack. Apply daily change checks to active voice counterparties, weekly "
+                    "checks to prospects, and event-driven review after legal-entity or route changes. "
+                    "If a portal becomes unavailable, use a dated saved record for research only and "
+                    "obtain fresh counterparty evidence before activation. Escalate discrepancies to "
+                    "a named owner instead of letting an enrichment service silently merge competing "
+                    "company identities."
+                ),
+            ],
+            "table": {
+                "caption": (
+                    "Named Resource Directory, Entries 1–8: Public Identity, Domain, "
+                    "and Carrier Evidence"
+                ),
+                "headers": [
+                    "Named source and exact access",
+                    "Cost tier and coverage boundary",
+                    "Refresh latency and rate hygiene",
+                    "Fallback and required operator evidence",
+                ],
+                "rows": [
+                    [
+                        (
+                            "ICANN CZDS: request approved zone downloads through "
+                            "https://czds.icann.org and its documented authenticated interface."
+                        ),
+                        (
+                            "Approved zone access generally has no download charge; "
+                            "storage, processing, and contractual reuse obligations remain."
+                        ),
+                        (
+                            "Fetch each available daily snapshot once; cache locally, "
+                            "honor service responses, and compare source timestamps."
+                        ),
+                        (
+                            "Retain prior approved snapshots during outages; never "
+                            "substitute repeated WHOIS requests for bulk zone access."
+                        ),
+                    ],
+                    [
+                        (
+                            ".us registry RDAP: discover the service using "
+                            "https://data.iana.org/rdap/dns.json, then request /domain/{domain}."
+                        ),
+                        (
+                            "Public lookups expose fields allowed by registry policy; "
+                            "unredacted bulk registrant access must never be assumed."
+                        ),
+                        (
+                            "Query only shortlisted domains; start with one request "
+                            "per second, cache responses, and obey stricter published limits."
+                        ),
+                        (
+                            "Use registry web lookup or approved zone evidence; "
+                            "retain redaction status instead of inventing contact fields."
+                        ),
+                    ],
+                    [
+                        (
+                            "California Secretary of State: search legal entities "
+                            "through https://bizfileonline.sos.ca.gov and inspect available filing images."
+                        ),
+                        (
+                            "Public search is available without a research subscription; "
+                            "ordered documents and other states may carry fees."
+                        ),
+                        (
+                            "Review shortlisted entities weekly and before mailing; "
+                            "use permitted exports rather than automating restricted interfaces."
+                        ),
+                        (
+                            "Request the filed document or another official state "
+                            "record; distinguish registered agents from business mailing addresses."
+                        ),
+                    ],
+                    [
+                        (
+                            "ICANN Registration Data Lookup: inspect domain records "
+                            "at https://lookup.icann.org when validating a shortlisted domain."
+                        ),
+                        (
+                            "Public lookup supplies registration evidence, not a "
+                            "purchased identity graph or permission to contact individuals."
+                        ),
+                        (
+                            "Use case-specific lookups after local filtering; cache "
+                            "results and avoid bulk browser automation against interactive services."
+                        ),
+                        (
+                            "Follow the authoritative RDAP service discovered through "
+                            "IANA; preserve inconsistent dates for manual review."
+                        ),
+                    ],
+                    [
+                        (
+                            "FCC Robocall Mitigation Database: search provider filings "
+                            "at https://fccprod.servicenowservices.com/rmd?id=rmd_welcome and preserve record identifiers."
+                        ),
+                        (
+                            "Public filing research has no registry subscription "
+                            "charge; database presence does not establish route quality."
+                        ),
+                        (
+                            "Check active counterparties daily using permitted methods; "
+                            "record source dates because portal availability is not freshness."
+                        ),
+                        (
+                            "Compare saved filings with current counterparty evidence; "
+                            "hold affected activation when required status cannot be established."
+                        ),
+                    ],
+                    [
+                        (
+                            "FCC Form 499 Filer Database: search entity records "
+                            "through https://apps.fcc.gov/cgb/form499/499a.cfm and retain the filer identifier."
+                        ),
+                        (
+                            "Public lookup is free to consult; contribution "
+                            "liability and filing service expenses are separate questions."
+                        ),
+                        (
+                            "Recheck before contracting and after entity changes; "
+                            "use low-volume searches instead of unrestricted scraping."
+                        ),
+                        (
+                            "Obtain filed worksheets and underlying contracts from "
+                            "the counterparty when public summaries cannot resolve service classification."
+                        ),
+                    ],
+                    [
+                        (
+                            "FCC Universal Licensing System: inspect license status "
+                            "using https://wireless2.fcc.gov/UlsSearch/searchLicense.jsp and linked official records."
+                        ),
+                        (
+                            "Public license searches are free to consult; "
+                            "wireless licenses do not establish SIP route permissions."
+                        ),
+                        (
+                            "Check license dates before wireless sourcing decisions; "
+                            "use official bulk products when available and permitted."
+                        ),
+                        (
+                            "Request the relevant authorization document and verify "
+                            "its identifier directly against the official licensing record."
+                        ),
+                    ],
+                    [
+                        (
+                            "FCC National Broadband Map: inspect location coverage "
+                            "and available downloads through https://broadbandmap.fcc.gov using published access conditions."
+                        ),
+                        (
+                            "Public map access differs from licensed location "
+                            "fabric access; coverage data does not price wholesale capacity."
+                        ),
+                        (
+                            "Ingest each published vintage, preserving its date; "
+                            "prefer permitted downloads over repeated interactive map requests."
+                        ),
+                        (
+                            "Obtain a carrier serviceability response and facility "
+                            "cross-connect quote before promising connectivity at a particular location."
+                        ),
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make weak signals cheap and strong evidence durable",
+                "body": (
+                    "The useful edge is faster rejection of false opportunities, "
+                    "not a larger pile of disconnected records."
+                ),
+                "items": [
+                    (
+                        "Diff normalized zone names locally, preserving both snapshots; "
+                        "separate first observation from any verified registration date."
+                    ),
+                    (
+                        "Require a corroborating public business identifier before joining "
+                        "a domain to an LLC mailing address; registered-agent overlap alone fails."
+                    ),
+                    (
+                        "Keep GPU model, memory profile, interconnect, region, and reservation "
+                        "term in the quote key; H100, H200, and B200 hours are not interchangeable."
+                    ),
+                    (
+                        "Archive carrier rate-deck versions with effective timestamps; "
+                        "a profitable historical route can become loss-making after a surcharge change."
+                    ),
+                ],
+            },
+        },
+        {
+            "heading": "2. Connect commercial APIs to capacity, quality, and prepaid balances",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Separate identity evidence from live supply evidence. Provider catalog APIs "
+                    "describe offered SKUs and regions, while reservation responses establish whether "
+                    "capacity can actually be purchased. Normalize H100, H200, and B200 offers by "
+                    "memory, interconnect, minimum term, egress treatment, interruption conditions, "
+                    "and customer-isolation controls before comparing hourly prices. A cheap advertised "
+                    "hour with an unavailable allocation is not inventory. Use NVIDIA DCGM metrics "
+                    "for device utilization, memory pressure, errors, and temperature, then join them "
+                    "to scheduler allocations and signed customer usage events. DCGM utilization alone "
+                    "cannot determine billable tokens or attribute shared GPU time reliably. Capture "
+                    "vLLM token counters and request timings, and let LiteLLM route only among providers "
+                    "approved for that customer's model, geography, and data-handling requirements. "
+                    "Track queue delay separately from generation speed; a fast decoder behind a long "
+                    "queue can miss the customer's response target. Synthetic probes should use "
+                    "operator-owned prompts without confidential content. For enterprise zero-data-retention "
+                    "commitments, disable prompt and response capture throughout proxies, tracing, "
+                    "exception reporting, and backups. Retain only the minimum contractually permitted "
+                    "billing metadata, with an explicit expiry schedule. If the only fallback provider "
+                    "has incompatible retention terms, reject the request rather than silently "
+                    "breaking the contract."
+                ),
+                (
+                    "On telecom, join quoted rates to destination prefixes, billing increments, "
+                    "minimum charges, surcharges, and effective dates before evaluating least-cost "
+                    "routing. Telnyx or another contracted carrier supplies account-specific prices "
+                    "and call records; generic public marketing rates cannot settle an invoice. "
+                    "Twilio's messaging and Trust Hub interfaces expose supported onboarding workflows, "
+                    "but provider registration interfaces do not imply direct unrestricted access "
+                    "to The Campaign Registry. Track brand and campaign states, use-case restrictions, "
+                    "number assignments, and carrier feedback as separate objects. Registration does "
+                    "not establish recipient permission or make a prohibited message acceptable. "
+                    "STIR/SHAKEN authentication and mitigation duties follow the provider's role under "
+                    "47 CFR 64.6301 and 64.6305; avoid presenting an attestation level as proof of "
+                    "customer identity beyond what the originating provider actually verified. Measure "
+                    "answer-seizure ratio, average call duration, post-dial delay, and verified customer "
+                    "complaints by route and traffic class. A cheaper route with false answer supervision "
+                    "can raise billed minutes while reducing useful completions. Run bounded test "
+                    "traffic to numbers the operator controls, then increase allocation gradually. "
+                    "When quality or required filing evidence fails, shift only to a prequalified "
+                    "route and stop traffic if none exists. Never repair margin by relaxing "
+                    "destination restrictions or customer screening."
+                ),
+                (
+                    "Make the prepaid wallet an internal double-entry ledger reconciled to Stripe, "
+                    "not a mutable balance stored only in a checkout session. A successful payment "
+                    "event can fund service credits under the agreed policy, but disputes, refunds, "
+                    "settlement delays, and payment-method behavior still require reserves. Verify "
+                    "webhook signatures, deduplicate event identifiers, and handle events arriving "
+                    "out of order. Reserve estimated spend before dispatch, settle actual metered "
+                    "usage afterward, and release unused reservations exactly once. Apply separate "
+                    "ceilings to customer credit, provider exposure, concurrent jobs, call destinations, "
+                    "and campaign throughput. The internal ledger is authoritative for spend permission; "
+                    "the processor remains authoritative for payment events. Cache static registry "
+                    "evidence aggressively, refresh rate decks on effective-date changes, and refresh "
+                    "capacity just before committing a quote. Each connector needs explicit timeouts, "
+                    "bounded retries, exponential backoff with jitter, and a circuit breaker. Respect "
+                    "Retry-After and provider-specific quotas instead of copying a universal requests-per-second "
+                    "setting across services. Store a last-success timestamp and fail closed only for "
+                    "the decision that needs fresh evidence. A stale prospecting record can wait; "
+                    "an uncertain prepaid balance must stop additional consumption. These controls "
+                    "protect the spread when upstream services remain billable during a downstream "
+                    "collection failure."
+                ),
+            ],
+            "table": {
+                "caption": (
+                    "Named Resource Directory, Entries 9–18: Network Evidence, "
+                    "GPU Telemetry, Carrier APIs, and Payment Rails"
+                ),
+                "headers": [
+                    "Named source and exact access",
+                    "Cost tier and commercial boundary",
+                    "Refresh latency and rate hygiene",
+                    "Fallback and decision-specific evidence",
+                ],
+                "rows": [
+                    [
+                        (
+                            "ARIN RDAP: request https://rdap.arin.net/registry/ip/{address} "
+                            "or /autnum/{number}, following authoritative referrals when returned."
+                        ),
+                        (
+                            "Public registration lookups require no commercial subscription; "
+                            "registration does not prove a lessor's contractual authority."
+                        ),
+                        (
+                            "Cache allocation records daily and recheck before "
+                            "address leasing; respect service responses and referral boundaries."
+                        ),
+                        (
+                            "Obtain allocation-chain documents and a verified authorization "
+                            "letter; compare them with the responsible regional registry."
+                        ),
+                    ],
+                    [
+                        (
+                            "RIPEstat routing evidence: query https://stat.ripe.net/data/routing-status/data.json "
+                            "with the resource parameter and consult documented validation endpoints."
+                        ),
+                        (
+                            "Public routing evidence is available without buying "
+                            "transit; it observes routes rather than guaranteeing reachability."
+                        ),
+                        (
+                            "Refresh candidate prefixes every fifteen minutes during "
+                            "evaluation; cache responses and follow published API usage limits."
+                        ),
+                        (
+                            "Use an independently operated RPKI validator and "
+                            "another public route collector before accepting conflicting route evidence."
+                        ),
+                    ],
+                    [
+                        (
+                            "PeeringDB: query https://www.peeringdb.com/api/net and related "
+                            "facility or exchange objects using documented authentication rules."
+                        ),
+                        (
+                            "Public directory access supports research; paid transport, "
+                            "cross-connects, and port commitments require separate commercial quotes."
+                        ),
+                        (
+                            "Refresh shortlisted networks daily, using supported incremental "
+                            "filters where documented and backing off on throttling."
+                        ),
+                        (
+                            "Verify facility presence with the network operations "
+                            "contact and facility quote; self-reported entries can lag reality."
+                        ),
+                    ],
+                    [
+                        (
+                            "RIPE Atlas: inspect measurements or create authorized "
+                            "tests through https://atlas.ripe.net/api/v2/ using an account and credentials."
+                        ),
+                        (
+                            "Public results can support research; active measurements "
+                            "consume credits and remain subject to platform limits."
+                        ),
+                        (
+                            "Schedule only necessary probes, record vantage points "
+                            "and timestamps, and honor concurrent measurement restrictions."
+                        ),
+                        (
+                            "Run ping and traceroute from operator-controlled hosts; "
+                            "compare multiple vantage points before attributing a latency fault."
+                        ),
+                    ],
+                    [
+                        (
+                            "Lambda GPU catalog: query https://cloud.lambdalabs.com/api/v1/instance-types "
+                            "with a scoped account credential and inspect regional availability."
+                        ),
+                        (
+                            "Catalog access requires an account; compute, storage, "
+                            "egress, and reservation terms follow the current contracted price."
+                        ),
+                        (
+                            "Cache catalogs for five minutes; verify allocation "
+                            "before quoting and honor account-specific API throttling."
+                        ),
+                        (
+                            "Obtain a written bare-metal offer from another "
+                            "approved supplier, matching GPU, interconnect, isolation, and term."
+                        ),
+                    ],
+                    [
+                        (
+                            "NVIDIA DCGM Exporter: scrape the configured Prometheus "
+                            "metrics endpoint on operator-controlled GPU nodes."
+                        ),
+                        (
+                            "Exporter software avoids a per-request data fee; "
+                            "hardware, telemetry storage, and operator work still cost money."
+                        ),
+                        (
+                            "Start with fifteen-second scrapes and bounded retention; "
+                            "restrict endpoint access and avoid unnecessarily high-cardinality labels."
+                        ),
+                        (
+                            "Compare scheduler allocation records with nvidia-smi "
+                            "snapshots; device counters alone never establish customer billable usage."
+                        ),
+                    ],
+                    [
+                        (
+                            "vLLM and LiteLLM: collect the deployed vLLM "
+                            "/metrics endpoint and configured gateway usage events."
+                        ),
+                        (
+                            "Self-hosted components use infrastructure capacity; hosted "
+                            "features and upstream token charges depend on selected plans."
+                        ),
+                        (
+                            "Scrape performance metrics every fifteen seconds; process "
+                            "usage events continuously with deduplication and bounded queues."
+                        ),
+                        (
+                            "Reconcile gateway request identifiers against provider usage "
+                            "exports; stop disputed metering classes rather than estimating invoices."
+                        ),
+                    ],
+                    [
+                        (
+                            "Twilio Messaging and Trust Hub: use "
+                            "https://messaging.twilio.com/v1/Services and https://trusthub.twilio.com/v1/ through documented onboarding workflows."
+                        ),
+                        (
+                            "Account access precedes usage; registration, campaign, "
+                            "number, carrier, and messaging charges follow current published terms."
+                        ),
+                        (
+                            "Prefer documented status callbacks; poll unresolved states "
+                            "hourly and respect endpoint-specific concurrency and request limits."
+                        ),
+                        (
+                            "Use provider console records and support evidence; "
+                            "never activate a campaign merely because submission succeeded."
+                        ),
+                    ],
+                    [
+                        (
+                            "Telnyx carrier APIs: use https://api.telnyx.com/v2/number_orders "
+                            "and documented reporting endpoints with restricted API credentials."
+                        ),
+                        (
+                            "Commercial accounts incur contracted number and traffic "
+                            "charges; account-specific rate decks govern actual route economics."
+                        ),
+                        (
+                            "Ingest signed events promptly and reconcile daily "
+                            "records; obey documented limits and avoid repeated order submissions."
+                        ),
+                        (
+                            "Use portal exports and a prequalified alternate "
+                            "carrier; preserve order identifiers before retrying any purchase."
+                        ),
+                    ],
+                    [
+                        (
+                            "Stripe: access https://api.stripe.com/v1/payment_intents and signed "
+                            "webhook events through account-scoped, least-privilege credentials."
+                        ),
+                        (
+                            "Payment processing follows account pricing; dispute, "
+                            "refund, currency, and product charges require explicit modeling."
+                        ),
+                        (
+                            "Process events as received and reconcile daily; "
+                            "use idempotency keys, bounded retries, and documented rate handling."
+                        ),
+                        (
+                            "Replay verified events into the internal ledger; "
+                            "suspend new spending when available credit cannot be established."
+                        ),
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before a quote becomes consumable capacity",
+                "body": (
+                    "A quote can remain draft while evidence is incomplete; "
+                    "purchased capacity and customer consumption require these checks."
+                ),
+                "items": [
+                    (
+                        "Verify the legal entity, authorized buyer, intended workload, "
+                        "and relevant carrier filing evidence against current source records."
+                    ),
+                    (
+                        "Confirm allocatable GPU inventory or qualified carrier capacity, "
+                        "effective buy rates, cancellation exposure, and a tested fallback."
+                    ),
+                    (
+                        "Reserve sufficient prepaid credit atomically and prove duplicate "
+                        "events cannot grant additional spend or bill usage twice."
+                    ),
+                    (
+                        "Test customer isolation, payload-retention settings, metering attribution, "
+                        "and stop controls before allowing production workloads or traffic."
+                    ),
+                ],
+            },
+        },
+        {
+            "heading": "3. Turn the enrichment waterfall into fifteen measurable operator plays",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The fifteen mappings below translate information into decisions; their unit "
+                    "examples are illustrations, not additional scorecard forecasts. Only the supplied "
+                    "registry play uses a canonical play identifier. Play one, "
+                    "newly_registered_domain_trigger_arbitrage, uses the $210 diagnostic-mailer batch "
+                    "described above and suppresses uncertain entity matches. Play two, reserved GPU "
+                    "blocks to burst hours, buys a 100-hour block at $2.00 per hour and sells 80 hours "
+                    "at $3.00, leaving $40 before other costs; break-even utilization is 66.67% before "
+                    "those costs, so reject the commitment when qualified demand falls below the "
+                    "threshold. Play three, isolated GPU slicing, sells four compatible profiles at "
+                    "$0.90 per hour against a $2.40 device-hour commitment, leaving $1.20 before "
+                    "platform expense only when all four are occupied. Confirm supported MIG profiles "
+                    "and workload fit rather than treating memory fractions as identical performance. "
+                    "Play four, interruption-tolerant batch placement, compares $12 of cheap execution "
+                    "plus $4 expected retry expense against $20 uninterrupted execution; choose the "
+                    "stable provider when checkpoint recovery consumes that $4 saving. Play five, "
+                    "multi-provider inference routing, sells one million consistently defined blended "
+                    "tokens for $4 against $2.80 upstream cost, leaving $1.20 before gateway expense. "
+                    "If model quality or retention terms differ, remove that provider from the "
+                    "comparison instead of averaging incompatible tokens."
+                ),
+                (
+                    "Play six, prompt-cache-aware inference, buys 0.6 million ordinary input tokens "
+                    "at $2 per million and 0.4 million eligible cached tokens at $0.20, totaling "
+                    "$1.28 rather than $2.00. Price cache writes, expiry, and output tokens separately, "
+                    "and disable the tactic where retention terms prohibit caching. Play seven, "
+                    "deadline-flexible inference batching, compares $15 batch cost with $25 immediate "
+                    "cost for the same defined job, saving $10 before orchestration; use immediate "
+                    "service when the customer's deadline cannot tolerate batch completion. Play eight, "
+                    "prepaid enterprise capacity pools, charges $600 for an explicitly expiring service "
+                    "allocation with $390 modeled upstream usage, creating $210 contribution before "
+                    "overhead while recording unused credits as required by the contract and accounting "
+                    "treatment. Play nine, regional latency placement, pays an extra $0.30 per GPU-hour "
+                    "to support a $0.60 premium, leaving $0.30 before additional network cost; withdraw "
+                    "the premium if measured customer latency does not improve. Play ten, SIP least-cost "
+                    "routing, sells 100,000 billable minutes at $0.010 against $0.006 termination cost, "
+                    "leaving $400 before origination and other charges. Normalize billing increments "
+                    "and surcharges first. If a cheaper route degrades completion quality, use the "
+                    "qualified route even when its nominal spread is smaller. Every comparison "
+                    "retains the tariff version and measurement window."
+                ),
+                (
+                    "Play eleven, DID inventory matching, assigns 100 authorized numbers at $1.50 "
+                    "monthly against $0.80 rental, leaving $70 before emergency-service, messaging, "
+                    "support, and unused-inventory costs; release speculative inventory according to "
+                    "contract rather than stockpiling scarce numbers. Play twelve, 10DLC provisioning "
+                    "service, charges a $75 setup fee against $25 of direct processing expense, "
+                    "leaving $50 before separately disclosed pass-through registration charges. Reject "
+                    "unsupported use cases instead of repeatedly resubmitting campaigns. Play thirteen, "
+                    "IPv4 capacity leasing, prices a usable 256-address block at $0.50 per address "
+                    "monthly against $0.35 acquisition cost, leaving $38.40 before routing and abuse "
+                    "handling; require leasing authority and coherent routing evidence before activation. "
+                    "Play fourteen, committed transit aggregation, collects four authorized $150 "
+                    "allocations against a $400 port commitment, leaving $200 before cross-connect "
+                    "and overage expense. Respect the actual billing method, including percentile "
+                    "charging, and avoid treating oversubscribed peak capacity as dedicated bandwidth. "
+                    "Play fifteen, power-window GPU scheduling, moves 200 flexible device-hours into "
+                    "a contracted window saving $0.20 each, or $40, but forfeits the tactic when "
+                    "deadlines require immediate execution. These fourteen additional mappings are "
+                    "chapter-specific operating labels, not invented catalog identifiers. Across all "
+                    "fifteen, require verified resale rights, measurable delivered units, and a fallback "
+                    "that preserves customer constraints before counting any spread."
+                ),
+            ],
+            "table": {
+                "caption": (
+                    "Five-Stage Enrichment Waterfall: Cheapest Reliable Evidence "
+                    "Before Paid Enrichment or Capacity Commitments"
+                ),
+                "headers": [
+                    "Waterfall stage and source",
+                    "Join key and retained evidence",
+                    "Spend or confidence decision",
+                    "Failure handling and next action",
+                ],
+                "rows": [
+                    [
+                        (
+                            "First, process approved CZDS snapshots and authoritative "
+                            "RDAP responses before buying commercial domain intelligence."
+                        ),
+                        (
+                            "Retain normalized domain, observation time, source snapshot "
+                            "hash, registration date when available, and redaction state."
+                        ),
+                        (
+                            "Pay only for candidates passing freshness and "
+                            "business-relevance filters; delegation alone never proves buying intent."
+                        ),
+                        (
+                            "Suppress snapshot-gap artifacts and keep uncertain dates "
+                            "out of customer-facing claims until independently corroborated."
+                        ),
+                    ],
+                    [
+                        (
+                            "Second, join official company filings with public "
+                            "business websites and corroborating company identifiers."
+                        ),
+                        (
+                            "Use legal entity identifier, jurisdiction, documented "
+                            "domain relationship, and separately classified business mailing address."
+                        ),
+                        (
+                            "Require corroboration beyond token similarity before "
+                            "mailing; shared agents and generic names reduce confidence."
+                        ),
+                        (
+                            "Send ambiguous matches to human review or "
+                            "discard them without attempting to recover private registrant details."
+                        ),
+                    ],
+                    [
+                        (
+                            "Third, run bounded DNS and HTTPS diagnostics "
+                            "using dnspython alternatives such as dig, curl, or standard resolver tools."
+                        ),
+                        (
+                            "Store command version, resolver, timestamp, authoritative "
+                            "response, HTTP status, and the exact limited path checked."
+                        ),
+                        (
+                            "Score observed technical defects only; private Search "
+                            "Console evidence requires explicit property-owner access."
+                        ),
+                        (
+                            "Recheck after seventy-two hours and suppress transient "
+                            "setup failures before producing a private technical diagnostic."
+                        ),
+                    ],
+                    [
+                        (
+                            "Fourth, inspect customer-authorized workload and traffic "
+                            "samples against approved provider catalogs and carrier rate decks."
+                        ),
+                        (
+                            "Bind model version, GPU profile, destination prefix, "
+                            "billing increment, rate effective date, and customer constraints."
+                        ),
+                        (
+                            "Purchase a small paid test only when "
+                            "compatible supply and expected contribution justify its bounded cost."
+                        ),
+                        (
+                            "Use synthetic operator-owned inputs when customer samples "
+                            "cannot be retained; reject mismatched model or routing economics."
+                        ),
+                    ],
+                    [
+                        (
+                            "Fifth, reserve prepaid credit and capacity through "
+                            "idempotent ledger operations before allowing billable consumption."
+                        ),
+                        (
+                            "Link quote identifier, payment event, wallet reservation, "
+                            "provider order, usage events, and final settlement record."
+                        ),
+                        (
+                            "Require available credit and exposure headroom together; "
+                            "a positive customer balance alone does not fund upstream commitments."
+                        ),
+                        (
+                            "Stop new dispatch on uncertain balances and "
+                            "reconcile existing work before releasing credit or retrying orders."
+                        ),
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Capture source evidence without merging identities",
+                    "action": (
+                        "Download approved bulk records, query shortlisted identifiers, "
+                        "and preserve source timestamps and response hashes."
+                    ),
+                    "detail": (
+                        "Keep domains, companies, networks, and carrier accounts as "
+                        "separate records connected by explicit evidence-backed relationships."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Run the bounded seventy-two-hour diagnostic",
+                    "action": (
+                        "Check DNS and limited public HTTP endpoints at observation, "
+                        "twenty-four hours, and seventy-two hours."
+                    ),
+                    "detail": (
+                        "Throttle per host, honor access restrictions, omit intrusive "
+                        "testing, and describe absent sitemap paths or indexing evidence precisely."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Price a reproducible delivered unit",
+                    "action": (
+                        "Compare compatible GPU-hours, consistently defined tokens, "
+                        "or tariff-normalized telecom minutes using versioned buy rates."
+                    ),
+                    "detail": (
+                        "Include utilization, retries, egress, increments, surcharges, "
+                        "and customer restrictions; label illustrative assumptions separately."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Reserve, dispatch, and reconcile exactly once",
+                    "action": (
+                        "Reserve wallet credit, place an idempotent capacity order, "
+                        "meter delivered usage, and reconcile provider settlement."
+                    ),
+                    "detail": (
+                        "Release unused reservations once, quarantine conflicting "
+                        "usage evidence, and preserve a tested stop path for new consumption."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "4. Reconcile the evidence pipeline to Formula v2.0 and daily controls",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Keep the scorecard bridge visible in every dashboard. Conservative gross "
+                    "billings of $150,000 less 35% upstream cost of $52,500 leave $97,500 retained "
+                    "contribution; subtract the $70,500 residual cost allowance to reach $27,000 "
+                    "owner profit. Base gross billings of $675,000 less $236,250 upstream cost leave "
+                    "$438,750 retained contribution; subtract $249,750 to reach $189,000. Scaled "
+                    "gross billings of $1,200,000 less $420,000 upstream cost leave $780,000; subtract "
+                    "$324,000 to reach $456,000. Those profits equal 18%, 28.0%, and 38% of gross "
+                    "billings, or 27.69%, 43.08%, and 58.46% of retained contribution after rounding. "
+                    "Use the supplied 65% retained-share convention consistently, while applying "
+                    "ASC 606 principal-versus-agent analysis to actual contracts rather than treating "
+                    "a spreadsheet percentage as an accounting conclusion. Agent arrangements "
+                    "generally report the applicable net fee, while principal arrangements require "
+                    "their own gross presentation analysis. Customer application sales, merchant "
+                    "transaction volume, and unrelated underlying business activity never enter this "
+                    "desk's revenue. Neither does the face value of unused prepaid service credit "
+                    "automatically become earned revenue. The unit examples above explain selection "
+                    "mechanics; their individual spreads are not substitutes for the canonical "
+                    "annual scenario mix or retained-share assumption."
+                ),
+                (
+                    "Do not force the stated $2,000–$14,000 monthly operating-expense range to equal "
+                    "every residual cost in the annual scenarios. The scorecard arithmetic implies "
+                    "monthly residual allowances of $5,875, $20,812.50, and $27,000 after upstream "
+                    "cost and before owner profit. Because the latter two exceed the stated operating "
+                    "range, obtain an explicit bridge for staffing, contractors, selling expense, "
+                    "payment costs, reserves, and other included buckets; do not invent allocations. "
+                    "Keep the team assumptions unchanged at one full-time operator plus two "
+                    "contractors for Conservative and Base, and two full-time operators plus three "
+                    "contractors for Scaled. Startup capital remains $10,000–$60,000 and time to first "
+                    "deal remains one to four months. Track cash exposure independently of reported "
+                    "margin: a prepaid customer wallet can reduce collection risk while a noncancelable "
+                    "bare-metal commitment still drains cash during idle weeks. Build a daily "
+                    "utilization forecast from purchased device-hours, qualified booked demand, and "
+                    "contract expiry dates. Stress GPU generation price compression and simultaneous "
+                    "customer departures before renewing capacity. For telecom, stress destination "
+                    "mix shifts and newly effective surcharges. When the resulting cash requirement "
+                    "exceeds the funded reserve, reduce new commitments rather than disguising "
+                    "idle capacity as an enrichment or marketing expense."
+                ),
+                (
+                    "Run the production pipeline as a small set of accountable services: registry "
+                    "collector, evidence store, pricing engine, prepaid ledger, dispatch controller, "
+                    "metering reconciler, and exception queue. Python's sqlite3 supports an initial "
+                    "single-writer evidence store, while hashlib, urllib.request, json, and scheduled "
+                    "jobs support straightforward collection without an oversized integration stack. "
+                    "Move operational concurrency to a suitable transactional database when needed; "
+                    "the chapter's module itself requires no external packages. Keep credentials "
+                    "outside exported evidence, scope each connector narrowly, and log identifiers "
+                    "rather than customer payloads. Test restored backups, replayed webhooks, stale "
+                    "rate decks, missing GPU counters, and duplicated call records before increasing "
+                    "volume. Screen prohibited mining, abusive calling, and unsupported messaging "
+                    "patterns against documented acceptable-use rules, with bounded review and a "
+                    "working suspension path. Apply 47 U.S.C. 227 and implementing calling rules "
+                    "to the actual traffic, not merely to the customer's campaign registration. "
+                    "Track false-positive suspensions alongside confirmed abuse so controls remain "
+                    "measurable. Finish each day with three reconciliations: customer usage to "
+                    "customer charges, upstream usage to supplier charges, and processor movements "
+                    "to wallet liabilities. Any unexplained difference receives an owner, amount, "
+                    "age, and next action. Information becomes an edge only when it changes "
+                    "a reproducible purchase, price, or stop decision."
+                ),
+            ],
+            "table": {
+                "caption": (
+                    "Formula v2.0 Control Matrix: Gross Billings, Retained "
+                    "Contribution, Owner Profit, and Evidence Responsibilities"
+                ),
+                "headers": [
+                    "Scenario or control boundary",
+                    "Gross and retained contribution bridge",
+                    "Profit, margin, and team evidence",
+                    "Required reconciliation or corrective action",
+                ],
+                "rows": [
+                    [
+                        (
+                            "Conservative annual case preserves the supplied "
+                            "$150,000 gross-billings basis and small initial operating team."
+                        ),
+                        (
+                            "$150,000 less $52,500 upstream cost equals $97,500 "
+                            "retained contribution using the fixed 65% share."
+                        ),
+                        (
+                            "$27,000 owner profit equals 18% gross margin "
+                            "and 27.69% retained margin; retain 1 FT + 2 C."
+                        ),
+                        (
+                            "Reconcile the remaining $70,500 annual cost allowance "
+                            "to documented expense buckets without changing the scorecard."
+                        ),
+                    ],
+                    [
+                        (
+                            "Base annual case preserves the supplied $675,000 "
+                            "gross-billings basis and unchanged core operating team."
+                        ),
+                        (
+                            "$675,000 less $236,250 upstream cost equals $438,750 "
+                            "retained contribution using the fixed 65% share."
+                        ),
+                        (
+                            "$189,000 owner profit equals 28.0% gross margin "
+                            "and 43.08% retained margin; retain 1 FT + 2 C."
+                        ),
+                        (
+                            "Bridge the $249,750 residual annual allowance explicitly; "
+                            "its $20,812.50 monthly equivalent exceeds the stated operating range."
+                        ),
+                    ],
+                    [
+                        (
+                            "Scaled annual case preserves the supplied $1,200,000 "
+                            "gross-billings basis and five-person total operating structure."
+                        ),
+                        (
+                            "$1,200,000 less $420,000 upstream cost equals $780,000 "
+                            "retained contribution using the fixed 65% share."
+                        ),
+                        (
+                            "$456,000 owner profit equals 38% gross margin "
+                            "and 58.46% retained margin; retain 2 FT + 3 C."
+                        ),
+                        (
+                            "Bridge the $324,000 residual annual allowance explicitly; "
+                            "its $27,000 monthly equivalent cannot fit the narrower operating range."
+                        ),
+                    ],
+                    [
+                        (
+                            "Prepaid wallet control separates funded service credits "
+                            "from earned usage charges and processor settlement movements."
+                        ),
+                        (
+                            "Record payment, credit reservation, usage settlement, "
+                            "release, refund, and dispute as distinct linked ledger events."
+                        ),
+                        (
+                            "Daily reconciliation assigns each unexplained difference "
+                            "an amount, responsible operator, age, and next action."
+                        ),
+                        (
+                            "Suspend new consumption when available credit is "
+                            "uncertain; do not repair discrepancies by editing historical events."
+                        ),
+                    ],
+                    [
+                        (
+                            "Revenue presentation control separates the scorecard "
+                            "retained-share convention from contract-specific principal or agent conclusions."
+                        ),
+                        (
+                            "Preserve gross billings and upstream settlements as "
+                            "separate measures even where applicable revenue presentation is net."
+                        ),
+                        (
+                            "Exclude customer business volume and unearned prepaid "
+                            "balances from earned operator revenue and owner-profit calculations."
+                        ),
+                        (
+                            "Document contract classification and accounting treatment "
+                            "before publishing dashboards that label retained contribution as revenue."
+                        ),
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "The best capacity spread is the one whose identity, availability, "
+        "metering, and settlement evidence survive the same audit."
+    ),
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        (
+            "Create separate domain, legal-entity, carrier, network, and customer "
+            "records with source timestamps, hashes, and evidence-backed joins."
+        ),
+        (
+            "Obtain approved CZDS access, discover authoritative .us RDAP through "
+            "IANA, and implement bounded seventy-two-hour DNS and HTTP diagnostics."
+        ),
+        (
+            "Snapshot relevant FCC records and carrier rate decks before activation; "
+            "assign daily change review to a named operator."
+        ),
+        (
+            "Benchmark compatible H100, H200, and B200 offers using DCGM, scheduler "
+            "allocations, token metering, and customer-specific retention constraints."
+        ),
+        (
+            "Implement an idempotent prepaid ledger with atomic reservations, signed "
+            "payment-event verification, exposure ceilings, and tested consumption stops."
+        ),
+        (
+            "Publish the three exact scorecard bridges and resolve the residual "
+            "expense scope before increasing bare-metal or carrier commitments."
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 CFR 64.6301 — Caller ID authentication",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.6301",
+            "relevance": (
+                "Determine applicable caller-ID authentication duties from the "
+                "provider's actual role and network circumstances before activating voice service."
+            ),
+        },
+        {
+            "title": "47 CFR 64.6305 — Robocall mitigation and certification",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.6305",
+            "relevance": (
+                "Review applicable mitigation, database certification, and traffic "
+                "acceptance requirements; preserve current evidence for relevant counterparties."
+            ),
+        },
+        {
+            "title": "47 CFR 54.706 — Contributions",
+            "url": "https://www.ecfr.gov/current/title-47/section-54.706",
+            "relevance": (
+                "Evaluate contribution obligations using actual telecommunications "
+                "services and revenue classifications rather than assuming wholesale purchase resolves them."
+            ),
+        },
+        {
+            "title": "47 CFR 54.711 — Contributor reporting requirements",
+            "url": "https://www.ecfr.gov/current/title-47/section-54.711",
+            "relevance": (
+                "Connect applicable reporting obligations to the operator's "
+                "service role, supporting records, and relevant Form 499 reporting process."
+            ),
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Assess calling and messaging practices against statutory restrictions; "
+                "campaign registration and prepaid funding do not establish recipient permission."
+            ),
+        },
+        {
+            "title": "47 CFR 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": (
+                "Translate applicable calling and messaging restrictions into "
+                "customer screening, traffic controls, suppression handling, and operational evidence."
+            ),
+        },
+    ],
+}
