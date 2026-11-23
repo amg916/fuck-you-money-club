@@ -5,549 +5,695 @@ CHAPTER_1 = {
     "chapter_id": "Q1",
     "chapter_number": 1,
     "question_number": 1,
-    "slug": "buying-group-card-float-ticket-allocation-arbitrage",
-    "question_prompt": "What exactly is buying group, card-float & ticket allocation arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
+    "slug": "buying-group-commercial-card-float-rebate-arbitrage",
+    "question_prompt": "What exactly is buying group, commercial card-float & rebate arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
     "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Buying Group, Card-Float & Ticket Allocation Arbitrage?",
-    "subtitle": "Pre-Committed Wholesale Orders, Issuer-Eligible Rewards, SkyBox Allocation Controls, ASC 606 Boundaries, and BOTS Act Execution",
+    "title": "What Exactly Is Buying Group, Commercial Card-Float & Rebate Arbitrage?",
+    "subtitle": "Pre-Committed Warehouse Fulfillment, Eligible Card Rebates, ASC 606 Boundaries, IRC Records, and Cash-Matched Treasury Operations",
     "layout_template": "opportunity_overview",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41 ranks #09 of 42 with a Money-to-Manpower Score of 93/100. "
-        "Its edge is controlled inventory turnover, not limitless credit: secure genuine wholesale commitments, "
-        "collect eligible commercial-card rewards, and monetize transferable ticket allocations without defeating purchase restrictions. "
-        "This chapter maps 11 operator plays across buying groups, reward administration, ticket brokerage, and conditional customs coordination. "
-        "Formula v2.0 produces annual owner profit of $20,000 Conservative, $143,500 Base, and $360,000 Scaled. "
-        "Those profits follow a 35% retained-spread planning assumption, not automatic recognition of every reimbursement as operator revenue. "
-        "Durability comes from settlement evidence, issuer eligibility, documented inventory rights, and loss limits. "
-        "Historical Section 321 economics require separate treatment because changed import rules invalidate blanket duty-free parcel assumptions."
+        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score. "
+        "The business combines three separately measured engines: pre-committed wholesale "
+        "fulfillment, eligible commercial-card and shopping-portal rebates, and bank or "
+        "Treasury income on genuinely available cash. This chapter maps 11 operator plays, "
+        "including a border-routing adjacency that cannot support assumed duty savings "
+        "under suspended de minimis treatment. Formula v2.0 fixes annual owner profit at "
+        "$20,000 Conservative, $143,500 Base, and $360,000 Scaled. Its 35% retained-share "
+        "bridge is a modeling assumption, not an automatic accounting election or an "
+        "observed buying-group spread. Durable operators win through accepted deliveries, "
+        "cleared ACH settlements, documented reward eligibility, and reserves that repay "
+        "every card balance even when counterparties stop paying."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross activity basis; $87,500 retained spread at 35%.",
-            "note": "8% gross-basis margin; $20,000 owner profit; 1 FT + 2 C; 22.86% retained margin.",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross activity basis; $358,750 retained spread at 35%.",
-            "note": "14.0% gross-basis margin; $143,500 owner profit; 1 FT + 2 C; 40.0% retained margin.",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross activity basis; $630,000 retained spread at 35%.",
-            "note": "20% gross-basis margin; $360,000 owner profit; 2 FT + 3 C; 57.14% retained margin.",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Define the business by inventory rights, collection timing, and retained economics",
+            "heading": "1. Separate the three engines before committing purchase capital",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Buying-group, card-float, and ticket-allocation arbitrage combines three distinct economic engines: a contracted merchandise spread, an eligible payment reward, and a transferable inventory or brokerage spread. "
-                    "The operator first obtains a genuine buying-group commitment identifying product, quantity, reimbursement, warehouse, inspection rules, and settlement trigger. "
-                    "They purchase through an authorized retailer, preserve serial-number evidence, deliver against that commitment, and reconcile the resulting receivable. "
-                    "Separately, a ticket operator acquires or represents valid inventory and sells it through permitted exchange or corporate channels. "
-                    "Float is the interval between cash outflow becoming payable and settlement arriving; it is working-capital timing, not revenue. "
-                    "Candidate #41 earns its 93/100 score from revenue potential of 23, margin potential of 24, team efficiency of 20, startup accessibility of 13, and automation potential of 13. "
-                    "Those components describe a small-team operating hypothesis, not proof that a particular counterparty pays reliably. "
-                    "The proposed startup capital is $10,000–$55,000, with first transactions expected within one to three months. "
-                    "Capital must cover outstanding purchases, shipping, refunds, and a failed settlement cycle without assuming another card remains available. "
-                    "A warehouse address in Delaware, New Hampshire, or Oregon establishes a delivery location; it does not independently establish tax treatment, legal title, acceptance, or credit quality. "
-                    "Underwrite those facts separately before treating a purchase order as collectible."
+                    "Buying-group arbitrage begins with a genuine purchase commitment, not a reward "
+                    "screenshot. An operator accepts a specified quantity, merchandise description, "
+                    "delivery address, purchase window, and reimbursement schedule from a counterparty "
+                    "such as BuyForMeRetail, Pointsmaker, or MaxOutDeals. The operator purchases eligible "
+                    "goods, documents ownership and shipment, and delivers to the designated receiving "
+                    "warehouse. A Delaware, New Hampshire, or Oregon destination can change sales-tax "
+                    "collection facts, but the address alone does not establish a resale exemption "
+                    "or eliminate obligations elsewhere. Confirm the seller's sourcing treatment, "
+                    "any applicable resale certificate, possession history, and downstream disposition. "
+                    "For an illustrative $10,000 merchandise order, a $10,050 committed payment "
+                    "creates $50 of merchandise spread. An eligible 2% card rebate adds $200; "
+                    "$80 shipping, $20 insurance, and a $30 expected-loss allowance leave $120 "
+                    "before overhead. A denied rebate turns that same order into an $80 loss. "
+                    "BuyForMeRetail and the other named counterparties are diligence starting points, "
+                    "not assertions of current acceptance or payment terms. The purchase record must "
+                    "identify who bears rejection, transit, and return risk. A profitable order is "
+                    "one that survives those allocations, not merely one that earns points at checkout."
                 ),
                 (
-                    "The revenue boundary matters more than the headline turnover. "
-                    "The canonical gross activity basis combines wholesale buying-group reimbursements, card-rebate yields, and secondary ticket proceeds; Formula v2.0 retains 35% after landed merchandise and face-value ticket basis. "
-                    "That retained share is a planning convention for comparing operator economics, not a universal ASC 606 election. "
-                    "Under ASC 606 principal-versus-agent analysis, an operator controlling the specified goods or ticket rights before transfer may recognize gross customer consideration and record inventory cost separately. "
-                    "An agent arranging another party's transfer generally recognizes its fee or commission, not the client's entire transaction value. "
-                    "Assess control using the actual contract, fulfillment responsibility, inventory exposure, and pricing discretion; collecting the customer's money alone proves little. "
-                    "Eligible card rebates generally require analysis as purchase-related cost reductions rather than an additional customer sale, with classification following their substance and the accounting policy applied. "
-                    "Keep gross cash receipts, accounting revenue, retained contribution, and owner profit in separate ledger fields. "
-                    "A $100,000 corporate ticket order carrying a $7,000 agency commission contributes $7,000 of agency revenue, not $100,000 of revenue plus that commission. "
-                    "Likewise, do not add a rebate twice by reducing inventory cost and also crediting a reward-income line in the same contribution calculation. "
-                    "The scenario table therefore labels its gross basis explicitly."
+                    "The second engine purchases eligible rebates without mistaking spending volume "
+                    "for earnings. Rakuten and TopCashback route qualifying purchases through merchant "
+                    "offers; commercial-card rewards and targeted card offers introduce separate "
+                    "eligibility rules. A $5,000 authorized purchase earning 2% card cashback and "
+                    "an actually eligible 3% portal rebate produces $250 before fees, reversals, "
+                    "and acquisition costs. Commercial resale, excluded categories, coupon codes, "
+                    "gift cards, quantity limits, and attribution conflicts can remove the portal "
+                    "component entirely. Do not combine two portals on one order or assume a "
+                    "consumer promotion permits commercial buying. Plastiq and Melio represent a "
+                    "different implementation: paying an authentic business invoice through a "
+                    "supported card-funded rail. At an illustrative 2.9% processing charge and "
+                    "2% reward on a $10,000 invoice, the immediate result is negative $90 "
+                    "before timing benefits. A 4% eligible reward would instead produce $110 "
+                    "before other costs. These are underwriting inputs, not advertised vendor "
+                    "prices. Verify the actual quote, payee category, card network, reward base, "
+                    "and settlement method. Never buy unnecessary inventory merely to activate "
+                    "a rebate; the underlying commercial transaction must already have an "
+                    "economically defensible purpose."
                 ),
                 (
-                    "Five operator archetypes organize the shelf, while eleven mapped plays specify executable offers. "
-                    "The plays are pre-committed buying-group fulfillment, contracted wholesale sourcing, eligible reward administration, authorized working-capital scheduling, owned-ticket resale, consigned-ticket brokerage, corporate-suite brokerage, season-seat-license transfer brokerage, corporate ticket procurement, event-inventory recovery, and conditional cross-border customs coordination. "
-                    "The last play is an adjacent service, not permission to assume historical tariff savings remain available. "
-                    "An SSL means a season-seat license in this chapter; its transferability depends on the venue contract and league or team procedures. "
-                    "Neither ownership of that license nor a suite booking automatically permits unrestricted resale of every associated admission. "
-                    "Durable moats are boring and measurable: written allocations, traceable inventory, dependable settlement, accurate listings, repeat corporate buyers, and a useful record of rejected deals. "
-                    "Fragile versions substitute projected rewards for margin, confuse available credit with liquidity, or buy tickets before checking transfer restrictions. "
-                    "The operator must be able to explain the spread without invoking a future price increase. "
-                    "Use the five-archetype matrix to select one initial execution lane, then add adjacent plays only when their contracts and ledgers fit the existing controls. "
-                    "Named buying groups and software vendors below are diligence targets and workflow examples, not endorsements, verified current offers, or evidence that any particular account is eligible."
+                    "The third engine earns bank bonuses or Treasury income on cash that remains "
+                    "available after obligations and reserves. It does not transform a credit "
+                    "limit into equity. A $20,000 cash balance earning an illustrative 4.5% "
+                    "annual yield for 30 days produces approximately $73.97 using a simple "
+                    "365-day convention, before taxes and execution differences. A $300 bank "
+                    "bonus requiring $20,000 for 90 days should be compared with approximately "
+                    "$221.92 of alternative interest, leaving $78.08 of incremental value if "
+                    "the promotional account pays no interest and has no fees. Account terms "
+                    "can change both results. TreasuryDirect and a brokerage holding short "
+                    "Treasury bills are implementation choices with different transfer, sale, "
+                    "and maturity mechanics. Keep card repayment cash outside any instrument "
+                    "that cannot produce cleared funds before the due date. Across all three "
+                    "engines, the startup range is $10,000–$55,000, with first transactions "
+                    "modeled at one to three months. Five useful operator archetypes appear "
+                    "below, but they remain implementations of these three engines rather "
+                    "than five independent revenue streams. The durable advantage is disciplined "
+                    "cash conversion, not maximizing nominal credit exposure or treating "
+                    "another party's purchasing volume as earned income."
                 ),
             ],
             "table": {
-                "caption": "Five operator archetypes and the evidence separating revenue from pass-through activity",
+                "caption": "Five operator archetypes within three separately measured business engines",
                 "headers": [
-                    "Operator archetype and commercial role",
-                    "Actual source of retained operator economics",
-                    "Evidence required before committing customer capital",
-                    "Failure exposure and practical operating response",
+                    "Operator archetype and economic engine",
+                    "Named rails and operating mandate",
+                    "Unit economics and earned contribution",
+                    "Durable moat and failure response",
                 ],
                 "rows": [
                     [
-                        "Wholesale purchase-order principal delivering specifically identified merchandise",
-                        "Contracted reimbursement less landed cost plus eligible rewards",
-                        "Executed purchase commitment, warehouse acceptance terms, and settlement history",
-                        "Stop purchasing when receivables age beyond contracted settlement terms",
+                        "Pre-committed electronics fulfiller within the wholesale engine",
+                        "BuyForMeRetail or Pointsmaker commitments with verified warehouse acceptance",
+                        "$10,050 reimbursement plus $200 eligible rewards less $10,130 costs",
+                        "Preserve receiving evidence; suspend purchases when accepted invoices age",
                     ],
                     [
-                        "Commercial-card rewards and working-capital administration service operator",
-                        "Explicit administration fee or qualifying purchase-related cost reduction",
-                        "Issuer terms, cardholder authority, billing dates, and reward exclusions",
-                        "Reserve cash independently of credit availability and pending rewards",
+                        "Commercial purchase-stack specialist within the rebate engine",
+                        "Rakuten or TopCashback attribution plus independently eligible card offers",
+                        "$5,000 purchase yields $250 only when both rewards survive",
+                        "Archive offer exclusions; price transactions without disputed portal proceeds",
                     ],
                     [
-                        "Owned-ticket principal carrying transferable event inventory until resale",
-                        "Buyer proceeds less ticket basis, exchange charges, and losses",
-                        "Valid admission rights, delivery evidence, transfer permission, and price history",
-                        "Mark down aging inventory before transfer deadlines destroy liquidity",
+                        "Authentic invoice-payment optimizer within the rebate engine",
+                        "Plastiq or Melio payments to supported business payees",
+                        "$10,000 invoice costs $290 against $200 illustrative cashback",
+                        "Reject negative spreads unless documented timing value exceeds costs",
                     ],
                     [
-                        "Disclosed ticket, corporate-suite, and season-seat-license brokerage agent",
-                        "Written commission earned by arranging authorized rights transfers",
-                        "Seller mandate, buyer agreement, venue restrictions, and commission schedule",
-                        "Return unearned deposits when inventory rights cannot be delivered",
+                        "Cash-matched Treasury allocator within the treasury engine",
+                        "TreasuryDirect or brokerage bills maturing before cash obligations",
+                        "$20,000 for thirty days at 4.5% earns approximately $73.97",
+                        "Match maturity and transfer buffers; retain immediately accessible repayment cash",
                     ],
                     [
-                        "Conditional customs coordination service supporting independently assessed import entries",
-                        "Documented coordination fees and verified lawful savings participation",
-                        "Current CBP treatment, broker classification, origin records, and valuation evidence",
-                        "Use lawful dutiable entries when parcel relief is unavailable",
+                        "Deposit-promotion operator within the treasury engine",
+                        "Chase business-account or other current bank promotion terms",
+                        "$300 bonus less $221.92 displaced interest leaves $78.08",
+                        "Track qualification and clawback dates without multiplying reserved cash",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Build the evidence trail before increasing transaction size",
-                "body": "Experienced operators expand against realized settlement and delivery records, not screenshots of projected spreads.",
+                "title": "Buy accepted economics rather than advertised reward percentages",
+                "body": (
+                    "A veteran operator underwrites the weakest enforceable component first, "
+                    "then treats conditional rewards as a separately monitored exposure."
+                ),
                 "items": [
-                    "For each buying group, retain the original commitment version and reconcile promised Net-3 or Net-5 timing against actual bank availability, not an ACH initiation message.",
-                    "Attach product serials, parcel weight, declared value, insurance exclusions, and warehouse receipt to one purchase identifier so a short-payment dispute can be reconstructed immediately.",
-                    "Maintain a separate reward-eligibility field for each card and merchant category; release forecast rewards into realized contribution only after posting and any relevant reversal review.",
-                    "Keep ticket acquisition basis and listing history together; a seller's apparent discount means little when comparable executable bids have already fallen below that basis.",
+                    "Save the exact commitment, warehouse identifier, receiving deadline, and reward exclusions before checkout; link all four records to one order identifier.",
+                    "Calculate a zero-portal case for every order and a zero-card-reward case for each issuer; cap purchases at the loss your reserve can absorb.",
+                    "Use verified warehouse receipt rather than carrier delivery alone to start the contractual Net-3 or Net-5 settlement clock.",
+                    "Assign each dollar to one reserve or yield sleeve; a bank-bonus balance cannot simultaneously repay a card and fund a Treasury purchase.",
                 ],
             },
         },
         {
-            "heading": "2. Compare eleven mapped plays across fifteen executable sub-verticals",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The anchor play, wholesale_buying_group_card_float_cycling, is pre-committed fulfillment financed through authorized commercial-card purchases. "
-                    "For an illustrative order, spend $10,000 on merchandise, collect a contracted $10,150 reimbursement, earn $200 of eligible cashback, and incur $60 of insured shipping. "
-                    "Retained contribution is $290 before labor, returns, financing, and other overhead. "
-                    "At an actually eligible 4% reward rate, the same order contributes $490; never substitute a promotional headline for the issuer's exclusions, caps, merchant coding, or redemption terms. "
-                    "BuyForMeRetail and Pointsmaker are named counterparty research leads, with each current offer independently checked. "
-                    "A Net-3 commitment must specify whether the clock starts at delivery, inspection, or acceptance, and whether days are business days. "
-                    "Match that verified schedule to the actual statement closing date and payment due date. "
-                    "Approximately sixty days of float can occur only with suitable products and purchase dates; some commercial products require much faster repayment or charge interest differently. "
-                    "Maintain reserved cash sufficient for the outstanding obligation even if the group delays payment and the issuer freezes the account simultaneously. "
-                    "The fallback is to stop purchases, pay the card from reserves, enforce contractual recovery rights, and resell legitimately owned goods through permitted channels when appropriate. "
-                    "Circular purchases, fictitious sales, and issuer-limit evasion are outside this operating model."
-                ),
-                (
-                    "The other ticket and service plays monetize permission, information quality, or execution rather than defeated purchase limits. "
-                    "SkyBox and Automatiq can support inventory synchronization and exchange distribution, but neither converts restricted inventory into transferable property. "
-                    "Obtain current subscription, integration, and per-transaction quotes; avoid booking assumed software savings before confirming included exchanges and settlement behavior. "
-                    "StubHub, SeatGeek, Ticketmaster resale, and other marketplaces can impose account-specific selling economics, delivery obligations, cancellations, and payout holds. "
-                    "Calculate an executable net price from the actual seller agreement instead of assuming a universal commission schedule. "
-                    "For illustration, a $200 sale with a modeled 10% seller charge and $150 acquisition basis leaves $30 before additional operating costs. "
-                    "A separate consignment agency earning 12% on $2,000 of completed sales recognizes a $240 commission before its own expenses. "
-                    "Neither percentage here represents a platform's published universal rate. "
-                    "Corporate buyers can justify a different service fee when the operator coordinates contiguous seating, invoices, and reliable transfer, but those services must actually be delivered. "
-                    "Apply 15 U.S.C. §45c to ticket acquisition and resale exposure: never bypass queues, CAPTCHA, access controls, or posted purchasing restrictions. "
-                    "Use authorized interfaces, enforce quantity limits, and retain delivery acknowledgments so automation improves accuracy rather than amplifying an invalid allocation."
-                ),
-                (
-                    "The adjacent play section_321_de_minimis_bonded_tariff_arbitrage requires a corrected premise. "
-                    "Historically, qualifying low-value imports could receive treatment under 19 U.S.C. §1321, and operators considered Canadian bonded warehouses or Tijuana IMMEX facilities for consumer fulfillment. "
-                    "Executive Order 14324 suspended duty-free de minimis treatment globally effective August 29, 2025; do not build a current offer on blanket Section 321 or Entry Type 86 availability. "
-                    "Verify subsequent orders, legislation, CBP implementation, and any applicable exceptions with the filing broker before quoting. "
-                    "Non-301 origin goods from Vietnam, India, the European Union, Bangladesh, or Cambodia are not automatically exempt merely because their origin differs from China. "
-                    "A border warehouse does not change origin, erase ordinary duties, or authorize artificial splitting to evade shipment limits. "
-                    "Historically modeled savings of 15%–42.5%, or apparel rates of 16%–32%, require product-specific classification and cannot be treated as a current universal schedule. "
-                    "For arithmetic only, a verified $10,000 duty reduction multiplied by a 40% service share yields $4,000 before fulfillment expenses; if lawful savings are zero, that contingent fee is zero. "
-                    "The fallback is ordinary dutiable entry, separately evaluated bonded procedures, or documented first-sale valuation under 19 U.S.C. §1401a where its conditions are genuinely met. "
-                    "IMMEX is a Mexican customs program, not a United States duty exemption."
-                ),
-            ],
-            "table": {
-                "caption": "Fifteen sub-vertical comparisons mapping eleven plays, explicit fee mechanics, defensible moats, and failure responses",
-                "headers": [
-                    "Sub-vertical and mapped operator play",
-                    "Named platform or concrete execution rail",
-                    "Fee structure and illustrative unit economics",
-                    "Durable moat and evidence to retain",
-                    "Clawback trigger and practical risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Pre-committed electronics fulfillment under wholesale_buying_group_card_float_cycling, TRACK_2",
-                        "BuyForMeRetail offers require independent current counterparty verification",
-                        "$10,150 reimbursement plus $200 rewards less $10,000 basis and $60 shipping leaves $290",
-                        "Written quantity commitments and serial-level warehouse acceptance history",
-                        "Delayed ACH requires purchase suspension and reserved-cash card repayment",
-                    ],
-                    [
-                        "Pre-committed household merchandise fulfillment under the same wholesale play",
-                        "Pointsmaker offers require documented current product and settlement terms",
-                        "$5,050 reimbursement plus $100 rewards less $5,000 basis and $40 freight leaves $110",
-                        "Repeat accurate deliveries and SKU-specific rejection-rate operating records",
-                        "Condition disputes require documented recovery or permitted independent resale",
-                    ],
-                    [
-                        "Contracted wholesale sourcing for buyers with documented purchasing mandates",
-                        "Authorized retailer channels and independently verified wholesale buyer contracts",
-                        "$20,000 completed sourcing order times contracted 1% commission yields $200",
-                        "Buyer-approved specifications and retailer permission for intended purchasing volumes",
-                        "Buyer cancellation eliminates unearned fees and pauses further purchasing",
-                    ],
-                    [
-                        "Eligible reward administration across documented commercial-card purchasing programs",
-                        "American Express or Chase commercial accounts subject to actual product terms",
-                        "$10,000 eligible spend at 2% yields $200; a separate 20% administration share yields $40",
-                        "Merchant-category records and reward postings reconcile to individual purchases",
-                        "Reward reversals reduce contribution and trigger merchant eligibility review",
-                    ],
-                    [
-                        "Authorized working-capital scheduling as an explicitly contracted administration service",
-                        "Issuer statements and QuickBooks Online reconcile to bank settlement records",
-                        "$40,000 administered monthly spend at an agreed 0.25% fee yields $100",
-                        "Accurate due-date calendars and cash reserves independent of available credit",
-                        "Issuer review freezes new activity while reserves satisfy existing obligations",
-                    ],
-                    [
-                        "Owned-ticket resale of verified transferable arena admission inventory",
-                        "StubHub seller account with current seller charges verified before listing",
-                        "$200 sale less modeled 10% seller charge and $150 basis leaves $30",
-                        "Section-level demand evidence and provable acquisition and transfer rights",
-                        "Cancellation or failed delivery requires funded refunds and listing removal",
-                    ],
-                    [
-                        "Owned-ticket resale of season-ticket allocations with confirmed resale permission",
-                        "SeatGeek marketplace connected only through authorized inventory distribution methods",
-                        "$180 sale less modeled 12% seller charge and $140 basis leaves $18.40",
-                        "Contracted allocation continuity and accurate event-specific demand histories",
-                        "Season-account restrictions require stopping listings and resolving venue permissions",
-                    ],
-                    [
-                        "Consigned-ticket brokerage for sellers retaining specified inventory ownership",
-                        "SkyBox-supported inventory workflow with separately negotiated software pricing",
-                        "$2,000 completed sales times a written 12% agency commission yields $240",
-                        "Seller mandates and exclusive inventory authority prevent duplicate commitments",
-                        "Seller withdrawal before execution removes listings and cancels unearned commissions",
-                    ],
-                    [
-                        "Consigned-ticket brokerage across multiple authorized exchange distribution channels",
-                        "Automatiq distribution with quoted subscription and transaction costs separately budgeted",
-                        "$5,000 completed sales at 10% agency commission less $80 allocated software cost leaves $420",
-                        "Fast inventory synchronization and reliable exception handling preserve delivery performance",
-                        "Duplicate sale requires immediate reconciliation and contract-specific buyer remediation",
-                    ],
-                    [
-                        "Corporate-suite brokerage arranging venue-authorized hospitality rights for business buyers",
-                        "SuiteHop sourcing examples supplemented by direct written venue transfer permission",
-                        "$12,000 completed suite booking times agreed 8% commission yields $960",
-                        "Repeat corporate buyer relationships and verified hospitality entitlement details",
-                        "Hospitality exclusions require corrected offers or negotiated booking cancellation",
-                    ],
-                    [
-                        "Season-seat-license transfer brokerage handling transferable contractual seating interests",
-                        "PSL Source marketplace examples subject to actual venue transfer procedures",
-                        "$15,000 completed license transfer times agreed 5% brokerage commission yields $750",
-                        "Verified license title and complete future payment obligation schedules",
-                        "Venue transfer rejection prevents commission recognition and requires deposit reconciliation",
-                    ],
-                    [
-                        "Corporate ticket procurement charging a separately agreed execution service fee",
-                        "Ticketmaster authorized inventory and direct venue corporate sales contacts",
-                        "$8,000 buyer-authorized procurement at a written 6% service fee yields $480",
-                        "Reliable contiguous seating procurement and complete corporate invoice documentation",
-                        "Unavailable inventory requires buyer-approved alternatives or return of unearned funds",
-                    ],
-                    [
-                        "Event-inventory recovery executing controlled markdowns for existing inventory owners",
-                        "SkyBox listing histories and permitted exchange price updates support execution",
-                        "$3,000 realized recovery proceeds times agreed 10% recovery commission yields $300",
-                        "Event-specific liquidation timing and documented seller-approved minimum proceeds",
-                        "Transfer deadline risk requires timely delisting or authorized alternative disposition",
-                    ],
-                    [
-                        "Mexican border fulfillment under section_321_de_minimis_bonded_tariff_arbitrage, TRACK_1",
-                        "CBP entry processing and verified Tijuana IMMEX providers require separate permissions",
-                        "Historical $10,000 verified duty savings at 40% service share yields $4,000; zero lawful savings yields zero",
-                        "Broker-confirmed current entry eligibility and auditable classification and origin records",
-                        "Suspended parcel relief requires lawful dutiable entry rather than artificial splitting",
-                    ],
-                    [
-                        "Canadian border fulfillment under the same conditional customs coordination play",
-                        "CBSA-licensed bonded warehouse arrangements and CBP filings require current broker review",
-                        "$6,000 independently verified lawful savings at 35% yields $2,100 before separately contracted fulfillment costs",
-                        "Documented customs status and independently supported United States valuation treatment",
-                        "Unsupported relief requires ordinary entry and separately evaluated first-sale documentation",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile the three annual cases without disguising throughput as earnings",
+            "heading": "2. Reconcile the scorecard without relabeling merchandise or borrowed principal",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Formula v2.0 fixes the three annual outcomes, so build the bridge rather than reverse-engineering a promotional story. "
-                    "Conservative gross activity of $250,000 multiplied by the 35% retained share produces $87,500; subtract $67,500 of remaining modeled costs to reach $20,000 owner profit. "
-                    "Base activity of $1,025,000 produces $358,750 retained contribution and $215,250 remaining costs, leaving $143,500. "
-                    "Scaled activity of $1,800,000 produces $630,000 retained contribution and $270,000 remaining costs, leaving $360,000. "
-                    "Gross-basis owner margins are exactly 8%, 14.0%, and 20%; retained-basis margins are 22.86%, 40.0%, and 57.14% after rounding. "
-                    "The corresponding 65% merchandise and ticket basis is $162,500, $666,250, and $1,170,000. "
-                    "Treat these as aggregate planning allocations because actual contract accounting can classify rebates and principal transactions differently. "
-                    "The remaining-cost figures are arithmetic residuals required to reconcile the supplied model, not independently observed payroll budgets. "
-                    "They must absorb the modeled combination of selling charges, labor, shipping not already capitalized, financing, software, refunds, losses, and other operating expenses without double counting. "
-                    "These cases contain no separate permission to count client purchasing budgets as revenue. "
-                    "Each monthly close should preserve both the contractual accounting presentation and a consistent managerial bridge back to these canonical retained-spread measures."
+                    "The canonical scorecard uses gross wholesale buying-group reimbursements, "
+                    "commercial-card and portal rebates, and treasury yields as its aggregate "
+                    "gross basis. That management denominator is not automatically one revenue "
+                    "caption in published accounts. Under ASC 606, a merchandise principal "
+                    "recognizes the transaction price when control transfers and records "
+                    "associated inventory cost separately; an agent generally recognizes "
+                    "its fee or commission. Principal status follows control and contractual "
+                    "facts, not an operator's preferred margin presentation. Purchase-linked "
+                    "rebates commonly reduce the related purchase cost, inventory basis, "
+                    "or expense, depending on their substance and accounting treatment. "
+                    "Interest is separately classified rather than forced into merchandise "
+                    "revenue. Track each category independently, then reconcile the management "
+                    "scorecard without duplicating receipts. A $10,050 wholesale payment is "
+                    "not $10,050 of profit, and $10,000 charged to a card is a payable, "
+                    "not earned revenue. Likewise, a client's $100,000 invoice paid through "
+                    "an authorized service does not become the service operator's revenue "
+                    "merely because the operator coordinates payment. Retained share is "
+                    "35% in this candidate's model; it describes the modeled contribution "
+                    "remaining after landed merchandise cost, not an ASC 606 rule permitting "
+                    "every operator to report only 35% of collections."
                 ),
                 (
-                    "The supplied 35% blended retained share is not demonstrated by the low-spread wholesale example. "
-                    "That example produces $290 against $10,350 of reimbursement and reward receipts, approximately 2.80% before further expenses. "
-                    "A book dominated by such orders cannot honestly inherit the Base case's blended economics without substantial additional contribution from higher-spread ticket positions or fee-based services. "
-                    "As a sensitivity test rather than a forecast, assume 40% of gross activity retains 3% and 60% retains an illustrative 56.33%; the weighted result approaches 35%. "
-                    "That demanding second component exposes the underwriting question instead of concealing it. "
-                    "If verified mix retains only 20% on Base activity, contribution falls to $205,000; keeping the canonical $215,250 remaining costs would produce a $10,250 loss. "
-                    "Do not alter the published Base case to hide that sensitivity, and do not present the sensitivity as a fourth canonical scenario. "
-                    "Similarly, the quoted $1,500–$9,000 monthly operating-expense range cannot explain every annual cost residual on its own. "
-                    "Define which fixed cash expenses that range covers, then separately budget transaction-variable charges, contractor work, employee compensation, and loss provisions. "
-                    "The scorecard does not establish an owner salary allocation, personal tax treatment, or full-time-equivalent hours for contractors; document those conventions before using owner profit as household spending capacity."
+                    "Formula v2.0 fixes the Conservative case at $250,000 gross basis, "
+                    "$87,500 retained contribution, and $20,000 annual owner net profit. "
+                    "The Base case fixes $1,025,000, $358,750, and $143,500 respectively. "
+                    "The Scaled case fixes $1,800,000, $630,000, and $360,000. These "
+                    "produce gross-basis margins of 8%, 14.0%, and 20%, while retained "
+                    "margins are 22.86%, 40.0%, and 57.14%. The implied landed-cost "
+                    "bridge is $162,500, $666,250, and $1,170,000; remaining deductions "
+                    "after retained contribution are $67,500, $215,250, and $270,000. "
+                    "Those deductions must include every further cost required to reach "
+                    "owner profit, without charging landed costs twice. For a transparent "
+                    "illustrative allocation, assign annual recurring overhead of $18,000, "
+                    "$60,000, and $108,000, consistent with the $1,500–$9,000 monthly "
+                    "range. The residual deductions are then $49,500, $155,250, and "
+                    "$162,000 for separately budgeted variable labor, payment costs, "
+                    "losses, and other nonoverlapping expenses. This allocation reconciles "
+                    "the supplied totals but is not a vendor quote or observed operating "
+                    "history. The chapter preserves the canonical cases while exposing "
+                    "the cost bridge an operator must substantiate before relying on "
+                    "the projected income."
                 ),
                 (
-                    "Capital efficiency depends on the stressed cash cycle, not the largest credit limit visible in an application. "
-                    "For an illustrative $10,000 shipment, three days to delivery, two days to inspection, and three business days to ACH initiation can already exceed the headline Net-3 calendar interval. "
-                    "Add actual bank availability and compare the result with the card payment deadline. "
-                    "At $50,000 outstanding purchase exposure, a 10% unrecovered principal loss consumes $5,000 before dispute costs; repeated $290 contributions do not repair that quickly. "
-                    "Ticket inventory behaves differently because its realizable value can collapse toward zero when an event starts or transfers close. "
-                    "Stress both risks together: delayed wholesale collections, lost reward eligibility, a market-price decline, and an issuer review must not require using customer deposits reserved for other deliveries. "
-                    "The Conservative and Base teams remain one full-time operator plus two contractors; Scaled uses two full-time people plus three contractors, five people total. "
-                    "Assign separate accountability for purchase authorization, settlement reconciliation, and inventory delivery even when one person performs multiple roles. "
-                    "Use a weekly exception review to detect segregation weaknesses. "
-                    "Scale against completed, reconciled cycles and available cash reserves rather than assumed sixty-day borrowing capacity. "
-                    "The model becomes durable when a bad week reduces profit without forcing missed card obligations or undeliverable customer commitments."
+                    "A 35% retained contribution is especially demanding when most activity "
+                    "consists of reimbursement near merchandise cost. Ordinary 2%–4% rewards "
+                    "do not establish that ratio. On the earlier $10,000 purchase, "
+                    "$10,050 reimbursement plus $200 cashback equals $10,250 of combined "
+                    "management receipts; subtracting merchandise alone leaves $250, "
+                    "approximately 2.44%, before shipping or losses. Reaching the canonical "
+                    "35% therefore requires a materially different substantiated mix, "
+                    "larger contracted spreads, separately earned service economics, or "
+                    "other legitimate contribution already included in the scorecard basis. "
+                    "Do not silently assume these exist. Build a monthly bridge from "
+                    "accepted orders and earned rewards to collected cash, with separate "
+                    "columns for pending portal balances, inventory in transit, disputed "
+                    "receivables, and card liabilities. A spreadsheet or SQLite ledger "
+                    "can carry these classifications without a large software stack. "
+                    "Reconcile any Form 1099-K against actual settlement records under "
+                    "26 U.S.C. § 6050W rather than treating the form as proof of "
+                    "taxable profit. Purchase-price adjustments require consistent basis "
+                    "records; bank interest and qualifying bonuses need their own tax "
+                    "classification. Conservative and Base staffing remains one full-time "
+                    "operator plus two contractors; Scaled uses two full-time operators "
+                    "plus three contractors, without assuming contractors are costless."
                 ),
             ],
             "table": {
-                "caption": "Formula v2.0 annual reconciliation with retained_share fixed at 0.35",
+                "caption": "Formula v2.0 exact annual bridge with an explicitly illustrative expense allocation",
                 "headers": [
-                    "Canonical case and gross activity basis",
-                    "Landed merchandise and ticket basis allocation",
-                    "Retained contribution under the planning convention",
-                    "Remaining modeled costs after basis allocation",
-                    "Annual owner profit and gross-basis margin",
-                    "Retained-basis margin and specified operating team",
+                    "Scenario and operating team",
+                    "Gross basis and landed-cost bridge",
+                    "Retained contribution and remaining deductions",
+                    "Owner profit and reconciled margins",
                 ],
                 "rows": [
                     [
-                        "Conservative annual gross activity totals exactly $250,000",
-                        "The 65% basis allocation totals exactly $162,500",
-                        "The 35% retained contribution totals exactly $87,500",
-                        "Remaining modeled costs reconcile to exactly $67,500",
-                        "$20,000 annual owner profit equals 8% gross-basis margin",
-                        "22.86% retained margin; one full-time operator plus two contractors",
+                        "Conservative operation uses one full-time operator plus two contractors",
+                        "$250,000 gross less $162,500 landed costs leaves the prescribed contribution",
+                        "$87,500 retained less $18,000 overhead and $49,500 other deductions",
+                        "$20,000 owner profit; 8% gross margin and 22.86% retained margin",
                     ],
                     [
-                        "Base annual gross activity totals exactly $1,025,000",
-                        "The 65% basis allocation totals exactly $666,250",
-                        "The 35% retained contribution totals exactly $358,750",
-                        "Remaining modeled costs reconcile to exactly $215,250",
-                        "$143,500 annual owner profit equals 14.0% gross-basis margin",
-                        "40.0% retained margin; one full-time operator plus two contractors",
+                        "Base operation uses one full-time operator plus two contractors",
+                        "$1,025,000 gross less $666,250 landed costs leaves the prescribed contribution",
+                        "$358,750 retained less $60,000 overhead and $155,250 other deductions",
+                        "$143,500 owner profit; 14.0% gross margin and 40.0% retained margin",
                     ],
                     [
-                        "Scaled annual gross activity totals exactly $1,800,000",
-                        "The 65% basis allocation totals exactly $1,170,000",
-                        "The 35% retained contribution totals exactly $630,000",
-                        "Remaining modeled costs reconcile to exactly $270,000",
-                        "$360,000 annual owner profit equals 20% gross-basis margin",
-                        "57.14% retained margin; two full-time operators plus three contractors",
+                        "Scaled operation uses two full-time operators plus three contractors",
+                        "$1,800,000 gross less $1,170,000 landed costs leaves the prescribed contribution",
+                        "$630,000 retained less $108,000 overhead and $162,000 other deductions",
+                        "$360,000 owner profit; 20% gross margin and 57.14% retained margin",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Compare sixteen sub-verticals and map eleven executable or excluded plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The comparison matrix maps eleven plays and then adds five operating "
+                    "variants. Only the two supplied identifiers are treated as canonical "
+                    "identifiers; the other nine names describe this chapter's analytical "
+                    "breakdown. The principal wholesale play, "
+                    "wholesale_buying_group_card_float_cycling, means genuine pre-committed "
+                    "fulfillment financed by authorized commercial purchases. It does not "
+                    "authorize circular transactions, fictitious sales, or repeated paydowns "
+                    "intended to evade issuer limits. Require the counterparty to confirm "
+                    "SKU, quantity, reimbursement, acceptance conditions, and payment timing "
+                    "in writing. A contractually verified Net-3 payment means three days "
+                    "under that contract's specified clock, not three days after checkout. "
+                    "Whether days are business or calendar days materially affects cash "
+                    "availability. Independently verify the designated warehouse and receiving "
+                    "account before shipping expensive electronics. For a $10,000 order "
+                    "with $120 modeled contribution, one unrecovered $1,000 shortage "
+                    "consumes more than eight successful order contributions. That "
+                    "asymmetry explains why serial-number capture, packed-weight evidence, "
+                    "carrier acceptance scans, and written discrepancy procedures matter "
+                    "more than another half-point of theoretical rewards. If payment "
+                    "reliability deteriorates, stop purchasing, repay cards from reserved "
+                    "cash, and recover or resell legitimately owned goods through "
+                    "permitted channels rather than financing the gap with new orders."
+                ),
+                (
+                    "The rebate rows separate portal attribution, issuer cashback, targeted "
+                    "offers, and invoice-payment economics because each can fail independently. "
+                    "A 2% reward on a $10,000 eligible purchase is $200, not a "
+                    "license to assume 2% on every transaction category. Some products "
+                    "cap earnings, restrict redemption, exclude payment services, or "
+                    "apply different rates above spending thresholds. Use 4% only when "
+                    "the current contract supports that rate for the exact purchase "
+                    "and any necessary redemption method. An uncapped offer is "
+                    "uncapped only within its actual terms. Rakuten and TopCashback "
+                    "must be evaluated merchant by merchant; provisional tracking "
+                    "does not establish a collectible receivable at full face value. "
+                    "Use a documented reversal allowance or wait for sufficient "
+                    "evidence of entitlement, according to the accounting policy. "
+                    "Plastiq and Melio require equally specific checks on business "
+                    "purpose, accepted cards, payee restrictions, processing charges, "
+                    "and delivery timing. Their illustrative 2.9% fee in this "
+                    "chapter is a sensitivity input, not a statement of current "
+                    "pricing. The appropriate fallback is often ordinary ACH "
+                    "rather than another payment intermediary. A positive purchase "
+                    "spread should survive the loss of any optional promotion "
+                    "before it receives meaningful exposure."
+                ),
+                (
+                    "The second supplied identifier, "
+                    "section_321_de_minimis_bonded_tariff_arbitrage, is a screened "
+                    "adjacency rather than a fourth core earnings engine. The "
+                    "historical proposal routes goods through Tijuana IMMEX or "
+                    "Canadian bonded facilities and charges brands 35%–50% of "
+                    "verified duty savings plus fulfillment fees. The requested "
+                    "premise of automatic Section 321 exemption is not usable: "
+                    "Executive Order 14324 suspended duty-free de minimis treatment "
+                    "for all countries effective August 29, 2025. Consequently, "
+                    "Vietnam, India, European Union, Bangladesh, or Cambodia origin "
+                    "does not supply the proposed blanket fallback. Nor does "
+                    "foreign warehousing change origin or make artificial shipment "
+                    "fragmentation permissible. Illustratively, a $10,000 customs "
+                    "value at 20% duty creates $2,000 of duty; a 40% "
+                    "savings fee would equal $800 only if an applicable lawful "
+                    "treatment actually removed that duty. With no verified "
+                    "exemption, booked savings and savings fees are zero. First-sale "
+                    "valuation under 19 U.S.C. § 1401a requires qualifying "
+                    "transaction evidence and does not erase tariffs. The fallback "
+                    "is broker-supported ordinary entries, properly administered "
+                    "bonded handling, or documented valuation work, with separately "
+                    "contracted service fees. None of those speculative fees "
+                    "supports this volume's canonical profit cases."
+                ),
+            ],
+            "table": {
+                "caption": "Sixteen sub-vertical comparisons: eleven mapped plays followed by five implementation variants",
+                "headers": [
+                    "Mapped play or operating variant",
+                    "Named platform and qualifying transaction",
+                    "Illustrative fees and unit economics",
+                    "Moat, clawback trigger, and operating fallback",
+                ],
+                "rows": [
+                    [
+                        "Play 1: wholesale_buying_group_card_float_cycling for genuine pre-committed commercial fulfillment",
+                        "BuyForMeRetail or Pointsmaker orders delivered to independently verified receiving accounts",
+                        "$10,050 reimbursement plus $200 rewards less $10,130 costs leaves $120",
+                        "Receiving proof protects collections; delayed ACH triggers purchasing suspension and reserve-funded repayment",
+                    ],
+                    [
+                        "Play 2: independently vetted wholesale counterparty allocation and settlement rotation",
+                        "MaxOutDeals and alternative verified groups evaluated under their actual contracts",
+                        "Two $5,000 orders each earning $60 diversify one $10,000 exposure",
+                        "Separate legal counterparties reduce concentration; correlated warehouse failures still require immediate exposure cuts",
+                    ],
+                    [
+                        "Play 3: Rakuten eligible commercial purchase attribution and collection",
+                        "Rakuten merchant offer expressly allowing the specific purchase and buyer activity",
+                        "$5,000 qualifying spend at 3% creates $150 before reversals",
+                        "Preserve click and order evidence; excluded resale purchases receive zero portal value",
+                    ],
+                    [
+                        "Play 4: TopCashback eligible commercial purchase attribution and collection",
+                        "TopCashback merchant terms checked independently from competing portal offers",
+                        "$4,000 qualifying spend at 2.5% creates $100 before reversals",
+                        "Single-portal attribution protects evidence; tracking disputes trigger conservative receivable treatment",
+                    ],
+                    [
+                        "Play 5: authorized commercial-card cashback spread on genuine purchases",
+                        "Capital One Spark Cash Plus terms checked for current eligibility and limits",
+                        "$10,000 eligible purchases at an illustrative 2% create $200",
+                        "Issuer documentation supports continuity; category exclusions require repricing without cashback",
+                    ],
+                    [
+                        "Play 6: targeted commercial-card offer redemption on planned spending",
+                        "Amex Offers enrollment and exact business-card merchant conditions verified",
+                        "$50 qualifying credit on planned $500 spending saves ten percent",
+                        "Track enrollment and offer caps; returns or wrong merchants can reverse credits",
+                    ],
+                    [
+                        "Play 7: Plastiq authentic invoice payment and fee-spread underwriting",
+                        "Plastiq supported card and payee combination confirmed before authorization",
+                        "$10,000 invoice at 2.9% fee versus 2% reward loses $90",
+                        "Document actual timing benefit; choose ordinary ACH when net economics remain negative",
+                    ],
+                    [
+                        "Play 8: Melio authentic invoice payment and fee-spread underwriting",
+                        "Melio business invoice with verified supplier and selected delivery method",
+                        "$10,000 invoice at 2.9% fee versus eligible 4% earns $110",
+                        "Validate reward eligibility and delivery; unsupported payees move to ordinary ACH",
+                    ],
+                    [
+                        "Play 9: maturity-matched Treasury sweep on genuinely available cash",
+                        "TreasuryDirect or brokerage Treasury bills selected around repayment dates",
+                        "$20,000 at 4.5% for thirty days yields approximately $73.97",
+                        "Maturity matching protects liquidity; transfer delays require an accessible cash buffer",
+                    ],
+                    [
+                        "Play 10: business deposit bonus capture with opportunity-cost accounting",
+                        "Chase business promotion or another documented currently available bank offer",
+                        "$300 bonus less $221.92 displaced interest leaves $78.08 before fees",
+                        "Qualification calendar prevents mistakes; early closure can forfeit or reverse bonuses",
+                    ],
+                    [
+                        "Play 11: section_321_de_minimis_bonded_tariff_arbitrage screened as an excluded core adjacency",
+                        "CBP requirements and Tijuana IMMEX or Canadian bonded facilities assessed separately",
+                        "$10,000 value at 20% duty supports zero assumed exemption savings",
+                        "Suspended treatment defeats blanket savings; use ordinary entries and substantiated service contracts",
+                    ],
+                    [
+                        "Variant 12: Delaware warehouse fulfillment with documented sales-tax sourcing",
+                        "BuyForMeRetail designated Delaware destination verified against current purchase instructions",
+                        "$10,000 goods plus $100 freight requires at least $10,100 recovery",
+                        "Destination facts support sourcing; misdelivery or invalid resale documentation requires correction",
+                    ],
+                    [
+                        "Variant 13: New Hampshire warehouse fulfillment with documented acceptance",
+                        "Pointsmaker designated New Hampshire receiving account confirmed before carrier tender",
+                        "$8,000 goods plus $80 freight and $20 insurance costs $8,100",
+                        "Named receiving account prevents ambiguity; rejected deliveries trigger controlled return handling",
+                    ],
+                    [
+                        "Variant 14: Oregon warehouse fulfillment with insured high-value parcels",
+                        "MaxOutDeals designated Oregon destination checked against the specific commitment",
+                        "$12,000 goods plus $120 freight and $40 insurance costs $12,160",
+                        "Covered-value evidence supports claims; exclusions require lower parcel values or alternate coverage",
+                    ],
+                    [
+                        "Variant 15: failed wholesale commitment recovery through permitted resale",
+                        "eBay business selling account used only for legitimately owned recoverable goods",
+                        "$1,000 resale less $150 assumed fees and $30 shipping returns $820",
+                        "Serial records support ownership; actual category fees and returns determine recovery",
+                    ],
+                    [
+                        "Variant 16: insured business deposit holding instead of maturity exposure",
+                        "FDIC-insured bank deposit ownership category and aggregate balances independently checked",
+                        "$20,000 at 4% for thirty days earns approximately $65.75",
+                        "Accessible balances protect payment dates; rate changes require updated opportunity-cost comparisons",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Build a repayment-first operating moat and test the bad settlement week",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Statement float is a short-term repayment liability with a calendar, "
+                    "not an earnings line. The advertised 55-day operating lever is "
+                    "only a modeled interval; actual purchase timing, closing date, "
+                    "payment terms, grace-period eligibility, and account status determine "
+                    "the available days. Approximately 60 days can occur on suitable "
+                    "products and dates, but never enter that interval as a universal "
+                    "contract term. A purchase immediately before closing can have "
+                    "substantially less time than one immediately afterward. Business "
+                    "credit is generally exempt from much of Regulation Z under "
+                    "12 CFR § 1026.3(a), so do not import consumer grace-period "
+                    "assumptions into a commercial-card model. Consider $20,000 "
+                    "charged on day zero, warehouse acceptance on day seven, "
+                    "contractual settlement expected on day ten, and a verified "
+                    "card due date on day forty. The ledger should stress "
+                    "ACH arriving on day forty-five, not merely day thirteen. "
+                    "The operator needs $20,000 of available repayment cash "
+                    "before day forty even though the order appears profitable. "
+                    "A Treasury bill maturing on day forty-one cannot meet "
+                    "that obligation. Schedule payment with a transfer buffer "
+                    "and verify posted receipt rather than relying on a "
+                    "pending instruction."
+                ),
+                (
+                    "Counterparty concentration, issuer continuity, and parcel disputes form "
+                    "one connected loss system. A delayed warehouse credit can postpone "
+                    "ACH, increase issuer balances, provoke a documentation request, "
+                    "and strand inventory purchases awaiting shipment. Measure exposure "
+                    "as unpaid accepted receivables plus goods in transit plus "
+                    "committed unshipped purchases, not merely the last invoice. "
+                    "Set limits from cash reserves and verified recovery values; "
+                    "a second trade name does not diversify risk when the "
+                    "same legal entity or warehouse controls settlement. Request "
+                    "business identity, bank-account ownership confirmation through "
+                    "an independently trusted channel, and evidence supporting "
+                    "payment history. Keep legitimate purchase invoices available "
+                    "for issuer review, and never disguise merchant categories "
+                    "or fabricate business purpose. For parcels, inspect the "
+                    "actual insurance contract: carrier declared value is not "
+                    "automatically equivalent to broad cargo insurance. Capture "
+                    "serial numbers, packaging, tender weight, acceptance scans, "
+                    "delivery signature, and warehouse discrepancy reports. Delaware "
+                    "6 Del. C. § 2-509 supplies default risk-of-loss rules "
+                    "for relevant sales, but express agreement and shipment "
+                    "structure matter. If a $5,000 claim remains disputed, "
+                    "reserve against that exposure instead of counting its "
+                    "face amount as cash available for card repayment."
+                ),
+                (
+                    "Automation earns its place by preventing duplicate commitments and "
+                    "unfunded obligations, not by accelerating unchecked purchases. "
+                    "A Python standard-library reconciler can ingest merchant "
+                    "CSV exports with csv, use decimal for currency, store "
+                    "order events in sqlite3, and calculate dated obligations "
+                    "with datetime. Give every purchase, shipment, receiving "
+                    "record, counterparty remittance, card charge, and reward "
+                    "adjustment a stable identifier. Matching must handle partial "
+                    "receipts, split payments, refunds, and reward reversals "
+                    "rather than assuming one order equals one settlement. "
+                    "Surface exceptions for human resolution; a missing ACH "
+                    "match must not be repaired by inventing a receipt. "
+                    "Export a daily cash ladder showing unrestricted cash, "
+                    "reserved repayments, inventory exposure, and treasury maturities. "
+                    "The owner controls commitments and liquidity, while contractors "
+                    "can reconcile evidence and pursue documented claims within "
+                    "defined access limits. Before increasing volume, run a "
+                    "combined scenario with a fifteen-day ACH delay, complete "
+                    "portal rejection, and one damaged parcel. Continue only "
+                    "if existing cash pays every due balance and the loss "
+                    "fits the reserve. That discipline turns a high score "
+                    "into a testable operating thesis instead of a promise "
+                    "that larger spending will repair weak unit economics."
+                ),
+            ],
+            "table": {
+                "caption": "Four repayment-first stress tests with explicit cash responses",
+                "headers": [
+                    "Stress event and measurable exposure",
+                    "Evidence and calendar test",
+                    "Illustrative economic or liquidity impact",
+                    "Mandatory operating response and resumption condition",
+                ],
+                "rows": [
+                    [
+                        "Buying-group ACH arrives fifteen days later than expected",
+                        "Compare contractual receipt clock with cleared bank settlement timestamps",
+                        "$20,000 card balance still requires full repayment before its due date",
+                        "Stop commitments; use reserved cash; resume after verified settlement reliability",
+                    ],
+                    [
+                        "Issuer requests purchase documentation or restricts new commercial spending",
+                        "Match business invoices, shipping records, and account terms to charges",
+                        "Loss of $200 rewards can turn a $120 contribution into negative $80",
+                        "Provide truthful evidence; pay obligations; remove restricted rewards from underwriting",
+                    ],
+                    [
+                        "Carrier damage or warehouse shortage creates a disputed shipment claim",
+                        "Preserve serial numbers, packaging evidence, receiving discrepancies, and coverage terms",
+                        "$1,000 unrecovered shortage consumes more than eight $120 order contributions",
+                        "Reserve the loss; pursue documented recovery; reduce uninsured shipment concentration",
+                    ],
+                    [
+                        "Treasury maturity or promotional deposit restriction outlasts card repayment date",
+                        "Compare accessible settlement dates against scheduled card payment posting dates",
+                        "$20,000 inaccessible principal creates a $20,000 repayment funding requirement",
+                        "Use separate liquid reserves; shorten maturities; abandon restrictive bonus economics",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before releasing purchase capital",
-                "body": "A favorable spread is actionable only when the rights, cash cycle, rewards, and downside are documented together.",
+                "title": "Four pre-flight checks before any purchase commitment",
+                "body": (
+                    "Each check must pass on documentary evidence for the specific order, "
+                    "card account, warehouse, and repayment calendar."
+                ),
                 "items": [
-                    "Verify the counterparty's legal identity, independently confirmed warehouse instructions, acceptance terms, payment trigger, and bank-detail changes through a previously established contact method.",
-                    "Verify that the actual card product permits the purchase, that the reward assumption survives category restrictions and caps, and that reserved cash covers the full payment obligation.",
-                    "Verify ticket acquisition limits, seller authority, transfer deadlines, venue restrictions, buyer-facing total-price presentation, and any state registration or bonding requirements.",
-                    "Verify contribution after shipping, exchange charges, reward reversals, and stressed markdowns; exclude all assumed customs savings unless current entry eligibility is established.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Engineer settlement, ticket delivery, and statutory requirements into the workflow",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement a transaction ledger before connecting purchasing or ticket-distribution automation. "
-                    "Assign one immutable deal identifier to the commitment, purchase invoice, warehouse shipment, receivable, card obligation, reward posting, and exception record. "
-                    "Track commitment expiry, accepted quantity, rejected units, contractual settlement trigger, expected cash availability, and actual payment separately. "
-                    "A buying-group deal-commit and tracking reconciler should flag any order exceeding its approved quantity or missing acceptance evidence. "
-                    "Use PostgreSQL or SQLite for structured records and QuickBooks Online for the accounting workflow when those choices fit the operator's existing stack; preserve raw exports so accounting does not depend on one dashboard. "
-                    "Restrict integrations to documented interfaces and retain the authority supporting each access credential. "
-                    "For high-value shipments, verify that the policy covers the actual commodity, destination, declared value, packing method, and claims deadline. "
-                    "Carrier tracking marked delivered is evidence of arrival, not necessarily contractual acceptance or proof that every serial-numbered unit was received. "
-                    "Diversify among independently vetted Net-3 and Net-5 counterparties, but measure correlated warehouse, ownership, and banking exposures rather than merely counting brand names. "
-                    "When an ACH payment slips, disable new commitments for that exposure, preserve recoverable inventory rights, and fund the card obligation from reserves. "
-                    "Restart only after the cause and collection reliability have been established."
-                ),
-                (
-                    "For tickets, design the system around a single authoritative inventory record and explicit delivery states. "
-                    "SkyBox or Automatiq can distribute listings, but the operator still needs tested behavior for exchange outages, delayed sales notices, duplicate purchases, and failed transfers. "
-                    "Record each seat's event, section, row, acquisition basis, permitted listing channels, transfer status, and latest safe delivery time. "
-                    "A pre-event markdown curve should define time-based review points and executable net-price thresholds, not merely an asking-price reduction. "
-                    "For example, reassess a $150-basis seat fourteen days before the event, cut exposure at seven days when net bids fall below $140, and pursue a documented recovery decision before the transfer deadline. "
-                    "Those illustrative thresholds are inventory policy, not a promise of available buyers. "
-                    "Apply 16 CFR Part 464 when presenting live-event ticket prices: include mandatory fees in the total price as required and handle permitted exclusions accurately. "
-                    "California Civil Code §1770(a)(29) adds relevant advertised-price requirements for covered transactions. "
-                    "Check other applicable state resale licensing, refund, and price-disclosure rules before entering their markets. "
-                    "The federal BOTS Act also reaches certain ticket sales connected to prohibited circumvention, so provenance matters when buying from intermediaries. "
-                    "Reject suspicious allocations rather than treating a reseller invoice as proof that original purchasing restrictions were respected."
-                ),
-                (
-                    "Merchandise and customs controls belong in the same evidence discipline, with different substantive tests. "
-                    "A resale certificate supports only the treatment permitted by the applicable jurisdiction and transaction facts; obtain a valid certificate, verify its scope, and retain the records required for the relevant sale. "
-                    "California Revenue and Taxation Code §6091 places the burden of proving a sale is not at retail on the seller unless the statutory conditions are met. "
-                    "A delivery warehouse outside a sales-tax state does not extinguish sourcing, downstream collection, registration, or use-tax questions elsewhere. "
-                    "For goods contracts, specify title, inspection, acceptance, rejection, and risk of loss using the governing state's enacted commercial code rather than a generic warehouse promise. "
-                    "For imported goods, require classification, origin, customs value, importer responsibility, and current entry treatment before any savings-based quotation. "
-                    "First-sale valuation requires evidence supporting the relevant sale for export and applicable valuation conditions; it is not a percentage discount selected by the operator. "
-                    "Close each cycle by reconciling bank cash, platform settlements, customer liabilities, inventory basis, rewards, and recognized fees. "
-                    "Keep gross throughput visible for operational capacity planning while judging expansion by collected contribution and stress-tested reserves. "
-                    "The resulting moat is a reliable chain of permissions and evidence that survives a disputed shipment, a canceled event, or a changed import rule."
-                ),
-            ],
-            "table": {
-                "caption": "Four operating controls connecting evidence, statutory requirements, and stop conditions",
-                "headers": [
-                    "Operating control and concrete system boundary",
-                    "Required evidence and relevant governing authority",
-                    "Reconciliation test performed by the responsible operator",
-                    "Failure response before additional capital is exposed",
-                ],
-                "rows": [
-                    [
-                        "Buying-group commitments and warehouse acceptance remain separately tracked states",
-                        "Executed purchase terms, insured shipment records, and governing commercial-code provisions",
-                        "Match purchased serials to accepted units and bank-available settlement amounts",
-                        "Suspend new orders and recover goods only through documented contractual rights",
-                    ],
-                    [
-                        "Commercial-card obligations and reward forecasts remain independently funded records",
-                        "Current issuer agreement, eligible merchant evidence, and actual statement dates",
-                        "Match posted rewards and reversals without counting purchase rebates twice",
-                        "Pay obligations from reserves and remove unsupported reward assumptions immediately",
-                    ],
-                    [
-                        "Ticket acquisition, listings, and transfers use one authoritative inventory record",
-                        "15 U.S.C. §45c, 16 CFR Part 464, and applicable state resale requirements",
-                        "Match valid inventory authority to executable listings and acknowledged buyer transfers",
-                        "Remove invalid listings, fund required refunds, and resolve delivery exceptions promptly",
-                    ],
-                    [
-                        "Customs savings quotations require current transaction-specific import treatment evidence",
-                        "19 U.S.C. §§1321 and 1401a plus current CBP implementation instructions",
-                        "Compare broker-supported lawful duty treatment with separately invoiced service compensation",
-                        "Use ordinary dutiable entries when asserted parcel relief cannot be established",
-                    ],
+                    "Verify the counterparty legal entity, designated receiving account, accepted SKU quantity, rejection rules, and the contractual Net-3 or Net-5 clock.",
+                    "Confirm current commercial-card eligibility, portal resale treatment, offer caps, processing charges, and a viable zero-optional-reward case.",
+                    "Reconcile the actual card due date against unrestricted cash under delayed ACH; exclude conditional bonuses and disputed claims from repayment resources.",
+                    "Validate sales-tax sourcing, applicable resale documentation, shipment coverage, and a permitted recovery channel with an estimated net resale value.",
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Document authority and establish the economic baseline",
-                    "action": "Create the deal record before any merchandise purchase or ticket commitment.",
-                    "detail": "Attach counterparty identity, inventory rights, contractual fees, actual issuer terms, expected settlement dates, and a contribution calculation excluding unsupported rewards or customs relief.",
+                    "title": "Underwrite the complete order",
+                    "action": "Record the commitment and independently verify the warehouse and counterparty.",
+                    "detail": (
+                        "Calculate reimbursement, eligible rewards, landed costs, expected losses, "
+                        "and the fallback resale recovery before authorizing the purchase."
+                    ),
                 },
                 {
                     "step": 2,
-                    "title": "Reserve cash and execute within verified permissions",
-                    "action": "Approve only the quantity supported by documented rights and independent repayment reserves.",
-                    "detail": "Record card due dates, shipment insurance, warehouse acceptance criteria, ticket transfer restrictions, and stop conditions; use authorized purchasing and distribution interfaces without circumventing access controls.",
+                    "title": "Reserve repayment cash first",
+                    "action": "Enter the charge, closing date, due date, and payment buffer into the cash ladder.",
+                    "detail": (
+                        "Stress settlement beyond the card due date; restrict purchase size "
+                        "to obligations supportable by genuinely available reserves."
+                    ),
                 },
                 {
                     "step": 3,
-                    "title": "Reconcile delivery, acceptance, and available settlement",
-                    "action": "Match each external confirmation to the original deal identifier.",
-                    "detail": "Separate carrier arrival from warehouse acceptance, ACH initiation from available bank cash, and ticket-transfer initiation from confirmed delivery; investigate differences before releasing further capital.",
+                    "title": "Prove shipment and acceptance",
+                    "action": "Link invoices, serial records, carrier evidence, and warehouse acceptance to one identifier.",
+                    "detail": (
+                        "Start the settlement clock only at the contractually defined event; "
+                        "escalate quantity or condition differences before assuming full reimbursement."
+                    ),
                 },
                 {
                     "step": 4,
-                    "title": "Close the accounting bridge and reassess exposure",
-                    "action": "Reconcile recognized revenue, retained contribution, remaining costs, and owner profit.",
-                    "detail": "Apply the documented principal-or-agent policy, record rebate reversals consistently, compare realized mix with the 35% planning assumption, and update counterparty limits and event markdown decisions.",
+                    "title": "Close the cash and contribution bridge",
+                    "action": "Match cleared ACH, posted card payment, earned rewards, and final costs.",
+                    "detail": (
+                        "Release surplus cash only after obligations and reserves are covered; "
+                        "allocate any sweep by verified maturity, access, and bonus conditions."
+                    ),
                 },
             ],
         },
     ],
-    "pull_quote": "The moat is not borrowed spending power; it is a spread you can collect, document, and survive losing.",
+    "pull_quote": "The moat is not how much you can charge, but how reliably every charge becomes accepted goods, cleared cash, and a fully funded repayment.",
     "diagram_id": "diag-01",
     "action_checklist": [
-        "Choose one of the five archetypes and write the exact customer promise, inventory-control boundary, commission entitlement, and settlement trigger before sourcing the first deal.",
-        "Build a counterparty register for BuyForMeRetail, Pointsmaker, or independently verified alternatives, including acceptance terms, observed bank-available settlement timing, and correlated exposure limits.",
-        "Create a card ledger with actual closing dates, payment deadlines, reward restrictions, posted rebates, reversals, and reserved cash covering every outstanding obligation.",
-        "Configure SkyBox or Automatiq only for authorized channels and test duplicate-sale handling, transfer deadlines, buyer delivery evidence, and event-specific markdown rules.",
-        "Reproduce all three canonical annual bridges, then separately test whether the actual wholesale, agency, and ticket mix can support the 35% retained-share assumption.",
-        "Document BOTS Act acquisition controls, total-price disclosures, resale-certificate evidence, and broker-verified current customs treatment before offering any corresponding transaction.",
+        "Build separate wholesale, rebate, and treasury ledgers, then reconcile them to the canonical 35% retained-share bridge without duplicate receipts.",
+        "Obtain one documented buying-group commitment and verify the legal counterparty, warehouse account, acceptance terms, and settlement clock.",
+        "Price the first order with current card and portal terms, actual shipping coverage, a zero-optional-reward case, and a permitted resale fallback.",
+        "Construct a dated repayment ladder that survives a fifteen-day ACH delay, portal rejection, and one damaged parcel using existing cash.",
+        "Archive applicable resale records, purchase-price adjustments, receiving evidence, and Form 1099-K reconciliations under stable transaction identifiers.",
+        "Exclude assumed Section 321 savings from underwriting and place only genuinely surplus cash into maturity-matched Treasury or deposit opportunities.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to circumvention of ticket access controls",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits specified circumvention of ticket access controls and addresses sales of tickets obtained through prohibited conduct; supports acquisition-limit and provenance controls.",
-        },
-        {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes total-price and fee-disclosure requirements for covered live-event ticket offers, including treatment of mandatory charges and permitted exclusions.",
-        },
-        {
-            "title": "California Civil Code §1770(a)(29) — Advertised prices and mandatory fees",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1770.",
-            "relevance": "Requires covered advertised or displayed prices to include mandatory fees or charges subject to statutory exceptions; relevant to ticket offers reaching California consumers.",
-        },
-        {
-            "title": "California Revenue and Taxation Code §6091 — Presumption that gross receipts are taxable",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6091.",
-            "relevance": "Explains the seller's burden and resale-certificate condition for establishing that a sale is not at retail; warehouse location alone does not establish resale treatment.",
-        },
-        {
-            "title": "19 U.S.C. §1321 — Administrative exemptions",
+            "title": "19 U.S.C. § 1321 — Administrative exemptions",
             "url": "https://www.law.cornell.edu/uscode/text/19/1321",
-            "relevance": "Provides the statutory foundation for specified administrative import exemptions; operators must also establish current operative restrictions and transaction-specific eligibility.",
+            "relevance": (
+                "Establishes the statutory framework for administrative import exemptions; "
+                "the statute alone does not establish currently available duty-free treatment "
+                "or permit artificial fragmentation."
+            ),
         },
         {
             "title": "Executive Order 14324 — Suspending Duty-Free De Minimis Treatment for All Countries",
-            "url": "https://www.federalregister.gov/documents/2025/08/01/2025-14897/suspending-duty-free-de-minimis-treatment-for-all-countries",
-            "relevance": "Suspended duty-free de minimis treatment globally effective August 29, 2025; historical Section 321 savings assumptions require review against this action and subsequent implementation.",
+            "url": "https://www.whitehouse.gov/presidential-actions/2025/07/suspending-duty-free-de-minimis-treatment-for-all-countries/",
+            "relevance": (
+                "Suspended duty-free de minimis treatment for all countries effective "
+                "August 29, 2025, defeating the proposed blanket non-China-origin exemption fallback."
+            ),
         },
         {
-            "title": "19 U.S.C. §1401a — Value",
+            "title": "19 U.S.C. § 1401a — Value",
             "url": "https://www.law.cornell.edu/uscode/text/19/1401a",
-            "relevance": "Governs customs valuation, including transaction-value conditions; supports evidence-based valuation review rather than automatic first-sale discounts.",
+            "relevance": (
+                "Governs customs valuation; any first-sale position requires qualifying "
+                "transaction evidence rather than a warehouse address or assumed tariff elimination."
+            ),
         },
         {
-            "title": "California Commercial Code §2509 — Risk of loss in the absence of breach",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=2509.",
-            "relevance": "Illustrates enacted UCC risk-of-loss rules relevant to merchandise shipments; the actual contract and governing jurisdiction determine the applicable allocation.",
+            "title": "12 CFR § 1026.3(a) — Business, commercial, agricultural, or organizational credit",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
+            "relevance": (
+                "Generally exempts business-purpose credit from much of Regulation Z; "
+                "commercial repayment timing must therefore be established from actual account terms."
+            ),
+        },
+        {
+            "title": "26 U.S.C. § 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": (
+                "Provides the payment-settlement reporting framework; operators reconcile "
+                "reported amounts with receipts, adjustments, costs, and their actual role."
+            ),
+        },
+        {
+            "title": "26 CFR § 1.471-3 — Inventories at cost",
+            "url": "https://www.ecfr.gov/current/title-26/section-1.471-3",
+            "relevance": (
+                "Addresses purchased inventory cost, discounts, and transportation charges; "
+                "supports maintaining a defensible merchandise-cost and adjustment ledger."
+            ),
+        },
+        {
+            "title": "26 U.S.C. § 61 — Gross income defined",
+            "url": "https://www.law.cornell.edu/uscode/text/26/61",
+            "relevance": (
+                "Includes interest within gross income and supports separating treasury "
+                "income from borrowed principal and merchandise purchase-price adjustments."
+            ),
+        },
+        {
+            "title": "6 Del. C. § 2-509 — Risk of loss in the absence of breach",
+            "url": "https://delcode.delaware.gov/title6/c002/sc05/index.html",
+            "relevance": (
+                "Supplies relevant default sales risk-of-loss rules; shipment terms, "
+                "warehouse acceptance provisions, and express contractual allocations require review."
+            ),
         },
     ],
 }

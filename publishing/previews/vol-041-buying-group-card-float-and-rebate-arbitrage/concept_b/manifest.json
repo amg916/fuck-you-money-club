@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-041-buying-group-card-float-and-rebate-arbitrage",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1932741,
+      "sha256": "f62fdab28cba1159e81432f0d24f8fb4916c7a9fbd1df33c62c80442fab3b567"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2497818,
+      "sha256": "16f589e3cbfe61a0af9765e0af38b7c38d0150d77cd42cedb697aa532da5dc7c"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 594365,
+      "sha256": "f09c6bc5754edecf86ba490f253f99c418072f0aa9479e3f50e890cd5fdb9db4"
+    },
+    "book.epub": {
+      "bytes": 270587,
+      "sha256": "f39b0d1eda61261d029c2380e3a1ae733874719b600b08b2d907a68fcb92c64d"
+    },
+    "art/cover.svg": {
+      "bytes": 4333,
+      "sha256": "31162f2b5f0a7ead39f7e29019f36812f5b3e0daa9bea54ecaca0c9b5ad5afb0"
+    },
+    "art/scorecard.svg": {
+      "bytes": 100609,
+      "sha256": "7f6468958d5cf1e66109678cb62216fd95d8f843d165427fff18dfb0c284210a"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11916,
+      "sha256": "76b97d4021d129afae05652978ecc7c2b178898eb41612f788fa66597c483bda"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7910,
+      "sha256": "499d12e2d143eddf0ef478c8ae142b1ae7416eef82dc03ccedf5c83b2d0d0643"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12514,
+      "sha256": "a94769b4328a433895b60a937b2b806246ecf98541b1063584c91bd9f4b4302c"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10048,
+      "sha256": "011b9c39a24fe66f1b934c8dd44b863a9aa338c31a012e4278d699fcc7f2c903"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10215,
+      "sha256": "243ef385c993261cba7692ff3b4b41aff7bb6ab9d3bfb12aff2df004ce4ac709"
+    },
+    "art/diag_06.svg": {
+      "bytes": 11694,
+      "sha256": "1abb3a65c11a50f73ce5002f0268d3b07b273c0d81f6ef016926cee317426b78"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9680,
+      "sha256": "0a35dafcaff37126e5fa00ad12cd6fd93d08e23933279526e39c27c1e4c5bbf6"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9667,
+      "sha256": "d68f6f7a6de821798dda70aa166b41c2eb9dca08addf535c897aa4093d5f3ab2"
+    }
+  }
+}

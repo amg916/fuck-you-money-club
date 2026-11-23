@@ -1,0 +1,569 @@
+{
+  "candidate_number": 41,
+  "slug": "buying-group,-commercial-card-float-&-rebate-arbitrage",
+  "title": "Buying Group, Commercial Card-Float & Rebate Arbitrage",
+  "category": "Commercial card-float & rebate arbitrage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 23,
+    "profit_margin_potential": 24,
+    "team_efficiency": 20,
+    "startup_accessibility": 13,
+    "automation_potential": 13
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 93,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 90,
+    "high": 96
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 23/25. Tax-exempt DE/NH/OR wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card cashback, shopping-portal rebates, B2B Plastiq/Melio invoice float, and 55-day T-bill/bank-bonus velocity compound rapid capital turns on a 3-person desk.",
+    "profit_margin_potential": "Profit Margin Potential: 24/25. Tax-exempt DE/NH/OR wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card cashback, shopping-portal rebates, B2B Plastiq/Melio invoice float, and 55-day T-bill/bank-bonus velocity compound rapid capital turns on a 3-person desk.",
+    "team_efficiency": "Team Efficiency: 20/20. Tax-exempt DE/NH/OR wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card cashback, shopping-portal rebates, B2B Plastiq/Melio invoice float, and 55-day T-bill/bank-bonus velocity compound rapid capital turns on a 3-person desk.",
+    "startup_accessibility": "Startup Accessibility: 13/15. Tax-exempt DE/NH/OR wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card cashback, shopping-portal rebates, B2B Plastiq/Melio invoice float, and 55-day T-bill/bank-bonus velocity compound rapid capital turns on a 3-person desk.",
+    "automation_potential": "Automation Potential: 13/15. Tax-exempt DE/NH/OR wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card cashback, shopping-portal rebates, B2B Plastiq/Melio invoice float, and 55-day T-bill/bank-bonus velocity compound rapid capital turns on a 3-person desk."
+  },
+  "economics": {
+    "gross_revenue_range": "$250,000–$1,800,000 USD annually",
+    "retained_revenue_range": "$87,500–$630,000 USD annually",
+    "retained_share": 0.35,
+    "net_profit_margin_range": "8–20%",
+    "retained_profit_margin_range": "22.86–57.14%",
+    "owner_net_profit_potential": "$20,000–$360,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$10,000–$55,000 USD",
+    "monthly_opex_range": "$1,500–$9,000 USD",
+    "time_to_first_deal": "1–3 months",
+    "automation_coverage": 0.87,
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross wholesale buying-group reimbursements, commercial card/portal rebates, and treasury-float yields (35% retained net contribution after landed merchandise cost)",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 250000,
+      "annual_retained_revenue_usd": 87500,
+      "net_profit_margin_pct": 8,
+      "retained_profit_margin_pct": 22.86,
+      "annual_owner_net_profit_usd": 20000,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 1025000.0,
+      "annual_retained_revenue_usd": 358750,
+      "net_profit_margin_pct": 14.0,
+      "retained_profit_margin_pct": 40.0,
+      "annual_owner_net_profit_usd": 143500,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1800000,
+      "annual_retained_revenue_usd": 630000,
+      "net_profit_margin_pct": 20,
+      "retained_profit_margin_pct": 57.14,
+      "annual_owner_net_profit_usd": 360000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "Buying-Group deal-commit & tracking reconciler",
+    "Rakuten / TopCashback / card-offer stack router",
+    "55-day statement float, T-bill sweep & ACH ledger"
+  ],
+  "key_risks": [
+    "Buying-group counterparty ACH delay",
+    "Card issuer financial review or shutdown",
+    "Lost/damaged carrier parcel claim disputes"
+  ],
+  "regulatory_notes": [
+    "Maintain valid state sales-tax resale certificates, accurate 1099-K / IRC price-adjustment cost-basis records, and strict separation from prohibited consumer card-cycling.",
+    "Diversify across vetted Net-3/Net-5 buying groups, insure high-value electronics shipments, and match statement closing cycles to cleared ACH settlements."
+  ],
+  "track_ids": [
+    "track_2",
+    "track_1"
+  ],
+  "track_labels": [
+    "Grey-Zone Growth & Traffic Arbitrage",
+    "Asymmetric & Data-Arbitrage Plays"
+  ],
+  "plays": [
+    {
+      "id": "wholesale_buying_group_card_float_cycling",
+      "inputs": [
+        "Verified buying-group identity and operating terms, written purchase orders with fixed SKUs and acceptance criteria, warehouse instructions, settlement obligations and return or rejection allocation.",
+        "Commercial card agreements showing authorized use, purchase limits, eligible reward rates and caps, bonus conditions, statement timing, actual payment deadlines and any restrictions on resale purchases.",
+        "Supplier availability and invoices, documented resale or exemption eligibility where applicable, shipment insurance and tracking, working-capital reserves and a transaction-level inventory and cash ledger."
+      ],
+      "mechanism": "Fulfill genuine, pre-committed buying-group purchase orders through BuyForMeRetail, Pointsmaker or independently verified counterparties, using authorized commercial card purchases and documented delivery to designated warehouses in Delaware, New Hampshire or Oregon. Earn the contracted merchandise spread plus only eligible 2%–4% cashback or bonus value, using uncapped rewards solely when current issuer terms explicitly provide them; tax treatment depends on sourcing, possession, resale documentation and downstream obligations rather than a tax-free warehouse label. Match a contractually verified Net-3 ACH settlement to the actual card due date, which may provide up to approximately 60 days only on suitable products and purchase dates, without circular purchases, fictitious sales or issuer-limit evasion.",
+      "metrics": [
+        "Realized order contribution: buyer proceeds plus posted eligible rewards minus merchandise, freight, tax, insurance, financing, returns and dispute costs.",
+        "Cash-conversion spread: actual card payment due date minus cleared buyer settlement date, with stress tests for late acceptance and ACH reversals.",
+        "Exposure control: unsettled counterparty receivables, rejected-unit rate and liquid reserves divided by card obligations due before stressed settlement."
+      ],
+      "name": "Pre-Committed Buying-Group Fulfillment and Commercial Card Working-Capital Operator",
+      "platform_risks": [
+        {
+          "detection_metric": "Receivables aging beyond the contractual Net-3 start event, rejected deliveries, reward clawbacks and stressed cash coverage below the operator's minimum.",
+          "failure_mode": "Buying-group acceptance or settlement fails while the card issuer still requires full repayment or reverses expected rewards.",
+          "fallback": "Stop new purchases, meet card obligations from reserved cash, recover or resell legitimately owned goods through permitted channels and resume only after settlement reliability and issuer eligibility are confirmed.",
+          "impact": "A nominally profitable order becomes illiquid inventory and unsecured receivables, with interest charges, lost rewards or restricted card access.",
+          "trigger": "Counterparty insolvency, SKU rejection, warehouse delivery disputes, delayed ACH, reward exclusions or issuer restrictions on purchase and repayment patterns."
+        }
+      ],
+      "track_id": "track_2",
+      "workflow": [
+        "1. Verify the counterparty and current BuyForMeRetail or Pointsmaker program terms before funding any order; confirm that the PO is genuinely committed rather than treating an indicative buying list as guaranteed demand.",
+        "2. Calculate landed margin after tax, shipping, reward exclusions, returns and financing costs; size purchases to available cash repayment capacity and issuer-approved limits rather than assuming all cards provide uncapped rewards or 60-day float.",
+        "3. Purchase approved merchandise and ship to the specifically authorized DE, NH or OR warehouse with chain-of-custody evidence, recording title transfer, acceptance events and the exact event that starts Net-3 settlement.",
+        "4. Reconcile accepted units and cleared ACH proceeds, reserve for returns or reversals, pay the statement by its actual due date and fund subsequent genuine orders only within verified counterparty and issuer limits."
+      ]
+    },
+    {
+      "id": "cloud_ai_startup_credit_aggregation_arbitrage",
+      "track_id": "track_1",
+      "name": "Cloud & LLM Startup Credit Grant Aggregation ($50k–$350k Free Compute Arbitrage)",
+      "mechanism": "Forming clean Delaware/Wyoming micro-SaaS corporate entities enrolled in verified incubator, venture-partner, or founder-perk directories to unlock non-dilutive cloud and frontier LLM startup credit grants ($25k–$350k across AWS Activate, Azure Founders Hub, GCP for Startups, Cloudflare, OpenAI, and Anthropic), eliminating compute COGS for heavy AI data-extraction, scraping, and B2B SaaS products sold at 90–98% cash margins.",
+      "inputs": [
+        "Clean corporate entity registrations, domain workspace, and live product landing/application endpoints",
+        "Partnerperk/incubator affiliation tiers (Y Combinator Startup School, Stripe Atlas, Mercury Raise, Microsoft for Startups)",
+        "Multi-provider LLM and cloud workload router abstracting inference across AWS Bedrock, Azure OpenAI, and GCP Vertex"
+      ],
+      "workflow": [
+        "Provision dedicated vertical micro-SaaS products with live billing, production authentication, and verified corporate domains",
+        "Enroll each entity in legitimate startup credit programs to secure $25k–$350k in non-dilutive compute, GPU, and LLM token grants",
+        "Route high-volume B2B document parsing, skip-tracing, programmatic content generation, or audio/video transcription workloads across active grant balances",
+        "Sell the resulting B2B intelligence, API access, or SaaS subscriptions for hard cash while tracking credit burn and migrating matured workloads to reserved or open-weight self-hosted inference before grant expiration"
+      ],
+      "metrics": [
+        "Approved non-dilutive compute credit balance ($) per operating entity",
+        "Effective cash revenue generated per $1.00 of nominal grant compute consumed",
+        "Blended gross margin (%) after grant burn and post-grant unit-economics survival rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Cloud provider startup-program audit or credit revocation for linked shell entities or prohibited token reselling",
+          "trigger": "Reusing identical payment cards, billing addresses, or raw API proxy endpoints across multiple entities without a genuine application layer",
+          "impact": "Immediate revocation of promotional credits and potential billing-account suspension",
+          "detection_metric": "Zero raw API key proxying; 100% application-layer value-add and isolated corporate/banking governance per product",
+          "fallback": "Operate genuine standalone vertical SaaS products per entity, never resell raw API keys, and maintain local open-weight (Llama/vLLM/DeepSeek) failover nodes for zero-downtime migration"
+        }
+      ]
+    },
+    {
+      "id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "track_id": "track_1",
+      "name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "mechanism": "Embedding a 'Free Automated Accounts Payable (AP) / Instant Vendor Settlement' platform inside high-volume B2B verticals (freight brokerage, construction general contracting, medical supply, property management, media agencies) that converts checks and ACH payables into single-use Visa/Mastercard Commercial Virtual Credit Cards (VCCs)—capturing 140–195 basis points (1.40%–1.95%) in uncapped commercial interchange rebates on hundreds of millions in third-party invoice volume.",
+      "inputs": [
+        "BaaS / Commercial Card Issuing bank partnership (Marqeta, Lithic, Stripe Issuing, Highnote, Cross River) on uncapped Visa/Mastercard Large-Ticket & Purchasing interchange tiers",
+        "ERP/accounting connector (QuickBooks, NetSuite, Sage, McLeod/TMW freight TMS) ingesting open vendor AP ledgers",
+        "Automated vendor-enablement call/email engine pitching 'Day-1 Instant Payment via Virtual Card vs. Net-45 Check/ACH'"
+      ],
+      "workflow": [
+        "Onboard mid-market companies with $20M–$250M/yr in fragmented vendor payables onto a $0-cost AP automation and working-capital portal",
+        "Cross-reference their vendor master list against Visa/Mastercard supplier-acceptance networks to flag vendors that already accept card payments",
+        "Offer remaining vendors immediate Day-1 invoice settlement via single-use emailed/API virtual card in exchange for waiving Net-30/Net-60 wait times",
+        "Earn 1.50%–1.95% gross interchange rebate from the issuing bank on every settled dollar, sharing 0.25%–0.50% with the corporate client while retaining 1.10%–1.45% net platform margin"
+      ],
+      "metrics": [
+        "Total annualized Gross Payment Volume (GPV $) converted from ACH/check to Virtual Card (target: 25–45% of total AP)",
+        "Net retained interchange spread in basis points (110–145 bps) after bank processor fees and client revenue share",
+        "Vendor card-acceptance retention rate (%) across repeat monthly invoices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+          "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+          "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+          "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+          "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "aged_shelf_corp_tradeline_credit_stacking",
+      "track_id": "track_1",
+      "name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "mechanism": "Compare reinstated entities and genuine business credit facilities for working-capital financing; entity age is not operating history, and promotional APR economics require accurate underwriting and repayment capacity.",
+      "inputs": [
+        "Entity filings, beneficial ownership, and liability searches",
+        "Verified operating financials and genuine supplier tradelines",
+        "Lender eligibility, promotional APR, fee, and guarantee terms"
+      ],
+      "workflow": [
+        "1. Audit the entity's ownership, tax liabilities, and reinstatement requirements",
+        "2. Disclose acquisition and actual operating history; establish only genuine paid supplier accounts",
+        "3. Compare lender-approved applications with full debt disclosure and consolidated exposure limits",
+        "4. Fund documented business expenses and repay before promotional expiry using cash-flow reserves"
+      ],
+      "metrics": [
+        "Effective borrowing cost including fees",
+        "Debt service coverage under post-promotion APR",
+        "Utilization and days to promotional expiry"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit withdrawal or unaffordable repricing",
+          "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+          "impact": "Account closure, accelerated repayment, and guarantee exposure",
+          "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+          "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending"
+        }
+      ]
+    },
+    {
+      "id": "authorized_distributor_grey_market_diversion_arbitrage",
+      "track_id": "track_1",
+      "name": "Authorized-Distributor \"Diversion\" & Grey-Market Luxury / Medical Consumables Arbitrage",
+      "mechanism": "Exploiting multinational manufacturers' 35–60% regional price discrimination by using foreign corporate purchasing entities to buy container-loads of 100% authentic branded goods (luxury fragrances, prestige cosmetics, Swiss watches, OTC diabetic test strips, salon haircare, OEM imaging supplies) from over-quota authorized distributors in emerging/EMEA/LATAM markets and importing them into US off-price retail (TJX, Costco, Burlington) and Amazon wholesale channels under the Supreme Court's First-Sale Doctrine (*Kirtsaeng v. John Wiley & Sons*).",
+      "inputs": [
+        "Global wholesale price-book matrix comparing US net distributor pricing against EMEA, LATAM, Eastern European, and Asian-Pacific tier-1 distributor net pricing",
+        "Foreign purchasing subsidiaries (UAE, Poland, Panama, Singapore, Cyprus) with clean trade references and escrow inspection facilities",
+        "SGS/Bureau Veritas pre-shipment authenticity verification and batch-code sanitization SOPs"
+      ],
+      "workflow": [
+        "Identify authentic global SKUs with >40% wholesale price spreads between emerging-market distributor books and US off-price wholesale demand",
+        "Approach regional authorized distributors near end-of-quarter who need to move $500k–$5M in excess allocation to hit their manufacturer volume-tier rebate",
+        "Purchase the sealed master cases via a foreign trading entity, conduct third-party SGS lot authentication, and remove secondary distributor tracking labels that could identify the source distributor",
+        "Import the goods legally under First-Sale exhaustion and flip on back-to-back POs to US off-price retail chains, pharmacy wholesalers, and verified marketplace aggregators"
+      ],
+      "metrics": [
+        "Gross landed price spread (22–45% net margin) between foreign distributor cost and US wholesale PO price",
+        "Inventory cash-conversion cycle (days from escrow release to US buyer wire settlement)",
+        "100% lot-level manufacturer authenticity verification and chain-of-custody pass rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Brand-owner Lanham Act 'material difference' trademark challenge or marketplace invoice rejection",
+          "trigger": "Importing foreign-language packaging or altered warranty/formulation SKUs that differ materially from the US domestic version",
+          "impact": "CBP detention or Amazon brand-gating suppression on specific ASINs",
+          "detection_metric": "Pre-purchase SKU inspection confirming identical UPC/EAN, multi-language compliant labeling, and identical physical formulation",
+          "fallback": "Trade strictly in globally identical universal-packaging SKUs (duty-free prestige fragrances, universal OEM consumables) and sell primarily via direct B2B purchase orders to off-price retail chains and regional wholesalers rather than single-account Amazon storefronts"
+        }
+      ]
+    },
+    {
+      "id": "free_llc_fintech_bounty_stacking",
+      "track_id": "track_1",
+      "name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "mechanism": "Offering a $0-service-fee LLC formation and business-launch concierge (borrower pays only mandatory state filing fees) that embeds a sequential post-formation 'Required Business Infrastructure Checklist' where every newly formed entity opens free business banking, corporate card, payroll, bookkeeping, and merchant accounts—yielding $600–$1,800+ in stacked B2B fintech CPA bounties per free formation.",
+      "inputs": [
+        "High-intent 'free LLC formation' and 'start a business in [State]' search, social, and creator traffic",
+        "Automated state SOS filing workflow, EIN retrieval assistant, and operating-agreement generator",
+        "Direct B2B partner/CPA agreements with neobank, corporate card, payroll, and registered-agent providers"
+      ],
+      "workflow": [
+        "Acquire first-time founders via a genuine $0-markup LLC formation funnel where the user pays only state statutory fees",
+        "Guide the founder through an automated EIN and corporate-resolution wizard immediately upon state filing submission",
+        "Present an integrated 1-click onboarding sequence for a free business checking account ($150–$400 CPA), corporate charge card ($200–$500 CPA), payroll/bookkeeping trial ($100–$300 CPA), and web/domain host ($100–$200 CPA)",
+        "Provide automated compliance reminders and annual report tracking to capture recurring Year-2 registered-agent renewals"
+      ],
+      "metrics": [
+        "Stacked fintech CPA bounty revenue ($) realized per 100 free LLC formations",
+        "Post-EIN bank-account funding conversion rate (%) within 14 days of formation",
+        "Net customer acquisition margin after paid search/creator traffic spend"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+          "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+          "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+          "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+          "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent"
+        }
+      ]
+    },
+    {
+      "id": "sportsbook_promo_ev_matched_betting_syndicates",
+      "track_id": "track_2",
+      "name": "Regulated Sportsbook & Sweepstakes Sign-Up Promo Conversion (Player-2 Arbitrage)",
+      "mechanism": "Operating a mathematical promo-conversion platform and 'Player-2' split-profit syndicate that extracts $3,000–$8,000+ in guaranteed risk-free cash per newly legalized state resident by hedging free-bet sign-up bonuses, deposit matches, and daily odds boosts across 15–25 regulated sportsbooks and sweepstakes platforms at 70–85% deterministic conversion rates.",
+      "inputs": [
+        "Real-time sub-second odds-screen API ingesting mainlines and alternate lines across 20+ regulated books and prediction exchanges",
+        "Deterministic Free-Bet Conversion (SNR — Stake Not Returned) and Dutch-hedging calculator",
+        "State-by-state regulatory launch calendar and referral/concierge onboarding contracts"
+      ],
+      "workflow": [
+        "Onboard verified adults in newly legalized or active states into a guided promo-conversion software suite or split-profit concierge walkthrough",
+        "Claim all available 'Bet $5 Get $200' and '$1,000 First-Bet Reset' sign-up promotions across every licensed operator in that jurisdiction",
+        "Execute simultaneous offsetting positions on a secondary book or exchange where mathematical conversion locks in 70–85% of the promotional face value regardless of game outcome",
+        "Transition post-signup accounts into daily +EV odds-boost and sweepstakes daily-login bonus harvesting until operator stake-limiting occurs"
+      ],
+      "metrics": [
+        "Net risk-free cash extracted ($) per full state book rotation",
+        "Promo-to-cash conversion efficiency (%) across SNR and reset bonuses",
+        "Account longevity (days before stake-limiting) and software/syndicate split revenue ($)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Sportsbook promo-ban ('gubbing'), stake limiting, or multi-accounting confiscation",
+          "trigger": "Logging into multiple individuals' accounts from shared devices/IPs or betting obscure illiquid alternate lines that trigger trader alerts",
+          "impact": "Loss of future promotional eligibility or frozen account balances under KYC review",
+          "detection_metric": "Maximum allowed stake size on mainline markets and 100% 1-person-1-device-1-residential-IP compliance",
+          "fallback": "Enforce strict client-side execution where each participant operates exclusively on their own personal mobile device and cellular connection, sticking to high-liquidity mainlines"
+        }
+      ]
+    },
+    {
+      "id": "platform_privilege_tier_account_arbitrage",
+      "track_id": "track_2",
+      "name": "High-Tier \"Local Guide / Autoconfirmed Editor / Top Hunter\" Authority Account Arbitrage",
+      "mechanism": "Cultivating free user accounts into high-privilege algorithmic trust tiers—such as Google Local Guides (Level 6–10), Wikipedia Autoconfirmed/Extended-Confirmed editors, Product Hunt top hunters, and G2/Capterra/Trustpilot verified reviewers—whose edits, map suggest-an-edit actions, category changes, and launches carry massive algorithmic weight and sell for high-ticket B2B retainers.",
+      "inputs": [
+        "Geo-matched Google Local Guide (Level 6+), aged Wikipedia, and aged Product Hunt / software-review accounts",
+        "Location-consistent EXIF metadata, mobile device telemetry, and verifiable third-party citation dossiers",
+        "B2B local-SEO, knowledge-graph, and SaaS launch client demand"
+      ],
+      "workflow": [
+        "Build sustained, legitimate contribution histories across local maps, encyclopedia entries, and software ecosystems to unlock elevated platform trust tiers",
+        "Use high-tier Local Guide accounts to submit rapid-approval GBP spam-name redressals, competitor duplicate merges, and category corrections for local-service clients",
+        "Execute policy-compliant, source-backed knowledge-graph updates and high-visibility Product Hunt/directory launches for B2B SaaS brands",
+        "Package these high-trust authority interventions as premium reputation, entity-SEO, and launch-management retainers ($2,500–$10,000/mo)"
+      ],
+      "metrics": [
+        "Platform edit/suggestion auto-approval rate (%) and time-to-live publication",
+        "Client local-pack rank lift or knowledge-panel entity resolution rate (%)",
+        "Retainer revenue per managed authority campaign ($)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Privilege-tier badge revocation or undisclosed paid-editing enforcement",
+          "trigger": "Submitting biased, unsourced promotional edits or executing bulk map edits outside the account's natural geographic radius",
+          "impact": "Demotion of account trust score and rollback of historical edits",
+          "detection_metric": "Edit acceptance/revert ratio (%) and strict geographic/topical consistency per account",
+          "fallback": "Submit only factually verifiable, secondary-source-backed edits and keep Local Guide accounts strictly locked to their native metropolitan areas"
+        }
+      ]
+    },
+    {
+      "id": "telegram_channel_signal_scraping",
+      "track_id": "track_1",
+      "name": "Telegram Channel & Deal-Room Signal Scraping",
+      "mechanism": "Ingest public Telegram channel broadcasts, OTC deal rooms, wholesale distress feeds, and niche community message streams in real time to extract high-intent buyer/seller triggers before they hit public search—while avoiding naive member-list scraping traps.",
+      "inputs": [
+        "Public Telegram channel & group broadcast streams",
+        "Keyword & entity-regex signal filters",
+        "Inbound utility-bot & deal-desk capture endpoints"
+      ],
+      "workflow": [
+        "Monitor public channel message history and live broadcast streams for high-intent deal keywords (buying, distressed lot, urgent allocation, broker needed)",
+        "Score and deduplicate message authors and deal metadata against minimum ticket thresholds without scraping hidden member rosters",
+        "Route verified deal signals to an operator desk or deploy a pinned niche utility bot (alert/calculator/directory) that converts channel readers into inbound leads"
+      ],
+      "metrics": [
+        "Signal-to-response latency (seconds)",
+        "Qualified deal triggers per 1,000 messages",
+        "Inbound bot opt-in & close rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+          "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+          "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+          "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+          "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots"
+        }
+      ]
+    },
+    {
+      "id": "section_321_de_minimis_bonded_tariff_arbitrage",
+      "track_id": "track_1",
+      "name": "Section 321 \"De Minimis\" & Border Bonded-Warehouse Tariff Split-Shipping Arbitrage",
+      "mechanism": "Routing bulk sea/air container imports for high-tariff DTC and marketplace brands into Tijuana (IMMEX) or Canadian border-zone bonded 3PL warehouses instead of US ports, then fulfilling individual US consumer orders across the border daily under 19 U.S.C. § 1321 (Section 321 Entry Type 86)—legally eliminating 15%–42.5% customs duties on qualifying consumer parcels and charging brands 35–50% of the saved tariff bill plus 3PL fulfillment fees.",
+      "inputs": [
+        "USITC Harmonized Tariff Schedule (HTS) database cross-referenced against US Customs Bill-of-Lading import records (ImportYeti / Panjiva / Datamyne)",
+        "Nearshore Mexican IMMEX or Canadian customs-bonded fulfillment center 5–15 miles from San Ysidro/Otay Mesa or Windsor/Blaine border crossings",
+        "Automated CBP ACE Entry Type 86 manifest software transmitting 10-digit HTS and consignee data per individual consumer parcel"
+      ],
+      "workflow": [
+        "Scrape public maritime Bill-of-Lading records to identify US apparel, footwear, luggage, and consumer-goods brands importing 20+ containers/yr in 18%–37.5% HTS duty brackets",
+        "Divert the client's ocean containers in-bond (IT/T&E bond) directly to the nearshore border-zone fulfillment facility without paying US bulk entry duties",
+        "Sync the warehouse WMS with the brand's Shopify/Amazon store so each US consumer order (<$800 retail value, 1 per person per day) is picked, packed, and cleared via CBP Entry Type 86 at $0 duty",
+        "Line-item bill the brand for standard pick-and-pack fulfillment plus a 35–50% contingency split of the verified customs duties eliminated"
+      ],
+      "metrics": [
+        "Annualized customs duty eliminated ($500k–$10M+/yr per enterprise brand client)",
+        "Net tariff-savings share + 3PL margin ($) per parcel cleared across the border",
+        "CBP Type 86 automated release rate (>99.4%) and border transit time (<6 hours to USPS/FedEx domestic injection)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Statutory exclusion of specific Section 301 country-of-origin SKUs from Section 321 de minimis eligibility",
+          "trigger": "Executive/statutory rulemaking removing China-origin Section 301 HTS codes from Entry Type 86 eligibility or tightening 10-digit HTS description rules",
+          "impact": "Loss of Section 321 duty exemption on affected country-of-origin SKUs",
+          "detection_metric": "Real-time HTS + Country-of-Origin eligibility screen in the WMS before container booking",
+          "fallback": "Focus on non-301 origin goods (Vietnam, India, EU, Bangladesh, Cambodia) where high MFN duties (16%–32% on apparel/footwear/textiles) remain 100% Section 321 exempt, and pair with CBP First-Sale Valuation for remaining SKUs"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "detection_metric": "Receivables aging beyond the contractual Net-3 start event, rejected deliveries, reward clawbacks and stressed cash coverage below the operator's minimum.",
+      "failure_mode": "Buying-group acceptance or settlement fails while the card issuer still requires full repayment or reverses expected rewards.",
+      "fallback": "Stop new purchases, meet card obligations from reserved cash, recover or resell legitimately owned goods through permitted channels and resume only after settlement reliability and issuer eligibility are confirmed.",
+      "impact": "A nominally profitable order becomes illiquid inventory and unsecured receivables, with interest charges, lost rewards or restricted card access.",
+      "trigger": "Counterparty insolvency, SKU rejection, warehouse delivery disputes, delayed ACH, reward exclusions or issuer restrictions on purchase and repayment patterns.",
+      "play_id": "wholesale_buying_group_card_float_cycling",
+      "play_name": "Pre-Committed Buying-Group Fulfillment and Commercial Card Working-Capital Operator",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Cloud provider startup-program audit or credit revocation for linked shell entities or prohibited token reselling",
+      "trigger": "Reusing identical payment cards, billing addresses, or raw API proxy endpoints across multiple entities without a genuine application layer",
+      "impact": "Immediate revocation of promotional credits and potential billing-account suspension",
+      "detection_metric": "Zero raw API key proxying; 100% application-layer value-add and isolated corporate/banking governance per product",
+      "fallback": "Operate genuine standalone vertical SaaS products per entity, never resell raw API keys, and maintain local open-weight (Llama/vLLM/DeepSeek) failover nodes for zero-downtime migration",
+      "play_id": "cloud_ai_startup_credit_aggregation_arbitrage",
+      "play_name": "Cloud & LLM Startup Credit Grant Aggregation ($50k–$350k Free Compute Arbitrage)",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+      "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+      "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+      "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+      "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases",
+      "play_id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "play_name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Credit withdrawal or unaffordable repricing",
+      "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+      "impact": "Account closure, accelerated repayment, and guarantee exposure",
+      "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+      "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending",
+      "play_id": "aged_shelf_corp_tradeline_credit_stacking",
+      "play_name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Brand-owner Lanham Act 'material difference' trademark challenge or marketplace invoice rejection",
+      "trigger": "Importing foreign-language packaging or altered warranty/formulation SKUs that differ materially from the US domestic version",
+      "impact": "CBP detention or Amazon brand-gating suppression on specific ASINs",
+      "detection_metric": "Pre-purchase SKU inspection confirming identical UPC/EAN, multi-language compliant labeling, and identical physical formulation",
+      "fallback": "Trade strictly in globally identical universal-packaging SKUs (duty-free prestige fragrances, universal OEM consumables) and sell primarily via direct B2B purchase orders to off-price retail chains and regional wholesalers rather than single-account Amazon storefronts",
+      "play_id": "authorized_distributor_grey_market_diversion_arbitrage",
+      "play_name": "Authorized-Distributor \"Diversion\" & Grey-Market Luxury / Medical Consumables Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Fintech partner CPA clawback or payout tier downgrade due to unfunded/dormant business bank accounts",
+      "trigger": "Sending low-intent formations that open free business bank accounts but never complete KYC or initial deposit funding",
+      "impact": "Reversal of unvested CPA bounties or shift from account-open CPA to funded-account CPA tiers",
+      "detection_metric": "30-day funded-account activation rate (%) and average initial deposit balance across referred LLCs",
+      "fallback": "Gate free operating-agreement and bookkeeping templates behind verified bank-account funding and pre-qualify founders on 30-day operating revenue intent",
+      "play_id": "free_llc_fintech_bounty_stacking",
+      "play_name": "\"Free LLC / Free Setup\" Fintech Account Co-Registration Bounty Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Sportsbook promo-ban ('gubbing'), stake limiting, or multi-accounting confiscation",
+      "trigger": "Logging into multiple individuals' accounts from shared devices/IPs or betting obscure illiquid alternate lines that trigger trader alerts",
+      "impact": "Loss of future promotional eligibility or frozen account balances under KYC review",
+      "detection_metric": "Maximum allowed stake size on mainline markets and 100% 1-person-1-device-1-residential-IP compliance",
+      "fallback": "Enforce strict client-side execution where each participant operates exclusively on their own personal mobile device and cellular connection, sticking to high-liquidity mainlines",
+      "play_id": "sportsbook_promo_ev_matched_betting_syndicates",
+      "play_name": "Regulated Sportsbook & Sweepstakes Sign-Up Promo Conversion (Player-2 Arbitrage)",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Privilege-tier badge revocation or undisclosed paid-editing enforcement",
+      "trigger": "Submitting biased, unsourced promotional edits or executing bulk map edits outside the account's natural geographic radius",
+      "impact": "Demotion of account trust score and rollback of historical edits",
+      "detection_metric": "Edit acceptance/revert ratio (%) and strict geographic/topical consistency per account",
+      "fallback": "Submit only factually verifiable, secondary-source-backed edits and keep Local Guide accounts strictly locked to their native metropolitan areas",
+      "play_id": "platform_privilege_tier_account_arbitrage",
+      "play_name": "High-Tier \"Local Guide / Autoconfirmed Editor / Top Hunter\" Authority Account Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+      "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+      "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+      "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+      "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots",
+      "play_id": "telegram_channel_signal_scraping",
+      "play_name": "Telegram Channel & Deal-Room Signal Scraping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Statutory exclusion of specific Section 301 country-of-origin SKUs from Section 321 de minimis eligibility",
+      "trigger": "Executive/statutory rulemaking removing China-origin Section 301 HTS codes from Entry Type 86 eligibility or tightening 10-digit HTS description rules",
+      "impact": "Loss of Section 321 duty exemption on affected country-of-origin SKUs",
+      "detection_metric": "Real-time HTS + Country-of-Origin eligibility screen in the WMS before container booking",
+      "fallback": "Focus on non-301 origin goods (Vietnam, India, EU, Bangladesh, Cambodia) where high MFN duties (16%–32% on apparel/footwear/textiles) remain 100% Section 321 exempt, and pair with CBP First-Sale Valuation for remaining SKUs",
+      "play_id": "section_321_de_minimis_bonded_tariff_arbitrage",
+      "play_name": "Section 321 \"De Minimis\" & Border Bonded-Warehouse Tariff Split-Shipping Arbitrage",
+      "track_id": "track_1"
+    }
+  ]
+}

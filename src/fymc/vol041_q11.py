@@ -9,673 +9,706 @@ CHAPTER_11 = {
     "question_prompt": "How do you structure a lean 1 FT + 2 C (3 people) -> 2 FT + 3 C (5 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
     "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Five-Seat Accountability, Net-3/Net-5 Settlement Controls, SkyBox Exception Queues, ASC 606 Spread Reconciliation, and Transferable Operating Assets",
+    "subtitle": "Five-Seat Execution, Net-3/Net-5 ACH Cohorts, Rebate Attribution, Repayment Reserves & Transferable IP Under 17 U.S.C. Section 204(a)",
     "layout_template": "action_checklist",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, Buying Group, Card-Float & Ticket Allocation Arbitrage, ranks #09 of 42 "
-        "with a 93/100 Money-to-Manpower Score. Its 11 mapped plays require one accountable "
-        "cash controller, not eleven specialists. Start with 1 FT + 2 C, separating purchasing "
-        "authority from reconciliation and ticket execution; expand to 2 FT + 3 C only when "
-        "exception volume supports the added seats. Canonical annual owner profits are "
-        "$20,000 Conservative, $143,500 Base, and $360,000 Scaled. Build weekly scorecards "
-        "around settled contribution, statement coverage, allocation delivery, and concentration. "
-        "Preserve accrual evidence, signed intellectual-property assignments, and transferable "
-        "counterparty relationships. Value documented earnings after replacement labor and "
-        "working-capital needs, rather than treating personal card limits or gross resale "
-        "proceeds as saleable enterprise value."
+        "Candidate #41, Rank #10 of 43, scores 93/100 by concentrating execution "
+        "into a small pod rather than confusing purchase volume with earnings. "
+        "This chapter organizes 11 mapped plays into accountable buying-group, "
+        "commercial rebate, and treasury workstreams. Start with 1 FT + 2 C; "
+        "expand to 2 FT + 3 C only when cleared contribution funds the added "
+        "capacity. Formula v2.0 annual owner profits remain $20,000 Conservative, "
+        "$143,500 Base, and $360,000 Scaled. Weekly scorecards connect each "
+        "purchase commitment to warehouse acceptance, cleared ACH, card repayment, "
+        "and realized rewards. Transferable contracts, signed IP assignments, "
+        "cohort accounting, and tested owner absence support either a credible "
+        "sale process or a durable cash cow without capitalizing borrowed principal."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross activity basis; $87,500 retained revenue at 35%.",
-            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis net margin; $20,000 annual owner net profit; 1 FT + 2 C; 22.86% retained net margin.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross activity basis; $358,750 retained revenue at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis net margin; $143,500 annual owner net profit; 1 FT + 2 C; 40.0% retained net margin.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross activity basis; $630,000 retained revenue at 35%.",
-            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis net margin; $360,000 annual owner net profit; 2 FT + 3 C; 57.14% retained net margin.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Assign eleven play responsibilities without building eleven jobs",
+            "heading": "1. Assign eleven plays to three seats before adding two more",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Treat the eleven mapped plays as responsibilities inside one cash-conversion "
-                    "system. This chapter uses working labels rather than assuming an unpublished "
-                    "catalog of play names: P01 buying-group qualification, P02 committed purchase-order "
-                    "sourcing, P03 retail procurement, P04 insured shipment and acceptance, P05 "
-                    "buying-group settlement recovery, P06 card-cycle scheduling, P07 rebate capture, "
-                    "P08 lawful ticket acquisition, P09 multi-exchange ticket distribution, P10 "
-                    "seat-license and corporate-suite allocation brokerage, and P11 repricing and "
-                    "exit liquidation. In the three-person pod, the full-time owner controls P01, "
-                    "P02, P06, and P08 purchase authorization. The first contractor owns evidence "
-                    "assembly across P03 through P05 and P07; the second executes P09 through "
-                    "P11 within documented price and inventory limits. Execution ownership does "
-                    "not grant payment authority. Every purchase requires a recorded commitment "
-                    "identifier, basis ceiling, settlement expectation, and authorized card before "
-                    "money moves. The owner reviews exceptions rather than retyping receipts. "
-                    "A ticket specialist may propose an allocation but cannot both create its "
-                    "inventory record and certify its delivery. This division covers all eleven "
-                    "plays while keeping cash release, source evidence, and performance reporting "
-                    "separate. Give each responsibility one primary operator and one named backup; "
-                    "the backup uses individual access and the same evidence checklist."
+                    "Use an eleven-play execution map to give Candidate #41 a "
+                    "manageable operating surface: P01 counterparty qualification, P02 "
+                    "pre-commit capture, P03 landed-cost procurement, P04 insured "
+                    "warehouse fulfillment, P05 ACH collection, P06 commercial-card "
+                    "offer routing, P07 Rakuten and TopCashback attribution, P08 "
+                    "Plastiq and Melio invoice economics, P09 statement-liability "
+                    "scheduling, P10 bank-bonus qualification, and P11 T-bill sweep "
+                    "reconciliation. This chapter-level map separates three economic "
+                    "models instead of presenting eleven independent profit centers. "
+                    "Buying-group fulfillment owns P01 through P05; commercial "
+                    "rebates own P06 through P08; treasury owns P09 through P11, "
+                    "with P09 acting as the shared repayment control. In the "
+                    "three-person pod, the full-time owner handles P01, procurement "
+                    "authorization, P06, P08, P09, and P10. A fulfillment contractor "
+                    "executes P02 through P04 within written purchase limits. A "
+                    "reconciliation contractor owns P05, P07, and P11 evidence. "
+                    "Neither contractor may both amend beneficiary instructions "
+                    "and release a payment. Give each play one accountable seat, "
+                    "one evidence folder, and one measurable completion condition. "
+                    "A confirmed purchase order is not a warehouse acceptance; "
+                    "an ACH notice is not cleared cash; a portal tracking event "
+                    "is not an earned rebate. These distinctions prevent a "
+                    "three-person team from approving its own missing evidence "
+                    "while calling the resulting dashboard automation."
                 ),
                 (
-                    "Design contractor engagements around accepted deliverables, service windows, "
-                    "and demonstrable independence, not employee-like supervision disguised by an "
-                    "invoice. A starting commercial model is $600 monthly for the reconciliation "
-                    "package plus $3 for each accepted buying-group order packet, and $500 monthly "
-                    "for ticket inventory maintenance plus $4 for each completed ticket-order "
-                    "evidence packet. These are illustrative negotiated prices, not embedded "
-                    "scorecard assumptions. At 120 buying-group packets and 80 ticket packets, "
-                    "combined monthly fees are $1,780 before any separately agreed specialist "
-                    "work. Require complete order packets within one business day after supporting "
-                    "records become available, inventory exceptions acknowledged within two "
-                    "contracted coverage hours, and unresolved cash variances escalated that day. "
-                    "Pay for accepted work, with a documented dispute process; do not reward "
-                    "contractors for increasing card spend or hiding losses. Classification turns "
-                    "on the actual relationship under applicable federal and state tests. Where "
-                    "the business needs continuous direction, fixed shifts, or exclusive service, "
-                    "price an employee arrangement instead. Keep agreements specific about "
-                    "deliverables, correction windows, confidentiality, customer records, and "
-                    "permitted tools. A small team cannot absorb ambiguous responsibility when "
-                    "two exchanges sell the same allocation or a buying group disputes a carton."
+                    "Design contractor engagements around bounded deliverables, "
+                    "documented acceptance, and genuine working arrangements rather "
+                    "than simply labeling permanent supervised labor as contracting. "
+                    "Worker status depends on applicable federal and state tests; "
+                    "29 U.S.C. section 203 supplies relevant federal employment "
+                    "definitions. An illustrative fulfillment engagement pays $35 "
+                    "per hour for eight weekly hours, with a negotiated weekly "
+                    "cap and separately authorized surge work. A reconciliation "
+                    "engagement pays $45 per hour for six weekly hours. At "
+                    "fifty-two weeks, those assumptions cost $14,560 and $14,040, "
+                    "or $28,600 combined before incremental coverage. They are "
+                    "planning inputs, not an assertion that every scenario needs "
+                    "that exact schedule. Require shipment evidence within one "
+                    "business day of carrier handoff, daily exception updates "
+                    "on active commitments, and a reconciled weekly package "
+                    "before the owner's funding review. Pay for accepted work "
+                    "and documented correction effort under the agreement; do "
+                    "not reward gross spending, opened accounts, or borrowed "
+                    "balances. A quality bonus can depend on complete evidence "
+                    "and independently checked accuracy, but should never "
+                    "encourage hiding a late payout. Maintain negotiated "
+                    "rework terms, escalation rights, confidentiality, access "
+                    "limits, and a named substitute. The owner remains accountable "
+                    "for liquidity even when collection work is delegated."
                 ),
                 (
-                    "Expand to five people by adding an employed operations controller and a "
-                    "third contractor for shipment inspection and allocation verification. The "
-                    "founder remains the commercial and treasury lead; the controller owns the "
-                    "weekly close, exception routing, and access administration. The original "
-                    "contractors retain their specialty deliverables rather than inheriting "
-                    "unbounded managerial duties. Add capacity only after four consecutive weeks "
-                    "of measured overload, such as more than twenty unresolved evidence packets "
-                    "at close or repeated breaches of the agreed ticket coverage window. First "
-                    "remove duplicate entry through the buying-group deal-commit reconciler and "
-                    "SkyBox or Automatiq integrations. Confirm supported exchange functions in "
-                    "the contracted product before relying on synchronization. Every operator "
-                    "uses an individual account, multifactor authentication where supported, and "
-                    "minimum necessary permissions. No contractor receives the founder's banking "
-                    "credentials or unrestricted issuer access. Conduct a quarterly absence "
-                    "exercise in which the backup completes settlement matching and an event "
-                    "delivery cycle without founder intervention. Log every question requiring "
-                    "the founder's memory, then convert the answer into a controlled procedure. "
-                    "Transferability begins with that exercise, because a buyer purchases a "
-                    "repeatable operation rather than a collection of personal relationships "
-                    "and undocumented judgment calls."
+                    "Move to five people by adding a full-time operations lead "
+                    "and a third contractor for claims, returns, and rebate "
+                    "recovery. The owner then retains counterparties, capital "
+                    "allocation, issuer relationships, and final payment release; "
+                    "the operations lead supervises commitment capacity and "
+                    "exception resolution. The existing fulfillment and "
+                    "reconciliation contractors retain their original evidence "
+                    "boundaries. The fifth seat absorbs disputed parcels and "
+                    "aged portal claims without contaminating current purchasing "
+                    "decisions. Expand only after eight consecutive weekly "
+                    "closes meet service targets and a trailing contribution "
+                    "schedule covers incremental compensation after repayment "
+                    "reserves. Size the schedule to measured workload, not the "
+                    "appeal of the Scaled headline. At $20,000 Conservative "
+                    "owner profit, a permanent second employee can consume the "
+                    "entire result; at $143,500 Base, replacement management "
+                    "still changes distributable cash materially. Before hiring, "
+                    "run a two-week owner-absence exercise with limited purchasing "
+                    "authority and a designated payment signer. Record every "
+                    "intervention, inaccessible account, and relationship that "
+                    "requires the owner's personal identity. Contracts cannot "
+                    "make issuer underwriting portable. Company-owned procedures, "
+                    "documented counterparty contacts, and tested substitutes "
+                    "can nevertheless reduce dependence on one person. This "
+                    "is the practical foundation of both a durable distribution "
+                    "stream and an acquisition diligence package."
                 ),
             ],
             "table": {
-                "caption": "Three-Person and Five-Person Seat Ownership Across Eleven Working Play Labels",
+                "caption": "Eleven-Play Seat Ownership and Accepted Evidence Matrix",
                 "headers": [
-                    "Seat or control",
-                    "Owned play responsibilities",
-                    "Accepted deliverable and service level",
-                    "Authority boundary and backup",
+                    "Seat and play ownership",
+                    "Required accepted deliverable",
+                    "Compensation or capacity discipline",
+                    "Separation and escalation control",
                 ],
                 "rows": [
                     [
-                        "Founder serves as the full-time commercial treasury lead",
-                        "Owns P01, P02, P06, and P08 purchase authorization",
-                        "Publishes funded purchase limits before each operating day",
-                        "Retains cash release authority with documented emergency delegation",
+                        "Owner directs P01 qualification and P03 purchase authorization.",
+                        "Written counterparty limits accompany every approved purchasing cohort.",
+                        "Owner distributions follow cleared cash and reserved repayment obligations.",
+                        "Beneficiary changes require independent verification before payment release.",
                     ],
                     [
-                        "First contractor supplies buying-group evidence and settlement support",
-                        "Executes evidence work for P03 through P05 and P07",
-                        "Completes supported order packets within one business day",
-                        "Cannot release payments or independently approve settlement writeoffs",
+                        "Fulfillment contractor executes P02 commitments and P04 shipments.",
+                        "Commitment identifiers link serial numbers, labels, and warehouse acceptance.",
+                        "Illustrative eight weekly hours at $35 require accepted evidence.",
+                        "Contractor cannot raise purchasing limits or release bank payments.",
                     ],
                     [
-                        "Second contractor supplies ticket distribution and allocation operations",
-                        "Executes P09, P10, and P11 within approved boundaries",
-                        "Acknowledges inventory exceptions within two contracted coverage hours",
-                        "Cannot increase inventory exposure beyond authorized allocation limits",
+                        "Reconciliation contractor owns P05 collections and P07 portal attribution.",
+                        "Cleared deposits reconcile to accepted units and rebate records.",
+                        "Illustrative six weekly hours at $45 include exception reporting.",
+                        "Unmatched receipts remain exceptions rather than forced ledger matches.",
                     ],
                     [
-                        "Second full-time seat becomes the employed operations controller",
-                        "Coordinates all eleven plays through one exception register",
-                        "Closes weekly cash and inventory exceptions every Monday",
-                        "Cannot approve their own unsupported accounting adjustments alone",
+                        "Owner routes P06 offers and P08 invoice payment economics.",
+                        "Eligibility screenshots accompany net fee and reward calculations.",
+                        "Reward estimates never authorize spending without positive standalone economics.",
+                        "Commercial eligibility must precede use of any payment rail.",
                     ],
                     [
-                        "Third contractor supplies shipment inspection and allocation verification",
-                        "Independently verifies P04 acceptance and P10 delivery evidence",
-                        "Produces serial, condition, and recipient confirmation evidence packets",
-                        "Cannot certify delivery using only the seller's assertion",
+                        "Owner controls P09 liabilities and P10 bank bonus qualification.",
+                        "Dated repayment reserves accompany every proposed deposit allocation.",
+                        "Bonus targets cannot consume cash assigned to card repayment.",
+                        "Issuer restrictions and account ownership remain independently documented.",
                     ],
                     [
-                        "Three-person pod uses an independent founder review checkpoint",
-                        "Checks contractor evidence against bank and exchange source records",
-                        "Samples ten packets weekly and reviews every material exception",
-                        "Founder approves adjustments only after reviewing original source evidence",
+                        "Reconciliation contractor prepares P11 sweep and maturity evidence.",
+                        "Treasury register identifies principal, interest, maturity, and settlement timing.",
+                        "Sweep preparation stays within the existing negotiated service budget.",
+                        "Owner releases transfers after confirming available repayment liquidity.",
                     ],
                     [
-                        "Five-person pod maintains named backups for every responsibility",
-                        "Rotates verified coverage across the eleven play responsibilities",
-                        "Completes quarterly absence exercises without undocumented founder intervention",
-                        "Backups receive individual access rather than shared privileged credentials",
+                        "Scaled operations lead and claims contractor support all eleven plays.",
+                        "Daily capacity board separates current commitments from historical disputes.",
+                        "Incremental seats require measured contribution coverage after repayment reserves.",
+                        "Lead assigns work while owner retains final funding authority.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Buy back founder time without buying hidden settlement risk",
-                "body": (
-                    "Contract around evidence quality and exception closure. Cheap task completion "
-                    "becomes expensive when nobody can prove where the cash or allocation went."
-                ),
+                "title": "Build the pod around evidence handoffs",
+                "body": "Small teams outperform larger purchasing desks when exceptions cannot disappear between seats.",
                 "items": [
-                    "Batch buying-group packets by commitment identifier and receiving location; carton-level proof resolves partial acceptance disputes faster than a single shipment screenshot.",
-                    "Give the ticket contractor a pre-event markdown ladder and minimum contribution authority, then reserve exceptional overrides for the treasury lead.",
-                    "Export supported SkyBox or Automatiq inventory and settlement reports before changing integrations; reconcile the first complete event cohort after every configuration change.",
-                    "Run the founder-absence exercise during an ordinary event week, not a quiet holiday, and measure unanswered questions as operating debt.",
+                    "Give every BuyForMeRetail, Pointsmaker, or MaxOutDeals commitment one immutable cohort ID that survives order splits, parcel claims, and partial ACH payments.",
+                    "Use business-account access roles where supported; never solve a staffing problem by sharing the owner's personal issuer credentials.",
+                    "Have the reconciler sample fulfillment evidence before paying a quality bonus, and have the owner sample reconciler matches before closing the week.",
+                    "Maintain a tested substitute for each contractor and a company-controlled export of procedures, without assuming merchant or issuer accounts can transfer.",
                 ],
             },
         },
         {
-            "heading": "2. Run a weekly cash-and-quality scorecard with enforceable exposure limits",
+            "heading": "2. Run a weekly scorecard that protects repayment before rewarding volume",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Close the weekly scorecard on Monday using the prior Sunday's cutoff, "
-                    "with separate columns for accrued contribution, settled cash, and unresolved "
-                    "exceptions. The founder signs a short decision record covering new purchase "
-                    "capacity, buying-group exposure, card maturities, and upcoming event "
-                    "liquidations. Measure buying-group settlement against the actual Net-3 or "
-                    "Net-5 agreement, including its business-day convention and acceptance "
-                    "trigger. Report median settlement lag alongside the oldest unpaid accepted "
-                    "order; averages alone conceal the receivable most likely to consume "
-                    "liquidity. Measure first-pass packet acceptance as complete accepted packets "
-                    "divided by submitted packets, targeting at least 98% over a rolling four "
-                    "weeks. Separate contractor defects from missing upstream evidence, but keep "
-                    "both visible in the unresolved queue. For tickets, report accepted sales "
-                    "with confirmed delivery, duplicate listing incidents, cancellation cost, "
-                    "and unsold basis by event date. Use zero duplicate sales as an operating "
-                    "target, not an assumption baked into profit. Each metric needs an owner, "
-                    "a reproducible query or export, and a stated response when it breaches "
-                    "its threshold. A dashboard without a corresponding purchase restriction "
-                    "or correction assignment merely documents deterioration after capital "
-                    "has already been committed."
+                    "Close the operating scorecard every Friday using an agreed "
+                    "cutoff and a bank-derived cash balance. For P01 through "
+                    "P05, measure commitment acceptance, shipped units, warehouse "
+                    "acceptance age, collection age, contribution per completed "
+                    "cohort, and unrecovered shipping losses. Define the ACH "
+                    "clock from the counterparty's contractual payment trigger, "
+                    "not automatically from purchase date. Net-3 and Net-5 "
+                    "descriptions mean little without knowing whether acceptance, "
+                    "inspection, or another documented event starts the period. "
+                    "For P06 through P08, report eligible spend, pending "
+                    "tracking, confirmed rewards, cleared rewards, clawbacks, "
+                    "and payment fees separately. For P09 through P11, show "
+                    "each card due date, reserved repayment cash, earliest "
+                    "usable sweep proceeds, bonus qualification progress, and "
+                    "interest actually earned. Assign every exception an owner "
+                    "and next action date. Illustrative internal targets are "
+                    "at least 99% sampled evidence accuracy, at least 98% "
+                    "on-time shipping, and zero unreserved statement obligations "
+                    "inside the chosen repayment horizon. Use both counts "
+                    "and dollar weights so one expensive missing parcel "
+                    "cannot hide among many inexpensive successful orders. "
+                    "Review the oldest exception first, then the largest "
+                    "dollar exposure, then next week's planned commitments. "
+                    "The dashboard should make cancellation easier than "
+                    "rationalizing another purchase."
                 ),
                 (
-                    "Enforce a maximum 25% share for each economically related customer or "
-                    "buying-group counterparty, measured separately against trailing "
-                    "ninety-day retained contribution and current unsecured receivables. Group "
-                    "affiliated entities together rather than counting different trading names "
-                    "as diversification. Also cap any single event at 25% of open ticket "
-                    "basis, and any ticket settlement platform at 25% of outstanding ticket "
-                    "receivables; use a tighter limit where one outage could prevent card "
-                    "payment. Test concentration before each proposed purchase, including "
-                    "already committed but undelivered orders. During startup, a first "
-                    "counterparty mathematically represents all exposure. Do not describe that "
-                    "book as diversified: assemble diversified pilot commitments, use prepaid "
-                    "or simultaneously settled terms where practical, or postpone unsecured "
-                    "scale until the cap is achievable. A breach freezes incremental exposure "
-                    "to the affected counterparty while collections and permitted sales "
-                    "continue. Reopening requires a documented calculation below the limit, "
-                    "not the founder's confidence in a familiar contact. Evaluate "
-                    "concentration at the economic obligor level for corporate suites and "
-                    "seat-license brokerage too. Multiple attendees funded by one corporate "
-                    "account remain one customer for credit-risk purposes, even when the "
-                    "ticket platform issues separate order numbers."
+                    "Set a hard 25% maximum for each buying group's share "
+                    "of outstanding purchase cost, unpaid reimbursements, and "
+                    "trailing ninety-day realized buying-group contribution. "
+                    "Calculate these three denominators independently; passing "
+                    "one does not excuse failing another. Aggregate related "
+                    "entities and common payment dependencies rather than "
+                    "treating different brand names as diversification. Four "
+                    "equal independent counterparties are the arithmetic "
+                    "minimum for a 25% ceiling, while five or more provide "
+                    "useful operating room. A startup unable to qualify enough "
+                    "counterparties should defer that workstream, not silently "
+                    "relax the limit or manufacture tiny accounts. Apply "
+                    "the same ceiling to economically material rebate payers "
+                    "within the rebate book and commercial bank counterparties "
+                    "within the bank-deposit book; treat Treasury securities "
+                    "separately from deposit credit exposure and monitor their "
+                    "custody access. Card capacity needs its own issuer stress "
+                    "test because unused credit is revocable. Stress every "
+                    "buying-group cohort at ten and twenty business days "
+                    "beyond the contracted ACH trigger. Recalculate statement "
+                    "coverage after complete loss of the largest unpaid "
+                    "cohort and a seven-day sweep-access delay. Stop new "
+                    "commitments when the resulting unrestricted cash falls "
+                    "below scheduled repayments. Diversification does not "
+                    "replace a cash reserve, shipment insurance, or verified "
+                    "beneficiary instructions."
                 ),
                 (
-                    "Replace the phrase sixty-day float with a dated maturity ladder. A "
-                    "purchase near statement closing can have far less available time, and "
-                    "issuer review can eliminate expected capacity immediately. For every "
-                    "card, track statement close, payment due date, posted balance, pending "
-                    "charges, rebate eligibility, and linked settlement cohorts. Maintain a "
-                    "cash-only coverage ratio of at least 1.0 for statement payments due "
-                    "within fourteen days after reserving taxes and customer refunds. Show "
-                    "expected receipts separately; receivables are not cash coverage. Stress "
-                    "the ladder with a seven-business-day buying-group delay, a temporary "
-                    "issuer spending freeze, and a 20% reduction in expected proceeds from "
-                    "unsold tickets. These are operating stress assumptions, not changes to "
-                    "the canonical annual scenarios. The owner reduces purchases or commits "
-                    "additional available capital before the projected balance becomes "
-                    "negative. Contractor incentives should reward timely, accurate exception "
-                    "closure and loss documentation, not optimistic forecast revisions. "
-                    "Maintain pre-event markdown curves with checkpoints at twenty-one, "
-                    "fourteen, seven, and two days before the event, adjusted for actual "
-                    "transfer deadlines. Never retain speculative inventory merely to "
-                    "protect a weekly margin percentage while the recoverable cash value "
-                    "continues to decay."
+                    "Treat the advertised fifty-five-day float as a maximum "
+                    "planning hypothesis requiring the actual statement cycle, "
+                    "posting date, grace-period terms, and due date. A purchase "
+                    "near statement close can have substantially fewer days; "
+                    "interest-bearing balances can defeat the entire thesis. "
+                    "Illustratively, a $10,000 eligible B2B invoice earns "
+                    "$200 at a 2% reward rate but costs $290 at a "
+                    "2.9% processing fee, producing a $90 deficit before "
+                    "other costs. Even $10,000 earning an illustrative 4% "
+                    "annualized yield for thirty days generates only $32.88 "
+                    "on an actual/365 calculation. It cannot repair that "
+                    "deficit, and the payable principal remains $10,000. "
+                    "At an actually eligible 4% reward, the same invoice "
+                    "instead contributes $110 before yield, operating costs, "
+                    "and reversals. Verify current Plastiq or Melio charges, "
+                    "card-network permissions, transaction coding, and reward "
+                    "exclusions for the specific invoice; these figures are "
+                    "test inputs rather than quoted vendor pricing. Allow "
+                    "treasury allocation only from funds demonstrably surplus "
+                    "to stressed obligations. Never fund a qualifying bank "
+                    "balance with cash already promised to statement repayment. "
+                    "Return the scorecard to these unit calculations whenever "
+                    "a contractor proposes more throughput or a larger "
+                    "sweep balance."
                 ),
             ],
             "table": {
-                "caption": "Weekly Operating Scorecard With Defined Denominators and Immediate Responses",
+                "caption": "Weekly KPI Definitions, Internal Targets, and Funding Responses",
                 "headers": [
-                    "Metric and accountable seat",
-                    "Calculation and evidence source",
-                    "Threshold or reporting requirement",
-                    "Required action after a breach",
+                    "Scorecard measure",
+                    "Exact measurement rule",
+                    "Internal operating target",
+                    "Required response when breached",
                 ],
                 "rows": [
                     [
-                        "Founder tracks related-counterparty contribution concentration every operating week",
-                        "Related-party contribution divided by trailing ninety-day retained contribution",
-                        "Each related economic counterparty remains at or below 25%",
-                        "Freeze incremental exposure and develop alternative committed purchase channels",
+                        "P02 through P04 evidence completeness and shipping punctuality.",
+                        "Count complete shipment packets against all shipments due that week.",
+                        "Maintain 99% sampled accuracy and 98% punctual shipment completion.",
+                        "Pause affected ordering and repair missing evidence before expansion.",
                     ],
                     [
-                        "Controller tracks unsecured receivable concentration before purchase authorization",
-                        "Related-counterparty unsecured receivables divided by total unsecured receivables",
-                        "Each counterparty remains at or below 25% exposure",
-                        "Collect existing balances before authorizing additional unsecured purchase commitments",
+                        "P05 contractual collection age and cleared cash recovery.",
+                        "Measure business days from each documented contractual payment trigger.",
+                        "Collect within agreed Net-3 or Net-5 terms where contracted.",
+                        "Escalate overdue cohorts and remove expected receipts from liquidity.",
                     ],
                     [
-                        "Reconciliation contractor reports settlement aging against contractual payment terms",
-                        "Accepted order date compared with contractual business-day settlement deadline",
-                        "List every overdue order and the oldest unpaid balance",
-                        "Escalate collections immediately and suspend affected counterparty purchase growth",
+                        "P01 counterparty concentration across three independent exposure bases.",
+                        "Divide related-party exposure by each corresponding workstream total separately.",
+                        "Keep every counterparty at or below 25% throughout operations.",
+                        "Freeze additional exposure until genuine diversification restores every ratio.",
                     ],
                     [
-                        "Treasury lead maintains cash-only fourteen-day statement payment coverage",
-                        "Unrestricted available cash divided by statements due within fourteen days",
-                        "Maintain at least 1.0 after tax and refund reserves",
-                        "Reduce purchasing or fund the projected shortfall before committing",
+                        "P06 through P08 realized reward and fee spread.",
+                        "Subtract fees and reversals from attributable cleared reward amounts.",
+                        "Require positive transaction economics without speculative pending portal rewards.",
+                        "Disable losing routes and investigate changed eligibility or coding.",
                     ],
                     [
-                        "Ticket contractor reports event basis and delivery exception concentration",
-                        "Single-event unsold basis divided by all open ticket basis",
-                        "Every event remains at or below 25% exposure",
-                        "Apply approved markdowns and stop further purchases for that event",
+                        "P09 stressed statement repayment coverage for every due date.",
+                        "Divide unrestricted available cash by obligations due within the horizon.",
+                        "Maintain at least 1.00 coverage after specified collection stresses.",
+                        "Stop commitments and retain cash instead of extending sweeps.",
                     ],
                     [
-                        "Controller measures contractor first-pass evidence packet acceptance weekly",
-                        "Complete accepted packets divided by all submitted evidence packets",
-                        "Achieve at least 98% across four rolling operating weeks",
-                        "Require correction, sample related packets, and revise defective instructions",
+                        "P10 and P11 treasury yield separated from principal movement.",
+                        "Recognize earned interest and qualified bonuses separately from transfers.",
+                        "Preserve repayment liquidity under a seven-day access interruption scenario.",
+                        "Shorten maturities and remove inaccessible funds from repayment coverage.",
                     ],
                     [
-                        "Ticket specialist measures duplicate sales and confirmed delivery quality",
-                        "Match exchange orders against inventory identifiers and recipient confirmations",
-                        "Target zero duplicate sales and document every delivery exception",
-                        "Pause affected listings and verify synchronization before restoring distribution",
+                        "All-play exception age and independently checked work quality.",
+                        "Track oldest unresolved age alongside dollar-weighted error and loss.",
+                        "Assign every exception a responsible seat and next action date.",
+                        "Escalate repeated defects and revise the contractor acceptance specification.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four checks before releasing the next purchasing batch",
-                "body": (
-                    "The treasury lead records these checks against the proposed batch, including "
-                    "existing commitments. A failed check blocks additional exposure, not collections."
-                ),
+                "title": "Verify four conditions before releasing the next cohort",
+                "body": "The owner records each verification against the proposed commitment, not against last month's dashboard.",
                 "items": [
-                    "Verify that related-counterparty contribution and unsecured receivable shares remain at or below 25%, and that the proposed event inventory also passes its exposure cap.",
-                    "Verify cash-only coverage of statements due within fourteen days after reserving taxes, refunds, and already authorized payments.",
-                    "Verify buying-group commitment terms, insured shipment requirements, actual card eligibility, and dated expected settlement against the purchase identifier.",
-                    "Verify ticket acquisition provenance, transfer restrictions, total-price disclosure, and listing synchronization; reject queue or CAPTCHA circumvention under 15 U.S.C. section 45c.",
+                    "Confirm written commitment, correct DE/NH/OR delivery instructions, current counterparty limits, and the actual state resale documentation required for the transaction.",
+                    "Verify card eligibility, payment-rail permissions, current fee schedules, and positive contribution without relying on an unconfirmed portal stack.",
+                    "Rebuild repayment coverage using delayed ACH, insured-loss deductibles, return shipping, and sweep settlement timing; exclude pending rewards from available cash.",
+                    "Verify beneficiary instructions independently, insured shipment limits and exclusions, and a separate reviewer for the evidence supporting payment release.",
                 ],
             },
         },
         {
-            "heading": "3. Reconcile accrual cohorts to the canonical owner-profit bridge",
+            "heading": "3. Keep three economic books and one reconciled owner-profit bridge",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Keep the operating scorecard's gross activity basis separate from the "
-                    "retained revenue bridge. Formula v2.0 uses a 35% retained share for "
-                    "Candidate #41: Conservative gross activity of $250,000 produces $87,500 "
-                    "retained revenue; Base gross activity of $1,025,000 produces $358,750; "
-                    "Scaled gross activity of $1,800,000 produces $630,000. The corresponding "
-                    "65% merchandise and ticket basis amounts are $162,500, $666,250, and "
-                    "$1,170,000. Remaining deductions reconcile to $67,500, $215,250, and "
-                    "$270,000, leaving exactly $20,000, $143,500, and $360,000 of annual "
-                    "owner profit. Those profits equal 8%, 14.0%, and 20% of gross "
-                    "activity, or 22.86%, 40.0%, and 57.14% of retained revenue, with "
-                    "displayed percentages rounded. Do not deduct the merchandise or ticket "
-                    "basis a second time from retained revenue. The scorecard's retained-share "
-                    "presentation is a management bridge; actual ASC 606 gross-versus-net "
-                    "presentation requires a contract-specific principal-versus-agent analysis. "
-                    "A merchant controlling inventory before transfer can require different "
-                    "presentation from a broker arranging a sale. Preserve both the transaction "
-                    "ledger and this management bridge so a buyer can reconcile results "
-                    "without confusing throughput with recognized operator revenue."
+                    "Maintain separate buying-group, rebate, and treasury subledgers "
+                    "under one general ledger. The buying-group cohort starts "
+                    "with a written commitment and records purchase cost, "
+                    "freight, insurance, acceptance, reimbursements, returns, and "
+                    "claim recoveries. Delivery to Delaware, New Hampshire, "
+                    "or Oregon does not automatically settle every sales-tax "
+                    "question; document seller sourcing, delivery, resale "
+                    "status where applicable, and any later taxable use. "
+                    "The rebate subledger records offer eligibility, attribution "
+                    "evidence, expected adjustments, confirmation, payment, and "
+                    "reversal. The treasury subledger records deposit principal, "
+                    "security cost, interest accrual, maturity proceeds, and "
+                    "bank bonuses after the applicable earning conditions. "
+                    "Card purchases create liabilities; paying those liabilities "
+                    "does not create a second expense. Bank transfers and "
+                    "returned Treasury principal create neither revenue nor "
+                    "margin. Prevent duplicate recognition when a purchase-linked "
+                    "rebate reduces merchandise cost and also appears in "
+                    "a portal export. Adopt an accountant-reviewed policy for "
+                    "purchase-price adjustments, promotional receipts, and "
+                    "contingent rewards. IRC section 6001 supports the recordkeeping "
+                    "requirement; sections 451 and 471 inform income timing "
+                    "and inventory treatment where applicable. Link any "
+                    "Form 1099-K under section 6050W to settlements, refunds, "
+                    "and adjustments rather than treating its gross total "
+                    "as a ready-made profit figure."
                 ),
                 (
-                    "Build cohorts around buying-group purchase commitments, ticket events, "
-                    "and individual allocation contracts. Each record carries acquisition "
-                    "date, supplier invoice, accepted quantity, landed basis, card transaction, "
-                    "customer promise, delivery evidence, expected settlement date, and actual "
-                    "cash receipt. Unsold merchandise and tickets remain identified inventory "
-                    "or other appropriate assets until the applicable accounting treatment "
-                    "requires expense recognition or impairment; cash payment alone does not "
-                    "establish a current-period operating loss. Buying-group receivables follow "
-                    "the contractual transfer and acceptance evidence. Ticket collections "
-                    "received before the promised performance is satisfied may represent "
-                    "liabilities rather than earned revenue. Review exchange terms and the "
-                    "operator's actual performance obligation instead of mechanically "
-                    "recognizing every ticket sale on event day. Reconcile pending payouts, "
-                    "refund obligations, and disputed orders separately. Track card rebates "
-                    "by eligible settled purchase and issuer statement, recognizing amounts "
-                    "under a consistent documented policy and reversing clawbacks promptly. "
-                    "Purchase-linked rebates may reduce acquisition cost rather than constitute "
-                    "separate revenue; map their treatment into the scorecard bridge without "
-                    "counting the benefit twice. Tax timing can differ from book timing under "
-                    "26 U.S.C. section 461 and related inventory rules. Maintain a separate "
-                    "tax reconciliation rather than forcing the operating ledger to imitate "
-                    "the bank feed."
+                    "Preserve Formula v2.0 exactly while explaining what its "
+                    "denominators mean. Conservative gross scorecard receipts "
+                    "of $250,000 produce $87,500 retained contribution at "
+                    "35%; $67,500 of subsequent costs leaves $20,000 owner "
+                    "profit. Base gross receipts of $1,025,000 produce "
+                    "$358,750 retained contribution; $215,250 of subsequent "
+                    "costs leaves $143,500. Scaled gross receipts of $1,800,000 "
+                    "produce $630,000 retained contribution; $270,000 of "
+                    "subsequent costs leaves $360,000. The corresponding gross "
+                    "margins are 8%, 14.0%, and 20%; retained margins "
+                    "are 22.86%, 40.0%, and 57.14%. These costs are "
+                    "the complete bridge after the scorecard's landed-merchandise "
+                    "deduction, not a claim that monthly fixed overhead "
+                    "equals those annual totals divided by twelve. Reconcile "
+                    "contractors, payroll, transaction fees, shipping treatment, "
+                    "returns, claims, software, and other operating costs "
+                    "without deducting anything twice. Treat 35% as the "
+                    "supplied planning assumption, not a promised spread on "
+                    "individual electronics purchases. It is also not an "
+                    "automatic ASC 606 principal-versus-agent conclusion. "
+                    "Actual gross or net presentation depends on contractual "
+                    "control and the applicable recognition policy. Retain "
+                    "a separate scorecard bridge so changing presentation "
+                    "cannot fabricate improved economics or turn client "
+                    "invoice principal into operator revenue."
                 ),
                 (
-                    "Use the monthly operating-expense range of $1,500 to $9,000 as a "
-                    "planning envelope, not a substitute for the full annual profit bridge. "
-                    "The residual deductions above can contain variable selling fees, "
-                    "freight, labor, losses, and other modeled costs; their exact composition "
-                    "must be supported before presenting historical earnings. Classify each "
-                    "cost once, because landed freight included in inventory basis cannot "
-                    "also remain in operating expense. Contractor packet fees belong to "
-                    "their serviced cohorts or a consistently allocated overhead pool. "
-                    "Separate owner distributions, debt principal payments, and inventory "
-                    "purchases from operating expense, then reconcile cash movement to "
-                    "accrual profit monthly. Preserve statements, settlement exports, "
-                    "receipts, and adjustment approvals in a controlled evidence archive "
-                    "with transaction identifiers. The controller prepares the close; "
-                    "the founder reviews unusual entries and any change in policy. "
-                    "At three people, the founder performs that review directly rather "
-                    "than pretending the pod has a separate finance department. Maintain "
-                    "a twelve-month rolling cash forecast alongside the ledger, including "
-                    "issuer freezes and delayed buying-group settlement. Profitable cohorts "
-                    "can still create a funding crisis when statement dates arrive before "
-                    "cash collections, especially during rapid inventory growth or "
-                    "concentrated event seasons."
+                    "Close by purchase cohort and service month rather "
+                    "than by whichever bank feed imported first. A December "
+                    "shipment accepted in January needs the documented "
+                    "contractual recognition treatment, not an arbitrary "
+                    "year-end revenue push. An earned but unpaid wholesale "
+                    "receivable is distinct from cash; a pending portal "
+                    "tracking entry may not yet meet the adopted recognition "
+                    "criteria. Accrue known carrier losses, return costs, "
+                    "contractor services, and rebate reversals in the period "
+                    "supported by the evidence. Reconcile card statements "
+                    "to purchases and payments, then reconcile the statement "
+                    "liability to the due-date reserve. Reconcile each "
+                    "T-bill maturity into original principal and earned "
+                    "return, preserving acquisition discount and settlement "
+                    "records. Use QuickBooks Online or Xero for the "
+                    "general ledger if suitable, with versioned CSV exports "
+                    "and a cohort register that can be rebuilt without "
+                    "the owner's laptop. Restrict spreadsheet formula changes "
+                    "and maintain a change log. Monthly, have someone "
+                    "other than the preparer sample a completed cohort "
+                    "from commitment through cash and a failed cohort "
+                    "through final loss recognition. This negative sample "
+                    "is essential: a buyer needs evidence that bad "
+                    "transactions remain visible, not merely that successful "
+                    "ones produce attractive screenshots."
                 ),
             ],
             "table": {
-                "caption": "Formula v2.0 Reconciliation and Transaction-Level Accounting Evidence",
+                "caption": "Accrual Evidence and Formula v2.0 Reconciliation Matrix",
                 "headers": [
-                    "Scenario or accounting object",
-                    "Gross activity and basis treatment",
-                    "Retained contribution and deduction bridge",
-                    "Owner outcome or required supporting evidence",
+                    "Book or scenario",
+                    "Recognition and measurement discipline",
+                    "Required reconciliation evidence",
+                    "Operator interpretation and failure prevention",
                 ],
                 "rows": [
                     [
-                        "Conservative annual scenario uses the three-person operating pod",
-                        "$250,000 gross activity less $162,500 merchandise and ticket basis",
-                        "$87,500 retained revenue less $67,500 remaining annual deductions",
-                        "$20,000 owner profit equals 8% gross-basis net margin",
+                        "Buying-group fulfillment book covering P01 through P05 cohorts.",
+                        "Apply documented control transfer and purchase-cost recognition policies consistently.",
+                        "Match commitments, supplier invoices, serial records, acceptance, and cleared reimbursements.",
+                        "Do not mistake shipment notices for completed settlement evidence.",
                     ],
                     [
-                        "Base annual scenario retains the same three-person operating pod",
-                        "$1,025,000 gross activity less $666,250 merchandise and ticket basis",
-                        "$358,750 retained revenue less $215,250 remaining annual deductions",
-                        "$143,500 owner profit equals 14.0% gross-basis net margin",
+                        "Commercial rebate book covering P06 through P08 routing.",
+                        "Separate pending attribution, recognized entitlement, collected rewards, and reversals.",
+                        "Preserve offer terms, transaction coding, fee invoices, and payout exports.",
+                        "Prevent duplicate income when rewards already reduce merchandise cost.",
                     ],
                     [
-                        "Scaled annual scenario supports the five-person operating pod",
-                        "$1,800,000 gross activity less $1,170,000 merchandise and ticket basis",
-                        "$630,000 retained revenue less $270,000 remaining annual deductions",
-                        "$360,000 owner profit equals 20% gross-basis net margin",
+                        "Treasury book covering P09 through P11 liquidity controls.",
+                        "Separate payable balances, deposited principal, earned yield, and qualified bonuses.",
+                        "Match bank statements, maturity schedules, bonus conditions, and settlement records.",
+                        "Borrowed principal remains repayable even when invested temporarily elsewhere.",
                     ],
                     [
-                        "Buying-group order cohort connects acquisition through final settlement",
-                        "Record accepted quantities and landed basis against commitment identifiers",
-                        "Separate earned spread from unpaid receivables and collection expenses",
-                        "Retain invoices, serial evidence, acceptance records, and bank matches",
+                        "Conservative case preserves the supplied $250,000 gross scorecard basis.",
+                        "$87,500 retained contribution minus $67,500 subsequent costs equals $20,000.",
+                        "Retained contribution uses 35%; gross-basis net margin remains exactly 8%.",
+                        "Retained net margin rounds to 22.86%; staffing remains 1 FT + 2 C.",
                     ],
                     [
-                        "Ticket event cohort connects allocation rights through completed delivery",
-                        "Track face-value basis, purchase fees, and actual transfer restrictions",
-                        "Separate earned amounts from customer obligations and pending refunds",
-                        "Retain acquisition provenance, recipient confirmation, and exchange settlement evidence",
+                        "Base case preserves the supplied $1,025,000 gross scorecard basis.",
+                        "$358,750 retained contribution minus $215,250 subsequent costs equals $143,500.",
+                        "Retained contribution uses 35%; gross-basis net margin remains exactly 14.0%.",
+                        "Retained net margin equals 40.0%; staffing remains 1 FT + 2 C.",
                     ],
                     [
-                        "Commercial card rebate ledger links eligibility to settled purchases",
-                        "Identify purchase-linked rebates and exclude unrelated personal card activity",
-                        "Apply consistent classification without duplicating the same economic benefit",
-                        "Retain issuer terms, posted rebates, adjustments, and clawback evidence",
+                        "Scaled case preserves the supplied $1,800,000 gross scorecard basis.",
+                        "$630,000 retained contribution minus $270,000 subsequent costs equals $360,000.",
+                        "Retained contribution uses 35%; gross-basis net margin remains exactly 20%.",
+                        "Retained net margin rounds to 57.14%; staffing becomes 2 FT + 3 C.",
                     ],
                     [
-                        "Monthly close reconciles cash movement with documented accrual earnings",
-                        "Separate inventory purchases and principal repayments from operating expenses",
-                        "Explain receivable, inventory, payable, and refund liability balance changes",
-                        "Preserve reviewed reconciliations with dated adjustment evidence and ownership",
+                        "Monthly close separates statutory books from the planning scorecard.",
+                        "Document presentation differences without changing the underlying realized economic result.",
+                        "Bridge inventory costs, operating expenses, accruals, and owner-profit calculations explicitly.",
+                        "Fixed monthly overhead cannot substitute for the complete expense bridge.",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Freeze the reporting cutoff",
-                    "action": "Export bank, issuer, buying-group, and ticket-platform records for the same weekly cutoff.",
-                    "detail": "Retain original exports and record timezone, extraction date, source account, and responsible operator.",
+                    "title": "Freeze the evidence window",
+                    "action": "Export bank, card, counterparty, portal, and treasury records using one cutoff.",
+                    "detail": "Preserve original files and record extraction times; assign late-arriving items to a visible subsequent-events list.",
                 },
                 {
                     "step": 2,
-                    "title": "Match economic cohorts",
-                    "action": "Attach purchases, shipments, allocations, rebates, and settlements to their commitment or event identifiers.",
-                    "detail": "Route unmatched transactions to a named exception owner instead of posting unsupported balancing entries.",
+                    "title": "Reconcile three separate books",
+                    "action": "Match fulfillment, rebate, and treasury entries by cohort and obligation identifier.",
+                    "detail": "Keep partial ACH receipts, disputed parcels, unearned bonuses, and pending portal claims visible rather than forcing completion.",
                 },
                 {
                     "step": 3,
-                    "title": "Reconcile contribution and liquidity",
-                    "action": "Produce the gross-to-retained-to-owner-profit bridge and the fourteen-day cash-only coverage calculation.",
-                    "detail": "Reconcile inventory basis once, identify refund liabilities, and keep expected receipts separate from available cash.",
+                    "title": "Rebuild profit and repayment bridges",
+                    "action": "Reconcile actual recognized results to the scorecard basis and the dated cash reserve.",
+                    "detail": "Show gross receipts, the 35% planning contribution bridge, subsequent costs, actual presentation differences, and every upcoming statement liability.",
                 },
                 {
                     "step": 4,
-                    "title": "Approve corrections and purchasing capacity",
-                    "action": "Review exceptions, concentration, cohort losses, and statement maturities before authorizing additional commitments.",
-                    "detail": "Archive the founder's decision record and assign each correction a responsible person and completion date.",
+                    "title": "Review exceptions and authorize capacity",
+                    "action": "Have the owner review independent samples, concentration ratios, and stressed liquidity.",
+                    "detail": "Release only the next measured commitment allocation; retain a signed review record and a responsible seat for every unresolved exception.",
                 },
             ],
         },
         {
-            "heading": "4. Package transferable earnings and price the business without fantasy multiples",
+            "heading": "4. Sell transferable earnings rather than the owner's credit profile",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Build the sale package while operating, starting with a clean entity "
-                    "ledger, counterparty agreements, access register, and ownership schedule "
-                    "for software and procedures. Contractor-created automation does not "
-                    "automatically belong to the business merely because an invoice was "
-                    "paid. Obtain a signed written copyright assignment covering identified "
-                    "deliverables under 17 U.S.C. section 204(a), plus appropriate rights "
-                    "to modify, maintain, and transfer the work. Identify pre-existing "
-                    "contractor components and third-party license restrictions separately. "
-                    "Do not rely solely on a work-made-for-hire label for commissioned "
-                    "software. Include repositories, deployment instructions for the "
-                    "business's own systems, reconciliation rules, and data dictionaries "
-                    "in the asset schedule. Confirm whether buying-group contracts, ticket "
-                    "exchange accounts, suite allocations, and seat licenses permit "
-                    "assignment or require counterparty consent. Personal card accounts "
-                    "and founder guarantees are not transferable operating assets simply "
-                    "because the business used them. A buyer needs independently approved "
-                    "funding capacity and a workable settlement transition. Acquisition "
-                    "provenance should demonstrate adherence to the BOTS Act, while "
-                    "ticket offers must follow applicable total-price disclosure rules, "
-                    "including 16 CFR Part 464. A valuable book contains reproducible "
-                    "rights and evidence, not screenshots of access that disappears "
-                    "when the founder leaves."
+                    "Prepare a transferable operating package before discussing "
+                    "multiples. Include twenty-four months of monthly statements "
+                    "when available, cohort contribution schedules, concentration "
+                    "history, issuer terms, claim experience, contractor "
+                    "agreements, software inventories, and documented access "
+                    "ownership. Where the operating history is shorter, "
+                    "provide the actual period and show the seasonality "
+                    "limitation explicitly. Obtain signed copyright assignments "
+                    "for contractor-created reconciler code, routing logic, "
+                    "dashboards, and written procedures. Under 17 U.S.C. "
+                    "section 204(a), a transfer of copyright ownership "
+                    "generally requires a signed writing by the owner "
+                    "or authorized agent. Do not assume payment alone "
+                    "transfers ownership or that every commissioned work "
+                    "qualifies as work made for hire. Separate preexisting "
+                    "contractor materials, licensed dependencies, company "
+                    "deliverables, and permitted reuse in the agreement. "
+                    "A buyer also needs reproducible deployment instructions "
+                    "and credential rotation procedures, not exported "
+                    "passwords. Inventory assignment restrictions for every "
+                    "buying-group relationship, portal arrangement, bank "
+                    "account, and commercial card. Identify which relationships "
+                    "require fresh underwriting or counterparty agreement "
+                    "after a transaction. Personal guarantees, individual "
+                    "promotional eligibility, and historical credit limits "
+                    "are not freely transferable company assets. Remove "
+                    "them from the continuity case until the buyer has "
+                    "documented replacement arrangements."
                 ),
                 (
-                    "Price the business from normalized earnings, not gross merchandise "
-                    "movement or the canonical owner-profit figure alone. For planning, "
-                    "use an illustrative 1.5 to 3.0 times verified seller's discretionary "
-                    "earnings range for a small owner-operated book; this is an underwriting "
-                    "sensitivity, not a claim about observed transactions. If Base owner "
-                    "profit of $143,500 were independently reconciled to that earnings "
-                    "definition, the range would be $215,250 to $430,500 before debt, "
-                    "cash, working-capital, and transaction adjustments. If replacing "
-                    "unpaid founder duties costs $70,000 annually, the resulting "
-                    "cash-flow proxy is $73,500 before further normalization. At the "
-                    "same illustrative multiples, that sensitivity becomes $110,250 "
-                    "to $220,500; it is not automatically an EBITDA valuation. For "
-                    "a genuinely manager-run Scaled book, a separate 2.5 to 4.0 "
-                    "times normalized EBITDA sensitivity may be useful. Applying "
-                    "it to $360,000 would imply $900,000 to $1,440,000 only if "
-                    "that entire amount actually reconciles to EBITDA after market "
-                    "replacement compensation. The scorecard does not establish "
-                    "that condition. Buyers discount volatile ticket cohorts, "
-                    "nonassignable relationships, concentrated receivables, and "
-                    "issuer dependence. Demonstrated independence and durable "
-                    "collections support negotiation more effectively than an "
-                    "asserted premium multiple."
+                    "Use valuation ranges as negotiated illustrations, not "
+                    "reported market comparables. A small owner-operated "
+                    "business might be screened at 2.0 to 3.0 times "
+                    "verified seller's discretionary earnings, while a "
+                    "genuinely manager-run operation might be tested at "
+                    "3.0 to 4.0 times normalized EBITDA. Neither range "
+                    "automatically fits this business, and nontransferable "
+                    "reward access or concentrated reimbursements can make "
+                    "an asset-only transaction more appropriate. Formula "
+                    "owner profit is not automatically either earnings "
+                    "measure. First reconcile owner compensation, recurring "
+                    "expenses, interest, taxes, depreciation, and supportable "
+                    "adjustments. If the Base $143,500 were independently "
+                    "verified as sustainable SDE, the illustrative 2.0 "
+                    "to 3.0 range would imply $287,000 to $430,500 "
+                    "before debt, cash, working-capital, and transaction "
+                    "adjustments. If a buyer instead needs $90,000 of "
+                    "fully loaded replacement management, and other "
+                    "normalization differences are zero, the illustrative "
+                    "manager-run earnings proxy becomes $53,500. At "
+                    "3.0 to 4.0 times, that supports only $160,500 "
+                    "to $214,000. Do not compare those headline "
+                    "multiples without their different denominators. A "
+                    "higher multiple on lower transferable earnings "
+                    "can produce a lower price. Underwrite the "
+                    "buyer-specific continuity case before optimizing "
+                    "the sales presentation."
                 ),
                 (
-                    "Separate the operating-business price from the working capital "
-                    "required to keep commitments funded after closing. Agree on a "
-                    "normalized working-capital schedule that identifies collectible "
-                    "receivables, saleable inventory, supplier obligations, customer "
-                    "refunds, and deferred obligations. Determine explicitly whether "
-                    "card balances are debt-like items or included operating "
-                    "liabilities, and prevent double deduction. Event inventory "
-                    "near expiry deserves cohort-level review rather than a "
-                    "blanket valuation at acquisition cost. Any earnout should "
-                    "define collected contribution, returns, rebate clawbacks, "
-                    "accounting consistency, and buyer-controlled operating changes. "
-                    "A holdback tied to proven pre-closing obligations is different "
-                    "from paying twice for ordinary working capital. Offer a "
-                    "bounded transition with named deliverables: counterparty "
-                    "introductions, reconciler handover, one complete statement "
-                    "cycle, and one representative ticket settlement cohort. If "
-                    "sale proceeds fail to compensate for reliable distributions "
-                    "and transition risk, retain the operation as a cash cow "
-                    "with quarterly capital limits and documented founder "
-                    "coverage. The Conservative case yields only $20,000 "
-                    "annually, so transaction costs and replacement labor can "
-                    "overwhelm its sale economics. Revisit the decision using "
-                    "actual trailing earnings, required reinvestment, and owner "
-                    "hours. A premium outcome comes from reducing the buyer's "
-                    "avoidable uncertainty while preserving the business's "
-                    "ability to operate without a sale."
+                    "Structure diligence around what survives closing. A "
+                    "buyer should replay selected P01 through P11 "
+                    "cohorts, observe the weekly close, and run the "
+                    "operation without seller intervention before assigning "
+                    "value to automation. Define normalized working capital "
+                    "using the agreed inventory, receivable, payable, "
+                    "and reserve treatment. Specify whether outstanding "
+                    "card balances are debt-like items or operating "
+                    "payables within that agreement; never subtract "
+                    "the same balance twice. Deduct unrecovered parcel "
+                    "losses, rebate clawbacks, and unsupported receivables "
+                    "through the agreed mechanism rather than hiding "
+                    "them in an optimistic multiple. An earnout can "
+                    "reference collected contribution from specified "
+                    "transferred cohorts after agreed costs, with "
+                    "clear reporting and dispute rights; gross spending "
+                    "is a poor earnout measure. For a cash-cow "
+                    "alternative, retain quarterly owner distributions "
+                    "only after stressed repayment reserves, tax "
+                    "funding, claims reserves, and replacement labor "
+                    "are covered. Revalidate the 25% concentration "
+                    "ceilings and contractor substitution each quarter. "
+                    "The same discipline that improves transferability "
+                    "also reduces owner workload and prevents hidden "
+                    "capital calls. A premium outcome follows durable "
+                    "cleared earnings, resilient counterparties, and "
+                    "independent execution. It does not follow a "
+                    "large credit line, an attractive spreadsheet, "
+                    "or a temporary bank promotion."
                 ),
             ],
             "table": {
-                "caption": "Illustrative Exit Underwriting, Transferability Evidence, and Cash-Cow Alternatives",
+                "caption": "Transferability Tests and Illustrative Buyer Valuation Adjustments",
                 "headers": [
-                    "Buyer question or valuation lens",
-                    "Evidence or explicit planning assumption",
-                    "Illustrative economics or operating treatment",
-                    "Condition required before presenting the claim",
+                    "Diligence asset or earnings basis",
+                    "Evidence a buyer should require",
+                    "Valuation treatment or illustrative calculation",
+                    "Specific reason to reduce confidence",
                 ],
                 "rows": [
                     [
-                        "What owner-operated earnings can survive ordinary transaction scrutiny",
-                        "Reconcile Base owner profit to verified discretionary earnings first",
-                        "$143,500 multiplied by 1.5 to 3.0 yields $215,250 to $430,500",
-                        "Treat the range as sensitivity rather than market evidence",
+                        "Company-owned reconciler code, routing logic, and operating documentation.",
+                        "Signed assignments identify deliverables, authors, licenses, and retained materials.",
+                        "Value reproducible execution rather than unsupported claims of proprietary automation.",
+                        "Missing assignments or personal repositories weaken continuity and ownership evidence.",
                     ],
                     [
-                        "What happens when founder execution requires paid replacement labor",
-                        "Illustratively deduct $70,000 where that compensation was previously absent",
-                        "$73,500 cash-flow proxy supports $110,250 to $220,500 sensitivity values",
-                        "Avoid describing the replacement-adjusted proxy as automatically equivalent EBITDA",
+                        "Buying-group contracts and documented counterparty relationship continuity.",
+                        "Provide assignment terms, replacement contacts, acceptance history, and settlement records.",
+                        "Support maintainable earnings only where relationships can reasonably continue.",
+                        "Personal commitments or concentrated unpaid reimbursements reduce transferable earnings quality.",
                     ],
                     [
-                        "Can the Scaled operation support a manager-run earnings valuation",
-                        "Reconcile $360,000 owner profit to fully normalized EBITDA first",
-                        "Illustrative 2.5 to 4.0 multiples imply $900,000 to $1,440,000 conditionally",
-                        "Include market compensation and verify every proposed earnings adjustment",
+                        "Commercial card, portal, and payment-rail eligibility after closing.",
+                        "Obtain buyer-specific underwriting plans and documented assignment or replacement requirements.",
+                        "Exclude benefits that depend exclusively on the seller's personal eligibility.",
+                        "Historical credit limits alone provide insufficient evidence of future capacity.",
                     ],
                     [
-                        "Does the purchaser receive usable automation and operating documentation",
-                        "Provide signed assignments and an identified third-party license schedule",
-                        "Transfer owned code, documentation, and permitted dependencies through closing",
-                        "Confirm rights under 17 U.S.C. section 204(a) in writing",
+                        "Base owner-operated SDE illustration after independent earnings normalization.",
+                        "Verify $143,500 sustainable SDE with every adjustment supported by records.",
+                        "Illustrative 2.0 to 3.0 times implies $287,000 to $430,500.",
+                        "Required replacement labor or expiring rewards can lower this denominator.",
                     ],
                     [
-                        "Will counterparty access remain available after ownership changes occur",
-                        "Review assignment provisions for buying groups and allocation agreements",
-                        "Obtain required consents and establish independently approved buyer funding",
-                        "Exclude assumptions that personal issuer limits transfer with assets",
+                        "Base manager-run earnings illustration using explicit replacement labor assumptions.",
+                        "Subtract $90,000 fully loaded management from the illustrative $143,500 base.",
+                        "$53,500 at 3.0 to 4.0 times implies $160,500 to $214,000.",
+                        "Additional normalization differences would change these illustrative values further.",
                     ],
                     [
-                        "How much additional working capital must the purchaser provide",
-                        "Prepare collectible receivable and saleable inventory schedules by cohort",
-                        "Negotiate card-balance treatment and prevent duplicate purchase-price deductions",
-                        "Stress settlement delays and expiring allocations before fixing targets",
+                        "Closing working capital, statement liabilities, and disputed settlement balances.",
+                        "Agree classifications, normalized targets, reserve methods, and settlement adjustment procedures.",
+                        "Convert enterprise pricing into equity proceeds without double-counting card liabilities.",
+                        "Unsupported receivables and contingent claims can materially reduce closing proceeds.",
                     ],
                     [
-                        "Would continued ownership outperform a proposed sale after costs",
-                        "Compare actual distributions with reinvestment needs and founder hours",
-                        "Retain bounded capital exposure when sale economics remain unattractive",
-                        "Maintain backup coverage and quarterly concentration reviews while holding",
+                        "Durable cash-cow operation supported by tested owner absence.",
+                        "Demonstrate independent weekly closes, substitute coverage, and reserved repayment liquidity.",
+                        "Distribute surplus only after obligations, reserves, and replacement labor funding.",
+                        "Recurring owner rescue work indicates earnings still depend on personal labor.",
                     ],
                 ],
             },
         },
     ],
-    "pull_quote": "A transferable book is a cash-conversion system that still works when the founder stops answering messages.",
+    "pull_quote": "A buyer pays for earnings that survive your departure, not for credit that disappears with your signature.",
     "diagram_id": "diag-06",
     "action_checklist": [
-        "Assign P01 through P11 to the three-person pod, document payment boundaries, and name a backup for each responsibility before adding headcount.",
-        "Execute deliverable-based contractor agreements with packet pricing, correction windows, quality sampling, access limits, and signed intellectual-property assignments.",
-        "Publish the Monday scorecard with settled contribution, contractual settlement aging, fourteen-day cash-only coverage, event basis, and 25% concentration tests.",
-        "Reconcile all three canonical scenarios through the 35% retained-share bridge without deducting merchandise or ticket basis twice.",
-        "Complete a founder-absence exercise, archive resulting procedures, and verify assignment restrictions on buying-group, exchange, suite, and seat-license relationships.",
-        "Prepare separate discretionary-earnings, replacement-labor, working-capital, and conditional EBITDA schedules before comparing a sale with continued distributions.",
+        "Assign P01 through P11 to the three-person pod, document evidence handoffs, and reserve payment release for an independently reviewed owner decision.",
+        "Execute bounded contractor agreements with compensation caps, measurable QA acceptance, substitute coverage, confidentiality, and signed assignments for company deliverables.",
+        "Publish the weekly scorecard with separate fulfillment, rebate, and treasury results; enforce 25% counterparty ceilings and dated statement-liability coverage.",
+        "Stress Net-3/Net-5 receipts at ten and twenty business days late, remove the largest unpaid cohort, and delay sweep access seven days before approving new commitments.",
+        "Close monthly cohort books and reconcile the $20,000, $143,500, and $360,000 scenario profits without treating borrowed principal or duplicate reward entries as income.",
+        "Run an owner-absence test, inventory transfer restrictions, and calculate buyer-specific normalized earnings before selecting a sale process or quarterly cash distributions.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. section 45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": (
-                "Prohibits covered circumvention of ticket purchase controls and certain sales "
-                "of tickets obtained through that conduct; retain acquisition provenance and "
-                "exclude queue or CAPTCHA bypass methods."
-            ),
-        },
-        {
             "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
             "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Requires a signed writing for covered copyright ownership transfers; obtain "
-                "specific assignments for contractor-created reconciler code and documentation."
-            ),
+            "relevance": "Obtain a signed writing transferring ownership of contractor-created software and documentation instead of assuming payment transfers copyright.",
         },
         {
             "title": "17 U.S.C. section 101 — Definitions, including work made for hire",
             "url": "https://www.law.cornell.edu/uscode/text/17/101",
-            "relevance": (
-                "Defines the limited circumstances supporting work-made-for-hire treatment; "
-                "do not assume commissioned software qualifies solely because a contract uses that label."
-            ),
+            "relevance": "Evaluate the statutory work-made-for-hire definition separately from a contractual assignment; commissioned contractor work does not automatically qualify.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": (
-                "Establishes federal total-price and fee-disclosure requirements for covered "
-                "live-event ticket offers; configure listing and checkout evidence accordingly."
-            ),
+            "title": "26 U.S.C. section 6001 — Notice or regulations requiring records, statements, and special returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": "Preserve transaction-level records supporting merchandise costs, reward treatment, settlement adjustments, interest, bonuses, and reported income.",
         },
         {
-            "title": "California Civil Code section 1770(a)(29) — Advertised price requirements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1770.",
-            "relevance": (
-                "Addresses advertised prices that exclude mandatory fees or charges, subject "
-                "to statutory exceptions; review applicable California ticket offers for complete pricing."
-            ),
+            "title": "26 U.S.C. section 451 — General rule for taxable year of inclusion",
+            "url": "https://www.law.cornell.edu/uscode/text/26/451",
+            "relevance": "Apply the relevant income-timing rules when reconciling earned reimbursements, conditional rewards, and year-end accruals.",
         },
         {
-            "title": "26 U.S.C. section 461 — General rule for taxable year of deduction",
-            "url": "https://www.law.cornell.edu/uscode/text/26/461",
-            "relevance": (
-                "Provides deduction-timing rules, including economic-performance provisions; "
-                "maintain tax adjustments separately from management cohort profitability."
-            ),
+            "title": "26 U.S.C. section 471 — General rule for inventories",
+            "url": "https://www.law.cornell.edu/uscode/text/26/471",
+            "relevance": "Document the applicable inventory method and any available statutory exception rather than automatically expensing all procurement when the card is charged.",
+        },
+        {
+            "title": "26 U.S.C. section 6050W — Returns relating to payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Reconcile applicable payment reporting to gross settlements, returns, adjustments, and ledger classifications without equating reported payments to profit.",
         },
         {
             "title": "29 U.S.C. section 203 — Fair Labor Standards Act definitions",
             "url": "https://www.law.cornell.edu/uscode/text/29/203",
-            "relevance": (
-                "Defines employment-related terms relevant to federal wage protections; "
-                "contractor labels alone do not determine the actual working relationship."
-            ),
+            "relevance": "Evaluate actual worker relationships under applicable employment rules; a contractor label and output-based agreement do not alone determine classification.",
         },
     ],
 }

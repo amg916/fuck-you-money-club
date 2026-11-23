@@ -11,16 +11,17 @@ def build_volume_041_workbook() -> dict:
         }
 
     return {
-        "workbook_id": "wb-041-buying-group-card-rebate-and-ticket-allocation-arbitrage",
-        "volume_id": "vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage",
+        "workbook_id": "wb-041-buying-group-card-float-and-rebate-arbitrage",
+        "volume_id": "vol-041-buying-group-card-float-and-rebate-arbitrage",
         "title": (
-            "Buying Group, Card-Float & Ticket Allocation Arbitrage "
+            "Buying Group, Commercial Card-Float & Rebate Arbitrage "
             "— Operator Companion Workbook"
         ),
         "subtitle": (
-            "6 Printable Operator Worksheets for Buying-Group Underwriting, "
-            "Card-Float Liquidity, Ticket Allocation Execution, Statutory Controls, "
-            "Automation Recovery, and Small-Team Launch Economics"
+            "6 Printable Operator Worksheets for Wholesale Buying-Group "
+            "Underwriting, Commercial Card and Portal Spread Testing, "
+            "Repayment-Safe Treasury Sweeps, Auditable Execution, "
+            "Automation Controls, and a Measured 30-Day Launch"
         ),
         "worksheets": [
             {
@@ -31,251 +32,250 @@ def build_volume_041_workbook() -> dict:
                     "& Spread Qualification"
                 ),
                 "purpose": (
-                    "Qualify each buying-group commitment, ticket allocation, or "
-                    "corporate-suite mandate before capital moves. Establish who owes "
-                    "payment, what creates an enforceable obligation, how inventory "
-                    "can be transferred, and whether collectible spread survives "
-                    "fees, shipment exceptions, delayed settlement, and event-driven "
-                    "price decay."
+                    "Qualify each opportunity before committing purchasing capacity. "
+                    "Separate wholesale fulfillment, commercial card and portal "
+                    "rebates, and treasury earnings into distinct economic models. "
+                    "Document enforceable commitments, settlement behavior, reward "
+                    "eligibility, and repayment resources so apparent spread never "
+                    "conceals counterparty exposure or borrowed principal."
                 ),
                 "chapter_ref": "Q1, Q2, Q6",
                 "instructions": [
                     (
-                        "Open one worksheet for each economic commitment, not each "
-                        "marketplace listing. Assign a permanent deal identifier, name "
-                        "the beneficial inventory owner, and attach the purchase order "
-                        "or allocation agreement before comparing advertised yields "
-                        "or requesting available card capacity."
+                        "Assign every opportunity to one primary model before "
+                        "calculating returns. Record merchandise reimbursement, "
+                        "purchase-linked rewards, and treasury income in separate "
+                        "columns, even when one operating cycle produces all three. "
+                        "Never present card capacity or merchant transaction volume "
+                        "as earned income."
                     ),
                     (
-                        "Verify the buying group's contracting entity and receiving "
-                        "account through independent channels. Request settlement "
-                        "history, reference transactions, receiving procedures, and "
-                        "exception terms; begin with a small paid pilot rather than "
-                        "treating a familiar chat handle as credit evidence."
+                        "Obtain the buying group's written quantity, SKU, destination, "
+                        "acceptance criteria, and payout clock before ordering. Treat "
+                        "BuyForMeRetail, Pointsmaker, and MaxOutDeals as candidates "
+                        "requiring current verification, rather than assuming their "
+                        "terms, warehouse capacity, or settlement reliability."
                     ),
                     (
-                        "Rebuild the spread from actual invoices and collectible "
-                        "proceeds. Separate merchandise reimbursement, ticket proceeds, "
-                        "card rebates, platform charges, shipment costs, and taxes; "
-                        "show both the eligible-rebate case and the zero-rebate case "
-                        "before committing inventory or extending unsecured exposure."
+                        "Verify sales-tax treatment using the actual seller, delivery "
+                        "destination, resale documentation, and transaction facts. "
+                        "A DE, NH, or OR warehouse address alone does not establish "
+                        "that every charge disappears or that a particular retailer "
+                        "will accept your documentation."
                     ),
                     (
-                        "Check ticket purchase limits, transfer restrictions, event "
-                        "dates, suite guest rules, and seat-license provisions against "
-                        "the original documents. Reject acquisition methods involving "
-                        "queue circumvention or identity manipulation, and identify "
-                        "the lawful liquidation route before entering any allocation."
+                        "Price the opportunity without speculative rewards first. "
+                        "Then add separately supported commercial card rewards and "
+                        "one eligible shopping portal. Check resale exclusions, "
+                        "category caps, offer activation, and payment-method restrictions "
+                        "before describing any reward rate as available."
                     ),
                     (
-                        "Stress the deal against delayed ACH, card suspension, "
-                        "shipment rejection, and ticket markdowns. Record the operator "
-                        "who can stop purchases, the maximum recoverable exposure, "
-                        "and the specific evidence required to reopen a paused "
-                        "counterparty or inventory category."
+                        "Approve only quantities that survive delayed reimbursement "
+                        "without interest-bearing balances or emergency sales. Record "
+                        "the person responsible for settlement escalation, the cash "
+                        "reserve supporting repayment, and the precise conditions "
+                        "that suspend additional purchases from the same counterparty."
                     ),
                 ],
                 "fields": [
                     field(
-                        "Deal identity, economic role, and evidence bundle",
+                        "Primary model and income boundaries",
                         "textarea",
                         (
-                            "Identify the deal, contracting parties, inventory owner, "
-                            "and economic role. Distinguish principal resale from "
-                            "agency brokerage, and list the source documents that "
-                            "establish quantity, purchase authority, delivery obligations, "
-                            "and enforceable payment terms."
+                            "Identify the primary operating model, the paying party, "
+                            "the purchased asset or service, and each separate income "
+                            "stream. Explain which amounts are reimbursements, "
+                            "purchase-price adjustments, earned fees, or interest."
                         ),
                         (
-                            "BG-041-001 covers 20 authorized electronics units purchased "
-                            "for $10,000 against a signed $10,200 wholesale commitment. "
-                            "The operator owns merchandise until contractual acceptance. "
-                            "The evidence bundle contains the supplier invoice, buying-group "
-                            "purchase order, receiving address confirmation, serial-number "
-                            "schedule, and written procedure for reporting damaged or "
-                            "missing units."
+                            "Deal BG-001 is wholesale fulfillment, not a treasury "
+                            "trade. Ten devices cost $8,000 and carry an $8,240 "
+                            "written reimbursement commitment. A supported $160 card "
+                            "reward is tracked separately. Potential portal rewards "
+                            "and subsequent interest remain separate records; the "
+                            "$8,000 card liability is never earnings."
                         ),
                     ),
                     field(
-                        "Buying-group credit verification and pilot limit",
+                        "Counterparty identity and verified settlement history",
                         "textarea",
                         (
-                            "Document independently verified entity details, settlement "
-                            "references, bank-account confirmation, and the initial "
-                            "exposure limit. Explain how paid pilot transactions and "
-                            "aging results change the limit without relying on "
-                            "unverified community reputation."
+                            "Record the contracting entity, independently confirmed "
+                            "payment instructions, evidence sources, and observed "
+                            "settlement distribution. Distinguish your own completed "
+                            "transactions from marketing statements or another "
+                            "operator's unverified experience."
                         ),
                         (
-                            "The first commitment is limited to $2,000 after checking "
-                            "the state entity registry, calling a published business "
-                            "number, and obtaining two supplier references. Bank changes "
-                            "require callback verification. The limit rises to $5,000 "
-                            "only after three accepted shipments settle within five "
-                            "business days without unexplained deductions."
+                            "The pilot file for a prospective Pointsmaker arrangement "
+                            "must contain its current contracting entity and independently "
+                            "confirmed payout details before release. Illustrative "
+                            "internal results from five later pilot lots show settlement "
+                            "in three, four, four, five, and eight business days, "
+                            "supporting an eight-day stress input."
                         ),
                     ),
                     field(
-                        "Net-3 or Net-5 acceptance clock",
+                        "Written commitment and acceptance specification",
                         "textarea",
                         (
-                            "Specify whether the settlement clock begins at delivery, "
-                            "inspection, or written acceptance. Record business-day "
-                            "conventions, deduction rights, dispute deadlines, and the "
-                            "person responsible for escalating unpaid accepted "
-                            "merchandise before additional purchases occur."
+                            "Capture the commitment identifier, exact product "
+                            "configuration, quantity ceiling, delivery window, "
+                            "inspection rules, and payment trigger. State how "
+                            "substitutions, late arrivals, rejected units, and "
+                            "commitment cancellation affect reimbursement."
                         ),
                         (
-                            "The purchase order requires acceptance within one business "
-                            "day of carrier delivery and payment within three business "
-                            "days afterward. On a holiday-free Monday delivery, Tuesday "
-                            "acceptance makes Friday the payment deadline. Any deduction "
-                            "must identify affected serial numbers and invoice lines; "
-                            "unpaid accepted inventory blocks further commitments."
+                            "Commitment BG-001 covers ten sealed devices with matching "
+                            "manufacturer SKU and serial-number records at $824 each. "
+                            "The proposed addendum requires inspection within two "
+                            "business days after carrier delivery and written defect "
+                            "evidence for rejection. Substitutions require written "
+                            "acceptance before purchase; silence does not authorize "
+                            "different merchandise."
                         ),
                     ),
                     field(
-                        "Card eligibility, reward terms, and issuer exposure",
+                        "Warehouse destination and tax sourcing evidence",
                         "textarea",
                         (
-                            "Record the actual commercial-card reward rate, eligible "
-                            "merchant categories, exclusions, available capacity, and "
-                            "statement obligations. Treat uncapped rewards as a "
-                            "documented product feature rather than an assumption, "
-                            "and separate available credit from available cash."
+                            "Identify the actual receiving warehouse, seller tax "
+                            "treatment, resale-certificate status, and evidence retained. "
+                            "Explain why the transaction receives its recorded "
+                            "treatment rather than relying exclusively on a "
+                            "destination abbreviation."
                         ),
                         (
-                            "The selected card's written terms provide uncapped 2% "
-                            "rewards on eligible purchases, producing $200 on a "
-                            "$10,000 order. Cash advances and ineligible transactions "
-                            "are excluded. The operator retains $10,000 of repayment "
-                            "capacity outside the card line and models $0 rewards "
-                            "until the issuer posts the credit."
+                            "The selected shipment goes to a verified DE receiving "
+                            "address listed in the commitment. The retailer invoice "
+                            "shows zero sales tax and the shipping record matches "
+                            "that destination. The file retains the resale certificate "
+                            "where applicable, seller acceptance, and transaction-specific "
+                            "sourcing support rather than a blanket exemption assumption."
                         ),
                     ),
                     field(
-                        "Collectible spread and zero-rebate sensitivity",
+                        "Commercial card reward eligibility",
                         "textarea",
                         (
-                            "Calculate spread using collectible reimbursement, eligible "
-                            "rebates, landed basis, shipment charges, and expected "
-                            "exception costs. Display the zero-rebate result separately, "
-                            "and reject any presentation that labels card borrowing "
-                            "or reimbursed purchase principal as profit."
+                            "Record the exact business card program, eligible "
+                            "transaction category, reward rate, exclusions, limits, "
+                            "posting delay, and issuer terms. Distinguish a documented "
+                            "uncapped rate from a promotional headline or "
+                            "conditional offer."
                         ),
                         (
-                            "A $10,000 merchandise purchase produces $10,200 reimbursement "
-                            "and a conditional $200 rebate. Insured freight costs "
-                            "$90 and expected receiving exceptions cost $50. Forecast "
-                            "contribution is $260 with rewards and $60 without them. "
-                            "The $10,200 reimbursement is a cash receipt, not "
-                            "$10,200 of owner earnings."
+                            "For this illustrative deal, the current business card "
+                            "agreement supports 2% on the $8,000 eligible merchandise "
+                            "purchase, producing $160. The evidence packet includes "
+                            "the applicable terms and transaction category. A separate "
+                            "4% offer is excluded until activation, category matching, "
+                            "remaining capacity, and resale eligibility are documented."
                         ),
                     ),
                     field(
-                        "Ticket acquisition provenance and allocation rights",
+                        "Portal attribution and stacking decision",
                         "textarea",
                         (
-                            "Identify the lawful ticket source, account purchase "
-                            "limit, transferable rights, and documentary chain. For "
-                            "stadium seat licenses, abbreviated SSL, or suites, "
-                            "separate the underlying license from individual event "
-                            "tickets and corporate hospitality services."
+                            "Choose one shopping portal per transaction and document "
+                            "its attribution requirements, resale restrictions, coupon "
+                            "rules, payout conditions, and reversal window. Explain "
+                            "whether portal value enters the base calculation "
+                            "or only conditional upside."
                         ),
                         (
-                            "The operator buys eight transferable tickets directly "
-                            "within the published eight-ticket account limit and keeps "
-                            "the order receipt. A separate suite mandate authorizes "
-                            "brokerage for one event only; it does not transfer "
-                            "the stadium seat license. Venue confirmation establishes "
-                            "delivery timing, permitted guests, and resale restrictions."
+                            "Rakuten and TopCashback are compared, but only one "
+                            "tracking path is selected. A possible 1% reward would "
+                            "add $80 on $8,000 of eligible merchandise. Because "
+                            "wholesale eligibility remains unverified in this example, "
+                            "the approved base spread includes zero portal income; "
+                            "$80 appears only as conditional upside."
                         ),
                     ),
                     field(
-                        "Market depth, all-in pricing, and markdown curve",
+                        "B2B invoice fee-versus-rebate screen",
                         "textarea",
                         (
-                            "Use executable comparable sales and current competing "
-                            "inventory to set an all-in price. Define scheduled "
-                            "markdowns, minimum contribution thresholds, and event "
-                            "cutoffs; explain how compulsory charges affect "
-                            "customer-facing totals rather than hiding them downstream."
+                            "For a separate Plastiq or Melio opportunity, document "
+                            "the real invoice, permitted payment route, current "
+                            "quoted fee, reward treatment, and recipient settlement "
+                            "timing. Calculate spread without borrowing assumptions "
+                            "that the transaction cannot support."
                         ),
                         (
-                            "Twenty tickets cost $120 each. The initial customer "
-                            "price is $180 each including mandatory charges other "
-                            "than separately permitted government charges. Prices fall "
-                            "to $165 fourteen days before the event and $145 "
-                            "seven days before it. At three days, the inventory "
-                            "owner chooses liquidation or documented retention."
+                            "A hypothetical $10,000 supplier invoice carries a quoted "
+                            "2.9% processing fee, or $290. If the issuer awards "
+                            "$200 on the invoice amount only, the transaction loses "
+                            "$90 before other costs. It is rejected. The example "
+                            "uses an input quote, not a claim about either platform's "
+                            "current pricing."
                         ),
                     ),
                     field(
-                        "Shipment acceptance, insurance, and recovery waterfall",
+                        "Treasury opportunity and available cash source",
                         "textarea",
                         (
-                            "Map serial tracking, packaging evidence, declared value, "
-                            "coverage exclusions, and acceptance proof to each "
-                            "shipment. Specify who submits carrier or insurance "
-                            "claims, what recovery is actually covered, and "
-                            "how disputed receivables remain visible."
+                            "Identify whether deployable cash is owner capital or "
+                            "cleared operating proceeds. Record the repayment reserve, "
+                            "eligible holding period, expected yield, bonus conditions, "
+                            "and withdrawal timing before treating treasury earnings "
+                            "as incremental value."
                         ),
                         (
-                            "A $10,000 shipment receives serial photographs, tamper-evident "
-                            "packaging, signature delivery, and confirmed cargo coverage "
-                            "subject to a $250 deductible. The operator checks theft "
-                            "and unattended-delivery exclusions before dispatch. A loss "
-                            "opens an insurer claim and a separate receivable dispute; "
-                            "anticipated insurance proceeds never close the unpaid invoice."
+                            "An independent $10,000 owner-funded cash allocation may "
+                            "earn approximately $34.52 over 28 days at a 4.5% "
+                            "simple annualized rate using 365 days. The card repayment "
+                            "reserve is excluded. Any bank bonus remains separate "
+                            "until its deposit, balance, duration, account-status, "
+                            "and payout requirements are satisfied."
                         ),
                     ),
                     field(
-                        "Counterparty, issuer, event, and platform concentration",
+                        "Concentration limit and delayed-payout stress",
                         "textarea",
                         (
-                            "Set concentration limits using deployable cash and "
-                            "stressed exposure, not gross annual throughput. Include "
-                            "accepted unpaid goods, unsettled tickets, refund "
-                            "obligations, correlated event risk, and dependence on "
-                            "one issuer or marketplace settlement channel."
+                            "Set counterparty and issuer exposure limits using "
+                            "unsettled purchase cost, not expected rewards. Describe "
+                            "the longest modeled payout delay, available unrestricted "
+                            "cash, and the stop-purchase trigger protecting "
+                            "statement repayment."
                         ),
                         (
-                            "With $40,000 deployable capital, one buying group may "
-                            "carry at most $8,000 of accepted unpaid exposure. "
-                            "One event may consume $4,000 of ticket basis. "
-                            "A $10,000 proposed shipment exceeds the counterparty "
-                            "limit and is divided into independently accepted lots; "
-                            "card availability does not increase either limit."
+                            "The first counterparty receives an $8,000 unsettled-cost "
+                            "limit against $20,000 of unrestricted cash. An eight-business-day "
+                            "payout stress leaves the statement fully repayable. "
+                            "Additional commitments stop when any accepted lot passes "
+                            "its written payment date or total unsettled cost would "
+                            "exceed the limit, even if attractive offers remain."
                         ),
                     ),
                     field(
-                        "Underwriting decision and reopening evidence",
+                        "Approved spread and rejection rationale",
                         "textarea",
                         (
-                            "State the authorized deal size, required evidence, "
-                            "stop conditions, and accountable operator. Document "
-                            "what would justify reopening a rejected opportunity, "
-                            "and prohibit retrospective rewriting of the original "
-                            "spread assumptions after losses emerge."
+                            "Summarize contribution before overhead, distinguish "
+                            "confirmed assumptions from conditional upside, and "
+                            "document the acceptance decision. Include merchandise "
+                            "cost, shipping, loss provision, rewards, and the "
+                            "specific remaining verification steps."
                         ),
                         (
-                            "The operator authorizes a $2,000 pilot, not the "
-                            "requested $10,000 order. Purchases stop after any "
-                            "missed contractual payment or unresolved account-name "
-                            "mismatch. Reopening requires cleared settlement, a "
-                            "documented root cause, and a revised exposure limit. "
-                            "The original $260 forecast remains preserved beside "
-                            "the pilot's actual contribution."
+                            "BG-001 shows $240 merchandise spread plus $160 supported "
+                            "card rewards, less $60 shipping and a $40 loss "
+                            "provision, yielding $300 expected contribution. Verified "
+                            "portal eligibility could add $80 later. Purchase remains "
+                            "blocked until the commitment and shipping coverage are "
+                            "confirmed; future card rewards cannot fund today's repayment."
                         ),
                     ),
                 ],
                 "completion_gate": (
-                    "Advance only when the contracting entity, payment clock, "
-                    "inventory rights, eligible-rebate terms, zero-rebate economics, "
-                    "and stressed exposure are documented. The accountable operator "
-                    "must sign a specific deal limit, with no unresolved payment "
-                    "identity mismatch or prohibited acquisition method."
+                    "Advance only when the commitment, counterparty identity, "
+                    "destination treatment, supported reward terms, $300 base "
+                    "contribution, and full repayment resources are documented. "
+                    "Leave the $80 conditional portal amount outside the approved "
+                    "base case until eligibility evidence resolves it."
                 ),
             },
             {
@@ -286,264 +286,257 @@ def build_volume_041_workbook() -> dict:
                     "& Working-Capital Calculator"
                 ),
                 "purpose": (
-                    "Translate the canonical scorecard into a cash-safe operating "
-                    "model without confusing gross collections, retained spread, "
-                    "recognized revenue, owner profit, or available credit. Reconcile "
-                    "all three scenarios, calculate dated repayment obligations, "
-                    "and isolate restricted customer funds from deployable working capital."
+                    "Build a cash-first operating model that reconciles individual "
+                    "deals with the supplied annual scorecard. Separate gross "
+                    "activity, retained contribution, owner profit, restricted "
+                    "balances, and card liabilities. Stress timing mismatches "
+                    "before allocating cleared cash to bank bonuses or T-bill "
+                    "holdings."
                 ),
                 "chapter_ref": "Q3, Q4",
                 "instructions": [
                     (
-                        "Copy the three canonical scenarios exactly before building "
-                        "transaction assumptions. Use 35% retained share for scorecard "
-                        "comparability, then reconcile actual contracts separately; "
-                        "do not force thin merchandise spreads or accounting "
-                        "classifications to resemble the blended benchmark."
+                        "Create three economic schedules: wholesale merchandise, "
+                        "commercial card and portal rebates, and treasury income. "
+                        "Link them through transaction identifiers without combining "
+                        "their denominators. An $8,000 merchandise purchase, a "
+                        "$160 reward, and an $8,000 liability describe different "
+                        "economic facts."
                     ),
                     (
-                        "Build a dated cash schedule from purchase authorization "
-                        "through cleared settlement and card repayment. Include "
-                        "statement closing dates, issuer due dates, payout delays, "
-                        "refund windows, and reserves; available revolving capacity "
-                        "must never substitute for a funded repayment plan."
+                        "Enter the Conservative, Base, and Scaled figures exactly "
+                        "as supplied. Apply the 35% retained-share assumption to "
+                        "gross scorecard revenue, then reconcile remaining costs "
+                        "to owner profit. Do not force individual electronics "
+                        "transactions to exhibit that portfolio-level retained share."
                     ),
                     (
-                        "Calculate reward sensitivity at zero, the documented "
-                        "eligible rate, and any contractually supported higher rate. "
-                        "Exclude double counting between rebates and merchandise "
-                        "basis reductions, and show how fees or delayed reward "
-                        "posting affect both contribution and liquidity."
+                        "Build the payment calendar from actual purchase, statement "
+                        "closing, payment due, warehouse acceptance, and cleared "
+                        "ACH dates. Treat 55 days as a possible cycle configuration, "
+                        "not a universal entitlement. Preserve a conservative "
+                        "repayment buffer before any treasury allocation."
                     ),
                     (
-                        "Separate unrestricted operating cash, customer money held "
-                        "under contractual restrictions, platform reserves, and "
-                        "internal liquidity buffers. A reserve transfer changes "
-                        "cash availability, not necessarily earnings; record an "
-                        "expense only when the relevant accounting recognition "
-                        "criteria are satisfied."
+                        "Distinguish an internal repayment reserve from contractual "
+                        "escrow. Record ownership, withdrawal rights, restrictions, "
+                        "and release conditions for every account. Do not describe "
+                        "ordinary business cash as protected escrow merely because "
+                        "a spreadsheet assigns it a dedicated label."
                     ),
                     (
-                        "Reconcile annual profit to monthly fixed overhead and "
-                        "other modeled operating costs. Test counterparty delay "
-                        "and issuer interruption together, then size the next "
-                        "commitment from the lowest projected unrestricted cash "
-                        "balance rather than the highest advertised credit limit."
+                        "Run delayed ACH, denied rewards, rejected merchandise, "
+                        "carrier loss, and issuer shutdown cases separately and "
+                        "together. Show the resulting cash gap and contribution "
+                        "loss. Reduce purchase volume whenever survival depends "
+                        "on selling assets before their scheduled liquidity date."
                     ),
                 ],
                 "fields": [
                     field(
-                        "Canonical Conservative scenario reconciliation",
+                        "Wholesale landed-cost contribution bridge",
                         "textarea",
                         (
-                            "Enter gross revenue, retained share, retained contribution, "
-                            "owner profit, and both margin denominators. Derive "
-                            "the remaining cost allowance explicitly, preserving "
-                            "the canonical one full-time operator and two "
-                            "contractors without treating contractors as free capacity."
+                            "Calculate wholesale contribution using committed "
+                            "reimbursement less actual merchandise cost, shipping, "
+                            "and expected loss. Keep purchase-linked rewards on "
+                            "separate lines and distinguish cash expenses from "
+                            "noncash planning provisions."
                         ),
                         (
-                            "Conservative gross revenue is $250,000. Applying 35% "
-                            "retained share yields $87,500; the corresponding basis "
-                            "bridge is $162,500. Owner net profit is $20,000, "
-                            "equal to 8% of gross and 22.86% of retained "
-                            "revenue. Remaining modeled costs total $67,500 for "
-                            "one full-time operator and two contractors."
+                            "Ten devices cost $8,000; reimbursement is $8,240. "
+                            "Shipping costs $60 and the planning loss provision "
+                            "is $40, leaving $140 wholesale contribution. Supported "
+                            "card rewards add $160, bringing expected combined "
+                            "contribution to $300. Cleared reimbursement less merchandise "
+                            "and shipping produces $180 cash spread before reward "
+                            "posting or realized losses."
                         ),
                     ),
                     field(
-                        "Canonical Base scenario reconciliation",
+                        "Conservative canonical annual reconciliation",
                         "textarea",
                         (
-                            "Reproduce the Base scenario using the same "
-                            "denominator conventions as the Conservative scenario. "
-                            "Show retained contribution, the merchandise and "
-                            "ticket basis bridge, total remaining costs, and "
-                            "the distinction between owner earnings and gross throughput."
+                            "Reconcile the Conservative scenario from gross "
+                            "scorecard revenue through the retained-share bridge "
+                            "to owner profit. State retained margin, staffing, "
+                            "and the distinction between routine overhead and "
+                            "other operating costs."
                         ),
                         (
-                            "Base gross revenue is $1,025,000 and retained "
-                            "revenue is $358,750 at 35%. The basis bridge "
-                            "equals $666,250; remaining modeled costs equal "
-                            "$215,250. Annual owner net profit is $143,500, "
-                            "or 14.0% of gross and 40.0% of retained "
-                            "revenue, with one full-time operator and two contractors."
+                            "Conservative gross revenue is $250,000. The 65% "
+                            "merchandise-cost bridge is $162,500, leaving $87,500 "
+                            "retained revenue. Remaining costs total $67,500, leaving "
+                            "$20,000 owner profit: 8% gross margin and 22.86% "
+                            "retained margin. Staffing is one full-time operator "
+                            "plus two contractors; illustrative overhead is $18,000 "
+                            "annually within those remaining costs."
                         ),
                     ),
                     field(
-                        "Canonical Scaled Small-Team reconciliation",
+                        "Base canonical annual reconciliation",
                         "textarea",
                         (
-                            "Reproduce the scaled economics and identify the "
-                            "staffing increase. Calculate retained margin directly "
-                            "from retained revenue, and ensure the cost "
-                            "bridge reconciles completely without adding a "
-                            "second deduction for merchandise or ticket acquisition basis."
+                            "Reconcile the Base scenario without changing the "
+                            "canonical gross amount, owner profit, or retained "
+                            "share. Separate monthly overhead from other residual "
+                            "costs, and identify the team assumed by the "
+                            "scorecard."
                         ),
                         (
-                            "Scaled gross revenue is $1,800,000. Retained "
-                            "revenue is $630,000, with a $1,170,000 basis "
-                            "bridge and $270,000 of remaining modeled costs. "
-                            "Owner net profit is $360,000: 20% of gross "
-                            "and 57.14% of retained revenue. Staffing expands "
-                            "to two full-time operators plus three contractors, "
-                            "five people total."
+                            "Base gross revenue is $1,025,000. Subtract the $666,250 "
+                            "merchandise-cost bridge to obtain $358,750 retained "
+                            "revenue. Residual costs of $215,250 leave $143,500 "
+                            "owner profit, equal to 14% gross and 40% retained "
+                            "margins. Illustrative residual costs comprise $54,000 "
+                            "annual overhead and $161,250 other costs; staffing "
+                            "is one full-time operator plus two contractors."
                         ),
                     ),
                     field(
-                        "ASC 606 presentation and retained-share bridge",
+                        "Scaled canonical annual reconciliation",
                         "textarea",
                         (
-                            "Document principal-versus-agent conclusions using ASC "
-                            "606-10-55-36 through 55-40. Separate the scorecard's "
-                            "retained-revenue convention from financial-statement "
-                            "presentation, and explain where card rebates, "
-                            "sales taxes, and customer reimbursements belong "
-                            "under the actual arrangement."
+                            "Reconcile the Scaled scenario and show both gross "
+                            "and retained profit margins. Explain how the "
+                            "five-person team and upper monthly overhead input "
+                            "fit inside the residual cost allowance."
                         ),
                         (
-                            "The Base benchmark reports $358,750 of retained "
-                            "revenue for comparability, not an automatic booking "
-                            "rule. Controlled merchandise may support gross "
-                            "presentation; an agency suite placement may support "
-                            "commission-only revenue. A $200 purchase rebate "
-                            "reduces basis when appropriate and is not also "
-                            "credited as a second $200 revenue item."
+                            "Scaled gross revenue is $1,800,000. The $1,170,000 "
+                            "merchandise-cost bridge leaves $630,000 retained revenue. "
+                            "Residual costs of $270,000 leave $360,000 owner "
+                            "profit, equal to 20% gross and 57.14% retained "
+                            "margins. Staffing is two full-time operators plus "
+                            "three contractors. Illustrative annual overhead of "
+                            "$108,000 leaves $162,000 for other residual costs."
                         ),
                     ),
                     field(
-                        "Transaction economics and reward sensitivity",
+                        "Scorecard basis versus accounting presentation",
                         "textarea",
                         (
-                            "Build one transaction from purchase basis through "
-                            "collectible contribution. Include freight, marketplace "
-                            "fees, reward eligibility, and expected loss "
-                            "assumptions; compare the resulting retained share "
-                            "with the canonical benchmark without altering "
-                            "either number to conceal the difference."
+                            "Document the supplied 35% retained-share convention "
+                            "and distinguish it from transaction-specific accounting. "
+                            "Identify who controls merchandise before transfer "
+                            "and how purchase rebates, interest, and principal-agent "
+                            "conclusions affect ledger presentation."
                         ),
                         (
-                            "The merchandise example has $10,200 reimbursement, "
-                            "$10,000 basis, $90 freight, and $50 expected "
-                            "exception cost. Contribution is $60 at zero "
-                            "rewards, $260 at 2%, and $460 at 4%, "
-                            "but 4% applies only with documented eligibility. "
-                            "Its economics do not independently establish "
-                            "the portfolio's 35% retained-share benchmark."
+                            "The planning bridge labels $358,750 as Base retained "
+                            "revenue, but does not automatically establish ASC 606 "
+                            "revenue presentation. The accountant evaluates control "
+                            "under ASC 606-10-55-36 through 55-40. Purchase-linked "
+                            "rebates may reduce inventory cost; interest is separately "
+                            "classified. The workbook preserves the canonical bridge "
+                            "while maintaining an accounting-policy reconciliation."
                         ),
                     ),
                     field(
-                        "Statement calendar and actual float days",
+                        "Statement dates and usable float days",
                         "textarea",
                         (
-                            "Record transaction posting, statement closing, payment "
-                            "due, and cleared receipt dates. Calculate actual "
-                            "float from the issuer schedule; identify grace-period "
-                            "conditions and distinguish a modeled sixty-day "
-                            "window from a contractual entitlement to that duration."
+                            "Enter actual card dates and calculate the available "
+                            "repayment interval for each purchase. Record whether "
+                            "the grace period applies, and identify charges "
+                            "whose timing differs materially from a headline "
+                            "55-day assumption."
                         ),
                         (
-                            "A purchase posts January 2, 2027, the statement "
-                            "closes January 31, and payment is due February "
-                            "25. Posting-to-due float is 54 calendar days, "
-                            "not an assumed sixty. Cleared buying-group proceeds "
-                            "arrive January 12. The operator schedules full "
-                            "payment February 22 and verifies the card's "
-                            "actual grace-period conditions."
+                            "An illustrative January 2, 2027 purchase closes on "
+                            "January 31 and is due February 25, providing 54 "
+                            "calendar days from purchase. A January 30 purchase "
+                            "has only 26 days. The operator verifies grace-period "
+                            "eligibility and schedules repayment for February 22, "
+                            "rather than assuming every charge receives 55 days."
                         ),
                     ),
                     field(
-                        "Escrow, restricted proceeds, and liquidity reserves",
+                        "Reserve ownership and escrow restrictions",
                         "textarea",
                         (
-                            "List balances by ownership, restriction, release "
-                            "condition, and banking location. Identify whether "
-                            "escrow is genuinely provided by an authorized "
-                            "arrangement, and prevent restricted customer deposits "
-                            "or refundable suite advances from financing "
-                            "unrelated buying-group inventory."
+                            "List each cash account, balance, legal owner, "
+                            "permitted use, and withdrawal restriction. Define "
+                            "the amount dedicated to card repayment and "
+                            "whether any actual escrow agreement changes access "
+                            "or beneficiary rights."
                         ),
                         (
-                            "Bank cash totals $40,000, including $6,000 "
-                            "of contractually restricted suite deposits and "
-                            "a $10,000 internal repayment reserve. Deployable "
-                            "cash is therefore $24,000. A separate $3,000 "
-                            "platform holdback is excluded from bank cash. "
-                            "Moving money into the internal reserve does "
-                            "not create an expense or establish an escrow service."
+                            "A business deposit account holds $20,000 of owner "
+                            "capital. An internal allocation reserves $8,000 for "
+                            "the card statement and $2,000 for shipping, disputes, "
+                            "and operating variability. This is a management reserve, "
+                            "not escrow. No third-party beneficiary or contractual "
+                            "release condition exists; $10,000 remains available "
+                            "for a separately approved treasury allocation."
                         ),
                     ),
                     field(
-                        "Working-capital overlap and delayed settlement stress",
+                        "Treasury yield and bonus calculator",
                         "textarea",
                         (
-                            "Model overlapping unpaid purchases by settlement "
-                            "cycle, then add refunds and fixed obligations "
-                            "falling inside the same stress window. "
-                            "Distinguish inventory already funded from incremental "
-                            "cash requirements so the model does not "
-                            "count one purchase twice."
+                            "Calculate interest using deployable cash, the actual "
+                            "holding period, and an explicit yield convention. "
+                            "Record bonus qualification separately, and prevent "
+                            "the same cash balance from earning overlapping "
+                            "returns in the model."
                         ),
                         (
-                            "Three unsettled $8,000 lots create $24,000 "
-                            "of funded inventory exposure. A fourth lot "
-                            "would require another $8,000 while $4,000 "
-                            "of refunds and $3,000 of overhead fall due. "
-                            "With $30,000 unrestricted cash before those "
-                            "uses, the fourth lot leaves $15,000; already "
-                            "funded inventory is not deducted again."
+                            "For planning, $10,000 multiplied by 4.5% multiplied "
+                            "by 28 divided by 365 equals $34.52 before tax "
+                            "and fees. Actual T-bill earnings use purchase price "
+                            "and maturity proceeds. A hypothetical $200 bank bonus "
+                            "requiring 90 days is excluded from the 28-day result "
+                            "and cannot use the same simultaneously allocated dollars."
                         ),
                     ),
                     field(
-                        "Monthly overhead and annual cost bridge",
+                        "Combined delayed-ACH and reward-denial stress",
                         "textarea",
                         (
-                            "Allocate the scenario's remaining costs between "
-                            "fixed monthly overhead and other operating "
-                            "costs. Keep startup capital separate from "
-                            "annual expenses, and state that illustrative "
-                            "cost allocations preserve canonical totals "
-                            "without claiming observed payroll or loss experience."
+                            "Model reimbursement arriving after the card due "
+                            "date while a reward is denied. Show the "
+                            "cash required to repay, revised contribution, "
+                            "purchasing suspension, and whether an additional "
+                            "loss could exhaust available reserves."
                         ),
                         (
-                            "Illustrative overhead is $1,500 monthly Conservative, "
-                            "$4,500 Base, and $9,000 Scaled. Annual "
-                            "overhead is $18,000, $54,000, and $108,000; "
-                            "other modeled costs are $49,500, $161,250, "
-                            "and $162,000. Together they reconcile to "
-                            "$67,500, $215,250, and $270,000. Startup "
-                            "capital remains a separate $10,000–$55,000 requirement."
+                            "Assume the $8,240 reimbursement arrives March 5, "
+                            "after the February 25 card due date, and the "
+                            "$160 reward is denied. The reserved $8,000 repays "
+                            "the card without relying on ACH. Expected contribution "
+                            "falls from $300 to $140. New purchases stop; "
+                            "any disputed reimbursement triggers a separate "
+                            "full-principal loss test."
                         ),
                     ),
                     field(
-                        "Capital authorization and downside survival decision",
+                        "Working-capital ceiling and startup allocation",
                         "textarea",
                         (
-                            "State the maximum next commitment, minimum "
-                            "cash floor, and repayment source if rewards "
-                            "disappear and ACH arrives late. Include "
-                            "issuer shutdown and ticket refunds in "
-                            "the same scenario rather than evaluating "
-                            "each disruption in isolation."
+                            "Allocate startup cash within the supplied range "
+                            "and calculate the maximum unsettled purchasing "
+                            "cost supported without future reimbursements. Include "
+                            "monthly overhead, shipment exposure, and a "
+                            "minimum cash floor before authorizing expansion."
                         ),
                         (
-                            "With $24,000 deployable cash, the operator "
-                            "requires an $8,000 cash floor and budgets "
-                            "$4,000 for concurrent refunds. The maximum "
-                            "new cash-funded commitment is $12,000, subject "
-                            "to tighter counterparty limits. If issuer "
-                            "capacity disappears, commitments shrink immediately; "
-                            "the model does not assume replacement credit "
-                            "or advance reward availability."
+                            "A $25,000 startup allocation sits within the "
+                            "$10,000–$55,000 range: $16,000 supports two $8,000 "
+                            "unsettled lots, $4,500 covers one illustrative Base "
+                            "overhead month, and $4,500 remains a contingency "
+                            "floor. Maximum unsettled merchandise cost is $16,000; "
+                            "available credit above that amount does not increase "
+                            "the cash-supported purchasing limit."
                         ),
                     ),
                 ],
                 "completion_gate": (
-                    "All three scenarios must reconcile exactly to $20,000, "
-                    "$143,500, and $360,000 annual owner net profit. Approve "
-                    "new commitments only after documenting actual payment dates, "
-                    "accounting presentation, restricted balances, and a funded "
-                    "downside case that preserves the chosen cash floor."
+                    "All three canonical profit bridges must reconcile exactly. "
+                    "Every purchase must have dated, unrestricted repayment "
+                    "resources; treasury allocations must exclude required reserves. "
+                    "The delayed-ACH stress must show full statement repayment "
+                    "without treating expected rewards or borrowed principal as cash profit."
                 ),
             },
             {
@@ -554,284 +547,271 @@ def build_volume_041_workbook() -> dict:
                     "& QA Pre-Flight Sheet"
                 ),
                 "purpose": (
-                    "Turn authorized commitments into traceable inventory, settlements, "
-                    "and reconciled accounting events. Design repeat-safe identifiers "
-                    "and exception handling across buying-group shipments, card "
-                    "statements, ticket marketplaces, and refunds so automation "
-                    "cannot purchase twice, oversell one seat, or silently erase "
-                    "an unpaid obligation."
+                    "Translate a qualified deal into a reproducible evidence "
+                    "chain from commitment through cleared settlement. Define "
+                    "stable identifiers, duplicate-resistant imports, parcel "
+                    "custody records, and exception ownership. Make every ledger "
+                    "balance traceable without relying on portal screenshots "
+                    "or an operator's recollection."
                 ),
                 "chapter_ref": "Q7, Q8",
                 "instructions": [
                     (
-                        "Map each transaction through explicit states from commitment "
-                        "to purchase, receipt, acceptance, settlement, and closure. "
-                        "Define required evidence and permitted transitions; never "
-                        "let a marketplace status update alone establish bank "
-                        "settlement or transfer ownership without supporting documents."
+                        "Create the deal record before any purchase. Attach "
+                        "the commitment, approved economics, destination, payment "
+                        "method, and quantity authorization. Generate separate "
+                        "identifiers for orders, parcels, serial numbers, card "
+                        "charges, rewards, and ACH settlements so partial outcomes "
+                        "remain independently traceable."
                     ),
                     (
-                        "Assign immutable identifiers at the earliest controlled "
-                        "step and preserve external references separately. Enforce "
-                        "uniqueness for purchases, ticket seats, refunds, and "
-                        "settlement events so repeated messages return the original "
-                        "result rather than create duplicate economic activity."
+                        "Check product configuration, seller eligibility, shipping "
+                        "coverage, and receiving deadlines immediately before "
+                        "checkout. Save the applicable offer terms and order "
+                        "confirmation. If the price or destination changes, "
+                        "recalculate contribution rather than relying on the "
+                        "earlier approval."
                     ),
                     (
-                        "Configure SkyBox or Automatiq through authorized integrations "
-                        "and verify actual account capabilities before enabling "
-                        "writes. Start in observation mode, compare proposed "
-                        "changes with source inventory, and retain a manual "
-                        "listing-freeze procedure for stale or contradictory feeds."
+                        "Import records through stable source identifiers and "
+                        "transactional database writes. Replaying the same source "
+                        "file must not create another purchase, reward, or "
+                        "settlement. Corrections should reverse or supersede "
+                        "earlier entries while preserving the original evidence "
+                        "and operator identity."
                     ),
                     (
-                        "Reconcile purchase orders, carrier evidence, receiving "
-                        "acceptance, card postings, platform statements, and bank "
-                        "deposits independently. Route discrepancies to named "
-                        "owners with aging limits; balancing aggregate cash "
-                        "does not excuse missing serial numbers or "
-                        "unexplained transaction-level deductions."
+                        "Reconcile carrier delivery, warehouse acceptance, "
+                        "reimbursement allocation, and bank clearance as "
+                        "different states. A delivered parcel is not an "
+                        "accepted lot, and an ACH notification is not "
+                        "cleared cash available for repayment or treasury deployment."
                     ),
                     (
-                        "Run failure tests before the first live batch. "
-                        "Replay duplicate events, interrupt delivery confirmations, "
-                        "reverse settlements, and simulate simultaneous ticket sales; "
-                        "confirm that inventory remains controlled, financial "
-                        "history remains intact, and recovery does not "
-                        "require deleting accounting records."
+                        "Run a daily exception report covering missing serials, "
+                        "partial acceptance, overdue reimbursement, reward reversals, "
+                        "and statement exposure. Assign each exception an owner "
+                        "and next action. Close the lot only after cash, "
+                        "liabilities, and supporting records reconcile."
                     ),
                 ],
                 "fields": [
                     field(
-                        "Transaction state machine and permitted transitions",
+                        "Deal identifier and evidence manifest",
                         "textarea",
                         (
-                            "Define states, transition evidence, responsible owners, "
-                            "and timeout handling for merchandise and tickets. "
-                            "Separate operational completion from financial closure, "
-                            "and require explicit reversal events when "
-                            "previously accepted or settled activity changes."
+                            "Define a stable deal identifier and list the "
+                            "documents needed to reconstruct authorization. "
+                            "Record document versions, capture dates, and "
+                            "integrity checks so updated terms cannot silently "
+                            "replace the originally approved basis."
                         ),
                         (
-                            "BG-041-001 moves through committed, purchased, shipped, "
-                            "delivered, accepted, and settled states. Carrier "
-                            "delivery cannot mark it accepted; the buyer's "
-                            "receiving record is required. A $10,200 bank "
-                            "receipt permits settled status after matching. "
-                            "An ACH return creates a settlement-reversed "
-                            "event and reopens the receivable without deleting history."
+                            "Deal BG-2027-001 links commitment version 2, the "
+                            "$8,000 purchase budget, a ten-unit SKU list, "
+                            "shipping instructions, and the reward eligibility "
+                            "capture. The manifest stores a SHA-256 digest "
+                            "for each retained document. A later commitment "
+                            "amendment receives version 3 and a new approval "
+                            "record without replacing version 2."
                         ),
                     ),
                     field(
-                        "Idempotency key and immutable event identity",
+                        "Purchase release and price-change checks",
                         "textarea",
                         (
-                            "Specify deterministic keys for economic actions "
-                            "and separate them from transport delivery "
-                            "identifiers. Document uniqueness enforcement, retry "
-                            "behavior, and payload conflict handling so "
-                            "a repeated callback cannot create another "
-                            "purchase, reimbursement, or inventory decrement."
+                            "Specify the checks performed immediately before "
+                            "purchase, including price, quantity, destination, "
+                            "available cash, issuer capacity, and delivery "
+                            "window. Define the price or timing change "
+                            "that requires a revised contribution calculation."
                         ),
                         (
-                            "A purchase action uses BG-041-001:PO-778:purchase:v1 "
-                            "as its business key. The ledger stores "
-                            "that key under a unique constraint and "
-                            "returns the original result on replay. "
-                            "If the same key arrives with $10,500 "
-                            "instead of $10,000, processing stops in "
-                            "an exception queue rather than overwriting the first event."
+                            "Checkout must show ten units at $800 each, "
+                            "the verified warehouse destination, and delivery "
+                            "inside the commitment window. A change to "
+                            "$815 per unit raises merchandise cost by "
+                            "$150 and reduces expected contribution to "
+                            "$153 after the related 2% reward increase. "
+                            "The operator recalculates and reauthorizes before ordering."
                         ),
                     ),
                     field(
-                        "Double-entry postings and clearing-account boundaries",
+                        "Idempotency key and duplicate handling",
                         "textarea",
                         (
-                            "Describe the postings for acquisition, sale, "
-                            "fees, rewards, and settlement under the "
-                            "documented accounting policy. Keep inventory "
-                            "basis, card liabilities, receivables, and "
-                            "clearing balances separate, with reversals "
-                            "referencing the original posting identifiers."
+                            "Define the unique key for each imported event "
+                            "and explain how duplicate delivery, amended "
+                            "records, and partial settlements are handled. "
+                            "Avoid using amount and date alone because "
+                            "legitimate transactions can share both."
                         ),
                         (
-                            "For a documented principal transaction, acquisition "
-                            "debits inventory $10,000 and credits card "
-                            "payable $10,000. Transfer debits receivables "
-                            "$10,200 and credits sales $10,200; basis "
-                            "moves from inventory to cost of sales. "
-                            "Bank settlement clears the receivable. Freight "
-                            "and eligible rebates follow separately documented "
-                            "postings, never unexplained net adjustments."
+                            "The SQLite events table enforces uniqueness on "
+                            "source_system, source_account, and source_event_id. "
+                            "A repeated bank import with the same transaction "
+                            "identifier inserts zero additional events. An "
+                            "amended settlement creates a linked correction "
+                            "event. Two separate $824 payments on one "
+                            "date remain distinct because their bank identifiers differ."
                         ),
                     ),
                     field(
-                        "Serial, seat, and entitlement uniqueness",
+                        "Card liability and purchase ledger entries",
                         "textarea",
                         (
-                            "Define the natural identity of merchandise "
-                            "units and event entitlements. Explain how "
-                            "split lots, seat pairs, suite capacities, "
-                            "and partial transfers remain traceable "
-                            "without making the same asset independently "
-                            "available in multiple sales channels."
+                            "Describe how merchandise purchases, statement "
+                            "liabilities, repayments, and purchase-linked rewards "
+                            "enter the ledger. Preserve the difference "
+                            "between inventory acquisition and expense recognition "
+                            "when merchandise has not yet transferred."
                         ),
                         (
-                            "Ticket inventory uses event identifier, performance "
-                            "time, section, row, seat, and source "
-                            "order together. Eight seats become four "
-                            "controlled pairs, but each underlying seat "
-                            "retains one availability record. A suite "
-                            "capacity of twelve admits no thirteenth "
-                            "guest entitlement merely because two marketplaces "
-                            "carry separate advertisements."
+                            "The $8,000 purchase debits inventory and credits "
+                            "card payable. An $8,000 payment later debits "
+                            "card payable and credits bank cash. Merchandise "
+                            "cost moves from inventory when the accounting "
+                            "policy requires recognition. A $160 purchase-linked "
+                            "reward follows the documented cost-adjustment policy "
+                            "rather than automatically becoming a second sales entry."
                         ),
                     ),
                     field(
-                        "Multi-exchange inventory lock and stale-feed control",
+                        "Parcel custody and insured value",
                         "textarea",
                         (
-                            "Record the authoritative inventory system, connector "
-                            "latency expectations, and oversell prevention "
-                            "method. Specify how an accepted sale "
-                            "reserves seats immediately and how stale "
-                            "connectors trigger listing suspension without "
-                            "assuming marketplace updates are atomic."
+                            "Record package contents, serial numbers, parcel "
+                            "weight, carrier service, coverage terms, and "
+                            "handoff evidence. Distinguish declared value "
+                            "from insurance coverage and identify the "
+                            "party responsible for pursuing a loss claim."
                         ),
                         (
-                            "The operator uses SkyBox as the configured "
-                            "inventory authority and tests each enabled "
-                            "exchange connector. A confirmed sale reserves "
-                            "the pair locally before delisting messages "
-                            "are sent. If an exchange acknowledgment "
-                            "is missing for 90 seconds, affected "
-                            "listings are frozen and reviewed; simultaneous "
-                            "sales enter a human resolution queue."
+                            "Two parcels each contain five devices with "
+                            "$4,000 documented merchandise cost. Packing "
+                            "photos show serials, seals, and protective "
+                            "materials; acceptance receipts record weight. "
+                            "The operator verifies electronics coverage and "
+                            "claim exclusions instead of equating a declared "
+                            "value entry with insurance. The shipping contractor "
+                            "opens any carrier claim within the policy deadline."
                         ),
                     ),
                     field(
-                        "Receiving and shipment three-way reconciliation",
+                        "Warehouse acceptance and partial rejection",
                         "textarea",
                         (
-                            "Match purchase-order units, dispatched serials, "
-                            "and accepted receiving units. Record "
-                            "quantity differences, insured-value evidence, "
-                            "and settlement deductions separately so "
-                            "a partial acceptance cannot silently "
-                            "close the entire shipment or "
-                            "misstate outstanding exposure."
+                            "Define the transition from carrier delivery "
+                            "to accepted merchandise and record partial "
+                            "outcomes by serial number. Explain how "
+                            "rejected items affect reimbursement, inventory "
+                            "location, return authorization, and the original "
+                            "commitment balance."
                         ),
                         (
-                            "The order requires twenty units at $510 "
-                            "reimbursement each. Dispatch evidence lists "
-                            "twenty serials, while receiving accepts "
-                            "nineteen. Accepted reimbursement is $9,690; "
-                            "the remaining $510 stays disputed. The "
-                            "operator investigates the missing unit using "
-                            "packing images and carrier weight, rather "
-                            "than treating the reduced payment as full settlement."
+                            "The warehouse accepts nine devices and disputes "
+                            "one seal. Accepted reimbursement is 9 multiplied "
+                            "by $824, or $7,416. The tenth device "
+                            "remains separately tracked at $800 cost "
+                            "pending photographs and disposition. The ledger "
+                            "does not mark all ten accepted merely "
+                            "because both parcels have carrier delivery confirmation."
                         ),
                     ),
                     field(
-                        "Card statement, reward, and bank reconciliation",
+                        "ACH allocation and cleared-cash confirmation",
                         "textarea",
                         (
-                            "Match authorized purchases to posted charges "
-                            "and cleared bank payments. Track rewards "
-                            "separately by earning period and actual "
-                            "posting, and distinguish pending authorizations "
-                            "from final liabilities when investigating "
-                            "apparent duplicate card activity."
+                            "Specify how incoming transfers are matched "
+                            "to commitments and how clearance status "
+                            "is established. Record partial payments, "
+                            "unallocated cash, returned transfers, and "
+                            "the difference between a payer notification "
+                            "and bank evidence."
                         ),
                         (
-                            "A $10,000 authorization and its later "
-                            "$10,000 posted charge represent one "
-                            "purchase, not $20,000 of expense. "
-                            "The statement payable reconciles to "
-                            "$10,000 before other activity. A "
-                            "$200 reward posts separately the following "
-                            "cycle. Bank payment closes the liability "
-                            "only after the bank debit and issuer credit match."
+                            "A buying group announces an $8,240 payout "
+                            "on Monday, but the bank posts it "
+                            "Wednesday. The reconciler retains the notice "
+                            "as pending and uses bank evidence for "
+                            "the cash entry. If the transfer includes "
+                            "two lots, a remittance allocation must "
+                            "sum to $8,240 before either receivable is closed."
                         ),
                     ),
                     field(
-                        "Refund, cancellation, and chargeback reversals",
+                        "Reward lifecycle and reversal treatment",
                         "textarea",
                         (
-                            "Define separate workflows for voluntary refunds, "
-                            "event cancellation, postponed performances, and "
-                            "payment disputes. Preserve original sale "
-                            "records, allocate recoveries against the "
-                            "correct basis, and prevent duplicate "
-                            "customer refunds across platform and "
-                            "manual payment channels."
+                            "Track eligible, pending, confirmed, paid, "
+                            "and reversed rewards separately. Define "
+                            "when each state affects planning contribution, "
+                            "accounting entries, and cash availability, "
+                            "including corrections caused by returns "
+                            "or portal attribution disputes."
                         ),
                         (
-                            "A cancelled event affects four tickets "
-                            "sold for $800 with $480 acquisition "
-                            "basis. The platform processes the $800 "
-                            "customer refund under its terms; the "
-                            "operator tracks the separate $480 source "
-                            "recovery. A refund identifier prevents "
-                            "another manual $800 payment. Unrecovered "
-                            "platform charges remain separately visible until resolved."
+                            "The $160 card reward remains expected "
+                            "until the issuer confirms posting under "
+                            "the program terms. The potential $80 "
+                            "portal reward stays outside the base "
+                            "case until eligibility is supported. If "
+                            "one $800 unit is returned, the "
+                            "expected 2% card reward falls by $16, "
+                            "with the reversal linked to that unit."
                         ),
                     ),
                     field(
-                        "QA fixture pack and replay results",
+                        "QA invariants and reconciliation tolerances",
                         "textarea",
                         (
-                            "List repeatable test cases covering duplicates, "
-                            "out-of-order events, missing records, partial "
-                            "settlement, and connector failure. Specify "
-                            "expected balances and inventory counts "
-                            "before declaring automation ready for "
-                            "live commitments or unattended "
-                            "reconciliation runs."
+                            "List numerical and state-based assertions "
+                            "that must hold before lot closure. "
+                            "Set explicit rounding tolerances and "
+                            "identify discrepancies that always require "
+                            "investigation regardless of their apparent "
+                            "dollar size or operational convenience."
                         ),
                         (
-                            "The test pack sends one purchase event "
-                            "three times, delivers acceptance before "
-                            "carrier confirmation, and repeats a "
-                            "$10,200 settlement callback twice. Expected "
-                            "results remain one $10,000 purchase, "
-                            "one receivable settlement, and twenty "
-                            "inventory units transferred. Any duplicate "
-                            "posting fails the release test and "
-                            "keeps automated writes disabled."
+                            "The batch asserts ten unique serials, "
+                            "$8,000 original merchandise cost, $8,240 "
+                            "committed reimbursement, and settlement allocations "
+                            "matching bank cash within $0.01. Duplicate "
+                            "serials fail regardless of value. A "
+                            "$0.50 unexplained difference is assigned "
+                            "to an exception record rather than "
+                            "silently written into shipping expense to balance the lot."
                         ),
                     ),
                     field(
-                        "Daily close evidence and exception ownership",
+                        "Exception queue and closeout evidence",
                         "textarea",
                         (
-                            "Define the daily reconciliation deadline, "
-                            "required exports, exception aging bands, "
-                            "and close owner. Distinguish a fully "
-                            "matched close from a provisional "
-                            "close, preserving unresolved amounts "
-                            "and explicit restrictions on further "
-                            "capital deployment."
+                            "Assign exception owners, deadlines, escalation "
+                            "paths, and the evidence required for "
+                            "closure. Separate operational completion "
+                            "from unresolved claims so a successful "
+                            "shipment cannot conceal an unpaid "
+                            "receivable or unsupported reward."
                         ),
                         (
-                            "By 5 p.m., the operator archives "
-                            "card postings, bank activity, receiving "
-                            "acceptances, ticket inventory, and platform "
-                            "settlements. A $510 receiving dispute "
-                            "keeps the close provisional and "
-                            "reduces that buying group's available "
-                            "limit. The contractor owns document "
-                            "collection; only the operator can "
-                            "close the exception after evidence resolves the balance."
+                            "Exception EX-017 records a missing $824 "
+                            "reimbursement allocation, with the settlement "
+                            "contractor responsible for obtaining remittance "
+                            "detail within one business day. The "
+                            "operator suspends new commitments if the "
+                            "contractual due date passes. Closure requires "
+                            "matched bank cash or an approved loss "
+                            "entry, not an email promising eventual payment."
                         ),
                     ),
                 ],
                 "completion_gate": (
-                    "Release live execution only after duplicate replay, partial "
-                    "acceptance, settlement reversal, and stale-listing tests produce "
-                    "the expected balances and inventory counts. Every unresolved "
-                    "exception must have an owner, exposure amount, deadline, "
-                    "and documented effect on purchasing capacity."
+                    "Replay the import twice without changing balances. Confirm "
+                    "all serials, charges, settlements, and reward adjustments "
+                    "have stable identifiers and supporting evidence. No lot "
+                    "may be marked settled while its bank allocation, card "
+                    "liability, or material exception remains unresolved."
                 ),
             },
             {
@@ -842,327 +822,321 @@ def build_volume_041_workbook() -> dict:
                     "& Compliance Audit"
                 ),
                 "purpose": (
-                    "Convert ticketing statutes, resale licensing, sales-tax "
-                    "requirements, and commercial agreements into executable "
-                    "operating controls. Record applicable jurisdictions and "
-                    "contract versions, distinguish statutory obligations from "
-                    "platform conditions, and preserve evidence of lawful "
-                    "acquisition, accurate pricing, authorized transfers, and "
-                    "clear cancellation remedies."
+                    "Turn applicable statutes, commercial terms, and tax "
+                    "recordkeeping duties into specific operating controls. "
+                    "Verify the facts that determine resale treatment, "
+                    "business-credit rules, inventory ownership, and reporting. "
+                    "Preserve contract evidence and prevent purchasing volume "
+                    "from exceeding authorized commercial activity."
                 ),
                 "chapter_ref": "Q5, Q9",
                 "instructions": [
                     (
-                        "Build the jurisdiction map from event location, customer "
-                        "location, business presence, and transaction structure. "
-                        "Verify current statutory text and effective dates "
-                        "before applying any rule; document the actual "
-                        "trigger rather than assuming every state treats "
-                        "ticket resale identically."
+                        "Map requirements to the actual entity, transaction, "
+                        "warehouse, and payment instrument. State the triggering "
+                        "facts beside each citation. Do not treat a "
+                        "warehouse state's tax structure as a substitute "
+                        "for examining seller collection rules or your "
+                        "own business obligations."
                     ),
                     (
-                        "Translate the federal BOTS Act into acquisition "
-                        "restrictions and evidence requirements. Prohibit "
-                        "circumvention of ticket limits, queues, or "
-                        "access controls, and investigate supplier provenance "
-                        "before reselling inventory acquired through channels "
-                        "that cannot substantiate lawful purchasing methods."
+                        "Maintain resale certificates, seller acceptance "
+                        "records, invoices, and shipping evidence as "
+                        "one transaction packet. Review changes in "
+                        "business location or fulfillment routing before "
+                        "reusing earlier tax assumptions. Investigate missing "
+                        "tax documentation before increasing the purchasing "
+                        "limit."
                     ),
                     (
-                        "Audit displayed ticket prices against federal "
-                        "and applicable state requirements. Include mandatory "
-                        "charges in the required total, identify "
-                        "permitted exclusions precisely, and retain screenshots "
-                        "showing the customer journey before enabling "
-                        "a new sales channel or fee schedule."
+                        "Read the current issuer, portal, and B2B "
+                        "payment terms for the precise transaction "
+                        "type. Document restricted categories and "
+                        "recipient rules. Exclude fabricated purchases, "
+                        "self-payments, prohibited consumer card cycling, "
+                        "and any arrangement designed to conceal "
+                        "the underlying commercial purpose."
                     ),
                     (
-                        "Attach transaction-specific contract terms covering "
-                        "acceptance, title, risk of loss, payment, "
-                        "refunds, transfer rights, and dispute handling. "
-                        "Separate terms negotiated with buying groups "
-                        "from venue or platform rules the "
-                        "operator cannot amend unilaterally."
+                        "Use a written addendum to allocate "
+                        "inspection deadlines, title, transit risk, "
+                        "return costs, and reimbursement timing. "
+                        "Reference the governing state's enacted "
+                        "UCC provisions where relevant. Keep "
+                        "contractual remedies separate from assumptions "
+                        "about how quickly disputes will resolve."
                     ),
                     (
-                        "Assign an owner and evidence location "
-                        "for every licensing, tax, insurance, "
-                        "and contract requirement. Recheck obligations "
-                        "when entering another state or event "
-                        "category, and stop only the affected "
-                        "activity while correcting a documented "
-                        "operating deficiency."
+                        "Reconcile information returns to transaction-level "
+                        "records rather than treating reported "
+                        "payment volume as taxable profit. "
+                        "Preserve a documented policy for "
+                        "purchase-price adjustments, inventory costs, "
+                        "interest, and bonuses. Assign periodic "
+                        "review responsibility and track corrections "
+                        "to completion."
                     ),
                 ],
                 "fields": [
                     field(
-                        "Jurisdiction map and current-source verification",
+                        "Entity registration and operating-location requirements",
                         "textarea",
                         (
-                            "Identify business locations, event states, "
-                            "buyer locations, and sales channels "
-                            "that may trigger obligations. Record "
-                            "the governing source, verification date, "
-                            "applicability analysis, and accountable reviewer "
-                            "instead of substituting a generic "
-                            "nationwide resale assumption."
+                            "Identify the operating entity, actual "
+                            "business locations, warehouse relationship, "
+                            "and registrations triggered by those "
+                            "facts. Cite applicable provisions precisely "
+                            "and distinguish using a third-party "
+                            "warehouse from operating your own "
+                            "facility."
                         ),
                         (
-                            "The operator plans New York event "
-                            "sales and California customer transactions. "
-                            "The register assigns New York Arts "
-                            "and Cultural Affairs Law Article 25 "
-                            "to licensing review and California "
-                            "Civil Code section 1770(a)(29) to "
-                            "price-display review. Each entry requires "
-                            "current official text, territorial analysis, "
-                            "and dated evidence before the affected listings publish."
+                            "For a planned Delaware operating location, "
+                            "the checklist evaluates business licensing "
+                            "under 30 Del. C. § 2301 "
+                            "and records the activity classification. "
+                            "Merely shipping to an independent "
+                            "DE warehouse is evaluated separately. "
+                            "The operator documents where purchasing, "
+                            "inventory control, and employees actually "
+                            "operate before concluding which registrations are required."
                         ),
                     ),
                     field(
-                        "Federal BOTS Act acquisition restrictions",
+                        "Resale certificate and destination-specific tax file",
                         "textarea",
                         (
-                            "Translate 15 U.S.C. §45c into "
-                            "specific acquisition and resale controls. "
-                            "Address circumvention of technical controls "
-                            "and applicable knowledge concerning unlawfully "
-                            "obtained tickets, with supplier evidence "
-                            "and escalation procedures for suspect "
-                            "inventory provenance."
+                            "List the certificate jurisdiction, validity "
+                            "conditions, seller acceptance, and "
+                            "transaction evidence. Explain how "
+                            "the actual sale qualifies for "
+                            "recorded treatment and how incorrect "
+                            "collection or certificate rejection "
+                            "will be corrected."
                         ),
                         (
-                            "The purchasing policy forbids queue bypass, "
-                            "CAPTCHA circumvention, and account rotation "
-                            "used to defeat posted limits. "
-                            "An eight-ticket purchase retains the "
-                            "published limit and source receipt. "
-                            "A supplier offering 400 restricted "
-                            "presale tickets without provenance is "
-                            "rejected pending evidence; attractive pricing "
-                            "does not override 15 U.S.C. §45c acquisition controls."
+                            "For a California transaction using "
+                            "resale treatment, the file evaluates "
+                            "Cal. Rev. & Tax. Code "
+                            "§§ 6091–6092 and Cal. Code "
+                            "Regs., tit. 18, § 1668. "
+                            "The invoice, accepted certificate, "
+                            "and purchase-for-resale facts remain "
+                            "linked. A separate shipment to "
+                            "NH or OR receives its own sourcing analysis."
                         ),
                     ),
                     field(
-                        "Federal and state all-in ticket pricing",
+                        "Business credit agreement and permitted usage",
                         "textarea",
                         (
-                            "Document how 16 CFR Part 464 "
-                            "and applicable state rules affect "
-                            "displayed ticket totals and excluded "
-                            "charges. Test actual checkout screens, "
-                            "price prominence, fee descriptions, and "
-                            "final payment disclosures across every "
-                            "enabled channel."
+                            "Record the card's business purpose, "
+                            "issuer restrictions, repayment terms, "
+                            "and transaction classifications. Explain "
+                            "which contractual protections apply "
+                            "and why consumer-credit assumptions "
+                            "cannot be imported automatically "
+                            "into a commercial arrangement."
                         ),
                         (
-                            "A ticket has $160 seller price "
-                            "and a mandatory $20 service "
-                            "charge. The displayed total is "
-                            "$180 before any separately permitted "
-                            "government charges, not an initial "
-                            "$160 headline. The audit captures "
-                            "search, listing, cart, and payment "
-                            "screens and checks California Civil "
-                            "Code section 1770(a)(29) where applicable."
+                            "The card funds documented business "
+                            "inventory only. The review records "
+                            "the business-purpose exemption in "
+                            "15 U.S.C. § 1603(1) and "
+                            "12 CFR § 1026.3(a), while "
+                            "checking applicable exceptions and "
+                            "the issuer agreement itself. "
+                            "Repayment planning uses the actual "
+                            "commercial contract, not assumed consumer billing protections."
                         ),
                     ),
                     field(
-                        "Reseller licensing, bonds, and platform permissions",
+                        "Payment platform and reward program restrictions",
                         "textarea",
                         (
-                            "Identify each applicable reseller license "
-                            "or bond requirement and distinguish "
-                            "it from platform account eligibility. "
-                            "Record issued credentials, expiration dates, "
-                            "scope limitations, and affected transaction "
-                            "types before allowing activity that "
-                            "depends on that permission."
+                            "Document permitted invoice categories, "
+                            "recipient relationships, card network "
+                            "rules, reward exclusions, and "
+                            "verification requirements. Explain "
+                            "how the operator establishes "
+                            "a genuine commercial obligation "
+                            "before using a payment platform."
                         ),
                         (
-                            "For planned New York resale activity, "
-                            "the reviewer checks licensing under "
-                            "Arts and Cultural Affairs Law "
-                            "§25.13 and related Article 25 "
-                            "requirements. The launch checklist requires "
-                            "the applicable issued license and "
-                            "bond evidence before covered sales. "
-                            "A marketplace seller account alone "
-                            "does not satisfy a separate state licensing obligation."
+                            "A proposed Melio or Plastiq "
+                            "payment must match a genuine "
+                            "$10,000 supplier invoice and "
+                            "an allowed recipient category "
+                            "under current terms. The "
+                            "operator retains the quote "
+                            "and checks issuer treatment. "
+                            "Payments to controlled accounts "
+                            "solely to generate rewards are excluded from this operating model."
                         ),
                     ),
                     field(
-                        "Sales-tax resale certificates and collection duties",
+                        "Title and transit-risk addendum",
                         "textarea",
                         (
-                            "Separate purchases for resale from "
-                            "taxable consumption and distinguish "
-                            "marketplace collection from direct-sales "
-                            "duties. Identify certificate acceptance, "
-                            "nexus, filing, and recordkeeping "
-                            "requirements using the applicable "
-                            "state's statutes and official "
-                            "administrative instructions."
+                            "Draft the commercial allocation "
+                            "of title, transit risk, "
+                            "insurance responsibility, and loss "
+                            "claims. Identify the governing "
+                            "state and distinguish contract "
+                            "language from default rules "
+                            "that apply only when "
+                            "the agreement leaves a gap."
                         ),
                         (
-                            "California merchandise purchases use a "
-                            "properly completed resale certificate "
-                            "when eligible under Revenue and "
-                            "Taxation Code §6091 and 18 "
-                            "CCR §1668. The operator retains "
-                            "seller acceptance and resale evidence. "
-                            "A $10,000 resale purchase is "
-                            "not treated as tax-free personal "
-                            "consumption; direct ticket transactions receive "
-                            "their own state and local tax analysis."
+                            "Proposed clause: Title transfers "
+                            "upon documented warehouse acceptance; "
+                            "seller bears transit loss "
+                            "until that event and "
+                            "maintains the specified shipment "
+                            "coverage. The contract separately "
+                            "allocates risk rather than "
+                            "assuming title determines it. "
+                            "Review references include the governing state's versions of UCC "
+                            "§§ 2-401 and 2-509."
                         ),
                     ),
                     field(
-                        "Buying-group acceptance and payment addendum",
+                        "Inspection, rejection, and return-cost addendum",
                         "textarea",
                         (
-                            "Draft measurable acceptance, inspection, "
-                            "deduction, and payment clauses "
-                            "using the applicable state's "
-                            "enacted UCC provisions as "
-                            "the legal framework. Identify "
-                            "which obligations are negotiated "
-                            "contract terms rather than "
-                            "automatic statutory deadlines."
+                            "Specify inspection timing, acceptable "
+                            "defect evidence, rejection notice, "
+                            "return authorization, and shipping "
+                            "cost allocation. Address partial "
+                            "acceptance so one disputed "
+                            "unit cannot automatically suspend "
+                            "payment for every accepted "
+                            "unit in the commitment."
                         ),
                         (
-                            "The addendum states: buyer reports "
-                            "serial-specific shortages within one "
-                            "business day after delivery and "
-                            "pays accepted units within three "
-                            "business days after acceptance. "
-                            "These are negotiated deadlines, "
-                            "reviewed against enacted UCC "
-                            "§§2-513, 2-601, and 2-607. "
-                            "An unrelated shipment dispute "
-                            "does not authorize deductions from this accepted invoice."
+                            "Proposed clause: Buyer reports "
+                            "SKU, quantity, or seal "
+                            "exceptions with serial-specific "
+                            "photographs within two business "
+                            "days after delivery. Undisputed "
+                            "accepted units remain payable "
+                            "on schedule. Return costs "
+                            "follow documented fault. The "
+                            "review checks the governing state's UCC §§ 2-601, 2-602, and 2-606."
                         ),
                     ),
                     field(
-                        "Title, risk of loss, and insurance allocation",
+                        "Settlement clock and overdue-payment remedies",
                         "textarea",
                         (
-                            "Specify when title and risk "
-                            "transfer, who insures each "
-                            "leg, and which party "
-                            "pursues claims. Review the "
-                            "applicable state's enacted UCC "
-                            "rules and avoid assuming "
-                            "that payment timing determines "
-                            "risk allocation automatically."
+                            "Define the event starting "
+                            "the payment clock, the "
+                            "business-day convention, bank "
+                            "holiday treatment, remittance "
+                            "detail, and escalation steps. "
+                            "Specify suspension rights "
+                            "without assuming contractual "
+                            "remedies create immediate liquidity."
                         ),
                         (
-                            "The negotiated shipment clause keeps "
-                            "transit risk with the operator "
-                            "until signed delivery at the "
-                            "approved receiving address, then "
-                            "allocates receiving risk to "
-                            "the buyer subject to inspection "
-                            "terms. The reviewer checks "
-                            "enacted UCC §§2-401 and "
-                            "2-509. Cargo coverage of "
-                            "$10,000 is verified separately from "
-                            "carrier declared-value service."
+                            "Proposed Net-5 language starts "
+                            "the five-business-day clock "
+                            "at documented acceptance and "
+                            "requires serial-level remittance "
+                            "detail. If Monday acceptance "
+                            "is followed by no "
+                            "holidays, the fifth subsequent "
+                            "business day is the "
+                            "following Monday. Overdue payment suspends new commitments; "
+                            "the card reserve remains necessary throughout any dispute."
                         ),
                     ),
                     field(
-                        "Ticket cancellation, postponement, and transfer clauses",
+                        "Information-return and inventory-basis reconciliation",
                         "textarea",
                         (
-                            "Specify remedies for cancellation, "
-                            "postponement, failed transfer, and "
-                            "seat substitution. Align customer "
-                            "promises with source rights "
-                            "and mandatory rules, including "
-                            "refund timing, fee treatment, "
-                            "and responsibility when the "
-                            "operator cannot recover upstream "
-                            "purchase costs."
+                            "Describe how payment reporting, "
+                            "gross receipts, refunds, inventory "
+                            "cost, and purchase-price "
+                            "adjustments reconcile. Cite "
+                            "the governing federal "
+                            "framework without assuming "
+                            "a reporting form determines "
+                            "the final taxable amount."
                         ),
                         (
-                            "The customer agreement distinguishes "
-                            "cancelled events from rescheduled "
-                            "performances and incorporates applicable "
-                            "refund requirements. Four cancelled "
-                            "tickets sold for $800 "
-                            "create a separately tracked "
-                            "customer obligation even if "
-                            "the $480 upstream recovery "
-                            "is delayed. Replacement seats "
-                            "require the customer's agreement "
-                            "where the contract does not "
-                            "authorize equivalent substitution."
+                            "The annual file reconciles "
+                            "any Form 1099-K amounts "
+                            "under IRC § 6050W "
+                            "to transaction records, "
+                            "returns, and duplicate "
+                            "reporting. Inventory and "
+                            "basis policies reference "
+                            "IRC §§ 471 and "
+                            "1012 as applicable. A $160 purchase-linked rebate "
+                            "is evaluated as a cost adjustment, not automatically as unrelated revenue."
                         ),
                     ),
                     field(
-                        "SSL and corporate-suite mandate boundaries",
+                        "Treasury income, bonuses, and bank identity records",
                         "textarea",
                         (
-                            "Document the actual rights "
-                            "being brokered, venue transfer "
-                            "conditions, guest capacity, hospitality "
-                            "components, and authority to "
-                            "collect money. Separate a "
-                            "stadium seat license transfer "
-                            "from an event-specific suite "
-                            "booking and any associated "
-                            "agency commission."
+                            "Record account ownership, bank "
+                            "identity documentation, interest "
+                            "classification, bonus conditions, "
+                            "and tax support. Distinguish "
+                            "deposit yield from Treasury "
+                            "interest and verify state "
+                            "treatment using the "
+                            "actual instrument held."
                         ),
                         (
-                            "A corporate client authorizes one "
-                            "twelve-person suite booking for "
-                            "$12,000 plus an expressly "
-                            "agreed $1,200 brokerage fee. "
-                            "The venue contract controls "
-                            "catering, guest credentials, and "
-                            "transferability. The operator records "
-                            "the $12,000 as client "
-                            "funds under the agency "
-                            "arrangement, not automatically as "
-                            "operator revenue or an SSL acquisition."
+                            "The bank file retains "
+                            "entity identification requested "
+                            "under the bank's customer "
+                            "identification procedures, addressed "
+                            "in 31 CFR § "
+                            "1020.220. Interest and "
+                            "bonus treatment are reviewed "
+                            "under IRC § 61. "
+                            "Direct Treasury obligations receive a separate state-tax review "
+                            "under 31 U.S.C. § 3124; bank interest is not relabeled Treasury income."
                         ),
                     ),
                     field(
-                        "Audit evidence, exceptions, and renewal calendar",
+                        "Audit cadence and evidence remediation",
                         "textarea",
                         (
-                            "Create an evidence register "
-                            "linking each obligation to "
-                            "its responsible owner, source "
-                            "document, renewal date, and "
-                            "affected activity. Define how "
-                            "missing evidence restricts that "
-                            "activity without obscuring unrelated "
-                            "transactions that remain properly "
-                            "documented and authorized."
+                            "Assign review owners, "
+                            "document-expiry checks, "
+                            "sample sizes, and "
+                            "correction deadlines. "
+                            "Specify which defects "
+                            "stop purchasing and "
+                            "which permit existing "
+                            "lots to settle "
+                            "while remediation proceeds."
                         ),
                         (
-                            "The register stores pricing "
-                            "screenshots, acquisition receipts, resale "
-                            "certificates, insurance schedules, and "
-                            "license records under deal "
-                            "identifiers. A license renewal "
-                            "gets reminders sixty and "
-                            "thirty days before expiration. "
-                            "Missing renewal evidence suspends "
-                            "covered new listings while "
-                            "existing customer obligations continue "
-                            "to be serviced and recorded."
+                            "Each month the operator "
+                            "samples five lots and "
+                            "checks certificates, commitments, "
+                            "shipping coverage, reward "
+                            "terms, and bank matches. "
+                            "An expired required certificate "
+                            "stops affected purchases "
+                            "immediately. A missing "
+                            "internal annotation receives a two-business-day correction deadline "
+                            "while already authorized shipments continue under their verified terms."
                         ),
                     ),
                 ],
                 "completion_gate": (
-                    "Covered activity may proceed only when current-source "
-                    "verification, applicable licensing, lawful acquisition evidence, "
-                    "required price displays, tax treatment, and executed "
-                    "transaction terms are recorded. Every exception must specify "
-                    "the affected activity, corrective evidence, responsible owner, "
-                    "and permitted interim handling of existing obligations."
+                    "Required registrations and transaction-specific tax evidence "
+                    "must be current. Contract terms must address acceptance, "
+                    "title, transit risk, payment timing, and returns. Every "
+                    "payment route must represent permitted business activity, "
+                    "with an assigned owner for accounting and tax reconciliation."
                 ),
             },
             {
@@ -1173,357 +1147,354 @@ def build_volume_041_workbook() -> dict:
                     "& Risk Fallback Tracker"
                 ),
                 "purpose": (
-                    "Automate reconciliation and controlled inventory distribution "
-                    "while preserving human authority over capital, exceptions, "
-                    "and customer remedies. Build a repeatable acquisition "
-                    "flywheel from settled deals and qualified relationships, "
-                    "then rehearse fallback operations for issuer interruptions, "
-                    "buying-group payment delays, connector outages, and ticket "
-                    "price deterioration."
+                    "Automate evidence collection, spread calculations, and "
+                    "exception routing without automating unsupported assumptions. "
+                    "Build a repeatable supply and counterparty development "
+                    "process around measured settlement quality. Preserve "
+                    "manual operation, cash access, and repayment discipline "
+                    "when integrations, issuers, portals, or carriers fail."
                 ),
                 "chapter_ref": "Q6, Q10",
                 "instructions": [
                     (
-                        "Inventory each automation's inputs, permitted actions, "
-                        "credentials, and recovery path. Prioritize deal-commit "
-                        "matching, card-statement reconciliation, and listing "
-                        "synchronization; exclude acquisition automation that "
-                        "circumvents ticket controls, and require explicit "
-                        "operator authorization before changing exposure "
-                        "limits or sending money."
+                        "Map each input to an authorized source "
+                        "and an accountable owner. Prefer documented "
+                        "exports and permitted interfaces over fragile "
+                        "browser behavior. Store source timestamps "
+                        "and evidence versions so automation can "
+                        "explain exactly which terms produced "
+                        "each decision."
                     ),
                     (
-                        "Run new integrations in observation mode "
-                        "against a representative historical batch. "
-                        "Compare proposed state changes and "
-                        "financial postings with operator-reviewed results, "
-                        "then enable a small live "
-                        "scope only after duplicate handling, "
-                        "access controls, and failure alerts "
-                        "work as designed."
+                        "Implement reward routing as a constrained "
+                        "comparison, not an automatic highest-rate "
+                        "selector. Filter by resale eligibility, "
+                        "transaction category, caps, payment compatibility, "
+                        "and portal attribution. Treat missing "
+                        "evidence as zero eligible reward "
+                        "until the relevant condition "
+                        "is resolved."
                     ),
                     (
-                        "Build acquisition from vetted counterparties, "
-                        "documented allocations, and repeat corporate "
-                        "buyers rather than indiscriminate outreach. "
-                        "Track qualified conversations, signed mandates, "
-                        "settled transactions, and repeat contribution "
-                        "so the flywheel rewards collected "
-                        "profit instead of inflated lead "
-                        "counts or unpaid commitments."
+                        "Separate calculations from money movement. "
+                        "The system may propose purchasing "
+                        "limits, reserve allocations, or "
+                        "treasury transfers, but execution "
+                        "must use explicitly authorized "
+                        "accounts and permissions. Retain "
+                        "an audit trail of "
+                        "the approving operator and "
+                        "final bank confirmation."
                     ),
                     (
-                        "Define circuit breakers for payment "
-                        "aging, inventory staleness, reward "
-                        "changes, and price decay. "
-                        "Every breaker needs a "
-                        "clear threshold, accountable owner, "
-                        "manual fallback, and reopening "
-                        "evidence; alerts without an "
-                        "associated operating action merely "
-                        "accelerate the delivery of bad news."
+                        "Develop counterparties through small "
+                        "paid pilots, measured acceptance "
+                        "quality, and documented settlement "
+                        "performance. Increase allocation only "
+                        "after repeated reconciled outcomes. "
+                        "Use operational reliability and "
+                        "specific product availability as "
+                        "the acquisition message rather "
+                        "than unsupported return claims."
                     ),
                     (
-                        "Exercise the recovery plan with "
-                        "real exports and representative "
-                        "transactions. Confirm the pod "
-                        "can stop new commitments, "
-                        "reconcile existing obligations, communicate "
-                        "with customers, and repay "
-                        "cards without relying on "
-                        "the failed connector, marketplace "
-                        "account, or issuer relationship."
+                        "Test recovery from duplicate "
+                        "imports, unavailable portals, "
+                        "issuer suspension, and "
+                        "delayed ACH before "
+                        "increasing volume. Keep "
+                        "a manual payment "
+                        "calendar and readable "
+                        "ledger export. A "
+                        "failed integration must reduce activity rather than hide liabilities."
                     ),
                 ],
                 "fields": [
                     field(
-                        "Authorized integration map and least-privilege access",
+                        "Authorized source and ingestion register",
                         "textarea",
                         (
-                            "List each system, authorized "
-                            "data source, credential owner, "
-                            "read or write permission, "
-                            "and business purpose. Separate "
-                            "reconciliation access from payment "
-                            "authority, and identify how "
-                            "credentials are revoked when "
-                            "a contractor or connector "
-                            "no longer requires access."
+                            "List each data source, "
+                            "authorized access method, "
+                            "refresh interval, schema "
+                            "owner, and fallback. "
+                            "Identify sensitive fields "
+                            "that should be "
+                            "excluded from exports "
+                            "or masked before "
+                            "contractors receive access."
                         ),
                         (
-                            "The buying-group reconciler reads "
-                            "approved purchase-order exports and "
-                            "bank transactions but cannot "
-                            "initiate payments. A configured "
-                            "Automatiq connection manages authorized "
-                            "ticket listings within its "
-                            "documented permissions. Contractors receive "
-                            "individual accounts rather than "
-                            "shared credentials. Offboarding disables "
-                            "access immediately and reviews "
-                            "recent listing changes and exception closures."
+                            "The pipeline ingests operator-authorized "
+                            "card CSV exports daily, "
+                            "bank transaction exports each "
+                            "morning, and commitment files "
+                            "when received. Full card "
+                            "numbers are excluded; an "
+                            "internal account alias links "
+                            "records. The settlement contractor "
+                            "sees amounts and references but cannot initiate "
+                            "payments or change bank destination details."
                         ),
                     ),
                     field(
-                        "Deal-commit ingestion and matching rules",
+                        "Deal-commit and tracking reconciler",
                         "textarea",
                         (
-                            "Describe accepted input formats, "
-                            "required purchase-order fields, "
-                            "validation checks, and matching "
-                            "tolerances. Prevent informal messages "
-                            "from becoming binding commitments "
-                            "without the required evidence, "
-                            "and route inconsistent quantities "
-                            "or reimbursement amounts to "
-                            "an operator-owned exception queue."
+                            "Define the state machine "
+                            "connecting commitment, purchase, "
+                            "shipment, acceptance, reimbursement, "
+                            "and closure. Specify "
+                            "permitted transitions, "
+                            "required evidence, and "
+                            "the rule preventing "
+                            "partial events from "
+                            "closing an entire deal."
                         ),
                         (
-                            "An authorized CSV import "
-                            "requires deal identifier, buyer "
-                            "entity, SKU, quantity, unit "
-                            "reimbursement, acceptance terms, and "
-                            "document reference. Twenty units "
-                            "at $510 must total "
-                            "$10,200 exactly. An incoming "
-                            "$10,250 total fails validation. "
-                            "The system stores the "
-                            "original file and proposed "
-                            "match but creates no purchase authorization."
+                            "BG-2027-001 moves through "
+                            "committed, purchased, shipped, "
+                            "partially accepted, accepted, "
+                            "partially paid, and "
+                            "settled states. Nine "
+                            "accepted serials cannot "
+                            "produce the ten-unit "
+                            "accepted state. The "
+                            "reconciler computes outstanding cost and receivables "
+                            "from unit records, while the operator resolves contradictory source evidence."
                         ),
                     ),
                     field(
-                        "Card-float ledger and due-date alerts",
+                        "Reward-stack router and exclusion logic",
                         "textarea",
                         (
-                            "Define the source of "
-                            "statement dates, payment amounts, "
-                            "reward postings, and bank "
-                            "clearance. Establish alert timing "
-                            "and payment verification steps "
-                            "without treating a scheduled "
-                            "payment request as proof "
-                            "that the issuer received "
-                            "the required funds."
+                            "Describe how the router "
+                            "evaluates card offers "
+                            "and one portal "
+                            "without double counting. "
+                            "Record evidence freshness, "
+                            "caps, exclusions, and "
+                            "the treatment of "
+                            "an attractive rate "
+                            "whose eligibility cannot be established."
                         ),
                         (
-                            "The ledger imports the "
-                            "actual $10,000 statement balance "
-                            "and February 25 due "
-                            "date. Alerts occur ten, "
-                            "five, and two calendar "
-                            "days before payment is "
-                            "due. A February 22 "
-                            "payment instruction remains pending "
-                            "until bank debit and "
-                            "issuer receipt reconcile; a "
-                            "missing confirmation triggers direct operator review."
+                            "The router compares a "
+                            "supported 2% business "
+                            "card reward with "
+                            "a conditional 4% "
+                            "offer and evaluates "
+                            "Rakuten versus TopCashback "
+                            "as mutually exclusive "
+                            "portal paths. On "
+                            "$8,000, it approves $160 card value. "
+                            "The unsupported $320 card alternative and conditional $80 "
+                            "portal value remain outside the executable recommendation."
                         ),
                     ),
                     field(
-                        "Qualified counterparty and corporate-buyer flywheel",
+                        "Treasury scheduler and maturity constraints",
                         "textarea",
                         (
-                            "Define the acquisition sequence "
-                            "from qualified introduction through "
-                            "paid pilot and repeat "
-                            "mandate. Track acquisition effort "
-                            "and collected contribution by "
-                            "relationship, excluding unsupported commitments "
-                            "and pass-through client spending "
-                            "from the measure of "
-                            "commercial productivity."
+                            "Define the cash calculation "
+                            "used before a "
+                            "sweep, the minimum "
+                            "repayment reserve, maturity "
+                            "buffer, transfer timing, "
+                            "and failure response. "
+                            "Prevent projected ACH "
+                            "receipts from becoming "
+                            "deployable cash before clearance."
                         ),
                         (
-                            "Ten vetted introductions produce "
-                            "four underwriting calls, two "
-                            "paid $2,000 merchandise pilots, "
-                            "and one repeat counterparty. "
-                            "Separately, three corporate-buyer meetings "
-                            "produce one signed suite "
-                            "mandate with a $1,200 "
-                            "fee. Acquisition reporting counts "
-                            "the collectible fee and "
-                            "realized merchandise contribution, not "
-                            "the client's $12,000 suite budget."
+                            "The scheduler starts with "
+                            "cleared bank cash, "
+                            "subtracts $8,000 card "
+                            "repayment, $2,000 operating "
+                            "reserve, and every "
+                            "scheduled transfer. A "
+                            "Treasury purchase is "
+                            "proposed only if "
+                            "maturity and cash availability precede the repayment buffer. "
+                            "A maturity after February 22 cannot support the "
+                            "illustrative February 25 card payment."
                         ),
                     ),
                     field(
-                        "ACH delay and counterparty circuit breaker",
+                        "Counterparty acquisition and pilot sequence",
                         "textarea",
                         (
-                            "Set aging thresholds from "
-                            "contractual due dates rather "
-                            "than purchase dates. Define "
-                            "purchase suspension, collection escalation, "
-                            "exposure reporting, and reopening "
-                            "conditions, ensuring that a "
-                            "promised payment or screenshot "
-                            "does not substitute for "
-                            "cleared funds."
+                            "Define the target counterparty "
+                            "profile, outreach evidence, "
+                            "pilot size, settlement "
+                            "measurement, and expansion "
+                            "criteria. Explain how "
+                            "the operator evaluates "
+                            "BuyForMeRetail, Pointsmaker, "
+                            "or MaxOutDeals without "
+                            "assuming identical commercial terms."
                         ),
                         (
-                            "A $9,690 accepted receivable "
-                            "is due Friday under "
-                            "Net-3 terms. If it "
-                            "remains unpaid after the "
-                            "agreed cutoff, new commitments "
-                            "to that buyer stop. "
-                            "The operator verifies payment "
-                            "status through the bank "
-                            "and contacts the buyer. "
-                            "Reopening requires cleared funds "
-                            "and explanation of the delay, not an ACH screenshot."
+                            "The operator requests current "
+                            "onboarding requirements from "
+                            "three candidate groups, "
+                            "then selects one "
+                            "documented $1,600 pilot. "
+                            "Expansion requires three "
+                            "fully reconciled lots, "
+                            "no unresolved acceptance "
+                            "disputes, and settlement within the written clock. "
+                            "A different group starts its own pilot record; "
+                            "the first group's performance does not transfer automatically."
                         ),
                     ),
                     field(
-                        "Issuer review, reward reduction, and shutdown fallback",
+                        "Acquisition flywheel and referral discipline",
                         "textarea",
                         (
-                            "Specify actions when an "
-                            "issuer requests documents, changes "
-                            "rewards, reduces limits, or "
-                            "suspends purchasing. Preserve truthful "
-                            "business records, honor repayment "
-                            "obligations, and resize commitments "
-                            "without misrepresenting transactions or "
-                            "attempting to evade the "
-                            "issuer's controls."
+                            "Describe how reliable "
+                            "fulfillment creates repeat "
+                            "commitments and qualified "
+                            "introductions. Track the "
+                            "source, cost, and "
+                            "outcome of each "
+                            "relationship, and disclose "
+                            "material referral relationships "
+                            "when making promotional recommendations."
                         ),
                         (
-                            "A card limit falls "
-                            "from $30,000 to $5,000 "
-                            "while $10,000 remains payable. "
-                            "The operator stops card-funded "
-                            "purchases, supplies requested invoices "
-                            "through the issuer's verified "
-                            "channel, and repays from "
-                            "reserved cash. Cash-funded deals "
-                            "resume only within existing "
-                            "counterparty limits and positive "
-                            "zero-rebate contribution; alternative accounts are not used to conceal activity."
+                            "After three clean lots, "
+                            "the operator sends "
+                            "a concise capacity "
+                            "report showing available "
+                            "SKUs, serial accuracy, "
+                            "and on-time delivery. "
+                            "A resulting introduction "
+                            "is tagged to "
+                            "that report. If a public recommendation carries "
+                            "a referral payment, the operator uses a clear "
+                            "material-connection disclosure consistent with 16 CFR Part 255."
                         ),
                     ),
                     field(
-                        "Event price-decay automation and stop-loss action",
+                        "Issuer review or shutdown fallback",
                         "textarea",
                         (
-                            "Define event-relative markdown "
-                            "dates, observable market inputs, "
-                            "minimum pricing authority, and "
-                            "human review thresholds. Distinguish "
-                            "a planned loss-reduction sale "
-                            "from an unauthorized pricing "
-                            "error, and include transfer "
-                            "deadlines that can make "
-                            "inventory unsaleable before event start."
+                            "Specify the response "
+                            "to an issuer "
+                            "information request, reduced "
+                            "limit, suspended account, "
+                            "or terminated reward "
+                            "program. Preserve repayment "
+                            "and truthful documentation "
+                            "without disguising transactions "
+                            "or circumventing account restrictions."
                         ),
                         (
-                            "Twenty $120-basis tickets begin "
-                            "at $180 each. At "
-                            "fourteen days the authorized "
-                            "price becomes $165, then "
-                            "$145 at seven days. "
-                            "With a modeled 10% "
-                            "seller fee, $145 produces "
-                            "$130.50 per ticket before "
-                            "other costs. Any price "
-                            "below $135 requires operator "
-                            "review, considering actual transfer cutoffs and executable demand."
+                            "An issuer suspension freezes "
+                            "new card purchases "
+                            "immediately. The operator "
+                            "provides requested business "
+                            "invoices and inventory "
+                            "records through the "
+                            "issuer's verified channel. "
+                            "Existing liabilities remain "
+                            "scheduled for cash repayment. Another authorized business "
+                            "card is considered only under its own terms "
+                            "and cash-supported limit, never as a concealment tactic."
                         ),
                     ),
                     field(
-                        "Connector outage and manual distribution fallback",
+                        "Carrier loss and disputed-acceptance fallback",
                         "textarea",
                         (
-                            "Describe how stale inventory "
-                            "is detected, affected listings "
-                            "are frozen, and authoritative "
-                            "records are exported. Specify "
-                            "the manual sales sequence "
-                            "and reconciliation procedure that "
-                            "prevents duplicate allocation while "
-                            "a marketplace or POS "
-                            "connection remains unavailable."
+                            "Record the response "
+                            "to a missing "
+                            "parcel or warehouse "
+                            "dispute, including claim "
+                            "evidence, cash exposure, "
+                            "replacement authority, and "
+                            "purchasing restrictions. "
+                            "Separate expected recovery "
+                            "from money currently available."
                         ),
                         (
-                            "After a connector exceeds "
-                            "the configured freshness limit, "
-                            "the operator pauses affected "
-                            "listings using available authorized "
-                            "controls and exports the "
-                            "last verified seat ledger. "
-                            "Manual sales use one "
-                            "designated channel and reserve "
-                            "seats before confirmation. Recovery "
-                            "compares every sale and "
-                            "delisting acknowledgment before multi-exchange distribution resumes."
+                            "If one five-device parcel "
+                            "is lost, $4,000 "
+                            "of merchandise cost "
+                            "is exposed. The "
+                            "shipping contractor gathers "
+                            "receipts, serials, photographs, "
+                            "and coverage documents. "
+                            "The ledger records "
+                            "the claim separately and reserves zero immediate "
+                            "recovery cash. Replacement purchases require additional capacity; "
+                            "the original card liability remains due in full."
                         ),
                     ),
                     field(
-                        "Risk alert ownership and response service levels",
+                        "Alert thresholds and operator response",
                         "textarea",
                         (
-                            "Assign each alert category "
-                            "a primary owner, backup, "
-                            "response window, and immediate "
-                            "containment action. Make customer "
-                            "delivery failures, overdue card "
-                            "payments, and duplicate sales "
-                            "distinct from lower-priority reporting "
-                            "differences that do not "
-                            "change economic exposure."
+                            "Define actionable thresholds "
+                            "for settlement aging, "
+                            "reserve coverage, duplicate "
+                            "records, reward reversals, "
+                            "and missing documents. "
+                            "Assign recipients and "
+                            "response deadlines so "
+                            "alerts produce specific "
+                            "operating decisions rather than background noise."
                         ),
                         (
-                            "A suspected duplicate seat "
-                            "sale pages the operator "
-                            "immediately and freezes that "
-                            "event's affected inventory. An "
-                            "unmatched $12 platform fee "
-                            "enters the next daily "
-                            "close queue. A missing "
-                            "card payment confirmation two "
-                            "days before the due "
-                            "date triggers same-day bank "
-                            "and issuer verification by the operator, with contractor backup documentation."
+                            "The system raises an "
+                            "urgent alert when "
+                            "repayment reserve coverage "
+                            "falls below 1.00, "
+                            "a required commitment "
+                            "is missing, or "
+                            "a bank event "
+                            "duplicates an existing "
+                            "identifier with different data. The operator responds "
+                            "the same business day. Overdue accepted receivables "
+                            "automatically suspend further commitments to that group."
                         ),
                     ),
                     field(
-                        "Automation acceptance test and rollback evidence",
+                        "Recovery test and manual operating kit",
                         "textarea",
                         (
-                            "Define the measured improvement, "
-                            "minimum test coverage, live "
-                            "pilot boundaries, and rollback "
-                            "trigger for each automation. "
-                            "Preserve the prior configuration "
-                            "and compare cash or "
-                            "inventory outcomes rather than "
-                            "declaring success solely because "
-                            "a scheduled job completed."
+                            "Define the backup "
+                            "frequency, restore test, "
+                            "manual records, and "
+                            "maximum acceptable outage. "
+                            "Explain how the "
+                            "team keeps repayment "
+                            "dates visible when "
+                            "the primary reconciler "
+                            "or a source integration becomes unavailable."
                         ),
                         (
-                            "A twenty-deal observation batch "
-                            "must match all purchase "
-                            "orders and bank receipts "
-                            "without duplicate postings. The "
-                            "first live release handles "
-                            "only two $2,000 pilots. "
-                            "Any unexplained balance change "
-                            "disables writes and restores "
-                            "the prior configuration. The "
-                            "target is thirty minutes "
-                            "saved per daily close with unchanged exception detection."
+                            "A daily SQLite backup "
+                            "and encrypted document "
+                            "archive support recovery. "
+                            "Every Friday, the "
+                            "operator exports open "
+                            "lots, card due "
+                            "dates, reserves, and "
+                            "overdue receivables into "
+                            "a readable file. A monthly restore test "
+                            "must reproduce balances. During an outage exceeding "
+                            "one business day, purchasing pauses while manual settlement tracking continues."
                         ),
                     ),
                 ],
                 "completion_gate": (
-                    "Enable expanded automation only after the authorized "
-                    "integration map, replay tests, measured pilot results, "
-                    "and manual fallback rehearsal are complete. Every "
-                    "high-severity alert must have an accountable responder "
-                    "and a tested containment action that preserves customer "
-                    "obligations, inventory integrity, and card repayment capacity."
+                    "The automation must explain every recommendation, reject "
+                    "duplicate events, preserve source evidence, and leave "
+                    "money movement under explicit authority. Demonstrate one "
+                    "successful restore and one manual repayment-calendar drill "
+                    "before increasing purchasing volume beyond the pilot limit."
                 ),
             },
             {
@@ -1534,359 +1505,359 @@ def build_volume_041_workbook() -> dict:
                     "& Exit-Readiness Ledger"
                 ),
                 "purpose": (
-                    "Launch a controlled small-team operation with measurable "
-                    "evidence rather than throughput targets detached from "
-                    "capital. Assign thirty-day deliverables, reconcile pod "
-                    "capacity and canonical economics, and assemble transferable "
-                    "records that support a future operating handoff or "
-                    "sale without overstating recurring profit or transferable rights."
+                    "Convert the operating design into a measured launch "
+                    "with explicit cash limits, named responsibilities, and "
+                    "repeatable reporting. Track the evidence required for "
+                    "expansion or transfer of the business. Preserve the "
+                    "canonical annual scenarios without presenting a "
+                    "30-day pilot as established annual performance."
                 ),
                 "chapter_ref": "Q11, Q12",
                 "instructions": [
                     (
-                        "Treat the first thirty days as "
-                        "a readiness and pilot sprint, "
-                        "not a requirement to force "
-                        "a transaction. The canonical first-deal "
-                        "window is one to three "
-                        "months; unresolved underwriting, licensing, "
-                        "or repayment conditions take priority "
-                        "over arbitrary launch-date pressure."
+                        "Plan the first 30 days around "
+                        "verification, system preparation, and a "
+                        "small authorized pilot if prerequisites "
+                        "are ready. The supplied time "
+                        "to first deal is one "
+                        "to three months, so a "
+                        "launch sprint may finish before "
+                        "the first settled transaction."
                     ),
                     (
-                        "Assign deliverables to one full-time "
-                        "operator and two contractors, "
-                        "with explicit authority boundaries. "
-                        "The operator controls commitments "
-                        "and cash; contractors support "
-                        "document collection, receiving reconciliation, "
-                        "and listing operations within "
-                        "defined permissions and documented "
-                        "exception escalation procedures."
+                        "Assign each operating responsibility "
+                        "to the full-time operator "
+                        "or a defined contractor "
+                        "role. Keep purchasing authority, "
+                        "bank access, evidence handling, "
+                        "and reconciliation distinct. Measure "
+                        "actual hours rather than "
+                        "assuming automation eliminates exception "
+                        "work or supervision."
                     ),
                     (
-                        "Choose KPI denominators before "
-                        "collecting results. Track accepted "
-                        "receivable aging, collectible contribution, "
-                        "capital occupancy, listing accuracy, "
-                        "refund exposure, and operator "
-                        "minutes per closed deal; "
-                        "gross reimbursements and client "
-                        "suite budgets must not "
-                        "masquerade as productivity or owner profit."
+                        "Report gross scorecard activity, "
+                        "retained contribution, owner profit, "
+                        "cash reserves, and unsettled "
+                        "liabilities separately. Compare actual "
+                        "results with Conservative, Base, "
+                        "and Scaled assumptions only "
+                        "after matching their economic "
+                        "definitions and avoiding duplicate "
+                        "reward or reimbursement recognition."
                     ),
                     (
-                        "Review weekly results against "
-                        "the canonical scenarios without "
-                        "annualizing a single successful "
-                        "pilot as recurring earnings. "
-                        "Document gaps in verified "
-                        "margin, repeat demand, staffing, "
-                        "and settlement capacity before "
-                        "increasing capital or adopting "
-                        "the scaled five-person staffing model."
+                        "Increase volume through demonstrated "
+                        "settlement quality and cash "
+                        "capacity, not available credit "
+                        "alone. Require completed pilot "
+                        "evidence, stable contribution, and "
+                        "successful delayed-payment stress "
+                        "before adding counterparties, "
+                        "invoices, or treasury "
+                        "allocations to the operating schedule."
                     ),
                     (
-                        "Build exit-readiness records from "
-                        "the first transaction, including "
-                        "contract assignability, reconciled cohorts, "
-                        "account permissions, and customer "
-                        "obligations. A transferable business "
-                        "requires evidence that another "
-                        "authorized operator can continue "
-                        "the process without inheriting "
-                        "hidden disputes or relying on personal card privileges."
+                        "Build transferability from the "
+                        "start by documenting procedures, "
+                        "account dependencies, contract rights, "
+                        "and data ownership. Identify "
+                        "relationships that require fresh "
+                        "underwriting or consent after "
+                        "a sale. Maintain a "
+                        "clean evidence room without "
+                        "assuming personal credit access transfers."
                     ),
                 ],
                 "fields": [
                     field(
-                        "Days 1–7 underwriting and capital foundation",
+                        "Days 1–7 foundation and capital allocation",
                         "textarea",
                         (
-                            "Assign first-week deliverables for "
-                            "entity verification, card terms, "
-                            "banking separation, accounting policy, "
-                            "and counterparty screening. Set "
-                            "evidence-based completion criteria and "
-                            "a startup-capital allocation that "
-                            "does not consume cash "
-                            "needed for repayments or "
-                            "customer remedies."
+                            "List the first-week "
+                            "deliverables, responsible person, "
+                            "cash allocation, and "
+                            "conditions that must "
+                            "be satisfied before "
+                            "ordering. Include entity "
+                            "records, business banking, "
+                            "repayment reserves, and "
+                            "the initial ledger configuration."
                         ),
                         (
-                            "The launch budget is "
-                            "$30,000 within the $10,000–$55,000 "
-                            "canonical range. Week one "
-                            "allocates $5,000 to setup "
-                            "and initial overhead, $10,000 "
-                            "to repayment liquidity, $5,000 "
-                            "to refund and interruption "
-                            "buffer, and $10,000 to "
-                            "potential pilots. Two buying "
-                            "groups undergo verification; no "
-                            "inventory is purchased solely to meet the calendar."
+                            "By day 7, the "
+                            "operator documents the "
+                            "$25,000 startup allocation, "
+                            "business bank ownership, "
+                            "card terms, and "
+                            "resale requirements. The "
+                            "ledger contains test "
+                            "events only. A "
+                            "$1,600 pilot ceiling is proposed, but actual "
+                            "purchasing remains conditional on a verified commitment "
+                            "and shipping coverage rather than the calendar deadline."
                         ),
                     ),
                     field(
-                        "Days 8–14 ledger, terms, and dry-run completion",
+                        "Days 8–14 counterparties and dry-run evidence",
                         "textarea",
                         (
-                            "Define second-week deliverables for "
-                            "contracts, statutory checks, ledger "
-                            "configuration, and failure testing. "
-                            "Identify which defects prevent "
-                            "live commitments and which "
-                            "can remain scheduled improvements "
-                            "without changing cash safety, "
-                            "customer rights, or inventory "
-                            "accuracy."
+                            "Define the second-week "
+                            "underwriting tasks, counterparties "
+                            "contacted, documents requested, "
+                            "and test results. "
+                            "Include a complete "
+                            "simulated lot that "
+                            "demonstrates duplicate-resistant "
+                            "imports and dated "
+                            "repayment planning before cash is committed."
                         ),
                         (
-                            "By day fourteen, the "
-                            "operator has signed pilot "
-                            "purchase terms, verified applicable "
-                            "ticket obligations, and replayed "
-                            "twenty fixture events. A "
-                            "duplicate settlement must create "
-                            "zero additional receipts. Missing "
-                            "inventory locks block live "
-                            "ticket distribution; a cosmetic "
-                            "report-layout issue remains scheduled "
-                            "because it does not alter balances or operating decisions."
+                            "The operator requests current "
+                            "terms from BuyForMeRetail, "
+                            "Pointsmaker, and MaxOutDeals "
+                            "through their verified "
+                            "business channels. A "
+                            "simulated two-unit lot "
+                            "tests $1,600 cost, "
+                            "$1,648 reimbursement, and "
+                            "$32 supported card rewards. Import replay creates "
+                            "no duplicate events, and the repayment reserve "
+                            "remains sufficient even when simulated reimbursement is delayed."
                         ),
                     ),
                     field(
-                        "Days 15–21 controlled pilot and receiving proof",
+                        "Days 15–21 limited pilot and observation",
                         "textarea",
                         (
-                            "Set pilot size, capital "
-                            "limits, purchase authority, and "
-                            "evidence requirements for the "
-                            "third week. Include an "
-                            "alternative readiness deliverable "
-                            "when no opportunity qualifies, "
-                            "so the sprint never "
-                            "rewards buying weak inventory "
-                            "to manufacture activity."
+                            "Specify the permitted "
+                            "pilot size, expected "
+                            "unit economics, evidence "
+                            "captured, and conditions "
+                            "that postpone execution. "
+                            "Avoid assuming small "
+                            "shipments inherit the "
+                            "same per-unit freight "
+                            "cost as a larger production lot."
                         ),
                         (
-                            "The operator may authorize "
-                            "one $2,000 merchandise pilot "
-                            "after underwriting is complete. "
-                            "The contractor records serials, "
-                            "insured dispatch, delivery, and "
-                            "acceptance. If no counterparty "
-                            "qualifies by day twenty-one, "
-                            "the team completes two "
-                            "additional reference checks and "
-                            "a settlement-delay rehearsal instead. "
-                            "The one-to-three-month first-deal range remains the planning assumption."
+                            "If prerequisites clear, two "
+                            "devices cost $1,600 "
+                            "and carry $1,648 "
+                            "reimbursement. Supported card "
+                            "rewards add $32; "
+                            "actual pilot shipping "
+                            "is budgeted at "
+                            "$20 and expected "
+                            "loss at $8. Expected contribution is $52, "
+                            "excluding portal upside. If onboarding remains incomplete, "
+                            "the week produces verified documentation instead of an unauthorized purchase."
                         ),
                     ),
                     field(
-                        "Days 22–30 settlement review and next-cycle decision",
+                        "Days 22–30 reconciliation and expansion decision",
                         "textarea",
                         (
-                            "Define the final-week review "
-                            "of cleared proceeds, actual "
-                            "costs, reward posting, open "
-                            "disputes, and operator effort. "
-                            "Specify the evidence needed "
-                            "to repeat a pilot, "
-                            "increase its limit, or "
-                            "pause that channel without "
-                            "declaring the whole launch successful prematurely."
+                            "Define the final-week "
+                            "review, remaining receivables, "
+                            "reward status, cash "
+                            "verification, and decision "
+                            "criteria. Distinguish a "
+                            "successful process rehearsal "
+                            "from a fully "
+                            "settled transaction and "
+                            "from a repeatable operating record."
                         ),
                         (
-                            "A $2,000 pilot receives "
-                            "$2,040 reimbursement, incurs $18 "
-                            "freight and $10 actual "
-                            "exception cost, and later "
-                            "earns $40 eligible rewards. "
-                            "Realized contribution is $12 "
-                            "before rewards and $52 "
-                            "after posting. The operator "
-                            "reviews cleared payment and "
-                            "handling time before repeating; "
-                            "one profitable pilot does not justify a $10,000 exposure limit."
+                            "At day 30, the "
+                            "operator reports whether "
+                            "the pilot is "
+                            "unstarted, in transit, "
+                            "accepted, or settled, "
+                            "with dated evidence "
+                            "for its actual "
+                            "state. A settled "
+                            "pilot supports another small test, not immediate "
+                            "Base-scale purchasing. Three clean lots and adequate "
+                            "reserves are required before the counterparty limit increases."
                         ),
                     ),
                     field(
-                        "Pod roles, capacity, and authority boundaries",
+                        "Pod responsibilities and access separation",
                         "textarea",
                         (
-                            "Assign the full-time operator "
-                            "and contractors to recurring "
-                            "work with estimated hours "
-                            "and decision rights. Identify "
-                            "the conditions requiring additional "
-                            "capacity, and reconcile staffing "
-                            "changes to the canonical "
-                            "one-plus-two and two-plus-three "
-                            "team structures."
+                            "Assign purchasing, shipment "
+                            "documentation, reconciliation, treasury "
+                            "decisions, and exception "
+                            "resolution to named "
+                            "roles. Match the "
+                            "canonical team configuration "
+                            "and define which "
+                            "permissions contractors do "
+                            "not receive."
                         ),
                         (
-                            "The Base pod uses "
-                            "one full-time operator, a "
-                            "receiving contractor for twelve "
-                            "hours weekly, and a "
-                            "listing contractor for ten. "
-                            "Only the operator authorizes "
-                            "purchases or changes exposure "
-                            "limits. At sustained workload "
-                            "beyond documented capacity, the "
-                            "scaled plan adds one "
-                            "full-time operator and one contractor, producing two plus three."
+                            "The Conservative and Base "
+                            "pod uses one "
+                            "full-time operator plus "
+                            "two contractors. The "
+                            "operator controls commitments "
+                            "and banking; contractor "
+                            "one manages shipment "
+                            "evidence; contractor two "
+                            "reconciles settlements with read-only access. Scaled operations "
+                            "use two full-time operators plus three contractors, "
+                            "with bank permissions assigned separately from data-processing duties."
                         ),
                     ),
                     field(
-                        "Weekly KPI definitions and observed pilot scorecard",
+                        "Weekly KPI definitions and measured results",
                         "textarea",
                         (
-                            "Define contribution, settlement timeliness, "
-                            "inventory accuracy, capital occupancy, "
-                            "and labor productivity with "
-                            "explicit denominators. Keep small "
-                            "sample sizes visible and "
-                            "separate settled results from "
-                            "open commitments or estimates "
-                            "that could reverse before "
-                            "final collection."
+                            "Define each KPI's "
+                            "numerator, denominator, measurement "
+                            "window, and source. "
+                            "Include settlement timing, "
+                            "contribution, reserve coverage, "
+                            "exception aging, and "
+                            "labor intensity without "
+                            "substituting gross transaction "
+                            "volume for operating quality."
                         ),
                         (
-                            "Two settled pilots generate "
-                            "$104 contribution after posted "
-                            "rewards on $4,000 purchase "
-                            "basis, or 2.6%. Both "
-                            "pay on time, producing "
-                            "a two-of-two observed result, "
-                            "not established reliability. Total "
-                            "operator effort is ninety "
-                            "minutes, or forty-five per "
-                            "deal. Average capital occupancy "
-                            "is eight days, and all forty serials reconcile."
+                            "A hypothetical ten-lot week "
+                            "has $80,000 merchandise "
+                            "cost and $82,400 "
+                            "committed reimbursement. Supported "
+                            "card rewards are "
+                            "$1,600, shipping $600, "
+                            "and expected losses "
+                            "$400, yielding $3,000 "
+                            "expected contribution before overhead. If eight lots "
+                            "clear within their payment clock, on-time settlement "
+                            "is 80%; unresolved lots remain in the denominator."
                         ),
                     ),
                     field(
-                        "Scenario progress and retained-margin reality check",
+                        "Canonical scorecard and scenario comparison",
                         "textarea",
                         (
-                            "Compare verified operating results "
-                            "with all three canonical "
-                            "annual profit targets. Identify "
-                            "whether the actual mix "
-                            "supports the 35% retained "
-                            "share, and explain any "
-                            "gap without substituting annualized "
-                            "gross throughput for repeatable "
-                            "owner earnings."
+                            "Record the canonical "
+                            "ranking, score, scenario "
+                            "profits, retained-revenue range, "
+                            "and staffing assumptions. "
+                            "Explain how actual "
+                            "pilot results will "
+                            "be compared without "
+                            "altering the supplied "
+                            "Formula v2.0 economic definitions."
                         ),
                         (
-                            "Targets remain $20,000 Conservative, "
-                            "$143,500 Base, and $360,000 "
-                            "Scaled annual owner profit. "
-                            "Two pilots with $104 "
-                            "contribution do not establish "
-                            "any target. Their thin "
-                            "merchandise spread requires a "
-                            "separate portfolio-mix test; the "
-                            "operator cannot simply apply "
-                            "35% to pilot reimbursements "
-                            "or claim Base earnings from an unverified suite pipeline."
+                            "Candidate #41 ranks #10 "
+                            "of 43 with "
+                            "93/100: revenue 23, "
+                            "margin 24, team "
+                            "20, accessibility 13, "
+                            "automation 13. Canonical "
+                            "owner profits are "
+                            "$20,000, $143,500, and "
+                            "$360,000. Retained revenue spans $87,500–$630,000, with "
+                            "$358,750 Base retained revenue. The pilot is "
+                            "compared through a separate bridge, not substituted for these annual scenarios."
                         ),
                     ),
                     field(
-                        "Incident register and capital-release conditions",
+                        "Scale triggers and drawdown controls",
                         "textarea",
                         (
-                            "Record incidents by root "
-                            "cause, affected cash, customer "
-                            "impact, and corrective evidence. "
-                            "Tie additional capital release "
-                            "to resolved operating weaknesses "
-                            "and demonstrated settlement behavior "
-                            "rather than the passage "
-                            "of time or an "
-                            "unchanged credit-card limit."
+                            "Set measurable expansion "
+                            "criteria and define "
+                            "the operating response "
+                            "to shrinking contribution, "
+                            "payment delays, reserve "
+                            "depletion, or concentration. "
+                            "Show how reduced "
+                            "purchase volume restores "
+                            "cash safety before additional commitments are accepted."
                         ),
                         (
-                            "The first pilot records "
-                            "a one-day receiving delay "
-                            "with $2,040 temporarily unaccepted. "
-                            "The operator pauses the "
-                            "second shipment, obtains written "
-                            "acceptance, and updates the "
-                            "receiving contact procedure. Capital "
-                            "remains capped at $2,000 "
-                            "per pilot until three "
-                            "cycles settle within terms "
-                            "and the revised process is evidenced in the ledger."
+                            "A counterparty limit increases "
+                            "from $1,600 to "
+                            "$4,000 only after "
+                            "three reconciled lots, "
+                            "no overdue accepted "
+                            "receivables, and full "
+                            "repayment reserve coverage. "
+                            "Two consecutive lots "
+                            "below the approved contribution floor trigger repricing. "
+                            "Any overdue payout freezes that group's new "
+                            "commitments until cash clears and the delay is explained."
                         ),
                     ),
                     field(
-                        "Exit-readiness records and transferability assessment",
+                        "Exit-readiness evidence and transferable assets",
                         "textarea",
                         (
-                            "List the records another "
-                            "authorized operator would need "
-                            "to verify earnings and "
-                            "continue service. Separate assignable "
-                            "contracts from personal card "
-                            "relationships, restricted platform accounts, "
-                            "and venue licenses requiring "
-                            "new approval or direct "
-                            "counterparty permission."
+                            "Identify the records, "
+                            "procedures, software, contracts, "
+                            "and relationships a "
+                            "successor could evaluate. "
+                            "Document assignment restrictions, "
+                            "account dependencies, and "
+                            "fresh underwriting requirements "
+                            "rather than assuming "
+                            "all operating advantages transfer with ownership."
                         ),
                         (
-                            "The handoff package contains "
-                            "monthly reconciliations, transaction cohorts, "
-                            "signed buying-group terms, customer "
-                            "obligations, inventory records, and "
-                            "exception history. Personal commercial-card "
-                            "capacity is excluded from "
-                            "transferable assets. Each marketplace "
-                            "and venue relationship receives "
-                            "an assignability review. A "
-                            "buyer must establish authorized "
-                            "access rather than inherit passwords or assume automatic account transfer."
+                            "The evidence room contains "
+                            "12 monthly reconciliations, "
+                            "counterparty settlement histories, "
+                            "source-controlled automation, shipment "
+                            "claim records, and "
+                            "signed commercial terms. "
+                            "A transfer matrix "
+                            "flags issuer accounts "
+                            "and portal memberships for fresh review. Personal "
+                            "guarantees and individual account access are not "
+                            "priced as automatically transferable assets; assignment rights are documented contract by contract."
                         ),
                     ),
                     field(
-                        "Thirty-day decision, next milestones, and owner sign-off",
+                        "Owner decision log and next operating milestone",
                         "textarea",
                         (
-                            "State the actual launch "
-                            "status, unresolved work, next "
-                            "capital limit, and dated "
-                            "milestones. Distinguish verified completion "
-                            "from planned activity, and "
-                            "require an explicit operator "
-                            "decision on continuation, pause, "
-                            "or narrowed scope based "
-                            "on evidence rather than narrative momentum."
+                            "State the completed "
+                            "evidence, remaining limitations, "
+                            "next authorized action, "
+                            "cash ceiling, and "
+                            "review date. Record "
+                            "why the decision "
+                            "follows observed results "
+                            "rather than desired "
+                            "annual profit or unused credit capacity."
                         ),
                         (
-                            "Day thirty status is "
-                            "merchandise pilot complete, card "
-                            "payment reconciled, and ticket "
-                            "distribution still paused pending "
-                            "licensing verification. The next "
-                            "cycle remains capped at "
-                            "$2,000 per qualified pilot. "
-                            "Within fourteen additional days, "
-                            "the operator will complete "
-                            "two counterparty checks and "
-                            "the licensing review; no ticket revenue or expanded capacity is reported."
+                            "Day-30 decision: documentation and "
+                            "duplicate-import testing are "
+                            "complete; one $1,600 "
+                            "pilot is accepted "
+                            "but not yet "
+                            "paid. The next "
+                            "action is settlement "
+                            "verification, not expansion. "
+                            "The cash-supported ceiling remains unchanged. The operator "
+                            "reviews again after cleared reimbursement and updates "
+                            "contribution when actual shipping, rewards, and any losses are known."
                         ),
                     ),
                 ],
                 "completion_gate": (
-                    "Close the sprint only with an evidence-backed status "
-                    "for every deliverable, reconciled pilot balances, named "
-                    "incident owners, and an explicit next-cycle capital limit. "
-                    "Expansion requires demonstrated capacity and collected "
-                    "economics; exit readiness requires verified records and "
-                    "documented transfer rights, not projected gross throughput."
+                    "Close the sprint with a dated evidence-backed status, "
+                    "reconciled cash and liabilities, assigned pod responsibilities, "
+                    "and an explicit next purchasing limit. Preserve the "
+                    "one-to-three-month first-deal expectation when onboarding "
+                    "takes longer; claim repeatability only after multiple "
+                    "fully reconciled operating cycles."
                 ),
             },
         ],

@@ -5,585 +5,618 @@ CHAPTER_5 = {
     "chapter_id": "Q5",
     "chapter_number": 5,
     "question_number": 5,
-    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in buying group, card-float & ticket allocation arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
+    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
+    "question_prompt": "What kills 80% of newcomers in buying group, commercial card-float & rebate arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
     "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
     "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Buying-Group ACH Aging, Issuer Reviews, Ticket Decay, BOTS Act Controls, and ASC 606 Spread Reconciliation",
+    "subtitle": "Buying-Group ACH Exposure, Rakuten Clawbacks, Commercial Card Repayment, IRC Records & Treasury Liquidity",
     "layout_template": "expert_insights",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, Rank #09 of 42, scores 93/100 across a volume with 11 mapped plays, "
-        "but its attractive manpower ratio conceals concentrated settlement, credit, and inventory risks. "
-        "The canonical annual owner profits are $20,000 Conservative, $143,500 Base, and $360,000 Scaled; "
-        "gross transaction proceeds are not interchangeable with retained operator revenue. This chapter "
-        "dismantles reimbursement delays, rebate reversals, issuer shutdowns, shipment defects, duplicate "
-        "ticket sales, event cancellations, and misleading corporate-credit shortcuts. It provides loss "
-        "budgets, account-level telemetry, lawful acquisition controls, and a financing fallback for "
-        "aged_shelf_corp_tradeline_credit_stacking. The question's 80% figure is a framing device, not an "
-        "established failure statistic. Survival comes from matching each purchase to enforceable economics "
-        "and funding every obligation without depending on tomorrow's buyer."
+        "Candidate #41, Rank #10 of 43, earns 93/100 across a shelf with 11 mapped plays, "
+        "but its efficiency disappears when operators confuse reimbursements, rewards, and borrowed "
+        "principal. This chapter isolates buying-group fulfillment, commercial card and portal rebates, "
+        "and bank/T-bill treasury bonuses into separate control ledgers. The canonical annual owner "
+        "profit cases are $20,000 Conservative, $143,500 Base, and $360,000 Scaled; none makes "
+        "pending ACH or conditional rewards spendable. Learn to detect disappearing rebate eligibility, "
+        "warehouse acceptance defects, issuer concentration, promotional-rate expiry, and entity-history "
+        "misrepresentation before they consume repayment reserves. Concrete loss waterfalls, aging "
+        "thresholds, shipment evidence, and financing fallbacks turn attractive headline spreads into "
+        "auditable decisions. The question's 80% framing is not a measured failure rate."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross proceeds; $87,500 retained revenue at 35%.",
-            "note": "8% gross-basis net margin; $20,000 annual owner profit; 22.86% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%",
+            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross proceeds; $358,750 retained revenue at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 annual owner profit; 40.0% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%",
+            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross proceeds; $630,000 retained revenue at 35%.",
-            "note": "20% gross-basis net margin; $360,000 annual owner profit; 57.14% retained margin; 2 FT + 3 C.",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%",
+            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C",
         },
     ],
     "sections": [
         {
-            "heading": "1. Separate economic spread from cash that belongs to the next settlement",
-            "epistemic_status": "operating_framework",
+            "heading": "1. Separate Three Economic Engines Before Measuring Any Spread",
+            "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "The first fatal trap is booking reimbursement principal as spendable profit. Formula v2.0 "
-                    "uses $250,000, $1,025,000, and $1,800,000 of annual gross proceeds, with a 35% retained "
-                    "share of $87,500, $358,750, and $630,000. Subtracting owner profits of $20,000, $143,500, "
-                    "and $360,000 leaves modeled operating and loss burdens of $67,500, $215,250, and $270,000 "
-                    "after merchandise and ticket basis. Those residuals are reconciliation totals, not permission "
-                    "to force every expense into monthly overhead. Gross-basis margins remain 8%, 14.0%, and "
-                    "20%; retained margins are 22.86%, 40.0%, and 57.14%. Maintain both denominators on every "
-                    "dashboard. The scorecard's ASC 606 net presentation is a modeling convention that must be "
-                    "checked against actual principal-versus-agent facts for each contract. An operator controlling "
-                    "inventory may have a different accounting presentation without changing cash economics. Never "
-                    "apply the 35% portfolio assumption blindly to an individual purchase order. Record purchase "
-                    "basis, expected reimbursement, earned rebate, freight, insurance, platform fees, defect reserve, "
-                    "and settlement date separately. Otherwise a profitable-looking buying-group shipment can "
-                    "consume the cash required to settle an unrelated ticket cancellation. Reconcile modeled "
-                    "profit to bank movement through receivables, inventory, payables, and card balances rather "
-                    "than treating a temporarily swollen checking account as distributable earnings."
+                    "The first fatal trap is treating every dollar crossing the bank account as earned "
+                    "income. Maintain three economic engines: wholesale buying-group fulfillment, commercial "
+                    "card and shopping-portal rebates, and bank/T-bill treasury returns. For fulfillment, "
+                    "record merchandise cost, committed reimbursement, delivery acceptance, and settlement "
+                    "separately. For rebates, record eligibility, tracked amounts, approved amounts, and cash "
+                    "received; a portal notification is evidence of tracking, not an unconditional receivable. "
+                    "For treasury, record principal as an asset or liability and yield as the economic "
+                    "return. Card-funded inventory creates a repayment obligation even if a buying group "
+                    "rejects delivery. Candidate #41's Formula v2.0 uses a 35% retained-share bridge, producing "
+                    "$87,500, $358,750, and $630,000 from the three canonical gross bases. Owner profits "
+                    "remain $20,000, $143,500, and $360,000. Their gross-basis margins are 8%, 14.0%, "
+                    "and 20%; their retained margins are 22.86%, 40.0%, and 57.14%. Treat that bridge "
+                    "as the supplied planning convention, not proof that ordinary electronics fulfillment "
+                    "earns a 35% spread. ASC 606 principal-versus-agent presentation requires transaction-specific "
+                    "analysis; a fixed percentage does not establish accounting treatment. Merchant sales "
+                    "volume, bank transfers, and loan principal must never inflate recognized operator "
+                    "revenue. Reconcile both gross and retained views without adding them together."
                 ),
                 (
-                    "The second and third traps are confusing a buying-group commitment with cleared money "
-                    "and confusing delivery with acceptance. A Net-3 or Net-5 term is incomplete until the "
-                    "contract defines business days, the acceptance trigger, inspection rights, and permitted "
-                    "deductions. Consider an illustrative $10,000 purchase with a $10,100 reimbursement and a "
-                    "$200 earned rebate. After $80 freight, $30 insurance, and a $40 defect reserve, expected "
-                    "contribution is $150. A $250 condition deduction changes that to a $100 loss before "
-                    "financing. Capture the commitment identifier before ordering and link merchant invoice, "
-                    "serial numbers, carrier acceptance, warehouse receipt, inspection result, and remittance. "
-                    "Do not accept a warehouse scan as evidence that the contractual inspection period has "
-                    "expired. A payment arriving from an unexpected entity requires reconciliation with the "
-                    "contracting counterparty, not automatic release of another shipment. Set an internal warning "
-                    "at one business day beyond the agreed payment deadline and suspend new commitments at "
-                    "three business days overdue until an authorized operator resolves the exception. These "
-                    "are proposed house limits, not industry statistics. Extend no additional exposure merely "
-                    "because a group posts attractive new deals while earlier accepted units remain unpaid."
+                    "Build a purchase-level waterfall before clicking through any portal. Consider an "
+                    "illustrative $10,000 merchandise order with a written $10,050 buying-group reimbursement, "
+                    "$200 eligible commercial-card rewards, and $100 eligible portal rewards. Deduct $70 "
+                    "shipping and insurance plus a $40 expected defect reserve. Contribution is $240 "
+                    "before overhead and financing: $50 merchandise spread plus $300 rewards minus $110 "
+                    "costs. If the portal excludes resale purchases, contribution falls to $140; if the "
+                    "card also excludes the transaction, the order loses $60. These are sensitivity cases, "
+                    "not published BuyForMeRetail, Pointsmaker, or MaxOutDeals terms. A hypothetical additional "
+                    "2.9% payment fee on the same $10,000 removes another $290 and turns the fully "
+                    "rewarded case into a $50 loss. Do not insert Plastiq or Melio into a merchant "
+                    "checkout merely to manufacture this stack; analyze their eligible business-invoice "
+                    "workflows independently. A reserve estimates recurring losses but does not cap a "
+                    "single missing parcel. Require a second view with zero portal payout, one damaged "
+                    "unit, and delayed reimbursement. Reject orders whose repayment depends on optimistic "
+                    "reward recognition, and preserve the exact vendor terms supporting each included "
+                    "credit. Compare modeled contribution with realized contribution after every settlement "
+                    "rather than celebrating a rising purchase total."
                 ),
                 (
-                    "The fourth trap is treating a shipping label's declared value as comprehensive insurance. "
-                    "Carrier liability, purchased cargo coverage, excluded commodities, signature requirements, "
-                    "and claim deadlines are separate contractual facts. Photograph packaging and serial numbers "
-                    "before sealing, retain weight records, and verify that the named insured and claim beneficiary "
-                    "match the party bearing transit risk. A $12,000 electronics carton with only $1,000 recoverable "
-                    "coverage exposes $11,000 before any deductible; buying-group reimbursement does not erase "
-                    "that gap. Track disputed dollars as a share of retained contribution, not simply shipment "
-                    "value. A $600 dispute consumes four $150 clean-order contributions, which is a more useful "
-                    "management signal than a small percentage of gross throughput. Aggregate exposure across "
-                    "related buying groups sharing beneficial ownership, warehouses, or payment accounts. Use "
-                    "a provisional ceiling of 20% of deployable cash per correlated counterparty cluster and "
-                    "require cleared settlement before exceeding it. A low-capital operator should shrink lots "
-                    "instead of assuming diversification exists because five websites have different branding. "
-                    "Keep one shipment-sized liquidity buffer outside the next purchase cycle. Insured losses "
-                    "can still create a cash crisis because documentation disputes and claim processing usually "
-                    "do not follow the card statement calendar."
+                    "The second accounting trap is exporting blended scorecard margins into every operating "
+                    "decision. A $1,025,000 gross basis and $143,500 owner profit describe the canonical "
+                    "Base scenario, not permission to approve any order with a nominal 14% spread. "
+                    "The $358,750 retained bridge leaves $215,250 between retained contribution and owner "
+                    "profit; that amount represents the scenario's remaining cost burden, not a newly "
+                    "asserted monthly fixed budget. Keep the supplied $1,500–$9,000 monthly operating-expense "
+                    "range distinct from transaction losses, payment costs, and other scenario deductions. "
+                    "Allocate shared overhead once, then measure each engine before allocation so a "
+                    "bank bonus cannot hide a losing fulfillment cohort. Require unique identifiers linking "
+                    "purchase, shipment, reimbursement, reward, and repayment records. Suggested internal "
+                    "circuit-breakers are a realized contribution shortfall exceeding 20% against the approved "
+                    "order model, an unreconciled cash difference persisting beyond two business days, or "
+                    "any transaction with negative contribution after confirmed fees. Freeze the affected "
+                    "route while investigating; do not average it into a profitable month. Startup "
+                    "capital of $10,000–$55,000 and a one-to-three-month first-deal window reinforce the "
+                    "need for small pilots. Scale only after completed cash cycles demonstrate both "
+                    "positive contribution and repayment capacity, not after a larger credit limit appears."
                 ),
             ],
             "table": {
-                "caption": "Buying-Group Margin-Leak and Settlement Exception Matrix",
+                "caption": "Seven Economic Misclassifications and the Ledger Tests That Expose Them",
                 "headers": [
-                    "Failure mechanism",
-                    "Forensic evidence",
-                    "Proposed intervention threshold",
-                    "Required operator response",
+                    "Beginner failure and affected economic engine",
+                    "Required measurement and substantive evidence",
+                    "Illustrative trigger requiring immediate operator attention",
+                    "Circuit-breaker and practical recovery action",
                 ],
                 "rows": [
                     [
-                        "Reimbursement principal gets mistaken for distributable operating profit",
-                        "Compare bank receipts against matched purchase basis and liabilities",
-                        "Any proposed distribution depends on unsettled reimbursement principal",
-                        "Rebuild the cash bridge before releasing owner distributions",
+                        "Wholesale reimbursement is mistaken for freely distributable earnings",
+                        "Match reimbursement against landed merchandise cost and outstanding card liability",
+                        "Any distribution leaves the next statement repayment insufficiently funded",
+                        "Restore repayment cash before approving additional inventory purchase commitments",
                     ],
                     [
-                        "Acceptance terms silently extend the advertised settlement cycle",
-                        "Retain inspection windows and actual warehouse acceptance timestamps",
-                        "First business day beyond the contractual payment deadline",
-                        "Escalate reconciliation and suspend expansion of counterparty exposure",
+                        "Tracked portal rewards are booked as settled operating cash",
+                        "Separate tracked, approved, payable, and received reward ledger states",
+                        "Purchase becomes unprofitable when its conditional portal reward disappears",
+                        "Exclude conditional rewards from repayment funding and resize orders",
                     ],
                     [
-                        "Condition deductions erase thin merchandise and rebate spreads",
-                        "Match serial photographs with rejection codes and deduction notices",
-                        "Single deduction exceeds the shipment's entire expected contribution",
-                        "Contest with evidence and reprice future defect reserves",
+                        "The canonical retained percentage becomes an assumed merchandise markup",
+                        "Compare actual order contribution with the supplied planning bridge",
+                        "Observed fulfillment spreads cannot support the modeled retained contribution",
+                        "Reforecast engine weights without rewriting canonical published scenario totals",
                     ],
                     [
-                        "Correlated buying groups create disguised single debtor concentration",
-                        "Compare contracting entities, ownership records, warehouses, and remitters",
-                        "Cluster exposure exceeds twenty percent of deployable cash",
-                        "Reduce open lots until cleared payments restore capacity",
+                        "Payment processing charges erase a seemingly attractive reward stack",
+                        "Calculate rewards less checkout fees using the same transaction denominator",
+                        "Confirmed payment fees exceed verified cash rewards before overhead",
+                        "Use a cheaper eligible payment rail or decline transaction",
                     ],
                     [
-                        "Transit recovery falls below the replacement cash obligation",
-                        "Inspect commodity exclusions, deductibles, beneficiary terms, and signatures",
-                        "Recoverable coverage falls below the accepted shipment risk",
-                        "Change coverage or reduce shipment value before dispatch",
+                        "Shared overhead is deducted twice across separate engine reports",
+                        "Maintain one allocation schedule reconciled to the general ledger",
+                        "Engine totals fail reconciliation with consolidated operating expense accounts",
+                        "Reverse duplicate allocations and preserve independent contribution margin reporting",
                     ],
                     [
-                        "Late claims destroy otherwise valid recovery rights permanently",
-                        "Calendar carrier notice deadlines beside delivery exception evidence",
-                        "Any damaged shipment lacks a documented claim owner",
-                        "Assign responsibility immediately and preserve every required document",
+                        "A treasury transfer is reported as newly earned yield",
+                        "Split every sweep into principal movement and actual interest",
+                        "Reported treasury income rises when only transferred principal increases",
+                        "Correct journal entries and reconcile statements before distributing proceeds",
                     ],
                     [
-                        "Profit reporting hides inventory growth and unpaid card obligations",
-                        "Reconcile contribution reports to inventory, receivables, and card balances",
-                        "Reported earnings rise while unrestricted operating cash declines",
-                        "Freeze distributions and explain each working capital movement",
+                        "Expected defect reserves are mistaken for maximum possible losses",
+                        "Measure both expected losses and largest uninsured shipment exposure",
+                        "One rejected shipment exceeds unrestricted cash available after repayments",
+                        "Reduce parcel concentration and strengthen documented insurance coverage first",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "2. Treat Warehouse Acceptance and ACH Timing as Separate Risks",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Buying groups create two independent failure points: merchandise acceptance and payment "
+                    "performance. A pre-commitment from BuyForMeRetail, Pointsmaker, or MaxOutDeals must identify "
+                    "the precise SKU, quantity, condition, destination, submission deadline, and reimbursement "
+                    "amount. Verify the current agreement rather than assuming all groups share one "
+                    "workflow. Delivery to a DE, NH, or OR warehouse does not establish acceptance, "
+                    "and the absence of general statewide sales tax at those destinations does not "
+                    "erase every sourcing or resale obligation. Preserve the ship-to address, merchant "
+                    "invoice, order confirmation, serial numbers when available, carrier acceptance, and "
+                    "warehouse acknowledgment. UCC risk-of-loss allocation depends on the contract and "
+                    "applicable state enactment; a carrier's delivered scan alone cannot resolve ownership "
+                    "or liability. A substituted model, partial shipment, or expired commitment can convert "
+                    "a tiny expected spread into a full inventory liquidation problem. Require explicit "
+                    "written renewal when an order ships after its commitment window. If rejection "
+                    "occurs, compare documented return rights, restocking fees, return freight, and secondary "
+                    "sale proceeds before choosing a recovery route. Never assume the retailer will "
+                    "accept an opened or serialized unit indefinitely. Suspend the affected SKU until "
+                    "the actual acceptance defect is corrected across the purchase and warehouse records."
+                ),
+                (
+                    "Now stress payment timing independently of merchandise quality. Suppose $10,000 is "
+                    "charged with twenty calendar days until the card due date, while a buying "
+                    "group advertises settlement within several business days after acceptance. Neither "
+                    "the shipment date nor the delivered scan necessarily starts that clock. A twelve-day "
+                    "receiving backlog plus a seven-business-day payout delay can push cash beyond the "
+                    "statement deadline. Maintain a daily maturity ladder showing card obligations by "
+                    "actual due date, cleared bank cash, contractually expected reimbursements, and unrestricted "
+                    "liquid reserves. Exclude unsettled ACH, disputed reimbursements, unapproved rewards, and "
+                    "assets that cannot settle before the payment cutoff from hard repayment coverage. "
+                    "Set an internal minimum of 1.25 times covered obligations due within fourteen "
+                    "days, with a stop on new commitments below 1.10 times; these are policy choices, "
+                    "not vendor promises. A card payment must still be made when group settlement "
+                    "fails. Carrying $10,000 for thirty days at an illustrative 27.99% simple annual "
+                    "rate costs about $230.05 before other charges, nearly eliminating the earlier "
+                    "$240 contribution. Actual issuer interest methods and grace-period consequences can "
+                    "increase the damage. Use previously arranged, transparently priced liquidity only "
+                    "when its complete cost fits the downside model; otherwise reduce committed purchases "
+                    "before the liability is created."
+                ),
+                (
+                    "Counterparty diversification fails when operators count brand names instead of correlated "
+                    "exposure. Two groups using the same receiving bottleneck, resale channel, or payment "
+                    "processor can deteriorate together. Start with an internal cap of 20% of available "
+                    "risk capital in unsecured exposure to any one group, and measure common dependencies "
+                    "separately. For a $25,000 risk-capital pool, that cap is $5,000, not $5,000 per "
+                    "unpaid purchase. Track accepted-but-unpaid dollars, oldest contractual past-due age, rejection "
+                    "rate, receiving lag, and settlement-date changes. Escalate immediately when a promised "
+                    "payment date is missed; pause fresh commitments when accepted balances are two "
+                    "business days beyond their agreed due dates or when dispute exposure exceeds "
+                    "the chosen capital cap. Net-3 and Net-5 labels are useful only after confirming "
+                    "their contractual starting event and business-day convention. Insure high-value electronics "
+                    "against the actual covered perils and confirm exclusions, declared-value rules, "
+                    "deductibles, and the party entitled to claim. Carrier declared value is not "
+                    "automatically equivalent to a separate insurance policy. Preserve packaging photographs "
+                    "and claim deadlines before a parcel disappears. Increasing purchases to recover a "
+                    "stalled balance compounds unsecured exposure; the correct response is collections "
+                    "discipline, smaller commitments, and a documented alternate liquidation route."
+                ),
+            ],
+            "table": {
+                "caption": "Buying-Group Failure Telemetry from Commitment Through Cleared Settlement",
+                "headers": [
+                    "Failure mode requiring a distinct operational owner",
+                    "Evidence and monitoring calculation to maintain daily",
+                    "Illustrative threshold or event that stops expansion",
+                    "Immediate containment and economically defensible fallback",
+                ],
+                "rows": [
+                    [
+                        "Expired buying-group commitment leaves purchased inventory without acceptance certainty",
+                        "Compare actual shipment timestamp with written commitment expiration terms",
+                        "Shipment occurs after commitment expiry without documented written renewal",
+                        "Obtain renewed acceptance or exercise documented retailer return rights",
+                    ],
+                    [
+                        "Warehouse delivery scan is confused with accepted sale completion",
+                        "Track delivery, intake, inspection, and acceptance as separate events",
+                        "Receiving lag exceeds the agreement or established internal tolerance",
+                        "Pause further shipments and obtain itemized warehouse intake reconciliation",
+                    ],
+                    [
+                        "Incorrect SKU or serial mismatch creates a reimbursement dispute",
+                        "Link merchant invoice identifiers with warehouse received-item exception reports",
+                        "Any serial mismatch affects ownership evidence or acceptance eligibility",
+                        "Quarantine matching orders and resolve records before further fulfillment",
+                    ],
+                    [
+                        "Counterparty payment slippage consumes the remaining statement repayment window",
+                        "Measure accepted unpaid balances against contractual settlement due dates",
+                        "Accepted balances remain unpaid two business days beyond agreement",
+                        "Freeze new commitments and fund card repayment from reserves",
+                    ],
+                    [
+                        "Multiple counterparties conceal dependence on one shared processing bottleneck",
+                        "Aggregate exposures by warehouse, settlement processor, and resale dependency",
+                        "Combined dependency exposure exceeds the documented risk capital limit",
+                        "Redirect only future commitments toward independently verified operating routes",
+                    ],
+                    [
+                        "Lost electronics shipment exceeds realistic insurance recovery and liquidity",
+                        "Compare documented coverage limits with parcel value and deductible",
+                        "One uninsured parcel loss breaches unrestricted post-repayment cash reserves",
+                        "Split shipments and obtain suitable coverage before carrier handoff",
+                    ],
+                    [
+                        "Return-window expiry turns recoverable inventory into forced liquidation exposure",
+                        "Record return deadlines alongside acceptance and claim resolution deadlines",
+                        "Unresolved rejection approaches the last documented retailer return date",
+                        "Authorize timely return or documented secondary sale with loss estimate",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Four controls that preserve thin spreads",
-                "body": "Veteran operators protect evidence and liquidity before chasing another rebate point.",
+                "title": "Protect the Calendar Before Optimizing the Rebate",
+                "body": "Experienced operators preserve proof and repayment capacity before increasing order velocity.",
                 "items": [
-                    "Attach the buying-group commitment and acceptance clock to each serial-number record before merchandise leaves your control.",
-                    "Calculate how many clean-order contributions each deduction consumes; investigate losses exceeding two contributions even when gross-volume percentages look small.",
-                    "Group counterparties by shared payment accounts and warehouses, then apply one exposure ceiling to the entire related cluster.",
-                    "Ask the cargo insurer to identify the exact commodity coverage and claim beneficiary in writing before sending the first high-value carton.",
+                    "Create a shipment evidence packet at label creation, then append carrier acceptance, packaging photographs, and warehouse acknowledgment under one purchase identifier.",
+                    "Sort unpaid balances by the earlier of card funding cutoff and retailer return deadline; accounting age alone misses the most urgent recovery decision.",
+                    "Pilot each group through three completed acceptance-to-cleared-cash cycles before raising its unsecured exposure cap.",
+                    "Track shared warehouse and settlement dependencies so apparently separate groups do not consume the same concentration allowance unnoticed.",
                 ],
             },
         },
         {
-            "heading": "2. Stress the card calendar and reject fictitious corporate-credit advantages",
+            "heading": "3. Price Reward Reversals, Invoice Fees and Treasury Liquidity Honestly",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "The fifth trap is treating a 60-day float ledger as a promise of 60 interest-free "
-                    "days on every purchase. Available time depends on posting date, statement close, contractual "
-                    "due date, and continued grace-period eligibility. A purchase just before closing can have "
-                    "far less runway than one just afterward. Build the calendar from issuer statements rather "
-                    "than marketing language. An illustrative $20,000 eligible purchase earning 2% produces "
-                    "$400 before any spread or expenses. Thirty days of financing at a 24% annual rate "
-                    "costs approximately $394.52 using a 365-day simple-interest approximation, leaving $5.48 "
-                    "before shipping or defects. Actual issuer calculations may differ. Treat uncapped 2%–4% "
-                    "commercial rewards as product-specific eligibility assumptions, not universal terms. Verify "
-                    "category exclusions, spend caps, cash-equivalent treatment, promotional expirations, and "
-                    "clawback provisions in the current agreement. Report rewards in three states: estimated, "
-                    "posted, and available for redemption. Only the final state belongs in the immediate "
-                    "liquidity forecast, and even redeemed rewards may remain subject to contractual reversal. "
-                    "If interest begins accruing or a rebate is disputed, stop extending the affected strategy "
-                    "until purchase-level contribution remains positive without the disputed benefit. Do not "
-                    "solve that warning by opening another card."
+                    "Commercial card and portal rebates form a separate model because eligibility can "
+                    "fail even when merchandise reaches its destination. Rakuten and TopCashback offers "
+                    "may vary by merchant, product category, coupon use, customer status, and purchase "
+                    "purpose. Review resale restrictions and permitted stacking before routing an order; "
+                    "do not assume both portals can claim the same checkout. Save dated offer terms, "
+                    "click records, merchant confirmations, and exclusions. Browser extensions, coupon "
+                    "substitution, app handoffs, returns, and order modifications can disrupt attribution "
+                    "or reverse rewards. Treat a proposed 2%–4% commercial-card return as a rate requiring "
+                    "verification of caps, redemption value, category treatment, and issuer conditions, "
+                    "not an uncapped entitlement. If a $10,000 eligible purchase earns 2%, the $200 "
+                    "reward cannot absorb unlimited returns or cash-advance charges. Measure denial rate "
+                    "on matured eligible cohorts, not yesterday's pending clicks. An illustrative control "
+                    "pauses a route when matured denial exceeds 10% by dollars or realized rewards "
+                    "fall 20% below its approved model. Reconcile partial returns against both merchandise "
+                    "refunds and reward reversals. Multiple accounts, invented identities, disguised resale "
+                    "intent, and fabricated orders are not optimization techniques; they expose the "
+                    "business to closure, recovery demands, and potential fraud liability. Preserve truthful "
+                    "transaction records and discontinue routes that require concealment."
                 ),
                 (
-                    "The mapped play aged_shelf_corp_tradeline_credit_stacking requires a sharper distinction "
-                    "than its name suggests. Reinstating an older entity can restore its state status where "
-                    "permitted, but incorporation age is not evidence of revenue, payment performance, or "
-                    "continuous operations. Genuine facilities are underwritten against accurately disclosed "
-                    "ownership, activity, financial statements, guarantees, and repayment capacity. Do not "
-                    "present purchased tradelines as the applicant's own operating achievements or conceal "
-                    "related applications and existing obligations when asked. Compare an illustrative $30,000 "
-                    "draw under a genuine 0%-APR purchase promotion with a transparent 12% term facility. "
-                    "If the full principal remains outstanding for six months, simplified interest on the "
-                    "term facility is $1,800, excluding fees and amortization effects. A $900 entity package "
-                    "plus $1,200 placement charge already costs $2,100 before reinstatement expenses, so the "
-                    "aged-company route is not automatically cheaper even if an issuer actually grants the "
-                    "promotion. Classify those charges as financing acquisition costs, not merchandise basis. "
-                    "If approval depends on inaccurate history or repayment depends on another future "
-                    "application, halt applications, correct disclosures, and use a transparent term facility "
-                    "or reduce financed spending. Preserve the underwriting record so later issuer questions "
-                    "can be answered with consistent documents rather than improvised explanations."
+                    "Plastiq and Melio require a business-invoice analysis, not a generic assertion that "
+                    "card float is free. Confirm supported recipients, payment purposes, funding cards, "
+                    "delivery methods, and the actual quoted fee before initiating payment. In an "
+                    "illustrative $20,000 invoice, a 2.9% fee costs $580 while a 2% reward on the "
+                    "invoice amount yields $400, leaving a $180 deficit before overhead. Do not assume "
+                    "the fee itself earns rewards or that the issuer treats every supported transaction "
+                    "as an ordinary purchase. Legitimate timing value can justify a cost only when "
+                    "the business measures the alternative funding expense and can repay on schedule. "
+                    "A separate treasury engine should deploy unrestricted surplus, not statement repayment "
+                    "cash needed before maturity. At a hypothetical 4.5% simple annual yield, $10,000 "
+                    "held for fifty-five days earns approximately $67.81 before taxes and transaction "
+                    "costs. That amount does not rescue a $290 processing fee. The fifty-five-day "
+                    "window is a timing assumption dependent on purchase date, statement cycle, grace "
+                    "conditions, and bank cutoffs. It is not a standard T-bill maturity or assured "
+                    "card entitlement. Match actual bill maturity and settlement to required cash dates; "
+                    "selling early introduces market-price and execution risk that a spreadsheet's "
+                    "straight-line yield calculation omits."
                 ),
                 (
-                    "The sixth and seventh traps are paying one facility with uncertain proceeds and "
-                    "responding to issuer scrutiny by obscuring activity. An issuer review can freeze available "
-                    "credit while every existing balance remains payable. Maintain a thirteen-week cash forecast "
-                    "with card due dates, buying-group acceptance delays, ticket payout holds, refunds, and "
-                    "tax liabilities. Define due-date coverage as unrestricted cash plus receipts actually "
-                    "cleared before the payment deadline, divided by contractual payments due over the next "
-                    "fourteen days. Exclude unused limits and expected rewards. Under an illustrative house "
-                    "policy, coverage below 1.25 triggers reduced purchasing; below 1.00 stops new financed "
-                    "orders and initiates an orderly cash recovery plan. Stress one major buying group paying "
-                    "ten business days late while the largest issuer supplies no additional capacity. Keep "
-                    "invoices, shipping evidence, beneficial-owner records, and bank statements consistent "
-                    "with applications. Never fabricate sales, circulate payments to imitate demand, or create "
-                    "replacement accounts to defeat a suspension. Commercial-purpose credit is generally "
-                    "outside many consumer Regulation Z protections under 12 CFR 1026.3(a), making the actual "
-                    "agreement especially important. Diversify genuine facilities only when aggregate repayment "
-                    "capacity supports them; five limits drawing on the same receivable are one economic risk."
+                    "Bank bonuses add another conditional receivable, often with minimum balances, qualifying "
+                    "deposit definitions, holding periods, payout delays, and early-closure recovery provisions. "
+                    "Model incremental benefit against a realistic alternative use of the same cash. "
+                    "An illustrative $300 bonus requiring $20,000 for ninety days competes with roughly "
+                    "$221.92 of simple interest at 4.5%, leaving $78.08 before fees and taxes if "
+                    "the promotional account earns no interest. If it does earn interest, include "
+                    "that actual amount rather than assuming the opportunity cost disappears. Track "
+                    "eligibility under the bank's current terms, including previous-customer restrictions; "
+                    "do not manufacture qualifying activity. FDIC coverage under 12 CFR Part 330 "
+                    "depends on bank, depositor, and ownership category, while Treasury securities involve "
+                    "a different protection structure and are not insured bank deposits. Neither "
+                    "structure removes settlement timing risk. Keep bonus cash isolated from inventory "
+                    "repayment reserves until holding obligations expire. Monitor bonus receivables by "
+                    "contractual payout date, and exclude late bonuses from liquidity coverage. Reinvest "
+                    "only settled interest and released principal after reconciling upcoming obligations. "
+                    "The fatal shortcut is using one dollar simultaneously as required promotional "
+                    "balance, inventory contingency reserve, and card repayment funding. Assign each "
+                    "dollar one binding purpose and report encumbered balances separately from freely "
+                    "available cash every business day."
                 ),
             ],
             "table": {
-                "caption": "Issuer, Promotion, and Working-Capital Circuit-Breaker Matrix",
+                "caption": "Reward, Invoice and Treasury Controls That Prevent Apparent Yield from Becoming Loss",
                 "headers": [
-                    "Credit trap",
-                    "Required measurement",
-                    "Illustrative warning condition",
-                    "Financing fallback",
+                    "Specific route and asymmetric failure mechanism",
+                    "Unit economics or required eligibility evidence",
+                    "Monitoring threshold and decision-relevant exception signal",
+                    "Fallback that preserves truthful records and repayment",
                 ],
                 "rows": [
                     [
-                        "Statement timing creates less float than purchasing assumes",
-                        "Calculate days between actual posting and contractual payment deadline",
-                        "Expected reimbursement lands after the applicable payment deadline",
-                        "Delay purchase or fund repayment with existing unrestricted cash",
+                        "Rakuten attribution disappears after an excluded coupon changes checkout",
+                        "Archive merchant offer exclusions and actual checkout coupon details",
+                        "Matured denied rewards exceed ten percent of eligible dollars",
+                        "Pause the affected merchant route and exclude disputed rewards",
                     ],
                     [
-                        "Accrued interest consumes the entire eligible rebate yield",
-                        "Compare transaction interest and fees against earned reward dollars",
-                        "Financing expense exhausts contribution before freight and defects",
-                        "Stop revolving exposure and recalculate economics without rewards",
+                        "TopCashback purchase attribution conflicts with another portal referral",
+                        "Select one eligible portal and preserve its transaction reference",
+                        "Duplicate attribution assumptions appear within the same order model",
+                        "Remove the unsupported second reward before approving order economics",
                     ],
                     [
-                        "Promotional eligibility excludes the intended commercial transaction type",
-                        "Read current offer terms alongside transaction classification records",
-                        "Written eligibility cannot support the modeled promotional treatment",
-                        "Use ordinary contract pricing or reject the purchase",
+                        "Commercial-card category exclusions reduce a modeled four percent return",
+                        "Verify issuer category treatment, reward caps, and redemption values",
+                        "Realized reward dollars fall twenty percent below approved expectations",
+                        "Reprice purchases using confirmed realized rates and permitted categories",
                     ],
                     [
-                        "Entity age gets substituted for genuine operating history",
-                        "Reconcile application statements with formation and operating records",
-                        "Any claimed trading history exceeds supported business activity",
-                        "Halt applications, correct disclosures, and reduce financed spending",
+                        "Plastiq invoice fees exceed eligible commercial-card reward proceeds",
+                        "Illustrative twenty thousand dollar invoice loses one hundred eighty",
+                        "Quoted processing fee exceeds verified rewards plus documented timing value",
+                        "Pay through a cheaper permitted rail or reject financing",
                     ],
                     [
-                        "Placement fees exceed realistic promotional financing savings available",
-                        "Compare all acquisition charges with equivalent transparent borrowing costs",
-                        "Entity and placement charges exceed documented financing savings",
-                        "Choose a transparent term facility with affordable repayment",
+                        "Melio recipient restrictions invalidate the intended business payment route",
+                        "Verify recipient eligibility and current funding method restrictions first",
+                        "Payment purpose or recipient cannot satisfy published service requirements",
+                        "Use direct bank payment without disguising the underlying transaction",
                     ],
                     [
-                        "Issuer review removes capacity needed for tomorrow's purchases",
-                        "Stress available credit at zero while preserving existing obligations",
-                        "Cash forecast requires fresh borrowing to meet scheduled payments",
-                        "Suspend commitments and collect existing receivables before restarting",
+                        "T-bill maturity occurs after the card payment funding cutoff",
+                        "Match actual settlement dates against every required repayment deadline",
+                        "Unencumbered available cash cannot cover obligations before asset settlement",
+                        "Shorten maturities and retain sufficient immediately available repayment cash",
                     ],
                     [
-                        "Shared receivables support several apparently independent card limits",
-                        "Aggregate every facility against the same cleared repayment resources",
-                        "Fourteen day due-date coverage falls below one times",
-                        "Stop financed orders and execute documented cash recovery",
+                        "Bank bonus balance requirements secretly immobilize inventory contingency reserves",
+                        "Calculate bonus benefit after interest opportunity cost and fees",
+                        "Promotional holding obligations consume cash assigned to another liability",
+                        "Reduce promotional balances or inventory commitments without double-counting cash",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Verify repayment before the next purchase",
-                "body": "A purchase proceeds only when all four checks have documentary support.",
+                "title": "Four Checks Before Any Financed Commitment",
+                "body": "Proceed only when the actual transaction passes all four documented checks.",
                 "items": [
-                    "Confirm the issuer's actual statement dates, eligible transaction category, promotion expiry, and applicable reward reversal terms.",
-                    "Match entity history, ownership, revenue, guarantees, and outstanding obligations to the disclosures used in the credit application.",
-                    "Demonstrate at least 1.25 times fourteen-day due-date coverage using unrestricted cash and already-cleared receipts.",
-                    "Show that a ten-business-day buying-group delay and loss of the largest unused card line do not prevent contractual repayment.",
+                    "Verify the exact buying-group commitment, SKU, warehouse address, acceptance deadline, and enforceable return alternative before placing the order.",
+                    "Recalculate contribution with current fees, zero conditional portal rewards, realistic shipping losses, and the actual eligible card reward rate.",
+                    "Confirm unrestricted cleared cash covers the internal repayment buffer without counting unsettled ACH, restricted bank balances, or future credit availability.",
+                    "Archive truthful underwriting disclosures, valid destination and resale documentation where applicable, and current merchant, portal, issuer, and payment-service terms.",
                 ],
             },
         },
         {
-            "heading": "3. Price ticket decay and make acquisition rights auditable",
+            "heading": "4. Stop Credit-History Shortcuts and Build an Evidence-Led Shutdown Protocol",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "The eighth trap is valuing tickets at asking prices instead of executable net proceeds. "
-                    "Secondary inventory has a deadline, and the final unsold seat can become worthless "
-                    "even when yesterday's listings appeared profitable. For an illustrative $200 ticket, "
-                    "$10 acquisition expense, $5 transfer expense, and a 15% seller fee, break-even resale "
-                    "price is $215 divided by 0.85, or $252.94. A $240 sale returns $204 after the seller "
-                    "fee and loses $11 against the $215 basis. Use actual settlement schedules because "
-                    "fee structures differ by exchange and contract. SkyBox or Automatiq can centralize "
-                    "inventory and repricing where supported, but software does not establish transferability "
-                    "or guarantee synchronization. Measure comparable completed transactions when available, "
-                    "the cheapest genuinely comparable listing, inventory depth, and days until the event. "
-                    "An illustrative markdown plan reviews positions at twenty-one, fourteen, seven, and "
-                    "two days before the event, with purchase suspension whenever expected liquidation "
-                    "loss exceeds the allocated event budget. Treat a stop-loss as an instruction to "
-                    "seek execution without assuring an exit price. Review venue, section, row, restrictions, "
-                    "and delivery timing before trusting a superficially comparable listing."
+                    "The mapped TRACK_1 play aged_shelf_corp_tradeline_credit_stacking requires the strongest "
+                    "distinction between lawful entity administration and misleading underwriting. Reinstating "
+                    "an aged entity may restore its state standing, but entity age is not operating "
+                    "history, revenue, ownership continuity, or repayment capacity. A genuine primary "
+                    "tradeline records a real credit relationship; purchasing appearances does not create "
+                    "cash flow. Compare documented commercial facilities using total cost, guarantees, "
+                    "covenants, repayment schedule, and promotional-rate expiration. For an illustrative "
+                    "$20,000 twelve-month 0%-APR balance with a separate 3% origination fee, the fee "
+                    "is $600 and principal amortization requires approximately $1,666.67 monthly, with "
+                    "a final rounding adjustment. Even a fully eligible 2% purchase reward of $400 "
+                    "leaves a $200 deficit before treasury earnings, operating costs, and losses. Confirm "
+                    "whether any fee applies and whether the actual transaction receives promotional "
+                    "treatment; balance transfers and purchases can differ. Never fabricate revenue, "
+                    "backdate invoices, disguise beneficial ownership, or describe dormant years as active "
+                    "operations. Material false statements on applications to covered institutions can "
+                    "implicate 18 U.S.C. 1014, depending on the facts. If disclosures are inaccurate "
+                    "or repayment depends on another approval, halt applications, correct disclosures, "
+                    "and use a transparent term facility or reduce financed spending."
                 ),
                 (
-                    "The ninth and tenth traps are duplicate sales and inventory that cannot be delivered "
-                    "as advertised. A synchronization delay across exchanges can sell the same seat twice; "
-                    "replacement-ticket charges, contractual penalties, and account restrictions can exceed "
-                    "the original spread. Maintain one authoritative inventory identifier per transferable "
-                    "entitlement, not merely per listing. Lock that entitlement when an order is accepted "
-                    "and retain downstream delisting acknowledgments. An illustrative internal target is "
-                    "confirmation within sixty seconds; if an integration cannot reliably meet the chosen "
-                    "target, use single-exchange listing for scarce inventory rather than promise impossible "
-                    "control. Test transfer availability before listing and monitor delayed-delivery windows "
-                    "separately from ordinary inventory. Stadium seat licenses, often abbreviated SSLs, "
-                    "and corporate-suite allocations are contract rights, not automatically interchangeable "
-                    "tickets. Identify assignment restrictions, annual purchase obligations, renewal dates, "
-                    "suite-host duties, and whether amenities transfer with the seat. A suite costing "
-                    "$12,000 for twenty seats requires $600 per seat before any selling costs; selling "
-                    "sixteen seats at $650 produces $10,400 and a $1,600 shortfall before fees. Where "
-                    "permitted, broker confirmed demand without taking speculative title, documenting the "
-                    "commission and delivery responsibilities explicitly. Otherwise shrink the allocation "
-                    "rather than disguising unsold capacity as a marketing expense."
+                    "Issuer shutdown is an exposure-management event, not merely an inconvenience. Monitor "
+                    "utilization, payment reversals, unusual purchase concentration, requests for supporting "
+                    "documents, and any mismatch between stated business activity and actual transactions. "
+                    "Do not attempt consumer card-cycling, repeated limit recycling outside issuer terms, "
+                    "circular self-payments, or transactions without a genuine commercial purpose. A payment "
+                    "made from unsettled reimbursement can reverse and leave both the issuer and "
+                    "operator exposed. Maintain an alternate permitted payment rail, but never route "
+                    "around a restriction by hiding identity or transaction purpose. Business-purpose "
+                    "credit is generally exempt from Regulation Z under 12 CFR 1026.3(a), subject "
+                    "to specified exceptions; do not assume consumer billing protections or grace "
+                    "mechanics apply unchanged to a commercial agreement. Read the actual contract "
+                    "and preserve its change notices. Separately, retain records required by 26 U.S.C. "
+                    "6001 and 26 CFR 1.6001-1, reconcile information returns under 26 U.S.C. 6050W "
+                    "where applicable, and distinguish gross payment reporting from taxable profit. "
+                    "Purchase-linked rebates may require cost-basis adjustments, while bank bonuses "
+                    "and interest have different tax treatment. A tax preparer should classify the "
+                    "specific facts. Reconcile returns, reimbursements, and rewards without counting "
+                    "the same amount twice or treating an information return as the complete "
+                    "operating ledger."
                 ),
                 (
-                    "The eleventh trap is treating technical access as permission to circumvent ticket "
-                    "purchase controls. The federal BOTS Act, 15 U.S.C. §45c, prohibits specified circumvention "
-                    "of security measures, access controls, or technological controls enforcing posted ticket "
-                    "limits or purchase-order rules; it also restricts trafficking in tickets obtained through "
-                    "covered violations. Do not use queue or CAPTCHA bypass software, deceptive identity "
-                    "multiplication, or proxy-based concealment to defeat purchase limits. Platform contracts "
-                    "can prohibit additional conduct beyond the statute, and a successful checkout proves "
-                    "neither contractual permission nor clean provenance. Retain acquisition receipts and "
-                    "seller attestations, investigate suspicious volumes, and reject inventory whose lawful "
-                    "acquisition cannot be supported. For covered live-event ticket offers, 16 CFR Part 464 "
-                    "requires upfront total-price presentation including mandatory fees, subject to its "
-                    "specified treatment of government charges and shipping. Build price displays from "
-                    "the actual rule rather than adding mandatory service charges late in checkout. Apply "
-                    "relevant state resale, licensing, disclosure, and tax requirements by jurisdiction; "
-                    "New York Arts and Cultural Affairs Law §25.07 provides concrete ticket-pricing rules. "
-                    "When rights or sourcing fail review, cancel the acquisition before taking payment "
-                    "from a downstream buyer. Never reopen a banned account through concealed ownership."
+                    "Use a written incident protocol so the operator does not improvise under deadline "
+                    "pressure. First, stop only the affected purchase route while preserving all card "
+                    "repayment obligations and evidence. Second, produce a same-day exposure snapshot "
+                    "listing inventory location, accepted unpaid balances, pending rewards, outstanding "
+                    "principal, due dates, restricted cash, and insurance claims. Third, choose recovery "
+                    "actions by recoverable cash and deadline, not by the desire to preserve a "
+                    "headline margin. Return eligible inventory before its window closes, pursue "
+                    "documented warehouse discrepancies, and contact counterparties through verified "
+                    "channels. Fourth, resume only after the root cause is corrected and a small "
+                    "test transaction settles completely. Maintain a weekly forensic dashboard with "
+                    "realized contribution per order, reward denial by matured cohort, acceptance-to-ACH "
+                    "percentiles, repayment coverage, concentration, claim age, and forecast error. Set "
+                    "explicit owners: the founder controls financing and cash releases, contractors "
+                    "collect evidence and reconcile transactions, and a second reviewer checks exceptions. "
+                    "The canonical teams are 1 FT plus 2 C in Conservative and Base, and "
+                    "2 FT plus 3 C in Scaled. Small teams can enforce strong controls when "
+                    "permissions prevent one person from changing bank details, approving settlement, "
+                    "and concealing the resulting exception. Automation should expose broken assumptions "
+                    "earlier, never accelerate an unverified spread."
                 ),
             ],
             "table": {
-                "caption": "Ticket Allocation, Transfer Rights, and Lawful Acquisition Matrix",
+                "caption": "Financing, Records and Incident Controls for Permanent-Capital Protection",
                 "headers": [
-                    "Inventory failure",
-                    "Evidence and unit economics",
-                    "Proposed warning threshold",
-                    "Immediate containment response",
+                    "Trap or control failure with capital consequences",
+                    "Primary evidence and specific forensic measurement",
+                    "Event requiring intervention before further expansion",
+                    "Required response and transparent operating alternative",
                 ],
                 "rows": [
                     [
-                        "Asking prices conceal negative executable ticket resale margins",
-                        "Subtract actual seller fees from comparable achievable proceeds",
-                        "Expected proceeds fall below basis and required delivery costs",
-                        "Mark down deliberately or stop buying additional event exposure",
+                        "Reinstated entity age is presented as genuine operating history",
+                        "Compare formation records with actual revenue and ownership history",
+                        "Application narrative contradicts invoices, tax records, or business activity",
+                        "Halt applications, correct disclosures, and seek transparent term financing",
                     ],
                     [
-                        "Event concentration converts small markdowns into capital impairment",
-                        "Aggregate all seats and suites by correlated event exposure",
-                        "Liquidation stress exceeds the event's written loss budget",
-                        "Reduce positions before adding inventory for related performances",
+                        "Promotional credit expiry becomes a hidden refinancing dependency",
+                        "Schedule principal retirement against actual promotional expiration and fees",
+                        "Repayment plan requires an unapproved future facility to succeed",
+                        "Reduce financed spending and establish funded monthly principal reductions",
                     ],
                     [
-                        "Exchange synchronization sells one transferable entitlement multiple times",
-                        "Record entitlement locks and every downstream delisting acknowledgment",
-                        "Acknowledgment misses the documented internal synchronization time target",
-                        "Disable additional channels until inventory reconciliation is complete",
+                        "Issuer document requests reveal unresolved underwriting or transaction inconsistencies",
+                        "Reconcile submitted disclosures with current purchases and supporting records",
+                        "Requested evidence cannot substantiate the previously stated business facts",
+                        "Stop affected activity and provide accurate corrected supporting information",
                     ],
                     [
-                        "Delayed transfers make advertised delivery dates impossible to meet",
-                        "Verify release dates against actual customer delivery promises",
-                        "Transfer availability extends beyond the promised delivery deadline",
-                        "Correct listings and arrange an authorized customer resolution",
+                        "Consumer card-cycling substitutes repeated limit recycling for real liquidity",
+                        "Track payment sources, reversals, utilization, and issuer permitted practices",
+                        "Purchasing capacity depends on recycling unsettled reimbursements into payments",
+                        "Cease the pattern and resize commitments to cleared capital",
                     ],
                     [
-                        "Suite economics depend on selling every allocated seat",
-                        "Compare contracted suite cost with conservative net sold seats",
-                        "Confirmed net demand cannot cover the allocation obligation",
-                        "Broker permitted rights or reduce the committed allocation",
+                        "Information-return totals are mistaken for actual taxable operating profit",
+                        "Reconcile payment reports against invoices, returns, costs, and rewards",
+                        "Reported gross amounts diverge from documented transaction-level source records",
+                        "Investigate differences and preserve records supporting accurate tax preparation",
                     ],
                     [
-                        "Acquisition shortcuts defeat enforced purchase limits or controls",
-                        "Retain receipts, source attestations, limits, and acquisition account records",
-                        "Source evidence indicates prohibited circumvention or deceptive acquisition",
-                        "Reject inventory and stop the implicated sourcing relationship",
+                        "Destination tax assumptions replace valid sourcing and resale documentation",
+                        "Retain destination proof and certificates accepted by relevant jurisdictions",
+                        "Merchant exemption claim lacks required factual or documentary support",
+                        "Correct purchase treatment and obtain proper jurisdiction-specific documentation",
                     ],
                     [
-                        "Late mandatory fees misstate the initially displayed ticket price",
-                        "Audit customer price displays against applicable total-price requirements",
-                        "Mandatory service charges appear only after initial price display",
-                        "Correct pricing logic before accepting additional affected orders",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Run one exception ledger for clawbacks, taxes, refunds, and shutdown recovery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The twelfth trap is releasing reserves when a transaction is merely paid rather "
-                    "than economically closed. A ticket payout can precede a cancellation claim, and a "
-                    "merchant return can reverse a card reward after the reward funded another purchase. "
-                    "Create an exception ledger linking every order to refund rights, dispute windows, "
-                    "reward reversal terms, and the party contractually responsible for replacement. For "
-                    "an illustrative $300 ticket sale with a $45 seller fee and $210 acquisition basis, "
-                    "initial contribution is $45. If cancellation requires a $300 customer refund while "
-                    "the marketplace retains its $45 fee and the supplier returns only $210, final "
-                    "loss is $45, a $90 deterioration from the original forecast. Different contracts "
-                    "change that result; model the actual cash legs instead of assuming symmetric refunds. "
-                    "Track exposure by event and marketplace because one cancellation can affect many "
-                    "orders simultaneously. A reserve equal to average historical refunds is inadequate "
-                    "for a portfolio dominated by one event. Hold enough accessible liquidity for the "
-                    "largest explicitly chosen cancellation stress and disclose any remaining funding "
-                    "gap internally. Do not count supplier recovery until the contractual right and "
-                    "expected payment timing have both been evaluated."
-                ),
-                (
-                    "The thirteenth trap is treating resale documentation as a blanket tax exemption. "
-                    "For California merchandise purchases, Regulation 1668 governs resale certificates; "
-                    "the documentation must fit a genuine resale transaction and applicable requirements. "
-                    "An item diverted to business use can create tax consequences even when originally "
-                    "purchased for resale. Maintain jurisdiction, certificate, seller acceptance, transaction "
-                    "purpose, and subsequent disposition together. Marketplace tax collection does not "
-                    "automatically resolve taxes or obligations on off-platform activity, suite arrangements, "
-                    "or wholesale merchandise. Separate collected tax from revenue and unrestricted cash. "
-                    "In an illustrative transaction where an 8% tax applies to a $1,000 taxable base, "
-                    "the $80 collected is a liability, not spread; actual rates and taxable bases vary. "
-                    "Reconcile marketplace tax reports to orders and investigate differences before funds "
-                    "are distributed. At Base scale, a recurring $500 monthly leak removes $6,000, or "
-                    "about 4.18% of canonical $143,500 annual owner profit. Use that profit denominator "
-                    "to prioritize repairs. Assign each exception an owner, supporting evidence, dollar "
-                    "exposure, deadline, and next action. Without these fields, a colorful dashboard "
-                    "becomes a queue of losses that nobody is responsible for collecting or stopping."
-                ),
-                (
-                    "The final trap is automating throughput before automating reconciliation and shutdown. "
-                    "Use a daily three-way match among commitments or orders, delivery or acceptance "
-                    "evidence, and bank or marketplace settlement. Add a fourth comparison for issuer "
-                    "rewards and deductions wherever rewards form part of the original margin. Set "
-                    "illustrative alerts for any unmatched settlement older than one business day, any "
-                    "negative-contribution order, and aggregate unresolved losses above 10% of the month's "
-                    "planned retained contribution. A single verified duplicate sale, prohibited sourcing "
-                    "incident, or unexplained ownership discrepancy warrants immediate isolation regardless "
-                    "of dollar size. Keep buying-group, issuer, marketplace, and event concentrations visible "
-                    "together so diversification is assessed economically rather than by account count. "
-                    "A one-owner team with two contractors needs named reconciliation and fulfillment "
-                    "backups, not three people editing the same spreadsheet without permissions. The "
-                    "Scaled case adds a second full-time operator and three contractors but does not "
-                    "remove the need for separation of duties. Restart an interrupted lane only after "
-                    "the cause is corrected, outstanding customers are handled, cash coverage is restored, "
-                    "and a small authorized test settles cleanly. Preserve appeal evidence and communicate "
-                    "through approved account channels; account replacement is not a recovery strategy."
-                ),
-            ],
-            "table": {
-                "caption": "Clawback, Tax, and Restart Exception Ownership Matrix",
-                "headers": [
-                    "Latent liability",
-                    "Daily forensic check",
-                    "Proposed escalation condition",
-                    "Closure evidence",
-                ],
-                "rows": [
-                    [
-                        "Cancellation refunds exceed immediately recoverable supplier purchase basis",
-                        "Model customer refunds, retained fees, and supplier recovery timing",
-                        "Largest chosen event stress exceeds accessible refund liquidity",
-                        "Document funded refunds and reconcile remaining supplier recovery",
-                    ],
-                    [
-                        "Returned merchandise reverses rewards already treated as operating income",
-                        "Match issuer adjustment records to returned purchase transaction identifiers",
-                        "Reward reversal makes the original order contribution negative",
-                        "Post revised economics and recover eligible contractual reimbursements",
-                    ],
-                    [
-                        "Resale certificates fail to match actual merchandise disposition",
-                        "Compare certificate scope with buyer status and item disposition",
-                        "Goods enter business use without a documented tax review",
-                        "Correct transaction treatment and retain supporting disposition records",
-                    ],
-                    [
-                        "Collected taxes are spent as unrestricted purchasing capital",
-                        "Reconcile tax liabilities separately from revenue and cash reserves",
-                        "Available reserved cash falls below recorded tax obligations",
-                        "Restore reserved funds and reconcile jurisdiction reporting amounts",
-                    ],
-                    [
-                        "Unowned deductions remain unresolved until recovery deadlines expire",
-                        "Require owner, deadline, evidence, and next action per exception",
-                        "Any recoverable deduction lacks an accountable assigned operator",
-                        "Record recovery or authorized writeoff with supporting evidence",
-                    ],
-                    [
-                        "Unmatched settlements hide duplicate deductions and missing payments",
-                        "Match commitments, acceptance records, settlement deposits, and reward adjustments",
-                        "Unmatched settlement remains open beyond one business day",
-                        "Resolve transaction linkage and document all remaining differences",
-                    ],
-                    [
-                        "Premature restart repeats the incident across larger inventory volumes",
-                        "Verify corrected cause, funded obligations, and clean test settlement",
-                        "Any customer obligation or root cause remains unresolved",
-                        "Resume only the repaired authorized lane at reduced exposure",
+                        "Automation expands purchases while settlement and reward exceptions accumulate",
+                        "Display unresolved exceptions alongside contribution and repayment coverage metrics",
+                        "Any hard-stop condition remains unresolved while new commitments continue",
+                        "Disable affected routing and restart only after verified settlement",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Isolate the affected exposure",
-                    "action": "Stop new commitments in the implicated counterparty, issuer, event, or exchange lane.",
-                    "detail": "Preserve outstanding delivery obligations and freeze only the activity creating additional risk; do not indiscriminately cancel customer orders.",
+                    "title": "Freeze the Affected Route",
+                    "action": "Suspend new commitments tied to the failed counterparty, SKU, portal, or financing facility.",
+                    "detail": "Keep existing repayment instructions active, preserve access logs, and record the precise trigger and incident owner.",
                 },
                 {
                     "step": 2,
-                    "title": "Reconstruct the contractual cash waterfall",
-                    "action": "Match original terms, invoices, fulfillment evidence, fees, rewards, deductions, and settlement records.",
-                    "detail": "Calculate the loss and payment calendar without assuming a successful appeal, fresh borrowing, or immediate insurance recovery.",
+                    "title": "Build the Exposure Snapshot",
+                    "action": "Reconcile open inventory, unpaid reimbursements, card principal, restricted cash, and approaching deadlines.",
+                    "detail": "Exclude conditional rewards and unsettled transfers from available cash; attach evidence to every material balance.",
                 },
                 {
                     "step": 3,
-                    "title": "Fund obligations and pursue supported recovery",
-                    "action": "Allocate unrestricted cash to due payments, refunds, taxes, and required delivery remedies.",
-                    "detail": "Submit documented claims within contractual deadlines and use the issuer's or marketplace's authorized review process.",
+                    "title": "Recover Cash Before Windows Close",
+                    "action": "Prioritize valid returns, acceptance corrections, contractual collections, and timely carrier or insurer claims.",
+                    "detail": "Compare net recovery alternatives after freight, restocking, deductibles, and timing; never delay card repayment pending a dispute.",
                 },
                 {
                     "step": 4,
-                    "title": "Restart with a small observable transaction",
-                    "action": "Verify the repaired control and complete one authorized transaction through final reconciliation.",
-                    "detail": "Restore exposure incrementally only after settlement, reward treatment, customer delivery, and due-date coverage match the revised model.",
+                    "title": "Prove the Repair at Small Size",
+                    "action": "Document the corrected root cause and complete one limited transaction through cleared settlement.",
+                    "detail": "Restore exposure limits gradually only after independent reconciliation confirms contribution, eligibility, and adequate repayment coverage.",
                 },
             ],
         },
     ],
-    "pull_quote": "A spread is not yours until the delivery holds, the cash clears, and the clawback can be funded.",
+    "pull_quote": "A reward is conditional, a reimbursement can be late, and the card balance is still due.",
     "diagram_id": "diag-05",
     "action_checklist": [
-        "Reconcile all three canonical cases using gross proceeds, 35% retained revenue, retained margins, and exact annual owner profits.",
-        "Build a commitment-to-settlement register linking buying-group terms, serial evidence, acceptance timestamps, insurance, deductions, and bank receipts.",
-        "Calculate fourteen-day due-date coverage and stress a ten-business-day reimbursement delay with no additional capacity from the largest issuer.",
-        "Audit aged_shelf_corp_tradeline_credit_stacking disclosures and compare all acquisition charges against a transparent term facility before applying.",
-        "Verify ticket acquisition provenance, transfer rights, all-in price displays, event loss budgets, and multi-exchange delisting acknowledgments.",
-        "Assign every refund, tax difference, reward reversal, and platform restriction an owner, cash reserve, evidence packet, and restart condition.",
+        "Create separate fulfillment, rebate, and treasury ledgers with unique transaction identifiers and a single reconciled overhead allocation.",
+        "Reconcile the canonical gross bases to 35% retained contribution and the exact $20,000, $143,500, and $360,000 owner profit cases.",
+        "Install a fourteen-day repayment ladder that excludes unsettled ACH, conditional rewards, restricted balances, and assets settling after payment cutoffs.",
+        "Archive current buying-group commitments, portal exclusions, issuer conditions, shipment evidence, and jurisdiction-specific resale documentation before purchasing.",
+        "Set explicit concentration, overdue-settlement, matured reward-denial, and contribution-variance limits with named owners and automatic route suspension.",
+        "Audit entity-history disclosures and promotional-credit amortization, then rehearse the four-step incident protocol using one delayed reimbursement scenario.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits covered circumvention of ticket purchase controls and specified trafficking in tickets obtained through covered violations; supports acquisition provenance and sourcing controls.",
+            "title": "18 U.S.C. 1014 — Loan and credit applications",
+            "url": "https://www.law.cornell.edu/uscode/text/18/1014",
+            "relevance": "Addresses knowingly false statements or reports made to influence specified covered institutions; supports accurate entity, revenue, and credit disclosures.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes total-price and related disclosure requirements for covered live-event ticket offers, including treatment of mandatory charges.",
+            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, or organizational credit",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
+            "relevance": "Defines the business-purpose exemption and specified exceptions; commercial-card operations must examine their actual agreements rather than assume consumer protections.",
         },
         {
-            "title": "12 CFR 1026.3(a) — Business, Commercial, Agricultural, or Organizational Credit",
-            "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/3/",
-            "relevance": "Identifies business-purpose and organizational credit exemptions from Regulation Z, making accurate purpose classification and review of commercial credit agreements essential.",
+            "title": "26 U.S.C. 6001 — Notice or regulations requiring records, statements, and special returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": "Supports maintaining records sufficient to substantiate merchandise costs, reimbursements, rewards, interest, and reported tax amounts.",
         },
         {
-            "title": "New York Arts and Cultural Affairs Law §25.07 — Ticket Pricing",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
-            "relevance": "Provides state ticket-pricing and disclosure requirements that must be incorporated into applicable ticket offers and transaction records.",
+            "title": "26 CFR 1.6001-1 — Records",
+            "url": "https://www.ecfr.gov/current/title-26/section-1.6001-1",
+            "relevance": "Specifies recordkeeping and retention requirements relevant to transaction-level substantiation and reconciliation of business income and deductions.",
         },
         {
-            "title": "California Code of Regulations, Title 18, §1668 — Sales for Resale",
-            "url": "https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1668.html",
-            "relevance": "Sets requirements governing sales for resale and resale certificates; supports transaction-level documentation rather than blanket exemption assumptions.",
+            "title": "26 U.S.C. 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Provides the information-reporting framework for covered payment settlements; reported gross payments must be reconciled separately from operator profit.",
+        },
+        {
+            "title": "12 CFR Part 330 — Deposit Insurance Coverage",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330",
+            "relevance": "Governs deposit-insurance aggregation and ownership categories used when evaluating bank sweep exposure and promotional balances.",
+        },
+        {
+            "title": "Delaware Code, Title 6, Section 2-509 — Risk of loss in the absence of breach",
+            "url": "https://delcode.delaware.gov/title6/c002/sc05/index.html#2-509",
+            "relevance": "Provides Delaware's enacted UCC rules for risk allocation in specified delivery situations, subject to contrary agreement and other applicable provisions.",
+        },
+        {
+            "title": "26 U.S.C. 61 — Gross income defined",
+            "url": "https://www.law.cornell.edu/uscode/text/26/61",
+            "relevance": "Includes interest within gross income and supports separating taxable treasury receipts from principal transfers and fact-dependent purchase adjustments.",
         },
     ],
 }

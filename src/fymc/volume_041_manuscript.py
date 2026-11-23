@@ -1,4 +1,4 @@
-"""Volume 041 manuscript, 8 vector diagrams, and citation merger for Buying Group, Card-Float & Ticket Allocation Arbitrage."""
+"""Volume 041 manuscript, 8 vector diagrams, and citation merger for Buying Group, Commercial Card-Float & Rebate Arbitrage."""
 from __future__ import annotations
 
 from copy import deepcopy
@@ -86,8 +86,8 @@ def build_volume_041_manuscript(abridged_videos: list[dict] | None = None) -> di
         except (ValueError, TypeError, OverflowError):
             return None
 
-    _domain_allow_re = re.compile('\\b(buying\\s+group|buyformeretail|pointsmaker|ticket\\s+broker|ticket\\s+resale|ticket\\s+flip|flipping\\s+tickets|reselling\\s+tickets|ticketmaster|skybox|automatiq|stubhub|vivid\\s+seats|seatgeek|season\\s+ticket|presale|credit\\s+card|cashback|welcome\\s+bonus|sign-?up\\s+bonus|manufactured\\s+spend|amex|chase\\s+ink|capital\\s+one\\s+spark|rakuten|online\\s+arbitrage|resale\\s+certificate|bots\\s+act|consignment\\s+ticket|lysted|stagefront|float)\\b', re.IGNORECASE)
-    _off_domain_deny_re = re.compile('\\b(minecraft|fortnite|roblox|valorant|gta\\s+rp|arcade\\s+dave\\s+and\\s+busters\\s+tickets|cooking|knitting|makeup)\\b', re.IGNORECASE)
+    _domain_allow_re = re.compile('\\b(buying\\s+group|buyformeretail|pointsmaker|maxoutdeals|buyers\\s+club|credit\\s+card|business\\s+card|charge\\s+card|cashback|cash\\s+back|welcome\\s+bonus|sign-?up\\s+bonus|manufactured\\s+spend|amex|american\\s+express|chase\\s+ink|capital\\s+one\\s+spark|us\\s+bank|rakuten|topcashback|shopping\\s+portal|plastiq|melio|resale\\s+certificate|credit\\s+limit|financial\\s+review|bank\\s+bonus|treasury\\s+yield|card\\s+float|online\\s+arbitrage)\\b', re.IGNORECASE)
+    _off_domain_deny_re = re.compile('\\b(ticket|tickets|ticketmaster|stubhub|vivid\\s+seats|seatgeek|tickpick|skybox|automatiq|logitix|presale|season\\s+ticket|bots\\s+act|lysted|stagefront|super\\s+bowl|concert\\s+tour|minecraft|fortnite|roblox|valorant|gta\\s+rp|cooking|knitting|makeup)\\b', re.IGNORECASE)
     _dangling_tail = {
         "a", "about", "after", "although", "am", "an", "and", "any", "are", "as", "at",
         "be", "because", "been", "before", "being", "between", "both", "but", "by", "can",
@@ -160,7 +160,7 @@ def build_volume_041_manuscript(abridged_videos: list[dict] | None = None) -> di
             source_corpus = str(video.get("source_corpus") or meta_obj.get("source_corpus") or "").lower()
             if _off_domain_deny_re.search(haystack) or "fuck" in haystack:
                 continue
-            if source_corpus != 'vol041_buying_group_card_rebate_and_ticket_allocation_arbitrage':
+            if source_corpus != 'vol041_buying_group_card_float_and_rebate_arbitrage':
                 continue
         video_id = str(video.get("video_id") or "")
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
@@ -292,12 +292,12 @@ def build_volume_041_manuscript(abridged_videos: list[dict] | None = None) -> di
     total_words = compute_manuscript_word_count(chapters)
     total_yt_links = count_manuscript_youtube_links(chapters)
     return {
-        "volume_id": 'vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage',
+        "volume_id": 'vol-041-buying-group-card-float-and-rebate-arbitrage',
         "volume_number": '041',
         "series_title": "THE BIG MONEY PLAYBOOKS",
         "parent_brand": "THE FUCK YOU MONEY CLUB",
         "tagline": "Big Money. Small Teams. No Bullshit.",
-        "title": 'BUYING GROUP, CARD-FLOAT & TICKET ALLOCATION ARBITRAGE',
+        "title": 'BUYING GROUP, COMMERCIAL CARD-FLOAT & REBATE ARBITRAGE',
         "subtitle": VOLUME_041_SUBTITLE,
         "content_architecture_layers": [
             {"layer": 1, "title": "Executive orientation", "description": "Question-led summaries and key metrics establish revenue boundaries, net margins, and working-capital float."},

@@ -1,0 +1,328 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-commitment-to-cleared-cash",
+      "chart_type": "process_flow",
+      "title": "Commit First, Ship Second, Reconcile Every Dollar",
+      "subtitle": "Three separate earnings ledgers share one repayment calendar.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The wholesale lane records merchandise reimbursement and landed cost; the rewards lane records eligible card and portal receipts; the treasury lane records earned interest and qualified bonuses. Record each economic benefit once. Net-3 and Net-5 settlement terms are counterparty-specific commitments, not cleared cash.",
+      "caption": "A card charge creates a repayment liability. Only settled contribution after merchandise, fees, losses, and operating costs can support owner profit.",
+      "stages": [
+        {
+          "label": "Validate the wholesale commitment",
+          "value": "Step 1 — secure quantity, price, and acceptance terms",
+          "numeric_value": 1.0,
+          "detail": "Check BuyForMeRetail, Pointsmaker, or MaxOutDeals terms for the exact SKU, receiving address, quantity limit, commitment expiry, inspection period, and payout clock. Reject purchases that rely on an uncommitted resale."
+        },
+        {
+          "label": "Price the three earnings lanes",
+          "value": "Step 2 — separate merchandise, rewards, and treasury",
+          "numeric_value": 2.0,
+          "detail": "Calculate wholesale contribution without rewards first. Then evaluate Rakuten, TopCashback, and card offers against reseller exclusions, eligible categories, caps, and reversals. Keep treasury interest outside both purchase and reward contribution calculations."
+        },
+        {
+          "label": "Fund and document the shipment",
+          "value": "Step 3 — reserve repayment before releasing inventory",
+          "numeric_value": 3.0,
+          "detail": "Verify DE, NH, or OR delivery treatment and applicable resale certificates. Capture serial numbers, parcel weight, insurance limits, and carrier acceptance. Store card closing and due dates beside each purchase."
+        },
+        {
+          "label": "Match receiving to cleared ACH",
+          "value": "Step 4 — reconcile committed, accepted, and paid amounts",
+          "numeric_value": 4.0,
+          "detail": "Join order ID, tracking number, warehouse receipt, inspection adjustments, and bank transaction. An ACH initiation notice is not settlement. Escalate shortages and stop new commitments when counterparty limits bind."
+        },
+        {
+          "label": "Settle liabilities before sweeping",
+          "value": "Step 5 — pay the card and invest only surplus cash",
+          "numeric_value": 5.0,
+          "detail": "Protect the full statement payment and operating buffer. Sweep only settled surplus into eligible bank accounts or maturity-matched T-bills. Record principal movements as balance-sheet transfers and earned yield separately."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-wholesale-opportunity-cohort",
+      "chart_type": "funnel",
+      "title": "From 200 Screened Offers to 30 Settled Orders",
+      "subtitle": "One nested wholesale cohort; every later stage belongs to the prior stage.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative 90-day cohort of 200 distinct buying-group offers, each representing one potential order. Counts are not revenue forecasts or observed conversion rates. The funnel excludes standalone B2B payment transactions and treasury placements.",
+      "caption": "Cumulative conversion is 100%, 75%, 45%, 25%, and 15%; do not multiply settled-order count by unrelated merchant GMV.",
+      "stages": [
+        {
+          "label": "Screened wholesale offers",
+          "value": "200 offers — 100% of the starting cohort",
+          "numeric_value": 200.0,
+          "detail": "Capture SKU, seller, destination warehouse, commitment price, order cap, and stated payout term. Deduplicate repeated listings before assigning an opportunity ID."
+        },
+        {
+          "label": "Verified commitments",
+          "value": "150 offers — 75% of the starting cohort",
+          "numeric_value": 150.0,
+          "detail": "Remove 50 offers lacking current written acceptance, verified receiving instructions, or dependable counterparty identity. The remaining 150 belong to the original 200-offer cohort."
+        },
+        {
+          "label": "Positive stressed contribution",
+          "value": "90 offers — 45% of the starting cohort",
+          "numeric_value": 90.0,
+          "detail": "Remove 60 commitments whose landed cost, insured shipping, payout deductions, or return exposure erase the wholesale spread. Do not rescue negative merchandise economics with unconfirmed portal rewards."
+        },
+        {
+          "label": "Funded and shipped orders",
+          "value": "50 offers — 25% of the starting cohort",
+          "numeric_value": 50.0,
+          "detail": "Defer 40 otherwise profitable offers because cash reserves, card availability, or counterparty exposure limits are exhausted. Ship only against documented repayment capacity and valid receiving instructions."
+        },
+        {
+          "label": "Accepted and cash settled",
+          "value": "30 orders — 15% of the starting cohort",
+          "numeric_value": 30.0,
+          "detail": "At the measurement cutoff, 30 shipped orders have accepted quantities and cleared ACH. The other 20 remain outstanding within the shipped cohort; keep their inventory, receivables, and liabilities visible."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base Case — $1,025,000 Gross Activity to $143,500 Owner Profit",
+      "subtitle": "Six bars reconcile the canonical 14.0% gross-basis net margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD per year. First and final bars are absolute totals; four interior bars are signed deductions. Formula v2.0 fixes gross activity at $1,025,000, retained_share at 0.35, retained contribution at $358,750, and owner profit at $143,500. The three post-merchandise expense allocations are editorial reconciliation assumptions, not supplied engine line items. The scorecard's retained metric does not replace an ASC 606 principal-versus-agent assessment for reported revenue.",
+      "caption": "$1,025,000 − $666,250 − $108,000 − $61,500 − $45,750 = $143,500. Owner profit is 14.0% of gross activity and 40.0% of $358,750 retained contribution.",
+      "stages": [
+        {
+          "label": "Gross scorecard activity",
+          "value": "$1,025,000 annual gross-basis starting total",
+          "numeric_value": 1025000.0,
+          "detail": "Aggregate the canonical wholesale reimbursement, commercial reward, and treasury-yield activity basis. Exclude card credit limits, borrowed principal, supplier GMV outside this operation, and sweep transfers."
+        },
+        {
+          "label": "Landed merchandise deduction",
+          "value": "−$666,250 leaves $358,750 retained contribution",
+          "numeric_value": -666250.0,
+          "detail": "Apply the canonical 65% blended merchandise-cost deduction. The remaining 35% is the supplied retained contribution metric, not an assertion that every buying-group order earns a 35% merchandise spread."
+        },
+        {
+          "label": "Pod and recurring operating cost",
+          "value": "−$108,000 leaves $250,750 before variable deductions",
+          "numeric_value": -108000.0,
+          "detail": "Illustratively allocate $72,000 to contractor support and $36,000 to systems, bookkeeping, insurance, and recurring administration. Total recurring opex equals $9,000 monthly. Owner labor is compensated through the resulting owner-profit measure."
+        },
+        {
+          "label": "Payment and carrying cost",
+          "value": "−$61,500 leaves $189,250 before fulfillment losses",
+          "numeric_value": -61500.0,
+          "detail": "Deduct illustrative transaction fees and actual financing or carrying charges. Do not count repayment of card principal as an expense or treat an unused credit line as earned income."
+        },
+        {
+          "label": "Incremental fulfillment losses",
+          "value": "−$45,750 leaves $143,500 annual owner profit",
+          "numeric_value": -45750.0,
+          "detail": "Deduct incremental return freight, realized parcel losses, and settlement shortfalls after recoveries. Exclude amounts already included in landed merchandise cost and avoid adding a second expense for the same loss."
+        },
+        {
+          "label": "Owner profit total",
+          "value": "$143,500 — 14.0% gross and 40.0% retained margin",
+          "numeric_value": 143500.0,
+          "detail": "Render this endpoint as a total anchored at zero, not as another positive increment. Preserve the canonical owner-profit definition without inserting additional personal-tax or owner-draw assumptions."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-unit-contribution-by-lane",
+      "chart_type": "horizontal_bars",
+      "title": "Five Routes, Explicit Denominators",
+      "subtitle": "Illustrative contribution percentages, not interchangeable annual returns.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Each bar uses $10,000 of its stated purchase, invoice, or treasury principal as denominator. Wholesale and rewards bars cover one transaction cycle; treasury covers 55 days. These examples are not components of the annual scorecard bridge. All prices, reward rates, and payment fees below are modeling inputs rather than current provider quotations.",
+      "caption": "Keep wholesale spread, reward contribution, and treasury yield separate. Negative fee-versus-rebate transactions cannot be improved merely by increasing payment volume.",
+      "stages": [
+        {
+          "label": "Insured electronics wholesale",
+          "value": "2.40% — $240 contribution per $10,000 purchase",
+          "numeric_value": 2.4,
+          "detail": "A pre-committed $10,300 reimbursement less $10,000 merchandise and $60 insured outbound shipping leaves $240 before shared overhead. Exclude card and portal rewards from this wholesale-only calculation."
+        },
+        {
+          "label": "Commodity wholesale replenishment",
+          "value": "0.80% — $80 contribution per $10,000 purchase",
+          "numeric_value": 0.8,
+          "detail": "A $10,200 reimbursement less $10,000 merchandise, $80 shipping, and $40 expected deductions leaves $80 before overhead. A further $100 receiving shortfall turns the order contribution negative."
+        },
+        {
+          "label": "Eligible card and portal stack",
+          "value": "3.00% — $300 incremental rewards per $10,000 spend",
+          "numeric_value": 3.0,
+          "detail": "Assume $200 collectible card rewards plus $100 collectible portal rewards and zero incremental payment fee. Verify Rakuten or TopCashback attribution, reseller eligibility, and card terms. Test claimed uncapped 2%–4% offers rather than assuming availability."
+        },
+        {
+          "label": "B2B invoice payment rail",
+          "value": "−0.90% — $90 loss per $10,000 invoice",
+          "numeric_value": -0.9,
+          "detail": "An illustrative Plastiq or Melio route earns $200 at 2% of eligible invoice spend but costs $290 at a 2.9% fee. The $90 deficit precedes interest and overhead; verify rail and issuer eligibility separately."
+        },
+        {
+          "label": "Settled cash treasury placement",
+          "value": "0.603% — about $60.27 per $10,000 over 55 days",
+          "numeric_value": 0.6027397260273972,
+          "detail": "Use $10,000 × 4% × 55/365 for a simple-interest planning estimate before fees and taxes. Actual T-bill return follows purchase price and maturity proceeds. Exclude bank bonuses until qualification and exclude borrowed card principal from profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-risk-decisions",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Capital Leaves the Account",
+      "subtitle": "Proceed sequentially; any failed check stops that transaction.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four ordered decision nodes. A pass advances to the next node; a failure routes to the corrective action in its detail. Sources establish statutory context, while seller, issuer, carrier, and buying-group contracts supply transaction terms.",
+      "caption": "Tax documentation, loss allocation, reward records, and repayment liquidity must each stand independently.",
+      "stages": [
+        {
+          "label": "Destination and resale treatment",
+          "value": "Pass with documented sourcing and destination treatment",
+          "numeric_value": 1.0,
+          "detail": "Verify DE, NH, or OR delivery and applicable seller collection rules; retain valid resale certificates where required. Oregon's general sales-tax position appears in ORS 305.620. If treatment is unresolved, price tax into the order or defer the purchase."
+        },
+        {
+          "label": "Commitment and shipment exposure",
+          "value": "Pass with written acceptance and recoverable loss exposure",
+          "numeric_value": 2.0,
+          "detail": "Apply the contract's loss allocation against UCC 2-509 defaults. Verify carrier coverage exclusions, declared-value limits, claim deadlines, and inspection rights. If uninsured exposure exceeds the loss budget, reduce shipment size or reject the commitment."
+        },
+        {
+          "label": "Permitted payment and reward records",
+          "value": "Pass with genuine spend and auditable reward treatment",
+          "numeric_value": 3.0,
+          "detail": "Confirm issuer and payment-provider permission for the transaction; exclude prohibited consumer card-cycling and circular manufactured payments. Retain basis records under 26 U.S.C. 1012 and reconcile applicable 1099-K reporting under 26 U.S.C. 6050W without equating receipts to profit."
+        },
+        {
+          "label": "Due-date liquidity and concentration",
+          "value": "Pass only when stressed repayment remains fully funded",
+          "numeric_value": 4.0,
+          "detail": "For a $10,000 charge due on day 55, delay expected Net-5 ACH by another 60 days and assume a $500 shipping or return loss. Require $10,500 unrestricted cash plus other due obligations. Otherwise reduce the purchase; do not rely on a new card charge or an unsettled Treasury sale to make repayment."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-three-to-five-person-pod",
+      "chart_type": "org_architecture",
+      "title": "A Three-Person Base Pod, Five People at Scale",
+      "subtitle": "Conservative and Base use 1 FT + 2 C; Scaled uses 2 FT + 3 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT denotes a full-time seat and C denotes a contractor seat. The first three seats form the starting pod; the last two activate only in the scaled configuration. Seat count does not specify contractor hours or imply identical workloads.",
+      "caption": "Separate purchasing authority, receipt evidence, and cash reconciliation. Use bank entitlements and documented dual authorization for new payees without sharing credentials.",
+      "stages": [
+        {
+          "label": "Owner and treasury lead",
+          "value": "Base seat 1 — full-time capital and counterparty owner",
+          "numeric_value": 1.0,
+          "detail": "Set exposure limits, authorize commitments, manage issuer relationships, and maintain the repayment calendar. Review cleared ACH and reserve sufficiency daily; suspend purchasing when liquidity headroom or counterparty reliability deteriorates."
+        },
+        {
+          "label": "Procurement and fulfillment specialist",
+          "value": "Base seat 2 — contractor purchase and parcel operator",
+          "numeric_value": 1.0,
+          "detail": "Verify SKU eligibility, commitment expiry, warehouse instructions, and shipping evidence. Maintain serial number records and open carrier claims promptly. Prepare purchase batches without unilateral authority to create and pay new bank beneficiaries."
+        },
+        {
+          "label": "Reconciliation and rewards specialist",
+          "value": "Base seat 3 — contractor ledger and exception operator",
+          "numeric_value": 1.0,
+          "detail": "Match card charges, accepted inventory, ACH receipts, portal attribution, and reward reversals. Reconcile purchase-price adjustments and reporting forms; send unmatched transactions to the owner with amount, age, evidence, and next action."
+        },
+        {
+          "label": "Operations and counterparty manager",
+          "value": "Scaled seat 4 — additional full-time operating owner",
+          "numeric_value": 1.0,
+          "detail": "Absorb increased order volume, monitor warehouse acceptance quality, and maintain vetted counterparty capacity. Keep exposure diversified across reliable Net-3 and Net-5 groups without weakening due-date cash reserves or documentation standards."
+        },
+        {
+          "label": "Automation and controls specialist",
+          "value": "Scaled seat 5 — additional contractor systems operator",
+          "numeric_value": 1.0,
+          "detail": "Maintain the deal-commit reconciler, eligible reward router, ACH ledger, and maturity alerts using permitted exports and interfaces. Test duplicate matching, stale balances, failed imports, and issuer account restrictions before expanding volume."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Four Capital Buckets Across $10,000–$55,000",
+      "subtitle": "An illustrative $30,000 plan keeps cash reserves distinct from card capacity.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "numeric_value represents the $30,000 central plan in USD. Stage text also provides complete $10,000 and $55,000 plans. These capital plans do not determine annual scenario revenue. Canonical Conservative economics are $250,000 gross, $87,500 retained contribution, and $20,000 owner profit at 8% gross margin and 22.86% rounded retained margin. Base economics are $1,025,000 gross, $358,750 retained, and $143,500 owner profit at 14% gross and 40% retained margins. Scaled economics are $1,800,000 gross, $630,000 retained, and $360,000 owner profit at 20% gross and 57.14% rounded retained margins. Each scenario uses retained_share=0.35.",
+      "caption": "Low plan totals $10,000; central plan totals $30,000; high plan totals $55,000. Card limits are liabilities available for use, not additional startup equity or owner income.",
+      "stages": [
+        {
+          "label": "Purchase working capital",
+          "value": "$4,000 low / $12,000 central / $22,000 high",
+          "numeric_value": 12000.0,
+          "detail": "Fund small committed orders and settlement gaps. Scale order size to actual cash recovery rather than theoretical card capacity. A $12,000 inventory allocation does not authorize $12,000 of additional unreserved card obligations."
+        },
+        {
+          "label": "Protected repayment liquidity",
+          "value": "$3,500 low / $10,500 central / $19,250 high",
+          "numeric_value": 10500.0,
+          "detail": "Keep this cash unrestricted and separate from treasury experiments. Cover statements under delayed ACH and issuer account restrictions. Add all other due obligations before measuring headroom; stop buying when the reserve becomes insufficient."
+        },
+        {
+          "label": "Shipping and loss liquidity",
+          "value": "$1,500 low / $4,500 central / $8,250 high",
+          "numeric_value": 4500.0,
+          "detail": "Fund insured shipping, return freight, deductibles, and claim-payment delays. This allocation is a cash buffer, not an expense automatically recognized on day one. Replenish it after realized losses before increasing parcel values."
+        },
+        {
+          "label": "Systems and launch operating cash",
+          "value": "$1,000 low / $3,000 central / $5,500 high",
+          "numeric_value": 3000.0,
+          "detail": "Fund ledger setup, bookkeeping, shipping tools, and initial contractor onboarding. Canonical monthly opex spans $1,500–$9,000; launch cash alone does not cover a full 1–3 month first-deal window. Throttle activity or add funded runway before hiring."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to a Controlled Pilot",
+      "subtitle": "Build evidence and repayment discipline before pursuing annual scale.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four consecutive weekly milestones cover days 1–30. The canonical first-deal window is 1–3 months, so this sprint targets operational readiness rather than requiring a completed deal by day 30. Provider availability, issuer terms, and warehouse acceptance must be verified directly.",
+      "caption": "Expand only after an entire commitment-to-cleared-cash cycle reconciles. A successful import, pending reward, or initiated ACH does not establish realized profit.",
+      "stages": [
+        {
+          "label": "Map counterparties and obligations",
+          "value": "Days 1-7 — establish the three-ledger operating foundation",
+          "numeric_value": 1.0,
+          "detail": "Verify buying-group identities and current terms, collect receiving instructions, and document tax treatment. Create separate wholesale, rewards, and treasury accounts in the operating ledger. Record issuer closing dates, due dates, limits, and restrictions."
+        },
+        {
+          "label": "Build matching and stress tests",
+          "value": "Days 8-14 — prove every transaction can be reconstructed",
+          "numeric_value": 2.0,
+          "detail": "Load permitted card and bank exports into a reconciler keyed by order and settlement identifiers. Test duplicate rows, split ACH, missing parcels, reward reversals, and a 60-day payout delay. Require reserved cash to survive the stressed schedule."
+        },
+        {
+          "label": "Execute a bounded pilot",
+          "value": "Days 15-21 — submit a small order only if ready",
+          "numeric_value": 3.0,
+          "detail": "Use one verified commitment, insured shipment, documented purchase terms, and full repayment coverage. Capture portal attribution only where reseller use is permitted. If onboarding remains incomplete, rehearse with synthetic ledger entries rather than forcing a purchase."
+        },
+        {
+          "label": "Reconcile and set expansion limits",
+          "value": "Days 22-30 — close evidence gaps before increasing exposure",
+          "numeric_value": 4.0,
+          "detail": "Match any received inventory acceptance and cleared ACH to the original commitment; retain open items as receivables rather than assumed cash. Compare actual contribution with the order model, pay obligations on time, and sweep only genuine surplus. Continue the pilot into months two or three if needed."
+        }
+      ]
+    }
+  ]
+}

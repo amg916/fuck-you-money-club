@@ -6,627 +6,687 @@ CHAPTER_9 = {
     "chapter_number": 9,
     "question_number": 9,
     "slug": "contracts-statutory-guardrails-licensing-and-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern buying group, card-float & ticket allocation arbitrage?",
+    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern buying group, commercial card-float & rebate arbitrage?",
     "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
     "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "BOTS Act Acquisition Controls, Net-3/Net-5 Purchase Orders, Commercial Card Covenants, All-In Ticket Prices, and Evidence-Led Outreach",
+    "subtitle": "UCC Purchase Commitments, Resale Certificates, Commercial Card Covenants, IRC Records, Treasury Boundaries & Permission-Based B2B Scripts",
     "layout_template": "legal_compliance_notes",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, Rank #09 of 42, scores 93/100 by combining committed buying-group fulfillment, "
-        "commercial card rebates, and controlled ticket allocations. This chapter maps 11 operator plays "
-        "to purchasing authority, licensing boundaries, contract remedies, and usable outreach language. "
-        "Formula v2.0 fixes annual owner profit at $20,000 Conservative, $143,500 Base, and $360,000 Scaled. "
-        "Gross activity of $250,000, $1,025,000, and $1,800,000 produces modeled retained revenue of "
-        "$87,500, $358,750, and $630,000 at a 35% retained share. Protect those economics with dated "
-        "purchase commitments, issuer-permitted spending, lawful ticket sourcing, insured delivery, and "
-        "cash reserves independent of expected rebates. Treat account authority as evidence-based service "
-        "capacity, never transferable influence. The operating objective is a collectible, documented spread "
-        "rather than impressive purchase volume."
+        "Candidate #41, Rank #10 of 43, scores 93/100 by combining disciplined wholesale "
+        "execution with commercial rewards and separately controlled treasury income. This "
+        "chapter maps 11 operator plays to enforceable purchase commitments, state tax "
+        "evidence, issuer permissions, payment-service boundaries, and usable outreach scripts. "
+        "The canonical annual owner profits are $20,000 Conservative, $143,500 Base, and "
+        "$360,000 Scaled; gross receipts are not interchangeable with retained contribution "
+        "or spendable cash. Build contracts around accepted inventory, cleared ACH, documented "
+        "rebate eligibility, and repayment dates rather than advertised float. Keep "
+        "BuyForMeRetail, Pointsmaker, and MaxOutDeals exposure distinct from Rakuten, "
+        "TopCashback, Plastiq, Melio, and bank sweep activity. Treat reputation-account work "
+        "as a separately scoped, platform-permitted service, never purchased influence."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross activity; $87,500 retained revenue at 35% share",
-            "note": "8% gross-basis net margin; 22.86% retained margin; $20,000 owner profit; 1 FT + 2 C",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross activity; $358,750 retained revenue at 35% share",
-            "note": "14.0% gross-basis net margin; 40.0% retained margin; $143,500 owner profit; 1 FT + 2 C",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross activity; $630,000 retained revenue at 35% share",
-            "note": "20% gross-basis net margin; 57.14% retained margin; $360,000 owner profit; 2 FT + 3 C",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Establish lawful sourcing, jurisdiction, and seller authority before committing cash",
+            "heading": "1. Separate merchandise ownership, payment activity, and regulated services",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Build the transaction register around who buys, who owns, who lists, and who receives "
-                    "customer funds. The federal BOTS Act, 15 U.S.C. §45c, prohibits circumventing covered "
-                    "ticketing controls and also reaches specified sales of tickets obtained through prohibited "
-                    "circumvention. Its statutory coverage concerns public events at venues exceeding 200 "
-                    "seats; adopt the same sourcing discipline for smaller events rather than treating the "
-                    "threshold as a purchasing tactic. Ban queue bypass, CAPTCHA defeat, purchase-limit "
-                    "evasion, and supplier instructions that accomplish those results indirectly. A supplier's "
-                    "invoice does not establish lawful acquisition. Collect original order confirmations, "
-                    "transfer history, contractual purchasing authority, and a signed sourcing representation. "
-                    "Use SkyBox or Automatiq for authorized inventory synchronization, not to defeat primary-market "
-                    "controls. Maintain one inventory record per transferable entitlement and suspend listings "
-                    "when transfer eligibility changes. A suite allocation may bundle admission, hospitality, "
-                    "parking, and restricted guest access; separate each deliverable before quoting. Define "
-                    "SSL in the agreement as the specific stadium seat license or other named entitlement "
-                    "being transferred. A seat license is not automatically an admission ticket, and venue "
-                    "consent or a separate transfer payment may be required."
+                    "Create three separate ledger classes before opening a purchasing account: "
+                    "wholesale merchandise fulfillment, commercial card and portal rewards, and "
+                    "treasury income. Buying goods for your own resale is different from accepting "
+                    "another business's money and transmitting it onward. Under 31 CFR "
+                    "1010.100(ff)(5), money-transmitter classification depends on the actual movement "
+                    "of funds and applicable exclusions, not the label attached to an invoice. "
+                    "State transmission statutes require a separate analysis; federal registration "
+                    "does not replace state licensing. Use Plastiq or Melio through an eligible "
+                    "business account to pay your own genuine obligations, with the service "
+                    "handling its permitted payment function. Do not become an informal "
+                    "settlement intermediary for other buyers. Similarly, buying Treasury bills "
+                    "with company cash differs from pooling customer funds, selling investment "
+                    "interests, or advising others about securities for compensation. Those "
+                    "expansions can implicate 15 U.S.C. 80b-2(a)(11), broker registration, and "
+                    "state securities rules. Keep bank bonuses, interest, and card liabilities "
+                    "in accounts titled to the operating entity. Document beneficial ownership "
+                    "accurately when institutions request it. The practical boundary is simple: "
+                    "own the inventory, owe the card balance, and invest only cash the business "
+                    "can legitimately control without jeopardizing scheduled repayment."
                 ),
                 (
-                    "Create a jurisdiction sheet for the seller location, buyer location, event venue, and "
-                    "delivery destination; no single address answers every licensing or tax question. New "
-                    "York Arts and Cultural Affairs Law §25.13 establishes ticket-reseller licensing requirements "
-                    "subject to its scope and exceptions. Check applicability, registration status, bonding "
-                    "requirements, and renewal obligations before soliciting covered business. California "
-                    "Civil Code §1770(a)(29) addresses advertised prices that exclude mandatory charges, "
-                    "subject to statutory exceptions. Federally, 16 CFR Part 464 requires covered live-event "
-                    "ticket businesses to display total prices with mandatory charges and prescribed prominence; "
-                    "permitted exclusions and final-payment disclosures still require careful implementation. "
-                    "Configure the quoting template and actual checkout, not merely the sales script. For "
-                    "merchandise, California Revenue and Taxation Code §§6051 and 6091 illustrate the "
-                    "distinction between taxable retail sales and documented resale treatment. Obtain a valid "
-                    "resale certificate where appropriate, verify seller permits, and retain evidence linking "
-                    "certificates to qualifying purchases. Marketplace tax collection does not automatically "
-                    "resolve separate direct-sale obligations. Ticket admissions taxes and local entertainment "
-                    "levies require their own analysis. Record the official source, review date, responsible "
-                    "person, and operational consequence for each applicable requirement."
+                    "A Delaware, New Hampshire, or Oregon delivery address does not itself "
+                    "create a nationwide resale exemption. These states lack a general sales "
+                    "tax, but destination sourcing, retailer collection obligations, later "
+                    "diversion, and the operator's home-state use-tax rules still matter. Delaware "
+                    "also imposes business licensing and gross receipts obligations on covered "
+                    "activity; Oregon's Corporate Activity Tax is separate from retail sales "
+                    "tax. For purchases otherwise taxable, maintain the registration and resale "
+                    "documentation required by the relevant state, complete the certificate "
+                    "accurately, and retain invoices establishing an actual resale. California "
+                    "Revenue and Taxation Code sections 6091 and 6092 illustrate the distinction "
+                    "between a presumption of taxable retail sales and properly supported resale "
+                    "treatment. Never invent an exemption number for a jurisdiction that does "
+                    "not issue one for the transaction. A warehouse contract should identify "
+                    "the receiving entity, destination, inspection role, and record-retention "
+                    "duties without implying that storage eliminates nexus. For high-value "
+                    "electronics, record serial numbers and prohibit substitution of a different "
+                    "delivery state without written tax review. If a group redirects a $10,000 "
+                    "order into a hypothetical 7% taxable destination, reserve $700 pending "
+                    "resolution; suspend the purchase when that exposure eliminates the committed spread."
                 ),
                 (
-                    "Commercial card float is a payment-timing resource governed by the issuer agreement, "
-                    "not a promise of sixty interest-free days. Business-purpose credit is generally outside "
-                    "much of Regulation Z under 12 CFR §1026.3(a), while specified card provisions can "
-                    "remain applicable. Read the actual grace-period, cash-equivalent, rewards, repayment, "
-                    "business-use, and account-review terms. A purchase just after statement closing may "
-                    "receive materially more time than one immediately before closing; compute days from "
-                    "posting to the actual payment due date. Do not manufacture transactions, cycle limits "
-                    "against issuer restrictions, or describe cash movement as merchandise purchasing. "
-                    "An uncapped 2%–4% yield is usable only when the selected card, merchant category, "
-                    "and transaction satisfy current terms; treat 4% as conditional rather than universal. "
-                    "Keep available cash for statement settlement even when a buying group promises Net-3 "
-                    "or Net-5 payment. Receiving customer funds for onward transmission can raise separate "
-                    "money-transmission questions beyond ordinary payment for owned inventory. Avoid adding "
-                    "escrow, credit brokering, pooled investment, or client-fund custody to an inventory "
-                    "business without a separate perimeter assessment. An issuer account closure should "
-                    "stop new commitments immediately, while existing deliveries and repayments continue "
-                    "under a funded wind-down plan."
+                    "Tax records must explain economic substance rather than copy payment "
+                    "processor totals into income. IRC section 6050W governs payment settlement "
+                    "reporting; determine federal and state filing thresholds for the actual "
+                    "tax year and payment channel instead of embedding a permanent threshold "
+                    "in software. Reconcile each Form 1099-K to the processor ledger, refunds, "
+                    "chargebacks, and amounts already booked. IRC section 6001 and Treasury "
+                    "Regulation 1.6001-1 support keeping records sufficient to establish return "
+                    "items. Where a purchase-linked reward constitutes a price adjustment, "
+                    "track its effect on inventory cost or basis rather than treating the "
+                    "same benefit as both lower cost and additional income. A bank opening "
+                    "bonus or interest payment can have different treatment; retain the "
+                    "institution's reporting and classify it separately. Business-purpose "
+                    "credit is generally exempt from Regulation Z under 12 CFR 1026.3(a), "
+                    "subject to stated exceptions, so do not import consumer billing protections "
+                    "into a commercial card contract. Confirm permitted resale spend, authorized "
+                    "users, payment sources, and issuer limits in the actual agreement. Exclude "
+                    "consumer card-cycling, fabricated purchases, circular invoices, and payments "
+                    "designed to conceal utilization. Legitimate early repayment still requires "
+                    "issuer-permitted usage and an auditable source of funds."
                 ),
             ],
             "table": {
-                "caption": "Primary Authority and Transaction-Perimeter Operating Matrix",
+                "caption": "Seven Authority Checks Before Merchandise, Rewards, or Treasury Activity",
                 "headers": [
-                    "Authority or regulated operating boundary",
-                    "Specific transaction requiring an applicability check",
-                    "Evidence retained in the transaction file",
-                    "Required response when the check fails",
+                    "Activity and controlling boundary",
+                    "Primary authority or operating rule",
+                    "Evidence retained by the operator",
+                    "Specific stop condition and fallback",
                 ],
                 "rows": [
                     [
-                        "15 U.S.C. §45c covers prohibited ticket-control circumvention",
-                        "Supplier offers inventory acquired through automated purchasing systems",
-                        "Original confirmations, acquisition representations, and documented transfer chain",
-                        "Reject inventory tied to prohibited circumvention and preserve correspondence",
+                        "Acquire electronics for documented resale through warehouse fulfillment.",
+                        "Apply destination-state statutes and valid resale certificate requirements.",
+                        "Keep seller invoices, certificates, serial records, and resale commitments.",
+                        "Pay applicable tax when exemption evidence cannot support treatment.",
                     ],
                     [
-                        "16 CFR Part 464 governs covered ticket price disclosures",
-                        "Direct checkout adds unavoidable processing or fulfillment charges",
-                        "Versioned price screenshots showing prominent mandatory-charge inclusive totals",
-                        "Correct advertised totals before accepting additional customer orders",
+                        "Deliver merchandise into Delaware, New Hampshire, or Oregon.",
+                        "Separate general sales-tax absence from business and use-tax obligations.",
+                        "Preserve actual delivery confirmation and subsequent disposition evidence.",
+                        "Reprice redirected shipments before accepting a taxable destination change.",
                     ],
                     [
-                        "New York Arts and Cultural Affairs Law §25.13",
-                        "Recurring resale activity may require a ticket-reseller license",
-                        "Written applicability analysis and current required registration evidence",
-                        "Suspend covered solicitation until required licensing is established",
+                        "Settle genuine business invoices through Plastiq or Melio.",
+                        "Apply 31 CFR 1010.100(ff)(5) and relevant state transmission rules.",
+                        "Retain underlying invoices, provider eligibility terms, and payment confirmations.",
+                        "Reject requests to collect and forward unrelated customer funds.",
                     ],
                     [
-                        "California Civil Code §1770(a)(29) addresses mandatory-charge price advertising",
-                        "California consumer receives a quoted ticket or package price",
-                        "Itemized quote and documented treatment of statutory exceptions",
-                        "Replace incomplete advertisements and repair affected checkout calculations",
+                        "Purchase Treasury bills exclusively for the operating entity.",
+                        "Distinguish own-account investment from compensated advice under federal securities statutes.",
+                        "Maintain account ownership records and a dated cash maturity ladder.",
+                        "Decline pooled customer balances and refer investment-service requests elsewhere.",
                     ],
                     [
-                        "California Revenue and Taxation Code §§6051 and 6091",
-                        "Merchandise is purchased for documented resale rather than consumption",
-                        "Valid resale documentation linked to invoices and purchaser identity",
-                        "Resolve tax treatment before claiming a resale purchasing exemption",
+                        "Reconcile processor settlement information against booked wholesale transactions.",
+                        "Apply IRC sections 6050W and 6001 to reporting records.",
+                        "Preserve settlement exports, refund evidence, and duplicate-reporting adjustments.",
+                        "Investigate mismatches before treating reported settlement totals as revenue.",
                     ],
                     [
-                        "12 CFR §1026.3(a) addresses business-purpose credit coverage",
-                        "Operator relies on commercial card terms for purchasing float",
-                        "Issuer agreement, statement dates, rewards terms, and repayment schedule",
-                        "Fund repayment independently and remove unsupported float assumptions",
+                        "Use a commercial card within documented issuer permissions.",
+                        "Review issuer covenants and Regulation Z business-purpose credit exclusions.",
+                        "Archive applicable terms, authorized users, limits, and repayment sources.",
+                        "Stop purchasing after restrictions rather than opening replacement identities.",
                     ],
                     [
-                        "Venue contracts govern suite and seat-license transfer permissions",
-                        "Corporate customer requests reassignment of restricted hospitality entitlements",
-                        "Venue consent, entitlement description, transfer charges, and guest restrictions",
-                        "Offer authorized alternatives or return funds under agreed terms",
+                        "Classify purchase rewards separately from bank promotional income.",
+                        "Apply transaction-specific IRC income and inventory cost treatment.",
+                        "Link each reward to qualifying spend or bank promotion terms.",
+                        "Hold disputed classifications for accountant review before closing books.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four checks before accepting inventory or publishing a quote",
-                "body": "A failed check stops the affected transaction without delaying unrelated, fully documented orders.",
+                "title": "Four verifications before committing another purchase",
+                "body": "Release purchasing authority only after these transaction-specific checks produce retained evidence.",
                 "items": [
-                    "Confirm lawful ticket acquisition, original order evidence, transferable rights, and venue-specific restrictions before listing.",
-                    "Record seller, buyer, venue, and delivery jurisdictions; establish required licenses, tax registrations, and total-price treatment.",
-                    "Match committed purchase cost to available repayment cash and the actual card due date, excluding anticipated rebates.",
-                    "Verify the contracting entity, payment authority, insured shipping terms, and a dated stop-loss instruction for every expiring allocation.",
+                    "Match the buying group's legal entity, warehouse recipient, bank instructions, and signed purchase commitment; verify account changes through a previously established contact.",
+                    "Confirm destination sourcing and applicable resale documentation; price any unresolved tax exposure into the order before measuring the spread.",
+                    "Read issuer, merchant, portal, and payment-provider restrictions for the actual transaction; reject resale exclusions, prohibited payment categories, or reward-ineligible funding paths.",
+                    "Prove that unrestricted cash covers the full card statement despite a fourteen-day ACH delay and a frozen portal payout; keep contingent rewards out of this repayment test.",
                 ],
             },
         },
         {
-            "heading": "2. Convert verbal commitments into collectible purchase orders and narrow service agreements",
+            "heading": "2. Make purchase commitments enforceable before inventory leaves your control",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "A buying-group purchase order must identify the legal buyer, SKU, condition, quantity, "
-                    "unit reimbursement, permitted retailer, delivery address, inspection deadline, and "
-                    "payment clock. Replace 'paid quickly' with 'ACH initiated within three business days "
-                    "after documented acceptance,' then separately state when acceptance occurs and what "
-                    "constitutes a valid rejection. Net-3 and Net-5 have no useful precision without an "
-                    "anchor event, business-day convention, and treatment of bank holidays. For a $12,000 "
-                    "shipment reimbursed at $12,240, the merchandise spread is $240; a permitted 2% card "
-                    "rebate adds $240 before freight, claims, and operating costs. If insured freight costs "
-                    "$90, the illustrative contribution is $390, not the $12,240 reimbursement. Require "
-                    "written authorization before substituting products or splitting destinations. UCC "
-                    "§§2-201, 2-509, and 2-513 provide useful drafting anchors for writings, risk of loss, "
-                    "and inspection, subject to each state's enactment and transaction facts. Specify "
-                    "shipment versus destination obligations and identify the insured party and claims "
-                    "beneficiary. A carrier's declared value is not necessarily equivalent to cargo insurance. "
-                    "Photograph serial numbers and packed condition, retain delivery signatures, and stop "
-                    "new orders when an undisputed reimbursement exceeds its agreed due date."
+                    "Contract around the transaction actually offered by BuyForMeRetail, "
+                    "Pointsmaker, or MaxOutDeals, without assuming that any named group accepts "
+                    "these terms. Capture the legal counterparty, deal identifier, exact SKU, "
+                    "condition, quantity ceiling, authorized retailer, warehouse address, and "
+                    "commitment expiration. UCC section 2-201, as enacted by the governing state, "
+                    "generally requires a sufficient signed record for goods contracts of $500 "
+                    "or more, subject to exceptions. Preserve electronic assent with timestamps "
+                    "and the version accepted; the E-SIGN Act, 15 U.S.C. 7001, supports electronic "
+                    "records but does not supply missing commercial terms. State precisely "
+                    "whether a reservation is binding or merely an expression of interest. "
+                    "A useful negotiated clause reads: 'Buyer purchases ten identified units "
+                    "at $1,020 each, provided Seller tenders the specified new condition before "
+                    "the commitment expires; price changes require both parties' written assent.' "
+                    "Attach serial evidence when available and define the inspection clock. "
+                    "UCC sections 2-513, 2-602, and 2-606 distinguish inspection, effective "
+                    "rejection, and acceptance. Do not translate a warehouse scan into acceptance "
+                    "unless the agreement says so. If the group retains unilateral cancellation "
+                    "after shipment, reduce exposure to the amount recoverable through a verified "
+                    "retailer return route."
                 ),
                 (
-                    "Separate the merchandise agreement from ticket brokerage and corporate allocation "
-                    "services because ownership, cancellation exposure, and fee triggers differ. State "
-                    "whether the operator sells owned inventory or acts for a disclosed principal. A "
-                    "brokerage fee should attach to a defined completed transfer or another expressly "
-                    "priced deliverable, with clear refund treatment if the event is canceled or the venue "
-                    "rejects transfer. For a $6,000 suite allocation and a $600 service fee, customer cash "
-                    "of $6,600 does not automatically become $6,600 of operator revenue. The underlying "
-                    "rights, control, and principal-agent assessment determine presentation; the fee is "
-                    "the obvious starting point for a genuine agency arrangement. Limit anti-circumvention "
-                    "language to named introductions, a defined transaction scope, and a reasonable "
-                    "duration. Do not use it to prevent customers from exercising refunds or contacting "
-                    "a venue about admission problems. Set liability allocation against realistic loss "
-                    "channels, including duplicate listings, rejected credentials, lost shipments, and "
-                    "supplier nonpayment. A negotiated cap should identify its measurement period and "
-                    "appropriate exclusions; statutory remedies and unenforceable limitations cannot "
-                    "be erased by labeling a clause exclusive. Allocate replacement-purchase authority "
-                    "before an event, not during a customer escalation."
+                    "Separate merchandise price, processing fees, shipping charges, and reward "
+                    "expectations. A group owes only amounts supported by its agreement; it "
+                    "does not automatically insure a card issuer's rewards or a portal's tracking "
+                    "failure. Write the payment trigger as an observable event: 'Payment is due "
+                    "five business days after documented acceptance; Buyer supplies itemized "
+                    "discrepancies within two business days of receipt.' That is a proposed "
+                    "clause, not a representation of any group's current Net-3 or Net-5 terms. "
+                    "Distinguish ACH initiation from cleared, usable funds, and define treatment "
+                    "of returns or reversals. Allocate title and transit risk expressly because "
+                    "UCC sections 2-401 and 2-509 address different questions. For ten units "
+                    "costing $1,000 each, a $10,200 commitment produces only $200 before shipping, "
+                    "fees, returns, and other expenses. If insured shipping costs $80 and "
+                    "expected losses cost $40, merchandise contribution is $120. A separate "
+                    "eligible 2% card reward adds $200 only when earned; the contract should "
+                    "not present that contingent reward as buyer consideration. Require "
+                    "signature delivery, serial capture, declared-value eligibility, packaging "
+                    "evidence, and a named claim filer. Carrier recovery deadlines must remain "
+                    "shorter than your evidence-retention and escalation deadlines."
                 ),
                 (
-                    "The dispute clause should name governing law, forum, notice addresses, evidence "
-                    "exchange, and an escalation timetable; use arbitration only when suitable for the "
-                    "parties and applicable consumer requirements. UCC §2-719 permits specified contractual "
-                    "remedy arrangements but also addresses limitations that fail their essential purpose "
-                    "and unconscionable consequential-damage exclusions. Preserve invoice, inspection, "
-                    "and transfer records even when a marketplace controls the first dispute channel. "
-                    "For software and account-management work, distinguish customer-owned source documents "
-                    "from reusable operator templates and licensed third-party material. Give customers "
-                    "exports of their inventory and transaction history, define retention and deletion "
-                    "periods, and restrict access to payment credentials and guest identifiers. Never "
-                    "promise ownership of a platform account or privileged badge that platform terms "
-                    "make personal or nontransferable. State who can approve public corrections, listing "
-                    "changes, and spending commitments, with a written dollar ceiling. On termination, "
-                    "revoke access tokens, return customer records, settle outstanding transfers, and "
-                    "stop using customer branding. Maintain a clause checklist attached to each signed "
-                    "agreement so staff can execute the commercial terms without interpreting an entire "
-                    "contract during a payment delay, venue incident, or disputed delivery."
+                    "Use balanced liability allocation instead of an impressive cap that "
+                    "silently destroys the purchase obligation. Distinguish unpaid merchandise "
+                    "price from damages subject to a cap, and address fraud, deliberate "
+                    "misconduct, confidentiality breaches, and nonwaivable statutory rights "
+                    "expressly. UCC section 2-719 permits certain remedy limitations but also "
+                    "addresses remedies that fail their essential purpose. A dispute clause "
+                    "should name governing law, venue or arbitration rules, notice method, "
+                    "escalation contact, and allocation of filing costs. Require a disputed "
+                    "invoice to identify affected serial numbers while undisputed amounts remain "
+                    "payable. An anti-circumvention clause should protect specifically introduced "
+                    "commercial relationships for a defined period, with documented introductions "
+                    "and reasonable scope; it should not prohibit ordinary retailer access or "
+                    "disguise control over a platform account. Separate reusable reconciliation "
+                    "code from customer-owned invoices and order exports. Grant only the "
+                    "processing rights needed to perform the contract, define retention and "
+                    "deletion, and prohibit sharing card credentials. For a separately contracted "
+                    "research service, state: 'Client owns delivered factual reports; Provider "
+                    "retains pre-existing tools; neither party receives ownership of third-party "
+                    "accounts or platform privileges.' Require written authorization for public "
+                    "submissions and keep a reversible draft stage before publishing anything "
+                    "under a customer's name."
                 ),
             ],
             "table": {
-                "caption": "Buying-Group, Ticket Brokerage, and Account-Service Clause Checklist",
+                "caption": "Seven-Clause Purchase and Service Contract Negotiation Checklist",
                 "headers": [
-                    "Clause requiring an explicit commercial decision",
-                    "Contract language objectives for the operator",
-                    "Transaction evidence supporting enforcement and collection",
-                    "Fallback when the counterparty rejects protection",
+                    "Clause and commercial objective",
+                    "Proposed operative drafting language",
+                    "Evidence required for enforcement",
+                    "Failure response and exposure limit",
                 ],
                 "rows": [
                     [
-                        "Scope, purchasing authority, and substitution restrictions define deliverables",
-                        "Name exact products, entitlements, quantities, destinations, and spending ceilings",
-                        "Signed purchase order plus dated authorized change instructions",
-                        "Reduce order size and decline undocumented product substitutions",
+                        "Scope fixes merchandise identity and the binding quantity ceiling.",
+                        "Buyer commits only to listed SKUs, condition, quantities, and destinations.",
+                        "Attach deal exports, accepted terms, timestamps, and product identifiers.",
+                        "Cancel uncommitted quantities before retailer cancellation rights expire.",
                     ],
                     [
-                        "Acceptance and payment triggers define Net-3 or Net-5",
-                        "Specify inspection deadline, objection evidence, and ACH initiation timing",
-                        "Delivery signature, acceptance timestamp, bank reference, and due-date calculation",
-                        "Stop additional commitments until overdue undisputed balances are settled",
+                        "Price and fee trigger separate obligations from contingent rewards.",
+                        "Payment follows documented acceptance; deductions require an itemized contractual basis.",
+                        "Retain agreed prices, inspection results, and cleared settlement confirmations.",
+                        "Exclude unearned portal rewards from buyer invoice collection demands.",
                     ],
                     [
-                        "Fee triggers and cancellations distinguish brokerage from ownership",
-                        "Tie earned fees to defined deliverables and refund conditions",
-                        "Completed transfer confirmation and customer acceptance of disclosed charges",
-                        "Use smaller milestone payments with explicit cancellation accounting",
+                        "Transit allocation identifies the party bearing each loss window.",
+                        "State title transfer, transit risk, insurance responsibility, and claim cooperation.",
+                        "Capture serial photographs, packaging evidence, signatures, and carrier terms.",
+                        "Suspend shipments when declared-value exclusions leave losses materially uninsured.",
                     ],
                     [
-                        "Anti-circumvention protection covers specific introduced counterparties and transactions",
-                        "Limit restricted conduct by named relationships, scope, and duration",
-                        "Introduction email, opportunity description, and dated customer acknowledgment",
-                        "Price introductions separately instead of demanding sweeping exclusivity",
+                        "Liability provisions preserve collection of the agreed purchase price.",
+                        "Define capped damages separately from payment obligations and negotiated exceptions.",
+                        "Keep signed remedy terms and documented insurance coverage limits.",
+                        "Reduce order size when remedies cannot support probable loss recovery.",
                     ],
                     [
-                        "Liability limits and insurance address identifiable loss channels",
-                        "Allocate custody risk, replacement authority, caps, and appropriate exclusions",
-                        "Insurance endorsements, packing records, claims procedures, and transfer logs",
-                        "Lower exposure per shipment or require stronger counterparty coverage",
+                        "Dispute resolution creates an affordable route to recover receivables.",
+                        "Identify law, forum, notices, escalation timing, and undisputed payment treatment.",
+                        "Maintain notices, reconciliation schedules, correspondence, and serial-level dispute evidence.",
+                        "Stop new commitments while overdue undisputed balances remain unresolved.",
                     ],
                     [
-                        "Dispute resolution identifies law, venue, notice, and escalation",
-                        "Preserve applicable remedies and define practical evidence exchange deadlines",
-                        "Signed agreement, notice delivery evidence, and complete transaction chronology",
-                        "Shorten credit terms when collection procedures remain commercially weak",
+                        "Anti-circumvention protects documented introductions without capturing ordinary platform access.",
+                        "Limit covered introductions, duration, prohibited conduct, and available remedies.",
+                        "Record each introduced relationship and both parties' acknowledgment dates.",
+                        "Remove restrictions that conflict with existing relationships or platform rules.",
                     ],
                     [
-                        "Intellectual property and information rights survive service termination",
-                        "Separate customer records from reusable templates and restricted credentials",
-                        "Access register, export format, retention schedule, and deletion record",
-                        "Deliver reports without accepting unnecessary account administration privileges",
+                        "IP and record ownership preserve portability without transferring accounts.",
+                        "Client owns delivered records; provider retains tools and restricted processing rights.",
+                        "List licensed materials, access permissions, retention periods, and deletion procedures.",
+                        "Revoke delegated access without transferring passwords or account ownership.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the small spread before negotiating a larger allocation",
-                "body": "Experienced operators negotiate evidence, timing, and recovery rights before increasing purchase volume.",
+                "title": "Protect the small spread before increasing throughput",
+                "body": "A precise exception log and narrow contract scope outperform a larger advertised credit limit.",
                 "items": [
-                    "Send a small insured pilot shipment to each new buying group and reconcile actual acceptance-to-cash timing before raising exposure.",
-                    "Store the signed purchase commitment beside the card transaction so an issuer review can be answered without reconstructing the deal.",
-                    "Obtain an insurance endorsement covering the actual merchandise and shipping route; verify exclusions for unattended delivery and high-value electronics.",
-                    "Preauthorize ticket markdowns by event date and net payout, and check every exchange for stale duplicate inventory after a sale.",
+                    "Save the deal page and accepted terms together before checkout; a later screenshot cannot prove the price or warehouse instructions in force when you committed.",
+                    "Track arrival, inspection, acceptance, ACH initiation, and cleared cash as separate timestamps; calculate counterparty aging from the contractual trigger rather than the first convenient scan.",
+                    "Test one fully insured, low-value shipment through each new warehouse and reconcile serial-level exceptions before allocating a larger exposure limit.",
+                    "Negotiate payment of undisputed units separately from damaged-unit claims so one parcel problem does not immobilize the entire statement repayment reserve.",
                 ],
             },
         },
         {
-            "heading": "3. Map eleven operating plays without confusing retained spread, trust, and customer cash",
+            "heading": "3. Reconcile eleven plays without turning card debt into earnings",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "The chapter's eleven-play operating map consists of committed buying-group fulfillment, "
-                    "buying-group counterparty diversification, card-rebate capture, statement-cycle scheduling, "
-                    "insured shipment recovery, lawful ticket acquisition, multi-exchange inventory control, "
-                    "pre-event markdown execution, corporate-suite brokerage, seat-license transfer coordination, "
-                    "and platform_privilege_tier_account_arbitrage. These are operational workstreams, not "
-                    "eleven independent profit forecasts. Keep the Formula v2.0 cases fixed: $250,000 gross "
-                    "activity times 35% yields $87,500 retained revenue; subtract $67,500 modeled costs "
-                    "after retention to obtain $20,000 owner profit. Base activity of $1,025,000 produces "
-                    "$358,750 retained revenue and $143,500 profit after $215,250 costs. Scaled activity "
-                    "of $1,800,000 produces $630,000 retained revenue and $360,000 profit after $270,000 "
-                    "costs. Profit divided by gross activity equals 8%, 14.0%, and 20%; divided by retained "
-                    "revenue it equals 22.86%, 40.0%, and 57.14%, rounded. The modeled retained share is "
-                    "an economic presentation constraint, not an automatic ASC 606 principal-agent conclusion "
-                    "for every contract. Assess actual accounting by transaction type. Do not add illustrative "
-                    "play margins to these totals or treat loan principal, customer reimbursements, or "
-                    "underlying venue sales as additional retained operator revenue."
+                    "For this chapter's eleven-play operating map, distinguish wholesale "
+                    "commitment execution, destination and resale-document routing, insured "
+                    "fulfillment, commercial card rewards, Rakuten tracking, TopCashback tracking, "
+                    "card-linked offers, Plastiq or Melio invoice economics, Treasury-bill sweeps, "
+                    "bank bonuses, and the supplied adjacent play "
+                    "platform_privilege_tier_account_arbitrage. These are chapter-level workstreams, "
+                    "not eleven newly asserted catalog identifiers. Never merge their eligibility "
+                    "tests or assume rewards stack. In the wholesale example, $10,200 collected "
+                    "less $10,000 merchandise, $80 shipping, and $40 expected loss leaves $120. "
+                    "A qualifying 2% card reward adds $200; a hypothetical eligible 1% portal "
+                    "reward adds $100. Total contribution becomes $420 only if both rewards "
+                    "survive exclusions and returns. A $50 card-linked offer raises that to "
+                    "$470 only when stacking is explicitly permitted. Route a purchase through "
+                    "either Rakuten or TopCashback according to the applicable terms rather "
+                    "than counting both. Failure fallback is the documented merchandise spread, "
+                    "not an assumed replacement portal payout. For a $10,000 invoice with a "
+                    "hypothetical 2.9% service fee, cost is $290. A reward of $200 on an eligible "
+                    "$10,000 base leaves a $90 loss before interest. Reject that invoice route "
+                    "unless separately verified economics overcome the loss."
                 ),
                 (
-                    "Execute the first ten workstreams as linked controls. The $12,000 committed purchase "
-                    "example retains $390 after the stated rebate and freight, but loses that advantage "
-                    "if the buyer defaults. Splitting $12,000 of commitments into three independently "
-                    "vetted $4,000 counterparties reduces single-name exposure without eliminating correlated "
-                    "delays. At 2%, each eligible $4,000 purchase earns $80; recognize the reward only "
-                    "under the selected accounting policy and actual issuer terms. A thirty-day reimbursement "
-                    "delay on $12,000 at an illustrative 24% annual borrowing rate costs approximately "
-                    "$236.71 using a 365-day basis, consuming most of the $390 cushion. Insurance "
-                    "recovers only covered losses, less the deductible, and never replaces acceptance "
-                    "evidence. For lawful ticket inventory, ten admissions costing $120 each and sold "
-                    "for $170 each through a channel charging an illustrative 15% seller fee yield "
-                    "$1,445 before other costs, or $245 above basis. At a $130 markdown, proceeds "
-                    "fall to $1,105 and the position loses $95. Use synchronized quantity controls "
-                    "and preset markdown dates. A $600 suite fee and a $300 authorized seat-license "
-                    "coordination fee remain service economics; venue charges stay separately tracked."
+                    "Treat fifty-five days as a possible maximum statement-timing interval, "
+                    "not an entitlement attached to every charge. Actual usable float depends "
+                    "on posting date, closing date, due date, grace-period eligibility, and "
+                    "settlement delays. A fully available $10,000 balance earning a hypothetical "
+                    "4% simple annual rate for fifty-five days produces approximately $60.27 "
+                    "before tax and costs, not $10,060.27 of operating profit. Even combined "
+                    "with that idealized yield, the preceding $90 invoice loss remains a "
+                    "$29.73 loss. If the usable interval is twenty days, yield falls to "
+                    "approximately $21.92. Schedule Treasury maturities and bank transfers "
+                    "before card payment deadlines, allowing business-day settlement buffers; "
+                    "selling a bill early introduces market-price and processing risk. Stress "
+                    "a commitment accepted on day ten, promised ACH on day fifteen, actual "
+                    "cash on day twenty-nine, and a card due date on day twenty-five. The "
+                    "operator needs the entire repayment amount from independent unrestricted "
+                    "cash during the gap. A $300 bank bonus requiring $20,000 held for ninety "
+                    "days competes with approximately $197.26 of interest at 4%, leaving "
+                    "$102.74 before account fees and tax differences. Count the deposit as "
+                    "restricted deployment capacity, never bonus revenue."
                 ),
                 (
-                    "For platform_privilege_tier_account_arbitrage, retain the TRACK_2 identifier but sell "
-                    "documented research and permitted account stewardship, not transferable authority or "
-                    "covert influence. Google Local Guides levels, Wikipedia confirmation status, Product "
-                    "Hunt participation, and verified-review labels do not prove a predictable ranking "
-                    "advantage. Platform terms can prohibit commercial participation, account transfers, "
-                    "incentivized reviews, or particular editing workflows. Wikipedia paid contributions "
-                    "require the applicable Wikimedia disclosure and conflict-of-interest practices; disputed "
-                    "changes belong in transparent discussion rather than concealed client editing. FTC "
-                    "16 CFR Part 465 prohibits specified deceptive review practices, while 16 CFR Part "
-                    "255 explains material-connection disclosure principles for endorsements. Never offer "
-                    "a purchased favorable review, fabricated customer experience, or guaranteed map "
-                    "ranking. An illustrative $1,200 monthly research retainer less eight hours at $60 "
-                    "and $120 of tools leaves $600 before overhead; three authorized clients yield "
-                    "$3,600 billings and $1,800 contribution before overhead, outside the canonical "
-                    "volume forecast unless explicitly substituted. Submit only factually verifiable, "
-                    "secondary-source-backed edits and keep Local Guide accounts strictly locked to "
-                    "their native metropolitan areas. When participation rules prohibit the work, deliver "
-                    "a sourced correction dossier for the customer's permitted channel instead."
+                    "Preserve the canonical scorecard without treating its retained-share "
+                    "assumption as a universal accounting rule. Conservative gross basis is "
+                    "$250,000, retained contribution is $87,500 at 35%, and owner profit is "
+                    "$20,000: 8% of gross or approximately 22.86% of retained contribution. "
+                    "Base is $1,025,000 gross, $358,750 retained, and $143,500 profit: 14.0% "
+                    "and 40.0%, respectively. Scaled is $1,800,000 gross, $630,000 retained, "
+                    "and $360,000 profit: 20% and approximately 57.14%. Implied costs after "
+                    "the retained contribution step are $67,500, $215,250, and $270,000. "
+                    "These residuals include all remaining modeled costs; do not label them "
+                    "solely monthly overhead or invent an allocation unsupported by the "
+                    "scorecard. Principal-versus-agent presentation under ASC 606 depends on "
+                    "control and contractual facts; interest and rewards also require their "
+                    "own classification. The fixed 35% bridge is the supplied planning "
+                    "convention, not permission to net every reimbursement automatically. "
+                    "Underlying merchant sales and card borrowing are not additional recognized "
+                    "operator revenue. Keep the separate reputation-service illustration outside "
+                    "these annual cases. Start within the stated $10,000–$55,000 capital range "
+                    "only when order sizing, reserves, and repayment stress fit actual cash. "
+                    "Staffing remains 1 FT plus 2 contractors for Conservative and Base, "
+                    "and 2 FT plus 3 contractors for Scaled."
                 ),
             ],
             "table": {
-                "caption": "Eleven-Play Economics, Authority Boundaries, and Downside Fallbacks",
+                "caption": "Eleven-Play Coverage Across Seven Distinct Economic Control Rows",
                 "headers": [
-                    "Mapped operating plays sharing one control",
-                    "Concrete illustrative unit economics before overhead",
-                    "Authority or evidence required before execution",
-                    "Fallback protecting cash and transaction integrity",
+                    "Mapped workstreams and operating perimeter",
+                    "Concrete unit economics and recognition",
+                    "Contract or eligibility evidence required",
+                    "Risk fallback when assumptions fail",
                 ],
                 "rows": [
                     [
-                        "Committed buying-group fulfillment plus counterparty diversification across vetted buyers",
-                        "Three $4,000 commitments limit individual exposure within $12,000",
-                        "Separate signed orders and verified payment histories for buyers",
-                        "Freeze delayed counterparties and reduce remaining open purchase commitments",
+                        "Play one covers precommitted wholesale buying-group merchandise fulfillment.",
+                        "Collect $10,200 against $10,000 goods before separately measured expenses.",
+                        "Obtain binding quantity, price, acceptance, and settlement trigger records.",
+                        "Reduce exposure when cancellation rights undermine the purchase commitment.",
                     ],
                     [
-                        "Card-rebate capture plus statement-cycle scheduling under issuer terms",
-                        "Eligible $4,000 purchase earns $80 at a 2% rate",
-                        "Current rewards eligibility and actual statement payment due date",
-                        "Pay from reserved cash when reimbursement or rewards arrive late",
+                        "Plays two and three cover tax routing and insured fulfillment.",
+                        "Deduct $80 shipping and $40 expected losses, leaving $120.",
+                        "Retain destination evidence, applicable certificates, serial photographs, and insurance terms.",
+                        "Reserve hypothetical $700 destination tax or reject the changed order.",
                     ],
                     [
-                        "Insured shipment recovery supports high-value wholesale purchase commitments",
-                        "$90 insured freight reduces a $480 spread to $390",
-                        "Covered commodities, named beneficiary, deductible, and documented chain of custody",
-                        "Retain uncovered-loss reserves and lower shipment value per package",
+                        "Play four covers issuer-permitted commercial card reward earnings.",
+                        "Earn hypothetical $200 rewards on an eligible $10,000 purchase.",
+                        "Verify commercial eligibility, purchase coding, reward caps, and reversal provisions.",
+                        "Underwrite merchandise without rewards when issuer eligibility remains unresolved.",
                     ],
                     [
-                        "Lawful ticket acquisition plus multi-exchange inventory control prevent overselling",
-                        "Ten $170 sales less 15% fees yield $1,445",
-                        "Lawful acquisition proof and synchronized transferable inventory quantities",
-                        "Delist disputed inventory and reconcile every channel before relisting",
+                        "Plays five through seven cover alternative portals and card offers.",
+                        "Add hypothetical $100 portal rewards and $50 offer value once.",
+                        "Save Rakuten or TopCashback terms plus separate card-offer eligibility.",
+                        "Assume zero contingent reward after tracking failure or stacking exclusion.",
                     ],
                     [
-                        "Pre-event markdown execution contains unsold ticket price decay",
-                        "Ten $130 sales yield $1,105 against $1,200 basis",
-                        "Written markdown authority with fee-adjusted minimum recovery calculations",
-                        "Accept the defined $95 loss instead of inventing demand",
+                        "Play eight covers genuine Plastiq or Melio invoice payment routing.",
+                        "Subtract $290 illustrative fees from $200 rewards, losing $90.",
+                        "Confirm current fee quote, supported invoice category, and eligible reward base.",
+                        "Use lower-cost direct payment when verified benefits cannot cover fees.",
                     ],
                     [
-                        "Corporate-suite brokerage plus seat-license transfer coordination separate service fees",
-                        "$600 suite fee plus $300 coordination fee equals $900",
-                        "Venue permission and contracts distinguishing services from underlying rights",
-                        "Refund unearned fees when required transfers cannot be completed",
+                        "Plays nine and ten cover Treasury sweeps and bank bonuses.",
+                        "Separate $60.27 illustrative float yield from $102.74 bonus opportunity surplus.",
+                        "Verify maturity dates, transfer timing, promotion conditions, and reserve availability.",
+                        "Keep repayment cash liquid when maturity or holding periods conflict.",
                     ],
                     [
-                        "platform_privilege_tier_account_arbitrage permits evidence-led services rather than covert influence",
-                        "$1,200 retainer less $480 labor and $120 tools leaves $600",
-                        "Platform permission, truthful sourcing, and applicable paid-relationship disclosures",
-                        "Deliver correction dossiers when direct platform participation is restricted",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Use truthful discovery scripts and run a documented exception response",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For buying-group outreach, use a direct commercial email: 'Hello Morgan, I operate "
-                    "a small wholesale purchasing desk. Can your purchasing team issue a written commitment "
-                    "for the exact SKU, quantity, reimbursement price, receiving address, and acceptance "
-                    "deadline before we buy? For an initial $4,000 order, we need the payment clock "
-                    "stated as business days after a defined acceptance event. Please identify the "
-                    "contracting entity, authorized signer, rejection evidence, and ACH remittance contact. "
-                    "We will provide insured shipment records and serial-number evidence. This is a "
-                    "commercial purchasing inquiry. Our mailing address appears in the signature; reply "
-                    "stop to receive no further commercial emails.' Replace the address reference with "
-                    "the sender's actual valid postal address before sending. Under 15 U.S.C. §7704, "
-                    "commercial email needs accurate routing information, nondeceptive subjects, required "
-                    "identification, a working opt-out mechanism, and timely suppression; business recipients "
-                    "are not categorically exempt. Discovery continues: 'Does your inspection window begin "
-                    "at carrier delivery or warehouse check-in? Who pays return freight for an unsupported "
-                    "rejection? Which invoices are currently overdue?' A vague answer does not earn "
-                    "larger credit; offer a smaller prepaid pilot or decline."
-                ),
-                (
-                    "For corporate allocations, say: 'Hello Jordan, we coordinate documented suite and "
-                    "ticket transfers for named events. What date, venue, guest count, accessibility "
-                    "requirements, and complete delivered budget should we evaluate? We will identify "
-                    "the seller, transfer restrictions, mandatory charges, cancellation treatment, and "
-                    "our service fee before you commit. We do not represent venue affiliation unless "
-                    "we hold that authority. May we send one itemized proposal to your business email?' "
-                    "Follow with: 'Who approves guest substitutions, and when must mobile credentials "
-                    "be accepted? Are catering, parking, or a seat license actually included?' Never "
-                    "advertise a low admission figure while burying unavoidable charges in a later "
-                    "message. For platform research, use: 'We offer source-backed corrections and account "
-                    "stewardship where platform rules permit. We do not sell badges, reviews, or undisclosed "
-                    "editorial placement. Which inaccurate statement can you substantiate with independent "
-                    "sources, and who can authorize disclosure of our paid relationship?' Telephone and "
-                    "text outreach require a separate analysis under 47 U.S.C. §227, 47 CFR §64.1200, "
-                    "and applicable state rules. Do not infer permission for automated calls or marketing "
-                    "texts from a published number, a purchased list, or an email conversation."
-                ),
-                (
-                    "Run every inquiry through a four-step evidence workflow before expanding exposure. "
-                    "First classify the activity and jurisdictions; second confirm authority and sign "
-                    "the correct agreement; third execute with inventory, cash, and transfer controls; "
-                    "fourth reconcile and preserve the resulting records. When a buying group misses "
-                    "Net-5, send a factual notice: 'Invoice 184 for $4,000 became due on the agreed "
-                    "date. Attached are delivery and acceptance records. Please provide the ACH trace "
-                    "and settlement date today; additional commitments are paused pending resolution.' "
-                    "Do not count the promised transfer as available cash. When issuer review interrupts "
-                    "purchasing, stop new spend, assemble genuine invoices, and use reserved funds for "
-                    "existing obligations rather than opening substitute identities. When ticket prices "
-                    "decay, apply the documented fee-adjusted markdown curve and report the realized loss "
-                    "without offsetting it against hypothetical future rebates. Keep outreach suppression "
-                    "records separate from sales opportunity status so deleting a lead does not restore "
-                    "contact eligibility. Review exceptions weekly with the owner and the responsible "
-                    "contractor. Escalate repeated shipping disputes, unexplained supplier inventory, "
-                    "and account-access requests before the next order; a resolved individual incident "
-                    "does not automatically justify a higher counterparty limit."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach, Discovery, and Exception-Handling Script Matrix",
-                "headers": [
-                    "Situation requiring a specific customer-facing statement",
-                    "Verbatim language suitable for the stated context",
-                    "Evidence or answer the operator must capture",
-                    "Action when the requested evidence is missing",
-                ],
-                "rows": [
-                    [
-                        "First contact with a wholesale buying-group purchasing desk",
-                        "Please confirm the exact SKU, reimbursement price, and acceptance deadline.",
-                        "Signed commitment identifying the purchasing entity and authorized signer",
-                        "Offer a small prepaid pilot rather than extending unsecured exposure",
-                    ],
-                    [
-                        "Discovery of ambiguous Net-3 or Net-5 reimbursement timing",
-                        "Which recorded event starts your business-day payment clock?",
-                        "Contract definition linking acceptance evidence to an objective due date",
-                        "Reject timing language that depends on undocumented internal processing",
-                    ],
-                    [
-                        "Discovery before quoting a corporate suite allocation package",
-                        "What is your complete delivered budget, including every mandatory charge?",
-                        "Named event, guest count, budget, restrictions, and customer decision authority",
-                        "Provide an itemized permitted alternative instead of concealing mandatory fees",
-                    ],
-                    [
-                        "Supplier offers discounted tickets without original acquisition evidence",
-                        "Please provide original confirmations and your lawful acquisition representation.",
-                        "Traceable purchase history and documented permission to transfer inventory",
-                        "Decline the allocation and preserve the supplier's written explanation",
-                    ],
-                    [
-                        "Prospect requests privileged-account influence or undisclosed paid placement",
-                        "We deliver sourced corrections, not badges or undisclosed editorial placement.",
-                        "Independent source material and permission for a permitted transparent workflow",
-                        "Offer a research dossier without direct account intervention",
-                    ],
-                    [
-                        "Recipient requests an end to commercial outreach messages",
-                        "Your request is recorded; we will stop commercial follow-up.",
-                        "Timestamped suppression entry synchronized across outbound contact systems",
-                        "Suppress immediately operationally and repair any failed synchronization",
-                    ],
-                    [
-                        "Buying-group reimbursement exceeds the documented payment due date",
-                        "Please provide the ACH trace; additional purchase commitments are paused.",
-                        "Invoice, acceptance proof, due date, and bank settlement evidence",
-                        "Reserve card repayment cash and begin the contractual collection process",
+                        "Play eleven covers platform_privilege_tier_account_arbitrage only as permitted research service.",
+                        "Bill $600 for factual research; deduct $300 labor, retaining $300.",
+                        "Require disclosed affiliations, factual evidence, client authorization, and platform permission.",
+                        "Deliver private research when publication, account transfer, or influence selling conflicts.",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Classify the transaction and applicable jurisdictions",
-                    "action": "Identify owned inventory, disclosed agency, service work, or restricted entitlement coordination.",
-                    "detail": "Record seller, buyer, venue, delivery destination, official authority sources, and required registrations before preparing the quote.",
+                    "title": "Build the transaction evidence packet",
+                    "action": "Link the purchase commitment, tax treatment, issuer terms, and portal eligibility to one order identifier.",
+                    "detail": "Record each document version and distinguish proposed terms from terms actually accepted by the counterparty.",
                 },
                 {
                     "step": 2,
-                    "title": "Verify authority and execute the correct agreement",
-                    "action": "Obtain signed commitments, lawful sourcing evidence, transfer permission, and exact fee triggers.",
-                    "detail": "Attach inspection timing, risk allocation, cancellation treatment, information rights, and a counterparty exposure ceiling to the transaction file.",
+                    "title": "Calculate separate contribution waterfalls",
+                    "action": "Calculate merchandise spread, earned rewards, payment fees, and treasury income in separate ledger classes.",
+                    "detail": "Recognize a benefit once, exclude borrowing principal, and retain a zero-reward downside case for every order.",
                 },
                 {
                     "step": 3,
-                    "title": "Execute within funded cash and inventory limits",
-                    "action": "Match purchases to available repayment reserves and synchronize every active ticket listing.",
-                    "detail": "Use insured delivery, actual statement dates, documented customer authority, and pre-event fee-adjusted markdown instructions.",
+                    "title": "Stress settlement against repayment",
+                    "action": "Delay buying-group cash fourteen days, freeze portal payouts, and add one insured-loss deductible.",
+                    "detail": "Compare unrestricted cash with the full statement obligation and transfer buffers; reduce commitments until repayment remains covered.",
                 },
                 {
                     "step": 4,
-                    "title": "Reconcile collections and preserve exception evidence",
-                    "action": "Match ACH receipts, card postings, rewards, refunds, and marketplace settlements to individual commitments.",
-                    "detail": "Separate gross activity from retained contribution, update exposure limits, maintain outreach suppression, and retain records under the documented schedule.",
+                    "title": "Close cash and tax records",
+                    "action": "Reconcile accepted units, cleared ACH, card balances, rewards, bank income, and processor reporting.",
+                    "detail": "Map results to the canonical gross-to-retained bridge without replacing transaction-specific accounting or double-counting purchase price adjustments.",
                 },
             ],
         },
+        {
+            "heading": "4. Use truthful discovery scripts and sell documented work rather than influence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use this buying-group discovery script verbatim: 'We purchase specified "
+                    "electronics for our own resale and want to evaluate your warehouse "
+                    "fulfillment program. Which legal entity purchases the goods, when does "
+                    "a reservation become binding, and which event starts payment timing? "
+                    "Please provide the current agreement, inspection window, deduction rules, "
+                    "and procedure for serial-number disputes. We will begin with one insured "
+                    "shipment and increase volume only after cleared settlement.' This asks "
+                    "for operational evidence without claiming a relationship that does not "
+                    "exist. For an issuer, say: 'Our business buys inventory for resale and "
+                    "repays from documented business funds. Does this product permit that "
+                    "activity, how are rewards calculated, and which transaction patterns "
+                    "require advance documentation? We will stay within approved limits and "
+                    "will not use consumer accounts or circular payments.' Obtain the "
+                    "applicable written terms rather than relying solely on a representative's "
+                    "general reassurance. For a payment provider, say: 'This is our genuine "
+                    "supplier invoice. Confirm that the supplier category and funding card "
+                    "are supported, disclose the total fee, and identify expected delivery "
+                    "timing. We will not collect money for unrelated parties.' Stop onboarding "
+                    "when entity names, settlement instructions, or documentation do not "
+                    "reconcile. A smaller verified counterparty allocation is preferable "
+                    "to a larger uncollectible commitment."
+                ),
+                (
+                    "Commercial email is subject to CAN-SPAM, including business-to-business "
+                    "messages. Under 15 U.S.C. 7704, use accurate routing information and "
+                    "nondeceptive subject lines, supply a valid postal address and functioning "
+                    "opt-out, identify advertising where required, and honor opt-outs within "
+                    "ten business days. Build suppression into the CRM before importing "
+                    "prospects, including contacts supplied by contractors. A usable "
+                    "first-touch script is: 'Subject: Wholesale settlement terms for "
+                    "electronics purchases. This is a commercial inquiry from our purchasing "
+                    "business. We are evaluating documented purchase commitments for insured "
+                    "warehouse deliveries. Could you direct us to the person responsible "
+                    "for accepted-unit reconciliation and ACH settlement? Reply stop to "
+                    "end marketing messages.' Append the sender's actual business identity "
+                    "and valid postal address through validated mail-merge fields, not "
+                    "fabricated examples. For calls and texts, evaluate the technology, "
+                    "recipient number, purpose, consent, and federal and state restrictions. "
+                    "The TCPA, 47 U.S.C. 227, and 47 CFR 64.1200 impose distinct rules for "
+                    "autodialed or prerecorded communications and solicitation practices. "
+                    "Do not assume a business contact's mobile number is exempt. Use "
+                    "manually researched, relevant business email first; request an agreed "
+                    "call time, avoid prerecorded marketing, and suppress a contact across "
+                    "channels when they withdraw permission."
+                ),
+                (
+                    "The supplied platform_privilege_tier_account_arbitrage play needs a "
+                    "narrow service definition, not a promise that account status purchases "
+                    "ranking power. Google Local Guides levels 6–10, Wikipedia "
+                    "Autoconfirmed or Extended-Confirmed status, Product Hunt participation, "
+                    "and G2, Capterra, or Trustpilot reviewer eligibility do not establish "
+                    "saleable ownership of audience trust. Apply each platform's current "
+                    "terms independently. Do not transfer accounts, sell undisclosed "
+                    "endorsements, fabricate experience, or condition compensation on "
+                    "positive sentiment. The FTC's 16 CFR Part 465 addresses fake reviews "
+                    "and specified deceptive review practices; 16 CFR Part 255 addresses "
+                    "endorsement representations and material connections. Wikipedia's "
+                    "paid-contribution disclosure obligations arise from platform rules, "
+                    "not a federal editing license. Offer documented research instead: "
+                    "'For $600, we will investigate factual listing discrepancies, provide "
+                    "secondary-source evidence, and prepare permitted correction requests. "
+                    "We disclose commercial relationships and promise neither publication "
+                    "nor ranking changes. You receive the research even when a platform "
+                    "declines a correction.' At six hours costing $50 each, contribution "
+                    "is $300 before other expenses. Submit only verifiable, secondary-source-backed "
+                    "edits; keep Local Guide activity within the operator's native "
+                    "metropolitan area and decline paid edits where platform policy "
+                    "prohibits them. The fallback is a private evidence report, with "
+                    "no platform credentials transferred."
+                ),
+            ],
+            "table": {
+                "caption": "Seven Verbatim Discovery and Outreach Scripts With Evidence-Based Fallbacks",
+                "headers": [
+                    "Recipient and permitted commercial purpose",
+                    "Verbatim script for direct operator use",
+                    "Evidence or response the operator needs",
+                    "Fallback after refusal or unresolved terms",
+                ],
+                "rows": [
+                    [
+                        "Buying-group operator discussing a first limited wholesale commitment.",
+                        "'Please identify the purchasing entity, binding quantity, inspection deadline, and cleared-payment schedule.'",
+                        "Receive the current agreement and a traceable commitment acceptance.",
+                        "Do not purchase until price and counterparty obligations are documented.",
+                    ],
+                    [
+                        "Warehouse manager confirming serial-level receiving and damage procedures.",
+                        "'Who records serial numbers, photographs damage, and signs carrier delivery exceptions?'",
+                        "Obtain receiving procedures, escalation contacts, and example discrepancy records.",
+                        "Use a smaller insured shipment or a different verified destination.",
+                    ],
+                    [
+                        "Commercial issuer evaluating disclosed inventory resale and repayment activity.",
+                        "'Does this business card permit our inventory resale purchases and documented early repayments?'",
+                        "Obtain applicable written issuer terms and any account-specific restrictions.",
+                        "Use supported funding rather than disguising purchase purpose or volume.",
+                    ],
+                    [
+                        "Portal support clarifying merchant resale exclusions and offer stacking.",
+                        "'Does this merchant offer permit resale purchases and combination with this card-linked offer?'",
+                        "Retain transaction-specific written clarification alongside the actual offer terms.",
+                        "Model zero portal rewards when eligibility cannot be established.",
+                    ],
+                    [
+                        "Payment provider confirming a genuine supplier invoice funding route.",
+                        "'Please confirm supplier eligibility, total fees, delivery timing, and permitted card funding.'",
+                        "Capture the provider quote and supported transaction category before submission.",
+                        "Pay the supplier directly when the route fails eligibility or economics.",
+                    ],
+                    [
+                        "Business prospect receiving a clearly identified commercial email inquiry.",
+                        "'Could you identify your wholesale settlement contact? Reply stop to end marketing messages.'",
+                        "Include accurate sender identity, required disclosures, and valid postal address.",
+                        "Suppress declined contacts and never purchase replacement identities for outreach.",
+                    ],
+                    [
+                        "Research client requesting factual platform corrections without influence promises.",
+                        "'We sell documented factual research, disclose affiliations, and never promise rankings or account privileges.'",
+                        "Obtain scoped authorization and verify each platform's publication restrictions.",
+                        "Deliver the private evidence report when public submission is prohibited.",
+                    ],
+                ],
+            },
+        },
     ],
-    "pull_quote": "The spread is real only when the rights transfer lawfully, the buyer pays, and the card clears without rescue cash.",
+    "pull_quote": "A purchase commitment earns a spread only when accepted goods become cleared cash before the debt comes due.",
     "diagram_id": "diag-05",
     "action_checklist": [
-        "Create a jurisdiction register covering ticket licensing, total-price requirements, merchandise resale documentation, and venue transfer restrictions.",
-        "Replace informal buying-group messages with signed SKU-level commitments defining acceptance, Net-3/Net-5 timing, insured delivery, and rejection evidence.",
-        "Reconcile the three canonical cases to 35% retained revenue and preserve separate gross-basis and retained-basis profit margins.",
-        "Fund card settlement independently of buying-group promises and document eligibility for every claimed 2%–4% rebate.",
-        "Configure SkyBox or Automatiq inventory synchronization and dated markdown instructions without purchasing-control circumvention.",
-        "Deploy truthful email and discovery scripts, maintain suppression records, and offer platform research only through permitted transparent workflows.",
+        "Create separate merchandise, rewards, and treasury ledgers; prohibit recognition of card principal or unrelated merchant sales as operator revenue.",
+        "Build a destination-by-destination tax file with applicable registrations, completed resale certificates, invoices, warehouse evidence, and diversion controls.",
+        "Document each buying group's binding commitment, inspection clock, settlement trigger, transit risk, claim procedure, and dispute escalation contact.",
+        "Recalculate every card and invoice route using current eligibility terms, quoted fees, zero contingent rewards, and a fourteen-day ACH-delay stress.",
+        "Approve outreach templates with accurate sender details, a valid postal address, opt-out suppression, and channel-specific calling and texting checks.",
+        "Scope platform research as disclosed factual work, retain evidence and client authorization, and reject account transfers, fabricated reviews, and paid influence promises.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to ticket sales",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits covered ticket-control circumvention and specified sales of tickets obtained through that conduct.",
+            "title": "31 CFR 1010.100(ff)(5) — Money transmitter definition",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/section-1010.100",
+            "relevance": "Distinguishes own-account purchasing from accepting and transmitting value for others; exclusions and state requirements require separate analysis.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes covered live-event ticket total-price and related fee-disclosure requirements.",
+            "title": "15 U.S.C. 80b-2(a)(11) — Investment adviser definition",
+            "url": "https://www.law.cornell.edu/uscode/text/15/80b-2",
+            "relevance": "Marks a securities-service boundary when own-account treasury activity expands into compensated investment advice.",
         },
         {
-            "title": "New York Arts and Cultural Affairs Law §25.13 — Licensing of ticket resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": "Provides the primary state licensing provision used to assess covered ticket-resale operations and exceptions.",
+            "title": "15 U.S.C. 78o(a) — Broker and dealer registration",
+            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
+            "relevance": "Requires separate examination before arranging securities transactions for others rather than purchasing company-owned Treasury bills.",
         },
         {
-            "title": "California Civil Code §1770(a)(29) — Mandatory-charge price advertising",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1770.",
-            "relevance": "Addresses advertised prices that exclude mandatory fees or charges, subject to the statute's exceptions.",
+            "title": "California Revenue and Taxation Code sections 6091 and 6092 — Resale evidence",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6092.",
+            "relevance": "Provides a concrete state-law example of properly supported resale treatment rather than assuming a warehouse address establishes exemption.",
         },
         {
-            "title": "California Revenue and Taxation Code §6051 — Retail sales tax",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6051.",
-            "relevance": "Establishes the California retail sales-tax framework relevant to merchandise transactions.",
+            "title": "30 Del. C. Chapter 23 — Occupation and business licenses",
+            "url": "https://delcode.delaware.gov/title30/c023/index.html",
+            "relevance": "Shows that Delaware's lack of general sales tax does not eliminate covered business licensing and gross receipts obligations.",
         },
         {
-            "title": "California Revenue and Taxation Code §6091 — Presumption and resale documentation",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6091.",
-            "relevance": "Addresses the presumption of taxable retail sales and the role of qualifying resale certificates.",
+            "title": "Oregon Revised Statutes Chapter 317A — Corporate Activity Tax",
+            "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html",
+            "relevance": "Separates Oregon business activity taxation from the absence of a general retail sales tax.",
         },
         {
-            "title": "12 CFR §1026.3 — Exempt transactions under Regulation Z",
+            "title": "26 U.S.C. 6050W — Payment settlement reporting",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Supports tax-year-specific processor reporting checks and reconciliation of information returns to actual transaction records.",
+        },
+        {
+            "title": "26 U.S.C. 6001 — Required records and statements",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": "Supports retention of purchase, settlement, reward, basis, and refund evidence sufficient to substantiate return items.",
+        },
+        {
+            "title": "26 CFR 1.6001-1 — Records",
+            "url": "https://www.ecfr.gov/current/title-26/section-1.6001-1",
+            "relevance": "Provides implementing requirements for maintaining books and records supporting reported tax items.",
+        },
+        {
+            "title": "12 CFR 1026.3(a) — Business-purpose credit exemption",
             "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-A/section-1026.3",
-            "relevance": "Defines business-purpose credit exclusions and preserves specified card-related provisions.",
+            "relevance": "Explains why commercial credit terms must be evaluated without assuming the full consumer Regulation Z framework applies.",
         },
         {
-            "title": "15 U.S.C. §7704 — Requirements for transmission of commercial electronic mail",
+            "title": "6 Del. C. Article 2 — Sales",
+            "url": "https://delcode.delaware.gov/title6/c002/index.html",
+            "relevance": "Provides an enacted UCC example covering signed goods contracts, title, risk of loss, inspection, rejection, acceptance, and remedy limitations.",
+        },
+        {
+            "title": "15 U.S.C. 7001 — Electronic signatures and records",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7001",
+            "relevance": "Supports preserving electronic purchase commitments and accepted contract versions without treating electronic form as a substitute for agreement.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Commercial electronic mail requirements",
             "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs accurate commercial email headers, subjects, required identification, postal addresses, and opt-out handling.",
+            "relevance": "Governs accurate commercial email identification, postal addresses, opt-out mechanisms, and timely suppression, including business outreach.",
         },
         {
-            "title": "47 U.S.C. §227 — Restrictions on use of telephone equipment",
+            "title": "47 U.S.C. 227 — Telephone solicitation restrictions",
             "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Supplies the federal statutory framework for covered calling and messaging practices.",
+            "relevance": "Requires channel-specific assessment before using calling or texting technology to contact business prospects.",
         },
         {
-            "title": "47 CFR §64.1200 — Delivery restrictions",
+            "title": "47 CFR 64.1200 — Telephone solicitation and consent rules",
             "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Implements federal calling, messaging, identification, and do-not-call requirements within its scope.",
+            "relevance": "Provides detailed restrictions relevant to automated or prerecorded outreach, solicitation practices, consent, and suppression.",
         },
         {
-            "title": "16 CFR Part 465 — Rule on the Use of Consumer Reviews and Testimonials",
+            "title": "16 CFR Part 465 — Consumer reviews and testimonials",
             "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
-            "relevance": "Prohibits specified deceptive review and testimonial practices relevant to account-stewardship services.",
+            "relevance": "Addresses fake reviews, specified deceptive review practices, and incentives conditioned on particular review sentiment.",
         },
         {
-            "title": "16 CFR Part 255 — Guides Concerning the Use of Endorsements and Testimonials in Advertising",
+            "title": "16 CFR Part 255 — Endorsement and testimonial guides",
             "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
-            "relevance": "Explains FTC endorsement principles, including disclosure of material connections; these are interpretive guides.",
-        },
-        {
-            "title": "UCC §§2-201, 2-509, 2-513, and 2-719 — Model sales-contract provisions",
-            "url": "https://www.law.cornell.edu/ucc/2",
-            "relevance": "Supplies model drafting references for writings, risk of loss, inspection, and remedy limitations; consult the governing state's enacted text.",
+            "relevance": "Provides FTC guidance on truthful endorsements and clear disclosure of material connections; platform restrictions remain separate.",
         },
     ],
 }

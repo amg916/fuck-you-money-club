@@ -6,633 +6,686 @@ CHAPTER_6 = {
     "chapter_number": 6,
     "question_number": 6,
     "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in buying group, card-float & ticket allocation arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–3 months)?",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in buying group, commercial card-float & rebate arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–3 months)?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
     "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine Distributor Surplus, Net-3/Net-5 Purchase Orders and Transferable Ticket Allocations Using Documented Landed Costs, BOTS Act Controls and Cash-Cycle Limits",
+    "subtitle": "Mine Buying-Group Commitments, Qualify Distributor Inventory, Route Commercial Rebates, and Match ACH Receipts to Card Maturities",
     "layout_template": "step_by_step_sop",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41 ranks #09 of 42 with a 93/100 Money-to-Manpower Score. "
-        "Its 11 mapped plays become a buyer-first sourcing system: discover documented "
-        "demand, secure executable terms, then acquire merchandise or transferable event "
-        "rights within a funded cash cycle. Start with small Net-3/Net-5 buying-group "
-        "orders and corporate allocation mandates; reserve imported branded inventory "
-        "for verified product admissibility and downstream purchase orders. Conservative, "
-        "Base and Scaled annual owner profits are $20,000, $143,500 and $360,000, "
-        "respectively. Those cases use $250,000, $1,025,000 and $1,800,000 gross "
-        "scorecard receipts, with a 35% retained share rather than treating all "
-        "merchandise reimbursements as operator earnings. The first 1–3 months should "
-        "produce 3–10 settled, reconciled wins, not merely attractive listings or "
-        "unfunded commitments."
+        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score. "
+        "This chapter organizes 11 mapped plays into a sourcing system that sells "
+        "documented availability, reliable fulfillment, and measurable settlement discipline. "
+        "Start with written buying-group commitments, qualify regional distributor offers "
+        "without assuming unrestricted import rights, and test commercial rebate routes "
+        "against actual fees. Keep wholesale fulfillment, card and portal rewards, and "
+        "bank or T-bill treasury returns in separate ledgers. The canonical annual owner "
+        "profit cases are $20,000 Conservative, $143,500 Base, and $360,000 Scaled; "
+        "they are portfolio targets rather than promised transaction yields. Use a "
+        "90-day pipeline, six-factor qualification, small paid pilots, and cleared-cash "
+        "conversion measurements to land the first three to ten wins."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross scorecard receipts; $87,500 retained revenue at 35%.",
-            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross scorecard receipts; $358,750 retained revenue at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross scorecard receipts; $630,000 retained revenue at 35%.",
-            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Mine executable buyer demand before collecting cheap inventory",
+            "heading": "1. Mine committed demand before mining discounted inventory",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Start with a demand ledger, not a shopping feed. In Airtable or HubSpot, "
-                    "create one record per buyer requirement containing legal entity, named "
-                    "purchasing contact, SKU or event identifier, quantity, delivered ceiling, "
-                    "acceptance conditions, settlement clock and evidence date. Mine buying-group "
-                    "member portals for currently open commitments, distributor clearance lists "
-                    "for dated surplus, and official venue calendars for announced corporate "
-                    "hospitality demand. Use public procurement awards, company expansion "
-                    "announcements and convention calendars to identify organizations likely to "
-                    "need client entertainment; these are outreach triggers, not proof of ticket "
-                    "budgets. Secretary of State records establish entity identity, while UCC "
-                    "searches can reveal financing relationships requiring further inquiry; neither "
-                    "proves solvency. Ask wholesalers which exact UPCs they would reorder this "
-                    "month and ask executive assistants which dates, capacities and delivery "
-                    "deadlines remain unresolved. Log the source URL and retrieval date so a "
-                    "contractor can reproduce each signal. A lead becomes actionable only when "
-                    "a reachable counterparty supplies measurable buying terms. An attractive "
-                    "retail discount without confirmed acceptance criteria stays outside the "
-                    "purchasing queue. Review stale requirements weekly and close records whose "
-                    "price, event date or buyer authority has changed."
+                    "Begin with a demand ledger, not a shopping cart. Create one record per "
+                    "buyer, destination, exact SKU, quantity ceiling, delivered price, commitment "
+                    "expiry, receipt standard, and promised settlement interval. Review the "
+                    "account-accessible deal feeds of BuyForMeRetail, Pointsmaker, and MaxOutDeals "
+                    "each business morning, using permitted exports or manual entry rather "
+                    "than bypassing access controls. A listed price is an invitation to "
+                    "investigate; only a current, written commitment supports procurement. "
+                    "Preserve the commitment identifier and its timestamp beside the retailer "
+                    "order confirmation. Ask whether substitutions, split shipments, serial "
+                    "numbers, damaged cartons, and late arrivals change acceptance. Warehouse "
+                    "addresses in Delaware, New Hampshire, or Oregon do not themselves create "
+                    "a resale exemption or eliminate other tax obligations. Verify delivery "
+                    "jurisdiction, purchaser identity, and any required resale documentation "
+                    "before checkout. Your strongest trigger is a repeated, profitable shortage "
+                    "that the same buyer confirms twice, not a dramatic discount screenshot. "
+                    "For the first month, concentrate on two receiving partners and a narrow "
+                    "SKU family whose packaging and carrier handling you can inspect. This "
+                    "reduces reconciliation work while exposing whether quoted Net-3 or "
+                    "Net-5 settlement actually begins at delivery, inspection, or acceptance."
                 ),
                 (
-                    "Organize the 11 mapped plays into distinct prospecting lanes rather than "
-                    "one undifferentiated arbitrage list. Use domestic buying-group commitments, "
-                    "distributor closeouts, authorized cross-border surplus, repeat wholesale "
-                    "replenishment, commercial-card rebate stacking, statement-cycle float, "
-                    "transferable primary ticket allocations, secondary ticket resale, season-seat "
-                    "license sourcing, corporate-suite brokerage and corporate hospitality mandates. "
-                    "These are chapter operating labels, not additional canonical identifiers. "
-                    "The specified canonical play, "
-                    "authorized_distributor_grey_market_diversion_arbitrage, belongs in the "
-                    "cross-border surplus lane. Keep card rewards and float attached to an "
-                    "underlying purchase record; they are yield mechanisms, not separate customer "
-                    "sales. For example, a $5,000 eligible purchase earning 2% produces $100 "
-                    "of rewards, while delaying settlement creates no additional revenue by "
-                    "itself. A season-seat license purchased for $8,000 and transferred for "
-                    "$9,000 with a $500 transfer charge leaves $500 before other costs, "
-                    "but only if the venue permits that transfer. Require a written buyer "
-                    "mandate before acquiring such rights; otherwise broker the introduction "
-                    "for a disclosed fee. This lane separation exposes shared capital demands "
-                    "and prevents a seemingly diversified pipeline from depending entirely "
-                    "on one issuer, one wholesaler or one event promoter."
+                    "Extend demand mining through public evidence that changes a buyer's "
+                    "purchasing need. Manufacturer discontinuation notices, retailer assortment "
+                    "changes, public liquidation catalogs, and distributor overstock announcements "
+                    "can identify inventory imbalances. Secretary of State records help verify "
+                    "entity names and status; UCC searches help investigate liens where their "
+                    "scope matters, but neither proves solvency or unrestricted title to "
+                    "particular goods. Confirm claimed distributor authorization directly through "
+                    "the manufacturer or an authenticated channel contact. Build a watchlist "
+                    "with the source URL, publication date, affected SKU, hypothesized buyer, "
+                    "and the fact still requiring confirmation. Approach regional wholesalers "
+                    "with exact inventory questions rather than a request for every closeout "
+                    "list. For TJX, Costco, or Burlington, use published vendor channels and "
+                    "established wholesale intermediaries; a buyer name or submission receipt "
+                    "is not a purchase order. Amazon wholesale demand also requires actual "
+                    "account eligibility, accepted invoices, and category access. Publish a "
+                    "plain supplier intake page requesting SKU, available units, location, "
+                    "lot age, packaging photographs, and invoice provenance. Route every "
+                    "inbound submission through the same evidence checks as outbound leads. "
+                    "Reject unsolicited files that require credentials or executable downloads "
+                    "to reveal inventory."
                 ),
                 (
-                    "Run signal mining as a weekly production routine. On Monday, refresh "
-                    "open buying-group quantities and distributor offers through permitted "
-                    "exports or manual review. On Tuesday, compare those offers against "
-                    "written buyer ceilings, adding freight, duty, payment fees and expected "
-                    "return exposure before ranking spreads. On Wednesday, review official "
-                    "on-sale announcements, venue transfer terms and local convention schedules; "
-                    "do not automate access around waiting rooms, ticket limits or CAPTCHA. "
-                    "Use SkyBox or Automatiq only through supported workflows and authorized "
-                    "connections, with one inventory record governing every marketplace listing. "
-                    "On Thursday, contact buyers with matched opportunities rather than generic "
-                    "inventory blasts. On Friday, retire stale quotes and reconcile demand "
-                    "against available cash. A useful test is twenty units costing $180 "
-                    "each, a confirmed $205 delivered bid, and $12 per unit of freight "
-                    "and handling: the merchandise spread is $260 before rewards and "
-                    "overhead. If eligible 2% rewards add $72, record them separately "
-                    "until earned. If freight rises to $25 per unit, merchandise spread "
-                    "disappears; reject the purchase rather than presenting card rewards "
-                    "as proof that an otherwise weak deal is sound."
+                    "Treat authorized_distributor_grey_market_diversion_arbitrage as an adjacent "
+                    "wholesale sourcing lane, not as permission to disregard distribution or "
+                    "import restrictions. Its regional-price thesis targets quoted differences "
+                    "of 35–60%; verify each comparison on identical specifications, currency "
+                    "dates, quantities, and delivery terms. A foreign corporate purchasing "
+                    "entity must have genuine purchasing authority and accurate customs records; "
+                    "it does not erase contractual restrictions. In an illustrative universal "
+                    "OEM consumables lot, a $100 domestic reference price versus a $60 foreign "
+                    "purchase price creates a 40% headline difference. Add $5 freight, $4 "
+                    "assumed duty and brokerage, and $3 inspection and loss reserve: landed "
+                    "cost becomes $72. A signed $85 wholesale sale leaves $13 before overhead, "
+                    "not $40. Obtain the actual tariff classification before replacing that "
+                    "assumption with a quote. Kirtsaeng interprets copyright first sale under "
+                    "17 U.S.C. § 109; trademark restrictions, materially different goods, "
+                    "and FDA requirements remain separate. Reject medical consumables without "
+                    "product-specific admissibility and labeling evidence. The fallback is "
+                    "globally identical universal-packaging goods with documented authenticity "
+                    "and permitted importation, sold against direct B2B purchase orders. Start "
+                    "with samples and a small commercial lot before contemplating containers."
                 ),
             ],
             "table": {
-                "caption": "Demand Signals That Produce Verifiable Buyer Requirements",
+                "caption": "Eleven Chapter-Mapped Sourcing Plays, Evidence Requirements, and Risk Fallbacks",
                 "headers": [
-                    "Sourcing lane and observable intent signal",
-                    "Permitted source and repeatable discovery method",
-                    "Evidence required before quoting a transaction",
-                    "Immediate next action and failure fallback",
+                    "Mapped sourcing play and operating scope",
+                    "Demand signal and evidence to collect",
+                    "Small-lot economics or qualification test",
+                    "Fallback when the initial route fails",
                 ],
                 "rows": [
                     [
-                        "Buying-group portal shows an open dated SKU commitment",
-                        "Review member-authorized exports and record current quantity limits",
-                        "Obtain written acceptance terms and settlement starting event",
-                        "Reserve a small quantity or decline expired commitments",
+                        "authorized_distributor_grey_market_diversion_arbitrage, limited here to documented wholesale inventory sourcing",
+                        "Confirm authentic identical SKUs, export authority, import admissibility, and signed domestic demand.",
+                        "$60 purchase plus $12 landed additions against $85 sale leaves $13 contribution.",
+                        "Use universal packaging and direct wholesale orders; abandon restricted or materially different goods.",
                     ],
                     [
-                        "Distributor offers excess inventory near its quarter end",
-                        "Request dated stock sheets from verified commercial representatives",
-                        "Match invoice provenance with exact buyer-approved product identifiers",
-                        "Request samples before negotiating any meaningful inventory exposure",
+                        "BuyForMeRetail commitment capture for exact approved merchandise quantities",
+                        "Save current written price, receiving location, acceptance criteria, and settlement start event.",
+                        "$1,000 merchandise against $1,025 reimbursement creates $25 spread before handling costs.",
+                        "Reduce the pilot quantity or decline when commitment expiry precedes reliable delivery.",
                     ],
                     [
-                        "Regional wholesaler repeatedly requests the same replenishment assortment",
-                        "Interview purchasing managers using previous fulfilled order categories",
-                        "Secure delivered ceilings with documented minimum remaining shelf-life",
-                        "Quote matched lots rather than buying speculative assortments",
+                        "Pointsmaker commitment comparison with independent counterparty exposure limits",
+                        "Compare contemporaneous offers only after matching exact model, condition, and receiving requirements.",
+                        "Two $2,000 commitments still require separate acceptance evidence and separate exposure tracking.",
+                        "Keep orders unplaced when the alternative buyer has not accepted the specific units.",
                     ],
                     [
-                        "Convention schedule overlaps an announced corporate client gathering",
-                        "Combine official convention calendars with public company announcements",
-                        "Confirm attendee count and purchasing authority through direct outreach",
-                        "Offer a transferable suite option with explicit expiration",
+                        "MaxOutDeals demand confirmation for repeatable narrow SKU replenishment",
+                        "Ask which recurring shortages retain firm pricing through the expected delivery window.",
+                        "A $15 price improvement across ten accepted units adds $150 before additional freight.",
+                        "Retain the original buyer unless revised documentation covers every replacement commitment.",
                     ],
                     [
-                        "Season-seat holder requests a permitted license ownership transfer",
-                        "Use venue-approved transfer channels and documented holder introductions",
-                        "Verify ownership rights and venue-assessed transfer charge schedules",
-                        "Broker a matched transfer instead of warehousing licenses",
+                        "Delaware, New Hampshire, and Oregon warehouse route qualification",
+                        "Verify genuine receiving operations, jurisdictional treatment, purchaser identity, and documented warehouse authority.",
+                        "Compare a $12 shipping increase against actual tax treatment, not assumed tax savings.",
+                        "Use the documented lawful route even when another address appears superficially cheaper.",
                     ],
                     [
-                        "Official event announcement creates a narrow corporate planning window",
-                        "Review venue calendars without bypassing purchase access controls",
-                        "Document ticket transfer timing and actual hospitality buyer budget",
-                        "Seek a buyer mandate before committing scarce working capital",
+                        "Rakuten eligible commercial purchase attribution and realized rebate tracking",
+                        "Archive merchant terms addressing resale, quantity limits, exclusions, and permitted stacking.",
+                        "An eligible 1% reward on $1,000 adds $10 only after final payout.",
+                        "Exclude the reward from procurement economics when resale or attribution eligibility remains unresolved.",
                     ],
                     [
-                        "Existing customers request additional eligible recurring merchandise purchases",
-                        "Review order history alongside issuer-published commercial rewards terms",
-                        "Verify category eligibility and transaction-level reward earning limits",
-                        "Use rewards as incremental yield after merchandise underwriting",
+                        "TopCashback alternative merchant route with isolated attribution sessions",
+                        "Compare current eligible rates without trying to assign two portals the same purchase.",
+                        "A 1.5% eligible payout on $1,000 exceeds 1% by only $5.",
+                        "Choose the more reliable documented route when expected reversal losses exceed the difference.",
                     ],
+                    [
+                        "Commercial card base rewards and individually enrolled issuer offers",
+                        "Confirm business-purpose permission, merchant coding, offer enrollment, caps, and excluded transaction classes.",
+                        "A contractually eligible 2% reward on $1,000 generates $20 before card-related costs.",
+                        "Use ordinary operating cash when issuer restrictions or utilization exposure defeat the reward.",
+                    ],
+                    [
+                        "Plastiq legitimate B2B invoice fee-versus-reward qualification",
+                        "Verify supported payee, card network, payment purpose, delivery timing, and current quoted fee.",
+                        "A $10,000 invoice with 3% fee and 2% reward loses $100 before float.",
+                        "Pay the supplier by ordinary ACH when a genuine discount does not close the gap.",
+                    ],
+                    [
+                        "Melio supplier payment routing against actual permitted payment terms",
+                        "Obtain supplier acceptance and verify the specific rail, fee, and card treatment.",
+                        "A $5,000 invoice at 3% fee and 2% reward costs $50 net.",
+                        "Negotiate an authentic early-payment discount or retain the lower-cost direct payment method.",
+                    ],
+                    [
+                        "Bank bonus and short T-bill treasury allocation of eligible cash",
+                        "Record bonus eligibility, minimum balances, maturity dates, fees, and permitted account activity.",
+                        "$10,000 at assumed 4% annual yield earns approximately $43.84 across forty days.",
+                        "Keep repayment reserves liquid and skip offers whose lockup overlaps contractual payment dates.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy evidence before buying inventory",
+                "body": (
+                    "These eleven workstreams are this chapter's operating map. Only the "
+                    "distributor-diversion identifier is supplied as a formal mapped play ID; "
+                    "the remaining labels describe implementation lanes."
+                ),
+                "items": [
+                    "Capture a commitment screenshot and a machine-readable reference together; a later price change must not overwrite the original promise.",
+                    "Ask receiving staff which carton or serial-number error most often delays acceptance, then photograph that exact evidence before dispatch.",
+                    "Request a redacted sample settlement statement before scaling a new group; confirm whether deductions appear by order, parcel, or batch.",
+                    "Place portal experiments in separate sessions and ledgers; test attribution with a small eligible order rather than a full monthly purchasing allocation.",
                 ],
             },
         },
         {
-            "heading": "2. Qualify counterparties, imports and allocations with a cash-first scorecard",
+            "heading": "2. Qualify each opportunity against proof, cash, and operational capacity",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Score each prospect out of 100 using buyer commitment worth 25 "
-                    "points, counterparty payment evidence worth 20, independently verified unit "
-                    "economics worth 20, product or transfer eligibility worth 20, and "
-                    "cash-cycle fit worth 15. Full commitment points require an executable "
-                    "purchase order or signed mandate, not a chat-room promise. Award "
-                    "payment points for recent trade references and a successful small "
-                    "settlement, not screenshots of account balances. Set 80 as the "
-                    "initial qualification threshold, but treat failed identity, admissibility "
-                    "or transfer checks as disqualifying regardless of total score. For "
-                    "buying groups, distinguish Net-3 after receipt from Net-3 after inspection "
-                    "and acceptance; a five-day inspection period changes the financing requirement. "
-                    "A $10,000 order held seven additional days consumes $10,000 of "
-                    "liquidity even when accounting profit is unchanged. Start with exposure "
-                    "that available cash can repay without the expected ACH arrival. "
-                    "Independently confirm changed bank instructions through a previously verified "
-                    "telephone number. Diversify among vetted Net-3/Net-5 counterparties only after "
-                    "each completes its own pilot. Multiple storefront names sharing one "
-                    "paying entity are a single credit exposure, and a pending ACH "
-                    "entry is not the same as completed settlement."
+                    "Use a weighted qualification score only after applying hard exclusions. "
+                    "Reject unsupported provenance, prohibited product handling, unclear buyer "
+                    "identity, negative stressed contribution, or repayment dependent on an "
+                    "unconfirmed receipt. Score the survivors on committed demand, margin "
+                    "evidence, liquidity, counterparty authority, traceability, and execution "
+                    "capacity, using the weights below. Require at least 85 points for a "
+                    "paid pilot, with no hard exclusion overridden by a high aggregate "
+                    "score. Give full demand credit only to a commitment specifying quantity, "
+                    "price, acceptance, and expiry; a chat expressing interest earns less. "
+                    "Margin credit requires a landed-cost worksheet and the removal of "
+                    "unvested rewards from the downside case. Liquidity credit requires cash "
+                    "that remains available after payroll, operating expenses, existing card "
+                    "balances, and other obligations. Verify the payment recipient through "
+                    "an established contact before sending funds after any bank-detail change. "
+                    "For a supplier relationship, examine title warranties and conflicting "
+                    "claims under applicable UCC Article 2 provisions rather than treating "
+                    "an invoice as conclusive proof. Keep the source documents attached "
+                    "to the scored record so another operator can reproduce the decision "
+                    "without trusting the salesperson's memory."
                 ),
                 (
-                    "For authorized_distributor_grey_market_diversion_arbitrage, investigate reported 35–60% "
-                    "regional price gaps as hypotheses about identical goods, not automatic "
-                    "import margins. Foreign purchasing entities do not remove trademark, customs, "
-                    "product-labeling, manufacturer-contract or distribution restrictions. Kirtsaeng v. John "
-                    "Wiley & Sons addresses copyright first sale for lawfully made "
-                    "copies; it does not grant blanket permission to import every "
-                    "authentic branded product. Under 19 CFR 133.23, trademark restrictions "
-                    "can still affect gray-market goods, including materially different products. "
-                    "Medical consumables and OTC diabetic test strips require separate FDA "
-                    "admissibility and labeling analysis under 21 U.S.C. §381; authenticity "
-                    "alone does not establish eligibility. Start with globally identical "
-                    "universal-packaging fragrance or OEM consumable SKUs only after verifying "
-                    "the actual product requirements. Illustratively, 100 units at $50 "
-                    "cost $5,000; $900 of documented freight, duty and inspection yields "
-                    "$5,900 landed cost. A signed $7,200 wholesale order leaves $1,300 "
-                    "before returns, rewards and overhead. If eligibility or downstream "
-                    "acceptance remains unresolved, cancel sourcing or switch to documented "
-                    "domestic inventory. Container quantities come after sample approval and "
-                    "repeated matched orders, never before them."
+                    "Build the cash calendar before negotiating a larger allocation. Record "
+                    "purchase authorization, statement close, contractual payment due date, "
+                    "carrier delivery, buyer inspection, expected ACH initiation, and cleared "
+                    "cash availability as distinct events. Advertised statement float approaching "
+                    "55 days depends on purchase timing and the actual card agreement; it "
+                    "is not a standard maturity available on every order. Treat every card "
+                    "purchase as a short-term repayment liability from day one. Suppose a "
+                    "$10,000 pilot expects cleared reimbursement on day 12, while its card "
+                    "payment is due on day 15. A ten-day buyer delay moves receipt to day "
+                    "22 and creates a seven-day funding gap. The operator must already hold "
+                    "enough available cash to pay on day 15; a pending ACH entry does "
+                    "not satisfy that requirement. Illustratively, a $10,000 balance charged "
+                    "24% annual interest for seven days costs approximately $46.03 before "
+                    "any fee, and a $35 fee raises that burden to $81.03. Actual agreements "
+                    "may impose different interest mechanics or remove a grace period. "
+                    "The fallback is smaller purchasing, earlier payment from reserves, "
+                    "or declining the deal, never repeated consumer card-cycling."
                 ),
                 (
-                    "Qualify ticket and suite rights with the same rigor as physical "
-                    "inventory. Obtain section, row, seat count, restricted-view status, delivery "
-                    "method, transfer opening date, cancellation treatment and every venue "
-                    "charge. A corporate-suite mandate must specify whether catering, parking "
-                    "and service staffing are included; a suite license does not "
-                    "automatically permit sublicensing. For eight tickets costing $120 each, "
-                    "a $155 resale price creates $1,240 of gross proceeds. With "
-                    "a 12% seller fee on those proceeds and $20 of "
-                    "other costs, contribution is $111.20 before overhead. At $130 "
-                    "each, contribution becomes negative $64.80 using the same assumptions. "
-                    "Choose an event-specific markdown schedule before purchase, such as "
-                    "reviewing executable bids fourteen, seven and three days before the "
-                    "event. A price floor is a decision trigger, not assurance "
-                    "that buyers exist. Prefer signed corporate demand or small transferable "
-                    "allocations for the first wins; reduce exposure when delivery remains "
-                    "locked until shortly before attendance. Follow 15 U.S.C. §45c "
-                    "without queue or CAPTCHA bypass software, and verify state broker "
-                    "licensing, disclosure and transfer requirements before accepting the relevant "
-                    "order."
+                    "Keep treasury qualification independent from product selection. A bank "
+                    "bonus can reward an eligible balance without creating customer demand, "
+                    "and a T-bill position cannot cure an uneconomic wholesale purchase. "
+                    "For a proposed $250 account bonus requiring $10,000 for sixty days, "
+                    "assume $25 of unavoidable fees and no deposit interest. Against a "
+                    "3% alternative annual yield, foregone interest is $49.32, leaving "
+                    "$175.68 of incremental pretax benefit if every eligibility condition "
+                    "is satisfied. Verify whether the offer applies to the entity, prior "
+                    "account history, qualifying deposits, and the planned source of funds. "
+                    "Do not represent internal transfers as payroll or other qualifying "
+                    "activity when the terms distinguish them. For bills, calculate return "
+                    "from actual purchase price and maturity proceeds; the chapter's annual "
+                    "yield calculations are screening approximations. Maturity must precede "
+                    "the required cash date with an operational buffer, and early sale "
+                    "introduces price and settlement risk. FDIC insurance generally covers "
+                    "eligible deposits within applicable ownership-category limits, not "
+                    "Treasury securities. Count interest and earned bonuses separately "
+                    "from merchandise settlements, and never count the invested or borrowed "
+                    "principal as revenue, contribution, or owner profit."
                 ),
             ],
             "table": {
-                "caption": "Weighted Qualification and Non-Negotiable Transaction Evidence",
+                "caption": "Six-Factor Qualification Scorecard With Non-Overridable Exclusions",
                 "headers": [
-                    "Qualification dimension and initial point allocation",
-                    "Evidence that earns the strongest assessment",
-                    "Concrete economic or operating stress test",
-                    "Action when evidence fails the required test",
+                    "Qualification factor and maximum available points",
+                    "Evidence needed for the full allocation",
+                    "Condition requiring rejection or immediate correction",
+                    "Operator action before committing working capital",
                 ],
                 "rows": [
                     [
-                        "Buyer commitment receives twenty-five possible qualification score points",
-                        "Signed purchase order identifies quantity price and acceptance conditions",
-                        "Recalculate exposure if buyer rejects one delivered carton",
-                        "Reduce lot size or seek another committed purchaser",
+                        "Committed demand receives twenty-five of one hundred available points",
+                        "Written buyer commitment includes exact SKU, quantity, price, expiry, and acceptance conditions.",
+                        "Buyer interest remains verbal or leaves deductions entirely at the buyer's discretion.",
+                        "Obtain a complete written commitment before placing the matching supplier order.",
                     ],
                     [
-                        "Payment credibility receives twenty possible qualification score points",
-                        "Recent trade references support one completed pilot settlement",
-                        "Fund repayment through an additional seven-day ACH delay",
-                        "Stop new purchases until overdue balances actually settle",
+                        "Documented unit contribution receives twenty of one hundred points",
+                        "Worksheet includes landed costs, returns, fees, insured shipping, and separately identified rewards.",
+                        "The stressed case loses money after removing disputed or unvested reward income.",
+                        "Renegotiate price or reduce costs without relying on hypothetical reward stacking.",
                     ],
                     [
-                        "Unit economics receives twenty possible qualification score points",
-                        "Written invoices establish every material landed cost component",
-                        "Remove anticipated rewards and widen freight cost assumptions",
-                        "Reject transactions requiring optimistic rewards to cover losses",
+                        "Independent repayment liquidity receives twenty of one hundred points",
+                        "Available cash covers obligations through delayed reimbursement and documented operational settlement buffers.",
+                        "A single late buyer payment would prevent full payment by the card due date.",
+                        "Shrink the order until existing liquid reserves cover the complete repayment exposure.",
                     ],
                     [
-                        "Product eligibility receives twenty possible qualification score points",
-                        "Exact SKU documentation supports admissibility and buyer acceptance",
-                        "Check packaging language formulation warranty and remaining shelf-life",
-                        "Switch to domestic documented inventory when eligibility fails",
+                        "Counterparty authority receives fifteen of one hundred available points",
+                        "Verified entity, authorized contact, matching payment beneficiary, and documented receiving relationship.",
+                        "Instructions redirect money to an unexplained beneficiary or unverifiable replacement bank account.",
+                        "Confirm changes through a previously established contact using an independent communication channel.",
                     ],
                     [
-                        "Cash-cycle fit receives fifteen possible qualification score points",
-                        "Available cash covers statement payment without buyer reimbursement",
-                        "Model inspection delays together with reduced issuer availability",
-                        "Shrink commitments until cash independently covers every payment",
+                        "Product traceability receives ten of one hundred available points",
+                        "Invoices, lot identifiers, packaging evidence, serial records, and import documents support the goods.",
+                        "Material differences, missing title evidence, or product restrictions remain unresolved after inquiry.",
+                        "Decline the affected goods or substitute a documented unrestricted and identical SKU.",
                     ],
                     [
-                        "Ticket rights require verification independent of numerical scoring",
-                        "Venue terms support the proposed transfer and delivery method",
-                        "Reprice inventory with delayed delivery and weaker buyer demand",
-                        "Use permitted brokerage mandates instead of speculative ownership",
-                    ],
-                    [
-                        "Imported brands require product-specific review before container commitments",
-                        "Customs documentation matches provenance and materially identical merchandise",
-                        "Test domestic wholesale demand without assuming marketplace acceptance",
-                        "Prefer direct matched orders with verified regional wholesalers",
+                        "Execution capacity receives ten of one hundred available points",
+                        "Carrier terms, warehouse appointment, inspection responsibility, and exception ownership fit the promised schedule.",
+                        "Shipment cannot arrive before commitment expiry without an unsupported delivery assumption.",
+                        "Get written timing extensions or abandon the order before purchasing merchandise.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four checks before the first funded commitment",
-                "body": "A high prospect score never substitutes for transaction-specific evidence.",
+                "title": "Four checks before the first irreversible payment",
+                "body": (
+                    "A passing score organizes evidence; it does not excuse a missing "
+                    "commitment, restricted product, unsupported reward, or cash shortfall."
+                ),
                 "items": [
-                    "Verify the paying legal entity, bank instructions and settlement trigger through independently confirmed contact details.",
-                    "Match the exact SKU or ticket rights against buyer acceptance terms, transfer rules and documented import eligibility.",
-                    "Recalculate contribution after freight, duty, marketplace charges, returns and a delayed settlement; count rewards only when eligible.",
-                    "Demonstrate cash coverage for the card payment and identify an executable fallback buyer or a pre-funded loss limit.",
+                    "Match the supplier invoice, buyer commitment, exact SKU, quantity, and expiry in one transaction record.",
+                    "Verify jurisdictional tax treatment, applicable resale documents, title evidence, and any product-specific import requirements.",
+                    "Confirm reward eligibility and processor permission from current terms, then rerun contribution without uncertain payouts.",
+                    "Prove cash coverage through the delayed-ACH scenario and confirm carrier coverage, exclusions, claim deadlines, and return responsibility.",
                 ],
             },
         },
         {
-            "heading": "3. Convert matched signals into three-to-ten settled first wins",
-            "epistemic_status": "illustrative_model",
+            "heading": "3. Run a focused 90-day outreach and first-pilot conversion system",
+            "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Build the first prospect cohort around one merchandise lane and one "
-                    "corporate allocation lane so research remains comparable. An illustrative "
-                    "eight-week funnel starts with 120 raw signals, of which 80 "
-                    "have verified contacts and current intent, 24 produce substantive replies, "
-                    "12 pass qualification, eight receive executable quotes and five become "
-                    "signed orders or mandates. Those transitions are 66.7%, 30%, "
-                    "50%, 66.7% and 62.5%, respectively; they are planning assumptions "
-                    "to test, not established market conversion rates. Track settlement "
-                    "separately: five signatures might yield only three completed wins "
-                    "within the period if transfer or inspection delays intervene. Define "
-                    "a win as delivered merchandise accepted and paid, or a "
-                    "completed brokerage service with its fee collected. Exclude refundable "
-                    "deposits, tentative reservations and self-dealing transactions. Review every "
-                    "lost quote by cause: price, timing, missing documentation, unsuitable "
-                    "rights or insufficient buyer authority. If replies are scarce, "
-                    "improve targeting before increasing volume. If replies are strong "
-                    "but orders are scarce, examine delivered economics and credibility. "
-                    "A low settlement rate requires operational repair, not more "
-                    "prospecting that compounds unresolved exposure across the same constrained "
-                    "cash pool."
+                    "During days one through fourteen, build eighty researched lead records "
+                    "across buying-group demand contacts, regional wholesalers, documented "
+                    "suppliers, and legitimate invoice-paying businesses. Separate these "
+                    "audiences: a wholesale buyer needs availability and delivery certainty, "
+                    "while a business evaluating payment routing needs a fee comparison "
+                    "and authority over its own invoices. Never market fabricated savings "
+                    "or handle another business's funds without an appropriate, reviewed "
+                    "operating arrangement. Your first wholesale email should identify the "
+                    "specific SKU family, available documentation, receiving geography, and "
+                    "small pilot size, then ask for current buying criteria. A useful "
+                    "opening is: 'Can your purchasing team quote ten factory-sealed units "
+                    "of this exact model, with acceptance terms and payment timing in "
+                    "writing?' For a supplier, request an itemized availability file rather "
+                    "than their entire customer list. Use an accurate sender identity, "
+                    "nondeceptive subject, valid postal address, and working opt-out for "
+                    "commercial email under 15 U.S.C. § 7704. Maintain a suppression list "
+                    "across every operator and sending tool. Publicly listed contact "
+                    "information supports research, not unrestricted permission for automated "
+                    "calls or texts. Prefer relevant manual outreach over indiscriminate "
+                    "message volume."
                 ),
                 (
-                    "Use a restrained multi-channel cadence tied to a specific requirement. "
-                    "On day one, send a short commercial email identifying the "
-                    "buyer signal, exact opportunity and requested next step: 'Your "
-                    "team is hosting clients during the October convention. I can "
-                    "source a permitted twelve-person suite allocation with itemized inclusions. "
-                    "Who owns the event budget and required date?' On day "
-                    "three, call the publicly listed business number and confirm "
-                    "the correct purchasing contact. On day six, send one "
-                    "matched example with a real quote expiration and supporting "
-                    "terms. On day ten, ask whether to close the "
-                    "requirement or revisit a stated future date. Honor opt-outs "
-                    "immediately and maintain suppression records. Commercial email must satisfy "
-                    "15 U.S.C. §7704, including accurate routing information, truthful "
-                    "subjects, required identification and address information, and a working "
-                    "opt-out process. Avoid automated texts and prerecorded calls without "
-                    "reviewing the applicable permission requirements. Inbound assets should be "
-                    "equally concrete: publish a buyer requirement form, a delivered-cost "
-                    "worksheet and a sample allocation brief. Request commercial specifications, "
-                    "not card credentials or unnecessary personal records. A useful "
-                    "form captures budget, timing and authority before offering a "
-                    "sales meeting."
+                    "Use a six-touch cadence only while the recipient remains relevant "
+                    "and has not opted out. Send the specific opening on day one, a "
+                    "short evidence packet on day three, and a manual call to a published "
+                    "business number on day six when applicable calling rules permit it. "
+                    "On day ten, share one usable landed-cost comparison; on day sixteen, "
+                    "propose a tightly capped pilot; on day twenty-four, close the loop "
+                    "and pause unanswered outreach. Do not manufacture urgency by claiming "
+                    "inventory reservations that do not exist. Handle 'your spread is too "
+                    "small' by showing contribution after shipping and reward reversals, "
+                    "then decline if the buyer needs a price below that floor. Handle "
+                    "'we pay after inspection' by requesting the inspection clock and "
+                    "deduction procedure, not by pretending inspection creates immediate "
+                    "cash. Handle 'send everything first' with a sample or small paid "
+                    "lot and written acceptance terms. For 'the portal should cover the "
+                    "fee,' show the zero-portal downside case. Each reply must produce "
+                    "one next action, an accountable person, and a date. Store unanswered "
+                    "questions beside the opportunity rather than burying them in chat."
                 ),
                 (
-                    "Handle objections by changing evidence or transaction structure, not by "
-                    "promising away risk. When a wholesaler says the goods "
-                    "may differ from its domestic assortment, provide exact UPCs, "
-                    "packaging photographs, invoice provenance and a paid sample inspection; "
-                    "do not equate authenticity with interchangeability. When a buying "
-                    "group refuses a deposit, offer a smaller pilot that "
-                    "your cash reserve can carry rather than extending unpriced "
-                    "credit. When a corporate buyer questions an allocation premium, "
-                    "separate ticket cost, disclosed service fee and included delivery "
-                    "work in a written mandate. When they demand guaranteed "
-                    "resale value, offer sourcing against their budget instead of "
-                    "an investment proposition. A $3,000 suite sourced under a "
-                    "$3,450 agreed total leaves $450 before payment costs when "
-                    "you are the principal; an agency arrangement may instead "
-                    "recognize only the $450 service fee. Document the actual "
-                    "role rather than selecting whichever revenue presentation looks larger. "
-                    "For the first order, specify acceptance windows, permitted substitutions, "
-                    "cancellation treatment, remittance instructions and dispute evidence. Send "
-                    "a post-settlement summary showing promised versus actual timing. "
-                    "That short operating record is the strongest opening for "
-                    "the next, slightly larger order."
+                    "Define a win as a completed economic cycle: accepted goods or "
+                    "authorized service delivery, settled payment, reconciled deductions, "
+                    "and measured contribution. A signed purchase order is a milestone, "
+                    "not a settled win. Use a planning funnel of eighty researched leads, "
+                    "forty eligible conversations or qualified responses, twenty documented "
+                    "opportunities, ten accepted pilots, and six settled wins within ninety "
+                    "days. These imply 50%, 50%, 50%, and 60% stage conversions, or 7.5% "
+                    "from raw lead to settled win; they are workload assumptions, not "
+                    "measured industry benchmarks. Track observed results weekly and replace "
+                    "the assumptions after the first cohort. During days fifteen through "
+                    "forty-five, run two or three small pilots without overlapping more "
+                    "capital than the reserve supports. During days forty-six through "
+                    "ninety, repeat only the routes whose receipts and deductions matched "
+                    "the worksheet. Publish anonymized process evidence, such as packing "
+                    "standards and average observed settlement time, to attract better "
+                    "inbound inquiries; obtain permission before identifying counterparties. "
+                    "Record rejection reasons by stage so weak demand, poor pricing, "
+                    "restricted eligibility, and late payment remain distinguishable. "
+                    "Three clean repeatable wins are more valuable than ten orders "
+                    "still awaiting reimbursement."
                 ),
             ],
             "table": {
-                "caption": "First-Deal Outreach, Conversion and Objection Handling",
+                "caption": "Six-Touch Outreach Cadence, Concrete Objections, and Conversion Evidence",
                 "headers": [
-                    "Pipeline stage or specific buyer objection",
-                    "Evidence-based message or useful operator response",
-                    "Illustrative conversion or transaction measurement to track",
-                    "Failure diagnosis and next controlled experiment",
+                    "Timing and permitted communication channel",
+                    "Specific message or evidence to deliver",
+                    "Likely objection and precise operator response",
+                    "Recorded outcome and next conversion event",
                 ],
                 "rows": [
                     [
-                        "Raw public signals become verified commercial prospect records",
-                        "Confirm current requirement and identify an accountable purchasing contact",
-                        "Eighty verified records from one hundred twenty raw signals",
-                        "Narrow source selection when contact accuracy repeatedly disappoints",
+                        "Day one targeted commercial email to a researched purchasing contact",
+                        "Offer an exact SKU family, documented condition, receiving geography, and limited pilot quantity.",
+                        "For irrelevant inventory, ask for current buying criteria and remove mismatched categories.",
+                        "Record a qualified response only when buying need and responsible contact are confirmed.",
                     ],
                     [
-                        "Verified contacts receive a requirement-specific four-touch outreach sequence",
-                        "Offer one matched opportunity with a clear next step",
-                        "Twenty-four substantive replies from eighty verified prospect records",
-                        "Rewrite relevance rather than adding indiscriminate message volume",
+                        "Day three concise evidence follow-up using the existing business thread",
+                        "Provide redacted provenance, packaging photographs, delivery assumptions, and a clear acceptance question.",
+                        "For authenticity concerns, supply traceability evidence rather than unsupported claims of universal authorization.",
+                        "Advance only after the buyer identifies the documentation needed for a purchase decision.",
                     ],
                     [
-                        "Substantive replies become scored and economically qualified opportunities",
-                        "Request budget timing authority and written acceptance criteria",
-                        "Twelve qualified opportunities from twenty-four substantive buyer replies",
-                        "Change prospect profile when budgets cannot support delivered costs",
+                        "Day six manual business call where applicable calling rules permit",
+                        "Confirm receiving constraints, inspection timing, deductions, payment initiation, and escalation ownership directly.",
+                        "For inspection-dependent payment, request a defined inspection period and objective rejection criteria.",
+                        "Record payment terms separately from estimated bank clearing and operational cash availability.",
                     ],
                     [
-                        "Qualified opportunities receive executable quotes and become signed orders",
-                        "State expiration inclusions delivery conditions and actual seller identity",
-                        "Eight executable quotes produce five signed orders or mandates",
-                        "Inspect terms and credibility before reducing every quoted price",
+                        "Day ten written unit-economics comparison tied to the specific opportunity",
+                        "Show merchandise spread, shipping, insurance, fees, earned rewards, and stressed contribution independently.",
+                        "For thin margin objections, change the price or decline rather than inventing rebates.",
+                        "Advance when both parties accept a viable price and the documented downside remains positive.",
                     ],
                     [
-                        "Buyer challenges product equivalence or distributor invoice provenance",
-                        "Provide exact identifiers and arrange a documented sample inspection",
-                        "Measure sample acceptance before increasing any imported lot size",
-                        "Switch to globally identical SKUs or domestic documented supply",
+                        "Day sixteen capped pilot proposal with explicit purchase and acceptance terms",
+                        "Offer a small paid lot with identified units, commitment expiry, and return responsibility.",
+                        "For demands to ship everything first, propose a sample or tightly limited commercial lot.",
+                        "Count an accepted pilot only after written terms and internal cash coverage are complete.",
                     ],
                     [
-                        "Corporate buyer challenges premium pricing or uncertain resale outcomes",
-                        "Separate service value and offer budget-bound sourcing instead",
-                        "Count only completed services with collected disclosed fees",
-                        "Decline speculative promises and seek a better matched mandate",
+                        "Day twenty-four final relevant follow-up followed by a genuine outreach pause",
+                        "Summarize the unresolved decision and state that unanswered outreach will stop after this message.",
+                        "For timing objections, request a recipient-selected follow-up date without manufacturing scarcity.",
+                        "Pause inactive records, honor opt-outs immediately, and measure settled wins separately from signatures.",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Build a dated demand cohort",
-                    "action": "Collect 120 raw signals across one merchandise lane and one corporate allocation lane.",
-                    "detail": "Record source, buyer identity, requested specification, budget evidence and expiration; target 80 verified records.",
+                    "title": "Assemble the evidence-backed lead cohort",
+                    "action": "Build eighty segmented records during the first fourteen days.",
+                    "detail": "Attach a public or authorized source, exact demand hypothesis, responsible contact, and unresolved qualification questions.",
                 },
                 {
                     "step": 2,
-                    "title": "Qualify before obtaining inventory",
-                    "action": "Apply the 100-point scorecard and complete the four transaction checks.",
-                    "detail": "Obtain exact buyer requirements and vendor terms; reject failed rights or eligibility checks regardless of score.",
+                    "title": "Convert interest into priced written terms",
+                    "action": "Run the relevant outreach cadence and score each documented opportunity.",
+                    "detail": "Target twenty qualified opportunities from forty eligible responses; require at least 85 points and resolve every hard exclusion.",
                 },
                 {
                     "step": 3,
-                    "title": "Run matched outreach and a small pilot",
-                    "action": "Use the day-one, day-three, day-six and day-ten cadence, then issue an executable quote.",
-                    "detail": "Size the first order so cash can repay the card balance despite delayed reimbursement; secure written acceptance terms.",
+                    "title": "Execute capped and cash-covered pilots",
+                    "action": "Seek ten accepted pilots while limiting simultaneous exposure to available reserves.",
+                    "detail": "Archive commitments, verify carrier coverage, capture serial evidence, and schedule payment before the contractual card deadline.",
                 },
                 {
                     "step": 4,
-                    "title": "Settle, reconcile and request the repeat",
-                    "action": "Verify acceptance, collect payment and reconcile all transaction-level costs.",
-                    "detail": "Count the completed win, compare realized contribution with the quote, and expand only after the pilot evidence supports it.",
+                    "title": "Count only settled and reconciled wins",
+                    "action": "Aim for six completed cycles within ninety days and revise assumptions weekly.",
+                    "detail": "Compare realized contribution, rejection rates, and actual cash timing before increasing quantities or adding counterparties.",
                 },
             ],
         },
         {
-            "heading": "4. Reconcile sourcing economics and expand only proven cash cycles",
+            "heading": "4. Reconcile first-deal economics before scaling the sourcing engine",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Keep the Formula v2.0 scorecard separate from the transaction ledger "
-                    "while reconciling both explicitly. Conservative gross scorecard receipts of "
-                    "$250,000 multiplied by the 35% retained share produce $87,500 "
-                    "of retained revenue; subtracting $67,500 of remaining modeled costs "
-                    "leaves $20,000 owner profit. Base receipts of $1,025,000 yield "
-                    "$358,750 retained revenue and $143,500 profit after $215,250 "
-                    "of remaining costs. Scaled receipts of $1,800,000 yield $630,000 "
-                    "retained revenue and $360,000 profit after $270,000 of remaining "
-                    "costs. Gross-basis net margins remain exactly 8%, 14.0% and "
-                    "20%; retained margins are 22.86%, 40.0% and 57.14% "
-                    "after rounding. The 35% retained share is the supplied "
-                    "planning normalization, not a promise that each buying-group order "
-                    "earns that spread. ASC 606 principal-versus-agent presentation depends on "
-                    "the actual control and contractual facts; the retained measure "
-                    "does not itself determine statutory reporting. Keep underlying merchandise "
-                    "value, customer ticket spend, seller reimbursements and broker fees "
-                    "in separate fields. Treat eligible purchase rebates consistently with "
-                    "the adopted accounting policy and never record the same "
-                    "reward as both reduced inventory cost and additional revenue."
+                    "Keep three separate unit ledgers even when one purchase touches "
+                    "multiple rails. In the wholesale ledger, a $1,000 merchandise cost "
+                    "and $1,025 buying-group reimbursement create $25 of merchandise "
+                    "spread. In the reward ledger, an eligible 2% commercial card reward "
+                    "adds $20 and an eligible 1% portal payout adds $10. Shipping of "
+                    "$8, insurance of $2, and a $5 loss reserve leave $40 before fixed "
+                    "overhead when both rewards become final. Without either reward, "
+                    "the same transaction contributes only $10. These are illustrative "
+                    "terms, not current offers from any named provider. Keep expected "
+                    "rewards out of available repayment cash until received. The treasury "
+                    "ledger records only interest, earned bonuses, direct charges, and "
+                    "relevant opportunity costs; it does not record a second sale of "
+                    "the same goods. Allocate each shared cost once and preserve the "
+                    "transaction identifier across all three ledgers. If a rebate is "
+                    "properly treated as a purchase-price adjustment, maintain the associated "
+                    "inventory or expense basis rather than automatically classifying it "
+                    "as separate sales revenue. Reconcile actual reporting forms to "
+                    "the underlying transactions instead of treating their gross totals "
+                    "as profit."
                 ),
                 (
-                    "Underwrite card float as a timing constraint rather than a "
-                    "substitute for startup capital. The indicated startup range is "
-                    "$10,000–$55,000, with monthly operating expense of $1,500–$9,000; "
-                    "actual commitments must fit available cash and contractual payment "
-                    "dates. A ledger may track a sixty-day horizon, but "
-                    "a specific purchase receives only the interval allowed by "
-                    "its statement cycle, grace-period eligibility and issuer terms. "
-                    "For $10,000 of eligible spending, 2% rewards equal "
-                    "$200 and 4% equal $400 before fees; verify "
-                    "caps, exclusions, reversals and earning conditions before assuming "
-                    "an uncapped program. At an illustrative 24% annual "
-                    "borrowing rate, carrying $10,000 for thirty days costs "
-                    "about $197.26 using actual days over 365, nearly "
-                    "consuming the 2% reward. Model issuer financial review "
-                    "or shutdown by assuming no further purchasing capacity "
-                    "while existing balances remain payable. Maintain shipment insurance "
-                    "with coverage appropriate to the merchandise, value and "
-                    "carrier terms, and preserve serial numbers where applicable. "
-                    "If a buying group misses its promised ACH "
-                    "date, freeze incremental exposure immediately. More available credit "
-                    "does not cure a deteriorating counterparty or convert "
-                    "an overdue receivable into usable cash."
+                    "Payment-routing proposals need especially disciplined subtraction. On "
+                    "a legitimate $10,000 supplier invoice, an assumed 3% processing "
+                    "fee costs $300 while a permitted 2% card reward earns $200, "
+                    "leaving a $100 deficit. Forty days of return on $10,000 at an "
+                    "assumed 4% annual yield adds approximately $43.84, so even that "
+                    "illustrative timing benefit leaves a $56.16 deficit before other "
+                    "costs. This comparison does not authorize investing money needed "
+                    "for repayment or assume that processor charges earn rewards. Check "
+                    "the actual eligible charge base, merchant coding, card treatment, "
+                    "and fee quote. A genuine supplier discount can change the result, "
+                    "but it must appear in the invoice terms and must not duplicate "
+                    "a discount already included in the purchase price. Never create "
+                    "circular invoices, self-payments disguised as supplier purchases, "
+                    "or transactions whose only purpose is to manufacture reward volume. "
+                    "When an invoice route fails, direct ACH is often the correct "
+                    "answer. When a portal fails, submit the permitted claim with "
+                    "order evidence, keep the disputed amount outside cash forecasts, "
+                    "and stop routing similar orders until the attribution failure "
+                    "has an identified cause."
                 ),
                 (
-                    "Use days one through thirty for verified contacts, sample checks "
-                    "and small signed pilots; days thirty-one through sixty for "
-                    "delivery, settlement and repeat orders; and days sixty-one through "
-                    "ninety for cautiously increasing the lanes that actually reconcile. "
-                    "Target three settled wins before expanding into additional product "
-                    "families, with ten as an upper first-cycle objective rather "
-                    "than a purchase quota. Assign the founder to underwriting "
-                    "and buyer relationships, one contractor to evidence collection and "
-                    "another to reconciliation in the Conservative and Base team "
-                    "design of 1 FT + 2 C. The Scaled "
-                    "design is 2 FT + 3 C, five people "
-                    "total. Automation should compare commitments, invoices, delivery scans, "
-                    "acceptance records and settlement references; exceptions return to a "
-                    "named operator. For tickets, synchronize inventory through supported "
-                    "SkyBox or Automatiq functions and test duplicate-sale prevention "
-                    "with a controlled listing before broad distribution. Review "
-                    "profit per funded dollar-day, settlement punctuality, loss severity "
-                    "and repeat purchase rate every week. Retire channels "
-                    "whose apparent spreads vanish after returns or markdowns. "
-                    "The next dollar belongs in a documented repeatable "
-                    "cash cycle, not whichever new offer advertises the "
-                    "largest percentage discount."
+                    "Reconcile the annual scorecard without pretending these sample spreads "
+                    "produce its retained share automatically. Formula v2.0 uses a 35% "
+                    "retained contribution assumption: $250,000, $1,025,000, and $1,800,000 "
+                    "of gross scorecard basis become $87,500, $358,750, and $630,000. "
+                    "The corresponding landed merchandise deductions are $162,500, $666,250, "
+                    "and $1,170,000. Additional operating costs of $67,500, $215,250, "
+                    "and $270,000 then reconcile exactly to annual owner profits of "
+                    "$20,000, $143,500, and $360,000. Those profits equal 8%, 14.0%, "
+                    "and 20% of gross basis, or 22.86%, 40.0%, and 57.14% of retained "
+                    "contribution. These are canonical portfolio scenarios, not measured "
+                    "results or evidence that ordinary rewards yield 35%. The monthly "
+                    "opex range does not explain every residual cost; budget labor, "
+                    "losses, and other operating deductions explicitly. ASC 606 "
+                    "principal-versus-agent presentation requires a contract-specific control "
+                    "assessment; a retained-share parameter cannot determine recognition. "
+                    "Keep gross merchandise flows, retained contribution, recognized revenue, "
+                    "and owner profit separately labeled. Within the $10,000–$55,000 "
+                    "startup envelope, scale only after cleared pilot results support "
+                    "the intended mix. If observed margins remain lower, revise the "
+                    "operating forecast rather than relabeling card principal as earnings."
                 ),
             ],
             "table": {
-                "caption": "Canonical Scorecard Reconciliation and Expansion Controls",
+                "caption": "Separated Unit Economics and Exact Formula v2.0 Annual Reconciliation",
                 "headers": [
-                    "Scenario or operating control under review",
-                    "Gross receipts and retained economics being measured",
-                    "Owner profit or specific adverse cash outcome",
-                    "Staffing decision or required operating response",
+                    "Economic case and its distinct measurement basis",
+                    "Receipts, retained contribution, or eligible earned benefit",
+                    "Costs and deductions required for reconciliation",
+                    "Result and decision the operator should make",
                 ],
                 "rows": [
                     [
-                        "Conservative annual case uses the supplied Formula v2.0 assumptions",
-                        "$250,000 gross receipts produce $87,500 retained revenue at 35%",
-                        "$20,000 owner profit means 8% gross-basis and 22.86% retained margins",
-                        "Operate with 1 FT + 2 C under measured pilot exposure",
+                        "Wholesale pilot with rewards separately identified and finally earned",
+                        "$1,025 reimbursement plus $20 card reward plus $10 portal payout totals $1,055.",
+                        "$1,000 merchandise plus $8 shipping, $2 insurance, and $5 loss reserve totals $1,015.",
+                        "$40 contribution before overhead; only $10 remains if both rewards disappear.",
                     ],
                     [
-                        "Base annual case uses the supplied Formula v2.0 assumptions",
-                        "$1,025,000 gross receipts produce $358,750 retained revenue at 35%",
-                        "$143,500 owner profit means 14.0% gross-basis and 40.0% retained margins",
-                        "Maintain 1 FT + 2 C with reconciled repeat-order workflows",
+                        "Commercial invoice routing using explicitly illustrative processor and reward rates",
+                        "$200 eligible card reward plus approximately $43.84 timing benefit totals $243.84.",
+                        "$300 processing fee assumes 3% of the actual $10,000 supplier invoice principal.",
+                        "$56.16 economic deficit remains; prefer direct ACH unless documented terms change.",
                     ],
                     [
-                        "Scaled annual case uses the supplied Formula v2.0 assumptions",
-                        "$1,800,000 gross receipts produce $630,000 retained revenue at 35%",
-                        "$360,000 owner profit means 20% gross-basis and 57.14% retained margins",
-                        "Deploy 2 FT + 3 C across five accountable people",
+                        "Treasury bonus comparison against an alternative use of unencumbered cash",
+                        "$250 earned bonus assumes the business satisfies every stated sixty-day eligibility condition.",
+                        "$25 fees plus $49.32 foregone interest totals $74.32 of incremental economic cost.",
+                        "$175.68 incremental pretax benefit; the $10,000 deposit principal never becomes revenue.",
                     ],
                     [
-                        "Commercial card rewards face an interest expense stress test",
-                        "$10,000 eligible spending earns $200 at a 2% reward rate",
-                        "Thirty days at 24% costs approximately $197.26 using actual/365",
-                        "Pay contractual balances from cash rather than expected reimbursements",
+                        "Conservative annual scenario with one full-time operator and two contractors",
+                        "$250,000 gross basis less $162,500 landed merchandise equals $87,500 retained contribution.",
+                        "$67,500 additional operating costs reconcile retained contribution to the canonical owner result.",
+                        "$20,000 owner profit equals 8% gross margin and 22.86% retained margin.",
                     ],
                     [
-                        "Ticket inventory faces a documented lower-price liquidation stress test",
-                        "Eight $120 tickets sold at $130 generate $1,040 gross proceeds",
-                        "Twelve-percent seller fees plus $20 costs create a $64.80 loss",
-                        "Apply event-specific markdown decisions before delivery options become constrained",
+                        "Base annual scenario with one full-time operator and two contractors",
+                        "$1,025,000 gross basis less $666,250 landed merchandise equals $358,750 retained contribution.",
+                        "$215,250 additional operating costs reconcile retained contribution to the canonical owner result.",
+                        "$143,500 owner profit equals 14.0% gross margin and 40.0% retained margin.",
                     ],
                     [
-                        "Imported wholesale lot faces a product-specific admissibility stress test",
-                        "One hundred $50 units plus $900 costs require $5,900 cash",
-                        "A $7,200 accepted order leaves $1,300 before further operating costs",
-                        "Cancel unresolved imports or substitute eligible domestic documented merchandise",
+                        "Scaled annual scenario with two full-time operators and three contractors",
+                        "$1,800,000 gross basis less $1,170,000 landed merchandise equals $630,000 retained contribution.",
+                        "$270,000 additional operating costs reconcile retained contribution to the canonical owner result.",
+                        "$360,000 owner profit equals 20% gross margin and 57.14% retained margin.",
                     ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread between commitment and cash",
-                "body": "Experienced operators preserve evidence and liquidity before increasing purchasing volume.",
-                "items": [
-                    "Save a dated commitment snapshot showing the buying group's inspection clock; Net-3 language alone does not establish the cash date.",
-                    "Buy a sample against the downstream buyer's exact identifier before quoting an imported assortment, then retain the acceptance record.",
-                    "Allocate rewards to the originating order only once; separately flag reward reversals after returns and issuer eligibility changes.",
-                    "Set ticket markdown reviews before purchase and compare executable net bids, not optimistic listing prices from unsold inventory.",
                 ],
             },
         },
     ],
-    "pull_quote": "Source the buyer's commitment first, the inventory second, and count the win only when the cash reconciles.",
+    "pull_quote": "Source the buyer's commitment first, price every exception second, and count the win only after the cash clears.",
     "diagram_id": "diag-02",
     "action_checklist": [
-        "Create a demand ledger with source dates, exact specifications, buyer authority, delivered ceilings and acceptance conditions.",
-        "Build 120 raw signals across two lanes and test the illustrative funnel through signed orders and completed settlements.",
-        "Apply the 100-point qualification scorecard while independently verifying identity, product eligibility, ticket rights and cash coverage.",
-        "Run the four-touch outreach cadence with truthful commercial messages, suppression handling and real quote expirations.",
-        "Fund a small matched pilot, preserve shipment or transfer evidence, and pause new exposure whenever settlement slips.",
-        "Reconcile gross receipts, the 35% scorecard retained measure, transaction contribution and owner profit before increasing order size.",
+        "Build an eighty-record sourcing cohort with dated evidence, exact SKU or invoice need, responsible contact, and a distinct wholesale, reward, or treasury classification.",
+        "Obtain current written commitments from two vetted receiving counterparties and document acceptance, deductions, settlement start events, and exposure limits.",
+        "Apply the six-factor scorecard, require at least 85 points, and reject unresolved title, import, eligibility, or repayment problems regardless of score.",
+        "Run the six-touch relevant outreach cadence with accurate sender details, immediate opt-out suppression, and a capped paid-pilot proposal.",
+        "Stress every purchase for delayed ACH, missing rewards, carrier disputes, and the actual card due date; retain sufficient independently available repayment cash.",
+        "Reconcile the first three to ten completed cycles across separate wholesale, reward, and treasury ledgers before increasing order size or adopting the canonical annual targets.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits circumvention of covered ticket-purchase controls and specified sales of tickets obtained through prohibited circumvention.",
-        },
-        {
-            "title": "17 U.S.C. §109 — Limitations on exclusive rights and first sale",
+            "title": "17 U.S.C. § 109 — Limitations on exclusive rights: effect of transfer of particular copy",
             "url": "https://www.law.cornell.edu/uscode/text/17/109",
-            "relevance": "Provides the copyright first-sale framework discussed in Kirtsaeng; product imports still require separate trademark and regulatory analysis.",
+            "relevance": (
+                "Copyright first-sale analysis concerns disposition of qualifying copies; "
+                "it does not independently resolve trademark, customs, or medical-product restrictions."
+            ),
         },
         {
-            "title": "19 CFR §133.23 — Restrictions on importation of gray market articles",
+            "title": "Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013)",
+            "url": "https://www.supremecourt.gov/opinions/12pdf/11-697_d1o2.pdf",
+            "relevance": (
+                "The Supreme Court applied copyright first sale to qualifying copies "
+                "lawfully made abroad; authenticate goods and analyze separate import restrictions."
+            ),
+        },
+        {
+            "title": "19 U.S.C. § 1526 — Merchandise bearing American trade-mark",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1526",
+            "relevance": (
+                "Evaluate applicable trademark import restrictions, permissions, and exceptions "
+                "before committing capital to foreign-sourced branded merchandise."
+            ),
+        },
+        {
+            "title": "19 CFR § 133.23 — Restrictions on importation of gray market articles",
             "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-133/subpart-C/section-133.23",
-            "relevance": "Requires product-specific examination of trademark restrictions rather than assuming authentic foreign merchandise is automatically admissible.",
+            "relevance": (
+                "Review gray-market import treatment, including applicable material-difference "
+                "restrictions; identical packaging alone does not establish admissibility."
+            ),
         },
         {
-            "title": "21 U.S.C. §381 — Imports and exports of regulated products",
+            "title": "21 U.S.C. § 381 — Imports and exports",
             "url": "https://www.law.cornell.edu/uscode/text/21/381",
-            "relevance": "Establishes import examination and refusal mechanisms relevant to regulated cosmetics, medical consumables and diabetic test strips.",
+            "relevance": (
+                "Screen regulated consumables for admissibility and possible refusal before "
+                "using a foreign price quotation as a procurement signal."
+            ),
         },
         {
-            "title": "15 U.S.C. §7704 — Requirements for commercial electronic mail",
+            "title": "21 CFR § 809.10 — Labeling for in vitro diagnostic products",
+            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-809/subpart-B/section-809.10",
+            "relevance": (
+                "Diagnostic-product sourcing requires applicable labeling evidence rather "
+                "than an assumption that authentic foreign-market goods are interchangeable."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 7704 — Other protections for users of commercial electronic mail",
             "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs truthful commercial email, required sender information and functioning opt-out handling in the outbound sourcing cadence.",
+            "relevance": (
+                "Use accurate commercial email identification, required disclosures, a valid "
+                "postal address, effective opt-out handling, and coordinated suppression records."
+            ),
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Requires covered live-event ticket price offers to present total prices and applicable fee disclosures according to the rule.",
+            "title": "UCC § 2-312 — Warranty of title and against infringement",
+            "url": "https://www.law.cornell.edu/ucc/2/2-312",
+            "relevance": (
+                "Use title warranties and conflicting-claim diligence in procurement terms; "
+                "check the governing state's enacted version and contractual modifications."
+            ),
         },
         {
-            "title": "California Revenue and Taxation Code §6091 — Presumption of taxable retail sales",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6091.&lawCode=RTC",
-            "relevance": "Makes resale documentation material to supporting wholesale treatment; operators must also check the applicable jurisdiction's certificate requirements.",
+            "title": "26 U.S.C. § 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": (
+                "Reconcile applicable payment reporting to underlying transactions without "
+                "equating reported gross settlement amounts with taxable profit."
+            ),
         },
         {
-            "title": "New York Arts and Cultural Affairs Law §25.13 — Licensing of ticket resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": "Provides a concrete state licensing check for covered ticket-resale activity rather than assuming one national operating standard.",
+            "title": "26 CFR § 1.471-3 — Inventories at cost",
+            "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.471-3",
+            "relevance": (
+                "Maintain inventory cost records addressing applicable discounts and acquisition "
+                "charges; classify purchase-linked rewards according to their actual treatment."
+            ),
         },
     ],
 }

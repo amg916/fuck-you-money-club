@@ -5,674 +5,693 @@ CHAPTER_4 = {
     "chapter_id": "Q4",
     "chapter_number": 4,
     "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-and-pre-flight-stack",
+    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
     "question_prompt": "How do you allocate startup capital ($10,000–$55,000 USD) and configure a lean, low-opex ($1,500–$9,000 USD/mo) production stack without wasting cash on bloated overhead?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
     "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Protect Settlement Reserves, Reconcile Net-3 Buying Groups, and Launch a BOTS Act-Compliant Ticket Stack",
+    "subtitle": "Reserve-First Capital, BuyForMeRetail Settlement Controls, Commercial Card Ledgers, and Treasury Maturity Matching",
     "layout_template": "comparison_table",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, ranked #09 of 42 with a 93/100 Money-to-Manpower Score, "
-        "turns purchasing discipline into a small-team operating advantage across "
-        "11 mapped plays. Start with $10,000–$55,000, protect at least half as "
-        "working capital and float reserves, and buy software only after the "
-        "settlement ledger works. The canonical annual owner-profit cases are "
-        "$20,000 Conservative, $143,500 Base, and $360,000 Scaled; corresponding "
-        "retained revenue is $87,500, $358,750, and $630,000. Those results require "
-        "separate control of merchandise basis, ticket exposure, issuer payments, "
-        "and client-authorized advertising spend. This chapter specifies capital "
-        "buckets, twelve infrastructure layers, operating-cost bridges, and "
-        "pre-launch tests that prevent a delayed buying-group ACH or decaying "
-        "ticket allocation from consuming the next statement payment."
+        "Candidate #41, Rank #10 of 43, scores 93/100 across 11 mapped plays, but its "
+        "production stack starts with repayment capacity rather than reward optimization. "
+        "Allocate 60% of the $10,000–$55,000 startup budget to working capital and "
+        "repayment reserves; keep wholesale fulfillment, commercial card rebates, and "
+        "treasury income in separate ledgers. Formula v2.0 produces annual owner profits "
+        "of $20,000 Conservative, $143,500 Base, and $360,000 Scaled. Those outcomes "
+        "require the specified contribution bridge, not an assumption that card limits "
+        "create earnings. This chapter prices a twelve-layer lean stack, sizes delayed-ACH "
+        "exposure, separates overhead from transaction costs, and establishes shipment, "
+        "issuer, accounting, and maturity checks. The agency advertising play earns its "
+        "place only when genuine authorized spend remains profitable after client obligations."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross activity basis; $87,500 retained revenue at 35%.",
-            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%",
+            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross activity basis; $358,750 retained revenue at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%",
+            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross activity basis; $630,000 retained revenue at 35%.",
-            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%",
+            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C",
         },
     ],
     "sections": [
         {
-            "heading": "1. Ring-fence settlement cash before purchasing inventory",
+            "heading": "1. Ring-fence repayment cash before purchasing the first unit",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Allocate startup cash by settlement obligation, not by the size of "
-                    "the available card limit. The three illustrative launch budgets "
-                    "below use $10,000, $30,000, and $55,000; they are capital plans, "
-                    "not additional earnings scenarios. Each places 60% in working "
-                    "capital and float protection. Split that bucket internally between "
-                    "deployable purchase cash and an untouched issuer-payment reserve: "
-                    "$3,000 plus $3,000, $9,000 plus $9,000, and $16,500 plus "
-                    "$16,500, respectively. Neither the ticket pilot nor the operating "
-                    "cushion counts toward the 60% test. A credit limit is contingent "
-                    "purchasing capacity, not cash, and an anticipated rebate cannot "
-                    "pay a statement until it actually posts. With $3,000 deployable, "
-                    "a $2,000 pre-committed buying-group order leaves only $1,000 for "
-                    "another order, regardless of a larger unused card line. Require "
-                    "the purchase order to identify exact SKUs, accepted condition, "
-                    "quantity, reimbursement amount, delivery destination, and the "
-                    "event starting the Net-3 or Net-5 clock. Reserve funds remain "
-                    "available for the issuer even when receiving inspection delays "
-                    "the buying group's payment. Never count the same dollar as "
-                    "inventory capital, emergency liquidity, and the next month's "
-                    "contractor payment. That triple allocation is how profitable "
-                    "spreads become missed payments."
+                    "Build the opening budget around money that can settle a statement, not the "
+                    "headline credit limit. At $10,000, dedicate $4,000 to purchase-cycle working "
+                    "capital and $2,000 to untouched repayment cash; at $55,000, allocate $22,000 "
+                    "and $11,000 respectively. Both plans preserve 60% for those two purposes, "
+                    "above the 50% minimum. The working-capital bucket may become inventory or "
+                    "a receivable, so it is not interchangeable with immediately available cash. "
+                    "The separate claims reserve absorbs damage, denied returns, and carrier "
+                    "deductibles; it should not silently fund another order. Treat each budget "
+                    "allocation as an internal envelope within properly titled business accounts, "
+                    "not a reason to open seven fee-bearing accounts. The $1,500 or $9,000 "
+                    "operating buffer funds only one month at the corresponding overhead ceiling. "
+                    "If launch requires three months without receipts, retain more runway by "
+                    "reducing purchasing, contributions from owners being recorded explicitly. "
+                    "Do not stretch supplier commitments to disguise insufficient capital. At the "
+                    "smallest budget, the untouched $2,000 repayment bucket supports a much "
+                    "smaller uncovered exposure than a $20,000 commercial card limit suggests. "
+                    "Owner draws begin only after taxes, statements, and unsettled shipment "
+                    "exposure have been reserved."
                 ),
                 (
-                    "Size each buying-group commitment against the cash conversion "
-                    "cycle observed in completed transactions. Suppose a group accepts "
-                    "ten devices costing $400 each and commits to reimburse $410 per "
-                    "device. The merchandise spread is $100. A genuinely eligible "
-                    "2% card rebate adds $80; $35 insured carriage and $15 packing "
-                    "leave $130 before overhead and loss allowances. A 4% reward "
-                    "would add another $80 only where written issuer terms support "
-                    "that rate without an exhausted category cap or excluded "
-                    "purchase. Do not buy merely because an advertised spread looks "
-                    "attractive. Confirm acceptance first, photograph serial numbers, "
-                    "retain the carrier's acceptance scan, and reconcile delivered "
-                    "units against the group's receiving report. Net-3 describes "
-                    "contractual timing, not guaranteed bank availability. A five-day "
-                    "inspection delay plus a weekend can materially extend the "
-                    "cash cycle. Set an initial exposure ceiling of the smaller of "
-                    "$2,000 or 20% of startup cash per unproven group, then increase "
-                    "only after three clean settlements. At the $10,000 launch size, "
-                    "the $3,000 deployable bucket remains the tighter aggregate "
-                    "constraint. If payment slips, stop new commitments rather than "
-                    "using another issuer to hide the aging receivable."
+                    "Maintain a daily coverage ladder by actual calendar date: available bank "
+                    "cash, collectible buying-group balances, scheduled card debits, shipment "
+                    "exposure, and security maturities. A potential 55-day statement interval "
+                    "is a best-positioned purchase window, not a contractual grace period for "
+                    "every transaction. A purchase just before closing can have far less time; "
+                    "grace treatment also depends on the account agreement and payment behavior. "
+                    "For a $5,000 wholesale lot, assume three transit days, two receiving days, "
+                    "and a stated Net-5 payment term beginning only after accepted receipt. "
+                    "If business-day counting and an additional ten-business-day ACH delay "
+                    "push settlement beyond the card due date, the operator still owes the "
+                    "issuer on time. Never satisfy that obligation with an uncollected portal "
+                    "reward or a disputed carrier claim. At the lean budget, a $5,000 exposed "
+                    "lot exceeds the $2,000 untouched repayment reserve; either identify "
+                    "another $3,000 of genuinely unencumbered cash or reduce the lot. Freeze "
+                    "new commitments when stressed due-date coverage falls below one dollar "
+                    "of available cash per dollar due. Any permitted standby facility enters "
+                    "the cost model with its actual draw conditions, interest, and fees."
                 ),
                 (
-                    "Keep the scorecard bridge beside the capital plan so gross "
-                    "throughput never masquerades as spendable earnings. Formula v2.0 "
-                    "uses a 35% retained share: $250,000 becomes $87,500, $1,025,000 "
-                    "becomes $358,750, and $1,800,000 becomes $630,000. Subtract "
-                    "total operating costs of $67,500, $215,250, and $270,000 to "
-                    "reach the exact owner profits of $20,000, $143,500, and "
-                    "$360,000. For a planning bridge, allocate recurring overhead "
-                    "of $18,000, $54,000, and $108,000 annually, corresponding to "
-                    "$1,500, $4,500, and $9,000 monthly. The remaining annual "
-                    "operating-cost allowances are $49,500, $161,250, and "
-                    "$162,000 for transaction charges, variable labor, claims, and "
-                    "other costs outside landed inventory basis. Assign every cost "
-                    "once; do not subtract face-value tickets or merchandise again "
-                    "after the 65% basis deduction. These allocations reconcile the "
-                    "model, rather than proving those expense ratios will occur. "
-                    "The resulting retained margins are 22.86%, 40.0%, and "
-                    "57.14%. ASC 606 principal-versus-agent analysis remains "
-                    "transaction-specific; the model's retained share is not a "
-                    "universal accounting election. Have the bookkeeper map gross "
-                    "activity, basis, recognized revenue, and owner compensation "
-                    "explicitly before publishing management statements or treating "
-                    "the modeled residual as a distributable cash balance."
+                    "Keep the canonical scorecard bridge visible beside the cash ladder. "
+                    "Conservative gross activity of $250,000 retains $87,500 at 35%, then "
+                    "absorbs $67,500 of remaining costs to produce $20,000 owner profit. "
+                    "Base activity of $1,025,000 retains $358,750, less $215,250, producing "
+                    "$143,500. Scaled activity of $1,800,000 retains $630,000, less $270,000, "
+                    "producing $360,000. The corresponding gross-basis margins remain 8%, "
+                    "14.0%, and 20%; retained-basis margins are 22.86%, 40.0%, and 57.14%. "
+                    "A planning allocation of $1,500, $4,500, and $9,000 monthly fixed "
+                    "overhead consumes $18,000, $54,000, and $108,000 annually, leaving "
+                    "$49,500, $161,250, and $162,000 for other post-contribution costs. "
+                    "Those residuals must cover the actual labor, processing, losses, and "
+                    "other expenses classified outside landed merchandise cost. Do not "
+                    "deduct a cost twice. The staffing labels describe one full-time person "
+                    "plus two contractors in the first two cases and two full-time people "
+                    "plus three contractors when scaled, not five full-time salaries. "
+                    "The 35% retained-share bridge is the supplied modeling convention; "
+                    "ASC 606 principal-versus-agent assessment still determines presentation. "
+                    "Client advertising spend, card principal, and treasury principal are "
+                    "not automatically recognized operator revenue."
                 ),
             ],
             "table": {
-                "caption": "Illustrative Startup Allocations That Preserve a 60% Working-Capital and Float Bucket",
+                "caption": "Opening Cash Allocation: Two Fully Reconciled Budgets with 60% Working-Capital Protection",
                 "headers": [
-                    "Capital bucket and operating purpose",
-                    "$10,000 launch allocation and restriction",
-                    "$30,000 launch allocation and restriction",
-                    "$55,000 launch allocation and restriction",
+                    "Capital envelope and operational purpose",
+                    "$10,000 opening capitalization allocation",
+                    "$55,000 opening capitalization allocation",
+                    "Release condition and replenishment discipline",
                 ],
                 "rows": [
                     [
-                        "Working capital plus protected issuer settlement reserve",
-                        "$6,000 total; deploy $3,000 and protect $3,000",
-                        "$18,000 total; deploy $9,000 and protect $9,000",
-                        "$33,000 total; deploy $16,500 and protect $16,500",
+                        "Purchase-cycle working capital for accepted wholesale commitments",
+                        "$4,000 allocated to narrowly capped purchase cycles",
+                        "$22,000 allocated across independently verified buying counterparties",
+                        "Release against accepted commitments with dated settlement expectations",
                     ],
                     [
-                        "Entity formation, bookkeeping setup, and required registrations",
-                        "$700 allowance; verify actual state filing charges first",
-                        "$1,200 allowance; include accountant ledger mapping work",
-                        "$1,800 allowance; include additional operating-state registration review",
+                        "Untouched statement repayment reserve held as cash",
+                        "$2,000 reserved against card obligations approaching maturity",
+                        "$11,000 reserved against stressed card payment schedules",
+                        "Use for repayment rather than incremental speculative inventory",
                     ],
                     [
-                        "Insurance deposits and shipment protection funding allowance",
-                        "$500 allowance; bind coverage before accepting expensive inventory",
-                        "$1,200 allowance; review transit exclusions and claim deductibles",
-                        "$2,200 allowance; match insured limits to peak custody",
+                        "Entity formation, registered agent, and initial accounting",
+                        "$700 planning allowance with state charges verified",
+                        "$2,500 planning allowance including ownership documentation support",
+                        "Pay documented invoices and preserve formation evidence centrally",
                     ],
                     [
-                        "Hardware, security keys, and initial software configuration",
-                        "$500 allowance; reuse existing computer and purchase security keys",
-                        "$1,000 allowance; add dedicated scanning and backup equipment",
-                        "$1,500 allowance; equip the second authorized operating seat",
+                        "Initial insurance premium funding and shipment protection",
+                        "$600 planning allowance subject to actual underwriting",
+                        "$3,000 planning allowance subject to inventory exposure",
+                        "Bind appropriate coverage before releasing insured shipment values",
                     ],
                     [
-                        "Small ticket allocation pilot with explicit loss ceiling",
-                        "$300 allocation; buy only transferable, documented ticket inventory",
-                        "$2,600 allocation; diversify events and reserve selling charges",
-                        "$5,000 allocation; reject concentrated speculative premium-event inventory",
+                        "Software, authentication hardware, and configuration equipment",
+                        "$300 planning allowance favoring existing supported hardware",
+                        "$1,500 planning allowance with tightly controlled subscriptions",
+                        "Purchase only tools assigned a measurable operational responsibility",
                     ],
                     [
-                        "Uncommitted operating cushion outside protected settlement funds",
-                        "$2,000 cushion; approximately 1.33 months at $1,500 overhead",
-                        "$6,000 cushion; approximately 1.33 months at $4,500 overhead",
-                        "$11,500 cushion; approximately 1.28 months at $9,000 overhead",
+                        "Claims, return leakage, and deductible loss reserve",
+                        "$900 segregated economically from ordinary purchase capacity",
+                        "$6,000 segregated economically from ordinary purchase capacity",
+                        "Replenish after losses before increasing outstanding shipment exposure",
+                    ],
+                    [
+                        "One month of fixed operating expense liquidity",
+                        "$1,500 funds the lean monthly overhead floor",
+                        "$9,000 funds the scaled monthly overhead ceiling",
+                        "Extend runway by shrinking orders when receipts slip",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Buy settlement certainty before buying more volume",
-                "body": "The cheapest protection is a smaller commitment with complete evidence and a funded exit.",
+                "title": "Buy repayment certainty before buying additional reward volume",
+                "body": "Experienced operators optimize collectible contribution per exposed dollar, not the largest advertised reward percentage.",
                 "items": [
-                    "Record the group's receiving acceptance timestamp separately from the carrier delivery timestamp; calculate contractual aging from the actual agreed trigger.",
-                    "Record the issuer's statement close and payment due date before purchase; treat any 60-day float claim as unverified until the specific agreement supports it.",
-                    "Keep serial-number photographs, packing weights, and insured declared values together; confirm the policy covers the actual commodity and destination.",
-                    "Release reserved cash only after cleared reimbursement and completed issuer reconciliation, never merely after an ACH notification or rewards estimate.",
+                    "Place the issuer due date, warehouse acceptance date, and ACH availability date on the same order record; statement closing alone cannot establish repayment safety.",
+                    "Use a small accepted shipment to measure each group's receiving-to-cleared-cash interval before allowing that group to consume a larger reserve allocation.",
+                    "Keep portal proceeds outside purchase authorization capacity until cash is available; retain the original click record and offer exclusions for later disputes.",
+                    "Allocate claims cash separately from repayment cash so a denied electronics claim cannot consume money already promised to an issuer.",
                 ],
             },
         },
         {
-            "heading": "2. Assemble twelve infrastructure layers without twelve subscriptions",
+            "heading": "2. Configure twelve inexpensive layers with one accountable ledger",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Build the stack around one transaction identifier that survives "
-                    "purchase, shipment, reimbursement, listing, sale, and statement "
-                    "payment. Airtable can hold the commitment register, while Google "
-                    "Sheets calculates cash exposure and Wave holds bookkeeping "
-                    "entries. Those tools have different jobs; none should silently "
-                    "overwrite another system's settled amounts. A buying-group "
-                    "record needs group identity, purchase-order reference, SKU, "
-                    "quantity, card account suffix, purchase date, acceptance date, "
-                    "promised settlement date, reimbursement received, and evidence "
-                    "links. A ticket record needs event, venue, section, row, seats, "
-                    "transfer restrictions, acquisition basis, listing identifiers, "
-                    "exchange charges, and payout status. Track stadium seat licenses "
-                    "and corporate-suite allocations separately because transfer "
-                    "conditions and delivery obligations differ from ordinary event "
-                    "tickets. Store payment credentials in the issuer or approved "
-                    "payment platform, not in a spreadsheet. Give contractors "
-                    "task-specific access through named accounts. The matrix uses "
-                    "exact planning prices for selected tiers, not a claim that "
-                    "current checkout terms have been verified. Confirm region, "
-                    "taxes, annual commitments, included features, and business "
-                    "eligibility before purchase. A quoted or usage-priced service "
-                    "does not become free merely because the initial software "
-                    "budget assigns it no spending authority."
+                    "Provision the twelve layers below as a minimal control system, not a "
+                    "collection of dashboards. Prices are explicit US-dollar planning inputs "
+                    "for the named tiers, not verified current quotations; confirm checkout "
+                    "pricing, eligibility, taxes, and renewal terms before purchase. The "
+                    "selected one-user configuration totals $20 monthly for Google Workspace, "
+                    "Bitwarden, and Backblaze, plus $125 annually for the registered agent: "
+                    "$365 per year before taxes, domain registration, state charges, payment "
+                    "fees, insurance, and equipment. Workspace and Bitwarden prices assume "
+                    "annual commitments; Backblaze uses monthly billing. Zero-subscription "
+                    "tiers still have usage limits, restricted features, or transaction costs. "
+                    "Neither Mercury nor Fidelity removes the need to understand the "
+                    "underlying account, cash placement, and eligibility arrangements. Reuse "
+                    "a supported encrypted laptop rather than purchasing a server rack. "
+                    "Do not allocate the remaining overhead ceiling to subscriptions simply "
+                    "because it exists. That ceiling must also accommodate contractors, "
+                    "accounting review, insurance, and administrative work. Add a paid "
+                    "automation tier only after its documented savings exceed its cost and "
+                    "the workflow has survived a manual reconciliation cycle. Keep annual "
+                    "commitments short enough that a closed issuer account cannot strand "
+                    "a year of unnecessary infrastructure."
                 ),
                 (
-                    "Start with a $100 monthly software and communications allowance "
-                    "inside the $1,500 lean overhead plan. One Google Workspace "
-                    "Business Starter seat at a $7 monthly equivalent on annual "
-                    "commitment and one Bitwarden Teams seat at $4 consume $11 "
-                    "before taxes, domain registration, and any additional seats. "
-                    "Treat these as procurement reference prices and replace them "
-                    "with accepted vendor quotations before signing. The remaining "
-                    "allowance covers small usage charges and avoids committing "
-                    "the full budget to subscriptions. An illustrative $1,500 "
-                    "monthly envelope also assigns $750 to limited contractor "
-                    "support, $250 to bookkeeping and tax administration, $200 "
-                    "to insurance, $100 to storage and supplies, and $100 to "
-                    "connectivity and bank-service contingencies. These are budget "
-                    "allowances, not vendor offers. They exclude owner living "
-                    "costs and do not imply that $750 buys a full-time employee. "
-                    "The Conservative and Base teams each contain one full-time "
-                    "operator and two contractors; contractor headcount does not "
-                    "mean full-time hours. At Scaled, two full-time people and "
-                    "three contractors must fit the full $270,000 cost bridge. "
-                    "If paid staffing exceeds that envelope, revise the operating "
-                    "plan rather than quietly retaining the canonical profit claim."
+                    "Assign every purchase a stable order identifier shared across the "
+                    "buying-group commitment, retailer receipt, shipment label, warehouse "
+                    "acceptance, card posting, and bank settlement. Airtable can hold the "
+                    "operating register; Wave holds posted accounting entries, not the "
+                    "authoritative tracking history. GitHub stores stdlib reconciliation "
+                    "scripts and schema changes, while Make moves permitted notifications "
+                    "without becoming the sole repository of evidence. Export the register "
+                    "daily to a restricted Workspace folder and back up the working "
+                    "computer through Backblaze. Test restoration with actual sample "
+                    "records, because a successful backup notification does not prove "
+                    "recoverability. Avoid storing full card numbers, security codes, or "
+                    "bank credentials in order notes. Bitwarden handles secrets with "
+                    "individual accounts and documented offboarding. Prefer read-only "
+                    "bank exports or supported connections to browser automation carrying "
+                    "payment authority. No contractor needs unrestricted treasury access "
+                    "to reconcile a delivery exception. Preserve a simple manual fallback: "
+                    "download issuer CSV files, match transaction identifiers, review "
+                    "unmatched rows, and post approved adjustments. The automation should "
+                    "highlight discrepancies rather than fabricate matches based only on "
+                    "similar amounts. Repeated $999 electronics purchases make amount-only "
+                    "matching especially dangerous across multiple warehouses and statement cycles."
                 ),
                 (
-                    "Automate reconciliation before automating purchases. Use Make "
-                    "only for supported integrations that copy authorized records, "
-                    "flag overdue settlements, and prepare exceptions for review. "
-                    "Do not build queue bypasses, CAPTCHA solvers, purchasing-limit "
-                    "circumvention, or credential-sharing workarounds. The federal "
-                    "BOTS Act, 15 U.S.C. §45c, reaches prohibited circumvention "
-                    "and specified resale of tickets obtained through it; a "
-                    "ticket POS is an inventory control tool, not purchase "
-                    "authorization. SkyBox can centralize ticket inventory and "
-                    "supported exchange distribution, but verify access terms, "
-                    "selling charges, payout holds, and synchronization behavior "
-                    "with the actual account. Automatiq is an optional repricing "
-                    "candidate only after a written quote and a controlled "
-                    "trial; its custom cost is deliberately excluded from the "
-                    "zero-license-cost launch design. Never invent an exact "
-                    "subscription price for a quoted service. First demonstrate "
-                    "that one authorized sale withdraws every duplicate listing "
-                    "before another exchange can sell the same seats. Schedule "
-                    "daily exports to an encrypted local backup, and test "
-                    "restoration using a separate working copy. If an automation "
-                    "breaks, freeze affected listings and reconcile manually. "
-                    "A small, recoverable ledger is cheaper than a sophisticated "
-                    "integration that creates duplicate obligations during an "
-                    "event's final selling window."
+                    "Entity hygiene starts with the legal name on contracts, bank accounts, "
+                    "issuer applications, insurance, and resale documentation agreeing. "
+                    "Obtain an EIN directly from the IRS without a filing-service surcharge, "
+                    "record owner contributions separately from sales, and retain the "
+                    "operating agreement and authorized signer schedule. Delaware, New "
+                    "Hampshire, and Oregon lack a general statewide sales tax, but a "
+                    "warehouse address there does not automatically create resale "
+                    "eligibility for every transaction. Apply the actual seller, destination, "
+                    "resale, and nexus rules; maintain certificates where required and "
+                    "accepted. For insurance, obtain written treatment of electronics, "
+                    "commercial resale, transit, unattended delivery, third-party receiving, "
+                    "theft exclusions, valuation, and deductibles. Carrier declared value "
+                    "is not interchangeable with a standalone cargo policy. Read the "
+                    "buying-group contract for the point at which loss and title transfer; "
+                    "UCC section 2-509 supplies defaults that contractual terms can alter. "
+                    "Keep delivery signatures, serial numbers where available, packing "
+                    "evidence, and claim deadlines attached to the order. Separate banking "
+                    "reduces reconciliation mistakes but does not by itself resolve tax "
+                    "classification or liability questions. Review account ownership and "
+                    "insured-deposit aggregation before splitting reserves among interfaces "
+                    "that may place money at the same underlying bank."
                 ),
             ],
             "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack With Explicit Procurement Reference Prices and Lean Fallbacks",
+                "caption": "Twelve-Layer Named-Vendor Stack: Explicit Planning Prices, Responsibilities, and Lean Substitutes",
                 "headers": [
-                    "Infrastructure layer and named vendor selection",
-                    "Selected tier and exact planning price",
-                    "Production role and spending boundary",
-                    "Cheaper or simpler operating alternative",
+                    "Infrastructure layer and selected named vendor",
+                    "Selected tier and explicit subscription assumption",
+                    "Assigned responsibility and operating control boundary",
+                    "Cheaper or simpler lean operating alternative",
                 ],
                 "rows": [
                     [
-                        "Domain routing and DNS through Cloudflare services",
-                        "Cloudflare Free plan; $0 monthly DNS subscription charge",
-                        "Manage DNS records; domain registration remains separately payable",
-                        "Use registrar-included DNS while maintaining equivalent access controls",
+                        "Entity notices through Northwest Registered Agent service",
+                        "$125 yearly registered-agent service; state charges excluded",
+                        "Receive official notices and maintain documented escalation ownership",
+                        "Act as your own agent where eligibility permits",
                     ],
                     [
-                        "Business identity and email through Google Workspace",
-                        "Business Starter; $7 per user monthly equivalent, annual commitment",
-                        "Provide named email, shared documents, and controlled business ownership",
-                        "Use existing business email when equivalent controls already exist",
+                        "Business operating bank interface through Mercury accounts",
+                        "$0 monthly standard banking subscription; incidental fees separate",
+                        "Segregate operating cash and verify underlying deposit placement",
+                        "Use an existing eligible zero-monthly-fee business account",
                     ],
                     [
-                        "Credential vault and sharing through Bitwarden Teams",
-                        "Teams tier; $4 per user monthly equivalent, annual billing",
-                        "Share approved secrets without exposing them inside transaction spreadsheets",
-                        "Use Bitwarden Free individually; avoid shared contractor credentials",
+                        "Accounting and expense classification through Wave Starter",
+                        "$0 monthly Starter subscription; payment services priced separately",
+                        "Post reconciled entries without confusing reimbursements with earnings",
+                        "Use a controlled spreadsheet plus accountant-reviewed monthly journals",
                     ],
                     [
-                        "Business cash accounts through eligible Mercury banking services",
-                        "Standard account baseline; $0 monthly maintenance planning price",
-                        "Separate operating cash from protected issuer-payment reserve balances",
-                        "Use an existing business checking account with suitable permissions",
+                        "Business identity and records through Google Workspace",
+                        "$7 per user monthly Business Starter annual commitment",
+                        "Maintain business email and restricted evidence storage folders",
+                        "Use existing business email and encrypted local records",
                     ],
                     [
-                        "General ledger bookkeeping through Wave accounting software",
-                        "Starter tier; $0 monthly accounting subscription planning price",
-                        "Post reconciled activity; paid payments and payroll remain excluded",
-                        "Use structured double-entry spreadsheets with accountant-reviewed monthly closing",
+                        "Credential management through Bitwarden Teams password management",
+                        "$4 per user monthly Teams tier billed annually",
+                        "Separate user access and remove departed contractor credentials",
+                        "Use Bitwarden Free for a sole operator only",
                     ],
                     [
-                        "Commitment register and exception tracking through Airtable",
-                        "Free tier; $0 monthly subscription within published limits",
-                        "Track acceptance evidence, reimbursement aging, and responsible operating owner",
-                        "Use protected Google Sheets tabs with controlled edit permissions",
+                        "Commitment and shipment register through Airtable Free",
+                        "$0 monthly Free tier within published usage limits",
+                        "Link commitments, tracking, acceptance, and cleared settlement evidence",
+                        "Maintain a versioned CSV register with validated columns",
                     ],
                     [
-                        "Authorized workflow integration through Make automation services",
-                        "Free tier; $0 monthly subscription within included usage",
-                        "Create alerts and reconciliation tasks, never bypass purchase restrictions",
-                        "Run scheduled manual exports until transaction volume justifies automation",
+                        "Reconciliation source control through GitHub Free repositories",
+                        "$0 monthly Free tier within included service allowances",
+                        "Version scripts while excluding credentials and customer records",
+                        "Use local Git with encrypted off-device repository backups",
                     ],
                     [
-                        "Ticket inventory and exchange distribution through SkyBox",
-                        "Free POS reference; $0 license budget pending vendor confirmation",
-                        "Control seat inventory; separately verify exchange charges and access",
-                        "Use one exchange directly until synchronization testing is complete",
+                        "Permitted notification automation through Make Free scenarios",
+                        "$0 monthly Free tier within current usage allowances",
+                        "Flag unmatched events without autonomously releasing bank payments",
+                        "Run scheduled Python scripts and review exception emails",
                     ],
                     [
-                        "Statement float and reward calculation through Google Sheets",
-                        "Workspace-included Sheets; $0 incremental monthly subscription planning price",
-                        "Calculate real due dates, cash coverage, and posted rewards",
-                        "Use LibreOffice Calc locally with encrypted versioned backup copies",
+                        "Shipping label purchase through Pirate Ship software",
+                        "$0 monthly software subscription; postage and protection separate",
+                        "Purchase supported labels and retain shipment purchase evidence",
+                        "Use merchant fulfillment labels when contractually acceptable shipping",
                     ],
                     [
-                        "Reconciliation script version control through GitHub repositories",
-                        "GitHub Free; $0 monthly subscription within included limits",
-                        "Version stdlib scripts without storing credentials or customer records",
-                        "Use local Git repositories with encrypted off-device backup copies",
+                        "Team coordination through Slack Free workspace messaging",
+                        "$0 monthly Free tier with limited history access",
+                        "Route exceptions while preserving durable decisions outside chat",
+                        "Use business email threads tied to order identifiers",
                     ],
                     [
-                        "Internal exception communication through Slack team messaging",
-                        "Free tier; $0 monthly subscription within retention limits",
-                        "Discuss exception references; retain durable evidence in controlled storage",
-                        "Use existing business email instead of adding another workspace",
+                        "Endpoint recovery through Backblaze Computer Backup service",
+                        "$9 per computer monthly Personal Backup billing assumption",
+                        "Back up the working computer and test restoration",
+                        "Rotate encrypted external drives with secure off-site storage",
                     ],
                     [
-                        "Shipping-label purchasing through Pirate Ship shipping software",
-                        "Free software; $0 monthly subscription, postage purchased separately",
-                        "Buy labels; verify commodity coverage before adding shipment insurance",
-                        "Use carrier accounts directly when coverage or service fits better",
+                        "Treasury holdings through Fidelity eligible brokerage account",
+                        "$0 monthly brokerage account subscription; instrument charges separate",
+                        "Match authorized Treasury maturities to documented cash needs",
+                        "Leave reserve cash in an appropriate deposit account",
                     ],
                 ],
             },
         },
         {
-            "heading": "3. Separate entity cash, client spend, and insured custody",
-            "epistemic_status": "operating_framework",
+            "heading": "3. Underwrite three separate engines and the authorized agency play",
+            "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Create the operating entity, obtain its EIN directly from "
-                    "the IRS, open business accounts in the matching name, and "
-                    "document authorized signers before accepting customer money. "
-                    "State formation charges vary; use the capital allowance "
-                    "rather than assuming a national filing price. Keep entity "
-                    "records, tax registrations, contracts, and issuer agreements "
-                    "in a restricted folder with renewal reminders. A commercial "
-                    "card may still require a personal guarantee, and business "
-                    "account protections differ from consumer-account protections. "
-                    "Read the actual agreement for payment obligations, reward "
-                    "exclusions, account review rights, and prohibited transaction "
-                    "patterns. Do not describe manufactured purchases, circular "
-                    "payments, or cash-equivalent transactions as ordinary client "
-                    "spend. For California merchandise resale, examine Revenue "
-                    "and Taxation Code §6091 and 18 CCR §1668: a resale "
-                    "certificate must support a genuine resale transaction, "
-                    "not personal consumption. Record the buyer's certificate, "
-                    "seller's permit details where required, goods description, "
-                    "and acceptance date. Separate merchandise tax handling "
-                    "from ticket tax and marketplace collection. A marketplace's "
-                    "collection service does not automatically resolve every "
-                    "registration, filing, or direct-sale obligation. Assign "
-                    "each jurisdictional question to a named accountant and "
-                    "retain the answer beside the affected transaction type."
+                    "Wholesale fulfillment begins with an accepted commitment from a "
+                    "counterparty such as BuyForMeRetail, Pointsmaker, or MaxOutDeals, not "
+                    "a general expectation that popular electronics will sell. Verify "
+                    "current terms directly; a Net-3 or Net-5 label says little without "
+                    "its triggering event, cutoff time, and dispute exclusions. In an "
+                    "illustrative lot, spend $5,000 on merchandise, receive $5,050 from "
+                    "the group, and earn $100 of eligible card rewards. Deduct $45 "
+                    "shipping, $10 shipment protection, and a $25 expected return or "
+                    "damage allowance: contribution is $70 before fixed overhead and "
+                    "tax. Without the card reward, the same lot loses $30. A $35 "
+                    "late-payment charge plus fourteen days of $5,000 bridge funding "
+                    "at 18% annual simple interest costs another $69.52, reducing "
+                    "contribution to $0.48. This narrow example does not demonstrate "
+                    "the scorecard's portfolio-level 35% retention; it exposes the "
+                    "evidence required before adopting that assumption. Split groups "
+                    "by legal counterparty and demonstrated settlement behavior rather "
+                    "than by website branding alone. Insure eligible shipments, retain "
+                    "acceptance evidence, and stop new commitments when unpaid accepted "
+                    "inventory breaches its assigned exposure limit. Favor smaller "
+                    "test lots over nominally higher rewards backed by unmeasured "
+                    "receiving delays."
+                ),
+                (
+                    "Commercial card and portal rebates form a separate engine whose "
+                    "inputs are eligible spend, settled rewards, processing costs, "
+                    "financing costs, and contractual pass-through obligations. Rakuten "
+                    "and TopCashback offers can exclude resellers, particular categories, "
+                    "gift cards, coupon combinations, or repeated purchases; never "
+                    "assume two portals can both earn on one checkout. A $5,000 "
+                    "order advertised at 1% portal cashback suggests $50, but the "
+                    "underwritten amount remains zero until eligibility and collection "
+                    "are adequately supported. Likewise, an uncapped 2%–4% commercial "
+                    "reward is a verified product characteristic, not a universal "
+                    "card feature. For Plastiq or Melio, insert the live quoted "
+                    "payment-method fee and permitted recipient category before "
+                    "authorizing payment. A hypothetical $10,000 invoice with a "
+                    "2.9% fee costs $290; a 2% reward produces $200, leaving "
+                    "a $90 loss before overhead or interest. Decline rewards-only "
+                    "routing under those conditions. Never count paying the card "
+                    "balance as another expense after recording the underlying "
+                    "purchase, and never count borrowed principal as revenue. "
+                    "Commercial-purpose credit may fall within 12 CFR 1026.3(a)'s "
+                    "exemption, so read the actual agreement rather than importing "
+                    "consumer-card protections. Issuer restrictions, purchase coding, "
+                    "and payment-service eligibility must all agree."
                 ),
                 (
                     "The mapped play agency_ad_spend_card_multiplier_rebate_cycling "
-                    "belongs in this stack only when the agency has genuine "
-                    "client-authorized advertising activity and an eligible payment "
-                    "arrangement. Consider $50,000 of monthly media spend that "
-                    "the client has prefunded and the platform permits the "
-                    "agency to pay. A contract-permitted 2% reward produces "
-                    "$1,000. Subtract $300 of processing and funding costs, "
-                    "$400 owed to the client under the reward-sharing clause, "
-                    "and a $100 internal reversal reserve; $200 remains "
-                    "available before general overhead. The reserve is a "
-                    "cash-control deduction in this example, not automatically "
-                    "a booked expense. The $50,000 is underlying client media "
-                    "spend, not $50,000 of operator revenue; accounting follows "
-                    "the agency's actual performance obligations and principal "
-                    "or agent position. Document authorization, spending limits, "
-                    "platform eligibility, refund ownership, and reward allocation "
-                    "before attaching the card. Reconcile campaign invoices to "
-                    "client authorization and issuer charges weekly. If rewards "
-                    "drop to zero, this example loses its positive contribution; "
-                    "stop rewards-dependent spending immediately. Move to "
-                    "client-direct billing or prefunded approved agency terms "
-                    "instead of advancing personal cash or cycling payments "
-                    "to force a higher card limit. This play cannot borrow "
-                    "the buying-group reserve without an explicit capital reallocation."
-                ),
-                (
-                    "Match insurance to custody rather than buying a generic "
-                    "policy and assuming every shipment is covered. Ask the "
-                    "broker about high-value electronics, unattended delivery, "
-                    "employee dishonesty, cyber incidents, transit limits, and "
-                    "contractual liability. A declared carrier value is not "
-                    "automatically equivalent to all-risk cargo insurance. Save "
-                    "the applicable wording, deductible, per-package limit, "
-                    "proof-of-value requirements, and claim deadline. For a "
-                    "$4,000 device shipment, a $1,000 commodity sublimit "
-                    "leaves a $3,000 exposure even if the label shows a "
-                    "larger declared value. Reject the shipment or obtain "
-                    "appropriate coverage before carrier acceptance. Ticket "
-                    "exposure needs different controls: event cancellation, "
-                    "postponement, restricted transfer, counterfeit claims, and "
-                    "marketplace payout holds are not ordinary cargo losses. "
-                    "For stadium seat licenses and suites, obtain written "
-                    "transfer rights, assignment charges, included benefits, "
-                    "and the issuer's required transfer process. Do not treat "
-                    "a suite deposit as liquid inventory merely because a "
-                    "broker expects demand. Maintain separate loss reserves "
-                    "and prohibit using refundable customer deposits as owner "
-                    "draws. A second bank relationship can reduce operational "
-                    "concentration, but it must not conceal activity from an "
-                    "issuer or replace accurate transaction descriptions during "
-                    "an account review."
+                    "belongs to TRACK_2 and requires genuine client-authorized advertising "
+                    "purchases, an eligible agency payment arrangement, and documented "
+                    "reward ownership. On $50,000 of authorized spend, an illustrative "
+                    "2% card reward supplies $1,000 and a contractual 0.5% volume "
+                    "rebate supplies $250. After $500 owed to the client, $150 "
+                    "processing, and $200 funding cost, operator contribution is "
+                    "$400, not $50,000. Reconcile platform invoices to client "
+                    "authorizations and stop rewards-dependent spending if the "
+                    "economics fail; use client-direct billing or prefunded approved "
+                    "agency terms instead. Treasury is the third engine, recorded "
+                    "independently: $10,000 of genuinely spare cash at an assumed "
+                    "4% annual simple yield earns approximately $21.92 over twenty "
+                    "days before taxes and charges. That amount does not rescue "
+                    "the separate $90 invoice-routing loss. A bank bonus of $300 "
+                    "requiring $15,000 for ninety days earns only $152.05 above "
+                    "a 4% alternative yield before fees and tax. Check bonus "
+                    "qualification, clawbacks, and account restrictions. Match Treasury "
+                    "maturities before repayment dates and account for settlement "
+                    "timing; selling early introduces price risk. Borrowed statement "
+                    "float remains a short-term liability even while cash earns interest."
                 ),
             ],
             "table": {
-                "caption": "Entity, Client-Money, Tax, and Insurance Controls With Concrete Evidence Requirements",
+                "caption": "Separate Unit Economics and Canonical Formula v2.0 Reconciliation",
                 "headers": [
-                    "Operating exposure and accountable transaction boundary",
-                    "Required evidence before committing operating capital",
-                    "Concrete unit test or money movement",
-                    "Failure response that preserves payment capacity",
+                    "Engine or scorecard case being evaluated",
+                    "Gross activity and retained contribution calculation",
+                    "Costs and resulting operator economic outcome",
+                    "Risk fallback and required interpretation discipline",
                 ],
                 "rows": [
                     [
-                        "Business entity and separately controlled banking identity",
-                        "Entity documents, IRS EIN confirmation, and bank signer records",
-                        "Match invoice payee name against the verified account holder",
-                        "Hold payment until ownership discrepancies receive documented resolution",
+                        "Wholesale buying-group fulfillment with eligible commercial rewards",
+                        "$5,050 reimbursement plus $100 reward against $5,000 merchandise",
+                        "$80 shipping, protection, and allowance leaves $70 contribution",
+                        "Reduce lots when collection uncertainty overwhelms repayment capacity",
                     ],
                     [
-                        "Merchandise resale certificate and jurisdiction-specific tax treatment",
-                        "Valid certificate, permit details, goods description, and acceptance date",
-                        "Trace one exempt purchase into its documented resale transaction",
-                        "Stop exemption claims when required supporting evidence is absent",
+                        "Wholesale delayed-settlement stress applied to identical lot",
+                        "$70 initial contribution before the additional delay costs",
+                        "$35 charge plus $34.52 funding leaves $0.48 contribution",
+                        "Suspend commitments until cleared cash restores dated coverage",
                     ],
                     [
-                        "Authorized agency media spending and contractual reward allocation",
-                        "Signed client authorization, platform eligibility, and reward-sharing terms",
-                        "$1,000 rewards less $300 costs, $400 sharing, $100 reserve",
-                        "Switch to client-direct billing when reward economics disappear",
+                        "Commercial invoice routing through an eligible payment service",
+                        "$10,000 invoice produces $200 at assumed 2% reward",
+                        "$290 assumed processing fee creates $90 transaction loss",
+                        "Use lower-cost bank payment instead of rewards-dependent routing",
                     ],
                     [
-                        "High-value goods transported between seller and buying group",
-                        "Coverage wording, commodity limits, packing photographs, and acceptance scans",
-                        "$4,000 shipment minus $1,000 coverage leaves $3,000 exposed",
-                        "Obtain suitable coverage or reject the shipment before dispatch",
+                        "Authorized agency advertising rewards and contractual volume rebates",
+                        "$50,000 client spend produces $1,250 combined eligible rewards",
+                        "$850 client obligations and costs leaves $400 contribution",
+                        "Switch to client-direct billing or approved prefunded terms",
                     ],
                     [
-                        "Ticket, stadium seat license, and corporate-suite transfer rights",
-                        "Issuer transfer terms, assignment charges, and delivery obligations",
-                        "Verify one allocation transfers through the approved issuer process",
-                        "Reject restricted allocations instead of promising unavailable delivery",
+                        "Treasury yield and bank-bonus alternatives assessed independently",
+                        "$10,000 at 4% for twenty days earns $21.92",
+                        "$300 bonus less $147.95 opportunity cost leaves $152.05",
+                        "Keep repayment money liquid when restrictions outlast obligations",
+                    ],
+                    [
+                        "Conservative canonical case with one full-time operator",
+                        "$250,000 gross less $162,500 merchandise equals $87,500 retained",
+                        "$67,500 remaining costs leaves exactly $20,000 owner profit",
+                        "Preserve 8% gross margin and 22.86% retained margin",
+                    ],
+                    [
+                        "Base canonical case with two supporting contractors",
+                        "$1,025,000 gross less $666,250 merchandise equals $358,750 retained",
+                        "$215,250 remaining costs leaves exactly $143,500 owner profit",
+                        "Preserve 14.0% gross margin and 40.0% retained margin",
+                    ],
+                    [
+                        "Scaled canonical case with five total team members",
+                        "$1,800,000 gross less $1,170,000 merchandise equals $630,000 retained",
+                        "$270,000 remaining costs leaves exactly $360,000 owner profit",
+                        "Preserve 20% gross margin and 57.14% retained margin",
                     ],
                 ],
             },
         },
         {
-            "heading": "4. Prove the settlement loop before increasing commitments",
+            "heading": "4. Prove settlement, recovery, and tax records before increasing exposure",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Use the expected one-to-three-month first-deal window to "
-                    "complete a controlled operating rehearsal, not to accumulate "
-                    "subscriptions. Start with one approved buying group, one "
-                    "commercial card, one business account, and one low-value "
-                    "order whose loss the deployable budget can absorb. Confirm "
-                    "the group independently through its business identity, "
-                    "contract, references, and a verified payment destination. "
-                    "Do not accept last-minute bank-detail changes solely through "
-                    "email; call a previously established contact using a "
-                    "previously verified number. Rehearse a missing package, "
-                    "partial acceptance, delayed ACH, duplicate invoice, reward "
-                    "reversal, and issuer account suspension. Each exception "
-                    "needs a responsible person, evidence location, deadline, "
-                    "and permitted next action. The decisive readiness test "
-                    "is whether protected cash pays the next statement "
-                    "without the delayed reimbursement. If the answer is "
-                    "no, reduce commitments before the purchase, not after "
-                    "delivery. Keep a rolling thirteen-week cash schedule "
-                    "showing opening cash, verified inflows, issuer payments, "
-                    "tax obligations, payroll, and minimum reserves. Count "
-                    "unsettled ticket payouts as receivables with conservative "
-                    "dates, not available bank funds. Release additional "
-                    "capital only when the pilot produces matched purchase, "
-                    "delivery, acceptance, cleared reimbursement, and issuer-payment "
-                    "records without an unresolved material difference."
+                    "Use the first one to three months to prove an end-to-end "
+                    "cycle rather than maximize purchase volume. Start with an "
+                    "accepted commitment small enough to repay entirely from "
+                    "unencumbered cash if the group never pays. Capture the offer, "
+                    "quantity limit, merchant invoice, receiving address, delivery "
+                    "evidence, acceptance event, and cleared ACH entry. Pay the "
+                    "issuer on its contractual schedule, independently of the "
+                    "expected group payment. Close the cycle only after reward "
+                    "eligibility and every expense have been reconciled; a pending "
+                    "portal balance can remain a separately flagged contingent "
+                    "benefit. Run a tabletop exception in which the parcel arrives "
+                    "damaged and the counterparty withholds payment. Identify who "
+                    "files the claim, which policy responds, what evidence is "
+                    "required, and who funds the statement while the dispute "
+                    "continues. Then simulate issuer access loss without attempting "
+                    "to bypass restrictions or obscure transaction purpose. Stop "
+                    "new charges, download available records through authorized "
+                    "channels, and use existing cash to discharge balances. "
+                    "Diversification means approved relationships and manageable "
+                    "counterparty concentrations, not deceptive applications or "
+                    "repeated credit-limit recycling. Business card payments must "
+                    "follow the issuer's permitted patterns and the operator's "
+                    "actual cash-generation cycle."
                 ),
                 (
-                    "Ticket launch testing must include price decay and a "
-                    "failed-sale exit. Suppose a transferable ticket costs "
-                    "$100 and the exchange deducts 15% of the seller's "
-                    "displayed sale amount. Ignoring separately identified "
-                    "taxes and other charges, break-even requires $100 "
-                    "divided by 0.85, or $117.65. An illustrative markdown "
-                    "curve might list at $140 twenty-one days before "
-                    "the event, $125 fourteen days before, and $110 "
-                    "seven days before. Net proceeds at those prices "
-                    "are $119, $106.25, and $93.50; the last stage "
-                    "accepts a $6.50 loss rather than pretending every "
-                    "position remains profitable. At seventy-two hours, a "
-                    "documented $95 liquidation limit produces $80.75 "
-                    "and a $19.25 loss if sold. An unsold ticket "
-                    "can still lose its entire $100 basis, so "
-                    "a price rule cannot ensure an exit. Configure "
-                    "the actual exchange's fee formula rather than "
-                    "copying this example blindly. The FTC's 16 CFR "
-                    "Part 464 requires covered live-event offers to "
-                    "present total prices with required charges and "
-                    "appropriate prominence, subject to the rule's "
-                    "specific permitted exclusions. Verify state resale "
-                    "licensing, disclosure, and pricing requirements before "
-                    "listing, including New York Arts and Cultural "
-                    "Affairs Law §25.13 where applicable."
+                    "Tax records must reconcile economic substance rather than "
+                    "copying gross payment reports into sales. IRC section 6050W "
+                    "governs applicable payment-settlement reporting; a Form 1099-K "
+                    "amount does not by itself establish taxable profit or resolve "
+                    "gross-versus-net presentation. Retain a bridge from reported "
+                    "receipts to reimbursements, returns, merchandise costs, card "
+                    "rewards, portal rebates, bank bonuses, and interest. Purchase-linked "
+                    "rebates commonly reduce the related purchase cost, but classify "
+                    "each arrangement from its terms instead of assuming every "
+                    "reward receives identical treatment. IRC sections 61, 162, "
+                    "and 471 provide relevant income, business-expense, and inventory "
+                    "anchors; IRS Publication 525 supplies practical rebate discussion. "
+                    "Record inventory consistently and preserve supporting records "
+                    "under IRC section 6001. Separate bank-bonus and Treasury "
+                    "income from merchandise margin so the same dollar cannot "
+                    "appear in two engines. For agency advertising, retain the "
+                    "client's authorization, invoice ownership, reimbursement terms, "
+                    "and reward-sharing agreement together. If the agency acts "
+                    "as an agent, the client's $50,000 advertising purchase "
+                    "does not become $50,000 of agency fee revenue merely "
+                    "because its card funded the platform. Have the accountant "
+                    "document the presentation decision and reconcile it to "
+                    "the scorecard bridge without changing the supplied scenario outputs."
                 ),
                 (
-                    "Run a weekly close that distinguishes profit, liquidity, "
-                    "and permission to expand. Profit starts with the "
-                    "transaction ledger and includes actual basis, fees, "
-                    "posted rewards, losses, and allocated labor. Liquidity "
-                    "starts with cleared bank balances and subtracts "
-                    "issuer payments, protected customer amounts, taxes, "
-                    "and committed operating costs. Expansion depends on "
-                    "both measures plus reliable counterparties and valid "
-                    "transfer rights. A profitable week does not justify "
-                    "a larger purchase if settlement cash is locked "
-                    "inside an event payout hold. Assign the owner "
-                    "to issuer and counterparty decisions, one contractor "
-                    "to evidence matching, and another to listings or "
-                    "shipping. Use separate permissions so a contractor "
-                    "cannot both change bank instructions and release "
-                    "payment. At the five-person Scaled configuration, "
-                    "retain the same separation rather than adding "
-                    "management layers. Trigger a purchasing pause after "
-                    "any missed contractual reimbursement, reserve breach, "
-                    "unexplained ledger difference, or duplicate ticket "
-                    "sale. Reopen only after the specific defect is "
-                    "resolved and recorded. Track settlement days, overdue "
-                    "cash, reward realization, unsold ticket basis, "
-                    "contractor minutes per transaction, and cash coverage. "
-                    "These measurements tell the operator whether to "
-                    "increase volume, replace a counterparty, or return "
-                    "to the simpler manual stack before overhead "
-                    "consumes the retained spread."
+                    "Make launch readiness a signed evidence packet, not an "
+                    "optimistic checklist. The owner confirms that each issuer "
+                    "due date has sufficient stress-tested cash coverage, the "
+                    "warehouse route is authorized, the shipment is protectable, "
+                    "and the current offer permits the intended commercial use. "
+                    "A second reviewer can be a narrowly engaged contractor "
+                    "rather than another full-time hire; grant that person "
+                    "read-only evidence access and authority to flag exceptions, "
+                    "not payment credentials. Test the reconciler against duplicate "
+                    "charges, partial reimbursements, split shipments, reversed "
+                    "rewards, and a transaction posted after statement closing. "
+                    "Require explicit resolution of unmatched cash before "
+                    "expanding purchase limits. Review fixed overhead against "
+                    "the selected scenario monthly: $9,000 monthly overhead "
+                    "would exceed the Conservative case's entire $87,500 "
+                    "annual retained contribution before other costs, so it "
+                    "cannot support that case's $20,000 owner profit. Scale "
+                    "only when observed net contribution, settlement duration, "
+                    "and loss experience support the next exposure tier. "
+                    "The team should know the stop condition before an "
+                    "exception happens: freeze commitments, preserve repayment "
+                    "cash, pursue documented collection or claims, and restore "
+                    "coverage before restarting. A clean first cycle is "
+                    "evidence of process competence, not proof that every "
+                    "future counterparty or reward offer will perform."
                 ),
             ],
             "table": {
-                "caption": "Pre-Launch Rehearsal Matrix for Cash Coverage, Delivery, Pricing, and Recovery",
+                "caption": "Pre-Launch Evidence Matrix: Named Owners, Adverse Tests, and Concrete Stop Conditions",
                 "headers": [
-                    "Readiness test and concrete simulated failure",
-                    "Evidence required to complete the rehearsal",
-                    "Pass condition tied to an operating obligation",
-                    "Immediate response when the test fails",
+                    "Readiness area and accountable operating owner",
+                    "Evidence required before committing additional capital",
+                    "Adverse test the stack must survive",
+                    "Failure response and condition for restarting",
                 ],
                 "rows": [
                     [
-                        "Buying-group reimbursement arrives later than contractual settlement",
-                        "Thirteen-week cash schedule and actual issuer payment due dates",
-                        "Protected cash covers statement obligations without delayed reimbursement",
-                        "Reduce order commitments before deploying additional purchase capital",
+                        "Owner verifies entity identity and authorized signers",
+                        "Contracts, bank title, issuer profile, and signer schedule agree",
+                        "Attempt reconciliation using a deliberately mismatched legal name",
+                        "Correct affected records before accepting additional contractual obligations",
                     ],
                     [
-                        "One ticket sells while duplicate exchange listings remain",
-                        "Controlled synchronization test and timestamps from supported exchange records",
-                        "All duplicate listings withdraw before another sale can occur",
-                        "Use one exchange until synchronization behavior is corrected",
+                        "Treasury owner verifies dated card repayment coverage",
+                        "Daily ladder covers every stressed payment with available cash",
+                        "Delay expected group ACH by ten additional business days",
+                        "Freeze commitments until cash covers every affected due date",
                     ],
                     [
-                        "Ticket market clears below the original acquisition basis",
-                        "Fee-adjusted markdown schedule and documented maximum tolerable loss",
-                        "Owner understands liquidation proceeds and full unsold-basis exposure",
-                        "Cut position size or reject the acquisition entirely",
+                        "Operations owner verifies warehouse and counterparty acceptance terms",
+                        "Written commitment specifies receiving location and payment trigger",
+                        "Model rejection of one unit within a multiunit shipment",
+                        "Resolve rejection ownership before repeating the affected purchase route",
                     ],
                     [
-                        "Contractor changes bank instructions through an email request",
-                        "Previously verified callback number and independently confirmed account details",
-                        "Different authorized people verify instructions and release payment",
-                        "Freeze payment and investigate the changed destination immediately",
+                        "Shipping owner verifies protection and claims documentation completeness",
+                        "Policy terms, parcel evidence, valuation, and deadlines are retained",
+                        "Simulate a damaged parcel with delayed warehouse inspection",
+                        "Reduce exposure until the claim evidence process is repairable",
                     ],
                     [
-                        "Automation fails and current inventory records become unavailable",
-                        "Encrypted export, restoration instructions, and separate recovery working copy",
-                        "Operator restores records and reconciles every outstanding obligation",
-                        "Suspend affected purchases and listings until recovery completes",
+                        "Reconciliation reviewer verifies separate earnings and liability ledgers",
+                        "Issuer, bank, order, and reward records reconcile independently",
+                        "Inject duplicate postings and a reversed previously tracked reward",
+                        "Resolve unmatched amounts before increasing the authorized lot size",
+                    ],
+                    [
+                        "Agency owner verifies client authorization and reward ownership",
+                        "Client terms specify spend authority, repayment, and rebate sharing",
+                        "Remove expected rewards and delay client reimbursement one cycle",
+                        "Move to client-direct billing or approved prefunded arrangements",
+                    ],
+                    [
+                        "Accountant verifies tax records and scenario cost classifications",
+                        "Receipt bridge separates purchase adjustments, interest, and client funds",
+                        "Compare gross payment reporting with underlying transaction-level evidence",
+                        "Correct classifications without altering canonical scenario profit targets",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before the first meaningful commitment",
-                "body": "Record a dated pass result and supporting evidence for each check before increasing deployed capital.",
+                "title": "Four evidence checks before the first production commitment",
+                "body": "Each check requires a dated artifact and an identified reviewer; a verbal expectation does not release purchase capacity.",
                 "items": [
-                    "Cash coverage: verify that at least 50% of startup funding remains allocated to working capital and float reserves, with protected settlement cash separately identified.",
-                    "Counterparty and custody: verify the purchase order, receiving trigger, payment destination, commodity insurance limits, and authorized transfer rights.",
-                    "Ledger and inventory: reconcile a pilot transaction end to end, restore its backup, and prove that duplicate ticket listings cannot remain active after sale.",
-                    "Terms and pricing: verify issuer reward eligibility, client authorization, BOTS Act-compatible acquisition, applicable resale licensing, and required total-price presentation.",
+                    "Verify that at least 50% of opening capital is assigned to working capital and repayment reserves, while separately proving actual due-date cash coverage.",
+                    "Verify accepted buying-group terms, the authorized warehouse address, applicable resale documentation, and written shipment-protection treatment.",
+                    "Verify commercial-card and portal eligibility, quoted processing fees, reward ownership, and the fallback payment method for each proposed route.",
+                    "Verify a restored ledger backup, a completed delayed-ACH rehearsal, separated treasury principal, and a reconciled sample statement before raising limits.",
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Fund distinct cash buckets",
-                    "action": "Allocate startup funds and document protected issuer-payment cash.",
-                    "detail": "Use the selected capital budget; label deployable working capital, reserve, ticket pilot, setup spending, and operating cushion without overlapping dollars.",
+                    "title": "Fund and label the opening envelopes",
+                    "action": "Record owner contributions and allocate the seven budget envelopes.",
+                    "detail": "Confirm the $10,000 or $55,000 total, the 60% working-capital allocation, and the cash-only repayment reserve before authorizing orders.",
                 },
                 {
                     "step": 2,
-                    "title": "Configure the minimum transaction spine",
-                    "action": "Create named accounts, a shared transaction identifier, and controlled evidence storage.",
-                    "detail": "Connect the commitment register, bookkeeping records, shipping evidence, ticket inventory, and statement ledger through references rather than uncontrolled duplicate balances.",
+                    "title": "Configure identities, records, and recovery",
+                    "action": "Provision the twelve selected layers with minimal individual access.",
+                    "detail": "Confirm current vendor prices, enable strong authentication, exclude payment secrets from the order register, and restore a sample backup.",
                 },
                 {
                     "step": 3,
-                    "title": "Complete one funded operating rehearsal",
-                    "action": "Process a low-value authorized order and simulate settlement, inventory, and recovery failures.",
-                    "detail": "Document acceptance, cleared reimbursement, statement payment, duplicate-listing behavior, cash coverage, and successful restoration before treating the stack as ready.",
+                    "title": "Run one fully funded settlement cycle",
+                    "action": "Fulfill a small accepted commitment and match every resulting record.",
+                    "detail": "Link merchant receipt, shipment, acceptance, ACH availability, issuer payment, and reward treatment; fund the statement even if collection slips.",
                 },
                 {
                     "step": 4,
-                    "title": "Expand only from reconciled evidence",
-                    "action": "Review weekly metrics and increase commitments within remaining cash limits.",
-                    "detail": "Require three clean buying-group settlements before increasing that counterparty's ceiling; pause immediately for overdue payments, reserve breaches, or unresolved ledger differences.",
+                    "title": "Stress exposure and authorize the next lot",
+                    "action": "Apply delayed settlement, damaged shipment, and reward reversal tests.",
+                    "detail": "Increase exposure only after cash coverage, documented contribution, claims procedures, and scenario-specific overhead remain within their assigned limits.",
                 },
             ],
         },
     ],
-    "pull_quote": "The cheapest stack is the one that can prove where every committed dollar returns before the statement comes due.",
+    "pull_quote": "A reward becomes useful capital only after the liability is covered and the cash can actually be collected.",
     "diagram_id": "diag-07",
     "action_checklist": [
-        "Choose the $10,000, $30,000, or $55,000 illustrative budget and segregate its 60% working-capital and float allocation.",
-        "Build the scorecard bridge from gross activity to 35% retained revenue, then reconcile all operating costs to the three canonical owner-profit figures.",
-        "Verify current vendor tiers and written terms, provision named accounts, and keep custom-priced automation outside the launch budget until quoted.",
-        "Obtain entity, banking, resale-certificate, custody-insurance, and transfer-rights evidence before committing merchandise or ticket capital.",
-        "Document client-authorized agency ad-spend economics and activate client-direct billing when reward-dependent contribution disappears.",
-        "Complete the delayed-ACH, duplicate-listing, ticket-markdown, bank-change, and backup-restoration rehearsals before increasing exposure.",
+        "Allocate the complete opening budget and document 60% in working-capital and repayment envelopes without treating inventory as available cash.",
+        "Build a dated coverage ladder from actual issuer statements, warehouse acceptance terms, bank availability, and Treasury maturities.",
+        "Confirm the twelve selected vendor tiers at checkout and preserve a manual export-and-reconciliation fallback for every automated workflow.",
+        "Verify entity names, applicable resale records, shipment coverage, loss-transfer terms, and counterparty receiving requirements before ordering.",
+        "Underwrite wholesale, commercial rewards, and treasury separately; test the agency advertising play at $400 contribution on the stated $50,000 example.",
+        "Complete one small settlement cycle, restore its records, simulate delayed ACH, and reconcile all three canonical profit cases before increasing exposure.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to circumvention of ticket access control measures",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits covered circumvention of ticket access controls and specified resale of tickets obtained through that conduct; acquisition automation must respect those boundaries.",
+            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, and organizational credit exemptions",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
+            "relevance": "Determine the scope of Regulation Z coverage and use actual commercial-credit contract terms for payment, fee, and dispute controls.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes total-price presentation and related fee-disclosure requirements for covered live-event ticket offers, including the rule's specific exclusions and prominence standards.",
+            "title": "26 U.S.C. 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Reconcile applicable payment-settlement reporting to transaction records without equating gross reported payments with operator profit.",
         },
         {
-            "title": "California Revenue and Taxation Code §6091 — Presumption concerning retail sales",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6091.",
-            "relevance": "Addresses the presumption that gross receipts are taxable and the seller's burden concerning sales for resale, informing certificate collection and transaction evidence.",
+            "title": "26 U.S.C. 6001 — Notice or regulations requiring records, statements, and special returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": "Preserve receipts, purchase adjustments, settlement evidence, inventory support, and separately classified income records.",
         },
         {
-            "title": "18 CCR §1668 — Sales for Resale",
-            "url": "https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1668.html",
-            "relevance": "Details California resale-certificate requirements, good-faith acceptance, and treatment of purchases made for resale versus other uses.",
+            "title": "26 U.S.C. 61 — Gross income defined",
+            "url": "https://www.law.cornell.edu/uscode/text/26/61",
+            "relevance": "Classify income by its actual character while separating earned amounts from borrowed principal and client funds.",
         },
         {
-            "title": "New York Arts and Cultural Affairs Law §25.13 — Licensing of ticket resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": "Provides ticket-reseller licensing requirements and exceptions that must be checked against the operator's actual New York resale activity before launch.",
+            "title": "26 U.S.C. 162 — Trade or business expenses",
+            "url": "https://www.law.cornell.edu/uscode/text/26/162",
+            "relevance": "Support ordinary and necessary business-expense classification with invoices and a consistent operating-cost ledger.",
+        },
+        {
+            "title": "26 U.S.C. 471 — General rule for inventories",
+            "url": "https://www.law.cornell.edu/uscode/text/26/471",
+            "relevance": "Evaluate applicable inventory accounting rules and preserve consistent treatment of merchandise costs and related adjustments.",
+        },
+        {
+            "title": "UCC section 2-509 — Risk of Loss in the Absence of Breach",
+            "url": "https://www.law.cornell.edu/ucc/2/2-509",
+            "relevance": "Identify the model default rules for shipment and delivery risk, then verify the applicable state's enactment and the parties' contractual allocation.",
+        },
+        {
+            "title": "31 CFR 356.11 — How are Treasury securities issued?",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-356/subpart-B/section-356.11",
+            "relevance": "Understand Treasury book-entry holding arrangements when selecting custody and documenting the treasury account structure.",
         },
     ],
 }

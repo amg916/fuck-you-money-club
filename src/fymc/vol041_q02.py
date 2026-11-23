@@ -5,397 +5,666 @@ CHAPTER_2 = {
     "chapter_id": "Q2",
     "chapter_number": 2,
     "question_number": 2,
-    "slug": "who-pays-and-how-buying-group-ticket-funds-clear",
-    "question_prompt": "Who writes the check in buying group, card-float & ticket allocation arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
+    "slug": "who-pays-and-how-the-payment-rail-works",
+    "question_prompt": "Who writes the check in buying group, commercial card-float & rebate arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
     "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
     "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Buying-Group Treasury, Issuer Rebates, Ticketmaster and AXS Transfers, ACH Exposure, and BOTS Act Purchase Limits",
+    "subtitle": "Buying-Group ACH, Commercial Card Settlement, Treasury Maturities, UCC Payment Rights & IRC Basis Records",
     "layout_template": "executive_summary",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, ranked #09 of 42 with a 93/100 Money-to-Manpower Score, spans 11 mapped plays across buying-group fulfillment, card economics, and ticket allocations. "
-        "The paying parties are wholesale treasury teams, eligible card issuers, ticket purchasers, and corporate hospitality buyers; each funds a different obligation through a different settlement process. "
-        "Conservative, Base, and Scaled annual owner profits are $20,000, $143,500, and $360,000, respectively. "
-        "Those outcomes reconcile to gross scenario receipts of $250,000, $1,025,000, and $1,800,000, with a modeled 35% retained share rather than treating merchandise basis as operator earnings. "
-        "This chapter connects purchasing authority, documented acceptance, credit limits, fee protection, and settlement evidence. "
-        "It replaces identity multiplication with genuine permitted allocations and makes payment timing, refund exposure, and available liquidity explicit before purchase."
+        "Candidate #41, ranked #10 of 43 with a 93/100 Money-to-Manpower Score, "
+        "works only when each payer, contractual obligation, and clearing event is "
+        "identified before capital moves. This chapter connects 11 mapped plays "
+        "to three separate engines: wholesale buying-group fulfillment, commercial "
+        "card and portal rebates, and bank or Treasury returns. Buying groups pay "
+        "for accepted inventory; issuers and merchants fund qualifying rewards; "
+        "banks and Treasury securities compensate eligible balances. None pays "
+        "because borrowed principal exists. Formula v2.0 produces annual owner "
+        "profit of $20,000 Conservative, $143,500 Base, and $360,000 Scaled. "
+        "The operating discipline is explicit purchase commitments, evidence-backed "
+        "receivables, verified payout authority, and a repayment reserve that survives "
+        "late ACH. Startup compute credits remain an adjacent cost-reduction play, "
+        "never wholesale cash receipts or transferable currency."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross scenario receipts; $87,500 retained contribution at 35%",
-            "note": "8% gross-basis net margin; 22.86% retained margin; $20,000 annual owner net profit; 1 FT + 2 C",
+            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross scenario receipts; $358,750 retained contribution at 35%",
-            "note": "14.0% gross-basis net margin; 40.0% retained margin; $143,500 annual owner net profit; 1 FT + 2 C",
+            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross scenario receipts; $630,000 retained contribution at 35%",
-            "note": "20% gross-basis net margin; 57.14% retained margin; $360,000 annual owner net profit; 2 FT + 3 C",
+            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Sell a documented obligation to the person who controls its budget",
+            "heading": "1. Identify the economic buyer and the person authorized to release funds",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Start with the party that owes money, not the person excited about the deal. A buying-group purchasing manager wants reliable quantities of specific merchandise without coordinating dozens of retail orders; their treasury colleague wants matched purchase orders, accepted units, and predictable cash requirements. The purchasing manager can approve a product while lacking authority to release an ACH batch. Obtain the contracting entity, authorized buyer, receiving address, acceptance standard, payment calendar, and treasury escalation contact before checkout. A Net-3 commitment must say whether the clock begins at carrier delivery, warehouse inspection, or invoice acceptance, and whether days are business days. On an illustrative $10,000 reimbursement against $9,800 merchandise cost, $70 shipping, and $20 insurance, the merchandise contribution is $110. An actually earned 2% rebate on $9,800 adds $196, producing $306 before overhead, financing, and losses. These deal economics illustrate collection sensitivity; they do not replace the annual 35% retained-share assumption. A rejected serial number or a week of unexplained acceptance delay can erase the reason to transact. Sell verifiable fulfillment and a bounded exception process, not merely access to purchasing capacity. Require an agreed receiving report that connects each accepted unit to the invoice treasury will actually pay."
+                    "The wholesale buying group writes the inventory check because its downstream "
+                    "resale spread supports a procurement budget, not because a participant earns "
+                    "card rewards. BuyForMeRetail, Pointsmaker, and MaxOutDeals are counterparties "
+                    "to investigate individually; their current commitments, eligible products, "
+                    "warehouse instructions, and payment terms must come from authenticated "
+                    "contracts or account records. The procurement contact wants correct models, "
+                    "predictable arrival, and a clean serial-number trail. Accounts payable wants "
+                    "an accepted receipt matched to a purchase authorization and verified bank "
+                    "instructions. A warehouse scan alone does not establish that either person "
+                    "has authorized payment. Before buying, obtain the legal purchaser, quantity, "
+                    "unit reimbursement, acceptance deadline, deduction rules, and payment trigger "
+                    "in durable writing. For ten devices costing $900 each, a $930 commitment "
+                    "creates $9,300 of expected wholesale collections against $9,000 of "
+                    "merchandise, leaving $300 before freight, damage, and rewards. If freight "
+                    "and insurance cost $90, the inventory spread is $210. A buyer's downstream "
+                    "sales volume is neither your revenue nor collateral you control. Confirm "
+                    "who can resolve a rejected serial and who can release ACH after acceptance. "
+                    "The fallback for an unconfirmed commitment is no purchase, not a larger "
+                    "reward assumption or an unsecured promise from a chat contact."
                 ),
                 (
-                    "The ticket purchaser pays for a usable entitlement at a known total price; the corporate hospitality buyer additionally pays for procurement convenience, seat adjacency, guest coordination, and documented reimbursement. Their acute pain is a failed event experience, not your inventory financing. A corporate assistant may choose seats, while procurement controls the purchase order and accounts payable controls payment. Obtain both operational acceptance and budget authority. Define the event, section, row, quantity, transfer deadline, cancellation treatment, and any venue restrictions before collecting money. For an illustrative pair with $600 combined acquisition basis, a $900 customer total and $90 seller platform deduction leave $210 before overhead and refunds. The $900 customer payment, $810 platform settlement, and $210 contribution are different ledger fields. Suite contracts require separate treatment for catering, deposits, service charges, and damage exposure; a seat license may require venue-approved assignment rather than a simple ticket transfer. A broker's fee should attach to a precisely described service or completed transaction, with refund allocation stated separately. Never sell venue permission you do not possess. Where the FTC fee rule applies, show the required total price prominently before the buyer commits, rather than relying on a late checkout disclosure to rescue an incomplete quote."
+                    "Commercial card and portal economics have different payers and different "
+                    "psychology. The issuer funds contractual rewards to attract profitable "
+                    "spend; a merchant funds affiliate acquisition, with Rakuten or TopCashback "
+                    "administering the participant's share under offer terms. A merchant may "
+                    "exclude resellers, particular product categories, gift instruments, or "
+                    "orders using another attribution channel. The shopper has no entitlement "
+                    "merely because a browser displayed a large percentage. On $9,000 of "
+                    "eligible purchases, a verified 2% card reward contributes $180; a separate "
+                    "eligible 1% portal offer contributes $90. Combined with the $210 inventory "
+                    "spread, the illustrative contribution becomes $480 before overhead, but "
+                    "only $210 exists without those rewards. Record pending portal amounts "
+                    "separately until their contractual conditions are satisfied. For treasury "
+                    "income, the bank's deposit-acquisition budget funds a qualifying bonus, "
+                    "while Treasury pays security obligations through its established payment "
+                    "system. A $50,000 balance earning a simple annualized 4.5% for 55 days "
+                    "produces approximately $339.04 before tax and costs; the $50,000 remains "
+                    "principal. Statutes establish records and payment rights, but no statute "
+                    "forces a group to buy unwanted stock, a portal to honor an excluded "
+                    "purchase, or a bank to waive bonus eligibility requirements."
                 ),
                 (
-                    "A card issuer pays only the rebate its actual agreement permits; it is neither the wholesale buyer nor an insurer of unsold inventory. Validate eligible merchant categories, reward caps, reversals, exclusions, statement dates, and payment obligations directly against that agreement. Treat advertised 2%–4% yields as conditional inputs until posted, not as cash available for tomorrow's bill. The eleven mapped plays share several commercial mechanisms: committed wholesale fulfillment, replenishment buying, rebate stacking, statement-timing management, permitted presale allocations, collectible releases, ordinary secondary resale, corporate ticket sourcing, suite brokerage, seat-license assignments, and purchasing administration. This is an operating decomposition, not an invented identifier list. Each mechanism needs its own payer, contract, and collection event. For example, a corporate client can pay a separately priced sourcing retainer for documented research and procurement work even when a desired allocation never appears, provided the deliverables and refund terms support that arrangement. They should not unknowingly finance speculative purchases through an ambiguous deposit. Invoice the correct legal entity and record who authorized spending, who accepted delivery, and who can release funds. Psychological urgency can accelerate a decision, but only budget authority and an enforceable payment obligation convert interest into a collectible receivable. Keep those distinctions visible in every opportunity record."
+                    "Use an eleven-play operating map without pretending that ten additional "
+                    "catalog identifiers were supplied. The ten local workflow mappings are "
+                    "committed wholesale spread capture, eligible resale-tax treatment, parcel "
+                    "loss containment, commercial card rewards, Rakuten attribution, TopCashback "
+                    "attribution, card-offer matching, Plastiq or Melio invoice economics, "
+                    "Treasury maturity matching, and bank-bonus qualification. The eleventh "
+                    "mapping is cloud_ai_startup_credit_aggregation_arbitrage, addressed as an "
+                    "adjacent infrastructure expense reduction rather than a fourth arbitrage "
+                    "engine. Each mapping needs its own payer, calculation, evidence packet, "
+                    "and stop condition. Two portals are alternative attribution routes for "
+                    "one purchase unless their written terms explicitly permit another result; "
+                    "they are not two automatic commissions. Likewise, the same cash balance "
+                    "cannot simultaneously support a Treasury position, a locked bank bonus, "
+                    "and immediate card repayment. A 2% to 4% reward range is an underwriting "
+                    "input to verify, including caps and exclusions, rather than a universal "
+                    "commercial-card feature. The operating map separates controllable cost "
+                    "savings from contingent receipts and prevents attractive percentages from "
+                    "being counted twice. Require a named budget owner and settlement owner "
+                    "for every external receivable. When those roles cannot be identified, "
+                    "reduce the exposure to a small paid trial or decline the transaction "
+                    "before inventory leaves the merchant."
                 ),
             ],
             "table": {
-                "caption": "Payer Authority, Purchasing Pain, and Evidence Required Before Commitment",
+                "caption": "Seven Payer and Authority Checks Before Committing Purchase Capital",
                 "headers": [
-                    "Payer and actual budget authority",
-                    "Specific reason the payer spends",
-                    "Contractual collection trigger and evidence",
-                    "Fee protection and failure response",
+                    "Payer and economic motivation",
+                    "Authority and evidence required",
+                    "Unit economics to verify",
+                    "Failure response protecting available cash",
                 ],
                 "rows": [
                     [
-                        "Wholesale buying-group treasury acting for the signed purchasing entity",
-                        "Secure accepted merchandise without coordinating fragmented retail procurement themselves",
-                        "Matched purchase order, serialized receiving report, and accepted invoice",
-                        "Suspend additional purchases when agreed acceptance deadlines expire unpaid",
+                        "Buying-group procurement purchases inventory for profitable downstream resale.",
+                        "Named purchasing officer confirms quantities, prices, acceptance, and deductions.",
+                        "Ten $900 devices reimbursed at $930 create $300 spread.",
+                        "Cancel uncommitted orders before shipment; respect merchant cancellation terms.",
                     ],
                     [
-                        "Commercial card issuer administering the specific eligible rewards account",
-                        "Reward qualifying spend under the account's documented commercial terms",
-                        "Posted eligible transactions survive reversals and satisfy rewards conditions",
-                        "Exclude disputed rewards from cash available for statement repayment",
+                        "Buying-group accounts payable releases accepted inventory reimbursements after matching.",
+                        "Verified treasury contact supplies payment calendar and authenticated bank instructions.",
+                        "$9,300 receivable remains exposed until the reimbursement actually clears.",
+                        "Freeze additional commitments when the oldest accepted invoice becomes overdue.",
                     ],
                     [
-                        "Individual ticket purchaser using an authorized marketplace checkout account",
-                        "Obtain transferable event access with clearly disclosed seating characteristics",
-                        "Marketplace order, permitted transfer, and platform-defined delivery evidence",
-                        "Retain transfer records and reserve funds for contractual refunds",
+                        "Commercial issuer rewards eligible spending under its published account agreement.",
+                        "Account agreement establishes reward eligibility, limits, exclusions, and redemption timing.",
+                        "A verified 2% reward on $9,000 contributes exactly $180.",
+                        "Remove rewards from underwriting when eligibility evidence cannot support inclusion.",
                     ],
                     [
-                        "Corporate procurement manager backed by the named departmental budget",
-                        "Source contiguous seats while reducing employee coordination and reimbursement",
-                        "Authorized purchase order plus the agreed ticket-delivery acceptance record",
-                        "Require deposits or credit approval before committing acquisition capital",
+                        "Merchant affiliate budget funds qualifying Rakuten or TopCashback purchase attribution.",
+                        "Saved offer terms and transaction evidence support one permitted attribution route.",
+                        "A qualifying 1% portal reward on $9,000 contributes $90.",
+                        "Carry disputed rewards separately and repay cards without relying on them.",
                     ],
                     [
-                        "Corporate suite sponsor with authority over the hospitality budget",
-                        "Bundle event access and defined hospitality into one accountable engagement",
-                        "Signed suite agreement with venue permissions and itemized service scope",
-                        "Separate catering obligations, cancellation exposure, and refundable security deposits",
+                        "Business supplier receives payment for an authentic invoice through approved rails.",
+                        "Supplier authorization and processor eligibility establish the permitted recipient relationship.",
+                        "$10,000 invoice at 2.9% costs $290 before other charges.",
+                        "Use ordinary bank transfer when processing costs exceed realizable benefits.",
                     ],
                     [
-                        "Seat-license purchaser whose funds meet the venue's assignment requirements",
-                        "Acquire durable seating rights rather than one isolated event admission",
-                        "Venue-approved assignment documents and independently verified settlement instructions",
-                        "Use suitable escrow when permission or title transfer remains conditional",
+                        "Bank acquisition team funds bonuses for eligible new business relationships.",
+                        "Offer document identifies balance duration, transaction conditions, and payout window.",
+                        "$500 bonus less $225 displaced yield leaves $275 incremental benefit.",
+                        "Keep the repayment reserve outside balances restricted by bonus conditions.",
                     ],
                     [
-                        "Collectible wholesaler authorizing a genuinely permitted allocation purchase",
-                        "Receive authentic scarce inventory with documented provenance and delivery",
-                        "Written purchase commitment linked to authenticity and inspection standards",
-                        "Decline purchases when transfer restrictions defeat the proposed resale",
+                        "Treasury security obligations compensate invested capital through maturity proceeds.",
+                        "Trade confirmation establishes security ownership, settlement date, and maturity proceeds.",
+                        "$50,000 at simple 4.5% for 55 days earns approximately $339.04.",
+                        "Select an earlier maturity or retain cash when payment dates conflict.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Find the treasury friction before it becomes your financing cost",
-                "body": "The strongest spread often comes from removing a narrow operational failure rather than predicting a higher resale price.",
+                "title": "Negotiate the acceptance clock before negotiating the headline reward",
+                "body": "Veteran operators protect the small spread by removing ambiguity from the large principal movement.",
                 "items": [
-                    "Ask the buying group for its receiving cutoff and ACH file cutoff; schedule delivery to satisfy both instead of treating Net-3 as a calendar promise.",
-                    "Request a sample remittance file before the first large order and confirm that its invoice identifiers can join directly to your purchase-order ledger.",
-                    "Track posted card rewards separately from expected rewards; reconcile merchandise returns before treating the reward balance as distributable cash.",
-                    "For corporate suites, obtain the venue's transfer and catering rules before pricing the service, then quote separately for acquisition, coordination, and pass-through obligations.",
+                    "Ask each buying group for a sample remittance statement showing accepted serials, deductions, and the actual event that starts its payment clock.",
+                    "Maintain separate Rakuten and TopCashback offer snapshots, but select one eligible attribution route for each purchase instead of projecting duplicate portal rewards.",
+                    "Put the procurement contact and accounts-payable contact on the same exception record so a warehouse discrepancy cannot circulate without an accountable owner.",
+                    "Evaluate DE, NH, and OR warehouse destinations using actual sourcing rules, merchant documentation, freight, insurance, and rejection costs rather than assuming every shipment receives resale treatment.",
                 ],
             },
         },
         {
-            "heading": "2. Match the settlement rail to the obligation and the release condition",
+            "heading": "2. Choose the settlement rail by finality, recourse, cost, and control",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Separate a payment rail from a commercial structure. Wire and ACH move money; escrow, retainers, factoring, and milestone holds allocate custody, timing, or credit risk around a transfer. Marketplace checkout combines buyer collection with contractual seller settlement, sometimes subject to reserves extending beyond the event. Statutory disbursement is an authority-driven process, not a faster elective payment method. Choose the structure by identifying who holds funds, what evidence releases them, who can reverse or withhold them, and which party bears a cancellation. A bank screenshot is not settlement evidence. Check your own bank or provider record and reconcile the transaction reference to the intended invoice. Verify changed beneficiary instructions through a previously established telephone contact; do not use the number inside the change request. Wire finality does not cure payment to the wrong account, and ACH availability does not eliminate permitted returns or contractual recovery. For business ACH entries, obtain the bank's applicable authorization, return, and security procedures rather than importing consumer-account assumptions. A platform payout forecast is likewise not unrestricted cash until the platform releases it and the bank records receipt. Record all these states separately so a dashboard cannot accidentally count an unsettled receivable twice."
+                    "Payment rails are not interchangeable protections. ACH is inexpensive and "
+                    "well suited to repeat wholesale reimbursements, but an initiation notice "
+                    "is not the same event as available funds, and return or reversal exposure "
+                    "depends on the entry and applicable rules. A wire usually provides faster "
+                    "usable funds at higher fixed cost, yet fraudulent instructions can redirect "
+                    "the entire principal. Verify changed beneficiary details through a previously "
+                    "validated contact, never through the replacement email itself. UCC Article "
+                    "4A governs many commercial funds transfers as enacted by the relevant "
+                    "state; covered Fedwire transfers also operate under Regulation J. Commercial "
+                    "accounts generally cannot be managed as though consumer Regulation E "
+                    "protections automatically apply. With a $9,300 reimbursement and a $25 "
+                    "incoming wire charge, the illustrative $210 inventory spread becomes $185 "
+                    "if that charge belongs to the seller. Agree whether the purchaser must "
+                    "deliver the full invoice amount or may deduct bank charges. For a claimed "
+                    "Net-3 or Net-5 arrangement, define the starting event and business-day "
+                    "calendar explicitly. Do not infer those terms for any named buying group. "
+                    "Record payment initiation, bank availability, contractual discharge, and "
+                    "remaining dispute exposure as separate fields rather than one misleading "
+                    "paid checkbox in a spreadsheet."
                 ),
                 (
-                    "Escrow works when an appropriate independent provider can hold the transaction type and apply objective release instructions. For a venue-approved seat-license assignment, instructions might require the venue's written assignment confirmation and delivery of specified documents before funds move. Avoid vague conditions such as buyer satisfaction without a deadline, because they convert settlement into open-ended bargaining. Confirm provider identity, account instructions, fee allocation, dispute procedures, and treatment of failed conditions. Do not improvise a customer-money pool in the operator's ordinary operating account. A sourcing retainer instead pays for defined services; its earned portion should follow documented performance, while any refundable portion remains a separate liability until the contract permits release. Milestone holds can protect a corporate buyer purchasing a large suite package, but the operator must finance any gap between supplier payment and milestone collection. For example, a $12,000 engagement with $4,000 collected initially and $8,000 released after confirmed transfer leaves a real funding gap if the venue requires $10,000 upfront. The gap is $6,000 before other cash demands, not a bookkeeping nuisance. Accept that structure only when liquidity and supplier deadlines support it. Never let the appearance of a large signed contract disguise an immediate cash deficit."
+                    "Escrow, retainers, and milestone holds change who controls money before "
+                    "performance. A genuine independent escrow arrangement can release funds "
+                    "against specified warehouse acceptance evidence, but vague release language "
+                    "merely replaces buyer credit risk with a dispute over instructions. A "
+                    "$100 escrow charge consumes nearly half of a $210 inventory spread, so "
+                    "small lots rarely support elaborate arrangements unless the buyer funds "
+                    "the cost. A retainer is an advance governed by a contract, not a special "
+                    "bank rail and not automatically earned revenue. Match its refund and "
+                    "offset provisions to actual procurement duties. A milestone hold can "
+                    "reserve 10% of a $9,300 invoice, or $930, which exceeds the entire "
+                    "illustrative spread and therefore demands substantial working capital. "
+                    "Specify an objective release deadline and prohibit indefinite withholding "
+                    "for unrelated invoices. Statutory disbursement is included for comparison, "
+                    "not presented as a normal source of buying-group money: a court order "
+                    "or other specific legal authority must identify the authorized disburser "
+                    "and recipient. Do not accept custody of third-party funds merely to "
+                    "make the transaction feel safer. Use an appropriately qualified provider "
+                    "when escrow is genuinely required, and reconcile its ledger to the "
+                    "underlying purchase obligation before relying on any released balance."
                 ),
                 (
-                    "Factoring converts an eligible existing receivable into earlier cash; it does not transform speculative ticket inventory into an accepted invoice. Confirm assignment rights, debtor acknowledgment where required, advance percentage, reserves, fees, recourse, and disputed-invoice exclusions. On a $10,000 accepted buying-group invoice, an illustrative 90% advance supplies $9,000 now. If the factor ultimately retains a $250 fee and the buyer pays in full, the later reserve release is $750, making total cash $9,750. Against the earlier $306 illustrative contribution, that fee leaves only $56 before overhead. Speed can therefore destroy an apparently attractive spread. Statutory distributions belong in a separate recovery workflow: an insolvent counterparty may pay through a trustee under applicable priorities, with timing and recovery outside your ordinary invoice terms. They are not a substitute for credit screening. Record claims, deadlines, supporting documents, and expected recovery conservatively without inventing a collection date. For routine operations, prefer the simplest authorized route that fits the transaction: contracted ACH for established buying groups, approved marketplace checkout for ordinary resale, and independently administered escrow for suitable conditional assignments. Reconcile fees and withheld reserves individually rather than netting every settlement difference into an unexplained expense account."
+                    "Platform checkout and factoring solve different problems. A merchant "
+                    "checkout establishes a purchase funded through the acquirer and card "
+                    "network; it does not establish the downstream buying group's obligation "
+                    "to reimburse you. Preserve merchant receipts, tracking, acceptance, and "
+                    "card statements as linked but distinct records. Factoring monetizes an "
+                    "eligible receivable by selling or financing it, often with recourse, "
+                    "reserves, notification requirements, and restrictions on assignment. A "
+                    "2% factoring charge on $9,300 is $186, leaving only $24 of the "
+                    "illustrative $210 inventory spread before any additional reserve or "
+                    "dispute cost. Obtain the actual agreement rather than treating an advance "
+                    "rate as a purchase price. UCC Section 9-406 addresses aspects of account "
+                    "debtor discharge after assignment notification, subject to its scope "
+                    "and state enactment; it does not make defective delivery collectible. "
+                    "For Plastiq or Melio, verify current card acceptance, recipient eligibility, "
+                    "delivery timing, and whether the issuer treats the transaction as "
+                    "reward-eligible purchasing. Pay authentic business invoices only. Self-payment, "
+                    "fabricated supplier invoices, and repeated repayment designed to evade "
+                    "credit limits are not operating methods. The cheapest defensible route "
+                    "may be an ordinary ACH payment with no card rewards. Preserve that "
+                    "fallback in the purchasing workflow instead of forcing every invoice "
+                    "through a fee-bearing card transaction."
                 ),
             ],
             "table": {
-                "caption": "Eight Payment and Settlement Structures Compared by Release Condition and Exposure",
+                "caption": "Eight Payment and Settlement Structures Compared by Authority, Economics, and Residual Exposure",
                 "headers": [
-                    "Rail or settlement structure and suitable use",
-                    "Authority controlling movement or release",
-                    "Evidence establishing collectible or received funds",
-                    "Principal exposure and operational protection",
+                    "Rail or contractual settlement structure",
+                    "Release authority and required evidence",
+                    "Illustrative economic and timing effect",
+                    "Residual risk and practical fallback",
                 ],
                 "rows": [
                     [
-                        "Bank wire for verified high-value wholesale or assignment settlements",
-                        "Authorized account signers instruct banks using independently verified beneficiaries",
-                        "Receiving bank confirms the credit against the correct transaction reference",
-                        "Wrong-beneficiary fraud requires callback verification before every changed instruction",
+                        "Wire transfer settles a verified business payment instruction directly.",
+                        "Authorized buyer treasury staff confirm beneficiary details through verified callbacks.",
+                        "$25 incoming charge reduces a $210 inventory spread to $185.",
+                        "Instruction fraud remains possible; independently authenticate every beneficiary change.",
                     ],
                     [
-                        "Independent escrow for conditional seat-license or suitable suite assignments",
-                        "Escrow provider follows signed release instructions and applicable operating requirements",
-                        "Provider confirms funded escrow and satisfaction of objective release conditions",
-                        "Ambiguous release language requires explicit deadlines and dispute procedures",
+                        "Independent escrow conditions release on agreed documentary performance evidence.",
+                        "Escrow provider follows signed instructions specifying acceptance and dispute handling.",
+                        "$100 escrow charge consumes 47.62% of a $210 spread.",
+                        "Ambiguous acceptance traps funds; require objective deadlines and allocation rules.",
                     ],
                     [
-                        "Business ACH for recurring accepted buying-group purchase-order reimbursements",
-                        "Debtor treasury originates payment under agreed bank authorization procedures",
-                        "Bank receipt matches the remittance file and accepted invoice identifier",
-                        "Returns and delayed batches require credit limits and overdue-order suspension",
+                        "ACH credit carries recurring wholesale reimbursement through participating banks.",
+                        "Buyer accounts payable authorizes entries against accepted invoices and remittances.",
+                        "A $9,300 initiation notice does not itself establish usable funds.",
+                        "Track availability and return exposure; retain separate card repayment liquidity.",
                     ],
                     [
-                        "Service retainers for specifically defined corporate sourcing and coordination",
-                        "Client authorizes payment while the contract governs earning and refunds",
-                        "Signed scope and completed deliverables support each earned fee allocation",
-                        "Refundable balances remain liabilities rather than immediately distributable earnings",
+                        "Contractual retainer advances procurement funding before specified services are completed.",
+                        "Signed purchasing agreement defines permitted application, refund rights, and offsets.",
+                        "$1,000 advance reduces initial funding need without automatically creating earnings.",
+                        "Refund liability survives receipt; segregate unearned balances and reconcile applications.",
                     ],
                     [
-                        "Statutory disbursement for recoveries controlled by an insolvency proceeding",
-                        "Trustee or other authorized fiduciary distributes under applicable legal priorities",
-                        "Allowed claim and distribution notice support the recorded recovery",
-                        "Uncertain timing demands a separate recovery ledger and liquidity exclusion",
+                        "Statutory disbursement follows a specific legally authorized distribution process.",
+                        "Authorized disburser acts under the applicable order or statutory provision.",
+                        "Count zero anticipated proceeds without documented entitlement and scheduled distribution.",
+                        "Ordinary wholesale invoices create no such entitlement; use contractual collection.",
                     ],
                     [
-                        "Marketplace checkout for ordinary permitted secondary-ticket purchases and settlement",
-                        "Platform controls collection, seller deductions, reserves, and payout eligibility",
-                        "Order record and accepted delivery support the platform settlement statement",
-                        "Refunds and delayed payouts require event-specific reserves and cash forecasting",
+                        "Platform checkout funds the original merchant purchase through approved processing.",
+                        "Merchant confirmation and processor records establish the authorized purchase transaction.",
+                        "$9,000 card purchase creates repayment liability regardless of downstream collection.",
+                        "Purchase acceptance does not prove resale acceptance; preserve both evidence chains.",
                     ],
                     [
-                        "Receivables factoring for accepted assignable wholesale invoices with documented debtors",
-                        "Factor advances funds under the assignment and collection agreement",
-                        "Debtor acceptance and factor statements reconcile advance, reserve, and fees",
-                        "Recourse and fees require invoice-level stress testing before assignment",
+                        "Factoring accelerates eligible receivable cash through a separate financing agreement.",
+                        "Factor verifies assignment, debtor acceptance, reserves, recourse, and permitted notification.",
+                        "A 2% charge on $9,300 consumes $186 before other costs.",
+                        "Recourse can restore exposure; compare financing costs against actual spread.",
                     ],
                     [
-                        "Milestone holds for staged corporate packages with objectively verifiable delivery",
-                        "Buyer or escrow provider releases installments after specified performance evidence",
-                        "Signed milestones and documented completion establish each installment entitlement",
-                        "Supplier prepayment gaps require funded liquidity before accepting staged collection",
+                        "Milestone hold defers a contractual portion until specified acceptance conditions.",
+                        "Buyer releases retained balance after objective inspection evidence satisfies terms.",
+                        "A 10% hold on $9,300 ties up $930 of capital.",
+                        "Indefinite deductions destroy velocity; negotiate deadlines and prohibit unrelated offsets.",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Map the obligation",
-                    "action": "Record the legal debtor, authorized signer, invoice basis, and cancellation allocation.",
-                    "detail": "Distinguish acquisition reimbursement, service fees, refundable deposits, card rewards, and pass-through amounts before selecting settlement terms.",
+                    "title": "Authenticate both parties and payment authority",
+                    "action": "Match the legal purchaser, authorized signer, warehouse, and beneficiary account.",
+                    "detail": "Verify new bank instructions through a previously established callback number and record the verifier, date, and source.",
                 },
                 {
                     "step": 2,
-                    "title": "Verify the destination",
-                    "action": "Validate beneficiary instructions through an independently established contact and provider channel.",
-                    "detail": "Match the receiving account to the contracted party or documented authorized recipient; retain the verification record.",
+                    "title": "Bind the commitment to measurable evidence",
+                    "action": "Save quantity, serial requirements, price, acceptance trigger, deductions, and payment deadline.",
+                    "detail": "Link merchant orders and shipment identifiers to the commitment before purchasing, with separate records for each payer obligation.",
                 },
                 {
                     "step": 3,
-                    "title": "Attach release evidence",
-                    "action": "Link receiving reports, permitted ticket transfers, or venue assignment confirmations to the invoice.",
-                    "detail": "Define an exception deadline and responsible reviewer so delivery disputes cannot remain silently unresolved.",
+                    "title": "Reconcile acceptance to cash availability",
+                    "action": "Match warehouse acceptance, remittance detail, bank posting, and available balance.",
+                    "detail": "Keep initiated, available, disputed, and returned payments separate; send unresolved deductions to the named accounts-payable owner.",
                 },
                 {
                     "step": 4,
-                    "title": "Reconcile receipt and restrictions",
-                    "action": "Match the actual bank credit to gross proceeds, deductions, reserves, and remaining liabilities.",
-                    "detail": "Release cash for owner distributions only after supplier obligations, statement payments, taxes, and refund reserves remain funded.",
+                    "title": "Release surplus only after repayment coverage",
+                    "action": "Fund the card obligation before considering new inventory or treasury allocation.",
+                    "detail": "Archive the completed evidence packet and release only cash exceeding dated liabilities, dispute reserves, and operating requirements.",
                 },
             ],
         },
         {
-            "heading": "3. Protect allocation access without identity multiplication or unpaid exposure",
-            "epistemic_status": "operating_framework",
+            "heading": "3. Reconcile each engine before projecting the canonical annual cases",
+            "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "The mapped play verified_fan_ticketing_and_drop_allocation_farming must operate as genuine permitted allocation sourcing, not account multiplication designed to defeat purchase limits. Reject proxy rotation, fabricated identities, aged-profile camouflage, virtual-card rotation to disguise a purchaser, and queue or CAPTCHA bypass. The BOTS Act, 15 U.S.C. §45c, addresses circumvention of covered ticket controls and specified resale conduct involving tickets obtained through that circumvention. Do not extend its precise ticket provisions casually to every collectible; U.S. Mint and luxury releases have their own purchase, household, transfer, and account conditions. Ticketmaster Verified Fan or AXS eligibility also does not establish a transferable entitlement until the actual offer and delivery terms permit one. A genuine buyer consortium is acceptable only where the governing rules allow its members' participation, acquisition, pooling, and intended resale. Distinct addresses, payment accounts, or card identifiers are evidence to verify, not permission to bypass a per-person or household restriction. Preserve each participant's actual authority and allocation record. If participation rules prohibit coordinated acquisition, abandon that release rather than relabeling the same behavior as brokerage. The clean fallback is an authorized wholesale commitment, venue allocation, or existing transferable inventory whose chain of ownership can be documented before the operator promises delivery."
+                    "Formula v2.0 supplies an aggregate planning bridge, not evidence that "
+                    "every electronics order earns a 35% spread. Conservative gross scorecard "
+                    "receipts are $250,000; applying the supplied 35% retained share yields "
+                    "$87,500, and $67,500 of remaining modeled costs leaves $20,000 owner "
+                    "profit. Base receipts of $1,025,000 yield $358,750 retained contribution; "
+                    "subtracting $215,250 leaves $143,500. Scaled receipts of $1,800,000 yield "
+                    "$630,000 retained contribution; subtracting $270,000 leaves $360,000. "
+                    "The respective gross-basis margins are 8%, 14.0%, and 20%; dividing "
+                    "profits by retained contribution produces 22.86%, 40.0%, and 57.14% "
+                    "after rounding. Merchandise deductions implied by this bridge are "
+                    "$162,500, $666,250, and $1,170,000. The remaining modeled costs are "
+                    "residual annual scenario costs, not a claim that every dollar is "
+                    "monthly office overhead. The supplied $1,500 to $9,000 monthly operating "
+                    "range therefore cannot substitute for a full expense build. Maintain "
+                    "separate schedules for people, processing, financing, shipping exceptions, "
+                    "and other residual costs without deducting merchandise twice. The "
+                    "illustrative device transaction demonstrates mechanics, not a derivation "
+                    "of these annual cases. Before investing, prove the actual transaction "
+                    "mix can support the supplied retained share; reject the projection "
+                    "if supplier quotes and collected rewards cannot reproduce it."
                 ),
                 (
-                    "Price the permitted unit, not an imagined account multiplier. If two independently eligible purchasers may each buy two tickets under the applicable rules, the consortium has four potential tickets, not an entitlement to future releases. At $150 acquisition basis per ticket, four tickets require $600. If all four lawfully resell for $225 each and seller deductions total $90, the contribution is $210 before overhead, taxes where applicable, and refunds. A 50% gross price premium is therefore a 35% contribution on acquisition basis in this example, not a 50% net margin. If one pair remains unsold and is marked down to $140 per ticket with a 10% seller deduction, that pair yields $252 against $300 basis, losing $48. The other pair yields $405 against $300 basis, leaving the combined result at $57. This is why presold wholesale commitments, transferable inventory verification, and pre-event markdown curves matter more than promotional claims of instant premiums. Do not promise 100x–500x odds: eligibility, allocation dependence, and purchase limits make such claims unreliable. When lawful allocation fails, return unearned deposits under the contract, offer an expressly accepted substitute, or close the order. Never fill the gap with an unauthorized account or speculative delivery promise."
+                    "Keep three economic schedules and a fourth reconciliation sheet. The "
+                    "wholesale schedule records merchandise purchase cost, contractual resale "
+                    "proceeds, freight, insurance, returns, and deductions. The commercial "
+                    "rewards schedule records eligible spend, issuer rewards, portal proceeds, "
+                    "and incremental payment fees without booking purchase principal as a "
+                    "second expense. The treasury schedule records interest and qualifying "
+                    "bonuses, custody costs, and displaced yield. The reconciliation sheet "
+                    "eliminates overlap and distinguishes cash timing from earnings. For "
+                    "a $10,000 authentic supplier invoice, illustrative processing at 2.9% "
+                    "costs $290; a verified 3% reward on the invoice amount contributes "
+                    "$300, leaving $10 before other costs. At a verified 2% reward, "
+                    "the same transaction loses $90 before other benefits. If genuinely "
+                    "available cash also earns simple annualized 4.5% for 55 days, its "
+                    "gross yield is $67.81, but that is a separate time-dependent result "
+                    "requiring eligible cash and safe maturity alignment. Do not assume "
+                    "reward eligibility on processing fees. A $500 bank bonus requiring "
+                    "$20,000 for 90 days sacrifices approximately $221.92 at that yield, "
+                    "leaving $278.08 before taxes and incidental charges. Use actual days "
+                    "and the applicable yield convention; Treasury discount quotations "
+                    "are not interchangeable with this simplified annualized calculation."
                 ),
                 (
-                    "Screen counterparties in proportion to unsecured exposure, not their social visibility. Verify the entity in the relevant state registry, confirm the signer through established channels, obtain trade references you can independently contact, and compare the beneficiary name with the contract. Review payment history, disputed receiving patterns, available financial information, and any relevant lien or insolvency records without treating a clean search as proof of solvency. Start a new buying group with a small accepted-and-paid shipment; increase limits only after observed performance across complete cycles. Credit exposure includes delivered unpaid goods, in-transit inventory, and committed purchases that cannot be canceled. If those balances are $4,000, $3,000, and $2,000, respectively, exposure is $9,000 even when the receivables report shows only $4,000. Set one aggregate limit per related debtor group so multiple brands cannot hide concentration. Fee protection begins with a signed schedule defining earned services, acceptance deadlines, cancellation consequences, and the evidence required for a dispute. A non-circumvention clause may support a documented sourcing relationship, but it does not repair an unauthorized allocation or bind strangers. For merchandise sales, evaluate the applicable state's enactment of UCC §2-201 and preserve signed writings identifying quantity and essential commercial terms."
+                    "Statement float is a dated liability, not another margin line. "
+                    "A purchase just after closing might enjoy a long interest-free "
+                    "interval if the agreement provides one and the full statement "
+                    "balance is paid on time; another purchase near closing gets "
+                    "much less runway. Treat 55 days as a case to verify, not "
+                    "an entitlement. Suppose $30,000 of merchandise is charged on day "
+                    "zero, expected group payment arrives on day ten, and the card "
+                    "is due on day 55. A forty-day payout delay moves expected "
+                    "cash to day 50, leaving only five days for settlement problems; "
+                    "a further ten-day delay breaches the repayment plan. Size an "
+                    "independent reserve or reduce purchases until the day-55 obligation "
+                    "can be met without that receivable. At an illustrative 24% "
+                    "annual simple financing cost, carrying $30,000 for 15 days costs "
+                    "approximately $295.89, before contractual fees or grace-period effects. "
+                    "That can consume the entire merchandise spread. A Treasury bill "
+                    "maturing after the card due date cannot serve as immediate "
+                    "repayment cash without sale and settlement risk. Stress two late "
+                    "buyers simultaneously, one damaged shipment, a reward reversal, and "
+                    "an issuer suspension. The $10,000 to $55,000 startup capital range "
+                    "limits exposure; it does not establish that every annual scenario "
+                    "is fundable from its lower endpoint."
                 ),
             ],
             "table": {
-                "caption": "Allocation Integrity, Counterparty Credit, and Specific Stop Conditions",
+                "caption": "Canonical Formula v2.0 Bridge and Separate Transaction-Level Economics",
                 "headers": [
-                    "Control surface requiring a documented decision",
-                    "Evidence collected before capital is committed",
-                    "Concrete operating threshold or unit calculation",
-                    "Fallback when the original transaction fails",
+                    "Scenario or distinct economic engine",
+                    "Gross amount and direct deduction",
+                    "Retained result and profit interpretation",
+                    "Evidence or stress test required",
                 ],
                 "rows": [
                     [
-                        "Permitted fan allocation through Ticketmaster or AXS offer terms",
-                        "Actual purchaser eligibility, quantity limits, transfer rights, and delivery timing",
-                        "Two eligible buyers purchasing two permitted tickets create four potential units",
-                        "Use authorized transferable inventory or return the contractually unearned deposit",
+                        "Conservative annual case uses one full-time operator plus two contractors.",
+                        "$250,000 gross basis less $162,500 implied merchandise deduction equals $87,500.",
+                        "$67,500 remaining costs leave $20,000 profit and 22.86% retained margin.",
+                        "Verify 8% gross-basis margin using collected transactions and complete costs.",
                     ],
                     [
-                        "U.S. Mint or collectible release with applicable household purchase conditions",
-                        "Published release conditions and authentic participant authority for each order",
-                        "Count permitted household quantities rather than card numbers or profiles",
-                        "Purchase existing wholesale inventory with documented provenance and transfer rights",
+                        "Base annual case uses one full-time operator plus two contractors.",
+                        "$1,025,000 gross basis less $666,250 implied merchandise deduction equals $358,750.",
+                        "$215,250 remaining costs leave $143,500 profit and 40.0% retained margin.",
+                        "Verify 14.0% gross-basis margin without counting pending rewards twice.",
                     ],
                     [
-                        "First shipment to a newly screened wholesale buying group",
-                        "Entity registration, verified signer, independent references, and agreed receiving standards",
-                        "Complete one small accepted-and-paid cycle before increasing unsecured exposure",
-                        "Require suitable prepayment or decline additional purchase commitments entirely",
+                        "Scaled annual case uses two full-time operators plus three contractors.",
+                        "$1,800,000 gross basis less $1,170,000 implied merchandise deduction equals $630,000.",
+                        "$270,000 remaining costs leave $360,000 profit and 57.14% retained margin.",
+                        "Verify 20% gross-basis margin with sufficient liquidity for concurrent failures.",
                     ],
                     [
-                        "Related debtor concentration across brands and shared treasury operations",
-                        "Beneficiary relationships, contractual entities, payment history, and common control indicators",
-                        "Combine receivables, in-transit goods, and irreversible commitments into one limit",
-                        "Redirect permitted purchases toward independently vetted buyers with available capacity",
+                        "Wholesale fulfillment example isolates committed inventory spread before commercial rewards.",
+                        "$9,300 proceeds less $9,000 merchandise and $90 freight equals $210.",
+                        "The $210 contribution excludes overhead, disputed deductions, and contingent rewards.",
+                        "Require acceptance evidence and test parcel loss against insurance exclusions.",
                     ],
                     [
-                        "Event inventory approaching the scheduled date without adequate demand",
-                        "Live permitted listings, available quantity, transfer deadline, and current contribution",
-                        "Apply predefined dated markdowns using net proceeds after platform deductions",
-                        "Reduce price or exit inventory before transfer capability disappears",
+                        "Commercial invoice example isolates eligible rewards less incremental payment fees.",
+                        "$10,000 invoice earns $300 reward while illustrative processing costs $290.",
+                        "The $10 contribution excludes treasury yield and all incidental charges.",
+                        "At 2% rewards the same transaction loses $90 before other benefits.",
                     ],
                     [
-                        "Brokerage fee earned through documented corporate sourcing and delivery",
-                        "Signed fee schedule, authorized scope, performance evidence, and cancellation allocation",
-                        "Recognize only the fee supported by completed contractual service obligations",
-                        "Refund unearned balances and pursue supported receivables through agreed remedies",
+                        "Treasury example isolates time-weighted return from repayment principal and inventory.",
+                        "$50,000 multiplied by 4.5% and 55/365 produces approximately $339.04.",
+                        "Only the $339.04 return contributes income; invested principal remains capital.",
+                        "Use actual security pricing and ensure maturity precedes required payment.",
+                    ],
+                    [
+                        "Bank bonus example isolates qualifying incentive less displaced investment income.",
+                        "$500 bonus less $221.92 displaced yield produces $278.08 incremental benefit.",
+                        "The $20,000 qualifying balance remains principal rather than recognized earnings.",
+                        "Verify ninety-day conditions, payment timing, clawbacks, and actual alternative yield.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before the operator commits funds",
-                "body": "A transaction proceeds only when allocation rights, debtor authority, settlement instructions, and stressed liquidity are documented together.",
+                "title": "Four checks before any purchase consumes statement capacity",
+                "body": "Proceed only when the purchase remains fundable without speculative rewards or an optimistic ACH arrival.",
                 "items": [
-                    "Confirm the actual purchaser, household or quantity limits, permitted transfer, and intended resale; reject any plan dependent on concealing identity or defeating access controls.",
-                    "Confirm the contracting entity, authorized signer, treasury contact, acceptance standard, and aggregate exposure against the approved debtor limit.",
-                    "Confirm the receiving account through an independent channel and attach objective release conditions, cancellation terms, and fee treatment to the signed order.",
-                    "Confirm statement repayment remains funded after a delayed ACH receipt, a held platform payout, and an event-specific refund or markdown scenario.",
+                    "Confirm a written purchase commitment, exact SKU eligibility, permitted warehouse destination, and a payment clock anchored to documented acceptance.",
+                    "Confirm actual card and portal eligibility, all processing charges, available credit, and the card's contractual due date without relying on a generic 55-day assumption.",
+                    "Demonstrate repayment coverage after a forty-day buying-group delay plus ten additional settlement days, with pending rewards excluded from the cash reserve.",
+                    "Verify parcel coverage, serial evidence, return deadlines, resale documentation where applicable, and an accountable person empowered to resolve payment deductions.",
                 ],
             },
         },
         {
-            "heading": "4. Reconcile contribution, settlement cash, and owner profit without inflating revenue",
-            "epistemic_status": "illustrative_model",
+            "heading": "4. Protect collection rights, screen counterparties, and contain adjacent credit plays",
+            "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Keep the Formula v2.0 scorecard intact while distinguishing its management presentation from transaction-level accounting. Conservative gross scenario receipts of $250,000 retain $87,500 at 35%; subtracting $67,500 of remaining modeled costs produces $20,000 owner profit. Base gross receipts of $1,025,000 retain $358,750; remaining modeled costs of $215,250 produce $143,500. Scaled gross receipts of $1,800,000 retain $630,000; remaining modeled costs of $270,000 produce $360,000. The corresponding gross-basis margins are 8%, 14.0%, and 20%, while margins on retained contribution are 22.86%, 40.0%, and 57.14%. The acquisition and pass-through basis implied by the model is $162,500, $666,250, and $1,170,000, respectively. These figures reconcile arithmetically; the residual cost amounts are not a fabricated expense-category forecast. The stated $1,500–$9,000 monthly operating-expense range is not a complete explanation of every scenario's residual costs, so identify direct transaction costs, labor, losses, financing, and other expenses in a separate bridge. Do not quietly equate that monthly range with the full annual deduction. Keep the canonical team assumptions at 1 FT + 2 C for Conservative and Base, and 2 FT + 3 C for Scaled. A larger receipt total does not itself establish better unit economics."
+                    "Counterparty screening starts with identity and authority, then moves "
+                    "to payment capacity. Match the contracting name to state business "
+                    "records, obtain a completed tax identification record through a secure "
+                    "channel, verify the warehouse relationship, and independently confirm "
+                    "beneficiary ownership. Obtain trade references and ask about actual "
+                    "days paid after acceptance, not advertised terms. Search relevant "
+                    "state UCC filings and court records where appropriate; a filing "
+                    "shows a claimed security interest, not by itself insolvency or "
+                    "fraud. Begin with a small lot and require completed payment "
+                    "before increasing unsecured exposure. Set an exposure limit covering "
+                    "ordered inventory, goods in transit, accepted unpaid goods, and "
+                    "disputed deductions together. A $15,000 limit is already breached "
+                    "by $6,000 ordered, $5,000 in transit, and $5,000 accepted unpaid. "
+                    "For fee protection, define price, permitted offsets, inspection periods, "
+                    "rejection evidence, return responsibility, and collection costs enforceable "
+                    "under applicable law. UCC Sections 2-607 and 2-709 address payment "
+                    "for accepted goods and qualifying actions for the price, but "
+                    "litigation is not a substitute for liquidity. Preserve serials, "
+                    "delivery signatures, inspection responses, and remittance files. If "
+                    "the oldest receivable misses its agreed date, suspend new "
+                    "commitments and seek a documented cure rather than increasing "
+                    "volume to recover the existing exposure."
                 ),
                 (
-                    "The 35% retained share is the supplied modeling convention, not an automatic ASC 606 conclusion. Determine principal-versus-agent presentation from the actual promise and control of the specified good or service before transfer, considering the applicable guidance and contractual facts. An operator controlling merchandise or tickets may have gross revenue and acquisition costs; an agent arranging a transaction may recognize its fee. Card rewards can require purchase-cost or other accounting treatment depending on their substance, rather than being universally classified as customer-contract revenue. Maintain a management bridge so these accounting choices do not cause merchandise value, rewards, and settlement cash to be counted twice. Refundable customer deposits remain liabilities until the relevant obligations are satisfied. Escrow balances are not freely deployable simply because a customer has funded them. Sales tax collected for a taxing authority is not an operating spread; verify nexus, product taxability, marketplace collection responsibilities, and state resale-certificate requirements for the actual transaction. A resale certificate does not exempt unrelated business consumption. The ledger should preserve gross customer consideration, inventory basis, platform deductions, earned service fees, reward adjustments, tax liabilities, refunds, and bank receipts as separate fields. Reconcile the retained-share dashboard to the books rather than forcing the books to imitate a marketing scorecard."
+                    "Tax and accounting records must follow substance rather than the "
+                    "warehouse postcode. Delaware, New Hampshire, and Oregon lack a "
+                    "general state sales tax, but that fact does not erase "
+                    "other states' sourcing rules, use-tax obligations, or documentation "
+                    "requirements. Maintain valid resale certificates wherever the applicable "
+                    "transaction requires them; a certificate is not a universal "
+                    "tax exemption. Preserve merchant invoices and the commercial purpose "
+                    "of each purchase. IRC Section 6050W governs qualifying payment "
+                    "settlement reporting; an information return reports covered payment "
+                    "activity rather than calculating taxable profit. Reconcile reporting "
+                    "to refunds, merchandise cost, and actual payer records. Evaluate "
+                    "purchase-linked rebates as potential price adjustments affecting basis, "
+                    "rather than automatically treating every incentive as free-standing "
+                    "income; interest and bank bonuses require their own classification. "
+                    "IRC Sections 61, 1012, and 6001 supply relevant income, basis, "
+                    "and recordkeeping foundations. For reporting, the supplied 35% "
+                    "ASC 606 retained-share bridge is a scenario convention requiring "
+                    "a documented principal-versus-agent assessment, not an accounting "
+                    "election created by this chapter. Interest is evaluated separately "
+                    "from customer-contract revenue. Neither merchant sales volume, group "
+                    "downstream turnover, card limits, nor borrowed principal becomes "
+                    "recognized operator revenue simply because it passes through "
+                    "a dashboard. Reconcile the three operating schedules to bank "
+                    "cash and the general ledger every month."
                 ),
                 (
-                    "Build the cash calendar around actual dates, not the phrase card float. A purchase's usable payment interval depends on its posting date, statement close, due date, grace-period eligibility, and the issuer's commercial terms; a sixty-day interval is a planning ceiling only when the account actually supports it. Business-purpose credit is generally outside many Regulation Z provisions under 12 CFR §1026.3(a), so do not assume consumer-card protections or a universal grace period. Model merchandise acceptance, ACH initiation, bank receipt, platform release, and statement payment independently. An illustrative $10,000 funding gap lasting thirty days at 24% annual simple interest costs approximately $197.26 before fees, consuming most of the earlier $306 contribution. The calculation illustrates sensitivity, not an offer of credit. Maintain liquidity sufficient for a stressed settlement cycle, outstanding statement obligations, and defined refund reserves; available credit is not cash and can be reduced. Use a buying-group commitment reconciler and SkyBox or Automatiq where their authorized integrations fit, with unique inventory identifiers and manual exception ownership. Automation should prevent duplicate commitments and reconcile actual payments, never defeat purchase controls. Distribute owner profit only after obligations remain funded and the bank, marketplace, inventory, and card ledgers reconcile to the same transaction population."
+                    "The mapped cloud_ai_startup_credit_aggregation_arbitrage play belongs to TRACK_1 "
+                    "and should reduce genuine software operating costs, not manufacture "
+                    "buying-group receipts. A Delaware or Wyoming micro-SaaS entity needs "
+                    "a real product, accurate ownership disclosures, and actual eligibility "
+                    "for any incubator, venture-partner, or founder-perk route. Investigate "
+                    "AWS Activate, Azure Founders Hub, GCP for Startups, Cloudflare, "
+                    "OpenAI, and Anthropic through authenticated program channels; entity "
+                    "formation alone creates no award entitlement. Treat the supplied "
+                    "$25,000 to $350,000 cross-program range as a research target, "
+                    "not currently verified availability or a stackable cash balance. "
+                    "A granted $25,000 compute credit covering $2,500 monthly eligible "
+                    "usage lasts ten months before expiry constraints. A SaaS product "
+                    "collecting $10,000 monthly with $200 of other cash delivery "
+                    "costs shows 98% cash delivery margin while eligible compute "
+                    "is covered, but only 73% after adding $2,500 compute expense; "
+                    "neither figure includes all owner-profit costs. A $1,000 other-cost "
+                    "case produces 90% while covered. Never resell raw API keys "
+                    "or create duplicate entities to evade program limits. Maintain "
+                    "genuine standalone products and tested Llama, vLLM, or DeepSeek "
+                    "fallback deployments with measured capacity, model-license compatibility, "
+                    "and recovery objectives. Local inference still costs money, "
+                    "and failover does not promise uninterrupted service. Record credits "
+                    "by provider, expiry, workload eligibility, and usable balance."
                 ),
             ],
             "table": {
-                "caption": "Canonical Formula v2.0 Contribution Bridge and Cash-Availability Controls",
+                "caption": "Six Collection and Eligibility Controls with Quantified Failure Responses",
                 "headers": [
-                    "Scenario or accounting control under review",
-                    "Gross receipts and retained contribution measurement",
-                    "Profit reconciliation or specific cash treatment",
-                    "Operator action required before distributing earnings",
+                    "Control and commercial purpose",
+                    "Evidence retained before funds move",
+                    "Quantified decision or monitoring trigger",
+                    "Fallback preserving legitimate operations",
                 ],
                 "rows": [
                     [
-                        "Conservative operation staffed with one full-time worker and two contractors",
-                        "$250,000 gross receipts retain $87,500 after $162,500 modeled acquisition basis",
-                        "$67,500 remaining costs leave $20,000 profit at 8% gross-basis margin",
-                        "Verify 22.86% retained margin and fund all outstanding settlement obligations",
+                        "Counterparty credit screening limits aggregate unsecured inventory and receivable exposure.",
+                        "Business identity, trade references, payment history, and relevant filings support limits.",
+                        "$6,000 ordered plus $5,000 transit plus $5,000 unpaid exceeds $15,000.",
+                        "Stop new commitments and collect existing balances before restoring capacity.",
                     ],
                     [
-                        "Base operation staffed with one full-time worker and two contractors",
-                        "$1,025,000 gross receipts retain $358,750 after $666,250 modeled acquisition basis",
-                        "$215,250 remaining costs leave $143,500 profit at 14.0% gross-basis margin",
-                        "Verify 40.0% retained margin and reconcile residual costs by actual category",
+                        "Fee protection defines deductions, acceptance deadlines, and enforceable collection rights.",
+                        "Signed commitment specifies inspection evidence, offsets, return responsibility, and payment timing.",
+                        "A disputed $300 deduction exceeds the illustrative $210 inventory spread.",
+                        "Escalate promptly through the named payment owner and documented dispute process.",
                     ],
                     [
-                        "Scaled operation staffed with two full-time workers and three contractors",
-                        "$1,800,000 gross receipts retain $630,000 after $1,170,000 modeled acquisition basis",
-                        "$270,000 remaining costs leave $360,000 profit at 20% gross-basis margin",
-                        "Verify 57.14% retained margin without treating credit availability as liquidity",
+                        "Parcel protection preserves evidence for carrier and insurance recovery claims.",
+                        "Serial photographs, packing records, declared values, and coverage terms remain linked.",
+                        "One lost $900 device exceeds four $210 transaction contribution amounts.",
+                        "File timely claims and fund repayment without assuming immediate recovery.",
                     ],
                     [
-                        "Principal-versus-agent assessment applied separately to each promised commercial service",
-                        "Management retained contribution remains distinct from formal revenue presentation",
-                        "Customer consideration, acquisition basis, and earned fees receive separate classification",
-                        "Document control assessment and reconcile management metrics to accounting records",
+                        "Resale and basis records distinguish tax treatment from destination marketing.",
+                        "Applicable certificates, merchant invoices, refunds, and purchase-linked rebates support reconciliation.",
+                        "An additional 6% charge on $9,000 adds $540 of cost.",
+                        "Reprice before purchase when actual sourcing or exemption treatment changes.",
                     ],
                     [
-                        "Customer deposits, collected sales taxes, and conditional escrow balances",
-                        "Received money can remain restricted or owed to another party",
-                        "Refundable or remittable amounts do not become distributable operating profit",
-                        "Reconcile liability balances and verify state-specific tax collection responsibilities",
+                        "Startup compute grants reduce eligible workloads rather than producing transferable cash.",
+                        "Authenticated award terms establish ownership eligibility, permitted usage, expiry, and restrictions.",
+                        "$25,000 award covers ten $2,500 months before considering expiry constraints.",
+                        "Operate genuine products and fund compute normally when awards expire.",
                     ],
                     [
-                        "Statement calendar tested against delayed ACH and held marketplace settlements",
-                        "Actual posting and due dates determine the usable funding interval",
-                        "$10,000 financed thirty days at 24% costs approximately $197.26 interest",
-                        "Fund statement repayment before rewards, disputed receivables, or forecasts clear",
+                        "Local inference fallback preserves service options without pretending operating costs vanish.",
+                        "Load tests document capacity, model licensing, recovery objectives, and migration readiness.",
+                        "$10,000 collections less $200 delivery and $2,500 compute leaves $7,300.",
+                        "Throttle workloads or migrate eligible traffic within measured capacity and budgets.",
                     ],
                 ],
             },
         },
     ],
-    "pull_quote": "The spread belongs to the operator only after the entitlement is valid, the debtor pays, and every attached obligation is funded.",
+    "pull_quote": "A reward is margin only after eligibility survives, and float is useful only while repayment remains funded.",
     "diagram_id": "diag-04",
     "action_checklist": [
-        "Create one transaction record connecting the payer's legal entity, budget authority, purchase commitment, permitted entitlement, acceptance evidence, and settlement reference.",
-        "Write Net-3 or Net-5 terms with an explicit clock trigger, business-day convention, receiving deadline, invoice identifier, and treasury escalation contact.",
-        "Choose among the eight settlement structures using custody, release evidence, reversal exposure, and funding-gap calculations rather than advertised transfer speed.",
-        "Replace account-multiplication concepts with genuinely eligible purchasers or authorized inventory, documenting applicable quantity, household, transfer, and resale restrictions.",
-        "Set related-debtor exposure limits covering unpaid receivables, in-transit goods, and irreversible commitments; suspend purchasing when payment or acceptance deadlines fail.",
-        "Reconcile the three canonical profit cases to retained contribution, then maintain a daily cash calendar covering card statements, platform holds, tax liabilities, and refunds.",
+        "Create a payer register identifying each buying group's legal entity, procurement authority, accounts-payable owner, accepted bank details, and contractual settlement trigger.",
+        "Build separate wholesale, card-and-portal, and treasury schedules; reconcile them to the canonical 35% retained-share bridge without presenting principal as income.",
+        "Save current BuyForMeRetail, Pointsmaker, MaxOutDeals, Rakuten, TopCashback, issuer, Plastiq, and Melio terms relevant to each proposed transaction before committing capital.",
+        "Run the forty-day payout-delay plus ten-day settlement stress against actual statement dates, excluding pending rewards and unavailable bank-bonus balances from repayment cash.",
+        "Set aggregate counterparty limits across ordered, in-transit, accepted, and disputed goods; preserve serial evidence, shipment coverage, permitted deductions, and collection deadlines.",
+        "Document resale treatment, payment reporting, rebate basis adjustments, and principal-versus-agent conclusions; keep genuine startup compute grants outside wholesale and treasury receipts.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to circumvention of ticket access controls",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits specified circumvention of covered ticket controls and specified resale conduct involving tickets obtained through that circumvention; preserve genuine eligibility and permitted purchase quantities.",
+            "title": "UCC Section 2-607 — Effect of Acceptance; Notice of Breach",
+            "url": "https://www.law.cornell.edu/ucc/2/2-607",
+            "relevance": "Addresses the buyer's duty to pay at the contract rate for accepted goods and related notice duties; verify the governing state's enacted text.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Applies total-price presentation and related fee-disclosure requirements to covered live-event ticket offers; integrate required pricing into quotes and checkout rather than adding unavoidable charges late.",
+            "title": "UCC Section 2-709 — Action for the Price",
+            "url": "https://www.law.cornell.edu/ucc/2/2-709",
+            "relevance": "Identifies circumstances supporting a seller's action for the price; collection rights do not replace a funded repayment reserve.",
         },
         {
-            "title": "12 CFR §1026.3(a) — Business, commercial, agricultural, or organizational credit exemptions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-A/section-1026.3",
-            "relevance": "Business-purpose credit is generally exempt from Regulation Z subject to specified exceptions; derive commercial-card payment timing and protections from the actual applicable terms.",
+            "title": "UCC Section 4A-202 — Authorized and Verified Payment Orders",
+            "url": "https://www.law.cornell.edu/ucc/4A/4A-202",
+            "relevance": "Provides a framework for authorization and agreed security procedures in covered commercial funds transfers, subject to state enactment and applicable federal rules.",
         },
         {
-            "title": "New York UCC §2-201 — Formal requirements for sales contracts",
-            "url": "https://www.nysenate.gov/legislation/laws/UCC/2-201",
-            "relevance": "Provides signed-writing requirements and exceptions for covered goods contracts; preserve purchase orders and quantity evidence when New York law governs.",
+            "title": "12 CFR Part 210, Subpart B — Funds Transfers Through Fedwire",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-210/subpart-B",
+            "relevance": "Governs covered Fedwire funds transfers; distinguish this framework from ACH operating rules and individual bank account agreements.",
         },
         {
-            "title": "New York UCC §9-406 — Discharge of account debtor and notification of assignment",
-            "url": "https://www.nysenate.gov/legislation/laws/UCC/9-406",
-            "relevance": "Addresses payment discharge and assignment notification subject to its conditions and exceptions; verify governing state law and assignment documents before factoring an accepted receivable.",
+            "title": "UCC Section 9-406 — Discharge of Account Debtor; Notification of Assignment",
+            "url": "https://www.law.cornell.edu/ucc/9/9-406",
+            "relevance": "Addresses account-debtor discharge and assignment notification issues relevant to factoring, within the provision's scope and applicable state law.",
         },
         {
-            "title": "11 U.S.C. §726 — Distribution of property of the estate",
-            "url": "https://www.law.cornell.edu/uscode/text/11/726",
-            "relevance": "Establishes distribution ordering in applicable Chapter 7 proceedings; treat insolvent-counterparty recoveries as claims-driven distributions rather than ordinary selectable settlement rails.",
+            "title": "26 U.S.C. Section 6050W — Returns Relating to Payment Settlement Entities",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Establishes payment-settlement information reporting requirements; reported payment amounts must be reconciled rather than equated with operator profit.",
+        },
+        {
+            "title": "26 U.S.C. Section 61 — Gross Income Defined",
+            "url": "https://www.law.cornell.edu/uscode/text/26/61",
+            "relevance": "Supplies the general gross-income foundation relevant to interest and incentive classification; distinguish earnings from borrowed or returned principal.",
+        },
+        {
+            "title": "26 U.S.C. Section 1012 — Basis of Property",
+            "url": "https://www.law.cornell.edu/uscode/text/26/1012",
+            "relevance": "Provides the cost-basis foundation for purchased merchandise; document the treatment of qualifying purchase-price adjustments with supporting transaction records.",
+        },
+        {
+            "title": "26 U.S.C. Section 6001 — Records, Statements, and Special Returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": "Supports maintaining records sufficient to substantiate merchandise costs, receipts, refunds, rebates, interest, and reported tax items.",
+        },
+        {
+            "title": "12 CFR Section 1005.2 — Consumer and Account Definitions",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.2",
+            "relevance": "Defines the consumer-account scope relevant to Regulation E; do not assume business payment accounts receive identical consumer electronic-transfer protections.",
         },
     ],
 }

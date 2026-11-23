@@ -5,645 +5,705 @@ CHAPTER_8 = {
     "chapter_id": "Q8",
     "chapter_number": 8,
     "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-and-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small buying group, card-float & ticket allocation arbitrage desk an unfair information edge?",
+    "slug": "public-records-apis-pipelines-and-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small buying group, commercial card-float & rebate arbitrage desk an unfair information edge?",
     "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
     "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "Secretary-of-State Records, UCC Searches, Ticketmaster Discovery, SkyBox, Card Settlement Ledgers, and BOTS Act-Safe Allocation Intelligence",
+    "subtitle": "State Entity and UCC Searches, Buying-Group Settlement Evidence, Authorized Rebate Feeds, and Treasury Fiscal Data Joined to a Due-Date Ledger",
     "layout_template": "resource_directory",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, ranked #09 of 42 with a 93/100 Money-to-Manpower Score, turns "
-        "verified commitments, settlement timing, and transferable inventory into a small-team "
-        "information advantage. This chapter maps 11 operator plays to public records, contracted "
-        "feeds, and auditable ledgers, including the supplied sportsbook promo-conversion play "
-        "with its certainty claims corrected. Eighteen named resources support counterparty "
-        "screening, card reconciliation, event identity, shipment evidence, and resale-rule checks. "
-        "Formula v2.0 produces annual owner profits of $20,000 Conservative, $143,500 Base, "
-        "and $360,000 Scaled. Those profits reconcile against a 35% retained spread, not "
-        "merchant purchase volume or customer betting turnover. Build read-only ingestion first; "
-        "release purchases and listings only when identifiers, cash dates, transfer rights, and "
-        "exception ownership reconcile."
+        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score. "
+        "This resource directory organizes 11 mapped plays: ten operating workflows "
+        "for wholesale fulfillment, commercial rebates, and treasury management, plus "
+        "one explicitly excluded cross-shelf mapping. The information edge comes "
+        "from joining legal-entity evidence, accepted purchase commitments, parcel "
+        "events, rebate terms, cleared ACH receipts, and card obligations without "
+        "mistaking pending rewards or borrowed principal for earnings. Eighteen "
+        "named resources specify access, costs, refresh practices, and fallbacks. "
+        "Canonical annual owner profit remains $20,000 Conservative, $143,500 Base, "
+        "and $360,000 Scaled. A 35% retained contribution bridge separates landed "
+        "merchandise cost from the gross planning basis; transaction evidence, not "
+        "headline reward percentages, determines whether each operating play deserves capital."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained revenue at 35%.",
-            "note": "8% gross-basis net margin; 22.86% retained margin; $20,000 owner profit; 1 FT + 2 C.",
+            "context": "Annual gross planning basis; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis net margin; $20,000 annual owner net profit; 1 FT + 2 C; 22.86% retained margin.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained revenue at 35%.",
-            "note": "14.0% gross-basis net margin; 40.0% retained margin; $143,500 owner profit; 1 FT + 2 C.",
+            "context": "Annual gross planning basis; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis net margin; $143,500 annual owner net profit; 1 FT + 2 C; 40.0% retained margin.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained revenue at 35%.",
-            "note": "20% gross-basis net margin; 57.14% retained margin; $360,000 owner profit; 2 FT + 3 C.",
+            "context": "Annual gross planning basis; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis net margin; $360,000 annual owner net profit; 2 FT + 3 C; 57.14% retained margin.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Build an evidence waterfall before extending counterparty exposure",
+            "heading": "1. Build an evidence waterfall before assigning buying-group credit",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Start with an evidence waterfall, not a purchased contact list. For each buying "
-                    "group, capture the contracting entity, formation jurisdiction, filing number, "
-                    "remittance instructions, authorized signer, and a purchase-order acceptance that "
-                    "names the merchandise and rejection rules. Search the formation registry first; "
-                    "then search applicable UCC records under the exact debtor name and appropriate "
-                    "filing jurisdiction. A registered entity can still be insolvent, and a financing "
-                    "statement describes a claimed security interest rather than a current payoff "
-                    "balance. Review sanctions results using identifying attributes instead of "
-                    "treating a similar name as a definitive match. Ask the counterparty for resale "
-                    "documentation and verify it through the relevant state's available process. "
-                    "Bank-account ownership and payout reliability require separate evidence; neither "
-                    "a Secretary-of-State record nor a SAM registration establishes them. Obtain "
-                    "payment changes through a callback to a previously verified contact, never "
-                    "through the changed email thread alone. Store the source URL, retrieval time, "
-                    "document hash, reviewer, and next review date. When a portal offers only "
-                    "interactive search, use a documented manual lookup rather than inventing an "
-                    "API or scraping around access restrictions. An unavailable registry becomes "
-                    "an open exposure exception, not a fabricated clean result."
+                    "Start with a counterparty record, not a promotional spreadsheet. "
+                    "BuyForMeRetail, Pointsmaker, and MaxOutDeals are research targets, "
+                    "not interchangeable credits or endorsements. Obtain the contracting "
+                    "entity, warehouse operator, remittance entity, written payment terms, "
+                    "and accepted product specifications directly from each proposed "
+                    "counterparty. Resolve the entity against its formation registry, "
+                    "then search UCC filings in the legally appropriate jurisdiction "
+                    "using the exact debtor name and documented variants. A warehouse "
+                    "address in Delaware does not establish the counterparty's state "
+                    "of organization. Preserve search date, search criteria, filing "
+                    "number, and source document; a clean search is evidence about "
+                    "indexed filings, not proof of solvency. The first six directory "
+                    "entries below establish identity, secured-credit context, and "
+                    "tax treatment. Apply the waterfall in order: first-party contract, "
+                    "official entity record, relevant UCC record, state tax authority, "
+                    "then a small paid pilot. Do not purchase consumer enrichment "
+                    "profiles when the business decision requires corporate authority "
+                    "and payment performance. For a $10,000 purchase, cap initial "
+                    "exposure at the amount the desk can repay without any buying-group "
+                    "receipt. Expand only after matching accepted inventory to cleared "
+                    "funds and resolving every short-pay explanation in writing."
                 ),
                 (
-                    "The chapter's eleven mapped plays are committed buying-group fulfillment, "
-                    "counterparty routing, commercial-card rebates, statement-float scheduling, "
-                    "insured shipment recovery, secondary-ticket resale, event-decay repricing, "
-                    "stadium seat-license brokerage, corporate-suite allocation, resale-tax "
-                    "reconciliation, and sportsbook promo conversion. These are operating mappings, "
-                    "not additional catalog identifiers. Give each play a measurable unit and a "
-                    "source that can contradict the trade thesis. A committed order for ten units "
-                    "at $500 creates $5,000 of purchase exposure before shipping; an accepted order "
-                    "is not settled cash. Routing two such orders to different buyers reduces "
-                    "single-buyer exposure to $5,000 each but does not remove correlated ACH delays. "
-                    "A valid exemption on a $10,000 taxable purchase at an illustrative 8% rate "
-                    "avoids an $800 acquisition tax payment; it is not automatically $800 of revenue. "
-                    "If documentation fails, price the actual tax treatment or decline the order. "
-                    "For Net-3 and Net-5 buyers, define when the clock starts: carrier delivery, "
-                    "inspection acceptance, or invoice approval can produce materially different "
-                    "cash dates. Record settlement percentiles from the desk's own receipts and "
-                    "cap new commitments against the slower observed outcome. Public records "
-                    "support identity; historical settlements determine usable credit capacity."
+                    "Treat DE, NH, and OR warehouse routing as a sourcing fact "
+                    "requiring documentation, rather than a universal exemption switch. "
+                    "These states lack a general statewide sales tax, but destination, "
+                    "delivery evidence, retailer policy, local exceptions, and resale "
+                    "rules still matter. Delaware's gross receipts regime is distinct "
+                    "from a retail sales tax; Oregon has targeted taxes, including "
+                    "vehicle-related provisions, rather than a general sales tax. "
+                    "New Hampshire's tax structure also contains transaction-specific "
+                    "taxes outside ordinary merchandise sales. A resale certificate "
+                    "must be valid for the actual seller and transaction when required; "
+                    "a warehouse ZIP code does not replace it. Store certificate "
+                    "jurisdiction, taxpayer identity, scope, effective date, and "
+                    "seller acceptance alongside the invoice. The purchasing operator "
+                    "must verify that commercial resale quantities are permitted "
+                    "before creating an order. For example, a $10,000 electronics "
+                    "invoice reimbursed at $10,200 produces $200 merchandise spread; "
+                    "$45 shipping and $35 expected loss reduce that spread to $120. "
+                    "Record a separately earned $300 card reward in the rebate "
+                    "subledger, not as another wholesale reimbursement. If the seller "
+                    "rejects the proposed tax treatment, recalculate landed cost "
+                    "with the actual tax or abandon the commitment before purchase."
                 ),
                 (
-                    "Run enrichment in increasing order of expense and sensitivity. Normalize "
-                    "the entity name and address, resolve the official filing identifier, retrieve "
-                    "relevant filings, request the signed contract and resale certificate, then "
-                    "validate payout changes and insurer eligibility. Stop when a material mismatch "
-                    "appears; purchasing another commercial profile cannot repair conflicting "
-                    "contracting names. Use domain and telephone checks only as corroboration, "
-                    "because a polished website and working number are inexpensive to create. "
-                    "For ticket activity, resolve the event's jurisdiction and resale channel before "
-                    "checking licensing, transfer conditions, and mandatory price disclosures. "
-                    "For sportsbook activity, check the state regulator's current authorized-operator "
-                    "list and participant eligibility rather than assuming a familiar national "
-                    "brand operates everywhere. The nine official resources below form the first "
-                    "half of an eighteen-resource directory. Their freshness entries distinguish "
-                    "the desk's polling schedule from the publisher's update timing. A daily "
-                    "lookup does not make a filing real-time. Preserve the actual record date "
-                    "and mark stale evidence explicitly. Maintain a source register recording "
-                    "access rights, contractual restrictions, fee schedules, and the last successful "
-                    "retrieval. Review that register monthly and before entering a new state "
-                    "or adding an unfamiliar settlement rail."
+                    "Measure counterparty quality using settlement cohorts that public "
+                    "records cannot supply. For each accepted shipment, capture "
+                    "delivery timestamp, warehouse acceptance timestamp, contractual "
+                    "payment trigger, promised payment date, ACH initiation, and "
+                    "bank-posted availability. Net-3 and Net-5 describe negotiated "
+                    "terms only when the agreement defines the starting event and "
+                    "business-day calendar. A carrier delivery scan can precede "
+                    "warehouse inspection by several days. Report median and "
+                    "ninety-fifth-percentile acceptance-to-cash intervals separately "
+                    "from delivery-to-acceptance intervals. With five $2,000 batches "
+                    "outstanding, a counterparty interruption creates $10,000 of "
+                    "repayment exposure even when every parcel shows delivered. "
+                    "Use a concentration limit based on independently available "
+                    "cash, not advertised card limits. Require a second operator "
+                    "to verify any beneficiary change through an established "
+                    "contact channel before updating payment instructions. Public "
+                    "filings may lag real events; review entities monthly, UCC "
+                    "evidence quarterly, and payment exceptions every business day. "
+                    "Increase frequency after returned ACH entries, unexplained "
+                    "entity changes, or repeated acceptance disputes. The useful "
+                    "fallback is a smaller purchase commitment or another already "
+                    "vetted buyer, not a last-minute transfer to an unverified "
+                    "warehouse offering a higher headline spread. Keep rejected "
+                    "counterparties in the audit history with their documented reasons."
                 ),
             ],
             "table": {
-                "caption": "Official evidence directory, resources 1–9: identity, liens, tax, resale, and gaming",
+                "caption": "Directory Entries 1–6: Official Identity, Secured-Credit, and State Tax Evidence",
                 "headers": [
-                    "Named resource and specific operating purpose",
-                    "Exact access method and cost tier",
-                    "Refresh latency and desk review schedule",
-                    "Rate-limit hygiene and usable fallback evidence",
+                    "Named resource and exact access route",
+                    "Cost tier and operating refresh",
+                    "Rate hygiene and evidence capture",
+                    "Fallback source and decision supported",
                 ],
                 "rows": [
                     [
-                        "Delaware Division of Corporations Entity Search verifies formation identity, not repayment capacity.",
-                        "Open https://icis.corp.delaware.gov/Ecorp/EntitySearch/NameSearch.aspx; basic entity lookup is free, while document products carry fees.",
-                        "Read the displayed record status before onboarding; request current certificates when contract exposure warrants them.",
-                        "Use the interactive search manually; if unavailable, obtain certified documents and verify them when service resumes.",
+                        "Delaware Division of Corporations entity search through https://icis.corp.delaware.gov/Ecorp/EntitySearch/NameSearch.aspx using legal names.",
+                        "Basic entity lookup is free; status products carry posted fees; refresh monthly and before material exposure increases.",
+                        "Use the interactive search manually; retain dated results and do not bypass session restrictions or verification challenges.",
+                        "Obtain a paid official status certificate when basic results cannot establish the status needed for contracting.",
                     ],
                     [
-                        "New York Department of State Corporation and Business Entity Database resolves New York contracting entities.",
-                        "Use https://apps.dos.ny.gov/publicInquiry/ for free public searches; order official document copies separately when required.",
-                        "Recheck before first funding and material contract changes; registry publication timing controls underlying freshness.",
-                        "Avoid automated form hammering; request filed documents directly and retain a dated manual search worksheet.",
+                        "New Hampshire Secretary of State QuickStart business search through https://quickstart.sos.nh.gov/ using registered entity identifiers.",
+                        "Public business searches are free; ordered certificates carry posted charges; refresh monthly for active counterparties.",
+                        "Use browser searches within published terms; record entity numbers and distinguish historical filings from current status.",
+                        "Request official filed documents or counterparty formation evidence when name matching produces multiple plausible entities.",
                     ],
                     [
-                        "New York Department of State UCC records reveal indexed financing statements for applicable debtor searches.",
-                        "Start at https://dos.ny.gov/uniform-commercial-code; follow official search instructions and budget published search or copy fees.",
-                        "Search before extending exposure and after material credit events; filing and indexing delays remain relevant.",
-                        "Use exact debtor names and proper jurisdiction; obtain official searches when portal access or indexing creates ambiguity.",
+                        "Oregon Secretary of State business search through https://sos.oregon.gov/business/Pages/find.aspx and its linked registry search.",
+                        "Public registry searches are free; certified products may cost extra; review monthly and after contracting changes.",
+                        "Search exact names and registry numbers manually; archive dated evidence without assuming every filing is immediately indexed.",
+                        "Request filed organizational documents and official certificates when registry summaries cannot resolve contracting authority.",
                     ],
                     [
-                        "OFAC Sanctions List Search supports sanctions screening with identity-based review of potential matches.",
-                        "Use https://sanctionssearch.ofac.treas.gov/ or published list downloads; public search and list access are free.",
-                        "Refresh against newly published lists and before material new relationships; record the actual list version used.",
-                        "Cache downloaded lists instead of repeating searches; resolve matches using official identifiers and published program information.",
+                        "Delaware UCC search information through https://corp.delaware.gov/ucc/ and authorized search services identified by the filing office.",
+                        "Official searches and service-provider searches use posted fees; search before onboarding and quarterly during continuing exposure.",
+                        "Apply the filing office's search rules; preserve exact debtor spelling, jurisdiction rationale, search scope, and report date.",
+                        "Search the actual debtor jurisdiction's filing office when Delaware is merely the warehouse location rather than the relevant jurisdiction.",
                     ],
                     [
-                        "SAM.gov Entity Information and Exclusions provide federal-registration context and federal exclusion records.",
-                        "Use https://sam.gov/ public search; API access requires its documented account and key arrangements.",
-                        "Review at onboarding when relevant; capture source timestamps because federal status does not measure private-buyer solvency.",
-                        "Follow the account's documented API quota; use manual public search and contracting documents when API retrieval fails.",
+                        "Delaware Division of Revenue tax information through https://revenue.delaware.gov/ for business licensing and gross receipts rules.",
+                        "Published guidance is free; review before first routing decision and monthly for material transaction-rule changes.",
+                        "Read official guidance manually; retain dated pages and avoid treating informational pages as taxpayer account verification.",
+                        "Use seller-issued invoices and written state responses to resolve transaction treatment before calculating landed purchase cost.",
                     ],
                     [
-                        "New York Tax Department Certificate of Authority lookup checks seller-registration evidence within its stated scope.",
-                        "Begin at https://www.tax.ny.gov/bus/st/register.htm and follow official sales-tax vendor lookup links; public guidance is free.",
-                        "Verify registration when onboarding and revisit certificate changes; retain the dated exemption document separately.",
-                        "Respect interactive access controls; use department confirmation procedures and completed ST-120 documentation where applicable.",
-                    ],
-                    [
-                        "Federal Trade Commission Fees Rule materials explain mandatory fee disclosure for live-event ticket offers.",
-                        "Read https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees and linked rule text; official materials are free.",
-                        "Review current text before launching pricing changes and monitor amendments; the rule is not an inventory feed.",
-                        "Cache dated rule copies without excessive requests; reconcile interpretation against current 16 CFR Part 464.",
-                    ],
-                    [
-                        "New York Department of State Ticket Reseller materials identify licensing procedures and related operating requirements.",
-                        "Open https://dos.ny.gov/ticket-reseller; public instructions are free, while licensing carries the published application charges.",
-                        "Review before serving the jurisdiction and each renewal; confirm actual license status through the official process.",
-                        "Use linked official services as documented; request department confirmation when online evidence does not establish current status.",
-                    ],
-                    [
-                        "New York State Gaming Commission sports-wagering materials identify authorized activity and regulator-issued operating information.",
-                        "Use https://gaming.ny.gov/ and navigate to sports wagering; public operator information requires no subscription.",
-                        "Check before participant onboarding and new operator use; retain publication dates rather than assuming continuous updates.",
-                        "Use normal page retrieval with caching; confirm ambiguity through regulator publications before allowing participant activity.",
+                        "NH Department of Revenue at https://www.revenue.nh.gov/ and Oregon Department of Revenue at https://www.oregon.gov/dor/.",
+                        "Public tax guidance is free; review before warehouse onboarding and whenever product classes or destination facts change.",
+                        "Check relevant tax programs directly; preserve source dates and do not extrapolate merchandise treatment to every transaction.",
+                        "Request seller tax documentation and written agency clarification when product-specific rules change the economics of fulfillment.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Buy better evidence before buying more inventory",
-                "body": "The strongest small-desk advantages come from precise exceptions that competitors overlook.",
+                "title": "Buy evidence before increasing unsecured exposure",
+                "body": "A small desk wins by discovering broken assumptions while the outstanding balance is still repayable.",
                 "items": [
-                    "Keep separate Net-3 clocks for delivery, inspection, and accepted invoice; negotiate the actual trigger into every buying-group commitment.",
-                    "Match the purchase-order entity, insured consignee, invoice recipient, and remitting entity before allowing third-party payout instructions.",
-                    "Track lien-search jurisdiction and debtor-name spelling alongside results; an inexpensive search under the wrong name can create false comfort.",
-                    "Export event-transfer restrictions and seller payout schedules before purchasing; a profitable ticket can still create an unfinanceable settlement gap.",
+                    "Keep warehouse receipt and purchase acceptance as separate events; only the contract-defined event starts the payment clock.",
+                    "Test the complete return path with a small order before shipping concentrated high-value electronics batches.",
+                    "Preserve an immutable beneficiary-change history and verify changes using an established phone number, never the replacement email alone.",
+                    "Track short-pay reason codes by group and SKU; a persistent inspection deduction can erase an apparently superior reimbursement quote.",
                 ],
             },
         },
         {
-            "heading": "2. Connect contracted inventory feeds without mistaking access for trading rights",
+            "heading": "2. Capture authorized commerce evidence and price rebate eligibility",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Use Ticketmaster Discovery to identify events, venues, attractions, and "
-                    "published event status, not to obtain privileged inventory or bypass ticket "
-                    "purchase controls. Its developer key and documented endpoints provide metadata "
-                    "within the account's permitted limits; availability of a discovery record says "
-                    "nothing about transferable ownership. Resolve the venue, local start time, "
-                    "timezone, event identifier, seating description, and postponement status before "
-                    "merging a seller's stock. Then connect SkyBox or Automatiq only through the "
-                    "commercial access actually granted to the desk. Product names do not establish "
-                    "API entitlement, exchange coverage, webhook availability, or a guaranteed "
-                    "synchronization interval. Obtain written interface documentation and test "
-                    "listing creation, cancellation, partial fills, and duplicate delivery in a "
-                    "nonproduction workflow where offered. A $150 ticket sale against $100 face "
-                    "basis, a $22.50 selling fee, and $5 fulfillment cost leaves $22.50 before "
-                    "shared operating costs. If the same seat sells twice, replacement costs can "
-                    "erase many such units. Assign each owned ticket a stable inventory key and "
-                    "lock that key while a sale is being resolved. When feed freshness exceeds "
-                    "the desk's threshold, suspend affected listings rather than treating cached "
-                    "availability as permission to continue selling."
+                    "The commercial evidence layer begins with authorized exports, "
+                    "not assumed public APIs. Obtain buying-group commitments and "
+                    "settlement reports from the authenticated account interface, "
+                    "email confirmations, or a feed the counterparty explicitly "
+                    "provides. Rakuten and TopCashback consumer accounts do not "
+                    "automatically confer access to affiliate reporting APIs or "
+                    "permission to automate account interactions. Use downloadable "
+                    "reports where offered, saved confirmations, and permissioned "
+                    "integrations whose contracts match the operator's role. Snapshot "
+                    "merchant exclusions, commercial-resale restrictions, eligible "
+                    "categories, coupon rules, maximum rewards, and posting deadlines "
+                    "before purchase. A portal click is evidence of referral, not "
+                    "an earned receivable. Maintain separate states for observed, "
+                    "pending, confirmed, payable, paid, and reversed rewards. On "
+                    "$10,000 of eligible spend, a 3% card reward and 1% portal "
+                    "reward total $400 before fees and losses; if resale purchases "
+                    "are excluded, the portal component is zero, leaving $300. "
+                    "Do not silently substitute the advertised percentage when "
+                    "eligibility fails. Freeze the source terms associated with "
+                    "each purchase so later website changes do not overwrite "
+                    "the evidence used to underwrite that transaction. Attribute "
+                    "reversals to the original purchase cohort rather than hiding "
+                    "them in the current month's acquisition performance."
                 ),
                 (
-                    "Card tooling must distinguish authorization, posting, statement close, payment "
-                    "due, rebate accrual, and rebate receipt. A transaction feed can help reconcile "
-                    "merchant spend, but it does not establish a universal sixty-day interest-free "
-                    "period. Actual usable float depends on purchase timing, issuer terms, grace "
-                    "eligibility, and payment execution. On $10,000 of qualifying spend, a contractual "
-                    "3% rebate contributes $300 before fees, exclusions, returns, and issuer "
-                    "adjustments. An illustrative 40-day funding alternative at 12% simple annual "
-                    "cost is $131.51, calculated as $10,000 multiplied by 0.12 and 40/365. That "
-                    "avoided cost is a comparison, not an additional cash rebate to book. Stress "
-                    "the ledger for an ACH receipt arriving after the card due date, an issuer "
-                    "review that freezes new spending, and a reward reversal after a return. "
-                    "Use statement exports as the final payment-schedule reference and bank "
-                    "settlement evidence for receipts. Plaid coverage and product support vary "
-                    "by institution and account type; confirm commercial-card compatibility before "
-                    "buying a connection. Never promise uncapped 2%–4% economics without checking "
-                    "the actual agreement, qualifying categories, annual caps, and redemption "
-                    "conditions for that specific account."
+                    "Price invoice-payment rails independently from merchandise routing. "
+                    "Plastiq and Melio product availability, card acceptance, permitted "
+                    "payees, fees, and delivery times depend on the account and "
+                    "transaction; capture the actual checkout quote before approval. "
+                    "An illustrative $10,000 eligible invoice with a 2.9% service "
+                    "fee costs $290. A 3% reward calculated on the invoice amount "
+                    "earns $300, leaving only $10 before financing, exceptions, "
+                    "or reward disqualification. At 2%, the same transaction "
+                    "loses $90. If the fee itself earns rewards, record that "
+                    "increment only after confirming issuer treatment; do not "
+                    "assume it in underwriting. Portal rewards generally should "
+                    "not be attached to invoice-payment services without express "
+                    "eligibility evidence. Reject self-payments, fabricated invoices, "
+                    "and any flow that violates issuer or payment-service terms. "
+                    "A legitimate supplier invoice does not establish card-reward "
+                    "eligibility by itself. The fallback for a negative spread "
+                    "is ordinary ACH or another approved low-cost method, not "
+                    "a larger payment intended to manufacture bonus volume. "
+                    "Keep commercial-card activity within approved purchasing "
+                    "capacity and documented repayment resources; exclude consumer "
+                    "card-cycling. Reconcile provider settlement confirmations to "
+                    "the supplier's receipt because a successful card authorization "
+                    "does not prove final delivery of the supplier payment."
                 ),
                 (
-                    "The second nine resources connect event truth, contractual inventory, money "
-                    "movement, shipments, and local diagnostics. Refresh intervals in the directory "
-                    "are operating targets, not vendor service commitments. Prefer an authorized "
-                    "webhook where available, but keep a scheduled reconciliation because callbacks "
-                    "can arrive late, repeat, or disappear. For polling, honor documented quotas "
-                    "and Retry-After responses, apply bounded exponential backoff with jitter, "
-                    "and stop retrying authentication failures until credentials are repaired. "
-                    "Store secrets outside exported datasets and restrict connector accounts to "
-                    "the minimum read or trading scope required. Shipment protection deserves "
-                    "its own evidence chain: a $20,000 shipment with an illustrative 0.5% "
-                    "insurance premium costs $100, but the policy's exclusions and declared-value "
-                    "rules determine whether the merchandise is covered. Carrier tracking proves "
-                    "a recorded scan, not contents, acceptance quality, or insurance recovery. "
-                    "Preserve serials, packing photographs, weights, purchase invoices, and the "
-                    "insurance certificate. If delivery stalls, pause replacement purchasing until "
-                    "the original exposure is understood. Run SQLite integrity checks and HTTP "
-                    "diagnostics against sanitized examples, not live credential dumps. The fallback "
-                    "for a broken integration is a controlled export and reconciled exception "
-                    "queue, not silent manual edits to production balances."
+                    "Normalize parcel evidence without granting it more authority "
+                    "than it deserves. UPS Developer Portal tracking access requires "
+                    "an application and the applicable credentials and account "
+                    "permissions; permitted volumes and available services depend "
+                    "on the developer agreement. Use a shipment-level polling "
+                    "schedule, slow polling after stable transit events, and "
+                    "stop routine polling once a terminal status is reconciled. "
+                    "A delivered scan does not establish serial-number acceptance, "
+                    "damage condition, or reimbursement liability. Join tracking "
+                    "number, purchase order, carton identifier, insured value, "
+                    "and warehouse acceptance evidence. If $10,000 of inventory "
+                    "is split across five parcels, a missing $2,000 parcel "
+                    "remains an unresolved asset exposure until an accepted "
+                    "claim or buyer payment resolves it. Insurance coverage "
+                    "must match merchandise class, value, packaging, and "
+                    "claim conditions; declared value alone may not provide "
+                    "the coverage the operator expects. Store shipping receipts, "
+                    "packing images, serial records, and claim deadlines outside "
+                    "the carrier's short-lived tracking interface. When an API "
+                    "fails, use the carrier's authorized web tracking and "
+                    "warehouse evidence, tagging the observation as manually "
+                    "collected. Do not mark a shipment accepted merely to "
+                    "make the settlement dashboard look current or to "
+                    "release another purchase into an already concentrated counterparty."
                 ),
             ],
             "table": {
-                "caption": "Commercial interfaces and diagnostic directory, resources 10–18: exact access and bounded fallbacks",
+                "caption": "Directory Entries 7–12: Permissioned Commitments, Rewards, Payment Quotes, and Parcel Events",
                 "headers": [
-                    "Named resource and specific operating purpose",
-                    "Exact access method and cost tier",
-                    "Refresh latency and desk review schedule",
-                    "Rate-limit hygiene and usable fallback evidence",
+                    "Named resource and authorized access",
+                    "Cost tier and refresh latency",
+                    "Rate hygiene and retained evidence",
+                    "Fallback and economic decision",
                 ],
                 "rows": [
                     [
-                        "Ticketmaster Discovery API resolves event identity, venue relationships, and published event metadata.",
-                        "Register at https://developer.ticketmaster.com/; use documented Discovery v2 endpoints with a developer key and permitted access tier.",
-                        "Poll active event metadata hourly as a desk target; source propagation can lag actual venue changes.",
-                        "Read current key quotas and honor throttling; fall back to the official venue and event pages.",
+                        "BuyForMeRetail, Pointsmaker, and MaxOutDeals through their official account portals, accepted commitments, and provided settlement exports.",
+                        "Account and transaction terms govern charges; collect commitments before purchase and settlement evidence each business day.",
+                        "Do not presume public API availability; use permitted downloads and preserve original accepted quantities, prices, and payment triggers.",
+                        "Obtain direct written confirmation from the established counterparty contact; suspend new orders if commitment evidence cannot be reproduced.",
                     ],
                     [
-                        "SkyBox provides ticket inventory and point-of-sale workflows for approved seller operations.",
-                        "Request an approved seller account through https://www.skybox.vividseats.com/; confirm current commercial terms and integration entitlement directly.",
-                        "Use contracted synchronization features and reconcile active listings frequently; measure actual delay instead of assuming instantaneous updates.",
-                        "Follow issued integration documentation; use authorized inventory exports and suspend stale listings during connection failures.",
+                        "Rakuten through https://www.rakuten.com/ account activity, merchant terms, purchase confirmations, and approved partner interfaces when contractually available.",
+                        "Consumer membership is free; partner access has separate terms; observe daily while recognizing merchant confirmation can take weeks.",
+                        "Avoid unsupported authenticated scraping; capture dated exclusions and distinguish tracked transactions from confirmed payable reward balances.",
+                        "Use order records and the official missing-reward process; underwrite zero portal income until eligibility and confirmation are supported.",
                     ],
                     [
-                        "Automatiq supports contracted ticket distribution and pricing workflows within granted account permissions.",
-                        "Contact https://www.automatiq.com/ for product access, supported integrations, and quoted commercial pricing.",
-                        "Measure update acknowledgments against listing changes; vendor and exchange propagation determine actual execution latency.",
-                        "Observe contracted request limits and deduplicate updates; revert to controlled approved-channel exports when synchronization fails.",
+                        "TopCashback through https://www.topcashback.com/ account earnings, merchant conditions, claim tools, and expressly authorized reporting arrangements.",
+                        "Standard US membership is free; review current account terms; pending-to-payable latency depends on merchant validation and returns.",
+                        "Collect authorized statements daily when useful; retain claim identifiers and never retry purchases to force duplicate referral attribution.",
+                        "Use official claim channels with original order evidence; continue forecasting without disputed rewards until the claim is resolved.",
                     ],
                     [
-                        "Plaid Transactions can supply supported account activity for settlement and purchase reconciliation.",
-                        "Use https://plaid.com/docs/transactions/ through an approved application; sandbox access and production commercial pricing differ.",
-                        "Treat account updates as asynchronous and institution-dependent; reconcile final balances against bank and issuer statements.",
-                        "Use documented cursor synchronization and relevant webhooks; fall back to authorized account CSV exports after coverage checks.",
+                        "Plastiq through https://www.plastiq.com/ business account quotes, payment history, and integrations expressly enabled for the account.",
+                        "Use the live transaction quote for fees; capture before payment and refresh status until supplier receipt is reconciled.",
+                        "Respect documented integration limits; reconcile provider identifiers and never infer fee rates or card eligibility from historical transactions.",
+                        "Use ordinary bank ACH when permitted card funding produces negative spread or supplier-delivery timing cannot support the obligation.",
                     ],
                     [
-                        "American Express business account statements provide issuer-origin purchase, payment, and rebate evidence.",
-                        "Sign into the authorized account at https://www.americanexpress.com/; statement access accompanies the account's own fee structure.",
-                        "Check due dates daily during exposure and ingest each posted statement; pending activity can change before posting.",
-                        "Prefer supported downloads rather than scripted login sessions; use issuer support and archived statements during portal interruptions.",
+                        "Melio through https://meliopayments.com/ authenticated bill-pay screens, transaction exports, and account-supported integrations.",
+                        "Plan and payment-method charges follow current quotes; capture each transaction price and update outstanding delivery states daily.",
+                        "Use enabled integrations only; retain invoice, fee quote, delivery estimate, and recipient identity without sharing account credentials.",
+                        "Use bank-originated supplier payment and obtain receipt confirmation when service timing or reward treatment makes card funding unattractive.",
                     ],
                     [
-                        "Chase business credit-card statements provide independent payment-calendar and posted-transaction reconciliation evidence.",
-                        "Use the authorized account at https://www.chase.com/; export available activity and statements under account terms.",
-                        "Review upcoming payments daily and reconcile statement-cycle totals; transaction posting and reward availability follow issuer timing.",
-                        "Use supported exports and approved account connections; resolve missing records through issuer statements and account support.",
+                        "UPS Developer Portal through https://developer.ups.com/ using approved tracking applications and applicable OAuth credentials.",
+                        "Developer enrollment and shipping-service economics follow account terms; poll active shipments periodically, then reconcile terminal events daily.",
+                        "Honor published quotas and retry instructions; back off after throttling and retain provider event times separately from ingestion times.",
+                        "Use authorized UPS web tracking, warehouse acceptance records, and carrier claim correspondence when API delivery or event detail fails.",
                     ],
-                    [
-                        "UPS Developer Portal tracking interfaces support shipment milestones for buying-group delivery reconciliation.",
-                        "Register at https://developer.ups.com/; obtain the required OAuth access and confirm account-specific service terms and charges.",
-                        "Poll open exceptions hourly as a target; carrier scans may appear later than physical handling events.",
-                        "Honor documented API limits and cache unchanged scans; use authorized UPS tracking pages and shipment documents as fallback.",
-                    ],
-                    [
-                        "USPS Developer Portal tracking services provide supported postal shipment-status access where the account qualifies.",
-                        "Start at https://developers.usps.com/; verify current tracking-product enrollment, authentication requirements, and any applicable commercial conditions.",
-                        "Refresh unresolved shipments on a bounded schedule; scan publication remains event-driven rather than continuously current.",
-                        "Follow the current product's limits instead of legacy assumptions; use official USPS tracking and retained mailing receipts.",
-                    ],
-                    [
-                        "Python sqlite3, urllib.request, ssl, and logging provide local storage, transport inspection, and connector diagnostics.",
-                        "Use the installed Python standard library without subscription charges; run authorized requests and local database integrity checks.",
-                        "Measure every job's timestamps and elapsed duration locally; diagnostic freshness follows the desk's configured execution schedule.",
-                        "Cap retries, redact secrets, and preserve TLS verification; use sanitized fixtures and prior validated exports during outages.",
-                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four facts before releasing purchase capacity",
+                "body": "An attractive advertised percentage cannot override missing evidence about ownership, eligibility, settlement, or repayment.",
+                "items": [
+                    "Verify the legal buyer, accepted SKU quantity, reimbursement price, warehouse destination, and contractual payment trigger before placing the merchandise order.",
+                    "Verify commercial resale eligibility, card reward treatment, actual payment-service fees, and portal exclusions before counting any reward.",
+                    "Verify independent repayment cash covers the next statement obligation under a buying-group delay and simultaneous reward reversal.",
+                    "Verify insured shipment conditions, return ownership, claim deadlines, and evidence retention before releasing high-value cartons.",
                 ],
             },
         },
         {
-            "heading": "3. Reconcile immutable events into exposure, inventory, and cash decisions",
+            "heading": "3. Join treasury feeds to a liability-first, auditable pipeline",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Design the pipeline around immutable source events and reversible derived "
-                    "views. A compact SQLite deployment can hold counterparties, commitments, "
-                    "purchase lines, shipments, tickets, card postings, cash receipts, and exception "
-                    "records without requiring a data warehouse. Give every imported item a source "
-                    "identifier, account identifier, retrieval timestamp, source event time, currency, "
-                    "and provenance hash. Use integer cents or Decimal for money, never binary "
-                    "floating-point totals that drift during reconciliation. Store event timestamps "
-                    "in UTC while preserving the venue timezone and original local representation. "
-                    "Distinguish an absent value from a verified zero; missing fee information "
-                    "should prevent a profitability calculation instead of silently increasing "
-                    "the spread. Idempotency keys should reflect the source's stable transaction "
-                    "identifier and event version where available. Do not deduplicate two "
-                    "legitimate purchases merely because their amounts and merchant names match. "
-                    "Retain raw payloads only when licensing and privacy requirements permit, "
-                    "with access controls and a defined retention schedule. For restricted "
-                    "payloads, preserve permitted normalized fields and retrieval evidence. "
-                    "A scheduled backup must include restoration testing; an intact database "
-                    "file is insufficient if connector credentials, schema migrations, and "
-                    "reconciliation checkpoints cannot be recovered on another authorized workstation."
+                    "Build the treasury waterfall from bank-posted balances, card "
+                    "statements, and instrument settlement facts before adding "
+                    "public yield observations. Treasury Fiscal Data supplies "
+                    "official auction records through a documented API; it "
+                    "does not supply a guaranteed executable secondary-market "
+                    "price. TreasuryDirect explains auction and holding mechanics, "
+                    "while a brokerage confirmation supplies the actual purchased "
+                    "security, settlement date, maturity date, and cash proceeds. "
+                    "FDIC BankFind Suite verifies bank identity and insurance "
+                    "status, but it does not determine whether every fintech "
+                    "balance arrangement satisfies pass-through coverage requirements. "
+                    "Review account ownership and deposit placement separately. "
+                    "For an illustrative $10,000 reserve earning 4.5% simple "
+                    "annualized yield over 25 days, expected gross interest "
+                    "is $30.82 using a 365-day denominator. That calculation "
+                    "is a planning approximation, not Treasury bill pricing. "
+                    "A $40 transfer or liquidation cost makes the proposed "
+                    "incremental sweep unattractive. Prefer maturities and "
+                    "available settlement cash that precede card obligations "
+                    "by a documented buffer. Never count the same $10,000 "
+                    "as both unrestricted purchasing capacity and reserved "
+                    "repayment cash. Bank bonuses belong in a separate "
+                    "conditional receivable schedule with qualifying activities, "
+                    "holding periods, payment windows, account fees, and clawback "
+                    "conditions linked to the issuer's dated offer."
                 ),
                 (
-                    "Separate receipt of a feed message from permission to change economic "
-                    "state. A purchase-order acknowledgment creates committed demand; a card "
-                    "authorization creates provisional spend; a posted charge creates a payable; "
-                    "an accepted delivery creates the contractual reimbursement claim; and a "
-                    "settled ACH creates cash. Build explicit transitions and retain reversals "
-                    "rather than overwriting the prior state. For tickets, distinguish owned, "
-                    "listed, reserved, sold, transferred, accepted, and paid. A transfer email "
-                    "without recipient acceptance may leave fulfillment risk outstanding. Use "
-                    "a reconciliation queue that identifies the oldest unmatched dollar amount "
-                    "and the person responsible for resolving it. Alert when buyer cash is "
-                    "forecast after the issuer's actual payment deadline, not merely when an "
-                    "invoice looks overdue. Maintain a daily exposure report by buyer, issuer, "
-                    "event, carrier, and bank rail. Twenty tickets with a planned $25 markdown "
-                    "loss each imply a $500 event risk budget; a cancellation can exceed that "
-                    "budget, so the model also needs refund and unrecoverable-fee cases. Apply "
-                    "pre-event markdown curves from executable market evidence, with explicit "
-                    "minimum proceeds and inventory-review times. Asking prices alone do not "
-                    "prove that the desk can liquidate its seats."
+                    "Represent a 55-day statement float as a possible timing "
+                    "interval, not a standing entitlement. Actual purchase "
+                    "date, statement close, grace-period conditions, due date, "
+                    "and issuer terms determine the obligation. Suppose a "
+                    "$10,000 purchase occurs on day zero and its full "
+                    "card payment is due on day 55. A buying group "
+                    "expected to pay on day 12 may instead pay on "
+                    "day 60; the desk must fund five days without "
+                    "that reimbursement. At an illustrative 24% annualized "
+                    "simple borrowing cost, five days costs $32.88 before "
+                    "fees, although the card agreement may impose a different "
+                    "interest calculation or remove the grace period. Stress "
+                    "a longer delay and an issuer limit reduction together. "
+                    "Keep bank API observations distinct from final statements: "
+                    "pending card charges, reversed transactions, and changing "
+                    "bank transaction identifiers can distort apparent liquidity. "
+                    "Plaid Transactions access, where supported and authorized, "
+                    "provides useful observations but does not replace the "
+                    "issuer statement for the amount due. The fallback "
+                    "is an issuer-exported statement and direct bank balance "
+                    "verification. Stop new purchases when the repayment "
+                    "coverage test fails; do not extend the model by "
+                    "assuming another card will remain available during "
+                    "the same issuer or counterparty disruption."
                 ),
                 (
-                    "Build the operator screen around decisions, not decorative charts. Show "
-                    "available settled cash, issuer payments due, accepted-but-unpaid buying-group "
-                    "receivables, inventory that can actually transfer, and exceptions requiring "
-                    "human action. Every figure should open its component transactions and "
-                    "evidence trail. A stale event-status feed should disable automated repricing "
-                    "for that event until an official source is checked; it should not disable "
-                    "unrelated shipment reconciliation. Give write-enabled connectors separate "
-                    "permissions and audit trails from read-only research connectors. Replay "
-                    "sanitized fixtures for duplicate webhooks, partial refunds, a timezone "
-                    "change, a postponed event, a returned ACH, and a card-reward reversal. "
-                    "Validate both the expected balance and the expected operational restriction. "
-                    "For a stadium seat-license brokerage engagement, an illustrative $1,000 "
-                    "earned fee less $250 of direct diligence cost leaves $750 before shared "
-                    "costs, but only the governing license agreement can establish assignment "
-                    "rights and required transfer charges. If rights cannot be verified, stop "
-                    "marketing that allocation and retain the documentary exception. Review "
-                    "access logs weekly, remove departed contractors promptly, and keep participant "
-                    "identity material outside broadly shared analytics. The best automation "
-                    "reduces unresolved exposure rather than merely reducing keystrokes."
+                    "A small desk can implement the evidence pipeline with "
+                    "Python's sqlite3, decimal, csv, json, hashlib, urllib.request, "
+                    "and zoneinfo modules. Use integer cents or Decimal "
+                    "for money, explicit currency fields, timezone-aware "
+                    "timestamps, and an append-only observation table. Preserve "
+                    "source identifiers and hash original statements; a hash "
+                    "detects later alteration but does not authenticate the "
+                    "original issuer. Model commitments, orders, shipments, "
+                    "acceptances, reimbursements, rewards, obligations, and "
+                    "treasury positions as separate records joined by "
+                    "stable internal keys. Deduplicate using provider identifiers "
+                    "plus account context, not amount and date alone. "
+                    "Poll with bounded concurrency, pagination checkpoints, "
+                    "timeouts, exponential backoff, and Retry-After handling; "
+                    "never invent a universal requests-per-minute allowance. "
+                    "Quarantine malformed or stale observations rather than "
+                    "silently replacing missing values with zero. Keep "
+                    "credentials outside source files and encrypt stored "
+                    "account exports using the operating system's supported "
+                    "storage controls. Each morning, run sqlite3 integrity_check, "
+                    "balance roll-forwards, unmatched-event counts, and due-date "
+                    "coverage tests before refreshing the operator dashboard. "
+                    "Restore a backup weekly into an isolated database "
+                    "and reconcile a sample statement end to end. "
+                    "If an integration fails, continue from signed-off "
+                    "manual imports carrying source dates and reviewer "
+                    "identity, while preventing duplicate ingestion when "
+                    "automated collection resumes."
                 ),
             ],
             "table": {
-                "caption": "Four reconciliation controls connecting source evidence to permissible operating actions",
+                "caption": "Directory Entries 13–18: Treasury Observations, Banking Evidence, Calendar Controls, and Local Diagnostics",
                 "headers": [
-                    "Control boundary and authoritative input evidence",
-                    "Required stored fields and mathematical check",
-                    "Specific failure signal requiring operator intervention",
-                    "Fallback action preserving capital and traceability",
+                    "Named resource and exact access",
+                    "Cost tier and observation latency",
+                    "Rate hygiene and diagnostic practice",
+                    "Fallback and operational application",
                 ],
                 "rows": [
                     [
-                        "Buying-group acceptance connects signed purchase commitments with delivery and inspection evidence.",
-                        "Store committed units, accepted units, unit reimbursement, rejection terms, and the contractual settlement-clock trigger.",
-                        "Accepted invoice remains unpaid beyond its agreed clock or remitting entity differs from verified instructions.",
-                        "Freeze incremental buyer exposure, confirm the discrepancy independently, and retain the existing receivable without inventing cash.",
+                        "Treasury Fiscal Data API at https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query using documented filters and pagination.",
+                        "Public API access is free; fetch after relevant auction results are published and cache completed historical auction records.",
+                        "Read endpoint metadata, bound page sizes, honor throttling responses, and record publication dates instead of assuming real-time execution prices.",
+                        "Use official Treasury auction announcements and results; use brokerage executable quotes for an actual secondary-market purchase decision.",
                     ],
                     [
-                        "Issuer payment planning connects posted statements with settled bank receipts and approved payment instructions.",
-                        "Calculate daily cash after scheduled payments, conservative buyer receipts, reserve requirements, and any confirmed rebate credits.",
-                        "Expected buyer settlement falls after the issuer deadline or an issuer restriction invalidates purchasing capacity.",
-                        "Stop new card commitments, fund existing obligations from available reserves, and verify payment completion independently.",
+                        "TreasuryDirect marketable-security guidance through https://www.treasurydirect.gov/marketable-securities/ and official auction schedules and results.",
+                        "Public research is free; refresh around scheduled auctions, while actual purchase and custody conditions require account-specific review.",
+                        "Use official downloads and browser access; avoid automated credential entry and preserve the schedule version supporting each maturity decision.",
+                        "Use brokerage confirmations and official security terms to establish purchased principal, actual settlement, maturity, and proceeds.",
                     ],
                     [
-                        "Ticket inventory control connects ownership records with listing acknowledgments and final transfer acceptance.",
-                        "Track unique seat identifiers, event timezone, sale amount, selling fees, transfer state, and payout eligibility.",
-                        "Two active sales reference one owned seat or event updates invalidate previously assumed transfer conditions.",
-                        "Suspend affected listings, reconcile each channel manually, and resolve buyer obligations using documented exchange procedures.",
+                        "FDIC BankFind Suite through https://banks.data.fdic.gov/bankfind-suite/bankfind and FDIC API documentation at https://banks.data.fdic.gov/docs/.",
+                        "Public search and documented API access are free; verify before account funding and review institutional changes monthly.",
+                        "Cache institution identifiers and dated results; obey published query constraints and distinguish bank status from account-level insurance analysis.",
+                        "Use FDIC official institution records and written account agreements to resolve legal bank identity and deposit-placement structure.",
                     ],
                     [
-                        "Shipment recovery connects insured values with packing evidence, carrier scans, and buyer inspection records.",
-                        "Match serial-level cost, declared value, premium, policy exclusions, delivery timestamp, and any documented damage amount.",
-                        "Carrier delivery lacks buyer acceptance or the policy excludes the shipped merchandise and destination combination.",
-                        "Preserve claim evidence immediately, follow notice deadlines, and avoid replacement purchases that double unresolved exposure.",
+                        "Plaid Transactions through https://plaid.com/docs/transactions/ using an authorized application, supported institution connection, and permitted account access.",
+                        "Sandbox testing is available without production usage charges; production pricing is contractual; refresh timing varies by institution and product.",
+                        "Handle transaction updates and removals, verify webhook authenticity, and honor endpoint-specific limits rather than treating observations as final statements.",
+                        "Import issuer and bank CSV or OFX exports; use the actual card statement to determine repayment amount and due date.",
+                    ],
+                    [
+                        "Federal Reserve Financial Services holiday schedules through https://www.frbservices.org/about/holiday-schedules for official processing-calendar context.",
+                        "Published calendars are free; refresh annually and after schedule notices, while bank-specific cutoff information requires direct confirmation.",
+                        "Cache the published calendar with its year; combine holidays with the bank's actual ACH cutoff and availability rules.",
+                        "Use written bank cutoff schedules and posted transaction evidence; never treat an ACH initiation timestamp as available repayment cash.",
+                    ],
+                    [
+                        "Python sqlite3 and decimal documentation at https://docs.python.org/3.9/library/ with local database diagnostics and reproducible reconciliation tests.",
+                        "Standard-library tools have no license charge; run ingestion checks continuously and full integrity and liquidity checks every morning.",
+                        "Use transactions, unique constraints, Decimal arithmetic, and integrity_check; protect source exports and test restoration without production credentials.",
+                        "Rebuild balances from retained statements and approved manual imports when corrupted records or broken joins invalidate the dashboard.",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Register the source and its permission boundary",
-                    "action": "Record access owner, supported interface, pricing basis, documented quota, and permitted data uses.",
-                    "detail": "Test a read-only retrieval and archive a sanitized example before allowing production ingestion or any listing writes.",
+                    "title": "Acquire and fingerprint original evidence",
+                    "action": "Collect authorized commitments, account exports, statements, and official reference observations.",
+                    "detail": "Assign source, observation time, effective time, account scope, and SHA-256 digest; retain the original outside the working tables.",
                 },
                 {
                     "step": 2,
-                    "title": "Normalize and quarantine conflicting evidence",
-                    "action": "Resolve entity, event, shipment, and transaction identifiers before calculating exposure or margin.",
-                    "detail": "Reject duplicate economic events while retaining legitimate equal-value transactions; route incomplete fee or currency fields to an exception queue.",
+                    "title": "Normalize without merging distinct economic events",
+                    "action": "Create separate merchandise, rebate, liability, and treasury records using stable internal identifiers.",
+                    "detail": "Use integer cents or Decimal, reject unsupported currency mixtures, and quarantine missing identifiers instead of guessing purchase matches.",
                 },
                 {
                     "step": 3,
-                    "title": "Reconcile state transitions and settlement dates",
-                    "action": "Match commitments to purchases, acceptance to receivables, and posted cash to the relevant obligation.",
-                    "detail": "Recompute issuer coverage and event exposure after each material update; preserve reversals rather than replacing historical records.",
+                    "title": "Reconcile cash and stress the next due date",
+                    "action": "Match warehouse acceptances to reimbursements and bank-posted cash to issuer-stated obligations.",
+                    "detail": "Run delayed-ACH, reward-reversal, and issuer-capacity scenarios; reserve independent repayment cash before releasing another purchase.",
                 },
                 {
                     "step": 4,
-                    "title": "Prove recovery before enabling automation",
-                    "action": "Replay outage and duplicate-message fixtures, restore a backup, and reconcile the resulting balances.",
-                    "detail": "Enable bounded automation only for verified paths; keep unrelated workflows operational when one source becomes stale or unavailable.",
+                    "title": "Publish exceptions with accountable resolution",
+                    "action": "Issue a daily dashboard showing stale sources, unmatched amounts, concentrated counterparties, and repayment coverage.",
+                    "detail": "Assign an owner and deadline to every exception, preserve the correction trail, and verify a backup restoration each week.",
                 },
             ],
         },
         {
-            "heading": "4. Bound promo claims and reconcile every play to retained owner economics",
+            "heading": "4. Map eleven workflows without corrupting the three-model scorecard",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "The supplied play sportsbook_promo_ev_matched_betting_syndicates is the "
-                    "Regulated Sportsbook & Sweepstakes Sign-Up Promo Conversion mapping under "
-                    "TRACK_2. Its advertised certainty needs correction: bonuses, opposing wagers, "
-                    "and sweepstakes credits do not produce guaranteed risk-free cash. Eligibility, "
-                    "stake-return rules, odds movement, market suspension, payout restrictions, "
-                    "tax treatment, and conflicting settlement rules can all change proceeds. "
-                    "A theoretical fifteen offers averaging $300 at 70% conversion produces "
-                    "$3,150 before costs; twenty-five offers averaging $400 at 80% produces "
-                    "$8,000 before costs. Neither example establishes that those offers coexist "
-                    "for a resident or remain available. Treat the supplied 70%–85% band as "
-                    "a conditional modeling assumption, never as an observed constant. Maintain "
-                    "an offer ledger containing the official terms, eligibility date, bonus "
-                    "type, minimum odds, expiry, qualifying-wager cost, and withdrawal conditions. "
-                    "Do not mix regulated sportsbook authorization with sweepstakes eligibility; "
-                    "their state availability and governing rules require separate checks. If "
-                    "terms prohibit coordinated play or the economics require someone else's "
-                    "credentials, exclude that offer. An information platform should calculate "
-                    "participant-specific expected outcomes and downside cases, not manufacture "
-                    "certainty by hiding losing legs, taxes, or disqualified promotions."
+                    "Keep three economic models separate: wholesale fulfillment "
+                    "earns merchandise spread, commercial cards and portals "
+                    "earn eligible rebates net of fees, and treasury "
+                    "management earns interest or satisfied bonus awards. "
+                    "The canonical Formula v2.0 planning basis combines "
+                    "gross wholesale reimbursements, rebates, and treasury "
+                    "yield; it does not include card advances, invested "
+                    "principal, or underlying customer spending as additional "
+                    "income. Conservative gross basis of $250,000 multiplied "
+                    "by 35% produces $87,500 retained contribution; subtracting "
+                    "$67,500 of remaining costs yields $20,000 owner "
+                    "profit. Base gross basis of $1,025,000 produces "
+                    "$358,750 retained contribution; subtracting $215,250 "
+                    "yields $143,500. Scaled gross basis of $1,800,000 "
+                    "produces $630,000 retained contribution; subtracting "
+                    "$270,000 yields $360,000. Gross-basis margins are "
+                    "8%, 14.0%, and 20%; retained margins are "
+                    "22.86%, 40.0%, and 57.14%. These residual costs "
+                    "are reconciliation amounts, not invented monthly "
+                    "overhead budgets. The supplied $1,500–$9,000 monthly "
+                    "opex range cannot automatically be equated with "
+                    "every annual residual cost category. Maintain the "
+                    "35% retained-share bridge while assessing ASC 606 "
+                    "principal-versus-agent presentation from actual contracts; "
+                    "a planning multiplier alone does not establish "
+                    "recognized accounting revenue. The illustrative transaction "
+                    "examples above explain controls and are not forecasts "
+                    "that mechanically reproduce the annual scorecard."
                 ),
                 (
-                    "Use the requested client-side fallback as an ownership control: each "
-                    "participant acts only on their own personal device, account, and cellular "
-                    "connection, without location spoofing, credential sharing, or delegated wager "
-                    "placement. This does not override operator terms or state restrictions. "
-                    "Prefer high-liquidity mainlines when permitted, but recognize that hedge "
-                    "availability can disappear between executions. Do not place the first leg "
-                    "when the second leg cannot be funded and executed within the approved "
-                    "risk budget; stop when eligibility or settlement definitions conflict. "
-                    "For an illustrative $100 bonus, assume $78 of realized conversion proceeds "
-                    "after opposing-wager settlement and $6 of additional qualifying costs. "
-                    "Distributable contribution is $72. A permitted contractual 25% service "
-                    "share would be $18, leaving $54 for the participant before their applicable "
-                    "taxes; participant deposits and wager turnover are not platform revenue. "
-                    "Whether a split-profit arrangement, custody, referral activity, or wagering "
-                    "assistance requires licensing must be resolved for the actual jurisdiction "
-                    "before launch. Apply the same rights-first approach to suites: four "
-                    "authorized allocations at $2,500 produce $10,000 proceeds; $8,500 basis "
-                    "and $500 selling costs leave $1,000 before shared costs. Without documented "
-                    "suballocation rights, the fallback is to decline the transaction."
+                    "The eleven mappings below are ten chapter-defined operating "
+                    "workflows and one supplied cross-shelf identifier. The "
+                    "ten workflows are entity verification, tax routing, "
+                    "commitment matching, parcel claims, settlement forecasting, "
+                    "card eligibility, portal attribution, invoice-fee routing, "
+                    "treasury maturity matching, and bank-bonus qualification. "
+                    "They are not claimed to be ten additional canonical "
+                    "play identifiers. Each workflow needs a measurable "
+                    "decision and a fallback that reduces exposure when "
+                    "evidence fails. For instance, a $300 expected card "
+                    "reward cannot justify $400 of incremental shipping "
+                    "and handling, and a $200 bank bonus less $75 "
+                    "in account fees contributes only $125 before "
+                    "taxes and capital opportunity cost. Preserve the "
+                    "supplied staffing cases of 1 FT + 2 C "
+                    "for Conservative and Base, and 2 FT + 3 C "
+                    "for Scaled. Automation should remove duplicate "
+                    "collection and matching work rather than manufacture "
+                    "additional purchasing authority. Route beneficiary "
+                    "changes, unexplained short-pays, and missing statement "
+                    "obligations to a named reviewer. Test the system "
+                    "with a duplicate shipment event, a reversed "
+                    "reward, a stale bank connection, and a delayed "
+                    "warehouse acceptance. Correct handling means the "
+                    "ledger remains balanced and available purchasing "
+                    "capacity falls when uncertainty rises."
                 ),
                 (
-                    "Finally, reconcile the entire desk to Formula v2.0 without adding illustrative "
-                    "play profits on top of the canonical cases. Conservative gross basis of "
-                    "$250,000 retains 35%, or $87,500; subtracting $67,500 of modeled remaining "
-                    "costs leaves $20,000. Base gross basis of $1,025,000 retains $358,750; "
-                    "subtracting $215,250 leaves $143,500. Scaled gross basis of $1,800,000 "
-                    "retains $630,000; subtracting $270,000 leaves $360,000. Those results "
-                    "equal 8%, 14.0%, and 20% of gross basis, or 22.86%, 40.0%, "
-                    "and 57.14% of retained revenue. The 65% basis layer is $162,500, "
-                    "$666,250, and $1,170,000 respectively. Retained spread is the scorecard's "
-                    "net contribution convention; ASC 606 principal-versus-agent presentation "
-                    "still depends on control and the actual contract, not an automatic 35% "
-                    "recognition election. Keep rebates, refunds, sales taxes collected, customer "
-                    "funds, and pass-through purchase principal in their appropriate accounts. "
-                    "The stated $1,500–$9,000 monthly operating-overhead range is not a substitute "
-                    "for every modeled residual cost. Reconcile labor, selling costs, losses, "
-                    "and other cost categories without double counting. Staff the cases at "
-                    "1 FT plus 2 contractors, 1 FT plus 2 contractors, and 2 FT "
-                    "plus 3 contractors, respectively."
+                    "The supplied mapping sportsbook_promo_ev_matched_betting_syndicates "
+                    "is retained only as an excluded cross-shelf reference, "
+                    "not a fourth business model or a source of "
+                    "Volume 041 revenue. Its claimed guaranteed conversion "
+                    "should not be adopted: eligibility, promotional rules, "
+                    "market movement, settlement differences, and counterparty "
+                    "restrictions prevent a universal risk-free result. "
+                    "As arithmetic rather than an operating recommendation, "
+                    "$1,000 of face-value promotional credits multiplied "
+                    "by a hypothetical 70%–85% realization rate equals "
+                    "$700–$850 before costs and any participant split. "
+                    "That calculation does not establish $3,000–$8,000 "
+                    "per resident or validate access across multiple "
+                    "platforms. The supplied fallback is participant-only "
+                    "execution on their own device and cellular "
+                    "connection, with high-liquidity mainlines; those "
+                    "conditions do not remove eligibility, settlement, "
+                    "or licensing questions. No account access, "
+                    "participant funds, or promotional balances enter "
+                    "this desk's pipeline. For the three permitted "
+                    "models, retain purchase invoices, price-adjustment "
+                    "evidence, interest statements, and payment-network "
+                    "reports under the applicable recordkeeping rules. "
+                    "IRC Section 6050W reporting does not by itself "
+                    "determine taxable profit, and purchase-linked "
+                    "rebates require treatment distinct from interest "
+                    "or standalone promotional income. Reconcile "
+                    "information returns to the ledger rather "
+                    "than forcing ledger classifications to match "
+                    "an unexplained gross reporting number."
                 ),
             ],
             "table": {
-                "caption": "Canonical profit reconciliation and the separate promo-conversion unit ledger",
+                "caption": "Eleven Explicit Mappings: Ten In-Scope Operating Workflows and One Excluded Cross-Shelf Reference",
                 "headers": [
-                    "Scenario or separately identified illustrative unit",
-                    "Gross basis and retained contribution calculation",
-                    "Remaining costs and exact owner outcome",
-                    "Operating interpretation and required risk fallback",
+                    "Workflow or supplied mapping identity",
+                    "Concrete unit calculation and decision",
+                    "Evidence needed before counting value",
+                    "Risk fallback and model boundary",
                 ],
                 "rows": [
                     [
-                        "Conservative canonical case uses one full-time operator and two contractors.",
-                        "$250,000 gross basis less $162,500 basis layer equals $87,500 retained revenue at 35%.",
-                        "$87,500 retained revenue less $67,500 remaining modeled costs equals $20,000 annual owner profit.",
-                        "Preserve 8% gross-basis margin and 22.86% retained margin; suspend purchases when buyer delays consume reserves.",
+                        "Entity verification workflow supporting wholesale counterparty credit decisions.",
+                        "Five outstanding purchases of $2,000 create $10,000 unsecured reimbursement exposure requiring independent repayment resources.",
+                        "Match contracting entity, official registry identity, relevant UCC evidence, beneficiary details, and completed pilot settlements.",
+                        "Reduce commitments to independently repayable amounts when identity, authority, or payment performance cannot be established.",
                     ],
                     [
-                        "Base canonical case retains one full-time operator and two contractors.",
-                        "$1,025,000 gross basis less $666,250 basis layer equals $358,750 retained revenue at 35%.",
-                        "$358,750 retained revenue less $215,250 remaining modeled costs equals $143,500 annual owner profit.",
-                        "Preserve 14.0% gross-basis margin and 40.0% retained margin; reconcile channel costs before expanding purchasing limits.",
+                        "Tax routing workflow supporting documented DE, NH, and OR merchandise delivery.",
+                        "A $10,000 purchase with $200 spread leaves $120 after $45 shipping and $35 expected loss.",
+                        "Retain accepted warehouse destination, seller tax treatment, qualifying resale documentation where required, and actual landed invoice.",
+                        "Reprice using actual assessed tax or cancel before purchase when the proposed treatment is unsupported.",
                     ],
                     [
-                        "Scaled canonical case employs two full-time operators and three contractors.",
-                        "$1,800,000 gross basis less $1,170,000 basis layer equals $630,000 retained revenue at 35%.",
-                        "$630,000 retained revenue less $270,000 remaining modeled costs equals $360,000 annual owner profit.",
-                        "Preserve 20% gross-basis margin and 57.14% retained margin; diversify buyers and enforce event-specific inventory limits.",
+                        "Commitment matching workflow connecting accepted quantities with wholesale reimbursement obligations.",
+                        "A commitment for ten $1,000 units supports $10,000 inventory exposure; two unaccepted units leave $2,000 unmatched.",
+                        "Preserve original commitment version, SKU specifications, quantity acceptance, reimbursement price, and contractual payment-trigger language.",
+                        "Stop additional orders and resolve the unaccepted units through the documented return or alternative-buyer process.",
                     ],
                     [
-                        "Illustrative promo unit remains separate from every canonical volume scenario.",
-                        "$100 bonus produces assumed $78 realized conversion proceeds; subtract $6 qualifying costs for $72 contribution.",
-                        "A permitted 25% service share yields $18 platform contribution and $54 participant contribution before applicable taxes.",
-                        "Exclude participant turnover from operator revenue; abandon the offer when eligibility, legality, or hedge execution fails.",
+                        "Parcel claims workflow isolating insured logistics losses from merchandise spread.",
+                        "One missing $2,000 parcel among five equal parcels leaves $2,000 unresolved, not an automatic insurance receivable.",
+                        "Join packing evidence, serial records, coverage conditions, tracking events, warehouse inspection, and timely claim submissions.",
+                        "Reserve the disputed amount and use the documented carrier claim process without assuming full recovery.",
                     ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before capital or write-enabled connectors go live",
-                "body": "Each check must resolve against dated evidence owned by a named operator.",
-                "items": [
-                    "Verify the buying-group legal entity, signed acceptance terms, independently confirmed payout instructions, and actual Net-3 or Net-5 clock trigger.",
-                    "Verify the issuer's real due date, qualifying rebate terms, available settled reserves, and the downside cash position after a delayed ACH.",
-                    "Verify ticket ownership, transfer and suballocation rights, applicable reseller licensing, all-in price treatment, and BOTS Act-safe acquisition methods.",
-                    "Verify participant eligibility, current operator authorization, permitted service arrangements, personal account control, and offer-specific downside before any promo activity.",
+                    [
+                        "Settlement forecasting workflow measuring buying-group cash arrival against card obligations.",
+                        "A $10,000 balance due day 55 remains fully payable when expected reimbursement slips from day 12 to day 60.",
+                        "Use contract-defined acceptance dates, cleared bank receipts, actual issuer statements, and observed delay distributions.",
+                        "Fund repayment from independent reserves and suspend purchasing when stressed coverage fails the desk's liquidity test.",
+                    ],
+                    [
+                        "Card eligibility workflow measuring commercial rewards without manufactured payment volume.",
+                        "Eligible $10,000 spend earning 3% creates $300 before fees, reversals, financing, and fulfillment losses.",
+                        "Verify issuer reward terms, eligible transaction treatment, current caps, statement posting, and approved commercial purchasing capacity.",
+                        "Underwrite zero reward when eligibility fails and avoid consumer card-cycling or unsupported replacement-card assumptions.",
+                    ],
+                    [
+                        "Portal attribution workflow separating referral observations from confirmed rebate earnings.",
+                        "A valid 1% portal reward on $10,000 adds $100; a commercial-resale exclusion reduces that component to zero.",
+                        "Retain click evidence, merchant terms, coupon eligibility, order confirmation, validation status, and eventual paid reward.",
+                        "Submit an official missing-reward claim while excluding disputed amounts from repayment cash and confirmed contribution.",
+                    ],
+                    [
+                        "Invoice-fee routing workflow comparing legitimate B2B payment costs with commercial rewards.",
+                        "A $10,000 invoice earning 3% against a 2.9% fee leaves $10; earning 2% instead loses $90.",
+                        "Capture actual Plastiq or Melio quote, permitted supplier identity, issuer treatment, invoice authenticity, and supplier receipt.",
+                        "Use ordinary ACH when verified rewards fail to exceed payment fees and all incremental financing costs.",
+                    ],
+                    [
+                        "Treasury maturity workflow earning interest only on properly available reserves.",
+                        "Illustrative $10,000 at 4.5% for 25 days earns $30.82 before costs using simple annualized planning arithmetic.",
+                        "Use actual available cash, purchased-security confirmation, settlement date, maturity proceeds, card due date, and transfer cutoffs.",
+                        "Leave repayment money in available cash when maturity or transfer timing cannot preserve the documented due-date buffer.",
+                    ],
+                    [
+                        "Bank-bonus qualification workflow isolating conditional awards from ordinary treasury yield.",
+                        "A $200 earned bonus less $75 account fees leaves $125 before taxes and capital opportunity cost.",
+                        "Archive offer eligibility, qualifying activities, minimum-balance periods, payout windows, account fees, and clawback conditions.",
+                        "Assign zero forecast bonus when conditions cannot be satisfied economically without diverting required repayment reserves.",
+                    ],
+                    [
+                        "sportsbook_promo_ev_matched_betting_syndicates remains an excluded cross-shelf mapping outside the three operating models.",
+                        "Hypothetical $1,000 promotional face value at 70%–85% yields $700–$850 before costs; universal guaranteed proceeds are unsupported.",
+                        "Separate reference arithmetic from verified eligibility and settlement facts; collect no participant accounts or promotional balances here.",
+                        "Supplied participant-only device and cellular execution with high-liquidity mainlines remains external; allocate no desk capital or revenue.",
+                    ],
                 ],
             },
         },
     ],
-    "pull_quote": "A spread becomes usable profit only when ownership, settlement, and source evidence agree.",
+    "pull_quote": "An information edge exists only when every promised dollar has an evidence trail and every borrowed dollar has a repayment date.",
     "diagram_id": "diag-04",
     "action_checklist": [
-        "Create the eighteen-source register with access owners, current terms, documented quotas, dated retrieval evidence, and a tested fallback for each resource.",
-        "Onboard two independently vetted buying groups using signed commitments, exact entity identifiers, verified remittance instructions, and measured settlement clocks.",
-        "Build separate card authorization, posting, statement, payment, rebate-accrual, and rebate-receipt states; stress every due date against delayed buyer cash.",
-        "Resolve owned tickets to authoritative event identifiers, document transfer rights, and suspend stale listings before enabling automated pricing or distribution.",
-        "Implement immutable ingestion, cent-accurate reconciliation, sanitized replay tests, restricted connector credentials, and a successfully restored backup.",
-        "Reconcile the three canonical retained-revenue cases and isolate promo-service fees from participant deposits, wagers, and conditional conversion illustrations.",
+        "Create a counterparty evidence packet linking exact legal identity, relevant UCC search, accepted warehouse terms, verified beneficiary, and completed pilot payment.",
+        "Capture purchase-specific tax treatment, accepted buying-group commitment, commercial reward eligibility, portal exclusions, and the actual payment-service quote before spending.",
+        "Implement separate wholesale, rebate, and treasury subledgers with stable identifiers, source fingerprints, explicit observation times, and reversible correction entries.",
+        "Reserve repayment cash against actual card statements and stress a buying-group payment arriving after the due date alongside an issuer capacity reduction.",
+        "Run daily stale-source, unmatched-shipment, reversed-reward, duplicate-event, and cash-coverage diagnostics; restore and reconcile a backup every week.",
+        "Reproduce all three canonical gross-to-retained-to-profit bridges and keep the excluded cross-shelf mapping outside capital allocation and revenue reporting.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. § 45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": (
-                "Prohibits circumventing covered ticket-issuer controls and specified resale of "
-                "tickets acquired through prohibited circumvention. Use no queue or CAPTCHA bypass "
-                "software; retain acquisition evidence and honor issuer purchase controls."
-            ),
+            "title": "6 Del. C. § 9-307 — Location of debtor",
+            "url": "https://delcode.delaware.gov/title6/c009/sc03/index.html",
+            "relevance": "Supports determining debtor location for secured-transactions analysis; a Delaware warehouse alone does not establish the relevant debtor jurisdiction.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": (
-                "Requires covered live-event ticket offers to present total prices with mandatory "
-                "charges as prescribed and prohibits misleading fee representations. Model any "
-                "permitted exclusions and required final-payment disclosures explicitly."
-            ),
+            "title": "6 Del. C. § 9-503 — Name of debtor and secured party",
+            "url": "https://delcode.delaware.gov/title6/c009/sc05/index.html",
+            "relevance": "Provides debtor-name rules relevant to financing statements and disciplined UCC searches using the actual legal entity rather than a trading label.",
         },
         {
-            "title": "New York Arts and Cultural Affairs Law § 25.07 — Ticket reseller licensing",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
-            "relevance": (
-                "Provides New York's ticket-reseller licensing framework. Determine whether the "
-                "desk's actual resale activities require licensing and retain current evidence "
-                "before operating within the statute's scope."
-            ),
+            "title": "30 Del. C. Chapter 23 — Occupations requiring licenses; gross receipts provisions",
+            "url": "https://delcode.delaware.gov/title30/c023/index.html",
+            "relevance": "Anchors the distinction between Delaware business licensing and gross receipts obligations and the absence of a general retail sales tax.",
         },
         {
-            "title": "New York Arts and Cultural Affairs Law § 25.07-A — Ticket pricing",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07-A",
-            "relevance": (
-                "Establishes ticket-price disclosure requirements relevant to New York offers. "
-                "Map mandatory fees and total-cost presentation into listing and checkout tests."
-            ),
+            "title": "26 U.S.C. § 6001 — Notice or regulations requiring records, statements, and special returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": "Supports retaining transaction records sufficient to substantiate purchase costs, rebates, reimbursements, interest, and the resulting tax classifications.",
         },
         {
-            "title": "New York Tax Law § 1132 — Collection of sales tax and exemption documentation",
-            "url": "https://www.nysenate.gov/legislation/laws/TAX/1132",
-            "relevance": (
-                "Addresses collection obligations and documentation affecting presumptively taxable "
-                "receipts. Maintain properly completed resale evidence rather than treating an "
-                "entity registration as a sales-tax exemption."
-            ),
+            "title": "26 U.S.C. § 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Governs payment-settlement information reporting; reported gross amounts require reconciliation and do not independently establish taxable profit.",
         },
         {
-            "title": "New York UCC § 9-503 — Name of debtor and secured party",
-            "url": "https://www.nysenate.gov/legislation/laws/UCC/9-503",
-            "relevance": (
-                "Explains debtor-name requirements for financing statements. Use the legally "
-                "appropriate name when searching and evaluating UCC evidence."
-            ),
+            "title": "31 CFR Part 356 — Sale and issue of marketable book-entry Treasury securities",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-356",
+            "relevance": "Provides primary auction and issuance rules relevant to Treasury security purchases, settlement assumptions, and maturity-aware reserve planning.",
         },
         {
-            "title": "New York UCC § 9-307 — Location of debtor",
-            "url": "https://www.nysenate.gov/legislation/laws/UCC/9-307",
-            "relevance": (
-                "Supplies debtor-location rules relevant to Article 9 analysis. Determine the "
-                "appropriate filing jurisdiction and applicable exceptions before relying on "
-                "a single state's search."
-            ),
-        },
-        {
-            "title": "New York Racing, Pari-Mutuel Wagering and Breeding Law § 1367-A — Mobile sports wagering",
-            "url": "https://www.nysenate.gov/legislation/laws/PML/1367-A",
-            "relevance": (
-                "Establishes New York's mobile sports-wagering framework. Check authorized operators "
-                "and jurisdiction-specific operating requirements; do not treat sportsbook "
-                "authorization as permission for unrelated sweepstakes or third-party wagering services."
-            ),
+            "title": "12 CFR Part 330 — Deposit insurance coverage",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330",
+            "relevance": "Provides deposit-insurance rules requiring attention to ownership categories and account arrangements rather than relying solely on a bank-name search.",
         },
     ],
 }

@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-041-buying-group-card-float-and-rebate-arbitrage",
+  "volume_slug": "vol-041-buying-group-card-float-and-rebate-arbitrage",
+  "volume_number": 41,
+  "site_ui": {
+    "cover": [
+      "BUYING GROUP",
+      "& CARD-FLOAT",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "FULFILL CONFIRMED WHOLESALE BUYING-GROUP ORDERS",
+      "STACK ELIGIBLE COMMERCIAL CARD & PORTAL REBATES"
+    ],
+    "lead": "Turn documented tax-exempt wholesale buying-group commitments into margin through eligible uncapped 2%–4% commercial-card and shopping-portal rebates, targeting up to 55 days of treasury float under qualifying terms.",
+    "summary": "Validate BuyForMeRetail/Pointsmaker commitments and current warehouse instructions before routing purchases to DE/NH/OR addresses, confirming applicable sales-tax treatment and Rakuten/TopCashback eligibility before counting stacked rebates. Use Plastiq/Melio only for permitted B2B payments where card acceptance, fees and issuer terms support the float, then optimize bank/T-bill sweep velocity around cleared proceeds, bonus requirements and payment deadlines.",
+    "chapters": [
+      "Q1 — Buying-Group Arbitrage: The Profit Engine",
+      "Q2 — Buyer Demand, Commitments & Counterparty Quality",
+      "Q3 — Net Spread After Fees, Freight & Reversals",
+      "Q4 — Commercial Cards, Limits & Statement Timing",
+      "Q5 — Tax Documentation & DE/NH/OR Routing",
+      "Q6 — BuyForMeRetail/Pointsmaker Commitment Execution",
+      "Q7 — Rakuten/TopCashback Eligibility & Rebate Stacking",
+      "Q8 — Warehouse Receipt, Acceptance & Settlement",
+      "Q9 — Plastiq/Melio B2B Float Economics",
+      "Q10 — Bank Bonuses, T-Bill Sweeps & Cash Velocity",
+      "Q11 — Scaling Volume Without Breaking Liquidity",
+      "Q12 — Reconciliation, Clawbacks & Treasury Exit Rules"
+    ],
+    "flow": [
+      [
+        "VERIFY",
+        "Confirm buyer reliability, written commitments, permitted sourcing, warehouse instructions and applicable tax documentation."
+      ],
+      [
+        "UNDERWRITE",
+        "Calculate net margin after fulfillment costs, payment fees and financing costs; treat unconfirmed rebates and bonuses as contingent."
+      ],
+      [
+        "PURCHASE",
+        "Activate an eligible portal offer, retain tracking evidence and pay with a qualifying commercial card within approved limits."
+      ],
+      [
+        "FULFILL",
+        "Route committed goods to the approved warehouse, meet delivery deadlines and document receipt, acceptance and payout eligibility."
+      ],
+      [
+        "MANAGE FLOAT",
+        "Match settlement dates to actual card due dates; use permitted Plastiq/Melio payments only when fees and terms preserve positive economics."
+      ],
+      [
+        "SWEEP & RECONCILE",
+        "Reserve repayment cash, sweep only suitable surplus into banks or maturity-matched T-bills, and reconcile payouts, rebates, bonuses and reversals."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "BUYING GROUP, COMMERCIAL CARD-FLOAT & REBATE ARBITRAGE",
+  "subtitle": "The Complete Playbook for Buying Group, Commercial Card-Float & Rebate Arbitrage — $250,000–$1,800,000 USD Annual Gross Activity, Built from a 1 FT + 2 C (3 People) Pod",
+  "chapter_count": 12,
+  "total_word_count": 82223,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 93,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T20:02:15Z"
+}

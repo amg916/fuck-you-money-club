@@ -6,515 +6,676 @@ CHAPTER_3 = {
     "chapter_number": 3,
     "question_number": 3,
     "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for buying group, card-float & ticket allocation arbitrage?",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for buying group, commercial card-float & rebate arbitrage?",
     "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
     "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Purchase-Order Spreads, VCC Rebate Scrubs, Ticket Payout Locks, ASC 606 Presentation, and Statement-Date Liquidity",
+    "subtitle": "Buying-Group Cohorts, Commercial VCC Rebates, ASC 606 Presentation, IRC Basis Records, and ACH-to-Card Repayment Coverage",
     "layout_template": "financial_breakdown",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41, Rank #09 of 42, scores 93/100 across 11 mapped plays, but its economics depend on collecting spread before settlement obligations become cash demands. "
-        "The canonical Conservative, Base, and Scaled cases produce $20,000, $143,500, and $360,000 annual owner profit from $250,000, $1,025,000, and $1,800,000 gross throughput. "
-        "A 35% retained share converts those amounts into $87,500, $358,750, and $630,000 retained revenue. "
-        "This chapter reconciles the complete waterfall, separates inventory principal from VCC commission revenue, and prices contractor labor, acquisition, reversals, and financing. "
-        "It also translates buying-group ACH delays, event payout locks, and issuer interruptions into dated liquidity requirements. "
-        "The operating rule is simple: neither an advertised rebate nor an unsold ticket pays a card statement."
+        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score "
+        "and 11 mapped plays. Its canonical annual owner-profit cases are "
+        "$20,000 Conservative, $143,500 Base, and $360,000 Scaled. Those outcomes "
+        "require separating wholesale merchandise contribution, commercial card "
+        "and portal rebates, and treasury income rather than counting the same "
+        "purchase repeatedly. This chapter reconciles the scorecard's 35% retained "
+        "contribution convention, assigns labor and acquisition costs, prices "
+        "reversals, and tests repayment coverage when buying-group ACH slips. "
+        "A separate commercial VCC cohort shows why third-party invoice volume "
+        "is neither operator revenue nor free working capital. The operating "
+        "standard is simple: recognize earned economics, reserve disputed "
+        "economics, and fund every card maturity without depending on a "
+        "counterparty's promised payout."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": "Annual gross throughput; $87,500 retained revenue at 35%.",
-            "note": "8% gross-basis margin; $20,000 annual owner profit; 22.86% retained margin; 1 FT + 2 C.",
+            "context": "Annual canonical gross revenue basis; $87,500 retained contribution.",
+            "note": "8% gross-basis net margin; $20,000 owner profit; 1 FT + 2 C; 22.86% retained-basis margin.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": "Annual gross throughput; $358,750 retained revenue at 35%.",
-            "note": "14.0% gross-basis margin; $143,500 annual owner profit; 40.0% retained margin; 1 FT + 2 C.",
+            "context": "Annual canonical gross revenue basis; $358,750 retained contribution.",
+            "note": "14.0% gross-basis net margin; $143,500 owner profit; 1 FT + 2 C; 40.0% retained-basis margin.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": "Annual gross throughput; $630,000 retained revenue at 35%.",
-            "note": "20% gross-basis margin; $360,000 annual owner profit; 57.14% retained margin; 2 FT + 3 C.",
+            "context": "Annual canonical gross revenue basis; $630,000 retained contribution.",
+            "note": "20% gross-basis net margin; $360,000 owner profit; 2 FT + 3 C; 57.14% retained-basis margin.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Reconcile gross throughput to retained spread before underwriting a purchase",
+            "heading": "1. Reconcile the scorecard before underwriting a purchase cohort",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Start with three ledgers rather than one sales dashboard: transaction principal, earned spread, and unrestricted cash. "
-                    "The canonical scorecard labels $250,000, $1,025,000, and $1,800,000 as gross revenue, covering buying-group reimbursements, earned card rebates, and ticket resale proceeds. "
-                    "For this chapter, call that measure gross throughput so nobody mistakes pass-through merchandise basis for spendable earnings. "
-                    "Apply the supplied 35% retained share once: retained revenue becomes $87,500, $358,750, and $630,000, while merchandise and face-value ticket basis becomes $162,500, $666,250, and $1,170,000. "
-                    "Owner profit divided by retained revenue produces 22.86%, 40.0%, and 57.14%; dividing by gross throughput produces the canonical 8%, 14.0%, and 20%. "
-                    "These are different denominators, not competing forecasts. "
-                    "ASC 606 principal-versus-agent presentation depends on control before transfer, not a universal percentage election. "
-                    "Use 35% as the supplied economic retention convention; determine statutory reporting presentation contract by contract with the accounting team. "
-                    "A principal seller may report gross sales and cost of sales, while an agent may report its commission. "
-                    "Do not force both arrangements into identical journal entries merely because the management scorecard combines their economics. "
-                    "Keep customer invoice principal out of VCC commission revenue altogether, and retain a reconciliation from each settlement report to the management measure."
+                    "Begin with three ledgers, not one blended return percentage. "
+                    "The wholesale ledger records committed merchandise, landed acquisition "
+                    "cost, buyer reimbursement, shipment evidence, and settlement deductions. "
+                    "The rebate ledger records eligible purchases, card awards, portal "
+                    "commissions, exclusions, and subsequent reversals. The treasury ledger "
+                    "records unrestricted cash, maturity dates, interest, bank bonuses, "
+                    "and financing expense. A purchase may produce entries in all three, "
+                    "but its principal appears only once as merchandise cost and once "
+                    "as the corresponding reimbursement. Card borrowing creates a payable, "
+                    "never operating income. Formula v2.0 fixes gross annual amounts at "
+                    "$250,000, $1,025,000, and $1,800,000, with retained_share equal to "
+                    "0.35. Consequently, retained contribution is $87,500, $358,750, and "
+                    "$630,000; the implied landed-cost deduction is $162,500, $666,250, "
+                    "and $1,170,000. These are planning identities, not evidence that "
+                    "ordinary electronics fulfillment produces a 35% spread. Underwrite "
+                    "actual vendor commitments independently, then explain any bridge "
+                    "between observed cohort margins and the canonical blended portfolio. "
+                    "If the bridge depends on unearned portal awards or repeatable bank "
+                    "bonuses that cannot actually repeat, reject the forecast rather "
+                    "than changing the scorecard. Preserve original invoices and cohort "
+                    "identifiers so every allocation can be traced back to an executed "
+                    "transaction and its contractual entitlement."
                 ),
                 (
-                    "Build the Base case from 205 illustrative completed cohorts averaging $5,000 gross throughput each. "
-                    "A cohort is a settled purchase-order batch or ticket allocation batch, not necessarily one customer or one seat. "
-                    "Its $3,250 landed basis leaves $1,750 retained spread. "
-                    "Deduct $150 acquisition, $300 contractor delivery, $292.68 allocated fixed overhead, $150 transaction and fulfillment expense, $100 expected scrub and reversal loss, and $57.32 funding expense. "
-                    "The resulting $700 owner contribution multiplied by 205 produces $143,500. "
-                    "Annual amounts control rounding: overhead is exactly $60,000 and funding exactly $11,750. "
-                    "For Conservative, use 50 cohorts at $5,000, producing $1,750 retained spread and $400 owner contribution per cohort. "
-                    "For Scaled, use 300 cohorts at $6,000, producing $2,100 retained spread and $1,200 owner contribution. "
-                    "These cohort constructions reconcile the supplied outcomes; they are allocation assumptions rather than observed conversion rates. "
-                    "Attach every cohort to its purchase authorization, seller invoice, shipping acceptance, marketplace settlement, and issuer statement. "
-                    "The canonical 11 mapped plays belong in one consolidated ledger, but each needs its own principal, fee, and cash-timing fields. "
-                    "A purchase that appears profitable only after assigning another cohort's rebate is a rejected purchase, not a diversification benefit."
+                    "The matrix below supplies an explicit expense allocation that "
+                    "reconciles every canonical profit dollar. Contractor delivery and "
+                    "reconciliation labor consumes $30,000, $96,000, and $144,000; "
+                    "acquisition consumes $10,000, $30,750, and $36,000; shipping, "
+                    "scrubs, and loss allowances consume $7,500, $20,500, and $36,000. "
+                    "Remaining overhead and operating compensation totals $20,000, "
+                    "$68,000, and $54,000. These allocations are illustrative budget "
+                    "choices, not additional supplied scorecard facts. Their combined "
+                    "annual deductions are $67,500, $215,250, and $270,000, leaving "
+                    "$20,000, $143,500, and $360,000. Gross-basis margins remain 8%, "
+                    "14.0%, and 20%; dividing the same profits by retained contribution "
+                    "produces 22.86%, 40.0%, and 57.14%. Never compare one denominator "
+                    "with another to claim margin expansion. The supplied monthly "
+                    "opex range of $1,500–$9,000 is not a complete expense bridge "
+                    "when variable fulfillment and acquisition sit outside that "
+                    "budget. This allocation's fixed overhead averages $1,666.67, "
+                    "$5,666.67, and $4,500 monthly. Validate actual employment "
+                    "compensation separately: the team labels do not establish "
+                    "market salaries, contractor hours, or founder replacement cost. "
+                    "Owner profit is the scorecard residual, not an assertion of "
+                    "after-tax household cash. Record owner draws as equity "
+                    "distributions rather than burying them in cohort delivery costs."
                 ),
                 (
-                    "Do not present the portfolio's 35% retention as the typical spread on a committed wholesale electronics order. "
-                    "A buying-group purchase costing $10,000 and reimbursing $10,150 produces only $150 merchandise spread. "
-                    "An eligible 2% earned purchase rebate adds $200, making gross throughput $10,350 and retained spread $350 before shipping, labor, funding, and reversals. "
-                    "After $60 insured shipping, $45 contractor handling, $30 acquisition allocation, $40 expected loss, and $25 funding expense, that order contributes $150 before fixed overhead. "
-                    "Its realized retention is approximately 3.38%, far below the canonical blended assumption. "
-                    "Reaching 35% therefore requires a materially richer verified mix of ticket spreads, allocation commissions, or service fees; it cannot be created by relabeling reimbursements. "
-                    "A $1,000 face-value ticket resold for $1,400 retains $400 before a hypothetical 12% marketplace fee of $168 and $35 delivery labor, leaving $197 before acquisition, reserves, funding, and overhead. "
-                    "The marketplace percentage must come from the actual seller agreement. "
-                    "SkyBox or Automatiq can synchronize inventory and prices, but neither converts an asking price into collected proceeds. "
-                    "Reject the aggregate underwriting if signed economics do not support the blended retention, and rebuild the forecast from the real channel mix before committing capital."
+                    "Treat the scorecard's ASC 606 retained-share label as a management "
+                    "presentation convention, not an automatic accounting conclusion. "
+                    "An operator controlling merchandise before transfer may report "
+                    "gross merchandise revenue and cost of goods sold; an agent may "
+                    "report only its fee or commission after a documented principal "
+                    "versus agent assessment. Purchased inventory, portal consideration, "
+                    "issuer rewards, and treasury interest can require different "
+                    "presentation. A purchase-linked rebate commonly reduces acquisition "
+                    "cost rather than creating a second sale, subject to its facts "
+                    "and the applicable accounting and tax treatment. Maintain a "
+                    "bridge between statutory books and this chapter's management "
+                    "waterfall, eliminating any rebate already credited against landed "
+                    "cost before adding a separate rebate line. IRC Section 471 "
+                    "anchors inventory accounting, while Section 162 governs qualifying "
+                    "ordinary business deductions; neither converts borrowed principal "
+                    "into revenue. Reconcile payment settlement reports under IRC "
+                    "Section 6050W to the actual sales ledger rather than treating "
+                    "an information return as a margin statement. Export the bridge "
+                    "monthly from QuickBooks or Xero with invoice identifiers, reward "
+                    "statement references, and bank transaction matches. Require "
+                    "separate columns for earned, reserved, and collected amounts "
+                    "so cash timing cannot silently rewrite economic performance."
                 ),
             ],
             "table": {
-                "caption": "Canonical Formula v2.0 Annual Gross-to-Net Reconciliation",
+                "caption": "Formula v2.0 Annual Gross-to-Owner-Profit Reconciliation",
                 "headers": [
-                    "Economic line and measurement discipline",
-                    "Conservative annual case and operating interpretation",
-                    "Base annual case and operating interpretation",
-                    "Scaled annual case and operating interpretation",
+                    "Waterfall line and explicit recognition treatment",
+                    "Conservative annual allocation and operating interpretation",
+                    "Base annual allocation and operating interpretation",
+                    "Scaled annual allocation and operating interpretation",
                 ],
                 "rows": [
                     [
-                        "Gross throughput before removing merchandise and ticket basis",
-                        "$250,000 combining reimbursements, earned rebates, and resale proceeds",
-                        "$1,025,000 combining reimbursements, earned rebates, and resale proceeds",
-                        "$1,800,000 combining reimbursements, earned rebates, and resale proceeds",
+                        "Canonical gross basis before landed merchandise deductions",
+                        "$250,000 annual gross basis across the modeled portfolio",
+                        "$1,025,000 annual gross basis across the modeled portfolio",
+                        "$1,800,000 annual gross basis across the modeled portfolio",
                     ],
                     [
-                        "Landed merchandise and face-value basis equals sixty-five percent",
-                        "$162,500 removed before calculating retained operating revenue",
-                        "$666,250 removed before calculating retained operating revenue",
-                        "$1,170,000 removed before calculating retained operating revenue",
+                        "Subtract implied merchandise cost before measuring retained contribution",
+                        "$162,500 merchandise deduction equals sixty-five percent of gross",
+                        "$666,250 merchandise deduction equals sixty-five percent of gross",
+                        "$1,170,000 merchandise deduction equals sixty-five percent of gross",
                     ],
                     [
-                        "Retained revenue equals the supplied thirty-five percent share",
-                        "$87,500 retained before contractor, acquisition, and operating deductions",
-                        "$358,750 retained before contractor, acquisition, and operating deductions",
-                        "$630,000 retained before contractor, acquisition, and operating deductions",
+                        "Retained contribution equals gross less merchandise deduction",
+                        "$87,500 retained contribution supports all subsequent operating deductions",
+                        "$358,750 retained contribution supports all subsequent operating deductions",
+                        "$630,000 retained contribution supports all subsequent operating deductions",
                     ],
                     [
-                        "Fixed overhead allocated once across completed transaction cohorts",
-                        "$18,000 annually, equivalent to $1,500 monthly fixed overhead",
-                        "$60,000 annually, equivalent to $5,000 monthly fixed overhead",
-                        "$84,000 annually, equivalent to $7,000 monthly fixed overhead",
+                        "Subtract contractor delivery labor and settlement reconciliation",
+                        "$30,000 assigned to fulfillment support and contractor reconciliation",
+                        "$96,000 assigned to fulfillment support and contractor reconciliation",
+                        "$144,000 assigned to fulfillment support and contractor reconciliation",
                     ],
                     [
-                        "Variable deductions include acquisition, contractors, fees, losses, funding",
-                        "$49,500 combined variable deductions beyond the landed basis",
-                        "$155,250 combined variable deductions beyond the landed basis",
-                        "$186,000 combined variable deductions beyond the landed basis",
+                        "Subtract cohort acquisition spending without capitalizing unsuccessful outreach",
+                        "$10,000 acquisition budget includes unsuccessful sourcing and onboarding",
+                        "$30,750 acquisition budget includes unsuccessful sourcing and onboarding",
+                        "$36,000 acquisition budget includes unsuccessful sourcing and onboarding",
                     ],
                     [
-                        "Annual owner profit after all modeled operating deductions",
-                        "$20,000 owner profit, representing eight percent gross-basis margin",
-                        "$143,500 owner profit, representing fourteen percent gross-basis margin",
-                        "$360,000 owner profit, representing twenty percent gross-basis margin",
+                        "Subtract shipping expenses and expected irreversible settlement losses",
+                        "$7,500 allowance covers shipping, reversals, and unrecovered claims",
+                        "$20,500 allowance covers shipping, reversals, and unrecovered claims",
+                        "$36,000 allowance covers shipping, reversals, and unrecovered claims",
                     ],
                     [
-                        "Retained margin and team configuration use separate denominators",
-                        "22.86% retained margin with one full-time operator, two contractors",
-                        "40.0% retained margin with one full-time operator, two contractors",
-                        "57.14% retained margin with two full-time operators, three contractors",
+                        "Subtract residual overhead and assigned operating compensation",
+                        "$20,000 residual budget requires owner-led operations and limited overhead",
+                        "$68,000 residual budget supports software, administration, and operating compensation",
+                        "$54,000 residual budget assumes shared infrastructure and operating leverage",
+                    ],
+                    [
+                        "Owner profit remains after every listed operating deduction",
+                        "$20,000 owner profit equals eight percent of gross",
+                        "$143,500 owner profit equals fourteen percent of gross",
+                        "$360,000 owner profit equals twenty percent of gross",
+                    ],
+                    [
+                        "Retained denominator changes presentation without changing profit dollars",
+                        "22.86% retained margin with one full-time and two contractors",
+                        "40.0% retained margin with one full-time and two contractors",
+                        "57.14% retained margin with two full-time and three contractors",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four economic facts before committing capital",
+                "body": "Release a purchase only when the settlement file contains evidence for each test.",
+                "items": [
+                    "Match a written BuyForMeRetail, Pointsmaker, or MaxOutDeals commitment to the exact SKU, quantity, destination, expiration, and reimbursement amount.",
+                    "Prove that each reward belongs to this account and purchase; remove business-use exclusions, resale exclusions, caps, and overlapping portal claims.",
+                    "Show unrestricted cash or a committed financing facility covering the complete statement obligation if the buying-group payout fails.",
+                    "Reconcile merchandise cost, contractor labor, acquisition spending, expected reversals, and shipping losses before comparing the cohort with canonical profit targets.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Price wholesale, rebate, treasury, and VCC cohorts separately",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "For a wholesale cohort, assume a buying group commits $10,100 "
+                    "against $10,000 of merchandise delivered to its designated "
+                    "warehouse. Assign $60 shipping, $40 contractor handling, $20 "
+                    "acquisition effort, and $100 expected merchandise or settlement "
+                    "loss. Wholesale contribution is therefore negative $120 before "
+                    "rewards. Separately, a verified 2% commercial card award produces "
+                    "$200 and an eligible 1% shopping portal produces $100. Reserve "
+                    "$50 against reward scrubs, leaving $250 rebate contribution "
+                    "and $130 combined contribution. The three-percent advertised "
+                    "stack is not the thirteen-dollar profit per thousand dollars "
+                    "purchased. BuyForMeRetail, Pointsmaker, and MaxOutDeals are "
+                    "counterparties to verify, not interchangeable guarantees of "
+                    "acceptance or payout timing. Delivery into DE, NH, or OR does "
+                    "not by itself validate every tax treatment; confirm sourcing, "
+                    "title transfer, seller requirements, and a valid resale certificate "
+                    "where applicable. Buying-group acceptance conditions can reject "
+                    "an opened carton even when the carrier reports delivery. "
+                    "Photograph seals and serial numbers, obtain declared-value "
+                    "coverage with appropriate exclusions reviewed, and avoid "
+                    "allocating expected insurance proceeds before a claim is "
+                    "supportable. If the portal excludes resale purchases, the "
+                    "combined example falls to $30 before adjusting its reserve "
+                    "for the remaining reward stream."
+                ),
+                (
+                    "For standalone commercial payment rebates, start with the actual "
+                    "processor quote rather than an advertised card headline. A "
+                    "$10,000 eligible B2B payment earning 2% creates $200 of reward, "
+                    "but an assumed 2.9% Plastiq or Melio processing charge costs "
+                    "$290, producing negative $90 before labor, financing, or "
+                    "reversals. Those percentages are examples, not current vendor "
+                    "prices. A 4% offer would leave $110 before those deductions "
+                    "only if the transaction qualifies, the offer remains uncapped "
+                    "at that amount, and the payment method is permitted. Rakuten "
+                    "and TopCashback belong to retail eligibility analysis, not an "
+                    "automatic extra reward on invoice payments. Attribute each "
+                    "purchase to one portal unless terms explicitly support another "
+                    "arrangement. Treasury economics are smaller and independent: "
+                    "$10,000 at an illustrative 4.5% annual yield for 55 days earns "
+                    "$67.81 using simple actual/365 accrual. Keeping $3,000 liquid "
+                    "leaves $7,000 invested, earning $47.47; subtract $15 of "
+                    "incremental costs for $32.47 contribution. Actual Treasury "
+                    "purchase prices and maturities determine realized yield. A "
+                    "bank bonus must be allocated across required balances and "
+                    "holding days, with fees, eligibility, and clawbacks reflected. "
+                    "Do not label the $10,000 principal as treasury revenue."
+                ),
+                (
+                    "The mapped play b2b_commercial_vcc_interchange_rebate_arbitrage "
+                    "embeds free automated AP and instant vendor settlement within "
+                    "freight brokerage, construction, medical supply, property "
+                    "management, or media agencies. Model a separate $1,000,000 "
+                    "monthly eligible invoice cohort at a contracted 165-basis-point "
+                    "rebate: $16,500 potential operator receipts, not $1,000,000 "
+                    "of operator revenue. Assuming that rate precedes a 20% "
+                    "program share, deduct $3,300, then $1,000 reversal reserve, "
+                    "$2,500 delivery labor, $1,500 acquisition allocation, and "
+                    "$1,000 support costs, leaving $7,200. If the contract quotes "
+                    "a net rebate instead, remove the duplicate program deduction. "
+                    "At $100,000,000 of eligible annual volume, 140–195 basis "
+                    "points yields $1,400,000–$1,950,000 before further deductions; "
+                    "this capacity example is outside the canonical annual cases. "
+                    "Single-use Visa or Mastercard commercial VCCs require real "
+                    "vendor acceptance and authorized invoice settlement. Inject "
+                    "Level-3 invoice metadata where supported, but do not assume "
+                    "it guarantees interchange qualification. For card-averse "
+                    "vendors, offer a separately negotiated 1.5%–2% ten-day "
+                    "early-payment ACH discount. A $10,000 invoice discounts "
+                    "$150–$200; only the operator's contracted portion is revenue. "
+                    "Favor fragmented long-tail suppliers, and make settlement "
+                    "speed match actual bank availability rather than promising "
+                    "instant cleared cash."
+                ),
+            ],
+            "table": {
+                "caption": "Separate Cohort Engines With Explicit Unit Math and Failure Fallbacks",
+                "headers": [
+                    "Engine and clearly bounded transaction assumption",
+                    "Gross economic entitlement before operating deductions",
+                    "Deductions and resulting unit contribution calculation",
+                    "Failure response preserving contractual and cash discipline",
+                ],
+                "rows": [
+                    [
+                        "Wholesale merchandise cohort with a written reimbursement commitment",
+                        "$10,100 reimbursement less $10,000 merchandise creates $100 spread",
+                        "$220 shipping, labor, acquisition, and loss deductions produce negative $120",
+                        "Reject unsupported spreads unless separately verified rewards cover losses",
+                    ],
+                    [
+                        "Commercial card award attached to eligible wholesale merchandise",
+                        "$10,000 eligible purchase multiplied by two percent earns $200",
+                        "Allocate shared reward reserve without charging merchandise principal again",
+                        "Remove the award when issuer eligibility cannot be established",
+                    ],
+                    [
+                        "Single eligible shopping portal attached to that merchandise cohort",
+                        "$10,000 eligible purchase multiplied by one percent earns $100",
+                        "$300 combined rewards less $50 reserve leave $250 contribution",
+                        "Exclude resale-restricted purchases and maintain purchase-specific tracking evidence",
+                    ],
+                    [
+                        "Combined wholesale and rebate illustration without treasury income",
+                        "$100 merchandise spread plus $300 rewards creates $400 contribution",
+                        "$270 total operating deductions leave $130 combined cohort profit",
+                        "Do not scale until cleared cohorts reproduce the projected economics",
+                    ],
+                    [
+                        "Standalone B2B invoice payment using assumed processor pricing",
+                        "$10,000 eligible invoice produces $200 at two percent rebate",
+                        "$290 assumed processing charge creates negative $90 before overhead",
+                        "Use ordinary ACH when confirmed rewards cannot exceed total fees",
+                    ],
+                    [
+                        "Treasury sweep after retaining a three-thousand-dollar liquid buffer",
+                        "$7,000 invested at 4.5% for fifty-five days earns $47.47",
+                        "$15 incremental costs leave $32.47 before taxes and financing",
+                        "Match instrument maturity to repayment needs and avoid forced sales",
+                    ],
+                    [
+                        "Commercial VCC AP cohort distinct from merchandise purchasing",
+                        "$1,000,000 eligible invoice volume produces $16,500 contracted gross rebate",
+                        "$9,300 program, reserve, labor, acquisition, and support leave $7,200",
+                        "Offer authorized discounted ACH and supported Level-3 invoice enrichment",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread that survives settlement",
-                "body": "Price the completed cash cycle, not the advertised purchase discount or speculative resale listing.",
+                "title": "Protect the small spread before chasing larger throughput",
+                "body": "The strongest cohort files make negative outcomes measurable before capital is committed.",
                 "items": [
-                    "Export issuer rebate adjustments by original transaction identifier; charge a clawback to its originating cohort rather than hiding it in the current month's purchases.",
-                    "Negotiate buying-group acceptance timestamps and rejection windows in writing; a Net-3 promise without a defined acceptance event cannot support a reliable cash forecast.",
-                    "Record marketplace fees separately from ticket face value; compare actual net settlements against SkyBox or Automatiq exports before increasing allocation size.",
-                    "Model card shutdown with zero new charging capacity and zero unposted rebates; keep the cash needed for already-posted statements outside inventory purchasing balances.",
+                    "Store the buying-group commitment and retailer order together; reconcile serial numbers against warehouse acceptance rather than relying on a carrier delivery scan.",
+                    "Maintain a shadow reward ledger with purchase date, offer enrollment, portal identifier, posted amount, expected lock period, and final reversal deadline.",
+                    "Measure supplier card acceptance by invoice dollars, not supplier count; a handful of large card-averse suppliers can erase the apparent VCC opportunity.",
+                    "Keep the next statement payment outside any bank-bonus balance requirement; a bonus that blocks repayment liquidity is more expensive than its headline value suggests.",
                 ],
             },
         },
         {
-            "heading": "2. Price contractor delivery, acquisition, and the VCC rebate waterfall",
+            "heading": "3. Fund the maturity ladder rather than spending statement float",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Treat contractor delivery as a measured production input, not miscellaneous overhead that disappears when volume scales. "
-                    "The Conservative allocation is 12 hours per cohort at $30, or $360; Base and Scaled use ten hours at $30, or $300. "
-                    "Annual contractor budgets are consequently $18,000, $61,500, and $90,000, covering 600, 2,050, and 3,000 hours. "
-                    "Divide those hours across two, two, and three contractors, respectively, and reserve operator attention for underwriting exceptions, reconciliation, and counterparty collections. "
-                    "The team labels describe staffing structure, not five full-time salaries at scale. "
-                    "Fixed overhead includes systems, bookkeeping, insurance, and any employed support compensation within the stated envelope; owner compensation comes from owner profit. "
-                    "If actual payroll cannot fit, the canonical case needs revision rather than an invisible labor subsidy. "
-                    "Allocate $150 acquisition cost to each completed cohort: $7,500, $30,750, and $45,000 annually. "
-                    "This is acquisition expense per completion, not necessarily customer CAC. "
-                    "Calculate customer CAC separately as acquisition spending divided by newly activated counterparties, then track repeat cohorts to avoid charging each repeat transaction a fictional new-customer cost. "
-                    "Charge failed outreach, canceled commitments, and unsuccessful onboarding to acquisition expense even when no shipment or ticket transfer occurs. "
-                    "That denominator discipline prevents a polished sales dashboard from overstating repeatable contribution."
+                    "Build the liquidity model from purchase date, not the date "
+                    "a buying group finally approves its payable. Effective DSO "
+                    "includes shipping, warehouse intake, exception handling, the "
+                    "contractual Net-3 or Net-5 interval, ACH initiation, and bank "
+                    "availability. A Net-3 promise beginning after acceptance is "
+                    "not three days of total exposure. Likewise, 55-day statement "
+                    "float is a favorable cycle-position example, not a universal "
+                    "grace period. A purchase immediately before statement closing "
+                    "can mature much sooner, and commercial card terms determine "
+                    "whether a grace period applies at all. For a steady-state "
+                    "screen, define cash gap days as the greater of zero and "
+                    "effective DSO plus a repayment buffer minus purchase-to-due "
+                    "days. Multiply that gap by average daily landed merchandise "
+                    "spend to estimate the structural bridge requirement. This "
+                    "estimate excludes concentrated purchases, disputed inventory, "
+                    "reward locks, taxes, and operating cash reserves. Maintain "
+                    "a dated maturity ladder as the controlling document, because "
+                    "an average can conceal a large statement due tomorrow. "
+                    "Never accelerate purchasing merely because an issuer temporarily "
+                    "restores available credit after a payment. Follow the commercial "
+                    "facility's terms and keep consumer card-cycling outside the model."
                 ),
                 (
-                    "The mapped play b2b_commercial_vcc_interchange_rebate_arbitrage embeds automated AP and vendor settlement into freight brokerage, construction, medical supply, property management, or media-agency workflows. "
-                    "Its economic principal is third-party invoice volume, not operator sales. "
-                    "For $100,000 of eligible settled supplier payments, a contractually retained 160-basis-point rebate produces $1,600 revenue. "
-                    "Deduct illustrative provider expense of $250, servicing labor of $180, acquisition allocation of $120, reversal provision of $150, and funding expense of $100; contribution becomes $800 before fixed overhead. "
-                    "Confirm whether the quoted yield is already net of provider charges before deducting them again. "
-                    "The specified 140–195 basis-point range implies $1.4 million–$1.95 million on $100 million eligible annual payments, but that separate scale illustration is not added to this volume's canonical scenarios. "
-                    "No operator receives the entire merchant interchange merely by issuing a virtual card. "
-                    "A sponsor, issuer, processor, or program agreement determines eligibility, revenue sharing, adjustments, and payment timing. "
-                    "Create single-use Visa or Mastercard commercial VCCs only for authorized invoices and approved suppliers. "
-                    "Transmit authentic Level-3 line-item invoice metadata at creation where supported; metadata does not compel vendor acceptance or ensure a particular rebate. "
-                    "Measure accepted, settled, rebate-eligible volume instead of displaying all uploaded AP invoices as monetized throughput."
+                    "Using canonical annual landed costs divided by 365 produces "
+                    "daily merchandise spend of $445.21 Conservative, $1,825.34 "
+                    "Base, and $3,205.48 Scaled. At 25-day effective DSO, average "
+                    "unsettled merchandise exposure is approximately $11,130, "
+                    "$45,634, and $80,137. With 35 days from purchase to card "
+                    "maturity and a seven-day repayment buffer, the simple timing "
+                    "gap is zero, but exposure and counterparty risk remain. "
+                    "Stress DSO to 50 days: the gap becomes 22 days, requiring "
+                    "$9,794.52, $40,157.53, and $70,520.55 of additional bridge "
+                    "capital at steady throughput. These figures use unrounded "
+                    "daily costs. The $10,000–$55,000 startup capital range "
+                    "therefore cannot automatically support the Scaled stress "
+                    "case, even before payroll and loss reserves. A revolving "
+                    "facility counts only when committed, available, and permitted "
+                    "for the intended use; an unused card limit is not cash "
+                    "repayment capacity. Evaluate a second stress in which the "
+                    "largest buying group fails completely. Hold enough unrestricted "
+                    "resources to meet the actual statement ladder while pursuing "
+                    "inventory recovery or contractual remedies. The bridge formula "
+                    "measures timing mismatch, not the maximum possible loss or "
+                    "a sufficient standalone solvency reserve."
                 ),
                 (
-                    "For card-averse vendors, offer dynamic early-pay ACH discounts only through an agreed settlement arrangement. "
-                    "On a $100,000 invoice, a 1.5%–2% discount for payment on day ten instead of day thirty saves the buyer $1,500–$2,000. "
-                    "A separately contracted 20% share of that saving yields $300–$400 operator revenue; the remaining saving belongs to the buyer. "
-                    "If the operator advances the full principal for twenty days at 12% annual funding cost, interest alone is approximately $657.53, exceeding that fee. "
-                    "The fallback therefore needs buyer-funded settlement, a separately priced funding facility, or a smaller advance exposure. "
-                    "Do not count the same discount simultaneously as buyer savings, merchant rebate, and operator revenue. "
-                    "Focus VCC acquisition on fragmented long-tail vendors that explicitly accept the payment method, then retain ACH for suppliers whose acceptance economics fail. "
-                    "Keep these AP settlement rebates separate from the purchasing business's advertised 2%–4% commercial card rewards. "
-                    "A reward is usable in underwriting only after checking caps, category exclusions, returned-purchase treatment, fees, and contractual business-use restrictions. "
-                    "For an illustrative $10,000 eligible purchase, 2% yields $200 and 4% yields $400; losing one percentage point removes $100. "
-                    "Never manufacture transactions or misclassify invoices to restore that difference. "
-                    "Use a lower purchase price, a lower service cost, or decline the transaction."
+                    "Separate portal payout locks from wholesale DSO. If $300 "
+                    "of rewards on each illustrative cohort remains pending for "
+                    "90 days, that receivable cannot pay a statement due in "
+                    "35 days, even when merchandise reimbursement arrives on "
+                    "schedule. Track pending rewards at their recoverable amount "
+                    "and exclude them from available repayment cash. Sweep only "
+                    "the surplus remaining after scheduled card payments, operating "
+                    "disbursements, and explicit exception buffers. A short Treasury "
+                    "bill can mature after a card due date; selling beforehand "
+                    "introduces price and execution risk even when credit risk "
+                    "is low. TreasuryDirect and a brokerage account have different "
+                    "transfer and trading mechanics, so verify access before "
+                    "choosing the custody route. FDIC coverage generally applies "
+                    "per depositor, per insured bank, per ownership category, "
+                    "not per application displaying a balance. Maintain a bank "
+                    "map for sweep destinations and confirm the treatment of "
+                    "pass-through arrangements. Reconcile ACH returns and holiday "
+                    "calendars daily during concentrated settlement weeks. If "
+                    "an issuer begins a review, stop adding exposure, preserve "
+                    "purchase and resale documentation, and repay from existing "
+                    "resources rather than assuming a new issuer will refinance "
+                    "the position on demand."
                 ),
             ],
             "table": {
-                "caption": "Annual Expense Allocations That Exactly Reconcile Owner Profit",
+                "caption": "Working-Capital Timing, Liquidity Eligibility, and Settlement Controls",
                 "headers": [
-                    "Expense line and allocation boundary",
-                    "Conservative expense and measurable operating driver",
-                    "Base expense and measurable operating driver",
-                    "Scaled expense and measurable operating driver",
+                    "Timing variable and operator measurement definition",
+                    "Conservative or cohort-specific measured liquidity exposure",
+                    "Base and Scaled implications for available capital",
+                    "Required operating response before increasing purchase volume",
                 ],
                 "rows": [
                     [
-                        "Acquisition expense allocated across completed purchase or allocation cohorts",
-                        "$7,500 equals fifty completed cohorts at $150 each",
-                        "$30,750 equals 205 completed cohorts at $150 each",
-                        "$45,000 equals 300 completed cohorts at $150 each",
+                        "Daily merchandise spend equals annual landed cost divided by 365",
+                        "$445.21 daily spend follows the Conservative merchandise deduction",
+                        "Base requires $1,825.34 daily; Scaled requires $3,205.48 daily",
+                        "Recalculate using actual purchase concentration rather than averages alone",
                     ],
                     [
-                        "Contractor delivery labor measured through logged productive hours",
-                        "$18,000 equals 600 delivery hours at $30 hourly",
-                        "$61,500 equals 2,050 delivery hours at $30 hourly",
-                        "$90,000 equals 3,000 delivery hours at $30 hourly",
+                        "Effective DSO includes every day before usable settlement cash",
+                        "Twenty-five days produces approximately $11,130 unsettled merchandise exposure",
+                        "Base exposure approaches $45,634; Scaled exposure approaches $80,137",
+                        "Separate warehouse acceptance delays from contractual payment processing time",
                     ],
                     [
-                        "Fixed overhead includes systems, administration, and budgeted support",
-                        "$18,000 annual allocation requires $1,500 monthly cash coverage",
-                        "$60,000 annual allocation requires $5,000 monthly cash coverage",
-                        "$84,000 annual allocation requires $7,000 monthly cash coverage",
+                        "Normal timing assumes thirty-five-day maturity and seven-day buffer",
+                        "Twenty-five-day DSO creates zero structural cash gap days",
+                        "Zero timing gap does not eliminate complete counterparty failure",
+                        "Maintain full statement repayment coverage outside expected buyer proceeds",
                     ],
                     [
-                        "Transaction and fulfillment expense excludes already counted inventory basis",
-                        "$10,000 covers payment fees, shipping, and fulfillment exceptions",
-                        "$30,750 covers payment fees, shipping, and fulfillment exceptions",
-                        "$27,000 covers payment fees, shipping, and fulfillment exceptions",
+                        "Delayed settlement raises effective DSO to fifty calendar days",
+                        "Twenty-two gap days require $9,794.52 additional Conservative bridge capital",
+                        "Base bridge reaches $40,157.53; Scaled bridge reaches $70,520.55",
+                        "Reduce purchases or secure committed financing before this exposure develops",
                     ],
                     [
-                        "Expected scrub and reversal losses reduce current cohort contribution",
-                        "$10,000 provision equals four percent of gross throughput",
-                        "$20,500 provision equals two percent of gross throughput",
-                        "$18,000 provision equals one percent of gross throughput",
+                        "Reward lock example holds earned rebate receivables ninety days",
+                        "$300 pending rewards remain unavailable for near-term card repayment",
+                        "Growing cohorts accumulate locked awards independently of merchandise DSO",
+                        "Exclude pending rewards from the unrestricted repayment cash calculation",
                     ],
                     [
-                        "Funding expense includes contracted interest and facility carrying charges",
-                        "$4,000 annual funding budget requires dated borrowing reconciliation",
-                        "$11,750 annual funding budget requires dated borrowing reconciliation",
-                        "$6,000 annual funding budget requires dated borrowing reconciliation",
+                        "Treasury maturity must precede the protected card payment window",
+                        "$7,000 illustrative investment excludes the separate $3,000 liquid reserve",
+                        "Larger sweeps require dated liabilities and bank concentration checks",
+                        "Purchase suitable maturities instead of assuming immediate secondary liquidity",
                     ],
                     [
-                        "Total deductions bridge retained revenue to annual owner profit",
-                        "$67,500 deducted from $87,500 leaves $20,000 owner profit",
-                        "$215,250 deducted from $358,750 leaves $143,500 owner profit",
-                        "$270,000 deducted from $630,000 leaves $360,000 owner profit",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Convert settlement promises into a dated working-capital requirement",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the float model from actual purchase dates, statement closing dates, due dates, and unrestricted settlement dates. "
-                    "The named 60-day card-statement float ledger is a tracking horizon, not a promise of sixty interest-free days on every charge. "
-                    "A purchase shortly before statement closing receives less runway than one shortly afterward, and revolving balances can change grace-period economics. "
-                    "For an explicit blended illustration, assume purchase-to-cash cycles of 48, 42, and 36 days against thirty days of payment runway. "
-                    "These cycles include shipping, acceptance, receivable collection, event waiting periods, and payout locks; they are broader than invoice DSO alone. "
-                    "The uncovered gaps are eighteen, twelve, and six days. "
-                    "Multiply each gap by annual landed basis divided by 365, producing approximately $8,014, $21,904, and $19,233 of average inventory-basis funding need. "
-                    "This proxy excludes fee timing and acquisition outflows, which the daily cash calendar must add. "
-                    "It also assumes evenly distributed purchases, making it unsuitable as the sole authorization limit for event-heavy inventory. "
-                    "A concentrated ticket allocation can consume months of average purchases in one afternoon. "
-                    "Record every known statement payment and event payout individually, then calculate the maximum cumulative cash deficit rather than relying exclusively on annual turnover ratios."
-                ),
-                (
-                    "Add explicit liquidity layers without pretending that every layer is another expense. "
-                    "For Conservative, Base, and Scaled, hold illustrative reversal cash buffers of $4,000, $12,000, and $18,000, plus one month of fixed overhead at $1,500, $5,000, and $7,000. "
-                    "Add incremental peak-batch cushions of $10,000, $20,000, and $30,000 only for concentration exceeding the average funding proxy. "
-                    "The resulting planning liquidity is $23,514, $58,904, and $74,233. "
-                    "The stated $10,000–$55,000 startup range therefore does not automatically fund every modeled operating state: Base exceeds its upper end by $3,904 and Scaled by $19,233. "
-                    "Retained earnings or a committed external facility must bridge those differences before purchases increase. "
-                    "Cash held against reversals is a balance-sheet liquidity allocation; expected losses are already included in the earnings waterfall. "
-                    "Do not subtract the buffer again when calculating profit. "
-                    "Likewise, drawing a credit facility creates cash and debt, not revenue, and repaying principal is distinct from interest expense. "
-                    "An unused card limit is not unrestricted cash available to satisfy another card statement. "
-                    "Validate borrowing permissions, advance availability, and settlement restrictions before counting any facility as a source of working capital. "
-                    "Remove uncommitted financing immediately from the downside cash forecast."
-                ),
-                (
-                    "Separate buying-group DSO from ticket payout locks because their failure modes require different interventions. "
-                    "A vetted Net-3 or Net-5 buying group should have a documented trigger, such as warehouse acceptance, followed by an expected ACH initiation and bank-availability date. "
-                    "Weekends, disputed serial numbers, rejected packaging, and shipment loss can extend the purchase-to-cash cycle beyond the invoice term. "
-                    "Insure high-value shipments with the correct declared value and preserve carrier acceptance evidence, while checking exclusions and claim-payment timing. "
-                    "Ticket marketplaces may hold proceeds until after the event or longer during disputes; selling inventory today does not necessarily release cash today. "
-                    "SSL rights, corporate suites, and allocation brokerage additionally require documented transfer rights, included amenities, and counterparty payment conditions. "
-                    "Do not treat a revocable allocation email as transferable inventory. "
-                    "Set markdown checkpoints against event dates, using a pre-agreed contribution floor and cash-release objective rather than waiting for face-value recovery. "
-                    "If a card issuer starts a review, stop new commitments that depend on that line, continue reconciling existing obligations, and preserve statement-payment cash. "
-                    "If a buying-group ACH misses its expected availability date, suspend incremental exposure to that counterparty and move only uncommitted orders to another vetted group. "
-                    "Diversification works before default exposure accumulates, not after."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Float and Liquidity Bridge Using Landed Basis",
-                "headers": [
-                    "Timing or liquidity component and calculation rule",
-                    "Conservative cash-cycle assumption and resulting requirement",
-                    "Base cash-cycle assumption and resulting requirement",
-                    "Scaled cash-cycle assumption and resulting requirement",
-                ],
-                "rows": [
-                    [
-                        "Purchase-to-unrestricted-cash cycle includes receivable and event settlement delays",
-                        "48 days from purchase until unrestricted cash becomes available",
-                        "42 days from purchase until unrestricted cash becomes available",
-                        "36 days from purchase until unrestricted cash becomes available",
-                    ],
-                    [
-                        "Illustrative payment runway must be replaced with statement dates",
-                        "Thirty days assumed before the purchase obligation requires payment",
-                        "Thirty days assumed before the purchase obligation requires payment",
-                        "Thirty days assumed before the purchase obligation requires payment",
-                    ],
-                    [
-                        "Uncovered funding gap equals cash cycle minus payment runway",
-                        "Eighteen uncovered days require funding beyond assumed card runway",
-                        "Twelve uncovered days require funding beyond assumed card runway",
-                        "Six uncovered days require funding beyond assumed card runway",
-                    ],
-                    [
-                        "Average basis funding equals annual basis times gap divided by 365",
-                        "$8,014 rounded funding need against $162,500 annual landed basis",
-                        "$21,904 rounded funding need against $666,250 annual landed basis",
-                        "$19,233 rounded funding need against $1,170,000 annual landed basis",
-                    ],
-                    [
-                        "Reversal cash buffer plus one month of fixed overhead",
-                        "$5,500 combines $4,000 reversal cash and $1,500 fixed overhead",
-                        "$17,000 combines $12,000 reversal cash and $5,000 fixed overhead",
-                        "$25,000 combines $18,000 reversal cash and $7,000 fixed overhead",
-                    ],
-                    [
-                        "Incremental peak-batch cushion covers concentration beyond average basis funding",
-                        "$10,000 additional liquidity reserved for concentrated purchase commitments",
-                        "$20,000 additional liquidity reserved for concentrated purchase commitments",
-                        "$30,000 additional liquidity reserved for concentrated purchase commitments",
-                    ],
-                    [
-                        "Total planning liquidity excludes uncommitted financing and unrealized rebates",
-                        "$23,514 total planning liquidity before additional calendar-specific cash demands",
-                        "$58,904 total planning liquidity before additional calendar-specific cash demands",
-                        "$74,233 total planning liquidity before additional calendar-specific cash demands",
+                        "Issuer interruption removes future borrowing without removing existing debt",
+                        "Existing statement principal remains payable despite suspended purchasing access",
+                        "Scaled purchasing stops when committed fallback funding becomes insufficient",
+                        "Freeze new commitments and prioritize already incurred repayment obligations",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Create the dated obligation register",
-                    "action": "Link every cohort to purchase, acceptance, statement, event, and payout dates.",
-                    "detail": "Use issuer exports and actual marketplace settlement terms; distinguish invoice DSO from the complete purchase-to-cash cycle.",
+                    "title": "Build the daily maturity ladder",
+                    "action": "Export card purchases, statement dates, current due dates, and minimum contractual settlement requirements.",
+                    "detail": "Link every purchase to its cohort and forecast full repayment rather than treating minimum payments as an operating strategy.",
                 },
                 {
                     "step": 2,
-                    "title": "Calculate the daily cash deficit",
-                    "action": "Project each cash inflow and outflow over the next sixty days.",
-                    "detail": "Include already committed purchases, contractor payments, refunds, fixed overhead, facility interest, and statement principal without counting debt draws as revenue.",
+                    "title": "Age the complete receivable chain",
+                    "action": "Track shipped, delivered, accepted, payable, ACH initiated, and bank-available states separately.",
+                    "detail": "Measure effective DSO from purchase through cleared cash; preserve exception reasons and counterparty-specific delay distributions.",
                 },
                 {
                     "step": 3,
-                    "title": "Apply collection and issuer interruptions",
-                    "action": "Delay buying-group collections fifteen days and remove new card availability.",
-                    "detail": "Keep existing statement obligations unchanged; exclude unposted rebates and any facility whose availability is not contractually committed.",
+                    "title": "Stress the next two statement cycles",
+                    "action": "Move buying-group availability to day fifty and remove the largest counterparty's expected payout.",
+                    "detail": "Calculate both the steady-state bridge and actual daily cash deficit; use the larger relevant requirement when sizing reserves.",
                 },
                 {
                     "step": 4,
-                    "title": "Set purchase limits from available liquidity",
-                    "action": "Authorize only commitments that preserve statement-payment cash under the downside calendar.",
-                    "detail": "Escalate counterparty delays, reduce ticket positions, or secure documented funding before increasing exposure; retain the reviewed forecast with the purchase decision.",
+                    "title": "Sweep only documented surplus",
+                    "action": "Protect repayment cash and operating buffers before selecting Treasury maturities or bonus balances.",
+                    "detail": "Reconcile cleared bank activity daily and unwind discretionary future purchases before any protected payment becomes dependent on a pending reward.",
                 },
             ],
         },
         {
-            "heading": "4. Stress the spread, reserve reversals, and enforce executable fallbacks",
+            "heading": "4. Reserve reversals, charge acquisition honestly, and stress owner profit",
             "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Maintain separate reserve schedules for merchandise rejection, card-rebate scrub, ticket cancellation, delivery disputes, and counterparty nonpayment. "
-                    "A scrub is the removal of an expected rebate or payable spread after eligibility review; a reversal returns a previously booked amount or unwinds a settlement. "
-                    "Book only contractually supportable earned rebates, age unsettled balances, and true up estimates against issuer reports. "
-                    "The annual expected-loss allocations are $10,000, $20,500, and $18,000, equivalent to 4%, 2%, and 1% of canonical gross throughput. "
-                    "Their decline with scale is an underwriting assumption requiring evidence from acceptance quality, vendor diversification, and resolved claims, not an automatic benefit of becoming larger. "
-                    "For tickets, evaluate cancellation refunds alongside recoverable purchase basis rather than assuming every gross refund is an equal net loss. "
-                    "For insured shipments, recognize that a potential insurance recovery can arrive after the card statement and can be disputed. "
-                    "Track gross exposure, expected recovery, expected net loss, and expected payment date independently. "
-                    "Use realized cohort vintages to revise the provision, preserving a record of original estimates and subsequent adjustments. "
-                    "A reserve release belongs to the period and cohort supported by evidence; it should never become a convenient plug used to meet a target margin."
+                    "Reserve losses by failure mechanism rather than applying one "
+                    "optimistic haircut to all receipts. Merchandise claims require "
+                    "purchase cost, carrier coverage, deductible, evidence quality, "
+                    "and expected recovery timing. Portal scrubs require eligible "
+                    "tracked spend, historical rejection frequency, average award "
+                    "size, and final validation rules. VCC reversals require "
+                    "settled invoice volume, credit memos, refunds, program "
+                    "adjustments, and contractual recourse. Expected loss equals "
+                    "exposure multiplied by failure probability multiplied by "
+                    "loss severity; add a separately labeled cash buffer for "
+                    "uncertainty and concentration. For example, $100,000 of "
+                    "merchandise with 1% incident probability and 60% unrecovered "
+                    "severity needs $600 expected loss, not the entire shipment "
+                    "value. A discretionary $1,000 liquidity buffer is not "
+                    "automatically another $1,000 expense. When an actual loss "
+                    "occurs, apply it against the existing allowance and recognize "
+                    "only the incremental difference, preventing double deductions. "
+                    "Release reserves from evidence of expiration or final "
+                    "settlement, not because a monthly profit target is short. "
+                    "Preserve aging by counterparty and purchase month so a "
+                    "clean new cohort does not hide deterioration in an older "
+                    "one. Recovery proceeds should restore the appropriate loss "
+                    "account instead of masquerading as a newly acquired profitable sale."
                 ),
                 (
-                    "Run sensitivities against the same canonical baseline rather than changing the denominator halfway through the stress test. "
-                    "An additional two percentage points of net loss on gross throughput removes $5,000, $20,500, and $36,000, leaving owner profit of $15,000, $123,000, and $324,000. "
-                    "A 20% contractor-cost increase removes $3,600, $12,300, and $18,000. "
-                    "Together those two shocks leave $11,400, $110,700, and $306,000. "
-                    "Separately, assume tickets represent 20% of gross throughput and realized ticket prices fall 2%, with basis and other costs held constant. "
-                    "That removes $1,000, $4,100, and $7,200; actual fee reductions could soften the impact, but this test gives no credit for them. "
-                    "A fifteen-day collection delay increases the average basis funding proxy by approximately $6,678, $27,380, and $48,082 without directly changing accounting profit. "
-                    "Additional financing interest would reduce profit according to the actual facility balance and duration. "
-                    "These shocks are independent illustrations unless expressly combined. "
-                    "Do not add a full ticket cancellation loss to a price-decay stress on the same seat without defining mutually exclusive outcomes. "
-                    "Similarly, losing a rebate already excluded from the baseline is not a second incremental expense. "
-                    "Stress testing should expose cash fragility, not inflate losses through duplicate counting."
+                    "Charge customer acquisition to economically productive cohorts. "
+                    "For the VCC example, $18,000 of onboarding and acquisition "
+                    "amortized across twelve expected active months creates "
+                    "$1,500 monthly CAC allocation. If the client exits after "
+                    "three months, $13,500 remains unrecovered under that planning "
+                    "schedule; revisit the cohort's lifetime return instead of "
+                    "leaving abandoned acquisition cost outside performance reports. "
+                    "This is management allocation, not permission to capitalize "
+                    "costs on the statutory books. Wholesale acquisition includes "
+                    "deal monitoring, failed commitments, retailer account "
+                    "administration, and buyer qualification. Contractor delivery "
+                    "labor must include exception queues, not just successful "
+                    "orders: ten clean orders requiring six minutes each and "
+                    "two exceptions requiring thirty minutes each consume two "
+                    "hours in total. At $30 per hour, the twelve-order batch "
+                    "costs $60, or $5 per attempted order. Record the denominator "
+                    "consistently when comparing automation gains. A reconciler "
+                    "that saves entry time but doubles unresolved exceptions "
+                    "can worsen total unit economics. Use bank exports, card "
+                    "statements, and portal reports to verify completed work "
+                    "before accepting a dashboard's claimed savings. Increase "
+                    "throughput only after labor, reserve, and acquisition "
+                    "costs remain stable across fully settled purchase cohorts."
                 ),
                 (
-                    "Turn each modeled downside into a purchase rule that can be executed by the small team. "
-                    "The BOTS Act, 15 U.S.C. §45c, prohibits specified circumvention of online ticket controls and certain sales of tickets obtained through that conduct. "
-                    "Use no queue or CAPTCHA bypass software, and preserve acquisition records supporting lawful sourcing. "
-                    "For covered ticket offers, 16 CFR Part 464 governs total-price disclosure and specified fee representations; map seller listings and marketplace presentations to the applicable requirements. "
-                    "New York Arts and Cultural Affairs Law §25.07 adds jurisdiction-specific ticket pricing requirements, while state resale-certificate rules govern qualifying inventory purchases. "
-                    "California Revenue and Taxation Code §6091 places the burden of establishing a sale for resale on the seller unless the prescribed certificate conditions are met. "
-                    "Collect tax separately from earned spread and reconcile marketplace collection responsibilities before comparing channel margins. "
-                    "For SSL and suite allocations, verify the actual license or venue contract permits the intended transfer and resale. "
-                    "Decline unsupported rights rather than assigning them optimistic liquidation value. "
-                    "The final release decision combines positive stressed contribution, documented transferability, available settlement liquidity, and a named fallback buyer or markdown schedule. "
-                    "If one fails, reduce the position, renegotiate the purchase basis, or leave the allocation with its current holder."
+                    "Run sensitivities against the canonical owner-profit baseline "
+                    "without quietly rewriting its assumptions. An incremental "
+                    "loss equal to 2% of landed merchandise cost deducts "
+                    "$3,250, $13,325, and $23,400, leaving $16,750, $130,175, "
+                    "and $336,600. A separate reward-income shortfall equal "
+                    "to 1% of original canonical gross deducts $2,500, "
+                    "$10,250, and $18,000, leaving $17,500, $133,250, "
+                    "and $342,000. This is a specified dollar shock, not "
+                    "an assertion that every revenue stream has identical "
+                    "reward exposure. For sustained fifty-day DSO, financing "
+                    "the 22-day bridge at an assumed 12% annual rate costs "
+                    "$1,175.34, $4,818.90, and $8,462.47 annually, leaving "
+                    "$18,824.66, $138,681.10, and $351,537.53. Apply that "
+                    "annual expense only when the bridge remains continuously "
+                    "outstanding; a temporary draw needs actual funded days. "
+                    "These are independent sensitivities, not cumulative "
+                    "forecasts, and no incremental expense replaces an "
+                    "already budgeted allowance. A rewards shortfall also "
+                    "changes actual gross receipts, so recompute margins "
+                    "using the revised denominator. Establish stop-buy "
+                    "thresholds from repayment coverage and verified cohort "
+                    "contribution, not from how close annual revenue appears "
+                    "to the published target."
                 ),
             ],
             "table": {
-                "caption": "Independent Sensitivity Tests and One Explicit Combined Downside",
+                "caption": "Independent Scenario Sensitivities and Reserve Governance",
                 "headers": [
-                    "Stress definition and denominator held constant",
-                    "Conservative change and resulting operating interpretation",
-                    "Base change and resulting operating interpretation",
-                    "Scaled change and resulting operating interpretation",
+                    "Independent stress or allocation test being evaluated",
+                    "Conservative effect on annual owner profit",
+                    "Base effect on annual owner profit",
+                    "Scaled effect on annual owner profit",
                 ],
                 "rows": [
                     [
-                        "Baseline owner profit before applying any incremental stress",
-                        "$20,000 annual owner profit under the canonical operating assumptions",
-                        "$143,500 annual owner profit under the canonical operating assumptions",
-                        "$360,000 annual owner profit under the canonical operating assumptions",
+                        "Canonical baseline before adding any incremental sensitivity deductions",
+                        "$20,000 baseline profit preserves the supplied Conservative scenario",
+                        "$143,500 baseline profit preserves the supplied Base scenario",
+                        "$360,000 baseline profit preserves the supplied Scaled scenario",
                     ],
                     [
-                        "Additional net loss equals two percent of gross throughput",
-                        "$5,000 additional loss leaves $15,000 annual owner profit",
-                        "$20,500 additional loss leaves $123,000 annual owner profit",
-                        "$36,000 additional loss leaves $324,000 annual owner profit",
+                        "Additional merchandise losses equal two percent of landed costs",
+                        "$3,250 additional loss leaves $16,750 annual owner profit",
+                        "$13,325 additional loss leaves $130,175 annual owner profit",
+                        "$23,400 additional loss leaves $336,600 annual owner profit",
                     ],
                     [
-                        "Contractor delivery expense increases twenty percent without throughput growth",
-                        "$3,600 additional labor expense leaves $16,400 owner profit",
-                        "$12,300 additional labor expense leaves $131,200 owner profit",
-                        "$18,000 additional labor expense leaves $342,000 owner profit",
+                        "Reward shortfall equals one percent of original gross basis",
+                        "$2,500 reduced income leaves $17,500 annual owner profit",
+                        "$10,250 reduced income leaves $133,250 annual owner profit",
+                        "$18,000 reduced income leaves $342,000 annual owner profit",
                     ],
                     [
-                        "Combine only the incremental loss and contractor expense shocks",
-                        "$8,600 combined expense increase leaves $11,400 owner profit",
-                        "$32,800 combined expense increase leaves $110,700 owner profit",
-                        "$54,000 combined expense increase leaves $306,000 owner profit",
+                        "Continuously funded twenty-two-day bridge bears twelve percent annual interest",
+                        "$1,175.34 financing expense leaves $18,824.66 annual owner profit",
+                        "$4,818.90 financing expense leaves $138,681.10 annual owner profit",
+                        "$8,462.47 financing expense leaves $351,537.53 annual owner profit",
                     ],
                     [
-                        "Ticket prices decline two percent on twenty-percent ticket mix",
-                        "$1,000 proceeds reduction leaves $19,000 annual owner profit",
-                        "$4,100 proceeds reduction leaves $139,400 annual owner profit",
-                        "$7,200 proceeds reduction leaves $352,800 annual owner profit",
+                        "Acquisition budget rises twenty percent without adding contribution",
+                        "$2,000 additional acquisition expense leaves $18,000 owner profit",
+                        "$6,150 additional acquisition expense leaves $137,350 owner profit",
+                        "$7,200 additional acquisition expense leaves $352,800 owner profit",
                     ],
                     [
-                        "Collection cycle extends fifteen days against unchanged payment dates",
-                        "$6,678 additional basis funding required before incremental financing interest",
-                        "$27,380 additional basis funding required before incremental financing interest",
-                        "$48,082 additional basis funding required before incremental financing interest",
+                        "Contractor labor rises twenty-five percent without productivity recovery",
+                        "$7,500 additional labor expense leaves $12,500 owner profit",
+                        "$24,000 additional labor expense leaves $119,500 owner profit",
+                        "$36,000 additional labor expense leaves $324,000 owner profit",
                     ],
                     [
-                        "Purchase rebate falls fifty basis points on fully eligible basis",
-                        "$812.50 lost rebate leaves $19,187.50 annual owner profit",
-                        "$3,331.25 lost rebate leaves $140,168.75 annual owner profit",
-                        "$5,850 lost rebate leaves $354,150 annual owner profit",
+                        "Reserve release requires resolved exposure rather than budget pressure",
+                        "Retain purchase-level evidence before recognizing any Conservative reserve release",
+                        "Retain counterparty-level evidence before recognizing any Base reserve release",
+                        "Retain concentration-level evidence before recognizing any Scaled reserve release",
                     ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before releasing purchase capital",
-                "body": "A positive headline spread is insufficient when eligibility, ownership, settlement, or downside liquidity remains unresolved.",
-                "items": [
-                    "Verify signed buying-group acceptance terms, merchandise condition requirements, ACH timing, and insured shipment coverage before relying on the reimbursement.",
-                    "Verify issuer reward eligibility and VCC revenue-sharing terms; separate customer invoice principal from operator fees and test zero unposted rebate availability.",
-                    "Verify lawful ticket acquisition, transferable SSL or suite rights, seller fee schedules, payout-lock terms, and applicable total-price presentation requirements.",
-                    "Verify the daily cash forecast survives a fifteen-day collection delay and no new card capacity while preserving cash for already-posted statement obligations.",
                 ],
             },
         },
     ],
-    "pull_quote": "A spread becomes owner profit only after basis, reversals, labor, and the cash calendar have all been paid.",
+    "pull_quote": "A reward becomes profit only after every deduction is earned, every reversal is reserved, and every borrowed dollar has a repayment source.",
     "diagram_id": "diag-03",
     "action_checklist": [
-        "Reconcile each cohort from gross throughput through the 35% retained-share convention to actual channel-level owner contribution.",
-        "Separate VCC invoice principal, earned program rebates, buyer discount savings, and operator service fees into distinct ledger accounts.",
-        "Replace illustrative contractor hours, acquisition allocations, and fee percentages with signed rates and completed-cohort evidence.",
-        "Build a sixty-day cash calendar using actual statement dates, buying-group acceptance terms, event dates, and unrestricted payout dates.",
-        "Fund reversal liquidity and concentrated purchase cushions without deducting those cash allocations twice from owner profit.",
-        "Apply the specified downside tests, document lawful sourcing and transfer rights, and set counterparty limits and pre-event markdown instructions.",
+        "Create separate wholesale, rebate, and treasury ledgers, then eliminate duplicate purchase principal and reward credits in the consolidated cohort bridge.",
+        "Reconcile the three canonical gross, retained-contribution, and owner-profit cases using explicit labor, acquisition, loss, and overhead deductions.",
+        "Price the next buying-group commitment with documented shipping, acceptance conditions, eligible rewards, contractor minutes, and expected unrecovered losses.",
+        "Model the commercial VCC play using accepted invoice volume and contracted operator rebates, with Level-3 enrichment and discounted ACH as separately priced fallbacks.",
+        "Build a daily statement maturity ladder and test fifty-day buying-group settlement plus complete failure of the largest counterparty.",
+        "Approve treasury allocations only from unrestricted surplus, then compare fully settled cohort results against independent loss, reward, financing, CAC, and labor stresses.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to ticket sales",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits specified circumvention of ticket purchase controls and covered resale of tickets obtained through that conduct; supports acquisition-record and sourcing controls.",
+            "title": "26 U.S.C. Section 162 — Trade or business expenses",
+            "url": "https://www.law.cornell.edu/uscode/text/26/162",
+            "relevance": "Distinguishes qualifying business expense deductions from owner distributions and supports disciplined records for operating costs.",
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes total-price disclosure and fee-representation requirements for covered live-event ticket offers; affects displayed prices and channel margin comparisons.",
+            "title": "26 U.S.C. Section 471 — General rule for inventories",
+            "url": "https://www.law.cornell.edu/uscode/text/26/471",
+            "relevance": "Provides the statutory framework for inventory accounting; merchandise acquisition and resale require a consistent cost treatment.",
         },
         {
-            "title": "New York Arts and Cultural Affairs Law §25.07 — Ticket prices",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
-            "relevance": "Provides ticket-pricing and disclosure requirements relevant to covered New York transactions; review actual listing and checkout presentations against the statutory scope.",
+            "title": "26 U.S.C. Section 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": "Payment settlement reporting must be reconciled to actual transactions; reported payment amounts do not establish operator profit.",
         },
         {
-            "title": "California Revenue and Taxation Code §6091 — Presumption of taxable retail sales and resale certificates",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6091.",
-            "relevance": "Addresses the seller's burden to establish a sale for resale and the role of qualifying resale certificates; supports inventory tax-basis documentation.",
+            "title": "26 U.S.C. Section 451 — General rule for taxable year of inclusion",
+            "url": "https://www.law.cornell.edu/uscode/text/26/451",
+            "relevance": "Income timing depends on the applicable accounting method and rules, rather than whether a pending reward appears on a dashboard.",
+        },
+        {
+            "title": "12 CFR Section 330.3 — General principles of deposit insurance coverage",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330/section-330.3",
+            "relevance": "Treasury bank maps must account for deposit aggregation, insured-bank identity, and ownership capacity when assessing insured balances.",
+        },
+        {
+            "title": "6 Del. C. Section 2-509 — Risk of loss in the absence of breach",
+            "url": "https://delcode.delaware.gov/title6/c002/sc05/index.html#2-509",
+            "relevance": "For transactions governed by Delaware law, shipping terms and delivery circumstances affect risk allocation; contracts and insurance must match the actual shipment arrangement.",
         },
     ],
 }

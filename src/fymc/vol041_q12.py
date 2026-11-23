@@ -6,728 +6,688 @@ CHAPTER_12 = {
     "chapter_number": 12,
     "question_number": 12,
     "slug": "first-30-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching buying group, card-float & ticket allocation arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching buying group, commercial card-float & rebate arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
     "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
     "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Three-Person Launch Pod for Net-3/Net-5 Buying Groups, Commercial-Card Settlement, SkyBox Reconciliation, and BOTS Act-Conforming Ticket Allocations",
+    "subtitle": "A Three-Person Pod Schedule for BuyForMeRetail Commitments, Commercial Card Settlement, Rebate Evidence, and Cash-Protected Treasury",
     "layout_template": "thirty_day_plan",
     "reading_time_minutes": 14,
     "executive_summary": (
-        "Candidate #41 ranks #09 of 42 with a 93/100 Money-to-Manpower Score. "
-        "This sprint turns its 11 mapped plays into a controlled launch for one "
-        "full-time operator and two contractors, beginning with committed buying-group "
-        "orders rather than speculative ticket inventory. Days 1–7 establish authority, "
-        "cash limits, and ledgers; Days 8–14 test fulfillment; Days 15–21 reconcile "
-        "settlements; Days 22–30 decide whether evidence supports another measured cycle. "
-        "Formula v2.0 annual owner profit remains $20,000 Conservative, $143,500 Base, "
-        "and $360,000 Scaled, not a thirty-day earnings target. Separate gross transaction "
-        "proceeds from the 35% retained spread. Quantitative Day 30/60/90 decisions depend "
-        "on cleared cash, resolved exceptions, observed contribution, and liquidity—not "
-        "credit limits, projected rebates, or unsold allocations."
+        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score. "
+        "This sprint translates 11 mapped plays into evidence-producing work for one "
+        "full-time operator and two scoped contractors. Keep wholesale fulfillment, "
+        "commercial card and portal rebates, and treasury earnings in separate ledgers; "
+        "card principal remains repayable debt. Days 1–7 establish permissions and cash "
+        "controls, Days 8–14 test fulfillment, Days 15–21 reconcile collections, and "
+        "Days 22–30 select Kill, Fix, or Scale. Canonical annual owner profits are "
+        "$20,000 Conservative, $143,500 Base, and $360,000 Scaled. Those annual cases "
+        "are reference economics, not first-month targets. Release additional exposure "
+        "only after cleared settlements, positive realized contribution, and protected "
+        "repayment reserves satisfy the Day 30/60/90 tests."
     ),
     "key_metrics": [
         {
             "label": "Conservative",
             "value": "$250,000",
-            "context": (
-                "Annual gross transaction basis; $87,500 retained revenue "
-                "at the canonical 35% retained share."
-            ),
-            "note": (
-                "8% gross-basis net margin; $20,000 annual owner net profit; "
-                "22.86% retained net margin; 1 FT + 2 C."
-            ),
+            "context": "Annual gross scorecard revenue; $87,500 retained contribution at 35%.",
+            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Base",
             "value": "$1,025,000",
-            "context": (
-                "Annual gross transaction basis; $358,750 retained revenue "
-                "at the canonical 35% retained share."
-            ),
-            "note": (
-                "14.0% gross-basis net margin; $143,500 annual owner net profit; "
-                "40.0% retained net margin; 1 FT + 2 C."
-            ),
+            "context": "Annual gross scorecard revenue; $358,750 retained contribution at 35%.",
+            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
         },
         {
             "label": "Scaled",
             "value": "$1,800,000",
-            "context": (
-                "Annual gross transaction basis; $630,000 retained revenue "
-                "at the canonical 35% retained share."
-            ),
-            "note": (
-                "20% gross-basis net margin; $360,000 annual owner net profit; "
-                "57.14% retained net margin; 2 FT + 3 C."
-            ),
+            "context": "Annual gross scorecard revenue; $630,000 retained contribution at 35%.",
+            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
         },
     ],
     "sections": [
         {
-            "heading": "1. Days 1–7 — Establish the Pod, Play Register, and Cash Boundary",
+            "heading": "1. Days 1–7: Establish Eleven Play IDs and Protect Repayment Cash",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Start Day 1 with one full-time owner responsible for credit exposure, "
-                    "counterparty acceptance, and the daily cash forecast. Assign contractor A "
-                    "to purchase-order verification, receiving evidence, shipment tracking, and "
-                    "buying-group reconciliation; assign contractor B to ticket rights, exchange "
-                    "listings, transfer evidence, and price-decay monitoring. Budget eight hours "
-                    "weekly per contractor during discovery, with written escalation rules "
-                    "instead of continuous availability. Use this chapter's working register "
-                    "to operationalize the required eleven-play count without claiming "
-                    "additional canonical play names: P1 committed wholesale sourcing; P2 "
-                    "Net-3/Net-5 counterparty routing; P3 insured merchandise fulfillment; P4 "
-                    "deal-commit and reimbursement reconciliation; P5 eligible commercial-card "
-                    "rebates; P6 statement-cycle float; P7 authorized secondary-ticket sourcing; "
-                    "P8 multi-exchange inventory synchronization; P9 pre-event markdown execution; "
-                    "P10 transferable stadium seat-license allocation brokerage; and P11 "
-                    "authorized corporate-suite allocation brokerage. Confirm the instrument "
-                    "and transfer rights before treating any seat license as inventory. All "
-                    "eleven receive a checklist and an accountable person, but only P1–P6 "
-                    "qualify for initial funded testing. P7–P11 begin as documented sourcing "
-                    "and operating rehearsals; an unverified allocation never becomes a "
-                    "purchase merely because a seller advertises scarcity."
+                    "Start with a written operating charter, not a shopping cart. Candidate #41 "
+                    "has eleven mapped plays; this chapter gives them explicit execution IDs so "
+                    "every assignment, transaction, and exception has one owner. The wholesale "
+                    "lane contains P01 counterparty qualification, P02 written deal commitments, "
+                    "P03 destination and resale documentation, P04 insured fulfillment, and P05 "
+                    "warehouse-to-ACH reconciliation. The commercial reward lane contains P06 "
+                    "business-card eligibility and statement scheduling, P07 Rakuten or "
+                    "TopCashback routing, P08 card-offer verification, and P09 Plastiq or Melio "
+                    "invoice economics. The treasury lane contains P10 unencumbered-cash T-bill "
+                    "sweeps and P11 bank-bonus qualification. These are operational labels for "
+                    "the eleven-play remit, not eleven independent profit claims. Assign the "
+                    "full-time owner treasury, purchasing authority, and exceptions; assign "
+                    "contractor A commitments, serial numbers, and shipment evidence; assign "
+                    "contractor B settlements, rewards evidence, and ledger matching. Cap each "
+                    "contractor at five hours weekly during the pilot. Neither contractor receives "
+                    "bank-transfer authority or shared card credentials. Use a restricted Google "
+                    "Sheet or Airtable register for commitments, QuickBooks for accounting, and "
+                    "a protected document folder for vendor terms. The owner signs the daily "
+                    "liability snapshot before authorizing another order. This assignment structure "
+                    "keeps purchasing decisions separate from evidence preparation without pretending "
+                    "a three-person pod has enterprise staffing."
                 ),
                 (
-                    "Set an illustrative $25,000 starting-cash envelope within the volume's "
-                    "$10,000–$55,000 range. Earmark $12,000 for procurement and matching card "
-                    "payoff obligations, $6,000 for settlement and refund reserves, $4,000 "
-                    "for untouched contingency liquidity, and $3,000 for thirty-day operating "
-                    "burn. The procurement envelope is cash backing for purchases, not an "
-                    "additional spending allowance layered onto card capacity. Limit the "
-                    "first merchandise order to $1,500 and all concurrent acquisition basis "
-                    "to $6,000 until two reimbursements clear. No single buying group may "
-                    "represent more than $3,000 of exposure or 50% of deployed basis, "
-                    "whichever is lower. Hold event-ticket basis below $1,000 per event "
-                    "and $2,000 collectively; these amounts remain inside the same procurement "
-                    "envelope. The $3,000 burn ceiling covers $1,200 of contractor work, "
-                    "$350 of software, $450 of setup and accounting, $500 of incremental "
-                    "operating charges, and $500 of exception capacity. Acquisition basis "
-                    "and transaction costs belong in deal economics, even when a cash "
-                    "forecast displays them beside operating expenditures. Commit no owner "
-                    "draw during this sprint. A business starting with $10,000 must shrink "
-                    "inventory limits rather than replicate the $25,000 deployment plan."
+                    "Set the cash envelope before requesting any limit increase. At the $10,000 "
+                    "minimum startup case, earmark $6,000 as protected repayment cash, $2,000 "
+                    "as working-capital capacity, $1,500 as operating expense capacity, and $500 "
+                    "as loss capacity. Earmarks describe cash allocation; they do not create "
+                    "additional assets. Limit aggregate unsettled merchandise commitments to "
+                    "$2,000, including card-funded purchases and cash deposits without counting "
+                    "the same purchase twice. The first-month nonrecoverable cash-burn ceiling "
+                    "is $1,500, including contractor invoices, software, shipping losses, payment "
+                    "fees, interest, and unrecovered claim costs. An illustrative allocation is "
+                    "$700 for contractors, $150 for software, $150 for routine overhead, and "
+                    "$500 for exceptions. Owner draws are zero during this test. Merchandise "
+                    "principal stays outside the expense ceiling but inside the exposure limit. "
+                    "Keep unrestricted cash at least 1.05 times all posted and authorized card "
+                    "principal, associated fees, and a $250 shipment-loss stress. Exclude pending "
+                    "ACH, disputed receivables, rewards, and available card limits from that "
+                    "numerator. At larger startup balances, preserve the same ratios rather than "
+                    "spending the $55,000 upper range automatically. If actual contractor quotes "
+                    "exceed this envelope, reduce transaction volume or use owner hours; do not "
+                    "quietly expand the authorized burn ceiling."
                 ),
                 (
-                    "On Days 2–4, assemble a counterparty pack containing the contracting "
-                    "entity, independently verified payment instructions, written acceptance "
-                    "criteria, Net-3 or Net-5 definitions, and the person authorized to "
-                    "resolve discrepancies. Check issuer terms for eligible purchases, reward "
-                    "caps, exclusions, statement dates, grace periods, and review triggers. "
-                    "The advertised 2%–4% rebate band is a sourcing criterion, not an "
-                    "assumed yield; record only the rate that the actual agreement supports. "
-                    "A nominal sixty-day float window is a maximum planning label, not a "
-                    "universal entitlement. Record the transaction date and actual due date "
-                    "for every charge. On Days 5–7, build a shared spreadsheet or SQLite "
-                    "register with immutable deal IDs linking purchase orders, invoices, "
-                    "carrier scans, card charges, exchange orders, and bank receipts. Retain "
-                    "resale-certificate evidence applicable to each merchandise route and "
-                    "ticket-tax treatment applicable to each selling jurisdiction. Federal "
-                    "16 CFR Part 464 requires covered live-event ticket offers to display "
-                    "total prices including mandatory fees, subject to the rule's permitted "
-                    "exclusions. Assign a jurisdiction-specific review before publishing. "
-                    "Separately enforce 15 U.S.C. § 45c: no queue circumvention, CAPTCHA "
-                    "bypass, or acquisition of tickets with knowledge of prohibited acquisition."
+                    "Qualify BuyForMeRetail, Pointsmaker, and MaxOutDeals independently; a familiar "
+                    "name is not evidence of today's payment performance. Record the current "
+                    "legal counterparty, warehouse address, accepted SKU, quantity, serial-number "
+                    "rules, commitment expiry, rejection procedure, and settlement trigger. A "
+                    "Net-3 or Net-5 label must specify calendar or business days and whether "
+                    "counting begins at delivery, inspection, or acceptance. Validate the DE, "
+                    "NH, or OR destination and the actual transaction's sales-tax treatment. "
+                    "Those destinations do not transform every purchase into an exempt resale. "
+                    "Where a seller requires a resale document, supply the valid state-specific "
+                    "certificate or permit and retain the invoice; Washington RCW 82.04.470 "
+                    "illustrates the wholesaler documentation requirement. Do not misstate resale "
+                    "status to overcome a retailer restriction. Obtain issuer terms for business "
+                    "purchases, reward exclusions, payment posting, and repayment timing. Business "
+                    "credit is generally outside Regulation Z under 12 CFR 1026.3(a), so do "
+                    "not assume consumer timing protections apply. Obtain carrier insurance "
+                    "terms covering the actual electronics and route. Day 7 ends with verified "
+                    "permissions, a cash snapshot, and one executable small commitment. If "
+                    "onboarding takes longer, preserve the cash and continue documentation; the "
+                    "canonical first-deal window is one to three months."
                 ),
             ],
             "table": {
-                "caption": "Week One Daily Deliverables and Ownership Across the Eleven-Play Register",
+                "caption": "Days 1–7: Accountable Setup Deliverables for the Eleven-Play Pod",
                 "headers": [
-                    "Execution day and accountable operating role",
-                    "Specific deliverable and mapped play coverage",
-                    "Evidence required before the next action",
-                    "Cash or operating boundary to enforce",
+                    "Day and accountable pod role",
+                    "Play-linked execution task",
+                    "Evidence delivered before advancing",
+                    "Exposure or spending constraint",
                 ],
                 "rows": [
                     [
-                        "Day 1 — Owner establishes the three-person operating pod",
-                        "Publish P1–P11 register with named owners and dependencies",
-                        "Owner and both contractors acknowledge written escalation responsibilities",
-                        "Authorize $3,000 operating burn without authorizing inventory purchases",
+                        "Day 1 — owner establishes the operating charter",
+                        "Assign P01–P11 across three separately measured economic lanes.",
+                        "Signed responsibility register identifies purchasing and transfer authority.",
+                        "No purchase authority exists before cash allocation is recorded.",
                     ],
                     [
-                        "Day 2 — Owner verifies buying-group identities and terms",
-                        "Complete P1 and P2 packs for two independent counterparties",
-                        "Match entity records, signed commitments, and verified bank instructions",
-                        "Reject requests to prepay an unverified receiving entity",
+                        "Day 2 — owner and reconciliation contractor map cash",
+                        "Build P06 statement calendar and complete liability register.",
+                        "Issuer terms show closing dates, due dates, and exclusions.",
+                        "Reserve coverage must exceed the defined 1.05 minimum.",
                     ],
                     [
-                        "Day 3 — Owner documents card agreements and payment dates",
-                        "Configure P5 and P6 eligibility and statement-cycle fields",
-                        "Save actual reward schedules and issuer purchase restrictions",
-                        "Do not count available credit as operating liquidity",
+                        "Day 3 — fulfillment contractor qualifies wholesale counterparties",
+                        "Compare P01 terms at BuyForMeRetail, Pointsmaker, and MaxOutDeals.",
+                        "Counterparty folders contain settlement triggers and rejection procedures.",
+                        "No counterparty receives an order without verified written terms.",
                     ],
                     [
-                        "Day 4 — Contractor A tests shipment and acceptance records",
-                        "Draft P3 shipment checklist and P4 matching rules",
-                        "Obtain carrier coverage terms and counterparty receiving requirements",
-                        "Keep first merchandise acquisition basis at $1,500 maximum",
+                        "Day 4 — owner validates destination and resale treatment",
+                        "Complete P03 checks for the actual receiving warehouse.",
+                        "Invoices and applicable certificates identify the actual purchasing entity.",
+                        "Do not purchase until transaction tax treatment is documented.",
                     ],
                     [
-                        "Day 5 — Contractor B verifies allocation and transfer rights",
-                        "Document P7 sourcing, P10 seat licenses, and P11 suites",
-                        "Save seller authority, venue restrictions, and transfer deadlines",
-                        "Keep unverified tickets and restricted allocations completely unfunded",
+                        "Day 5 — reconciliation contractor builds reward evidence",
+                        "Document P07 portal restrictions and P08 targeted offer terms.",
+                        "Saved terms identify resale exclusions, caps, and payout timing.",
+                        "Unverified rewards contribute zero to the order decision.",
                     ],
                     [
-                        "Day 6 — Contractor B rehearses exchange synchronization and markdowns",
-                        "Test P8 listing removal and P9 scheduled price reviews",
-                        "Record test timestamps without publishing nonexistent ticket inventory",
-                        "Use one exchange until inventory removal is proven",
+                        "Day 6 — owner tests invoice and treasury eligibility",
+                        "Screen P09 recipient permissions and P10–P11 cash eligibility.",
+                        "Written calculations separate invoice fees, interest, and bonus requirements.",
+                        "Protected repayment cash cannot fund treasury qualification balances.",
                     ],
                     [
-                        "Day 7 — Owner signs the reconciled baseline cash forecast",
-                        "Freeze acquisition limits and approve initial P1–P6 test",
-                        "Reconcile starting bank cash against all reserved obligations",
-                        "Maintain contingency cash and matching card payoff reserves",
+                        "Day 7 — entire pod signs the pilot packet",
+                        "Approve P02 commitment and P04 insured fulfillment instructions.",
+                        "One purchase packet links commitment, reserve check, and shipment plan.",
+                        "Aggregate unsettled commitments cannot exceed the initial $2,000 cap.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before the First Funded Order",
+                "title": "Four Pre-Flight Checks Before the First Purchase",
                 "body": (
-                    "The owner records evidence for every check. A failed check "
-                    "blocks the affected transaction, not the collection of better evidence."
+                    "The owner records all four checks against the actual order; a generic "
+                    "account-level checklist does not authorize a different SKU or destination."
                 ),
                 "items": [
-                    "Match the buying group's signed commitment, receiving entity, bank beneficiary, and SKU acceptance criteria before placing the retail order.",
-                    "Confirm issuer eligibility, actual reward rate, due date, and cash earmarked to discharge the entire purchase without another sale.",
-                    "Verify title, transferability, seller authority, and venue restrictions for each ticket, seat license, or suite right before acquiring it.",
-                    "Reconcile shipment coverage, resale documentation, displayed ticket totals, and the absence of prohibited ticket-access circumvention.",
+                    "Verify written SKU, quantity, reimbursement, expiry, receiving address, and acceptance-triggered payment terms against the purchase order.",
+                    "Confirm unrestricted cash covers 105% of all authorized and posted card principal, associated fees, and the $250 shipment-loss stress.",
+                    "Archive the actual issuer, retailer, portal, and targeted-offer terms; excluded resale purchases receive zero projected rewards.",
+                    "Confirm applicable resale documentation, carrier coverage, serial-number capture, and a named person responsible for rejection recovery.",
                 ],
             },
         },
         {
-            "heading": "2. Days 8–14 — Run Small Closed-Loop Tests Without Manufacturing Volume",
-            "epistemic_status": "operating_framework",
+            "heading": "2. Days 8–14: Run Small Tests Without Mixing the Three Economics",
+            "epistemic_status": "illustrative_model",
             "paragraphs": [
                 (
-                    "Day 8 releases one merchandise order against an accepted purchase "
-                    "order; contractor A captures the SKU, serial number when relevant, "
-                    "quantity, landed cost, reimbursement amount, and acceptance deadline. "
-                    "P1 requires a real commitment, not a group-chat indication of demand. "
-                    "P2 routes the next eligible order to the second vetted group only "
-                    "when minimum shipment economics justify diversification. P3 records "
-                    "insurance exclusions, signature requirements, packaging evidence, and "
-                    "the exact point at which the counterparty accepts delivery risk. "
-                    "Apply the written agreement rather than assuming a carrier scan "
-                    "equals payable acceptance. On Days 9–10, match retailer confirmation "
-                    "to the card charge and carrier acceptance, then schedule follow-up "
-                    "against the contract's business-day clock. For a $1,000 eligible "
-                    "purchase reimbursed at $1,045, a posted $20 rebate and $18 of "
-                    "shipping and insurance produce $47 before remaining operating costs. "
-                    "Until the rebate posts, realized deal contribution is $27, provided "
-                    "the reimbursement has cleared. Neither number supports assuming "
-                    "the portfolio's canonical 35% retained share on every wholesale "
-                    "order. Record realized mixes honestly; a thin buying-group-only "
-                    "portfolio can validate settlement operations while failing to "
-                    "support the volume's aggregate earnings model."
+                    "Execute the wholesale test only after the commitment survives a final "
+                    "price and quantity check. For illustration, a $1,000 merchandise purchase "
+                    "has a written $1,010 reimbursement, $20 of eligible card rewards, $10 "
+                    "of conditional portal rewards, and $12 of shipping. The expected "
+                    "contribution is $28 before overhead, but the conservative order case "
+                    "excludes the conditional portal amount and equals $18. Neither figure "
+                    "includes the $1,000 borrowed principal as earnings. A further $25 "
+                    "unrecovered return cost makes the conservative result negative $7. Record "
+                    "this downside before dispatch, not after an exception appears. Use one "
+                    "eligible portal per transaction rather than assuming two portals can both "
+                    "attribute the same checkout. Record each reward once in its own lane, "
+                    "then link it to the merchandise lot for combined profitability analysis. "
+                    "The lot view must eliminate that linkage on consolidation to prevent "
+                    "duplicate revenue. A claimed uncapped 2%–4% stack is a hypothesis until "
+                    "the particular card, merchant, category, and portal terms support it. "
+                    "Keep screenshots and timestamps, but recognize that screenshots cannot "
+                    "override exclusions. This pilot's thin merchandise spread is not the "
+                    "scorecard's 35% retained-share assumption; it is a transaction-level test "
+                    "that may reject the candidate's economics."
                 ),
                 (
-                    "Days 11–12 develop ticket evidence without racing to deploy capital. "
-                    "For P7, obtain a legitimate acquisition trail and confirm that "
-                    "the intended exchange accepts the inventory and seller account. "
-                    "For P8, select SkyBox or Automatiq only after checking current "
-                    "access requirements, supported exchanges, subscription charges, and "
-                    "inventory controls. Do not buy both systems merely to resemble "
-                    "a mature desk. Begin with one exchange and a manual inventory "
-                    "lock if automated synchronization cannot be tested economically. "
-                    "Measure time between a sale notification and removal from every "
-                    "other active listing; a successful sandbox rehearsal does not "
-                    "establish live reliability. P9 assigns reviews at fourteen, seven, "
-                    "three, and one days before an event, with more frequent checks "
-                    "inside seventy-two hours. P10 and P11 remain brokerage-first: "
-                    "obtain seller authority, venue permission where required, recipient "
-                    "eligibility, and written fee terms before making offers. Stadium "
-                    "seat licenses can carry renewal obligations and transfer fees "
-                    "separate from ticket rights. Corporate suites can prohibit splitting "
-                    "or onward distribution. Neither product should enter the card-float "
-                    "ledger until its actual obligations and permitted settlement path "
-                    "are understood and documented."
+                    "Test the invoice-payment model separately, initially on paper. For a "
+                    "permitted $10,000 business invoice, an illustrative 2.9% processing fee "
+                    "costs $290 while a 2% reward on the invoice principal earns $200. "
+                    "The immediate spread is negative $90 before other costs. At an assumed "
+                    "4% simple annual yield, thirty days of interest on $10,000 equals "
+                    "$32.88, leaving negative $57.12 before tax and any transfer friction. "
+                    "These are demonstration inputs, not current Plastiq or Melio quotes. "
+                    "Check the live fee, funding-card network, permitted recipient category, "
+                    "delivery timing, and issuer reward treatment for each proposed payment. "
+                    "Do not send a payment to yourself, recycle consumer credit, manufacture "
+                    "an invoice, or treat a credit limit as earned capital. A valid vendor "
+                    "invoice and permitted funding route are prerequisites. The launch pod "
+                    "should reject this example instead of attempting to repair it with an "
+                    "unearned bonus. A $10,000 demonstration also exceeds the pilot exposure "
+                    "cap and therefore cannot become a live test without a separately "
+                    "authorized budget change. Capture the rejected calculation as useful "
+                    "output: screening out negative unit economics is a successful launch "
+                    "task, not a reason to force transaction volume."
                 ),
                 (
-                    "Days 13–14 close the first operating loop rather than opening "
-                    "ten new positions. Contractor A produces an exception list grouped "
-                    "by missing acceptance, short payment, disputed quantity, and overdue "
-                    "ACH. Contractor B produces a transfer-readiness list grouped by "
-                    "delivery delay, listing conflict, restricted rights, and event-date "
-                    "exposure. The owner reconciles bank receipts to receivables and "
-                    "posted rewards to the card statement, then checks reserves without "
-                    "counting inventory at asking prices. Require cleared reimbursement "
-                    "for the first order before repeating with that counterparty; "
-                    "require two cleared reimbursements before lifting the initial "
-                    "aggregate basis ceiling. Contractual Net-3 and Net-5 clocks start "
-                    "where the agreement says they start, often acceptance rather "
-                    "than dispatch. A payment exceeding the written due date by "
-                    "three business days freezes new orders to that group and "
-                    "creates a documented collection task. One group paying slowly "
-                    "must not be subsidized by fresh exposure to another. Keep "
-                    "weekly contractor utilization below 80% of assigned capacity "
-                    "so exceptions have working room. If evidence collection consumes "
-                    "the whole pod, reduce transaction count before adding tools "
-                    "or accepting a larger allocation."
+                    "Keep treasury testing independent of both reimbursement and card rewards. "
+                    "P10 measures interest earned on genuinely surplus cash; P11 measures a "
+                    "bank bonus only after its balance, transaction, eligibility, and retention "
+                    "conditions are satisfied. At a hypothetical 4% simple annual yield, "
+                    "$5,000 held for thirty days earns $16.44 before tax. That does not "
+                    "support an expensive bank-account chase. Treasury bills purchased at a "
+                    "discount require their actual price and maturity proceeds in the ledger; "
+                    "the simple-yield example is only a screening approximation. Do not "
+                    "assume every purchase receives fifty-five days of statement float. "
+                    "Calculate the actual days from authorization and expected posting to "
+                    "the specific due date, and schedule repayment five business days early. "
+                    "The minimum-capital pilot may have no surplus eligible for a sweep; "
+                    "a documented zero allocation is the correct deliverable. Prefer instruments "
+                    "maturing before the repayment buffer starts, without relying on secondary "
+                    "market liquidation or a new transfer limit. Bank-deposit insurance and "
+                    "Treasury securities have different protections; aggregate covered business "
+                    "deposits by ownership category under 12 CFR 330.11. Record interest "
+                    "under IRC section 61 and document bonus tax treatment separately. "
+                    "Borrowed principal remains a liability throughout the holding period."
                 ),
             ],
             "table": {
-                "caption": "Week Two Daily Transaction Tests, Measured Evidence, and Stop Conditions",
+                "caption": "Days 8–14: Controlled Experiments With Separate Wholesale, Reward, and Treasury Books",
                 "headers": [
-                    "Execution day and accountable operating role",
-                    "Transaction test and mapped play coverage",
-                    "Evidence demonstrating an actual completed control",
-                    "Stop condition requiring immediate corrective action",
+                    "Day and accountable pod role",
+                    "Specific experiment or control",
+                    "Required accounting or evidence artifact",
+                    "Decision rule for continuing work",
                 ],
                 "rows": [
                     [
-                        "Day 8 — Owner releases the first committed merchandise purchase",
-                        "Test P1 sourcing against a written SKU-level commitment",
-                        "Link retailer invoice, purchase order, and card transaction identifier",
-                        "Stop when reimbursement terms differ from the accepted commitment",
+                        "Day 8 — owner releases the first small order",
+                        "Execute P02 only against an unexpired written commitment.",
+                        "Purchase record links actual cost to the committed reimbursement.",
+                        "Reject any order requiring speculative resale to recover principal.",
                     ],
                     [
-                        "Day 9 — Contractor A dispatches the insured merchandise shipment",
-                        "Test P3 packaging, carrier custody, and signature requirements",
-                        "Save serial photographs, coverage confirmation, and carrier acceptance scan",
-                        "Stop when declared value exceeds applicable shipment coverage",
+                        "Day 9 — fulfillment contractor captures dispatch evidence",
+                        "Run P04 serial capture, package photography, and insured shipping.",
+                        "Tracking register contains declared value and carrier coverage evidence.",
+                        "Uninsured exposure cannot exceed the preauthorized shipment-loss reserve.",
                     ],
                     [
-                        "Day 10 — Contractor A activates acceptance and collection tracking",
-                        "Test P2 settlement timing and P4 receivable matching",
-                        "Record contractual acceptance timestamp and calculated business-day due date",
-                        "Freeze affected orders after three business days overdue",
+                        "Day 10 — reconciliation contractor validates reward attribution",
+                        "Compare P07 tracking with P08 separately eligible card offers.",
+                        "Reward register separates tracked amounts from payable amounts.",
+                        "Conditional portal balances remain outside spendable cash and reserves.",
                     ],
                     [
-                        "Day 11 — Contractor B validates one ticket sourcing opportunity",
-                        "Test P7 title and P10 seat-license transfer obligations",
-                        "Save permitted transfer method and verified seller authority",
-                        "Stop when rights depend on undocumented venue exceptions",
+                        "Day 11 — owner evaluates business invoice economics",
+                        "Calculate P09 fees against eligible rewards and incremental yield.",
+                        "Screening sheet retains current provider restrictions and fee quotations.",
+                        "Negative contribution means reject the route without sending funds.",
                     ],
                     [
-                        "Day 12 — Contractor B rehearses listings and suite documentation",
-                        "Test P8 inventory locks, P9 markdowns, and P11 authority",
-                        "Capture synchronization timestamps and written suite distribution restrictions",
-                        "Use one exchange when multi-exchange removal remains unproven",
+                        "Day 12 — owner checks genuinely surplus treasury cash",
+                        "Calculate P10 maturity dates and P11 bonus qualification costs.",
+                        "Treasury schedule excludes all cash protecting card repayment obligations.",
+                        "No surplus after reserve tests means no treasury placement.",
                     ],
                     [
-                        "Day 13 — Contractors reconcile fulfillment and transfer exception queues",
-                        "Combine P3, P4, P7, and P8 exception evidence",
-                        "Produce named resolution owners with dated follow-up commitments",
-                        "Reduce new orders when contractor capacity exceeds eighty percent",
+                        "Day 13 — fulfillment contractor verifies warehouse acceptance",
+                        "Match P05 delivery, accepted quantity, and rejection notifications.",
+                        "Warehouse acknowledgment identifies accepted serials and payment clock start.",
+                        "Delivery alone never substitutes for the contractual acceptance trigger.",
                     ],
                     [
-                        "Day 14 — Owner reviews the first complete settlement loop",
-                        "Match P4 reimbursement with P5 rewards and P6 obligations",
-                        "Confirm cleared bank funds rather than payment screenshots",
-                        "Keep initial limits until two reimbursements actually clear",
+                        "Day 14 — owner signs the first experiment review",
+                        "Compare lane-specific expected contribution with actual observed costs.",
+                        "Review packet lists rejected routes and unresolved settlement dependencies.",
+                        "Open the next lot only within unchanged reserve constraints.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Four Tactics That Preserve Spread Under Real Settlement Friction",
+                "title": "Veteran Tactics That Protect Thin Spreads",
                 "body": (
-                    "The durable edge is disciplined execution of ordinary transactions, "
-                    "not larger credit lines or optimistic inventory marks."
+                    "Preserve evidence at the transaction boundary and price friction before "
+                    "it arrives; small percentage spreads cannot absorb casual exception handling."
                 ),
                 "items": [
-                    "Ask each buying group which receiving exceptions suspend its payment clock, then photograph the exact SKU and packaging details needed to defeat those exceptions.",
-                    "Place the first order just after a statement closes only when the issuer confirms the cycle mechanics; keep payoff cash reserved regardless of the apparent float window.",
-                    "Reconcile rewards by transaction identifier and retain a clawback field; a reward estimate must never finance the next order or conceal a negative merchandise spread.",
-                    "Before cross-listing tickets, test removal behavior during a delayed exchange acknowledgment; retain a single-market fallback and the ability to lock the inventory immediately.",
+                    "Save the commitment before checkout, then attach the retailer invoice and warehouse acceptance to the same immutable lot identifier.",
+                    "Treat portal tracking as a receivable candidate, not available cash; use a dedicated browser profile only where the program permits the purchase.",
+                    "Photograph serial labels, internal packaging, sealed carton, and carrier receipt; verify electronics coverage and claim deadlines before tender.",
+                    "Place the card due date beside the contractual ACH trigger, then test a thirty-day payout delay before increasing that counterparty's allocation.",
                 ],
             },
         },
         {
-            "heading": "3. Days 15–21 — Reconcile Realized Economics and Rehearse Failure",
-            "epistemic_status": "illustrative_model",
+            "heading": "3. Days 15–21: Reconcile Cleared Cash and Stress the Repayment Calendar",
+            "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Day 15 produces two reports: a cash bridge and an "
-                    "economic bridge. The cash bridge explains bank movement, card "
-                    "liabilities, refunds, and restricted reserves. The economic bridge "
-                    "starts with gross buying-group reimbursements, resale proceeds, and "
-                    "eligible rebate yields, then separates merchandise and face-value "
-                    "ticket basis from retained spread. Formula v2.0 uses a 35% "
-                    "retained share: Conservative gross transaction basis of $250,000 "
-                    "becomes $87,500 retained revenue; Base $1,025,000 becomes $358,750; "
-                    "Scaled $1,800,000 becomes $630,000. Corresponding owner profits "
-                    "are $20,000, $143,500, and $360,000. Therefore retained-margin "
-                    "percentages are 22.86%, 40.0%, and 57.14%, while gross-basis "
-                    "margins remain 8%, 14.0%, and 20%. Residual annual costs "
-                    "after acquisition basis are $67,500, $215,250, and $270,000 "
-                    "respectively. These residuals include applicable operating and "
-                    "transaction costs; they are not interchangeable with the stated "
-                    "$1,500–$9,000 monthly operating-overhead range. Preserve these "
-                    "canonical scenarios without forcing actual trades to resemble "
-                    "them. The supplied ASC 606 net-contribution convention is a "
-                    "planning presentation; contract-specific principal-versus-agent "
-                    "analysis determines actual accounting presentation. Underlying "
-                    "merchant sales, venue sales, card limits, and borrowed principal "
-                    "are not additional operator revenue. Keep the gross-volume "
-                    "dashboard distinct from the recognized-revenue ledger and owner-profit report."
+                    "The third week is a collections exercise, not a sourcing contest. "
+                    "Reconcile four independent events for each lot: retailer charge, carrier "
+                    "delivery, warehouse acceptance, and cleared ACH. Match the reimbursement "
+                    "to accepted units and the written price rather than assuming the bank "
+                    "deposit proves full payment. Record shortages as disputes with an owner, "
+                    "amount, evidence link, and next contact date. A payout notification is "
+                    "not cleared cash; use the bank's available-balance status and retain "
+                    "awareness that an ACH credit can still be reversed in applicable "
+                    "circumstances. Measure settlement punctuality against the contractual due "
+                    "date, not a universal three-day assumption. For example, a five-business-day "
+                    "term beginning at acceptance must account for weekends and bank holidays. "
+                    "Freeze fresh commitments with a counterparty once its payment is five "
+                    "business days late, even when another counterparty continues paying. "
+                    "Contractor B prepares the match report; contractor A resolves quantity "
+                    "and acceptance discrepancies; the owner decides cash movement. Track open "
+                    "exposure by counterparty, issuer, warehouse, and carrier. This reveals "
+                    "correlated failure that a single total-profit cell hides. Keep the initial "
+                    "concentration unavoidable only while exposure is tiny; later expansion "
+                    "requires actual settlement history from multiple counterparties, not "
+                    "multiple untested account registrations."
                 ),
                 (
-                    "Days 16–18 calculate a settled-cohort dashboard using original "
-                    "acquisition IDs, not exchange payout batches. One buying-group "
-                    "purchase order is one deal; one ticket order is one deal "
-                    "even when several seats transfer together. A closed deal has "
-                    "cleared proceeds, recorded direct costs, completed delivery, and "
-                    "an explicit allowance for any remaining refund or dispute "
-                    "exposure. Track cleared-on-time percentage using only deals "
-                    "whose contractual payment dates have arrived. Track oldest "
-                    "overdue receivable in business days and maximum unresolved "
-                    "cash mismatch in dollars. Define liquid coverage as unrestricted "
-                    "bank cash divided by card payments, refunds, taxes, and other "
-                    "unavoidable cash obligations falling due within fourteen days. "
-                    "Exclude undrawn credit, expected ACH, unposted rebates, and "
-                    "ticket asking prices from the numerator. Require at least "
-                    "1.25 times coverage before any exposure increase. Define cohort "
-                    "contribution after acquisition basis, exchange charges, shipping, "
-                    "insurance, processing, interest, and explicit loss allowances, "
-                    "but before fixed operating overhead. Require positive contribution "
-                    "before counting a cohort as commercially validated. Log both "
-                    "dollars and percentages; a small positive percentage cannot "
-                    "pay a large fixed workload. Owner profit remains a separate "
-                    "measure after the full operating-cost allocation."
+                    "Run the repayment stress in a dated cash calendar every morning. Move "
+                    "every pending buying-group ACH thirty calendar days later, remove all "
+                    "unpaid rewards, charge the applicable processor fees, and add the $250 "
+                    "shipment-loss event. Preserve every card due date and the five-business-day "
+                    "repayment buffer. The test passes only if unrestricted cash remains "
+                    "nonnegative on every date and reserve coverage stays at least 1.05. "
+                    "Existing Treasury holdings count only when proceeds will be available "
+                    "before the relevant payment deadline; projected liquidation proceeds do "
+                    "not repair a cash shortfall. Record statement closing dates because "
+                    "posting immediately before a close can sharply shorten the practical "
+                    "repayment interval. Do not make repeated repayments to push purchase "
+                    "volume beyond approved limits; operate within issuer terms and stop "
+                    "when an issuer requests documentation or restricts the account. Preserve "
+                    "invoices and business-purpose evidence for a financial review. An issuer "
+                    "shutdown is a liquidity event even if all underlying lots are profitable. "
+                    "Maintain a bank-funded repayment method that does not require obtaining "
+                    "another card. The owner's daily signature confirms the cash calculation, "
+                    "not optimism about tomorrow's reimbursement. Failed stress means halt new "
+                    "commitments and collect existing receivables before any further sourcing."
                 ),
                 (
-                    "Days 19–21 rehearse three failures while positions remain small. "
-                    "First, delay every open buying-group reimbursement by ten "
-                    "business days in the forecast; card balances must still be "
-                    "payable on time from cash already available. Second, assume "
-                    "an issuer suspends new purchases and removes all unposted "
-                    "rewards; stop acquisitions without losing the ability to "
-                    "deliver existing commitments. Third, reduce executable ticket "
-                    "proceeds by 25%, deduct selling fees, and compare the result "
-                    "with recorded basis and the cash reserve. Use executable "
-                    "bids or conservative comparable transactions rather than "
-                    "unsold listings. For the pilot, a 10% projected loss on "
-                    "an event's basis triggers immediate owner review and a "
-                    "documented liquidation decision; 15% is the maximum authorized "
-                    "planned loss, not a promise that market gaps cannot exceed "
-                    "it. At seven days, remove unsupported premium pricing; at "
-                    "three days, prioritize executable exits; inside twenty-four "
-                    "hours, prohibit averaging down. Disable P7 expansion after "
-                    "a failed delivery or unresolved duplicate sale. P10 and P11 "
-                    "stay unfunded unless the rights pack and settlement rehearsal "
-                    "both pass. The objective is a survivable settlement chain, "
-                    "not a visually impressive inventory dashboard."
+                    "Reconcile the pilot dashboard to Formula v2.0 without forcing observed "
+                    "transactions to match a favorable annual assumption. The canonical gross "
+                    "revenue cases are $250,000, $1,025,000, and $1,800,000. Applying the "
+                    "specified 35% retained share gives $87,500, $358,750, and $630,000. "
+                    "Subtracting owner profits of $20,000, $143,500, and $360,000 leaves "
+                    "$67,500, $215,250, and $270,000 of other modeled costs. These imply "
+                    "retained margins of 22.86%, 40.0%, and 57.14%, respectively. Those "
+                    "cost residuals are not monthly overhead quotations: they may include "
+                    "variable operating costs beyond the stated $1,500–$9,000 monthly "
+                    "opex range. Keep the scorecard's retained-contribution bridge separate "
+                    "from the entity's actual ASC 606 principal-versus-agent presentation; "
+                    "a fixed percentage alone cannot determine accounting treatment. Underlying "
+                    "merchant sales and invoice principal are never additional operator "
+                    "revenue. Inventory costing under IRC section 471 and purchase-related "
+                    "price adjustments require consistent records; distinguish them from bank "
+                    "interest and service income. Reconcile any Form 1099-K under IRC "
+                    "section 6050W to transaction records rather than equating reported gross "
+                    "payments with profit. The Day 21 deliverable is a reproducible bridge "
+                    "from bank movement to lane contribution and consolidated owner result."
                 ),
             ],
             "table": {
-                "caption": "Week Three Daily Reconciliation, Scenario Integrity, and Stress-Test Evidence",
+                "caption": "Days 15–21: Settlement Controls, Stress Evidence, and the Scorecard Bridge",
                 "headers": [
-                    "Execution day and accountable operating role",
-                    "Required analytical output or failure rehearsal",
-                    "Numerical test and concrete measurement basis",
-                    "Required operating response to the result",
+                    "Day and accountable pod role",
+                    "Reconciliation or stress assignment",
+                    "Specific deliverable retained by the owner",
+                    "Exception handling and quantitative boundary",
                 ],
                 "rows": [
                     [
-                        "Day 15 — Owner prepares gross-to-retained economic and cash bridges",
-                        "Separate gross proceeds, acquisition basis, retained spread, and costs",
-                        "Preserve canonical retained revenues of $87,500, $358,750, and $630,000",
-                        "Never substitute gross transaction volume for recognized operator revenue",
+                        "Day 15 — reconciliation contractor matches bank receipts",
+                        "Join P05 ACH credits to accepted lots and quantities.",
+                        "Matched receipt report identifies every remaining reimbursement difference.",
+                        "Unmatched receipts remain outside completed-lot performance statistics.",
                     ],
                     [
-                        "Day 16 — Contractor A audits mature buying-group payment cohorts",
-                        "Measure P2 payment punctuality and P4 unmatched cash",
-                        "Use contractual maturity dates and independently cleared bank receipts",
-                        "Freeze counterparties exceeding three business days past due",
+                        "Day 16 — fulfillment contractor resolves receiving disputes",
+                        "Compare serials, packing evidence, and warehouse acceptance messages.",
+                        "Exception log assigns an amount and next action date.",
+                        "Five-business-day overdue payments freeze that counterparty's new orders.",
                     ],
                     [
-                        "Day 17 — Owner calculates fourteen-day liquid obligation coverage",
-                        "Connect P5 posted rewards and P6 actual payment obligations",
-                        "Require unrestricted cash coverage of at least 1.25 times",
-                        "Reject exposure increases funded by projected incoming reimbursements",
+                        "Day 17 — owner runs the delayed-payment stress",
+                        "Shift pending ACH thirty days and remove unpaid rewards.",
+                        "Daily cash calendar retains unchanged card repayment deadlines.",
+                        "Any negative cash date stops new commitments immediately.",
                     ],
                     [
-                        "Day 18 — Contractor B audits ticket contribution and inventory age",
-                        "Deduct fees and loss allowances from P7–P11 realized proceeds",
-                        "Measure each ticket order separately from exchange payout batches",
-                        "Keep negative contribution cohorts outside the expansion population",
+                        "Day 18 — owner audits issuer concentration and permissions",
+                        "Review P06 limits, repayment mechanics, and outstanding documentation requests.",
+                        "Issuer register records restrictions and bank-funded repayment alternatives.",
+                        "Restricted accounts receive no further purchasing or payment attempts.",
                     ],
                     [
-                        "Day 19 — Owner rehearses delayed reimbursements and issuer suspension",
-                        "Delay open receipts ten business days and remove rewards",
-                        "Verify every committed card payment remains payable from cash",
-                        "Cut acquisitions when stressed cash cannot meet existing obligations",
+                        "Day 19 — reconciliation contractor closes reward evidence",
+                        "Classify P07–P08 rewards as conditional, payable, or received.",
+                        "Separate reward ledger prevents duplicate merchandise contribution entries.",
+                        "Only cleared rewards enter the realized decision numerator.",
                     ],
                     [
-                        "Day 20 — Contractor B rehearses event-price decay and failed delivery",
-                        "Stress executable ticket proceeds downward by twenty-five percent",
-                        "Escalate ten-percent projected loss and fifteen-percent planned loss limits",
-                        "Execute documented exits without treating stop levels as certain fills",
+                        "Day 20 — reconciliation contractor builds the accounting bridge",
+                        "Separate wholesale receipts, price adjustments, interest, and service income.",
+                        "Working paper reconciles bank totals and applicable reporting forms.",
+                        "Every variance needs transaction evidence before the ledger closes.",
                     ],
                     [
-                        "Day 21 — Entire pod signs the settled-cohort evidence pack",
-                        "Combine contribution, payment timing, capacity, and unresolved exception reports",
-                        "Require positive cohort contribution and zero unexplained cash differences",
-                        "Carry unresolved cohorts into Fix rather than expansion decisions",
+                        "Day 21 — owner approves the weekly performance packet",
+                        "Compare actual lane results with the canonical retained-share bridge.",
+                        "Signed packet includes exposure aging, cash stress, and burn.",
+                        "Keep pilot throughput unchanged until the decision sample matures.",
                     ],
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Lock the source transaction population",
-                    "action": "Export card, bank, buying-group, and exchange records into one dated reconciliation batch.",
-                    "detail": (
-                        "Assign each record to an existing acquisition ID; preserve "
-                        "original source files and isolate duplicate or unmatched entries."
-                    ),
+                    "title": "Extract the complete obligation set",
+                    "action": "Export authorized and posted card charges, bank balances, fees, and accepted wholesale lots.",
+                    "detail": "Contractor B timestamps the extract; the owner adds pending authorizations missing from posted statements.",
                 },
                 {
                     "step": 2,
-                    "title": "Match delivery and cleared settlement",
-                    "action": "Connect accepted merchandise or completed ticket transfers to cleared proceeds and direct costs.",
-                    "detail": (
-                        "Do not close deals using remittance notices alone; record "
-                        "short payments and remaining refund exposure explicitly."
-                    ),
+                    "title": "Match evidence before recognizing completion",
+                    "action": "Join purchase, serial, acceptance, reimbursement, and bank-clearance records by lot identifier.",
+                    "detail": "A completed lot requires accepted delivery, matched cleared reimbursement, and a recorded reserve for unresolved return exposure.",
                 },
                 {
                     "step": 3,
-                    "title": "Calculate contribution and available liquidity",
-                    "action": "Separate cohort contribution, operating overhead, reserved obligations, and unrestricted bank cash.",
-                    "detail": (
-                        "Exclude expected rewards and resale asking prices from "
-                        "cash coverage; identify every obligation due within fourteen days."
-                    ),
+                    "title": "Recalculate reserves under delayed collections",
+                    "action": "Delay all pending wholesale ACH thirty days, exclude unpaid rewards, and include fees plus the shipment-loss stress.",
+                    "detail": "Test every payment date; use the larger actual expected shipment loss when it exceeds the $250 minimum stress.",
                 },
                 {
                     "step": 4,
-                    "title": "Authorize the next bounded operating cycle",
-                    "action": "Apply Kill, Fix, or Scale thresholds and publish the owner-approved exposure limit.",
-                    "detail": (
-                        "Retain the evidence pack, decision date, responsible person, "
-                        "and corrective deadline; never silently override a failed threshold."
-                    ),
+                    "title": "Authorize only the next bounded commitment",
+                    "action": "The owner signs reserve coverage, remaining burn capacity, and counterparty exposure before purchasing.",
+                    "detail": "A failed test blocks new purchases while collections, documented returns, claims, and scheduled card repayment continue.",
                 },
             ],
         },
         {
-            "heading": "4. Days 22–30 and Reviews at Days 60/90 — Kill Loss Engines, Fix Friction, Scale Evidence",
+            "heading": "4. Days 22–30 and Beyond: Apply Ordered Kill, Fix, or Scale Decisions",
             "epistemic_status": "operating_framework",
             "paragraphs": [
                 (
-                    "Days 22–24 convert exceptions into dated corrections: obtain "
-                    "missing acceptance evidence, resolve short payments, repair "
-                    "inventory locks, and replace unsupported reward assumptions. "
-                    "Days 25–27 repeat only the smallest transaction needed to "
-                    "test each correction. Do not accelerate turnover merely "
-                    "to reach a sample threshold. Days 28–29 freeze the "
-                    "decision dataset and verify bank cash, open liabilities, "
-                    "contractor hours, and event exposures. Day 30 classifies "
-                    "each play and the overall pod separately. Kill means "
-                    "stop new commitments and execute a controlled wind-down; "
-                    "existing deliveries, refunds, and collections still require "
-                    "completion. Fix means hold or reduce limits while a "
-                    "named owner resolves a measurable defect. Scale means "
-                    "increase the validated lane's concurrent acquisition-basis "
-                    "limit by at most 25%, subject to available cash "
-                    "and all existing reserves. Brokerage fees without inventory "
-                    "exposure receive a workload limit rather than a fabricated "
-                    "inventory allocation. Because first-deal timing is normally "
-                    "one to three months, no settled trades at Day 30 "
-                    "is insufficient evidence, not proof of failure. Continue "
-                    "discovery only with bounded spend and a dated path "
-                    "to a real contract; do not call readiness revenue."
+                    "Spend the final nine days turning transaction history into an auditable "
+                    "decision, not a presentation built from projected rewards. Define realized "
+                    "contribution as cleared wholesale spread plus received eligible rewards "
+                    "and earned, settled treasury income, less merchandise cost, shipping, "
+                    "processor fees, interest, realized losses, and reserves for unresolved "
+                    "claims. When wholesale spread is already net of merchandise cost, do "
+                    "not subtract that cost again. Report each lane separately before "
+                    "consolidation. Define contribution yield as realized contribution divided "
+                    "by merchandise purchase principal plus external invoice principal, with "
+                    "each funded transaction counted once. Treasury-only performance uses "
+                    "average eligible cash and actual holding days instead; it cannot inflate "
+                    "the purchase-lane yield. Report owner result after contractor and overhead "
+                    "costs, and report contribution per owner hour separately. Completed-lot "
+                    "samples concern wholesale lots only; genuine invoice transactions and "
+                    "treasury placements have their own evidence counts. A count of five "
+                    "lots does not mean five products within one unresolved shipment. Use "
+                    "trailing thirty-day observations for Day 60 and Day 90 profitability "
+                    "tests and cumulative counts for settled lots. Keep rejected proposals "
+                    "in the funnel log, but never include them in revenue, completed "
+                    "volume, or settlement success statistics."
                 ),
                 (
-                    "Apply universal Kill conditions before considering any "
-                    "Scale row: prohibited ticket-access methods, fabricated "
-                    "inventory, an inability to meet a committed payment, "
-                    "unapproved burn above $3,000 during the first thirty "
-                    "days, or realized trading losses above $1,250 during "
-                    "that period. Trading losses exclude the separately "
-                    "budgeted operating burn. A suspected rights violation "
-                    "immediately suspends the affected lane pending verification; "
-                    "confirmed prohibited conduct ends that lane. Coverage "
-                    "below 1.00 times is Kill for new commitments even "
-                    "if expected collections appear sufficient. Coverage from "
-                    "1.00 to below 1.25, any unexplained cash difference, "
-                    "or insufficient sample size is Fix. Define a "
-                    "cycle as acquisition through cleared settlement, and "
-                    "define a matured deal as one whose contractual "
-                    "proceeds are due by the review date. For Scale, "
-                    "require zero overdue amounts beyond three business "
-                    "days, zero unresolved delivery failures, and no "
-                    "counterparty above 35% of open acquisition exposure "
-                    "after the initial two-reimbursement probation. The "
-                    "decision matrix adds progressively stronger samples, "
-                    "punctuality, and owner-profit tests. These are proposed "
-                    "pilot controls, not historical performance claims or "
-                    "substitutes for the scorecard's canonical annual scenarios."
+                    "Apply decisions in strict order: Kill first, Scale second, and Fix "
+                    "otherwise. Kill means stop new exposure in the affected lane, preserve "
+                    "evidence, collect receivables, complete documented recoveries, and repay "
+                    "cards; it does not mean abandoning obligations. A shared liquidity "
+                    "failure stops all purchasing lanes. Kill immediately for reserve coverage "
+                    "below 1.05, a projected missed repayment, prohibited transaction mechanics, "
+                    "an issuer prohibition, or cumulative nonrecoverable burn above $1,500 "
+                    "at Day 30, $3,000 at Day 60, or $4,500 at Day 90. These "
+                    "ceilings require renewed owner authorization for each subsequent month, "
+                    "rather than automatic spending permission. After at least ten completed "
+                    "lots, negative realized purchase-lane contribution also kills that "
+                    "route. Day 30 Scale requires five completed lots, at least 1.5% "
+                    "contribution yield, at least 95% on-time settlements, and no unresolved "
+                    "repayment or claim exception. With five observations, the punctuality "
+                    "test effectively requires all five to be on time. Scale means "
+                    "increase the unsettled exposure cap by at most 25%, not annualize "
+                    "one promising week. With zero completed deals but sound controls, "
+                    "choose Fix and keep the original exposure ceiling; the one-to-three-month "
+                    "first-deal window makes incomplete Day 30 evidence plausible."
                 ),
                 (
-                    "At Day 60, review cumulative settled evidence and "
-                    "the trailing thirty-day cost base; at Day 90, "
-                    "require two consecutive thirty-day periods with positive "
-                    "owner profit after all booked operating costs. The "
-                    "Base annual case implies approximately $85,416.67 gross "
-                    "transaction volume, $29,895.83 retained revenue, and "
-                    "$11,958.33 owner profit per average month. Those "
-                    "are scenario translations, not mandatory launch quotas. "
-                    "If observed retained share is 8% rather than "
-                    "35%, rebuild the forward operating forecast from "
-                    "8% while leaving the canonical comparison intact. "
-                    "Do not make the forecast work by counting "
-                    "client purchase value twice or ignoring contractor "
-                    "costs. Maintain one full-time owner plus two "
-                    "contractors throughout the pilot; expansion requires "
-                    "at least 20% spare assigned capacity and documented "
-                    "backup coverage for settlements and event-day failures. "
-                    "The Scaled scenario's $360,000 annual profit belongs "
-                    "to two full-time staff plus three contractors, "
-                    "not this three-person pod. After Day 30, approve "
-                    "a fresh operating budget before incurring another "
-                    "month's costs. Where a lane fails twice after "
-                    "documented repairs, close it and retain the "
-                    "profitable lanes rather than preserving eleven "
-                    "funded plays for appearance."
+                    "Day 60 Scale requires fifteen cumulative completed lots across at least "
+                    "two paying counterparties, trailing contribution yield of at least 2%, "
+                    "at least 95% on-time settlements, nonnegative trailing owner result, "
+                    "and at least $40 contribution per owner hour. No counterparty may "
+                    "hold more than 60% of unsettled wholesale exposure. Day 90 raises "
+                    "the sample to thirty completed lots, punctuality to 98%, and contribution "
+                    "per owner hour to $60; require at least $1,500 trailing owner result "
+                    "and maintain the other Day 60 tests. Neither threshold claims the "
+                    "Base annual case is proven. Continue with one full-time owner and "
+                    "two contractors, each limited to five weekly pilot hours, unless "
+                    "observed workload and cash earnings support a deliberate staffing "
+                    "change. The Scaled canonical case uses two full-time people and three "
+                    "contractors, not the launch pod disguised as five available workers. "
+                    "Fix decisions receive a fourteen-day repair plan with one measurable "
+                    "cause, such as delayed acceptance matching or excessive shipping "
+                    "cost. Maintain or reduce exposure during repair. If the same economic "
+                    "defect survives two repair cycles and the lane still produces negative "
+                    "realized contribution, retire that route. Increase only the lane that "
+                    "passes; a treasury bonus cannot rescue loss-making wholesale fulfillment."
                 ),
             ],
             "table": {
-                "caption": "Final-Week Daily Deliverables and Quantitative Day 30/60/90 Decisions",
+                "caption": "Days 22–30 Deliverables and Ordered Day 30/60/90 Kill, Fix, or Scale Tests",
                 "headers": [
-                    "Execution day or scheduled decision horizon",
-                    "Required deliverable or measured evidence population",
-                    "Pass threshold permitting bounded next-cycle expansion",
-                    "Kill or Fix response when evidence fails",
+                    "Execution period or ordered decision",
+                    "Quantitative test or daily assignment",
+                    "Required evidence and lane interpretation",
+                    "Owner action and exposure consequence",
                 ],
                 "rows": [
                     [
-                        "Day 22 — Contractor A closes merchandise acceptance exceptions",
-                        "Obtain written acceptance for every shipment marked delivered",
-                        "Match each accepted shipment to its contractual receivable",
-                        "Fix unresolved acceptance before repeating that counterparty order",
+                        "Days 22–24 — owner and contractors close the evidence gaps",
+                        "Day 22 audit lot matches; Day 23 confirm cash; Day 24 price exceptions.",
+                        "Retain matched statements, settled reward receipts, and priced claim reserves.",
+                        "Freeze affected counterparties while unresolved amounts remain outside reserves.",
                     ],
                     [
-                        "Day 23 — Owner resolves card and reward mismatches",
-                        "Compare P5 credits against P6 charges and payment dates",
-                        "Explain every difference without relying on estimated rewards",
-                        "Fix unmatched credits and reserve full card payoff",
+                        "Days 25–27 — owner validates workload and downside economics",
+                        "Day 25 count hours; Day 26 rerun stress; Day 27 review lane returns.",
+                        "Document owner hours, contractor invoices, and separate lane contribution.",
+                        "Reduce throughput if staffing caps or cash protections would fail.",
                     ],
                     [
-                        "Day 24 — Contractor B repairs ticket delivery controls",
-                        "Retest P8 inventory locks and P9 markdown notifications",
-                        "Resolve every failed transfer before adding another listing",
-                        "Suspend affected exchanges while duplicate-sale risk remains unresolved",
+                        "Days 28–30 — entire pod prepares and signs the decision",
+                        "Day 28 lock metrics; Day 29 challenge evidence; Day 30 select outcome.",
+                        "Decision packet preserves numerator, denominator, sample count, and exceptions.",
+                        "Apply Kill first, Scale second, and Fix to every remaining case.",
                     ],
                     [
-                        "Day 25 — Owner authorizes one bounded merchandise correction test",
-                        "Repeat the smallest P1–P4 transaction demonstrating the repair",
-                        "Keep acquisition basis within existing counterparty exposure limits",
-                        "Kill the lane after two failed documented repair cycles",
+                        "Day 30 Kill — immediate protection overrides the growth sample",
+                        "Stop for shared safety failure or cumulative burn exceeding $1,500.",
+                        "Safety includes coverage below 1.05 or any projected missed repayment.",
+                        "Stop new exposure, recover existing assets, and preserve repayment cash.",
                     ],
                     [
-                        "Day 26 — Contractor B retests authorized allocation documentation",
-                        "Complete P7, P10, and P11 rights and settlement packs",
-                        "Obtain written authority and executable permitted transfer instructions",
-                        "Keep incomplete allocation opportunities unfunded and unlisted publicly",
+                        "Day 30 Scale — require every early evidence threshold",
+                        "Require five settled lots, 1.5% yield, and 95% punctual settlements.",
+                        "No unresolved repayment or claim exception; all shared protections pass.",
+                        "Raise only the passing lane's exposure cap by at most 25%.",
                     ],
                     [
-                        "Day 27 — Owner refreshes delayed-settlement stress projections",
-                        "Recalculate cash assuming ten-business-day delays and unavailable rewards",
-                        "Pay every existing commitment without assuming new borrowing",
-                        "Kill new commitments when existing obligations cannot be paid",
+                        "Day 30 Fix — remaining safe cases retain the pilot ceiling",
+                        "Fewer than five settled lots or any unmet Scale metric qualifies.",
+                        "Zero settled deals requires documented onboarding progress rather than projected earnings.",
+                        "Assign fourteen-day repair tasks without increasing unsettled exposure.",
                     ],
                     [
-                        "Day 28 — Contractors freeze the review evidence population",
-                        "Separate closed cohorts, matured receivables, and still-open inventory",
-                        "Retain source evidence for every included performance observation",
-                        "Fix missing evidence without padding counts using partial settlements",
+                        "Day 60 Kill — renew the safety and economics assessment",
+                        "Stop for shared failure, burn above $3,000, or negative contribution after ten lots.",
+                        "Evaluate realized purchase contribution separately from unrelated treasury earnings.",
+                        "Retire failed routes while continuing collection and contractual repayment work.",
                     ],
                     [
-                        "Day 29 — Owner verifies cash, burn, and pod capacity",
-                        "Reconcile bank balances, reserved obligations, and logged contractor hours",
-                        "Stay within $3,000 burn and retain twenty-percent capacity headroom",
-                        "Fix capacity overload; Kill unapproved first-month burn overruns",
+                        "Day 60 Scale — require repeatable collections and positive throughput",
+                        "Require fifteen lots, two counterparties, 2% yield, and 95% punctuality.",
+                        "Require nonnegative trailing owner result, $40 contribution per owner hour, and 60% concentration maximum.",
+                        "Authorize another maximum 25% exposure increase within unchanged reserve protections.",
                     ],
                     [
-                        "Day 30 — Owner records a decision for each lane",
-                        "Require ten closed deals and two completed acquisition-settlement cycles",
-                        "Scale only with 90% timely matured receipts and positive contribution",
-                        "Fix insufficient samples; Kill first-month trading losses above $1,250",
+                        "Day 60 Fix — safe operations still need stronger evidence",
+                        "Any unmet Scale threshold without a Kill trigger requires repair.",
+                        "Identify one measured defect and compare against the previous repair cycle.",
+                        "Hold or reduce exposure and set another fourteen-day measurement date.",
                     ],
                     [
-                        "Day 60 — Owner reviews cumulative evidence and current overhead",
-                        "Require twenty-five closed deals and four completed settlement cycles",
-                        "Scale with 95% timely receipts and nonnegative trailing-month owner profit",
-                        "Fix weaker economics within budget; Kill repeated failed repairs",
+                        "Day 90 Kill — enforce capital limits and terminate persistent losses",
+                        "Stop for shared failure, burn above $4,500, or qualifying negative contribution.",
+                        "Also retire negative routes after two unsuccessful economic repair cycles.",
+                        "Complete orderly recovery without using new borrowing to conceal losses.",
                     ],
                     [
-                        "Day 90 — Owner reviews durable economics and delivery reliability",
-                        "Require fifty closed deals and six completed settlement cycles",
-                        "Scale with 98% timely receipts and two profitable monthly periods",
-                        "Fix thin samples; Kill persistently losing lanes after two repairs",
+                        "Day 90 Scale — require durable small-team earning capacity",
+                        "Require thirty lots, 2% yield, 98% punctuality, and two paying counterparties.",
+                        "Require $1,500 trailing owner result, $60 contribution per owner hour, and 60% concentration maximum.",
+                        "Increase passing exposure by at most 25%; review staffing before further expansion.",
                     ],
                     [
-                        "Every expansion decision — Owner applies universal liquidity controls",
-                        "Require 1.25-times coverage and zero unresolved material delivery exceptions",
-                        "Increase validated exposure at most 25% with cash backing",
-                        "Kill below 1.00-times coverage; Fix intermediate coverage or mismatches",
+                        "Day 90 Fix — preserve solvent but incomplete experiments",
+                        "Remaining safe cases receive a bounded fourteen-day repair plan.",
+                        "Document insufficient samples or specific operational defects without inventing annual earnings.",
+                        "Keep exposure flat or lower and fund only an explicitly renewed budget.",
                     ],
                 ],
             },
         },
     ],
-    "pull_quote": "Scale the settlement loop that survives delay, not the inventory pile that looks profitable before payment.",
+    "pull_quote": "Scale cleared contribution, not card limits, pending rewards, or warehouse promises.",
     "diagram_id": "diag-08",
     "action_checklist": [
-        "Publish the P1–P11 working register with one owner, two contractors, assigned capacity, and lane-specific escalation rules.",
-        "Reserve procurement payoff cash, settlement reserves, contingency liquidity, and a separate $3,000 first-month operating-burn envelope.",
-        "Complete two vetted Net-3/Net-5 counterparty packs and verify actual commercial-card reward eligibility before funding the first order.",
-        "Link every purchase, shipment, ticket transfer, card charge, rebate, and cleared receipt through an immutable acquisition identifier.",
-        "Run ten-business-day reimbursement-delay, issuer-suspension, and 25% ticket-proceeds stress tests before proposing any exposure increase.",
-        "Record Day 30/60/90 Kill, Fix, or Scale decisions against sample size, payment punctuality, liquidity coverage, contribution, and pod capacity.",
+        "Assign P01–P11 to one full-time owner and two contractors, with separate wholesale, reward, and treasury ledgers.",
+        "Ring-fence repayment cash, set the $2,000 initial unsettled-exposure cap, and authorize no more than $1,500 first-month nonrecoverable burn.",
+        "Verify actual buying-group commitments, destination tax treatment, resale documents, issuer permissions, and insured serial-number evidence before checkout.",
+        "Build a dated repayment calendar that survives thirty-day ACH delays, zero unpaid rewards, applicable fees, and the shipment-loss stress.",
+        "Close each completed lot against accepted quantities and cleared reimbursement; reconcile rewards, inventory adjustments, interest, and reporting forms separately.",
+        "Sign ordered Day 30/60/90 Kill, Fix, or Scale decisions and limit each passing exposure increase to 25% while preserving cash and pod constraints.",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. § 45c — Unfair and deceptive acts and practices relating to circumvention of ticket access controls",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
+            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, or organizational credit",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
             "relevance": (
-                "Prohibits specified circumvention of ticket purchasing controls and "
-                "specified sales of tickets obtained through that conduct; use "
-                "authorized acquisition paths and retain sourcing evidence."
+                "Business-purpose credit generally falls outside Regulation Z; obtain the actual "
+                "commercial card contract rather than assuming consumer repayment protections."
             ),
         },
         {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
+            "title": "RCW 82.04.470 — Wholesaler tax obligations and reseller documentation",
+            "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.470",
             "relevance": (
-                "Apply covered live-event ticket total-price presentation and fee "
-                "disclosure requirements, including the rule's treatment of permitted "
-                "exclusions, before publishing consumer-facing offers."
+                "Provides a concrete state framework for wholesale-sale documentation; verify "
+                "the rules governing the actual seller and transaction rather than relying "
+                "only on the warehouse destination."
             ),
         },
         {
-            "title": "New York Arts and Cultural Affairs Law § 25.07 — Ticket sales",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
+            "title": "WAC 458-20-193 — Interstate sales of tangible personal property",
+            "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-193",
             "relevance": (
-                "Review New York ticket-offer total-cost and fee-disclosure requirements "
-                "when constructing listings and checkout flows subject to this section."
+                "Washington interstate-sale rules illustrate why delivery evidence and transaction "
+                "facts matter when determining sales-tax treatment."
             ),
         },
         {
-            "title": "California Revenue and Taxation Code § 6091 — Presumption of retail sale; resale certificate",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6091.",
+            "title": "26 U.S.C. 61 — Gross income defined",
+            "url": "https://www.law.cornell.edu/uscode/text/26/61",
             "relevance": (
-                "For applicable California merchandise purchases, document the resale "
-                "basis and certificate process rather than assuming buying-group "
-                "participation automatically establishes tax-exempt purchasing."
+                "Interest is included in gross income; maintain treasury income records separately "
+                "from principal movements and purchase-related adjustments."
             ),
         },
         {
-            "title": "California Commercial Code § 2509 — Risk of loss in the absence of breach",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=2509.",
+            "title": "26 U.S.C. 471 — General rule for inventories",
+            "url": "https://www.law.cornell.edu/uscode/text/26/471",
             "relevance": (
-                "Use the enacted UCC risk-of-loss framework, applicable contract "
-                "terms, and shipment structure when assigning merchandise custody "
-                "risk and selecting shipment coverage."
+                "Inventory methods and applicable exceptions inform consistent merchandise-cost "
+                "records; preserve support for returns, credits, and purchase-price adjustments."
+            ),
+        },
+        {
+            "title": "26 U.S.C. 6050W — Returns relating to payment card and third party network transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
+            "relevance": (
+                "Reconcile applicable payment-reporting forms to the ledger; reported gross "
+                "payment amounts do not establish operator profit."
+            ),
+        },
+        {
+            "title": "12 CFR 330.11 — Accounts of corporations, partnerships, and unincorporated associations",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330/section-330.11",
+            "relevance": (
+                "Business-deposit ownership and aggregation rules affect insured bank-sweep "
+                "capacity; do not equate bank deposits with Treasury security holdings."
             ),
         },
     ],

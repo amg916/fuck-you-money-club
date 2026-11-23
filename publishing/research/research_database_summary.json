@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-23T17:48:30+00:00",
+      "generated_at": "2026-11-23T20:02:15+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-23T17:48:30Z",
+  "generated_at": "2026-11-23T20:02:15Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 5983,
-      "tip_count": 12154,
-      "channel_count": 3751,
+      "video_count": 5985,
+      "tip_count": 12143,
+      "channel_count": 3747,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -188,12 +188,12 @@
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form for",
-        "form to",
         "form is",
+        "form to",
         "form the",
         "form or",
         "form you",
@@ -209,8 +209,8 @@
         "form it",
         "form I",
         "form uh",
-        "court order",
         "form if",
+        "court order",
         "HIPAA",
         "form um",
         "form which",
@@ -220,11 +220,11 @@
         "Protection Act",
         "form their",
         "form but",
-        "form called",
         "form they",
-        "form because",
         "form right",
+        "form because",
         "quiet title",
+        "form called",
         "form here",
         "form content",
         "form from"
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 5672,
-      "tip_count": 11518,
-      "channel_count": 3485,
+      "video_count": 5658,
+      "tip_count": 11466,
+      "channel_count": 3473,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -464,8 +464,8 @@
         "Chapter 7",
         "form at",
         "form here",
-        "warranty deed",
         "form an",
+        "warranty deed",
         "letters of administration",
         "Chapter 13",
         "form will"
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 1402,
+      "video_count": 1405,
       "tip_count": 2663,
-      "channel_count": 961,
+      "channel_count": 964,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 6119,
-      "tip_count": 10091,
-      "channel_count": 3774,
+      "video_count": 6129,
+      "tip_count": 10076,
+      "channel_count": 3776,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -932,23 +932,23 @@
         "form I",
         "form it",
         "form if",
-        "form um",
-        "form which",
         "HIPAA",
         "form below",
         "Form uh",
+        "form um",
         "quiet title",
         "form at",
         "form we",
+        "form which",
         "form but",
         "form their",
         "Protection Act",
         "form called",
-        "form here",
         "form they",
         "form an",
-        "form from",
+        "form here",
         "form right",
+        "form from",
         "form content",
         "form will"
       ],
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 3887,
-      "tip_count": 1655,
-      "channel_count": 2382,
+      "video_count": 3884,
+      "tip_count": 1654,
+      "channel_count": 2383,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1170,13 +1170,13 @@
         "form with",
         "form where",
         "form as",
-        "form um",
         "form it",
+        "form um",
         "form if",
         "quiet title",
         "form I",
-        "form which",
         "Form uh",
+        "form which",
         "form but",
         "court order",
         "form we",
@@ -1239,8 +1239,8 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 5521,
-      "tip_count": 9511,
+      "video_count": 5525,
+      "tip_count": 9519,
       "channel_count": 3382,
       "top_sources": [
         {
@@ -1397,16 +1397,16 @@
         "form of",
         "form that",
         "form for",
-        "form to",
         "Form is",
+        "form to",
         "form the",
         "form or",
         "form you",
         "form a",
         "form so",
         "form your",
-        "form in",
         "form on",
+        "form in",
         "form with",
         "form like",
         "form where",
@@ -1418,17 +1418,17 @@
         "form um",
         "form if",
         "form we",
-        "form which",
         "form below",
+        "form which",
         "HIPAA",
         "form at",
         "form their",
         "quiet title",
         "form but",
-        "form called",
         "Protection Act",
-        "Chapter 7",
         "form an",
+        "form called",
+        "Chapter 7",
         "form they",
         "form here",
         "warranty deed",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 6321,
-      "tip_count": 5613,
-      "channel_count": 3846,
+      "video_count": 6308,
+      "tip_count": 5590,
+      "channel_count": 3835,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1663,13 +1663,13 @@
         "form we",
         "form um",
         "quiet title",
-        "form which",
-        "form their",
         "form but",
-        "form at",
+        "form their",
+        "form which",
         "form an",
-        "form here",
+        "form at",
         "Chapter 7",
+        "form here",
         "form they",
         "warranty deed",
         "form from",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 4865,
-      "tip_count": 13637,
-      "channel_count": 3128,
+      "video_count": 4867,
+      "tip_count": 13789,
+      "channel_count": 3125,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1856,21 +1856,21 @@
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "That 832 volts is again converted back into AC into 415 volts and then we can connect it back to our grid. Now it…",
+          "tip_paraphrase_summary": "However, anytime that I'm looking to sign up to a credit card, I always run it through this site to see what the bargain…",
           "category": "Non-Negotiable Rule",
-          "timestamp": "00:10:20",
-          "link": "https://www.youtube.com/watch?v=GNmL-gBPe3g&t=620s",
-          "video_title": "Battery Energy Storage System | BESS | All Components Explained",
-          "author": "Gaurav J - TheElectricalGuy",
+          "timestamp": "00:04:22",
+          "link": "https://www.youtube.com/watch?v=U64ykipOtaA&t=262s",
+          "video_title": "Amex Business Gold Card Review: Does It Pay for Itself? (2026)",
+          "author": "Escape of the Week",
           "verbatim_research_only": true
         },
         {
-          "tip_paraphrase_summary": "Mean, it's wonderful that you've recruited these people, they've worked with you, but you want to keep them as well. You don't want them…",
+          "tip_paraphrase_summary": "Going back to the gold card here, if we know that the AMEX Platinum card has a membership bonus of around 200 to 225,000…",
           "category": "Pitfall / Hard No",
-          "timestamp": "00:40:22",
-          "link": "https://www.youtube.com/watch?v=rOwXkmrMljc&t=2422s",
-          "video_title": "Building the AI-Powered M&A Deal Team of 2030 | SS&C Intralinks #dealmaking #mergersandacquisitions",
-          "author": "SS&C Intralinks",
+          "timestamp": "00:04:47",
+          "link": "https://www.youtube.com/watch?v=U64ykipOtaA&t=287s",
+          "video_title": "Amex Business Gold Card Review: Does It Pay for Itself? (2026)",
+          "author": "Escape of the Week",
           "verbatim_research_only": true
         }
       ],
@@ -1887,8 +1887,8 @@
         "form a",
         "form so",
         "form with",
-        "form in",
         "form your",
+        "form in",
         "form on",
         "form where",
         "form like",
@@ -1896,25 +1896,25 @@
         "form it",
         "Form uh",
         "form um",
-        "court order",
         "form I",
-        "form which",
+        "court order",
         "form we",
+        "form which",
         "HIPAA",
         "form below",
         "form if",
         "form but",
         "form from",
-        "form here",
         "Protection Act",
         "form at",
-        "form called",
         "form they",
         "form because",
+        "form here",
         "form will",
         "form an",
         "form this",
-        "form builder"
+        "form builder",
+        "form called"
       ],
       "tools_and_portals": [
         "Google",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3751,
-      "video_count": 5983,
-      "corroborating_tip_count": 12154,
+      "channel_count": 3747,
+      "video_count": 5985,
+      "corroborating_tip_count": 12143,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3485,
-      "video_count": 5672,
-      "corroborating_tip_count": 11518,
+      "channel_count": 3473,
+      "video_count": 5658,
+      "corroborating_tip_count": 11466,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 961,
-      "video_count": 1402,
+      "channel_count": 964,
+      "video_count": 1405,
       "corroborating_tip_count": 2663,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3774,
-      "video_count": 6119,
-      "corroborating_tip_count": 10091,
+      "channel_count": 3776,
+      "video_count": 6129,
+      "corroborating_tip_count": 10076,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2382,
-      "video_count": 3887,
-      "corroborating_tip_count": 1655,
+      "channel_count": 2383,
+      "video_count": 3884,
+      "corroborating_tip_count": 1654,
       "supporting_links": [
         {
           "video_title": "The Negotiation Script I Use When Subleasing Airbnb's | Jorge Contreras",
@@ -2219,8 +2219,8 @@
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
       "channel_count": 3382,
-      "video_count": 5521,
-      "corroborating_tip_count": 9511,
+      "video_count": 5525,
+      "corroborating_tip_count": 9519,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3846,
-      "video_count": 6321,
-      "corroborating_tip_count": 5613,
+      "channel_count": 3835,
+      "video_count": 6308,
+      "corroborating_tip_count": 5590,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3128,
-      "video_count": 4865,
-      "corroborating_tip_count": 13637,
+      "channel_count": 3125,
+      "video_count": 4867,
+      "corroborating_tip_count": 13789,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -50553,13 +50553,6 @@
             "source_url": "https://www.youtube.com/watch?v=l8vsYOmqKB4"
           },
           {
-            "video_id": "mEjNm8zKoQs",
-            "title": "98. Unlock MASSIVE Rewards with Buying Groups!",
-            "author": "Lets Get To The Points",
-            "thumbnail_url": "https://i.ytimg.com/vi/mEjNm8zKoQs/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=mEjNm8zKoQs"
-          },
-          {
             "video_id": "HNO_8rnhPeE",
             "title": "How I Made $X,XXX in My First Month with BuyForMeRetail (BFMR Review) | Online Side Hustle",
             "author": "Czech It Out: Money Hacks",
@@ -50586,34 +50579,6 @@
             "author": "Traveling Teacher Personal Finance",
             "thumbnail_url": "https://i.ytimg.com/vi/PjJySGf3Swg/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=PjJySGf3Swg"
-          },
-          {
-            "video_id": "I75OnHkQrdc",
-            "title": "I Investigated Ticket Scalping (it's worse than I thought)",
-            "author": "Ben Farr",
-            "thumbnail_url": "https://i.ytimg.com/vi/I75OnHkQrdc/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=I75OnHkQrdc"
-          },
-          {
-            "video_id": "RRK7zpnM8WQ",
-            "title": "the ultimate guide to buying concert tickets | VIP, presale, ticketmaster & resale",
-            "author": "Carys Mai",
-            "thumbnail_url": "https://i.ytimg.com/vi/RRK7zpnM8WQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=RRK7zpnM8WQ"
-          },
-          {
-            "video_id": "482heVOfiQg",
-            "title": "How Ticketmaster Makes Money From Tickets It Already Sold (Taylor Swift Fans Know)",
-            "author": "Cash Dissected",
-            "thumbnail_url": "https://i.ytimg.com/vi/482heVOfiQg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=482heVOfiQg"
-          },
-          {
-            "video_id": "PGcp5CLCmWs",
-            "title": "Buying the Float: The Hidden Cash Flow Trap in Every Deal",
-            "author": "Walker Deibel",
-            "thumbnail_url": "https://i.ytimg.com/vi/PGcp5CLCmWs/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=PGcp5CLCmWs"
           },
           {
             "video_id": "NjlljrQidKg",
@@ -50672,111 +50637,6 @@
             "source_url": "https://www.youtube.com/watch?v=04bDgAQcsYs"
           },
           {
-            "video_id": "nqLwxP2-Wws",
-            "title": "NBA Season Tickets as an Investment?",
-            "author": "UUELTE",
-            "thumbnail_url": "https://i.ytimg.com/vi/nqLwxP2-Wws/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=nqLwxP2-Wws"
-          },
-          {
-            "video_id": "CpHB_gOGYSs",
-            "title": "What it's REALLY like having NBA season tickets | Should you get season tickets?",
-            "author": "Dave Chung",
-            "thumbnail_url": "https://i.ytimg.com/vi/CpHB_gOGYSs/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=CpHB_gOGYSs"
-          },
-          {
-            "video_id": "59o6u0b6Kz0",
-            "title": "NHL every outdoor game avg resell tickets prices highest to lowers #nhl",
-            "author": "JA The Panther Guy",
-            "thumbnail_url": "https://i.ytimg.com/vi/59o6u0b6Kz0/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=59o6u0b6Kz0"
-          },
-          {
-            "video_id": "HvWd7QRjIEk",
-            "title": "How NBA Season Tickets Actually Work (From a 7-Year Holder)",
-            "author": "Dave Chung",
-            "thumbnail_url": "https://i.ytimg.com/vi/HvWd7QRjIEk/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=HvWd7QRjIEk"
-          },
-          {
-            "video_id": "nWMK3vxC4WE",
-            "title": "NHL Execs Concerned with Season Ticket Sales and the Effect on the Cap",
-            "author": "The Hockey Guy",
-            "thumbnail_url": "https://i.ytimg.com/vi/nWMK3vxC4WE/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=nWMK3vxC4WE"
-          },
-          {
-            "video_id": "uGTZ3jSLGRg",
-            "title": "How to Use Presale Code on Ticketmaster - Easiest Way (2026 Guide)",
-            "author": "Aleeya34",
-            "thumbnail_url": "https://i.ytimg.com/vi/uGTZ3jSLGRg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=uGTZ3jSLGRg"
-          },
-          {
-            "video_id": "xaHNRvePjBQ",
-            "title": "How To Use Presale Code On Ticketmaster (2026) (Complete Guide)",
-            "author": "Three Step Guide",
-            "thumbnail_url": "https://i.ytimg.com/vi/xaHNRvePjBQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=xaHNRvePjBQ"
-          },
-          {
-            "video_id": "m_xKoY7Uj74",
-            "title": "7,624 tickets to one concert: the REPS ticket broker file",
-            "author": "Sygnify Data",
-            "thumbnail_url": "https://i.ytimg.com/vi/m_xKoY7Uj74/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=m_xKoY7Uj74"
-          },
-          {
-            "video_id": "-t2jgsOhnog",
-            "title": "Legislation cracks down on ticket-buying bots",
-            "author": "13 ON YOUR SIDE",
-            "thumbnail_url": "https://i.ytimg.com/vi/-t2jgsOhnog/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=-t2jgsOhnog"
-          },
-          {
-            "video_id": "pyK2CwcPJx0",
-            "title": "The $1.3 Billion Ticket Rig: How Ticketmaster & Scalper Bots Harvest Live Events",
-            "author": "Veridox",
-            "thumbnail_url": "https://i.ytimg.com/vi/pyK2CwcPJx0/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=pyK2CwcPJx0"
-          },
-          {
-            "video_id": "fAVGs0g8--w",
-            "title": "Ticket brokers seek changes to resale law",
-            "author": "WWLP-22News",
-            "thumbnail_url": "https://i.ytimg.com/vi/fAVGs0g8--w/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=fAVGs0g8--w"
-          },
-          {
-            "video_id": "mRSt597LFCQ",
-            "title": "HOW TO SELL AND SHIP HARD STOCK TICKETS | STUBHUB VIVID SEATS SEATGEEK",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/mRSt597LFCQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=mRSt597LFCQ"
-          },
-          {
-            "video_id": "CXnQuOOvcuQ",
-            "title": "SEATGEEK VS STUBHUB WHICH IS BETTER (2024) FULL GUIDE",
-            "author": "Benzaiten Media",
-            "thumbnail_url": "https://i.ytimg.com/vi/CXnQuOOvcuQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=CXnQuOOvcuQ"
-          },
-          {
-            "video_id": "1ZNkmoIj-S8",
-            "title": "Are My BTS Tickets Real?? Vivid Seats. StubHub. SeatGeek.",
-            "author": "Tickets 101",
-            "thumbnail_url": "https://i.ytimg.com/vi/1ZNkmoIj-S8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=1ZNkmoIj-S8"
-          },
-          {
-            "video_id": "wqsrNbgFdtg",
-            "title": "How To Transfer Seatgeek Tickets To Stubhub",
-            "author": "ZEPHRA",
-            "thumbnail_url": "https://i.ytimg.com/vi/wqsrNbgFdtg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=wqsrNbgFdtg"
-          },
-          {
             "video_id": "i-mOkvN7iNE",
             "title": "Business credit cards vs. lines of credit: What's the difference? (2026)",
             "author": "Intuit",
@@ -50796,55 +50656,6 @@
             "author": "Ben Hedges",
             "thumbnail_url": "https://i.ytimg.com/vi/Lbu0I0_jyQA/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=Lbu0I0_jyQA"
-          },
-          {
-            "video_id": "Zv0-nTTakh4",
-            "title": "Listing Tickets",
-            "author": "Lysted",
-            "thumbnail_url": "https://i.ytimg.com/vi/Zv0-nTTakh4/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Zv0-nTTakh4"
-          },
-          {
-            "video_id": "yqoaLjQxJ2w",
-            "title": "Order Fulfillment",
-            "author": "Lysted",
-            "thumbnail_url": "https://i.ytimg.com/vi/yqoaLjQxJ2w/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=yqoaLjQxJ2w"
-          },
-          {
-            "video_id": "1uLGFbtlWBQ",
-            "title": "How to Link Ticketmaster to Lysted (2026 GUIDE)",
-            "author": "Tutorials By David",
-            "thumbnail_url": "https://i.ytimg.com/vi/1uLGFbtlWBQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=1uLGFbtlWBQ"
-          },
-          {
-            "video_id": "ctTMnJPUJk8",
-            "title": "The Best Way To Sell Tickets - Lysted Training",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/ctTMnJPUJk8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=ctTMnJPUJk8"
-          },
-          {
-            "video_id": "MJAUFMFXjV8",
-            "title": "Inventory Mangement",
-            "author": "Lysted",
-            "thumbnail_url": "https://i.ytimg.com/vi/MJAUFMFXjV8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=MJAUFMFXjV8"
-          },
-          {
-            "video_id": "Tjcjx18COZU",
-            "title": "Ticket Selling Side Gig with Lysted",
-            "author": "Lysted",
-            "thumbnail_url": "https://i.ytimg.com/vi/Tjcjx18COZU/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Tjcjx18COZU"
-          },
-          {
-            "video_id": "M7PkhZcLJys",
-            "title": "How to get paid right away for your tickets",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/M7PkhZcLJys/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=M7PkhZcLJys"
           },
           {
             "video_id": "Q12R7gbPW8g",
@@ -50868,41 +50679,6 @@
             "source_url": "https://www.youtube.com/watch?v=1e8-M6z0R7c"
           },
           {
-            "video_id": "je9hw5gRKNA",
-            "title": "What you need to know about Kings v. Warriors playoff tickets",
-            "author": "ABC10",
-            "thumbnail_url": "https://i.ytimg.com/vi/je9hw5gRKNA/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=je9hw5gRKNA"
-          },
-          {
-            "video_id": "Fw6FD7wtec0",
-            "title": "Ticket resale companies sue DC over proposed law",
-            "author": "FOX 5 Washington DC",
-            "thumbnail_url": "https://i.ytimg.com/vi/Fw6FD7wtec0/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Fw6FD7wtec0"
-          },
-          {
-            "video_id": "OsZG4eKUfx8",
-            "title": "Concert ticket resellers sue over DC law limiting markups | NBC4 Washington",
-            "author": "NBC4 Washington",
-            "thumbnail_url": "https://i.ytimg.com/vi/OsZG4eKUfx8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=OsZG4eKUfx8"
-          },
-          {
-            "video_id": "T8QUSDg7mnc",
-            "title": "Where Your Ticket Fees Actually Go",
-            "author": "Checkout Math",
-            "thumbnail_url": "https://i.ytimg.com/vi/T8QUSDg7mnc/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=T8QUSDg7mnc"
-          },
-          {
-            "video_id": "cY2OK7IEAso",
-            "title": "Ticketmaster delists resale tickets in Ontario after bill passed",
-            "author": "CBC News",
-            "thumbnail_url": "https://i.ytimg.com/vi/cY2OK7IEAso/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=cY2OK7IEAso"
-          },
-          {
             "video_id": "qcQs8Xq3hPg",
             "title": "Buying Groups Webinar - What is a Buying Group?",
             "author": "ClarityVenturesVideo",
@@ -50917,88 +50693,11 @@
             "source_url": "https://www.youtube.com/watch?v=7kHlVyx4a9E"
           },
           {
-            "video_id": "K8GzDJBkdwQ",
-            "title": "How to make money online selling / reselling tickets on Stubhub and Ticketmaster",
-            "author": "Dick “Lens Flare Transitions” Nixon",
-            "thumbnail_url": "https://i.ytimg.com/vi/K8GzDJBkdwQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=K8GzDJBkdwQ"
-          },
-          {
             "video_id": "hglOA-iPzNc",
             "title": "HOW TO GET APPROVED FOR CAPITAL ONE SPARK BUSINESS CREDIT CARD",
             "author": "Checkmark Tutorial",
             "thumbnail_url": "https://i.ytimg.com/vi/hglOA-iPzNc/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=hglOA-iPzNc"
-          },
-          {
-            "video_id": "QVwMd8_MPyc",
-            "title": "How To Buy Presale Tickets On Ticketmaster (2026) (Complete Guide)",
-            "author": "Three Step Guide",
-            "thumbnail_url": "https://i.ytimg.com/vi/QVwMd8_MPyc/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=QVwMd8_MPyc"
-          },
-          {
-            "video_id": "z5bfNAlrPwg",
-            "title": "How One Company Bought 18.5 Million Tickets Before You Could",
-            "author": "The Empire Files",
-            "thumbnail_url": "https://i.ytimg.com/vi/z5bfNAlrPwg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=z5bfNAlrPwg"
-          },
-          {
-            "video_id": "lj_eATnFmgE",
-            "title": "How To Sell Tickets On Vivid Seats (2025 UPDATE!)",
-            "author": "TutorialsWithJames",
-            "thumbnail_url": "https://i.ytimg.com/vi/lj_eATnFmgE/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=lj_eATnFmgE"
-          },
-          {
-            "video_id": "xAStH-KBkrs",
-            "title": "🎟️ DO NOT Buy StubHub Tickets Before You Hear This 😱 This strategy saved me hundreds on sports",
-            "author": "Greg B",
-            "thumbnail_url": "https://i.ytimg.com/vi/xAStH-KBkrs/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=xAStH-KBkrs"
-          },
-          {
-            "video_id": "Ze2ODb4Bm6g",
-            "title": "The Next Vivid Seats Costs $4.83 — The Ticketing Stock Growing 7% With No Rescue Deal",
-            "author": "KC_Watermark",
-            "thumbnail_url": "https://i.ytimg.com/vi/Ze2ODb4Bm6g/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Ze2ODb4Bm6g"
-          },
-          {
-            "video_id": "6H1RUQH71uc",
-            "title": "Be careful booking concert #tickets . #substack #stubhub #seatgeek #vividseats #concerttickets",
-            "author": "Ahmed’s Voice",
-            "thumbnail_url": "https://i.ytimg.com/vi/6H1RUQH71uc/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=6H1RUQH71uc"
-          },
-          {
-            "video_id": "BfCMyhnCVQY",
-            "title": "Vivid Seats | How to Accept Electronic Ticket Transfer from SeatGeek",
-            "author": "Vivid Seats",
-            "thumbnail_url": "https://i.ytimg.com/vi/BfCMyhnCVQY/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=BfCMyhnCVQY"
-          },
-          {
-            "video_id": "fCnSbZoDKHU",
-            "title": "How To Sell Tickets On Vivid Seats App (2026)",
-            "author": "Dani's Tutorials",
-            "thumbnail_url": "https://i.ytimg.com/vi/fCnSbZoDKHU/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=fCnSbZoDKHU"
-          },
-          {
-            "video_id": "42SWCuGJuN4",
-            "title": "How To Transfer SeatGeek Tickets on Vivid Seats (Easiest Way)",
-            "author": "Chief Tuts",
-            "thumbnail_url": "https://i.ytimg.com/vi/42SWCuGJuN4/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=42SWCuGJuN4"
-          },
-          {
-            "video_id": "rzhKnvAoXZo",
-            "title": "Fairlyne Case Study: OUIGOSWAP, on 3 years of ticket resale from SeatResale to full marketplace",
-            "author": "Fairlyne",
-            "thumbnail_url": "https://i.ytimg.com/vi/rzhKnvAoXZo/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=rzhKnvAoXZo"
           },
           {
             "video_id": "HJuOgHKLiAc",
@@ -51008,46 +50707,11 @@
             "source_url": "https://www.youtube.com/watch?v=HJuOgHKLiAc"
           },
           {
-            "video_id": "xnRbEvUENzI",
-            "title": "What Is Speculative Ticketing? Unauthorized Ticket Resale Explained",
-            "author": "TicketSpice",
-            "thumbnail_url": "https://i.ytimg.com/vi/xnRbEvUENzI/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=xnRbEvUENzI"
-          },
-          {
-            "video_id": "78tbcWA_p0c",
-            "title": "How I Travel for Free: The Beginner's Guide to Credit Card Churning (How I Earned 3 Million Points)",
-            "author": "Greg Schmidt Official",
-            "thumbnail_url": "https://i.ytimg.com/vi/78tbcWA_p0c/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=78tbcWA_p0c"
-          },
-          {
-            "video_id": "uTYlLrxT-xM",
-            "title": "Ticket Broker Introductory Webinar",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/uTYlLrxT-xM/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=uTYlLrxT-xM"
-          },
-          {
-            "video_id": "Cf05ISv9JrQ",
-            "title": "How to use the Ticketflipping Toolbox: Features and Benefits",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/Cf05ISv9JrQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Cf05ISv9JrQ"
-          },
-          {
             "video_id": "eckGlyqGUBs",
             "title": "Credit Cards For Beginners cash back vs travels. No annual fee",
             "author": "The Money Advantage",
             "thumbnail_url": "https://i.ytimg.com/vi/eckGlyqGUBs/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=eckGlyqGUBs"
-          },
-          {
-            "video_id": "aE4ci0-ah-k",
-            "title": "Business Credit Card Rewards: How to Travel for Free With Points 2026",
-            "author": "Smart Capital",
-            "thumbnail_url": "https://i.ytimg.com/vi/aE4ci0-ah-k/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=aE4ci0-ah-k"
           },
           {
             "video_id": "AEyd6uOijzg",
@@ -51064,74 +50728,11 @@
             "source_url": "https://www.youtube.com/watch?v=Z-sM6DX4rEM"
           },
           {
-            "video_id": "bYLTSIgEHZs",
-            "title": "How to Get $150K in Business Credit: Top 3 Banks (Stack Them in This Order)",
-            "author": "Fundovia",
-            "thumbnail_url": "https://i.ytimg.com/vi/bYLTSIgEHZs/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=bYLTSIgEHZs"
-          },
-          {
-            "video_id": "hx8WaOiS13k",
-            "title": "How To Get Presale Tickets on Ticketmaster 2026 (Step-by-Step Guide)",
-            "author": "PurpleCircuit",
-            "thumbnail_url": "https://i.ytimg.com/vi/hx8WaOiS13k/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=hx8WaOiS13k"
-          },
-          {
-            "video_id": "XoGnWfnhHao",
-            "title": "How to Buy Presale Tickets on Ticketmaster (2026 Guide)",
-            "author": "Aleeya34",
-            "thumbnail_url": "https://i.ytimg.com/vi/XoGnWfnhHao/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=XoGnWfnhHao"
-          },
-          {
-            "video_id": "ejjX4X_T2iA",
-            "title": "How To Use Presale Code On Ticketmaster 2026 Step by Step",
-            "author": "ZEPHRA",
-            "thumbnail_url": "https://i.ytimg.com/vi/ejjX4X_T2iA/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=ejjX4X_T2iA"
-          },
-          {
-            "video_id": "aFPf82J1I4Y",
-            "title": "How To Sell Tickets on Vivid Seats (Quick and Easy!)",
-            "author": "Quick and Easy",
-            "thumbnail_url": "https://i.ytimg.com/vi/aFPf82J1I4Y/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=aFPf82J1I4Y"
-          },
-          {
-            "video_id": "RlHOkpE3Cxg",
-            "title": "Vivid Seats | How to Accept Electronic Ticket Transfer from Ticketmaster",
-            "author": "Vivid Seats",
-            "thumbnail_url": "https://i.ytimg.com/vi/RlHOkpE3Cxg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=RlHOkpE3Cxg"
-          },
-          {
             "video_id": "SNCeMDvlJsQ",
             "title": "Do THIS Before Applying for an Amex Business Credit Card",
             "author": "Jack McColl",
             "thumbnail_url": "https://i.ytimg.com/vi/SNCeMDvlJsQ/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=SNCeMDvlJsQ"
-          },
-          {
-            "video_id": "ZA0a7zheQjQ",
-            "title": "seahawks playoff tickets",
-            "author": "Marie&leki",
-            "thumbnail_url": "https://i.ytimg.com/vi/ZA0a7zheQjQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=ZA0a7zheQjQ"
-          },
-          {
-            "video_id": "HHf0LK7yPcI",
-            "title": "Bank accounts and Threshold",
-            "author": "Float - Cash Flow Forecasting",
-            "thumbnail_url": "https://i.ytimg.com/vi/HHf0LK7yPcI/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=HHf0LK7yPcI"
-          },
-          {
-            "video_id": "nMlQUH3s8qY",
-            "title": "Buying groups: Big risks / big rewards | Ep223 | 10-7-23",
-            "author": "Frequent Miler",
-            "thumbnail_url": "https://i.ytimg.com/vi/nMlQUH3s8qY/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=nMlQUH3s8qY"
           },
           {
             "video_id": "aJ7DjHaD-XU",
@@ -51155,67 +50756,11 @@
             "source_url": "https://www.youtube.com/watch?v=EgyPkxlxqpI"
           },
           {
-            "video_id": "Dbhznmaq0Bg",
-            "title": "Maximize Your Points: Stacking, Buyers Clubs, Redemption Hacks, and More",
-            "author": "Chris Hutchins",
-            "thumbnail_url": "https://i.ytimg.com/vi/Dbhznmaq0Bg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Dbhznmaq0Bg"
-          },
-          {
             "video_id": "638DPuaWt9s",
             "title": "Earn Credit Card Points by Buying Giftcards (2026) with Taylor from qcgc.io | Ep 280",
             "author": "Geobreeze Travel",
             "thumbnail_url": "https://i.ytimg.com/vi/638DPuaWt9s/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=638DPuaWt9s"
-          },
-          {
-            "video_id": "-mFQXqq3hxI",
-            "title": "How to Sell your Tickets and Get Paid Right Away",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/-mFQXqq3hxI/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=-mFQXqq3hxI"
-          },
-          {
-            "video_id": "C3cU-UVpLoU",
-            "title": "How to Sell Tickets on Multiple Sites Without Overselling (Connect Review)",
-            "author": "Ash Automates",
-            "thumbnail_url": "https://i.ytimg.com/vi/C3cU-UVpLoU/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=C3cU-UVpLoU"
-          },
-          {
-            "video_id": "nQfbn0jqVCk",
-            "title": "Flipping Concert Tickets for Profit: Side Hustle Review",
-            "author": "Kevin - Financial Tutor 💰",
-            "thumbnail_url": "https://i.ytimg.com/vi/nQfbn0jqVCk/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=nQfbn0jqVCk"
-          },
-          {
-            "video_id": "jYPli5rcID4",
-            "title": "Beginners ULTIMATE Guide to Event Ticket Reselling (30 MIN COURSE)",
-            "author": "Ben Karabotsis",
-            "thumbnail_url": "https://i.ytimg.com/vi/jYPli5rcID4/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=jYPli5rcID4"
-          },
-          {
-            "video_id": "kcVkiYOF11Q",
-            "title": "UNTAPPED Ticket Flipping Strategy | The Secret Ticket Brokers DON'T Want You to Know About!",
-            "author": "Ticket Flipping Hub",
-            "thumbnail_url": "https://i.ytimg.com/vi/kcVkiYOF11Q/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=kcVkiYOF11Q"
-          },
-          {
-            "video_id": "YTBKTfhq9bg",
-            "title": "i made this much in a day from concert tickets (copy me lol)",
-            "author": "Emmanuel Ak",
-            "thumbnail_url": "https://i.ytimg.com/vi/YTBKTfhq9bg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=YTBKTfhq9bg"
-          },
-          {
-            "video_id": "15eJYcQnVKU",
-            "title": "HOW MUCH I MADE RESELLING $209,953 OF TICKETS IN 2021 | LIFE OF A PART TIME TICKET BROKER",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/15eJYcQnVKU/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=15eJYcQnVKU"
           },
           {
             "video_id": "AsYTdszcmx8",
@@ -51244,13 +50789,6 @@
             "author": "Joey | Amazon FBA",
             "thumbnail_url": "https://i.ytimg.com/vi/tKw8SljNcPE/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=tKw8SljNcPE"
-          },
-          {
-            "video_id": "a1MwAkYtYBE",
-            "title": "How I Use Credit Cards To Make Money With No Money",
-            "author": "Mr. Will Roundtree",
-            "thumbnail_url": "https://i.ytimg.com/vi/a1MwAkYtYBE/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=a1MwAkYtYBE"
           },
           {
             "video_id": "MrvMwsC_ZOg",
@@ -51330,151 +50868,11 @@
             "source_url": "https://www.youtube.com/watch?v=qjuRrg-ROGg"
           },
           {
-            "video_id": "-tJAC79lKi8",
-            "title": "Amex Platinum vs Chase Reserve vs Capital One Venture X (Which to Get)",
-            "author": "Chase Yokoyama",
-            "thumbnail_url": "https://i.ytimg.com/vi/-tJAC79lKi8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=-tJAC79lKi8"
-          },
-          {
             "video_id": "uXsekqVFn10",
             "title": "5 Reasons Why The AMEX Business Gold Card Is Better Than You Think In 2026",
             "author": "Phillip Pak",
             "thumbnail_url": "https://i.ytimg.com/vi/uXsekqVFn10/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=uXsekqVFn10"
-          },
-          {
-            "video_id": "7xoI46m2EG8",
-            "title": "Best Way To Sell NFL and NBA Tickets - TiqAssist Season Ticket Talk - Episode 1",
-            "author": "TiqAssist",
-            "thumbnail_url": "https://i.ytimg.com/vi/7xoI46m2EG8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=7xoI46m2EG8"
-          },
-          {
-            "video_id": "1CBYyv8lqgo",
-            "title": "I Made $1,000 Flipping NBA Tickets",
-            "author": "UUELTE",
-            "thumbnail_url": "https://i.ytimg.com/vi/1CBYyv8lqgo/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=1CBYyv8lqgo"
-          },
-          {
-            "video_id": "ohPaFrchlzE",
-            "title": "How To Make Money Reselling Tickets - Flipping Playoff Tickets",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/ohPaFrchlzE/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=ohPaFrchlzE"
-          },
-          {
-            "video_id": "sfHBAevLV8k",
-            "title": "Episode 15 - NHL Playoff Ticket Prices",
-            "author": "FULL STRENGTH PODCAST",
-            "thumbnail_url": "https://i.ytimg.com/vi/sfHBAevLV8k/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=sfHBAevLV8k"
-          },
-          {
-            "video_id": "Lv8TASDf0Q4",
-            "title": "HOW TO SUCCEED AT TICKETMASTER VERIFIED FAN PRESALES",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/Lv8TASDf0Q4/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Lv8TASDf0Q4"
-          },
-          {
-            "video_id": "sBvNovp3-P0",
-            "title": "HOW TO PREPARE FOR A TICKETMASTER VERIFIED FAN PRESALE | BUY PRESALE TICKETS WAITLISTED VS SELECTED",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/sBvNovp3-P0/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=sBvNovp3-P0"
-          },
-          {
-            "video_id": "atRV36CcmWc",
-            "title": "TICKETMASTER VERIFIED FAN PRESALES | THE FREQUENTLY ASKED QUESTIONS YOU WANTED ANSWERED",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/atRV36CcmWc/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=atRV36CcmWc"
-          },
-          {
-            "video_id": "gCYx-X-zn1I",
-            "title": "WHAT THE ACTUAL TICKETMASTER QUEUE LOOKS LIKE + PRESALE JOURNEY (BLACKPINK) | SIMPLY PEARLY",
-            "author": "Pearly Soul",
-            "thumbnail_url": "https://i.ytimg.com/vi/gCYx-X-zn1I/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=gCYx-X-zn1I"
-          },
-          {
-            "video_id": "-VwXw8O92zI",
-            "title": "8 Step Strategy that ACTUALLY works on Ticketmaster | BTS, BigBang, Bruno Mars Tickets Secured!",
-            "author": "Bianca Kyla",
-            "thumbnail_url": "https://i.ytimg.com/vi/-VwXw8O92zI/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=-VwXw8O92zI"
-          },
-          {
-            "video_id": "lw83Hqpb-7Y",
-            "title": "Why You're Always #84,000 in the Ticket Queue",
-            "author": "Behind The Hum",
-            "thumbnail_url": "https://i.ytimg.com/vi/lw83Hqpb-7Y/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=lw83Hqpb-7Y"
-          },
-          {
-            "video_id": "Pv_ogmKsubk",
-            "title": "Ticketmaster Just Got Caught Scalping Their Own Tickets",
-            "author": "Fine Print",
-            "thumbnail_url": "https://i.ytimg.com/vi/Pv_ogmKsubk/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Pv_ogmKsubk"
-          },
-          {
-            "video_id": "5yZoObwVnRk",
-            "title": "THE SECRET TO ALWAYS GETTING FIRST IN LINE FOR TICKETMASTER SMART QUEUE!",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/5yZoObwVnRk/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=5yZoObwVnRk"
-          },
-          {
-            "video_id": "IMb7_xt0ZW4",
-            "title": "FIGHTING THE BTS TICKETMASTER WAR 😭😭😭😭 (I got some of the worst queue numbers I’ve ever seen 😭)",
-            "author": "makazo!",
-            "thumbnail_url": "https://i.ytimg.com/vi/IMb7_xt0ZW4/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=IMb7_xt0ZW4"
-          },
-          {
-            "video_id": "OGtORpGSTL0",
-            "title": "Ticketmaster Bot for Professionals | Presell Tickets | Resell Tickets | Queue Bypass | Auto Checkout",
-            "author": "MainBotpy",
-            "thumbnail_url": "https://i.ytimg.com/vi/OGtORpGSTL0/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=OGtORpGSTL0"
-          },
-          {
-            "video_id": "Bs4wpbsiMvY",
-            "title": "Where to find presale passwords and verified fan codes for Ticketmaster",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/Bs4wpbsiMvY/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Bs4wpbsiMvY"
-          },
-          {
-            "video_id": "L6DxT_aO7To",
-            "title": "HOW TO SIGN UP FOR TICKETMASTER VERIFIED FAN PRESALE CODES + 3 TIPS TO IMPROVE YOUR ODDS!",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/L6DxT_aO7To/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=L6DxT_aO7To"
-          },
-          {
-            "video_id": "J2ZOHuwCo10",
-            "title": "Ticketmaster verified fan presale tips mobile desktop NF Pink Madonna Springstein Taylor Swift Lizzo",
-            "author": "Mike Biddle",
-            "thumbnail_url": "https://i.ytimg.com/vi/J2ZOHuwCo10/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=J2ZOHuwCo10"
-          },
-          {
-            "video_id": "hQgsk6D3C_Q",
-            "title": "WHAT ARE TICKETING BOTS AND CAN WE FINALLY BEAT THEM?! | THE BOTS ACT 2016 | BEAT THE BOTS",
-            "author": "thumbsuprun",
-            "thumbnail_url": "https://i.ytimg.com/vi/hQgsk6D3C_Q/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=hQgsk6D3C_Q"
-          },
-          {
-            "video_id": "TG6ufh9T_-8",
-            "title": "What Are Ticket Bots & How Can We Beat Them? | Quick Questions with Queue-it",
-            "author": "Queue-it",
-            "thumbnail_url": "https://i.ytimg.com/vi/TG6ufh9T_-8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=TG6ufh9T_-8"
           },
           {
             "video_id": "ThO9ard-k8E",
@@ -51498,25 +50896,11 @@
             "source_url": "https://www.youtube.com/watch?v=rpJHRiGfebQ"
           },
           {
-            "video_id": "WLaBGRjvR2M",
-            "title": "Tackle shop POS roles: counter, manager, bookkeeper, owner | TackleIMS",
-            "author": "TackleIMS",
-            "thumbnail_url": "https://i.ytimg.com/vi/WLaBGRjvR2M/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=WLaBGRjvR2M"
-          },
-          {
             "video_id": "u8QBKSzn5K8",
             "title": "Credit Cycling Explained! (Should You Do it?)",
             "author": "Just Money Ish",
             "thumbnail_url": "https://i.ytimg.com/vi/u8QBKSzn5K8/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=u8QBKSzn5K8"
-          },
-          {
-            "video_id": "Cm-vEtFQnC0",
-            "title": "Capital One Will Close Your Credit Card For This One BIG Reason! (CREDIT CYCLING)",
-            "author": "Just Money Ish",
-            "thumbnail_url": "https://i.ytimg.com/vi/Cm-vEtFQnC0/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Cm-vEtFQnC0"
           },
           {
             "video_id": "HCkT2XqTvms",
@@ -51575,27 +50959,6 @@
             "source_url": "https://www.youtube.com/watch?v=w7-zxRnNOSo"
           },
           {
-            "video_id": "WvhULoLUeyg",
-            "title": "How to Use Lysted for Ticket Reselling: Beginner Guide (2023)",
-            "author": "FlipFlip",
-            "thumbnail_url": "https://i.ytimg.com/vi/WvhULoLUeyg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=WvhULoLUeyg"
-          },
-          {
-            "video_id": "v5vdJTQKlhU",
-            "title": "How To Sell Tickets On Ticketmaster (Beginner Guide)",
-            "author": "Ticket Flipping",
-            "thumbnail_url": "https://i.ytimg.com/vi/v5vdJTQKlhU/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=v5vdJTQKlhU"
-          },
-          {
-            "video_id": "4PXlRtr3IyQ",
-            "title": "Why a $20 Concert Ticket Comes With $23 in Fees",
-            "author": "Line Item",
-            "thumbnail_url": "https://i.ytimg.com/vi/4PXlRtr3IyQ/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=4PXlRtr3IyQ"
-          },
-          {
             "video_id": "rUdn6piNvLA",
             "title": "Amex Plum Card Review - Net 60 Payment Credit Card for Business Owners",
             "author": "Points Panda",
@@ -51617,13 +50980,6 @@
             "source_url": "https://www.youtube.com/watch?v=fEjp_gJN8OQ"
           },
           {
-            "video_id": "eEtyddAIvq8",
-            "title": "Credit Card Review: The Plum Card® from American Express",
-            "author": "Matthew Perry",
-            "thumbnail_url": "https://i.ytimg.com/vi/eEtyddAIvq8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=eEtyddAIvq8"
-          },
-          {
             "video_id": "UYH3UwJ9oOM",
             "title": "American Express Plum Business Charge Card",
             "author": "u2 credit consulting",
@@ -51636,13 +50992,6 @@
             "author": "Anthony Venture 2",
             "thumbnail_url": "https://i.ytimg.com/vi/ZSZN6BW7_m0/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=ZSZN6BW7_m0"
-          },
-          {
-            "video_id": "w8CgH2R003g",
-            "title": "I Survived an Amex Financial Review AGAIN: Mistakes to AVOID",
-            "author": "AskSebby",
-            "thumbnail_url": "https://i.ytimg.com/vi/w8CgH2R003g/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=w8CgH2R003g"
           },
           {
             "video_id": "XsemDHBgzWE",
@@ -51736,20 +51085,6 @@
             "source_url": "https://www.youtube.com/watch?v=xgsxM7jSJ8U"
           },
           {
-            "video_id": "VTeJfmUSPYg",
-            "title": "Ticketmaster Dynamic Pricing Algorithms",
-            "author": "Law & Business",
-            "thumbnail_url": "https://i.ytimg.com/vi/VTeJfmUSPYg/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=VTeJfmUSPYg"
-          },
-          {
-            "video_id": "mly_b1uoMoM",
-            "title": "Ticketmaster's Dynamic Pricing",
-            "author": "Pricefx",
-            "thumbnail_url": "https://i.ytimg.com/vi/mly_b1uoMoM/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=mly_b1uoMoM"
-          },
-          {
             "video_id": "2N5t8bm1dpA",
             "title": "Sellers Permit vs Resale Certificate - What's the Difference?",
             "author": "StartUp101",
@@ -51764,39 +51099,704 @@
             "source_url": "https://www.youtube.com/watch?v=w-siA5UEWLY"
           },
           {
-            "video_id": "ThfeGmFtkZk",
-            "title": "Credit Card Concierge Service | Underrated Benefit That's Useful for Both Travel & Daily Life",
-            "author": "Trip Astute",
-            "thumbnail_url": "https://i.ytimg.com/vi/ThfeGmFtkZk/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=ThfeGmFtkZk"
+            "video_id": "mEjNm8zKoQs",
+            "title": "98. Unlock MASSIVE Rewards with Buying Groups!",
+            "author": "Lets Get To The Points",
+            "thumbnail_url": "https://i.ytimg.com/vi/mEjNm8zKoQs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mEjNm8zKoQs"
           },
           {
-            "video_id": "KdXCjTDBTqE",
-            "title": "We Tried All the Credit Card Concierges Here’s What I Learned",
-            "author": "Calby Ng",
-            "thumbnail_url": "https://i.ytimg.com/vi/KdXCjTDBTqE/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=KdXCjTDBTqE"
+            "video_id": "nMlQUH3s8qY",
+            "title": "Buying groups: Big risks / big rewards | Ep223 | 10-7-23",
+            "author": "Frequent Miler",
+            "thumbnail_url": "https://i.ytimg.com/vi/nMlQUH3s8qY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nMlQUH3s8qY"
           },
           {
-            "video_id": "pgK3SEONYmE",
-            "title": "Luxury Credit Card Concierges Are They Worth Your Time (Here’s What’s Best)",
-            "author": "Calby Ng",
-            "thumbnail_url": "https://i.ytimg.com/vi/pgK3SEONYmE/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=pgK3SEONYmE"
+            "video_id": "Dbhznmaq0Bg",
+            "title": "Maximize Your Points: Stacking, Buyers Clubs, Redemption Hacks, and More",
+            "author": "Chris Hutchins",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dbhznmaq0Bg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dbhznmaq0Bg"
           },
           {
-            "video_id": "J8HUmBHqM3c",
-            "title": "Getting Started, Create a Ticket Group",
-            "author": "SplitSeasonTickets",
-            "thumbnail_url": "https://i.ytimg.com/vi/J8HUmBHqM3c/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=J8HUmBHqM3c"
+            "video_id": "p6KX6rsg_Rk",
+            "title": "13 ways to increase credit card spend (and get most of it back) | Ep197 | 4-8-23",
+            "author": "Frequent Miler",
+            "thumbnail_url": "https://i.ytimg.com/vi/p6KX6rsg_Rk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p6KX6rsg_Rk"
           },
           {
-            "video_id": "znwdKE6xlwA",
-            "title": "Reselling tickets above face value set to be banned by UK government | BBC News",
-            "author": "BBC News",
-            "thumbnail_url": "https://i.ytimg.com/vi/znwdKE6xlwA/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=znwdKE6xlwA"
+            "video_id": "ti02qu7iwX4",
+            "title": "How to earn $100s with your credit cards!",
+            "author": "DansDeals",
+            "thumbnail_url": "https://i.ytimg.com/vi/ti02qu7iwX4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ti02qu7iwX4"
+          },
+          {
+            "video_id": "MWPOAsKJ1-g",
+            "title": "13 GENIUS Ways to Hit Your Credit Card Minimum Spend (Without Overspending!)",
+            "author": "airelle",
+            "thumbnail_url": "https://i.ytimg.com/vi/MWPOAsKJ1-g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MWPOAsKJ1-g"
+          },
+          {
+            "video_id": "nRJlDybpS4s",
+            "title": "How To Liquidate Your Credit Cards | Turn Credit Into Cash!",
+            "author": "George Waters",
+            "thumbnail_url": "https://i.ytimg.com/vi/nRJlDybpS4s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nRJlDybpS4s"
+          },
+          {
+            "video_id": "8_GgpKDJJTE",
+            "title": "How to Turn Credit Into Capital in 2027 (Corporate Arbitrage Blueprint",
+            "author": "WealthRoom AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/8_GgpKDJJTE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8_GgpKDJJTE"
+          },
+          {
+            "video_id": "a1MwAkYtYBE",
+            "title": "How I Use Credit Cards To Make Money With No Money",
+            "author": "Mr. Will Roundtree",
+            "thumbnail_url": "https://i.ytimg.com/vi/a1MwAkYtYBE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a1MwAkYtYBE"
+          },
+          {
+            "video_id": "pjLnjZQ79Ng",
+            "title": "Credit Card Arbitrage to Generate Wealth AND Kill It",
+            "author": "Make Manage Grow Money",
+            "thumbnail_url": "https://i.ytimg.com/vi/pjLnjZQ79Ng/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pjLnjZQ79Ng"
+          },
+          {
+            "video_id": "7n9y5L1-mD0",
+            "title": "How To CORRECTLY HACK 0% APR Credit Cards (2025)",
+            "author": "Monty The Card Nerd",
+            "thumbnail_url": "https://i.ytimg.com/vi/7n9y5L1-mD0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7n9y5L1-mD0"
+          },
+          {
+            "video_id": "D6wFVrnYqb4",
+            "title": "The NEW 'Credit Card' Trap, Explained",
+            "author": "Grant Rudow",
+            "thumbnail_url": "https://i.ytimg.com/vi/D6wFVrnYqb4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D6wFVrnYqb4"
+          },
+          {
+            "video_id": "4pWev9D_0yQ",
+            "title": "A 3-Credit Card Cash Back Strategy Worth $500,000+",
+            "author": "Rob Berger",
+            "thumbnail_url": "https://i.ytimg.com/vi/4pWev9D_0yQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4pWev9D_0yQ"
+          },
+          {
+            "video_id": "gv9Q_Ee7DZ0",
+            "title": "Why people who pay cash fund your credit card rewards.",
+            "author": "MrJoey Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/gv9Q_Ee7DZ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gv9Q_Ee7DZ0"
+          },
+          {
+            "video_id": "SA627GQFS0k",
+            "title": "How To Turn Your Credit Card Into A Cash Flow Machine",
+            "author": "Velocity Channel",
+            "thumbnail_url": "https://i.ytimg.com/vi/SA627GQFS0k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SA627GQFS0k"
+          },
+          {
+            "video_id": "RUlyCRTmgxI",
+            "title": "Capital One Spark Cash Plus Credit Card Review 2026 | Business Cash Back, Benefits & Full Card Guide",
+            "author": "Bytes Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/RUlyCRTmgxI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RUlyCRTmgxI"
+          },
+          {
+            "video_id": "R62RsX0IuZo",
+            "title": "Capital One Spark Cash Plus Card Review 2025 | Worth It or Leave It?",
+            "author": "Elliot Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/R62RsX0IuZo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R62RsX0IuZo"
+          },
+          {
+            "video_id": "bQr7v1bOiXo",
+            "title": "3 Reasons You NEED The Spark Cash Plus Business Credit Card",
+            "author": "Ryan Maya",
+            "thumbnail_url": "https://i.ytimg.com/vi/bQr7v1bOiXo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bQr7v1bOiXo"
+          },
+          {
+            "video_id": "cpfdLJFA6I4",
+            "title": "Capital One Spark Cash Plus Card: The Ultimate Business Card",
+            "author": "Credit Compass TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/cpfdLJFA6I4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cpfdLJFA6I4"
+          },
+          {
+            "video_id": "E07WIJs8BE0",
+            "title": "Chase Ink Business Cash Review 2026 — The Best No Fee Business Card?",
+            "author": "Miles with Mary - Points & Miles Travel",
+            "thumbnail_url": "https://i.ytimg.com/vi/E07WIJs8BE0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E07WIJs8BE0"
+          },
+          {
+            "video_id": "PefxZqyor_s",
+            "title": "Chase Ink Business Premier Credit Card Review 2025 | Worth It or Leave It?",
+            "author": "Elliot Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/PefxZqyor_s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PefxZqyor_s"
+          },
+          {
+            "video_id": "jINKMWHyrg4",
+            "title": "Chase Ink Business Premier Credit Card Review 2026 | High Spending Business Rewards & Cash Back",
+            "author": "Bytes Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/jINKMWHyrg4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jINKMWHyrg4"
+          },
+          {
+            "video_id": "61XiQ9ahJjA",
+            "title": "I Have 7 Chase Business Cards: This One’s the Best",
+            "author": "Daily Drop",
+            "thumbnail_url": "https://i.ytimg.com/vi/61XiQ9ahJjA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=61XiQ9ahJjA"
+          },
+          {
+            "video_id": "egM5zxfGtj0",
+            "title": "The Chase Ink Cash: My HONEST 1-Year Review",
+            "author": "Spencer Johnson",
+            "thumbnail_url": "https://i.ytimg.com/vi/egM5zxfGtj0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=egM5zxfGtj0"
+          },
+          {
+            "video_id": "W3nb-AdwMck",
+            "title": "Ink Business Unlimited vs Ink Business Cash | Best Chase Business Card 2026",
+            "author": "Jake's Tech Lab",
+            "thumbnail_url": "https://i.ytimg.com/vi/W3nb-AdwMck/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W3nb-AdwMck"
+          },
+          {
+            "video_id": "oH1xNl2vB28",
+            "title": "BEST Chase Business Credit Card?! | Chase Ink Cash Review",
+            "author": "Ask Sebby Business",
+            "thumbnail_url": "https://i.ytimg.com/vi/oH1xNl2vB28/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oH1xNl2vB28"
+          },
+          {
+            "video_id": "z9qhRLe7frA",
+            "title": "Which Chase Business Card is Right For You? [Compare Chase Ink Credit Cards]",
+            "author": "Cards and Points",
+            "thumbnail_url": "https://i.ytimg.com/vi/z9qhRLe7frA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z9qhRLe7frA"
+          },
+          {
+            "video_id": "ZxYkMfSxxpI",
+            "title": "Chase Ink Business Preferred Credit Card Review 2025 | Worth It or Leave It?",
+            "author": "Elliot Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZxYkMfSxxpI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZxYkMfSxxpI"
+          },
+          {
+            "video_id": "zK3uQ4upb_4",
+            "title": "My favorite perk of the Chase Business Ink Cash #travelhacking",
+            "author": "Leen on Travel",
+            "thumbnail_url": "https://i.ytimg.com/vi/zK3uQ4upb_4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zK3uQ4upb_4"
+          },
+          {
+            "video_id": "z45WdojPWE8",
+            "title": "Chase Ink Business Cash or Ink Business Unlimited? Here's How to Choose",
+            "author": "Miles with Mary - Points & Miles Travel",
+            "thumbnail_url": "https://i.ytimg.com/vi/z45WdojPWE8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z45WdojPWE8"
+          },
+          {
+            "video_id": "uvd7Aufi38A",
+            "title": "Chase Ink Business Credit Cards (Which One Is For You?)",
+            "author": "Credit4CEO's",
+            "thumbnail_url": "https://i.ytimg.com/vi/uvd7Aufi38A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uvd7Aufi38A"
+          },
+          {
+            "video_id": "WXhl_7UcgL8",
+            "title": "Chase Ink Business Premier | Card Talk Ep9 | 10-10-24",
+            "author": "Frequent Miler",
+            "thumbnail_url": "https://i.ytimg.com/vi/WXhl_7UcgL8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WXhl_7UcgL8"
+          },
+          {
+            "video_id": "9mXtEwhakHo",
+            "title": "Amex Business Gold Review: Worth $375 or Overrated?",
+            "author": "Daniel Shepherd",
+            "thumbnail_url": "https://i.ytimg.com/vi/9mXtEwhakHo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9mXtEwhakHo"
+          },
+          {
+            "video_id": "TvJBiMpMRhw",
+            "title": "The Amex Business Gold Is a $320 MONEYMAKER?!",
+            "author": "Leen on Travel",
+            "thumbnail_url": "https://i.ytimg.com/vi/TvJBiMpMRhw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TvJBiMpMRhw"
+          },
+          {
+            "video_id": "Wf33Dss7Sl8",
+            "title": "Let's Really Break Down the American Express Business Gold Card!",
+            "author": "Luke's Points and Miles",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wf33Dss7Sl8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wf33Dss7Sl8"
+          },
+          {
+            "video_id": "nZSZ4gP-QwI",
+            "title": "The Amex Business Gold Credit Card Just Got A HUGE New Feature!",
+            "author": "Points with Phillip",
+            "thumbnail_url": "https://i.ytimg.com/vi/nZSZ4gP-QwI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nZSZ4gP-QwI"
+          },
+          {
+            "video_id": "9eT88-uWTrw",
+            "title": "How I Got The Amex Business Gold Sign-Up Bonus Twice",
+            "author": "Professor Oak",
+            "thumbnail_url": "https://i.ytimg.com/vi/9eT88-uWTrw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9eT88-uWTrw"
+          },
+          {
+            "video_id": "3bWSyAjx93M",
+            "title": "American Express Business Gold Credit Card Review 2026 | High Rewards Business Card Benefits & Fees",
+            "author": "Bytes Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/3bWSyAjx93M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3bWSyAjx93M"
+          },
+          {
+            "video_id": "Ye64oVq2FgU",
+            "title": "200,000 AMEX Business Gold Card Offer Is Back | No Lifetime Language Offers & How To Find Them",
+            "author": "Phillip Pak",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ye64oVq2FgU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ye64oVq2FgU"
+          },
+          {
+            "video_id": "2NMHIyn8lWI",
+            "title": "This Amex Business Gold Survey Reveals A LOT",
+            "author": "Matt Clausen",
+            "thumbnail_url": "https://i.ytimg.com/vi/2NMHIyn8lWI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2NMHIyn8lWI"
+          },
+          {
+            "video_id": "UBo0IdafezQ",
+            "title": "Should You Get the Amex Business Gold?",
+            "author": "Credit Card BS",
+            "thumbnail_url": "https://i.ytimg.com/vi/UBo0IdafezQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UBo0IdafezQ"
+          },
+          {
+            "video_id": "Fk75okyk2W4",
+            "title": "Amex Business Gold: SECRET Point Earning Machine",
+            "author": "Spencer Johnson",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fk75okyk2W4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Fk75okyk2W4"
+          },
+          {
+            "video_id": "U64ykipOtaA",
+            "title": "Amex Business Gold Card Review: Does It Pay for Itself? (2026)",
+            "author": "Escape of the Week",
+            "thumbnail_url": "https://i.ytimg.com/vi/U64ykipOtaA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U64ykipOtaA"
+          },
+          {
+            "video_id": "4uIEMf5mkHg",
+            "title": "Amex Gold Card 2026: $524 in Credits, 4X Dining — Worth the $325 Fee?",
+            "author": "Leo's Travel Hacks",
+            "thumbnail_url": "https://i.ytimg.com/vi/4uIEMf5mkHg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4uIEMf5mkHg"
+          },
+          {
+            "video_id": "q2u8OT37r4s",
+            "title": "American Express Business Gold vs Platinum Credit Card Comparison",
+            "author": "StartupWise",
+            "thumbnail_url": "https://i.ytimg.com/vi/q2u8OT37r4s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q2u8OT37r4s"
+          },
+          {
+            "video_id": "B-JWfjeKKyU",
+            "title": "American Express Business Gold Credit Card Review",
+            "author": "StartupWise",
+            "thumbnail_url": "https://i.ytimg.com/vi/B-JWfjeKKyU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B-JWfjeKKyU"
+          },
+          {
+            "video_id": "PsWV8Q1E-k0",
+            "title": "BIG CHANGES: Amex Business Gold Card Worth $375?! (Full Review)",
+            "author": "Mark Reese",
+            "thumbnail_url": "https://i.ytimg.com/vi/PsWV8Q1E-k0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PsWV8Q1E-k0"
+          },
+          {
+            "video_id": "DS0GsIckf58",
+            "title": "Delta SkyMiles Platinum Business Card Review 2025 | Worth It or Leave It?",
+            "author": "Elliot Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/DS0GsIckf58/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DS0GsIckf58"
+          },
+          {
+            "video_id": "ae1WayyrwnE",
+            "title": "Beginner’s Guide to Transfer Partners for BIG VALUE (Amex, Chase, Citi, Capital One Credit Cards)",
+            "author": "Mark Reese",
+            "thumbnail_url": "https://i.ytimg.com/vi/ae1WayyrwnE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ae1WayyrwnE"
+          },
+          {
+            "video_id": "Uvyem-_QFhI",
+            "title": "The Ultimate Guide to Maximizing Chase Points 2025",
+            "author": "AskSebby",
+            "thumbnail_url": "https://i.ytimg.com/vi/Uvyem-_QFhI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Uvyem-_QFhI"
+          },
+          {
+            "video_id": "M4SMio3nUKs",
+            "title": "How to Pick the Right Credit Card in 2026 for Free Travel, Rewards & Value | Aly Hajiani | FWS 105",
+            "author": "Finance With Sharan",
+            "thumbnail_url": "https://i.ytimg.com/vi/M4SMio3nUKs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M4SMio3nUKs"
+          },
+          {
+            "video_id": "yssYp2uZMdg",
+            "title": "American Express Plum Card Review 2025 | Worth It or Leave It?",
+            "author": "Elliot Explains",
+            "thumbnail_url": "https://i.ytimg.com/vi/yssYp2uZMdg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yssYp2uZMdg"
+          },
+          {
+            "video_id": "eEtyddAIvq8",
+            "title": "Credit Card Review: The Plum Card® from American Express",
+            "author": "Matthew Perry",
+            "thumbnail_url": "https://i.ytimg.com/vi/eEtyddAIvq8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eEtyddAIvq8"
+          },
+          {
+            "video_id": "1K72JHTnPlw",
+            "title": "The Amex Platinum Is Changing (And Not For The Better)",
+            "author": "Ben Hedges",
+            "thumbnail_url": "https://i.ytimg.com/vi/1K72JHTnPlw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1K72JHTnPlw"
+          },
+          {
+            "video_id": "8-7xVaopdzg",
+            "title": "Rumor: Amex To Drop INSANE Bonuses On Gold, Platinum Cards",
+            "author": "Points with Phillip",
+            "thumbnail_url": "https://i.ytimg.com/vi/8-7xVaopdzg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8-7xVaopdzg"
+          },
+          {
+            "video_id": "q4miWZl-6Jc",
+            "title": "How to Enforce Dealer Credit Limits at Checkout on a B2B Wholesale Portal | SKU.io",
+            "author": "SKUio",
+            "thumbnail_url": "https://i.ytimg.com/vi/q4miWZl-6Jc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q4miWZl-6Jc"
+          },
+          {
+            "video_id": "1HX4QoYAPMY",
+            "title": "what is ACH payment | ach payments explained | ach payment processing",
+            "author": "Finance Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/1HX4QoYAPMY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1HX4QoYAPMY"
+          },
+          {
+            "video_id": "Cm-vEtFQnC0",
+            "title": "Capital One Will Close Your Credit Card For This One BIG Reason! (CREDIT CYCLING)",
+            "author": "Just Money Ish",
+            "thumbnail_url": "https://i.ytimg.com/vi/Cm-vEtFQnC0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Cm-vEtFQnC0"
+          },
+          {
+            "video_id": "QmHwfz5Muvw",
+            "title": "Do THIS to Get MASSIVE Credit Limit Increase (FAST)",
+            "author": "Naam Wynn",
+            "thumbnail_url": "https://i.ytimg.com/vi/QmHwfz5Muvw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QmHwfz5Muvw"
+          },
+          {
+            "video_id": "6KiaTyIQOCQ",
+            "title": "5 Steps to get MASSIVE CREDIT Limit Increases (FAST)",
+            "author": "Naam Wynn",
+            "thumbnail_url": "https://i.ytimg.com/vi/6KiaTyIQOCQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6KiaTyIQOCQ"
+          },
+          {
+            "video_id": "2sUP7XrGRgM",
+            "title": "Do THIS for a MASSIVE Credit Limit Increase (FAST)",
+            "author": "Bella Sloan Enterprises",
+            "thumbnail_url": "https://i.ytimg.com/vi/2sUP7XrGRgM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2sUP7XrGRgM"
+          },
+          {
+            "video_id": "QFNkg3G6als",
+            "title": "5 BEST Business Credit Cards ($25,000 Limit)",
+            "author": "Naam Wynn",
+            "thumbnail_url": "https://i.ytimg.com/vi/QFNkg3G6als/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QFNkg3G6als"
+          },
+          {
+            "video_id": "D6bPd67bgps",
+            "title": "When Should You Ask for a Credit Limit Increase?",
+            "author": "Cal Barton",
+            "thumbnail_url": "https://i.ytimg.com/vi/D6bPd67bgps/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D6bPd67bgps"
+          },
+          {
+            "video_id": "w8CgH2R003g",
+            "title": "I Survived an Amex Financial Review AGAIN: Mistakes to AVOID",
+            "author": "AskSebby",
+            "thumbnail_url": "https://i.ytimg.com/vi/w8CgH2R003g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w8CgH2R003g"
+          },
+          {
+            "video_id": "3dq0zRBwn8E",
+            "title": "How to Avoid Amex Financial Reviews",
+            "author": "Cal Barton",
+            "thumbnail_url": "https://i.ytimg.com/vi/3dq0zRBwn8E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3dq0zRBwn8E"
+          },
+          {
+            "video_id": "L5GeiqJtqEc",
+            "title": "“Why American Express Trusts Income More Than Credit”",
+            "author": "IV(4) PROSPERITY",
+            "thumbnail_url": "https://i.ytimg.com/vi/L5GeiqJtqEc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L5GeiqJtqEc"
+          },
+          {
+            "video_id": "E-FSl936NIg",
+            "title": "Rakuten Won't Make You Rich... Use It Anyway (Rakuten Review)",
+            "author": "Money with Andrey",
+            "thumbnail_url": "https://i.ytimg.com/vi/E-FSl936NIg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=E-FSl936NIg"
+          },
+          {
+            "video_id": "R9f9H7_4bE8",
+            "title": "Applying for the Rakuten Credit Card… Is It Worth It?",
+            "author": "SimplyAndyHere",
+            "thumbnail_url": "https://i.ytimg.com/vi/R9f9H7_4bE8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R9f9H7_4bE8"
+          },
+          {
+            "video_id": "_xs_maW_2ZM",
+            "title": "Rakuten + Bilt: The Ultimate Points Stacking Strategy",
+            "author": "Travel Hacking Tips WITHOUT Juggling Credit Cards",
+            "thumbnail_url": "https://i.ytimg.com/vi/_xs_maW_2ZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_xs_maW_2ZM"
+          },
+          {
+            "video_id": "R-TCKAPsObw",
+            "title": "The RIGHT way to use Rakuten (from a points pro!)",
+            "author": "KaungFi",
+            "thumbnail_url": "https://i.ytimg.com/vi/R-TCKAPsObw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R-TCKAPsObw"
+          },
+          {
+            "video_id": "HbZGYalSsyc",
+            "title": "Why Most People Overpay For Everyday Purchases| Hidden Rakuten Stacking Secrets",
+            "author": "Everyday Money Heroes",
+            "thumbnail_url": "https://i.ytimg.com/vi/HbZGYalSsyc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HbZGYalSsyc"
+          },
+          {
+            "video_id": "lfbv6SuAgRE",
+            "title": "Ep 26- Before Black Friday: How to Earn Money or Travel Points With Rakuten",
+            "author": "Points Rookie",
+            "thumbnail_url": "https://i.ytimg.com/vi/lfbv6SuAgRE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lfbv6SuAgRE"
+          },
+          {
+            "video_id": "v36IWeannUs",
+            "title": "How To Earn MAX Value From Credit Cards (Reward Stacking Guide)",
+            "author": "Spencer Johnson",
+            "thumbnail_url": "https://i.ytimg.com/vi/v36IWeannUs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v36IWeannUs"
+          },
+          {
+            "video_id": "dXNdXw4A16A",
+            "title": "She Earned 100,000 Amex Points in 3 MONTHS on Rakuten Without Spending More",
+            "author": "The BoldlyGo Podcast: Revolutionizing Your Journey",
+            "thumbnail_url": "https://i.ytimg.com/vi/dXNdXw4A16A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dXNdXw4A16A"
+          },
+          {
+            "video_id": "Rs3ocS_gBOI",
+            "title": "How I Earned 400K Points Through Shopping Portals",
+            "author": "Hoss the Points Boss",
+            "thumbnail_url": "https://i.ytimg.com/vi/Rs3ocS_gBOI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Rs3ocS_gBOI"
+          },
+          {
+            "video_id": "V_o90eWaTpI",
+            "title": "CASH BACK STACKING | How I combine deals/apps/cards to get money back! (Rakuten, Dosh, PEI)",
+            "author": "Jon Joseph",
+            "thumbnail_url": "https://i.ytimg.com/vi/V_o90eWaTpI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V_o90eWaTpI"
+          },
+          {
+            "video_id": "VAOuseYv0SI",
+            "title": "Rakuten: What Influencers Won’t Share (Everything You Need to Know 2026)",
+            "author": "KaungFi",
+            "thumbnail_url": "https://i.ytimg.com/vi/VAOuseYv0SI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VAOuseYv0SI"
+          },
+          {
+            "video_id": "xTEAB6N6l_A",
+            "title": "Maximize Credit Card Points with Rakuten & SaveWise",
+            "author": "Itinerary Boss",
+            "thumbnail_url": "https://i.ytimg.com/vi/xTEAB6N6l_A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xTEAB6N6l_A"
+          },
+          {
+            "video_id": "kDpEoiV0EZM",
+            "title": "Rakuten Review & Demo (How I Earn THOUSANDS of Extra Points)",
+            "author": "Daily Drop",
+            "thumbnail_url": "https://i.ytimg.com/vi/kDpEoiV0EZM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kDpEoiV0EZM"
+          },
+          {
+            "video_id": "uUnfurRXAhs",
+            "title": "Complete Rakuten Guide! Earn More American Express Reward Points FAST!",
+            "author": "Simplyscotted",
+            "thumbnail_url": "https://i.ytimg.com/vi/uUnfurRXAhs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uUnfurRXAhs"
+          },
+          {
+            "video_id": "OxMh5dpHvJk",
+            "title": "How to Use the Capital One Shopping Portal | Ultimate Guide",
+            "author": "Twin Finances",
+            "thumbnail_url": "https://i.ytimg.com/vi/OxMh5dpHvJk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OxMh5dpHvJk"
+          },
+          {
+            "video_id": "ILSF_d9HX5I",
+            "title": "I Thought This Capital One Shopping Cashback Was Too Good To Be True",
+            "author": "Nate Bind",
+            "thumbnail_url": "https://i.ytimg.com/vi/ILSF_d9HX5I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ILSF_d9HX5I"
+          },
+          {
+            "video_id": "6_ILrKQ_BEI",
+            "title": "Stacking Cashback Apps Reveals This Shocking Hack",
+            "author": "WorldlyTips",
+            "thumbnail_url": "https://i.ytimg.com/vi/6_ILrKQ_BEI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6_ILrKQ_BEI"
+          },
+          {
+            "video_id": "1FoepUfDsnE",
+            "title": "Spend $1, Get $80 Back?! Capital One Shopping Glitch (2026)",
+            "author": "Nate Bind",
+            "thumbnail_url": "https://i.ytimg.com/vi/1FoepUfDsnE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1FoepUfDsnE"
+          },
+          {
+            "video_id": "kiOoNZghrGk",
+            "title": "How Chris Uses Capital One Shopping to Earn Free Hotel Stays",
+            "author": "UpgradedPoints",
+            "thumbnail_url": "https://i.ytimg.com/vi/kiOoNZghrGk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kiOoNZghrGk"
+          },
+          {
+            "video_id": "PtqbX-LQUjE",
+            "title": "Capital One Shopping App Honest Review 2026 | Pros & Cons",
+            "author": "Thrive Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/PtqbX-LQUjE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PtqbX-LQUjE"
+          },
+          {
+            "video_id": "CDTjD80PdZk",
+            "title": "This Capital One Shopping Strategy Earned Me $500+ Cash Back in 3 Months",
+            "author": "Michael Martinez",
+            "thumbnail_url": "https://i.ytimg.com/vi/CDTjD80PdZk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CDTjD80PdZk"
+          },
+          {
+            "video_id": "L-fP6r8X7A0",
+            "title": "Capital One Shopping App Review 2026 | Pros and Cons – Honest & Unbiased",
+            "author": "Bytes Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/L-fP6r8X7A0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L-fP6r8X7A0"
+          },
+          {
+            "video_id": "L5V4-qjpKSw",
+            "title": "How Is Nobody Talking About This? The $80 Capital One Shopping Bonus, Explained",
+            "author": "Eli",
+            "thumbnail_url": "https://i.ytimg.com/vi/L5V4-qjpKSw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L5V4-qjpKSw"
+          },
+          {
+            "video_id": "Mexc_KkiIkU",
+            "title": "Maximizing Credit Card Rewards with CardPointers - Full Guide",
+            "author": "Miles with Mary - Points & Miles Travel",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mexc_KkiIkU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mexc_KkiIkU"
+          },
+          {
+            "video_id": "i4N6SEsh28c",
+            "title": "Maximize Your Credit Card Rewards with CardPointers | Tutorial",
+            "author": "Max Miles Points",
+            "thumbnail_url": "https://i.ytimg.com/vi/i4N6SEsh28c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i4N6SEsh28c"
+          },
+          {
+            "video_id": "3sY2v2Stv7c",
+            "title": "HUGE Transfer and Welcome BONUSES From Chase and Amex",
+            "author": "Ben Hedges",
+            "thumbnail_url": "https://i.ytimg.com/vi/3sY2v2Stv7c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3sY2v2Stv7c"
+          },
+          {
+            "video_id": "iwdIgYSyL9s",
+            "title": "Chase Hyatt Business Card Bonus Rises to 70,000",
+            "author": "Paul's Points",
+            "thumbnail_url": "https://i.ytimg.com/vi/iwdIgYSyL9s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iwdIgYSyL9s"
+          },
+          {
+            "video_id": "YKkt6aTmI3c",
+            "title": "Major Chase Benefits Upgrade | Amex Offers Disappoint",
+            "author": "Joe Barreto",
+            "thumbnail_url": "https://i.ytimg.com/vi/YKkt6aTmI3c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YKkt6aTmI3c"
+          },
+          {
+            "video_id": "59DiBbciIn8",
+            "title": "Are You Using The WRONG Business Credit Cards?! (Here are the 7 best)!",
+            "author": "Rachel | Points & Miles",
+            "thumbnail_url": "https://i.ytimg.com/vi/59DiBbciIn8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=59DiBbciIn8"
+          },
+          {
+            "video_id": "Zgd5WIoedks",
+            "title": "AMEX, Citi & Chase Are Changing the Credit Card Rules!",
+            "author": "Cal Barton",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zgd5WIoedks/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Zgd5WIoedks"
+          },
+          {
+            "video_id": "9JkcZCA1q_M",
+            "title": "The Ultimate Catch All Card (Supercharging the Blue Business Plus)",
+            "author": "Fat Stacks Academy",
+            "thumbnail_url": "https://i.ytimg.com/vi/9JkcZCA1q_M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9JkcZCA1q_M"
+          },
+          {
+            "video_id": "qV4hh99M_Xs",
+            "title": "The Best Cash Back Credit Card in the Game",
+            "author": "Luke's Points and Miles",
+            "thumbnail_url": "https://i.ytimg.com/vi/qV4hh99M_Xs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qV4hh99M_Xs"
+          },
+          {
+            "video_id": "0EsrkpAxvQQ",
+            "title": "Amex Cracks Down on Gamers, Chase Penta-Stack Spotted",
+            "author": "Points Wire",
+            "thumbnail_url": "https://i.ytimg.com/vi/0EsrkpAxvQQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0EsrkpAxvQQ"
+          },
+          {
+            "video_id": "4RuPkU_XvWA",
+            "title": "Chase vs Amex 2026: Ultimate Rewards vs Membership Rewards — Partners, Ratios & Cards",
+            "author": "Leo's Travel Hacks",
+            "thumbnail_url": "https://i.ytimg.com/vi/4RuPkU_XvWA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4RuPkU_XvWA"
           },
           {
             "video_id": "kPzYR4RlrCM",
@@ -54301,7 +54301,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 7363 third-party videos (66842 captured tips)",
+        "source": "Spoken content of 7363 third-party videos (66900 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -54318,37 +54318,37 @@
   },
   "corpus_metrics": {
     "video_count": 7363,
-    "channel_count": 4425,
-    "total_words": 10131671,
-    "total_hours": 1999.85,
-    "total_pro_tips": 66842,
-    "unique_statutes_and_forms": 2370,
-    "unique_tools_and_portals": 18130
+    "channel_count": 4416,
+    "total_words": 10164342,
+    "total_hours": 2004.4,
+    "total_pro_tips": 66900,
+    "unique_statutes_and_forms": 2356,
+    "unique_tools_and_portals": 18391
   },
   "coverage": {
     "videos_classified": 7363,
     "videos_with_multiple_topics": 7360,
-    "tips_classified": 66842,
+    "tips_classified": 66900,
     "raw_transcripts_joined": 7363,
     "topic_video_counts": {
-      "business_model_and_economics": 5983,
-      "probate_and_docket_sourcing": 5672,
-      "unclaimed_property_and_escheat": 1402,
-      "genealogy_and_heirship_proof": 6119,
-      "skip_tracing_and_outreach": 3887,
-      "contracts_and_compensation": 5521,
-      "statutory_caps_and_licensing": 6321,
-      "automation_and_small_team_ops": 4865
+      "business_model_and_economics": 5985,
+      "probate_and_docket_sourcing": 5658,
+      "unclaimed_property_and_escheat": 1405,
+      "genealogy_and_heirship_proof": 6129,
+      "skip_tracing_and_outreach": 3884,
+      "contracts_and_compensation": 5525,
+      "statutory_caps_and_licensing": 6308,
+      "automation_and_small_team_ops": 4867
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 12154,
-      "probate_and_docket_sourcing": 11518,
+      "business_model_and_economics": 12143,
+      "probate_and_docket_sourcing": 11466,
       "unclaimed_property_and_escheat": 2663,
-      "genealogy_and_heirship_proof": 10091,
-      "skip_tracing_and_outreach": 1655,
-      "contracts_and_compensation": 9511,
-      "statutory_caps_and_licensing": 5613,
-      "automation_and_small_team_ops": 13637
+      "genealogy_and_heirship_proof": 10076,
+      "skip_tracing_and_outreach": 1654,
+      "contracts_and_compensation": 9519,
+      "statutory_caps_and_licensing": 5590,
+      "automation_and_small_team_ops": 13789
     }
   },
   "schema_version": "1.0",
