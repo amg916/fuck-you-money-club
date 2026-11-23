@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-037-saas-discount-and-gpo-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1959689,
+      "sha256": "4f15f10a6eed667c2895abea1334af12df0893d59d42b567e7f541dc64e54e1e"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2529043,
+      "sha256": "1eac9983f4df73db872ff4fab0b93deb39f985ff6e9e8681715d17761ce5c7f4"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 569460,
+      "sha256": "0178505741b91fc28786070d2e28b9c66897982c856c8b187cbe30c67993ec53"
+    },
+    "book.epub": {
+      "bytes": 264813,
+      "sha256": "1e437fc17c691ac8d524a958806bf911cf3d52e58cc57b230616bce341c728ec"
+    },
+    "art/cover.svg": {
+      "bytes": 4443,
+      "sha256": "0d8d82e21ba62008a6eb8cb6147aefabeb4418f271b8dca5ff8fe0c96d6692c2"
+    },
+    "art/scorecard.svg": {
+      "bytes": 63356,
+      "sha256": "82f5918efd8a0955506a1c411a641458494c67264ba9b987bd9986807377def9"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11910,
+      "sha256": "1cca0954b5a5d4c6a33927cf1437ff8c8541e8f00a8c997bed93a0618f878b76"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8490,
+      "sha256": "74a593d3b1c3c582c85f9c9feb85044e94d90cf9d882167508fe7c7ac464ab80"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12302,
+      "sha256": "925ed66116273747c0eb48c3aebb37ce8139978c0e70422897f0dd36e60e05d9"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9785,
+      "sha256": "71c01e70751c2e5897b5e3b01f7057ca6a77875b8a3f52629131d4753095416b"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10165,
+      "sha256": "7b1db462bd2ffe93a507c513f94ea7ae09a7b4a0865ab99742544401afbf4f41"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12207,
+      "sha256": "650e06703a8919d90418c20ed9efb19a49c7e6644d2adaf793f6278b63428762"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8983,
+      "sha256": "eaa8b03882f2d209830e05339d686fced7215b5da9956f30a28802a209db3477"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8481,
+      "sha256": "01feb9760ab33ef4f0464fe72959e0b0876ee053007b29e0224852f2f6f503ef"
+    }
+  }
+}

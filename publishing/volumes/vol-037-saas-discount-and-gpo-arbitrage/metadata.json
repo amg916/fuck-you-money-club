@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-037-saas-discount-and-gpo-arbitrage",
+  "volume_slug": "vol-037-saas-discount-and-gpo-arbitrage",
+  "volume_number": 37,
+  "site_ui": {
+    "cover": [
+      "SAAS & GPO",
+      "DISCOUNT",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "ZERO-MIGRATION LICENSE TRANSFERS",
+      "RECURRING CHANNEL & GPO SPREADS"
+    ],
+    "lead": "Cut SMB Zoom, Adobe, Microsoft 365, and cloud bills through authorized two-tier distributor transfers, Telarus/Avant master-agent residuals, and negotiated GPO volume brackets.",
+    "summary": "Benchmark invoices against eligible distributor pricing, secure customer-approved license transfers without tenant migration where supported, and reconcile Telarus/Avant UCaaS residuals alongside private GPO spend splits. Separate CPOR attribution from VIP/CSP transfer rules, verify volume commitments, and count only contracted savings and earned rebates after fees and clawbacks.",
+    "chapters": [
+      "SaaS discount brokerage & private GPO models",
+      "SMB buyers, two-tier distributors & master-agent payment rails",
+      "License spreads, UCaaS residuals & GPO split economics",
+      "Partner enrollment, lean stack & working-capital needs",
+      "Transfer restrictions, clawbacks & volume shortfall traps",
+      "Technographic triggers, invoice audits & first customers",
+      "Customer consent, VIP/CSP transfers & GPO bracket locks",
+      "Distributor portals, billing APIs & renewal tooling",
+      "CPOR attribution, channel contracts & savings disclosures",
+      "Autopay, eligible VCC rebates & referral loops",
+      "Lean account pods, residual ownership & exit valuation",
+      "First 30-day license-and-GPO launch sprint"
+    ],
+    "flow": [
+      [
+        "TECHNOGRAPHIC TRIGGER",
+        "Find SMB renewal windows & eligible software spend"
+      ],
+      [
+        "INVOICE BENCHMARK",
+        "Compare net pricing, commitments & service scope"
+      ],
+      [
+        "CPOR / VIP TRANSFER",
+        "Verify attribution vs transfer rules & authorize VIP/CSP moves"
+      ],
+      [
+        "GPO BRACKET LOCK",
+        "Document pooled volume, pricing tiers & spend splits"
+      ],
+      [
+        "AUTOPAY & VCC REBATE",
+        "Authorize payments & reconcile eligible rebates net of fees"
+      ],
+      [
+        "RENEWAL COMPOUNDING",
+        "Audit savings, residuals & retention before renewal"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "SAAS DISCOUNT BROKERAGE & GPO ARBITRAGE",
+  "subtitle": "The Complete Playbook for SaaS Discount Brokerage & GPO Arbitrage: $100,000–$900,000 USD in Annual Retained Revenue; Start with 1 FT + 3 C (4 People), Scale to 6",
+  "chapter_count": 12,
+  "total_word_count": 79326,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 94,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T12:12:44Z"
+}

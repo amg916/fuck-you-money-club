@@ -1,0 +1,636 @@
+from __future__ import annotations
+
+CHAPTER_3 = {
+    "id": "Q3",
+    "chapter_id": "Q3",
+    "chapter_number": 3,
+    "question_number": 3,
+    "slug": "unit-economics-margin-waterfall-working-capital-float",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for saas discount brokerage & gpo arbitrage?",
+    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
+    "subtitle": "ASC 606 Retained Spreads, Pax8 and Telarus Settlement Waterfalls, Microsoft NCE Credit Exposure, and Authorized Commit-Pooling Economics",
+    "layout_template": "financial_breakdown",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, ranks #04 of 37 with a "
+        "94/100 Money-to-Manpower Score across 12 mapped plays. The economic asset is retained "
+        "distribution income, not the customer's software subscription spend. This chapter reconciles "
+        "the canonical Conservative, Base, and Scaled cases to $32,000, $225,000, and $522,000 "
+        "annual owner net profit on $100,000, $500,000, and $900,000 recognized operator revenue. "
+        "Illustrative cohort waterfalls expose partner splits, reversals, contractor labor, acquisition "
+        "cost, payroll, and credit losses without changing those totals. Separate cash schedules "
+        "measure collection delay, distributor payout locks, and annual Microsoft NCE obligations. "
+        "Authorized enterprise commitment resale receives its own utilization stress test: a large "
+        "list-price discount cannot rescue inventory that cannot legally transfer or reliably sell."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual retained operator revenue; client subscription spend excluded",
+            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$500,000",
+            "context": "Annual retained operator revenue; client subscription spend excluded",
+            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual retained operator revenue; client subscription spend excluded",
+            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Separate Customer Spend, Earned Fees, and Retained Revenue",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with three ledgers: customer software spend, contractual operator compensation, "
+                    "and cash actually settled. A client paying $120,000 annually for subscriptions does "
+                    "not create $120,000 of brokerage revenue. If the authorized distribution arrangement "
+                    "leaves the operator a $12,000 spread, that spread is the starting compensation pool; "
+                    "a $2,000 referral allocation and $1,000 expected contractual reversal leave $9,000 "
+                    "retained revenue in this illustrative agency presentation. ASC 606 requires a "
+                    "principal-versus-agent assessment for each specified service, including whether the "
+                    "operator controls that service before transfer. Invoice routing, partner badges, and "
+                    "collecting the customer's money do not independently establish control. The canonical "
+                    "scorecard labels its top line gross revenue, but its stated revenue basis is retained "
+                    "operator compensation excluding pass-through subscriptions. Preserve that convention "
+                    "when importing the three scenarios. Define retained_share as the contractually retained "
+                    "fraction of an eligible compensation pool, never as permission to recognize the entire "
+                    "customer invoice. Record the assessment alongside contracts, distributor statements, "
+                    "and settlement identifiers so a bookkeeper can reproduce the treatment. Where a separate "
+                    "arrangement actually requires principal presentation, maintain its gross accounting "
+                    "ledger and bridge back to this chapter's retained economic basis rather than silently "
+                    "mixing incomparable revenue measures."
+                ),
+                (
+                    "Build the Base revenue bridge from four illustrative retained streams: $200,000 of "
+                    "authorized Partner-of-Record wholesale spreads, $120,000 of master-agent residuals, "
+                    "$80,000 of private GPO administrative rebates, and $100,000 of shared-savings fees. "
+                    "These allocations explain the $500,000 total; they are modeling assumptions, not "
+                    "additional scorecard inputs. A 30% contingent fee requires approximately $333,333.33 "
+                    "of verified savings to produce $100,000 after rounding, before any separately agreed "
+                    "referral deduction. At the permitted 25% and 35% fee endpoints, the same fee target "
+                    "requires $400,000 and approximately $285,714.29 of qualifying savings. Establish a "
+                    "normalized baseline covering seats, term, support level, taxes, and currency before "
+                    "claiming a renewal improvement. Removing unused seats is different from lowering "
+                    "the price of identical seats; the agreement must say which savings qualify. For "
+                    "Telarus or Avant residuals, identify the actual supplier, commissionable products, "
+                    "customer payment condition, and termination rules. For GPO rebates, distinguish an "
+                    "earned administrative fee from money contractually owed back to members. Microsoft "
+                    "CPOR attribution, CSP resale, Adobe VIP Marketplace participation, and delegated "
+                    "administration establish different rights and payment mechanics. Reconcile each "
+                    "stream to its own evidence rather than assuming that partner attribution always "
+                    "creates a collectible commission."
+                ),
+                (
+                    "Give every cohort a contract identifier, activation month, supplier program, billing "
+                    "frequency, earned-fee date, expected settlement date, and reversal expiration date. "
+                    "Use Pax8 or Ingram statements and the relevant master-agent portal as reconciliation "
+                    "evidence, not as substitutes for the signed compensation schedule. An illustrative "
+                    "Base pool of $550,000 before contractual allocations loses $30,000 to upstream or "
+                    "referral shares and $20,000 to estimated fee reductions, leaving $500,000 recognized "
+                    "operator revenue. The retention ratio is therefore 90.91% of the eligible fee pool, "
+                    "not 90.91% of customer subscription spend. Keep estimated variable-consideration "
+                    "reductions separate from receivable credit losses: a commission that was never earned "
+                    "and an earned invoice that cannot be collected require different explanations. "
+                    "Recognize contingent amounts only when the applicable performance and variable-"
+                    "consideration requirements support recognition; neither signature nor cash receipt "
+                    "alone decides the answer. Each month, compare estimated reductions with subsequent "
+                    "debits by supplier and vintage. Escalate cohorts whose cancellations, duplicate "
+                    "attribution, or member-credit adjustments exceed assumptions. Freeze owner distributions "
+                    "against disputed amounts while preserving the original journal trail. This discipline "
+                    "makes the volume's 12 mapped plays comparable without pretending their vendor rights, "
+                    "collection conditions, or reversal clocks are identical."
+                ),
+            ],
+            "table": {
+                "caption": "Revenue Boundary and Evidence Matrix for Authorized Distribution Income",
+                "headers": [
+                    "Economic event and classification",
+                    "Concrete operator unit calculation",
+                    "Evidence required before booking income",
+                    "Failure response and ledger treatment",
+                ],
+                "rows": [
+                    [
+                        "Client subscription invoices remain outside agency revenue",
+                        "$120,000 customer spend creates no automatic operator revenue",
+                        "Executed supplier agreement establishes the actual service relationship",
+                        "Separate customer funds from earned operator compensation balances",
+                    ],
+                    [
+                        "Authorized wholesale spreads begin the retained compensation bridge",
+                        "$12,000 spread less $3,000 deductions leaves $9,000 retained",
+                        "Distributor statement matches customer tenant and subscription identifiers",
+                        "Suspend disputed spread recognition until attribution evidence resolves",
+                    ],
+                    [
+                        "Master-agent residuals depend on supplier compensation terms",
+                        "$120,000 annual retained residuals average $10,000 each month",
+                        "Supplier remittance identifies commissionable products and paid periods",
+                        "Remove terminated circuits from future residual collection forecasts",
+                    ],
+                    [
+                        "Private GPO administrative rebates require member-level allocation",
+                        "$80,000 retained annual rebates exclude amounts owed members",
+                        "Member agreement identifies rebate ownership and settlement timing",
+                        "Book member-owned amounts as liabilities rather than revenue",
+                    ],
+                    [
+                        "Shared-savings fees require an agreed normalized baseline",
+                        "$333,333.33 verified savings at 30% yields approximately $100,000",
+                        "Signed baseline and renewal invoice establish comparable scope",
+                        "Recompute fees when seat reductions violate baseline definitions",
+                    ],
+                    [
+                        "Referral allocations reduce the modeled eligible compensation pool",
+                        "$550,000 eligible fees less $30,000 contractual partner allocations",
+                        "Referral contract identifies recipient entitlement and earning conditions",
+                        "Prevent duplicate deductions across revenue and acquisition expense",
+                    ],
+                    [
+                        "Expected fee reversals differ from customer credit losses",
+                        "$20,000 expected reductions complete the $500,000 revenue bridge",
+                        "Vintage reports distinguish eligibility failures from unpaid receivables",
+                        "True up estimates without charging the same loss twice",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the Spread Before Optimizing the Sales Funnel",
+                "body": (
+                    "Most hidden leakage comes from mismatched identifiers, baseline drift, and "
+                    "compensation conditions that never reached the operating ledger."
+                ),
+                "items": [
+                    "Join distributor subscription identifiers to customer tenant identifiers before paying a referral contractor; customer names alone create duplicate attribution.",
+                    "Version each shared-savings baseline and retain the actual renewal quote so term extensions cannot masquerade as equivalent annual savings.",
+                    "Track residual reversals by activation vintage and supplier rather than averaging every master-agent arrangement into one reserve rate.",
+                    "Request written treatment of GPO member rebates before quoting retained economics; a rebate owed to members is not an operator margin enhancement.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile Every Cohort Dollar to the Three Owner-Profit Cases",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use equivalent annual accounts to compare operating intensity without pretending every "
+                    "customer has identical software spend. At $5,000 of retained annual revenue per "
+                    "equivalent account, the Conservative, Base, and Scaled cases require 20, 100, and "
+                    "180 account equivalents. Actual customer counts can differ because a large enterprise "
+                    "renewal can carry several equivalents. The illustrative eligible fee pools are "
+                    "$110,000, $550,000, and $1,000,000. Deduct partner allocations of $6,000, $30,000, "
+                    "and $60,000, then expected contractual reductions of $4,000, $20,000, and $40,000. "
+                    "That bridge produces exactly $100,000, $500,000, and $900,000 retained revenue. "
+                    "The associated fee-pool retention ratios are 90.91%, 90.91%, and 90.00%; the Scaled "
+                    "case deliberately tolerates slightly greater distribution leakage. These ratios are "
+                    "illustrative bridge outputs, not independently supplied Formula v2.0 parameters. "
+                    "Likewise, dividing recognized revenue by account equivalents is a workload normalization, "
+                    "not evidence of market pricing. A full-year model assumes full-year equivalent "
+                    "production; signing 100 accounts evenly through December does not automatically produce "
+                    "100 account-years of residual income. Build monthly activation and recognition curves "
+                    "before converting these annual endpoints into a hiring plan. Keep annualized exit "
+                    "run rate separate from revenue actually earned during the year."
+                ),
+                (
+                    "Allocate operating costs explicitly rather than backing into a flattering margin. "
+                    "Conservative contractor delivery consumes $24,000, acquisition consumes $12,000, "
+                    "employee payroll consumes $12,000, tools and administration consume $14,000, and "
+                    "credit-loss expense consumes $6,000. Total cost is $68,000, leaving $32,000. Base "
+                    "uses $100,000, $55,000, $72,000, $30,000, and $18,000 respectively: $275,000 total "
+                    "cost and $225,000 profit. Scaled uses $132,000, $72,000, $108,000, $40,000, and "
+                    "$26,000: $378,000 total cost and $522,000 profit. These illustrative allocations "
+                    "reconcile the canonical outcomes; they do not claim that the scorecard supplied "
+                    "salary schedules or contractor rates. The Conservative employee allowance assumes "
+                    "an owner-operated full-time role with limited booked compensation; it cannot support "
+                    "an additional full-time market-rate employee. Contractor counts represent engaged "
+                    "specialists, not three or four full-time salaries. Treat owner profit as the scorecard's "
+                    "operating residual after the modeled costs, without introducing personal tax assumptions. "
+                    "Do not subtract the earlier fee-reversal estimate again as an operating expense. "
+                    "The published $1,500–$9,500 monthly opex range is planning context, not a cap on "
+                    "all delivery, acquisition, payroll, and credit costs at scale; this explicit waterfall "
+                    "controls the scenario reconciliation."
+                ),
+                (
+                    "Measure acquisition efficiency using newly won accounts, not the whole installed book. "
+                    "For illustration, $55,000 of Base acquisition expense supporting 25 new equivalent "
+                    "accounts implies $2,200 CAC. At $5,000 retained annual revenue less $1,000 delivery "
+                    "labor and $180 allocated credit expense per equivalent, contribution before acquisition "
+                    "and fixed costs is $3,820 annually, or approximately $318.33 monthly. Simple accrual "
+                    "CAC payback is therefore 6.91 months; settlement delays extend cash recovery and "
+                    "upfront onboarding can make the early curve worse. Do not call $55,000 divided by "
+                    "100 installed equivalents CAC. Keep payroll and tools outside this contribution "
+                    "measure but inside owner profit. Apply the same transparent acquisition convention "
+                    "to Conservative: six new equivalents imply $2,000 CAC and approximately 6.86 "
+                    "months of contribution payback. Scaled acquisition of 36 equivalents implies "
+                    "$2,000 CAC and approximately 5.82 months. Those calculations use scenario-specific "
+                    "delivery and credit allocations while excluding fixed costs consistently. Retention, "
+                    "supplier clawbacks, and the first renewal still determine whether payback becomes "
+                    "durable cash. Require a cohort report showing acquisition source, labor hours, "
+                    "recognized fees, reversals, and collected contribution before raising bids or "
+                    "adding another contractor. Cheap leads are expensive when every renewal requires "
+                    "manual entitlement repair."
+                ),
+            ],
+            "table": {
+                "caption": "Annual Formula v2.0 Reconciliation with Illustrative Line-Item Allocations",
+                "headers": [
+                    "Waterfall line and accounting meaning",
+                    "Conservative annual cohort economics",
+                    "Base annual cohort economics",
+                    "Scaled annual cohort economics",
+                ],
+                "rows": [
+                    [
+                        "Eligible compensation pool before modeled contractual deductions",
+                        "$110,000 eligible fees support twenty annual account equivalents",
+                        "$550,000 eligible fees support one hundred annual equivalents",
+                        "$1,000,000 eligible fees support one hundred eighty equivalents",
+                    ],
+                    [
+                        "Subtract partner allocations before measuring retained operator revenue",
+                        "$6,000 contractual allocations leave $104,000 before fee reductions",
+                        "$30,000 contractual allocations leave $520,000 before fee reductions",
+                        "$60,000 contractual allocations leave $940,000 before fee reductions",
+                    ],
+                    [
+                        "Subtract estimated eligibility reversals and contractual fee reductions",
+                        "$4,000 modeled reductions leave $100,000 recognized operator revenue",
+                        "$20,000 modeled reductions leave $500,000 recognized operator revenue",
+                        "$40,000 modeled reductions leave $900,000 recognized operator revenue",
+                    ],
+                    [
+                        "Recognized operator revenue excludes customer software subscription spend",
+                        "$100,000 retained revenue equals twenty equivalents at $5,000",
+                        "$500,000 retained revenue equals one hundred equivalents at $5,000",
+                        "$900,000 retained revenue equals one hundred eighty at $5,000",
+                    ],
+                    [
+                        "Subtract contractor delivery labor for authorized customer operations",
+                        "$24,000 delivery labor averages $1,200 per annual equivalent",
+                        "$100,000 delivery labor averages $1,000 per annual equivalent",
+                        "$132,000 delivery labor averages approximately $733.33 per equivalent",
+                    ],
+                    [
+                        "Subtract acquisition expense separately from contractual partner allocations",
+                        "$12,000 acquisition spending supports six illustrative new equivalents",
+                        "$55,000 acquisition spending supports twenty-five illustrative new equivalents",
+                        "$72,000 acquisition spending supports thirty-six illustrative new equivalents",
+                    ],
+                    [
+                        "Subtract employee payroll under the stated staffing assumptions",
+                        "$12,000 payroll assumes owner operation with limited booked compensation",
+                        "$72,000 payroll allowance accompanies one full-time operating role",
+                        "$108,000 payroll allowance accompanies two full-time operating roles",
+                    ],
+                    [
+                        "Subtract software tooling and administrative operating expense",
+                        "$14,000 covers reconciliation tooling and modeled administrative overhead",
+                        "$30,000 covers reconciliation tooling and modeled administrative overhead",
+                        "$40,000 covers reconciliation tooling and modeled administrative overhead",
+                    ],
+                    [
+                        "Subtract credit losses separately from contractual fee reversals",
+                        "$6,000 credit expense addresses earned receivables becoming uncollectible",
+                        "$18,000 credit expense addresses earned receivables becoming uncollectible",
+                        "$26,000 credit expense addresses earned receivables becoming uncollectible",
+                    ],
+                    [
+                        "Total operating deductions exclude previously deducted fee reductions",
+                        "$68,000 operating deductions consume 68% of retained revenue",
+                        "$275,000 operating deductions consume 55% of retained revenue",
+                        "$378,000 operating deductions consume 42% of retained revenue",
+                    ],
+                    [
+                        "Canonical owner profit and staffing reconcile without residual adjustments",
+                        "$32,000 owner profit; 32% margin; 1 FT + 3 C",
+                        "$225,000 owner profit; 45.0% margin; 1 FT + 3 C",
+                        "$522,000 owner profit; 58% margin; 2 FT + 4 C",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Fund Settlement Delays Without Financing Customer Defaults",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Model cash timing on an event calendar rather than a blended margin percentage. "
+                    "In the Base illustration, an earned fee waits 45 days for the relevant collection "
+                    "event and then another 30 days for a distributor or master-agent payout lock, "
+                    "creating 75 days from earning to available cash. Add those periods only when "
+                    "they are sequential; a hold running concurrently with customer collection does "
+                    "not create the same delay. Obtain actual statement and release dates for each "
+                    "contract instead of attributing these illustrative terms to Pax8, Ingram, Telarus, "
+                    "or Avant universally. At steady production, $500,000 divided by 365 and multiplied "
+                    "by 75 represents approximately $102,740 of retained revenue awaiting cash. This "
+                    "is a receivable exposure measure, not the required operating cash reserve. Using "
+                    "annual operating deductions as a conservative cash-outflow proxy, $275,000 divided "
+                    "by 365 and multiplied by 75 requires approximately $56,507 of operating runway. "
+                    "Because credit-loss expense itself is not a cash payment, replace that proxy with "
+                    "dated cash disbursements and collectible receipts in the live forecast. Never add "
+                    "the full receivable exposure and the operating-runway estimate as though both were "
+                    "independent funding uses. Identify the actual maximum cumulative cash deficit "
+                    "through a rolling thirteen-week forecast."
+                ),
+                (
+                    "For planning, assign Conservative a 45-day total collection lag, Base 75 days, "
+                    "and Scaled 90 days. Their operating-runway proxies are approximately $8,384, "
+                    "$56,507, and $93,205. Add designated liquidity buffers of $4,000, $20,000, and "
+                    "$40,000, producing rounded funding targets of $12,384, $76,507, and $133,205 "
+                    "before supplier prepayments and usable customer advances. Those buffers are cash "
+                    "allocations, not additional expenses; matching an annual reversal estimate does "
+                    "not mean that every reversal will occur simultaneously. Validate them against "
+                    "the largest open clawback cluster and supplier concentration. The $5,000–$30,000 "
+                    "startup capital range can support a staged, low-inventory launch, but it does "
+                    "not automatically finance the mature Base or Scaled settlement book. Negotiate "
+                    "shorter payout cycles, collect earned audit fees promptly, and delay discretionary "
+                    "owner distributions before increasing volume. Customer advances reduce the funding "
+                    "requirement only where contracts permit their use and after the associated supplier "
+                    "liability is reserved. Exclude funds owed to members and refundable amounts needed "
+                    "for imminent obligations. A signed credit facility can cover timing, but its "
+                    "interest and fees must enter the operating model; borrowing principal is neither "
+                    "revenue nor profit. Reforecast when a supplier changes settlement frequency."
+                ),
+                (
+                    "Annual Microsoft NCE commitments deserve a separate obligation ledger because "
+                    "monthly customer billing does not necessarily shorten the upstream commitment. "
+                    "For an illustrative $60,000 noncancelable supplier obligation, collecting only "
+                    "$6,000 before customer default leaves $54,000 of uncovered exposure before recoveries. "
+                    "A small brokerage spread cannot absorb that risk merely because an auto-debit "
+                    "authorization exists. Require cleared prefunding for the noncancelable exposure "
+                    "or another explicitly accepted funded protection before placing the order. Card "
+                    "payments and ACH collections can still reverse, so account for settlement status, "
+                    "return exposure, and contractual refund rights. Record the exact supplier cancellation "
+                    "window and permitted changes for the product ordered; do not generalize one "
+                    "subscription's rules across all Microsoft offers. A further 15-day Base payout "
+                    "delay adds approximately $11,301 of operating runway under the same cost proxy, "
+                    "while increasing retained receivables by approximately $20,548. Report both measures "
+                    "but fund the actual cash deficit only once. Reconcile each day the customer advance, "
+                    "upstream payable, settlement reserve, and unrestricted balance. If funding disappears, "
+                    "stop adding commitments and pursue the contractually permitted remedy rather than "
+                    "assuming that disabling a tenant cancels the supplier bill. Protect customer data "
+                    "and continuity while resolving the commercial exposure."
+                ),
+            ],
+            "table": {
+                "caption": "Collection Lag, Payout Locks, and Working-Capital Exposure Matrix",
+                "headers": [
+                    "Cash timing event and operating assumption",
+                    "Concrete calculation or scenario funding measure",
+                    "Required evidence and treasury control detail",
+                    "Failure response before increasing committed volume",
+                ],
+                "rows": [
+                    [
+                        "Conservative total collection lag assumes forty-five sequential days",
+                        "$68,000 annual costs times 45/365 requires approximately $8,384",
+                        "Map earning dates through actual unrestricted bank settlement",
+                        "Maintain $12,384 target including the designated $4,000 buffer",
+                    ],
+                    [
+                        "Base total collection lag assumes seventy-five sequential days",
+                        "$275,000 annual costs times 75/365 requires approximately $56,507",
+                        "Confirm collection and payout holds do not overlap",
+                        "Maintain $76,507 target including the designated $20,000 buffer",
+                    ],
+                    [
+                        "Scaled total collection lag assumes ninety sequential days",
+                        "$378,000 annual costs times 90/365 requires approximately $93,205",
+                        "Track supplier concentration across all open settlement vintages",
+                        "Maintain $133,205 target including the designated $40,000 buffer",
+                    ],
+                    [
+                        "Base receivable exposure measures revenue awaiting available cash",
+                        "$500,000 annual revenue times 75/365 creates approximately $102,740",
+                        "Reconcile receivables separately from the operating runway calculation",
+                        "Avoid adding receivable exposure again to operating runway",
+                    ],
+                    [
+                        "Additional fifteen-day Base payout delay extends cash recovery",
+                        "Operating runway rises $11,301 while receivables rise $20,548",
+                        "Record the revised release date for each remittance",
+                        "Freeze discretionary distributions until forecast liquidity recovers adequately",
+                    ],
+                    [
+                        "Annual supplier commitments survive some customer payment failures",
+                        "$60,000 supplier obligation less $6,000 collected leaves $54,000",
+                        "Verify cleared prefunding against the entire noncancelable exposure",
+                        "Stop new commitments and pursue contractually permitted recovery",
+                    ],
+                    [
+                        "Customer advances remain linked to specific supplier obligations",
+                        "Usable advances reduce funding only after associated liabilities",
+                        "Segregate member rebates and amounts needed for refunds",
+                        "Replace proxy runway with dated cash movements weekly",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Export the obligation and settlement registers",
+                    "action": "Join customer invoices, supplier payables, and commission statements by contract and subscription identifier.",
+                    "detail": "Capture earned dates, expected cash dates, upstream commitment balances, return exposure, and the earliest permitted cancellation date.",
+                },
+                {
+                    "step": 2,
+                    "title": "Build the thirteen-week cash schedule",
+                    "action": "Forecast dated collectible receipts and actual disbursements, separating unrestricted cash from customer-linked obligations.",
+                    "detail": "Use the maximum cumulative deficit plus a documented stress buffer; do not sum duplicate receivable and runway measures.",
+                },
+                {
+                    "step": 3,
+                    "title": "Resolve unmatched debits and release dates",
+                    "action": "Investigate supplier reversals, delayed residuals, and duplicate partner allocations before updating revenue estimates.",
+                    "detail": "Tie every adjustment to a settlement identifier and preserve the original estimate for vintage-level reserve testing.",
+                },
+                {
+                    "step": 4,
+                    "title": "Authorize volume against funded capacity",
+                    "action": "Compare each proposed annual commitment with cleared prefunding and the revised liquidity forecast.",
+                    "detail": "Release owner distributions only after supplier obligations, member balances, and the modeled settlement stress remain funded.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Stress Discount Rights, Utilization, and Partner-Tier Compression",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The TRACK_2 play enterprise_excess_seat_commit_pooling_arbitrage targets 35%–65% "
+                    "discounts to retail only where the vendor explicitly permits assignment or resale. "
+                    "Consider 100 seats with a $40 monthly list price: annual list value is $48,000. "
+                    "An authorized 50% acquisition discount costs $24,000; selling those seats at "
+                    "$32 monthly yields $38,400 customer billings and a $14,400 economic spread. "
+                    "Subtract $2,400 provisioning and support labor, $1,200 expected contractual "
+                    "reductions, and $1,800 acquisition cost to obtain $9,000 contribution before "
+                    "fixed payroll and overhead. On the chapter's agency basis, customer billings "
+                    "are not the recognized top line; the spread and applicable reductions drive "
+                    "retained revenue. This standalone subcohort is not incremental income added "
+                    "to the canonical scenarios. If procurement requires $24,000 upfront while "
+                    "customers pay $3,200 monthly, supplier cash alone takes 7.5 months to recover "
+                    "before other costs. An advertised discount therefore creates both utilization "
+                    "risk and financing demand. Price the specific product, geography, term, support "
+                    "obligation, and assignment mechanism rather than buying a nominal seat count. "
+                    "Reject distressed startup credits or enterprise commitments whose original "
+                    "agreement does not expressly support the proposed transaction."
+                ),
+                (
+                    "Program names do not make entitlements fungible. Microsoft SPLA usage rights, "
+                    "CSP subscription resale, GDAP delegated administration, Adobe multi-seat licensing, "
+                    "and AWS Marketplace CPPO private-offer authorization require separate eligibility "
+                    "and transaction checks. GDAP access alone grants no resale rights; CPPO authority "
+                    "does not automatically authorize transfer of unused cloud commitments. Provision "
+                    "isolated workspaces and customer-specific entitlements only after verifying the "
+                    "actual route. At 75 sold seats, the illustrative pool bills $28,800 annually "
+                    "against the unchanged $24,000 procurement cost. Holding the modeled $5,400 of "
+                    "delivery, reversal, and acquisition deductions constant leaves a $600 loss "
+                    "before fixed overhead. At full utilization, a 35% acquisition discount raises "
+                    "procurement to $31,200 and reduces contribution to $1,800; a 65% discount lowers "
+                    "procurement to $16,800 and raises contribution to $16,200. Do not budget the "
+                    "best discount until written authorization and executable pricing exist. If "
+                    "rights fail verification after provisioning, stop unauthorized provisioning, "
+                    "isolate affected access, and coordinate vendor-approved direct licenses or "
+                    "permitted migration while resolving audit liabilities transparently. Isolation "
+                    "must preserve required customer access and data-export arrangements rather "
+                    "than becoming an improvised deletion procedure. Document remediation costs "
+                    "in the affected cohort instead of burying them in future acquisition spending."
+                ),
+                (
+                    "Run sensitivity tests as deviations from the canonical cases, never as replacements "
+                    "for their published results. A 10% reduction in retained revenue with operating "
+                    "costs unchanged reduces Conservative profit to $22,000, Base to $175,000, and "
+                    "Scaled to $432,000; stressed margins become approximately 24.44%, 38.89%, and "
+                    "53.33%. A separate 20% increase in contractor delivery cost reduces profits "
+                    "to $27,200, $205,000, and $495,600. Another independent shock increasing contractual "
+                    "fee reductions by two percentage points of eligible fee pools costs $2,200, "
+                    "$11,000, and $20,000 respectively. Combine those shocks only when explicitly "
+                    "testing a joint downside; the same reversal cannot also be labeled lost revenue "
+                    "and bad debt. Audit acquisition assumptions against 15 U.S.C. 45 and the "
+                    "applicable B2B misrepresentation provisions of 16 CFR Part 310. Calling and "
+                    "messaging methods must satisfy applicable 47 U.S.C. 227 and 47 CFR 64.1200 "
+                    "requirements; B2B positioning does not create blanket immunity. Inflated savings "
+                    "claims can simultaneously increase refund exposure, destroy channel relationships, "
+                    "and corrupt CAC calculations. Protect the model by selling verified savings, "
+                    "using documented contact permissions where required, and retaining the quote "
+                    "and entitlement evidence behind every promised spread. Scale repeatable collected "
+                    "contribution, not the largest advertised discount."
+                ),
+            ],
+            "table": {
+                "caption": "Authorized Commit-Pooling and Cross-Scenario Downside Tests",
+                "headers": [
+                    "Stress condition and isolated modeling assumption",
+                    "Concrete unit math and profit consequence",
+                    "Required operator evidence before accepting exposure",
+                    "Risk fallback and funded operating response",
+                ],
+                "rows": [
+                    [
+                        "Authorized one hundred seat pool at full utilization",
+                        "$38,400 billings less $24,000 procurement leaves $14,400 spread",
+                        "Written resale permission identifies product territory and customer",
+                        "Budget $9,000 contribution after the modeled $5,400 deductions",
+                    ],
+                    [
+                        "Only seventy-five seats sell against fixed procurement",
+                        "$28,800 billings less $29,400 total deductions loses $600",
+                        "Customer commitments support realistic seat activation and utilization",
+                        "Stop additional purchases and pursue permitted inventory remedies",
+                    ],
+                    [
+                        "Procurement discount falls to thirty-five percent of list",
+                        "$38,400 billings less $31,200 procurement leaves $1,800 contribution",
+                        "Executable supplier quote confirms discount and commitment duration",
+                        "Reprice new offers or decline insufficiently profitable inventory",
+                    ],
+                    [
+                        "Procurement discount reaches sixty-five percent of list",
+                        "$38,400 billings less $16,800 procurement leaves $16,200 contribution",
+                        "Verify exceptional pricing includes actual transferable resale rights",
+                        "Retain liquidity for utilization shortfalls despite attractive spread",
+                    ],
+                    [
+                        "Retained revenue falls ten percent with costs unchanged",
+                        "Owner profits become $22,000 Conservative, $175,000 Base, $432,000 Scaled",
+                        "Supplier notices identify affected commissions and rebate tiers",
+                        "Reprice affected renewals and suspend uneconomic acquisition channels",
+                    ],
+                    [
+                        "Contractor delivery costs rise twenty percent without offsets",
+                        "Owner profits become $27,200 Conservative, $205,000 Base, $495,600 Scaled",
+                        "Time records identify entitlement repair and manual reconciliation",
+                        "Automate repeatable work before accepting additional delivery obligations",
+                    ],
+                    [
+                        "Fee reductions rise two points of eligible pools",
+                        "Additional deductions equal $2,200 Conservative, $11,000 Base, $20,000 Scaled",
+                        "Vintage evidence separates genuine reversals from duplicate debits",
+                        "Increase documented reserves and recover erroneous supplier adjustments",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Pre-Flight Checks Before Taking Commitment Risk",
+                "body": (
+                    "Release a transaction only when entitlement rights, retained economics, cash "
+                    "coverage, and customer representations all match the actual contract."
+                ),
+                "items": [
+                    "Verify written assignment or resale rights for the exact SKU and customer route; do not substitute GDAP access, CPOR attribution, or a startup discount for authorization.",
+                    "Recalculate contribution at 75% utilization and the executable acquisition discount, including supplier minimums, contractor labor, reversals, and acquisition expense.",
+                    "Match cleared prefunding to the noncancelable upstream obligation and test payout delays against unrestricted cash before submitting the order.",
+                    "Validate savings claims against the signed baseline and applicable calling rules, then document vendor-approved licensing or migration steps if rights fail verification.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A software discount becomes an operating profit only after the rights, reversals, labor, and cash calendar reconcile.",
+    "diagram_id": "diag-03",
+    "action_checklist": [
+        "Create separate ledgers for client subscription spend, eligible operator compensation, retained revenue, and unrestricted settled cash.",
+        "Reconcile the illustrative fee-pool bridges to exactly $100,000, $500,000, and $900,000 annual operator revenue without recognizing pass-through spend.",
+        "Load contractor, acquisition, payroll, administration, and credit assumptions that reconcile to $32,000, $225,000, and $522,000 owner profit.",
+        "Build a thirteen-week settlement forecast with actual sequential payout holds, restricted balances, supplier prepayments, and cohort-level reversal exposure.",
+        "Require funded coverage for noncancelable NCE obligations and written product-specific authorization before buying or reallocating enterprise commitment inventory.",
+        "Run revenue compression, delivery inflation, reversal, and 75% utilization tests before increasing acquisition spending or releasing owner distributions.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. 45 — Unfair methods of competition and unfair or deceptive acts or practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": "Support quoted savings, transferable-license claims, and rebate representations with contract-specific evidence rather than inflated list-price comparisons.",
+        },
+        {
+            "title": "16 CFR 310.3 — Deceptive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.3",
+            "relevance": "Evaluate telemarketing statements about material pricing, savings, restrictions, and performance against the applicable prohibitions.",
+        },
+        {
+            "title": "16 CFR 310.6 — Exemptions from the Telemarketing Sales Rule",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6",
+            "relevance": "Read the business-to-business exemption together with its exceptions; business purchasing status does not excuse all deceptive telemarketing conduct.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Evaluate acquisition calls and messages by technology, number type, and applicable permission requirements before incorporating their costs into CAC.",
+        },
+        {
+            "title": "47 CFR 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
+            "relevance": "Implement applicable calling, messaging, identification, permission, and do-not-call requirements for the specific acquisition method used.",
+        },
+    ],
+}

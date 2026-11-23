@@ -1,0 +1,659 @@
+from __future__ import annotations
+
+CHAPTER_2 = {
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "who-pays-saas-discount-brokerage-gpo-payment-rails",
+    "question_prompt": "Who writes the check in saas discount brokerage & gpo arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
+    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
+    "subtitle": "CFO Budget Authority, Microsoft CSP Commitments, GPO Rebate Waterfalls, ACH Finality, UCC Filing Signals & Defensible Shared-Savings Collections",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #37, SaaS Discount Brokerage & GPO Arbitrage, holds Rank #04 of 37 "
+        "with a 94/100 Money-to-Manpower Score. Its 12 mapped plays monetize authorized "
+        "distribution, supplier rebates, residual commissions, and measured savings rather "
+        "than ownership of client subscription spend. CFOs buy budget relief; procurement "
+        "buys defensible benchmarks; suppliers buy attributable demand. The operator gets "
+        "paid only when eligibility, signing authority, collection timing, and fee evidence "
+        "align. Conservative, Base, and Scaled annual owner profits are $32,000, $225,000, "
+        "and $522,000 on retained revenue of $100,000, $500,000, and $900,000 respectively. "
+        "This chapter maps those incentives into eight settlement structures, credit limits, "
+        "documented compensation waterfalls, and collection protections that survive a "
+        "renewal dispute without treating client billings or loan principal as operator revenue."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$100,000",
+            "context": "Annual retained revenue; excludes client software subscription pass-through",
+            "note": "32% net margin; $32,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$500,000",
+            "context": "Annual retained revenue; excludes client software subscription pass-through",
+            "note": "45.0% net margin; $225,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual retained revenue; excludes client software subscription pass-through",
+            "note": "58% net margin; $522,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Identify the payer, the economic buyer, and the person who can bind the budget",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The check writer changes with the contract, even when the same CFO approves the "
+                    "purchase. In an authorized CSP resale, the customer pays the reseller and the "
+                    "reseller owes its distributor; in a master-agent arrangement, the supplier or "
+                    "technology services distributor pays the contracted residual. A GPO supplier "
+                    "pays an administrative rebate on eligible member purchases, while the member "
+                    "pays a separately agreed shared-savings fee. Procurement can sponsor every one "
+                    "of these transactions without possessing signing or bank authority. Build an "
+                    "authority map naming the economic buyer, IT license administrator, authorized "
+                    "signer, accounts-payable owner, and treasury approver. Obtain the purchase-order "
+                    "requirement before negotiating the renewal, because an enthusiastic department "
+                    "head cannot repair a rejected invoice after the subscription starts. The acute "
+                    "pain is usually a dated renewal increase, unused capacity, duplicate tooling, "
+                    "or an unsupported license assignment, not a statute forcing somebody to hire "
+                    "a broker. Microsoft NCE commitments intensify that pain by separating payment "
+                    "frequency from contractual duration. Sell a documented reduction in total "
+                    "cost with uninterrupted entitlement, not a magical transfer that erases an "
+                    "existing commitment. Ask treasury when funds can actually leave the account, "
+                    "not merely when the budget becomes available."
+                ),
+                (
+                    "The mandatory play private_b2b_gpo_umbrella_rebate_arbitrage converts fragmented "
+                    "purchases into authorized purchasing brackets, not a shared tenant or a pool "
+                    "of transferable licenses. Across hundreds of member companies, a verified "
+                    "10,000-seat book at $120 annual eligible spend per seat represents $1,200,000 "
+                    "of purchasing volume; a contracted 3% supplier administrative rebate yields "
+                    "$36,000 before operating expenses. At 75,000 seats the same unit spend "
+                    "represents $9,000,000, and a hypothetical 12% bracket would yield $1,080,000. "
+                    "That upper illustration is neither a published Una or OMNIA entitlement nor "
+                    "the canonical Scaled forecast. Validate program access, eligible products, "
+                    "returns, taxes, supplier exclusions, and the exact rebate base. Pair quarter-end "
+                    "price-floor testing with a member's own invoice evidence, using Vendr or Tropic "
+                    "materials only through permitted access. A $100,000 like-for-like baseline "
+                    "reduced to $90,000 creates $10,000 of savings and a $3,000 fee at 30%. A "
+                    "separate $3,600 supplier rebate retained by the operator is disclosed compensation, "
+                    "not another $3,600 of member savings. If eligibility or the baseline is disputed, "
+                    "suspend contested fees, reconcile with both parties, refund unearned collections, "
+                    "and place affected members on eligible purchasing agreements rather than "
+                    "defending an unsupported bracket."
+                ),
+                (
+                    "Treat the twelve mapped plays as payer-specific operating routes rather than "
+                    "twelve promises of unrestricted vendor access. The first seven are private GPO "
+                    "umbrella rebates, Microsoft CSP wholesale spreads, Adobe VIP Marketplace "
+                    "renewal spreads, Zoom master-agent residuals, UCaaS expansion residuals, "
+                    "SaaS renewal shared savings, and parcel or telecom GPO rebates. The remaining "
+                    "five are quarterly benchmark true-ups, license right-sizing audits, authorized "
+                    "partner-attribution recovery, renewal-cliff sourcing, and the specified UCC "
+                    "refinance-trigger route. Only the two supplied machine identifiers designate "
+                    "named source plays; the other labels describe concrete implementations of "
+                    "this volume's authorized channels. Show each buyer who funds the economics. "
+                    "A procurement director values an auditable comparison that survives a CFO "
+                    "challenge; an IT director values retained access and a reversible transition; "
+                    "a supplier values incremental, attributable purchasing. Never let the broker's "
+                    "commission quietly determine the recommendation. Disclose supplier compensation "
+                    "before selection, preserve an alternative quote, and separate service acceptance "
+                    "from compensation eligibility. A board resolution, delegated-authority schedule, "
+                    "or countersigned purchasing agreement can evidence authority; a sales meeting "
+                    "cannot. Where a customer requires escrow, verify the escrow agent's authority "
+                    "and release instructions separately from the buyer's ability to approve the "
+                    "underlying subscription budget."
+                ),
+            ],
+            "table": {
+                "caption": "First Seven Mapped Plays: Actual Payers, Unit Economics, and Failure Responses",
+                "headers": [
+                    "Mapped operating play and authorized route",
+                    "Who pays and why they authorize payment",
+                    "Illustrative unit economics with explicit revenue basis",
+                    "Evidence requirement and practical failure response",
+                ],
+                "rows": [
+                    [
+                        "Play 1: private_b2b_gpo_umbrella_rebate_arbitrage through eligible member purchasing agreements",
+                        "Contracted supplier pays administrative rebates; member separately pays documented contingent savings fees",
+                        "10,000 seats multiplied by $120 eligible spend and 3% produces $36,000 retained rebates",
+                        "Verify member eligibility and dual compensation; suspend disputes, refund unearned fees, and correct agreements",
+                    ],
+                    [
+                        "Play 2: Microsoft CSP wholesale spread through authorized distributor and customer agreements",
+                        "Customer treasury pays subscription invoices because authorized licensing and predictable renewal costs matter",
+                        "$10,000 monthly collections less $9,200 distributor obligation produces $800 retained monthly spread",
+                        "Verify NCE term and transfer eligibility; decline unfunded commitments or use supplier-direct purchasing",
+                    ],
+                    [
+                        "Play 3: Adobe VIP Marketplace renewal spread under the actual reseller authorization",
+                        "Customer accounts payable funds eligible subscriptions after procurement confirms the renewal purchase order",
+                        "$50,000 customer billing less $47,500 supplier cost produces $2,500 retained annual spread",
+                        "Confirm anniversary alignment and product eligibility; preserve current service if transfer conditions fail",
+                    ],
+                    [
+                        "Play 4: Zoom master-agent residual under a verified Telarus or Avant supplier schedule",
+                        "Contracted distributor pays commissions because the supplier credits an eligible attributed customer account",
+                        "$10,000 monthly eligible recurring charges multiplied by 6% produces $600 monthly residual",
+                        "Verify supplier availability, commission schedule, and clawbacks; reject economics unsupported by written terms",
+                    ],
+                    [
+                        "Play 5: UCaaS expansion residual on eligible incremental customer lines",
+                        "Supplier or distributor pays for attributable expansion rather than the customer's entire communications budget",
+                        "100 incremental lines multiplied by $25 monthly and 8% produces $200 monthly residual",
+                        "Exclude taxes and unsupported line items; reconcile disconnected lines before claiming expansion compensation",
+                    ],
+                    [
+                        "Play 6: Contingent SaaS renewal shared savings under an agreed comparison method",
+                        "Member CFO pays from realized budget reduction after accepting an evidence-backed savings statement",
+                        "$20,000 verified first-year savings multiplied by 25% produces $5,000 contingent service revenue",
+                        "Normalize term and scope; suspend disputed amounts and bill only accepted eligible savings",
+                    ],
+                    [
+                        "Play 7: Parcel or telecom GPO administrative rebates under category-specific supplier contracts",
+                        "Eligible supplier pays contracted rebates for member purchases attributed to the purchasing agreement",
+                        "$400,000 eligible annual purchasing multiplied by 4% produces $16,000 retained administrative rebates",
+                        "Separate fuel surcharges and excluded services; move ineligible purchases onto an authorized alternative agreement",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the payer relationship before optimizing the commission",
+                "body": "The strongest commercial controls remove ambiguity before a supplier statement or customer invoice exists.",
+                "items": [
+                    "Ask accounts payable to validate the vendor record, purchase-order field, and invoice destination before the renewal quote is signed.",
+                    "Obtain the distributor's actual eligible-charge definition; headline commission percentages often exclude taxes, devices, credits, and selected SKUs.",
+                    "Attach the member's baseline invoice and compensation waterfall to the savings agreement so procurement can explain both the supplier rebate and customer fee.",
+                    "Schedule a quarter-end benchmark check only where contract timing permits negotiation; do not promise that calendar timing alone creates a supplier discount.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Match eight payment structures to commitment risk and settlement evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Separate the transport mechanism from the commercial condition attached to it. "
+                    "Wire and ACH move money; a retainer defines advance compensation; escrow and "
+                    "milestone holds allocate release authority; factoring sells or finances a "
+                    "receivable. Platform checkout bundles authorization, processing, and merchant "
+                    "rules. Statutory disbursement applies only when an actual legal process controls "
+                    "distribution, not because a broker labels an invoice protected. For an annual "
+                    "NCE purchase, the cleanest small-team posture is a customer-funded commitment "
+                    "before activation, with an authorized ACH or card instruction for subsequent "
+                    "eligible charges. Monthly auto-debit alone does not fund an annual liability. "
+                    "If the customer pays $10,000 monthly while the distributor commitment totals "
+                    "$110,400 annually, the operator may still face most of that obligation after "
+                    "a second-month default. Obtain full-term funding, documented third-party "
+                    "credit support, or a supplier-direct structure that leaves the commitment with "
+                    "the supplier. A card authorization is not cash, and a bank credit is not "
+                    "proof against every return, dispute, or fraud recovery. Record transaction "
+                    "identifiers, account ownership, funding status, and the operational release "
+                    "decision. Never tell fulfillment that a screenshot, remittance email, or "
+                    "pending checkout authorizes an irreversible subscription order."
+                ),
+                (
+                    "For business ACH, collect an agreement identifying the legal entity, account, "
+                    "debit amount or calculation method, timing, and revocation procedure; obtain "
+                    "the bank's required authorization evidence and processing configuration. "
+                    "Validate account ownership through the processor's supported verification "
+                    "method and avoid storing raw banking credentials in the CRM. Corporate "
+                    "entries and consumer entries have different return frameworks, so do not "
+                    "quote one universal finality window. Regulation E primarily concerns consumer "
+                    "accounts; 12 CFR 1005.10 is relevant when a preauthorized consumer transfer "
+                    "actually falls within that coverage. Corporate ACH rights also depend on "
+                    "network rules and banking agreements. Wire instructions deserve a known-number "
+                    "callback because compromised supplier email can redirect an otherwise valid "
+                    "payment. UCC Article 4A, including section 4A-202 as enacted by the relevant "
+                    "state, makes agreed security procedures material to certain commercial payment "
+                    "orders. Use dual approval for beneficiary changes and compare the beneficiary "
+                    "entity with the executed contract. Stripe or another supported checkout "
+                    "provider can simplify invoices and receipts, but its dispute and reserve "
+                    "terms still govern. Reconcile processor fees separately from supplier costs; "
+                    "neither should disappear inside a casually described net deposit."
+                ),
+                (
+                    "Escrow works only when the provider accepts this transaction type, identifies "
+                    "the parties, and receives executable release conditions. For a $6,000 savings "
+                    "engagement, a documented $2,000 advance and $4,000 acceptance-linked balance "
+                    "can protect working capital without pretending that subscription entitlements "
+                    "are physical goods with universal inspection rules. State exactly whether "
+                    "the advance earns against delivered work or is refundable until a specified "
+                    "event. Keep any required segregated funds outside the operating account and "
+                    "do not market an ordinary bank balance as escrow. Factoring a $20,000 accepted "
+                    "invoice at an illustrative 90% advance supplies $18,000 initially; a $600 "
+                    "fee and the remaining reserve must be reconciled under the factor's actual "
+                    "recourse terms. Customer acceptance, assignment restrictions, and dilution "
+                    "matter more than the headline advance. A milestone hold protects a buyer "
+                    "but must leave enough funded cash to satisfy any upstream commitment. "
+                    "Statutory distributions, such as bankruptcy priority payments under 11 U.S.C. "
+                    "507, are recovery contexts rather than routine SaaS collection rails. Do "
+                    "not extend credit expecting priority treatment. Select the structure that "
+                    "matches the obligation, and price its collection delay, reserve requirement, "
+                    "and dispute burden into the deal before signing."
+                ),
+            ],
+            "table": {
+                "caption": "Eight Payment and Settlement Structures Compared for SaaS Brokerage Operations",
+                "headers": [
+                    "Rail or commercial settlement structure",
+                    "Funding authority and suitable operating use",
+                    "Release evidence and timing exposure",
+                    "Protection mechanism and failure response",
+                ],
+                "rows": [
+                    [
+                        "Wire transfer for verified upfront commitment funding",
+                        "Customer treasury approves a beneficiary matching the signed supplier or broker contract",
+                        "Bank confirms receipt after independently verified instructions; recovery and fraud risks still require controls",
+                        "Use known-number callbacks and dual beneficiary approval; pause fulfillment when account details change unexpectedly",
+                    ],
+                    [
+                        "Independent escrow with transaction-specific release instructions",
+                        "Buyer funds an accepting escrow provider whose agreement identifies release authority and dispute handling",
+                        "Agent releases against named acceptance evidence rather than a broker's unilateral assertion of completion",
+                        "Verify provider scope and fee schedule; retain funds under the agreed dispute procedure",
+                    ],
+                    [
+                        "Authorized ACH debit for funded recurring obligations",
+                        "Account holder authorizes the debit while treasury confirms account ownership and payment timing",
+                        "Processor reports settlement and returns; applicable timing varies with entry type and banking rules",
+                        "Monitor returns and balances; stop new commitments while resolving authorization or funding failures",
+                    ],
+                    [
+                        "Retainer or advance credited against defined services",
+                        "Budget owner signs the service schedule and accounts payable funds the documented advance",
+                        "Revenue follows earned performance rather than receipt alone; contract defines refund and credit mechanics",
+                        "Track unearned balances separately; refund unused amounts when the agreed earning conditions fail",
+                    ],
+                    [
+                        "Statutory disbursement under an actual court-controlled process",
+                        "Trustee or other authorized official distributes according to governing law and applicable court instructions",
+                        "Timing follows the proceeding; ordinary brokerage invoices receive no invented priority or guaranteed recovery",
+                        "Obtain case-specific claim documentation; treat expected proceeds as uncertain recovery rather than operating cash",
+                    ],
+                    [
+                        "Platform checkout through an approved merchant processor",
+                        "Authorized customer uses supported card or bank methods under the processor's merchant terms",
+                        "Authorization, capture, settlement, reserves, and disputes remain distinct events in the collection record",
+                        "Use hosted payment capture and receipts; delay risky commitments until funding protections are satisfied",
+                    ],
+                    [
+                        "Factoring an accepted and assignable commercial receivable",
+                        "Factor approves the debtor and advances against a documented invoice with permitted assignment",
+                        "$20,000 accepted invoice at 90% advance provides $18,000 before contractual reserve reconciliation",
+                        "Check recourse, notices, and dilution; avoid factoring contested savings or prohibited assignments",
+                    ],
+                    [
+                        "Milestone holds attached to objective service acceptance",
+                        "Buyer treasury retains the agreed balance until named evidence establishes the milestone",
+                        "$6,000 engagement can release $2,000 upfront and $4,000 after documented acceptance",
+                        "Define a bounded review period and dispute process; never fund annual licenses from an unfunded hold",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Map authority and contractual liability",
+                    "action": "Identify the signer, bank approver, supplier creditor, and party responsible for the full subscription term.",
+                    "detail": "Attach delegated authority, purchasing requirements, eligible program terms, and the exact commitment amount to the deal record.",
+                },
+                {
+                    "step": 2,
+                    "title": "Verify funding and release instructions",
+                    "action": "Confirm account ownership, independently verify changed beneficiaries, and establish the permitted funding method.",
+                    "detail": "Record processor or bank evidence and any escrow release conditions; a pending payment must not trigger irreversible fulfillment.",
+                },
+                {
+                    "step": 3,
+                    "title": "Activate only the authorized transaction",
+                    "action": "Match funded orders to customer tenant identifiers, eligible SKUs, supplier terms, and documented transfer permissions.",
+                    "detail": "Use the program's actual transfer process; partner attribution records alone do not establish license or billing transfer authority.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile cash, compensation, and exceptions",
+                    "action": "Match customer receipts, supplier obligations, earned fees, reserves, and refunds to a single deal identifier.",
+                    "detail": "Route discrepancies to a named owner and deadline; suspend contested compensation while preserving undisputed service obligations.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Make the fee enforceable through attribution, savings evidence, and narrow protection",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Fee protection begins with a defined service and evidence of performance, "
+                    "not an expansive restriction on the customer's purchasing freedom. The "
+                    "agreement should name covered entities, suppliers, products, baseline dates, "
+                    "measurement period, accepted exclusions, compensation rate, invoice trigger, "
+                    "and records needed for verification. Define a narrow attribution period "
+                    "for introduced opportunities and a bounded post-termination tail for "
+                    "documented work, subject to applicable law and the supplier agreement. "
+                    "Do not claim ownership of every future software purchase. For savings, "
+                    "normalize quantities, service levels, currency, contract duration, credits, "
+                    "implementation costs, and existing discounts. A $120,000 baseline reduced "
+                    "to $108,000 but requiring $3,000 migration work produces $9,000 of net "
+                    "first-year savings under a total-cost definition; a 35% contingent fee "
+                    "is $3,150, not $4,200. Document whether avoidable seat reductions qualify "
+                    "and whether savings must be realized before billing. If supplier compensation "
+                    "also exists, show its recipient and treatment in the same waterfall. "
+                    "Provide a review period, a specific objection process, and partial payment "
+                    "of undisputed amounts. Keep access to supporting invoices proportionate "
+                    "to the measurement task rather than demanding unrestricted tenant access "
+                    "as a substitute for a clear fee definition."
+                ),
+                (
+                    "Authorized partner attribution protects supplier-paid economics but does not "
+                    "replace a customer contract. Microsoft CPOR, CSP reseller relationships, "
+                    "and administrative access mechanisms serve different purposes; CPOR alone "
+                    "does not transfer a license, invoice, or annual obligation. Adobe VIP "
+                    "Marketplace changes must follow that program's actual reseller and renewal "
+                    "procedures. For Telarus or Avant opportunities, obtain the applicable "
+                    "supplier schedule and confirm customer attribution, commissionable charges, "
+                    "payment trigger, clawbacks, and treatment after termination. A $600 monthly "
+                    "residual can look evergreen while remaining contingent on the customer "
+                    "paying and maintaining eligible service. Maintain a compensation ledger "
+                    "with source order, customer identifier, eligible recurring charge, rate, "
+                    "effective date, collected amount, and dispute deadline. Compare supplier "
+                    "statements against the ledger monthly. If three eligible months at $600 "
+                    "are omitted, the recovery claim is $1,800 supported by orders and statements, "
+                    "not an estimate based on the customer's entire technology budget. Submit "
+                    "disputes through the contracted channel, stop accruing unsupported amounts, "
+                    "and reconcile credits before distributing commissions. An integration from "
+                    "Pax8 or Ingram can transport records, but automation cannot create missing "
+                    "authority, repair an ineligible product, or guarantee a payout that the "
+                    "signed supplier schedule excludes."
+                ),
+                (
+                    "The second mandatory source play, ucc1_expiration_refi_trigger_arbitrage, is "
+                    "a sourcing adjacency rather than permission to treat financing principal "
+                    "as SaaS revenue. State Secretary of State UCC filings can identify "
+                    "secured-credit relationships, but a financing statement normally does "
+                    "not establish loan maturity, current balance, or whether an MCA exists. "
+                    "UCC section 9-515 generally gives a financing statement five years of "
+                    "effectiveness, with exceptions; continuation timing is not a payoff date. "
+                    "Use a filing to prioritize verification, then obtain borrower-authorized "
+                    "documents before describing a business as four to nine months into "
+                    "expensive financing. Illustratively, 40 verified prospects, 10 qualified "
+                    "conversations, and two accepted referrals at a contractually permitted "
+                    "$750 each produce $1,500 of separate referral revenue, not the $200,000 "
+                    "of financing arranged. Exclude that adjacent revenue from this volume's "
+                    "canonical retained SaaS cases. Verify licensing, referral compensation, "
+                    "and applicable commercial-financing disclosures before introducing a provider. "
+                    "California Financial Code section 22800 and following addresses covered "
+                    "commercial-financing offers. If automated outreach or referral eligibility "
+                    "fails, use direct mail, compliant B2B work-email sequences, and manual "
+                    "human-dialed outreach with applicable suppression checks; partner with an "
+                    "eligible provider instead of improvising a financing offer."
+                ),
+            ],
+            "table": {
+                "caption": "Remaining Five Mapped Plays and Two Fee-Protection Controls",
+                "headers": [
+                    "Mapped play or protection mechanism",
+                    "Payer motivation and required documentary basis",
+                    "Illustrative fee or recovery calculation",
+                    "Risk fallback and collection boundary",
+                ],
+                "rows": [
+                    [
+                        "Play 8: Quarter-end benchmark true-up within the member's authorized renewal engagement",
+                        "Member CFO pays for verified incremental savings using permitted benchmarks and comparable supplier offers",
+                        "$80,000 normalized baseline less $76,000 accepted renewal yields $4,000 savings and $1,200 at 30%",
+                        "Reject inaccessible benchmark claims; withdraw disputed comparisons and collect only independently supported savings",
+                    ],
+                    [
+                        "Play 9: License right-sizing audit measured after usable entitlements actually decline",
+                        "Customer budget owner pays when removable capacity reduces invoiced costs without disrupting required workflows",
+                        "50 removable seats multiplied by $20 monthly yields $12,000 annual savings and $3,000 at 25%",
+                        "Check removal windows and minimum quantities; defer fees until contractual and operational reductions occur",
+                    ],
+                    [
+                        "Play 10: Authorized partner-attribution recovery through the contracted supplier dispute channel",
+                        "Supplier or distributor corrects omitted compensation when eligible orders establish the existing payment obligation",
+                        "Three omitted months multiplied by $600 eligible residual produces $1,800 recovered compensation",
+                        "Respect claim deadlines and clawbacks; reverse unsupported accruals instead of charging the customer twice",
+                    ],
+                    [
+                        "Play 11: Renewal-cliff sourcing tied to verified dates rather than guessed tenant characteristics",
+                        "Customer pays contingent savings after a timely intervention produces an accepted like-for-like renewal reduction",
+                        "Twenty qualified renewals producing two engagements with $8,000 savings each yields $4,800 at 30%",
+                        "Verify renewal dates directly; use permitted DNS signals only for prioritization and abandon false positives",
+                    ],
+                    [
+                        "Play 12: ucc1_expiration_refi_trigger_arbitrage as a separately accounted authorized referral adjacency",
+                        "Eligible financing provider pays permitted referral compensation after its contractually defined acceptance event",
+                        "Forty verified prospects yielding two accepted referrals at $750 produces $1,500 outside canonical SaaS revenue",
+                        "Verify borrower facts and state requirements; use direct mail, B2B email, and manual outreach fallbacks",
+                    ],
+                    [
+                        "Control: Narrow attribution clause with a defined post-termination compensation tail",
+                        "Customer accepts protection for named opportunities and documented work rather than every future supplier relationship",
+                        "$10,000 accepted savings at the agreed 30% remains a $3,000 claim within the valid covered period",
+                        "Document introduction and causation; remove unrelated purchases and resolve contested scope through the agreed process",
+                    ],
+                    [
+                        "Control: Dual-compensation waterfall separating member benefit from operator supplier compensation",
+                        "Member sees supplier rebates, member credits, savings fees, and any overlapping economic benefit before signing",
+                        "$10,000 member savings supports $3,000 fee; separate $3,600 retained supplier rebate is disclosed operator compensation",
+                        "Credit rebates only where actually passed through; refund unearned amounts and avoid counting one benefit twice",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Screen counterparties, reserve exposure, and reconcile the canonical profit cases",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Counterparty screening should answer whether the named entity can fund "
+                    "the commitment and whether the person signing can bind it. Verify "
+                    "registration, operating address, beneficial ownership where the payment "
+                    "provider requires it, signer authority, and consistency between invoice "
+                    "entity and bank account. Obtain proportionate financial evidence for "
+                    "credit requests: recent statements supplied with permission, payment "
+                    "references, aging reports, and business credit information from services "
+                    "such as Dun & Bradstreet or Experian Business. Public liens and UCC "
+                    "filings are leads for questions, not automatic proof of insolvency. "
+                    "Avoid unsupported personal credit pulls; consumer reports require a "
+                    "permissible purpose under 15 U.S.C. 1681b. Set exposure limits against "
+                    "unfunded contractual cost, not expected commission. On a $110,400 "
+                    "annual distributor commitment, $9,200 of initial customer funding "
+                    "leaves $101,200 of upstream cost unfunded before other protections. "
+                    "A high-margin sales presentation does not cure that balance-sheet "
+                    "risk. Require additional funding or a credit-supported alternative "
+                    "before ordering. Monitor ACH returns, late supplier remittances, "
+                    "rapid seat additions, entity changes, and repeated requests to "
+                    "switch payment accounts. Escalate new commitments immediately while "
+                    "handling existing service rights under the actual contract, rather "
+                    "than assuming that suspension cancels annual liabilities."
+                ),
+                (
+                    "Reconcile the Formula v2.0 cases using the supplied retained-revenue "
+                    "basis, even where the scorecard labels its input gross revenue. "
+                    "Conservative is $100,000 revenue, $68,000 total modeled costs, "
+                    "and $32,000 owner net profit at 32%, supported by one full-time "
+                    "operator and three contractors. Base is $500,000 revenue, "
+                    "$275,000 costs, and $225,000 profit at 45.0% with the same "
+                    "staffing count. Scaled is $900,000 revenue, $378,000 costs, "
+                    "and $522,000 profit at 58% with two full-time people and "
+                    "four contractors. These cost totals are arithmetic reconciliations, "
+                    "not newly supplied expense allocations. The $1,500–$9,500 monthly "
+                    "opex range is a planning input, not evidence that every modeled "
+                    "cost fits within that range. The $5,000–$30,000 startup capital "
+                    "range likewise cannot collateralize unlimited annual commitments. "
+                    "Separate client subscription collections from retained compensation. "
+                    "For $120,000 customer billings against $110,400 distributor cost, "
+                    "the modeled retained spread is $9,600. Under ASC 606, evaluate "
+                    "principal-versus-agent status for each specified service; contractual "
+                    "control determines accounting presentation, not a broker label. "
+                    "Where agency treatment applies, recognize the earned net fee "
+                    "rather than customer billings. If a transaction requires principal "
+                    "presentation, preserve a documented bridge back to this scorecard's "
+                    "retained contribution measure without changing its three profit cases."
+                ),
+                (
+                    "Build a monthly close around earned compensation, not dashboard "
+                    "pipeline value. For each deal, reconcile supplier statements, "
+                    "customer acceptance, processor settlements, refunds, chargebacks, "
+                    "and any unearned advances. Estimate constrained variable compensation "
+                    "and reserves using the applicable accounting policy; do not book "
+                    "a maximum rebate tier before its conditions are supported. A "
+                    "$36,000 annual rebate forecast with only $9,000 substantiated "
+                    "for the quarter does not authorize distributing the full annual "
+                    "amount. Track days to collection and expected clawback exposure "
+                    "by payer, because one distributor can concentrate cash risk "
+                    "across many otherwise unrelated customers. Outreach controls also "
+                    "protect collections by preventing disputed acquisition practices. "
+                    "The FTC Telemarketing Sales Rule contains B2B exemptions and "
+                    "exceptions, including specified prohibitions that reach B2B calls; "
+                    "do not treat business status as blanket immunity. TCPA restrictions "
+                    "depend on call technology, destination, purpose, and other facts, "
+                    "while CAN-SPAM governs covered commercial email. Manual dialing "
+                    "is a channel choice, not a universal exemption from calling "
+                    "restrictions. Finish each close with an exception owner, a "
+                    "resolution date, and a decision on new exposure. Profit becomes "
+                    "distributable cash only after upstream obligations, earned refunds, "
+                    "and prudent reserves remain funded."
+                ),
+            ],
+            "table": {
+                "caption": "Credit Controls and Exact Formula v2.0 Retained-Revenue Reconciliation",
+                "headers": [
+                    "Operating case or monitored risk",
+                    "Revenue, funding, or authority evidence",
+                    "Required arithmetic and exposure interpretation",
+                    "Staffing or concrete corrective action",
+                ],
+                "rows": [
+                    [
+                        "Conservative canonical annual retained-revenue case under Formula v2.0",
+                        "$100,000 retained revenue excludes customer subscription pass-through and adjacent financing principal",
+                        "$100,000 less $68,000 modeled costs equals $32,000 owner net profit at 32%",
+                        "One full-time operator plus three contractors maintain funded ordering and monthly compensation reconciliation",
+                    ],
+                    [
+                        "Base canonical annual retained-revenue case under Formula v2.0",
+                        "$500,000 retained revenue uses the same agency-sensitive compensation basis as Conservative",
+                        "$500,000 less $275,000 modeled costs equals $225,000 owner net profit at 45.0%",
+                        "One full-time operator plus three contractors support repeatable supplier statements and documented savings acceptance",
+                    ],
+                    [
+                        "Scaled canonical annual retained-revenue case under Formula v2.0",
+                        "$900,000 retained revenue excludes underlying purchasing volume and unsupported rebate projections",
+                        "$900,000 less $378,000 modeled costs equals $522,000 owner net profit at 58%",
+                        "Two full-time people plus four contractors preserve collection ownership across a six-person team",
+                    ],
+                    [
+                        "Annual NCE commitment with only one funded monthly installment",
+                        "Distributor agreement establishes $110,400 annual cost while customer has funded only $9,200",
+                        "$110,400 less $9,200 funding leaves $101,200 upstream cost exposed before other protections",
+                        "Require additional funding or documented credit support; choose supplier-direct purchasing when protection fails",
+                    ],
+                    [
+                        "Quarterly supplier rebate forecast versus substantiated earned compensation",
+                        "Supplier statement and eligible member purchases support $9,000 for the completed quarter",
+                        "$36,000 annual projection does not equal currently earned or collected quarterly compensation",
+                        "Reconcile eligibility and variable consideration; retain reserves and distribute only adequately funded earnings",
+                    ],
+                    [
+                        "Customer authority or payment-account mismatch discovered before activation",
+                        "Signed agreement, business registration, treasury confirmation, and verified account evidence must identify consistent parties",
+                        "A valid-looking purchase order creates no funding value when signer or account authority fails",
+                        "Pause new ordering, independently resolve the mismatch, and preserve a documented release decision",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four verifications before an irreversible supplier commitment",
+                "body": "A deal advances only when the record supports authority, eligibility, funding, and a measurable compensation claim.",
+                "items": [
+                    "Verify the customer signer and treasury approver against purchasing authority, and confirm the purchase-order and invoice requirements.",
+                    "Verify the actual Microsoft, Adobe, distributor, or GPO program permissions, including tenant identity, eligible products, term, and transfer procedure.",
+                    "Verify full-term funding or documented credit protection, payment-account ownership, return exposure, and independently confirmed beneficiary instructions.",
+                    "Verify the normalized savings baseline, disclosed dual compensation, attribution evidence, dispute procedure, and retained-revenue accounting bridge.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Protect the obligation before chasing the spread, and count only the compensation your evidence can collect.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Build a payer-and-authority map naming the customer signer, treasury approver, supplier creditor, commission payer, and accounts-payable contact.",
+        "Obtain current distributor and GPO agreements, eligible-charge definitions, rebate brackets, attribution rules, and written transfer requirements.",
+        "Create a normalized first-year savings worksheet that separately displays supplier rebates, member credits, migration costs, and the contingent fee.",
+        "Select the payment structure and record full-term funding or credit support before placing an irreversible annual subscription order.",
+        "Implement a monthly deal-level reconciliation linking customer acceptance, supplier statements, payment evidence, reserves, refunds, and disputed compensation.",
+        "Reconcile retained revenue and total modeled costs to $32,000, $225,000, and $522,000 annual owner profits without adding client spend or financing principal.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Evaluate outreach by destination, dialing technology, message type, and applicable permission requirements rather than assuming all business contacts are exempt.",
+        },
+        {
+            "title": "16 CFR 310.3 — Deceptive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.3",
+            "relevance": "Controls representations about savings, affiliations, charges, and other material terms in covered telemarketing activity.",
+        },
+        {
+            "title": "16 CFR 310.6 — Telemarketing Sales Rule exemptions",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6",
+            "relevance": "Read the business-to-business exemption together with its exceptions; business status does not remove every deceptive-practice restriction.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of commercial electronic mail",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Commercial B2B email requires truthful routing and subject information, required sender identification, and an effective opt-out process.",
+        },
+        {
+            "title": "15 U.S.C. 1681b — Permissible purposes of consumer reports",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
+            "relevance": "Establish a permissible purpose before obtaining a consumer report connected with an owner or guarantor; commercial prospecting alone does not establish that purpose.",
+        },
+        {
+            "title": "12 CFR 1005.10 — Preauthorized transfers",
+            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.10",
+            "relevance": "Apply the authorization and related rules when a preauthorized transfer falls within Regulation E's consumer-account coverage; do not describe them as universal corporate ACH rules.",
+        },
+        {
+            "title": "UCC 4A-202 — Authorized and verified payment orders",
+            "url": "https://www.law.cornell.edu/ucc/4A/4A-202",
+            "relevance": "Provides the model-law framework for authority and agreed security procedures for covered funds transfers; verify the governing state's enacted version.",
+        },
+        {
+            "title": "UCC 9-515 — Duration and effectiveness of financing statement",
+            "url": "https://www.law.cornell.edu/ucc/9/9-515",
+            "relevance": "Distinguishes financing-statement effectiveness and continuation timing from debt maturity; verify state enactment and applicable exceptions before using filing signals.",
+        },
+        {
+            "title": "California Financial Code 22800 — Commercial financing definitions",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22800.",
+            "relevance": "Defines terms used by California's commercial-financing disclosure framework when evaluating the separate refinance-referral adjacency.",
+        },
+        {
+            "title": "California Financial Code 22802 — Commercial financing offer disclosures",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22802.",
+            "relevance": "Identifies required disclosures for covered commercial-financing offers; determine scope, exemptions, and the responsible provider before arranging introductions.",
+        },
+        {
+            "title": "11 U.S.C. 507 — Priorities",
+            "url": "https://www.law.cornell.edu/uscode/text/11/507",
+            "relevance": "Demonstrates that bankruptcy payment priority comes from statute rather than an invoice label; routine brokerage receivables acquire no special priority merely by contract wording.",
+        },
+    ],
+}

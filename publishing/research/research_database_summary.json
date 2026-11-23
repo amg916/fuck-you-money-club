@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 6117,
-  "raw_video_count": 6117,
+  "abridged_video_count": 6295,
+  "raw_video_count": 6295,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-22T19:24:08+00:00",
+      "generated_at": "2026-11-23T12:10:32+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-22T19:24:08Z",
+  "generated_at": "2026-11-23T12:10:32Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 4922,
-      "tip_count": 10093,
-      "channel_count": 3053,
+      "video_count": 5078,
+      "tip_count": 10438,
+      "channel_count": 3149,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -211,23 +211,23 @@
         "form I",
         "form if",
         "form it",
-        "form which",
-        "form at",
         "form um",
-        "quiet title",
-        "form an",
+        "form which",
         "form uh",
+        "form at",
         "form their",
+        "form an",
+        "quiet title",
+        "form we",
         "form called",
         "form content",
-        "form we",
-        "Protection Act",
         "form but",
+        "Protection Act",
         "form below",
-        "letters of administration",
-        "Chapter 7",
-        "form because",
-        "form here"
+        "form here",
+        "form right",
+        "form they",
+        "letters of administration"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 4682,
-      "tip_count": 9926,
-      "channel_count": 2839,
+      "video_count": 4769,
+      "tip_count": 9968,
+      "channel_count": 2896,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -433,11 +433,11 @@
         "form and",
         "form that",
         "form for",
-        "form to",
         "form is",
+        "form to",
         "form the",
-        "form a",
         "form you",
+        "form a",
         "form or",
         "form your",
         "form in",
@@ -453,18 +453,18 @@
         "form if",
         "form I",
         "form as",
+        "form we",
         "Chapter 7",
+        "form their",
+        "form um",
         "HIPAA",
         "protection act",
-        "form their",
-        "form we",
+        "form but",
         "form which",
         "warranty deed",
-        "form but",
-        "form um",
+        "Form uh",
         "letters of administration",
         "Chapter 13",
-        "Form uh",
         "due on sale clause",
         "form at",
         "form an",
@@ -477,8 +477,8 @@
         "Excel",
         "CSV",
         "Ancestry",
-        "https://excesselite.com",
         "Bing",
+        "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://paceapproves.com/freefb-yt",
         "https://www.moneymakingjug.com/inquiry",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 1161,
-      "tip_count": 2511,
-      "channel_count": 788,
+      "video_count": 1205,
+      "tip_count": 2523,
+      "channel_count": 820,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -633,6 +633,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Our commitment is what we did and committed to day 1, we need to be doing that. And day 365, or however long we…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:06:12",
+          "link": "https://www.youtube.com/watch?v=N9511Ln5CfE&t=372s",
+          "video_title": "What Businesses Need To Know About GPOs",
+          "author": "Una",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "Will send the check out to you now this is a state department website so make sure you're on the state department website the…",
           "category": "Non-Negotiable Rule",
           "timestamp": "00:05:55",
@@ -658,15 +667,6 @@
           "video_title": "State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds Business.",
           "author": "Surplus Funds 101",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Or being thorough with customers and honest, it's just really strange when you see stuff like that, but this isn't an uncommon. People will…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:07:33",
-          "link": "https://www.youtube.com/watch?v=foMCyYJ4LgY&t=453s",
-          "video_title": "State Funds Tutorial: What To Do When A Deal Cancels While Working Your State Funds Business.",
-          "author": "Surplus Funds 101",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -678,30 +678,30 @@
         "form for",
         "form the",
         "form below",
-        "form or",
         "form you",
+        "form or",
         "form a",
-        "form with",
         "form so",
+        "form with",
         "form on",
         "form your",
-        "Form uh",
         "form but",
+        "Form uh",
         "form if",
         "form it",
         "form where",
-        "form like",
         "form we",
+        "form like",
+        "form um",
         "court order",
         "form as",
+        "form in",
         "form this",
         "Property Act",
+        "form from",
         "form I",
-        "form in",
-        "form um",
         "quiet title",
         "form at",
-        "form from",
         "form our",
         "form which",
         "Chapter 7",
@@ -732,8 +732,8 @@
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
         "Regrid",
-        "https://tinyurl.com/unclaimedmentor",
         "Bing",
+        "https://tinyurl.com/unclaimedmentor",
         "https://www.unclaimedceo.com/home-page-8750",
         "PACER",
         "http://springsolutionsllcwordpress.com/",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 5134,
-      "tip_count": 7517,
-      "channel_count": 3130,
+      "video_count": 5272,
+      "tip_count": 7674,
+      "channel_count": 3219,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -936,20 +936,20 @@
         "form it",
         "HIPAA",
         "form which",
-        "form at",
         "form um",
         "form we",
-        "form but",
+        "form at",
         "form called",
-        "form here",
-        "form content",
         "form their",
-        "warranty deed",
-        "form an",
-        "Protection Act",
+        "form but",
         "Form uh",
-        "court order",
+        "form here",
+        "form an",
+        "form content",
+        "warranty deed",
+        "Protection Act",
         "form they",
+        "court order",
         "due on sale clause"
       ],
       "tools_and_portals": [
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 3333,
-      "tip_count": 1494,
-      "channel_count": 2057,
+      "video_count": 3409,
+      "tip_count": 1538,
+      "channel_count": 2099,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1164,30 +1164,30 @@
         "form your",
         "form a",
         "form on",
-        "form like",
         "form so",
         "form in",
+        "form like",
         "form where",
         "form with",
         "quiet title",
         "form as",
-        "form if",
         "form um",
+        "form if",
         "court order",
-        "form I",
         "form it",
+        "form I",
         "form which",
         "form but",
         "Form uh",
-        "form at",
         "form their",
+        "form at",
+        "form called",
+        "form we",
         "Protection Act",
         "warranty deed",
-        "form called",
         "due on sale clause",
         "form below",
         "form content",
-        "form we",
         "form here",
         "Chapter 7",
         "due on sale",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 4754,
-      "tip_count": 8482,
-      "channel_count": 2874,
+      "video_count": 4888,
+      "tip_count": 8621,
+      "channel_count": 2962,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1398,38 +1398,38 @@
         "form that",
         "form for",
         "Form is",
-        "form to",
         "form the",
+        "form to",
         "form you",
         "form or",
         "form a",
         "form your",
-        "form on",
         "form so",
+        "form on",
         "form in",
         "form with",
         "form like",
         "form where",
-        "court order",
         "form as",
+        "court order",
         "form I",
-        "form below",
         "form if",
         "form it",
+        "form um",
+        "form below",
         "quiet title",
         "form which",
-        "form um",
-        "HIPAA",
-        "form at",
         "form their",
         "form we",
-        "Chapter 7",
+        "HIPAA",
+        "form at",
         "Form uh",
-        "form but",
+        "Chapter 7",
         "form called",
+        "form but",
         "warranty deed",
-        "letters of administration",
         "form an",
+        "letters of administration",
         "Chapter 13",
         "form content",
         "form here"
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 5201,
-      "tip_count": 4714,
-      "channel_count": 3130,
+      "video_count": 5338,
+      "tip_count": 4912,
+      "channel_count": 3214,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1634,8 +1634,8 @@
         }
       ],
       "statutes_and_forms": [
-        "form of",
         "form and",
+        "form of",
         "form that",
         "form for",
         "form is",
@@ -1645,35 +1645,35 @@
         "form or",
         "form a",
         "form your",
-        "form on",
         "form in",
+        "form on",
         "form so",
         "form with",
         "form where",
         "court order",
         "form like",
+        "form it",
+        "form as",
         "form below",
         "HIPAA",
-        "form as",
-        "form it",
         "form I",
         "quiet title",
         "form if",
-        "Protection Act",
         "Form uh",
         "form um",
         "form their",
+        "form we",
+        "Protection Act",
         "form which",
         "Chapter 7",
-        "form we",
         "form but",
-        "warranty deed",
         "form an",
+        "warranty deed",
         "form at",
         "letters of administration",
         "Chapter 13",
-        "due on sale clause",
-        "form here"
+        "form here",
+        "due on sale clause"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 4073,
-      "tip_count": 11248,
-      "channel_count": 2615,
+      "video_count": 4231,
+      "tip_count": 11870,
+      "channel_count": 2707,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1886,34 +1886,34 @@
         "form you",
         "form a",
         "form so",
-        "form your",
         "form with",
+        "form your",
         "form on",
         "form where",
         "form in",
         "form like",
         "form as",
         "court order",
-        "form below",
         "form it",
+        "form below",
+        "form um",
         "form I",
         "form which",
         "HIPAA",
         "form if",
-        "form um",
-        "form but",
-        "Form uh",
         "form we",
+        "Form uh",
+        "form but",
         "form at",
         "letters of administration",
         "form content",
-        "Chapter 7",
-        "form because",
         "form called",
         "form here",
-        "form an",
-        "form from",
         "form their",
+        "Chapter 7",
+        "form an",
+        "form because",
+        "form from",
         "form this"
       ],
       "tools_and_portals": [
@@ -1922,8 +1922,8 @@
         "LinkedIn",
         "Excel",
         "CSV",
-        "Ancestry",
         "Bing",
+        "Ancestry",
         "https://excesselite.com",
         "https://www.facebook.com/groups/assetrecovery",
         "https://www.moneymakingjug.com/inquiry",
@@ -1945,13 +1945,13 @@
         "https://www.instagram.com/routegenie/",
         "https://youtube.com/playlist?list=PLq34PBZ-WZXE0UwJry7DuiNqwxnCnYjvV",
         "https://www.instagram.com/thedavidwilkerson",
+        "PACER",
         "https://calendly.com/ajsimmons",
         "https://nextinsurance.sjv.io/Ea23K9",
         "https://www.facebook.com/groups/770825015084618",
         "https://www.instagram.com/ajsimmonsonline/",
         "https://www.unclaimedceo.com/linkme",
         "https://www.youtube.com/channel/UCHLYt_LJmvvmsyp-wKYX0lw/join",
-        "PACER",
         "PropStream",
         "https://www.cleanbiznetwork.app/",
         "https://www.linkedin.com/company/routegenie/",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3053,
-      "video_count": 4922,
-      "corroborating_tip_count": 10093,
+      "channel_count": 3149,
+      "video_count": 5078,
+      "corroborating_tip_count": 10438,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2839,
-      "video_count": 4682,
-      "corroborating_tip_count": 9926,
+      "channel_count": 2896,
+      "video_count": 4769,
+      "corroborating_tip_count": 9968,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 788,
-      "video_count": 1161,
-      "corroborating_tip_count": 2511,
+      "channel_count": 820,
+      "video_count": 1205,
+      "corroborating_tip_count": 2523,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3130,
-      "video_count": 5134,
-      "corroborating_tip_count": 7517,
+      "channel_count": 3219,
+      "video_count": 5272,
+      "corroborating_tip_count": 7674,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2057,
-      "video_count": 3333,
-      "corroborating_tip_count": 1494,
+      "channel_count": 2099,
+      "video_count": 3409,
+      "corroborating_tip_count": 1538,
       "supporting_links": [
         {
           "video_title": "The Negotiation Script I Use When Subleasing Airbnb's | Jorge Contreras",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2874,
-      "video_count": 4754,
-      "corroborating_tip_count": 8482,
+      "channel_count": 2962,
+      "video_count": 4888,
+      "corroborating_tip_count": 8621,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3130,
-      "video_count": 5201,
-      "corroborating_tip_count": 4714,
+      "channel_count": 3214,
+      "video_count": 5338,
+      "corroborating_tip_count": 4912,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2615,
-      "video_count": 4073,
-      "corroborating_tip_count": 11248,
+      "channel_count": 2707,
+      "video_count": 4231,
+      "corroborating_tip_count": 11870,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 6117 corpus videos",
-        "instance_count": 6117,
+        "source": "YouTube CDN thumbnails for the 6295 corpus videos",
+        "instance_count": 6295,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -45567,6 +45567,1252 @@
             "author": "Data Center News",
             "thumbnail_url": "https://i.ytimg.com/vi/8DzqbL0HKG0/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=8DzqbL0HKG0"
+          },
+          {
+            "video_id": "wMz3Phqj6cA",
+            "title": "Pax8 + Microsoft: Accelerating Partner Growth With AI Adoption",
+            "author": "Microsoft AI Cloud Partner Program",
+            "thumbnail_url": "https://i.ytimg.com/vi/wMz3Phqj6cA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wMz3Phqj6cA"
+          },
+          {
+            "video_id": "phXe8eJoVeo",
+            "title": "Pax8 - A Cloud Distributor that MSPs Actually Use",
+            "author": "Cloud Software Association",
+            "thumbnail_url": "https://i.ytimg.com/vi/phXe8eJoVeo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=phXe8eJoVeo"
+          },
+          {
+            "video_id": "KcmWalqZBzk",
+            "title": "Building a Profitable MSP | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/KcmWalqZBzk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KcmWalqZBzk"
+          },
+          {
+            "video_id": "LGgw20GtaDQ",
+            "title": "Microsoft Cloud Solution Provider (CSP) - Simply Explained",
+            "author": "m365 Show | M365, Azure Cloud, Power Platform & AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/LGgw20GtaDQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LGgw20GtaDQ"
+          },
+          {
+            "video_id": "hsCUDuKzpaw",
+            "title": "Nick Heddy - Getting to know Pax8, a Microsoft Indirect Provider.",
+            "author": "Channel Talk",
+            "thumbnail_url": "https://i.ytimg.com/vi/hsCUDuKzpaw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hsCUDuKzpaw"
+          },
+          {
+            "video_id": "eszZfSp1S1g",
+            "title": "Microsoft's FY27 Start for Partners Recap | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/eszZfSp1S1g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eszZfSp1S1g"
+          },
+          {
+            "video_id": "tsL0gg_Jy9U",
+            "title": "Pax8 + Microsoft Monthly Update (August 2026)",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/tsL0gg_Jy9U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tsL0gg_Jy9U"
+          },
+          {
+            "video_id": "-zF8JCzzp8w",
+            "title": "Which Microsoft Partner Level Unlocks the Most Incentives? (AI Cloud Explained)",
+            "author": "The Crancer Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/-zF8JCzzp8w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-zF8JCzzp8w"
+          },
+          {
+            "video_id": "t4mdVMK1xl0",
+            "title": "How MSPs Are Becoming Managed Intelligence Providers | Pax8 Beyond EMEA 2026 Partner Panel",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/t4mdVMK1xl0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=t4mdVMK1xl0"
+          },
+          {
+            "video_id": "GDHnAQ3r53A",
+            "title": "How to Scale and Automate Your Adobe VIP Marketplace Business with AppXite (Program Overview & Demo)",
+            "author": "AppXite",
+            "thumbnail_url": "https://i.ytimg.com/vi/GDHnAQ3r53A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GDHnAQ3r53A"
+          },
+          {
+            "video_id": "-rVmsfC5Agk",
+            "title": "VIP MarketPlace Support for the Adobe Admin Console",
+            "author": "Adobe Care",
+            "thumbnail_url": "https://i.ytimg.com/vi/-rVmsfC5Agk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-rVmsfC5Agk"
+          },
+          {
+            "video_id": "v3ZCe1YINus",
+            "title": "Are you ready for the changes coming to Adobe VIP?",
+            "author": "Bechtle UK",
+            "thumbnail_url": "https://i.ytimg.com/vi/v3ZCe1YINus/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v3ZCe1YINus"
+          },
+          {
+            "video_id": "824bcq4wI-Q",
+            "title": "Adobe VIP Marketplace",
+            "author": "TD SYNNEX Spain",
+            "thumbnail_url": "https://i.ytimg.com/vi/824bcq4wI-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=824bcq4wI-Q"
+          },
+          {
+            "video_id": "qQoPO5MwZ60",
+            "title": "Webinar: Monthly Adobe Spotlight: VIP Marketplace - May 22nd 2024",
+            "author": "Pugh Computers Ltd",
+            "thumbnail_url": "https://i.ytimg.com/vi/qQoPO5MwZ60/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qQoPO5MwZ60"
+          },
+          {
+            "video_id": "LCbK1S1leOQ",
+            "title": "VIP MarketPlace Overview in Adobe Admin Console",
+            "author": "Adobe Care",
+            "thumbnail_url": "https://i.ytimg.com/vi/LCbK1S1leOQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LCbK1S1leOQ"
+          },
+          {
+            "video_id": "OvtYYoCkO-w",
+            "title": "Reseller Console Creating Extended VIP",
+            "author": "Luís Guzmán",
+            "thumbnail_url": "https://i.ytimg.com/vi/OvtYYoCkO-w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OvtYYoCkO-w"
+          },
+          {
+            "video_id": "DKHVlefC0YE",
+            "title": "Need To Change Your Adobe Reseller? Watch This Tutorial",
+            "author": "Technical Support Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/DKHVlefC0YE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DKHVlefC0YE"
+          },
+          {
+            "video_id": "6-M7SxMm3Yc",
+            "title": "Migrate Adobe VIP to Client Portal Marketplace",
+            "author": "SoftwareOne Benelux",
+            "thumbnail_url": "https://i.ytimg.com/vi/6-M7SxMm3Yc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6-M7SxMm3Yc"
+          },
+          {
+            "video_id": "xCgcup4z6CI",
+            "title": "Adobe Is Losing Everything: Photoshop, Illustrator & Premiere on the Brink",
+            "author": "Tech Meets East",
+            "thumbnail_url": "https://i.ytimg.com/vi/xCgcup4z6CI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xCgcup4z6CI"
+          },
+          {
+            "video_id": "IIVbCmH7kHA",
+            "title": "Adobe Just Changed Photoshop Sales Forever",
+            "author": "Tech Meets East",
+            "thumbnail_url": "https://i.ytimg.com/vi/IIVbCmH7kHA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IIVbCmH7kHA"
+          },
+          {
+            "video_id": "vQ-PbEC-qMw",
+            "title": "Adobe Teams vs Enterprise Plans & Pricing Explained – Honest Comparison",
+            "author": "Daniel Studios",
+            "thumbnail_url": "https://i.ytimg.com/vi/vQ-PbEC-qMw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vQ-PbEC-qMw"
+          },
+          {
+            "video_id": "ZnXsR4iADwM",
+            "title": "Adobe’s CRAWLING Back To Customers!",
+            "author": "Tech Meets East",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZnXsR4iADwM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZnXsR4iADwM"
+          },
+          {
+            "video_id": "kt871J4EiG4",
+            "title": "Which Adobe to Buy? (Full Breakdown) - Plans and Pricing Comparison",
+            "author": "Daniel Studios",
+            "thumbnail_url": "https://i.ytimg.com/vi/kt871J4EiG4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kt871J4EiG4"
+          },
+          {
+            "video_id": "8ge4I4KL5kQ",
+            "title": "How RingCentral is Currently Innovating in the Contact Center Space and their IGNITE! Program",
+            "author": "Telarus",
+            "thumbnail_url": "https://i.ytimg.com/vi/8ge4I4KL5kQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8ge4I4KL5kQ"
+          },
+          {
+            "video_id": "-0tioUlVICE",
+            "title": "Understanding Agentic AI in CX- An Executive Interview with Zoom",
+            "author": "Telarus",
+            "thumbnail_url": "https://i.ytimg.com/vi/-0tioUlVICE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-0tioUlVICE"
+          },
+          {
+            "video_id": "DKzL7oMyWis",
+            "title": "Gartner UCaaS Magic Quadrant 2026 EXPLAINED (Cisco, Microsoft, RingCentral, Zoom)",
+            "author": "CX without the BS",
+            "thumbnail_url": "https://i.ytimg.com/vi/DKzL7oMyWis/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DKzL7oMyWis"
+          },
+          {
+            "video_id": "veu6EUBTdBE",
+            "title": "6 Steps to Win Every Software Negotiation",
+            "author": "Tropic",
+            "thumbnail_url": "https://i.ytimg.com/vi/veu6EUBTdBE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=veu6EUBTdBE"
+          },
+          {
+            "video_id": "2XJmAjfVmQw",
+            "title": "Key Negotiation Points in SaaS Contracts",
+            "author": "Marcus Harris Software & Tech Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/2XJmAjfVmQw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2XJmAjfVmQw"
+          },
+          {
+            "video_id": "r6xTyjDAFrQ",
+            "title": "#Procurement Expert Shares His TOP 3 Challenges of #SaaS Contract Renewals",
+            "author": "Zylo | The Leader in Enterprise SaaS Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/r6xTyjDAFrQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=r6xTyjDAFrQ"
+          },
+          {
+            "video_id": "xY5Bk1dd768",
+            "title": "Don’t Fall for These Sneaky SaaS Contract Negotiation Gotchas!",
+            "author": "Marcus Harris Software & Tech Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/xY5Bk1dd768/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xY5Bk1dd768"
+          },
+          {
+            "video_id": "B8MSOZzfQLk",
+            "title": "How To Negotiate A SaaS Contract",
+            "author": "Vistack",
+            "thumbnail_url": "https://i.ytimg.com/vi/B8MSOZzfQLk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B8MSOZzfQLk"
+          },
+          {
+            "video_id": "PQUXMXjSfjw",
+            "title": "Renewing SaaS Contracts? Don’t Fall for These Common Traps!",
+            "author": "Marcus Harris Software & Tech Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/PQUXMXjSfjw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PQUXMXjSfjw"
+          },
+          {
+            "video_id": "RDxElFsVuWs",
+            "title": "How to Negotiate a SaaS Agreement",
+            "author": "Heather Meeker",
+            "thumbnail_url": "https://i.ytimg.com/vi/RDxElFsVuWs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RDxElFsVuWs"
+          },
+          {
+            "video_id": "FESALIJcxS0",
+            "title": "What Most People Miss in Software and AI Contracts That Costs Them Thousands",
+            "author": "Tropic",
+            "thumbnail_url": "https://i.ytimg.com/vi/FESALIJcxS0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FESALIJcxS0"
+          },
+          {
+            "video_id": "lmaQjDuWaSY",
+            "title": "How We Negotiated a $385k SaaS Deal with Procurement (Without Discounting)",
+            "author": "Caliber (Formerly pclub.io)",
+            "thumbnail_url": "https://i.ytimg.com/vi/lmaQjDuWaSY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lmaQjDuWaSY"
+          },
+          {
+            "video_id": "wRrnU1fw7P0",
+            "title": "GPO FAQ: Understanding Group Purchasing Organizations",
+            "author": "Una",
+            "thumbnail_url": "https://i.ytimg.com/vi/wRrnU1fw7P0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wRrnU1fw7P0"
+          },
+          {
+            "video_id": "Nx4UI5uowcw",
+            "title": "What is Group Purchasing Organization (GPO)? Explained in 3 Minutes!",
+            "author": "Educationleaves",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nx4UI5uowcw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Nx4UI5uowcw"
+          },
+          {
+            "video_id": "N0B0bUjLrUE",
+            "title": "Hospital Group Purchasing Organizations (GPOs) Explained",
+            "author": "AHealthcareZ - Healthcare Finance Explained",
+            "thumbnail_url": "https://i.ytimg.com/vi/N0B0bUjLrUE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N0B0bUjLrUE"
+          },
+          {
+            "video_id": "uyVsmq0w3FM",
+            "title": "The PBM Insider - Group Purchasing Organizations (GPO's)",
+            "author": "PBM Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/uyVsmq0w3FM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uyVsmq0w3FM"
+          },
+          {
+            "video_id": "iaBVYfYH_ro",
+            "title": "What is a Group Purchasing Organization or GPO?",
+            "author": "OMNIA Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/iaBVYfYH_ro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iaBVYfYH_ro"
+          },
+          {
+            "video_id": "h348wGhEx-8",
+            "title": "InsightGPO | Group Purchasing Programs",
+            "author": "Insight Sourcing Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/h348wGhEx-8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h348wGhEx-8"
+          },
+          {
+            "video_id": "f5FL9qjTeE0",
+            "title": "What is a healthcare Group Purchasing Organization or GPO?",
+            "author": "Hospital Supply Chain Education",
+            "thumbnail_url": "https://i.ytimg.com/vi/f5FL9qjTeE0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f5FL9qjTeE0"
+          },
+          {
+            "video_id": "pKhFVbBzkz4",
+            "title": "GPO FAQ: Exploring the Benefits of a Group Purchasing Organization",
+            "author": "Una",
+            "thumbnail_url": "https://i.ytimg.com/vi/pKhFVbBzkz4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pKhFVbBzkz4"
+          },
+          {
+            "video_id": "K2Slgt-y1wo",
+            "title": "Demystifying GPO Contracts: How Healthcare Supply Chain Unlocks Savings and Strategy",
+            "author": "Healthcare Supply Chain Hub: Angelique W. Beslic",
+            "thumbnail_url": "https://i.ytimg.com/vi/K2Slgt-y1wo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=K2Slgt-y1wo"
+          },
+          {
+            "video_id": "qlmtp85_1-Q",
+            "title": "Who is Intalere and What is a GPO?",
+            "author": "Intalere",
+            "thumbnail_url": "https://i.ytimg.com/vi/qlmtp85_1-Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qlmtp85_1-Q"
+          },
+          {
+            "video_id": "N9511Ln5CfE",
+            "title": "What Businesses Need To Know About GPOs",
+            "author": "Una",
+            "thumbnail_url": "https://i.ytimg.com/vi/N9511Ln5CfE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N9511Ln5CfE"
+          },
+          {
+            "video_id": "e9uItyw_9cI",
+            "title": "GPOs: Everything You Need To Know",
+            "author": "MT Purchasing",
+            "thumbnail_url": "https://i.ytimg.com/vi/e9uItyw_9cI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=e9uItyw_9cI"
+          },
+          {
+            "video_id": "0F5PDJ2Sxds",
+            "title": "Everything You Need to Know About GPOs and Value Analysis / GPOs - Sutures and Cents / S4 Ep1",
+            "author": "Value Analysis Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/0F5PDJ2Sxds/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0F5PDJ2Sxds"
+          },
+          {
+            "video_id": "vXeviFgIR1I",
+            "title": "GPO FAQ: Evaluating a Group Purchasing Organization's Potential",
+            "author": "Una",
+            "thumbnail_url": "https://i.ytimg.com/vi/vXeviFgIR1I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vXeviFgIR1I"
+          },
+          {
+            "video_id": "jcYTmMdEGPo",
+            "title": "How to Enroll in Microsoft Commerce Incentives (MCI) | Every CSP Partner Should Know This",
+            "author": "Inside Microsoft AI Cloud Partner Program",
+            "thumbnail_url": "https://i.ytimg.com/vi/jcYTmMdEGPo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jcYTmMdEGPo"
+          },
+          {
+            "video_id": "VP4hPTXkPIs",
+            "title": "✅Affiliate Series Guide 1| Become a Microsoft Partner in 2026| Sell Microsoft Products & Solutions",
+            "author": "Sub-Zero To Wealth",
+            "thumbnail_url": "https://i.ytimg.com/vi/VP4hPTXkPIs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VP4hPTXkPIs"
+          },
+          {
+            "video_id": "XVyGRE_S-vY",
+            "title": "Smartworx webinar: Microsoft CSP - Partner Center - MAICPP - Microsoft 365 & Azure commercial basics",
+            "author": "Benny Rossaer",
+            "thumbnail_url": "https://i.ytimg.com/vi/XVyGRE_S-vY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XVyGRE_S-vY"
+          },
+          {
+            "video_id": "by9BiS2U7xo",
+            "title": "Microsoft Partner Center - Simply Explained",
+            "author": "m365 Show | M365, Azure Cloud, Power Platform & AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/by9BiS2U7xo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=by9BiS2U7xo"
+          },
+          {
+            "video_id": "9Q30FhN41LI",
+            "title": "Overview of Microsoft Partner Center Portal, new features, & common scenario discussion | Microsoft",
+            "author": "Microsoft Helps",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Q30FhN41LI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9Q30FhN41LI"
+          },
+          {
+            "video_id": "rD2YxxfsOa4",
+            "title": "Microsoft Cloud Solution Provider CSP Simply Explained",
+            "author": "m365 Show | M365, Azure Cloud, Power Platform & AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/rD2YxxfsOa4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rD2YxxfsOa4"
+          },
+          {
+            "video_id": "yNBOfW1MoPs",
+            "title": "Difference Between CSP Direct Partner, Indirect Provider & Indirect Reseller",
+            "author": "Spyglass MTG",
+            "thumbnail_url": "https://i.ytimg.com/vi/yNBOfW1MoPs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=yNBOfW1MoPs"
+          },
+          {
+            "video_id": "Ap8gUtRq32o",
+            "title": "Everything you need to know about Microsoft licensing for CSP in 2025 | Tech Instinct Podcast Ep.2",
+            "author": "MicroAge",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ap8gUtRq32o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ap8gUtRq32o"
+          },
+          {
+            "video_id": "jUFbUlIkcm0",
+            "title": "Create Microsoft Partner account | Microsoft Partner Center | Partner MPN account setup | MPN | CSP",
+            "author": "Horror FM",
+            "thumbnail_url": "https://i.ytimg.com/vi/jUFbUlIkcm0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jUFbUlIkcm0"
+          },
+          {
+            "video_id": "wjgyQO9jIAM",
+            "title": "Microsoft Partner Center: How to Setup Your Company Profile Correctly",
+            "author": "Technical Support Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/wjgyQO9jIAM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wjgyQO9jIAM"
+          },
+          {
+            "video_id": "5WTYMwbF2fc",
+            "title": "5 Ways to Sell Microsoft 365 to Enterprise Buyers",
+            "author": "Rahul Bhavsar",
+            "thumbnail_url": "https://i.ytimg.com/vi/5WTYMwbF2fc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5WTYMwbF2fc"
+          },
+          {
+            "video_id": "tlmDeX5UBJs",
+            "title": "I will help to join the Microsoft Partner Program | Join the Microsoft AI Cloud Partner Program",
+            "author": "Technical Support Online",
+            "thumbnail_url": "https://i.ytimg.com/vi/tlmDeX5UBJs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tlmDeX5UBJs"
+          },
+          {
+            "video_id": "W-fGvHNBEiM",
+            "title": "Tutorial To Transact Microsoft NCE on Ingram Micro Cloud Marketplace",
+            "author": "Ingram Micro Cloud",
+            "thumbnail_url": "https://i.ytimg.com/vi/W-fGvHNBEiM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=W-fGvHNBEiM"
+          },
+          {
+            "video_id": "bGmD7XlTNZI",
+            "title": "How an IT reseller transformed their business with Ingram Micro Cloud",
+            "author": "Ingram Micro Cloud UK",
+            "thumbnail_url": "https://i.ytimg.com/vi/bGmD7XlTNZI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bGmD7XlTNZI"
+          },
+          {
+            "video_id": "ZoUkvQ-5m3c",
+            "title": "IBM + AWS + Ingram Micro: Your Shortcut to Smarter Reseller Success",
+            "author": "Ingram Micro Canada",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZoUkvQ-5m3c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZoUkvQ-5m3c"
+          },
+          {
+            "video_id": "ggEr5VKX-S8",
+            "title": "Selling Google Workspace through Ingram Micro Cloud at Observian",
+            "author": "Ingram Micro Cloud",
+            "thumbnail_url": "https://i.ytimg.com/vi/ggEr5VKX-S8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ggEr5VKX-S8"
+          },
+          {
+            "video_id": "ADZwWSQGFFI",
+            "title": "How Ingram Micro and Cisco help partners grow together",
+            "author": "Ingram Micro USA",
+            "thumbnail_url": "https://i.ytimg.com/vi/ADZwWSQGFFI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ADZwWSQGFFI"
+          },
+          {
+            "video_id": "Zbk_QOoXQ_M",
+            "title": "VoxFlo | CRM Integration for UCaaS & CCaaS Resellers #wearevoxflo",
+            "author": "WeAreVoxFlo",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zbk_QOoXQ_M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Zbk_QOoXQ_M"
+          },
+          {
+            "video_id": "dqTXnYdAKdQ",
+            "title": "Zoom Multicast: The Next UC Channel Opportunity",
+            "author": "UC Today News",
+            "thumbnail_url": "https://i.ytimg.com/vi/dqTXnYdAKdQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dqTXnYdAKdQ"
+          },
+          {
+            "video_id": "auYElw4sYi8",
+            "title": "Zoom Phone System (UCaaS) Review & Demo | Hard to Beat",
+            "author": "AeroCom Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/auYElw4sYi8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=auYElw4sYi8"
+          },
+          {
+            "video_id": "cHY6UbMTjDA",
+            "title": "Zoom Phone & Outreach Integration - DEMO!",
+            "author": "Tattooed Nerd",
+            "thumbnail_url": "https://i.ytimg.com/vi/cHY6UbMTjDA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cHY6UbMTjDA"
+          },
+          {
+            "video_id": "H1SvYMYWK1o",
+            "title": "Zoom Phone - What's New in 2026",
+            "author": "AeroCom Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/H1SvYMYWK1o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=H1SvYMYWK1o"
+          },
+          {
+            "video_id": "GA4lZkmVP-w",
+            "title": "ZOOM PHONE EXPERT REVIEW FOR BUSINESSES B2B -COMPLETE PROFESSIONAL ANALYSIS",
+            "author": "LONDON FILM",
+            "thumbnail_url": "https://i.ytimg.com/vi/GA4lZkmVP-w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GA4lZkmVP-w"
+          },
+          {
+            "video_id": "YnbZO1fa7BQ",
+            "title": "AI Disruption in UC: Copilot, Zoom & Webex Face Off",
+            "author": "UC Today News",
+            "thumbnail_url": "https://i.ytimg.com/vi/YnbZO1fa7BQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YnbZO1fa7BQ"
+          },
+          {
+            "video_id": "Wcqc4eUu_5o",
+            "title": "The Latest Big News on ALE Doubling Down on UCaaS, Enterprise ChatGPT & Zoom's AI Companion",
+            "author": "UC Today News",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wcqc4eUu_5o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wcqc4eUu_5o"
+          },
+          {
+            "video_id": "CHFSW3MiXcU",
+            "title": "Is your Zoom compliance actually secure?",
+            "author": "Tattooed Nerd",
+            "thumbnail_url": "https://i.ytimg.com/vi/CHFSW3MiXcU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CHFSW3MiXcU"
+          },
+          {
+            "video_id": "viRtp8k9GAo",
+            "title": "Zoom Phone Pricing for Mid-Large-Size Companies in 2025",
+            "author": "AeroCom Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/viRtp8k9GAo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=viRtp8k9GAo"
+          },
+          {
+            "video_id": "bQwapQbcKSk",
+            "title": "Next Level UCaaS Expense Management for Zoom - UC Today News",
+            "author": "UC Today News",
+            "thumbnail_url": "https://i.ytimg.com/vi/bQwapQbcKSk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=bQwapQbcKSk"
+          },
+          {
+            "video_id": "pW6NJcmH21E",
+            "title": "Is Zoom the best UCaaS Platform?",
+            "author": "Tattooed Nerd",
+            "thumbnail_url": "https://i.ytimg.com/vi/pW6NJcmH21E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pW6NJcmH21E"
+          },
+          {
+            "video_id": "ZHjObNVm5_Y",
+            "title": "ZOOM PHONE REVIEW - IMPLEMENTATION/ ONBOARDING - CUSTOMER SUPPORT B2B BUSINESS EXPERT ANALYSIS",
+            "author": "LONDON FILM",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZHjObNVm5_Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZHjObNVm5_Y"
+          },
+          {
+            "video_id": "udHdwtjP7yM",
+            "title": "The SaaS Licence Audit: You are Paying for More Than You Think.",
+            "author": "SaaS Procurement Insider",
+            "thumbnail_url": "https://i.ytimg.com/vi/udHdwtjP7yM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=udHdwtjP7yM"
+          },
+          {
+            "video_id": "tex2cNz4vcc",
+            "title": "How to Automate SaaS License Audits Using Airtable",
+            "author": "Optimize Information Systems",
+            "thumbnail_url": "https://i.ytimg.com/vi/tex2cNz4vcc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tex2cNz4vcc"
+          },
+          {
+            "video_id": "ARjBgExQ3oQ",
+            "title": "Zylo Overview: Saas Optimization",
+            "author": "SAP Concur",
+            "thumbnail_url": "https://i.ytimg.com/vi/ARjBgExQ3oQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ARjBgExQ3oQ"
+          },
+          {
+            "video_id": "lB5ThkY4hMA",
+            "title": "Shadow IT & SaaS Sprawl: Controlling the Hidden Software Costs Draining Your Budget",
+            "author": "MetrixData 360",
+            "thumbnail_url": "https://i.ytimg.com/vi/lB5ThkY4hMA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lB5ThkY4hMA"
+          },
+          {
+            "video_id": "ORh7DquM3lY",
+            "title": "How to Build Recurring SaaS Review Cycles",
+            "author": "NinjaOne IT Tech Tips",
+            "thumbnail_url": "https://i.ytimg.com/vi/ORh7DquM3lY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ORh7DquM3lY"
+          },
+          {
+            "video_id": "WiNczR6ugRY",
+            "title": "Vendor Risk Management: Auditing Your SaaS Vendors for Cyber Liability",
+            "author": "The Tech Compliance Blueprint",
+            "thumbnail_url": "https://i.ytimg.com/vi/WiNczR6ugRY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WiNczR6ugRY"
+          },
+          {
+            "video_id": "nsIixe4EZI0",
+            "title": "Shadow IT and SaaS Sprawl: Managing Hidden Cyber Risks",
+            "author": "IronEdge Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/nsIixe4EZI0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nsIixe4EZI0"
+          },
+          {
+            "video_id": "EEuTZMr-lgI",
+            "title": "Shadow IT SaaS Usage: Discover and Assess Your Risk",
+            "author": "AppOmni",
+            "thumbnail_url": "https://i.ytimg.com/vi/EEuTZMr-lgI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EEuTZMr-lgI"
+          },
+          {
+            "video_id": "M0ICfl_2HyY",
+            "title": "How to Run a SaaS Audit and Cut Unused Tools Before Renewal",
+            "author": "CloudEagle",
+            "thumbnail_url": "https://i.ytimg.com/vi/M0ICfl_2HyY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M0ICfl_2HyY"
+          },
+          {
+            "video_id": "XMooFDnRJEE",
+            "title": "Saving with Software License Optimization | Flexera",
+            "author": "Flexera | ITAM, FinOps & SaaS Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/XMooFDnRJEE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XMooFDnRJEE"
+          },
+          {
+            "video_id": "Q3VZHAsymcg",
+            "title": "**The Hidden IT Tax: 5 Surprising Ways Your SaaS Stack Is Wasting Money**",
+            "author": "Provision Networks",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q3VZHAsymcg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Q3VZHAsymcg"
+          },
+          {
+            "video_id": "o7bsmkpf6kA",
+            "title": "How to Become a Google Workspace Reseller (Complete Guide)",
+            "author": "HowTo With Glen",
+            "thumbnail_url": "https://i.ytimg.com/vi/o7bsmkpf6kA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o7bsmkpf6kA"
+          },
+          {
+            "video_id": "i4hzXM9eyQY",
+            "title": "Four reasons to become a Google Workspace reseller",
+            "author": "Vendasta",
+            "thumbnail_url": "https://i.ytimg.com/vi/i4hzXM9eyQY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=i4hzXM9eyQY"
+          },
+          {
+            "video_id": "LHbzmi3Otpg",
+            "title": "Switching from Google Reseller to Direct: Pros & Cons",
+            "author": "itGenius 🤓 Biz Tech Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/LHbzmi3Otpg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LHbzmi3Otpg"
+          },
+          {
+            "video_id": "aAQpTV4Ybnk",
+            "title": "Google Workspace Volume & Special Licensing | Discount Pricing and Split Billing Explained",
+            "author": "itGenius 🤓 Biz Tech Experts",
+            "thumbnail_url": "https://i.ytimg.com/vi/aAQpTV4Ybnk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aAQpTV4Ybnk"
+          },
+          {
+            "video_id": "LPPIZuIcjuA",
+            "title": "How ISVs can scale revenue on Google Cloud Marketplace with Partners. Underappreciated opportunity",
+            "author": "Partner Insight",
+            "thumbnail_url": "https://i.ytimg.com/vi/LPPIZuIcjuA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LPPIZuIcjuA"
+          },
+          {
+            "video_id": "1P1PwU7EeD8",
+            "title": "Become a Google Workspace Reseller Partner in Asia Pacific and United States Region Part 2",
+            "author": "GNB MENTOR",
+            "thumbnail_url": "https://i.ytimg.com/vi/1P1PwU7EeD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1P1PwU7EeD8"
+          },
+          {
+            "video_id": "qD94D5D7Z0E",
+            "title": "How To BECOME Google Workspace Reseller (QUICK & EASY) 2026",
+            "author": "InstantHowTo",
+            "thumbnail_url": "https://i.ytimg.com/vi/qD94D5D7Z0E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qD94D5D7Z0E"
+          },
+          {
+            "video_id": "0Vk8NzIt_RM",
+            "title": "How to Check if Your Google Workspace Reseller is Legit",
+            "author": "InboxKit",
+            "thumbnail_url": "https://i.ytimg.com/vi/0Vk8NzIt_RM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0Vk8NzIt_RM"
+          },
+          {
+            "video_id": "-uYS0eABgbk",
+            "title": "Will Switching to Google Workspace Actually Save You Money?",
+            "author": "Rook Technology Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/-uYS0eABgbk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-uYS0eABgbk"
+          },
+          {
+            "video_id": "aW8jAYnvqyI",
+            "title": "35 Minutes of Expert Cold Calling Tips (B2B & Software Sales)",
+            "author": "Sell Better",
+            "thumbnail_url": "https://i.ytimg.com/vi/aW8jAYnvqyI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aW8jAYnvqyI"
+          },
+          {
+            "video_id": "u9D8WbQixac",
+            "title": "Cold Call Example for Software Development",
+            "author": "Sales Scripter",
+            "thumbnail_url": "https://i.ytimg.com/vi/u9D8WbQixac/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=u9D8WbQixac"
+          },
+          {
+            "video_id": "m2z1tgfv8Kc",
+            "title": "Full 18-Minute Cold Calling Course (For SaaS Sales)",
+            "author": "Sell Better",
+            "thumbnail_url": "https://i.ytimg.com/vi/m2z1tgfv8Kc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m2z1tgfv8Kc"
+          },
+          {
+            "video_id": "o2wyRpIYL0w",
+            "title": "Cost Reduction Consultants - Contingency Based - Expense Consulting",
+            "author": "Expense Consulting",
+            "thumbnail_url": "https://i.ytimg.com/vi/o2wyRpIYL0w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=o2wyRpIYL0w"
+          },
+          {
+            "video_id": "meAxKn8Td5k",
+            "title": "Business Cost Reduction Consultants FREE Consultation, San Deigo, Irvine CA",
+            "author": "kconole2011",
+            "thumbnail_url": "https://i.ytimg.com/vi/meAxKn8Td5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=meAxKn8Td5k"
+          },
+          {
+            "video_id": "T9lHBjJeZVI",
+            "title": "How to cut costs – Cost Reduction Framework from Management Consulting Projects",
+            "author": "Startup Akademia",
+            "thumbnail_url": "https://i.ytimg.com/vi/T9lHBjJeZVI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T9lHBjJeZVI"
+          },
+          {
+            "video_id": "8ORoloHxouk",
+            "title": "Management Consulting Case Interview – a framework for cost cutting",
+            "author": "Startup Akademia",
+            "thumbnail_url": "https://i.ytimg.com/vi/8ORoloHxouk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8ORoloHxouk"
+          },
+          {
+            "video_id": "2RDXap2GiBE",
+            "title": "Cost Reduction Strategies for Business Owners",
+            "author": "ExpenseSavvy",
+            "thumbnail_url": "https://i.ytimg.com/vi/2RDXap2GiBE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2RDXap2GiBE"
+          },
+          {
+            "video_id": "nrJ8yyEVHmY",
+            "title": "SaaS Vendors’ New Trick: Multiplying Pricing Caps by Term Length",
+            "author": "UpperEdge, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/nrJ8yyEVHmY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nrJ8yyEVHmY"
+          },
+          {
+            "video_id": "x0K0bAATQIA",
+            "title": "SaaS Renewal Price Uplifts: Automate Price Increases | MonetizeNow",
+            "author": "MonetizeNow",
+            "thumbnail_url": "https://i.ytimg.com/vi/x0K0bAATQIA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x0K0bAATQIA"
+          },
+          {
+            "video_id": "s8wp3enRPD8",
+            "title": "How to Review Every SaaS Renewal Before It Auto Renews",
+            "author": "CloudEagle",
+            "thumbnail_url": "https://i.ytimg.com/vi/s8wp3enRPD8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s8wp3enRPD8"
+          },
+          {
+            "video_id": "QLqtDhk3PoI",
+            "title": "SaaS renewal management: a renewal strategy to stop paying for unused software",
+            "author": "fynk",
+            "thumbnail_url": "https://i.ytimg.com/vi/QLqtDhk3PoI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QLqtDhk3PoI"
+          },
+          {
+            "video_id": "nnAd6F22fiw",
+            "title": "Configure Auto-renewal",
+            "author": "SoftwareOne Platform",
+            "thumbnail_url": "https://i.ytimg.com/vi/nnAd6F22fiw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nnAd6F22fiw"
+          },
+          {
+            "video_id": "ahHk4naTV0s",
+            "title": "Triggering Renewal Deal Creation Automatically with Contracts in HubSpot",
+            "author": "HubSpot Data Analytics by MergeYourData",
+            "thumbnail_url": "https://i.ytimg.com/vi/ahHk4naTV0s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ahHk4naTV0s"
+          },
+          {
+            "video_id": "O6H36x0A6_g",
+            "title": "HubSpot Renewal: $5,000 for Empty Seats. 5 Steps to Avoid It",
+            "author": "Yusuf Young",
+            "thumbnail_url": "https://i.ytimg.com/vi/O6H36x0A6_g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O6H36x0A6_g"
+          },
+          {
+            "video_id": "ubYfOw6FSPA",
+            "title": "Seat Pricing or Token Pricing: What Zendesk and HubSpot Chose",
+            "author": "The Innovation Attorney",
+            "thumbnail_url": "https://i.ytimg.com/vi/ubYfOw6FSPA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ubYfOw6FSPA"
+          },
+          {
+            "video_id": "CnpFwgvhMNc",
+            "title": "Salesforce Salary Negotiation | How to Navigate a Salesforce Offer Negotiation",
+            "author": "The Salary Negotiator®",
+            "thumbnail_url": "https://i.ytimg.com/vi/CnpFwgvhMNc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CnpFwgvhMNc"
+          },
+          {
+            "video_id": "dOTg4A37x5g",
+            "title": "Salesforce Renewal - Top Negotiation Tips",
+            "author": "The Negotiator Guru",
+            "thumbnail_url": "https://i.ytimg.com/vi/dOTg4A37x5g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=dOTg4A37x5g"
+          },
+          {
+            "video_id": "HlJxNYkv7AY",
+            "title": "Docusign IAM for Sales: Customer Renewal Management",
+            "author": "Docusign",
+            "thumbnail_url": "https://i.ytimg.com/vi/HlJxNYkv7AY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HlJxNYkv7AY"
+          },
+          {
+            "video_id": "TxvzhnvDnxA",
+            "title": "From Data to Dollars: Using the Portfolio Approach to Improve Margins in Your MSP | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/TxvzhnvDnxA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TxvzhnvDnxA"
+          },
+          {
+            "video_id": "z4JbWkKJagI",
+            "title": "Build the managed intelligence stack for SMBs with Pax8 and Microsoft | BRKSP590",
+            "author": "Microsoft Events",
+            "thumbnail_url": "https://i.ytimg.com/vi/z4JbWkKJagI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z4JbWkKJagI"
+          },
+          {
+            "video_id": "P960HFmyakQ",
+            "title": "Building the Next-Gen MSP Stack: How Pax8 Is Simplifying MSP Integrations | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/P960HFmyakQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=P960HFmyakQ"
+          },
+          {
+            "video_id": "_98wIAhek0M",
+            "title": "How MSPs Can Turn Strategy into Real Business Results | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/_98wIAhek0M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=_98wIAhek0M"
+          },
+          {
+            "video_id": "7HqXWzAK1WM",
+            "title": "Your MSP Questions, Answered: Stack, Security, Coaching & Community | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/7HqXWzAK1WM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7HqXWzAK1WM"
+          },
+          {
+            "video_id": "NVSw5ZYgQzw",
+            "title": "Pax8 Demo and Product Tour | MSP Cloud Services Marketplace",
+            "author": "Tubblog - The Hub for MSPs",
+            "thumbnail_url": "https://i.ytimg.com/vi/NVSw5ZYgQzw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NVSw5ZYgQzw"
+          },
+          {
+            "video_id": "oQIMe7F_kaw",
+            "title": "From £2 Add-On to a Service Clients Understand: Lessons From Pax8",
+            "author": "usecure",
+            "thumbnail_url": "https://i.ytimg.com/vi/oQIMe7F_kaw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oQIMe7F_kaw"
+          },
+          {
+            "video_id": "fM8cQVJ3oh8",
+            "title": "90%+ Customer Adoption? The Cybersecurity Sales Strategy MSPs Should Know | Blackpoint at Pax8 EMEA",
+            "author": "Magic Chats",
+            "thumbnail_url": "https://i.ytimg.com/vi/fM8cQVJ3oh8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fM8cQVJ3oh8"
+          },
+          {
+            "video_id": "HLMRv3YJ-sI",
+            "title": "What Is the MIP Program? A Complete Guide for MSPs | Pax8",
+            "author": "Pax8",
+            "thumbnail_url": "https://i.ytimg.com/vi/HLMRv3YJ-sI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HLMRv3YJ-sI"
+          },
+          {
+            "video_id": "UXqaaLTNfFk",
+            "title": "Pax8's Eric Torres Discusses Enhanced Nerdio Partnership & MSP Marketplace Solutions: NerdioCon 2025",
+            "author": "VMblog",
+            "thumbnail_url": "https://i.ytimg.com/vi/UXqaaLTNfFk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UXqaaLTNfFk"
+          },
+          {
+            "video_id": "lxObl7Zpr2A",
+            "title": "What is Telecom Expense Management (TEM)?",
+            "author": "brightfin",
+            "thumbnail_url": "https://i.ytimg.com/vi/lxObl7Zpr2A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lxObl7Zpr2A"
+          },
+          {
+            "video_id": "YAHf-FXxBCM",
+            "title": "Technology expense management - Why Do a telecom audit?",
+            "author": "Auditel, Inc. Telecom Expense Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/YAHf-FXxBCM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YAHf-FXxBCM"
+          },
+          {
+            "video_id": "GcLqzAGpP2s",
+            "title": "Bill Auditing and Telecom Expense Management Tips",
+            "author": "singlesourcetelecom",
+            "thumbnail_url": "https://i.ytimg.com/vi/GcLqzAGpP2s/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GcLqzAGpP2s"
+          },
+          {
+            "video_id": "Fgb-rjcpBI8",
+            "title": "Mobility 101: Telecom Expense Management, or TEM",
+            "author": "GSG",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fgb-rjcpBI8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Fgb-rjcpBI8"
+          },
+          {
+            "video_id": "mFoRTIncoOI",
+            "title": "What does a Telecom Expense Management Specialist Do? How does TEM Help Cutting Costs?",
+            "author": "RadiusPoint",
+            "thumbnail_url": "https://i.ytimg.com/vi/mFoRTIncoOI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mFoRTIncoOI"
+          },
+          {
+            "video_id": "F00NVfaC6Tk",
+            "title": "Telecom Expense Management: Why have a telecom audit? Part 3 Forward Savings",
+            "author": "Auditel, Inc. Telecom Expense Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/F00NVfaC6Tk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=F00NVfaC6Tk"
+          },
+          {
+            "video_id": "HJSf4yb3-CM",
+            "title": "Introducing Sage Expense Management",
+            "author": "Sage Expense Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/HJSf4yb3-CM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=HJSf4yb3-CM"
+          },
+          {
+            "video_id": "RV9K4EXWxJs",
+            "title": "Telecom Expense Management",
+            "author": "Ancy Alphonse",
+            "thumbnail_url": "https://i.ytimg.com/vi/RV9K4EXWxJs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RV9K4EXWxJs"
+          },
+          {
+            "video_id": "aIRwF9gyA-w",
+            "title": "Telecom Expense Management",
+            "author": "Deutsche Telekom - B2B Europe",
+            "thumbnail_url": "https://i.ytimg.com/vi/aIRwF9gyA-w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=aIRwF9gyA-w"
+          },
+          {
+            "video_id": "s-VGS7d821o",
+            "title": "Sage Intacct Subscription Billing | SaaS Revenue & Reporting",
+            "author": "IWI Consulting Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/s-VGS7d821o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s-VGS7d821o"
+          },
+          {
+            "video_id": "uHFljjNXztI",
+            "title": "CPOR Claiming Partner of Record Essentials to Unlock More Microsoft Partner Points!",
+            "author": "Inside Microsoft AI Cloud Partner Program",
+            "thumbnail_url": "https://i.ytimg.com/vi/uHFljjNXztI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uHFljjNXztI"
+          },
+          {
+            "video_id": "KNnxTcJ4cEE",
+            "title": "Create a customer association via the Claiming Partner of Record [CPOR]",
+            "author": "Synergy Advisors LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/KNnxTcJ4cEE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KNnxTcJ4cEE"
+          },
+          {
+            "video_id": "uiVjifpxK38",
+            "title": "Microsoft Partner Center Explained: FY26 Benefits & CSP Guide",
+            "author": "m365 Show | M365, Azure Cloud, Power Platform & AI",
+            "thumbnail_url": "https://i.ytimg.com/vi/uiVjifpxK38/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uiVjifpxK38"
+          },
+          {
+            "video_id": "kD54qMCh58A",
+            "title": "How to qualify for Microsoft partner program cashback incentives in 2026 | MAICPP FY26",
+            "author": "Sherweb",
+            "thumbnail_url": "https://i.ytimg.com/vi/kD54qMCh58A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kD54qMCh58A"
+          },
+          {
+            "video_id": "9veqF5Bgt4E",
+            "title": "Claim Microsoft Co-Op/ Rebate Funding in 3 EASY Steps #CoffeeTalkTBSC",
+            "author": "TBSC",
+            "thumbnail_url": "https://i.ytimg.com/vi/9veqF5Bgt4E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9veqF5Bgt4E"
+          },
+          {
+            "video_id": "jz1cE7UYBO4",
+            "title": "Unlock Microsoft AI Cloud Partner Program Benefits",
+            "author": "Inside Microsoft AI Cloud Partner Program",
+            "thumbnail_url": "https://i.ytimg.com/vi/jz1cE7UYBO4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jz1cE7UYBO4"
+          },
+          {
+            "video_id": "QYe90AHibvQ",
+            "title": "Unlocking Private Equity Value with OMNIA Partners’ Spend Path and The Power of Group Purchasing",
+            "author": "OMNIA Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/QYe90AHibvQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QYe90AHibvQ"
+          },
+          {
+            "video_id": "eTxETdL4Omg",
+            "title": "Cooperative Purchasing Provides Value to Public Agencies Through OMNIA Partners",
+            "author": "OMNIA Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/eTxETdL4Omg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=eTxETdL4Omg"
+          },
+          {
+            "video_id": "fdEV8yBr5eM",
+            "title": "How Gonzaga University Simplifies Procurement with OMNIA Partners",
+            "author": "OMNIA Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/fdEV8yBr5eM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fdEV8yBr5eM"
+          },
+          {
+            "video_id": "qPpAutcFjBw",
+            "title": "Spend Visibility: Your Tool for Greater Efficiencies and Cost Savings",
+            "author": "OMNIA Partners",
+            "thumbnail_url": "https://i.ytimg.com/vi/qPpAutcFjBw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qPpAutcFjBw"
+          },
+          {
+            "video_id": "2dLvgvK0qCY",
+            "title": "B2B SaaS Sales Quota Benchmarks 2026: SDR Meetings, AE Quota, OTE, Ratios",
+            "author": "GrowthSpree - AI Native B2B Marketing Agency",
+            "thumbnail_url": "https://i.ytimg.com/vi/2dLvgvK0qCY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2dLvgvK0qCY"
+          },
+          {
+            "video_id": "D_gkFglCscs",
+            "title": "How to Hit Your Quota EVERY Single Month as a Sales Rep",
+            "author": "Dylan Rich",
+            "thumbnail_url": "https://i.ytimg.com/vi/D_gkFglCscs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=D_gkFglCscs"
+          },
+          {
+            "video_id": "cjmKIrc6hgE",
+            "title": "Your Life as Every Level of a SaaS Sales Rep — From SDR to VP",
+            "author": "Money Machine",
+            "thumbnail_url": "https://i.ytimg.com/vi/cjmKIrc6hgE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cjmKIrc6hgE"
+          },
+          {
+            "video_id": "uBngVWkX0K4",
+            "title": "Unlocking Sales Success: Ben Murray and QuotaPath on Building Scalable Compensation Plans",
+            "author": "The SaaS CFO",
+            "thumbnail_url": "https://i.ytimg.com/vi/uBngVWkX0K4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uBngVWkX0K4"
+          },
+          {
+            "video_id": "3enRkyZlcQk",
+            "title": "What quota a $200,000 rep should carry",
+            "author": "SaasRise",
+            "thumbnail_url": "https://i.ytimg.com/vi/3enRkyZlcQk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3enRkyZlcQk"
+          },
+          {
+            "video_id": "B5SsF-kHahw",
+            "title": "CEO EXPLAINS: 9 SaaS Negotiation Tips to Close SaaS Deals (At the Price YOU Want)",
+            "author": "Caliber (Formerly pclub.io)",
+            "thumbnail_url": "https://i.ytimg.com/vi/B5SsF-kHahw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B5SsF-kHahw"
+          },
+          {
+            "video_id": "m505TQagq7g",
+            "title": "🔥 20 SaaS Sales Hacks That’ll Make You Close Deals Like a Boss 💰🚀",
+            "author": "Oz SaaS Master",
+            "thumbnail_url": "https://i.ytimg.com/vi/m505TQagq7g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=m505TQagq7g"
+          },
+          {
+            "video_id": "KGmwDKTR6fQ",
+            "title": "How to Get Your SaaS Pricing Structure Right",
+            "author": "Willingness to Pay",
+            "thumbnail_url": "https://i.ytimg.com/vi/KGmwDKTR6fQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=KGmwDKTR6fQ"
+          },
+          {
+            "video_id": "rTGrwbYBlXg",
+            "title": "SaaS Pricing Metrics Explained: Operational Viability",
+            "author": "Willingness to Pay",
+            "thumbnail_url": "https://i.ytimg.com/vi/rTGrwbYBlXg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rTGrwbYBlXg"
+          },
+          {
+            "video_id": "lC6Gpn0ugFI",
+            "title": "SaaS Pricing Models Explained in 5 Minutes",
+            "author": "Rob Walling",
+            "thumbnail_url": "https://i.ytimg.com/vi/lC6Gpn0ugFI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lC6Gpn0ugFI"
+          },
+          {
+            "video_id": "cdQzCVUJybY",
+            "title": "Pricing for B2B SaaS",
+            "author": "Willingness to Pay",
+            "thumbnail_url": "https://i.ytimg.com/vi/cdQzCVUJybY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cdQzCVUJybY"
+          },
+          {
+            "video_id": "tNlpy7MZ8Vk",
+            "title": "What Good SaaS Pricing Looks Like: Bechmarks, Signals and Metrics",
+            "author": "Willingness to Pay",
+            "thumbnail_url": "https://i.ytimg.com/vi/tNlpy7MZ8Vk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tNlpy7MZ8Vk"
+          },
+          {
+            "video_id": "jOL79tUtq3o",
+            "title": "The Founder's Guide to SaaS Pricing in the AI Era: Seat-Based, Usage-Based, or Hybrid? | Roee Hartuv",
+            "author": "Champion Leadership",
+            "thumbnail_url": "https://i.ytimg.com/vi/jOL79tUtq3o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jOL79tUtq3o"
+          },
+          {
+            "video_id": "l1Q6q8yDjTQ",
+            "title": "SaaS Pricing Strategy: Why Most New Startups Moved Beyond Per-Seat",
+            "author": "Andrew Garberson",
+            "thumbnail_url": "https://i.ytimg.com/vi/l1Q6q8yDjTQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=l1Q6q8yDjTQ"
+          },
+          {
+            "video_id": "Ieuyh9RZzvM",
+            "title": "Validating Pricing Models in B2B SaaS",
+            "author": "Willingness to Pay",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ieuyh9RZzvM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Ieuyh9RZzvM"
+          },
+          {
+            "video_id": "BGb6-WKMNN4",
+            "title": "SaaS Pricing Architecture (Full Training)",
+            "author": "Willingness to Pay",
+            "thumbnail_url": "https://i.ytimg.com/vi/BGb6-WKMNN4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BGb6-WKMNN4"
+          },
+          {
+            "video_id": "FvNIaRG9sxI",
+            "title": "How to Benchmark Your SaaS Business | SaaS Metrics School | BenchMarkIt.ai | SaaS Business",
+            "author": "The SaaS CFO",
+            "thumbnail_url": "https://i.ytimg.com/vi/FvNIaRG9sxI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FvNIaRG9sxI"
+          },
+          {
+            "video_id": "xmq83cmzth4",
+            "title": "Why Enterprise Buyers Hate AI Pricing Models - The AI vs. SaaS Pricing War",
+            "author": "Ultimate CFO",
+            "thumbnail_url": "https://i.ytimg.com/vi/xmq83cmzth4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xmq83cmzth4"
+          },
+          {
+            "video_id": "sALcv-71Klw",
+            "title": "🎥 Oracle ERP Cloud Negotiation Tip #9: Benchmark and Know the Market Rates",
+            "author": "Redress Compliance",
+            "thumbnail_url": "https://i.ytimg.com/vi/sALcv-71Klw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sALcv-71Klw"
+          },
+          {
+            "video_id": "oDjXoRkYaA0",
+            "title": "Per Seat Pricing Is Ending? 3 SaaS Pricing Models Replacing It (Atlassian Rovo, Dec 3)",
+            "author": "Soft Learn Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/oDjXoRkYaA0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oDjXoRkYaA0"
+          },
+          {
+            "video_id": "ydyjI39LlNw",
+            "title": "8 SaaS pricing models explained in under 3 minutes",
+            "author": "Binary Stream Software",
+            "thumbnail_url": "https://i.ytimg.com/vi/ydyjI39LlNw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ydyjI39LlNw"
+          },
+          {
+            "video_id": "6YNd6Xcyekw",
+            "title": "Get the Most Value from Value Added Resellers",
+            "author": "Staying Connected",
+            "thumbnail_url": "https://i.ytimg.com/vi/6YNd6Xcyekw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6YNd6Xcyekw"
+          },
+          {
+            "video_id": "oB21xupXerM",
+            "title": "VARs are Useless – The On-Premise IT Roundtable",
+            "author": "Tech Field Day Plus",
+            "thumbnail_url": "https://i.ytimg.com/vi/oB21xupXerM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oB21xupXerM"
+          },
+          {
+            "video_id": "z-ZzUEITMGM",
+            "title": "Reseller - VAR Value Added Reseller Part 1",
+            "author": "bobvalueadded",
+            "thumbnail_url": "https://i.ytimg.com/vi/z-ZzUEITMGM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=z-ZzUEITMGM"
+          },
+          {
+            "video_id": "PNMNLFBOp7E",
+            "title": "SaaS Licence Rightsizing | How to Rightsize SaaS Licences, Subscriptions, and Features | Flexera",
+            "author": "Flexera | ITAM, FinOps & SaaS Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/PNMNLFBOp7E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=PNMNLFBOp7E"
+          },
+          {
+            "video_id": "8klvxfhjzF4",
+            "title": "How to Stop Renewing SaaS Licenses at Last Year's Count",
+            "author": "CloudEagle",
+            "thumbnail_url": "https://i.ytimg.com/vi/8klvxfhjzF4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8klvxfhjzF4"
+          },
+          {
+            "video_id": "ftGGihhAn3g",
+            "title": "SaaS License Management, Explained",
+            "author": "Zylo | The Leader in Enterprise SaaS Management",
+            "thumbnail_url": "https://i.ytimg.com/vi/ftGGihhAn3g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ftGGihhAn3g"
+          },
+          {
+            "video_id": "-1Sqw4pgdxY",
+            "title": "True-Up Flexibility in Microsoft EA – How to Avoid Paying for Unused Licenses",
+            "author": "Redress Compliance",
+            "thumbnail_url": "https://i.ytimg.com/vi/-1Sqw4pgdxY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-1Sqw4pgdxY"
+          },
+          {
+            "video_id": "JLEo4uQ_STM",
+            "title": "ServiceNow SAM: Software License and Contract Renewal",
+            "author": "ITAM Now",
+            "thumbnail_url": "https://i.ytimg.com/vi/JLEo4uQ_STM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JLEo4uQ_STM"
+          },
+          {
+            "video_id": "NCcXkxFkX8k",
+            "title": "Rightsizing your SAAS licenses w/ YouAttest",
+            "author": "YouAttest",
+            "thumbnail_url": "https://i.ytimg.com/vi/NCcXkxFkX8k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NCcXkxFkX8k"
           }
         ],
         "research_reference_only": true,
@@ -45579,7 +46825,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 6117 third-party videos (55985 captured tips)",
+        "source": "Spoken content of 6295 third-party videos (57544 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -45595,38 +46841,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 6117,
-    "channel_count": 3647,
-    "total_words": 8756807,
-    "total_hours": 1734.8,
-    "total_pro_tips": 55985,
-    "unique_statutes_and_forms": 2109,
-    "unique_tools_and_portals": 15723
+    "video_count": 6295,
+    "channel_count": 3751,
+    "total_words": 8972867,
+    "total_hours": 1776.24,
+    "total_pro_tips": 57544,
+    "unique_statutes_and_forms": 2147,
+    "unique_tools_and_portals": 16072
   },
   "coverage": {
-    "videos_classified": 6117,
-    "videos_with_multiple_topics": 6114,
-    "tips_classified": 55985,
-    "raw_transcripts_joined": 6117,
+    "videos_classified": 6295,
+    "videos_with_multiple_topics": 6292,
+    "tips_classified": 57544,
+    "raw_transcripts_joined": 6295,
     "topic_video_counts": {
-      "business_model_and_economics": 4922,
-      "probate_and_docket_sourcing": 4682,
-      "unclaimed_property_and_escheat": 1161,
-      "genealogy_and_heirship_proof": 5134,
-      "skip_tracing_and_outreach": 3333,
-      "contracts_and_compensation": 4754,
-      "statutory_caps_and_licensing": 5201,
-      "automation_and_small_team_ops": 4073
+      "business_model_and_economics": 5078,
+      "probate_and_docket_sourcing": 4769,
+      "unclaimed_property_and_escheat": 1205,
+      "genealogy_and_heirship_proof": 5272,
+      "skip_tracing_and_outreach": 3409,
+      "contracts_and_compensation": 4888,
+      "statutory_caps_and_licensing": 5338,
+      "automation_and_small_team_ops": 4231
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 10093,
-      "probate_and_docket_sourcing": 9926,
-      "unclaimed_property_and_escheat": 2511,
-      "genealogy_and_heirship_proof": 7517,
-      "skip_tracing_and_outreach": 1494,
-      "contracts_and_compensation": 8482,
-      "statutory_caps_and_licensing": 4714,
-      "automation_and_small_team_ops": 11248
+      "business_model_and_economics": 10438,
+      "probate_and_docket_sourcing": 9968,
+      "unclaimed_property_and_escheat": 2523,
+      "genealogy_and_heirship_proof": 7674,
+      "skip_tracing_and_outreach": 1538,
+      "contracts_and_compensation": 8621,
+      "statutory_caps_and_licensing": 4912,
+      "automation_and_small_team_ops": 11870
     }
   },
   "schema_version": "1.0",

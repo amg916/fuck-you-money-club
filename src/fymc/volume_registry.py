@@ -1,4 +1,4 @@
-"""Canonical 36-volume registry, slug resolver, and dynamic builder loader for FYMC."""
+"""Canonical 37-volume registry, slug resolver, and dynamic builder loader for FYMC."""
 from __future__ import annotations
 
 import importlib
@@ -849,16 +849,53 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
             ],
         ),
     },
+    37: {
+        "volume_number": 37,
+        "volume_id": "vol-037-saas-discount-and-gpo-arbitrage",
+        "short_slug": "saas-discount-and-gpo-arbitrage",
+        "candidate_number": 37,
+        "score": 94,
+        "title": "SaaS Discount Brokerage & GPO Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Partner-of-Record (CPOR/VIP/CSP) License Transfers, Master-Agent UCaaS Residuals & Private GPO Spend Splits",
+        "site_ui": _ui(
+            ["SAAS & GPO", "DISCOUNT", "ARBITRAGE"],
+            ["ZERO-MIGRATION LICENSE TRANSFERS", "RECURRING CHANNEL & GPO SPREADS"],
+            "Cut SMB Zoom, Adobe, Microsoft 365, and cloud bills through authorized two-tier distributor transfers, Telarus/Avant master-agent residuals, and negotiated GPO volume brackets.",
+            "Benchmark invoices against eligible distributor pricing, secure customer-approved license transfers without tenant migration where supported, and reconcile Telarus/Avant UCaaS residuals alongside private GPO spend splits. Separate CPOR attribution from VIP/CSP transfer rules, verify volume commitments, and count only contracted savings and earned rebates after fees and clawbacks.",
+            [
+                "SaaS discount brokerage & private GPO models",
+                "SMB buyers, two-tier distributors & master-agent payment rails",
+                "License spreads, UCaaS residuals & GPO split economics",
+                "Partner enrollment, lean stack & working-capital needs",
+                "Transfer restrictions, clawbacks & volume shortfall traps",
+                "Technographic triggers, invoice audits & first customers",
+                "Customer consent, VIP/CSP transfers & GPO bracket locks",
+                "Distributor portals, billing APIs & renewal tooling",
+                "CPOR attribution, channel contracts & savings disclosures",
+                "Autopay, eligible VCC rebates & referral loops",
+                "Lean account pods, residual ownership & exit valuation",
+                "First 30-day license-and-GPO launch sprint",
+            ],
+            [
+                ["TECHNOGRAPHIC TRIGGER", "Find SMB renewal windows & eligible software spend"],
+                ["INVOICE BENCHMARK", "Compare net pricing, commitments & service scope"],
+                ["CPOR / VIP TRANSFER", "Verify attribution vs transfer rules & authorize VIP/CSP moves"],
+                ["GPO BRACKET LOCK", "Document pooled volume, pricing tiers & spend splits"],
+                ["AUTOPAY & VCC REBATE", "Authorize payments & reconcile eligible rebates net of fees"],
+                ["RENEWAL COMPOUNDING", "Audit savings, residuals & retention before renewal"],
+            ],
+        ),
+    },
 }
 
-ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36)
+ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37)
 CANDIDATE_TO_VOLUME_NUMBER: dict[int, int] = {
     int(spec["candidate_number"]): num for num, spec in ALL_VOLUME_SPECS.items()
 }
 
 
 def get_volume_spec_by_candidate(candidate_number: object) -> dict | None:
-    """Return the canonical volume spec for a 1..36 candidate_number, or None."""
+    """Return the canonical volume spec for a 1..37 candidate_number, or None."""
     if isinstance(candidate_number, bool):
         return None
     try:
@@ -895,7 +932,7 @@ def _match_volume_number(volume_id: object) -> int | None:
 
 
 def get_volume_spec(volume_id_or_num: object = None) -> dict:
-    """Return the canonical spec dict for any of the 36 registered volumes."""
+    """Return the canonical spec dict for any of the 37 registered volumes."""
     if volume_id_or_num is None:
         return ALL_VOLUME_SPECS[1]
     num = _match_volume_number(volume_id_or_num)

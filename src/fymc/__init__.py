@@ -51,6 +51,7 @@ VOLUME_033_ID = ALL_VOLUME_SPECS.get(33, {"volume_id": "vol-033"})["volume_id"]
 VOLUME_034_ID = ALL_VOLUME_SPECS.get(34, {"volume_id": "vol-034"})["volume_id"]
 VOLUME_035_ID = ALL_VOLUME_SPECS.get(35, {"volume_id": "vol-035"})["volume_id"]
 VOLUME_036_ID = ALL_VOLUME_SPECS.get(36, {"volume_id": "vol-036"})["volume_id"]
+VOLUME_037_ID = ALL_VOLUME_SPECS.get(37, {"volume_id": "vol-037-saas-discount-and-gpo-arbitrage"})["volume_id"]
 PUBLISHED_VOLUME_IDS = get_published_volume_ids()
 OWNER_APPROVED_CONCEPT_ID = "concept_b"
 MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK = 150

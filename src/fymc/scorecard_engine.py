@@ -3362,6 +3362,122 @@ PLAY_DEFINITIONS = {
                      'fallback': 'Suspend abusive workloads, preserve required evidence, route '
                                  'compliant traffic only to authorized alternatives and reduce or '
                                  'renegotiate excess commitments'}]},
+    'saas_cpor_vip_distributor_margin_split': {'id': 'saas_cpor_vip_distributor_margin_split',
+ 'track_id': 'track_1',
+ 'name': 'Two-Tier Cloud Distributor & Partner-of-Record (CPOR/VIP/CSP) Margin-Split Arbitrage',
+ 'mechanism': 'Onboard under two-tier cloud distributors Pax8, Ingram Micro Cloud and TD SYNNEX, '
+              'and Technology Services Distributors Telarus and Avant, to pursue 15%–28% wholesale '
+              'channel tiers on Adobe VIP Marketplace, Zoom Up / RingCentral UCaaS, Microsoft CSP, '
+              'Google Workspace and DocuSign. Cold-call SMBs paying retail card rates and execute '
+              'authorized Reseller-of-Record transfers targeting zero downtime, immediate invoice '
+              'reductions of 8%–14% and an 8%–15% evergreen annual renewal spread. These are '
+              'illustrative targets subject to vendor eligibility, compatible discount and spread '
+              'bases, renewal windows and written distributor terms, not guaranteed margins.',
+ 'inputs': ['Approved distributor and master-agent agreements with vendor-specific wholesale '
+            'tiers, transfer eligibility and renewal residual schedules',
+            'Client-authorized subscription invoices, tenant identifiers and renewal dates plus '
+            'a lawfully sourced SMB calling list and outreach compliance controls',
+            'Signed reseller transfer consent, prefunded ACH/card billing mandates and a '
+            'subscription-level landed-cost and retained-spread ledger'],
+ 'workflow': ['1. Complete distributor onboarding and verify each vendor program, partner role, '
+              'transfer window and written wholesale or residual entitlement.',
+              '2. Cold-call eligible SMBs under applicable FTC TSR B2B telemarketing, TCPA and '
+              'state rules, then compare authorized invoices against verified channel quotes.',
+              '3. Obtain client approval and execute the vendor-supported Reseller-of-Record '
+              'transfer without changing workloads, validating continuity before billing cutover.',
+              '4. Reconcile distributor billing and prefunded client collections, measure actual '
+              'savings and retained spreads and revalidate pricing before each renewal.'],
+ 'metrics': ['Verified client invoice savings percentage on like-for-like subscription terms',
+             'Collected annual renewal spread after distributor costs, support and credit losses',
+             'Transfer service-interruption count and prefunded coverage of annual NCE obligations'],
+ 'platform_risks': [{'failure_mode': 'Partner-tier compression or client default erases the '
+                                     'retained spread while annual commitments remain payable',
+                     'trigger': 'Vendor rebate changes, ineligible transfer terms or failed client '
+                                'collections on Microsoft NCE annual commitments',
+                     'impact': 'Negative contribution, uncollectible subscription balances and '
+                               'potential service interruption',
+                     'detection_metric': 'Renewal spread below contracted floor and unfunded '
+                                         'noncancelable subscription obligations',
+                     'fallback': 'Pause new commitments, enforce agreed prepayment controls and '
+                                 'negotiate authorized renewal repricing or vendor-supported '
+                                 'transfers without promising cancellation of binding terms'}]},
+    'private_b2b_gpo_umbrella_rebate_arbitrage': {'id': 'private_b2b_gpo_umbrella_rebate_arbitrage',
+ 'track_id': 'track_1',
+ 'name': 'Private B2B Group Purchasing Organization (GPO) Umbrella & Contingent Spend-Audit Arbitrage',
+ 'mechanism': 'Pool 10,000–75,000+ seats and indirect corporate spend across hundreds of SMB member '
+              'companies under authorized master GPO volume brackets through Una, OMNIA or private '
+              'vertical SaaS, parcel and telecom GPOs. Pair negotiated brackets with quarter-end '
+              'vendor price-floor benchmarking informed by Vendr/Tropic playbooks, targeting '
+              '3%–12% vendor-paid administrative rebates and 25%–35% contingent Year-1 '
+              'shared-savings splits under no savings, no fee agreements. Eligibility, rebate '
+              'bases and benchmark access must be verified; disclose dual compensation and '
+              'avoid double-counting rebates in client savings.',
+ 'inputs': ['Executed GPO member and supplier agreements defining eligible aggregated spend, '
+            'volume brackets, administrative rebates and compensation disclosures',
+            'Member-authorized invoices and seat inventories plus lawfully obtained, '
+            'like-for-like Vendr/Tropic-style pricing benchmarks',
+            'Contingent audit contracts defining the Year-1 savings baseline, exclusions, '
+            '25%–35% fee schedule and independent reconciliation rights'],
+ 'workflow': ['1. Enroll eligible SMB members with written authority and aggregate verified '
+              'seat demand and indirect spend without exchanging competitively sensitive data.',
+              '2. Validate GPO purchasing eligibility and negotiate supplier volume brackets '
+              'using lawful quarter-end benchmarks for comparable service and commitment terms.',
+              '3. Present disclosed vendor rebates and contingent fees, secure member approval '
+              'and implement authorized contract changes against an agreed savings baseline.',
+              '4. Reconcile actual Year-1 savings and vendor rebates, charge only earned '
+              'shared-savings fees and audit bracket eligibility and renewal pricing.'],
+ 'metrics': ['Verified eligible seats and annual member spend within contracted GPO brackets',
+             'Realized Year-1 member savings net of contingent fees on a normalized baseline',
+             'Collected administrative rebates and shared-savings fees net of reversals'],
+ 'platform_risks': [{'failure_mode': 'Ineligible pooled spend or disputed savings invalidates '
+                                     'rebates and contingent fees',
+                     'trigger': 'Supplier audit, volume-bracket shortfall, undisclosed dual '
+                                'compensation or an unsupported baseline adjustment',
+                     'impact': 'Rebate clawbacks, member fee disputes and loss of supplier access',
+                     'detection_metric': 'Unsupported eligible spend and disputed savings or '
+                                         'rebates as a percentage of billed compensation',
+                     'fallback': 'Suspend disputed fees, reconcile documented baselines with '
+                                 'members and suppliers, refund unearned amounts and move '
+                                 'affected members to eligible purchasing agreements'}]},
+    'enterprise_excess_seat_commit_pooling_arbitrage': {'id': 'enterprise_excess_seat_commit_pooling_arbitrage',
+ 'track_id': 'track_2',
+ 'name': 'Multi-Tenant MSP & Distressed Enterprise SaaS Commit Pooling Arbitrage',
+ 'mechanism': 'Acquire or sub-allocate underutilized multi-year enterprise SaaS/cloud minimums, '
+              'distressed startup seat blocks and authorized multi-tenant MSP management tiers '
+              'at a target 35%–65% discount to retail list price only where the vendor explicitly '
+              'permits assignment or resale. Provision isolated workspaces or managed seats for '
+              'mid-market clients within applicable Microsoft SPLA/CSP/GDAP, Adobe multi-seat '
+              'and AWS Marketplace CPPO rules. These programs are not interchangeable: delegated '
+              'administration alone grants no resale rights, and unused commitments or startup '
+              'discounts are not presumed transferable.',
+ 'inputs': ['Vendor-approved assignment, resale or MSP agreements for identified excess '
+            'commitments and seat blocks, including distressed-seller authority and title checks',
+            'Program-specific entitlement inventory covering Microsoft SPLA/CSP/GDAP, Adobe '
+            'multi-seat and AWS Marketplace CPPO permissions and end-customer restrictions',
+            'Committed client demand, isolated tenant provisioning and a license-audit ledger '
+            'with prepaid billing and noncancelable commitment reserves'],
+ 'workflow': ['1. Verify seller authority and obtain explicit vendor approval for each '
+              'assignment or sub-allocation before pricing discounted excess capacity.',
+              '2. Match committed mid-market demand to permitted SKUs, tenant boundaries and '
+              'contract terms, stress-testing utilization against unavoidable minimums.',
+              '3. Provision isolated workspaces or managed seats through authorized program '
+              'channels with least-privilege administration and traceable client entitlements.',
+              '4. Reconcile seat usage, invoices and license evidence monthly, right-size '
+              'commitments at permitted windows and remediate audit exceptions promptly.'],
+ 'metrics': ['Verified acquisition discount to comparable retail list price for approved terms',
+             'Collected managed-seat contribution after commitments, support and idle capacity',
+             'Entitlement reconciliation exceptions and tenant-isolation control failures'],
+ 'platform_risks': [{'failure_mode': 'Unauthorized seat pooling or assignment breaches vendor '
+                                     'license and tenant-isolation boundaries',
+                     'trigger': 'License audit identifies nontransferable distressed seat blocks, '
+                                'unapproved resale or cross-tenant entitlement reuse',
+                     'impact': 'License clawbacks, account suspension, stranded commitments and '
+                               'customer data or service exposure',
+                     'detection_metric': 'Provisioned seats lacking vendor-approved entitlement '
+                                         'evidence and unresolved tenant-isolation alerts',
+                     'fallback': 'Stop unauthorized provisioning, isolate affected access and '
+                                 'coordinate vendor-approved direct licenses or permitted '
+                                 'migration while resolving audit liabilities transparently'}]},
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -3948,6 +4064,7 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         'ferc_grid_interconnection_queue_land_speculation',
         'high_velocity_dm_outbound_systems',
     ),
+    37: ("saas_cpor_vip_distributor_margin_split", "private_b2b_gpo_umbrella_rebate_arbitrage", "enterprise_excess_seat_commit_pooling_arbitrage", "saas_technographic_churn_pixel_scraping", "sec_edgar_8k_vendor_trigger_arbitrage", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems", "cloud_ai_startup_credit_aggregation_arbitrage", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "competitor_intent_comparison_hijacking", "ucc1_expiration_refi_trigger_arbitrage"),
 }
 
 
@@ -4641,6 +4758,7 @@ _CANDIDATE_SPECS.extend([
     _candidate(34, "NEMT & Medical Courier Dispatch Arbitrage", "Healthcare logistics brokerage", (250000, 1600000), (12, 24), (15000, 65000), (3500, 18000), "2–5 months", (2, 2), "Asset-light Medicaid TPA transportation standing orders and STAT clinical specimen routes subcontracted to credentialed 1099 drivers create predictable recurring healthcare cashflow.", ["RouteGenie / MediRoutes GPS dispatch", "837P EDI claim scrubbing & AR tracking", "Barcode specimen chain-of-custody logs"], ["Medicaid broker Net-30/45 payment float", "1099 driver misclassification exposure", "Missed STAT pickup or trip-log audit clawbacks"], ["Maintain HIPAA Business Associate Agreements, OSHA bloodborne-pathogen / DOT UN3373 specimen protocols and Medicaid provider credentialing.", "Structure independent-contractor owner-operator agreements and GPS trip verification strictly within state labor and Medicaid rules."], revenue_basis="Gross contracted NEMT broker and medical courier billings (45% retained dispatch contribution after 1099 driver settlements)", retained_share=0.45, automation_coverage=0.78),
     _candidate(35, "Subject-To & Wraparound Note Arbitrage", "Creative real estate note spread", (100000, 850000), (28, 52), (12000, 65000), (2000, 12000), "2–6 months", (1, 3), "Acquiring low-rate 2.75%–4.25% mortgages Subject-To and reselling via RMLO-underwritten 8.5%–9.9% wraparound notes generates upfront down-payment spreads and multi-year interest arbitrage without landlord repairs.", ["Low-equity & pre-foreclosure debt triggers", "Third-party licensed loan-servicer autopay", "Escrow tax/insurance & underlying-payment audit"], ["Underlying lender due-on-sale acceleration", "Wrap buyer default & foreclosure carrying cost", "Non-compliant seller-financing origination"], ["Underwrite every owner-occupant wraparound buyer through a licensed RMLO under SAFE Act / Dodd-Frank Ability-to-Repay rules and state wraparound disclosure statutes (e.g., Tex. Prop. Code §5.016).", "Use a licensed third-party loan servicer so underlying mortgage, tax and insurance payments are verified transparently every month."], revenue_basis="Net upfront option/down-payment spreads and retained annual wraparound interest margin; excludes underlying home face value and pass-through debt service", automation_coverage=0.76),
     _candidate(36, "GPU Compute & Telecom Capacity Arbitrage", "Compute & telecom capacity brokerage", (150000, 1200000), (18, 38), (10000, 60000), (2000, 14000), "1–4 months", (1, 2), "Slicing wholesale bare-metal H100/H200 clusters, routing quantized multi-provider LLM inference, and reselling wholesale SIP/10DLC telecom trunks deliver software-like leverage on a 3-person pod.", ["LiteLLM / vLLM dynamic inference router", "Prepaid Stripe credit-wallet & DCGM metering", "Automated LCR SIP & 10DLC campaign provisioning"], ["Committed bare-metal utilization dips", "GPU generation pricing compression", "Abusive crypto-mining or robocall AUP violations"], ["Enforce prepaid credit wallets, KYC/AUP screening, STIR/SHAKEN Robocall Mitigation Database filings, 10DLC TCR registration and FCC Form 499-A telecom compliance.", "Isolate multi-tenant workloads and honor enterprise zero-data-retention commitments."], revenue_basis="Gross compute, inference-token and wholesale telecom billings (65% retained net contribution after upstream bare-metal & carrier termination commits)", retained_share=0.65, automation_coverage=0.90),
+    _candidate(37, "SaaS Discount Brokerage & GPO Arbitrage", "SaaS & spend discount brokerage", (100000, 900000), (32, 58), (5000, 30000), (1500, 9500), "1–3 months", (1, 3), "Partner-of-Record (CPOR/VIP/CSP) wholesale margin splits, UCaaS master-agent evergreen residuals, and private GPO volume brackets let SMBs cut existing Zoom, Adobe, Microsoft 365, and cloud bills by 10%–25% with zero software migration while compounding recurring broker spreads.", ["DNS/MX/SPF & renewal-cliff technographic triggers", "Pax8 / Ingram / Telarus automated CPOR & VIP billing sync", "Benchmark price-floor & shared-savings audit engine"], ["Vendor partner-tier rebate compression", "Microsoft NCE annual-commit client credit default", "Unauthorized multi-tenant seat-pooling audit clawbacks"], ["Execute license transfers strictly through authorized Microsoft CSP/CPOR, Adobe VIP Marketplace, Zoom Up / TSD master-agent, and GPO member agreements.", "Enforce pre-funded ACH/card auto-debit on annual NCE commits, FTC TSR B2B telemarketing / TCPA rules, and ASC 606 net-agency revenue recognition."], revenue_basis="Net retained Partner-of-Record wholesale margin spreads, master-agent evergreen residuals, GPO administrative rebates, and contingent shared-savings fees; excludes pass-through client software subscription spend", automation_coverage=0.88),
 ])
 
 
