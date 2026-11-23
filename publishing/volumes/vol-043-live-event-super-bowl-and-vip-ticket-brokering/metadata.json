@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-043-live-event-super-bowl-and-vip-ticket-brokering",
+  "volume_slug": "vol-043-live-event-super-bowl-and-vip-ticket-brokering",
+  "volume_number": 43,
+  "site_ui": {
+    "cover": [
+      "SUPER BOWL &",
+      "VIP TICKET",
+      "BROKERING"
+    ],
+    "deck": [
+      "SOURCE PREMIUM ACCESS. PRICE THE FULL EXPERIENCE.",
+      "THREE MODELS. ONE DISCIPLINED BROKERAGE."
+    ],
+    "lead": "Build a premium-access brokerage around live events, Super Bowl demand, and VIP buyers—with verified inventory, disciplined pricing, and reliable fulfillment.",
+    "summary": "Multi-exchange POS resale distributes verified ticket inventory through a synchronized point-of-sale system, while stadium suite seat-splitting sells individual places in suites only where contracts and venue rules permit. Super Bowl and tentpole hospitality bundling combines transferable tickets with separately contracted amenities, requiring clear inclusions, supplier verification, and pricing that covers fees, fulfillment, and cancellation exposure.",
+    "chapters": [
+      "Q1 — The Premium-Access Opportunity",
+      "Q2 — Pick Your Brokerage Model",
+      "Q3 — Find Buyers Before Buying",
+      "Q4 — Source Verified Inventory",
+      "Q5 — Underwrite Every Deal",
+      "Q6 — Package and Price Access",
+      "Q7 — Build the Sales Pipeline",
+      "Q8 — Close With Clear Terms",
+      "Q9 — Sync Inventory and Fulfill",
+      "Q10 — Control Compliance and Risk",
+      "Q11 — Launch Your First Event",
+      "Q12 — Scale Profitable Relationships"
+    ],
+    "flow": [
+      [
+        "SELECT",
+        "Choose an event, buyer segment, and model: POS resale, permitted suite seat-splitting, or hospitality bundling."
+      ],
+      [
+        "VERIFY",
+        "Confirm supplier identity, inventory rights, transfer timing, resale restrictions, and any suite or hospitality permissions."
+      ],
+      [
+        "UNDERWRITE",
+        "Set acquisition limits using net proceeds after fees, amenities, taxes, fulfillment costs, and downside reserves."
+      ],
+      [
+        "MARKET",
+        "Publish accurate listings or buyer proposals with explicit seat details, inclusions, exclusions, and delivery terms."
+      ],
+      [
+        "FULFILL",
+        "Synchronize inventory to prevent double-selling, complete authorized transfers, and confirm each hospitality component."
+      ],
+      [
+        "RECONCILE",
+        "Resolve delivery issues, reconcile payouts and supplier bills, measure realized margin, and cultivate repeat buyers."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "LIVE-EVENT, SUPER BOWL & VIP TICKET BROKERING",
+  "subtitle": "The Complete Playbook for Live-Event, Super Bowl & VIP Ticket Brokering: $220,000–$1,800,000 USD in Annual Gross Billings, a Core 1 FT + 2 C Pod (3 People), and Settlement-Disciplined Arbitrage",
+  "chapter_count": 12,
+  "total_word_count": 80566,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 95,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T17:50:59Z"
+}

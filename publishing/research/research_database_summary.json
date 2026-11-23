@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 7185,
-  "raw_video_count": 7185,
+  "abridged_video_count": 7363,
+  "raw_video_count": 7363,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-23T16:20:58+00:00",
+      "generated_at": "2026-11-23T17:48:30+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-23T16:20:58Z",
+  "generated_at": "2026-11-23T17:48:30Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 5832,
-      "tip_count": 11934,
-      "channel_count": 3628,
+      "video_count": 5983,
+      "tip_count": 12154,
+      "channel_count": 3751,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -124,6 +124,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "This is a way that you can make sure that all of that is covered. You know what I like most about that is…",
+          "category": "Legal / Deadline",
+          "timestamp": "00:11:06",
+          "link": "https://www.youtube.com/watch?v=IdHpcPxQTfU&t=666s",
+          "video_title": "Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix",
+          "author": "PromoTix",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "I'm gonna let I'm gonna I'm Gonna Leave it where you okay so I think it's like a five thousand tops domain name for…",
           "category": "Pitfall / Hard No",
           "timestamp": "01:09:59",
@@ -176,15 +185,6 @@
           "video_title": "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution",
           "author": "Vanijja | Trade Insights",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Their NDA and in the NDA it actually said that if the buyer did certain nasty things that were against the contract that the…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:06:19",
-          "link": "https://www.youtube.com/watch?v=wHxYmcrcq4M&t=379s",
-          "video_title": "Don't be a Victim of Broker NDA Agreements",
-          "author": "David C Barnett Small Business and Deal Making SMB",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -192,8 +192,8 @@
         "form of",
         "form that",
         "form for",
-        "form is",
         "form to",
+        "form is",
         "form the",
         "form or",
         "form you",
@@ -207,10 +207,10 @@
         "form where",
         "form as",
         "form it",
-        "form uh",
         "form I",
-        "form if",
+        "form uh",
         "court order",
+        "form if",
         "HIPAA",
         "form um",
         "form which",
@@ -220,14 +220,14 @@
         "Protection Act",
         "form their",
         "form but",
-        "form they",
         "form called",
+        "form they",
         "form because",
         "form right",
         "quiet title",
         "form here",
         "form content",
-        "Beautification Act"
+        "form from"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 5517,
-      "tip_count": 11304,
-      "channel_count": 3364,
+      "video_count": 5672,
+      "tip_count": 11518,
+      "channel_count": 3485,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -446,26 +446,26 @@
         "form with",
         "court order",
         "form where",
-        "form it",
         "form like",
+        "form it",
         "form below",
+        "form I",
         "form if",
         "quiet title",
-        "form I",
         "form as",
         "form we",
         "HIPAA",
         "protection act",
+        "form their",
         "Form uh",
         "form um",
-        "form their",
         "form which",
         "form but",
         "Chapter 7",
+        "form at",
         "form here",
         "warranty deed",
         "form an",
-        "form at",
         "letters of administration",
         "Chapter 13",
         "form will"
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 1391,
-      "tip_count": 2658,
-      "channel_count": 954,
+      "video_count": 1402,
+      "tip_count": 2663,
+      "channel_count": 961,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -677,8 +677,8 @@
         "Form is",
         "form to",
         "form the",
-        "form you",
         "form or",
+        "form you",
         "form below",
         "form a",
         "form so",
@@ -686,11 +686,11 @@
         "form your",
         "form on",
         "form we",
+        "form in",
         "Form uh",
         "form where",
         "form as",
         "form but",
-        "form in",
         "form it",
         "form if",
         "form like",
@@ -705,9 +705,9 @@
         "HIPAA",
         "Property Act",
         "Appropriations Act",
+        "form at",
         "form because",
         "quiet title",
-        "form at",
         "form fills",
         "form our"
       ],
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 5967,
-      "tip_count": 9475,
-      "channel_count": 3653,
+      "video_count": 6119,
+      "tip_count": 10091,
+      "channel_count": 3774,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -865,6 +865,15 @@
           "verbatim_research_only": true
         },
         {
+          "tip_paraphrase_summary": "Acompáñame intuía bien subía bien Yo siento que la mejor vista es desde acá porque si te das cuenta y miramos hacia abajo podemos…",
+          "category": "Insider Tactic",
+          "timestamp": "00:05:27",
+          "link": "https://www.youtube.com/watch?v=Sl_1OxOBH2c&t=327s",
+          "video_title": "FÓRMULA 1 VIP EN MIAMI 🔥 ¡Solo MILLONARIOS pueden VIVIRLO! Paddock Club",
+          "author": "Oscar Alejandro",
+          "verbatim_research_only": true
+        },
+        {
           "tip_paraphrase_summary": "<b>And that's the one thing our industry</b> <b>breeds, is because these</b> <b>dynamic sales people, they</b> <b>go, \"Well, you know, I</b> <b>don't need these guys…",
           "category": "Pitfall / Hard No",
           "timestamp": "00:32:52",
@@ -899,15 +908,6 @@
           "video_title": "How to Get a Corporate Lease for Airbnb?",
           "author": "Multiple Streams Queen (Dani Bryant)",
           "verbatim_research_only": true
-        },
-        {
-          "tip_paraphrase_summary": "Andrew Cousin: I was search fund number 7, I think, back in 1,992. And here was my calculus I was coming out of. Andrew…",
-          "category": "Legal / Deadline",
-          "timestamp": "00:13:50",
-          "link": "https://www.youtube.com/watch?v=oJcm3Bn-lXE&t=830s",
-          "video_title": "Search to Success: Entrepreneurship Through Acquisition",
-          "author": "HBS Rock Center for Entrepreneurship",
-          "verbatim_research_only": true
         }
       ],
       "statutes_and_forms": [
@@ -938,18 +938,18 @@
         "form below",
         "Form uh",
         "quiet title",
-        "form we",
         "form at",
+        "form we",
         "form but",
-        "Protection Act",
         "form their",
+        "Protection Act",
         "form called",
         "form here",
         "form they",
         "form an",
+        "form from",
         "form right",
         "form content",
-        "form from",
         "form will"
       ],
       "tools_and_portals": [
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 3840,
-      "tip_count": 1648,
-      "channel_count": 2342,
+      "video_count": 3887,
+      "tip_count": 1655,
+      "channel_count": 2382,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1161,12 +1161,12 @@
         "form or",
         "form you",
         "form the",
-        "form your",
         "form a",
+        "form your",
         "form on",
         "form so",
-        "form in",
         "form like",
+        "form in",
         "form with",
         "form where",
         "form as",
@@ -1185,9 +1185,9 @@
         "form at",
         "form called",
         "warranty deed",
+        "form because",
         "form below",
         "due on sale clause",
-        "form because",
         "form content",
         "form here",
         "form right",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 5441,
-      "tip_count": 9328,
-      "channel_count": 3313,
+      "video_count": 5521,
+      "tip_count": 9511,
+      "channel_count": 3382,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1421,9 +1421,9 @@
         "form which",
         "form below",
         "HIPAA",
-        "quiet title",
         "form at",
         "form their",
+        "quiet title",
         "form but",
         "form called",
         "Protection Act",
@@ -1432,7 +1432,7 @@
         "form they",
         "form here",
         "warranty deed",
-        "letters of administration"
+        "form from"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 6157,
-      "tip_count": 5537,
-      "channel_count": 3717,
+      "video_count": 6321,
+      "tip_count": 5613,
+      "channel_count": 3846,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1634,15 +1634,15 @@
         }
       ],
       "statutes_and_forms": [
-        "form and",
         "form of",
+        "form and",
         "form that",
         "form for",
         "form to",
         "form is",
         "form the",
-        "form or",
         "form you",
+        "form or",
         "form a",
         "form your",
         "form in",
@@ -1655,8 +1655,8 @@
         "form it",
         "form as",
         "Form uh",
-        "HIPAA",
         "form I",
+        "HIPAA",
         "form below",
         "Protection Act",
         "form if",
@@ -1664,16 +1664,16 @@
         "form um",
         "quiet title",
         "form which",
-        "form but",
         "form their",
-        "form an",
+        "form but",
         "form at",
+        "form an",
         "form here",
         "Chapter 7",
         "form they",
         "warranty deed",
-        "form will",
-        "form from"
+        "form from",
+        "form will"
       ],
       "tools_and_portals": [
         "Facebook",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 4777,
-      "tip_count": 13473,
-      "channel_count": 3061,
+      "video_count": 4865,
+      "tip_count": 13637,
+      "channel_count": 3128,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1896,10 +1896,10 @@
         "form it",
         "Form uh",
         "form um",
-        "form which",
         "court order",
-        "form we",
         "form I",
+        "form which",
+        "form we",
         "HIPAA",
         "form below",
         "form if",
@@ -1907,9 +1907,9 @@
         "form from",
         "form here",
         "Protection Act",
+        "form at",
         "form called",
         "form they",
-        "form at",
         "form because",
         "form will",
         "form an",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3628,
-      "video_count": 5832,
-      "corroborating_tip_count": 11934,
+      "channel_count": 3751,
+      "video_count": 5983,
+      "corroborating_tip_count": 12154,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -1991,6 +1991,12 @@
           "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=939s"
         },
         {
+          "video_title": "Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix",
+          "author": "PromoTix",
+          "timestamp": "00:11:06",
+          "link": "https://www.youtube.com/watch?v=IdHpcPxQTfU&t=666s"
+        },
+        {
           "video_title": "DomainSherpa Review – 10/27/22: Cyger Says “I’m Back”: RealInnovation, Tradesman, Encrypto",
           "author": "domainsherpa",
           "timestamp": "01:09:59",
@@ -2001,12 +2007,6 @@
           "author": "Ted Thomas",
           "timestamp": "00:03:53",
           "link": "https://www.youtube.com/watch?v=d5TLZqkPX14&t=233s"
-        },
-        {
-          "video_title": "How To Estimate Equipment Cost In Construction",
-          "author": "George Hedley | HardHat BIZCOACH",
-          "timestamp": "00:01:45",
-          "link": "https://www.youtube.com/watch?v=60uc8gnDCiY&t=105s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3364,
-      "video_count": 5517,
-      "corroborating_tip_count": 11304,
+      "channel_count": 3485,
+      "video_count": 5672,
+      "corroborating_tip_count": 11518,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,9 +2068,9 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 954,
-      "video_count": 1391,
-      "corroborating_tip_count": 2658,
+      "channel_count": 961,
+      "video_count": 1402,
+      "corroborating_tip_count": 2663,
       "supporting_links": [
         {
           "video_title": "How To Claim Surplus Funds From Foreclosure",
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3653,
-      "video_count": 5967,
-      "corroborating_tip_count": 9475,
+      "channel_count": 3774,
+      "video_count": 6119,
+      "corroborating_tip_count": 10091,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2153,10 +2153,10 @@
           "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=619s"
         },
         {
-          "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
-          "author": "Own The Jet",
-          "timestamp": "00:32:52",
-          "link": "https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1972s"
+          "video_title": "FÓRMULA 1 VIP EN MIAMI 🔥 ¡Solo MILLONARIOS pueden VIVIRLO! Paddock Club",
+          "author": "Oscar Alejandro",
+          "timestamp": "00:05:27",
+          "link": "https://www.youtube.com/watch?v=Sl_1OxOBH2c&t=327s"
         }
       ],
       "caveat": "Consensus among the sampled operators — not legal advice and not a substitute for the governing statute in the reader's jurisdiction."
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2342,
-      "video_count": 3840,
-      "corroborating_tip_count": 1648,
+      "channel_count": 2382,
+      "video_count": 3887,
+      "corroborating_tip_count": 1655,
       "supporting_links": [
         {
           "video_title": "The Negotiation Script I Use When Subleasing Airbnb's | Jorge Contreras",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3313,
-      "video_count": 5441,
-      "corroborating_tip_count": 9328,
+      "channel_count": 3382,
+      "video_count": 5521,
+      "corroborating_tip_count": 9511,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3717,
-      "video_count": 6157,
-      "corroborating_tip_count": 5537,
+      "channel_count": 3846,
+      "video_count": 6321,
+      "corroborating_tip_count": 5613,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3061,
-      "video_count": 4777,
-      "corroborating_tip_count": 13473,
+      "channel_count": 3128,
+      "video_count": 4865,
+      "corroborating_tip_count": 13637,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2596,10 +2596,10 @@
           "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=939s"
         },
         {
-          "video_title": "DomainSherpa Review – 10/27/22: Cyger Says “I’m Back”: RealInnovation, Tradesman, Encrypto",
-          "author": "domainsherpa",
-          "timestamp": "01:09:59",
-          "link": "https://www.youtube.com/watch?v=P7O7_GHUYb0&t=4199s"
+          "video_title": "Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix",
+          "author": "PromoTix",
+          "timestamp": "00:11:06",
+          "link": "https://www.youtube.com/watch?v=IdHpcPxQTfU&t=666s"
         }
       ]
     }
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 7185 corpus videos",
-        "instance_count": 7185,
+        "source": "YouTube CDN thumbnails for the 7363 corpus videos",
+        "instance_count": 7363,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -53043,6 +53043,1252 @@
             "author": "Truck Parking Media",
             "thumbnail_url": "https://i.ytimg.com/vi/ulBXkeE5I_8/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=ulBXkeE5I_8"
+          },
+          {
+            "video_id": "3kV_14yzGfk",
+            "title": "Ways to buy or sell Super Bowl tickets without being defrauded",
+            "author": "Arizona’s Family (3TV / CBS 5)",
+            "thumbnail_url": "https://i.ytimg.com/vi/3kV_14yzGfk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3kV_14yzGfk"
+          },
+          {
+            "video_id": "RGn3Hcnvklg",
+            "title": "Security behind StubHub's Super Bowl ticket operations",
+            "author": "CBS Mornings",
+            "thumbnail_url": "https://i.ytimg.com/vi/RGn3Hcnvklg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RGn3Hcnvklg"
+          },
+          {
+            "video_id": "9L6opSvFpSA",
+            "title": "How much is a resale ticket for the Super Bowl?",
+            "author": "WKMG News 6 ClickOrlando",
+            "thumbnail_url": "https://i.ytimg.com/vi/9L6opSvFpSA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9L6opSvFpSA"
+          },
+          {
+            "video_id": "-GwKaOFdk_M",
+            "title": "Want Super Bowl tickets? Here's what to know",
+            "author": "NBC10 Boston",
+            "thumbnail_url": "https://i.ytimg.com/vi/-GwKaOFdk_M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-GwKaOFdk_M"
+          },
+          {
+            "video_id": "tY7hYkxsK3k",
+            "title": "How to Buy Super Bowl 50 Tickets",
+            "author": "TickPick",
+            "thumbnail_url": "https://i.ytimg.com/vi/tY7hYkxsK3k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tY7hYkxsK3k"
+          },
+          {
+            "video_id": "0a9pLnuCUAk",
+            "title": "Cheapest Super Bowl Tickets for Last-Minute Buyers Are Running #tickets #scalping #superbowl",
+            "author": "Yea Baby",
+            "thumbnail_url": "https://i.ytimg.com/vi/0a9pLnuCUAk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0a9pLnuCUAk"
+          },
+          {
+            "video_id": "YbCPfj2AvV4",
+            "title": "🏈🔥 GO BIG! GO LOUD! SUPER BOWL 2027! 🔥🏈🏆 GAME. THE ULTIMATE VIP EXPERIENCE. THE TRIP OF A LIFETIME!",
+            "author": "lighthouse travel group",
+            "thumbnail_url": "https://i.ytimg.com/vi/YbCPfj2AvV4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YbCPfj2AvV4"
+          },
+          {
+            "video_id": "6ufb5u4PcIQ",
+            "title": "How the VIP Super Bowl Experience Works with On Location President Paul Caine",
+            "author": "Front Office Sports News",
+            "thumbnail_url": "https://i.ytimg.com/vi/6ufb5u4PcIQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6ufb5u4PcIQ"
+          },
+          {
+            "video_id": "nT-DpxVmqC0",
+            "title": "What $2.5M Gets You at the Super Bowl | All Access | GQ Sports",
+            "author": "GQ",
+            "thumbnail_url": "https://i.ytimg.com/vi/nT-DpxVmqC0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nT-DpxVmqC0"
+          },
+          {
+            "video_id": "zXgujuB9yXw",
+            "title": "What You Really Get In a Super Bowl Suite",
+            "author": "Bloomberg Television",
+            "thumbnail_url": "https://i.ytimg.com/vi/zXgujuB9yXw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zXgujuB9yXw"
+          },
+          {
+            "video_id": "8OkQ2Oq5Lbc",
+            "title": "How Much Does it Cost to Go to the Super Bowl LX? 2026",
+            "author": "Nerd Nook Hub",
+            "thumbnail_url": "https://i.ytimg.com/vi/8OkQ2Oq5Lbc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8OkQ2Oq5Lbc"
+          },
+          {
+            "video_id": "jgHnABCslrA",
+            "title": "VIP Experience At The Super Bowl!",
+            "author": "Team Jesser",
+            "thumbnail_url": "https://i.ytimg.com/vi/jgHnABCslrA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jgHnABCslrA"
+          },
+          {
+            "video_id": "JfafTeTKsyo",
+            "title": "My VIP Experience at Super Bowl LX!",
+            "author": "MMG",
+            "thumbnail_url": "https://i.ytimg.com/vi/JfafTeTKsyo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JfafTeTKsyo"
+          },
+          {
+            "video_id": "q4jIeRrkSGg",
+            "title": "Inside the Super Bowl 2026 fan experience",
+            "author": "FOX 13 Seattle",
+            "thumbnail_url": "https://i.ytimg.com/vi/q4jIeRrkSGg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=q4jIeRrkSGg"
+          },
+          {
+            "video_id": "NxbqrXeuWTI",
+            "title": "StubHub officials discuss market for Super Bowl tickets, fan experience at amusement park",
+            "author": "AP Archive",
+            "thumbnail_url": "https://i.ytimg.com/vi/NxbqrXeuWTI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NxbqrXeuWTI"
+          },
+          {
+            "video_id": "Qmi-KnjQ-xo",
+            "title": "Super Bowl 2026 tickets: How much they cost, where they're sold and how to get them",
+            "author": "9NEWS",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qmi-KnjQ-xo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Qmi-KnjQ-xo"
+          },
+          {
+            "video_id": "5ggSZvvL_vo",
+            "title": "How Much Did Super Bowl LX 2026 Tickets REALLY Cost? Total Breakdown! #superbowllx #nfl",
+            "author": "Snazzy Trendz",
+            "thumbnail_url": "https://i.ytimg.com/vi/5ggSZvvL_vo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5ggSZvvL_vo"
+          },
+          {
+            "video_id": "UVUOSv2U_BM",
+            "title": "'Buy now': Houston ticket broker says FIFA World Cup ticket prices are sky-high and trending upward",
+            "author": "KPRC 2 Click2Houston",
+            "thumbnail_url": "https://i.ytimg.com/vi/UVUOSv2U_BM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UVUOSv2U_BM"
+          },
+          {
+            "video_id": "iKAz6YJRTXI",
+            "title": "How to Get Masters Tickets (2027 Guide: Ballot vs Packages)",
+            "author": "Sports Travel Tom",
+            "thumbnail_url": "https://i.ytimg.com/vi/iKAz6YJRTXI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=iKAz6YJRTXI"
+          },
+          {
+            "video_id": "U3YMt8EJCrE",
+            "title": "Masters Tickets Explained | Why They're Almost Impossible to Get!",
+            "author": "J Properties Group",
+            "thumbnail_url": "https://i.ytimg.com/vi/U3YMt8EJCrE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=U3YMt8EJCrE"
+          },
+          {
+            "video_id": "O-Sq4DDGKAY",
+            "title": "HOW TO GET SUPER BOWL TICKETS FOR FACE VALUE!",
+            "author": "thumbsuprun",
+            "thumbnail_url": "https://i.ytimg.com/vi/O-Sq4DDGKAY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=O-Sq4DDGKAY"
+          },
+          {
+            "video_id": "QiKFtpmNUqo",
+            "title": "Yes, it's true. You cannot buy or sell tickets for The Masters on a secondary resale site",
+            "author": "11Alive",
+            "thumbnail_url": "https://i.ytimg.com/vi/QiKFtpmNUqo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QiKFtpmNUqo"
+          },
+          {
+            "video_id": "LtTBm2wHjoE",
+            "title": "How to Get Tickets To The Masters and Insider Tips When You Get There",
+            "author": "Gameday Guides",
+            "thumbnail_url": "https://i.ytimg.com/vi/LtTBm2wHjoE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=LtTBm2wHjoE"
+          },
+          {
+            "video_id": "s4p8gnL-WFw",
+            "title": "Broncos uncertain about selling Personal Seat Licenses to buy the right to purchase future tickets",
+            "author": "9NEWS",
+            "thumbnail_url": "https://i.ytimg.com/vi/s4p8gnL-WFw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s4p8gnL-WFw"
+          },
+          {
+            "video_id": "Dl5FeuC7tUA",
+            "title": "The NFL’s Biggest Scam: Personal Seat Licenses",
+            "author": "JCFB",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dl5FeuC7tUA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Dl5FeuC7tUA"
+          },
+          {
+            "video_id": "-zd2mlj0u8U",
+            "title": "How much? Browns fans outraged by possible personal seat-license (PSL) pricing in Brook Park.",
+            "author": "News 5 Cleveland",
+            "thumbnail_url": "https://i.ytimg.com/vi/-zd2mlj0u8U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-zd2mlj0u8U"
+          },
+          {
+            "video_id": "sQtHQZ6UoRM",
+            "title": "CAN YOU MAKE MONEY SELLING SEASON TICKETS? | 4 WAYS TO SELL TICKETS TO MAKE MONEY | NFL NBA NHL MLB",
+            "author": "thumbsuprun",
+            "thumbnail_url": "https://i.ytimg.com/vi/sQtHQZ6UoRM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sQtHQZ6UoRM"
+          },
+          {
+            "video_id": "hlfwsoMBQS0",
+            "title": "NFL Season Tickets: Shawn Covers Key Step in Buying",
+            "author": "TicketWire",
+            "thumbnail_url": "https://i.ytimg.com/vi/hlfwsoMBQS0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hlfwsoMBQS0"
+          },
+          {
+            "video_id": "M80btlo7xJc",
+            "title": "Buying NFL Season Tickets: SBL is Step One.",
+            "author": "TicketWire",
+            "thumbnail_url": "https://i.ytimg.com/vi/M80btlo7xJc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=M80btlo7xJc"
+          },
+          {
+            "video_id": "FZyPq0QfTdg",
+            "title": "Personal Seat License are coming to the Denver Broncos new stadium",
+            "author": "Zach Bye",
+            "thumbnail_url": "https://i.ytimg.com/vi/FZyPq0QfTdg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=FZyPq0QfTdg"
+          },
+          {
+            "video_id": "VzrNov3Y_qM",
+            "title": "Personal Seat Licenses are Bulls**t (HBO)",
+            "author": "Any Given Wednesday with Bill Simmons",
+            "thumbnail_url": "https://i.ytimg.com/vi/VzrNov3Y_qM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VzrNov3Y_qM"
+          },
+          {
+            "video_id": "V-6dQZRMe2Y",
+            "title": "How seat licenses work",
+            "author": "MPR News",
+            "thumbnail_url": "https://i.ytimg.com/vi/V-6dQZRMe2Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=V-6dQZRMe2Y"
+          },
+          {
+            "video_id": "w0cU0-OiMB8",
+            "title": "Personal seat licenses | Will longtime Denver Broncos fans be priced out of tickets at new stadium?",
+            "author": "9NEWS",
+            "thumbnail_url": "https://i.ytimg.com/vi/w0cU0-OiMB8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w0cU0-OiMB8"
+          },
+          {
+            "video_id": "rT4gQkoEVDI",
+            "title": "How NFL Teams Make Money Before Selling Season Tickets ($750 to $50,000 Just for the Right)",
+            "author": "THE MARKUP FILES",
+            "thumbnail_url": "https://i.ytimg.com/vi/rT4gQkoEVDI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rT4gQkoEVDI"
+          },
+          {
+            "video_id": "ZiwpM_Fr8eU",
+            "title": "New Commanders’ stadium personal seat licenses explained",
+            "author": "FOX 5 Washington DC",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZiwpM_Fr8eU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ZiwpM_Fr8eU"
+          },
+          {
+            "video_id": "-hTj-NHHeDc",
+            "title": "Bills sell out of personal seat licenses",
+            "author": "WGRZ-TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/-hTj-NHHeDc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-hTj-NHHeDc"
+          },
+          {
+            "video_id": "gBkBFmKTfls",
+            "title": "Bills to sell PSL's",
+            "author": "WKBW TV | Buffalo, NY",
+            "thumbnail_url": "https://i.ytimg.com/vi/gBkBFmKTfls/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=gBkBFmKTfls"
+          },
+          {
+            "video_id": "uhgdo0oPQ0E",
+            "title": "The 'NFL Suite Life' at Tottenham Hotspur Stadium | BTS NFL Exclusive VIP Hospitality & Suites",
+            "author": "Sportico",
+            "thumbnail_url": "https://i.ytimg.com/vi/uhgdo0oPQ0E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uhgdo0oPQ0E"
+          },
+          {
+            "video_id": "BQI_sOqcfx4",
+            "title": "Why Football Stadiums Are Turning Into Luxury Hotels",
+            "author": "SportsRender",
+            "thumbnail_url": "https://i.ytimg.com/vi/BQI_sOqcfx4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BQI_sOqcfx4"
+          },
+          {
+            "video_id": "rodIE0qwiT4",
+            "title": "A Stadium Designed Like a Five-Star Resort | Inside the New Entertainment Era",
+            "author": "Luxology",
+            "thumbnail_url": "https://i.ytimg.com/vi/rodIE0qwiT4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rodIE0qwiT4"
+          },
+          {
+            "video_id": "ImKo957VLSo",
+            "title": "Hotel Hospitality Ideas for the Sports and Entertainment Venue Marketplace",
+            "author": "ALSD",
+            "thumbnail_url": "https://i.ytimg.com/vi/ImKo957VLSo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ImKo957VLSo"
+          },
+          {
+            "video_id": "fI8OAlihCxc",
+            "title": "Why Sports Arenas Make Millions More By Building Fewer Luxury Suites",
+            "author": "Forbes",
+            "thumbnail_url": "https://i.ytimg.com/vi/fI8OAlihCxc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fI8OAlihCxc"
+          },
+          {
+            "video_id": "ow9KXpcvvEg",
+            "title": "The real reason NFL stadiums have so many luxury suites",
+            "author": "Morning Brew",
+            "thumbnail_url": "https://i.ytimg.com/vi/ow9KXpcvvEg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ow9KXpcvvEg"
+          },
+          {
+            "video_id": "6CYg2Av2xS4",
+            "title": "[$14,000 Ticket] Inside the F1 Paddock Club | Singapore Grand Prix VIP Experience",
+            "author": "Luxury Travel Professional",
+            "thumbnail_url": "https://i.ytimg.com/vi/6CYg2Av2xS4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6CYg2Av2xS4"
+          },
+          {
+            "video_id": "S5_EsejwubY",
+            "title": "¿Vale la pena pagar por el Paddock Club de Fórmula 1?",
+            "author": "Martin Bursatil",
+            "thumbnail_url": "https://i.ytimg.com/vi/S5_EsejwubY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=S5_EsejwubY"
+          },
+          {
+            "video_id": "3cvtvbU9nb0",
+            "title": "Así ven la Fórmula 1 los ricos - Entramos en el Paddock Club de Zandvoort",
+            "author": "Víctor Abad",
+            "thumbnail_url": "https://i.ytimg.com/vi/3cvtvbU9nb0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3cvtvbU9nb0"
+          },
+          {
+            "video_id": "rQvPQuH1YXw",
+            "title": "INSIDE The Most Expensive Qatar F1 Tickets | Behind the Scenes!",
+            "author": "SOL - Supercars of London",
+            "thumbnail_url": "https://i.ytimg.com/vi/rQvPQuH1YXw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rQvPQuH1YXw"
+          },
+          {
+            "video_id": "2UDtC8EP8GA",
+            "title": "Is the F1 Paddock Club Actually Worth It?",
+            "author": "Kayvan Goes",
+            "thumbnail_url": "https://i.ytimg.com/vi/2UDtC8EP8GA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2UDtC8EP8GA"
+          },
+          {
+            "video_id": "fl-tIcZO3u4",
+            "title": "The VIP Experience | How It Works: F1 Hospitality 🤩",
+            "author": "Mercedes-AMG PETRONAS F1 Team",
+            "thumbnail_url": "https://i.ytimg.com/vi/fl-tIcZO3u4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fl-tIcZO3u4"
+          },
+          {
+            "video_id": "UgpOwtQHKS4",
+            "title": "Surprising my DAD with F1 PADDOCK CLUB tickets at Silverstone 😅 British Grand Prix 2023 🏎️",
+            "author": "Emily Canham Vlogs",
+            "thumbnail_url": "https://i.ytimg.com/vi/UgpOwtQHKS4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UgpOwtQHKS4"
+          },
+          {
+            "video_id": "emvC24ZLBWo",
+            "title": "I Upgraded My F1 Ticket In China…",
+            "author": "Live The Dash",
+            "thumbnail_url": "https://i.ytimg.com/vi/emvC24ZLBWo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=emvC24ZLBWo"
+          },
+          {
+            "video_id": "Sl_1OxOBH2c",
+            "title": "FÓRMULA 1 VIP EN MIAMI 🔥 ¡Solo MILLONARIOS pueden VIVIRLO! Paddock Club",
+            "author": "Oscar Alejandro",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sl_1OxOBH2c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sl_1OxOBH2c"
+          },
+          {
+            "video_id": "ouFzQnXDzjU",
+            "title": "I Got Ferrari's MOST Exclusive F1 Experience",
+            "author": "Katarina Mogus",
+            "thumbnail_url": "https://i.ytimg.com/vi/ouFzQnXDzjU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ouFzQnXDzjU"
+          },
+          {
+            "video_id": "ePgxCdmE8o8",
+            "title": "Melbourne Grand Prix 2026 | Formula 1 Paddock Club v Red Bull Pit Lane Review. Was it worth $6,000",
+            "author": "Global Nomads",
+            "thumbnail_url": "https://i.ytimg.com/vi/ePgxCdmE8o8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ePgxCdmE8o8"
+          },
+          {
+            "video_id": "0KKYkQr1SBk",
+            "title": "I Spent A Day In F1's Most Expensive Hospitality",
+            "author": "LawVS",
+            "thumbnail_url": "https://i.ytimg.com/vi/0KKYkQr1SBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0KKYkQr1SBk"
+          },
+          {
+            "video_id": "XhaS3MGZL-o",
+            "title": "THE WORLD'S MOST EXPENSIVE F1 EXPERIENCE",
+            "author": "Only Scrans",
+            "thumbnail_url": "https://i.ytimg.com/vi/XhaS3MGZL-o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=XhaS3MGZL-o"
+          },
+          {
+            "video_id": "vYgE480j7AA",
+            "title": "Inside Club Magnolia: The Masters’ secret experience with Atlanta ties",
+            "author": "CBS Atlanta",
+            "thumbnail_url": "https://i.ytimg.com/vi/vYgE480j7AA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vYgE480j7AA"
+          },
+          {
+            "video_id": "icH7RV48MeY",
+            "title": "World Series & NBA Finals Ticket Stubs - Ticket Stub Collecting w/ James Burzynski",
+            "author": "thebombtickets",
+            "thumbnail_url": "https://i.ytimg.com/vi/icH7RV48MeY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=icH7RV48MeY"
+          },
+          {
+            "video_id": "x5waP6wwK-Y",
+            "title": "NBA Finals, World Cup Odds, Stanley Cup Finals, College World Series | The Odds Couple",
+            "author": "Grind City Media",
+            "thumbnail_url": "https://i.ytimg.com/vi/x5waP6wwK-Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x5waP6wwK-Y"
+          },
+          {
+            "video_id": "ojMLC_Y0QgI",
+            "title": "The Ultimate Futures Betting Guide | NBA, NHL, MLB & More",
+            "author": "Break The Board Sports",
+            "thumbnail_url": "https://i.ytimg.com/vi/ojMLC_Y0QgI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ojMLC_Y0QgI"
+          },
+          {
+            "video_id": "T7ujtjzkDcQ",
+            "title": "NBA Playoffs Gambling Guide 🏀💰",
+            "author": "Bear Bets: A FOX Sports Gambling Show",
+            "thumbnail_url": "https://i.ytimg.com/vi/T7ujtjzkDcQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=T7ujtjzkDcQ"
+          },
+          {
+            "video_id": "5T8RLIaR8yg",
+            "title": "College football championship tickets will cost Hoosiers a pretty penny",
+            "author": "WTHR",
+            "thumbnail_url": "https://i.ytimg.com/vi/5T8RLIaR8yg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5T8RLIaR8yg"
+          },
+          {
+            "video_id": "OSa-CK_qebs",
+            "title": "Here's what it'll cost to go to CFP National Championship between IU and Miami",
+            "author": "WTHR",
+            "thumbnail_url": "https://i.ytimg.com/vi/OSa-CK_qebs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OSa-CK_qebs"
+          },
+          {
+            "video_id": "QRxTlhb8Bt4",
+            "title": "Some World Cup fans frustrated with ticket buying experience on secondary market",
+            "author": "CBS Boston",
+            "thumbnail_url": "https://i.ytimg.com/vi/QRxTlhb8Bt4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QRxTlhb8Bt4"
+          },
+          {
+            "video_id": "qSTxMUdp-ro",
+            "title": "World Cup Hospitality Tickets Explained",
+            "author": "Adventure & Sports",
+            "thumbnail_url": "https://i.ytimg.com/vi/qSTxMUdp-ro/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qSTxMUdp-ro"
+          },
+          {
+            "video_id": "25ntbvX_0_0",
+            "title": "Miami FIFA World Cup 26 Hospitality Tickets (FIFA Pavilion) Saudi Arabia vs Uruguay VLOG",
+            "author": "Ryan's Reviews and Overviews",
+            "thumbnail_url": "https://i.ytimg.com/vi/25ntbvX_0_0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=25ntbvX_0_0"
+          },
+          {
+            "video_id": "3jMjNVjPzTo",
+            "title": "$2900 World Cup VIP Hospitality ticket! Am I crazy?",
+            "author": "Travel with Frodo",
+            "thumbnail_url": "https://i.ytimg.com/vi/3jMjNVjPzTo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=3jMjNVjPzTo"
+          },
+          {
+            "video_id": "76zFs7tuCJw",
+            "title": "WORLD CUP FIFA PAVILION HOSPITALITY TICKETS | Brazil vs Morocco",
+            "author": "Landon Kissell",
+            "thumbnail_url": "https://i.ytimg.com/vi/76zFs7tuCJw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=76zFs7tuCJw"
+          },
+          {
+            "video_id": "QaNF9gbCV78",
+            "title": "FIFA World Cup 2026: Hospitality vs General Admission - Which to Buy?",
+            "author": "Senior Travel World",
+            "thumbnail_url": "https://i.ytimg.com/vi/QaNF9gbCV78/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QaNF9gbCV78"
+          },
+          {
+            "video_id": "Hl-tVhzYfsw",
+            "title": "I Tried a 2026 World Cup VIP Ticket",
+            "author": "AwayDays",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hl-tVhzYfsw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Hl-tVhzYfsw"
+          },
+          {
+            "video_id": "6a_saGlb7l8",
+            "title": "FIFA World Cup fans report issues with match tickets purchased from resale sites",
+            "author": "CBS TEXAS",
+            "thumbnail_url": "https://i.ytimg.com/vi/6a_saGlb7l8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6a_saGlb7l8"
+          },
+          {
+            "video_id": "2mMyznWPgpc",
+            "title": "This is what it's like to scalp World Cup tickets",
+            "author": "Reuters",
+            "thumbnail_url": "https://i.ytimg.com/vi/2mMyznWPgpc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2mMyznWPgpc"
+          },
+          {
+            "video_id": "-NeAkVXcsP4",
+            "title": "SeatGeek's tips for buying FIFA World Cup tickets",
+            "author": "NBC New York",
+            "thumbnail_url": "https://i.ytimg.com/vi/-NeAkVXcsP4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-NeAkVXcsP4"
+          },
+          {
+            "video_id": "OSbD9xp5Dw4",
+            "title": "Trying to get World Cup tickets? Here's how to avoid a scam",
+            "author": "WFAA",
+            "thumbnail_url": "https://i.ytimg.com/vi/OSbD9xp5Dw4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OSbD9xp5Dw4"
+          },
+          {
+            "video_id": "7KU-5HUqmzA",
+            "title": "Ticketmaster vs StubHub vs SeatGeek (2025) – What Ticket Seller Do We Need in 2026?",
+            "author": "GigaBits",
+            "thumbnail_url": "https://i.ytimg.com/vi/7KU-5HUqmzA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7KU-5HUqmzA"
+          },
+          {
+            "video_id": "sIgspwKXj_0",
+            "title": "THE 5 THINGS ANY TICKET RESALE WEBSITE NEEDS TO HAVE | ARE THEY LEGIT?",
+            "author": "thumbsuprun",
+            "thumbnail_url": "https://i.ytimg.com/vi/sIgspwKXj_0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=sIgspwKXj_0"
+          },
+          {
+            "video_id": "Y0_GSVWwMIw",
+            "title": "Learn how to submit Support Tickets & Navigate the DTI portal!",
+            "author": "DigitalThinker Inc.",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y0_GSVWwMIw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y0_GSVWwMIw"
+          },
+          {
+            "video_id": "IdHpcPxQTfU",
+            "title": "Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix",
+            "author": "PromoTix",
+            "thumbnail_url": "https://i.ytimg.com/vi/IdHpcPxQTfU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IdHpcPxQTfU"
+          },
+          {
+            "video_id": "YaZpToURgBk",
+            "title": "Logitix One - Event Detail Page",
+            "author": "Logitix",
+            "thumbnail_url": "https://i.ytimg.com/vi/YaZpToURgBk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YaZpToURgBk"
+          },
+          {
+            "video_id": "Db5sc_kyZFE",
+            "title": "Ticket Creation",
+            "author": "Supplier Digital Portal",
+            "thumbnail_url": "https://i.ytimg.com/vi/Db5sc_kyZFE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Db5sc_kyZFE"
+          },
+          {
+            "video_id": "IENQeieAOCo",
+            "title": "TicketMaster SafeTix Transfer Tickets | How To Demo",
+            "author": "Poolarity - Life Hacks",
+            "thumbnail_url": "https://i.ytimg.com/vi/IENQeieAOCo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IENQeieAOCo"
+          },
+          {
+            "video_id": "EwQdnuSrWAo",
+            "title": "¿Cómo usar SafeTix de Ticketmaster? Tutorial paso a paso",
+            "author": "Paso a paso",
+            "thumbnail_url": "https://i.ytimg.com/vi/EwQdnuSrWAo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=EwQdnuSrWAo"
+          },
+          {
+            "video_id": "lBLVmAx5wkQ",
+            "title": "How To Transfer Ticketmaster Tickets from Apple Wallet to Someone Else [2026 GUIDE]",
+            "author": "Nexustech",
+            "thumbnail_url": "https://i.ytimg.com/vi/lBLVmAx5wkQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=lBLVmAx5wkQ"
+          },
+          {
+            "video_id": "8yXxF_U1uek",
+            "title": "How to Transfer Ticketmaster Tickets from Apple Wallet – Step By Step Guide",
+            "author": "Gadget Tune",
+            "thumbnail_url": "https://i.ytimg.com/vi/8yXxF_U1uek/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8yXxF_U1uek"
+          },
+          {
+            "video_id": "hNlTOy1daSA",
+            "title": "How To Fix Ticketmaster Barcode Not Showing In Wallet (Easy Solutions To Troubleshoot The Issue)",
+            "author": "Helpful Solutions",
+            "thumbnail_url": "https://i.ytimg.com/vi/hNlTOy1daSA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hNlTOy1daSA"
+          },
+          {
+            "video_id": "7VYhOZ4uE-I",
+            "title": "Ticketmaster SafeTix + Google Wallet",
+            "author": "Francerz",
+            "thumbnail_url": "https://i.ytimg.com/vi/7VYhOZ4uE-I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7VYhOZ4uE-I"
+          },
+          {
+            "video_id": "Wqb02oxLDJ0",
+            "title": "How to Fix Unable to Add Pass to Apple Wallet from Ticketmaster – iPhone Setup & Fix Guide",
+            "author": "Patchwave Tutorials",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wqb02oxLDJ0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wqb02oxLDJ0"
+          },
+          {
+            "video_id": "f7BuIdB0-6I",
+            "title": "How to Transfer Tickets on Ticketmaster [2026] UPDATED",
+            "author": "Fixed Formulas",
+            "thumbnail_url": "https://i.ytimg.com/vi/f7BuIdB0-6I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f7BuIdB0-6I"
+          },
+          {
+            "video_id": "kC2NXuA1XV4",
+            "title": "How to Transfer Tickets on Ticketmaster (What is a Ticket Transfer?)",
+            "author": "The Savvy Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/kC2NXuA1XV4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kC2NXuA1XV4"
+          },
+          {
+            "video_id": "zH4ITvC9voc",
+            "title": "How to Save Ticketmaster Tickets to Apple Wallet (How Do I Add Tickets to a Digital Wallet?)",
+            "author": "The Savvy Professor",
+            "thumbnail_url": "https://i.ytimg.com/vi/zH4ITvC9voc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zH4ITvC9voc"
+          },
+          {
+            "video_id": "Mkuhus1taO4",
+            "title": "How To Use Digital Tickets On Ticketmaster",
+            "author": "Guide Nation",
+            "thumbnail_url": "https://i.ytimg.com/vi/Mkuhus1taO4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Mkuhus1taO4"
+          },
+          {
+            "video_id": "MP1aH4hgG70",
+            "title": "HOW TO TRANSFER TICKETS ON TICKETMASTER TO ANOTHER PHONE | TICKET TIP THURSDAY",
+            "author": "thumbsuprun",
+            "thumbnail_url": "https://i.ytimg.com/vi/MP1aH4hgG70/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=MP1aH4hgG70"
+          },
+          {
+            "video_id": "edUbHihe2lI",
+            "title": "AXS Tickets App Not Working: How to FIX AXS Tickets App Not Working (FIXED)",
+            "author": "TechTutorXpress",
+            "thumbnail_url": "https://i.ytimg.com/vi/edUbHihe2lI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=edUbHihe2lI"
+          },
+          {
+            "video_id": "oQOmX8EOyW4",
+            "title": "How To Use AXS Tickets (Quick and Easy!)",
+            "author": "Quick and Easy",
+            "thumbnail_url": "https://i.ytimg.com/vi/oQOmX8EOyW4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oQOmX8EOyW4"
+          },
+          {
+            "video_id": "RDQeHkadlqk",
+            "title": "how to buy tickets on axs !! How to use axs tickets app",
+            "author": "Web Mind",
+            "thumbnail_url": "https://i.ytimg.com/vi/RDQeHkadlqk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RDQeHkadlqk"
+          },
+          {
+            "video_id": "SnJa0jDKiKE",
+            "title": "What Should I Do If I Can't Find My Tickets In The Axs App !",
+            "author": "Simply Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/SnJa0jDKiKE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SnJa0jDKiKE"
+          },
+          {
+            "video_id": "zghU1cQya5k",
+            "title": "AXS App Not Working: How to Fix AXS Tickets App Not Working",
+            "author": "iKnow iOS",
+            "thumbnail_url": "https://i.ytimg.com/vi/zghU1cQya5k/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zghU1cQya5k"
+          },
+          {
+            "video_id": "s7E1Yc3RoQc",
+            "title": "Can I Change The Delivery Method Of My Tickets In The Axs App !",
+            "author": "Simply Finance",
+            "thumbnail_url": "https://i.ytimg.com/vi/s7E1Yc3RoQc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s7E1Yc3RoQc"
+          },
+          {
+            "video_id": "6Og6Y7NbLsk",
+            "title": "How To Transfer Tickets From Axs To Seatgeek (2025)",
+            "author": "Guide Gurus",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Og6Y7NbLsk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6Og6Y7NbLsk"
+          },
+          {
+            "video_id": "xEM0K5YLBZk",
+            "title": "How to Transfer AXS Tickets to Ticketmaster",
+            "author": "AidensGotGuides",
+            "thumbnail_url": "https://i.ytimg.com/vi/xEM0K5YLBZk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xEM0K5YLBZk"
+          },
+          {
+            "video_id": "0hT1wi4_aew",
+            "title": "Top 20 Global Concert Tours from Pollstar",
+            "author": "World Of Entertainment",
+            "thumbnail_url": "https://i.ytimg.com/vi/0hT1wi4_aew/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0hT1wi4_aew"
+          },
+          {
+            "video_id": "WNNmn1bxFEU",
+            "title": "Pollstar for Concert Discovery Honest Review - Watch Before Using",
+            "author": "Wise Explainer",
+            "thumbnail_url": "https://i.ytimg.com/vi/WNNmn1bxFEU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WNNmn1bxFEU"
+          },
+          {
+            "video_id": "tH7bLaJI6ZE",
+            "title": "Concert Tickets: Why a 90% Artist Share Misleads",
+            "author": "Why It Costs",
+            "thumbnail_url": "https://i.ytimg.com/vi/tH7bLaJI6ZE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=tH7bLaJI6ZE"
+          },
+          {
+            "video_id": "qg3wvctM0wM",
+            "title": "This AMEX Perk Gets You Concert Tickets Before Everyone Else",
+            "author": "Matthew Josiah",
+            "thumbnail_url": "https://i.ytimg.com/vi/qg3wvctM0wM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qg3wvctM0wM"
+          },
+          {
+            "video_id": "JS9sO0Fx9A0",
+            "title": "3 Best Credit Cards For Concert Tickets & Entertainment In 2026 | NerdWallet",
+            "author": "The Credit Nerd",
+            "thumbnail_url": "https://i.ytimg.com/vi/JS9sO0Fx9A0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JS9sO0Fx9A0"
+          },
+          {
+            "video_id": "p8CMjg4a_CI",
+            "title": "How American Express/CITI Bank Can Get You Into Any Concert/Event For Free - Drake & Migos Concert",
+            "author": "850 Club Credit",
+            "thumbnail_url": "https://i.ytimg.com/vi/p8CMjg4a_CI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p8CMjg4a_CI"
+          },
+          {
+            "video_id": "6xTWnxPdGP0",
+            "title": "Why You Can’t Get Concert Tickets: The $1.3 Billion Scheme",
+            "author": "Proxxxymiron",
+            "thumbnail_url": "https://i.ytimg.com/vi/6xTWnxPdGP0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=6xTWnxPdGP0"
+          },
+          {
+            "video_id": "cmeE4rZAlVk",
+            "title": "Concert Tickets Explained: Why They Sell Out in 9 Seconds",
+            "author": "Follow The Why",
+            "thumbnail_url": "https://i.ytimg.com/vi/cmeE4rZAlVk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=cmeE4rZAlVk"
+          },
+          {
+            "video_id": "NOBp14Qcy_8",
+            "title": "The BOTS Act: Why Ticket Reselling Communities Live In A Legal Grey Zone",
+            "author": "Hustle Audit",
+            "thumbnail_url": "https://i.ytimg.com/vi/NOBp14Qcy_8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NOBp14Qcy_8"
+          },
+          {
+            "video_id": "UB3lQ-5pQXE",
+            "title": "SA concertgoer shares how bots, high resale prices hurt real fans amid FTC Ticketmaster lawsuit",
+            "author": "KSAT 12",
+            "thumbnail_url": "https://i.ytimg.com/vi/UB3lQ-5pQXE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UB3lQ-5pQXE"
+          },
+          {
+            "video_id": "7SO1FTTFaBM",
+            "title": "FTC sues Live Nation and Ticketmaster over claims of illegal resale tactics",
+            "author": "NBC News",
+            "thumbnail_url": "https://i.ytimg.com/vi/7SO1FTTFaBM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7SO1FTTFaBM"
+          },
+          {
+            "video_id": "d4DslgcIQ7Y",
+            "title": "The FTC Goes After A Ticket Reseller",
+            "author": "Strat Americas",
+            "thumbnail_url": "https://i.ytimg.com/vi/d4DslgcIQ7Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=d4DslgcIQ7Y"
+          },
+          {
+            "video_id": "BOIfCHick7o",
+            "title": "FTC sues ticket-reselling operation for using fake accounts",
+            "author": "NBC News",
+            "thumbnail_url": "https://i.ytimg.com/vi/BOIfCHick7o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=BOIfCHick7o"
+          },
+          {
+            "video_id": "7SSPFtppfGE",
+            "title": "Limit 8 Per Customer… 1,300 Accounts? The DOJ's BOTS Act Case Against REPS, Explained",
+            "author": "Dot Detective",
+            "thumbnail_url": "https://i.ytimg.com/vi/7SSPFtppfGE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=7SSPFtppfGE"
+          },
+          {
+            "video_id": "nQoLincg1zk",
+            "title": "FTC Sues Ticketmaster: Domenic Romano Weighs In On Lawsuits for Unethical Ticket Reselling Practices",
+            "author": "Romano Law PLLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/nQoLincg1zk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nQoLincg1zk"
+          },
+          {
+            "video_id": "SdsGfL0IdKk",
+            "title": "Ticketmaster Fees Hit 44%. The FTC Is Suing. I Read the Fine Print.",
+            "author": "The Fine Print Audit",
+            "thumbnail_url": "https://i.ytimg.com/vi/SdsGfL0IdKk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SdsGfL0IdKk"
+          },
+          {
+            "video_id": "2Vb_eyHh2aw",
+            "title": "Decibel and Docket covers hearing on AB1720, California concert ticket resale price cap.",
+            "author": "Decibel & Docket",
+            "thumbnail_url": "https://i.ytimg.com/vi/2Vb_eyHh2aw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2Vb_eyHh2aw"
+          },
+          {
+            "video_id": "pfp0vvw1nXo",
+            "title": "Why Concert Tickets Are So Expensive (Who Really Gets Your Money)",
+            "author": "Hidden Price",
+            "thumbnail_url": "https://i.ytimg.com/vi/pfp0vvw1nXo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pfp0vvw1nXo"
+          },
+          {
+            "video_id": "Wtsvx9NdMgc",
+            "title": "New Massachusetts law changes how people can resell concert or sports tickets",
+            "author": "CBS Boston",
+            "thumbnail_url": "https://i.ytimg.com/vi/Wtsvx9NdMgc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Wtsvx9NdMgc"
+          },
+          {
+            "video_id": "enPVz7BsM7Q",
+            "title": "Taylor Swift’s Ticketmaster Fiasco: Who Really Controls Ticket Prices? Prof AI Unfiltered",
+            "author": "Prof AI Unfiltered",
+            "thumbnail_url": "https://i.ytimg.com/vi/enPVz7BsM7Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=enPVz7BsM7Q"
+          },
+          {
+            "video_id": "IF-yvujBqTU",
+            "title": "Beyoncé fans complain of inconsistent ticket prices for Cowboy Carter Tour",
+            "author": "CBS News",
+            "thumbnail_url": "https://i.ytimg.com/vi/IF-yvujBqTU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=IF-yvujBqTU"
+          },
+          {
+            "video_id": "rZJgedd2Fk4",
+            "title": "How Taylor Swift created an economic juggernaut with her Eras Tour",
+            "author": "PBS NewsHour",
+            "thumbnail_url": "https://i.ytimg.com/vi/rZJgedd2Fk4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rZJgedd2Fk4"
+          },
+          {
+            "video_id": "nAgJ_xD_wuE",
+            "title": "Beyonce's Cowboy Carter Tour Struggles to Sell Out Stadiums | Firstpost America | N18G",
+            "author": "Firstpost",
+            "thumbnail_url": "https://i.ytimg.com/vi/nAgJ_xD_wuE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nAgJ_xD_wuE"
+          },
+          {
+            "video_id": "h_mhu-A8WR4",
+            "title": "Taylor Swift and Beyoncé attempt to pack movie theatres like stadiums",
+            "author": "CBC News: The National",
+            "thumbnail_url": "https://i.ytimg.com/vi/h_mhu-A8WR4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=h_mhu-A8WR4"
+          },
+          {
+            "video_id": "zwZDxD4dEpY",
+            "title": "Taylor Swift Eras Tour VS Ticketmaster Dynamic Pricing - Who is Responsible for High Ticket Prices?",
+            "author": "Making It Network",
+            "thumbnail_url": "https://i.ytimg.com/vi/zwZDxD4dEpY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=zwZDxD4dEpY"
+          },
+          {
+            "video_id": "qQIN_PDMcPA",
+            "title": "Taylor Swift’s ‘Eras Tour’ Tickets Crash Ticketmaster",
+            "author": "Inside Edition",
+            "thumbnail_url": "https://i.ytimg.com/vi/qQIN_PDMcPA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qQIN_PDMcPA"
+          },
+          {
+            "video_id": "rYABa5xL6d0",
+            "title": "Is the UFC VIP Experience worth it?",
+            "author": "Prodigy Slots",
+            "thumbnail_url": "https://i.ytimg.com/vi/rYABa5xL6d0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rYABa5xL6d0"
+          },
+          {
+            "video_id": "0jqhQFvHHcc",
+            "title": "I got $47,000 VIP Tickets to the UFC!",
+            "author": "Troydan",
+            "thumbnail_url": "https://i.ytimg.com/vi/0jqhQFvHHcc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0jqhQFvHHcc"
+          },
+          {
+            "video_id": "oqJoU9yO2_c",
+            "title": "UFC Fight Night: Vancouver Vlog - On Location VIP Experience",
+            "author": "The Wrestling Classic",
+            "thumbnail_url": "https://i.ytimg.com/vi/oqJoU9yO2_c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=oqJoU9yO2_c"
+          },
+          {
+            "video_id": "2vauuB_YXFc",
+            "title": "First UFC Event? Essential Tips for Buying Tickets!",
+            "author": "MMALeaked",
+            "thumbnail_url": "https://i.ytimg.com/vi/2vauuB_YXFc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=2vauuB_YXFc"
+          },
+          {
+            "video_id": "UTfE6DLqtLY",
+            "title": "I got $80,000 VIP Tickets to the UFC!",
+            "author": "PowerBombClub",
+            "thumbnail_url": "https://i.ytimg.com/vi/UTfE6DLqtLY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=UTfE6DLqtLY"
+          },
+          {
+            "video_id": "f5hPIW3U13c",
+            "title": "Coachella 2027 Tickets Are Selling Out! Prices, Camping & More",
+            "author": "Courtney Willis",
+            "thumbnail_url": "https://i.ytimg.com/vi/f5hPIW3U13c/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=f5hPIW3U13c"
+          },
+          {
+            "video_id": "B2P9oIBqq5Q",
+            "title": "What ticket should you buy for US Open? My experience",
+            "author": "BAG & TRAVEL",
+            "thumbnail_url": "https://i.ytimg.com/vi/B2P9oIBqq5Q/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=B2P9oIBqq5Q"
+          },
+          {
+            "video_id": "vvND5YxS-Hg",
+            "title": "US OPEN Tennis Tickets in New York are CRAZY",
+            "author": "Tennis Fights",
+            "thumbnail_url": "https://i.ytimg.com/vi/vvND5YxS-Hg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vvND5YxS-Hg"
+          },
+          {
+            "video_id": "R9QNsXzjvxU",
+            "title": "Inside Wimbledon’s $275,000 Debenture Seats: The Profit-Making Machine | Vantage with Palki Sharma",
+            "author": "Firstpost",
+            "thumbnail_url": "https://i.ytimg.com/vi/R9QNsXzjvxU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=R9QNsXzjvxU"
+          },
+          {
+            "video_id": "SqgRdPpIv_I",
+            "title": "Ticket Repricing Overview",
+            "author": "Fastweigh",
+            "thumbnail_url": "https://i.ytimg.com/vi/SqgRdPpIv_I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=SqgRdPpIv_I"
+          },
+          {
+            "video_id": "1m8cAjtjH5A",
+            "title": "The Pros & Cons of Dynamic Ticket Pricing in 2 Minutes",
+            "author": "2 Minute Expert",
+            "thumbnail_url": "https://i.ytimg.com/vi/1m8cAjtjH5A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=1m8cAjtjH5A"
+          },
+          {
+            "video_id": "9rdi7Mk3v-Y",
+            "title": "Angry fans accuse ticketers of deceptive concert refund policies (The Current Music News)",
+            "author": "The Current",
+            "thumbnail_url": "https://i.ytimg.com/vi/9rdi7Mk3v-Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9rdi7Mk3v-Y"
+          },
+          {
+            "video_id": "s9mNdqH694I",
+            "title": "TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND POSTPONED EVENTS | TICKET REFUND PLAN",
+            "author": "thumbsuprun",
+            "thumbnail_url": "https://i.ytimg.com/vi/s9mNdqH694I/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=s9mNdqH694I"
+          },
+          {
+            "video_id": "VBj60jqiycw",
+            "title": "Struggle for concert ticket refunds",
+            "author": "WCPO 9",
+            "thumbnail_url": "https://i.ytimg.com/vi/VBj60jqiycw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VBj60jqiycw"
+          },
+          {
+            "video_id": "YksJO2KDmnk",
+            "title": "Wednesday Town Hall: Can you get a refund on canceled or postponed concert tickets?",
+            "author": "WGRZ-TV",
+            "thumbnail_url": "https://i.ytimg.com/vi/YksJO2KDmnk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YksJO2KDmnk"
+          },
+          {
+            "video_id": "pAU7eEVgp1A",
+            "title": "Players, coaches continue to resell Super Bowl tickets, despite ban on the practice",
+            "author": "24H SPORT",
+            "thumbnail_url": "https://i.ytimg.com/vi/pAU7eEVgp1A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pAU7eEVgp1A"
+          },
+          {
+            "video_id": "uK2f6TsToVA",
+            "title": "The Average Resell Price Of Super Bowl LIX Is Over $10,000?! | Pat McAfee Show",
+            "author": "The Pat McAfee Show",
+            "thumbnail_url": "https://i.ytimg.com/vi/uK2f6TsToVA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uK2f6TsToVA"
+          },
+          {
+            "video_id": "wOQ8g0C7oCw",
+            "title": "Why the World's Biggest Stars Accept $0 for the Super Bowl",
+            "author": "Apparently Athletic",
+            "thumbnail_url": "https://i.ytimg.com/vi/wOQ8g0C7oCw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=wOQ8g0C7oCw"
+          },
+          {
+            "video_id": "jQCA_9sgdpM",
+            "title": "\"Ticket Prices Have PLUMMETED!\" - NFL Fans STUNNED As Super Bowl Tickets Hit By MASSIVE Price Drop",
+            "author": "Valuetainment Short Clips",
+            "thumbnail_url": "https://i.ytimg.com/vi/jQCA_9sgdpM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=jQCA_9sgdpM"
+          },
+          {
+            "video_id": "v-LGKb8taFw",
+            "title": "Trading a Penny to Super Bowl Tickets",
+            "author": "Chicoblanco",
+            "thumbnail_url": "https://i.ytimg.com/vi/v-LGKb8taFw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=v-LGKb8taFw"
+          },
+          {
+            "video_id": "C_QtPWHCo_U",
+            "title": "Super Bowl I vs Today: No Sellout at $12. Now Seats Start at $950",
+            "author": "Overtime Economics",
+            "thumbnail_url": "https://i.ytimg.com/vi/C_QtPWHCo_U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C_QtPWHCo_U"
+          },
+          {
+            "video_id": "TofGuOnLm0A",
+            "title": "Former NFL Player Dwight Smith EXPOSES NFL For RIGGING Games!!!",
+            "author": "L0B0",
+            "thumbnail_url": "https://i.ytimg.com/vi/TofGuOnLm0A/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TofGuOnLm0A"
+          },
+          {
+            "video_id": "0sxw7eRx9Fs",
+            "title": "Super Bowl Ticket Prices Are HIGH.. Fans Are Going BROKE",
+            "author": "Cold Talk",
+            "thumbnail_url": "https://i.ytimg.com/vi/0sxw7eRx9Fs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0sxw7eRx9Fs"
+          },
+          {
+            "video_id": "YZ3TuDNRcvw",
+            "title": "Here's how Bay Area 49ers fan got Super Bowl tickets under average resale price of $9,000",
+            "author": "ABC7 News Bay Area",
+            "thumbnail_url": "https://i.ytimg.com/vi/YZ3TuDNRcvw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YZ3TuDNRcvw"
+          },
+          {
+            "video_id": "we9NjqAzpU0",
+            "title": "Trading Football For NFL Tickets",
+            "author": "Chicoblanco",
+            "thumbnail_url": "https://i.ytimg.com/vi/we9NjqAzpU0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=we9NjqAzpU0"
+          },
+          {
+            "video_id": "QPC4K8A6GJg",
+            "title": "Business Meals and Entertainment Tax deduction - What You Should Know",
+            "author": "David Fiene",
+            "thumbnail_url": "https://i.ytimg.com/vi/QPC4K8A6GJg/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=QPC4K8A6GJg"
+          },
+          {
+            "video_id": "TpXJCfuFf4o",
+            "title": "HOW DYNAMIC TICKET PRICING & OFFICIAL PLATINUM SEATS WORK ON TICKETMASTER",
+            "author": "thumbsuprun",
+            "thumbnail_url": "https://i.ytimg.com/vi/TpXJCfuFf4o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TpXJCfuFf4o"
+          },
+          {
+            "video_id": "kFsH01UthzA",
+            "title": "Ticket Prices Are Disgusting",
+            "author": "Scott Cramer",
+            "thumbnail_url": "https://i.ytimg.com/vi/kFsH01UthzA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=kFsH01UthzA"
+          },
+          {
+            "video_id": "4Ddm_7kF3nc",
+            "title": "s-ticket for staff: box office, parking, refunds and door check-in (5-minute guide)",
+            "author": "Brian Jones",
+            "thumbnail_url": "https://i.ytimg.com/vi/4Ddm_7kF3nc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=4Ddm_7kF3nc"
+          },
+          {
+            "video_id": "111H45dtJsI",
+            "title": "The Ticket Industry Uncovered",
+            "author": "BBB National Programs",
+            "thumbnail_url": "https://i.ytimg.com/vi/111H45dtJsI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=111H45dtJsI"
+          },
+          {
+            "video_id": "N4lHcJFrT1E",
+            "title": "IT Helpdesk Best Practices That Reduce Tickets And Keep Work Moving",
+            "author": "NDSE",
+            "thumbnail_url": "https://i.ytimg.com/vi/N4lHcJFrT1E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=N4lHcJFrT1E"
+          },
+          {
+            "video_id": "rhYfYkzJGmU",
+            "title": "Dozens are out hundreds of dollars after using a local ticket broker",
+            "author": "9NEWS",
+            "thumbnail_url": "https://i.ytimg.com/vi/rhYfYkzJGmU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rhYfYkzJGmU"
+          },
+          {
+            "video_id": "OaCa2-zmCe8",
+            "title": "Bulk Import Delivery Orders From a Spreadsheet | Zippykind",
+            "author": "Zippykind",
+            "thumbnail_url": "https://i.ytimg.com/vi/OaCa2-zmCe8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=OaCa2-zmCe8"
+          },
+          {
+            "video_id": "p9Q9_2anOiA",
+            "title": "'Somebody's getting rich here!' 🤑 Sebi & Herc get heated over Inter Miami ticket prices | ESPN FC",
+            "author": "ESPN FC",
+            "thumbnail_url": "https://i.ytimg.com/vi/p9Q9_2anOiA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p9Q9_2anOiA"
+          },
+          {
+            "video_id": "x2psJ5xGp18",
+            "title": "Inter Miami Let Me Down—Why I’m Canceling My Season Tickets",
+            "author": "Hermanos F.C.",
+            "thumbnail_url": "https://i.ytimg.com/vi/x2psJ5xGp18/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=x2psJ5xGp18"
+          },
+          {
+            "video_id": "5niSyiKlGY4",
+            "title": "The Messi effect: FC Dallas vs. Inter Miami ticket prices soar ahead of match",
+            "author": "WFAA",
+            "thumbnail_url": "https://i.ytimg.com/vi/5niSyiKlGY4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5niSyiKlGY4"
+          },
+          {
+            "video_id": "TIrEHtyuX3g",
+            "title": "These Are Most EXPENSIVE Season Tickets Ever!!",
+            "author": "Kicking it with Drew",
+            "thumbnail_url": "https://i.ytimg.com/vi/TIrEHtyuX3g/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=TIrEHtyuX3g"
+          },
+          {
+            "video_id": "Y_cqkCHiMu8",
+            "title": "NFL Ticket Prices Explained (How They Became Expensive)",
+            "author": "Football Explainer",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y_cqkCHiMu8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Y_cqkCHiMu8"
+          },
+          {
+            "video_id": "X3-flSVor4E",
+            "title": "Behind the scenes: Watch special teams prepare for blitz of Super Bowl flights",
+            "author": "NBC Bay Area",
+            "thumbnail_url": "https://i.ytimg.com/vi/X3-flSVor4E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=X3-flSVor4E"
+          },
+          {
+            "video_id": "G6FuWd4wNd8",
+            "title": "Bad Bunny's Apple Music Super Bowl Halftime Show",
+            "author": "NFL",
+            "thumbnail_url": "https://i.ytimg.com/vi/G6FuWd4wNd8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=G6FuWd4wNd8"
+          },
+          {
+            "video_id": "w_3Yfr30xIo",
+            "title": "Trip to the Super Bowl would be super fun but super costly",
+            "author": "6abc Philadelphia",
+            "thumbnail_url": "https://i.ytimg.com/vi/w_3Yfr30xIo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=w_3Yfr30xIo"
+          },
+          {
+            "video_id": "pugjl3jzpWU",
+            "title": "Tickets To Travel Ep 10 Beyond the Ticket Merging Travel with VIP Event Experiences A Conversa",
+            "author": "Tickets To Travel Podcast",
+            "thumbnail_url": "https://i.ytimg.com/vi/pugjl3jzpWU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=pugjl3jzpWU"
+          },
+          {
+            "video_id": "L3_AaKpmtQI",
+            "title": "The Hidden System Behind Concert Ticket And Hotel Fees",
+            "author": "Consumer Context",
+            "thumbnail_url": "https://i.ytimg.com/vi/L3_AaKpmtQI/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L3_AaKpmtQI"
+          },
+          {
+            "video_id": "RsyNgibgVJY",
+            "title": "The Hidden System Behind $30K/Month Concert Ticket Flips",
+            "author": "Emmanuel Ak",
+            "thumbnail_url": "https://i.ytimg.com/vi/RsyNgibgVJY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=RsyNgibgVJY"
+          },
+          {
+            "video_id": "GORTWFnPPt0",
+            "title": "WHY some tickets ALWAYS make more Profit",
+            "author": "Ticket Flipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/GORTWFnPPt0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=GORTWFnPPt0"
+          },
+          {
+            "video_id": "JwHo6if-9Wo",
+            "title": "The Simplest Resale Business No One is Doing",
+            "author": "Ticket Flipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/JwHo6if-9Wo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=JwHo6if-9Wo"
+          },
+          {
+            "video_id": "hw92haJDs9Y",
+            "title": "The New Way to Find Tickets To Flip",
+            "author": "Ticket Flipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/hw92haJDs9Y/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=hw92haJDs9Y"
+          },
+          {
+            "video_id": "ajoRfqew338",
+            "title": "Live Training: How to find tickets to flip based on the Venue!",
+            "author": "Ticket Flipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/ajoRfqew338/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ajoRfqew338"
+          },
+          {
+            "video_id": "VBp4zpS7F3o",
+            "title": "Why Are Concert Tickets So Expensive? The Fees After Face Value",
+            "author": "Business Made Simple",
+            "thumbnail_url": "https://i.ytimg.com/vi/VBp4zpS7F3o/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VBp4zpS7F3o"
+          },
+          {
+            "video_id": "p8peX6mgbrw",
+            "title": "How concert promoters make money: dynamic pricing and the resale cut",
+            "author": "Profit Mechanics",
+            "thumbnail_url": "https://i.ytimg.com/vi/p8peX6mgbrw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=p8peX6mgbrw"
+          },
+          {
+            "video_id": "ETQnblEeP94",
+            "title": "How I scaled to 5 figure months Reselling Concert Tickets(1hr Full Course)",
+            "author": "Emmanuel Ak",
+            "thumbnail_url": "https://i.ytimg.com/vi/ETQnblEeP94/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=ETQnblEeP94"
+          },
+          {
+            "video_id": "NGFBVOXqxpA",
+            "title": "How to get More Tickets to Flip",
+            "author": "Ticket Flipping",
+            "thumbnail_url": "https://i.ytimg.com/vi/NGFBVOXqxpA/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NGFBVOXqxpA"
           }
         ],
         "research_reference_only": true,
@@ -53055,7 +54301,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 7185 third-party videos (65357 captured tips)",
+        "source": "Spoken content of 7363 third-party videos (66842 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -53071,38 +54317,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 7185,
-    "channel_count": 4288,
-    "total_words": 9972865,
-    "total_hours": 1970.17,
-    "total_pro_tips": 65357,
-    "unique_statutes_and_forms": 2344,
-    "unique_tools_and_portals": 17688
+    "video_count": 7363,
+    "channel_count": 4425,
+    "total_words": 10131671,
+    "total_hours": 1999.85,
+    "total_pro_tips": 66842,
+    "unique_statutes_and_forms": 2370,
+    "unique_tools_and_portals": 18130
   },
   "coverage": {
-    "videos_classified": 7185,
-    "videos_with_multiple_topics": 7182,
-    "tips_classified": 65357,
-    "raw_transcripts_joined": 7185,
+    "videos_classified": 7363,
+    "videos_with_multiple_topics": 7360,
+    "tips_classified": 66842,
+    "raw_transcripts_joined": 7363,
     "topic_video_counts": {
-      "business_model_and_economics": 5832,
-      "probate_and_docket_sourcing": 5517,
-      "unclaimed_property_and_escheat": 1391,
-      "genealogy_and_heirship_proof": 5967,
-      "skip_tracing_and_outreach": 3840,
-      "contracts_and_compensation": 5441,
-      "statutory_caps_and_licensing": 6157,
-      "automation_and_small_team_ops": 4777
+      "business_model_and_economics": 5983,
+      "probate_and_docket_sourcing": 5672,
+      "unclaimed_property_and_escheat": 1402,
+      "genealogy_and_heirship_proof": 6119,
+      "skip_tracing_and_outreach": 3887,
+      "contracts_and_compensation": 5521,
+      "statutory_caps_and_licensing": 6321,
+      "automation_and_small_team_ops": 4865
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 11934,
-      "probate_and_docket_sourcing": 11304,
-      "unclaimed_property_and_escheat": 2658,
-      "genealogy_and_heirship_proof": 9475,
-      "skip_tracing_and_outreach": 1648,
-      "contracts_and_compensation": 9328,
-      "statutory_caps_and_licensing": 5537,
-      "automation_and_small_team_ops": 13473
+      "business_model_and_economics": 12154,
+      "probate_and_docket_sourcing": 11518,
+      "unclaimed_property_and_escheat": 2663,
+      "genealogy_and_heirship_proof": 10091,
+      "skip_tracing_and_outreach": 1655,
+      "contracts_and_compensation": 9511,
+      "statutory_caps_and_licensing": 5613,
+      "automation_and_small_team_ops": 13637
     }
   },
   "schema_version": "1.0",
@@ -53340,10 +54586,10 @@
           "link": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=939s"
         },
         {
-          "video_title": "DomainSherpa Review – 10/27/22: Cyger Says “I’m Back”: RealInnovation, Tradesman, Encrypto",
-          "author": "domainsherpa",
-          "timestamp": "01:09:59",
-          "link": "https://www.youtube.com/watch?v=P7O7_GHUYb0&t=4199s"
+          "video_title": "Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix",
+          "author": "PromoTix",
+          "timestamp": "00:11:06",
+          "link": "https://www.youtube.com/watch?v=IdHpcPxQTfU&t=666s"
         }
       ]
     }

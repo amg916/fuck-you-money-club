@@ -66,7 +66,7 @@
       "test_price_usd": 249,
       "includes": [
         "5-Volume Flagship Boxed/Digital Set",
-        "42-Business Money-to-Manpower Atlas",
+        "43-Business Money-to-Manpower Atlas",
         "All Companion Workbooks"
       ],
       "hypothesis": true,
@@ -84,7 +84,7 @@
       ],
       "hypothesis": true,
       "paid_checkout_enabled": false,
-      "notes": "All Big Money Playbook releases, live 42-business Money-to-Manpower deal scorecards, and operator templates."
+      "notes": "All Big Money Playbook releases, live 43-business Money-to-Manpower deal scorecards, and operator templates."
     }
   },
   "workflow_stages": [
@@ -173,6 +173,6 @@
     }
   },
   "editorial_notes": "OWNER APPROVED: (1) Concept B — Bold Editorial (#09090B / #FFD400 / #FFFFFF) locked as Owner-Approved Series Master; (2) Volume 001 — Heir Hunting (87/100) and Volume 002 — Surplus Funds Recovery (86/100) completed through Quality Assurance with 5-layer FYMC content architecture; (3) Public deploy and paid checkout remain disabled pending final Publication Approval.",
-  "generated_at": "2026-11-23T15:04:55Z",
-  "updated_at": "2026-11-23T16:14:24Z"
+  "generated_at": "2026-11-23T17:41:48Z",
+  "updated_at": "2026-11-23T17:41:48Z"
 }

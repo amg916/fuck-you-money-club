@@ -1,0 +1,328 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-controlled-ticket-workflow",
+      "chart_type": "process_flow",
+      "title": "Acquire Rights, Lock Inventory, Collect Settled Cash",
+      "subtitle": "Three brokerage models share controls, not capital or payout profiles.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The core pod is one full-time operator plus two contractors. Multi-exchange resale, suite seat-splitting, and tentpole hospitality must have separate inventory, obligation, and settlement ledgers. This is event-rights brokerage, not wholesale electronics buying.",
+      "caption": "A confirmed sale does not release working capital. Track transfer acceptance, event completion, refund exposure, and actual payout before replenishing inventory.",
+      "stages": [
+        {
+          "label": "Verify acquisition rights",
+          "value": "Document source and permitted resale",
+          "numeric_value": 1.0,
+          "detail": "Record seller identity, acquisition evidence, event, seat identifiers, transfer restrictions, and written authority. Apply 15 U.S.C. §45c; never bypass queues, purchase limits enforced by covered controls, or ticketing security measures."
+        },
+        {
+          "label": "Separate deal structures",
+          "value": "Assign one of three ledgers",
+          "numeric_value": 2.0,
+          "detail": "Exchange resale funds individual tickets before payout; suite splitting commits a suite minimum before seats sell; tentpole packages combine ticket allotments with distinct service deposits. Require venue subdivision permission and supplier-specific cancellation terms."
+        },
+        {
+          "label": "Publish locked inventory",
+          "value": "One authoritative inventory record",
+          "numeric_value": 3.0,
+          "detail": "Configure SkyBox, Automatiq, or Logitix for supported StubHub, Vivid Seats, SeatGeek, and TickPick connections. Test reservation propagation and automatic holds; suspend affected listings when acknowledgments lag. Never assume cross-exchange synchronization is inherently atomic."
+        },
+        {
+          "label": "Transfer verified entitlements",
+          "value": "Reconcile ticket and service delivery",
+          "numeric_value": 4.0,
+          "detail": "Capture accepted barcode transfers, named hospitality entitlements, suite access credentials, and B2B invoice matches. Price with mandatory charges included where required; preserve the buyer-facing offer and delivery trail."
+        },
+        {
+          "label": "Release settled proceeds",
+          "value": "Reconcile event-level cash and profit",
+          "numeric_value": 5.0,
+          "detail": "Match exchange statements and corporate receipts to each sale. Deduct acquisition, sell fees, markdown losses, clawback provisions, operating costs, and funding expense. Keep cash reserved until the applicable refund and post-event settlement obligations are covered."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-corporate-buyer-cohort",
+      "chart_type": "funnel",
+      "title": "One Corporate Buyer Cohort, Five Nested Stages",
+      "subtitle": "Measure collected and settled business rather than proposal volume.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative cohort of 200 distinct corporate prospects followed through their events and final settlement, not necessarily within 30 days. Every later stage is a subset of the preceding stage. Counts are neither ticket quantities nor canonical revenue inputs.",
+      "caption": "Conditional conversion is 50%, 50%, 40%, then 60%; 12 settled accounts represent 6% of the original cohort.",
+      "stages": [
+        {
+          "label": "Screened corporate prospects",
+          "value": "200 distinct prospect accounts",
+          "numeric_value": 200.0,
+          "detail": "Identify a named buyer, relevant event, plausible group size, and legitimate business contact route. Deduplicate accounts before counting outreach across multiple employees."
+        },
+        {
+          "label": "Qualified event buyers",
+          "value": "100 accounts; 50% of prospects",
+          "numeric_value": 100.0,
+          "detail": "Confirm spending authority, event dates, seat requirements, payment method, and procurement timing. Exclude accounts whose collection timetable cannot fund supplier commitments."
+        },
+        {
+          "label": "Executable package offers",
+          "value": "50 accounts; 50% of qualified buyers",
+          "numeric_value": 50.0,
+          "detail": "Issue inventory-backed offers with expiration times, mandatory charges, precise inclusions, transfer conditions, and cancellation terms. A speculative supplier inquiry does not qualify as an executable offer."
+        },
+        {
+          "label": "Collected buyer deposits",
+          "value": "20 accounts; 40% of offers",
+          "numeric_value": 20.0,
+          "detail": "Count cleared deposits tied to accepted contracts, not unsigned purchase orders. Record deposits as liabilities until performance supports revenue recognition; retain liquidity against refundable amounts."
+        },
+        {
+          "label": "Fulfilled settled accounts",
+          "value": "12 accounts; 60% of depositors",
+          "numeric_value": 12.0,
+          "detail": "Require completed delivery, reconciled supplier costs, cleared final payment, and documented residual exposure. The other eight depositors remain pending or are canceled; their deposits are not automatically earned profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base Case: $1,010,000 Gross to $191,900 Owner Profit",
+      "subtitle": "Six signed bars end at 19.0% gross margin and 47.5% retained margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Formula v2.0 fixes gross billings, retained_share=0.4, and owner profit; the expense split below is an illustrative allocation that reconciles exactly. Gross billings are not net-presented operator revenue. Normalize fee-net exchange remittances back to gross once, then deduct the sell fee once. Apply ASC 606 principal-versus-agent analysis to actual contracts before choosing financial-statement presentation; the scorecard uses 40% retained revenue. Owner profit is after modeled operating costs and funding expense, before owner-specific income taxes.",
+      "caption": "$1,010,000 - $606,000 - $80,800 - $40,400 - $20,200 - $70,700 = $191,900. Retained revenue is $404,000; $191,900 / $404,000 = 47.5%. Conservative: $220,000 gross, $88,000 retained, $26,400 profit, 12% gross margin, 30% retained margin, 1 FT + 2 C. Base: $1,010,000 gross, $404,000 retained, $191,900 profit, 19.0% gross margin, 47.5% retained margin, 1 FT + 2 C. Scaled: $1,800,000 gross, $720,000 retained, $468,000 profit, 26% gross margin, 65% retained margin, 2 FT + 3 C. The sixth bar ends at profit; do not append profit as another additive bar.",
+      "stages": [
+        {
+          "label": "Gross customer billings",
+          "value": "+$1,010,000 annual gross",
+          "numeric_value": 1010000.0,
+          "detail": "Aggregate secondary ticket sales, suite-seat sales, and VIP package billings before the modeled acquisition and selling deductions. Exclude taxes collected for authorities and refundable customer deposits awaiting performance."
+        },
+        {
+          "label": "Ticket and suite acquisition",
+          "value": "-$606,000; $404,000 retained",
+          "numeric_value": -606000.0,
+          "detail": "Deduct 60% of gross for face-value inventory and contracted ticket, suite, and package acquisition. The resulting 40% retained spread is $404,000, not the owner's profit."
+        },
+        {
+          "label": "Exchange and collection fees",
+          "value": "-$80,800; $323,200 remaining",
+          "numeric_value": -80800.0,
+          "detail": "Model blended exchange sell fees and direct collection charges at 8% of gross. Match fee schedules to each rail; do not apply an exchange fee again to an already fee-net remittance."
+        },
+        {
+          "label": "Unsold inventory and markdown loss",
+          "value": "-$40,400; $282,800 remaining",
+          "numeric_value": -40400.0,
+          "detail": "Charge 4% of gross for incremental unsold inventory write-offs and markdown variance against the acquisition baseline. Do not deduct a realized markdown twice when actual gross billings already include its price effect."
+        },
+        {
+          "label": "Event disruption loss provision",
+          "value": "-$20,200; $262,600 remaining",
+          "numeric_value": -20200.0,
+          "detail": "Charge 2% of gross for expected postponement, cancellation, refund, and clawback losses net of supportable supplier recoveries. Maintain a separate cash liquidity reserve; moving cash into that reserve is not another expense."
+        },
+        {
+          "label": "Operating and funding expense",
+          "value": "-$70,700; $191,900 owner profit",
+          "numeric_value": -70700.0,
+          "detail": "Allocate $64,700 to contractor compensation, POS services, administration, and other operating costs, plus $6,000 to inventory and delayed-payout funding expense. Combined monthly cost averages $5,891.67. Payout delay itself changes cash timing; its funding cost reduces profit."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-net-yield",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Fully Loaded Deal Yield by Sub-Niche",
+      "subtitle": "Five illustrative unit models use net profit divided by gross receipts.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "These independent underwriting examples are not measured market averages and do not determine the canonical scenario mix. Each deducts acquisition, selling or collection fees, incremental slippage, expected disruption loss, allocated operations, and funding cost. Settlement intervals are planning assumptions, not stated exchange policies.",
+      "caption": "A higher percentage spread can still consume more cash for longer. Underwrite settlement dates, refund duties, and supplier deposits alongside each net yield.",
+      "stages": [
+        {
+          "label": "Multi-exchange ticket resale",
+          "value": "17% net; $170 on $1,000",
+          "numeric_value": 17.0,
+          "detail": "$1,000 gross less $600 acquisition, $100 exchange fees, $40 slippage, $20 disruption provision, $60 operations, and $10 funding leaves $170. Fund inventory upfront; stress-test payout seven days after event completion."
+        },
+        {
+          "label": "Suite splitting with ACH",
+          "value": "19% net; $950 on $5,000",
+          "numeric_value": 19.0,
+          "detail": "$5,000 gross less $3,000 suite allocation, $50 collection fees, $300 empty-seat slippage, $150 disruption provision, $500 operations, and $50 funding leaves $950. Suite minimums remain payable even when individual seats fail to sell; ACH collection does not remove refund duties."
+        },
+        {
+          "label": "Tentpole hospitality with wire",
+          "value": "20% net; $2,000 on $10,000",
+          "numeric_value": 20.0,
+          "detail": "$10,000 gross less $6,000 package acquisition, $100 collection fees, $500 slippage, $300 disruption provision, $900 operations, and $200 funding leaves $2,000. Apply to Super Bowl, World Cup, F1, or Final Four bundles only with documented rights; model a 90-day deposit cycle."
+        },
+        {
+          "label": "NFL and NBA playoff strips",
+          "value": "7% net; $140 on $2,000",
+          "numeric_value": 7.0,
+          "detail": "$2,000 gross less $1,200 acquisition, $200 exchange fees, $140 slippage, $60 disruption provision, $140 operations, and $20 funding leaves $140. Verify SSL and playoff-option transfer terms; elimination changes both inventory and refund obligations before post-event settlement."
+        },
+        {
+          "label": "Masters hospitality with card",
+          "value": "16% net; $1,600 on $10,000",
+          "numeric_value": 16.0,
+          "detail": "$10,000 gross less $6,000 acquisition, $200 collection fees, $700 slippage, $400 disruption provision, $900 operations, and $200 funding leaves $1,600. Verify each badge entitlement and hospitality component; model 120-day supplier exposure and continuing card disputes."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-risk-decisions",
+      "chart_type": "decision_tree",
+      "title": "Four Decisions Before Publishing an Offer",
+      "subtitle": "Any failed check stops the affected transaction until corrected.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Apply requirements by event location, customer location, seller activity, and contract. Federal rules do not replace state licensing, venue restrictions, or exchange-specific obligations.",
+      "caption": "Document the answer and evidence for each branch. Strong demand cannot cure defective acquisition rights, unlawful pricing, unfunded refunds, or duplicate inventory.",
+      "stages": [
+        {
+          "label": "Acquisition and resale authority",
+          "value": "Pass with evidence; otherwise reject",
+          "numeric_value": 1.0,
+          "detail": "Check 15 U.S.C. §45c acquisition restrictions and retain purchase provenance. Verify sponsor resale permission, suite subdivision rights, and event transfer conditions. Reject covered circumvention and inventory without supportable authority."
+        },
+        {
+          "label": "Licensing and total price",
+          "value": "Pass after jurisdiction-specific checks",
+          "numeric_value": 2.0,
+          "detail": "Apply relevant reseller licensing, including New York Arts and Cultural Affairs Law Article 25 when applicable. Under 16 CFR §§464.2–464.3, display required total pricing and avoid fee misrepresentations; account separately for permitted exclusions and required prepayment disclosures."
+        },
+        {
+          "label": "Liquidity and disruption capacity",
+          "value": "Pass only with funded stress coverage",
+          "numeric_value": 3.0,
+          "detail": "Model rainout, postponement, injury-driven markdown, and cancellation. Stress a 30-day payout extension and supplier refund arriving after customer reimbursement. If available cash cannot fund obligations, reduce position size or decline the purchase."
+        },
+        {
+          "label": "Inventory lock and delivery",
+          "value": "Pass tested synchronization; otherwise pause",
+          "numeric_value": 4.0,
+          "detail": "Test POS hold propagation, stale-feed alerts, transfer eligibility, and emergency delisting across active channels. Stress a replacement charge equal to 200% of sale value where contract terms support it; this is not a universal exchange penalty."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-core-and-scaled-pod",
+      "chart_type": "org_architecture",
+      "title": "Three Core Seats, Two Capacity-Triggered Additions",
+      "subtitle": "Base economics use 1 FT + 2 C; scaled economics use 2 FT + 3 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time seat; C means contractor seat. The first three roles form the core pod. Add the fourth and fifth only for the five-person scaled configuration; do not attribute scaled output to the unchanged three-person team.",
+      "caption": "Automation supports pricing, listing synchronization, barcode transfer, and invoice matching. Named operators still own exception handling and cash reconciliation.",
+      "stages": [
+        {
+          "label": "Owner and inventory principal",
+          "value": "Core full-time seat; cumulative one",
+          "numeric_value": 1.0,
+          "detail": "Own acquisition limits, supplier rights, event exposure, dynamic drop-curve pricing, and playoff-probability inputs. Set position size from available settlement liquidity rather than headline inventory markups."
+        },
+        {
+          "label": "POS and transfer operator",
+          "value": "Core contractor seat; cumulative two",
+          "numeric_value": 2.0,
+          "detail": "Manage SkyBox, Automatiq, or Logitix exceptions, hold acknowledgments, barcode transfers, and emergency channel suspension. Reconcile sold inventory against delivery evidence before marking orders complete."
+        },
+        {
+          "label": "Corporate sales coordinator",
+          "value": "Core contractor seat; cumulative three",
+          "numeric_value": 3.0,
+          "detail": "Qualify corporate buyers, assemble documented package offers, collect authorized deposits, and reconcile B2B suite invoices. Keep promised access and hospitality services aligned with supplier entitlements."
+        },
+        {
+          "label": "Settlement and event controller",
+          "value": "Scaled full-time seat; cumulative four",
+          "numeric_value": 4.0,
+          "detail": "Own daily cash forecasting, exchange-statement matching, refund exposure, reserve sizing, and event-level profit close. Separate bank reconciliation from the operator initiating inventory purchases."
+        },
+        {
+          "label": "Event fulfillment coordinator",
+          "value": "Scaled contractor seat; cumulative five",
+          "numeric_value": 5.0,
+          "detail": "Handle event-day access exceptions, supplier confirmations, group manifests, and service-delivery evidence. Escalate missing entitlements before entry time instead of substituting undocumented benefits."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate $40,000 Without Spending the Refund Buffer",
+      "subtitle": "Four buckets fit the canonical $10,000–$50,000 startup envelope.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values are dollar allocations for one $40,000 launch stack, totaling exactly $40,000. The 40%, 20%, 15%, and 25% allocation also maps to $10,000 and $50,000 examples. Acquisition cash and refundable deposits are not automatically expenses; a cash reserve is not a second profit deduction.",
+      "caption": "A $10,000 launch should emphasize small, transferable positions. Do not interpret the capital range as sufficient to warehouse an entire premium suite or speculative tentpole allotment.",
+      "stages": [
+        {
+          "label": "Liquid resale inventory",
+          "value": "$16,000; 40% of startup capital",
+          "numeric_value": 16000.0,
+          "detail": "Allocate $4,000 at a $10,000 launch or $20,000 at $50,000. Buy small positions with documented transferability and multiple demand outlets; cap correlated exposure to one team, venue, or event date."
+        },
+        {
+          "label": "Suite and hospitality deposits",
+          "value": "$8,000; 20% of startup capital",
+          "numeric_value": 8000.0,
+          "detail": "Allocate $2,000 at a $10,000 launch or $10,000 at $50,000. Fund only contract-sized deposits with understood balance dates and cancellation terms. Customer prepayment cannot justify an uncovered refundable obligation."
+        },
+        {
+          "label": "Operating setup and runway",
+          "value": "$6,000; 15% of startup capital",
+          "numeric_value": 6000.0,
+          "detail": "Allocate $1,500 at a $10,000 launch or $7,500 at $50,000. Budget applicable licensing, POS onboarding, bookkeeping, payment setup, and initial contractor coverage. Recurring spending must fit the $1,800–$11,000 monthly operating range."
+        },
+        {
+          "label": "Settlement and refund liquidity",
+          "value": "$10,000; 25% of startup capital",
+          "numeric_value": 10000.0,
+          "detail": "Allocate $2,500 at a $10,000 launch or $12,500 at $50,000. Hold liquid cash for delayed exchange payout, replacement tickets, and customer refunds ahead of supplier recoveries. Increase the buffer when correlated event exposure rises."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Instrumented Brokerage Desk",
+      "subtitle": "Build execution readiness first; the first deal may take 1–3 months.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Milestones describe implementation work rather than promised sales. Use operator-owned accounts and authorized supplier inventory. Do not fund positions that fail rights, liquidity, pricing, or delivery checks.",
+      "caption": "By day 30, produce a rights file, tested inventory controls, a priced offer set, and a cash-exposure report. Revenue and owner profit follow completed, reconciled transactions.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Map rights and settlement obligations",
+          "numeric_value": 7.0,
+          "detail": "Choose one initial model, identify applicable reseller requirements, inspect supplier contracts, and document exchange payout terms. Build separate gross, retained revenue, expense, customer-deposit, and cash-reserve accounts."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Test inventory and payment controls",
+          "numeric_value": 14.0,
+          "detail": "Configure the selected POS and supported channels. Test holds, stale-feed alerts, authorized transfers, duplicate order handling, and invoice matching using permitted test procedures. Record observed latency and a manual delisting procedure for failed synchronization."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Underwrite offers and qualify buyers",
+          "numeric_value": 21.0,
+          "detail": "Price five small inventory-backed offers with acquisition, fees, markdown exposure, disruption provision, operations, and funding costs. Begin the corporate cohort ledger; collect deposits only against clear contracts and supportable delivery rights."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Reconcile pilot or rehearse settlement",
+          "numeric_value": 30.0,
+          "detail": "If a legitimate pilot sale occurs, reconcile payment, transfer, and expected payout without declaring premature profit. Otherwise rehearse a cancellation and 30-day settlement delay. Schedule the next 60 days around the canonical 1–3 month first-deal window."
+        }
+      ]
+    }
+  ]
+}

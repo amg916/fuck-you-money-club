@@ -57,6 +57,7 @@ VOLUME_039_ID = ALL_VOLUME_SPECS.get(39, {"volume_id": "vol-039-inbound-pay-per-
 VOLUME_040_ID = ALL_VOLUME_SPECS.get(40, {"volume_id": "vol-040-self-funded-erisa-pbm-and-workers-comp-arbitrage"})["volume_id"]
 VOLUME_041_ID = ALL_VOLUME_SPECS.get(41, {"volume_id": "vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage"})["volume_id"]
 VOLUME_042_ID = ALL_VOLUME_SPECS.get(42, {"volume_id": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage"})["volume_id"]
+VOLUME_043_ID = ALL_VOLUME_SPECS.get(43, {"volume_id": "vol-043-live-event-super-bowl-and-vip-ticket-brokering"})["volume_id"]
 PUBLISHED_VOLUME_IDS = get_published_volume_ids()
 OWNER_APPROVED_CONCEPT_ID = "concept_b"
 MIN_EXPERT_YOUTUBE_LINKS_PER_BOOK = 150

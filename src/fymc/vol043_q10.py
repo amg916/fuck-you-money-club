@@ -1,0 +1,637 @@
+from __future__ import annotations
+
+CHAPTER_10 = {
+    "id": "Q10",
+    "chapter_id": "Q10",
+    "chapter_number": 10,
+    "question_number": 10,
+    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
+    "question_prompt": "How does a 1 FT + 2 C (3 people) live-event, super bowl & vip ticket brokering team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
+    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
+    "subtitle": "SkyBox, Automatiq and Logitix Event Pipelines, Probability-Weighted Pricing, Authorized Transfers, B2B Suite Settlement and BOTS Act Controls",
+    "layout_template": "case_study_walkthrough",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #43, Live-Event, Super Bowl & VIP Ticket Brokering, ranks #02 of 43 "
+        "with a 95/100 Money-to-Manpower Score. This chapter maps 12 operator plays "
+        "into an auditable automation system: synchronized inventory, bounded repricing, "
+        "authorized fulfillment, invoice matching, research, qualification, search pages, "
+        "referrals, suite replenishment, outbound clusters, creative testing, and exception "
+        "triage. The objective is 70%+ repetitive labor removal, measured after exception "
+        "handling rather than advertised connector coverage. Canonical annual owner profit "
+        "is $26,400 Conservative, $191,900 Base, and $468,000 Scaled. Those outcomes require "
+        "separate acquisition ledgers, exchange fees, markdown losses, cancellation reserves, "
+        "and payout-delay carrying costs. Keep purchase commitments, exceptional price "
+        "changes, transfer disputes, and hospitality promises under named human control."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$220,000",
+            "context": "Annual gross transaction basis; $88,000 retained revenue at 40%",
+            "note": "12% gross-basis net margin; 30% retained margin; $26,400 owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,010,000",
+            "context": "Annual gross transaction basis; $404,000 retained revenue at 40%",
+            "note": "19.0% gross-basis net margin; 47.5% retained margin; $191,900 owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,800,000",
+            "context": "Annual gross transaction basis; $720,000 retained revenue at 40%",
+            "note": "26% gross-basis net margin; 65% retained margin; $468,000 owner profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build one inventory authority before automating twelve operator plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Begin with a single inventory authority, not three independent exchange bots. "
+                    "Select SkyBox, Automatiq, or Logitix after verifying contracted API access, supported "
+                    "marketplaces, webhook behavior, and actual cancellation semantics; these products "
+                    "are alternatives or contracted integrations, not automatically interchangeable rails. "
+                    "Map each ticket to an immutable inventory identifier plus event, section, row, "
+                    "seat, ownership evidence, transfer restrictions, and acquisition lot. A Python "
+                    "receiver validates the provider's documented signature against the raw request "
+                    "body, checks replay limits where supported, and commits the event before "
+                    "acknowledging delivery. Use a unique provider-event key and a transactional outbox "
+                    "so retries cannot create a second reservation. The lifecycle is available, "
+                    "reserved, sold, transfer pending, transferred, and settled; releases require "
+                    "explicit reversal evidence. An order from StubHub, Vivid Seats, SeatGeek, or "
+                    "TickPick triggers a local hold and immediate withdrawal requests everywhere "
+                    "else. Local atomicity cannot make external exchanges atomic. Measure acknowledgement "
+                    "latency, reconcile residual listings, and stop new exposure whenever a marketplace "
+                    "cannot confirm withdrawal. A double-sale contract can impose replacement "
+                    "liability approaching 200% in the supplied risk model; read the actual agreement "
+                    "rather than treating that percentage as a universal platform rule."
+                ),
+                (
+                    "Treat the twelve mapped plays as one workload ledger with explicit owners. "
+                    "The full-time operator owns purchasing, exposure limits, exceptional prices, and "
+                    "corporate promises. Contractor one handles transfer exceptions and event-day "
+                    "support; contractor two handles approved account research, CRM quality, and "
+                    "invoice preparation. Inventory synchronization, probability repricing, transfer "
+                    "orchestration, and invoice reconciliation form the transaction spine. Account "
+                    "research and qualification feed programmatic event pages, buyer referrals, "
+                    "suite replenishment triggers, outbound clusters, creative testing, and exception "
+                    "digests. Every run records its input snapshot, rule version, output, reviewer, "
+                    "and eventual commercial result. Measure automation using time, not the number "
+                    "of enabled integrations. An illustrative weekly baseline is 50 repetitive hours "
+                    "across the team. Removing 39 hours through straight-through processing while "
+                    "adding four hours of exception handling saves 35 hours, exactly 70%. If "
+                    "exceptions consume eight hours, savings fall to 62%, even with identical "
+                    "software coverage. Keep negotiation and acquisition judgment outside that "
+                    "repetitive-work denominator, but publish their hours separately to prevent "
+                    "selective reporting. Sample twenty completed records each week and compare "
+                    "actual handling time with the baseline. Reopen the measurement whenever "
+                    "event mix or contractor responsibilities materially change."
+                ),
+                (
+                    "Keep three commercial lanes distinct inside the same system. Multi-exchange "
+                    "resale requires owned or contractually controlled tickets, exchange-specific "
+                    "delivery deadlines, and cash capacity through the contractual payout date. "
+                    "Suite seat-splitting commits to a suite block before individual seats necessarily "
+                    "sell; track catering minimums, parking allocations, admission rights, and each "
+                    "unsold seat separately. Tentpole corporate hospitality for the Super Bowl, "
+                    "World Cup, F1, Masters, and Final Four combines tickets with precisely described "
+                    "services and supplier deposits. Do not describe sponsor allotments as freely "
+                    "transferable until written rights support that claim. Corporate deposits are "
+                    "cash receipts with remaining obligations, not automatically earned contribution. "
+                    "A $24,000 suite split into twenty seats needs $1,200 per seat merely to recover "
+                    "the suite acquisition before catering, selling fees, reserves, or operating "
+                    "costs. Sixteen seats sold at $1,800 produce $28,800, leaving only $4,800 before "
+                    "those deductions. By contrast, a $3,000 resale ticket locks a smaller absolute "
+                    "amount but may still settle after the event. Hospitality may demand several "
+                    "supplier deposits months earlier. Separate cash calendars prevent a profitable "
+                    "ticket dashboard from concealing a suite funding shortage. Never route these "
+                    "obligations through the wholesale electronics buying-group assumptions used "
+                    "in Volume 041."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve Chapter-Mapped Plays and Their Human-Owned Operating Boundaries",
+                "headers": [
+                    "Mapped operator play or paired plays",
+                    "Automation contract and concrete unit target",
+                    "Named human responsibility before consequential action",
+                    "Failure fallback and retained operating evidence",
+                ],
+                "rows": [
+                    [
+                        "Play 1: Multi-exchange inventory synchronization and reservation",
+                        "One immutable seat record drives four marketplace adapters",
+                        "Operator resolves conflicting orders before promising replacement delivery",
+                        "Withdraw affected inventory and preserve every acknowledgement timestamp",
+                    ],
+                    [
+                        "Play 2: Drop-curve and playoff-probability bounded repricing",
+                        "Evaluate each controlled lot against one versioned price policy",
+                        "Operator approves exposure increases and exceptional floor changes",
+                        "Freeze last verified prices when market observations become stale",
+                    ],
+                    [
+                        "Play 3: Authorized barcode and mobile-transfer orchestration",
+                        "One verified recipient receives one authorized transfer instruction",
+                        "Fulfillment contractor checks recipient conflicts and restricted delivery terms",
+                        "Use documented manual transfer and retain issuer confirmation evidence",
+                    ],
+                    [
+                        "Play 4: B2B suite invoice and settlement reconciliation",
+                        "Match each invoice against contract, bank receipt, and allocation",
+                        "Operator approves credits, refunds, and changed supplier bank instructions",
+                        "Quarantine unmatched amounts without falsely marking invoices fully paid",
+                    ],
+                    [
+                        "Plays 5 and 6: Account research and qualification",
+                        "Extract cited company facts and score explicit buying-fit criteria",
+                        "Research contractor verifies purchasing relevance before releasing account records",
+                        "Discard unsupported claims and return ambiguous contacts for verification",
+                    ],
+                    [
+                        "Plays 7, 8 and 9: Event pages, referrals, suite replenishment",
+                        "Attribute qualified inquiries, buyer introductions, and repeat suite demand",
+                        "Operator confirms availability, package rights, and customer-facing promises",
+                        "Suppress stale offers and replace sales links with inquiry forms",
+                    ],
+                    [
+                        "Plays 10, 11 and 12: Outbound clusters, creative testing, exception digests",
+                        "Batch authorized messages, approved variants, and prioritized incident summaries",
+                        "Operator controls sender eligibility, claims, budget, and incident closure",
+                        "Pause affected campaigns and restore service without bypassing restrictions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before exposing inventory or releasing messages",
+                "body": (
+                    "A named operator records these checks against the specific lot, "
+                    "campaign, or deployment version; passing one does not authorize another."
+                ),
+                "items": [
+                    "Verify acquisition rights, exact seats, transfer restrictions, and every promised hospitality inclusion against retained supplier evidence.",
+                    "Confirm marketplace holds and withdrawal acknowledgements in a controlled test; block live exposure when an adapter cannot reconcile state.",
+                    "Recalculate all-in customer pricing, floor contribution, cancellation exposure, and available cash through the contractual payout date.",
+                    "Confirm sender permissions, lawful contact sourcing, suppression synchronization, production email licensing, and a staffed exception queue.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Make repricing, fulfillment and invoice automation bounded and recoverable",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the repricer around realized contribution rather than scraped asking prices. "
+                    "For each lot, store acquisition cost, applicable exchange fee, expected markdown "
+                    "loss, cancellation reserve, delivery expense, and payout carrying cost. A simple "
+                    "floor is acquisition cost plus dollar reserves and required contribution, divided "
+                    "by one minus the percentage selling fee; add fixed selling charges to the "
+                    "numerator. At $600 acquisition, $40 combined reserves and carrying cost, $60 "
+                    "target contribution, and a 10% fee, the floor is $777.78 before customer taxes "
+                    "and any separately applicable charges. Round upward, not downward. Estimate "
+                    "drop curves by event, seating zone, remaining inventory, and hours until "
+                    "transfer cutoff. Use permitted feeds or licensed market observations instead "
+                    "of bypassing access restrictions. For NFL or NBA SSL playoff-option strips, "
+                    "model each possible home game separately and verify what the seat license "
+                    "actually conveys. A 60% chance of $300 contribution and a 40% chance of a "
+                    "$200 sunk loss produces only $100 expected contribution. That value is "
+                    "not spendable cash. Injury, elimination, venue changes, and rainouts require "
+                    "fresh scenarios and human review before buying additional exposure."
+                ),
+                (
+                    "Run deterministic checks before asking a language model to explain anything. "
+                    "A repricing proposal carries the current floor, observation age, market depth, "
+                    "and maximum permitted change. Illustratively, permit reductions up to 3% per "
+                    "cycle only inside the approved floor and inventory budget; larger moves become "
+                    "review tasks. Do not average missing observations into fabricated market depth. "
+                    "Use the model to summarize why a proposal changed, extract package inclusions "
+                    "from supplier documents, and draft corporate responses from verified fields. "
+                    "Treat supplier PDFs, customer messages, and web content as untrusted material: "
+                    "they cannot change tool permissions or issue transfer instructions. Require "
+                    "structured output with permitted fields, source references, and explicit "
+                    "validation errors. Reject unsupported amenities rather than polishing them "
+                    "into convincing copy. Illustrative model pricing of $0.50 per million input "
+                    "tokens and $2 per million output tokens makes a 1,200-input, 300-output "
+                    "extraction cost $0.0012. Adding $0.0008 orchestration yields $0.002 per run, "
+                    "or $200 for 100,000 runs. Vendor subscriptions, licensed feeds, messaging, "
+                    "and human correction remain separate costs. Cache stable supplier facts, "
+                    "but invalidate transfer conditions whenever the issuer changes them."
+                ),
+                (
+                    "Transfer orchestration must respect the issuer's delivery mechanism. Rotating mobile "
+                    "barcodes are not reusable image attachments, and a screenshot is not proof of "
+                    "accepted delivery. Where an authorized transfer API exists, send through that "
+                    "interface and store the transfer identifier, recipient confirmation, and "
+                    "acceptance state. Where it does not, generate a checklist for the fulfillment "
+                    "contractor rather than automating around account security. Avoid storing raw "
+                    "barcodes in model prompts or outbound analytics. Invoice automation similarly "
+                    "matches facts rather than inferring payment from an email. Use decimal amounts, "
+                    "currency codes, invoice identifiers, bank settlement references, and allocated "
+                    "seat quantities. A $12,000 suite invoice with a $4,000 deposit and $8,000 "
+                    "balance remains partially collected until the second bank receipt clears; "
+                    "supplier payment and revenue recognition are separate entries. Retry transient "
+                    "errors with bounded exponential backoff and jitter. Route persistent failures "
+                    "into an exception queue with event-date priority. After a timeout, query the "
+                    "remote operation's status before retrying a transfer or credit. Daily "
+                    "reconciliation catches missed notifications, while a tested replay procedure "
+                    "reconstructs state from durable events without duplicating customer actions. "
+                    "An on-call person must own incidents during delivery windows."
+                ),
+            ],
+            "table": {
+                "caption": "Python and Webhook Controls for Pricing, Transfer and Settlement Recovery",
+                "headers": [
+                    "Pipeline component and authorized input source",
+                    "Deterministic processing rule before external execution",
+                    "Human escalation trigger with concrete evidence",
+                    "Recovery behavior and measurable service objective",
+                ],
+                "rows": [
+                    [
+                        "Signed marketplace order notifications from contracted integration endpoints",
+                        "Persist unique event keys before acknowledging successful receipt",
+                        "Escalate conflicting seat claims with both order timestamps",
+                        "Replay durable events and reconcile external listing states",
+                    ],
+                    [
+                        "Licensed market snapshots for controlled event inventory",
+                        "Reject stale observations and enforce contribution floor arithmetic",
+                        "Escalate requested reductions exceeding approved three percent bounds",
+                        "Freeze verified prices and request fresh market observations",
+                    ],
+                    [
+                        "NFL and NBA playoff-option contract terms and probabilities",
+                        "Separate game existence probabilities from conditional ticket contribution",
+                        "Escalate additional purchases when downside exceeds event budget",
+                        "Stop acquisitions while preserving already contracted delivery obligations",
+                    ],
+                    [
+                        "Supplier documents containing package inclusions and transfer restrictions",
+                        "Validate extracted fields against cited source document passages",
+                        "Escalate unsupported access claims and conflicting cancellation provisions",
+                        "Use verified templates instead of generated package descriptions",
+                    ],
+                    [
+                        "Authorized issuer transfer instructions for verified customer recipients",
+                        "Check operation status before retrying timed-out transfer requests",
+                        "Escalate recipient changes and unresolved issuer acceptance states",
+                        "Assign manual transfer with retained issuer confirmation evidence",
+                    ],
+                    [
+                        "Suite contracts, issued invoices, and cleared bank receipts",
+                        "Match currency, amount, reference, allocation, and remaining balance",
+                        "Escalate unexplained differences and changed supplier payment instructions",
+                        "Keep unmatched funds separate until documented reconciliation completes",
+                    ],
+                    [
+                        "Durable incident events and marketplace acknowledgement timing records",
+                        "Prioritize failures by delivery cutoff and exposed acquisition capital",
+                        "Escalate withdrawal delays beyond the tested exposure threshold",
+                        "Pause affected listings and restore from verified remote state",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Capture and authenticate",
+                    "action": "Validate the provider's documented authentication mechanism and persist the original event.",
+                    "detail": "Record receipt time, provider identifier, payload digest, and replay result without placing ticket secrets in general logs.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reserve and calculate",
+                    "action": "Apply the inventory transition and compute contribution using versioned fee and reserve rules.",
+                    "detail": "Commit the transition and outbound intent together; conflicting reservations become exceptions rather than silent overwrites.",
+                },
+                {
+                    "step": 3,
+                    "title": "Review consequential exceptions",
+                    "action": "Route purchases, exceptional prices, transfer conflicts, and changed payment instructions to the named owner.",
+                    "detail": "Show the underlying evidence, cash exposure, delivery deadline, and exact proposed action before execution.",
+                },
+                {
+                    "step": 4,
+                    "title": "Execute and reconcile",
+                    "action": "Dispatch authorized actions, verify remote status, and match settlement against the original obligation.",
+                    "detail": "Retry only safe operations; unresolved outcomes remain open until a person documents the actual external result.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Scale distribution through verified demand, not mailbox-count theater",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The mapped play multi_inbox_free_workspace_outbound_clusters proposes hundreds of "
+                    "secondary domains and subsidized Microsoft 365 developer or partner mailboxes, "
+                    "Cloudflare Email Routing, and low-cost SMTP relays. Separate arithmetic from "
+                    "eligibility and delivery claims. Three hundred mailboxes sending 25 messages "
+                    "on twenty business days produce 150,000 monthly messages; at fifteen daily "
+                    "messages they produce 90,000. Neither volume establishes primary-inbox placement. "
+                    "Developer subscriptions are for permitted development uses, and partner benefits "
+                    "have their own terms; verify current production and commercial sending rights "
+                    "before assigning any mailbox to outreach. Cloudflare Email Routing forwards "
+                    "incoming mail and is not an outbound SMTP service. Use a sending provider "
+                    "that expressly permits the intended activity, with authenticated domains and "
+                    "truthful sender identities. Avoid claiming $6–$12 retail seat savings until "
+                    "the eligible mailbox cost is documented. Two or three domains per tenant "
+                    "can simplify administration but do not authorize quota multiplication or "
+                    "restriction evasion. If eligible subsidies cannot support production, budget "
+                    "paid infrastructure and reduce volume. Never rotate identities to defeat "
+                    "recipient blocking, provider enforcement, or unsubscribe requests. The "
+                    "commercial objective is qualified corporate conversations, not a manufactured "
+                    "count of nominally free accounts."
+                ),
+                (
+                    "Replace the proposed promise of 100% SMTP catch-all verification with layered "
+                    "address checks and honest uncertainty. Syntax and domain checks identify obvious "
+                    "errors; approved verification services can flag risk, but catch-all domains do "
+                    "not prove a particular person has a deliverable mailbox. Quarantine ambiguous "
+                    "addresses or confirm them through an existing business relationship. Send "
+                    "plain-text messages without open pixels or tracking redirects, identify the "
+                    "business accurately, include a valid postal address and working opt-out, and "
+                    "synchronize suppression across every domain. Under 15 U.S.C. §7704, commercial "
+                    "email requirements apply to B2B messages too; other jurisdictions may impose "
+                    "additional permission requirements. Keep standby sender infrastructure only "
+                    "for legitimate service continuity, carrying the same identity and suppression "
+                    "records, never for bypassing restrictions. A measured funnel might produce "
+                    "150,000 messages, a 0.4% qualified-response rate, and 600 qualified responses. "
+                    "If 10% become substantive opportunities and 10% of those close, the result "
+                    "is six deals, not six hundred. At $2,000 incremental contribution each, "
+                    "that is $12,000 before campaign labor and infrastructure. Illustrative monthly "
+                    "sending and verification costs of $900 and $450 equal $0.009 per message, "
+                    "excluding mailboxes, domains, and human handling."
+                ),
+                (
+                    "Build distribution loops around evidence that gets better with each completed "
+                    "event. Programmatic pages should answer specific buyer questions about seating "
+                    "configuration, accessible entry, package inclusions, transfer timing, and "
+                    "all-in prices when an offer is displayed. Generate drafts from verified "
+                    "inventory and venue records; do not manufacture availability or mass-produce "
+                    "indistinguishable event pages. A corporate purchaser who receives accurate "
+                    "delivery and a clean invoice can introduce another department, creating a "
+                    "referral loop without exposing attendee information. Ask permission before "
+                    "publishing testimonials or identifying corporate buyers. Suite replenishment "
+                    "uses actual attendance, purchasing lead time, and budget windows to trigger "
+                    "a relevant follow-up, not inferred personal characteristics. Research and "
+                    "qualification summarize company-level fit; creative testing compares approved "
+                    "offers while preserving the same factual claims. An illustrative search "
+                    "cohort of 4,000 visits at 2% inquiry conversion yields eighty inquiries; "
+                    "25% qualified and 15% closed yields three deals. Deduplicate these against "
+                    "outbound and referral records before adding contribution. The exception "
+                    "digest reports stale pages, undelivered transfers, unanswered qualified "
+                    "inquiries, and overdue balances, linking directly to evidence. Retire "
+                    "campaigns when fully loaded contribution turns negative, even when traffic "
+                    "and message counts continue rising."
+                ),
+            ],
+            "table": {
+                "caption": "Distribution Loops with Honest Capacity Math and Non-Evasive Fallbacks",
+                "headers": [
+                    "Acquisition loop and permitted operating foundation",
+                    "Concrete unit arithmetic before contribution attribution",
+                    "Quality control and accountable human checkpoint",
+                    "Fallback when evidence or permission fails",
+                ],
+                "rows": [
+                    [
+                        "Outbound clusters using explicitly permitted production sending accounts",
+                        "Three hundred accounts times twenty-five daily sends times twenty days",
+                        "Verify license eligibility, sender identity, suppression, and recipient relevance",
+                        "Reduce throughput or purchase permitted capacity without evading restrictions",
+                    ],
+                    [
+                        "Address qualification using approved checks and documented contact sources",
+                        "Three thousand ambiguous addresses remain excluded from sending totals",
+                        "Research contractor confirms catch-all uncertainty instead of promising delivery",
+                        "Seek relationship-based confirmation or remove the address entirely",
+                    ],
+                    [
+                        "Corporate outreach measured by qualified conversations and closed deals",
+                        "Six closed deals times two thousand dollars incremental contribution",
+                        "Operator validates attribution and includes campaign labor before scaling",
+                        "Pause weak segments and correct targeting before further sending",
+                    ],
+                    [
+                        "Programmatic event pages containing verified offers and useful distinctions",
+                        "Four thousand visits produce eighty inquiries at two percent",
+                        "Operator checks availability, full pricing, and every package inclusion",
+                        "Replace expired offers with clearly described inquiry-only pages",
+                    ],
+                    [
+                        "Customer introductions following documented successful corporate event delivery",
+                        "Twenty requested introductions produce five meetings at twenty-five percent",
+                        "Account owner obtains permission before sharing names or testimonials",
+                        "Use private introductions without publishing customer or attendee identities",
+                    ],
+                    [
+                        "Suite replenishment triggered by recorded purchasing windows and demand",
+                        "Ten prior accounts produce two repeat orders at twenty percent",
+                        "Operator reconfirms suite rights, catering minimums, and deposit requirements",
+                        "Offer alternative dates without committing unsupported inventory capacity",
+                    ],
+                    [
+                        "Creative tests and exception digests using verified CRM outcomes",
+                        "Two approved variants receive equal budgets before contribution comparison",
+                        "Operator rejects unsupported claims and closes evidence-backed incident records",
+                        "Restore the verified control message and suspend defective variants",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four tactics that protect contribution during tentpole demand spikes",
+                "body": (
+                    "The strongest automation advantage is fewer expensive promises made "
+                    "against stale inventory, not faster publication of uncertain offers."
+                ),
+                "items": [
+                    "Maintain separate cutoff clocks for listing withdrawal, issuer transfer, suite catering changes, and corporate balance collection; one event start time cannot represent all four.",
+                    "Benchmark withdrawal acknowledgement under concurrent orders before broadcasting scarce Super Bowl pairs across multiple exchanges.",
+                    "For World Cup and F1 packages, version each inclusion and supplier cancellation term so an old proposal cannot silently acquire new promises.",
+                    "Keep legitimate backup sending and fulfillment arrangements tested, but preserve suppression, identity, and access restrictions during every service transition.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Reconcile automation economics to retained contribution and usable cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Reconcile the operating dashboard to Formula v2.0 before claiming leverage. "
+                    "The Conservative, Base, and Scaled gross transaction bases are $220,000, "
+                    "$1,010,000, and $1,800,000. Applying retained_share=0.4 gives $88,000, $404,000, "
+                    "and $720,000 retained revenue after modeled ticket and suite acquisition "
+                    "costs. Owner profit is $26,400, $191,900, and $468,000: respectively 12%, "
+                    "19.0%, and 26% of gross, or 30%, 47.5%, and 65% of retained revenue. "
+                    "Do not label underlying corporate event budgets, venue receipts, or ticket "
+                    "face values as additional operator revenue. For this scorecard, use the "
+                    "prescribed retained presentation; actual ASC 606 principal-versus-agent "
+                    "conclusions depend on control and contract facts, not an arbitrary 40% "
+                    "election. Normalize imported statements because an exchange payout may "
+                    "already exclude its selling fee. Reconstruct the comparable transaction "
+                    "basis once, then deduct that fee once. The matrix supplies one illustrative "
+                    "expense allocation that exactly reproduces the canonical profits; it is "
+                    "not a claim that the scorecard supplied those individual expense buckets. "
+                    "Each allocation includes selling fees, inventory slippage, cancellation "
+                    "exposure, payout carrying cost, and operating expense. Replace assumptions "
+                    "with observed amounts without changing what each metric means."
+                ),
+                (
+                    "Distinguish deductions from liquidity controls. Unsold inventory and markdown "
+                    "slippage must reflect economic losses on acquisition lots, with realized "
+                    "discounts counted once rather than deducted again after already reducing "
+                    "sales. Cancellation and postponement reserves represent expected exposure "
+                    "in this model; holding extra cash against a tail event is a separate "
+                    "treasury decision. Delayed payout is not itself an expense, but associated "
+                    "capital carrying cost is. For example, $30,000 tied up for 45 days at "
+                    "a 12% annual cost produces $443.84 using a 365-day convention. Track "
+                    "contractual settlement dates by exchange and event rather than assuming "
+                    "a universal payout window. A corporate hospitality deposit can fund "
+                    "supplier obligations only within the contract and the operator's refund "
+                    "capacity; it does not erase cancellation exposure. Stress a major event "
+                    "postponement by moving customer receipts and supplier refunds independently. "
+                    "If $40,000 becomes refundable before suppliers return $25,000, the temporary "
+                    "gap is $15,000 before other obligations. Startup capital of $10,000–$50,000 "
+                    "does not automatically support every suite commitment. Restrict concurrent "
+                    "lots and require sufficient unencumbered liquidity through the stressed "
+                    "settlement calendar before increasing purchases."
+                ),
+                (
+                    "Keep cost per automated run beside cost per resolved outcome. At $0.002 "
+                    "each, 100,000 extraction runs cost $200; if 2% need three minutes of "
+                    "human review, they add 100 hours. At an illustrative $30 hourly loaded "
+                    "contractor rate, total processing cost becomes $3,200, or $0.032 per "
+                    "run before fixed subscriptions. A cheaper model with a higher exception "
+                    "rate can therefore cost more than a stronger one. Attribute these costs "
+                    "inside operating expense, not as an extra deduction after canonical "
+                    "profit. The illustrative matrix allocates annual operating expense of "
+                    "$22,000, $70,700, and $72,000, equivalent to approximately $1,833, $5,892, "
+                    "and $6,000 monthly, within the supplied $1,800–$11,000 range. These are "
+                    "residual budgets, not evidence that all required staffing and vendor "
+                    "contracts fit. FT and C describe team counts, not standardized contractor "
+                    "hours. Validate actual staffing before adopting the Scaled case's tight "
+                    "budget. Expand from 1 FT + 2 C to 2 FT + 3 C only when measured "
+                    "exception workload and contribution support it. Publish weekly automation "
+                    "savings, double-sale incidents, overdue transfers, collected contribution, "
+                    "and cash-at-risk together; growth is scalable only when those measures "
+                    "remain coherent."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Annual Expense Bridge Reproducing Every Canonical Owner-Profit Case",
+                "headers": [
+                    "Expense or profit category and accounting treatment",
+                    "Conservative annual allocation with specific operating interpretation",
+                    "Base annual allocation with specific operating interpretation",
+                    "Scaled annual allocation with specific operating interpretation",
+                ],
+                "rows": [
+                    [
+                        "Acquisition costs deducted before the forty percent retained share",
+                        "$132,000 funds acquired tickets and contracted suite inventory",
+                        "$606,000 funds acquired tickets and contracted suite inventory",
+                        "$1,080,000 funds acquired tickets and contracted suite inventory",
+                    ],
+                    [
+                        "Exchange selling fees deducted once after normalizing payout statements",
+                        "$22,000 covers modeled exchange fees across completed ticket sales",
+                        "$80,800 covers modeled exchange fees across completed ticket sales",
+                        "$108,000 covers modeled exchange fees across completed ticket sales",
+                    ],
+                    [
+                        "Inventory slippage allowance without duplicating already recognized sales discounts",
+                        "$11,000 absorbs modeled unsold inventory and incremental markdown losses",
+                        "$30,300 absorbs modeled unsold inventory and incremental markdown losses",
+                        "$36,000 absorbs modeled unsold inventory and incremental markdown losses",
+                    ],
+                    [
+                        "Postponement and cancellation exposure charged as modeled expected losses",
+                        "$4,400 covers expected clawbacks and unrecovered event cancellation exposure",
+                        "$20,200 covers expected clawbacks and unrecovered event cancellation exposure",
+                        "$18,000 covers expected clawbacks and unrecovered event cancellation exposure",
+                    ],
+                    [
+                        "Capital carrying costs during contractual post-event payout delays",
+                        "$2,200 charges modeled capital costs while settlements remain outstanding",
+                        "$10,100 charges modeled capital costs while settlements remain outstanding",
+                        "$18,000 charges modeled capital costs while settlements remain outstanding",
+                    ],
+                    [
+                        "Operating expense includes automation, contractors, distribution, and other overhead",
+                        "$22,000 supports the modeled one employee plus two contractors",
+                        "$70,700 supports the modeled one employee plus two contractors",
+                        "$72,000 supports the modeled two employees plus three contractors",
+                    ],
+                    [
+                        "Annual owner profit after every preceding modeled expense deduction",
+                        "$26,400 equals twelve percent of the gross transaction basis",
+                        "$191,900 equals nineteen percent of the gross transaction basis",
+                        "$468,000 equals twenty-six percent of the gross transaction basis",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Automate the repeatable movement of verified facts, never the invention of inventory, rights, or cash.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Choose one contracted inventory authority, document supported exchange adapters, and test concurrent-order holds plus withdrawal reconciliation before live broadcasting.",
+        "Create separate resale, suite-splitting, and tentpole hospitality ledgers with acquisition rights, all-in selling prices, supplier obligations, and contractual payout dates.",
+        "Implement authenticated event ingestion, idempotent state transitions, bounded repricing, authorized transfer handling, and evidence-backed invoice matching.",
+        "Baseline repetitive labor and measure net savings after exception handling; require at least 70% demonstrated removal before reporting the automation target achieved.",
+        "Validate production email rights and lawful recipient sourcing, centralize suppression, remove tracking pixels, and measure qualified contribution instead of mailbox volume.",
+        "Reproduce all three canonical profit bridges, stress delayed settlements and refunds, and expand staffing or exposure only after actual costs fit the selected case.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to ticket sales",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
+            "relevance": (
+                "The BOTS Act prohibits circumvention of covered ticketing security measures "
+                "and specified resale of tickets obtained through that circumvention. "
+                "Keep automation on authorized inventory, listing, and fulfillment interfaces."
+            ),
+        },
+        {
+            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
+            "relevance": (
+                "For covered live-event ticket offers, implement the required total-price "
+                "presentation and accurate fee disclosures, applying the rule's definitions "
+                "and treatment of permitted exclusions."
+            ),
+        },
+        {
+            "title": "N.Y. Arts & Cult. Aff. Law §25.07 — Ticket reseller licensing",
+            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
+            "relevance": (
+                "Determine whether New York ticket-reseller licensing requirements apply "
+                "to the operation and retain the required license records before covered sales."
+            ),
+        },
+        {
+            "title": "N.Y. Arts & Cult. Aff. Law §25.07-A — Ticket price disclosure",
+            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07-A",
+            "relevance": (
+                "Build applicable total-cost and fee presentation requirements into offer "
+                "templates and checkout tests rather than appending charges late in the purchase."
+            ),
+        },
+        {
+            "title": "15 U.S.C. §7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": (
+                "Commercial email workflows require accurate transmission information, "
+                "nondeceptive subjects, required sender disclosures, a working opt-out "
+                "mechanism, and timely honoring of opt-out requests across sending accounts."
+            ),
+        },
+    ],
+}

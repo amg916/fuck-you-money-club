@@ -1,0 +1,980 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "complete-operating-process-production-blueprint-90-day-cohort",
+    "question_prompt": "How does an operator execute live-event, super bowl & vip ticket brokering end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "SkyBox Inventory Locks, Ticket-Transfer Evidence, SQLite Settlement Controls, BOTS Act Boundaries & a Cash-Reconciled Base Cohort",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #43, Live-Event, Super Bowl & VIP Ticket Brokering, ranks #02 of 43 "
+        "with a 95/100 Money-to-Manpower Score. This chapter maps 12 operating plays "
+        "into acquisition, inventory control, delivery, settlement, and exception recovery. "
+        "It separates exchange resale, suite seat-splitting, and tentpole hospitality "
+        "rather than treating every booking as an immediately collectible ticket sale. "
+        "Six copy-pasteable engineering modules establish transactional local ownership, "
+        "idempotent effects, and balanced ledger entries; remote uncertainty remains "
+        "explicitly quarantined. A worked 90-day cohort produces $252,500 gross billings, "
+        "$101,000 retained spread, and $47,975 owner profit while exposing settlement "
+        "float. Annual Conservative, Base, and Scaled owner profits reconcile to "
+        "$26,400, $191,900, and $468,000 respectively. The objective is collectible "
+        "spread supported by evidence, not impressive listings or borrowed buying power."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$220,000",
+            "context": "Annual gross basis; $88,000 retained spread at 40%",
+            "note": "12% gross-basis margin; 30% retained margin; $26,400 owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,010,000",
+            "context": "Annual gross basis; $404,000 retained spread at 40%",
+            "note": "19.0% gross-basis margin; 47.5% retained margin; $191,900 owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,800,000",
+            "context": "Annual gross basis; $720,000 retained spread at 40%",
+            "note": "26% gross-basis margin; 65% retained margin; $468,000 owner profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Qualify transferable inventory before committing capital or publishing availability",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start intake with the event identifier, venue, scheduled date, section, row, "
+                    "seat range, seller identity, acquisition document, transfer method, and supplier "
+                    "payment deadline. A screenshot is supporting material, not proof of a transferable "
+                    "entitlement. Obtain the issuer account record and the governing resale terms; "
+                    "confirm whether parking, catering, lounge admission, and guest naming travel with "
+                    "the ticket. Normalize event changes through an internal event identifier rather "
+                    "than matching display names. SkyBox, Automatiq, and Logitix are candidate operating "
+                    "rails, not interchangeable promises of atomic execution across exchanges. Verify "
+                    "the actual integration, supported inventory types, delivery deadlines, and hold "
+                    "behavior before enabling StubHub, Vivid Seats, SeatGeek, or TickPick distribution. "
+                    "The owner approves capital exposure; one contractor checks inventory evidence and "
+                    "another handles customer delivery and invoice matching. Keep credential access "
+                    "separate from price authority. A duplicate physical seat must resolve to the same "
+                    "inventory key even when a supplier changes their listing identifier. For general "
+                    "admission, assign controlled entitlement units from a documented quantity. Decline "
+                    "stock that cannot be uniquely controlled, and preserve the rejected evidence so "
+                    "the same supplier cannot reintroduce it through another sales channel."
+                ),
+                (
+                    "Map twelve plays into three execution families and one ancillary payment workflow: "
+                    "multi-exchange ticket resale, stadium suite seat-splitting, Super Bowl hospitality, "
+                    "World Cup hospitality, F1 hospitality, Masters hospitality, Final Four hospitality, "
+                    "sponsor-allotment bundling, NFL SSL playoff-option strips, NBA SSL playoff-option "
+                    "strips, corporate group allocations, and agency_ad_spend_card_multiplier_rebate_cycling. "
+                    "SSL means the relevant seat-license arrangement; verify the actual league, venue, "
+                    "and contract vocabulary rather than assuming every license conveys identical rights. "
+                    "For exchange resale, a $1,000 sale against $600 acquisition leaves $400 before "
+                    "selling costs and reserves. For suite splitting, a $12,000 suite sold as twenty "
+                    "$1,000 entitlements creates $8,000 acquisition spread only if individual resale "
+                    "and admission are permitted. For tentpole hospitality, a $25,000 package with "
+                    "$15,000 direct fulfillment cost also starts at $10,000 spread, but hotel, transport, "
+                    "and catering suppliers can demand deposits before ticket delivery. These examples "
+                    "illustrate the common 40% retained-share assumption; they do not establish identical "
+                    "risk. Exchange settlement may follow the event, a suite invoice may collect "
+                    "before entry, and corporate procurement can pay after delivery. Maintain separate "
+                    "cash calendars and supplier remedies for all three."
+                ),
+                (
+                    "Score each opportunity against a documented exit price, transferable quantity, "
+                    "cash lockup, cancellation exposure, and replacement availability. Use observed "
+                    "executable comparables after exchange charges, not the highest visible asking "
+                    "price. A ten-seat block bought for $6,000 and sold for $10,000 has only $1,900 "
+                    "modeled profit after $800 selling fees, $400 inventory slippage, $200 event-risk "
+                    "provision, $100 settlement carrying cost, and $600 allocated operating expense. "
+                    "A contractual double-sale remedy reaching 200% of a $1,000 order can overwhelm "
+                    "several clean transactions; read each venue and marketplace contract rather than "
+                    "assuming that percentage applies universally. Federal 15 U.S.C. §45c prohibits "
+                    "covered ticket-limit and security-measure circumvention and certain resale of "
+                    "tickets obtained through it. Approved post-acquisition POS automation does not "
+                    "authorize queue bypass. Screen applicable reseller licensing, bonding, refund, "
+                    "and disclosure requirements, including New York Arts and Cultural Affairs Law "
+                    "Article 25. Apply 16 CFR Part 464 to covered live-event price displays. Record "
+                    "mandatory charges in the displayed total, retain the customer-facing offer, and "
+                    "stop an acquisition when transfer restrictions make the modeled exit impossible. "
+                    "A smaller verified book beats a large book requiring emergency replacement purchases."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve Mapped Plays: Acquisition Spread, Settlement Exposure & Executable Fallbacks",
+                "headers": [
+                    "Mapped operating play and inventory boundary",
+                    "Concrete unit economics before residual expenses",
+                    "Capital timing and documented settlement exposure",
+                    "Failure trigger and practical operating fallback",
+                ],
+                "rows": [
+                    [
+                        "Multi-exchange ticket resale using one authoritative inventory owner",
+                        "$1,000 sale less $600 acquisition produces $400 retained spread",
+                        "Fund acquisition first; verify each exchange's post-event payout schedule",
+                        "Pause additional venues whenever atomic acceptance protection cannot be demonstrated",
+                    ],
+                    [
+                        "Stadium suite seat-splitting under explicit individual admission rights",
+                        "Twenty $1,000 admissions less $12,000 suite acquisition yields $8,000 spread",
+                        "Suite deposits precede attendance; corporate collections may precede supplier balances",
+                        "Sell the intact suite when individual entitlement resale is prohibited",
+                    ],
+                    [
+                        "Super Bowl hospitality and World Cup hospitality with transferable rights",
+                        "Each $25,000 package less $15,000 direct fulfillment yields $10,000 spread",
+                        "Supplier deposits precede named guests; cancellation rights vary by component",
+                        "Use authorized transferable packages; refund or replace under documented terms",
+                    ],
+                    [
+                        "F1 hospitality, Masters hospitality, and Final Four hospitality packages",
+                        "Each $5,000 package less $3,000 fulfillment starts with $2,000 spread",
+                        "Admissions, lodging, and transport can follow three separate settlement calendars",
+                        "Remove nontransferable components; offer only substitute benefits accepted by customers",
+                    ],
+                    [
+                        "Sponsor-allotment bundling and corporate group allocations with written release authority",
+                        "Ten $2,000 guest packages less $12,000 fulfillment yield $8,000 spread",
+                        "Sponsor release and corporate purchase order must precede irreversible commitments",
+                        "Reject allotments lacking resale authority; reduce quantity before supplier deposits",
+                    ],
+                    [
+                        "NFL SSL playoff-option strips and NBA SSL playoff-option strips",
+                        "Four exercised admissions sold for $4,000 against $2,400 yield $1,600 spread",
+                        "Include option premiums and exercise payments; eliminated teams produce different outcomes",
+                        "Cap premiums separately; let uneconomic options expire without forced exercise",
+                    ],
+                    [
+                        "agency_ad_spend_card_multiplier_rebate_cycling using genuine authorized agency advertising purchases",
+                        "$20,000 eligible spend at 2% yields $400 before $300 deductions",
+                        "Client principal remains pass-through; reward collection can lag card payment",
+                        "Switch to client-direct billing or prefunded approved agency payment terms",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the spread before optimizing the sale price",
+                "body": (
+                    "Veteran operators treat entitlement evidence, supplier reversibility, and "
+                    "settlement timing as inventory attributes rather than administrative cleanup."
+                ),
+                "items": [
+                    "Test one controlled entitlement through the actual POS connector and confirm removal acknowledgments on every enabled exchange before increasing quantity.",
+                    "For suites, price catering minimums, service charges, parking allocations, and unsold admissions separately; a full-suite invoice can hide the true per-guest floor.",
+                    "For playoff strips, maintain probability-weighted premium exposure separately from exercised-ticket cost and never assume elimination returns every deposit.",
+                    "For tentpoles, obtain written sponsor release authority and component-level cancellation terms before collecting a corporate deposit against a promised package.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Build a transactional inventory core and an auditable settlement ledger",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use the six modules below as an executable SQLite reference, not as a claim "
+                    "that a database can make unrelated marketplaces atomic. Copy their code cells "
+                    "in order into a Python module; create a connection with open_db and run "
+                    "qa_checks to exercise the local invariants. All amounts are integer cents, "
+                    "all inventory writes acquire BEGIN IMMEDIATE, and every physical entitlement "
+                    "has a stable source key. A reservation changes the lot and creates its order "
+                    "and transfer intent in one transaction. Repeated requests return the same order "
+                    "only when their business fields agree. Conflicting reuse fails explicitly. "
+                    "SQLite serializes competing writers across connections to the same database; "
+                    "do not distribute independent database copies to contractors. For PostgreSQL, "
+                    "replace the writer transaction with row locking and preserve every unique "
+                    "constraint. Busy errors are safe failures to retry using the original request "
+                    "key, never instructions to allocate a second lot. This reference avoids local "
+                    "double-allocation races; remote exchange acceptance remains a separate "
+                    "integration requirement. Without an authoritative cross-channel hold mechanism, "
+                    "publish the entitlement on one executable channel and keep other channels "
+                    "inactive rather than claiming asynchronous delisting eliminates simultaneous fills."
+                ),
+                (
+                    "Verification records three explicit findings: ownership evidence, permitted transfer, "
+                    "and accepted transaction terms. The workflow then advances through verified, held, "
+                    "transferred, and settled states. The held state is an internal inventory "
+                    "reservation, not regulated escrow; an actual escrow provider requires its own "
+                    "agreement, account structure, and independently verified release evidence. Keep "
+                    "customer deposits in a liability account until the relevant performance obligation "
+                    "is satisfied. The dispatcher claims an outbox item before calling an external "
+                    "adapter and never holds a database transaction open during a network request. "
+                    "The adapter must use the supplied effect key with a provider-supported "
+                    "idempotency mechanism. If a provider lacks that mechanism, use the outbox as "
+                    "a manual execution queue with independent delivery confirmation. A timeout or "
+                    "process crash leaves an ambiguous operation for investigation, not automatic "
+                    "redelivery. Resolve it using the issuer or marketplace transfer record, matching "
+                    "the recipient and entitlement. No finite local code can prove remote exactly-once "
+                    "execution without cooperation from that remote system. The production objective "
+                    "is therefore single local ownership, durable intent, evidence-backed completion, "
+                    "and a fail-closed response whenever external execution cannot be established."
+                ),
+                (
+                    "The ledger stores balanced debit-credit pairs with unique effect keys, preventing "
+                    "duplicate cash recognition while allowing a transaction to contain several pairs. "
+                    "It is an operational subledger, not an automatic determination of presentation "
+                    "under ASC 606. Assess principal-versus-agent status for each promise; the scorecard's "
+                    "40% retained share is its analytical net contribution basis, not permission to "
+                    "net every contract in statutory accounts. Match bank deposits to exchange "
+                    "statements, order identifiers, payout fees, and provider transaction identifiers. "
+                    "A partially paid order remains delivered until cumulative receipts equal its "
+                    "documented net due. Record fee changes through a controlled adjustment process "
+                    "before settlement rather than silently modifying historical entries. Post refunds "
+                    "and reversals with new effect keys that reference the original entry; never "
+                    "erase the first record. Separate available cash, restricted event reserves, "
+                    "exchange receivables, supplier deposits, customer liabilities, and inventory "
+                    "writeoffs. The reconciliation view exposes order balances and account balances "
+                    "without converting unpaid receivables into spendable money. Production deployment "
+                    "also needs authenticated access, encrypted backups, restore tests, statement "
+                    "imports, monitored exception queues, and read-only reporting credentials. Those "
+                    "controls surround this reference and must be tested against the actual selected "
+                    "POS and exchange agreements."
+                ),
+            ],
+            "table": {
+                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
+                "headers": [
+                    "Copy order and executable module purpose",
+                    "Copy-pasteable Python and SQLite reference implementation",
+                    "Invariant enforced inside the local transaction boundary",
+                    "Production integration requirement and exception handling",
+                ],
+                "rows": [
+                    [
+                        "Module one establishes schema, connections, and serialized write transactions",
+                        '''import json
+import sqlite3
+from contextlib import contextmanager
+
+SCHEMA = """
+CREATE TABLE IF NOT EXISTS lots (
+    lot_id TEXT PRIMARY KEY NOT NULL,
+    source_key TEXT NOT NULL UNIQUE,
+    cost_cents INTEGER NOT NULL CHECK(cost_cents >= 0),
+    state TEXT NOT NULL CHECK(
+        state IN ('INTAKE','VERIFIED','HELD','TRANSFERRED','SETTLED')
+    ),
+    evidence TEXT NOT NULL DEFAULT '{}'
+);
+CREATE TABLE IF NOT EXISTS orders (
+    order_id TEXT PRIMARY KEY NOT NULL,
+    request_key TEXT NOT NULL UNIQUE,
+    lot_id TEXT NOT NULL UNIQUE REFERENCES lots(lot_id),
+    price_cents INTEGER NOT NULL CHECK(price_cents > 0),
+    net_due_cents INTEGER NOT NULL CHECK(
+        net_due_cents > 0 AND net_due_cents <= price_cents
+    ),
+    recipient TEXT NOT NULL,
+    status TEXT NOT NULL CHECK(
+        status IN ('HELD','DELIVERED','SETTLED')
+    )
+);
+CREATE TABLE IF NOT EXISTS outbox (
+    effect_key TEXT PRIMARY KEY NOT NULL,
+    order_id TEXT NOT NULL UNIQUE REFERENCES orders(order_id),
+    payload TEXT NOT NULL,
+    state TEXT NOT NULL CHECK(
+        state IN ('PENDING','SENDING','AMBIGUOUS','DONE')
+    ),
+    receipt TEXT UNIQUE
+);
+CREATE TABLE IF NOT EXISTS ledger (
+    effect_key TEXT PRIMARY KEY NOT NULL,
+    order_id TEXT NOT NULL REFERENCES orders(order_id),
+    debit_account TEXT NOT NULL,
+    credit_account TEXT NOT NULL,
+    amount_cents INTEGER NOT NULL CHECK(amount_cents > 0),
+    CHECK(debit_account <> credit_account)
+);
+CREATE TRIGGER IF NOT EXISTS ledger_no_update
+BEFORE UPDATE ON ledger
+BEGIN
+    SELECT RAISE(ABORT, 'Append reversing entries instead');
+END;
+CREATE TRIGGER IF NOT EXISTS ledger_no_delete
+BEFORE DELETE ON ledger
+BEGIN
+    SELECT RAISE(ABORT, 'Preserve original ledger entries');
+END;
+"""
+
+def open_db(path):
+    db = sqlite3.connect(path, isolation_level=None, timeout=10)
+    db.row_factory = sqlite3.Row
+    db.execute("PRAGMA foreign_keys = ON")
+    db.execute("PRAGMA journal_mode = WAL")
+    db.execute("PRAGMA busy_timeout = 10000")
+    db.executescript(SCHEMA)
+    return db
+
+@contextmanager
+def atomic(db):
+    db.execute("BEGIN IMMEDIATE")
+    try:
+        yield
+    except BaseException:
+        db.rollback()
+        raise
+    else:
+        db.commit()
+
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+def cents(value, positive=False):
+    require(type(value) is int, "Use integer cents")
+    require(value > 0 if positive else value >= 0,
+            "Amount outside permitted range")
+    return value
+''',
+                        "Unique source keys and lot reservations prevent duplicate local entitlement allocation",
+                        "Use one authoritative database; back up and restore before enabling live operations",
+                    ],
+                    [
+                        "Module two normalizes intake and scores fully costed entitlement economics",
+                        '''def intake(db, lot_id, source_key, cost_cents):
+    cents(cost_cents)
+    require(bool(lot_id and source_key), "Supply stable identifiers")
+    with atomic(db):
+        old = db.execute(
+            "SELECT * FROM lots WHERE source_key = ?", (source_key,)
+        ).fetchone()
+        if old:
+            require(old["lot_id"] == lot_id and
+                    old["cost_cents"] == cost_cents,
+                    "Source key reused with conflicting inventory")
+            return old["lot_id"]
+        db.execute(
+            "INSERT INTO lots(lot_id,source_key,cost_cents,state) "
+            "VALUES(?,?,?,'INTAKE')",
+            (lot_id, source_key, cost_cents),
+        )
+    return lot_id
+
+def score(price, acquisition, sell_fee, slippage,
+          event_reserve, carrying_cost, allocated_opex):
+    amounts = (price, acquisition, sell_fee, slippage,
+               event_reserve, carrying_cost, allocated_opex)
+    for amount in amounts:
+        cents(amount)
+    require(price > 0, "Exit price must be positive")
+    profit = price - sum(amounts[1:])
+    return {
+        "retained_cents": price - acquisition,
+        "profit_cents": profit,
+        "gross_margin": profit / price,
+        "eligible_on_economics": profit > 0,
+    }
+''',
+                        "Repeated intake preserves original cost and identity instead of creating extra stock",
+                        "Derive source keys from entitlement identity; economic eligibility never substitutes for verification",
+                    ],
+                    [
+                        "Module three verifies evidence and atomically reserves delivery entitlement",
+                        '''def verify(db, lot_id, evidence):
+    required = ("ownership", "transfer", "terms")
+    require(all(evidence.get(key) is True for key in required),
+            "Three affirmative verification findings required")
+    require(bool(evidence.get("document_ref")),
+            "Attach a durable evidence reference")
+    encoded = json.dumps(evidence, sort_keys=True)
+    with atomic(db):
+        row = db.execute(
+            "SELECT state,evidence FROM lots WHERE lot_id=?", (lot_id,)
+        ).fetchone()
+        require(row is not None, "Inventory record absent")
+        if row["state"] == "VERIFIED":
+            require(row["evidence"] == encoded,
+                    "Verification replay changed evidence")
+            return
+        require(row["state"] == "INTAKE", "Inventory already committed")
+        db.execute(
+            "UPDATE lots SET state='VERIFIED',evidence=? WHERE lot_id=?",
+            (encoded, lot_id),
+        )
+
+def reserve(db, order_id, request_key, lot_id,
+            price_cents, net_due_cents, recipient):
+    cents(price_cents, True)
+    cents(net_due_cents, True)
+    require(net_due_cents <= price_cents, "Net due exceeds price")
+    require(bool(order_id and request_key and recipient),
+            "Order identifiers and recipient required")
+    expected = (order_id, lot_id, price_cents, net_due_cents, recipient)
+    with atomic(db):
+        old = db.execute(
+            "SELECT order_id,lot_id,price_cents,net_due_cents,recipient "
+            "FROM orders WHERE request_key=?", (request_key,)
+        ).fetchone()
+        if old:
+            require(tuple(old) == expected, "Conflicting reservation replay")
+            return order_id
+        changed = db.execute(
+            "UPDATE lots SET state='HELD' "
+            "WHERE lot_id=? AND state='VERIFIED'", (lot_id,)
+        ).rowcount
+        require(changed == 1, "Inventory unavailable for allocation")
+        db.execute(
+            "INSERT INTO orders VALUES(?,?,?,?,?,?,'HELD')",
+            (order_id, request_key, lot_id, price_cents,
+             net_due_cents, recipient),
+        )
+        payload = json.dumps({
+            "order_id": order_id,
+            "lot_id": lot_id,
+            "recipient": recipient,
+        }, sort_keys=True)
+        db.execute(
+            "INSERT INTO outbox VALUES(?,?,?,'PENDING',NULL)",
+            ("transfer:" + order_id, order_id, payload),
+        )
+    return order_id
+''',
+                        "Reservation, order creation, and durable transfer intent either commit together or disappear",
+                        "Held means internal reservation; actual escrow release requires separately verified provider evidence",
+                    ],
+                    [
+                        "Module four dispatches one durable intent and quarantines uncertain delivery",
+                        '''def confirm_transfer(db, effect_key, receipt):
+    require(isinstance(receipt, str) and bool(receipt.strip()),
+            "Durable provider receipt required")
+    with atomic(db):
+        row = db.execute(
+            "SELECT * FROM outbox WHERE effect_key=?", (effect_key,)
+        ).fetchone()
+        require(row is not None, "Transfer intent absent")
+        if row["state"] == "DONE":
+            require(row["receipt"] == receipt, "Conflicting delivery evidence")
+            return
+        require(row["state"] in ("SENDING", "AMBIGUOUS"),
+                "Transfer has not been claimed")
+        db.execute(
+            "UPDATE outbox SET state='DONE',receipt=? WHERE effect_key=?",
+            (receipt, effect_key),
+        )
+        db.execute(
+            "UPDATE orders SET status='DELIVERED' WHERE order_id=?",
+            (row["order_id"],),
+        )
+        db.execute(
+            "UPDATE lots SET state='TRANSFERRED' WHERE lot_id="
+            "(SELECT lot_id FROM orders WHERE order_id=?)",
+            (row["order_id"],),
+        )
+
+def dispatch_one(db, send):
+    with atomic(db):
+        row = db.execute(
+            "SELECT * FROM outbox WHERE state='PENDING' "
+            "ORDER BY effect_key LIMIT 1"
+        ).fetchone()
+        if row is None:
+            return None
+        key = row["effect_key"]
+        db.execute(
+            "UPDATE outbox SET state='SENDING' WHERE effect_key=?", (key,)
+        )
+        payload = json.loads(row["payload"])
+    try:
+        receipt = send(key, payload)
+        confirm_transfer(db, key, receipt)
+    except Exception:
+        with atomic(db):
+            db.execute(
+                "UPDATE outbox SET state='AMBIGUOUS' "
+                "WHERE effect_key=? AND state='SENDING'", (key,)
+            )
+        raise
+    return key
+''',
+                        "Concurrent workers cannot claim the same pending intent or silently resend ambiguous operations",
+                        "Adapter supplies remote idempotency; recover stalled sending records through verified provider lookup",
+                    ],
+                    [
+                        "Module five posts balanced entries and exposes settlement reconciliation views",
+                        '''RECONCILIATION_SQL = """
+CREATE VIEW IF NOT EXISTS account_balances AS
+SELECT account, SUM(delta_cents) AS debit_balance_cents
+FROM (
+    SELECT debit_account AS account, amount_cents AS delta_cents
+    FROM ledger
+    UNION ALL
+    SELECT credit_account AS account, -amount_cents AS delta_cents
+    FROM ledger
+)
+GROUP BY account;
+CREATE VIEW IF NOT EXISTS settlement_reconciliation AS
+SELECT o.order_id, o.status, o.net_due_cents,
+       COALESCE(SUM(CASE
+           WHEN l.debit_account='cash'
+            AND l.credit_account='exchange_receivable'
+           THEN l.amount_cents ELSE 0 END), 0) AS received_cents,
+       o.net_due_cents - COALESCE(SUM(CASE
+           WHEN l.debit_account='cash'
+            AND l.credit_account='exchange_receivable'
+           THEN l.amount_cents ELSE 0 END), 0) AS outstanding_cents
+FROM orders o
+LEFT JOIN ledger l ON l.order_id=o.order_id
+GROUP BY o.order_id, o.status, o.net_due_cents;
+"""
+
+def post_pair(db, key, order_id, debit, credit, amount):
+    require(db.in_transaction, "Post inside an atomic transaction")
+    cents(amount, True)
+    require(bool(key and debit and credit), "Entry identifiers required")
+    expected = (order_id, debit, credit, amount)
+    old = db.execute(
+        "SELECT order_id,debit_account,credit_account,amount_cents "
+        "FROM ledger WHERE effect_key=?", (key,)
+    ).fetchone()
+    if old:
+        require(tuple(old) == expected, "Conflicting ledger replay")
+        return False
+    db.execute(
+        "INSERT INTO ledger VALUES(?,?,?,?,?)",
+        (key, order_id, debit, credit, amount),
+    )
+    return True
+
+def receive_cash(db, provider, transaction_id, order_id, amount):
+    cents(amount, True)
+    key = "cash:" + json.dumps([provider, transaction_id],
+                               separators=(",", ":"))
+    with atomic(db):
+        order = db.execute(
+            "SELECT * FROM orders WHERE order_id=?", (order_id,)
+        ).fetchone()
+        require(order is not None, "Order absent")
+        require(order["status"] in ("DELIVERED", "SETTLED"),
+                "Delivery evidence required before event settlement")
+        fresh = post_pair(
+            db, key, order_id, "cash", "exchange_receivable", amount
+        )
+        if not fresh:
+            return
+        received = db.execute(
+            "SELECT COALESCE(SUM(amount_cents),0) FROM ledger "
+            "WHERE order_id=? AND debit_account='cash' "
+            "AND credit_account='exchange_receivable'", (order_id,)
+        ).fetchone()[0]
+        require(received <= order["net_due_cents"],
+                "Receipt exceeds documented settlement entitlement")
+        if received == order["net_due_cents"]:
+            db.execute(
+                "UPDATE orders SET status='SETTLED' WHERE order_id=?",
+                (order_id,),
+            )
+            db.execute(
+                "UPDATE lots SET state='SETTLED' WHERE lot_id=?",
+                (order["lot_id"],),
+            )
+''',
+                        "Immutable balanced pairs reject conflicting receipts and prevent excess settlement allocation",
+                        "Book receivable recognition separately; map pooled payouts to documented order-level receipt identifiers",
+                    ],
+                    [
+                        "Module six exercises replay, double-allocation, delivery, and partial-settlement invariants",
+                        '''def qa_checks():
+    db = open_db(":memory:")
+    try:
+        db.executescript(RECONCILIATION_SQL)
+        intake(db, "lot-1", "issuer:event:section:row:seat", 60000)
+        intake(db, "lot-1", "issuer:event:section:row:seat", 60000)
+        verify(db, "lot-1", {
+            "ownership": True,
+            "transfer": True,
+            "terms": True,
+            "document_ref": "evidence-register-001",
+        })
+        reserve(db, "order-1", "request-1", "lot-1",
+                100000, 92000, "customer-record-001")
+        reserve(db, "order-1", "request-1", "lot-1",
+                100000, 92000, "customer-record-001")
+        rejected = False
+        try:
+            reserve(db, "order-2", "request-2", "lot-1",
+                    100000, 92000, "customer-record-002")
+        except ValueError:
+            rejected = True
+        require(rejected, "Duplicate entitlement allocation accepted")
+        require(dispatch_one(
+            db, lambda key, payload: "test-provider-receipt-001"
+        ) == "transfer:order-1", "Transfer intent missing")
+        require(dispatch_one(db, lambda key, payload: "") is None,
+                "Completed transfer was dispatched again")
+        with atomic(db):
+            post_pair(db, "recognition:order-1", "order-1",
+                      "exchange_receivable", "gross_sales", 100000)
+            post_pair(db, "fee:order-1", "order-1",
+                      "exchange_fees", "exchange_receivable", 8000)
+        receive_cash(db, "exchange-test", "payout-1", "order-1", 46000)
+        receive_cash(db, "exchange-test", "payout-1", "order-1", 46000)
+        status = db.execute(
+            "SELECT status FROM orders WHERE order_id='order-1'"
+        ).fetchone()[0]
+        require(status == "DELIVERED", "Partial payout closed order")
+        receive_cash(db, "exchange-test", "payout-2", "order-1", 46000)
+        row = db.execute(
+            "SELECT * FROM settlement_reconciliation"
+        ).fetchone()
+        require(row["outstanding_cents"] == 0, "Settlement mismatch")
+        require(row["status"] == "SETTLED", "Order not settled")
+        balance = db.execute(
+            "SELECT COALESCE(SUM(debit_balance_cents),0) "
+            "FROM account_balances"
+        ).fetchone()[0]
+        require(balance == 0, "Ledger does not balance")
+        require(score(100000, 60000, 8000, 4000, 2000,
+                      1000, 6000)["profit_cents"] == 19000,
+                "Unit economics mismatch")
+        return {"local_checks": "passed", "order_count": 1}
+    finally:
+        db.close()
+''',
+                        "Executable checks verify replay safety, reservation exclusion, balanced posting, and partial collection",
+                        "Run additional multi-process and adapter fault tests; this text does not claim executed verification",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before accepting an executable order",
+                "body": (
+                    "Keep the entitlement inactive until evidence, local exclusivity, remote "
+                    "execution behavior, and liquidity all pass their respective checks."
+                ),
+                "items": [
+                    "Verify issuer ownership, permitted resale, guest naming, delivery deadline, and all included benefits against stored source documents.",
+                    "Run duplicate reservation and conflicting idempotency-key tests against the actual database configuration; require one accepted allocation only.",
+                    "Demonstrate remote hold and transfer behavior during timeout tests; use a single executable sales channel when cross-channel protection is absent.",
+                    "Stress the cash forecast for postponed payouts and a full replacement purchase; retain enough accessible funds without spending customer liabilities.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Walk a 90-day cohort from qualified leads to profit and available cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The Worked 90-Day Cohort Walk models an established operator entering a fresh "
+                    "quarter with $50,000 available cash, no opening receivables, and no opening "
+                    "inventory. It is a run-rate demonstration, not a promise that a new entrant "
+                    "immediately reaches these volumes. Month 1 receives 150 leads, rejects 30, "
+                    "and converts 30 of the remaining 120 into $60,000 of fulfilled orders. "
+                    "Month 2 receives 200 leads, rejects 40, and closes 40 orders for $85,000. "
+                    "Month 3 receives 250 leads, rejects 50, and closes 50 orders for $107,500. "
+                    "Average order values are $2,000, $2,125, and $2,150 respectively. The 90, "
+                    "120, and 150 qualified nonbuyers remain unsold opportunities, not revenue "
+                    "or purchased inventory. Rejected leads consume intake labor already covered "
+                    "by operating expense. Purchased entitlements that fail to clear are a "
+                    "different category and appear in inventory slippage. All modeled event "
+                    "performance occurs within its assigned month; supplier acquisition payments "
+                    "also occur within that month. A real Super Bowl or World Cup booking "
+                    "may span several quarters, so the operator must substitute actual contract "
+                    "dates before committing funds."
+                ),
+                (
+                    "Gross billings total $252,500 and acquisition cost equals 60%, or $151,500, "
+                    "leaving $101,000 retained spread. Deduct $20,200 exchange and selling fees, "
+                    "$10,100 incremental inventory slippage, $5,050 cancellation and clawback "
+                    "provision, $2,525 settlement carrying cost, and $15,150 operating expense. "
+                    "The resulting $47,975 owner profit annualizes to $191,900. These illustrative "
+                    "expense buckets reconcile the canonical Base total; they are not asserted "
+                    "vendor fee schedules. Slippage includes additional failed-stock cost and "
+                    "writeoffs beyond the acquisition cost assigned to fulfilled orders. Do not "
+                    "deduct a markdown twice if its lower realized sale price already reduced "
+                    "gross billings. The risk provision is a modeled expense with a matching "
+                    "liability; the cohort segregates an equal cash amount into a restricted "
+                    "reserve. That cash movement is not a second expense. Carrying cost is "
+                    "a paid funding charge in this illustration, not an imputed owner capital "
+                    "return. Operating expense is $5,050 each month and covers software, "
+                    "contractor support, payment administration, and ordinary overhead. Owner "
+                    "profit is the scorecard residual before any separate owner distribution, "
+                    "with no additional owner salary silently deducted."
+                ),
+                (
+                    "Assume half of each month's after-fee exchange entitlement reaches the bank "
+                    "during that month after the relevant events, and half arrives the following "
+                    "month. This is a cohort timing assumption, not a universal exchange promise. "
+                    "After-fee entitlements are $55,200, $78,200, and $98,900; bank receipts "
+                    "therefore equal $27,600, $66,700, and $88,550. Cash uses, including reserve "
+                    "segregation, equal $45,250, $62,000, and $77,075. Available cash ends "
+                    "the months at $32,350, $37,050, and $48,525. The quarter's cumulative "
+                    "available-cash movement is negative $1,475 despite positive profit. At day "
+                    "90, add $49,450 exchange receivables and $5,050 restricted cash to the "
+                    "$48,525 available balance; subtract the $5,050 risk liability and the "
+                    "$50,000 opening capital. The result is exactly $47,975 earned profit. "
+                    "Collecting the remaining receivable during Month 4 would bring available "
+                    "cash to $97,975 before new trading or distributions. Intramonth supplier "
+                    "deadlines can create deeper troughs than these month-end balances show. "
+                    "Test a daily schedule and a postponement case before approving purchases, "
+                    "and preserve the risk reserve until the underlying refund exposure expires."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Cohort measure and precise accounting interpretation",
+                    "Month 1 activity and closing position",
+                    "Month 2 activity and closing position",
+                    "Month 3 activity and closing position",
+                    "Quarter reconciliation and annual Base linkage",
+                ],
+                "rows": [
+                    [
+                        "Lead intake, evidence scrubs, and fulfilled order conversion",
+                        "150 leads; 30 scrubbed; 120 qualified; 30 orders fulfilled",
+                        "200 leads; 40 scrubbed; 160 qualified; 40 orders fulfilled",
+                        "250 leads; 50 scrubbed; 200 qualified; 50 orders fulfilled",
+                        "600 leads; 120 scrubbed; 480 qualified; 120 fulfilled orders",
+                    ],
+                    [
+                        "Gross billings, fulfilled acquisition cost, and retained spread",
+                        "$60,000 gross less $36,000 acquisition leaves $24,000 retained",
+                        "$85,000 gross less $51,000 acquisition leaves $34,000 retained",
+                        "$107,500 gross less $64,500 acquisition leaves $43,000 retained",
+                        "$252,500 gross less $151,500 acquisition leaves $101,000 retained",
+                    ],
+                    [
+                        "Selling fees and incremental failed-inventory slippage expenses",
+                        "$4,800 selling fees plus $2,400 additional inventory losses",
+                        "$6,800 selling fees plus $3,400 additional inventory losses",
+                        "$8,600 selling fees plus $4,300 additional inventory losses",
+                        "$20,200 selling fees plus $10,100 losses total $30,300",
+                    ],
+                    [
+                        "Risk expense, paid carrying charges, and operating overhead",
+                        "$1,200 risk provision; $600 carrying cost; $5,050 operating expense",
+                        "$1,700 risk provision; $850 carrying cost; $5,050 operating expense",
+                        "$2,150 risk provision; $1,075 carrying cost; $5,050 operating expense",
+                        "$5,050 risk; $2,525 carrying; $15,150 overhead total $22,725",
+                    ],
+                    [
+                        "Earned owner profit after every modeled expense category",
+                        "$24,000 retained less $14,250 expenses equals $9,750 profit",
+                        "$34,000 retained less $18,200 expenses equals $15,800 profit",
+                        "$43,000 retained less $21,175 expenses equals $21,825 profit",
+                        "$47,975 quarterly profit multiplied by four equals $191,900 annually",
+                    ],
+                    [
+                        "Bank receipts, cash uses, and cumulative available-cash movement",
+                        "$27,600 receipts less $45,250 uses; cumulative movement negative $17,650",
+                        "$66,700 receipts less $62,000 uses; cumulative movement negative $12,950",
+                        "$88,550 receipts less $77,075 uses; cumulative movement negative $1,475",
+                        "$182,850 receipts less $184,325 uses reconciles negative $1,475 movement",
+                    ],
+                    [
+                        "Closing available cash, unsettled receivables, and segregated risk funds",
+                        "$32,350 available cash; $27,600 receivable; $1,200 restricted reserve",
+                        "$37,050 available cash; $39,100 receivable; $2,900 restricted reserve",
+                        "$48,525 available cash; $49,450 receivable; $5,050 restricted reserve",
+                        "$48,525 plus $49,450 less $50,000 opening equals $47,975 profit",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Days 1–15: establish the entitlement and cash baseline",
+                    "action": "Create the inventory register, evidence archive, opening cash record, and daily settlement forecast.",
+                    "detail": "Use controlled test entitlements before live trading; assign the owner and both contractors separate responsibilities and reconcile opening balances to bank evidence.",
+                },
+                {
+                    "step": 2,
+                    "title": "Days 16–30: close the first fulfilled cohort",
+                    "action": "Complete verified transfers, retain customer acceptance evidence, and match the first exchange statements.",
+                    "detail": "Reconcile the illustrative $60,000 gross cohort to $24,000 retained spread, $9,750 profit, and $32,350 month-end available cash.",
+                },
+                {
+                    "step": 3,
+                    "title": "Days 31–60: scale only the verified execution pattern",
+                    "action": "Increase qualified order volume while testing duplicate reservations, payout delays, and supplier exceptions.",
+                    "detail": "Carry forward $27,600 receivables, collect prior-cohort payouts, and reconcile Month 2 to $15,800 profit without counting customer deposits as earned revenue.",
+                },
+                {
+                    "step": 4,
+                    "title": "Days 61–90: reconcile the complete quarter",
+                    "action": "Close inventory losses, funded reserves, contractor costs, and outstanding exchange balances.",
+                    "detail": "Require $47,975 cumulative earned profit, $49,450 closing receivables, and $48,525 available cash before using the quarter as a Base run-rate benchmark.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Reconcile annual cases, ancillary rewards, and exception recovery before expanding",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use the scorecard as a reconciliation target rather than a reason to force "
+                    "every booking into the same margin. Conservative gross activity of $220,000 "
+                    "produces $88,000 retained spread; $61,600 of residual expenses leaves $26,400 "
+                    "owner profit. Base gross activity of $1,010,000 produces $404,000 retained "
+                    "spread; $212,100 of residual expenses leaves $191,900. Scaled gross activity "
+                    "of $1,800,000 produces $720,000 retained spread; $252,000 of residual expenses "
+                    "leaves $468,000. Gross-basis margins are 12%, 19.0%, and 26%; retained "
+                    "margins are 30%, 47.5%, and 65%. Conservative and Base each use one "
+                    "full-time operator plus two contractors, while Scaled uses two full-time "
+                    "operators plus three contractors. Only Base receives a detailed expense "
+                    "allocation in this chapter. Do not apply its 8%, 4%, 2%, 1%, and "
+                    "fixed-overhead assumptions mechanically to the other cases. Their expense "
+                    "envelopes must still absorb actual exchange charges, losses, event-risk "
+                    "provisions, settlement funding, and staffing. If observed costs exceed the "
+                    "envelope, report the variance and reduce buying exposure. Revenue potential "
+                    "does not turn a negative cash forecast into an executable operating plan."
+                ),
+                (
+                    "Treat agency_ad_spend_card_multiplier_rebate_cycling as a narrow ancillary play, "
+                    "not a ticket-demand subsidy. With written client authority and eligible agency "
+                    "payment terms, $20,000 of genuine advertising purchases at a modeled 2% reward "
+                    "rate yields $400. Deduct $100 processing cost, $80 paid carrying cost, and "
+                    "$120 contractually owed client pass-through, leaving $100 incremental "
+                    "contribution. The $20,000 client advertising principal is neither ticket "
+                    "revenue nor agency profit. Record the reimbursement obligation and reward "
+                    "allocation separately, retain campaign invoices, and verify reward eligibility "
+                    "against the actual issuer and platform terms. A card multiplier expressed "
+                    "in points requires a conservative realizable cash valuation before comparison "
+                    "with these dollar figures. Do not buy unnecessary advertising, fabricate "
+                    "transactions, rotate charges through refunds, or use client funds to support "
+                    "unrelated ticket inventory. If the reward rate falls from 2% to 1%, "
+                    "the same $300 deductions create a $100 loss. Stop rewards-dependent spending "
+                    "and move to client-direct billing or prefunded approved agency terms. The "
+                    "worked ticket cohort and all three canonical owner-profit figures exclude "
+                    "this ancillary contribution; adding it would require a separately labeled "
+                    "scenario rather than silently changing the scorecard."
+                ),
+                (
+                    "Close each event through an exception-first checklist: delivery evidence, exchange "
+                    "acceptance, bank receipt, supplier balance, customer claims, and reserve release. "
+                    "A postponement changes the cash calendar before it necessarily changes earned "
+                    "margin; a cancellation can reverse revenue and leave nonrecoverable supplier "
+                    "costs. Keep those cases distinct. An injury-driven price collapse should "
+                    "trigger documented repricing and exposure reduction, not additional purchases "
+                    "merely to defend the original average cost. A missing barcode triggers issuer "
+                    "and marketplace escalation, never unauthorized account access or fabricated "
+                    "delivery evidence. For suite and hospitality failures, reconcile each promised "
+                    "component and obtain customer acceptance before substitution. Chargebacks, "
+                    "refunds, and replacement purchases require linked reversing entries and "
+                    "updated cash forecasts. Review all-in price presentation under 16 CFR Part "
+                    "464 and apply relevant state duties to the actual sale and event. Before "
+                    "moving to the five-person Scaled team, demonstrate accurate statements, tested "
+                    "database recovery, controlled connector outages, and sufficient liquidity "
+                    "through a delayed event cycle. The reference code includes executable local "
+                    "checks but has not been run in this text response; live connector behavior "
+                    "and jurisdiction-specific procedures remain deployment tests. Scale only "
+                    "the workflow whose inventory and cash records already agree."
+                ),
+            ],
+            "table": {
+                "caption": "Annual Scorecard Reconciliation & Exception Economics",
+                "headers": [
+                    "Scenario or exception with explicit operating scope",
+                    "Gross activity and retained contribution calculation",
+                    "Expense envelope and final owner-profit result",
+                    "Cash-control response and practical operating boundary",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual case using one full-time operator and two contractors",
+                        "$220,000 gross less $132,000 acquisition equals $88,000 retained",
+                        "$61,600 residual expenses leave $26,400 profit; 12% gross margin",
+                        "30% retained margin requires actual costs inside the stated expense envelope",
+                    ],
+                    [
+                        "Base annual case using one full-time operator and two contractors",
+                        "$1,010,000 gross less $606,000 acquisition equals $404,000 retained",
+                        "$212,100 residual expenses leave $191,900 profit; 19.0% gross margin",
+                        "47.5% retained margin reconciles exactly to four illustrative quarterly cohorts",
+                    ],
+                    [
+                        "Scaled annual case using two full-time operators and three contractors",
+                        "$1,800,000 gross less $1,080,000 acquisition equals $720,000 retained",
+                        "$252,000 residual expenses leave $468,000 profit; 26% gross margin",
+                        "65% retained margin requires measured improvements rather than omitted risk costs",
+                    ],
+                    [
+                        "Ancillary agency reward example outside canonical ticket scenario totals",
+                        "$20,000 authorized purchases multiplied by 2% produces $400 rewards",
+                        "$100 processing plus $80 carrying plus $120 pass-through leaves $100",
+                        "At 1% rewards, stop the resulting $100 loss through client-direct billing",
+                    ],
+                    [
+                        "Cancellation with customer refund and partly recoverable supplier acquisition",
+                        "$1,000 sale refunded; recover $500 of the $600 acquisition",
+                        "$100 acquisition loss remains before unrecovered fees and replacement obligations",
+                        "Use reserve funds, record reversals, and pursue documented supplier recovery rights",
+                    ],
+                    [
+                        "Double-sale contract remedy and delayed settlement stress case",
+                        "A 200% remedy on a $1,000 order reaches $2,000",
+                        "That remedy exceeds ten $190 modeled unit profits before other losses",
+                        "Suspend conflicting listings and fund replacement without assuming immediate exchange payout",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A ticket spread becomes a business only when one entitlement, one buyer, and one reconciled cash trail agree.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Assign stable entitlement keys and archive issuer ownership, transfer rights, supplier terms, and component-level hospitality promises before purchasing.",
+        "Configure one authoritative inventory owner and demonstrate supported cross-channel hold behavior; otherwise permit only one executable sales channel per entitlement.",
+        "Copy the six reference modules into a local test module, run qa_checks, and add multi-process, timeout, crash-recovery, and actual connector tests before deployment.",
+        "Build daily supplier-payment and exchange-payout calendars, including event postponement, replacement purchases, restricted reserves, and customer deposit liabilities.",
+        "Reconcile the 90-day cohort to $252,500 gross billings, $101,000 retained spread, $47,975 owner profit, and $49,450 closing exchange receivables.",
+        "Keep agency reward activity separately authorized and separately accounted for; preserve the canonical $26,400, $191,900, and $468,000 annual owner-profit cases.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. §45c — Better Online Ticket Sales Act",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
+            "relevance": (
+                "Prohibits covered circumvention of ticket-purchase controls and specified "
+                "resale involving tickets obtained through that circumvention; distinguish "
+                "authorized inventory distribution from prohibited acquisition automation."
+            ),
+        },
+        {
+            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
+            "relevance": (
+                "Applies total-price and fee-representation requirements to covered live-event "
+                "ticket offers; retain displayed totals and evaluate permitted exclusions "
+                "and disclosure timing against the actual transaction."
+            ),
+        },
+        {
+            "title": "N.Y. Arts and Cultural Affairs Law §25.03 — Definitions",
+            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.03",
+            "relevance": (
+                "Defines terms used in New York's ticket-sale framework; classify the "
+                "operator and transaction before applying licensing and resale duties."
+            ),
+        },
+        {
+            "title": "N.Y. Arts and Cultural Affairs Law §25.13 — Licensing of Ticket Resellers",
+            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
+            "relevance": (
+                "Establishes licensing requirements and related conditions for covered "
+                "ticket resellers; determine applicability before taking executable orders."
+            ),
+        },
+        {
+            "title": "15 U.S.C. §45 — Unfair or Deceptive Acts or Practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Supports accurate representations of ticket availability, suite access, "
+                "hospitality inclusions, delivery promises, and refund terms in commerce."
+            ),
+        },
+    ],
+}

@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-043-live-event-super-bowl-and-vip-ticket-brokering",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1956109,
+      "sha256": "25148d78d920c8258fdcfc63689223f8898e1f3b202351f78b1a6dcdb4b74e7a"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2561872,
+      "sha256": "f2995cb0ec07493afb27293987d5a9b2a420dc22031f252d1f76331e365e2401"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 581593,
+      "sha256": "002ac0ffd53816481a79e9f7d5993e7bfc37bf8412cbb252067f57b5a0aa1d78"
+    },
+    "book.epub": {
+      "bytes": 271089,
+      "sha256": "71e887410ec70bc5b0bda44b283dd048f5dd96f9b7fee0486c429475c1c2da16"
+    },
+    "art/cover.svg": {
+      "bytes": 4319,
+      "sha256": "9feae6ed706fe78fa6cc869bd48940ed9ad30369aa888b4f07e922f4c92e0985"
+    },
+    "art/scorecard.svg": {
+      "bytes": 104361,
+      "sha256": "6a19a57594bb65869362bab93441b52d23d07a987b01c06396d23909dc0c9ce8"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11954,
+      "sha256": "b7a096944a94bec74ded9d26d96936e1c8bd744ac72c9f89abf4ae0037b3e66d"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7871,
+      "sha256": "79dab1c4d8876e8c2d3916114fe40d07b35f884a2be239f0c77f6fb920aea905"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12846,
+      "sha256": "49dcbd13c68614c17c2ecc47ea5be0559428264f04dc686a0b996573fd3b1b3d"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10042,
+      "sha256": "8ceee20b1ffc52fde01bf9f9d490d28dced1629680321814473098101fa18e0b"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9626,
+      "sha256": "d6420a4bc7818ebd68b99ffbf5473a9e6f6911bad523c9088d37ad5854e95fb8"
+    },
+    "art/diag_06.svg": {
+      "bytes": 10623,
+      "sha256": "52df638073a3e14910e46f7895597663f9471684943afabc7ec0af063e3b1ac0"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8681,
+      "sha256": "6e611b6b566bbabc5b1831bbfb2157a295bd8f38315bf4e970e5dc2d50029884"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8509,
+      "sha256": "4e7c78c3ed429c4eb77b28fa74a786a7c6d05ec249b289e7a8f2e37320ee4e2b"
+    }
+  }
+}

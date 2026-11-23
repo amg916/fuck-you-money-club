@@ -1,4 +1,4 @@
-"""Canonical 42-volume registry, slug resolver, and dynamic builder loader for FYMC."""
+"""Canonical 43-volume registry, slug resolver, and dynamic builder loader for FYMC."""
 from __future__ import annotations
 
 import importlib
@@ -1071,16 +1071,33 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
             ],
         ),
     },
+    43: {
+        'volume_number': 43,
+        'volume_id': 'vol-043-live-event-super-bowl-and-vip-ticket-brokering',
+        'short_slug': 'live-event-super-bowl-and-vip-ticket-brokering',
+        'candidate_number': 43,
+        'score': 95,
+        'title': 'Live-Event, Super Bowl & VIP Ticket Brokering',
+        'subtitle': 'The Money-to-Manpower Playbook for Super Bowl & Tentpole Hospitality Allotments, Luxury Suite Splitting, Season-Strip Playoff Options & SkyBox POS Broadcasting',
+        'site_ui': _ui(
+            ['SUPER BOWL &', 'VIP TICKET', 'BROKERING'],
+            ['SOURCE PREMIUM ACCESS. PRICE THE FULL EXPERIENCE.', 'THREE MODELS. ONE DISCIPLINED BROKERAGE.'],
+            'Build a premium-access brokerage around live events, Super Bowl demand, and VIP buyers—with verified inventory, disciplined pricing, and reliable fulfillment.',
+            'Multi-exchange POS resale distributes verified ticket inventory through a synchronized point-of-sale system, while stadium suite seat-splitting sells individual places in suites only where contracts and venue rules permit. Super Bowl and tentpole hospitality bundling combines transferable tickets with separately contracted amenities, requiring clear inclusions, supplier verification, and pricing that covers fees, fulfillment, and cancellation exposure.',
+            ['Q1 — The Premium-Access Opportunity', 'Q2 — Pick Your Brokerage Model', 'Q3 — Find Buyers Before Buying', 'Q4 — Source Verified Inventory', 'Q5 — Underwrite Every Deal', 'Q6 — Package and Price Access', 'Q7 — Build the Sales Pipeline', 'Q8 — Close With Clear Terms', 'Q9 — Sync Inventory and Fulfill', 'Q10 — Control Compliance and Risk', 'Q11 — Launch Your First Event', 'Q12 — Scale Profitable Relationships'],
+            [['SELECT', 'Choose an event, buyer segment, and model: POS resale, permitted suite seat-splitting, or hospitality bundling.'], ['VERIFY', 'Confirm supplier identity, inventory rights, transfer timing, resale restrictions, and any suite or hospitality permissions.'], ['UNDERWRITE', 'Set acquisition limits using net proceeds after fees, amenities, taxes, fulfillment costs, and downside reserves.'], ['MARKET', 'Publish accurate listings or buyer proposals with explicit seat details, inclusions, exclusions, and delivery terms.'], ['FULFILL', 'Synchronize inventory to prevent double-selling, complete authorized transfers, and confirm each hospitality component.'], ['RECONCILE', 'Resolve delivery issues, reconcile payouts and supplier bills, measure realized margin, and cultivate repeat buyers.']],
+        ),
+    },
 }
 
-ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42)
+ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43)
 CANDIDATE_TO_VOLUME_NUMBER: dict[int, int] = {
     int(spec["candidate_number"]): num for num, spec in ALL_VOLUME_SPECS.items()
 }
 
 
 def get_volume_spec_by_candidate(candidate_number: object) -> dict | None:
-    """Return the canonical volume spec for a 1..42 candidate_number, or None."""
+    """Return the canonical volume spec for a 1..43 candidate_number, or None."""
     if isinstance(candidate_number, bool):
         return None
     try:
@@ -1117,7 +1134,7 @@ def _match_volume_number(volume_id: object) -> int | None:
 
 
 def get_volume_spec(volume_id_or_num: object = None) -> dict:
-    """Return the canonical spec dict for any of the 42 registered volumes."""
+    """Return the canonical spec dict for any of the 43 registered volumes."""
     if volume_id_or_num is None:
         return ALL_VOLUME_SPECS[1]
     num = _match_volume_number(volume_id_or_num)

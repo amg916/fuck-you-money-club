@@ -3885,6 +3885,205 @@ PLAY_DEFINITIONS = {
               'for qualified buyers, comparing the value of retaining net cash flow against '
               'sale proceeds and testing any 16x–22x headline multiple against net income, '
               'lease duration and actual bids.']},
+    'super_bowl_vip_hospitality_allotment_bundling': {'id': 'super_bowl_vip_hospitality_allotment_bundling',
+ 'inputs': ['A documented sourcing ledger identifying the authorized seller, chain of '
+            'entitlement, event-specific resale and bundling rights, guest-nomination '
+            'deadlines, transfer windows, and whether each seat, club credential, and parking '
+            'pass can actually be separated.',
+            'A package cost sheet covering the full 16–24-seat suite commitment, independently '
+            'contracted 4-star room blocks and sprinter capacity, catering minimums, taxes, '
+            'marketplace commissions, refund exposure, and supplier cancellation schedules.',
+            'Executable comparable listings and verified corporate-buyer demand by event, '
+            'package size, hotel location, and delivery deadline, alongside committed '
+            'liquidity sufficient to fund purchases and reserves through the expected '
+            'post-event payout date.'],
+ 'mechanism': 'Source expressly transferable corporate-sponsor, team/player-family, and '
+              'official hospitality-partner allotments for Super Bowl, World Cup, F1 Paddock, '
+              'Masters, and Final Four events; split 16–24-seat stadium suites only where the '
+              'contract permits individual resale and separately transferable VIP club or '
+              'parking privileges. Combine eligible seats with contracted 4-star hotel rooms '
+              'and sprinter transport, calculating net margin after acquisition, fulfillment, '
+              'marketplace fees, expected unsold-inventory markdowns or write-offs, and '
+              'cancellation reserves rather than treating the package markup as profit. Model '
+              'post-event settlement float separately as working capital locked until payout, '
+              'with its financing cost charged against margin and cash reserved for supplier '
+              'deadlines and buyer refunds.',
+ 'metrics': ['Realized contribution margin per package and per committed suite = collected '
+             'revenue minus inventory basis, hotel and transport costs, marketplace fees, '
+             'applicable taxes, fulfillment costs, unsold-inventory losses, cancellation '
+             'losses or outstanding reserves, and float financing costs.',
+             'Sell-through and residual exposure at 30, 14, 7, and 2 days before the event, '
+             'including unsold suite-seat basis, nonrefundable hotel commitments, and the '
+             'discount needed to liquidate remaining permitted inventory.',
+             'Peak cash tied up and days from supplier payment to cleared marketplace payout, '
+             'measured against available liquidity and separately maintained cancellation and '
+             'refund reserves.'],
+ 'name': 'Super Bowl, Tentpole Sports & Luxury Suite Seat-Splitting Hospitality Arbitrage',
+ 'platform_risks': [{'detection_metric': 'Percentage of advertised components with verified '
+                                         'written transfer rights and confirmed delivery '
+                                         'paths; require 100% before listing.',
+                     'failure_mode': 'A sourced allotment cannot be subdivided or transferred '
+                                     'with the hospitality privileges advertised.',
+                     'fallback': 'Stop affected listings, retain or return inventory under the '
+                                 'supplier agreement, and offer a buyer-accepted authorized '
+                                 'replacement or the required refund; unwind refundable '
+                                 'ancillary bookings.',
+                     'impact': 'Listing removal, failed fulfillment, replacement purchases, '
+                               'buyer refunds, and stranded hotel or transport commitments can '
+                               'eliminate the expected margin.',
+                     'trigger': 'Rights-holder restrictions, missed guest-nomination '
+                                'deadlines, or separate club and parking entitlements '
+                                'invalidate the proposed package.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Obtain written resale, subdivision, and package permissions from the '
+              'relevant rights holder; exclude nontransferable sponsor or player-family '
+              'allocations, restricted Masters credentials, and hospitality access that cannot '
+              'travel with the advertised seat.',
+              '2. Underwrite each package using achievable transaction prices, '
+              'channel-specific fees, conservative sell-through, residual-seat liquidation '
+              'values, cancellation reserves, and the financing cost of delayed settlement; '
+              'prefer refundable holds or consignment where available.',
+              '3. Publish only confirmed transferable components with explicit inclusions, '
+              'seat locations, guest-name deadlines, substitution terms, and refund treatment; '
+              'match corporate orders to the suite manifest and contracted hotel and transport '
+              'capacity.',
+              '4. Reprice remaining inventory at predetermined demand checkpoints, complete '
+              'permitted ticket and hospitality delivery, reconcile supplier performance and '
+              'marketplace payouts, and release reserves only after the relevant refund and '
+              'dispute exposure ends.']},
+    'nfl_nba_ssl_season_strip_playoff_option_arbitrage': {'id': 'nfl_nba_ssl_season_strip_playoff_option_arbitrage',
+ 'inputs': ['Team and account documents specifying SSL/PSL ownership or permitted use, '
+            'transfer charges, renewal obligations, resale restrictions, postseason '
+            'eligibility, allocation limits, purchase deadlines, and any mandatory '
+            'playoff-strip commitments.',
+            'Game-level acquisition and sales data for NFL, NBA, NHL, and MLS seats, including '
+            'marquee matchup depth, comparable completed sales where available, low-demand '
+            'liquidation estimates, and account-specific StageFront/Lysted consignment fees '
+            'and payout terms.',
+            'A scenario model separating regular-season face basis, license capital, '
+            'postseason exercise funding, qualification and allocation probabilities, '
+            'cancellation reserves, unsold-game losses, and cash availability through '
+            'post-event settlement.'],
+ 'mechanism': 'Underwrite transferable NFL, NBA, NHL, and MLS season-ticket strips and '
+              'eligible StageFront/Lysted consignment portfolios, treating marquee-game '
+              'recovery of 90%–105% of regular-season face basis as a screening hypothesis to '
+              'verify rather than an assumed outcome. Calculate net margin after marketplace '
+              'and consignment fees, license acquisition or amortization, mandatory purchases, '
+              'unsold low-demand inventory slippage, and cancellation reserves; count '
+              'face-value playoff or championship purchase rights only when the actual account '
+              'agreement provides them, recognizing that some allocations are lotteries or '
+              "exclude neutral-site finals. Separate the contingent allocation's "
+              'probability-weighted value from realized regular-season proceeds, and fund '
+              'post-event settlement float and playoff exercise deadlines without assuming '
+              'pending payouts are available cash.',
+ 'metrics': ['Marquee recovery ratio = net marquee-game proceeds after selling and consignment '
+             'fees divided by regular-season face basis; report the 90%–105% screening band '
+             'separately from whole-portfolio profitability.',
+             'Full-season realized contribution after license amortization, acquisition and '
+             'transfer costs, selling fees, unsold-game write-offs, postseason purchases, '
+             'cancellation losses or outstanding reserves, and financing costs.',
+             'Postseason funding coverage = cleared cash available for exercise divided by '
+             'contractual postseason payment obligations, paired with probability-weighted '
+             'allocation value and days until regular-season payouts clear.'],
+ 'name': 'Franchise SSL/PSL Season-Strip & Contingent Playoff Allocation Arbitrage',
+ 'platform_risks': [{'detection_metric': 'Share of modeled postseason value supported by '
+                                         'current contractual rights, plus unfunded mandatory '
+                                         'purchase exposure and days remaining before each '
+                                         'exercise deadline.',
+                     'failure_mode': 'The anticipated postseason option is absent, restricted, '
+                                     'or withdrawn while the operator remains committed to '
+                                     'season inventory.',
+                     'fallback': 'Assign zero value to unsupported allocations, retain funding '
+                                 'for binding obligations, and liquidate eligible '
+                                 'regular-season inventory through permitted channels without '
+                                 'advertising unconfirmed postseason seats.',
+                     'impact': 'Projected option value disappears, mandatory purchases may '
+                               'remain payable, and the regular-season portfolio must stand on '
+                               'its own economics.',
+                     'trigger': 'Account-specific allocation rules, missed renewal or exercise '
+                                'deadlines, resale-policy enforcement, nonqualification, or '
+                                'championship access governed by a separate lottery.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Verify ownership, permitted resale, license obligations, and the precise '
+              'postseason rights attached to each account; reject portfolios whose valuation '
+              'depends on unconfirmed championship access or prohibited account transfers.',
+              '2. Test whether conservative net marquee-game proceeds can recover 90%–105% of '
+              'regular-season face basis, then deduct the remaining portfolio costs and '
+              'stress-test missed playoffs, weak opponents, late schedule changes, and reduced '
+              'resale demand.',
+              '3. Acquire qualifying strips or execute documented consignment mandates, list '
+              'each seat through one authoritative inventory ledger, and reserve enough '
+              'cleared cash for mandatory postseason purchases and potential refunds.',
+              '4. Monetize marquee games against the recovery plan, mark down weaker games '
+              'before liquidity deteriorates, exercise only supported and economically '
+              "justified optional allocations, and reconcile every game's net payout against "
+              'the full-season basis.']},
+    'multi_exchange_pos_broadcast_drop_curve_arbitrage': {'id': 'multi_exchange_pos_broadcast_drop_curve_arbitrage',
+ 'inputs': ['An owned or expressly consigned inventory ledger with unique '
+            'event-section-row-seat identifiers, acquisition provenance, purchase-limit '
+            'compliance, transfer eligibility, delivery deadlines, and confirmed '
+            'issuer-supported SafeTix transfer capabilities.',
+            'Verified account-level exchange integrations and commercial terms covering '
+            'commissions, listing eligibility, order confirmation, hold and deletion '
+            'acknowledgments, cancellation and replacement penalties, and post-event '
+            'settlement schedules.',
+            'A pricing and liquidity dataset containing comparable asks and available '
+            'transaction evidence, inventory age, seat-quality adjustments, time-to-event, '
+            'demand indicators, minimum net recovery thresholds, reserve balances, and '
+            'available working capital.'],
+ 'mechanism': 'Use supported, authorized SkyBox/Automatiq integrations to broadcast '
+              'legitimately acquired live-event inventory across eligible StubHub, Vivid '
+              'Seats, SeatGeek, TickPick, GameTime, and Ticketmaster Resale channels, '
+              'respecting purchase limits and access controls under the BOTS Act. Capture '
+              'channel-specific demand with pre-event drop-curve markdowns, measuring net '
+              'margin after acquisition and marketplace fees, expected unsold-inventory '
+              'slippage, cancellation reserves, and financing costs while tracking post-event '
+              'settlement float separately. Use immediate internal POS auto-holds and verified '
+              'cross-channel delisting to reduce rather than guarantee elimination of double '
+              'sales, validate any claimed 200% penalty against the applicable contract, and '
+              'deliver SafeTix inventory through issuer-supported transfer and wallet flows '
+              'rather than copied rotating barcodes.',
+ 'metrics': ['Realized net contribution by exchange and event after acquisition basis, '
+             'marketplace and automation fees, unsold-inventory write-offs, cancellation or '
+             'replacement losses and outstanding reserves, and settlement-float financing '
+             'costs.',
+             'Median and 99th-percentile order-to-hold and cross-channel delisting '
+             'acknowledgment latency, alongside stale-listing counts, overlapping confirmed '
+             'orders, and actual contract-based penalty exposure.',
+             'Sell-through and net recovery by time-to-event pricing checkpoint, paired with '
+             'forecast-versus-actual markdown losses, peak unsettled receivables, and days '
+             'from sale to cleared payout.'],
+ 'name': 'SkyBox/Automatiq Multi-Exchange POS Broadcast & Dynamic Drop-Curve Arbitrage',
+ 'platform_risks': [{'detection_metric': 'Any duplicate seat-level order, unresolved delisting '
+                                         'acknowledgment, or synchronization delay beyond the '
+                                         'channel-specific tested threshold.',
+                     'failure_mode': 'A delayed exchange update permits two buyers to purchase '
+                                     'the same seat before all listings are removed.',
+                     'fallback': 'Pause broadcasting affected inventory, remove residual '
+                                 'listings through authorized account interfaces, contact the '
+                                 'exchanges promptly, and resolve duplicate obligations using '
+                                 'permitted equivalent replacements or the required '
+                                 'cancellation process.',
+                     'impact': 'Duplicate fulfillment obligations create replacement-ticket '
+                               'costs, contractual penalties that may reach 200% under some '
+                               'terms, withheld payouts, or account restrictions.',
+                     'trigger': 'Concurrent checkout, stale inventory feeds, connector '
+                                'outages, missed order notifications, or unacknowledged hold '
+                                'and delisting requests.'}],
+ 'track_id': 'track_2',
+ 'workflow': ['1. Connect only supported and authorized exchange accounts, normalize seat '
+              'identifiers, test order and cancellation synchronization, and keep inventory '
+              'off any channel whose listing or fulfillment rules cannot be satisfied.',
+              '2. Broadcast confirmed inventory with channel-specific fee-adjusted prices; on '
+              'the first actionable order signal, place an immediate internal hold, request '
+              'removal elsewhere, and monitor acknowledgments because exchange updates are not '
+              'atomic.',
+              '3. Apply scheduled and demand-triggered markdowns as the event approaches, '
+              'enforcing net-recovery floors and bounded price changes; isolate stale feeds '
+              'and require an explicit operator decision before any below-floor liquidation.',
+              "4. Fulfill through the issuer's permitted transfer process, monitor acceptance "
+              'and delivery deadlines, reconcile exchange settlements, and maintain '
+              'cancellation and replacement reserves until the applicable exposure has ended.']},
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -4477,6 +4676,7 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     40: ("erisa_level_funded_transparent_pbm_bor_arbitrage", "workers_comp_ncci_emod_retroactive_recovery", "erisa_self_funded_specialty_drug_importation_arbitrage", "section_340b_contract_pharmacy_spread_arbitrage", "wotc_hourly_payroll_tax_credit_contingency_engine", "sec_edgar_8k_vendor_trigger_arbitrage", "public_record_api_intelligence", "saas_technographic_churn_pixel_scraping", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems", "private_b2b_gpo_umbrella_rebate_arbitrage"),
     41: ("wholesale_buying_group_card_float_cycling", "verified_fan_ticketing_and_drop_allocation_farming", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "aged_shelf_corp_tradeline_credit_stacking", "authorized_distributor_grey_market_diversion_arbitrage", "free_llc_fintech_bounty_stacking", "sportsbook_promo_ev_matched_betting_syndicates", "platform_privilege_tier_account_arbitrage", "telegram_channel_signal_scraping", "section_321_de_minimis_bonded_tariff_arbitrage"),
     42: ("dot_digital_billboard_and_ios_master_lease_flip", "cell_tower_billboard_easement_strip_out", "ferc_grid_interconnection_queue_land_speculation", "gis_landlocked_parcel_easement_assemblage", "solar_tax_equity_depreciation_strip_syndication", "fmcsa_dot_inspection_trigger_arbitrage", "property_tax_assessment_appeal_contingency", "municipal_code_violation_trigger_arbitrage", "public_record_api_intelligence", "public_filing_trigger_mail_arbitrage", "high_velocity_dm_outbound_systems"),
+    43: ("super_bowl_vip_hospitality_allotment_bundling", "nfl_nba_ssl_season_strip_playoff_option_arbitrage", "multi_exchange_pos_broadcast_drop_curve_arbitrage", "verified_fan_ticketing_and_drop_allocation_farming", "wholesale_buying_group_card_float_cycling", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "aged_shelf_corp_tradeline_credit_stacking", "high_velocity_dm_outbound_systems", "multi_inbox_free_workspace_outbound_clusters", "competitor_intent_comparison_hijacking", "telegram_channel_signal_scraping"),
 }
 
 
@@ -5176,6 +5376,7 @@ _CANDIDATE_SPECS.extend([
     _candidate(40, "Self-Funded Health, PBM & Workers' Comp Arbitrage", "Employee benefits & E-Mod brokerage", (120000, 950000), (32, 58), (8000, 45000), (2000, 11000), "2–5 months", (1, 3), "Form 5500 renewal targeting, CAA 2021 fiduciary fee-disclosure wedges, level-funded/captive ERISA transitions, pass-through PBMs, and Workers' Comp NCCI E-Mod audits generate $40–$65 PEPM evergreen annuities.", ["Form 5500 Schedule A/C renewal scraper", "NADAC vs spread-PBM repricing engine", "NCCI E-Mod & payroll-code audit analyzer"], ["Incumbent broker defense at renewal", "Stop-loss laser or shock-claim volatility", "State insurance producer & TPA licensing"], ["Hold active state Life & Health and Property & Casualty producer licenses and deliver full ERISA §408(b)(2) / CAA 2021 compensation disclosures.", "Structure stop-loss specific/aggregate attachment points, run-out coverage, and RBP balance-bill legal defense cleanly."], revenue_basis="Net retained PEPM benefits advisory fees, stop-loss/TPA commissions, and contingent Workers' Comp E-Mod refund splits; excludes employer claim funds and insurance premiums", automation_coverage=0.82),
     _candidate(41, "Buying Group, Card-Float & Ticket Allocation Arbitrage", "Card-float & allocation arbitrage", (250000, 1800000), (8, 20), (10000, 55000), (1500, 9000), "1–3 months", (1, 2), "Tax-exempt wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card float and BOTS-Act-compliant secondary live-event ticket/suite POS sync compound rapid capital turns on a 3-person desk.", ["Buying-Group deal-commit & tracking reconciler", "SkyBox / Automatiq multi-exchange ticket POS", "60-day card-statement float & rebate ledger"], ["Buying-group counterparty ACH delay", "Card issuer financial review or shutdown", "Unsold event ticket price decay"], ["Comply strictly with the federal BOTS Act (15 U.S.C. §45c — zero queue/CAPTCHA bypass software), state all-in ticket resale laws, and sales-tax resale rules.", "Diversify across vetted Net-3/Net-5 buying groups, insure high-value shipments, and enforce pre-event stop-loss markdown curves."], revenue_basis="Gross wholesale buying-group reimbursements, card-rebate yields, and secondary ticket resale proceeds (35% retained net spread after landed merchandise & face-value ticket basis)", retained_share=0.35, automation_coverage=0.87),
     _candidate(42, "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage", "Infrastructure & IOS lease arbitrage", (120000, 950000), (28, 52), (12000, 60000), (2000, 12000), "2–6 months", (1, 3), "Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.", ["FCC ASR tower & DOT AADT GIS parcel pipeline", "Easement buyout NPV & lender SNDA packager", "Unmanned RFID gate & NNN fleet-yard billing"], ["Municipal sign/zoning variance denials", "Underlying mortgage SNDA delays", "Environmental Phase I stormwater issues on IOS yards"], ["Verify state real-estate brokerage licensing exemptions when trading principal lease options, Highway Beautification Act / state DOT spacing rules, and lender SNDA consents.", "Run Phase I environmental screening and heavy-axle zoning confirmation before executing IOS master-leases."], revenue_basis="Net easement buyout flip spreads, billboard permit assignment fees, and retained NNN IOS master-lease spreads; excludes institutional REIT principal face values", automation_coverage=0.78),
+    _candidate(43, "Live-Event, Super Bowl & VIP Ticket Brokering", "Event & hospitality brokerage", (220000, 1800000), (12, 26), (10000, 50000), (1800, 11000), "1–3 months", (1, 2), "Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk.", ["SkyBox / Automatiq / Logitix instant multi-exchange POS sync", "Dynamic drop-curve & playoff-probability repricing engine", "Automated barcode transfer & B2B suite invoice reconciliation"], ["200% double-sale replacement penalties on unsynced listings", "Event postponement, injury, or rainout demand shocks", "BOTS Act / state all-in fee disclosure non-compliance"], ["Operate strictly within the federal BOTS Act (15 U.S.C. §45c — zero automated queue or security-measure circumvention) and state ticket-reseller licensing/all-in pricing laws (e.g., N.Y. Arts & Cult. Aff. Law §25).", "Enforce real-time POS auto-hold locks across StubHub, Vivid Seats, SeatGeek, and TickPick to prevent double-fills."], revenue_basis="Gross secondary ticket exchange payouts, suite-splitting sales, and VIP hospitality package billings (40% retained net spread after face-value ticket & suite acquisition cost)", retained_share=0.40, automation_coverage=0.88),
 ])
 
 

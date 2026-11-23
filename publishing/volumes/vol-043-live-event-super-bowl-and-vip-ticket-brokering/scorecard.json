@@ -1,0 +1,608 @@
+{
+  "candidate_number": 43,
+  "slug": "live-event,-super-bowl-&-vip-ticket-brokering",
+  "title": "Live-Event, Super Bowl & VIP Ticket Brokering",
+  "category": "Event & hospitality brokerage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 24,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 13,
+    "automation_potential": 13
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 95,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 92,
+    "high": 98
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 24/25. Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk.",
+    "profit_margin_potential": "Profit Margin Potential: 25/25. Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk.",
+    "team_efficiency": "Team Efficiency: 20/20. Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk.",
+    "startup_accessibility": "Startup Accessibility: 13/15. Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk.",
+    "automation_potential": "Automation Potential: 13/15. Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk."
+  },
+  "economics": {
+    "gross_revenue_range": "$220,000–$1,800,000 USD annually",
+    "retained_revenue_range": "$88,000–$720,000 USD annually",
+    "retained_share": 0.4,
+    "net_profit_margin_range": "12–26%",
+    "retained_profit_margin_range": "30–65%",
+    "owner_net_profit_potential": "$26,400–$468,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$10,000–$50,000 USD",
+    "monthly_opex_range": "$1,800–$11,000 USD",
+    "time_to_first_deal": "1–3 months",
+    "automation_coverage": 0.88,
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Gross secondary ticket exchange payouts, suite-splitting sales, and VIP hospitality package billings (40% retained net spread after face-value ticket & suite acquisition cost)",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 220000,
+      "annual_retained_revenue_usd": 88000,
+      "net_profit_margin_pct": 12,
+      "retained_profit_margin_pct": 30.0,
+      "annual_owner_net_profit_usd": 26400,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 1010000.0,
+      "annual_retained_revenue_usd": 404000,
+      "net_profit_margin_pct": 19.0,
+      "retained_profit_margin_pct": 47.5,
+      "annual_owner_net_profit_usd": 191900,
+      "full_time_including_owner": 1,
+      "contractors": 2,
+      "total_people": 3,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1800000,
+      "annual_retained_revenue_usd": 720000,
+      "net_profit_margin_pct": 26,
+      "retained_profit_margin_pct": 65.0,
+      "annual_owner_net_profit_usd": 468000,
+      "full_time_including_owner": 2,
+      "contractors": 3,
+      "total_people": 5,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "SkyBox / Automatiq / Logitix instant multi-exchange POS sync",
+    "Dynamic drop-curve & playoff-probability repricing engine",
+    "Automated barcode transfer & B2B suite invoice reconciliation"
+  ],
+  "key_risks": [
+    "200% double-sale replacement penalties on unsynced listings",
+    "Event postponement, injury, or rainout demand shocks",
+    "BOTS Act / state all-in fee disclosure non-compliance"
+  ],
+  "regulatory_notes": [
+    "Operate strictly within the federal BOTS Act (15 U.S.C. §45c — zero automated queue or security-measure circumvention) and state ticket-reseller licensing/all-in pricing laws (e.g., N.Y. Arts & Cult. Aff. Law §25).",
+    "Enforce real-time POS auto-hold locks across StubHub, Vivid Seats, SeatGeek, and TickPick to prevent double-fills."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "super_bowl_vip_hospitality_allotment_bundling",
+      "inputs": [
+        "A documented sourcing ledger identifying the authorized seller, chain of entitlement, event-specific resale and bundling rights, guest-nomination deadlines, transfer windows, and whether each seat, club credential, and parking pass can actually be separated.",
+        "A package cost sheet covering the full 16–24-seat suite commitment, independently contracted 4-star room blocks and sprinter capacity, catering minimums, taxes, marketplace commissions, refund exposure, and supplier cancellation schedules.",
+        "Executable comparable listings and verified corporate-buyer demand by event, package size, hotel location, and delivery deadline, alongside committed liquidity sufficient to fund purchases and reserves through the expected post-event payout date."
+      ],
+      "mechanism": "Source expressly transferable corporate-sponsor, team/player-family, and official hospitality-partner allotments for Super Bowl, World Cup, F1 Paddock, Masters, and Final Four events; split 16–24-seat stadium suites only where the contract permits individual resale and separately transferable VIP club or parking privileges. Combine eligible seats with contracted 4-star hotel rooms and sprinter transport, calculating net margin after acquisition, fulfillment, marketplace fees, expected unsold-inventory markdowns or write-offs, and cancellation reserves rather than treating the package markup as profit. Model post-event settlement float separately as working capital locked until payout, with its financing cost charged against margin and cash reserved for supplier deadlines and buyer refunds.",
+      "metrics": [
+        "Realized contribution margin per package and per committed suite = collected revenue minus inventory basis, hotel and transport costs, marketplace fees, applicable taxes, fulfillment costs, unsold-inventory losses, cancellation losses or outstanding reserves, and float financing costs.",
+        "Sell-through and residual exposure at 30, 14, 7, and 2 days before the event, including unsold suite-seat basis, nonrefundable hotel commitments, and the discount needed to liquidate remaining permitted inventory.",
+        "Peak cash tied up and days from supplier payment to cleared marketplace payout, measured against available liquidity and separately maintained cancellation and refund reserves."
+      ],
+      "name": "Super Bowl, Tentpole Sports & Luxury Suite Seat-Splitting Hospitality Arbitrage",
+      "platform_risks": [
+        {
+          "detection_metric": "Percentage of advertised components with verified written transfer rights and confirmed delivery paths; require 100% before listing.",
+          "failure_mode": "A sourced allotment cannot be subdivided or transferred with the hospitality privileges advertised.",
+          "fallback": "Stop affected listings, retain or return inventory under the supplier agreement, and offer a buyer-accepted authorized replacement or the required refund; unwind refundable ancillary bookings.",
+          "impact": "Listing removal, failed fulfillment, replacement purchases, buyer refunds, and stranded hotel or transport commitments can eliminate the expected margin.",
+          "trigger": "Rights-holder restrictions, missed guest-nomination deadlines, or separate club and parking entitlements invalidate the proposed package."
+        }
+      ],
+      "track_id": "track_1",
+      "workflow": [
+        "1. Obtain written resale, subdivision, and package permissions from the relevant rights holder; exclude nontransferable sponsor or player-family allocations, restricted Masters credentials, and hospitality access that cannot travel with the advertised seat.",
+        "2. Underwrite each package using achievable transaction prices, channel-specific fees, conservative sell-through, residual-seat liquidation values, cancellation reserves, and the financing cost of delayed settlement; prefer refundable holds or consignment where available.",
+        "3. Publish only confirmed transferable components with explicit inclusions, seat locations, guest-name deadlines, substitution terms, and refund treatment; match corporate orders to the suite manifest and contracted hotel and transport capacity.",
+        "4. Reprice remaining inventory at predetermined demand checkpoints, complete permitted ticket and hospitality delivery, reconcile supplier performance and marketplace payouts, and release reserves only after the relevant refund and dispute exposure ends."
+      ]
+    },
+    {
+      "id": "nfl_nba_ssl_season_strip_playoff_option_arbitrage",
+      "inputs": [
+        "Team and account documents specifying SSL/PSL ownership or permitted use, transfer charges, renewal obligations, resale restrictions, postseason eligibility, allocation limits, purchase deadlines, and any mandatory playoff-strip commitments.",
+        "Game-level acquisition and sales data for NFL, NBA, NHL, and MLS seats, including marquee matchup depth, comparable completed sales where available, low-demand liquidation estimates, and account-specific StageFront/Lysted consignment fees and payout terms.",
+        "A scenario model separating regular-season face basis, license capital, postseason exercise funding, qualification and allocation probabilities, cancellation reserves, unsold-game losses, and cash availability through post-event settlement."
+      ],
+      "mechanism": "Underwrite transferable NFL, NBA, NHL, and MLS season-ticket strips and eligible StageFront/Lysted consignment portfolios, treating marquee-game recovery of 90%–105% of regular-season face basis as a screening hypothesis to verify rather than an assumed outcome. Calculate net margin after marketplace and consignment fees, license acquisition or amortization, mandatory purchases, unsold low-demand inventory slippage, and cancellation reserves; count face-value playoff or championship purchase rights only when the actual account agreement provides them, recognizing that some allocations are lotteries or exclude neutral-site finals. Separate the contingent allocation's probability-weighted value from realized regular-season proceeds, and fund post-event settlement float and playoff exercise deadlines without assuming pending payouts are available cash.",
+      "metrics": [
+        "Marquee recovery ratio = net marquee-game proceeds after selling and consignment fees divided by regular-season face basis; report the 90%–105% screening band separately from whole-portfolio profitability.",
+        "Full-season realized contribution after license amortization, acquisition and transfer costs, selling fees, unsold-game write-offs, postseason purchases, cancellation losses or outstanding reserves, and financing costs.",
+        "Postseason funding coverage = cleared cash available for exercise divided by contractual postseason payment obligations, paired with probability-weighted allocation value and days until regular-season payouts clear."
+      ],
+      "name": "Franchise SSL/PSL Season-Strip & Contingent Playoff Allocation Arbitrage",
+      "platform_risks": [
+        {
+          "detection_metric": "Share of modeled postseason value supported by current contractual rights, plus unfunded mandatory purchase exposure and days remaining before each exercise deadline.",
+          "failure_mode": "The anticipated postseason option is absent, restricted, or withdrawn while the operator remains committed to season inventory.",
+          "fallback": "Assign zero value to unsupported allocations, retain funding for binding obligations, and liquidate eligible regular-season inventory through permitted channels without advertising unconfirmed postseason seats.",
+          "impact": "Projected option value disappears, mandatory purchases may remain payable, and the regular-season portfolio must stand on its own economics.",
+          "trigger": "Account-specific allocation rules, missed renewal or exercise deadlines, resale-policy enforcement, nonqualification, or championship access governed by a separate lottery."
+        }
+      ],
+      "track_id": "track_1",
+      "workflow": [
+        "1. Verify ownership, permitted resale, license obligations, and the precise postseason rights attached to each account; reject portfolios whose valuation depends on unconfirmed championship access or prohibited account transfers.",
+        "2. Test whether conservative net marquee-game proceeds can recover 90%–105% of regular-season face basis, then deduct the remaining portfolio costs and stress-test missed playoffs, weak opponents, late schedule changes, and reduced resale demand.",
+        "3. Acquire qualifying strips or execute documented consignment mandates, list each seat through one authoritative inventory ledger, and reserve enough cleared cash for mandatory postseason purchases and potential refunds.",
+        "4. Monetize marquee games against the recovery plan, mark down weaker games before liquidity deteriorates, exercise only supported and economically justified optional allocations, and reconcile every game's net payout against the full-season basis."
+      ]
+    },
+    {
+      "id": "multi_exchange_pos_broadcast_drop_curve_arbitrage",
+      "inputs": [
+        "An owned or expressly consigned inventory ledger with unique event-section-row-seat identifiers, acquisition provenance, purchase-limit compliance, transfer eligibility, delivery deadlines, and confirmed issuer-supported SafeTix transfer capabilities.",
+        "Verified account-level exchange integrations and commercial terms covering commissions, listing eligibility, order confirmation, hold and deletion acknowledgments, cancellation and replacement penalties, and post-event settlement schedules.",
+        "A pricing and liquidity dataset containing comparable asks and available transaction evidence, inventory age, seat-quality adjustments, time-to-event, demand indicators, minimum net recovery thresholds, reserve balances, and available working capital."
+      ],
+      "mechanism": "Use supported, authorized SkyBox/Automatiq integrations to broadcast legitimately acquired live-event inventory across eligible StubHub, Vivid Seats, SeatGeek, TickPick, GameTime, and Ticketmaster Resale channels, respecting purchase limits and access controls under the BOTS Act. Capture channel-specific demand with pre-event drop-curve markdowns, measuring net margin after acquisition and marketplace fees, expected unsold-inventory slippage, cancellation reserves, and financing costs while tracking post-event settlement float separately. Use immediate internal POS auto-holds and verified cross-channel delisting to reduce rather than guarantee elimination of double sales, validate any claimed 200% penalty against the applicable contract, and deliver SafeTix inventory through issuer-supported transfer and wallet flows rather than copied rotating barcodes.",
+      "metrics": [
+        "Realized net contribution by exchange and event after acquisition basis, marketplace and automation fees, unsold-inventory write-offs, cancellation or replacement losses and outstanding reserves, and settlement-float financing costs.",
+        "Median and 99th-percentile order-to-hold and cross-channel delisting acknowledgment latency, alongside stale-listing counts, overlapping confirmed orders, and actual contract-based penalty exposure.",
+        "Sell-through and net recovery by time-to-event pricing checkpoint, paired with forecast-versus-actual markdown losses, peak unsettled receivables, and days from sale to cleared payout."
+      ],
+      "name": "SkyBox/Automatiq Multi-Exchange POS Broadcast & Dynamic Drop-Curve Arbitrage",
+      "platform_risks": [
+        {
+          "detection_metric": "Any duplicate seat-level order, unresolved delisting acknowledgment, or synchronization delay beyond the channel-specific tested threshold.",
+          "failure_mode": "A delayed exchange update permits two buyers to purchase the same seat before all listings are removed.",
+          "fallback": "Pause broadcasting affected inventory, remove residual listings through authorized account interfaces, contact the exchanges promptly, and resolve duplicate obligations using permitted equivalent replacements or the required cancellation process.",
+          "impact": "Duplicate fulfillment obligations create replacement-ticket costs, contractual penalties that may reach 200% under some terms, withheld payouts, or account restrictions.",
+          "trigger": "Concurrent checkout, stale inventory feeds, connector outages, missed order notifications, or unacknowledged hold and delisting requests."
+        }
+      ],
+      "track_id": "track_2",
+      "workflow": [
+        "1. Connect only supported and authorized exchange accounts, normalize seat identifiers, test order and cancellation synchronization, and keep inventory off any channel whose listing or fulfillment rules cannot be satisfied.",
+        "2. Broadcast confirmed inventory with channel-specific fee-adjusted prices; on the first actionable order signal, place an immediate internal hold, request removal elsewhere, and monitor acknowledgments because exchange updates are not atomic.",
+        "3. Apply scheduled and demand-triggered markdowns as the event approaches, enforcing net-recovery floors and bounded price changes; isolate stale feeds and require an explicit operator decision before any below-floor liquidation.",
+        "4. Fulfill through the issuer's permitted transfer process, monitor acceptance and delivery deadlines, reconcile exchange settlements, and maintain cancellation and replacement reserves until the applicable exposure has ended."
+      ]
+    },
+    {
+      "id": "verified_fan_ticketing_and_drop_allocation_farming",
+      "track_id": "track_2",
+      "name": "Multi-Account Presale Code & Limited-Mintage Allocation Arbitrage",
+      "mechanism": "Operating hundreds of aged, human-scored 'free' fan-club, ticketing (Ticketmaster Verified Fan / AXS), U.S. Mint, and limited-edition luxury/collectible accounts—each backed by unique residential proxies, aged browser profiles, and virtual card numbers (VCCs)—to multiply lottery/queue odds by 100x–500x on strict 'limit 1–4 per account' releases trading at instant 50–300% secondary-market premiums.",
+      "inputs": [
+        "Aged ticketing, fan-club, and sovereign-mint account fleet with clean purchase histories",
+        "Anti-detect browser matrix with residential ISP proxies and unique SIM/SMS verification lines",
+        "Corporate virtual credit card (VCC) issuance API (Extend/Ramp/Slash) with distinct billing descriptors"
+      ],
+      "workflow": [
+        "Monitor upcoming concert tours, playoff games, U.S. Mint numismatic releases, and limited collectible drops with secondary-market spreads >=50%",
+        "Register the aged account fleet across presale lotteries and waiting rooms to secure high-priority access codes and low queue positions",
+        "Execute checkouts strictly on high-margin allocations (front-row/pit seats, low-mintage proof coins) using isolated VCCs per household profile",
+        "Flip allocations immediately via direct consignment, verified ticket exchanges (StubHub/SeatGeek/Vivid API), or pre-committed wholesale buyers"
+      ],
+      "metrics": [
+        "Presale code / top-1,000 queue-position hit rate (%) across the account cluster",
+        "Net realized secondary-market spread (%) after exchange/consignment fees",
+        "Inventory hold time (hours/days from checkout to settled resale payout)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Order cancellation or queue-score penalty from device/payment fingerprint linkage",
+          "trigger": "Reusing identical billing addresses, card BINs, or browser WebGL/Canvas fingerprints across Household-Limit-restricted drops",
+          "impact": "Canceled orders, revoked presale codes, or permanent account flagging",
+          "detection_metric": "Post-checkout order survival rate (%) and queue-score tier telemetry",
+          "fallback": "Maintain genuine distributed buyer consortiums with unique residential addresses, distinct bank BINs, and pre-sold wholesale buyer commitments before checkout"
+        }
+      ]
+    },
+    {
+      "id": "wholesale_buying_group_card_float_cycling",
+      "inputs": [
+        "Verified buying-group identity and operating terms, written purchase orders with fixed SKUs and acceptance criteria, warehouse instructions, settlement obligations and return or rejection allocation.",
+        "Commercial card agreements showing authorized use, purchase limits, eligible reward rates and caps, bonus conditions, statement timing, actual payment deadlines and any restrictions on resale purchases.",
+        "Supplier availability and invoices, documented resale or exemption eligibility where applicable, shipment insurance and tracking, working-capital reserves and a transaction-level inventory and cash ledger."
+      ],
+      "mechanism": "Fulfill genuine, pre-committed buying-group purchase orders through BuyForMeRetail, Pointsmaker or independently verified counterparties, using authorized commercial card purchases and documented delivery to designated warehouses in Delaware, New Hampshire or Oregon. Earn the contracted merchandise spread plus only eligible 2%–4% cashback or bonus value, using uncapped rewards solely when current issuer terms explicitly provide them; tax treatment depends on sourcing, possession, resale documentation and downstream obligations rather than a tax-free warehouse label. Match a contractually verified Net-3 ACH settlement to the actual card due date, which may provide up to approximately 60 days only on suitable products and purchase dates, without circular purchases, fictitious sales or issuer-limit evasion.",
+      "metrics": [
+        "Realized order contribution: buyer proceeds plus posted eligible rewards minus merchandise, freight, tax, insurance, financing, returns and dispute costs.",
+        "Cash-conversion spread: actual card payment due date minus cleared buyer settlement date, with stress tests for late acceptance and ACH reversals.",
+        "Exposure control: unsettled counterparty receivables, rejected-unit rate and liquid reserves divided by card obligations due before stressed settlement."
+      ],
+      "name": "Pre-Committed Buying-Group Fulfillment and Commercial Card Working-Capital Operator",
+      "platform_risks": [
+        {
+          "detection_metric": "Receivables aging beyond the contractual Net-3 start event, rejected deliveries, reward clawbacks and stressed cash coverage below the operator's minimum.",
+          "failure_mode": "Buying-group acceptance or settlement fails while the card issuer still requires full repayment or reverses expected rewards.",
+          "fallback": "Stop new purchases, meet card obligations from reserved cash, recover or resell legitimately owned goods through permitted channels and resume only after settlement reliability and issuer eligibility are confirmed.",
+          "impact": "A nominally profitable order becomes illiquid inventory and unsecured receivables, with interest charges, lost rewards or restricted card access.",
+          "trigger": "Counterparty insolvency, SKU rejection, warehouse delivery disputes, delayed ACH, reward exclusions or issuer restrictions on purchase and repayment patterns."
+        }
+      ],
+      "track_id": "track_2",
+      "workflow": [
+        "1. Verify the counterparty and current BuyForMeRetail or Pointsmaker program terms before funding any order; confirm that the PO is genuinely committed rather than treating an indicative buying list as guaranteed demand.",
+        "2. Calculate landed margin after tax, shipping, reward exclusions, returns and financing costs; size purchases to available cash repayment capacity and issuer-approved limits rather than assuming all cards provide uncapped rewards or 60-day float.",
+        "3. Purchase approved merchandise and ship to the specifically authorized DE, NH or OR warehouse with chain-of-custody evidence, recording title transfer, acceptance events and the exact event that starts Net-3 settlement.",
+        "4. Reconcile accepted units and cleared ACH proceeds, reserve for returns or reversals, pay the statement by its actual due date and fund subsequent genuine orders only within verified counterparty and issuer limits."
+      ]
+    },
+    {
+      "id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "track_id": "track_1",
+      "name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "mechanism": "Embedding a 'Free Automated Accounts Payable (AP) / Instant Vendor Settlement' platform inside high-volume B2B verticals (freight brokerage, construction general contracting, medical supply, property management, media agencies) that converts checks and ACH payables into single-use Visa/Mastercard Commercial Virtual Credit Cards (VCCs)—capturing 140–195 basis points (1.40%–1.95%) in uncapped commercial interchange rebates on hundreds of millions in third-party invoice volume.",
+      "inputs": [
+        "BaaS / Commercial Card Issuing bank partnership (Marqeta, Lithic, Stripe Issuing, Highnote, Cross River) on uncapped Visa/Mastercard Large-Ticket & Purchasing interchange tiers",
+        "ERP/accounting connector (QuickBooks, NetSuite, Sage, McLeod/TMW freight TMS) ingesting open vendor AP ledgers",
+        "Automated vendor-enablement call/email engine pitching 'Day-1 Instant Payment via Virtual Card vs. Net-45 Check/ACH'"
+      ],
+      "workflow": [
+        "Onboard mid-market companies with $20M–$250M/yr in fragmented vendor payables onto a $0-cost AP automation and working-capital portal",
+        "Cross-reference their vendor master list against Visa/Mastercard supplier-acceptance networks to flag vendors that already accept card payments",
+        "Offer remaining vendors immediate Day-1 invoice settlement via single-use emailed/API virtual card in exchange for waiving Net-30/Net-60 wait times",
+        "Earn 1.50%–1.95% gross interchange rebate from the issuing bank on every settled dollar, sharing 0.25%–0.50% with the corporate client while retaining 1.10%–1.45% net platform margin"
+      ],
+      "metrics": [
+        "Total annualized Gross Payment Volume (GPV $) converted from ACH/check to Virtual Card (target: 25–45% of total AP)",
+        "Net retained interchange spread in basis points (110–145 bps) after bank processor fees and client revenue share",
+        "Vendor card-acceptance retention rate (%) across repeat monthly invoices"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+          "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+          "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+          "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+          "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "aged_shelf_corp_tradeline_credit_stacking",
+      "track_id": "track_1",
+      "name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "mechanism": "Compare reinstated entities and genuine business credit facilities for working-capital financing; entity age is not operating history, and promotional APR economics require accurate underwriting and repayment capacity.",
+      "inputs": [
+        "Entity filings, beneficial ownership, and liability searches",
+        "Verified operating financials and genuine supplier tradelines",
+        "Lender eligibility, promotional APR, fee, and guarantee terms"
+      ],
+      "workflow": [
+        "1. Audit the entity's ownership, tax liabilities, and reinstatement requirements",
+        "2. Disclose acquisition and actual operating history; establish only genuine paid supplier accounts",
+        "3. Compare lender-approved applications with full debt disclosure and consolidated exposure limits",
+        "4. Fund documented business expenses and repay before promotional expiry using cash-flow reserves"
+      ],
+      "metrics": [
+        "Effective borrowing cost including fees",
+        "Debt service coverage under post-promotion APR",
+        "Utilization and days to promotional expiry"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Credit withdrawal or unaffordable repricing",
+          "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+          "impact": "Account closure, accelerated repayment, and guarantee exposure",
+          "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+          "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending"
+        }
+      ]
+    },
+    {
+      "id": "high_velocity_dm_outbound_systems",
+      "track_id": "track_2",
+      "name": "High-Velocity DM Outbound & Trigger Funnels",
+      "mechanism": "Replace blind cold mass-DM blasts (which die to PeerFloodError and silent Message Request graveyards) with high-velocity comment-to-DM triggers, hand-raiser reaction hooks, and multi-inbox warm signal routing.",
+      "inputs": [
+        "Short-form / community trigger posts ('Comment KEYWORD')",
+        "Signal-verified prospect handles",
+        "Automated DM qualification & booking bridge"
+      ],
+      "workflow": [
+        "Publish high-curiosity teardown or resource posts where prospects comment a trigger keyword or react to unlock a playbook or calculator",
+        "Deliver instant automated DM replies to warm hand-raisers (bypassing cold-DM filters because the user initiated interaction) or send contextual 1-to-1 DMs referencing an active public request",
+        "Qualify budget and timeline inside a 3-message DM micro-funnel and transition immediately to a booked call, checkout link, or owned SMS/email list"
+      ],
+      "metrics": [
+        "Trigger-comment to DM delivery rate",
+        "DM reply-to-qualified-conversation %",
+        "Revenue per 100 DM threads"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+          "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+          "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+          "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+          "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies"
+        }
+      ]
+    },
+    {
+      "id": "multi_inbox_free_workspace_outbound_clusters",
+      "track_id": "track_2",
+      "name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "mechanism": "Provisioning hundreds of isolated secondary domains across subsidized Microsoft 365 developer/partner tenants, Cloudflare Email Routing, and low-cost SMTP relays—sending strictly 15–25 plain-text emails per inbox per day across 300+ free/subsidized mailboxes to deliver 150,000+ monthly B2B cold emails into primary inboxes without paying $6–$12/seat retail Google Workspace pricing.",
+      "inputs": [
+        "Lookalike secondary domain portfolio with automated SPF, DKIM (2048-bit), DMARC (`p=quarantine`/`reject`), and custom tracking-free MX records",
+        "Subsidized M365 partner/developer tenants, Cloudflare Email Routing catch-alls, and distributed SMTP sending nodes",
+        "Automated peer-to-peer warmup network and master unibox reply-routing webhook"
+      ],
+      "workflow": [
+        "Provision 100–300 secondary sending domains and bind 2–3 mailboxes per domain via automated DNS and tenant scripts",
+        "Warm every mailbox for 14–21 days with realistic thread-depth conversations before introducing live outbound prospects",
+        "Cap daily outbound volume at <=20 zero-link, zero-tracking-pixel plain-text messages per mailbox per day to stay completely beneath ESP volume heuristics",
+        "Aggregate all prospect replies into a single unified AI-triaged inbox that books qualified B2B sales calls on pay-per-show or retainer terms"
+      ],
+      "metrics": [
+        "Primary-inbox placement rate (%) across Gmail and Microsoft 365 seed tests",
+        "All-in monthly infrastructure cost per 10,000 delivered plain-text emails ($)",
+        "Positive reply rate (%) and booked meetings per 1,000 prospects contacted"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+          "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+          "impact": "Tenant suspension or domain-level spam-folder routing",
+          "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+          "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap"
+        }
+      ]
+    },
+    {
+      "id": "competitor_intent_comparison_hijacking",
+      "track_id": "track_2",
+      "name": "Programmatic 'Alternative To / Pricing / Cancel' Intent Hijacking",
+      "mechanism": "Generate programmatic nominative-fair-use comparison matrices, live fee calculators, and migration guides targeting bottom-of-funnel '[Competitor] pricing', '[Competitor] cancel', and '[Competitor] vs [Offer]' queries to intercept buyers with 10–18% conversion rates.",
+      "inputs": [
+        "Competitor pricing tiers, hidden-fee schedules, & cancellation friction data",
+        "Bottom-of-funnel '[Brand] pricing / alternative / vs' keyword taxonomy",
+        "Interactive side-by-side TCO (Total Cost of Ownership) switching calculator"
+      ],
+      "workflow": [
+        "Ingest verified public pricing, contract lock-in terms, and fee schedules across 100+ incumbent providers in the target vertical",
+        "Publish objective, factual side-by-side comparison matrices and switching calculators under nominative fair use",
+        "Offer a 1-click migration concierge or instant savings quote that routes high-intent switchers into owned SaaS, agency, or high-ticket affiliate offers"
+      ],
+      "metrics": [
+        "Bottom-of-funnel visitor-to-lead conversion % (10–18% target)",
+        "Earnings per click (EPC) on switching-intent queries",
+        "Organic top-3 SERP share across '[Competitor] pricing/alternative' clusters"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "UDRP trademark complaint, DMCA notice, or false-advertising cease-and-desist",
+          "trigger": "Impersonating competitor login pages, using trademarked logos deceptively, or publishing fabricated competitor pricing",
+          "impact": "Page takedown demand or affiliate partner account review",
+          "detection_metric": "Quarterly pricing fact-check audit log and legal/compliance inbox alerts",
+          "fallback": "Rely strictly on nominative fair use (text-only brand names, timestamped public pricing citations, and zero logo spoofing)"
+        }
+      ]
+    },
+    {
+      "id": "telegram_channel_signal_scraping",
+      "track_id": "track_1",
+      "name": "Telegram Channel & Deal-Room Signal Scraping",
+      "mechanism": "Ingest public Telegram channel broadcasts, OTC deal rooms, wholesale distress feeds, and niche community message streams in real time to extract high-intent buyer/seller triggers before they hit public search—while avoiding naive member-list scraping traps.",
+      "inputs": [
+        "Public Telegram channel & group broadcast streams",
+        "Keyword & entity-regex signal filters",
+        "Inbound utility-bot & deal-desk capture endpoints"
+      ],
+      "workflow": [
+        "Monitor public channel message history and live broadcast streams for high-intent deal keywords (buying, distressed lot, urgent allocation, broker needed)",
+        "Score and deduplicate message authors and deal metadata against minimum ticket thresholds without scraping hidden member rosters",
+        "Route verified deal signals to an operator desk or deploy a pinned niche utility bot (alert/calculator/directory) that converts channel readers into inbound leads"
+      ],
+      "metrics": [
+        "Signal-to-response latency (seconds)",
+        "Qualified deal triggers per 1,000 messages",
+        "Inbound bot opt-in & close rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+          "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+          "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+          "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+          "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "detection_metric": "Percentage of advertised components with verified written transfer rights and confirmed delivery paths; require 100% before listing.",
+      "failure_mode": "A sourced allotment cannot be subdivided or transferred with the hospitality privileges advertised.",
+      "fallback": "Stop affected listings, retain or return inventory under the supplier agreement, and offer a buyer-accepted authorized replacement or the required refund; unwind refundable ancillary bookings.",
+      "impact": "Listing removal, failed fulfillment, replacement purchases, buyer refunds, and stranded hotel or transport commitments can eliminate the expected margin.",
+      "trigger": "Rights-holder restrictions, missed guest-nomination deadlines, or separate club and parking entitlements invalidate the proposed package.",
+      "play_id": "super_bowl_vip_hospitality_allotment_bundling",
+      "play_name": "Super Bowl, Tentpole Sports & Luxury Suite Seat-Splitting Hospitality Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "detection_metric": "Share of modeled postseason value supported by current contractual rights, plus unfunded mandatory purchase exposure and days remaining before each exercise deadline.",
+      "failure_mode": "The anticipated postseason option is absent, restricted, or withdrawn while the operator remains committed to season inventory.",
+      "fallback": "Assign zero value to unsupported allocations, retain funding for binding obligations, and liquidate eligible regular-season inventory through permitted channels without advertising unconfirmed postseason seats.",
+      "impact": "Projected option value disappears, mandatory purchases may remain payable, and the regular-season portfolio must stand on its own economics.",
+      "trigger": "Account-specific allocation rules, missed renewal or exercise deadlines, resale-policy enforcement, nonqualification, or championship access governed by a separate lottery.",
+      "play_id": "nfl_nba_ssl_season_strip_playoff_option_arbitrage",
+      "play_name": "Franchise SSL/PSL Season-Strip & Contingent Playoff Allocation Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "detection_metric": "Any duplicate seat-level order, unresolved delisting acknowledgment, or synchronization delay beyond the channel-specific tested threshold.",
+      "failure_mode": "A delayed exchange update permits two buyers to purchase the same seat before all listings are removed.",
+      "fallback": "Pause broadcasting affected inventory, remove residual listings through authorized account interfaces, contact the exchanges promptly, and resolve duplicate obligations using permitted equivalent replacements or the required cancellation process.",
+      "impact": "Duplicate fulfillment obligations create replacement-ticket costs, contractual penalties that may reach 200% under some terms, withheld payouts, or account restrictions.",
+      "trigger": "Concurrent checkout, stale inventory feeds, connector outages, missed order notifications, or unacknowledged hold and delisting requests.",
+      "play_id": "multi_exchange_pos_broadcast_drop_curve_arbitrage",
+      "play_name": "SkyBox/Automatiq Multi-Exchange POS Broadcast & Dynamic Drop-Curve Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Order cancellation or queue-score penalty from device/payment fingerprint linkage",
+      "trigger": "Reusing identical billing addresses, card BINs, or browser WebGL/Canvas fingerprints across Household-Limit-restricted drops",
+      "impact": "Canceled orders, revoked presale codes, or permanent account flagging",
+      "detection_metric": "Post-checkout order survival rate (%) and queue-score tier telemetry",
+      "fallback": "Maintain genuine distributed buyer consortiums with unique residential addresses, distinct bank BINs, and pre-sold wholesale buyer commitments before checkout",
+      "play_id": "verified_fan_ticketing_and_drop_allocation_farming",
+      "play_name": "Multi-Account Presale Code & Limited-Mintage Allocation Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "detection_metric": "Receivables aging beyond the contractual Net-3 start event, rejected deliveries, reward clawbacks and stressed cash coverage below the operator's minimum.",
+      "failure_mode": "Buying-group acceptance or settlement fails while the card issuer still requires full repayment or reverses expected rewards.",
+      "fallback": "Stop new purchases, meet card obligations from reserved cash, recover or resell legitimately owned goods through permitted channels and resume only after settlement reliability and issuer eligibility are confirmed.",
+      "impact": "A nominally profitable order becomes illiquid inventory and unsecured receivables, with interest charges, lost rewards or restricted card access.",
+      "trigger": "Counterparty insolvency, SKU rejection, warehouse delivery disputes, delayed ACH, reward exclusions or issuer restrictions on purchase and repayment patterns.",
+      "play_id": "wholesale_buying_group_card_float_cycling",
+      "play_name": "Pre-Committed Buying-Group Fulfillment and Commercial Card Working-Capital Operator",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Vendor card-surcharging pushback or Visa/Mastercard Level-2/Level-3 large-ticket interchange downgrade",
+      "trigger": "Large vendors refusing card settlement or failing to pass Level-3 line-item tax/invoice metadata with the authorization",
+      "impact": "Shift of specific vendors back to low-margin ACH or interchange rate step-down",
+      "detection_metric": "Automated Level-2/Level-3 data-enrichment pass rate and per-vendor surcharge detection",
+      "fallback": "Automatically inject Level-3 line-item invoice metadata at card creation, offer dynamic early-pay ACH discounts (1.5%–2% 10-day net) for card-averse vendors, and focus on fragmented long-tail vendor bases",
+      "play_id": "b2b_commercial_vcc_interchange_rebate_arbitrage",
+      "play_name": "B2B Commercial Virtual Card (VCC) Interchange & AP Settlement Rebate Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Credit withdrawal or unaffordable repricing",
+      "trigger": "Misstated operating history, undisclosed debt, or expired promotional terms",
+      "impact": "Account closure, accelerated repayment, and guarantee exposure",
+      "detection_metric": "Underwriting discrepancies and stressed repayment coverage",
+      "fallback": "Halt applications, correct disclosures, and use a transparent term facility or reduce financed spending",
+      "play_id": "aged_shelf_corp_tradeline_credit_stacking",
+      "play_name": "Aged Shelf-Corp Reinstatement, Primary Tradeline & 0%-APR Corporate Credit Stacking",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+      "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+      "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+      "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+      "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies",
+      "play_id": "high_velocity_dm_outbound_systems",
+      "play_name": "High-Velocity DM Outbound & Trigger Funnels",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Tenant-wide outbound throttling or domain-footprint blacklisting (Spamhaus DBL)",
+      "trigger": "Placing too many domains inside a single tenant, embedding tracking pixels, or exceeding 30 sends/day per mailbox",
+      "impact": "Tenant suspension or domain-level spam-folder routing",
+      "detection_metric": "Daily seed-list inbox placement (%) and bounce rate (<1.5% hard threshold)",
+      "fallback": "Enforce max 2–3 domains per tenant, strip all open/click tracking pixels, verify 100% of leads via SMTP catch-all checks before sending, and keep hot-standby warmed domains ready for instant swap",
+      "play_id": "multi_inbox_free_workspace_outbound_clusters",
+      "play_name": "Subsidized / Developer-Tenant Multi-Inbox Cold Outbound Infrastructure",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "UDRP trademark complaint, DMCA notice, or false-advertising cease-and-desist",
+      "trigger": "Impersonating competitor login pages, using trademarked logos deceptively, or publishing fabricated competitor pricing",
+      "impact": "Page takedown demand or affiliate partner account review",
+      "detection_metric": "Quarterly pricing fact-check audit log and legal/compliance inbox alerts",
+      "fallback": "Rely strictly on nominative fair use (text-only brand names, timestamped public pricing citations, and zero logo spoofing)",
+      "play_id": "competitor_intent_comparison_hijacking",
+      "play_name": "Programmatic 'Alternative To / Pricing / Cancel' Intent Hijacking",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "MTProto session ban (UserDeactivatedBanError) or FloodWaitError throttling",
+      "trigger": "Aggressive GetParticipantsRequest calls on hidden member lists or high-frequency polling from VoIP virtual SIMs",
+      "impact": "Immediate termination of listener sessions and loss of real-time channel feed ingestion",
+      "detection_metric": "Telegram FloodWaitError seconds per hour and session disconnect rate",
+      "fallback": "Restrict ingestion to passive read-only public broadcast listeners and capture prospects inbound via official Bot API utility bots",
+      "play_id": "telegram_channel_signal_scraping",
+      "play_name": "Telegram Channel & Deal-Room Signal Scraping",
+      "track_id": "track_1"
+    }
+  ]
+}
