@@ -1,0 +1,1695 @@
+from __future__ import annotations
+
+
+def build_volume_049_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-049-prediction-market-terminals-and-igaming-affiliates",
+        "volume_id": "vol-049-prediction-market-terminals-and-igaming-affiliates",
+        "title": (
+            "Regulated Prediction-Market Terminals & Licensed iGaming Affiliates "
+            "— Operator Companion Workbook"
+        ),
+        "subtitle": (
+            "6 Printable Operator Worksheets for Non-Custodial Event-Contract "
+            "Analytics, Licensed Affiliate Underwriting, CPA/NGR Economics, "
+            "Jurisdiction Controls, Reliable Attribution, and Small-Team Launch"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": (
+                    "Arbitrage Deal / Counterparty Underwriting & Spread Qualification"
+                ),
+                "purpose": (
+                    "Qualify the information advantage before spending acquisition "
+                    "capital. Separate subscription analytics, permitted builder "
+                    "payments, and licensed affiliate commissions; assess counterparties, "
+                    "settlement terms, and geographic eligibility. Treat every worked "
+                    "example as an illustrative underwriting case, not evidence of "
+                    "current permission or an executable trading opportunity."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Create three separate commercial lanes: analytics subscriptions, "
+                        "permitted builder payments, and licensed affiliate commissions. "
+                        "Identify the payer, earned event, collection timetable, and "
+                        "registration dependency for each; reject any arrangement requiring "
+                        "customer balances, pooled capital, or access to customer trading credentials."
+                    ),
+                    (
+                        "Read the actual counterparty agreement and current regulator "
+                        "records before assigning a permission status. Record the entity, "
+                        "jurisdiction, product, verification date, and reviewer; a recognized "
+                        "brand or accessible API does not establish that every proposed "
+                        "activity is permitted."
+                    ),
+                    (
+                        "Normalize contracts by settlement event, expiration, cancellation "
+                        "rules, fees, and executable size before calculating a spread. "
+                        "Keep event-contract probabilities separate from sportsbook "
+                        "implied probabilities unless the comparison clearly explains "
+                        "the different payout mechanics and outcome coverage."
+                    ),
+                    (
+                        "Request commission statements covering both peak football "
+                        "months and quieter periods. Rebuild approved first-time depositor "
+                        "counts, contractual deductions, reversals, and negative carryover "
+                        "from transaction evidence; headline CPA rates alone cannot support "
+                        "a defensible acquisition budget or revenue forecast."
+                    ),
+                    (
+                        "Assign a written accept, revise, or reject decision to each "
+                        "proposed relationship. Attach the supporting evidence and "
+                        "the next review date; unresolved licensing, settlement, or "
+                        "payment questions must stop the affected commercial lane "
+                        "without stopping independently qualified subscription work."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Commercial lane and earned-revenue event",
+                        "textarea",
+                        (
+                            "Describe exactly what the business sells, who pays, and "
+                            "which event earns each payment. Distinguish recurring "
+                            "software access from approved referrals and net affiliate "
+                            "commissions; exclude all customer deposits and trading turnover."
+                        ),
+                        (
+                            "The illustrative base plan earns $180,000 from analytics "
+                            "subscriptions, $12,500 from contractually permitted builder "
+                            "payments, $120,000 from approved CPA referrals, and $50,000 "
+                            "from NGR commissions. Total operator revenue is $362,500. "
+                            "Customer stakes, deposits, contract notional, and sportsbook "
+                            "handle never enter these four revenue accounts."
+                        ),
+                    ),
+                    field(
+                        "Counterparty identity and permission evidence",
+                        "textarea",
+                        (
+                            "Record the contracting legal entity, regulator record, "
+                            "covered product, geographic scope, and agreement signatory. "
+                            "Explain how the reviewer will establish that the specific "
+                            "entity can offer the proposed product to the targeted audience."
+                        ),
+                        (
+                            "Before contracting with a Kalshi-linked software program, "
+                            "the reviewer captures the relevant CFTC designation record "
+                            "and the program's written eligibility terms. A New Jersey "
+                            "sportsbook relationship receives separate NJ DGE verification. "
+                            "The evidence packet identifies both legal entities and "
+                            "does not transfer permission between unrelated products."
+                        ),
+                    ),
+                    field(
+                        "Publisher versus intermediary activity boundary",
+                        "textarea",
+                        (
+                            "List every proposed user interaction involving recommendations, "
+                            "account opening, orders, compensation, or credentials. Identify "
+                            "facts requiring an IB, FCM, or CTA analysis instead of "
+                            "assuming that non-custodial software automatically qualifies "
+                            "as an excluded publisher."
+                        ),
+                        (
+                            "Version one displays research and sends user-configured "
+                            "alerts; it does not accept orders, obtain trading keys, "
+                            "transmit instructions, or hold money. Counsel evaluates "
+                            "7 U.S.C. 1a(12), 1a(28), 1a(31), and 6d before "
+                            "adding compensated solicitation, individualized recommendations, "
+                            "or an account-opening integration. The operating description "
+                            "is attached to that review."
+                        ),
+                    ),
+                    field(
+                        "Settlement-equivalence comparison",
+                        "textarea",
+                        (
+                            "Specify the event, authoritative settlement source, outcome "
+                            "coverage, expiration, cancellation treatment, and payout "
+                            "unit for both instruments. Explain any difference that "
+                            "prevents a displayed probability gap from representing "
+                            "an economically matched comparison."
+                        ),
+                        (
+                            "Two election contracts reference different certification "
+                            "deadlines: one settles after state certification and the "
+                            "other after final electoral certification. A displayed "
+                            "four-point gap is therefore classified as a settlement-basis "
+                            "difference, not a locked spread. The terminal retains "
+                            "both rule excerpts and suppresses its matched-contract "
+                            "comparison badge."
+                        ),
+                    ),
+                    field(
+                        "Executable spread and fee qualification",
+                        "textarea",
+                        (
+                            "Calculate a matched hypothetical spread using executable "
+                            "prices, contract size, fees, and adverse-fill allowances. "
+                            "State the assumptions needed for complementary payouts, "
+                            "and distinguish an informational calculation from an "
+                            "order-execution service or promised customer return."
+                        ),
+                        (
+                            "For genuinely complementary $1 payouts, illustrative "
+                            "purchase prices of $0.46 and $0.49 total $0.95. "
+                            "Allowing $0.02 combined fees and $0.01 slippage leaves "
+                            "$0.02 per pair, or $20 across 1,000 pairs. "
+                            "The display marks simultaneous execution, available depth, "
+                            "settlement equivalence, and venue access as unconfirmed "
+                            "until separately evidenced."
+                        ),
+                    ),
+                    field(
+                        "Market-data rights and freshness",
+                        "textarea",
+                        (
+                            "Document the source, permitted display and redistribution "
+                            "rights, timestamp semantics, rate limits, and stale-data "
+                            "threshold. Explain how the product behaves when a "
+                            "venue offers polling rather than a permitted streaming "
+                            "connection for the required data."
+                        ),
+                        (
+                            "The ingestion plan uses a Kalshi WebSocket connection "
+                            "only within documented access rights. ForecastEx and "
+                            "sportsbook data require separately confirmed licensed "
+                            "delivery arrangements; streaming availability is not assumed. "
+                            "Quotes older than 1,500 milliseconds receive a stale "
+                            "flag, and the terminal stops actionable comparisons "
+                            "until fresh sequence continuity returns."
+                        ),
+                    ),
+                    field(
+                        "CPA qualification and rejection schedule",
+                        "textarea",
+                        (
+                            "Define a qualifying first-time depositor, eligible territory, "
+                            "age condition, minimum deposit, attribution window, and "
+                            "disallowed traffic. Calculate approved revenue after "
+                            "rejections instead of multiplying every submitted "
+                            "registration by the advertised headline CPA."
+                        ),
+                        (
+                            "The sample agreement pays $300 per approved first-time "
+                            "depositor within a 30-day attribution window. Of 500 "
+                            "submitted events, 400 qualify and 100 fail documented "
+                            "eligibility or duplication checks. Recognized CPA revenue "
+                            "is 400 multiplied by $300, or $120,000; "
+                            "the rejected events contribute no commission."
+                        ),
+                    ),
+                    field(
+                        "NGR definition and deduction waterfall",
+                        "textarea",
+                        (
+                            "Transcribe the contractual NGR formula, deduction categories, "
+                            "revenue-share percentage, negative-carryover basis, and "
+                            "cross-product netting rules. Reconcile operator-supplied "
+                            "statements to this definition before treating any "
+                            "reported gaming amount as earned affiliate revenue."
+                        ),
+                        (
+                            "The base illustration starts with $300,000 attributable "
+                            "GGR, subtracts $60,000 bonuses, $25,000 permitted tax "
+                            "deductions, and $15,000 administration charges, producing "
+                            "$200,000 eligible NGR. A 25% share earns $50,000. "
+                            "There is no opening deficit in this case; "
+                            "neither GGR nor eligible NGR is operator revenue."
+                        ),
+                    ),
+                    field(
+                        "Seasonality and counterparty concentration",
+                        "textarea",
+                        (
+                            "Map expected approved referrals by season and payer. "
+                            "Stress changes in CPA prices, monthly acquisition caps, "
+                            "payment timing, and single-counterparty concentration; "
+                            "identify the first budget reduction that preserves "
+                            "subscription service when affiliate demand weakens."
+                        ),
+                        (
+                            "The 400 approved base referrals comprise 240 during "
+                            "four peak months and 160 during eight quieter months. "
+                            "A downside case cuts quiet-month approvals to 80, "
+                            "reducing CPA revenue from $120,000 to $96,000 "
+                            "at an unchanged $300 rate. The founder reduces "
+                            "affiliate acquisition spending before cutting subscription "
+                            "support capacity."
+                        ),
+                    ),
+                    field(
+                        "Underwriting decision and stop conditions",
+                        "textarea",
+                        (
+                            "Record the relationship decision, responsible reviewer, "
+                            "required evidence, next review date, and explicit "
+                            "conditions that suspend promotion. Distinguish a "
+                            "commercial concern from a statutory restriction "
+                            "so operators know which remediation can reopen activity."
+                        ),
+                        (
+                            "Decision: revise the sample NGR agreement before launch "
+                            "because administration deductions lack a contractual cap. "
+                            "The founder requests a defined schedule and audit "
+                            "rights within ten business days. Promotion remains "
+                            "disabled if territorial authorization lapses, the "
+                            "counterparty changes its licensed entity, or an "
+                            "invoice exceeds its agreed payment deadline."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance only when every proposed revenue lane has a documented "
+                    "payer, earned event, permission analysis, fee or deduction "
+                    "schedule, collection term, and named owner. Suspend unresolved "
+                    "relationships while retaining independently qualified work."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": (
+                    "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator"
+                ),
+                "purpose": (
+                    "Reconcile the canonical scorecard to earned operator revenue "
+                    "and cash requirements without importing customer funds. Model "
+                    "subscription contribution, approved CPA economics, net NGR "
+                    "payments, collection delays, and business-owned reserves. "
+                    "Keep restricted cash, expense recognition, owner draws, and "
+                    "revenue deductions in separate calculations."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Copy all three canonical scenarios exactly before adding "
+                        "sensitivity cases. Their revenue, profit, margin, and team "
+                        "figures are fixed planning anchors; a revised assumption "
+                        "belongs in a separately labeled stress case rather than "
+                        "silently replacing the published base economics."
+                    ),
+                    (
+                        "Reconstruct annual revenue from subscription service periods, "
+                        "approved builder entitlements, accepted CPA events, and "
+                        "contractually calculated NGR shares. Document the principal-versus-agent "
+                        "assessment under ASC 606 where applicable; underlying customer "
+                        "activity never becomes revenue merely because a dashboard displays it."
+                    ),
+                    (
+                        "Assign acquisition and delivery costs to their actual "
+                        "commercial lanes before calculating contribution. Include "
+                        "rejected affiliate events, support labor, market-data fees, "
+                        "payment processing, refunds, and expected collection losses; "
+                        "avoid counting contractual NGR deductions twice as both "
+                        "revenue reductions and operating expenses."
+                    ),
+                    (
+                        "Build a weekly cash schedule using contractual payment "
+                        "dates and realistic dispute delays. Treat business-owned "
+                        "cash reserves as liquidity allocations, not automatic "
+                        "expenses; any escrow contemplated here holds only the "
+                        "company's money and never customer trading or gambling balances."
+                    ),
+                    (
+                        "Run independent stresses for off-season referral volume, "
+                        "commission rate reductions, negative carryover, and slower "
+                        "collections. Identify the minimum free-cash floor and "
+                        "specific spending response, then reconcile opening cash, "
+                        "receipts, payments, restricted transfers, and closing available cash."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Conservative canonical reconciliation",
+                        "textarea",
+                        (
+                            "Enter the conservative revenue bridge, total operating "
+                            "costs, annual owner net profit, margin, and staffing. "
+                            "Show arithmetic that preserves the canonical figures "
+                            "while keeping each earned-revenue lane separate "
+                            "from customer economic activity."
+                        ),
+                        (
+                            "Conservative revenue is $45,000 SaaS, $5,000 builder "
+                            "payments, $20,000 CPA, and $5,000 NGR commissions, "
+                            "totaling $75,000. Costs are $55,500, leaving $19,500 "
+                            "annual owner net profit. The margin is 26%, "
+                            "and staffing remains one full-time operator plus "
+                            "two contractors. This bridge is illustrative; "
+                            "the scorecard totals are fixed."
+                        ),
+                    ),
+                    field(
+                        "Base-case canonical reconciliation",
+                        "textarea",
+                        (
+                            "Reconcile the base scenario by revenue lane and "
+                            "expense category. State whether modeled full-time "
+                            "compensation is already included, and keep "
+                            "owner distributions separate so cash withdrawals "
+                            "do not accidentally reduce operating profit twice."
+                        ),
+                        (
+                            "Base revenue totals $362,500. Expenses are $96,000 "
+                            "full-time compensation, $48,000 contractors, $36,000 CAC, "
+                            "$18,000 infrastructure, $12,000 legal work, $6,750 "
+                            "business software, and $8,000 expected collection losses. "
+                            "Total costs are $224,750; owner net profit is "
+                            "$137,750 at 38.0%, after modeled compensation, "
+                            "with one full-time operator and two contractors."
+                        ),
+                    ),
+                    field(
+                        "Scaled canonical reconciliation",
+                        "textarea",
+                        (
+                            "Enter scaled annual revenue, costs, profit, and "
+                            "headcount without equating higher customer activity "
+                            "with higher recognized revenue. Explain the "
+                            "operational assumptions that support improved margin "
+                            "rather than merely increasing the margin percentage."
+                        ),
+                        (
+                            "Scaled revenue is $300,000 SaaS, $25,000 builder "
+                            "payments, $225,000 CPA, and $100,000 NGR commissions, "
+                            "totaling $650,000. Costs total $325,000, leaving "
+                            "$325,000 owner net profit at 50%. Staffing "
+                            "is two full-time operators plus three contractors, "
+                            "five people overall; shared ingestion and statement "
+                            "automation support the margin improvement."
+                        ),
+                    ),
+                    field(
+                        "Subscription and builder contribution",
+                        "textarea",
+                        (
+                            "Calculate subscription revenue from paid service "
+                            "months and earned pricing, then identify allocated "
+                            "delivery costs. Record builder payments separately "
+                            "with their contractual earning conditions; distinguish "
+                            "deferred subscription cash from revenue already earned."
+                        ),
+                        (
+                            "The base subscription plan contains 3,600 paid "
+                            "subscriber-months at $50, producing $180,000 annual "
+                            "revenue. Allocating $18,000 infrastructure and $9,000 "
+                            "CAC leaves $153,000 before labor and shared "
+                            "expenses. Builder revenue adds $12,500 only after "
+                            "qualifying terms are satisfied. An annual prepayment "
+                            "is recognized over its service period."
+                        ),
+                    ),
+                    field(
+                        "CPA cohort contribution after acquisition",
+                        "textarea",
+                        (
+                            "Compute acquisition cost per submitted and approved "
+                            "referral, earned CPA revenue, and contribution "
+                            "before shared expenses. Reconcile this lane's "
+                            "acquisition allocation to the company total "
+                            "and describe how reversals change the cohort."
+                        ),
+                        (
+                            "Affiliate CPA acquisition consumes $24,000 of the "
+                            "$36,000 base CAC budget. Five hundred submitted "
+                            "events cost $48 each; 400 approvals cost "
+                            "$60 each. At $300 per approval, revenue "
+                            "is $120,000 and contribution is $96,000 before "
+                            "labor and shared costs. The remaining CAC "
+                            "allocation is $9,000 SaaS and $3,000 NGR."
+                        ),
+                    ),
+                    field(
+                        "NGR retained share and negative carryover",
+                        "textarea",
+                        (
+                            "Calculate the affiliate's retained commission after "
+                            "contractual deductions and opening deficits. Specify "
+                            "whether carryover is measured before or after "
+                            "the revenue-share percentage, and explain how "
+                            "that convention affects the next payable statement."
+                        ),
+                        (
+                            "Base eligible NGR of $200,000 multiplied by "
+                            "retained_share of 0.25 earns $50,000. In "
+                            "a separate stress example, a $12,000 pre-share "
+                            "deficit offsets the next month's $28,000 positive "
+                            "NGR, leaving $16,000 and a $4,000 commission. "
+                            "The deficit is not deducted again after "
+                            "the 25% calculation or booked as company GMV."
+                        ),
+                    ),
+                    field(
+                        "Business reserve and customer-fund exclusion",
+                        "textarea",
+                        (
+                            "Identify unrestricted operating cash, company-owned "
+                            "restricted reserves, expected collection-loss expense, "
+                            "and any contractual escrow. Explain the accounting "
+                            "and access differences; no worksheet entry "
+                            "may authorize holding user deposits or wagering balances."
+                        ),
+                        (
+                            "The founder allocates $10,000 of company cash "
+                            "to a separate reversal reserve account. This "
+                            "transfer reduces freely deployable liquidity but "
+                            "does not itself create an expense. The "
+                            "base model's $8,000 expected collection-loss expense "
+                            "requires separate accounting support. Customer deposits "
+                            "remain entirely with the licensed venue, "
+                            "outside company accounts and ledgers."
+                        ),
+                    ),
+                    field(
+                        "Working-capital requirement and collection delay",
+                        "textarea",
+                        (
+                            "Estimate the affiliate cash gap from recognized "
+                            "commissions, contractual collection time, payable "
+                            "timing, and available liquidity. Separate the "
+                            "receivable balance from the operating funding "
+                            "requirement, and show a practical response to delayed settlement."
+                        ),
+                        (
+                            "Base CPA plus NGR revenue is $170,000 "
+                            "annually, approximately $14,166.67 monthly. At "
+                            "60-day collection timing, average affiliate receivables "
+                            "are roughly $28,333.33 before disputes. This "
+                            "receivable estimate is not itself required "
+                            "funding. A weekly cash forecast determines "
+                            "the gap; the founder pauses discretionary "
+                            "ads if available cash falls below $15,000."
+                        ),
+                    ),
+                    field(
+                        "Startup capital and operating-cost scope",
+                        "textarea",
+                        (
+                            "Allocate startup capital within the canonical "
+                            "range and define which costs the quoted "
+                            "monthly operating range includes. Reconcile "
+                            "that narrower infrastructure budget with the "
+                            "larger fully loaded annual scorecard expense base."
+                        ),
+                        (
+                            "A $35,000 startup allocation funds $10,000 "
+                            "product work, $8,000 legal and registration "
+                            "work, $4,000 data setup, and $13,000 "
+                            "working capital. It fits the $8,000–$45,000 "
+                            "range. The $1,500–$10,000 monthly opex range "
+                            "describes an operating envelope, not every "
+                            "fully loaded scenario; base annual costs "
+                            "of $224,750 average $18,729.17 monthly."
+                        ),
+                    ),
+                    field(
+                        "Downside profit and cash response",
+                        "textarea",
+                        (
+                            "Calculate a clearly labeled downside case "
+                            "without changing canonical scorecard figures. "
+                            "Include reduced affiliate approvals and an "
+                            "explicit expense response; state which "
+                            "assumptions remain unchanged and how much "
+                            "owner net profit survives."
+                        ),
+                        (
+                            "The seasonality stress removes 80 approved "
+                            "referrals at $300, reducing base revenue "
+                            "by $24,000 to $338,500. Cutting affiliate "
+                            "acquisition spending by $6,000 reduces costs "
+                            "from $224,750 to $218,750. Profit becomes "
+                            "$119,750, approximately 35.38%. All other "
+                            "lanes remain unchanged; this sensitivity "
+                            "does not replace the $137,750 canonical base profit."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Advance when all three canonical scenarios reconcile exactly, "
+                    "retained affiliate commissions are separated from customer "
+                    "activity, acquisition allocations total correctly, and a weekly "
+                    "cash forecast funds operations without customer balances."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": (
+                    "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet"
+                ),
+                "purpose": (
+                    "Translate commercial terms into reliable software and accounting "
+                    "events. Define market-data normalization, jurisdiction-aware "
+                    "promotion, signed attribution callbacks, idempotent commission "
+                    "entries, and statement reconciliation. Establish observable "
+                    "failure behavior so stale quotes, duplicate callbacks, or "
+                    "counterparty corrections cannot silently inflate revenue."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Draw separate event paths for paid analytics access "
+                        "and affiliate attribution. Identify each system of "
+                        "record, event producer, consumer, timestamp, and financial "
+                        "effect; the analytics path must never become an "
+                        "undocumented order-routing or customer-fund processing path."
+                    ),
+                    (
+                        "Specify deterministic identifiers and durable event "
+                        "storage before accepting production callbacks. Test "
+                        "duplicate delivery, delayed arrival, contradictory "
+                        "status changes, and replay; a successful HTTP "
+                        "response must follow durable acceptance rather "
+                        "than an uncommitted in-memory operation."
+                    ),
+                    (
+                        "Replay recorded market events through the normalizer "
+                        "with intentionally missing sequence numbers and "
+                        "out-of-order timestamps. Verify that comparison "
+                        "features stop when source freshness or settlement "
+                        "mapping fails, while clearly labeled historical "
+                        "research remains available to subscribers."
+                    ),
+                    (
+                        "Reconcile approved affiliate events to counterparty "
+                        "statements and bank receipts using distinct "
+                        "accrual and collection entries. Escalate mismatches "
+                        "by event identifier and amount; never overwrite "
+                        "historical entries simply to make a statement "
+                        "total agree with a bank deposit."
+                    ),
+                    (
+                        "Complete a pre-production evidence packet containing "
+                        "test inputs, expected outcomes, actual outcomes, "
+                        "reviewer names, and remaining defects. Require "
+                        "specific remediation for age, geography, attribution, "
+                        "ledger, or stale-data failures before enabling "
+                        "the affected feature for real customers."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "End-to-end event ownership map",
+                        "textarea",
+                        (
+                            "Describe the systems traversed by a subscription "
+                            "purchase and an affiliate referral. Identify "
+                            "which system owns payment, eligibility, identity, "
+                            "commission approval, and accounting, while "
+                            "explicitly excluding venue customer funds from company custody."
+                        ),
+                        (
+                            "Stripe records the software subscription payment, "
+                            "the application grants research access, and "
+                            "the ledger recognizes service revenue over "
+                            "time. Separately, an eligible referral reaches "
+                            "the licensed operator, which performs account "
+                            "verification and handles deposits. Its signed "
+                            "callback reports commission status; the company "
+                            "never receives the user's deposit or trading instructions."
+                        ),
+                    ),
+                    field(
+                        "Market event normalization contract",
+                        "textarea",
+                        (
+                            "Define normalized instrument identifiers, settlement "
+                            "references, bid and ask units, source "
+                            "timestamps, receive timestamps, and sequence "
+                            "numbers. Explain how adapters preserve "
+                            "venue-specific rules instead of erasing "
+                            "economically meaningful differences during normalization."
+                        ),
+                        (
+                            "Normalized event EV-1042 contains venue identifier, "
+                            "instrument identifier, settlement-rule hash, bid "
+                            "46 cents, ask 48 cents, source "
+                            "sequence 8217, and two UTC timestamps. "
+                            "The adapter stores original payload bytes "
+                            "alongside normalized values. A changed "
+                            "settlement-rule hash removes the instrument "
+                            "from matched comparisons until an analyst approves the new mapping."
+                        ),
+                    ),
+                    field(
+                        "Freshness and sequence-gap acceptance",
+                        "textarea",
+                        (
+                            "Set measurable freshness and continuity limits "
+                            "for each data source, including behavior "
+                            "during connection loss. Define when a "
+                            "snapshot can restore service and which "
+                            "user-visible information remains available while "
+                            "live comparisons are suspended."
+                        ),
+                        (
+                            "The sample service targets 500-millisecond internal "
+                            "processing latency and rejects live comparisons "
+                            "after 1,500 milliseconds of quote age. "
+                            "A sequence jump from 8217 to "
+                            "8220 triggers snapshot recovery and disables "
+                            "spread alerts. Historical charts remain "
+                            "readable with their actual timestamps; "
+                            "freshness is never implied by a newly rendered page."
+                        ),
+                    ),
+                    field(
+                        "Age and geographic eligibility decision",
+                        "textarea",
+                        (
+                            "Record the eligibility inputs, policy version, "
+                            "decision outcome, and minimal audit evidence "
+                            "for promotional access. Distinguish preliminary "
+                            "publisher screening from the licensed operator's "
+                            "authoritative identity and location checks "
+                            "before regulated participation."
+                        ),
+                        (
+                            "Request R-208 receives policy version 14, "
+                            "a 21-plus attestation, and location evidence "
+                            "consistent with New Jersey. The portal "
+                            "shows only approved New Jersey offers. "
+                            "A conflicting location signal removes "
+                            "promotional links and displays general "
+                            "research instead. The licensed operator "
+                            "still performs its required verification before accepting participation."
+                        ),
+                    ),
+                    field(
+                        "Signed server-to-server callback validation",
+                        "textarea",
+                        (
+                            "Specify callback authentication, timestamp tolerance, "
+                            "replay handling, schema validation, and "
+                            "credential rotation. Describe how raw "
+                            "payload bytes are authenticated and "
+                            "how rejected callbacks are investigated "
+                            "without leaking personal or secret data into logs."
+                        ),
+                        (
+                            "The receiver verifies an HMAC-SHA256 signature "
+                            "over the agreed timestamp and raw "
+                            "request body using hmac.compare_digest. A "
+                            "five-minute freshness window blocks stale "
+                            "new requests; authenticated retries use "
+                            "the durable event key. Key identifiers "
+                            "support rotation, and logs retain "
+                            "event references rather than credentials, complete identities, or deposit details."
+                        ),
+                    ),
+                    field(
+                        "Idempotency key and transactional persistence",
+                        "textarea",
+                        (
+                            "Define the unique business-event key and "
+                            "transaction boundary connecting event ingestion "
+                            "to ledger effects. Distinguish duplicate "
+                            "delivery from a genuine revision, and "
+                            "explain how failed processing can "
+                            "resume without creating duplicate commission revenue."
+                        ),
+                        (
+                            "The unique key combines operator account, "
+                            "source event identifier, event type, "
+                            "and source revision. A database "
+                            "transaction stores the accepted event "
+                            "and pending ledger action together. "
+                            "Replaying the same $300 approval "
+                            "twenty times leaves one $300 "
+                            "receivable. A later reversal receives its own linked revision and compensating entry."
+                        ),
+                    ),
+                    field(
+                        "Commission recognition and collection entries",
+                        "textarea",
+                        (
+                            "Write the accounting effects for pending, "
+                            "approved, paid, and reversed commissions. "
+                            "State when entitlement becomes supportable "
+                            "and variable consideration sufficiently "
+                            "constrained; keep collection, earned revenue, "
+                            "and contractual reversal treatment distinct."
+                        ),
+                        (
+                            "A pending CPA event creates no "
+                            "revenue entry. An earned, sufficiently "
+                            "supportable $300 approval debits affiliate "
+                            "receivables and credits CPA revenue. "
+                            "Collection debits cash and credits "
+                            "receivables. A subsequent contractual cancellation "
+                            "uses a linked revenue reversal, "
+                            "while inability to collect an otherwise valid receivable follows the credit-loss policy."
+                        ),
+                    ),
+                    field(
+                        "Statement and bank reconciliation",
+                        "textarea",
+                        (
+                            "Compare event-level accruals, counterparty statement "
+                            "totals, payment remittances, and bank "
+                            "receipts. Set a review threshold "
+                            "and owner for differences; preserve "
+                            "the distinction between withheld payment, "
+                            "reversed entitlement, and simple timing differences."
+                        ),
+                        (
+                            "The ledger shows 40 approved CPA "
+                            "events totaling $12,000. The statement "
+                            "includes 38 events and $11,400; "
+                            "the bank receives $11,400. Two "
+                            "missing identifiers create a $600 "
+                            "dispute, not an automatic write-off. "
+                            "The operations contractor requests clarification "
+                            "within two business days and retains the original approval evidence."
+                        ),
+                    ),
+                    field(
+                        "Data minimization and retention test",
+                        "textarea",
+                        (
+                            "Specify the smallest identifiers and attributes "
+                            "needed for attribution and audit. "
+                            "Separate operational retention, accounting "
+                            "retention, and deletion requests; test "
+                            "that logs, backups, and exports "
+                            "do not casually replicate unnecessary customer information."
+                        ),
+                        (
+                            "The attribution store uses a pseudonymous "
+                            "click identifier, jurisdiction decision, campaign "
+                            "identifier, and commission event reference. "
+                            "It excludes payment-card data and "
+                            "identity-document images. A proposed 90-day "
+                            "raw-click retention period is reviewed "
+                            "against contractual and statutory needs; "
+                            "accounting evidence follows a separate documented schedule with restricted access."
+                        ),
+                    ),
+                    field(
+                        "Pre-flight replay and defect disposition",
+                        "textarea",
+                        (
+                            "List reproducible test cases, expected "
+                            "results, actual evidence locations, and "
+                            "release-blocking defects. Include duplicate "
+                            "callbacks, invalid signatures, stale quotes, "
+                            "ineligible geography, refunds, and "
+                            "statement discrepancies rather than testing only successful purchases."
+                        ),
+                        (
+                            "The release suite contains 24 cases: "
+                            "eight attribution, six market-data, four "
+                            "eligibility, and six ledger tests. "
+                            "Expected results include one receivable "
+                            "after twenty duplicate deliveries and "
+                            "zero promotional links for restricted "
+                            "locations. Actual outcomes must be "
+                            "entered from execution; this example does not assert that any tests have run."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Enable production features only after recorded tests demonstrate "
+                    "correct eligibility behavior, stale-data suppression, authenticated "
+                    "callbacks, exactly-once financial effects, and reconcilable "
+                    "commission entries. Record every untested or failed case explicitly."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": (
+                    "Statutory, Licensing, Contract Addendum & Compliance Audit"
+                ),
+                "purpose": (
+                    "Convert legal boundaries into specific product constraints, "
+                    "contract language, and evidence ownership. Review federal "
+                    "derivatives classifications separately from state gaming "
+                    "requirements and Ontario rules. Establish product-specific "
+                    "permissions, accurate endorsements, responsible-gaming "
+                    "information, and documented suspension procedures before "
+                    "compensated promotion begins."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Prepare a factual activity description before asking "
+                        "for a classification determination. Include compensation, "
+                        "personalization, solicitation, credentials, order handling, "
+                        "and money movement; publisher terminology or a "
+                        "non-custodial architecture alone does not resolve "
+                        "all CFTC registration questions."
+                    ),
+                    (
+                        "Build a jurisdiction-by-product register using current "
+                        "official materials and counterparty agreements. Record "
+                        "which entity needs a license, registration, "
+                        "notification, or contractual authorization; never "
+                        "assume that requirements for one state, "
+                        "product, or compensation model transfer to another."
+                    ),
+                    (
+                        "Negotiate objective commission definitions and inspection "
+                        "rights before buying traffic. Address qualifying "
+                        "events, deductions, payment dates, negative "
+                        "carryover, attribution conflicts, reversals, and "
+                        "termination tails; vague language about operator "
+                        "discretion can erase otherwise attractive cohort economics."
+                    ),
+                    (
+                        "Review every acquisition surface for age "
+                        "restriction, geographic targeting, relationship disclosure, "
+                        "promotion accuracy, and responsible-gaming resources. "
+                        "Store approved versions and test rendered "
+                        "pages; a correct policy document cannot "
+                        "repair a misleading comparison page delivered to users."
+                    ),
+                    (
+                        "Assign renewal dates, change monitoring, and "
+                        "suspension authority to named operating roles. "
+                        "When a venue's status or legal "
+                        "scope changes, disable affected promotion "
+                        "and integrations promptly while preserving "
+                        "records needed to reconcile already earned commissions."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Federal derivatives classification memorandum",
+                        "textarea",
+                        (
+                            "Document the proposed activity against relevant "
+                            "CEA definitions and registration provisions. "
+                            "Ask the reviewer to address IB, "
+                            "FCM, and CTA considerations separately "
+                            "and identify the facts that "
+                            "would change the classification of the product."
+                        ),
+                        (
+                            "The review references 7 U.S.C. "
+                            "1a(12), 1a(28), 1a(31), and 6d, "
+                            "plus 17 CFR 1.3 and "
+                            "3.10 as applicable. It examines "
+                            "whether research is genuinely impersonal "
+                            "and whether compensation involves solicitation. "
+                            "Any reliance on CTA exclusions "
+                            "or 17 CFR 4.14 is supported by specific facts, not a website label."
+                        ),
+                    ),
+                    field(
+                        "DCM and product-scope verification",
+                        "textarea",
+                        (
+                            "Record the venue designation evidence, "
+                            "specific contract category, applicable "
+                            "restrictions, and pending legal developments "
+                            "relevant to the proposed audience. "
+                            "Explain why venue-level designation "
+                            "does not eliminate product-specific or jurisdiction-specific review."
+                        ),
+                        (
+                            "The venue packet references 7 U.S.C. "
+                            "7 and 17 CFR Part "
+                            "38 for DCM status, then "
+                            "separately identifies the actual event "
+                            "contracts displayed. Sports-related contracts "
+                            "receive their own current jurisdictional "
+                            "assessment. A designated venue is "
+                            "not treated as automatic permission to market every listed contract everywhere."
+                        ),
+                    ),
+                    field(
+                        "New Jersey and Pennsylvania requirements",
+                        "textarea",
+                        (
+                            "Identify the exact affiliate activity, "
+                            "compensation arrangement, regulator process, "
+                            "and required status in New "
+                            "Jersey and Pennsylvania. Attach "
+                            "current regulator instructions and "
+                            "distinguish vendor obligations from the licensed operator's own permissions."
+                        ),
+                        (
+                            "The New Jersey workstream checks "
+                            "N.J.S.A. 5:12-92 and applicable "
+                            "NJ DGE vendor requirements, including "
+                            "N.J.A.C. 13:69J where relevant. "
+                            "The Pennsylvania workstream separately "
+                            "reviews 4 Pa.C.S. Chapters "
+                            "13B and 13C and PGCB "
+                            "instructions. Neither workstream opens until the specific activity and required status are documented."
+                        ),
+                    ),
+                    field(
+                        "Michigan and West Virginia requirements",
+                        "textarea",
+                        (
+                            "Record product-specific requirements for Michigan "
+                            "and West Virginia, including the "
+                            "affiliate's role and the counterparty's "
+                            "authorization. Assign an evidence "
+                            "owner and explain how "
+                            "territorial controls respond to a suspended or expired status."
+                        ),
+                        (
+                            "Michigan review distinguishes internet gaming "
+                            "under MCL 432.301 et seq. "
+                            "from sports betting under MCL "
+                            "432.401 et seq. West Virginia "
+                            "review separates W. Va. Code "
+                            "29-22D and 29-22E. The "
+                            "operations owner confirms applicable "
+                            "supplier or affiliate requirements with current MGCB and West Virginia Lottery materials before activation."
+                        ),
+                    ),
+                    field(
+                        "Ontario market and promotional controls",
+                        "textarea",
+                        (
+                            "Document the Ontario operator relationship, "
+                            "AGCO advertising restrictions, applicable "
+                            "supplier status, age threshold, "
+                            "and geographic targeting. Keep "
+                            "Canadian requirements separate from "
+                            "United States state registrations and explain any stricter company-wide age policy."
+                        ),
+                        (
+                            "Ontario review uses the Gaming "
+                            "Control Act, 1992, S.O. "
+                            "1992, c. 24 and current "
+                            "AGCO internet-gaming standards. The "
+                            "portal checks the operator's Ontario "
+                            "authorization and relevant iGaming Ontario "
+                            "relationship. Its company-wide 21-plus "
+                            "policy is stricter than Ontario's 19-plus casino threshold; public bonus advertising receives separate review."
+                        ),
+                    ),
+                    field(
+                        "Age, location, and responsible-gaming presentation",
+                        "textarea",
+                        (
+                            "Specify where age restrictions, territorial "
+                            "limitations, and current help resources "
+                            "appear across landing pages, "
+                            "comparison cards, emails, and "
+                            "mobile layouts. Identify who "
+                            "verifies jurisdiction-specific wording and how changes reach every published surface."
+                        ),
+                        (
+                            "Every promotional card carries the "
+                            "21-plus company policy, applicable "
+                            "territory, and a clearly reachable "
+                            "responsible-gaming resource. The content "
+                            "owner verifies current regulator-approved "
+                            "helpline details for NJ, PA, "
+                            "MI, WV, and Ontario before "
+                            "publication. A monthly mobile screenshot audit confirms that disclosures remain visible without opening a separate offer."
+                        ),
+                    ),
+                    field(
+                        "Affiliate material-connection disclosure",
+                        "textarea",
+                        (
+                            "Write the relationship disclosure and "
+                            "placement rule for ranked "
+                            "comparisons, editorial reviews, social "
+                            "posts, and email promotions. "
+                            "Explain how compensation affects "
+                            "rankings and how the presentation satisfies clear, conspicuous disclosure expectations."
+                        ),
+                        (
+                            "A comparison page states, 'We "
+                            "may receive payment when an "
+                            "eligible reader joins a listed "
+                            "operator; commercial terms do not "
+                            "change the published scoring method.' "
+                            "The disclosure appears before outbound "
+                            "offer links and alongside paid "
+                            "placements. Review uses 16 CFR 255.5, and any actual paid-ranking arrangement is described accurately."
+                        ),
+                    ),
+                    field(
+                        "Commission addendum and audit rights",
+                        "textarea",
+                        (
+                            "Draft concrete commercial clauses covering "
+                            "earned events, deduction schedules, "
+                            "negative carryover, payment timing, "
+                            "statement detail, and dispute "
+                            "rights. State which provisions "
+                            "are negotiation requests rather than executed terms, and identify who can approve changes."
+                        ),
+                        (
+                            "Proposed addendum: '$300 is payable "
+                            "for each approved qualifying depositor; "
+                            "statements identify every rejection reason. "
+                            "NGR deductions are limited to "
+                            "the attached schedule. No cross-brand "
+                            "negative carryover applies. Undisputed "
+                            "amounts are due within 30 "
+                            "days of statement issuance.' These terms remain proposed until both authorized signatories execute them."
+                        ),
+                    ),
+                    field(
+                        "Traffic restrictions and prohibited routing",
+                        "textarea",
+                        (
+                            "Specify prohibited acquisition methods and "
+                            "destinations, including unlicensed offshore "
+                            "offers and unlawful sweepstakes "
+                            "products. Address minors, self-excluded "
+                            "audiences where applicable, misleading "
+                            "claims, and any request to evade venue identity or location controls."
+                        ),
+                        (
+                            "The media agreement prohibits promotion "
+                            "to minors, fabricated endorsements, "
+                            "misleading income claims, and routing "
+                            "United States users to unlicensed "
+                            "offshore or crypto gambling venues "
+                            "or unlawful sweepstakes casinos. "
+                            "Campaigns cannot suggest bypassing "
+                            "location checks. An offending destination is removed immediately, and the traffic source is suspended pending investigation."
+                        ),
+                    ),
+                    field(
+                        "Renewal register and change-response authority",
+                        "textarea",
+                        (
+                            "Assign ownership for registration renewals, "
+                            "counterparty status checks, contract "
+                            "changes, advertising standards, and "
+                            "legal developments. Define the "
+                            "time allowed to suspend "
+                            "affected functionality and the evidence required before restoring commercial activity."
+                        ),
+                        (
+                            "The founder owns statutory status, "
+                            "the operations contractor owns renewal "
+                            "reminders, and counsel reviews material "
+                            "scope changes. Reminders occur 60, "
+                            "30, and 10 days before "
+                            "documented deadlines. A confirmed "
+                            "authorization lapse disables affected "
+                            "offers immediately; restoration requires updated evidence, product-owner confirmation, and a recorded eligibility test."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Proceed only after the actual activity classification, "
+                    "jurisdiction requirements, executed commercial terms, current "
+                    "disclosures, and responsible owners are documented. Unresolved "
+                    "territories and products remain disabled independently of "
+                    "qualified analytics subscription services."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": (
+                    "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker"
+                ),
+                "purpose": (
+                    "Automate repeatable information processing without automating "
+                    "unauthorized market access. Link licensed data ingestion, "
+                    "probability calculations, subscriber delivery, and eligible "
+                    "affiliate attribution to observable controls. Build acquisition "
+                    "loops around useful research while defining fallbacks for "
+                    "outages, budget cuts, settlement changes, and counterparty disputes."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Prioritize automation by verified workload and "
+                        "error reduction rather than technical novelty. "
+                        "Measure current manual minutes, expected "
+                        "run volume, exception frequency, and "
+                        "maintenance burden; automate stable rules "
+                        "first and preserve human review for changing commercial or statutory interpretations."
+                    ),
+                    (
+                        "Use only documented, permitted data interfaces "
+                        "and distribution rights. Configure source-specific "
+                        "rate limits, backoff, and credential "
+                        "scopes; if a desired feed "
+                        "is unavailable, redesign the feature "
+                        "instead of scraping restricted content or implying unsupported real-time coverage."
+                    ),
+                    (
+                        "Build the acquisition loop around original "
+                        "methodology, transparent comparisons, useful alerts, "
+                        "and subscription retention. Separate educational "
+                        "engagement from regulated promotional eligibility; "
+                        "a reader's interest in probabilities "
+                        "does not establish that a sportsbook offer may be displayed."
+                    ),
+                    (
+                        "Instrument every automation with an owner, "
+                        "latency target, error budget, alert "
+                        "threshold, and recovery procedure. Test "
+                        "loss of a market-data source "
+                        "and an affiliate partner separately; "
+                        "a single outage should not corrupt the ledger or collapse unrelated subscriber features."
+                    ),
+                    (
+                        "Review acquisition economics weekly and "
+                        "counterparty concentration monthly. Reduce "
+                        "spending when approved-event contribution "
+                        "falls below the written floor; "
+                        "retain subscriber service and reconciliation "
+                        "capacity so growth decisions do not sacrifice collection quality or existing customer trust."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Automation backlog and labor return",
+                        "textarea",
+                        (
+                            "Rank candidate automations by hours "
+                            "saved, financial error prevented, "
+                            "implementation effort, and maintenance "
+                            "ownership. Include exception handling "
+                            "in the estimate so "
+                            "nominal processing speed does not conceal a growing manual-review queue."
+                        ),
+                        (
+                            "Monthly statement matching takes 12 "
+                            "hours across four counterparties. "
+                            "A 24-hour implementation reduces "
+                            "routine matching to three hours "
+                            "while retaining two hours for "
+                            "exceptions, saving seven hours "
+                            "monthly. The founder prioritizes "
+                            "this over a cosmetic dashboard because it accelerates collection and exposes missing commission events."
+                        ),
+                    ),
+                    field(
+                        "Permitted feed architecture and isolation",
+                        "textarea",
+                        (
+                            "Describe ingestion adapters, message storage, "
+                            "normalization, and subscriber delivery "
+                            "for each permitted source. "
+                            "Document credential scope and "
+                            "failure isolation; avoid implying "
+                            "that every named venue supplies equivalent streaming or redistribution functionality."
+                        ),
+                        (
+                            "Separate adapters handle an authorized "
+                            "Kalshi stream, a contracted ForecastEx "
+                            "delivery channel, and licensed "
+                            "sportsbook odds data. Each writes "
+                            "immutable source events before "
+                            "normalization. Read-only credentials cannot "
+                            "place orders. A failed "
+                            "sportsbook adapter stops its comparisons while subscription billing, historical analytics, and other permitted feeds continue."
+                        ),
+                    ),
+                    field(
+                        "Probability methodology and expected-value labels",
+                        "textarea",
+                        (
+                            "Define probability estimation, fee adjustment, "
+                            "calibration measurement, and uncertainty "
+                            "presentation. Distinguish model-implied "
+                            "expected value from realized "
+                            "profit and explain how "
+                            "settlement differences or incomplete outcome sets invalidate simple cross-venue calculations."
+                        ),
+                        (
+                            "A model estimates a 54% "
+                            "event probability against an "
+                            "illustrative all-in contract cost "
+                            "of $0.51, implying $0.03 "
+                            "expected value per $1 "
+                            "payout before model error. "
+                            "The interface labels this "
+                            "a model estimate, displays calibration history, and suppresses the figure when settlement mapping fails or the quote becomes stale."
+                        ),
+                    ),
+                    field(
+                        "Alert delivery and subscriber preference controls",
+                        "textarea",
+                        (
+                            "Specify user-selected alert thresholds, delivery "
+                            "channels, duplicate suppression, frequency "
+                            "limits, and cancellation handling. "
+                            "Keep the alert service "
+                            "informational and explain how "
+                            "it avoids handling orders, customer credentials, or personalized account instructions."
+                        ),
+                        (
+                            "A subscriber selects a three-point "
+                            "probability-gap threshold and a "
+                            "maximum of five alerts "
+                            "daily. The service deduplicates "
+                            "by instrument, methodology version, "
+                            "and five-minute window. Messages "
+                            "link to research rather "
+                            "than transmitting orders. Unsubscribing stops promotional email promptly, while necessary subscription receipts remain on a separate transactional channel."
+                        ),
+                    ),
+                    field(
+                        "Search and editorial acquisition loop",
+                        "textarea",
+                        (
+                            "Plan a repeatable publishing cycle "
+                            "that produces original, evidence-based "
+                            "research and measurable subscription "
+                            "interest. Separate editorial utility "
+                            "from affiliate placement and "
+                            "identify how published methodology, corrections, and attribution preserve credibility."
+                        ),
+                        (
+                            "The weekly cycle publishes one "
+                            "settlement-rule explainer, one probability "
+                            "calibration report, and one "
+                            "jurisdiction-specific comparison update. Each "
+                            "page links to a "
+                            "sample terminal and clearly "
+                            "identifies paid relationships. Acquisition "
+                            "reporting measures qualified trial starts and paid retention, not merely clicks sent to an operator or raw customer deposits."
+                        ),
+                    ),
+                    field(
+                        "Trial conversion and subscription retention",
+                        "textarea",
+                        (
+                            "Calculate the funnel from qualified "
+                            "visitors to trials, paid "
+                            "subscribers, and retained subscribers. "
+                            "Use service-period cohorts and "
+                            "real acquisition spend; do "
+                            "not annualize a short promotional spike without explaining churn and seasonality assumptions."
+                        ),
+                        (
+                            "An illustrative month attracts 2,000 "
+                            "qualified research visitors, 160 "
+                            "trial starts, and 32 "
+                            "paid conversions. Visitor-to-paid conversion "
+                            "is 1.6%. With $750 "
+                            "allocated SaaS acquisition spending, "
+                            "new-subscriber CAC is $23.44. "
+                            "The cohort is tracked separately from the canonical 300 average subscribers, which also includes retained customers from earlier periods."
+                        ),
+                    ),
+                    field(
+                        "Affiliate acquisition budget and contribution floor",
+                        "textarea",
+                        (
+                            "Set spend limits using approved "
+                            "events and collected economics "
+                            "rather than platform-reported registrations. "
+                            "Define the contribution floor, "
+                            "review cadence, and response "
+                            "to lower CPA rates or increasing rejection percentages in each eligible jurisdiction."
+                        ),
+                        (
+                            "The base CPA lane spends "
+                            "$24,000 annually for 400 "
+                            "approved events, or $60 "
+                            "per approval. At a "
+                            "$300 rate, contribution before "
+                            "shared costs is $240 "
+                            "per approval. A campaign "
+                            "is paused if trailing approved-event CAC exceeds $120 for two weekly reviews or the operator reduces its payable rate without notice."
+                        ),
+                    ),
+                    field(
+                        "Outage fallback and circuit-breaker policy",
+                        "textarea",
+                        (
+                            "Define trigger thresholds, user messaging, "
+                            "feature degradation, recovery tests, "
+                            "and incident ownership for "
+                            "each critical dependency. Avoid "
+                            "substituting a second source "
+                            "unless its display rights and settlement semantics are independently suitable for the same feature."
+                        ),
+                        (
+                            "Three failed connection attempts within "
+                            "60 seconds open the "
+                            "source circuit breaker. The "
+                            "terminal suppresses live comparisons "
+                            "and shows timestamped historical "
+                            "charts with an outage "
+                            "notice. Recovery requires a "
+                            "valid snapshot and continuous sequence processing for five minutes. The engineer cannot silently substitute an unlicensed odds feed to preserve a latency target."
+                        ),
+                    ),
+                    field(
+                        "Counterparty dispute and negative-carryover fallback",
+                        "textarea",
+                        (
+                            "Describe how disputed deductions, withheld "
+                            "payments, and persistent negative "
+                            "carryover change promotion and "
+                            "forecasting. Preserve contractual collection "
+                            "rights while preventing fresh "
+                            "acquisition spending from deepening exposure to an economically impaired partner."
+                        ),
+                        (
+                            "A partner adds $8,000 of "
+                            "unsupported administration deductions to "
+                            "its monthly statement. Operations "
+                            "opens a documented dispute "
+                            "and removes the affected "
+                            "campaign from paid acquisition. "
+                            "Existing earned receivables remain "
+                            "tracked. Forecasts apply the executed agreement, but cash planning assumes delayed collection until the counterparty supplies support or resolves the discrepancy."
+                        ),
+                    ),
+                    field(
+                        "Weekly observability and exception ownership",
+                        "textarea",
+                        (
+                            "List operational indicators with thresholds, "
+                            "owners, and escalation actions. "
+                            "Include feed freshness, callback "
+                            "rejection rates, unmatched commissions, "
+                            "subscription churn, and geographic "
+                            "suppression so technical success cannot conceal commercial or eligibility failures."
+                        ),
+                        (
+                            "The engineer reviews p95 processing "
+                            "latency below 500 milliseconds "
+                            "and stale-comparison suppression. Operations "
+                            "reviews callback authentication failures "
+                            "above 1% and unmatched "
+                            "commissions above $300. The "
+                            "founder reviews monthly subscriber "
+                            "churn above 5% and every unexpected geographic exposure. Each exception receives an owner, due date, and linked evidence of resolution."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Scale acquisition only when permitted feeds, measurable "
+                    "subscriber utility, approved-event contribution, functioning "
+                    "fallbacks, and named exception owners are demonstrated. "
+                    "Automation must preserve eligibility decisions and ledger "
+                    "integrity during outages and commercial disputes."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": (
+                    "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger"
+                ),
+                "purpose": (
+                    "Sequence a small-team launch around verifiable operating "
+                    "evidence rather than premature revenue claims. Assign "
+                    "deliverables, cash limits, and decision rights across "
+                    "30 days while respecting the two-to-six-month first-deal "
+                    "horizon. Preserve transferable contracts, reproducible "
+                    "metrics, and organized records for future diligence."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Treat the first 30 days as "
+                        "a qualification and product-readiness sprint, "
+                        "not a promise of closed "
+                        "affiliate revenue. The canonical "
+                        "time to first deal is "
+                        "two to six months; licensing and commercial negotiations may extend beyond the sprint."
+                    ),
+                    (
+                        "Assign one accountable owner to "
+                        "each deliverable while preserving "
+                        "the canonical team structure. "
+                        "Contractors can execute defined "
+                        "work, but the founder "
+                        "retains responsibility for commercial decisions, evidence completeness, cash management, and confirmation that regulated features remain within reviewed scope."
+                    ),
+                    (
+                        "Use weekly evidence reviews to "
+                        "compare shipped functionality against "
+                        "the intended operating model. "
+                        "Record actual test results, "
+                        "counterparty responses, and budget "
+                        "usage; do not convert planned milestones into completed facts merely because their scheduled dates have passed."
+                    ),
+                    (
+                        "Build the KPI scorecard from "
+                        "reconciled source records and "
+                        "clearly defined denominators. Separate "
+                        "revenue, contribution, owner profit, "
+                        "cash collections, customer activity, "
+                        "and product reliability; every metric should answer a specific operating question and have a named decision owner."
+                    ),
+                    (
+                        "Prepare exit-readiness records from the "
+                        "start without assuming that "
+                        "licenses, affiliate contracts, or "
+                        "data rights transfer automatically. "
+                        "Track assignment provisions, change-of-control "
+                        "requirements, intellectual-property ownership, and data limitations so future diligence does not depend on reconstructing undocumented decisions."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days 1–7 qualification deliverables",
+                        "textarea",
+                        (
+                            "Define the first week's evidence "
+                            "deliverables, owners, budget ceiling, "
+                            "and dependencies. Prioritize activity "
+                            "classification, counterparty eligibility, "
+                            "commercial assumptions, and source "
+                            "rights before commissioning integrations that may require a different operating model."
+                        ),
+                        (
+                            "By day seven, the founder "
+                            "prepares the activity memorandum, "
+                            "three-lane revenue model, and "
+                            "five-jurisdiction research register. Counsel "
+                            "receives a $2,500 initial "
+                            "review authorization within the "
+                            "$8,000 legal allocation. The "
+                            "engineer inventories permitted data interfaces. Completion requires actual documents and reviewer feedback, not merely scheduled meetings or assumed affiliate acceptance."
+                        ),
+                    ),
+                    field(
+                        "Days 8–14 product and ledger build",
+                        "textarea",
+                        (
+                            "Specify the smallest useful analytics "
+                            "release and financial-event implementation. "
+                            "Include permitted ingestion, stale "
+                            "data behavior, subscription service "
+                            "periods, and replay-safe attribution "
+                            "without adding order execution or customer-fund handling to accelerate launch."
+                        ),
+                        (
+                            "The engineering contractor builds one "
+                            "authorized feed adapter, timestamped "
+                            "research charts, subscription entitlements, "
+                            "and a durable callback "
+                            "inbox. The product-work budget "
+                            "remains capped at $10,000 "
+                            "for the initial scope. "
+                            "A recorded demonstration must show stale-quote suppression and one commission entry after repeated delivery of the same authenticated test event."
+                        ),
+                    ),
+                    field(
+                        "Days 15–21 commercial and content readiness",
+                        "textarea",
+                        (
+                            "Identify commercial negotiations, editorial assets, "
+                            "disclosure checks, and jurisdiction "
+                            "tests for week three. "
+                            "Separate draft offers from "
+                            "executed permissions and explain "
+                            "which nonpromotional product work can continue while affiliate registration or contracting remains incomplete."
+                        ),
+                        (
+                            "Operations prepares two proposed affiliate "
+                            "addenda, six original research "
+                            "articles, and mobile disclosure "
+                            "screenshots. Promotional links remain "
+                            "disabled for every relationship "
+                            "without completed requirements. The "
+                            "subscription demonstration can still "
+                            "show permitted historical analytics. The founder records counterparty responses and unresolved terms rather than counting draft agreements as signed deals."
+                        ),
+                    ),
+                    field(
+                        "Days 22–30 controlled release decision",
+                        "textarea",
+                        (
+                            "Define release evidence, permitted audience, "
+                            "customer-support capacity, incident response, "
+                            "and remaining restrictions. State "
+                            "which features can launch "
+                            "independently and which require "
+                            "additional statutory, contractual, or technical evidence before exposure to real users."
+                        ),
+                        (
+                            "A proposed 25-person analytics pilot "
+                            "begins only after recorded "
+                            "billing, data-rights, security, and "
+                            "stale-feed tests pass. Affiliate "
+                            "promotion remains off where "
+                            "requirements are incomplete. The "
+                            "founder reviews pilot support "
+                            "daily and preserves the $15,000 free-cash floor. Day 30 produces an evidence-based continuation decision, not a declaration that annual scorecard revenue has been achieved."
+                        ),
+                    ),
+                    field(
+                        "Pod roles and capacity allocation",
+                        "textarea",
+                        (
+                            "Assign responsibilities across the canonical "
+                            "full-time and contractor structure. "
+                            "Estimate weekly capacity, escalation "
+                            "coverage, and separation between "
+                            "implementation and financial review; "
+                            "identify the measurable workload trigger that justifies the scaled five-person team."
+                        ),
+                        (
+                            "Base staffing is one full-time "
+                            "founder plus engineering and "
+                            "operations contractors. The founder "
+                            "owns contracts and cash, "
+                            "engineering owns ingestion and "
+                            "reliability, and operations owns "
+                            "content checks and reconciliation. "
+                            "The scaled structure adds one full-time operator and one contractor, reaching two full-time staff and three contractors only when sustained workload and contribution support expansion."
+                        ),
+                    ),
+                    field(
+                        "Revenue, margin, and collection KPI scorecard",
+                        "textarea",
+                        (
+                            "Define revenue and profit metrics "
+                            "using earned operator amounts, "
+                            "not user turnover. Include "
+                            "collection measures and canonical "
+                            "annual references, with a "
+                            "clear distinction between actual results, annual plans, and short-period run-rate estimates."
+                        ),
+                        (
+                            "The scorecard tracks earned SaaS, "
+                            "builder, CPA, and NGR "
+                            "revenue separately, plus receivables "
+                            "aging and bank collections. "
+                            "Annual reference points remain "
+                            "$75,000 revenue and $19,500 "
+                            "profit; $362,500 and $137,750; "
+                            "and $650,000 and $325,000. Their margins are 26%, 38.0%, and 50%. Actual pilot results occupy separate entries and never inherit those planned totals."
+                        ),
+                    ),
+                    field(
+                        "Service and acquisition KPI definitions",
+                        "textarea",
+                        (
+                            "Specify calculation windows, denominators, source "
+                            "systems, and owners for "
+                            "service reliability and growth "
+                            "metrics. Avoid vanity metrics "
+                            "that reward ineligible traffic "
+                            "or hide rejection rates, and connect each threshold to a concrete operating response."
+                        ),
+                        (
+                            "Approved CPA conversion equals approved "
+                            "FTDs divided by submitted "
+                            "FTD events within the "
+                            "same matured cohort. Subscription "
+                            "churn equals lost paid "
+                            "accounts divided by opening "
+                            "paid accounts for the "
+                            "month. Feed availability counts only periods meeting freshness requirements. The founder reviews acquisition quality weekly; engineering reviews reliability daily and documents every threshold breach."
+                        ),
+                    ),
+                    field(
+                        "Exit diligence and assignment ledger",
+                        "textarea",
+                        (
+                            "List evidence a buyer would "
+                            "need to understand transferable "
+                            "revenue, intellectual property, "
+                            "data rights, and regulatory "
+                            "dependencies. Record actual assignment "
+                            "clauses and change-of-control requirements instead of assuming that a share sale or asset sale preserves every relationship."
+                        ),
+                        (
+                            "The diligence index includes executed "
+                            "affiliate contracts, twelve monthly "
+                            "reconciliations when available, contractor "
+                            "IP assignments, data licenses, "
+                            "registration records, and subscriber "
+                            "cohort definitions. Each contract "
+                            "has an assignment summary "
+                            "and required counterparty actions. A buyer cannot assume registrations or feed permissions transfer; unresolved transfer requirements reduce the pool of immediately portable revenue."
+                        ),
+                    ),
+                    field(
+                        "Operating risk register and pause authority",
+                        "textarea",
+                        (
+                            "Rank risks by trigger, financial "
+                            "exposure, owner, response time, "
+                            "and recovery evidence. Include "
+                            "licensing faults, data outages, "
+                            "deduction disputes, seasonality, "
+                            "and key-person dependence; specify who can stop affected activity without waiting for a routine meeting."
+                        ),
+                        (
+                            "The founder can immediately suspend "
+                            "an affected affiliate relationship "
+                            "after a confirmed permission "
+                            "failure. Engineering can disable "
+                            "live comparisons after continuity "
+                            "loss. Operations can pause "
+                            "paid acquisition after an "
+                            "unexplained statement deduction. Each incident retains its timeline, revenue exposure, corrective action, and restoration evidence; unrelated qualified subscription service remains available where technically feasible."
+                        ),
+                    ),
+                    field(
+                        "Day-30 decision and next financing milestone",
+                        "textarea",
+                        (
+                            "Record actual deliverables, remaining dependencies, "
+                            "cash position, and the "
+                            "next evidence-based spending decision. "
+                            "Tie continued investment to "
+                            "qualified demand and operating "
+                            "readiness while preserving the canonical two-to-six-month first-deal horizon and avoiding premature scale commitments."
+                        ),
+                        (
+                            "Illustrative decision: continue analytics development "
+                            "if the pilot has "
+                            "ten paying subscribers, reconciled "
+                            "billing, and no unresolved "
+                            "critical defects; keep affiliate "
+                            "acquisition disabled until requirements "
+                            "are complete. Authorize a "
+                            "further $3,000 only if free cash stays above $15,000. Record actual results before adopting this decision, and schedule the next commercial review in 30 days."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Close the sprint only with actual deliverable evidence, "
+                    "a reconciled cash position, assigned unresolved dependencies, "
+                    "and a dated continuation decision. Preserve the exact "
+                    "canonical scorecard as a planning reference while reporting "
+                    "actual operating results separately and faithfully."
+                ),
+            },
+        ],
+    }

@@ -8,4 +8,4 @@ src/fymc/volume_00[5-9]_citations.py linguist-generated -diff
 src/fymc/volume_0[1-4][0-9]_citations.py linguist-generated -diff
 src/fymc/volume_00[7-9]_manuscript.py linguist-generated -diff
 src/fymc/volume_0[1-3][0-9]_manuscript.py linguist-generated -diff
-src/fymc/volume_04[023]_manuscript.py linguist-generated -diff
+src/fymc/volume_04[0-8]_manuscript.py linguist-generated -diff

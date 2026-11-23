@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-046-mass-tort-intake-hitech-triage-and-law-firm-msos",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1893289,
+      "sha256": "5a083afea4eb58ce364fa3d96e93da315ffa303b30049c374ecf9177175d6da0"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2426005,
+      "sha256": "2d913cf5ff373f47a0624bcb262224c92832557644cdd7be50cffafd56a38cbf"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 571961,
+      "sha256": "d0be3735345c8bb094fcc1157d2074e7c8c42fed6a8f80f40e04311f2bd19ede"
+    },
+    "book.epub": {
+      "bytes": 272646,
+      "sha256": "98d78b220ae1a2201c45f48944d754fb05c92f34c903f4f1ca48921c550d3cb3"
+    },
+    "art/cover.svg": {
+      "bytes": 4395,
+      "sha256": "166322555990b39e90179bd8d08095a676088c89de6c454a96d8b1016f45e55f"
+    },
+    "art/scorecard.svg": {
+      "bytes": 62826,
+      "sha256": "496babc09728d1c736366815564723ebfc29ba8ee52be7bbd8b567a55e12fc0b"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12441,
+      "sha256": "aa98eb17c328b5cdd86ad3381f5b36f06a64d4f90b5aa15a358152c081247f5e"
+    },
+    "art/diag_02.svg": {
+      "bytes": 9041,
+      "sha256": "b7f0af2f1cb29bdeb0ed53a6cb8bf2cb97ca9a090e5272c3090205af208fd181"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12875,
+      "sha256": "2f4b2b51c61c1f91c1cd7bcdab4c6fb3754321b9f2558eaadd2df143e521ed7d"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10158,
+      "sha256": "7376266ea16c3fd85584eac7cce963aa740d94900d0786bde54c6a1852f4a33c"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10988,
+      "sha256": "23452db8a839061e8834f57d1587edba0a1ab8894f0a41af72958be56468291b"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13137,
+      "sha256": "f6d0c490f9dbce3c4b4397504765e9aeaff691059fd85fcdfc30f6b84b5520f8"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9105,
+      "sha256": "72f9bf871f5d8b0b16c9325a7f38885617a553caed42c5a5c6c40ddd1f8711ce"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9160,
+      "sha256": "cedea0ca4cdcf8b56324e997701032f0a3e98d97f6825a9a4d0f79f23bc6c9f5"
+    }
+  }
+}

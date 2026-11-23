@@ -1,0 +1,653 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-30-day-launch-sprint-kill-fix-scale",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching customs duty drawback, tariff refund & antitrust claim recovery, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Four-Person Recovery Pod: ACE Evidence, Section 1313 Drawback, Section 1514 Protests, Settlement Claims, and Cash-Controlled Decisions",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #44 ranks #03 of 49 with a 95/100 Money-to-Manpower Score. "
+        "This sprint converts its 12 mapped plays into three separately controlled recovery lanes: "
+        "customs drawback, tariff refunds, and settled B2B antitrust claims. One full-time owner and "
+        "three contractors build authority, reconcile source records, package eligible claims, and "
+        "test collection economics before buying volume. Annual owner profit remains $35,200 "
+        "Conservative, $231,750 Base, and $533,600 Scaled; those are scorecard outcomes, not "
+        "first-month receipts. The first 30 days have a $10,000 cash-outlay ceiling and measurable "
+        "evidence milestones. Day 30/60/90 decisions distinguish defective claims from slow public "
+        "payment cycles, protect filing deadlines, and expand only when documented fee potential, "
+        "delivery capacity, and runway support the next cohort."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$110,000",
+            "context": "Annual earned contingency fees on realized recoveries",
+            "note": "32% net margin; $35,200 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$515,000",
+            "context": "Annual earned contingency fees on realized recoveries",
+            "note": "45.0% net margin; $231,750 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$920,000",
+            "context": "Annual earned contingency fees on realized recoveries",
+            "note": "58% net margin; $533,600 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1–7: Establish Authority, Twelve Plays, and a Funded Pod",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Launch Candidate #44 as a recovery coordinator, not an unlicensed customs filing desk. "
+                    "The initial pod contains one full-time owner and three contractors: a licensed customs "
+                    "broker, a document-reconciliation analyst, and a settlement-claims specialist. Trade counsel "
+                    "is a separately budgeted specialist escalation, not a concealed fifth standing seat. The "
+                    "owner controls acquisition, client instructions, cash, and exception triage; the broker "
+                    "controls regulated customs work under 19 CFR Part 111 and valid Customs Powers of "
+                    "Attorney. The analyst prepares evidence within the broker's defined workflow rather than "
+                    "independently advising importers on customs treatment. The settlement specialist checks "
+                    "class definitions, administrator instructions, and claimant signatures. Budget 35 owner hours "
+                    "and at most 15 combined contractor hours weekly during the sprint, with fixed-scope quotes "
+                    "that fit the cash ceiling. If actual broker pricing cannot support that allocation, reduce "
+                    "concurrent files rather than dilute licensed review. Create one owner-visible case register "
+                    "with lane, entity, source-document identifiers, legal deadline, reviewer, collectible recovery "
+                    "estimate, contracted fee, and next action. Store evidence in a client-specific encrypted "
+                    "repository; use role-scoped access, multifactor authentication, and a documented deletion "
+                    "schedule. Bank credentials and unrestricted ACE credentials never belong in the sales system."
+                ),
+                (
+                    "Use twelve numbered plays as the sprint's explicit operating map; these are workflow "
+                    "labels for the supplied opportunity, not twelve independent statutory entitlements. Drawback "
+                    "plays are P01 direct-identification unused merchandise, P02 substitution unused merchandise, "
+                    "P03 manufacturing drawback, and P04 export-trace remediation. Tariff-refund plays are P05 "
+                    "pre-liquidation Post-Summary Corrections, P06 classification protests, P07 valuation or "
+                    "origin protests, and P08 remedy-specific refund screening. Settlement plays are P09 "
+                    "interchange class screening, P10 other settled B2B antitrust pool screening, P11 accounts-payable "
+                    "ledger reconstruction, and P12 authorized submission plus distribution reconciliation. P04 "
+                    "and P11 improve evidence; neither creates a second recovery on the same transaction. "
+                    "Map every prospect to one primary play and allow secondary plays only after checking "
+                    "duplicate recovery restrictions. ImportGenius and Panjiva can identify commercial patterns, "
+                    "but manifests do not establish paid duty, importer rights, or class membership. Request "
+                    "ACE entry data, CBP Form 7501, commercial invoices, export bills of lading, and inventory "
+                    "records from the authorized client. For settlements, request purchase or processing records "
+                    "for the exact class period and legal entity. Acquire twenty named target accounts by "
+                    "Day 4; finish eight substantive qualification conversations by Day 14. A conversation "
+                    "counts only when the owner records authority, evidence availability, timing, and a plausible lane."
+                ),
+                (
+                    "Set the first-month cash ceiling before signing subscriptions: $5,500 of launch spending "
+                    "plus $4,500 of recurring operating spending, for $10,000 maximum cumulative cash outlay "
+                    "by Day 30. Launch spending covers scoped broker and counsel setup, contract drafting, "
+                    "security configuration, insurance placement, and initial document ingestion; obtain quotes "
+                    "rather than treating these categories as fixed market prices. Within recurring spending, "
+                    "cap contractor purchases at $3,000 and all other recurring purchases at $1,500. Require "
+                    "prepaid scope reductions if those ceilings cannot buy the planned capacity. Maintain "
+                    "$19,000 of committed launch liquidity to cover the full ninety-day no-receipt case: "
+                    "$10,000 through Day 30, $14,500 through Day 60, and $19,000 through Day 90. This "
+                    "sits inside the stated $8,000–$35,000 startup range; an $8,000 operator must launch "
+                    "a narrower single-lane pilot instead. Never fund importer duty principal, client settlement "
+                    "advances, or bond collateral from this budget. A fee contract specifies the 25%–35% "
+                    "rate, the actual recovery base, payment timing, reversals, and whether outside charges "
+                    "reduce the fee base. No first-month cash assumption depends on a claim paying early. "
+                    "The stated one-to-three-month first-deal interval measures engagement acquisition, not "
+                    "a promise of government or administrator payment."
+                ),
+            ],
+            "table": {
+                "caption": "Week One Daily Authority, Play-Mapping, and Cash-Control Deliverables",
+                "headers": [
+                    "Day and accountable pod member",
+                    "Concrete execution and completed artifact",
+                    "Acceptance test before work advances",
+                    "Resource boundary and failure response",
+                ],
+                "rows": [
+                    [
+                        "Day 1: Owner establishes the funded launch mandate",
+                        "Record $19,000 committed liquidity and approve the spending ledger",
+                        "Separate $5,500 launch purchases from $4,500 recurring monthly purchases",
+                        "Reduce pilot scope when committed liquidity cannot support the schedule",
+                    ],
+                    [
+                        "Day 2: Broker validates customs authority and delegated scope",
+                        "Verify broker license, client authority process, and power-of-attorney requirements",
+                        "Regulated customs tasks have named licensed oversight and documented responsibilities",
+                        "Stop customs preparation that exceeds the agreed supervised support scope",
+                    ],
+                    [
+                        "Day 3: Owner configures contracts and protected evidence storage",
+                        "Create contingency terms, access roles, and client-specific evidence folders",
+                        "Each contract defines recovery base, fee trigger, and reversal handling",
+                        "Reject shared credentials and remove unnecessary repository access immediately",
+                    ],
+                    [
+                        "Day 4: Owner builds twenty targeted importer or claimant accounts",
+                        "Assign P01 through P12 using documented commercial evidence hypotheses",
+                        "Every account has an entity identifier and primary lane rationale",
+                        "Treat manifest signals as leads rather than proof of entitlement",
+                    ],
+                    [
+                        "Day 5: Analyst issues the first source-document collection requests",
+                        "Request entry, export, inventory, purchasing, or processing records by lane",
+                        "Client confirms record ownership and authorized transmission to the pod",
+                        "Use encrypted transfer rather than unrestricted attachments or public links",
+                    ],
+                    [
+                        "Day 6: Settlement specialist validates current administrator intake instructions",
+                        "Capture class definitions, deadlines, filer rules, and direct-filing disclosures",
+                        "Court or official administrator materials support every proposed settlement claim",
+                        "Exclude closed intake unless the governing order permits another route",
+                    ],
+                    [
+                        "Day 7: Owner and broker complete the first case-register audit",
+                        "Review deadlines, authority, cash commitments, and twelve-play coverage together",
+                        "Every active file has one accountable reviewer and next action",
+                        "Suspend acquisition spending if legal deadlines or authority remain unresolved",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before Accepting a Recovery File",
+                "body": "A commercially attractive recovery does not enter production until authority, eligibility, evidence, and liquidity are independently recorded.",
+                "items": [
+                    "Verify the claimant entity, signer authority, broker engagement, and valid Customs Power of Attorney before regulated customs work proceeds.",
+                    "Have the broker separate eligible duty components from barred duties and establish the applicable entry, export, liquidation, and protest deadlines.",
+                    "For every settlement, preserve the governing class definition and required third-party filer disclosures, including that eligible claimants may file directly at zero cost.",
+                    "Confirm the case fits the remaining cash ceiling; assign required bonds and collateral to the responsible client or broker rather than silently advancing them.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8–14: Prove Three Different Collectible Bases",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The drawback lane starts with 19 U.S.C. § 1313 and the applicable provision in "
+                    "19 CFR Part 190, not a spreadsheet multiplying all tariffs by 99%. Eligible drawback "
+                    "generally returns up to 99% of qualifying duties, taxes, and fees, with the precise "
+                    "base controlled by the selected provision. Exclude antidumping and countervailing duties "
+                    "under 19 CFR § 190.3 and separately test trade-remedy restrictions; Section 232 "
+                    "treatment cannot be copied from a Section 301 analysis. For P01, prove identity and "
+                    "unused status. For P02, validate the applicable eight-digit HTS substitution rule, "
+                    "statutory restrictions, quantity matching, and the lesser-duty calculation; sharing a "
+                    "code alone does not establish eligibility. For P03, obtain manufacturing records and "
+                    "the required ruling framework before quoting recovery. The broker verifies the relevant "
+                    "five-year periods for export or destruction and complete claim filing rather than "
+                    "advertising an unlimited historical lookback. Budget an illustrative $600 documentation "
+                    "package for a clean pilot, excluding separately quoted filings and exceptional remediation. "
+                    "Accelerated payment requires applicable privileges and sufficient drawback bond coverage; "
+                    "ordinary processing does not carry that same accelerated-payment condition. Underwrite "
+                    "six-to-eighteen months for ordinary cash planning, treating this as a reserve assumption "
+                    "rather than a CBP service commitment. Export-trace failure stops that file immediately."
+                ),
+                (
+                    "The tariff-refund lane separates a correction before liquidation from a protest after "
+                    "a protestable decision. A standard ACE Post-Summary Correction generally must be filed "
+                    "within 300 days of entry and at least fifteen days before scheduled liquidation, "
+                    "subject to the applicable program requirements and exceptions. The broker checks actual "
+                    "entry eligibility and current CBP instructions instead of applying that shorthand blindly. "
+                    "Under 19 U.S.C. § 1514, protests generally have a 180-day filing period measured "
+                    "from liquidation or the relevant decision, as applicable; a sales conversation never "
+                    "tolls the period. P06 and P07 require a defensible classification, valuation, or origin "
+                    "position, not merely a lower-rate alternative. P08 checks the specific exclusion, remedy "
+                    "instrument, and entry dates before accepting a refund theory. Collectible base equals "
+                    "the supported excess duty or other recoverable amount, not shipment value and not "
+                    "the entire entry's paid duty. Budget an illustrative $450 clean-file documentation "
+                    "package before separately quoted technical opinions. These filings do not ordinarily "
+                    "require a dedicated drawback accelerated-payment bond, although underlying import bonds "
+                    "remain relevant. Use three-to-twelve months for correction-related cash planning and "
+                    "six-to-twenty-four months for protests, with contested matters potentially longer. Record "
+                    "both the statutory deadline and the payment assumption so a slow payment never "
+                    "obscures a fast-expiring filing right."
+                ),
+                (
+                    "The settlement lane begins with an actual court-authorized distribution process, not "
+                    "a headline settlement amount or a presumed share of treble damages. P09 and P10 "
+                    "identify an open, applicable class and covered purchases; P11 reconciles accounts-payable "
+                    "or merchant-processing records to legal entities and class periods; P12 submits only "
+                    "under the claimant authority and third-party filer terms that process permits. Federal "
+                    "Rule of Civil Procedure 23 governs federal class-action settlements, while the specific "
+                    "order and plan of allocation determine eligibility, deadlines, acceptable evidence, and "
+                    "payment calculations. Apply court-required disclosures and clearly state that eligible "
+                    "claimants can file directly at zero cost. Do not imply official administrator status "
+                    "or legal representation. The collectible base is the claimant's eventual distribution, "
+                    "not purchases, processing volume, alleged damages, or the gross settlement fund. Until "
+                    "an administrator provides a reliable allocation basis, track purchase evidence without "
+                    "converting it into a dollar recovery forecast. Budget an illustrative $300 clean-file "
+                    "documentation package and six-to-twenty-four months from submission to payment, with "
+                    "appeals or supplemental distributions capable of extending that interval. No CBP surety "
+                    "bond applies to this lane. By Day 14, retain two written engagements and complete "
+                    "one quantified, source-supported opportunity in a chosen primary lane; maintain separate "
+                    "registers for the other lanes rather than pooling weak estimates."
+                ),
+            ],
+            "table": {
+                "caption": "Week Two Daily Eligibility Tests Across Drawback, Tariff Refund, and Settlement Lanes",
+                "headers": [
+                    "Day and play assignment for the pod",
+                    "Required source evidence and calculation artifact",
+                    "Lane-specific eligibility and authority test",
+                    "Cost, bond, or cash-conversion constraint",
+                ],
+                "rows": [
+                    [
+                        "Day 8: Broker and analyst evaluate P01 and P04",
+                        "Match entry lines to exports and preserve quantity-level trace evidence",
+                        "Confirm qualifying unused merchandise and timely export plus complete filing",
+                        "Use the $600 clean-package estimate before additional remediation commitments",
+                    ],
+                    [
+                        "Day 9: Broker evaluates P02 substitution eligibility separately",
+                        "Build eight-digit HTS comparison and applicable lesser-duty calculation workbook",
+                        "Test statutory substitution restrictions rather than accepting matching codes alone",
+                        "Price accelerated payment only after privileges and bond capacity verification",
+                    ],
+                    [
+                        "Day 10: Broker screens P03 manufacturing drawback feasibility",
+                        "Collect production records, yield evidence, and applicable manufacturing ruling support",
+                        "Reject unsupported production assumptions and unresolved claimant-rights conflicts immediately",
+                        "Obtain a separate quote when manufacturing evidence exceeds clean-package scope",
+                    ],
+                    [
+                        "Day 11: Broker triages P05 and P08 entry corrections",
+                        "Capture liquidation status, correction deadlines, and remedy-specific authority links",
+                        "Confirm entry eligibility and exclude duties barred from the selected remedy",
+                        "Reserve three-to-twelve months for correction-related cash rather than immediate receipts",
+                    ],
+                    [
+                        "Day 12: Broker tests P06 and P07 protest positions",
+                        "Write the classification, valuation, or origin basis against source records",
+                        "Calculate the applicable 180-day period from the relevant protestable decision",
+                        "Use $450 documentation planning before separately quoted technical opinions",
+                    ],
+                    [
+                        "Day 13: Settlement specialist screens P09 and P10 pools",
+                        "Archive official class definitions, current intake instructions, and allocation documents",
+                        "Verify covered entity, purchase period, filer authority, and required disclosures",
+                        "Use no settlement-pool percentage when claimant distribution cannot be supported",
+                    ],
+                    [
+                        "Day 14: Analyst and settlement specialist complete P11 and P12 intake",
+                        "Reconcile purchase totals and secure two written client engagements overall",
+                        "Complete one quantified opportunity with traceable evidence in the primary lane",
+                        "Use $300 clean-package planning and no CBP bond for settlement claims",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Keep the Evidence Advantage Without Buying Bad Files",
+                "body": "Experienced recovery operators spend early effort on documentary bottlenecks that determine whether a fee can ever become cash.",
+                "items": [
+                    "Ask for a small ACE entry extract and one complete export chain before requesting a five-year data dump; missing linkage appears faster in a controlled sample.",
+                    "Store liquidation events as dated evidence, not a manually typed deadline alone; broker-confirmed event changes must recalculate the work queue.",
+                    "Keep a duty-component exclusion column beside each recovery calculation so barred trade-remedy duties cannot reappear during spreadsheet aggregation.",
+                    "Obtain the administrator's exact entity and purchase-period rules before normalizing an AP ledger; subsidiaries and acquisitions frequently break otherwise clean matches.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Days 15–21: Package Claims and Reconcile Fees to the Scorecard",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Build one evidence manifest per claim, with source filename, row identifier, normalized "
+                    "quantity, currency, date basis, reviewer, and exception disposition. Python csv and decimal "
+                    "can normalize client exports without importing floating-point rounding errors into duty "
+                    "calculations; retain raw files and hash them with hashlib so transformations remain "
+                    "reproducible. The analyst links records, but the broker determines customs eligibility "
+                    "and approves the actual customs submission. For settlement work, the specialist follows "
+                    "the administrator's required format and obtains client attestations without inventing "
+                    "missing purchases. Reconcile every included transaction to source evidence; a 90% "
+                    "portfolio completeness target never authorizes filing the unsupported remainder. Count "
+                    "a package as ready only when all required fields and attestations for its included "
+                    "claim scope are complete. Preserve rejected rows in an exception file with a reason "
+                    "and remediation owner. The owner may monitor claim status but must not represent "
+                    "internal preparation as government acceptance. Record separate timestamps for preparation, "
+                    "licensed or authorized submission, receipt acknowledgment, substantive acceptance, payment, "
+                    "and fee collection. By Day 21, produce two independently checked packages and submit "
+                    "eligible work where the relevant filing window is open. If the window is closed, "
+                    "remove that opportunity from the launch cohort instead of manufacturing a production milestone."
+                ),
+                (
+                    "Use illustrative unit economics to test files without rewriting Formula v2.0. A "
+                    "drawback file with $20,000 of qualifying paid duty and a fully applicable 99% "
+                    "recovery ceiling supports $19,800 of claimant recovery; at a 30% contingency, the "
+                    "operator fee is $5,940. A tariff correction returning $12,000 of excess duty "
+                    "supports a $3,600 fee at the same rate. A settlement distribution actually fixed "
+                    "at $8,000 supports $2,400, regardless of the claimant's original purchase volume. "
+                    "Illustrative direct delivery costs of $1,500, $900, and $600 respectively include "
+                    "the clean documentation budgets plus scoped review, submission support, and collection "
+                    "work. Their $4,440, $2,700, and $1,800 contributions precede acquisition expense, "
+                    "fixed overhead, and other scorecard costs; they are not owner net profits. Require "
+                    "at least 60% modeled direct contribution on each accepted cohort and acquisition "
+                    "spend no greater than 20% of evidence-supported contracted fees. Before collection, "
+                    "call those amounts pipeline, not earned revenue. Track probability and expected "
+                    "payment quarter separately, but never convert an unsupported settlement allocation into "
+                    "a precise forecast by assigning it an arbitrary probability. Bond premiums, extra "
+                    "counsel, and correction labor belong in the applicable file's cost sheet, not in "
+                    "an invisible miscellaneous bucket."
+                ),
+                (
+                    "The canonical annual cases remain $110,000 revenue at 32% margin for $35,200 "
+                    "owner net profit, $515,000 at 45.0% for $231,750, and $920,000 at 58% "
+                    "for $533,600. Their implied total annual costs are $74,800, $283,250, and "
+                    "$386,400. Those totals already reconcile the scenario economics; do not subtract "
+                    "the same delivery expenses again. Revenue means earned contingency fees on realized "
+                    "recoveries, excluding importer duty principal and gross settlement pools. At an "
+                    "illustrative uniform 30% fee, those revenues would require approximately $366,666.67, "
+                    "$1,716,666.67, and $3,066,666.67 in underlying client recoveries; changing the "
+                    "fee mix changes those required recoveries, not the canonical scorecard. The starting "
+                    "pod of 1 FT plus 3 C supports the Conservative and Base cases, while "
+                    "the Scaled case requires 2 FT plus 4 C. Do not label a four-person "
+                    "operation scaled merely because its unsigned pipeline reaches $920,000. The stated "
+                    "$1,500–$9,500 monthly operating range describes a lean operating envelope, not "
+                    "all annual delivery costs embedded in the scorecard. Record variable claim labor "
+                    "and specialist charges explicitly. Where the operator acts as an agent, assess "
+                    "ASC 606 principal-versus-agent presentation so pass-through amounts do not inflate "
+                    "recognized revenue. Keep client recovery ledgers separate from operator fee invoices "
+                    "and reconcile actual reversals before reporting realized contribution."
+                ),
+            ],
+            "table": {
+                "caption": "Week Three Production Artifacts, Fee Math, and Four-Person Capacity Checks",
+                "headers": [
+                    "Day and accountable production responsibility",
+                    "Specific deliverable and evidence requirement",
+                    "Quantitative acceptance or reconciliation test",
+                    "Exception handling and resource constraint",
+                ],
+                "rows": [
+                    [
+                        "Day 15: Analyst normalizes the first two client evidence sets",
+                        "Preserve raw files and create transaction-level normalized evidence manifests",
+                        "Every included transaction maps back to a retained source record",
+                        "Quarantine unsupported rows without estimating missing quantities or purchase dates",
+                    ],
+                    [
+                        "Day 16: Broker tests drawback components and tariff calculations",
+                        "Approve claim scope and document excluded duties beside eligible amounts",
+                        "$20,000 eligible duty supports at most $19,800 under the illustrated rule",
+                        "Require separate confirmation before applying the example to another provision",
+                    ],
+                    [
+                        "Day 17: Settlement specialist validates administrator-ready evidence packaging",
+                        "Match claimant identity, covered periods, purchase records, and required attestations",
+                        "Every submitted amount follows the actual allocation or reporting instructions",
+                        "Remove closed pools and unsupported allocations from quantified launch pipeline",
+                    ],
+                    [
+                        "Day 18: Owner reconciles contracts against three fee examples",
+                        "Record $5,940 drawback, $3,600 correction, and $2,400 distribution fees",
+                        "Each example uses a 30% fee on the supported recovery base",
+                        "Never invoice a percentage of merchant volume or gross settlement pools",
+                    ],
+                    [
+                        "Day 19: Analyst completes independent package checks with lane reviewers",
+                        "Deliver two complete packages and retain separate exception disposition logs",
+                        "All mandatory fields for the included claim scope pass review",
+                        "Owner redistributes work when combined contractor hours exceed the weekly cap",
+                    ],
+                    [
+                        "Day 20: Broker or authorized settlement filer submits eligible packages",
+                        "Store submission receipts and distinguish acknowledgments from substantive acceptance",
+                        "Every submission has current authority and a valid filing window",
+                        "Do not substitute internal readiness for an external filing receipt",
+                    ],
+                    [
+                        "Day 21: Owner reconciles contribution and annual scenario definitions",
+                        "Compare case costs with the three canonical annual fee-revenue scenarios",
+                        "Target at least 60% direct contribution before acquisition and overhead",
+                        "Keep the four-person pod until repeatable throughput justifies another seat",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the source set",
+                    "action": "Create a dated manifest of client-authorized source documents.",
+                    "detail": "Retain raw exports, record file hashes, identify entity ownership, and prohibit edits to the preserved source copies.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile the collectible base",
+                    "action": "Calculate recoverable amounts separately for each legal lane.",
+                    "detail": "The broker validates customs duty treatment; the settlement specialist applies the actual court-authorized allocation and evidence requirements.",
+                },
+                {
+                    "step": 3,
+                    "title": "Authorize and record submission",
+                    "action": "Route complete packages to the licensed or otherwise authorized filer.",
+                    "detail": "Preserve authority, attestations, deadline calculations, submission receipts, and rejected-row explanations in the same case record.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile recovery and operator cash",
+                    "action": "Match actual client payment to the contracted contingency calculation.",
+                    "detail": "Separate principal from fees, capture delivery costs and reversals, and report invoice issuance and fee collection as different events.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Days 22–30 and Day 60/90: Decide Kill, Fix, or Scale From Evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Close the sprint with a cohort dashboard rather than a celebratory pipeline total. "
+                    "Define a qualified conversation as one with a documented authorized entity, eligible "
+                    "lane hypothesis, accessible source records, and viable deadline. Define a signed engagement "
+                    "as executed contingency terms plus the authority needed for its next work stage. "
+                    "Define evidence-supported fees as contracted fees calculated on a broker-validated customs "
+                    "recovery estimate or a settlement allocation supported by official instructions and claimant "
+                    "records. Exclude unpriced settlement claims from this dollar metric while preserving their "
+                    "documented count. Set Day 30 targets at twelve qualified conversations, three signed "
+                    "engagements, two complete packages, at least one actual submission, and $15,000 "
+                    "of evidence-supported fees. Measure 90% evidence completeness across required items in "
+                    "the active cohort, 100% completeness for submitted scope, and zero missed filing "
+                    "deadlines. Claims lacking valid authority never enter the production denominator. Audit "
+                    "the dashboard on Days 27 and 29, with a contractor checking a file they "
+                    "did not prepare wherever role qualifications permit. Protect the distinction between "
+                    "a government delay and an operator defect. A delayed distribution can remain a "
+                    "viable asset; an invented allocation or expired filing right cannot. Day 30 "
+                    "evaluates a controllable delivery system, not an artificial requirement that CBP "
+                    "pay within one month."
+                ),
+                (
+                    "Apply decision rules in order: hard-stop conditions first, Scale requirements second, "
+                    "and Fix for the remaining recoverable gaps. Kill means stop new spending on the "
+                    "affected lane or acquisition channel, not abandon existing client obligations. Missing "
+                    "authority, fabricated evidence, or an unrepairable expired claim kills the affected "
+                    "file immediately. At Day 30, kill the acquisition hypothesis if twelve qualified "
+                    "conversations produce zero signed engagements, or three signed files produce zero "
+                    "legally eligible packages. Fix a repairable shortfall with a named owner, a "
+                    "fourteen-day deadline, and at most $1,500 redirected from the existing monthly "
+                    "budget. Scale only when all dashboard targets, the 60% direct-contribution floor, "
+                    "the 20% acquisition ceiling, and funded runway are satisfied. Scaling initially "
+                    "means adding no more than two engaged clients in the next fortnight within "
+                    "the same pod and spending caps. At Day 60, require five engagements, four "
+                    "complete packages, three submissions, and $30,000 evidence-supported fees. At Day "
+                    "90, require eight engagements, six packages, five submissions, and $50,000 "
+                    "evidence-supported fees. These are cumulative cohort thresholds, not monthly revenue "
+                    "targets. If contractor workload exceeds 80% of purchased capacity for two "
+                    "consecutive weeks, stop intake until throughput improves or a separately funded "
+                    "capacity change is approved by the owner."
+                ),
+                (
+                    "Cash collection changes the decision but does not replace evidence quality. By "
+                    "Day 60, every submitted case needs a verified external status and a recorded "
+                    "next checkpoint; by Day 90, obtain either at least $5,000 in collected "
+                    "operator fees or documented continuing external processing plus ninety more days "
+                    "of funded runway before expanding. With no receipts, another quarter at the "
+                    "$4,500 monthly ceiling requires $13,500 beyond the initial $19,000, bringing "
+                    "total committed capital to $32,500. That remains within the stated startup "
+                    "range but leaves little room for bond collateral or exceptional litigation, "
+                    "which remain outside this model. Two missed remediation deadlines without new "
+                    "supporting evidence trigger channel shutdown; return or transfer records under the "
+                    "engagement terms and preserve required retention. Cash spending above the cumulative "
+                    "ceiling freezes discretionary purchases immediately. Existing claims continue through their "
+                    "authorized filer, with clients informed of status and responsibility. Expansion toward "
+                    "2 FT plus 4 C requires collected fee contribution and a forward workload "
+                    "plan that funds added labor, not simply a larger nominal recovery pool. "
+                    "Publish one weekly reconciliation covering spend, authority, deadlines, package defects, "
+                    "submission status, client recoveries, and operator cash. The launch succeeds when "
+                    "the owner can explain every dollar and every next action without confusing "
+                    "eligibility, filing, acceptance, and payment."
+                ),
+            ],
+            "table": {
+                "caption": "Final-Week Daily Schedule and Cumulative Day 30/60/90 Decision Matrix",
+                "headers": [
+                    "Checkpoint and accountable operator responsibility",
+                    "Required evidence and completed operating deliverable",
+                    "Kill or Fix threshold and response",
+                    "Scale threshold or binding cash constraint",
+                ],
+                "rows": [
+                    [
+                        "Day 22: Owner reconciles acquisition records and signed engagements",
+                        "Verify twelve qualified conversations and record conversion by primary lane",
+                        "Fix missing qualification evidence before buying any additional prospect lists",
+                        "Keep acquisition spend within 20% of evidence-supported contracted fees",
+                    ],
+                    [
+                        "Day 23: Broker checks customs deadlines and external case status",
+                        "Reconcile liquidation events, filing periods, receipts, and unresolved technical defects",
+                        "Kill expired unsupported files and document client notification plus next responsibility",
+                        "Require zero missed deadlines before any increase in customs intake",
+                    ],
+                    [
+                        "Day 24: Settlement specialist checks administrator instructions and duplicate claims",
+                        "Reconfirm entity scope, intake status, disclosures, and existing client submissions",
+                        "Fix entity mismatches and stop any proposed duplicate recovery immediately",
+                        "Count settlement fees only when the allocation estimate has official support",
+                    ],
+                    [
+                        "Day 25: Analyst audits document completeness across the active cohort",
+                        "Measure required evidence items and isolate unsupported transaction subsets explicitly",
+                        "Fix cohort completeness below 90% without filing incomplete included scope",
+                        "Require 100% mandatory evidence completeness for every actual submission",
+                    ],
+                    [
+                        "Day 26: Owner rebuilds direct contribution from actual purchased work",
+                        "Include review, remediation, filing support, bond premiums, and collection effort",
+                        "Fix modeled direct contribution below 60% through pricing or scope changes",
+                        "Reject expansion that depends on hiding specialist costs outside cases",
+                    ],
+                    [
+                        "Day 27: Qualified reviewer checks packages prepared by another pod member",
+                        "Audit two complete packages and compare reported status with external receipts",
+                        "Fix material defects before representing either package as production-ready",
+                        "Require at least one genuine submission with preserved receipt evidence",
+                    ],
+                    [
+                        "Day 28: Owner stress-tests remaining cash and purchased contractor capacity",
+                        "Reconcile commitments against $10,000 first-month and $4,500 recurring spending limits",
+                        "Freeze discretionary purchases immediately when the cumulative ceiling is breached",
+                        "Stop intake above 80% contractor utilization for two consecutive weeks",
+                    ],
+                    [
+                        "Day 29: Owner and lane reviewers sign the decision evidence pack",
+                        "Record exceptions, collectible fee estimates, client responsibilities, and next checkpoints",
+                        "Assign repairable gaps fourteen-day deadlines within a $1,500 redirected allowance",
+                        "Allow no budget increase disguised as a remediation purchase",
+                    ],
+                    [
+                        "Day 30: Owner applies the first cumulative cohort decision",
+                        "Target twelve conversations, three engagements, two packages, and one submission",
+                        "Kill channel after twelve conversations with zero engagements or three ineligible files",
+                        "Scale only with $15,000 supported fees and every operating test satisfied",
+                    ],
+                    [
+                        "Day 60: Owner applies the second cumulative cohort decision",
+                        "Require five engagements, four packages, three submissions, and verified external statuses",
+                        "Kill a channel after two failed remediation deadlines without new supporting evidence",
+                        "Require $30,000 supported fees and cumulative cash outlay within $14,500",
+                    ],
+                    [
+                        "Day 90: Owner applies the third cumulative cohort decision",
+                        "Require eight engagements, six packages, five submissions, and $50,000 supported fees",
+                        "Fix slow collection only with verified processing and separately funded continuation",
+                        "Require $5,000 collected fees or processing evidence plus ninety-day funded runway",
+                    ],
+                    [
+                        "Every checkpoint: Owner preserves client obligations after any commercial shutdown",
+                        "Transfer or finish authorized work and retain records under applicable requirements",
+                        "Kill affected files immediately for fabricated evidence or irreparable authority defects",
+                        "Expand beyond the pod only with funded labor and demonstrated throughput",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Scale the evidence chain before the claim count, and count the fee only when the recovery earns it.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Fund the $19,000 ninety-day no-receipt plan and record the $10,000, $14,500, and $19,000 cumulative spending ceilings.",
+        "Contract the 1 FT + 3 C pod, verify broker authority, and assign every active file to one primary play among P01–P12.",
+        "Separate drawback, tariff-refund, and settlement bases, with lane-specific evidence budgets, bond treatment, deadlines, and payment assumptions.",
+        "Complete twelve qualified conversations, three signed engagements, two complete packages, and one authorized submission by Day 30.",
+        "Apply the ordered Kill, Fix, or Scale tests at Days 30, 60, and 90, preserving existing client obligations when a channel stops.",
+        "Reconcile actual recoveries, earned fees, direct delivery costs, and owner profit against the unchanged Conservative, Base, and Scaled scorecard.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "19 U.S.C. § 1313 — Drawback and refunds",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
+            "relevance": "Controls drawback categories, qualifying recovery limits, substitution restrictions, and applicable export and claim-filing periods.",
+        },
+        {
+            "title": "19 CFR Part 190 — Modernized drawback",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190",
+            "relevance": "Defines modernized drawback procedures, evidence requirements, manufacturing treatment, record retention, and accelerated-payment mechanics.",
+        },
+        {
+            "title": "19 CFR § 190.3 — Duties, taxes, and fees subject or not subject to drawback",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190/section-190.3",
+            "relevance": "Requires duty-component screening, including exclusion of antidumping and countervailing duties from drawback.",
+        },
+        {
+            "title": "19 CFR § 190.92 — Accelerated payment",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190/section-190.92",
+            "relevance": "Governs accelerated-payment applications and conditions, including applicable bond coverage rather than an assumed universal early-payment entitlement.",
+        },
+        {
+            "title": "19 U.S.C. § 1514 — Protest against decisions of Customs Service",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1514",
+            "relevance": "Identifies protestable decisions and the generally applicable 180-day protest filing period; a pre-liquidation correction is a distinct procedure.",
+        },
+        {
+            "title": "19 CFR Part 111 — Customs brokers",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-111",
+            "relevance": "Controls licensing and conduct of customs business, supporting the chapter's licensed-broker workflow and limits on unlicensed support activities.",
+        },
+        {
+            "title": "19 CFR Part 141, Subpart C — Powers of attorney",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-141/subpart-C",
+            "relevance": "Provides customs power-of-attorney requirements relevant to establishing client authority before representation and filing.",
+        },
+        {
+            "title": "Federal Rule of Civil Procedure 23 — Class actions",
+            "url": "https://www.law.cornell.edu/rules/frcp/rule_23",
+            "relevance": "Supplies the federal class-action settlement framework; the actual court orders and allocation plans control claimant eligibility and filer-specific requirements.",
+        },
+        {
+            "title": "15 U.S.C. § 15 — Suits by persons injured",
+            "url": "https://www.law.cornell.edu/uscode/text/15/15",
+            "relevance": "Establishes private antitrust damages remedies, which must not be confused with an individual claimant's eventual court-authorized settlement distribution.",
+        },
+    ],
+}

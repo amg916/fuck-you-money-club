@@ -4084,6 +4084,598 @@ PLAY_DEFINITIONS = {
               "4. Fulfill through the issuer's permitted transfer process, monitor acceptance "
               'and delivery deadlines, reconcile exchange settlements, and maintain '
               'cancellation and replacement reserves until the applicable exposure has ended.']},
+    'cbp_duty_drawback_and_tariff_protest_contingency': {'id': 'cbp_duty_drawback_and_tariff_protest_contingency',
+ 'inputs': ['Importer authorization, importer-of-record identifiers, ACE entry and liquidation '
+            'extracts, Form 7501 line detail, duty-payment evidence, and existing drawback or '
+            'protest histories; commercial manifests supply leads rather than proof of '
+            'eligibility.',
+            'Export bills of lading, AES/ITN records where applicable, inventory and '
+            'manufacturing records, destruction documentation, transfer certificates, and '
+            "evidence establishing the claimant's rights without duplicate recovery.",
+            'Broker and trade-counsel engagements, provision-specific eligibility and deadline '
+            'matrix, duty-type exclusions, claimant contingency terms, and an itemized budget '
+            'for historical-data extraction, evidence reconstruction, and filing.'],
+ 'mechanism': 'Match ImportGenius/Panjiva shipment leads to importer-authorized ACE entry '
+              'summaries, CBP Form 7501 data, and export or supervised-destruction evidence; '
+              '19 U.S.C. § 1313 generally permits recovery of up to 99% of eligible duties, '
+              "taxes, and fees, subject to the selected drawback provision's matching, timing, "
+              'and documentary requirements. Licensed 19 CFR Part 111 customs brokers perform '
+              'reserved customs business and trade counsel handles legal positions, while the '
+              'desk separates drawback from § 1514 protests, generally due within 180 days of '
+              'liquidation or another protestable decision, and excludes '
+              'antidumping/countervailing duties and other expressly ineligible assessments '
+              'rather than treating all tariffs as recoverable. Target a 25%–35% contingency '
+              'only on realized CBP Treasury refunds under contracts permitted for the service '
+              'provider, with broker/counsel compensation separately structured to avoid '
+              'prohibited unlicensed customs business or referral-fee sharing and with '
+              'document reconstruction, filing, and professional costs disclosed separately '
+              'from gross claims.',
+ 'metrics': ['Supported collectible base: eligible paid duties, taxes, and fees multiplied by '
+             'the applicable recovery percentage, less prior recoveries and unsupported '
+             'amounts; report manifest-derived opportunities separately.',
+             'Cash economics: realized Treasury refunds, contingency receipts at 25%–35%, '
+             'importer net recovery after disclosed costs, and desk contribution after '
+             'evidence-acquisition and servicing expense.',
+             'Execution quality: percentage of claims with complete entry-to-disposition '
+             'evidence, days remaining to each statutory deadline, refund realization rate, '
+             'and post-payment adjustment exposure.'],
+ 'name': 'Five-Year CBP ACE Duty-Drawback and Tariff-Protest Recovery Desk',
+ 'platform_risks': [{'detection_metric': 'Unsupported claimed dollars divided by proposed '
+                                         'claim dollars, duplicate-entry incidence, and '
+                                         'unresolved evidence exceptions before filing.',
+                     'failure_mode': 'Manifest matching produces an apparently valuable claim '
+                                     'that lacks eligible duties, claimant rights, or '
+                                     'auditable export/destruction linkage.',
+                     'fallback': 'Remove unsupported lines, pursue only independently timely '
+                                 'and supportable alternatives through the broker or counsel, '
+                                 'and stop reconstruction when expected net recovery no longer '
+                                 'covers its cost.',
+                     'impact': 'CBP denies or reduces recovery, reconstruction costs become '
+                               'unrecoverable, and paid accelerated drawback may require '
+                               'repayment with additional consequences.',
+                     'trigger': 'ACE reconciliation reveals excluded assessments, '
+                                'substitution-rule failures, duplicate claims, missing '
+                                'transfer records, or an expired filing window.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Obtain importer permission and reconcile manifest leads to paid ACE entries; '
+              'segregate eligible duty components, potential drawback provisions, § 1514 '
+              'issues, and entries already refunded, claimed, protested, or outside the '
+              'relevant deadline.',
+              '2. Have the licensed broker and trade counsel validate direct-identification or '
+              'substitution requirements, export/destruction timing, claimant rights, and '
+              'required privileges or notices; generally track export/destruction within five '
+              'years of importation and complete drawback filing within five years of '
+              'export/destruction, subject to the applicable provision.',
+              '3. Build an entry-to-export or destruction evidence ledger, price unresolved '
+              'documentation gaps, and submit supported claims or timely protests through the '
+              'authorized professional without using a protest to bypass an expired statutory '
+              'claim route.',
+              '4. Reconcile Treasury receipts, offsets, claim reductions, accelerated-payment '
+              'exposure, and final liquidation; invoice the agreed percentage only against '
+              'realized refunds and maintain records and reserves for audit adjustments or '
+              'repayment.']},
+    'hts_cross_ruling_reclassification_and_psc_recovery': {'id': 'hts_cross_ruling_reclassification_and_psc_recovery',
+ 'inputs': ['Importer-authorized ACE entry-line exports, original classifications and '
+            'preference claims, liquidation dates, invoices, product specifications, '
+            'composition and use evidence, and actual duty payments.',
+            'Relevant CROSS decisions and their modification or revocation history, HTSUS '
+            'legal notes and applicable interpretive rules, and USMCA or other FTA '
+            'certifications supported by production and origin records.',
+            'Licensed-broker and trade-counsel engagements, entry-specific PSC/protest/FTA '
+            'deadline calendar, prior-refund ledger, and quoted costs for technical analysis, '
+            'origin substantiation, translations, and filing.'],
+ 'mechanism': 'Audit import lines against the HTSUS, product specifications, CBP CROSS '
+              'rulings, and agreement-specific origin evidence, recognizing that another '
+              "importer's published ruling is persuasive only to the extent its facts and "
+              'legal analysis fit and does not itself bind CBP for this importer. Licensed '
+              'customs brokers and trade counsel select the available route: an ACE '
+              'Post-Summary Correction for eligible unliquidated entries, a timely § 1514 '
+              'protest for protestable liquidation errors, or a qualifying § 1520(d) '
+              'post-importation preference claim generally filed within one year of '
+              'importation for an agreement covered by that statute, including USMCA. The '
+              'collectible base is supported historical overpayment actually refundable '
+              'through the selected route, net of offsets and professional/documentation '
+              'costs; prospective landed-cost savings remain a separate forecast and never '
+              'count as collected refunds.',
+ 'metrics': ['Historical recovery funnel: identified overpayment, legally reachable and '
+             'evidence-supported refund base, accepted adjustments, and realized Treasury '
+             'receipts after offsets.',
+             'Net recovery efficiency: collected refunds less broker, counsel, '
+             'origin-documentation, and desk charges, with servicing hours and acquisition '
+             'costs per recovered dollar.',
+             'Prospective performance: verified duty-rate change and realized savings on '
+             'subsequent imports, reported separately from retroactive refunds and from '
+             'untested volume forecasts.'],
+ 'name': 'CBP CROSS HTS Reclassification, PSC and FTA Retroactive-Refund Desk',
+ 'platform_risks': [{'detection_metric': 'Percentage of proposed refund dollars lacking '
+                                         'verified product facts, current legal support, '
+                                         'origin substantiation, or a valid filing route.',
+                     'failure_mode': 'A superficially similar CROSS ruling or incomplete '
+                                     'origin certification supports an invalid refund '
+                                     'position.',
+                     'fallback': 'Withdraw unsupported positions, preserve independently valid '
+                                 'timely claims, retain the supported classification, and '
+                                 'obtain additional technical evidence or a prospective '
+                                 'binding ruling before changing future treatment.',
+                     'impact': 'Refunds are denied, future entries may be underpaid, and the '
+                               'importer incurs amendment, assessment, and professional-review '
+                               'costs.',
+                     'trigger': 'Technical review finds materially different product facts, a '
+                                'revoked ruling, unmet origin requirements, or an entry '
+                                'outside the chosen correction or claim window.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Reconcile paid entry lines to liquidation status and product facts; estimate '
+              'historical overpayment separately from future import-volume savings and exclude '
+              'entries with duplicate recovery or no remaining statutory route.',
+              '2. Have the broker and counsel test the proposed classification against HTSUS '
+              'text, legal notes, and factually relevant CROSS rulings; verify '
+              'agreement-specific origin rules rather than relying on a supplier certificate '
+              'alone.',
+              '3. Submit an eligible PSC generally within 300 days of entry and at least 15 '
+              'days before scheduled liquidation, whichever deadline comes first, a timely § '
+              '1514 protest where appropriate, or a complete qualifying § 1520(d) claim within '
+              'its one-year importation deadline; verify current ACE restrictions and do not '
+              "substitute one route for another's expired deadline.",
+              '4. Reconcile liquidation changes and actual Treasury payments to each entry, '
+              'deduct agreed recovery costs, and separately implement supported '
+              'classifications or seek a prospective binding ruling for future entries without '
+              'counting projected savings as refund cash.']},
+    'nsa_federal_idr_batch_arbitration_contingency': {'id': 'nsa_federal_idr_batch_arbitration_contingency',
+ 'inputs': ['Provider-authorized 835 ERA and 837 claim data, initial-payment or denial receipt '
+            'dates, payer explanations, QPA disclosures, service codes, facility status, '
+            'network status, and patient cost-sharing allocations under appropriate privacy '
+            'and security agreements.',
+            'Plan funding and ERISA information, applicable state payment-dispute rules, '
+            'emergency or nonemergency NSA eligibility facts, notice-and-consent records where '
+            'relevant, and existing negotiation, IDR, or settlement histories.',
+            'Authorized-representative and counsel arrangements, current CMS procedures and '
+            'certified-entity fee schedules, permissible batching criteria, negotiation/filing '
+            'calendar, and a collection-based contingency agreement defining QPA and '
+            'initial-payment treatment.'],
+ 'mechanism': 'Ingest commercial out-of-network 835 ERA remittances for emergency, anesthesia, '
+              'radiology, and eligible specialty surgical services, then screen federal No '
+              'Surprises Act eligibility under 42 U.S.C. § 300gg-111 and related provider '
+              'provisions against specified state-law or All-Payer Model rules; ERISA status '
+              'is relevant but does not alone resolve jurisdiction. An authorized '
+              'representative, with counsel where legal representation requires it, starts '
+              'open negotiation within the applicable 30-business-day initiation window, '
+              'completes the 30-business-day negotiation period, and initiates federal IDR '
+              'within four business days afterward, batching only disputes that satisfy '
+              'then-current federal criteria through a certified IDR entity. Charge 20%–30% '
+              'only on incremental payer cash collected above the contractual QPA floor after '
+              'nonreimbursed federal administrative and certified-entity fees, also excluding '
+              'the initial payer payment from new recovery because QPA is a statutory '
+              'benchmark rather than necessarily the initial payment; track evidence '
+              'preparation and professional costs separately from submitted offers and awards.',
+ 'metrics': ['Collectible dispute base: federally eligible disputed dollars with timely '
+             'negotiation and IDR rights, separated from billed charges, requested offers, and '
+             'unpaid awards.',
+             'Realized economics: incremental cash above both the initial-payment baseline and '
+             'contractual QPA floor, net unreimbursed process fees, 20%–30% contingency '
+             'receipts, and contribution after evidence and representative costs.',
+             'Process performance: timely initiation rate, eligible-batch acceptance rate, '
+             'cost per resolved claim, days from determination to payment, and unpaid-award '
+             'aging.'],
+ 'name': 'Federal No Surprises Act Open-Negotiation and Certified-IDR Recovery Desk',
+ 'platform_risks': [{'detection_metric': 'Eligibility rejection rate, batch-separation rate, '
+                                         'missed-deadline count, and nonreimbursed process '
+                                         'cost as a percentage of incremental collections.',
+                     'failure_mode': 'Jurisdiction, batching, or timing defects make an '
+                                     'apparently profitable federal IDR submission ineligible.',
+                     'fallback': 'Separate disputes only where still timely and permitted, use '
+                                 'the applicable state process when available, continue '
+                                 'permissible payer negotiation, and cease fee-generating '
+                                 'submissions with negative expected net recovery.',
+                     'impact': 'Disputes are dismissed or delayed, administrative and '
+                               'preparation expenses are stranded, and an award forecast never '
+                               'becomes incremental provider cash.',
+                     'trigger': 'State-law review displaces federal IDR, services fail NSA '
+                                'eligibility, a batch violates current criteria, or '
+                                'negotiation and initiation timestamps miss applicable '
+                                'business-day deadlines.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Reconcile each ERA to its underlying claim and initial-payment or denial '
+              'receipt date; exclude ineligible services, route disputes governed by '
+              'applicable state processes appropriately, and verify federal jurisdiction '
+              'without assuming every ERISA or specialty-surgery claim qualifies.',
+              '2. Send the required open-negotiation notice within 30 business days after '
+              'receipt of initial payment or denial, run the 30-business-day negotiation '
+              'period, and assemble permissible evidence without using billed charges or '
+              'prohibited public-payer comparisons.',
+              '3. Initiate federal IDR within four business days after negotiation ends, '
+              'subject to applicable exceptions or extensions; form only currently permissible '
+              'batches, select a certified entity, and meet offer, fee, and evidence deadlines '
+              'rather than treating the initiation window as blanket batching authority.',
+              '4. Track settlements, determinations, payer payment deadlines, and actual '
+              'deposits; calculate the fee base as max(0, cumulative comparable payer cash '
+              'minus max(initial payer payment, contract-defined comparable QPA floor) minus '
+              'nonreimbursed administrative and certified-entity fees), excluding patient '
+              'collections and invoicing only after cash arrives.']},
+    'aba_compliant_law_firm_mso_and_hitech_emr_triage': {'id': 'aba_compliant_law_firm_mso_and_hitech_emr_triage',
+ 'inputs': ['Executed MSO service agreements or verified Arizona ABS licensing documents, '
+            'state-specific ethics review, fixed/cost-plus rate cards, approved advertising '
+            'materials, vendor contracts, and an allocation of clinical, legal, and '
+            'administrative responsibilities.',
+            'Documented claimant permission, minimum necessary identifying data, authorized '
+            'Lexis access and permitted-purpose verification, restricted SSN matching where '
+            'justified, existing-client indexes, and secure duplicate-review procedures.',
+            'Valid patient access requests or medical-record authorizations, provider and EHR '
+            'inventories, delivery instructions, applicable record-fee rules, privacy/security '
+            'agreements where required, and a cost ledger for retrieval, processing, and human '
+            'review.'],
+ 'mechanism': 'Operate a non-lawyer Management Services Organization furnishing fixed or '
+              'documented cost-plus marketing, intake administration, duplicate-claimant '
+              'screening, and medical-record retrieval, while the law firm retains client '
+              'selection, legal advice, litigation judgment, and settlement control under '
+              'applicable state versions of ABA Model Rule 5.4 and related advertising and '
+              'solicitation rules. Alternatively, participate through an actually licensed '
+              'Arizona Alternative Business Structure within its authorized scope, rather than '
+              'assuming an Arizona license overrides restrictions in other jurisdictions; '
+              'non-lawyer MSO compensation must not become impermissible legal-fee sharing or '
+              'payment for recommendations. Retrieve electronic records under valid patient '
+              'requests or authorizations and 45 CFR § 164.524 as applicable, distinguishing '
+              'individual-access fee limits from third-party requests whose treatment differs '
+              'under HITECH and subsequent case law; the collectible base is earned '
+              'contractual service fees actually paid, not projected settlements, with '
+              'record-copying, identity-verification, security, and professional-review costs '
+              'separately accounted for.',
+ 'metrics': ['Collected service economics: paid fixed/cost-plus invoices, receivables aging, '
+             'and contribution after record charges, identity checks, licensed data access, '
+             'security, and review labor.',
+             'Triage quality: confirmed duplicate rate, false-positive rate after human '
+             'review, source-linked record completeness, and percentage of files requiring '
+             'additional patient authorization.',
+             'Operational integrity: request-to-record turnaround, overdue access requests, '
+             'unauthorized-access incidents, and compensation exceptions linked to referrals, '
+             'settlements, or legal-fee percentages.'],
+ 'name': 'Rule 5.4-Aligned Law-Firm MSO and Patient-Directed Electronic-Records Triage Desk',
+ 'platform_risks': [{'detection_metric': 'Percentage of contracts with outcome-linked '
+                                         'compensation, unauthorized legal-decision '
+                                         'exceptions, jurisdictional licensing gaps, and '
+                                         'record requests missing verified authority.',
+                     'failure_mode': 'An administrative services arrangement drifts into '
+                                     'prohibited fee sharing, paid recommendations, '
+                                     'unauthorized legal practice, or unauthorized '
+                                     'health-record access.',
+                     'fallback': 'Suspend the affected activity, refer legal decisions to '
+                                 'licensed counsel, correct pricing and marketing under ethics '
+                                 'review, restrict improperly obtained records, and resume '
+                                 'only services supported by valid contracts, permissions, and '
+                                 'jurisdictional authority.',
+                     'impact': 'The law firm and operator face disciplinary, licensing, '
+                               'privacy, contractual, and collection exposure, while affected '
+                               'records and invoices may require remediation.',
+                     'trigger': 'Compensation becomes settlement-linked, marketing promises '
+                                'legal outcomes, staff make legal eligibility decisions, '
+                                'Arizona licensing is treated as nationwide permission, or '
+                                'records are requested without a valid authority pathway.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Choose and document the operating structure with qualified ethics counsel: '
+              'use a fixed/cost-plus MSO without prohibited ownership or fee sharing, or '
+              'obtain the required Arizona ABS license before operating as one; review every '
+              "jurisdiction served and preserve lawyers' independent judgment.",
+              '2. Run approved marketing and administrative intake without selling legal '
+              'recommendations or making merits determinations; match permitted claimant '
+              'identifiers against authorized internal and Lexis records, minimize SSN '
+              "exposure, and send possible duplicates or conflicts to the firm's designated "
+              'reviewer.',
+              '3. Submit properly scoped patient requests or authorizations and distinguish '
+              'patient access from third-party disclosure pathways; apply the relevant fee '
+              'rules and, for requests governed by § 164.524, track its 30-calendar-day '
+              'response period and permitted single extension with written notice, while '
+              'checking shorter applicable state deadlines.',
+              '4. Deduplicate and organize received records into source-linked timelines for '
+              'lawyer review, restrict access and retention, and invoice documented fixed or '
+              'cost-plus services independently of settlement size, legal fees, or outcome; '
+              'reconcile service payments against actual delivery costs.']},
+    'bess_and_modular_ai_substation_land_option_assignment': {'id': 'bess_and_modular_ai_substation_land_option_assignment',
+ 'inputs': ['Parcel ownership, title exceptions, zoning, access and easement records; utility '
+            'headroom publications and transmission GIS; fiber-provider route information with '
+            'written confirmation of serviceability, route diversity, construction cost, and '
+            'delivery timing.',
+            'Project-specific electrical envelopes covering BESS charging and export MW, '
+            'duration and dispatch constraints, or AI firm load, ramp profile, redundancy, '
+            'cooling and water requirements; utility study procedures, queue data, '
+            'upgrade-cost estimates, and written capacity and timing evidence.',
+            'Landowner option templates specifying premium, exercise price, 12–24 month term, '
+            'extensions, assignment consent, diligence termination rights, access for testing, '
+            'and treatment of deposits; Phase I environmental assessments, wetland delineation '
+            'needs, floodplain screens, and a qualified developer buyer list.'],
+ 'mechanism': 'Overlay utility hosting-capacity maps, 69–345 kV transmission corridors, '
+              'dark-fiber routes, and environmental constraints to originate expressly '
+              'assignable, diligence-contingent 12–24 month land options. Hosting-capacity '
+              'maps and proximity are prospecting signals, not commitments: value each option '
+              'strictly against utility-validated deliverable MW, project-specific '
+              'import/export requirements, network-upgrade exposure, and a realistic '
+              'energization schedule. Monetize documented site-control assignments to '
+              'qualified BESS or modular AI developers, with separate treatment of land '
+              'rights, interconnection rights, and any utility consent required for a project '
+              'transfer.',
+ 'metrics': ['Risk-adjusted assignment margin = contracted assignment proceeds minus option '
+             'premiums, extensions, studies, environmental work, legal costs, transaction '
+             'costs, and probability-weighted failed-site spend; report cash at risk before '
+             'any buyer payment.',
+             'Utility-validated usable MW by import/export service condition, supporting '
+             'evidence stage, and expected energization date; track the percentage of screened '
+             'capacity surviving studies rather than presenting map headroom as saleable '
+             'capacity.',
+             'Site conversion and timing: screened parcels to signed options to paid '
+             'assignments, months of option term remaining beyond expected diligence, and '
+             'upgrade-cost sensitivity per usable MW.'],
+ 'name': 'Utility-Validated BESS and Modular AI Land-Option Origination Desk',
+ 'platform_risks': [{'detection_metric': 'Track variance between preliminary and studied MW, '
+                                         'upgrade estimates, and energization dates, plus '
+                                         'remaining option months relative to utility study '
+                                         'and permitting milestones.',
+                     'failure_mode': 'Indicative utility headroom is mistaken for deliverable '
+                                     'service, leaving an option on land that cannot support '
+                                     "the buyer's operating profile within the option term.",
+                     'fallback': 'Use the contractual diligence exit or renegotiate price and '
+                                 'term before further nonrefundable spending; pursue an '
+                                 'alternative operating profile only after fresh utility '
+                                 'validation, and withdraw unsupported capacity claims from '
+                                 'buyer materials.',
+                     'impact': 'The assignment value falls sharply while option premiums, '
+                               'engineering costs, and extension payments become stranded; a '
+                               'land assignment may also fail to preserve separately governed '
+                               'interconnection rights.',
+                     'trigger': 'A utility study identifies binding thermal or voltage '
+                                'constraints, a competing service request consumes available '
+                                'capacity, or required upgrades move energization beyond the '
+                                "buyer's investment horizon."}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Rank parcels using corridor, substation, fiber, access, zoning, and '
+              'environmental overlays; distinguish distribution hosting estimates from '
+              'transmission deliverability and exclude sites whose apparent capacity depends '
+              'on unsupported map interpretation.',
+              '2. Obtain project-specific utility feedback on import and export capacity, '
+              'operating restrictions, study requirements, interconnection facilities, '
+              'upgrades, and achievable energization dates; label screening feedback '
+              'separately from completed studies and executable service commitments.',
+              '3. Execute a counsel-reviewed, expressly assignable 12–24 month option with '
+              'environmental and utility diligence contingencies, staged payments, extension '
+              'economics, and clear exercise mechanics; commission Phase I work and necessary '
+              'wetlands, title, access, and permitting investigations before additional '
+              'capital becomes nonrefundable.',
+              '4. Market a version-controlled diligence package to qualified developers, price '
+              'the assignment using utility-validated usable MW and schedule-adjusted '
+              'developer economics, and close through documented assignment and escrow '
+              'procedures; verify state real-estate licensing rules and separately obtain any '
+              'required utility or queue-transfer consent.']},
+    'fca_qui_tam_and_sec_whistleblower_forensic_analytics': {'id': 'fca_qui_tam_and_sec_whistleblower_forensic_analytics',
+ 'inputs': ['Lawfully obtained procurement, payment, grant, corporate-filing, enforcement, and '
+            'pricing datasets with acquisition dates, source URLs, applicable use rights, '
+            'immutable snapshots, transformation code, and a documented separation of public '
+            'records from any authorized nonpublic evidence.',
+            'Counsel-defined investigative hypotheses identifying the relevant payment or '
+            'securities/tax theory, responsible actors, transaction dates, representations, '
+            'materiality, estimated loss, alternative explanations, and unresolved evidentiary '
+            'gaps.',
+            'Written analytics engagement covering scope, ordinary service fees, conflicts, '
+            'confidentiality, evidence retention, and ownership; separate counsel assessments '
+            'of FCA public disclosure, original-source status, first-to-file and limitations '
+            'issues, SEC original-information requirements, and IRS submission eligibility.'],
+ 'mechanism': 'Sell scoped B2B forensic-analytics retainers to contingency relator firms, '
+              'producing reproducible evidence packages for potential False Claims Act matters '
+              'under 31 U.S.C. §§ 3729–3730 and distinct SEC or IRS whistleblower pathways '
+              'under 15 U.S.C. § 78u-6 and 26 U.S.C. § 7623. Public-data anomalies alone do '
+              'not establish a knowingly false, material claim or satisfy Rule 9(b); FCA '
+              "public-disclosure and original-source analysis differs from the SEC's potential "
+              'recognition of qualifying independent analysis. Treat service revenue as the '
+              'operating business and any personally eligible whistleblower award as separate, '
+              'contingent, potentially multi-year proceeds rather than a purchased claim, '
+              "promised recovery, or share of counsel's legal fees.",
+ 'metrics': ['Collected retainer and milestone revenue minus analyst labor, data licensing, '
+             'expert review, secure storage, and rework; track receivable days and client '
+             'concentration without booking speculative awards as earned service revenue.',
+             'Evidence quality: reproducible transaction coverage, precision on manually '
+             'reviewed anomalies, documented alternative explanations, and the share of '
+             'allegations supported by claim-specific facts rather than aggregate '
+             'correlations.',
+             'Program-specific contingent recovery register: FCA shares generally 15–25% with '
+             'government intervention or 25–30% without, subject to statutory exceptions; SEC '
+             'awards generally 10–30% of collected sanctions in qualifying actions exceeding '
+             '$1 million; IRS § 7623(b) generally 15–30% subject to its monetary, '
+             'taxpayer-income, and other requirements.'],
+ 'name': 'Public-Data Forensic Analytics and Relator Litigation-Support Desk',
+ 'platform_risks': [{'detection_metric': 'Measure unresolved statutory-element gaps, '
+                                         'unsupported claim assertions, source-provenance '
+                                         'exceptions, and matters lacking a documented '
+                                         'program-specific assessment by counsel.',
+                     'failure_mode': 'A compelling statistical pattern is sold as an '
+                                     'award-eligible case despite public-disclosure '
+                                     'restrictions, insufficient claim-specific facts, or a '
+                                     'mismatch between the evidence and the selected '
+                                     'whistleblower program.',
+                     'fallback': 'Narrow the deliverable to supported forensic findings, '
+                                 'preserve exculpatory evidence, and pursue further lawful '
+                                 'corroboration only within the engagement; stop unsupported '
+                                 'allegations and retain collected service-fee economics '
+                                 'separately from any abandoned award thesis.',
+                     'impact': 'Dismissal, award denial, wasted litigation expense, '
+                               'confidentiality exposure, and impaired client relationships; '
+                               'paid analytics work does not itself establish relator standing '
+                               'or award eligibility.',
+                     'trigger': 'The material is already publicly disclosed or known to '
+                                'authorities, the analyst contributes no qualifying '
+                                'independent analysis or original-source knowledge, or counsel '
+                                'cannot connect anomalies to the required statutory '
+                                'elements.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Select a narrow, counsel-approved hypothesis and reproduce the underlying '
+              'transactions from preserved source data; document methodology, false-positive '
+              'controls, lawful access, and contrary evidence without accessing restricted '
+              'systems or soliciting privileged material.',
+              '2. Build a transaction-level evidence matrix linking alleged conduct to '
+              'identifiable claims, statements, actors, dates, knowledge indicators, and '
+              'materiality; have counsel test Rule 9(b) particularity under the governing '
+              'circuit and assess FCA public-disclosure and original-source issues before '
+              'characterizing a matter as actionable.',
+              '3. Deliver the paid forensic report and reproducible workpapers independently '
+              'of any award outcome; counsel selects the appropriate pathway, including an FCA '
+              'complaint initially filed under seal with statutory government disclosures, an '
+              'SEC TCR submission, or an IRS Form 211, rather than treating the programs as '
+              'interchangeable.',
+              '4. Maintain controlled litigation support, evidence updates, and a docket of '
+              "counsel-managed deadlines; respect the FCA's initial statutory seal period of "
+              'at least 60 days and any court-granted extensions, which can extend for years, '
+              'while forecasting operations from collected retainers rather than expected '
+              'awards.']},
+    'cftc_dcm_prediction_market_analytics_and_order_routing': {'id': 'cftc_dcm_prediction_market_analytics_and_order_routing',
+ 'inputs': ['Verified DCM and intermediary status, current contract specifications and '
+            'rulebooks, settlement sources, dispute provisions, trading hours, market-data '
+            'licenses, API terms, geographic restrictions, and written builder or referral '
+            'arrangements where offered.',
+            'Timestamped executable bids and offers, displayed depth, trades, venue and '
+            'intermediary fees, rate limits, account-access architecture, and contract '
+            'taxonomies that preserve differences in event definitions, observation windows, '
+            'and settlement rules.',
+            'A documented activity analysis covering compensated solicitation, order '
+            'acceptance or transmission, personalized recommendations, discretionary trading, '
+            'IB/FCM/CTA requirements and available exemptions; scoped API permissions, consent '
+            'records, commercial disclosures, and an explicit prohibition on custody and '
+            'pooled capital.'],
+ 'mechanism': 'Earn subscriptions from cross-venue probability, settlement-rule, and liquidity '
+              'analytics for event contracts listed on CFTC Designated Contract Markets such '
+              'as Kalshi and ForecastEx, using licensed data and venue-authorized access '
+              'channels. Add builder or referral compensation only where the relevant '
+              'exchange, intermediary, and applicable registration framework permit the '
+              'specific activity; non-custody alone does not remove introducing-broker or '
+              'commodity-trading-advisor obligations. Keep customer funds, positions, margin, '
+              'and account approval with the authorized venue or intermediary, and use '
+              'read-only analytics or permitted outbound referrals unless order transmission '
+              'has a documented lawful operating basis.',
+ 'metrics': ['Subscription contribution margin = collected recurring revenue minus licensed '
+             'data, infrastructure, support, payment processing, and acquisition costs; report '
+             'referral receipts separately and net of contractual reversals.',
+             'Market-data quality: quote age, feed uptime, contract-mapping exception rate, '
+             'and executable depth at the displayed price; calculate cross-venue spreads after '
+             'all observable fees and explicit settlement-basis adjustments.',
+             'For authorized routing only, user-consented order acceptance rate, execution '
+             'slippage against the timestamped executable quote, cancellation latency, and '
+             'reconciliation exceptions; for referrals, verified attributed accounts and '
+             'realized revenue per eligible referral.'],
+ 'name': 'Regulated Event-Contract Probability Terminal and Permitted Referral Desk',
+ 'platform_risks': [{'detection_metric': 'Track feature and compensation changes against the '
+                                         'documented permitted-activity scope, percentage of '
+                                         'order endpoints with an established authorization '
+                                         'basis, and unresolved venue-term or '
+                                         'registration-status exceptions.',
+                     'failure_mode': 'A non-custodial analytics product crosses into '
+                                     'compensated solicitation, order handling, or advisory '
+                                     'activity without the required registration or a valid '
+                                     'exemption.',
+                     'fallback': 'Disable the affected routing, solicitation, or '
+                                 'recommendation feature, preserve records, and continue only '
+                                 'the lawfully supported read-only analytics or referral '
+                                 'functionality; resume expanded activity through an '
+                                 'appropriately registered arrangement or a substantiated '
+                                 'exemption.',
+                     'impact': 'Routing suspension, terminated commercial agreements, '
+                               'regulatory exposure, customer execution disputes, and loss of '
+                               'referral revenue despite the platform never holding funds.',
+                     'trigger': 'A builder integration begins transmitting customer orders, '
+                                'transaction-linked compensation changes the solicitation '
+                                'model, personalized trade recommendations are introduced, or '
+                                'venue and intermediary terms change.'}],
+ 'track_id': 'track_2',
+ 'workflow': ["1. Confirm each venue's current regulatory status, customer-access model, data "
+              'rights, and permitted territories; distinguish direct venue access from '
+              'intermediary access, including ForecastEx access through authorized '
+              'intermediaries, and verify the current availability of any commercial referral '
+              'program.',
+              '2. Normalize contracts only when their event definitions and settlement '
+              'mechanics support a meaningful comparison; display bid/ask-derived implied '
+              'probabilities, depth, timestamps, fees, and settlement differences rather than '
+              'describing every price spread as executable arbitrage.',
+              '3. Launch paid read-only dashboards with stale-data suppression, spread and '
+              'depth filters, reproducible calculations, and clearly disclosed commercial '
+              'relationships; assess whether recommendation features create CTA obligations '
+              'before enabling them.',
+              '4. Enable only contractually permitted referral links or a separately '
+              'authorized routing implementation after documenting the registration or '
+              'exemption basis; require user-directed orders through the authorized venue or '
+              'intermediary, minimize token permissions, and retain consent and routing logs '
+              'without receiving customer funds.']},
+    'state_licensed_igaming_sportsbook_affiliate_portals': {'id': 'state_licensed_igaming_sportsbook_affiliate_portals',
+ 'inputs': ['A current jurisdiction-by-product authorization matrix covering operator '
+            'licenses, affiliate or vendor requirements, permitted compensation models, '
+            'marketing restrictions, minimum ages, and Ontario AGCO and iGaming Ontario '
+            "requirements relevant to each participant's role.",
+            'Executed operator agreements defining eligible first-time depositors, identity '
+            'and location verification, qualifying deposits or wagering, attribution windows, '
+            'CPA reversals, NGR deductions, revenue-share percentages, negative-carryover '
+            'scope, payment timing, and audit or reconciliation rights.',
+            'Versioned comparison data, operator-confirmed product availability, consent-based '
+            'attribution, location and age-screening controls, responsible-gambling resources, '
+            'suppression and self-exclusion handling where applicable, and editorial rules '
+            'excluding offshore operators and unlawful sweepstakes destinations.'],
+ 'mechanism': 'Operate jurisdiction-specific sportsbook and online-casino comparison '
+              'calculators and matchup hubs that route eligible adults only to operators '
+              'authorized for the relevant product and location in New Jersey, Pennsylvania, '
+              'Michigan, West Virginia, or Ontario, which is a Canadian province rather than a '
+              'US state. Earn contractually verified first-time-depositor CPA and, where '
+              'permitted, negotiated net-gaming-revenue shares after specified bonus, tax, '
+              'administrative, chargeback, and negative-carryover treatment. Obtain the '
+              'affiliate, vendor, supplier, or revenue-share permissions actually required in '
+              'each jurisdiction and commercial arrangement; do not assume one registration '
+              'covers every market or compensation model.',
+ 'metrics': ['Realized CPA yield = paid, non-reversed CPA revenue divided by eligible referred '
+             'visitors; track click-to-registration, verified '
+             'registration-to-qualifying-depositor conversion, rejection reasons, and the lag '
+             'between acquisition and cash collection.',
+             'Realized revenue share = contractual share percentage applied to the eligible '
+             'NGR base after agreed deductions and carryover treatment; reconcile the opening '
+             'negative balance, current-period activity, payable amount, and closing balance '
+             'by contractual reporting unit.',
+             'Jurisdiction-level contribution margin and control quality: content and '
+             'acquisition cost per paid depositor, cash payback period, blocked '
+             'ineligible-location clicks, age-screening failures, outdated offers, and '
+             'operator-authorization exceptions.'],
+ 'name': 'NJ, PA, MI, WV and Ontario Regulated Gaming Affiliate Comparison Desk',
+ 'platform_risks': [{'detection_metric': 'Monitor restricted-location link exposure, '
+                                         'unauthorized destination counts, '
+                                         'jurisdiction-specific advertising exceptions, CPA '
+                                         'reversal rates, and unexplained differences between '
+                                         'internal estimates and operator settlement '
+                                         'statements.',
+                     'failure_mode': 'A comparison page routes an ineligible visitor or '
+                                     'publishes an impermissible promotion, while weak '
+                                     'reconciliation overstates earnings from rejected '
+                                     'depositors or negative NGR.',
+                     'fallback': 'Disable affected offers and monetized links by jurisdiction, '
+                                 'preserve relevant records, replace promotional content with '
+                                 'permitted factual information, and reconcile or dispute '
+                                 'settlement differences through contractual processes; never '
+                                 'redirect blocked traffic to offshore operators or unlawful '
+                                 'sweepstakes.',
+                     'impact': 'Affiliate suspension, withheld commissions, regulatory action, '
+                               'customer harm, and materially lower cash receipts than the '
+                               "portal's gross acquisition dashboard suggests.",
+                     'trigger': 'Location cannot be verified, an operator loses or changes '
+                                'authorization, a public Ontario page displays a prohibited '
+                                'inducement, or operator reporting applies unexpected bonus '
+                                'deductions, clawbacks, or carryover.'}],
+ 'track_id': 'track_2',
+ 'workflow': ['1. Build separate NJ, PA, MI, WV, and Ontario inventories, verify operator and '
+              'affiliate permissions for sportsbook versus casino activity, and complete any '
+              'required registrations before monetizing the relevant traffic; require age 21 '
+              'in the four listed US states and age 19 in Ontario.',
+              '2. Publish substantiated comparisons and matchup content with prominent '
+              'affiliate disclosures, clear calculator assumptions, and responsible-gambling '
+              'information; apply jurisdiction-specific promotion rules, including Ontario '
+              'restrictions on public advertising of gambling inducements, bonuses, and '
+              'credits.',
+              '3. Restrict monetized links to eligible locations and products using layered '
+              'geolocation and fail-closed handling of uncertain location, without offering '
+              'circumvention instructions; use affiliate age screening while leaving mandatory '
+              'identity, age, self-exclusion, and wagering-location verification with the '
+              'authorized operator.',
+              '4. Reconcile operator-confirmed qualifying depositors, duplicate or fraudulent '
+              'accounts, CPA clawbacks, and contract-defined monthly NGR; account for '
+              'deductions and negative carryover at the agreed player, brand, product, or '
+              'portfolio level, and suspend links immediately when authorization or permitted '
+              'marketing terms change.']},
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -4677,6 +5269,12 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
     41: ("wholesale_buying_group_card_float_cycling", "cloud_ai_startup_credit_aggregation_arbitrage", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "aged_shelf_corp_tradeline_credit_stacking", "authorized_distributor_grey_market_diversion_arbitrage", "free_llc_fintech_bounty_stacking", "sportsbook_promo_ev_matched_betting_syndicates", "platform_privilege_tier_account_arbitrage", "telegram_channel_signal_scraping", "section_321_de_minimis_bonded_tariff_arbitrage"),
     42: ("dot_digital_billboard_and_ios_master_lease_flip", "cell_tower_billboard_easement_strip_out", "ferc_grid_interconnection_queue_land_speculation", "gis_landlocked_parcel_easement_assemblage", "solar_tax_equity_depreciation_strip_syndication", "fmcsa_dot_inspection_trigger_arbitrage", "property_tax_assessment_appeal_contingency", "municipal_code_violation_trigger_arbitrage", "public_record_api_intelligence", "public_filing_trigger_mail_arbitrage", "high_velocity_dm_outbound_systems"),
     43: ("super_bowl_vip_hospitality_allotment_bundling", "nfl_nba_ssl_season_strip_playoff_option_arbitrage", "multi_exchange_pos_broadcast_drop_curve_arbitrage", "verified_fan_ticketing_and_drop_allocation_farming", "wholesale_buying_group_card_float_cycling", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "aged_shelf_corp_tradeline_credit_stacking", "high_velocity_dm_outbound_systems", "multi_inbox_free_workspace_outbound_clusters", "competitor_intent_comparison_hijacking", "telegram_channel_signal_scraping"),
+    44: ("cbp_duty_drawback_and_tariff_protest_contingency", "hts_cross_ruling_reclassification_and_psc_recovery", "b2b_class_action_contingency_recovery", "customs_first_sale_rule_valuation_arbitrage", "section_321_de_minimis_bonded_tariff_arbitrage", "parcel_carrier_refund_tariff_audit_contingency", "freight_detention_audit_contingency", "private_b2b_gpo_umbrella_rebate_arbitrage", "public_record_api_intelligence", "sec_edgar_8k_vendor_trigger_arbitrage", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems"),
+    45: ("nsa_federal_idr_batch_arbitration_contingency", "hospital_lien_medical_receivables_arbitrage", "out_of_network_dme_telehealth_billing_arbitrage", "section_340b_contract_pharmacy_spread_arbitrage", "erisa_level_funded_transparent_pbm_bor_arbitrage", "public_record_api_intelligence", "wotc_hourly_payroll_tax_credit_contingency_engine", "saas_technographic_churn_pixel_scraping", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems", "competitor_intent_comparison_hijacking", "llm_citation_geo_poisoning"),
+    46: ("aba_compliant_law_firm_mso_and_hitech_emr_triage", "litigation_finance_mass_tort_docket_securitization", "arizona_abs_mass_tort_cocounsel", "inbound_rtb_pay_per_call_ping_post_exchange", "social_to_search_ping_post_arbitrage", "tcpa_litigator_scrub_honeypot_arbitrage", "cipa_vppa_wiretap_pixel_settlement_arbitrage", "paid_to_organic_media_arbitrage", "ad_library_spend_velocity_arbitrage", "identity_graph_pixel_arbitrage", "ctv_mfa_programmatic_supply_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "web2app_quiz_subscription_billing_bypass"),
+    47: ("bess_and_modular_ai_substation_land_option_assignment", "ferc_grid_interconnection_queue_land_speculation", "gis_landlocked_parcel_easement_assemblage", "cell_tower_billboard_easement_strip_out", "dot_digital_billboard_and_ios_master_lease_flip", "solar_tax_equity_depreciation_strip_syndication", "transferable_tax_credit_brokerage_syndication", "forced_pooling_mineral_lease_curve_jumping", "public_record_api_intelligence", "public_filing_trigger_mail_arbitrage", "high_velocity_dm_outbound_systems"),
+    48: ("fca_qui_tam_and_sec_whistleblower_forensic_analytics", "public_record_api_intelligence", "sec_edgar_8k_vendor_trigger_arbitrage", "customs_first_sale_rule_valuation_arbitrage", "gsa_municipal_set_aside_facility_ghost_brokering", "government_rfp_subcontractor_brokerage", "hospital_lien_medical_receivables_arbitrage", "section_340b_contract_pharmacy_spread_arbitrage", "free_tier_api_waterfall_multiplexing", "cloud_ai_startup_credit_aggregation_arbitrage", "multi_inbox_free_workspace_outbound_clusters"),
+    49: ("cftc_dcm_prediction_market_analytics_and_order_routing", "state_licensed_igaming_sportsbook_affiliate_portals", "sportsbook_promo_ev_matched_betting_syndicates", "public_record_api_intelligence", "free_tier_api_waterfall_multiplexing", "cloud_ai_startup_credit_aggregation_arbitrage", "serverless_edge_free_tier_empire_hosting", "competitor_intent_comparison_hijacking", "parasitic_seo", "llm_citation_geo_poisoning", "newsletter_co_reg_sparkloop_arbitrage", "telegram_channel_signal_scraping"),
 }
 
 
@@ -5377,6 +5975,12 @@ _CANDIDATE_SPECS.extend([
     _candidate(41, "Buying Group, Commercial Card-Float & Rebate Arbitrage", "Commercial card-float & rebate arbitrage", (250000, 1800000), (8, 20), (10000, 55000), (1500, 9000), "1–3 months", (1, 2), "Tax-exempt DE/NH/OR wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card cashback, shopping-portal rebates, B2B Plastiq/Melio invoice float, and 55-day T-bill/bank-bonus velocity compound rapid capital turns on a 3-person desk.", ["Buying-Group deal-commit & tracking reconciler", "Rakuten / TopCashback / card-offer stack router", "55-day statement float, T-bill sweep & ACH ledger"], ["Buying-group counterparty ACH delay", "Card issuer financial review or shutdown", "Lost/damaged carrier parcel claim disputes"], ["Maintain valid state sales-tax resale certificates, accurate 1099-K / IRC price-adjustment cost-basis records, and strict separation from prohibited consumer card-cycling.", "Diversify across vetted Net-3/Net-5 buying groups, insure high-value electronics shipments, and match statement closing cycles to cleared ACH settlements."], revenue_basis="Gross wholesale buying-group reimbursements, commercial card/portal rebates, and treasury-float yields (35% retained net contribution after landed merchandise cost)", retained_share=0.35, automation_coverage=0.87),
     _candidate(42, "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage", "Infrastructure & IOS lease arbitrage", (120000, 950000), (28, 52), (12000, 60000), (2000, 12000), "2–6 months", (1, 3), "Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.", ["FCC ASR tower & DOT AADT GIS parcel pipeline", "Easement buyout NPV & lender SNDA packager", "Unmanned RFID gate & NNN fleet-yard billing"], ["Municipal sign/zoning variance denials", "Underlying mortgage SNDA delays", "Environmental Phase I stormwater issues on IOS yards"], ["Verify state real-estate brokerage licensing exemptions when trading principal lease options, Highway Beautification Act / state DOT spacing rules, and lender SNDA consents.", "Run Phase I environmental screening and heavy-axle zoning confirmation before executing IOS master-leases."], revenue_basis="Net easement buyout flip spreads, billboard permit assignment fees, and retained NNN IOS master-lease spreads; excludes institutional REIT principal face values", automation_coverage=0.78),
     _candidate(43, "Live-Event, Super Bowl & VIP Ticket Brokering", "Event & hospitality brokerage", (220000, 1800000), (12, 26), (10000, 50000), (1800, 11000), "1–3 months", (1, 2), "Multi-exchange SkyBox/Automatiq POS broadcasting, NFL/NBA season-strip playoff option math, luxury suite seat-splitting, and bespoke Super Bowl/F1 corporate hospitality packages compound high-velocity event spreads on a 3-person desk.", ["SkyBox / Automatiq / Logitix instant multi-exchange POS sync", "Dynamic drop-curve & playoff-probability repricing engine", "Automated barcode transfer & B2B suite invoice reconciliation"], ["200% double-sale replacement penalties on unsynced listings", "Event postponement, injury, or rainout demand shocks", "BOTS Act / state all-in fee disclosure non-compliance"], ["Operate strictly within the federal BOTS Act (15 U.S.C. §45c — zero automated queue or security-measure circumvention) and state ticket-reseller licensing/all-in pricing laws (e.g., N.Y. Arts & Cult. Aff. Law §25).", "Enforce real-time POS auto-hold locks across StubHub, Vivid Seats, SeatGeek, and TickPick to prevent double-fills."], revenue_basis="Gross secondary ticket exchange payouts, suite-splitting sales, and VIP hospitality package billings (40% retained net spread after face-value ticket & suite acquisition cost)", retained_share=0.40, automation_coverage=0.88),
+    _candidate(44, "Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery", "Customs & settlement contingency recovery", (110000, 920000), (32, 58), (8000, 35000), (1500, 9500), "1–3 months", (1, 3), "5-year CBP 19 U.S.C. § 1313 unused-merchandise/manufacturing duty drawbacks, § 1514 / Post-Summary Correction tariff refund protests, and settled B2B antitrust/interchange claim filings unlock 25%–35% contingency recoveries on a 4-person desk.", ["ImportGenius / Panjiva manifest-to-ACE Form 7501 matcher", "Automated export BOL & 8-digit HTS substitution reconciler", "B2B antitrust/interchange AP ledger claim packager"], ["CBP liquidation deadline or missing export trace defects", "Surety-bond capacity & accelerated-payment audit holds", "Statutorily non-drawback-eligible tariff regimes"], ["Execute all formal CBP drawback and protest filings through a licensed 19 CFR Part 111 customs broker or trade counsel under valid Customs Powers of Attorney and 19 CFR Part 190 recordkeeping.", "Provide court-required third-party class-action filer disclosures clarifying that claimants may file directly at zero cost."], revenue_basis="Earned contingency fees on realized CBP duty drawbacks, tariff protests, and settled B2B antitrust distributions; excludes importer duty principal and gross settlement pools", confidence="High", automation_coverage=0.88),
+    _candidate(45, "No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery", "Healthcare IDR arbitration recovery", (110000, 900000), (30, 56), (10000, 45000), (1800, 10500), "1–4 months", (1, 2), "Automated 835 ERA commercial underpayment detection, 30-business-day open-negotiation notices, and 4-day certified IDR batching recover QPA uplifts for ER, anesthesia, radiology, and surgical groups on contingency.", ["835 ERA RARC/CARC underpayment & ERISA plan classifier", "30-day open-negotiation & 4-day IDR deadline state machine", "FAIR Health / clinical-acuity baseball-arbitration brief builder"], ["Forfeited certified-IDR-entity fees on ineligible/state-regulated claims", "90-day same-payer/code cooling-off batching traps", "Delayed payer remittance after prevailing IDR awards"], ["Execute HIPAA Business Associate Agreements, screen federal ERISA vs state surprise-billing jurisdiction pre-filing, and comply with 42 U.S.C. § 300gg-111 / 45 CFR § 149.510 batching and cooling-off rules.", "Calculate contingency fees strictly on incremental cash collected above the payer initial QPA payment net of unrecovered IDR fees."], revenue_basis="Earned contingency shares on incremental cash collected above initial payer QPA/allowed remittances; excludes baseline provider collections", confidence="High", automation_coverage=0.88),
+    _candidate(46, "Mass-Tort Case Acquisition, HITECH Record Triage & Law-Firm MSOs", "Legal intake & MSO operations", (160000, 1250000), (26, 50), (12000, 50000), (2500, 14000), "1–4 months", (1, 3), "ABA Rule 5.4-compliant Law-Firm MSOs, licensed Arizona ABS co-ventures, and automated $6.50 HITECH EMR verification turn raw claimant inquiries into deficiency-free mass-tort retainers.", ["TrustedForm / Lexis duplicate-retainer & SSN fraud firewall", "Automated 45 CFR § 164.524 HITECH EMR & pharmacy retrieval", "LLM ICD-10 / exposure-timeline clinical chronology parser"], ["Duplicate or synthetic claimant lead-vendor fraud", "MDL Daubert Rule 702 general-causation dismissals", "State bar unauthorized fee-splitting or runner enforcement"], ["Contract strictly at fair-market fixed or cost-plus rates under ABA Model Rule 5.4 Law-Firm MSO agreements (reserving fee-sharing strictly to licensed lawyers or authorized Arizona ABS entities).", "Enforce HIPAA/HITECH patient-directed record authorizations, TCPA 1-to-1 consent, and state bar attorney-advertising rules."], revenue_basis="Contracted flat/cost-plus MSO administrative, marketing, intake, and HITECH medical-record triage fees; excludes law-firm trust funds and gross settlement awards", confidence="High", automation_coverage=0.87),
+    _candidate(47, "AI Data-Center Powered Land, Substation Headroom & BESS Site Optioning", "Powered-land & BESS site origination", (110000, 900000), (30, 54), (10000, 50000), (1800, 11000), "2–6 months", (1, 3), "GIS overlays of 69kV–345kV substation hosting capacity, FERC/ISO interconnection queues, and long-haul dark fiber let a 4-person desk lock up assignable land options for BESS and AI data-center developers.", ["FERC/ISO queue & utility substation hosting-capacity GIS", "Wetland, flood, mineral-waiver & zoning fatal-flaw screener", "Milestone-contingent assignable land-option packager"], ["Network-upgrade restudy cost spikes killing queue viability", "Municipal data-center or BESS zoning moratoriums", "Option-fee burn on parcels failing utility load validation"], ["Trade strictly as a principal holding recorded/equitable option interests or partner with licensed state real-estate brokers where assignment brokerage requires licensure.", "Disclose utility capacity study status accurately—never representing proximity to lines or unstudied queue filings as guaranteed deliverable megawatts."], revenue_basis="Realized option assignment fees, per-MW origination milestone payments, and development carry; excludes underlying land purchase price and capex", confidence="High", automation_coverage=0.79),
+    _candidate(48, "Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics", "Forensic whistleblower analytics", (95000, 880000), (32, 58), (10000, 45000), (1500, 9500), "4–12 months", (1, 2), "Cross-correlating public CMS Part B/D billing, Open Payments, SAM.gov procurement, and import manifests funds a 3-person forensic pod via relator-firm retainers plus 15%–30% statutory whistleblower awards.", ["CMS Part B/D, Open Payments & import-manifest outlier engine", "FOIA & primary-source corroboration dossier builder", "Relator-counsel litigation-support & seal-compliance tracker"], ["31 U.S.C. § 3730(e)(4) public-disclosure bar dismissals", "Multi-year DOJ seal investigations & non-intervention", "Strict court-seal breach disqualifying relator share"], ["File all False Claims Act qui tam complaints exclusively through licensed relator counsel under strict 31 U.S.C. § 3730(b)(2) court seal, and route SEC Form TCR / IRS Form 211 filings through counsel.", "Pair long-tail statutory relator upside with recurring B2B forensic data-analytics retainers so operating cashflow never depends on uncollected seal dockets."], revenue_basis="Paid forensic litigation-support retainers from plaintiff/relator law firms plus realized net statutory relator/whistleblower award shares", confidence="High", automation_coverage=0.83),
+    _candidate(49, "Regulated Prediction-Market Terminals & Licensed iGaming Affiliates", "Prediction terminals & licensed iGaming media", (75000, 650000), (26, 50), (8000, 45000), (1500, 10000), "2–6 months", (1, 2), "Non-custodial CFTC event-contract odds/liquidity SaaS terminals paired with state-licensed (NJ/PA/MI/WV/ON) sportsbook & casino CPA/NGR comparison portals compound 80%+ software and media spreads with zero house risk.", ["Sub-second Kalshi / ForecastEx & regulated sportsbook WebSocket engine", "Cross-venue probability & positive-EV SaaS alert dashboard", "Geofenced S2S First-Time-Depositor (FTD) & NGR attribution"], ["Post-NFL sportsbook CPA budget seasonality", "Bundled NGR admin/bonus deductions & negative carryover", "Unregistered IB/FCM or state gaming-vendor compliance faults"], ["Operate 100% non-custodially within CFTC publisher/analytics boundaries (never holding user funds or routing to unlicensed offshore or unlawful sweepstakes venues).", "Maintain required state gaming-affiliate vendor registrations (e.g., NJ DGE, PA PGCB, MI MGCB), 21+ age gating, geofencing, and responsible-gaming helpline disclosures."], revenue_basis="Non-custodial analytics SaaS subscriptions, permitted DCM builder rebates, and state-licensed iGaming CPA/NGR commissions net of deductions; excludes user trading volume", confidence="High", automation_coverage=0.87),
 ])
 
 

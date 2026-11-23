@@ -1,0 +1,1065 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "complete-operating-process-production-blueprint-90-day-cohort",
+    "question_prompt": "How does an operator execute customs duty drawback, tariff refund & antitrust claim recovery end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "ACE Entry Evidence, Part 190 Drawback, Section 1514 Protests, Settlement Distributions, and an Idempotent SQLite Cash Ledger",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #44, Rank #03 of 49, scores 95/100 by converting documented "
+        "customs and settlement entitlements into earned contingency fees rather "
+        "than treating recovered client principal as operator revenue. This chapter "
+        "turns 12 mapped plays into three separately controlled recovery lanes, "
+        "a six-module SQLite reference, and a worked cash-cohort bridge. Licensed "
+        "brokers or trade counsel handle formal customs filings; settlement "
+        "administrators determine distributions under controlling court documents. "
+        "The annual owner-profit cases remain $35,200 Conservative, $231,750 Base, "
+        "and $533,600 Scaled. The illustrative quarter earns $128,750 against "
+        "$70,812.50 of operating costs, producing $57,937.50 of owner profit. "
+        "Opening inventory, evidence losses, actual payment timing, and fee recognition "
+        "are exposed rather than hidden inside a recovery forecast."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$110,000",
+            "context": "Annual earned contingency-fee revenue; recovered client principal excluded",
+            "note": "32% margin; $35,200 owner profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$515,000",
+            "context": "Annual earned contingency-fee revenue; recovered client principal excluded",
+            "note": "45.0% margin; $231,750 owner profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$920,000",
+            "context": "Annual earned contingency-fee revenue; recovered client principal excluded",
+            "note": "58% margin; $533,600 owner profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Separate entitlement, filing authority, and collectible economics before scoring",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with three queues, not one refund spreadsheet. The drawback queue "
+                    "requires import entries, duty components, export or destruction evidence, "
+                    "claimant rights, and a qualifying route under 19 U.S.C. § 1313. "
+                    "Unused merchandise, manufacturing, and rejected merchandise have different "
+                    "conditions; an eight-digit HTS match alone never establishes substitution "
+                    "eligibility. For a qualifying 99% recovery, $100,000 of eligible paid "
+                    "duties produces a $99,000 collectible base and a $29,700 fee at "
+                    "30%, before documentation and broker costs. Antidumping and countervailing "
+                    "duties are excluded under 19 U.S.C. § 1677h; other tariff measures "
+                    "require measure-specific eligibility research. The tariff-correction queue "
+                    "distinguishes an eligible pre-liquidation Post-Summary Correction from a "
+                    "post-liquidation protest under § 1514. A $50,000 supported overpayment "
+                    "produces a $15,000 fee only if the correction or protest yields that "
+                    "refund. The settlement queue starts with the certified class definition, "
+                    "covered purchases, release provisions, administrator instructions, and "
+                    "claim deadline. A client's $2 million purchase ledger is evidence, not "
+                    "a distribution estimate. A realized $20,000 distribution produces a "
+                    "$6,000 fee at 30%. Never add those purchases, refunded duties, or "
+                    "settlement pools to operating revenue. Score each lane on eligible "
+                    "dollars, evidence completeness, deadline slack, and expected collection "
+                    "delay before assigning scarce contractor hours."
+                ),
+                (
+                    "Build twelve mapped workstreams around those queues: unused-merchandise "
+                    "drawback identification; manufacturing drawback linkage; rejected-merchandise "
+                    "drawback screening; export-document reconstruction; substitution eligibility "
+                    "reconciliation; classification correction; valuation correction; origin and "
+                    "preference correction; timely liquidation protest preparation; B2B antitrust "
+                    "purchase reconstruction; interchange settlement claim packaging; and "
+                    "freight_detention_audit_contingency. These are operating mappings, not twelve "
+                    "independent entitlements to the same dollars. The last identifier is the "
+                    "supplied TRACK_1 play, Automated Parcel, LTL Freight & Tariff Overcharge "
+                    "Contingency Auditing. Treat it as a shared ingestion and referral engine "
+                    "while preserving separate carrier and customs contracts. For example, "
+                    "10,000 invoices at $0.08 automated processing cost require $800 of "
+                    "processing; 200 exceptions at six minutes each require 20 analyst hours. "
+                    "At an illustrative $45 hourly rate, that adds $900 before senior "
+                    "review. Twenty recovered $250 carrier errors generate $5,000 of recovery "
+                    "and $2,000 of fees at 40%. That carrier split sits within the play's "
+                    "35%–50% range, not the core volume's 25%–35% customs and settlement "
+                    "range. If a shipper has waived service guarantees, stop forecasting "
+                    "late-delivery credits and redirect effort to supported dimensional-weight, "
+                    "duplicate-charge, freight-class, and contract-rate errors. Contract terms "
+                    "still control whether any particular charge can be challenged."
+                ),
+                (
+                    "Price documentation before accepting an apparently lucrative file. A "
+                    "$29,700 drawback fee can absorb an illustrative $1,200 evidence "
+                    "reconstruction assignment and $2,000 broker engagement; a $900 fee "
+                    "cannot absorb that same work. These are per-file budgeting assumptions, "
+                    "not published vendor tariffs. ImportGenius and Panjiva help identify "
+                    "trade activity, but their manifests do not replace ACE entry records, "
+                    "proof of duty payment, or admissible export evidence. Obtain importer "
+                    "authorization and use licensed Part 111 brokers or authorized trade "
+                    "counsel for formal customs filings under valid powers of attorney. "
+                    "The administrative operator organizes evidence and exceptions without "
+                    "selling unlicensed customs business. Record whether accelerated drawback "
+                    "payment requires an approved privilege and sufficient drawback bond "
+                    "capacity; ordinary payment does not become accelerated merely because "
+                    "a forecast needs faster cash. A tariff refund does not automatically "
+                    "require a new drawback bond, although existing import-bond obligations "
+                    "remain relevant. Settlement claims ordinarily have no customs surety "
+                    "requirement, but distributions can wait for court approval, appeals, "
+                    "allocation, and deficiency resolution. Every engagement identifies who "
+                    "pays outside costs, when the fee becomes enforceable, and what happens "
+                    "after denial or repayment. Required third-party-filer disclosures must "
+                    "also explain that claimants may file directly at zero cost."
+                ),
+            ],
+            "table": {
+                "caption": "Three-Lane Entitlement, Documentation, Surety, and Collection Matrix",
+                "headers": [
+                    "Lane or control and collectible base",
+                    "Eligibility and authoritative evidence",
+                    "Documentation cost and surety treatment",
+                    "Cash timing and failure response",
+                ],
+                "rows": [
+                    [
+                        "Unused-merchandise drawback models $99,000 from $100,000 eligible duties",
+                        "Section 1313 route requires qualifying merchandise and supported exports",
+                        "Budget $1,200 reconstruction plus $2,000 broker work illustratively",
+                        "Plan several months or longer; accelerated payment needs separate qualification",
+                    ],
+                    [
+                        "Manufacturing drawback uses eligible input duties and supported attribution",
+                        "Document manufacturing records, wastage treatment, exports, and applicable authorization",
+                        "Budget analyst hours separately; assess accelerated-payment bond headroom",
+                        "Pause unsupported yield allocations rather than extrapolating undocumented consumption",
+                    ],
+                    [
+                        "Tariff correction models $50,000 refunded overpayment and $15,000 fees",
+                        "Confirm classification, valuation, origin, entry status, and correction route",
+                        "Budget $800 evidence work plus $1,500 licensed review illustratively",
+                        "Use current ACE correction limits; otherwise assess timely protest eligibility",
+                    ],
+                    [
+                        "Liquidation protest pursues only disputed duties supported by entry evidence",
+                        "Section 1514 generally requires filing within 180 days",
+                        "Budget counsel analysis separately; drawback bonding does not automatically apply",
+                        "Calendar decision-specific deadlines; contested matters may require lengthy proceedings",
+                    ],
+                    [
+                        "B2B antitrust recovery models $20,000 distribution and $6,000 fees",
+                        "Court documents determine covered buyers, products, periods, and exclusions",
+                        "Budget $450 ledger cleanup plus $300 supervised packaging illustratively",
+                        "Expect administrator-specific timing; purchases never establish a guaranteed distribution",
+                    ],
+                    [
+                        "Interchange recovery counts actual distributions rather than merchant processing volume",
+                        "Reconcile legal entities, merchant identifiers, covered periods, and administrator requirements",
+                        "Budget processor retrieval costs; ordinary claims require no customs surety",
+                        "Resolve competing submissions and deficiencies before anticipating available cash",
+                    ],
+                    [
+                        "Carrier audit produces $2,000 fees from $5,000 recovered charges",
+                        "UPS, FedEx, and LTL contracts determine dispute rights",
+                        "Separate carrier work orders prevent blending incompatible contingency percentages",
+                        "Replace waived SLA claims with contract-supported billing-error recovery",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect scarce review hours with entitlement-level evidence",
+                "body": (
+                    "Optimize for supported collectible dollars per reviewer hour, "
+                    "not for the largest spreadsheet of apparent overpayments."
+                ),
+                "items": [
+                    "Reserve the original entry-line duty bucket before testing a second recovery theory; subtract any prior refund from the remaining eligible base.",
+                    "Request export transport records and merchandise identifiers together, so missing physical trace appears before broker fees are committed.",
+                    "Run separate service-guarantee and billing-error rules against carrier contracts; a waived guarantee does not settle every other billing dispute.",
+                    "Ask settlement administrators about third-party access and competing claims before requesting a client's entire accounts-payable archive.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Implement six ledger modules with serialized writes and immutable evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The reference below uses Python's sqlite3 module, integer cents, and "
+                    "a single local SQLite database. Execute the six cells in order in "
+                    "one Python namespace; later cells define functions rather than inventing "
+                    "sample receipts. Each worker opens its own connection through connect(), "
+                    "and every mutable business operation acquires BEGIN IMMEDIATE before "
+                    "reading state. SQLite therefore serializes competing writers, while "
+                    "unique economic keys, receipt references, and event keys reject duplicate "
+                    "economic effects. A busy timeout produces an explicit retryable failure, "
+                    "not an unlocked fallback. Keep the database on supported local storage; "
+                    "do not share its file over a network filesystem. For multiple application "
+                    "hosts, port the same invariants to PostgreSQL transactions with row locks "
+                    "and unique indexes. The source digest represents actual supplied bytes, "
+                    "while the economic key represents the underlying entitlement rather than "
+                    "a filename. A corrected document needs a controlled amendment process, "
+                    "not a fresh case that reserves the same dollars twice. The compact "
+                    "reference intentionally freezes intake records. Production amendments "
+                    "should preserve prior versions, reviewer identity, reason, and a new "
+                    "digest. This design prevents duplicate writes within its transaction "
+                    "boundary; it does not turn an external customs portal into a transactional "
+                    "database participant."
+                ),
+                (
+                    "Separate administrative state from money movement. A new case becomes "
+                    "verified only after an authorized reviewer records a complete evidence "
+                    "decision; it becomes filed only after a broker acknowledgment or "
+                    "administrator receipt is captured. The operator never treats an attempted "
+                    "upload as an accepted claim. External submission remains a supervised "
+                    "adapter boundary: before retrying after a timeout, search the broker "
+                    "or administrator system using the stable claim reference. If acceptance "
+                    "cannot be established, suspend submission and obtain confirmation instead "
+                    "of blindly transmitting again. This avoids promising exactly-once delivery "
+                    "to systems that offer no idempotency contract. The verification and "
+                    "escrow state machine records receipts as held until independent payment "
+                    "evidence establishes release; held is an informational restriction, "
+                    "not an instruction to open an operator-controlled escrow account. "
+                    "Client distributions remain with the payer, administrator, or client "
+                    "as the engagement specifies. The reference assumes one recovery receipt "
+                    "per independently identified payer transaction. Split batch payments "
+                    "upstream using a separately reconciled allocation register before "
+                    "adopting this model; do not manufacture reference suffixes to defeat "
+                    "uniqueness. A reviewer digest proves document linkage only. Application "
+                    "authentication, signing authority, and reviewer separation remain "
+                    "required controls around these callable functions and their database."
+                ),
+                (
+                    "Revenue posts only when the contract's contingent fee is earned and "
+                    "the associated fee collection is evidenced under this example's "
+                    "cash-triggered terms. Gross recovery remains a memorandum amount, "
+                    "with operator fees and client allocation displayed separately. Assess "
+                    "ASC 606 principal-versus-agent presentation against actual contractual "
+                    "control; this scorecard uses earned operator fees, never underlying "
+                    "duties or settlement proceeds. Broker and contractor charges are "
+                    "expenses when the operator bears them, rather than an invented "
+                    "retained-share reduction to the canonical revenue figures. Fee rounding "
+                    "uses each case's cumulative released recovery, so splitting one "
+                    "payment into installments cannot create extra cents of revenue. "
+                    "The monthly view includes expense-only months and returns both owner "
+                    "profit and cumulative cash contribution. Its cost input must include "
+                    "all scenario costs, not merely recurring software subscriptions. "
+                    "Module six checks foreign keys, storage integrity, held-payment "
+                    "exclusion, allocation equality, and cumulative fee arithmetic. Add "
+                    "two-connection concurrency tests, duplicate replay tests, interrupted "
+                    "transaction tests, and restore drills before deployment. The snippets "
+                    "are a bounded reference, not an executed test report. Payment reversals "
+                    "and amended claims require explicit compensating-entry extensions; "
+                    "until those exist, stop automated processing of those exceptions and "
+                    "reconcile them in a separately controlled ledger."
+                ),
+            ],
+            "table": {
+                "caption": "Production Engineering / SQLite-or-Postgres Ledger & Idempotent Workflow Reference Table",
+                "headers": [
+                    "Module and execution contract",
+                    "Copy-pasteable Python reference implementation",
+                    "Invariant and deployment boundary",
+                ],
+                "rows": [
+                    [
+                        "Module one creates the local schema and transaction boundary",
+                        '''import hashlib
+import re
+import sqlite3
+from contextlib import contextmanager
+from datetime import date
+
+DB = "recovery_ledger.sqlite3"
+
+def connect():
+    connection = sqlite3.connect(
+        DB, timeout=30, isolation_level=None
+    )
+    connection.row_factory = sqlite3.Row
+    connection.execute("PRAGMA foreign_keys = ON")
+    connection.execute("PRAGMA busy_timeout = 30000")
+    connection.execute("PRAGMA synchronous = FULL")
+    return connection
+
+db = connect()
+db.execute("PRAGMA journal_mode = WAL")
+db.executescript("""
+CREATE TABLE IF NOT EXISTS claims (
+    claim_id TEXT PRIMARY KEY,
+    economic_key TEXT NOT NULL UNIQUE,
+    lane TEXT NOT NULL CHECK (
+        lane IN ('drawback', 'tariff', 'settlement')
+    ),
+    eligible_cents INTEGER NOT NULL CHECK (
+        typeof(eligible_cents) = 'integer' AND eligible_cents > 0
+    ),
+    fee_bps INTEGER NOT NULL CHECK (
+        typeof(fee_bps) = 'integer'
+        AND fee_bps BETWEEN 2500 AND 3500
+    ),
+    source_digest TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'new' CHECK (
+        status IN ('new', 'verified', 'filed', 'paid', 'rejected')
+    ),
+    submission_ref TEXT UNIQUE
+);
+CREATE TABLE IF NOT EXISTS events (
+    event_key TEXT PRIMARY KEY,
+    claim_id TEXT NOT NULL REFERENCES claims(claim_id),
+    target TEXT NOT NULL,
+    evidence_digest TEXT NOT NULL,
+    external_ref TEXT NOT NULL,
+    UNIQUE (claim_id, target)
+);
+CREATE TABLE IF NOT EXISTS receipts (
+    receipt_key TEXT PRIMARY KEY,
+    payer_reference TEXT NOT NULL UNIQUE,
+    claim_id TEXT NOT NULL REFERENCES claims(claim_id),
+    recovered_cents INTEGER NOT NULL CHECK (
+        typeof(recovered_cents) = 'integer' AND recovered_cents > 0
+    ),
+    bank_digest TEXT NOT NULL,
+    state TEXT NOT NULL DEFAULT 'held' CHECK (
+        state IN ('held', 'released')
+    )
+);
+CREATE TABLE IF NOT EXISTS postings (
+    posting_id INTEGER PRIMARY KEY,
+    receipt_key TEXT NOT NULL UNIQUE REFERENCES receipts(receipt_key),
+    booked_on TEXT NOT NULL,
+    release_digest TEXT NOT NULL,
+    fee_cents INTEGER NOT NULL CHECK (
+        typeof(fee_cents) = 'integer' AND fee_cents >= 0
+    ),
+    client_cents INTEGER NOT NULL CHECK (
+        typeof(client_cents) = 'integer' AND client_cents >= 0
+    )
+);
+CREATE TABLE IF NOT EXISTS costs (
+    month TEXT PRIMARY KEY,
+    amount_cents INTEGER NOT NULL CHECK (
+        typeof(amount_cents) = 'integer' AND amount_cents >= 0
+    ),
+    evidence_digest TEXT NOT NULL
+);
+""")
+
+@contextmanager
+def transaction(connection):
+    connection.execute("BEGIN IMMEDIATE")
+    try:
+        yield
+        connection.execute("COMMIT")
+    except BaseException:
+        connection.execute("ROLLBACK")
+        raise
+
+def digest(value):
+    return hashlib.sha256(value).hexdigest()
+
+def check_digest(value):
+    if not isinstance(value, str) or not re.fullmatch(
+        r"[0-9a-f]{64}", value
+    ):
+        raise ValueError("Supply a SHA-256 evidence digest")
+
+def require_text(value):
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError("Supply a stable nonempty reference")
+
+def require_integer(value, minimum=0):
+    if type(value) is not int or value < minimum:
+        raise ValueError("Supply integer cents or basis points")
+''',
+                        "Unique entitlement reservations and immediate transactions serialize concurrent mutations",
+                    ],
+                    [
+                        "Module two freezes intake evidence and returns deterministic scoring",
+                        '''def intake(connection, claim_id, economic_key, lane,
+           eligible_cents, fee_bps, source_bytes):
+    require_text(claim_id)
+    require_text(economic_key)
+    require_integer(eligible_cents, 1)
+    require_integer(fee_bps, 2500)
+    if lane not in ('drawback', 'tariff', 'settlement'):
+        raise ValueError("Select a supported recovery lane")
+    if fee_bps > 3500 or not isinstance(source_bytes, bytes):
+        raise ValueError("Check fee rate and source bytes")
+    source_digest = digest(source_bytes)
+    proposed = (
+        claim_id, economic_key, lane, eligible_cents,
+        fee_bps, source_digest
+    )
+    with transaction(connection):
+        existing = connection.execute(
+            "SELECT * FROM claims WHERE economic_key = ? "
+            "OR claim_id = ?", (economic_key, claim_id)
+        ).fetchall()
+        if existing:
+            fields = (
+                'claim_id', 'economic_key', 'lane',
+                'eligible_cents', 'fee_bps', 'source_digest'
+            )
+            if len(existing) != 1 or tuple(
+                existing[0][field] for field in fields
+            ) != proposed:
+                raise ValueError("Conflicting intake replay")
+        else:
+            connection.execute(
+                "INSERT INTO claims "
+                "(claim_id, economic_key, lane, eligible_cents, "
+                "fee_bps, source_digest) VALUES (?, ?, ?, ?, ?, ?)",
+                proposed
+            )
+    return {
+        "claim_id": claim_id,
+        "fee_ceiling_cents": (
+            eligible_cents * fee_bps + 5000
+        ) // 10000,
+        "evidence_score": 25,
+        "next_action": "Human entitlement and deadline assessment"
+    }
+''',
+                        "Scoring measures intake completeness only and never establishes legal eligibility",
+                    ],
+                    [
+                        "Module three records reviewed verification and acknowledged filing transitions",
+                        '''def advance(connection, claim_id, target, event_key,
+            evidence_digest, external_ref=""):
+    require_text(event_key)
+    check_digest(evidence_digest)
+    if target not in ('verified', 'filed', 'rejected', 'paid'):
+        raise ValueError("Unsupported transition")
+    if target == 'filed':
+        require_text(external_ref)
+    signature = (
+        claim_id, target, evidence_digest, external_ref
+    )
+    with transaction(connection):
+        prior = connection.execute(
+            "SELECT claim_id, target, evidence_digest, external_ref "
+            "FROM events WHERE event_key = ?", (event_key,)
+        ).fetchone()
+        if prior:
+            if tuple(prior) != signature:
+                raise ValueError("Conflicting transition replay")
+            return
+        claim = connection.execute(
+            "SELECT * FROM claims WHERE claim_id = ?", (claim_id,)
+        ).fetchone()
+        if claim is None:
+            raise ValueError("Claim must exist before transition")
+        allowed = {
+            'new': {'verified', 'rejected'},
+            'verified': {'filed', 'rejected'},
+            'filed': {'paid', 'rejected'},
+            'paid': set(),
+            'rejected': set(),
+        }
+        if target not in allowed[claim['status']]:
+            raise ValueError("Transition violates case state")
+        receipt_count = connection.execute(
+            "SELECT COUNT(*) FROM receipts WHERE claim_id = ?",
+            (claim_id,)
+        ).fetchone()[0]
+        held_count = connection.execute(
+            "SELECT COUNT(*) FROM receipts "
+            "WHERE claim_id = ? AND state = 'held'", (claim_id,)
+        ).fetchone()[0]
+        if target == 'rejected' and receipt_count:
+            raise ValueError("Receipt-bearing case needs exception handling")
+        if target == 'paid' and (not receipt_count or held_count):
+            raise ValueError("Release all receipts before final closure")
+        connection.execute(
+            "INSERT INTO events VALUES (?, ?, ?, ?, ?)",
+            (event_key,) + signature
+        )
+        if target == 'filed':
+            connection.execute(
+                "UPDATE claims SET status = ?, submission_ref = ? "
+                "WHERE claim_id = ?",
+                (target, external_ref, claim_id)
+            )
+        else:
+            connection.execute(
+                "UPDATE claims SET status = ? WHERE claim_id = ?",
+                (target, claim_id)
+            )
+''',
+                        "Reviewer evidence precedes transitions; external submission remains separately supervised",
+                    ],
+                    [
+                        "Module four holds receipts and atomically releases evidenced fee allocations",
+                        '''def hold_receipt(connection, receipt_key, payer_reference,
+                 claim_id, recovered_cents, bank_digest):
+    require_text(receipt_key)
+    require_text(payer_reference)
+    require_integer(recovered_cents, 1)
+    check_digest(bank_digest)
+    proposed = (
+        receipt_key, payer_reference, claim_id,
+        recovered_cents, bank_digest
+    )
+    with transaction(connection):
+        prior = connection.execute(
+            "SELECT receipt_key, payer_reference, claim_id, "
+            "recovered_cents, bank_digest FROM receipts "
+            "WHERE receipt_key = ? OR payer_reference = ?",
+            (receipt_key, payer_reference)
+        ).fetchall()
+        if prior:
+            if len(prior) != 1 or tuple(prior[0]) != proposed:
+                raise ValueError("Conflicting receipt replay")
+            return
+        claim = connection.execute(
+            "SELECT status FROM claims WHERE claim_id = ?",
+            (claim_id,)
+        ).fetchone()
+        if claim is None or claim['status'] != 'filed':
+            raise ValueError("Receipt requires an acknowledged open claim")
+        connection.execute(
+            "INSERT INTO receipts "
+            "(receipt_key, payer_reference, claim_id, "
+            "recovered_cents, bank_digest) VALUES (?, ?, ?, ?, ?)",
+            proposed
+        )
+
+def release_receipt(connection, receipt_key, booked_on,
+                    release_digest):
+    check_digest(release_digest)
+    if date.fromisoformat(booked_on).isoformat() != booked_on:
+        raise ValueError("Use a canonical calendar date")
+    with transaction(connection):
+        prior = connection.execute(
+            "SELECT booked_on, release_digest FROM postings "
+            "WHERE receipt_key = ?", (receipt_key,)
+        ).fetchone()
+        if prior:
+            if tuple(prior) != (booked_on, release_digest):
+                raise ValueError("Conflicting release replay")
+            return
+        receipt = connection.execute(
+            "SELECT r.*, c.fee_bps, c.status FROM receipts r "
+            "JOIN claims c ON c.claim_id = r.claim_id "
+            "WHERE r.receipt_key = ?", (receipt_key,)
+        ).fetchone()
+        if receipt is None:
+            raise ValueError("Record the held receipt first")
+        if receipt['state'] != 'held' or receipt['status'] != 'filed':
+            raise ValueError("Receipt cannot be released in current state")
+        totals = connection.execute(
+            "SELECT COALESCE(SUM(r.recovered_cents), 0), "
+            "COALESCE(SUM(p.fee_cents), 0) "
+            "FROM receipts r JOIN postings p "
+            "ON p.receipt_key = r.receipt_key WHERE r.claim_id = ?",
+            (receipt['claim_id'],)
+        ).fetchone()
+        cumulative = totals[0] + receipt['recovered_cents']
+        fee_total = (
+            cumulative * receipt['fee_bps'] + 5000
+        ) // 10000
+        fee_delta = fee_total - totals[1]
+        connection.execute(
+            "INSERT INTO postings "
+            "(receipt_key, booked_on, release_digest, fee_cents, "
+            "client_cents) VALUES (?, ?, ?, ?, ?)",
+            (
+                receipt_key, booked_on, release_digest, fee_delta,
+                receipt['recovered_cents'] - fee_delta
+            )
+        )
+        connection.execute(
+            "UPDATE receipts SET state = 'released' "
+            "WHERE receipt_key = ?", (receipt_key,)
+        )
+''',
+                        "Release evidence covers actual recovery and fee collection without custody",
+                    ],
+                    [
+                        "Module five reconciles monthly fees, complete costs, and cumulative cash",
+                        '''db.executescript("""
+CREATE VIEW IF NOT EXISTS monthly_reconciliation AS
+WITH income AS (
+    SELECT substr(p.booked_on, 1, 7) AS month,
+           SUM(r.recovered_cents) AS recovered_cents,
+           SUM(p.fee_cents) AS fee_cents,
+           SUM(p.client_cents) AS client_cents
+    FROM postings p
+    JOIN receipts r ON r.receipt_key = p.receipt_key
+    WHERE r.state = 'released'
+    GROUP BY substr(p.booked_on, 1, 7)
+),
+months AS (
+    SELECT month FROM income
+    UNION
+    SELECT month FROM costs
+),
+result AS (
+    SELECT m.month,
+           COALESCE(i.recovered_cents, 0) AS recovered_cents,
+           COALESCE(i.fee_cents, 0) AS fee_cents,
+           COALESCE(i.client_cents, 0) AS client_cents,
+           COALESCE(c.amount_cents, 0) AS cost_cents,
+           COALESCE(i.fee_cents, 0)
+             - COALESCE(c.amount_cents, 0) AS owner_profit_cents
+    FROM months m
+    LEFT JOIN income i ON i.month = m.month
+    LEFT JOIN costs c ON c.month = m.month
+)
+SELECT *,
+       SUM(owner_profit_cents) OVER (
+           ORDER BY month ROWS UNBOUNDED PRECEDING
+       ) AS cumulative_cash_cents
+FROM result;
+""")
+
+def record_costs(connection, month, amount_cents, evidence_digest):
+    if not re.fullmatch(r"[0-9]{4}-[0-9]{2}", month):
+        raise ValueError("Use a year-month accounting period")
+    date.fromisoformat(month + "-01")
+    require_integer(amount_cents)
+    check_digest(evidence_digest)
+    proposed = (amount_cents, evidence_digest)
+    with transaction(connection):
+        prior = connection.execute(
+            "SELECT amount_cents, evidence_digest "
+            "FROM costs WHERE month = ?", (month,)
+        ).fetchone()
+        if prior:
+            if tuple(prior) != proposed:
+                raise ValueError("Closed cost period requires an amendment")
+            return
+        connection.execute(
+            "INSERT INTO costs VALUES (?, ?, ?)",
+            (month, amount_cents, evidence_digest)
+        )
+''',
+                        "Reconciliation excludes held recoveries and separates client principal from fees",
+                    ],
+                    [
+                        "Module six verifies ledger arithmetic inside a consistent transaction",
+                        '''def run_qa(connection):
+    with transaction(connection):
+        integrity = connection.execute(
+            "PRAGMA integrity_check"
+        ).fetchall()
+        if [row[0] for row in integrity] != ['ok']:
+            raise ValueError("Storage integrity check failed")
+        if connection.execute("PRAGMA foreign_key_check").fetchall():
+            raise ValueError("Foreign key integrity check failed")
+        broken = connection.execute(
+            "SELECT r.receipt_key FROM receipts r "
+            "LEFT JOIN postings p ON p.receipt_key = r.receipt_key "
+            "WHERE (r.state = 'released' AND p.posting_id IS NULL) "
+            "OR (r.state = 'held' AND p.posting_id IS NOT NULL) "
+            "OR (p.posting_id IS NOT NULL AND "
+            "p.fee_cents + p.client_cents != r.recovered_cents)"
+        ).fetchall()
+        if broken:
+            raise ValueError("Receipt allocation or holding check failed")
+        totals = connection.execute(
+            "SELECT c.claim_id, c.fee_bps, "
+            "SUM(r.recovered_cents) AS recovered, "
+            "SUM(p.fee_cents) AS fees "
+            "FROM claims c JOIN receipts r ON r.claim_id = c.claim_id "
+            "JOIN postings p ON p.receipt_key = r.receipt_key "
+            "GROUP BY c.claim_id, c.fee_bps"
+        ).fetchall()
+        for row in totals:
+            expected = (
+                row['recovered'] * row['fee_bps'] + 5000
+            ) // 10000
+            if row['fees'] != expected:
+                raise ValueError("Cumulative fee rounding check failed")
+    return {
+        "storage": "passed",
+        "allocation": "passed",
+        "cumulative_fee_arithmetic": "passed"
+    }
+''',
+                        "Checks detect stored inconsistency but do not replace evidence authentication",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Run evidence-to-cash production with explicit human handoffs",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run intake as a controlled document acquisition job. The owner signs "
+                    "a lane-specific engagement, records the client entity and authorized "
+                    "representative, and delegates extraction to a contractor with read-only "
+                    "access. Pull Form 7501 entry summaries, entry-line duty amounts, "
+                    "commercial invoices, export bills of lading, and inventory movements "
+                    "for customs work. Pull covered-period accounts-payable detail, supplier "
+                    "identifiers, invoices, and merchant processor statements for settlement "
+                    "work. Carrier files use EDI billing feeds or authorized exports, "
+                    "with customer contracts attached before any service-level rule runs. "
+                    "Normalize dates, currencies, units, entry numbers, and entity names "
+                    "without overwriting the originals. Hash raw bytes before transformation "
+                    "and record parser version, row counts, rejected rows, and control "
+                    "totals. For a 2,000-entry customs extract, reconcile total duty by "
+                    "entry against the client's source report before testing eligibility. "
+                    "If 40 records lack line-level duty breakdown, quarantine those records "
+                    "rather than applying an average rate. Aggregate exception totals "
+                    "still remain visible to the client. A second reviewer samples source "
+                    "images against parsed values, then expands review when systematic "
+                    "errors appear. Reserve entitlement keys only after identifying "
+                    "duplicate submissions, predecessor entities, prior agents, and earlier "
+                    "refunds that could consume the same recoverable amount."
+                ),
+                (
+                    "The licensed reviewer next converts documentary potential into a "
+                    "filing decision. For drawback, verify the statutory route, import "
+                    "and export dates, merchandise trace, substitution restrictions, "
+                    "transfer rights, and required certifications. Section 1313 and "
+                    "19 CFR Part 190 impose claim-specific conditions; the five-year "
+                    "window is not permission to replace missing export evidence with "
+                    "a shipping forecast. For tariff corrections, inspect liquidation "
+                    "status immediately before submission, apply current PSC program "
+                    "limits, and separately calendar the applicable § 1514 protest "
+                    "deadline. A missed protest deadline is not repaired by renaming "
+                    "the file as drawback. For settlements, reconcile claimed purchases "
+                    "to the relevant class period and entities, check exclusions and "
+                    "prior releases, and follow the controlling court-approved claim "
+                    "form. Third-party filing permissions and disclosures vary by "
+                    "proceeding; never reuse another settlement's authorization language "
+                    "without checking it. Each reviewer returns accepted amounts, "
+                    "excluded amounts, reasons, and documentary citations. The owner "
+                    "then updates the fee forecast and work budget. A prospective "
+                    "$15,000 tariff fee with $2,300 of outside costs remains attractive "
+                    "only if the claim is timely and supported. Remove unsupported "
+                    "principal before calculating the contingency, rather than booking "
+                    "a full fee and hiding the defect in a generalized reserve."
+                ),
+                (
+                    "After submission, manage exceptions as dated tasks with accountable "
+                    "owners. Store the broker transaction reference, administrator claim "
+                    "identifier, submission timestamp, attachments, and acknowledgment "
+                    "digest. A rejection is a new evidence task, not a successful "
+                    "filing event. Track CBP information requests, settlement deficiencies, "
+                    "bond headroom, and payment notices separately from marketing "
+                    "activity. A weekly aging report distinguishes evidence preparation, "
+                    "accepted filing, adjudication, payment announced, client credited, "
+                    "and fee collected. For accelerated drawback, model possible "
+                    "repayment exposure and audit holds instead of treating provisional "
+                    "cash as final adjudication. The owner matches each recovery "
+                    "notice to the client's bank evidence and the fee invoice; "
+                    "a contractor independently checks amount, entity, currency, "
+                    "and duplicate references. Only then release the ledger posting "
+                    "under the stated revenue policy. Close the file after final "
+                    "distribution status is established and every held receipt is "
+                    "resolved. Preserve drawback records under 19 CFR § 190.15 "
+                    "and applicable related requirements, with a documented retention "
+                    "clock and deletion hold for unresolved matters. Monthly review "
+                    "compares realized fees per analyst hour across the three lanes. "
+                    "Shift acquisition toward better evidence quality, not toward "
+                    "claims whose principal looks large but whose collection path "
+                    "remains speculative."
+                ),
+            ],
+            "table": {
+                "caption": "Evidence-to-Cash Handoff and Exception Ownership Matrix",
+                "headers": [
+                    "Production handoff and accountable role",
+                    "Required evidence and acceptance test",
+                    "Concrete unit calculation or control",
+                    "Failure response and next action",
+                ],
+                "rows": [
+                    [
+                        "Owner accepts engagement and confirms client authorization scope",
+                        "Signed terms identify fee trigger, external costs, and filing permissions",
+                        "A 30% contingency produces $6,000 from $20,000 realized recovery",
+                        "Stop access requests until entity authority and engagement terms match",
+                    ],
+                    [
+                        "Extraction contractor acquires authorized source records without write access",
+                        "Preserve original files, content digests, row counts, and extraction timestamps",
+                        "Reconcile 2,000 entry records before evaluating individual recovery theories",
+                        "Quarantine forty incomplete entries instead of estimating their duty components",
+                    ],
+                    [
+                        "Evidence analyst reserves entitlement keys across overlapping recovery theories",
+                        "Compare prior claims, refunds, assignments, and predecessor entity relationships",
+                        "Subtract $10,000 previously refunded before estimating remaining eligible duties",
+                        "Resolve competing agents and assignments before proposing another submission",
+                    ],
+                    [
+                        "Licensed broker or trade counsel determines formal customs filing route",
+                        "Verify Part 190 evidence and current liquidation or correction status",
+                        "A $50,000 supported refund supports $15,000 fees before outside costs",
+                        "Exclude barred duties and stop filings after an unrecoverable deadline",
+                    ],
+                    [
+                        "Settlement specialist packages purchases under the controlling court documents",
+                        "Match class definition, covered period, claimant identity, and filer disclosures",
+                        "Covered purchase dollars establish evidence rather than recognized operator revenue",
+                        "Resolve deficiency notices without inventing purchase records or distribution estimates",
+                    ],
+                    [
+                        "Owner tracks external acknowledgments and assigns dated deficiency responses",
+                        "Capture broker references, administrator identifiers, and accepted submission evidence",
+                        "An attempted upload contributes zero dollars to collected fee revenue",
+                        "Investigate ambiguous acceptance before retrying any outward-facing submission",
+                    ],
+                    [
+                        "Independent reviewer matches recovery, client credit, and fee collection evidence",
+                        "Tie payer notice and bank records to one unique recovery receipt",
+                        "Allocate $20,000 recovery into $6,000 fees and $14,000 client share",
+                        "Hold unmatched receipts and investigate duplicates before releasing ledger postings",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight checks before external submission",
+                "body": (
+                    "The filing packet advances only when the designated reviewer "
+                    "has documented each of these four checks."
+                ),
+                "items": [
+                    "Confirm the exact § 1313 route or § 1514/PSC procedure, live deadline, duty exclusions, and absence of overlapping recovery.",
+                    "Confirm licensed customs representation, valid powers of attorney, required claimant rights, and any accelerated-payment bond capacity.",
+                    "Confirm court-specific settlement eligibility, authorized filer access, required third-party disclosures, and the direct-filing zero-cost option.",
+                    "Confirm source control totals, original-document digests, entitlement uniqueness, external submission reference policy, and independent payment matching.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Acquire and reconcile evidence",
+                    "action": "Extract authorized source files and reconcile control totals before scoring.",
+                    "detail": "Preserve raw bytes, hash each packet, quarantine incomplete rows, and reserve the economic entitlement once.",
+                },
+                {
+                    "step": 2,
+                    "title": "Verify the correct recovery route",
+                    "action": "Send the prepared packet to the appropriately authorized specialist.",
+                    "detail": "Record accepted principal, excluded components, controlling authority, deadlines, fee economics, and reviewer evidence.",
+                },
+                {
+                    "step": 3,
+                    "title": "Submit and resolve deficiencies",
+                    "action": "Capture actual broker or administrator acceptance before advancing filing state.",
+                    "detail": "Assign response owners and dates; investigate ambiguous external acceptance before permitting another submission.",
+                },
+                {
+                    "step": 4,
+                    "title": "Match payment and close the ledger",
+                    "action": "Independently reconcile recovery notices, client credit, and earned fee collection.",
+                    "detail": "Release held receipts atomically, verify cumulative rounding, post complete period costs, and preserve the required record trail.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Walk a mature 90-day cohort without disguising opening inventory",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The worked quarter represents a mature Base operation, not a "
+                    "promise that a new firm collects a full year's economics in "
+                    "ninety days. It opens with $75,000 of supported contingent fees "
+                    "in an existing collection pipeline, none previously recognized "
+                    "under the example's cash-triggered terms. That inventory pays "
+                    "$30,000 in Month 1, $30,000 in Month 2, and $15,000 in "
+                    "Month 3. Three new lead cohorts each begin with 24 prospects, "
+                    "produce eight signed engagements, and lose two engagements during "
+                    "eligibility and evidence scrubs, leaving six accepted files. "
+                    "Each accepted cohort contains two drawback files, two tariff "
+                    "files, and two settlement files. Accepted estimated fees total "
+                    "$42,916.67, $42,916.67, and $42,916.66 respectively; these are "
+                    "pipeline estimates rather than receivables. At a uniform illustrative "
+                    "30% contingency, the combined $128,750 fee potential corresponds "
+                    "to $429,166.67 of estimated client recovery, subject to "
+                    "claim-level cent rounding. Every rejected file retains its "
+                    "exclusion reason. The quarter's $24,000 of scrubbed fee potential "
+                    "is removed before these accepted totals, and it creates no "
+                    "recognized revenue reversal. This opening inventory distinction "
+                    "is essential because ordinary customs and settlement timelines "
+                    "can extend well beyond the cohort observation period."
+                ),
+                (
+                    "Month 1 collects only the $30,000 opening-pipeline payment; "
+                    "newly signed Month 1 files contribute nothing immediately. "
+                    "Month 2 collects another $30,000 from opening inventory "
+                    "plus $12,000 from Month 1's already-actionable tariff and "
+                    "settlement files. Month 3 collects the remaining $15,000 "
+                    "opening balance, $20,000 from Month 1, and $21,750 from "
+                    "Month 2. The new-cohort receipts therefore total $53,750, "
+                    "while opening inventory supplies $75,000. No Month 3 "
+                    "engagement pays inside the quarter. Fast-paying files "
+                    "assume existing eligible correction opportunities or settlement "
+                    "distributions already approaching payment; they do not assume "
+                    "newly filed litigation or ordinary drawback claims settle "
+                    "within weeks. Accepted fee potential remaining at day "
+                    "ninety is $10,916.67 from Month 1, $21,166.67 from "
+                    "Month 2, and $42,916.66 from Month 3, totaling "
+                    "$75,000. That closing pipeline replaces the opening "
+                    "amount, but comparable dollars alone do not establish "
+                    "comparable quality. Compare lane mix, deadline slack, "
+                    "document completeness, bond restrictions, and expected "
+                    "payment dates before using it as next quarter's starting "
+                    "assumption. Delayed claims stay in aging inventory; "
+                    "denied claims leave the forecast with an explicit "
+                    "reason and without imaginary fee collections."
+                ),
+                (
+                    "Quarterly cash fees are $128,750, exactly one quarter "
+                    "of the $515,000 Base annual revenue. Costs are "
+                    "$23,604.17, $23,604.17, and $23,604.16, totaling "
+                    "$70,812.50 and annualizing to $283,250. Owner profit "
+                    "is consequently $57,937.50 for the quarter and "
+                    "$231,750 annually, maintaining the canonical 45.0% "
+                    "margin. For planning, allocate quarterly costs to "
+                    "$18,000 recurring operating overhead, $36,000 broker "
+                    "and specialist production, $12,000 acquisition, and "
+                    "$4,812.50 evidence retrieval, insurance, and closing "
+                    "support. These illustrative buckets are mutually "
+                    "exclusive; the $6,000 monthly recurring overhead fits "
+                    "the supplied $1,500–$9,500 monthly opex range, whereas "
+                    "total scorecard costs also include variable delivery "
+                    "and acquisition spending. The Base team remains one "
+                    "full-time owner plus three contractors, with broker "
+                    "and specialist invoices included rather than silently "
+                    "adding employees. Cumulative operating cash contribution "
+                    "is $6,395.83, $24,791.66, and $57,937.50. These "
+                    "balances exclude startup capital, financing, owner "
+                    "draws, and personal taxes. Losing the entire opening "
+                    "pipeline would reduce quarter fees to $53,750 and "
+                    "produce a $17,062.50 operating shortfall at unchanged "
+                    "costs. Do not annualize Month 3's $56,750 receipt "
+                    "spike; annualize the reconciled quarter only under "
+                    "an explicit repeatability assumption."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Cohort or reconciliation component",
+                    "Month 1 operating movement and cash",
+                    "Month 2 operating movement and cash",
+                    "Month 3 operating movement and quarter bridge",
+                ],
+                "rows": [
+                    [
+                        "Opening pipeline contains $75,000 contingent fees, previously unrecognized",
+                        "Collect $30,000 fees; retain $45,000 opening inventory",
+                        "Collect $30,000 fees; retain $15,000 opening inventory",
+                        "Collect $15,000 fees; opening inventory finishes fully collected",
+                    ],
+                    [
+                        "Month 1 cohort begins with 24 prospects and eight engagements",
+                        "Scrub two files and $8,000 potential; accept six files totaling $42,916.67",
+                        "Collect $12,000 fees; accepted cohort balance becomes $30,916.67",
+                        "Collect $20,000 fees; cohort closes with $10,916.67 potential",
+                    ],
+                    [
+                        "Month 2 cohort begins with 24 prospects and eight engagements",
+                        "Acquisition preparation only; this cohort contributes zero collected fees",
+                        "Scrub two files and $7,500 potential; accept six files totaling $42,916.67",
+                        "Collect $21,750 fees; cohort closes with $21,166.67 potential",
+                    ],
+                    [
+                        "Month 3 cohort begins with 24 prospects and eight engagements",
+                        "This future cohort contributes zero engagements or fee collections",
+                        "Prepare target accounts; this future cohort contributes zero fee collections",
+                        "Scrub two files and $8,500 potential; accept six files totaling $42,916.66, collecting zero",
+                    ],
+                    [
+                        "Fee collections exclude all client recovery principal and uncollected estimates",
+                        "Total collected operator fees equal exactly $30,000",
+                        "Total collected operator fees equal exactly $42,000",
+                        "Collect $56,750; quarterly $128,750 multiplied by four equals $515,000",
+                    ],
+                    [
+                        "Complete operating costs include recurring overhead and variable production",
+                        "Pay $23,604.17 costs, including allocated specialist and acquisition spending",
+                        "Pay $23,604.17 costs, including allocated specialist and acquisition spending",
+                        "Pay $23,604.16; quarterly $70,812.50 multiplied by four equals $283,250",
+                    ],
+                    [
+                        "Owner profit equals fee collections less complete operating costs",
+                        "Earn $6,395.83; cumulative operating cash contribution equals $6,395.83",
+                        "Earn $18,395.83; cumulative operating cash contribution equals $24,791.66",
+                        "Earn $33,145.84; cumulative $57,937.50 annualizes to $231,750",
+                    ],
+                    [
+                        "Closing accepted pipeline tracks potential fees without recognizing revenue",
+                        "Carry $87,916.67 across opening inventory and accepted Month 1 files",
+                        "Carry $88,833.34 after collections and accepted Month 2 additions",
+                        "Carry $75,000; six scrubbed files removed $24,000 prospective fees",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Reserve the entitlement once, prove the recovery twice, and recognize only the fee you have actually earned.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Create separate drawback, tariff-correction/protest, and settlement queues with lane-specific evidence, deadlines, costs, and payment assumptions.",
+        "Execute lane-specific engagements and required customs powers of attorney, then document licensed filing responsibility and court-specific third-party disclosures.",
+        "Normalize authorized entry, export, carrier, and purchase records while retaining original bytes, hashes, control totals, and globally reserved entitlement keys.",
+        "Implement the six ledger modules in a controlled project, then test concurrent writers, duplicate replays, ambiguous submissions, and backup restoration before live use.",
+        "Match each recovery to client credit and fee collection evidence, release ledger postings atomically, and reconcile complete period costs against earned fees.",
+        "Reproduce the $128,750 quarterly fee bridge, $70,812.50 cost bridge, and $75,000 closing pipeline without counting client principal or speculative distributions as revenue.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "19 U.S.C. § 1313 — Drawback and refunds",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
+            "relevance": "Defines drawback routes, recovery limitations, substitution conditions, and applicable timing requirements; eligibility is route-specific.",
+        },
+        {
+            "title": "19 U.S.C. § 1514 — Protest against decisions of Customs Service",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1514",
+            "relevance": "Controls protestable customs decisions and generally requires protests within 180 days of the relevant liquidation or decision.",
+        },
+        {
+            "title": "19 U.S.C. § 1677h — Drawback treatment",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1677h",
+            "relevance": "Bars drawback of antidumping and countervailing duties imposed under the relevant statutory provisions.",
+        },
+        {
+            "title": "19 CFR § 111.2 — License and permit requirements",
+            "url": "https://www.ecfr.gov/current/title-19/section-111.2",
+            "relevance": "Establishes customs-broker license and permit requirements and exceptions; the operating model routes formal customs work through authorized professionals.",
+        },
+        {
+            "title": "19 CFR § 141.46 — Power of attorney retained by customhouse broker",
+            "url": "https://www.ecfr.gov/current/title-19/section-141.46",
+            "relevance": "Addresses broker retention of powers of attorney supporting authorized customs transactions.",
+        },
+        {
+            "title": "19 CFR § 190.15 — Recordkeeping",
+            "url": "https://www.ecfr.gov/current/title-19/section-190.15",
+            "relevance": "Sets drawback recordkeeping requirements that determine evidence preservation and the applicable retention clock.",
+        },
+        {
+            "title": "19 CFR § 190.51 — Completion of drawback claims",
+            "url": "https://www.ecfr.gov/current/title-19/section-190.51",
+            "relevance": "Specifies drawback claim completion requirements and the filing period measured from importation, subject to the regulation's provisions.",
+        },
+        {
+            "title": "19 CFR § 190.92 — Accelerated payment",
+            "url": "https://www.ecfr.gov/current/title-19/section-190.92",
+            "relevance": "Governs accelerated drawback payment, including application, bonding, and related operating conditions.",
+        },
+        {
+            "title": "Federal Rule of Civil Procedure 23(e) — Settlement, voluntary dismissal, or compromise",
+            "url": "https://www.law.cornell.edu/rules/frcp/rule_23",
+            "relevance": "Provides the class-settlement approval framework; the controlling court orders and administrator instructions supply proceeding-specific claim and filer requirements.",
+        },
+    ],
+}

@@ -1,0 +1,647 @@
+{
+  "candidate_number": 46,
+  "slug": "mass-tort-case-acquisition,-hitech-record-triage-&-law-firm-msos",
+  "title": "Mass-Tort Case Acquisition, HITECH Record Triage & Law-Firm MSOs",
+  "category": "Legal intake & MSO operations",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 23,
+    "team_efficiency": 19,
+    "startup_accessibility": 13,
+    "automation_potential": 13
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 93,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 90,
+    "high": 96
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 25/25. ABA Rule 5.4-compliant Law-Firm MSOs, licensed Arizona ABS co-ventures, and automated $6.50 HITECH EMR verification turn raw claimant inquiries into deficiency-free mass-tort retainers.",
+    "profit_margin_potential": "Profit Margin Potential: 23/25. ABA Rule 5.4-compliant Law-Firm MSOs, licensed Arizona ABS co-ventures, and automated $6.50 HITECH EMR verification turn raw claimant inquiries into deficiency-free mass-tort retainers.",
+    "team_efficiency": "Team Efficiency: 19/20. ABA Rule 5.4-compliant Law-Firm MSOs, licensed Arizona ABS co-ventures, and automated $6.50 HITECH EMR verification turn raw claimant inquiries into deficiency-free mass-tort retainers.",
+    "startup_accessibility": "Startup Accessibility: 13/15. ABA Rule 5.4-compliant Law-Firm MSOs, licensed Arizona ABS co-ventures, and automated $6.50 HITECH EMR verification turn raw claimant inquiries into deficiency-free mass-tort retainers.",
+    "automation_potential": "Automation Potential: 13/15. ABA Rule 5.4-compliant Law-Firm MSOs, licensed Arizona ABS co-ventures, and automated $6.50 HITECH EMR verification turn raw claimant inquiries into deficiency-free mass-tort retainers."
+  },
+  "economics": {
+    "gross_revenue_range": "$160,000–$1,250,000 USD annually",
+    "retained_revenue_range": "$160,000–$1,250,000 USD annually",
+    "retained_share": 1.0,
+    "net_profit_margin_range": "26–50%",
+    "retained_profit_margin_range": "26–50%",
+    "owner_net_profit_potential": "$41,600–$625,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$12,000–$50,000 USD",
+    "monthly_opex_range": "$2,500–$14,000 USD",
+    "time_to_first_deal": "1–4 months",
+    "automation_coverage": 0.87,
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Contracted flat/cost-plus MSO administrative, marketing, intake, and HITECH medical-record triage fees; excludes law-firm trust funds and gross settlement awards",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 160000,
+      "annual_retained_revenue_usd": 160000,
+      "net_profit_margin_pct": 26,
+      "retained_profit_margin_pct": 26.0,
+      "annual_owner_net_profit_usd": 41600,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 705000.0,
+      "annual_retained_revenue_usd": 705000,
+      "net_profit_margin_pct": 38.0,
+      "retained_profit_margin_pct": 38.0,
+      "annual_owner_net_profit_usd": 267900,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 1250000,
+      "annual_retained_revenue_usd": 1250000,
+      "net_profit_margin_pct": 50,
+      "retained_profit_margin_pct": 50.0,
+      "annual_owner_net_profit_usd": 625000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "TrustedForm / Lexis duplicate-retainer & SSN fraud firewall",
+    "Automated 45 CFR § 164.524 HITECH EMR & pharmacy retrieval",
+    "LLM ICD-10 / exposure-timeline clinical chronology parser"
+  ],
+  "key_risks": [
+    "Duplicate or synthetic claimant lead-vendor fraud",
+    "MDL Daubert Rule 702 general-causation dismissals",
+    "State bar unauthorized fee-splitting or runner enforcement"
+  ],
+  "regulatory_notes": [
+    "Contract strictly at fair-market fixed or cost-plus rates under ABA Model Rule 5.4 Law-Firm MSO agreements (reserving fee-sharing strictly to licensed lawyers or authorized Arizona ABS entities).",
+    "Enforce HIPAA/HITECH patient-directed record authorizations, TCPA 1-to-1 consent, and state bar attorney-advertising rules."
+  ],
+  "track_ids": [
+    "track_1",
+    "track_2"
+  ],
+  "track_labels": [
+    "Asymmetric & Data-Arbitrage Plays",
+    "Grey-Zone Growth & Traffic Arbitrage"
+  ],
+  "plays": [
+    {
+      "id": "aba_compliant_law_firm_mso_and_hitech_emr_triage",
+      "inputs": [
+        "Executed MSO service agreements or verified Arizona ABS licensing documents, state-specific ethics review, fixed/cost-plus rate cards, approved advertising materials, vendor contracts, and an allocation of clinical, legal, and administrative responsibilities.",
+        "Documented claimant permission, minimum necessary identifying data, authorized Lexis access and permitted-purpose verification, restricted SSN matching where justified, existing-client indexes, and secure duplicate-review procedures.",
+        "Valid patient access requests or medical-record authorizations, provider and EHR inventories, delivery instructions, applicable record-fee rules, privacy/security agreements where required, and a cost ledger for retrieval, processing, and human review."
+      ],
+      "mechanism": "Operate a non-lawyer Management Services Organization furnishing fixed or documented cost-plus marketing, intake administration, duplicate-claimant screening, and medical-record retrieval, while the law firm retains client selection, legal advice, litigation judgment, and settlement control under applicable state versions of ABA Model Rule 5.4 and related advertising and solicitation rules. Alternatively, participate through an actually licensed Arizona Alternative Business Structure within its authorized scope, rather than assuming an Arizona license overrides restrictions in other jurisdictions; non-lawyer MSO compensation must not become impermissible legal-fee sharing or payment for recommendations. Retrieve electronic records under valid patient requests or authorizations and 45 CFR § 164.524 as applicable, distinguishing individual-access fee limits from third-party requests whose treatment differs under HITECH and subsequent case law; the collectible base is earned contractual service fees actually paid, not projected settlements, with record-copying, identity-verification, security, and professional-review costs separately accounted for.",
+      "metrics": [
+        "Collected service economics: paid fixed/cost-plus invoices, receivables aging, and contribution after record charges, identity checks, licensed data access, security, and review labor.",
+        "Triage quality: confirmed duplicate rate, false-positive rate after human review, source-linked record completeness, and percentage of files requiring additional patient authorization.",
+        "Operational integrity: request-to-record turnaround, overdue access requests, unauthorized-access incidents, and compensation exceptions linked to referrals, settlements, or legal-fee percentages."
+      ],
+      "name": "Rule 5.4-Aligned Law-Firm MSO and Patient-Directed Electronic-Records Triage Desk",
+      "platform_risks": [
+        {
+          "detection_metric": "Percentage of contracts with outcome-linked compensation, unauthorized legal-decision exceptions, jurisdictional licensing gaps, and record requests missing verified authority.",
+          "failure_mode": "An administrative services arrangement drifts into prohibited fee sharing, paid recommendations, unauthorized legal practice, or unauthorized health-record access.",
+          "fallback": "Suspend the affected activity, refer legal decisions to licensed counsel, correct pricing and marketing under ethics review, restrict improperly obtained records, and resume only services supported by valid contracts, permissions, and jurisdictional authority.",
+          "impact": "The law firm and operator face disciplinary, licensing, privacy, contractual, and collection exposure, while affected records and invoices may require remediation.",
+          "trigger": "Compensation becomes settlement-linked, marketing promises legal outcomes, staff make legal eligibility decisions, Arizona licensing is treated as nationwide permission, or records are requested without a valid authority pathway."
+        }
+      ],
+      "track_id": "track_1",
+      "workflow": [
+        "1. Choose and document the operating structure with qualified ethics counsel: use a fixed/cost-plus MSO without prohibited ownership or fee sharing, or obtain the required Arizona ABS license before operating as one; review every jurisdiction served and preserve lawyers' independent judgment.",
+        "2. Run approved marketing and administrative intake without selling legal recommendations or making merits determinations; match permitted claimant identifiers against authorized internal and Lexis records, minimize SSN exposure, and send possible duplicates or conflicts to the firm's designated reviewer.",
+        "3. Submit properly scoped patient requests or authorizations and distinguish patient access from third-party disclosure pathways; apply the relevant fee rules and, for requests governed by § 164.524, track its 30-calendar-day response period and permitted single extension with written notice, while checking shorter applicable state deadlines.",
+        "4. Deduplicate and organize received records into source-linked timelines for lawyer review, restrict access and retention, and invoice documented fixed or cost-plus services independently of settlement size, legal fees, or outcome; reconcile service payments against actual delivery costs."
+      ]
+    },
+    {
+      "id": "litigation_finance_mass_tort_docket_securitization",
+      "track_id": "track_1",
+      "name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "mechanism": "Pairing an Arizona Alternative Business Structure (ABS) or co-counsel law firm with an institutional litigation-finance credit facility to acquire, medically verify (via $6.50 HITECH patient-directed record requests), and package 1,000–25,000 retained mass-tort plaintiffs (PFAS, AFFF, Paraquat, NEC, rideshare assault, defective medical devices) at $1,200–$2,500 CAC—either flipping vetted case tranches to litigation-finance hedge funds at 2.5x–4x cost or holding for 35–40% global MDL settlement fee splits.",
+      "inputs": [
+        "Judicial Panel on Multidistrict Litigation (JPML) docket analytics, FDA FAERS adverse-event spikes, and EPA contaminant zip-code maps",
+        "Arizona ABS / co-counsel retainer infrastructure with e-sign intake and automated HITECH Act (45 CFR § 164.524) medical-record retrieval engine",
+        "Non-recourse litigation-finance warehouse credit facility and MDL leadership co-counsel placement contracts"
+      ],
+      "workflow": [
+        "Identify emerging MDL mass torts with clear causation biomarkers (specific ICD-10 diagnosis codes + geographic/product exposure proof) and deep-pocket corporate defendants",
+        "Run hyper-targeted CTV, paid social, and public-record outbound campaigns to sign injured claimants directly onto joint co-counsel retainer agreements",
+        "Execute automated HITECH patient-directed electronic medical record (EMR) pulls at the federal statutory cap (~$6.50/record) and use LLM clinical parsers to verify qualifying diagnosis and exposure dates within 72 hours",
+        "Securitize verified, deficiency-free case tranches into litigation-finance buyout facilities at $4,500–$9,000 per vetted retainer or hold on the balance sheet for $25,000–$80,000+ gross contingency fees at MDL settlement"
+      ],
+      "metrics": [
+        "All-in cost per medically verified, deficiency-free retained plaintiff ($1,200–$2,500)",
+        "HITECH medical-record retrieval turnaround time (hours) and clinical qualification pass rate (%)",
+        "Secondary docket tranche sale multiple (2.5x–4.0x CAC) or net MDL settlement IRR"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+          "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+          "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+          "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+          "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders"
+        }
+      ]
+    },
+    {
+      "id": "arizona_abs_mass_tort_cocounsel",
+      "track_id": "track_1",
+      "name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "mechanism": "Leverage Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 (which abolished ABA Rule 5.4 in Arizona via Alternative Business Structure [ABS] licensing) so non-lawyer acquisition operators can legally own an Arizona law firm, acquire inbound institutional sexual assault survivor claims (juvenile detention facilities, rideshare MDLs, clergy/boarding-school/medical lookback windows) and catastrophic mass torts, and participate in lawful co-counsel contingency fee splits ($50k–$400k+ per settled case) instead of capped flat marketing fees.",
+      "inputs": [
+        "Arizona Supreme Court ABS license + designated Compliance Lawyer (ACJA § 7-209)",
+        "Trauma-informed inbound acquisition funnels for state sexual-assault lookback windows & federal MDLs",
+        "24/7 HIPAA-compliant survivor intake, facility/ride-receipt verification, & national trial co-counsel network"
+      ],
+      "workflow": [
+        "Form or partner with a licensed Arizona ABS law firm with an appointed Arizona-bar Compliance Lawyer to legally bridge digital acquisition and legal representation",
+        "Run empathetic, 100% inbound survivor-advocacy campaigns across open statutory lookback windows (juvenile detention centers, Uber/Lyft rideshare MDL 3084, institutional/youth-facility abuse)",
+        "Execute trauma-informed intake, verify facility/detention/rideshare records, and co-counsel with specialized trial litigators under Rule 1.5(e) joint-responsibility agreements to share in back-end settlement fees"
+      ],
+      "metrics": [
+        "Cost per signed & record-verified survivor retainer ($1,200–$3,500 media cost)",
+        "Facility/rideshare corroboration pass rate (%) & zero-fraud docket quality",
+        "Realized co-counsel contingency fee per settled case ($50,000–$400,000+ vs. $3k lead sale)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+          "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+          "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+          "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+          "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets"
+        }
+      ]
+    },
+    {
+      "id": "inbound_rtb_pay_per_call_ping_post_exchange",
+      "inputs": [
+        "Authorized inbound traffic sources, accurate ads and landing pages, versioned recipient-specific disclosures, TrustedForm or Jornaya evidence where applicable, suppression records and permitted recording notices.",
+        "Ringba or Retreaver configuration, documented buyer ping-post endpoints, buyer authorization or licensing checks, vertical-specific eligibility rules, capacities and payout terms including any 90–120-second duration threshold.",
+        "Traffic cost data, call-detail records, transfer and consent events, buyer acceptance receipts, duplicate identifiers, dispute reason codes and restricted-access retention settings."
+      ],
+      "mechanism": "Use Ringba or Retreaver-supported routing and buyer integrations to auction qualified inbound calls through sub-second ping-post trees, earning the spread between accepted buyer payouts and traffic acquisition costs. Operate separate programs for ACA/Medicare, auto/home insurance, mass-tort legal intake and emergency home services, with recipient-specific consent where required, sector-specific transfer restrictions and privacy-minimized bid payloads. TrustedForm or Jornaya records can support evidence of the actual named-recipient disclosure but do not independently establish valid consent; negotiated 90–120-second duration triggers qualify payment only alongside genuine caller intent, buyer acceptance and applicable contract terms.",
+      "metrics": [
+        "Net contribution per qualified call: collected buyer revenue minus acquisition, telephony, routing, verification and refund costs.",
+        "Routing quality: p95 auction latency, accepted-connection rate, abandonment rate and buyer capacity rejection rate by vertical.",
+        "Evidence and dispute quality: percentage of transfers with required recipient-specific permission records, duplicate rate, complaint rate and payout reversal rate."
+      ],
+      "name": "Consent-Verified Inbound RTB Pay-Per-Call Exchange Operator",
+      "platform_risks": [
+        {
+          "detection_metric": "Consent-recipient mismatch count, complaint and reversal rates by source, and anomalous clustering of call endings immediately after the billing threshold.",
+          "failure_mode": "A buyer or routing platform rejects calls or suspends the program because consent, marketing representations or traffic quality fails applicable requirements.",
+          "fallback": "Stop affected sources and transfers, preserve evidence securely, refund invalid billings and resume only with corrected disclosures, permitted compensation structures and verified buyer acceptance.",
+          "impact": "Payout reversals, account suspension, consumer complaints and potential regulatory or contractual exposure.",
+          "trigger": "Recipient mismatches, misleading ACA/Medicare advertising, restricted legal-referral fee structures, excessive duplicates or calls padded to cross a duration threshold."
+        }
+      ],
+      "track_id": "track_1",
+      "workflow": [
+        "1. Approve legitimate traffic sources and buyer contracts, segregate verticals, and establish how each caller receives accurate recipient disclosures without misleading benefit claims or prohibited steering.",
+        "2. Screen intent, geography, duplicates and applicable transfer restrictions; obtain required permission before transmitting personal information and send only permitted minimal qualification metadata in bid requests.",
+        "3. Run the supported sub-second auction with timeouts and capacity checks, identify the selected recipient and obtain any required recipient-specific permission before transfer, then connect the caller without artificially extending duration.",
+        "4. Reconcile buyer acceptance and any 90–120-second billing condition against call records, resolve disputes, suppress invalid sources and settle only genuine, contract-qualified calls."
+      ]
+    },
+    {
+      "id": "social_to_search_ping_post_arbitrage",
+      "track_id": "track_2",
+      "name": "Social-to-Search Ad Feed & Ping-Post Lead Arbitrage",
+      "mechanism": "Buy $0.05–$0.12 curiosity clicks on Meta, TikTok, NewsBreak, and native ad networks and route them through a 4-question qualification bridge—replacing fragile $1.50 RSOC/AFD search-feed clicks with direct $45–$180 Ping-Post lead auctions.",
+      "inputs": [
+        "Low-CPC social/native ad hooks ($0.05–$0.12 CPC)",
+        "Fast 4-question conditional qualification quiz + TCPA consent capture",
+        "Real-time Ping-Post lead distribution engine (Boberdoo / Leadspedia / Phonexa) + RSOC downsell feed"
+      ],
+      "workflow": [
+        "Acquire low-cost social and native clicks using compliant consumer-benefit hooks (tax appeals, solar rebates, insurance audits, surplus claims)",
+        "Pre-qualify zip code, homeowner/business status, and urgency inside a zero-friction 4-step quiz bridge",
+        "Auction verified exclusive leads in real time via Ping-Post for $45–$180/lead and monetize non-qualifying traffic via compliant secondary search/affiliate offers"
+      ],
+      "metrics": [
+        "Effective media cost per qualified lead (CPL) vs. Ping-Post auction payout",
+        "Ping-to-Post acceptance rate (%) and sub-500ms auction response time",
+        "Net arbitrage margin after ad spend and buyer returns"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Ad-account ban, RSOC/AFD feed termination, or TCPA consent challenge",
+          "trigger": "Using fake 'government stimulus' ad bait, forcing accidental ad clicks, or selling leads without one-to-one TCPA consent logs",
+          "impact": "Ad account suspension, feed clawbacks, or buyer lead rejections",
+          "detection_metric": "Ad disapproval rate, buyer return rate >5%, and TrustedForm/Jornaya certificate match rate (100% required)",
+          "fallback": "Enforce 100% factual ad hooks, log cryptographic TrustedForm/Jornaya session certificates on every form submit, and diversify across 5+ direct lead buyers"
+        }
+      ]
+    },
+    {
+      "id": "tcpa_litigator_scrub_honeypot_arbitrage",
+      "track_id": "track_2",
+      "name": "TCPA Serial-Plaintiff Docket Scraping & Real-Time Litigator-Scrub Firewall Tollbooth",
+      "mechanism": "Offer consent-first outbound compliance screening using lawful docket-derived risk signals alongside mandatory do-not-call and revocation checks; plaintiff matching neither authorizes contact nor replaces TCPA compliance.",
+      "inputs": [
+        "Permitted public docket data with identity confidence scores",
+        "Consent provenance, revocations, and suppression lists",
+        "Applicable calling rules and customer retention policies"
+      ],
+      "workflow": [
+        "1. Ingest permitted docket records with source dates, minimization, and human identity review",
+        "2. Check consent, do-not-call status, revocations, and calling restrictions before optional risk enrichment",
+        "3. Suppress noncompliant contacts and route uncertain matches to review without planting honeypots or provoking claims",
+        "4. Serve auditable screening decisions with correction, deletion, and retention controls"
+      ],
+      "metrics": [
+        "Contacts blocked for missing consent or suppression match",
+        "False-positive identity match rate",
+        "Screening latency and stale-record share"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "False identity match or false assurance of permission to call",
+          "trigger": "Stale docket data or treating absence from a plaintiff list as consent",
+          "impact": "Unlawful outreach, privacy complaints, and customer liability",
+          "detection_metric": "Consent-audit failure rate and upheld identity correction requests",
+          "fallback": "Disable uncertain enrichment and require independently verified consent and authoritative suppression checks"
+        }
+      ]
+    },
+    {
+      "id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "track_id": "track_1",
+      "name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "mechanism": "Support counsel-led evaluation of genuine tracking-related privacy claims using preserved consent and disclosure evidence; applicability, standing, and recoverable damages require individual legal review.",
+      "inputs": [
+        "Client-authorized browser network captures",
+        "Timestamped consent flows and privacy notices",
+        "Counsel-reviewed standing and statutory applicability checklist"
+      ],
+      "workflow": [
+        "1. Obtain client authorization and preserve ordinary-session tracking and consent evidence",
+        "2. Have counsel assess actual disclosures, statutory coverage, standing, and limitation periods",
+        "3. Route substantiated matters to retained counsel for proportionate notice and resolution",
+        "4. Record outcomes, client distributions, and remediation without duplicate or fabricated claims"
+      ],
+      "metrics": [
+        "Counsel-validated matters per reviewed session",
+        "Net client recovery after disclosed costs",
+        "Evidence completeness and duplicate-claim rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Unsupported statutory demand or evidence rejection",
+          "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+          "impact": "Dismissal, sanctions exposure, and wasted case costs",
+          "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+          "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead"
+        }
+      ]
+    },
+    {
+      "id": "paid_to_organic_media_arbitrage",
+      "track_id": "track_2",
+      "name": "Paid-to-Organic Media Arbitrage",
+      "mechanism": "Acquire underpriced clicks from secondary ad networks, newsletter sponsorships, and long-tail search queries, then monetize the spread via higher-yield B2B lead sales, high-ticket affiliate payouts, and organic retargeting loops.",
+      "inputs": [
+        "Low-CPC ad & sponsorship inventory",
+        "High-RPM / high-CPL monetization endpoints",
+        "Cohort ROAS & LTV attribution ledger"
+      ],
+      "workflow": [
+        "Buy targeted traffic where CPC is priced below the realized first-session + 30-day email value",
+        "Segment incoming visitors via instant qualification prompts to route high-value leads to premium buyers",
+        "Recycle organic search and newsletter return visits at zero marginal media cost"
+      ],
+      "metrics": [
+        "Day-1 vs. Day-30 ROAS spread",
+        "Realized RPM minus effective CPC",
+        "Lead acceptance rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Traffic-cost spikes, ad-account restrictions, or attribution blind spots",
+          "trigger": "Auction CPC inflation, ad-network creative disapprovals, or browser tracking restrictions",
+          "impact": "Negative front-end arbitrage spread and wasted ad spend",
+          "detection_metric": "Hourly CPC-to-EPC ratio and server-side conversion match rate",
+          "fallback": "Enforce automated spend circuit-breakers when spread narrows and rely on first-party newsletter monetization"
+        }
+      ]
+    },
+    {
+      "id": "ad_library_spend_velocity_arbitrage",
+      "track_id": "track_1",
+      "name": "Ad-Library Spend-Velocity & Funnel-Clone Arbitrage",
+      "mechanism": "Continuously poll Meta Ad Library, Google Ads Transparency Center, and TikTok Creative Center to detect direct-response creatives kept active >30 days with expanding variant counts, then localize or adapt the proven funnel architecture into untapped verticals and geos.",
+      "inputs": [
+        "Meta Ad Library, Google Ads Transparency, & TikTok Creative Center APIs",
+        "Ad-longevity (>30 days active) & creative-variant velocity scoring model",
+        "Rapid landing-page localization & multi-geo media buying desk"
+      ],
+      "workflow": [
+        "Track active ad duration, impression brackets, and landing-page funnel changes across 1,000+ direct-response advertisers",
+        "Isolate offers scaling for 30+ consecutive days (proving positive unit economics) and map their quiz/pre-sell mechanics",
+        "Deploy original, localized pre-sell funnels in lower-CPM geographies or adjacent B2B verticals—or sell the curated winning-ad intelligence feed to agencies"
+      ],
+      "metrics": [
+        "Winner identification accuracy (% of cloned architectures profitable in <7 days)",
+        "Cross-geo CPM/CPC discount vs. US baseline (%)",
+        "Return on ad spend (ROAS) and intelligence-subscription MRR"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "DMCA takedown, trademark infringement, or ad-account circumvention ban",
+          "trigger": "Ripping competitor video files/logos verbatim rather than adapting the underlying funnel structure with original creative",
+          "impact": "DMCA strike, ad-account suspension, or affiliate network removal",
+          "detection_metric": "100% original creative asset attestation and zero DMCA/trademark notices",
+          "fallback": "Extract only the structural hook, quiz flow, and offer positioning while producing 100% original copy, design, and video assets"
+        }
+      ]
+    },
+    {
+      "id": "identity_graph_pixel_arbitrage",
+      "track_id": "track_2",
+      "name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "mechanism": "Deploy first-party CNAME identity-resolution pixels and pre-click search/bidstream intent feeds (syncing visitor IP/device hashes against publisher co-op SHA-256 rainbow tables and property/B2B graphs) to resolve 35–55% of anonymous bouncing search visitors into verified names, emails, LinkedIn profiles, and physical home addresses.",
+      "inputs": [
+        "First-party CNAME identity-resolution pixel & Google Ads ValueTrack ({keyword}) URL tags",
+        "Publisher co-op SHA-256 HEM spine + County Assessor / B2B LinkedIn enrichment graph",
+        "Automated physical postcard API (Lob / PostGrid), B2B Slack routing, & Custom Audience sync"
+      ],
+      "workflow": [
+        "Geo-fence pixel execution at the CDN edge (US-only, excluding EU/UK GDPR traffic) and capture exact referring search keywords via ValueTrack parameters",
+        "Resolve anonymous bouncing visitors against the identity spine within 200ms to append homeowner address, work email, and LinkedIn URL",
+        "Route resolved B2B executives to instant Slack/LinkedIn warm outreach, trigger physical next-day postcards to resolved homeowner addresses, and sync SHA-256 hashes into Meta/Google Custom Audiences"
+      ],
+      "metrics": [
+        "Anonymous visitor-to-identity match rate (35–55% target)",
+        "Cost per resolved identity ($0.10–$0.25) vs. net recovered revenue per 1,000 bounces",
+        "Postcard & B2B LinkedIn intercept conversion rate (%)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+          "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+          "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+          "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+          "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating"
+        }
+      ]
+    },
+    {
+      "id": "ctv_mfa_programmatic_supply_arbitrage",
+      "track_id": "track_2",
+      "name": "Connected TV (CTV) & Mobile App \"Made-for-Advertising\" (MFA) Programmatic Supply Arbitrage",
+      "mechanism": "Building fleets of 50–200 free utility, ambient-screensaver, public-domain cinema, weather, and casual-gaming channels on Roku, FireTV, Samsung Tizen, and mobile app stores—acquiring eyeballs for $0–$2 CPM and monetizing their long-duration screen sessions into Fortune 500 programmatic CTV and video Private Marketplace (PMP) ad budgets paying $18–$35 CPM.",
+      "inputs": [
+        "Automated Roku Direct Publisher / BrightScript, FireTV, and Android TV channel scaffolding templates",
+        "Direct Supply-Side Platform (SSP) seats and header-bidding wrappers (Magnite, PubMatic, Index Exchange, AppLovin MAX, Google Ad Manager)",
+        "Licensed public-domain film libraries, procedural ambient 4K loops, or local weather/news data feeds"
+      ],
+      "workflow": [
+        "Deploy a portfolio of categorized CTV and mobile apps (e.g., 4K Fireplace/Aquarium ambients, Classic Westerns, Local Radar, Trivia channels) that generate 45–120 minute average session durations",
+        "Integrate VAST/VMAP video ad pods serving mid-roll CTV ad breaks every 7–10 minutes into programmatic SSPs and Private Marketplace (PMP) deal IDs",
+        "Acquire incremental installs at $0.15–$0.40 CPI via on-device home-screen promos or cross-promote across the owned channel matrix",
+        "Optimize ad-pod fill rates and floor prices dynamically by household Geo/DMA to capture $18–$35 CTV CPMs"
+      ],
+      "metrics": [
+        "Net programmatic eCPM ($18–$35) vs. viewer acquisition cost ($0–$2 equivalent CPM)",
+        "Average daily viewing hours per active household device and VAST pod completion rate (>92%)",
+        "SSP viewability and human-traffic verification score (DoubleVerify / IAS / Pixalate pass rate)"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "SSP inventory demonetization for 'Made-for-Advertising' (MFA) or idle-screen continuous playback",
+          "trigger": "Serving endless ad pods into turned-off TVs or unverified CTV app bundles flagged by Pixalate/IAS",
+          "impact": "DSP bid-stream exclusion or app-store delisting",
+          "detection_metric": "Interactive remote-control heartbeat prompts every 90 minutes and Pixalate CTV seller-trust rating",
+          "fallback": "Enforce 'Are you still watching?' remote check-ins, maintain clean app-ads.txt chains on every publisher domain, and diversify across 6+ independent SSPs and direct agency PMP deals"
+        }
+      ]
+    },
+    {
+      "id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "track_id": "track_2",
+      "name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "mechanism": "Route genuine client-authorized advertising spend through eligible agency payment arrangements to earn contract-permitted rewards and volume rebates, net of financing, processing, and client pass-through obligations.",
+      "inputs": [
+        "Client media mandates and rebate ownership clauses",
+        "Issuer reward categories, caps, and repayment terms",
+        "Platform invoices and agency volume-rebate agreements"
+      ],
+      "workflow": [
+        "1. Verify client authorization, platform payment permissions, and ownership of rewards and rebates",
+        "2. Model eligible media purchases against reward caps, fees, liquidity, and rebate thresholds",
+        "3. Pay only genuine approved advertising invoices without circular spend or fabricated transactions",
+        "4. Reconcile settled rewards, client credits, refunds, and full card repayment each statement cycle"
+      ],
+      "metrics": [
+        "Net retained rewards and rebates per media dollar",
+        "Unfunded client exposure and repayment coverage",
+        "Invoice-to-reward reconciliation variance"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+          "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+          "impact": "Lost rebates, interest costs, and card suspension",
+          "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+          "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending"
+        }
+      ]
+    },
+    {
+      "id": "web2app_quiz_subscription_billing_bypass",
+      "track_id": "track_2",
+      "name": "Web2App Quiz Funnel & App-Store 30%-Fee Subscription Billing Bypass",
+      "mechanism": "Acquire subscribers through a transparent web quiz and permitted external checkout before app access, comparing actual regional store fees and entitlements rather than assuming a universal 30% saving.",
+      "inputs": [
+        "Consent-based quiz and acquisition analytics",
+        "Storefront-specific external billing and entitlement rules",
+        "Payment fees, subscription disclosures, and cancellation flows"
+      ],
+      "workflow": [
+        "1. Map each storefront and app category to current external billing and linking permissions",
+        "2. Build a minimal-data quiz with clear recurring price, trial expiry, and cancellation disclosure",
+        "3. Route eligible users through compliant web checkout and synchronize app entitlements",
+        "4. Reconcile taxes, refunds, churn, and store charges against in-app billing economics"
+      ],
+      "metrics": [
+        "Net subscription contribution after all fees",
+        "Quiz-to-paid conversion and retained subscriber rate",
+        "Refund, chargeback, and cancellation completion rates"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Store rejection or deceptive-subscription enforcement",
+          "trigger": "Unpermitted external purchase links or hidden recurring charges",
+          "impact": "Distribution loss, refunds, and payment-provider restrictions",
+          "detection_metric": "Store review violations and billing-related complaint rate",
+          "fallback": "Use approved in-app billing where required and simplify subscription disclosures and cancellation"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "detection_metric": "Percentage of contracts with outcome-linked compensation, unauthorized legal-decision exceptions, jurisdictional licensing gaps, and record requests missing verified authority.",
+      "failure_mode": "An administrative services arrangement drifts into prohibited fee sharing, paid recommendations, unauthorized legal practice, or unauthorized health-record access.",
+      "fallback": "Suspend the affected activity, refer legal decisions to licensed counsel, correct pricing and marketing under ethics review, restrict improperly obtained records, and resume only services supported by valid contracts, permissions, and jurisdictional authority.",
+      "impact": "The law firm and operator face disciplinary, licensing, privacy, contractual, and collection exposure, while affected records and invoices may require remediation.",
+      "trigger": "Compensation becomes settlement-linked, marketing promises legal outcomes, staff make legal eligibility decisions, Arizona licensing is treated as nationwide permission, or records are requested without a valid authority pathway.",
+      "play_id": "aba_compliant_law_firm_mso_and_hitech_emr_triage",
+      "play_name": "Rule 5.4-Aligned Law-Firm MSO and Patient-Directed Electronic-Records Triage Desk",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Daubert general-causation dismissal in the MDL or fraudulent duplicate claimant intake",
+      "trigger": "Federal MDL judge excluding plaintiff expert witnesses under Rule 702 or lead vendors submitting synthetic/dual-represented claimants",
+      "impact": "Write-down of single-tort docket value or MDL leadership rejecting duplicate retainers",
+      "detection_metric": "Real-time SSN/lexis duplicate-retainer cross-check, immediate HITECH EMR verification before media payout, and max 20% capital concentration in any single MDL",
+      "fallback": "Diversify docket holdings across 6–10 uncorrelated mass torts and single-event commercial casualty niches, pay media vendors strictly on EMR-verified retainers, and offload 50% of tranche cost basis early to institutional litigation funders",
+      "play_id": "litigation_finance_mass_tort_docket_securitization",
+      "play_name": "Litigation-Finance Mass-Tort Lead-to-Docket Securitization & Co-Counsel Syndicates",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Cross-jurisdictional Rule 5.4 fee-splitting challenges, MDL claimant-fraud rejections, or 24–48 month settlement lockup",
+      "trigger": "Splitting fees in non-ABS jurisdictions without genuine legal services/joint responsibility by ABS attorneys, accepting unverified lead-brokered retainers, or undercapitalizing multi-year MDL hold times",
+      "impact": "Disallowance of co-counsel fee division in restrictive states, court dismissal of uncorroborated claims, or working-capital exhaustion before settlement payout",
+      "detection_metric": "100% primary-record corroboration rate (detention/medical/ride logs) and state-by-state Rule 1.5(e)/5.4 ethics opinion sign-off",
+      "fallback": "Ensure licensed ABS attorneys perform substantive legal intake/case-work or pair with an MSO (Management Services Organization) structure in restrictive states, enforce strict primary-document verification before filing, and blend fast-settling single-event injury cases with multi-year institutional dockets",
+      "play_id": "arizona_abs_mass_tort_cocounsel",
+      "play_name": "Arizona ABS Law-Firm Ownership & Survivor/Mass-Tort Co-Counsel Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "detection_metric": "Consent-recipient mismatch count, complaint and reversal rates by source, and anomalous clustering of call endings immediately after the billing threshold.",
+      "failure_mode": "A buyer or routing platform rejects calls or suspends the program because consent, marketing representations or traffic quality fails applicable requirements.",
+      "fallback": "Stop affected sources and transfers, preserve evidence securely, refund invalid billings and resume only with corrected disclosures, permitted compensation structures and verified buyer acceptance.",
+      "impact": "Payout reversals, account suspension, consumer complaints and potential regulatory or contractual exposure.",
+      "trigger": "Recipient mismatches, misleading ACA/Medicare advertising, restricted legal-referral fee structures, excessive duplicates or calls padded to cross a duration threshold.",
+      "play_id": "inbound_rtb_pay_per_call_ping_post_exchange",
+      "play_name": "Consent-Verified Inbound RTB Pay-Per-Call Exchange Operator",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Ad-account ban, RSOC/AFD feed termination, or TCPA consent challenge",
+      "trigger": "Using fake 'government stimulus' ad bait, forcing accidental ad clicks, or selling leads without one-to-one TCPA consent logs",
+      "impact": "Ad account suspension, feed clawbacks, or buyer lead rejections",
+      "detection_metric": "Ad disapproval rate, buyer return rate >5%, and TrustedForm/Jornaya certificate match rate (100% required)",
+      "fallback": "Enforce 100% factual ad hooks, log cryptographic TrustedForm/Jornaya session certificates on every form submit, and diversify across 5+ direct lead buyers",
+      "play_id": "social_to_search_ping_post_arbitrage",
+      "play_name": "Social-to-Search Ad Feed & Ping-Post Lead Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "False identity match or false assurance of permission to call",
+      "trigger": "Stale docket data or treating absence from a plaintiff list as consent",
+      "impact": "Unlawful outreach, privacy complaints, and customer liability",
+      "detection_metric": "Consent-audit failure rate and upheld identity correction requests",
+      "fallback": "Disable uncertain enrichment and require independently verified consent and authoritative suppression checks",
+      "play_id": "tcpa_litigator_scrub_honeypot_arbitrage",
+      "play_name": "TCPA Serial-Plaintiff Docket Scraping & Real-Time Litigator-Scrub Firewall Tollbooth",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Unsupported statutory demand or evidence rejection",
+      "trigger": "Missing standing, valid consent, or unreliable attribution of disclosed data",
+      "impact": "Dismissal, sanctions exposure, and wasted case costs",
+      "detection_metric": "Counsel rejection rate by coverage and evidence defect",
+      "fallback": "Close unsupported matters and offer authorized privacy-remediation audits instead",
+      "play_id": "cipa_vppa_wiretap_pixel_settlement_arbitrage",
+      "play_name": "CIPA Wiretap-Pixel & VPPA Statutory Privacy-Demand Settlement Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Traffic-cost spikes, ad-account restrictions, or attribution blind spots",
+      "trigger": "Auction CPC inflation, ad-network creative disapprovals, or browser tracking restrictions",
+      "impact": "Negative front-end arbitrage spread and wasted ad spend",
+      "detection_metric": "Hourly CPC-to-EPC ratio and server-side conversion match rate",
+      "fallback": "Enforce automated spend circuit-breakers when spread narrows and rely on first-party newsletter monetization",
+      "play_id": "paid_to_organic_media_arbitrage",
+      "play_name": "Paid-to-Organic Media Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "DMCA takedown, trademark infringement, or ad-account circumvention ban",
+      "trigger": "Ripping competitor video files/logos verbatim rather than adapting the underlying funnel structure with original creative",
+      "impact": "DMCA strike, ad-account suspension, or affiliate network removal",
+      "detection_metric": "100% original creative asset attestation and zero DMCA/trademark notices",
+      "fallback": "Extract only the structural hook, quiz flow, and offer positioning while producing 100% original copy, design, and video assets",
+      "play_id": "ad_library_spend_velocity_arbitrage",
+      "play_name": "Ad-Library Spend-Velocity & Funnel-Clone Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Primary email domain blacklisting (>0.3% spam complaint rate) or California CIPA / state privacy demand letters",
+      "trigger": "Blasting cold consumer Gmail addresses from primary brand domains saying 'we saw you on our site' or firing third-party pixels without geo-fencing/consent notice",
+      "impact": "Google Workspace / ESP domain suspension or statutory privacy settlement costs",
+      "detection_metric": "Postmaster Tools spam rate >0.1%, bounce rate >2%, and edge geo-fence block verification",
+      "fallback": "Never cold-email unconsented consumer Gmail addresses from primary domains; monetize consumer matches strictly via CAN-SPAM-exempt physical trigger mail and SHA-256 ad-audience sync, and enforce US-only edge geo-gating",
+      "play_id": "identity_graph_pixel_arbitrage",
+      "play_name": "Identity-Graph Pixel & Search-Intent Deanonymization",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "SSP inventory demonetization for 'Made-for-Advertising' (MFA) or idle-screen continuous playback",
+      "trigger": "Serving endless ad pods into turned-off TVs or unverified CTV app bundles flagged by Pixalate/IAS",
+      "impact": "DSP bid-stream exclusion or app-store delisting",
+      "detection_metric": "Interactive remote-control heartbeat prompts every 90 minutes and Pixalate CTV seller-trust rating",
+      "fallback": "Enforce 'Are you still watching?' remote check-ins, maintain clean app-ads.txt chains on every publisher domain, and diversify across 6+ independent SSPs and direct agency PMP deals",
+      "play_id": "ctv_mfa_programmatic_supply_arbitrage",
+      "play_name": "Connected TV (CTV) & Mobile App \"Made-for-Advertising\" (MFA) Programmatic Supply Arbitrage",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Reward clawback or client-funded liquidity shortfall",
+      "trigger": "Ineligible categories, prohibited payment aggregation, or delayed client reimbursement",
+      "impact": "Lost rebates, interest costs, and card suspension",
+      "detection_metric": "Denied reward value and overdue client balances versus cash reserves",
+      "fallback": "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending",
+      "play_id": "agency_ad_spend_card_multiplier_rebate_cycling",
+      "play_name": "Whitelisted Agency Ad-Spend Card-Multiplier Points & Volume-Rebate Cycling",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Store rejection or deceptive-subscription enforcement",
+      "trigger": "Unpermitted external purchase links or hidden recurring charges",
+      "impact": "Distribution loss, refunds, and payment-provider restrictions",
+      "detection_metric": "Store review violations and billing-related complaint rate",
+      "fallback": "Use approved in-app billing where required and simplify subscription disclosures and cancellation",
+      "play_id": "web2app_quiz_subscription_billing_bypass",
+      "play_name": "Web2App Quiz Funnel & App-Store 30%-Fee Subscription Billing Bypass",
+      "track_id": "track_2"
+    }
+  ]
+}

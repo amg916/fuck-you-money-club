@@ -1,0 +1,328 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-two-ledger-operating-workflow",
+      "chart_type": "process_flow",
+      "title": "One Pod, Two Separately Authorized Revenue Lanes",
+      "subtitle": "Keep regulated-market analytics distinct from state-licensed gaming acquisition.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The terminal is non-custodial and does not pool capital, accept customer funds, or submit customer orders. Analytics publishing does not itself establish an exemption from CTA, IB, or FCM requirements. Partner access and compensation require documented permission for the actual activity and jurisdiction.",
+      "caption": "Build the permission map before the feed adapter; reconcile subscriptions and gaming commissions through different revenue accounts.",
+      "stages": [
+        {
+          "label": "Classify each activity",
+          "value": "Two distinct permission records",
+          "numeric_value": 1.0,
+          "detail": "Inventory subscription analytics, personalization, solicitation, builder compensation, and gaming links. Apply 7 U.S.C. 1a and 6d to the derivatives lane and the applicable state vendor rules to the gaming lane; non-custody is necessary but does not resolve every registration question."
+        },
+        {
+          "label": "Normalize permitted feeds",
+          "value": "Timestamp every market observation",
+          "numeric_value": 2.0,
+          "detail": "Use documented Kalshi, ForecastEx-access, and licensed sportsbook interfaces only where available and permitted. Record source time, receipt time, fees, contract wording, settlement terms, and market identifiers. Measure sub-second delivery as a service target rather than assuming every source provides a WebSocket feed."
+        },
+        {
+          "label": "Publish bounded analytics",
+          "value": "Subscriptions without order handling",
+          "numeric_value": 3.0,
+          "detail": "Normalize implied probabilities and display fee-aware comparisons with stale-feed cutoffs. Label positive expected value as model-dependent, not riskless arbitrage; incompatible settlement terms and execution slippage can reverse the apparent edge. Do not add personalized recommendations without reassessing activity classification."
+        },
+        {
+          "label": "Attribute eligible referrals",
+          "value": "Separate state and partner identifiers",
+          "numeric_value": 4.0,
+          "detail": "Apply the product's 21+ policy, jurisdiction-specific geofencing, partner allowlists, material-connection disclosures, and current responsible-gaming helpline disclosures. Sign server-to-server events, deduplicate event identifiers, and rely on partner confirmation for qualifying deposits rather than browser clicks."
+        },
+        {
+          "label": "Reconcile earned revenue",
+          "value": "Separate subscriptions, rebates, CPA, and NGR",
+          "numeric_value": 5.0,
+          "detail": "Match SaaS invoices, expressly permitted builder statements, accepted CPA events, and settled NGR reports to bank receipts and receivables. Never book trading volume, gambling handle, player deposits, or user balances as operator revenue. Block unlicensed offshore, unlawful crypto, and unlawful sweepstakes destinations."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-eligible-affiliate-cohort",
+      "chart_type": "funnel",
+      "title": "Annual CPA Cohort: Eligible Traffic to Payable Depositor",
+      "subtitle": "Five nested counts describe the affiliate lane only.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative annual unique-visitor cohort underlying the Base-Case $90,000 CPA revenue allocation. Counts are nested, deduplicated, and measured within contract-specific attribution windows. Terminal subscribers and NGR-only partners are outside this funnel. Entry screening is not a substitute for the operator's age and identity checks.",
+      "caption": "50,000 eligible visitors produce 100 payable FTD events at $900 each; a 120-event full-budget planning baseline is reduced by 20 events for seasonal CPA availability before revenue is booked.",
+      "stages": [
+        {
+          "label": "Eligible adult visitor cohort",
+          "value": "50,000 screened unique visitors",
+          "numeric_value": 50000.0,
+          "detail": "Start with unique visitors passing first-party 21+ screening and permitted-location checks. Preserve jurisdiction, campaign, and partner eligibility evidence while minimizing personal data. Exclude blocked locations and ineligible destinations before commercial links become available."
+        },
+        {
+          "label": "Qualified comparison cohort",
+          "value": "15,000 visitors; 30% of entry cohort",
+          "numeric_value": 15000.0,
+          "detail": "Count visitors who use a comparison page for an eligible licensed partner and see current commercial terms and the affiliate disclosure. Remove automated traffic and duplicate identities under the documented attribution policy."
+        },
+        {
+          "label": "Attributed click cohort",
+          "value": "3,000 visitors; 20% of comparison cohort",
+          "numeric_value": 3000.0,
+          "detail": "Create a signed click identifier and store the state, campaign, creative version, and partner offer version. A redirect is evidence of a click, not evidence of a deposit, account approval, or payable commission."
+        },
+        {
+          "label": "Partner-confirmed FTD cohort",
+          "value": "300 depositors; 10% of click cohort",
+          "numeric_value": 300.0,
+          "detail": "Accept first-time-depositor events only from authenticated partner reporting after operator checks. Match depositors to the originating cohort; deposits still may fail minimum amount, attribution-window, campaign-cap, or commission eligibility terms."
+        },
+        {
+          "label": "Contract-payable CPA cohort",
+          "value": "100 depositors; 33.33% of FTD cohort",
+          "numeric_value": 100.0,
+          "detail": "Reconcile all 300 events into 100 payable and 200 nonpayable outcomes with explicit partner reason codes. The 100 accepted events generate $90,000 at $900 each. Seasonality is already reflected in this count; do not subtract the $18,000 planning reduction again as operating expense."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base-Case Operator Revenue to Owner Profit",
+      "subtitle": "$362,500 recognized operator revenue less $224,750 operating costs.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD annually. Opening and closing bars are totals; the four intermediate bars are signed cost changes. Canonical gross revenue means operator revenue, not customer transaction value. Revenue includes $210,000 SaaS, $12,500 permitted builder compensation, $90,000 CPA, and $50,000 settled NGR commissions. The illustrative cost allocation reconciles exactly to Formula v2.0.",
+      "caption": "$362,500 - $85,000 - $90,000 - $24,000 - $25,750 = $137,750; $137,750 / $362,500 = 38.0%. Affiliate contractual deductions are already reflected in recognized commission revenue.",
+      "stages": [
+        {
+          "label": "Recognized operator revenue",
+          "value": "$362,500 annual opening total",
+          "numeric_value": 362500.0,
+          "detail": "Book subscriptions and earned software compensation separately from affiliate commissions. The $50,000 NGR allocation equals $80,000 preliminary contractual commission less $18,000 allocated admin and bonus deductions and $12,000 negative carryover. Apply ASC 606 principal-versus-agent analysis; no additional retained-share multiplier is supplied for this scorecard."
+        },
+        {
+          "label": "Acquisition and distribution",
+          "value": "-$85,000 annual operating cost",
+          "numeric_value": -85000.0,
+          "detail": "Allocate $45,000 to SaaS acquisition, $30,000 to CPA acquisition, and $10,000 to NGR acquisition. The CPA cohort therefore carries $300 acquisition cost per payable depositor. Measure channel contribution after partner adjustments, not against headline commission offers."
+        },
+        {
+          "label": "Contractor delivery capacity",
+          "value": "-$90,000 annual operating cost",
+          "numeric_value": -90000.0,
+          "detail": "Budget $54,000 for the engineering contractor and $36,000 for the acquisition and editorial contractor. The founder is the one full-time seat and receives the residual owner-profit measure; no separate founder salary is assumed in this illustrative allocation."
+        },
+        {
+          "label": "Platform and billing infrastructure",
+          "value": "-$24,000 annual operating cost",
+          "numeric_value": -24000.0,
+          "detail": "Fund permitted feed access, managed PostgreSQL, cloud delivery, monitoring, subscription billing fees, and attribution infrastructure. Track stale-feed incidents and webhook replay failures as service costs; user trading fees belong in comparison analytics rather than operator revenue."
+        },
+        {
+          "label": "Professional and operating overhead",
+          "value": "-$25,750 annual operating cost",
+          "numeric_value": -25750.0,
+          "detail": "Allocate $12,000 to activity classification and state vendor work, $6,000 to accounting and insurance, $4,750 to support and administrative tools, and $3,000 to refunds and collection losses. Refunds are charged here only when not already netted from opening revenue."
+        },
+        {
+          "label": "Owner profit",
+          "value": "$137,750 annual closing total; 38.0%",
+          "numeric_value": 137750.0,
+          "detail": "Operating costs total $224,750, leaving the canonical Base-Case owner profit of $137,750. Fixed delivery, platform, and overhead costs average $11,645.83 monthly before acquisition; this exceeds the metadata's $10,000 monthly upper bound, so that range cannot represent all-in Base-Case costs."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-five-monetization-lane-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Five Revenue Lanes, One Comparable Annual Dollar Unit",
+      "subtitle": "Illustrative lane allocations sum to the canonical $362,500 Base Case.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Every bar measures annual recognized operator revenue in USD, not margin, player deposits, or return on wagering capital. The first two bars are SaaS subscriptions; the third is a separately assessed software-compensation lane; the final two are distinct affiliate cohorts with distinct settlement records.",
+      "caption": "$150,000 + $60,000 + $12,500 + $90,000 + $50,000 = $362,500. These allocations are an illustrative bridge, not externally verified partner rates or current program availability.",
+      "stages": [
+        {
+          "label": "Core terminal subscriptions",
+          "value": "$150,000 annual SaaS revenue",
+          "numeric_value": 150000.0,
+          "detail": "250 average paying subscribers at $50 monthly generate $150,000 annually. Average subscribers already incorporate churn and replacements. Deliver market comparison, timestamps, and fee normalization without account custody or customer order submission."
+        },
+        {
+          "label": "Professional analytics subscriptions",
+          "value": "$60,000 annual SaaS revenue",
+          "numeric_value": 60000.0,
+          "detail": "50 additional average paying subscribers at $100 monthly generate $60,000 annually. Keep these subscribers separate from the core tier. Price export capacity, saved analytic views, and alert delivery rather than promising trading profits or personalized investment outcomes."
+        },
+        {
+          "label": "Permitted builder compensation",
+          "value": "$12,500 annual software revenue",
+          "numeric_value": 12500.0,
+          "detail": "Assume 25 contract-defined software-service milestones earning $500 each under an expressly permitted arrangement. This is a modeling unit, not a claim that any named venue offers this program. Do not recognize revenue until terms, activity classification, and acceptance evidence support it."
+        },
+        {
+          "label": "Seasonally adjusted CPA commissions",
+          "value": "$90,000 annual affiliate revenue",
+          "numeric_value": 90000.0,
+          "detail": "120 potential payable depositors at $900 imply $108,000 before a modeled 20-event post-NFL budget reduction. The remaining 100 produce $90,000. Subtract the separately budgeted $30,000 CPA acquisition cost for $60,000 contribution before shared delivery and overhead."
+        },
+        {
+          "label": "Settled NGR commissions",
+          "value": "$50,000 annual affiliate revenue",
+          "numeric_value": 50000.0,
+          "detail": "An illustrative $80,000 preliminary commission entitlement, not casino-wide gaming revenue, falls to $50,000 after $18,000 admin and bonus allocations and $12,000 carryover. Subtract $10,000 allocated acquisition cost for $40,000 contribution before shared costs; retain partner-level carryover ledgers."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-four-preflight-decisions",
+      "chart_type": "decision_tree",
+      "title": "Four Independent Checks Before Commercial Activation",
+      "subtitle": "An unresolved branch disables the affected activity, not the evidence record.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "These are sequential binary checks with pass and stop branches described in each detail. The US-state affiliate plan does not extend to Ontario; provincial requirements and partner permissions need their own assessment. The product adopts 21+ screening without treating it as a universal derivatives-market age statute.",
+      "caption": "Non-custody, registration status, eligible destinations, and settlement economics must each be established independently.",
+      "stages": [
+        {
+          "label": "Activity classification",
+          "value": "Pass to jurisdiction check; otherwise stop affected feature",
+          "numeric_value": 1.0,
+          "detail": "Under 7 U.S.C. 1a and 6d, assess CTA, IB, and FCM status using actual solicitation, compensation, personalization, and order-handling behavior. Pass only with a documented basis for the permitted scope; otherwise disable the feature until required registration or a supported exclusion is established. Never accept funds or pool user capital."
+        },
+        {
+          "label": "Jurisdiction and partner authority",
+          "value": "Pass to audience check; otherwise suppress destination",
+          "numeric_value": 2.0,
+          "detail": "Verify DCM status and applicable event-contract availability, including 17 CFR 40.11. Separately verify the gaming operator's state license and required affiliate or vendor status with NJ DGE, PA PGCB, MI MGCB, or WV Lottery. N.J.S.A. 5:12-92 addresses casino service industry requirements; one registration does not create nationwide permission."
+        },
+        {
+          "label": "Audience and advertising controls",
+          "value": "Pass to economics check; otherwise block referral",
+          "numeric_value": 3.0,
+          "detail": "Require the product's 21+ screen, eligible geography, current offer terms, responsible-gaming helpline disclosures, and material-connection disclosure under 16 CFR 255.5. Treat uncertain or conflicting location signals as blocked until resolved. Do not bypass partner identity, self-exclusion, age, or location controls."
+        },
+        {
+          "label": "Contract and loss exposure",
+          "value": "Activate supported lane; otherwise hold acquisition spend",
+          "numeric_value": 4.0,
+          "detail": "Read CPA acceptance windows, seasonal caps, NGR deduction definitions, negative carryover, payment timing, and clawback rights. Require positive modeled contribution after CAC and documented adjustments; reconcile authenticated settlement events before scaling. Never redirect rejected users to unlicensed offshore or unlawful sweepstakes alternatives."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-base-and-scaled-pod",
+      "chart_type": "org_architecture",
+      "title": "Three Base Seats, Two Explicit Scale Additions",
+      "subtitle": "Base and Conservative use 1 FT + 2 C; Scaled uses 2 FT + 3 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each numeric value represents one person. The first three seats form the Base-Case pod; the final two exist only in the Scaled scenario. External professional engagements are purchased services, not additional dedicated operating seats in the canonical team count.",
+      "caption": "Conservative: $75,000 revenue x 26% = $19,500 owner profit. Base: $362,500 x 38.0% = $137,750. Scaled: $650,000 x 50% = $325,000. The $650,000 scenario requires five people, not the three-person pod.",
+      "stages": [
+        {
+          "label": "Founder and commercial owner",
+          "value": "Base seat 1; one full-time operator",
+          "numeric_value": 1.0,
+          "detail": "Own partner contracts, state-specific permission records, pricing, revenue recognition decisions, and the monthly contribution statement. Maintain separate SaaS and affiliate ledgers and approve acquisition budgets using settled cohorts rather than headline click conversion."
+        },
+        {
+          "label": "Integration and reliability contractor",
+          "value": "Base seat 2; one engineering contractor",
+          "numeric_value": 1.0,
+          "detail": "Own feed adapters, market normalization, stale-data controls, signed server-to-server attribution, and deployment recovery. Use GitHub Actions for tests and PostgreSQL for replay-safe event identifiers. Never place customer credentials or user funds inside the terminal's operating scope."
+        },
+        {
+          "label": "Acquisition and editorial contractor",
+          "value": "Base seat 3; one distribution contractor",
+          "numeric_value": 1.0,
+          "detail": "Own eligible-state content, offer freshness, commercial disclosures, campaign cohorts, and seasonal budget pacing. Reconcile failed CPA events with partner reason codes and maintain a correction queue for expired promotions and mismatched settlement terms."
+        },
+        {
+          "label": "Product and reliability employee",
+          "value": "Scaled seat 4; add one full-time operator",
+          "numeric_value": 1.0,
+          "detail": "Add this seat only in the five-person Scaled scenario. Own release quality, subscription retention, incident response, and feed service objectives while the existing engineering contractor handles integration depth. Rebuild the cost plan within the Scaled $325,000 operating-cost envelope."
+        },
+        {
+          "label": "Settlement and support contractor",
+          "value": "Scaled seat 5; add one operations contractor",
+          "numeric_value": 1.0,
+          "detail": "Add this seat only in the Scaled scenario. Own commission statement imports, carryover balances, support triage, responsible-gaming referral handling, and partner discrepancy tickets. Keep discretionary promotional access separate from accounting adjustment permissions."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-buckets",
+      "chart_type": "stacked_comparison",
+      "title": "A $24,000 Base Startup Allocation",
+      "subtitle": "Four buckets reconcile to $8,000 lean, $24,000 base, and $45,000 expanded.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values encode the $24,000 base startup allocation in USD. Lean and expanded allocations appear in each stage detail and sum independently to the canonical range endpoints. Cash reserves are unspent liquidity, not immediate operating expense; startup outlays are not added again to the annual profit bridge.",
+      "caption": "Base: $6,000 + $5,000 + $7,000 + $6,000 = $24,000. Lean: $2,000 + $2,000 + $2,500 + $1,500 = $8,000. Expanded: $12,000 + $10,000 + $14,000 + $9,000 = $45,000.",
+      "stages": [
+        {
+          "label": "Activity and vendor setup",
+          "value": "$6,000 base; 25.00% of startup cash",
+          "numeric_value": 6000.0,
+          "detail": "Lean $2,000; base $6,000; expanded $12,000. Purchase activity-classification work, partner-contract analysis, and required vendor application preparation. The lean version must narrow its permitted launch scope if actual professional fees or registration costs exceed this allocation."
+        },
+        {
+          "label": "Terminal and attribution build",
+          "value": "$5,000 base; 20.83% of startup cash",
+          "numeric_value": 5000.0,
+          "detail": "Lean $2,000; base $5,000; expanded $10,000. Fund initial feed adapters, PostgreSQL event storage, signed webhook verification, subscription billing integration, and stale-feed tests. Start with a small permitted source set rather than assuming universal exchange or sportsbook access."
+        },
+        {
+          "label": "Content and acquisition experiments",
+          "value": "$7,000 base; 29.17% of startup cash",
+          "numeric_value": 7000.0,
+          "detail": "Lean $2,500; base $7,000; expanded $14,000. Build jurisdiction-specific comparison content and run bounded subscription and affiliate acquisition tests. Keep campaign budgets separate by lane, and stop spend when accepted-event economics fail the documented contribution threshold."
+        },
+        {
+          "label": "Settlement and operating reserve",
+          "value": "$6,000 base; 25.00% of startup cash",
+          "numeric_value": 6000.0,
+          "detail": "Lean $1,500; base $6,000; expanded $9,000. Preserve liquidity for settlement delays, refunds, partner disputes, and unexpected setup costs. At the metadata's $1,500-$10,000 monthly outlay range, the base reserve covers 0.6-4.0 months, before considering the higher full Base-Case cost structure."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-evidence-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Instrumented, Permission-Bounded Pilot",
+      "subtitle": "Build operating evidence first; first commercial deal remains a 2-6 month assumption.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four sequential milestones cover Days 1-30. Numeric values represent milestone end days, not durations or revenue. The sprint does not assume that state registrations, venue access, or partner contracting finish within thirty days.",
+      "caption": "Finish with tested analytics, replay-safe attribution, separate revenue books, and a funded next-step plan; activate only the activities whose permissions and contracts are established.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define scope and evidence ownership",
+          "numeric_value": 7.0,
+          "detail": "Choose the initial regulated analytics source and a narrow state affiliate footprint. Inventory CTA, IB, FCM, and vendor questions against 7 U.S.C. 1a and 6d and agency requirements. Draft separate SaaS and affiliate contract checklists, cash budgets, and source-access records."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Build isolated feed and event paths",
+          "numeric_value": 14.0,
+          "detail": "Implement timestamped ingestion, settlement-term matching, fee normalization, and stale-feed suppression. Build a separate server-to-server event path with signature checks, idempotent identifiers, and synthetic CPA fixtures. Test location uncertainty, blocked destinations, and duplicate events without sending real user funds or orders."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Exercise eligibility and settlement logic",
+          "numeric_value": 21.0,
+          "detail": "Test the 21+ product policy, jurisdiction restrictions, current offer disclosures, and responsible-gaming contact placement. Reconcile sample CPA rejection codes and NGR deductions, including partner-specific negative carryover. Verify that simulated invoices and commission statements never book trading volume or deposits as revenue."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Close pilot evidence and next-month budget",
+          "numeric_value": 30.0,
+          "detail": "Run a small permitted analytics pilot and activate affiliate links only where required status and partner authority are documented. Reconcile the $362,500 revenue bridge and $137,750 owner-profit model, assign incident owners, and budget the remaining 2-6 month path to the first deal without treating pilot traffic as earned revenue."
+        }
+      ]
+    }
+  ]
+}

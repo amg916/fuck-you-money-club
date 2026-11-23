@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-048-qui-tam-sec-and-irs-whistleblower-analytics",
+  "volume_slug": "vol-048-qui-tam-sec-and-irs-whistleblower-analytics",
+  "volume_number": 48,
+  "site_ui": {
+    "cover": [
+      "QUI TAM &",
+      "WHISTLEBLOWER",
+      "ANALYTICS"
+    ],
+    "deck": [
+      "FIND ANOMALIES. BUILD EVIDENCE.",
+      "SEPARATE SIGNAL FROM ALLEGATION."
+    ],
+    "lead": "Turn lawfully obtained data into counsel-ready investigative leads without mistaking anomalies for proven misconduct.",
+    "summary": "False Claims Act, SEC, and IRS matters have different standing, original-information, procedure, and award requirements, with uncertain outcomes and potentially multiyear collection timelines. Keep eligible whistleblower awards separate from lawful research retainers and counsel-directed analytics services, underwriting service work on its own margin rather than treating contingent awards as recurring revenue.",
+    "chapters": [
+      "Q1: The Evidence-First Analytics Thesis",
+      "Q2: FCA, SEC & IRS Pathways",
+      "Q3: Research Burn & Award Uncertainty",
+      "Q4: Lawful Access, Seals & Privilege",
+      "Q5: Source Public & Authorized Data",
+      "Q6: Test Anomalies & Alternative Explanations",
+      "Q7: Build a Traceable Evidence Record",
+      "Q8: Separate Awards from Service Revenue",
+      "Q9: Engage Qualified Whistleblower Counsel",
+      "Q10: Operate Secure Case Workflows",
+      "Q11: Control Disclosure & Retaliation Risk",
+      "Q12: Scale Research Without Speculative Claims"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Use public records and lawfully accessible information without unauthorized access or data exfiltration."
+      ],
+      [
+        "ANALYZE",
+        "Identify reproducible patterns and test innocent explanations, data errors, and materiality."
+      ],
+      [
+        "CORROBORATE",
+        "Preserve provenance and distinguish direct evidence, analytical inference, and unresolved questions."
+      ],
+      [
+        "REVIEW",
+        "Have qualified counsel assess eligibility, public-disclosure issues, privilege, deadlines, and reporting duties."
+      ],
+      [
+        "REPORT",
+        "Follow the chosen program's submission requirements and any applicable court-seal restrictions."
+      ],
+      [
+        "TRACK",
+        "Support authorized follow-up and record outcomes without booking speculative awards as earned revenue."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "DATA-MINED QUI TAM, SEC & IRS WHISTLEBLOWER ANALYTICS",
+  "subtitle": "The Complete Playbook for Forensic Whistleblower Analytics: $95,000–$880,000 USD Annual Operator Revenue, a 1 FT + 2 C Core Pod (3 People), and a 5-Person Scaled Team",
+  "chapter_count": 12,
+  "total_word_count": 80147,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 92,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T22:48:04Z"
+}

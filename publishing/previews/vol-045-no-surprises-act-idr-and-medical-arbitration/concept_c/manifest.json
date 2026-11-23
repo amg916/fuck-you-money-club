@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-045-no-surprises-act-idr-and-medical-arbitration",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 2004836,
+      "sha256": "d56ecf57ee3858965dafff9d7a817c5dfe397cf5c59f4ddc2917dec2f063e5fe"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2609655,
+      "sha256": "b771411179bae24dc31b824e80e875b3a9a7430032a107f707581f96aa56569d"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 574958,
+      "sha256": "25c0ebf7e64eefb3d9ebf6c01a1068c6dac44b04cca83f74b91c43ea28c06f39"
+    },
+    "book.epub": {
+      "bytes": 268077,
+      "sha256": "9b16aec135542a218c81a9d6c5c0dc10a39659f3de4d75daff35e2aad3b85c81"
+    },
+    "art/cover.svg": {
+      "bytes": 4399,
+      "sha256": "463e1d69e0bdffdff40583f49c3c351e710fa22b9502dd3dba3e21f08ae6d0d3"
+    },
+    "art/scorecard.svg": {
+      "bytes": 61198,
+      "sha256": "e45f8e064eea4211ec6c0b2fb83085700d161b377ce99c2daefe88c18873ac2a"
+    },
+    "art/diag_01.svg": {
+      "bytes": 13130,
+      "sha256": "ccd2beab29ef1531449b1fd319073367fc994317fa7ef04e5cd6a4b1fdc43605"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8295,
+      "sha256": "18ad67dd9b015d1170b7c977b75ddd6244434eae312b8144ad2a0e65fe22a5a8"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12932,
+      "sha256": "0e257319c170e008b572a728d088660b5af4f2ce3012d2c050cbf06facf0f91e"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9749,
+      "sha256": "42108e18a253294cad788cb1a24554406f452d275a754a7c4acea12a1bdfaafa"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10610,
+      "sha256": "4174eb9ef03abcc5f3261e7c06fbe64a113e17b247b83dec793e19e213a6e134"
+    },
+    "art/diag_06.svg": {
+      "bytes": 11292,
+      "sha256": "852b87eeb90182f073b331180094861f787f02c706c8d229d7b6a771dc205f76"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8663,
+      "sha256": "f45eca3c7bce836785e18de2b9f92024a39fea52b11b85b2a4379c79e6c6ab2f"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8601,
+      "sha256": "5956143a4528e7b4ac6f8e8a06360ea66774c03c7dd9a1f05d6a3e57d98238b4"
+    }
+  }
+}

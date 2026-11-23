@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-047-ai-data-center-powered-land-and-bess-optioning",
+  "volume_slug": "vol-047-ai-data-center-powered-land-and-bess-optioning",
+  "volume_number": 47,
+  "site_ui": {
+    "cover": [
+      "AI POWERED",
+      "LAND & BESS",
+      "OPTIONING"
+    ],
+    "deck": [
+      "CONTROL THE SITE. VERIFY THE POWER.",
+      "OPTIONS BEFORE LAND OWNERSHIP."
+    ],
+    "lead": "Secure conditional control of promising data-center and battery-storage sites before committing capital to unverified power stories.",
+    "summary": "Site-option economics depend on option premiums, extension payments, diligence burn, assignment rights, and the probability of securing a buyer before expiry; nearby transmission or a substation does not establish available capacity. Distinct revenue lanes include negotiated option assignments, development-stage site sales, and permitted siting or development services, with data-center load service and BESS interconnection underwritten separately.",
+    "chapters": [
+      "Q1: The Power-Constrained Land Thesis",
+      "Q2: Data-Center & Storage Buyer Maps",
+      "Q3: Option Carry & Exit Economics",
+      "Q4: Land Rights, Zoning & Brokerage",
+      "Q5: Map Parcels & Power Signals",
+      "Q6: Verify Utility & Site Constraints",
+      "Q7: Negotiate Conditional Site Control",
+      "Q8: Package Assignments & Development Fees",
+      "Q9: Reach Qualified Project Buyers",
+      "Q10: Manage Diligence & Milestones",
+      "Q11: Stress-Test Power, Permits & Expiry",
+      "Q12: Scale a Stage-Gated Site Portfolio"
+    ],
+    "flow": [
+      [
+        "MAP",
+        "Screen parcels for utility territory, network proximity, zoning, access, fiber, and environmental constraints."
+      ],
+      [
+        "VERIFY",
+        "Seek utility-backed load-service or interconnection information; treat mapped headroom as an unconfirmed signal."
+      ],
+      [
+        "CONTROL",
+        "Negotiate counsel-reviewed options with diligence access, milestones, and explicit assignment provisions."
+      ],
+      [
+        "DILIGENCE",
+        "Evaluate title, engineering, permitting, utility costs, and project-specific operating constraints."
+      ],
+      [
+        "MATCH",
+        "Present a source-documented package to qualified buyers without describing speculative capacity as secured."
+      ],
+      [
+        "EXIT",
+        "Close an authorized assignment or development transaction, or terminate before additional carry destroys the margin."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "AI DATA-CENTER POWERED LAND, SUBSTATION HEADROOM & BESS SITE OPTIONING",
+  "subtitle": "The Complete Playbook for AI Powered-Land, Substation Headroom & BESS Site Optioning: $110,000–$900,000 USD in Annual Operator Revenue, Built Around a 1 FT + 3 C (4 People) Pod",
+  "chapter_count": 12,
+  "total_word_count": 79611,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 92,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T22:48:04Z"
+}

@@ -1,0 +1,718 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-thirty-day-launch-sprint-and-kill-fix-scale-gates",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching regulated prediction-market terminals & licensed igaming affiliates, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Three-Person Sprint Across CFTC Publisher Boundaries, Authorized Market Feeds, State Affiliate Permissions, and Collected-Cash Economics",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #49, Regulated Prediction-Market Terminals & Licensed iGaming Affiliates, "
+        "holds Rank #18 of 49 with a 91/100 Money-to-Manpower Score. This sprint turns "
+        "12 mapped plays into a controlled release operated by one full-time founder and "
+        "two contractors. Separate subscription analytics, permitted builder payments, and "
+        "licensed affiliate commissions before writing acquisition copy. Days 1–7 establish "
+        "permissions and cash limits; Days 8–14 prove feed integrity and attribution; Days "
+        "15–21 test paid demand; Days 22–30 reconcile evidence and allocate the next dollar. "
+        "Annual owner-profit cases remain $19,500 Conservative, $137,750 Base, and $325,000 "
+        "Scaled. Day 30/60/90 decisions require measured retention, collected contribution, "
+        "and jurisdiction-specific eligibility, rather than trading volume or optimistic "
+        "commission dashboards. The first month builds evidence; first deals can still take "
+        "two to six months."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$75,000",
+            "context": "Annual operator revenue; excludes customer stakes and trading volume",
+            "note": "26% net margin; $19,500 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$362,500",
+            "context": "Annual operator revenue; affiliate commissions net of contractual deductions",
+            "note": "38.0% net margin; $137,750 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$650,000",
+            "context": "Annual operator revenue; subscriptions, permitted builder payments, and net commissions",
+            "note": "50% net margin; $325,000 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1–7: Fix the Operating Boundary, Twelve-Play Map, and Cash Envelope",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Day 1 starts with a boundary memorandum, not a trading interface. The founder "
+                    "owns product, publisher relationships, and cash; contractor C1 owns data engineering "
+                    "and reliability; contractor C2 owns editorial operations, attribution reconciliation, "
+                    "and coordination with qualified regulatory counsel. The pod remains one full-time "
+                    "person plus two contractors, with specialist consultations purchased as bounded "
+                    "services rather than hidden permanent headcount. Separate the analytics product "
+                    "from affiliate landing pages, contracts, event schemas, and ledgers. A user must "
+                    "never fund an operator wallet, delegate trading credentials, pool capital, or "
+                    "submit an order through this launch. Non-custody alone does not settle registration: "
+                    "solicitation, compensation, advice, and order-related activity also matter under "
+                    "7 U.S.C. § 1a, 7 U.S.C. § 6d, and 17 CFR § 1.3. Obtain a written assessment of "
+                    "the actual functions and compensation before enabling them. A builder program "
+                    "agreement does not override federal registration requirements. Record excluded "
+                    "features explicitly, including personalized trade recommendations and execution "
+                    "links carrying order instructions. Public analytics must remain within the assessed "
+                    "scope; calling software a publisher does not create an exemption. Any unresolved "
+                    "classification stays disabled while ordinary engineering continues."
+                ),
+                (
+                    "Use a local execution map for all twelve plays, so the chapter does not imply "
+                    "twelve simultaneous product launches. P01 is the non-custodial research terminal; "
+                    "P02 is authorized event-feed ingestion; P03 is contract and settlement normalization; "
+                    "P04 is cross-venue probability comparison; P05 is fee-adjusted positive-EV alerting; "
+                    "P06 is paid analytics subscriptions. P07 is permitted builder-payment software; "
+                    "P08 is jurisdiction-specific licensed-operator comparison publishing; P09 is "
+                    "sportsbook CPA acquisition; P10 is iGaming NGR participation; P11 is geofenced "
+                    "server-to-server attribution; P12 is retention and cohort reporting. These identifiers "
+                    "are this sprint's operational mapping, not an assertion that every partner offers "
+                    "every commercial rail. Activate P01–P06 first where authorized; treat P07–P11 as "
+                    "contract-dependent modules and use P12 across both businesses. The founder owns "
+                    "P06–P10, C1 owns P02–P05 and P11, and C2 owns P01 publishing and P12 reporting. "
+                    "Every handoff needs a named reviewer and a retained test artifact. Prioritize one "
+                    "event category, one subscription offer, and one permitted affiliate jurisdiction. "
+                    "NJ, PA, MI, WV, and ON are separate operating territories, not interchangeable "
+                    "license extensions. Ontario also has distinct advertising restrictions; a uniform "
+                    "21+ product policy does not describe Ontario's statutory minimum."
+                ),
+                (
+                    "Set the first thirty days' maximum cash outflow at the lesser of $10,000 or "
+                    "unrestricted startup cash minus a $3,000 untouched reserve. With $8,000 available, "
+                    "the cap is $5,000 and the sprint remains research and prototype work unless "
+                    "permissions and vendor costs fit; with $45,000 available, the cap still remains "
+                    "$10,000. Under the full envelope, allocate $2,400 to week one, $2,200 to week two, "
+                    "$2,200 to week three, and $3,200 to the final nine days. Within that envelope, "
+                    "earmark $3,000 for scoped regulatory and contract work, $3,000 for contractor "
+                    "delivery, $1,200 for feed, hosting, and software costs, $1,200 for permitted demand "
+                    "tests, and $1,600 for contingency. These are spending limits, not vendor quotes. "
+                    "Include prepaid services, filing payments, taxes on purchases, and founder cash "
+                    "draws when checking the ceiling; separately record unpaid founder hours. Cut "
+                    "acquisition and optional interfaces before consuming the reserve. The stated "
+                    "$1,500–$10,000 monthly operating range is an early operating envelope, not a "
+                    "ceiling on mature all-in scenario expenses. First-deal timing remains two to six "
+                    "months, so Day 30 can produce a verified prototype and partner pipeline without "
+                    "producing an authorized affiliate commission."
+                ),
+            ],
+            "table": {
+                "caption": "Days 1–7: Named Owners, Twelve-Play Coverage, and Auditable Deliverables",
+                "headers": [
+                    "Daily assignment and directly accountable pod owner",
+                    "Concrete deliverable tied to the mapped plays",
+                    "Evidence required before the next dependent activity",
+                    "Failure response within the existing cash envelope",
+                ],
+                "rows": [
+                    [
+                        "Day 01: founder defines the permitted product boundary",
+                        "P01 and P07 receive separate function and compensation inventories",
+                        "Counsel receives actual screens, payment flows, and proposed referral terms",
+                        "Disable custody, order submission, and personalized recommendation features immediately",
+                    ],
+                    [
+                        "Day 02: founder and C2 map territory requirements",
+                        "P08–P11 receive a jurisdiction, operator, channel, and permission register",
+                        "Record state vendor classifications, contract status, and permitted advertising channels",
+                        "Hold every unresolved territory outside the public affiliate launch",
+                    ],
+                    [
+                        "Day 03: founder obtains written commercial term sheets",
+                        "P06, P07, P09, and P10 receive separate revenue schedules",
+                        "Capture commission triggers, settlement timing, deductions, reversals, and carryover scope",
+                        "Model unsigned commercial terms as zero available affiliate income",
+                    ],
+                    [
+                        "Day 04: C1 verifies actual market-data access rights",
+                        "P02 distinguishes authorized Kalshi access from ForecastEx broker entitlements",
+                        "Retain redistribution terms, rate limits, timestamps, and credential ownership evidence",
+                        "Use permitted test records rather than scraping restricted partner feeds",
+                    ],
+                    [
+                        "Day 05: C2 publishes the twelve-play ownership register",
+                        "P01–P12 each receive an owner, dependency, and acceptance artifact",
+                        "Founder signs a single-category launch scope with bounded contractor hours",
+                        "Defer extra sports, territories, and interfaces before adding personnel",
+                    ],
+                    [
+                        "Day 06: founder establishes cash and ledger controls",
+                        "Separate subscription, builder-payment, CPA, and NGR accounting dimensions explicitly",
+                        "Set weekly spending limits and preserve the untouched cash reserve",
+                        "Stop discretionary purchases when committed cash reaches the sprint ceiling",
+                    ],
+                    [
+                        "Day 07: entire pod reviews the evidence packet",
+                        "Release a private prototype only for functions already cleared",
+                        "Check ownership, territory restrictions, feed permissions, and unresolved issue dates",
+                        "Carry unresolved commercial rails forward as disabled engineering modules",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Pre-Flight Checks Before Any Public Monetized Release",
+                "body": (
+                    "Each check produces a dated artifact covering the specific product, "
+                    "territory, partner, and compensation arrangement being released."
+                ),
+                "items": [
+                    "Obtain a function-specific CFTC classification assessment covering IB, FCM, and any advisory issues; verify that custody and order-taking remain absent.",
+                    "Verify applicable NJ DGE, PA PGCB, MI MGCB, WV, or Ontario requirements and the exact partner's permission before activating that territory's affiliate links.",
+                    "Test the product's 21+ policy, geographic restrictions, self-exclusion handling, and jurisdiction-appropriate responsible-gaming disclosures without implying that affiliates replace operator verification.",
+                    "Confirm licensed feed redistribution, documented builder eligibility, signed commission definitions, and a cash ceiling that preserves the $3,000 reserve.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8–14: Prove Data Integrity, Eligible Referrals, and Separate Revenue Ledgers",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the feed service around permissioned access, replayability, and economic comparability. "
+                    "Kalshi access and ForecastEx access through an authorized broker or data arrangement "
+                    "must be assessed separately; do not assume identical WebSocket availability, "
+                    "redistribution rights, or builder terms. Use an available licensed streaming "
+                    "interface where supported and approved polling otherwise. C1 stores source timestamps, "
+                    "receipt timestamps, market identifiers, settlement sources, fee versions, and sequence "
+                    "information when supplied. A sub-second internal target means p95 receipt-to-screen "
+                    "latency below 1,000 milliseconds across 10,000 measured updates, not a promise that "
+                    "upstream quotes are always current. Flag missing heartbeats and suppress alerts "
+                    "when quote age exceeds two seconds during active trading, with product-specific "
+                    "exceptions documented for slower sources. Compare contracts only when event "
+                    "definitions, settlement timing, cancellation rules, and payout units align. A "
+                    "binary quote of $0.54 is not directly comparable with sportsbook decimal odds "
+                    "without accounting for payout structure, fees, and differing outcomes. Store the "
+                    "transformation alongside the displayed number. Positive-EV labels require an "
+                    "explicit probability estimate, timestamp, and fee assumption; they are model "
+                    "outputs, not executable returns. Test suspended markets, corrections, reconnects, "
+                    "and settlement changes before allowing any automated alert to reach subscribers."
+                ),
+                (
+                    "For affiliate attribution, define an eligible first-time depositor using the signed "
+                    "operator contract, not a universal marketing definition. Required conditions may "
+                    "include a new verified account, territory eligibility, qualifying deposit, minimum "
+                    "activity, attribution window, and exclusion of duplicate or prohibited users. C1 "
+                    "creates an opaque click identifier; C2 maintains the partner-specific conversion "
+                    "dictionary. Send no trading credentials or unnecessary identity documents through "
+                    "the affiliate system. Where supported, authenticate callbacks with signatures, "
+                    "enforce replay protection, and make conversion processing idempotent. A duplicate "
+                    "callback must not become a second CPA. Enforce jurisdiction restrictions before "
+                    "the outbound link, but recognize that IP location is a preliminary control and "
+                    "does not replace the operator's required geolocation and identity checks. Display "
+                    "material affiliate relationships clearly under 16 CFR § 255.5, near recommendations "
+                    "and comparison links. Apply the 21+ product policy and relevant responsible-gaming "
+                    "resources consistently; do not publish prohibited inducements or target excluded "
+                    "people. Reconcile click, accepted conversion, reversal, and paid settlement "
+                    "identifiers separately. An operator dashboard can report a pending depositor "
+                    "without creating an earned receivable. Where a partner supplies no test callback, "
+                    "use a clearly isolated synthetic fixture and require subsequent production "
+                    "reconciliation before increasing acquisition."
+                ),
+                (
+                    "The accounting design must prevent throughput from masquerading as operator revenue. "
+                    "Subscription revenue follows delivered service and applicable refund treatment; "
+                    "annual prepayments are not automatically first-month earned revenue. Builder "
+                    "payments enter their own ledger only when the program actually exists, the "
+                    "operator is eligible, and the contractual earning conditions are satisfied. "
+                    "Affiliate economics use the commission entitlement after contractual deductions, "
+                    "not deposited funds, betting handle, or customer winnings. For an illustrative "
+                    "NGR contract, $30,000 of operator-defined gaming revenue less $6,000 of allowable "
+                    "bonus and administration deductions produces $24,000 eligible NGR. A 25% commission "
+                    "creates $6,000 before any affiliate-level carryover; a documented $1,000 carryover "
+                    "offset leaves $5,000 before acquisition and servicing expenses. Whether deductions "
+                    "apply before or after the percentage depends on the signed schedule. Preserve "
+                    "that ordering in executable tests. Under an ASC 606 principal-versus-agent "
+                    "assessment, any retained_share bridge uses the operator's actual retained "
+                    "consideration, not customer stakes as gross billings. Do not deduct the same "
+                    "bonus twice through both revenue and expense. Maintain accrued revenue, cash "
+                    "received, deferred service obligations, and disputed commissions as distinct "
+                    "fields. Day 14 ends only after the founder can reproduce each dollar from "
+                    "contract to event to ledger."
+                ),
+            ],
+            "table": {
+                "caption": "Days 8–14: Feed, Attribution, and Revenue Recognition Acceptance Tests",
+                "headers": [
+                    "Daily assignment and directly accountable pod owner",
+                    "Concrete technical or commercial artifact to produce",
+                    "Quantitative acceptance evidence for the sprint register",
+                    "Specific containment action when the test fails",
+                ],
+                "rows": [
+                    [
+                        "Day 08: C1 builds the authorized ingestion adapter",
+                        "P02 records source identity, timestamps, permissions, and reconnect behavior",
+                        "Replay ten thousand permitted updates with no silent sequence losses",
+                        "Keep the affected source private until gaps become visible",
+                    ],
+                    [
+                        "Day 09: C1 and C2 normalize settlement semantics",
+                        "P03 stores payout units, cancellation rules, and settlement source descriptions",
+                        "Manually verify fifty contract mappings with zero material outcome mismatches",
+                        "Remove mismatched pairs instead of presenting misleading price differences",
+                    ],
+                    [
+                        "Day 10: C1 instruments comparison and alert latency",
+                        "P04 and P05 expose quote age and fee-adjusted model assumptions",
+                        "Achieve internal p95 below one thousand milliseconds on measured updates",
+                        "Suppress stale alerts and retain a visible delayed-data state",
+                    ],
+                    [
+                        "Day 11: founder configures subscription and builder ledgers",
+                        "P06 and P07 separate earned revenue from payments and receivables",
+                        "Reproduce ten billing cases including refunds and deferred annual subscriptions",
+                        "Disable unsupported builder income assumptions rather than blending revenue",
+                    ],
+                    [
+                        "Day 12: C1 implements restricted outbound link attribution",
+                        "P08 and P11 attach opaque identifiers to permitted territory routes",
+                        "Pass twenty location-policy tests and twenty blocked-route tests without leakage",
+                        "Disable the affected route until every blocking test passes",
+                    ],
+                    [
+                        "Day 13: C2 reconciles CPA and NGR fixtures",
+                        "P09 and P10 preserve partner-specific eligibility and deduction ordering",
+                        "Process fifty fixtures with zero duplicate commissions or unexplained differences",
+                        "Quarantine disputed conversions and exclude them from collected contribution",
+                    ],
+                    [
+                        "Day 14: founder reviews the end-to-end money trace",
+                        "P12 links each earned amount to contracts and source events",
+                        "Explain every test dollar across subscriptions, builder payments, and commissions",
+                        "Release only rails with reproducible evidence and complete permissions",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four Tactics That Protect a Small Pod from Expensive False Positives",
+                "body": (
+                    "Most apparent early wins disappear through incompatible contract terms, "
+                    "duplicated conversions, or settlement deductions. Preserve evidence before buying traffic."
+                ),
+                "items": [
+                    "Version market-resolution language alongside price snapshots; a cheap-looking contract with a different cancellation rule is not a comparable opportunity.",
+                    "Request anonymized historical settlement examples before accepting NGR terms, including one negative month and the following month's carryover treatment.",
+                    "Capture the sportsbook's current CPA budget window and model a 50% off-season payout reduction with unchanged CAC before committing acquisition spend.",
+                    "Export partner settlement files before dashboard retention expires, then reconcile reversals to the original click and cohort rather than the current reporting month.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Days 15–21: Test Paid Demand Without Corrupting the Canonical Economics",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Days 15–21 test whether eligible users will pay for a narrow analytical job, not "
+                    "whether advertising can generate impressive account counts. Interview twenty "
+                    "prospects who match the chosen use case and record their existing tools, "
+                    "decision frequency, and willingness to purchase without promised winnings. "
+                    "Define an activated trial as a person who completes onboarding, views a "
+                    "correctly normalized comparison, and returns on a second day. Use a single "
+                    "illustrative $49 monthly subscription during the experiment; this test price "
+                    "does not reconstruct the annual scorecard's customer mix. Five paying accounts "
+                    "would produce $245 of monthly recurring subscription value before refunds, "
+                    "rather than evidence of the Base annual case. Track CAC separately for "
+                    "subscription buyers and accepted affiliate depositors. Allocate shared creative "
+                    "and contractor work by recorded hours or another documented driver. Affiliate "
+                    "contribution equals earned net commissions less acquisition, variable servicing, "
+                    "and allocated operating costs. If acquisition is paused for permissions, do "
+                    "not manufacture demand using employee deposits or incentivized accounts that "
+                    "breach partner terms. Continue interviews, interface tests, and partner "
+                    "negotiations instead. C2 reviews every comparison claim, while the founder "
+                    "approves spending in daily increments against the remaining week-three "
+                    "envelope. C1 fixes reliability before adding features."
+                ),
+                (
+                    "Reconcile the annual cases before interpreting any launch conversion. The canonical "
+                    "Conservative case is $75,000 revenue less $55,500 total modeled expenses, yielding "
+                    "$19,500 owner profit and a 26% margin. Base is $362,500 less $224,750, yielding "
+                    "$137,750 and 38.0%. Scaled is $650,000 less $325,000, yielding $325,000 and 50%. "
+                    "An illustrative stream allocation that preserves those totals is Conservative "
+                    "$50,000 subscriptions, $5,000 permitted builder payments, and $20,000 net affiliate "
+                    "commissions; Base $240,000, $12,500, and $110,000 respectively; Scaled $420,000, "
+                    "$30,000, and $200,000 respectively. Those allocations are planning bridges, not "
+                    "additional canonical assumptions. Every affiliate figure is already net of "
+                    "contractual revenue deductions. Each scenario excludes trading volume, merchant "
+                    "handle, deposits, loan principal, and customer assets. Conservative and Base use "
+                    "one full-time operator plus two contractors; Scaled uses two full-time operators "
+                    "plus three contractors. The five-person case cannot be claimed while silently "
+                    "outsourcing equivalent work outside its expenses. Annual expenses exceed early "
+                    "monthly fixed overhead where acquisition, delivery, and other modeled costs "
+                    "expand. Neither a successful launch week nor an annualized subscription "
+                    "snapshot establishes these profit outcomes. Review the expense bridge by "
+                    "stream before deciding which marginal acquisition dollar deserves funding."
+                ),
+                (
+                    "For a Base-compatible affiliate worksheet, start with $160,000 in annual commission "
+                    "accruals before contractual adjustments. Subtract $25,000 of documented administration "
+                    "and bonus adjustments, $10,000 of applicable carryover offsets, and $15,000 of "
+                    "reversals to reach $110,000 recognized affiliate revenue. Deduct $36,000 acquisition "
+                    "cost and $18,000 allocated delivery and overhead to produce $56,000 affiliate "
+                    "profit, or 50.91% of recognized affiliate revenue. This worksheet assumes those "
+                    "adjustments are commission-level amounts; an NGR-level contract requires "
+                    "recalculation before applying the revenue-share percentage. The remaining "
+                    "$252,500 of subscription and builder revenue carries $170,750 of expenses "
+                    "and $81,750 profit, so combined profit remains exactly $137,750. For seasonality, "
+                    "stress-test an isolated CPA cohort with forty accepted depositors: $200 per "
+                    "depositor yields $8,000 earned commission, while $120 CAC and $800 servicing "
+                    "leave $2,400 contribution. At a $100 off-season CPA, unchanged spending produces "
+                    "a $1,600 loss. That sensitivity is not a replacement scorecard scenario. "
+                    "Pause that cohort rather than averaging its loss into profitable subscriptions. "
+                    "Maintain NGR carryover separately by the contractual pooling unit, and record "
+                    "settlement delays in runway calculations. A positive accrued margin with "
+                    "cash arriving after payroll can still exhaust the sprint reserve."
+                ),
+            ],
+            "table": {
+                "caption": "Days 15–21: Paid-Demand Tests, Canonical Bridges, and Seasonal Stress Checks",
+                "headers": [
+                    "Daily assignment and directly accountable pod owner",
+                    "Concrete experiment or reconciliation artifact to produce",
+                    "Measured acceptance evidence without inflating operator revenue",
+                    "Specific action when evidence contradicts the thesis",
+                ],
+                "rows": [
+                    [
+                        "Day 15: founder interviews the selected analytical buyer",
+                        "P01 and P06 receive twenty structured problem and pricing interviews",
+                        "Record current alternatives, repeated use cases, and explicit purchase objections",
+                        "Narrow the job before purchasing additional broad acquisition traffic",
+                    ],
+                    [
+                        "Day 16: C2 observes onboarding and repeated usage",
+                        "P04 and P12 measure onboarding, correct comparisons, and second-day returns",
+                        "Seek ten activated trials with attributable sources and permissioned access",
+                        "Repair the first broken onboarding step before redesigning everything",
+                    ],
+                    [
+                        "Day 17: founder opens the permitted paid offer",
+                        "P06 tests one forty-nine-dollar monthly plan with clear service scope",
+                        "Count paid accounts separately from trials, invoices, and refunded purchases",
+                        "Rework price or value after recording specific refusal reasons",
+                    ],
+                    [
+                        "Day 18: C2 tests an authorized CPA cohort",
+                        "P08, P09, and P11 reconcile accepted depositors against acquisition costs",
+                        "Track contractual eligibility, rejection reasons, earned commissions, and collection timing",
+                        "Pause traffic when deductions erase the cohort's positive contribution",
+                    ],
+                    [
+                        "Day 19: founder audits the NGR deduction waterfall",
+                        "P10 records eligible revenue, share percentage, pooling unit, and carryover",
+                        "Reproduce settlement arithmetic without subtracting any contractual deduction twice",
+                        "Renegotiate opaque deductions before treating reported commissions as spendable",
+                    ],
+                    [
+                        "Day 20: founder validates all three annual bridges",
+                        "P06–P10 preserve exact revenue, total expenses, and owner-profit totals",
+                        "Confirm nineteen-thousand-five-hundred, one-hundred-thirty-seven-thousand-seven-hundred-fifty, and three-hundred-twenty-five-thousand-dollar annual profits",
+                        "Reject worksheets that substitute customer handle for operator revenue",
+                    ],
+                    [
+                        "Day 21: entire pod stress-tests the next cohort",
+                        "P09 and P12 halve CPA rates while preserving acquisition costs",
+                        "Calculate the isolated seasonal loss before approving another traffic increment",
+                        "Freeze loss-making acquisition while retaining profitable subscription service activity",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the evidence window",
+                    "action": "Export billing, acquisition, partner events, and settlement records with one cutoff.",
+                    "detail": (
+                        "Retain event dates and receipt dates separately so late callbacks "
+                        "cannot silently improve an earlier cohort."
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Calculate each rail independently",
+                    "action": "Reconcile subscriptions, builder payments, CPA, and NGR before combining totals.",
+                    "detail": (
+                        "Apply each contract's deduction order and distinguish earned revenue, "
+                        "cash collection, and disputed entitlements."
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Charge the real operating burden",
+                    "action": "Allocate CAC, contractor effort, feed costs, and servicing with documented drivers.",
+                    "detail": (
+                        "Record founder hours alongside cash expenses; preserve the canonical "
+                        "profit definition rather than silently adding or removing compensation."
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Authorize one bounded experiment",
+                    "action": "Select Kill, Fix, or Scale for each rail and name the next review date.",
+                    "detail": (
+                        "Apply spending and eligibility constraints before performance criteria; "
+                        "save the failed cases as well as successful cohorts."
+                    ),
+                },
+            ],
+        },
+        {
+            "heading": "4. Days 22–30 and Reviews at 60/90: Allocate Cash Through Explicit Kill, Fix, or Scale Decisions",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The final nine days turn measurements into an operating decision. Day 22 freezes "
+                    "the cohort dictionary; Day 23 exercises stale-feed and duplicate-callback failures; "
+                    "Day 24 reconciles collections; Day 25 retests territory restrictions; Day 26 "
+                    "reviews retention; Day 27 closes contract issues; Day 28 reruns seasonal "
+                    "sensitivity; Day 29 prepares the evidence packet; Day 30 assigns each rail "
+                    "a disposition. A critical incident means custody or order-taking outside "
+                    "scope, a prohibited territory referral, exposed credentials, or unauthorized "
+                    "data distribution. Any single such incident stops the affected function "
+                    "immediately; repair and re-verification precede resumption. For analytics, "
+                    "paid retention means eligible starting subscribers still paying after "
+                    "thirty days, excluding newly added accounts from the numerator. CAC "
+                    "payback equals acquisition cost per new paying subscriber divided by "
+                    "monthly subscriber contribution before acquisition cost. Use observed "
+                    "contribution after refunds, payment fees, variable data, and support. "
+                    "For affiliates, contribution margin uses recognized net commissions "
+                    "as its denominator and includes acquisition plus allocated servicing "
+                    "in its costs. Do not combine CPA depositor counts with subscription "
+                    "accounts. A small sample receives a Fix disposition with a bounded "
+                    "measurement task, not a fabricated confidence claim. Evaluate cash "
+                    "runway using unrestricted funds and committed outflows, not unpaid commissions."
+                ),
+                (
+                    "Day 30 Scale means permission to expand a verified experiment, not permission "
+                    "to adopt the Scaled annual forecast. Require zero open critical incidents, "
+                    "all blocking-route tests passing, at least twenty qualified interviews, "
+                    "ten activated trials, and five paying analytics subscribers where sales "
+                    "are permitted. Increase the next thirty-day discretionary experiment "
+                    "budget by at most 25%, only when a thirteen-week cash forecast preserves "
+                    "the reserve. Without completed commercial permissions, keep acquisition "
+                    "at zero and assess the partner pipeline instead. Require at least two "
+                    "documented partner discussions and one written list of remaining requirements "
+                    "with an accountable counterparty. A slow decision within the stated "
+                    "two-to-six-month deal window is not itself a failed business. Day 60 "
+                    "requires thirty paying subscribers and at least twenty renewal-eligible "
+                    "accounts showing 80% thirty-day paid retention before subscription "
+                    "acquisition expands. Affiliate expansion needs thirty settled accepted "
+                    "depositors, at least 20% cohort contribution margin, and settlement "
+                    "reconciliation within 1% by value. An unresolved larger difference "
+                    "pauses spending until explained. Subscription and affiliate rails "
+                    "can receive different decisions on the same day. Never use "
+                    "subscription cash to hide an affiliate cohort that fails its "
+                    "own contribution test."
+                ),
+                (
+                    "At Day 90, require sixty paying subscribers, at least forty renewal-eligible "
+                    "accounts, 85% thirty-day paid retention, and CAC payback no longer than "
+                    "six months before scaling subscription acquisition again. Affiliate "
+                    "expansion needs sixty settled accepted depositors spanning two complete "
+                    "cohorts, each contributing at least 20% after acquisition and allocated "
+                    "servicing, with nonnegative contribution under the 50% CPA reduction "
+                    "stress. NGR-heavy rails need two complete settlement cycles and explicit "
+                    "carryover reconciliation instead of borrowing a CPA depositor test. "
+                    "These are management thresholds, not scorecard inputs or industry "
+                    "benchmarks. Kill means retire a channel or feature whose evidence "
+                    "meets the failure condition; it does not automatically close a "
+                    "profitable independent rail. Fix means a named owner, a fourteen-day "
+                    "deadline, and spending restricted to remediation and existing service. "
+                    "Scale means at most another 25% discretionary budget increase while "
+                    "the same pod can meet support and reconciliation service levels. "
+                    "Require 95% of support requests answered within one business day "
+                    "and weekly closes completed within two business days. If either "
+                    "fails for two weeks, stop expansion and repair workload first. "
+                    "Move to two full-time staff plus three contractors only through "
+                    "an explicit capacity and expense plan, never by treating automation "
+                    "as evidence that review work disappeared."
+                ),
+            ],
+            "table": {
+                "caption": "Days 22–30 Closeout and Quantitative Day 30/60/90 Kill, Fix, or Scale Matrix",
+                "headers": [
+                    "Decision date or daily accountable pod assignment",
+                    "Deliverable or explicitly measured decision trigger",
+                    "Required evidence and minimum relevant sample size",
+                    "Authorized action with bounded spending and ownership",
+                ],
+                "rows": [
+                    [
+                        "Day 22: C2 freezes the cohort measurement dictionary",
+                        "P12 defines activated trials, renewal eligibility, and accepted depositor dates",
+                        "Founder verifies that new accounts cannot inflate historical retention",
+                        "Reject retrospective metric changes unless prior cohorts are restated",
+                    ],
+                    [
+                        "Day 23: C1 runs controlled failure and recovery drills",
+                        "P02, P05, and P11 handle stale feeds and duplicate callbacks",
+                        "Pass ten injected failures with zero stale alerts or double commissions",
+                        "Disable failed components while preserving unaffected subscriber service functions",
+                    ],
+                    [
+                        "Day 24: founder reconciles collected and earned amounts",
+                        "P06–P10 receive separate cash, accrual, dispute, and deferred-service balances",
+                        "Trace every settled test transaction to its contract and event",
+                        "Exclude disputed balances from the cash available for expansion",
+                    ],
+                    [
+                        "Day 25: C2 repeats territory and disclosure verification",
+                        "P08 and P11 retest restricted routes and material affiliate disclosures",
+                        "Pass all forty location-policy and blocked-route regression test cases",
+                        "Stop the affected referral route immediately after any prohibited destination",
+                    ],
+                    [
+                        "Day 26: founder reviews early retention and support",
+                        "P06 and P12 distinguish second-day activation from thirty-day paid retention",
+                        "Report eligible denominators and all cancellations without substituting new accounts",
+                        "Assign the highest-frequency cancellation cause to one remediation owner",
+                    ],
+                    [
+                        "Day 27: founder closes or dates commercial dependencies",
+                        "P07, P09, and P10 receive written remaining-requirement lists from partners",
+                        "Retain two partner discussions and one counterparty-owned requirements document",
+                        "Keep unpermitted acquisition disabled while continuing bounded commercial follow-up",
+                    ],
+                    [
+                        "Day 28: founder reruns off-season and carryover sensitivity",
+                        "P09 and P10 isolate CPA reductions and NGR pooling consequences",
+                        "Halve CPA rates and reconcile every applicable carryover balance",
+                        "Remove loss-making traffic sources from the next spending proposal",
+                    ],
+                    [
+                        "Day 29: C2 assembles the complete decision packet",
+                        "P01–P12 receive evidence links, open issues, owners, and actual spending",
+                        "Include thirteen-week cash projections and separate rail-level contribution worksheets",
+                        "Return unsupported metrics to their owners before any expansion decision",
+                    ],
+                    [
+                        "Day 30: founder signs the rail-specific operating decision",
+                        "Assign Kill, Fix, or Scale separately to subscriptions and affiliates",
+                        "Record applicable samples, permissions, reliability outcomes, and remaining unrestricted cash",
+                        "Publish one next action, named owner, and review date per rail",
+                    ],
+                    [
+                        "Day 30 Kill: stop an unsafe or unaffordable function",
+                        "One critical incident or projected reserve breach triggers immediate suspension",
+                        "Use incident evidence or committed cash below the three-thousand-dollar reserve",
+                        "Disable affected acquisition and functionality; preserve records and existing obligations",
+                    ],
+                    [
+                        "Day 30 Fix: continue bounded evidence-building without expansion",
+                        "Fewer than five paid subscribers or incomplete commercial permissions",
+                        "Require twenty interviews where feasible and documented partner dependency ownership",
+                        "Run fourteen-day remediation; keep unpermitted acquisition spending at zero",
+                    ],
+                    [
+                        "Day 30 Scale: enlarge only the verified analytics experiment",
+                        "Twenty interviews, ten activated trials, five payers, and zero critical incidents",
+                        "All blocking tests pass and thirteen-week runway preserves the reserve",
+                        "Increase discretionary experiment spending by at most twenty-five percent",
+                    ],
+                    [
+                        "Day 60 Kill: retire a sufficiently tested weak offer",
+                        "Fewer than ten payers after two hundred qualified activated trials",
+                        "Count only sales-permitted trials given at least fourteen days to convert",
+                        "Stop that offer's acquisition while retaining independently profitable service rails",
+                    ],
+                    [
+                        "Day 60 Fix: repair economics or collect missing evidence",
+                        "Miss the Scale thresholds or exceed one-percent unexplained settlement variance",
+                        "Separate undersized cohorts from fully measured loss-making acquisition cohorts",
+                        "Pause expansion and fund only fourteen-day remediation plus existing service",
+                    ],
+                    [
+                        "Day 60 Scale: expand whichever rail passes independently",
+                        "SaaS needs thirty payers and eighty-percent retention; affiliates need twenty-percent contribution",
+                        "Use twenty renewal-eligible accounts or thirty settled accepted depositors respectively",
+                        "Raise eligible rail spending at most twenty-five percent within cash limits",
+                    ],
+                    [
+                        "Day 90 Kill: retire persistently loss-making acquisition mechanics",
+                        "Two complete acquisition cohorts lose contribution and viable repricing is rejected",
+                        "Use forty renewal-eligible SaaS accounts or sixty settled affiliate depositors",
+                        "End the failing campaign or offer without automatically closing profitable subscriptions",
+                    ],
+                    [
+                        "Day 90 Fix: repair retention, workload, or seasonal exposure",
+                        "Any Scale criterion fails or service levels fail for two weeks",
+                        "Measure eighty-five-percent retention, six-month payback, seasonal contribution, and support completion",
+                        "Freeze expansion and assign fourteen-day repairs with explicit cash limits",
+                    ],
+                    [
+                        "Day 90 Scale: repeat only durable rail-specific acquisition",
+                        "SaaS needs sixty payers, eighty-five-percent retention, and six-month maximum payback",
+                        "Affiliates need two twenty-percent-contribution cohorts and nonnegative seasonal stress results",
+                        "Increase spending at most twenty-five percent after sample and capacity verification",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Scale the rail whose collected economics survive the next bad month, not the dashboard with the largest customer volume.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Assign P01–P12 to the founder, C1, and C2; record one owner, dependency, acceptance artifact, and disabled-state behavior for every play.",
+        "Freeze the thirty-day cash ceiling at the lesser of $10,000 or unrestricted cash minus $3,000; reconcile committed spending at every weekly review.",
+        "Document the publisher, IB, FCM, and advisory analysis for actual features and compensation; verify each affiliate territory and partner before activating links.",
+        "Pass feed-age, settlement-equivalence, duplicate-callback, restricted-route, and revenue-waterfall tests before opening the corresponding monetized function.",
+        "Reconcile the exact $75,000, $362,500, and $650,000 annual revenue cases to $19,500, $137,750, and $325,000 owner profit without counting customer stakes.",
+        "Sign separate Day 30/60/90 Kill, Fix, or Scale decisions for subscriptions and affiliates using eligible sample sizes, settled economics, seasonal stress, and cash runway.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "7 U.S.C. § 1a — Commodity Exchange Act definitions",
+            "url": "https://www.law.cornell.edu/uscode/text/7/1a",
+            "relevance": (
+                "Defines regulated roles including futures commission merchants, introducing "
+                "brokers, and commodity trading advisers; actual functions and compensation "
+                "must be assessed rather than relying on a publisher label."
+            ),
+        },
+        {
+            "title": "7 U.S.C. § 6d — Registration and customer-property requirements",
+            "url": "https://www.law.cornell.edu/uscode/text/7/6d",
+            "relevance": (
+                "Supports the requirement to assess FCM and IB registration boundaries "
+                "before enabling solicitation, order-related functions, or handling customer property."
+            ),
+        },
+        {
+            "title": "17 CFR § 1.3 — CFTC regulatory definitions",
+            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-1/section-1.3",
+            "relevance": (
+                "Provides operative definitions used when classifying the proposed "
+                "analytics, referral, solicitation, and account-related activities."
+            ),
+        },
+        {
+            "title": "16 CFR § 255.5 — Disclosure of material connections",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
+            "relevance": (
+                "The FTC endorsement guides explain disclosure of material connections; "
+                "place clear affiliate relationship disclosures near recommendations and links."
+            ),
+        },
+        {
+            "title": "15 U.S.C. § 45 — Unfair or deceptive acts or practices",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "relevance": (
+                "Grounds truthful marketing requirements for subscription capabilities, "
+                "comparison rankings, modeled positive-EV claims, and affiliate representations."
+            ),
+        },
+    ],
+}

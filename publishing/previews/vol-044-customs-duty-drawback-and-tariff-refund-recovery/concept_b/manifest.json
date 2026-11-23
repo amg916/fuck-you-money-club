@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-044-customs-duty-drawback-and-tariff-refund-recovery",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1914460,
+      "sha256": "4f28df5b988caeeb91b8e95c1b17dc1be9dc2357aee79fd7051d28fc27bf1545"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2461056,
+      "sha256": "c4393b9258de6cdbf423f8c13bb495f85ba81aafba9880b6dcf9eec41f3aec18"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 589117,
+      "sha256": "baee39cdfae398b031504e3d82db894bc931957c5f6a96da75690c8606a1217f"
+    },
+    "book.epub": {
+      "bytes": 273262,
+      "sha256": "d95f75222fb261d226cd9be3491fa5f9df900a8210b047918007d05a7550cf14"
+    },
+    "art/cover.svg": {
+      "bytes": 4326,
+      "sha256": "3f793e462118178be95640c7f6a00ad1a4d556ac1c15e74b1009a5374adad031"
+    },
+    "art/scorecard.svg": {
+      "bytes": 104359,
+      "sha256": "97f84a3d78d8e58b0c219ed0f969a88233648f8321478ec0a2c1663d54a49a58"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12419,
+      "sha256": "9e8f0033af2aa983970b114bbf968e4040e58f58e73f4dbd3d22840b860e35be"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8781,
+      "sha256": "4256a302e94cdf22fce09df2e83ef2ede977cf1cfb892ec1117b34282675a716"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12826,
+      "sha256": "080a92cc38ec795556b9c85cdb933460290018c1010b41968181d2ca35a32108"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10067,
+      "sha256": "7a03a0615fb3c2447dcb4ae25ba5d51c76f3955a8a5f347526ceab1465d8d609"
+    },
+    "art/diag_05.svg": {
+      "bytes": 13161,
+      "sha256": "6bd70863f9a52e7d7ab277de7fbe9ef3a8bbab284aa780737341138a8d55a085"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12803,
+      "sha256": "706b347e6d580fe3889191762fa91b2367293667fe26ed43b31e6ad98ad14171"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9118,
+      "sha256": "c6bc363f278b71d8901727a6a01413489d94e226d090e2778bbeacfdb55c07f0"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8993,
+      "sha256": "a5fc005cab0e6a34ef75f9c835495bfb579cc4ecc6d4b0ab858a4f732012b146"
+    }
+  }
+}

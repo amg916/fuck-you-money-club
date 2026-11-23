@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-intake-to-collected-service-fee",
+      "chart_type": "process_flow",
+      "title": "Five Handoffs from Inquiry to Collected MSO Fee",
+      "subtitle": "Evidence quality controls delivery; service contracts control compensation.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Counsel owns representation decisions and legal advice. The MSO performs contracted administrative work at fair-market fixed or cost-plus rates. Case milestones measure operations, not a percentage interest in legal fees or settlement proceeds.",
+      "caption": "Maintain separate claimant, evidence, service-delivery, and invoice ledgers. A signed retainer is neither usable medical proof nor recognized MSO revenue.",
+      "stages": [
+        {
+          "label": "Raw inquiry",
+          "value": "Capture provenance and contact permission before routing",
+          "numeric_value": 1.0,
+          "detail": "Capture source URL, campaign identifier, timestamp, seller-specific contact language, and TrustedForm certificate when available. Use authorized LexisNexis identity checks and restricted identity tokens; a certificate alone proves neither claimant identity nor complete contact eligibility."
+        },
+        {
+          "label": "Signed law-firm retainer",
+          "value": "Counsel accepts representation after duplicate-retainer screening",
+          "numeric_value": 2.0,
+          "detail": "Route conflict questions, existing representation, and retainer execution to the law firm. Scrub duplicates against authorized firm records and claimant attestations; do not imply access to a universal retainer registry."
+        },
+        {
+          "label": "Usable EMR and pharmacy proof",
+          "value": "Retrieve records through the applicable documented access route",
+          "numeric_value": 3.0,
+          "detail": "Validate patient identity, recipient, scope, and authority under 45 CFR 164.524 or 164.508 as applicable. Preserve source pages, pharmacy identifiers, service dates, and request receipts; log missing exposure or diagnosis evidence."
+        },
+        {
+          "label": "Deficiency-free accepted case",
+          "value": "Counsel confirms completeness against the current evidence matrix",
+          "numeric_value": 4.0,
+          "detail": "An LLM may draft ICD-10 and exposure chronologies, but trained reviewers verify every material assertion against the record. Counsel determines legal sufficiency; a qualified clinician resolves clinical interpretation questions."
+        },
+        {
+          "label": "Collected MSO vendor fee",
+          "value": "Match contracted service delivery to invoice and cleared payment",
+          "numeric_value": 5.0,
+          "detail": "Bill the law firm's operating account for administrative services, not client trust funds. Track ACH settlement, service credits, and replacement-window obligations separately from legal recoveries and claimant cohort counts."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-nested-claimant-quality-cohorts",
+      "chart_type": "funnel",
+      "title": "The Conversion Waterfall That Exposes Acquisition Leakage",
+      "subtitle": "A single illustrative annual cohort, with no entrants added between stages.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative mature-cohort counts are 1,200, 480, 336, 252, and 210. Each stage is a strict subset of its predecessor. The final count identifies files associated with paid service invoices; it is not a count of per-case commissions or settlements.",
+      "caption": "Conversions are 40.0%, 70.0%, 75.0%, and 83.33% sequentially; 17.5% of raw inquiries reach the final cohort. Annual Base revenue remains $705,000 from contracted services, not 210 multiplied by a claimant bounty.",
+      "stages": [
+        {
+          "label": "Raw inquiry cohort",
+          "value": "1,200 inquiries enter the same annual measurement cohort",
+          "numeric_value": 1200.0,
+          "detail": "Illustratively remove 180 duplicate or synthetic inquiries and 540 additional inquiries lacking eligibility, contact, or counsel acceptance before retainer completion. Retain mutually exclusive disposition codes so losses reconcile."
+        },
+        {
+          "label": "Signed retainer cohort",
+          "value": "480 retained claimants represent 40.0% of raw inquiries",
+          "numeric_value": 480.0,
+          "detail": "Counsel signs only after representation checks. At a fixed 540 other exclusions, increasing duplicate or synthetic losses from 180 to 240 reduces retained claimants to 420 before downstream attrition."
+        },
+        {
+          "label": "Usable proof cohort",
+          "value": "336 usable record packets represent 70.0% of retainers",
+          "numeric_value": 336.0,
+          "detail": "Reject 144 packets for absent exposure, incompatible dates, missing diagnosis support, or unusable records. The Base retrieval and triage pool is $66,000, equal to $137.50 per retained claimant or $196.43 per usable packet. At 60.0% usability, 288 packets cost $229.17 each."
+        },
+        {
+          "label": "Accepted case cohort",
+          "value": "252 accepted files represent 75.0% of usable packets",
+          "numeric_value": 252.0,
+          "detail": "Remove 84 files with unresolved firm-defined deficiencies. Define a 30-day contractual service-defect replacement window and charge actual rework to its responsible cost pool. If acceptance falls to 60.0%, expect about 202 files; do not represent rounding as an additional claimant."
+        },
+        {
+          "label": "Collected service cohort",
+          "value": "210 files associate with cleared vendor service invoices",
+          "numeric_value": 210.0,
+          "detail": "The remaining 42 accepted files associate with invoices still unpaid at the cohort cutoff. Cash status does not reverse properly recognized revenue automatically. Model a 60-day delay on one $58,750 monthly service invoice as a $58,750 working-capital exposure, not lost settlement value."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-owner-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base Case: $705,000 Revenue to $267,900 Owner Profit",
+      "subtitle": "Six bars reconcile annual service revenue, four cost pools, and the ending total.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Canonical Formula v2.0 totals are fixed; the four expense pools are an illustrative allocation of $437,100. The first and last bars are totals; the four interior values are signed changes. Revenue excludes client trust balances, settlements, and pass-through amounts for which the MSO is an agent.",
+      "caption": "$705,000 - $180,000 - $144,000 - $66,000 - $47,100 = $267,900; $267,900 / $705,000 = 38.0%. Conservative: $160,000 revenue, $118,400 costs, $41,600 profit at 26%. Scaled: $1,250,000 revenue, $625,000 costs, $625,000 profit at 50%.",
+      "stages": [
+        {
+          "label": "Recognized service revenue",
+          "value": "$705,000 annual contracted administrative service revenue",
+          "numeric_value": 705000.0,
+          "detail": "Equivalent to twelve $58,750 monthly service invoices earned through contracted delivery. Apply ASC 606 principal-versus-agent analysis to reimbursed media and retrieval charges; no separate retained-share factor is supplied or invented for this canonical revenue total."
+        },
+        {
+          "label": "Acquisition delivery expense",
+          "value": "Subtract $180,000 for owned campaign delivery costs",
+          "numeric_value": -180000.0,
+          "detail": "Allocate $15,000 monthly to media and attributable campaign production where the MSO bears those costs. Audit source quality and vendor credits. Direct law-firm media spend is outside this MSO expense pool."
+        },
+        {
+          "label": "Pod delivery labor",
+          "value": "Subtract $144,000 for contracted and employed delivery capacity",
+          "numeric_value": -144000.0,
+          "detail": "Illustrative annual pool: $60,000 employed operations seat, $30,000 intake contractor, $30,000 record contractor, and $24,000 chronology contractor. Treat amounts as loaded planning allowances; contractor seats represent scheduled capacity, not three additional full-time employees."
+        },
+        {
+          "label": "Record and triage outlays",
+          "value": "Subtract $66,000 for retrieval and evidence-processing expenses",
+          "numeric_value": -66000.0,
+          "detail": "Illustratively allocate $36,000 to provider and pharmacy retrieval, $18,000 to secure parsing and processing, and $12,000 to external exception work. Keep pod labor outside this pool to prevent double counting."
+        },
+        {
+          "label": "Core overhead expense",
+          "value": "Subtract $47,100 for recurring non-delivery operating support",
+          "numeric_value": -47100.0,
+          "detail": "Budget $3,925 monthly for secure systems, insurance, bookkeeping, contract maintenance, and general administration. The supplied $2,500-$14,000 monthly opex range is treated here as core recurring overhead, not total modeled costs of $36,425 monthly."
+        },
+        {
+          "label": "Annual owner profit",
+          "value": "$267,900 ending profit equals a 38.0% net margin",
+          "numeric_value": 267900.0,
+          "detail": "This is the canonical modeled owner-profit measure after the four expense pools, not a settlement share. Tax treatment, owner distributions, and cash timing remain separate schedules; do not count collections again after recognizing earned service revenue."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-service-rail-contribution-yield",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Service Yield Without Pricing Claimant Outcomes",
+      "subtitle": "Illustrative contribution dollars per delivered hour, before shared overhead.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Hourly equivalents normalize fixed or cost-plus service packages; they are neither market quotations nor payments for retaining a claimant. Each numeric value equals allocated service revenue less direct delivery cost per hour. These unit examples do not independently rebuild the canonical annual scorecard.",
+      "caption": "Choose rails by administrative scope, documented cost, and collection reliability. Larger contribution per hour does not establish better evidence quality or permit legal fee-sharing.",
+      "stages": [
+        {
+          "label": "Exposure chronology package",
+          "value": "$60 contribution per hour through fixed-scope ACH invoices",
+          "numeric_value": 60.0,
+          "detail": "Allocate $150 service revenue and $90 direct cost per delivered hour for source-linked exposure chronologies. Version the counsel-supplied evidence matrix and reserve clinical interpretation for qualified personnel."
+        },
+        {
+          "label": "Pharmacy proof coordination",
+          "value": "$55 contribution per hour through cost-plus ACH invoices",
+          "numeric_value": 55.0,
+          "detail": "Allocate $130 service revenue and $75 direct cost per hour coordinating dispensing records and product identifiers. Disclose retrieval charges and price service effort without asserting a universal third-party patient-rate cap."
+        },
+        {
+          "label": "Medical device record desk",
+          "value": "$50 contribution per hour through fixed-scope operating-account payments",
+          "numeric_value": 50.0,
+          "detail": "Allocate $125 service revenue and $75 direct cost per hour locating implant records, operative reports, and device identifiers. Missing lot numbers trigger a documented deficiency task rather than an invented match."
+        },
+        {
+          "label": "Retainer deficiency support",
+          "value": "$45 contribution per hour through monthly administrative retainers",
+          "numeric_value": 45.0,
+          "detail": "Allocate $110 service revenue and $65 direct cost per hour resolving incomplete signatures and missing intake fields. Counsel handles conflicts and representation; administrative compensation does not depend on signing."
+        },
+        {
+          "label": "Paid-media administration",
+          "value": "$40 contribution per hour through fixed management invoices",
+          "numeric_value": 40.0,
+          "detail": "Allocate $100 service revenue and $60 direct cost per hour to campaign administration and source auditing. Exclude direct client advertising spend from these unit figures and do not buy a share of recoveries."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-statutory-risk-routing",
+      "chart_type": "decision_tree",
+      "title": "Four Pre-Flight Checks Before Contact or Record Processing",
+      "subtitle": "Each failed check routes to a named correction, not automatic case rejection.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "This is an ordered pass-or-repair decision chain. Apply the rules of the operating jurisdiction, communication method, record holder, and actual entity structure. A vendor certificate or an Arizona affiliation does not replace that analysis.",
+      "caption": "Proceed only through the permitted service path: independent counsel, documented contact authority, valid record access, and verified identity and evidence provenance.",
+      "stages": [
+        {
+          "label": "Entity and compensation",
+          "value": "Pass fixed or cost-plus scope; otherwise repair the agreement",
+          "numeric_value": 1.0,
+          "detail": "Check state-adopted Rule 5.4 restrictions, unauthorized practice rules, and attorney-advertising or runner statutes, including California Business and Professions Code sections 6151-6152 where applicable. An Arizona ABS requires actual court licensing and scope verification; do not extend its permissions across unrelated jurisdictions."
+        },
+        {
+          "label": "Contact authority",
+          "value": "Pass documented channel authority; otherwise suppress the contact",
+          "numeric_value": 2.0,
+          "detail": "Apply 47 U.S.C. 227, 47 CFR 64.1200, applicable state calling rules, revocations, and do-not-call requirements. Use one-to-one seller-specific consent as an operating standard where consent is required; the FCC's 2023 one-to-one amendment was vacated in 2025 and is not a universal federal mandate."
+        },
+        {
+          "label": "Record access and security",
+          "value": "Pass route-specific authority; otherwise correct scope and recipient",
+          "numeric_value": 3.0,
+          "detail": "Distinguish individual access under 45 CFR 164.524 from authorization under 164.508 and applicable 42 CFR Part 2 restrictions. Account for the Ciox limits on third-party directions and fees. Track the access rule's 30-day response period and permitted written extension; assess business-associate duties under 164.504(e) from the actual relationship."
+        },
+        {
+          "label": "Identity and causation exposure",
+          "value": "Pass verified provenance; otherwise quarantine the affected work",
+          "numeric_value": 4.0,
+          "detail": "Check duplicate identity tokens, existing representation, source-page integrity, and inconsistent exposure dates. Counsel tracks MDL orders under 28 U.S.C. 1407 and expert-admissibility exposure under Federal Rule of Evidence 702. A general-causation dismissal can strand campaign spending even when intake files are complete."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Four Core Seats, Two Deliberate Scale Additions",
+      "subtitle": "Base and Conservative use 1 FT + 3 C; Scaled uses 2 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time employee; C means contractor seat with explicit scheduled capacity. Numeric values show headcount presence: one for each core seat and zero for each scale-only seat at Base. The last two stages each add one person at Scaled. Client counsel and external advisers are outside this pod.",
+      "caption": "Base staffing is four people, not four full-time equivalents. Add one employee and one contractor only when sustained queues, service budgets, and signed contracts support them.",
+      "stages": [
+        {
+          "label": "Operations lead",
+          "value": "Core full-time seat owns service scope and invoice reconciliation",
+          "numeric_value": 1.0,
+          "detail": "Own the service ledger, vendor economics, access permissions, and daily exception queue. Escalate legal decisions to client counsel. Use the Base $60,000 loaded labor allowance without counting owner profit as a second operating expense."
+        },
+        {
+          "label": "Intake specialist",
+          "value": "Core contractor seat verifies provenance and administrative completeness",
+          "numeric_value": 1.0,
+          "detail": "Maintain contact evidence, identity discrepancies, and duplicate-retainer flags within the $30,000 Base allowance. Do not provide legal advice or independently decide whether the law firm should represent a claimant."
+        },
+        {
+          "label": "Record retrieval coordinator",
+          "value": "Core contractor seat manages authorizations and provider follow-up",
+          "numeric_value": 1.0,
+          "detail": "Use the $30,000 Base allowance to manage request receipts, scope defects, delivery channels, and provider invoices. Maintain route-specific timers; never assume every provider request shares the individual-access deadline."
+        },
+        {
+          "label": "Chronology quality specialist",
+          "value": "Core contractor seat validates extracted facts against source pages",
+          "numeric_value": 1.0,
+          "detail": "Use the $24,000 Base allowance for chronology verification and structured deficiency tickets. Restrict LLM access to approved environments; if clinical interpretation is required, assign appropriately qualified personnel."
+        },
+        {
+          "label": "Delivery manager",
+          "value": "Scaled addition creates the second full-time employee seat",
+          "numeric_value": 0.0,
+          "detail": "Add when sustained record and invoice queues exceed the measured capacity of the four-person pod. Separate daily workload assignment from the lead's contract ownership, and budget within the Scaled $625,000 total expense envelope."
+        },
+        {
+          "label": "Evidence exception specialist",
+          "value": "Scaled addition creates the fourth contractor seat",
+          "numeric_value": 0.0,
+          "detail": "Add targeted capacity for complex pharmacy histories, missing implant records, and replacement-window rework. The resulting six-person pod is 2 FT + 4 C; do not carry Base labor allocations forward unchanged."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate Startup Capital Before Expanding Acquisition",
+      "subtitle": "Four buckets total $12,000 lean, $30,000 planning, or $50,000 expanded.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values encode the $30,000 planning stack. Each stage also supplies its lean and expanded allocations. The endpoints are startup funding envelopes, not annual operating expenses, revenue forecasts, or a substitute for receivables funding.",
+      "caption": "Lean: $3,000 + $2,500 + $2,500 + $4,000 = $12,000. Planning: $9,000 + $7,500 + $6,000 + $7,500 = $30,000. Expanded: $15,000 + $12,000 + $10,000 + $13,000 = $50,000.",
+      "stages": [
+        {
+          "label": "Contract and operating design",
+          "value": "$9,000 planning allocation; $3,000 lean and $15,000 expanded",
+          "numeric_value": 9000.0,
+          "detail": "Fund jurisdiction-specific service agreements, compensation structure assessment, record-access forms, insurance setup, and initial vendor diligence. Arizona ABS licensing is a separate scoped undertaking, not an assumed deliverable inside this allocation."
+        },
+        {
+          "label": "Secure intake and record stack",
+          "value": "$7,500 planning allocation; $2,500 lean and $12,000 expanded",
+          "numeric_value": 7500.0,
+          "detail": "Configure restricted CRM roles, MFA, encrypted storage, audit exports, TrustedForm capture, and approved identity-verification integrations. Confirm contractual data handling before connecting an LLM to live records."
+        },
+        {
+          "label": "Controlled acquisition pilot",
+          "value": "$6,000 planning allocation; $2,500 lean and $10,000 expanded",
+          "numeric_value": 6000.0,
+          "detail": "Purchase a bounded campaign sample with daily spend limits and source-level loss reporting. Require documented contact authority, vendor credit terms, and counsel's current case criteria before increasing campaign exposure."
+        },
+        {
+          "label": "Retrieval and cash reserve",
+          "value": "$7,500 planning allocation; $4,000 lean and $13,000 expanded",
+          "numeric_value": 7500.0,
+          "detail": "Reserve cash for initial provider charges, contractor timing, and disputed service credits. Even the expanded $13,000 bucket cannot absorb a delayed $58,750 Base monthly invoice; arrange staged billing or additional working capital before committing that delivery volume."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to a Measured, Contract-Ready Delivery System",
+      "subtitle": "Build the operating evidence before treating acquisition volume as progress.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The canonical time to first deal is 1-4 months. This sprint establishes readiness and pilot evidence; it does not assume a signed customer, completed provider response, or collected revenue within thirty days.",
+      "caption": "Exit with traceable permissions, a reconciled sample cohort, a costed service scope, and explicit working-capital needs. Expand only against measured capacity and authorized live work.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Select one service niche and document the permitted contract structure",
+          "numeric_value": 7.0,
+          "detail": "Choose one counsel-defined exposure and evidence matrix. Draft fixed or cost-plus scope, jurisdictional rules mapping, defect definitions, and a 30-day contractual replacement window. Record the $705,000 Base revenue and $437,100 expense targets as annual planning figures."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Configure provenance capture and test record-handling boundaries",
+          "numeric_value": 14.0,
+          "detail": "Test synthetic intake records through CRM permissions, contact suppression, duplicate checks, and invoice mapping. Verify authorization templates and approved storage. Demonstrate source-page citations and a manual exception route before allowing live record parsing."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Run a bounded authorized pilot and measure retrieval loss",
+          "numeric_value": 21.0,
+          "detail": "After customer authorization, launch only the budgeted sample and log every cohort transition. Record provider outlays even when proof fails. If no customer has signed, continue synthetic workflow testing and prospect discussions rather than processing live claimant records."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Reconcile service economics and publish the next operating decision",
+          "numeric_value": 30.0,
+          "detail": "Calculate duplicate loss, usable-proof yield, deficiency repair cost, and invoice aging. Keep pending provider requests out of completed-proof counts. Reconcile the six-bar Base bridge, stress one delayed monthly invoice, and set the next month's spend from signed scope and cash."
+        }
+      ]
+    }
+  ]
+}

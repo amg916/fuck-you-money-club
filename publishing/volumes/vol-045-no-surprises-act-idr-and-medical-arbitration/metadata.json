@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-045-no-surprises-act-idr-and-medical-arbitration",
+  "volume_slug": "vol-045-no-surprises-act-idr-and-medical-arbitration",
+  "volume_number": 45,
+  "site_ui": {
+    "cover": [
+      "NO SURPRISES",
+      "ACT MEDICAL",
+      "ARBITRATION"
+    ],
+    "deck": [
+      "RECOVER ELIGIBLE UNDERPAYMENTS.",
+      "UNDERWRITE EVERY DISPUTE."
+    ],
+    "lead": "Turn eligible out-of-network underpayments into disciplined recovery cases, not a volume-driven arbitration gamble.",
+    "summary": "Federal No Surprises Act IDR economics depend on eligibility, applicable state processes, timely open negotiation, evidence quality, and expected incremental collections after administrative, entity, and servicing costs. Keep IDR case administration distinct from contractual underpayment appeals and other lawful out-of-network recovery work, using permitted fixed or collection-based fees without shifting prohibited balances to patients.",
+    "chapters": [
+      "Q1: The Provider Recovery Thesis",
+      "Q2: Specialties, Plans & Dispute Routes",
+      "Q3: Expected Recovery per Case",
+      "Q4: Federal IDR & State Boundaries",
+      "Q5: Source Authorized Provider Accounts",
+      "Q6: Screen Claims & Filing Clocks",
+      "Q7: Negotiate & Prepare the Record",
+      "Q8: Price IDR & Appeals Separately",
+      "Q9: Provider & RCM Partnerships",
+      "Q10: Operate the Dispute Calendar",
+      "Q11: Control Fees, PHI & Denials",
+      "Q12: Scale Profitable Claim Cohorts"
+    ],
+    "flow": [
+      [
+        "INGEST",
+        "Receive authorized claim, remittance, and plan data through HIPAA-compliant workflows."
+      ],
+      [
+        "ROUTE",
+        "Determine federal IDR eligibility, applicable state processes, and alternative appeal rights."
+      ],
+      [
+        "UNDERWRITE",
+        "Estimate incremental collections net of current fees, labor, loss exposure, and payment delay."
+      ],
+      [
+        "NEGOTIATE",
+        "Complete required open negotiation and preserve the evidence and statutory deadlines."
+      ],
+      [
+        "SUBMIT",
+        "Present a supported offer through the applicable dispute process using current evidentiary and batching rules."
+      ],
+      [
+        "RECONCILE",
+        "Track determinations and payments, pursue appropriate enforcement, and measure realized contribution margin."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "NO SURPRISES ACT (IDR) MEDICAL ARBITRATION & OUT-OF-NETWORK RECOVERY",
+  "subtitle": "The Complete Playbook for No Surprises Act Recovery: $110,000–$900,000 USD in Annual Earned Fees, a 1 FT + 2 C Launch Pod, and Five-Person Scale",
+  "chapter_count": 12,
+  "total_word_count": 79807,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 94,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T22:48:04Z"
+}

@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-048-qui-tam-sec-and-irs-whistleblower-analytics",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1939024,
+      "sha256": "dfec6b0a152ae74082b92c7ce45d9229bacb38b321f8dbd150e87398b3978faf"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2517386,
+      "sha256": "76a01e83b234f0032036fd3553a43f8eeee41535635926afa9c5cd9bad8850a7"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 580856,
+      "sha256": "de18e562a4613c5a4feb78b17d7ec15ebcc2c6e5997ff42de8b0a0463e4299e0"
+    },
+    "book.epub": {
+      "bytes": 266859,
+      "sha256": "0031abd068792c8bc339d328f392e79fbf5c26735e9c884e8570dcbcfff50c71"
+    },
+    "art/cover.svg": {
+      "bytes": 4320,
+      "sha256": "8c7811f7c37ac8a4c2724c978706c452626f4f9f5390b5a1cfd46e1e34681c1b"
+    },
+    "art/scorecard.svg": {
+      "bytes": 94328,
+      "sha256": "638310a87c07cbf3e5862f43d6c8ca2a3d0f07acc0cb2c21ac65f516db3be71c"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11353,
+      "sha256": "9786f7e227114189a5650c4af8bdfca9f4be074bb5579dc188fefd490d31c451"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7830,
+      "sha256": "1a247d89186c7b3589c10445aa2f120580a47309c9495a7b2cda1bfd7759cd09"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12187,
+      "sha256": "8661b021d8fbc270660de84780ff076d72f444b2a8e320ae823f9dcc58e2c95b"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9507,
+      "sha256": "cf9c6674c9553186371c7518271900b9f9899a7664ad694b1e43417d2f95584e"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11273,
+      "sha256": "4ea4dc3c773b74cd48b54c6b3a0998f734797a766773847ed70db680a7d3bbb6"
+    },
+    "art/diag_06.svg": {
+      "bytes": 10535,
+      "sha256": "ae700e43722d54f88b55218670f30701f967b3db2aafdd7466848b5f19a82bd5"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8806,
+      "sha256": "b335d8e53ce15a53d0c2096bafe86d941d7e057e13c065c00889b5e35a792c63"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8995,
+      "sha256": "e67305b826f2b2e38b579b392bab573b399ee10c42a45565de8a5a16ac367242"
+    }
+  }
+}

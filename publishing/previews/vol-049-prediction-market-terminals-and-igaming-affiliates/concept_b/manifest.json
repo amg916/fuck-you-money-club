@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-049-prediction-market-terminals-and-igaming-affiliates",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1863133,
+      "sha256": "f68d99abfe9afd108a649958228fda42a12b7b305b027156df60b36cbd954b65"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2399332,
+      "sha256": "3d87d81f272172ae129dda6fc5535f89dfcc89181cc083f8decfe7288409a4d9"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 579891,
+      "sha256": "9b3fb014e0708a7590724eac1c19c72123da5ac2b5fa48eb7bac79ec42cdc537"
+    },
+    "book.epub": {
+      "bytes": 271678,
+      "sha256": "53e277300e00e76a33e04cc238f4cda0f3611e3dbe787df1f5f25f315f4689d3"
+    },
+    "art/cover.svg": {
+      "bytes": 4333,
+      "sha256": "31545ff8f2d1946f2d694dec4e2ef7783a112049e48aa96272d99b1a73d04df0"
+    },
+    "art/scorecard.svg": {
+      "bytes": 100793,
+      "sha256": "929b9110cff2476cc473f254155f26bc2d5ef6681c090d3496196dc0c3644b12"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12905,
+      "sha256": "4eacfbee656c6fa3fd30d8316695212da5914971318a6b9d11ea605f478ef854"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8850,
+      "sha256": "e5f4b35bb679b04b71b8475c283342c05463e3826731f439e0174c4c2121479d"
+    },
+    "art/diag_03.svg": {
+      "bytes": 13033,
+      "sha256": "1b003327021d005cb75644968242765da45cf80dcb33f14f9fc2d205d291dc66"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10314,
+      "sha256": "2244139eee5cb0729eac4ede56c614d7b66c0bb7a2da0aa20a82537b37cc4472"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11146,
+      "sha256": "4c78b5f7a282763392911bd52ce6fe486b760b7cc477e49e933dec0d02e68cf0"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12074,
+      "sha256": "efcb7f3fdc5c9dc67663a8a75e2421b3f6b9bb05c0a4b8624bee21f797991303"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9309,
+      "sha256": "e894fdcfc6987d899dbd40e27f47f996113982c8289a9bd3495f511b24ebc02e"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9334,
+      "sha256": "6f74d442307ed159c0352486fb61734825778ccac49d1ee027be0236f38501a4"
+    }
+  }
+}

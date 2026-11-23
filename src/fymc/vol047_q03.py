@@ -1,0 +1,677 @@
+from __future__ import annotations
+
+CHAPTER_3 = {
+    "id": "Q3",
+    "chapter_id": "Q3",
+    "chapter_number": 3,
+    "question_number": 3,
+    "slug": "unit-economics-margin-waterfall-working-capital-float",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for ai data-center powered land, substation headroom & bess site optioning?",
+    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
+    "subtitle": "Assignable Site Interests, Utility-Evidenced MW, ASC 606 Fee Recognition, Title Defects & Collection-Lag Liquidity",
+    "layout_template": "financial_breakdown",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #47 ranks #15 of 49 with a 92/100 Money-to-Manpower Score across "
+        "11 mapped plays. Its economics depend on selling documented development "
+        "optionality, not calling nearby transmission deliverable power. The canonical "
+        "Conservative, Base, and Scaled cases produce $33,000, $212,100, and $486,000 "
+        "annual owner profit on $110,000, $505,000, and $900,000 operator revenue. "
+        "This chapter reconstructs those outcomes through contractor labor, acquisition "
+        "cost, technical diligence, expired options, reversal provisions, overhead, "
+        "and funding expense. Separate standalone BESS parcels from AI campus "
+        "requirements, price access assemblages against recorded rights, and reconcile "
+        "earned fees to unrestricted collections. Explicit collection delays and "
+        "payout locks reveal why a profitable Base operation can require $118,900 "
+        "of modeled liquidity before its cash cycle becomes comfortable."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$110,000",
+            "context": "Annual realized assignment, origination milestone, and development-carry revenue",
+            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$505,000",
+            "context": "Annual realized assignment, origination milestone, and development-carry revenue",
+            "note": "42.0% net margin; $212,100 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual realized assignment, origination milestone, and development-carry revenue",
+            "note": "54% net margin; $486,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define the saleable unit before assigning a dollar to megawatts",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Start the ledger with the operator's contractual consideration, not the "
+                    "developer's land purchase price, battery procurement budget, or campus "
+                    "construction commitment. The canonical Formula v2.0 outcomes fix annual "
+                    "operator revenue at $110,000, $505,000, and $900,000; the cohort composition "
+                    "here is an illustrative reconstruction rather than a claim about executed "
+                    "transactions. Conservative comprises two BESS assignments at $40,000 and "
+                    "three separately earned origination milestones at $10,000. Base comprises "
+                    "five BESS assignments at $65,000, six campus milestones at $25,000, and "
+                    "$30,000 of realized development carry. Scaled comprises six BESS assignments "
+                    "at $90,000, eight campus milestones at $35,000, and $80,000 of realized "
+                    "carry. A milestone can belong to a continuing project, so these counts "
+                    "describe revenue events rather than necessarily distinct parcels. Give "
+                    "each event a contract identifier, performance obligation, acceptance "
+                    "document, invoice date, and collection restriction. Exclude unvested carry "
+                    "and disputed contingent consideration from earned revenue. Apply ASC 606 "
+                    "where applicable to the actual arrangement; evaluate development interests "
+                    "under their governing accounting treatment. Client-funded deposits and "
+                    "escrow balances remain separate from operating sales, even when they "
+                    "temporarily pass through an account controlled by the operator."
+                ),
+                (
+                    "Separate a standalone BESS parcel of 5–25 acres from an AI data-center "
+                    "campus before comparing acquisition costs. A battery site needs a credible "
+                    "charging and export pathway, equipment layout, fire-access geometry, and "
+                    "an applicable interconnection process; a campus adds sustained load service, "
+                    "fiber diversity, water or alternative cooling design, and jurisdiction-specific "
+                    "land-use constraints. Screening 69kV–345kV substations in QGIS identifies "
+                    "places to investigate, not electricity available for sale. Attach every "
+                    "valuation to utility-documented deliverable MW, stated service conditions, "
+                    "network-upgrade exposure, and a realistic energization schedule. Until "
+                    "deliverability is documented, give the parcel no powered-land premium "
+                    "in the underwriting model. An illustrative $25,000 campus milestone "
+                    "could be $1,000 per MW on 25 documented MW, earned only when the "
+                    "contract's utility-evidence and buyer-acceptance requirements are satisfied. "
+                    "A later restudy can still change economics; disclose that exposure in "
+                    "the evidence package rather than describing a study as an unconditional "
+                    "service commitment. Distinguish import capacity, export capacity, firm "
+                    "service, and interruptible service. None is interchangeable with nameplate "
+                    "battery output, transmission-line voltage, or a queue application's "
+                    "requested capacity. A mismatch requires repricing or withdrawal before "
+                    "another option extension is purchased."
+                ),
+                (
+                    "For gis_landlocked_parcel_easement_assemblage, the unit is a voluntarily "
+                    "assembled, assignable access solution supported by title evidence, not "
+                    "a threatening holdout position. Within one illustrative $65,000 Base "
+                    "assignment, attribute $20,000 of value to resolving recorded access "
+                    "rights and $45,000 to the remaining site package; those components "
+                    "sum to the assignment fee and create no additional revenue event. "
+                    "A $3,000 strip option, $4,000 boundary survey, $2,000 title examination, "
+                    "and $3,000 easement drafting budget total $12,000 of attributable "
+                    "cost, leaving $8,000 access-component contribution before shared "
+                    "acquisition expense and overhead. GIS parcel geometry alone does "
+                    "not establish legal access, easement scope, maintenance obligations, "
+                    "or rights adequate for transformers and heavy construction vehicles. "
+                    "Require recorded instruments, survey reconciliation, and a title "
+                    "professional's review of assignability and beneficiary parcels. If "
+                    "the access theory fails, exercise available diligence contingencies "
+                    "and offer survey-backed voluntary access services instead. Price "
+                    "that fallback under a separate written scope and evaluate any "
+                    "broker licensing requirements before solicitation. An illustrative "
+                    "$5,000 service fee against $3,500 delivery cost yields $1,500 "
+                    "contribution, but it is alternative work, not an automatic recovery "
+                    "added to the canonical cohort. Never count the same survey twice."
+                ),
+            ],
+            "table": {
+                "caption": "Revenue-Event Definitions and Evidence Required Before Underwriting Site Value",
+                "headers": [
+                    "Operator revenue unit and modeled role",
+                    "Concrete event math and revenue boundary",
+                    "Evidence required before assigning economic value",
+                    "Failure response and retained operating discipline",
+                ],
+                "rows": [
+                    [
+                        "Conservative BESS assignments establish the initial earned-fee cohort",
+                        "Two accepted assignments multiplied by $40,000 produce $80,000",
+                        "Executed transfers identify consideration, acceptance, and surviving obligations",
+                        "Withdraw during diligence when utility conditions defeat buyer economics",
+                    ],
+                    [
+                        "Conservative origination milestones complete the remaining annual revenue",
+                        "Three earned milestones multiplied by $10,000 produce $30,000",
+                        "Buyer acceptance confirms each distinct contracted deliverable was completed",
+                        "Exclude speculative follow-on fees until their obligations are satisfied",
+                    ],
+                    [
+                        "Base BESS assignments anchor the larger realized-fee cohort",
+                        "Five accepted assignments multiplied by $65,000 produce $325,000",
+                        "Assignable interests and utility evidence support each buyer decision",
+                        "Separate failed option costs from successful assignment purchase consideration",
+                    ],
+                    [
+                        "Base campus milestones require documented utility and buyer acceptance",
+                        "Six accepted milestones multiplied by $25,000 produce $150,000",
+                        "Contract documents distinguish load service from generation export rights",
+                        "Remove power premiums when documented service conditions remain unmet",
+                    ],
+                    [
+                        "Base development carry enters revenue only after realization",
+                        "Realized development carry contributes exactly $30,000 annual operator revenue",
+                        "Settlement records support entitlement, amount, and applicable accounting treatment",
+                        "Keep unvested interests outside the recognized annual revenue model",
+                    ],
+                    [
+                        "Scaled assignments and milestones support the expanded delivery team",
+                        "Six times $90,000 plus eight times $35,000 equals $820,000",
+                        "Separate acceptance records prevent duplicate invoicing across project milestones",
+                        "Add only $80,000 realized carry to reach $900,000 revenue",
+                    ],
+                    [
+                        "Voluntary access assemblage contributes within one Base assignment",
+                        "$20,000 attributed value less $12,000 costs leaves $8,000 contribution",
+                        "Recorded easements and surveys establish usable construction access rights",
+                        "Substitute contracted survey-backed services when diligence contingencies permit exit",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the fee by controlling the evidence package",
+                "body": (
+                    "Experienced originators sell a reproducible diligence record and a "
+                    "transferable interest, then make every fee condition traceable."
+                ),
+                "items": [
+                    "Ask the utility to identify import and export assumptions separately; a BESS export study does not establish campus load-service availability.",
+                    "Put survey scope, easement beneficiaries, and heavy-equipment access requirements in one title exception register before funding a strip option.",
+                    "Negotiate buyer reimbursement of approved third-party studies as a separate settlement item, with principal-versus-agent treatment documented.",
+                    "Use 12–24 month assignable options with dated diligence exits and priced extension rights; do not assume an extension survives a zoning prohibition.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile every margin deduction to the canonical owner-profit cases",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Build the waterfall from recognized operator revenue and preserve the "
+                    "scorecard totals exactly. Conservative deducts $77,000 from $110,000 "
+                    "to leave $33,000; Base deducts $292,900 from $505,000 to leave "
+                    "$212,100; Scaled deducts $414,000 from $900,000 to leave $486,000. "
+                    "The resulting margins are 30%, 42.0%, and 54%. The seven cost "
+                    "buckets below are explicit planning allocations, not independently "
+                    "verified historical expenses. They cover contractor delivery labor, "
+                    "acquisition CAC, technical diligence, failed-option burn, scrub and "
+                    "reversal provision, overhead, and funding expense. Revenue excludes "
+                    "underlying land value and project capex, so no further retained-share "
+                    "haircut is assumed in these examples. If an agreement makes the "
+                    "operator an agent earning only a retained share, rebuild the revenue "
+                    "basis around that net entitlement under the applicable principal-versus-agent "
+                    "analysis; do not preserve gross billings merely to match a target. "
+                    "Conversely, do not deduct a partner's share again if it was already "
+                    "excluded from recognized operator revenue. Keep a signed bridge "
+                    "between settlement statements, invoices, accounting revenue, and this "
+                    "management waterfall. Owner profit is the supplied operating result, "
+                    "not an estimate of personal after-tax cash or a separate owner "
+                    "salary added on top."
+                ),
+                (
+                    "Contractor delivery labor is $22,000, $90,000, and $150,000 across "
+                    "the three cases. Scope it to GIS package production, buyer data-room "
+                    "assembly, milestone administration, and transaction coordination; technical "
+                    "reports and title work sit in the separate diligence bucket. "
+                    "Acquisition CAC of $10,000, $36,000, and $48,000 covers owner outreach, "
+                    "travel, parcel research, and attributable sourcing campaigns, excluding "
+                    "option consideration. For cohort measurement, divide acquisition spend "
+                    "by five, eleven, and fourteen accepted assignment or milestone events, "
+                    "excluding carry: $2,000, approximately $3,273, and approximately $3,429 "
+                    "per event. These are event-acquisition ratios, not unique customer CAC "
+                    "or a claim that every milestone required a new landowner. Preserve "
+                    "parcel-level and buyer-level attribution so repeat milestones do not "
+                    "artificially improve sourcing statistics. Technical diligence of "
+                    "$14,000, $54,000, and $72,000 funds surveys, title review, utility "
+                    "consultation, wetland screening, and engineering support. Failed "
+                    "options consume another $12,000, $42,000, and $54,000. Allocate "
+                    "successful acquisition consideration into the relevant disclosed cost "
+                    "bucket rather than hiding it in land value excluded from revenue. "
+                    "The Base access example's $12,000 attributable cost must be "
+                    "distributed within these annual buckets, never appended as an "
+                    "eighth deduction after calculating profit."
+                ),
+                (
+                    "Treat scrub and reversal exposure as a documented management provision "
+                    "of $4,000, $18,900, and $27,000, approximately 3.64%, 3.74%, and "
+                    "3.00% of operator revenue. Build the register from invoice-specific "
+                    "rights: acceptance disputes, title defects, assignment restrictions, "
+                    "contractual refunds, and buyer credit exposure. A $10,000 invoice "
+                    "with a 20% modeled loss probability contributes $2,000 to an "
+                    "expected-loss estimate, but that arithmetic does not determine the "
+                    "required accounting classification. Contractual price concessions or "
+                    "constrained variable consideration can reduce revenue; credit losses "
+                    "and other obligations require their own treatment. The table places "
+                    "the planning provision below revenue solely to display the supplied "
+                    "economic totals consistently. Reconcile classification to the books "
+                    "without changing the same economic loss twice. When a reserved "
+                    "claim settles, charge the reserve and release any surplus only "
+                    "after the underlying exposure expires. Overhead is $12,000, $36,000, "
+                    "and $48,000; funding expense is $3,000, $16,000, and $15,000. "
+                    "The Scaled funding assumption requires better collection terms or "
+                    "less reliance on expensive external debt; scale alone does not "
+                    "cause borrowing costs to fall. Staffing remains 1 FT + 3 C, "
+                    "1 FT + 3 C, and 2 FT + 4 C respectively."
+                ),
+            ],
+            "table": {
+                "caption": "Formula v2.0 Annual Revenue-to-Owner-Profit Waterfall with Explicit Planning Allocations",
+                "headers": [
+                    "Annual economic line and operating interpretation",
+                    "Conservative annual amount and allocation explanation",
+                    "Base annual amount and allocation explanation",
+                    "Scaled annual amount and allocation explanation",
+                ],
+                "rows": [
+                    [
+                        "Recognized operator revenue excludes underlying land and construction value",
+                        "$110,000 from accepted assignments and separately earned origination milestones",
+                        "$505,000 from assignments, accepted campus milestones, and realized carry",
+                        "$900,000 from assignments, accepted campus milestones, and realized carry",
+                    ],
+                    [
+                        "Contractor delivery labor excludes separately purchased technical diligence reports",
+                        "Deduct $22,000 for scoped packaging and transaction coordination labor",
+                        "Deduct $90,000 for expanded packaging and transaction coordination labor",
+                        "Deduct $150,000 for parallel delivery and transaction coordination labor",
+                    ],
+                    [
+                        "Acquisition CAC captures attributable sourcing rather than option consideration",
+                        "Deduct $10,000 for outreach, owner meetings, and sourcing campaigns",
+                        "Deduct $36,000 for outreach, owner meetings, and sourcing campaigns",
+                        "Deduct $48,000 for outreach, owner meetings, and sourcing campaigns",
+                    ],
+                    [
+                        "Technical diligence purchases evidence needed to support buyer acceptance",
+                        "Deduct $14,000 for title, survey, utility, and engineering diligence",
+                        "Deduct $54,000 for title, survey, utility, and engineering diligence",
+                        "Deduct $72,000 for title, survey, utility, and engineering diligence",
+                    ],
+                    [
+                        "Expired option fees explicitly recognize failed utility and zoning work",
+                        "Deduct $12,000 for unsuccessful options and unrecoverable extension consideration",
+                        "Deduct $42,000 for unsuccessful options and unrecoverable extension consideration",
+                        "Deduct $54,000 for unsuccessful options and unrecoverable extension consideration",
+                    ],
+                    [
+                        "Scrub and reversal provision captures modeled economic loss exposure",
+                        "Deduct $4,000 provision, reconciled against specific contractual loss exposures",
+                        "Deduct $18,900 provision, reconciled against specific contractual loss exposures",
+                        "Deduct $27,000 provision, reconciled against specific contractual loss exposures",
+                    ],
+                    [
+                        "Operating overhead supports records, insurance, systems, and administration functions",
+                        "Deduct $12,000 for recurring administration and shared operating infrastructure",
+                        "Deduct $36,000 for recurring administration and shared operating infrastructure",
+                        "Deduct $48,000 for recurring administration and shared operating infrastructure",
+                    ],
+                    [
+                        "Funding expense captures priced liquidity rather than borrowed principal",
+                        "Deduct $3,000 for modeled interest and associated funding charges",
+                        "Deduct $16,000 for modeled interest and associated funding charges",
+                        "Deduct $15,000 assuming improved terms and lower external-debt dependence",
+                    ],
+                    [
+                        "Annual owner profit equals operator revenue less every listed deduction",
+                        "$33,000 remains after $77,000 costs, producing exactly 30% margin",
+                        "$212,100 remains after $292,900 costs, producing exactly 42.0% margin",
+                        "$486,000 remains after $414,000 costs, producing exactly 54% margin",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Fund the cash gap instead of spending the paper margin",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Measure cash availability on a different clock from revenue recognition. "
+                    "For this model, DSO runs from an accepted, billable milestone to "
+                    "receipt into the designated collection account; payout lock is the "
+                    "additional contractual period before those funds become unrestricted. "
+                    "Conservative assumes 60 days DSO plus 15 locked days, Base assumes "
+                    "75 plus 15, and Scaled assumes 90 plus 30. If your actual "
+                    "DSO metric already ends at unrestricted receipt, do not add "
+                    "the lock again. Use a 30-day month consistently. Recurring funded "
+                    "spend comprises delivery labor, CAC, technical diligence, overhead, "
+                    "and funding expense: $61,000 annually in Conservative, $232,000 in "
+                    "Base, and $333,000 in Scaled. Monthly averages are $5,083.33, "
+                    "$19,333.33, and $27,750. Multiplying by 2.5, three, and four "
+                    "months produces float requirements of $12,708.33, $58,000, and "
+                    "$111,000. These figures finance modeled expenditures, not the full "
+                    "face value of receivables. They also assume evenly spread spending "
+                    "and eventual collections; a concentrated survey campaign can create "
+                    "a larger trough. The stated $1,800–$11,000 monthly opex range "
+                    "describes startup operating context, not a ceiling on all-in "
+                    "cohort delivery and diligence spending. Build a weekly forecast "
+                    "before treating an annual average as spendable liquidity."
+                ),
+                (
+                    "Add ring-fenced cash for the full annual failed-option budget and "
+                    "the modeled reversal exposure: $16,000 in Conservative, $60,900 "
+                    "in Base, and $81,000 in Scaled. Combining those buffers with "
+                    "recurring-spend float gives illustrative liquidity targets of $28,708.33, "
+                    "$118,900, and $192,000. This is deliberately conservative treasury "
+                    "planning, not another expense deduction from owner profit. The "
+                    "option budget already appears in the waterfall, while the "
+                    "reversal provision may precede an actual cash claim. Track funded "
+                    "reserve cash, booked provisions, and amounts already spent in "
+                    "separate columns so the same exposure is not replenished "
+                    "automatically after it has expired. A $10,000–$50,000 startup "
+                    "capitalization can cover the modeled Conservative target at the "
+                    "upper end but cannot independently finance the Base or Scaled "
+                    "targets. Bridge the difference with retained earnings, committed "
+                    "capital, staged contractor commitments, or negotiated buyer deposits "
+                    "whose use is contractually permitted. Borrowing proceeds are funding, "
+                    "not revenue. Refundable buyer money remains restricted to its "
+                    "allowed purpose and must not support owner distributions. The "
+                    "two-to-six-month first-deal window is a separate startup runway "
+                    "problem: six months of Conservative recurring spend alone is "
+                    "$30,500, before $16,000 of option and reversal protection."
+                ),
+                (
+                    "Operate a thirteen-week cash forecast keyed to option expiry dates, "
+                    "utility invoice dates, buyer acceptance dates, and unrestricted "
+                    "collection dates. A Base invoice accepted on day zero might "
+                    "reach the collection account on day 75 and become available "
+                    "on day 90; paying a surveyor on day ten leaves an "
+                    "80-day funding interval for that expenditure. Obtain invoice-level "
+                    "lock terms instead of assuming every title-company disbursement "
+                    "has the same schedule. Request partial milestone payments for "
+                    "discrete accepted work, subject to the actual contract and "
+                    "accounting treatment, rather than billing for speculative deliverable "
+                    "power. Distinguish landlord option deposits, earnest money, utility "
+                    "study deposits, and the operator's fee receivable; each has "
+                    "different refund rights and permitted uses. Tie the bank balance "
+                    "to a daily restricted-cash register and reconcile settlement "
+                    "statements after every assignment. A thirty-day collection slip "
+                    "adds one month of recurring funding need: $5,083.33, $19,333.33, "
+                    "or $27,750. It does not immediately reduce earned revenue, "
+                    "although interest and credit deterioration can subsequently reduce "
+                    "profit. Delay owner distributions whenever forecast unrestricted "
+                    "cash falls below committed expenditures plus surviving reserves. "
+                    "An available credit line helps only if its draw conditions "
+                    "remain satisfied during the same project delay."
+                ),
+            ],
+            "table": {
+                "caption": "Collection Timing, Restricted Cash, and Modeled Funding Requirements",
+                "headers": [
+                    "Treasury measure and consistent calculation basis",
+                    "Conservative funding position and timing interpretation",
+                    "Base funding position and timing interpretation",
+                    "Scaled funding position and timing interpretation",
+                ],
+                "rows": [
+                    [
+                        "Collection assumptions separate receipt timing from subsequent payout restrictions",
+                        "60 days DSO plus 15 locked days equals 75 days",
+                        "75 days DSO plus 15 locked days equals 90 days",
+                        "90 days DSO plus 30 locked days equals 120 days",
+                    ],
+                    [
+                        "Recurring annual spend excludes separately ring-fenced options and reversals",
+                        "$61,000 annual recurring spend averages $5,083.33 per modeled month",
+                        "$232,000 annual recurring spend averages $19,333.33 per modeled month",
+                        "$333,000 annual recurring spend averages $27,750 per modeled month",
+                    ],
+                    [
+                        "Expenditure float uses recurring spend multiplied by collection-gap months",
+                        "$5,083.33 monthly spend over 2.5 months requires $12,708.33 float",
+                        "Unrounded monthly spend over three months requires $58,000 float",
+                        "$27,750 monthly spend over four months requires $111,000 float",
+                    ],
+                    [
+                        "Additional ring-fenced buffers protect option burn and reversal exposure",
+                        "$12,000 option protection plus $4,000 reversal protection totals $16,000",
+                        "$42,000 option protection plus $18,900 reversal protection totals $60,900",
+                        "$54,000 option protection plus $27,000 reversal protection totals $81,000",
+                    ],
+                    [
+                        "Illustrative liquidity target combines expenditure float and protected buffers",
+                        "$12,708.33 float plus $16,000 protected buffers requires $28,708.33 liquidity",
+                        "$58,000 float plus $60,900 protected buffers requires $118,900 liquidity",
+                        "$111,000 float plus $81,000 protected buffers requires $192,000 liquidity",
+                    ],
+                    [
+                        "Thirty additional collection days increase funding need before financing charges",
+                        "One extra month adds $5,083.33 beyond the modeled liquidity target",
+                        "One extra month adds $19,333.33 beyond the modeled liquidity target",
+                        "One extra month adds $27,750 beyond the modeled liquidity target",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Construct the contractual cash calendar",
+                    "action": "Record every option payment, study commitment, acceptance condition, and release date.",
+                    "detail": "Separate refundable deposits from earned fees and identify the document controlling each restriction.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile earned fees to unrestricted receipts",
+                    "action": "Match contracts, acceptance evidence, invoices, settlement statements, and bank entries.",
+                    "detail": "Measure DSO to account receipt, then add only genuinely separate payout-lock days.",
+                },
+                {
+                    "step": 3,
+                    "title": "Fund the next thirteen weeks",
+                    "action": "Forecast weekly committed expenditures and protect remaining option and reversal exposure.",
+                    "detail": "Deduct spending already incurred from the relevant budget instead of counting the same reserve twice.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release owner cash only after coverage",
+                    "action": "Compare unrestricted balances and drawable committed funding against the stressed cash trough.",
+                    "detail": "Hold distributions when a thirty-day collection slip would interrupt a surviving contractual commitment.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Stress fee realization, utility exposure, and the legal right to get paid",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Stress the cohort before increasing option commitments. Holding costs "
+                    "fixed, a 10% decline in realized fee revenue reduces annual "
+                    "profit to $22,000, $161,600, and $396,000. This test assumes "
+                    "the same delivery effort and no offsetting provision release. "
+                    "Alternatively, a 20% increase in delivery labor plus CAC adds "
+                    "$6,400, $25,200, and $39,600 of costs, leaving $26,600, "
+                    "$186,900, and $446,400. Losing one modeled BESS assignment "
+                    "without recovering committed costs removes $40,000, $65,000, or "
+                    "$90,000 and leaves negative $7,000, positive $147,100, or "
+                    "positive $396,000. Run each shock independently first, then "
+                    "combine correlated failures rather than pretending failed utility "
+                    "diligence, delayed collection, and option expiry are unrelated. "
+                    "An illustrative additional $10,000 expired option payment reduces "
+                    "profit dollar for dollar unless already included in the "
+                    "annual failure budget. Do not subtract an exposure already "
+                    "captured in the reserve and then also report its settlement "
+                    "as a fresh loss. Track failure frequency by utility territory, "
+                    "county, buyer, and asset type. A low headline CAC can "
+                    "conceal a costly concentration of parcels whose zoning process "
+                    "takes longer than their options remain assignable. Stop buying "
+                    "similar exposure when the failure pattern survives independent "
+                    "technical and title review."
+                ),
+                (
+                    "Network-upgrade exposure belongs in site valuation even when the "
+                    "operator is not the party funding construction. Suppose utility "
+                    "documentation supports a conditional 25 MW campus pathway with "
+                    "$5 million of identified upgrades: the developer faces $200,000 "
+                    "per MW before other project costs. A restudy increasing "
+                    "that estimate to $10 million doubles exposure to $400,000 "
+                    "per MW. Those amounts are developer capex, not operator "
+                    "revenue or automatically operator expense, but they can erase "
+                    "the buyer's willingness to pay a $25,000 milestone. Establish "
+                    "written limits on operator-funded study commitments, such as "
+                    "a separately approved $5,000 scope, and never sign a "
+                    "broad reimbursement undertaking without modeling its full exposure. "
+                    "Under 18 CFR 35.28, applicable transmission and generator "
+                    "interconnection requirements inform relevant tariff processes; they "
+                    "do not establish retail load service merely because a "
+                    "BESS queue record exists. Read the utility's actual service "
+                    "and interconnection documents. For a campus, verify fiber "
+                    "route diversity rather than two carriers sharing one conduit, "
+                    "and test cooling assumptions against available water service. "
+                    "For BESS, evaluate access, fire-response layout, and local "
+                    "siting requirements separately. Reprice, reduce the option payment, "
+                    "or exit when a revised energization date exceeds the "
+                    "remaining contractual control period."
+                ),
+                (
+                    "The right to collect a fee must survive title, licensing, "
+                    "and land-use scrutiny. Trade as a principal holding an "
+                    "actual assignable option interest, and determine applicable state "
+                    "licensing requirements before marketing interests or negotiating "
+                    "for another party. Texas Occupations Code sections 1101.002 "
+                    "and 1101.351 define brokerage activity and require licensure "
+                    "for covered conduct; merely labeling compensation an assignment "
+                    "fee does not resolve the issue. Retain licensed brokerage "
+                    "support where the transaction requires it and budget its "
+                    "compensation without duplicating a netted revenue share. Under "
+                    "33 U.S.C. 1344, discharges of dredged or fill material "
+                    "into covered waters can require authorization, making wetland "
+                    "impacts a concrete cost and schedule input rather than "
+                    "a cosmetic GIS layer. Check current municipal ordinances "
+                    "and effective dates for data-center or BESS restrictions "
+                    "before extending an option. Keep seller representations, recorded "
+                    "access evidence, utility study status, and buyer disclosures "
+                    "aligned with the same dated package. Close only when "
+                    "assignment mechanics, surviving refund rights, and collection "
+                    "instructions are understood. If an option fails diligence, "
+                    "record the actual burn, preserve any refund claim, and "
+                    "redirect effort toward documented voluntary access services "
+                    "rather than presenting an impaired site as powered inventory."
+                ),
+            ],
+            "table": {
+                "caption": "Independent Sensitivity Tests and Site-Level Failure Responses",
+                "headers": [
+                    "Stress event and explicit modeling assumption",
+                    "Conservative result and relevant economic consequence",
+                    "Base result and relevant economic consequence",
+                    "Scaled result and relevant economic consequence",
+                ],
+                "rows": [
+                    [
+                        "Realized fees decline 10% while every modeled cost remains unchanged",
+                        "Profit becomes $22,000 after an $11,000 annual revenue reduction",
+                        "Profit becomes $161,600 after a $50,500 annual revenue reduction",
+                        "Profit becomes $396,000 after a $90,000 annual revenue reduction",
+                    ],
+                    [
+                        "Delivery labor and acquisition CAC both increase by 20%",
+                        "Profit becomes $26,600 after $6,400 additional annual operating costs",
+                        "Profit becomes $186,900 after $25,200 additional annual operating costs",
+                        "Profit becomes $446,400 after $39,600 additional annual operating costs",
+                    ],
+                    [
+                        "One BESS assignment disappears while committed costs remain fully payable",
+                        "Profit becomes negative $7,000 after losing one $40,000 assignment",
+                        "Profit becomes $147,100 after losing one $65,000 assignment fee",
+                        "Profit becomes $396,000 after losing one $90,000 assignment fee",
+                    ],
+                    [
+                        "An additional unbudgeted option expires with $10,000 unrecoverable consideration",
+                        "Profit becomes $23,000 unless existing provisions already capture exposure",
+                        "Profit becomes $202,100 unless existing provisions already capture exposure",
+                        "Profit becomes $476,000 unless existing provisions already capture exposure",
+                    ],
+                    [
+                        "Collections slip thirty days without immediate revenue impairment or repricing",
+                        "Liquidity target becomes $33,791.67 before incremental borrowing charges arise",
+                        "Liquidity target becomes $138,233.33 before incremental borrowing charges arise",
+                        "Liquidity target becomes $219,750 before incremental borrowing charges arise",
+                    ],
+                    [
+                        "Upgrade estimates double and invalidate the buyer's previously accepted economics",
+                        "Revalue the affected option before committing another extension payment",
+                        "Remove exposed milestone revenue unless contractual earning conditions survive",
+                        "Stress correlated projects sharing the same constrained utility infrastructure",
+                    ],
+                    [
+                        "New zoning restrictions extend approvals beyond remaining assignable option control",
+                        "Exercise available diligence exits and record actual unrecoverable payments",
+                        "Negotiate priced extensions only against a documented revised schedule",
+                        "Pause similar acquisitions until county-specific exposure is fully repriced",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four conditions before funding or transferring the next site",
+                "body": (
+                    "A strong scorecard does not replace project-specific evidence. "
+                    "Document the following checks for each new cash commitment."
+                ),
+                "items": [
+                    "Confirm utility-documented deliverable MW, import or export service type, upgrade exposure, and energization assumptions; reject line proximity as power evidence.",
+                    "Confirm recorded access rights, option assignability, diligence termination dates, and state-specific licensing treatment before offering the interest.",
+                    "Confirm separate BESS or campus feasibility, including current zoning restrictions, wetland impacts, fiber routes, and applicable cooling requirements.",
+                    "Confirm the stressed cash forecast funds committed delivery, remaining option burn, reversal exposure, and payout restrictions before authorizing owner distributions.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A site fee is only as valuable as the documented power, transferable rights, and unrestricted cash that survive the closing.",
+    "diagram_id": "diag-03",
+    "action_checklist": [
+        "Rebuild the $110,000, $505,000, and $900,000 revenue cohorts from identified assignment, milestone, and realized-carry events without including land purchase price or capex.",
+        "Map every contract to utility-documented deliverable MW, upgrade exposure, energization timing, acceptance evidence, and the applicable revenue-recognition treatment.",
+        "Reconcile the seven expense buckets to $77,000, $292,900, and $414,000, tagging access-assemblage costs so no survey or option payment is counted twice.",
+        "Separate 5–25 acre BESS parcels from AI campus underwriting and record failed utility or zoning diligence as explicit expired-option expenditure.",
+        "Build a thirteen-week unrestricted-cash forecast using separate DSO and payout-lock clocks, then test one additional month of collection delay.",
+        "Run fee compression, delivery-cost inflation, lost-assignment, and upgrade-restudy sensitivities before renewing options or releasing owner distributions.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "18 CFR 35.28 — Non-discriminatory open access transmission tariff",
+            "url": "https://www.ecfr.gov/current/title-18/chapter-I/subchapter-C/part-35/section-35.28",
+            "relevance": (
+                "Provides relevant federal transmission and generator interconnection "
+                "requirements; a queue filing under an applicable process does not "
+                "itself establish campus retail load-service availability."
+            ),
+        },
+        {
+            "title": "16 U.S.C. 824 — Declaration of policy; application of subchapter",
+            "url": "https://www.law.cornell.edu/uscode/text/16/824",
+            "relevance": (
+                "Defines the federal framework for interstate transmission and "
+                "wholesale electricity regulation, supporting careful separation "
+                "of wholesale infrastructure evidence from local service assumptions."
+            ),
+        },
+        {
+            "title": "33 U.S.C. 1344 — Permits for dredged or fill material",
+            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
+            "relevance": (
+                "Covered discharges can require authorization, affecting usable "
+                "acreage, access design, diligence expenditure, and option timelines."
+            ),
+        },
+        {
+            "title": "Texas Occupations Code 1101.002 — Definitions",
+            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm#1101.002",
+            "relevance": (
+                "Defines covered real-estate brokerage activity; analyze actual "
+                "conduct and compensation rather than relying on an assignment label."
+            ),
+        },
+        {
+            "title": "Texas Occupations Code 1101.351 — License required",
+            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm#1101.351",
+            "relevance": (
+                "Requires licensure for covered brokerage activity, making transaction "
+                "structure and licensed support concrete operating-cost considerations."
+            ),
+        },
+    ],
+}

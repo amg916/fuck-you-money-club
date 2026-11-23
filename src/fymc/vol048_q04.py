@@ -1,0 +1,693 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
+    "question_prompt": "How do you allocate startup capital ($10,000–$45,000 USD) and configure a lean, low-opex ($1,500–$9,500 USD/mo) production stack without wasting cash on bloated overhead?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
+    "subtitle": "Reserve-First Funding, DuckDB Evidence Pipelines, Counsel-Controlled Matter Rooms, and Claim-Level Readiness Under 31 U.S.C. § 3730",
+    "layout_template": "comparison_table",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #48, ranked #16 of 49 with a 92/100 Money-to-Manpower Score, "
+        "supports 11 mapped plays through a small forensic analytics operation, "
+        "not a warehouse of speculative lawsuits. Allocate at least half of "
+        "$10,000–$45,000 to untouched working capital; buy reproducibility, "
+        "restricted evidence access, and counsel capacity before subscriptions. "
+        "The canonical annual owner-profit cases are $30,400 Conservative, "
+        "$219,375 Base, and $510,400 Scaled. Those outcomes are scenarios, not "
+        "permission to fund payroll with anticipated awards. This chapter "
+        "specifies twelve infrastructure layers, reconciles retainers against "
+        "long-tail statutory proceeds, and connects customs valuation evidence "
+        "to disciplined investigation. Launch only after source rights, "
+        "representative-claim evidence, restore tests, and a zero-award cash "
+        "forecast survive documented review."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$95,000",
+            "context": "Annual operator revenue from retainers and realized eligible award shares",
+            "note": "32% net margin; $30,400 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$487,500",
+            "context": "Annual operator revenue from retainers and realized eligible award shares",
+            "note": "45.0% net margin; $219,375 annual owner net profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$880,000",
+            "context": "Annual operator revenue from retainers and realized eligible award shares",
+            "note": "58% net margin; $510,400 annual owner net profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Protect Half the Capital Before Buying the First Subscription",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Treat startup capital as a survival allocation, not an equipment shopping list. "
+                    "The three budgets below preserve exactly 50% as working capital: $5,000 "
+                    "from $10,000, $12,500 from $25,000, and $22,500 from $45,000. Keep "
+                    "that money in a separate business deposit account, reconcile it weekly, and "
+                    "release it only against the thirteen-week cash forecast. The remaining half "
+                    "buys five bounded deliverables: entity and engagement documents, a secured "
+                    "workstation, insurance, narrowly scoped source access, and initial delivery "
+                    "capacity. These are planning envelopes, not vendor quotations; reallocate "
+                    "within the deployment half when a bindable insurance quote or counsel "
+                    "estimate differs. Do not reduce the reserve percentage to accommodate an "
+                    "annual data contract. The $10,000 configuration assumes an existing usable "
+                    "computer, home-office operation, and a founder who performs extraction and "
+                    "analysis personally. Contractors receive task budgets rather than open-ended "
+                    "availability retainers. The $45,000 configuration purchases deeper source "
+                    "corroboration and delivery capacity, not executive furniture or additional "
+                    "management. Separate personal living reserves from business float: owner "
+                    "withdrawals consume cash even when an income statement classifies them "
+                    "outside operating expense. Record every committed annual renewal in the "
+                    "forecast on its actual payment date rather than smoothing it into an "
+                    "imaginary monthly invoice."
+                ),
+                (
+                    "Construct three monthly cash envelopes before opening a matter. A $1,500 "
+                    "lean envelope contains $100 for software and storage, $150 for insurance "
+                    "accruals, $200 for bookkeeping and administrative services, $250 for source "
+                    "acquisition, $300 for counsel consultation, and $500 for contractor work. "
+                    "A $4,500 delivery envelope allocates those categories $200, $250, $350, "
+                    "$700, $1,000, and $2,000 respectively. A $9,500 capacity envelope allocates "
+                    "$350, $450, $700, $1,500, $2,000, and $4,500. Actual policies may require "
+                    "upfront premiums, so distinguish the expense accrual from the payment "
+                    "schedule and avoid counting an initial premium twice. These envelopes "
+                    "exclude founder living costs, income taxes, and incremental payroll; they "
+                    "are operating controls rather than complete annual scenario expenses. At "
+                    "the lean burn, the three reserves last approximately 3.33, 8.33, and "
+                    "15 months without receipts. At $4,500, they last 1.11, 2.78, and five "
+                    "months. Because first deals can take four to twelve months, the smallest "
+                    "budget cannot support even the earliest expected close without additional "
+                    "funding or lower burn. Use fractional paid engagements, phased purchases, "
+                    "or additional owner capital; never replace the missing runway with an "
+                    "estimated relator award. Stop discretionary acquisition when projected "
+                    "unrestricted cash falls below eight weeks of committed payments."
+                ),
+                (
+                    "Establish an entity whose contracts describe forensic data analysis and "
+                    "litigation support rather than legal representation or guaranteed recoveries. "
+                    "Obtain an EIN directly from the IRS without paying an intermediary, open "
+                    "an entity-owned bank account, and maintain a separate tax reserve. Have "
+                    "counsel review the operating agreement, confidentiality terms, contractor "
+                    "invention assignments, and applicable restrictions on sharing legal fees. "
+                    "A services entity does not automatically acquire an individual's statutory "
+                    "award rights. Bill law firms for defined analytical deliverables using "
+                    "ordinary fees; do not disguise an impermissible referral payment as a "
+                    "success-based consulting charge. Request professional liability and cyber "
+                    "coverage that expressly addresses litigation support, sensitive records, "
+                    "subcontractors, and incident response. Compare exclusions for intentional "
+                    "acts, contractual liability, regulatory investigations, and prior-known "
+                    "circumstances before binding. Maintain vendor payment verification through "
+                    "a known telephone number, not a changed bank account in an email thread. "
+                    "Require two-person verification for material transfers even when the second "
+                    "person is an external bookkeeper. Keep client funds out of operating "
+                    "accounts; if an engagement requires custodial handling, route that "
+                    "arrangement through the appropriate licensed professional. The operating "
+                    "objective is simple: every dollar has an owner, purpose, authorization "
+                    "record, and cash date before it leaves the reserve."
+                ),
+            ],
+            "table": {
+                "caption": "Reserve-First Startup Allocation Across Three Deployment Budgets",
+                "headers": [
+                    "Capital purpose and purchasing boundary",
+                    "$10,000 startup allocation",
+                    "$25,000 startup allocation",
+                    "$45,000 startup allocation",
+                ],
+                "rows": [
+                    [
+                        "Working capital held separately from discretionary deployment purchases",
+                        "$5,000 reserve remains available for documented operating shortfalls",
+                        "$12,500 reserve remains available for documented operating shortfalls",
+                        "$22,500 reserve remains available for documented operating shortfalls",
+                    ],
+                    [
+                        "Entity setup and counsel-reviewed engagement documentation before delivery",
+                        "$1,500 funds formation costs and narrowly scoped contract review",
+                        "$3,000 funds engagement terms and initial matter-screening consultation",
+                        "$5,000 funds expanded contracts and specialist jurisdictional consultation",
+                    ],
+                    [
+                        "Endpoint security and equipment purchased against actual capability gaps",
+                        "$1,200 supplements an existing workstation with secure backup equipment",
+                        "$2,500 funds a dedicated encrypted workstation and recovery media",
+                        "$4,000 funds two secured endpoints and documented recovery capability",
+                    ],
+                    [
+                        "Insurance placement supported by written scope and exclusion review",
+                        "$800 provides an initial premium envelope subject to quotations",
+                        "$1,500 provides broader placement capacity subject to actual quotations",
+                        "$2,500 provides higher-limit placement capacity subject to actual quotations",
+                    ],
+                    [
+                        "Source acquisition restricted to identified evidence questions and rights",
+                        "$500 funds targeted records requests and limited document acquisition",
+                        "$1,500 funds bounded source licenses and primary-record retrieval",
+                        "$3,500 funds specialist source access with documented reuse rights",
+                    ],
+                    [
+                        "Initial delivery capacity released only against scoped analytical milestones",
+                        "$1,000 funds discrete contractor tasks and initial delivery tooling",
+                        "$4,000 funds specialist corroboration tasks and initial delivery tooling",
+                        "$7,500 funds expanded corroboration capacity and initial delivery tooling",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy Evidence Throughput, Not the Appearance of a Large Firm",
+                "body": (
+                    "Experienced operators spend on source preservation, bounded expert questions, "
+                    "and demonstrable delivery capacity before broad research subscriptions."
+                ),
+                "items": [
+                    "Buy one representative import-document bundle before licensing a national manifest feed; stop if invoice lineage cannot support the intended comparison.",
+                    "Ask counsel to price a bounded public-disclosure and claim-particularity assessment before funding a full dossier.",
+                    "Negotiate a paid two-week analytical pilot with a stated record count and acceptance test instead of an unpaid speculative investigation.",
+                    "Retain source hashes and retrieval receipts when dropping a subscription so an expired license does not erase the audit trail or obscure reuse restrictions.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Assemble Twelve Replaceable Layers Around Reproducible Evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the first production pipeline on Python, DuckDB, and immutable source "
+                    "files. CMS Part B and Part D aggregates identify unusual utilization, "
+                    "prescribing, and reimbursement patterns; Open Payments contributes reported "
+                    "manufacturer relationships; SAM.gov contributes entity and procurement "
+                    "context. None independently proves a false claim, knowledge, or materiality. "
+                    "Store a retrieval manifest containing dataset release, original URL, "
+                    "retrieval time, license terms, byte count, SHA-256 digest, and transformation "
+                    "commit. Preserve raw downloads unchanged and write normalized outputs to "
+                    "new versioned locations. Resolve entities with NPI, UEI, addresses, and "
+                    "documented name aliases rather than names alone. Record suppressed cells, "
+                    "lagged publication periods, and population differences before calculating "
+                    "outlier scores. Use DuckDB locally until concurrent workloads justify "
+                    "PostgreSQL; a server is not a prerequisite for credible evidence. Keep "
+                    "public-source analytics separate from privileged or sealed matter storage "
+                    "so a developer cannot accidentally publish a confidential attachment with "
+                    "a harmless-looking benchmark. A GitHub repository contains code, synthetic "
+                    "fixtures, and schemas only. Configure automated secret scanning where "
+                    "available, but do not mistake scanning for permission to upload client "
+                    "material. Every analytical result should reproduce from its source manifest "
+                    "and pinned environment without relying on an analyst's memory."
+                ),
+                (
+                    "The twelve-layer matrix gives exact planning tiers and usage rates, not a "
+                    "claim that every supplier will preserve today's terms. Verify regional "
+                    "availability, checkout pricing, taxes, contract duration, and supported "
+                    "security controls before purchase. Microsoft 365 Business Basic is budgeted "
+                    "at $6 per user monthly on an annual commitment; two users therefore consume "
+                    "$12 monthly equivalent, with the payment schedule separately recorded. "
+                    "Bitwarden Teams is budgeted at $4 per user monthly when billed annually, "
+                    "adding $8 for two users. For Amazon S3 Standard in US East, budget $0.023 "
+                    "per GB-month for the first storage tier: 200 GB costs $4.60 before requests, "
+                    "retrieval traffic, replication, and tax. One customer-managed AWS KMS key "
+                    "adds $1 monthly, with eligible symmetric requests budgeted at $0.03 per "
+                    "10,000 before allowances. The resulting $25.60 monthly subtotal is only "
+                    "a software-and-storage floor, not total operating cost. The remaining "
+                    "$74.40 within the lean $100 envelope absorbs modest usage, domain costs, "
+                    "and recovery media accruals. Requote rather than silently exceeding the "
+                    "envelope. Free software still consumes patching, configuration, monitoring, "
+                    "and recovery labor; assign that work explicitly to the owner."
+                ),
+                (
+                    "Design evidence custody around distinct public, confidential, privileged, "
+                    "and sealed classifications, with counsel deciding the last two. Encryption "
+                    "does not make a storage location suitable for a court-restricted matter. "
+                    "Before uploading, document authorized users, permissible jurisdiction, "
+                    "retention instructions, subcontractor access, and the applicable order. "
+                    "Use individual identities, multifactor authentication, device encryption, "
+                    "automatic locking, and time-bounded access. Microsoft 365 Business Basic "
+                    "does not supply every advanced conditional-access or endpoint-management "
+                    "capability; upgrade deliberately when a matter requires controls outside "
+                    "the selected tier. Disable public links and keep subject identifiers out "
+                    "of task titles and email subjects. Back up approved evidence repositories "
+                    "with restic using a separately protected recovery key. Test restoration "
+                    "to an isolated device, validate source digests, and record elapsed time. "
+                    "S3 versioning is useful but does not replace a separately administered "
+                    "backup; an attacker with broad permissions can destroy multiple versions. "
+                    "Apply immutable retention only after reconciling counsel's hold instructions "
+                    "with deletion and access obligations. A confidentiality footer does not "
+                    "create privilege, and copying counsel does not automatically protect an "
+                    "ordinary business analysis. Budget for these distinctions through "
+                    "restricted workflows and documented ownership rather than an expensive "
+                    "all-purpose platform."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve-Layer Infrastructure Matrix With Explicit Budget Tiers and Lean Substitutes",
+                "headers": [
+                    "Infrastructure layer and accountable function",
+                    "Named product and exact planning tier",
+                    "Production role and evidence handling boundary",
+                    "Cheaper or simpler substitute with tradeoff",
+                    "Condition that justifies additional recurring spend",
+                ],
+                "rows": [
+                    [
+                        "Layer 01 handles repeatable extraction and transformation execution",
+                        "Python Software Foundation CPython distribution costs $0 in license fees",
+                        "Run pinned extraction scripts against authorized public source releases",
+                        "Use existing system Python only when dependencies remain reproducible",
+                        "Purchase orchestration only after scheduled jobs exceed owner capacity",
+                    ],
+                    [
+                        "Layer 02 handles local analytical joins and aggregation",
+                        "DuckDB open-source engine costs $0 in software license fees",
+                        "Query Parquet snapshots without maintaining a permanent database server",
+                        "Use Python sqlite3 for smaller relational datasets and simpler queries",
+                        "Purchase additional compute only after measured memory bottlenecks appear",
+                    ],
+                    [
+                        "Layer 03 handles shared matter metadata and status",
+                        "PostgreSQL community distribution costs $0 in software license fees",
+                        "Track source manifests and authorized matter status without attachments",
+                        "Keep metadata in SQLite while one writer remains sufficient",
+                        "Deploy shared hosting only when concurrent updates create conflicts",
+                    ],
+                    [
+                        "Layer 04 handles auditable entity normalization and cleanup",
+                        "OpenRefine desktop distribution costs $0 in software license fees",
+                        "Review organization aliases while retaining reversible transformation histories",
+                        "Use Python normalization scripts when rules are already stable",
+                        "Buy specialist matching services only after measured false matches",
+                    ],
+                    [
+                        "Layer 05 handles review spreadsheets and counsel exports",
+                        "LibreOffice community distribution costs $0 in software license fees",
+                        "Prepare reviewed schedules without embedding confidential external data connections",
+                        "Export CSV files when counsel accepts plain structured schedules",
+                        "Purchase desktop compatibility only after actual document fidelity failures",
+                    ],
+                    [
+                        "Layer 06 handles code versioning without matter evidence",
+                        "GitHub Free plan costs $0 for the selected repository tier",
+                        "Store synthetic fixtures and transformation code without client records",
+                        "Keep local Git repositories with separately encrypted repository backups",
+                        "Upgrade when required administrative controls exceed the selected tier",
+                    ],
+                    [
+                        "Layer 07 handles business identity and routine communications",
+                        "Microsoft 365 Business Basic budgets $6 per user-month annually",
+                        "Provide named business mailboxes while respecting matter-specific storage restrictions",
+                        "Use the client's approved portal for sensitive matter communications",
+                        "Upgrade when required identity controls exceed Business Basic capabilities",
+                    ],
+                    [
+                        "Layer 08 handles controlled object storage for approved records",
+                        "Amazon S3 Standard US East budgets $0.023 per GB-month",
+                        "Preserve versioned objects with restrictive policies and monitored access",
+                        "Use encrypted local storage when remote access is unnecessary",
+                        "Expand storage only against approved retention and active matters",
+                    ],
+                    [
+                        "Layer 09 handles storage encryption key administration separately",
+                        "AWS KMS budgets $1 per key-month plus eligible request charges",
+                        "Separate key permissions; budget $0.03 per 10,000 symmetric requests",
+                        "Use local encryption keys where cloud custody is unnecessary",
+                        "Add separate keys when matters require distinct administrative boundaries",
+                    ],
+                    [
+                        "Layer 10 handles encrypted backup and restoration verification",
+                        "Restic open-source distribution costs $0 in software license fees",
+                        "Create encrypted backups and verify restored source-file digest matches",
+                        "Use encrypted offline drives with scheduled manual verification procedures",
+                        "Buy remote backup capacity when recovery objectives require duplication",
+                    ],
+                    [
+                        "Layer 11 handles individual credentials and controlled secret sharing",
+                        "Bitwarden Teams budgets $4 per user-month with annual billing",
+                        "Share approved operational secrets without placing passwords in tickets",
+                        "Use KeePassXC locally for a single operator without shared vaults",
+                        "Expand seats only for named workers requiring continuing access",
+                    ],
+                    [
+                        "Layer 12 handles public domain resolution without evidence hosting",
+                        "Cloudflare Free DNS tier costs $0 excluding domain registration",
+                        "Publish ordinary business records without exposing confidential matter endpoints",
+                        "Use registrar-provided DNS when basic records meet operational needs",
+                        "Purchase extra features only against measured public-site operational requirements",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Reconcile the Scorecard Without Borrowing Against a Sealed Docket",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Maintain separate ledgers for contracted analytical services, earned service "
+                    "revenue, collected service cash, and realized statutory awards. The "
+                    "Conservative scorecard reconciles $95,000 revenue less $64,600 expense to "
+                    "$30,400 owner net profit at 32%. Base reconciles $487,500 less $268,125 "
+                    "to $219,375 at 45.0%. Scaled reconciles $880,000 less $369,600 to "
+                    "$510,400 at 58%. Preserve the stated teams of one full-time operator "
+                    "plus two contractors for Conservative and Base, and two full-time workers "
+                    "plus three contractors for Scaled. Those labels describe headcount, not "
+                    "contractor utilization or invented salary assumptions. The monthly "
+                    "infrastructure envelopes are subsets of these expense totals, not substitutes "
+                    "for delivery costs, compensation, and other scenario expenses. An "
+                    "illustrative retainer-only Base bridge is five clients paying $8,125 "
+                    "monthly for twelve months, which equals $487,500; it demonstrates "
+                    "arithmetic, not an established sales pipeline. Specify hours, deliverables, "
+                    "and overage rules before selling that capacity. Advance collections "
+                    "remain contract liabilities until performance supports recognition. Where "
+                    "the operator is an agent rather than principal, apply the ASC 606 "
+                    "principal-agent assessment to service revenue. The supplied scorecard "
+                    "contains no numerical retained_share factor, so do not invent one or "
+                    "treat client recoveries as operator billings."
+                ),
+                (
+                    "Use a zero-award operating forecast as the default treasury view. A "
+                    "separate upside schedule can track two-to-five-plus-year recoveries, but "
+                    "FCA court seals do not describe every SEC or IRS proceeding. The "
+                    "statutory recipient, eligibility rules, deductions, and actual collection "
+                    "determine what belongs in operator revenue; a filed tip or complaint "
+                    "creates neither cash nor an automatic receivable. Under 31 U.S.C. "
+                    "§ 3730(d), qualifying FCA shares generally run 15%–25% with government "
+                    "intervention and 25%–30% without, subject to statutory qualifications "
+                    "and reductions. SEC and CFTC qualifying awards generally range from "
+                    "10%–30%; qualifying IRS awards under 26 U.S.C. § 7623(b) generally "
+                    "range from 15%–30%. Do not apply a universal 15%–30% multiplier "
+                    "across all programs. A hypothetical $2 million FCA recovery at a "
+                    "20% recipient share produces $400,000 before applicable reductions, "
+                    "fees, and other adjustments, not $2 million of operator revenue. "
+                    "If the analytics firm has no lawful entitlement to that award, its "
+                    "award revenue is zero regardless of its contribution to the dossier. "
+                    "Counsel should document ownership and permissible arrangements before "
+                    "any upside appears in an internal model. Keep speculative proceeds "
+                    "outside borrowing capacity, contractor commitments, and minimum cash "
+                    "coverage calculations."
+                ),
+                (
+                    "Model legal attrition before ranking anomaly leads. In an explicitly "
+                    "illustrative cohort of 100 leads, reject 40 after counsel's public-disclosure "
+                    "assessment and another 30 after representative-claim evidence review, "
+                    "leaving 30 for further development. Section 3730(e)(4) requires analysis "
+                    "of the disclosure source, substantially similar allegations, and any "
+                    "applicable original-source exception; a public dataset alone does not "
+                    "resolve that inquiry. Rule 9(b) requires particularity, with controlling "
+                    "circuit standards determining whether identified claims or reliable "
+                    "indicia suffice. Stress the remaining cohort with a hypothetical 70% "
+                    "DOJ non-intervention rate: 21 non-intervened and nine intervened matters. "
+                    "Apply a separate hypothetical 20% government-dismissal stress to that "
+                    "30-matter cohort, producing six expected dismissals, not six observed "
+                    "cases. These assumptions are sensitivity inputs, not reported DOJ or "
+                    "Granston-era rates; dismissal powers predate that memorandum, and "
+                    "non-intervention itself is not dismissal. Track observed rates by "
+                    "closed decision cohort, decision date, intervention status, and motion "
+                    "denominator rather than copying a headline percentage. Government "
+                    "dismissal under § 3730(c)(2)(A) involves procedural protections and "
+                    "the intervention framework addressed in Polansky. Finally run complete "
+                    "zero recovery across every surviving matter. If that branch cannot "
+                    "pay committed expenses from service collections and reserves, reduce "
+                    "spending before accepting another investigation."
+                ),
+            ],
+            "table": {
+                "caption": "Canonical Earnings Reconciliation and Separate Evidence-Risk Controls",
+                "headers": [
+                    "Scenario or operating ledger under review",
+                    "Exact arithmetic or explicit modeling input",
+                    "Recognition and cash treatment required operationally",
+                    "Failure response before committing additional capital",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual case uses one full-time operator and two contractors",
+                        "$95,000 revenue minus $64,600 expenses equals $30,400 profit",
+                        "Preserve 32% margin without counting underlying government recoveries",
+                        "Reduce discretionary delivery spending when collected retainers miss forecast",
+                    ],
+                    [
+                        "Base annual case uses one full-time operator and two contractors",
+                        "$487,500 revenue minus $268,125 expenses equals $219,375 profit",
+                        "Preserve 45.0% margin with earned revenue separated from deposits",
+                        "Reject additional fixed capacity until service collections support commitments",
+                    ],
+                    [
+                        "Scaled annual case uses two full-time workers and three contractors",
+                        "$880,000 revenue minus $369,600 expenses equals $510,400 profit",
+                        "Preserve 58% margin while recording all incremental delivery costs",
+                        "Reprice scope or defer hiring when actual utilization disappoints",
+                    ],
+                    [
+                        "Illustrative Base service bridge excludes every possible statutory award",
+                        "Five clients times $8,125 monthly times twelve equals $487,500",
+                        "Recognize completed service obligations and separately forecast collection timing",
+                        "Replace lost clients or cut spend without assuming litigation proceeds",
+                    ],
+                    [
+                        "Illustrative legal attrition screen begins with one hundred leads",
+                        "Forty disclosure exclusions plus thirty evidence exclusions leave thirty",
+                        "Record counsel reasoning and avoid treating exclusions as empirical rates",
+                        "Stop dossier expansion when admissible claim support remains insufficient",
+                    ],
+                    [
+                        "Illustrative DOJ decision stress separates non-intervention from dismissal",
+                        "Seventy percent non-intervention and twenty percent dismissal are assumptions",
+                        "Track real decision cohorts separately from hypothetical sensitivity inputs",
+                        "Run all remaining awards at zero before approving operating commitments",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Test the Customs Edge and Complete the Pre-Flight Evidence Chain",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "For customs_first_sale_rule_valuation_arbitrage, distinguish lawful valuation "
+                    "design from evidence of an actionable false declaration. Under 19 CFR "
+                    "§ 152.103 and the Nissho Iwai framework, an eligible first sale requires "
+                    "substantiation of a bona fide sale, export destination, and the applicable "
+                    "transaction-value conditions; an inexpensive factory invoice is insufficient. "
+                    "At 100,000 units, an $18 middleman invoice yields $1.8 million of "
+                    "declared value, while a qualifying $8 factory transaction yields $800,000 "
+                    "before required additions. At a uniform illustrative 25% ad valorem "
+                    "duty, the amounts are $450,000 and $200,000, a $250,000 difference "
+                    "or 55.56%. That simple endpoint is slightly above the mapped "
+                    "35%–55% annual savings range; adjustments and partial eligibility must "
+                    "be modeled rather than rounding away the difference. If only 80% of "
+                    "those units qualify, mixed duty becomes $250,000 and savings become "
+                    "$200,000, or 44.44%. Do not project those percentages indiscriminately "
+                    "across $10 million–$250 million import portfolios. Tariff classification, "
+                    "origin, additional duties, assists, royalties, freight treatment, and "
+                    "related-party conditions change the result. Importer duty savings are "
+                    "client economics, not analytics revenue. A separately scoped $6,000 "
+                    "invoice-reconciliation engagement produces $6,000 of service consideration "
+                    "as the contracted work is performed, regardless of the importer saving "
+                    "$200,000."
+                ),
+                (
+                    "Build the customs proof packet from purchase orders, payment records, "
+                    "factory invoices, middleman invoices, shipping documents, entry summaries, "
+                    "and the applicable valuation adjustments. Public manifests can support "
+                    "shipment linkage but rarely establish the full price, payment, or "
+                    "arm's-length evidence required for first-sale treatment. Preserve the "
+                    "difference between a missing public record and a contradictory primary "
+                    "record. The mapped fallback is an encrypted, confidential customs-broker "
+                    "escrow vault that protects the middleman's margin from routine buyer "
+                    "access while allowing CBP auditors full authorized access. Document "
+                    "retention, release authority, audit response timing, and chain of "
+                    "custody; the importer remains responsible for required substantiation "
+                    "and reasonable care. Obtain a formal customs-counsel opinion addressing "
+                    "the actual transaction chain, not a template referring only to the "
+                    "rule's name. If adequate evidence cannot be produced, abandon first-sale "
+                    "treatment and use the otherwise supportable valuation method. For "
+                    "whistleblower analytics, counsel must separately evaluate whether "
+                    "conduct supports an FCA theory involving a government payment or "
+                    "obligation; a lawful duty reduction is not fraud. Never promise "
+                    "confidentiality arrangements that obstruct an audit or conceal records "
+                    "the importer must obtain. Quote document extraction separately from "
+                    "legal analysis, and prohibit the analyst from signing a customs "
+                    "opinion or directing unsupported entry changes."
+                ),
+                (
+                    "Before launch, run one complete matter simulation using synthetic records "
+                    "and one authorized public-source sample. Demonstrate retrieval, digest "
+                    "verification, transformation, entity matching, exception annotation, "
+                    "counsel export, access revocation, and restoration. Require a second "
+                    "person to reproduce a claimed anomaly without verbal instructions. "
+                    "The evidence packet should identify the alleged conduct, relevant "
+                    "period, responsible entities, source limitations, and the specific "
+                    "missing facts needed for legal assessment. For FCA matters, licensed "
+                    "relator counsel files the complaint under the seal procedures of "
+                    "31 U.S.C. § 3730(b)(2), including the initial statutory period "
+                    "and any extensions ordered by the court. Calendar court-specific "
+                    "instructions and prohibit public case references, sales anecdotes, "
+                    "or publication of sealed allegations. Seal violations can bring "
+                    "serious consequences, including dismissal in appropriate circumstances; "
+                    "do not represent loss of a share as automatic in every case. "
+                    "Route SEC Form TCR and IRS Form 211 submissions through counsel "
+                    "under this operating design, while respecting their distinct procedures. "
+                    "Finally, collect a signed services agreement, confirm insurer scope, "
+                    "verify the receiving account independently, and show a thirteen-week "
+                    "forecast with every statutory award set to zero. Launch a bounded "
+                    "paid pilot only when these artifacts are complete and named owners "
+                    "have accepted ongoing monitoring responsibilities."
+                ),
+            ],
+            "table": {
+                "caption": "Pre-Launch Verification Matrix for Counsel-Facing Analytics and Customs Evidence",
+                "headers": [
+                    "Verification workstream and responsible operating owner",
+                    "Specific evidence required before paid production",
+                    "Measurable acceptance condition for the first engagement",
+                    "Fallback when the condition cannot be satisfied",
+                ],
+                "rows": [
+                    [
+                        "Owner and bookkeeper verify unrestricted cash and payment commitments",
+                        "Thirteen-week forecast includes signed commitments and zero statutory awards",
+                        "Reserve remains at least half of initial startup allocation",
+                        "Delay discretionary purchases and secure paid work before expansion",
+                    ],
+                    [
+                        "Lead analyst verifies source rights and transformation reproducibility",
+                        "Source manifest contains retrieval details and verified SHA-256 digests",
+                        "Second reviewer reproduces the selected anomaly without verbal assistance",
+                        "Quarantine unsupported outputs and rebuild from authorized source snapshots",
+                    ],
+                    [
+                        "Relator counsel assesses disclosure exposure and pleading evidence quality",
+                        "Written assessment addresses section 3730(e)(4) and applicable Rule 9(b)",
+                        "Representative evidence supports the jurisdiction-specific theory counsel intends pursuing",
+                        "Limit work to scoped corroboration rather than drafting unsupported allegations",
+                    ],
+                    [
+                        "Security owner verifies matter access and tested recovery capability",
+                        "Named access roster accompanies a successful isolated restoration record",
+                        "Revoked test identity loses access and restored digests match",
+                        "Keep sensitive records offline until access and recovery defects close",
+                    ],
+                    [
+                        "Customs counsel and broker verify first-sale transaction substantiation",
+                        "Escrow packet includes invoices and transaction-specific customs opinion letter",
+                        "CBP can obtain required records through documented authorized procedures",
+                        "Use otherwise supportable valuation when qualifying evidence remains unavailable",
+                    ],
+                    [
+                        "Engagement owner verifies contract scope and court-specific handling instructions",
+                        "Executed service agreement accompanies counsel-approved filing and disclosure procedures",
+                        "Staff can identify authorized recipients and applicable disclosure restrictions",
+                        "Pause sensitive delivery and obtain written counsel instructions first",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Pre-Flight Checks That Must Produce Artifacts",
+                "body": (
+                    "Each check requires a named owner and a retained result. A verbal assurance "
+                    "does not establish cash coverage, evidentiary sufficiency, or access control."
+                ),
+                "items": [
+                    "Cash check: preserve at least 50% of startup capital as reserve and reconcile the thirteen-week zero-award forecast to bank balances.",
+                    "Evidence check: obtain counsel's disclosure and particularity assessment, plus a reproducible source-to-output manifest.",
+                    "Custody check: verify individual access, revoke a test identity, restore an approved backup, and compare the restored file digests.",
+                    "Delivery check: execute the paid scope, verify insurance coverage, and record counsel-specific instructions for filings and restricted materials.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Ring-fence the reserve and document the spending envelope",
+                    "action": "Move at least half of initial startup cash into a separately tracked business reserve.",
+                    "detail": "Record deployment allocations, actual payment dates, owner withdrawals, and thirteen weeks of commitments with statutory proceeds set to zero.",
+                },
+                {
+                    "step": 2,
+                    "title": "Build the reproducible public-source pipeline",
+                    "action": "Ingest an authorized sample with Python and DuckDB while preserving immutable source files.",
+                    "detail": "Capture retrieval rights, release versions, SHA-256 digests, transformation commits, suppression rules, and entity-matching exceptions.",
+                },
+                {
+                    "step": 3,
+                    "title": "Validate legal relevance and evidence custody",
+                    "action": "Submit the bounded dossier to retained counsel and complete an access-and-restore exercise.",
+                    "detail": "Record disclosure analysis, pleading requirements, authorized recipients, retention instructions, backup results, and transaction-specific customs limitations where relevant.",
+                },
+                {
+                    "step": 4,
+                    "title": "Launch a scoped paid pilot with cash-based expansion rules",
+                    "action": "Execute the service agreement, collect the agreed deposit, and deliver against written acceptance criteria.",
+                    "detail": "Recognize services as earned, monitor collection dates, and expand capacity only when recurring service cash supports the additional commitments.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "Fund the evidence engine with collected service fees, and let statutory upside arrive without holding payroll hostage.",
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        "Allocate the chosen $10,000–$45,000 startup budget with at least 50% preserved as working-capital reserve.",
+        "Price the twelve infrastructure layers at checkout and document annual commitments, usage charges, and controls absent from selected tiers.",
+        "Open entity-owned operating and reserve accounts, verify payment-change procedures, and bind appropriately scoped professional liability and cyber coverage.",
+        "Reconcile all three canonical earnings cases while keeping service recognition, cash collections, client recoveries, and eligible realized awards separate.",
+        "Have counsel assess public-disclosure exposure, Rule 9(b) evidence, filing procedures, and customs transaction substantiation before expanding a dossier.",
+        "Complete a reproducibility, access-revocation, and backup-restoration test, then launch only a bounded paid pilot supported by a zero-award cash forecast.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "31 U.S.C. § 3730(b)(2), (c)(2)(A), (d), and (e)(4)",
+            "url": "https://www.law.cornell.edu/uscode/text/31/3730",
+            "relevance": "Controls FCA filing under seal, government dismissal procedures, relator award ranges, and the public-disclosure analysis required before funding case development.",
+        },
+        {
+            "title": "Federal Rule of Civil Procedure 9(b)",
+            "url": "https://www.law.cornell.edu/rules/frcp/rule_9",
+            "relevance": "Requires particularity for allegations of fraud or mistake; counsel must apply controlling circuit standards to representative claims and supporting evidence.",
+        },
+        {
+            "title": "19 CFR § 152.103 — Transaction Value",
+            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-152/subpart-E/section-152.103",
+            "relevance": "Defines transaction-value requirements and adjustments relevant to evaluating substantiated first-sale customs valuation.",
+        },
+        {
+            "title": "19 U.S.C. § 1484 — Entry of Merchandise",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1484",
+            "relevance": "Establishes importer entry responsibilities and reasonable-care obligations that remain relevant when documents are held in broker escrow.",
+        },
+        {
+            "title": "19 U.S.C. § 1508 — Recordkeeping",
+            "url": "https://www.law.cornell.edu/uscode/text/19/1508",
+            "relevance": "Supports documented customs record retention and production procedures rather than treating a confidential vault as an exemption from recordkeeping.",
+        },
+        {
+            "title": "15 U.S.C. § 78u-6 — Securities Whistleblower Incentives and Protection",
+            "url": "https://www.law.cornell.edu/uscode/text/15/78u-6",
+            "relevance": "Sets SEC award eligibility and the qualifying 10%–30% award range; analyst service fees remain separate from statutory recipient rights.",
+        },
+        {
+            "title": "17 CFR § 240.21F-9 — Procedures for Submitting Original Information",
+            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-240/section-240.21F-9",
+            "relevance": "Provides SEC submission procedures relevant to counsel-routed Form TCR workflows and anonymous submissions.",
+        },
+        {
+            "title": "26 U.S.C. § 7623 — Expenses of Detection and Whistleblower Awards",
+            "url": "https://www.law.cornell.edu/uscode/text/26/7623",
+            "relevance": "Distinguishes qualifying IRS award treatment, thresholds, and percentage rules from ordinary analytics-service revenue.",
+        },
+        {
+            "title": "7 U.S.C. § 26 — Commodity Whistleblower Incentives and Protection",
+            "url": "https://www.law.cornell.edu/uscode/text/7/26",
+            "relevance": "Establishes CFTC award conditions and the qualifying 10%–30% range rather than a universal award percentage across programs.",
+        },
+    ],
+}

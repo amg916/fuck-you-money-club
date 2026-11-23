@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_a",
+  "volume_id": "vol-047-ai-data-center-powered-land-and-bess-optioning",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1895616,
+      "sha256": "6a1827e6f0454c591ad66bc67ab0dec9c29f2edb9f36fbafe804efaecb4fde03"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2430865,
+      "sha256": "3b7898be9b76e2fc36dc6e547f06e3d023987684d1aabc797928f7edcc0f4a34"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 570506,
+      "sha256": "21985bf26c341a48895d3d242f5bbd49c14d55b5fd3ed94f3a5c29fa2e441a7c"
+    },
+    "book.epub": {
+      "bytes": 267262,
+      "sha256": "04d2f668eb803066cb16c9c1dd9961ecb8a4cedad852bc0d7628a2448a65b48e"
+    },
+    "art/cover.svg": {
+      "bytes": 4473,
+      "sha256": "da093ca86132e7be4c9f14d33721a959fd4b66332b7f748d6c630dd6844a618d"
+    },
+    "art/scorecard.svg": {
+      "bytes": 59745,
+      "sha256": "73a4d7493ac7edbc6061062c1df8233bb1d6545019b6664a1104ef555e8a7e28"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12760,
+      "sha256": "f2dd6d8992c206138d8dd8b846c5c8bc0275bc846ccade457e721b6030b79710"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8825,
+      "sha256": "d1d07a2d2ff129f5d8c3aead363fcb9c8b163ff84ea77a125beae7a011079eba"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12927,
+      "sha256": "96aa8f813605ed177d9f0f6571132f161bda8d941ff350617f29001f4d775641"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10186,
+      "sha256": "afd83a4e838ca585d0ee965af4af7df8bf63de7e6e8f8698ae4282635c1b7c6a"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11225,
+      "sha256": "d4fe1b8cec6123d4f5a58d8502a3998269355d65a0c3053b96a3755b14acb1d8"
+    },
+    "art/diag_06.svg": {
+      "bytes": 13905,
+      "sha256": "98d1bc9c5c675eab94730f3c36c3f1d2caef17b11aee481dc5e9c0ebcc2cfe4c"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9732,
+      "sha256": "b937a34b50690c9bea70976114f57fee40ce1098534006c6bd17c2f67e4add99"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8722,
+      "sha256": "997eafe7c7805d17cd3a70760ddc8dd0d6941e888018806a2a82acc1fde79bc5"
+    }
+  }
+}

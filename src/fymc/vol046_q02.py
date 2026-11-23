@@ -1,0 +1,719 @@
+from __future__ import annotations
+
+CHAPTER_2 = {
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "who-pays-mass-tort-intake-record-triage-mso-payment-rails",
+    "question_prompt": "Who writes the check in mass-tort case acquisition, hitech record triage & law-firm msos, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
+    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
+    "subtitle": "Law-Firm Operating Budgets, HIPAA Access Requests, Rule 5.4 Boundaries, and Collectible Fixed-Fee MSO Contracts",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #46 ranks #13 of 49 with a 93/100 Money-to-Manpower Score "
+        "and 13 mapped plays. Its dependable customer is the law firm buying "
+        "documented administrative capacity, not the claimant awaiting a settlement. "
+        "Managing partners authorize budgets; finance teams release operating cash; "
+        "docket leaders validate deliverables. Separate those roles before purchasing "
+        "media or requesting records. Conservative, Base, and Scaled annual owner "
+        "profits are $41,600, $267,900, and $625,000 on contracted MSO revenue of "
+        "$160,000, $705,000, and $1,250,000. This chapter connects intake conversion, "
+        "medical-proof rejection, fixed-fee acceptance, and eight payment rails. It "
+        "also distinguishes licensed litigation-finance structures from ordinary "
+        "nonlawyer vendors, corrects the universal $6.50 retrieval assumption, and "
+        "makes customer credit quality part of every acquisition decision."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$160,000",
+            "context": "Annual contracted administrative, marketing, intake, and record-triage revenue",
+            "note": "26% net margin; $41,600 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$705,000",
+            "context": "Annual contracted MSO revenue, excluding settlement awards and trust funds",
+            "note": "38.0% net margin; $267,900 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,250,000",
+            "context": "Annual contracted MSO revenue, excluding client-direct advertising purchases",
+            "note": "50% net margin; $625,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Sell Budget Certainty to the Person Who Can Release Operating Cash",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The economic buyer is usually a managing partner, practice-group leader, "
+                    "or chief operating officer who has committed payroll and advertising "
+                    "cash before knowing which inquiries become supportable claims. The "
+                    "acute pain is stranded acquisition expense: duplicate retainers, missing "
+                    "exposure evidence, unreachable patients, and staff repeatedly opening "
+                    "the same incomplete file. Sell a measurable administrative service "
+                    "that removes those costs, rather than a promise of settlement value. "
+                    "The budget owner wants predictable monthly capacity; the intake "
+                    "director wants fewer rework loops; the controller wants an invoice "
+                    "that matches a purchase order. Ask each person what evidence permits "
+                    "payment, who can reject work, and whose signature changes scope. "
+                    "A partner's enthusiasm is insufficient when accounts payable requires "
+                    "vendor onboarding, tax documentation, and a separate banking review. "
+                    "Document the contracting entity, authorized signer, billing address, "
+                    "purchase-order reference, and operating-account payer before launch. "
+                    "For an illustrative $30,000 pilot, require a $15,000 advance credited "
+                    "against services and a $15,000 invoice after the agreed processing "
+                    "period. Record the advance as a contract liability until earned. "
+                    "The advance purchases capacity; it does not buy ownership of a "
+                    "claimant, a legal retainer, or settlement proceeds."
+                ),
+                (
+                    "Budget authority and custody authority are different permissions. "
+                    "A firm's finance lead may approve vendor expenses without authority "
+                    "to release client trust money, while a settlement administrator may "
+                    "control distributions without purchasing your services. Make the "
+                    "ordinary payment source the firm's operating account. If a litigation "
+                    "funder supplies working capital, the borrower remains the invoice "
+                    "obligor unless a separate enforceable payment undertaking says "
+                    "otherwise. A funder's presentation, term sheet, or conditional "
+                    "commitment is not cash available for payroll. Inspect executed "
+                    "facility conditions, borrowing availability, concentration limits, "
+                    "and permitted uses with the firm's authorized finance team. Never "
+                    "seek claimant-level privileged material merely to perform credit "
+                    "screening; aggregate balances and redacted financial evidence "
+                    "normally answer the commercial question. ABA Model Rule 5.4 is "
+                    "a model rule, so identify the jurisdiction's adopted version and "
+                    "applicable exceptions instead of treating its text as a nationwide "
+                    "statute. Fair-market fixed or cost-plus pricing helps separate "
+                    "administrative compensation from legal fees, but pricing alone "
+                    "does not cure paid recommendations, prohibited solicitation, or "
+                    "interference with professional judgment. The supervising lawyer "
+                    "must retain decisions about representation, legal eligibility, "
+                    "case strategy, and client communications requiring legal judgment. "
+                    "Your contract should identify those reserved decisions explicitly."
+                ),
+                (
+                    "Reconcile the commercial story to Formula v2.0 before discussing "
+                    "scale. Conservative annual revenue of $160,000 supports $118,400 "
+                    "of total modeled costs and $41,600 owner profit at 26%. Base "
+                    "revenue of $705,000 supports $437,100 of costs and $267,900 "
+                    "profit at 38.0%. Scaled revenue of $1,250,000 supports $625,000 "
+                    "of costs and $625,000 profit at 50%. Staffing remains 1 FT "
+                    "plus 3 contractors in the first two cases and 2 FT plus "
+                    "4 contractors at scale. One illustrative Base billing mix is "
+                    "five firms purchasing $8,000 monthly capacity, producing $480,000 "
+                    "annually, plus fifteen separately scoped $15,000 projects producing "
+                    "$225,000. That mix explains revenue, not an automatic cost outcome; "
+                    "labor, software, insurance, retrieval, and collection expense must "
+                    "still fit the $437,100 envelope. Do not add merchant advertising "
+                    "volume, a funder's loan principal, gross settlements, or lawyer "
+                    "contingency fees to these numbers. Apply ASC 606 principal-agent "
+                    "analysis separately to pass-through purchases; no retained-share "
+                    "multiplier is supplied for this scorecard. Startup capital of "
+                    "$12,000–$50,000 and monthly operating expense of $2,500–$14,000 "
+                    "describe launch planning, not a substitute for complete annual "
+                    "scenario costs. Cash advances improve liquidity without increasing "
+                    "recognized revenue before performance."
+                ),
+            ],
+            "table": {
+                "caption": "Buyer Psychology, Budget Ownership, and Evidence Required Before Purchasing Capacity",
+                "headers": [
+                    "Decision seat and commercial concern",
+                    "Authority that must be established",
+                    "Evidence that supports a purchase",
+                    "Payment boundary and practical fallback",
+                ],
+                "rows": [
+                    [
+                        "Managing partner protecting runway against speculative docket expansion",
+                        "Signed authority to bind the actual contracting firm",
+                        "Monthly capacity plan tied to documented administrative bottlenecks",
+                        "Require operating cash rather than projected settlement recoveries",
+                    ],
+                    [
+                        "Intake director reducing duplicate submissions and repeated callbacks",
+                        "Delegated authority to accept specified administrative service deliverables",
+                        "Versioned intake checklist with rejection reasons and timestamps",
+                        "Escalate disputed acceptance to the named supervising lawyer",
+                    ],
+                    [
+                        "Controller matching invoices against approved budgets and purchase orders",
+                        "Verified banking release authority and vendor onboarding completion",
+                        "Purchase order, service period, tax form, and invoice identifier",
+                        "Complete onboarding before incurring nonrecoverable subcontractor expense commitments",
+                    ],
+                    [
+                        "Docket counsel protecting evidence quality and professional judgment",
+                        "Exclusive authority over representation decisions and legal eligibility",
+                        "Source-linked chronology with unresolved contradictions clearly identified",
+                        "Return legal questions without silently changing acceptance criteria",
+                    ],
+                    [
+                        "Litigation funder monitoring facility covenants and concentration exposure",
+                        "Executed funding obligations rather than conditional marketing representations",
+                        "Redacted availability certificate and permitted operating expenditure schedule",
+                        "Keep the firm liable unless payment obligations transfer expressly",
+                    ],
+                    [
+                        "Settlement administrator distributing funds under governing settlement instructions",
+                        "Custody authority limited by orders and distribution documentation",
+                        "Actual distribution authority naming permitted recipients and conditions",
+                        "Do not redirect claimant proceeds into ordinary vendor collections",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make the Controller Comfortable Before the Partner Becomes Enthusiastic",
+                "body": (
+                    "Veteran operators sell a short, auditable path from approved capacity "
+                    "to payable invoice, while leaving representation and legal fees with "
+                    "the authorized legal practice."
+                ),
+                "items": [
+                    "Send a specimen invoice, purchase-order template, and acceptance report during procurement; discover billing defects before the first service period.",
+                    "Ask accounts payable to identify its payment cutoff and bank-release days; schedule acceptance early enough to avoid an accidental extra billing cycle.",
+                    "Price records-location research separately from successful retrieval so provider silence does not turn unlimited follow-up into unpaid work.",
+                    "Require a dated rejection code and source reference for replacement requests; freeze the applicable intake checklist for each purchased service period.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Price the Entire Inquiry-to-Cash Waterfall, Including Failed Medical Proof",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Track the full conversion waterfall as separate events: raw inquiry, "
+                    "signed law-firm retainer, usable HITECH EMR or pharmacy proof, "
+                    "deficiency-free accepted case, and collected MSO or vendor fee. "
+                    "An illustrative cohort begins with 1,000 raw inquiries and removes "
+                    "120 duplicate or suspect submissions, leaving 880 for processing. "
+                    "Of those, 220 sign retainers, a 25% conversion among screened "
+                    "inquiries. Medical proof supports 154, reflecting 30% nonqualifying "
+                    "or unusable records among signed matters. Sixteen additional files "
+                    "retain unresolved deficiencies, leaving 138 accepted cases. If "
+                    "collections reporting links 124 accepted files to paid service "
+                    "periods, fourteen remain associated with unpaid periods; this is "
+                    "an attribution metric, not a per-case fee entitlement. Separately, "
+                    "a $30,000 fixed pilot invoice with $27,000 collected and $3,000 "
+                    "contractually held has a 90% cash realization rate. Never multiply "
+                    "accepted cases by an invented contingency share. Client-direct "
+                    "media of $12,000 represents $12 per raw inquiry, $54.55 per "
+                    "signed retainer, and $86.96 per accepted case before other costs. "
+                    "These are illustrative administrative funnel economics, not the "
+                    "mandated annual scorecard and not the much higher all-in "
+                    "acquisition costs assumed by the litigation-finance play. Keep "
+                    "the denominators visible in every buyer report."
+                ),
+                (
+                    "Do not advertise $6.50 as the universal price of a lawyer-directed "
+                    "medical-record request. Under 45 CFR 164.524, covered entities "
+                    "may use an optional flat fee of no more than $6.50 for "
+                    "certain electronic copies supplied through the individual's "
+                    "access right; it is one permitted fee method, not a universal "
+                    "cap on every request. The Ciox decision and subsequent HHS "
+                    "guidance distinguish third-party directives from requests delivering "
+                    "records to the individual. A HIPAA authorization under 45 CFR "
+                    "164.508 is also not interchangeable with an access request. "
+                    "Record the actual request pathway, recipient, requested format, "
+                    "provider, and quoted fee before committing retrieval expense. "
+                    "For illustration, 220 qualifying requests at an elected $6.50 "
+                    "flat fee cost $1,430; a $25 average instead costs $5,500, "
+                    "a $4,070 increase. Additional providers and pharmacy custodians "
+                    "create additional requests, so count requests rather than claimants. "
+                    "Section 164.524 generally allows thirty days, with one additional "
+                    "thirty-day extension supported by timely written explanation. "
+                    "Shorter applicable state requirements require separate tracking. "
+                    "Do not promise seven-day evidence delivery when provider response "
+                    "timing remains outside your control. Escalate overdue requests, "
+                    "preserve delivery receipts, and let the contract distinguish "
+                    "completed administrative work from unresolved provider production."
+                ),
+                (
+                    "Treat fraud screening and clinical triage as evidence assembly, "
+                    "not automated representation decisions. TrustedForm can preserve "
+                    "lead-source and interaction evidence; it cannot establish medical "
+                    "eligibility or prove every element of valid calling consent. "
+                    "LexisNexis identity tools may support permitted identity checks, "
+                    "but no vendor search establishes a universal duplicate-retainer "
+                    "registry. Combine permitted identifiers, claimant attestations, "
+                    "firm-conflict procedures, and documented human review. Minimize "
+                    "SSN collection and restrict access to any necessary identifiers. "
+                    "An LLM chronology parser should extract dates, ICD-10 references, "
+                    "medications, and exposure statements with page citations, then "
+                    "route contradictions to trained reviewers. A diagnosis code does "
+                    "not establish product exposure or legal causation. Where the "
+                    "relationship creates business-associate obligations, execute the "
+                    "required agreement and apply minimum-necessary access, encryption, "
+                    "and retention controls. Define a thirty-day illustrative replacement "
+                    "window for objectively defective administrative deliverables, "
+                    "excluding later changes in litigation strategy or general-causation "
+                    "rulings under Federal Rule of Evidence 702. Reserve service credits "
+                    "against genuine vendor defects, not every unsuccessful claim. "
+                    "For calling campaigns, preserve seller-specific permission as "
+                    "an operating standard while applying current TCPA requirements; "
+                    "the FCC's attempted federal one-to-one consent rule was vacated "
+                    "in 2025. Review state calling restrictions separately rather than "
+                    "presenting that vacated rule as binding nationwide."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Conversion Ledger: Separate Claim Quality, Service Acceptance, and Cash Collection",
+                "headers": [
+                    "Recorded stage and measured population",
+                    "Evidence supporting the stage transition",
+                    "Illustrative unit economics or operating exposure",
+                    "Failure response and allocation of responsibility",
+                ],
+                "rows": [
+                    [
+                        "Raw inquiry intake begins with one thousand submitted contacts",
+                        "Preserved source URL, timestamp, permitted contact evidence, and identifier",
+                        "Twelve thousand dollars media equals twelve dollars per inquiry",
+                        "Reject unverifiable sources before expanding any advertising purchase commitment",
+                    ],
+                    [
+                        "Duplicate screening removes one hundred twenty suspect inquiry submissions",
+                        "Matched permitted identifiers and documented human resolution of conflicts",
+                        "Eight hundred eighty screened inquiries remain available for processing",
+                        "Quarantine disputed identities without accusing claimants through automated messages",
+                    ],
+                    [
+                        "Signed representation reaches two hundred twenty law-firm retainer agreements",
+                        "Firm-controlled execution records and lawyer-directed representation acceptance documentation",
+                        "Twenty-five percent of screened inquiries execute representation agreements",
+                        "Leave representation decisions and conflict analysis with supervising lawyers",
+                    ],
+                    [
+                        "Usable medical proof supports one hundred fifty-four retained matters",
+                        "Provider records and pharmacy evidence linked to source pages",
+                        "Sixty-six retained matters fail proof requirements in this illustration",
+                        "Track missing records separately from genuinely nonqualifying medical evidence",
+                    ],
+                    [
+                        "Deficiency-free acceptance includes one hundred thirty-eight documented case files",
+                        "Versioned checklist demonstrates every required administrative field is complete",
+                        "Sixteen additional files require specific unresolved deficiency corrections",
+                        "Apply bounded correction windows rather than unlimited free replacements",
+                    ],
+                    [
+                        "Collected fees remain separate from accepted claimant population counts",
+                        "Bank reconciliation matches invoices, service periods, and released holds",
+                        "Twenty-seven thousand collected against thirty thousand fixed service dollars",
+                        "Report three thousand held without claiming settlement-based payment rights",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Checks Before Spending Against a New Firm's Docket",
+                "body": (
+                    "These checks determine whether the proposed service can be performed, "
+                    "billed, and collected within the agreed scope."
+                ),
+                "items": [
+                    "Verify the firm's legal entity, current professional status, authorized signer, operating-account payer, and documented ability to fund the first service period.",
+                    "Have the supervising lawyer confirm the jurisdiction-specific fee, advertising, referral, and solicitation boundaries; verify any Arizona ABS license independently.",
+                    "Test one real authorized retrieval pathway, its recipient, provider quote, access controls, and applicable business-associate arrangements before estimating cohort costs.",
+                    "Obtain a signed scope with fixed or cost-plus rates, objective acceptance evidence, a bounded correction window, and a funded advance or approved credit limit.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Choose a Payment Rail That Matches the Obligor and the Funds",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "A payment rail moves money; it does not establish entitlement "
+                    "to money. Select the rail only after identifying the obligor, "
+                    "earned amount, source account, release conditions, and reconciliation "
+                    "owner. Wire transfers suit larger advances when bank instructions "
+                    "have been verified through an independently sourced callback. "
+                    "Domestic commercial wires can provide rapid availability, but "
+                    "fraud recovery is difficult and finality depends on the applicable "
+                    "system and law. ACH credits suit repeat operating invoices; "
+                    "ACH debits require appropriate authorization and monitoring for "
+                    "returns. Do not treat an initiated ACH entry as irrevocably "
+                    "collected cash. Record invoice identifiers in remittance fields, "
+                    "reconcile deposits daily, and investigate payer-name mismatches "
+                    "before crediting balances. An illustrative $20,000 invoice carrying "
+                    "a $25 wire charge yields $19,975 cash if the vendor absorbs "
+                    "that charge; contractually allocate charges instead of discovering "
+                    "the shortfall after payroll. Dual verification of changed bank "
+                    "details is more valuable than an elaborate dashboard that "
+                    "accepts emailed substitutions. Separate the person editing vendor "
+                    "bank instructions from the person authorizing releases. Require "
+                    "a new callback for every changed destination, even when the "
+                    "email appears inside an authentic prior thread. Preserve bank "
+                    "confirmation and remittance evidence with the invoice."
+                ),
+                (
+                    "Escrow, advances, statutory disbursement, and milestone holds are "
+                    "commercial or custody arrangements rather than interchangeable "
+                    "bank networks. A neutral commercial escrow may release an "
+                    "MSO project payment upon specified administrative evidence, but "
+                    "its terms must identify whose money is held, permitted "
+                    "investments, dispute procedures, and fees. Do not relabel lawyer "
+                    "trust funds as commercial escrow to bypass professional rules. "
+                    "A vendor capacity retainer is an advance against administrative "
+                    "services, distinct from a client's legal retainer; its refund "
+                    "and earning terms belong in the service agreement. Statutory "
+                    "or court-supervised disbursements follow their own priorities, "
+                    "including applicable Medicare recovery obligations under 42 U.S.C. "
+                    "1395y(b)(2). They are not an ordinary mechanism for paying "
+                    "unrelated MSO invoices. Platform checkout can simplify small "
+                    "purchases, yet processor underwriting, reserves, chargebacks, and "
+                    "restricted-business terms can interrupt availability. Use a "
+                    "truthful business description and obtain processor acceptance "
+                    "for the actual services sold. A 10% hold on a $30,000 "
+                    "project ties up $3,000; specify release after ten business "
+                    "days following documented acceptance, rather than after an "
+                    "indefinite future settlement. Every hold needs a finite trigger "
+                    "and an identified person authorized to confirm it. Otherwise "
+                    "the apparent receivable is an unsecured option granted to "
+                    "the customer."
+                ),
+                (
+                    "Protect fees with documentation that survives staff turnover and "
+                    "disagreement. The master services agreement should define "
+                    "administrative deliverables, fair-market pricing support, authorized "
+                    "change orders, acceptance timing, correction obligations, invoice "
+                    "disputes, suspension rights, and governing law. A narrow "
+                    "noncircumvention clause can protect confidential vendor introductions "
+                    "and administrative work product where enforceable; it cannot "
+                    "give a nonlawyer ownership of clients or restrict client choice. "
+                    "Invoice accepted work even when a firm later changes its "
+                    "litigation thesis. Permit prompt payment of undisputed amounts "
+                    "while identified defects are resolved. Factoring may convert an "
+                    "earned MSO receivable into earlier cash, but distinguish that "
+                    "receivable from legal fees, claimant recoveries, and contingent "
+                    "settlement rights. For a $100,000 eligible invoice, an illustrative "
+                    "85% advance provides $85,000 initially. If the debtor pays in "
+                    "full and total agreed fees equal $3,000, a $12,000 reserve "
+                    "release produces $97,000 total proceeds before other charges. "
+                    "Check recourse, dilution, notification, assignment restrictions, "
+                    "and applicable enacted UCC Article 9 provisions. Never send "
+                    "patient charts to a factor merely to verify an invoice. "
+                    "Provide redacted acceptance evidence and obtain proper "
+                    "authorization for any necessary disclosures. Financing accelerates "
+                    "collection timing; it does not improve the underlying "
+                    "customer's obligation or erase disputes."
+                ),
+            ],
+            "table": {
+                "caption": "Eight Payment and Settlement Arrangements Compared by Control, Timing, and Failure Mode",
+                "headers": [
+                    "Rail or arrangement and suitable purpose",
+                    "Who authorizes movement of the funds",
+                    "Cost, timing, and reconciliation operating detail",
+                    "Principal failure mode and required protection",
+                ],
+                "rows": [
+                    [
+                        "Wire transfer for verified larger operating-account service advances",
+                        "Firm treasury releases funds using independently verified beneficiary instructions",
+                        "Record sending charges, received amount, value date, and invoice",
+                        "Prevent instruction substitution through independent callback and dual authorization",
+                    ],
+                    [
+                        "Commercial escrow for separately funded administrative project delivery obligations",
+                        "Neutral agent follows expressly documented commercial release conditions",
+                        "Allocate escrow charges and define evidence required for release",
+                        "Keep client trust property outside ordinary vendor escrow arrangements",
+                    ],
+                    [
+                        "ACH credit or authorized debit for recurring operating invoices",
+                        "Firm initiates credit or grants appropriate documented debit authorization",
+                        "Track settlement entries, return exposure, remittance references, and reconciliation",
+                        "Do not expand credit merely because an entry initiated",
+                    ],
+                    [
+                        "Vendor capacity retainer credited against earned administrative service fees",
+                        "Authorized firm signer funds the agreed advance payment obligation",
+                        "Track unearned balance separately and apply documented earning rules",
+                        "Distinguish administrative advances from client legal retainers and custody",
+                    ],
+                    [
+                        "Statutory disbursement governed by actual recovery and distribution requirements",
+                        "Authorized administrator follows applicable orders, priorities, and recovery obligations",
+                        "Reconcile governing allocation documents rather than vendor marketing promises",
+                        "Never assume claimant proceeds secure ordinary MSO operating invoices",
+                    ],
+                    [
+                        "Platform checkout for processor-approved smaller administrative service purchases",
+                        "Authorized cardholder or payer approves the accurately described transaction",
+                        "Model processing fees, reserves, chargebacks, and payout scheduling delays",
+                        "Obtain appropriate underwriting rather than disguising the business category",
+                    ],
+                    [
+                        "Factoring of earned commercial MSO receivables with documented acceptance",
+                        "Vendor assigns eligible invoices under the executed financing agreement",
+                        "Compare advance percentage, reserve release, recourse, and total fees",
+                        "Exclude legal recoveries and protect patient information during verification",
+                    ],
+                    [
+                        "Milestone holds securing correction of specifically defined administrative defects",
+                        "Named acceptance owner confirms completion under the agreed service schedule",
+                        "Cap withheld amounts and specify a finite release deadline",
+                        "Reject indefinite release conditions tied to eventual litigation success",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Establish the payable obligation",
+                    "action": "Match the signed scope, purchase order, legal entity, and authorized payer.",
+                    "detail": "Identify fixed fees, cost-plus components, earning dates, and any genuinely refundable advance before creating the invoice.",
+                },
+                {
+                    "step": 2,
+                    "title": "Attach minimum necessary acceptance evidence",
+                    "action": "Deliver a dated service report with checklist versions and specific exception codes.",
+                    "detail": "Use project identifiers and redacted evidence; keep medical records out of ordinary accounts-payable email attachments.",
+                },
+                {
+                    "step": 3,
+                    "title": "Verify the destination and initiate payment",
+                    "action": "Confirm bank instructions independently and use the contractually selected payment arrangement.",
+                    "detail": "Record remittance references, allocated fees, expected availability, applicable holds, and the person responsible for bank reconciliation.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile cash and control further exposure",
+                    "action": "Apply receipts, investigate shortages, release earned holds, and enforce credit limits.",
+                    "detail": "Pause new discretionary purchases after the agreed trigger while preserving records and completing the contracted transition obligations.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Underwrite the Counterparty Before Scaling Financed Dockets or Advertising Spend",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The mapped play litigation_finance_mass_tort_docket_securitization "
+                    "requires separation between licensed legal economics and vendor "
+                    "economics. Its proposed 1,000–25,000 retained plaintiffs at "
+                    "$1,200–$2,500 acquisition cost imply $1.2 million to $62.5 "
+                    "million of acquisition capital before financing and ongoing "
+                    "case expense. At the low endpoint, a proposed 2.5x–4x "
+                    "valuation on $1.2 million means $3 million–$4.8 million, "
+                    "but neither a buyer nor a lawful transferable asset follows "
+                    "from that arithmetic. Claimants are not inventory that an "
+                    "MSO can sell. Any financing, portfolio interest transfer, "
+                    "or co-counsel arrangement requires an authorized legal "
+                    "structure, client-rights analysis, professional independence, "
+                    "and applicable lawyer fee-division requirements. A proposed "
+                    "35–40% settlement contingency describes legal compensation "
+                    "under valid representation arrangements, not ordinary MSO "
+                    "revenue or an automatic co-counsel allocation. Arizona ABS "
+                    "licensing is entity-specific and does not export permission "
+                    "to every jurisdiction. Verify the Supreme Court's licensing "
+                    "record and actual scope before committing capital. The "
+                    "ordinary MSO earns its agreed administrative fees whether "
+                    "the supported docket concerns PFAS, AFFF, Paraquat, NEC, "
+                    "rideshare assault, or medical devices. Do not embed the "
+                    "play's speculative portfolio multiples in the $705,000 "
+                    "Base revenue case or imply every named docket remains "
+                    "open, viable, or fundable."
+                ),
+                (
+                    "Apply the play's fallback as a funded risk-management plan, "
+                    "not a slogan. Six to ten genuinely differentiated tort "
+                    "or commercial-casualty exposures can reduce concentration, "
+                    "but shared causation theories, judges, experts, and funders "
+                    "can make apparently separate dockets highly correlated. "
+                    "A Federal Rule of Evidence 702 general-causation exclusion "
+                    "may impair many matters simultaneously. Model a complete "
+                    "freeze of the largest docket and thirty additional days "
+                    "of unpaid administrative invoices. Offloading 50% of a "
+                    "$1.2 million tranche cost basis means recovering $600,000 "
+                    "through an executed, permitted financing or transfer "
+                    "arrangement; assume zero recovery until conditions are "
+                    "satisfied and cash clears. The instruction to pay media "
+                    "vendors only on EMR-verified retainers also needs translation "
+                    "into lawful procurement. Verify service quality against "
+                    "medical evidence where authorized, but do not mechanically "
+                    "adopt per-retainer compensation if local rules prohibit "
+                    "paid recommendations or solicitation. Use fixed-capacity "
+                    "or cost-plus contracts, documented defect credits, and "
+                    "short purchase periods instead. Screen the firm through "
+                    "professional-license records, entity registries, trade "
+                    "references, authorized financial statements, and relevant "
+                    "public litigation records. Confirm unrestricted operating "
+                    "liquidity rather than counting client trust balances. "
+                    "Require prefunding when the firm cannot demonstrate an "
+                    "independent source of payment."
+                ),
+                (
+                    "The second mapped play, "
+                    "agency_ad_spend_card_multiplier_rebate_cycling, monetizes genuine "
+                    "authorized advertising purchases only when issuer, platform, "
+                    "and client contracts permit the arrangement. For an "
+                    "illustrative $100,000 monthly media purchase, a 2% eligible "
+                    "cash-equivalent reward creates $2,000 before costs. Subtract "
+                    "$600 financing expense, $400 processing expense, and a "
+                    "$700 contractually owed client rebate: only $300 remains "
+                    "before operational overhead and taxes. A $2,500 reserve "
+                    "or unexpected interest charge overwhelms that spread. "
+                    "Count points at a supportable redemption value, observe "
+                    "caps and exclusions, and never describe manufactured "
+                    "transactions as client media. The $100,000 advertising "
+                    "volume is not automatically MSO revenue; document the "
+                    "principal-agent conclusion and reward accounting separately "
+                    "from the scorecard. Obtain written spending limits, "
+                    "authorized platform access, beneficiary ownership, and "
+                    "reimbursement timing. Prohibit rewards-driven spending "
+                    "beyond the approved campaign budget. A practical exposure "
+                    "limit includes unpaid invoices, committed contractor work, "
+                    "unreimbursed media, and retrieval obligations, less cleared "
+                    "advances. Review that total weekly against the customer's "
+                    "approved credit ceiling. If reimbursement slips or reward "
+                    "eligibility changes, move to client-direct billing or "
+                    "prefunded approved agency terms immediately. Pause new "
+                    "purchases without blocking the firm's access to its "
+                    "existing campaign records, claimant files, or required "
+                    "transition materials."
+                ),
+            ],
+            "table": {
+                "caption": "Mapped-Play Economics, Counterparty Credit Tests, and Executable Downside Responses",
+                "headers": [
+                    "Exposure being underwritten before committing capital",
+                    "Concrete calculation or required verification evidence",
+                    "Commercial and professional boundary that remains controlling",
+                    "Executable fallback when the underwriting fails",
+                ],
+                "rows": [
+                    [
+                        "Financed docket acquisition spanning one thousand retained plaintiff matters",
+                        "Twelve hundred dollars each requires twelve hundred thousand dollars",
+                        "Licensed structures control legal interests; MSOs sell administrative services",
+                        "Require executed funding before increasing any discretionary acquisition commitments",
+                    ],
+                    [
+                        "Proposed portfolio valuation at two-and-one-half to four times cost",
+                        "Twelve hundred thousand cost implies three to four-point-eight million",
+                        "Illustrative multiples establish neither transferability nor an actual buyer",
+                        "Exclude unrealized portfolio values from operating liquidity and revenue",
+                    ],
+                    [
+                        "Early recovery of half the illustrative tranche acquisition basis",
+                        "Half of twelve hundred thousand requires six hundred thousand",
+                        "Recovery counts only after permitted documents execute and funds clear",
+                        "Assume zero proceeds while financing conditions remain outstanding",
+                    ],
+                    [
+                        "Correlated docket impairment following adverse general-causation evidence rulings",
+                        "Stress the largest docket plus thirty additional unpaid days",
+                        "Different case names alone do not establish independent risks",
+                        "Diversify actual exposures and preserve prefunded administrative operating capacity",
+                    ],
+                    [
+                        "Authorized advertising rewards subject to financing and client obligations",
+                        "Two thousand reward less seventeen hundred costs leaves three hundred",
+                        "Genuine spending and express contractual permissions govern every transaction",
+                        "Switch to client-direct or prefunded billing when spreads deteriorate",
+                    ],
+                    [
+                        "Customer credit exposure across invoices and committed operating purchases",
+                        "Aggregate receivables, contractor commitments, retrieval, and unreimbursed media obligations",
+                        "Client trust balances cannot support ordinary vendor credit assumptions",
+                        "Suspend new discretionary purchases above the approved exposure ceiling",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A verified claimant is evidence; an accepted service is revenue; cleared operating cash is what pays the team.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Identify the contracting firm, authorized budget owner, acceptance owner, controller, and operating-account payer before purchasing media or retrieval services.",
+        "Build a cohort ledger separating raw inquiries, signed retainers, usable medical proof, deficiency-free acceptance, invoices, and cleared cash.",
+        "Validate each records-request pathway and provider fee method; budget separate providers and pharmacy custodians rather than assuming one $6.50 request per claimant.",
+        "Execute a jurisdiction-reviewed fixed or cost-plus MSO scope with objective acceptance, bounded correction windows, advance-credit treatment, and finite payment deadlines.",
+        "Select and document the payment arrangement, independently verify bank instructions, and reconcile holds, returns, fees, and factoring reserves against each invoice.",
+        "Set a weekly customer exposure ceiling and move advertising to client-direct or prefunded terms whenever liquidity, reimbursement, or reward eligibility weakens.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "45 CFR 164.524 — Access of Individuals to Protected Health Information",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524",
+            "relevance": (
+                "Defines the individual access pathway, response timing, requested formats, "
+                "and permitted cost-based fee categories; supports pathway-specific retrieval controls."
+            ),
+        },
+        {
+            "title": "45 CFR 164.508 — Uses and Disclosures Requiring Authorization",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508",
+            "relevance": (
+                "Establishes authorization requirements and elements; distinguishes an authorization "
+                "from an individual access request and its associated fee treatment."
+            ),
+        },
+        {
+            "title": "45 CFR 164.504(e) — Business Associate Contracts",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
+            "relevance": (
+                "Specifies contractual safeguards when the relationship creates business-associate "
+                "obligations; relevant to record retrieval, storage, subcontracting, and return or destruction."
+            ),
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on Telephone Equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": (
+                "Provides the statutory foundation for covered calling and messaging restrictions; "
+                "campaign design must also apply current implementing rules and applicable state requirements."
+            ),
+        },
+        {
+            "title": "47 CFR 64.1200 — Delivery Restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
+            "relevance": (
+                "Supplies operative federal calling requirements, including relevant consent and "
+                "do-not-call provisions; does not justify treating the vacated one-to-one rule as effective."
+            ),
+        },
+        {
+            "title": "42 U.S.C. 1395y(b)(2) — Medicare Secondary Payer Recovery",
+            "url": "https://www.law.cornell.edu/uscode/text/42/1395y",
+            "relevance": (
+                "Establishes conditional-payment recovery obligations affecting applicable settlement "
+                "distributions, distinct from ordinary MSO operating-account invoices."
+            ),
+        },
+        {
+            "title": "Federal Rule of Evidence 702 — Testimony by Expert Witnesses",
+            "url": "https://www.law.cornell.edu/rules/fre/rule_702",
+            "relevance": (
+                "Governs expert-testimony admissibility and explains why a general-causation ruling "
+                "can impair an entire docket without making completed administrative services defective."
+            ),
+        },
+        {
+            "title": "Arizona Supreme Court Rule 31 and ACJA 7-209 — Alternative Business Structures",
+            "url": "https://www.azcourts.gov/Licensing-Regulation/Alternative-Business-Structure",
+            "relevance": (
+                "Official judicial licensing resources identify the Arizona ABS framework; "
+                "entity authorization must be verified rather than inferred from an MSO contract."
+            ),
+        },
+        {
+            "title": "HHS Individual Access Guidance and Ciox Court-Order Notice",
+            "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html",
+            "relevance": (
+                "Agency guidance explains the optional electronic-copy flat fee and the court-order "
+                "limitations affecting third-party directives; it supplements the governing regulations."
+            ),
+        },
+    ],
+}

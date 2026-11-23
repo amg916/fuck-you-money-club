@@ -1,4 +1,4 @@
-"""Canonical 43-volume registry, slug resolver, and dynamic builder loader for FYMC."""
+"""Canonical 49-volume registry, slug resolver, and dynamic builder loader for FYMC."""
 from __future__ import annotations
 
 import importlib
@@ -1068,16 +1068,118 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
             [['SELECT', 'Choose an event, buyer segment, and model: POS resale, permitted suite seat-splitting, or hospitality bundling.'], ['VERIFY', 'Confirm supplier identity, inventory rights, transfer timing, resale restrictions, and any suite or hospitality permissions.'], ['UNDERWRITE', 'Set acquisition limits using net proceeds after fees, amenities, taxes, fulfillment costs, and downside reserves.'], ['MARKET', 'Publish accurate listings or buyer proposals with explicit seat details, inclusions, exclusions, and delivery terms.'], ['FULFILL', 'Synchronize inventory to prevent double-selling, complete authorized transfers, and confirm each hospitality component.'], ['RECONCILE', 'Resolve delivery issues, reconcile payouts and supplier bills, measure realized margin, and cultivate repeat buyers.']],
         ),
     },
+    44: {
+        'volume_number': 44,
+        'volume_id': 'vol-044-customs-duty-drawback-and-tariff-refund-recovery',
+        'short_slug': 'customs-duty-drawback-and-tariff-refund-recovery',
+        'candidate_number': 44,
+        'score': 95,
+        'title': 'Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery',
+        'subtitle': 'The Money-to-Manpower Playbook for 5-Year CBP 19 U.S.C. § 1313 Duty Drawbacks, § 1514 Tariff Protests, HTS Reclassifications & B2B Antitrust Class-Action Splits',
+        'site_ui': _ui(
+            ['DUTY DRAWBACK', '& TARIFF', 'RECOVERY'],
+            ['TRACE THE DUTY. PROVE THE CLAIM.', 'THREE LANES. DISTINCT RECOVERY RULES.'],
+            'Find recoverable dollars in import records, tariff classifications, and antitrust settlements before the filing windows close.',
+            'Eligible drawback can return up to 99% of qualifying duties, taxes, and fees, but document completeness, exclusions, and processing time determine whether a recovery engagement earns its margin. Build distinct revenue lanes around drawback administration, legally supportable tariff refunds, and antitrust settlement claims support, pricing each against verified eligibility, collection timing, and the applicable representation rules.',
+            ['Q1: The Three-Lane Recovery Thesis', 'Q2: Importers, Exporters & Claimants', 'Q3: Recovery Fees & Cash Cycles', 'Q4: Eligibility, Authority & Deadlines', 'Q5: Source the Recovery Pipeline', 'Q6: Audit Entries & Export Evidence', 'Q7: Build the Claim Package', 'Q8: Price Each Recovery Lane', 'Q9: Broker, Counsel & Client Channels', 'Q10: Run the Recovery Ledger', 'Q11: Defend Against Denials & Clawbacks', 'Q12: Scale Repeatable Claim Cohorts'],
+            [['SOURCE', 'Identify authorized importers, exporters, and settlement claimants with material, documentable recovery potential.'], ['SCREEN', 'Separate drawback, tariff-refund, and antitrust matters; verify standing, exclusions, and filing deadlines.'], ['RECONCILE', 'Match entries, duty payments, exports, purchases, and settlement evidence without double-counting recovery.'], ['ASSEMBLE', 'Prepare auditable claim files with qualified customs professionals or counsel where required.'], ['FILE', 'Submit through the proper authorized channel and track inquiries, corrections, and determinations.'], ['COLLECT', 'Reconcile actual proceeds, invoice contracted fees, and retain evidence for audits and overlapping-claim checks.']],
+        ),
+    },
+    45: {
+        'volume_number': 45,
+        'volume_id': 'vol-045-no-surprises-act-idr-and-medical-arbitration',
+        'short_slug': 'no-surprises-act-idr-and-medical-arbitration',
+        'candidate_number': 45,
+        'score': 94,
+        'title': 'No Surprises Act (IDR) Medical Arbitration & Out-of-Network Recovery',
+        'subtitle': 'The Money-to-Manpower Playbook for Federal 42 U.S.C. § 300gg-111 IDR Batching, 30-Day Open-Negotiation Automation, QPA Uplift Dossiers & Specialty Group Splits',
+        'site_ui': _ui(
+            ['NO SURPRISES', 'ACT MEDICAL', 'ARBITRATION'],
+            ['RECOVER ELIGIBLE UNDERPAYMENTS.', 'UNDERWRITE EVERY DISPUTE.'],
+            'Turn eligible out-of-network underpayments into disciplined recovery cases, not a volume-driven arbitration gamble.',
+            'Federal No Surprises Act IDR economics depend on eligibility, applicable state processes, timely open negotiation, evidence quality, and expected incremental collections after administrative, entity, and servicing costs. Keep IDR case administration distinct from contractual underpayment appeals and other lawful out-of-network recovery work, using permitted fixed or collection-based fees without shifting prohibited balances to patients.',
+            ['Q1: The Provider Recovery Thesis', 'Q2: Specialties, Plans & Dispute Routes', 'Q3: Expected Recovery per Case', 'Q4: Federal IDR & State Boundaries', 'Q5: Source Authorized Provider Accounts', 'Q6: Screen Claims & Filing Clocks', 'Q7: Negotiate & Prepare the Record', 'Q8: Price IDR & Appeals Separately', 'Q9: Provider & RCM Partnerships', 'Q10: Operate the Dispute Calendar', 'Q11: Control Fees, PHI & Denials', 'Q12: Scale Profitable Claim Cohorts'],
+            [['INGEST', 'Receive authorized claim, remittance, and plan data through HIPAA-compliant workflows.'], ['ROUTE', 'Determine federal IDR eligibility, applicable state processes, and alternative appeal rights.'], ['UNDERWRITE', 'Estimate incremental collections net of current fees, labor, loss exposure, and payment delay.'], ['NEGOTIATE', 'Complete required open negotiation and preserve the evidence and statutory deadlines.'], ['SUBMIT', 'Present a supported offer through the applicable dispute process using current evidentiary and batching rules.'], ['RECONCILE', 'Track determinations and payments, pursue appropriate enforcement, and measure realized contribution margin.']],
+        ),
+    },
+    46: {
+        'volume_number': 46,
+        'volume_id': 'vol-046-mass-tort-intake-hitech-triage-and-law-firm-msos',
+        'short_slug': 'mass-tort-intake-hitech-triage-and-law-firm-msos',
+        'candidate_number': 46,
+        'score': 93,
+        'title': 'Mass-Tort Case Acquisition, HITECH Record Triage & Law-Firm MSOs',
+        'subtitle': 'The Money-to-Manpower Playbook for Compliant Law-Firm MSOs, Arizona ABS Co-Ventures, $6.50 HITECH EMR Verification & MDL Plaintiff Funnel Operations',
+        'site_ui': _ui(
+            ['MASS-TORT', 'HITECH & LAW', 'FIRM MSOS'],
+            ['QUALIFIED INTAKE. VERIFIED RECORDS.', 'NONLEGAL SERVICES. CLEAR BOUNDARIES.'],
+            'Build the compliant intake, medical-record, and operating infrastructure that helps law firms evaluate cases faster.',
+            'Measure acquisition cost per attorney-accepted, evidence-supported matter rather than per raw lead, including advertising, consent verification, record retrieval, triage, and rejection costs. Separate permissible marketing and intake services, HIPAA/HITECH-compliant record support, and nonlegal MSO administration, with jurisdiction-specific review of solicitation, referral compensation, fee splitting, ownership, and attorney independence.',
+            ['Q1: The Legal-Services Infrastructure Thesis', 'Q2: Tort Criteria & Firm Demand', 'Q3: Cost per Qualified Matter', 'Q4: Ethics, Consent & MSO Boundaries', 'Q5: Build Compliant Acquisition Channels', 'Q6: Verify Intake & Record Authority', 'Q7: Retrieve & Triage Medical Records', 'Q8: Price Three Nonlegal Service Lanes', 'Q9: Win & Retain Firm Accounts', 'Q10: Operate Intake, QA & Handoffs', 'Q11: Control Fraud & Privacy Exposure', 'Q12: Scale Without Owning Legal Judgment'],
+            [['ATTRACT', 'Use accurate, jurisdiction-reviewed advertising without outcome promises or prohibited solicitation.'], ['CONSENT', 'Document contact consent, privacy disclosures, and valid authority for medical-record requests.'], ['SCREEN', 'Apply attorney-defined intake criteria while leaving legal advice and case acceptance to counsel.'], ['RETRIEVE', 'Obtain records through applicable access or authorization pathways without assuming universal fee caps.'], ['TRIAGE', 'Organize source-linked medical timelines and flag gaps for qualified clinical or attorney review.'], ['SERVICE', 'Deliver contracted nonlegal support while preserving professional independence and lawful compensation structures.']],
+        ),
+    },
+    47: {
+        'volume_number': 47,
+        'volume_id': 'vol-047-ai-data-center-powered-land-and-bess-optioning',
+        'short_slug': 'ai-data-center-powered-land-and-bess-optioning',
+        'candidate_number': 47,
+        'score': 92,
+        'title': 'AI Data-Center Powered Land, Substation Headroom & BESS Site Optioning',
+        'subtitle': 'The Money-to-Manpower Playbook for FERC/ISO Queue GIS Overlays, 69kV–345kV Substation Capacity Screening, Dark-Fiber Corridors & Assignable Land Options',
+        'site_ui': _ui(
+            ['AI POWERED', 'LAND & BESS', 'OPTIONING'],
+            ['CONTROL THE SITE. VERIFY THE POWER.', 'OPTIONS BEFORE LAND OWNERSHIP.'],
+            'Secure conditional control of promising data-center and battery-storage sites before committing capital to unverified power stories.',
+            'Site-option economics depend on option premiums, extension payments, diligence burn, assignment rights, and the probability of securing a buyer before expiry; nearby transmission or a substation does not establish available capacity. Distinct revenue lanes include negotiated option assignments, development-stage site sales, and permitted siting or development services, with data-center load service and BESS interconnection underwritten separately.',
+            ['Q1: The Power-Constrained Land Thesis', 'Q2: Data-Center & Storage Buyer Maps', 'Q3: Option Carry & Exit Economics', 'Q4: Land Rights, Zoning & Brokerage', 'Q5: Map Parcels & Power Signals', 'Q6: Verify Utility & Site Constraints', 'Q7: Negotiate Conditional Site Control', 'Q8: Package Assignments & Development Fees', 'Q9: Reach Qualified Project Buyers', 'Q10: Manage Diligence & Milestones', 'Q11: Stress-Test Power, Permits & Expiry', 'Q12: Scale a Stage-Gated Site Portfolio'],
+            [['MAP', 'Screen parcels for utility territory, network proximity, zoning, access, fiber, and environmental constraints.'], ['VERIFY', 'Seek utility-backed load-service or interconnection information; treat mapped headroom as an unconfirmed signal.'], ['CONTROL', 'Negotiate counsel-reviewed options with diligence access, milestones, and explicit assignment provisions.'], ['DILIGENCE', 'Evaluate title, engineering, permitting, utility costs, and project-specific operating constraints.'], ['MATCH', 'Present a source-documented package to qualified buyers without describing speculative capacity as secured.'], ['EXIT', 'Close an authorized assignment or development transaction, or terminate before additional carry destroys the margin.']],
+        ),
+    },
+    48: {
+        'volume_number': 48,
+        'volume_id': 'vol-048-qui-tam-sec-and-irs-whistleblower-analytics',
+        'short_slug': 'qui-tam-sec-and-irs-whistleblower-analytics',
+        'candidate_number': 48,
+        'score': 92,
+        'title': 'Data-Mined Qui Tam, SEC & IRS Whistleblower Analytics',
+        'subtitle': 'The Money-to-Manpower Playbook for Public-Dataset Medicare/Procurement Fraud Forensics, 31 U.S.C. § 3730 Independent-Analysis Relator Filings & SEC/CFTC/IRS Awards',
+        'site_ui': _ui(
+            ['QUI TAM &', 'WHISTLEBLOWER', 'ANALYTICS'],
+            ['FIND ANOMALIES. BUILD EVIDENCE.', 'SEPARATE SIGNAL FROM ALLEGATION.'],
+            'Turn lawfully obtained data into counsel-ready investigative leads without mistaking anomalies for proven misconduct.',
+            'False Claims Act, SEC, and IRS matters have different standing, original-information, procedure, and award requirements, with uncertain outcomes and potentially multiyear collection timelines. Keep eligible whistleblower awards separate from lawful research retainers and counsel-directed analytics services, underwriting service work on its own margin rather than treating contingent awards as recurring revenue.',
+            ['Q1: The Evidence-First Analytics Thesis', 'Q2: FCA, SEC & IRS Pathways', 'Q3: Research Burn & Award Uncertainty', 'Q4: Lawful Access, Seals & Privilege', 'Q5: Source Public & Authorized Data', 'Q6: Test Anomalies & Alternative Explanations', 'Q7: Build a Traceable Evidence Record', 'Q8: Separate Awards from Service Revenue', 'Q9: Engage Qualified Whistleblower Counsel', 'Q10: Operate Secure Case Workflows', 'Q11: Control Disclosure & Retaliation Risk', 'Q12: Scale Research Without Speculative Claims'],
+            [['SOURCE', 'Use public records and lawfully accessible information without unauthorized access or data exfiltration.'], ['ANALYZE', 'Identify reproducible patterns and test innocent explanations, data errors, and materiality.'], ['CORROBORATE', 'Preserve provenance and distinguish direct evidence, analytical inference, and unresolved questions.'], ['REVIEW', 'Have qualified counsel assess eligibility, public-disclosure issues, privilege, deadlines, and reporting duties.'], ['REPORT', "Follow the chosen program's submission requirements and any applicable court-seal restrictions."], ['TRACK', 'Support authorized follow-up and record outcomes without booking speculative awards as earned revenue.']],
+        ),
+    },
+    49: {
+        'volume_number': 49,
+        'volume_id': 'vol-049-prediction-market-terminals-and-igaming-affiliates',
+        'short_slug': 'prediction-market-terminals-and-igaming-affiliates',
+        'candidate_number': 49,
+        'score': 91,
+        'title': 'Regulated Prediction-Market Terminals & Licensed iGaming Affiliates',
+        'subtitle': 'The Money-to-Manpower Playbook for Non-Custodial CFTC Event-Contract Analytics & Builder Routing, Cross-Venue Odds Engines & State-Licensed Sportsbook/Casino CPA Portals',
+        'site_ui': _ui(
+            ['PREDICTION', 'TERMINALS &', 'IGAMING CPA'],
+            ['SELL DECISION TOOLS. QUALIFY REFERRALS.', 'REGULATED VENUES. LICENSED PARTNERS.'],
+            'Build subscription-grade prediction-market tools and compliant gaming referral funnels without blurring their regulatory boundaries.',
+            'Prediction-market terminal economics depend on subscription retention after market-data licensing, infrastructure, support, and acquisition costs, while brokerage, execution, or advisory functions may introduce separate obligations. Licensed iGaming affiliate economics depend on approved jurisdictions, qualified-player CPA or permitted revenue share, fraud reversals, and operator terms, so gross signups and customer deposits are not earned affiliate revenue.',
+            ['Q1: The Two-Lane Distribution Thesis', 'Q2: Permitted Venues & Licensed Operators', 'Q3: Subscription Margin & Qualified CPA', 'Q4: Licensing, Data Rights & Disclosures', 'Q5: Source Data & Build Audience', 'Q6: Validate Access & User Eligibility', 'Q7: Launch Terminals & Referral Funnels', 'Q8: Price Seats & Negotiate Affiliate Terms', 'Q9: Acquire Users Without Misleading Claims', 'Q10: Reconcile Usage & Qualified Conversions', 'Q11: Control Fraud & Gambling Harm', 'Q12: Scale by Approved Jurisdiction'],
+            [['SCOPE', 'Define separate terminal and affiliate offerings, approved markets, and activities requiring legal review.'], ['CONTRACT', 'Secure necessary data rights, venue permissions, operator agreements, and affiliate approvals.'], ['BUILD', 'Deliver reliable analytics and clearly disclosed referrals without guaranteed-return claims.'], ['GATE', 'Apply required access and marketing controls; never bypass operator age, identity, location, or self-exclusion checks.'], ['CONVERT', 'Measure paid subscriptions and operator-validated qualifying customers rather than clicks or unverified registrations.'], ['RECONCILE', 'Net revenue against data costs, acquisition spend, cancellations, reversals, and compliance overhead.']],
+        ),
+    },
 }
 
-ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43)
+ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49)
 CANDIDATE_TO_VOLUME_NUMBER: dict[int, int] = {
     int(spec["candidate_number"]): num for num, spec in ALL_VOLUME_SPECS.items()
 }
 
 
 def get_volume_spec_by_candidate(candidate_number: object) -> dict | None:
-    """Return the canonical volume spec for a 1..43 candidate_number, or None."""
+    """Return the canonical volume spec for a 1..49 candidate_number, or None."""
     if isinstance(candidate_number, bool):
         return None
     try:
@@ -1114,7 +1216,7 @@ def _match_volume_number(volume_id: object) -> int | None:
 
 
 def get_volume_spec(volume_id_or_num: object = None) -> dict:
-    """Return the canonical spec dict for any of the 43 registered volumes."""
+    """Return the canonical spec dict for any of the 49 registered volumes."""
     if volume_id_or_num is None:
         return ALL_VOLUME_SPECS[1]
     num = _match_volume_number(volume_id_or_num)

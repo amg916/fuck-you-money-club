@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-049-prediction-market-terminals-and-igaming-affiliates",
+  "volume_slug": "vol-049-prediction-market-terminals-and-igaming-affiliates",
+  "volume_number": 49,
+  "site_ui": {
+    "cover": [
+      "PREDICTION",
+      "TERMINALS &",
+      "IGAMING CPA"
+    ],
+    "deck": [
+      "SELL DECISION TOOLS. QUALIFY REFERRALS.",
+      "REGULATED VENUES. LICENSED PARTNERS."
+    ],
+    "lead": "Build subscription-grade prediction-market tools and compliant gaming referral funnels without blurring their regulatory boundaries.",
+    "summary": "Prediction-market terminal economics depend on subscription retention after market-data licensing, infrastructure, support, and acquisition costs, while brokerage, execution, or advisory functions may introduce separate obligations. Licensed iGaming affiliate economics depend on approved jurisdictions, qualified-player CPA or permitted revenue share, fraud reversals, and operator terms, so gross signups and customer deposits are not earned affiliate revenue.",
+    "chapters": [
+      "Q1: The Two-Lane Distribution Thesis",
+      "Q2: Permitted Venues & Licensed Operators",
+      "Q3: Subscription Margin & Qualified CPA",
+      "Q4: Licensing, Data Rights & Disclosures",
+      "Q5: Source Data & Build Audience",
+      "Q6: Validate Access & User Eligibility",
+      "Q7: Launch Terminals & Referral Funnels",
+      "Q8: Price Seats & Negotiate Affiliate Terms",
+      "Q9: Acquire Users Without Misleading Claims",
+      "Q10: Reconcile Usage & Qualified Conversions",
+      "Q11: Control Fraud & Gambling Harm",
+      "Q12: Scale by Approved Jurisdiction"
+    ],
+    "flow": [
+      [
+        "SCOPE",
+        "Define separate terminal and affiliate offerings, approved markets, and activities requiring legal review."
+      ],
+      [
+        "CONTRACT",
+        "Secure necessary data rights, venue permissions, operator agreements, and affiliate approvals."
+      ],
+      [
+        "BUILD",
+        "Deliver reliable analytics and clearly disclosed referrals without guaranteed-return claims."
+      ],
+      [
+        "GATE",
+        "Apply required access and marketing controls; never bypass operator age, identity, location, or self-exclusion checks."
+      ],
+      [
+        "CONVERT",
+        "Measure paid subscriptions and operator-validated qualifying customers rather than clicks or unverified registrations."
+      ],
+      [
+        "RECONCILE",
+        "Net revenue against data costs, acquisition spend, cancellations, reversals, and compliance overhead."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "REGULATED PREDICTION-MARKET TERMINALS & LICENSED IGAMING AFFILIATES",
+  "subtitle": "The Complete Playbook for Regulated Prediction-Market Terminals and Licensed iGaming Affiliates: $75,000-$650,000 USD in Annual Operator Revenue, Starting with a 1 FT + 2 C Pod of 3 People",
+  "chapter_count": 12,
+  "total_word_count": 78941,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 91,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T22:48:04Z"
+}

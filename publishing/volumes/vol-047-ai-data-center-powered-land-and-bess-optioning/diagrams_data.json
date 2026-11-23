@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-evidence-backed-option-workflow",
+      "chart_type": "process_flow",
+      "title": "From Corridor Signal to Assignable Site Interest",
+      "subtitle": "Sell documented development progress, not apparent electrical proximity.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Sequence numbers indicate work order rather than capacity or conversion probability. Typical first-deal timing is 2–6 months; utility studies can extend it. Maintain separate standalone BESS and AI campus underwriting templates.",
+      "caption": "An attractive map intersection becomes a priced option only after power, land rights, upgrade exposure, and timing have survived documented diligence.",
+      "stages": [
+        {
+          "label": "Screen distinct site classes",
+          "value": "Separate storage parcels from AI campus candidates",
+          "numeric_value": 1.0,
+          "detail": "Use QGIS, utility GIS, FEMA maps, and USFWS wetland mapping to screen 69kV–345kV corridors. Track 5–25 acre standalone BESS parcels separately from campuses requiring fiber, water, larger footprints, and load service."
+        },
+        {
+          "label": "Obtain utility evidence",
+          "value": "Request dated capacity and service-path documentation",
+          "numeric_value": 2.0,
+          "detail": "Record requested load, injection and charging profiles, study status, contingencies, deliverable MW, upgrade allocation, and energization range. A substation pin or raw queue filing establishes neither available headroom nor a service commitment."
+        },
+        {
+          "label": "Secure contingent site control",
+          "value": "Negotiate transferable 12–24 month option rights",
+          "numeric_value": 3.0,
+          "detail": "Have counsel verify ownership, title exceptions, mineral rights, easements, assignment permission, extension pricing, and utility or zoning exit rights. Document any recorded memorandum and distinguish nonrefundable fees from refundable escrow deposits."
+        },
+        {
+          "label": "Price documented development risk",
+          "value": "Underwrite deliverable MW against remaining exposure",
+          "numeric_value": 4.0,
+          "detail": "Illustratively, 20 utility-documented MW at a negotiated $5,000 per-MW milestone yields $100,000 before direct costs. Price restudy exposure, energization delay, expiration losses, and buyer conditions separately; unvalidated MW supports no capacity-based value."
+        },
+        {
+          "label": "Assign and reconcile receipts",
+          "value": "Close eligible transfers with an evidence ledger",
+          "numeric_value": 5.0,
+          "detail": "Deliver the executed option chain, dated study package, land-use findings, and contractual milestone evidence. Recognize earned assignment fees, origination payments, and realized carry without counting land price, developer capex, deposits, or unrealized carry."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-nested-site-conversion-cohorts",
+      "chart_type": "funnel",
+      "title": "One Cohort, Five Evidence Filters",
+      "subtitle": "Every surviving site remains a subset of the original 120 parcels.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative mature annual cohort, not observed conversion performance or a 30-day sales forecast. Counts are sites, not MW. Track BESS and AI campus subcohorts separately even when reporting this combined funnel.",
+      "caption": "Only three of 120 screened sites reach paid transfer or milestone status; rejected and expired sites still consume cash.",
+      "stages": [
+        {
+          "label": "Mapped candidate parcels",
+          "value": "120 parcels entered with distinct asset classifications",
+          "numeric_value": 120.0,
+          "detail": "Capture parcel identifiers, ownership, corridor distance, source dates, zoning district, and preliminary hazards. Deduplicate adjoining tracts before assigning one site identifier to a potential transaction."
+        },
+        {
+          "label": "Fatal-flaw screen survivors",
+          "value": "48 parcels survive the first desktop screen",
+          "numeric_value": 48.0,
+          "detail": "Forty percent of the original cohort survives access, flood, wetland, mineral, and apparent zoning checks. Mapped overlays are screening evidence rather than jurisdictional determinations or final permits."
+        },
+        {
+          "label": "Documented utility-path candidates",
+          "value": "18 sites retain an actionable utility pathway",
+          "numeric_value": 18.0,
+          "detail": "Thirty-seven and one-half percent of the previous stage receives sufficiently specific utility responses to justify further diligence. Preliminary responses remain explicitly conditional and do not establish guaranteed deliverable capacity."
+        },
+        {
+          "label": "Controlled diligence positions",
+          "value": "Six sites secure assignable contingent option interests",
+          "numeric_value": 6.0,
+          "detail": "One-third of utility-path candidates reaches signed site control. Apply option-fee caps and expiration dates; the illustrative annual loss budget includes three unsuccessful positions costing $16,000 each."
+        },
+        {
+          "label": "Paid assignment or milestone sites",
+          "value": "Three sites generate realized operator fee events",
+          "numeric_value": 3.0,
+          "detail": "Half of controlled positions produces paid events, equal to 2.5 percent of the initial cohort. Multiple distinct earned fee events may occur at one site; never count the same contractual consideration twice."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-owner-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base-Case Revenue to Owner Profit",
+      "subtitle": "$505,000 operator revenue less $292,900 costs equals $212,100.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "USD annually. First and final bars are totals; the four intermediate bars are signed expense movements. Expense allocation is illustrative; canonical scenario totals are fixed. Conservative is $110,000 revenue at 30% margin, producing $33,000 profit with 1 FT + 3 C. Base is $505,000 at 42.0%, producing $212,100 with the same pod. Scaled is $900,000 at 54%, producing $486,000 with 2 FT + 4 C.",
+      "caption": "505,000 − 132,000 − 80,000 − 48,000 − 32,900 = 212,100; 212,100 / 505,000 = 42.0%. Underlying land purchases and developer construction spending never enter operator revenue.",
+      "stages": [
+        {
+          "label": "Recognized operator revenue",
+          "value": "$505,000 annual earned fees and realized carry",
+          "numeric_value": 505000.0,
+          "detail": "Include only earned option assignments, per-MW origination milestones, and realized development carry. Where ASC 606 applies, assess principal versus agent presentation; exclude third-party pass-through billings when only the retained fee is operator revenue."
+        },
+        {
+          "label": "Recurring pod operating expense",
+          "value": "−$132,000 annual recurring delivery and overhead costs",
+          "numeric_value": -132000.0,
+          "detail": "$11,000 monthly covers recurring contractor retainers, software, insurance, administration, and sourcing. This is the upper end of the canonical $1,800–$11,000 monthly operating range; exclude the separate project-specific charges below."
+        },
+        {
+          "label": "Direct site diligence expense",
+          "value": "−$80,000 project-specific technical and land diligence",
+          "numeric_value": -80000.0,
+          "detail": "Allocate $36,000 to utility engineering and study support, $24,000 to environmental and survey work, and $20,000 to land-use and title investigation. These expenses exclude recurring pod retainers."
+        },
+        {
+          "label": "Expired option fee expense",
+          "value": "−$48,000 recognized losses from unsuccessful site control",
+          "numeric_value": -48000.0,
+          "detail": "Three failed positions at $16,000 each absorb nonrefundable option and extension fees after utility or zoning failure. Do not treat refundable deposits as losses or capitalize expired rights indefinitely."
+        },
+        {
+          "label": "Closed transaction expense",
+          "value": "−$32,900 incremental closing and assignment delivery costs",
+          "numeric_value": -32900.0,
+          "detail": "Allocate $18,000 to incremental transaction counsel, $9,000 to licensed brokerage services where required, and $5,900 to escrow, recording, and buyer-package delivery. Exclude costs already charged to diligence."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$212,100 retained annual owner operating profit total",
+          "numeric_value": 212100.0,
+          "detail": "Final subtotal, not another upward movement. The canonical model does not separately specify owner salary or personal income taxes; do not describe this amount as after-tax take-home cash."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-fee-rail-revenue-contribution",
+      "chart_type": "horizontal_bars",
+      "title": "Five Fee Rails, One Base Revenue Total",
+      "subtitle": "Compare annual earned dollar contributions rather than asset values.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative negotiated fee mix totaling $505,000. Bars measure annual recognized operator dollars, not market benchmarks, investment returns, or capacity commitments. The five fee events may span three successful sites.",
+      "caption": "A payment rail earns its place only when its rights, milestone evidence, and payment trigger are separately documented.",
+      "stages": [
+        {
+          "label": "AI campus option assignment",
+          "value": "$150,000 from one completed campus option assignment",
+          "numeric_value": 150000.0,
+          "detail": "One transferable principal-held option earns a $150,000 assignment fee after buyer acceptance. Verify campus zoning, carrier-confirmed dark-fiber routes, cooling and water feasibility, and utility service conditions; exclude the parcel purchase price."
+        },
+        {
+          "label": "Standalone BESS option assignment",
+          "value": "$125,000 from one completed storage parcel assignment",
+          "numeric_value": 125000.0,
+          "detail": "One assignable 5–25 acre storage parcel interest earns $125,000. Document injection and charging limitations, fire access, setbacks, interconnection conditions, and transfer rights independently of any nearby data-center development."
+        },
+        {
+          "label": "Utility-evidenced MW milestone",
+          "value": "$100,000 from twenty documented MW at $5,000",
+          "numeric_value": 100000.0,
+          "detail": "Twenty utility-documented deliverable MW multiplied by a negotiated $5,000 milestone rate yields $100,000 only upon the contractual earning event. Attach upgrade exposure, study conditions, and energization assumptions to the capacity statement."
+        },
+        {
+          "label": "Development readiness milestone",
+          "value": "$80,000 from one separately earned readiness payment",
+          "numeric_value": 80000.0,
+          "detail": "One $80,000 contractual milestone requires specified land-use findings, access rights, and accepted technical deliverables. A signed option or preliminary queue entry alone does not satisfy that event."
+        },
+        {
+          "label": "Realized development carry",
+          "value": "$50,000 from one settled development carry distribution",
+          "numeric_value": 50000.0,
+          "detail": "Include $50,000 only after the carry crystallizes under the applicable arrangement. Exclude speculative future project appreciation, unearned promote value, and consideration already included in another fee rail."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-rights-power-and-land",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Irreversible Option Spend",
+      "subtitle": "Any failed check redirects the site to remediation or rejection.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Four ordered decision nodes, each with a pass and stop outcome described in its detail. Federal and California citations identify concrete requirements; determine the actual state, local jurisdiction, utility tariff, and project-specific applicability for every parcel.",
+      "caption": "Principal rights, utility evidence, land-use feasibility, and bounded downside must agree before pricing the assignment.",
+      "stages": [
+        {
+          "label": "Verify transaction role and rights",
+          "value": "Proceed only with valid rights and role analysis",
+          "numeric_value": 1.0,
+          "detail": "Check California Business and Professions Code sections 10130 and 10131 where applicable, or the site state's corresponding statutes. Pass with a valid principal option interest and supported licensure analysis, or licensed broker participation; stop if unlicensed activity or transfer defects remain."
+        },
+        {
+          "label": "Validate utility service evidence",
+          "value": "Proceed only with documented power and upgrade exposure",
+          "numeric_value": 2.0,
+          "detail": "Apply the relevant tariff and, where applicable, 18 CFR 35.28. Separate load-service requests from storage interconnection requests. Pass when documented MW, restudy exposure, upgrade responsibility, and timing support the deal; stop when the thesis depends only on line proximity or an unstudied filing."
+        },
+        {
+          "label": "Resolve land-use and environmental barriers",
+          "value": "Proceed only with a viable parcel-specific entitlement path",
+          "numeric_value": 3.0,
+          "detail": "Check adopted zoning text, active municipal moratoriums, fire requirements, title, and mineral rights. Evaluate Clean Water Act section 404 under 33 U.S.C. 1344 for covered discharges. Pass with a documented path and priced conditions; stop for prohibited use or an unresolved fatal site constraint."
+        },
+        {
+          "label": "Bound expiration and delivery losses",
+          "value": "Proceed only when downside fits available committed cash",
+          "numeric_value": 4.0,
+          "detail": "Stress delayed energization, network-upgrade restudy, option expiration, buyer withdrawal, and extension pricing. Confirm AI fiber and water requirements separately from BESS needs. Pass within written spending limits; renegotiate or reject uncapped upgrade exposure and unaffordable option-fee burn."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-to-six-person-origination-pod",
+      "chart_type": "org_architecture",
+      "title": "Four Core People, Two Explicit Scale Additions",
+      "subtitle": "Base staffing is 1 FT + 3 C; scaled staffing is 2 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each stage represents one distinct person in the six-person scaled pod. The first four seats form the Conservative and Base pod; the final two are incremental scaled seats. C means contractor, not a full-time-equivalent commitment. External laboratories, survey firms, and escrow providers are purchased vendors rather than hidden pod employees.",
+      "caption": "The principal owns underwriting and negotiations while specialists maintain independent technical and rights evidence.",
+      "stages": [
+        {
+          "label": "Principal and commercial lead",
+          "value": "One full-time core owner leads transaction decisions",
+          "numeric_value": 1.0,
+          "detail": "Own sourcing priorities, option negotiation, developer relationships, exposure limits, revenue recognition coordination, and closing decisions. Keep purchase price and construction budgets outside operator fee reporting."
+        },
+        {
+          "label": "GIS and land research specialist",
+          "value": "One core contractor maintains parcel evidence quality",
+          "numeric_value": 1.0,
+          "detail": "Maintain QGIS parcel layers, FEMA overlays, wetland screening, zoning citations, ownership records, and source timestamps. Escalate conflicting records instead of allowing automated screening to imply verified capacity or final permitting."
+        },
+        {
+          "label": "Utility and storage engineer",
+          "value": "One core contractor validates technical power assumptions",
+          "numeric_value": 1.0,
+          "detail": "Interpret utility correspondence, study scope, deliverable MW, charging profiles, upgrade allocation, restudy sensitivity, and energization dependencies. Distinguish preliminary technical estimates from executed service commitments."
+        },
+        {
+          "label": "Real-estate transaction counsel",
+          "value": "One core contractor structures rights and transfer evidence",
+          "numeric_value": 1.0,
+          "detail": "Review principal status, applicable brokerage statutes, title, option contingencies, assignment restrictions, mineral protections, expiration notices, and closing deliverables. Coordinate licensed brokerage services where the transaction requires them."
+        },
+        {
+          "label": "Development operations manager",
+          "value": "One additional full-time person joins only at scale",
+          "numeric_value": 1.0,
+          "detail": "Own milestone calendars, buyer diligence requests, study-document versioning, contractor schedules, and receipt reconciliation. Add this seat for the $900,000 scenario rather than silently increasing the four-person Base workload."
+        },
+        {
+          "label": "Land-use and environmental specialist",
+          "value": "One additional contractor joins the scaled delivery pod",
+          "numeric_value": 1.0,
+          "detail": "Coordinate parcel-specific zoning, environmental investigation, local fire access, water constraints, and entitlement dependencies. The core pod buys limited site-specific services before this recurring scaled seat becomes justified."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Preserve Runway Before Expanding Option Exposure",
+      "subtitle": "Four buckets total a $30,000 startup plan inside the $10,000–$50,000 range.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values encode the $30,000 reference allocation. Each detail also supplies lean and expanded allocations totaling $10,000 and $50,000 respectively. These are starting cash envelopes, not annual expenses or funding for land acquisition, construction, or major utility deposits.",
+      "caption": "Do not spend the entire startup reserve on option premiums; a 2–6 month first-deal cycle requires explicit runway planning.",
+      "stages": [
+        {
+          "label": "Parcel intelligence and sourcing",
+          "value": "$4,500 reference allocation for targeted evidence gathering",
+          "numeric_value": 4500.0,
+          "detail": "Lean $1,500; reference $4,500; expanded $7,500. Fund parcel records, targeted outreach, GIS support, and corridor verification. Prioritize public utility and county sources before purchasing broad datasets that cannot establish site-specific power availability."
+        },
+        {
+          "label": "Rights and initial diligence",
+          "value": "$7,500 reference allocation for essential specialist investigation",
+          "numeric_value": 7500.0,
+          "detail": "Lean $2,500; reference $7,500; expanded $12,500. Fund initial counsel, title research, utility consultation, and land-use investigation. Full interconnection studies and extensive fieldwork need separately committed funding beyond this initial envelope."
+        },
+        {
+          "label": "Contingent option fee exposure",
+          "value": "$6,000 reference allocation for tightly limited site control",
+          "numeric_value": 6000.0,
+          "detail": "Lean $2,000; reference $6,000; expanded $10,000. Cap initial nonrefundable fees and negotiate staged payments with diligence exits. This startup exposure is separate from the mature Base annual $48,000 expired-option expense allowance."
+        },
+        {
+          "label": "Operating runway reserve",
+          "value": "$12,000 reference allocation for preserved operating liquidity",
+          "numeric_value": 12000.0,
+          "detail": "Lean $4,000; reference $12,000; expanded $20,000. At $1,800 monthly overhead, $12,000 covers about 6.7 months; at $11,000 it covers about 1.1 months. Reduce burn or secure additional committed capital before adopting the Base cost structure."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-evidence-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Evidence-Based Option Decision",
+      "subtitle": "Build a disciplined pipeline without pretending studies finish in one month.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values are milestone ending days. Activity counts are operating targets, not utility response commitments or closing forecasts. The canonical first-deal window remains 2–6 months, subject to site and study dependencies.",
+      "caption": "Finish the sprint with documented proceed, revise, or reject decisions and a funded next step, rather than unsupported MW claims.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define two site theses and assemble forty candidates",
+          "numeric_value": 7.0,
+          "detail": "Create separate BESS and AI campus score sheets, a QGIS evidence register, utility contact records, and jurisdiction-specific zoning checklists. Record 69kV–345kV corridor signals without labeling unstudied substations as available capacity."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Screen twelve priority parcels and initiate utility inquiries",
+          "numeric_value": 14.0,
+          "detail": "Investigate ownership, access, wetlands, flood exposure, mineral rights, and municipal moratoriums. Send site-specific load or storage profiles to utilities; log unanswered requests as unresolved dependencies rather than favorable technical findings."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Negotiate three contingent option structures with capped exposure",
+          "numeric_value": 21.0,
+          "detail": "Seek 12–24 month assignable terms, staged fees, study access, extension pricing, and defined diligence exits. Obtain carrier route evidence for AI candidates and storage-specific charging and fire-access findings for BESS candidates."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Prepare two buyer packages and decide next commitments",
+          "numeric_value": 30.0,
+          "detail": "Compile dated utility evidence, unresolved conditions, upgrade sensitivity, energization ranges, option rights, and expiration budgets. Authorize only affordable next steps; defer capacity-based pricing when utility documentation remains insufficient."
+        }
+      ]
+    }
+  ]
+}

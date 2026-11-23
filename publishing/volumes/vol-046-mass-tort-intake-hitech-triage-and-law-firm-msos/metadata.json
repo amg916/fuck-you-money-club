@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-046-mass-tort-intake-hitech-triage-and-law-firm-msos",
+  "volume_slug": "vol-046-mass-tort-intake-hitech-triage-and-law-firm-msos",
+  "volume_number": 46,
+  "site_ui": {
+    "cover": [
+      "MASS-TORT",
+      "HITECH & LAW",
+      "FIRM MSOS"
+    ],
+    "deck": [
+      "QUALIFIED INTAKE. VERIFIED RECORDS.",
+      "NONLEGAL SERVICES. CLEAR BOUNDARIES."
+    ],
+    "lead": "Build the compliant intake, medical-record, and operating infrastructure that helps law firms evaluate cases faster.",
+    "summary": "Measure acquisition cost per attorney-accepted, evidence-supported matter rather than per raw lead, including advertising, consent verification, record retrieval, triage, and rejection costs. Separate permissible marketing and intake services, HIPAA/HITECH-compliant record support, and nonlegal MSO administration, with jurisdiction-specific review of solicitation, referral compensation, fee splitting, ownership, and attorney independence.",
+    "chapters": [
+      "Q1: The Legal-Services Infrastructure Thesis",
+      "Q2: Tort Criteria & Firm Demand",
+      "Q3: Cost per Qualified Matter",
+      "Q4: Ethics, Consent & MSO Boundaries",
+      "Q5: Build Compliant Acquisition Channels",
+      "Q6: Verify Intake & Record Authority",
+      "Q7: Retrieve & Triage Medical Records",
+      "Q8: Price Three Nonlegal Service Lanes",
+      "Q9: Win & Retain Firm Accounts",
+      "Q10: Operate Intake, QA & Handoffs",
+      "Q11: Control Fraud & Privacy Exposure",
+      "Q12: Scale Without Owning Legal Judgment"
+    ],
+    "flow": [
+      [
+        "ATTRACT",
+        "Use accurate, jurisdiction-reviewed advertising without outcome promises or prohibited solicitation."
+      ],
+      [
+        "CONSENT",
+        "Document contact consent, privacy disclosures, and valid authority for medical-record requests."
+      ],
+      [
+        "SCREEN",
+        "Apply attorney-defined intake criteria while leaving legal advice and case acceptance to counsel."
+      ],
+      [
+        "RETRIEVE",
+        "Obtain records through applicable access or authorization pathways without assuming universal fee caps."
+      ],
+      [
+        "TRIAGE",
+        "Organize source-linked medical timelines and flag gaps for qualified clinical or attorney review."
+      ],
+      [
+        "SERVICE",
+        "Deliver contracted nonlegal support while preserving professional independence and lawful compensation structures."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "MASS-TORT CASE ACQUISITION, HITECH RECORD TRIAGE & LAW-FIRM MSOS",
+  "subtitle": "The Complete Playbook for Mass-Tort Intake, HITECH Record Triage & Law-Firm MSOs: $160,000-$1,250,000 USD in Annual Contracted Revenue; Launch with a 1 FT + 3 C Pod (4 People), Scale to 6",
+  "chapter_count": 12,
+  "total_word_count": 79428,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 93,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T22:48:04Z"
+}

@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-044-customs-duty-drawback-and-tariff-refund-recovery",
+  "volume_slug": "vol-044-customs-duty-drawback-and-tariff-refund-recovery",
+  "volume_number": 44,
+  "site_ui": {
+    "cover": [
+      "DUTY DRAWBACK",
+      "& TARIFF",
+      "RECOVERY"
+    ],
+    "deck": [
+      "TRACE THE DUTY. PROVE THE CLAIM.",
+      "THREE LANES. DISTINCT RECOVERY RULES."
+    ],
+    "lead": "Find recoverable dollars in import records, tariff classifications, and antitrust settlements before the filing windows close.",
+    "summary": "Eligible drawback can return up to 99% of qualifying duties, taxes, and fees, but document completeness, exclusions, and processing time determine whether a recovery engagement earns its margin. Build distinct revenue lanes around drawback administration, legally supportable tariff refunds, and antitrust settlement claims support, pricing each against verified eligibility, collection timing, and the applicable representation rules.",
+    "chapters": [
+      "Q1: The Three-Lane Recovery Thesis",
+      "Q2: Importers, Exporters & Claimants",
+      "Q3: Recovery Fees & Cash Cycles",
+      "Q4: Eligibility, Authority & Deadlines",
+      "Q5: Source the Recovery Pipeline",
+      "Q6: Audit Entries & Export Evidence",
+      "Q7: Build the Claim Package",
+      "Q8: Price Each Recovery Lane",
+      "Q9: Broker, Counsel & Client Channels",
+      "Q10: Run the Recovery Ledger",
+      "Q11: Defend Against Denials & Clawbacks",
+      "Q12: Scale Repeatable Claim Cohorts"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Identify authorized importers, exporters, and settlement claimants with material, documentable recovery potential."
+      ],
+      [
+        "SCREEN",
+        "Separate drawback, tariff-refund, and antitrust matters; verify standing, exclusions, and filing deadlines."
+      ],
+      [
+        "RECONCILE",
+        "Match entries, duty payments, exports, purchases, and settlement evidence without double-counting recovery."
+      ],
+      [
+        "ASSEMBLE",
+        "Prepare auditable claim files with qualified customs professionals or counsel where required."
+      ],
+      [
+        "FILE",
+        "Submit through the proper authorized channel and track inquiries, corrections, and determinations."
+      ],
+      [
+        "COLLECT",
+        "Reconcile actual proceeds, invoice contracted fees, and retain evidence for audits and overlapping-claim checks."
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "CUSTOMS DUTY DRAWBACK, TARIFF REFUND & ANTITRUST CLAIM RECOVERY",
+  "subtitle": "The Complete Playbook for Customs Duty Drawback, Tariff Refund & Antitrust Claim Recovery: $110,000–$920,000 USD in Annual Earned Fees, Built Around a 1 FT + 3 C (4 People) Pod, Expanding to Six at Scale",
+  "chapter_count": 12,
+  "total_word_count": 83213,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 95,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T22:48:04Z"
+}

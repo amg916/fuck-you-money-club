@@ -1,0 +1,747 @@
+{
+  "volume_id": "vol-044-customs-duty-drawback-and-tariff-refund-recovery",
+  "volume_slug": "vol-044-customs-duty-drawback-and-tariff-refund-recovery",
+  "concepts": [
+    {
+      "id": "concept_a",
+      "label": "Concept A — Black & Gold Executive"
+    },
+    {
+      "id": "concept_b",
+      "label": "Concept B — Bold Editorial"
+    },
+    {
+      "id": "concept_c",
+      "label": "Concept C — Modern Wealth Intelligence"
+    }
+  ],
+  "graphic_order": [
+    "cover_front",
+    "cover_back",
+    "cover_spine",
+    "01_front_cover",
+    "02_paperback_wrap",
+    "03_hardcover_concept",
+    "04_ebook_cover",
+    "05_3d_hardcover_mockup",
+    "06_paperback_mockup",
+    "07_ereader_mockup",
+    "08_phone_tablet_mockup",
+    "09_series_collection_mockup",
+    "10_social_promo_pack",
+    "diag-01-three-lane-recovery-workflow",
+    "diag-02-annual-nested-cohort-funnel",
+    "diag-03-base-case-fee-profit-waterfall",
+    "diag-04-collectible-base-fee-yield",
+    "diag-05-lane-specific-preflight-decision-tree",
+    "diag-06-core-and-scaled-pod-architecture",
+    "diag-07-startup-capital-allocation",
+    "diag-08-thirty-day-launch-roadmap"
+  ],
+  "cover_graphic_ids": [
+    "cover_front",
+    "cover_back",
+    "cover_spine",
+    "01_front_cover",
+    "02_paperback_wrap",
+    "03_hardcover_concept",
+    "04_ebook_cover",
+    "05_3d_hardcover_mockup",
+    "06_paperback_mockup",
+    "07_ereader_mockup",
+    "08_phone_tablet_mockup",
+    "09_series_collection_mockup",
+    "10_social_promo_pack"
+  ],
+  "diagram_graphic_ids": [
+    "diag-01-three-lane-recovery-workflow",
+    "diag-02-annual-nested-cohort-funnel",
+    "diag-03-base-case-fee-profit-waterfall",
+    "diag-04-collectible-base-fee-yield",
+    "diag-05-lane-specific-preflight-decision-tree",
+    "diag-06-core-and-scaled-pod-architecture",
+    "diag-07-startup-capital-allocation",
+    "diag-08-thirty-day-launch-roadmap"
+  ],
+  "allowed_statuses": [
+    "approved",
+    "changes_requested",
+    "pending_review",
+    "rejected"
+  ],
+  "reviews": {
+    "cover_front": {
+      "concept_a": {
+        "graphic_id": "cover_front",
+        "graphic_type": "cover",
+        "label": "Front Cover",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "cover_front",
+        "graphic_type": "cover",
+        "label": "Front Cover",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "cover_front",
+        "graphic_type": "cover",
+        "label": "Front Cover",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "cover_back": {
+      "concept_a": {
+        "graphic_id": "cover_back",
+        "graphic_type": "cover",
+        "label": "Back Cover",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "cover_back",
+        "graphic_type": "cover",
+        "label": "Back Cover",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "cover_back",
+        "graphic_type": "cover",
+        "label": "Back Cover",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "cover_spine": {
+      "concept_a": {
+        "graphic_id": "cover_spine",
+        "graphic_type": "cover",
+        "label": "Spine",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "cover_spine",
+        "graphic_type": "cover",
+        "label": "Spine",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "cover_spine",
+        "graphic_type": "cover",
+        "label": "Spine",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "01_front_cover": {
+      "concept_a": {
+        "graphic_id": "01_front_cover",
+        "graphic_type": "cover",
+        "label": "Front Cover",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "01_front_cover",
+        "graphic_type": "cover",
+        "label": "Front Cover",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "01_front_cover",
+        "graphic_type": "cover",
+        "label": "Front Cover",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "02_paperback_wrap": {
+      "concept_a": {
+        "graphic_id": "02_paperback_wrap",
+        "graphic_type": "cover",
+        "label": "Paperback Wrap",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "02_paperback_wrap",
+        "graphic_type": "cover",
+        "label": "Paperback Wrap",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "02_paperback_wrap",
+        "graphic_type": "cover",
+        "label": "Paperback Wrap",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "03_hardcover_concept": {
+      "concept_a": {
+        "graphic_id": "03_hardcover_concept",
+        "graphic_type": "cover",
+        "label": "Hardcover Concept",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "03_hardcover_concept",
+        "graphic_type": "cover",
+        "label": "Hardcover Concept",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "03_hardcover_concept",
+        "graphic_type": "cover",
+        "label": "Hardcover Concept",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "04_ebook_cover": {
+      "concept_a": {
+        "graphic_id": "04_ebook_cover",
+        "graphic_type": "cover",
+        "label": "Ebook Cover",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "04_ebook_cover",
+        "graphic_type": "cover",
+        "label": "Ebook Cover",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "04_ebook_cover",
+        "graphic_type": "cover",
+        "label": "Ebook Cover",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "05_3d_hardcover_mockup": {
+      "concept_a": {
+        "graphic_id": "05_3d_hardcover_mockup",
+        "graphic_type": "cover",
+        "label": "3D Hardcover Mockup",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "05_3d_hardcover_mockup",
+        "graphic_type": "cover",
+        "label": "3D Hardcover Mockup",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "05_3d_hardcover_mockup",
+        "graphic_type": "cover",
+        "label": "3D Hardcover Mockup",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "06_paperback_mockup": {
+      "concept_a": {
+        "graphic_id": "06_paperback_mockup",
+        "graphic_type": "cover",
+        "label": "Paperback Mockup",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "06_paperback_mockup",
+        "graphic_type": "cover",
+        "label": "Paperback Mockup",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "06_paperback_mockup",
+        "graphic_type": "cover",
+        "label": "Paperback Mockup",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "07_ereader_mockup": {
+      "concept_a": {
+        "graphic_id": "07_ereader_mockup",
+        "graphic_type": "cover",
+        "label": "Ereader Mockup",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "07_ereader_mockup",
+        "graphic_type": "cover",
+        "label": "Ereader Mockup",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "07_ereader_mockup",
+        "graphic_type": "cover",
+        "label": "Ereader Mockup",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "08_phone_tablet_mockup": {
+      "concept_a": {
+        "graphic_id": "08_phone_tablet_mockup",
+        "graphic_type": "cover",
+        "label": "Phone / Tablet Mockup",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "08_phone_tablet_mockup",
+        "graphic_type": "cover",
+        "label": "Phone / Tablet Mockup",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "08_phone_tablet_mockup",
+        "graphic_type": "cover",
+        "label": "Phone / Tablet Mockup",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "09_series_collection_mockup": {
+      "concept_a": {
+        "graphic_id": "09_series_collection_mockup",
+        "graphic_type": "cover",
+        "label": "Series Collection Mockup",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "09_series_collection_mockup",
+        "graphic_type": "cover",
+        "label": "Series Collection Mockup",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "09_series_collection_mockup",
+        "graphic_type": "cover",
+        "label": "Series Collection Mockup",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "10_social_promo_pack": {
+      "concept_a": {
+        "graphic_id": "10_social_promo_pack",
+        "graphic_type": "cover",
+        "label": "Social Promo Pack",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "10_social_promo_pack",
+        "graphic_type": "cover",
+        "label": "Social Promo Pack",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "10_social_promo_pack",
+        "graphic_type": "cover",
+        "label": "Social Promo Pack",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-01-three-lane-recovery-workflow": {
+      "concept_a": {
+        "graphic_id": "diag-01-three-lane-recovery-workflow",
+        "graphic_type": "diagram",
+        "label": "One Evidence Desk, Three Distinct Recovery Lanes",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-01-three-lane-recovery-workflow",
+        "graphic_type": "diagram",
+        "label": "One Evidence Desk, Three Distinct Recovery Lanes",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-01-three-lane-recovery-workflow",
+        "graphic_type": "diagram",
+        "label": "One Evidence Desk, Three Distinct Recovery Lanes",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-02-annual-nested-cohort-funnel": {
+      "concept_a": {
+        "graphic_id": "diag-02-annual-nested-cohort-funnel",
+        "graphic_type": "diagram",
+        "label": "From 240 Screened Accounts to 20 Paid Accounts",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-02-annual-nested-cohort-funnel",
+        "graphic_type": "diagram",
+        "label": "From 240 Screened Accounts to 20 Paid Accounts",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-02-annual-nested-cohort-funnel",
+        "graphic_type": "diagram",
+        "label": "From 240 Screened Accounts to 20 Paid Accounts",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-03-base-case-fee-profit-waterfall": {
+      "concept_a": {
+        "graphic_id": "diag-03-base-case-fee-profit-waterfall",
+        "graphic_type": "diagram",
+        "label": "$515,000 Earned Fees to $231,750 Owner Profit",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-03-base-case-fee-profit-waterfall",
+        "graphic_type": "diagram",
+        "label": "$515,000 Earned Fees to $231,750 Owner Profit",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-03-base-case-fee-profit-waterfall",
+        "graphic_type": "diagram",
+        "label": "$515,000 Earned Fees to $231,750 Owner Profit",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-04-collectible-base-fee-yield": {
+      "concept_a": {
+        "graphic_id": "diag-04-collectible-base-fee-yield",
+        "graphic_type": "diagram",
+        "label": "Five Fee Yields on the Same $100,000 Recovery",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-04-collectible-base-fee-yield",
+        "graphic_type": "diagram",
+        "label": "Five Fee Yields on the Same $100,000 Recovery",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-04-collectible-base-fee-yield",
+        "graphic_type": "diagram",
+        "label": "Five Fee Yields on the Same $100,000 Recovery",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-05-lane-specific-preflight-decision-tree": {
+      "concept_a": {
+        "graphic_id": "diag-05-lane-specific-preflight-decision-tree",
+        "graphic_type": "diagram",
+        "label": "Four Checks Before Valuing a Claim",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-05-lane-specific-preflight-decision-tree",
+        "graphic_type": "diagram",
+        "label": "Four Checks Before Valuing a Claim",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-05-lane-specific-preflight-decision-tree",
+        "graphic_type": "diagram",
+        "label": "Four Checks Before Valuing a Claim",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-06-core-and-scaled-pod-architecture": {
+      "concept_a": {
+        "graphic_id": "diag-06-core-and-scaled-pod-architecture",
+        "graphic_type": "diagram",
+        "label": "Four Core People; Six at Scaled Capacity",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-06-core-and-scaled-pod-architecture",
+        "graphic_type": "diagram",
+        "label": "Four Core People; Six at Scaled Capacity",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-06-core-and-scaled-pod-architecture",
+        "graphic_type": "diagram",
+        "label": "Four Core People; Six at Scaled Capacity",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-07-startup-capital-allocation": {
+      "concept_a": {
+        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_type": "diagram",
+        "label": "Allocate $8,000–$35,000 Without Buying Claim Principal",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_type": "diagram",
+        "label": "Allocate $8,000–$35,000 Without Buying Claim Principal",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_type": "diagram",
+        "label": "Allocate $8,000–$35,000 Without Buying Claim Principal",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    },
+    "diag-08-thirty-day-launch-roadmap": {
+      "concept_a": {
+        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_type": "diagram",
+        "label": "Thirty Days to a Controlled Recovery Desk",
+        "concept_id": "concept_a",
+        "concept_label": "Concept A — Black & Gold Executive",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_b": {
+        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_type": "diagram",
+        "label": "Thirty Days to a Controlled Recovery Desk",
+        "concept_id": "concept_b",
+        "concept_label": "Concept B — Bold Editorial",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      },
+      "concept_c": {
+        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_type": "diagram",
+        "label": "Thirty Days to a Controlled Recovery Desk",
+        "concept_id": "concept_c",
+        "concept_label": "Concept C — Modern Wealth Intelligence",
+        "status": "pending_review",
+        "notes": "",
+        "reviewed_at": null
+      }
+    }
+  },
+  "updated_at": "2026-11-23T22:48:04Z"
+}

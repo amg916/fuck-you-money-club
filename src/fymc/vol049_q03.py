@@ -1,0 +1,637 @@
+from __future__ import annotations
+
+CHAPTER_3 = {
+    "id": "Q3",
+    "chapter_id": "Q3",
+    "chapter_number": 3,
+    "question_number": 3,
+    "slug": "unit-economics-margin-waterfall-working-capital-float",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for regulated prediction-market terminals & licensed igaming affiliates?",
+    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
+    "subtitle": "Separate CFTC Analytics Subscriptions from Licensed CPA/NGR Commissions, Then Fund Scrubs, Contractor Labor, and Settlement Delays",
+    "layout_template": "financial_breakdown",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #49, Regulated Prediction-Market Terminals & Licensed iGaming Affiliates, "
+        "ranks #18 of 49 with a 91/100 Money-to-Manpower Score. Across its 12 mapped plays, "
+        "the economic engine is software and permitted referral compensation, never customer "
+        "deposits or trading volume. This chapter reconciles Formula v2.0 annual owner profit "
+        "of $19,500 Conservative, $137,750 Base, and $325,000 Scaled through explicit subscription "
+        "credits, affiliate scrubs, NGR deductions, acquisition costs, and delivery labor. "
+        "It separates accounting revenue from settlement cash, sizes receivable funding against "
+        "payout locks, and tests simultaneous commission and CAC deterioration. The operating "
+        "discipline is simple: book only supportable consideration, preserve jurisdiction-specific "
+        "attribution, and finance the collection gap before expanding traffic or promising contractor capacity."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$75,000",
+            "context": "Annual operator revenue after contractual commission adjustments; excludes customer stakes",
+            "note": "26% net margin; $19,500 owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$362,500",
+            "context": "Annual operator revenue after contractual commission adjustments; excludes customer stakes",
+            "note": "38.0% net margin; $137,750 owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$650,000",
+            "context": "Annual operator revenue after contractual commission adjustments; excludes customer stakes",
+            "note": "50% net margin; $325,000 owner profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Reconcile Four Revenue Ledgers Before Calling Anything Margin",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Build four ledgers: analytics subscriptions, permitted builder referrals, sportsbook CPA, "
+                    "and casino or sportsbook NGR participation. Kalshi or ForecastEx market activity is not "
+                    "operator revenue; neither are customer deposits, hedge stakes, winnings, or sportsbook "
+                    "handle. The canonical annual revenue totals are $75,000, $362,500, and $650,000. Although "
+                    "the scorecard calls these gross revenue, this chapter treats them as operator revenue "
+                    "after contractual credits and commission adjustments, before business expenses. The "
+                    "allocation below is an illustrative reconciliation, not a claim about existing vendor "
+                    "agreements. Under ASC 606, assess each promised service and principal-versus-agent "
+                    "relationship rather than applying one retained_share multiplier to every receipt. A "
+                    "direct software subscription can be gross operator revenue while an affiliate earns "
+                    "only its contractual commission. Processor charges remain expenses when the operator "
+                    "is principal; refunds and service credits reduce subscription consideration. Keep "
+                    "contract versions, jurisdiction, performance period, cancellation rights, and settlement "
+                    "currency beside every ledger entry. Do not recognize a possible builder payment merely "
+                    "because an API connection exists. Document the permitted program, earned event, "
+                    "counterparty approval, and enforceable rate first. Allocate annual subscriptions over "
+                    "the service period, even when payment arrives before access begins, so cash collection "
+                    "does not manufacture current-period margin."
+                ),
+                (
+                    "The subscription bridge uses 100, 400, and approximately 667 annual-equivalent customers "
+                    "at $480 gross billings each; the Scaled billing target is exactly $320,000 rather than "
+                    "a rounded customer count multiplied back into revenue. Gross subscription billings of "
+                    "$48,000, $192,000, and $320,000 lose $3,000, $12,000, and $20,000 to expected refunds "
+                    "and service credits, producing $45,000, $180,000, and $300,000 recognized subscription "
+                    "revenue. Builder consideration starts at $6,250, $28,125, and $62,500, with a 20% "
+                    "illustrative eligibility adjustment leaving $5,000, $22,500, and $50,000. Affiliate "
+                    "CPA begins with 100, 600, and 1,200 submitted first-time-depositor events at $250. "
+                    "A 20% scrub allowance removes duplicate, ineligible, fraudulent, or otherwise "
+                    "contractually rejected events, leaving $20,000, $120,000, and $240,000. These event "
+                    "counts are attribution units, not a permission to solicit deposits everywhere. Retain "
+                    "signed server-to-server event receipts, eligibility evidence, campaign identifiers, "
+                    "and rejection reasons in a restricted database. Reconcile Stripe subscription exports "
+                    "separately from operator affiliate statements, using immutable event identifiers to "
+                    "prevent duplicate recognition when a pending event becomes approved. Estimate variable "
+                    "consideration from mature cohorts and constrain recognition where a significant "
+                    "reversal remains probable under the applicable accounting assessment."
+                ),
+                (
+                    "NGR needs its own waterfall because a headline revenue-share percentage hides the "
+                    "contractual base. Conservative attributed gaming revenue is $100,000 before $20,000 "
+                    "administration deductions, $20,000 bonus deductions, and $10,000 negative carryover; "
+                    "a 10% share of the remaining $50,000 yields $5,000. Base starts at $800,000, "
+                    "subtracts $160,000 administration, $200,000 bonuses, and $40,000 carryover, then earns "
+                    "$40,000. Scaled starts at $1,200,000, subtracts $240,000 administration, $300,000 bonuses, "
+                    "and $60,000 carryover, then earns $60,000. Those gaming-revenue pools belong to the "
+                    "merchant economics, not the publisher's revenue. Effective retained commission against "
+                    "the starting pool is therefore 5% in all three illustrations despite a 10% contractual "
+                    "share. Actual agreements can bundle taxes, platform charges, jackpot costs, and payment "
+                    "losses differently; import their definitions rather than relabeling every deduction "
+                    "as administration. Combined preliminary operator consideration is $89,250, $450,125, "
+                    "and $802,500, including preliminary NGR shares before deductions. Total adjustments "
+                    "of $14,250, $87,625, and $152,500 reconcile exactly to the scorecard. Keep negative "
+                    "carryover by permitted contract boundary, since one winning customer can otherwise "
+                    "erase an apparently profitable acquisition cohort for several settlement periods."
+                ),
+            ],
+            "table": {
+                "caption": "Annual Gross-to-Net Revenue Bridge: Illustrative Allocations Reconciled to Formula v2.0",
+                "headers": [
+                    "Revenue component and required recognition treatment",
+                    "Conservative annual bridge with explicit adjustment",
+                    "Base annual bridge with explicit adjustment",
+                    "Scaled annual bridge with explicit adjustment",
+                ],
+                "rows": [
+                    [
+                        "Direct analytics subscription billings less customer credits",
+                        "$48,000 billed less $3,000 credits yields $45,000 revenue",
+                        "$192,000 billed less $12,000 credits yields $180,000 revenue",
+                        "$320,000 billed less $20,000 credits yields $300,000 revenue",
+                    ],
+                    [
+                        "Permitted builder consideration less documented eligibility exclusions",
+                        "$6,250 preliminary less $1,250 exclusions yields $5,000 revenue",
+                        "$28,125 preliminary less $5,625 exclusions yields $22,500 revenue",
+                        "$62,500 preliminary less $12,500 exclusions yields $50,000 revenue",
+                    ],
+                    [
+                        "Submitted CPA commissions less expected contractual event scrubs",
+                        "$25,000 submitted less $5,000 scrubs yields $20,000 revenue",
+                        "$150,000 submitted less $30,000 scrubs yields $120,000 revenue",
+                        "$300,000 submitted less $60,000 scrubs yields $240,000 revenue",
+                    ],
+                    [
+                        "Attributed gaming pool after administration and bonus deductions",
+                        "$100,000 pool less $40,000 deductions leaves $60,000",
+                        "$800,000 pool less $360,000 deductions leaves $440,000",
+                        "$1,200,000 pool less $540,000 deductions leaves $660,000",
+                    ],
+                    [
+                        "Contractual NGR commission after negative carryover application",
+                        "$60,000 less $10,000 carryover, multiplied by 10%, yields $5,000",
+                        "$440,000 less $40,000 carryover, multiplied by 10%, yields $40,000",
+                        "$660,000 less $60,000 carryover, multiplied by 10%, yields $60,000",
+                    ],
+                    [
+                        "Preliminary operator consideration reduced by all revenue adjustments",
+                        "$89,250 preliminary less $14,250 adjustments yields $75,000 revenue",
+                        "$450,125 preliminary less $87,625 adjustments yields $362,500 revenue",
+                        "$802,500 preliminary less $152,500 adjustments yields $650,000 revenue",
+                    ],
+                    [
+                        "Recognized operator revenue excluding every customer trading stake",
+                        "$45,000 subscriptions plus $5,000 builder plus $25,000 affiliate revenue",
+                        "$180,000 subscriptions plus $22,500 builder plus $160,000 affiliate revenue",
+                        "$300,000 subscriptions plus $50,000 builder plus $300,000 affiliate revenue",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Negotiate the Commission Definition Before Negotiating the Percentage",
+                "body": (
+                    "A smaller percentage of an auditable commission base can outperform a larger "
+                    "percentage burdened by discretionary deductions and indefinite carryover."
+                ),
+                "items": [
+                    "Require event-level scrub reasons and a dated dispute window; compare rejected CPA identifiers against the original signed S2S receipts.",
+                    "Seek separately reported administration, bonus, tax, and payment deductions; refuse to forecast an opaque bundled NGR base as if it were clean gaming revenue.",
+                    "Track negative carryover by brand, product, and jurisdiction wherever the signed agreement permits separation; never assume cross-product offsetting disappears automatically.",
+                    "Measure renewal collections separately from first-depositor commissions so post-NFL affiliate weakness cannot conceal durable subscription performance.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Charge Delivery Labor and Acquisition Against the Same Cohort",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Recognized revenue is the top of the operating waterfall, not distributable cash. "
+                    "Conservative expenses are $18,000 delivery labor, $15,000 acquisition, $6,000 infrastructure "
+                    "and payment costs, $7,500 regulatory and professional work, and $9,000 administration: "
+                    "$55,500 total, leaving $19,500. Base expenses are $60,000, $75,000, $24,000, $30,000, "
+                    "and $35,750 respectively: $224,750 total, leaving $137,750. Scaled expenses are "
+                    "$100,000, $120,000, $40,000, $35,000, and $30,000: $325,000 total, leaving $325,000. "
+                    "Direct contribution after delivery and infrastructure is $51,000, $278,500, and "
+                    "$510,000; acquisition and overhead then produce the canonical 26%, 38.0%, and 50% "
+                    "margins. These expense allocations are planning assumptions selected to reconcile "
+                    "the supplied scorecard, not verified quotations. Owner profit means modeled business "
+                    "surplus before the owner's personal income taxes, financing charges, and discretionary "
+                    "distributions. The owner supplies the first full-time position without a separate "
+                    "salary expense in this bridge. Replacing that labor with a salaried manager reduces "
+                    "the distributable result. Expense hardware purchases here only when the accounting "
+                    "policy permits; otherwise track depreciation and the separate capital cash payment "
+                    "without counting the same purchase twice in profit."
+                ),
+                (
+                    "Make contractor capacity auditable rather than decorating the forecast with headcount. "
+                    "Conservative delivery assumes two fractional contractors totaling 600 hours at $30, "
+                    "funding feed maintenance and attribution support. Base assumes two contractors "
+                    "totaling 1,500 hours at $40, covering analytics engineering and publisher operations. "
+                    "Scaled allocates $60,000 fully loaded compensation to one additional employee and "
+                    "$40,000 to three fractional contractors totaling 800 hours at $50. That produces "
+                    "the required teams of 1 FT + 2 C, 1 FT + 2 C, and 2 FT + 3 C without pretending "
+                    "every contractor works full-time. Confirm local compensation feasibility before "
+                    "adopting the Scaled staffing mix. The owner handles product direction and commercial "
+                    "relationships; contractors receive bounded tickets, documented access, and measurable "
+                    "service commitments. Instrument feed uptime, alert latency, customer support minutes, "
+                    "and rejected attribution events. A sub-second WebSocket engine is a service target, "
+                    "not proof that every source permits that access or latency. Price authorized market "
+                    "data, reconnection handling, and monitoring into infrastructure. If vendor access "
+                    "requires a higher-priced agreement, revise contribution immediately rather than "
+                    "funding the difference through unpaid contractor hours or assuming unsupported "
+                    "endpoints will remain available during peak sporting events."
+                ),
+                (
+                    "Allocate acquisition spend to channels before calculating payback. Of total CAC "
+                    "budgets, assign $9,000, $36,000, and $60,000 to subscriptions; $5,000, $36,000, "
+                    "and $54,000 to CPA; and the remaining $1,000, $3,000, and $6,000 to builder and "
+                    "NGR acquisition. At 100 and 400 annual-equivalent subscription customers, and "
+                    "$320,000 divided by $480 for Scaled, subscription CAC is $90 throughout this "
+                    "illustration. Annual net subscription revenue per equivalent customer is $450. "
+                    "Allocate $150 direct annual service cost per customer from the existing delivery "
+                    "and infrastructure budgets, yielding $25 monthly contribution and 3.6-month "
+                    "economic payback. Annual prepayment changes cash timing, not that service obligation. "
+                    "For CPA, approved events number 80, 480, and 960; acquisition cost per approved "
+                    "event is $62.50, $75.00, and $56.25. Subtract those costs from $250 commission "
+                    "to get $187.50, $175.00, and $193.75 before shared expenses. Do not charge "
+                    "these allocations a second time below the consolidated waterfall. Measure retention "
+                    "by paid renewal cohort rather than projecting perpetual lifetime value from first-month "
+                    "conversion. Pause an acquisition channel when mature contribution deteriorates, even "
+                    "if its gross sign-up count continues growing."
+                ),
+            ],
+            "table": {
+                "caption": "Annual Expense Waterfall and Exact Owner-Profit Reconciliation",
+                "headers": [
+                    "Operating line and economic classification",
+                    "Conservative annual amount and treatment",
+                    "Base annual amount and treatment",
+                    "Scaled annual amount and treatment",
+                ],
+                "rows": [
+                    [
+                        "Recognized revenue entering the consolidated expense waterfall",
+                        "$75,000 revenue after subscription and commission adjustments",
+                        "$362,500 revenue after subscription and commission adjustments",
+                        "$650,000 revenue after subscription and commission adjustments",
+                    ],
+                    [
+                        "Delivery labor including fractional contractor service capacity",
+                        "$18,000 expense funds 600 contracted hours at $30",
+                        "$60,000 expense funds 1,500 contracted hours at $40",
+                        "$100,000 expense includes $60,000 employee and $40,000 contractors",
+                    ],
+                    [
+                        "Infrastructure, authorized feed access, monitoring, and payment costs",
+                        "$6,000 expense leaves $51,000 contribution after delivery",
+                        "$24,000 expense leaves $278,500 contribution after delivery",
+                        "$40,000 expense leaves $510,000 contribution after delivery",
+                    ],
+                    [
+                        "Acquisition spending attributed once across four revenue ledgers",
+                        "$15,000 annual acquisition expense includes $9,000 subscription acquisition",
+                        "$75,000 annual acquisition expense includes $36,000 subscription acquisition",
+                        "$120,000 annual acquisition expense includes $60,000 subscription acquisition",
+                    ],
+                    [
+                        "Regulatory registration, accounting interpretation, and professional service costs",
+                        "$7,500 annual expense supports the selected jurisdiction footprint",
+                        "$30,000 annual expense supports expanded licensed affiliate operations",
+                        "$35,000 annual expense assumes repeatable multi-market reporting processes",
+                    ],
+                    [
+                        "Administration, insurance, tools, and remaining operating support costs",
+                        "$9,000 annual administration completes $55,500 total business expenses",
+                        "$35,750 annual administration completes $224,750 total business expenses",
+                        "$30,000 annual administration completes $325,000 total business expenses",
+                    ],
+                    [
+                        "Annual owner surplus after all modeled operating expenses",
+                        "$19,500 owner profit equals exactly 26% revenue margin",
+                        "$137,750 owner profit equals exactly 38.0% revenue margin",
+                        "$325,000 owner profit equals exactly 50% revenue margin",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Finance Settlement Delays Without Touching Participant Money",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Model days sales outstanding from the earning date to unrestricted bank availability, "
+                    "not from the date an affiliate dashboard first displays a commission. Builder "
+                    "collections take 60, 45, and 45 days in the three scenarios; CPA takes 60, 60, "
+                    "and 75 days; NGR takes 90 days throughout. These are explicit planning assumptions "
+                    "combining statement preparation, validation locks, payment terms, and bank settlement. "
+                    "A contract stating net thirty after monthly validation can easily produce a longer "
+                    "earning-to-cash interval. Assume subscriptions are prepaid with negligible processor "
+                    "settlement delay in the baseline; add actual processor reserves separately if imposed. "
+                    "Using annual recognized stream revenue multiplied by DSO and divided by 365, "
+                    "aggregate receivables are $5,342.47, $32,363.01, and $70,273.97. This calculation "
+                    "funds collectible amounts after estimated scrubs, not rejected commissions that "
+                    "should never have entered revenue. Store statement date, dispute deadline, expected "
+                    "release date, actual receipt, and aging bucket for each operator. A payout lock "
+                    "extending beyond the normal validation period is a cash-timing issue until evidence "
+                    "changes collectibility; an adverse eligibility decision is a revenue adjustment. "
+                    "Keep those two events distinct so the finance dashboard does not misdiagnose "
+                    "a failing acquisition cohort as merely slow payment."
+                ),
+                (
+                    "Add two months of modeled operating expense as a separate continuity reserve: "
+                    "$9,250, $37,458.33, and $54,166.67. Combining the exact unrounded receivable "
+                    "calculations with those reserves produces planning liquidity targets of $14,592.47, "
+                    "$69,821.35, and $124,440.64. This deliberately conservative receivables-plus-buffer "
+                    "measure is not a substitute for a dated cash forecast, and some expense coverage "
+                    "overlaps collection timing. Assume no supplier credit, owner distribution, tax payment, "
+                    "debt service, or incremental capital purchase in these targets. Add those items "
+                    "where applicable and deduct only committed, available financing. The supplied "
+                    "$8,000–$45,000 startup range can support a focused launch but does not automatically "
+                    "fund Base or Scaled liquidity. Likewise, the supplied $1,500–$10,000 monthly opex "
+                    "range is a launch planning envelope, not a ceiling on these mature scenarios: "
+                    "total modeled monthly expenses are $4,625, $18,729.17, and $27,083.33. Subscription "
+                    "prepayment may reduce external funding needs, but deferred-service delivery and "
+                    "refund obligations still need cash coverage. Collecting annual plans during launch "
+                    "does not justify distributing that entire receipt. Build a rolling thirteen-week "
+                    "forecast showing weekly collections, contractor invoices, renewals, professional fees, "
+                    "and the minimum unrestricted balance."
+                ),
+                (
+                    "Separate the accounting reversal allowance from the treasury buffer. The CPA model "
+                    "already removes $5,000, $30,000, and $60,000 annually for expected scrubs; deducting "
+                    "those amounts again as operating expense would understate canonical profit. They "
+                    "are also not automatically cash sitting in a bank account. Where a counterparty "
+                    "can reclaim commissions after payment, retain cash against measured open clawback "
+                    "exposure using contract windows and cohort history. For example, Base monthly "
+                    "submitted CPA consideration is $12,500 and the modeled expected reduction is "
+                    "$2,500; a two-month exposure window suggests $5,000 of expected adjustments, "
+                    "but only amounts not already netted from settlement create additional refund "
+                    "cash exposure. An extra thirty-day delay across all non-subscription streams "
+                    "adds $2,465.75, $15,000.00, and $28,767.12 to receivable funding without "
+                    "changing profit if the revenue remains collectible. Missed payments require "
+                    "counterparty credit assessment, not optimism about eventual settlement. Reduce "
+                    "new paid acquisition before deferring essential engineering or mixing business "
+                    "cash with participant deposits. Participants must fund and execute their own "
+                    "transactions; the publisher never borrows customer balances to bridge affiliate "
+                    "payouts. Make owner distributions conditional on the forecast remaining above "
+                    "the funded operating reserve after contractual settlement stresses."
+                ),
+            ],
+            "table": {
+                "caption": "DSO, Payout-Lock Exposure, and Unrestricted Liquidity Planning",
+                "headers": [
+                    "Cash requirement with explicit timing assumption",
+                    "Conservative receivable or reserve calculation",
+                    "Base receivable or reserve calculation",
+                    "Scaled receivable or reserve calculation",
+                ],
+                "rows": [
+                    [
+                        "Subscription collection timing excludes modeled processor settlement delay",
+                        "$45,000 annual revenue prepaid; baseline subscription receivable equals zero",
+                        "$180,000 annual revenue prepaid; baseline subscription receivable equals zero",
+                        "$300,000 annual revenue prepaid; baseline subscription receivable equals zero",
+                    ],
+                    [
+                        "Builder receivables include validation and bank availability timing",
+                        "$5,000 multiplied by 60 days divided by 365: $821.92",
+                        "$22,500 multiplied by 45 days divided by 365: $2,773.97",
+                        "$50,000 multiplied by 45 days divided by 365: $6,164.38",
+                    ],
+                    [
+                        "CPA receivables use recognized commissions after expected scrubs",
+                        "$20,000 multiplied by 60 days divided by 365: $3,287.67",
+                        "$120,000 multiplied by 60 days divided by 365: $19,726.03",
+                        "$240,000 multiplied by 75 days divided by 365: $49,315.07",
+                    ],
+                    [
+                        "NGR receivables follow the complete contractual deduction waterfall",
+                        "$5,000 multiplied by 90 days divided by 365: $1,232.88",
+                        "$40,000 multiplied by 90 days divided by 365: $9,863.01",
+                        "$60,000 multiplied by 90 days divided by 365: $14,794.52",
+                    ],
+                    [
+                        "Continuity reserve equals two months of total operating expense",
+                        "$55,500 annual expense divided by six yields $9,250.00",
+                        "$224,750 annual expense divided by six yields $37,458.33",
+                        "$325,000 annual expense divided by six yields $54,166.67",
+                    ],
+                    [
+                        "Receivables plus reserve using unrounded underlying calculation amounts",
+                        "$5,342.47 receivables plus continuity reserve yields $14,592.47 target",
+                        "$32,363.01 receivables plus continuity reserve yields $69,821.35 target",
+                        "$70,273.97 receivables plus continuity reserve yields $124,440.64 target",
+                    ],
+                    [
+                        "Additional thirty-day delay affecting every non-subscription revenue stream",
+                        "$30,000 annual affected revenue requires $2,465.75 additional liquidity",
+                        "$182,500 annual affected revenue requires $15,000.00 additional liquidity",
+                        "$350,000 annual affected revenue requires $28,767.12 additional liquidity",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the cohort evidence",
+                    "action": "Export subscription invoices, affiliate event receipts, and operator settlement statements each week.",
+                    "detail": "Join records by immutable transaction identifier, contract version, jurisdiction, and earning month; restrict access to customer-level attribution evidence.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile earned consideration",
+                    "action": "Apply credits, eligibility scrubs, NGR deductions, and carryover before recording recognized revenue.",
+                    "detail": "Separate pending, rejected, earned, billed, collected, and clawed-back amounts; retain supporting reasons for every movement between states.",
+                },
+                {
+                    "step": 3,
+                    "title": "Project unrestricted collections",
+                    "action": "Populate thirteen weekly cash buckets using actual earning-to-bank settlement terms.",
+                    "detail": "Include contractor due dates, professional costs, processor restrictions, refund exposure, and a thirty-day affiliate delay sensitivity.",
+                },
+                {
+                    "step": 4,
+                    "title": "Authorize spending within funded capacity",
+                    "action": "Reduce acquisition commitments whenever forecast cash breaches the chosen continuity reserve.",
+                    "detail": "Release owner distributions only after preserving service delivery capacity and documented clawback funding; never supplement business float with participant money.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Stress the Affiliate Cohort and Bound the Promo-Conversion Play",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Stress one driver at a time before stacking shocks. A 20% annual reduction in "
+                    "recognized CPA revenue, representing a deliberately severe seasonal budget contraction, "
+                    "cuts owner profit to $15,500, $113,750, and $277,000 with costs held fixed. A "
+                    "25% acquisition-cost increase cuts profit to $15,750, $119,000, and $295,000. "
+                    "Increasing the CPA scrub rate from 20% to 30% on unchanged submitted volumes "
+                    "removes $2,500, $15,000, and $30,000, leaving $17,000, $122,750, and $295,000. "
+                    "For a transparent additive planning stress, subtract all three independently "
+                    "calculated losses from baseline profit: $9,250, $80,000, and $217,000 remain. "
+                    "That additive stress is intentionally different from a sequential multiplicative "
+                    "forecast; it does not reduce the scrub loss after reducing CPA revenue. Rebuild "
+                    "the actual monthly forecast when operator caps or rates change. If NGR carryover "
+                    "doubles while other inputs stay fixed, additional annual commission losses are "
+                    "$1,000, $4,000, and $6,000. Watch post-NFL booking changes, state launches, and "
+                    "promotional calendar concentration rather than assuming twelve identical months. "
+                    "When acquisition fails its contribution threshold, shift available effort toward "
+                    "renewals and lower-cost editorial distribution, not increasingly aggressive deposit "
+                    "promises or movement into an unlicensed venue."
+                ),
+                (
+                    "The mapped play sportsbook_promo_ev_matched_betting_syndicates requires a narrower "
+                    "implementation than its promotional description suggests. Treat the Player-2 concept "
+                    "as personally executed analytical education, not pooled capital, shared accounts, "
+                    "or an operator-managed wagering syndicate. A hypothetical $100 stake-not-returned "
+                    "bonus converted at 75% produces $75 before hedge friction, subscription cost, "
+                    "tax effects, and execution losses. Twenty eligible offers averaging $200 at "
+                    "that conversion rate would produce $3,000 before those deductions; this requires "
+                    "actual eligibility and available offers at every venue. Producing $8,000 at 80% "
+                    "would require $10,000 in qualifying bonus face value, which cannot be presumed "
+                    "for a newly eligible resident. The stated 70–85% conversion range and 15–25 "
+                    "venue count are hypotheses to test against current terms, not deterministic "
+                    "cash entitlements. Deposit matches, cash bonuses, and free bets require different "
+                    "stake-return and wagering-requirement formulas. For software economics, twenty "
+                    "customers paying $30 monthly produce $600 subscription billings, not the sum "
+                    "of customer betting outcomes. A proposed 20% share of a participant's $3,000 "
+                    "result would be $600, but exclude that fee from this model unless its legal "
+                    "classification and enforceability are established. No profit-split revenue supports "
+                    "the canonical scenarios."
+                ),
+                (
+                    "Use the mandated fallback as a control boundary: each participant executes exclusively "
+                    "through their own personal account, mobile device, and cellular connection, with "
+                    "high-liquidity mainlines and no credential sharing. Cellular access does not excuse "
+                    "location spoofing, account duplication, or promotion-term violations. Skip an offer "
+                    "when hedges are unavailable, limits are asymmetric, settlement rules conflict, or "
+                    "the terms prohibit the proposed conduct. Do not route United States users to "
+                    "unlicensed offshore or crypto operators or unlawful sweepstakes casinos. Keep "
+                    "analytics subscriptions and permitted builder referrals operationally distinct from "
+                    "state-licensed CPA/NGR campaigns. Non-custody alone does not resolve registration: "
+                    "17 CFR 1.3 and 3.10 require analysis of introducing-broker and futures-commission-merchant "
+                    "activity, while commodity trading adviser questions require their own assessment "
+                    "under 7 U.S.C. 6m and applicable exclusions or exemptions. Do not receive or "
+                    "transmit customer orders without resolving the required status. Verify NJ DGE, "
+                    "PA PGCB, and MI MGCB requirements for the particular vendor activity and compensation "
+                    "structure; do not assume one registration travels across states. Apply the project's "
+                    "21+ access policy, jurisdiction-specific geofencing, and responsible-gaming helpline "
+                    "disclosures. Treat Ontario separately under its own operator and marketing requirements. "
+                    "When status is unresolved, disable compensated referrals and retain only activities "
+                    "already established as permitted."
+                ),
+            ],
+            "table": {
+                "caption": "Three-Scenario Sensitivity Grid with Explicit Fixed-Cost Assumptions",
+                "headers": [
+                    "Stress driver or unit-economics decision rule",
+                    "Conservative modeled outcome and operator interpretation",
+                    "Base modeled outcome and operator interpretation",
+                    "Scaled modeled outcome and operator interpretation",
+                ],
+                "rows": [
+                    [
+                        "Canonical operating case before incremental sensitivity losses",
+                        "$19,500 annual owner profit supports the baseline planning case",
+                        "$137,750 annual owner profit supports the baseline planning case",
+                        "$325,000 annual owner profit supports the baseline planning case",
+                    ],
+                    [
+                        "Recognized CPA revenue falls twenty percent with expenses unchanged",
+                        "$4,000 revenue loss leaves $15,500 annual owner profit",
+                        "$24,000 revenue loss leaves $113,750 annual owner profit",
+                        "$48,000 revenue loss leaves $277,000 annual owner profit",
+                    ],
+                    [
+                        "Acquisition spending rises twenty-five percent without additional customers",
+                        "$3,750 additional expense leaves $15,750 annual owner profit",
+                        "$18,750 additional expense leaves $119,000 annual owner profit",
+                        "$30,000 additional expense leaves $295,000 annual owner profit",
+                    ],
+                    [
+                        "CPA scrub rate increases ten percentage points on submissions",
+                        "$2,500 additional adjustment leaves $17,000 annual owner profit",
+                        "$15,000 additional adjustment leaves $122,750 annual owner profit",
+                        "$30,000 additional adjustment leaves $295,000 annual owner profit",
+                    ],
+                    [
+                        "Additive combination of seasonality, acquisition, and scrub losses",
+                        "$10,250 combined deterioration leaves $9,250 annual owner profit",
+                        "$57,750 combined deterioration leaves $80,000 annual owner profit",
+                        "$108,000 combined deterioration leaves $217,000 annual owner profit",
+                    ],
+                    [
+                        "Negative NGR carryover doubles before contractual share calculation",
+                        "$1,000 commission loss leaves $18,500 annual owner profit",
+                        "$4,000 commission loss leaves $133,750 annual owner profit",
+                        "$6,000 commission loss leaves $319,000 annual owner profit",
+                    ],
+                    [
+                        "Subscription contribution payback under the allocated service-cost assumption",
+                        "$90 acquisition divided by $25 monthly contribution: 3.6 months",
+                        "$90 acquisition divided by $25 monthly contribution: 3.6 months",
+                        "$90 acquisition divided by $25 monthly contribution: 3.6 months",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify Permission, Attribution, Collectibility, and Liquidity Before Buying Traffic",
+                "body": (
+                    "Expand only the revenue stream whose operating requirements and cash mechanics "
+                    "have been demonstrated; a working dashboard does not establish permission to earn commissions."
+                ),
+                "items": [
+                    "Document the publisher, CTA, IB, and FCM boundary analysis for the actual feature set; disable custody, pooled capital, and unresolved order-transmission functions.",
+                    "Confirm each affiliate agreement, applicable vendor registration, permitted campaign jurisdiction, 21+ access policy, geofencing control, and responsible-gaming disclosure.",
+                    "Reconcile a mature test cohort from signed S2S events through operator rejection reasons and unrestricted bank receipt before extrapolating approved CPA economics.",
+                    "Fund the thirteen-week cash forecast through a thirty-day affiliate delay and the additive profit stress before committing recurring acquisition or contractor spend.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A commission is margin only after deductions, and it is spending money only after settlement.",
+    "diagram_id": "diag-03",
+    "action_checklist": [
+        "Create separate subscription, builder, CPA, and NGR ledgers, then reconcile their annual totals to $75,000, $362,500, and $650,000.",
+        "Attach contract-specific scrub rules, NGR deductions, carryover boundaries, dispute deadlines, and payout-lock terms to every affiliate cohort.",
+        "Allocate contractor hours and channel CAC once, preserving exact annual owner profits of $19,500, $137,750, and $325,000 in the baseline.",
+        "Build the thirteen-week unrestricted-cash forecast using earning-to-bank DSO, continuity reserves, and the additional thirty-day collection stress.",
+        "Replace promo-conversion promises with offer-level eligibility, hedge-friction, and settlement calculations while keeping all participant funds and execution outside the platform.",
+        "Verify the actual CFTC activity boundary and jurisdiction-specific affiliate permissions before enabling compensated links, then review the seasonal sensitivity grid monthly.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "17 CFR 1.3 — Definitions, Including Introducing Broker and Futures Commission Merchant",
+            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-1/section-1.3",
+            "relevance": (
+                "Evaluate actual solicitation, order handling, and customer-fund activities against "
+                "the regulatory definitions; describing a product as analytics does not determine its status."
+            ),
+        },
+        {
+            "title": "17 CFR 3.10 — Registration of Commodity Intermediaries",
+            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-3/section-3.10",
+            "relevance": (
+                "Identify registration requirements and applicable exceptions before enabling functions "
+                "that go beyond an established publisher or software role."
+            ),
+        },
+        {
+            "title": "7 U.S.C. 6m — Registration of Commodity Trading Advisers and Commodity Pool Operators",
+            "url": "https://www.law.cornell.edu/uscode/text/7/6m",
+            "relevance": (
+                "Assess adviser and pool-operator status separately from custody; do not assume "
+                "subscription pricing or non-custodial delivery independently resolves registration."
+            ),
+        },
+        {
+            "title": "7 U.S.C. 1a — Commodity Exchange Act Definitions",
+            "url": "https://www.law.cornell.edu/uscode/text/7/1a",
+            "relevance": (
+                "Use the statutory definitions and their conditions when evaluating publisher "
+                "treatment, commodity trading advice, and intermediary activity."
+            ),
+        },
+        {
+            "title": "17 CFR 4.14 — Exemption from Registration as a Commodity Trading Adviser",
+            "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14",
+            "relevance": (
+                "Test any claimed adviser-registration exemption against the actual service, "
+                "customer interaction, and conditions rather than assuming all analytics qualify."
+            ),
+        },
+        {
+            "title": "31 U.S.C. 5363 — Prohibition on Acceptance of Restricted Transactions",
+            "url": "https://www.law.cornell.edu/uscode/text/31/5363",
+            "relevance": (
+                "Recognize the federal restriction on accepting specified payment instruments "
+                "in connection with unlawful Internet gambling; venue legality requires separate analysis."
+            ),
+        },
+        {
+            "title": "Michigan Compiled Laws 432.309 — Internet Gaming Supplier License",
+            "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-432-309",
+            "relevance": (
+                "Evaluate whether the supplied service requires an internet gaming supplier license "
+                "or another Board-directed status; do not assume every affiliate arrangement is classified identically."
+            ),
+        },
+    ],
+}
