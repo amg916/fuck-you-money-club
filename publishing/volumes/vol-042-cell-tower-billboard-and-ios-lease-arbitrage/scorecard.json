@@ -1,0 +1,564 @@
+{
+  "candidate_number": 42,
+  "slug": "cell-tower,-digital-billboard-&-ios-lease-arbitrage",
+  "title": "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage",
+  "category": "Infrastructure & IOS lease arbitrage",
+  "production_stage": "approved_master",
+  "scores": {
+    "revenue_potential": 24,
+    "profit_margin_potential": 24,
+    "team_efficiency": 19,
+    "startup_accessibility": 12,
+    "automation_potential": 12
+  },
+  "dimension_max": {
+    "revenue_potential": 25,
+    "profit_margin_potential": 25,
+    "team_efficiency": 20,
+    "startup_accessibility": 15,
+    "automation_potential": 15
+  },
+  "total_score": 91,
+  "tier_label": "Elite Small-Team Cash Machine",
+  "evidence_confidence": "High",
+  "uncertainty_band": "±3 pts",
+  "uncertainty_bounds": {
+    "low": 88,
+    "high": 94
+  },
+  "uncertainty_note": "Editorial sensitivity band, not a statistical interval. Confidence is a supplied classification; independent source review is required.",
+  "score_rationale": {
+    "revenue_potential": "Revenue Potential: 24/25. Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.",
+    "profit_margin_potential": "Profit Margin Potential: 24/25. Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.",
+    "team_efficiency": "Team Efficiency: 19/20. Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.",
+    "startup_accessibility": "Startup Accessibility: 12/15. Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.",
+    "automation_potential": "Automation Potential: 12/15. Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases."
+  },
+  "economics": {
+    "gross_revenue_range": "$120,000–$950,000 USD annually",
+    "retained_revenue_range": "$120,000–$950,000 USD annually",
+    "retained_share": 1.0,
+    "net_profit_margin_range": "28–52%",
+    "retained_profit_margin_range": "28–52%",
+    "owner_net_profit_potential": "$33,600–$494,000 USD annually, before personal taxes and reinvestment",
+    "startup_capital_range": "$12,000–$60,000 USD",
+    "monthly_opex_range": "$2,000–$12,000 USD",
+    "time_to_first_deal": "2–6 months",
+    "automation_coverage": 0.78,
+    "typical_team_size": {
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4
+    },
+    "includes_contractors_note": "Headcount includes the working owner and recurring contractors as people, not FTE equivalents. Contractors may be part-time. Scaled scenario adds one employee and one contractor; external vendor workforces are not counted as internal team members.",
+    "revenue_basis": "Net easement buyout flip spreads, billboard permit assignment fees, and retained NNN IOS master-lease spreads; excludes institutional REIT principal face values",
+    "cost_basis": "Annual net margins include operating expenses and non-owner labor; monthly opex is fixed/semi-fixed overhead only. No owner salary is deducted. Capital needs may grow beyond startup range.",
+    "estimate_status": "Illustrative assumptions; not verified earnings data"
+  },
+  "scenarios": {
+    "conservative": {
+      "annual_gross_revenue_usd": 120000,
+      "annual_retained_revenue_usd": 120000,
+      "net_profit_margin_pct": 28,
+      "retained_profit_margin_pct": 28.0,
+      "annual_owner_net_profit_usd": 33600,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "base_case": {
+      "annual_gross_revenue_usd": 535000.0,
+      "annual_retained_revenue_usd": 535000,
+      "net_profit_margin_pct": 40.0,
+      "retained_profit_margin_pct": 40.0,
+      "annual_owner_net_profit_usd": 214000,
+      "full_time_including_owner": 1,
+      "contractors": 3,
+      "total_people": 4,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    },
+    "scaled_small_team": {
+      "annual_gross_revenue_usd": 950000,
+      "annual_retained_revenue_usd": 950000,
+      "net_profit_margin_pct": 52,
+      "retained_profit_margin_pct": 52.0,
+      "annual_owner_net_profit_usd": 494000,
+      "full_time_including_owner": 2,
+      "contractors": 4,
+      "total_people": 6,
+      "assumption": "Illustrative established-operation run rate, not first-year earnings. Margin includes operating costs and non-owner labor; owner labor is not separately compensated. Scale requires additional demand, working capital and delivery capacity."
+    }
+  },
+  "automation_levers": [
+    "FCC ASR tower & DOT AADT GIS parcel pipeline",
+    "Easement buyout NPV & lender SNDA packager",
+    "Unmanned RFID gate & NNN fleet-yard billing"
+  ],
+  "key_risks": [
+    "Municipal sign/zoning variance denials",
+    "Underlying mortgage SNDA delays",
+    "Environmental Phase I stormwater issues on IOS yards"
+  ],
+  "regulatory_notes": [
+    "Verify state real-estate brokerage licensing exemptions when trading principal lease options, Highway Beautification Act / state DOT spacing rules, and lender SNDA consents.",
+    "Run Phase I environmental screening and heavy-axle zoning confirmation before executing IOS master-leases."
+  ],
+  "track_ids": [
+    "track_2",
+    "track_1"
+  ],
+  "track_labels": [
+    "Grey-Zone Growth & Traffic Arbitrage",
+    "Asymmetric & Data-Arbitrage Plays"
+  ],
+  "plays": [
+    {
+      "id": "dot_digital_billboard_and_ios_master_lease_flip",
+      "inputs": [
+        "Parcel and title records, survey and access information, billboard spacing and visibility studies, state DOT and local sign rules, digital-conversion restrictions and utility availability.",
+        "Three- to ten-acre IOS site candidates, zoning and permitted-use evidence, environmental and drainage assessments, truck access and surface requirements, insurance quotes and security or improvement budgets.",
+        "Conditional options or master-lease drafts with financing, permitting, assignment and subletting terms, landlord consent requirements, tenant demand evidence and comparable leasehold or infrastructure transactions."
+      ],
+      "mechanism": "Secure conditional site options for digital billboards only where Highway Beautification Act controls, state DOT spacing rules and local zoning permit the proposed installation and digital operation. Separately control suitable three- to ten-acre truck or equipment drop-yard IOS sites through master leases with explicit permitted use, assignment and subletting rights, targeting NNN sublease revenue of 2.0x–2.8x ground rent only where local demand supports it. Underwrite any sale of transferable, durable rights to an infrastructure REIT or other qualified buyer using actual net cash flow and remaining lease term; a 16x–22x annual-rent headline is a scenario to test, not a guaranteed valuation or a substitute for net-income analysis.",
+      "metrics": [
+        "IOS operating spread: collected sublease rent divided by ground rent, reported alongside net cash flow after vacancy, unreimbursed expenses, capital reserves and escalations.",
+        "Entitlement and capital efficiency: option dollars at risk, days to required permits, improvement cost per usable acre and funded cost per operational sign face.",
+        "Exit economics: actual offer value divided by stabilized net operating cash flow, remaining enforceable lease years and net sale proceeds after transfer costs and obligations."
+      ],
+      "name": "Digital Billboard Rights and Industrial Outdoor Storage Lease-Spread Operator",
+      "platform_risks": [
+        {
+          "detection_metric": "Unresolved entitlement and transfer conditions, committed capital before condition satisfaction, occupancy-adjusted rent coverage and buyer-required lease duration versus actual control.",
+          "failure_mode": "The permit or leasehold cannot be operated or transferred as assumed, leaving the operator with ground-rent obligations and an unsaleable spread.",
+          "fallback": "Exercise negotiated termination rights before conditions expire, avoid unfunded construction commitments, retain only independently viable permitted operations and pursue a consented alternative use or buyer without assuming the advertised multiple.",
+          "impact": "Options expire, improvements become stranded, subleasing stops or expected REIT exit value falls substantially.",
+          "trigger": "DOT spacing conflicts, prohibited digital conversion, IOS zoning restrictions, nontransferable permits, missing landlord consent or a remaining lease term too short for buyer underwriting."
+        }
+      ],
+      "track_id": "track_2",
+      "workflow": [
+        "1. Screen billboard and IOS opportunities as distinct asset types, verify applicable sign controls or outdoor-storage zoning, and reject sites whose access, spacing, environmental condition or remaining control period defeats the economics.",
+        "2. Negotiate conditional options or master leases before major expenditures, expressly allocating permit costs, improvements, restoration duties, assignment rights and any required landlord or agency consent.",
+        "3. Obtain required permissions and complete funded improvements, then secure creditworthy advertising or IOS occupancy contracts; test the 2.0x–2.8x IOS rent target after vacancy, operating expenses, reserves and ground-rent escalation.",
+        "4. Stabilize collections and prepare a transferable-rights diligence package for qualified buyers, comparing the value of retaining net cash flow against sale proceeds and testing any 16x–22x headline multiple against net income, lease duration and actual bids."
+      ]
+    },
+    {
+      "id": "cell_tower_billboard_easement_strip_out",
+      "track_id": "track_1",
+      "name": "Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage",
+      "mechanism": "Separate assignable site-access and rent rights from underlying real estate for specialist buyers, pricing tenant termination rights and the permanent burden left on the residual property.",
+      "inputs": [
+        "Tower, rooftop, and billboard leases and amendments",
+        "Title, lender consent, and zoning documents",
+        "Specialist easement-buyer bids and residual property appraisals"
+      ],
+      "workflow": [
+        "1. Identify leased sites and reconcile actual rent receipts with termination and renewal terms",
+        "2. Verify assignment rights, mortgage restrictions, maintenance duties, and required consents",
+        "3. Compare easement sale proceeds against lost rent and residual property impairment",
+        "4. Close approved conveyances through escrow and record access, utilities, and rent-allocation rights"
+      ],
+      "metrics": [
+        "Net easement proceeds versus retained rent value",
+        "Residual property value impairment",
+        "Consent-to-close cycle days"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Nonassignable lease or excessive permanent property burden",
+          "trigger": "Missing tenant or lender consent or easement scope exceeding valued rights",
+          "impact": "Failed closing or reduced refinancing and resale value",
+          "detection_metric": "Unresolved consent conditions and residual appraisal discount",
+          "fallback": "Retain the lease or negotiate a narrower term-limited assignment with all required approvals"
+        }
+      ]
+    },
+    {
+      "id": "ferc_grid_interconnection_queue_land_speculation",
+      "track_id": "track_1",
+      "name": "FERC / ISO Substation Interconnection Queue & Powered-Land Option Flipping",
+      "mechanism": "Overlay public interconnection queues with land-use and substation data to option potentially useful sites, treating queue position and nearby infrastructure as signals rather than guaranteed deliverable power.",
+      "inputs": [
+        "ISO and utility interconnection queues and study results",
+        "Parcel zoning, transmission corridors, and substation maps",
+        "Utility service estimates and developer site requirements"
+      ],
+      "workflow": [
+        "1. Match queue activity and infrastructure constraints to suitable parcels",
+        "2. Verify site control requirements, zoning, environmental limits, and utility capacity assumptions",
+        "3. Negotiate assignable diligence-contingent options within capped carrying-cost budgets",
+        "4. Assign approved options to qualified developers with explicit disclosure of unresolved power and study conditions"
+      ],
+      "metrics": [
+        "Option cost per qualified developable acre",
+        "Utility-validated capacity versus marketed capacity",
+        "Net assignment proceeds after study and option costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Queue withdrawal or prohibitive network upgrade cost",
+          "trigger": "Restudy, milestone failure, or capacity estimate unsupported by utility commitments",
+          "impact": "Option expiry and unrecoverable diligence spending",
+          "detection_metric": "Study cost revisions and unresolved interconnection milestones",
+          "fallback": "Let contingent options lapse or reposition land for independently viable uses without claiming secured power"
+        }
+      ]
+    },
+    {
+      "id": "gis_landlocked_parcel_easement_assemblage",
+      "track_id": "track_1",
+      "name": "GIS Landlocked-Parcel Spite-Strip & Access-Easement Assemblage Arbitrage",
+      "mechanism": "Combine GIS parcel geometry with recorded access rights to option overlooked strips and negotiate voluntary easement assemblages; mapped boundaries alone do not establish legal access.",
+      "inputs": [
+        "County GIS parcel and road layers",
+        "Recorded plats, deeds, and easement instruments",
+        "Surveyor estimates and neighboring-owner demand"
+      ],
+      "workflow": [
+        "1. Flag apparently landlocked parcels and narrow connecting strips in GIS",
+        "2. Verify boundaries, existing rights, and easement-by-necessity exposure with surveyor and counsel",
+        "3. Secure contingent options and negotiate voluntary access agreements without obstructing existing access",
+        "4. Record approved easements and close the assembled sale through title escrow"
+      ],
+      "metrics": [
+        "Verified access gaps per screened parcel",
+        "Option-to-recorded-easement conversion rate",
+        "Net assemblage margin after survey and title costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "GIS false positive or unenforceable access premium",
+          "trigger": "Unmapped easement, boundary error, or preexisting legal right of access",
+          "impact": "Option expiry or acquisition with no incremental assemblage value",
+          "detection_metric": "Survey and title exceptions per shortlisted parcel",
+          "fallback": "Exercise diligence contingencies and offer survey-backed voluntary access services instead"
+        }
+      ]
+    },
+    {
+      "id": "solar_tax_equity_depreciation_strip_syndication",
+      "track_id": "track_1",
+      "name": "Commercial Solar Tax-Equity Flip & Bonus-Depreciation Strip Syndication",
+      "mechanism": "Arrange commercial solar partnership-flip investments that allocate supported tax benefits and cash flows to genuine equity owners; depreciation cannot be sold as a standalone credit, and allocations require economic substance, tax compliance, and securities-law review.",
+      "inputs": [
+        "Solar project costs, ownership records, and operating contracts",
+        "Investor tax capacity and dated depreciation eligibility analysis",
+        "Counsel-reviewed partnership waterfall and securities offering documents"
+      ],
+      "workflow": [
+        "1. Underwrite project cash flows, eligible basis, construction and service dates, and current credit and depreciation availability",
+        "2. Verify investor suitability, tax capacity, at-risk and passive-loss limits, and applicable securities and intermediary requirements",
+        "3. Structure counsel-approved partnership allocations and flip terms with genuine equity risk, basis adjustments, and recapture protections",
+        "4. Close through authorized intermediaries and monitor operations, tax reporting, and flip conditions before distributing permitted fees"
+      ],
+      "metrics": [
+        "Qualified tax-equity capital closed",
+        "Realized investor distributions versus underwritten waterfall",
+        "Net permitted placement fees after legal and diligence costs"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Tax allocations disallowed or unlicensed securities placement",
+          "trigger": "Unsupported depreciation stripping, inadequate economic substance, ineligible project timing, or unauthorized transaction-based compensation",
+          "impact": "Tax assessments, recapture, investor losses, and fee disgorgement exposure",
+          "detection_metric": "Unresolved tax opinion conditions and securities compliance exceptions",
+          "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership"
+        }
+      ]
+    },
+    {
+      "id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "mechanism": "Ingest daily federal FMCSA Census, Licensing & Insurance (L&I), and SMS roadside-inspection violation feeds to intercept newly granted MC/DOT authorities (during the mandatory 21-day insurance-filing window) and fleets with fresh HOS/maintenance citations.",
+      "inputs": [
+        "FMCSA daily Licensing & Insurance (L&I) pending-authority feed",
+        "FMCSA Safety Measurement System (SMS) roadside violation & BASIC score logs",
+        "Commercial trucking insurance, factoring, & ELD compliance partner network"
+      ],
+      "workflow": [
+        "Poll daily FMCSA pending-application feeds to identify carriers that received a docket number but still need BOC-3 and BIPD insurance filings to go active",
+        "Monitor SMS inspection logs for fleets cited for ELD, hours-of-service, or maintenance violations requiring corrective action plans",
+        "Route carriers in real time to commercial truck insurance brokers ($500–$1,500 CPA/split), freight factoring desks, and compliance consultants"
+      ],
+      "metrics": [
+        "FMCSA filing-to-contact latency (minutes)",
+        "Pending-authority to bound-policy conversion %",
+        "Combined CPA from insurance, BOC-3, ELD, and factoring referrals"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+          "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+          "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+          "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+          "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels"
+        }
+      ]
+    },
+    {
+      "id": "property_tax_assessment_appeal_contingency",
+      "track_id": "track_1",
+      "name": "Automated Commercial/Residential Property-Tax Appeal Arbitrage",
+      "mechanism": "Ingest county tax-assessor valuation rolls upon annual notice release, run an automated valuation model (AVM) flagging parcels assessed above comparable neighbor equity ratios, and file bulk administrative tax protests for 30–50% of the first year's verified tax reduction.",
+      "inputs": [
+        "Annual county tax-assessor preliminary valuation rolls & parcel GIS characteristics",
+        "Equity-ratio & recent-sale comparable AVM engine",
+        "Bulk administrative ARB (Appraisal Review Board) protest filing & hearing pipeline"
+      ],
+      "workflow": [
+        "Ingest county assessment rolls the day annual valuation notices drop and compute each parcel's assessed-per-sqft percentile against direct neighborhood peers",
+        "Mail personalized pre-filled protest postcards showing the owner's exact estimated over-assessment and a QR code to sign a zero-upfront-cost contingency authorization",
+        "Auto-generate uniform comparable-equity evidence packets, file bulk administrative protests before the county bar date, and collect 30–50% of Year-1 tax savings"
+      ],
+      "metrics": [
+        "Protest-window mail-to-signed-authorization conversion %",
+        "Percentage of appealed parcels receiving an assessment reduction (65–85% target)",
+        "Average net contingency fee per residential ($150–$450) and commercial ($2,000–$15,000) parcel"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "State property-tax consultant licensing requirements or missed county protest bar dates",
+          "trigger": "Representing property owners for a fee without required state registration (e.g., Texas TDLR Property Tax Consultant license) or missing the 30/45-day county filing deadline",
+          "impact": "Rejected bulk filings, administrative fines, or zero contingency revenue for the tax year",
+          "detection_metric": "100% licensed tax-agent sign-off in regulated states and T-minus-7-day bulk filing completion",
+          "fallback": "Partner with licensed local property-tax consultants/attorneys of record in regulated states and automate pre-deadline batch electronic filing"
+        }
+      ]
+    },
+    {
+      "id": "municipal_code_violation_trigger_arbitrage",
+      "track_id": "track_1",
+      "name": "Municipal Code-Violation, Mechanic's Lien & Permit-Failure Lead Arbitrage",
+      "mechanism": "Poll municipal building department portals and county recorder dockets daily for failed structural/fire inspections, expired permits, code citations, and newly filed mechanic's liens, routing exclusive real-time leads to remediation contractors and construction attorneys.",
+      "inputs": [
+        "Municipal Accela/EnerGov building & code-enforcement portals",
+        "County recorder mechanic's lien & lis pendens dockets",
+        "Real-time Pay-Per-Call & exclusive CPL routing switch"
+      ],
+      "workflow": [
+        "Scrape and normalize daily municipal code citations, failed permit inspections, and recorded mechanic's liens across target metro counties",
+        "Enrich parcel owner contact records and classify urgency by abatement deadline or fine accrual rate",
+        "Route verified property owners via direct mail/outbound alerts into exclusive Pay-Per-Call or CPL agreements with licensed remediation contractors"
+      ],
+      "metrics": [
+        "Citation-to-outreach latency (hours)",
+        "Qualified homeowner/commercial call conversion %",
+        "Revenue per exclusive routed remediation lead"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Municipal portal IP blocking or deceptive official-notice complaints",
+          "trigger": "Aggressive unthrottled scraping of Accela/EnerGov portals or styling outreach like an official city abatement order",
+          "impact": "Portal IP block or city attorney cease-and-desist notice",
+          "detection_metric": "Portal HTTP 403/429 rate and zero municipal impersonation complaints",
+          "fallback": "Use low-frequency scheduled API/bulk exports and clearly identify all outreach as private commercial contractor/remediation assistance"
+        }
+      ]
+    },
+    {
+      "id": "public_record_api_intelligence",
+      "track_id": "track_1",
+      "name": "Public-Record & API Intelligence",
+      "mechanism": "Ingest fragmented county dockets, probate registries, unclaimed property ledgers, and public APIs to surface uncontested claims or high-intent B2B triggers before manual competitors.",
+      "inputs": [
+        "Court & probate dockets",
+        "State controller ledgers",
+        "Public licensing & entity APIs"
+      ],
+      "workflow": [
+        "Poll and normalize county/state record releases on an automated cadence",
+        "Cross-match entity/kinship/lien records and filter by minimum net fee threshold",
+        "Route verified dossiers into compliant outreach and claim execution"
+      ],
+      "metrics": [
+        "Cost per verified lead",
+        "Docket-to-contact latency (hours)",
+        "Net recovery / conversion rate"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+          "trigger": "High-frequency automated polling against county or agency web portals",
+          "impact": "Delayed lead ingestion or temporary IP block on target registry",
+          "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+          "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues"
+        }
+      ]
+    },
+    {
+      "id": "public_filing_trigger_mail_arbitrage",
+      "track_id": "track_1",
+      "name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "mechanism": "Ingest daily Secretary of State new-LLC filings and County Recorder new-deed/mortgage recordings to trigger programmatic direct mail via API—replacing illegal government-lookalike poster/deed invoices (which violate 39 U.S.C. § 3001 and state deed-solicitation laws) with high-LTV recurring workplace compliance subscriptions, property-tax appeal contingency offers, and exclusive new-mover/B2B lead monetization.",
+      "inputs": [
+        "Daily Secretary of State new-entity (LLC/Corp) bulk feeds",
+        "County Recorder grant/warranty deed & mortgage recording dockets",
+        "Programmatic print-and-mail API (Lob / PostGrid) + QR intake bridge"
+      ],
+      "workflow": [
+        "Pull daily new-LLC formations (filtering for employer/commercial NAICS or multi-member filings) and newly recorded residential deeds with purchase price and loan metadata",
+        "Dispatch transparent, non-governmental trigger mailers within 24–48 hours of filing with personalized QR codes pre-populating entity or parcel data",
+        "Monetize new LLCs via recurring annual labor-poster/registered-agent compliance memberships and B2B partner referrals; monetize new deeds via contingency property-tax appeal filings or high-ticket homeowner lead sales"
+      ],
+      "metrics": [
+        "Filing-to-mailbox latency (hours)",
+        "QR scan & intake conversion % per 1,000 mailers",
+        "Annualized LTV / net revenue per mailed piece"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+          "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+          "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+          "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+          "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)"
+        }
+      ]
+    },
+    {
+      "id": "high_velocity_dm_outbound_systems",
+      "track_id": "track_2",
+      "name": "High-Velocity DM Outbound & Trigger Funnels",
+      "mechanism": "Replace blind cold mass-DM blasts (which die to PeerFloodError and silent Message Request graveyards) with high-velocity comment-to-DM triggers, hand-raiser reaction hooks, and multi-inbox warm signal routing.",
+      "inputs": [
+        "Short-form / community trigger posts ('Comment KEYWORD')",
+        "Signal-verified prospect handles",
+        "Automated DM qualification & booking bridge"
+      ],
+      "workflow": [
+        "Publish high-curiosity teardown or resource posts where prospects comment a trigger keyword or react to unlock a playbook or calculator",
+        "Deliver instant automated DM replies to warm hand-raisers (bypassing cold-DM filters because the user initiated interaction) or send contextual 1-to-1 DMs referencing an active public request",
+        "Qualify budget and timeline inside a 3-message DM micro-funnel and transition immediately to a booked call, checkout link, or owned SMS/email list"
+      ],
+      "metrics": [
+        "Trigger-comment to DM delivery rate",
+        "DM reply-to-qualified-conversation %",
+        "Revenue per 100 DM threads"
+      ],
+      "platform_risks": [
+        {
+          "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+          "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+          "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+          "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+          "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies"
+        }
+      ]
+    }
+  ],
+  "platform_risks": [
+    {
+      "detection_metric": "Unresolved entitlement and transfer conditions, committed capital before condition satisfaction, occupancy-adjusted rent coverage and buyer-required lease duration versus actual control.",
+      "failure_mode": "The permit or leasehold cannot be operated or transferred as assumed, leaving the operator with ground-rent obligations and an unsaleable spread.",
+      "fallback": "Exercise negotiated termination rights before conditions expire, avoid unfunded construction commitments, retain only independently viable permitted operations and pursue a consented alternative use or buyer without assuming the advertised multiple.",
+      "impact": "Options expire, improvements become stranded, subleasing stops or expected REIT exit value falls substantially.",
+      "trigger": "DOT spacing conflicts, prohibited digital conversion, IOS zoning restrictions, nontransferable permits, missing landlord consent or a remaining lease term too short for buyer underwriting.",
+      "play_id": "dot_digital_billboard_and_ios_master_lease_flip",
+      "play_name": "Digital Billboard Rights and Industrial Outdoor Storage Lease-Spread Operator",
+      "track_id": "track_2"
+    },
+    {
+      "failure_mode": "Nonassignable lease or excessive permanent property burden",
+      "trigger": "Missing tenant or lender consent or easement scope exceeding valued rights",
+      "impact": "Failed closing or reduced refinancing and resale value",
+      "detection_metric": "Unresolved consent conditions and residual appraisal discount",
+      "fallback": "Retain the lease or negotiate a narrower term-limited assignment with all required approvals",
+      "play_id": "cell_tower_billboard_easement_strip_out",
+      "play_name": "Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Queue withdrawal or prohibitive network upgrade cost",
+      "trigger": "Restudy, milestone failure, or capacity estimate unsupported by utility commitments",
+      "impact": "Option expiry and unrecoverable diligence spending",
+      "detection_metric": "Study cost revisions and unresolved interconnection milestones",
+      "fallback": "Let contingent options lapse or reposition land for independently viable uses without claiming secured power",
+      "play_id": "ferc_grid_interconnection_queue_land_speculation",
+      "play_name": "FERC / ISO Substation Interconnection Queue & Powered-Land Option Flipping",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "GIS false positive or unenforceable access premium",
+      "trigger": "Unmapped easement, boundary error, or preexisting legal right of access",
+      "impact": "Option expiry or acquisition with no incremental assemblage value",
+      "detection_metric": "Survey and title exceptions per shortlisted parcel",
+      "fallback": "Exercise diligence contingencies and offer survey-backed voluntary access services instead",
+      "play_id": "gis_landlocked_parcel_easement_assemblage",
+      "play_name": "GIS Landlocked-Parcel Spite-Strip & Access-Easement Assemblage Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Tax allocations disallowed or unlicensed securities placement",
+      "trigger": "Unsupported depreciation stripping, inadequate economic substance, ineligible project timing, or unauthorized transaction-based compensation",
+      "impact": "Tax assessments, recapture, investor losses, and fee disgorgement exposure",
+      "detection_metric": "Unresolved tax opinion conditions and securities compliance exceptions",
+      "fallback": "Suspend solicitation and closing, use appropriately licensed intermediaries, and restructure only as independently reviewed genuine equity ownership",
+      "play_id": "solar_tax_equity_depreciation_strip_syndication",
+      "play_name": "Commercial Solar Tax-Equity Flip & Bonus-Depreciation Strip Syndication",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "FMCSA government-impersonation enforcement or telemarketing DNC violations",
+      "trigger": "Posing as the USDOT/FMCSA safety audit office or blasting automated SMS/robocalls to driver cell phones",
+      "impact": "FTC/FMCSA enforcement warning and carrier spam blocking",
+      "detection_metric": "Zero USDOT impersonation complaints and 100% carrier opt-in before SMS dispatch",
+      "fallback": "Use transparent private compliance-agency branding, free BOC-3/MCS-150 status check tools, and inbound hand-raiser funnels",
+      "play_id": "fmcsa_dot_inspection_trigger_arbitrage",
+      "play_name": "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "State property-tax consultant licensing requirements or missed county protest bar dates",
+      "trigger": "Representing property owners for a fee without required state registration (e.g., Texas TDLR Property Tax Consultant license) or missing the 30/45-day county filing deadline",
+      "impact": "Rejected bulk filings, administrative fines, or zero contingency revenue for the tax year",
+      "detection_metric": "100% licensed tax-agent sign-off in regulated states and T-minus-7-day bulk filing completion",
+      "fallback": "Partner with licensed local property-tax consultants/attorneys of record in regulated states and automate pre-deadline batch electronic filing",
+      "play_id": "property_tax_assessment_appeal_contingency",
+      "play_name": "Automated Commercial/Residential Property-Tax Appeal Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Municipal portal IP blocking or deceptive official-notice complaints",
+      "trigger": "Aggressive unthrottled scraping of Accela/EnerGov portals or styling outreach like an official city abatement order",
+      "impact": "Portal IP block or city attorney cease-and-desist notice",
+      "detection_metric": "Portal HTTP 403/429 rate and zero municipal impersonation complaints",
+      "fallback": "Use low-frequency scheduled API/bulk exports and clearly identify all outreach as private commercial contractor/remediation assistance",
+      "play_id": "municipal_code_violation_trigger_arbitrage",
+      "play_name": "Municipal Code-Violation, Mechanic's Lien & Permit-Failure Lead Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "Portal rate-limiting or CAPTCHA gating",
+      "trigger": "High-frequency automated polling against county or agency web portals",
+      "impact": "Delayed lead ingestion or temporary IP block on target registry",
+      "detection_metric": "HTTP 429/403 rate and daily record ingestion delta",
+      "fallback": "Switch to scheduled bulk FOIA/public-record exports, official data feeds, and low-frequency cached queues",
+      "play_id": "public_record_api_intelligence",
+      "play_name": "Public-Record & API Intelligence",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "USPS 39 U.S.C. § 3001(h)-(i) mail-stop order, State AG UDAP enforcement, or payment-processor freeze",
+      "trigger": "Styling mailers as fake government penalty notices, invoices, or charging $89-$195 solely for a $3 public deed copy without statutory disclaimers",
+      "impact": "Civil restitution penalties, merchant account termination, and 30%+ chargeback rates",
+      "detection_metric": "Refund/chargeback ratio >1% and customer support inquiries mistaking the mailer for a government agency",
+      "fallback": "Use unambiguous private commercial branding, never mimic government seals or citation numbers, and sell genuine value-add subscriptions (annual compliance updates, tax-assessment appeals, or B2B services)",
+      "play_id": "public_filing_trigger_mail_arbitrage",
+      "play_name": "New-LLC & Recorded-Deed Trigger-Mail Arbitrage",
+      "track_id": "track_1"
+    },
+    {
+      "failure_mode": "PeerFloodError, shadow-filtering into 'Hidden Requests', or link-domain blacklisting",
+      "trigger": "Sending identical unsolicited cold DMs with raw external URLs across freshly registered or SIM-farmed accounts",
+      "impact": "Near-0% inbox placement, outbound DM block, or permanent account suspension",
+      "detection_metric": "Seen/reply ratio below 10% and outbound PeerFloodError / action-block frequency",
+      "fallback": "Require user-initiated trigger action (comment/reaction/inbound message) before automated DM dispatch and send external links only after the prospect replies",
+      "play_id": "high_velocity_dm_outbound_systems",
+      "play_name": "High-Velocity DM Outbound & Trigger Funnels",
+      "track_id": "track_2"
+    }
+  ]
+}

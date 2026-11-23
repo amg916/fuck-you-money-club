@@ -1,0 +1,328 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-commitment-to-cleared-cash",
+      "chart_type": "process_flow",
+      "title": "Commit First, Purchase Second, Reconcile Through Settlement",
+      "subtitle": "Five operating steps connect authorized inventory to cleared cash.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Buying-group orders and ticket allocations use separate evidence records. Net-3 and Net-5 are negotiated counterparty terms, not assured clearing dates. A 60-day ledger horizon does not create a contractual 60-day interest-free card period.",
+      "caption": "The purchase-order reconciler links commitment, purchase, delivery, receivable and card obligation before an operator increases exposure.",
+      "stages": [
+        {
+          "label": "Document the commitment",
+          "value": "Signed terms before any purchasing commitment",
+          "numeric_value": 1.0,
+          "detail": "Record the vetted buying group's accepted SKU, quantity, reimbursement, acceptance criteria and Net-3 or Net-5 trigger. For tickets, verify allocation ownership and transfer rights."
+        },
+        {
+          "label": "Reserve cash and limits",
+          "value": "Cash coverage before card authorization occurs",
+          "numeric_value": 2.0,
+          "detail": "Reserve full card repayment independently of expected ACH receipts. Verify issuer category eligibility, rebate exclusions, available limits and the actual statement due date."
+        },
+        {
+          "label": "Acquire through authorized channels",
+          "value": "Permitted purchases with retained acquisition evidence",
+          "numeric_value": 3.0,
+          "detail": "Use ordinary merchant checkout or authorized allocation contracts. Preserve receipts and purchase limits; prohibit queue or CAPTCHA bypass and credential sharing."
+        },
+        {
+          "label": "Deliver and evidence acceptance",
+          "value": "Tracked delivery tied to each receivable",
+          "numeric_value": 4.0,
+          "detail": "Insure high-value merchandise and retain serial numbers, carrier acceptance and signed delivery evidence. Record ticket transfers and synchronize SkyBox or Automatiq listings."
+        },
+        {
+          "label": "Clear and reconcile",
+          "value": "Cleared receipts matched against card liabilities",
+          "numeric_value": 5.0,
+          "detail": "Match bank-cleared ACH, exchange payouts, fees and issuer rebates to each order. Pay the card on time even when a buying group delays reimbursement."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-qualified-opportunity-cohort",
+      "chart_type": "funnel",
+      "title": "One Cohort From Sourced Opportunity to Cleared Settlement",
+      "subtitle": "Nested counts preserve the same opportunity unit throughout.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative 90-day observation of 200 opportunities sourced in one intake window; an opportunity is one proposed order or allocation lot, not a ticket, person or dollar. Later stages are subsets of earlier stages. First-deal planning remains one to three months.",
+      "caption": "Twenty-four settled opportunities represent 12% of the original cohort; unsettled purchases remain exposure rather than realized wins.",
+      "stages": [
+        {
+          "label": "Sourced opportunities",
+          "value": "200 proposed order or allocation lots",
+          "numeric_value": 200.0,
+          "detail": "Log 200 distinct opportunities with seller identity, inventory description, expected settlement terms and source evidence; remove duplicates before measuring conversion."
+        },
+        {
+          "label": "Verified counterparties and rights",
+          "value": "120 verified lots from the original cohort",
+          "numeric_value": 120.0,
+          "detail": "Retain 120 opportunities after counterparty, transfer-right, issuer-eligibility and purchase-limit checks; this is 60% of sourced opportunities."
+        },
+        {
+          "label": "Accepted commercial terms",
+          "value": "60 documented commitments from verified opportunities",
+          "numeric_value": 60.0,
+          "detail": "Obtain accepted order terms or allocation agreements for 60 opportunities, representing 50% of verified opportunities and 30% of the original cohort."
+        },
+        {
+          "label": "Purchased and delivered",
+          "value": "30 funded commitments with delivery evidence",
+          "numeric_value": 30.0,
+          "detail": "Fund and deliver 30 committed opportunities after cash coverage checks; this is 50% of documented commitments and 15% of sourced opportunities."
+        },
+        {
+          "label": "Cleared and reconciled",
+          "value": "24 completed settlements with matched ledger entries",
+          "numeric_value": 24.0,
+          "detail": "Reconcile cleared settlement for 24 delivered opportunities, or 80% of delivered lots. Keep the remaining six in receivable aging without assuming they are losses."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-owner-profit-bridge",
+      "chart_type": "waterfall",
+      "title": "Base-Case Gross Receipts to $143,500 Owner Profit",
+      "subtitle": "$1,025,000 gross receipts; 35% retained spread; 14.0% gross-basis margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Formula v2.0 endpoints are canonical; the three expense buckets are an illustrative allocation. Opening and closing bars are totals; intermediate bars are signed deductions. Conservative gross $250,000 less 65% basis leaves $87,500 retained contribution and $20,000 owner profit: 8% gross-basis margin and 22.86% retained margin. Base retained contribution is $358,750 with 40.0% retained margin. Scaled gross $1,800,000 leaves $630,000 retained contribution and $360,000 profit: 20% gross-basis margin and 57.14% retained margin. The retained_share=0.35 convention is the scorecard's net presentation; actual ASC 606 principal-versus-agent analysis determines recognized revenue for each contract.",
+      "caption": "$1,025,000 - $666,250 - $61,500 - $96,000 - $57,750 = $143,500. Gross reimbursements and resale proceeds are not interchangeable with retained operator revenue.",
+      "stages": [
+        {
+          "label": "Gross receipts",
+          "value": "$1,025,000 annual scorecard gross receipts",
+          "numeric_value": 1025000.0,
+          "detail": "Aggregate buying-group reimbursements, card-rebate yields and ticket resale proceeds once each. Exclude unrelated merchant sales and card borrowing from this gross total."
+        },
+        {
+          "label": "Merchandise and ticket basis",
+          "value": "Subtract $666,250 of direct acquisition basis",
+          "numeric_value": -666250.0,
+          "detail": "Deduct landed merchandise and face-value ticket basis at 65% of aggregate gross receipts. Remaining modeled retained contribution equals $358,750, or 35%."
+        },
+        {
+          "label": "Transaction and distribution costs",
+          "value": "Subtract $61,500 of variable execution costs",
+          "numeric_value": -61500.0,
+          "detail": "Allocate 6.0% of gross receipts to exchange commissions, payment charges and selling-side fulfillment costs. Exclude costs already capitalized within landed acquisition basis."
+        },
+        {
+          "label": "Recurring pod operating costs",
+          "value": "Subtract $96,000 of annual operating costs",
+          "numeric_value": -96000.0,
+          "detail": "Allocate $8,000 monthly to contractors, software, bookkeeping, business insurance and administration. This fits the $1,500–$9,000 monthly range; owner draws are distributions."
+        },
+        {
+          "label": "Loss and carrying costs",
+          "value": "Subtract $57,750 of modeled residual costs",
+          "numeric_value": -57750.0,
+          "detail": "Allocate realized markdowns, credit losses, rebate reversals and borrowing costs without duplicating acquisition basis or exchange fees; residual costs equal this scenario balance."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$143,500 remaining after all modeled costs",
+          "numeric_value": 143500.0,
+          "detail": "Closing total equals 14.0% of $1,025,000 gross receipts and 40.0% of $358,750 retained contribution. It is the owner-profit endpoint, not an additional cash receipt."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-eligible-card-rebate-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Compare Rebate Yields on Eligible Settled Purchase Dollars",
+      "subtitle": "Five illustrative payment-rail cases use one denominator.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Bars are hypothetical contractual rebate rates inside the supplied 2%–4% range, not named issuer offers or observed market averages. Each rate uses eligible settled purchase spend before interest, fees and clawbacks. Uncapped treatment requires express issuer terms; these rates do not derive the 35% portfolio retained share.",
+      "caption": "At $10,000 eligible spend, these cases produce $200–$400 of rebates before costs. Float is payment timing, not another yield.",
+      "stages": [
+        {
+          "label": "Buying-group general merchandise",
+          "value": "2.0% rebate on eligible settled purchases",
+          "numeric_value": 2.0,
+          "detail": "A modeled $10,000 purchase produces $200 of rebates only when resale activity and merchant classification qualify under the actual commercial card agreement."
+        },
+        {
+          "label": "Buying-group electronics orders",
+          "value": "2.5% rebate on eligible settled purchases",
+          "numeric_value": 2.5,
+          "detail": "A modeled $10,000 purchase produces $250 before card costs. Check electronics exclusions, rebate caps and returns; shipment value does not change the contracted rate."
+        },
+        {
+          "label": "Authorized event ticket inventory",
+          "value": "3.0% rebate on eligible settled purchases",
+          "numeric_value": 3.0,
+          "detail": "A modeled $10,000 purchase produces $300 only if ticket transactions qualify. Exchange sale proceeds and inventory appreciation are separate from this rebate calculation."
+        },
+        {
+          "label": "Transferable corporate-suite allocations",
+          "value": "3.5% rebate on eligible settled purchases",
+          "numeric_value": 3.5,
+          "detail": "A modeled $10,000 card purchase produces $350 before surcharges. Reject the card rail when its incremental cost exceeds the collectible contractual rebate."
+        },
+        {
+          "label": "Issuer-qualified promotional purchases",
+          "value": "4.0% rebate on eligible settled purchases",
+          "numeric_value": 4.0,
+          "detail": "A modeled $10,000 purchase produces $400 within verified offer terms. Replace the rate when promotional periods expire; never extend temporary pricing across the annual model."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-statutes-and-exposure",
+      "chart_type": "decision_tree",
+      "title": "Four Pre-Flight Checks Before Committing Capital",
+      "subtitle": "Every check must pass; unresolved evidence means no purchase.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "These are sequential checks, not a jurisdiction-complete rulebook. Select applicable state ticket licensing, transfer and tax rules for each transaction. A blocked branch returns to evidence collection or rejects the opportunity.",
+      "caption": "A lawful acquisition channel, accurate price, documented resale treatment and funded downside must exist before execution.",
+      "stages": [
+        {
+          "label": "Acquisition rights and BOTS Act",
+          "value": "Proceed only with documented authorized acquisition",
+          "numeric_value": 1.0,
+          "detail": "Apply 15 U.S.C. section 45c: no queue, CAPTCHA or ticket-limit circumvention. Reject resale covered by the statute's knowledge or participation conditions. Verify suite and stadium seat license transfer restrictions."
+        },
+        {
+          "label": "Displayed prices and local permissions",
+          "value": "Proceed only with correct covered total prices",
+          "numeric_value": 2.0,
+          "detail": "Apply 16 CFR Part 464 to covered ticket offers, including required total-price prominence and permitted exclusions. Verify applicable state all-in pricing, reseller licensing and venue-specific transfer requirements before listing."
+        },
+        {
+          "label": "Resale and shipment documentation",
+          "value": "Proceed only with applicable tax and delivery evidence",
+          "numeric_value": 3.0,
+          "detail": "Validate resale-certificate eligibility under applicable state rules; California purchases may invoke 18 CCR section 1668. Document shipment risk under adopted UCC section 2-509 and verify insurance exclusions."
+        },
+        {
+          "label": "Cash coverage and loss capacity",
+          "value": "Proceed only with funded settlement-delay downside",
+          "numeric_value": 4.0,
+          "detail": "Require cash coverage for card obligations despite delayed ACH, issuer shutdown or frozen exchange payouts. Set counterparty concentration limits and pre-event stop-loss markdown curves before acquiring inventory."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-three-to-five-person-pod",
+      "chart_type": "org_architecture",
+      "title": "Three Core Seats, Two Explicit Scale Additions",
+      "subtitle": "Base uses 1 FT + 2 C; Scaled uses 2 FT + 3 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time; C means contractor. Each numeric value represents one person in the five-person scaled design. Only the first three seats operate in Conservative and Base cases. Contractor hours are not assumed equivalent to full-time hours.",
+      "caption": "The owner controls exposure; operators maintain evidence and reconciliation. Adding people does not automatically produce the Scaled scenario's $360,000 owner profit.",
+      "stages": [
+        {
+          "label": "Owner and capital lead",
+          "value": "Core full-time seat across all scenarios",
+          "numeric_value": 1.0,
+          "detail": "Own counterparty selection, issuer relationships, cash coverage and concentration limits. Authorize purchases against documented commitments rather than available card limits alone."
+        },
+        {
+          "label": "Settlement and ledger specialist",
+          "value": "Core contractor seat for daily reconciliations",
+          "numeric_value": 1.0,
+          "detail": "Maintain the 60-day statement horizon, reconcile buying-group ACH and exchange payouts, track rebates and flag receivables that pass contractual due dates."
+        },
+        {
+          "label": "Inventory and fulfillment coordinator",
+          "value": "Core contractor seat for delivery and listings",
+          "numeric_value": 1.0,
+          "detail": "Track insured shipments, serial numbers and ticket transfers. Use SkyBox or Automatiq to reconcile exchange inventory and apply owner-defined markdown curves."
+        },
+        {
+          "label": "Allocation and operations manager",
+          "value": "Additional full-time seat in the Scaled case",
+          "numeric_value": 1.0,
+          "detail": "Manage a larger authorized allocation pipeline and buying-group order book. Separate commercial sourcing from settlement reconciliation while preserving one exposure ledger."
+        },
+        {
+          "label": "Exception and peak-event specialist",
+          "value": "Additional contractor seat in the Scaled case",
+          "numeric_value": 1.0,
+          "detail": "Resolve transfer failures, carrier claims, disputed reimbursements and event-week listing exceptions. Maintain evidence trails without overriding purchasing or issuer restrictions."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-buckets",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate $30,000 Before Expanding Purchase Volume",
+      "subtitle": "Four cash buckets also reconcile the $10,000 and $55,000 endpoints.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values show one $30,000 deployment, not three stacked scenarios. Bucket details define matching $10,000 minimum and $55,000 upper plans. Card limits are borrowing capacity, not startup equity; uncollected rebates and expected ACH are not cash.",
+      "caption": "Minimum $4,000 + $1,000 + $4,000 + $1,000 = $10,000; working $15,000 + $3,000 + $9,000 + $3,000 = $30,000; upper $28,000 + $6,000 + $17,000 + $4,000 = $55,000.",
+      "stages": [
+        {
+          "label": "Committed merchandise purchases",
+          "value": "$15,000 reserved for documented buying-group orders",
+          "numeric_value": 15000.0,
+          "detail": "Allocate $4,000 minimum, $15,000 working or $28,000 upper to acquisition principal. Recycle funds only after cleared receipts; never count inventory and its funding twice."
+        },
+        {
+          "label": "Ticket allocation inventory",
+          "value": "$3,000 reserved for transferable event allocations",
+          "numeric_value": 3000.0,
+          "detail": "Allocate $1,000 minimum, $3,000 working or $6,000 upper to bounded ticket exposure. Avoid illiquid seat-license commitments that exceed the selected plan's loss capacity."
+        },
+        {
+          "label": "Settlement and repayment liquidity",
+          "value": "$9,000 held outside normal purchasing activity",
+          "numeric_value": 9000.0,
+          "detail": "Allocate $4,000 minimum, $9,000 working or $17,000 upper to delays and payment obligations. Size purchasing below cash-covered obligations; this reserve alone may be insufficient."
+        },
+        {
+          "label": "Setup and initial operating runway",
+          "value": "$3,000 reserved for systems and launch operations",
+          "numeric_value": 3000.0,
+          "detail": "Allocate $1,000 minimum, $3,000 working or $4,000 upper to setup, insurance deposits and initial tools. Budget later $1,500–$9,000 monthly operating costs separately."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-controlled-launch",
+      "chart_type": "timeline_roadmap",
+      "title": "Build the Desk in Thirty Days Without Forcing a Trade",
+      "subtitle": "Four weekly milestones establish evidence, liquidity and execution readiness.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The sprint builds operating capability, not an assumed first settlement. Canonical time to first deal remains one to three months. Paid tools and live purchases require funded commitments within the selected startup capital plan.",
+      "caption": "Finish with a reconciled pilot or a documented reason to keep capital idle; neither projected rebates nor pending ACH fund repayment.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Establish counterparties, rules and capital boundaries",
+          "numeric_value": 7.0,
+          "detail": "Vet at least two buying groups, record Net-3 or Net-5 terms, map ticket jurisdictions and confirm issuer resale eligibility. Select the startup budget and concentration limits."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Build linked order, inventory and statement ledgers",
+          "numeric_value": 14.0,
+          "detail": "Implement the deal-commit reconciler and 60-day obligation view. Test partial ACH, duplicate payouts, rebate reversals and transfer failures; evaluate SkyBox or Automatiq inventory synchronization."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Rehearse full settlement before a bounded pilot",
+          "numeric_value": 21.0,
+          "detail": "Run a documented purchase-to-settlement simulation. Execute one small purchase only when commitments, transfer rights, insurance and repayment cash are verified; otherwise continue sourcing."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Reconcile evidence and set the next exposure limit",
+          "numeric_value": 30.0,
+          "detail": "Match cleared receipts and due card obligations where a pilot exists. Review aging, realized spread and markdown behavior; expand only within funded limits and documented capacity."
+        }
+      ]
+    }
+  ]
+}

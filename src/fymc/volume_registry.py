@@ -1,4 +1,4 @@
-"""Canonical 37-volume registry, slug resolver, and dynamic builder loader for FYMC."""
+"""Canonical 42-volume registry, slug resolver, and dynamic builder loader for FYMC."""
 from __future__ import annotations
 
 import importlib
@@ -886,16 +886,201 @@ ALL_VOLUME_SPECS: dict[int, dict] = {
             ],
         ),
     },
+    38: {
+        "volume_number": 38,
+        "volume_id": "vol-038-contingent-bill-audit-and-tax-credit-recovery",
+        "short_slug": "contingent-bill-audit-and-tax-credit-recovery",
+        "candidate_number": 38,
+        "score": 94,
+        "title": "Contingent Corporate Bill-Audit & Tax-Credit Recovery",
+        "subtitle": "The Money-to-Manpower Playbook for FedEx/UPS Parcel Refund APIs, Commercial Utility & Telecom Tariff Audits, Property-Tax Appeals & WOTC/Cost-Seg Splits",
+        "site_ui": _ui(
+            ["BILL-AUDIT &", "TAX-CREDIT", "RECOVERY"],
+            ["AUDIT THE BILL. DOCUMENT ELIGIBILITY.", "RECONCILE CONTINGENT RECOVERIES."],
+            "FedEx/UPS Parcel Refund Audits, Utility & Telecom Tariff Reviews, Property-Tax Appeals & Specialist-Led WOTC and Cost-Segregation Engagements",
+            "Review authorized billing records for recoverable errors, verify carrier refund windows and tariff terms, and route property-tax and tax-benefit work to qualified specialists. Separate refunds, credits, and depreciation timing benefits while documenting fee permissions, eligibility, and realized client savings.",
+            [
+                "Contingent bill-audit & tax-benefit recovery models",
+                "Corporate payers, account authority & specialist partners",
+                "Recovery splits, collection lags & realized savings math",
+                "Secure invoice ingestion & lean audit startup stack",
+                "Refund exclusions, missed deadlines & unsupported claims",
+                "Parcel spend triggers & first audit mandates",
+                "FedEx/UPS refund APIs & claim reconciliation",
+                "Utility meters, telecom tariffs & contract benchmarks",
+                "Property-tax appeal deadlines & representation rules",
+                "WOTC eligibility, cost-seg studies & permitted fee splits",
+                "Audit pods, evidence retention & recurring reviews",
+                "First 30-day authorized-recovery launch sprint",
+            ],
+            [
+                ["SOURCE", "Identify parcel, utility & tax-review opportunities"],
+                ["AUTHORIZE", "Secure records access & permitted fee terms"],
+                ["AUDIT", "Validate invoice errors, tariffs & eligibility"],
+                ["DOCUMENT", "Build evidence with qualified tax specialists"],
+                ["SUBMIT", "File authorized claims within applicable deadlines"],
+                ["RECONCILE", "Verify realized recoveries & earned fee splits"],
+            ],
+        ),
+    },
+    39: {
+        "volume_number": 39,
+        "volume_id": "vol-039-inbound-pay-per-call-and-ping-post-arbitrage",
+        "short_slug": "inbound-pay-per-call-and-ping-post-arbitrage",
+        "candidate_number": 39,
+        "score": 95,
+        "title": "Inbound Pay-Per-Call & RTB Ping-Post Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Ringba RTB Call Trees, 90-Second Buffer Transfers, Insurance/Legal Call Auctions & One-to-One Consent Certificates",
+        "site_ui": _ui(
+            ["PAY-PER-CALL", "& PING-POST", "ARBITRAGE"],
+            ["VERIFY CALLER INTENT. QUALIFY THE BUYER.", "ROUTE CONSENTED DEMAND."],
+            "Ringba RTB Call Trees, Contracted Buffer Transfers & Insurance and Legal Call Auctions with Traceable Seller-Specific Consent",
+            "Match genuine inbound callers to approved buyers through documented qualification, consent capture, and RTB routing. Treat 90-second buffers as buyer-specific billing terms, not guaranteed payouts, and reconcile accepted calls after duplicates, scrubs, disputes, and acquisition costs.",
+            [
+                "Inbound pay-per-call vs RTB ping-post models",
+                "Insurance buyers, legal intake desks & payout terms",
+                "Accepted-call yield, media cost & net spread math",
+                "Ringba tracking numbers, call trees & startup budgets",
+                "Duplicate calls, artificial duration & scrub losses",
+                "High-intent inbound sourcing & approved traffic channels",
+                "RTB pings, buyer filters & exclusive call routing",
+                "90-second buffers, warm transfers & caller experience",
+                "One-to-one consent evidence & current calling rules",
+                "Recording permissions, data minimization & dispute logs",
+                "Lean routing pods & buyer concentration controls",
+                "First 30-day qualified-call launch sprint",
+            ],
+            [
+                ["CONTRACT", "Approve buyers, traffic sources & billing criteria"],
+                ["ATTRACT", "Source genuine high-intent inbound callers"],
+                ["QUALIFY", "Verify caller needs, geography & consent evidence"],
+                ["AUCTION", "Ping eligible buyers with minimized call data"],
+                ["TRANSFER", "Route accepted calls without padding duration"],
+                ["RECONCILE", "Audit buffers, scrubs, disputes & net payouts"],
+            ],
+        ),
+    },
+    40: {
+        "volume_number": 40,
+        "volume_id": "vol-040-self-funded-erisa-pbm-and-workers-comp-arbitrage",
+        "short_slug": "self-funded-erisa-pbm-and-workers-comp-arbitrage",
+        "candidate_number": 40,
+        "score": 93,
+        "title": "Self-Funded Health, PBM & Workers' Comp Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Level-Funded ERISA Transitions, Pass-Through PBM Rebate Recovery, Reference-Based Pricing & NCCI E-Mod Audits",
+        "site_ui": _ui(
+            ["SELF-FUNDED", "PBM & E-MOD", "ARBITRAGE"],
+            ["UNDERWRITE CLAIMS. AUDIT THE CONTRACT.", "VERIFY NET EMPLOYER SAVINGS."],
+            "Level-Funded ERISA Transitions, Pass-Through PBM Contract Audits, Reference-Based Pricing & Workers' Compensation Experience-Mod Reviews",
+            "Coordinate licensed benefits advisers, actuaries, and claims specialists to evaluate employer plan funding, PBM rebate terms, and NCCI experience-mod inputs. Price stop-loss gaps, runout liabilities, participant protections, and disclosed compensation before counting verified savings.",
+            [
+                "Self-funded health, PBM & workers' comp service models",
+                "Employer fiduciaries, licensed brokers & TPA partners",
+                "Net savings, disclosed commissions & audit-fee economics",
+                "Secure claims intake & benefits-analysis startup stack",
+                "Stop-loss exclusions, lasers & runout liability traps",
+                "Renewal triggers & employer audit mandates",
+                "Level-funded ERISA transitions & actuarial underwriting",
+                "Pass-through PBM rebates & pharmacy contract reconciliation",
+                "Reference-based pricing & participant balance-bill support",
+                "NCCI E-Mod inputs, loss runs & correction procedures",
+                "Privacy controls, fiduciary review & lean specialist pods",
+                "First 30-day employer-benefits audit sprint",
+            ],
+            [
+                ["ENGAGE", "Confirm employer authority & adviser licensing"],
+                ["SECURE", "Collect authorized claims, contracts & loss runs"],
+                ["UNDERWRITE", "Model funding, stop-loss & participant exposure"],
+                ["AUDIT", "Validate PBM rebates & experience-mod inputs"],
+                ["IMPLEMENT", "Coordinate approved plan changes & corrections"],
+                ["VERIFY", "Reconcile net savings, fees & ongoing obligations"],
+            ],
+        ),
+    },
+    41: {
+        "volume_number": 41,
+        "volume_id": "vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage",
+        "short_slug": "buying-group-card-rebate-and-ticket-allocation-arbitrage",
+        "candidate_number": 41,
+        "score": 93,
+        "title": "Buying Group, Card-Float & Ticket Allocation Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Wholesale Buying-Group Fulfillment, Uncapped 2%–4% Commercial Card Cycling & Secondary Live-Event SSL/Suite Splits",
+        "site_ui": _ui(
+            ["BUYING GROUP", "& TICKET", "ARBITRAGE"],
+            ["VERIFY REAL DEMAND. CONTROL PAYMENT FLOAT.", "RECONCILE REBATES AND ALLOCATIONS."],
+            "Wholesale Buying-Group Fulfillment, Eligible Commercial Card Rewards & Authorized Live-Event Seat-License and Suite Allocations",
+            "Fulfill documented buying-group orders and permitted ticket allocations while modeling settlement timing, returns, and event risk. Verify advertised card reward rates, caps, and repayment rules with issuers; use genuine purchases rather than circular transactions and count only net earned rebates and settled resale proceeds.",
+            [
+                "Buying-group fulfillment vs ticket allocation models",
+                "Wholesale buyers, card issuers & venue counterparties",
+                "Order spreads, eligible rebates & float-adjusted margins",
+                "Credit limits, liquidity reserves & lean fulfillment stack",
+                "Reward clawbacks, buyer defaults & event cancellation traps",
+                "Verified purchase orders & authorized allocation sourcing",
+                "Wholesale delivery, acceptance & buying-group settlement",
+                "Commercial card cycling, issuer permissions & repayment caps",
+                "SSL rights, suite splits & ticket transfer restrictions",
+                "Resale laws, platform terms & refund obligations",
+                "Order ledgers, exposure limits & lean allocation pods",
+                "First 30-day funded-order launch sprint",
+            ],
+            [
+                ["VALIDATE", "Confirm genuine orders & authorized ticket demand"],
+                ["UNDERWRITE", "Price fees, returns, float & cancellation exposure"],
+                ["AUTHORIZE", "Verify issuer terms, resale rights & buyer contracts"],
+                ["FULFILL", "Deliver goods or transfer permitted allocations"],
+                ["SETTLE", "Collect proceeds & repay cards within agreed terms"],
+                ["RECONCILE", "Audit net rebates, refunds & counterparty limits"],
+            ],
+        ),
+    },
+    42: {
+        "volume_number": 42,
+        "volume_id": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage",
+        "short_slug": "cell-tower-billboard-and-ios-lease-arbitrage",
+        "candidate_number": 42,
+        "score": 91,
+        "title": "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage",
+        "subtitle": "The Money-to-Manpower Playbook for Perpetual Rooftop/Tower Easement Buyouts, Highway Digital-Sign Permits & Industrial Outdoor Storage (IOS) Master-Leases",
+        "site_ui": _ui(
+            ["TOWER, SIGN", "& IOS LEASE", "ARBITRAGE"],
+            ["VERIFY SITE RIGHTS. CLEAR THE PERMITS.", "UNDERWRITE LONG-TERM LEASE SPREADS."],
+            "Rooftop and Tower Easement Buyouts, Highway Digital-Billboard Permitting & Industrial Outdoor Storage Master-Lease Operations",
+            "Screen site demand, title, zoning, and assignment rights before committing to tower easements, digital-sign locations, or IOS master leases. Underwrite tenant credit, permit conditions, environmental exposure, and restoration obligations against realistic rent spreads and buyout terms.",
+            [
+                "Tower easements, billboard sites & IOS lease models",
+                "Landowners, carriers, sign operators & storage tenants",
+                "Rent spreads, escalators & easement buyout valuation",
+                "Site diligence costs, deposits & working-capital reserves",
+                "Permit denials, tenant exits & environmental liability traps",
+                "Rooftop portfolios, highway corridors & IOS demand sourcing",
+                "Perpetual easement scope, title & lender consent",
+                "Digital-sign permits, spacing & illumination restrictions",
+                "IOS zoning, drainage, access & master-lease permissions",
+                "Assignment clauses, subleases & restoration obligations",
+                "Site-management pods & tenant concentration limits",
+                "First 30-day site-underwriting launch sprint",
+            ],
+            [
+                ["SOURCE", "Match rooftops, sign corridors & IOS parcels to demand"],
+                ["SCREEN", "Review title, zoning, access & environmental risks"],
+                ["UNDERWRITE", "Model tenant credit, rent spreads & buyout terms"],
+                ["PERMIT", "Secure required approvals before binding commitments"],
+                ["CONTRACT", "Document easements, assignments & sublease rights"],
+                ["MANAGE", "Reconcile rents, compliance & restoration reserves"],
+            ],
+        ),
+    },
 }
 
-ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37)
+ACTIVE_PUBLISHED_NUMBERS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42)
 CANDIDATE_TO_VOLUME_NUMBER: dict[int, int] = {
     int(spec["candidate_number"]): num for num, spec in ALL_VOLUME_SPECS.items()
 }
 
 
 def get_volume_spec_by_candidate(candidate_number: object) -> dict | None:
-    """Return the canonical volume spec for a 1..37 candidate_number, or None."""
+    """Return the canonical volume spec for a 1..42 candidate_number, or None."""
     if isinstance(candidate_number, bool):
         return None
     try:
@@ -932,7 +1117,7 @@ def _match_volume_number(volume_id: object) -> int | None:
 
 
 def get_volume_spec(volume_id_or_num: object = None) -> dict:
-    """Return the canonical spec dict for any of the 37 registered volumes."""
+    """Return the canonical spec dict for any of the 42 registered volumes."""
     if volume_id_or_num is None:
         return ALL_VOLUME_SPECS[1]
     num = _match_volume_number(volume_id_or_num)

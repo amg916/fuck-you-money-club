@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-039-inbound-pay-per-call-and-ping-post-arbitrage",
+  "volume_slug": "vol-039-inbound-pay-per-call-and-ping-post-arbitrage",
+  "volume_number": 39,
+  "site_ui": {
+    "cover": [
+      "PAY-PER-CALL",
+      "& PING-POST",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "VERIFY CALLER INTENT. QUALIFY THE BUYER.",
+      "ROUTE CONSENTED DEMAND."
+    ],
+    "lead": "Ringba RTB Call Trees, Contracted Buffer Transfers & Insurance and Legal Call Auctions with Traceable Seller-Specific Consent",
+    "summary": "Match genuine inbound callers to approved buyers through documented qualification, consent capture, and RTB routing. Treat 90-second buffers as buyer-specific billing terms, not guaranteed payouts, and reconcile accepted calls after duplicates, scrubs, disputes, and acquisition costs.",
+    "chapters": [
+      "Inbound pay-per-call vs RTB ping-post models",
+      "Insurance buyers, legal intake desks & payout terms",
+      "Accepted-call yield, media cost & net spread math",
+      "Ringba tracking numbers, call trees & startup budgets",
+      "Duplicate calls, artificial duration & scrub losses",
+      "High-intent inbound sourcing & approved traffic channels",
+      "RTB pings, buyer filters & exclusive call routing",
+      "90-second buffers, warm transfers & caller experience",
+      "One-to-one consent evidence & current calling rules",
+      "Recording permissions, data minimization & dispute logs",
+      "Lean routing pods & buyer concentration controls",
+      "First 30-day qualified-call launch sprint"
+    ],
+    "flow": [
+      [
+        "CONTRACT",
+        "Approve buyers, traffic sources & billing criteria"
+      ],
+      [
+        "ATTRACT",
+        "Source genuine high-intent inbound callers"
+      ],
+      [
+        "QUALIFY",
+        "Verify caller needs, geography & consent evidence"
+      ],
+      [
+        "AUCTION",
+        "Ping eligible buyers with minimized call data"
+      ],
+      [
+        "TRANSFER",
+        "Route accepted calls without padding duration"
+      ],
+      [
+        "RECONCILE",
+        "Audit buffers, scrubs, disputes & net payouts"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "INBOUND PAY-PER-CALL & RTB PING-POST ARBITRAGE",
+  "subtitle": "The Complete Playbook for Inbound Pay-Per-Call & RTB Ping-Post Arbitrage: $200,000–$1,500,000 USD in Annual Gross Settlements, Starting with a 1 FT + 2 C (3 People) Pod",
+  "chapter_count": 12,
+  "total_word_count": 78338,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 95,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T15:15:32Z"
+}

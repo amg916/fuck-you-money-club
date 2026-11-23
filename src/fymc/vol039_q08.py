@@ -1,0 +1,616 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-and-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small inbound pay-per-call & rtb ping-post arbitrage desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "Ringba and Retreaver Routing, NIPR Buyer Checks, CMS Scope Rules, Consent Evidence, and Settlement-Grade Event Ledgers",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #39, Inbound Pay-Per-Call & RTB Ping-Post Arbitrage, holds Rank #01 "
+        "of 42 with a 95/100 Money-to-Manpower Score and 14 mapped plays. This chapter "
+        "turns public licensing records, commercial routing APIs, consent evidence, and "
+        "diagnostic traces into a small desk's operating advantage. Its eighteen-entry "
+        "directory separates authoritative records from vendor assertions, then connects "
+        "each lookup to routing eligibility, pricing, collection, or dispute recovery. "
+        "Formula v2.0 produces annual owner profits of $30,000, $199,750, and $480,000 "
+        "on gross settlements of $200,000, $850,000, and $1,500,000. The 55% retained "
+        "share yields $110,000, $467,500, and $825,000 before remaining operating costs. "
+        "The practical objective is fewer unverifiable transfers, faster buyer feedback, "
+        "and comparison traffic that survives factual scrutiny."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$200,000",
+            "context": "Annual gross billable call settlements; 55% retained revenue equals $110,000.",
+            "note": "15% gross-basis net margin; $30,000 annual owner net profit; 1 FT + 2 C; 27.27% retained net margin.",
+        },
+        {
+            "label": "Base",
+            "value": "$850,000",
+            "context": "Annual gross billable call settlements; 55% retained revenue equals $467,500.",
+            "note": "23.5% gross-basis net margin; $199,750 annual owner net profit; 1 FT + 2 C; 42.73% retained net margin.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,500,000",
+            "context": "Annual gross billable call settlements; 55% retained revenue equals $825,000.",
+            "note": "32% gross-basis net margin; $480,000 annual owner net profit; 2 FT + 3 C; 58.18% retained net margin.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build the buyer eligibility graph from authoritative records",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build the information edge around buyer eligibility, not around harvesting consumers. "
+                    "The minimum buyer record joins a legal entity, billing counterparty, authorized signer, "
+                    "licensed service territory, accepted vertical, transfer endpoint, and settlement terms. "
+                    "Use the state insurance department for producer authority, the state bar for attorney "
+                    "status, and the relevant contractor board for emergency trades. A Secretary of State "
+                    "registration establishes an entity record; it does not establish professional authority "
+                    "or the ability to pay. NIPR can accelerate insurance verification under its access "
+                    "terms, while the issuing department remains the escalation source for ambiguous status. "
+                    "Store the retrieved status, jurisdiction, source address, retrieval time, and human "
+                    "review outcome rather than flattening everything into a permanent approved flag. "
+                    "One suspended license or mismatched trading name should remove only the affected "
+                    "buyer-territory route, preserving healthy routes elsewhere. For a desk with twenty "
+                    "buyers across five states, model one hundred eligibility edges rather than twenty "
+                    "company profiles. Refresh active edges on a documented schedule and immediately "
+                    "after a buyer change, complaint, returned payment, or official status alert. Public "
+                    "record availability is useful evidence, but neither a marketing permission nor "
+                    "permission to evade a portal's access restrictions."
+                ),
+                (
+                    "Separate three evidence questions before a call reaches an auction. First, can this "
+                    "buyer serve this location and requested service? Second, does this interaction permit "
+                    "the proposed marketing, transfer, recording, and subsequent contact? Third, does the "
+                    "contract define a collectible billable event? The federal one-to-one seller consent "
+                    "amendment adopted by the FCC was vacated in Insurance Marketing Coalition v. FCC "
+                    "on January 24, 2025; do not present that vacated amendment as a universal current "
+                    "TCPA requirement. Existing TCPA restrictions still require analysis of the technology, "
+                    "purpose, recipient, and applicable consent standard. Buyer-specific evidence remains "
+                    "a strong contractual control, and CMS separately imposes specific TPMO data-sharing "
+                    "requirements. Likewise, the Medicare forty-eight-hour scope-of-appointment rule "
+                    "concerns covered personal marketing appointments, with stated exceptions; it is not "
+                    "a mandatory delay on every inbound call. Capture the appointment category and "
+                    "applicable exception instead of coding an indiscriminate timer. Apply relevant "
+                    "recording obligations and state recording rules before collecting audio. For legal "
+                    "calls, verify state advertising, referral-fee, and runner restrictions before selecting "
+                    "a per-call compensation model. No routing vendor or consent certificate resolves "
+                    "these separate questions automatically; record the controlling rule and responsible "
+                    "reviewer against each vertical configuration."
+                ),
+                (
+                    "Use public records as slow-changing configuration inputs, never as synchronous "
+                    "dependencies inside a sub-second ping. A nightly job can compare previously verified "
+                    "buyer edges with newly retrieved records, creating a review queue for status changes. "
+                    "A failed retrieval must produce a source-outage event, not silently replace a valid "
+                    "record with an empty value. Assign freshness budgets by risk: a recently changed "
+                    "buyer may require manual confirmation before receiving another transfer, whereas an "
+                    "unchanged entity address can tolerate a longer refresh interval. Keep an explicit "
+                    "expiry on routing eligibility so stale evidence eventually closes the affected route. "
+                    "Government portals frequently provide search forms rather than supported APIs; use "
+                    "documented exports or permitted manual checks instead of reverse-engineering private "
+                    "endpoints. Budget lookup work as an operating expense. At one hundred eligibility "
+                    "edges and four minutes per monthly review, the workload is roughly 6.7 hours before "
+                    "exceptions; at an illustrative $35 hourly contractor rate, that is approximately "
+                    "$233. Those checks protect settlement quality, not the scorecard's gross revenue "
+                    "ceiling. Link each finding to the contract version and destination number so a buyer "
+                    "cannot substitute an unverified affiliate behind an otherwise familiar brand."
+                ),
+            ],
+            "table": {
+                "caption": "Directory Entries 01–06: Official Records and Buyer Eligibility Sources",
+                "headers": [
+                    "Named source and exact access method",
+                    "Cost tier and refresh expectation",
+                    "Rate-limit hygiene and fallback source",
+                    "Decision supported and retained evidence",
+                ],
+                "rows": [
+                    [
+                        "01. NIPR Producer Database through nipr.com product enrollment and authorized PDB reports.",
+                        "Commercial access uses contracted report pricing; record each jurisdiction's supplied update timestamp.",
+                        "Use licensed access and contracted quotas; fall back to the issuing insurance department.",
+                        "Match producer number, entity identity, license lines, and permitted states before routing insurance calls.",
+                    ],
+                    [
+                        "02. California Department of Insurance through insurance.ca.gov Check a License search.",
+                        "Public searches are free; displayed status is a snapshot, not a promised real-time feed.",
+                        "Use manual checks or expressly supported access; resolve discrepancies with department licensing staff.",
+                        "Retain license number, status, authority lines, retrieval time, and matched buyer contract identity.",
+                    ],
+                    [
+                        "03. California Secretary of State through bizfileonline.sos.ca.gov business entity search.",
+                        "Basic public search is free; certified records may carry fees and filing delays.",
+                        "Avoid repeated automated form submissions; request official filings when search results remain ambiguous.",
+                        "Verify entity existence and registered identity without treating incorporation as professional licensing evidence.",
+                    ],
+                    [
+                        "04. State Bar of California through apps.calbar.ca.gov/attorney/LicenseeSearch/QuickSearch public attorney lookup.",
+                        "Public attorney lookup is free; disciplinary and status changes follow the authority's publication cycle.",
+                        "Perform permitted individual searches; use official disciplinary records or bar assistance for discrepancies.",
+                        "Match the accepting attorney and jurisdiction; separately review referral compensation and advertising restrictions.",
+                    ],
+                    [
+                        "05. California CSLB through cslb.ca.gov Online Services and Check a License.",
+                        "Public contractor searches are free; board posting cadence governs status and classification freshness.",
+                        "Cache dated verification results; obtain direct board confirmation when status or classification conflicts.",
+                        "Check license classification, bond indicators, and status before offering emergency-trade calls to buyers.",
+                    ],
+                    [
+                        "06. CMS Medicare marketing resources through cms.gov search and current eCFR Part 422.",
+                        "Official rule access is free; monitor published amendments and their distinct effective dates.",
+                        "Download documents once per revision; use Federal Register publications to resolve amendment history.",
+                        "Version scope-of-appointment, TPMO sharing, and recording requirements against each Medicare routing configuration.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before a new buyer receives live traffic",
+                "body": "Keep the route disabled until the evidence packet supports the actual buyer, jurisdiction, interaction, and settlement terms.",
+                "items": [
+                    "Match the contract entity, receiving endpoint, professional license, and advertised trading name; investigate every affiliate substitution.",
+                    "Test buyer-specific evidence retrieval and the applicable recording or appointment workflow using synthetic records before accepting consumer traffic.",
+                    "Get written definitions for connected seconds, duplicate windows, service territory, scrub reasons, and dispute deadlines before testing a 90–120 second buffer.",
+                    "Limit the buyer's initial exposure and verify the first net-7 collection before expanding publisher caps or adding new territories.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Design a bounded enrichment waterfall outside the auction clock",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The enrichment waterfall should answer a short sequence of routing questions with "
+                    "increasing cost and sensitivity. Normalize the submitted telephone number, validate "
+                    "the declared service location, check first-party suppression, evaluate applicable "
+                    "external restrictions, and retrieve required consent evidence. Only then request "
+                    "commercial line intelligence when it changes a legitimate decision. An area code "
+                    "does not prove current residence or service location, and a line-type result does "
+                    "not establish consent or identify the present caller. Ask for ZIP code or service "
+                    "address directly where needed. Twilio Lookup can provide documented number "
+                    "intelligence packages; TrustedForm and Jornaya provide evidence workflows with "
+                    "different capture, retrieval, and retention semantics. A certificate identifier "
+                    "without accessible evidence is insufficient for a dispute packet. Keep the "
+                    "landing-page disclosure version, capture timestamp, publisher identifier, permitted "
+                    "recipients, and evidence retrieval outcome in the same event chain. Do not send "
+                    "the whole consumer record to every bidder. Define a minimal pre-transfer ping "
+                    "schema using service category, permitted geographic granularity, requested timing, "
+                    "and an opaque request identifier. Release additional fields only to an authorized "
+                    "recipient when the documented interaction and contract permit that disclosure."
+                ),
+                (
+                    "Distinguish a genuine consumer-initiated inbound inquiry from subsequent outbound "
+                    "marketing; the latter can trigger additional TCPA, Telemarketing Sales Rule, and "
+                    "state requirements. National Do Not Call access belongs to authorized entities "
+                    "and permitted purposes, with seller-specific access obligations where applicable. "
+                    "The federal registry's thirty-one-day refresh requirement for covered outbound "
+                    "telemarketing is not a claim that government suppression runs in real time. "
+                    "Maintain a locally refreshed suppression index and check it immediately before "
+                    "a covered contact. Apply internal opt-outs faster than the external refresh cycle. "
+                    "Commercial litigator indicators, if used, are imperfect risk signals rather than "
+                    "authoritative determinations about a person or substitutes for consent. Minimize "
+                    "their use and restrict access. Build a lookup budget with an explicit stop rule: "
+                    "an invalid service territory should end enrichment before paid certificate work. "
+                    "For an illustrative thousand inquiries, a $0.02 lookup on every inquiry and a "
+                    "$0.10 evidence operation on four hundred eligible inquiries cost $60, or $0.06 "
+                    "per initial inquiry. Those are planning inputs, not vendor quotations. Replace "
+                    "them with contracted prices, and stop any optional lookup whose measured recovery "
+                    "or qualification improvement fails to cover its actual cost."
+                ),
+                (
+                    "Ringba and Retreaver belong in the live decision path only through supported "
+                    "interfaces and account-enabled capabilities. Document whether an endpoint performs "
+                    "configuration, reporting, bid collection, or transfer reservation; those operations "
+                    "have different timeout and retry consequences. Set a measured end-to-end auction "
+                    "budget, then allocate time for network transit, buyer responses, decision logic, "
+                    "and call connection. A local target such as 700 milliseconds is an engineering "
+                    "budget, not a vendor service commitment. Cache stable eligibility configuration "
+                    "and avoid calling licensing portals during that interval. Attach request IDs and "
+                    "expiration times to bids so a late response cannot win an expired auction. "
+                    "Respect documented quotas, use capped exponential backoff with jitter for safe "
+                    "background requests, and honor Retry-After responses. Do not blindly retry a "
+                    "transfer or reservation operation after a timeout; reconcile its state first to "
+                    "avoid duplicate calls or charges. If required evidence is unavailable, use only "
+                    "a separately documented permissible path or stop the transfer. If optional "
+                    "enrichment fails, route using verified first-party inputs and a conservative "
+                    "buyer configuration. Maintain a circuit breaker per dependency so one provider "
+                    "outage does not exhaust the entire desk's worker pool."
+                ),
+            ],
+            "table": {
+                "caption": "Directory Entries 07–12: Commercial Routing, Evidence, and Number APIs",
+                "headers": [
+                    "Named service and exact access method",
+                    "Cost tier and observed freshness policy",
+                    "Quota handling and outage fallback",
+                    "Useful output and prohibited inference",
+                ],
+                "rows": [
+                    [
+                        "07. Ringba through app.ringba.com account access and its documented account API credentials.",
+                        "Commercial telephony, platform, and enabled RTB charges follow contract; measure live response percentiles.",
+                        "Follow account quotas and timeout rules; use a preconfigured verified destination when auctions fail.",
+                        "Capture auction identifiers, buyer bids, transfer outcomes, and duration events; bids are not collected revenue.",
+                    ],
+                    [
+                        "08. Retreaver through retreaver.com account enrollment and documented API and webhook interfaces.",
+                        "Commercial subscription and usage terms vary; measure webhook delay rather than assuming immediate delivery.",
+                        "Throttle configuration updates and deduplicate callbacks; use contracted reporting exports to reconstruct missed events.",
+                        "Associate campaign tags and routing events with settlement identifiers without assuming identical Ringba semantics.",
+                    ],
+                    [
+                        "09. ActiveProspect TrustedForm through activeprospect.com enrollment, capture script, and authorized certificate API.",
+                        "Commercial evidence products use current account pricing; capture timing and later retrieval availability differ.",
+                        "Use permitted retrieval operations and account quotas; stop evidence-dependent transfers when required retrieval fails.",
+                        "Preserve disclosure context and available certificate evidence; certificate existence alone does not establish sufficient permission.",
+                    ],
+                    [
+                        "10. Verisk Jornaya LeadiD through jornaya.com enrollment and contracted capture or verification integrations.",
+                        "Commercial pricing and retention follow agreement; measure capture-to-verification latency in your own integration.",
+                        "Apply contracted quotas and bounded retries; retain authorized first-party evidence when platform verification is unavailable.",
+                        "Link the interaction identifier to publisher and disclosure records without treating an identifier as consent itself.",
+                    ],
+                    [
+                        "11. Twilio Lookup through lookup.twilio.com/v2/PhoneNumbers/{PhoneNumber} with authorized account authentication.",
+                        "Package availability and per-request charges follow current pricing; returned intelligence has source-dependent freshness.",
+                        "Cache only within permissible retention and accuracy limits; fall back to directly supplied service information.",
+                        "Use selected number intelligence for routing diagnostics; never infer residence, identity, or marketing permission.",
+                    ],
+                    [
+                        "12. FTC National Do Not Call Registry through telemarketing.donotcall.gov authorized seller or service-provider access.",
+                        "Area-code subscriptions have current fee rules and allowances; refresh covered lists at least every thirty-one days.",
+                        "Download through authorized workflows and protect files; suspend affected outbound work if required access lapses.",
+                        "Check covered outbound contacts against current suppression; do not repurpose registry information for prospecting.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Buy information only when it changes the next decision",
+                "body": "Measure evidence availability, auction delay, and collectible margin together rather than optimizing a single vendor dashboard.",
+                "items": [
+                    "Run territory and first-party opt-out checks before paid enrichment; log skipped paid calls as saved lookup expense, not additional revenue.",
+                    "Keep buyer identity aliases in one versioned mapping so a billing-name change cannot sever links to license evidence and unpaid settlements.",
+                    "Replay a synthetic expired bid after every routing release; confirm it cannot connect a caller or generate a payable settlement.",
+                    "Sample the same settled calls across publisher logs, routing records, and buyer reports before accepting a new duration-scrub definition.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Make call diagnostics and settlement evidence share one event ledger",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "A settlement-grade pipeline begins with identifiers that survive every handoff. "
+                    "Create an internal interaction ID before the first ping and map it to publisher "
+                    "click IDs, routing-platform call IDs, buyer transaction IDs, consent evidence "
+                    "references, and eventual invoice lines. Record event occurrence time separately "
+                    "from receipt time, both in UTC, because delayed webhooks otherwise distort "
+                    "duration and response-latency measurements. Append events rather than overwriting "
+                    "history; materialized views can calculate the latest disposition. Verify webhook "
+                    "authentication using the vendor's documented mechanism, restrict payload size, "
+                    "and enforce replay protection where supported. A duplicate callback should update "
+                    "neither payable totals nor conversion counts twice. For a small desk, PostgreSQL "
+                    "with unique event keys, scheduled reconciliation jobs, and access-controlled "
+                    "object storage can outperform an unnecessarily elaborate streaming stack. Store "
+                    "recording references separately from ordinary analytics and restrict playback to "
+                    "authorized staff. Use synthetic identities in staging and redacted payloads in "
+                    "support tickets. Establish separate retention schedules for recordings, evidence, "
+                    "billing records, and diagnostic traces, with legal holds handled explicitly. "
+                    "Deleting a raw recording should not silently delete the invoice facts or the "
+                    "documented reason that a specific call was considered billable."
+                ),
+                (
+                    "The critical diagnostic distinction is between network duration, agent-connected "
+                    "duration, and the buyer's contractual qualification duration. A 120-second call "
+                    "including thirty seconds of queue music may fail a contract requiring 120 "
+                    "seconds with an agent. Instrument ringing, answer, bridge, agent connection "
+                    "when available, disconnect, and disposition as separate events. Where agent "
+                    "connection is not observable, disclose the proxy and reconcile against buyer "
+                    "evidence rather than inventing precision. Twilio Voice Insights, authorized "
+                    "SIP traces, and platform reports can distinguish early hangups, codec issues, "
+                    "transfer failures, and busy destinations. Capture only traffic from systems "
+                    "you operate or are expressly authorized to inspect. A packet capture can "
+                    "contain caller identifiers or audio; narrow its scope and delete it according "
+                    "to the incident schedule. Prometheus and Grafana should display connect rate, "
+                    "bid expiry, evidence failure, duplicate events, webhook lag, and disputed "
+                    "settlements by buyer. Alert on changes relative to each route's baseline "
+                    "rather than declaring every short call fraudulent. If one destination "
+                    "degrades, reduce its traffic allocation and test a verified alternate while "
+                    "preserving the incident's timestamps and affected call identifiers for recovery."
+                ),
+                (
+                    "AI transcript disposition can accelerate classification, but it must not become "
+                    "the sole authority for invoice deductions or sensitive service decisions. "
+                    "Evaluate it against a labeled sample containing interruptions, accents, "
+                    "background noise, wrong numbers, and unsuccessful transfers. Record model "
+                    "version, confidence, and reviewer corrections; send uncertain cases to a "
+                    "small exception queue. If an external transcription service receives audio, "
+                    "verify authorized processing, retention, and permitted use before transmission. "
+                    "For a weekly batch of two hundred disputed calls, reviewing every call for "
+                    "three minutes takes ten hours. If automation correctly resolves routine "
+                    "categories and leaves forty calls for review, the manual queue takes two "
+                    "hours, plus quality sampling and system maintenance. That is a workload "
+                    "illustration, not eight guaranteed hours of savings. Feed ad platforms only "
+                    "contractually permitted conversion fields through supported server-to-server "
+                    "interfaces. Distinguish provisional qualification from final settlement, and "
+                    "use supported adjustment mechanisms when scrubs reverse a conversion. Google "
+                    "Ads API quotas, upload windows, identifiers, and attribution behavior vary "
+                    "by integration. Keep a local delivery ledger so a failed upload can be "
+                    "reconciled without creating a second conversion or exposing transcript text "
+                    "to an advertising endpoint."
+                ),
+            ],
+            "table": {
+                "caption": "Directory Entries 13–18: Diagnostic, Storage, and Feedback Tools",
+                "headers": [
+                    "Named tool and exact access method",
+                    "Cost tier and measurement latency",
+                    "Load controls and fallback procedure",
+                    "Evidence produced and operating decision",
+                ],
+                "rows": [
+                    [
+                        "13. Twilio Voice Insights through console.twilio.com and documented Voice Insights API resources.",
+                        "Basic and paid advanced features differ; measure event availability against the actual call timeline.",
+                        "Observe account request limits; reconcile with Call resource records and authorized carrier support evidence.",
+                        "Investigate answer, disconnect, and quality anomalies without equating network duration with contractual agent duration.",
+                    ],
+                    [
+                        "14. sngrep through github.com/irontec/sngrep on an explicitly authorized SIP host or capture file.",
+                        "Open-source software has infrastructure and analyst costs; live capture shows packets available at that host.",
+                        "Filter approved interfaces and sessions; fall back to authorized carrier traces when media paths differ.",
+                        "Reconstruct SIP signaling and transfer failures while restricting caller identifiers and capture-file access.",
+                    ],
+                    [
+                        "15. PostgreSQL through postgresql.org packages and authenticated SQL connections to the desk's database.",
+                        "Open-source database requires hosting and maintenance; committed events become queryable within local transaction timing.",
+                        "Use connection pools, indexes, and statement timeouts; restore tested backups and replay authenticated event archives.",
+                        "Enforce unique settlement keys and retain immutable event facts supporting invoices and buyer disputes.",
+                    ],
+                    [
+                        "16. Amazon S3 through authorized AWS SDK or REST access to dedicated evidence buckets.",
+                        "Storage, requests, and retrieval incur usage charges; object availability follows the selected storage service behavior.",
+                        "Apply bounded retries and lifecycle policies; maintain tested recovery procedures for critical retained evidence.",
+                        "Separate encrypted recordings from analytics and preserve auditable access, retention, and deletion decisions.",
+                    ],
+                    [
+                        "17. Prometheus and Grafana through prometheus.io and grafana.com documentation and authenticated local endpoints.",
+                        "Open-source editions require hosting; dashboard freshness depends on configured scrape and evaluation intervals.",
+                        "Limit label cardinality and query ranges; use structured event logs during monitoring-stack interruptions.",
+                        "Expose buyer-specific webhook lag, bid expiry, disputes, and connection failures without publishing caller identifiers.",
+                    ],
+                    [
+                        "18. Google Ads API through developers.google.com/google-ads/api with OAuth and an approved developer token.",
+                        "API access is quota-controlled rather than a separate per-call tariff; reporting and attribution can lag.",
+                        "Respect token quotas and upload limits; retain a local retry ledger and use supported account imports.",
+                        "Deliver permitted qualified-call conversions and supported adjustments without transmitting recordings or unrestricted consumer profiles.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Register the interaction before enrichment",
+                    "action": "Create one internal interaction ID and record the publisher, vertical, and disclosure version.",
+                    "detail": "Reject malformed inputs, attach source timestamps, and keep personal fields outside ordinary application logs.",
+                },
+                {
+                    "step": 2,
+                    "title": "Evaluate cached eligibility and required evidence",
+                    "action": "Apply territory, buyer status, suppression, and interaction-specific evidence rules before requesting bids.",
+                    "detail": "Record the rule version and failure reason; stop evidence-dependent routes instead of treating outages as successful checks.",
+                },
+                {
+                    "step": 3,
+                    "title": "Execute and observe one bounded auction",
+                    "action": "Issue minimal pings, discard expired bids, and connect through the selected verified destination.",
+                    "detail": "Persist bid identifiers and connection events; reconcile ambiguous transfer results before attempting another transfer.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile qualification through collection",
+                    "action": "Join buyer dispositions, payable calculations, invoice lines, and received cash against the original interaction.",
+                    "detail": "Deduplicate callbacks, open timed dispute cases, and send supported advertising adjustments after final settlement changes.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Price comparison intent against collected contribution, not dashboard revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The mapped TRACK_2 play competitor_intent_comparison_hijacking uses programmatic "
+                    "comparison pages, live fee calculators, and migration guides to capture specific "
+                    "purchase questions. Build useful pages around '[Competitor] pricing', '[Competitor] "
+                    "cancel', and '[Competitor] vs [Offer]' only where the desk can substantiate "
+                    "the comparison and fulfill the resulting service request. The volume contains "
+                    "fourteen mapped plays; this chapter details this named play without inventing "
+                    "identifiers for the other thirteen. A comparison record should contain the "
+                    "public source URL, observation date, geography, service tier, introductory "
+                    "conditions, recurring charges, and cancellation mechanics. Fetch only permitted "
+                    "public pages, honor access terms, and use manual verification when a price "
+                    "depends on an individualized quote. A calculator must expose its assumptions "
+                    "rather than quietly turning a promotional fee into a universal saving. Use "
+                    "text-only brand references, clearly identify the desk, and avoid logos or "
+                    "layout that suggests affiliation. Nominative fair use is fact-specific, not "
+                    "an automatic exemption. If reliable comparison evidence disappears, remove "
+                    "the unsupported claim or replace the page with a sourced category guide. "
+                    "Do not masquerade as a competitor's cancellation department or divert "
+                    "someone seeking account support into an unrelated sales transfer."
+                ),
+                (
+                    "Treat the play's 10–18% conversion range as a test hypothesis with a defined "
+                    "denominator, not a promise or a scorecard assumption. At one thousand paid "
+                    "comparison-page visits and $2 CPC, media costs $2,000. A 10% "
+                    "visit-to-call rate yields one hundred calls; at 18%, it yields one hundred "
+                    "eighty. If 60% become accepted billable calls at $50 each, gross settlements "
+                    "are $3,000 and $5,400 respectively. With no separate publisher payment in "
+                    "this direct-media example, contribution after media is $1,000 or $3,400, "
+                    "before tooling, labor, refunds, and other costs. To fit the canonical 55% "
+                    "retained-share planning envelope, total publisher and media acquisition cost "
+                    "must equal 45% of gross: $1,350 at the lower outcome and $2,430 at the "
+                    "higher outcome. Consequently, the lower case fails that envelope at $2 "
+                    "CPC; its matching CPC is $1.35. The higher case has $430 of acquisition "
+                    "headroom. Keep this funnel sensitivity separate from the annual scenarios. "
+                    "If scrub rates rise, substitute collected eligible calls for provisional "
+                    "acceptances and reduce bids before expanding page coverage. A prettier "
+                    "comparison table cannot rescue an uncollectible buyer or negative acquisition spread."
+                ),
+                (
+                    "Reconcile every dashboard to Formula v2.0 using the same revenue labels. "
+                    "Conservative gross settlements of $200,000 less $90,000 acquisition payouts "
+                    "produce $110,000 retained revenue; subtract $80,000 remaining costs for "
+                    "$30,000 owner profit. Base gross settlements of $850,000 less $382,500 "
+                    "produce $467,500 retained revenue; subtract $267,750 for $199,750 profit. "
+                    "Scaled gross settlements of $1,500,000 less $675,000 produce $825,000; "
+                    "subtract $345,000 for $480,000 profit. Gross-basis margins are 15%, "
+                    "23.5%, and 32%; retained-basis margins are 27.27%, 42.73%, and 58.18%. "
+                    "The model uses a 55% retained share; actual ASC 606 principal-versus-agent "
+                    "presentation depends on the contracts and control assessment, not a switch "
+                    "inside the routing software. Never report insurance premiums, legal case "
+                    "values, or emergency repair invoices as desk revenue. The supplied monthly "
+                    "opex range of $2,500–$14,000 is not the complete residual-cost bridge in "
+                    "every scenario; classify labor, contractors, usage, and other costs explicitly "
+                    "without counting acquisition twice. Track receivables aging separately from "
+                    "profit, retain startup liquidity within the $8,000–$45,000 planning range, "
+                    "and expand publisher limits only after actual net-7 collections validate "
+                    "the buyer's reported acceptance quality."
+                ),
+            ],
+            "table": {
+                "caption": "Eight Decision Rules Connecting Comparison Intent to Canonical Settlement Economics",
+                "headers": [
+                    "Operating decision and measured input",
+                    "Explicit calculation or evidence standard",
+                    "Failure signal requiring operator intervention",
+                    "Fallback preserving evidence and working capital",
+                ],
+                "rows": [
+                    [
+                        "Publish competitor_intent_comparison_hijacking pages only for verifiable purchase and migration questions.",
+                        "Store timestamped public pricing, cancellation steps, offer conditions, and clearly identified comparison authorship.",
+                        "A missing source, unsupported saving, or implied affiliation makes the comparison unreliable.",
+                        "Remove unsupported claims and publish a sourced category guide using text-only brand references.",
+                    ],
+                    [
+                        "Evaluate ten-percent visit-to-call conversion across one thousand paid comparison-page visits.",
+                        "One hundred calls times sixty-percent acceptance times fifty dollars yields three thousand dollars gross.",
+                        "Two thousand dollars media spend exceeds the canonical thirteen-hundred-fifty-dollar acquisition allocation.",
+                        "Reduce CPC toward one dollar thirty-five cents or pause that traffic cohort.",
+                    ],
+                    [
+                        "Evaluate eighteen-percent visit-to-call conversion using the same visit and acceptance assumptions.",
+                        "One hundred eighty calls produce one hundred eight accepted calls and fifty-four hundred dollars gross.",
+                        "Additional acquisition charges above four hundred thirty dollars erase retained-share envelope headroom.",
+                        "Hold other acquisition payments within headroom and remeasure after buyer settlement adjustments.",
+                    ],
+                    [
+                        "Reconcile Conservative annual settlements using the exact supplied Formula v2.0 scorecard.",
+                        "Two hundred thousand gross minus ninety thousand acquisition minus eighty thousand residual costs yields thirty thousand profit.",
+                        "Counting publisher payouts again within residual costs understates owner profit and breaks reconciliation.",
+                        "Maintain separate acquisition and residual ledgers with one full-time operator and two contractors.",
+                    ],
+                    [
+                        "Reconcile Base annual settlements without substituting merchant activity for operator revenue.",
+                        "Eight hundred fifty thousand gross produces four hundred sixty-seven thousand five hundred retained and $199,750 profit.",
+                        "Using 23.5% against retained revenue incorrectly changes the canonical owner profit calculation.",
+                        "Apply 23.5% to gross or 42.73% rounded to retained, preserving exact profit dollars.",
+                    ],
+                    [
+                        "Reconcile Scaled annual settlements with the specified five-person small-team configuration.",
+                        "One million five hundred thousand gross less total costs yields four hundred eighty thousand annual profit.",
+                        "An assumed fourteen-thousand-dollar monthly ceiling omits costs needed for the complete annual bridge.",
+                        "Budget six hundred seventy-five thousand acquisition and three hundred forty-five thousand remaining costs explicitly.",
+                    ],
+                    [
+                        "Release publisher capacity only after actual buyer collections support reported accepted-call quality.",
+                        "Compare accepted invoices, disputed deductions, bank receipts, aging balances, and contracted net-7 terms.",
+                        "A buyer showing healthy duration metrics but overdue invoices creates unsecured working-capital exposure.",
+                        "Reduce exposure limits, stop incremental allocations, and collect existing balances before restoring capacity.",
+                    ],
+                    [
+                        "Attribute advertising conversions using qualified events and supported final-settlement adjustment mechanisms.",
+                        "Join original click identifiers, interaction records, buyer dispositions, and collected invoice lines.",
+                        "Duplicate uploads or unadjusted scrubs inflate apparent return and encourage excessive acquisition bids.",
+                        "Use an idempotent delivery ledger and reconcile platform reports against collected contribution weekly.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The winning call desk buys only decision-changing information and counts only settlements it can explain and collect.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Create a versioned buyer-territory graph linking each destination number to its contract entity, applicable license, status evidence, and freshness deadline.",
+        "Configure the eighteen directory sources with authorized access, contracted costs, measured latency, documented quotas, and an explicit outage procedure.",
+        "Test a minimal-data enrichment waterfall that separates service eligibility, suppression, consent evidence, and optional number intelligence before bidding.",
+        "Replay duplicate webhooks, expired bids, evidence outages, and ambiguous transfers against synthetic calls; verify that none creates duplicate settlements.",
+        "Publish one substantiated competitor comparison cohort with timestamped pricing, visible calculator assumptions, text-only brand references, and collected-call attribution.",
+        "Reconcile gross settlements, 45% acquisition allocation, 55% retained revenue, residual costs, disputes, and bank collections to all three canonical annual scenarios.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Assess calling technology, purpose, recipient, and applicable consent requirements separately from buyer contracts and evidence-vendor outputs.",
+        },
+        {
+            "title": "47 CFR § 64.1200 — Delivery restrictions and telephone solicitation requirements",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Configure applicable calling, opt-out, and company-specific suppression controls; do not treat the vacated one-to-one amendment as a universal requirement.",
+        },
+        {
+            "title": "16 CFR § 310.4(b)(3)(iv) — National Do Not Call Registry refresh",
+            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
+            "relevance": "For covered outbound telemarketing, maintain the required registry access and use a registry version obtained no more than thirty-one days before the call.",
+        },
+        {
+            "title": "16 CFR § 310.8 — National Do Not Call Registry access fees",
+            "url": "https://www.ecfr.gov/current/title-16/section-310.8",
+            "relevance": "Account for authorized seller access, applicable area-code fees, and restrictions on registry use when designing suppression services.",
+        },
+        {
+            "title": "42 CFR § 422.2264(c)(3) — Scope of appointment",
+            "url": "https://www.ecfr.gov/current/title-42/section-422.2264",
+            "relevance": "Apply the forty-eight-hour scope-of-appointment timing requirement to covered Medicare Advantage personal marketing appointments and record applicable exceptions.",
+        },
+        {
+            "title": "42 CFR § 422.2274(g) — Third-party marketing organization requirements",
+            "url": "https://www.ecfr.gov/current/title-42/section-422.2274",
+            "relevance": "Implement applicable marketing, sales, and enrollment call recording and beneficiary-data sharing controls, including recipient-specific written consent requirements.",
+        },
+        {
+            "title": "42 CFR § 423.2274(g) — Part D third-party marketing organization requirements",
+            "url": "https://www.ecfr.gov/current/title-42/section-423.2274",
+            "relevance": "Check parallel Part D TPMO obligations when the desk handles prescription-drug-plan marketing instead of assuming Medicare Advantage configuration is sufficient.",
+        },
+        {
+            "title": "15 U.S.C. § 1125(a) — False designations and misleading representations",
+            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
+            "relevance": "Substantiate comparison claims and avoid false affiliation, misleading descriptions, or unsupported representations about competitor services.",
+        },
+        {
+            "title": "California Business and Professions Code § 6152 — Runners and cappers",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
+            "relevance": "Review legal-call acquisition and compensation mechanics against concrete state restrictions before accepting paid routing arrangements involving legal services.",
+        },
+        {
+            "title": "California Penal Code § 632 — Confidential communications",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
+            "relevance": "Evaluate recording of confidential communications and required participant consent before enabling recording or transcript pipelines for affected calls.",
+        },
+    ],
+}

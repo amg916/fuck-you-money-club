@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-040-self-funded-erisa-pbm-and-workers-comp-arbitrage",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 2149482,
+      "sha256": "6aebcc18fd659edf6bd33e678e5b67b796fc3341ba86c4f66427a4632173d0ef"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2833567,
+      "sha256": "89f93aa2c58a145d9b22888d73e77f82eb9375e9a8a890584443ebb71b803b93"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 569517,
+      "sha256": "090ba25195969b3801e92ddc8cb223e54406264d078e2ab1bb2f9be7c126e94c"
+    },
+    "book.epub": {
+      "bytes": 266428,
+      "sha256": "7e56568a5ceafa2894ebc6321f312a746580b8df290489d7e7c7908caa12dbd2"
+    },
+    "art/cover.svg": {
+      "bytes": 4335,
+      "sha256": "779dfd7a9af2b678a7f6eda2a92d442b4c068b982330617a517658d56c314146"
+    },
+    "art/scorecard.svg": {
+      "bytes": 95054,
+      "sha256": "f7a25961bb7ea176b64522db167636dd297e3b768259ab63574be35b6bf900e8"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11062,
+      "sha256": "3eaba92c03c7c84ad1e2ed6a39bb436c741a0c9b5ffed15d05bdfb44a314c68e"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7469,
+      "sha256": "db0b8c9569b1a6b5e6bb4488dc3a3161fb47866a6fbf4c52cfa4cae6d5b37bd9"
+    },
+    "art/diag_03.svg": {
+      "bytes": 11711,
+      "sha256": "d41c55a655b801b2acfb41d30ac83fe1de3ff4d8a6ed7df46950aa00b40994b3"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9343,
+      "sha256": "ad7a6dd6ae428e9ac6c47393c48308f517091ec65cd171f87ebcdbae764cd4a9"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10058,
+      "sha256": "980e4818f518b36121a55b18dfe0fe6616deb5a19ad0fc8e241e04785aca0892"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12302,
+      "sha256": "b959060fed8818f594c255d631a19b961550d3da9df011a55e0ed125dcca49f4"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8889,
+      "sha256": "3446611be43dba8c1cb690fdce795cba616119525ca79427f87a69b82710fc4a"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8580,
+      "sha256": "bd3c2eea8f92c941dd3e7917c5d6734c5bd2d8f12533c7f4d34cd2f3def7a2f6"
+    }
+  }
+}

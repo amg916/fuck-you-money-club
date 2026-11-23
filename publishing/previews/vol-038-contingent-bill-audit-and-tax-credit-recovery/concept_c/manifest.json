@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-038-contingent-bill-audit-and-tax-credit-recovery",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1837286,
+      "sha256": "0d1577bee5613927a2b9ffa0fa55a07054a4e1a4b2476090a28b9056794181b3"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2327998,
+      "sha256": "f1ccda379aef2b3912003b20faddd1f718f631b695a65229a91da5cab61aa3bb"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 566040,
+      "sha256": "6cf22017d06c077fad00025ec6766d6185578859a4abbc43cb26333bc7b9d021"
+    },
+    "book.epub": {
+      "bytes": 263137,
+      "sha256": "b4b14da9e0438bf9cb8fcb71fc56d992546a8fecee2f6d94a18399ec4c0001cf"
+    },
+    "art/cover.svg": {
+      "bytes": 4384,
+      "sha256": "0b41316d9c5bd79088dfc37dce83f8f6ff306981e24b4e267798d9eddca7d9e8"
+    },
+    "art/scorecard.svg": {
+      "bytes": 59168,
+      "sha256": "cd0f3c7e7e32fbee1630c091d8f70726441b2fac22532b08c29c328c4f4b4e2e"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12482,
+      "sha256": "9bd248eade294fd8e0ed7b05f2c3bc70001ec9f5aa39e0c159f2db4408ace6ba"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8636,
+      "sha256": "075039fb1a64cd33f6bcff24254e3cb9fd518d10172ca60110a732e55673844a"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12674,
+      "sha256": "fecdf5c7305d8c47942f7fed58e048215be57afac01659200ab4cb3ac520fbcf"
+    },
+    "art/diag_04.svg": {
+      "bytes": 10368,
+      "sha256": "b802ed7c7f097e8618c86950f0715c99baad085b1bcb163502b97dbfba227266"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10856,
+      "sha256": "fbd594156d0678e3b719dc284b56d17a380e6c9159d70a53a13c78a8c9a32224"
+    },
+    "art/diag_06.svg": {
+      "bytes": 9852,
+      "sha256": "0ed1e32d45bdf7fa80668b62a9d11b06aa5fc5ea75e0a0c7beda52f8a515d75e"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8978,
+      "sha256": "09bfa00434567e567e6d5924380d7f100d27b91bb8de77467a42226151445d8d"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8832,
+      "sha256": "28d4b8383290fa4070fbbf1ea3a0669581dd1598ee990741277275268006a346"
+    }
+  }
+}

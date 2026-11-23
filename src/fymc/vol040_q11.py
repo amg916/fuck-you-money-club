@@ -1,0 +1,693 @@
+from __future__ import annotations
+
+CHAPTER_11 = {
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
+    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
+    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
+    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
+    "subtitle": "Licensed Benefits and E-Mod Seats, PEPM Cohort Accounting, ERISA Compensation Disclosures, Contractor IP Assignments, and Transferable Renewal Economics",
+    "layout_template": "action_checklist",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #40, Self-Funded Health, PBM & Workers' Comp Arbitrage, ranks "
+        "#08 of 42 with a 93/100 Money-to-Manpower Score. Its 11 mapped plays "
+        "become transferable assets only when licensed relationship ownership, "
+        "specialist production, and evidence-based quality review operate without "
+        "constant founder rescue. This chapter assigns the four-person starting "
+        "pod, defines the six-person expansion, and converts weekly delivery "
+        "metrics into auditable renewal economics. Canonical annual owner net "
+        "profit is $38,400 Conservative, $240,750 Base, and $551,000 Scaled. "
+        "Build around net retained advisory fees and commissions, never employer "
+        "claim funds or insurance premiums. Protect the book with concentration "
+        "limits, signed intellectual-property assignments, collectible accruals, "
+        "and buyer-ready agreements; choose an exit only when proceeds beat "
+        "the risk-adjusted value of continued distributions."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual agency revenue on the net retained fee and commission basis; excludes employer claim funds and insurance premiums.",
+            "note": "32% net margin; $38,400 annual owner net profit; 1 FT + 3 C, totaling four people.",
+        },
+        {
+            "label": "Base",
+            "value": "$535,000",
+            "context": "Annual agency revenue on the net retained fee and commission basis; excludes employer claim funds and insurance premiums.",
+            "note": "45.0% net margin; $240,750 annual owner net profit; 1 FT + 3 C, totaling four people.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$950,000",
+            "context": "Annual agency revenue on the net retained fee and commission basis; excludes employer claim funds and insurance premiums.",
+            "note": "58% net margin; $551,000 annual owner net profit; 2 FT + 4 C, totaling six people.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Assign eleven plays to four accountable seats before adding capacity",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat Candidate #40's eleven mapped plays as one renewal production system, "
+                    "not eleven disconnected businesses. This chapter's execution map is P1 Form "
+                    "5500 renewal targeting; P2 renewal and compensation diagnostics; P3 self-funded "
+                    "transition design; P4 captive placement analysis; P5 specific and aggregate "
+                    "stop-loss optimization; P6 TPA selection and implementation; P7 NADAC-based PBM "
+                    "repricing; P8 rebate and spread recovery; P9 reference-based pricing support "
+                    "and balance-bill defense coordination; P10 workers' compensation payroll and "
+                    "classification correction; and P11 NCCI or applicable bureau E-Mod correction "
+                    "and refund collection. These labels organize the stated opportunity rather "
+                    "than assert that every employer should buy every service. Connect each play "
+                    "to an employer, renewal cohort, engagement authority, deliverable, and collection "
+                    "event. The full-time principal owns sales, licensed recommendations, disclosures, "
+                    "and final client decisions. Contractor one supplies health-plan, captive, and "
+                    "stop-loss analysis; contractor two supplies PBM economics and reproducible data "
+                    "work; contractor three supplies licensed workers' compensation analysis and "
+                    "carrier follow-through. Keep beneficiary decisions and claim adjudication with "
+                    "the parties actually contracted and authorized to perform them. The four-person "
+                    "pod produces advice and recoveries; it does not quietly become a risk-bearing "
+                    "insurer, medical administrator, law firm, or custodian of employer claim funds."
+                ),
+                (
+                    "Write a seat charter before recruiting a recognizable specialist. The principal "
+                    "must hold the applicable Life and Health and Property and Casualty producer "
+                    "authorities, including required business-entity licenses and appointments. A "
+                    "contractor performing regulated solicitation, negotiation, or sale needs their "
+                    "own applicable authority; the principal's license is not an umbrella permission. "
+                    "Contractor one delivers attachment-point comparisons, exclusions, lasers, terminal "
+                    "liability, and run-out analysis with source policy language. Contractor two "
+                    "delivers an NDC-level pricing bridge, rebate entitlement schedule, and documented "
+                    "treatment of specialty drugs, dispensing fees, and exclusions. Contractor three "
+                    "ties payroll classifications and loss runs to bureau worksheets, carrier "
+                    "endorsements, and employer receipts. Require an independent second look before "
+                    "client delivery: the principal checks commercial conclusions while the relevant "
+                    "specialist resolves technical exceptions. A principal unable to evaluate a "
+                    "specialty needs a qualified reviewer, not a signature ritual. Build this "
+                    "limited review purchase into engagement economics rather than silently creating "
+                    "another permanent seat. Contracts specify outputs, confidentiality, acceptance "
+                    "criteria, and delivery windows while preserving genuine independent-contractor "
+                    "discretion. Classification depends on actual working arrangements and applicable "
+                    "law, not the label printed above the signature. Reassess it whenever ongoing "
+                    "supervision starts resembling employee management."
+                ),
+                (
+                    "Expand to two full-time employees and four contractors only after the existing "
+                    "pod demonstrates repeatable throughput. The second full-time seat owns account "
+                    "operations, renewal calendars, document completeness, reconciliation, and service "
+                    "recovery; obtain producer licensing before assigning regulated recommendations "
+                    "to that seat. The fourth contractor handles health implementation and vendor "
+                    "coordination, including P6 and P9 handoffs, without substituting for qualified "
+                    "balance-bill defense counsel. Retained outside counsel, tax preparation, and "
+                    "software subscriptions remain purchased services rather than hidden dedicated "
+                    "pod seats; budget them explicitly. Trigger expansion when eight consecutive "
+                    "weekly scorecards show accepted backlog beyond the principal's documented "
+                    "capacity, renewal deadlines remain protected, and contracted recurring "
+                    "contribution covers the added fixed cost under a realistic churn stress. "
+                    "An illustrative $90,000 annual account-operations cost requires $120,000 of "
+                    "incremental recurring revenue at a 75% incremental contribution rate before "
+                    "providing any buffer. That calculation tests a hiring decision, not a revision "
+                    "to the canonical scenarios. Transfer routine employer meetings using shared "
+                    "agendas and documented escalation rights. The principal should retain pricing "
+                    "and relationship accountability while another authorized person can retrieve "
+                    "every material commitment, explain its economics, and keep the renewal moving "
+                    "during a two-week founder absence without relying on personal messages."
+                ),
+            ],
+            "table": {
+                "caption": "Four-Person Starting Pod and Six-Person Expansion Ownership Matrix",
+                "headers": [
+                    "Accountable seat or production lane",
+                    "Mapped plays and concrete delivery responsibility",
+                    "Authority and evidence required before delivery",
+                    "Capacity and continuity control for the operator",
+                ],
+                "rows": [
+                    [
+                        "Full-time principal owns employer relationships and commercial decisions",
+                        "Owns P1 and P2 while supervising all eleven engagements",
+                        "Maintain applicable producer licenses, appointments, and compensation disclosures",
+                        "Name a licensed backup for every active renewal relationship",
+                    ],
+                    [
+                        "First contractor supplies health architecture and placement analysis",
+                        "Produces P3, P4, and P5 comparisons with policy references",
+                        "Verify relevant qualifications and licensing for actual placement activities",
+                        "Reserve renewal capacity using accepted deliverables rather than attendance",
+                    ],
+                    [
+                        "Second contractor supplies PBM analytics and recovery substantiation",
+                        "Produces P7 repricing and P8 rebate entitlement evidence",
+                        "Preserve input lineage, contract definitions, and reproducible calculation versions",
+                        "Maintain documented rerun instructions inside the operator-controlled repository",
+                    ],
+                    [
+                        "Third contractor supplies licensed workers' compensation technical execution",
+                        "Produces P10 classification corrections and P11 E-Mod recovery packets",
+                        "Verify bureau rules, policy years, producer authority, and carrier acknowledgment",
+                        "Track employer receipt separately from projected premium reduction estimates",
+                    ],
+                    [
+                        "Principal initially coordinates health implementation across existing specialists",
+                        "Owns P6 TPA handoffs and P9 defense coordination",
+                        "Document vendor responsibilities without assuming adjudication or legal representation",
+                        "Price external specialist purchases into each affected engagement budget",
+                    ],
+                    [
+                        "Second full-time seat owns scaled account operations and continuity",
+                        "Runs renewal calendars, reconciliation, client updates, and exception routing",
+                        "Obtain required licensing before assigning regulated insurance recommendation activities",
+                        "Demonstrate independent account servicing during a planned founder absence",
+                    ],
+                    [
+                        "Fourth contractor absorbs scaled implementation and vendor coordination work",
+                        "Executes P6 implementation checklists and P9 authorized counsel handoffs",
+                        "Confirm access scope, confidentiality obligations, and written vendor dependencies",
+                        "Release capacity only after documented acceptance of implementation milestones",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Build the handoff around the evidence incumbents contest",
+                "body": (
+                    "Incumbent brokers and vendors usually challenge assumptions, authority, "
+                    "or timing before they challenge presentation quality. Make those "
+                    "three dimensions visible in every handoff."
+                ),
+                "items": [
+                    "Attach the actual stop-loss laser, terminal-liability, and run-out provisions to the recommendation; a premium comparison alone does not prove equivalent protection.",
+                    "Freeze the NADAC reference date and NDC normalization rules with each PBM model so another analyst can reproduce the comparison after a vendor disputes it.",
+                    "For E-Mod recoveries, preserve the original worksheet, corrected inputs, bureau revision, carrier endorsement, and employer receipt as separate evidence events.",
+                    "Introduce the backup account owner before renewal negotiations become contentious; inherited trust is harder to manufacture during a founder's sudden absence.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Buy accepted outputs and run a weekly exception scorecard",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Pay contractors for accepted technical outputs rather than vague availability "
+                    "or projected employer savings. A workable illustrative starting schedule pays "
+                    "$1,200 for a complete stop-loss comparison, $900 for a reproducible PBM "
+                    "repricing package, and $750 for a workers' compensation correction packet. "
+                    "Define complexity bands and scope limits before work starts; large specialty "
+                    "files and multistate payroll disputes need separate quotes. Pay 80% upon "
+                    "documented acceptance and the remaining 20% after a ten-business-day defect "
+                    "window, subject to the contract and applicable payment rules. A contractor "
+                    "who performed the agreed analysis should not finance a carrier's unrelated "
+                    "payment delay. Licensed commission participation, where permitted, belongs "
+                    "in a separate written schedule with required disclosures; unlicensed analytics "
+                    "vendors should not receive disguised placement commissions. For budgeting "
+                    "illustrations, reserve $36,000 annually for the three contractors in "
+                    "Conservative, $96,000 in Base, and $168,000 for four contractors in Scaled. "
+                    "These are allocations inside canonical expenses, not incremental deductions "
+                    "from the published owner profits. Quote each engagement against its available "
+                    "contribution and stop accepting work that requires uncompensated expert "
+                    "rescue. Require correction of attributable defects without charging the "
+                    "client twice, but distinguish changed scope from poor original workmanship."
+                ),
+                (
+                    "Use a Friday scorecard that exposes denominators and unresolved exceptions, "
+                    "not an attractive collection of percentages. Track qualified employer "
+                    "conversations, authorized data packages, proposals delivered, bound or signed "
+                    "engagements, and first cash receipts as separate funnel stages. Define a "
+                    "qualified employer as an identified decision-maker with a relevant renewal "
+                    "date, workable group profile, and permission to discuss the engagement. "
+                    "For production, target acknowledgment within one business day, completeness "
+                    "review within two, and technical delivery within the agreed window after "
+                    "complete inputs arrive. Record client-caused pauses separately rather than "
+                    "resetting clocks invisibly. An illustrative service objective is at least "
+                    "95% on-time accepted deliverables and at least 98% first-pass accuracy on "
+                    "explicitly defined critical checks; disclose counts because one defect in "
+                    "five jobs is not comparable with one in fifty. Track stop-loss coverage "
+                    "exceptions, disputed PBM assumptions, and rejected E-Mod submissions by "
+                    "age and owner. Escalate any missing effective-date protection immediately, "
+                    "regardless of a green average. Weekly meetings should end with named "
+                    "corrective actions, promised dates, and the financial exposure of each "
+                    "open item. Keep contractor performance review focused on agreed results "
+                    "and service obligations rather than prescribing unnecessary daily supervision "
+                    "that undermines the intended independent relationship."
+                ),
+                (
+                    "Concentration belongs on the same weekly page as delivery because a seemingly "
+                    "efficient book can hide one fragile dependency. Set a maximum of 25% of "
+                    "trailing-twelve-month recognized revenue from any single employer controlled "
+                    "group and 25% from any economically distinct commission-paying counterparty "
+                    "group. Aggregate affiliates rather than treating separate carrier entities "
+                    "as independent risks. Measure the next-twelve-month contracted revenue "
+                    "forecast and receivables alongside those historical ratios. Also cap any "
+                    "single carrier, TPA, or PBM dependency at 25% of the recurring revenue "
+                    "that its withdrawal would interrupt, even when employers pay the operator "
+                    "directly. These are portfolio objectives, not reasons to place an employer "
+                    "into an inferior arrangement. A startup with one employer necessarily "
+                    "exceeds the limit; show the breach openly, prohibit discretionary expansion "
+                    "of that exposure, and build a dated diversification plan. Do not call "
+                    "the book exit-ready until the limits actually hold. Recalculate revenue "
+                    "retention by renewal cohort, separating employer departures, employee-count "
+                    "changes, pricing changes, and new recovery wins. Stress the loss of the "
+                    "largest customer and the largest counterparty independently and together "
+                    "where exposures overlap. Fund fixed commitments from stressed recurring "
+                    "contribution, not from this month's unusually large contingent refund receipt."
+                ),
+            ],
+            "table": {
+                "caption": "Weekly Contractor and Operator Scorecard With Explicit Denominators",
+                "headers": [
+                    "Measured operating metric and accountable owner",
+                    "Definition and illustrative service target for review",
+                    "Evidence supporting the reported weekly operating result",
+                    "Required response when the metric misses target",
+                ],
+                "rows": [
+                    [
+                        "Principal tracks qualified employer conversations entering the sales funnel",
+                        "Count decision-maker conversations with renewal timing and documented fit",
+                        "Retain CRM notes linking source, authorization, and next action",
+                        "Repair targeting quality before buying additional prospecting volume",
+                    ],
+                    [
+                        "Assigned specialist tracks complete input packages accepted for production",
+                        "Review completeness within two business days after package receipt",
+                        "Record missing fields and timestamped requests in engagement tickets",
+                        "Pause only documented dependencies while protecting critical renewal dates",
+                    ],
+                    [
+                        "Every contractor tracks accepted deliverables against committed service windows",
+                        "Target at least ninety-five percent accepted delivery within agreement",
+                        "Show delivered count, due count, and documented pause duration",
+                        "Reassign urgent work and identify preventable estimation or capacity failures",
+                    ],
+                    [
+                        "Principal tracks first-pass accuracy across defined critical technical checks",
+                        "Target at least ninety-eight percent with sample counts disclosed",
+                        "Store reviewer findings against the original submitted calculation version",
+                        "Correct material errors before release and expand targeted review sampling",
+                    ],
+                    [
+                        "Account owner tracks unresolved coverage and collection exception aging",
+                        "Escalate immediate coverage threats regardless of average ticket age",
+                        "Link policy provisions, disputed amounts, owners, and promised resolutions",
+                        "Contact the authorized decision-maker with documented options and exposure",
+                    ],
+                    [
+                        "Principal tracks customer and counterparty economic concentration every week",
+                        "Keep each controlled-group exposure at or below twenty-five percent",
+                        "Reconcile historical revenue, forward contracts, receivables, and dependency mapping",
+                        "Document startup breaches and diversify without compromising client placement quality",
+                    ],
+                    [
+                        "Account owner tracks recurring retention within comparable renewal cohorts",
+                        "Separate departures, employee counts, pricing changes, and contingent recoveries",
+                        "Bridge opening recurring revenue to retained and expanded closing revenue",
+                        "Investigate losses before interpreting fresh recovery receipts as durable growth",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the weekly evidence set",
+                    "action": "Export CRM stages, engagement tickets, recognized revenue, receivables, and contractor acceptance records each Friday.",
+                    "detail": "Use consistent cutoffs and engagement identifiers; retain the underlying export so later corrections remain traceable.",
+                },
+                {
+                    "step": 2,
+                    "title": "Reconcile metrics to source events",
+                    "action": "Have the principal or account-operations owner tie every scorecard numerator and denominator to the frozen records.",
+                    "detail": "Separate contingent estimates from earned fees, document paused work, and aggregate affiliated customers and counterparties.",
+                },
+                {
+                    "step": 3,
+                    "title": "Resolve exceptions by exposure",
+                    "action": "Prioritize effective-date protection, material calculation errors, overdue collections, and concentration breaches before ordinary backlog.",
+                    "detail": "Assign one owner and one dated next action to each exception; preserve the original commitment and explain any revision.",
+                },
+                {
+                    "step": 4,
+                    "title": "Close the loop before accepting more work",
+                    "action": "Confirm corrections, release accepted contractor payments, and update capacity commitments for the following week.",
+                    "detail": "Compare actual engagement contribution with quoted contribution and suspend repeatable loss-making scope until pricing or production changes.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Reconcile retained revenue, accruals, and contractor ownership monthly",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Preserve the scorecard's economic boundary before discussing a multiple. "
+                    "Conservative revenue of $120,000 less $81,600 of expenses produces $38,400 "
+                    "owner profit at 32%; Base revenue of $535,000 less $294,250 produces "
+                    "$240,750 at 45.0%; Scaled revenue of $950,000 less $399,000 produces "
+                    "$551,000 at 58%. The first two cases use one full-time principal and "
+                    "three contractors; Scaled uses two full-time seats and four contractors. "
+                    "Although the source scenarios label their top line gross revenue, the "
+                    "defined basis is agency revenue from net retained advisory fees, stop-loss "
+                    "and TPA commissions, and contingent E-Mod refund splits. Employer premiums, "
+                    "claim deposits, pharmacy spending, and refund principal never become "
+                    "operator revenue merely because a dashboard displays them. Apply ASC 606 "
+                    "principal-versus-agent analysis to each contractual promise and document "
+                    "the retained-share bridge wherever collections include amounts belonging "
+                    "to another party. Do not apply an invented second haircut to the "
+                    "canonical revenue. Under the illustrative contractor budgets above, "
+                    "remaining expense allowances are $45,600, $198,250, and $231,000 "
+                    "respectively. Those amounts must cover all other included operating "
+                    "costs; they are not additional owner distributions. Reconcile actual "
+                    "ledger classifications before comparing owner profit with buyer-adjusted "
+                    "earnings, because the scorecard alone does not specify every compensation "
+                    "or accounting convention."
+                ),
+                (
+                    "Maintain accrual schedules by employer, policy year, renewal cohort, revenue "
+                    "stream, and counterparty rather than relying on deposits in QuickBooks "
+                    "Online or Xero. A PEPM advisory engagement earns revenue as the contracted "
+                    "service is delivered using reconciled eligible lives and the agreed "
+                    "billing definition. For example, 500 covered employees at $6 retained "
+                    "PEPM produce $3,000 for a fully earned service month, not $36,000 "
+                    "on signature day. Commission recognition follows the actual contract, "
+                    "performance obligations, cancellation provisions, and applicable variable "
+                    "consideration assessment, with clawback exposure separately supported. "
+                    "For a $100,000 employer refund carrying a 20% contractual recovery "
+                    "fee, the operator's fee opportunity is $20,000; the employer's "
+                    "$100,000 recovery is not agency sales. Recognize contingent fees "
+                    "only when the performance obligation and variable-consideration "
+                    "requirements are satisfied, including the assessment of significant "
+                    "reversal risk. A promising bureau recalculation is not automatically "
+                    "an earned, collectible carrier refund. Reconcile opening receivables "
+                    "plus recognized fees less cash, credits, and write-offs to closing "
+                    "receivables monthly. Separate unbilled earned amounts from speculative "
+                    "pipeline. Accrue accepted contractor services in the same close "
+                    "rather than inflating a strong month by postponing invoices. Preserve "
+                    "cohort-level acquisition costs and service hours so a buyer can "
+                    "distinguish durable renewal contribution from founder-subsidized delivery."
+                ),
+                (
+                    "Transferability also requires ownership of the machinery that generates "
+                    "the numbers. Under 17 U.S.C. section 204(a), a transfer of copyright "
+                    "ownership generally requires a signed writing by the owner or their "
+                    "authorized agent. Obtain assignments covering commissioned scripts, "
+                    "calculation templates, documentation, and other copyrightable deliverables; "
+                    "do not assume that paying an independent contractor creates ownership "
+                    "or that every commission qualifies as work made for hire. Schedule "
+                    "preexisting contractor tools separately and secure an adequate continuing "
+                    "license where assignment is unavailable. Copyright assignments do not "
+                    "transfer employer records, PBM confidential material, bureau data rights, "
+                    "or third-party software licenses. Establish separate permissions for "
+                    "each. Keep source repositories, administrative accounts, and recovery "
+                    "evidence under organization-controlled identities with least-privilege "
+                    "access and tested offboarding. Where the operator or contractor acts "
+                    "as a HIPAA business associate or subcontractor, execute the applicable "
+                    "agreements and implement required safeguards before sharing protected "
+                    "health information. A buyer data room starts with aggregated operating "
+                    "metrics and redacted contracts, not identifiable claims files. Document "
+                    "assignment restrictions, carrier appointments, producer registrations, "
+                    "and business-entity change requirements in a transfer register. An "
+                    "asset sale does not automatically transfer every license, appointment, "
+                    "client authorization, or vendor contract. Price unresolved transfer "
+                    "work before entering exclusivity."
+                ),
+            ],
+            "table": {
+                "caption": "Monthly Close, Retained-Revenue Boundaries, and Transferable Rights Matrix",
+                "headers": [
+                    "Economic stream or transferable asset under review",
+                    "Required recognition or ownership treatment for the operator",
+                    "Evidence retained in the monthly close or rights register",
+                    "Material error or transfer defect prevented by control",
+                ],
+                "rows": [
+                    [
+                        "Recurring PEPM advisory services billed to employer accounts",
+                        "Recognize delivered service using the contracted covered-life billing definition",
+                        "Retain signed agreements, eligibility reconciliations, invoices, and service evidence",
+                        "Prevent annual contract value being booked immediately upon signature",
+                    ],
+                    [
+                        "Stop-loss and TPA commissions retained by the agency",
+                        "Evaluate contractual performance obligations, cancellations, and variable consideration exposure",
+                        "Match commission statements to placements, disclosures, and clawback schedules",
+                        "Prevent premium volume being confused with recognized operator revenue",
+                    ],
+                    [
+                        "Contingent workers' compensation refund splits earned by agreement",
+                        "Recognize only supportable fees after satisfying applicable recognition requirements",
+                        "Link engagement terms, bureau revisions, endorsements, and collection evidence",
+                        "Prevent projected employer recoveries inflating both revenue and receivables",
+                    ],
+                    [
+                        "Amounts collected for employers or other entitled parties",
+                        "Document principal-agent conclusions and record applicable amounts as liabilities",
+                        "Reconcile retained shares to contracts and separate settlement records",
+                        "Prevent gross pass-through collections from overstating agency economic scale",
+                    ],
+                    [
+                        "Accepted contractor production costs incurred before invoice arrival",
+                        "Accrue earned obligations within the matching monthly close process",
+                        "Retain acceptance records, agreed rates, and unpaid obligation schedules",
+                        "Prevent payment timing from artificially improving reported operating margins",
+                    ],
+                    [
+                        "Contractor-created scripts, models, documentation, and reusable operating templates",
+                        "Obtain signed assignments and separately license identified preexisting materials",
+                        "Store executed instruments alongside repository ownership and dependency inventories",
+                        "Prevent a departing specialist from withholding essential production assets",
+                    ],
+                    [
+                        "Employer records, protected information, and restricted third-party source materials",
+                        "Apply contractual permissions and applicable privacy obligations before any transfer",
+                        "Maintain access records, required agreements, and documented transaction restrictions",
+                        "Prevent a buyer data room from exceeding authorized disclosure scope",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Verify four transfer conditions before promising a buyer continuity",
+                "body": (
+                    "Treat each condition as an evidence requirement. Unresolved "
+                    "items affect transaction structure, timing, and price rather "
+                    "than disappearing into an optimistic earnings multiple."
+                ),
+                "items": [
+                    "Verify active producer and business-entity authorities, required appointments, applicable TPA requirements, and ERISA section 408(b)(2) compensation disclosures for the actual services performed.",
+                    "Verify that each material engagement and vendor agreement identifies assignment restrictions, change-of-control provisions, termination rights, and the party responsible for obtaining required permissions.",
+                    "Verify signed contractor IP assignments or sufficient continuing licenses, organization-controlled repositories, and written treatment of preexisting tools and restricted source materials.",
+                    "Verify reconciled trailing-twelve-month revenue, contingent-fee support, concentration at or below 25% for each defined exposure, and a normalized earnings bridge that includes founder replacement costs.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Underwrite an exit multiple against transferable earnings and retained cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Value the transferable business, not the founder's ability to work indefinitely "
+                    "without replacement. A small owner-operated advisory book may be discussed "
+                    "using seller's discretionary earnings, while a larger professionally serviced "
+                    "book is more naturally assessed on normalized EBITDA or retained recurring "
+                    "revenue. Those denominators are not interchangeable. For preliminary "
+                    "negotiation modeling, use illustrative ranges of 2.0 to 3.5 times normalized "
+                    "SDE for a founder-dependent microbusiness and 3.5 to 5.0 times normalized "
+                    "EBITDA for a more transferable small specialist operation. These are "
+                    "underwriting assumptions, not observed transaction comparables or an "
+                    "assurance that a buyer will bid. Obtain current comparable transactions "
+                    "with matching size, revenue quality, retention, and deal structure before "
+                    "setting an asking price. Pure recurring books can also be discussed "
+                    "using revenue multiples, but that shortcut becomes dangerous when "
+                    "contingent refund fees dominate or service intensity varies. A strategic "
+                    "buyer may credit distribution synergies, yet the seller should not "
+                    "capitalize savings the buyer has neither validated nor agreed to share. "
+                    "The defensible premium comes from documented renewal retention, clean "
+                    "rights, diversified counterparties, accountable service ownership, and "
+                    "low founder dependence. A high annual margin achieved by skipping "
+                    "coverage review or contractor accruals should reduce confidence rather "
+                    "than increase the multiple."
+                ),
+                (
+                    "Build the earnings bridge explicitly before multiplying anything. For an "
+                    "illustration only, assume canonical owner profit is measured before an "
+                    "additional market-rate replacement for the working principal and that "
+                    "interest, income taxes, depreciation, and amortization require no further "
+                    "bridge adjustments. Deduct $100,000 of fully loaded replacement cost "
+                    "from Base owner profit of $240,750 to obtain $140,750 of illustrative "
+                    "normalized earnings. Deduct $130,000 from Scaled owner profit of "
+                    "$551,000 to obtain $421,000. If actual expenses already include "
+                    "that replacement role, remove the duplicate deduction; if additional "
+                    "normalizations exist, rebuild the bridge. At 3.5 to 5.0 times, the "
+                    "illustrative enterprise values are $492,625 to $703,750 for Base "
+                    "and $1,473,500 to $2,105,000 for Scaled. These calculations do "
+                    "not change the canonical profit cases. Conservative's $38,400 "
+                    "cannot support the illustrative $100,000 replacement cost, making "
+                    "a self-operating EBITDA valuation inappropriate without a different "
+                    "cost structure or buyer synergy. Bridge enterprise value to seller "
+                    "proceeds through actual debt, cash treatment, working-capital "
+                    "adjustments, fees, escrows, and contingent payments. Never present "
+                    "the top end of enterprise value as cash available at closing. "
+                    "Show buyer assumptions separately from the operator's verified "
+                    "historical results."
+                ),
+                (
+                    "Use the same evidence package to choose between selling and retaining "
+                    "a durable cash-producing book. A buyer's headline price may contain "
+                    "a substantial earnout tied to renewals they will influence after "
+                    "closing. Define retained revenue, excluded cancellations, producer "
+                    "reassignment, pricing changes, reporting access, dispute resolution, "
+                    "and collection timing in the purchase agreement. Consider an "
+                    "illustrative $1,700,000 enterprise-value offer with 70% paid at "
+                    "closing and 30% contingent: the stated components are $1,190,000 "
+                    "and $510,000 before other adjustments, not $1,700,000 of "
+                    "immediate liquidity. Compare expected net proceeds with a discounted "
+                    "distribution model that includes founder replacement, maintenance "
+                    "spending, working capital, taxes, and losses from concentrated "
+                    "customers or counterparties. Do not compare a pretax sale headline "
+                    "with after-tax annual distributions. For the retained-book option, "
+                    "maintain a cash reserve calibrated to payroll, contractor "
+                    "commitments, clawbacks, and collection delays; test a minimum "
+                    "three-month operating-cost buffer against actual seasonality. "
+                    "Run the founder-absence exercise twice annually and refresh "
+                    "the transfer register after each renewal. Quarterly buyer "
+                    "readiness should improve service and liquidity even if no "
+                    "sale occurs. The pod has earned a premium only when "
+                    "another qualified operator can preserve its economics without "
+                    "recreating the founder's undocumented judgment or inheriting "
+                    "avoidable counterparty surprises."
+                ),
+            ],
+            "table": {
+                "caption": "Illustrative Buyer Underwriting, Normalization, and Seller-Proceeds Matrix",
+                "headers": [
+                    "Valuation component or buyer diligence workstream",
+                    "Explicit assumption or calculation used for illustration",
+                    "Evidence required before relying on the underwriting conclusion",
+                    "Effect on transaction structure or retained-book decision",
+                ],
+                "rows": [
+                    [
+                        "Founder-dependent microbusiness evaluated using normalized discretionary earnings",
+                        "Illustrative SDE range spans two to three-and-one-half times earnings",
+                        "Verify owner compensation, genuine addbacks, and buyer operating requirements",
+                        "Avoid presenting an owner-operated denominator as fully staffed EBITDA",
+                    ],
+                    [
+                        "Transferable specialist operation evaluated using normalized operating earnings",
+                        "Illustrative EBITDA range spans three-and-one-half to five times earnings",
+                        "Validate recurring retention, service continuity, and current comparable transactions",
+                        "Reserve premium assumptions for demonstrably transferable and diversified economics",
+                    ],
+                    [
+                        "Base case normalized earnings under explicit replacement-cost assumptions",
+                        "Subtract $100,000 from $240,750 to produce $140,750 normalized earnings",
+                        "Confirm replacement compensation is absent from existing expense classifications",
+                        "Illustrative enterprise value spans $492,625 to $703,750 before adjustments",
+                    ],
+                    [
+                        "Scaled case normalized earnings under explicit replacement-cost assumptions",
+                        "Subtract $130,000 from $551,000 to produce $421,000 normalized earnings",
+                        "Confirm existing second-seat expenses remain included without duplicate deductions",
+                        "Illustrative enterprise value spans $1,473,500 to $2,105,000 before adjustments",
+                    ],
+                    [
+                        "Conservative case tested against independent principal replacement economics",
+                        "Subtracting $100,000 from $38,400 produces negative $61,600 earnings",
+                        "Identify documented buyer synergies or genuinely different staffing economics",
+                        "Use an appropriate owner-operated framework rather than positive EBITDA multiples",
+                    ],
+                    [
+                        "Headline consideration separated into immediate and contingent payment components",
+                        "Illustrative $1,700,000 offer allocates $1,190,000 upfront and $510,000 contingent",
+                        "Review retention definitions, buyer control rights, and payment dispute mechanics",
+                        "Discount contingent consideration before comparing proceeds with retained distributions",
+                    ],
+                    [
+                        "Enterprise value reconciled to actual seller net proceeds",
+                        "Apply agreed debt, cash, working-capital, escrow, fee, and tax treatment",
+                        "Tie closing adjustments to negotiated definitions and supporting balance schedules",
+                        "Compare consistent after-tax outcomes rather than incompatible headline figures",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A premium book is one another qualified operator can renew, reconcile, and defend without borrowing the founder's memory.",
+    "diagram_id": "diag-06",
+    "action_checklist": [
+        "Assign P1 through P11 to the principal and three specialists, record technical-review ownership, and document the scaled account-operations and implementation handoffs.",
+        "Execute output-based contractor agreements with acceptance tests, complexity pricing, defect remedies, confidentiality terms, and signed IP assignments or adequate continuing licenses.",
+        "Run a weekly scorecard with explicit denominators for delivery, accuracy, recurring retention, collections, and customer or counterparty exposure capped at 25%.",
+        "Close monthly by employer and renewal cohort, reconcile retained PEPM and commission revenue, support contingent fees, and accrue accepted contractor work before measuring profit.",
+        "Complete a founder-absence test and a transfer register covering producer authority, appointments, compensation disclosures, contract assignment, data permissions, and repository control.",
+        "Build an earnings-normalization and seller-proceeds bridge, validate current comparable transactions, and compare a realistic offer with stressed retained-book distributions.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "29 U.S.C. section 1108(b)(2)(B): Group health plan service-provider compensation disclosures",
+            "url": "https://www.law.cornell.edu/uscode/text/29/1108",
+            "relevance": (
+                "Apply the covered-provider rules for group health plan brokerage "
+                "and consulting arrangements, including the statutory compensation "
+                "threshold and required direct and indirect compensation disclosures."
+            ),
+        },
+        {
+            "title": "17 U.S.C. section 204(a): Execution of transfers of copyright ownership",
+            "url": "https://www.law.cornell.edu/uscode/text/17/204",
+            "relevance": (
+                "Secure a signed written assignment from the rights owner or "
+                "authorized agent for contractor-created copyrightable deliverables "
+                "instead of assuming payment transfers ownership."
+            ),
+        },
+        {
+            "title": "17 U.S.C. section 101: Definitions, including work made for hire",
+            "url": "https://www.law.cornell.edu/uscode/text/17/101",
+            "relevance": (
+                "Distinguish employee work within employment scope from the "
+                "limited commissioned-work categories and written-agreement "
+                "requirements; ordinary contractor software is not automatically "
+                "owned as work made for hire."
+            ),
+        },
+        {
+            "title": "45 CFR section 164.504(e): Business associate contracts and other arrangements",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
+            "relevance": (
+                "When business associate status applies, document permitted "
+                "uses and disclosures, required safeguards, subcontractor "
+                "obligations, and disposition of protected health information."
+            ),
+        },
+        {
+            "title": "45 CFR section 164.308: Administrative safeguards",
+            "url": "https://www.ecfr.gov/current/title-45/section-164.308",
+            "relevance": (
+                "For regulated electronic protected health information, "
+                "implement the applicable risk-management, workforce-access, "
+                "incident-response, and contingency requirements across the pod."
+            ),
+        },
+        {
+            "title": "New York Insurance Law section 2102: Acting without a license",
+            "url": "https://www.nysenate.gov/legislation/laws/ISC/2102",
+            "relevance": (
+                "Provides a concrete state authority requiring appropriate "
+                "licensing for regulated insurance activities; verify the "
+                "corresponding rules in every jurisdiction actually served."
+            ),
+        },
+        {
+            "title": "New York Insurance Law section 2116: Insurance brokers and commission payments",
+            "url": "https://www.nysenate.gov/legislation/laws/ISC/2116",
+            "relevance": (
+                "Evaluate commission-sharing and referral arrangements against "
+                "the actual state rule and its exceptions rather than paying "
+                "unlicensed analytics contractors disguised placement commissions."
+            ),
+        },
+    ],
+}

@@ -1,0 +1,322 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-authorized-recovery-workflow",
+      "chart_type": "process_flow",
+      "title": "From Signed Authority to Earned Recovery Fees",
+      "subtitle": "Five evidence-controlled stages for expense and tax-credit work",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Expense-recovery shares of 25%-50% apply only where permitted and contractually agreed. Federal tax work receives a separate scope and fee review. Client refunds, vendor bills, property values, and tax credits are not operator revenue.",
+      "caption": "Preserve the original evidence before proposing corrections. A refund request is neither an issued refund nor an earned fee.",
+      "stages": [
+        {
+          "label": "Authorize and preserve",
+          "value": "Signed authority plus immutable baseline",
+          "numeric_value": 1.0,
+          "detail": "Obtain a signed Letter of Authorization and fee agreement before disclosing tariff or refund findings. Snapshot invoices, payment records, carrier contracts, meter identifiers, assessment notices, and relevant employment records with timestamps and file hashes."
+        },
+        {
+          "label": "Extract and normalize",
+          "value": "One traceable ledger per client",
+          "numeric_value": 2.0,
+          "detail": "Import FedEx and UPS EDI exports or permitted API records; use OCR for utility tariffs and cooling-tower meter evidence. Normalize account, invoice, service date, charge code, and payment status while retaining links to original documents."
+        },
+        {
+          "label": "Validate entitlement",
+          "value": "Documented rule and recoverable amount",
+          "numeric_value": 3.0,
+          "detail": "Check service-guarantee waivers, tariff effective dates, appeal deadlines, duplicate claims, and prior credits. For WOTC, verify statutory hire-date coverage, prescreening, certification timing, and substantiation before including a case in the recoverable pipeline."
+        },
+        {
+          "label": "Submit through authorized channels",
+          "value": "Accepted submission with receipt evidence",
+          "numeric_value": 4.0,
+          "detail": "Use carrier-supported claim routes, utility refund procedures, licensed property-tax representation, or state workforce agency channels as applicable. Store submission identifiers and response deadlines; route rejections to a documented exception queue."
+        },
+        {
+          "label": "Reconcile and earn",
+          "value": "Verified benefit matched to contract",
+          "numeric_value": 5.0,
+          "detail": "Match issued refunds or realized savings to bank, vendor-credit, or billing evidence. Recognize only earned operator fees under the contract. For 36-month shared-savings arrangements, reconcile each period against a volume-adjusted baseline rather than booking all future savings immediately."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-nested-annual-recovery-cohort",
+      "chart_type": "funnel",
+      "title": "A Nested Cohort Behind the Base Revenue Target",
+      "subtitle": "250 screened prospects become 25 earned-and-collected engagements",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative mature annual cohort, not measured conversion performance or a first-month forecast. Every downstream group is a subset of the preceding group. Twenty-five engagements at $20,200 average annual earned operator fees reconcile to $505,000 Base revenue; the average is a modeling input.",
+      "caption": "Stage conversions are 40.0%, 60.0%, 66.7%, and 62.5%; overall conversion is 10.0%. Pending cases remain outside the final earned-and-collected cohort.",
+      "stages": [
+        {
+          "label": "Screened corporate prospects",
+          "value": "250 organizations with auditable recurring spend",
+          "numeric_value": 250.0,
+          "detail": "Identify organizations with accessible invoice history, a responsible account owner, and a plausible recovery lane. Exclude accounts already bound by conflicting recovery engagements before outreach."
+        },
+        {
+          "label": "Authorized client engagements",
+          "value": "100 signed engagements from those prospects",
+          "numeric_value": 100.0,
+          "detail": "Forty percent of screened prospects execute authority and scope documents and provide baseline records. A verbal expression of interest does not count as an authorized engagement."
+        },
+        {
+          "label": "Evidence-qualified recovery cases",
+          "value": "60 engagements with documented eligible opportunities",
+          "numeric_value": 60.0,
+          "detail": "Sixty percent of authorized engagements survive contract, deadline, statutory, and evidence checks. Remove duplicate recoveries, unsupported estimates, and claims barred by applicable waivers."
+        },
+        {
+          "label": "Accepted recovery submissions",
+          "value": "40 engagements reach accepted filing channels",
+          "numeric_value": 40.0,
+          "detail": "Two-thirds of qualified engagements obtain submission receipts or accepted processing records. Count client engagements consistently rather than inflating this stage with multiple invoices from one client."
+        },
+        {
+          "label": "Earned and collected engagements",
+          "value": "25 engagements generate $505,000 operator revenue",
+          "numeric_value": 25.0,
+          "detail": "Twenty-five engagements meet earning conditions and collection assumptions within the modeled year. $505,000 divided by 25 equals $20,200 per engagement; this is operator fee revenue, not client recovery principal or total underlying vendor expenditure."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-owner-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "Base Revenue to $217,150 Owner Profit",
+      "subtitle": "$505,000 less $287,850 modeled expenses equals a 43.0% net margin",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Formula v2.0 Base revenue, margin, and owner profit are canonical. The four expense allocations are illustrative because the supplied scorecard does not itemize costs. First and last bars are totals; the intervening bars are negative changes. Gross means gross operator fee revenue, not gross client refund receipts.",
+      "caption": "Reconciliation: $505,000 - $145,000 - $40,850 - $60,000 - $42,000 = $217,150; $217,150 / $505,000 = 43.0%. Conservative remains $110,000 at 30% = $33,000; Scaled remains $900,000 at 56% = $504,000.",
+      "stages": [
+        {
+          "label": "Earned operator fee revenue",
+          "value": "$505,000 annual Base revenue",
+          "numeric_value": 505000.0,
+          "detail": "Include earned contingency shares, earned portions of 36-month shared-savings agreements, and completed WOTC processing fees. Apply ASC 606 principal-agent analysis to the actual arrangement; client benefits are never automatically operator billings."
+        },
+        {
+          "label": "Pod delivery labor",
+          "value": "Subtract $145,000 allocated annual labor",
+          "numeric_value": -145000.0,
+          "detail": "Illustratively allocate $145,000 to employee compensation and contractor delivery across the 1 FT plus 3 C pod. The resulting owner-profit figure is the residual after this modeled labor charge, not a separate estimate of owner compensation."
+        },
+        {
+          "label": "Variable case execution",
+          "value": "Subtract $40,850 case-linked operating costs",
+          "numeric_value": -40850.0,
+          "detail": "Illustratively allocate case-specific records, permitted filing charges, incremental extraction services, and recovery processing costs here. Exclude contractor labor already charged to the preceding bar to prevent double counting."
+        },
+        {
+          "label": "Commercial and administrative overhead",
+          "value": "Subtract $60,000 annual commercial overhead",
+          "numeric_value": -60000.0,
+          "detail": "Illustratively allocate acquisition, insurance, bookkeeping, and general administration to a $5,000 monthly fixed-cost budget. Track acquisition cost per signed engagement rather than per unqualified lead."
+        },
+        {
+          "label": "Platform and secure operations",
+          "value": "Subtract $42,000 annual platform overhead",
+          "numeric_value": -42000.0,
+          "detail": "Illustratively allocate $3,500 monthly to OCR, permitted integrations, secure storage, access management, and monitoring. Combined fixed overhead is $8,500 monthly, within the stated $1,500-$9,500 range; this allocation excludes the delivery and variable costs shown separately."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$217,150 retained annual operating residual",
+          "numeric_value": 217150.0,
+          "detail": "The endpoint is a total, not another additive movement. Total modeled expenses are $287,850, leaving exactly 43.0% of Base operator revenue. Owner-level personal taxes and distribution timing are outside this supplied scenario."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-recovery-lane-fee-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Five Recovery Lanes and Their Operator Fee Math",
+      "subtitle": "Illustrative contract yields, not measured niche performance",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "The first four bars each assume $100,000 of independently verified, realized client recovery and a permitted expense contingency rate. The fifth assumes 120 completed WOTC administrative packages at a fixed $250 fee. Denominators differ deliberately; bars are fee-dollar examples, not a ranking of expected return or a Base revenue decomposition.",
+      "caption": "Parcel $50,000; utility $35,000; waste and telecom $30,000; property assessment $25,000; WOTC processing $30,000. Client recoveries and tax-credit amounts remain outside operator revenue.",
+      "stages": [
+        {
+          "label": "Parcel service and billing recoveries",
+          "value": "$100,000 realized recovery multiplied by 50%",
+          "numeric_value": 50000.0,
+          "detail": "Earn $50,000 only where the signed agreement supports a 50% share and the carrier accepts the underlying claim. Check FedEx or UPS guarantee availability, waivers, eligible services, submission windows, and API terms before automation."
+        },
+        {
+          "label": "Commercial utility tariff recoveries",
+          "value": "$100,000 realized recovery multiplied by 35%",
+          "numeric_value": 35000.0,
+          "detail": "Earn $35,000 on documented recoveries from applicable rate classifications, meter errors, or eligible sewer deductions. Match cooling-tower meter evidence to local rules and distinguish slow refund issuance from an approved adjustment."
+        },
+        {
+          "label": "Waste and telecom billing recoveries",
+          "value": "$100,000 realized recovery multiplied by 30%",
+          "numeric_value": 30000.0,
+          "detail": "Earn $30,000 from supported duplicate charges, disconnected services, or contractual rate errors. Separate refunded historical charges from future savings, and prevent the same correction from generating two overlapping fee claims."
+        },
+        {
+          "label": "Property assessment recoveries",
+          "value": "$100,000 realized recovery multiplied by 25%",
+          "numeric_value": 25000.0,
+          "detail": "Earn $25,000 only under a permitted engagement handled by appropriately credentialed personnel. Track protest and payment deadlines independently; a reduced assessment does not itself establish a received cash refund."
+        },
+        {
+          "label": "WOTC administrative processing",
+          "value": "120 completed packages multiplied by $250",
+          "numeric_value": 30000.0,
+          "detail": "Earn $30,000 from separately scoped administrative deliverables, not a percentage of federal tax credits. Verify hire-date statutory coverage and Form 8850 timing. Fixed pricing does not remove practitioner, privacy, or substantiation requirements."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-statutory-and-contract-preflight",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before a Recovery Submission",
+      "subtitle": "Each failed check routes to remediation or a declined claim",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Apply every relevant branch to the engagement; branches describe operating checks, not a probability model. Federal tax fee rules, state representation rules, and private carrier terms address different obligations.",
+      "caption": "Submit only after authority, contractual eligibility, tax scope, and jurisdictional credentials are resolved. Preserve the evidence supporting each decision.",
+      "stages": [
+        {
+          "label": "Authority and permitted information use",
+          "value": "Proceed with documented authority and valid access",
+          "numeric_value": 1.0,
+          "detail": "Require signed authority, baseline invoice snapshots, and least-privilege access. Where tax-return preparer information rules apply, evaluate 26 U.S.C. 7216 and 26 CFR 301.7216-3; a generic Letter of Authorization does not replace any required disclosure or use consent. Otherwise obtain missing permissions first."
+        },
+        {
+          "label": "Carrier and vendor recovery entitlement",
+          "value": "Proceed only for eligible timely claims",
+          "numeric_value": 2.0,
+          "detail": "Inspect actual carrier guarantee waivers, service exclusions, filing deadlines, prior credits, and authorized API use. For utilities, retain the controlling tariff and effective date. If entitlement fails, remove the claim rather than bypassing a carrier restriction or manufacturing a billing error."
+        },
+        {
+          "label": "Federal tax scope and substantiation",
+          "value": "Proceed with supported eligibility and permitted fees",
+          "numeric_value": 3.0,
+          "detail": "Have a qualified practitioner assess 31 CFR 10.27 as applicable to the specific service, including exceptions and relevant judicial limitations. For WOTC, verify 26 U.S.C. 51(c)(4) hire-date coverage and 51(d)(13) certification requirements; where prescreening applies, complete it by the offer date and submit within 28 days after work begins."
+        },
+        {
+          "label": "State credentials and appeal calendar",
+          "value": "Proceed through properly credentialed representation",
+          "numeric_value": 4.0,
+          "detail": "Check state property-tax consultant rules, permissible fee terms, and local appeal procedures. In Texas, review Occupations Code Chapter 1152 and Tax Code 41.44, including applicable exceptions and actual notice dates. If credentials or deadlines fail, refer appropriately or decline the affected matter."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-core-and-scaled-pod",
+      "chart_type": "org_architecture",
+      "title": "Four Core Seats, Six at Scaled Throughput",
+      "subtitle": "Base 1 FT + 3 C; Scaled 2 FT + 4 C",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values show the four Base seats, one per role. The Scaled model adds one full-time operations seat and one contract audit seat. Contractor counts describe people, not full-time equivalents or unlimited specialist capacity.",
+      "caption": "Conservative and Base use four people; Scaled uses six. Credential-sensitive work stays with personnel qualified for that jurisdiction and service.",
+      "stages": [
+        {
+          "label": "Owner and client operations",
+          "value": "Base one FT; Scaled two FT",
+          "numeric_value": 1.0,
+          "detail": "The owner controls sales, authority documents, pricing, cash collection, and client reporting. At Scaled volume, add a full-time operations lead for queue ownership and reconciliation; retain separate review of fee calculations and receipts."
+        },
+        {
+          "label": "Parcel and invoice audit delivery",
+          "value": "Base one contractor; Scaled two contractors",
+          "numeric_value": 1.0,
+          "detail": "Audit analysts reconcile EDI and permitted API records, preserve invoice lineage, test duplicates, and prepare supported claims. The second Scaled analyst increases throughput without sharing client credentials or bypassing rate limits."
+        },
+        {
+          "label": "Utility and property specialist",
+          "value": "One contractor in both operating scenarios",
+          "numeric_value": 1.0,
+          "detail": "A vetted specialist owns tariff interpretation, meter evidence, and property-assessment analysis within their demonstrated qualifications. Accept representation work only where this seat holds required credentials; otherwise narrow that engagement rather than inventing coverage."
+        },
+        {
+          "label": "Tax-credit documentation specialist",
+          "value": "One contractor in both operating scenarios",
+          "numeric_value": 1.0,
+          "detail": "A qualified specialist controls WOTC prescreening timing, state certification evidence, secure records, and coordination with the employer's tax preparer. Separate administrative processing from tax-return services and maintain the required fee review."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Four Buckets Inside the Startup Capital Range",
+      "subtitle": "$6,000 lean launch; $20,000 reference launch; $35,000 expanded launch",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values represent the $20,000 reference launch. The same 30%, 25%, 25%, and 20% allocations produce the $6,000 and $35,000 endpoints. Startup allocations are illustrative, exclude client recovery principal, and do not establish that every jurisdiction or software contract fits the lean budget.",
+      "caption": "Lean allocations total $1,800 + $1,500 + $1,500 + $1,200 = $6,000. Reference allocations total $20,000. Expanded allocations total $10,500 + $8,750 + $8,750 + $7,000 = $35,000.",
+      "stages": [
+        {
+          "label": "Secure tooling and integrations",
+          "value": "$6,000 reference; $1,800 lean; $10,500 expanded",
+          "numeric_value": 6000.0,
+          "detail": "Allocate 30% to initial OCR configuration, encrypted document storage, password management, access controls, and permitted carrier integrations. Prefer supported exports before paying to automate an unvalidated claim lane."
+        },
+        {
+          "label": "Credentials and engagement design",
+          "value": "$5,000 reference; $1,500 lean; $8,750 expanded",
+          "numeric_value": 5000.0,
+          "detail": "Allocate 25% to required registrations, initial professional review, engagement documents, insurance setup, and jurisdiction-specific scope design. If local requirements exceed this bucket, reduce launch geography or increase funded capital."
+        },
+        {
+          "label": "Prospecting and pilot onboarding",
+          "value": "$5,000 reference; $1,500 lean; $8,750 expanded",
+          "numeric_value": 5000.0,
+          "detail": "Allocate 25% to targeted account research, direct outreach, client intake, and initial evidence normalization. Measure signed, document-ready engagements rather than purchased contact volume or unverified recovery estimates."
+        },
+        {
+          "label": "Liquidity and collection buffer",
+          "value": "$4,000 reference; $1,200 lean; $7,000 expanded",
+          "numeric_value": 4000.0,
+          "detail": "Allocate 20% to delayed collections and operating variance. The reference $4,000 covers about 2.7 months at $1,500 monthly overhead or 0.4 months at $9,500; it does not fund the full pod or automatically cover the 1-4 month first-deal window."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "A Thirty-Day Evidence-to-Submission Sprint",
+      "subtitle": "Build an authorized pilot before expanding claim volume",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Milestones are operator-controlled launch deliverables, not promised refund dates. The canonical time to first deal is 1-4 months; municipal refunds, assessment appeals, and tax-credit certification can take longer than this sprint.",
+      "caption": "Finish the month with traceable pilot evidence, tested fee math, and a documented submission or a specific remediation plan; do not substitute projected recoveries for collected revenue.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define one lane and secure the workspace",
+          "numeric_value": 7.0,
+          "detail": "Choose one customer profile and recovery lane. Review applicable contract terms, tax-service scope, or state credentials; prepare authority and fee documents. Configure encrypted storage, individual accounts, access logging, and a deadline register."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Secure a pilot and preserve baseline evidence",
+          "numeric_value": 14.0,
+          "detail": "Conduct targeted outreach and seek one authorized pilot. After signature, obtain invoice and payment records and preserve their original versions. If no pilot signs, continue acquisition and test the workflow with synthetic records without claiming client access or recoveries."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Validate exceptions and calculate the fee basis",
+          "numeric_value": 21.0,
+          "detail": "Reconcile extracted records against source documents, remove duplicates, test eligibility, and calculate supported claim amounts. Review waivers, tariff periods, credentials, or WOTC timing as applicable. Have a second qualified reviewer inspect material exceptions."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Submit supported claims and establish reconciliation",
+          "numeric_value": 30.0,
+          "detail": "Submit only authorized, eligible pilot matters and store acceptance receipts. If evidence remains incomplete, issue a dated remediation list instead. Build refund-to-invoice matching, aging reports, shared-savings baseline checks, and a fee ledger that separates pending value from earned revenue."
+        }
+      ]
+    }
+  ]
+}

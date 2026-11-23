@@ -1,0 +1,805 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "first-30-day-launch-sprint-kill-fix-scale",
+    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching inbound pay-per-call & rtb ping-post arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
+    "subtitle": "A Three-Person Ringba / Retreaver Launch Pod, Evidence-Bound Call Auctions, Net-7 Collections, and Measurable Cash-Control Decisions",
+    "layout_template": "thirty_day_plan",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #39, Inbound Pay-Per-Call & RTB Ping-Post Arbitrage, ranks "
+        "#01 of 42 with a 95/100 Money-to-Manpower Score. This sprint operationalizes "
+        "14 mapped plays through one full-time operator and two contractors, beginning "
+        "with one vertical, two contracted buyers, and tightly capped traffic. Days "
+        "1-7 establish contracts and evidence; Days 8-14 prove routing and qualification; "
+        "Days 15-21 reconcile buyer outcomes; Days 22-30 test collections and decide "
+        "whether to Kill, Fix, or Scale. Canonical annual owner profits remain $30,000 "
+        "Conservative, $199,750 Base, and $480,000 Scaled; they are not first-month "
+        "targets. A $6,000 launch loss ceiling, separate settlement float, mature-cohort "
+        "measurements, and explicit Day 30/60/90 thresholds prevent attractive bid "
+        "prices from concealing rejected calls, missing evidence, or uncollectible invoices."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$200,000",
+            "context": "Annual gross billable call settlements; $110,000 retained at 55%",
+            "note": "15% gross-basis net margin; $30,000 owner profit; 1 FT + 2 C; 27.27% retained-basis margin",
+        },
+        {
+            "label": "Base",
+            "value": "$850,000",
+            "context": "Annual gross billable call settlements; $467,500 retained at 55%",
+            "note": "23.5% gross-basis net margin; $199,750 owner profit; 1 FT + 2 C; 42.73% retained-basis margin",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,500,000",
+            "context": "Annual gross billable call settlements; $825,000 retained at 55%",
+            "note": "32% gross-basis net margin; $480,000 owner profit; 2 FT + 3 C; 58.18% retained-basis margin",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Days 1-7 — Contract the Spread Before Buying Traffic",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with one emergency-trade service in one metropolitan area, "
+                    "rather than simultaneously entering Medicare, legal referrals, and "
+                    "insurance. The first-week deliverable is a runnable commercial "
+                    "specification, not an advertising account with unrestricted spend. "
+                    "Assign the full-time operator buyer negotiation, treasury, and the "
+                    "daily decision log; assign contractor C1 tracking and routing "
+                    "engineering; assign contractor C2 evidence review and settlement "
+                    "quality assurance. Budget approximately forty operator hours and "
+                    "eight hours per contractor weekly. To make the fourteen-play "
+                    "requirement executable, this chapter uses an explicit operational "
+                    "mapping rather than asserting unavailable source-play titles: P01 "
+                    "vertical selection, P02 buyer underwriting, P03 qualification "
+                    "contracts, P04 acquisition attribution, P05 permission evidence, "
+                    "P06 suppression controls, P07 tracking infrastructure, P08 RTB "
+                    "routing, P09 duration qualification, P10 fraud detection, P11 "
+                    "transcript disposition, P12 server-to-server feedback, P13 "
+                    "settlement reconciliation, and P14 cash-constrained optimization. "
+                    "Maintain one evidence folder and one accountable owner for each "
+                    "play. Two buyers provide routing resilience, but neither receives "
+                    "traffic until its service area, staffed hours, credit exposure, "
+                    "duplicate definition, and rejection timetable are written down. "
+                    "A quoted payout without those terms is only a sales conversation. "
+                    "The operator signs off on the complete specification before C1 "
+                    "enables any production destination."
+                ),
+                (
+                    "Use an illustrative $18,000 capitalization within the supplied "
+                    "$8,000-$45,000 startup range. Ring-fence $8,000 as untouched reserve, "
+                    "$4,000 as maximum settlement working capital, and $6,000 as the "
+                    "maximum first-month loss allowance. Inside that allowance, cap "
+                    "traffic acquisition at $4,500 and setup, software, telephony, and "
+                    "contractor commitments at $1,500; reprice the sprint if written "
+                    "quotes exceed either envelope. These are pilot assumptions, not "
+                    "the scorecard's steady-state monthly expense projection. Track "
+                    "gross committed outlays before giving credit for uncollected "
+                    "invoices, and count publisher liabilities when incurred rather "
+                    "than when paid. The $4,000 float funds timing differences, not "
+                    "extra acquisition experiments; never count the same publisher "
+                    "payment in both spending categories. Stop new commitments when "
+                    "either the $6,000 spending cap, $4,000 receivable exposure cap, "
+                    "or reserve floor would be breached. Require buyer net-7 terms "
+                    "in writing and publisher terms that the operator can honor "
+                    "without collecting early. A buyer refusing a short pilot "
+                    "settlement cycle can remain a prospect, but cannot justify "
+                    "uncapped publisher intake. Expected first-deal timing remains "
+                    "one to three months, so Day 30 may legitimately produce a "
+                    "controlled Fix decision instead of revenue."
+                ),
+                (
+                    "Translate permissions into specific call paths before selecting "
+                    "TrustedForm or Jornaya. A certificate supports evidence retention; "
+                    "it does not independently establish lawful outreach, authorized "
+                    "recording, or permission to share information with every bidder. "
+                    "Separate consumer-initiated inbound calls from callbacks, automated "
+                    "outreach, texts, transfers, and recorded conversations. Apply "
+                    "47 U.S.C. § 227 and 47 CFR § 64.1200 to the actual technology "
+                    "and activity. The FCC's 2023 one-to-one consent amendment was "
+                    "vacated in Insurance Marketing Coalition Ltd. v. FCC in January "
+                    "2025; do not describe it as an operative nationwide FCC "
+                    "requirement. Adopt named-recipient permission as a contractual "
+                    "control where useful, while checking existing written-consent "
+                    "duties independently. For Medicare work, apply the distinct "
+                    "TPMO personal-data sharing requirements in 42 CFR §§ 422.2274 "
+                    "and 423.2274, and the scope-of-appointment timing provisions "
+                    "in §§ 422.2264 and 423.2264, including their exceptions. A "
+                    "48-hour appointment rule is not a universal inbound-call "
+                    "waiting period. For California legal referrals, evaluate "
+                    "Business and Professions Code §§ 6151-6155 before accepting "
+                    "per-call compensation. Keep Medicare and legal traffic disabled "
+                    "through this launch unless the pod can implement their "
+                    "separate operating requirements with documented specialist review."
+                ),
+            ],
+            "table": {
+                "caption": "Days 1-7: Commercial Specification, Capital Controls, and Play Ownership",
+                "headers": [
+                    "Day and accountable owner",
+                    "Mapped work and concrete deliverable",
+                    "Acceptance evidence required before progression",
+                    "Failure response and spending boundary",
+                ],
+                "rows": [
+                    [
+                        "Day 1 — full-time operator selects launch market",
+                        "P01 defines one trade, territory, and staffed schedule",
+                        "Written service exclusions match both prospective buyer capabilities",
+                        "Reject unsupported services before committing any acquisition spending",
+                    ],
+                    [
+                        "Day 2 — full-time operator underwrites two buyers",
+                        "P02 records business identity, references, and settlement contacts",
+                        "Both buyers acknowledge net-7 pilot invoices in writing",
+                        "Keep unverified buyers outside the production routing tree",
+                    ],
+                    [
+                        "Day 3 — operator and C2 negotiate qualification",
+                        "P03 fixes duration, geography, duplicates, and dispute deadlines",
+                        "Signed examples explain payable calls and rejected calls",
+                        "Reject contracts permitting unlimited retroactive duration threshold changes",
+                    ],
+                    [
+                        "Day 4 — C2 documents permission and suppression",
+                        "P05 and P06 classify inbound, callback, and recording paths",
+                        "Evidence checklist identifies applicable permission and suppression requirements",
+                        "Disable unsupported callbacks rather than assuming inbound permission transfers",
+                    ],
+                    [
+                        "Day 5 — C1 specifies attribution and tracking",
+                        "P04 and P07 map source identifiers to call identifiers",
+                        "Test records preserve source, destination, timestamps, and evidence references",
+                        "Keep advertising paused until identifiers survive every transfer",
+                    ],
+                    [
+                        "Day 6 — operator establishes bounded treasury ledger",
+                        "P14 separates spending commitments, receivable float, and reserve",
+                        "Ledger enforces six-thousand spending and four-thousand exposure caps",
+                        "Stop commitments before touching the eight-thousand reserve floor",
+                    ],
+                    [
+                        "Day 7 — entire pod reviews launch packet",
+                        "P01 through P07 have owners, evidence, and closure dates",
+                        "Both buyer specifications match the configured production destinations",
+                        "Unresolved commercial or evidence defects postpone paid traffic",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four Preconditions Before the First Paid Call",
+                "body": "All four checks must pass for the selected traffic path; a missing artifact blocks that path rather than being averaged into a quality score.",
+                "items": [
+                    "Obtain two executed buyer specifications covering staffed hours, payable connected duration, duplicate windows, net-7 payment, and a finite rejection deadline.",
+                    "Replay the exact landing page and call path; retrieve required permission evidence, recording disclosures, and recipient restrictions using the resulting call identifier.",
+                    "Run authorized synthetic calls through both destinations; confirm timeout fallback, capacity limits, duplicate protection, and zero delivery to excluded buyers.",
+                    "Show that the next traffic commitment preserves the $6,000 spending ceiling, $4,000 receivable exposure ceiling, and $8,000 reserve floor.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Days 8-14 — Prove Routing, Qualification, and Event Integrity",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Build one Ringba or Retreaver routing tree, not two competing "
+                    "production systems. Use the second product only if a documented "
+                    "requirement makes migration worthwhile. C1 configures territory, "
+                    "opening hours, concurrency, buyer caps, and a deterministic "
+                    "fallback destination before enabling auctions. Treat sub-second "
+                    "RTB as a measured engineering objective: target ping-response "
+                    "p95 below 800 milliseconds in authorized testing, subject to "
+                    "the buyer's supported endpoint contract. Timeout behavior must "
+                    "release the call to a suitable available route without "
+                    "duplicate posting or unsupported transfers. Bind each bid to "
+                    "an expiry, destination, qualification specification, and call "
+                    "identifier. Minimize information in the ping; bid solicitation "
+                    "does not authorize distributing the consumer's identity or "
+                    "health details to every potential buyer. Test stale bids, "
+                    "empty auctions, duplicate webhook delivery, rejected posts, "
+                    "closed destinations, and downstream disconnects. Preserve "
+                    "response codes and timestamps so an apparently low acceptance "
+                    "rate can be separated into routing failure and commercial "
+                    "rejection. The operator approves the destination roster; "
+                    "C1 cannot add a higher-paying buyer without updating its "
+                    "contract and eligibility rules. Keep a manual shutdown "
+                    "control available to the operator throughout staffed hours, "
+                    "and automatically stop traffic when no contracted destination "
+                    "can safely handle the selected service."
+                ),
+                (
+                    "Implement the 90-120-second qualification buffer as a "
+                    "buyer-specific commercial timer, never as a reason to keep "
+                    "an unsuitable caller talking. Record arrival, answer, "
+                    "transfer, connected conversation, disconnect, and disposition "
+                    "timestamps separately. If a buyer pays after ninety seconds "
+                    "of connected conversation, IVR time and ringing cannot "
+                    "inflate that measure. C2 reviews the first twenty genuine "
+                    "calls in full and compares buyer disposition with the "
+                    "contract, using recordings only where collection and access "
+                    "are permitted. AI transcript labels can triage wrong "
+                    "geography, duplicate demand, silence, solicitation, or "
+                    "service mismatch, but disputed payment decisions require "
+                    "human review of the underlying evidence. Configure fraud "
+                    "controls around repeated device or source patterns, "
+                    "implausible call bursts, recycled callers, and repeated "
+                    "short connections without making caller identity alone "
+                    "a definitive fraud finding. For outbound callbacks, "
+                    "implement applicable National Do Not Call and "
+                    "entity-specific suppression controls, honoring relevant "
+                    "exceptions and revocations. A private litigation-risk list "
+                    "is merely supplementary risk screening, not permission "
+                    "evidence or a replacement for required suppression. "
+                    "Document recording disclosures and applicable state "
+                    "requirements separately, including California Penal Code "
+                    "§ 632 when confidential communications fall within its "
+                    "scope. Limit recording access to the assigned reviewers "
+                    "and preserve an auditable retention schedule."
+                ),
+                (
+                    "Release one acquisition cell on Day 11 after synthetic "
+                    "testing passes: one source, one service, one geography, "
+                    "and one declared creative promise. Set a $150 daily "
+                    "acquisition ceiling initially, with cumulative commitments "
+                    "still constrained by the monthly budget. If the vendor "
+                    "requires a prepaid minimum beyond that ceiling, defer "
+                    "that source rather than disguising the commitment as "
+                    "unused credit. Use Google Ads call assets or an "
+                    "individually contracted publisher, but do not combine "
+                    "untraceable publisher traffic with search traffic in "
+                    "one reporting bucket. For P12, distinguish an early "
+                    "connected-call signal from a finalized payable-call "
+                    "conversion. Send idempotent server-to-server events "
+                    "using a stable event identifier and retain correction "
+                    "or retraction support where the receiving platform "
+                    "provides it. Never train bidding solely on duration "
+                    "when the buyer also rejects geography or duplicates. "
+                    "The three-person pod can support a fifteen-minute "
+                    "morning review and one bounded afternoon exception "
+                    "queue; it cannot manually investigate hundreds of "
+                    "unclassified calls while negotiating new verticals. "
+                    "Pause a cell when attribution completeness falls below "
+                    "99%, required permission evidence is missing, or "
+                    "destination failures exceed 2% of attempted transfers. "
+                    "Restart only after replaying the failed condition "
+                    "and recording a successful test against the corrected "
+                    "configuration."
+                ),
+            ],
+            "table": {
+                "caption": "Days 8-14: Controlled RTB Build and First-Traffic Release",
+                "headers": [
+                    "Day and accountable owner",
+                    "Mapped play and implementation task",
+                    "Measured deliverable for the daily review",
+                    "Specific stop or repair instruction",
+                ],
+                "rows": [
+                    [
+                        "Day 8 — C1 builds eligible routing branches",
+                        "P08 configures geography, schedules, concurrency, and buyer capacity",
+                        "Every synthetic route resolves only to eligible destinations",
+                        "Disable branches that bypass buyer hours or territory",
+                    ],
+                    [
+                        "Day 9 — C1 tests bid and post lifecycle",
+                        "P08 validates expiry, timeout fallback, and duplicate handling",
+                        "Authorized tests achieve ping-response p95 below eight-hundred milliseconds",
+                        "Repair slow endpoints before allocating incremental paid traffic",
+                    ],
+                    [
+                        "Day 10 — C2 validates timers and disclosures",
+                        "P09 separates ringing, IVR, transfer, and connected conversation",
+                        "Buyer examples reconcile against ninety-to-one-hundred-twenty-second contractual qualification timers",
+                        "Remove routes with inconsistent recording or duration evidence",
+                    ],
+                    [
+                        "Day 11 — operator releases one acquisition cell",
+                        "P04 starts attributable traffic under one-hundred-fifty-dollar daily ceiling",
+                        "First genuine calls retain complete source-to-buyer identifier linkage",
+                        "Pause spending immediately when source attribution becomes unreliable",
+                    ],
+                    [
+                        "Day 12 — C2 reviews first twenty calls",
+                        "P10 and P11 classify fraud indicators and service mismatch",
+                        "Human review compares transcript labels with original call evidence",
+                        "Quarantine suspicious sources without declaring every repeat caller fraudulent",
+                    ],
+                    [
+                        "Day 13 — C1 enables corrected conversion feedback",
+                        "P12 separates connected events from finalized payable conversions",
+                        "Duplicate webhook replay produces only one recognized conversion",
+                        "Disable feedback that rewards rejected or incorrectly attributed calls",
+                    ],
+                    [
+                        "Day 14 — operator reviews reliability and commitments",
+                        "P14 checks attribution, transfer failures, and cumulative spending",
+                        "Attribution reaches ninety-nine percent and transfer failures stay bounded",
+                        "Freeze expansion until all failed reliability checks pass",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Preserve the Spread Where Exchanges Usually Leak",
+                "body": "These tactics improve diagnosis without multiplying vendors, traffic cells, or contractor hours.",
+                "items": [
+                    "Store the applicable buyer specification version with every bid and call; a later contract edit must not rewrite the evidence for an earlier settlement.",
+                    "Compare the buyer's duration clock with your connected-conversation clock on the same twenty calls before blaming a publisher for short-duration rejects.",
+                    "Feed bidding with finalized payable outcomes and supported conversion adjustments, while keeping early connection events in a separate diagnostic stream.",
+                    "Maintain a tiny authorized test suite for expired bids, closed buyers, duplicate posts, and empty auctions; rerun it after every routing-tree edit.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Days 15-21 — Reconcile Mature Calls and Collect Actual Cash",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Use three separate measures: gross billable settlements, "
+                    "retained contribution after publisher payouts and "
+                    "click-to-call media, and owner profit after all remaining "
+                    "expenses. The canonical retained share is 55%, leaving "
+                    "45% for those acquisition payouts and media costs. "
+                    "Conservative therefore reconciles $200,000 gross to "
+                    "$110,000 retained, $80,000 of remaining annual expenses, "
+                    "and $30,000 owner profit. Base reconciles $850,000 gross "
+                    "to $467,500 retained, $267,750 of remaining expenses, "
+                    "and $199,750 owner profit. Scaled reconciles $1,500,000 "
+                    "gross to $825,000 retained, $345,000 of remaining "
+                    "expenses, and $480,000 owner profit. The corresponding "
+                    "gross-basis margins are 15%, 23.5%, and 32%; retained-basis "
+                    "margins are 27.27%, 42.73%, and 58.18%. These residual "
+                    "annual expenses are mathematical requirements of the "
+                    "supplied cases, not independently quoted software budgets. "
+                    "The supplied $2,500-$14,000 monthly operating range "
+                    "cannot alone reconcile every residual; build an "
+                    "itemized expense bridge before adopting a forecast. "
+                    "Use the supplied ASC 606 retained-share convention "
+                    "for comparison while documenting principal-versus-agent "
+                    "presentation from actual contracts. Neither the "
+                    "homeowner's repair invoice, an insurance premium, "
+                    "nor a legal client's recovery belongs in operator "
+                    "call-exchange revenue. Day 30 performance should "
+                    "test this accounting structure, not extrapolate "
+                    "one unusually profitable afternoon into annual earnings."
+                ),
+                (
+                    "Model the acquisition cell with explicit denominators. "
+                    "Suppose one hundred connected calls generate eighty "
+                    "final payable calls at $75 each: gross settlements "
+                    "equal $6,000. A 55% retained contribution allows "
+                    "$2,700 of total acquisition costs, or $27 per "
+                    "connected call and $33.75 per payable call, leaving "
+                    "$3,300 before remaining expenses. If search clicks "
+                    "convert to connected calls at 10%, the maximum "
+                    "CPC compatible with that contribution target is "
+                    "$2.70, assuming no additional publisher payouts; "
+                    "adding publisher payments reduces the available "
+                    "media budget. This is unit arithmetic, not a "
+                    "forecast that the launch will achieve those "
+                    "prices or volumes. With the same $2,700 acquisition "
+                    "spend but only sixty payable calls, gross falls "
+                    "to $4,500 and retained contribution falls to "
+                    "40%. A high quoted bid cannot rescue poor "
+                    "payability. Report effective cost per payable "
+                    "call only after including rejected-call acquisition "
+                    "spending, telephony classified consistently, and "
+                    "any publisher minimums. Keep fixed overhead "
+                    "outside retained contribution and inside owner "
+                    "profit, avoiding double counting. Trigger a "
+                    "same-day Fix review when the three-day median "
+                    "CPC exceeds the launch baseline by 20% "
+                    "without an offsetting increase in collected "
+                    "value per click."
+                ),
+                (
+                    "Define a mature call as one whose contractual "
+                    "rejection window has expired and whose disposition "
+                    "has been reconciled, not merely a call that "
+                    "occurred yesterday. Track connected calls, final "
+                    "payable calls, gross finalized settlements, "
+                    "acquisition liabilities, and collected cash by "
+                    "source, buyer, and service date. Acceptance equals "
+                    "final payable calls divided by mature connected "
+                    "calls; dispute rate equals formally disputed "
+                    "initially billed dollars divided by initially "
+                    "billed dollars for the same mature cohort. "
+                    "Due-dollar collection equals cash applied to "
+                    "invoices due by the checkpoint divided by "
+                    "those invoices' collectible balances after "
+                    "contractually valid finalized adjustments. Show "
+                    "the adjustments separately so write-offs cannot "
+                    "manufacture a perfect collection score. C2 "
+                    "matches the buyer ledger to event identifiers; "
+                    "the operator sends the invoice and resolves "
+                    "commercial exceptions. Request the first net-7 "
+                    "remittance by Day 21 if the invoice date "
+                    "supports it. Until a buyer completes one "
+                    "full pilot settlement cycle, cap its unpaid "
+                    "exposure at $500 within the overall $4,000 "
+                    "limit. Freeze that buyer when an undisputed "
+                    "balance is more than seven days overdue. "
+                    "Publishers still receive payment on their "
+                    "agreed terms; buyer delinquency does not "
+                    "retroactively authorize withholding valid "
+                    "publisher earnings."
+                ),
+            ],
+            "table": {
+                "caption": "Days 15-21: Mature-Cohort Economics and Net-7 Cash Verification",
+                "headers": [
+                    "Day and accountable owner",
+                    "Mapped play and reconciliation work",
+                    "Required artifact or quantitative comparison",
+                    "Decision when evidence fails the test",
+                ],
+                "rows": [
+                    [
+                        "Day 15 — C2 opens cohort reconciliation ledger",
+                        "P13 matches buyer dispositions against original call identifiers",
+                        "Every billed line links to its qualification evidence",
+                        "Exclude unresolved lines from finalized contribution calculations",
+                    ],
+                    [
+                        "Day 16 — operator validates invoice delivery",
+                        "P13 confirms invoice receipt, due date, and remittance instructions",
+                        "Buyer acknowledges the complete invoice and dispute timetable",
+                        "Do not expand exposure against unacknowledged pilot invoices",
+                    ],
+                    [
+                        "Day 17 — C2 audits duration-related rejection patterns",
+                        "P09 and P11 compare connected timers with buyer records",
+                        "Disputed dollars remain visible beside finalized valid adjustments",
+                        "Repair timer discrepancies before purchasing more affected traffic",
+                    ],
+                    [
+                        "Day 18 — operator recomputes cell acquisition ceilings",
+                        "P14 converts payable yield into maximum allowable media costs",
+                        "One-hundred-call example supports twenty-seven dollars per connected call",
+                        "Lower bids when payable yield cannot support current acquisition",
+                    ],
+                    [
+                        "Day 19 — C1 checks feedback and suppression",
+                        "P06 and P12 reconcile revocations and payable conversion corrections",
+                        "Suppressed callbacks remain disabled across every active routing integration",
+                        "Pause affected outbound paths immediately after evidence failures",
+                    ],
+                    [
+                        "Day 20 — operator checks buyer credit exposure",
+                        "P02 and P13 compare unsettled balances with pilot limits",
+                        "Unproven buyers remain below five-hundred dollars unpaid exposure",
+                        "Suspend allocations exceeding buyer-specific or aggregate credit limits",
+                    ],
+                    [
+                        "Day 21 — operator verifies first settlement cycle",
+                        "P13 matches received bank funds to invoice line balances",
+                        "Cleared funds establish collectability rather than emailed payment promises",
+                        "Keep traffic capped when the first collection remains unproven",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the evidence cohort",
+                    "action": "Export calls whose contractual rejection windows have expired.",
+                    "detail": "Preserve source, buyer, specification version, connected duration, permission references, acquisition liabilities, and original billed amounts.",
+                },
+                {
+                    "step": 2,
+                    "title": "Resolve commercial differences",
+                    "action": "Match each buyer disposition and adjustment to its contractual rule.",
+                    "detail": "Keep unresolved disputes visible; distinguish wrong geography, duplicate demand, duration differences, and unsupported retroactive scrubs.",
+                },
+                {
+                    "step": 3,
+                    "title": "Bridge contribution to cash",
+                    "action": "Calculate gross finalized settlements, retained contribution, remaining expenses, and invoice collections separately.",
+                    "detail": "Apply bank receipts to invoice balances and retain a separate aging schedule for overdue amounts and valid adjustments.",
+                },
+                {
+                    "step": 4,
+                    "title": "Authorize only bounded commitments",
+                    "action": "Record the operator's next-day source caps and buyer exposure limits.",
+                    "detail": "Check aggregate spending, available working capital, reserve floor, routing reliability, and evidence completeness before reopening traffic.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Days 22-30 — Decide with Evidence, Then Recheck at Days 60 and 90",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use Days 22-24 to close the first invoice "
+                    "cycle, repair the largest rejection cause, "
+                    "and rerun the routing regression suite. "
+                    "Use Days 25-27 to measure one unchanged "
+                    "cell, test a reversible 20% budget "
+                    "increase only if provisional scale conditions "
+                    "hold, and verify the second buyer's "
+                    "collection evidence. Days 28-30 are for "
+                    "expense accruals, a written decision, and "
+                    "next-month caps, not a last-minute traffic "
+                    "surge. All thresholds here are proposed "
+                    "operating rules rather than measured "
+                    "performance of Candidate #39. Evaluate "
+                    "economic thresholds per acquisition cell, "
+                    "with treasury and evidence failures "
+                    "overriding the entire affected operation. "
+                    "At Day 30 require at least one "
+                    "hundred mature connected calls, 75% "
+                    "acceptance, 55% retained contribution, "
+                    "disputed dollars no higher than 5%, "
+                    "and at least 95% collection of "
+                    "due dollars before scaling. Both "
+                    "active buyers must have completed "
+                    "one invoice cycle. Zero due invoices "
+                    "means collectability is unproven, not "
+                    "100% collected. Require complete "
+                    "mandatory evidence, at least 99% "
+                    "attribution completeness, and transfer "
+                    "failures no higher than 2%. "
+                    "A sample shortfall produces Fix "
+                    "with frozen expansion; it never "
+                    "justifies more spending beyond the "
+                    "cash limits merely to reach "
+                    "statistical convenience."
+                ),
+                (
+                    "Kill means stop paid acquisition for "
+                    "the failing cell and settle existing "
+                    "obligations; it does not mean erase "
+                    "records or abandon valid debts. "
+                    "Immediately pause affected activity for "
+                    "missing required permission, unlawful "
+                    "routing, unauthorized disclosure, or "
+                    "breached treasury limits. Terminate "
+                    "a source relationship when material "
+                    "evidence falsification is substantiated. "
+                    "For economic failures, kill a "
+                    "cell when retained contribution is "
+                    "zero or negative across two "
+                    "consecutive non-overlapping mature "
+                    "cohorts of at least fifty "
+                    "connected calls each, despite "
+                    "one documented repair attempt. "
+                    "Otherwise classify below-threshold "
+                    "results as Fix and assign "
+                    "one cause, one owner, one "
+                    "test, and a seven-day deadline. "
+                    "At Day 60 require three "
+                    "hundred mature connected calls "
+                    "in the trailing thirty-day "
+                    "service cohort; at Day 90 "
+                    "require six hundred, with "
+                    "the same maturity rule. "
+                    "An immature portion remains "
+                    "outside the denominator and "
+                    "is reported explicitly. Raise "
+                    "acceptance to 80% and 85%, "
+                    "reduce dispute limits to "
+                    "3% and 2%, and increase "
+                    "due-dollar collection to 98% "
+                    "and 99%, respectively. Maintain "
+                    "55% retained contribution "
+                    "throughout. These are cumulative "
+                    "requirements within each checkpoint, "
+                    "not interchangeable achievements. "
+                    "Recheck whenever a publisher, "
+                    "buyer contract, geography, "
+                    "or routing configuration changes "
+                    "materially, because prior evidence "
+                    "does not automatically transfer "
+                    "to the new cell."
+                ),
+                (
+                    "Scale only by 20% in daily "
+                    "acquisition budget after seven "
+                    "additional stable calendar days "
+                    "and another mature-cohort review; "
+                    "reserve buyer capacity before "
+                    "lifting source caps. At "
+                    "Day 60 also require nonnegative "
+                    "trailing-thirty-day owner profit "
+                    "after accrued expenses; at "
+                    "Day 90 require at least "
+                    "15% owner margin on gross "
+                    "finalized settlements. The Day "
+                    "90 threshold matches the "
+                    "Conservative margin, not the "
+                    "Base or Scaled promise. "
+                    "Track collection lag and "
+                    "publisher payment dates before "
+                    "each increase because profitable "
+                    "receivables can still exhaust "
+                    "cash. Hold expansion if "
+                    "the operator exceeds forty-five "
+                    "hours weekly for two weeks, "
+                    "either contractor exceeds ten "
+                    "hours weekly, or unresolved "
+                    "exceptions remain older than "
+                    "two business days. First "
+                    "automate repetitive identifier "
+                    "matching, rejection categorization, "
+                    "and invoice preparation; do "
+                    "not automate disputed commercial "
+                    "judgments merely to hide "
+                    "a staffing deficit. The "
+                    "Conservative and Base cases "
+                    "use one full-time person "
+                    "plus two contractors. The "
+                    "$480,000 Scaled owner-profit "
+                    "case explicitly requires two "
+                    "full-time people plus three "
+                    "contractors, so crossing into "
+                    "that operating design needs "
+                    "a separately funded staffing "
+                    "plan. End Day 30 with "
+                    "a signed internal decision "
+                    "record listing live cells, "
+                    "paused cells, unpaid exposure, "
+                    "remaining cash, repair owners, "
+                    "and the next checkpoint date."
+                ),
+            ],
+            "table": {
+                "caption": "Days 22-30 Execution and Day 30/60/90 Kill / Fix / Scale Matrix",
+                "headers": [
+                    "Execution day or decision checkpoint",
+                    "Required deliverable or measurable scale conditions",
+                    "Kill or immediate stop condition",
+                    "Fix response and permitted next commitment",
+                ],
+                "rows": [
+                    [
+                        "Day 22 — operator closes first invoice cycle",
+                        "Match cleared bank receipts against every due invoice",
+                        "Freeze buyers with undisputed balances seven days overdue",
+                        "Resolve allocation differences without increasing the buyer exposure",
+                    ],
+                    [
+                        "Day 23 — C2 prioritizes largest rejection cause",
+                        "Choose one repair using rejected dollars and evidence",
+                        "Terminate sources with substantiated material permission-evidence falsification",
+                        "Assign one cause, owner, test, and seven-day deadline",
+                    ],
+                    [
+                        "Day 24 — C1 reruns routing regression tests",
+                        "Replay expired bids, duplicate posts, and closed destinations",
+                        "Pause routes delivering calls outside contracted recipient restrictions",
+                        "Restore traffic only after the failed condition passes",
+                    ],
+                    [
+                        "Day 25 — operator freezes configuration for measurement",
+                        "Measure one unchanged acquisition cell against mature-cohort economics",
+                        "Stop new commitments that breach any treasury ceiling",
+                        "Keep configuration stable while collecting remaining mature evidence",
+                    ],
+                    [
+                        "Day 26 — operator considers bounded budget experiment",
+                        "Require provisional Day 30 thresholds before twenty-percent increase",
+                        "Cancel increases that consume protected reserve or excess float",
+                        "Retain original cap when sample or collections remain insufficient",
+                    ],
+                    [
+                        "Day 27 — operator verifies second buyer settlement",
+                        "Require cleared payment from each active production buyer",
+                        "Freeze overdue buyers instead of relying on remittance promises",
+                        "Route within proven buyer capacity without expanding total spend",
+                    ],
+                    [
+                        "Day 28 — C2 closes expenses and adjustments",
+                        "Accrue publisher liabilities, contractor work, and supported buyer adjustments",
+                        "Reject profit reports omitting valid unpaid operating obligations",
+                        "Rebuild the expense bridge before adopting next-month targets",
+                    ],
+                    [
+                        "Day 29 — operator drafts checkpoint decision record",
+                        "List cell economics, cash exposure, evidence failures, and repairs",
+                        "Kill cells meeting the repeated nonpositive contribution rule",
+                        "Freeze expansion for every cell missing any scale requirement",
+                    ],
+                    [
+                        "Day 30 — entire pod signs next-month caps",
+                        "Require one-hundred mature connections, seventy-five-percent acceptance, fifty-five-percent contribution",
+                        "Stop affected activity for evidence failures or breached cash limits",
+                        "Also require disputes at most five-percent and collections ninety-five-percent",
+                    ],
+                    [
+                        "Day 60 — operator reviews trailing service cohort",
+                        "Require three-hundred mature connections, eighty-percent acceptance, fifty-five-percent contribution",
+                        "Kill repaired cells with two qualifying nonpositive contribution cohorts",
+                        "Also require three-percent disputes, ninety-eight-percent collections, nonnegative owner profit",
+                    ],
+                    [
+                        "Day 90 — operator tests sustainable operating margin",
+                        "Require six-hundred mature connections, eighty-five-percent acceptance, fifty-five-percent contribution",
+                        "Keep expansion stopped when staffing or treasury controls fail",
+                        "Also require two-percent disputes, ninety-nine-percent collections, fifteen-percent owner margin",
+                    ],
+                    [
+                        "Every checkpoint — operator applies shared evidence requirements",
+                        "Require complete mandatory evidence, ninety-nine-percent attribution, bounded transfer failures",
+                        "Pause affected paths immediately when required permission evidence disappears",
+                        "Permit twenty-percent increases only after seven additional stable days",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Scale the collected spread, not the winning bid.",
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        "Assign all fourteen operationally mapped plays to the full-time operator, C1 engineering contractor, or C2 evidence and settlement contractor before Day 7.",
+        "Execute two buyer specifications defining territory, staffing, duration clocks, duplicate windows, rejection deadlines, net-7 terms, and recipient restrictions.",
+        "Configure the $6,000 first-month spending ceiling, $4,000 aggregate receivable exposure ceiling, $500 unproven-buyer limit, and $8,000 protected reserve.",
+        "Replay the complete Ringba or Retreaver call path and retrieve attribution, required permission evidence, qualification timing, and idempotent conversion events.",
+        "Reconcile mature calls to buyer adjustments, publisher liabilities, remaining expenses, and cleared bank receipts without mixing customer transaction value into exchange revenue.",
+        "Record Day 30 Kill, Fix, or Scale decisions and schedule Day 60/90 reviews using the defined sample sizes, contribution, collections, disputes, staffing, and owner-margin thresholds.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Classify callbacks, automated outreach, and other telephone activities against the applicable TCPA restrictions rather than treating every inbound interaction as blanket outreach permission.",
+        },
+        {
+            "title": "47 CFR § 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Implement applicable consent, revocation, calling, and do-not-call controls by traffic path; do not treat the vacated FCC one-to-one amendment as an operative universal requirement.",
+        },
+        {
+            "title": "16 CFR § 310.4 — Abusive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
+            "relevance": "Evaluate covered outbound telemarketing and suppression practices, including National Do Not Call requirements, alongside the separate FCC framework.",
+        },
+        {
+            "title": "42 CFR § 422.2264 — Medicare Advantage beneficiary contact",
+            "url": "https://www.ecfr.gov/current/title-42/section-422.2264",
+            "relevance": "Implement applicable scope-of-appointment documentation and forty-eight-hour timing requirements with their stated exceptions instead of imposing a universal delay on inbound calls.",
+        },
+        {
+            "title": "42 CFR § 423.2264 — Part D beneficiary contact",
+            "url": "https://www.ecfr.gov/current/title-42/section-423.2264",
+            "relevance": "Apply Part D appointment and beneficiary-contact requirements independently when a future launch cell includes prescription drug plan marketing.",
+        },
+        {
+            "title": "42 CFR § 422.2274 — Medicare Advantage agent, broker, and TPMO requirements",
+            "url": "https://www.ecfr.gov/current/title-42/section-422.2274",
+            "relevance": "Build the applicable TPMO call-recording, oversight, and separately identified recipient consent controls for personal beneficiary data sharing.",
+        },
+        {
+            "title": "42 CFR § 423.2274 — Part D agent, broker, and TPMO requirements",
+            "url": "https://www.ecfr.gov/current/title-42/section-423.2274",
+            "relevance": "Apply corresponding Part D TPMO operating requirements before enabling personal-data exchange or marketing call paths in that vertical.",
+        },
+        {
+            "title": "California Business and Professions Code § 6152 — Runners and cappers",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
+            "relevance": "Review prohibited runner and capper conduct before acquiring or selling California legal-service calls; ordinary trade-call economics do not resolve legal-referral restrictions.",
+        },
+        {
+            "title": "California Business and Professions Code § 6155 — Lawyer referral services",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6155.",
+            "relevance": "Determine whether the proposed California legal-call operation constitutes a regulated lawyer referral service before accepting buyer compensation.",
+        },
+        {
+            "title": "California Penal Code § 632 — Confidential communications",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
+            "relevance": "Assess recording permissions for confidential communications within the statute's scope and retain evidence supporting the configured recording procedure.",
+        },
+    ],
+}

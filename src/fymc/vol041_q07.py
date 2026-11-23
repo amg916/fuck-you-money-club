@@ -1,0 +1,990 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "complete-operating-process-production-blueprint-90-day-cohort-walk",
+    "question_prompt": "How does an operator execute buying group, card-float & ticket allocation arbitrage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
+    "subtitle": "Purchase-Order Commitments, SQLite Transaction Locks, Card-Statement Evidence, BOTS Act Controls & a Cash-Reconciled Base Cohort",
+    "layout_template": "research_exhibit",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #41, ranked #09 of 42 with a 93/100 Money-to-Manpower Score, "
+        "turns committed buying-group orders, commercial-card rewards, and transferable "
+        "ticket allocations into a controlled cash-conversion operation. This chapter "
+        "maps 11 operating plays to one intake register, evidence-backed purchasing, "
+        "an idempotent SQLite ledger, and a worked three-month close. Formula v2.0 "
+        "produces annual owner profits of $20,000 Conservative, $143,500 Base, and "
+        "$360,000 Scaled. The Base case separates $1,025,000 gross throughput from "
+        "$358,750 retained revenue and $215,250 operating costs. A $55,000 opening "
+        "cash reserve supports the illustrated cohort only because purchases are "
+        "staggered and obligations settle within each month. The blueprint makes "
+        "counterparty delays, duplicate instructions, ticket markdowns, and unpaid "
+        "card statements visible before they consume purchasing capacity."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$250,000",
+            "context": "$87,500 retained revenue at a 35% retained share",
+            "note": "8% gross-basis margin; 22.86% retained margin; $20,000 annual owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Base",
+            "value": "$1,025,000",
+            "context": "$358,750 retained revenue at a 35% retained share",
+            "note": "14.0% gross-basis margin; 40.0% retained margin; $143,500 annual owner profit; 1 FT + 2 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,800,000",
+            "context": "$630,000 retained revenue at a 35% retained share",
+            "note": "20% gross-basis margin; 57.14% retained margin; $360,000 annual owner profit; 2 FT + 3 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Convert opportunities into evidence-backed, bounded commitments",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run one opportunity register, not separate spreadsheets for merchandise, rewards, "
+                    "and seats. The eleven mapped operating plays are committed BG fulfillment, insured "
+                    "shipment spread, supplier early-payment discounts, commercial-card rebates, statement "
+                    "float, primary ticket allocations, secondary-exchange repricing, stadium seat-license "
+                    "brokerage, corporate-suite subdivision, corporate allocation concierge, and "
+                    "free_llc_fintech_bounty_stacking. These are operating labels rather than eleven "
+                    "independent revenue additions: insurance protects an existing spread, and float "
+                    "changes timing rather than creating sales. Every record needs a source reference, "
+                    "counterparty, contractual buyer, expected gross collection, landed basis, reward "
+                    "eligibility, tax treatment, event date when relevant, and an evidence locator. "
+                    "A $5,000 BG reimbursement against $4,500 landed basis offers $500 before fees; "
+                    "a verified 2% reward on eligible $4,500 spend adds $90 once, not another "
+                    "$4,500 of revenue. Underwrite the trade without that reward until eligibility "
+                    "and redemption terms are documented. Require a written purchase commitment before "
+                    "ordering inventory, and retain the exact SKU, quantity, acceptance standard, and "
+                    "payment trigger. A vague chat promise cannot establish a collectible receivable. "
+                    "A counterparty accepting Net-3 after inspection is different from one promising "
+                    "Net-3 after warehouse delivery, so encode the triggering event explicitly."
+                ),
+                (
+                    "Separate acquisition authority from resale feasibility. For tickets, record the "
+                    "original channel, permitted purchase quantity, transfer activation date, seat "
+                    "identifiers, and whether the venue permits the proposed allocation or suite "
+                    "subdivision. The BOTS Act, 15 U.S.C. §45c, prohibits specified circumvention "
+                    "of ticketing controls and covered resale of tickets obtained through that "
+                    "circumvention; ordinary automation must not bypass queues, CAPTCHA, or purchase "
+                    "limits. SkyBox or Automatiq can support inventory distribution where the "
+                    "operator has an authorized account and supported integration, but neither "
+                    "replaces venue transfer rules. A $1,000 ticket lot projected to collect "
+                    "$1,350 after mandatory buyer charges has only $350 before seller fees and "
+                    "losses. If the exchange deducts $135 and delivery costs $15, the usable "
+                    "spread is $200. Record those deductions separately from face value. "
+                    "For a $6,000 suite divided into eight permitted allocations, a $900 "
+                    "selling price produces $7,200 gross and $1,200 before service costs; "
+                    "six sales instead produce a $600 basis shortfall. If subdivision is "
+                    "prohibited or transfer remains locked, broker the intact allocation under "
+                    "written authority or decline it. Never substitute speculative availability "
+                    "for actual inventory control."
+                ),
+                (
+                    "The formation play needs a distinct eligibility and commission subledger. "
+                    "Under free_llc_fintech_bounty_stacking, charge a $0 service fee while the "
+                    "founder pays mandatory state filing fees directly or through a clearly "
+                    "identified pass-through. Offer the post-formation 'Required Business Infrastructure "
+                    "Checklist' as an operational sequence, explicitly explaining that individual "
+                    "banking, corporate-card, payroll, bookkeeping, and merchant offers are voluntary "
+                    "and subject to provider eligibility. Do not claim every company must buy "
+                    "every product. Three earned $200 commissions produce $600; five earned "
+                    "$360 commissions produce $1,800, before servicing costs and reversals. "
+                    "These are underwriting examples, not quoted provider offers. Pre-qualify "
+                    "founders on documented 30-day operating revenue intent and genuine product "
+                    "need. The fallback is to condition optional operating-agreement and bookkeeping "
+                    "templates on verified funding of an eligible business bank account, with "
+                    "that condition disclosed before signup and essential formation documents "
+                    "delivered regardless. Never request account credentials or manufacture funding "
+                    "transactions. Disclose paid referral relationships under 16 CFR §255.5, "
+                    "track each provider's actual payout and reversal window, and recognize "
+                    "only amounts supported by the applicable contract. No formation commissions "
+                    "enter the worked Base cohort; adding them without additional costs would "
+                    "silently change the canonical model."
+                ),
+            ],
+            "table": {
+                "caption": "Intake Evidence, Unit Economics & Risk Fallback Matrix",
+                "headers": [
+                    "Operating lane and economic test",
+                    "Required evidence before committing purchasing capacity",
+                    "Failure signal that changes the decision",
+                    "Specific fallback preserving cash and delivery",
+                ],
+                "rows": [
+                    [
+                        "Committed BG fulfillment earns $500 before fees on $5,000 reimbursement.",
+                        "Signed purchase order identifies exact SKUs, acceptance standards, and payment trigger.",
+                        "Warehouse acceptance slips while the buyer disputes the contractual payment clock.",
+                        "Suspend new orders until the oldest accepted shipment clears by ACH.",
+                    ],
+                    [
+                        "Insured shipping protects $4,500 basis rather than generating additional sales.",
+                        "Carrier acceptance, serial photographs, declared value, and covered exclusions remain attached.",
+                        "Insurance wording excludes the merchandise category or the actual delivery route.",
+                        "Use a covered service or decline the exposed shipment entirely.",
+                    ],
+                    [
+                        "A documented 1% early-payment discount saves $45 on $4,500 basis.",
+                        "Supplier invoice states discount eligibility and settlement deadline before payment.",
+                        "Accelerated payment consumes cash needed for an earlier card statement.",
+                        "Forgo the $45 discount and preserve statement repayment liquidity.",
+                    ],
+                    [
+                        "Eligible $4,500 card spend produces $90 at a verified 2% rate.",
+                        "Issuer terms confirm category eligibility, caps, redemption value, and commercial use.",
+                        "Issuer review freezes purchasing capacity or excludes the merchant category.",
+                        "Stop reward-dependent orders and use cash only for already profitable commitments.",
+                    ],
+                    [
+                        "Ticket lots retain $200 after $1,000 basis and $150 selling costs.",
+                        "Inventory ownership, transfer permission, fee schedule, and event deadline are retained.",
+                        "Executable bids fall below basis plus remaining delivery and selling costs.",
+                        "Apply the dated markdown curve instead of increasing speculative inventory.",
+                    ],
+                    [
+                        "Eight permitted suite allocations at $900 collect $7,200 against $6,000 basis.",
+                        "Venue agreement authorizes subdivision and specifies seat-license or hospitality restrictions.",
+                        "Only six allocations sell before the contractual distribution deadline arrives.",
+                        "Sell the intact authorized allocation or reduce exposure before purchase.",
+                    ],
+                    [
+                        "Three earned $200 formation referrals yield $600 before servicing costs.",
+                        "Founder eligibility, optional offer disclosures, funding evidence, and payout terms are recorded.",
+                        "Provider reversals or unsuitable products erase the expected referral contribution.",
+                        "Restrict optional templates to disclosed funding conditions and reject unsuitable founders.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before a purchase becomes an obligation",
+                "body": "A profitable quote becomes executable only after authority, liquidity, delivery, and evidence agree.",
+                "items": [
+                    "Match the BG purchase order to exact SKUs and the acceptance-based Net-3 or Net-5 clock; reject unilateral substitutions.",
+                    "Rebuild each card's statement-close and payment-due schedule from actual issuer records; reserve repayment cash without counting pending rewards.",
+                    "Verify ticket ownership, permitted quantity, transfer activation, and venue allocation rights; exclude every queue or CAPTCHA bypass mechanism.",
+                    "Confirm the resale certificate or tax treatment, covered shipment value, and maximum counterparty exposure before releasing purchase instructions.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Install a six-module ledger with serialized transitions and replay-safe receipts",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The reference implementation below uses integer cents, SQLite foreign keys, "
+                    "unique source references, immutable receipt fingerprints, and BEGIN IMMEDIATE "
+                    "transactions. Save each code cell under its stated filename in one "
+                    "directory; run the schema first, then intake, workflow, dispatch, receipts, "
+                    "and reporting through the six modules. Schema creation and reporting share "
+                    "the first and sixth modules respectively. The workflow serializes capacity "
+                    "checks with state changes, eliminating the local check-then-purchase race. "
+                    "Two workers cannot claim the same ready instruction because claiming "
+                    "updates its state inside the same write transaction. A repeated receipt "
+                    "with identical content returns harmlessly; reusing its identifier with "
+                    "different content fails. The double-entry representation stores one debit "
+                    "and one equal credit per posting, making unbalanced individual postings "
+                    "unrepresentable. Production access must restrict direct database writes to "
+                    "these controlled processes. Use local persistent storage rather than a "
+                    "shared network filesystem, take SQLite-aware backups, and retain source "
+                    "documents outside the database under immutable object identifiers. This "
+                    "reference deliberately stops at an external instruction envelope: it "
+                    "does not claim that a terminal printout executes a purchase or verifies "
+                    "a bank deposit. An authorized adapter or documented operator confirmation "
+                    "must establish the actual external result."
+                ),
+                (
+                    "Exactly-once effects across an external issuer, exchange, and local database "
+                    "cannot be established by a UNIQUE constraint alone. The dispatcher prints "
+                    "a stable instruction identifier and then refuses to issue that instruction "
+                    "again automatically. If the process stops after claiming but before "
+                    "printing, the item remains claimed for investigation. Query the external "
+                    "provider using that identifier before any recovery; reuse the identifier "
+                    "only where the provider contract supports durable idempotency. Otherwise "
+                    "reconcile manually and never infer failure from a timeout. VERIFIED means "
+                    "the operator has attached acquisition authority and delivery evidence; "
+                    "ESCROW_READY means funds are reserved internally, not that a licensed "
+                    "escrow relationship exists. SUBMITTED means an instruction has been "
+                    "claimed, FUNDED requires a supported purchase receipt, and CLOSED "
+                    "requires collected proceeds plus repayment of any associated card "
+                    "principal. The funding receipt selects cash or card treatment explicitly. "
+                    "A card purchase credits card payable, never cash; its later repayment "
+                    "debits that payable. Credit limits are not cash reserves. Actual escrow "
+                    "providers can replace the internal reserve only through a documented "
+                    "custody agreement and corresponding external evidence. Keep authorization "
+                    "documents separate from bank settlement proof so one cannot masquerade "
+                    "as the other."
+                ),
+                (
+                    "The ledger treats the scorecard's 35% retained share as the economic "
+                    "presentation for this chapter, not a universal ASC 606 conclusion. "
+                    "Principal-versus-agent presentation follows the actual control analysis "
+                    "for each contract. Here, a settled collection credits retained revenue "
+                    "for gross less basis and clears the corresponding basis advance through "
+                    "a customer-funds payable bridge. The gross collection remains visible "
+                    "in the deals table rather than being mislabeled retained revenue. "
+                    "Provider rewards included in a deal's gross must be posted only after "
+                    "they become supported proceeds; otherwise create a separate reward record "
+                    "when earned and avoid double counting. The reporting view reconciles "
+                    "cash movement, retained revenue, operating expense, open advances, and "
+                    "card liabilities. The included QA checks prove trial-balance equality, "
+                    "state completeness, card reconciliation, and settled-deal arithmetic; "
+                    "they do not prove that uploaded evidence is authentic. Require a "
+                    "second person to compare high-value receipts against bank or issuer "
+                    "exports. Match SkyBox or Automatiq settlement identifiers to the same "
+                    "deal references used for acquisition. Keep credentials out of database "
+                    "rows and command arguments. Exercise concurrent dispatch, duplicate "
+                    "receipts, failed transitions, and process interruption in a test copy "
+                    "before enabling any external purchasing adapter."
+                ),
+            ],
+            "table": {
+                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table — Six Copy-Pasteable Modules",
+                "headers": [
+                    "Module and bounded production responsibility",
+                    "Copy-pasteable Python 3.9 reference source",
+                    "Execution contract and required operator evidence",
+                ],
+                "rows": [
+                    [
+                        "Module 1 — schema.py creates constrained storage and the accounting views.",
+                        '''from __future__ import annotations
+import sqlite3
+
+SQL = """
+PRAGMA journal_mode=WAL;
+PRAGMA foreign_keys=ON;
+BEGIN IMMEDIATE;
+CREATE TABLE IF NOT EXISTS settings (
+    id INTEGER PRIMARY KEY CHECK(id=1),
+    capacity_cents INTEGER NOT NULL CHECK(capacity_cents>0)
+);
+INSERT OR IGNORE INTO settings VALUES(1,5500000);
+CREATE TABLE IF NOT EXISTS deals (
+    id TEXT PRIMARY KEY,
+    source TEXT NOT NULL,
+    reference TEXT NOT NULL,
+    fingerprint TEXT NOT NULL,
+    gross INTEGER NOT NULL CHECK(gross>0),
+    basis INTEGER NOT NULL CHECK(basis>=0 AND basis<gross),
+    state TEXT NOT NULL CHECK(state IN
+      ('INTAKE','VERIFIED','ESCROW_READY','SUBMITTED',
+       'FUNDED','SETTLED','CLOSED')),
+    authority_ref TEXT,
+    delivery_ref TEXT,
+    UNIQUE(source,reference)
+);
+CREATE TABLE IF NOT EXISTS instructions (
+    id TEXT PRIMARY KEY,
+    deal_id TEXT NOT NULL UNIQUE REFERENCES deals(id),
+    state TEXT NOT NULL CHECK(state IN ('READY','CLAIMED','DONE'))
+);
+CREATE TABLE IF NOT EXISTS events (
+    id TEXT PRIMARY KEY,
+    fingerprint TEXT NOT NULL,
+    receipt_ref TEXT NOT NULL,
+    recorded_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS postings (
+    event_id TEXT NOT NULL REFERENCES events(id),
+    line INTEGER NOT NULL,
+    debit TEXT NOT NULL,
+    credit TEXT NOT NULL,
+    cents INTEGER NOT NULL CHECK(cents>0),
+    CHECK(debit<>credit),
+    UNIQUE(event_id,line),
+    CHECK(debit IN ('cash','advance','receivable','custody',
+      'revenue','expense','card_payable','capital')),
+    CHECK(credit IN ('cash','advance','receivable','custody',
+      'revenue','expense','card_payable','capital'))
+);
+CREATE TABLE IF NOT EXISTS cards (
+    deal_id TEXT PRIMARY KEY REFERENCES deals(id),
+    issuer_reference TEXT NOT NULL UNIQUE,
+    due_date TEXT NOT NULL,
+    principal INTEGER NOT NULL CHECK(principal>0),
+    paid INTEGER NOT NULL DEFAULT 0 CHECK(paid IN (0,1))
+);
+CREATE VIEW IF NOT EXISTS account_balances AS
+SELECT account, SUM(cents) AS debit_balance FROM (
+    SELECT debit AS account,cents FROM postings
+    UNION ALL
+    SELECT credit AS account,-cents FROM postings
+) GROUP BY account;
+CREATE VIEW IF NOT EXISTS settled_economics AS
+SELECT id,gross,basis,gross-basis AS retained
+FROM deals WHERE state IN ('SETTLED','CLOSED');
+CREATE VIEW IF NOT EXISTS card_obligations AS
+SELECT deal_id,issuer_reference,due_date,principal
+FROM cards WHERE paid=0;
+COMMIT;
+"""
+with sqlite3.connect("ledger.sqlite", timeout=30) as db:
+    db.executescript(SQL)
+print("Schema and views ready")
+''',
+                        "Run python schema.py once; preserve the database with SQLite-aware backups afterward.",
+                    ],
+                    [
+                        "Module 2 — intake.py fingerprints opportunities and rejects weak pre-fee spreads.",
+                        '''from __future__ import annotations
+import hashlib
+import json
+import sqlite3
+import sys
+import uuid
+
+raw = json.loads(sys.argv[1])
+p = {k: raw[k] for k in
+     ("source", "reference", "gross", "basis")}
+if any(type(p[k]) is not int for k in ("gross", "basis")):
+    raise ValueError("Amounts must be integer cents")
+if not all(isinstance(p[k], str) and p[k].strip()
+           for k in ("source", "reference")):
+    raise ValueError("Source and reference must be populated")
+if not 0 <= p["basis"] < p["gross"]:
+    raise ValueError("Invalid gross or basis")
+if (p["gross"] - p["basis"]) * 10000 < p["gross"] * 1000:
+    raise ValueError("Spread below the illustrative intake threshold")
+identity = json.dumps([p["source"], p["reference"]],
+                      separators=(",", ":"))
+deal_id = str(uuid.uuid5(uuid.NAMESPACE_URL, identity))
+body = json.dumps(p, sort_keys=True, separators=(",", ":"))
+digest = hashlib.sha256(body.encode()).hexdigest()
+with sqlite3.connect("ledger.sqlite", timeout=30) as db:
+    db.execute("PRAGMA foreign_keys=ON")
+    db.execute("BEGIN IMMEDIATE")
+    db.execute(
+        "INSERT OR IGNORE INTO deals "
+        "(id,source,reference,fingerprint,gross,basis,state) "
+        "VALUES(?,?,?,?,?,?,'INTAKE')",
+        (deal_id, p["source"], p["reference"],
+         digest, p["gross"], p["basis"]))
+    stored = db.execute(
+        "SELECT fingerprint FROM deals WHERE id=?",
+        (deal_id,)).fetchone()
+    if stored is None or stored[0] != digest:
+        raise ValueError("Reference reused with changed economics")
+print(deal_id)
+''',
+                        "Pass one JSON argument containing source, reference, gross, and basis in cents; the 10% screen precedes full fee underwriting.",
+                    ],
+                    [
+                        "Module 3 — workflow.py reserves capacity and records evidence-backed state changes.",
+                        '''from __future__ import annotations
+import sqlite3
+import sys
+
+deal_id, action = sys.argv[1:3]
+with sqlite3.connect("ledger.sqlite", timeout=30) as db:
+    db.execute("PRAGMA foreign_keys=ON")
+    db.execute("BEGIN IMMEDIATE")
+    row = db.execute(
+        "SELECT state,basis FROM deals WHERE id=?",
+        (deal_id,)).fetchone()
+    if row is None:
+        raise ValueError("Deal does not exist")
+    state, basis = row
+    if action == "verify":
+        authority_ref, delivery_ref = sys.argv[3:5]
+        if not authority_ref.strip() or not delivery_ref.strip():
+            raise ValueError("Evidence locators are required")
+        if state != "INTAKE":
+            raise ValueError("Verification requires intake state")
+        used = db.execute(
+            "SELECT COALESCE(SUM(basis),0) FROM deals "
+            "WHERE state NOT IN ('INTAKE','CLOSED')").fetchone()[0]
+        capacity = db.execute(
+            "SELECT capacity_cents FROM settings WHERE id=1"
+        ).fetchone()[0]
+        if used + basis > capacity:
+            raise ValueError("Reserved exposure exceeds capacity")
+        db.execute(
+            "UPDATE deals SET state='VERIFIED',authority_ref=?,"
+            "delivery_ref=? WHERE id=?",
+            (authority_ref, delivery_ref, deal_id))
+    elif action == "reserve":
+        if state != "VERIFIED":
+            raise ValueError("Reservation requires verification")
+        db.execute(
+            "UPDATE deals SET state='ESCROW_READY' WHERE id=?",
+            (deal_id,))
+        db.execute(
+            "INSERT INTO instructions VALUES(?,?,'READY')",
+            ("purchase/" + deal_id, deal_id))
+    else:
+        raise ValueError("Use verify or reserve")
+print(action, deal_id)
+''',
+                        "Run verify with authority and delivery evidence locators, then reserve; internal reservation never represents third-party escrow custody.",
+                    ],
+                    [
+                        "Module 4 — dispatch.py claims exactly one local purchase instruction.",
+                        '''from __future__ import annotations
+import json
+import sqlite3
+
+envelope = None
+with sqlite3.connect("ledger.sqlite", timeout=30) as db:
+    db.execute("PRAGMA foreign_keys=ON")
+    db.execute("BEGIN IMMEDIATE")
+    row = db.execute(
+        "SELECT i.id,i.deal_id,d.basis "
+        "FROM instructions i JOIN deals d ON d.id=i.deal_id "
+        "WHERE i.state='READY' AND d.state='ESCROW_READY' "
+        "ORDER BY i.id LIMIT 1").fetchone()
+    if row:
+        instruction_id, deal_id, basis = row
+        db.execute(
+            "UPDATE instructions SET state='CLAIMED' WHERE id=?",
+            (instruction_id,))
+        db.execute(
+            "UPDATE deals SET state='SUBMITTED' WHERE id=?",
+            (deal_id,))
+        envelope = {
+            "instruction_id": instruction_id,
+            "deal_id": deal_id,
+            "basis_cents": basis,
+            "instruction": "Execute only through an authorized purchase channel"
+        }
+if envelope is not None:
+    print(json.dumps(envelope, sort_keys=True))
+else:
+    print("No ready instruction")
+''',
+                        "Execute the printed envelope through an authorized channel; investigate claimed items after interruption instead of automatically resubmitting purchases.",
+                    ],
+                    [
+                        "Module 5 — receipts.py posts supported cash, card, settlement, and expense events atomically.",
+                        '''from __future__ import annotations
+import datetime
+import hashlib
+import json
+import sqlite3
+import sys
+
+p = json.loads(sys.argv[1])
+body = json.dumps(p, sort_keys=True, separators=(",", ":"))
+digest = hashlib.sha256(body.encode()).hexdigest()
+event_id = p["event_id"]
+if not isinstance(event_id, str) or not event_id.strip():
+    raise ValueError("Event identifier is required")
+if not isinstance(p["receipt_ref"], str) or not p["receipt_ref"].strip():
+    raise ValueError("External evidence locator is required")
+kind = p["kind"]
+with sqlite3.connect("ledger.sqlite", timeout=30) as db:
+    db.execute("PRAGMA foreign_keys=ON")
+    db.execute("BEGIN IMMEDIATE")
+    prior = db.execute(
+        "SELECT fingerprint FROM events WHERE id=?",
+        (event_id,)).fetchone()
+    if prior:
+        if prior[0] != digest:
+            raise ValueError("Event identifier reused with changed content")
+        print("Identical receipt already posted")
+        sys.exit(0)
+    db.execute(
+        "INSERT INTO events(id,fingerprint,receipt_ref) VALUES(?,?,?)",
+        (event_id, digest, p["receipt_ref"]))
+    entries = []
+    if kind in ("capital", "expense"):
+        amount = p["cents"]
+        if type(amount) is not int or amount <= 0:
+            raise ValueError("Positive integer cents required")
+        entries = [("cash", "capital", amount)] if kind == "capital" else [
+            ("expense", "cash", amount)]
+    else:
+        deal_id = p["deal_id"]
+        row = db.execute(
+            "SELECT state,gross,basis FROM deals WHERE id=?",
+            (deal_id,)).fetchone()
+        if row is None:
+            raise ValueError("Deal does not exist")
+        state, gross, basis = row
+        if kind == "funded":
+            if state != "SUBMITTED":
+                raise ValueError("Funding requires submitted instruction")
+            rail = p["rail"]
+            if rail not in ("cash", "card"):
+                raise ValueError("Use cash or card rail")
+            if rail == "card":
+                if basis <= 0:
+                    raise ValueError("Card principal must be positive")
+                due = datetime.date.fromisoformat(p["due_date"])
+                db.execute(
+                    "INSERT INTO cards "
+                    "(deal_id,issuer_reference,due_date,principal) "
+                    "VALUES(?,?,?,?)",
+                    (deal_id, p["issuer_reference"], due.isoformat(), basis))
+            if basis:
+                entries.append(
+                    ("advance", "cash" if rail == "cash" else "card_payable",
+                     basis))
+            db.execute(
+                "UPDATE instructions SET state='DONE' WHERE deal_id=? "
+                "AND state='CLAIMED'", (deal_id,))
+            if db.execute("SELECT changes()").fetchone()[0] != 1:
+                raise ValueError("Claimed instruction is required")
+            db.execute(
+                "UPDATE deals SET state='FUNDED' WHERE id=?", (deal_id,))
+        elif kind == "settled":
+            if state != "FUNDED":
+                raise ValueError("Settlement requires funded purchase")
+            if type(p["gross"]) is not int or p["gross"] != gross:
+                raise ValueError("Settlement mismatch requires investigation")
+            if basis:
+                entries.append(("receivable", "custody", basis))
+            entries.append(("receivable", "revenue", gross - basis))
+            entries.append(("cash", "receivable", gross))
+            if basis:
+                entries.append(("custody", "advance", basis))
+            unpaid = db.execute(
+                "SELECT 1 FROM cards WHERE deal_id=? AND paid=0",
+                (deal_id,)).fetchone()
+            new_state = "SETTLED" if unpaid else "CLOSED"
+            db.execute(
+                "UPDATE deals SET state=? WHERE id=?", (new_state, deal_id))
+        elif kind == "card_paid":
+            card = db.execute(
+                "SELECT principal,paid FROM cards WHERE deal_id=?",
+                (deal_id,)).fetchone()
+            if card is None or card[1] or state not in ("FUNDED", "SETTLED"):
+                raise ValueError("Open card obligation is required")
+            if type(p["cents"]) is not int or p["cents"] != card[0]:
+                raise ValueError("Card payment must match outstanding principal")
+            entries.append(("card_payable", "cash", card[0]))
+            db.execute("UPDATE cards SET paid=1 WHERE deal_id=?", (deal_id,))
+            if state == "SETTLED":
+                db.execute(
+                    "UPDATE deals SET state='CLOSED' WHERE id=?", (deal_id,))
+        else:
+            raise ValueError("Unsupported receipt kind")
+    for line, (debit, credit, cents) in enumerate(entries, 1):
+        db.execute(
+            "INSERT INTO postings VALUES(?,?,?,?,?)",
+            (event_id, line, debit, credit, cents))
+print("Receipt committed", event_id)
+''',
+                        "Only trusted receipt ingestion may invoke this module; partial receipts, changed proceeds, refunds, and chargebacks require a separately reviewed adjustment journal.",
+                    ],
+                    [
+                        "Module 6 — qa_report.py reconciles ledger balances and highlights aging obligations.",
+                        '''from __future__ import annotations
+import datetime
+import sqlite3
+
+with sqlite3.connect("ledger.sqlite", timeout=30) as db:
+    db.execute("PRAGMA foreign_keys=ON")
+    db.execute("BEGIN")
+    if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
+        raise RuntimeError("Database integrity check failed")
+    if db.execute("PRAGMA foreign_key_check").fetchall():
+        raise RuntimeError("Foreign key check failed")
+    balances = dict(db.execute(
+        "SELECT account,debit_balance FROM account_balances"))
+    if sum(balances.values()) != 0:
+        raise RuntimeError("Trial balance does not reconcile")
+    economics = db.execute(
+        "SELECT COALESCE(SUM(gross),0),COALESCE(SUM(basis),0),"
+        "COALESCE(SUM(retained),0) FROM settled_economics"
+    ).fetchone()
+    if economics[0] - economics[1] != economics[2]:
+        raise RuntimeError("Settled economics do not reconcile")
+    if -balances.get("revenue", 0) != economics[2]:
+        raise RuntimeError("Revenue differs from settled retained spread")
+    cards = db.execute(
+        "SELECT COALESCE(SUM(principal),0) FROM cards WHERE paid=0"
+    ).fetchone()[0]
+    if -balances.get("card_payable", 0) != cards:
+        raise RuntimeError("Card principal does not reconcile")
+    advances = db.execute(
+        "SELECT COALESCE(SUM(basis),0) FROM deals WHERE state='FUNDED'"
+    ).fetchone()[0]
+    if balances.get("advance", 0) != advances:
+        raise RuntimeError("Open basis advances do not reconcile")
+    bad = db.execute(
+        "SELECT d.id FROM deals d LEFT JOIN instructions i "
+        "ON i.deal_id=d.id WHERE "
+        "(d.state='ESCROW_READY' AND COALESCE(i.state,'')<>'READY') OR "
+        "(d.state='SUBMITTED' AND COALESCE(i.state,'')<>'CLAIMED') OR "
+        "(d.state IN ('FUNDED','SETTLED','CLOSED') "
+        "AND COALESCE(i.state,'')<>'DONE')"
+    ).fetchall()
+    if bad:
+        raise RuntimeError("Instruction and deal states disagree")
+    if db.execute(
+        "SELECT 1 FROM deals d JOIN cards c ON c.deal_id=d.id "
+        "WHERE d.state='CLOSED' AND c.paid=0"
+    ).fetchone():
+        raise RuntimeError("Closed deal retains unpaid card principal")
+    overdue = db.execute(
+        "SELECT * FROM card_obligations WHERE due_date<?",
+        (datetime.date.today().isoformat(),)).fetchall()
+    profit = -balances.get("revenue", 0) - balances.get("expense", 0)
+    print("Settled gross, basis, retained cents:", economics)
+    print("Account balances in cents:", balances)
+    print("Owner contribution before distributions in cents:", profit)
+    print("Overdue card obligations:", overdue)
+    print("QA arithmetic checks passed")
+''',
+                        "Run after every import and daily close; investigate overdue obligations and compare reported cash against independently retrieved bank balances.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Initialize and prove the local cash lane",
+                    "action": "Save the six reference files and run python schema.py in an isolated test directory.",
+                    "detail": "Post a capital receipt, intake one $5,000 gross and $4,500 basis deal, then retain the returned deterministic deal identifier.",
+                },
+                {
+                    "step": 2,
+                    "title": "Verify evidence and reserve exposure",
+                    "action": "Run workflow.py with the deal identifier, verify, and two immutable evidence locators; then run its reserve action.",
+                    "detail": "Use real authorization and delivery documents in production; a string locator alone does not establish authenticity or purchasing permission.",
+                },
+                {
+                    "step": 3,
+                    "title": "Claim and confirm the external instruction",
+                    "action": "Run dispatch.py once and execute only through an explicitly authorized purchasing channel.",
+                    "detail": "Post funded evidence with cash or card rail; a card receipt additionally requires the issuer transaction reference and actual payment due date.",
+                },
+                {
+                    "step": 4,
+                    "title": "Settle, repay, replay, and reconcile",
+                    "action": "Post settled evidence with exact gross cents, post card_paid when applicable, then run qa_report.py.",
+                    "detail": "Replay the identical receipt to confirm no duplicate posting; alter its content under the same identifier and confirm rejection in the test database.",
+                },
+            ],
+        },
+        {
+            "heading": "3. Work the 90-day cohort from scored leads to collected owner contribution",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Treat this as a worked target-economics cohort, not observed trading "
+                    "history. Each month begins with 60 screened opportunities: 24 BG "
+                    "shipments, 12 ticket lots, and four suite or allocation packages "
+                    "execute; 20 opportunities are scrubbed before purchase. Ten fail "
+                    "commitment or counterparty checks, six fail transfer or venue rules, "
+                    "and four fail liquidity or fee-adjusted spread tests. Monthly gross "
+                    "throughput comprises $60,000 BG reimbursements, $1,000 earned rewards, "
+                    "$18,000 ticket proceeds, and approximately $6,416.67 allocation "
+                    "proceeds. BG basis is $42,000, ticket basis is $10,000, and allocation "
+                    "basis is approximately $3,520.83. The implied BG unit is $2,500 "
+                    "reimbursement against $1,750 basis; the reward yield is 2.38% of "
+                    "the $42,000 eligible merchandise spend. Those merchandise discounts "
+                    "and ticket spreads are demanding procurement assumptions calibrated "
+                    "to the supplied 35% retained-share model. Ordinary retail purchases "
+                    "may not support them. Reject the cohort if executable quotes cannot "
+                    "produce the aggregate spread after acquisition costs; do not disguise "
+                    "the shortfall with additional float. Recognize rewards separately "
+                    "from issuer principal, and include them in gross only once. Cent "
+                    "adjustments in the matrix make the quarter exact without overstating "
+                    "its annualized run rate."
+                ),
+                (
+                    "The monthly retained contribution is approximately $29,895.83, followed "
+                    "by $8,937.50 of direct operating costs and $9,000 of fixed overhead. "
+                    "Direct costs comprise $4,000 exchange and processing charges, $1,687.50 "
+                    "shipping and insurance, $1,500 shipment write-offs, and $1,750 settled "
+                    "dispute losses. The write-offs and dispute losses represent incremental "
+                    "cash losses outside the delivered units' stated basis; they must not "
+                    "also be deducted from gross proceeds or included in that basis. "
+                    "Ticket markdowns are already reflected in realized selling prices, "
+                    "so there is no second markdown expense. Fixed overhead covers the "
+                    "operator's staffing and operating structure at the canonical monthly "
+                    "range ceiling; it is not the complete cost stack. The one-FT, "
+                    "two-contractor team divides acquisition, fulfillment, and reconciliation "
+                    "without assuming free contractor labor. Owner profit is the model's "
+                    "residual before owner distributions, not an additional salary charge "
+                    "invented for this chapter. At the annual level, $107,250 direct "
+                    "costs plus $108,000 fixed overhead equal $215,250. Subtracting that "
+                    "from $358,750 retained revenue yields exactly $143,500. The 14.0% "
+                    "gross-basis margin and 40.0% retained margin describe the same "
+                    "profit with different denominators."
+                ),
+                (
+                    "Start with $55,000 unrestricted cash and no opening receivables, "
+                    "inventory, or card debt. Purchase in weekly waves so cumulative "
+                    "unrecovered basis never exceeds $45,000, preserving $10,000 for "
+                    "operating obligations. That ceiling is an execution requirement, "
+                    "not something monthly averages can prove; the daily cash schedule "
+                    "must confirm it before every release. Month 1 earns $85,416.67 "
+                    "but collects $75,416.67 because $10,000 remains receivable. Month "
+                    "2 collects its predecessor's $10,000 while replacing it with "
+                    "another $10,000 closing receivable. Month 3 collects that balance "
+                    "and all current proceeds, ending with no receivable. This final "
+                    "release is a cohort cleanup assumption, not recurring income. "
+                    "All merchandise and ticket basis, direct costs, fixed overhead, "
+                    "and card principal are paid within the relevant month. Card "
+                    "float can bridge intramonth timing, but the model assigns no "
+                    "60-day entitlement and no interest income. Cumulative operating "
+                    "cash movement is $1,958.33, then $13,916.67, then $35,875.00; "
+                    "ending cash reaches $90,875.00 before distributions. Four identical "
+                    "economic quarters produce the Base annual profit, while continuing "
+                    "operations with a rolling receivable would retain the corresponding "
+                    "working-capital investment instead of releasing it."
+                ),
+            ],
+            "table": {
+                "caption": "Worked 90-Day Cohort Walk",
+                "headers": [
+                    "Cohort measure and treatment",
+                    "Month 1 execution and close",
+                    "Month 2 execution and close",
+                    "Month 3 execution and close",
+                ],
+                "rows": [
+                    [
+                        "Screened leads become bounded commitments rather than automatic purchasing instructions.",
+                        "Screen 60 opportunities; execute 24 BG shipments, 12 ticket lots, four allocations.",
+                        "Screen 60 new opportunities; execute the same 40-deal underwriting mix.",
+                        "Screen 60 new opportunities; execute 40 deals and close remaining cohort receivables.",
+                    ],
+                    [
+                        "Pre-purchase scrubs prevent weak spreads from becoming funded inventory losses.",
+                        "Scrub ten commitment failures, six transfer failures, and four liquidity failures.",
+                        "Scrub another 20 opportunities using the identical documented rejection categories.",
+                        "Scrub another 20 opportunities; never replace rejected purchases with speculative tickets.",
+                    ],
+                    [
+                        "Gross earned throughput includes verified rewards, not client enterprise sales.",
+                        "Earn $85,416.67 gross, including $1,000 supported card rewards during the month.",
+                        "Earn $85,416.67 gross from the repeated qualified mix and verified rewards.",
+                        "Earn $85,416.66 gross; one-cent adjustment makes quarterly throughput exactly $256,250.00.",
+                    ],
+                    [
+                        "Delivered basis is separated from retained revenue and incremental operating losses.",
+                        "Pay $55,520.84 basis, leaving $29,895.83 retained revenue before operating costs.",
+                        "Pay $55,520.83 basis, leaving $29,895.84 retained revenue before operating costs.",
+                        "Pay $55,520.83 basis, leaving $29,895.83 retained revenue before operating costs.",
+                    ],
+                    [
+                        "Losses, transaction costs, and fixed overhead exhaust the modeled expense stack.",
+                        "Pay $8,937.50 direct costs, including $3,250 losses, plus $9,000 overhead.",
+                        "Pay $8,937.50 direct costs and $9,000 overhead; profit equals $11,958.34.",
+                        "Pay $8,937.50 direct costs and $9,000 overhead; profit equals $11,958.33.",
+                    ],
+                    [
+                        "Cash timing distinguishes earned throughput from collected bank proceeds.",
+                        "Collect $75,416.67; leave $10,000 receivable; pay total operating outflows of $73,458.34.",
+                        "Collect $85,416.67; retain $10,000 closing receivable; pay operating outflows of $73,458.33.",
+                        "Collect $95,416.66; clear all cohort receivables; pay operating outflows of $73,458.33.",
+                    ],
+                    [
+                        "Cumulative operating cash excludes opening capital and precedes owner distributions.",
+                        "Generate $1,958.33 cash; cumulative movement $1,958.33; closing cash balance $56,958.33.",
+                        "Generate $11,958.34 cash; cumulative movement $13,916.67; closing cash balance $68,916.67.",
+                        "Generate $21,958.33 cash; cumulative movement $35,875.00; closing cash balance $90,875.00.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the spread at the four points experienced operators watch",
+                "body": "Small timing and evidence improvements matter more than adding another speculative purchase channel.",
+                "items": [
+                    "Photograph serial numbers before sealing BG cartons and reconcile the carrier acceptance scan against the buyer's contractual inspection clock.",
+                    "Schedule purchases using actual statement-close dates, then stress repayment against a seven-day buyer delay; never treat a marketing reference to 60 days as contractual cash.",
+                    "Give every ticket lot a dated executable-bid floor; reduce exposure before transfer deadlines rather than waiting for aspirational listing prices to recover.",
+                    "Keep formation commissions in provider-specific reversal buckets and keep founder filing-fee pass-throughs outside operator revenue.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Close exceptions daily and scale only reproducible economics",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Run the morning exception queue before acquisition. Rank unmatched "
+                    "bank credits, overdue accepted BG deliveries, open card obligations, "
+                    "transfer-locked tickets, and claimed instructions lacking receipts. "
+                    "Counterparty concentration is a purchasing constraint: the illustrative "
+                    "policy caps any one BG at 25% of deployable merchandise basis "
+                    "and stops further releases when an accepted Net-3 or Net-5 "
+                    "invoice misses its contractual deadline. This is an internal "
+                    "risk limit, not a legal standard. Test a delay by moving "
+                    "the expected receipt seven days later in the cash schedule; "
+                    "if a statement cannot still be paid in full, cancel uncommitted "
+                    "purchases rather than assuming another issuer will supply credit. "
+                    "Card review can eliminate purchasing capacity immediately while "
+                    "leaving every existing repayment obligation intact. Keep a "
+                    "cash-funded route for already accepted orders and avoid cycling "
+                    "payments merely to manufacture additional available credit. "
+                    "For tickets, compare net executable bids with remaining basis "
+                    "at 21, 14, seven, and three days before the event. An "
+                    "illustrative curve accepts progressively lower contribution, "
+                    "but a hard loss limit must remain tied to available cash. "
+                    "When transfer rules prevent reliable delivery, stop selling "
+                    "the affected inventory rather than hoping the restriction "
+                    "will disappear."
+                ),
+                (
+                    "At daily close, reconcile bank settlements to receipt events, "
+                    "receipt events to deal references, and deal references to "
+                    "the supporting order or ticket inventory. A bank export "
+                    "can arrive twice or contain a corrected description; use "
+                    "the bank's stable transaction identifier and preserve both "
+                    "raw exports instead of hashing a mutable description as "
+                    "the sole identity. Marketplace fees withheld from settlement "
+                    "require a gross-to-net bridge, not a smaller invented sale. "
+                    "The minimal receipt module accepts exact, fully settled "
+                    "deals; partial collections, revised proceeds, cancellations, "
+                    "and chargebacks remain quarantined until an authorized "
+                    "adjustment journal extends the evidence trail. Do not "
+                    "force them through by overwriting expected amounts. The "
+                    "worked cohort's aggregate receivable bridge therefore "
+                    "belongs in the close schedule until the corresponding "
+                    "complete deal receipts arrive. Separate statutory sales "
+                    "tax collected for remittance from throughput and spread. "
+                    "California Revenue and Taxation Code §6091 establishes "
+                    "a presumption affecting the seller's resale documentation; "
+                    "§6092 addresses a resale certificate's requirements. "
+                    "Retain properly completed certificates for applicable "
+                    "California merchandise purchases and investigate each "
+                    "destination jurisdiction independently. UCC §2-509, as "
+                    "adopted locally, makes delivery terms and risk-of-loss "
+                    "allocation material to shipping operations; insurance "
+                    "does not rewrite the purchase contract."
+                ),
+                (
+                    "Close the quarter with a signed reconciliation packet "
+                    "containing gross proceeds, retained presentation, delivered "
+                    "basis, incremental losses, fixed overhead, receivable "
+                    "aging, card principal, and unrestricted cash. The canonical "
+                    "Conservative case is $250,000 gross, $87,500 retained, "
+                    "$67,500 costs, and $20,000 owner profit; the Scaled "
+                    "case is $1,800,000 gross, $630,000 retained, $270,000 "
+                    "costs, and $360,000 owner profit. Neither follows "
+                    "automatically from multiplying the Base headcount or "
+                    "purchase volume. Moving from one FT plus two contractors "
+                    "to two FT plus three contractors must preserve receipt "
+                    "matching, counterparty limits, and transfer performance. "
+                    "Review exception volume per completed deal rather than "
+                    "celebrating gross throughput alone. A useful weekly "
+                    "dashboard shows cash days to statement repayment, "
+                    "oldest accepted BG receivable, percentage of tickets "
+                    "transferable today, realized spread after exchange fees, "
+                    "and unresolved receipt count. Public-facing ticket "
+                    "offers must display required total prices under "
+                    "16 CFR Part 464, alongside applicable state rules; "
+                    "a low advertised price with mandatory charges hidden "
+                    "until checkout corrupts both customer expectations "
+                    "and conversion analysis. Scale only when the last "
+                    "three closes reproduce the underwriting assumptions "
+                    "and the daily cash schedule survives the specified "
+                    "delay and markdown stresses without fresh owner capital."
+                ),
+            ],
+            "table": {
+                "caption": "Daily Exception Ownership, Stop Conditions & Canonical Close Controls",
+                "headers": [
+                    "Exception or closing control requiring attention",
+                    "Specific evidence and quantitative operating threshold",
+                    "Assigned action before additional exposure accumulates",
+                    "Reconciliation outcome preserved in the audit packet",
+                ],
+                "rows": [
+                    [
+                        "Accepted BG shipment remains unpaid after its contractual settlement deadline.",
+                        "Compare acceptance timestamp, Net-3 or Net-5 terms, and actual bank receipt.",
+                        "Acquisition owner freezes new commitments to that buyer pending collection.",
+                        "Preserve receivable aging and document any changed cash collection forecast.",
+                    ],
+                    [
+                        "Issuer review removes purchasing capacity while outstanding principal remains payable.",
+                        "Compare issuer notices, statement due dates, available cash, and open obligations.",
+                        "Cash owner reserves repayment funds and cancels purchases not yet committed.",
+                        "Card payable matches issuer principal without counting suspended credit availability.",
+                    ],
+                    [
+                        "Ticket bids deteriorate before the scheduled event and transfer deadline.",
+                        "Review executable net bids at 21, 14, seven, and three days.",
+                        "Inventory owner applies documented markdowns and blocks unsupported delivery promises.",
+                        "Realized selling prices include markdown effects without duplicate loss deductions.",
+                    ],
+                    [
+                        "Claimed purchase instruction has no supported external execution receipt.",
+                        "Inspect stable instruction identifier, provider records, and retained operator evidence.",
+                        "Reconciliation owner investigates manually before any provider-supported idempotent resubmission.",
+                        "One external purchase maps to one funding event and instruction.",
+                    ],
+                    [
+                        "Partial settlement or revised proceeds do not match the expected deal.",
+                        "Compare marketplace statement, bank transaction, withheld fees, and original economics.",
+                        "Hold the mismatch outside automatic posting until reviewed adjustment entries exist.",
+                        "Preserve original expectations, actual proceeds, and the documented adjustment bridge.",
+                    ],
+                    [
+                        "Conservative and Base annual cases require distinct cost and margin denominators.",
+                        "Conservative costs equal $67,500; Base costs equal $215,250 annually.",
+                        "Report $20,000 and $143,500 profit against their respective gross and retained bases.",
+                        "Retained margins reconcile to 22.86% Conservative and exactly 40.0% Base.",
+                    ],
+                    [
+                        "Scaled staffing and economics require a separate capacity and cost review.",
+                        "Two FT plus three contractors support $1,800,000 gross and $630,000 retained.",
+                        "Hold total modeled costs to $270,000 while preserving daily control coverage.",
+                        "Owner profit equals $360,000; gross margin 20%; retained margin 57.14%.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "An uncollected spread is a forecast; a reconciled spread is operating cash.",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Build the unified opportunity register with contractual payment triggers, exact basis, transfer evidence, and provider-specific reward eligibility.",
+        "Save the six reference modules, initialize an isolated ledger, and test duplicate receipts, concurrent dispatch, interruption, and rejected state changes before external integration.",
+        "Load actual issuer statement dates and reserve repayment cash; stress every committed purchase against a seven-day counterparty delay.",
+        "Run the 60-lead monthly cohort screen, retain the 20 rejection records, and verify that executable quotes support the modeled 35% aggregate retained share.",
+        "Reconcile the $256,250 quarterly gross, $166,562.50 basis, $53,812.50 operating costs, and $35,875 owner contribution to bank and issuer evidence.",
+        "Keep optional formation referrals, sales-tax liabilities, partial settlements, and disputed proceeds in separate supported schedules rather than inflating the Base cohort.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to circumvention of ticket access controls",
+            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
+            "relevance": "Prohibits covered circumvention of ticketing controls and specified resale of tickets acquired through that circumvention; informs acquisition and automation restrictions.",
+        },
+        {
+            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
+            "relevance": "Establishes total-price and related disclosure requirements for covered live-event ticket offers, including treatment of mandatory charges.",
+        },
+        {
+            "title": "16 CFR §255.5 — Disclosure of material connections",
+            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
+            "relevance": "Addresses disclosure of material connections relevant to compensated fintech recommendations and formation-concierge referral content.",
+        },
+        {
+            "title": "California Revenue and Taxation Code §6091 — Presumption and resale certificates",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6091.&lawCode=RTC",
+            "relevance": "Connects resale documentation to the presumption governing taxable retail sales and the seller's evidentiary position.",
+        },
+        {
+            "title": "California Revenue and Taxation Code §6092 — Resale certificate requirements",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6092.&lawCode=RTC",
+            "relevance": "Specifies requirements relevant to properly completed resale certificates for qualifying merchandise purchases.",
+        },
+        {
+            "title": "UCC §2-509 — Risk of loss in the absence of breach",
+            "url": "https://www.law.cornell.edu/ucc/2/2-509",
+            "relevance": "Provides the model-code framework for shipment and delivery risk allocation; the applicable state's enacted version controls the transaction.",
+        },
+    ],
+}

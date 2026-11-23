@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1756230,
+      "sha256": "767e0a5ff8a65ebb45b95717c434b5a8d5236b284e977404b6a1474dae655dc4"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2222358,
+      "sha256": "3617f3721b9a2874e81f70d6233fc6fdfc6fa39e99ec7d8d7834c08ef6c2a093"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 567051,
+      "sha256": "5d31e62abb394a515c1a0e4c9fe83bdbcad55e012ba95d277d023d16fa82aec2"
+    },
+    "book.epub": {
+      "bytes": 263143,
+      "sha256": "6e2e971c93651706a8967a26b97778243ca3dfdcd1f2a25f3765bc5a7d729be7"
+    },
+    "art/cover.svg": {
+      "bytes": 4385,
+      "sha256": "c008514cb813f1e705614a3575926845d1ce323ad4530727b41f26e0a245e638"
+    },
+    "art/scorecard.svg": {
+      "bytes": 57623,
+      "sha256": "0a32f8b11d6fc44a912f921358559f2f347293b4ae146d2a07289679ce8e0345"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11363,
+      "sha256": "b2b12020f16a66d09be1e5ce70f0e6f9d477e601732c7fd6f4bd9a3bb28a49c2"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7943,
+      "sha256": "e0afa5dfbb7758f76815f2f3944dfebf57ce521e15031288e5fc81867f254cfe"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12513,
+      "sha256": "2e0166ad068c5fea63e8e971f2810d09d1a8b43bc858b8205d9b49b83433a8b0"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9584,
+      "sha256": "c1e833004e7ff9bf8dd4920e7544551f0b6688cb95771b519891771333f36d99"
+    },
+    "art/diag_05.svg": {
+      "bytes": 9601,
+      "sha256": "295133486edcc7ef338ff596daad7893c11ce158a624e0fa0c99240abef774e1"
+    },
+    "art/diag_06.svg": {
+      "bytes": 10644,
+      "sha256": "353cd4f610dd7e45572d75ae8fc4240883d3ea74070c386d8c8a8ef48a57dfea"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8400,
+      "sha256": "7539c75468bd87f114d95b28ec559287c9acf0bfa7075fe5ecfc5f174623734a"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8220,
+      "sha256": "9b67dde93341ce4dc7eb6110b6b7d5bf6c3d017155c0cfd979d81d9187ada4dc"
+    }
+  }
+}

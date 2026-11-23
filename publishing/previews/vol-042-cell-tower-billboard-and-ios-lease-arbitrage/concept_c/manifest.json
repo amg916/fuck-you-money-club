@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_c",
+  "volume_id": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage",
+  "approved": false,
+  "edition_status": "concept_preview",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1797275,
+      "sha256": "bbc02c65e5db5edecea63ca0b3b9419050f306266cb90cfca25ce7b8a8af969a"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2283649,
+      "sha256": "c865e5b972e577a21ef622db01113565c395d17cc10c2cf8f6bb1fcc1295b89a"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 567821,
+      "sha256": "f7e1ce0cd30ff0ace333add3f35dced4270f34c8a871d906a771644e8beea356"
+    },
+    "book.epub": {
+      "bytes": 262862,
+      "sha256": "72383f068005587a3d24ecfdb05b823bfae054e18ce084c9001c5a49de41fee6"
+    },
+    "art/cover.svg": {
+      "bytes": 4382,
+      "sha256": "9ac98c2b82968890c8c19e91285ecbee8deb9149d7c110c5b64b8c2ef657e237"
+    },
+    "art/scorecard.svg": {
+      "bytes": 51089,
+      "sha256": "c84158b783822dd141c7097b13f9121d6ec93c1a931786acd33026844055c5f8"
+    },
+    "art/diag_01.svg": {
+      "bytes": 12030,
+      "sha256": "617f3d5e70b47e54b975d32e44b21dc0e1d64820fe87804f7a030faed45a9d7f"
+    },
+    "art/diag_02.svg": {
+      "bytes": 7980,
+      "sha256": "55477a82abc2efb1c346c9c7051effd6deb25b70c15318a45d90d63dd8ba4121"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12043,
+      "sha256": "eca44aa38759cae55920517fbd9d3d28198fc2e7cf02dfe3b39c2b541ccb48ab"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9812,
+      "sha256": "6b65d0093f42520a144340ea58e2774a76fd7c960cd5f01e5671e82d92d6c5e6"
+    },
+    "art/diag_05.svg": {
+      "bytes": 10075,
+      "sha256": "1b3099105a10d12d73d8e4ccdd042bc33f54856fc4a6a288569f0190127642bf"
+    },
+    "art/diag_06.svg": {
+      "bytes": 12187,
+      "sha256": "263d9b557db21048c4ffd846bd92fcfe5d9f73598b6a73eb12519b77f9dc4feb"
+    },
+    "art/diag_07.svg": {
+      "bytes": 8385,
+      "sha256": "0d48a04dc2277a14b208352ad613938b170d6366d1c1d15dc8b2135180a2ad75"
+    },
+    "art/diag_08.svg": {
+      "bytes": 8290,
+      "sha256": "6f00f42d2808c69df705028baab4b5731df253671162dbe499eddcdb518d9c8f"
+    }
+  }
+}

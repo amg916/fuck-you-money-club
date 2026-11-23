@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-parcel-to-retained-spread",
+      "chart_type": "process_flow",
+      "title": "Control Rights Before Selling the Spread",
+      "subtitle": "Five operating steps from a mapped parcel to collected operator revenue",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "This workflow serves telecom rights, billboard assignments, and industrial outdoor storage. First-deal planning remains 2–6 months. The scorecard counts earned spreads and fees, excluding institutional purchase principal and tenant gross billings.",
+      "caption": "A mapped opportunity becomes inventory only after rights, consents, permitted use, and an executable exit are documented.",
+      "stages": [
+        {
+          "label": "Map eligible parcels",
+          "value": "FCC ASR + DOT AADT",
+          "numeric_value": 1.0,
+          "detail": "Join FCC ASR records, state DOT annual average daily traffic layers, and assessor parcels in QGIS. Verify rooftop candidates separately because ASR is not a complete inventory of telecom installations."
+        },
+        {
+          "label": "Establish transferable control",
+          "value": "Title + options + consents",
+          "numeric_value": 2.0,
+          "detail": "Review recorded instruments, lease amendments, assignment limits, mortgage priority, and access rights. Use diligence-contingent control documents and identify required lender subordination, nondisturbance, and attornment agreements."
+        },
+        {
+          "label": "Underwrite the actual spread",
+          "value": "Cash-flow NPV + buyer bids",
+          "numeric_value": 3.0,
+          "detail": "Model escalators, termination, restoration, and collection risk in a spreadsheet. Test a 16×–22× telecom buyer multiple only as an illustrative sensitivity on buyer-accepted annual contractual rent; obtain written bids before relying on an exit value."
+        },
+        {
+          "label": "Clear site-specific execution risks",
+          "value": "Permits + environmental + access",
+          "numeric_value": 4.0,
+          "detail": "Confirm sign spacing and digital operation permissions, telecom access and utility easements, or IOS heavy-axle use and stormwater obligations. Commission Phase I work before executing an IOS master lease."
+        },
+        {
+          "label": "Close and reconcile collections",
+          "value": "Settlement ledger + yard billing",
+          "numeric_value": 5.0,
+          "detail": "Match settlement statements to earned assignment or buyout spreads. For IOS, reconcile contracted tenant receipts, master rent, and directly allocated property obligations before measuring retained spread; link RFID access to the authorized tenant roster."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-annual-parcel-cohort-funnel",
+      "chart_type": "funnel",
+      "title": "One Cohort, Seventeen Monetized Opportunities",
+      "subtitle": "Annual illustrative funnel supporting the Base operator-revenue mix",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "The same 400 unique parcel opportunities flow through every stage; each stage is a subset of the preceding stage. Conversions are planning assumptions, not observed performance. The cohort represents a mature annual operating period, not a promise to close within the first 30 days.",
+      "caption": "Seventeen outcomes comprise four telecom spread transactions, five billboard assignments, and eight IOS activations. The IOS revenue mix assumes twelve billed months per activated yard.",
+      "stages": [
+        {
+          "label": "Mapped opportunities",
+          "value": "400 unique parcel records",
+          "numeric_value": 400.0,
+          "detail": "Deduplicate by parcel and proposed rights package before counting. Capture source date, owner contact route, traffic or telecom evidence, and the proposed use."
+        },
+        {
+          "label": "Desktop-qualified opportunities",
+          "value": "200 parcels; 50% of mapped",
+          "numeric_value": 200.0,
+          "detail": "Remove incompatible zoning, unsuitable access, obvious sign-spacing conflicts, and absent buyer demand. Retain a recorded reason for every exclusion."
+        },
+        {
+          "label": "Owner-engaged opportunities",
+          "value": "80 parcels; 40% of qualified",
+          "numeric_value": 80.0,
+          "detail": "Confirm the owner's identity and transaction interest, obtain relevant leases, and establish a credible route to inspect title and site conditions."
+        },
+        {
+          "label": "Controlled diligence opportunities",
+          "value": "24 parcels; 30% of engaged",
+          "numeric_value": 24.0,
+          "detail": "Secure documented diligence access and conditional control where appropriate. Obtain preliminary counterparty economics before ordering expensive reports or committing deposits."
+        },
+        {
+          "label": "Monetized opportunities",
+          "value": "17 parcels; 70.83% of controlled",
+          "numeric_value": 17.0,
+          "detail": "Close four telecom transactions and five billboard assignments; activate eight leased yards. Overall cohort conversion is 4.25%, with annual IOS revenue dependent on full-year occupancy and payment."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-owner-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "$535,000 Operator Revenue to $214,000 Owner Profit",
+      "subtitle": "Six bars reconcile the Base scenario to a 40.0% net margin",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Formula v2.0 Base totals are canonical; the four expense allocations are illustrative. The first bar is the opening total, middle bars are signed deductions, and the final bar is the ending total rather than another additive movement. Operator revenue already excludes acquisition principal, tenant gross billings, and IOS property costs used to compute retained lease spreads.",
+      "caption": "$535,000 − $90,000 − $75,000 − $60,000 − $96,000 = $214,000; $214,000 / $535,000 = 40.0%. The $96,000 recurring-overhead allocation equals $8,000 monthly; other deductions are variable transaction expenses.",
+      "stages": [
+        {
+          "label": "Gross operator revenue",
+          "value": "$535,000 opening total",
+          "numeric_value": 535000.0,
+          "detail": "Combine $260,000 telecom buyout spreads, $95,000 billboard assignment fees, and $180,000 retained IOS spreads. These are operator-level economics, not the underlying property or easement transaction values."
+        },
+        {
+          "label": "Origination and closing support",
+          "value": "−$90,000 variable expense",
+          "numeric_value": -90000.0,
+          "detail": "Allocate transaction-specific sourcing and closing support only after verifying the permitted compensation structure. Do not duplicate contractor costs assigned to recurring overhead."
+        },
+        {
+          "label": "Title, legal, and consent execution",
+          "value": "−$75,000 variable expense",
+          "numeric_value": -75000.0,
+          "detail": "Budget title work, instrument drafting, lender negotiations, recording coordination, and failed-deal legal costs outside the already calculated acquisition spread."
+        },
+        {
+          "label": "Site and permit diligence",
+          "value": "−$60,000 variable expense",
+          "numeric_value": -60000.0,
+          "detail": "Allocate surveys, Phase I reports, zoning verification, engineering checks, and permit diligence. Include abandoned opportunity costs rather than charging only completed deals."
+        },
+        {
+          "label": "Recurring operating overhead",
+          "value": "−$96,000 annual overhead",
+          "numeric_value": -96000.0,
+          "detail": "Reserve $8,000 monthly for contracted administration, software, insurance, accounting, travel, and routine operating support, with no duplication of variable expenses."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$214,000 ending total",
+          "numeric_value": 214000.0,
+          "detail": "The canonical Base result is owner profit after $321,000 modeled operating expenses. Personal taxes, owner distributions, and financing principal movements are not additional operating-expense bars."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-five-operator-revenue-rails",
+      "chart_type": "horizontal_bars",
+      "title": "Five Revenue Rails, One $535,000 Base",
+      "subtitle": "Illustrative annual dollar yield by sub-niche, not asset investment returns",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Bar values are annual operator-revenue contributions in USD, not percentage yields or underlying asset prices. Deal counts and unit spreads are illustrative allocations of the canonical Base total. The eight IOS yards each contribute twelve months of retained spread in this mature-year model.",
+      "caption": "Scenario anchors remain Conservative $120,000 revenue at 28% for $33,600 owner profit; Base $535,000 at 40.0% for $214,000; Scaled $950,000 at 52% for $494,000. Conservative and Base use four people; Scaled uses six.",
+      "stages": [
+        {
+          "label": "Ground-tower easement spreads",
+          "value": "2 transactions × $75,000",
+          "numeric_value": 150000.0,
+          "detail": "Retain $150,000 after the modeled acquisition consideration embedded in each buyout spread, before the waterfall's separate operating expenses. Collect through documented settlement disbursements rather than counting buyer principal."
+        },
+        {
+          "label": "Rooftop telecom rights spreads",
+          "value": "2 transactions × $55,000",
+          "numeric_value": 110000.0,
+          "detail": "Retain $110,000 from transferable rooftop rights. Price roof replacement access, relocation provisions, building lender consent, and operator termination rights before accepting the acquisition obligation."
+        },
+        {
+          "label": "Digital-billboard assignments",
+          "value": "5 assignments × $19,000",
+          "numeric_value": 95000.0,
+          "detail": "Earn $95,000 in documented assignment fees for usable ground-control packages. Verify permit transfer procedures and lease consent separately; traffic volume does not establish transferable sign rights."
+        },
+        {
+          "label": "Fleet drop-yard master leases",
+          "value": "4 yards × $25,000 annually",
+          "numeric_value": 100000.0,
+          "detail": "Retain $100,000 after master rent and directly allocated property obligations. Bill fleet tenants through authorized ACH instructions and reconcile settled receipts against contract schedules and access records."
+        },
+        {
+          "label": "Equipment-storage master leases",
+          "value": "4 yards × $20,000 annually",
+          "numeric_value": 80000.0,
+          "detail": "Retain $80,000 after master rent and directly allocated property obligations. Monitor permitted storage categories, surface damage, delinquency, and exposure to uninsured tenant equipment losses."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-rights-statutes-and-site-checks",
+      "chart_type": "decision_tree",
+      "title": "Four Checks Before Irreversible Exposure",
+      "subtitle": "Proceed on documented evidence; resolve defects or reject the parcel",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "These four sequential checks apply according to transaction type and jurisdiction. A failed check routes the opportunity to documented remediation or rejection, not automatic execution. Cited provisions establish specific requirements or frameworks; they do not replace parcel-level determinations.",
+      "caption": "Capital follows confirmed capacity, priority, permitted use, and site condition. A favorable exit multiple cannot repair an unassignable right or prohibited yard operation.",
+      "stages": [
+        {
+          "label": "Capacity and licensed activity",
+          "value": "Proceed if transaction role is verified",
+          "numeric_value": 1.0,
+          "detail": "Map principal activity, options, referrals, and services performed for others against the applicable state rules. California Business and Professions Code 10130 and 10131 illustrate the licensing boundary; do not assume every option assignment qualifies for an exemption."
+        },
+        {
+          "label": "Priority and required consents",
+          "value": "Proceed if enforceable rights survive",
+          "numeric_value": 2.0,
+          "detail": "Inspect title, mortgage priority, termination clauses, assignment restrictions, and access easements. Obtain required lender and lessor consents and negotiate an effective SNDA where needed; the SNDA requirement depends on documents and risk, not a universal statute."
+        },
+        {
+          "label": "Sign and telecom permissions",
+          "value": "Proceed if the proposed use is permitted",
+          "numeric_value": 3.0,
+          "detail": "For covered highway signs, apply 23 U.S.C. 131, 23 CFR 750.705–750.706, state DOT spacing criteria, and local digital-sign rules. For telecom, check 47 CFR 17.4 applicability and local siting requirements within 47 U.S.C. 332(c)(7)."
+        },
+        {
+          "label": "IOS environmental and axle suitability",
+          "value": "Proceed if site obligations are costed",
+          "numeric_value": 4.0,
+          "detail": "Before executing the master lease, obtain Phase I screening and verify heavy-vehicle zoning, turning paths, surface capacity, drainage, and fire access. Scope 40 CFR Part 312 when applicable and assess industrial stormwater coverage under 40 CFR 122.26."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-person-pod-six-person-scale",
+      "chart_type": "org_architecture",
+      "title": "Four Core Seats; Two Additions at Scale",
+      "subtitle": "Conservative and Base use 1 FT + 3 C; Scaled uses 2 FT + 4 C",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT denotes a full-time operator and C denotes a contracted seat. The first four seats form the four-person pod; the last two activate only in the six-person Scaled scenario. Specialist reports are purchased services, not additional standing pod seats.",
+      "caption": "Keep signing authority and cash exposure with the principal. Automate evidence assembly and recurring billing, while retaining human review of rights and exceptions.",
+      "stages": [
+        {
+          "label": "Principal and acquisition lead",
+          "value": "Core seat 1; full-time operator",
+          "numeric_value": 1.0,
+          "detail": "Own pricing, capital commitments, counterparty selection, and final execution. Approve acquisition assumptions against written demand and review the operator-revenue bridge before signing."
+        },
+        {
+          "label": "Rights and transaction counsel",
+          "value": "Core seat 2; contracted specialist",
+          "numeric_value": 1.0,
+          "detail": "Review licensed-activity questions, title exceptions, assignment language, lender consent, and SNDA terms. Maintain a document checklist tied to each parcel."
+        },
+        {
+          "label": "GIS and site diligence coordinator",
+          "value": "Core seat 3; contracted specialist",
+          "numeric_value": 1.0,
+          "detail": "Maintain QGIS parcel screening and coordinate surveys, environmental professionals, zoning confirmation, and DOT permit checks without substituting desktop screening for required field work."
+        },
+        {
+          "label": "Billing and transaction operations",
+          "value": "Core seat 4; contracted specialist",
+          "numeric_value": 1.0,
+          "detail": "Reconcile settlement statements, tenant invoices, master-rent schedules, insurance evidence, and access permissions. Escalate collection exceptions rather than automatically changing contractual rights."
+        },
+        {
+          "label": "Portfolio operating lead",
+          "value": "Scaled addition; second full-time operator",
+          "numeric_value": 1.0,
+          "detail": "Take daily responsibility for active yards, renewal calendars, tenant exceptions, and vendor performance so the principal can maintain acquisition discipline."
+        },
+        {
+          "label": "Dedicated sourcing coordinator",
+          "value": "Scaled addition; fourth contracted specialist",
+          "numeric_value": 1.0,
+          "detail": "Expand owner contact coverage and buyer matching using approved transaction roles and compensation structures. Preserve parcel-level attribution and prevent duplicate acquisition outreach."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-four-buckets",
+      "chart_type": "stacked_comparison",
+      "title": "Deploy $12,000–$60,000 Without Buying the Whole Asset",
+      "subtitle": "Four startup buckets shown at a $36,000 planning allocation",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values show the $36,000 planning allocation. Matched lean allocations total $12,000; matched expanded allocations total $60,000. These budgets fund diligence, conditional control, and runway, not full easement purchases or major yard construction. Capital deployment is not automatically a current-period operating expense.",
+      "caption": "The lean budget depends on low deposits, staged reports, and limited cash burn. First-deal timing is 2–6 months and monthly operating expense planning is $2,000–$12,000; the startup range does not cover every timing and burn combination.",
+      "stages": [
+        {
+          "label": "Rights and transaction setup",
+          "value": "$8,000 planning allocation",
+          "numeric_value": 8000.0,
+          "detail": "Lean $3,000; expanded $12,000. Fund entity-specific contracts, title review, licensing analysis, consent planning, and documented control instruments before committing to acquisition obligations."
+        },
+        {
+          "label": "Site and permit investigation",
+          "value": "$10,000 planning allocation",
+          "numeric_value": 10000.0,
+          "detail": "Lean $3,000; expanded $16,000. Stage Phase I work, surveys, drainage review, sign eligibility checks, and heavy-vehicle use verification by parcel priority."
+        },
+        {
+          "label": "Conditional control and deposits",
+          "value": "$12,000 planning allocation",
+          "numeric_value": 12000.0,
+          "detail": "Lean $4,000; expanded $22,000. Reserve cash for negotiated options, refundable deposits where available, and initial yard security deposits; track refund conditions and expiry dates separately."
+        },
+        {
+          "label": "Systems and working reserve",
+          "value": "$6,000 planning allocation",
+          "numeric_value": 6000.0,
+          "detail": "Lean $2,000; expanded $10,000. Fund GIS hosting, document storage, billing setup, insurance activation, and operating liquidity. Stress-test slower closings before treating this reserve as sufficient runway."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-evidence-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to a Defensible Acquisition Pipeline",
+      "subtitle": "Four weekly milestones produce evidence, not an assumed first closing",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "The first sprint establishes a working acquisition system. A first completed deal remains a 2–6 month planning horizon. Weekly activity targets are illustrative and separate from the mature annual cohort used in the funnel.",
+      "caption": "End the month with priced, documented opportunities and explicit unresolved conditions; do not accelerate execution by skipping lender, permit, or environmental work.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Choose one market and map 50 parcels",
+          "numeric_value": 7.0,
+          "detail": "Select a primary revenue rail and buyer profile. Load FCC ASR or state DOT AADT layers into QGIS, verify local use criteria, and create parcel records with source dates and ownership evidence."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Screen 20 parcels and seek 10 owner conversations",
+          "numeric_value": 14.0,
+          "detail": "Prioritize transferable rights and demonstrated buyer demand. Request leases and amendments, document owner authority, and record exclusion reasons without treating outreach targets as achieved conversions."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Price three candidates and assemble diligence scopes",
+          "numeric_value": 21.0,
+          "detail": "Model downside rent and termination assumptions, request buyer indications, identify lender requirements, and obtain title, Phase I, survey, or permit work proposals appropriate to each candidate."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Advance one conditional control package",
+          "numeric_value": 30.0,
+          "detail": "Negotiate a diligence-contingent option or equivalent control structure, assign consent owners, and schedule specialist work. Test settlement and billing ledgers using synthetic entries; execute no IOS master lease before environmental and heavy-axle checks."
+        }
+      ]
+    }
+  ]
+}

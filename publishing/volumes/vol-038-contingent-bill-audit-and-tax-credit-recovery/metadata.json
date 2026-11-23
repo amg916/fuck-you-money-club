@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-038-contingent-bill-audit-and-tax-credit-recovery",
+  "volume_slug": "vol-038-contingent-bill-audit-and-tax-credit-recovery",
+  "volume_number": 38,
+  "site_ui": {
+    "cover": [
+      "BILL-AUDIT &",
+      "TAX-CREDIT",
+      "RECOVERY"
+    ],
+    "deck": [
+      "AUDIT THE BILL. DOCUMENT ELIGIBILITY.",
+      "RECONCILE CONTINGENT RECOVERIES."
+    ],
+    "lead": "FedEx/UPS Parcel Refund Audits, Utility & Telecom Tariff Reviews, Property-Tax Appeals & Specialist-Led WOTC and Cost-Segregation Engagements",
+    "summary": "Review authorized billing records for recoverable errors, verify carrier refund windows and tariff terms, and route property-tax and tax-benefit work to qualified specialists. Separate refunds, credits, and depreciation timing benefits while documenting fee permissions, eligibility, and realized client savings.",
+    "chapters": [
+      "Contingent bill-audit & tax-benefit recovery models",
+      "Corporate payers, account authority & specialist partners",
+      "Recovery splits, collection lags & realized savings math",
+      "Secure invoice ingestion & lean audit startup stack",
+      "Refund exclusions, missed deadlines & unsupported claims",
+      "Parcel spend triggers & first audit mandates",
+      "FedEx/UPS refund APIs & claim reconciliation",
+      "Utility meters, telecom tariffs & contract benchmarks",
+      "Property-tax appeal deadlines & representation rules",
+      "WOTC eligibility, cost-seg studies & permitted fee splits",
+      "Audit pods, evidence retention & recurring reviews",
+      "First 30-day authorized-recovery launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Identify parcel, utility & tax-review opportunities"
+      ],
+      [
+        "AUTHORIZE",
+        "Secure records access & permitted fee terms"
+      ],
+      [
+        "AUDIT",
+        "Validate invoice errors, tariffs & eligibility"
+      ],
+      [
+        "DOCUMENT",
+        "Build evidence with qualified tax specialists"
+      ],
+      [
+        "SUBMIT",
+        "File authorized claims within applicable deadlines"
+      ],
+      [
+        "RECONCILE",
+        "Verify realized recoveries & earned fee splits"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "CONTINGENT CORPORATE BILL-AUDIT & TAX-CREDIT RECOVERY",
+  "subtitle": "The Complete Playbook for Contingent Corporate Bill-Audit & Tax-Credit Recovery: $110,000-$900,000 USD in Annual Operator Revenue, a 1 FT + 3 C (4 People) Core Pod, and a Six-Person Scaled Model",
+  "chapter_count": 12,
+  "total_word_count": 79217,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 94,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T15:15:32Z"
+}

@@ -1,0 +1,1404 @@
+from __future__ import annotations
+
+
+def build_volume_038_workbook() -> dict:
+    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
+        return {
+            "name": name,
+            "type": input_type,
+            "prompt": prompt,
+            "example": example,
+        }
+
+    return {
+        "workbook_id": "wb-038-contingent-bill-audit-and-tax-credit-recovery",
+        "volume_id": "vol-038-contingent-bill-audit-and-tax-credit-recovery",
+        "title": "Contingent Corporate Bill-Audit & Tax-Credit Recovery — Operator Companion Workbook",
+        "subtitle": (
+            "6 Printable Operator Worksheets for Counterparty Underwriting, "
+            "Recovery Economics, Evidence-Led Execution, Statutory Controls, "
+            "Carrier and Utility Automation, and a Transferable Small-Team Recovery Pod"
+        ),
+        "worksheets": [
+            {
+                "worksheet_id": "ws-01",
+                "number": 1,
+                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
+                "purpose": (
+                    "Qualify recoverable corporate expenses before purchasing specialist time. "
+                    "Separate measurable carrier, utility, property-assessment, and employment-credit "
+                    "opportunities from speculative savings; establish account authority, contract "
+                    "eligibility, evidence quality, collection timing, and an operator fee that "
+                    "survives both disputes and delivery costs."
+                ),
+                "chapter_ref": "Q1, Q2, Q6",
+                "instructions": [
+                    (
+                        "Create one opportunity record for each client entity, account, recovery "
+                        "category, and assessment or invoice period. Obtain signed authority and "
+                        "immutable baseline invoices before sharing findings, contacting counterparties, "
+                        "or requesting access to client account systems."
+                    ),
+                    (
+                        "Read the actual carrier agreement, utility tariff, assessment notice, or "
+                        "credit statute before applying a recovery percentage. Record exclusions, "
+                        "waivers, filing windows, account ownership, and specialist requirements; "
+                        "never substitute a public marketing page for the governing document."
+                    ),
+                    (
+                        "Estimate recoverable value from a documented sample and distinguish issued "
+                        "credits from merely alleged errors. Model the operator's contractual share "
+                        "separately from client benefits, then subtract specialist delivery costs "
+                        "and expected rework before qualifying the spread."
+                    ),
+                    (
+                        "Interview accounts payable, procurement, facilities, payroll, and the "
+                        "authorized tax practitioner as relevant. Reconcile their answers against "
+                        "documents, identify incumbent auditors, and assign ownership for duplicate "
+                        "claims, prior appeals, disputed baselines, and delayed counterparty responses."
+                    ),
+                    (
+                        "Advance only opportunities with an identified payer, defensible entitlement, "
+                        "accessible evidence, and executable fee terms. Route tax-linked compensation "
+                        "for practitioner review independently of commercial bill auditing, and "
+                        "document a narrower paid-processing scope when contingent compensation is restricted."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Client entity, account map, and signing authority",
+                        "textarea",
+                        (
+                            "Identify the contracting entity, covered subsidiaries, account numbers, "
+                            "authorized signer, and records custodian. Explain how authority will "
+                            "be verified and which accounts remain outside the signed engagement "
+                            "until separately documented."
+                        ),
+                        (
+                            "Harbor Components LLC covers two facilities and parcel accounts ending "
+                            "1842 and 9916. Its controller signs the engagement and account-specific "
+                            "Letters of Authorization. A third facility belongs to Harbor Realty "
+                            "LLC and stays excluded until that entity signs. Accounts payable "
+                            "provides twelve months of dated invoice exports."
+                        ),
+                    ),
+                    field(
+                        "Recovery lane and counterparty entitlement",
+                        "textarea",
+                        (
+                            "Specify the recoverable charge, governing entitlement, counterparty "
+                            "responsible for resolution, and recovery period. Distinguish historical "
+                            "refunds, prospective tariff savings, assessment reductions, and tax "
+                            "credits because their evidence and fee treatments differ."
+                        ),
+                        (
+                            "The initial lane is duplicate utility demand billing for meters "
+                            "A104 and A105, not general energy procurement. Twelve invoices show "
+                            "$42,000 of potentially duplicated charges. The municipal utility's "
+                            "billing supervisor receives the evidence package; prospective tariff "
+                            "changes require a separate baseline schedule and savings calculation."
+                        ),
+                    ),
+                    field(
+                        "Baseline integrity and sample extrapolation",
+                        "textarea",
+                        (
+                            "Describe the invoice population, sample selection method, excluded "
+                            "periods, duplicate removal, and reconciliation controls. Show how the "
+                            "sample supports a qualified estimate without presenting extrapolated "
+                            "recoveries as approved credits or earned revenue."
+                        ),
+                        (
+                            "A sample of 500 shipments from 10,000 annual shipments contains "
+                            "$1,200 of apparent billing errors. Multiplying by twenty suggests "
+                            "$24,000 for screening only. The analyst stratifies by service, month, "
+                            "and account before expanding review; the proposal labels $24,000 "
+                            "as an estimate requiring shipment-level validation."
+                        ),
+                    ),
+                    field(
+                        "Carrier guarantees, waivers, and claim windows",
+                        "textarea",
+                        (
+                            "Record the exact FedEx or UPS contract provision, service eligibility, "
+                            "effective dates, exclusions, filing deadline, and authorized submission "
+                            "method. Separate delivery-guarantee requests from duplicate-charge or "
+                            "rating disputes, which may follow different contractual procedures."
+                        ),
+                        (
+                            "The illustrative parcel agreement waives delivery-guarantee refunds "
+                            "for negotiated services but preserves billing-error disputes. The "
+                            "analyst excludes late-delivery claims and reviews duplicate charges "
+                            "instead. A contract-specific deadline register records each invoice's "
+                            "last submission date; the pod does not apply one carrier's timing "
+                            "rule to another account."
+                        ),
+                    ),
+                    field(
+                        "Utility, waste, and telecom tariff fit",
+                        "textarea",
+                        (
+                            "Identify the operative tariff or service schedule, physical equipment "
+                            "supporting eligibility, required meter evidence, and contract-change "
+                            "mechanism. Explain whether savings arise from a billing correction, "
+                            "a new rate election, or a measurable service reduction."
+                        ),
+                        (
+                            "A facility's cooling-tower deduction requires a qualifying submeter "
+                            "and accepted readings under the local sewer schedule. Historical "
+                            "invoices alone cannot prove evaporation volume. The operator collects "
+                            "installation records and monthly readings, then distinguishes a "
+                            "$9,600 refund request from a prospective $800 monthly charge reduction."
+                        ),
+                    ),
+                    field(
+                        "Property assessment appeal qualification",
+                        "textarea",
+                        (
+                            "Capture parcel ownership, jurisdiction, assessment date, appeal "
+                            "deadline, representation requirements, and valuation evidence. Separate "
+                            "assessed-value reductions from actual tax savings and identify other "
+                            "advisers whose existing engagement could create overlapping compensation."
+                        ),
+                        (
+                            "A Texas warehouse has an $8,000,000 assessment and a supported "
+                            "$7,400,000 comparison value. At an illustrative 2.2% combined rate, "
+                            "the potential annual tax difference is $13,200, not $600,000. "
+                            "A qualified local representative checks the notice, filing deadline, "
+                            "existing engagement, and applicable licensing requirements before submission."
+                        ),
+                    ),
+                    field(
+                        "WOTC cohort eligibility and processing scope",
+                        "textarea",
+                        (
+                            "Identify hiring dates, applicable statutory authorization, targeted-group "
+                            "documentation, certification workflow, and practitioner responsibilities. "
+                            "Keep employer tax benefits separate from processing revenue and state "
+                            "the permitted fee basis before promising a credit-linked compensation arrangement."
+                        ),
+                        (
+                            "A historical 2025 cohort contains 100 employees whose certification "
+                            "records require review. The operator charges an agreed $100 per "
+                            "completed processing file, yielding $10,000 if all deliverables qualify "
+                            "for billing. For later hiring dates, the practitioner verifies any "
+                            "enacted extension of 26 U.S.C. §51(c)(4) before activating screening."
+                        ),
+                    ),
+                    field(
+                        "Contingency spread and retained share",
+                        "textarea",
+                        (
+                            "Calculate the operator's fee from eligible client recoveries, then "
+                            "deduct direct specialist and delivery costs. State the contractual "
+                            "earning event, collection trigger, dispute allocation, and minimum "
+                            "acceptable contribution for the proposed engagement."
+                        ),
+                        (
+                            "An $80,000 eligible utility refund at a 35% retained share produces "
+                            "$28,000 of operator revenue. Specialist work costs $7,500 and "
+                            "evidence preparation costs $2,500, leaving $18,000 before shared "
+                            "overhead. The agreement earns the fee on an accepted, applied "
+                            "client credit and invoices after supporting proof arrives."
+                        ),
+                    ),
+                    field(
+                        "Counterparty timing and collection confidence",
+                        "textarea",
+                        (
+                            "Assess counterparty responsiveness, historical processing duration, "
+                            "client payment behavior, disputed amounts, and escalation contacts. "
+                            "Convert these observations into a dated collection range rather "
+                            "than treating an accepted recovery as immediately available operating cash."
+                        ),
+                        (
+                            "The municipal utility estimates sixty days to review the package "
+                            "and thirty additional days to apply an accepted credit. The client "
+                            "then pays the operator within fifteen days. The cash plan therefore "
+                            "allows 105 days from submission, while the claim ledger separately "
+                            "tracks acceptance, application, invoicing, and payment."
+                        ),
+                    ),
+                    field(
+                        "Qualification decision and disqualifying conditions",
+                        "textarea",
+                        (
+                            "Summarize the evidence-based decision, unresolved dependencies, named "
+                            "owners, and latest acceptable resolution dates. Define objective "
+                            "conditions that stop work, including absent authority, expired "
+                            "deadlines, duplicate representation, uneconomic delivery, and unsupported benefit assumptions."
+                        ),
+                        (
+                            "Advance the $80,000 utility case after the controller signs both "
+                            "meter authorizations and the specialist confirms tariff entitlement. "
+                            "Exclude parcel guarantee claims because the agreement waives them. "
+                            "Stop additional utility analysis if documentary support falls below "
+                            "$35,000 of eligible recovery or specialist costs exceed the approved "
+                            "$7,500 budget without revised economics."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The engagement owner signs a qualification record containing verified "
+                    "authority, baseline evidence, account-specific entitlement, deadline ownership, "
+                    "a documented fee basis, and positive delivery contribution. No excluded "
+                    "lane enters production merely because another lane qualified."
+                ),
+            },
+            {
+                "worksheet_id": "ws-02",
+                "number": 2,
+                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
+                "purpose": (
+                    "Translate recovery opportunities into recognized operator revenue, cash "
+                    "requirements, and owner profit without counting client bills or credits "
+                    "as sales. Reconcile all three canonical scenarios, model delayed collections, "
+                    "and isolate operating reserves from any client-owned funds or unearned fees."
+                ),
+                "chapter_ref": "Q3, Q4",
+                "instructions": [
+                    (
+                        "Build separate schedules for historical recovery fees, verified monthly "
+                        "shared savings, and completed WOTC processing services. For every line, "
+                        "record client benefit, retained share or fixed price, recognition basis, "
+                        "invoice timing, cash receipt, and associated delivery expense."
+                    ),
+                    (
+                        "Reproduce the canonical Conservative, Base, and Scaled totals exactly "
+                        "before testing sensitivities. Treat the illustrative channel mixes below "
+                        "as reconciling allocations rather than additional source forecasts; scenario "
+                        "changes must remain visibly separate from the canonical comparison."
+                    ),
+                    (
+                        "Distinguish core recurring overhead from total expenses used to calculate "
+                        "owner net profit. Contractor delivery, specialist review, acquisition, "
+                        "rework, insurance, and transaction costs belong in the annual cost bridge "
+                        "even when omitted from a narrow monthly overhead estimate."
+                    ),
+                    (
+                        "Model cash using collection dates rather than claim approval dates. "
+                        "Exclude client refund balances from available runway, document restricted "
+                        "reserve treatment, and use a weekly cash schedule to expose the combined "
+                        "effect of delayed refunds and contractor payment commitments."
+                    ),
+                    (
+                        "Have the responsible accountant review principal-versus-agent treatment, "
+                        "variable consideration, and service completion evidence. A thirty-six-month "
+                        "shared-savings term establishes a measurement period; it does not permit "
+                        "booking all future monthly fees when the contract is signed."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Recognized revenue perimeter and retained-share mapping",
+                        "textarea",
+                        (
+                            "Define what the operator controls and earns in each recovery lane. "
+                            "Identify client-owned amounts, retained_share assumptions, pass-through "
+                            "items, and the accountant's ASC 606 assessment so gross billings "
+                            "cannot inflate recognized operator revenue."
+                        ),
+                        (
+                            "For the Base allocation, retained_share equals 0.35 on $600,000 "
+                            "of eligible refunds and 0.40 on $600,000 of verified annual "
+                            "savings. These produce $210,000 and $240,000 of operator revenue. "
+                            "Completed processing adds $55,000. Client benefits and underlying "
+                            "utility or freight bills never become an extra revenue line."
+                        ),
+                    ),
+                    field(
+                        "Conservative scenario reconciliation",
+                        "textarea",
+                        (
+                            "Reconcile annual revenue, expenses, owner net profit, margin, and "
+                            "staffing to the canonical Conservative case. Show the channel "
+                            "allocation explicitly and identify which costs are already included "
+                            "so they are not deducted twice."
+                        ),
+                        (
+                            "Illustrative allocation: $200,000 recovered at 30% yields $60,000; "
+                            "$100,000 verified savings at 40% yields $40,000; 100 processing "
+                            "files at $100 yield $10,000. Revenue totals $110,000. Expenses "
+                            "of $77,000 leave $33,000 owner net profit, exactly 30%, with "
+                            "one full-time employee and three contractors."
+                        ),
+                    ),
+                    field(
+                        "Base scenario reconciliation",
+                        "textarea",
+                        (
+                            "Reconcile the Base case using distinct earned-fee streams and a "
+                            "complete annual expense bridge. Preserve the exact canonical profit "
+                            "and margin, and distinguish modeled annual delivery capacity from "
+                            "the number of people on the pod."
+                        ),
+                        (
+                            "Refund shares contribute $210,000, shared savings contribute $240,000, "
+                            "and 550 completed processing files at $100 contribute $55,000. "
+                            "The $505,000 total less $287,850 of expenses equals $217,150 "
+                            "owner net profit. Dividing $217,150 by $505,000 gives 43.0%. "
+                            "Staffing remains one full-time employee plus three contractors."
+                        ),
+                    ),
+                    field(
+                        "Scaled small-team scenario reconciliation",
+                        "textarea",
+                        (
+                            "Reproduce the Scaled revenue, expense, margin, profit, and six-person "
+                            "staffing totals. Explain the operational capacity assumptions behind "
+                            "the illustration without suggesting that more client spending itself "
+                            "creates additional recognized operator revenue."
+                        ),
+                        (
+                            "Illustrative allocation: $1,000,000 refunded at 35% yields $350,000; "
+                            "$1,100,000 verified savings at 40% yields $440,000; 1,100 completed "
+                            "files at $100 yield $110,000. Revenue is $900,000. Expenses "
+                            "of $396,000 leave $504,000, or 56%, with two full-time employees "
+                            "and four contractors, totaling six people."
+                        ),
+                    ),
+                    field(
+                        "Thirty-six-month shared-savings waterfall",
+                        "textarea",
+                        (
+                            "Specify the normalized baseline, measurement adjustments, monthly "
+                            "client savings, operator share, and thirty-six-month duration. Describe "
+                            "how closures, volume changes, tariff revisions, reversals, and "
+                            "termination affect each month's verified fee and recognition."
+                        ),
+                        (
+                            "Verified savings of $50,000 monthly at a 40% operator share "
+                            "produce a $20,000 monthly fee and $240,000 over twelve measured "
+                            "months. If sustained for all thirty-six months, fees total $720,000. "
+                            "Only earned periods enter current revenue; production-volume declines "
+                            "are normalized rather than mislabeled as tariff savings."
+                        ),
+                    ),
+                    field(
+                        "Core overhead versus total expense bridge",
+                        "textarea",
+                        (
+                            "List recurring core overhead separately from variable delivery and "
+                            "other annual expenses. Reconcile the complete expense total to "
+                            "the selected scenario, keeping the published monthly operating "
+                            "range distinct from all-in costs of earning revenue."
+                        ),
+                        (
+                            "A Base illustration uses $6,500 monthly core overhead, or $78,000 "
+                            "annually. Add $125,000 contractor delivery, $35,000 acquisition, "
+                            "$25,000 specialist review, and $24,850 other operating costs. "
+                            "Total expenses equal $287,850. The $1,500–$9,500 monthly core "
+                            "range is therefore not a ceiling on total scenario expenses."
+                        ),
+                    ),
+                    field(
+                        "Startup capital and delayed-collection runway",
+                        "textarea",
+                        (
+                            "Choose startup funding within the stated range and schedule setup "
+                            "spending, recurring burn, restricted reserves, and the first expected "
+                            "collection. Calculate remaining runway under a delayed-refund case "
+                            "without assuming unsigned deals provide usable cash."
+                        ),
+                        (
+                            "Start with $35,000, spend $4,500 on setup, and ring-fence $1,500 "
+                            "for fee reversals. Deployable cash is $29,000, supporting about "
+                            "4.46 months at $6,500 core burn before variable costs. A "
+                            "seventy-five-day wait consumes $16,250 of core cash; committed "
+                            "specialist payments must be added separately."
+                        ),
+                    ),
+                    field(
+                        "Client funds, reserve ownership, and release controls",
+                        "textarea",
+                        (
+                            "State who receives refunds, whether any client money enters "
+                            "operator accounts, and how reserves are funded and released. "
+                            "If custodial handling is proposed, identify the required contractual, "
+                            "banking, accounting, and jurisdiction-specific review before accepting funds."
+                        ),
+                        (
+                            "The utility pays an $80,000 refund directly to the client, "
+                            "and the operator invoices its earned $28,000 fee separately. "
+                            "A $1,500 operator-funded reversal reserve remains unavailable for "
+                            "routine spending until the documented exposure expires. Client "
+                            "refunds never finance payroll, and the operator offers no custodial "
+                            "account without a separately reviewed arrangement."
+                        ),
+                    ),
+                    field(
+                        "Receivables aging and collection sensitivity",
+                        "textarea",
+                        (
+                            "Calculate average receivables using recognized fee revenue and "
+                            "collection duration, then compare the result with available working "
+                            "capital. Keep collection timing sensitivities separate from changes "
+                            "in entitlement, recognized revenue, and expected credit losses."
+                        ),
+                        (
+                            "The Base refund-fee stream averages $17,500 monthly from $210,000 "
+                            "annual revenue. At an illustrative sixty-day collection cycle, "
+                            "steady-state receivables approximate $35,000 using thirty-day months. "
+                            "At ninety days they approximate $52,500, requiring $17,500 more "
+                            "working capital before considering savings-fee receivables, tax-processing "
+                            "invoices, or overdue balances."
+                        ),
+                    ),
+                    field(
+                        "Downside sensitivity and economic stop rule",
+                        "textarea",
+                        (
+                            "Stress a specific engagement for lower eligible recovery, higher "
+                            "specialist expense, and slower cash collection. Show contribution "
+                            "before overhead and define a documented decision rule without "
+                            "overwriting the three canonical annual scorecard scenarios."
+                        ),
+                        (
+                            "If the $80,000 utility estimate falls to $40,000, the 35% "
+                            "fee becomes $14,000. Original delivery costs of $10,000 leave "
+                            "$4,000 before overhead; an added $5,000 specialist requirement "
+                            "would make contribution negative $1,000. Pause incremental work "
+                            "and renegotiate scope rather than treating the original $28,000 "
+                            "fee estimate as collectible."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The finance owner verifies exact canonical totals of $33,000, $217,150, "
+                    "and $504,000 annual owner net profit, signs the revenue-versus-client-benefit "
+                    "mapping, and confirms that dated operating commitments fit available "
+                    "operator cash without using client funds."
+                ),
+            },
+            {
+                "worksheet_id": "ws-03",
+                "number": 3,
+                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
+                "purpose": (
+                    "Build a reproducible path from authorized invoice intake to collected "
+                    "operator fees. Use immutable evidence, deterministic claim identities, "
+                    "controlled state transitions, and independent review to prevent duplicate "
+                    "submissions, unsupported findings, premature invoicing, and silent mismatches "
+                    "between counterparty credits and client receipts."
+                ),
+                "chapter_ref": "Q7, Q8",
+                "instructions": [
+                    (
+                        "Create an evidence manifest before extraction begins. Preserve each "
+                        "original file, calculate its SHA-256 digest, record account and period "
+                        "ownership, and link the signed authority so every proposed finding "
+                        "can be traced to an authorized source."
+                    ),
+                    (
+                        "Normalize invoice identifiers, currencies, dates, and amounts while "
+                        "retaining raw source values. Use decimal arithmetic for money, distinguish "
+                        "credits from debits, and send ambiguous OCR output to a human queue "
+                        "instead of silently repairing material amounts."
+                    ),
+                    (
+                        "Define the economic identity of each claim before writing submission "
+                        "automation. Enforce one active claim per identity, store attempts separately, "
+                        "and reconcile uncertain external responses before retrying; an internal "
+                        "idempotency key does not force a carrier endpoint to deduplicate."
+                    ),
+                    (
+                        "Require an independent reviewer to compare entitlement, arithmetic, "
+                        "deadline, authority, and attached evidence before submission. Review "
+                        "every material exception and a documented sample of routine items, "
+                        "then preserve reviewer identity and decision timestamps in the event history."
+                    ),
+                    (
+                        "Close work only after reconciling counterparty disposition, client credit "
+                        "application, fee earning, invoice issuance, and payment. Preserve denials "
+                        "and reversals as new events rather than rewriting history, and feed "
+                        "root causes back into qualification and extraction rules."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Authorized intake manifest",
+                        "textarea",
+                        (
+                            "Define required source files, authorization links, ingestion timestamps, "
+                            "account ownership, and integrity checks. Explain how incomplete "
+                            "periods and documents received through unapproved channels are "
+                            "quarantined before any findings or submissions are produced."
+                        ),
+                        (
+                            "Manifest HC-UTIL-2025 lists twelve original PDF invoices, a meter "
+                            "schedule, the effective tariff, and two signed authorizations. Each "
+                            "file receives a SHA-256 digest and restricted storage key. November "
+                            "is initially missing, so the analyst requests it and marks that "
+                            "period incomplete instead of extrapolating a submission amount."
+                        ),
+                    ),
+                    field(
+                        "Normalization and OCR exception rules",
+                        "textarea",
+                        (
+                            "Specify extraction fields, money precision, date formats, invoice "
+                            "reconciliation, and confidence thresholds. Identify which fields "
+                            "require visual confirmation and how the workflow preserves original "
+                            "values alongside normalized values for later reviewer inspection."
+                        ),
+                        (
+                            "The parser records account, invoice number, service dates, meter "
+                            "identifier, tariff code, quantity, rate, and tax. Decimal values "
+                            "quantize to cents only at the documented calculation step. An "
+                            "OCR reading of $18,800 against a $1,880 invoice total fails "
+                            "reconciliation and enters manual review with the source page attached."
+                        ),
+                    ),
+                    field(
+                        "Deterministic claim identity and uniqueness",
+                        "textarea",
+                        (
+                            "Define the immutable components of a claim's economic identity "
+                            "and the database uniqueness constraint. Explain how corrections, "
+                            "resubmissions, and multiple distinct charge disputes on one invoice "
+                            "remain linked without creating duplicate recovery claims."
+                        ),
+                        (
+                            "A utility claim key combines tenant, counterparty, account, invoice, "
+                            "service period, charge line, and recovery reason. A unique database "
+                            "constraint permits one active claim for that identity. Correcting "
+                            "the requested amount from $920 to $890 creates a new version "
+                            "under the same claim, not another collectible asset."
+                        ),
+                    ),
+                    field(
+                        "Ledger states and accounting boundaries",
+                        "textarea",
+                        (
+                            "List permitted claim states and the evidence needed for each "
+                            "transition. Keep operational claim status separate from revenue "
+                            "recognition, receivables, and cash so a submitted or accepted "
+                            "request cannot automatically become an earned fee."
+                        ),
+                        (
+                            "Claim U-184 moves through draft, reviewed, submitted, accepted, "
+                            "applied, invoiced, and paid. Submission stores a counterparty receipt; "
+                            "application stores the credit memo and client statement. The "
+                            "engagement earns fees on accepted, applied credits, so acceptance "
+                            "alone creates no fee invoice. A denial records its own reason "
+                            "and supporting correspondence."
+                        ),
+                    ),
+                    field(
+                        "Submission transaction and uncertain-response handling",
+                        "textarea",
+                        (
+                            "Describe the outbox record, request fingerprint, external receipt, "
+                            "retry policy, and reconciliation procedure for timeouts. Identify "
+                            "where human inspection is required because the counterparty "
+                            "cannot provide a reliable request-status lookup or deduplication mechanism."
+                        ),
+                        (
+                            "The system commits claim U-184 and its submission outbox record "
+                            "in one local transaction. A network timeout occurs after dispatch, "
+                            "so the attempt becomes reconciliation-required. The operator checks "
+                            "the approved portal for a matching account, invoice, and amount "
+                            "before retrying; repeated blind submissions are prohibited by "
+                            "the internal runbook."
+                        ),
+                    ),
+                    field(
+                        "Evidence package and independent QA",
+                        "textarea",
+                        (
+                            "Define the minimum evidence bundle and reviewer checklist for "
+                            "each lane. Set materiality and sampling rules, preserve reviewer "
+                            "independence, and state which discrepancies prevent submission "
+                            "until the underlying entitlement or calculation is corrected."
+                        ),
+                        (
+                            "For an $8,400 tariff correction, the bundle includes twelve "
+                            "invoices, effective tariff pages, meter records, authorization, and "
+                            "a line-by-line calculation. A second reviewer checks all material "
+                            "amounts and filing dates. One invoice uses a later tariff version, "
+                            "so the package returns for recalculation before any external submission."
+                        ),
+                    ),
+                    field(
+                        "Counterparty credit and client receipt matching",
+                        "textarea",
+                        (
+                            "Explain how accepted amounts, issued credits, client applications, "
+                            "and reversals are matched to claims. Specify treatment of partial "
+                            "recoveries, bundled credits, offsets, and unapplied balances before "
+                            "calculating the operator's earned contractual share."
+                        ),
+                        (
+                            "A utility accepts $12,000 but initially applies only $9,000 "
+                            "against the client's account. The signed terms earn a 35% "
+                            "fee on applied credits, producing $3,150 for this period. "
+                            "The remaining $3,000 stays in the unapplied-credit register, "
+                            "and a bundled statement adjustment is allocated using the utility's "
+                            "claim-level explanation."
+                        ),
+                    ),
+                    field(
+                        "Fee invoice, payment allocation, and reversal",
+                        "textarea",
+                        (
+                            "Specify the fee calculation, invoice evidence, payment matching "
+                            "rules, and correction procedure. Show how a later recovery "
+                            "reversal affects operator consideration and reserves without "
+                            "deleting the original claim, invoice, or cash event."
+                        ),
+                        (
+                            "Invoice F-208 bills $3,150 against claim U-184 and links the "
+                            "$9,000 applied credit. The client pays $3,150 with the invoice "
+                            "reference. If $1,000 of that credit is later reversed and "
+                            "the contract requires proportional adjustment, the operator issues "
+                            "a $350 credit note and records the reserve use separately."
+                        ),
+                    ),
+                    field(
+                        "Deadline, denial, and escalation queue",
+                        "textarea",
+                        (
+                            "Assign ownership for approaching deadlines, missing documents, "
+                            "counterparty silence, and denied requests. Record escalation "
+                            "intervals and appeal evidence requirements without assuming "
+                            "that resubmission automatically extends a statutory or contractual filing period."
+                        ),
+                        (
+                            "A parcel billing dispute has a documented account-specific filing "
+                            "deadline on June 18. Internal review is due June 11, with "
+                            "an owner alert June 9. A June 13 denial triggers contract "
+                            "review and a reason-coded appeal assessment; the system retains "
+                            "June 18 until written governing terms establish a different deadline."
+                        ),
+                    ),
+                    field(
+                        "Closeout export and reproducibility test",
+                        "textarea",
+                        (
+                            "Define the closing package, evidence retention schedule, access "
+                            "restrictions, and independent reconstruction test. Require a "
+                            "reviewer to reproduce client benefits and operator fees from "
+                            "source records rather than relying solely on dashboard totals."
+                        ),
+                        (
+                            "The closing package contains the source manifest, claim versions, "
+                            "submission receipts, disposition letters, credit applications, fee "
+                            "invoices, and payment allocations. An independent reviewer reconstructs "
+                            "$80,000 of client recovery and $28,000 of operator revenue. "
+                            "Any difference remains an open exception, and the export excludes "
+                            "employee screening records unrelated to the utility engagement."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "A reviewer reproduces one complete recovery and fee transaction from "
+                    "original evidence, confirms duplicate protection and uncertain-response "
+                    "handling, and verifies that all material submission exceptions have "
+                    "documented resolution before production volume increases."
+                ),
+            },
+            {
+                "worksheet_id": "ws-04",
+                "number": 4,
+                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
+                "purpose": (
+                    "Convert legal and contractual constraints into executable account-level "
+                    "requirements. Document practitioner roles, fee restrictions, state licensing, "
+                    "employment-credit timing, representation authority, carrier permissions, "
+                    "and evidence handling so each recovery lane operates within its actual "
+                    "jurisdiction, agreement, and authorized service scope."
+                ),
+                "chapter_ref": "Q5, Q9",
+                "instructions": [
+                    (
+                        "Create a jurisdiction-and-service matrix before marketing specific "
+                        "outcomes. Identify the applicable statute, regulation, contract, tariff, "
+                        "licensed role, and responsible reviewer for each lane; broad authority "
+                        "to audit invoices does not establish authority to represent taxpayers."
+                    ),
+                    (
+                        "Have the tax practitioner classify the proposed federal tax work "
+                        "and compensation arrangement under current law and controlling authority. "
+                        "Use Treasury Circular 230 requirements where applicable, preserve the "
+                        "written conclusion, and do not assume commercial contingency terms transfer."
+                    ),
+                    (
+                        "Check WOTC hiring-date authorization, pre-screening requirements, state "
+                        "workforce certification procedures, and filing deadlines before screening "
+                        "a cohort. Preserve the actual submission acknowledgment and separate "
+                        "credit computation from the operator's authorized administrative processing service."
+                    ),
+                    (
+                        "Attach account-specific contract schedules covering authority, exclusions, "
+                        "baseline methodology, fee earning, collections, reversals, and termination. "
+                        "Make the client responsible for identified source records while retaining "
+                        "operator responsibility for evidence integrity and agreed delivery obligations."
+                    ),
+                    (
+                        "Record a dated reviewer, source version, and next review trigger for "
+                        "every material requirement. Refresh the matrix when a jurisdiction, "
+                        "service, tariff, carrier agreement, employment cohort, or compensation "
+                        "model changes instead of treating the initial review as permanent."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Service and jurisdiction responsibility matrix",
+                        "textarea",
+                        (
+                            "List each offered service, operating jurisdiction, governing source, "
+                            "qualified role, and representation boundary. Distinguish administrative "
+                            "analysis from regulated representation and identify the documents "
+                            "that establish the assigned specialist's current authority."
+                        ),
+                        (
+                            "The pod analyzes utility invoices under the client's tariff and "
+                            "authorization, routes Texas property-tax representation to a qualified "
+                            "specialist, and limits WOTC work to agreed processing support. "
+                            "The matrix cites Texas Occupations Code Chapter 1152 for property-tax "
+                            "consultant registration and records the specialist's status, scope, "
+                            "and applicable exemption analysis."
+                        ),
+                    ),
+                    field(
+                        "Circular 230 compensation classification",
+                        "textarea",
+                        (
+                            "Describe the federal tax service, practitioner status, proposed "
+                            "fee formula, and current legal assessment of contingent compensation. "
+                            "Identify the precise permitted basis or exception rather than "
+                            "assuming every refund-related engagement permits percentage pricing."
+                        ),
+                        (
+                            "The practitioner reviews 31 CFR §10.27 and relevant controlling "
+                            "authority before accepting any tax-credit percentage arrangement. "
+                            "Pending that review, the operator offers $100 fixed processing "
+                            "per completed file, subject to engagement requirements. Utility "
+                            "refund contingency terms remain in a separate schedule and do "
+                            "not determine the federal tax fee treatment."
+                        ),
+                    ),
+                    field(
+                        "Tax substantiation and practitioner diligence",
+                        "textarea",
+                        (
+                            "Specify the evidence required to support each tax position, "
+                            "who evaluates eligibility, and who signs or submits tax "
+                            "materials. Link the practitioner's diligence duties to source "
+                            "records, calculation review, and resolution of contradictory information."
+                        ),
+                        (
+                            "The assigned practitioner applies relevant duties under 31 CFR "
+                            "§§10.22 and 10.34 when evaluating credit support and return "
+                            "positions. Payroll hours, qualified wages, certification, and related-party "
+                            "checks are retained with the workpaper. A recruiter spreadsheet "
+                            "alone cannot establish eligibility, and conflicting wage totals "
+                            "return to payroll for documented reconciliation."
+                        ),
+                    ),
+                    field(
+                        "WOTC authorization, screening, and submission timing",
+                        "textarea",
+                        (
+                            "Record hiring dates, applicable authorization under 26 U.S.C. §51, "
+                            "pre-screening completion, state submission deadline, and certification "
+                            "evidence. Explain how the workflow responds when authorization "
+                            "for a hiring period or timely filing cannot be established."
+                        ),
+                        (
+                            "For a historical employee starting June 2, 2025, the employer "
+                            "completes the required pre-screening by the offer date and submits "
+                            "Form 8850 to the state workforce agency by June 30. "
+                            "The record cites §51(d)(13). Section 51(c)(4)'s December 31, 2025 "
+                            "hiring cutoff requires checking enacted extensions before later cohorts proceed."
+                        ),
+                    ),
+                    field(
+                        "WOTC wage-hour calculation and processing boundary",
+                        "textarea",
+                        (
+                            "Document the employee category, qualified wage cap, hours worked, "
+                            "certification status, and employer-level limitations. Show an "
+                            "illustrative credit calculation separately from the operator's "
+                            "processing fee and identify who verifies the final return treatment."
+                        ),
+                        (
+                            "For an otherwise eligible ordinary category with a $6,000 wage "
+                            "cap, 400 qualifying hours support a 40% calculation, or $2,400; "
+                            "120–399 qualifying hours generally use 25%, or $1,500 at that "
+                            "cap. Category-specific rules and limitations still apply. The "
+                            "operator's agreed $100 processing fee remains separate from either credit."
+                        ),
+                    ),
+                    field(
+                        "Property-tax registration and protest deadline",
+                        "textarea",
+                        (
+                            "Identify the parcel jurisdiction, representative qualifications, "
+                            "client appointment, protest deadline, and evidence requirements. "
+                            "Use the applicable notice and statutory exceptions to calculate "
+                            "the actual filing date rather than relying on a generic annual reminder."
+                        ),
+                        (
+                            "For a Texas parcel, the representative checks Texas Occupations "
+                            "Code Chapter 1152 and appointment requirements under Texas Tax "
+                            "Code §1.111. The ordinary protest deadline under §41.44 is "
+                            "generally May 15 or thirty days after notice delivery, whichever "
+                            "is later, subject to applicable exceptions. The actual notice "
+                            "and filing receipt remain attached."
+                        ),
+                    ),
+                    field(
+                        "Letters of Authorization and disclosure restrictions",
+                        "textarea",
+                        (
+                            "Draft the account-specific authority, permitted communications, "
+                            "delegation limits, term, revocation process, and evidence-sharing "
+                            "boundaries. Require baseline snapshots and signed authority "
+                            "before disclosing tariff findings or contacting the counterparty about recoveries."
+                        ),
+                        (
+                            "The authorization permits Harbor's named operator to obtain "
+                            "billing records and submit documented disputes for meters A104 "
+                            "and A105 through December 31. It excludes changing bank "
+                            "instructions, accepting settlements, and filing tax returns. The "
+                            "operator may share relevant invoices with the named utility "
+                            "specialist only under the engagement's confidentiality terms."
+                        ),
+                    ),
+                    field(
+                        "Contingency and shared-savings contract addendum",
+                        "textarea",
+                        (
+                            "Specify eligible recoveries, exclusions, fee percentage, baseline "
+                            "adjustments, thirty-six-month measurement, payment timing, reversals, "
+                            "termination, and dispute resolution. Explain how incumbent claims "
+                            "and client operational changes are excluded from the operator's earned savings."
+                        ),
+                        (
+                            "The addendum charges 35% of accepted, applied historical utility "
+                            "credits and 40% of independently verified monthly savings for "
+                            "thirty-six measured months. It excludes previously filed claims, "
+                            "production shutdowns, and unrelated procurement discounts. Fees "
+                            "are due fifteen days after invoice; proportional credit reversals "
+                            "generate corresponding fee adjustments under the stated reconciliation procedure."
+                        ),
+                    ),
+                    field(
+                        "Carrier access permissions and agreement hierarchy",
+                        "textarea",
+                        (
+                            "Record carrier developer terms, account permissions, available "
+                            "interfaces, rate limits, and submission restrictions. Explain "
+                            "how negotiated agreements and service-specific rules affect "
+                            "automation, including situations where only an approved manual channel is available."
+                        ),
+                        (
+                            "UPS billing exports are enabled for the client's account, but "
+                            "the available interface does not provide an authorized refund "
+                            "submission operation. The pipeline prepares reviewed evidence "
+                            "and assigns portal submission to an authorized operator. FedEx "
+                            "capabilities are evaluated separately; possessing account credentials "
+                            "does not establish permission to automate every account action."
+                        ),
+                    ),
+                    field(
+                        "Sensitive records, tax information, and retention",
+                        "textarea",
+                        (
+                            "Define access roles, transfer methods, retention periods, deletion "
+                            "triggers, and incident responsibilities for client and employee "
+                            "records. Assess applicable tax-information restrictions and state "
+                            "privacy obligations according to the actual service and information handled."
+                        ),
+                        (
+                            "Employee screening records stay in a restricted workspace separate "
+                            "from invoice-audit exports. The practitioner evaluates 26 U.S.C. "
+                            "§7216 and 26 CFR §301.7216 where return-preparer disclosure "
+                            "rules apply. Role-based access excludes sales staff, retention "
+                            "follows the documented engagement schedule, and legal holds "
+                            "suspend deletion only for the affected records."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The engagement owner and assigned specialists sign the dated service "
+                    "matrix, fee classification, jurisdiction checks, authorization schedules, "
+                    "and evidence-handling requirements. Each active lane has an identified "
+                    "qualified reviewer and no unresolved restriction affecting the planned work."
+                ),
+            },
+            {
+                "worksheet_id": "ws-05",
+                "number": 5,
+                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
+                "purpose": (
+                    "Automate evidence collection and repeatable analysis while preserving "
+                    "human judgment for entitlement, deadlines, and uncertain outcomes. Build "
+                    "an acquisition loop around verified recovery results, monitor integration "
+                    "permissions and error rates, and maintain practical fallback paths for "
+                    "carrier outages, OCR failures, and hiring-system interruptions."
+                ),
+                "chapter_ref": "Q6, Q10",
+                "instructions": [
+                    (
+                        "Map each integration to a specific authorized task, account owner, "
+                        "credential scope, and fallback procedure. Evaluate FedEx and UPS "
+                        "interfaces independently, and treat refund submission capability as "
+                        "account-dependent rather than a universal feature of carrier developer access."
+                    ),
+                    (
+                        "Separate ingestion, extraction, entitlement evaluation, review, submission, "
+                        "and reconciliation into observable stages. Give every stage an owner, "
+                        "retry budget, evidence output, and error queue so automation failure "
+                        "cannot silently convert incomplete work into a completed claim."
+                    ),
+                    (
+                        "Automate utility tariff and cooling-tower meter extraction only after "
+                        "documenting the governing calculation. Pair OCR confidence with total "
+                        "reconciliation and physical meter evidence; an apparently precise "
+                        "reading remains unusable when its tariff period or unit is wrong."
+                    ),
+                    (
+                        "Connect ATS events to WOTC processing through approved employment "
+                        "workflows and restricted records. Track pre-screening and state filing "
+                        "deadlines explicitly, prevent duplicate employee records, and stop "
+                        "credit-specific processing when the hiring period lacks verified statutory authorization."
+                    ),
+                    (
+                        "Measure acquisition using signed qualified engagements and collected "
+                        "contribution, not raw lead volume or client spending. Reinvest only "
+                        "after claims clear evidence review, preserve attribution by channel, "
+                        "and use client-approved case studies stripped of unnecessary account information."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Integration inventory and least-privilege access",
+                        "textarea",
+                        (
+                            "List carrier, utility, document, accounting, and ATS connections "
+                            "with their permitted operations and account owners. Specify "
+                            "credential storage, rotation, access review, and revocation "
+                            "procedures without placing secrets in workbook examples or exported records."
+                        ),
+                        (
+                            "The inventory includes authorized UPS invoice exports, FedEx "
+                            "account reporting, a restricted document repository, QuickBooks "
+                            "invoice synchronization, and Greenhouse hiring events. Service "
+                            "accounts receive only necessary scopes. The controller owns "
+                            "carrier access, payroll owns ATS access, and the operator "
+                            "reviews permissions monthly and immediately after contractor departure."
+                        ),
+                    ),
+                    field(
+                        "Carrier EDI and permitted refund workflow",
+                        "textarea",
+                        (
+                            "Describe supported EDI or API inputs, account-specific refund "
+                            "capabilities, entitlement checks, and submission ownership. Include "
+                            "rate-limit handling and a controlled manual process when "
+                            "the carrier does not expose an authorized claim-submission endpoint."
+                        ),
+                        (
+                            "An approved EDI 210 feed supplies invoice lines where the "
+                            "carrier and account support that format. The pipeline identifies "
+                            "duplicate charges and attaches the governing contract rule. "
+                            "Reviewed claims use an authorized endpoint only when available; "
+                            "otherwise a named operator submits through the approved channel "
+                            "and records the receipt in the same ledger."
+                        ),
+                    ),
+                    field(
+                        "Utility OCR and meter-evidence controls",
+                        "textarea",
+                        (
+                            "Define supported document layouts, extraction thresholds, tariff "
+                            "versioning, meter-unit conversions, and human review rules. "
+                            "Explain how the pipeline detects missing pages, changed "
+                            "layouts, impossible readings, and deductions unsupported by approved physical metering."
+                        ),
+                        (
+                            "The utility pipeline extracts gallons, meter dates, tariff "
+                            "codes, and sewer charges. A cooling-tower reading of 120,000 "
+                            "gallons reconciles to meter history before a deduction is "
+                            "calculated. Layout changes or unexplained volume jumps above "
+                            "the client's agreed threshold enter review; the engine never "
+                            "infers a qualifying submeter from an invoice description alone."
+                        ),
+                    ),
+                    field(
+                        "ATS-integrated WOTC deadline automation",
+                        "textarea",
+                        (
+                            "Map offer, start, screening, certification, and payroll events "
+                            "to the responsible owner and restricted record. Define "
+                            "deduplication, deadline alerts, failed-event recovery, and "
+                            "hiring-date authorization checks before creating a credit-processing task."
+                        ),
+                        (
+                            "For the supported historical cohort, a Greenhouse offer event "
+                            "creates a pre-screening task; the start event creates the "
+                            "twenty-eight-day state submission deadline. Alerts fire on days "
+                            "14, 21, and 25. Employee identifiers remain restricted, "
+                            "rehires trigger review, and missing authorization for later "
+                            "hiring periods prevents automatic credit eligibility assumptions."
+                        ),
+                    ),
+                    field(
+                        "Rules engine versioning and release evidence",
+                        "textarea",
+                        (
+                            "Record rule owners, effective dates, source citations, test "
+                            "fixtures, and deployment rollback procedures. Separate tariff "
+                            "and contract changes from code changes so historical "
+                            "claims can be reproduced using the rules effective for their periods."
+                        ),
+                        (
+                            "Tariff rule UTIL-A-2025-v3 applies only to the documented "
+                            "service dates and meter class. Ten fixtures cover correct "
+                            "charges, duplicate lines, partial periods, credits, and missing "
+                            "readings. A reviewer approves the evidence before activation. "
+                            "Existing claims retain their rule version, while a rollback "
+                            "restores the prior rule for newly queued work."
+                        ),
+                    ),
+                    field(
+                        "Operational telemetry and exception thresholds",
+                        "textarea",
+                        (
+                            "Define stage-level throughput, extraction accuracy, duplicate "
+                            "attempts, aging, and recovery-conversion measures. Set clear "
+                            "alert thresholds and owners, distinguishing a technical "
+                            "integration fault from a commercial denial or a missing client document."
+                        ),
+                        (
+                            "The dashboard tracks invoices ingested, reviewed claims, "
+                            "submitted claims, applied recoveries, and collected fees. "
+                            "An OCR exception rate above 8% for a document layout "
+                            "pauses that layout's automatic processing. Any duplicate "
+                            "submission attempt triggers same-day inspection, while claims "
+                            "without counterparty acknowledgment after the documented interval "
+                            "enter the operations queue."
+                        ),
+                    ),
+                    field(
+                        "Acquisition channel and qualification funnel",
+                        "textarea",
+                        (
+                            "Choose a narrowly defined client segment and acquisition "
+                            "channel, then document stage counts, qualification criteria, "
+                            "acquisition costs, and responsible owners. Tie conversion "
+                            "to signed authority and reviewable evidence rather than verbal interest."
+                        ),
+                        (
+                            "A facilities-accounting partner introduces twenty multi-site "
+                            "manufacturers. Twelve attend discovery, eight supply sample "
+                            "invoices under confidentiality terms, four qualify, and two "
+                            "sign engagements with authorizations. At $3,000 total channel "
+                            "spend, acquisition cost is $1,500 per signed client. "
+                            "The team tracks later collected contribution before increasing partner spend."
+                        ),
+                    ),
+                    field(
+                        "Proof-of-recovery referral and expansion loop",
+                        "textarea",
+                        (
+                            "Specify the evidence required for a case study, client "
+                            "permission process, referral request, and adjacent-lane expansion. "
+                            "Separate verified results from projected savings and "
+                            "avoid disclosing account details or employee information in acquisition materials."
+                        ),
+                        (
+                            "After an $80,000 utility credit is applied, the client "
+                            "approves an anonymized summary describing the error category "
+                            "and measurement period. The operator requests one introduction "
+                            "to a peer controller and offers a separately authorized "
+                            "telecom review. The summary reports the verified credit, "
+                            "not a projected thirty-six-month benefit presented as cash already received."
+                        ),
+                    ),
+                    field(
+                        "Outage, waiver, and specialist fallback tracker",
+                        "textarea",
+                        (
+                            "Document the trigger, immediate containment, alternate workflow, "
+                            "capacity limit, and recovery owner for each material "
+                            "failure. Cover carrier access loss, guarantee waivers, "
+                            "municipal delay, specialist absence, and tax-substantiation gaps with distinct responses."
+                        ),
+                        (
+                            "If carrier access fails, the client supplies approved "
+                            "invoice exports while the team resolves permissions; deadline "
+                            "owners continue manual tracking. If a guarantee waiver "
+                            "eliminates entitlement, that claim lane closes rather than "
+                            "switching submission methods. A municipal delay moves "
+                            "collections forecasts, while a missing tax workpaper suspends "
+                            "only the affected processing file."
+                        ),
+                    ),
+                    field(
+                        "Automation return and controlled capacity increase",
+                        "textarea",
+                        (
+                            "Calculate labor saved, review burden, implementation expense, "
+                            "and error-related costs for one automation. Identify "
+                            "the evidence required to expand throughput and specify "
+                            "how the team preserves reviewer capacity as input volume rises."
+                        ),
+                        (
+                            "Automating 1,000 invoice extractions saves six minutes each, "
+                            "or 100 hours monthly. At $35 per hour, gross "
+                            "labor value is $3,500. Subtract $700 additional review "
+                            "and $300 infrastructure costs for $2,500 monthly net "
+                            "value before implementation. A $5,000 setup cost pays "
+                            "back in two months if measured accuracy and volume persist."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "Every active integration has documented permission, an accountable owner, "
+                    "observable errors, and a tested fallback. One end-to-end batch demonstrates "
+                    "correct deduplication and review, while acquisition reporting connects "
+                    "channel spending to authorized engagements and collected operator contribution."
+                ),
+            },
+            {
+                "worksheet_id": "ws-06",
+                "number": 6,
+                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
+                "purpose": (
+                    "Launch an evidence-led recovery pod in thirty days without confusing "
+                    "setup milestones with collected revenue. Assign specialist ownership, "
+                    "measure cash and quality alongside throughput, and preserve transferable "
+                    "contracts, reproducible economics, and restricted diligence materials "
+                    "for future operator succession or a potential business transfer."
+                ),
+                "chapter_ref": "Q11, Q12",
+                "instructions": [
+                    (
+                        "Use the first week to select a narrow recovery lane, verify "
+                        "specialist access, finalize engagement documents, and establish baseline "
+                        "controls. Budget within the $6,000–$35,000 startup range and retain "
+                        "the canonical one-to-four-month expectation for the first deal."
+                    ),
+                    (
+                        "Use the second week for targeted acquisition and authorized sample "
+                        "reviews, not broad unsupported benefit promises. Define a qualified "
+                        "opportunity using documented entitlement, reachable decision-makers, usable "
+                        "evidence, and positive contribution after specialist costs."
+                    ),
+                    (
+                        "Use the third week to process a small reviewed pilot through "
+                        "the complete ledger. Capture missing documents, deadline failures, "
+                        "and uncertain responses as explicit exceptions, and revise the "
+                        "runbook before increasing claim volume or extending the service scope."
+                    ),
+                    (
+                        "Use the fourth week to reconcile economics, cash, delivery capacity, "
+                        "and client communications. Distinguish submitted claims from applied "
+                        "recoveries and paid fees; a successful launch may establish a "
+                        "qualified pipeline without producing a collected refund during thirty days."
+                    ),
+                    (
+                        "Maintain exit-readiness as an operating discipline rather than a "
+                        "valuation promise. Organize assignability terms, customer concentration, "
+                        "rule ownership, contractor agreements, restricted evidence, and scenario "
+                        "reconciliations so another authorized operator could reproduce delivery and reporting."
+                    ),
+                ],
+                "fields": [
+                    field(
+                        "Days 1–7 foundation and funded scope",
+                        "textarea",
+                        (
+                            "Assign daily owners for service selection, specialist review, "
+                            "engagement documents, account authority, storage controls, and "
+                            "cash planning. Define tangible outputs and stop conditions "
+                            "that keep the launch within its funded and authorized scope."
+                        ),
+                        (
+                            "The founder selects utility invoice recovery for manufacturers, "
+                            "engages one tariff specialist, and prepares account-specific "
+                            "authorization schedules by day 5. A $35,000 funding plan "
+                            "allocates $4,500 setup and a $1,500 reversal reserve. "
+                            "By day 7, restricted storage, claim identity rules, "
+                            "and a weekly cash schedule are ready for authorized pilot evidence."
+                        ),
+                    ),
+                    field(
+                        "Days 8–14 acquisition and qualification deliverables",
+                        "textarea",
+                        (
+                            "Set outreach, discovery, sample-review, and engagement targets "
+                            "with named owners and evidence requirements. Identify "
+                            "how unsupported opportunities are rejected and preserve "
+                            "the distinction between a launch activity target and a signed client commitment."
+                        ),
+                        (
+                            "The founder seeks twenty partner introductions, twelve discovery "
+                            "meetings, and eight authorized sample packages. Four qualified "
+                            "opportunities are a target, not an assured result. "
+                            "An analyst rejects two sites lacking historical meter "
+                            "evidence. Any signed engagement must include the correct "
+                            "client entity, covered accounts, fee schedule, and designated records custodian."
+                        ),
+                    ),
+                    field(
+                        "Days 15–21 reviewed pilot execution",
+                        "textarea",
+                        (
+                            "Define the pilot population, reviewer assignment, evidence "
+                            "checklist, submission limits, and daily exception meeting. "
+                            "Require the pilot to exercise actual state transitions "
+                            "and reconciliation controls rather than merely demonstrating that extraction software runs."
+                        ),
+                        (
+                            "The pod reviews twelve utility invoices covering two meters "
+                            "and identifies three supportable billing corrections. A second "
+                            "reviewer checks all three before the authorized operator "
+                            "submits them. One deliberately repeated intake file confirms "
+                            "duplicate detection; no repeated external claim is sent. "
+                            "The daily meeting assigns owners to missing acknowledgments and calculation questions."
+                        ),
+                    ),
+                    field(
+                        "Days 22–30 reconciliation and next-month decision",
+                        "textarea",
+                        (
+                            "Record completed launch outputs, open claims, cash "
+                            "remaining, unresolved risks, and the next thirty-day "
+                            "capacity decision. Evaluate progress against documented "
+                            "readiness and evidence quality without treating pending recoveries as earned owner profit."
+                        ),
+                        (
+                            "At day 30, three reviewed claims are submitted, none "
+                            "has yet produced an applied credit, and operator "
+                            "fee revenue from those claims remains zero. The "
+                            "team reports this plainly while maintaining the one-to-four-month "
+                            "first-deal expectation. Next-month spending is limited to "
+                            "funded commitments and additional opportunities meeting the qualification checklist."
+                        ),
+                    ),
+                    field(
+                        "Pod roles, contractor capacity, and escalation ownership",
+                        "textarea",
+                        (
+                            "Assign accountable ownership for sales, analysis, specialist "
+                            "judgment, quality review, submission, billing, and collections. "
+                            "Translate headcount into scheduled hours and coverage "
+                            "without equating a contractor relationship to a full-time delivery allocation."
+                        ),
+                        (
+                            "The Base pod has one full-time founder and three "
+                            "contractors covering tariff expertise, document analysis, and "
+                            "independent review with tax-processing coordination. Their planned "
+                            "weekly allocations are twelve, twenty, and ten hours. "
+                            "The founder owns collections and substitutes only within "
+                            "their competence; regulated specialist work waits for an appropriately qualified replacement."
+                        ),
+                    ),
+                    field(
+                        "Weekly operational and cash KPI definitions",
+                        "textarea",
+                        (
+                            "Define each KPI's numerator, denominator, measurement date, "
+                            "source, and owner. Include evidence completeness, review "
+                            "accuracy, submission timeliness, applied recovery, collected "
+                            "fees, receivables aging, and runway so volume cannot conceal deteriorating cash or quality."
+                        ),
+                        (
+                            "Evidence completeness equals fully supported claims divided "
+                            "by claims entering review; 18 of 20 yields "
+                            "90%. On-time submission equals timely eligible submissions "
+                            "divided by submissions due; 9 of 10 yields "
+                            "90%. Collected fees include matched cash only, "
+                            "and runway divides unrestricted operator cash by the forward monthly cash requirement."
+                        ),
+                    ),
+                    field(
+                        "Canonical owner-profit and staffing scorecard",
+                        "textarea",
+                        (
+                            "Record the canonical annual comparisons and identify "
+                            "the separate actual-period reporting columns. Preserve "
+                            "the stated margin and staffing assumptions while "
+                            "preventing early pilot results, annualized pipeline estimates, or client benefits from replacing recognized revenue."
+                        ),
+                        (
+                            "The comparison retains Conservative $110,000 revenue and "
+                            "$33,000 profit at 30%; Base $505,000 and "
+                            "$217,150 at 43.0%; Scaled $900,000 and "
+                            "$504,000 at 56%. Conservative and Base use "
+                            "one full-time employee plus three contractors; Scaled "
+                            "uses two plus four. Actual results occupy a separate "
+                            "dated ledger and never overwrite these canonical benchmarks."
+                        ),
+                    ),
+                    field(
+                        "Risk concentration, reserve review, and cash intervention",
+                        "textarea",
+                        (
+                            "Measure exposure by client, counterparty, recovery lane, "
+                            "specialist, and collection date. Define interventions "
+                            "for concentration or reserve shortfalls using cash "
+                            "and evidence thresholds rather than relying on aggregate projected recovery value."
+                        ),
+                        (
+                            "If one municipality represents $42,000 of $60,000 "
+                            "pending operator fees, counterparty concentration is 70%. "
+                            "The founder pauses discretionary acquisition when unrestricted "
+                            "cash falls below six weeks of committed spending. "
+                            "A new $2,200 reversal exposure exceeds the $1,500 "
+                            "reserve by $700, prompting a documented cash allocation "
+                            "and updated weekly collection forecast."
+                        ),
+                    ),
+                    field(
+                        "Transferability and restricted diligence ledger",
+                        "textarea",
+                        (
+                            "Inventory contract assignment terms, client permissions, "
+                            "software ownership, rule documentation, specialist agreements, "
+                            "and evidence access restrictions. Explain how a "
+                            "potential successor receives enough information to evaluate operations without unauthorized disclosure of client or employee records."
+                        ),
+                        (
+                            "The ledger marks each engagement's assignment clause "
+                            "and required client action, documents ownership of "
+                            "internally written extraction rules, and links contractor "
+                            "confidentiality and work-product terms. A prospective successor "
+                            "first receives aggregated revenue, aging, and concentration "
+                            "schedules. Account-level files and employee records remain "
+                            "restricted until an authorized transaction process permits the specific disclosure."
+                        ),
+                    ),
+                    field(
+                        "Founder independence and reproducible handover test",
+                        "textarea",
+                        (
+                            "Design a timed handover exercise covering qualification, "
+                            "claim review, submission reconciliation, invoicing, and "
+                            "management reporting. Record failures, remediation owners, "
+                            "and evidence that another authorized operator can reproduce the work without undocumented founder judgment."
+                        ),
+                        (
+                            "An authorized backup receives one closed utility case "
+                            "and reconstructs its $80,000 applied recovery, 35% "
+                            "fee, $28,000 invoice, and matched payment within "
+                            "two hours. They also locate the governing tariff "
+                            "and authorization without founder assistance. A missing "
+                            "baseline adjustment explanation becomes a remediation item; "
+                            "the exercise repeats after the runbook and evidence index are corrected."
+                        ),
+                    ),
+                ],
+                "completion_gate": (
+                    "The founder signs a thirty-day closeout showing completed outputs, "
+                    "open exceptions, unrestricted cash, assigned pod capacity, and accurate "
+                    "claim-to-fee reporting. An authorized backup completes the handover test, "
+                    "and the next sprint proceeds only within documented authority and funded commitments."
+                ),
+            },
+        ],
+    }

@@ -1024,7 +1024,7 @@ def build_default_brand_system() -> dict:
                 "test_price_usd": 249,
                 "includes": [
                     "5-Volume Flagship Boxed/Digital Set",
-                    "37-Business Money-to-Manpower Atlas",
+                    "42-Business Money-to-Manpower Atlas",
                     "All Companion Workbooks",
                 ],
                 "hypothesis": True,
@@ -1042,7 +1042,7 @@ def build_default_brand_system() -> dict:
                 ],
                 "hypothesis": True,
                 "paid_checkout_enabled": False,
-                "notes": "All Big Money Playbook releases, live 37-business Money-to-Manpower deal scorecards, and operator templates.",
+                "notes": "All Big Money Playbook releases, live 42-business Money-to-Manpower deal scorecards, and operator templates.",
             },
         },
         "workflow_stages": _build_workflow_stages(),

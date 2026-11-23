@@ -1,0 +1,607 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "public-records-apis-data-pipelines-operator-tooling",
+    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small self-funded health, pbm & workers' comp arbitrage desk an unfair information edge?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
+    "subtitle": "EFAST2 Renewal Intelligence, CMS NADAC Repricing, Authorized NCCI Worksheets, DNS Change Signals, and ERISA Compensation Evidence",
+    "layout_template": "resource_directory",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #40, Self-Funded Health, PBM & Workers' Comp Arbitrage, holds Rank #08 of 42 "
+        "with a 93/100 Money-to-Manpower Score. This chapter organizes 11 mapped plays into an "
+        "evidence-first desk spanning Form 5500 targeting, compensation reconstruction, plan transitions, "
+        "stop-loss structure, PBM economics, and E-Mod corrections. An eighteen-source directory separates "
+        "free discovery records from licensed rating materials and employer-authorized claims. The operating "
+        "edge is provenance, timing, and reconciliation rather than indiscriminate scraping. Formula v2.0 "
+        "produces annual owner profits of $38,400 Conservative, $240,750 Base, and $551,000 Scaled. "
+        "Recognized operator revenue excludes employer claim funds and insurance premiums. Weekly DNS "
+        "and script observations prioritize questions; verified renewal documents, paid claims, and "
+        "carrier-issued corrections determine recommendations and collectible fees."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual gross operator revenue on the net retained advisory, commission, and refund-split basis",
+            "note": "32% net margin; $38,400 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$535,000",
+            "context": "Annual gross operator revenue on the net retained advisory, commission, and refund-split basis",
+            "note": "45.0% net margin; $240,750 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$950,000",
+            "context": "Annual gross operator revenue on the net retained advisory, commission, and refund-split basis",
+            "note": "58% net margin; $551,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Build the public-record spine before buying enrichment",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with an employer-plan identity spine, not a purchased contact list. Download the Department "
+                    "of Labor Form 5500 datasets, retain each original archive, and key observations by sponsor EIN, "
+                    "plan number, filing year, and amendment status. Preserve sponsor names as reported while keeping "
+                    "a separate normalized matching field. A sponsor can maintain several welfare plans, change "
+                    "administrators, or file an amended return; merging everything under a similar trading name "
+                    "manufactures false renewal opportunities. Schedule A can identify reported insurance contracts "
+                    "and compensation, while Schedule C contains qualifying service-provider reporting where applicable. "
+                    "Neither schedule provides a complete current contract inventory. Filing deadlines, extensions, "
+                    "reporting exemptions, and processing time make these historical discovery records rather than "
+                    "live renewal calendars. Compare two or three filing years, inspect material changes in funding "
+                    "answers and service relationships, and then request the current plan document and renewal "
+                    "schedule from an authorized employer representative. Record the observation date separately "
+                    "from the coverage period. Use SEC submissions for public-company identity corroboration and "
+                    "SAM.gov for relevant contractor entities, but never infer that a corporate subsidiary shares "
+                    "its parent's benefit arrangements. A clean identity crosswalk prevents expensive repricing "
+                    "work on the wrong population."
+                ),
+                (
+                    "Organize the eleven mapped plays as explicit work queues: Form 5500 renewal targeting; broker "
+                    "compensation reconstruction; self-funded transition screening; captive participation screening; stop-loss "
+                    "attachment and laser review; run-out exposure reconstruction; NADAC-based PBM repricing; rebate "
+                    "recovery reconciliation; reference-based pricing defense review; Workers' Comp classification and E-Mod "
+                    "correction; and saas_technographic_churn_pixel_scraping. These work-queue labels describe this chapter's "
+                    "operating decomposition rather than additional supplied play identifiers. Every queue needs an "
+                    "entry document, a calculation, an authorized reviewer, and an exit artifact. For example, renewal "
+                    "targeting starts with a filing observation, calculates days until a verified policy anniversary, "
+                    "and exits with a dated meeting brief. Compensation reconstruction starts with engagement letters "
+                    "and carrier statements, separates direct employer fees from indirect remuneration, and exits with "
+                    "an ERISA section 408(b)(2) disclosure package where the health-plan brokerage or consulting "
+                    "provisions apply. Captive screening requires participation terms and collateral requirements, not "
+                    "just an attractive quote. Reference-based pricing review requires actual provider-dispute and "
+                    "defense terms, not a generic savings percentage. Give each queue a reason to stop: unavailable "
+                    "authority, unmatched policy, incomplete claim period, or unresolved allocation. Such stops preserve "
+                    "analyst capacity for evidence that can support a transaction."
+                ),
+                (
+                    "Use the first nine directory entries as a low-cost discovery and reference layer. CMS NADAC "
+                    "provides acquisition-cost benchmarks, not a complete measure of an employer's contractual drug "
+                    "cost. Preserve effective dates, units, package identifiers, and the original extract before joining "
+                    "it to an authorized pharmacy claim. RxNav and the FDA NDC Directory help resolve identifiers, "
+                    "but neither substitutes for the PBM's paid-claim ledger or establishes therapeutic equivalence. "
+                    "NPPES identifies providers; an NPI does not establish network participation, credentialing status, "
+                    "or payment entitlement. Transparency in Coverage files can support selected negotiated-rate "
+                    "comparisons, yet their size, reporting relationships, and plan-specific applicability make broad "
+                    "downloads wasteful. Fetch a relevant index first, isolate the required payer and service family, "
+                    "and cap storage before expanding. A five-gigabyte partition downloaded twice consumes ten "
+                    "gigabytes of transfer without adding evidence; content hashes and conditional requests avoid "
+                    "that duplication. Treat every published cadence as the publisher's intended schedule, with "
+                    "observed release timestamps controlling analysis. Public availability also does not imply "
+                    "permission to redistribute every assembled product. Store source terms alongside each connector, "
+                    "and send stale or incomplete observations into a document-request queue rather than silently "
+                    "substituting a more convenient benchmark."
+                ),
+            ],
+            "table": {
+                "caption": "Named Source Directory, Entries 1–9: Public Discovery and Reference Feeds",
+                "headers": [
+                    "Named source and specific operating purpose",
+                    "Exact access route and retrieval method",
+                    "Cost tier and observable refresh latency",
+                    "Rate-limit hygiene and permitted retrieval scope",
+                    "Fallback evidence when the source fails",
+                ],
+                "rows": [
+                    [
+                        "DOL Form 5500 datasets identify sponsor, plan, funding, and reported service relationships.",
+                        "Open https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/public-disclosure/foia/form-5500-datasets and download the published annual files.",
+                        "Free public downloads; filing-year releases and later updates lag actual coverage decisions.",
+                        "Download each changed archive once; hash contents and poll the catalogue weekly.",
+                        "Request signed current filings and plan documents directly from the authorized sponsor.",
+                    ],
+                    [
+                        "EFAST2 Filing Search resolves individual returns and amendment history before prospect qualification.",
+                        "Use https://www.efast.dol.gov/5500search/ with sponsor EIN, plan number, and filing year.",
+                        "Free interactive search; searchable filings arrive after submission and processing rather than renewal.",
+                        "Use human lookup for exceptions; prefer bulk datasets over automated interface scraping.",
+                        "Ask the sponsor for filed return copies and its submission acknowledgement.",
+                    ],
+                    [
+                        "CMS NADAC supplies date-specific outpatient drug acquisition benchmarks for controlled repricing tests.",
+                        "Open https://data.medicaid.gov/ and select the NADAC dataset's published download or API link.",
+                        "Free public feed; normally weekly publication, with record effective dates governing comparisons.",
+                        "Follow the current catalogue API contract; cache extracts and honor throttling responses.",
+                        "Use the last dated extract with explicit age, or suspend affected drug comparisons.",
+                    ],
+                    [
+                        "NLM RxNav resolves supported NDC identifiers into RxNorm concepts for product matching.",
+                        "Call https://rxnav.nlm.nih.gov/REST/rxcui.json?idtype=NDC&id=00000000000 using the actual validated NDC value.",
+                        "Free public service; terminology follows published releases rather than real-time claim adjudication.",
+                        "Cache identifier responses; throttle below published limits and back off on service errors.",
+                        "Use an approved local RxNorm release and manually review unresolved product identifiers.",
+                    ],
+                    [
+                        "FDA openFDA NDC Directory checks listed products, packages, and labeling organization identifiers.",
+                        "Query https://api.fda.gov/drug/ndc.json with documented search filters and bounded result pages.",
+                        "Free API with key-dependent quotas; dataset update timestamps determine usable reference age.",
+                        "Register a key where appropriate; obey quota headers and avoid repeated full scans.",
+                        "Download FDA's NDC Directory files and retain the release date with each match.",
+                    ],
+                    [
+                        "CMS NPPES downloadable files support provider identity matching without exposing member claims.",
+                        "Download public files from https://download.cms.gov/nppes/NPI_Files.html and load selected identity columns.",
+                        "Free monthly full replacement files and weekly incremental files provide scheduled updates.",
+                        "Retrieve published archives once; process locally instead of issuing millions of lookup calls.",
+                        "Ask the payer or provider for current identifiers and validate unresolved entity relationships.",
+                    ],
+                    [
+                        "CMS Transparency in Coverage resources explain payer-published negotiated-rate machine-readable file requirements.",
+                        "Start at https://www.cms.gov/healthplan-price-transparency, then retrieve the relevant payer's public file index.",
+                        "Public files generally refresh monthly; storage, parsing, and transfer create operator costs.",
+                        "Read index metadata first; stream bounded files and respect the hosting site's limits.",
+                        "Request applicable network exhibits and sample repricing directly from the employer's administrator.",
+                    ],
+                    [
+                        "SEC EDGAR submissions corroborate public-company identities, subsidiaries, and material corporate events.",
+                        "Fetch https://data.sec.gov/submissions/CIK0000320193.json after substituting the verified ten-digit issuer CIK.",
+                        "Free public JSON; new filings generally appear promptly, but subsidiary detail remains periodic.",
+                        "Send an identifying User-Agent; stay below SEC's published request ceiling and cache responses.",
+                        "Use issuer investor-relations filings and employer-provided legal-entity charts for identity corroboration.",
+                    ],
+                    [
+                        "SAM.gov entity search corroborates registered contractor entities and public registration attributes.",
+                        "Use https://sam.gov/search/ interactively with the verified entity name or Unique Entity ID.",
+                        "Public search is free; entity updates follow registration activity and processing.",
+                        "Use published search controls; request approved API access separately for repeated retrieval.",
+                        "Obtain the employer's entity registration documents and cross-check its actual plan sponsor.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Make discovery records earn their place in the deal file",
+                "body": "The best small desks preserve uncertainty instead of turning every observed change into a sales claim.",
+                "items": [
+                    "Compare amended and original Form 5500 returns before treating a broker change as an incumbent displacement opportunity.",
+                    "Carry NADAC effective date and quantity basis into every claim-level result; quarantine package conversions that lack an auditable factor.",
+                    "Ask for the issued experience-rating worksheet early; a public employer profile cannot reconstruct carrier-reported losses.",
+                    "Separate DNS change detection from benefit renewal confirmation, and give both observations their own timestamp and evidence owner.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Buy restricted evidence selectively and treat technographics as weak signals",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "The second nine directory entries handle restricted rating evidence, producer verification, and enrichment. "
+                    "NCCI and WCIRB materials are not open employer-loss databases: access depends on the product, "
+                    "jurisdiction, subscriber agreement, and permitted relationship to the insured. Obtain employer authority "
+                    "and request the applicable issued worksheet before building any E-Mod correction model. Separate "
+                    "classification questions from experience-rating questions because payroll allocation, loss valuation, "
+                    "ownership changes, and state rules affect different calculations. Use state insurance-department "
+                    "records as the primary check for producer license status and authorized lines; NIPR reports "
+                    "can consolidate permitted information but do not replace state-specific analysis. Record both "
+                    "the producer and business-entity requirements applicable to the engagement. A Life and Health "
+                    "license does not authorize Property and Casualty placement, and an advisory label does not "
+                    "resolve whether TPA licensing applies to actual activities. Keep license verification outside "
+                    "the prospect scoring model: it determines whether the proposed service can be performed, "
+                    "not whether the account looks attractive. Where access is unavailable, request the employer's "
+                    "existing worksheet, policy declarations, payroll audit, and loss runs through the current "
+                    "authorized channel. Never purchase another party's portal credentials or route restricted "
+                    "records through a general-purpose enrichment vendor."
+                ),
+                (
+                    "Implement saas_technographic_churn_pixel_scraping as TRACK_1 commercial-domain observation, not employee tracking. "
+                    "For each approved target, inspect public homepage script hosts and permitted DNS TXT/CNAME "
+                    "records weekly for Salesforce, HubSpot, Marketo, Segment, and NetSuite indicators. Store the "
+                    "observation timestamp, response hash, matching rule version, and previous state. Weekly polling "
+                    "cannot establish the exact installation or removal day: it yields an interval between the "
+                    "last confirmed old state and first confirmed new state. Record an exact event date only "
+                    "when a reliable dated source supports it. A historical first-seen event can generate a "
+                    "Month 10–11 hypothesis, never a verified software or benefits renewal. With 200 domains, "
+                    "three requests per domain, and 52 weekly runs, the planned workload is 31,200 requests "
+                    "annually before retries; per-host pacing matters more than aggregate speed. If twenty "
+                    "monthly changes produce six corroborated migrations, a thirty-minute review of each "
+                    "corroborated event consumes three analyst hours. Those figures describe screening workload, "
+                    "not promised conversion. Marketing agencies, tag managers, cached pages, and domain redirects "
+                    "all create false events. Suppress a lead until a second observation or employer confirmation "
+                    "distinguishes migration from routine website maintenance."
+                ),
+                (
+                    "Build the enrichment waterfall from cheapest and least intrusive evidence upward. First resolve "
+                    "the legal entity from filings; then inspect its public website and DNS; next use a "
+                    "licensed historical-DNS or technographic service only for unresolved accounts; finally write "
+                    "qualified employer-level facts into the desk's authorized CRM. SecurityTrails and BuiltWith "
+                    "can corroborate historical observations, but their coverage and collection dates differ, so "
+                    "agreement between vendors is not proof of an independent underlying event. The required "
+                    "fallback combines passive DNS TXT/CNAME observations with dated job-posting mentions and "
+                    "then seeks direct confirmation before routing a claimed vendor switch. Job descriptions "
+                    "can remain online after a migration, so preserve publication and retrieval dates separately. "
+                    "HubSpot company records should contain evidence links, source age, and outreach rationale, "
+                    "not member claims or prescription histories. Use narrowly scoped private-app tokens or "
+                    "OAuth grants for the operator's own account, and rotate access when contractors leave. "
+                    "A hypothetical $150 monthly enrichment subscription spread across thirty reviewed accounts "
+                    "costs $5 per reviewed account before labor; attribute that expense within the scenario's "
+                    "operating-cost envelope rather than inventing incremental profit. When paid evidence adds "
+                    "no corroboration, cancel the connector and retain the public-record workflow."
+                ),
+            ],
+            "table": {
+                "caption": "Named Source Directory, Entries 10–18: Restricted Evidence and Commercial Enrichment",
+                "headers": [
+                    "Named source and specific operating purpose",
+                    "Exact access route and permission requirement",
+                    "Cost tier and observable refresh latency",
+                    "Rate-limit hygiene and permitted retrieval scope",
+                    "Fallback evidence when the source fails",
+                ],
+                "rows": [
+                    [
+                        "NCCI Riskworkstation and applicable reports support authorized experience-rating and classification investigations.",
+                        "Enter through https://www.ncci.com/ and use the contracted product under permitted insured access.",
+                        "Contracted access or report pricing applies; issued worksheet revisions control the analytical version.",
+                        "Export only authorized accounts through supported methods; never automate credential-sharing arrangements.",
+                        "Request the insured's issued worksheet, carrier loss runs, and audited payroll records.",
+                    ],
+                    [
+                        "WCIRB Connect supplies permitted California workers' compensation policy and experience-rating information.",
+                        "Start at https://www.wcirb.com/ and follow WCIRB Connect registration and account authorization.",
+                        "Eligibility and charges depend on service; updates follow bureau processing and report issuance.",
+                        "Use account-approved functions and supported exports; restrict access to the relevant insured.",
+                        "Obtain current California rating documents and carrier-issued revisions from the employer's broker.",
+                    ],
+                    [
+                        "NIPR Producer Database reports consolidate producer information where report access is permitted.",
+                        "Start at https://nipr.com/ and select the authorized Producer Database report service.",
+                        "Report or subscription charges depend on access; state reporting creates variable update lag.",
+                        "Purchase supported reports within account permissions; avoid harvesting unrelated producer identity records.",
+                        "Check the relevant state insurance department's license record and appointment requirements directly.",
+                    ],
+                    [
+                        "California Department of Insurance license status search verifies California producer licensing details.",
+                        "Open https://www.insurance.ca.gov/license-status/ and search the exact producer or business entity.",
+                        "Free public lookup; recorded status reflects department processing rather than instantaneous changes.",
+                        "Use targeted interactive verification and retain the lookup date with the engagement.",
+                        "Ask the department for confirmation when public status conflicts with supplied licensing documents.",
+                    ],
+                    [
+                        "ICANN Lookup provides RDAP-based registration context for resolving commercial-domain identity discrepancies.",
+                        "Use https://lookup.icann.org/en with the employer's verified public domain name.",
+                        "Free public lookup; registry changes and privacy restrictions determine available registration detail.",
+                        "Prefer permitted targeted lookups; do not bypass redacted contact fields or registry throttles.",
+                        "Use the employer's legal footer, corporate filings, and direct domain-ownership confirmation.",
+                    ],
+                    [
+                        "Google Public DNS JSON service checks current public TXT and CNAME observations.",
+                        "Call https://dns.google/resolve?name=example.com&type=TXT and substitute the authorized target and record type.",
+                        "Free public resolver; TTL and resolver caching determine current-answer freshness.",
+                        "Cache within TTL, pace requests per target, and treat failures as missing observations.",
+                        "Use the operator's normal recursive resolver and compare passive historical records separately.",
+                    ],
+                    [
+                        "SecurityTrails API supplies licensed domain intelligence and historical context for suspected changes.",
+                        "Call https://api.securitytrails.com/v1/domain/example.com with an account APIKEY header and approved hostname.",
+                        "Commercial plans set credits and coverage; source collection timestamps determine historical usefulness.",
+                        "Budget credits per qualified account; honor account quotas and avoid uncontrolled retry loops.",
+                        "Combine saved DNS snapshots with dated job postings and direct employer confirmation.",
+                    ],
+                    [
+                        "BuiltWith Domain API corroborates publicly observed technology indicators across selected commercial domains.",
+                        "Use https://api.builtwith.com/v21/api.json with documented KEY and LOOKUP parameters for your account.",
+                        "Commercial API credits apply; vendor observation dates can lag actual installation or removal.",
+                        "Keep credential-bearing URLs out of logs; cache results and enforce a monthly credit ceiling.",
+                        "Review permitted public page sources and compare repeated first-party observations before routing.",
+                    ],
+                    [
+                        "HubSpot CRM Companies API stores employer-level qualification records inside the operator's authorized tenant.",
+                        "Call https://api.hubapi.com/crm/v3/objects/companies using scoped OAuth or a private-app access token.",
+                        "Subscription and feature tiers vary; writes are immediate while downstream synchronization can lag.",
+                        "Use supported batching, obey rate headers, and exclude member-level health information entirely.",
+                        "Maintain an encrypted employer-only CSV queue and reconcile it when the CRM recovers.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Reconcile diagnostic tools to claims, rating documents, and retained revenue",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "A useful PBM diagnostic separates paid ingredient cost, dispensing fees, administrative charges, member "
+                    "cost sharing, rebates, and other contractual remuneration. Obtain an employer-authorized, appropriately "
+                    "protected claim extract and a data dictionary before calculating anything. Match reversals and "
+                    "resubmissions, preserve service dates, and normalize quantities only with a documented conversion. "
+                    "For an illustrative fill of thirty units, a $2.10 NADAC benchmark produces $63 of "
+                    "benchmark ingredient cost; a comparable $78 ingredient charge leaves a $15 diagnostic difference "
+                    "before dispensing fees, administrative charges, and rebate treatment. One thousand comparable "
+                    "fills would produce $15,000 of benchmark difference, not established recoverable savings and "
+                    "not desk revenue. Actual recovery requires contractual entitlement, suitable comparability, and "
+                    "a settled employer credit. Rebate analysis must match covered drug periods, eligible utilization, "
+                    "guarantee definitions, exclusions, and reconciliation dates. If an employer receives $40,000 "
+                    "and the desk's enforceable retained split is 20%, the associated fee basis is $8,000 "
+                    "when recognition conditions are met; the remaining $32,000 never becomes operator revenue. "
+                    "Where specialty products lack suitable benchmarks, segregate them and request contract-specific "
+                    "evidence. Do not extrapolate the clean generic sample across excluded specialty utilization "
+                    "merely to enlarge the proposal."
+                ),
+                (
+                    "Workers' Comp diagnostics need an equally disciplined distinction between an indicative model and "
+                    "an issued correction. With $1,000,000 of payroll and a hypothetical manual rate of $4 "
+                    "per $100, the manual premium component is $40,000. Multiplying that component by 1.20 "
+                    "rather than 1.10 changes it by $4,000 before schedule factors, credits, assessments, "
+                    "minimums, and other policy adjustments. This sensitivity calculation does not establish the "
+                    "actual corrected premium or prove that the experience modifier should change. Reproduce "
+                    "the applicable bureau rules, valuation dates, split points, payroll classifications, and loss "
+                    "treatment using authorized records; then submit documented discrepancies through the proper "
+                    "carrier or bureau process. Stop-loss analysis needs a separate worksheet containing specific "
+                    "and aggregate attachment points, named lasers, contract basis, aggregating deductibles, and "
+                    "run-in or run-out treatment. A $250,000 specific attachment with a $500,000 claimant "
+                    "laser leaves an additional $250,000 of claimant-specific exposure under otherwise comparable "
+                    "terms; model that exposure rather than counting premium reduction alone. If claim detail "
+                    "or policy wording remains incomplete, obtain a binding clarification or compare documented "
+                    "alternatives. Captive collateral and reference-based pricing defense obligations belong in "
+                    "the employer risk model, never in the desk's sales-revenue column."
+                ),
+                (
+                    "Keep the scorecard ledger separate from all employer savings and insurance flows. Formula v2.0 "
+                    "defines Conservative revenue of $120,000 at 32%, producing $38,400 owner profit and "
+                    "$81,600 costs; Base revenue of $535,000 at 45.0%, producing $240,750 profit and "
+                    "$294,250 costs; and Scaled revenue of $950,000 at 58%, producing $551,000 profit "
+                    "and $399,000 costs. Teams remain 1 FT plus 3 C in Conservative and Base, and "
+                    "2 FT plus 4 C in Scaled. Although the scorecard calls the topline gross revenue, "
+                    "its stated basis is already net retained operator fees, commissions, and refund splits. "
+                    "Do not apply an invented retained-share discount a second time. An illustrative Base "
+                    "composition is 2,500 covered employees times $10 retained PEPM times twelve months, "
+                    "or $300,000, plus $175,000 retained stop-loss/TPA commissions and $60,000 collected "
+                    "refund splits. The last component could represent a 25% retained share of $240,000 "
+                    "settled employer refunds. These components total exactly $535,000 and are a reconciliation "
+                    "example, not extra revenue assumptions. Apply ASC 606 principal-versus-agent presentation "
+                    "to the actual arrangements and evaluate variable consideration and performance obligations. "
+                    "Cash collection, signed engagement, and revenue recognition are distinct ledger events."
+                ),
+            ],
+            "table": {
+                "caption": "Diagnostic Unit Math and Formula v2.0 Revenue Reconciliation",
+                "headers": [
+                    "Diagnostic or scenario being reconciled",
+                    "Exact arithmetic and supported economic meaning",
+                    "Evidence required before a commercial conclusion",
+                    "Risk fallback and revenue treatment",
+                ],
+                "rows": [
+                    [
+                        "PBM ingredient comparison for a matched thirty-unit prescription fill.",
+                        "Thirty units times $2.10 equals $63; comparable $78 ingredient charge leaves $15.",
+                        "Retain paid claim, reversal history, quantity conversion, benchmark date, and contract definitions.",
+                        "Exclude unmatched products; benchmark differences remain diagnostics until contractual recovery is established.",
+                    ],
+                    [
+                        "Workers' Comp sensitivity on a hypothetical manual premium component.",
+                        "$1,000,000 payroll divided by 100 times $4 equals $40,000 before modifiers.",
+                        "Obtain issued rating worksheet, audited payroll, applicable classifications, and carrier calculation details.",
+                        "A 0.10 modifier difference implies $4,000 component sensitivity, not an issued refund.",
+                    ],
+                    [
+                        "Conservative and Base cases retain the canonical four-person staffing structure.",
+                        "$120,000 times 32% equals $38,400; $535,000 times 45.0% equals $240,750.",
+                        "Reconcile retained-fee ledger and all expense accounts to the stated annual scenario.",
+                        "Costs equal $81,600 and $294,250 respectively; exclude premiums and employer claim funds.",
+                    ],
+                    [
+                        "Scaled case preserves six people and the specified retained-revenue basis.",
+                        "$950,000 times 58% equals $551,000 profit, leaving $399,000 in annual costs.",
+                        "Verify two full-time roles, four contractors, commission statements, and earned refund splits.",
+                        "Treat account-level volatility within costs; never substitute employer savings for recognized fees.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before a diagnostic becomes a proposal",
+                "body": "Release a client-facing finding only when the evidence, authority, calculation, and commercial basis agree.",
+                "items": [
+                    "Verify employer authority, appropriate business associate arrangements, minimum-necessary fields, and a named reviewer before ingesting identifiable claims.",
+                    "Verify service-date coverage, reversal handling, identifier matches, quantity conversions, and control totals before quoting PBM differences.",
+                    "Verify issued rating documents, jurisdiction-specific rules, policy adjustments, and the carrier correction route before describing any E-Mod recovery.",
+                    "Verify applicable producer and TPA requirements, compensation disclosures, retained-share terms, and recognition treatment before recording operator revenue.",
+                ],
+            },
+        },
+        {
+            "heading": "4. Operate a reproducible pipeline with bounded access and evidence-backed handoffs",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Use a three-zone pipeline: immutable source objects, normalized working records, and approved employer-level "
+                    "outputs. A small desk can implement control tables with SQLite, transformations with Python's "
+                    "csv, decimal, datetime, hashlib, and json modules, and scheduled execution through its existing "
+                    "job runner. These choices avoid unnecessary subscription sprawl, but the standard library alone "
+                    "does not provide encrypted databases or managed secrets. Place files on appropriately encrypted "
+                    "storage, keep tokens in an approved credential service, and apply account-level access controls. "
+                    "Every ingestion manifest should contain source URL or delivery channel, retrieval time, effective "
+                    "period, content hash, authorization reference, schema version, row count, and control totals. "
+                    "Use Decimal for money and explicit currency fields; binary floating-point arithmetic can "
+                    "create avoidable penny mismatches across large claim files. Record rejected rows with a "
+                    "specific reason and reconcile accepted plus rejected counts to the source. Idempotent loading "
+                    "should recognize an identical object and skip duplication while preserving a new amendment "
+                    "as a separate version. Separate network failures from legitimate empty datasets. An empty "
+                    "response after a timeout is not evidence that a broker relationship disappeared or a "
+                    "claim population fell to zero."
+                ),
+                (
+                    "Build protections around the actual data role. Public plan filings belong in the discovery zone; "
+                    "member-level claim records belong in a restricted analytical workspace with access limited to "
+                    "the engagement team. Determine whether the desk acts as a business associate and execute "
+                    "required arrangements under 45 CFR 164.502(e) and 164.504(e) before receiving protected "
+                    "health information in that role. Apply minimum-necessary requirements where applicable under "
+                    "45 CFR 164.502(b), and implement access, audit, integrity, and transmission safeguards under "
+                    "45 CFR 164.312. Hashing member identifiers alone does not establish HIPAA de-identification; "
+                    "use a supported method under 45 CFR 164.514 when that outcome is required. Keep "
+                    "claims out of CRM notes, ordinary email attachments, public issue trackers, and commercial "
+                    "technographic APIs. Give contractors engagement-specific access and remove it at assignment "
+                    "end. Establish retention periods from contractual duties, applicable rules, and litigation "
+                    "holds, then verify deletion across working copies and backups according to the approved "
+                    "schedule. For an outbound report, inspect the actual recipient list and deliver through "
+                    "the agreed secure channel. Employer-level aggregate findings still require review for "
+                    "small-cell disclosure and contractual restrictions; aggregation is a technique, not an "
+                    "automatic permission to publish."
+                ),
+                (
+                    "Run the desk on an exception dashboard rather than a pile of connector success messages. "
+                    "Track source age, unmatched employer identities, missing authorization references, claim-total "
+                    "differences, unresolved product conversions, stale license checks, and proposals lacking a "
+                    "current renewal document. Give every exception an owner and an explicit next action. "
+                    "Test connectors with saved, authorized fixtures so a vendor outage cannot silently change "
+                    "the analytical result. A schema change that renames a paid-amount column must stop the "
+                    "affected calculation, while an optional website-description change should not halt unrelated "
+                    "work. Use bounded retries with exponential backoff and jitter, honor Retry-After where "
+                    "provided, and stop after the connector's configured retry budget. Review a small sample "
+                    "of accepted records as well as rejected records; perfectly reconciled totals can still "
+                    "hide a wrong join. At weekly handoff, the analyst supplies the evidence manifest, "
+                    "calculation version, open assumptions, and exact client question. The licensed producer "
+                    "confirms service scope and commercial disclosures before recommendations leave the desk. "
+                    "Measure useful throughput as verified employer briefs and resolved discrepancies per "
+                    "analyst hour, not harvested rows. This discipline supports the scorecard's small teams "
+                    "without pretending automation eliminates underwriting uncertainty, carrier judgment, or "
+                    "client-specific professional review."
+                ),
+            ],
+            "table": {
+                "caption": "Pipeline Controls That Turn Eighteen Sources into Defensible Operator Outputs",
+                "headers": [
+                    "Control surface and accountable operating owner",
+                    "Required implementation and specific evidence artifact",
+                    "Failure condition that stops affected work",
+                    "Recovery action and permitted downstream handoff",
+                ],
+                "rows": [
+                    [
+                        "Source-ingestion owner maintains public, licensed, and employer-delivered records separately.",
+                        "Store immutable originals with timestamps, hashes, permissions, schema versions, and control totals.",
+                        "Missing authorization, unexpected schema changes, or unexplained source-total differences stop affected processing.",
+                        "Reacquire the approved extract and replay only the impacted versioned transformation.",
+                    ],
+                    [
+                        "Analytical owner maintains reproducible PBM, stop-loss, and experience-rating calculations.",
+                        "Use decimal arithmetic, dated benchmark joins, reversal matching, and documented rating assumptions.",
+                        "Unresolved units, duplicate claims, missing valuation dates, or unmatched policies block the conclusion.",
+                        "Segregate the incomplete population and issue only the fully supported scoped finding.",
+                    ],
+                    [
+                        "Access owner controls restricted health records and engagement-specific contractor permissions.",
+                        "Maintain authorized identities, audit events, secure transfers, retention schedules, and deletion evidence.",
+                        "Unapproved recipients, expired access authority, or missing required agreements stop disclosure.",
+                        "Correct permissions and delivery settings before transmitting the reviewed minimum-necessary output.",
+                    ],
+                    [
+                        "Commercial owner reconciles proposals, compensation disclosures, commissions, and retained refund shares.",
+                        "Tie each fee to engagement terms, performance evidence, payer statements, and accounting treatment.",
+                        "Unverified licensing, disputed compensation basis, or unsupported recovery amounts block booking.",
+                        "Resolve the discrepancy with the proper counterparty and preserve the final signed evidence.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Register the source and authority",
+                    "action": "Classify each connector as public, licensed, or employer-authorized before scheduling retrieval.",
+                    "detail": "Record permitted fields, source terms, responsible owner, expected cadence, cost ceiling, and the applicable account or engagement authorization.",
+                },
+                {
+                    "step": 2,
+                    "title": "Capture and reconcile the original",
+                    "action": "Store the unmodified object, create its content hash, and reconcile row counts and monetary control totals.",
+                    "detail": "Load amendments separately, retain rejected-row explanations, and distinguish transport errors from valid empty results.",
+                },
+                {
+                    "step": 3,
+                    "title": "Run scoped diagnostics",
+                    "action": "Apply versioned employer matching, dated PBM benchmarks, issued rating inputs, and retained-fee calculations.",
+                    "detail": "Use saved test fixtures, decimal arithmetic, explicit unit conversions, and independent review of high-value findings.",
+                },
+                {
+                    "step": 4,
+                    "title": "Release the evidence-backed handoff",
+                    "action": "Deliver a reviewed employer brief through the agreed secure channel and reconcile resulting commercial events.",
+                    "detail": "Include source age, unresolved assumptions, verified renewal dates, compensation terms, and the next counterparty action without exposing unnecessary member information.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "The edge is not collecting more records; it is knowing which dated evidence can support the next collectible fee.",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Download the relevant Form 5500 years and build an EIN, plan-number, filing-year, and amendment crosswalk before purchasing prospect enrichment.",
+        "Configure the eighteen-source directory with source owners, documented permissions, refresh checks, request budgets, and explicit fallback evidence.",
+        "Pilot weekly public-domain script and DNS monitoring on a bounded cohort, recording change intervals rather than inventing exact installation dates.",
+        "Obtain employer-authorized PBM extracts, issued experience-rating worksheets, and current stop-loss contracts before calculating recoveries or transition economics.",
+        "Reconcile the $120,000, $535,000, and $950,000 revenue cases to retained operator fees and the exact $38,400, $240,750, and $551,000 owner-profit outcomes.",
+        "Complete the four-step ingestion-to-handoff SOP, verify applicable licenses and disclosures, and test restricted-data access removal before expanding contractor coverage.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "ERISA section 104(a), 29 U.S.C. 1024(a): Annual report filing",
+            "url": "https://www.law.cornell.edu/uscode/text/29/1024",
+            "relevance": "Supports the annual-report discovery workflow while requiring operators to account for filing periods and applicable reporting obligations.",
+        },
+        {
+            "title": "ERISA section 408(b)(2), 29 U.S.C. 1108(b)(2): Service arrangements and health-plan compensation disclosure",
+            "url": "https://www.law.cornell.edu/uscode/text/29/1108",
+            "relevance": "Requires analysis of applicable brokerage and consulting disclosures, including covered direct and indirect compensation before relevant arrangements.",
+        },
+        {
+            "title": "45 CFR 164.502: Uses, disclosures, minimum necessary, and business associates",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.502",
+            "relevance": "Governs permitted handling of protected health information and applicable minimum-necessary and business-associate requirements.",
+        },
+        {
+            "title": "45 CFR 164.504(e): Business associate contract requirements",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
+            "relevance": "Defines required contractual provisions where the desk or its subcontractors perform business-associate functions.",
+        },
+        {
+            "title": "45 CFR 164.312: Technical safeguards",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
+            "relevance": "Provides the technical-safeguard framework for access controls, audit controls, integrity, authentication, and transmission security.",
+        },
+        {
+            "title": "45 CFR 164.514: De-identification and other implementation requirements",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.514",
+            "relevance": "Distinguishes supported de-identification methods from simple identifier hashing and informs restricted analytical outputs.",
+        },
+        {
+            "title": "45 CFR 147.212: Public disclosure of health plan pricing information",
+            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-147/section-147.212",
+            "relevance": "Provides a primary authority for applicable public machine-readable pricing disclosures and their update requirements.",
+        },
+        {
+            "title": "California Insurance Code section 1631: Insurance transaction licensing",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=INS&sectionNum=1631.",
+            "relevance": "Illustrates a concrete state licensing requirement that must be checked against the actual activities, lines, entities, and jurisdiction involved.",
+        },
+    ],
+}

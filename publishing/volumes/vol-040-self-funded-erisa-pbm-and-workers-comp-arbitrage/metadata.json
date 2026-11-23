@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-040-self-funded-erisa-pbm-and-workers-comp-arbitrage",
+  "volume_slug": "vol-040-self-funded-erisa-pbm-and-workers-comp-arbitrage",
+  "volume_number": 40,
+  "site_ui": {
+    "cover": [
+      "SELF-FUNDED",
+      "PBM & E-MOD",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "UNDERWRITE CLAIMS. AUDIT THE CONTRACT.",
+      "VERIFY NET EMPLOYER SAVINGS."
+    ],
+    "lead": "Level-Funded ERISA Transitions, Pass-Through PBM Contract Audits, Reference-Based Pricing & Workers' Compensation Experience-Mod Reviews",
+    "summary": "Coordinate licensed benefits advisers, actuaries, and claims specialists to evaluate employer plan funding, PBM rebate terms, and NCCI experience-mod inputs. Price stop-loss gaps, runout liabilities, participant protections, and disclosed compensation before counting verified savings.",
+    "chapters": [
+      "Self-funded health, PBM & workers' comp service models",
+      "Employer fiduciaries, licensed brokers & TPA partners",
+      "Net savings, disclosed commissions & audit-fee economics",
+      "Secure claims intake & benefits-analysis startup stack",
+      "Stop-loss exclusions, lasers & runout liability traps",
+      "Renewal triggers & employer audit mandates",
+      "Level-funded ERISA transitions & actuarial underwriting",
+      "Pass-through PBM rebates & pharmacy contract reconciliation",
+      "Reference-based pricing & participant balance-bill support",
+      "NCCI E-Mod inputs, loss runs & correction procedures",
+      "Privacy controls, fiduciary review & lean specialist pods",
+      "First 30-day employer-benefits audit sprint"
+    ],
+    "flow": [
+      [
+        "ENGAGE",
+        "Confirm employer authority & adviser licensing"
+      ],
+      [
+        "SECURE",
+        "Collect authorized claims, contracts & loss runs"
+      ],
+      [
+        "UNDERWRITE",
+        "Model funding, stop-loss & participant exposure"
+      ],
+      [
+        "AUDIT",
+        "Validate PBM rebates & experience-mod inputs"
+      ],
+      [
+        "IMPLEMENT",
+        "Coordinate approved plan changes & corrections"
+      ],
+      [
+        "VERIFY",
+        "Reconcile net savings, fees & ongoing obligations"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "SELF-FUNDED HEALTH, PBM & WORKERS' COMP ARBITRAGE",
+  "subtitle": "The Complete Playbook for Self-Funded Health, PBM & Workers' Comp Arbitrage: $120,000–$950,000 USD in Annual Retained Revenue with a 1 FT + 3 C Core Pod (4 People), Scaling to 6 People",
+  "chapter_count": 12,
+  "total_word_count": 79747,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 93,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T16:20:58Z"
+}

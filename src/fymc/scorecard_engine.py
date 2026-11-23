@@ -3478,6 +3478,413 @@ PLAY_DEFINITIONS = {
                      'fallback': 'Stop unauthorized provisioning, isolate affected access and '
                                  'coordinate vendor-approved direct licenses or permitted '
                                  'migration while resolving audit liabilities transparently'}]},
+    'parcel_carrier_refund_tariff_audit_contingency': {'id': 'parcel_carrier_refund_tariff_audit_contingency',
+ 'inputs': ['Customer authorization, carrier account access through approved interfaces, '
+            'invoice line items, tracking events, package dimensions and weights, and payment '
+            'or credit records.',
+            'Effective carrier contracts, tariff versions, negotiated dimensional divisors, '
+            'minimum-net-charge provisions, service-guarantee exclusions and claim deadlines '
+            'by service and geography.',
+            'Contingency agreement specifying a 35%–50% fee on realized recoveries, treatment '
+            'of existing customer disputes, and a separate methodology for compensation on '
+            'negotiated prospective savings.'],
+ 'mechanism': 'Audit authorized FedEx Billing Online, UPS Billing Center and DHL invoice '
+              "exports against shipment events, measured dimensions and the customer's "
+              'effective service agreements. Recover eligible late-delivery guarantee, '
+              'dimensional-weight and duplicate-billing overcharges for a negotiated 35%–50% '
+              'of realized refunds, excluding suspended guarantees, waived rights and expired '
+              'claims. Separately negotiate minimum-net-charge caps or floors where the '
+              'carrier offers them, measuring prospective savings against an agreed '
+              'shipment-level baseline rather than treating a valid contractual minimum as an '
+              'overcharge.',
+ 'metrics': ['Realized refund yield: verified carrier credits or cash received divided by '
+             'audited parcel spend, segmented by late delivery, dimensional weight and '
+             'duplicate billing.',
+             'Claims acceptance and timeliness: accepted dollars divided by submitted dollars, '
+             'with the percentage of eligible claims filed before the applicable deadline.',
+             'Operator contribution: collected contingency fees minus data, submission and '
+             'dispute costs; report prospective minimum-charge savings separately from '
+             'refunds.'],
+ 'name': 'Parcel Carrier Late-Delivery, Dim-Weight and Minimum-Net-Charge Recovery Operator',
+ 'platform_risks': [{'detection_metric': 'Weekly rejection dollars by reason, missed-deadline '
+                                         'count, authentication failures and credit-posting '
+                                         'latency relative to the carrier-specific baseline.',
+                     'failure_mode': 'The carrier rejects claims or restricts access because '
+                                     'guarantee eligibility, filing rules or supported '
+                                     'integration methods differ from the audit assumptions.',
+                     'fallback': 'Pause the affected automation, use authorized exports and '
+                                 'supported manual submission channels, and restrict recovery '
+                                 'forecasts to confirmed eligible services and open filing '
+                                 'windows.',
+                     'impact': 'Expected recoveries disappear, processing costs rise and '
+                               'unsupported automation can jeopardize customer account access.',
+                     'trigger': 'A guarantee suspension, contractual waiver, claim-window '
+                                'change, undocumented endpoint dependency or portal '
+                                'authentication change.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Import customer-authorized exports or documented APIs, normalize tracking '
+              'and invoice identifiers, and create a deadline queue without assuming every '
+              'carrier provides a claims-submission API.',
+              '2. Recalculate eligible charges and delivery commitments using the applicable '
+              'contract version; remove guarantee suspensions, customer-caused exceptions, '
+              'duplicates already credited and claims outside their filing window.',
+              '3. Submit evidence-backed claims through permitted carrier channels, track '
+              'acknowledgments and appeals, and present minimum-net-charge negotiation '
+              'scenarios separately from historical billing errors.',
+              '4. Reconcile posted credits to invoices and customer receipts, invoice the '
+              'agreed contingency only on realized recovery, and monitor negotiated pricing '
+              'against the agreed baseline.']},
+    'utility_waste_cam_tariff_overcharge_audit': {'id': 'utility_waste_cam_tariff_overcharge_audit',
+ 'inputs': ['Up to 36 months of utility bills, interval-demand data, meter maps, cooling-tower '
+            'water balances or approved submeters, waste invoices, commercial leases and CAM '
+            'reconciliations.',
+            'Effective utility tariffs, demand-ratchet schedules, sewer-credit rules, '
+            'manufacturing exemption requirements, waste escalation terms, CAM exclusions and '
+            'contractual audit deadlines.',
+            'Customer authorization and a recovery agreement specifying refund contingencies, '
+            'prospective shared-savings duration, weather and occupancy adjustments, and '
+            'supporting engineering or tax-specialist responsibilities.'],
+ 'mechanism': 'Review up to 36 months of commercial electric, water/sewer, waste and lease CAM '
+              "charges, subject to each tariff's, contract's and jurisdiction's recovery "
+              'limits. Test demand-ratchet application, cooling-tower evaporation sewer '
+              'credits, qualifying manufacturing-meter tax exemptions, waste-hauler escalation '
+              'clauses and lease-specific CAM allocations against documented eligibility. '
+              'Charge a negotiated 35%–50% of realized refunds and a separately defined share '
+              'of verified prospective savings, avoiding double charging the same benefit.',
+ 'metrics': ['Realized recovery by category and site: collected refunds or usable credits '
+             'divided by audited utility, waste and CAM spend.',
+             'Verified recurring savings: adjusted baseline charges minus actual post-change '
+             'charges, controlling for tariff movements, usage, weather, occupancy and service '
+             'scope.',
+             'Recovery efficiency: investigation cost per recovered dollar, median days to '
+             'credit and percentage of claimed amounts supported by accepted documentation.'],
+ 'name': 'Commercial Utility, Waste and CAM Historical Recovery Operator',
+ 'platform_risks': [{'detection_metric': 'Percentage of proposed recovery dollars lacking '
+                                         'required evidence, denial rate by rule and incidence '
+                                         'of post-adjustment reversals.',
+                     'failure_mode': 'A utility, hauler or landlord denies recovery because '
+                                     'the claimed classification or credit lacks '
+                                     'contemporaneous eligibility evidence.',
+                     'fallback': 'Withdraw unsupported items, pursue documented disputes '
+                                 'within surviving deadlines, and implement properly '
+                                 'documented prospective metering or classification changes '
+                                 'where economically justified.',
+                     'impact': 'Historical refunds are reduced or eliminated, and an '
+                               'unsupported prospective adjustment can generate later '
+                               'rebilling.',
+                     'trigger': 'Missing cooling-tower metering, an expired lease audit '
+                                'period, unavailable historical tariffs or a manufacturing '
+                                'exemption that does not apply to the billed meter.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Build a site-and-meter ledger covering the requested 36-month period, '
+              'identify shorter recovery windows, and preserve timely utility disputes and '
+              'lease audit notices.',
+              '2. Recalculate demand ratchets, eligible evaporation deductions, qualifying '
+              'manufacturing exemptions, waste increases and CAM allocations using actual '
+              'tariff and lease provisions rather than assumed universal credits.',
+              '3. Submit supported correction requests to utilities, haulers and landlords; '
+              'obtain required meter verification or exemption documentation and distinguish '
+              'refundable errors from prospective tariff changes.',
+              '4. Reconcile cash refunds and posted credits, establish adjusted post-change '
+              'baselines, and invoice the 35%–50% recovery fee plus any non-overlapping, '
+              'contractually defined shared savings.']},
+    'inbound_rtb_pay_per_call_ping_post_exchange': {'id': 'inbound_rtb_pay_per_call_ping_post_exchange',
+ 'inputs': ['Authorized inbound traffic sources, accurate ads and landing pages, versioned '
+            'recipient-specific disclosures, TrustedForm or Jornaya evidence where applicable, '
+            'suppression records and permitted recording notices.',
+            'Ringba or Retreaver configuration, documented buyer ping-post endpoints, buyer '
+            'authorization or licensing checks, vertical-specific eligibility rules, '
+            'capacities and payout terms including any 90–120-second duration threshold.',
+            'Traffic cost data, call-detail records, transfer and consent events, buyer '
+            'acceptance receipts, duplicate identifiers, dispute reason codes and '
+            'restricted-access retention settings.'],
+ 'mechanism': 'Use Ringba or Retreaver-supported routing and buyer integrations to auction '
+              'qualified inbound calls through sub-second ping-post trees, earning the spread '
+              'between accepted buyer payouts and traffic acquisition costs. Operate separate '
+              'programs for ACA/Medicare, auto/home insurance, mass-tort legal intake and '
+              'emergency home services, with recipient-specific consent where required, '
+              'sector-specific transfer restrictions and privacy-minimized bid payloads. '
+              'TrustedForm or Jornaya records can support evidence of the actual '
+              'named-recipient disclosure but do not independently establish valid consent; '
+              'negotiated 90–120-second duration triggers qualify payment only alongside '
+              'genuine caller intent, buyer acceptance and applicable contract terms.',
+ 'metrics': ['Net contribution per qualified call: collected buyer revenue minus acquisition, '
+             'telephony, routing, verification and refund costs.',
+             'Routing quality: p95 auction latency, accepted-connection rate, abandonment rate '
+             'and buyer capacity rejection rate by vertical.',
+             'Evidence and dispute quality: percentage of transfers with required '
+             'recipient-specific permission records, duplicate rate, complaint rate and payout '
+             'reversal rate.'],
+ 'name': 'Consent-Verified Inbound RTB Pay-Per-Call Exchange Operator',
+ 'platform_risks': [{'detection_metric': 'Consent-recipient mismatch count, complaint and '
+                                         'reversal rates by source, and anomalous clustering '
+                                         'of call endings immediately after the billing '
+                                         'threshold.',
+                     'failure_mode': 'A buyer or routing platform rejects calls or suspends '
+                                     'the program because consent, marketing representations '
+                                     'or traffic quality fails applicable requirements.',
+                     'fallback': 'Stop affected sources and transfers, preserve evidence '
+                                 'securely, refund invalid billings and resume only with '
+                                 'corrected disclosures, permitted compensation structures and '
+                                 'verified buyer acceptance.',
+                     'impact': 'Payout reversals, account suspension, consumer complaints and '
+                               'potential regulatory or contractual exposure.',
+                     'trigger': 'Recipient mismatches, misleading ACA/Medicare advertising, '
+                                'restricted legal-referral fee structures, excessive '
+                                'duplicates or calls padded to cross a duration threshold.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Approve legitimate traffic sources and buyer contracts, segregate verticals, '
+              'and establish how each caller receives accurate recipient disclosures without '
+              'misleading benefit claims or prohibited steering.',
+              '2. Screen intent, geography, duplicates and applicable transfer restrictions; '
+              'obtain required permission before transmitting personal information and send '
+              'only permitted minimal qualification metadata in bid requests.',
+              '3. Run the supported sub-second auction with timeouts and capacity checks, '
+              'identify the selected recipient and obtain any required recipient-specific '
+              'permission before transfer, then connect the caller without artificially '
+              'extending duration.',
+              '4. Reconcile buyer acceptance and any 90–120-second billing condition against '
+              'call records, resolve disputes, suppress invalid sources and settle only '
+              'genuine, contract-qualified calls.']},
+    'erisa_level_funded_transparent_pbm_bor_arbitrage': {'id': 'erisa_level_funded_transparent_pbm_bor_arbitrage',
+ 'inputs': ['Public Form 5500 filings and available Schedule A/C records, employer size and '
+            'plan-year information, employer-confirmed renewal dates and appropriately '
+            'obtained business contact details.',
+            'Employer authorization, incumbent fee disclosures, plan documents, aggregate '
+            'claims and pharmacy reports, stop-loss terms, underwriting requirements and '
+            'privacy-controlled access to necessary participant information.',
+            'Licensed broker and specialist relationships, TPA and stop-loss proposals, '
+            'captive participation terms, PBM rebate and spread definitions, NADAC '
+            'availability and fallback pricing rules, and a $40–$65 PEPM service proposal.'],
+ 'mechanism': 'Use public Form 5500 Schedule A/C information, where filed and informative, to '
+              'identify mid-market renewal and compensation-review opportunities, then offer '
+              'an employer-authorized CAA 2021 service-provider fee-disclosure review. A '
+              'properly licensed advisory team can seek broker-of-record appointments and '
+              'compare bundled coverage with separately contracted TPA, stop-loss or suitable '
+              'captive arrangements and a transparent pass-through PBM using an explicitly '
+              'defined NADAC-based pricing methodology. Negotiate recurring $40–$65 PEPM '
+              'advisory fees where supported by scope and client agreement, with all '
+              'commissions and indirect compensation disclosed and no assumption that '
+              'unbundling guarantees savings.',
+ 'metrics': ['Recurring advisory revenue: enrolled employees multiplied by the contracted '
+             '$40–$65 PEPM fee, less servicing costs and disclosed fee offsets.',
+             'Risk-adjusted employer cost: claims, administration, stop-loss premiums, '
+             'pharmacy costs, collateral and runout obligations minus realized rebates and '
+             'recoveries.',
+             'Service and retention quality: renewal retention, disclosure completeness, '
+             'pharmacy guarantee reconciliation variance and unresolved participant access '
+             'issues.'],
+ 'name': 'Mid-Market Level-Funded Benefits and Transparent PBM Advisory Operator',
+ 'platform_risks': [{'detection_metric': 'Adverse-scenario funding gap, claims-to-budget '
+                                         'variance, unrecovered stop-loss balances and '
+                                         'unexplained differences between disclosed and '
+                                         'received compensation.',
+                     'failure_mode': 'The proposed unbundled plan produces adverse claims '
+                                     'exposure or undisclosed compensation despite appearing '
+                                     'cheaper on headline premiums.',
+                     'fallback': 'Retain or competitively rebid the existing structure when '
+                                 'risk-adjusted economics are unfavorable, obtain explicit '
+                                 'pricing fallbacks and narrow the engagement to disclosed '
+                                 'advisory work until implementation conditions are satisfied.',
+                     'impact': 'Employer costs exceed projections, coverage continuity '
+                               'deteriorates and advisory fees or the BOR relationship become '
+                               'disputed.',
+                     'trigger': 'Incomplete claims data, stop-loss lasers or exclusions, '
+                                'nonrefundable captive collateral, ambiguous PBM rebate '
+                                'definitions or unsupported NADAC pricing for uncovered '
+                                'products.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Analyze publicly available filings through permitted access methods, '
+              'identify likely renewal opportunities and confirm current plan arrangements '
+              'directly because filings are historical and may omit relevant compensation '
+              'details.',
+              '2. Obtain employer authorization, review applicable CAA 2021 disclosures and '
+              'existing termination terms, and define advisory deliverables and compensation '
+              'before requesting any BOR appointment.',
+              '3. Compare fully insured and level-funded options using expected and adverse '
+              'claims scenarios, stop-loss exclusions and lasers, captive collateral, TPA '
+              'fees, pharmacy guarantees and rebates actually retained by the employer.',
+              '4. Implement the employer-selected structure with licensed parties, privacy '
+              'safeguards and continuity planning; collect agreed PEPM fees and review total '
+              'costs, disclosures and service performance at each renewal.']},
+    'workers_comp_ncci_emod_retroactive_recovery': {'id': 'workers_comp_ncci_emod_retroactive_recovery',
+ 'inputs': ['Customer authorization, three to four years of policies and premium audits, '
+            'payroll registers, job-duty evidence, overtime breakdowns, officer election '
+            'documents and subcontractor coverage records.',
+            'Applicable state classification rules, NCCI or independent-bureau worksheets, '
+            'experience-period and valuation dates, carrier loss runs and documented claim '
+            'corrections.',
+            'Carrier and bureau dispute procedures, policy-specific correction deadlines, a '
+            '30%–40% realized-refund agreement and licensed brokerage support for any BOR '
+            'renewal engagement.'],
+ 'mechanism': 'Audit three to four historical policy years where carrier, state and '
+              'rating-bureau correction rules permit, checking actual duties, payroll '
+              'classifications, eligible overtime adjustments and officer exclusions or '
+              'limits. Reconcile NCCI experience-rating worksheets, or the applicable '
+              "independent bureau's equivalent, to accurate carrier loss reports and valuation "
+              'dates; an open reserve is not an error merely because the ultimate claim later '
+              'costs less. Recover documented premium overpayments for a negotiated 30%–40% '
+              'contingency and pursue separately authorized, properly licensed BOR renewal '
+              'work.',
+ 'metrics': ['Realized premium recovery: received refunds and usable policy credits divided by '
+             'audited historical premium, segmented by payroll, classification and '
+             'experience-mod correction.',
+             'Correction conversion: dollars recovered divided by dollars submitted, alongside '
+             'days from supported dispute to revised audit or bureau worksheet.',
+             'Renewal economics: separately disclosed brokerage revenue and verified '
+             'prospective premium effect, controlling for payroll, operations, rates and '
+             'coverage changes.'],
+ 'name': "Workers' Compensation Classification and Experience-Mod Recovery Operator",
+ 'platform_risks': [{'detection_metric': 'Rejected correction dollars by reason, percentage of '
+                                         'payroll supported by contemporaneous records and net '
+                                         'premium change after the full audit.',
+                     'failure_mode': 'A carrier or rating bureau rejects proposed corrections '
+                                     'because classifications, loss valuations or retroactive '
+                                     'deadlines were misinterpreted.',
+                     'fallback': 'Withdraw unsupported claims, disclose any additional premium '
+                                 "exposure, use the bureau's documented dispute process for "
+                                 'defensible items and improve prospective payroll and claims '
+                                 'reporting.',
+                     'impact': 'No refund is issued, advisory effort is unrecovered and a '
+                               'broader audit may identify additional premium owed.',
+                     'trigger': 'Unsupported separation of payroll, missing officer elections, '
+                                'treatment of later reserve reductions as historical errors or '
+                                'submission outside the permitted correction period.'}],
+ 'track_id': 'track_1',
+ 'workflow': ['1. Map each policy to its governing state and bureau rules, establish the '
+              'allowable correction window and reconcile audited payroll to contemporaneous '
+              'employment and job-duty records.',
+              '2. Test class-code assignments, permitted overtime premium exclusions, officer '
+              'elections or payroll limits and subcontractor treatment without relabeling work '
+              'merely to obtain a cheaper rate.',
+              '3. Reconcile experience-mod inputs against losses reported for the applicable '
+              'valuation date; submit evidenced payroll, classification or loss-data '
+              'corrections to the carrier and bureau as required.',
+              '4. Obtain revised audits or rating worksheets, trace resulting premium credits '
+              'through endorsements and receipts, collect the 30%–40% contingency and '
+              'separately quote licensed BOR renewal services.']},
+    'wholesale_buying_group_card_float_cycling': {'id': 'wholesale_buying_group_card_float_cycling',
+ 'inputs': ['Verified buying-group identity and operating terms, written purchase orders with '
+            'fixed SKUs and acceptance criteria, warehouse instructions, settlement '
+            'obligations and return or rejection allocation.',
+            'Commercial card agreements showing authorized use, purchase limits, eligible '
+            'reward rates and caps, bonus conditions, statement timing, actual payment '
+            'deadlines and any restrictions on resale purchases.',
+            'Supplier availability and invoices, documented resale or exemption eligibility '
+            'where applicable, shipment insurance and tracking, working-capital reserves and a '
+            'transaction-level inventory and cash ledger.'],
+ 'mechanism': 'Fulfill genuine, pre-committed buying-group purchase orders through '
+              'BuyForMeRetail, Pointsmaker or independently verified counterparties, using '
+              'authorized commercial card purchases and documented delivery to designated '
+              'warehouses in Delaware, New Hampshire or Oregon. Earn the contracted '
+              'merchandise spread plus only eligible 2%–4% cashback or bonus value, using '
+              'uncapped rewards solely when current issuer terms explicitly provide them; tax '
+              'treatment depends on sourcing, possession, resale documentation and downstream '
+              'obligations rather than a tax-free warehouse label. Match a contractually '
+              'verified Net-3 ACH settlement to the actual card due date, which may provide up '
+              'to approximately 60 days only on suitable products and purchase dates, without '
+              'circular purchases, fictitious sales or issuer-limit evasion.',
+ 'metrics': ['Realized order contribution: buyer proceeds plus posted eligible rewards minus '
+             'merchandise, freight, tax, insurance, financing, returns and dispute costs.',
+             'Cash-conversion spread: actual card payment due date minus cleared buyer '
+             'settlement date, with stress tests for late acceptance and ACH reversals.',
+             'Exposure control: unsettled counterparty receivables, rejected-unit rate and '
+             'liquid reserves divided by card obligations due before stressed settlement.'],
+ 'name': 'Pre-Committed Buying-Group Fulfillment and Commercial Card Working-Capital Operator',
+ 'platform_risks': [{'detection_metric': 'Receivables aging beyond the contractual Net-3 start '
+                                         'event, rejected deliveries, reward clawbacks and '
+                                         "stressed cash coverage below the operator's minimum.",
+                     'failure_mode': 'Buying-group acceptance or settlement fails while the '
+                                     'card issuer still requires full repayment or reverses '
+                                     'expected rewards.',
+                     'fallback': 'Stop new purchases, meet card obligations from reserved '
+                                 'cash, recover or resell legitimately owned goods through '
+                                 'permitted channels and resume only after settlement '
+                                 'reliability and issuer eligibility are confirmed.',
+                     'impact': 'A nominally profitable order becomes illiquid inventory and '
+                               'unsecured receivables, with interest charges, lost rewards or '
+                               'restricted card access.',
+                     'trigger': 'Counterparty insolvency, SKU rejection, warehouse delivery '
+                                'disputes, delayed ACH, reward exclusions or issuer '
+                                'restrictions on purchase and repayment patterns.'}],
+ 'track_id': 'track_2',
+ 'workflow': ['1. Verify the counterparty and current BuyForMeRetail or Pointsmaker program '
+              'terms before funding any order; confirm that the PO is genuinely committed '
+              'rather than treating an indicative buying list as guaranteed demand.',
+              '2. Calculate landed margin after tax, shipping, reward exclusions, returns and '
+              'financing costs; size purchases to available cash repayment capacity and '
+              'issuer-approved limits rather than assuming all cards provide uncapped rewards '
+              'or 60-day float.',
+              '3. Purchase approved merchandise and ship to the specifically authorized DE, NH '
+              'or OR warehouse with chain-of-custody evidence, recording title transfer, '
+              'acceptance events and the exact event that starts Net-3 settlement.',
+              '4. Reconcile accepted units and cleared ACH proceeds, reserve for returns or '
+              'reversals, pay the statement by its actual due date and fund subsequent genuine '
+              'orders only within verified counterparty and issuer limits.']},
+    'dot_digital_billboard_and_ios_master_lease_flip': {'id': 'dot_digital_billboard_and_ios_master_lease_flip',
+ 'inputs': ['Parcel and title records, survey and access information, billboard spacing and '
+            'visibility studies, state DOT and local sign rules, digital-conversion '
+            'restrictions and utility availability.',
+            'Three- to ten-acre IOS site candidates, zoning and permitted-use evidence, '
+            'environmental and drainage assessments, truck access and surface requirements, '
+            'insurance quotes and security or improvement budgets.',
+            'Conditional options or master-lease drafts with financing, permitting, assignment '
+            'and subletting terms, landlord consent requirements, tenant demand evidence and '
+            'comparable leasehold or infrastructure transactions.'],
+ 'mechanism': 'Secure conditional site options for digital billboards only where Highway '
+              'Beautification Act controls, state DOT spacing rules and local zoning permit '
+              'the proposed installation and digital operation. Separately control suitable '
+              'three- to ten-acre truck or equipment drop-yard IOS sites through master leases '
+              'with explicit permitted use, assignment and subletting rights, targeting NNN '
+              'sublease revenue of 2.0x–2.8x ground rent only where local demand supports it. '
+              'Underwrite any sale of transferable, durable rights to an infrastructure REIT '
+              'or other qualified buyer using actual net cash flow and remaining lease term; a '
+              '16x–22x annual-rent headline is a scenario to test, not a guaranteed valuation '
+              'or a substitute for net-income analysis.',
+ 'metrics': ['IOS operating spread: collected sublease rent divided by ground rent, reported '
+             'alongside net cash flow after vacancy, unreimbursed expenses, capital reserves '
+             'and escalations.',
+             'Entitlement and capital efficiency: option dollars at risk, days to required '
+             'permits, improvement cost per usable acre and funded cost per operational sign '
+             'face.',
+             'Exit economics: actual offer value divided by stabilized net operating cash '
+             'flow, remaining enforceable lease years and net sale proceeds after transfer '
+             'costs and obligations.'],
+ 'name': 'Digital Billboard Rights and Industrial Outdoor Storage Lease-Spread Operator',
+ 'platform_risks': [{'detection_metric': 'Unresolved entitlement and transfer conditions, '
+                                         'committed capital before condition satisfaction, '
+                                         'occupancy-adjusted rent coverage and buyer-required '
+                                         'lease duration versus actual control.',
+                     'failure_mode': 'The permit or leasehold cannot be operated or '
+                                     'transferred as assumed, leaving the operator with '
+                                     'ground-rent obligations and an unsaleable spread.',
+                     'fallback': 'Exercise negotiated termination rights before conditions '
+                                 'expire, avoid unfunded construction commitments, retain only '
+                                 'independently viable permitted operations and pursue a '
+                                 'consented alternative use or buyer without assuming the '
+                                 'advertised multiple.',
+                     'impact': 'Options expire, improvements become stranded, subleasing stops '
+                               'or expected REIT exit value falls substantially.',
+                     'trigger': 'DOT spacing conflicts, prohibited digital conversion, IOS '
+                                'zoning restrictions, nontransferable permits, missing '
+                                'landlord consent or a remaining lease term too short for '
+                                'buyer underwriting.'}],
+ 'track_id': 'track_2',
+ 'workflow': ['1. Screen billboard and IOS opportunities as distinct asset types, verify '
+              'applicable sign controls or outdoor-storage zoning, and reject sites whose '
+              'access, spacing, environmental condition or remaining control period defeats '
+              'the economics.',
+              '2. Negotiate conditional options or master leases before major expenditures, '
+              'expressly allocating permit costs, improvements, restoration duties, assignment '
+              'rights and any required landlord or agency consent.',
+              '3. Obtain required permissions and complete funded improvements, then secure '
+              'creditworthy advertising or IOS occupancy contracts; test the 2.0x–2.8x IOS '
+              'rent target after vacancy, operating expenses, reserves and ground-rent '
+              'escalation.',
+              '4. Stabilize collections and prepare a transferable-rights diligence package '
+              'for qualified buyers, comparing the value of retaining net cash flow against '
+              'sale proceeds and testing any 16x–22x headline multiple against net income, '
+              'lease duration and actual bids.']},
 }
 
 CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
@@ -4065,6 +4472,11 @@ CANDIDATE_PLAY_MAP: dict[int, tuple[str, ...]] = {
         'high_velocity_dm_outbound_systems',
     ),
     37: ("saas_cpor_vip_distributor_margin_split", "private_b2b_gpo_umbrella_rebate_arbitrage", "enterprise_excess_seat_commit_pooling_arbitrage", "saas_technographic_churn_pixel_scraping", "sec_edgar_8k_vendor_trigger_arbitrage", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems", "cloud_ai_startup_credit_aggregation_arbitrage", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "competitor_intent_comparison_hijacking", "ucc1_expiration_refi_trigger_arbitrage"),
+    38: ("parcel_carrier_refund_tariff_audit_contingency", "utility_waste_cam_tariff_overcharge_audit", "private_b2b_gpo_umbrella_rebate_arbitrage", "freight_detention_audit_contingency", "property_tax_assessment_appeal_contingency", "wotc_hourly_payroll_tax_credit_contingency_engine", "section_179d_municipal_deduction_allocation_arbitrage", "transferable_tax_credit_brokerage_syndication", "state_film_historic_brownfield_tax_credit_brokerage", "b2b_class_action_contingency_recovery", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems"),
+    39: ("inbound_rtb_pay_per_call_ping_post_exchange", "rank_and_rent_pay_per_call_routing", "social_to_search_ping_post_arbitrage", "tcpa_litigator_scrub_honeypot_arbitrage", "google_maps_gbp_lead_gen_network", "paid_to_organic_media_arbitrage", "ad_library_spend_velocity_arbitrage", "competitor_intent_comparison_hijacking", "arizona_abs_mass_tort_cocounsel", "litigation_finance_mass_tort_docket_securitization", "public_adjuster_appraisal_clause_storm_arbitrage", "identity_graph_pixel_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "telecom_voice_traffic_pumping_8yy_sms_arbitrage"),
+    40: ("erisa_level_funded_transparent_pbm_bor_arbitrage", "workers_comp_ncci_emod_retroactive_recovery", "erisa_self_funded_specialty_drug_importation_arbitrage", "section_340b_contract_pharmacy_spread_arbitrage", "wotc_hourly_payroll_tax_credit_contingency_engine", "sec_edgar_8k_vendor_trigger_arbitrage", "public_record_api_intelligence", "saas_technographic_churn_pixel_scraping", "multi_inbox_free_workspace_outbound_clusters", "high_velocity_dm_outbound_systems", "private_b2b_gpo_umbrella_rebate_arbitrage"),
+    41: ("wholesale_buying_group_card_float_cycling", "verified_fan_ticketing_and_drop_allocation_farming", "b2b_commercial_vcc_interchange_rebate_arbitrage", "agency_ad_spend_card_multiplier_rebate_cycling", "aged_shelf_corp_tradeline_credit_stacking", "authorized_distributor_grey_market_diversion_arbitrage", "free_llc_fintech_bounty_stacking", "sportsbook_promo_ev_matched_betting_syndicates", "platform_privilege_tier_account_arbitrage", "telegram_channel_signal_scraping", "section_321_de_minimis_bonded_tariff_arbitrage"),
+    42: ("dot_digital_billboard_and_ios_master_lease_flip", "cell_tower_billboard_easement_strip_out", "ferc_grid_interconnection_queue_land_speculation", "gis_landlocked_parcel_easement_assemblage", "solar_tax_equity_depreciation_strip_syndication", "fmcsa_dot_inspection_trigger_arbitrage", "property_tax_assessment_appeal_contingency", "municipal_code_violation_trigger_arbitrage", "public_record_api_intelligence", "public_filing_trigger_mail_arbitrage", "high_velocity_dm_outbound_systems"),
 }
 
 
@@ -4759,6 +5171,11 @@ _CANDIDATE_SPECS.extend([
     _candidate(35, "Subject-To & Wraparound Note Arbitrage", "Creative real estate note spread", (100000, 850000), (28, 52), (12000, 65000), (2000, 12000), "2–6 months", (1, 3), "Acquiring low-rate 2.75%–4.25% mortgages Subject-To and reselling via RMLO-underwritten 8.5%–9.9% wraparound notes generates upfront down-payment spreads and multi-year interest arbitrage without landlord repairs.", ["Low-equity & pre-foreclosure debt triggers", "Third-party licensed loan-servicer autopay", "Escrow tax/insurance & underlying-payment audit"], ["Underlying lender due-on-sale acceleration", "Wrap buyer default & foreclosure carrying cost", "Non-compliant seller-financing origination"], ["Underwrite every owner-occupant wraparound buyer through a licensed RMLO under SAFE Act / Dodd-Frank Ability-to-Repay rules and state wraparound disclosure statutes (e.g., Tex. Prop. Code §5.016).", "Use a licensed third-party loan servicer so underlying mortgage, tax and insurance payments are verified transparently every month."], revenue_basis="Net upfront option/down-payment spreads and retained annual wraparound interest margin; excludes underlying home face value and pass-through debt service", automation_coverage=0.76),
     _candidate(36, "GPU Compute & Telecom Capacity Arbitrage", "Compute & telecom capacity brokerage", (150000, 1200000), (18, 38), (10000, 60000), (2000, 14000), "1–4 months", (1, 2), "Slicing wholesale bare-metal H100/H200 clusters, routing quantized multi-provider LLM inference, and reselling wholesale SIP/10DLC telecom trunks deliver software-like leverage on a 3-person pod.", ["LiteLLM / vLLM dynamic inference router", "Prepaid Stripe credit-wallet & DCGM metering", "Automated LCR SIP & 10DLC campaign provisioning"], ["Committed bare-metal utilization dips", "GPU generation pricing compression", "Abusive crypto-mining or robocall AUP violations"], ["Enforce prepaid credit wallets, KYC/AUP screening, STIR/SHAKEN Robocall Mitigation Database filings, 10DLC TCR registration and FCC Form 499-A telecom compliance.", "Isolate multi-tenant workloads and honor enterprise zero-data-retention commitments."], revenue_basis="Gross compute, inference-token and wholesale telecom billings (65% retained net contribution after upstream bare-metal & carrier termination commits)", retained_share=0.65, automation_coverage=0.90),
     _candidate(37, "SaaS Discount Brokerage & GPO Arbitrage", "SaaS & spend discount brokerage", (100000, 900000), (32, 58), (5000, 30000), (1500, 9500), "1–3 months", (1, 3), "Partner-of-Record (CPOR/VIP/CSP) wholesale margin splits, UCaaS master-agent evergreen residuals, and private GPO volume brackets let SMBs cut existing Zoom, Adobe, Microsoft 365, and cloud bills by 10%–25% with zero software migration while compounding recurring broker spreads.", ["DNS/MX/SPF & renewal-cliff technographic triggers", "Pax8 / Ingram / Telarus automated CPOR & VIP billing sync", "Benchmark price-floor & shared-savings audit engine"], ["Vendor partner-tier rebate compression", "Microsoft NCE annual-commit client credit default", "Unauthorized multi-tenant seat-pooling audit clawbacks"], ["Execute license transfers strictly through authorized Microsoft CSP/CPOR, Adobe VIP Marketplace, Zoom Up / TSD master-agent, and GPO member agreements.", "Enforce pre-funded ACH/card auto-debit on annual NCE commits, FTC TSR B2B telemarketing / TCPA rules, and ASC 606 net-agency revenue recognition."], revenue_basis="Net retained Partner-of-Record wholesale margin spreads, master-agent evergreen residuals, GPO administrative rebates, and contingent shared-savings fees; excludes pass-through client software subscription spend", automation_coverage=0.88),
+    _candidate(38, "Contingent Corporate Bill-Audit & Tax-Credit Recovery", "Contingent expense & tax recovery", (110000, 900000), (30, 56), (6000, 35000), (1500, 9500), "1–4 months", (1, 3), "No-savings-no-fee API parcel refund audits, 36-month commercial utility/waste/CAM overcharge recoveries, property-tax appeals, and WOTC/179D tax-credit splits convert CFO inertia into high-margin recurring contingency checks.", ["FedEx/UPS EDI & refund-claim APIs", "Utility tariff & cooling-tower meter OCR", "ATS-integrated Form 8850 WOTC automation"], ["Carrier GSR waiver clauses", "Slow municipal or utility refund issuance", "Circular 230 / tax-credit audit substantiation"], ["Observe Treasury Circular 230 §10.27 contingent-fee rules on federal tax returns, state property-tax consultant licensing, and carrier API terms.", "Secure signed Letters of Authorization and baseline invoice snapshots before disclosing tariff or refund findings."], revenue_basis="Earned contingency refund shares, 36-month shared-savings splits, and WOTC processing fees; excludes underlying client utility, freight, or tax bills", automation_coverage=0.86),
+    _candidate(39, "Inbound Pay-Per-Call & RTB Ping-Post Arbitrage", "Real-time call exchange arbitrage", (200000, 1500000), (15, 32), (8000, 45000), (2500, 14000), "1–3 months", (1, 2), "Ringba real-time bidding call trees pair high-intent search/social inbound callers with licensed insurance, mass-tort legal, and emergency-service buyer floors on 90-second duration triggers.", ["Ringba sub-second RTB ping-post trees", "TrustedForm / Jornaya 1-to-1 TCPA verification", "AI transcript disposition & S2S ad-bid postbacks"], ["Buyer call-duration scrub disputes", "Paid search CPC spikes", "TCPA / CMS TPMO compliance violations"], ["Enforce FCC TCPA one-to-one written consent, CMS Medicare TPMO 48-hour/call-recording rules, and state bar legal-advertising/runner prohibitions.", "Scrub DNC/litigator lists in real time and cap publisher traffic until net-7 buyer collectability is verified."], revenue_basis="Gross billable inbound call & RTB ping-post exchange settlements (55% retained net spread after publisher payouts & click-to-call media)", retained_share=0.55, automation_coverage=0.91),
+    _candidate(40, "Self-Funded Health, PBM & Workers' Comp Arbitrage", "Employee benefits & E-Mod brokerage", (120000, 950000), (32, 58), (8000, 45000), (2000, 11000), "2–5 months", (1, 3), "Form 5500 renewal targeting, CAA 2021 fiduciary fee-disclosure wedges, level-funded/captive ERISA transitions, pass-through PBMs, and Workers' Comp NCCI E-Mod audits generate $40–$65 PEPM evergreen annuities.", ["Form 5500 Schedule A/C renewal scraper", "NADAC vs spread-PBM repricing engine", "NCCI E-Mod & payroll-code audit analyzer"], ["Incumbent broker defense at renewal", "Stop-loss laser or shock-claim volatility", "State insurance producer & TPA licensing"], ["Hold active state Life & Health and Property & Casualty producer licenses and deliver full ERISA §408(b)(2) / CAA 2021 compensation disclosures.", "Structure stop-loss specific/aggregate attachment points, run-out coverage, and RBP balance-bill legal defense cleanly."], revenue_basis="Net retained PEPM benefits advisory fees, stop-loss/TPA commissions, and contingent Workers' Comp E-Mod refund splits; excludes employer claim funds and insurance premiums", automation_coverage=0.82),
+    _candidate(41, "Buying Group, Card-Float & Ticket Allocation Arbitrage", "Card-float & allocation arbitrage", (250000, 1800000), (8, 20), (10000, 55000), (1500, 9000), "1–3 months", (1, 2), "Tax-exempt wholesale Buying-Group purchase commits stacked with uncapped 2%–4% commercial card float and BOTS-Act-compliant secondary live-event ticket/suite POS sync compound rapid capital turns on a 3-person desk.", ["Buying-Group deal-commit & tracking reconciler", "SkyBox / Automatiq multi-exchange ticket POS", "60-day card-statement float & rebate ledger"], ["Buying-group counterparty ACH delay", "Card issuer financial review or shutdown", "Unsold event ticket price decay"], ["Comply strictly with the federal BOTS Act (15 U.S.C. §45c — zero queue/CAPTCHA bypass software), state all-in ticket resale laws, and sales-tax resale rules.", "Diversify across vetted Net-3/Net-5 buying groups, insure high-value shipments, and enforce pre-event stop-loss markdown curves."], revenue_basis="Gross wholesale buying-group reimbursements, card-rebate yields, and secondary ticket resale proceeds (35% retained net spread after landed merchandise & face-value ticket basis)", retained_share=0.35, automation_coverage=0.87),
+    _candidate(42, "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage", "Infrastructure & IOS lease arbitrage", (120000, 950000), (28, 52), (12000, 60000), (2000, 12000), "2–6 months", (1, 3), "Zero-building infrastructure arbitrage: originating FCC/DOT-screened rooftop/cell-tower easements and highway digital-billboard permits to flip at 16x–22x rent alongside NNN truck drop-yard (IOS) master-leases.", ["FCC ASR tower & DOT AADT GIS parcel pipeline", "Easement buyout NPV & lender SNDA packager", "Unmanned RFID gate & NNN fleet-yard billing"], ["Municipal sign/zoning variance denials", "Underlying mortgage SNDA delays", "Environmental Phase I stormwater issues on IOS yards"], ["Verify state real-estate brokerage licensing exemptions when trading principal lease options, Highway Beautification Act / state DOT spacing rules, and lender SNDA consents.", "Run Phase I environmental screening and heavy-axle zoning confirmation before executing IOS master-leases."], revenue_basis="Net easement buyout flip spreads, billboard permit assignment fees, and retained NNN IOS master-lease spreads; excludes institutional REIT principal face values", automation_coverage=0.78),
 ])
 
 

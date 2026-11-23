@@ -1,0 +1,334 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-authorized-renewal-to-retained-fees",
+      "chart_type": "process_flow",
+      "title": "From Renewal Signal to Retained Operator Revenue",
+      "subtitle": "Five operating stages separate employer claim dollars from earned fees.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Employer authorization, appropriate producer licenses, service agreements, and claims-access controls precede account-level work. The expected first-deal window is 2–5 months.",
+      "caption": "The desk sells documented analysis and execution. Employer claim funds, premiums, rebate principal, and premium refunds remain outside operator revenue except for the contractual earned fee.",
+      "stages": [
+        {
+          "label": "Research the renewal",
+          "value": "Form 5500 account intelligence",
+          "numeric_value": 1.0,
+          "detail": "Search DOL EFAST2 filings and available Schedules A/C for employer, broker, and service-provider signals. Confirm renewal timing and self-funded status directly rather than assuming every stop-loss policy appears in public filings."
+        },
+        {
+          "label": "Authorize the engagement",
+          "value": "Licenses, scope, and compensation",
+          "numeric_value": 2.0,
+          "detail": "Verify state Life & Health and Property & Casualty authority for the actual activities. Deliver covered ERISA section 408(b)(2) disclosures and execute employer authorization, fee terms, and applicable HIPAA agreements."
+        },
+        {
+          "label": "Reconcile the evidence",
+          "value": "PBM, stop-loss, and E-Mod analysis",
+          "numeric_value": 3.0,
+          "detail": "Normalize claims and contracts; compare NADAC with matched NDC quantities and dispensing fees. Reconcile rebate eligibility, payroll classes, loss runs, and rating worksheets before labeling a difference recoverable."
+        },
+        {
+          "label": "Implement the correction",
+          "value": "Written terms and accountable owners",
+          "numeric_value": 4.0,
+          "detail": "Document specific and aggregate stop-loss attachments, lasers, run-out coverage, and reference-based-pricing balance-bill defense. Submit supported rating corrections through the carrier or applicable bureau process."
+        },
+        {
+          "label": "Recognize retained fees",
+          "value": "Earned service revenue only",
+          "numeric_value": 5.0,
+          "detail": "Invoice PEPM services, reconcile retained commissions, and recognize contingent splits when contractual earning conditions and applicable variable-consideration criteria are satisfied. Track cash collection separately."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-nested-renewal-account-funnel",
+      "chart_type": "funnel",
+      "title": "A Nested Renewal-to-Client Cohort",
+      "subtitle": "400 researched employers narrow to 20 signed service accounts.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Illustrative annual cohort, not observed conversion performance. Each stage is a subset of the preceding stage; count unique employers once even when an account buys several services.",
+      "caption": "The 5% end-to-end conversion is a planning assumption. Twenty signed accounts can support the illustrative Base revenue mix only when its lives, contracts, earning conditions, and full-year service periods also hold.",
+      "stages": [
+        {
+          "label": "Researched employers",
+          "value": "400 unique employer accounts",
+          "numeric_value": 400.0,
+          "detail": "Deduplicate public filing records by employer identity. Record the evidence date, broker relationship, likely renewal window, and a legitimate business contact channel."
+        },
+        {
+          "label": "Qualified renewal fits",
+          "value": "200 accounts; 50% of prior stage",
+          "numeric_value": 200.0,
+          "detail": "Confirm employer size, renewal timing, decision-maker access, and an identifiable PBM, stop-loss, or workers' comp problem; exclude accounts outside the desk's authority."
+        },
+        {
+          "label": "Completed discovery",
+          "value": "80 accounts; 40% of prior stage",
+          "numeric_value": 80.0,
+          "detail": "Hold documented discovery with the employer's authorized contact. Establish incumbent contract restrictions, available records, procurement timing, and the economic buyer."
+        },
+        {
+          "label": "Authorized diagnostic audits",
+          "value": "40 accounts; 50% of prior stage",
+          "numeric_value": 40.0,
+          "detail": "Obtain signed scope and secure access to necessary records. Complete a diagnostic with reproducible calculations before proposing contingent recovery or replacement coverage."
+        },
+        {
+          "label": "Signed service accounts",
+          "value": "20 accounts; 50% of prior stage",
+          "numeric_value": 20.0,
+          "detail": "Execute service terms and required compensation disclosures. These accounts overlap across revenue rails; signed status alone does not establish earned revenue or collected cash."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-retained-revenue-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "Base Economics: $535,000 to $240,750",
+      "subtitle": "Four expense deductions leave exactly 45.0% annual owner net profit.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Formula v2.0 Base anchors are $535,000 annual operator revenue, $294,250 total expense, and $240,750 owner net profit. Expense categories are an illustrative allocation, not additional scorecard inputs. First and last bars are absolute totals; intermediate bars are signed deductions.",
+      "caption": "The scorecard's gross revenue is already the operator's net retained fee and commission basis. Do not apply a second retained share haircut or add employer premiums and claim funds. Evaluate ASC 606 principal-agent presentation by contract.",
+      "stages": [
+        {
+          "label": "Retained operator revenue",
+          "value": "$535,000 annual starting total",
+          "numeric_value": 535000.0,
+          "detail": "Combine earned PEPM advisory fees, retained stop-loss and TPA commissions, PBM advisory fees, and earned E-Mod refund splits. Exclude all underlying employer fund flows."
+        },
+        {
+          "label": "Delivery labor",
+          "value": "Subtract $168,000; $367,000 remains",
+          "numeric_value": -168000.0,
+          "detail": "Budget delivery payroll or contracted capacity, specialist analysis, and account execution. Include each delivery expense once; owner distributions come from the final profit rather than creating another expense deduction."
+        },
+        {
+          "label": "Secure systems and records",
+          "value": "Subtract $36,000; $331,000 remains",
+          "numeric_value": -36000.0,
+          "detail": "Cover encrypted storage, access logging, secure transfer, CRM administration, claims normalization, and permitted benchmark access. Do not place identifiable claims in unapproved general-purpose collaboration systems."
+        },
+        {
+          "label": "Acquisition and renewals",
+          "value": "Subtract $48,000; $283,000 remains",
+          "numeric_value": -48000.0,
+          "detail": "Fund employer research, referral development, renewal outreach, travel, and proposal execution. Account for the incumbent broker's defense and delayed procurement rather than booking every proposal as won."
+        },
+        {
+          "label": "Insurance and administration",
+          "value": "Subtract $42,250; $240,750 remains",
+          "numeric_value": -42250.0,
+          "detail": "Cover professional liability and cyber coverage, licensing, contract review, bookkeeping, and ordinary administration. This is an expense allocation, not an employer claims reserve or an additional retained-share deduction."
+        },
+        {
+          "label": "Owner net profit",
+          "value": "$240,750 annual ending total",
+          "numeric_value": 240750.0,
+          "detail": "$535,000 minus $168,000, $36,000, $48,000, and $42,250 equals $240,750. Dividing the ending profit by $535,000 gives exactly 45.0%; this final total is not another increment."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-base-payment-rail-yields",
+      "chart_type": "horizontal_bars",
+      "title": "Five Payment Rails Behind the Base Case",
+      "subtitle": "Illustrative annual retained revenue contributions sum to $535,000.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Bars measure annual earned operator dollars, not yield percentages or employer savings. Contract volumes and prices are illustrative. Accounts may overlap across rails, but the same fee cannot be recognized twice.",
+      "caption": "Revenue mix: $240,000 + $110,000 + $55,000 + $90,000 + $40,000 = $535,000. All commissions are shown after external splits; PBM advisory fees must be distinct from PEPM scope.",
+      "stages": [
+        {
+          "label": "Self-funded PEPM advisory",
+          "value": "$240,000 from 1,000 covered employees",
+          "numeric_value": 240000.0,
+          "detail": "Charge an illustrative $20 per employee per month across 1,000 covered employees for 12 months. Validate the billing denominator, eligibility roster, service commencement, and termination adjustments in each contract."
+        },
+        {
+          "label": "Stop-loss placement commissions",
+          "value": "$110,000 from 10 retained commissions",
+          "numeric_value": 110000.0,
+          "detail": "Ten annual placements retain $11,000 each after external splits. Disclose direct and indirect compensation, model chargebacks, and exclude the employer's full stop-loss premium from operator revenue."
+        },
+        {
+          "label": "TPA placement commissions",
+          "value": "$55,000 from 11 retained commissions",
+          "numeric_value": 55000.0,
+          "detail": "Eleven TPA arrangements retain $5,000 each under written compensation schedules. Disclose the payer and compensation method; check state administrator rules before performing activities beyond licensed placement and advice."
+        },
+        {
+          "label": "PBM contract advisory",
+          "value": "$90,000 from six separate mandates",
+          "numeric_value": 90000.0,
+          "detail": "Six earned advisory mandates generate $15,000 each for contract reconciliation and repricing work outside PEPM scope. Employer rebates and projected drug savings remain outside the desk's revenue."
+        },
+        {
+          "label": "Workers' comp recovery splits",
+          "value": "$40,000 from four collected fee shares",
+          "numeric_value": 40000.0,
+          "detail": "Four completed corrections each produce a $10,000 fee, illustratively 25% of a $40,000 employer refund. Only the $40,000 aggregate fee share enters operator revenue; $160,000 aggregate refunds do not."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-statutory-and-risk-preflight",
+      "chart_type": "decision_tree",
+      "title": "Four Pre-Flight Decisions Before Execution",
+      "subtitle": "Proceed only on documented authority, disclosures, access, and risk terms.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "These are sequential pass-or-remediate decisions, not alternative routes around a failed check. State requirements depend on the jurisdiction, product, and activities actually performed.",
+      "caption": "A failed check pauses the affected activity while the team corrects its scope or evidence. Public account research can continue without accessing employer claim records.",
+      "stages": [
+        {
+          "label": "Licensed for the activity?",
+          "value": "Pass to disclosures; otherwise rescope",
+          "numeric_value": 1.0,
+          "detail": "Verify active Life & Health and Property & Casualty producer authority, appointments where required, and applicable TPA or adjuster requirements. California Insurance Code 1631 is one state example; a producer license alone does not authorize every administrative role."
+        },
+        {
+          "label": "Compensation properly disclosed?",
+          "value": "Pass to access; otherwise correct documents",
+          "numeric_value": 2.0,
+          "detail": "For covered arrangements under 29 U.S.C. 1108(b)(2)(B), identify services, direct and indirect compensation, payers, and payment methods; furnish required disclosures reasonably before execution, extension, or renewal. Reconcile PBM and carrier payments with employer-facing terms."
+        },
+        {
+          "label": "Claims access properly controlled?",
+          "value": "Pass to terms; otherwise restrict processing",
+          "numeric_value": 3.0,
+          "detail": "Apply 45 CFR 164.502(b) minimum-necessary requirements where applicable, 164.504(e) business-associate arrangements, and 164.308 security safeguards. Verify plan-sponsor access conditions and role separation rather than treating employer ownership as unrestricted permission to inspect health records."
+        },
+        {
+          "label": "Coverage and corrections supportable?",
+          "value": "Proceed with evidence; otherwise redesign scope",
+          "numeric_value": 4.0,
+          "detail": "For ERISA fiduciary decisions, document the prudent process under 29 U.S.C. 1104. Test lasers, attachment points, run-out, exclusions, and balance-bill defense. For E-Mod work, use the applicable bureau rules, correction deadlines, and supported payroll and loss evidence."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-four-person-core-six-person-scale",
+      "chart_type": "org_architecture",
+      "title": "Four Core Seats, Two Expansion Seats",
+      "subtitle": "Base uses 1 FT + 3 C; Scaled uses 2 FT + 4 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "FT means full-time and C means contractor. Numeric values show Base seat counts, so the last two seats are zero until expansion. Contractor headcount is not equivalent to full-time capacity.",
+      "caption": "Canonical annual scenarios remain separate: Conservative $120,000 revenue at 32% produces $38,400 profit with four people; Base $535,000 at 45.0% produces $240,750 with four; Scaled $950,000 at 58% produces $551,000 with six.",
+      "stages": [
+        {
+          "label": "Principal and account owner",
+          "value": "1 FT in Base and Scaled",
+          "numeric_value": 1.0,
+          "detail": "Own employer relationships, engagement scope, compensation disclosures, collections, and final commercial decisions. Maintain licenses required for personal activities and assign specialist work without delegating accountability."
+        },
+        {
+          "label": "Licensed benefits specialist",
+          "value": "1 C in Base and Scaled",
+          "numeric_value": 1.0,
+          "detail": "Run stop-loss and TPA market work, compare policy wording, document lasers and attachment points, and reconcile commission schedules. Escalate coverage mismatches before the employer commits to replacement terms."
+        },
+        {
+          "label": "PBM and claims analyst",
+          "value": "1 C in Base and Scaled",
+          "numeric_value": 1.0,
+          "detail": "Maintain authorized claims extracts, NADAC matching, rebate reconciliation, and reproducible calculations using Python and SQL. Minimize identifiers and preserve source-to-output audit trails for each employer engagement."
+        },
+        {
+          "label": "Licensed workers' comp specialist",
+          "value": "1 C in Base and Scaled",
+          "numeric_value": 1.0,
+          "detail": "Reconcile payroll classes, experience-rating worksheets, loss runs, and carrier responses. Verify state-specific producer or adjuster authority and obtain written evidence for every proposed correction and contingent fee."
+        },
+        {
+          "label": "Expansion account manager",
+          "value": "0 Base seats; add 1 FT at Scaled",
+          "numeric_value": 0.0,
+          "detail": "Add a full-time service owner for renewals, eligibility coordination, employer reporting, and collection follow-up. Licensed personnel retain regulated advice and placement responsibilities unless this seat also holds required authority."
+        },
+        {
+          "label": "Expansion clinical reviewer",
+          "value": "0 Base seats; add 1 C at Scaled",
+          "numeric_value": 0.0,
+          "detail": "Add appropriately qualified clinical review capacity for authorized complex-claim analysis and stop-loss submission support. Limit access by role; carrier contracts and authorized decision-makers determine coverage and payment."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate $8,000–$45,000 Without Funding Claims",
+      "subtitle": "Four buckets compare lean, working, and expanded launch budgets.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values represent a $25,000 working launch budget. Each stage also supplies lean and expanded allocations; their totals are $8,000 and $45,000 respectively. These are capital budgets, not annual revenue or recurring expense totals.",
+      "caption": "Working allocation totals $6,000 + $6,500 + $4,500 + $8,000 = $25,000. Liquidity supports the 2–5 month first-deal window; none of these buckets capitalizes employer claim liabilities.",
+      "stages": [
+        {
+          "label": "Licensing, contracts, and coverage",
+          "value": "Lean $2,000 / Working $6,000 / Expanded $9,000",
+          "numeric_value": 6000.0,
+          "detail": "Fund required licensing work, professional liability and cyber coverage deposits, service agreements, and compensation disclosure templates. The lean allocation assumes existing relevant licenses and a tightly limited initial service scope."
+        },
+        {
+          "label": "Secure analysis infrastructure",
+          "value": "Lean $1,500 / Working $6,500 / Expanded $11,000",
+          "numeric_value": 6500.0,
+          "detail": "Provision encrypted storage, multifactor authentication, role-based access, logging, secure transfer, and claims normalization. Use public CMS benchmarks and DOL filings without assuming all required contract records are public."
+        },
+        {
+          "label": "Account acquisition and proposals",
+          "value": "Lean $1,500 / Working $4,500 / Expanded $8,000",
+          "numeric_value": 4500.0,
+          "detail": "Build a verified renewal list, referral materials, discovery scripts, and evidence-backed proposals. Track cost per completed discovery rather than celebrating unqualified contact counts or speculative recoveries."
+        },
+        {
+          "label": "Operating liquidity reserve",
+          "value": "Lean $3,000 / Working $8,000 / Expanded $17,000",
+          "numeric_value": 8000.0,
+          "detail": "Bridge recurring cash expenses and collection delays. At $2,000 monthly opex, reserves cover 1.5, 4, and 8.5 months respectively; at $11,000, they cover about 0.27, 0.73, and 1.55 months. Reconcile spending to runway."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-launch-sprint",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty Days to an Evidence-Ready Operating Desk",
+      "subtitle": "Four weekly milestones establish capability, not booked annual revenue.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Milestones are operating targets. Required licenses and access permissions may take longer than this sprint; affected activities remain paused. The canonical time to first deal is 2–5 months.",
+      "caption": "Day 30 should produce a working acquisition and diagnostic system, signed scope where available, and clear next actions. Do not convert a diagnostic estimate into collected fee revenue.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define authority, scope, and unit economics",
+          "numeric_value": 7.0,
+          "detail": "Choose one employer segment and initial service rail. Build a state-activity licensing matrix, draft engagement and disclosure documents, obtain coverage quotes, and reconcile the $535,000 Base revenue and $294,250 expense model."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Build secure intake and renewal intelligence",
+          "numeric_value": 14.0,
+          "detail": "Configure access controls and secure transfer, test intake with synthetic records, and research 50 deduplicated employers from public filings. Confirm renewal dates directly and avoid placing health records in the CRM."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Run discovery and one bounded diagnostic",
+          "numeric_value": 21.0,
+          "detail": "Target five completed discovery calls and one signed diagnostic scope. With required authority and access in place, reconcile a limited PBM or E-Mod sample; otherwise continue testing only with synthetic records."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Deliver evidence and schedule the commercial path",
+          "numeric_value": 30.0,
+          "detail": "Present a reproducible findings pack separating potential employer savings from operator fees. Identify contract restrictions, risk owners, implementation dates, and collection conditions; schedule renewal follow-up inside the realistic 2–5 month first-deal window."
+        }
+      ]
+    }
+  ]
+}

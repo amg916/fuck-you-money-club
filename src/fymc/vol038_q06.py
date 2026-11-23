@@ -1,0 +1,381 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-and-landing-first-recovery-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in contingent corporate bill-audit & tax-credit recovery, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–4 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "Mine Carrier Contracts, Utility Tariffs, Assessment Rolls and Hiring Signals; Convert Authorized Evidence into Collectible Recovery Fees",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": "Candidate #38, ranked #06 of 42 with a 94/100 Money-to-Manpower Score, wins through evidence access rather than spectacular refund promises. This chapter organizes 12 mapped plays into a practical sourcing system spanning parcel, utility, waste, telecom, assessment and employer-credit opportunities. Start with observable billing complexity, qualify contractual rights, secure signed authorization, then price an attributable result. The canonical annual owner profits are $33,000 Conservative, $217,150 Base and $504,000 Scaled; client bills and tax credits never become operator revenue. Build toward three to ten signed mandates within one to four months, while tracking cash recoveries separately. Use narrow account lists, professional referrals and documented baseline snapshots to prevent weak claims, prohibited tax-fee arrangements and long collection cycles from consuming the small team's capacity.",
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$110,000",
+            "context": "Annual operator revenue from earned recovery shares, shared savings and processing fees",
+            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$505,000",
+            "context": "Annual operator revenue excluding underlying client bills, credits and principal",
+            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual operator revenue including earned portions of contracted shared savings",
+            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Mine twelve sourcing lanes for observable, collectible billing friction",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "Start with organizations whose operational complexity creates repeatable invoice errors, not companies merely described as spending heavily. Build the first list around regional distributors, multi-location retailers, hotels, light manufacturers and hourly-workforce employers. Use company location pages, municipal permit portals, assessor rolls, public procurement awards and employer career pages to identify a dated change: an acquisition, warehouse opening, cooling-tower installation, reassessment or hiring surge. Record the source URL, observation date, affected operating entity and hypothesis in HubSpot or a structured spreadsheet. A permit establishes equipment or construction activity; it does not establish overbilling. A job advertisement establishes recruiting intent; it does not establish worker eligibility for a credit. Pair each signal with a document request that could disprove the hypothesis quickly. For example, a new distribution center suggests a parcel-contract review, but the decisive evidence is the executed carrier agreement and recent invoice detail. Avoid collecting shipment addresses or applicant records during prospecting. Ask for aggregate activity first, then move sensitive evidence into a client-controlled workspace after authorization. Rank a source higher when it identifies both a budget owner and a claim deadline, because access and timing determine whether theoretical savings become a payable engagement.",
+                "Use twelve operational plays as the chapter's sourcing map, without pretending that every lane has identical economics. The first seven are parcel service-guarantee recovery, parcel duplicate-billing correction, parcel address-and-dimension adjustment review, electric tariff classification, demand-ratchet correction, cooling-tower sewer deduction and water-meter multiplier correction. These are distinct evidence patterns, even when one client supports several. A distributor with $300,000 of annual parcel charges might reveal $6,000 of recoverable errors in an illustrative authorized review; a 35% fee produces $2,100 of operator revenue, not $300,000. If a service-guarantee waiver blocks the first lane, investigate separately documented duplicate charges rather than relabeling late deliveries. For a cooling-tower prospect, 1,000 eligible avoided sewer units at a hypothetical $6 tariff create $6,000 of client benefit and $2,100 at the same fee. Actual units, meter certification and effective dates must come from the applicable utility rule. If the municipality requires a dedicated meter, sell a prospective measurement project rather than claim unsupported historical deductions. Each lane needs a named evidence owner, a governing contract or tariff, a filing route and a fallback that preserves a useful client relationship without manufacturing recoveries.",
+                "The remaining five plays are waste-service reconciliation, telecom inventory cleanup, property-assessment appeals, cross-site shared-savings verification and the employer-credit engine identified in the next section. Waste opportunities appear after occupancy changes, dumpster replacements or acquisitions; telecom opportunities appear when offices close but circuits remain billed. Property opportunities begin with assessor records and appeal calendars, not an assumption that a recent purchase automatically proves excessive value. Cross-site verification compares equivalent facilities after normalizing occupancy, weather, throughput and rate changes. An illustrative waste correction of $800 monthly supports $9,600 of annual client savings; a 30% share yields $2,880 only as qualifying savings are earned. Four disconnected telecom circuits costing $250 monthly create $1,000 monthly savings and a $300 monthly fee at 30%. A property appeal yielding an actual $20,000 tax reduction produces $5,000 at a permissible 25% fee, subject to local licensing and contract terms. If an appeal deadline has passed, calendar the next assessment cycle rather than promise retroactive relief. For shared savings of $1,000 monthly, a 30% split over 36 months has a $10,800 nominal contract value, but only $3,600 belongs to the first full year of earned fees. These examples are qualification arithmetic, not additional annual scorecard scenarios.",
+            ],
+            "table": {
+                "caption": "Seven invoice-level sourcing plays and the evidence required before outreach becomes a claim",
+                "headers": [
+                    "Sourcing play and observable trigger",
+                    "Public signal and decision-maker route",
+                    "Authorized evidence needed for qualification",
+                    "Unit economics and practical risk fallback",
+                ],
+                "rows": [
+                    [
+                        "Parcel service-guarantee recovery after a distribution expansion",
+                        "Warehouse announcements identify logistics directors and controllers",
+                        "Executed carrier agreement plus dated shipment invoice exports",
+                        "Twenty eligible $30 refunds yield $210 at 35%; exclude waived guarantees",
+                    ],
+                    [
+                        "Parcel duplicate-billing correction across newly consolidated accounts",
+                        "Acquisition announcements identify integration leads and payables managers",
+                        "Tracking references matched against invoices and previously posted credits",
+                        "Ten duplicate $80 charges yield $280 at 35%; reconcile existing credits first",
+                    ],
+                    [
+                        "Parcel address-and-dimension review following product packaging changes",
+                        "Catalog changes identify fulfillment managers managing revised packaging",
+                        "Package measurements, shipment records and carrier adjustment explanations",
+                        "Forty supported $10 reversals yield $140 at 35%; reject undocumented dimensions",
+                    ],
+                    [
+                        "Electric tariff classification after substantial operating-use changes",
+                        "Permit records identify facility managers responsible for service accounts",
+                        "Tariff eligibility provisions, interval usage and current service classification",
+                        "$12,000 verified annual benefit supports $3,600 at 30%; switch prospectively if required",
+                    ],
+                    [
+                        "Demand-ratchet correction after a documented production shutdown",
+                        "Plant notices identify controllers supervising reduced operating schedules",
+                        "Demand history, meter intervals and applicable ratchet provisions",
+                        "$5,000 recoverable billing correction yields $1,750 at 35%; separate engineering-only reductions",
+                    ],
+                    [
+                        "Cooling-tower sewer deduction after permitted equipment installation",
+                        "Mechanical permits identify hotel engineers and industrial facility managers",
+                        "Accepted meter specifications, readings and municipal deduction schedule",
+                        "1,000 eligible $6 units yield $2,100 at 35%; install required measurement first",
+                    ],
+                    [
+                        "Water-meter multiplier correction after documented meter replacement",
+                        "Municipal project records identify owners receiving replacement meters",
+                        "Meter exchange record, register photographs and billing multiplier history",
+                        "$4,000 supported overcharge yields $1,400 at 35%; request testing for disputed readings",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Find the owner of the evidence before pitching the owner of the budget",
+                "body": "The strongest prospect combines a timely trigger, accessible records and a remedy that the counterparty actually honors.",
+                "items": [
+                    "Ask parcel prospects for the guarantee-waiver page before pricing the audit; a large shipment count cannot cure an excluded contractual remedy.",
+                    "Read municipal sewer-deduction instructions before contacting hotels; a required certified submeter changes the pitch from historical recovery to prospective measurement.",
+                    "Match property appeal calendars to the assessor's notice date, then verify who may represent the owner before scheduling an acquisition campaign.",
+                    "Ask referral accountants which clients already have active recovery vendors; a clean exclusion list prevents duplicate claims and fee disputes.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Qualify authority, fee legality and expected contribution before accepting a mandate",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "Score every prospect on six dimensions totaling 100 points: evidence accessibility 25, enforceable recovery basis 20, expected operator contribution 20, decision-maker access 15, filing runway 10 and collection speed 10. These weights are an operating heuristic, not historical performance data. Require at least 75 points and no fatal defect before assigning a specialist. Fatal defects include missing authorization, an expired filing window without an available remedy, prohibited representation or an unusable fee arrangement. Estimate contribution from collectible operator fees, not client expenditure. A prospect with a plausible $10,000 refund and a 35% fee starts at $3,500 revenue. Subtract an illustrative $700 specialist charge and $300 direct processing cost to obtain $2,500 contribution before shared overhead. If recovery probability is provisionally 50%, the probability-weighted fee is $1,750; subtracting $1,000 costs committed regardless of outcome leaves $750. If costs depend on success, model that dependency separately instead of applying one haircut to everything. Record which inputs are client-confirmed and which remain assumptions. Set an initial analyst-hour ceiling and a stop condition. A smaller account with complete records and a short payment cycle can outrank a prestigious prospect whose legal entity, vendor contract and authorized signer remain unresolved.",
+                "Treat wotc_hourly_payroll_tax_credit_contingency_engine as a specialized twelfth play, not a blanket permission to charge a percentage of tax savings. Its full scope is Automated Form 8850 WOTC (Work Opportunity Tax Credit) & Section 41 R&D Contingency Engine — TRACK_1. Begin with employer-authorized screening, applicable hiring dates and state workforce agency procedures. Section 51(c)(4) establishes a statutory cutoff for workers beginning employment after December 31, 2025; verify any enacted extension before marketing eligibility for later hires. The Section 51(d)(13) prescreening route generally requires the prescreening notice by the employment-offer date and submission within 28 days after work begins. Do not mistake a hiring feed for permission to collect applicant eligibility information. For an illustrative eligible worker meeting the 400-hour threshold, $6,000 of qualified first-year wages at 40% produces a $2,400 credit, subject to the worker category and wage limits. Twenty such certified workers produce $48,000 of client credits, not operator revenue. A permissible $150 fixed processing fee per completed eligible case produces $3,000. If authorization, timing or substantiation fails, exclude the claim and offer fixed-fee payroll documentation under independent tax review rather than backdating forms or promising a credit.",
+                "Separate Section 41 research work from WOTC screening, even when the same employer buys both services. Engineering job postings, prototype facilities and new manufacturing processes justify a discovery call, but they do not establish qualified research. Request project-level evidence addressing technological uncertainty, a permitted purpose and a process of experimentation, with expenses tied to actual activities. An illustrative alternative simplified credit calculation with $100,000 current qualified research expenses and a $120,000 three-year average gives a $60,000 threshold; 14% of the $40,000 excess is $5,600 before applicable elections and adjustments. This is a calculation example, not a determination of eligibility. Review funded-research exclusions, controlled-group rules, wage coordination and Section 280C treatment separately. Treasury Circular 230, 31 CFR 10.27, restricts contingent fees in covered matters and contains specific exceptions; judicial decisions also affect its reach. Have the responsible practitioner resolve the engagement's actual fee treatment before selling an outcome-linked arrangement. A $2,000 fixed documentation engagement is operator revenue only as the contracted service is earned, not a share of $100,000 research spending. Where evidence is weak, stop the credit work and preserve only supportable documentation services, with an independent tax professional controlling the return position.",
+            ],
+            "table": {
+                "caption": "Remaining sourcing plays, qualification controls and concrete fallback economics",
+                "headers": [
+                    "Play or qualification control being evaluated",
+                    "Evidence that makes the opportunity actionable",
+                    "Operator economics kept separate from client benefit",
+                    "Failure condition and useful fallback action",
+                ],
+                "rows": [
+                    [
+                        "Waste-service reconciliation after a documented occupancy reduction",
+                        "Container inventory, pickup tickets and executed service agreement",
+                        "$800 monthly savings earns $240 monthly at 30%",
+                        "Contract minimum blocks recovery; negotiate prospective service resizing",
+                    ],
+                    [
+                        "Telecom inventory cleanup after several office locations close",
+                        "Circuit inventory, disconnect orders and invoices by service address",
+                        "Four $250 circuits earn $300 monthly at 30%",
+                        "Termination charges erase benefit; schedule cancellation at renewal",
+                    ],
+                    [
+                        "Property-assessment appeals following an assessment notice or acquisition",
+                        "Assessment notice, comparable evidence and locally permitted representation",
+                        "$20,000 actual tax reduction earns $5,000 at 25%",
+                        "Deadline or licensing blocks action; prepare next-cycle evidence",
+                    ],
+                    [
+                        "Cross-site shared-savings verification after a repeatable operational correction",
+                        "Normalized site baselines with separately documented rate changes",
+                        "$1,000 monthly savings earns $300 monthly for 36 months",
+                        "Baseline cannot isolate benefit; agree prospective measurement instead",
+                    ],
+                    [
+                        "Employer-credit engine combining distinct WOTC and research-documentation services",
+                        "Certified hiring records or independently substantiated research projects",
+                        "Twenty $150 processing cases earn $3,000 service revenue",
+                        "Unsupported claims are excluded; use permissible fixed-fee documentation",
+                    ],
+                    [
+                        "Six-factor qualification score requiring at least 75 points",
+                        "Evidence, recovery basis, contribution, access, runway and collection",
+                        "$3,500 expected fee less $1,000 costs leaves $2,500",
+                        "Fatal authority defects override score; stop specialist assignment",
+                    ],
+                    [
+                        "Research-credit documentation priced independently from disputed tax outcomes",
+                        "Project narratives, expense tracing and independent practitioner review",
+                        "$2,000 fixed engagement is earned through completed services",
+                        "Fee restriction or weak evidence blocks outcome-linked pricing",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before evidence leaves the client's control",
+                "body": "A high qualification score cannot substitute for authority, a timely remedy or a workable engagement contract.",
+                "items": [
+                    "Obtain a signed engagement and Letter of Authorization naming entities, accounts, permitted actions, representatives and an expiration or revocation mechanism.",
+                    "Preserve dated baseline invoices and identify prior credits, incumbent auditors, excluded sites and the exact recovery window before presenting detailed findings.",
+                    "Verify carrier terms, utility procedures, local property-tax representation requirements and the responsible practitioner's tax-fee determination for the actual service.",
+                    "Confirm lawful hiring dates, required WOTC timing, secure applicant-data handling and independent substantiation before accepting any employer-credit claim.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run a permission-conscious outreach cadence with explicit funnel denominators",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                "Build an initial 400-account research universe, then remove accounts lacking a relevant trigger, reachable role or viable remedy. An illustrative campaign retains 160 evidence-qualified contacts, generates 32 substantive replies, books 16 discovery calls, qualifies ten opportunities and signs six mandates. That is a 40% research-to-contact yield, 20% contact-to-reply rate, 50% reply-to-call rate, 62.5% call-to-qualified rate and 60% qualified-to-signed rate. These are planning assumptions, not market benchmarks established by a dataset. The overall signed rate is 1.5% of raw accounts and 3.75% of contacted accounts. Track unique accounts separately from individual recipients so multiple contacts cannot inflate conversion. If only eight replies arrive, inspect targeting and message evidence before increasing volume. If calls occur but mandates stall, inspect authority, data burden, incumbent exclusions and fee clarity. Use three to ten signed engagements as the first one-to-four-month objective; municipal refunds, property appeals and tax outcomes may settle substantially later. Add a separate realized-value stage for credits posted, refunds received or accepted processing services completed. In the example, three of six mandates might reach that stage within the observation window, but the other three remain open inventory rather than hidden failures or booked revenue.",
+                "Use a bounded, multichannel sequence built around one verifiable trigger. On day one, send a short business email identifying the observed event, the narrow audit category and the two documents needed to decide whether a review is worthwhile. On day three, make a manual call to the published business number and ask who owns that invoice category. On day six, send a plain-language evidence checklist without asking for account passwords or applicant records. On day ten, offer a 15-minute triage call with the controller and operating owner. On day fifteen, close the sequence and state that further contact will stop unless they request follow-up. Check suppression lists before every touch. Commercial email must satisfy applicable CAN-SPAM requirements, including accurate routing information, nondeceptive subject lines, a valid postal address and a working opt-out honored within ten business days. Do not treat a business label as exemption from every telephone rule; calling technology, number type, message content and state requirements matter. Avoid automated dialing or prerecorded messages unless the applicable requirements have been established. LinkedIn outreach should be manual and relevant, not a workaround for an email opt-out. Log each contact's source, channel, outcome and next permitted action.",
+                "Make inbound and partner channels answer the same narrow question as outbound: which records prove whether a recoverable discrepancy exists? Publish a carrier-waiver checklist, a cooling-tower deduction evidence guide and a property-notice deadline worksheet, each directing readers to a scoped intake form. Explain the actual state or utility jurisdiction covered rather than collecting broad search traffic with unsupported nationwide claims. Ask CPAs, payroll implementers, commercial property managers and fractional controllers for introductions to a specific account pattern. Obtain client permission before exchanging sensitive details, and review professional restrictions before paying referral compensation. A useful opening is, 'Your new warehouse may have changed account-level parcel terms; we review the waiver and two invoices before proposing a claim.' When the prospect says their accountant already handles this, offer to work within the accountant's defined scope and exclude overlapping claims. When they fear vendor retaliation, explain the ordinary billing-dispute route and decline any promise about the vendor's future behavior. When they demand a free list of recoveries, offer a redacted sample deliverable and a bounded diagnostic. Do not disclose account-specific tariff findings before the signed authorization and baseline snapshots are secured. Every objection should end with a concrete next step or a clean disqualification.",
+            ],
+            "table": {
+                "caption": "Illustrative first-campaign funnel with account-level denominators and corrective actions",
+                "headers": [
+                    "Stage and explicit account-level planning count",
+                    "Conversion denominator and stage-entry evidence requirement",
+                    "Operator action that advances qualified accounts",
+                    "Failure response without inflating reported results",
+                ],
+                "rows": [
+                    [
+                        "Research universe contains 400 distinct operating accounts",
+                        "Count unique organizations with dated public-source observations",
+                        "Assign one likely invoice owner per account",
+                        "Remove duplicate entities before calculating campaign conversion",
+                    ],
+                    [
+                        "Contactable qualified list contains 160 distinct accounts",
+                        "160 divided by 400 gives 40% retention",
+                        "Verify relevant trigger, role and plausible remedy",
+                        "Replace weak signals rather than purchasing more addresses",
+                    ],
+                    [
+                        "Substantive replies arrive from 32 contacted accounts",
+                        "32 divided by 160 gives 20% response",
+                        "Ask which contract and invoice owner can participate",
+                        "Exclude automatic replies and unsubscribe messages from responses",
+                    ],
+                    [
+                        "Discovery calls occur with 16 responding accounts",
+                        "16 divided by 32 gives 50% progression",
+                        "Confirm scope, authority, timing and incumbent exclusions",
+                        "Separate missed meetings from completed discovery conversations",
+                    ],
+                    [
+                        "Ten opportunities satisfy the documented qualification threshold",
+                        "10 divided by 16 gives 62.5% qualification",
+                        "Estimate collectible fees and apply fatal-defect checks",
+                        "Reject unsupported remedies even when expenditure looks substantial",
+                    ],
+                    [
+                        "Six accounts sign scoped mandates and authorizations",
+                        "6 divided by 10 gives 60% closing",
+                        "Capture baselines and assign named specialist ownership",
+                        "Do not count verbal interest as an executed mandate",
+                    ],
+                    [
+                        "Three mandates reach documented realized-value milestones initially",
+                        "3 divided by 6 gives 50% initial realization",
+                        "Reconcile posted benefit or accepted completed processing service",
+                        "Keep remaining mandates open with dated collection expectations",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Build the first evidence-led account batch",
+                    "action": "Research 100 unique accounts weekly until the initial 400-account universe is complete.",
+                    "detail": "Capture source URL, trigger date, operating entity, likely invoice owner, remedy hypothesis and filing runway; suppress duplicate or previously opted-out contacts.",
+                },
+                {
+                    "step": 2,
+                    "title": "Launch the bounded contact sequence",
+                    "action": "Contact only accounts with an observable trigger and a plausible authorized review route.",
+                    "detail": "Use the day-one email, day-three manual call, day-six checklist, day-ten triage offer and day-fifteen close; stop immediately on opt-out.",
+                },
+                {
+                    "step": 3,
+                    "title": "Convert discovery into a scored decision",
+                    "action": "Apply the six-factor scorecard and record fatal defects before proposing scope.",
+                    "detail": "Name the evidence owner, calculate fee contribution, verify deadlines and determine whether a specialist or independent tax practitioner must review the engagement.",
+                },
+                {
+                    "step": 4,
+                    "title": "Sign, baseline and report separate milestones",
+                    "action": "Execute the engagement and authorization before releasing detailed findings or submitting claims.",
+                    "detail": "Track signed mandate, complete evidence, filed claim, accepted benefit, earned fee and cash receipt as separate events with dated supporting records.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Turn first mandates into verified benefits, collected fees and repeatable referrals",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                "Structure the first mandate around a bounded account set and a measurable remedy. The engagement should identify covered entities, invoice periods, excluded claims, fee percentages, settlement authority, evidence retention, payment timing and treatment of preexisting credits. Obtain a separate or clearly delineated Letter of Authorization that the carrier, utility or other counterparty will accept. Request read-only exports or delegated access where supported; never ask a prospect to email shared administrator credentials. Preserve original invoice files, extraction versions and reconciliation outputs so a later reviewer can reproduce the finding. Carrier APIs, EDI feeds and OCR improve throughput only when the client has authorized their use and vendor terms permit the integration. Do not assume every FedEx or UPS account has the same claims API or guarantee coverage. For each proposed correction, link the contractual or tariff provision to the invoice line, calculation and submission deadline. Have the client approve any account changes or settlements outside delegated authority. Report a submitted claim as submitted, an accepted adjustment as accepted and a received refund as received. This discipline prevents an attractive dashboard from becoming an unpaid-fee dispute when the vendor reverses a provisional credit or the client identifies an earlier adjustment.",
+                "Manage the first four months as a queue with explicit work limits. During weeks one and two, select two adjacent invoice lanes, establish specialist coverage and build the first 100-account batch. During weeks three and four, complete the initial outreach cycle, conduct triage calls and close the first narrow mandates where evidence is ready. During months two and three, submit timely claims, issue evidence-backed status updates and expand only into accounts sharing the same document pattern. During month four, seek introductions from clients with verified benefits and review whether collection delays justify changing the target segment. One founder can own sourcing, scope and client communication while three contractors provide parcel, utility and tax-specialist capacity; contractor headcount does not imply three full-time salaries. The canonical startup capital range is $6,000–$35,000 and monthly operating range is $1,500–$9,500, but neither replaces a fully loaded annual cost budget. Reserve cash for contractor invoices that precede recovery receipts. Municipal queues and property calendars can exceed the initial selling window, so balance them with shorter-cycle invoice corrections. If evidence retrieval repeatedly consumes more than the agreed diagnostic ceiling, pause the account and request a specific missing artifact instead of subsidizing an open-ended investigation.",
+                "Reconcile performance to the canonical Formula v2.0 cases without converting client savings into operator sales. Conservative operator revenue is $110,000, with $77,000 total costs and $33,000 owner net profit at 30%, supported by 1 FT + 3 C. Base revenue is $505,000, with $287,850 costs and $217,150 profit at 43.0%, also supported by 1 FT + 3 C. Scaled revenue is $900,000, with $396,000 costs and $504,000 profit at 56%, supported by 2 FT + 4 C. These are annual scorecard cases, not a forecast for the first six mandates. Earned contingency shares, earned portions of 36-month savings arrangements and completed processing services provide the revenue basis. Do not add the underlying refund, utility expenditure, employer credit or full nominal savings contract to revenue. Apply the actual contract and applicable revenue-recognition treatment, including variable consideration and principal-versus-agent presentation, rather than treating gross cash passing through an account as sales. Keep expected fees, recognized revenue, receivables and collected cash in separate columns. Ask for referrals after the client confirms the benefit and understands the fee calculation. The repeatable asset is a documented remedy attached to a reliable evidence workflow, not a growing inventory of optimistic claims.",
+            ],
+            "table": {
+                "caption": "Mandate execution, fee reconciliation and annual scorecard controls",
+                "headers": [
+                    "Operating checkpoint and accountable completion milestone",
+                    "Required evidence or exact financial reconciliation",
+                    "Client-facing explanation and next concrete action",
+                    "Failure response protecting capacity and fee quality",
+                ],
+                "rows": [
+                    [
+                        "Signed mandate establishes the account and recovery perimeter",
+                        "Executed scope, accepted authorization and preserved baseline invoices",
+                        "Explain exclusions before presenting detailed account-specific recovery findings",
+                        "Missing signature stops disclosure and counterparty claim submission",
+                    ],
+                    [
+                        "Authorized extraction produces reproducible invoice-level claim evidence",
+                        "Original files, extraction version and line-level calculation references",
+                        "Request missing records through the agreed secure workspace",
+                        "Unusable API access falls back to permitted exports",
+                    ],
+                    [
+                        "Counterparty acceptance establishes the documented benefit milestone",
+                        "Posted credit, refund confirmation or accepted completed service",
+                        "Show benefit attribution and subtract previously credited amounts",
+                        "Provisional or reversed credits remain outside collected-benefit totals",
+                    ],
+                    [
+                        "Shared-savings billing follows the actual monthly measurement period",
+                        "$1,000 monthly benefit times 30% earns $300 monthly",
+                        "Bill verified periods rather than the entire contract value",
+                        "Unexplained baseline changes trigger recalculation before fee billing",
+                    ],
+                    [
+                        "Conservative annual case supports one founder and three contractors",
+                        "$110,000 revenue minus $77,000 costs equals $33,000 profit",
+                        "Report 30% margin using operator revenue as denominator",
+                        "Do not substitute client refund volume for earned revenue",
+                    ],
+                    [
+                        "Base annual case retains one founder and three contractors",
+                        "$505,000 revenue minus $287,850 costs equals $217,150 profit",
+                        "Report 43.0% margin with all annual costs included",
+                        "Reconcile contractor expenses before comparing actual annual performance",
+                    ],
+                    [
+                        "Scaled annual case supports two employees and four contractors",
+                        "$900,000 revenue minus $396,000 costs equals $504,000 profit",
+                        "Report 56% margin across the six-person operating team",
+                        "Expand only when evidence throughput and collection remain measurable",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "The best recovery lead is a timely remedy with accessible evidence and a client who can authorize both.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Choose two adjacent invoice lanes and document their contracts, tariffs, filing windows, evidence owners and fallback services before building the first account list.",
+        "Research 400 unique accounts using dated public signals, then retain only prospects with a reachable decision-maker and a plausible authorized remedy.",
+        "Run the bounded five-touch sequence with suppression checks, accurate commercial-email disclosures and manual business calling appropriate to the applicable rules.",
+        "Score opportunities across six factors, reject fatal defects and calculate expected contribution from operator fees rather than underlying client expenditures.",
+        "Secure the engagement, accepted Letter of Authorization and baseline invoice snapshots before disclosing detailed findings, accessing protected records or submitting claims.",
+        "Track signed mandates, realized client benefits, earned fees and collected cash separately; reconcile annual results to the exact Conservative, Base and Scaled scorecard cases.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "26 U.S.C. § 51 — Work opportunity credit",
+            "url": "https://www.law.cornell.edu/uscode/text/26/51",
+            "relevance": "Controls eligible worker categories, wage limits, hours-based credit percentages, hiring-date authorization and certification or prescreening requirements; verify enacted changes before offering post-cutoff screening.",
+        },
+        {
+            "title": "26 U.S.C. § 41 — Credit for increasing research activities",
+            "url": "https://www.law.cornell.edu/uscode/text/26/41",
+            "relevance": "Defines qualified research, eligible expenses, exclusions and alternative simplified credit mechanics; hiring announcements alone cannot substantiate a research-credit position.",
+        },
+        {
+            "title": "26 U.S.C. § 280C — Certain expenses for which credits are allowable",
+            "url": "https://www.law.cornell.edu/uscode/text/26/280C",
+            "relevance": "Requires coordination of specified credits and related expense treatment, including applicable research-credit adjustments and elections under the governing tax-year rules.",
+        },
+        {
+            "title": "31 CFR § 10.27 — Fees under Treasury Circular 230",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
+            "relevance": "Provides contingent-fee restrictions and stated exceptions for covered practitioner services; determine the engagement's actual scope and governing judicial limits before proposing outcome-linked tax fees.",
+        },
+        {
+            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Governs commercial-email routing and subject-line accuracy, required disclosures, opt-out mechanisms and timely honoring of opt-out requests.",
+        },
+        {
+            "title": "47 CFR § 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
+            "relevance": "Sets telephone solicitation and automated or prerecorded calling requirements whose application depends on the technology, recipient number and message; state requirements also require review.",
+        },
+        {
+            "title": "Texas Occupations Code § 1152.151 — Registration required",
+            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm#1152.151",
+            "relevance": "Provides a concrete state example of property-tax consultant registration requirements; determine applicable exemptions and representation authority before accepting a Texas assessment engagement.",
+        },
+    ],
+}

@@ -1,0 +1,328 @@
+{
+  "diagrams": [
+    {
+      "diagram_id": "diag-01-inbound-auction-to-collected-cash",
+      "chart_type": "process_flow",
+      "title": "One inquiry, one auditable settlement",
+      "subtitle": "Separate routing speed from qualification evidence and cash collection.",
+      "chapter_number": 1,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Illustrative operating sequence for directly contracted publishers and buyers. Ringba or Retreaver timeout settings are tested against actual buyer response times; sub-second bidding is an engineering target, not an asserted service level. A 90–120 second threshold is a negotiated billing condition, never evidence of lawful contact.",
+      "caption": "Preserve a shared call identifier from source click through buyer payment; a winning bid alone does not establish collectible revenue.",
+      "stages": [
+        {
+          "label": "Capture source and permission",
+          "value": "Bind click, caller, disclosure, and intended recipient",
+          "numeric_value": 1.0,
+          "detail": "Persist source campaign, landing-page version, timestamp, recipient identity, and TrustedForm or Jornaya evidence where applicable. A certificate records evidence; it does not independently establish valid permission."
+        },
+        {
+          "label": "Validate inquiry and eligibility",
+          "value": "Check geography, duplication, contact rules, and capacity",
+          "numeric_value": 2.0,
+          "detail": "Confirm service intent, buyer coverage, business hours, and duplicate-call lookback. For regulated outbound follow-up, apply current suppression and permission rules. A commercial litigation-risk list never substitutes for National or entity-specific DNC controls."
+        },
+        {
+          "label": "Ping eligible contracted buyers",
+          "value": "Auction minimal attributes against live caps",
+          "numeric_value": 3.0,
+          "detail": "Send only contractually permitted routing attributes. Apply Ringba or Retreaver bid timeouts, geographic filters, capacity limits, and a fallback route; avoid broadcasting the caller's identity to every bidder."
+        },
+        {
+          "label": "Post and qualify the connection",
+          "value": "Connect once and measure contracted connected seconds",
+          "numeric_value": 4.0,
+          "detail": "Select the eligible bid, connect the caller, and measure the buyer-agreed 90–120 second buffer using the agreed clock. Distinguish ringing, hold time, and agent-connected time; review transcript classifications before billing."
+        },
+        {
+          "label": "Reconcile and collect",
+          "value": "Resolve scrubs before increasing publisher exposure",
+          "numeric_value": 5.0,
+          "detail": "Match disposition, duration, duplicate status, invoice, and bank receipt by call identifier. Keep publisher caps tight until actual net-7 buyer collections are verified; send S2S value corrections when accepted calls reverse."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-02-nested-cohort-settlement-funnel",
+      "chart_type": "funnel",
+      "title": "From paid visits to settled calls",
+      "subtitle": "A single annual cohort produces the Base-Case $850,000 gross settlement model.",
+      "chapter_number": 6,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "All five stages belong to the same illustrative annual cohort. Each later stage is a subset of the prior stage, with one counted call per qualifying visit. The 3,400 final calls average $250 in gross billable settlements; these rates are model inputs, not measured campaign results.",
+      "caption": "100,000 visits × 10% × 50% × 80% × 85% = 3,400 settled calls. Gross settlements equal $850,000; the 55% retained share equals $467,500 before remaining modeled costs.",
+      "stages": [
+        {
+          "label": "Tracked paid visits",
+          "value": "100,000 visits enter the same annual cohort",
+          "numeric_value": 100000.0,
+          "detail": "Count attributed landing-page visits after traffic-quality filtering. Use a stable campaign identifier and defined attribution window; do not mix impressions or repeat telephone attempts into this visit count."
+        },
+        {
+          "label": "Visits initiating calls",
+          "value": "10,000 call starts; 10% of tracked visits",
+          "numeric_value": 10000.0,
+          "detail": "Count the first tracked call initiation associated with each converting visit. A telephone-link click without an actual call start does not enter this stage."
+        },
+        {
+          "label": "Unique eligible inquiries",
+          "value": "5,000 inquiries; 50% of call starts",
+          "numeric_value": 5000.0,
+          "detail": "Remove duplicates, wrong-service inquiries, out-of-area callers, and inquiries lacking required routing permission. Preserve exclusion reasons so source quality can be reconciled with publisher invoices."
+        },
+        {
+          "label": "Buyer-qualified connections",
+          "value": "4,000 connections; 80% of eligible inquiries",
+          "numeric_value": 4000.0,
+          "detail": "Require buyer connection, contracted intent, and the specified 90–120 second buffer. An AI transcript label supports review but does not override buyer acceptance terms or the actual call clock."
+        },
+        {
+          "label": "Settled billable calls",
+          "value": "3,400 calls; 85% of qualified connections",
+          "numeric_value": 3400.0,
+          "detail": "Exclude 600 rejected or reversed connections before applying the $250 settlement average. The resulting $850,000 is exchange settlement volume, not the value of policies, repairs, legal matters, or client purchases."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-03-base-case-owner-profit-waterfall",
+      "chart_type": "waterfall",
+      "title": "$850,000 gross settlements to $199,750 owner profit",
+      "subtitle": "Six bars reconcile the 55% retained share and 23.5% gross-basis net margin.",
+      "chapter_number": 3,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "The first and last bars are absolute totals; the four intermediate bars are signed deductions. Only the $382,500 acquisition deduction is fixed by the canonical 55% retained share; the remaining $267,750 is allocated illustratively. This model treats the quoted $2,500–$14,000 monthly opex band as recurring pod and platform overhead, with variable fulfillment separately funded. All-in post-acquisition costs average $22,312.50 monthly. If the quoted opex band were intended to include every such cost, it would not reconcile to the canonical Base Case.",
+      "caption": "$850,000 − $382,500 − $99,750 − $108,000 − $60,000 = $199,750. Retained revenue is $467,500; owner profit is 23.5% of gross settlements and 42.73% of retained revenue. The 55% presentation is the supplied ASC 606 modeling convention; actual principal-versus-agent presentation depends on contract facts.",
+      "stages": [
+        {
+          "label": "Gross billable settlements",
+          "value": "$850,000 annual exchange settlement total",
+          "numeric_value": 850000.0,
+          "detail": "Opening absolute total equals 3,400 settled calls at $250 each. Keep this gross settlement basis separate from the $467,500 retained-revenue presentation and from any downstream buyer transaction value."
+        },
+        {
+          "label": "Publisher and media acquisition",
+          "value": "Subtract $382,500; retain $467,500 before other costs",
+          "numeric_value": -382500.0,
+          "detail": "Publisher payouts plus click-to-call media consume 45% of gross settlements. Attribute each acquisition cost once; publisher-funded traffic must not also be charged as directly purchased media."
+        },
+        {
+          "label": "Variable call fulfillment",
+          "value": "Subtract $99,750 in incremental transaction costs",
+          "numeric_value": -99750.0,
+          "detail": "Illustrative allocation covers usage-based telephony, metered evidence retrieval, outsourced call audits, and transaction handling. Exclude acquisition spending and fixed subscriptions already represented in other bars."
+        },
+        {
+          "label": "Pod labor and contractors",
+          "value": "Subtract $108,000 for one employee and two contractors",
+          "numeric_value": -108000.0,
+          "detail": "Annual illustrative labor budget equals $9,000 monthly. Treat the full-time seat as paid operating labor; owner profit is the residual after this budget, not a substitute for recording labor expense."
+        },
+        {
+          "label": "Fixed platform and administration",
+          "value": "Subtract $60,000 in annual recurring overhead",
+          "numeric_value": -60000.0,
+          "detail": "Budget $5,000 monthly for fixed software commitments, accounting, insurance, and administration. Combined with labor, recurring overhead reaches $14,000 monthly; variable fulfillment remains a separate waterfall deduction."
+        },
+        {
+          "label": "Annual owner net profit",
+          "value": "$199,750 residual after all four modeled deductions",
+          "numeric_value": 199750.0,
+          "detail": "Closing absolute total is the canonical Base Case. Conservative remains $200,000 gross, $110,000 retained, and $30,000 profit at 15% gross margin and 27.27% retained margin. Scaled remains $1,500,000 gross, $825,000 retained, and $480,000 profit at 32% and 58.18%, respectively."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-04-subniche-retained-yield-comparison",
+      "chart_type": "horizontal_bars",
+      "title": "Compare retained dollars per settled call",
+      "subtitle": "Five illustrative sub-niche yields use the same 55% retained-share assumption.",
+      "chapter_number": 2,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Bar lengths measure retained dollars per settled call before fulfillment, pod labor, and fixed overhead. Gross call prices are illustrative contract inputs, not observed market quotes. These alternatives are not an additive portfolio and do not alter the Base-Case blended $250 gross settlement assumption.",
+      "caption": "Higher nominal yield can conceal longer collection cycles, tighter statutory restrictions, or worse rejection rates. Compare realized contribution per acquired inquiry before reallocating spend.",
+      "stages": [
+        {
+          "label": "Emergency plumbing dispatch",
+          "value": "$110 retained from a $200 settled call",
+          "numeric_value": 110.0,
+          "detail": "$200 × 55% = $110 before remaining costs. Require live service-area coverage, a working dispatch endpoint, and documented buyer acceptance; an unanswered emergency transfer cannot be counted as a completed job."
+        },
+        {
+          "label": "Personal insurance inquiry",
+          "value": "$137.50 retained from a $250 settled call",
+          "numeric_value": 137.5,
+          "detail": "$250 × 55% = $137.50 before remaining costs. Match state and product eligibility to the licensed buyer; record recipient-specific permission where required and reject duplicates under the signed lookback window."
+        },
+        {
+          "label": "Commercial insurance inquiry",
+          "value": "$165 retained from a $300 settled call",
+          "numeric_value": 165.0,
+          "detail": "$300 × 55% = $165 before remaining costs. Capture business class and coverage intent without collecting unnecessary sensitive information; reconcile buyer staffing hours and acceptance criteria before buying traffic."
+        },
+        {
+          "label": "Water-restoration dispatch",
+          "value": "$192.50 retained from a $350 settled call",
+          "numeric_value": 192.5,
+          "detail": "$350 × 55% = $192.50 before remaining costs. Verify incident location, actual dispatch availability, and service intent; do not equate the call price with restoration contract value or insurance proceeds."
+        },
+        {
+          "label": "Permitted legal advertising inquiry",
+          "value": "$220 retained from a $400 settled call",
+          "numeric_value": 220.0,
+          "detail": "$400 × 55% = $220 before remaining costs. Activate only where the precise advertising arrangement is permitted under applicable state rules; check California Rules of Professional Conduct 7.2 and Business and Professions Code sections 6151–6153 for relevant California activity. A fixed call price alone does not establish permissibility."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-05-preflight-contact-and-counterparty-tree",
+      "chart_type": "decision_tree",
+      "title": "Four checks before traffic is purchased",
+      "subtitle": "Pass each check in sequence; a failed branch stops the affected route.",
+      "chapter_number": 5,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values encode ordered check positions, not risk scores. The FCC's 2023 one-to-one consent amendment was vacated in Insurance Marketing Coalition Ltd. v. FCC, 127 F.4th 303 (11th Cir. 2025); do not present it as an operative universal FCC mandate. Recipient-specific evidence remains a useful contractual control. Confirm current rule text and controlling decisions before activating a jurisdiction or product.",
+      "caption": "Pass proceeds to the next check; failure disables the relevant campaign or recipient until the specified defect is corrected. Commercial risk checks supplement statutory requirements.",
+      "stages": [
+        {
+          "label": "Contact method and permission",
+          "value": "Pass to Medicare scope; fail to contact redesign",
+          "numeric_value": 1.0,
+          "detail": "Classify consumer-initiated inbound activity, transfers, and outbound follow-up separately under 47 U.S.C. 227, 47 CFR 64.1200, and applicable 16 CFR Part 310 provisions. Apply written-consent requirements where triggered. Refresh DNC suppression as required, including the applicable 31-day National Registry update interval, and check entity-specific suppression before outbound contact."
+        },
+        {
+          "label": "Medicare marketing requirements",
+          "value": "Pass to state restrictions; fail to appointment repair",
+          "numeric_value": 2.0,
+          "detail": "For Medicare activity, apply 42 CFR 422.2264 and 423.2264 scope-of-appointment timing, including the 48-hour rule and its actual exceptions. Apply TPMO marketing, sales, and enrollment call-recording rules under 422.2274 and 423.2274, plus applicable individual TPMO information-sharing permission requirements. Non-Medicare routes proceed without importing these rules."
+        },
+        {
+          "label": "State recording and legal advertising",
+          "value": "Pass to buyer risk; fail to route exclusion",
+          "numeric_value": 3.0,
+          "detail": "Map caller and recipient jurisdictions before recording; California Penal Code section 632 addresses confidential communications. For legal inquiries, examine applicable state advertising, solicitation, referral-payment, and runner restrictions, including California Business and Professions Code sections 6151–6153 when relevant. Exclude arrangements that fail the governing rules."
+        },
+        {
+          "label": "Buyer collectability and acquisition risk",
+          "value": "Pass to capped traffic; fail to funding repair",
+          "numeric_value": 4.0,
+          "detail": "Document the connected-time clock, rejection reasons, dispute window, credit exposure, and actual net-7 collections. Set CPC and publisher exposure limits from realized contribution, not headline bids. At Base Case, a 10% acquisition-cost increase with everything else fixed removes $38,250 and reduces profit to $161,500."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-06-three-to-five-person-operating-pod",
+      "chart_type": "org_architecture",
+      "title": "Three core seats, two scaled additions",
+      "subtitle": "Base pod is 1 FT + 2 C; scaled pod is 2 FT + 3 C.",
+      "chapter_number": 11,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Each numeric value represents one person in the five-person scaled configuration, not one full-time equivalent. The first three seats form the Conservative and Base pods. The final two seats are scaled additions; contractor hours are scoped separately.",
+      "caption": "Automation handles routing, evidence indexing, and S2S corrections. Named people still own spend limits, buyer disputes, recording exceptions, and bank reconciliation.",
+      "stages": [
+        {
+          "label": "Exchange operator — core full-time",
+          "value": "Own buyers, cash exposure, and daily contribution",
+          "numeric_value": 1.0,
+          "detail": "Own signed buyer terms, Ringba or Retreaver routing configuration, publisher caps, and daily cash exposure. Reconcile settled-call contribution with invoices before increasing media budgets or buyer credit limits."
+        },
+        {
+          "label": "Acquisition specialist — core contractor",
+          "value": "Own search campaigns, landing pages, and source controls",
+          "numeric_value": 1.0,
+          "detail": "Manage Google Ads search terms, geographic targeting, negative keywords, landing-page versions, and S2S conversion corrections. Diagnose CPC spikes using settled cohorts rather than optimizing toward raw call starts."
+        },
+        {
+          "label": "Evidence and reconciliation specialist — core contractor",
+          "value": "Own call audits, evidence retrieval, and dispute packets",
+          "numeric_value": 1.0,
+          "detail": "Sample AI transcript dispositions, retrieve TrustedForm or Jornaya evidence where used, and reconcile duration scrubs. Assemble timestamped dispute packets and match buyer receipts to the settlement ledger."
+        },
+        {
+          "label": "Buyer operations manager — scaled full-time",
+          "value": "Add live capacity management and counterparty coverage",
+          "numeric_value": 1.0,
+          "detail": "Add this second full-time seat in the five-person scaled configuration. Maintain buyer schedules, backup routes, concentration limits, and collections follow-up while the operator retains portfolio-level spend authority."
+        },
+        {
+          "label": "Automation engineer — scaled contractor",
+          "value": "Add routing tests, event reliability, and audit exports",
+          "numeric_value": 1.0,
+          "detail": "Add this third contractor in the scaled configuration. Test bid timeouts, webhook retries, idempotent postbacks, access controls, and evidence exports; prevent duplicate billing when asynchronous events arrive out of order."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-07-startup-capital-allocation",
+      "chart_type": "stacked_comparison",
+      "title": "Allocate startup cash before buying volume",
+      "subtitle": "Four buckets total $8,000 lean, $30,000 working, or $45,000 expanded.",
+      "chapter_number": 4,
+      "epistemic_tag": "illustrative_model",
+      "assumptions_note": "Numeric values display the $30,000 working plan. Each detail also states its lean and expanded allocations. Lean allocations sum to $8,000; expanded allocations sum to $45,000. These are startup cash allocations, not annual expense deductions or additional revenue.",
+      "caption": "Do not count an unspent reserve as an expense. Release test capital in small cohorts, and resize settlement float using observed buyer collections rather than invoice due dates alone.",
+      "stages": [
+        {
+          "label": "Routing and evidence setup",
+          "value": "$3,500 working allocation for initial systems",
+          "numeric_value": 3500.0,
+          "detail": "Lean $1,000; working $3,500; expanded $5,000. Fund telephone numbers, initial Ringba or Retreaver configuration, evidence integration, landing-page instrumentation, and test-call fixtures before connecting paid traffic."
+        },
+        {
+          "label": "Contracts and operating setup",
+          "value": "$4,500 working allocation for documented counterparties",
+          "numeric_value": 4500.0,
+          "detail": "Lean $1,000; working $4,500; expanded $7,000. Fund buyer and publisher contract work, jurisdiction-specific advertising review, accounting setup, recording procedures, and written acceptance and dispute definitions."
+        },
+        {
+          "label": "Controlled acquisition experiments",
+          "value": "$14,000 working allocation for measured traffic cohorts",
+          "numeric_value": 14000.0,
+          "detail": "Lean $4,000; working $14,000; expanded $21,000. Release media or publisher test spending in capped increments. Stop a source when realized contribution or evidence quality breaches its documented operating threshold."
+        },
+        {
+          "label": "Settlement float and contingency",
+          "value": "$8,000 working allocation for timing and reversals",
+          "numeric_value": 8000.0,
+          "detail": "Lean $2,000; working $8,000; expanded $12,000. Reserve cash for prepaid acquisition, buyer payment delays, and reversals. Base acquisition averages about $1,047.95 daily; seven days consumes about $7,335.62 before other obligations, making an $8,000 reserve tight."
+        }
+      ]
+    },
+    {
+      "diagram_id": "diag-08-thirty-day-controlled-launch",
+      "chart_type": "timeline_roadmap",
+      "title": "Thirty days to an instrumented operating pilot",
+      "subtitle": "Four milestones prepare the exchange; first-deal planning remains one to three months.",
+      "chapter_number": 12,
+      "epistemic_tag": "operating_framework",
+      "assumptions_note": "Numeric values mark milestone end days. This sprint establishes buyer terms, tested routing, capped experiments, and reconciliation. It does not assume a buyer payment or profitable campaign will arrive within the first 30 days.",
+      "caption": "Increase exposure only after the evidence, contribution, and collection record supports it. Carry unfinished buyer contracting or collection work into the stated one-to-three-month deal window.",
+      "stages": [
+        {
+          "label": "Days 1-7",
+          "value": "Define one niche and executable buyer terms",
+          "numeric_value": 7.0,
+          "detail": "Choose one jurisdiction and service category. Document call price, connected-time definition, duplicate window, rejection reasons, payment timing, and recording duties. Complete the four pre-flight checks and assign a named owner to each operating control."
+        },
+        {
+          "label": "Days 8-14",
+          "value": "Prove routing and evidence with authorized test calls",
+          "numeric_value": 14.0,
+          "detail": "Configure Ringba or Retreaver buyer caps and fallback paths. Test no-bid, timeout, disconnect, duplicate-event, and webhook-retry cases. Verify evidence retrieval and recording access without sending test conversions into production bid optimization."
+        },
+        {
+          "label": "Days 15-21",
+          "value": "Run capped cohorts and inspect every disputed call",
+          "numeric_value": 21.0,
+          "detail": "Release a limited acquisition tranche after buyer contracting is complete. Compare source cost, connected duration, buyer acceptance, and evidence completeness. Reconcile S2S values to accepted calls; pause faulty routes rather than padding call duration."
+        },
+        {
+          "label": "Days 22-30",
+          "value": "Close the first reconciliation and set the next exposure cap",
+          "numeric_value": 30.0,
+          "detail": "Match call records, buyer statements, publisher invoices, and any received payments. Separate billed amounts from cash collected. If net-7 collectability remains unproven, retain pilot caps and extend observation instead of treating an unpaid invoice as validated demand."
+        }
+      ]
+    }
+  ]
+}

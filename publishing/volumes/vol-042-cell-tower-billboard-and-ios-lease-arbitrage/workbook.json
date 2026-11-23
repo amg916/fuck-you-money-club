@@ -1,0 +1,470 @@
+{
+  "workbook_id": "wb-042-cell-tower-billboard-and-ios-lease-arbitrage",
+  "volume_id": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage",
+  "title": "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage — Operator Companion Workbook",
+  "subtitle": "6 Printable Operator Worksheets for Telecom Easement Buyouts, DOT Billboard Permit Assignments, and NNN Industrial Outdoor Storage Master-Lease Spreads: Underwriting, Capital, Execution, Statutory Controls, Automation, and Small-Team Launch",
+  "worksheets": [
+    {
+      "worksheet_id": "ws-01",
+      "number": 1,
+      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
+      "purpose": "Separate transferable property rights from attractive parcel stories. Underwrite the owner, lender, infrastructure tenant, permit authority, and eventual buyer before spending diligence capital. Establish a documented spread that survives assignment restrictions, title priority, termination rights, operating costs, and realistic execution timing.",
+      "chapter_ref": "Q1, Q2, Q6",
+      "instructions": [
+        "Create one opportunity record for each distinct legal interest, not merely each street address. Attach the parcel identifier, record owner, proposed instrument, existing leases, and responsible reviewer before comparing telecom, billboard, and outdoor-storage opportunities.",
+        "Request evidence directly from the party responsible for it. Obtain rent history from the owner, consent requirements from the documents, permit status from the authority, and buyer criteria from an identified acquisition representative with documented authority.",
+        "Calculate proceeds after acquiring the specific right and paying transaction charges, then test the spread against delay and counterparty failure. Treat quoted acquisition multiples as hypotheses until a buyer prices the actual lease and title package.",
+        "Score title, land use, access, tenant credit, environmental exposure, and transferability separately. A strong aggregate score cannot compensate for a prohibited use, missing lender protection, or an owner who cannot convey the interest offered.",
+        "Choose advance, renegotiate, or archive using written thresholds and dated evidence. Assign each unresolved issue an owner, spending limit, and resolution date so an inexpensive option does not become an uncontrolled obligation through inattention."
+      ],
+      "fields": [
+        {
+          "name": "Legal interest and parcel identity",
+          "type": "textarea",
+          "prompt": "Identify the county parcel, legal owner, asset lane, and exact interest being acquired. Explain how the proposed instrument differs from buying the entire property or the infrastructure installed upon it.",
+          "example": "Opportunity TX-TWR-014 concerns a defined telecom easement on parcel 145-22-018, owned by Cedar Yard Holdings LLC. The proposal covers rent collection, access, and utility rights described in Exhibit A; it does not purchase the underlying warehouse or the carrier's antenna equipment."
+        },
+        {
+          "name": "Owner authority and counterparty verification",
+          "type": "textarea",
+          "prompt": "Document entity existence, authorized signatories, ownership evidence, payment destinations, and the relationship between the negotiating party and recorded owner. Specify an independent verification step before accepting instructions that move money.",
+          "example": "The recorded owner matches the deed and current state entity record. Obtain the operating agreement and a member resolution authorizing the easement sale. Verify the escrow beneficiary by calling the title company's previously verified number; an emailed bank change alone never changes payment instructions."
+        },
+        {
+          "name": "Telecom income durability and multiple",
+          "type": "textarea",
+          "prompt": "Record collectible annual rent, escalators, remaining term, renewal options, termination provisions, and existing assignments. Translate the proposed purchase and resale prices into multiples of current collectible rent rather than advertised future rent.",
+          "example": "Collected rent is $24,000 annually with a documented 3% annual escalator. A $360,000 acquisition equals 15 times current rent; a $400,000 resale equals 16.67 times. The marketed 16–22 times buyer range is only a screening reference; termination rights can materially reduce the actual bid."
+        },
+        {
+          "name": "Billboard permit and ground-right linkage",
+          "type": "textarea",
+          "prompt": "Link the sign permit, ground lease, access rights, electrical service, and digital-conversion authorization. Identify which documents permit assignment and which require a separate written decision from the issuing authority or landowner.",
+          "example": "BB-009 has a ground-lease option but no issued digital permit. The $20,000 target assignment fee remains contingent on state DOT transfer acceptance, municipal digital-display authorization, and landlord consent. A permitted static sign nearby does not establish this parcel's digital eligibility or spacing compliance."
+        },
+        {
+          "name": "IOS usable capacity and tenant demand",
+          "type": "textarea",
+          "prompt": "Measure usable outdoor-storage area after setbacks, drainage, turning radii, emergency access, and restricted surfaces. Support occupancy assumptions with named fleet demand and independently documented access and heavy-vehicle operating requirements.",
+          "example": "A six-acre parcel yields 100 usable fleet spaces after drainage and turning areas. At $550 per occupied space monthly, full billing is $55,000. The master rent is $35,000 monthly. Two fleet prospects request 70 spaces collectively, leaving 30 spaces uncommitted rather than automatically occupied."
+        },
+        {
+          "name": "Lender priority and tenant continuity",
+          "type": "textarea",
+          "prompt": "Identify mortgages, existing assignments of rents, superior leases, and foreclosure exposure. Describe the lender instrument required to preserve the acquired right or tenancy and identify who can approve its final language.",
+          "example": "The mortgage predates the proposed yard master lease. Request a lender-executed subordination, nondisturbance, and attornment agreement covering permitted subtenants and notice rights. The owner's promise to seek consent is insufficient. Defer lease commencement until the agreed lender protection is executed and any required recording is completed."
+        },
+        {
+          "name": "Buyer capacity and executable exit",
+          "type": "textarea",
+          "prompt": "Describe the proposed buyer's acquisition mandate, evidence of funding, underwriting conditions, approval authority, and closing schedule. Distinguish a preliminary price indication from a binding purchase obligation with specified remedies.",
+          "example": "Buyer A supplies a $400,000 indication for TX-TWR-014, subject to lease, title, and lender review within 20 business days. Buyer B requests a 12% yield sensitivity. Neither indication supports releasing acquisition funds before an executed purchase agreement and documented closing conditions exist."
+        },
+        {
+          "name": "Spread qualification and rejection threshold",
+          "type": "textarea",
+          "prompt": "Calculate the operator's transaction spread using explicit acquisition consideration and closing charges. Establish a minimum spread and show which price change, delay, or document defect would force renegotiation or rejection.",
+          "example": "The telecom illustration produces $400,000 buyer consideration less $360,000 acquisition consideration and $5,000 closing charges, leaving $35,000 operator spread. The minimum acceptable spread is $25,000. A buyer reduction to $385,000 leaves $20,000 and therefore requires a lower acquisition price or withdrawal."
+        },
+        {
+          "name": "Concentration and correlated failure exposure",
+          "type": "textarea",
+          "prompt": "Measure exposure by municipality, lender, buyer, carrier, and fleet tenant rather than counting addresses alone. Explain how a shared dependency could delay several apparently independent opportunities at the same time.",
+          "example": "Four billboard prospects depend on one city's digital-sign ordinance, while three telecom parcels share one lender. Cap unresolved diligence spending at $6,000 per dependency group. Advance a separate IOS prospect only after confirming its fleet customer does not depend on the same logistics contract."
+        },
+        {
+          "name": "Underwriting decision and evidence register",
+          "type": "textarea",
+          "prompt": "State the decision, evidence relied upon, unresolved conditions, authorized next expenditure, and review date. Make the decision auditable by another operator without requiring access to private recollections or informal messages.",
+          "example": "Advance TX-TWR-014 for document diligence only. Authorize $2,500 for title and lease review through day 12. The owner must deliver payment history and the lender contact by day 7. Archive the opportunity if rent ownership cannot be reconciled to the recorded instruments and executed lease."
+        }
+      ],
+      "completion_gate": "Advance only when the legal interest, counterparty authority, documented demand, transfer path, minimum spread, and capped next expenditure are recorded; unresolved title, use, or lender conditions must remain explicit conditions rather than assumptions."
+    },
+    {
+      "worksheet_id": "ws-02",
+      "number": 2,
+      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
+      "purpose": "Convert property-level cash movement into operator-level economics without counting acquisition principal as earned revenue. Reconcile the three canonical scenarios, distinguish retained spreads from customer billings, and size unrestricted working capital separately from escrow, deposits, restricted reserves, and buyer-funded acquisition cash.",
+      "chapter_ref": "Q3, Q4",
+      "instructions": [
+        "Copy the canonical annual revenue, margin, owner-profit, and staffing figures before building individual transactions. Use the same operator-level revenue basis throughout; property value, buyer purchase consideration, tenant billings, and retained spreads belong on separate lines.",
+        "Build a transaction waterfall showing every receipt, acquisition payment, pass-through, fee, and operating expense. Flag costs already deducted inside a spread so the annual expense schedule does not deduct the same cash outflow again.",
+        "Prepare a weekly cash calendar through the expected closing date and a delayed-closing case. Classify each balance by ownership and restriction, then exclude customer deposits and conditional buyer funds from the cash available to pay overhead.",
+        "Separate recurring monthly overhead from transaction pursuit costs, yard operations, and acquisition consideration. The stated monthly overhead range does not represent every annual expense or the funding required to carry an unfunded master lease.",
+        "Review the economic scorecard alongside the applicable accounting presentation. Document principal-versus-agent judgments for service arrangements and lease treatment where relevant; do not label every retained spread as ASC 606 revenue simply because cash settles net."
+      ],
+      "fields": [
+        {
+          "name": "Canonical scenario reconciliation",
+          "type": "textarea",
+          "prompt": "Enter all three Formula v2.0 scenarios with operator revenue, net margin, annual owner net profit, total modeled expenses, and staffing. Demonstrate arithmetic rather than rounding the figures into a different business case.",
+          "example": "Conservative: $120,000 revenue × 28% = $33,600 profit, with $86,400 expenses and 1 FT + 3 C. Base: $535,000 × 40% = $214,000, with $321,000 expenses and 1 FT + 3 C. Scaled: $950,000 × 52% = $494,000, with $456,000 expenses and 2 FT + 4 C."
+        },
+        {
+          "name": "Base revenue bridge by asset lane",
+          "type": "textarea",
+          "prompt": "Construct an illustrative activity mix that sums exactly to the canonical base revenue. Identify the number of completed transactions and annual retained yard spread without treating the illustrative mix as a supplied production forecast.",
+          "example": "Five telecom transactions at $35,000 spread contribute $175,000. Six billboard assignments at $20,000 contribute $120,000. One stabilized yard contributes $20,000 monthly retained spread, or $240,000 annually. Together they equal $535,000. This illustrative steady-state mix is not a claim that every startup reaches full occupancy immediately."
+        },
+        {
+          "name": "Acquisition principal and spread waterfall",
+          "type": "textarea",
+          "prompt": "Show buyer consideration, acquisition consideration, closing charges, and resulting operator spread for a telecom deal. Identify cash held by the settlement agent and explain why acquisition principal is excluded from scorecard revenue.",
+          "example": "Escrow receives $400,000 from the buyer, disburses $360,000 for the easement, pays $5,000 transaction charges, and releases $35,000 to the operator. Scorecard revenue is $35,000, not $400,000. The $360,000 and $5,000 are already reflected in that spread and are not deducted again below it."
+        },
+        {
+          "name": "Retained share and accounting classification",
+          "type": "textarea",
+          "prompt": "Calculate retained share where underlying billings are larger than the operator's economic contribution. Record whether the arrangement involves a lease, a service, or both, and identify the accounting review needed for each component.",
+          "example": "Annual yard billings of $660,000 less $420,000 master rent produce $240,000 retained spread; retained_share is 0.363636 approximately. Use $240,000 in this scorecard. Evaluate lease components under ASC 842 and service components under ASC 606, including principal-versus-agent presentation; net settlement alone does not determine recognized revenue."
+        },
+        {
+          "name": "Base expense bridge without duplicate deductions",
+          "type": "textarea",
+          "prompt": "Reconcile total modeled base expenses to the owner-profit target using separately identified cost categories. Exclude acquisition consideration and charges already netted in the transaction spreads, and describe the recurring overhead component.",
+          "example": "Base expenses are $72,000 recurring overhead, $60,000 telecom pursuit costs, $54,000 billboard pursuit costs, $105,000 yard operations, and $30,000 portfolio contractor support: $321,000 total. Revenue of $535,000 less $321,000 yields $214,000. The $6,000 monthly overhead sits within the stated $2,000–$12,000 range; other categories are additional."
+        },
+        {
+          "name": "Startup allocation and commitment limits",
+          "type": "textarea",
+          "prompt": "Allocate startup cash within the stated capital range without implying that this amount purchases an entire easement or funds every yard reserve. Distinguish committed spending, available liquidity, and contingent future funding.",
+          "example": "Allocate $48,000 startup cash as $18,000 investigation capacity, $6,000 initial systems and document setup, $12,000 for two months of overhead, and $12,000 contingency liquidity. The amount fits the $12,000–$60,000 range. It does not fund the $360,000 easement purchase or authorize an unsupported yard lease."
+        },
+        {
+          "name": "Restricted deposits and escrow ownership",
+          "type": "textarea",
+          "prompt": "List each escrow balance, tenant deposit, landlord security requirement, and designated reserve. State ownership, permitted uses, release conditions, and ledger treatment so restricted money cannot quietly become operating cash.",
+          "example": "A fleet deposits $15,000 against damage and unpaid charges; record a deposit liability, not earned revenue. The landlord requires $35,000 security at commencement. A $10,000 buyer deposit remains subject to purchase-contract release terms. None of these balances substitutes for the operator's unrestricted overhead reserve."
+        },
+        {
+          "name": "Working-capital gap and timing stress",
+          "type": "textarea",
+          "prompt": "Calculate the largest cumulative unrestricted cash deficit through a delayed closing or lease commencement. Include security, first rent, overhead, and identified setup spending, then state the funding condition that prevents an uncovered obligation.",
+          "example": "Yard commencement requires $35,000 security, $35,000 first rent, $14,000 setup, and $6,000 overhead: $90,000. Even before other startup spending, $48,000 leaves a $42,000 gap. Defer commencement unless documented additional capital or enforceable timing concessions close the gap; prospective fleet interest is not cash."
+        },
+        {
+          "name": "Occupancy and contribution break-even",
+          "type": "textarea",
+          "prompt": "Stress the illustrative yard using occupied spaces, realized price, fixed master rent, and yard operating costs. Identify the break-even occupancy before central overhead and explain how vacant capacity changes the base revenue bridge.",
+          "example": "Yard operations of $105,000 annually equal $8,750 monthly. With $35,000 master rent and $550 per space, break-even before central overhead requires 80 occupied spaces. At 70 spaces, billing is $38,500 and site contribution is negative $5,250 monthly. The stabilized $240,000 retained spread therefore cannot be assumed during lease-up."
+        },
+        {
+          "name": "Capital release and scenario ownership",
+          "type": "textarea",
+          "prompt": "Record who approves expenditure, which scenario currently governs decisions, and what evidence permits releasing reserves. Keep annual scorecard targets separate from weekly cash forecasts and document any variance without rewriting canonical figures.",
+          "example": "The operating lead owns the weekly cash forecast and the bookkeeper verifies restricted balances each Friday. Use the conservative case for initial commitments. Release transaction contingency only after settlement reconciliation and document acceptance. Preserve the canonical base $214,000 target while separately reporting any actual occupancy or closing shortfall."
+        }
+      ],
+      "completion_gate": "The three scenarios reconcile exactly; the base activity and expense bridges tie to $535,000 and $214,000; restricted money is segregated; and every proposed commitment has documented funding through the delayed-close case."
+    },
+    {
+      "worksheet_id": "ws-03",
+      "number": 3,
+      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
+      "purpose": "Turn a qualified opportunity into a repeatable closing or operating workflow. Establish immutable document references, explicit state transitions, duplicate-resistant accounting events, and independent payment checks so retries, revised contracts, delayed permits, and device outages cannot silently create duplicate obligations or releases.",
+      "chapter_ref": "Q7, Q8",
+      "instructions": [
+        "Map the process from sourced lead through executed documents, recording, settlement, and recurring operation. Give each state an entry condition, responsible person, required evidence, and permitted next action rather than relying on a single percentage-complete field.",
+        "Assign stable identifiers to opportunities, legal interests, contracts, payments, and source events. Keep revision numbers separate from business identity so an amended document does not accidentally create a second acquisition, deposit, invoice, or payout.",
+        "Design money movement as a checked workflow rather than a side effect of receiving an email or webhook. Persist the intended action, verify settlement status, and reconcile externally before retrying any uncertain payment request.",
+        "Run the pre-flight review against the final signed document set and current title evidence. Recheck assignment consent, permit status, lender requirements, bank instructions, and settlement arithmetic whenever a material term changes before funds are released.",
+        "Exercise failure cases before processing live transactions: duplicate events, reversed payments, missing signatures, expired permits, and offline access devices. Record expected recovery behavior and confirm a named operator can restore service without inventing ledger entries."
+      ],
+      "fields": [
+        {
+          "name": "State machine and accountable handoffs",
+          "type": "textarea",
+          "prompt": "Define the operational states for one asset lane and the evidence required to move between them. Assign ownership of each handoff and prevent a commercial milestone from being mistaken for legal completion.",
+          "example": "TX-TWR-014 moves through sourced, owner-verified, option-executed, diligence-complete, buyer-contracted, closing-ready, settled, and recorded-confirmed. The title coordinator controls closing-ready. A buyer signature alone cannot set settled. Settlement requires escrow confirmation; recorded-confirmed requires the instrument number and a checked copy of the recorded easement."
+        },
+        {
+          "name": "Stable identifiers and revision lineage",
+          "type": "textarea",
+          "prompt": "Specify identifiers for the parcel interest, transaction, contract revision, and settlement event. Explain how amendments retain their parent relationship while preserving the exact terms used to authorize an action.",
+          "example": "Use deal_id TX-TWR-014, interest_id EASE-014-A, and contract revision 3. Store the executed PDF digest and signing timestamp against revision 3. A price amendment becomes revision 4 under the same deal; it invalidates the prior closing checklist without creating a duplicate acquisition record."
+        },
+        {
+          "name": "Idempotency key and durable event receipt",
+          "type": "textarea",
+          "prompt": "Describe the event key, uniqueness constraint, durable receipt, and side-effect record used to prevent duplicate processing. Explain what happens when an external sender retries after the local process has already committed.",
+          "example": "For billing, key receipts by provider account plus provider event identifier, and invoices by lease, service month, and charge type. A SQLite UNIQUE constraint rejects duplicate keys. Commit the receipt and pending action together; repeated delivery returns the existing result instead of posting another $550 space charge."
+        },
+        {
+          "name": "Settlement instruction and independent verification",
+          "type": "textarea",
+          "prompt": "Record the final settlement statement, approved beneficiaries, verification method, and release authority. Require an independent check of changed payment instructions and define the evidence needed before marking a disbursement complete.",
+          "example": "The reviewer checks $400,000 inflow against $360,000 seller consideration, $5,000 charges, and $35,000 operator proceeds. A second person confirms the escrow destination using an independently established phone number. Record the confirmation time and settlement reference; a transmitted wire request is not evidence of completed settlement."
+        },
+        {
+          "name": "Ledger accounts and deposit treatment",
+          "type": "textarea",
+          "prompt": "Define operational ledger categories for unrestricted cash, restricted balances, deposit liabilities, receivables, earned fees, and reversals. Explain how the ledger reconciles to bank evidence without imposing one accounting model on every asset lane.",
+          "example": "Receipt of the fleet's $15,000 security deposit increases the designated bank balance and tenant deposit liability by $15,000. It creates no earned fee. Track yard billings and master rent separately, then derive the scorecard spread. The accountant maps these operational records to the applicable reporting accounts."
+        },
+        {
+          "name": "Final document package and recording evidence",
+          "type": "textarea",
+          "prompt": "List the exact documents needed for the chosen transaction and how signed versions are distinguished from drafts. Identify recording, delivery, and acknowledgment evidence that remains outstanding after signatures are collected.",
+          "example": "The telecom package contains the executed easement, legal description, assignment of rents, tenant estoppel when required, lender instrument, settlement statement, and tax reporting documents. Hash final files with SHA-256 and retain access-controlled copies. Match the returned recording image to the submitted instrument before closing the document task."
+        },
+        {
+          "name": "Billing commencement and prorated charges",
+          "type": "textarea",
+          "prompt": "Define when an IOS tenant becomes billable, which contract controls proration, and what evidence connects occupied capacity to invoices. Prevent gate access activation from silently substituting for an executed occupancy agreement.",
+          "example": "Fleet A takes 20 spaces at $550 each under an executed agreement. Monthly billing is $11,000. For 15 chargeable days in a 30-day month, contractual daily proration produces $5,500. Activate credentials only after the documented commencement conditions; gate events support occupancy review but do not rewrite rent."
+        },
+        {
+          "name": "Access-device outage and manual continuity",
+          "type": "textarea",
+          "prompt": "Specify the response to an RFID controller outage, lost credential, or network failure. Preserve safe emergency access while distinguishing physical entry logs from billing records and authorization to enter.",
+          "example": "If the RFID connection fails, the site responder uses the approved local roster and manual incident log. Emergency egress remains available under the site design. Restore synchronized access records after connectivity returns, checking timestamps and duplicates. A lost credential is revoked before a replacement credential becomes active."
+        },
+        {
+          "name": "Exception, reversal, and uncertain-payment queue",
+          "type": "textarea",
+          "prompt": "Define how disputed charges, returned payments, expired documents, and uncertain external responses enter a review queue. Preserve original records and require explicit correcting entries rather than editing history.",
+          "example": "A $5,500 tenant payment is later returned. Preserve the original receipt, append the return event, and reopen the receivable using the provider reference. If a payout request times out, query its status before retrying. The operator resolves exceptions daily and records the evidence supporting each correction."
+        },
+        {
+          "name": "Pre-flight test cases and release evidence",
+          "type": "textarea",
+          "prompt": "List practical tests proving duplicate resistance, arithmetic accuracy, document completeness, and recovery behavior. Record expected results and identify who signs the release checklist after comparing those expectations with observed outcomes.",
+          "example": "Replay one invoice event three times and expect one invoice. Replace the signed contract with an unsigned draft and expect closing-ready to fail. Simulate a payment timeout and expect status inquiry before retry. The reviewer records screenshots, ledger counts, and the final $35,000 settlement reconciliation before authorizing release."
+        }
+      ],
+      "completion_gate": "The reviewer has verified final documents, settlement arithmetic, independent payment checks, duplicate-event tests, correcting-entry behavior, and operational recovery procedures; any failed test blocks the affected action until retested successfully."
+    },
+    {
+      "worksheet_id": "ws-04",
+      "number": 4,
+      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
+      "purpose": "Translate applicable property, highway-sign, environmental, and licensing requirements into specific evidence and contract terms. Separate federal frameworks from state and municipal decisions, then document assignment authority, lender protection, permitted use, environmental review, and responsibility for ongoing operating obligations.",
+      "chapter_ref": "Q5, Q9",
+      "instructions": [
+        "Identify the property's actual jurisdiction and each authority with a decision role. Retrieve current official statutes, regulations, ordinances, permit conditions, and recorded instruments rather than copying requirements from a different municipality or relying on a listing description.",
+        "Map each proposed activity to the rule governing that activity: negotiating for another owner, acquiring a principal interest, operating a sign, leasing storage capacity, or altering drainage. Similar commercial labels can conceal different licensing and land-use consequences.",
+        "Convert material dependencies into drafted conditions, deadlines, document-delivery duties, and termination rights. An obligation to cooperate does not equal an issued permit, a lender's executed protection, or a counterparty's effective consent to an assignment.",
+        "Inspect environmental and operating exposure before executing an IOS master lease. Allocate responsibility for existing conditions, newly introduced materials, stormwater controls, surface maintenance, and restoration, while recognizing that contract allocation does not bind government enforcement authorities.",
+        "Maintain a dated audit register with the rule source, reviewer, finding, required evidence, and renewal schedule. Resolve material conflicts before commitment and recheck requirements when the proposed use, ownership structure, sign technology, or physical layout changes."
+      ],
+      "fields": [
+        {
+          "name": "Jurisdiction and authoritative source register",
+          "type": "textarea",
+          "prompt": "Identify county, municipality, state agencies, and federal frameworks relevant to the parcel. Record official source locations, retrieval dates, and reviewer responsibilities without assuming one source answers every land-use question.",
+          "example": "For BB-009, the register links the state DOT outdoor advertising office, municipal sign ordinance, county recording office, and 23 U.S.C. § 131. Record the actual retrieval date with each saved source. DOT eligibility does not replace municipal authorization, and a municipal permit does not establish title rights."
+        },
+        {
+          "name": "Principal dealing and brokerage activity analysis",
+          "type": "textarea",
+          "prompt": "Describe exactly whose interest the operator represents, what compensation is earned, and whether activities trigger state real-estate licensing requirements. Identify the applicable statutory definitions and document any relied-upon exception before soliciting transactions.",
+          "example": "For a Texas opportunity, review Texas Occupations Code §§ 1101.002 and 1101.351 against the actual conduct. Buying an option for the operator's own account differs from negotiating another owner's lease for a fee. Document the specific exception analysis; calling compensation an assignment spread does not settle licensing."
+        },
+        {
+          "name": "Highway advertising and digital-display requirements",
+          "type": "textarea",
+          "prompt": "Record highway classification, controlled-area status, spacing, lighting, size, digital-transition restrictions, and transfer procedure from the applicable authority. Distinguish screening measurements from an official eligibility or permit determination for the exact sign location.",
+          "example": "Review 23 U.S.C. § 131 and 23 CFR § 750.705 alongside the state's implementing rules. Measure the proposed sign coordinates against controlled routes and neighboring structures. Obtain written treatment of digital conversion and permit transfer; no single spacing distance is assumed to apply nationwide."
+        },
+        {
+          "name": "FCC registration and telecom right verification",
+          "type": "textarea",
+          "prompt": "Explain what FCC antenna-structure records establish and what must be proved through leases, title documents, and site evidence. Identify registration requirements relevant to the structure without treating a database match as proof of ownership.",
+          "example": "Search FCC Antenna Structure Registration records and review 47 CFR § 17.4 where registration applies. A matching structure helps locate the opportunity but does not prove rent ownership or easement boundaries. A rooftop installation may lack a separate ASR entry; verify the lease and physical installation independently."
+        },
+        {
+          "name": "Lender consent and SNDA addendum",
+          "type": "textarea",
+          "prompt": "Draft the required lender and superior-interest protections with document delivery, execution, and commencement conditions. Address successor ownership, default notices, cure opportunities, and permitted subtenants rather than relying on a generic consent sentence.",
+          "example": "Proposed term: rent commencement is conditioned on delivery of the lender's executed SNDA in the agreed form, protecting the master tenant and permitted subtenants after foreclosure while they perform their obligations. Include notice and cure periods aligned with the underlying documents, and specify required recording and delivery evidence."
+        },
+        {
+          "name": "Assignment, estoppel, and closing conditions",
+          "type": "textarea",
+          "prompt": "Identify every assignment restriction, consent standard, notice requirement, estoppel request, and permitted transfer mechanism. Draft objective conditions that prevent a closing from relying on silence where affirmative written consent is required.",
+          "example": "The ground lease requires written landlord consent before assignment. The option therefore conditions closing on signed consent naming the buyer and confirming no existing default. Request an estoppel showing rent, deposits, amendments, and renewal rights. If consent is absent by day 45, the negotiated extension or termination clause controls."
+        },
+        {
+          "name": "Environmental inquiry and historical conditions",
+          "type": "textarea",
+          "prompt": "Specify the environmental investigation, historical records, site reconnaissance, and follow-up process needed before the proposed IOS commitment. Connect identified conditions to decision thresholds without assuming a report automatically creates statutory protection.",
+          "example": "Commission a Phase I using ASTM E1527-21 and evaluate 40 CFR Part 312 where All Appropriate Inquiries applies. Review CERCLA, 42 U.S.C. §§ 9601(40) and 9607, for relevant liability questions. A former fueling area requires specialist follow-up; lease status and continuing obligations must be assessed separately from report completion."
+        },
+        {
+          "name": "Stormwater, heavy vehicles, and permitted use",
+          "type": "textarea",
+          "prompt": "Confirm the actual outdoor-storage use, heavy-vehicle routes, operating hours, drainage controls, and surface requirements. Determine whether industrial stormwater permitting applies to the activities rather than assuming all fleet storage has identical obligations.",
+          "example": "The proposed use is trailer parking with no fueling, washing, or repair. Obtain municipal confirmation covering heavy-axle access and overnight storage. Review 40 CFR § 122.26 and state stormwater requirements against actual activities. If vehicle maintenance is added, repeat the discharge and land-use analysis before changing operations."
+        },
+        {
+          "name": "NNN expense allocation and property classification",
+          "type": "textarea",
+          "prompt": "Specify taxes, insurance, maintenance, capital work, environmental response, and restoration obligations. Separate fixtures and personal property from the real-property interest, and identify how recorded liens or security interests affect the transaction.",
+          "example": "The addendum assigns routine gate maintenance, litter removal, and tenant-caused surface damage to the master tenant, while separately addressing preexisting drainage defects. Schedule installed equipment and review applicable UCC Article 9 issues, including § 9-102 definitions. A UCC search does not replace the county real-property title search."
+        },
+        {
+          "name": "Audit findings, cures, and renewal calendar",
+          "type": "textarea",
+          "prompt": "Record each material finding with an accountable reviewer, corrective action, evidence requirement, deadline, and ongoing review interval. Explain how the operating team learns of changes that could invalidate an earlier determination.",
+          "example": "Finding BB-009-03 identifies missing permit-transfer confirmation. The permit specialist owns resolution before assignment closing. Attach the authority's written response and revised permit record. Calendar annual permit and insurance checks, plus immediate review after a sign-face conversion, ownership transfer, or material site-layout change."
+        }
+      ],
+      "completion_gate": "Applicable jurisdictional sources, licensing analysis, permit status, assignment rights, lender protections, environmental findings, and operating allocations are documented; every material condition has either verified satisfaction or an enforceable condition preventing premature commitment."
+    },
+    {
+      "worksheet_id": "ws-05",
+      "number": 5,
+      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
+      "purpose": "Build a small-team sourcing and operating system that improves qualified opportunity throughput without automating away judgment. Combine public infrastructure records, parcel evidence, structured underwriting, and controlled document generation while maintaining data provenance, exception queues, device continuity, and measurable acquisition economics.",
+      "chapter_ref": "Q6, Q10",
+      "instructions": [
+        "Map each automation to a specific operator task, input source, output artifact, and measurable time saving. Keep title decisions, statutory interpretation, counterparty verification, and fund-release authority assigned to named people rather than treating model output as completed diligence.",
+        "Use documented source access methods and record source dates, coordinate systems, update frequency, and licensing terms. Public map visibility does not establish permission for unrestricted extraction, redistribution, or reliance on stale parcel ownership information.",
+        "Separate source discovery from identity resolution and commercial outreach. Deduplicate parcels and legal interests, verify contact relevance, and keep suppression records so repeated imports do not create duplicate owner messages or conflicting negotiations across the team.",
+        "Generate draft valuation and document packages from validated structured inputs, then require field-level review before external delivery. Retain the source documents and calculation version so every number can be traced back after a buyer challenges it.",
+        "Track throughput, conversion, acquisition cost, exception age, and recovery time together. A faster pipeline that accumulates defective permits or weak buyers is deteriorating; activate a documented fallback when a critical source, lender, or operating device fails."
+      ],
+      "fields": [
+        {
+          "name": "Source catalog and permitted acquisition method",
+          "type": "textarea",
+          "prompt": "List infrastructure, traffic, parcel, ownership, and permit sources with their access methods and refresh cadence. Describe source limitations and the evidence needed before a discovered record becomes a qualified prospect.",
+          "example": "Use FCC ASR downloads for registered structures, state DOT AADT releases for traffic context, county parcel services for boundaries, and official permit records for sign status. Refresh traffic inputs when new releases appear. An AADT count describes measured traffic, not billboard revenue or permit availability."
+        },
+        {
+          "name": "GIS matching and spatial quality checks",
+          "type": "textarea",
+          "prompt": "Describe coordinate normalization, parcel intersection, distance checks, and manual review thresholds. Explain how the pipeline handles rooftop structures, boundary ambiguity, road alignment changes, and sources with different positional accuracy.",
+          "example": "Load parcel and tower layers into QGIS, transform them to an appropriate local projected coordinate system, and inspect matches within 30 meters of a parcel boundary. Do not assign ownership solely from the nearest centroid. Flag ambiguous rooftop matches for imagery and recorded-document review."
+        },
+        {
+          "name": "Identity resolution and duplicate suppression",
+          "type": "textarea",
+          "prompt": "Define canonical keys for owners, parcels, interests, and opportunities. Explain how the system merges repeat observations without collapsing separate rights on the same property or overwriting verified contact restrictions.",
+          "example": "Key parcels by county identifier plus assessor parcel number, then attach separate telecom, sign, and yard interests. Normalize entity names but preserve original source text. A repeated FCC import updates provenance rather than creating another owner campaign. A recorded do-not-contact request survives every refresh."
+        },
+        {
+          "name": "NPV engine and buyer sensitivity package",
+          "type": "textarea",
+          "prompt": "Specify the cash-flow model inputs, discount convention, terminal assumptions, and buyer sensitivity outputs. Keep contractual income separate from speculative renewals and explain why a nominal perpetual easement can contain finite income.",
+          "example": "Model $24,000 first-year rent, 3% annual increases, and 20 annual end-of-year payments at a 10% discount rate. With no terminal value, present value is approximately $250,000. Compare the $400,000 buyer indication against alternative discount and renewal assumptions; do not force the model to reproduce a marketing multiple."
+        },
+        {
+          "name": "SNDA and diligence package generator",
+          "type": "textarea",
+          "prompt": "Identify structured inputs used to generate the lender request, document checklist, and buyer package. Explain which clauses require specialist review and how generated drafts remain traceable to current transaction terms.",
+          "example": "The generator pulls borrower name, recorded mortgage reference, tenant entity, permitted use, lease term, and notice addresses into a draft lender request. Highlight missing subtenant protection and cure periods. The reviewer compares every populated field to signed documents before sending the package outside the project."
+        },
+        {
+          "name": "Owner outreach and acquisition funnel",
+          "type": "textarea",
+          "prompt": "Define the outreach sequence, qualification criteria, suppression process, and stage conversion measures. Use a consistent cohort so response rates and cost per qualified opportunity do not mix unrelated campaigns.",
+          "example": "A 200-owner cohort yields 40 replies, 16 qualified conversations, six document packages, and two executed options. At $3,200 campaign cost, cost per qualified conversation is $200 and cost per option is $1,600. These are pilot observations, not evidence that either option will produce a completed resale."
+        },
+        {
+          "name": "RFID billing and occupancy reconciliation",
+          "type": "textarea",
+          "prompt": "Describe the connection between executed fleet agreements, assigned spaces, access credentials, and monthly billing. State how exceptions are reviewed without turning raw gate movements into unauthorized new charges.",
+          "example": "Assign Fleet A 20 spaces and one account with separately revocable driver credentials. Billing follows the $11,000 monthly agreement. A weekly report compares active credentials, assigned spaces, and observed entry patterns. Investigate persistent excess occupancy, then document any agreed amendment before changing recurring charges."
+        },
+        {
+          "name": "Access permissions and sensitive record handling",
+          "type": "textarea",
+          "prompt": "Assign least-privilege access to parcel research, contracts, bank instructions, and operational credentials. Define retention, backup, and incident procedures while avoiding unnecessary collection of personal information unrelated to the transaction.",
+          "example": "The sourcing contractor sees owner contacts and outreach history but cannot edit bank instructions. The bookkeeper reconciles deposits without administering RFID credentials. Enable multifactor authentication for document and billing accounts, encrypt backups, and test restoration monthly. Remove contractor access when the engagement ends and retain the access-change record."
+        },
+        {
+          "name": "Risk fallback and dependency interruption",
+          "type": "textarea",
+          "prompt": "Define fallback actions for stale public records, delayed lender responses, permit denials, buyer withdrawal, and gate failures. Attach spending limits and decision deadlines so fallback execution remains economically bounded.",
+          "example": "If the lender has not responded by day 15, escalate through the owner and request an option extension before expiration. Cap additional review at $1,500. A permit denial triggers appeal analysis only within the documented budget; otherwise archive the sign deal rather than presenting unissued rights as transferable inventory."
+        },
+        {
+          "name": "Automation performance and controlled expansion",
+          "type": "textarea",
+          "prompt": "Measure actual labor saved, error rates, review backlog, and downstream conversion after each automation change. State the thresholds for expanding usage and the conditions that require reverting to manual processing.",
+          "example": "A parcel matcher reduces initial review from 12 minutes to five minutes across 100 records, saving 700 minutes. Manual sampling finds three incorrect matches. Keep boundary cases in human review and fix the matching rule before expansion. Do not count time savings as realized cash profit without a corresponding expense reduction."
+        }
+      ],
+      "completion_gate": "Each automation has a documented source, stable identifier, human review boundary, measured result, and tested fallback; external delivery, payment changes, and property-right decisions remain subject to the assigned operator's verified authorization."
+    },
+    {
+      "worksheet_id": "ws-06",
+      "number": 6,
+      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
+      "purpose": "Launch a disciplined acquisition pod with measurable evidence rather than an assumed first-month closing. Connect weekly deliverables to the two-to-six-month first-deal horizon, preserve the canonical staffing and profit targets, and build records that support orderly handoffs, buyer diligence, and eventual portfolio transfer.",
+      "chapter_ref": "Q11, Q12",
+      "instructions": [
+        "Choose one initial asset lane and a defined geographic market using the underwriting evidence already collected. Keep the other lanes available for later expansion, but do not split a one-person operating lead across three unproven acquisition systems immediately.",
+        "Set weekly deliverables that can be completed without a closing: verified sources, owner conversations, document packages, buyer feedback, and funded diligence plans. The stated two-to-six-month first-deal range requires runway discipline beyond the initial thirty-day sprint.",
+        "Assign the full-time lead and contractors specific responsibilities, response times, and spending authority. Preserve independent checks for money movement and document release even when the same small pod handles sourcing, underwriting, execution, and administration.",
+        "Review a short scorecard every week, separating activity counts from qualified pipeline, executable transactions, cash collected, and owner profit. Investigate aged exceptions and concentrated dependencies before adding leads or increasing automated outreach volume.",
+        "Build the transfer package from the first transaction rather than reconstructing it during a sale. Keep rights, consents, source records, operating procedures, and reconciliations organized so a successor can understand both recurring income and nonrecurring deal spreads."
+      ],
+      "fields": [
+        {
+          "name": "Launch mandate and lane selection",
+          "type": "textarea",
+          "prompt": "State the initial asset lane, geography, target counterparty, cash limit, and success definition. Explain why this starting position fits available capital and documented operator capabilities rather than merely market enthusiasm.",
+          "example": "Begin with telecom easement options in two adjacent counties where parcel records and buyer coverage are accessible. Limit startup commitments to the $48,000 allocation. Thirty-day success means one fully documented option candidate with buyer feedback, not a promised closing or an unsupported $360,000 acquisition commitment."
+        },
+        {
+          "name": "Week one evidence and system setup",
+          "type": "textarea",
+          "prompt": "Define the first week's concrete deliverables, responsible people, and acceptance evidence. Include source access, record structure, statutory research, buyer criteria, and cash controls before launching a substantial outreach campaign.",
+          "example": "By day 7, the lead approves the opportunity schema, verifies two buyer mandates, and establishes the restricted-money register. The research contractor validates 50 parcel matches. The property review contractor identifies relevant licensing and assignment questions. The closing administrator tests document storage and independent payment-verification procedures."
+        },
+        {
+          "name": "Week two outreach and qualification",
+          "type": "textarea",
+          "prompt": "Set a bounded outreach cohort with qualification criteria, document requests, and follow-up ownership. Specify how the team records responses and avoids mistaking general interest for an executable property-right transaction.",
+          "example": "By day 14, contact 40 verified owners using the approved sequence and suppression list. Target eight substantive conversations and request four lease packages. A qualified conversation requires confirmed ownership, a relevant income interest, willingness to share documents, and an identifiable decision-maker rather than a positive email alone."
+        },
+        {
+          "name": "Week three diligence and buyer testing",
+          "type": "textarea",
+          "prompt": "Specify the documentary and commercial tests required before negotiating an executable option. Include title, rent history, lender dependencies, buyer feedback, and the maximum spending permitted while material uncertainties remain.",
+          "example": "By day 21, complete two initial underwriting files and obtain buyer feedback on each actual lease. Spend no more than $2,500 on TX-TWR-014's initial review. Request lender involvement and reconcile annual rent to payments. Reject a candidate whose claimed $24,000 income cannot be tied to enforceable rights."
+        },
+        {
+          "name": "Week four decision and next-horizon plan",
+          "type": "textarea",
+          "prompt": "Define the day-thirty decision package and the funded plan for the following months. Distinguish option execution, diligence completion, buyer commitment, and closing so the launch report describes actual progress.",
+          "example": "On day 30, present one option-ready file, its $35,000 target spread, lender response status, and remaining conditions. If documents remain incomplete, report that status explicitly. Budget the next 60 days using the weekly cash model and the two-to-six-month first-deal horizon rather than booking projected proceeds."
+        },
+        {
+          "name": "Pod staffing and decision ownership",
+          "type": "textarea",
+          "prompt": "Allocate responsibilities within the canonical staffing limits and identify specialist work that requires an authorized provider. State how contractors are counted and preserve segregation for high-consequence decisions.",
+          "example": "Conservative and base staffing use one full-time operating lead plus three contractor seats covering research, property and document review, and closing administration. Buy specialist services within the expense plan when required. Scaled staffing is two full-time people plus four contractors, six people total, not six full-time employees."
+        },
+        {
+          "name": "Weekly KPI definitions and evidence",
+          "type": "textarea",
+          "prompt": "Define a small set of KPIs with denominators, observation periods, evidence sources, and owners. Include quality and cash indicators alongside activity so a larger pipeline cannot conceal deteriorating execution.",
+          "example": "Track verified owners, qualified conversations, complete document packages, buyer-priced opportunities, option aging, unrestricted runway, and unresolved critical conditions. Six complete packages from 16 qualified conversations produce a 37.5% package conversion. Count settled spread only after escrow evidence; a signed indication does not enter collected revenue."
+        },
+        {
+          "name": "Owner-profit scorecard and variance actions",
+          "type": "textarea",
+          "prompt": "Restate the canonical annual targets and describe how actual results will be compared without changing the reference model. Tie corrective actions to specific expense, occupancy, timing, or conversion variances.",
+          "example": "Reference targets remain $33,600 conservative, $214,000 base, and $494,000 scaled annual owner net profit. If billboard assignments close at four rather than six, illustrative base revenue falls $40,000 before expense changes. Reforecast actual profit with identified cost savings; do not apply the 40% margin automatically."
+        },
+        {
+          "name": "Exit-readiness and transferable evidence ledger",
+          "type": "textarea",
+          "prompt": "List the records a buyer or successor would need to verify rights, recurring income, operating dependencies, and transfer restrictions. Separate completed transaction history from assets and contracts that remain economically owned.",
+          "example": "Maintain executed leases, permit records, assignment consents, lender instruments, title evidence, deposit liabilities, tenant aging, operating procedures, and monthly reconciliations. Completed easement flip spreads are historical earnings, not still-owned easements. Identify which yard contracts transfer, which require consent, and which terminate upon a change of control."
+        },
+        {
+          "name": "Scale decision and orderly downside plan",
+          "type": "textarea",
+          "prompt": "State the evidence required to add a second full-time role or another asset lane. Define how the team will reduce commitments, preserve records, and satisfy existing obligations if performance weakens.",
+          "example": "Add the second full-time role only after documented throughput supports its cost and unrestricted cash covers the revised runway plan. If two expected closings slip, pause new paid diligence and renegotiate expiring options. Preserve tenant service, restricted deposits, and contractual notice duties while reducing discretionary acquisition spending."
+        }
+      ],
+      "completion_gate": "The thirty-day evidence package is complete, unresolved work is explicitly listed, the next sixty days are funded, pod responsibilities fit the stated staffing, canonical profit targets remain intact, and transfer records distinguish historical spreads from currently owned contractual interests."
+    }
+  ]
+}

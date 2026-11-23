@@ -3,9 +3,10 @@
 data/custom/*.json linguist-generated -diff
 publishing/** linguist-generated -diff
 src/fymc/vol00[5-9]_*.py linguist-generated -diff
-src/fymc/vol0[123][0-9]_*.py linguist-generated -diff
+src/fymc/vol0[1-4][0-9]_*.py linguist-generated -diff
 src/fymc/volume_00[5-9]_citations.py linguist-generated -diff
-src/fymc/volume_0[123][0-9]_citations.py linguist-generated -diff
+src/fymc/volume_0[1-4][0-9]_citations.py linguist-generated -diff
 src/fymc/volume_00[7-9]_manuscript.py linguist-generated -diff
 src/fymc/volume_0[12][0-9]_manuscript.py linguist-generated -diff
-src/fymc/volume_03[1-6]_manuscript.py linguist-generated -diff
+src/fymc/volume_03[1-79]_manuscript.py linguist-generated -diff
+src/fymc/volume_04[0-2]_manuscript.py linguist-generated -diff

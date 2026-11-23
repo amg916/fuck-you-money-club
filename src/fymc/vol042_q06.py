@@ -1,0 +1,670 @@
+from __future__ import annotations
+
+CHAPTER_6 = {
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
+    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in cell-tower, digital-billboard & ios lease arbitrage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (2–6 months)?",
+    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
+    "title": "Sourcing, Demand Mining & Landing Your First Deals",
+    "subtitle": "Mine FCC ASR, State DOT AADT, Recorder Instruments & FMCSA Triggers; Convert Verified Buyer Demand into Assignable Infrastructure Rights",
+    "layout_template": "step_by_step_sop",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #42, ranked #11 of 42 with a 91/100 Money-to-Manpower Score, rewards "
+        "operators who source enforceable rights against documented demand rather than collect "
+        "property lists. This chapter maps 11 sourcing plays across telecom easements, digital "
+        "billboard assignments, and Industrial Outdoor Storage fleet yards. Build parcel-level "
+        "evidence, interview actual buyers, and secure conditional control before committing "
+        "capital. Treat FMCSA authority and inspection signals as prompts for relevant research, "
+        "not proof of parking demand or invented filing deadlines. The annual owner-profit cases "
+        "are $33,600 Conservative, $214,000 Base, and $494,000 Scaled. A measured 2–6-month "
+        "campaign targets the first 3-to-10 signed wins while separately tracking conditional "
+        "agreements, completed transfers, collected fees, and occupied yards."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$120,000",
+            "context": "Annual scorecard revenue from net transaction fees and retained lease spreads",
+            "note": "28% net margin; $33,600 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$535,000",
+            "context": "Annual scorecard revenue excluding asset purchase principal and tenant gross billings",
+            "note": "40.0% net margin; $214,000 annual owner net profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$950,000",
+            "context": "Annual scorecard revenue on the same retained economic fee and spread basis",
+            "note": "52% net margin; $494,000 annual owner net profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Map eleven sourcing routes around verified exit demand",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start with the exit, not a countywide owner blast. Select one freight corridor "
+                    "and its adjoining telecom and outdoor-advertising markets, then interview five "
+                    "infrastructure buyers, three billboard operators, and ten fleet dispatchers. "
+                    "Ask each buyer for acquisition geography, minimum remaining term, assignment "
+                    "restrictions, tenant concentration limits, and required closing documents. Ask "
+                    "fleet operators for actual overnight tractor counts, trailer dwell, access "
+                    "hours, turning dimensions, and their current cost per usable space. Record "
+                    "requests as dated demand briefs, with a named decision maker and an expiry "
+                    "date for pricing assumptions. A dispatcher describing congestion is a research "
+                    "source; a fleet manager accepting a specified yard rate and move date is a "
+                    "qualified prospect. Keep these categories separate in Airtable or a "
+                    "spreadsheet. The eleven routes below are this chapter's mapped sourcing plays, "
+                    "not eleven independent businesses to launch simultaneously. Choose one primary "
+                    "rail and one adjacent rail sharing the same geography. The opening objective "
+                    "is three independently verified demand briefs before paying for extensive "
+                    "title work or site engineering. If buyers refuse to specify a buy box, "
+                    "continue interviews rather than manufacturing inventory from public records. "
+                    "That sequence protects the $12,000–$60,000 startup budget from attractive "
+                    "parcels with no practical exit."
+                ),
+                (
+                    "For telecom, download available FCC Antenna Structure Registration records, "
+                    "preserve registration identifiers, and spatially join coordinates to county "
+                    "parcel boundaries using QGIS. ASR identifies registered structures; it does "
+                    "not enumerate every rooftop installation or establish who owns the income "
+                    "stream. Cross-check assessor ownership, recorder easements, building permits, "
+                    "and the landlord's actual lease. Prioritize fragmented ownership, recent "
+                    "estate transfers, and leases whose access or assignment language can be "
+                    "clarified without impairing the carrier's operations. For billboards, combine "
+                    "state DOT outdoor-advertising inventories, AADT counts, municipal sign codes, "
+                    "and surveyed road geometry. A high traffic count does not create a digital "
+                    "conversion entitlement: spacing, lighting, interchange restrictions, and local "
+                    "sign prohibitions can destroy the apparent spread. For IOS, start with "
+                    "industrial parcels near documented dispatch bottlenecks, then inspect legal "
+                    "truck access, usable paved or stabilized area, drainage, and neighboring uses. "
+                    "Satellite imagery is a screening layer, never evidence of lawful storage. "
+                    "Create one immutable parcel identifier and attach each source's retrieval "
+                    "date. Resolve boundary ambiguity before mailing an owner, especially where "
+                    "a tower, access road, or proposed sign straddles separate tax parcels. A "
+                    "wrong-party conversation wastes scarce outreach capacity and can produce a "
+                    "worthless option."
+                ),
+                (
+                    "Underwrite the rights you can convey, not the landmark you can photograph. "
+                    "Suppose an assignable telecom income interest produces $24,000 annually: "
+                    "a 16× acquisition costs $384,000, while a buyer accepting 18× would pay "
+                    "$432,000. The $48,000 difference is a preliminary spread before transaction "
+                    "costs, not $432,000 of operator revenue. A 22× exit is only a sensitivity "
+                    "until a buyer prices the actual tenant, term, escalators, and remedies. "
+                    "With startup capital far below the purchase price, negotiate conditional "
+                    "assignment rights or arrange a documented simultaneous closing; never assume "
+                    "the seller will finance an unfunded purchase. An illustrative billboard "
+                    "assignment paying $35,000 against $15,000 of documented project acquisition "
+                    "and direct costs leaves $20,000 on the scorecard fee basis. An IOS yard "
+                    "collecting $11,000 monthly against $6,000 of underlying rent leaves $5,000 "
+                    "before operator overhead and any unrecovered site expenses. Confirm who "
+                    "bears taxes, insurance, repairs, and stormwater costs rather than treating "
+                    "NNN language as an expense eraser. If assignment fails, fall back to an "
+                    "expressly permitted option extension or release the site. If the only "
+                    "remaining activity is arranging another party's transaction, verify the "
+                    "applicable brokerage authority before pursuing a fee."
+                ),
+            ],
+            "table": {
+                "caption": "Eleven mapped sourcing plays with evidence, unit economics, and specific fallback paths",
+                "headers": [
+                    "Mapped sourcing play",
+                    "Signal and verification",
+                    "Illustrative unit economics",
+                    "Failure response and fallback",
+                ],
+                "rows": [
+                    [
+                        "01 — Registered tower landlord income-rights acquisition route",
+                        "Join FCC ASR coordinates with recorded leases and verified landlord ownership.",
+                        "$24,000 annual income at 16× versus 18× creates $48,000 preliminary spread.",
+                        "Reject ambiguous assignment rights; seek documented conditional control before funding.",
+                    ],
+                    [
+                        "02 — Rooftop telecom lease amendment and acquisition route",
+                        "Match municipal antenna permits with building ownership and executed rooftop agreements.",
+                        "$18,000 annual rent at 17× implies $306,000 underlying purchase principal.",
+                        "Require structural access and carrier provisions; abandon unsupported rooftop inventory.",
+                    ],
+                    [
+                        "03 — Estate and fragmented infrastructure ownership sourcing route",
+                        "Review recorded transfers and contact the legally authorized estate representative.",
+                        "Spend $400 screening only after a buyer confirms acquisition fit.",
+                        "Wait for verified signing authority rather than pressure unresolved beneficiaries.",
+                    ],
+                    [
+                        "04 — Mortgage maturity and infrastructure consent resolution route",
+                        "Find recorded mortgage instruments and verify current lender consent requirements.",
+                        "A $1,500 consent budget requires enough spread after all other costs.",
+                        "Extend diligence conditionally or withdraw when lender timing exceeds control.",
+                    ],
+                    [
+                        "05 — State permitted highway billboard assignment sourcing route",
+                        "Match state DOT sign permits with local approvals and land rights.",
+                        "$35,000 assignment proceeds less $15,000 direct costs retain $20,000 economically.",
+                        "Release the option when permit transfer or local authorization fails.",
+                    ],
+                    [
+                        "06 — Existing sign digital conversion demand mining route",
+                        "Ask operators for corridor demand before testing municipal conversion eligibility.",
+                        "Cap preliminary research at $750 before commissioning detailed electrical designs.",
+                        "Offer existing lawful static inventory when digital conversion is prohibited.",
+                    ],
+                    [
+                        "07 — Industrial parcel fleet yard master lease route",
+                        "Verify heavy vehicle storage, truck access, drainage, and measured usable spaces.",
+                        "$11,000 monthly collections less $6,000 underlying rent leaves $5,000 spread.",
+                        "Reduce committed area or exit when usable capacity misses underwriting.",
+                    ],
+                    [
+                        "08 — fmcsa_dot_inspection_trigger_arbitrage for verified fleet yard demand",
+                        "Monitor source availability and validate authority changes or relevant inspection signals.",
+                        "$600 research spend divided by six held calls equals $100 each.",
+                        "Use transparent private agency branding and permission based status-check inquiries.",
+                    ],
+                    [
+                        "09 — Port and intermodal overflow parking demand route",
+                        "Interview dispatchers about overnight chassis, trailer dwell, and seasonal overflow.",
+                        "Twenty committed spaces at $175 monthly produce $3,500 tenant billings.",
+                        "Use flexible overflow reservations until repeated occupancy supports fixed rent.",
+                    ],
+                    [
+                        "10 — Contractor equipment and municipal permit trigger route",
+                        "Track awarded projects and interview contractors about secured equipment staging.",
+                        "Ten equipment spaces at $250 monthly produce $2,500 tenant billings.",
+                        "Limit term exposure when project duration cannot support annual commitments.",
+                    ],
+                    [
+                        "11 — Local broker and infrastructure specialist referral route",
+                        "Request specific rejected parcels matching a documented and narrow buyer brief.",
+                        "A $2,000 permitted referral cost must fit the retained transaction spread.",
+                        "Use properly authorized arrangements and decline unlicensed brokerage compensation.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Extract the difficult facts before buying expensive diligence",
+                "body": (
+                    "Veteran operators win by locating the document or decision maker that can "
+                    "invalidate a promising site before the next dollar is committed."
+                ),
+                "items": [
+                    "Ask telecom buyers for three recent rejection reasons, then make those exact defects searchable CRM fields.",
+                    "Request the billboard permit file and transfer procedure, not merely a photograph of the existing sign face.",
+                    "Walk an IOS yard with the prospective tenant's longest vehicle and measure turning conflicts before quoting total capacity.",
+                    "Ask the recorded lender which department handles non-disturbance agreements before negotiating a closing date with the owner.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Turn public signals into qualified opportunities without inventing intent",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Implement fmcsa_dot_inspection_trigger_arbitrage as a fleet-demand research "
+                    "workflow, not an assertion that every new carrier needs a yard. Schedule "
+                    "a daily job to check authorized FMCSA Census, Licensing & Insurance, and "
+                    "public SMS resources for new source versions; ingest only what each source "
+                    "actually publishes. Census extracts and SMS products have their own update "
+                    "schedules, and SMS measures are generally refreshed monthly. Do not describe "
+                    "a monthly snapshot as a live roadside violation feed or bypass restrictions "
+                    "on inspection details. Store USDOT number, relevant docket identifier, source "
+                    "date, authority status, operating geography, fleet size, and a reason for "
+                    "research. Deduplicate by USDOT number before resolving a business contact. "
+                    "Newly granted authority and recently applied-for authority are different "
+                    "events. The often-repeated mandatory 21-day insurance-filing window is not "
+                    "a universal federal deadline; verify application processing, protest timing, "
+                    "insurance filings, and activation requirements separately against the "
+                    "carrier's actual record. A fresh HOS or maintenance issue may justify "
+                    "asking about parking or inspection space, but neither proves that a yard "
+                    "solves the violation. Never imply that FMCSA selected your company, that "
+                    "your service activates authority, or that purchasing parking satisfies "
+                    "federal operating requirements."
+                ),
+                (
+                    "Make the trigger economically testable. In an illustrative weekly batch, "
+                    "review 100 source changes, retain 30 carriers operating inside the selected "
+                    "corridor, identify 12 with a plausible parking constraint, and seek six "
+                    "held discovery calls. If research and outreach cost $600, acquisition "
+                    "expense is $100 per held call; if only three calls occur, it doubles. "
+                    "One resulting tenant taking 20 spaces at $175 monthly generates $3,500 "
+                    "of yard billings, not $3,500 of retained profit. Allocate underlying rent "
+                    "and incremental servicing costs before comparing that tenant with other "
+                    "demand sources. Use a transparent private compliance-agency identity only "
+                    "when that accurately describes the business, and otherwise identify the "
+                    "actual private yard operator. Offer a free BOC-3/MCS-150 status-check "
+                    "worksheet linking to official records, explaining that process-agent "
+                    "designation and registration updates are separate obligations. Collect "
+                    "contact details through a voluntary callback request rather than suggesting "
+                    "government affiliation. When public inspection detail is unavailable, use "
+                    "inbound hand-raisers, dispatch interviews, and carrier-requested location "
+                    "searches. Do not substitute scraped driver identities or sensitive incident "
+                    "narratives. Track both accepted and rejected hypotheses so that a weak "
+                    "trigger loses budget instead of becoming permanent campaign folklore."
+                ),
+                (
+                    "Score every property against six evidence dimensions totaling 100 points: "
+                    "verified demand 25, legal control 20, use feasibility 20, economic spread "
+                    "15, counterparty authority 10, and timing 10. An 80-point threshold "
+                    "earns paid diligence only if every fatal defect has been resolved or "
+                    "made an explicit, enforceable closing condition. A high aggregate cannot "
+                    "compensate for prohibited truck storage, a nontransferable sign permit, "
+                    "or a seller lacking authority. For IOS, confirm the specific use with "
+                    "the planning department, investigate environmental conditions through an "
+                    "appropriately scoped Phase I, and determine industrial stormwater exposure "
+                    "under the applicable permitting program. An environmental report does not "
+                    "itself authorize discharge or cure historic contamination. For telecom, "
+                    "reconcile the rent schedule with actual receipts and request lender "
+                    "subordination, non-disturbance, and attornment terms where necessary. For "
+                    "billboards, document state and municipal requirements independently under "
+                    "the Highway Beautification Act framework. Save the negative answer and "
+                    "its source alongside the attractive economics. Assign one owner to "
+                    "clear each exception, with a specific deadline and maximum expense. "
+                    "Freeze further spending when a dependency slips beyond the option "
+                    "period; negotiate an extension before ordering additional reports."
+                ),
+            ],
+            "table": {
+                "caption": "Evidence-weighted qualification scorecard with non-negotiable defect handling",
+                "headers": [
+                    "Dimension and maximum points",
+                    "Evidence required for full credit",
+                    "Specific operator verification",
+                    "Failure treatment before additional spending",
+                ],
+                "rows": [
+                    [
+                        "Verified demand earns up to twenty five points",
+                        "Named buyer or tenant confirms geography, price range, and timing.",
+                        "Record a dated call summary and request written parameter confirmation.",
+                        "Keep unconfirmed enthusiasm in research rather than the funded pipeline.",
+                    ],
+                    [
+                        "Transferable legal control earns up to twenty points",
+                        "Executed rights permit the planned transfer, use, and closing structure.",
+                        "Review assignment clauses, access rights, termination provisions, and required consents.",
+                        "Stop paid diligence unless the defect receives an enforceable condition.",
+                    ],
+                    [
+                        "Documented use feasibility earns up to twenty points",
+                        "Planning evidence supports the exact proposed sign or storage operation.",
+                        "Check local use classification, state permits, access geometry, and drainage.",
+                        "Reject prohibited uses rather than relying on nearby informal activity.",
+                    ],
+                    [
+                        "Retained economic spread earns up to fifteen points",
+                        "Buyer pricing or tenant rent supports documented direct and recurring costs.",
+                        "Recalculate net receipts after concessions, vacancy, servicing, and consent expenses.",
+                        "Reprice the agreement or abandon spreads that depend on omitted expenses.",
+                    ],
+                    [
+                        "Verified counterparty authority earns up to ten points",
+                        "Ownership and entity documents identify an authorized and reachable signer.",
+                        "Match recorder information with current entity authority and signing capacity.",
+                        "Wait for authority resolution before accepting an apparently attractive signature.",
+                    ],
+                    [
+                        "Executable transaction timing earns up to ten points",
+                        "Control period exceeds realistic diligence, consent, and buyer closing schedules.",
+                        "Obtain response expectations from lender, municipality, seller, and intended buyer.",
+                        "Secure an extension before committing costs beyond the remaining period.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four pre-flight verifications before conditional control becomes exposure",
+                "body": (
+                    "Treat these checks as independent requirements. A strong buyer quote does "
+                    "not repair defective title, unlawful use, or inaccessible property."
+                ),
+                "items": [
+                    "Verify the signer, recorded ownership, mortgage restrictions, and all required assignment or lender consents.",
+                    "Confirm the exact billboard or heavy-axle IOS use with the relevant authorities and record supporting permit identifiers.",
+                    "Complete appropriate environmental and drainage diligence before an IOS master lease becomes unconditional.",
+                    "Obtain a buyer-priced exit or documented tenant commitment, then reconcile deposits, deadlines, and funding availability.",
+                ],
+            },
+        },
+        {
+            "heading": "3. Run a measured contact cadence and answer objections with evidence",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Separate owner outreach from buyer recruitment because their reasons to "
+                    "respond differ. An owner receives a specific observation about a verified "
+                    "asset and a proposed next conversation; a buyer receives a concise fit "
+                    "statement against an already documented acquisition brief. For a tower "
+                    "landlord, write that you purchase defined lease-income interests and "
+                    "would like to review remaining term, rent, and assignment provisions. "
+                    "For a billboard landowner, identify the parcel and explain that any "
+                    "proposal depends on permit transferability and local authorization. For "
+                    "a fleet, lead with location, measured spaces, operating hours, surface, "
+                    "and the proposed monthly rate, then ask whether those particulars solve "
+                    "an existing dispatch problem. Avoid invented urgency, guaranteed proceeds, "
+                    "and references to private circumstances inferred from public filings. "
+                    "Use business email, individually researched calls, postal letters, and "
+                    "permission-based introductions. Maintain suppression across every channel. "
+                    "Commercial email must satisfy 15 U.S.C. 7704, including accurate headers, "
+                    "required sender information, and a functioning opt-out. Telephone campaigns "
+                    "must account for 47 U.S.C. 227 and applicable state restrictions; "
+                    "a published number is not blanket permission for automated texts. "
+                    "Start manually so the operator can hear objections before automating "
+                    "a flawed message."
+                ),
+                (
+                    "Use six purposeful touches over 21 days, stopping immediately after an "
+                    "opt-out and changing the next step when the recipient replies. The "
+                    "first message establishes parcel relevance; the second tests whether "
+                    "you reached the right person; the third supplies one useful observation "
+                    "or document request. Later touches offer a defined review slot, address "
+                    "the actual objection, and close the loop. Do not send six versions "
+                    "of an empty follow-up. If an owner says the price is too low, "
+                    "show the income, term, buyer multiple, direct costs, and retained "
+                    "spread assumptions; ask which input they dispute. If they refuse "
+                    "exclusive control, propose a short, clearly bounded conditional option "
+                    "only where that structure is lawful and useful. If a fleet says "
+                    "the yard is expensive, compare usable spaces and route miles rather "
+                    "than discounting an unmeasured parcel. If a lender delay blocks a "
+                    "tower transaction, request a dated consent workplan and adjust the "
+                    "option period instead of promising a faster closing. An objection "
+                    "is a request for evidence or a genuine rejection. Record the "
+                    "difference, and stop working a prospect whose stated requirements "
+                    "cannot fit the economics."
+                ),
+                (
+                    "Publish inbound pages only for inventory characteristics you can substantiate: "
+                    "a corridor parking brief, an infrastructure income-rights document checklist, "
+                    "and a billboard feasibility intake form. A yard page should distinguish "
+                    "available inventory from locations being researched, with no fabricated "
+                    "availability. Ask for vehicle count, dimensions, arrival date, required "
+                    "access hours, and preferred contact method; avoid collecting driver "
+                    "credentials or unnecessary personal information. Send a useful response "
+                    "within one business day and route qualified requests to the same "
+                    "CRM stages as outbound prospects. Track source, message version, cohort "
+                    "date, contact outcome, qualified demand, site review, signed control, "
+                    "and collected proceeds. As an illustrative planning benchmark, 500 "
+                    "raw records might yield 150 desk-qualified prospects, 60 substantive "
+                    "conversations, 24 demand or acquisition briefs, 12 site packs, six "
+                    "signed conditional controls, and three completed monetizations. These "
+                    "are working targets, not observed market averages. The respective "
+                    "stage conversions are 30%, 40%, 40%, 50%, 50%, and 50%. "
+                    "Measure owner-side and buyer-side funnels separately before joining "
+                    "them at a matched site. Review results weekly by cohort; a "
+                    "large list cannot compensate for unresolved use restrictions or "
+                    "buyers who never accepted the price."
+                ),
+            ],
+            "table": {
+                "caption": "Six-touch outreach cadence with specific objections and measurable next actions",
+                "headers": [
+                    "Timing and channel",
+                    "Relevant message or useful artifact",
+                    "Objection response grounded in evidence",
+                    "Required next action or stop condition",
+                ],
+                "rows": [
+                    [
+                        "Day one uses a researched individual business email",
+                        "Identify the verified parcel or corridor and explain the specific transaction.",
+                        "If relevance is challenged, show the source and correct mistaken ownership.",
+                        "Request the authorized contact or suppress an explicitly rejected approach.",
+                    ],
+                    [
+                        "Day three uses a manually placed business call",
+                        "Ask whether the recipient controls the asset or fleet location decision.",
+                        "If timing is wrong, request a recipient chosen future contact date.",
+                        "Record actual authority and avoid treating voicemail as a substantive conversation.",
+                    ],
+                    [
+                        "Day six delivers a useful letter or requested email",
+                        "Provide a document checklist or measured yard specification with clear assumptions.",
+                        "If price is challenged, identify the exact disputed underwriting input.",
+                        "Seek permission to review documents rather than demanding premature exclusivity.",
+                    ],
+                    [
+                        "Day ten offers a specific site review appointment",
+                        "Propose a measured walkthrough or lease review with a defined agenda.",
+                        "If access is difficult, request authorized plans before scheduling another visit.",
+                        "Confirm attendees, authority, documents, and the decision expected from the meeting.",
+                    ],
+                    [
+                        "Day fifteen addresses the actual recorded transaction objection",
+                        "Provide the requested consent sequence, cost bridge, or revised capacity calculation.",
+                        "If consent timing blocks progress, revise contractual deadlines before spending further.",
+                        "Advance only when the recipient accepts a concrete and achievable step.",
+                    ],
+                    [
+                        "Day twenty one closes the current outreach sequence",
+                        "Summarize the fit and ask whether to archive or schedule follow-up.",
+                        "If interest remains vague, stop treating the prospect as near-term demand.",
+                        "Archive inactive prospects and retain suppression preferences across every channel.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Assemble a source-dated lead batch",
+                    "action": "Research 100 records inside one corridor and deduplicate property and carrier identifiers.",
+                    "detail": "Preserve public source dates, ownership evidence, contact provenance, and the specific reason each record entered the batch.",
+                },
+                {
+                    "step": 2,
+                    "title": "Qualify before beginning the cadence",
+                    "action": "Apply the six-part scorecard and select prospects with a plausible buyer or tenant match.",
+                    "detail": "Exclude fatal use defects and distinguish tentative demand from written price, capacity, and timing requirements.",
+                },
+                {
+                    "step": 3,
+                    "title": "Convert replies into document-backed commitments",
+                    "action": "Run the six-touch sequence, then request a site review or precisely scoped conditional agreement.",
+                    "detail": "Use lawful principal transaction structures or properly authorized brokerage arrangements; do not relabel brokerage work to avoid licensing requirements.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile the cohort and release weak opportunities",
+                    "action": "Review conversions, elapsed days, cash spent, outstanding conditions, and collected economic spread weekly.",
+                    "detail": "Keep successful message variants, stop weak triggers, and terminate or extend expiring control before new diligence costs accrue.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Land the first wins without confusing signatures, principal, and profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Sequence the first 2–6 months around dependencies rather than a promised "
+                    "closing date. During weeks one and two, choose the corridor, interview "
+                    "buyers, configure source records, and produce three usable demand briefs. "
+                    "During weeks three through six, research the first cohort, run manual "
+                    "outreach, and complete inexpensive document checks. During weeks seven "
+                    "through twelve, concentrate on the few sites with verified control, "
+                    "feasible use, and a buyer or tenant willing to review terms. "
+                    "Reserve months four through six for lender responses, permit transfers, "
+                    "environmental work, and negotiated closings where needed. Track a signed "
+                    "mandate, conditional option, completed assignment, and occupied master lease "
+                    "as separate events. Three-to-ten signed wins can include conditional "
+                    "agreements, but a dashboard must never present those as three-to-ten "
+                    "paid transactions. A mandate counts only when the operator is "
+                    "authorized to provide the contracted service. Attach the actual "
+                    "conditions, termination rights, expiry date, and cash exposure to "
+                    "every agreement. If the first batch produces conversations but "
+                    "no document access, repair trust and specificity; if document "
+                    "access produces no viable sites, repair screening. Increasing "
+                    "message volume is the wrong response to defective inventory "
+                    "or unsupported buyer pricing."
+                ),
+                (
+                    "Reconcile production targets to Formula v2.0 without treating underlying asset "
+                    "consideration as sales. The Conservative case is $120,000 annual scorecard "
+                    "revenue at 28%, yielding $33,600 owner net profit; the Base case "
+                    "is $535,000 at 40.0%, yielding $214,000; the Scaled case is "
+                    "$950,000 at 52%, yielding $494,000. The implied annual operating "
+                    "cost envelopes are $86,400, $321,000, and $456,000 respectively "
+                    "on that same economic basis. The illustrative production bridges "
+                    "below reconcile exactly but are not additional canonical assumptions. "
+                    "Their IOS components assume twelve productive months, so a yard "
+                    "opened halfway through the year earns only half that annual "
+                    "spread unless another transaction offsets the difference. Startup "
+                    "capital of $12,000–$60,000 and monthly baseline opex of "
+                    "$2,000–$12,000 are separate planning ranges; they do not "
+                    "replace the scorecard's full annual expense envelope. Keep "
+                    "deposits and acquisition principal on a distinct cash schedule. "
+                    "The scorecard uses retained transaction economics, not gross "
+                    "tenant collections or institutional purchase prices. Actual statement "
+                    "presentation requires contract-specific analysis, including ASC 606 "
+                    "principal-versus-agent treatment where applicable and ASC 842 "
+                    "for lease arrangements. Apply no invented retained-share "
+                    "percentage to figures already supplied on a retained basis."
+                ),
+                (
+                    "Keep the operating team smaller than the opportunity list. At Conservative "
+                    "and Base, the prescribed structure is one full-time operator plus "
+                    "three contractors; at Scaled, it is two full-time operators plus "
+                    "four contractors. Assign the founder demand interviews, negotiations, "
+                    "and capital decisions, while contractors handle source research, "
+                    "specialist document review, and site diligence within defined scopes. "
+                    "A contractor slot is capacity planning, not permission for an "
+                    "unqualified person to perform regulated work. Automate source-version "
+                    "checks, parcel joins, consent-document assembly, and reminders before "
+                    "automating outbound volume. Install RFID access and recurring NNN "
+                    "billing only after the yard's lawful use, tenant obligations, "
+                    "and emergency access are settled. Every Friday, reconcile signed "
+                    "agreements to the cash ledger and list the next irreversible "
+                    "commitment. Require actual demand evidence before increasing fixed "
+                    "rent exposure. If 30 targeted conversations produce no acceptable "
+                    "price, revisit the corridor or offer; if counterparties agree "
+                    "on price but closings stall, fix consent packaging and "
+                    "control periods. The first repeatable win is not a lucky "
+                    "signature. It is an identifiable signal, a verified right, "
+                    "a documented counterparty need, and collected spread that "
+                    "survives all required costs."
+                ),
+            ],
+            "table": {
+                "caption": "Exact annual scorecard bridges and separate first-cohort conversion controls",
+                "headers": [
+                    "Scenario or milestone",
+                    "Illustrative production or evidence",
+                    "Reconciliation and economic meaning",
+                    "Operating constraint and next decision",
+                ],
+                "rows": [
+                    [
+                        "Conservative annual production bridge using retained economic receipts",
+                        "Two $20,000 telecom spreads plus two $10,000 sign fees plus $60,000 IOS spread.",
+                        "$120,000 revenue less $86,400 operating costs equals $33,600 profit at 28%.",
+                        "Use 1 FT + 3 C; the IOS contribution assumes twelve productive months.",
+                    ],
+                    [
+                        "Base annual production bridge using retained economic receipts",
+                        "Five $35,000 telecom spreads plus six $20,000 sign fees plus $240,000 IOS spread.",
+                        "$535,000 revenue less $321,000 operating costs equals $214,000 profit at 40.0%.",
+                        "Use 1 FT + 3 C; four yards each retain $5,000 monthly.",
+                    ],
+                    [
+                        "Scaled annual production bridge using retained economic receipts",
+                        "Ten $35,000 telecom spreads plus twelve $20,000 sign fees plus $360,000 IOS spread.",
+                        "$950,000 revenue less $456,000 operating costs equals $494,000 profit at 52%.",
+                        "Use 2 FT + 4 C; six yards each retain $5,000 monthly.",
+                    ],
+                    [
+                        "Raw record qualification and substantive conversation cohort milestones",
+                        "Five hundred records yield 150 qualified prospects and sixty substantive conversations.",
+                        "Thirty percent qualify; forty percent of qualified prospects reach substantive conversations.",
+                        "Separate property owners from demand counterparties before assessing either conversion rate.",
+                    ],
+                    [
+                        "Demand brief and site evidence production cohort milestones",
+                        "Sixty conversations yield twenty four briefs and twelve documented site packs.",
+                        "Forty percent produce briefs; fifty percent of briefs advance to site packs.",
+                        "Require named counterparties, documented pricing, and use evidence before counting advancement.",
+                    ],
+                    [
+                        "Signed control and completed monetization cohort milestones",
+                        "Twelve site packs yield six conditional controls and three completed monetizations.",
+                        "Fifty percent sign; fifty percent of signed controls complete monetization.",
+                        "These planning targets do not establish typical results or collected revenue.",
+                    ],
+                ],
+            },
+        },
+    ],
+    "pull_quote": "Source the buyer's constraint, verify the owner's rights, and count only the spread you can actually collect.",
+    "diagram_id": "diag-02",
+    "action_checklist": [
+        "Choose one freight corridor and secure three dated buyer or tenant demand briefs before commissioning extensive property diligence.",
+        "Build source-dated FCC, DOT, recorder, parcel, and authorized FMCSA research queues with separate owner and demand records.",
+        "Apply the 100-point qualification scorecard and resolve fatal use, authority, assignment, and access defects before paid diligence.",
+        "Run the six-touch manual outreach cadence with channel-specific requirements, unified suppression, and evidence-based objection responses.",
+        "Secure precisely scoped conditional control, then package lender consents, permit transfer evidence, environmental findings, and buyer requirements.",
+        "Reconcile weekly cohort conversions and collected spreads to the exact Conservative, Base, and Scaled scorecard economics.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 CFR 17.4 — Antenna structure registration",
+            "url": "https://www.ecfr.gov/current/title-47/section-17.4",
+            "relevance": "Defines registration requirements for covered antenna structures; ASR is a sourcing input rather than a complete inventory of telecom leases.",
+        },
+        {
+            "title": "23 U.S.C. 131 — Control of outdoor advertising",
+            "url": "https://www.law.cornell.edu/uscode/text/23/131",
+            "relevance": "Provides the federal highway outdoor-advertising framework; verify state implementation, spacing rules, and independent municipal sign requirements.",
+        },
+        {
+            "title": "49 CFR 365.115 — After publication in the FMCSA Register",
+            "url": "https://www.ecfr.gov/current/title-49/section-365.115",
+            "relevance": "Addresses post-publication application procedures and protests; distinguish those procedures from carrier insurance filings and authority activation.",
+        },
+        {
+            "title": "49 CFR 387.7 — Financial responsibility required",
+            "url": "https://www.ecfr.gov/current/title-49/section-387.7",
+            "relevance": "Establishes insurance and related responsibility requirements for covered motor carriers; do not invent a universal 21-day filing deadline.",
+        },
+        {
+            "title": "49 CFR Part 366 — Designation of process agent",
+            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-366",
+            "relevance": "Supports accurate explanations of process-agent requirements in a private BOC-3 status-check workflow.",
+        },
+        {
+            "title": "49 CFR 390.19 — Motor carrier identification reports",
+            "url": "https://www.ecfr.gov/current/title-49/section-390.19",
+            "relevance": "Addresses covered motor carrier identification reporting and updates; distinguish registration maintenance from operating-authority status.",
+        },
+        {
+            "title": "40 CFR 312.20 — All appropriate inquiries",
+            "url": "https://www.ecfr.gov/current/title-40/section-312.20",
+            "relevance": "Provides environmental inquiry requirements relevant to qualifying property acquisitions; scope IOS environmental diligence to the transaction and actual site risks.",
+        },
+        {
+            "title": "40 CFR 122.26 — Storm water discharges",
+            "url": "https://www.ecfr.gov/current/title-40/section-122.26",
+            "relevance": "Provides federal stormwater permitting provisions; investigate whether the specific yard activity and discharge require coverage under the applicable program.",
+        },
+        {
+            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
+            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
+            "relevance": "Sets requirements for commercial email, including accurate transmission information, sender identification, and functioning opt-out mechanisms.",
+        },
+        {
+            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Establishes telephone solicitation and automated communication restrictions; evaluate the proposed calling method, number type, and applicable rules.",
+        },
+        {
+            "title": "California Business and Professions Code Sections 10131 and 10133",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=4.&chapter=3.&part=1.&lawCode=BPC&article=1.",
+            "relevance": "Illustrates state-specific brokerage definitions and exclusions; test the actual principal or intermediary activity rather than assuming an option creates an exemption.",
+        },
+    ],
+}

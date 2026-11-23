@@ -1,0 +1,760 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
+    "question_prompt": "How do you allocate startup capital ($8,000–$45,000 USD) and configure a lean, low-opex ($2,500–$14,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
+    "subtitle": "Ringba and Retreaver Routing, Net-7 Settlement Float, Consent Evidence, and FCC/CMS Operating Controls",
+    "layout_template": "comparison_table",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #39, ranked #01 of 42 with a 95/100 Money-to-Manpower Score, "
+        "turns inbound call distribution into a disciplined settlement operation. "
+        "Across 14 mapped plays, the startup advantage comes from preserving float, "
+        "buying only essential routing and evidence services, and refusing traffic "
+        "whose collectability cannot be demonstrated. Allocate $8,000–$45,000 with "
+        "at least half protected for working capital; keep recurring core overhead "
+        "within $2,500–$14,000 monthly without pretending that range includes every "
+        "delivery expense. Canonical annual owner profits are $30,000 Conservative, "
+        "$199,750 Base, and $480,000 Scaled. This chapter specifies a twelve-layer "
+        "stack, scenario reconciliation, banking and insurance controls, lawful "
+        "screening economics, and measurable pre-flight tests before publisher caps rise."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$200,000",
+            "context": "Annual gross billable call settlements; $110,000 retained at 55%.",
+            "note": "15% gross-basis net margin; $30,000 owner profit; 27.27% retained margin; 1 FT + 2 C.",
+        },
+        {
+            "label": "Base",
+            "value": "$850,000",
+            "context": "Annual gross billable call settlements; $467,500 retained at 55%.",
+            "note": "23.5% gross-basis net margin; $199,750 owner profit; 42.73% retained margin; 1 FT + 2 C.",
+        },
+        {
+            "label": "Scaled",
+            "value": "$1,500,000",
+            "context": "Annual gross billable call settlements; $825,000 retained at 55%.",
+            "note": "32% gross-basis net margin; $480,000 owner profit; 58.18% retained margin; 2 FT + 3 C.",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Protect settlement float before purchasing launch capacity",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Start with three cash envelopes rather than a shopping list: "
+                    "$8,000 for a single-vertical validation launch, $25,000 for a "
+                    "balanced launch, and $45,000 for a larger but still controlled "
+                    "operation. Protect $4,400, $15,000, and $27,000 respectively as "
+                    "working-capital reserves; those allocations preserve 55%, 60%, "
+                    "and 60% before any discretionary purchase. The remaining amounts "
+                    "fund setup, evidence services, integration, capped acquisition, "
+                    "and contingencies. Reserve cash is neither an advertising budget "
+                    "nor permission to subsidize disputed calls indefinitely. Keep "
+                    "it in a separate business account and release it only against "
+                    "documented settlement exposure. The $8,000 envelope supports a "
+                    "founder-operated test, not several months of a fully staffed "
+                    "business. If all $3,600 outside its reserve remained available, "
+                    "it would cover only 1.44 months at the $2,500 core-overhead floor; "
+                    "setup expenditures shorten that runway. Sequence incorporation, "
+                    "buyer contracting, routing tests, and publisher activation so "
+                    "that recurring commitments begin as late as practical. A buyer "
+                    "introduction is not a receivable, and an unsigned insertion "
+                    "order is not evidence of demand. Purchase annual software only "
+                    "after comparing its cash saving with the float it immobilizes. "
+                    "Use cancellable plans during the first settlement cycle even "
+                    "when their monthly unit price is higher."
+                ),
+                (
+                    "Size float from payment timing and adverse adjustments, not "
+                    "from an attractive dashboard revenue number. In an illustrative "
+                    "pilot, 100 accepted calls daily at $40 produce $4,000 daily "
+                    "gross settlements. A 45% publisher-and-media allocation consumes "
+                    "$1,800 daily, leaving $2,200 before other expenses. If those "
+                    "outflows precede buyer cash by seven days, the timing exposure "
+                    "is $12,600. Add a provisional 10% holdback against the same "
+                    "week's $28,000 gross billings, or $2,800, and the resulting "
+                    "$15,400 need already exceeds the balanced launch reserve. "
+                    "With $15,000 available, the arithmetic ceiling is 97 calls "
+                    "daily because each daily call of capacity consumes $154 "
+                    "across that seven-day window. Set the actual cap lower to "
+                    "accommodate weekends, delayed bank availability, and buyer "
+                    "disputes. At the lean reserve, the equivalent ceiling is 28 "
+                    "daily calls before an additional cushion. This pilot example "
+                    "is not a fourth annual scenario. Recalculate exposure using "
+                    "each buyer's actual settlement calendar, publisher payment "
+                    "terms, card billing dates, and observed scrub rate. Net-7 "
+                    "language does not establish collectability: wait for a matched "
+                    "remittance and cleared funds. Freeze incremental traffic when "
+                    "overdue balances consume the cushion, even if the bid price "
+                    "has risen."
+                ),
+                (
+                    "Reconcile the scorecard before choosing an overhead target. "
+                    "The Conservative case converts $200,000 gross settlements into "
+                    "$110,000 retained revenue after $90,000 of publisher and media "
+                    "costs; another $80,000 of expenses leaves $30,000 owner profit. "
+                    "Base converts $850,000 into $467,500 after $382,500, then deducts "
+                    "$267,750 to reach $199,750. Scaled converts $1,500,000 into "
+                    "$825,000 after $675,000, then deducts $345,000 to reach $480,000. "
+                    "Treat the supplied 55% retained share as the scorecard's "
+                    "net-presentation convention, while documenting the actual "
+                    "principal-versus-agent conclusion under ASC 606 from contracts "
+                    "and control of the promised service. The $2,500–$14,000 monthly "
+                    "operating range is a core-overhead planning envelope, not a "
+                    "replacement for all remaining scenario expenses. Illustrative "
+                    "core allocations of $2,500, $7,500, and $14,000 monthly leave "
+                    "$50,000, $177,750, and $177,000 annually for additional delivery, "
+                    "contractor, usage, and other expenses. Assign every invoice "
+                    "once; do not count media again below retained revenue. The "
+                    "retained margins are 27.27%, 42.73%, and 58.18%, whereas the "
+                    "gross-basis profit margins remain 15%, 23.5%, and 32%. Neither "
+                    "the value of an insurance policy nor a legal client's potential "
+                    "recovery enters operator revenue. Expand only when actual "
+                    "collections support the relevant case rather than its "
+                    "headline gross billings."
+                ),
+            ],
+            "table": {
+                "caption": "Six-envelope startup allocation with protected settlement reserves",
+                "headers": [
+                    "Cash envelope and its operating purpose",
+                    "Lean launch allocation totaling eight thousand dollars",
+                    "Balanced launch allocation totaling twenty-five thousand dollars",
+                    "Larger launch allocation totaling forty-five thousand dollars",
+                ],
+                "rows": [
+                    [
+                        "Protected working capital for verified settlement timing",
+                        "$4,400 reserved; 55% remains outside discretionary spending.",
+                        "$15,000 reserved; 60% supports measured receivable exposure.",
+                        "$27,000 reserved; 60% remains available for settlement timing.",
+                    ],
+                    [
+                        "Entity, contracts, banking setup, and insurance deposits",
+                        "$900 allowance; narrow one vertical before accepting exposure.",
+                        "$1,800 allowance; obtain buyer terms and coverage quotations.",
+                        "$3,000 allowance; fund broader contract review and deposits.",
+                    ],
+                    [
+                        "Initial routing, suppression, evidence, and software activation",
+                        "$500 allowance; reject minimum commitments exceeding launch capacity.",
+                        "$1,200 allowance; activate paid evidence only where required.",
+                        "$2,000 allowance; add measured capacity rather than redundant platforms.",
+                    ],
+                    [
+                        "Integration labor and documented end-to-end acceptance testing",
+                        "$700 allowance; founder builds routing with limited contractor help.",
+                        "$2,000 allowance; purchase bounded implementation and reconciliation work.",
+                        "$3,500 allowance; exercise failover and independent evidence checks.",
+                    ],
+                    [
+                        "Capped publisher trials and measured acquisition experiments",
+                        "$900 allowance; release small batches after evidence verification.",
+                        "$2,500 allowance; compare cohorts without exhausting settlement float.",
+                        "$5,000 allowance; increase only after collected settlement evidence.",
+                    ],
+                    [
+                        "Uncommitted contingency for setup overruns and repairs",
+                        "$600 allowance; preserve optionality instead of prepaying subscriptions.",
+                        "$2,500 allowance; absorb bounded launch corrections without borrowing.",
+                        "$4,500 allowance; cover repairs while protecting settlement reserves.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Four ways experienced operators protect the first settlement cycle",
+                "body": "Optimize cash exposure and evidence completeness before optimizing auction volume.",
+                "items": [
+                    "Contract the duration clock explicitly: buyer answer, bridge completion, hold time, and transfers can produce different 90–120 second outcomes.",
+                    "Put the first net-7 buyer on a small funded cap; increase it only after remittance details match cleared bank cash.",
+                    "Carry one immutable call identifier through Ringba, the evidence vault, publisher statements, buyer invoices, and S2S adjustments.",
+                    "Separate software spending limits from carrier usage limits; a cheap platform subscription can still create an expensive weekend of voice traffic.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Build twelve accountable layers without buying twelve departments",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Choose one production routing authority, normally Ringba or "
+                    "Retreaver, and make every supporting component subordinate to "
+                    "its call identifier. Buying both platforms immediately usually "
+                    "duplicates configuration work without creating independent "
+                    "telecom resilience. The matrix gives named tiers, exact "
+                    "reference amounts where available, and explicit procurement "
+                    "caps where pricing requires a quotation. These are planning "
+                    "inputs, not verified current vendor offers; confirm billing "
+                    "cadence, account eligibility, minimums, taxes, and overages "
+                    "before entering a contract. A quotation-dependent service "
+                    "cannot be represented honestly as a fixed public tier. "
+                    "For the smallest launch, obtain written evidence that routing, "
+                    "call certificates, and authoritative suppression fit their "
+                    "combined budget before buying traffic. Use a managed routing "
+                    "product rather than building a SIP switch to save a small "
+                    "subscription charge. Reserve custom code for buyer adapters, "
+                    "reconciliation, suppression decisions, and postback integrity. "
+                    "Google Workspace supplies accountable business identities; "
+                    "Bitwarden separates credentials from spreadsheets; GitHub "
+                    "records deployable configurations and review history. Mercury "
+                    "is a banking interface through partner banks, not a substitute "
+                    "for understanding account terms. Wave is a bookkeeping "
+                    "starting point, not an automated exchange ledger. Assign "
+                    "one owner, one spending limit, and one recovery procedure "
+                    "to each layer before it becomes essential."
+                ),
+                (
+                    "Design the auction around deadlines and idempotency. Set an "
+                    "illustrative 250 millisecond buyer response deadline within "
+                    "a 500 millisecond total decision budget, then measure actual "
+                    "tail latency before adopting those numbers in production. "
+                    "A bid timeout must route to a previously contracted eligible "
+                    "destination or a truthful unavailable message; it must not "
+                    "replay consumer details across every buyer indefinitely. "
+                    "Pings should expose only the minimum fields needed to price "
+                    "eligibility, such as permitted geography, service category, "
+                    "and an opaque request identifier. Release additional personal "
+                    "information only on an authorized winning post. Sign "
+                    "server-to-server callbacks, reject stale timestamps, and "
+                    "deduplicate by call identifier plus event type. A $40 "
+                    "qualified call less $18 publisher and media cost leaves "
+                    "$22 retained contribution before routing and other expenses. "
+                    "An illustrative $0.30 usage charge reduces that to $21.70; "
+                    "if a later scrub reverses the entire $40 after the $18 "
+                    "has been paid, the cash loss is $18.30 unless the contract "
+                    "permits recovery. Postbacks therefore need accepted, pending, "
+                    "reversed, and paid states rather than one permanent conversion "
+                    "flag. Send ad platforms reconciled conversion values and "
+                    "document how later adjustments affect bidding. Never "
+                    "substitute a modeled transcript label for the buyer's "
+                    "contractual acceptance event."
+                ),
+                (
+                    "Make the evidence layer small, searchable, and deliberately "
+                    "separate from advertising analytics. Store the rendered "
+                    "disclosure, named recipient, timestamp, source URL, applicable "
+                    "certificate reference, revocation history, routing decision, "
+                    "and buyer acceptance against the same call identifier. "
+                    "TrustedForm and Jornaya records support evidence collection; "
+                    "neither service makes defective wording or unauthorized "
+                    "contact valid. Restrict recording access to staff handling "
+                    "quality, disputes, or required supervision, and apply the "
+                    "recording rules relevant to the participants and vertical. "
+                    "An illustrative 10,000 recordings averaging four minutes "
+                    "at 0.5 megabytes per minute produce about 20 gigabytes "
+                    "monthly. At an S3 Standard reference storage rate of "
+                    "$0.023 per gigabyte-month, that new monthly cohort costs "
+                    "about $0.46 for storage alone; requests, retrieval, network "
+                    "transfer, backups, and accumulated retention cost extra. "
+                    "The cheap byte price does not remove deletion, access, "
+                    "or retention responsibilities. Keep identifiers out of "
+                    "public monitoring URLs and repository fixtures. Test "
+                    "restoration of a sample recording and its consent record "
+                    "before production, then repeat on a schedule. Use "
+                    "bucket lifecycle policies only after reconciling buyer "
+                    "dispute windows and applicable retention duties. Alert "
+                    "on missing evidence immediately, because discovering "
+                    "the gap after a buyer scrub converts a technical defect "
+                    "into an uncollectible receivable."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve-layer vendor stack with reference tiers, explicit quote caps, and lean substitutes",
+                "headers": [
+                    "Accountable infrastructure layer and named vendor choice",
+                    "Exact reference tier or explicitly bounded procurement allowance",
+                    "Production responsibility and measurable operating control",
+                    "Cheaper substitute and practical switching condition",
+                ],
+                "rows": [
+                    [
+                        "Layer 01 — Ringba primary call routing and auction management",
+                        "Quotation-required routing plan; budget $200 monthly before usage.",
+                        "Enforce eligible destinations, buyer deadlines, caps, and event identifiers.",
+                        "Compare a Retreaver written quote; keep only one primary router.",
+                    ],
+                    [
+                        "Layer 02 — Twilio optional carrier capacity and test numbers",
+                        "U.S. toll-free reference: $2.15 monthly number; $0.022 inbound minute.",
+                        "Budget additional legs separately and verify product-specific account rates.",
+                        "Use router-provided carrier service when its total landed cost wins.",
+                    ],
+                    [
+                        "Layer 03 — ActiveProspect TrustedForm consent evidence and retention",
+                        "Certify reference $0; retention quotation capped at $150 monthly.",
+                        "Verify certificate access, disclosure capture, recipient matching, and retention.",
+                        "Price Jornaya LeadiD separately; keep first-party evidence regardless.",
+                    ],
+                    [
+                        "Layer 04 — DNC.com authoritative suppression and screening integration",
+                        "Quotation-required screening service; budget $150 monthly before traffic.",
+                        "Check subscription coverage, state lists, internal revocations, and refresh timing.",
+                        "Compare direct National Registry access plus documented internal suppression.",
+                    ],
+                    [
+                        "Layer 05 — Cloudflare Workers buyer adapters and signed callbacks",
+                        "Workers Paid reference minimum $5 monthly; usage overages apply.",
+                        "Apply authentication, deadlines, deduplication, and bounded processing costs.",
+                        "Use Workers Free for limited tests within verified service limits.",
+                    ],
+                    [
+                        "Layer 06 — AWS S3 encrypted evidence object storage",
+                        "S3 Standard us-east-1 reference $0.023 per gigabyte-month, first band.",
+                        "Separate storage from request, transfer, retention, and recovery charges.",
+                        "Use existing compatible storage only after access and restore testing.",
+                    ],
+                    [
+                        "Layer 07 — GitHub versioned configurations and deployment history",
+                        "GitHub Free reference $0; included automation limits still apply.",
+                        "Require reviewed configuration changes and remove secrets from repository content.",
+                        "Use a private local Git remote for founder-only experiments.",
+                    ],
+                    [
+                        "Layer 08 — Bitwarden controlled business credential sharing",
+                        "Teams reference $4 per user monthly with annual billing.",
+                        "Assign individual identities and revoke contractor access at engagement completion.",
+                        "Use an individual vault until shared organizational access becomes necessary.",
+                    ],
+                    [
+                        "Layer 09 — Google Workspace buyer and publisher business identities",
+                        "Business Starter reference $7 per user monthly, annual commitment.",
+                        "Configure domain authentication and retain accountable settlement correspondence.",
+                        "Buy fewer named seats; avoid shared passwords and uncontrolled forwarding.",
+                    ],
+                    [
+                        "Layer 10 — Mercury business settlement and reserve accounts",
+                        "Standard reference $0 monthly subscription; transaction-specific charges may apply.",
+                        "Separate reserve cash, operating disbursements, and settlement approval responsibilities.",
+                        "Use an existing business bank offering suitable account separation.",
+                    ],
+                    [
+                        "Layer 11 — Wave bookkeeping and bank reconciliation",
+                        "Starter reference $0 subscription; payment processing remains separately priced.",
+                        "Reconcile retained revenue, pass-through costs, receivables, and cleared collections.",
+                        "Use a controlled ledger spreadsheet until transaction volume justifies integration.",
+                    ],
+                    [
+                        "Layer 12 — UptimeRobot external availability and endpoint monitoring",
+                        "Free reference $0 with five-minute checks; verify current account limits.",
+                        "Detect endpoint outages without exposing phone numbers or certificate identifiers.",
+                        "Add native router alerts; free checks cannot measure auction latency.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Keep entity, evidence, and screening economics auditable",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Form the entity before receiving publisher invoices or "
+                    "signing buyer obligations, obtain its EIN, and use accounts "
+                    "whose legal name matches the contracts. Collect tax forms "
+                    "appropriate to each contractor and document classification "
+                    "rather than treating every recurring role as an independent "
+                    "contractor automatically. Keep owner draws separate from "
+                    "publisher disbursements and reconcile the bank against the "
+                    "settlement ledger weekly. Request insurance quotations that "
+                    "describe the actual work: call distribution, paid acquisition, "
+                    "recording, handling consumer information, and subcontracted "
+                    "publishers. Examine cyber, technology errors-and-omissions, "
+                    "media liability, and any required general liability coverage. "
+                    "Telephone solicitation, statutory damages, contractual "
+                    "indemnities, and prior acts may be excluded; a certificate "
+                    "of insurance does not settle those questions. The startup "
+                    "allowances are cash envelopes, not premium estimates. If "
+                    "required coverage exceeds the envelope, narrow the vertical "
+                    "or delay activation instead of silently dropping protection. "
+                    "Contracts should define buyer acceptance, duplicate windows, "
+                    "duration measurement, disputed-call evidence, payment timing, "
+                    "recording custody, and subcontractor responsibilities. Require "
+                    "verified bank-detail changes through an independently known "
+                    "contact before moving money. A forged publisher payment "
+                    "instruction can eliminate a month's spread without producing "
+                    "any warning in the auction dashboard. Give contractors "
+                    "task-specific access and remove it promptly when their "
+                    "engagement ends."
+                ),
+                (
+                    "Separate legal requirements from conservative operating "
+                    "choices when configuring consent. The FCC's attempted "
+                    "one-to-one lead-generation consent amendment was vacated "
+                    "by the Eleventh Circuit in January 2025; do not represent "
+                    "that amendment as an effective universal federal rule. "
+                    "Use seller-specific written consent as a deliberate "
+                    "operating standard where appropriate, while applying "
+                    "the actual TCPA provisions and 47 CFR 64.1200 requirements "
+                    "to the technology, purpose, and type of contact involved. "
+                    "Consumer-initiated inbound calls and later outbound "
+                    "callbacks are different events. A call certificate "
+                    "does not grant unrestricted callback rights. Check "
+                    "internal revocations and applicable do-not-call "
+                    "restrictions before any covered outbound activity. "
+                    "For Medicare work, distinguish a scheduled personal "
+                    "marketing appointment's scope-of-appointment timing "
+                    "under 42 CFR 422.2264 from TPMO recording duties "
+                    "under 42 CFR 422.2274; the 48-hour requirement has "
+                    "specified exceptions and is not a blanket delay "
+                    "for every inbound call. Assess the corresponding "
+                    "Part D provisions where applicable. Legal-call "
+                    "distribution also requires jurisdiction-specific "
+                    "analysis of solicitation, runner restrictions, "
+                    "referral arrangements, and fee structures. California "
+                    "Business and Professions Code section 6152 illustrates "
+                    "why a duration-qualified call is not automatically "
+                    "a permissible paid referral. Launch emergency-trade "
+                    "traffic first if the team cannot yet implement "
+                    "the additional Medicare or legal operating requirements."
+                ),
+                (
+                    "Implement tcpa_litigator_scrub_honeypot_arbitrage as consent-first "
+                    "screening, not as bait, intimidation, or permission to "
+                    "contact people who have never sued. The TRACK_2 service "
+                    "can combine authorized docket-derived identity risk "
+                    "signals with authoritative suppression sources, "
+                    "recipient-specific evidence, and revocation checks. "
+                    "Respect source access conditions and keep only "
+                    "fields needed for a documented business purpose. "
+                    "A name-only docket match is weak evidence: common "
+                    "names, stale addresses, and mistaken party identities "
+                    "produce expensive false positives. Route ambiguous "
+                    "matches to review without disclosing litigation "
+                    "allegations to publishers. In an illustrative "
+                    "screening pilot, 20,000 checks at $0.02 generate "
+                    "$400 gross service billings. A $120 licensed-source "
+                    "allowance plus $40 processing cost leaves $240 "
+                    "before review labor, sales, and other expenses. "
+                    "That example is separate unit economics, not "
+                    "an addition to the canonical annual scorecard. "
+                    "Require evidence completeness and suppression "
+                    "freshness even when the risk signal is clear. "
+                    "Plaintiff matching neither authorizes contact "
+                    "nor replaces TCPA compliance. If enrichment "
+                    "is uncertain, disable it and require independently "
+                    "verified consent and authoritative suppression "
+                    "checks. Sell an auditable screening workflow "
+                    "with bounded data handling, rather than a "
+                    "promise that litigation can be eliminated. "
+                    "Measure false-match reversals and missed "
+                    "revocations alongside API latency."
+                ),
+            ],
+            "table": {
+                "caption": "Six controls connecting entity hygiene, consent evidence, and canonical accounting",
+                "headers": [
+                    "Control area and accountable operator responsibility",
+                    "Evidence required before traffic or money moves",
+                    "Concrete operating test and expected result",
+                    "Failure response that preserves cash and evidence",
+                ],
+                "rows": [
+                    [
+                        "Entity identity and separate business banking records",
+                        "Executed contracts and account ownership show matching legal names.",
+                        "Trace one publisher invoice through approval, payment, and bank reconciliation.",
+                        "Stop disbursement when beneficiary identity or payment instructions conflict.",
+                    ],
+                    [
+                        "Insurance scope and contractual risk allocation review",
+                        "Binder, policy wording, exclusions, and declared activities match actual operations.",
+                        "Check solicitation exclusions and recording-related events with the broker.",
+                        "Narrow traffic scope when required protection cannot be purchased.",
+                    ],
+                    [
+                        "Canonical retained-share accounting and pass-through cost classification",
+                        "Ledger distinguishes $382,500 Base direct costs from $267,750 remaining expenses.",
+                        "Reconcile $850,000 gross to $467,500 retained and $199,750 profit.",
+                        "Correct classifications before presenting buyer volume as operator earnings.",
+                    ],
+                    [
+                        "Seller-specific evidence and applicable outbound suppression controls",
+                        "Recorded disclosure version, named recipient, revocations, and suppression result persist.",
+                        "Reject a callback whose internal revocation supersedes earlier permission.",
+                        "Disable outbound contact until valid authority and suppression checks agree.",
+                    ],
+                    [
+                        "Medicare appointment timing and TPMO recording obligations",
+                        "Applicable scope record, exception basis, recording notice, and retention schedule persist.",
+                        "Test scheduled appointments separately from ordinary inbound informational calls.",
+                        "Remove Medicare routing when required timing or evidence fails.",
+                    ],
+                    [
+                        "Docket-derived screening quality and limited data exposure",
+                        "Licensed source terms, matching criteria, and review outcomes remain auditable.",
+                        "Challenge common-name matches using independently verified identifying evidence.",
+                        "Disable uncertain enrichment while keeping consent and authoritative suppression.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "4. Prove readiness with synthetic faults and collected settlements",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Treat telecom_voice_traffic_pumping_8yy_sms_arbitrage as a "
+                    "TRACK_2 research label requiring substantial narrowing "
+                    "before production. Do not build artificial calls, "
+                    "circular routes, misleading free services, or messages "
+                    "whose purpose is generating carrier charges. Access "
+                    "stimulation is specifically addressed by 47 CFR "
+                    "61.3(bbb) and 51.914; a revenue-sharing CLEC "
+                    "relationship can change carrier obligations and "
+                    "economics. A legitimate free conference bridge, "
+                    "AI voice line, or radio call-in utility still "
+                    "needs real demand, written carrier acceptance, "
+                    "transparent settlement terms, and a permitted "
+                    "funding model. For illustration, 50,000 genuine "
+                    "monthly voice minutes at $0.004 negotiated "
+                    "net contribution produce only $200 before "
+                    "support and fixed costs. A $300 monthly "
+                    "minimum already makes that pilot negative "
+                    "by $100. Never book the originating carrier's "
+                    "gross charge as operator revenue. The fallback "
+                    "is documented non-access-stimulation SIP service "
+                    "funded by legitimate customers or sponsors. "
+                    "Multiple lawful carrier relationships or "
+                    "jurisdictions may improve resilience, but "
+                    "cannot be used to escape applicable rules. "
+                    "Require documented genuine user initiation "
+                    "and appropriate STIR/SHAKEN treatment for "
+                    "applicable voice traffic; attestation authenticates "
+                    "caller identity information, not human intent. "
+                    "SMS uses different controls, including applicable "
+                    "A2P registration and recipient permission. "
+                    "Do not treat voice attestation as SMS authorization."
+                ),
+                (
+                    "Run pre-flight as a controlled failure exercise "
+                    "using designated test numbers and consenting "
+                    "participants, never unsuspecting consumers. Inject "
+                    "buyer timeouts, exhausted caps, duplicate callbacks, "
+                    "expired evidence links, recording failures, and "
+                    "revocations into a test environment that cannot "
+                    "create payable auction traffic. Test duration "
+                    "thresholds immediately below and above the "
+                    "contractual boundary: 89 and 91 seconds around "
+                    "a 90-second rule, or 119 and 121 around "
+                    "a 120-second rule. Use the buyer's defined "
+                    "clock, not an arbitrary application timer, "
+                    "and confirm how hold time and transferred "
+                    "legs are treated. A passing route must "
+                    "produce one consistent accepted or rejected "
+                    "decision, one evidence bundle, and at most "
+                    "one payable settlement event. Give the "
+                    "founder an immediate traffic-stop control "
+                    "that disables publisher intake without "
+                    "destroying logs or recordings. Verify "
+                    "spending caps at both the routing platform "
+                    "and carrier because one control may not "
+                    "stop every billable leg. Simulate a lost "
+                    "administrator credential and prove recovery "
+                    "without a shared master password. Finally, "
+                    "reconstruct five sample calls from source "
+                    "through bank reconciliation using exported "
+                    "records. If the reconstruction depends on "
+                    "someone remembering what happened, the "
+                    "stack is not ready for outside volume. "
+                    "Record failed cases and retest the exact "
+                    "conditions after each repair."
+                ),
+                (
+                    "Launch one vertical, one buyer group, and "
+                    "one publisher cohort, then review the "
+                    "first ten accepted calls manually before "
+                    "increasing the cap. For a $40 buyer "
+                    "price and $18 direct acquisition cost, "
+                    "a provisional 5% gross scrub allowance "
+                    "is $2 per accepted call, leaving $20 "
+                    "before usage and remaining expenses. "
+                    "That haircut is a pilot sensitivity "
+                    "test, not a change to the canonical "
+                    "55% retained-share scenarios. If actual "
+                    "economics differ, report the variance "
+                    "rather than adjusting the historical "
+                    "scorecard silently. Keep a daily record "
+                    "of buyer-accepted calls, publisher-payable "
+                    "calls, reversals, cash receipts, and "
+                    "oldest unpaid invoices. Require a "
+                    "successful net-7 collection before "
+                    "expanding publisher exposure, and "
+                    "reduce caps when buyer payment timing "
+                    "deteriorates. AI transcript disposition "
+                    "can prioritize review, but verify "
+                    "its duration, service category, and "
+                    "quality labels against human-reviewed "
+                    "samples before relying on postbacks. "
+                    "The Conservative and Base teams "
+                    "remain one full-time operator plus "
+                    "two contractors; the Scaled case "
+                    "uses two full-time operators plus "
+                    "three contractors. Assign routing "
+                    "and settlement ownership explicitly "
+                    "rather than hiring broad management "
+                    "roles. A launch is ready when its "
+                    "cash, permissions, evidence, and "
+                    "failure responses agree, not when "
+                    "every dashboard contains an attractive "
+                    "conversion chart."
+                ),
+            ],
+            "table": {
+                "caption": "Six pre-flight exercises with measurable acceptance evidence and stop responses",
+                "headers": [
+                    "Exercise performed before expanding publisher traffic exposure",
+                    "Injected condition and expected production-safe response",
+                    "Evidence retained for operational readiness assessment",
+                    "Immediate response when the exercise fails",
+                ],
+                "rows": [
+                    [
+                        "Consent and revocation conflict across connected systems",
+                        "Fresh internal revocation overrides an older affirmative evidence record.",
+                        "Decision log links timestamps, recipient identity, and suppression source.",
+                        "Disable outbound callbacks and repair propagation before restarting.",
+                    ],
+                    [
+                        "Buyer timeout and exhausted daily acceptance capacity",
+                        "Late bids expire and no exhausted buyer receives a post.",
+                        "Trace shows deadline enforcement and permitted fallback destination selection.",
+                        "Reduce intake to available verified buyers or stop traffic.",
+                    ],
+                    [
+                        "Duration boundary and duplicate settlement callback handling",
+                        "Boundary calls follow contracted timing; repeated callbacks create no duplicate payable.",
+                        "Matched recording timeline, buyer response, and settlement ledger demonstrate consistency.",
+                        "Hold affected publisher payments pending documented discrepancy resolution.",
+                    ],
+                    [
+                        "Recording outage and evidence restoration from storage",
+                        "Missing required recording prevents continued routing into affected campaigns.",
+                        "Sample object restoration reproduces readable evidence with controlled access.",
+                        "Stop affected campaigns while preserving all surviving event records.",
+                    ],
+                    [
+                        "Voice utility economics and carrier contract acceptability",
+                        "Genuine demand and written terms support lawful non-artificial traffic.",
+                        "Carrier agreement identifies permitted use, charges, and settlement responsibilities.",
+                        "Remove termination-income assumptions and switch to customer-funded service.",
+                    ],
+                    [
+                        "Net-7 settlement and reserve capacity under payment delay",
+                        "Cleared collections match remittance while delayed balances reduce available caps.",
+                        "Bank reconciliation and aging schedule substantiate the next traffic limit.",
+                        "Freeze expansion before overdue exposure consumes protected working capital.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four verifications required before outside volume increases",
+                "body": "The founder records each result and keeps traffic capped whenever a required check fails.",
+                "items": [
+                    "Cash verification: protected reserve remains at least 50% of starting capital, and forecast settlement exposure fits the available balance.",
+                    "Evidence verification: consent, applicable suppression, recording requirements, and vertical-specific timing survive a complete sample-call reconstruction.",
+                    "Routing verification: timeout, capacity, duration, duplicate-event, and stop-control tests produce the contracted outcomes without duplicate charges.",
+                    "Collection verification: a real buyer remittance matches accepted calls and cleared cash before publisher limits increase.",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Fund and constrain the launch",
+                    "action": "Allocate the selected startup envelope and isolate its protected reserve.",
+                    "detail": "Record vendor commitments, one-time spending, bank availability, and a call cap derived from payment timing rather than hoped-for revenue.",
+                },
+                {
+                    "step": 2,
+                    "title": "Configure one accountable routing path",
+                    "action": "Connect the primary router, evidence store, suppression service, and settlement ledger.",
+                    "detail": "Use one call identifier, authenticated callbacks, bounded buyer deadlines, least-privilege access, and explicit event-state transitions.",
+                },
+                {
+                    "step": 3,
+                    "title": "Exercise failures before live acquisition",
+                    "action": "Run designated test calls through duration boundaries, revocations, outages, and duplicate callbacks.",
+                    "detail": "Retain observed results, correct every failed required condition, and repeat affected tests without creating payable external traffic.",
+                },
+                {
+                    "step": 4,
+                    "title": "Collect before expanding",
+                    "action": "Review the first ten accepted calls and reconcile the first net-7 buyer payment.",
+                    "detail": "Increase publisher capacity only after cleared collections, updated scrub rates, and remaining reserve support the next exposure limit.",
+                },
+            ],
+        },
+    ],
+    "pull_quote": "Buy enough infrastructure to prove a collectible call, and keep enough cash to survive the calls a buyer rejects.",
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        "Select the $8,000, $25,000, or $45,000 envelope and place $4,400, $15,000, or $27,000 respectively into a protected settlement reserve.",
+        "Obtain current written vendor terms for all twelve layers, replacing reference prices with account-specific minimums, usage rates, and cancellation conditions.",
+        "Document entity identity, business banking, insurance exclusions, buyer acceptance rules, publisher payment terms, and beneficiary-change verification.",
+        "Configure seller-specific evidence, applicable DNC and revocation checks, recording controls, and separate Medicare or legal routing requirements.",
+        "Test duration boundaries, buyer timeouts, missing recordings, duplicate callbacks, restoration, and the founder's immediate traffic-stop control.",
+        "Reconcile the first net-7 collection and the 55% retained-share ledger before raising publisher caps or adding a second operating vertical.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment and solicitations",
+            "url": "https://www.law.cornell.edu/uscode/text/47/227",
+            "relevance": "Establishes TCPA restrictions relevant to covered calls, consent, solicitations, and associated private enforcement exposure.",
+        },
+        {
+            "title": "47 CFR § 64.1200 — Delivery restrictions",
+            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
+            "relevance": "Apply the operative rules for covered calling technology, consent, do-not-call procedures, and revocation rather than treating a certificate as universal permission.",
+        },
+        {
+            "title": "16 CFR § 310.4 — Abusive telemarketing acts or practices",
+            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
+            "relevance": "Assess applicable Telemarketing Sales Rule restrictions, including do-not-call obligations and calling practices, for covered outbound operations.",
+        },
+        {
+            "title": "42 CFR § 422.2264 — Beneficiary contact",
+            "url": "https://www.ecfr.gov/current/title-42/section-422.2264",
+            "relevance": "Distinguish Medicare Advantage beneficiary-contact and scope-of-appointment requirements, including applicable timing exceptions, from general inbound routing.",
+        },
+        {
+            "title": "42 CFR § 422.2274 — Agent, broker, and third-party requirements",
+            "url": "https://www.ecfr.gov/current/title-42/section-422.2274",
+            "relevance": "Identify applicable TPMO oversight and marketing, sales, and enrollment call-recording responsibilities before accepting Medicare traffic.",
+        },
+        {
+            "title": "42 CFR § 423.2264 — Part D beneficiary contact",
+            "url": "https://www.ecfr.gov/current/title-42/section-423.2264",
+            "relevance": "Check the corresponding Part D beneficiary-contact and appointment requirements when routing prescription-drug-plan inquiries.",
+        },
+        {
+            "title": "42 CFR § 423.2274 — Part D agent, broker, and third-party requirements",
+            "url": "https://www.ecfr.gov/current/title-42/section-423.2274",
+            "relevance": "Apply relevant Part D TPMO oversight and recording requirements rather than assuming Medicare Advantage procedures cover every product.",
+        },
+        {
+            "title": "47 CFR § 61.3(bbb) — Access stimulation definition",
+            "url": "https://www.ecfr.gov/current/title-47/section-61.3",
+            "relevance": "Evaluate access-stimulation criteria before modeling revenue-sharing carrier arrangements or high-volume voice utilities.",
+        },
+        {
+            "title": "47 CFR § 51.914 — Access stimulation",
+            "url": "https://www.ecfr.gov/current/title-47/section-51.914",
+            "relevance": "Determine applicable carrier financial responsibilities and restrictions instead of assuming originating-carrier charges become operator income.",
+        },
+        {
+            "title": "California Business and Professions Code § 6152 — Runners and cappers",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
+            "relevance": "Screen California legal-call acquisition and distribution arrangements for prohibited runner or capper activity before adopting paid-referral economics.",
+        },
+    ],
+}

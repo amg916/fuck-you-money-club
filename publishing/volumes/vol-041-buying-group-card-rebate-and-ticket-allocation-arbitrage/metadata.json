@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage",
+  "volume_slug": "vol-041-buying-group-card-rebate-and-ticket-allocation-arbitrage",
+  "volume_number": 41,
+  "site_ui": {
+    "cover": [
+      "BUYING GROUP",
+      "& TICKET",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "VERIFY REAL DEMAND. CONTROL PAYMENT FLOAT.",
+      "RECONCILE REBATES AND ALLOCATIONS."
+    ],
+    "lead": "Wholesale Buying-Group Fulfillment, Eligible Commercial Card Rewards & Authorized Live-Event Seat-License and Suite Allocations",
+    "summary": "Fulfill documented buying-group orders and permitted ticket allocations while modeling settlement timing, returns, and event risk. Verify advertised card reward rates, caps, and repayment rules with issuers; use genuine purchases rather than circular transactions and count only net earned rebates and settled resale proceeds.",
+    "chapters": [
+      "Buying-group fulfillment vs ticket allocation models",
+      "Wholesale buyers, card issuers & venue counterparties",
+      "Order spreads, eligible rebates & float-adjusted margins",
+      "Credit limits, liquidity reserves & lean fulfillment stack",
+      "Reward clawbacks, buyer defaults & event cancellation traps",
+      "Verified purchase orders & authorized allocation sourcing",
+      "Wholesale delivery, acceptance & buying-group settlement",
+      "Commercial card cycling, issuer permissions & repayment caps",
+      "SSL rights, suite splits & ticket transfer restrictions",
+      "Resale laws, platform terms & refund obligations",
+      "Order ledgers, exposure limits & lean allocation pods",
+      "First 30-day funded-order launch sprint"
+    ],
+    "flow": [
+      [
+        "VALIDATE",
+        "Confirm genuine orders & authorized ticket demand"
+      ],
+      [
+        "UNDERWRITE",
+        "Price fees, returns, float & cancellation exposure"
+      ],
+      [
+        "AUTHORIZE",
+        "Verify issuer terms, resale rights & buyer contracts"
+      ],
+      [
+        "FULFILL",
+        "Deliver goods or transfer permitted allocations"
+      ],
+      [
+        "SETTLE",
+        "Collect proceeds & repay cards within agreed terms"
+      ],
+      [
+        "RECONCILE",
+        "Audit net rebates, refunds & counterparty limits"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "BUYING GROUP, CARD-FLOAT & TICKET ALLOCATION ARBITRAGE",
+  "subtitle": "The Complete Playbook for Buying-Group Spreads, Card Float and Ticket Allocations: $250,000–$1,800,000 USD in Annual Gross Receipts, a 1 FT + 2 C (3 People) Core Pod, and a Five-Person Scale Plan",
+  "chapter_count": 12,
+  "total_word_count": 78866,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 93,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T15:15:33Z"
+}

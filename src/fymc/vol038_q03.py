@@ -1,0 +1,677 @@
+from __future__ import annotations
+
+CHAPTER_3 = {
+    "id": "Q3",
+    "chapter_id": "Q3",
+    "chapter_number": 3,
+    "question_number": 3,
+    "slug": "unit-economics-margin-waterfall-working-capital-float",
+    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for contingent corporate bill-audit & tax-credit recovery?",
+    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
+    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
+    "subtitle": "Earned Recovery Fees, ASC 606 Revenue Boundaries, Circular 230 Fee Restrictions, Carrier Claim Scrubs, and Utility Refund Float",
+    "layout_template": "financial_breakdown",
+    "reading_time_minutes": 14,
+    "executive_summary": (
+        "Candidate #38, Rank #06 of 42, scores 94/100 by converting documented corporate "
+        "expense recoveries into earned fees rather than treating customer spend as operator "
+        "revenue. This chapter connects 12 mapped plays to a single cohort ledger covering "
+        "parcel refunds, utility corrections, purchasing rebates, assessment appeals, and "
+        "credit-processing work. Formula v2.0 fixes annual owner profit at $33,000 "
+        "Conservative, $217,150 Base, and $504,000 Scaled. The operating challenge is "
+        "funding contractor delivery and acquisition before carriers, municipalities, "
+        "customers, and rebate administrators release cash. Separate fee eligibility "
+        "scrubs from credit losses, measure actual payout locks, and price every claim "
+        "against verified authority, collection timing, and reversal exposure. A high "
+        "contingency percentage cannot rescue an ineligible claim or an unfunded collection cycle."
+    ),
+    "key_metrics": [
+        {
+            "label": "Conservative",
+            "value": "$110,000",
+            "context": "Annual earned operator fee revenue; client recoveries excluded",
+            "note": "30% net margin; $33,000 owner profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Base",
+            "value": "$505,000",
+            "context": "Annual earned operator fee revenue; client recoveries excluded",
+            "note": "43.0% net margin; $217,150 owner profit; 1 FT + 3 C",
+        },
+        {
+            "label": "Scaled",
+            "value": "$900,000",
+            "context": "Annual earned operator fee revenue; client recoveries excluded",
+            "note": "56% net margin; $504,000 owner profit; 2 FT + 4 C",
+        },
+    ],
+    "sections": [
+        {
+            "heading": "1. Define the earned fee before pricing twelve recovery plays",
+            "epistemic_status": "operating_framework",
+            "paragraphs": [
+                (
+                    "Start the ledger with the operator's contractual entitlement, not the customer's "
+                    "utility spend, parcel charges, tax liability, or refund principal. A $100,000 "
+                    "utility correction at a 30% contingent share creates $30,000 of potential "
+                    "operator consideration, not $100,000 of revenue. Recognition still depends on "
+                    "performance, enforceability, and the applicable variable-consideration constraint. "
+                    "Under ASC 606, assess principal versus agent for each promised service; a "
+                    "third-party commission received as agent is not permission to gross up the "
+                    "underlying transaction. The scorecard's gross revenue label therefore means "
+                    "earned operator fees before operating expenses. This model uses retained_share "
+                    "equal to 1.00 only after excluding customer proceeds and other parties' "
+                    "entitlements from the revenue perimeter. It does not imply the operator retains "
+                    "every refund dollar. Record collected customer money separately when an authorized "
+                    "arrangement requires handling it, with a matching payable rather than sales. "
+                    "Before revealing findings, obtain a signed Letter of Authorization, the executed "
+                    "fee schedule, baseline invoice snapshots, and the customer's permitted disclosure "
+                    "contacts. Put carrier waivers, purchasing eligibility, and refund limitations "
+                    "into the intake record before estimating recoverable dollars. A theoretical "
+                    "overcharge without an enforceable recovery route has zero collectible fee value."
+                ),
+                (
+                    "The purchasing lane is private_b2b_gpo_umbrella_rebate_arbitrage, a TRACK_1 play "
+                    "built around authorized umbrella agreements rather than invented buying power. "
+                    "Pool 10,000 to 75,000 or more seats across hundreds of SMB members only where "
+                    "Una, OMNIA, or a private vertical SaaS, parcel, or telecom GPO accepts the "
+                    "specific buyers and categories. Membership count alone establishes neither "
+                    "rebate eligibility nor benchmark access. In an illustrative annual cohort, "
+                    "$2,000,000 of eligible paid purchases at a verified 3% vendor administrative "
+                    "rebate produces $60,000 of potential operator compensation. Separately, "
+                    "$100,000 of documented Year-1 customer savings at 25% produces $25,000. "
+                    "Combined consideration is $85,000 only if both contracts permit the payments "
+                    "and customers receive clear dual-compensation disclosure. The rebate is not "
+                    "another $60,000 of customer savings. Test negotiated 3% to 12% rebate "
+                    "brackets and 25% to 35% savings splits against exclusions, returns, payment "
+                    "dates, and quarter-end true-ups. Use authorized Vendr or Tropic benchmarking "
+                    "access to challenge price floors without assuming their information is freely "
+                    "redistributable. Suspend disputed fees, reconcile member and supplier baselines, "
+                    "refund unearned amounts, and transfer affected members to eligible agreements."
+                ),
+                (
+                    "Map the other eleven lanes separately because their failure clocks differ. "
+                    "FedEx and UPS service refunds depend on current guarantee coverage and "
+                    "contract waivers; a successful API submission is not an accepted claim. "
+                    "Parcel billing corrections require invoice-level evidence distinct from "
+                    "late-delivery evidence. Utility tariff, cooling-tower sewer, waste, and telecom "
+                    "recoveries require account-specific service classifications and defensible "
+                    "before-and-after baselines. Assessment appeals require jurisdiction-specific "
+                    "authority and any applicable consultant license. WOTC processing requires "
+                    "Form 8850 timing, certification evidence, eligible wages, and verification "
+                    "that the worker's start date falls within the credit's legislatively "
+                    "authorized period. Specialty federal tax work requires a separate engagement "
+                    "and a current analysis of Circular 230 section 10.27 before any contingent "
+                    "fee is offered. Use a fixed processing fee when permitted and operationally "
+                    "appropriate rather than automatically taking a credit percentage. Finally, "
+                    "a 36-month savings contract earns fees against measured periods, not three "
+                    "years of forecast savings on signature. The matrix supplies underwriting "
+                    "examples, not additive revenue forecasts: customer recoveries and purchasing "
+                    "rebates can overlap, and each opportunity needs one unique economic identifier "
+                    "before it enters the scenario ledger."
+                ),
+            ],
+            "table": {
+                "caption": "Twelve Mapped Operating Plays: Fee Units, Evidence, and Failure Fallbacks",
+                "headers": [
+                    "Mapped operating play and earning mechanism",
+                    "Illustrative fee unit and operator math",
+                    "Evidence needed before underwriting the fee",
+                    "Failure fallback protecting the collectible amount",
+                ],
+                "rows": [
+                    [
+                        "Private B2B GPO umbrella and contingent spend-audit arbitrage",
+                        "$2,000,000 eligible purchases times 3%, plus $100,000 savings times 25%, equals $85,000.",
+                        "Verify member eligibility, supplier schedules, authorized benchmarks, and disclosed dual compensation.",
+                        "Suspend disputed fees, refund unearned amounts, and move members into eligible agreements.",
+                    ],
+                    [
+                        "FedEx parcel service-guarantee refund recovery for authorized accounts",
+                        "$20,000 accepted service refunds times 30% produces $6,000 operator consideration.",
+                        "Match shipment timestamps, current guarantee coverage, executed agreements, and waiver language.",
+                        "Exclude waived services and release contingent estimates when carrier denials become final.",
+                    ],
+                    [
+                        "UPS parcel service-guarantee refund recovery for authorized accounts",
+                        "$15,000 accepted service refunds times 30% produces $4,500 operator consideration.",
+                        "Retain shipment identifiers, claim windows, account permissions, and carrier acceptance evidence.",
+                        "Stop unsupported submissions and pursue only documented contractual reconsideration channels.",
+                    ],
+                    [
+                        "Parcel invoice correction for duplicate or erroneous charges",
+                        "$12,000 accepted invoice corrections times 25% produces $3,000 operator consideration.",
+                        "Tie each correction to invoice lines, contract rates, and unique shipment identifiers.",
+                        "Remove corrections already credited through another auditor or customer service workflow.",
+                    ],
+                    [
+                        "Commercial utility tariff classification and historical billing recovery",
+                        "$100,000 issued tariff refund times 30% produces $30,000 operator consideration.",
+                        "Preserve applicable tariffs, meter classifications, signed authority, and historical invoice snapshots.",
+                        "Exclude periods outside recoverable windows and await documented utility adjustment decisions.",
+                    ],
+                    [
+                        "Cooling-tower sewer deduction through accepted consumption measurement",
+                        "$40,000 accepted sewer adjustment times 30% produces $12,000 operator consideration.",
+                        "Validate meter installation, local deduction rules, calibration records, and accepted readings.",
+                        "Use prospective verified periods when historical meter evidence cannot support recovery.",
+                    ],
+                    [
+                        "Commercial waste invoice and service-level correction recovery",
+                        "$24,000 documented annual savings times 25% produces $6,000 first-year fees.",
+                        "Compare signed service schedules, container counts, pickups, surcharges, and cancellation terms.",
+                        "Exclude service reductions that shift disposal costs into another customer account.",
+                    ],
+                    [
+                        "Enterprise telecom inventory and contracted tariff recovery",
+                        "$30,000 issued billing credits times 30% produces $9,000 operator consideration.",
+                        "Reconcile circuit inventories, disconnect confirmations, invoice dates, and contractual charge limits.",
+                        "Withhold disputed fees until provider credits reconcile to customer billing statements.",
+                    ],
+                    [
+                        "Property-tax assessment appeal through authorized licensed delivery",
+                        "$60,000 eligible tax savings times 25% produces $15,000 potential fees.",
+                        "Verify jurisdictional licensing, appeal deadlines, valuation evidence, and the actual tax effect.",
+                        "Refer restricted representation to qualified providers and exclude unsupported assessment projections.",
+                    ],
+                    [
+                        "WOTC certification processing using timely Form 8850 workflows",
+                        "100 contractually billable completed files times $150 produces $15,000 processing fees.",
+                        "Check covered start dates, timely submissions, state certification, and contractual completion milestones.",
+                        "Exclude late or ineligible files and use a separately permitted processing engagement.",
+                    ],
+                    [
+                        "Specialty tax-credit substantiation under separately reviewed fee arrangements",
+                        "20 completed substantiation engagements times $2,000 produces $40,000 fixed service fees.",
+                        "Verify current credit authority, qualified preparers, supporting records, and fee restrictions.",
+                        "Replace restricted contingent pricing with permitted fixed work or decline the engagement.",
+                    ],
+                    [
+                        "Thirty-six-month shared-savings servicing against measured billing periods",
+                        "$10,000 monthly verified savings times 30% produces $3,000 monthly consideration.",
+                        "Retain monthly baselines, service-volume adjustments, customer acceptance, and termination provisions.",
+                        "Rebaseline changed operations and stop billing savings that no longer exist.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Protect the earning mechanism before increasing claim volume",
+                "body": "Veteran operators improve collectible yield by fixing contract and evidence defects upstream.",
+                "items": [
+                    "Store the carrier agreement version beside each shipment cohort; service-guarantee waivers can eliminate a promising refund population before any API work begins.",
+                    "Separate GPO administrative rebates from member savings in both statements and CRM fields; calculate each on its own verified eligible base.",
+                    "For cooling-tower deductions, price meter validation and municipal acceptance before promising historical sewer recovery.",
+                    "Attach each 36-month savings invoice to its actual measurement period and baseline revision so renewals never become automatic recognition of future fees.",
+                ],
+            },
+        },
+        {
+            "heading": "2. Reconcile every cohort from fee billings to owner profit",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "The annual waterfall below is an explicit underwriting allocation that reconciles "
+                    "to Formula v2.0, not a claim that the scorecard supplied departmental budgets. "
+                    "Conservative begins with $115,000 of preliminary fee billings and estimates, "
+                    "removes $5,000 of eligibility scrubs, and retains $110,000 of earned revenue. "
+                    "Base starts at $530,000, removes $25,000, and retains $505,000. Scaled starts "
+                    "at $945,000, removes $45,000, and retains $900,000. Preliminary amounts are "
+                    "a management bridge, not automatically recognized receivables. The corresponding "
+                    "scrub rates are 4.35%, 4.72%, and 4.76% of preliminary fees. Scrubs cover "
+                    "duplicate claims, carrier waivers, purchasing exclusions, and savings that "
+                    "fail baseline verification. They are removed before the canonical revenue "
+                    "line, never deducted again as delivery expense. Recognized consideration "
+                    "remains subject to the applicable accounting policy, including constraints "
+                    "on variable amounts. A claim rejected before earning is different from an "
+                    "earned invoice that becomes uncollectible. Preserve that distinction in "
+                    "the chart of accounts and in the pipeline dashboard. Otherwise a sales "
+                    "team can inflate conversion by booking estimates, then conceal weak "
+                    "eligibility inside an undifferentiated reserve account. Each fee adjustment "
+                    "needs a reason code, evidence link, and cohort assignment."
+                ),
+                (
+                    "Delivery labor is $32,000, $112,000, and $156,000 across the three cases; "
+                    "acquisition spending is $15,000, $60,000, and $80,000. Systems and data "
+                    "cost $9,000, $30,000, and $42,000, while overhead costs $12,000, $40,000, "
+                    "and $60,000. The remaining risk-cost budgets are $9,000, $45,850, and "
+                    "$58,000. These are planning allowances for incremental credit losses, "
+                    "nonrecoverable rework, collection support, and substantiation defense after "
+                    "the eligibility scrub; they are not another reduction for the same rejected "
+                    "fees. Their accounting classification follows the actual event. A commercial "
+                    "price concession belongs in revenue adjustments where appropriate, whereas "
+                    "documented collection costs belong in expense. Holding cash aside does not "
+                    "itself create an accounting expense. For scorecard comparison, owner profit "
+                    "is the economic residual after the stated risk-cost allowance, before "
+                    "personal owner taxes and discretionary distributions. The owner occupies "
+                    "the first full-time position and receives that residual rather than an "
+                    "additional salary hidden outside the model. Scaled includes the second "
+                    "full-time person's compensation in delivery labor. Contractor counts describe "
+                    "available specialists, not full-time equivalents. Include payroll burdens "
+                    "and contracted specialist invoices within the labor ceiling."
+                ),
+                (
+                    "Use 20, 50, and 75 annual client-equivalent units to expose the cost "
+                    "structure without pretending every engagement has identical size. These "
+                    "are normalized planning units, not assertions about historical customer "
+                    "counts. Conservative produces $5,500 earned revenue, $3,850 total cost, "
+                    "and $1,650 owner profit per unit. Base produces $10,100, $5,757, and "
+                    "$4,343. Scaled produces $12,000, $5,280, and $6,720. In Base, the "
+                    "$5,757 unit cost consists of $2,240 delivery labor, $1,200 acquisition, "
+                    "$600 systems, $800 overhead, and $917 risk costs. Its preliminary fee "
+                    "unit is $10,600, reduced by a $500 eligibility scrub. The acquisition "
+                    "figures assume all modeled units require current-year acquisition funding; "
+                    "renewals should be separated before calculating actual new-logo CAC. A "
+                    "Base acquisition dollar therefore buys approximately $8.42 of annual "
+                    "earned revenue, but that ratio says nothing about lifetime value or "
+                    "collection speed. Monthly systems plus overhead equal $1,750 Conservative, "
+                    "$5,833.33 Base, and $8,500 Scaled, within the stated fixed operating "
+                    "range. Variable labor, acquisition, and risk costs sit outside that "
+                    "monthly fixed-cost comparison. Calling all annual costs monthly overhead "
+                    "would obscure the actual staffing and liquidity burden."
+                ),
+            ],
+            "table": {
+                "caption": "Formula v2.0 Annual Fee-to-Owner Waterfall With Explicit Cost Allocations",
+                "headers": [
+                    "Waterfall line and treatment within the model",
+                    "Conservative annual cohort with twenty equivalent units",
+                    "Base annual cohort with fifty equivalent units",
+                    "Scaled annual cohort with seventy-five equivalent units",
+                ],
+                "rows": [
+                    [
+                        "Preliminary fee billings and estimates before eligibility adjustments",
+                        "$115,000 preliminary operator consideration, excluding all customer refund principal.",
+                        "$530,000 preliminary operator consideration, excluding all customer refund principal.",
+                        "$945,000 preliminary operator consideration, excluding all customer refund principal.",
+                    ],
+                    [
+                        "Eligibility scrubs removed before canonical earned revenue",
+                        "Subtract $5,000 for unsupported, duplicated, waived, or otherwise ineligible fees.",
+                        "Subtract $25,000 for unsupported, duplicated, waived, or otherwise ineligible fees.",
+                        "Subtract $45,000 for unsupported, duplicated, waived, or otherwise ineligible fees.",
+                    ],
+                    [
+                        "Canonical earned operator revenue after fee eligibility adjustments",
+                        "$110,000 earned operator revenue, with client proceeds entirely excluded.",
+                        "$505,000 earned operator revenue, with client proceeds entirely excluded.",
+                        "$900,000 earned operator revenue, with client proceeds entirely excluded.",
+                    ],
+                    [
+                        "Contractor delivery and included nonowner employment costs",
+                        "Subtract $32,000 delivery labor across the authorized specialist bench.",
+                        "Subtract $112,000 delivery labor across the authorized specialist bench.",
+                        "Subtract $156,000 delivery labor, including the second full-time position.",
+                    ],
+                    [
+                        "Acquisition spending assigned to the current modeled cohort",
+                        "Subtract $15,000 acquisition spending, equivalent to $750 per unit.",
+                        "Subtract $60,000 acquisition spending, equivalent to $1,200 per unit.",
+                        "Subtract $80,000 acquisition spending, approximately $1,066.67 per unit.",
+                    ],
+                    [
+                        "Systems, extraction, secure storage, and permitted data access",
+                        "Subtract $9,000 systems spending, equivalent to $450 per unit.",
+                        "Subtract $30,000 systems spending, equivalent to $600 per unit.",
+                        "Subtract $42,000 systems spending, equivalent to $560 per unit.",
+                    ],
+                    [
+                        "Overhead excluding owner distributions and separately listed delivery",
+                        "Subtract $12,000 overhead spending, equivalent to $600 per unit.",
+                        "Subtract $40,000 overhead spending, equivalent to $800 per unit.",
+                        "Subtract $60,000 overhead spending, equivalent to $800 per unit.",
+                    ],
+                    [
+                        "Post-scrub risk-cost allowance without duplicated eligibility deductions",
+                        "Subtract $9,000 economic risk costs, equivalent to $450 per unit.",
+                        "Subtract $45,850 economic risk costs, equivalent to $917 per unit.",
+                        "Subtract $58,000 economic risk costs, approximately $773.33 per unit.",
+                    ],
+                    [
+                        "Total modeled operating costs after the canonical revenue line",
+                        "$77,000 total modeled costs, equivalent to $3,850 per unit.",
+                        "$287,850 total modeled costs, equivalent to $5,757 per unit.",
+                        "$396,000 total modeled costs, equivalent to $5,280 per unit.",
+                    ],
+                    [
+                        "Canonical annual owner profit and resulting net margin",
+                        "$33,000 owner profit at 30% margin; 1 FT plus 3 C.",
+                        "$217,150 owner profit at 43.0% margin; 1 FT plus 3 C.",
+                        "$504,000 owner profit at 56% margin; 2 FT plus 4 C.",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "3. Fund the complete payout gap rather than the invoice term",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Measure cash latency from the first committed cohort expenditure to unrestricted "
+                    "operator cash. Conventional DSO measures an invoiced receivable interval; it "
+                    "does not capture months of claim preparation, municipal processing, or an "
+                    "unreleased supplier rebate. For this planning model, use a combined pre-invoice "
+                    "processing and collection interval of 120 days Conservative, 90 days Base, "
+                    "and 60 days Scaled, followed by incremental payout locks of 30, 30, and "
+                    "15 days. The total funded gaps are therefore 150, 120, and 75 days. "
+                    "These assumptions are not carrier or utility service commitments. Maintain "
+                    "separate timestamps for work authorization, completed submission, approved "
+                    "refund, customer receipt, operator invoice, due date, and bank settlement. "
+                    "Calculate actual invoice DSO only between invoice and collection, and report "
+                    "the earlier interval separately. If a rebate administrator's lock already "
+                    "sits inside recorded collection days, do not add it again. Similarly, "
+                    "a customer who pays only after using a utility credit creates a different "
+                    "cash profile from one receiving a check. A cohort's blended timing should "
+                    "be weighted by collectible operator fees rather than underlying customer "
+                    "spend, which otherwise lets a large low-fee account distort the forecast."
+                ),
+                (
+                    "Funded operating cash burn excludes the separately funded risk allowance and "
+                    "equals delivery, acquisition, systems, and overhead: $68,000 Conservative, "
+                    "$242,000 Base, and $338,000 Scaled annually. Under a uniform-spending "
+                    "approximation, working float equals annual cash burn multiplied by funded "
+                    "gap days and divided by 365. That produces approximately $27,945, $79,562, "
+                    "and $69,452. Add dedicated risk liquidity of $9,000, $45,850, and $58,000 "
+                    "to obtain planning liquidity of $36,945, $125,412, and $127,452. The "
+                    "second layer is cash availability for modeled adverse events, not a "
+                    "second expense deduction from owner profit. This conservative funding "
+                    "choice assumes the entire annual risk-cost allowance could need liquidity "
+                    "before replacement collections arrive. Scaled has lower operating float "
+                    "than Base because its assumed cash cycle is shorter, not because size "
+                    "automatically improves collections. The startup capital range of $6,000 "
+                    "to $35,000 funds initial launch activity, not every steady-state cohort "
+                    "at once. Even the Conservative liquidity target slightly exceeds that "
+                    "range's upper endpoint. Ramp signed engagements in batches, retain early "
+                    "collections, negotiate lawful contractor milestones, or obtain committed "
+                    "funding before accelerating acquisition. Never bridge operating costs with "
+                    "money owed to customers."
+                ),
+                (
+                    "Replace the uniform-spending approximation with a thirteen-week cash calendar "
+                    "before committing contractor capacity. Acquisition may be paid in week one, "
+                    "document extraction in week two, specialist review in week four, and the "
+                    "first customer fee only after a utility adjustment in month five. That "
+                    "front-loaded sequence can exceed average-burn float even when the annual "
+                    "margin is unchanged. Group invoices by customer, recovery rail, approval "
+                    "status, and expected unrestricted settlement week; retain a separate "
+                    "column for contractual holdbacks. In QuickBooks or Xero, reconcile the "
+                    "operator invoice to a customer statement and bank receipt, while the "
+                    "claim register preserves carrier or municipal evidence. Do not silently "
+                    "move aged items forward each week. Require a new dated event to change "
+                    "the forecast and mark unsupported collections as delayed. Customer "
+                    "concentration matters because a single treasury department can hold "
+                    "multiple otherwise valid fees. Stress the largest payer independently "
+                    "of average DSO. Where assignment or receivables funding is contemplated, "
+                    "review contractual restrictions and the applicable state's UCC Article "
+                    "9 requirements with the funding provider. Funding proceeds are debt or "
+                    "asset-sale proceeds according to their substance, never additional "
+                    "recovery revenue or an improvement in operating margin."
+                ),
+            ],
+            "table": {
+                "caption": "Payout-Lock Float Model Using Cash Expenses Rather Than Customer Recoveries",
+                "headers": [
+                    "Cash requirement and underlying timing assumption",
+                    "Conservative cohort liquidity under stated timing assumptions",
+                    "Base cohort liquidity under stated timing assumptions",
+                    "Scaled cohort liquidity under stated timing assumptions",
+                ],
+                "rows": [
+                    [
+                        "Combined processing and collection interval before incremental payout locks",
+                        "120 calendar days assumed before the separate payout restriction.",
+                        "90 calendar days assumed before the separate payout restriction.",
+                        "60 calendar days assumed before the separate payout restriction.",
+                    ],
+                    [
+                        "Incremental payout restriction excluded from the preceding interval",
+                        "Add 30 restricted days, producing 150 total funded days.",
+                        "Add 30 restricted days, producing 120 total funded days.",
+                        "Add 15 restricted days, producing 75 total funded days.",
+                    ],
+                    [
+                        "Annual cash operating costs before separately funded risk allowance",
+                        "$68,000 annual cash costs support the operating float calculation.",
+                        "$242,000 annual cash costs support the operating float calculation.",
+                        "$338,000 annual cash costs support the operating float calculation.",
+                    ],
+                    [
+                        "Operating float calculated using annual costs and funded days",
+                        "$68,000 times 150 divided by 365 equals approximately $27,945.",
+                        "$242,000 times 120 divided by 365 equals approximately $79,562.",
+                        "$338,000 times 75 divided by 365 equals approximately $69,452.",
+                    ],
+                    [
+                        "Dedicated risk liquidity added without another profit deduction",
+                        "Add $9,000 available cash for modeled post-scrub adverse events.",
+                        "Add $45,850 available cash for modeled post-scrub adverse events.",
+                        "Add $58,000 available cash for modeled post-scrub adverse events.",
+                    ],
+                    [
+                        "Combined planning liquidity before additional concentration or seasonality cushions",
+                        "Approximately $36,945 combined liquidity supports this uniform-spending operating model.",
+                        "Approximately $125,412 combined liquidity supports this uniform-spending operating model.",
+                        "Approximately $127,452 combined liquidity supports this uniform-spending operating model.",
+                    ],
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Freeze the evidence-backed earning population",
+                    "action": "Export authorized accounts, unique claims, baseline versions, and enforceable fee schedules.",
+                    "detail": "Remove duplicate, waived, expired, and otherwise ineligible opportunities before estimating earned operator fees.",
+                },
+                {
+                    "step": 2,
+                    "title": "Separate every cash-clock component",
+                    "action": "Record submission processing, invoice DSO, customer refund dependency, and incremental payout restrictions separately.",
+                    "detail": "Use dated supporting events and avoid adding a lock already included in the observed collection interval.",
+                },
+                {
+                    "step": 3,
+                    "title": "Schedule committed costs and restricted balances",
+                    "action": "Place acquisition invoices, contractor milestones, overhead, risk liquidity, and customer payables into a thirteen-week forecast.",
+                    "detail": "Exclude client-owned funds from available operating cash and test the earliest negative unrestricted balance.",
+                },
+                {
+                    "step": 4,
+                    "title": "Reconcile forecast changes to actual settlements",
+                    "action": "Match each operator receipt to its fee invoice and claim evidence every week.",
+                    "detail": "Keep original expected dates visible, investigate aging, and release excess risk liquidity only after exposure expires.",
+                },
+            ],
+        },
+        {
+            "heading": "4. Stress collectible yield, delivery overruns, and legal earning limits",
+            "epistemic_status": "illustrative_model",
+            "paragraphs": [
+                (
+                    "Run sensitivities against the reconciled cases instead of replacing their "
+                    "canonical outputs. With all modeled costs held constant, a further 10% "
+                    "reduction in earned revenue lowers owner profit to $22,000 Conservative, "
+                    "$166,650 Base, and $414,000 Scaled. This is an incremental downside "
+                    "beyond the original eligibility scrub, not a restatement of that scrub. "
+                    "A separate 20% delivery labor overrun reduces profit by $6,400, $22,400, "
+                    "and $31,200, leaving $26,600, $194,750, and $472,800. Combining both "
+                    "shocks leaves $15,600, $144,250, and $382,800. These comparisons deliberately "
+                    "assume no immediate cost relief, even though a longer-term operator could "
+                    "stop acquisition or renegotiate specialist capacity. At unchanged modeled "
+                    "costs, revenue break-even is $77,000, $287,850, and $396,000, respectively; "
+                    "it is not a universal shutdown threshold because some expenses vary with "
+                    "volume. Examine which contracts can actually be reduced within thirty "
+                    "days before promising a margin recovery. For GPO cohorts, specifically "
+                    "stress a lower eligible purchase base and a delayed quarterly true-up. "
+                    "For parcel cohorts, stress expanded waiver exclusions rather than merely "
+                    "lower claim submission volume. Those mechanisms destroy collectible "
+                    "consideration even when the extraction software continues producing apparently "
+                    "complete work queues."
+                ),
+                (
+                    "An extra thirty funded days consumes another $5,589 Conservative, $19,890 "
+                    "Base, and $27,781 Scaled under the same cash-burn assumptions. Delay alone "
+                    "does not reduce accrual profit when the earned fee remains collectible, "
+                    "but financing charges, extra collection labor, and ultimate credit losses "
+                    "do. If the incremental draw remains outstanding for an entire year at "
+                    "12%, its approximate interest costs are $671, $2,387, and $3,334. "
+                    "Actual interest must use the draw balance and days outstanding; those "
+                    "annualized illustrations are not automatic deductions from the canonical "
+                    "cases. Maintain distinct eligibility, credit, and service-cost registers "
+                    "rather than assigning one unexplained haircut to every account. Eligibility "
+                    "records identify whether consideration was earned. Credit records identify "
+                    "an enforceable receivable whose customer may not pay. Service-cost records "
+                    "identify specialist rework or substantiation defense. A carrier reversal "
+                    "can affect revenue or a liability depending on the contract and prior "
+                    "recognition; obtain the appropriate accounting treatment before posting "
+                    "it. Review each reserve by recovery rail and aging bucket monthly. Release "
+                    "balances only against evidence that the exposure ended, never simply "
+                    "because the sales forecast requires a higher margin or the owner wants "
+                    "a distribution."
+                ),
+                (
+                    "Protect revenue validity with precise operating requirements. Treasury Circular "
+                    "230 section 10.27 governs contingent-fee arrangements within its applicable "
+                    "scope and contains specified exceptions; the restriction's application to "
+                    "particular services also requires attention to controlling judicial decisions. "
+                    "Do not treat a corporate expense-audit contract as blanket permission to "
+                    "charge a percentage on federal tax-return work. Separate engagements, "
+                    "service descriptions, qualified practitioners, and fee analysis before "
+                    "quoting specialty credits. Under 26 U.S.C. section 51(d)(13), the WOTC "
+                    "certification process generally requires the prescribed pre-screening "
+                    "notice and submission to the designated local agency within twenty-eight "
+                    "days after work begins; confirm any applicable relief and current program "
+                    "authorization. Section 6001 supports maintaining records sufficient to "
+                    "substantiate tax positions. When tax-return information is involved, "
+                    "section 7216 and its implementing regulations require evaluating permitted "
+                    "uses and disclosures by preparers. For Texas property-tax consulting, "
+                    "check Occupations Code Chapter 1152 registration requirements and exemptions "
+                    "before assigning representation. Keep carrier credentials scoped to the "
+                    "authorized account and comply with current API terms. The operating "
+                    "decision is simple: stop the affected earning stream when authority "
+                    "or substantiation fails, preserve unrelated valid work, and fund only "
+                    "the collectible remainder."
+                ),
+            ],
+            "table": {
+                "caption": "Incremental Downside Tests With Canonical Cases Preserved as the Baseline",
+                "headers": [
+                    "Independent stress assumption and interpretation of resulting figures",
+                    "Conservative result relative to the canonical baseline",
+                    "Base result relative to the canonical baseline",
+                    "Scaled result relative to the canonical baseline",
+                ],
+                "rows": [
+                    [
+                        "Ten percent additional revenue loss with modeled costs unchanged",
+                        "$22,000 owner profit remains after an additional $11,000 revenue loss.",
+                        "$166,650 owner profit remains after an additional $50,500 revenue loss.",
+                        "$414,000 owner profit remains after an additional $90,000 revenue loss.",
+                    ],
+                    [
+                        "Twenty percent delivery labor overrun with earned revenue unchanged",
+                        "$26,600 owner profit remains after $6,400 additional delivery spending.",
+                        "$194,750 owner profit remains after $22,400 additional delivery spending.",
+                        "$472,800 owner profit remains after $31,200 additional delivery spending.",
+                    ],
+                    [
+                        "Combined revenue loss and labor overrun without immediate cost relief",
+                        "$15,600 owner profit remains after both independent operating shocks.",
+                        "$144,250 owner profit remains after both independent operating shocks.",
+                        "$382,800 owner profit remains after both independent operating shocks.",
+                    ],
+                    [
+                        "Thirty additional funded days without changing fee collectibility",
+                        "Approximately $5,589 additional liquidity is required before any financing cost.",
+                        "Approximately $19,890 additional liquidity is required before any financing cost.",
+                        "Approximately $27,781 additional liquidity is required before any financing cost.",
+                    ],
+                    [
+                        "Annualized interest at twelve percent on the incremental delay draw",
+                        "Approximately $671 interest applies if the incremental draw persists one year.",
+                        "Approximately $2,387 interest applies if the incremental draw persists one year.",
+                        "Approximately $3,334 interest applies if the incremental draw persists one year.",
+                    ],
+                    [
+                        "Revenue break-even with the entire modeled cost structure held constant",
+                        "$77,000 earned revenue covers modeled costs before any owner residual.",
+                        "$287,850 earned revenue covers modeled costs before any owner residual.",
+                        "$396,000 earned revenue covers modeled costs before any owner residual.",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before a cohort consumes delivery capital",
+                "body": "Proceed only when evidence supports the earning right, the unit margin, and the full cash gap.",
+                "items": [
+                    "Verify signed authority, baseline snapshots, carrier waiver treatment, purchasing eligibility, and any required state registration for every included account.",
+                    "Reconcile the fee bridge to operator-only revenue and document that client proceeds, partner entitlements, and GPO rebates are not counted twice.",
+                    "Confirm the engagement-specific tax fee analysis, WOTC timing and covered start dates, and required substantiation before treating tax-related work as billable.",
+                    "Demonstrate sufficient unrestricted liquidity for the cohort's thirteen-week trough, incremental payout locks, and separately funded risk exposure before committing contractors.",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "A recovery fee becomes an asset only when the earning right survives scrutiny and the cash arrives before the operator runs out of runway.",
+    "diagram_id": "diag-03",
+    "action_checklist": [
+        "Create an operator-only fee ledger separating preliminary estimates, eligibility scrubs, earned fees, customer proceeds, and partner entitlements.",
+        "Reconcile annual revenue and modeled costs to $33,000, $217,150, and $504,000 owner profit without changing the canonical margins.",
+        "Calculate cohort CAC, delivery labor, and risk costs using the stated 20, 50, and 75 client-equivalent planning units.",
+        "Build a thirteen-week unrestricted cash forecast with separate processing intervals, invoice DSO, payout locks, and customer-owned balances.",
+        "Run the additional 10% revenue-loss, 20% labor-overrun, and thirty-day delay tests before increasing acquisition spending.",
+        "Document GPO eligibility and dual compensation, carrier waiver screening, applicable tax-fee restrictions, and jurisdiction-specific property-tax authority.",
+    ],
+    "statutory_citations": [
+        {
+            "title": "31 CFR § 10.27 — Fees under Treasury Circular 230",
+            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
+            "relevance": (
+                "Evaluate contingent-fee restrictions, stated exceptions, applicable service scope, "
+                "and controlling judicial treatment before pricing federal tax-related engagements."
+            ),
+        },
+        {
+            "title": "26 U.S.C. § 51 — Work opportunity credit",
+            "url": "https://www.law.cornell.edu/uscode/text/26/51",
+            "relevance": (
+                "Check targeted-group eligibility, certification requirements under subsection "
+                "(d)(13), covered worker start dates, and current statutory authorization "
+                "before underwriting WOTC processing demand."
+            ),
+        },
+        {
+            "title": "26 U.S.C. § 6001 — Notice or regulations requiring records, statements, and special returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
+            "relevance": (
+                "Retain records sufficient to support claimed tax treatment and the underlying "
+                "wage, expense, certification, and computation evidence."
+            ),
+        },
+        {
+            "title": "26 U.S.C. § 7216 — Disclosure or use of information by preparers of returns",
+            "url": "https://www.law.cornell.edu/uscode/text/26/7216",
+            "relevance": (
+                "Assess restrictions and applicable exceptions before a return preparer uses "
+                "or discloses tax-return information for recovery workflows or outside vendors."
+            ),
+        },
+        {
+            "title": "26 CFR § 301.7216-2 — Permissible disclosures or uses without taxpayer consent",
+            "url": "https://www.ecfr.gov/current/title-26/section-301.7216-2",
+            "relevance": (
+                "Identify whether a proposed preparer disclosure or use fits an enumerated "
+                "exception rather than assuming a general project authorization is sufficient."
+            ),
+        },
+        {
+            "title": "Texas Occupations Code Chapter 1152 — Property Tax Consultants",
+            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
+            "relevance": (
+                "Determine applicable consultant registration, exemptions, and practice requirements "
+                "before offering or assigning Texas property-tax consulting services."
+            ),
+        },
+    ],
+}

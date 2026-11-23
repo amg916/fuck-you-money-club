@@ -1,0 +1,81 @@
+{
+  "volume_id": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage",
+  "volume_slug": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage",
+  "volume_number": 42,
+  "site_ui": {
+    "cover": [
+      "TOWER, SIGN",
+      "& IOS LEASE",
+      "ARBITRAGE"
+    ],
+    "deck": [
+      "VERIFY SITE RIGHTS. CLEAR THE PERMITS.",
+      "UNDERWRITE LONG-TERM LEASE SPREADS."
+    ],
+    "lead": "Rooftop and Tower Easement Buyouts, Highway Digital-Billboard Permitting & Industrial Outdoor Storage Master-Lease Operations",
+    "summary": "Screen site demand, title, zoning, and assignment rights before committing to tower easements, digital-sign locations, or IOS master leases. Underwrite tenant credit, permit conditions, environmental exposure, and restoration obligations against realistic rent spreads and buyout terms.",
+    "chapters": [
+      "Tower easements, billboard sites & IOS lease models",
+      "Landowners, carriers, sign operators & storage tenants",
+      "Rent spreads, escalators & easement buyout valuation",
+      "Site diligence costs, deposits & working-capital reserves",
+      "Permit denials, tenant exits & environmental liability traps",
+      "Rooftop portfolios, highway corridors & IOS demand sourcing",
+      "Perpetual easement scope, title & lender consent",
+      "Digital-sign permits, spacing & illumination restrictions",
+      "IOS zoning, drainage, access & master-lease permissions",
+      "Assignment clauses, subleases & restoration obligations",
+      "Site-management pods & tenant concentration limits",
+      "First 30-day site-underwriting launch sprint"
+    ],
+    "flow": [
+      [
+        "SOURCE",
+        "Match rooftops, sign corridors & IOS parcels to demand"
+      ],
+      [
+        "SCREEN",
+        "Review title, zoning, access & environmental risks"
+      ],
+      [
+        "UNDERWRITE",
+        "Model tenant credit, rent spreads & buyout terms"
+      ],
+      [
+        "PERMIT",
+        "Secure required approvals before binding commitments"
+      ],
+      [
+        "CONTRACT",
+        "Document easements, assignments & sublease rights"
+      ],
+      [
+        "MANAGE",
+        "Reconcile rents, compliance & restoration reserves"
+      ]
+    ]
+  },
+  "parent_brand": "THE FUCK YOU MONEY CLUB",
+  "book_series": "THE BIG MONEY PLAYBOOKS",
+  "tagline": "Big Money. Small Teams. No Bullshit.",
+  "title": "CELL-TOWER, DIGITAL-BILLBOARD & IOS LEASE ARBITRAGE",
+  "subtitle": "The Complete Playbook for Cell-Tower, Digital-Billboard & IOS Lease Arbitrage: $120,000–$950,000 USD in Annual Operator Revenue, Starting with a 1 FT + 3 C Pod (4 People); Six People at Scale",
+  "chapter_count": 12,
+  "total_word_count": 80222,
+  "expert_youtube_link_count": 180,
+  "min_expert_youtube_links_required": 150,
+  "target_expert_youtube_links": "150-200+",
+  "min_expert_youtube_links_per_chapter": 12,
+  "rating_system": "Money-to-Manpower Score",
+  "composite_score": 91,
+  "formats": [
+    "8.5×11 Executive Digital PDF",
+    "6×9 Print Edition",
+    "Reflowable EPUB 3.0"
+  ],
+  "isbn": null,
+  "publication_status": "approved_master",
+  "public_deploy_approved": false,
+  "paid_sales_approved": false,
+  "updated_at": "2026-11-23T15:15:33Z"
+}

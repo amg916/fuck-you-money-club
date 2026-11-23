@@ -131,8 +131,8 @@ class PlatformTests(unittest.TestCase):
 
     def test_candidate_ranking_dimensions_and_profit_uncertainty(self):
         candidates = collection(self.candidates, "candidates", "businesses")
-        self.assertEqual(len(candidates), 37)
-        self.assertEqual([candidate["rank"] for candidate in candidates], list(range(1, 38)))
+        self.assertEqual(len(candidates), 42)
+        self.assertEqual([candidate["rank"] for candidate in candidates], list(range(1, 43)))
         for candidate in candidates:
             with self.subTest(rank=candidate["rank"]):
                 dimensions = candidate.get("dimensions", candidate.get("scores"))
@@ -312,7 +312,7 @@ class LiveHTTPTests(unittest.TestCase):
                 request("/api/fymc/overview")
                 catalog = request("/api/fymc/catalog")
                 for key in ("candidates", "businesses"):
-                    self.assertEqual(len(catalog[key]), 37)
+                    self.assertEqual(len(catalog[key]), 42)
                 request("/api/fymc/research")
                 manuscript = request("/api/fymc/manuscript")
                 chapters = collection(manuscript.get("manuscript", manuscript), "chapters")
@@ -886,14 +886,14 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         from src.fymc.volume_registry import get_volume_spec, resolve_registered_volume_slug
 
         specs = list(ALL_VOLUME_SPECS.values())
-        self.assertEqual(list(ALL_VOLUME_SPECS), list(range(1, 38)))
-        self.assertEqual({s["candidate_number"] for s in specs}, set(range(1, 38)))
-        self.assertEqual(len({s["volume_id"] for s in specs}), 37)
+        self.assertEqual(list(ALL_VOLUME_SPECS), list(range(1, 43)))
+        self.assertEqual({s["candidate_number"] for s in specs}, set(range(1, 43)))
+        self.assertEqual(len({s["volume_id"] for s in specs}), 42)
         # Permanent volume edition numbers map bijectively to candidates 1..29;
         # formula-derived scores synchronize dynamically without renumbering books.
         ranked = build_29_candidate_pipeline()
         self.assertEqual([specs[0]["candidate_number"], specs[1]["candidate_number"]], [1, 2])
-        self.assertEqual([s["volume_number"] for s in specs], list(range(1, 38)))
+        self.assertEqual([s["volume_number"] for s in specs], list(range(1, 43)))
         scores = {c["candidate_number"]: c["total_score"] for c in ranked}
         for number, spec in ALL_VOLUME_SPECS.items():
             self.assertEqual(spec["volume_number"], number)
@@ -910,7 +910,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 if spec["volume_id"] not in PUBLISHED_VOLUME_IDS:
                     with self.assertRaisesRegex(ValueError, "Invalid volume_id"):
                         resolve_registered_volume_slug(alias)
-        for invalid in (True, False, 1.0, [], {}, " 1", "01", "VOL-001", 0, 38):
+        for invalid in (True, False, 1.0, [], {}, " 1", "01", "VOL-001", 0, 43):
             with self.assertRaisesRegex(ValueError, "Invalid volume_id"):
                 resolve_registered_volume_slug(invalid)
         untouched = {p: (p.read_bytes(), p.stat().st_mtime_ns)
@@ -2105,7 +2105,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             get_flagship_scorecard,
         )
         self.assertEqual(set(TRACK_DEFINITIONS), {"track_1", "track_2"})
-        self.assertEqual(len(PLAY_DEFINITIONS), 110)
+        self.assertEqual(len(PLAY_DEFINITIONS), 117)
         self.assertEqual(
             set(PLAY_DEFINITIONS),
             {
@@ -2219,6 +2219,13 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 "saas_cpor_vip_distributor_margin_split",
                 "private_b2b_gpo_umbrella_rebate_arbitrage",
                 "enterprise_excess_seat_commit_pooling_arbitrage",
+                "parcel_carrier_refund_tariff_audit_contingency",
+                "utility_waste_cam_tariff_overcharge_audit",
+                "inbound_rtb_pay_per_call_ping_post_exchange",
+                "erisa_level_funded_transparent_pbm_bor_arbitrage",
+                "workers_comp_ncci_emod_retroactive_recovery",
+                "wholesale_buying_group_card_float_cycling",
+                "dot_digital_billboard_and_ios_master_lease_flip",
             },
         )
         for play_id, play in PLAY_DEFINITIONS.items():
@@ -2230,9 +2237,9 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 for req_key in ("failure_mode", "trigger", "impact", "detection_metric", "fallback"):
                     self.assertTrue(risk.get(req_key), (play_id, req_key))
 
-        self.assertEqual(set(CANDIDATE_PLAY_MAP), set(range(1, 38)))
-        self.assertEqual(sum(p["track_id"] == "track_1" for p in PLAY_DEFINITIONS.values()), 64)
-        self.assertEqual(sum(p["track_id"] == "track_2" for p in PLAY_DEFINITIONS.values()), 46)
+        self.assertEqual(set(CANDIDATE_PLAY_MAP), set(range(1, 43)))
+        self.assertEqual(sum(p["track_id"] == "track_1" for p in PLAY_DEFINITIONS.values()), 69)
+        self.assertEqual(sum(p["track_id"] == "track_2" for p in PLAY_DEFINITIONS.values()), 48)
         self.assertEqual(CANDIDATE_PLAY_MAP[1][0], "public_record_api_intelligence")
         self.assertTrue(all(PLAY_DEFINITIONS[pid]["track_id"] == "track_1" for pid in CANDIDATE_PLAY_MAP[1]))
         self.assertFalse(any(symbol in repr(PLAY_DEFINITIONS) for symbol in ("™", "®")))
@@ -2336,7 +2343,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
 
         mapped_plays: set[str] = set()
         for cand_num, play_tuple in CANDIDATE_PLAY_MAP.items():
-            self.assertTrue(1 <= cand_num <= 37, cand_num)
+            self.assertTrue(1 <= cand_num <= 42, cand_num)
             self.assertEqual(len(play_tuple), len(set(play_tuple)), cand_num)
             for pid in play_tuple:
                 self.assertIn(pid, PLAY_DEFINITIONS)
@@ -2425,16 +2432,16 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
 
         # Pipeline of 29 candidates preserves ranks 1..29 and includes both tracks
         pipeline = build_29_candidate_pipeline()
-        self.assertEqual(len(pipeline), 37)
+        self.assertEqual(len(pipeline), 42)
         t1_cands = [c["candidate_number"] for c in pipeline if "track_1" in c["track_ids"]]
         t2_cands = [c["candidate_number"] for c in pipeline if "track_2" in c["track_ids"]]
         self.assertEqual(
             sorted(t1_cands),
-            list(range(1, 38)),
+            list(range(1, 43)),
         )
         self.assertEqual(
             sorted(t2_cands),
-            [2, 3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37],
+            [2, 3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
         )
 
         # Store & UI HTML include track filters and platform risk sections while preserving persisted brand settings
@@ -2811,9 +2818,9 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         # 6c. Volumes 006–029 (All 24 Expansion Playbooks) 10/10 3-Question Self-Audit & PDF Octal Escape Invariants
         from src.fymc import ALL_VOLUME_SPECS
         from src.fymc.scorecard_engine import get_candidate_track_metadata
-        self.assertEqual(len(PUBLISHED_VOLUME_IDS), 37)
+        self.assertEqual(len(PUBLISHED_VOLUME_IDS), 42)
         repo_full_state = self.store.load_publishing_state(ROOT, verify_manifest=True)
-        for vnum in range(6, 38):
+        for vnum in range(6, 43):
             vspec = ALL_VOLUME_SPECS[vnum]
             vid = vspec["volume_id"]
             with self.subTest(volume_id=vid):
@@ -2968,7 +2975,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         from src.fymc.volume_registry import ALL_VOLUME_SPECS, get_volume_spec_by_candidate
 
         pipeline = build_29_candidate_pipeline()
-        self.assertEqual(len(pipeline), 37)
+        self.assertEqual(len(pipeline), 42)
         by_cand = {c["candidate_number"]: c for c in pipeline}
         for cnum, cand in by_cand.items():
             spec = get_volume_spec_by_candidate(cnum)
@@ -2979,7 +2986,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
         self.assertIsNone(get_volume_spec_by_candidate(True))
         self.assertIsNone(get_volume_spec_by_candidate(999))
 
-        for vnum in (1, 3, 15, 29, 30, 32, 36, 37):
+        for vnum in (1, 3, 15, 29, 30, 32, 36, 37, 38, 39, 40, 41, 42):
             spec = ALL_VOLUME_SPECS[vnum]
             sc = by_cand[spec["candidate_number"]]
             meta = {"volume_number": vnum, "title": spec["title"], "subtitle": spec["subtitle"]}
@@ -2999,7 +3006,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
 
         status, cat = self.route("GET", "/api/fymc/catalog")
         self.assertEqual(status, 200)
-        self.assertEqual(len(cat["businesses"]), 37)
+        self.assertEqual(len(cat["businesses"]), 42)
         for biz in cat["businesses"]:
             spec = get_volume_spec_by_candidate(biz["candidate_number"])
             self.assertEqual(biz["volume_id"], spec["volume_id"])
@@ -3013,7 +3020,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
 
         status, ov = self.route("GET", "/api/fymc/overview")
         self.assertEqual(status, 200)
-        self.assertEqual(len(ov["published_volumes"]), 37)
+        self.assertEqual(len(ov["published_volumes"]), 42)
         for pv in ov["published_volumes"]:
             self.assertEqual(sum(pv["scores"].values()), pv["total_score"])
             self.assertTrue(pv["startup_capital_range"])
@@ -3064,8 +3071,8 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
             derive_dimension_scores((100000, 750000), (20, 45), (10000, 50000), "3–9 months", (1, 3), retained_share=True)
 
         pipeline = build_29_candidate_pipeline()
-        self.assertEqual([c["rank"] for c in pipeline], list(range(1, 38)))
-        wave2_expected = {30: 93, 31: 89, 32: 94, 33: 90, 34: 90, 35: 90, 36: 94, 37: 94}
+        self.assertEqual([c["rank"] for c in pipeline], list(range(1, 43)))
+        wave2_expected = {30: 93, 31: 89, 32: 94, 33: 90, 34: 90, 35: 90, 36: 94, 37: 94, 38: 94, 39: 95, 40: 93, 41: 93, 42: 91}
         by_cand_w2 = {c["candidate_number"]: c for c in pipeline}
         for cnum, exp_sc in wave2_expected.items():
             self.assertEqual(by_cand_w2[cnum]["total_score"], exp_sc)
@@ -3083,7 +3090,7 @@ class RegressionAuditTests(ExistingRegressionAuditTests, unittest.TestCase):
                 self.assertAlmostEqual(ret_p, sc_row["annual_owner_net_profit_usd"], delta=max_pct_round_delta)
 
         # Expansion volumes 006..029 no longer artificially decay monotonically downward by volume number
-        expansion_scores = [ALL_VOLUME_SPECS[v]["score"] for v in range(6, 38)]
+        expansion_scores = [ALL_VOLUME_SPECS[v]["score"] for v in range(6, 43)]
         self.assertTrue(any(expansion_scores[i] < expansion_scores[i + 1] for i in range(len(expansion_scores) - 1)))
 
 

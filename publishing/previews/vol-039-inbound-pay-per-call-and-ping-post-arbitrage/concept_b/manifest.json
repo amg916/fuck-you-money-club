@@ -1,0 +1,65 @@
+{
+  "concept_id": "concept_b",
+  "volume_id": "vol-039-inbound-pay-per-call-and-ping-post-arbitrage",
+  "approved": true,
+  "edition_status": "approved_master",
+  "preview_only": true,
+  "files": {
+    "digital_pdf.pdf": {
+      "bytes": 1971766,
+      "sha256": "2173d2e52c93341364bc238784f6c2589594c88298bcee714d28e3cc654f3eb6"
+    },
+    "print_6x9_pdf.pdf": {
+      "bytes": 2578746,
+      "sha256": "cbca0a06c70284d69bbd93d441ddef75a150a3703baa06a9c0e5a825fae682b4"
+    },
+    "workbook_pdf.pdf": {
+      "bytes": 566891,
+      "sha256": "f8218c2ba4e5214606096d183bc549ee651120cf714042f3d492f8ece4f880d0"
+    },
+    "book.epub": {
+      "bytes": 270183,
+      "sha256": "17b718c870e9b4cb788135677e7bfeaf05b4665cf9894106656bd201af672794"
+    },
+    "art/cover.svg": {
+      "bytes": 4321,
+      "sha256": "a8978f9828bdfc031be691914cab85ff50f34f6efcd4542e29e886b475c769c2"
+    },
+    "art/scorecard.svg": {
+      "bytes": 97965,
+      "sha256": "c4d70d27d47a3124c87296d3c9eeb400246b6a30ed7831a56c435b52191f6249"
+    },
+    "art/diag_01.svg": {
+      "bytes": 11859,
+      "sha256": "bb86cd2524a77d96c19762e9c3f717b89e0b5f0a154a38af5071fdc5ae01e709"
+    },
+    "art/diag_02.svg": {
+      "bytes": 8081,
+      "sha256": "a263f9300ed156a1c5d9da5435b56a7aea88f0bbbbb67597c3343d1f71d632d3"
+    },
+    "art/diag_03.svg": {
+      "bytes": 12984,
+      "sha256": "7b13682c0d518d17a2a4e290ecf4b7c4915d0b28cc97961e3d023ab891a41356"
+    },
+    "art/diag_04.svg": {
+      "bytes": 9929,
+      "sha256": "575414f6fb235e0f5a56423e7f5d02737bef6ec2cbfe4ea5004abfbf35aa89f1"
+    },
+    "art/diag_05.svg": {
+      "bytes": 11680,
+      "sha256": "d418180714d4d9867e09cb25f5823b041d68e8f415c86d88e00dfc888b87f57c"
+    },
+    "art/diag_06.svg": {
+      "bytes": 11504,
+      "sha256": "be3ad9858e97fe10c9fb144529df2caa61fb12c5c4c0cc09ebee9bad4e275717"
+    },
+    "art/diag_07.svg": {
+      "bytes": 9041,
+      "sha256": "32f0f6f1f5032caba74ad9ea40620b48959f33932ca16c953fd559c4b130e6c2"
+    },
+    "art/diag_08.svg": {
+      "bytes": 9040,
+      "sha256": "76083ea05cfa5482c7399e8975e7d53cd91378a56108f9f71421793a357d6ea5"
+    }
+  }
+}
